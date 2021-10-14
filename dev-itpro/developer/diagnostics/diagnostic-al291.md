@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Event trigger '{0}' can only be used if the page specifies the 'SourceTable' property.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

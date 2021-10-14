@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The operation overflows at compile time.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

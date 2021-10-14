@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The type for {0} is not valid. Expected {1}, but found {2}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

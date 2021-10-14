@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The action area '{0}' can only contain actions.
 
-
 ## Description
 An action area can only directly contain groups.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

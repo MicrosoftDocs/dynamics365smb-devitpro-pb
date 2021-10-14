@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Namespace '{0}' is already specified.
 
-
 ## Description
 A namespace has been defined multiple times.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

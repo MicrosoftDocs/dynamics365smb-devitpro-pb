@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed.
 
-
 ## Description
 It is not allowed to use boolean expressions as the proeprty value of properties defined in a view.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

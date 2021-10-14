@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The trigger '{0}' can only be used if the property '{1}' of '{2}' is set to '{3}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

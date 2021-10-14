@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Attribute {0} is specified multiple times.
 
-
 ## Description
 The same attribute has been specified multiple times on the same element.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

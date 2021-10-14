@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A member with ID '{0}' is already defined in {1} '{2}' by the extension '{3}'.
 
-
 ## Description
 Multiple members with the same ID have been defined.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

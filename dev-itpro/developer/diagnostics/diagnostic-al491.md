@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property expression is not valid. One of the following expressions is expected : CONST,FIELD,FILTER,FIELD(FILTER(Identifier)),FIELD(UPPERLIMIT(Identifier)),or FIELD(UPPERLIMIT(FILTER(Identifier))).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

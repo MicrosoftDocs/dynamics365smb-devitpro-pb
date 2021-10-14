@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 {0} can be specified only once.
 
-
 ## Description
 A label property cannot be specified more than once.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

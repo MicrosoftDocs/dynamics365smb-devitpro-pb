@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The return value name '{0}' is already defined.
 
-
 ## Description
 Multiple return values with the same name are defined in the same object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

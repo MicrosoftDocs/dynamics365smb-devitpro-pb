@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The data type on the {0} field is not valid because the ExtendedDatatype property is set to Person. Valid data types are Media and MediaSet.
 
-
 ## Description
 If a field has the **ExtendedDatatype** property is set to **Person**, then the field can only be of the type Media or MediaSet.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

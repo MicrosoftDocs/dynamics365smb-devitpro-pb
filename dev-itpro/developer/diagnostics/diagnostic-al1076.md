@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A package that satisfies the dependency on app with ID {0} with name '{1}' and publisher '{2}' was found, but the name or publisher has changed. New name '{3}' and new publisher '{4}'. Consider updating the dependency reference to the new name/publisher.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

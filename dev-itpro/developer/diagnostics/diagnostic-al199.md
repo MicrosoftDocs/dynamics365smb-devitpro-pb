@@ -20,6 +20,8 @@ author: SusanneWindfeldPedersen
 
 The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration).
 
+The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration).
+
 
 ## Description
 Only fields of the numeric type (Decimal, BigInteger, Integer, or Duration) can be used as sum index fields. 

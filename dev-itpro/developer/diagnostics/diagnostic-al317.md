@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A property with the same name has already been declared.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Constant value '{0}' is outside the range for an Integer.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

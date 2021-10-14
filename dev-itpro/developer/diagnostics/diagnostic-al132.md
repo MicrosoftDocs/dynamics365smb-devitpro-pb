@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' does not contain a definition for '{1}'.
 
-
 ## Description
 The referenced element does not contain a definition for the referenced member.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

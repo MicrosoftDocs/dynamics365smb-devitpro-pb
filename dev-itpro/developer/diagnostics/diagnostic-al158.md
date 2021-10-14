@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not a valid parameter type.
 
-
 ## Description
 Invalid parameter type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

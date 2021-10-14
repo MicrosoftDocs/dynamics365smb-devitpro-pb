@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Moving actions in CueGroups is not supported.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

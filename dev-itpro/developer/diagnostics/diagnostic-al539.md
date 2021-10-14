@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' cannot be used multiple times when defining the order of the page view.
 
-
 ## Description
 The same field cannot be reference multiple times when defining the order of the page view.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

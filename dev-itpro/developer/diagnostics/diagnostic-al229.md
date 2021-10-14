@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The data type on the {0} field is not valid because the ExtendedDatatype property is set to Ratio. Valid data types are Integer, BigInteger and Decimal.
 
-
 ## Description
 If a field has the **ExtendedDatatype** property is set to **Ratio**, then the field can only be of the type Integer, BigInteger or Decimal.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

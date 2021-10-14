@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The return value must be used for the method '{0}'.
 
-
 ## Description
 The return value of a method must be used.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

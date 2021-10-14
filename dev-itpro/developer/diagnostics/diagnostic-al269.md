@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The referenced page '{0}' should be a list part or a card part.
 
-
 ## Description
 A page used as a page part should be a list part or a card part.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 XML comment has a param tag for '{0}', but there is no parameter by that name.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

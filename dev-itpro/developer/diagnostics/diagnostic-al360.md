@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Text literal was not properly terminated. Use the character ' to terminate the literal.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

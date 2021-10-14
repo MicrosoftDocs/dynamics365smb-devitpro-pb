@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Comma is not supported in enum value names or in captions. Enum Value = '{0}', Property = '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

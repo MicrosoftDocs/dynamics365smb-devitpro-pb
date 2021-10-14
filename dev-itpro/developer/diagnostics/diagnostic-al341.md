@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' property is missing.
 
-
 ## Description
 The referenced property is missing.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

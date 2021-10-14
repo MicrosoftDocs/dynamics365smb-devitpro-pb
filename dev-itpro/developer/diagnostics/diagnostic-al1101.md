@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Target must specify one of: 'internal', 'solution', 'extension'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

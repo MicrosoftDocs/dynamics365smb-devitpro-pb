@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Field '{0}' is not specified as a source expression on page '{1}'. All fields specified in ODataKeyFields must be used as the source expression in a page control.
 
-
 ## Description
 All fields specified in the **ODataKeyFields** property must be used as the source expression in a control of the page that specifies them.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

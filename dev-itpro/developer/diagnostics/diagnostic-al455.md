@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Option ordinal value '{0}' is not valid. Valid values are -1 and positive integers.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

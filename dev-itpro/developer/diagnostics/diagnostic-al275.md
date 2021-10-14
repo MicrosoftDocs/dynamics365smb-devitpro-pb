@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is an ambiguous reference between '{1}' defined by the extension '{2}' and '{3}' defined by the extension '{4}'.
 
-
 ## Description
 Ambiguous reference between two symbols.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

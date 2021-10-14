@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not a valid return type.
 
-
 ## Description
 Invalid return type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

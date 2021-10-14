@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Member is not allowed in this context.
 
-
 ## Description
 Procedures or variables are not allowed in this context.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

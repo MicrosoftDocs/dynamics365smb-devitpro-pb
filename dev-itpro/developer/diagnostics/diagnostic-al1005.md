@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Unable to load Analyzer assembly {0} : {1}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

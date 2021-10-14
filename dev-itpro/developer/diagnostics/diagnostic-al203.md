@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot calculate Sum or Average for the field {0} because it is not a numeric field (Decimal, BigInteger, Integer, or Duration data type).
 
-
 ## Description
 Only fields of the numeric type (Decimal, BigInteger, Integer, or Duration) can be used to calculate Sum or Average for a field.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

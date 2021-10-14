@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' is not found in the target.
 
-
 ## Description
 The referenced event is missing.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

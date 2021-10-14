@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The HandlerFunctions attribute only accepts a string representing a comma separated list of procedure names without spaces.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

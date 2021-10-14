@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property 'DataItemLink' must be set.
 
-
 ## Description
 The property 'DataItemLink' must be set for nested DataItems.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

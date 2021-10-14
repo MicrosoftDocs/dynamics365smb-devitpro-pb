@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Member '{0}' could not be declared in an object of type '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

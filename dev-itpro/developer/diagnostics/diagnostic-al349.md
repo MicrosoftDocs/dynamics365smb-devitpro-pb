@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Column '{0}' does not exist in application object '{1}'.
 
-
 ## Description
 The referenced column does not exist in the current application object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

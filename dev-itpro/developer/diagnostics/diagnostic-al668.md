@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 This feature is not available on cross-platform builds of the AL compiler.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

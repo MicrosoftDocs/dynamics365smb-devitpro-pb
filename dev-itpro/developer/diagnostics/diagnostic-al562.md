@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value assigned to the SystemPart type is not valid. Valid values are {0}.
 
-
 ## Description
 The value assigned to the SystemPart type must be Notes, Links, MyNotes or Outlook.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

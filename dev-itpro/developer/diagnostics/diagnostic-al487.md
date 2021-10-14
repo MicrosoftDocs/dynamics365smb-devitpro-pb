@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' is not of field class 'Normal' and thus cannot be part of the {1} list.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

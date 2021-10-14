@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The translated string of the translation item is too long. Trimming the translated string.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

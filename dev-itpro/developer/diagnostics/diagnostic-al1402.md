@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 {0} '{1}' is missing.
 
-
 ## Description
 Cannot resolve the referenced application object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

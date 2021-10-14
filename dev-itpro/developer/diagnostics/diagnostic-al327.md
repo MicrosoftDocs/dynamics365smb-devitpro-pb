@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Missing file '{0}'.
 
-
 ## Description
 The referenced file is missing.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

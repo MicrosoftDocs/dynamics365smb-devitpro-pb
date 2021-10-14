@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The control '{0}' is not found in the target '{1}'.
 
-
 ## Description
 Missing referenced control.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

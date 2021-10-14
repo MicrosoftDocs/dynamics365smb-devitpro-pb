@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not a valid language identifier.
 
-
 ## Description
 Invalid language identifier.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

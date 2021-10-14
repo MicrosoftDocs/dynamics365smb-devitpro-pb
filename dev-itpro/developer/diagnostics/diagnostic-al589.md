@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The name '{0}' is used across multiple columns and data items. This will prevent extensibility of this column or data item.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

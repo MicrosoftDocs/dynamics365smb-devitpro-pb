@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The view '{0}' cannot define layout changes because its property '{1}' is not set to false.
 
-
 ## Description
 A view should have the **SharedLayout** property set to false in order to have layout changes.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found in the package cache folder '{3}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

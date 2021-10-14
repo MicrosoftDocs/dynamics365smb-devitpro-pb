@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Constant value {0} is not a valid value for APIVersion. Valid values are 'beta' or of type 'vX.Y' where X and Y represent positive integers.
 
-
 ## Description
 The APIVersion property must have the values 'beta' or of type 'vX.Y', where X and Y represent positive integers.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

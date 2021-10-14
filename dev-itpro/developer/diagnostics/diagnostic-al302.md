@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot use '{0}' in {1} '{2}' before it is declared.
 
-
 ## Description
 Cannot use an element before it is declared.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

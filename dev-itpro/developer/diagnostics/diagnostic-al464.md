@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Could not determine a suitable default primary key for table '{0}'. Please specify a primary key for the table.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A SQLIndex defined for the primary key must contain the same fields as the key for table '{0}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

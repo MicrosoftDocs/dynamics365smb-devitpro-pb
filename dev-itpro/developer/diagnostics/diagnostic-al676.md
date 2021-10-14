@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

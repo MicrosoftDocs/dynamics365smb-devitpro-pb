@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Both 'idRange' and 'idRanges' properties are added. You should use the 'idRanges' property and remove the 'idRange' property.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

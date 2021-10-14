@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Please make sure that the target field's length is less than equal to the source field length.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

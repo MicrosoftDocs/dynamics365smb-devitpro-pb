@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property value contains an unexpected file extension: {0}. The expected extensions are {1}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

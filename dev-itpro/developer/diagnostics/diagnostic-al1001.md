@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Source file '{0}' could not be found.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

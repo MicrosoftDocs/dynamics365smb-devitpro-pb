@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The type of value {0} does not match the field’s type.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

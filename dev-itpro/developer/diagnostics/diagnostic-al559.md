@@ -22,7 +22,6 @@ A Part type page cannot contain other parts.
 
 > [!IMPORTANT]
 > This warning will become an error in Spring 2020.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

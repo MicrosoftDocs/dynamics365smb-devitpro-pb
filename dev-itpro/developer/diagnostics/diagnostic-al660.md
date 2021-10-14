@@ -22,7 +22,6 @@ The property '{0}' cannot be customized.
 
 > [!IMPORTANT]
 > This warning will become an error in Fall 2022.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

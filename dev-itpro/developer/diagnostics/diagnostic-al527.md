@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The SQL timestamp field '{0}' cannot be part of the keys for table '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

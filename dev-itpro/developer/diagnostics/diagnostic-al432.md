@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 {0} '{1}' is marked for removal. {2}.
 
-
 ## Description
 The referenced object will become obsolete.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A list must end with a member; not a separator {0}.
 
-
 ## Description
 A list cannot end with a separator.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

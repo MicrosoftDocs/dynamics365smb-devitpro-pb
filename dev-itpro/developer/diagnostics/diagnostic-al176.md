@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Expected one of the calculation formula methods (Average,Count,Exist,Min,Max,Lookup,Sum).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

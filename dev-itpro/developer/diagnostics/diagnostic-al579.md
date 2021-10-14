@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value for the property '{0}' for the language code '{1}' is not valid because its length exceeds {2} characters ({3} characters).
 
-
 ## Description
 The length of the value for any language code in a multilanguage property defined in a profile or profile extension should not exceed 100 characters.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

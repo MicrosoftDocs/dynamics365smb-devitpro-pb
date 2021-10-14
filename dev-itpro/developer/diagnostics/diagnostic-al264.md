@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An application object of type '{0}' with ID '{1}' is already declared by the extension '{2}'.
 
-
 ## Description
 Multiple application objects of the same type and with the same ID are defined.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

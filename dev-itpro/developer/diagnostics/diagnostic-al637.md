@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property 'NavigationPageId' must be defined on a page of pagetype 'API'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

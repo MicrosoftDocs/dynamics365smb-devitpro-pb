@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot move the {0} '{1}' multiple times inside of a single move operation.
 
-
 ## Description
 An element cannot be moved multiple times inside of a single move operation.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

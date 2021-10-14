@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An area of type 'FactBoxes' is not valid on Part type pages.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

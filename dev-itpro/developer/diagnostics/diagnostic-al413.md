@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Procedure '{0}' cannot have a body.
 
-
 ## Description
 Procedures within **ControlAddin** or **Interface** objects cannot have a body.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

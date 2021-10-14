@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The '{0}' type is not a generic type.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

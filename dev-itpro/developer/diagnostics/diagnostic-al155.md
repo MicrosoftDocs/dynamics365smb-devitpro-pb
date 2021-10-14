@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.
 
-
 ## Description
 Multiple members with the same name are defined by the same or several extensions.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

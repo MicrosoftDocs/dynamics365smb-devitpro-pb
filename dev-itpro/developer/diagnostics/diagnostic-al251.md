@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Application object '{0}' is missing.
 
-
 ## Description
 The specified object is not found.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

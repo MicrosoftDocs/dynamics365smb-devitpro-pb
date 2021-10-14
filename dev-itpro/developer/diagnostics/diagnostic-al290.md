@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Element name is not allowed for the event '{0}' and must be empty.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

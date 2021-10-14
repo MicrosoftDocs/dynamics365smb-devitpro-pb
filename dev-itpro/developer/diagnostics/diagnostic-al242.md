@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Invalid attribute argument syntax: '{0}'.
 
-
 ## Description
 The attribute argument syntax is not valid. For more information, see the attribute's documentation.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

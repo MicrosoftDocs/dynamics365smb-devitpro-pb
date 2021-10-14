@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The control '{0}' is not found in the target '{1}'.
 
-
 ## Description
 Cannot resolve a reference to a control in a page extension or page customization.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

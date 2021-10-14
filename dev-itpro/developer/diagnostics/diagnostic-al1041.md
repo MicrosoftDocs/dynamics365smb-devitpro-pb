@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' must be defined in the manifest.
 
-
 ## Description
 The properties 'name', 'publisher','id' and 'version' must be defined in the manifest.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

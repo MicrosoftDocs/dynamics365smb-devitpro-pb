@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' can only be set if the property '{1}' is set with any of the values of :'{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

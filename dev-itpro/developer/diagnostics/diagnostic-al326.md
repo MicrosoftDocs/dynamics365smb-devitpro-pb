@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not a valid column type.
 
-
 ## Description
 The specified data type is not valid for columns. Valid data types are Boolean, Char, Integer, BigInteger, Decimal, Option, Enum, Text, Code, TextConst, Label, DateTime, Time, Date, DateFormula, Duration, Guid, RecordId, TableFilter, String, Blob, Media, Variant and MediaSet.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Translation file '{0}' is missing a target language.
 
-
 ## Description
 A translation file must specify a target language.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

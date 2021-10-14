@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot move symbol '{0}' from '{1}' area to '{2}' area.
 
-
 ## Description
 Cannot move a symbol between areas.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

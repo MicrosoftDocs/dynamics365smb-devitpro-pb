@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The syntax for accessing fields is not valid. Specify target field with 'tableName.fieldName' syntax.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

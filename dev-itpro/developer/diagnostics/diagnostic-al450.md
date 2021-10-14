@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Field '{0}' is removed and cannot be used in an active key.
 
-
 ## Description
 An obsolete field cannot be used in a key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

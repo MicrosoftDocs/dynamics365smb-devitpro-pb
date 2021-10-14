@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The handler function {0} was not found. Make sure the procedure is defined and has a handler attribute.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

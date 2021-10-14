@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Ids are not supported as object reference.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

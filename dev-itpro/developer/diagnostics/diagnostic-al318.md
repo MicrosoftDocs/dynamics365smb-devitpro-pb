@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value assigned to the 'RunObject' property is not valid. Valid object types are codeunit, page, xmlport, report, and query.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

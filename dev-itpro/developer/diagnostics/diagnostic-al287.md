@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' can't contain local variables.
 
-
 ## Description
 An event can't contain local variables.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

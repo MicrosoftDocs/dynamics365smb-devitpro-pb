@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 No overload for method '{0}' takes {1} arguments. Candidates: {2}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

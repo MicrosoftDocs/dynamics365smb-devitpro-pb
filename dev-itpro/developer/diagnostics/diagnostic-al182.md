@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An identifier or a literal is expected as the value of a filter expression.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

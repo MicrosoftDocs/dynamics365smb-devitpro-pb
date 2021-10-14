@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The symbol file is not valid. An enum with ID '{0}' and name '{1}' is already defined in module '{2}', but with different values (OptionString).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

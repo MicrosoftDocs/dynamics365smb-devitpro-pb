@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The maximum length for the type '{0}' is {1}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

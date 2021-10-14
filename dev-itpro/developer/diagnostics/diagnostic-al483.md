@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property Image cannot be used on nested Action Groups inside the 'Sections' area.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

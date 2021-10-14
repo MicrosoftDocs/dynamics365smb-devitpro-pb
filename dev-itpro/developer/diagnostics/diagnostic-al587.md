@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is already listed in the interface list.
 
-
 ## Description
 Multiple interfaces have been listed within the same interface implementation list.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

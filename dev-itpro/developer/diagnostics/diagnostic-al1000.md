@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Ignoring /noconfig option because it was specified in a response file.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

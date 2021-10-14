@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 {0} '{1}' is missing.
 
-
 ## Description
 The referenced application object does not exist.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The type '{0}' cannot be used as a type argument in this context.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

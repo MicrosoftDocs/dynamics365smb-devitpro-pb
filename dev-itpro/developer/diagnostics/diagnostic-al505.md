@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Pages of type API must have the DelayedInsert property set to true, unless the 'Editable' property or the 'InsertAllowed' property is set to false.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

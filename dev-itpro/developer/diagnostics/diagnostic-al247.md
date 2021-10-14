@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The target {0} {1} for the extension object is not found.
 
-
 ## Description
 The target for an extension object is not found.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The name of the codeunit local variable '{0}' is identical to a field in table '{1}' and will shadow that table field.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

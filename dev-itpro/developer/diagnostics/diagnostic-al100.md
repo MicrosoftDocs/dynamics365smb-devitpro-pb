@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Unterminated multiline comment.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

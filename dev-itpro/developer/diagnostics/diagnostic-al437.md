@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value of the '{0}' property cannot include empty members.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

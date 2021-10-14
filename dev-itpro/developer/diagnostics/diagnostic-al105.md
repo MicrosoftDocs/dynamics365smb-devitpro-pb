@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Syntax error, identifier expected; '{1}' is a keyword.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

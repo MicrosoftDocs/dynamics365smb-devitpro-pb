@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An area of type '{0}' is already defined.
 
-
 ## Description
 There are multiple areas of the same type defined in the same object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

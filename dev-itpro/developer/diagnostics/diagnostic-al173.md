@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Operator '{0}' cannot be applied to an operand of type '{1}'.
 
-
 ## Description
 Unary operator cannot be applied to an operand of such type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

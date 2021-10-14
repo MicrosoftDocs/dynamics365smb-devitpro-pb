@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The methods '{0}' can only be used on Columns that have a Decimal, BigInteger, Integer, or Duration type.
 
-
 ## Description
 The **Method** property can only have the property values Average, Sum, Max and Min when used on Columns of the type Decimal, BigInteger, Integer, or Duration.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

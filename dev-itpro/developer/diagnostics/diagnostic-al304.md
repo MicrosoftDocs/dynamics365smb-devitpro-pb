@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Length of the identifier '{0}' cannot exceed {1} characters.
 
-
 ## Description
 The length of an identifier cannot exceed 120 characters.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

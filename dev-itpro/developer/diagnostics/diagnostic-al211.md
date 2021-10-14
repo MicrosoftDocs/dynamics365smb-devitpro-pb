@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Unknown area type '{0}'.
 
-
 ## Description
 The type of the area defined is not valid.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

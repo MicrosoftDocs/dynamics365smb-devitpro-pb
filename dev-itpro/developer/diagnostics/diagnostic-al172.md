@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Operator '{0}' is ambiguous on an operand of type '{1}'.
 
-
 ## Description
 Unary operator is ambiguous on an operand of such type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A DataItem with name '{0}' could not be found in the target {1}.
 
-
 ## Description
 The referenced DataItem could not be found in the target report.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

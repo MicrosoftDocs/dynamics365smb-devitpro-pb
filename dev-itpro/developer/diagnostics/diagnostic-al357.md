@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot add {0} '{1}' with the same name multiple times.
 
-
 ## Description
 An element with the same name cannot be added multiple times.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

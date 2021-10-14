@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The enum '{0}' is not extensible.
 
-
 ## Description
 The referenced enum is not extensible. Enums are not extensible by default, you must set the **Extensible** property to **true*.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

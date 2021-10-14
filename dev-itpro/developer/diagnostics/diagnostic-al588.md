@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The type of parameter '{1}' on event subscriber '{0}' is of type 'Option', but the expected type is '{2}'. Please update the subscriber type to match the publisher.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

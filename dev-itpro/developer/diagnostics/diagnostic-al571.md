@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property 'Description' should only be used for internal comments. Use the property 'Caption' or 'CaptionML' in order to specify the profile caption displayed to end users.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

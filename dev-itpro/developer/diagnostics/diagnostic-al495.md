@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A member with ID '{0}' is already defined. Change the member name to generate a new ID.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

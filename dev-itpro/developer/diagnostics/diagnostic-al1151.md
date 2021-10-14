@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot create a manifest for Extension "{0}" because the Name and Publisher are the same as one or more dependencies.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

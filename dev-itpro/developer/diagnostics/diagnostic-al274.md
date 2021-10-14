@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The anchoring symbol '{0}' cannot be an area.
 
-
 ## Description
 An anchoring symbol cannot be an area.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

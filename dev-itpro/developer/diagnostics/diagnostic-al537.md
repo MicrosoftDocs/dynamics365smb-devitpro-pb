@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Declaring views is only supported on pages of type {0}.
 
-
 ## Description
 Declaring views is only supported on pages, page extensions, and page customization of the type List.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

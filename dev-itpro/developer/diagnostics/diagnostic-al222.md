@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The ID '{0}' is not valid. ID's must be greater than zero.
 
-
 ## Description
 An object ID must be greater than 0.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

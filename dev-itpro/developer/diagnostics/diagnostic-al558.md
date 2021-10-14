@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The name of the codeunit global variable '{0}' is identical to a field in table '{1}'.
 
-
 ## Description
 The name of the codeunit global variable should be different from the name of any table field.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

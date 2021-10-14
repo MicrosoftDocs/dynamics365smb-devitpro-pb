@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' can only be set if the specified fields are from the same table.
 
-
 ## Description
 A property can only be used on keys with fields from the same table.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

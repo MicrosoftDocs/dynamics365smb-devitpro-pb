@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The expression CONST() on the option value '{0}' is obsolete. Use CONST(" ") to refer to the empty option value.
 
-
 ## Description
 The expression CONST() as an option value is obsolete. Use CONST(" ") to refer to the empty option value.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

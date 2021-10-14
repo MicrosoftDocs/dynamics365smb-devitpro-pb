@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The length for the type '{0}' must be positive.
 
-
 ## Description
 The length specified for a data type must be possitve.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' is using an Id {1} that is reserved for system fields.
 
-
 ## Description
 A field is using an ID bigger or equal to 2000000000, which is a value reserved for system fields.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

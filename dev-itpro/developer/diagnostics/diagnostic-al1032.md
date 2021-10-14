@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Translation file '{0}' has the same target language as another translation file.
 
-
 ## Description
 There must be at most one translation file per language.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

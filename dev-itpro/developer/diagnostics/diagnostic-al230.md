@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The data type on the {0} field is not valid because the ExtendedDatatype property is set to PhoneNo, URL or Email. Valid data types are Code and Text.
 
-
 ## Description
 If a field has the **ExtendedDatatype** property is set to **PhoneNo**, **URL** or **Email**, then the field can only be of the type Code or Text.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

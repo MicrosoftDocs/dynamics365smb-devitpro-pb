@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The number of option ordinal values is not valid. There must be as many option ordinal values as there are option members.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

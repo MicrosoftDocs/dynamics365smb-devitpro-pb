@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot use addBefore or addAfter on a top-level data item. The anchor {0} is a top level data item.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

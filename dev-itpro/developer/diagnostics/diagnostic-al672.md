@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Filtering is only allowed on fields where FieldClass is set to Normal. Create a Filter column and specify the filter by using the 'ColumnFilter' property.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

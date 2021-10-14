@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The option value '{0}' is not defined on field '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The file at location '{0}' does not match any definition.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

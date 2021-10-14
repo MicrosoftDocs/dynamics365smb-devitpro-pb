@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The date formula '{0}' contains a number that is too large. The number must be in the range {1} - {2}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

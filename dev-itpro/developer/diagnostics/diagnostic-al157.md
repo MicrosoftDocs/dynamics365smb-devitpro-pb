@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not a valid variable type.
 
-
 ## Description
 Invalid variable type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

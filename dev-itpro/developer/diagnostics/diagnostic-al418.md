@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The format of resource '{0}' is not valid. Resources in the control add-in should either be relative to the project root, or reference external files using the HTTP or HTTPS protocol.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

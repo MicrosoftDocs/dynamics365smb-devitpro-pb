@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The trigger '{0}' is already defined.
 
-
 ## Description
 There is a duplicate trigger defined in the same object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

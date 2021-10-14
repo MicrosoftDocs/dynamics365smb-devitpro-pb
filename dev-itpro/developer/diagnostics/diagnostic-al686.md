@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The base type already defines a method called '{0}' with the same parameter types.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

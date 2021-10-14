@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The '{0}' already defines a method called '{1}' with the same parameter types in '{2}'.
 
-
 ## Description
 A method is defined multiple times.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

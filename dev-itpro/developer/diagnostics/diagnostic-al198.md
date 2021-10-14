@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Expected one of the application object keywords ({0}).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

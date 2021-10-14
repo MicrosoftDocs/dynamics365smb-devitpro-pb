@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Table '{0}' contains too many keys.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

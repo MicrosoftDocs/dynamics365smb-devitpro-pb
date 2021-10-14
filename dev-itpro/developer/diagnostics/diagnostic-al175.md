@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Operator '{0}' cannot be applied to operands of type '{1}' and '{2}'.
 
-
 ## Description
 Binary operator cannot be applied to operands of such types.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

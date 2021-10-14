@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

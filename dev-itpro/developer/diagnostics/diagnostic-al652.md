@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The permission set '{0}' cannot contain itself.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

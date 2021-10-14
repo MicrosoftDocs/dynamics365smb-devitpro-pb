@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The data type on the field '{0}' is not valid because the ExtendedDatatype property is set to RichText. Valid data types are Text, BigText and Blob.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

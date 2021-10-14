@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The case expression cannot be an array.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

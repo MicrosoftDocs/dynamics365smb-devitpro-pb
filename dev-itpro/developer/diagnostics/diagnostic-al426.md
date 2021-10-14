@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The APIVersion {0} is specified multiple times.
 
-
 ## Description
 The APIVersion property has been specified multiple times on the same object.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

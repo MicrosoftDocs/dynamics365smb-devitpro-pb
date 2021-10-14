@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The maximum length for a field of type '{0}' is {1}.
 
-
 ## Description
 The length of the given field exceeds the maximum length permitted for its type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

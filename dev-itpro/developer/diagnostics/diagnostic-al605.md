@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Use of implicit 'with' will be removed in the future. Qualify with '{0}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A repeater control can only be added to pages that have a source table.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

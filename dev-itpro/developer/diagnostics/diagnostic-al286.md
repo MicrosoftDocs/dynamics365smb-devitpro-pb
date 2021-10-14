@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' can't contain code.
 
-
 ## Description
 An event can't contain code.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The page customization for page '{0}' does not make any modifications, so it can be removed without affecting any profiles or user personalization.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

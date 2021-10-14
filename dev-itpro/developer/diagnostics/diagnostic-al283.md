@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' must not have a return value.
 
-
 ## Description
 An event must not have a return value.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

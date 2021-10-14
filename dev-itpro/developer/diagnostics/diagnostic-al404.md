@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Property '{0}' is not allowed on a table extension.
 
-
 ## Description
 The properties **AutoIncrement**, **SqlTimestamp** and **Clustered**, **Unique** are not allowed on a table extension. 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

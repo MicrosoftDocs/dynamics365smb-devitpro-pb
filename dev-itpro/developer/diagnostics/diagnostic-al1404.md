@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The action '{0}' is not found in the target '{1}'.
 
-
 ## Description
 Cannot resolve a reference to an action in a page extension or page customization.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

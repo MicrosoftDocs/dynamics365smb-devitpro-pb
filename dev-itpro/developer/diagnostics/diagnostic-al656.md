@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The {0} '{1}' cannot be used as an anchor because it is already defined in the same '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -22,7 +22,6 @@ The field '{0}' which is part of the primary key of table '{1}' cannot be obsole
 
 > [!IMPORTANT]
 > This warning will become an error in Spring 2022.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

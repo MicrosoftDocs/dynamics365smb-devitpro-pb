@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

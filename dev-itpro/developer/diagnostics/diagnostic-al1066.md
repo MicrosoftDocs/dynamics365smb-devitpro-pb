@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Duplicate package dependency with application ID '{0}', publisher '{1}', and name '{2}'. Remove duplicate dependencies in the application manifest.
 
-
 ## Description
 Multiple package dependencies with the same application ID, publisher and name have been defined.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

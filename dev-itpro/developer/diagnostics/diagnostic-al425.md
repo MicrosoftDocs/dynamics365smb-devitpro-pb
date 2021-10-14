@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The '{0}' trigger can only be used on codeunits that have the Subtype property set to '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

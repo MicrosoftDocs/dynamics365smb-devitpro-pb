@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The length of the application object identifier '{0}' cannot exceed {1} characters.
 
-
 ## Description
 The length of an application object identifier cannot exceed 30 characters.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

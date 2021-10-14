@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'.
 
-
 ## Description
 Pages of the type 'HeadlinePart' are only allowed inside pages of PageType 'RoleCenter'.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
