@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL470
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The referenced page '{0}' of PageType 'HeadlinePart' is only allowed inside pages of PageType 'RoleCenter'.
 
 
 ## Description
 Pages of the type 'HeadlinePart' are only allowed inside pages of PageType 'RoleCenter'.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

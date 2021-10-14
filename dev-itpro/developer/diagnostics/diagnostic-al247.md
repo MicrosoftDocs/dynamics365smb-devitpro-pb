@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL247
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The target {0} {1} for the extension object is not found.
 
 
 ## Description
 The target for an extension object is not found.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

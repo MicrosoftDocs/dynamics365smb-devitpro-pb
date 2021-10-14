@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL325
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'.
 
 
 ## Description
 Only fields of the type Guid, Decimal or Integer can be included in a key.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

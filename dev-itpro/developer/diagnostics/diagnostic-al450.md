@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL450
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Field '{0}' is removed and cannot be used in an active key.
 
 
 ## Description
 An obsolete field cannot be used in a key.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

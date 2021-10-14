@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL273
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The name '{0}' is an Area type. Using an Area type name may limit extensibility.
 
 
 ## Description
 Reusing the Area type as the name of a variable might lead to extensibility limitations.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

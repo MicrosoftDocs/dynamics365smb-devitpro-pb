@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL463
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Parameter '{0}' must be 'var' if and only if the publisher parameter is 'var'.
 
 
 ## Description
 The parameter of an event subscriber can only if the publisher parameter is 'var.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

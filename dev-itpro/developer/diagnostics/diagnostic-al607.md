@@ -3,7 +3,7 @@ title: "Compiler Hidden AL607"
 description: "The 'with' statement is deprecated and will be removed for cloud development in a future release."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Hidden AL607
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The 'with' statement is deprecated and will be removed for cloud development in a future release.
 
 

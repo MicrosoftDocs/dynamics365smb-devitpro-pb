@@ -3,7 +3,7 @@ title: "Compiler Error AL407"
 description: "The generic '{0}' type expects {1} type arguments."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL407
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The generic '{0}' type expects {1} type arguments.
 
 

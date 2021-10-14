@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL457
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The label syntax is not correct. Please move the '{0}' to its designated attribute.
 
 
 ## Description
 Use the correct label syntax as specified in [Label Syntax](../devenv-using-labels.md#label-syntax).
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

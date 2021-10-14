@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL238
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 No overload for attribute '{0}' expects {1} arguments.
 
 
 ## Description
 The attribute has been specified with the wrong number of attributes. For more information, see the attribute's documentation.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

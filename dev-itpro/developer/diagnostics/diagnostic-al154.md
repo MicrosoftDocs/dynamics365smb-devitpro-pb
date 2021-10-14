@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL154
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The maximum length for a field of type '{0}' is {1}.
 
 
 ## Description
 The length of the given field exceeds the maximum length permitted for its type.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

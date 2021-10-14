@@ -3,7 +3,7 @@ title: "Compiler Error AL1150"
 description: "The link in parameter '{0}' ({1}) is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/24/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1150
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The link in parameter '{0}' ({1}) is not valid. {2}.
 
 

@@ -3,7 +3,7 @@ title: "Compiler Error AL1069"
 description: "Duplicate package dependency with application ID '{0}', and name '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/12/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1069
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Duplicate package dependency with application ID '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.
 
 
 ## Description
 Multiple package dependencies with the same application ID and name have been defined.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

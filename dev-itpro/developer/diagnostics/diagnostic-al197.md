@@ -15,12 +15,14 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL197
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 An application object of type '{0}' with name '{1}' is already declared by the extension '{2}'.
 
 
 ## Description
 Multiple application objects with the same name are defined.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
