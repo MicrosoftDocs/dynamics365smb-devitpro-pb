@@ -116,13 +116,13 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
     ```  
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer -Name 'My Extension' -Version 1.0.0.0 | Unpublish-NAVApp
     ```
-### To unipublish an extension by using the client  
+### To unpublish an extension by using the client  
 
 
 1.  In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
 
-    In the **Extension Management** window, you can view the extensions that are installed on the tenant 
-2.  Choose an extension where the Published As is not set to Global , and choose the **Unpublish** action.
+    In the **Extension Management** window, you can view the extensions that are installed on the tenant. 
+2.  Choose an extension where **Published As** is *not set to* **Global**, and choose the **Unpublish** action.
 
 ## Synchronizing (clean mode) an extension after uninstallation
 
