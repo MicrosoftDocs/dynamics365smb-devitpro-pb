@@ -34,7 +34,7 @@ To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md
 
 ## Where do I find help regarding AppSource validation and submission?
 
-When submitting an app for AppSource, you must make sure that it validates against the [Technical Validation](devenv-checklist-submission.md). For frequently asked questions, see [Technical Validation FAQ](devenv-checklist-submission-faq.md).
+When submitting an app for AppSource, you must make sure that it validates against the [Technical Validation Checklist](devenv-checklist-submission.md). For frequently asked questions, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md).
 
 ## What constitutes the identity of an app?
 
