@@ -17,7 +17,7 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## When do I contact d365val@microsoft.com?
 
-When registering affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
+When registering affixes for your publisher. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
 ## When do I contact Partner Center customer support?
 
