@@ -90,7 +90,7 @@ You can create an environment that is a copy of an existing environment, such as
 
 ### To copy an environment
 
-1. Select **Environments**, then select the environment you want to rename.
+1. Select **Environments**, then select the environment that you want to copy.
 2. On the **Environment Details** page, choose the **Copy** action.
 3. In the **Copy environment** pane, specify the type of environment that you want to create based on the current environment.
 4. Specify a name for the new environment.
