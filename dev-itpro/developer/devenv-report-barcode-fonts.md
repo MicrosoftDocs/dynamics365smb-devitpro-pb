@@ -14,10 +14,10 @@ ms.author: jswymer
 
 # Barcode Fonts with Business Central Online
 
-Business Central online includes the following one-dimensional barcode fonts and symbologies from [IDAutomation](https://www.idautomation.com). The fonts have different specifications for characteristics like encode numbers, symbols, uppercase, and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts.
+Business Central online includes the following one-dimensional (1D) barcode fonts and symbologies from [IDAutomation](https://www.idautomation.com). The fonts have different specifications for characteristics like encode numbers, symbols, uppercase, and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts. Barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol.
 
-> [!TIP]
-> A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol
+> [!NOTE]
+> Currently, there are no two-dimensional (2D) or three-dimensional (3D) barcode fonts or encoders included.
 
 |Font|Symbology|Description|
 |----|-----------|--------------
