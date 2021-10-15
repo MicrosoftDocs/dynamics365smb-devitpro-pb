@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 09/30/2021
+ms.date: 10/15/2021
 ms.author: edupont
 ---
 
@@ -119,44 +119,7 @@ Most trials are based on people signing up at [https://dynamics.microsoft.com/bu
 
 ## <a name="infrastructure"></a>Understanding Business Central online infrastructure
 
-When someone wants to buy [!INCLUDE [prod_short](../includes/prod_short.md)] online, a couple of questions must be answered because [!INCLUDE [prod_short](../includes/prod_short.md)] can be configured along several different axes. In this section, we describe the topology of [!INCLUDE [prod_short](../includes/prod_short.md)] online so that you can make qualified decisions for how the tenant will be deployed and configured.  
-
-> [!TIP]
-> [!INCLUDE [prod_short](../includes/prod_short.md)] is available in a limited number of markets. For more information, see [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).  
-
-### Microsoft 365 and Azure Active Directory
-
-The first decision to make is related to the Azure Active Directory (Azure AD) tenant that is required to use for [!INCLUDE [prod_short](../includes/prod_short.md)] online. To sign up for a trial, use a work or school account. For more information, see [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide&preserve-view=true).  
-
-This account is an important step because it is tied to a region of the world. Users are defined in the Azure AD account and then assigned the relevant licenses in the Microsoft 365 admin center. It is also important for the reseller's Azure AD. For more information, see the [Enroll in the CSP program](#enroll-in-the-csp-program) section.  
-
-> [!TIP]
-> For some customers, the right approach is to have multiple Azure AD tenants due to their own organizational structure.  
-
-### Environments and companies
-
-Each Azure AD tenant that buys a [!INCLUDE [prod_short](../includes/prod_short.md)] online license automatically gets some environments. Each environment is tied to a specific country and localization.  
-
-[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
-
-Each environment can be divided into multiple companies, where each company defines a legal entity or a business unit that has separate accounting requirements. All users who have a [!INCLUDE [prod_short](../includes/prod_short.md)] license for a specific Azure AD tenant can access all companies in each [!INCLUDE [prod_short](../includes/prod_short.md)] environment that the Azure AD tenant has. You can define different permissions inside [!INCLUDE [prod_short](../includes/prod_short.md)]. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
-
-### Example
-
-Let's review a scenario for an organization that is based in Denmark but has a subsidiary in Germany. They have three business units in Denmark and two in Germany.  
-
-| Organization | Azure AD | Environment localization | Number of companies |
-|--|--|--|--|
-| Parent company | Microsoft 365 account in Denmark | DK | 3 |
-| Subsidiary company | Microsoft 365 account in Germany | DE | 2 |
-
-In this example, the production environment that is based on the Danish localization of [!INCLUDE [prod_short](../includes/prod_short.md)] is part of the default assignment as described above. This production environment has three companies to represent the following business units, all located in central Jutland:
-
-- The administrative headquarters
-- The production facilities
-- The Danish sales office
-
-Because this organization has a German subsidiary that has separate accounting requirements, the organization decided to buy another production environment. This extra environment has two companies, one for the sales offices in Munich, and one for the warehouse near Stuttgart.
+If you are migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md). 
 
 ## See Also
 
@@ -169,3 +132,4 @@ Because this organization has a German subsidiary that has separate accounting r
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
+[Understanding the infrastructure of Business Central online](tenant-environment-topology.md)  

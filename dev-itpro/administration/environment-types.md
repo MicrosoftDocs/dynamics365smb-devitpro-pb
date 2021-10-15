@@ -16,6 +16,9 @@ ms.author: edupont
 
 You can create environments of different types. Which type of environment to choose depends on what you need it for.  
 
+> [!TIP]
+> If you're new to environments, get an overview of how Azure Active Directory, environments, and companies work in [!INCLUDE [prod_short](../includes/prod_short.md)] online at [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).
+
 <!--The following table outlines some of the benefits of each environment type.
 
 |Column1  |Column2  |
