@@ -74,10 +74,10 @@ codeunit 50100 MyCodeunit
 
 ### Code example triggering the rule - Invalid Table Extension Field ID
 
-The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json`, nor within the range `[1 - 49,999]`.
+The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json`.
 
 ```AL
-field 1000000 MyTable
+tableextension 1000000 MyTableExt extends MyTable
 {
     fields
     {
@@ -86,21 +86,8 @@ field 1000000 MyTable
 }
 ```
 
-### Code example triggering the rule - Invalid Table Field ID
-
-// TODO(qutreson)
-
-The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json`, nor within the range `[1 - 49,999]`.
-
-```AL
-field 1000000 MyTable
-{
-    fields
-    {
-        field(50100; MyField; Integer) { }
-    }
-}
-```
+> [!NOTE]  
+> Fields defined in table objects are validated by [AS0099](appsourcecop-as099.md).
 
 ## How to fix this diagnostic?
 

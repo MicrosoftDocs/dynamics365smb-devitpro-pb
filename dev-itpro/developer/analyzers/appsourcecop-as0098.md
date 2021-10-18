@@ -39,7 +39,7 @@ Other AL objects and object members are validated by [AS0011](appsourcecop-as001
 
 ## When to fix this diagnostic?
 
-### For new object memners
+### For new object members
 
 For objects that are introduced with the current version of the extension, appending one of the mandatory affixes to the object's name will fix the diagnostic.
 Renaming objects which are not part of the baseline is allowed.
@@ -51,7 +51,7 @@ For objects which already exist in the version of the extension used as baseline
 For detailed examples, see [AS0011](appsourcecop-as0011.md).
 
 > [!IMPORTANT]  
-> Introducing a new enum value can be a breaking change if this enum value is stored in the database. You must carefully assess the impact of your changes before introducing a new enum value. This implies writing upgrade code for your app and potentially for the dependent extensions storing this enum in their own tables.
+> Introducing a new enum value can be a breaking change if this enum value is stored in the database. You must carefully assess the impact of your changes before introducing a new enum value. This implies writing upgrade code for your app and for the dependent extensions storing this enum value in their own tables.
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
