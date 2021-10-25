@@ -112,7 +112,7 @@ Please include app and all library apps in both previousApps and apps and please
 > You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
 
 > [!NOTE]  
-> Microsoft recommends that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
+> It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
 > You can find resources for how to set up a build pipeline, which performs all these steps here: [https://aka.ms/cicdhol](https://aka.ms/cicdhol) and you can find sample repositories, performing these steps here:
 > - [https://dev.azure.com/businesscentralapps/HelloWorld.AppSource](https://dev.azure.com/businesscentralapps/HelloWorld.AppSource) (for Azure DevOps)
@@ -129,7 +129,7 @@ For manual validation, we spin up a container with the right artifacts (same as 
 The manual test validation document is run manually and if the document doesn't match the app functionality the submission is rejected.
 
 > [!Important]  
-> Microsoft recommends that all partners are performing the manual validation as the last check before submitting for validation.
+> It is recommended that all partners are performing the manual validation as the last check before submitting for validation.
 >
 > This can be done either in online sandbox environments or in sandbox Docker containers.
 
@@ -142,8 +142,6 @@ In order to enable partner telemetry in your extension, you must specify the `ap
 In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
 For more information about the signals sent during the technical validation, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
-
-## Against which releases of Business Central is your submission validated?
 
 ## <a name="versions"></a>Against which releases of Business Central is your submission validated?
 
