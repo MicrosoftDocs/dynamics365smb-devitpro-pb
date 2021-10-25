@@ -41,7 +41,7 @@ The following illustrates an example of an `app.json` file specifying an ID rang
 ```
 
 > [!NOTE]
-> For table fields defined in table objects and enums defined in enum objects, it is possible to use an ID coming from the range `[0-49,999]`.
+> For table fields defined in table objects and enums defined in enum objects, it is possible to use an ID within the range `[0-49,999]`.
 
 The rule [AS0084](appsourcecop-as0084.md) validates that the ID range has been specified in the `app.json` of the extension.
 
@@ -63,7 +63,7 @@ For the following examples, let's consider this `app.json`:
 
 ### Code example triggering the rule - Invalid Codeunit ID
 
-The following example triggers the rule because the ID of the codeunit `MyCodeunit` is not defined within the ID range defined in the `app.json`.
+The following example triggers the rule because the ID of the codeunit `MyCodeunit` is not defined within the ID range defined in the `app.json` file.
 
 ```AL
 codeunit 50100 MyCodeunit
@@ -74,7 +74,7 @@ codeunit 50100 MyCodeunit
 
 ### Code example triggering the rule - Invalid Table Extension Field ID
 
-The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json`.
+The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json` file.
 
 ```AL
 tableextension 1000000 MyTableExt extends MyTable

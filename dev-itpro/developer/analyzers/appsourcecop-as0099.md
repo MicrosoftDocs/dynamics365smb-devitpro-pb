@@ -3,7 +3,7 @@ title: "AppSourceCop Rule AS0099"
 description: "The member ID should be within the allowed range and outside the range allocated to per-tenant customizations."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/18/2021
+ms.date: 10/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,17 +15,17 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0099
-The '{0}' ID should be within the allowed range
+The member ID should be within the allowed range
 
 ## Description
 The member ID should be within the allowed range and outside the range allocated to per-tenant customizations.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-In order to avoid ID clashes for objects added by your extension and objects added by other extensions, you must respect the ID range specified in the [app.json](../devenv-json-files.md) of your extension when declaring new AL objects. For more information on ID ranges in Business Central, see [Object Ranges](../devenv-object-ranges.md).
+In order to avoid ID clashes for objects added by your extension and objects added by other extensions, you must respect the ID range specified in the [app.json](../devenv-json-files.md) file of your extension when declaring new AL objects. For more information on ID ranges in Business Central, see [Object Ranges](../devenv-object-ranges.md).
 
 > [!NOTE]  
-> This rule mimics the behavior of [AS0013](appsourcecop-as0013.md) for a limited set of objects members for which AS0013 wasn't enforced when they were introduced in AL. Having them reported as a separate rule allows more granularity, especially in regard to AL code not respecting the use of affixes prior to the implementation of this rule.
+> This rule mimics the behavior of [AS0013](appsourcecop-as0013.md) for a limited set of objects members for which AS0013 wasn't enforced when they were introduced in AL. Having them reported as a separate rule allows more granularity, especially in regards to AL code not respecting the use of affixes prior to the implementation of this rule.
 
 ### Which object members are validated?
 
