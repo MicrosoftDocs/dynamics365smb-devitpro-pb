@@ -41,7 +41,7 @@ The following illustrates an example of an `app.json` file specifying an ID rang
 ```
 
 > [!NOTE]
-> For table fields defined in table objects and enums defined in enum objects, it is possible to use an ID coming from the range `[0-49,999]`.
+> For table fields defined in table objects and enums defined in enum objects, it is possible to use an ID within the range `[0-49,999]`.
 
 The rule [AS0084](appsourcecop-as0084.md) validates that the ID range has been specified in the `app.json` of the extension.
 

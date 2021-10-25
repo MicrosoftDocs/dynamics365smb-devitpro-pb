@@ -3,7 +3,7 @@ title: "AppSourceCop Rule AS0099"
 description: "The member ID should be within the allowed range and outside the range allocated to per-tenant customizations."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/18/2021
+ms.date: 10/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Rule AS0099
-The '{0}' ID should be within the allowed range
+The member ID should be within the allowed range
 
 ## Description
 The member ID should be within the allowed range and outside the range allocated to per-tenant customizations.
