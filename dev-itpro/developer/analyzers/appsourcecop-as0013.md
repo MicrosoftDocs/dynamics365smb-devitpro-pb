@@ -63,7 +63,7 @@ For the following examples, let's consider this `app.json`:
 
 ### Code example triggering the rule - Invalid Codeunit ID
 
-The following example triggers the rule because the ID of the codeunit `MyCodeunit` is not defined within the ID range defined in the `app.json`.
+The following example triggers the rule because the ID of the codeunit `MyCodeunit` is not defined within the ID range defined in the `app.json` file.
 
 ```AL
 codeunit 50100 MyCodeunit
@@ -74,7 +74,7 @@ codeunit 50100 MyCodeunit
 
 ### Code example triggering the rule - Invalid Table Extension Field ID
 
-The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json`.
+The following example triggers the rule because the ID of the field `MyField` is not defined within the ID range defined in the `app.json` file.
 
 ```AL
 tableextension 1000000 MyTableExt extends MyTable
