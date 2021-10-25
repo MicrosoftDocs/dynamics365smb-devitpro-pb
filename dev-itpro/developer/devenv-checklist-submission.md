@@ -143,8 +143,6 @@ In order to get started on analyzing your validation results, you can use this t
 
 For more information about the signals sent during the technical validation, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
-## Against which releases of Business Central is your submission validated?
-
 ## <a name="versions"></a>Against which releases of Business Central is your submission validated?
 
 Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
