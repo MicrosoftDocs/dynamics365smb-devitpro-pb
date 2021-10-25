@@ -63,7 +63,7 @@ The technical validation is fully automated and validates the requirements defin
 4. The consistency of the main extension information (name, publisher, version) is validated against the offer description. If any **differences are noticed, the submission is rejected.**
 5. The extensions in the submission are validated. If **any runtime packages are present, the submission is rejected.**
 
-Once the extension has passed these first validation steps, the minimum release for your submission is computed as described in [Computation of Releases for Validation](devenv-checklist-submission.md#Against-which-releases-of-Business-Central-is-your-submission-validated).
+Once the extension has passed these first validation steps, the minimum release for your submission is computed as described in [Computation of Releases for Validation](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
 For **each country and each release** targeted by your submission, the following steps are run **for each extension** in the submission:
 
@@ -143,7 +143,7 @@ In order to get started on analyzing your validation results, you can use this t
 
 For more information about the signals sent during the technical validation, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
-## <a name="versions"></a>Against which releases of Business Central is your submission validated?
+## Against which releases of Business Central is your submission validated?
 
 Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
 
