@@ -24,7 +24,7 @@ The field identifier must be within the allowed range and outside the range allo
 
 ## Remarks
 
-In order to avoid ID clashes for objects added by your extension and objects added by other extensions, you must respect the ID range specified in the [app.json](../devenv-json-files.md) of your extension when declaring new AL objects. For more information on ID ranges in Business Central, see [Object Ranges](../devenv-object-ranges.md).
+In order to avoid ID clashes for objects added by your extension and objects added by other extensions, you must respect the ID range specified in the [app.json](../devenv-json-files.md) file of your extension when declaring new AL objects. For more information about ID ranges in Business Central, see [Object Ranges](../devenv-object-ranges.md).
 
 Example of app.json specifying an ID range.
 
