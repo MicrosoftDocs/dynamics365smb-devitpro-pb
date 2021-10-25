@@ -44,6 +44,7 @@ codeunit 50100 MyCodeunit
     begin
     end;
 }
+```
 
 Version 2.0 of the extension:
 
@@ -81,6 +82,7 @@ codeunit 50100 MyCodeunit
         // Business logic
     end;
 }
+```
 
 Version 2.0 of the extension:
 

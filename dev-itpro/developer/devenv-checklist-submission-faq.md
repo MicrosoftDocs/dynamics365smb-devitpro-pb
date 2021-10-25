@@ -17,13 +17,7 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## When do I contact d365val@microsoft.com?
 
-- When registering affixes
-- When requesting an exception for a breaking change (after reaching out to CSS first)
-
-## When do I write on Yammer?
-
-- When you have questions related to development (which code-signing certification to use, best practices, etc.).
-- Or, when you have other questions that pertain to this area - use [aka.ms/bcyammer](https://aka.ms/bcyammer).
+When registering affixes for your publisher. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
 ## When do I contact Partner Center customer support?
 
@@ -36,10 +30,15 @@ This topic addresses some of the most frequently asked questions around validati
 
 When your submission has been successfully completed in Partner Center, but your customers are experiencing issues installing or using the app.
 
-## When do I log an issue on NavContainerHelper?
+## When do I log an issue on NavContainerHelper on Github?
 
-- When you have questions or bugs regarding the self-validation script. For more information, see [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
+When you have questions or bugs regarding the self-validation script. For more information, see [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
+
+## When do I write on Yammer?
+
+- When you have questions related to development (which code-signing certificate to use, best practices, etc.).
+- Or, when you have other questions that pertain to this area - use [aka.ms/bcyammer](https://aka.ms/bcyammer).
 
 ## See also
 
-[Technical Validation Checklist](devenv-checklist-submission.md)  
+[Technical Validation Checklist](devenv-checklist-submission.md)
