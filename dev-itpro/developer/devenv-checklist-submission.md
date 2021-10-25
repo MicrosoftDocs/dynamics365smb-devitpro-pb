@@ -46,7 +46,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify at least one dependency on Application, Base Application, or System Application.|At least one dependency on Application, Base Application, or System Application is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#versions)|
+|The extension submitted must specify at least one dependency on Application, Base Application, or System Application.|At least one dependency on Application, Base Application, or System Application is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
 
 ## Technical validation performed by the Business Central validation team
 
