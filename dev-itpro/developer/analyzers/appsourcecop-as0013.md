@@ -26,7 +26,7 @@ The field identifier must be within the allowed range and outside the range allo
 
 In order to avoid ID clashes for objects added by your extension and objects added by other extensions, you must respect the ID range specified in the [app.json](../devenv-json-files.md) file of your extension when declaring new AL objects. For more information about ID ranges in Business Central, see [Object Ranges](../devenv-object-ranges.md).
 
-Example of app.json specifying an ID range.
+The following illustrates an example of an `app.json` file specifying an ID range:
 
 ```JSON
 {
@@ -107,7 +107,7 @@ For objects which already exist in the version of the extension used as baseline
 
 #### Example - Modifying the ID of an existing codeunit
 
-For instance, let's consider an extension if the ID range assigned to the extension is `[1,000,000 -  1,000,100]` and the extension defines:
+As an example, let's consider an extension if the ID range assigned to the extension is `[1,000,000 -  1,000,100]` and the extension defines:
 
 ```AL
 codeunit 50100 MyCodeunit
