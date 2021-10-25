@@ -74,7 +74,7 @@ Renaming objects which are not part of the baseline is allowed.
 For objects which already exist in the version of the extension used as baseline, it is not possible to rename them. It is therefore not possible to append one of the mandatory affixes. Instead, the offending object should be deprecated using the [ObsoleteState](../properties/devenv-obsoletestate-property.md) property and a new object whose name has one of the mandatory affixes should be introduced.
 
 > [!NOTE]  
-> The lack of affixes for enum values defined in enum extensions is reported as a warning with [AS0098](appsourcecop-as0098.md) if the enum value is already defined in your baseline extension. If the enum value is not defined in your baseline extension, it is reported as an error with [AS0011](appsourcecop-as0011.md). Make sure to specify your baseline extension in the AppSourceCop.json.
+> The lack of affixes for enum values defined in enum extensions is reported as a warning with [AS0098](appsourcecop-as0098.md) if the enum value is already defined in your baseline extension. If the enum value is not defined in your baseline extension, it is reported as an error with [AS0011](appsourcecop-as0011.md). Make sure to specify your baseline extension in the AppSourceCop.json file.
 
 #### Example - Adding an affix to an existing codeunit
 
