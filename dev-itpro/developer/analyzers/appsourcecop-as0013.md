@@ -87,7 +87,7 @@ tableextension 1000000 MyTableExt extends MyTable
 ```
 
 > [!NOTE]  
-> Fields defined in table objects are validated by [AS0099](appsourcecop-as099.md).
+> Fields defined in table objects are validated by [AS0099](appsourcecop-as0099.md).
 
 ## How to fix this diagnostic?
 
