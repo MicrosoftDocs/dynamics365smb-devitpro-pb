@@ -55,7 +55,7 @@ The primary responsibility of the technical validation is to ensure that the Bus
 The technical validation is fully automated and validates the requirements defined in the technical validation checklist above.
 
 > [!Important]  
-> Microsoft recommends that all partners are executing the self validation documented below before submitting apps for validation to maximize chances of validation success.
+> It is recommended that all partners run the self-validation documented below before submitting apps for validation to maximize chances of validation success.
 
 1. The manifest of all extensions in the submission is validated. If any **mandatory properties or required property values are missing, the submission is rejected.**.
 2. The registration of affixes for the publisher name of all the extensions in the submission is validated. If **the publisher name does not have any registered affixes, the submission is rejected.**
