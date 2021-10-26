@@ -3,7 +3,7 @@ title: "Compiler Error AL116"
 description: "Invalid value for '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Invalid value for '{0}'. Allowed values are '{1}'.
 
 ## Description
-The value defined for the property is not valid. Refer to the property's documentation to see the allowed values.
+The value defined for the property is not valid. Refer to the property's documentation to see the allowed values.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

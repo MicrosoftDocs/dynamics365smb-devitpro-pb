@@ -3,7 +3,7 @@ title: "Compiler Error AL414"
 description: "Procedure '{0}' must declare a body."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Procedure '{0}' must declare a body.
 
 ## Description
-Procedures must declare a body, except for those defined inside a **ControlAddin** or **Interface**.
+Procedures must declare a body, except for those defined inside a **ControlAddin** or **Interface**.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

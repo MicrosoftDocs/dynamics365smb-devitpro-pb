@@ -3,7 +3,7 @@ title: "Compiler Error AL404"
 description: "Property '{0}' is not allowed on a table extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Property '{0}' is not allowed on a table extension.
 
 ## Description
-The properties **AutoIncrement**, **SqlTimestamp** and **Clustered**, **Unique** are not allowed on a table extension. 
+The properties **AutoIncrement**, **SqlTimestamp** and **Clustered**, **Unique** are not allowed on a table extension.   
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

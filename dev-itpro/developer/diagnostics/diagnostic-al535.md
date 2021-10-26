@@ -3,7 +3,7 @@ title: "Compiler Error AL535"
 description: "The referenced page '{0}' must be a List part, a Card part, or an API page."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The referenced page '{0}' must be a List part, a Card part, or an API page.
 
 ## Description
-A page used for a part control of an API page must be a List part, a Card part, or an API page.
+A page used for a part control of an API page must be a List part, a Card part, or an API page.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

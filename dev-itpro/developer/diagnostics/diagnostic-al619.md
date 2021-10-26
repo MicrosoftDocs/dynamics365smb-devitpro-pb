@@ -3,7 +3,7 @@ title: "Compiler Error AL619"
 description: "The attribute '{0}' on procedure '{1}' is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The attribute '{0}' on procedure '{1}' is not allowed. Add attribute 'ServiceEnabled' to the procedure or move it into an application object of type API.
 
 ## Description
-The Caption attribute is not allowed. Add attribute 'ServiceEnabled' to the procedure or move it into an application object of type API.
+The Caption attribute is not allowed. Add attribute 'ServiceEnabled' to the procedure or move it into an application object of type API.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

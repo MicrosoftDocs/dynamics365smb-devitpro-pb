@@ -3,7 +3,7 @@ title: "Compiler Error AL164"
 description: "The trigger '{0}' is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The trigger '{0}' is already defined.
 
 ## Description
-There is a duplicate trigger defined in the same object.
+There is a duplicate trigger defined in the same object.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

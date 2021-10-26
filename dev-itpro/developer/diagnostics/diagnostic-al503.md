@@ -3,7 +3,7 @@ title: "Compiler Error AL503"
 description: "Reference '{0}' in application object '{1}' is ambiguous."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Reference '{0}' in application object '{1}' is ambiguous.
 
 ## Description
-Ambiguous reference to an application object.
+Ambiguous reference to an application object.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

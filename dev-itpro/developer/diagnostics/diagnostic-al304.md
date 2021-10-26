@@ -3,7 +3,7 @@ title: "Compiler Error AL304"
 description: "Length of the identifier '{0}' cannot exceed {1} characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Length of the identifier '{0}' cannot exceed {1} characters.
 
 ## Description
-The length of an identifier cannot exceed 120 characters.
+The length of an identifier cannot exceed 120 characters.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

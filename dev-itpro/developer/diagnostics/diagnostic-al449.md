@@ -3,7 +3,7 @@ title: "Compiler Error AL449"
 description: "The alias '{0}' is already declared."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The alias '{0}' is already declared.
 
 ## Description
-There are multiple DotNet types defined with the same alias.
+There are multiple DotNet types defined with the same alias.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

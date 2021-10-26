@@ -3,7 +3,7 @@ title: "Compiler Error AL355"
 description: "Cannot move the {0} '{1}' multiple times inside of a single move operation."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Cannot move the {0} '{1}' multiple times inside of a single move operation.
 
 ## Description
-An element cannot be moved multiple times inside of a single move operation.
+An element cannot be moved multiple times inside of a single move operation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

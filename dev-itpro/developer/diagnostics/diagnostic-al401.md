@@ -3,7 +3,7 @@ title: "Compiler Error AL401"
 description: "Multiple page customizations have been specified for the same page {0} within the same profile."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Multiple page customizations have been specified for the same page {0} within the same profile.
 
 ## Description
-Only one page customization per page is allowed within a profile.
+Only one page customization per page is allowed within a profile.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Compiler Error AL118"
 description: "The name '{0}' does not exist in the current context."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The name '{0}' does not exist in the current context.
 
 ## Description
-The referenced name does not exist in the current context.
+The referenced name does not exist in the current context.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

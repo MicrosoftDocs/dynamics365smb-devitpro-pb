@@ -3,7 +3,7 @@ title: "Compiler Error AL239"
 description: "Attribute {0} is specified multiple times."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Attribute {0} is specified multiple times.
 
 ## Description
-The same attribute has been specified multiple times on the same element.
+The same attribute has been specified multiple times on the same element.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

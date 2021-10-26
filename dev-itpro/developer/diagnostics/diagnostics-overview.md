@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,6 @@ author: SusanneWindfeldPedersen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AL Compiler Diagnostics
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 |Id|Message|Default Severity|
 |--|-----------|----------------|
@@ -577,6 +576,7 @@ author: SusanneWindfeldPedersen
 |[AL692](diagnostic-al692.md)|The primary key '{0}' on table '{1}' cannot be obsolete. All related properties will have no effect.|Warning (Future Error)|
 |[AL693](diagnostic-al693.md)|The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.|Error|
 |[AL694](diagnostic-al694.md)|The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.|Warning (Future Error)|
+|[AL695](diagnostic-al695.md)|The method {0} will only be available for {1} development for runtime version {2}.|Warning (Future Error)|
 |[AL999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

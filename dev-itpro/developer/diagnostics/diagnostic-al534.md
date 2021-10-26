@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL534"
 description: "Length of the table key name '{0}' must not exceed {1} characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Length of the table key name '{0}' must not exceed {1} characters. Longer key names are prone to cause SQL errors.
 
 ## Description
-The length of a table key name must not exceed 28 characters. Longer key names are prone to cause SQL errors.
+The length of a table key name must not exceed 28 characters. Longer key names are prone to cause SQL errors.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Compiler Error AL240"
 description: "The signature of procedure '{0}' does not match the signature required by attribute '{1}': parameter {2} is expected to be of type '{3}' but found type '{4}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The signature of procedure '{0}' does not match the signature required by attribute '{1}': parameter {2} is expected to be of type '{3}' but found type '{4}'. The expected signature is: {5}.
 
 ## Description
-The parameter type of the procedure where the attribute is set does not match the signature required by attribute. For more information about the required signature, see the attribute's documentation.
+The parameter type of the procedure where the attribute is set does not match the signature required by attribute. For more information about the required signature, see the attribute's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

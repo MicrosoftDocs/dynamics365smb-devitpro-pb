@@ -3,7 +3,7 @@ title: "Compiler Error AL134"
 description: "'{0}' is not recognized as a valid type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 '{0}' is not recognized as a valid type.
 
 ## Description
-Unknown type. For more information about the data types available as part of the AL Language, see [Data Types and Methods in AL](/dynamics365/business-central/dev-itpro/developer/methods-auto/library).
+Unknown type. For more information about the data types available as part of the AL Language, see [Data Types and Methods in AL](/dynamics365/business-central/dev-itpro/developer/methods-auto/library).  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Compiler Error AL155"
 description: "A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.
 
 ## Description
-Multiple members with the same name are defined by the same or several extensions.
+Multiple members with the same name are defined by the same or several extensions.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

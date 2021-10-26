@@ -3,7 +3,7 @@ title: "Compiler Error AL250"
 description: "The data type on the {0} field is not valid because the ExtendedDatatype property is set to Person."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The data type on the {0} field is not valid because the ExtendedDatatype property is set to Person. Valid data types are Media and MediaSet.
 
 ## Description
-If a field has the **ExtendedDatatype** property is set to **Person**, then the field can only be of the type Media or MediaSet.
+If a field has the **ExtendedDatatype** property is set to **Person**, then the field can only be of the type Media or MediaSet.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

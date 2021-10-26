@@ -3,7 +3,7 @@ title: "Compiler Error AL192"
 description: "The return value must be used for the method '{0}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The return value must be used for the method '{0}'.
 
 ## Description
-The return value of a method must be used.
+The return value of a method must be used.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

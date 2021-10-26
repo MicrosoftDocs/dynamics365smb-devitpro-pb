@@ -3,7 +3,7 @@ title: "Compiler Error AL368"
 description: "The maximum number of array dimensions is {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The maximum number of array dimensions is {0}.
 
 ## Description
-The number of dimensions for an array cannot exceed 10.
+The number of dimensions for an array cannot exceed 10.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

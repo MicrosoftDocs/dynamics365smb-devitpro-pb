@@ -3,7 +3,7 @@ title: "Compiler Error AL347"
 description: "The methods '{0}' can only be used on Columns that have a Decimal, BigInteger, Integer, or Duration type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The methods '{0}' can only be used on Columns that have a Decimal, BigInteger, Integer, or Duration type.
 
 ## Description
-The **Method** property can only have the property values Average, Sum, Max and Min when used on Columns of the type Decimal, BigInteger, Integer, or Duration.
+The **Method** property can only have the property values Average, Sum, Max and Min when used on Columns of the type Decimal, BigInteger, Integer, or Duration.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

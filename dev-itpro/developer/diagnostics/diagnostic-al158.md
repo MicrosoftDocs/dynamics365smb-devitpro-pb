@@ -3,7 +3,7 @@ title: "Compiler Error AL158"
 description: "'{0}' is not a valid parameter type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 '{0}' is not a valid parameter type.
 
 ## Description
-Invalid parameter type.
+Invalid parameter type.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

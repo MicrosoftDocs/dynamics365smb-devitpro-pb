@@ -3,7 +3,7 @@ title: "Compiler Error AL323"
 description: "The value assigned to the SystemPart type is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The value assigned to the SystemPart type is not valid. Valid values are {0}.
 
 ## Description
-The value assigned to the SystemPart type must be Notes, Links, MyNotes or Outlook.
+The value assigned to the SystemPart type must be Notes, Links, MyNotes or Outlook.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

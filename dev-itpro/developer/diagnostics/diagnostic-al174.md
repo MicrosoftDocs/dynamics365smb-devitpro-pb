@@ -3,7 +3,7 @@ title: "Compiler Error AL174"
 description: "Operator '{0}' is ambiguous on operands of type '{1}' and '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Operator '{0}' is ambiguous on operands of type '{1}' and '{2}'.
 
 ## Description
-Binary operator is ambiguous on operands of such types.
+Binary operator is ambiguous on operands of such types.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

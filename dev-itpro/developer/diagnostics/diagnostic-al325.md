@@ -3,7 +3,7 @@ title: "Compiler Error AL325"
 description: "The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'.
 
 ## Description
-Only fields of the type Guid, Decimal or Integer can be included in a key.
+Only fields of the type Guid, Decimal or Integer can be included in a key.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

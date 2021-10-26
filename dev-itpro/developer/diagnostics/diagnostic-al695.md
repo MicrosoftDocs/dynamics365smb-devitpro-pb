@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL326"
-description: "'{0}' is not a valid column type."
+title: "Compiler Warning (Future Error) AL695"
+description: "The method {0} will only be available for {1} development for runtime version {2}."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/26/2021
@@ -14,14 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL326
+# Compiler Warning (Future Error) AL695
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-'{0}' is not a valid column type.
-
-## Description
-The specified data type is not valid for columns. Valid data types are Boolean, Char, Integer, BigInteger, Decimal, Option, Enum, Text, Code, TextConst, Label, DateTime, Time, Date, DateFormula, Duration, Guid, RecordId, TableFilter, String, Blob, Media, Variant and MediaSet.  
+The method {0} will only be available for {1} development for runtime version {2}.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL402"
 description: "Expression {0} cannot be specified more than once in a case statement."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Expression {0} cannot be specified more than once in a case statement.
 
 ## Description
-Duplicate expression in a case statement. Expressions in a case statement must be unique.
+Duplicate expression in a case statement. Expressions in a case statement must be unique.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Compiler Error AL297"
 description: "The application object identifier '{0}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The application object identifier '{0}' is not valid. It must be within the allowed ranges '{1}'.
 
 ## Description
-An application object's ID must be within the idRange specified in the manifest.
+An application object's ID must be within the idRange specified in the manifest.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

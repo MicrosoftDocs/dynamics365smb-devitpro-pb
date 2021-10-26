@@ -3,7 +3,7 @@ title: "Compiler Error AL287"
 description: "The event '{0}' can't contain local variables."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The event '{0}' can't contain local variables.
 
 ## Description
-An event can't contain local variables.
+An event can't contain local variables.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

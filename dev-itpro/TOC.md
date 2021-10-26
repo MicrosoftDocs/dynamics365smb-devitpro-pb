@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -1201,6 +1201,7 @@
 ###### [AL685](developer/diagnostics/diagnostic-al685.md)
 ###### [AL692](developer/diagnostics/diagnostic-al692.md)
 ###### [AL694](developer/diagnostics/diagnostic-al694.md)
+###### [AL695](developer/diagnostics/diagnostic-al695.md)
 ##### Hidden messages
 ###### [AL605](developer/diagnostics/diagnostic-al605.md)
 ###### [AL607](developer/diagnostics/diagnostic-al607.md)

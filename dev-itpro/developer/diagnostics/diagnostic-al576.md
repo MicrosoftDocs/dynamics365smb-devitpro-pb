@@ -3,7 +3,7 @@ title: "Compiler Error AL576"
 description: "The profile name '{0}' is not valid because it contains leading or trailing spaces."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The profile name '{0}' is not valid because it contains leading or trailing spaces.
 
 ## Description
-The name for a progile must not contain leading or trailing spaces.
+The name for a progile must not contain leading or trailing spaces.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

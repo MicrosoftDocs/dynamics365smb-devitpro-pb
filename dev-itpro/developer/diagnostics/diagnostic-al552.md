@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL552"
 description: "The action area '{0}' can only directly contain groups."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The action area '{0}' can only directly contain groups.
 
 ## Description
-An action area can only directly contain groups.
+An action area can only directly contain groups.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

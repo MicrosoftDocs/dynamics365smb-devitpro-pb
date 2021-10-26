@@ -3,7 +3,7 @@ title: "Compiler Error AL280"
 description: "The event '{0}' is not found in the target."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The event '{0}' is not found in the target.
 
 ## Description
-The referenced event is missing.
+The referenced event is missing.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Compiler Error AL413"
 description: "Procedure '{0}' cannot have a body."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Procedure '{0}' cannot have a body.
 
 ## Description
-Procedures within **ControlAddin** or **Interface** objects cannot have a body.
+Procedures within **ControlAddin** or **Interface** objects cannot have a body.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

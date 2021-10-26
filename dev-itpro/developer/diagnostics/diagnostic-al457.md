@@ -3,7 +3,7 @@ title: "Compiler Warning AL457"
 description: "The label syntax is not correct."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The label syntax is not correct. Please move the '{0}' to its designated attribute.
 
 ## Description
-Use the correct label syntax as specified in [Label Syntax](../devenv-using-labels.md#label-syntax).
+Use the correct label syntax as specified in [Label Syntax](../devenv-using-labels.md#label-syntax).  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

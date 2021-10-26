@@ -3,7 +3,7 @@ title: "Compiler Warning AL273"
 description: "The name '{0}' is an Area type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The name '{0}' is an Area type. Using an Area type name may limit extensibility.
 
 ## Description
-Reusing the Area type as the name of a variable might lead to extensibility limitations.
+Reusing the Area type as the name of a variable might lead to extensibility limitations.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "Compiler Error AL382"
 description: "The option value '{0}' is defined more than once on field '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The option value '{0}' is defined more than once on field '{1}'.
 
 ## Description
-The same option value has been defined multiple times on the same field.
+The same option value has been defined multiple times on the same field.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

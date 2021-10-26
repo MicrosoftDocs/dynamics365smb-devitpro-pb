@@ -3,7 +3,7 @@ title: "Compiler Warning AL432"
 description: "{0} '{1}' is marked for removal."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 {0} '{1}' is marked for removal. {2}.
 
 ## Description
-The referenced object will become obsolete.
+The referenced object will become obsolete.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

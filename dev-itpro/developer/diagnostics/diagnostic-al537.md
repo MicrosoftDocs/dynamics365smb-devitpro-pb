@@ -3,7 +3,7 @@ title: "Compiler Error AL537"
 description: "Declaring views is only supported on pages of type {0}."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 Declaring views is only supported on pages of type {0}.
 
 ## Description
-Declaring views is only supported on pages, page extensions, and page customization of the type List.
+Declaring views is only supported on pages, page extensions, and page customization of the type List.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

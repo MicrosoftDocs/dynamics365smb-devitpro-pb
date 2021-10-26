@@ -3,7 +3,7 @@ title: "Compiler Error AL171"
 description: "The property value '{0}' on property '{1}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The property value '{0}' on property '{1}' is not valid.
 
 ## Description
-The specified property value is invalid. For more information, refer to the property's documentation.
+The specified property value is invalid. For more information, refer to the property's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

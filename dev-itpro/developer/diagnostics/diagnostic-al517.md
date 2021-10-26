@@ -3,7 +3,7 @@ title: "Compiler Error AL517"
 description: "The link '{0}' specified in the HelpLink property must either contain one placeholder with value 0 for the user locale, or no placeholders."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The link '{0}' specified in the HelpLink property must either contain one placeholder with value 0 for the user locale, or no placeholders.
 
 ## Description
-The link specified in the **HelpLink** property must either contain one placeholder with value 0 for the user locale, or no placeholders.
+The link specified in the **HelpLink** property must either contain one placeholder with value 0 for the user locale, or no placeholders.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
