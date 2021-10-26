@@ -3,7 +3,7 @@ title: "File.IsPathTemporary(String) Method"
 description: "Validates whether the given path is located in the current users temporary folder within the current service."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Validates whether the given path is located in the current users temporary folder within the current service.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> This method is supported only in Business Central on-premises from version 1.0 and onwards.
 
 ## Syntax
 ```AL

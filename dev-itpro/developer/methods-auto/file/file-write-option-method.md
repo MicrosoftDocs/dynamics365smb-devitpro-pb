@@ -3,7 +3,7 @@ title: "File.Write(Option) Method"
 description: "Writes to an MS-DOS encoded file or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Writes to an MS-DOS encoded file or binary file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> This method is supported only in Business Central on-premises from version 1.0 and onwards.
 
 ## Syntax
 ```AL
