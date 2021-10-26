@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0427
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Field {0} cannot be converted to type {1}.
 
 

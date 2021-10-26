@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0260
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The key '{0}' on table '{1}' cannot start with the fields defined for the primary key. The server will append these to any alternate key.
 
 

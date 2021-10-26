@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Designer Customization Warning AL1411
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Multiple page customizations have been specified for the same page {0} within the same profile.
 
 

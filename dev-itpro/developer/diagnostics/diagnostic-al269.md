@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning (Future Error) AL0269
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The referenced page '{0}' should be a list part or a card part.
 
 

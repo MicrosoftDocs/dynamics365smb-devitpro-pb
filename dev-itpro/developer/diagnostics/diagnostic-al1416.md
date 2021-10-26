@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Designer Customization Information AL1416
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The {0} '{1}' cannot be moved relatively to '{2}' because '{2}' is missing. This move is ignored.
 
 

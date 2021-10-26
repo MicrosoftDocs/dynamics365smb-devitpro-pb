@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0236
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 An empty CONST() expression is not allowed on field '{0}' of type '{1}'.
 
 

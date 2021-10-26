@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0596
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Value '{0}' does not implement interface '{1}' and there is no default implementation for the mentioned interface.
 
 

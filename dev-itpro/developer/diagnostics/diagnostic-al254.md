@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL0254
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Sorting field '{0}' should be part of the keys for table '{1}'.
 
 

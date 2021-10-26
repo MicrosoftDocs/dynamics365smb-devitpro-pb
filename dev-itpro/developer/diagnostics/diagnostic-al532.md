@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0532
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The page '{1}' of type 'API' and its control '{0}' of type 'Part' must have the same value of property '{2}'.
 
 

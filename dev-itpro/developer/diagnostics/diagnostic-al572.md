@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0572
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 I/O operations on the file or folder '{0}' resulted in an exception with the Windows 32 error code '{1}'.
 
 

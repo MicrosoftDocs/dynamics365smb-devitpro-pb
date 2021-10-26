@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Designer Customization Warning AL1419
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 A DataItem or Column with name '{0}' could not be found in the target {1}.
 
 

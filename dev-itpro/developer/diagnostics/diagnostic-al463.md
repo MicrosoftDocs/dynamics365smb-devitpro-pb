@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0463
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Parameter '{0}' must be 'var' if and only if the publisher parameter is 'var'.
 
 

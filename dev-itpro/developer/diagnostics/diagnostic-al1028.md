@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1028
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 An IO exception has happened when trying to write to output file '{0}' -- '{1}'.
 
 

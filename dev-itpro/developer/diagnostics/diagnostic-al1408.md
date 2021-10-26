@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Designer Customization Warning AL1408
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Invalid application object identifier. A number or an application object name is expected.
 
 

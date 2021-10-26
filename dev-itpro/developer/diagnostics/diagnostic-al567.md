@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL0567
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The field '{0}' is using the same name as a system-provided field and will shadow that field.
 
 

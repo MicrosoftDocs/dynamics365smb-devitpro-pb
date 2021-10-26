@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL0679
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The application object '{0}' is not included in any entitlement and will therefore not be accessible in the cloud.
 
 

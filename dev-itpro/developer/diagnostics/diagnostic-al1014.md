@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1014
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Source file '{0}' could not be opened -- {1}.
 
 

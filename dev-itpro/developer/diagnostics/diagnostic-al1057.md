@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1057
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The module specification is not valid. One or more of the required attributes: 'publisher', 'name', and 'id' are either missing or not valid.
 
 

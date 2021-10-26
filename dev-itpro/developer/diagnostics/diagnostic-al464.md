@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0464
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Could not determine a suitable default primary key for table '{0}'. Please specify a primary key for the table.
 
 

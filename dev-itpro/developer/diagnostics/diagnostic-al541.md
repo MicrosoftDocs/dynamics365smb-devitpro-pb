@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0541
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed.
 
 

@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0442
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Parameter {0} is only available when the page specifies a 'SourceTable'. Table '{1}' is missing.
 
 

@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0389
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The date formula '{0}' contains a number that is too large. The number must be in the range {1} - {2}.
 
 

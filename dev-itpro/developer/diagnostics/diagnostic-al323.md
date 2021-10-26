@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0323
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The value assigned to the SystemPart type is not valid. Valid values are {0}.
 
 

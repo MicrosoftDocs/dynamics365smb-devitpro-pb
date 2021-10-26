@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1044
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The value for the manifest property '{0}' is not valid. Expected type: {1}.
 
 

@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL1003
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 An instance of analyzer {0} cannot be created from {1} : {2}.
 
 

@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0122
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Cannot implicitly convert type '{0}' to '{1}'.
 
 

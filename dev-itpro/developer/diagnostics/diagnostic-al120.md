@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0120
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 A local or parameter named '{0}' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter.
 
 

@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0131
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The property CharAllowed must be specified in pairs of characters. The first character in the pair must be equal to or less than the second.
 
 

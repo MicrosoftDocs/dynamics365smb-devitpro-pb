@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL1033
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 An error occurred while loading the included rule set file {0} - {1}.
 
 

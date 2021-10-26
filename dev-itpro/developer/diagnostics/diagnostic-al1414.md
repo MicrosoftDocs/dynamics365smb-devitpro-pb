@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Designer Customization Information AL1414
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The page customization for page '{0}' does not make any modifications, so it can be removed without affecting any profiles or user personalization.
 
 

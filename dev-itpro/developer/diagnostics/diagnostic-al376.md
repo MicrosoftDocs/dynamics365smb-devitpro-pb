@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0376
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 A control of type '{0}' is not allowed in a parent control of type '{1}'.
 
 

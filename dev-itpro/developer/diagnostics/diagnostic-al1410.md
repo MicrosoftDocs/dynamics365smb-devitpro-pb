@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Designer Customization Warning AL1410
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The target {0} {1} for the extension object is not found.
 
 

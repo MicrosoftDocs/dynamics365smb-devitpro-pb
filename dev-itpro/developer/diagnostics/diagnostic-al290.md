@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0290
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Element name is not allowed for the event '{0}' and must be empty.
 
 

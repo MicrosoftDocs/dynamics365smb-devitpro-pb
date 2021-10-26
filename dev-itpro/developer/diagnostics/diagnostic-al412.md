@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0412
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Member '{0}' could not be declared in an object of type '{1}'.
 
 

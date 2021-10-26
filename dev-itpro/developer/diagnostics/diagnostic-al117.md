@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0117
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Illegal statement. Only assignment and method invocation can be used as a statement.
 
 

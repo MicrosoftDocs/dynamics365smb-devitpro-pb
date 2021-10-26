@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning AL0557
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The name of the codeunit local variable '{0}' is identical to a field in table '{1}' and will shadow that table field.
 
 

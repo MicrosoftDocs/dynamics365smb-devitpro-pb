@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning (Future Error) AL0534
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 Length of the table key name '{0}' must not exceed {1} characters. Longer key names are prone to cause SQL errors.
 
 

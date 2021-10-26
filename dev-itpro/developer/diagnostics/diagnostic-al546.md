@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Error AL0546
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The control '{0}' cannot be modified in a view context because views only support modifying controls defined in the Content area.
 
 

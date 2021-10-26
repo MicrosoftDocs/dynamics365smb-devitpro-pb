@@ -15,6 +15,9 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compiler Warning (Future Error) AL0608
+
+[!INCLUDE[banner_preview](../includes/banner_preview.md)]
+
 The OrderBy property must specify at least one field on which to sort the data.
 
 
