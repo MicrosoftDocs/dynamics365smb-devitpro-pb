@@ -1,10 +1,10 @@
 ﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
-## [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Application design details](/dynamics365/business-central/design-details-application-design?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ## Develop
@@ -108,7 +108,7 @@
 # Administration
 ## [Administration of Business Central Online](administration/tenant-administration.md)
 ## Understand Business Central online
-### [Understanding the Infrastructure](administration/tenant-administration.md#infrastructure)
+### [Understanding the Infrastructure ](administration/tenant-environment-topology.md)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
