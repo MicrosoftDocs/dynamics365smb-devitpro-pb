@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not recognized as a valid type.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

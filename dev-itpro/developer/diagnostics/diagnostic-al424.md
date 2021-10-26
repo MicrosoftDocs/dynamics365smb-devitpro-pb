@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The multilanguage syntax is being deprecated. Please update to the new syntax.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The methods '{0}' can only be used on Columns that have a Decimal, BigInteger, Integer, or Duration type.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

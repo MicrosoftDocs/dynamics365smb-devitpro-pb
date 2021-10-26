@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' in the table '{1}' cannot be included in a key because its type is '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

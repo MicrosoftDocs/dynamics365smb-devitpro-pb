@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property CharAllowed must be specified in pairs of characters. The first character in the pair must be equal to or less than the second.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 IncludeCaption can be set to true only if the source of the column is a named field.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

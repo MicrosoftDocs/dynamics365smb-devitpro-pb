@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Member '{0}' cannot be accessed with an instance reference; qualify it with '{1}' instead.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

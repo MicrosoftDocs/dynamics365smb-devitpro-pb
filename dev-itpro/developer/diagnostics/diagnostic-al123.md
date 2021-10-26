@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The return value name '{0}' is already defined.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

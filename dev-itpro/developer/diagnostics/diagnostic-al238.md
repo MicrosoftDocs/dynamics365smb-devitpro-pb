@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 No overload for attribute '{0}' expects {1} arguments.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

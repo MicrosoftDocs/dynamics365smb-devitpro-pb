@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An application object of type '{0}' with name '{1}' is already declared by the extension '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

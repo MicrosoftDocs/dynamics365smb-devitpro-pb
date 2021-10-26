@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The attribute '{0}' is only allowed on local variables.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

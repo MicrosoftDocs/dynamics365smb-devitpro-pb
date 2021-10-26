@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The manifest properties 'baseHelpUrl' and 'supportedLocales' must both be specified and have values.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Parameter '{0}' has no matching param tag in the XML comment for '{1}' (but other parameters do).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

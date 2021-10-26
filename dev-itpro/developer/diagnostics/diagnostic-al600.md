@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' can only be set on elements of type Option.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

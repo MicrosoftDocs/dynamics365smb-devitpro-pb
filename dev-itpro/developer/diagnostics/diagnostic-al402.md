@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Expression {0} cannot be specified more than once in a case statement.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

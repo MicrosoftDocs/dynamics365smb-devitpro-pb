@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Field type {0} is not convertible to field type {1}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

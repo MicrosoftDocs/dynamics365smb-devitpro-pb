@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 appId and Id are both specified for a dependency property. The appId value will be ignored.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

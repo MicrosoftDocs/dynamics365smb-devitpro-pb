@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The referenced page '{0}' must be a List part, a Card part, or an API page.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

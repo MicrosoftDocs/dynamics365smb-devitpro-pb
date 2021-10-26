@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Member name '{0}' is only allowed on triggers.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The name '{0}' cannot be used as an identifier because it does not comply with the Common Language Specification.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

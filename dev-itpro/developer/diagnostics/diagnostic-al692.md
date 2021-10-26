@@ -22,7 +22,6 @@ The primary key '{0}' on table '{1}' cannot be obsolete. All related properties 
 
 > [!IMPORTANT]
 > This warning will become an error in Spring 2022.
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

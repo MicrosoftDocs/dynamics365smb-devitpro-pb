@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Option members cannot contain comma.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

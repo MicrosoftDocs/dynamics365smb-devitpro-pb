@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 There must be exactly one root node and it has to be an element.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

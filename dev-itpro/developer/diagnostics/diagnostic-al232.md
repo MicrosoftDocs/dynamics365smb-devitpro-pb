@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property value on field '{0}' must be positive or zero.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

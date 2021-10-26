@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 To modify '{0}' you must add at least one property or trigger.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

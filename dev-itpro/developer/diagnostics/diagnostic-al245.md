@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The signature of procedure '{0}' does not match the signature required by attribute '{1}': procedure cannot be local.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

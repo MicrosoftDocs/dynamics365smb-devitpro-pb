@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Illegal statement. Only assignment and method invocation can be used as a statement.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

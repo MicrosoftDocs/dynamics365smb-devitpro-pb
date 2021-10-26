@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Identifier was not properly terminated. Use the character " to terminate the identifier.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

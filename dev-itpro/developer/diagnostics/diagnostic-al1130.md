@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:ss[.fffffff]'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

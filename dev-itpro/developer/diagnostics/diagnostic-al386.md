@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A required package dependency could not be found. Make sure that you have downloaded all the referenced packages and their dependencies.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

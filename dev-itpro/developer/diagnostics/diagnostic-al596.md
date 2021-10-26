@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Value '{0}' does not implement interface '{1}' and there is no default implementation for the mentioned interface.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

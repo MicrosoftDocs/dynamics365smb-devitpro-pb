@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The anchoring symbol '{0}' cannot be an area.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

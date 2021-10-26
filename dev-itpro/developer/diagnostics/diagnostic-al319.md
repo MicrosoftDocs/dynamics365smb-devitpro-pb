@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 At least one target has to be specified for the move.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An instance of analyzer {0} cannot be created from {1} : {2}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' is using an Id {1} that is reserved for system fields.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The parameter '{0}' has a type which is not serializable and therefore cannot be used in the given context.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

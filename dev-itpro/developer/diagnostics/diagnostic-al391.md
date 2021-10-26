@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The date formula '{0}' must include a number.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

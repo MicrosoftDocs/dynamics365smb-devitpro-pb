@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Parameter {0} is only available when the page specifies a 'SourceTable'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

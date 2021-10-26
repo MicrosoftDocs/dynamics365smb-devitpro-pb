@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Length of the identifier '{0}' cannot exceed {1} characters.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

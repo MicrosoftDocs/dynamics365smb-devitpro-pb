@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The application object identifier '{0}' is not valid. It must be within the allowed ranges '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

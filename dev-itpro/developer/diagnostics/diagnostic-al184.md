@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The expression '{0}' is not valid.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

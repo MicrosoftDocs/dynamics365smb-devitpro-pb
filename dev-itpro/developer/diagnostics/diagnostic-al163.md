@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Wrong signature. Correct signature for '{0}' is '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

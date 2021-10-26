@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value for the manifest property '{0}' is not valid. Expected type: {1}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

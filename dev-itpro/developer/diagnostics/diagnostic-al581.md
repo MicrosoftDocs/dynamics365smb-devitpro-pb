@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The length for the type '{0}' must be positive.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

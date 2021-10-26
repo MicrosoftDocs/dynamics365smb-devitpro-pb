@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The attribute '{0}' can only be used on procedures that have the attribute '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

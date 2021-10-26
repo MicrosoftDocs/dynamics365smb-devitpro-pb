@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The LinkTable property must reference a table element node of the current XMLPort.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

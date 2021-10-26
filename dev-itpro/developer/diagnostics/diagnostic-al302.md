@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot use '{0}' in {1} '{2}' before it is declared.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

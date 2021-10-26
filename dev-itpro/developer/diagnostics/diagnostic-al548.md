@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Cannot move symbol '{0}' from '{1}' area to '{2}' area.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

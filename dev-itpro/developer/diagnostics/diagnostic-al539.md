@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' cannot be used multiple times when defining the order of the page view.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

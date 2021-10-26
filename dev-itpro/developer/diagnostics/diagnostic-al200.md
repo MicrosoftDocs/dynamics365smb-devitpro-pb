@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Property '{0}' is obsolete and will be removed in a future version.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

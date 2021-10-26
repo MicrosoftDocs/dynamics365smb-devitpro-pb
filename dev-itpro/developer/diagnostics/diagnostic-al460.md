@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Client-side events are supported only on pages and page extensions.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The manifest should define the 'supportedLocales' manifest property in order to use a placeholder in the '{0}' property.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

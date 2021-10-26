@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

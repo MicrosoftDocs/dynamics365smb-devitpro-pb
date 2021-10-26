@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Preprocessor directives must appear as the first non-whitespace character on a line.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

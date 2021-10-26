@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' is mandatory for objects of type API.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

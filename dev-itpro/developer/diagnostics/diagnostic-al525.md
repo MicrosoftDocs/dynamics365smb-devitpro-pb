@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The system or virtual table '{0}' cannot be extended.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Translation file '{0}' is missing a target language.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

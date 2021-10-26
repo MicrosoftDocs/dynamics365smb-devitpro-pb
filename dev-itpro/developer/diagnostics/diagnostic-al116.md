@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Invalid value for '{0}'. Allowed values are '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

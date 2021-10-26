@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 No enclosing loop out of which to break.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

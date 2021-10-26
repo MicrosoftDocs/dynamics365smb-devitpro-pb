@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Defining the contract '{0}' on interface '{1}' is not allowed because it is matching a built-in procedure for codeunits.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value for the property '{0}' is not valid because its length exceeds {1} characters ({2} characters).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The source of a Column or Filter must be a field defined on the table referenced by its parent DataItem.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

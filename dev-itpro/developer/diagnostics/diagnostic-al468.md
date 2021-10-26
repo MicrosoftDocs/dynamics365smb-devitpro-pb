@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Length of the table field name '{0}' must not exceed {1} characters. Longer field names are prone to cause SQL errors.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

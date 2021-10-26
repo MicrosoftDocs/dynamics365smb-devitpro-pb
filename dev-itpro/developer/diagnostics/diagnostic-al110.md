@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Orphaned ELSE statement. This is most likely because of an unnecessary semicolon placed just before the ELSE keyword.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

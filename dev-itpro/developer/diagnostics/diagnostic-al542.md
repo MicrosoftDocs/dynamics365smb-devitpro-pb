@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property {0} cannot be used on page '{1}' because this page does not have a source table.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

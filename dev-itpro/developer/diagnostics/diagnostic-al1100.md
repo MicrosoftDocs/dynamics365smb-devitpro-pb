@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 File name '{0}' is empty, contains invalid characters, has a drive specification without an absolute path, or is too long.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

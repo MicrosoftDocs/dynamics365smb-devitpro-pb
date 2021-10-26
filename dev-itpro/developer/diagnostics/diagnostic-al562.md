@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value assigned to the SystemPart type is not valid. Valid values are {0}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

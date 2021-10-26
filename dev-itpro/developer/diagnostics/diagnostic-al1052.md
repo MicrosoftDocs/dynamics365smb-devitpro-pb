@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The link '{0}' can only contain one placeholder with value 0 for the user locale. No other placeholder values are allowed.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

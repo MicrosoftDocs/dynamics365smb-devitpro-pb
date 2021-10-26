@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The path must be relative to the project root.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

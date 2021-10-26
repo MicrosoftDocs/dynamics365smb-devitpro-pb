@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An assembly named '{0}' could not be found in the assembly probing paths '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

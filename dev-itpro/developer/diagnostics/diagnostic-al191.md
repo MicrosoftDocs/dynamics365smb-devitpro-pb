@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Constant value '{0}' is outside the range for a Date. The syntax for defining Date format is yyyymmddD, where D is a mandatory letter. For example, 20180325D, read as the 25th of March, 2018.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

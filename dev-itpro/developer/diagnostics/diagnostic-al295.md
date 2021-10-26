@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' is not found in the target '{1}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

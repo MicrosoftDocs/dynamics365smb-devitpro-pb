@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The symbol '{0}' results in the same translation ID as one or more other symbols. Rename symbol to resolve the problem.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

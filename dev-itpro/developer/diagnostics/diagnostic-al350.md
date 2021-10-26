@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The column '{0}' cannot be used multiple times when defining the order of the resulting dataset.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

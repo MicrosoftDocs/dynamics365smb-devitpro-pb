@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The runtime version '{0}' is not supported by the AL compiler.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

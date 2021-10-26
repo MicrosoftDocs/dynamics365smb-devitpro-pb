@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The member referenced by event subscriber '{0}' parameter '{1}' is not found.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

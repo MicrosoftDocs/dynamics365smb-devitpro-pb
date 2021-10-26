@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The referenced page '{0}' of type 'API' is only allowed inside pages of PageType 'API'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

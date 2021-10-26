@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Duplicate package dependency with publisher '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

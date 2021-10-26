@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The '{0}' already defines a method called '{1}' with the same parameter types in '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

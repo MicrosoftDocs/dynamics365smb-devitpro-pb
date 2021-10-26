@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 '{0}' is inaccessible due to its protection level.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

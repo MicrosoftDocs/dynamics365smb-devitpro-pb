@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 This feature is under development. It can be enabled by using the '{0}' feature flag.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The extension object '{0}' cannot be declared. Another extension for target '{1}' or the target itself is already declared in this module.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Fast publishing requires that there are no manifest changes for the application '{0}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

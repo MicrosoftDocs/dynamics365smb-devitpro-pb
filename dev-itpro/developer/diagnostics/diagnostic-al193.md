@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Argument {0}: cannot convert from '{1}' to the type of Argument 1 '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

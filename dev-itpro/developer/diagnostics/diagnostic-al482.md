@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The image {0} is not valid in this context.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

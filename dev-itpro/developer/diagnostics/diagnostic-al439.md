@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The label's property is not valid. Possible properties are: {0}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

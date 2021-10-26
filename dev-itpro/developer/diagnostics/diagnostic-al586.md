@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The identifier contains characters that are not valid: {0}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

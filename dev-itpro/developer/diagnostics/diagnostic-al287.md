@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' can't contain local variables.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

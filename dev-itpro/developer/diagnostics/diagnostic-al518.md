@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A method with name '{0}' possessing one Handler attribute is already defined in this test codeunit.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

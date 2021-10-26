@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Attribute {0} can only be used within {1}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

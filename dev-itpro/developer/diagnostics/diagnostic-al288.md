@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Parameter '{0}' is only allowed to be 'var' if the publisher parameter is 'var'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

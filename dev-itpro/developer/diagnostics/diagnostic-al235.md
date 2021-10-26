@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The expression CONST() on the option value '{0}' is obsolete. Use CONST(" ") to refer to the empty option value.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

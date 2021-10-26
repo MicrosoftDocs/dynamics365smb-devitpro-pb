@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The language {0} must only be specified one time.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The primary key '{0}' on table '{1}' (the first one in the key list) must not have the Unique property set.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

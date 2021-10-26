@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Adding new controls in a view is not allowed.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

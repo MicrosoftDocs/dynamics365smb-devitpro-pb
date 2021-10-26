@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value for the property '{0}' for the language code '{1}' is not valid because its length exceeds {2} characters ({3} characters).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

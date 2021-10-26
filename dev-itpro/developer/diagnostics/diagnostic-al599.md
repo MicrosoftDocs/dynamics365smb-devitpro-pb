@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A control add-in with the same internal name '{0}' is already defined.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

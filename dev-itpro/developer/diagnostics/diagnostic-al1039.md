@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The version number '{0}' for the property '{1}' does not match the expected format: X.Y where X and Y represent positive integers.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

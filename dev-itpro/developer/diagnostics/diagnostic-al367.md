@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 An array must have at least one dimension.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

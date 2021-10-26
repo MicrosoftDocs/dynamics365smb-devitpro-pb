@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The application object '{0}' is not included in any entitlement and will therefore not be accessible in the cloud.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

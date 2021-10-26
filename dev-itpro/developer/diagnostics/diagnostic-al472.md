@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The source of the translation item does not match the label value. Ignoring the translation item.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

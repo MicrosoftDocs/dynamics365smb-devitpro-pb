@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 You cannot combine two DataItems at the same level because unions are not supported.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

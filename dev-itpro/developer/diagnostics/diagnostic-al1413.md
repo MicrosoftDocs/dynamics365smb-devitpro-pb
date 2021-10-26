@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

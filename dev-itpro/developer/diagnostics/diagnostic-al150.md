@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Invalid CONST expression. A valid integer or an identifier is expected.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

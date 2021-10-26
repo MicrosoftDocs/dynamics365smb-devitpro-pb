@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The maximum number of array dimensions is {0}.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

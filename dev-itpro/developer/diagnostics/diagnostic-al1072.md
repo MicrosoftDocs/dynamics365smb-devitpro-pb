@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The name for the preprocessing symbol is not valid; '{0}' is not a valid identifier.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

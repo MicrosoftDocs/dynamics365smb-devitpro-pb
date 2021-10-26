@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The value '{0}' for the property '{1}' cannot be used for '{2}' development.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

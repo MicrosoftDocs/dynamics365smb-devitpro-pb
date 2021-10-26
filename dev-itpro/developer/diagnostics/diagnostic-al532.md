@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The page '{1}' of type 'API' and its control '{0}' of type 'Part' must have the same value of property '{2}'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 A Column must have a valid data source or have the 'Method' property set to 'Count'.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The property Image can only be used on fields that are contained in a CueGroup control.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

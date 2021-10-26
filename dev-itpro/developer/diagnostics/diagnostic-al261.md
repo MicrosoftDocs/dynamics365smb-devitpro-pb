@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The identifier '{0}' can only be specified in the list once.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

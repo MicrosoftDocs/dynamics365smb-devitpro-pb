@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 Property '{0}' is not allowed on a table extension.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

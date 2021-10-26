@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The permissionset '{0}' contains permissionsets or permission for objects from other module. Permissions on objects from other modules will be ignored.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The application ID ranges {0} are overlapping.
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

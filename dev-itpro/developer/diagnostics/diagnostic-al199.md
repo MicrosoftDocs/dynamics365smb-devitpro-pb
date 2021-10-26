@@ -20,7 +20,6 @@ author: SusanneWindfeldPedersen
 
 The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration).
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
