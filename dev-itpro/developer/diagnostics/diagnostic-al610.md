@@ -1,9 +1,9 @@
 ---
-title: "Compiler Warning AL610"
+title: "Compiler Warning AL0610"
 description: "Moving actions in CueGroups is not supported."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning AL610
-
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
+# Compiler Warning AL0610
 Moving actions in CueGroups is not supported.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

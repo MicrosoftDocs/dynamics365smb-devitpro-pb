@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL533"
+title: "Compiler Error AL0533"
 description: "The view '{0}' is not found in the target '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL533
-
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
+# Compiler Error AL0533
 The view '{0}' is not found in the target '{1}'.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL227"
+title: "Compiler Error AL0227"
 description: "A key with ID {0} is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL227
-
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
+# Compiler Error AL0227
 A key with ID {0} is already defined.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

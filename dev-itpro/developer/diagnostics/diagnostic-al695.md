@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL1042"
-description: "The id '{0}' for the package with publisher '{1}', name '{2}', and version '{3}' specified in the project manifest does not match the id '{4}' of the package with the same name, publisher, and version found in the package cache folder."
+title: "Compiler Warning (Future Error) AL0695"
+description: "The method {0} will only be available for {1} development for runtime version {2}."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/26/2021
@@ -14,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL1042
-The id '{0}' for the package with publisher '{1}', name '{2}', and version '{3}' specified in the project manifest does not match the id '{4}' of the package with the same name, publisher, and version found in the package cache folder.
+# Compiler Warning (Future Error) AL0695
+The method {0} will only be available for {1} development for runtime version {2}.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

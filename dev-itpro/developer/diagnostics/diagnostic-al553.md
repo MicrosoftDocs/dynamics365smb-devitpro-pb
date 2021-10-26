@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL553"
+title: "Compiler Error AL0553"
 description: "You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL553
-
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
+# Compiler Error AL0553
 You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

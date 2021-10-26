@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL511"
+title: "Compiler Error AL0511"
 description: "The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,9 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL511
-
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
-
+# Compiler Error AL0511
 The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in.
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
