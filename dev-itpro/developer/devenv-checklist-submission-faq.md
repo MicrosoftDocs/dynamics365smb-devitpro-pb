@@ -128,7 +128,7 @@ When your question is related to one of the following topics:
 - Failed technical validation of the submission,
 - Failed marketing validation of the submission,
 - Failed upload of the extensions in the submission,
-- When requesting an exception for a breaking change.
+- Requesting an exception for a breaking change.
 
 ### When do I contact Business Central customer support?
 
