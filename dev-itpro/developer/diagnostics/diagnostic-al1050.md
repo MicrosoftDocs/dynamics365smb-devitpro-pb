@@ -3,7 +3,7 @@ title: "Compiler Error AL1050"
 description: "Fast publishing requires an application file '{0}' to be build and published."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
