@@ -59,18 +59,9 @@ At this stage, your extensions are being published to Business Central.
 
 If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
 
-## Questions about refactoring
-
-### Can I move AL objects from my main app to a library?
-
-- If tables, no because that's a migration and this is not supported, see migration.json
-- Other objects, yes, if obsoleted first. Need to make sure that both the new library and new base are not installed together.
-- This is possible, but can be risky - not advised if app is used.
-
 ## Questions about code-signing validation
 
-This sections contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md).
-For more information about code-signing, see [Signing an APP Package File](devenv-sign-extension.md).
+This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Signing an APP Package File](devenv-sign-extension.md).
 
 ### Can I use a Self-signed certificate to sign my apps targeting AppSource?
 
