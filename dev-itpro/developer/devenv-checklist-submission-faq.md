@@ -3,7 +3,7 @@ title: "Technical Validation Checklist FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 10/08/2021
+ms.date: 10/27/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -17,7 +17,7 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## Questions about the validation process
 
-In the following, you can read about how the validation process is done.
+In the following, you can read about how submissions are handled.
 
 ### Against which releases are my apps validated?
 
@@ -100,13 +100,27 @@ The object IDs are registered per partner, not per extension. You can then use a
 
 ## Questions about App identity changes
 
-### When is it ok to change the name of my extension?
+This section contains questions related to the identity of apps in AppSource. For more information, see the questions in [App Identity](devenv-app-identity.md).
 
-### When is it ok to change the publisher of my extension?
+### When is it okay to change the name of my extension?
 
-### When is it ok to change the app ID of my extension?
+Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it is possible to change the name of your extensions.
 
-- Basically creating a new offer. Data upgrade issues for customers.
+When renaming an extension, you must:
+
+- increment the version number in the manifest of your extension,
+- make sure that your submission only targets releases of Business Central starting from 19.0.
+- update the name of your offer in Partner Center - if your extension is the one for which the offer is created.
+
+### When is it okay to change the publisher of my extension?
+
+Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it is possible to change the publisher name of your extensions.
+
+When changing the publisher of an extension, you must:
+
+- increment the version number in the manifest of your extension,
+- make sure that your submission only targets releases of Business Central starting from 19.0,
+- contact d365val@microsoft.com in order to register your affixes to your new publisher name.
 
 ## Channels to report issues
 
@@ -114,14 +128,16 @@ In the following, you can read about how you reach out for support most efficien
 
 ### When do I contact d365val@microsoft.com?
 
-When registering affixes for your publisher. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
+When registering affixes for your publisher, or adding a new publisher name to your affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
 ### When do I contact Partner Center customer support?
 
-- Failed technical validation of the submission
-- Failed content validation of the submission
-- Failed upload of the extensions in the submission
-- When requesting an exception for a breaking change
+When your question is related to one of the following topics:
+
+- Failed technical validation of the submission,
+- Failed marketing validation of the submission,
+- Failed upload of the extensions in the submission,
+- When requesting an exception for a breaking change.
 
 ### When do I contact Business Central customer support?
 
