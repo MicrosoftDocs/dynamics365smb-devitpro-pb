@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL599"
+title: "Compiler Error AL0599"
 description: "A control add-in with the same internal name '{0}' is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL599
+# Compiler Error AL0599
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

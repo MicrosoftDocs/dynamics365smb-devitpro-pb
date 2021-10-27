@@ -1,9 +1,9 @@
 ---
-title: "Compiler Warning (Future Error) AL481"
+title: "Compiler Warning (Future Error) AL0481"
 description: "The property Image can only be used on fields that are contained in a CueGroup control."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL481
+# Compiler Warning (Future Error) AL0481
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
