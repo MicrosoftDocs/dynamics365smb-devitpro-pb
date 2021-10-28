@@ -45,7 +45,7 @@ You can know which versions of your extensions were used as baseline during the 
 The offer publishing process must be completed in Partner Center before an extension/offer can be installed for a Business Central environment.
 Business Central currently does not support installing offers in the "Preview creation" step.
 
-### My app failed at the 'Automated application validation' stage, what do I do next?
+### My did my app fail at the 'Automated application validation' stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
