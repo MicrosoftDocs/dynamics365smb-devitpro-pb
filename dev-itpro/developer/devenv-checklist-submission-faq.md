@@ -45,7 +45,7 @@ You can know which versions of your extensions were used as baseline during the 
 The offer publishing process must be completed in Partner Center before an extension/offer can be installed for a Business Central environment.
 Business Central currently does not support installing offers in the "Preview creation" step.
 
-### My app failed at the 'Automated Technical Validation' stage, what do I do next?
+### My app failed at the 'Automated application validation' stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
@@ -53,7 +53,7 @@ If this stage failed with an error message similar to `The validation of the sub
 
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
 
-### My app failed at the 'Pushing app to the service' stage, what do I do next?
+### My app failed at the 'Publish application with the service' stage, what do I do next?
 
 At this stage, your extensions are being published to Business Central.
 
@@ -125,10 +125,13 @@ When registering affixes for your publisher, or adding a new publisher name to y
 
 When your question is related to one of the following topics:
 
-- Failed technical validation of the submission,
-- Failed marketing validation of the submission,
-- Failed upload of the extensions in the submission,
+- Failed technical validation of the submission ('Automated application validation' stage),
+- Failed marketing validation of the submission ('Certification' stage),
+- Failed upload of the extensions in the submission ('Publish application with the service' stage),
 - Requesting an exception for a breaking change.
+
+> [!Important]  
+> If you are using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
 
