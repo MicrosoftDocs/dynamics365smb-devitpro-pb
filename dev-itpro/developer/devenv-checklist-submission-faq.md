@@ -46,13 +46,13 @@ Shortly after the offer publishing process has been completed in Partner Center,
 
 Business Central currently does not support installing offers at the "Preview creation" step.
 
-### My did my app fail at the 'Automated application validation' stage, what do I do next?
+### My app failed at the 'Automated application validation' stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
 If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
 
-If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
+If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
 ### My app failed at the 'Publish application with the service' stage, what do I do next?
 
