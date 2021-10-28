@@ -17,13 +17,13 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## Questions about the validation process
 
-In the following, you can read about how submissions are handled.
+In the following, you can read about how submissions are handled and learn how to address the most common scenarios.
 
 ### Against which releases are my apps validated?
 
 The extensions in your submission are validated for all the releases targeted by your submission.
 
-Based on the app.json of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the examples in [Technical Validation Checklist](devenv-checklist-submission.md).
+Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the examples in [Technical Validation Checklist](devenv-checklist-submission.md).
 
 > [!Important]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
@@ -46,13 +46,13 @@ Shortly after the offer publishing process has been completed in Partner Center,
 
 Business Central currently does not support installing offers at the "Preview creation" step.
 
-### My app failed at the 'Automated application validation' stage, what do I do next?
+### My did my app fail at the 'Automated application validation' stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
 If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
 
-If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
+If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
 
 ### My app failed at the 'Publish application with the service' stage, what do I do next?
 
@@ -64,7 +64,7 @@ If this stage failed with the following error message `Automated upload to Busin
 
 This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Signing an APP Package File](devenv-sign-extension.md).
 
-### Can I use a Self-signed certificate to sign my apps targeting AppSource?
+### Can I use a self-signed certificate to sign my apps targeting AppSource?
 
 No, it is not allowed to use a self-signed certificate. The .app package file must be signed using a certificate purchased from a Certification Authority that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to GoDaddy, DigiCert, and Symantec.
 
@@ -74,21 +74,23 @@ No, it is not required to use an EV code-signing certificate. Standard code-sign
 
 ### Can I re-use the same code-signing certificate to sign multiple apps?
 
-Yes, you can re-use the same code-signing certificate for multiple extensions. Code-signing certificate have a validity period defined over time.
+Yes, you can re-use the same code-signing certificate for multiple extensions. Code-signing certificates have a validity period defined over time.
 
 ## Questions about affixes and ID ranges
+
+In the following, you can read about how affixes and ID ranges are assigned.
 
 ### Do I need to register different affixes for each of my extensions?
 
 No, you do not need to register affixes for each of your extensions.
 
-The object affixes are registered per publisher so if your apps all have the same publisher, they can share the same affixes. The automated validation verifies that you are using the 3 letter affix registered by Microsoft in your extension, but this still allows you to create longer affixes per extension. For instance, if you registered ABC as your affix, you can use ABCD as prefix in Extension 1 and ABCE as prefix in Extension 2. For more information, see: [Prefix and suffix for naming in extensions](../compliance/apptest-prefix-suffix.md).
+The object affixes are registered per publisher so if your apps all have the same publisher, they can share the same affixes. The automated validation verifies that you are using the 3 letter affix registered by Microsoft in your extension, but this still allows you to create longer affixes per extension. For example, if you registered ABC as your affix, you can use ABCD as the prefix in Extension 1 and ABCE as the prefix in Extension 2. For more information, see [Prefix and suffix for naming in extensions](../compliance/apptest-prefix-suffix.md).
 
 ### Do I need to request a different ID range for each of my extensions?
 
 No, you do not need to request a new ID range for each of your extensions.
 
-The object IDs are registered per partner, not per extension. You can then use a subset of this range for each of your extensions. It is your responsibility to ensure that you are not defining objects with the same IDs in different extensions. If you are doing so, the extensions defining these objects cannot be installed together on the same environment. For more information, see: [Get Started Building Apps](readiness/get-started.md#requesting-an-object-range).
+The object IDs are registered per partner, not per extension. You can then use a subset of this range for each of your extensions. It is your responsibility to ensure that you are not defining objects with the same IDs in different extensions. If you are doing so, the extensions defining these objects cannot be installed together on the same environment. For more information, see [Get Started Building Apps](readiness/get-started.md#requesting-an-object-range).
 
 ## Questions about App identity changes
 
