@@ -3,7 +3,7 @@ title: "Compiler Error AL1151"
 description: "Cannot create a manifest for Extension {0} because the Name and Publisher are the same as one or more dependencies."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Compiler Error AL1028"
 description: "An IO exception has happened when trying to write to output file '{0}' -- '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

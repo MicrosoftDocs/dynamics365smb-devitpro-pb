@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL199"
-description: "The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration)."
+title: "Compiler Error AL0199"
+description: "The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration)."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL199
+# Compiler Error AL0199
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration).
+The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
