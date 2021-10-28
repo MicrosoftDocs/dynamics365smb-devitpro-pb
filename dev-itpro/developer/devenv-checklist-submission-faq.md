@@ -42,8 +42,9 @@ You can know which versions of your extensions were used as baseline during the 
 
 ### When are my apps ready to be installed in my Business Central environment?
 
-The offer publishing process must be completed in Partner Center before an extension/offer can be installed for a Business Central environment.
-Business Central currently does not support installing offers in the "Preview creation" step.
+Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation in Business Central.
+
+Business Central currently does not support installing offers at the "Preview creation" step.
 
 ### My app failed at the 'Automated application validation' stage, what do I do next?
 
