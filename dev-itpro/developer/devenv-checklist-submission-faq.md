@@ -17,13 +17,13 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## Questions about the validation process
 
-In the following, you can read about how submissions are handled.
+In the following, you can read about how submissions are handled and validated and learn how to address the most common scenarios.
 
 ### Against which releases are my apps validated?
 
 The extensions in your submission are validated for all the releases targeted by your submission.
 
-Based on the app.json of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the examples in [Technical Validation Checklist](devenv-checklist-submission.md).
+Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the examples in [Technical Validation Checklist](devenv-checklist-submission.md).
 
 > [!Important]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
@@ -51,7 +51,7 @@ At this stage, your extensions are validated to assess whether they meet the req
 
 If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
 
-If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
+If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
 
 ### My app failed at the 'Publish application with the service' stage, what do I do next?
 
