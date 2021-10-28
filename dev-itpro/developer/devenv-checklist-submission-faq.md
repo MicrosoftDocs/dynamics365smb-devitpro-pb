@@ -17,7 +17,7 @@ This topic addresses some of the most frequently asked questions around validati
 
 ## Questions about the validation process
 
-In the following, you can read about how submissions are handled and validated and learn how to address the most common scenarios.
+In the following, you can read about how submissions are handled and learn how to address the most common scenarios.
 
 ### Against which releases are my apps validated?
 
