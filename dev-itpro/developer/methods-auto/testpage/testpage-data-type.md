@@ -3,7 +3,7 @@ title: "TestPage Data Type"
 description: "Represents a variable type that can be used to test Page Application Objects."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,8 @@ author: SusanneWindfeldPedersen
 
 Represents a variable type that can be used to test Page Application Objects.
 
+> [!NOTE]
+> This data type is supported only in Business Central online.
 
 
 The following methods are available on instances of the TestPage data type.

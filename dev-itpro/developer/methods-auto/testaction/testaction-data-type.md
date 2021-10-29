@@ -3,7 +3,7 @@ title: "TestAction Data Type"
 description: "Represents a test action on a page."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,8 @@ author: SusanneWindfeldPedersen
 
 Represents a test action on a page.
 
+> [!NOTE]
+> This data type is supported only in Business Central online.
 
 
 The following methods are available on instances of the TestAction data type.

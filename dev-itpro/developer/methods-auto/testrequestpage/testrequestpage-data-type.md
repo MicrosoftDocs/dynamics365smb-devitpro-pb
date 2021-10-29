@@ -3,7 +3,7 @@ title: "TestRequestPage Data Type"
 description: "Stores test request pages."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,8 @@ author: SusanneWindfeldPedersen
 
 Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.
 
+> [!NOTE]
+> This data type is supported only in Business Central online.
 
 
 The following methods are available on instances of the TestRequestPage data type.
