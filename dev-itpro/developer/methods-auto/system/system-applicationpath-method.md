@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Returns the path of the directory where the executable file for the product is installed.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

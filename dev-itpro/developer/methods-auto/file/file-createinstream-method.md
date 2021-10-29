@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Creates an InStream object for a file. This enables you to import or read data from the file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Gets information about the extension that contains the method that called the currently running method. For example, if method 1 (in extension A) calls method 2 (in extension B), which calls GetCallerModuleInfo, then GetCallerModuleInfo will return information about extension A.
 
 > [!NOTE]
-> This method is supported only in Business Central online from runtime version 8.0 and onwards.
+> This method is supported only in Business Central online from runtime version 8.0 and onward.
 
 ## Syntax
 ```AL

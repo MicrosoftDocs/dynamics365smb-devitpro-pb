@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Exports the media object (such as an image) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a Media data type field.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

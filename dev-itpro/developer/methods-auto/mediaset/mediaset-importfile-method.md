@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Adds a media, such as a JPEG image, to the MediaSet data type field of a record for displaying the media in the client. The media is imported to the database and included in a MediaSet for the record.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

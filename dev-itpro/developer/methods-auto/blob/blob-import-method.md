@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Imports a binary large object (BLOB) from a file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 9.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 9.0 and onward.
 
 ## Syntax
 ```AL

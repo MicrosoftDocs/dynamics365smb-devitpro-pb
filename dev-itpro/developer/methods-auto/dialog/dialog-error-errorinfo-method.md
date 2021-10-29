@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Displays an error message and ends the execution of AL code.
 
 > [!NOTE]
-> This method is supported only in Business Central online from runtime version 8.0 and onwards.
+> This method is supported only in Business Central online from runtime version 8.0 and onward.
 
 ## Syntax
 ```AL

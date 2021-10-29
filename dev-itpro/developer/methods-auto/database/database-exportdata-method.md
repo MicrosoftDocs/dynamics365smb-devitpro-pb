@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Exports data from the database to a file. The data is not deleted from the database.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

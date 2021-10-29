@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

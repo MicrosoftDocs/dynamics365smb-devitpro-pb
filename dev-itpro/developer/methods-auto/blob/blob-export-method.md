@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Exports a binary large object (BLOB) to a file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 9.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 9.0 and onward.
 
 ## Syntax
 ```AL

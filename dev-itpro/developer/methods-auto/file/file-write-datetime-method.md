@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Writes to an MS-DOS encoded file or binary file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

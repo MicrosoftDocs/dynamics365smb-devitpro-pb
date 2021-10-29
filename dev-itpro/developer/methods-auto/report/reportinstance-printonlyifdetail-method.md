@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Gets or sets the current settings of the PrintOnlyIfDetail property.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL

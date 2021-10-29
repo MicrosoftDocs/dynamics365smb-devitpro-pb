@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Truncate an ASCII or binary file to the current position of the file pointer.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
 
 ## Syntax
 ```AL
