@@ -3,7 +3,7 @@ title: "Record.Rename(Any [, Any,...]) Method"
 description: "Changes the value of a primary key in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
