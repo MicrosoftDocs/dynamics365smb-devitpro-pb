@@ -3,7 +3,7 @@ title: "File.Download(String, String, String, String, var Text) Method"
 description: "Sends a file from a server computer to the client computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Sends a file from a server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
 
 ## Syntax
 ```AL

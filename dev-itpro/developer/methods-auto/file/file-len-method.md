@@ -3,7 +3,7 @@ title: "File.Len() Method"
 description: "Gets the length of an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Gets the length of an ASCII or binary file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from version 1.0 and onwards.
+> This method is supported only in Business Central on-premises from runtime version 1.0 and onwards.
 
 ## Syntax
 ```AL
