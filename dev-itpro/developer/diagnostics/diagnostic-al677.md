@@ -1,9 +1,9 @@
 ---
-title: "Compiler Warning (Future Error) AL677"
+title: "Compiler Warning (Future Error) AL0677"
 description: "The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL677
+# Compiler Warning (Future Error) AL0677
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

@@ -3,7 +3,7 @@ title: "Compiler Error AL1012"
 description: "Could not write to output file '{0}' -- '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
