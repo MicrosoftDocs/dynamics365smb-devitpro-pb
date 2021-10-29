@@ -69,7 +69,7 @@ You must design your application so that you use the most up-to-date version of 
 
 When a record is renamed, the change is written and committed to the database without calling the [OnModify Trigger](../../../../triggers/triggers/devenv-onmodify-trigger.md). This is done because renaming a record changes the primary key and updates the primary key value in all related tables. Therefore, you should use the Rename method and [Record.Modify([Boolean]) Method](record-modify-method.md) on a record separately.
 
-## Example
+## Example 1
 
 ```al
 var
@@ -78,6 +78,37 @@ var
 CustRec.Get(10000);  
 CustRec.Rename(10001);  
 ```
+
+## Example 2
+
+This example shows that you get an error if you attempt to rename a record after a newer version of the record has been written and committed to the database.
+
+In this example, you get a copy of a record from the Customer table and put it into the `CustRec1` variable, then you modify the record. Next, you get a copy of the same record from the Customer table and put it into the `CustRec2` variable. You modify the record and commit the changes to the database. Now the `CustRec1` variable is out of date with the value in the database. If you were allowed to modify the record using the `CustRec1` record, then the changes that you made with `CustRec2` would be overwritten by the values in the `CustRec1` variable. It is not allowed to rename a record with the old version of the record.
+
+> [!NOTE]  
+> If you do not call the `Commit` method in this example, then you do not receive an error.
+
+```al
+var
+    CustRec1: Record Customer;
+    CustRec2: Record Customer;
+...
+    CustRec1.LockTable();
+    CustRec1.Get(20000);
+    CustRec1."Address 2" := 'Suite 102';
+    CustRec1.Modify();
+
+    CustRec2.Get(20000);
+    CustRec2."Phone No." := '206-555-0109';
+    CustRec2.Modify();
+
+    Commit();
+
+    CustRec1."Phone No." := '425-555-0184';
+    CustRec1.Rename(20001);
+```
+
+`The changes to the Customer record cannot be saved because some information on the page is not up-to-date. Close the page, reopen it, and try again. Identification fields and values: No.='20000'`
 
 
 
