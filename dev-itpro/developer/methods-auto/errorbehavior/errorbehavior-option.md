@@ -22,7 +22,7 @@ Specifies whether errors will be collected within the scope of the method.
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Collect|Collectible errors will be gathered and code execution will be continued until the end of the ErrorBehvior scope. If errors are left unhandled at the nd of the ErrorBehavior scope, execution will stop with an aggregated error.|
+|Collect|Collectible errors will be gathered and code execution will be continued until the end of the ErrorBehavior scope. If errors are left unhandled at the nd of the ErrorBehavior scope, execution will stop with an aggregated error.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
