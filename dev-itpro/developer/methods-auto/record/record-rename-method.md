@@ -67,7 +67,7 @@ If an end-user modifies a record between the time that another end-user or anoth
 
 You must design your application so that you use the most up-to-date version of the record for modifications to the database. You use the  [Get Method](record-get-method.md) to refresh the record with the latest version. The second example illustrates this situation.
 
-When a record is renamed, the change is written and committed to the database without calling the [OnModify Trigger](../../../../triggers/triggers/devenv-onmodify-trigger.md). This is done because renaming a record changes the primary key and updates the primary key value in all related tables. Therefore, you should use the Rename method and [Record.Modify([Boolean]) Method](record-modify-method.md) on a record separately.
+When a record is renamed, the change is written and committed to the database without calling the [OnModify Trigger](../../triggers-auto/table/devenv-onmodify-table-trigger.md). This is done because renaming a record changes the primary key and updates the primary key value in all related tables. Therefore, you should use the Rename method and [Record.Modify([Boolean]) Method](record-modify-method.md) on a record separately.
 
 ## Example 1
 
