@@ -39,21 +39,26 @@ There are three kinds of events that a feature can log through the Feature Telem
 > To track the uptake status of a feature it may make database transactions). Calling LogUptake with uptake state Undiscovered resets the uptake state of the feature. The telemetry from this call will be used to calculate the values in the uptake funnel of the feature.
 
 ## Logging uptake
-If a feature logs uptake, there should be calls to register the `Discovered`, `Set up`, and `Used states`.
+If a feature logs uptake, there should be calls to register the `Discovered`, `Set up`, and `Used` states.
 
-The current convention for registering uptake states is the following.
-* `Discovered` should be registered when pages related to the given feature are opened (or otherwise when a user intentionally seeks information about a feature)
-* `Set up` should be registered when the user performed a set up for the feature (usually right after a record in a table related to the feature is added or updated)
-* `Used` should be registered when a user attempts to use the feature (note the difference with LogUsage, which should be called only if the feature is used successfully)
+The current convention for registering uptake states is the following:
+
+* `Discovered` should be registered when pages related to the given feature are opened (or otherwise when a user intentionally seeks information about a feature).
+* `Set up` should be registered when the user performed a set up for the feature (usually right after a record in a table related to the feature is added or updated).
+* `Used` should be registered when a user attempts to use the feature (note the difference with LogUsage, which should be called only if the feature is used successfully).
 
 If LogUptake is called from within a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `true`.
 
 ## Feature and event names
 The feature names should be short and easy to identify. For example, Retention policies, Configuration packages, and Emailing.
-The event names should specify the scenario being executed. If `LogUsage` is called, the event name should use the past tense because the event has already happened. For example, `Email sent` or `Retention policy applied`. If `LogError` is called, use the present tense should be used. For example, `Sending email`, `Loading template`).
-
+The event names should specify the scenario being executed. If `LogUsage` is called, the event name should use the past tense because the event has already happened. For example, `Email sent` or `Retention policy applied`. If `LogError` is called, the event name should use the present tense. For example, `Sending email`, `Loading template`).
 
 ## General dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|message     | Depends on the event emitted.        |
+|severityLevel     |**1**         |
 
 
 ## Custom dimensions
