@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -3612,6 +3612,7 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Telemetry Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Feature Telemetry](administration/telemetry-feature-telemetry.md)
 #### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
