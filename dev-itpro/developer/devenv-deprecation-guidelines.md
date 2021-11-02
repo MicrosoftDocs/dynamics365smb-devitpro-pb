@@ -64,7 +64,7 @@ When we obsolete code, we:
             Caption = 'Aggregated Assisted Setup';
         #if CLEAN16
             ObsoleteState = Removed;
-            ObsoleteTag = '17.0';
+            ObsoleteTag = '19.0';
         #else
             ObsoleteState = Pending;
             ObsoleteTag = '16.0';
