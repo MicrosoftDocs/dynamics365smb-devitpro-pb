@@ -63,23 +63,28 @@ The event names should specify the scenario being executed. If `LogUsage` is cal
 |message     | Depends on the event.        |
 |severityLevel     |**1**         |
 
-
 ## Custom dimensions
 |Dimension  | Description or value  |
-|---------|---------|
-|eventId     | Unique event ID for different feature telemetry events.        |
+|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
 |alCategory     | **FeatureTelemetry**        |
-|alObjectId     | **8713**        |
-|alObjectName     | **System Telemetry Logger**        |
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppVersionMajor     | The major version of the extension that emitted telemetry. |
 |alCallerAppVersionMinor     | The minor version of the extension that emitted telemetry.        |
 |alClientType     | The client type of the session.        |
 |alCompany     | The current company name.       |
-|alIsEvaluationCompany     | Whether the current company is an evaluation company        |
+|alIsEvaluationCompany     | Whether the current company is an evaluation company.        |
 |alTenantLicenseState     | The license state of the tenant.        |
-|alIsAdmin     | Whether the current user is a tenant admin or delegated admin        |
-|alCountryCode     | The country code of Business Central localization        |
+|alIsAdmin     | Whether the current user is a tenant admin or delegated admin.        |
+|alCountryCode     | The country code of Business Central localization.        |
+|alDataClassification|**SystemMetadata**|
+|alObjectId     | **8713**        |
+|alObjectName     | **System Telemetry Logger**        |
+|component|**Dynamics 365 Business Central Server**|
+|componentVersion|Specifies the version number of the component that emits telemetry (see the **component** dimension).|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
+|telemetrySchemaVersion|Specifies the version of the Business Central telemetry schema.|
+|eventId     | Unique event ID for different feature telemetry events.        |
 
 ## See Also
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
