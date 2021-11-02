@@ -60,7 +60,7 @@ The event names should specify the scenario being executed. If `LogUsage` is cal
 
 |Dimension  | Description or value  |
 |---------|---------|
-|message     | Depends on the event emitted.        |
+|message     | Depends on the event.        |
 |severityLevel     |**1**         |
 
 
@@ -81,6 +81,6 @@ The event names should specify the scenario being executed. If `LogUsage` is cal
 |alIsAdmin     | Whether the current user is a tenant admin or delegated admin        |
 |alCountryCode     | The country code of Business Central localization        |
 
-# See Also
+## See Also
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md) 
