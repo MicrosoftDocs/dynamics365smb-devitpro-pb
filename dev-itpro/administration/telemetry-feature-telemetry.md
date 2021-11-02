@@ -13,13 +13,13 @@ ms.author: bholtorf
 ---
 
 # Feature Telemetry
-The Telemetry AL module simplifies the way you monitor the health of your solution and uptake application features. There are multiple benefits of using the module compared to sending telemetry via Session.LogMessage. For example:
+The Telemetry AL module simplifies the way you monitor the health of your solution and the uptake of application features. There are multiple benefits of using the module compared to sending telemetry via Session.LogMessage. For example:
 
 * Different features can be compared across the same metrics.
 * Common information is sent together with every feature telemetry message, which allows for advanced filtering capabilities.
 
 ## Example: Register the use of a feature
-It's easy to use the Feature Telemetry codeunit. For example, to register the usage of a feature it's enough to use the `FeatureTelemetry.LogUsage(<tag>, <feature name>, <event name>);` method. After the telemetry is emitted, you can aggregate and display the data. For example, by using the Feature Usage Power BI report.
+It's easy to use the Feature Telemetry codeunit. For example, to register the usage of a feature it's enough to use the `FeatureTelemetry.LogUsage(<tag>, <feature name>, <event name>);` method. After the telemetry is emitted, you can aggregate and display the data. For example, by using the Feature Usage Power BI report. The report is available on our [BCTech](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/AL/FeatureTelemetry/Feature%20Usage.pbix) GitHub repository.
 
 :::image type="content" source="../media/FeatureUsageReport.png" alt-text="The FeatureUsage Power BI report":::
 
@@ -27,7 +27,8 @@ There are three kinds of events that a feature can log through the Feature Telem
 
 `FeatureTelemetry.<LogUsage|LogError|LogUptake>(...)`
 
-* The `LogUsage` method should be called when the feature is successfully used by a user. LogError should be called when the error must be explicitly sent to telemetry. For example, after a call to a try function or Codeunit.Run returned false, sending an http response error message, and so on).
+* `LogUsage` should be called when the feature is successfully used by a user. 
+* `LogError` should be called when an error must be explicitly sent to telemetry. For example, after a call to a try function, when `Codeunit.Run` returned false, when sending an http response error message, and so on.
 * `LogUptake` should be called when a user changes the uptake state of a feature. There are four uptake states for features:
     
     * `Undiscovered`
@@ -36,7 +37,9 @@ There are three kinds of events that a feature can log through the Feature Telem
     * `Used` 
 
 > [!NOTE]
-> To track the uptake status of a feature it may make database transactions). Calling LogUptake with uptake state Undiscovered resets the uptake state of the feature. The telemetry from this call will be used to calculate the values in the uptake funnel of the feature.
+> Tracking the uptake status of a feature may make database transactions. If `LogUptake` is called from within a try function, the `PerformWriteTransactionsInASeparateSession` parameter should be set to `True`.
+
+Calling `LogUptake` when the uptake state is Undiscovered resets the uptake state of the feature. The telemetry from this call will be used to calculate the values in the uptake funnel of the feature.
 
 ## Logging uptake
 If a feature logs uptake, there should be calls to register the `Discovered`, `Set up`, and `Used` states.
