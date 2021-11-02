@@ -119,6 +119,12 @@ When this step is completed, you can continue to update your Business Central so
     Unpublish-NAVApp -ServerInstance <server instance> -Name System -version <version>
     ```
 
+    If you only have one version of the symbols published, you can omit the `version` parameter. If you want to see the version number of published symbols, use the following cmdlet:
+
+    ```powershell
+    Get-NAVAppInfo -ServerInstance <server instance> -SymbolsOnly
+    ```
+
     [What are symbols?](upgrade-overview-v15.md#Symbols).
 
 5. (Multitenant only) Dismount the tenants from the application database.
