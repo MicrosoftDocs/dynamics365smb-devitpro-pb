@@ -72,6 +72,21 @@ When we obsolete code, we:
             ObsoleteReason = 'Data available in Assisted Setup already- extensions also register in the same table.';
         ```        
 
+        ```al
+        field(11701; "Bank Account No."; Text[30])
+        {
+            Caption = 'Bank Account No.';
+            Editable = false;
+        #if CLEAN18
+            ObsoleteState = Removed;
+            ObsoleteTag = '18.0';
+        #else
+            ObsoleteState = Pending;
+            ObsoleteTag = '17.0';
+        #endif
+            ObsoleteReason = 'Moved to Core Localization Pack for Czech.';
+        }
+        ```
     - If a table is to be marked as `Temporary`, then we'll use `#if #else #endif`
 
         ```al
