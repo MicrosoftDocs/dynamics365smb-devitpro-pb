@@ -19,7 +19,8 @@ Business Central online includes the following one-dimensional (1D) and two-dime
 > [!NOTE]
 > Two-dimensional (2D) barcode fonts and encoders are only included in version 19.1 and later.
 
-# One-dimensional Barcode Fonts with Business Central Online
+## One-dimensional Barcode Fonts with Business Central Online
+
 |Font|Symbology|Description|
 |----|-----------|--------------
 |Code39|Code39|<ul><li>Variable length</li><li>43 characters, uppercase letters (A through Z), numeric digits (0 through 9), and special characters (-, ., $, /, +, %, and space)</li><li>* is used for both start and stop delimiters. </li><li>Nine elements per character (five bars and four spaces).</li></ul> See [Specs](https://www.idautomation.com/barcode-fonts/code-39/fontnames/). |
@@ -35,7 +36,8 @@ Business Central online includes the following one-dimensional (1D) and two-dime
 ||EAN-8|<ul><li>Linear, 12-digit barcode</li><li> Derived from EAN-13, but smaller</li><li> Encodes GTIN-8 numbers</li></ul> |
 ||EAN-13|<ul><li>12-digit barcode</li><li>Superset of UPC-A, with an extra digit added to every UPC-A number <li> Encodes GTIN-13 numbers</li></ul>|
 
-# Two-dimensional Barcode Fonts with Business Central Online
+## Two-dimensional Barcode Fonts with Business Central Online
+
 |Font||Description|
 |----|--------------|
 |Aztec||
