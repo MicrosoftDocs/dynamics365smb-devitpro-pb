@@ -65,6 +65,7 @@ The event names should specify the scenario being executed. If `LogUsage` is cal
 
 ## Custom dimensions
 |Dimension  | Description or value  |
+|---------|---------|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
 |alCategory     | **FeatureTelemetry**        |
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
