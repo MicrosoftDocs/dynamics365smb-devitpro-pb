@@ -1,9 +1,9 @@
 ---
 title: "RecordRef.LockTable([Boolean] [, Boolean]) Method"
-description: "Locks a table to protect it from write transactions that conflict with each other."
+description: "Starts locking on a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # RecordRef.LockTable([Boolean] [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Locks a table to protect it from write transactions that conflict with each other.
+Starts locking on a table to protect it from write transactions that conflict with each other.
 
 
 ## Syntax
