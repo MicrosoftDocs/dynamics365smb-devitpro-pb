@@ -2309,7 +2309,6 @@
 ##### [TableCaption() Method](developer/methods-auto/record/record-tablecaption-method.md)
 ##### [TableName() Method](developer/methods-auto/record/record-tablename-method.md)
 ##### [TestField(Any) Method](developer/methods-auto/record/record-testfield-joker-method.md)
-##### [TestField(Any, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-errorinfo-method.md)
 ##### [TestField(Any, Boolean) Method](developer/methods-auto/record/record-testfield-joker-boolean-method.md)
 ##### [TestField(Any, Integer) Method](developer/methods-auto/record/record-testfield-joker-integer-method.md)
 ##### [TestField(Any, BigInteger) Method](developer/methods-auto/record/record-testfield-joker-biginteger-method.md)
