@@ -42,11 +42,13 @@ The name or number of the field that contains the primary key.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks  
- This method works just like the [GetPosition Method \(Record\)](../library.md).  
+## Remarks
+
+This method works just like the [GetPosition Method \(Record\)](../library.md).  
   
-## Example  
- The following example opens the Customer table as a RecordRef that is named RecRef. The RecordRef variable uses the GetPosition method to retrieve the position of the primary key. The *UseCaptions* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseCaptions* to **false**, the number of the field is returned. 
+## Example
+
+The following example opens the **Customer** table as a RecordRef that is named RecRef. The RecordRef variable uses the GetPosition method to retrieve the position of the primary key. The *UseNames* parameter is set to **true** so the caption of the field that contains the primary key is returned. If you set *UseNames* to **false**, the number of the field is returned.
    
 ```al
 var

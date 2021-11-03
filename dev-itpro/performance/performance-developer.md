@@ -109,8 +109,9 @@ By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you ca
 
 Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
 
-- To use queries to implement fast reports, see [Queries in Business Central](../developer/devenv-query-overview.md).
-
+- Use Read Scale-Out to read data from a read-only copy of the database, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md) for more information.
+- Use Partial Records to reduce the data loaded from the database, see [Using Partial Records](../developer/devenv-partial-records.md) for more information.
+- Use AL queries to optimize the way data is read from the database, see [Queries in Business Central](../developer/devenv-query-overview.md) for more information.
 - Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
 Read more about how to tune RDL reports here:
@@ -207,7 +208,7 @@ Read more about query objects here:
 - [TopNumberOfRows Property](../developer/properties/devenv-topnumberofrows-property.md)  
 - [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)
 
-### <a name="partialrecords"></a>Pattern - Use partial records when looping over data or when table extension fields aren't needed
+### <a name="partialrecords"></a>Pattern - Use partial records when looping over data, in reports, or when table extension fields aren't needed
 
 When writing AL code for which the fields needed on a record are known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
 
@@ -262,14 +263,12 @@ Many performance issues are related to how data is defined, accessed, and modifi
 Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
 
 These articles on indexing are worth knowing as an AL developer:
-
+- [About Table Keys](../developer/devenv-table-keys.md) 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
-- [Key Property](../developer/properties/devenv-properties.md) 
-- [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
+- [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
 
-Indexes have a cost to update, so it's recommended to not use them too frequently. 
+Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
- 
 ### SumIndexField Technology (SIFT)
 
 SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. 

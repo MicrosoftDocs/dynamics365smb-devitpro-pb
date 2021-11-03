@@ -26,7 +26,7 @@ In order to avoid name clashes for objects added by your extension and objects a
 
 ### Using the property mandatoryAffixes
 
-The rule validates that at least one of the affixes specified in the `mandatoryAffixes` property of the `AppSourceCop.json` file is used either at prefix or at suffix on identifier names of new elements. 
+The rule validates that at least one of the affixes specified in the `mandatoryAffixes` property of the `AppSourceCop.json` file is used either at prefix or at suffix on identifier names of new elements.
 
 |Setting|Mandatory|Value|
 |-------|---------|-----|
@@ -40,11 +40,12 @@ The `mandatoryAffixes` property expects to receive an array of string as follows
 }
 ```
 
-### Using the properties mandatoryPrefix and mandatorySuffix.
+### Using the properties mandatoryPrefix and mandatorySuffix
 
 In order to preserve backward compatibility, the properties `mandatoryPrefix` and `mandatorySuffix` are still supported by the AppSourceCop.
 
 Both properties expect to receive a string as follows:
+
 ```json
 {
     "mandatoryPrefix": "Prefix",
@@ -72,9 +73,13 @@ Renaming objects which are not part of the baseline is allowed.
 
 For objects which already exist in the version of the extension used as baseline, it is not possible to rename them. It is therefore not possible to append one of the mandatory affixes. Instead, the offending object should be deprecated using the [ObsoleteState](../properties/devenv-obsoletestate-property.md) property and a new object whose name has one of the mandatory affixes should be introduced.
 
+> [!NOTE]  
+> The lack of affixes for enum values defined in enum extensions is reported as a warning with [AS0098](appsourcecop-as0098.md) if the enum value is already defined in your baseline extension. If the enum value is not defined in your baseline extension, it is reported as an error with [AS0011](appsourcecop-as0011.md). Make sure to specify your baseline extension in the AppSourceCop.json file.
+
 #### Example - Adding an affix to an existing codeunit
 
 For instance, if the baseline of the extension contains a codeunit without affix:
+
 ```AL
 codeunit 50100 MyCodeunit
 {
@@ -86,6 +91,7 @@ codeunit 50100 MyCodeunit
 ```
 
 The extension should be modified into:
+
 ```AL
 codeunit 50100 MyCodeunit
 {
@@ -114,7 +120,6 @@ Once all dependent extensions have been updated to use the codeunit `Foo_MyCodeu
 
 > [!NOTE]  
 > When new objects are added to this rule, the transition can be made gradually because new objects are caught by the AS0011 rule, whereas the AS0098 rule catches existing or modified objects. The warning with the same behavior is described here: [AS0098](appsourcecop-as0098.md).
-
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  

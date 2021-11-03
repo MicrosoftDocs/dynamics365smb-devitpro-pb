@@ -3,7 +3,7 @@ title: "Number Sequences"
 description: "This topic describes how to create number sequences in AL code in Dynamics 365 Business Central." 
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 10/27/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,7 +53,7 @@ NumberSequence.Insert('StartsWithTenSequence', 10);
 ​// Creates a NumberSequence object that starts with the value '0' and increments by '10'​
 NumberSequence.Insert('StartsWithZeroIncrementTenSequence', 0, 10); 
 
-​// Creates a NumberSequence object that starts with the value '0', increments by '10', and is company-specific​
+​// Creates a NumberSequence object that starts with the value '0', increments by '1', and is company-specific​
 NumberSequence.Insert('MyCompanySequence', 0, 1, true); ​
 ​
 // Verifies whether a specific NumberSequence object exists, and if so, deletes it

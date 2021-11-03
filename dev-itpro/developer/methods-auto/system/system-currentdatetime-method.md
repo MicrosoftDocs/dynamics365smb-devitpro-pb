@@ -40,9 +40,10 @@ Datetime :=   System.CurrentDateTime()
 
 ## Example
 
-This example requires that you create a DateTime variable named TestDateTime.  
-  
 ```al
+var
+    TestDateTime : DateTime;
+
 TestDateTime := CurrentDateTime;  
 Message(Format(TestDateTime));  
 ```  

@@ -32,7 +32,7 @@ With [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, there are coupl
 
 1. Get the barcode fonts that you want to use on reports.
 
-    You can get barcode fonts from any font provider. If you use the IDAutomation fonts, you can skip the next step and use the built-in IDAutomation barcode font provider.
+    You can get barcode fonts from any font provider. If you use the IDAutomation fonts listed in the [Barcode Fonts with Business Central Online](devenv-report-barcode-fonts.md), you can skip the next step and use the built-in IDAutomation barcode font provider.
 
 2. Create your own barcode font provider with encoders for the fonts.
 

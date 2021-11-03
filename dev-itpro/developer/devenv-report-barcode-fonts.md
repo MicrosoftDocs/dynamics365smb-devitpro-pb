@@ -14,10 +14,12 @@ ms.author: jswymer
 
 # Barcode Fonts with Business Central Online
 
-Business Central online includes the following one-dimensional barcode fonts and symbologies from [IDAutomation](https://www.idautomation.com). The fonts have different specifications for characteristics like encode numbers, symbols, uppercase, and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts.
+Business Central online includes the following one-dimensional (1D) and two-dimensional (2D) barcode fonts and symbologies from [IDAutomation](https://www.idautomation.com). The fonts have different specifications for characteristics like encode numbers, symbols, uppercase, and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts. Barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol.
 
-> [!TIP]
-> A barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol
+> [!NOTE]
+> Two-dimensional (2D) barcode fonts and encoders are only included in version 19.1 and later.
+
+## One-dimensional Barcode Fonts with Business Central Online
 
 |Font|Symbology|Description|
 |----|-----------|--------------
@@ -33,6 +35,17 @@ Business Central online includes the following one-dimensional barcode fonts and
 ||UPC-E|<ul><li>6-digit variation of UPC-A that suppresses trailing zeros. </li><li>Commonly used where space is a factor. </li></ul>.|
 ||EAN-8|<ul><li>Linear, 12-digit barcode</li><li> Derived from EAN-13, but smaller</li><li> Encodes GTIN-8 numbers</li></ul> |
 ||EAN-13|<ul><li>12-digit barcode</li><li>Superset of UPC-A, with an extra digit added to every UPC-A number <li> Encodes GTIN-13 numbers</li></ul>|
+
+## Two-dimensional Barcode Fonts with Business Central Online
+
+|Font||Description|
+|----|--------------|
+|Aztec||
+|Datamatrix||
+|Maxicode||
+|Pdf 417||
+|QR Code||
+
 
 ## See Also
 
