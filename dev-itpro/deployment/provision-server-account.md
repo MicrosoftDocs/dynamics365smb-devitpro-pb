@@ -86,7 +86,7 @@ For more information, see [Service Principal Names](/windows/desktop/ad/service-
 -->
 ### Add the account to the SMSvcHost.exe.config file
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Net.TCP Port Sharing Service, which is managed by SMSvcHost.exe. The SMSvcHost.exe.config contains information about the identities (or accounts) that can use the service. These accounts are specified as security identifiers (SIDs) in the <allowAccounts> section of the SMSvcHost.exe.config file. By default, permission is implicitly granted to system accounts, such as NetworkService. For other accounts, you must  explicitly add the SID for the account to the SMSvcHost.exe.config file as follows:
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses Net.TCP Port Sharing Service, which is managed by SMSvcHost.exe. The SMSvcHost.exe.config contains information about the identities (or accounts) that can use the service. These accounts are specified as security identifiers (SIDs) in the \<allowAccounts\> section of the SMSvcHost.exe.config file. By default, permission is implicitly granted to system accounts, such as NetworkService. For other accounts, you must  explicitly add the SID for the account to the SMSvcHost.exe.config file as follows:
 
 1. Get the SID of the user account.
 
@@ -104,7 +104,7 @@ For more information, see [Service Principal Names](/windows/desktop/ad/service-
 2. Using a text editor, open the SMSvcHost.exe.config file.
 
     You will find the SMSvcHost.exe.config file in the installation folder for the latest :NET Framework version on the [!INCLUDE[server](../developer/includes/server.md)] computer; for example, `C:\Windows\Microsoft.NET\Framework64\v4.0.30319`.
-3. Add the SID to the <allowAccounts> element as follows, and then save the file: 
+3. Add the SID to the \<allowAccounts\> element as follows, and then save the file: 
 
     ```
     <system.serviceModel.activation>

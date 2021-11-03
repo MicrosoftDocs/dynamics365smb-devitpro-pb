@@ -263,10 +263,9 @@ Many performance issues are related to how data is defined, accessed, and modifi
 Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
 
 These articles on indexing are worth knowing as an AL developer:
-
+- [About Table Keys](../developer/devenv-table-keys.md) 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
-- [Key Property](../developer/properties/devenv-properties.md) 
-- [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15)
+- [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
 
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 09/07/2021
+ms.date: 11/02/2021
 ms.author: edupont
 ---
 
@@ -39,6 +39,14 @@ The "Ready to Go" program is designed to support you in the journey of bringing 
 When you become a Microsoft Partner Network member, you gain access to membership benefits that can help you build and grow your business. For more information, see [Explore your Go-To-Market with Microsoft offers](/partner-center/mpn-learn-about-go-to-market-benefits) in the Partner Center docs.  
 
 As a Dynamics 365 reseller, you benefit from Microsoft's investments in an always up-to-date modern platform, you can bundle recognized apps from the Microsoft commercial marketplace into an offering that fits the needs of your customers, reach more customers by using Microsoft's commercial marketplace to promote your packaged consulting service offerings or customization services, and streamline your own processes and build tools with Power BI, Power Automate, and Power Apps connected to [!INCLUDE[prod_short](../includes/prod_short.md)].  
+
+### Marketing assets
+
+Microsoft provides marketing assets that you can use to build a business based on Microsoft. For more information, see the following sites:
+
+* [Partner Network resources](https://partner.microsoft.com/asset#/?type=marketing-campaigns&area=mrkt)  
+* [Brand and trademark basics for partners](https://partner.microsoft.com/marketing/branding)  
+* [Go-to-market with Microsoft](https://partner.microsoft.com/solutions/go-to-market)  
 
 Specifically for going to market with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], Microsoft provides resources and guidance on the [Business Applications for small and medium-sized businesses (SMBs)](https://partner.microsoft.com/solutions/business-applications/smb) site. For more information, see [Business Central Go-To-Market resources](https://partner.microsoft.com/asset/collection/business-central-go-to-market-resources#/).  
 

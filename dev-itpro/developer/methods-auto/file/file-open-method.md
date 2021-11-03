@@ -3,7 +3,7 @@ title: "File.Open(String [, TextEncoding]) Method"
 description: "Opens an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ An instance of the [File](file-data-type.md) data type.
   
 *[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
-  
+The encoding that will be used by the stream. The default encoding is MSDos.  
 
 
 ## Return Value
