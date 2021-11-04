@@ -62,13 +62,12 @@ begin
         Error(NonSecureUriErr);
 end;
 ```
-```
+```al
 trigger OnRun()
 var
     URL: Text;
 begin
-    if IsSecureHttpUrl(URL) then
-    begin
+    if not IsSecureHttpUrl(URL) then begin
         message('URL is not secure.')
         exit(true);
     exit(false);

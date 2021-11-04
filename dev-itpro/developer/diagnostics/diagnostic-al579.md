@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL579"
+title: "Compiler Error AL0579"
 description: "The value for the property '{0}' for the language code '{1}' is not valid because its length exceeds {2} characters ({3} characters)."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL579
+# Compiler Error AL0579
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

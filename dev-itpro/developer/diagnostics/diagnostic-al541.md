@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL541"
+title: "Compiler Error AL0541"
 description: "The use of the variable '{0}' in the property value of '{1}' in view '{2}' is not allowed."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL541
+# Compiler Error AL0541
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

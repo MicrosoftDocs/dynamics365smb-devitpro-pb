@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL238"
+title: "Compiler Error AL0238"
 description: "No overload for attribute '{0}' expects {1} arguments."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL238
+# Compiler Error AL0238
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

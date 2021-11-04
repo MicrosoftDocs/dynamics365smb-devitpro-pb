@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL264"
+title: "Compiler Error AL0264"
 description: "An application object of type '{0}' with ID '{1}' is already declared by the extension '{2}'."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL264
+# Compiler Error AL0264
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

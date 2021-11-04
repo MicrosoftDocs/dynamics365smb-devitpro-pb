@@ -1,5 +1,5 @@
 ---
-title: "Compiler Warning (Future Error) AL551"
+title: "Compiler Warning (Future Error) AL0551"
 description: "The action area '{0}' can only contain actions."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL551
+# Compiler Warning (Future Error) AL0551
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

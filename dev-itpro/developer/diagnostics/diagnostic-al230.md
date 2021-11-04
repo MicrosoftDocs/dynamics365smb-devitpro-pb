@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL230"
+title: "Compiler Error AL0230"
 description: "The data type on the {0} field is not valid because the ExtendedDatatype property is set to PhoneNo, URL or Email."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL230
+# Compiler Error AL0230
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

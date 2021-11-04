@@ -153,7 +153,7 @@ The minimum release for your submission is computed based on the versions `appli
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
 
 > [!Important]  
-> The minimum release computed for your submission also defines the availability of all the extensions in your submission.
+> The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
 >
 > For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
 

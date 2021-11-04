@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL306"
+title: "Compiler Error AL0306"
 description: "A field list has to contain at least one field."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL306
+# Compiler Error AL0306
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

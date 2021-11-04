@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL244"
+title: "Compiler Error AL0244"
 description: "The signature of procedure '{0}' does not match the signature required by attribute '{1}': return value is expected to be of type '{2}' but found type '{3}'."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL244
+# Compiler Error AL0244
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

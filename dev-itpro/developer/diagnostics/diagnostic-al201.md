@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL201"
+title: "Compiler Error AL0201"
 description: "The {0} FlowField is not a Boolean field."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL201
+# Compiler Error AL0201
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

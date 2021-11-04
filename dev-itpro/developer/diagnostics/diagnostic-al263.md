@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL263"
+title: "Compiler Error AL0263"
 description: "The primary key '{0}' on table '{1}' (the first one in the key list) must be enabled."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL263
+# Compiler Error AL0263
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

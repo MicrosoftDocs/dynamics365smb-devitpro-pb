@@ -1,5 +1,5 @@
 ---
-title: "Compiler Warning AL273"
+title: "Compiler Warning AL0273"
 description: "The name '{0}' is an Area type."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning AL273
+# Compiler Warning AL0273
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL256"
+title: "Compiler Error AL0256"
 description: "The flowfield '{0}' cannot be part of the keys for table '{1}'."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL256
+# Compiler Error AL0256
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

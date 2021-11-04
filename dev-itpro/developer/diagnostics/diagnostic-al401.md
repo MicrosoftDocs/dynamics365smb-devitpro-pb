@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL401"
+title: "Compiler Error AL0401"
 description: "Multiple page customizations have been specified for the same page {0} within the same profile."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL401
+# Compiler Error AL0401
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

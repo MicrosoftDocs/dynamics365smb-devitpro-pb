@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL196"
+title: "Compiler Error AL0196"
 description: "The call is ambiguous between the method '{0}' defined in {1} '{2}' by the extension '{3}' and the method '{4}' defined in {5} '{6}' by the extension '{7}'."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL196
+# Compiler Error AL0196
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

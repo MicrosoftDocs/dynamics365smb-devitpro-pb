@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL283"
+title: "Compiler Error AL0283"
 description: "The event '{0}' must not have a return value."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL283
+# Compiler Error AL0283
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Compiler Warning (Future Error) AL695"
+title: "Compiler Warning (Future Error) AL0695"
 description: "The method {0} will only be available for {1} development for runtime version {2}."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL695
+# Compiler Warning (Future Error) AL0695
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

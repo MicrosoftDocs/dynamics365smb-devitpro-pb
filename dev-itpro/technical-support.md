@@ -6,17 +6,17 @@ ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2021
+ms.date: 11/02/2021
 ---
 # Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
-Each customer of [!INCLUDE [prod_short](developer/includes/prod_short.md)] has a partner who assists with technical support when requested by the internal administrator. As a [!INCLUDE[prod_short](developer/includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prod_short](developer/includes/prod_short.md)] tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
+Each customer of [!INCLUDE [prod_short](developer/includes/prod_short.md)] has a partner who assists with technical support. As a [!INCLUDE[prod_short](developer/includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE[prod_short](developer/includes/prod_short.md)] tenants, and you are the first line of support. You will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
 
 In this section, you can learn about the tools that are available to you to help you troubleshoot your customers' [!INCLUDE [prod_short](developer/includes/prod_short.md)].  
 
 ## Configuring the support experience
 
-Because you are the first line of support for your customers, you must make it easy for them to contact you. To that end, there is a section in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page in your customers' [!INCLUDE[prod_short](developer/includes/prod_short.md)] tenants where they can find this information.  
+Because you are the first line of support for your customers, you must make it easy for them to contact you. They can find your contact information in the [Help and Support](/dynamics365/business-central/product-help-and-support?toc=/dynamics365/business-central/dev-itpro/toc.json) page.  
 
 > [!IMPORTANT]
 > You must have set up users in your own tenant in Partner Center as either *Admin agent* or *Helpdesk agent*, and they must have *delegated administration* privileges in your customer's [!INCLUDE [prod_short](developer/includes/prod_short.md)] to support the customer. For more information, see [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md).
@@ -27,7 +27,7 @@ Because you are the first line of support for your customers, you must make it e
 2. Fill in the **Name**, **Email address**, and the **Website** fields, so that your users know how to contact you for technical support.
 3. Optionally, choose the **Apply to all environments** checkbox if you want to add the same details to all related environments for this tenant.
 
-Your customer can now contact you if they experience problems that they cannot resolve themselves. If you also cannot resolve a reported issue, you can escalate the issue to Microsoft. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+Your customer can now contact you if they experience problems and need help. If you also cannot resolve a reported issue, escalate the issue to Microsoft. For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
 
 ### On-premises deployments
 
@@ -62,9 +62,13 @@ As a partner, you must identify if the issue is caused by application logic or p
 
 ## Troubleshooting and support
 
-The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your primary tool to support your customers. However, you can also log in to the customer's [!INCLUDE [prod_short](developer/includes/prod_short.md)] as the delegated admin for troubleshooting.  
+The [!INCLUDE [prodadmincenter](developer/includes/prodadmincenter.md)] is your primary tool to support your customers. However, you can also sign in to the customer's [!INCLUDE [prod_short](developer/includes/prod_short.md)] as the delegated admin for troubleshooting.  
 
 For more information, see [Managing Technical Support](administration/manage-technical-support.md).  
+
+## Monitor service health
+
+[!INCLUDE [admin-service-health](includes/admin-service-health.md)]
 
 ### Summary of where to file bugs and issues
 

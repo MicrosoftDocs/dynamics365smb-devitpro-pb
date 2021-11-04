@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL566"
+title: "Compiler Error AL0566"
 description: "The field '{0}' is using an Id {1} that is reserved for system fields."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL566
+# Compiler Error AL0566
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

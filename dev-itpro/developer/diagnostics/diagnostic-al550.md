@@ -1,5 +1,5 @@
 ---
-title: "Compiler Warning (Future Error) AL550"
+title: "Compiler Warning (Future Error) AL0550"
 description: "Groups defined in the action area '{0}' should only contain actions."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL550
+# Compiler Warning (Future Error) AL0550
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

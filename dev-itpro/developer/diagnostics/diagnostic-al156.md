@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL156"
+title: "Compiler Error AL0156"
 description: "'{0}' is not a valid field type."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL156
+# Compiler Error AL0156
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

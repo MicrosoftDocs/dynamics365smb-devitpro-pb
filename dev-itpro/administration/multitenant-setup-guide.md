@@ -56,6 +56,10 @@ For more information, see [Configuring Business Central Server](../administratio
 > [!TIP]
 > Instead of doing the two previous steps, you could use the [Mount-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Mount-NAVApplication). Running this cmdlet will enable the **Multitenant** and set up the data base connection.
 
+## Configure the Web client to accept host names for tenants (optional)
+
+If you want to use host names to access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] for your tenants, follow this instructions at [Configure Business Central Web Server to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).
+
 ## Publish the symbols and extensions
 
 Before mounting tenants, publish the system symbols and extensions that make up your application. Publish the system application and base application extensions as a minimum. Then, as needed, publish any Microsoft and third-party extensions tenants may use.

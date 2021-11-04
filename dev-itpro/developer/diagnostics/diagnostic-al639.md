@@ -1,5 +1,5 @@
 ---
-title: "Compiler Warning (Future Error) AL639"
+title: "Compiler Warning (Future Error) AL0639"
 description: "'Variant' is not a valid column type for column '{0}' in report '{1}'."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL639
+# Compiler Warning (Future Error) AL0639
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

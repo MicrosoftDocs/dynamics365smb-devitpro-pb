@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL542"
+title: "Compiler Error AL0542"
 description: "The property {0} cannot be used on page '{1}' because this page does not have a source table."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL542
+# Compiler Error AL0542
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

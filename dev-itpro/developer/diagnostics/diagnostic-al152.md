@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL152"
+title: "Compiler Error AL0152"
 description: "The value '{0}' is used more than once."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL152
+# Compiler Error AL0152
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

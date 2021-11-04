@@ -1,9 +1,9 @@
 ---
-title: "Compiler Warning (Future Error) AL604"
+title: "Compiler Warning (Future Error) AL0604"
 description: "Use of implicit 'with' will be removed in the future."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/14/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Warning (Future Error) AL604
+# Compiler Warning (Future Error) AL0604
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Use of implicit 'with' will be removed in the future. Qualify with '{0}'.
+Use of implicit 'with' will be removed in the future. Qualify with '{0}.'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

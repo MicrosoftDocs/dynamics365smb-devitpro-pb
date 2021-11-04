@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL250"
+title: "Compiler Error AL0250"
 description: "The data type on the {0} field is not valid because the ExtendedDatatype property is set to Person."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL250
+# Compiler Error AL0250
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

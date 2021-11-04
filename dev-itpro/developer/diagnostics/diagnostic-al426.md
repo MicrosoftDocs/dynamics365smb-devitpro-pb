@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL426"
+title: "Compiler Error AL0426"
 description: "The APIVersion {0} is specified multiple times."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL426
+# Compiler Error AL0426
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

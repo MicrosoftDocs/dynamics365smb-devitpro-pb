@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL422"
+title: "Compiler Error AL0422"
 description: "Constant value {0} is not a valid value for APIVersion."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL422
+# Compiler Error AL0422
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

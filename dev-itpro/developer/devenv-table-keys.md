@@ -158,6 +158,9 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
+> [!TIP]
+> Starting in Business Central version 18, it is possible to create a table extension that only holds key definitions. You can utilize this to add keys to tables in the base application or in AppSource extensions, where you don't have ownership of the table definitions. 
+
 The following code illustrates simple examples of a table object and table extension object.
 
 ```AL
@@ -215,6 +218,19 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
         //key(ExtKey3; MyBaseField1, MyExtField2)
         //{
         //}
+    }
+}
+```
+
+```AL
+tableextension 50122 MyCustomerKeyExt extends Customer
+{
+    // This example illustrates how to use a table extension to add a key on the Customer table from the base application
+    keys
+    {
+        key(ExtKey1; "No.", "Name", City) 
+        {
+        }
     }
 }
 ```

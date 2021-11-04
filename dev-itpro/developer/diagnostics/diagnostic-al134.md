@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL134"
+title: "Compiler Error AL0134"
 description: "'{0}' is not recognized as a valid type."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL134
+# Compiler Error AL0134
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

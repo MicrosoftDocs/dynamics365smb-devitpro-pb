@@ -1,5 +1,5 @@
 ---
-title: "Compiler Error AL517"
+title: "Compiler Error AL0517"
 description: "The link '{0}' specified in the HelpLink property must either contain one placeholder with value 0 for the user locale, or no placeholders."
 ms.author: solsen
 ms.custom: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL517
+# Compiler Error AL0517
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
