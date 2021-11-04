@@ -110,6 +110,8 @@ This section provides an overview of permissions and permission sets in [!INCLUD
 |Delete|You can delete data from this object.|  
 |Execute|You can run this object.|
 
+For more information, see [Permissions on Database Objects](../developer/devenv-permissions-on-database-objects.md).
+
 ## [Record-level security](#tab/record-level)
 
 Record-level security lets you limit the access that a user has to the data in a table.  
