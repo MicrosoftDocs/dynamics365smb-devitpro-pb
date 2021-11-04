@@ -12,7 +12,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 10/05/2021
 ---
 
-# The Business Central Administration Center API
+# The Business Central Admin Center API
 
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API enables administrators to programmatically do administrative tasks for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant. With the API, administrators can, for example:
 

@@ -134,7 +134,7 @@
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
 ### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
-### Administration Center API
+### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App Management](administration/administration-center-api_app_management.md)
 #### [Available Applications](administration/administration-center-api_available_applications.md)
