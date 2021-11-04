@@ -3384,6 +3384,7 @@
 ### [Application](security/security-application.md)
 ### [Online](security/security-online.md)
 ### [On-Premises](security/security-onpremises.md)
+### [Data Security](security/data-security.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
