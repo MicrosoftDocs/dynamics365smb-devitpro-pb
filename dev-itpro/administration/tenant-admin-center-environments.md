@@ -135,28 +135,6 @@ Before you can assign an Azure AD group to an environment, the group must be cre
 > [!NOTE]
 > If you change or remove a group, it can take a while before the changes to take effect or access is revoked from users.
 
-## <a name="opslog"></a>Log of administrative operations
-
-The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
-
-### Operations
-
-Currently, the log includes the following operations:
-
-|Type|Description|More information|
-|----|-----------|----------------|
-|Rename environment|Environment was renamed by using the Admin Center.|[Rename an Environment](tenant-admin-center-environments-rename.md)|
-|Restore environment|Environment was restored by using the Admin Center.|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
-|Move environment|An environment was moved to another Azure Active Directory organization.|[Move an Environment](tenant-admin-center-environments-move.md)
-|Environment app hotfix|A hotfix was applied to the app by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
-|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api.md#install-an-app)|
-|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api.md#uninstall-an-app)|
-|Environment app update |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api.md#update-an-app)|
-
-### Retention period
-
-The operations are kept for 365 days, after which they're deleted.
-
 ## Delete an environment
 
 You can delete environments in the admin center, such as when a sandbox environment is not longer needed.  
@@ -165,6 +143,30 @@ You can delete environments in the admin center, such as when a sandbox environm
 > Make sure no user is using the environment before you delete it.
 >
 > Also, be very careful before you choose the *Delete* action for the environment. The action is irreversible.
+
+## <a name="opslog"></a>Log of administrative operations
+
+The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
+
+### Operations
+
+Currently, the log includes the following operations:
+
+|Type|Description|Admin center|API|Extension Management Page|
+|----|-----------|------------|---|-------------------------|
+|Copy environment|An environment was created from a copy of another environment.|[See...](#copy-an-environment)|[See...](administration-center-api_environments.md#copy-environment)||
+|Create environment |A new environment was created|[See...](#create-a-new-environment)|[See...](administration-center-api_environments.md#create-new-environment)||
+|Delete environment|An environment was deleted.|[See...](#delete-an-environment)|[See...](administration-center-api_environments.md#delete-environment)||
+|Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
+|Move environment|An environment was moved to another Azure Active Directory organization.|[See...](tenant-admin-center-environments-move.md)|||
+|Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[See...](appmanagement/app-management-api.md#schedule-environment-hotfix)||
+|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[See...](administration-center-api_app_management.md#install-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
+|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[See...](administration-center-api_app_management.md#uninstall-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
+|Environment app update |App was updated either by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
+
+### Retention period
+
+The operations are kept for 180 days, after which they're deleted.
 
 ## See also
 
