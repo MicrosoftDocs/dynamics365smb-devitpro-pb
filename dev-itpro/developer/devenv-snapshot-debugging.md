@@ -96,10 +96,7 @@ Snapshot debugging sessions that have produced a snapshot file can be debugged. 
 
 ## Downloading symbols on the snapshot debugger endpoint
 
-In order to download symbols on a production server, you need permission related entries:
-
-- Be a delegated admin
-- The read-only access to the **Published Application** table emphasized in the **D365 Snapshot Debug** permission set should also be granted.
+In order to download symbols on a production server, you need permission related entries. The read-only access to the **Published Application** table emphasized in the **D365 Snapshot Debug** permission set should be granted.
 
 Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server.
 
