@@ -71,7 +71,7 @@ When you open a company in [!INCLUDE[prod_short](../developer/includes/prod_shor
   
 Object-level security is the set of permissions on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects that constitute a permission set. Permission sets determine the access that users have and the tasks that users can perform on objects in the database.  
   
-### Security system database objects(#tab/security-system)
+### Security system database objects
   
  You can define permissions for all types of objects in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database.  
   
@@ -87,7 +87,6 @@ Object-level security is the set of permissions on [!INCLUDE[prod_short](../deve
 |System|The system tables in the database that allow the user to make backups, change license files, and so on.|  
   
 The various permission sets that exist in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] determine the actions that you can perform on these objects. For more information about permissions, see [Permissions on Database Objects](../developer/devenv-permissions-on-database-objects.md).
-
 
 ### Permissions on database objects
 
