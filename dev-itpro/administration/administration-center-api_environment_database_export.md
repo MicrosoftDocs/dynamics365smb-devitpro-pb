@@ -80,7 +80,7 @@ POST /admin/v2.9/exports/applications/{applicationFamily}/environments/{environm
 
 `requestBodyRequired` - the request body must be provided
 
-`exportFailed` - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up 
+`exportFailed` - the export failed because the target environment's version was too old, it wasn't a production environment, the requesting tenant is a trial, the calling user doesn't have permissions to export, or the quota of allowed exports has been used up
 
 ## Get Export History
 
@@ -92,8 +92,8 @@ POST /admin/v2.9/exports/history?start={startTime}&end={endTime}
 
 ### Query parameters
 
-`startTime` - datetime // The start of the export history entry time window to query  
-`endTime` - datetime // The end of the  export history entry time window to query  
+`startTime` - datetime // The start of the export history entry time window to query
+`endTime` - datetime // The end of the  export history entry time window to query
 
 ### Response
 
@@ -113,32 +113,34 @@ Returns a detailed list of the database exports that occurred within the provide
 }
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > All datetime values are in UTC
 
 ## Case-Invariant blocked environment names
 
 ### All environment types
 
-- invoicing
-- api
-- error
-- navwinclient
-- clickonce
-- tablet
-- phone
-- reset
-- getapp
-- signout
 - addremotehost
+- admin
+- api
+- clickonce
+- connectivity
 - deployment
+- error
+- getapp
 - health
 - home
+- invoicing
+- navwinclient
 - notsupported
 - officeaddin
+- phone
+- pwa
 - remotesignin
-- shell service
-- admin
+- reset
+- shellservice
+- signout
+- tablet
 
 ### Production Environment Types
 
@@ -150,6 +152,6 @@ Returns a detailed list of the database exports that occurred within the provide
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
-[Manage Apps](tenant-admin-center-manage-apps.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+[The Business Central Administration Center API](administration-center-api)
+[Manage Apps](tenant-admin-center-manage-apps.md)
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)
