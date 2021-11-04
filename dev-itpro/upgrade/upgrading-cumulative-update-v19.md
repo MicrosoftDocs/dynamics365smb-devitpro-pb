@@ -290,6 +290,10 @@ Compile all published extensions against the new platform.
 
     You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
 
+    ```powershell  
+    Mount-NAVTenant -ServerInstance $BCServerInstanceName -DatabaseName $TenantDatabase -Tenant $TenantId 
+    ```
+
 2. Synchronize the tenant.
   
     Use the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet:

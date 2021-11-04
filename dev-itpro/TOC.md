@@ -134,7 +134,19 @@
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
 ### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
-### [Administration Center API](administration/administration-center-api.md)
+### Admin Center API
+#### [Overview](administration/administration-center-api.md)
+#### [App Management](administration/administration-center-api_app_management.md)
+#### [Available Applications](administration/administration-center-api_available_applications.md)
+#### [Environments](administration/administration-center-api_environments.md)
+#### [Environment Database Export](administration/administration-center-api_environment_database_export.md)
+#### [Environment Outage Reporting](administration/administration-center-api_environment_outage_reporting.md)
+#### [Environment Settings](administration/administration-center-api_environment_settings.md)
+#### [Notifications](administration/administration-center-api_notifications.md)
+#### [Reschedule Updates](administration/administration-center-api_reschedule_updates.md)
+#### [Session Management](administration/administration-center-api_session_management.md)
+#### [Support Settings](administration/administration-center-api_support_settings.md)
+#### [Telemetry](administration/administration-center-api_telemetry.md)
 <!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 ## Entitlements and permissions
 ### [Entitlements and permission sets overview](developer/devenv-entitlements-and-permissionsets-overview.md)
@@ -3543,6 +3555,7 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+#### [Configure Business Central Web Server to Accept Host Names](administration/configure-web-server-to-accept-host-names-for-tenants.md)
 ### Multitenant Deployment
 #### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
 #### [Setup Guide](administration/multitenant-setup-guide.md)
