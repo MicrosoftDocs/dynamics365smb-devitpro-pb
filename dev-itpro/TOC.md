@@ -3555,6 +3555,7 @@
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
+#### [Configure Business Central Web Server to Accept Host Names](administration/configure-web-server-to-accept-host-names-for-tenants.md)
 ### Multitenant Deployment
 #### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
 #### [Setup Guide](administration/multitenant-setup-guide.md)
