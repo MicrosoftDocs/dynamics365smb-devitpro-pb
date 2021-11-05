@@ -3,7 +3,7 @@ title: "HttpClient.UseDefaultNetworkWindowsAuthentication() Method"
 description: "Sets the HttpClient credentials to use the default network credentials for Windows authentication."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
+> This method is supported only in Business Central on-premises from runtime version 3.0 and onward.
 
 ## Syntax
 ```AL
