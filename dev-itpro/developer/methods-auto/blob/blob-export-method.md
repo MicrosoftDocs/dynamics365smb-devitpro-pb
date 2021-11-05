@@ -3,7 +3,7 @@ title: "Blob.Export(String) Method"
 description: "Exports a binary large object (BLOB) to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Exports a binary large object (BLOB) to a file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 9.0 and onward.
+> From runtime version 9.0 and onward, this method is only supported in Business Central on-premises.
 
 ## Syntax
 ```AL

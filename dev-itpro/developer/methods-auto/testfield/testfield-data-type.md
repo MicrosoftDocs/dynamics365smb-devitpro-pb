@@ -3,7 +3,7 @@ title: "TestField Data Type"
 description: "Represents a testable field on a page."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,8 +19,6 @@ author: SusanneWindfeldPedersen
 
 Represents a testable field on a page.
 
-> [!NOTE]
-> This data type is supported only in Business Central online.
 
 
 The following methods are available on instances of the TestField data type.
