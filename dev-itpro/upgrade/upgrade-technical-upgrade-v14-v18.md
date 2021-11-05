@@ -16,10 +16,16 @@ ms.service: "dynamics365-business-central"
 Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 platform (version 18). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
  ![Upgrade on customized Business Central application.](../developer/media/bc14-to-18-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
+
+## General information
  
-#### Single-tenant and multitenant deployments
+### Single-tenant and multitenant deployments
 
 The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+
+### Personalization and customizations
+
+[!INCLUDE[windows-client-upgrade](../developer/includes/windows-client-upgrade.md)]
 
 ## Prerequisites
 
