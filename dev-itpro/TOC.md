@@ -1289,6 +1289,7 @@
 #### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
 #### [Creating Handler Methods](developer/devenv-creating-handler-methods.md)
 #### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Collecting Errors](developer/devenv-error-collection.md)
 #### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
 #### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
 #### [Method Attributes](developer/attributes/devenv-method-attributes.md)
@@ -3384,6 +3385,7 @@
 ### [Application](security/security-application.md)
 ### [Online](security/security-online.md)
 ### [On-Premises](security/security-onpremises.md)
+### [Data Security](security/data-security.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
