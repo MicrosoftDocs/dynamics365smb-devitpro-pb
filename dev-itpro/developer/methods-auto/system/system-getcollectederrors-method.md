@@ -40,6 +40,8 @@ The collected errors in the current collection scope.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
+
+[Collecting Errors](../../devenv-error-collection.md)  
 [System Data Type](system-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)
