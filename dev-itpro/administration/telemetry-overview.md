@@ -108,6 +108,13 @@ In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] BCTech reposi
 
 For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
 
+## [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry FAQ
+
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] BCTech repository on GitHub have an extensive FAQ on telemetry in Azure Application Insights.
+
+For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/FAQ.md).
+    
+    
 ## See also
 
 [Telemetry Event IDs](telemetry-event-ids.md)  
