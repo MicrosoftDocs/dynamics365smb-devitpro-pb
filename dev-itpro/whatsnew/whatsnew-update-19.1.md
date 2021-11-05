@@ -26,6 +26,7 @@ Find an overview of hotfixes in this [article](XXX).
 - [Copying environments of different types](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/copying-environments-different-types)
 - [Operations log enhancements](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/operations-log-enhancements)
 - [Restart environments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/restarting-environments)
+- Shipping agent information is copied from sales orders to warehouse shipments (link will come soon)
 
 
 ## Localization updates 
