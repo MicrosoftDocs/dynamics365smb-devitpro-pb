@@ -63,3 +63,6 @@ Coming to you in the coming weeks together with a cloud-based update of Business
 
 **Customer References**  
 We now have 100+ Business Central customer stories on the Microsoft Customer Stories site. These stories come in handy when prospects ask for reference stories, so remember to bookmark: [Microsoft Customer Stories Search](https://customers.microsoft.com/en-us/search?sq=%22Dynamics%20365%20Business%20Central%22&ff=&p=0&so=story_publish_date%20desc).
+
+**AL Compiler Diagnostics**  
+With the latest documentation refresh, the AL compiler diagnostics are published in preview. The AL diagnostics section lists all of the compiler errors, warnings, etc. that you can get when coding and compiling in AL. The topics are auto-generated and there is one topic per diagnostic rule, which allows for adding detailed help, hints, reference, and more. At this point, the topics contain only the error message, and adding more information is going to be a work in progress. To contribute with content, see instructions in [AL Diagnostics](../developer/diagnostics/diagnostics-overview.md).
