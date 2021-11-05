@@ -20,16 +20,17 @@ Would you like to know what has changed in update 19.1? Below you'll find an ove
 > Builds for Business Central in Turkey are now live. 
 
 ## Hotfixes
+
 Find an overview of hotfixes in this [article](XXX).
 
-## Feature changes  
+## Feature changes
+
 - [Copying environments of different types](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/copying-environments-different-types)
 - [Operations log enhancements](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/operations-log-enhancements)
 - [Restart environments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/restarting-environments)
 - Shipping agent information is copied from sales orders to warehouse shipments (link will come soon)
 
-
-## Localization updates 
+## Localization updates
 
 **Business Central is released in the following new countries:**  
 - [Argentina](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--argentina)  
@@ -41,9 +42,11 @@ Find an overview of hotfixes in this [article](XXX).
 
 
 ## Release Plan
+
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 19.1   
+## Upgrade to 19.1
+
 Please note that new customers will automatically get the latest builds of Business Central (19.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
