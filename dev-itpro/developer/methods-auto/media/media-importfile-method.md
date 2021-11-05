@@ -3,7 +3,7 @@ title: "Media.ImportFile(Text, Text [, Text]) Method"
 description: "Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client. The media file is imported to the application database, and a reference to the media is included in the Media data type field.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL

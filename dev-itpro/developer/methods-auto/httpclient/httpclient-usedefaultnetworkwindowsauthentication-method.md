@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Sets the HttpClient credentials to use the default network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 3.0 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL

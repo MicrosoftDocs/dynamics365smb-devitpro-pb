@@ -3,7 +3,7 @@ title: "TestRequestPage.SaveAsWord(String) Method"
 description: "Saves a report as a Microsoft Word (.doc) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Saves a report as a Microsoft Word (.doc) file.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 1.0 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL

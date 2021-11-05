@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Gets a value indicating whether a DotNet object has been created or not.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 2.0 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL

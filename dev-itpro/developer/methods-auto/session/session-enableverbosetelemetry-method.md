@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Temporarily enable verbose telemetry on the current session.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 3.2 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL

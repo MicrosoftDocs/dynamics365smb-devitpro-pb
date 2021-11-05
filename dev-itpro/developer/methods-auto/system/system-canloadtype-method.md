@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Tests if the specified .NET Framework type can be loaded.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 2.0 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL

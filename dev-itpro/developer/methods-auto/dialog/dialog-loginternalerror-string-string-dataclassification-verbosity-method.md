@@ -20,7 +20,7 @@ author: SusanneWindfeldPedersen
 Log internal errors for telemetry.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises from runtime version 6.0 and onward.
+> This method is supported only in Business Central on-premises.
 
 ## Syntax
 ```AL
