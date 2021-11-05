@@ -11,13 +11,13 @@ ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
-# Collectable Errors
+# Collecting Errors
 
-This article explains how to write AL code that captures multiple errors and displays them in the user interface. Referred to as *collectable errors*, this feature can simplify validation scenarios. Specifically, scenarios where users are presented with a list of things to fix.
+This article explains how to write AL code that captures multiple errors and displays them in the user interface. Referred to as *collectible errors*, this feature can simplify validation scenarios. Specifically, scenarios where users are presented with a list of things to fix.
 
 Normally, when an error occurs in a procedure, the procedure stops on the first error it meets. Using collectable errors essentially postpones error handling to the end of the procedure call. AL code execution won't stop on errors. But  instead, it continues until the end and gathers errors as they occur.
 
-## Collectable errors API
+## Collectible errors API
 
 AL includes several methods, properties, and attributes that are designed specifically for the collectable errors feature.
 
