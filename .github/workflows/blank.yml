@@ -20,7 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: Naturalclar/issue-action@v2.0.2
+      - uses: actions/stale@v4.0.0
         with:
           title-or-body: "both"
           parameters: '[ {"keywords": ["bug", "error"], "labels": ["BUG"], "assignees": ["SusanneWindfeldPedersen"]}, {"keywords": ["help", "guidance"], "labels": ["help-wanted"], "assignees": ["jswymer"]}]'
