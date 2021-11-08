@@ -67,7 +67,7 @@ Things that have historically caused performance issues on pages that are expose
 - Many SIFT fields
 - FactBoxes
 
-Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take a lot of time to calculate. 
+Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take time to calculate. 
 
 Don't use temp tables as a source if you have many records. Temp tables that are based on APIs are a performance hit. The server has to fetch and insert every record, and there's no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
 
@@ -103,7 +103,7 @@ Read more about web service limits, see [Working with API limits in Dynamics 365
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
 
-By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you can instruct Business Central to run requests against a replica of the database which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
+By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
 
 ## Writing efficient reports
 
@@ -268,6 +268,13 @@ These articles on indexing are worth knowing as an AL developer:
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
 
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
+
+### Using data audit fields to only read recent data
+Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) includes the following two system fields, which can be used for filtering records:
+- `SystemCreatedAt`
+- `SystemModifiedAt`
+
+One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
 
 ### SumIndexField Technology (SIFT)
 
