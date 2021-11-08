@@ -22,6 +22,8 @@ The following permission sets have special definitions that you should be aware 
 |BASIC|Grants Read access to almost all application tables and all system tables.<br /><br /> The main purpose of this permission set is to enable the service to open and show all pages.<!-- <br /><br /> When you create a new database, you must import the BASIC permission set from an XML file. --> <br /><br />**Note:** This permission set is available only for [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises.|
 |D365 BASIC|Grants Read access to almost all application tables and all system tables.<br /><br /> The main purpose of this permission set is to enable the service to open and show all pages.|
 |FOUNDATION UI|A prerequisite for all other permission sets. The FOUNDATION permission set grants access to system tables and application setup tables that are required for most application features to work. **Note:** This permission set is recommended when using the UI Elements Removal feature to automatically remove UI elements according to user permissions. For more information, see [Removing Elements from the User Interface According to Permissions](hide-ui-elements.md). <br /><br />**Note:** This permission set is available only for [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises.|  
+|SYSTEM APP - BASIC| Grants access to most features of the system application and is required for login to [!INCLUDE[prod_short](../includes/prod_short.md)].
+|SYSTEM APP - ADMIN| Grants full permissions to all features of the System Application.
 
 ## See Also  
 [Removing Elements from the User Interface According to Permissions](hide-ui-elements.md)  
