@@ -269,6 +269,15 @@ These articles on indexing are worth knowing as an AL developer:
 
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
+### Using data audit fields to only read recent data
+Every table in Business Central includes the following two system fields, which can be used for filtering records:
+- SystemCreatedAt
+- SystemModifiedAt
+
+One example is to use the system field SystemModifiedAt to implement delta reads.
+
+Read more about system fields here: [System Fields](../developer/devenv-table-system-fields.md)  
+
 ### SumIndexField Technology (SIFT)
 
 SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. 
