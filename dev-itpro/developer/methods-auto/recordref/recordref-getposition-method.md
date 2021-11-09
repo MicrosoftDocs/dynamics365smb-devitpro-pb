@@ -3,7 +3,7 @@ title: "RecordRef.GetPosition([Boolean]) Method"
 description: "Gets a string that contains the primary key of the current record."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/03/2021
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
