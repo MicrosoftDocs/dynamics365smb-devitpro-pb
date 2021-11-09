@@ -4,7 +4,7 @@ description: Create and display actions in the ribbon of all pages and group the
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/05/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -117,10 +117,37 @@ page 50110 PageName
 > [!NOTE]  
 > Actions can be assigned to a page by setting the RunObject property, or by adding a trigger to a Codeunit. For more information, see [RunObject Property](properties/devenv-runobject-property.md) and [Codeunit Triggers](triggers-auto/codeunit/devenv-onrun-codeunit-trigger.md).  
 
-The promoted action menus are always displayed first so the promoted actions provide quick access to common tasks, and users do not have to browse through a menu to access them. Add the Promoted property to add actions to the a promoted action menu. For more information on how to add promoted actions, promoted categories, and examples, see [Promoted Actions](devenv-promoted-actions.md). 
+The promoted action menus are always displayed first so the promoted actions provide quick access to common tasks, and users don't have to browse through a menu to access them. Add the Promoted property to add actions to the promoted action menu. For more information on how to add promoted actions, promoted categories, and examples, see [Promoted Actions](devenv-promoted-actions.md). 
   
 You can assign different icons for your actions from the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] image library. For more information, see [Image Property](properties/devenv-image-property.md). 
-  
+
+## Set up a keyboard shortcut on an action
+
+You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Pressing the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut Shift+Ctrl+D to an action:
+
+```AL
+action(DoThisAction)
+{
+    ApplicationArea = All;
+    ShortCutKey = 'Shift+Ctrl+D';
+
+    trigger OnAction()
+    var
+    begin
+        DoThis();
+    end;
+}
+```
+
+To help you design shortcuts, keep the following information in mind:
+
+- Some shortcuts have default assignments, either defined by the platform or in the base application. Don't reuse shortcuts that are already assigned for different purposes. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](/dynamics365/business-central/keyboard-shortcuts). Try to be consistent with shortcuts used across pages, reusing shortcuts for similar actions. 
+- Web browsers also support a set of default shortcuts. The shortcuts that you set with the `ShortCutKey` property take precedence and will override the similar shortcuts of the web browser. 
+- You can also set up shortcuts on actions of pages contained in parts of the main page. In this case, the shortcuts only work when the user has focus on the part that contains the page. Consider the following behavior when a user presses a shortcut while a page part's in focus:
+
+  - If a shortcut's not defined on the page in the focused part but *is* defined on the main page, the main page's action will be triggered.
+  - If a shortcut's defined on the page in the focused part and the main page, the focused part's action is triggered. Shortcut's defined in the part take precedence.  
+
 ## See Also  
 [Actions Overview](devenv-actions-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
