@@ -28,7 +28,8 @@ An isolated event ensures that the event publisher continues its code execution 
 Implement isolated events by separating each event subscriber in their own isolated transaction, which is created and committed before and after invoking an event subscriber. Read-only transactions are allowed to call isolated events directly but write transactions must explicitly be committed before invoking an isolated event. The folling diagram illustrates the flow.
 
 :::image type="content" source="media/isolated-events-flow.png" alt-text="Flow diagram of isolated events." border="false":::
-
+    When an event is raised, the platform gets the first event subscriber. If the event is an isolated event, the transaction starts, then the event subscriber is invoked. Otherwise, the event subscriber is invoked immediately.    
+:::image-end:::
 
 ## See Also
 
