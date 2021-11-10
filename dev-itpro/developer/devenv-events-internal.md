@@ -25,9 +25,9 @@ An isolated event ensures that the event publisher continues its code execution 
 > [!NOTE]
 > Only changes done to tables that have the `TableType: Normal` will be automatically rolled back. Other state changes, like HTTP calls, changes to single instance codeunit's members, and so on, won't be rolled back. 
 
-Implement isolated events by separating each event subscriber in their own isolated transaction, which is created and committed before and after invoking an event subscriber. Read-only transactions are allowed to call isolated events directly but write transactions must explicitly be committed before invoking an isolated event.
+Implement isolated events by separating each event subscriber in their own isolated transaction, which is created and committed before and after invoking an event subscriber. Read-only transactions are allowed to call isolated events directly but write transactions must explicitly be committed before invoking an isolated event. The folling diagram illustrates the flow.
 
-
+:::image type="content" source="media/isolated-events-flow.png" alt-text="Flow diagram of isolated events." border="false":::
 
 
 ## See Also
