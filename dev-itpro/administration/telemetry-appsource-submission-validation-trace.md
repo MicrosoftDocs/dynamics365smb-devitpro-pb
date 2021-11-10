@@ -30,15 +30,16 @@ The validation process starts when you publish the app. The validation runs agai
 Extensions are validated using the AL compiler and the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md). Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all trace related to the submission. The general flow for the validation process is illustrated below:
 
 1. AppSource submission validation request started
-2. Version (X), country-region (X) validation started
-3. Extension (X) validation started
-4. Validation diagnostic reported for each error that occurs.
-5. Extension (X) validation completed (successfully or with failures)
-6. *Repeat 3-5 for each extension in the submission*
-7. Version (X), country-region (X) validation completed (successfully or with failures)
-8. *Repeat 2-7 for other country-regions for the Business Central release (X)*
-9. *Repeat 2-8 for other Business Central releases targeted by the submission*
-10. AppSource submission validation request completed (successfully or with failures)
+2. Validation diagnostic reported for information, warnings, or errors that occur on the submission
+3. Version (X), country-region (X) validation started
+4. Extension (X) validation started
+5. Validation diagnostic reported for each error that occurs.
+6. Extension (X) validation completed (successfully or with failures)
+7. *Repeat 3-5 for each extension in the submission*
+8. Version (X), country-region (X) validation completed (successfully or with failures)
+9. *Repeat 2-7 for other country-regions for the Business Central release (X)*
+10. *Repeat 2-8 for other Business Central releases targeted by the submission*
+11. AppSource submission validation request completed (successfully or with failures)
 
 To reduce the risk of failing the AppSource validation process, review the [technical validation](https://aka.ms/CheckBeforeYouSubmit) checklist before you submit an app.
 
@@ -51,7 +52,6 @@ Occurs when an app is published from Partner Center. For more information about 
 |Dimension|Description or value|
 |---------|-----|
 |message|**AppSource submission validation request started: {validationRequestId}**|
-|severityLevel|**1**|
 
 ### Custom dimensions
 
@@ -75,6 +75,28 @@ The following table explains other custom dimensions that are common to all AppS
 |---------|-----|
 |validationRequestId|Specifies the unique identifier assigned to the app submission validation process. All traces for the submission validation will include this ID.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+
+## <a name="submissionrequestdiagnostic"></a>Diagnostic reported on AppSource submission validation request
+
+Occurs during the submission validation request to report diagnostics related to the submission itself. For example, it could be that a submission has duplicate apps, or it doesn't target any Business Central release. This signal isn't necessarily an error, but can also be warning or information. This signal differs from other diagnostic signals like `LC0034`, which are reported during the compilation of one app for one country/release.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Diagnostic reported on AppSource submission validation request: {validationRequestId}**|
+|severityLevel|**1** for information, **2** for warning, **3** for error|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0038**|
+|diagnosticCode|Specifies the diagnostic identifier, like AS0001 or AL0001.|
+|diagnosticMessage|Specifies the diagnostic message.|
+|diagnosticSeverity|**Info**, **Warning**, or **Error**. Matches the `severityLevel`. |
+|[See common custom dimensions](#other)||
 
 ## <a name="versioncountrystarted"></a>(Version, country-region) validation started
 
@@ -132,7 +154,6 @@ Occurs when the validation for a specific extension the submission has started.
 <!--
 {"version":"18.0","telemetrySchemaVersion":"0.1","validationRequestId":"c388ec8f-9b4a-40c3-a572-51af0722574a","extensionPublisher":"AppSource Publisher","extensionVersion":"1.0.0.0","countryRegion":"DK","extensionName":"AppSource Extension","eventId":"LC0032","extensionId":"1b8f9e14-dfc1-48c7-a8cb-d2223aa3c122","severity":"Information"}
 -->
-
 
 ## <a name="validationdiagnosticreported"></a>Validation diagnostic reported
 
@@ -334,6 +355,7 @@ Occurs when the submission validation process has fully completed, but errors oc
 <!--
 {"telemetrySchemaVersion":"0.1","eventId":"LC0035","validationRequestId":"e31b8fb1-f790-457f-8a07-f3ae9bc411b2","severity":"Error","failureReason":"One  more extension validation tasks have failed.","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","countryRegions":"[\r\n \"DK\",\r\n \"US\"\r\n]","versions":"[\r\n \"19.0\"\r\n]"}
 -->
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
