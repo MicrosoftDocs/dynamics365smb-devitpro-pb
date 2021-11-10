@@ -36,12 +36,12 @@ The following table describes the user and workspace settings for the AL Languag
 |Incognito|Specifies whether to open the browser in Incognito/InPrivate mode when launching the application from Visual Studio Code. This option will take effect only if the **Browser** option is set to a non-default value.|
 |Incremental Build| Specifies whether a project, when it is built using **Ctrl+Shift+B**, **Ctrl+F5**, or **F5**, will reuse the last known tracked compilation which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` will not do an end-to-end build, as it is depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`. <br> **Important:** If this setting is enabled then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).|
 |Package Cache Path|Sets the directory path where reference symbol packages are located.|
+|Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
-|Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
 |Statement Lens Minimum|Sets the lower limit for time spent on statement execution. Syntax is `al.statementLensMin`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
-|Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`.|
+|Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
 
 ## See Also
 
