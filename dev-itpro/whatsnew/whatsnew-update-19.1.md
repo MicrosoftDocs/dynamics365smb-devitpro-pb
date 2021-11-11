@@ -49,7 +49,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Business Central Office Hours Calls in November**  
-Make sure to join the office hours call around 'Improvements to data synchronization to Dataverse and Dynamics 365 Sales' on November 9 and 'Can Business Central Online (SaaS) handle large customers?' on November 30. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
+Make sure to watch the recording of the office hours call on 'Improvements to data synchronization to Dataverse and Dynamics 365 Sales' on November 9 and join the office hours call around 'Can Business Central online (SaaS) handle large customers?' on November 30. Register and stay tuned for the upcoming calls: https://aka.ms/BCOfficeHours.
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
