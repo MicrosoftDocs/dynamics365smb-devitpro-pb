@@ -3,7 +3,7 @@ title: "Enum.Ordinals() Method"
 description: "Gets the ordinal numbers/ID's for the values"
 ms.author: solsen
 ms.custom: na
-ms.date: 09/13/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
