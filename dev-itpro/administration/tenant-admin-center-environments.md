@@ -107,7 +107,7 @@ When the process starts, you can go to the list of your environments and see the
 To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, direct members of that Azure AD group will be synchronized to Business Central and granted access to that environment. Using Azure AD groups brings the following benefits:
 
 - Central management of access to environments through Azure AD groups.  
-- Only the users in the assigned Azure AD group can login into the environment.
+- Only the users in the assigned Azure AD group can sign in to the environment.
 
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
 
