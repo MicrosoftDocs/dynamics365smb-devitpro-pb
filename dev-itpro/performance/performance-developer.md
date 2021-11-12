@@ -56,7 +56,7 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
 
-### Endpoint performance  
+### Endpoint performance
 
 #### Anti-patterns (don't do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
@@ -84,11 +84,10 @@ Don't insert child records belonging to same parent in parallel. This condition 
 
 - Use OData transaction $batch requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
 
-### Web service client performance 
+### How to handle large volumes of web service calls
+When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that hosts the web service endpoints being called. To ensure that excessive traffic can't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
 
-The online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic can't cause stability and performance issues.
-
-Make sure that your client respects the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
+Make sure that your external application can handle the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
 - Handling status code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
 
@@ -98,6 +97,8 @@ Make sure that your client respects the two HTTP status codes *429 (Too Many Req
     - Randomization
 
 - Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
+
+- If an external application that calls web service endpoints on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not handle handle results of type  *429 (Too Many Requests)* and *504 (Gateway Timeout)*, you might want to provide a middleware layer that sits between the application and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If this middleware layer handles retry logic and cool off and does not lose incoming requests, then it is possible to get to a stable system that can handle peaks in traffic and still make sure that the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is responsive and performant. Azure Service Bus (https://azure.microsoft.com/en-us/services/service-bus/) is an example of a technology that can be used for such a middleware layer.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
 
