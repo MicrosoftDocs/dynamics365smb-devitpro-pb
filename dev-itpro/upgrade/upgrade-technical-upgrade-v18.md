@@ -21,9 +21,17 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 
  ![Upgrade on customized Business Central application.](../developer/media/18-technical-upgrade.png "Upgrade on customize Business Central application")   
 
-#### Single-tenant and multitenant deployments
+## Before you begin
+
+Review the information in this section before you start upgrading your deployment.
+
+### Single-tenant and multitenant deployments
 
 The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+
+### Prepare new runtime packages
+
+[!INCLUDE[upgrade_runtime_packages](../developer/includes/upgrade_runtime_packages.md)] 
 
 ## Task 1: Install version 18
 
@@ -228,6 +236,8 @@ Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System
 ## Task 8: Recompile published extensions
 
 Compile all published extensions against the new platform.
+
+[!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
 1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 

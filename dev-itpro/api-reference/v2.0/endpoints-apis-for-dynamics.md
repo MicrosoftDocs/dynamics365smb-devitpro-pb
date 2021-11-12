@@ -22,18 +22,18 @@ ms.author: solsen
 Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Creating your integration through an API provides simple access to the supported functionality in a single endpoint, giving you a simplified experience for creating a single app with integrations across multiple Microsoft products.
 
 > [!IMPORTANT]  
-> With the introduction of multiple endpoints, the name of the environment being connected to, needs to go into the URI. To retrieve a list of environments deployed on the tenant, call:
+> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)] environments, the name of the environment being connected to, needs to go into the URI. To retrieve a list of environments deployed on the tenant, call:
 `GET https://api.businesscentral.dynamics.com/environments/v2.0/`.
 
 ### [!INCLUDE[prod_short](../../includes/prod_short.md)]
 
 |**Means of connection**|**Microsoft Graph**|**Common endpoint service**|**Direct tenant**|
 |--|--|--|--|
-|**Usage**|Production|Production|Rapid development and testing only|
-|**Endpoint**|`https://`<br>`graph.microsoft.com`<br>`/beta/financials/`| *With multiple environments (v2.0):*<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/<environment name>/api/v2.0`  <br>Environment can be a named sandbox or production environment.<br><br> *Without environment (v2.0):* <br>  `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/api/v2.0` <br><br>Sandbox:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/sandbox/api/v2.0`  | *With multiple environments (v2.0):*  <br>`https://`<br>`api.businesscentral.dynamics.com/`<br>`v2.0/<user domain name>/<environment name>/api/v2.0`<br>Environment can be a named sandbox or production environment. <br><br>*Without multiple environments (v2.0):*<br>`https://`<br>`api.businesscentral.dynamics.com/`<br>`v1.0/<user domain name>/api/v2.0`<br>  Example: `https://`<br>`api.businesscentral.dynamics.com/`<br> `v1.0/cronus.com/api/v2.0` <br><br> Sandbox:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/cronus.com/sandbox/api/v2.0`|
+|**Usage**|Production|Production|Production|
+|**Endpoint**|`https://`<br>`graph.microsoft.com`<br>`/beta/financials/`| `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/<environment name>/api/v2.0`  <br><br>  Example:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0//production/api/v2.0` |`https://`<br>`api.businesscentral.dynamics.com/`<br>`v2.0/<user domain name>/<environment name>/api/v2.0`<br><br> Example:<br> `https://`<br>`api.businesscentral.dynamics.com/`<br> `v2.0/cronus.com/sandbox/api/v2.0`|
 |**Availability**|Always enabled|Always enabled|Always enabled|
-|**Authentication**|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|Basic authentication.<br> Username and [web service<br> access key](../../developer/devenv-develop-connect-apps.md) as password.|
-|**API/Data access**|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|-|
+|**Authentication**|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|Azure Active Directory<br> (AAD)|
+|**API/Data access**|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|
 |**API update cycle**|Monthly|Monthly|Monthly|
 |**Development instance**|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|Sign up for a [tenant](https://go.microsoft.com/fwlink/?linkid=847861)|
 

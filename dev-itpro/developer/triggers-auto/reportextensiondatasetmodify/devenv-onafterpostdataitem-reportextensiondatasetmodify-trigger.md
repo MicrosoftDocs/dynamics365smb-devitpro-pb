@@ -33,6 +33,24 @@ end;
 
 ## Remarks
 
+This trigger can be called inside a `modify` section, as shown in this pseudo-code:
+
+```al
+reportextension 50111 MyExtension extends "Customer - List"
+{
+    dataset
+    {
+        modify(Customer)
+        {
+            trigger OnAfterPostDataItem()
+            begin
+                // Do some changes here
+            end;
+        }
+    }
+...
+```
+
 Use this trigger to perform any cleanup or post processing needed after a data item is processed. The base object trigger is run before this trigger. For more information, see [OnPostDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md)..  
 
 

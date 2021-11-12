@@ -104,15 +104,13 @@ When the process starts, you can go to the list of your environments and see the
 
 ## Manage access using Azure Active Directory groups
 
-To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, direct members of that Azure AD group will be synchronized to Business Central and granted access to that environment. Using Azure AD groups brings the following benefits:
-
-- Central management of access to environments through Azure AD groups.  
-- Only the users in the assigned Azure AD group can sign in to the environment.
+To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Azure AD will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
 
 > [!NOTE]
-> The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group. 
+> The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group.
+ 
 ### Assign, change, or remove a group
 
 Before you can assign an Azure AD group to an environment, the group must be created in your Azure AD tenant. For more information, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
