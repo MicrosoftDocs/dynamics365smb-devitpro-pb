@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Don't do this step on extensions published as runtime packages. Create new versions of the runtime packages instead. For more information, see [Creating Runtime Packages for Business Central On-Premises](../devenv-creating-runtime-packages.md).

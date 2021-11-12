@@ -33,6 +33,24 @@ end;
 
 ## Remarks
 
+This trigger can be called inside a `modify` section, as shown in this pseudo-code:
+
+```al
+reportextension 50111 MyExtension extends "Customer - List"
+{
+    dataset
+    {
+        modify(Customer)
+        {
+            trigger OnAfterAfterGetRecord()
+            begin
+                // Do some changes here
+            end;
+        }
+    }
+...
+```
+
 Use this trigger to perform any processing that is needed, based on the values in the fields of the individual records of a data item. The base object trigger is run before this trigger. For more information, see [OnAfterGetRecord (Report Data Item) Trigger](../reportdataitem/devenv-onaftergetrecord-reportdataitem-trigger.md). 
 
 ## See Also  

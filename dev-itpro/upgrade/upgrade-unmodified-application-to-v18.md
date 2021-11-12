@@ -23,9 +23,17 @@ Use this scenario if you have one of the following versions that uses the Micros
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
-#### Single-tenant and multitenant deployments
+## Before you begin
+
+Review the information in this section before you start upgrading your deployment.
+
+### Single-tenant and multitenant deployments
 
 The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+
+### Prepare new runtime packages
+
+[!INCLUDE[upgrade_runtime_packages](../developer/includes/upgrade_runtime_packages.md)]
 
 ## Task 1: Install version 18
 
@@ -259,6 +267,8 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
 6. Recompile extensions not build on version 18.
+
+    [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
     Do this step for any published extension versions that aren't built on version 18, and you want to reinstall on tenants. These extensions must be recompiled to work with version 18. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
