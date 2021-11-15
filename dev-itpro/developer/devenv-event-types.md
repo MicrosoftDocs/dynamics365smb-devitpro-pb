@@ -116,7 +116,7 @@ The following table describes the parameters of the trigger events:
 |*Rec*|Record|The table that raises the event.|  
 |*xRec*|Record|The table that raises the event.|  
 |*RunTrigger*|Boolean|Specifies whether to execute the code in the event trigger when it is invoked. If this parameter is true, the code will be executed. If this parameter is false, then the code is not executed.|  
-|*CurrentFieldNo*|Integer|The number of the field that raises the event.|  
+|*CurrFieldNo*|Integer|The number of the field that raises the event.|  
   
 #### Order of Event Execution
   
