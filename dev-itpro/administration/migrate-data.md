@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 10/01/2021
+ms.date: 11/03/2021
 ms.author: edupont
 
 ---
@@ -48,6 +48,9 @@ Data is migrated table by table, and success and failures are tracked for each t
 
 The initial data migration time can vary depending on factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial migration will take the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated, so each iteration runs more quickly. You do not need to run the migration process more than once if you don't want to. However, if you are running the migration while users are still using the on-premises system, you must run at least one more migration in order to ensure all data was moved to the cloud before you start transacting in [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
+> [!IMPORTANT]
+> [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
+
 ## Best practices
 
 This section provides best practices and recommendations for migrating to the cloud.  
@@ -77,7 +80,11 @@ This section provides best practices and recommendations for migrating to the cl
 
     There are no firm limits on the size of the database, the number of daily transactions, or the number of users that can migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online. You can use diagnostics tools and analyzers to help you troubleshoot, for example. For more information, see [Managing Technical Support](manage-technical-support.md).
 
-* Configuring the cloud environment will have no impact on any users or data in your on-premises solution.
+* Configuring the cloud environment will have no impact on any users or data in your on-premises solution.  
+
+* [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]  
+
+* [!INCLUDE [bc-cloud-migrate-upgrade](../includes/bc-cloud-migrate-upgrade.md)]  
 
 To begin configuring the connection, navigate to the assisted setup page and launch the **Set up Cloud Migration** assisted setup guide.  
 
