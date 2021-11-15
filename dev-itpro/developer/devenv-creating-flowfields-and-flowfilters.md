@@ -1,6 +1,6 @@
 ---
 title: Create FlowFields and FlowFilters
-description: FlowFields and FlowFilters are used to display the result of the calculation described in the CalcFormula property. 
+description: Examples of FlowFields and FlowFilters that are used to display the result of the calculation described in the CalcFormula property. 
 author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.reviewer: na
