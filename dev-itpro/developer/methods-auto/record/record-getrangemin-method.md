@@ -41,6 +41,11 @@ The field for which you want to find the minimum value.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+An error is thrown if there is no filter on the specified field.
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

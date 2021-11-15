@@ -94,7 +94,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
         now: DotNet MyDateTime;
     begin
         now := now.UtcNow();
-        Message('Hello, world! It is: ' + now.ToString());
+        Message('Hello, world! It is: %1 ' + now.ToString());
     end;
 }
 ```
