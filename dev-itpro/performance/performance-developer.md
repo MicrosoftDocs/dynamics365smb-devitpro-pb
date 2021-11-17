@@ -56,7 +56,7 @@ For more information about Page Background Tasks, see [Page Background Tasks](..
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
 
-### Endpoint performance  
+### Endpoint performance
 
 #### Anti-patterns (don't do this)
 Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
@@ -73,10 +73,12 @@ Don't use temp tables as a source if you have many records. Temp tables that are
 
 Don't insert child records belonging to same parent in parallel. This condition causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
+Do not use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+
 #### Performance patterns (do this)
 - Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-- The choice of protocol for the endpoint can have a significant impact on performance. Favor OData version 4 for the fastest performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+- The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It is possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 - For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
 
@@ -84,11 +86,10 @@ Don't insert child records belonging to same parent in parallel. This condition 
 
 - Use OData transaction $batch requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
 
-### Web service client performance 
+### How to handle large volumes of web service calls
+When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
 
-The online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints to ensure that excessive traffic can't cause stability and performance issues.
-
-Make sure that your client respects the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
+Make sure that your external application can handle the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
 - Handling status code 429 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
 
