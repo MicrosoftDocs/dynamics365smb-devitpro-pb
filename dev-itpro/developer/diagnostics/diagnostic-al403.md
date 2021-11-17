@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 To modify '{0}' you must add at least one property or trigger.
 
+## Description
+To modify a field, you must add at least one property or trigger inside the `modify` control.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

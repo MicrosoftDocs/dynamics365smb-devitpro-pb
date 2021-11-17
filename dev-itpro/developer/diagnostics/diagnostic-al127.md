@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Member '{0}' cannot be used like a method.
 
+## Description
+The referenced member cannot be invoked like a method.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The view name '{0}' is not valid.
 
+## Description
+The name of a view cannot be empty or a whitespace.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

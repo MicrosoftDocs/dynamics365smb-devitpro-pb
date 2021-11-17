@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The signature of procedure '{0}' does not match the signature required by attribute '{1}'. The expected signature is: {2}.
 
+## Description
+The parameter count of the procedure where the attribute is set does not match the signature required by attribute. For more information about the required signature, see the attribute's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

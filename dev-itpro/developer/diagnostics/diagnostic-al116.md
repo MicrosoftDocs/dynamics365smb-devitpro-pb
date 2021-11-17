@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Invalid value for '{0}'. Allowed values are '{1}'.
 
+## Description
+The value defined for the property is not valid. Refer to the property's documentation to see the allowed values.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

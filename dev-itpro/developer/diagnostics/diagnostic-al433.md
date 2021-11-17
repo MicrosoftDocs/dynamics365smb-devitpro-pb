@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 {0} '{1}' is removed. {2}.
 
+## Description
+The referenced object is obsolete.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

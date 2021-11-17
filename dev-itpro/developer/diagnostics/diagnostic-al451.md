@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 An assembly named '{0}' could not be found in the assembly probing paths '{1}'.
 
+## Description
+The referenced assembly could not be found in the assembly probing paths. You must add the path of the folder containing the assembly to the Al: Assembly Probing Paths setting on the User Settings or Workspace Settings so the compiler can access it.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

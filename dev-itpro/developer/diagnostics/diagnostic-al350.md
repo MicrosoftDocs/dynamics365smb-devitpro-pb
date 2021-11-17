@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The column '{0}' cannot be used multiple times when defining the order of the resulting dataset.
 
+## Description
+A column cannot be used multiple times when defining the order of the resulting dataset. It can only be selected once the order of the resulting dataset of the query is defined. The selected duplicate columns must be deleted.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

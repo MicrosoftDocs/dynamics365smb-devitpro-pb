@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The signature of procedure '{0}' does not match the signature required by attribute '{1}': return value is expected to be of type '{2}' but found type '{3}'. The expected signature is: {4}.
 
+## Description
+The return value of the procedure where the attribute is set does not match the signature required by attribute. For more information about the required signature, see the attribute's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

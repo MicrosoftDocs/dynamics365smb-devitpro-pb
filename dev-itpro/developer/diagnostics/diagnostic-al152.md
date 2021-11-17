@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The value '{0}' is used more than once.
 
+## Description
+There is a duplicate option value.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

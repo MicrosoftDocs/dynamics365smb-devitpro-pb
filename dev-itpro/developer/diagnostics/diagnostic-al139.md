@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Since '{0}' doesn't have a return value, EXIT cannot be called with a value.
 
+## Description
+EXIT cannot be called with a value inside a procedure that doesn't have a return value.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

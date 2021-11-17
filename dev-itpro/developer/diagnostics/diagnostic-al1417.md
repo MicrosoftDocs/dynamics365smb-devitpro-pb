@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing. '{1}' is added at a default location instead.
 
+## Description
+The anchor of an add (action or view) cannot be resolved because its declaring extension is not installed anymore. The elements are added into a default location.   
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

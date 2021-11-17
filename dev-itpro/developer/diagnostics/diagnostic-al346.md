@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The methods '{0}' can only be used on Columns that have a Date or DateTime type.
 
+## Description
+The **Method** property can only have the property values Day, Month and Year when used on Columns of the type Date or DateTime.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

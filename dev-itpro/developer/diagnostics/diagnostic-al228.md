@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 A field group with ID {0} is already defined.
 
+## Description
+Multiple field groups with the same ID are defined in the same object.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The link '{0}' can only contain one placeholder with value 0 for the user locale. No other placeholder values are allowed.
 
+## Description
+A help URL can only contain one placeholder for the user locale, which must have the value 0.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
