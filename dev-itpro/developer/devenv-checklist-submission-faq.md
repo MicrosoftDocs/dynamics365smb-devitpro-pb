@@ -54,7 +54,7 @@ You are only required to include the dependencies for your extension as part of 
 
 If you did not include the dependencies for your app and they are not available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, it means that you have already published another .app file for this extension to Business Central as part of a previous submission. If this version of the extension is already available for all countries targeted by your submission, you can just remove the extension from the library. If you are making your libraries available in new countries, you should use the .app file that has already been uploaded to Business Central or increase the version number in the manifest of the extension (the app.json file).
+If you receive an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you have already published another .app file for this extension to Business Central as part of a previous submission. If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you are making your library available in new countries, you should use the .app file that has already been uploaded to Business Central or increase the version number in the manifest of the extension (the app.json file).
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
@@ -62,7 +62,7 @@ At this stage, your extensions are validated to assess whether they meet the req
 
 If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
 
-If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of libraries submitted. For more information, see "When should I include my library apps as part of my submission?".
+If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
 
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
