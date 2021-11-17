@@ -68,9 +68,9 @@ If this stage failed with the following error message `Automated validation of t
 
 ### My app failed at the "Certification" stage, what do I do next?
 
-At this stage, your extensions are validated to assess whether they meet the requirements defined in the [Marketing Validation Checklist](eadiness/readiness-checklist-marketing.md).
+At this stage, your extensions are validated to assess whether they meet the requirements defined in the [Marketing Validation Checklist](readiness/readiness-checklist-marketing.md).
 
-Review the Marketing requirements and the [Marketing Validation FAQ](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-marketing-validation-faq) in order to fix the errors reported.
+Review the Marketing requirements and the [Marketing Validation FAQ](readiness/readiness-marketing-validation-faq.md) in order to fix the errors reported.
 
 ### My app failed at the "Publish application with the service" stage, what do I do next?
 
