@@ -1,5 +1,5 @@
 ---
-title: "Technical Validation Checklist FAQ"
+title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
@@ -11,7 +11,7 @@ ms.service: "dynamics365-business-central"
 ms.author: qutreson
 ---
 
-# Technical Validation Checklist FAQ
+# Technical Validation FAQ
 
 This topic addresses some of the most frequently asked questions around validation of apps for AppSource submission.
 
@@ -46,19 +46,41 @@ Shortly after the offer publishing process has been completed in Partner Center,
 
 Business Central currently does not support installing offers at the "Preview creation" step.
 
-### My app failed at the 'Automated application validation' stage, what do I do next?
+### When should I include my library apps as part of my submission?
+
+You are not required to always include the dependencies of your extension as part of your submission.
+
+You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md) if they are available. 
+
+If you did not include the dependencies for your app and they are not available, your submission will fail during the "Automated Application Validation". Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
+
+If you receive an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, it means that you have already published to Business Central another .app file for this extension as part of a previous submission. If this version of the extension is already available for all countries targeted by your submission, you can just remove the extension from the library. If you are making your libraries available in new countries, you should increase the version number in the manifest of the extension (app.json).
+
+### My app failed at the "Automated application validation" stage, what do I do next?
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
 If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
 
+If this stage failed with an error message similar to `TODO(qutreson)`, you must update the list of libraries submitted. For more information, see "When should I include my library apps as part of my submission?".
+
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
-### My app failed at the 'Publish application with the service' stage, what do I do next?
+### My app failed at the "Certification" stage, what do I do next?
+
+At this stage, your extensions are validated to assess whether they meet the requirements defined in the [Marketing Validation Checklist](eadiness/readiness-checklist-marketing.md).
+
+Review the Marketing requirements and the [Marketing Validation FAQ](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/readiness/readiness-marketing-validation-faq) in order to fix the errors reported.
+
+### My app failed at the "Publish application with the service" stage, what do I do next?
 
 At this stage, your extensions are being published to Business Central.
 
 If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
+
+### My app failed at another stage, what do I do next?
+
+If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
 
 ## Questions about code-signing validation
 

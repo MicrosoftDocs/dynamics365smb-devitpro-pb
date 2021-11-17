@@ -16,7 +16,7 @@ ms.author: freddyk
 Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 > [!TIP]  
-> If you have questions around validation for your app, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
+> If you have questions around validation for your app, see [Technical Validation FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
 
 ## Technical Validation Checklist
 
@@ -71,7 +71,7 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them, or are making these libraries available in new countries. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md) if they are available.
+> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md) if they are available. If you are making your libraries available in new countries, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
