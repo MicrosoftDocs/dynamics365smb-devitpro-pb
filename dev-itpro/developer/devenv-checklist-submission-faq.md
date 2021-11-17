@@ -52,9 +52,9 @@ You are not required to always include the dependencies of your extension as par
 
 You are only required to include the dependencies for your extension as part of your submission if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md) if they are available. 
 
-If you did not include the dependencies for your app and they are not available, your submission will fail during the "Automated Application Validation". Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
+If you did not include the dependencies for your app and they are not available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, it means that you have already published another .app file for this extension to Business Central as part of a previous submission. If this version of the extension is already available for all countries targeted by your submission, you can just remove the extension from the library. If you are making your libraries available in new countries, you should increase the version number in the manifest of the extension (app.json).
+If you receive an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, it means that you have already published another .app file for this extension to Business Central as part of a previous submission. If this version of the extension is already available for all countries targeted by your submission, you can just remove the extension from the library. If you are making your libraries available in new countries, you should increase the version number in the manifest of the extension (the app.json file).
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
