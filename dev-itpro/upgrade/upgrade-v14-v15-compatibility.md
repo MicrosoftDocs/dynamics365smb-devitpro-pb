@@ -58,7 +58,7 @@ The following table lists the Business Central 14 versions and the minimum 15, 1
 |[14.27 (cumulative update 26)](https://support.microsoft.com/help/5005370)|None|[16.16](https://support.microsoft.com/help/5006074)|[17.10](https://support.microsoft.com/help/5006075)|[18.5](https://support.microsoft.com/help/5006076)|19.0|
 |[14.28 (cumulative update 27)](https://support.microsoft.com/help/5006072)|None|[16.17](https://support.microsoft.com/help/5007024)|[17.11](https://support.microsoft.com/help/5007025)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
 |[14.29 (cumulative update 28)](https://support.microsoft.com/help/5007023)|None|16.18|[17.12](https://support.microsoft.com/help/5007777)|[18.7](https://support.microsoft.com/help/5007778)|19.1 (not yet available)|
-|[14.30 (cumulative update 29)](https://support.microsoft.com/help/5007023)<sup>[\[1\]](#1)</sup>|None|None|17.13|18.8|19.2|
+|[14.30 (cumulative update 29)](https://support.microsoft.com/help/5007776)<sup>[\[1\]](#1)</sup>|None|None|17.13|18.8|19.2|
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later). 
 
