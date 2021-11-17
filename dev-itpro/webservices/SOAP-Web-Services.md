@@ -11,8 +11,12 @@ ms.service: "dynamics365-business-central"
 # SOAP Web Services
 SOAP web services enable full flexibility for building operation-centric services. They provide industry-standard interoperability and channel and host pluggability.  
   
- You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
-  
+You can use SOAP to interact with page or codeunit web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] .  
+
+> [!NOTE]  
+> Support for the SOAP protocol is being deprecated in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and will be removed in the future. Start planning to move your solutions to use either OData or APIs pages/queries.
+
+
 |To|See|  
 |--------|---------|  
 |Review the different options for creating URIs to interact with SOAP web services.|[SOAP Web Service URIs](SOAP-Web-Service-URIs.md)|  
