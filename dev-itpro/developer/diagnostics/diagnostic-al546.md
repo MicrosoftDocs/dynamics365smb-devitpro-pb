@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The control '{0}' cannot be modified in a view context because views only support modifying controls defined in the Content area.
 
+## Description
+Views only support modifying controls defined in the Content area.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

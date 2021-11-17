@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The value of the property '{0}' cannot be empty.
 
+## Description
+The value of a property cannot be left empty, it must be specified.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The event subscriber '{0}' is missing a parameter of type '{1}'.
 
+## Description
+The event subscriber is missing a parameter  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

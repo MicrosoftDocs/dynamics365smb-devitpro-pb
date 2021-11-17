@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' is mandatory for objects of type API.
 
+## Description
+The properties **EntitySetName**, **EntityName**, **APIPublisher**, **APIGroup** must be set in page or query objects of the type API.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

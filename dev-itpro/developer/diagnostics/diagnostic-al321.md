@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Variable {0} cannot be included in the data set.
 
+## Description
+Only variables of the type BigInteger,Boolean, Char, Decimal, Integer, Option, Enum, Text and Code can be included in the data set.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

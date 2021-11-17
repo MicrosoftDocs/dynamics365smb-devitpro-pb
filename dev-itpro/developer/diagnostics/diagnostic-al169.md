@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The option value '{0}' is not valid.
 
+## Description
+Invalid option value.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Example

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Wrong signature. Correct signature for '{0}' is '{1}'.
 
+## Description
+The signature for the given trigger is wrong. For more information about the correct signature, refer to the trigger's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

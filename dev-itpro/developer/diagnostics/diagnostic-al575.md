@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 You cannot modify the {0} '{1}' because it is defined in the page customization '{2}'.
 
+## Description
+You cannot modify an element defined in a page customization.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

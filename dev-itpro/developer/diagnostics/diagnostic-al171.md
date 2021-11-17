@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The property value '{0}' on property '{1}' is not valid.
 
+## Description
+The specified property value is invalid. For more information, refer to the property's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 There is no argument given that corresponds to the required formal parameter '{0}' of '{1}'.
 
+## Description
+The referenced element is missing an argument for a required parameter.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

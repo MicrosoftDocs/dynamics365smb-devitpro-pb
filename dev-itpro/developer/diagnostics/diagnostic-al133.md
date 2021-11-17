@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Argument {0}: cannot convert from '{1}' to '{2}'.
 
+## Description
+The given argument has a type different from the one expected and cannot make the conversion.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

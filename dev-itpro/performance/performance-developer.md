@@ -100,9 +100,7 @@ Make sure that your external application can handle the two HTTP status codes *4
 
 - Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
 
-- If an external application that calls web service endpoints on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not handle handle results of type  *429 (Too Many Requests)* and *504 (Gateway Timeout)*, you might want to provide a middleware layer that sits between the application and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If this middleware layer handles retry logic and cool off and does not lose incoming requests, then it is possible to get to a stable system that can handle peaks in traffic and still make sure that the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment is responsive and performant. Azure Service Bus (https://azure.microsoft.com/en-us/services/service-bus/) is an example of a technology that can be used for such a middleware layer.
-
-Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](/dynamics-nav/api-reference/v1.0/dynamics-rate-limits).
+Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
 

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The label syntax is not correct. Please move the '{0}' to its designated attribute.
 
+## Description
+Use the correct label syntax as specified in [Label Syntax](../devenv-using-labels.md#label-syntax).  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 '{0}' is not a valid trigger.
 
+## Description
+The referenced trigger is not valid.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

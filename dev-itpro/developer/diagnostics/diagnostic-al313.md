@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Attribute {0} can only be used within {1}.
 
+## Description
+The referenced attribute cannot be set within such object. For more information about where the attribute is allowed in, refer to the attribute's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
