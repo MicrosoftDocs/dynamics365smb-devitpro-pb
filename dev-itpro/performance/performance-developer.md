@@ -85,7 +85,7 @@ Don't insert child records belonging to same parent in parallel. This condition 
 - Use OData transaction $batch requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
 
 ### How to handle large volumes of web service calls
-When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that hosts the web service endpoints being called. To ensure that excessive traffic can't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
+When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
 
 Make sure that your external application can handle the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
