@@ -77,6 +77,14 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |June 1, 2021 | Performance Toolkit |
 |June 15, 2021 | Working with Dimensions |
 |June 29, 2021 | DevOps Processes for Per Tenant Extensions | 
+|August 17, 2021 | Business Central apps in AppSource |
+|August 31, 2021 | Cloud Migration |
+|September 14, 2021 | How to use OAuth, when calling Business Central APIs and web services |
+|October 12, 2021 | Business Central apps in AppSource |
+|November 9, 2021 |  Improvements to data synchronization to Dataverse and Dynamics 365 Sales| 
+|November 30, 2021 | Can Business Central Online (SaaS) handle large customers?|
+|December 7, 2021 | Using telemetry to improve your partner practices and processes |
+|December 14, 2021 |  Performance Toolkit and Profiler| 
  
 **Business Central Localization Apps Office Hours Calls**  
 Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. Register for the calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
