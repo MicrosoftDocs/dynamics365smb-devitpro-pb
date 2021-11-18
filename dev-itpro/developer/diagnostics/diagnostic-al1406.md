@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The view '{0}' is not found in the target '{1}'.
 
+## Description
+Cannot resolve a reference to an view in a page extension or page customization.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

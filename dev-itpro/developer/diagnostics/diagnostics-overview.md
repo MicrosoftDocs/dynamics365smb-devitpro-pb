@@ -16,7 +16,6 @@ author: SusanneWindfeldPedersen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AL Compiler Diagnostics
 
-[!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 
 |Id|Description|Default Severity|

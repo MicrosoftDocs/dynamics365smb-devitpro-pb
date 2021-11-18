@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' is using the same name as a system-provided field and will shadow that field.
 
+## Description
+A field should use a different name from a system-provided field's name.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

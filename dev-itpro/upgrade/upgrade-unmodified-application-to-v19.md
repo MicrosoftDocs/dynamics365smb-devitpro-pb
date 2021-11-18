@@ -22,13 +22,18 @@ Use this scenario if you have one of the following versions that uses the Micros
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc19-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
 ## Before you begin
 
-Review the information in this section before you start upgrading your deployment.
+### Consider known issues
 
-### Single-tenant and multitenant deployments
+[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
-The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+<!--
+### Prepare for tables that have changed to temporary tables
+
+Starting with version 18, several base application tables are now temporary tables. This change may affect the upgrade from version 17 or earlier. For more information, see [Upgrading Base Application Tables That Have Changed to Temporary](upgrade-temporary-tables.md).-->
 
 ### Prepare new runtime packages
 

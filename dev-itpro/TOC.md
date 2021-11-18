@@ -27,7 +27,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Marketing Validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-#### [Technical Validation Checklist FAQ](developer/devenv-checklist-submission-faq.md)
+#### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Embed Apps
@@ -3542,6 +3542,7 @@
 #### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
 #### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
 #### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
+#### [2021 Release Wave 2 On-Premises Updates](deployment/update-versions-19.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)

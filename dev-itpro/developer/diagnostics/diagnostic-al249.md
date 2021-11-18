@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The Page '{0}' is not found.
 
+## Description
+The specified page is not found.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
