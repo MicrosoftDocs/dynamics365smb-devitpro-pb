@@ -87,6 +87,9 @@ The first step, and the largest step, is to create extensions for the customizat
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
 
+Also, be aware that in version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
+
+
 ## Task 4: Create empty System, Base, and customization extensions
 
 For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
