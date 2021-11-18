@@ -277,6 +277,15 @@ Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) incl
 
 One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
 
+### Non-clustered Columnstore Indexes (NCCI)
+Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes refered to as NCCIs) are supported on tables. 
+
+You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
+
+Read more about non-clustered columnstore indexes here:
+- [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property)
+- [Columnstore indexes overview](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/columnstore-indexes-overview)
+
 ### SumIndexField Technology (SIFT)
 
 SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. 
