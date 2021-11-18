@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The property 'DataItemLink' must be set.
 
+## Description
+The property 'DataItemLink' must be set for nested DataItems.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

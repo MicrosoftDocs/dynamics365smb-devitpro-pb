@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Attribute '{0}' is valid only for {1}.
 
+## Description
+The specified attirbute is not allowed on such element. For more information, refer to the attribute's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

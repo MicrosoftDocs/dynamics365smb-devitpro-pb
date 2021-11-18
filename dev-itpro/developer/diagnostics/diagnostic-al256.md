@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The flowfield '{0}' cannot be part of the keys for table '{1}'.
 
+## Description
+A FlowField cannot be part of the keys of a table.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

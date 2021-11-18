@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 '{0}' property is missing.
 
+## Description
+The referenced property is missing.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

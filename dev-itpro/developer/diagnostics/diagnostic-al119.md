@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The parameter name '{0}' is already defined.
 
+## Description
+Multiple parameters with the same name are defined.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

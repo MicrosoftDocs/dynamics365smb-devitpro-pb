@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The keys '{0}' and '{1}' have an identical list of fields.
 
+## Description
+Multiple keys have specified the same list of fields.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
