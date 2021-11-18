@@ -23,7 +23,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/413768-->
 
-> Applies to: 19.0
+> Applies to: Upgrade to 19.0
 
 ### Problem
 
@@ -39,10 +39,44 @@ System.PlatformNotSupportedException: Operation is not supported on this platfor
 
 Set the `UnknownSpnHint` setting in the navsettings.json file of [!INCLUDE[webserver](../developer/includes/webserver.md)] by following the guidelines at in [Configuring Business Central Web Server instance](../administration/configure-web-server.md#spn).
 
+
+## <a name="temptables"></a>Tables changed to temporary may prevent synchronizing new base application version
+
+> Applies to: Upgrade from version 17.X or earlier to any later version
+
+### Problem
+
+Starting in version 18, the following base application tables are now temporary tables, as specified by the [TableType property](../developer/properties/devenv-tabletype-property.md). Depending on how you're using these tables, this change may affect the upgrade from version 17 or earlier to a later version.
+
+|Table|File|
+|-----|----|
+|Table 49 "Invoice Post. Buffer"|InvoicePostBuffer.Table.al|
+|Table 265 "Document Entry"| DocumentEntry.Table.al|
+|Table 269 "G/L Account Net Change"|GLAccountNetChange.Table.al|
+|Table 338 "Entry Summary" |EntrySummary.Table.al|
+|Table 491 "Parallel Session Entry"|ParallelSessionEntry.Table.al|
+|Table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al |
+|Table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al|
+|Table 6305 "Power BI Chart Buffer"|PowerBIChartBuffer.Table.al|
+|Table 6302 "Power BI Report Buffer"|PowerBIReportBuffer.Table.al|
+|Table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al|
+
+### Impact
+
+With this change, these tables must be empty to complete the upgrade. If a table isn't empty, you can't synchronize the new version of the base application. In this case, you'll get an error stating that the table cannot be deleted from the database because it contains data, for example:
+
+`Cannot delete the Document Entry table from the database because it contains data.`
+
+So if there are records in these tables, or the application includes custom code that stores non-temporary records to these tables, you'll have to make some changes before you can run the upgrade.
+
+### Workaround 
+
+Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code thats stores the non-temporary records in these base application tables to use other tables.
+
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
 
-> Applies to: 18.0-18.2
+> Applies to: Upgrade to 18.0-18.2
 
 ### Problem
 
@@ -106,7 +140,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 ## NavUserPassword authentication performance after upgrade to version 18
 
-> Applies to: 18.X
+> Applies to: Upgrade to 18.X
 
 ### Problem
 
@@ -119,7 +153,7 @@ One solution is to activate the `EnableLegacyIterationCount` feature switch, as 
 ## Data upgrades fail because of missing $system fields in the Permission and Permission Set tables
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/400103 -->
 
-> Applies to: 18.0-18.1
+> Applies to: Upgrade to 18.0-18.1
 
 ### Problem
 
@@ -185,7 +219,7 @@ We recommend that use the latest update for the target version &mdash; at minimu
 ## <a name="keys"></a>Primary key mismatch between converted tables in local 14 versions and Microsoft Base Application
 <!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/387119 -->
 
-> Applies to: 14.18-14.x, 15.12-15.x, 16.7-16.x, 17.1-17.x
+> Applies to: Upgrade from 14.18-14.X to 15.12-15.X, 16.7-16.X, or 17.1-17.X
 
 ### Problem
 
@@ -199,7 +233,7 @@ The affected local versions and tables include:
 |NA|<ul><li>VAT Reg. No. Srv. Template</li><li>VAT Registration Log Details</li></ul>|
 
 > [!NOTE]
-> You don't experience this problem with table objects in other Microsoft extension because the primary keys are named `KEY1`.
+> You don't experience this problem with table objects in other Microsoft extensions because the primary keys are named `KEY1`.
 
 ### Impact
 
@@ -269,7 +303,7 @@ For each affected table object, do the following steps:
 
 <!--defect 363940 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/363940, 3666199 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/366199, 376391 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/376391-->
 
-> Applies to: 15.3-15.11, 16.0-16.4
+> Applies to: Upgrade to 15.3-15.11 and 16.0-16.4
 
 ### Problem
 
@@ -299,7 +333,7 @@ The issue occurs when synchronizing extensions. You'll get an error similar to o
 
 ## $systemModifiedAt fields in tables not populated during upgrade
 
-> Applies to: 14.0-14.x
+> Applies to: Upgrade from 14.0-14.X to 17.X
 
 ### Problem
 
@@ -315,7 +349,7 @@ Upgrade to version 15 or 16 before upgrading to version 17.
 
 ## Wrong .NET assemblies for external connected services
 
-> Applies to: 16.5
+> Applies to: Upgrade to 16.5
 
 ### Problem
 
@@ -354,7 +388,7 @@ There are two workarounds for this issue:
 
 ## Help Server for India preview missing files
 
-> Applies to: 17.x
+> Applies to: Upgrade to 17.X
 
 ### Problem
 
@@ -372,7 +406,7 @@ Install Help Server without the HTML files for local functionality, then pick up
 
 <!--Defect 377645 https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/377645 -->
 
-> Applies to: 17.0-17.1
+> Applies to: Upgrade to 17.0-17.1
 
 If a [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a multitenant instance, you can't manage the tenants by using the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
