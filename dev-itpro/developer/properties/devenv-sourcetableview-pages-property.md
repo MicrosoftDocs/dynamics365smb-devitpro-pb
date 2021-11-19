@@ -28,7 +28,8 @@ page 50101 MyCustomers
 {
     PageType = List;
     SourceTable = Customer;
-    SourceTableView = sorting (Name) order(descending)
+    // The view of the Customer table is sorted by the Name and "No." fields on descending order.
+    SourceTableView = sorting (Name, "No.") order(descending)
  where ("Balance (LCY)" = filter (>= 50000), "Sales (LCY)" = filter (<> 0));
     layout
     {
