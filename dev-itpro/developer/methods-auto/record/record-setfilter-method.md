@@ -49,6 +49,7 @@ Replacement values to insert in replacement fields in the filter expression. The
 ## Remarks
 
 `SetFilter` does not filter for empty values. For example, if you set `MyRecord.SetFilter(MyTextField, '');` no filter is applied.
+This method is like the SetFilter Method (FieldRef) method. For more information, see [FieldRef.SetFilter(String [, Any,...]) Method](../fieldref/fieldref-setfilter-method.md).
 
 ## See Also
 

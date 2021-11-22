@@ -3,7 +3,7 @@ title: "File.GetStamp(String, var Date [, var Time]) Method"
 description: "Gets the exact time that a file was last written to."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

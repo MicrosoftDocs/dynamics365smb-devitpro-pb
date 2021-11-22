@@ -137,6 +137,12 @@ Starting with version 19.1, when you create a copy of an environment, any irreve
 
 When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible.  
 
+### Why does the list include features that apply to other countries?
+
+Microsoft's business functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] consists of functionality that is generic and functionality that is particular to a specific country or region. The **Feature Management** page will at times show optional features that are particular to a country, even if your [!INCLUDE [prod_short](../includes/prod_short.md)] is based on another country-specific version. This is due to the current limitations of feature management, which relies on a system table to populate the **Feature Management** page.  
+
+In a future version, we hope to redesign feature management to better reflect local functionality and partner-provided functionality.  
+
 ### Is feature management applicable to on-premises deployments of Business Central?
 
 Yes. You can turn optional features on or off in a similar way.

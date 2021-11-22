@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge, time sheet
-ms.date: 04/01/2021
+ms.date: 11/03/2021
 ms.author: edupont
 
 ---
@@ -18,6 +18,11 @@ ms.author: edupont
 # Managing the Migration to the Cloud
 
 You can connect your on-premises solution to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant to migrate your data to the cloud. Once you have set up this configuration, you can manage your cloud environment and data migration from the **Cloud Migration Management** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.  
+
+> [!IMPORTANT]
+> [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
+
+[!INCLUDE [bc-cloud-migrate-upgrade](../includes/bc-cloud-migrate-upgrade.md)]
 
 > [!NOTE]
 > To manage migrations and run the migration tool, you must have the SUPER permission set in [!INCLUDE [prod_short](../includes/prod_short.md)] and be an administrator of the Microsoft 365 tenant.

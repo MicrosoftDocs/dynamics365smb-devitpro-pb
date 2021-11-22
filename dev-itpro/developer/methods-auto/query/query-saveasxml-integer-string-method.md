@@ -3,7 +3,7 @@ title: "Query.SaveAsXml(Integer, String) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

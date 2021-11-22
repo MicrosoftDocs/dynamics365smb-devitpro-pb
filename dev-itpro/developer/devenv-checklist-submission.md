@@ -16,7 +16,7 @@ ms.author: freddyk
 Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 > [!TIP]  
-> If you have questions around validation for your app, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
+> If you have questions around validation for your app, see [Technical Validation FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
 
 ## Technical Validation Checklist
 
@@ -71,7 +71,7 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them, or are making these libraries available in new countries. If you do not include them in your submission, they will be downloaded from the [App Management API](../administration/appmanagement/app-management-api.md) if they are available.
+> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in Business Central for the targeted countries/regions. If you are making your libraries available in new countries, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
@@ -153,7 +153,7 @@ The minimum release for your submission is computed based on the versions `appli
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
 
 > [!Important]  
-> The minimum release computed for your submission also defines the availability of all the extensions in your submission.
+> The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
 >
 > For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
 

@@ -3,7 +3,7 @@ title: "Blob.CreateInStream(InStream [, TextEncoding]) Method"
 description: "Creates an InStream object for a binary large object (BLOB)."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The InStream object type that has been created.
         
 *[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
-The encoding that will be used by the stream.  
+The encoding that will be used by the stream. The default encoding is MSDos.  
 
 
 

@@ -35,6 +35,24 @@ end;
 
 ## Remarks
 
+This trigger can be called inside a `modify` section, as shown in this pseudo-code:
+
+```al
+reportextension 50111 MyExtension extends "Customer - List"
+{
+    dataset
+    {
+        modify(Customer)
+        {
+            trigger OnBeforePreDataItem()
+            begin
+                // Do some changes here
+            end;
+        }
+    }
+...
+```
+
 This trigger runs before the base object trigger [OnPreDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md).
 
 

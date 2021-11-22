@@ -3,7 +3,7 @@ title: "System Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/24/2021
+ms.date: 11/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -83,6 +83,7 @@ The following methods are available on the System data type.
 |[ImportEncryptionKey(String, String)](system-importencryptionkey-method.md)|Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.|
 |[ImportObjects(String [, Integer])](system-importobjects-method.md)|Imports application objects from a file.|
 |[ImportStreamWithUrlAccess(InStream, String [, Integer])](system-importstreamwithurlaccess-method.md)|Imports an object into a media container to be used in a temporary URL with a default expiration time.|
+|[IsCollectingErrors()](system-iscollectingerrors-method.md)|Gets a value indicating whether errors are currently being collected.|
 |[IsNull(DotNet)](system-isnull-method.md)|Gets a value indicating whether a DotNet object has been created or not.|
 |[IsNullGuid(Guid)](system-isnullguid-method.md)|Indicates whether a value has been assigned to a GUID. A null GUID that consists only of zeros is valid but must never be used for references.|
 |[IsServiceTier()](system-isservicetier-method.md)|Gets a value indicating whether the runtime is a service tier.|
