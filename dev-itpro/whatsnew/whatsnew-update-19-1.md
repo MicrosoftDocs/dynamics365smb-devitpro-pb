@@ -21,7 +21,7 @@ Would you like to know what has changed in update 19.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](XXX).
+Find an overview of hotfixes in this [article](https://prod.support.services.microsoft.com/en-us/topic/update-19-1-for-microsoft-dynamics-365-business-central-on-premises-2021-release-wave-2-application-build-19-1-32186-platform-build-19-0-32155-2f3d72b9-2d1a-4a00-9093-06e24eb2aa15?preview=true).
 
 ## Feature changes
 
