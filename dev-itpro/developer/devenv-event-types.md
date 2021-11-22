@@ -43,7 +43,7 @@ Global events are predefined system events that are automatically raised by vari
 
 |Codeunit ID|Codeunit Name|Event|
 |-----------|-------------|-----|
-|40|LoginInManagement|OnRoleCenterOpen|  
+|40|LoginManagement|OnRoleCenterOpen|  
 |||OnAfterLogInEnd|  
 |||OnBeforeLogInStart|  
 |||OnBeforeCompanyOpen|  
