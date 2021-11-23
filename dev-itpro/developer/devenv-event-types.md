@@ -39,11 +39,11 @@ An integration event can be changed to a business event later. At which time, it
 
 ##  <a name="InternalEvents"></a> Internal events
   
-An internal event is a custom event, like a business or integration event, except that it can only be raised and subscribed to from within the same extension it's published. The main purpose of internal events is to ....  
+An internal event is a custom event, like a business or integration event, except that it can only be raised and subscribed to from within the extension it's published. The main purpose of internal events is to ....  
 
 ### Development considerations
 
-An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent Attribute](attributes/devenv-integrationevent-attribute.md). 
+To learn about the syntax and example on how to use the InternalEvent type, see [InternalEvent Attribute](attributes/devenv-internalevent-attribute.md). 
   
 ## Global events
   
