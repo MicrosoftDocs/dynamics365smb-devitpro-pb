@@ -74,7 +74,7 @@ if CustomerCard."No.".Value <> CustomerCard."Sales Hist. Sell-to FactBox"."No.".
 
 ## Filtering Data on Test Pages
 
-To filter the data that can be accessed on a test page, you use AL methods correspoding to the [TestFilter Data Type](methods-auto/testpart/testpart-data-type.md) instances. For example, to filter the customers on the `Customer List` page based on a range of values in the `No.` field, you can write the following code.  
+To filter the data that can be accessed on a test page, you use AL methods correspoding to the [TestFilter Data Type](methods-auto/testfilter/testfilter-data-type.md) instances. For example, to filter the customers on the `Customer List` page based on a range of values in the `No.` field, you can write the following code.  
   
 ```AL
 CustomerList.Filter.SetFilter("No.", '20000..30000');  

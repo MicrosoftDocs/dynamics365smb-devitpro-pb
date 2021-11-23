@@ -22,11 +22,24 @@ Use this scenario if you have one of the following versions that uses the Micros
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc19-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
-## Single-tenant and multitenant deployments
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
-The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+## Before you begin
 
-## PowerShell variables used in tasks
+### Consider known issues
+
+[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
+
+<!--
+### Prepare for tables that have changed to temporary tables
+
+Starting with version 18, several base application tables are now temporary tables. This change may affect the upgrade from version 17 or earlier. For more information, see [Upgrading Base Application Tables That Have Changed to Temporary](upgrade-temporary-tables.md).-->
+
+### Prepare new runtime packages
+
+[!INCLUDE[upgrade_runtime_packages](../developer/includes/upgrade_runtime_packages.md)]
+
+### PowerShell variables used in tasks
 
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
@@ -279,6 +292,8 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```
 
 6. Recompile extensions not built on version 19.
+
+    [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
 
     Do this step for any published extension versions that aren't built on version 19, and you want to reinstall on tenants. These extensions must be recompiled to work with version 19. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 

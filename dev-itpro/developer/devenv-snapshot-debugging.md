@@ -15,7 +15,7 @@ ms.author: solsen
 > [!NOTE]  
 > With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
 
-Snapshot debugging allows a **delegated admin** to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
+Snapshot debugging allows recording AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
@@ -52,6 +52,7 @@ Choose whether to run the session on a cloud service or locally. The configurati
 |`userId`| The GUID of the user on whose behalf a snapshot debugging will be started. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. For more information, see [JSON Files](devenv-json-files.md).|
 |`sessionId`| A session ID for the user specified above in `userId`.|
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
+|`tenant`| The AAD tenant ID for the tenant to connect to. Specify this if targeting a different tenant from the user's own AAD tenant, for example when running as a delegated admin.|
 
 When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
 
@@ -63,6 +64,10 @@ To record the AL execution, the server will now wait for a connection to happen 
 - If a `sessionId` is specified for a userId for a given tenant then it will be that session that will be snapshot debugged.
 - If only a `userId` is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
+
+
+> [!TIP]  
+> If you are having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
 
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
@@ -91,10 +96,7 @@ Snapshot debugging sessions that have produced a snapshot file can be debugged. 
 
 ## Downloading symbols on the snapshot debugger endpoint
 
-In order to download symbols on a production server, you need permission related entries:
-
-- Be a delegated admin
-- The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
+In order to download symbols on a production server, you need permission related entries. The read-only access to the **Published Application** table emphasized in the **D365 Snapshot Debug** permission set should be granted.
 
 Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server.
 

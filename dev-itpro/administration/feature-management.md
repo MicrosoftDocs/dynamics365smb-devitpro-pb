@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment, key, optional, feature management, early access, preview, what's new
-ms.date: 05/12/2021
+ms.date: 10/26/2021
 ms.author: mikebc
 ---
 
@@ -53,14 +53,16 @@ If you manage multiple environments, such as several sandboxes, new features can
 
 ## Features that can't be turned off
 
-Some features or feature improvements may permanently affect the state and capabilities of [!INCLUDE[prod_short](../includes/prod_short.md)] and can't be safely reverted. These irreversible features can't be turned off again after they've been enabled. Before you enable an irreversible feature on a production environment, we recommend that you first enable and evaluate it on a sandbox environment that has a copy of production data.
+Some features or feature improvements may permanently affect the state and capabilities of [!INCLUDE[prod_short](../includes/prod_short.md)] and can't be safely reverted. These irreversible features can't be turned off again after they've been enabled. Before you turn on an irreversible feature on a production environment, we recommend that you first evaluate it in a sandbox environment that is a copy of the production environment.  
 
 > [!NOTE]
-> When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose **Yes** to proceed with permanently enabling the feature on that environment.
+> When you choose to enable an irreversible feature, a warning dialog that describes the consequences is displayed. Choose the **Yes** action to turn on the feature in that environment.
 
-## Scheduling Data Updates for New Features
+Starting with version 19.1, when you create a copy of an environment, any irreversible features that were turned on are also available in the copy.  
 
-Enabling application features that change the user experience or update data can be a disruptive process. So you might want to go at your own pace. For example, schedule an update per company for a time that's after your users have been trained for the new experiences. 
+## Scheduling data updates for new features
+
+Enabling application features that change the user experience or update data can be a disruptive process. So you might want to go at your own pace. For example, schedule an update per company for a time that's after your users have been trained for the new experiences.  
 
 You schedule a data update on the **Feature Management** page by choosing the **Schedule** action, or by choosing **All Users** in the **Enable for** column. Both of those actions start the **Feature Data Update** setup guide. This guide allows you to review the affected data and schedule the update process. When the data update process is completed, the feature is enabled in the company where you ran the data update.
 
@@ -115,23 +117,31 @@ Application areas are a concept where developers specify differentiated user exp
 
 ### Can resellers, ISVs, and developers contribute to the list of features?
 
-No. At this time, feature management is only for features released by Microsoft.
+No. At this time, feature management is only for features that are released by Microsoft.
 
-### Can I enable a feature for a single user?
+### Can I turn on a feature for a single user?
 
-No. Business Central doesn't let you enable a feature for a single user or group of users. Enabled features apply to all users of an environment.  
+No. Business Central doesn't let you turn on a feature for a single user or group of users. Enabled features apply to all users of an environment.  
 
 ### I don't see a link to try out an optional feature. Is something wrong?  
 
-Some features don't provide a way to try it out for yourself and won't display a **Try it out** link. Before you enable these features, we recommend you first enable and test the features on a sandbox environment that has a copy of production data.
+Some features don't provide a way to try it out for yourself and won't display a **Try it out** link. Before you turn on these features, we recommend that you first test the features in a sandbox environment that is a copy of the production environment.
 
 ### Are optional features also optional on new environments?
 
-Yes. Most optional features are enabled by default on new environments for new customers to benefit from. Administrators can still turn any of these features off from the Feature Management page. Some features are irreversible and aren't enabled by default.
+Yes. Most optional features are turn on by default in new environments for new customers to benefit from. Administrators can still turn any of these features off from the **Feature Management** page. Some features are irreversible and aren't turn on by default.  
+
+Starting with version 19.1, when you create a copy of an environment, any irreversible features that were turned on are also available in the copy.  
 
 #### Are optional features automatically enabled on sandbox environments?
 
-When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible. 
+When you create a new sandbox environment with a copy of production data, your choice of enabled features is also copied to the sandbox. When you create a fresh sandbox, each feature is enabled by default, unless a feature is irreversible.  
+
+### Why does the list include features that apply to other countries?
+
+Microsoft's business functionality in [!INCLUDE [prod_short](../includes/prod_short.md)] consists of functionality that is generic and functionality that is particular to a specific country or region. The **Feature Management** page will at times show optional features that are particular to a country, even if your [!INCLUDE [prod_short](../includes/prod_short.md)] is based on another country-specific version. This is due to the current limitations of feature management, which relies on a system table to populate the **Feature Management** page.  
+
+In a future version, we hope to redesign feature management to better reflect local functionality and partner-provided functionality.  
 
 ### Is feature management applicable to on-premises deployments of Business Central?
 

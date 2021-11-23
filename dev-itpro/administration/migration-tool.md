@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 09/28/2021
+ms.date: 11/03/2021
 ms.author: edupont
 
 ---
@@ -27,6 +27,8 @@ In the following sections, you're working in [!INCLUDE [prod_short](../includes/
 
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
+>
+> [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
 
 ## The Set up Cloud Migration assisted setup guide
 
@@ -77,6 +79,9 @@ Once you have migrated the data that you want to migrate to [!INCLUDE [prod_shor
 
 > [!NOTE]  
 > The amount of time the migration will take to complete depends on the amount of data, your SQL configuration, and your connection speed. Subsequent migrations will complete more quickly because only changed data is migrating.  
+
+> [!IMPORTANT]
+> [!INCLUDE [bc-cloud-migrate-upgrade](../includes/bc-cloud-migrate-upgrade.md)]
 
 ## See Also
 

@@ -74,6 +74,9 @@ ObsoleteState = Pending;
 By coding against this property, you can use this property as a way to communicate through code to other developers which objects and elements will become obsolete over time and those which are already obsolete, enabling them to adjust their application code accordingly.
 
 > [!NOTE]  
+> For all elements, except for **Tables** and **Table fields**, setting `ObsoleteState = Removed` will throw [Compiler Error AL0169](../diagnostics/diagnostic-al169.md) because after an appropriate warning state of `Pending`, these elements can be deleted.
+
+> [!NOTE]  
 > When developing using [!INCLUDE[nav_dev_long_md](../includes/nav_dev_long_md.md)] (C/SIDE), you do not get warnings or errors when you compile objects that reference table objects, fields, or keys that are marked as **Pending** or **Removed**. **ObsoleteState** property is only detected by the AL compiler, which will return warnings for references to elements marked as **Pending** and errors for references to elements marked as **Removed**.
 
 ## See Also

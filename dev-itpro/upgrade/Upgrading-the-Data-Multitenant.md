@@ -13,6 +13,8 @@ ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]: Multitenant Deployment
 
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
+
 [See print-friendly quick reference](multitenant-upgrade-checklist.md)
 
 This article describes the tasks required for upgrading data to the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a multitenant deployment.

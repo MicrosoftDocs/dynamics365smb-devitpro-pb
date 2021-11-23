@@ -17,9 +17,15 @@ Use this process when you have a code customized [!INCLUDE[prod_short](../develo
 
  ![Upgrade on customized Business Central application.](../developer/media/bc14-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
  
-#### Single-tenant and multitenant deployments
+## General information
+ 
+### Single-tenant and multitenant deployments
 
-The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
+### Personalization and customizations
+
+[!INCLUDE[windows-client-upgrade](../developer/includes/windows-client-upgrade.md)]
 
 ## Prerequisites
 
