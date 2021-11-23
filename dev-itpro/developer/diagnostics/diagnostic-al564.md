@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The object {0} '{1}' is not extensible.
 
+## Description
+API pages or objects with the **Extensible** property set to **false** cannot be extended.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

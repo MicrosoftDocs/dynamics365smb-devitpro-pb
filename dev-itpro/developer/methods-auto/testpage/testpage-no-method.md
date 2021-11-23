@@ -37,7 +37,27 @@ The No system action.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The *No* action is used to dismiss a modal page or test page.
+
+The **No** method just retrieves the *No* system action, but does not execute it. To invoke the *No* action on the test page use the [Invoke Method](../testaction/testaction-invoke-method.md), as shown in the example below. 
+
+## Example
+
+The following example uses a handler method to dismiss the `"Post and Send Confirmation"` modal test page when invoked in code.
+
+```
+[ModalPageHandler]
+procedure PostandSendPageHandlerNo(var PostandSendConfirmation: TestPage "Post and Send Confirmation")
+begin
+    PostandSendConfirmation.No.Invoke;
+end;
+```
+
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  
+[Invoke Method](../testaction/testaction-invoke-method.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

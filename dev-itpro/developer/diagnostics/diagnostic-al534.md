@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Length of the table key name '{0}' must not exceed {1} characters. Longer key names are prone to cause SQL errors.
 
+## Description
+The length of a table key name must not exceed 28 characters. Longer key names are prone to cause SQL errors.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

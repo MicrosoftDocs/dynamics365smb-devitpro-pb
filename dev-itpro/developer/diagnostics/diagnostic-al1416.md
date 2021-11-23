@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The {0} '{1}' cannot be moved relatively to '{2}' because '{2}' is missing. This move is ignored.
 
+## Description
+An element (action, control or view) cannot be moved relative to an anchor (action, control or view) that cannot be resolved because its declaring extension is not installed anymore. The change is ignored.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

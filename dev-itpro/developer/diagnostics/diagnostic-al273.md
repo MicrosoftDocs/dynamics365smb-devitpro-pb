@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The name '{0}' is an Area type. Using an Area type name may limit extensibility.
 
+## Description
+Reusing the Area type as the name of a variable might lead to extensibility limitations.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

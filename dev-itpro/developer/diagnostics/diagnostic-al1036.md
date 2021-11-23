@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The locale '{0}' is not valid.
 
+## Description
+A translation locale culture specified in the manifest must follow the format languageCode-CountryCode, such as en-US.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

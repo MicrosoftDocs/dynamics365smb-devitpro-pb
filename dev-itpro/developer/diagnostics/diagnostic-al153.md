@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The property '{0}' cannot be blank.
 
+## Description
+A property value cannot be blank.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

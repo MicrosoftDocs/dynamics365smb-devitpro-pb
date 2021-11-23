@@ -52,17 +52,17 @@ if FindSet then
   
 ## <a name="calc"></a>CalcFields, CalcSums, and Count  
 
-Each call to **CalcFields**, **CalcField**, **CalcSums**, or **CalcSums** methods that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
+Each call to **CalcFields**, **CalcField**, **CalcSum**, or **CalcSums** methods that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
   
-Each **CalcFields** or **CalcSums** request should be confined to use only one SifT index. The SifT index can only be used if:  
+Each **CalcFields** or **CalcSums** request should be confined to use only one SIFT index. The SIFT index can only be used if:  
   
-- All requested sum-fields are contained in the same SifT index.  
+- All requested sum-fields are contained in the same SIFT index.  
   
-- The filtered fields are part of the key fields specified in the SifT index containing all the sum fields.  
+- The filtered fields are part of the key fields specified in the SIFT index containing all the sum fields.  
   
 if neither of these requirements is fulfilled, then the sum will be calculated directly from the base table.  
   
-In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SifT indexes can be used to count records in a filter provided that a SifT index exists that contains all filtered fields in the key fields that are defined for the SifT index.  
+In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SIFT indexes can be used to count records in a filter provided that a SIFT index exists that contains all filtered fields in the key fields that are defined for the SIFT index.  
   
 ## SetAutoCalcFields  
 

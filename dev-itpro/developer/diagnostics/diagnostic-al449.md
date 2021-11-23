@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The alias '{0}' is already declared.
 
+## Description
+There are multiple DotNet types defined with the same alias.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

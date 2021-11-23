@@ -3,7 +3,7 @@ title: "BusinessEvent Attribute"
 description: "Specifies that the method is published as a business type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 11/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,17 @@ Specifies that the method is published as a business type event.
 ## Syntax
 
 ```AL
-[BusinessEvent(IncludeSender: Boolean)]
+[BusinessEvent(IncludeSender: Boolean [, Isolated: Boolean])]
 ```
 
 ### Arguments
 *IncludeSender*  
 &emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
 Specifies that the firing instance of the object is available as a parameter to subscribers of that event.  
+
+*[Optional] Isolated*  
+&emsp;Type: [Boolean](../methods-auto/boolean/boolean-data-type.md)  
+Specifies if event subscribers should be invoked in an isolated transaction.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

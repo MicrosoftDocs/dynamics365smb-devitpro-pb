@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 'Variant' is not a valid column type for column '{0}' in report '{1}'.
 
+## Description
+A report column must not be of the type 'Variant'.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

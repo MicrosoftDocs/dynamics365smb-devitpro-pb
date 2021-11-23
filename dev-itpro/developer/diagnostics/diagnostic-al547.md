@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' should not expose global variables.
 
+## Description
+An event publisher should not expose global variables.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

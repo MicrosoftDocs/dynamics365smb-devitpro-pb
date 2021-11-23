@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The RunObject property value of actions defined in the '{0}' area must only reference pages of type 'List'.
 
+## Description
+The **RunObject** property value must only reference pages of type 'List'.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

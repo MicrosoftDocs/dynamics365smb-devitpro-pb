@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The language {0} must only be specified one time.
 
+## Description
+The same language has been specified multiple times.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

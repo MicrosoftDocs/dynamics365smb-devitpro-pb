@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The runtime version '{0}' is not supported by the AL compiler.
 
+## Description
+The specified runtime version is not supported by the AL compiler. For more information, see [Currently available runtime versions](../devenv-choosing-runtime.md).  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

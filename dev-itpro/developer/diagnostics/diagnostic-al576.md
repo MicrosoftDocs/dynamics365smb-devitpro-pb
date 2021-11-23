@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The profile name '{0}' is not valid because it contains leading or trailing spaces.
 
+## Description
+The name for a progile must not contain leading or trailing spaces.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

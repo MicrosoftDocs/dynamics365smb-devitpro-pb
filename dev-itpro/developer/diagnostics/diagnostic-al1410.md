@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The target {0} {1} for the extension object is not found.
 
+## Description
+Cannot resolve the referenced target of a page customization or the target of a profile extension.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

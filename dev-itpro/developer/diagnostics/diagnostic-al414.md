@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Procedure '{0}' must declare a body.
 
+## Description
+Procedures must declare a body, except for those defined inside a **ControlAddin** or **Interface**.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
