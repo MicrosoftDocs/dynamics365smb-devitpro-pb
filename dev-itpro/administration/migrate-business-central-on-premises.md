@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 09/28/2021
+ms.date: 11/23/2021
 ms.author: edupont
 
 ---
@@ -106,6 +106,9 @@ For more information, see [FAQ about Migrating to Business Central Online from O
 
 During the data migration process, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not migrate most system tables, users, and permissions.  
 
+> [!NOTE]
+> Currently, record links are not migrated because the links are associated with a user ID, and we do not migrate users from the on-premises environment to the online tenant. You can choose to [upvote this feature suggestion](https://experience.dynamics.com/ideas/idea/?ideaid=b515c246-801d-ea11-b265-0003ff68f605).
+
 ## Upgrading to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 If you upgrade to a new version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, including a cumulative update, then you must update the extensions as well. Depending on your on-premises solution, your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online environment contains different extensions for the cloud migration. For more information, see [Business Central Cloud Migration Extensions](/dynamics365/business-central/ui-extensions-data-replication?toc=/dynamics365/business-central/dev-itpro/toc.json).  
@@ -117,6 +120,7 @@ Also, at the end of the upgrade, you must make sure that the `applicationVersion
 
 ## See also
 
+[Best Practices for Cloud Migration](migrate-data.md#best-practices)  
 [Migration On-premises Data to Business Central online](migrate-data.md)  
 [Migrate to the Cloud from On-Premises](./migration-tool.md)  
 [Managing your Online Environment](./migration-management.md)  
