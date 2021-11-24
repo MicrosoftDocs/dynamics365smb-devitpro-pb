@@ -45,6 +45,9 @@ For example:
 }
 ```
 
+> [!NOTE]  
+> If you are using a workspace with multiple projects in Visual Studio Code, you must set the `baselinePackageCachePath` property in the AppSourceCop.json.
+
 ## How to fix this diagnostic?
 
 If you do not want to detect breaking changes in your extension, remove the property `version` in the AppSourceCop.json file.
