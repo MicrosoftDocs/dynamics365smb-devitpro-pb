@@ -31,13 +31,13 @@ Read-only transactions are allowed to call isolated events directly, but write t
 
 ## How to define an isolated event
 
-To support isolated events, the [InternalEvent](attributes/devenv-internalevent-attribute.md) for methods includes the `Isolated` attribute, which is to `false` by default:
+To support isolated events, the [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) include the `Isolated` boolean argument, which is to `false` by default.
 
 ```al
 [InternalEvent(IncludeSender: Boolean, Isolated: Boolean)]
 ```
 
-To define an isolated event, set the `Isolated` attribute, which is to `true`, for example:
+To define an isolated event, set the `Isolated` argument, which is to `true`.
 
 ```al
 [InternalEvent(true, true)]
@@ -49,9 +49,3 @@ To define an isolated event, set the `Isolated` attribute, which is to `true`, f
 [Raising Events](devenv-raising-events.md)  
 [Subscribing to Events](devenv-subscribing-to-events.md)  
 [Developing Extensions Using the New Development Environment](devenv-dev-overview.md)  
-
-<!--NAV
-[Debugging Events](devenv-debugging-events.md)  
-[Best Practices with Microsoft Dynamics 365 Business Central](devenv-events-best-practices.md)  
- [Walkthrough: Publishing, Raising, and Subcribing to an Event in Microsoft Dynamics NAV](Walkthrough--Publishing--Raising--and-Subcribing-to-an-Event-in-Microsoft-Dynamics-NAV.md)  
-[Walkthrough: Implementing New Workflow Events and Responses](Walkthrough--Implementing-New-Workflow-Events-and-Responses.md)  -->
