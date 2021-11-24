@@ -1477,6 +1477,8 @@
 ##### [Names() Method](developer/methods-auto/enum/enum-names--method.md)
 ##### [Ordinals() Method](developer/methods-auto/enum/enum-ordinals--method.md)
 #### [ErrorInfo Data Type](developer/methods-auto/errorinfo/errorinfo-data-type.md)
+##### [Create() Method](developer/methods-auto/errorinfo/errorinfo-create--method.md)
+##### [Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method](developer/methods-auto/errorinfo/errorinfo-create-string-boolean-table-integer-integer-string-verbosity-dataclassification-dictionary[text,text]-method.md)
 ##### [Callstack() Method](developer/methods-auto/errorinfo/errorinfo-callstack-method.md)
 ##### [Collectible([Boolean]) Method](developer/methods-auto/errorinfo/errorinfo-collectible-method.md)
 ##### [ControlName([String]) Method](developer/methods-auto/errorinfo/errorinfo-controlname-method.md)
