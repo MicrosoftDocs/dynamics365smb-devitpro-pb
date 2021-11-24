@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 19.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Builds for Business Central in Ukraine are delayed.
+> Builds for Business Central in Ukraine are now released.
 
 ## Hotfixes
 
@@ -38,7 +38,7 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 - [Chile](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--chile)
 - [Puerto Rico](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--puerto-rico) 
 - [Slovakia](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--slovakia)
-- [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) (not released yet)
+- [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) 
 
 
 ## Release Plan
