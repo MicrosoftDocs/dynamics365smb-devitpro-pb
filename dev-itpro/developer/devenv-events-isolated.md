@@ -31,13 +31,13 @@ Read-only transactions are allowed to call isolated events directly, but write t
 
 ## How to define an isolated event
 
-The [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) include the `Isolated` boolean argument, which is to `false` by default.
+The [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) include the `Isolated` boolean argument, for example:
 
 ```al
 [InternalEvent(IncludeSender: Boolean, Isolated: Boolean)]
 ```
 
-To define an isolated event, set the `Isolated` argument, which is to `true`.
+To define an isolated event, set the `Isolated` argument, which is to `true`, for example:
 
 ```al
 [InternalEvent(true, true)]
