@@ -14,14 +14,14 @@ ms.service: "dynamics365-business-central"
 
 # Isolated Events in AL
 
-You can define a business, integration, or internal event to be an *isolated* event. An isolated event ensures that the event publisher continues its code execution after calling an event - even if an error occurs in an event subscriber. If an event subscriber's code leads to an error, its transaction and associated changes will be rolled back. The execution continues to the next event subscriber, or it will be handed back to the event's caller.
+You can define a business, integration, or internal event to be an *isolated* event. An isolated event ensures the event publisher continues its code execution after calling an event. If an event subscriber's code causes an error, its transaction and associated changes will be rolled back. The execution continues to the next event subscriber, or it will be handed back to the event's caller.
 
 ## How isolated events work
 
 Isolated events are implemented by separating each event subscriber into its own transaction. The transaction is created before invoking an event subscriber, then committed afterwards. The following diagram illustrates the flow.
 
 :::image type="complex" source="media/isolated-events-flow.png" alt-text="Flow diagram of isolated events." border="false":::
-    When an event is raised, the platform gets the first event subscriber. If the event is isolated, an isolated transaction starts, then the event subscriber is invoked. If an error occurs, the transaction is rolled back, and the flow is repeated for the next event subscriber. If there's no error, the transaction is committed and the flow is repeated for the next event subscriber. 
+    When an event is raised, the platform gets the first event subscriber. When the event is isolated, an isolated transaction starts, then the event subscriber is invoked. If an error occurs, the transaction is rolled back, and the flow is repeated for the next event subscriber. Otherwise, the transaction is committed and the flow is repeated for the next event subscriber. 
 :::image-end:::
 
 Read-only transactions are allowed to call isolated events directly, but write transactions must explicitly be committed before invoking an isolated event.
