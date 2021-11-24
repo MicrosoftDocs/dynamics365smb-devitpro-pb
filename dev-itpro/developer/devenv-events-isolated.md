@@ -14,7 +14,7 @@ ms.service: "dynamics365-business-central"
 
 # Isolated Events in AL
 
-You can define a busness, integration, or internal event to be *isolated* event. An isolated event ensures that the event publisher continues its code execution after calling an event. If an event subscriber’s code leads to an error, its transaction and associated changes will be rolled back. The execution continues to the next event subscriber, or it will be handed back to the event's caller.
+You can define a business, integration, or internal event to be an *isolated* event. An isolated event ensures that the event publisher continues its code execution after calling an event - even if an error occurs in an event subscriber. If an event subscriber's code leads to an error, its transaction and associated changes will be rolled back. The execution continues to the next event subscriber, or it will be handed back to the event's caller.
 
 ## How isolated events work
 
