@@ -38,7 +38,7 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 - [Chile](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--chile)
 - [Puerto Rico](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--puerto-rico) 
 - [Slovakia](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--slovakia)
-- [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) (not released yet)
+- [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) 
 
 
 ## Release Plan
