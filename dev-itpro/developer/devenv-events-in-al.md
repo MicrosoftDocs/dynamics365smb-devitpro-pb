@@ -40,7 +40,7 @@ The basic principle is that you program events in the application to run customi
 
 - An *event* is the declaration of the occurrence or change in the application. An event is declared by an AL method, which is referred to as an *event publisher function*. An event publisher method is comprised of a signature only and does not execute any code.
 
-- A *publisher* is the object that contains event publisher method that declares the event. The publisher exposes an event in the application to subscribers, essentially providing them with a hook-up point in the application.  
+- A *publisher* is the object that contains the event publisher method that declares the event. The publisher exposes an event in the application to subscribers, essentially providing subscribers with a hook-up point in the application.  
 
     Publishing an event does not actually do anything in the application apart from making the event available for subscription. The event must be raised for subscribers to respond. An event is raised by adding logic to the application that calls into the publisher to invoke the event (the event publisher method).  
 

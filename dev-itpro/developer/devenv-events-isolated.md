@@ -14,11 +14,11 @@ ms.service: "dynamics365-business-central"
 
 # Isolated Events in AL
 
-Internal events are events that can only be subscribed to from within the same module. You can define an internal event to be *isolated* event. An isolated event ensures that the event publisher continues its code execution after calling an event. If an event subscriber’s code leads to an error, its transaction and associated changes will be rolled back. The execution continues to the next event subscriber, or it will be handed back to the event's caller.
+You can define a busness, integration, or internal event to be *isolated* event. An isolated event ensures that the event publisher continues its code execution after calling an event. If an event subscriber’s code leads to an error, its transaction and associated changes will be rolled back. The execution continues to the next event subscriber, or it will be handed back to the event's caller.
 
 ## How isolated events work
 
-Isolated events are implemented by separating each event subscriber in their own transaction. The transaction is created before invoking an event subscriber, then committed afterwards. The following diagram illustrates the flow.
+Isolated events are implemented by separating each event subscriber into their own transaction. The transaction is created before invoking an event subscriber, then committed afterwards. The following diagram illustrates the flow.
 
 :::image type="complex" source="media/isolated-events-flow.png" alt-text="Flow diagram of isolated events." border="false":::
     When an event is raised, the platform gets the first event subscriber. If the event is isolated, an isolated transaction starts, then the event subscriber is invoked. If an error occurs, the transaction is rolled back, and the flow is repeated for the next event subscriber. If there's no error, the transaction is committed and the flow is repeated for the next event subscriber. 

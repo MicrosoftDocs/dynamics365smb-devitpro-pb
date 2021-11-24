@@ -367,7 +367,7 @@
 ### [Publishing Events](developer/devenv-publishing-events.md)
 ### [Raising Events](developer/devenv-raising-events.md)
 ### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
-### [Isolated Events](developer/devenv-events-internal.md)
+### [Isolated Events](developer/devenv-events-isolated.md)
 ### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 ### [Event Example](developer/devenv-events-example.md)
 ### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
