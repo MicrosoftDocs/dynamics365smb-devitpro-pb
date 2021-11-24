@@ -3,7 +3,7 @@ title: "SuppressDispose Attribute"
 description: "Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 11/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: SusanneWindfeldPedersen
 Specifies if a Microsoft .NET Framework object that is defined by a DotNet variable is disposed when it goes out of scope.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> This attribute is supported only in Business Central on-premises.
 
 ## Applies To
 

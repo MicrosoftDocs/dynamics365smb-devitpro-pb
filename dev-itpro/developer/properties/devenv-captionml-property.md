@@ -47,6 +47,12 @@ Sets the text string that displays with the object, control, or other element in
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```
+CaptionML = ENU= 'Name',DAN='Navn',ESP='Nombre',FRA='Nom',ENC='Name';
+```
+
 ## Remarks
 
 > [!NOTE]  
@@ -62,9 +68,9 @@ The CaptionML property has the following format.
 
  The following example shows a CaptionML value.  
 
- `CaptionML = DEU='Name',DAN='Navn',ESP='Nombre',FRA='Nom';`
+ `CaptionML = DEU='Name',DAN='Navn',ESP='Nombre',FRA='Nom',ENC='Name';`
 
-In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP), and French Standard (FRA).  
+In this example, values are set for Danish (DAN), German Standard (DEU), Spanish Traditional Sort (ESP),  French Standard (FRA), and English Canadian (ENC).  
 
 > [!NOTE]  
 >  On Role Center type pages, the CaptionML property value is used as the display name for the associated Profile in the client.
