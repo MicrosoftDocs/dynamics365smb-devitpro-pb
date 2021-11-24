@@ -18,7 +18,7 @@ You can define a busness, integration, or internal event to be *isolated* event.
 
 ## How isolated events work
 
-Isolated events are implemented by separating each event subscriber into their own transaction. The transaction is created before invoking an event subscriber, then committed afterwards. The following diagram illustrates the flow.
+Isolated events are implemented by separating each event subscriber into its own transaction. The transaction is created before invoking an event subscriber, then committed afterwards. The following diagram illustrates the flow.
 
 :::image type="complex" source="media/isolated-events-flow.png" alt-text="Flow diagram of isolated events." border="false":::
     When an event is raised, the platform gets the first event subscriber. If the event is isolated, an isolated transaction starts, then the event subscriber is invoked. If an error occurs, the transaction is rolled back, and the flow is repeated for the next event subscriber. If there's no error, the transaction is committed and the flow is repeated for the next event subscriber. 
@@ -31,7 +31,7 @@ Read-only transactions are allowed to call isolated events directly, but write t
 
 ## How to define an isolated event
 
-To support isolated events, the [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) include the `Isolated` boolean argument, which is to `false` by default.
+The [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) include the `Isolated` boolean argument, which is to `false` by default.
 
 ```al
 [InternalEvent(IncludeSender: Boolean, Isolated: Boolean)]
