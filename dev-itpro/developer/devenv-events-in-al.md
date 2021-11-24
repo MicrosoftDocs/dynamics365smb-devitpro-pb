@@ -73,6 +73,7 @@ Implementing events consists of the following tasks:
 [Publishing Events](devenv-publishing-events.md)  
 [Raising Events](devenv-raising-events.md)  
 [Subscribing to Events](devenv-subscribing-to-events.md)  
+[Isolated Events](devenv-events-isolated.md)  
 [Developing Extensions Using the New Development Environment](devenv-dev-overview.md)  
 
 <!--NAV

@@ -47,6 +47,10 @@ Specifies if event subscribers should be invoked in an isolated transaction.
 
 Typing the shortcut `teventinternal` will create the basic internal attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
+## Remarks
+
+For more information about isolated events, see [Isolated Events](../devenv-events-isolated.md).
+
 ## Example
 Setting the attribute on a method. Each method must be marked with `[InternalEvent]`.
 
@@ -80,4 +84,5 @@ codeunit 50132 MySubscriber
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   
 [Subscribing to Events](../devenv-subscribing-to-events.md)   
+[Isolated Events](../devenv-events-isolated.md)  
 [Method Attributes](devenv-method-attributes.md)
