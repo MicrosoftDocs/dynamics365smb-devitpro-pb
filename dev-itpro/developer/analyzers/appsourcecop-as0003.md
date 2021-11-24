@@ -46,7 +46,7 @@ For example:
 ```
 
 > [!NOTE]  
-> If you are using a workspace with multiple projects in Visual Studio Code, you must set the `baselinePackageCachePath` property in the AppSourceCop.json.
+> If you are using a workspace with multiple projects in Visual Studio Code, you must set the `baselinePackageCachePath` property in the AppSourceCop.json file.
 
 ## How to fix this diagnostic?
 
