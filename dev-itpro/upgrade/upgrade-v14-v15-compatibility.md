@@ -26,7 +26,7 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 ## Version 14 compatibility
 
-The following table lists the Business Central 14 versions and the minimum 15, 16, 17, and 18 version that's compatible for upgrade.
+The following table lists the Business Central 14 versions and the minimum 15, 16, 17, 18, and 19 version that's compatible for upgrade.
 
 |Version 14|Version 15|Version 16|Version 17|Version 18|Version 19|
 |----------|----------|----------|----------|----------|----------|
@@ -94,7 +94,7 @@ To see the available updates for Business Central 2019 Release Wave 2, see [Rele
 
 ## Version 16 compatibility
 
-The following table lists the Business Central 16 versions and the minimum 17 and 18 version that's compatible for upgrade.
+The following table lists the Business Central 16 versions and the minimum 17, 18, and 19 version that's compatible for upgrade.
 
 |Version 16|Version 17|Version 18|Version 19|
 |----------|----------|----------|----------|
@@ -119,7 +119,7 @@ To see the available updates for Business Central 2020 Release Wave 1, see [Rele
 
 ## Version 17 compatibility
 
-The following table lists the Business Central 17 versions and the minimum 18 version that's compatible for upgrade.
+The following table lists the Business Central 17 versions and the minimum 18 and 19 version that's compatible for upgrade.
 
 |Version 17|Version 18|Version 19|
 |----------|----------|----------|
@@ -136,7 +136,7 @@ To see the available updates for Business Central 2020 Release Wave 2, see [Rele
 
 ## Version 18 compatibility
 
-The following table lists the Business Central 17 versions and the minimum 18 version that's compatible for upgrade.
+The following table lists the Business Central 18 versions and the minimum 19 version that's compatible for upgrade.
 
 |Version 18|Version 19|
 |----------|----------|
