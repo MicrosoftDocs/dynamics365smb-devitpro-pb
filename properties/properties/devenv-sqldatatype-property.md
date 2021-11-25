@@ -60,7 +60,7 @@ If you set SQL Data Type to Integer, then the following are true:
 - Any value beginning with "0" \(zero\) can be entered in the code field and is stored as an Integer base data type.  
   
   > [!NOTE]  
-  >  You can change the SQL Data Type of a code field from Varchar or Integer to Variant and the data in the column is changed accordingly. You cannot change the SQL Data Type of a code field from Variant to Varchar or Integer, unless there are no rows in the table or unless the field contains only an empty string in every row.  
+  > You can change the SQL Data Type of a code field from BigInteger or Integer to Variant and the data in the column is changed accordingly. You cannot change the SQL Data Type of a code field from Variant to Varchar, BigInteger, or Integer, unless there are no rows in the table or unless the field contains only an empty string in every row. You cannot change the SQL Data Type of a field that is part of the primary key.
   
 ## See Also
 
