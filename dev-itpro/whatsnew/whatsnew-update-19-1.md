@@ -40,6 +40,10 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 - [Slovakia](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--slovakia)
 - [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) 
 
+| Country| Feature change | Download link | 
+|-------------|--------------|--------------|
+| Mexico | *Complement to CFDI “Carta de Porte” 1.0.* Mexican companies must be able to print and send Carta de Porte-compliant packing slips and transfer orders electronically as Comprobante Fiscal Digital por Internet (CFDI) files. As of December 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory. Business Central supports CFDI and Carta de Porte so that you can print packing slips and transfer orders that have the required digital signature.| [Version 2017](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/NAV2017_CU59_MX_30653_NA.zip), [Version 2018](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/NAV2018_CU46_MX_NA_48009.zip), [Spring 2019](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/Spring19_CU29_MX_NA_48007.zip), [2020 Release Wave 2](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/2020Wave2_17.2_MX_32775.zip), [2021 Release Wave 1](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/2021Wave1_18.7_MX_32778.zip), [2021 Release Wave 2](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/2021Wave2_19.1_MX_32949.zip)
+
 
 ## Release Plan
 
