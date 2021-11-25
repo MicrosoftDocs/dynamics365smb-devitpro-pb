@@ -47,11 +47,15 @@ It is recommended to use a different `id` for the app that you publish from Visu
 
 ## When is it okay to change the name of an app?
 
-The `name` of an app can be changed at any point also after it has been published. If the `name` is changed, the `version` must be incremented as well.
+If you are targeting only Business Central 2021 release wave 2 or later, the `name` of an app can be changed at any point also after it has been published. If the `name` is changed, the `version` must be incremented as well.
+
+If you are targeting versions of Business Central prior to 2021 release wave 2, then the `name` of an app cannot be changed after it has been published.
 
 ## When is it okay to change the publisher of an app?
 
-The `publisher` of an app can be changed at any point also after it is published. If the `publisher` is changed, the `version` must be incremented as well.
+If you are targeting only Business Central 2021 release wave 2 or later, the `publisher` of an app can be changed at any point also after it is published. If the `publisher` is changed, the `version` must be incremented as well.
+
+If you are targeting versions of Business Central prior to 2021 release wave 2, then the `publisher` of an app cannot be changed after it has been published.
 
 ## When is it okay to change the version of an app?
 

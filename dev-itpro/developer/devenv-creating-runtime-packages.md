@@ -3,7 +3,7 @@ title: "Creating Runtime Packages for Business Central On-Premises"
 description: "How to create runtime packages used for distribution of extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/10/2021
+ms.date: 11/24/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,7 +58,7 @@ The limitation of runtime packages is that they only work for on-premise install
 > Runtime packages are guaranteed to work only if published to a platform with the same version as the one where they were produced.
 
 > [!NOTE]  
-> If you set the `allowDebugging` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
+> If you set the `showMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
 
 ## See Also
 
