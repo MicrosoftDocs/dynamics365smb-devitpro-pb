@@ -15,7 +15,7 @@ author: jswymer
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
-This article describes how to setup an extension to send telemetry data to Azure Application Insights for monitoring and analyzing. [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. For an overview about the telemetry with Azure Application Insights, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
+This article describes how to set up an extension to send telemetry data to Azure Application Insights for monitoring and analyzing. [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. For an overview about the telemetry with Azure Application Insights, see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them.
 
