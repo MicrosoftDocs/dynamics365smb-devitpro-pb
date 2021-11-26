@@ -52,9 +52,14 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
+### Making Edit-in-Excel faster
+The **Edit in Excel** feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
+
 ## Writing efficient Web Services
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
+
+
 
 ### Endpoint performance
 
@@ -76,7 +81,9 @@ Don't insert child records belonging to same parent in parallel. This condition 
 Do not use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 #### Performance patterns (do this)
-- Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+- Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+
+- If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
 
 - The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It is possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
@@ -145,7 +152,7 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When concatenating strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
+When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). Also, please use a TextBuilder instead of BigText when possible.
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
@@ -276,6 +283,15 @@ Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) incl
 - `SystemModifiedAt`
 
 One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
+
+### Non-clustered Columnstore Indexes (NCCI)
+Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes refered to as NCCIs) are supported on tables. 
+
+You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
+
+Read more about non-clustered columnstore indexes here:
+- [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property.md)
+- [Columnstore indexes overview](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
 
 ### SumIndexField Technology (SIFT)
 

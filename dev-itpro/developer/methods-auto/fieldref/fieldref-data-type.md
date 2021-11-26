@@ -3,7 +3,7 @@ title: "FieldRef Data Type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/08/2021
+ms.date: 11/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The following methods are available on instances of the FieldRef data type.
 |[Relation()](fieldref-relation-method.md)|Finds the table relationship of a given field.|
 |[SetFilter(String [, Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[SetRange([Any] [, Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
-|[TestField()](fieldref-testfield--method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField()](fieldref-testfield--method.md)|Tests that the content of the field is not zero or blank (empty string). If it is, an error message is displayed.|
 |[TestField(ErrorInfo)](fieldref-testfield-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Byte)](fieldref-testfield-byte-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Byte, ErrorInfo)](fieldref-testfield-byte-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
