@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 # Web Services Best Practices
-This article provides recommendations that you can implement to make your web services applications easier to understand and maintain.  
+This article provides recommendations that you can implement to make your web services applications faster and easier to understand and maintain.  
   
 |Recommendation|Example|  
 |--------------------|-------------|  
+|[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the Business Central server (the endpoint) and as seen from the consumer (the client). | The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance tuning guide include guidance on performance patterns to make web services fast and stable. Read more at [Writing efficient Web Services](../performance/performance-developer.md)   |
 |Use the HTTPS protocol to send data between [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and the web service consumer. The examples in this section use the HTTP protocol to illustrate the setup, but we recommend that your solution uses transport-level security.|In the application that consumes the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service, require that URIs are accessed by using HTTPS. For example, a more secure URI for the OData web services on your local computer is `https://localhost:7048/BC130/OData/`.|  
 |Use singular forms of names. This provides meaningful singular entity names in the generated proxy classes.|When publishing page 21, Customer Card, use **Customer** as the service name instead of **Customers** or **CustomerCard**.|  
 |Avoid using spaces and other characters because they are transformed to underscores or other characters that may not be displayed as you want and could lead to ambiguity.|When publishing page 42, Sales Order, remove the space and use **SalesOrder** as the service name.|  
@@ -20,3 +21,4 @@ This article provides recommendations that you can implement to make your web se
 
 ## See Also
 [Web Services Overview](web-services.md)  
+[Writing fast Web Services](../performance/performance-developer.md)
