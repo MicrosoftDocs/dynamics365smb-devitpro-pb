@@ -411,8 +411,8 @@ OBJECT Codeunit 9010 Azure AD User Management
 
       TempString := GraphUser.GivenName;
       IF GraphUser.Surname <> '' THEN
-      TempString := TempString + ' ';
-      TempString := TempString + GraphUser.Surname;
+      TempString += ' ';
+      TempString += GraphUser.Surname;
       TempString := COPYSTR(TempString,1,MAXSTRLEN(User."Full Name"));
       IF LOWERCASE(User."Full Name") <> LOWERCASE(TempString) THEN BEGIN
       User."Full Name" := TempString;
