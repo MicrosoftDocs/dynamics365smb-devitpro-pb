@@ -15,7 +15,7 @@ ms.author: vlnagorn
 # Creating and Interacting with an OData V4 Unbound Action
 Unbound actions represent reusable operations that you can perform using an OData request. Use unbound actions when there is no particular entity that the action needs to be bound to.
 
-# Using OData V4 unbound actions to migrate from SOAP to OData
+## Using OData V4 unbound actions to migrate from SOAP to OData
 One common use case for using SOAP endpoints with Business Central is to expose an AL method to be callable as a web service. The same thing can be achieved by using OData V4 unbound actions as described in this article.
 
 ## Declaring, registering, and publishing the OData unbound action
