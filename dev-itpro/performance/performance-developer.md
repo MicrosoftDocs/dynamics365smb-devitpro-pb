@@ -53,7 +53,7 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
 ### Making Edit-in-Excel faster
-The Edit in Excel feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
+The **Edit in Excel** feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
 
 ## Writing efficient Web Services
 
