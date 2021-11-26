@@ -107,7 +107,7 @@ If the Application Insights resource is tied to your partner account, and you en
 
 ## See Also
 
-[Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions)
+[Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
 [Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Monitoring and Analyzing With Telemetry](telemetry-overview.md)  

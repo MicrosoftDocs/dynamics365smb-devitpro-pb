@@ -290,8 +290,8 @@ Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includ
 You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
 
 Read more about non-clustered columnstore indexes here:
-- [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property)
-- [Columnstore indexes overview](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/columnstore-indexes-overview)
+- [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property.md)
+- [Columnstore indexes overview](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
 
 ### SumIndexField Technology (SIFT)
 
