@@ -3,7 +3,7 @@ title: "Record.TestField(Any, Decimal, ErrorInfo) Method"
 description: "Tests whether the contents of a field match a given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2021
+ms.date: 11/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,14 +31,14 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-
-        The field that you want to test.
+The field that you want to test.
         
+
 *Value*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
-
-        The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.
+The value that you want to compare to Field. The data type of this parameter must match the data type of Field. If you include this optional parameter and the contents of Field do not match, then an error message is displayed. If you omit this parameter and the contents of Field is zero or blank (empty string), then an error message is displayed.
         
+
 *ErrorInfo*  
 &emsp;Type: [ErrorInfo](../errorinfo/errorinfo-data-type.md)  
 Additional information to include in the error if the test fails.  
