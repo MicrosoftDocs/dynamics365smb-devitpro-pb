@@ -38,7 +38,7 @@ For more information, see [AppSourceCop Rule AS0011](appsourcecop-as0011.md).
 
 The use of affixes is required for extensions submitted to the AppSource marketplace, see [Technical Validation Checklist](../devenv-checklist-submission.md).
 
-In order to register your affixes, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com). For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
+In order to register your affixes, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
 ## See Also  
 
