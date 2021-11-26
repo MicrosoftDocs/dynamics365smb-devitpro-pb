@@ -14,7 +14,7 @@ You get the number from the [Released Updates for Microsoft Dynamics 365 Busines
 1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
     ```powershell
-    Set-NAVApplication -ServerInstance $NewBcServerInstance -ApplicationVersion $NewVersion -Force
+    Set-NAVApplication -ServerInstance $NewBcServerInstance -ApplicationVersion $NewBCVersion -Force
     ```
 
     For example:

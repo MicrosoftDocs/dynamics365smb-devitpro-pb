@@ -3,7 +3,7 @@ title: "ErrorInfo Data Type"
 description: "Provides a structure for grouping information about an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/07/2021
+ms.date: 11/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,8 @@ The following methods are available on the ErrorInfo data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]])](errorinfo-create-method.md)|Creates a new ErrorInfo object.|
+|[Create()](errorinfo-create--method.md)|Creates a new ErrorInfo object with Collectible set to true.|
+|[Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]])](errorinfo-create-string-boolean-table-integer-integer-string-verbosity-dataclassification-dictionary[text,text]-method.md)|Creates a new ErrorInfo object.|
 
 The following methods are available on instances of the ErrorInfo data type.
 
