@@ -3,7 +3,7 @@ title: "Compiler Hidden AL0605"
 description: "Use of implicit 'with' will be removed in the future."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 11/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Use of implicit 'with' will be removed in the future. Qualify with '{0}.'.
+Use of implicit 'with' will be removed in the future. Qualify with '{0}'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

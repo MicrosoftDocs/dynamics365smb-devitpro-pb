@@ -3,7 +3,7 @@ title: "Compiler Error AL0158"
 description: "'{0}' is not a valid parameter type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 11/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: SusanneWindfeldPedersen
 '{0}' is not a valid parameter type.
 
 ## Description
-Invalid parameter type.  
+Non-valid parameter type.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
