@@ -226,15 +226,6 @@ The performance gains compound when looping over many records, because both effe
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
-### <a name="tips"></a>Other AL performance tips and tricks 
-
-If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
-
-- Don't want to use a number series. 
-- Can accept holes in the number range.
-
-For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
-
 ### Table extension impact on performance
 
 Table extensions are eager-joined in the data stack when accessing the base table. It's currently not possible to define indexes that span base and extension fields. So avoid splitting your code into too many table extensions. Also, be careful about extending central tables, such as General Ledger entry, because it can severely hurt performance. 
@@ -330,7 +321,38 @@ Read more here:
 - [About database statistics in the AL debugger](../developer/devenv-debugging.md#DebugSQL)
 - [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
-## Using Read-Scale Out
+### How to reduce database locking
+Sometimes, performance issues not due to resource starvation, but because processes are waiting for other processes to release locks on shared objects. When AL code need to update data, it is normal to take a database lock on it to ensure that other processes do not change the data at the same time. 
+
+When using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it is good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked.
+
+Read more here:
+- [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method)
+
+#### Database locking caused by web service calls
+Do not insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table  because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData $batch, which will make sure calls get executed one after another.
+
+#### Non-blocking number sequences
+If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
+
+- Don't want to use a number series. 
+- Can accept holes in the number range.
+
+For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
+
+#### Analyzing database locks
+There are two tools that you can use to analyse database locks happening in the environment: the Database Locks page, and database lock timeout telemetry.
+
+The Database Locks page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock, and sometimes also the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition.
+
+Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
+
+Read more here:
+- [Viewing Database Locks](../admin-view-database-locks)
+- [Monitoring SQL Database Locks](../administration/monitor-database-locks)
+- [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace)
+
+### Using Read-Scale Out
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server. **Read Scale-Out** is used to load-balance analytical workloads in the database that only read data.  **Read Scale-Out** is built in as part of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, but it can also be enabled for on-premises.
 
