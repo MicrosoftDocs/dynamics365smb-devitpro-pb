@@ -1047,6 +1047,7 @@
 ###### [AL0690](developer/diagnostics/diagnostic-al690.md)
 ###### [AL0691](developer/diagnostics/diagnostic-al691.md)
 ###### [AL0693](developer/diagnostics/diagnostic-al693.md)
+###### [AL0696](developer/diagnostics/diagnostic-al696.md)
 ###### [AL0999](developer/diagnostics/diagnostic-al999.md)
 ###### [AL1001](developer/diagnostics/diagnostic-al1001.md)
 ###### [AL1002](developer/diagnostics/diagnostic-al1002.md)
@@ -1219,6 +1220,7 @@
 ###### [AL0692](developer/diagnostics/diagnostic-al692.md)
 ###### [AL0694](developer/diagnostics/diagnostic-al694.md)
 ###### [AL0695](developer/diagnostics/diagnostic-al695.md)
+###### [AL0697](developer/diagnostics/diagnostic-al697.md)
 ##### Hidden messages
 ###### [AL0605](developer/diagnostics/diagnostic-al605.md)
 ###### [AL0607](developer/diagnostics/diagnostic-al607.md)
