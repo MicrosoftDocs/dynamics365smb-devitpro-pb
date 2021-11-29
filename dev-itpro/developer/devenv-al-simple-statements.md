@@ -84,7 +84,7 @@ Counter /= 1;
 Counter := Counter + 1;
 ```
 
-The following examples shows how to use this syntax on variables of the [Text Data Type](methods-auto/text-data-type.md).
+The following examples shows how to use this syntax on variables of the [Text Data Type](methods-auto/text/text-data-type.md).
 
 ```AL
 String := "Hello ";
