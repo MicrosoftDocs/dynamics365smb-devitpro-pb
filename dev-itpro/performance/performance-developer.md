@@ -52,9 +52,14 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
+### Making Edit-in-Excel faster
+The **Edit in Excel** feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
+
 ## Writing efficient Web Services
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
+
+
 
 ### Endpoint performance
 
@@ -76,7 +81,9 @@ Don't insert child records belonging to same parent in parallel. This condition 
 Do not use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 #### Performance patterns (do this)
-- Instead of exposing UI pages as web service endpoints, use the built-in API pages because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+- Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+
+- If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
 
 - The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It is possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
@@ -138,14 +145,12 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 - [Use built-in data structures](#builtindatastructure)  
 - [Run async (and parallelize)](#runasync)  
 - [Use set-based methods instead of looping](#setbasedmethods)  
-- [Other AL performance tips and tricks](#tips)  
-
 
 ### <a name="builtindatastructure"></a>Pattern - Use built-in data structures
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When concatenating strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md).
+When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). Also, please use a TextBuilder instead of BigText when possible.
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
@@ -219,15 +224,6 @@ The performance gains compound when looping over many records, because both effe
 
 For more information, see [Using Partial Records](../developer/devenv-partial-records.md).
 
-### <a name="tips"></a>Other AL performance tips and tricks 
-
-If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
-
-- Don't want to use a number series. 
-- Can accept holes in the number range.
-
-For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
-
 ### Table extension impact on performance
 
 Table extensions are eager-joined in the data stack when accessing the base table. It's currently not possible to define indexes that span base and extension fields. So avoid splitting your code into too many table extensions. Also, be careful about extending central tables, such as General Ledger entry, because it can severely hurt performance. 
@@ -277,6 +273,15 @@ Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) incl
 
 One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
 
+### Non-clustered Columnstore Indexes (NCCI)
+Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes refered to as NCCIs) are supported on tables. 
+
+You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
+
+Read more about non-clustered columnstore indexes here:
+- [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property.md)
+- [Columnstore indexes overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
+
 ### SumIndexField Technology (SIFT)
 
 SumIndexField Technology (SIFT) lets you quickly calculate the sums of numeric data type columns in tables, even in tables with thousands of records. The data type includes Decimal, Integer, BigInteger, and Duration. SIFT optimizes the performance of FlowFields and query results in a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application. 
@@ -314,7 +319,40 @@ Read more here:
 - [About database statistics in the AL debugger](../developer/devenv-debugging.md#DebugSQL)
 - [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
-## Using Read-Scale Out
+### How to reduce database locking
+Sometimes, performance issues are not due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it is customary to take a database lock on it to ensure that other processes do not change the data at the same time. 
+
+When using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it is good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked.
+
+Read more here:
+- [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
+
+#### Database locking caused by web service calls
+
+Do not insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData `$batch`, which will make sure calls get run one after another.
+
+#### Non-blocking number sequences
+If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
+
+- Don't want to use a number series 
+- Can accept holes in the number range
+
+For more information, see [NumberSequence Data Type](../developer/methods-auto/numbersequence/numbersequence-data-type.md).
+
+#### Analyzing database locks
+
+There are two tools that you can use to analyse database locks happening in the environment: the **Database Locks** page, and database lock timeout telemetry.
+
+The **Database Locks** page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock, and sometimes also the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition.
+
+Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
+
+Read more here:
+- [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)
+- [Monitoring SQL Database Locks](../administration/monitor-database-locks.md)
+- [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace.md)
+
+### Using Read-Scale Out
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the **Read Scale-Out** feature in Azure SQL Database and SQL Server. **Read Scale-Out** is used to load-balance analytical workloads in the database that only read data.  **Read Scale-Out** is built in as part of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, but it can also be enabled for on-premises.
 

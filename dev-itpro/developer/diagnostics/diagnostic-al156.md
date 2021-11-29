@@ -3,7 +3,7 @@ title: "Compiler Error AL0156"
 description: "'{0}' is not a valid field type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 11/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: SusanneWindfeldPedersen
 '{0}' is not a valid field type.
 
 ## Description
-Invalid field type.  
+Non-valid field type.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

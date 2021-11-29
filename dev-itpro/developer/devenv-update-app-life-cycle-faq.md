@@ -50,24 +50,13 @@ That gives you the latest available version in our service.
 Our recommendation is to pack more bug fixes and features into less frequent updates. Try to avoid frequent submissions containing very few changes. Being on a more frequent cadence than Business Central (monthly) is not advised. This leads to lower churn to production tenants.
 
 ## What if a customer reports a critical bug in my app and needs an immediate hotfix version of my app?
-We do have a fast track validation process for situations like this. These types of situations become top priority in our queue. A very quick validation takes place with the goal of having the hotfix in our service that same day. The following is the hotfix process:
-- Fully test the hotfix version of your app to ensure it fixes the problem and to make sure no other issues are introduced.
-- Submit the app via Partner Center per the normal process.
-- Email [d365val@microsoft.com](mailto:d365val@microsoft.com) to notify him of the hotfix situation.
-- Provide justification as to why this is critical. Some definitions of critical being:
-    - App is causing the tenant to be unresponsive or unusable with no workaround
-    - App is serving a critical business process and that process cannot be executed without a fix
-- If justification proves to be critical, hotfix process can proceed.
-- Quick Validation takes place ASAP and app is uploaded to our service.
-- Tenants can now install this version of your app.
-
-> [!NOTE]  
-> Please ensure that you are only using this process for critical situations. Do not try to use it for minor bug fixes.
+We have automated some parts of the validation of AppSource submissions and most submissions are now validated under one business day. As a consequence, we do not have a fast track validation process anymore.
 
 ## Do you have any tips for us when submitting updates of our app?
 Yes, we have some valuable tips we would like to share. These are tips that can save you time in the validation process. They will help lead to fewer (and possibly zero) failures during validation. Most importantly; they will lead to fewer issues being found in production by customers.
 
 - Follow the checklist, for more information see [Technical Validation Checklist](devenv-checklist-submission.md). The checklist is ever evolving and requirements might change or be added. You might miss something from the checklist, leading to validation failure and delaying the passing of your updated app.
+- Follow the technical validation FAQ, for more information see [Technical Validation FAQ](devenv-checklist-submission-faq.md). We are regularly updating it based on the questions and support cases raised by partners.
 - Use AppSourceCop, for more information see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md). This helps to catch any missing prefix/suffix and DataClassification. Too often we see these fail the updated versions of apps.
 - Sign your app. This fails many app validations. We try to publish the app during validation and it is not properly code-signed leading to failure to publish.
 - Publish and install your app. This is another big validation failure we see too often.

@@ -1,5 +1,5 @@
 ---
-title: Business Central Admin Center API - Available Applications
+title: Business Central Admin Center API - Environments
 description: Learn about the Business Central administration center API for managing environments.
 author: jswymer
 ms.service: dynamics365-business-central
@@ -673,9 +673,9 @@ Data is returned for the following operation types:
 |EnvironmentAppUpdate<sup>1</sup> |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](#update-an-app)|
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](#uninstall-an-app)|
-|Copy<sup>2</sup>|An environment was created from a copy of another environment.|[Copy an Environment in Admin Center](tenant-admin-center-environments.md#copy-an-environment)<br><br>[Copy Endpoint](#copy-environment)|
+|Copy<sup>2</sup>|An environment was created from a copy of another environment.|[Copy a Production or Sandbox Environment in the Admin Center](tenant-admin-center-environments-copy.md)<br><br>[Copy Endpoint](#copy-environment)|
 |Create<sup>2</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)||
-|Delete|An environment was deleted.|[Delete Environment in Admin Center](#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
+|Delete|An environment was deleted.|[Delete Environment in Admin Center](tenant-admin-center-environments.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
 |MoveToAnotherAadTenant|An environment was moved to another Azure Active Directory organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)
@@ -818,6 +818,7 @@ Example `200 OK` response:
 ```
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+[Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md)  
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)  
