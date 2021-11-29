@@ -145,8 +145,6 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 - [Use built-in data structures](#builtindatastructure)  
 - [Run async (and parallelize)](#runasync)  
 - [Use set-based methods instead of looping](#setbasedmethods)  
-- [Other AL performance tips and tricks](#tips)  
-
 
 ### <a name="builtindatastructure"></a>Pattern - Use built-in data structures
 
@@ -282,7 +280,7 @@ You can use a non-clustered columnstore index to efficiently run real-time opera
 
 Read more about non-clustered columnstore indexes here:
 - [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property.md)
-- [Columnstore indexes overview](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
+- [Columnstore indexes overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
 
 ### SumIndexField Technology (SIFT)
 
@@ -327,9 +325,10 @@ Sometimes, performance issues are not due to resource starvation, but due to pro
 When using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it is good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked.
 
 Read more here:
-- [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method)
+- [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
 #### Database locking caused by web service calls
+
 Do not insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData `$batch`, which will make sure calls get run one after another.
 
 #### Non-blocking number sequences
@@ -349,9 +348,9 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
 Read more here:
-- [Viewing Database Locks](../admin-view-database-locks)
-- [Monitoring SQL Database Locks](../administration/monitor-database-locks)
-- [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace)
+- [Viewing Database Locks](../admin-view-database-locks.md)
+- [Monitoring SQL Database Locks](../administration/monitor-database-locks.md)
+- [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace.md)
 
 ### Using Read-Scale Out
 
