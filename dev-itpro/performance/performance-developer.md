@@ -348,7 +348,7 @@ The **Database Locks** page gives a snapshot of all current database locks in SQ
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
 Read more here:
-- [Viewing Database Locks](../admin-view-database-locks.md)
+- [Viewing Database Locks](/dynamics365/business-central/admin-view-database-locks)
 - [Monitoring SQL Database Locks](../administration/monitor-database-locks.md)
 - [Analyzing Database Lock Timeout Trace Telemetry](../administration/telemetry-database-locks-trace.md)
 
