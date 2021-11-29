@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -130,6 +130,7 @@
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
 ### [Manage updates](administration/tenant-admin-center-update-management.md)
 ### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Copy a production or sandbox environment](administration/tenant-admin-center-environments-copy.md)
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
