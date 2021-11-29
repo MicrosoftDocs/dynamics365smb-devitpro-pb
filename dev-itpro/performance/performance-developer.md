@@ -322,7 +322,7 @@ Read more here:
 - [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
 ### How to reduce database locking
-Sometimes, performance issues not due to resource starvation, but because processes are waiting for other processes to release locks on shared objects. When AL code need to update data, it is normal to take a database lock on it to ensure that other processes do not change the data at the same time. 
+Sometimes, performance issues are not due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it is typical to take a database lock on it to ensure that other processes do not change the data at the same time. 
 
 When using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it is good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked.
 
