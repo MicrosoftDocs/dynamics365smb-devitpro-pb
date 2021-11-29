@@ -27,6 +27,9 @@ At design time, the compiler will show warnings on casing violations and errors 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
+## Create, read, update, and delete operations
+API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the InsertAllowed, ModifyAllowed, and DeleteAllowed properties respectively.
+
 ## Example of the API page type
 
 The following page example publishes an API available at:
