@@ -2,7 +2,7 @@
 title: "Table Keys"
 description: Learn about table keys in Business Central
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/30/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -98,7 +98,7 @@ With a non-clustered columnstore index, you could just have one index defined as
 
 For more information, see:
 - [ColumnStoreIndex Property](properties/devenv-columnstoreindex-property.md)
-- [Columnstore indexes: Overview](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/columnstore-indexes-overview)
+- [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
 
 ## Clustered and non-clustered keys
 
