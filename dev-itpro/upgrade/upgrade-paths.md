@@ -24,7 +24,7 @@ Whether you can upgrade directly to a release will depend on the source version.
 The following sections provide the supported upgrade paths to the different [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases.
 
 > [!NOTE]
-> Minor updates are regularly made available for the major releases. Make sure you upgrade to an update of the release version that is compatible with your source source version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
+> Minor updates are regularly made available for each release wave. Not all minor updates between two releases are compatible. Make sure you upgrade to a release update that's compatible with your current version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 Release Wave 2 (v19)
 
