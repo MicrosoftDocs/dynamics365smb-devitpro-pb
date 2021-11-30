@@ -37,6 +37,10 @@ When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database ne
 
 Number series in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are shared resources that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series. They aren't subject to financial auditing and can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. For more information, see [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
 
+### Don't adjust cost item entries with too high a frequency
+
+All sales transactions have to get their cost calculated at some point&mdash;either at the time they're posted or batched up for later, like nightly or weekly, where all sales transactions that haven’t had their cost calculated yet are "adjusted". The main reason for postponing this operation to off-hours is that it locks many tables while running for a long time. A good frequency to start with could be to do it nightly and then evaluate if it needs to be adjusted to happen more or less frequently.
+
 ### Be cautious with the **Rename/Copy company** operations
 
 The **Rename company** and **Copy company** operations aren't intended to run while business transactions are being applied to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. First, the operations are likely to induce locks on the tables that data is copied from. These locks will block users from transacting in the company. Second, the operations use resources on the database, which can in turn cause resource starvation for users working in other companies.  

@@ -16,7 +16,7 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2](../includes/2019_releasewave2.md)]
  
-In AL, you can create and manage number sequences that generate numeric identifiers for data and records. [!INCLUDE[prod_short](includes/prod_short.md)] number sequences are built on SQL Server number sequences, which means that they are not associated with any tables. Instead, the application code references the number sequence object and coordinates the values across records.
+In AL, you can create and manage number sequences that generate numeric identifiers for data and records. [!INCLUDE[prod_short](includes/prod_short.md)] number sequences are built on SQL Server sequences, which means that they are not associated with any tables. Instead, the application code references the number sequence object and coordinates the values across records.
 
 The numbers in a number sequence are generated in ascending order at a defined interval. Numbers are used sequentially, but numbers can be skipped. This means that numbers used on records in tables can have gaps. These gaps, for example, can occur when transactions are rolled back or numbers are allocated but not used.
 
@@ -70,4 +70,4 @@ number := NumberSequence.Next('MySequence',true); ​
 
 ## See Also  
 [Number Sequence data type](methods-auto/numbersequence/numbersequence-data-type.md)  
-[SQL Server Sequence Numbers](/sql/relational-databases/sequence-numbers/sequence-numbers?view=sql-server-2017)  
+[SQL Server Sequences](/sql/relational-databases/sequence-numbers/sequence-numbers)  
