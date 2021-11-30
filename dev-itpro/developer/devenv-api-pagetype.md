@@ -3,7 +3,7 @@ title: "API Page Type"
 description: "Description of the API page type used for exposing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/30/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -28,7 +28,7 @@ At design time, the compiler will show warnings on casing violations and errors 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Create, read, update, and delete operations
-API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the InsertAllowed, ModifyAllowed, and DeleteAllowed properties respectively.
+API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the [InsertAllowed](properties/devenv-insertallowed-property.md), [ModifyAllowed](properties/devenv-modifyallowed-property.md), and [DeleteAllowed](properties/devenv-deleteallowed-property.md) properties respectively.
 
 ## Example of the API page type
 
