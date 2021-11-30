@@ -34,8 +34,11 @@ ColumnStoreIndex = Field1,Field2;
 ```
 
 ## Remarks
+The property creates a nonclustered columnstore index on the table in SQL server. There can be only one nonclustered columnstore index on a table.
 
-The property creates a nonclustered columnstore index on the table in SQL server. Using this property can improve query performance for large tables. For more information, see [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
+Using a nonclustered columnstore index can improve the performance for analytical queries on large tables. 
+
+For more information, see [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
