@@ -72,6 +72,27 @@ A secondary key with included fields can improve SQL query performance, especial
 ### System keys
 There's always a unique secondary key on the **SystemId** field.
 
+### Non-clustered Columnstore keys
+Starting in the 2021 release wave 2 of Business Central, non-clustered columnstore indexes (sometimes refered to as NCCIs) are supported on tables.
+
+With the ColumnStoreIndex property, you can create a nonclustered columnstore index on the table in SQL server. Using a non-clustered columnstore key can improve query performance when doing analytics on large tables. This index type uses column-based data storage and query processing to achieve gains up to 10 times the query performance in analytical queries over traditional row-oriented storage. You can also achieve gains up to 10 times the data compression over the uncompressed data size on normal tables. 
+
+You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the Business Central database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.) Whenever you would normally add a SIFT key on a number of fields and some fields to do summation/count operations on, with a non-clustered columnstore key, you just add all of them to the index. 
+
+The following illustrates a simple example of replacing two SIFT keys with a single non-clustered columnstore index:
+
+Say that you already have implemented two SIFT keys:
+Key1: "WareHouseId, Color" SumField: "OnStock"
+Key2: "WareHouseId, ItemId, Size" SumField: "OnStock"
+
+With a non-clustered columnstore index, you could instead just have one index defined as ColumnStoreIndex = WareHouseId,Color,ItemId,Size,OnStock
+
+
+For more information, see 
+- [ColumnStoreIndex Property](properties/devenv-columnstoreindex-property.md)
+- [Columnstore indexes: Overview](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/columnstore-indexes-overview)
+
+
 ## Clustered and non-clustered keys
 
 A key definition includes the [Clustered](properties/devenv-clustered-property.md) property that you use to create a clustered index. A clustered index determines the physical order in which records are stored in the table. Based on the key value, records are sorted in ascending order. Using a clustered key can speed up the retrieval of records.
