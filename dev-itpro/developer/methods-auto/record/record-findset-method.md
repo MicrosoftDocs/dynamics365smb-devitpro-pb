@@ -53,7 +53,7 @@ You should use this method only when you explicitly want to loop through a recor
 
 ## Example 1
 
-This example shows how to use the `Findset` method to loop through a set without updating it. This example requires a `CopyLine` method.
+This example shows how to use the `Findset` method to loop through a set without updating it. This example requires a `CopyLine` method, which is not included in this example:
 
 ```al
 
@@ -74,6 +74,34 @@ codeunit 50111 SetFilter
     
 }
 ```
+
+## Example 2
+
+This example shows how to use the `FindSet` method function to loop through a set and update a field that is not within the current key. This example requires a `GetNewLocation` method, which is not included in the example:
+
+```al
+codeunit 50122 SetRange
+{
+    trigger OnRun()
+
+    var
+        SalesLine: Record "Sales Line";
+        DocumentType: Option;
+        DocumentNo: Code[200];
+
+    begin
+        SalesLine.SetRange("Document Type", DocumentType);
+        SalesLine.SetRange("Document No.", DocumentNo);
+        if SalesLine.FindSet(true, false) then begin
+            repeat
+                SalesLine."Location Code" := GetNewLocation(SalesLine);
+                SalesLine.Modify;
+            until SalesLine.Next = 0;
+        End;
+    end;
+}
+```
+
 
 
 ## See Also
