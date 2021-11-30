@@ -46,6 +46,36 @@ Set this parameter to true if you want to modify any field value within the curr
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with `repeat..until`.
+
+## Example 1
+
+This example shows how to use the `Findset` method to loop through a set without updating it. This example requires a `CopyLine` method.
+
+```al
+
+codeunit 50111 SetFilter
+{
+    trigger OnRun()
+    var
+        SalesLine: Record "Sales Line";
+
+    begin
+        SalesLine.SetFilter("Purch. Order Line No.", '<>0');
+        if SalesLine.FindSet then begin
+        repeat
+            CopyLine(SalesLine);  
+        until SalesLine.Next() = 0;  
+        end;  
+    end;
+    
+}
+```
+
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
