@@ -102,6 +102,37 @@ codeunit 50122 SetRange
 }
 ```
 
+## Example 3
+
+This example shows how to use the `FindSet` method to loop through a set and update a field that is within the current key.
+
+```al
+
+codeunit 50125 LoopAndUpdate
+{
+    trigger OnRun()
+
+    var
+        SalesShptLine: Record "Sales Shipment Line";
+        SalesShptLine2: Record "Sales Shipment Line";
+        SalesLine: Record "Sales Line";
+
+    begin
+        SalesShptLine.SetCurrentKey("Order No.", "Order Line No.");
+        SalesShptLine.SetRange("Order No.", SalesLine."Document No.");
+        SalesShptLine.SetRange("Order Line No.", SalesLine."Line No.");
+        if SalesShptLine.FindSet(true, true) then begin
+            repeat
+                SalesShptLine2 := SalesShptLine;
+                SalesShptLine2."Order Line No." := SalesShptLine."Order Line No." + 10000;
+                SalesShptLine2.Modify;
+            until SalesShptLine.Next = 0;
+        END;
+    end;
+
+}
+
+```
 
 
 ## See Also
