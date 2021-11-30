@@ -85,13 +85,15 @@ With the ColumnStoreIndex property, you create a non-clustered columnstore index
 
 You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.) Whenever you would normally add a SIFT key on fields to do summation/count operations on, use a non-clustered columnstore key to add all the fields to the index instead.
 
-The following illustrates a simple example of replacing two SIFT keys with a single non-clustered columnstore index. Suppose you already have implemented two SIFT keys:
+To illustrate, here's a simple example of replacing two SIFT keys with a single non-clustered columnstore index. Suppose you already have implemented two SIFT keys:
 
 Key1: "WareHouseId, Color" SumField: "OnStock"
 
 Key2: "WareHouseId, ItemId, Size" SumField: "OnStock"
 
-With a non-clustered columnstore index, you could just have one index defined as: ColumnStoreIndex = WareHouseId,Color,ItemId,Size,OnStock.
+With a non-clustered columnstore index, you could just have one index defined as:
+
+ColumnStoreIndex = WareHouseId,Color,ItemId,Size,OnStock
 
 For more information, see:
 - [ColumnStoreIndex Property](properties/devenv-columnstoreindex-property.md)
