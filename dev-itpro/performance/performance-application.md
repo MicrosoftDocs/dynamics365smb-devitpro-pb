@@ -39,7 +39,7 @@ Number series in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are
 
 ### Don't adjust cost item entries with too high a frequency
 
-All sales transactions have to get their cost calculated at some point&mdash;either at the time they're posted or batched up for later, like nightly or weekly, where all sales transactions that haven’t had their cost calculated yet are "adjusted". The main reason for postponing this operation to off-hours is that it locks many tables while running for a long time. A good frequency to start could be to do it nightly and then evaluate if it needs to be adjusted to happen more or less frequently.
+All sales transactions have to get their cost calculated at some point&mdash;either at the time they're posted or batched up for later, like nightly or weekly, where all sales transactions that haven’t had their cost calculated yet are "adjusted". The main reason for postponing this operation to off-hours is that it locks many tables while running for a long time. A good frequency to start with could be to do it nightly and then evaluate if it needs to be adjusted to happen more or less frequently.
 
 ### Be cautious with the **Rename/Copy company** operations
 
