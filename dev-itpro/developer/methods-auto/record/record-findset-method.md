@@ -63,7 +63,7 @@ FindSet(True,True) - This is used to update key fields.
 
 This method is designed to optimize finding and updating sets. If you set any or both of the parameters to false, you can still modify the records in the set but these updates will not be performed optimally.
 
-This method works the same way as the `FindSet` Method (Record).
+This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
 
 ## Example 1
 
