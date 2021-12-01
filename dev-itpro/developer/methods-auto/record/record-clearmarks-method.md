@@ -36,11 +36,11 @@ An instance of the [Record](record-data-type.md) data type.
 ## Example
 
 ```al
-var
-    CustomerRec: Record Customer;
-begin
-    CustomerRec.ClearMarks;
-end;
+    var
+        CustomerRec: Record Customer;
+    begin
+        CustomerRec.ClearMarks;
+    end;
 ```  
 
 ## See Also
