@@ -70,9 +70,9 @@ codeunit 50145 IsolatedEventsSample
 
         // Code only reaches this point because the above event is isolated and error thrown in FailingEventSubscriber is caught.
         if (Counter <> 2) then
-            Error('Both event subscribers should have incremented the counter.')
+            Error('Both event subscribers should have incremented the counter.');
 
-        // Postcondition: Customer table hasn't been truncated.
+        // Post-condition: Customer table hasn't been truncated.
         if (cust.IsEmpty) then
             Error('Customer table was truncated, failing event subscriber was not rolled back.');
     end;
