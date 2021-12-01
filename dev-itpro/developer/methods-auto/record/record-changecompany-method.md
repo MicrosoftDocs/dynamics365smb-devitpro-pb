@@ -42,6 +42,44 @@ The name of the company to which you want to change. If you omit this parameter,
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
+
+The **ChangeCompany** method is not affected by the [Reset Method (RecordRef)](recordref-reset-method.md). You can deselect a company by making a new call to **ChangeCompany** or by using the [Clear Method](../system/system-clear-joker-method.md).  
+
+Global filters always belong to a specific company. If you use the following code to select the company named NewCompany, any filters assigned to *RecordRef* will be transferred to *RecordRef* in the new company.  
+
+```al
+Record.ChangeCompany(NewCompany);  
+```  
+
+Even if you run the **ChangeCompany** method, triggers still run in the current company, not in the company that you specified in the **ChangeCompany** method.  
+
+## Example
+
+This example shows how to use the **ChangeCompany** method. The following code takes a Customer record in the current company and redirects it to the table in another company - in this case Company B. The last record in the Customer table of Company B is then deleted.
+
+```al
+codeunit 50112 ChangeCompany
+{
+    trigger OnRun()
+    var
+        RecID: RecordID;
+        MyRecord: Record Customer;
+        Text000: Label 'Record to be deleted: %1';
+    begin
+        MyRecord.ChangeCompany('Company B');  
+        MyRecord.FindLast;  
+        RecID := MyRecord.RecordId;  
+        Message(Text000, RecID);  
+        MyRecord.Delete;  
+    end;
+}
+
+```  
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
