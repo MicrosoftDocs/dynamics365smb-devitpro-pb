@@ -464,7 +464,7 @@ This task serves two purposes. It ensures that personalization works as expected
 
 On the **Help and Support** page in the client, you'll see an application version, such as 17.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
-We recommend setting the value to application build number for the version 18 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/help/4528706). <!--TODO fix link-->.
+We recommend setting the value to application build number for the version 18 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
 
 1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
