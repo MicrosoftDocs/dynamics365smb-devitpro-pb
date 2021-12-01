@@ -32,6 +32,17 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```al
+var
+    CustomerRec: Record Customer;
+begin
+    CustomerRec.ClearMarks;
+end;
+```  
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
