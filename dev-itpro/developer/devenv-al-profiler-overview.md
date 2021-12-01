@@ -4,7 +4,7 @@ description: "Description of how to use the AL profiler to analyze method calls 
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/04/2021
+ms.date: 12/01/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -49,8 +49,8 @@ This means that if we want to use the snapshot both for debugging and profiling 
 
 Then, when the snapshot file is downloaded, you can generate a profile file. This can be done in one of two ways:
 
-1. Open the command palette using the `Ctrl+Shift+P`, select the **AL: Generate profile file** command and choose a snapshot from the dropdown menu.
-1. In the Visual Studio Code explorer, right-click the snapshot file and choose **Generate profile file**.
+1. Open the Command Palette by using the **Ctrl+Shift+P** shortcut, then select the **AL: Generate profile file** command and choose a snapshot from the dropdown menu.
+1. Alternatively, in the Visual Studio Code explorer, right-click the specific snapshot file and choose **Generate profile file**.
 
 The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in Visual Studio Code.
 
