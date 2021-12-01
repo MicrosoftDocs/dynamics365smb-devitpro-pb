@@ -49,7 +49,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 When you add a link to a page or a table, an entry is created in the **Record Link** system table. Each entry is given an ID.  
   
-The URL can be a link to a website, a file stored on the local computer or on a remote computer, or a link to a [!INCLUDE[prod_short](includes/prod_short.md)] page.  
+The URL can be a link to a website, a file stored on the local computer or on a remote computer, or a link to a [!INCLUDE [prod_short](../../includes/prod_short.md)] page.  
 
 ## Example
 
