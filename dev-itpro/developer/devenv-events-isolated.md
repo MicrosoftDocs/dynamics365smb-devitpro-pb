@@ -28,7 +28,7 @@ Read-only transactions are allowed to call isolated events directly, but write t
 
 ### Rollback
 
-Only changes done via Modify/Delete/Insert on records of type `TableType: Normal` will be automatically rolled back. Other state changes, like HTTP calls, variable alterations, changes to single instance codeunit's members, won't be rolled back.
+Only changes done via Modify/Delete/Insert methods on records of type `TableType: Normal` will be automatically rolled back. Other state changes, like HTTP calls, variable alterations, changes to single instance codeunit's members, won't be rolled back.
 
 For example, if an integer variable that's passed by VAR is modified by a failing event subscriber, its changes will persist.
 
@@ -36,7 +36,7 @@ For example, if an integer variable that's passed by VAR is modified by a failin
 
 When the operation is installing, uninstalling, or upgrading extensions, isolated events aren't run isolated. The events run normally instead. 
 
-The reason for this behavior is that these operations require that all operations within them are done in one transaction. So one can neither explicitly call commit during these.
+The reason for this behavior is that these operations require that all operations within them are done in one transaction. So explicit commit calls can't be made within these operations.
 
 ## How to define an isolated event
 
