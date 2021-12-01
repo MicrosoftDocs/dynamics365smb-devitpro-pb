@@ -36,7 +36,7 @@ For example, if an integer variable that's passed by VAR is modified by a failin
 
 When the operation is installing, uninstalling, or upgrading extensions, isolated events aren't run isolated. The events run normally instead. 
 
-The reason for this behavior is that these operations require that all operations within them are done in one transaction. So explicit commit calls can't be made within these operations.
+The reason for this behavior is that these operations require that all operations within them are done in one transaction. So explicit commit calls can't be made during the operations.
 
 ## How to define an isolated event
 
