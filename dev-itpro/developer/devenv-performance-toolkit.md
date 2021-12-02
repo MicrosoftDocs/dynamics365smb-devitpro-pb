@@ -81,11 +81,10 @@ RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential $Credentia
 
 ```
 
-To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] onpremise database, run the following command:
+To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] on-premises database, run the following command:
 
 ```
 RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Credential -TestRunnerPage 149002 -SuiteCode "TRADE-50U" -ServiceUrl <webclient address> -BCPTTestRunnerInternalFolderPath <path to Internal folder>
-
 ```
 
 > [!NOTE]
@@ -96,13 +95,13 @@ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Cre
 > - Environment:
 > Specifies the environment the tests will be run in. The supported values are 'PROD', 'TIE' and 'OnPrem'. Default is 'PROD'.
 > - AuthorizationType:
-> Specifies the authorizatin type needed to authorize to the service. The supported values are 'Windows','NavUserPassword' and 'AAD'
+> Specifies the authorization type needed to authorize to the service. The supported values are 'Windows','NavUserPassword' and 'AAD'
 > - SandboxName:
 > Specifies the sandbox name. This is necessary only when the environment is either 'PROD' or 'TIE'. Default is 'sandbox'.
 > - ServiceUrl:
-> Specifies the base url of the service. This parameter is used only in 'OnPrem' environment. Example http://localhost:8080/PerformanceToolkit
+> Specifies the base URL of the service. This parameter is used only in 'OnPrem' environment. Example http://localhost:8080/PerformanceToolkit
 > - ClientId:
-> Specifies the guid that the BC is registered with in AAD. To setup an AAD go to https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess
+> Specifies the guid that the Business Central is registered with in Azure AD. To setup Azure AD, go to https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess
 
 ## Analyzing Results
 When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
@@ -122,7 +121,7 @@ This example shows how to use Single Run mode for performance regression testing
 The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline. 
 
 > [!TIP]
-> If you attach an application Insights key in the admin center or NST then the log entries are also shown in the Application Insights ID.
+> If you attach an Application Insights key or connection string in the admin center for online or [!INCLUDE[server](includes/server.md)] for on-premises then the log entries are also shown in the Application Insights ID.
 
 ## To run a test in Single Run mode
 The following steps provide an example of how to run a PRT in Single Run mode.
