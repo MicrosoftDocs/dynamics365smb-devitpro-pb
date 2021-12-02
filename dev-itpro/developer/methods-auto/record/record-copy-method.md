@@ -41,6 +41,9 @@ Specifies whether the method copies filters, views, automatically calculated Flo
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+ The following example copies a record to another record in the **Customer** table. The [GET Function \(Record\)](GET-Function--Record-.md) retrieves record number 30000 from the **Customer** table and stores record in the sourceRecord variable. The **COPY** function copies the record that is stored in the sourceRecord to the destRecord. The *ShareTable* parameter is set to **true** because the [Temporary Property](Temporary-Property.md) for the both sourceRecord and destRecord are set to **Yes** to make the records temporary. If the record is copied, then a message indicating that the record is copied is displayed in a message box. Otherwise, a message indicating that the record is not copied is displayed. This example requires that you create the following variables and text constant in the **C/AL Globals** window.  
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
