@@ -3,11 +3,11 @@ title: "Working with Repeater Controls"
 description: A repeater is a control used to define a list of records from the source table of a page.
 author: blrobl
 ms.custom: na
-ms.date: 11/13/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -24,7 +24,7 @@ Pages of the type **[API](devenv-api-pagetype.md    )** are also designed to int
 
 The following figure illustrates how a list created by a repeater is displayed in the Web Client.
 
-![List part overview](media/sample-list-part.png "List part overview")
+![List part overview.](media/sample-list-part.png "List part overview")
 
 > [!NOTE]
 > The Web client does not support displaying Repeater controls that contain other Parts or FlowFilter fields.

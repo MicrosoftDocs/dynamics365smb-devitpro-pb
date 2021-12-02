@@ -3,25 +3,25 @@ title: "Page Types and Layouts"
 description: "Understanding page types to be able to create good user experience in Business Central." 
 author: jacobwj
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
 # Page Types and Layouts
 
-Understanding how [!INCLUDE[prodshort](includes/prodshort.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
+Understanding how [!INCLUDE[prod_short](includes/prod_short.md)] displays a page dependent on its *page type* is important to be able to create a good user experience. There are also several page properties and variations of the page structures that can help create an intuitive and efficient user interface.
 
-In the following we are focusing on how pages appear when a user accesses [!INCLUDE[prodshort](includes/prodshort.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the [!INCLUDE[prodshort](includes/prodshort.md)] page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
+In the following we are focusing on how pages appear when a user accesses [!INCLUDE[prod_short](includes/prod_short.md)] from a desktop browser. But it is an important point that the same page types apply across the different form factors of apps, and that the [!INCLUDE[prod_short](includes/prod_short.md)] page type layouts automatically adapt to work well on different devices, e.g. on a phone or a tablet. 
 
 ## Understanding page types 
 
 Choosing the right page type is the first step when creating or modifying a page. The next step is to organize the page contents to suit its purpose in your solution. We recommend that you design pages based on the user tasks that you want to support. 
 
-The following table provides an overview of the page types supported in [!INCLUDE[prodshort](includes/prodshort.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
+The following table provides an overview of the page types supported in [!INCLUDE[prod_short](includes/prod_short.md)], their typical uses, and basic characteristics. To specify the page type, use the `PageType` property. For more information, see [PageType Property](properties/devenv-pagetype-property.md).
 
 
 |Page type|Examples of use|Main data display|Characteristics|
@@ -50,7 +50,7 @@ A fundamental characteristic of a page type is how it relates to the data presen
 
 #### Entity-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction, or other important business event, e.g. a sales transaction.
+In [!INCLUDE[prod_short](includes/prod_short.md)], entity-oriented pages are used to support users when their tasks revolve around a single business entity. The most typical entity-oriented page is the `Card`, which provides details about a single customer or other master data, and the `Document`, which represents a single transaction, or other important business event, e.g. a sales transaction.
 
 `ListPlus` is also an entity-oriented page type. Unlike `Card` and `Document` pages, the `ListPlus` page type is for pages that have a prominent `ListPart` and either few or no header fields.
 
@@ -61,7 +61,7 @@ The `CardPart` page type is an entity-oriented page type for inclusion in anothe
 
 #### Collection-oriented pages 
 
-In [!INCLUDE[prodshort](includes/prodshort.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (for example showing customers, items, and so on.) from which the user can seek out the entities to work with.
+In [!INCLUDE[prod_short](includes/prod_short.md)], collection-oriented pages are used to support users when their tasks involve multiple entities or records at the same time. The most typical collection-oriented page type is the `List` (for example showing customers, items, and so on.) from which the user can seek out the entities to work with.
 
 The `Worksheet` is the other prominent collection-oriented page type, suited for data entry (for example, in journal pages) and other tasks related to managing a set of entities/entries based on custom fields above and/or below the collection.
 
@@ -69,7 +69,7 @@ The `ListPart` page type is a collection-oriented page type for inclusion in ano
 
 #### Dialog pages
 
-The page types in [!INCLUDE[prodshort](includes/prodshort.md)] that are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types, can represent an entity *or* a collection. The title caption and actions are suited for both types.
+The page types in [!INCLUDE[prod_short](includes/prod_short.md)] that are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types, can represent an entity *or* a collection. The title caption and actions are suited for both types.
 
 ## Composing pages 
 
@@ -77,7 +77,7 @@ Within a page, the developer can combine page fields into groups. This can help 
 
 Besides adding fields and groups to a page, it is possible to embed another page of type `CardPart` or `ListPart`. (These two page types can in turn not embed other pages.) 
 
-When pages are created that embed parts, [!INCLUDE[prodshort](includes/prodshort.md)] divides the available screen real estate between the page's groups of fields and any embedded pages. Screen space is divided between field groups and embedded pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
+When pages are created that embed parts, [!INCLUDE[prod_short](includes/prod_short.md)] divides the available screen real estate between the page's groups of fields and any embedded pages. Screen space is divided between field groups and embedded pages such that the user can get access to the full contents of the page and collapse/expand specific sections of interest. 
 
 How space allocation takes place for a given page depends on the chosen page type, the structure of page contents (field groups and page parts), and on the size of the browser window.
 
@@ -85,7 +85,7 @@ How space allocation takes place for a given page depends on the chosen page typ
 
 For all pages (excluding `RoleCenter`, dialogs, and part pages) there is a common structure to the areas of a page where content, FactBoxes, and actions can be displayed.
 
-![Containers](media/page-layout-containers.png "Containers for Content and FactBoxes, plus actions.")
+![Containers.](media/page-layout-containers.png "Containers for Content and FactBoxes, plus actions.")
 
 The `content` area provides rich layout capabilities, which are described in the coming sections. The `FactBoxes` area is limited to showing a list of parts, usually in a vertical arrangement. The header consists of the title, action bar, and controls for filtering, views, and so on.
 
@@ -97,23 +97,23 @@ In the following sections you find descriptions of typical page layouts, recomme
 
 |Symbol|Section|Notes|
 |---------|---------------|----|
-|![CardPart or Group](media/page-layout-cardpartgroup.png "CardPart or field group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
-|![Designer action bar on ListPart](media/page-layout-listpart.png "ListPart section")|ListPart|List or table layout, with integrated action bar.|
-|![Designer action bar on Repeater](media/page-layout-repeater.png "Repeater section")|Repeater|List or table layout.|
+|![CardPart or Group.](media/page-layout-cardpartgroup.png "CardPart or field group section")|Group of fields, or CardPart|Appears on the page as a FastTab, with fields wrapped in one or more columns.|
+|![Designer action bar on ListPart.](media/page-layout-listpart.png "ListPart section")|ListPart|List or table layout, with integrated action bar.|
+|![Designer action bar on Repeater.](media/page-layout-repeater.png "Repeater section")|Repeater|List or table layout.|
 
 ### Sizing of page sections
 
 The groups of fields and page parts making up a page are rendered when the user opens the page.
 
-Dependent on the size of the available screen real estate, for example, in the browser window on a desktop computer, [!INCLUDE[prodshort](includes/prodshort.md)] sizes the sections automatically to make the most of the space.
+Dependent on the size of the available screen real estate, for example, in the browser window on a desktop computer, [!INCLUDE[prod_short](includes/prod_short.md)] sizes the sections automatically to make the most of the space.
 
 There are three different ways a section's size are determined. 
 
 |Symbol|Layout behavior|Notes|
 |---------|---------------|----|
-|![Designer action bar size to content](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
-|![Designer action bar size with limits](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
-|![Designer action bar size to fill space](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar size to content.](media/page-layout-lock1.png "Page layout modes")|Size to content|Enclosing page will use a scrollbar if needed.|
+|![Designer action bar size with limits.](media/page-layout-lock2.png "Page layout modes")|Size to content within certain limits|The part will use a scrollbar if content exceeds available space.|
+|![Designer action bar size to fill space.](media/page-layout-lock3.png "Page layout modes")|Size to fill space|The part will use a scrollbar if content exceeds available space.|
 
 Which of the section sizing behavior is used is dependent on the chosen page type. For each of the page types described in the sections below, we present the typical layouts, and the way that the sections are sized.
 
@@ -130,14 +130,14 @@ Below are examples of Card and Document page compositions, showing how space is 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
 |Sections are placed vertically from top to bottom of the page.|A ListPart can be embedded. In this case, the ListPart's height is limited.|When a ListPart is embedded as the last part on the page, it will expand to fill space.|
-|![Card layout example 1](media/page-layout-card-1.png "Card example 1")|![Card layout example 2](media/page-layout-card-2.png "Card example 2")|![Card layout example 3](media/page-layout-card-3.png "Card example 3")|
+|![Card layout example 1.](media/page-layout-card-1.png "Card example 1")|![Card layout example 2](media/page-layout-card-2.png "Card example 2")|![Card layout example 3](media/page-layout-card-3.png "Card example 3")|
 
 ### Document layouts
 
 |Example 1|Example 2|Example 3|
 |---------|---------|---------|
 |Sections are placed vertically from top to bottom of the page. The lines ListPart comes after the header section(s).|Multiple ListParts can be embedded. In this case, the first ListPart is allowed the most space.|When no ListPart is embedded, the Document layout follows the Card layout exactly.|
-|![Document layout example 1](media/page-layout-doc-1.png "Document example 1")|![Document layout example 2](media/page-layout-doc-2.png "Document example 2")|![Document layout example 3](media/page-layout-doc-3.png "Document example 3")|
+|![Document layout example 1.](media/page-layout-doc-1.png "Document example 1")|![Document layout example 2](media/page-layout-doc-2.png "Document example 2")|![Document layout example 3](media/page-layout-doc-3.png "Document example 3")|
 
 > [!NOTE]  
 > The Document page type allows the first ListPart on the page to use additional vertical space before showing a scrollbar. This allows more space for showing the document lines without requiring the user to scroll.
@@ -167,7 +167,7 @@ A ListPlus page should generally not contain a repeater control but will typical
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |Page sections are placed from top to bottom. The first ListPart fills vertical space.|When placing two or more ListParts, they'll share available vertical space.|When placing two ListParts in a group, they share horizontal space.|
-|![ListPlus layout example 1](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout example 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout example 3](media/page-layout-listplus-3.png "ListPlus example 3")|
+|![ListPlus layout example 1.](media/page-layout-listplus-1.png "ListPlus example 1")|![ListPlus layout example 2](media/page-layout-listplus-2.png "ListPlus example 2")|![ListPlus layout example 3](media/page-layout-listplus-3.png "ListPlus example 3")|
 
 From the user's perspective, the following are qualities of a well-designed ListPlus page:
 
@@ -186,7 +186,7 @@ List pages must contain a single `Repeater` group. In addition, a list can embed
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The repeater control assumes full vertical space.|When a field group or cardpart is embedded, space for repeater is reduced.|When a listpart is embedded, space is shared equally between part and repeater.|
-|![List layout example 1](media/page-layout-list-1.png "List example 1")|![List layout example 2](media/page-layout-list-2.png "List example 2")|![List layout example 3](media/page-layout-list-3.png "List example 3")|
+|![List layout example 1.](media/page-layout-list-1.png "List example 1")|![List layout example 2](media/page-layout-list-2.png "List example 2")|![List layout example 3](media/page-layout-list-3.png "List example 3")|
 
 From the user's perspective, the following are qualities of a well-designed List page:
 
@@ -210,7 +210,7 @@ Worksheet pages must contain a single `Repeater` group. In addition, a worksheet
 |Example 1|Example 2|Example 3|
 |---------|---------------|----|
 |The repeater control takes full vertical space, but leaving space for a group or CardPart above.|A group, CardPart, or ListPart can be embedded below the repeater that then assumes the remaining vertical space.|Groups and/or parts are embedded above and below, leaving the remaining vertical space for the repeater.| 
-|![Worksheet layout example 1](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout example 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout example 3](media/page-layout-worksheet-3.png "Worksheet example 3")|
+|![Worksheet layout example 1.](media/page-layout-worksheet-1.png "Worksheet example 1")|![Worksheet layout example 2](media/page-layout-worksheet-2.png "Worksheet example 2")|![Worksheet layout example 3](media/page-layout-worksheet-3.png "Worksheet example 3")|
 
 From the user's perspective, the following are qualities of a well-designed worksheet page:
 
@@ -221,13 +221,13 @@ From the user's perspective, the following are qualities of a well-designed work
 
 ## Dialog page layouts 
 
-Some page types in [!INCLUDE[prodshort](includes/prodshort.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
+Some page types in [!INCLUDE[prod_short](includes/prod_short.md)] are available exclusively for displaying dialogs, such as the `StandardDialog` and `ConfirmationDialog` page types. In addition, there are programmatic ways in AL to display a dialog to the user with the Dialog data type, as well as dialogs defined as report request pages.
 
 It is also possible to use the common page types (`Card`, `Document`, `List`, etc.) to present a dialog to the user. In this case, pages are created, composed, and can embed the same elements, as when displayed ordinarily. Presenting the page to the user as a dialog requires certain AL code that activates the dialog mode. When this happens, the page is shown with dismiss buttons in the page footer.
 
-![Dialog page layouts example](media/page-layout-dialog.png "Dialog page layout")
+![Dialog page layouts example.](media/page-layout-dialog.png "Dialog page layout")
 
-Generally, [!INCLUDE[prodshort](includes/prodshort.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
+Generally, [!INCLUDE[prod_short](includes/prod_short.md)] displays dialogs on the screen in a frame that is more narrow and not taking up full vertical height, compared to how pages appear ordinarily. Aside from that, pages lay out their contents according to the same principles, whether displayed as a dialog or not.
 
 Given the size of the screen where the dialog appears, more or less of the page contents will be visible without scrolling. When a page contains a lot of content, it is possible for the user to increase the dialog size with the maximize button.  
 > [!NOTE]  

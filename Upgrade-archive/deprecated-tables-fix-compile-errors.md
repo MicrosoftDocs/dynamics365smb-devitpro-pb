@@ -417,7 +417,62 @@ usercontrol(FlowAddin; "Microsoft.Dynamics.Nav.Client.FlowIntegration")
                     SetIsDeployingReports(false);
                     exit;
                 end; */
-```  
+```
+
+
+
+## The procedure with name OnModify has the same name as a declared trigger
+
+
+
+|AL File|Object|
+|---------------------|--------------|
+|Contact.Table.al|table 5050 Contact|
+
+1. In the Contact.Table.al file, give the `procedure OnModify(xRec: Record Contact)` a different name.
+2. Change the following calls to the new name in the Contact.Table.al file:
+
+    `OnModify(xRec);`
+        
+    `Cont.OnModify(OldCont);`
+3. Change the following calls to the new name in the Contact.Table.al file:
+
+    `OnModify(xRec);`
+ 
+## Triggers can be called directly
+
+|AL File|Object|
+|---------------------|--------------|       
+|CustContUpdate.Codeunit.al|codeunit 5056 "CustCont-Update"|
+|BankContUpdate.Codeunit.al|codeunit 5058 "BankCont-Update"|
+|CustContUpdate.Codeunit.al|codeunit 5056 "CustCont-Update"|
+|VendContUpdate.Codeunit.al|codeunit 5057 "VendCont-Update"|
+
+Comment out this line:
+
+```al
+//Cont.OnModify(OldCont);
+```
+
+
+## Session list 
+
+|AL File|Object|
+|---------------------|--------------|       
+|ChangeGlobalDimensions.Codeunit.al|codeunit 483 "Change Global Dimensions"|
+
+
+
+
+    local procedure SendCloseSessionsNotification()
+    var
+        //DummySessionListPage: Page "Session List";
+        Notification: Notification;
+    begin
+/*         PrepareNotification(Notification, GetCloseSessionsNotificationID, CloseActiveSessionsMsg);
+        Notification.AddAction(DummySessionListPage.Caption, CODEUNIT::"Change Global Dimensions", 'ShowActiveSessions');
+        Notification.Send; */
+
 ### See Also
 
 [Technical Upgrade](upgrade-technical-upgrade-v15-v16.md)

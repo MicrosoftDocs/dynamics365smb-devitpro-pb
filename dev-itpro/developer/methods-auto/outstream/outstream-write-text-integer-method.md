@@ -1,24 +1,27 @@
 ---
-title: "OutStream.Write Method"
+title: "OutStream.Write(Text [, Integer]) Method"
+description: "Writes a specified number of bytes to the stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# OutStream.Write Method
+# OutStream.Write(Text [, Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Writes a specified number of bytes to the stream. Data is written in binary format.
 
 
 ## Syntax
-```
+```AL
 [Written := ]  OutStream.Write(Value: Text [, Length: Integer])
 ```
 ## Parameters
@@ -30,21 +33,21 @@ An instance of the [OutStream](outstream-data-type.md) data type.
 &emsp;Type: [Text](../text/text-data-type.md)  
 Contains the data to be written.
         
-*Length*  
+*[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes to be written. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, an error message is displayed.  
 
 
 ## Return Value
-*Written*  
+*[Optional] Written*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of bytes that were written. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The number of bytes that were written. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
-WRITE adds a zero byte at the end of the stream. This is differs from WRITETEXT, which does not. For more information about how zero bytes and line endings are written and read, see [WRITE, WRITETEXT, READ, and READTEXT Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
+Write adds a zero byte at the end of the stream. This is differs from WriteText, which does not. For more information about how zero bytes and line endings are written and read, see [Write, WriteText, Read, and ReadText Method Behavior Regarding Line Endings and Zero Terminators](../../devenv-write-read-methods-line-break-behavior.md).
  
 If the optional return value, *Written*, is not specified and it was not possible to write all the data, an error message is displayed.  
   
@@ -53,16 +56,16 @@ If the optional return value, *Written*, is not specified and it was not possibl
 ## Example  
   
 
-```
+```al
  var
     recBinaries: Record "Company Information";
     OStream: OutStream;
     Txt: Text;
 begin 
-    recBinaries.FIND('-');  
-    recBinaries.Picture.CREATEOUTSTREAM(OStream);   
-    OStream.WRITE(Txt);  
-    recBinaries.MODIFY();  
+    recBinaries.Find('-');  
+    recBinaries.Picture.CreateOutstream(OStream);   
+    OStream.Write(Txt);  
+    recBinaries.Modify();  
 end;
 ```   
   

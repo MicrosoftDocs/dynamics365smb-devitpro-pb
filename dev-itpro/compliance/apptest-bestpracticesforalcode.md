@@ -4,9 +4,9 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/22/2020
+ms.date: 09/10/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -20,11 +20,16 @@ This page defines some of the best practices to follow when writing AL code for 
 
 ## Extension structure 
 
-An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.   
+An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.
 
 ## File naming 
 
-Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects.
+Each file name has object names with only characters [A-Za-z0-9], object type, and dot al, for file type. In your extension, the name of each new application object (table, page, codeunit), can contain a prefix or suffix. 
+
+The CodeCop analyzer suggests that the object name is part of the file name, which is encouraged as a best practice. Adding any affixes to the file names is voluntary.
+
+> [!NOTE]  
+> If you are submitting an app to AppSource, you must follow the guidance in the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
 
 ### File naming notation
 
@@ -34,6 +39,7 @@ Follow the syntax for file naming as shown below:
 |------|---------------------------|
 |`<ObjectNameSuffix>.<FullTypeName>.al`|`<ObjectNameSuffix>.<FullTypeName>Ext.al`|
 |`<PrefixObjectName>.<FullTypeName>.al`|`<PrefixObjectName>.<FullTypeName>Ext.al`|
+|`<ObjectNameExcludingAffix>.<FullTypeName>.al`|`<ObjectNameExcludingAffix>.<FullTypeName>Ext.al`|
 
 ### Type map
 
@@ -56,6 +62,20 @@ Use the listed abbreviations for each type of object in the file naming:
 |Control Add-ins|ControlAddin|
 |Dotnet    |Dotnet|
 |Profile   |Profile|
+|Interface |Interface|
+|Permission Set|PermissionSet|
+|Permission Set Extension|PermissionSetExt|
+
+
+### File naming examples
+
+For the listed objects above, these are examples of the file naming.
+
+|Object name|File name|
+|------|---------------------------|
+|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
+|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
+|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
 
 ### Examples of object naming
 
@@ -71,7 +91,7 @@ table 70000000 MyPrefixSalesperson
 page 70000000 MyPrefixSalesperson
 ```
 
-#### Page extension
+#### Action
 
 ```
 actions
@@ -87,20 +107,10 @@ actions
 codeunit 70000000 MyPrefixSalesperson
 ```
 
-### File naming examples
-
-For the listed objects above, these are examples of the file naming.
-
-|Object name|File name|
-|------|---------------------------|
-|codeunit 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Codeunit.al`|
-|page 70000000 MyPrefixSalesperson|`MyPrefixSalesperson.Page.al`|
-|page 70000000 MyPrefixSalesperson extends "Customer Card"|`MyPrefixSalesperson.PageExt.al`|
-
-
 ## Formatting
 
 We recommend keeping your AL code properly formatted as follows:
+
 - Use all lowercase letters for reserved language keywords. Built-in methods and types are not included in this rule because they are written using Pascal case. 
 - Use four spaces for indentation. 
 - Curly brackets are always on a new line. If there is one property, put it on a single line. 
@@ -124,14 +134,14 @@ page 123 PageName
     }
 
     var
-        TempCustomer: Record Customer temporary;
+        tempCustomer: Record Customer temporary;
 
     [EventSubscriber(ObjectType::Page, Page::"Item Card", 'OnAfterGetCurrRecordEvent', '', false, false)]
     local procedure OnOpenItemCard(var rec: Record Item)
     var
-        OnRecord: Option " ", Item, Contact;
+        onRecord: Option " ", Item, Contact;
     begin
-        EnablePictureAnalyzerNotification(rec."No.", OnRecord::Item);
+        EnablePictureAnalyzerNotification(rec."No.", onRecord::Item);
     end;
 }
 
@@ -178,7 +188,7 @@ In AL, objects are referenced by their object name, not by their ID.
 Page.RunModal(Page::"Customer Card", ...)
  
 var
-    Customer: Record Customer;
+    customer: Record Customer;
 ```
 
 ## Variable and field naming 
@@ -199,8 +209,8 @@ Furthermore:
 ### Example
 
 ```
-TempCustomer: Record Customer temporary;
-Vendor: Record Vendor; 
+tempCustomer: Record Customer temporary;
+vendor: Record Vendor; 
 ```
 
 ## Method declaration 
@@ -245,7 +255,7 @@ When declaring a variable or a parameter, the name of that variable or parameter
 
 ```
 var
-    Number: Integer;
+    number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```

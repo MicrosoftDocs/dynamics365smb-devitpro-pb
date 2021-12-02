@@ -3,11 +3,11 @@ title: "Deploying a Tenant Customization"
 description: "Overview of the how you deploy an .app package with a tenant customization to Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -38,7 +38,7 @@ The extension you are deploying could be the initial release of the customizatio
 
 ## Extension uniqueness requirements
 
-If you are developing and deploying an updated version of a previously-deployed extension, you must keep the app ID the same and increase the version number to successfully upgrade the extension. The deployment services require that uploaded extension packages be unique across all tenants based on several sets of keys:
+If you are developing and deploying an updated version of a previously-deployed extension, you must keep the app ID the same and increase the version number to successfully upgrade the extension. The deployment services require that uploaded extension packages be unique per tenant based on several sets of keys:
 
 - Package ID
 - App ID + Version
@@ -49,11 +49,12 @@ If you are developing and deploying an updated version of a previously-deployed 
 
 If you have successfully deployed an extension to a tenant, and then recompile the extension’s source code without updating version number, this generates a new extension package file with a new package ID. If you try to upload this new extension package file to a different tenant, the upload will fail with the error similar to `An extension with same App ID and version has already been uploaded. Resolve and deploy again.`. Similarly, if an extension failed to deploy, and you try to upload a new extension package with the same version number, the upload will fail as well.
 
+<!-- 
 When developing a per-tenant extension from the same source code as an extension for multiple tenants, we recommend that you adjust the App ID, Name, Publisher, and Version of the extension for each tenant to maintain uniqueness. You may deploy the same extension package to multiple tenants if the package ID, app ID, name, publisher, and version are all the same.
 
 If, when creating a new sandbox environment as a copy of a production environment, you receive a message indicating that the environment creation failed due to an existing development extension, it is related to violation of uniqueness requirements for extension packages.
 
-Typically this situation is the result of the production environment being copied having an extension package installed with the same app ID, name, publisher, and version as a development extension published to another sandbox environment within the same application service. To resolve this situation, remove the development extension by unpublishing it via the Extension Management page of the other sandbox environment once you have made sure you have a backup of the extension development files. After this is completed you can attempt to copy a production environment to a sandbox again. It is recommended that when you create the extension package for distribution, you use a different app ID than that used for your development extension, which will help you avoid this conflict between your development sandbox and your customer’s production and sandbox environments.
+Typically this situation is the result of the production environment being copied having an extension package installed with the same app ID, name, publisher, and version as a development extension published to another sandbox environment within the same application service. To resolve this situation, remove the development extension by unpublishing it via the Extension Management page of the other sandbox environment once you have made sure you have a backup of the extension development files. After this is completed you can attempt to copy a production environment to a sandbox again. It is recommended that when you create the extension package for distribution, you use a different app ID than that used for your development extension, which will help you avoid this conflict between your development sandbox and your customer’s production and sandbox environments. -->
 
 ## Upgrades and per-tenant extensions
 

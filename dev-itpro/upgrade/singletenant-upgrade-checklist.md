@@ -2,11 +2,11 @@
 title: "Single-Tenant Full Upgrade Quick Reference"
 description: Get an overview of the steps required to upgrade from one version of Business Central on-premises to the next.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ms.service: "dynamics365-business-central"
 author: jswymer
@@ -30,9 +30,9 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Backup the database.|[See...](https://go.microsoft.com/fwlink/?LinkID=296465)||
+|Backup the database.|[See...](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server)||
 |Uninstall all extensions.|[See...](../developer/devenv-unpublish-and-uninstall-extension-v2.md)|
-|Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
+|Upload a [!INCLUDE[prod_short_md](../developer/includes/prod_short.md)] partner license.|[See...](../cside/cside-upload-license-file.md)||
 |Delete all objects except tables.<br /> **Important** Do not synchronize schema at this point.|[See...](upgrading-the-data.md#DeleteObjects)||
 |Clear server instance and debugger breakpoint tables.|[See...](upgrading-the-data.md#ClearServer)||
 
@@ -40,7 +40,7 @@ This article provides an overview of the full upgrade process for Business Centr
 
 |Step|More info| Done |
 |----|-----------|--|
-|Open [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] as an administrator||
+|Open [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] as an administrator||
 |Connect to and convert the database.|[See...](../cside/cside-open-database.md)|
 |Import upgraded application and upgrade toolkit objects (.fob files).<br />**Important:** Select to synchronize **later**.|[See...](../cside/cside-import-objects.md)||
 |Connect a [!INCLUDE[server](../developer/includes/server.md)] instance to the converted  database.|[See...](../administration/connect-server-to-database.md)||

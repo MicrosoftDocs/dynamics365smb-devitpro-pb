@@ -1,24 +1,27 @@
 ---
-title: "IsolatedStorage.Set Method"
+title: "IsolatedStorage.Set(String, String [, DataScope]) Method"
+description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.Set Method
+# IsolatedStorage.Set(String, String [, DataScope]) Method
+> **Version**: _Available or changed with runtime version 2.0._
+
 Sets the value associated with the specified key.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  IsolatedStorage.Set(Key: String, Value: String [, DataScope: DataScope])
 ```
 ## Parameters
@@ -30,15 +33,15 @@ The key of the value to set.
 &emsp;Type: [String](../string/string-data-type.md)  
 The value that will be associated with the specified key.
         
-*DataScope*  
+*[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the stored data. If a value is not passed in, the default value DataScope::Module will be used.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the value was saved successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the value was saved successfully, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

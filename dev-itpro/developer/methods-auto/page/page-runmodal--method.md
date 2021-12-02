@@ -1,24 +1,27 @@
 ---
-title: "Page.RunModal Method"
+title: "Page.RunModal() Method"
+description: "Creates, opens, and closes a page that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.RunModal Method
+# Page.RunModal() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Creates, opens, and closes a page that you specify. When a page is run modally, no input, such as a keyboard or mouse click, can occur except for objects on the modal page.
 
 
 ## Syntax
-```
+```AL
 [Action := ]  Page.RunModal()
 ```
 
@@ -28,9 +31,9 @@ Creates, opens, and closes a page that you specify. When a page is run modally, 
 An instance of the [Page](page-data-type.md) data type.  
 
 ## Return Value
-*Action*  
+*[Optional] Action*  
 &emsp;Type: [Action](../action/action-option.md)  
-Specifies what action the user took on the page.  
+Specifies what action the user took on the page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -52,27 +55,29 @@ In some cases, the actions for the return values are different when the page dis
 |RunObject|The user selected an option that ran another object.|  
 |RunSystem|The user selected an option that ran an external program.|  
 
-## Remarks  
- If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [RUN Method \(Page\)](page-run--method.md).  
+## Remarks
 
- If you do not know the specific page that you want to run, then use the [RUN Method \(Page\)](page-run--method.md) or the **RUNMODAL Method \(Page\)** and specify the page in the *Number* parameter.  
+If you know the specific page that you want to run when you are designing your application, then you can create a Page variable, set the Subtype of the variable to a specific page, and then use this method or the [Run Method \(Page\)](page-run--method.md).  
 
- After you define the page variable, you can use it before and after you run the page. If you use the [RUN Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
+If you do not know the specific page that you want to run, then use the [Run Method \(Page\)](page-run--method.md) or the **RunModal Method \(Page\)** and specify the page in the *Number* parameter.  
 
-## Example  
- This example shows how to use this method. Assume that the *SomePage* variable has been defined as `Page 1`.  
+After you define the page variable, you can use it before and after you run the page. If you use the [Run Method \(Page\)](page-run--method.md), then you can only use the variable before you run the page.  
 
-```  
-CLEAR(SomePage);  
+## Example
+
+This example shows how to use this method. Assume that the *SomePage* variable has been defined as `Page 1`.  
+
+```al
+Clear(SomePage);  
 SomePage.XXX; // Any user-defined method  
-SomePage.SETTABLEVIEW(MyRecord);  
-SomePage.SETRECORD(MyRecord);  
-if SomePage.RUNMODAL = Action::LookupOK then  
-  SomePage.GETRECORD(MyRecord)...  
+SomePage.SetTableView(MyRecord);  
+SomePage.SetRecord(MyRecord);  
+if SomePage.RunModal = Action::LookupOK then  
+  SomePage.GetRecord(MyRecord)...  
 ```  
 
 > [!NOTE]  
->  This code example includes the [CLEAR Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
+> This code example includes the [Clear Method](../system/system-clear-joker-method.md) to make sure that the variable has been cleared.  
 
 ## See Also
 [Page Data Type](page-data-type.md)  

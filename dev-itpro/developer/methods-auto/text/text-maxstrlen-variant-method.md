@@ -1,28 +1,31 @@
 ---
-title: "Text.MaxStrLen Method"
+title: "Text.MaxStrLen(Variant) Method"
+description: "Gets the maximum defined length of a variant variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.MaxStrLen Method
-Gets the maximum defined length of a variant variable. Calling this method always results in a run-time exception.
+# Text.MaxStrLen(Variant) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
+
+Gets the maximum defined length of a variant variable.
 
 
 ## Syntax
-```
+```AL
 MaxLength :=   Text.MaxStrLen(Variant: Variant)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](../variant/variant-data-type.md)  
@@ -32,7 +35,7 @@ The source variant for which you want to find the maximum length.
 ## Return Value
 *MaxLength*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The maximum length of the string variable.  
+The maximum length of the string variable.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -43,7 +46,7 @@ If you call this method on a Variant, it returns an error.
   
 ## Example
 
-```
+```al
 var
     City: Text[30];
     MaxLength: Integer;
@@ -55,7 +58,7 @@ begin
     City := Text000;  
     MaxLength := MaxStrLen(City);  
     Length := StrLen(City);  
-    MESSAGE(Text001 + Text002, MaxLength, Length);  
+    Message(Text001 + Text002, MaxLength, Length);  
 end;
 ```  
   

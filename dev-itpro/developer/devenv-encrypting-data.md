@@ -2,11 +2,11 @@
 title: "Encrypting Data in Dynamics 365 for Business Central"
 description: Learn about encrypting data in Business Central.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -20,7 +20,7 @@ This article gives an overview of data encryption and how to use it to add secur
 ## Cryptography overview
 The methods that support cryptography provide services that enable developers manage encrypting and decrypting data. Each tenant supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional methods are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  
 
- ![Flow between plain text and encrypted text](media/Encryption.jpg "Encryption in Dynamics 365 Business Central")  
+ ![Flow between plain text and encrypted text.](media/Encryption.jpg "Encryption in Dynamics 365 Business Central")  
 
 Encryption keys are stored in a secure location, and retrieved at runtime when needed. Additional functionality is provided to export and import keys, which is important when moving solutions from one location to another.
 

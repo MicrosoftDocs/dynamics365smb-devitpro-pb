@@ -2,11 +2,11 @@
 title: "Developing for Multiple Platform Versions"
 description: "The AL language extension is compatible with multiple platform versions for developing solutions in marketplace." 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: ddb133b9-e940-4db8-bf3a-e5f906600188
 caps.latest.revision: 24

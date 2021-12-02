@@ -2,26 +2,28 @@
 title: Upgrading the Database to in a Multitenant Deployment
 description: This article describes the tasks required for upgrade the data when you have a multitenant deployment. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Upgrading the Data to [!INCLUDE[prodshort](../developer/includes/prodshort.md)]: Multitenant Deployment
+# Upgrading the Data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]: Multitenant Deployment
+
+[!INCLUDE [upgrade-14](../includes/upgrade-14.md)]
 
 [See print-friendly quick reference](multitenant-upgrade-checklist.md)
 
-This article describes the tasks required for upgrading data to the latest [!INCLUDE[prodshort](../developer/includes/prodshort.md)] in a multitenant deployment.
+This article describes the tasks required for upgrading data to the latest [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in a multitenant deployment.
 
 ## About Data Upgrade
 
 In this scenario, you already have an upgraded application that is mounted on a [!INCLUDE[server](../developer/includes/server.md)]. You will then mount the old tenants on the server instance and perform the data upgrade.
 
-You use data conversion tools provided with [!INCLUDE[prodshort](../developer/includes/prodshort.md)] to convert the old data with the old version's table and field structure, so that it functions together with the new version's table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
+You use data conversion tools provided with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to convert the old data with the old version's table and field structure, so that it functions together with the new version's table and field structure. Mainly, only table objects and table data are modified during the data upgrade process. Other objects, such as pages, reports, codeunits, and XMLports are upgraded as part of the application code upgrade process.
 
 The data upgrade process described in this article leads you through the database conversion (technical upgrade) and then the upgrade of the actual data, which is achieved by using the upgrade toolkit/upgrade codeunits.
 
@@ -34,17 +36,17 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
 1. Your computer uses the same codepage as the data that will be upgraded.
 
-    If you use conflicting codepages, some characters will not display in captions, and you might not be able to access the upgraded database. This is because [!INCLUDE[prodshort](../developer/includes/prodshort.md)] must remove incorrect metadata characters to complete the data upgrade. In this case, after upgrade, you must open the database in the development environment on a computer with the relevant codepage and compile all objects. This adds the missing characters again.
+    If you use conflicting codepages, some characters will not display in captions, and you might not be able to access the upgraded database. This is because [!INCLUDE[prod_short](../developer/includes/prod_short.md)] must remove incorrect metadata characters to complete the data upgrade. In this case, after upgrade, you must open the database in the development environment on a computer with the relevant codepage and compile all objects. This adds the missing characters again.
  
 2. (Upgrading from [!INCLUDE[navnow](../developer/includes/navnow_md.md)] only) Custom V1 extensions used in [!INCLUDE[navnow](../developer/includes/navnow_md.md)] have been converted to V2 extensions.
 
     For more information, see [Converting Extensions V1 to Extensions V2](../developer/devenv-upgrade-v1-to-v2-overview.md).
 
-3. [!INCLUDE[prodshort](../developer/includes/prodshort.md)] has been installed with the upgraded application and upgrade toolkit.
+3. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] has been installed with the upgraded application and upgrade toolkit.
 
     As a minimum, you must install the following components:
     - [!INCLUDE[server](../developer/includes/server.md)] instance connected to the application database.
-    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+    - [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] for [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
     - AL Development Environment
         
         This installs the required system and test symbols for V2 extensions.
@@ -63,7 +65,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
 
       For more information, see [Exporting and Importing Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ExportPerms).
 
-    - When upgrading from an earlier version of [!INCLUDE[prodshort](../developer/includes/prodshort.md)]
+    - When upgrading from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
         In the client, search for and open the **Permission Sets** page, select the user-defined permission sets that you want to keep, and then choose **Export Permission Sets**.
 
@@ -111,7 +113,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
  
 4. <a name="PublishNew"></a>Publish new versions of the Microsoft extensions.
 
-    The [!INCLUDE[prodshort](../developer/includes/prodshort.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
+    The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) includes several new versions of Microsoft extensions (that is, extensions that have **Microsoft** as the publisher). If your old deployment uses these extensions, you have to upgrade the old versions to the new versions.
 
     > [!IMPORTANT]
     > For Denmark (DK) and German (DE) versions. Some of the local functionality has been moved from the base application to extensions.
@@ -124,7 +126,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     >|Payment and Reconciliation Formats (DK)|FIK.app |
     >|Tax File Formats (DK)| VATReportsDK.app|
     >
-    > If you are upgrading from a German (DE) version of Dynamics NAV or [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018 (Cumulative Update 2 or earlier), you must publish and install the following extensions to get the local functionality:
+    > If you are upgrading from a German (DE) version of Dynamics NAV or [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (Cumulative Update 2 or earlier), you must publish and install the following extensions to get the local functionality:
     >
     >|Name|Extension package|
     >|----|---------|
@@ -139,7 +141,7 @@ Before you start the upgrade tasks, make sure you have the following prerequisit
     ```
 
 
-5. Upload a [!INCLUDE[prodshort_md](../developer/includes/prodshort.md)] partner license
+5. Upload a [!INCLUDE[prod_short_md](../developer/includes/prod_short.md)] partner license
 
     For more information, see [Uploading a License](../cside/cside-upload-license-file.md).      
 -->
@@ -152,7 +154,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
     Create a full backup of the old database in the SQL Server. Alternatively, you can make a copy of the old database and perform the upgrade tasks on the copy.  
 
-    For more information, see [Create a Full Database Backup \(SQL Server\)](https://go.microsoft.com/fwlink/?LinkID=296465).  
+    For more information, see [Create a Full Database Backup \(SQL Server\)](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).  
 
 2. (Dynamics NAV upgrade only) Uninstall all V1 extensions.
 
@@ -233,7 +235,7 @@ You perform these tasks on each tenant that you want to upgrade.
     1. Open the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator, and then run [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:  
 
     ```  
-    Start-NavDataUpgrade -ServerInstance ServerInstanceName> -FunctionExecutionMode Serial -ContinueOnError  
+    Start-NavDataUpgrade -ServerInstance <ServerInstanceName> -Tenant <TenantID> -FunctionExecutionMode Serial -ContinueOnError  
     ```  
     
     Replace `<ServerInstanceName>` with the name of the [!INCLUDE[server](../developer/includes/server.md)] instance that is connected to the database.
@@ -279,7 +281,7 @@ You perform these tasks on each tenant that you want to upgrade.
 
         For more information, see [How to: Export and Import Permission Sets and Permissions](how-to--import-export-permission-sets-permissions.md#ImportPerms).
 
-    - For upgrade from an earlier [!INCLUDE[prodshort](../developer/includes/prodshort.md)] version:
+    - For upgrade from an earlier [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version:
 
         1. In the client, search for and open the **Permission Sets** page.
         2. Delete all user-defined permissions.
@@ -295,7 +297,7 @@ You perform these tasks on each tenant that you want to upgrade.
     
     - If the old deployment used a web.config file, then you have to manually change the settings in the navsetting.json file that is used on the new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
     
-    - If you upgraded from [!INCLUDE[prodshort](../developer/includes/prodshort.md)] October 2018, you can replace the navsettings.json file on the new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the old file. However, as of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] April 2019, the following  settings are now configured under a root element called `ApplicationIdSettings` instead of the root element `NAVWebSettings`.
+    - If you upgraded from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018, you can replace the navsettings.json file on the new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance with the old file. However, as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019, the following  settings are now configured under a root element called `ApplicationIdSettings` instead of the root element `NAVWebSettings`.
     
         - `AndroidPrivacy`
         - `AndroidSoftwareLicenseTerms`

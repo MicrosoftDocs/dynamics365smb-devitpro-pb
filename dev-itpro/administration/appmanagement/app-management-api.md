@@ -1,12 +1,13 @@
 ---
 title: "App Management API"
+description: Learn about managing Embed apps by using the App Management API.
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -386,13 +387,14 @@ If a version of an app should be available in multiple countries, then the .app 
 |**version**|The minimum version of the dependency.|string|
 |**incompatibleFromVersion**|The initial app version of the dependency that is no longer compatible with the dependent app. If this value is set then it means that versions greater or equal to it are considered incompatible.|string|
 
-
 ### List versions
 
 Lists all `versions` that match the provided filter.
+
 ```
 GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions?$filter=<odata_filter>
 ```
+
 #### Parameters
 
 |Type|Name|Description|Schema|
@@ -451,6 +453,9 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{coun
 > [!IMPORTANT]
 > Make sure that you registered your app with the service and added a country to it, before you attempt to upload the app version.
 
+> [!NOTE]
+> If you want to update app to a version that introduces breaking changes, see [Upgrading an App by Using ForceSync](app-management-updating-with-forcesync.md).
+
 #### Parameters
 
 |Type|Name|Description|Schema|
@@ -507,6 +512,32 @@ POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200
 }
 ```
 
+### Download version 
+
+Downloads the .app file linked to the specified version.
+```
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{countryCode}/versions/{versionNumber}/getPackageContents -OutFile {saveToFile}
+```
+
+#### Parameters
+
+|Type|Name|Description|Schema|
+|---|---|---|---|
+|path|appId|The ID of the app that the version belongs to.|string (uuid)|
+|path|countryCode|The country code.|string|
+|path|versionNumber|The version number of the version to update.|string|
+|path|saveToFile|The path and the name you want to use for file you download.|string|
+
+#### Example Request
+
+Downloads an app file.
+
+```
+POST https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2/getPackageContents -OutFile "C:\temp\ExampleApp-16.0.1.2.app"
+```
+
+
+
 ### Get version
 
 Gets the `version` in the specified `app` and `country`.
@@ -525,7 +556,7 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{count
 #### Example Request
 
 ```
-GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
+GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2 
 ```
 
 #### Example Response
@@ -579,7 +610,7 @@ PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/{appId}/countries/{cou
 Marking an app version as deprecated.
 
 ```
-PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2
+PATCH https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-f10f36a2e213/countries/US/versions/16.0.1.2 
 
 {
     "availability": "Deprecated"

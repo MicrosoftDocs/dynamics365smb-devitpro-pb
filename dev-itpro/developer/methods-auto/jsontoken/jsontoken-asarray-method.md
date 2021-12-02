@@ -1,24 +1,27 @@
 ---
-title: "JsonToken.AsArray Method"
+title: "JsonToken.AsArray() Method"
+description: "Converts the value in a JsonToken to a JsonArray data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonToken.AsArray Method
+# JsonToken.AsArray() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Converts the value in a JsonToken to a JsonArray data type.
 
 
 ## Syntax
-```
+```AL
 Array :=   JsonToken.AsArray()
 ```
 
@@ -30,7 +33,7 @@ An instance of the [JsonToken](jsontoken-data-type.md) data type.
 ## Return Value
 *Array*  
 &emsp;Type: [JsonArray](../jsonarray/jsonarray-data-type.md)  
-The returned JsonArray contains the same data as the JsonToken, but allows array-specific operations to be performed on it.  
+The returned JsonArray contains the same data as the JsonToken, but allows array-specific operations to be performed on it.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

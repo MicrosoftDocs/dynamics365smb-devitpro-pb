@@ -1,26 +1,29 @@
 ---
-title: "TestRequestPage.SaveAsWord Method"
+title: "TestRequestPage.SaveAsWord(String) Method"
+description: "Saves a report as a Microsoft Word (.doc) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage.SaveAsWord Method
+# TestRequestPage.SaveAsWord(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Saves a report as a Microsoft Word (.doc) file.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
  TestRequestPage.SaveAsWord(FileName: String)
 ```
 ## Parameters
@@ -53,23 +56,23 @@ The path and file name to which the report is saved. The file name extension sho
 -   A handler method of type RequestPageHandler called ReqPageHandler. This handler method has one parameter called RequestPage of Type TestRequestPage and Subtype Customer – Top 10 List. The RequestPage parameter is specified as VAR and is passed by reference to the handler method. 
 <!--Links For more information, see [How to: Create Handler Methods](devenv-How-to--Create-Handler-Methods.md).-->  
    
-```  
+```al
 var
     Filename: Text;
 begin
     //Test method: TestSaveAsWord  
-    Filename := TEMPORARYPATH + 'MyRep.doc';  
-    MESSAGE(Filename);  
-    if not FILE.ERASE(Filename) then  
-      ERROR('Cannot erase %1',Filename);  
-    REPORT.RUN(111);  
-    if not FILE.EXISTS(Filename) then  
-      ERROR('File should exist!');  
+    Filename := TemporaryPath + 'MyRep.doc';  
+    Message(Filename);  
+    if not File.Erase(Filename) then  
+      Error('Cannot erase %1',Filename);  
+    Report.Run(111);  
+    if not File.Exists(Filename) then  
+      Error('File should exist!');  
       
     //Request Page Handler method  
-    RequestPage.Customer.SETFILTER("No.", '20000');  
-    RequestPage.ChartType.VALUE('Pie chart');  
-    RequestPage.SAVEASEXCEL(Filename);  
+    RequestPage.Customer.SetFilter("No.", '20000');  
+    RequestPage.ChartType.Value('Pie chart');  
+    RequestPage.SaveAsExcel(Filename);  
 end;
   
 ```

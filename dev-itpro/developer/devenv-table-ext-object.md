@@ -3,9 +3,9 @@ title: "Table Extension Object"
 description: "Description of the table extension object."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -29,6 +29,8 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > [!IMPORTANT]  
 > Extending tables from Dynamics 365 for Sales is currently not supported.
 
+## Using a table extension to add a key to the base table
+Just like in the table object, you can define keys for fields added in the table extension. But you can also add keys for fields that only exist on the table you extend, in case you want to extend the keys provided in the base table definition. See [Table Keys](devenv-table-keys.md) for examples on how to define keys in a table extension.
 
 ## Snippet support
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

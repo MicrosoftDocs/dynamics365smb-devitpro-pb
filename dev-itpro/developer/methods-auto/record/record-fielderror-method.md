@@ -1,24 +1,27 @@
 ---
-title: "Record.FieldError Method"
+title: "Record.FieldError(Any [, String]) Method"
+description: "Stops the execution of the code causing a run-time error, and creates an error message for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.FieldError Method
+# Record.FieldError(Any [, String]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Stops the execution of the code causing a run-time error, and creates an error message for a field.
 
 
 ## Syntax
-```
+```AL
  Record.FieldError(Field: Any [, Text: String])
 ```
 ## Parameters
@@ -30,7 +33,7 @@ An instance of the [Record](record-data-type.md) data type.
 &emsp;Type: [Any](../any/any-data-type.md)  
 The field for which you want to create an error message.
           
-*Text*  
+*[Optional] Text*  
 &emsp;Type: [String](../string/string-data-type.md)  
 Use this optional parameter to include the text of the error message. If you do not use this parameter, then default text is used as shown in the following examples. You can use backslashes (\\) to break lines.
           
@@ -41,7 +44,7 @@ Use this optional parameter to include the text of the error message. If you do 
 
 ## Remarks  
 
-Like a run-time error, this method causes the system to automatically abort any transaction.  
+Like a run-time error, this method causes the system to automatically end any transaction.  
   
 ## Programming guidelines
 
@@ -58,7 +61,7 @@ For more information, see [Progress Windows, Message, Error, and Confirm Methods
  
 In the first example, there is no *Text* parameter and the field does not have a value.
   
-```  
+```al
 var
     CustomerRec: Record Customer;
 
@@ -76,7 +79,7 @@ The following message is displayed:
  
 In the next example, there is no *Text* parameter and the field has a value.
   
-```
+```al
 var
     CustomerRec: Record Customer;
 
@@ -93,7 +96,7 @@ The following message is displayed:
 
 The third example uses a non-empty string as the *Text* parameter.
   
-```  
+```al
 var
     CustomerRec: Record Customer;
     Text001: Label 'is not valid';

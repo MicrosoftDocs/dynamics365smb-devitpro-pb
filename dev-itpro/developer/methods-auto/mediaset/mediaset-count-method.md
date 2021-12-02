@@ -1,28 +1,31 @@
 ---
-title: "MediaSet.Count Method"
+title: "MediaSet.Count() Method"
+description: "Gets the number of media objects that are included in the MediaSet of a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.Count Method
+# MediaSet.Count() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the number of media objects that are included in the MediaSet of a record.
 
 
 ## Syntax
-```
+```AL
 Count :=   MediaSet.Count()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *MediaSet*  
@@ -32,7 +35,7 @@ An instance of the [MediaSet](mediaset-data-type.md) data type.
 ## Return Value
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of media objects that are included in the MediaSet of a record.  
+The number of media objects that are included in the MediaSet of a record.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -40,7 +43,7 @@ The number of media objects that are included in the MediaSet of a record.
 ## Example  
  This example counts the number of media objects that are available for item No. 1000 in table **27 Item** of the [!INCLUDE[demolonglight_md](../../includes/demolonglight_md.md)]. In this example, the field in the **Item** table that is used for the MediaSet data type is **Picture**.  
 
-```
+```al
  var
     itemRec: Record Item;
     count: Integer;

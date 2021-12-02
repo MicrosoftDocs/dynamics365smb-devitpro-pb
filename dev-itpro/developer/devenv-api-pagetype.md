@@ -3,8 +3,8 @@ title: "API Page Type"
 description: "Description of the API page type used for exposing web service endpoints."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
-ms.topic: article
+ms.date: 11/30/2021
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -23,9 +23,12 @@ For the API page type, the following naming conventions exist:
 - Alphanumeric characters allowed (A-Z+a-z+0-9) in above elements. 
 - APIVersion follows the pattern vX.Y or beta.
 
-At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) is exposed on the endpoint of the page. 
+At design time, the compiler will show warnings on casing violations and errors on naming violations. Once an API page is deployed, the corresponding [$metadata](./devenv-connect-apps-tips.md) is exposed on the endpoint of the page. 
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Create, read, update, and delete operations
+API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the [InsertAllowed](properties/devenv-insertallowed-property.md), [ModifyAllowed](properties/devenv-modifyallowed-property.md), and [DeleteAllowed](properties/devenv-deleteallowed-property.md) properties respectively.
 
 ## Example of the API page type
 
@@ -39,7 +42,7 @@ page 50120 MyCustomerApi
     Caption = 'My Customer API';
     APIPublisher = 'contoso';
     APIGroup = 'app1';
-    APIVersion = 'v2.0';
+    APIVersion = 'v2.0', 'v1.0';
     EntityName = 'customer';
     EntitySetName = 'customers';
     SourceTable = Customer;
@@ -75,5 +78,5 @@ page 50120 MyCustomerApi
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  
 [APIVersion Property](properties/devenv-apiversion-page-property.md)   
 [EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)
-[Developing Extensions](devenv-dev-overview.md)  
+[EntitySetName Property](properties/devenv-entitysetname-property.md)  
+[Developing Extensions](devenv-dev-overview.md)

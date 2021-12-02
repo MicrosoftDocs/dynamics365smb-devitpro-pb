@@ -1,24 +1,27 @@
 ---
-title: "TestPage.GetField Method"
+title: "TestPage.GetField(Integer) Method"
+description: "Gets a field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestPage.GetField Method
+# TestPage.GetField(Integer) Method
+> **Version**: _Available or changed with runtime version 3.0 until version 3.0 where it was deprecated._
+
 Gets a field on a test page.
 
 
 ## Syntax
-```
+```AL
 TestField :=   TestPage.GetField(Id: Integer)
 ```
 ## Parameters
@@ -34,7 +37,7 @@ The ID of the field that you want to get.
 ## Return Value
 *TestField*  
 &emsp;Type: [TestField](../testfield/testfield-data-type.md)  
-The field on the test page.  
+The field on the test page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

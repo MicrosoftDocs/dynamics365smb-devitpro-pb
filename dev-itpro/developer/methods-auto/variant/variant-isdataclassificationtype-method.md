@@ -1,28 +1,31 @@
 ---
-title: "Variant.IsDataClassificationType Method"
+title: "Variant.IsDataClassificationType() Method"
+description: "Indicates whether an AL variant contains a DataClassification variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Variant.IsDataClassificationType Method
-Indicates whether a AL variant contains a DataClassification variable.
+# Variant.IsDataClassificationType() Method
+> **Version**: _Available or changed with runtime version 1.0 until version 8.0 where it was deprecated for the following reason: "The property IsDataClassificationType is being deprecated. Use the property IsDataClassification instead."_
+
+Indicates whether an AL variant contains a DataClassification variable.
 
 
 ## Syntax
-```
+```AL
 Ok :=   Variant.IsDataClassificationType()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *Variant*  
@@ -32,7 +35,7 @@ An instance of the [Variant](variant-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the AL variant contains a DataClassification variable, otherwise **false**.  
+**true** if the AL variant contains a DataClassification variable, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

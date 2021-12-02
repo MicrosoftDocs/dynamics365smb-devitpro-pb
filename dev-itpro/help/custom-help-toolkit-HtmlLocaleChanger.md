@@ -3,17 +3,17 @@ title: Update locales in HTML files
 description: This article describes the HtmlLocaleChanger tool in the custom help toolkit for Business Central. 
 
 author: edupont04
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
 # Custom Help Toolkit: The HtmlLocaleChanger tool
 
-The custom help toolkit includes the **HtmlLocaleChanger** tool that can process HTML files containing Help content for [!INCLUDE [prodshort](../developer/includes/prodshort.md)] to change the metadata for language. 
+The custom help toolkit includes the **HtmlLocaleChanger** tool that can process HTML files containing Help content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to change the metadata for language. 
 
-HTML files published by Microsoft for documentation contain the ms.locale metadata which describes the language of the content. Depending on the website that you deploy your content to, the value can be used to switch between different translations of the content. For example, on the docs.microsoft.com site, the value specifies if the version of the article that is published under the URL ```https://docs.microsoft.com/de-de/dynamics365/business-central``` is in fact in German (Germany) or in another language, such as English. The same value is also used in the translation process.  
+HTML files published by Microsoft for documentation contain the ms.locale metadata which describes the language of the content. Depending on the website that you deploy your content to, the value can be used to switch between different translations of the content. For example, on the docs.microsoft.com site, the value specifies if the version of the article that is published under the URL ```/de-de/dynamics365/business-central``` is in fact in German (Germany) or in another language, such as English. The same value is also used in the translation process.  
 
 ## <a name="htmllocale"></a>Use the HtmlLocaleChanger tool to align locales
 

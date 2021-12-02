@@ -2,16 +2,17 @@
 title: "Enabled (Profile) Property"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Enabled (Profile) Property
+> **Version**: _Available from runtime version 1.0._
 
 Specifies whether the profile can be used by users or not.
 
@@ -52,4 +53,4 @@ profile MyProfile
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

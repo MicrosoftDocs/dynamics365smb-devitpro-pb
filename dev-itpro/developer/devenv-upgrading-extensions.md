@@ -1,13 +1,13 @@
 ---
 author: jswymer
-title: "Upgrading an Extension V2 to a new version"
+title: "Upgrading Extensions"
 description: "Describes how to add code to upgrade data in a new extension version."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 09/17/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
@@ -20,9 +20,9 @@ This article provides information about how to make a newer version of extension
 
 ## Writing upgrade code
 
-When you develop a new extension version, you must consider the data from the previous version. You' have to determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
+When you develop a new extension version, you must consider the data from the previous version. Determine the modifications that must be made to the data to make it compatible with the current version. For example, maybe the new version adds a new field that needs default values set for existing records. Or, the new version adds new tables that must be linked to existing records. To address this type of data handling, you must write upgrade code for the extension version. If there are no data changes between the extension versions, you don't need to write upgrade code. All data that isn't modified by upgrade code will automatically be available when the process completes.
 
-You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-property-codeunit.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
+You write upgrade logic in an upgrade codeunit, which is a codeunit whose [SubType property](properties/devenv-subtype-codeunit-property.md) is set to **Upgrade**. An upgrade codeunit supports several system triggers on which you can add data upgrade code. These triggers are invoked when you run the data upgrade process on the new extension.
 
 The upgrade codeunit becomes an integral part of the extension and may be modified as needed for later versions. You can have more than one upgrade codeunit. There's a set order to the sequence of the upgrade triggers, but  the execution order of the different codeunits isn't guaranteed. If you do use multiple upgrade units, make sure that they can run independently of each other.
 
@@ -105,7 +105,7 @@ Another one of the more important properties is the `DataVersion` property, that
 - Upgrade code:
     - The version of the extension you're upgrading from. Either what was last uninstalled, or what is currently installed.
 
-All these properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVApp.GetModuleInfo()` methods.
+All these properties are encapsulated in a `ModuleInfo` data type. You can access these properties through the `NAVApp.GetCurrentModuleInfo()` and `NAVApp.GetModuleInfo()` methods. For more information, see [NavApp Data Type](methods-auto/navapp/navapp-data-type.md).
 
 ### Upgrade codeunit example
 
@@ -122,7 +122,7 @@ codeunit 50100 MyUpgradeCodeunit
     begin
         if NavApp.GetCurrentModuleInfo(myInfo) then
             if myInfo.DataVersion = Version.Create(1, 0, 0, 1) then
-                error('The upgrade isn't compatible');
+                error('The upgrade is not compatible');
     end;
 
     trigger OnUpgradePerDatabase()
@@ -136,6 +136,8 @@ codeunit 50100 MyUpgradeCodeunit
 
 Although you can control upgrade code by checking versions, this pattern becomes difficult with larger applications that have many versions. The risk of something going wrong increases. If your solution includes the Microsoft system application, another way is to use *upgrade tags*. Upgrade tags provide a more robust and resilient way of controlling the upgrade process. They provide a way to track upgrade methods have been run to prevent executing the same upgrade code twice. Tags can also be used to skip the upgrade methods for a specific company or to fix an upgrade that went wrong.
 
+> [!NOTE]
+> Starting with Business Central 2021 release wave 1, version 18.1, signals about upgrade tags are sent to environment telemetry to make it possible to troubleshoot upgrade code after it ran. For more information about upgrade tag telemetry, see [Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md).
 
 ### Implementation behind upgrade tags
 
@@ -167,7 +169,7 @@ The codeunit also publishes the following events:
 The following steps provide the general pattern for using an upgrade tag on upgrade code.
 
 > [!IMPORTANT]
-> Use upgrade tags only for upgrade purposes only.
+> Use upgrade tags only for upgrade purposes.
 
 1. Use the following construct around the upgrade code to check for and add an upgrade tag.
         
@@ -229,11 +231,11 @@ The following steps provide the general pattern for using an upgrade tag on upgr
 ### Design considerations
 
 1. Keep tags simple by limiting nesting tags to two levels. Complicated if statements can lead to problems.
-2. Implement additional safety checks to avoid data corruption, even though you're using upgrade tags. For example, when copying obsolete fields to new fields, make sure the new fields have a default or blank. This check adds safety if upgrade tags introduce data issues.
+2. Implement extra safety checks to avoid data corruption, even though you're using upgrade tags. For example, when copying obsolete fields to new fields, make sure the new fields have a default or blank. This check adds safety if upgrade tags introduce data issues.
 
 ### Example
 
-The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed [ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
+The following code is a simple example of an upgrade codeunit. For this example, the original extension extended the **Customer** table with a **Shoesize** field. In the new version of the extension, the **Shoesize** field has been removed ([ObsoleteState](properties/devenv-obsoletestate-property.md)=removed), and replaced by a new field **ABC - Customer Shoesize**. The upgrade code will copy data from **Shoesize** field to the **ABC - Customer Shoesize**. An upgrade tag ensures that code doesn't run more than once, and data isn't overwritten on future upgrades. The example also uses a separate codeunit to define the upgrade tag so that they aren't hard-coded, but within methods.
 
 ```AL
 codeunit 50100 "ABC Upgrade Shoe Size"
@@ -300,9 +302,9 @@ codeunit 50101 "ABC Upgrade Tag Definitions"
 
 ## Protecting sensitive code from running during upgrade
 
-The extension might initiate code that you don't want to run during upgrade. The changes done to the data stored in the database will be rolled back. However, things like calls to external web services or physical printing can't be rolled back. Also, some code, like scheduling tasks, might throw an error and fail the upgrade.
+The extension might start code that you don't want to run during upgrade. The changes done to the data stored in the database will be rolled back. However, things like calls to external web services or physical printing can't be rolled back. Some code, like scheduling tasks, might also throw an error and fail the upgrade.
 
-For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you have implemented a mechanism to prevent printing. 
+For example, let's say the extension runs code that prints a check after a purchase invoice is posted for buying shoes. If the upgrade fails, the purchase invoice is rolled back. But the check will still be printed, unless you've implemented a mechanism to prevent printing. 
 
 To avoid this situation, use the session `ExecutionContext`. Depending on the scenario, the system runs a session in a special context for a limited time, which can be either `Normal`, `Install`, `Uninstall`, or `Upgrade`. You get the `ExecutionContext` by calling the [GetExecutionContext method](methods-auto/session/session-getexecutioncontext-method.md). For example, referring the example for printing checks, you could add something like the following code to verify the ExecutionContent before printing the check:
 
@@ -315,7 +317,7 @@ begin
         // Check whether code is triggered by the extension
         if Session.GetCurrentModuleExecutionContext() <> ExecutionContext::Normal then
             // Something is wrong, so you want to abort here because the code doesn't raise the EnqueuePrintingCheck trigger
-            Error('Check can't be printed')
+            Error('Check cannot be printed')
         else begin
             // Other code is invoking the upgrade, so use Job queue or similar mechanism to roll back if upgrade fails
             EnqueuePrintingCheck(PurchInvHeader);
@@ -328,7 +330,7 @@ end;
 
 ## Running the upgrade for the new extension version
 
-To upgrade to the new extension version, you use the [Sync-NavApp](https://go.microsoft.com/fwlink/?linkid=846311) and [Start-NAVAppDataUpgrade](https://go.microsoft.com/fwlink/?linkid=849315) cmdlets of the [!INCLUDE[adminshell](includes/adminshell.md)]. These cmdlets synchronize table schema changes in the extension with the SQL database and run the data upgrade code.
+To upgrade to the new extension version, you use the [Sync-NavApp](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Sync-NAVApp) and [Start-NAVAppDataUpgrade](/powershell/module/Microsoft.Dynamics.Nav.Apps.Management/Start-NAVAppDataUpgrade) cmdlets of the [!INCLUDE[adminshell](includes/adminshell.md)]. These cmdlets synchronize table schema changes in the extension with the SQL database and run the data upgrade code.
 
 1.  Publish the new extension version. For simplicity, this example assumes the extension isn't signed, which isn't allowed with [!INCLUDE[d365fin_md](includes/d365fin_md.md)] and isn't recommended with an on-premise production environment.
 
@@ -360,4 +362,4 @@ To upgrade to the new extension version, you use the [Sync-NavApp](https://go.mi
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Sample Extension](devenv-extension-example.md)  
 [Analyzing Extension Upgrade Telemetry](../administration/telemetry-extension-update-trace.md)  
-[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  
+[Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)

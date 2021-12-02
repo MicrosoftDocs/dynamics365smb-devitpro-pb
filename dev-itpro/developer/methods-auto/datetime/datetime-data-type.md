@@ -1,12 +1,13 @@
 ---
 title: "DateTime Data Type"
+description: "Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/30/2020
+ms.date: 07/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -14,6 +15,8 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # DateTime Data Type
+> **Version**: _Available or changed with runtime version 1.0._
+
 Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999. An undefined or blank DateTime is specified by 0DT.
 
 
@@ -31,7 +34,7 @@ The DateTime is always displayed as local time in [!INCLUDE[d365fin_long_md](../
   
 The DateTime data type does not support closing dates.  
   
-By default, DateTimes are displayed using the standard display format. When you use the standard display format, seconds and milliseconds are not displayed until you select the DateTime field. Furthermore, if you export your data using an XMLport or by writing it to a file, the seconds and milliseconds are not exported unless you specify that DateTime fields use another format and display this information. For more information about how DateTime objects are displayed and the formats that are available, see [Format Property](../../properties/devenv-format-property.md).  
+By default, DateTimes are displayed using the standard display format. When you use the standard display format, seconds and milliseconds are not displayed until you select the DateTime field. Furthermore, if you export your data using an XMLport or by writing it to a file, the seconds and milliseconds are not exported unless you specify that DateTime fields use another format and display this information. For more information about how DateTime objects are displayed and the formats that are available, see [Formatting Values, Dates, and Time](../../devenv-format-property.md).  
   
 The only constant available when you use the DateTime data type is the undefined DateTime, 0DT. To assign a constant value to a DateTime variable you must use the [CreateDateTime method](../system/system-createdatetime-method.md).  
   
@@ -40,7 +43,7 @@ If you use a date that is outside the valid date range, a run-time error occurs.
 ## Syntax
 
 The syntax for defining DateTime format follows the [ISO standard](https://en.wikipedia.org/wiki/ISO_8601). 
-- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 26th of March, 2018.
+- The syntax for defining Date format is `yyyymmddD`, where `D` is a mandatory letter. For example, `20180325D`, read as the 25th of March, 2018.
 - The syntax for defining Time format is `hhmmssT`, where `T` is the time designator. For example, `093125H`, read as 9:13:25.
 
 ## SQL Server
@@ -52,4 +55,4 @@ In SQL Server, the earliest permitted DateTime is January 1, 1753, 00:00:00.000.
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [CurrentDateTime Method](../system/system-currentdatetime-method.md)  
-[Format Property](../../properties/devenv-format-property.md)
+[Formatting Values, Dates, and Time](../../devenv-format-property.md)

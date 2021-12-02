@@ -3,10 +3,10 @@ title: "Region Directive in AL"
 description: "The region directive in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 05/21/2021
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -17,12 +17,16 @@ ms.author: solsen
 
 ## Region
 
-The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability or for focusing on code that you are currently working on. The `#endregion` specifies the end of a `#region` block of code.
+The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability or for focusing on code that you are currently working on. The `#endregion` specifies the end of a `#region` block of code. 
+
+> [!NOTE]  
+> On the first line of the `#region` a text comment can be added to describe the purpose of the block of code, see the example below.
 
 ## Syntax
 
 ```AL
-#region code
+#region [comment]
+    code
 ```
 
 ```AL

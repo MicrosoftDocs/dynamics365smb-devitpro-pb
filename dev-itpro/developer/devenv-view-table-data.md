@@ -3,11 +3,11 @@ title: "Viewing Table Data"
 description: "View tables in browser for troubleshooting"
 author: jswymer
 ms.custom: na
-ms.date: 10/05/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 ---
 
@@ -36,7 +36,7 @@ Whether viewing the table directly from the client or from Visual Studio Code, y
 
 Any end-user that is assigned these permissions will be able to view that table in the browser.
 
-For information about assigning permissions, see [Manage Users and Permissions](/dynamics365/financials/ui-how-users-permissions).
+For information about assigning permissions, see [Manage Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 ## View a table object directly from the client
 

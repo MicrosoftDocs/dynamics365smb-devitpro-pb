@@ -1,24 +1,27 @@
 ---
-title: "XmlDocument.WriteTo Method"
+title: "XmlDocument.WriteTo(OutStream) Method"
+description: "Serializes and saves the current node to the given variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocument.WriteTo Method
+# XmlDocument.WriteTo(OutStream) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Serializes and saves the current node to the given variable.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlDocument.WriteTo(OutStream: OutStream)
 ```
 ## Parameters
@@ -32,18 +35,19 @@ The OutStream to which you want to save the serialized representation of the nod
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Example 
+## Example
+
 The following example illustrates how to create a Stream from a Blob and write to a Stream from an XML document.
 
-```
+```al
 pageextension 50100 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
@@ -72,13 +76,13 @@ pageextension 50100 CustomerListExt extends "Customer List"
         xmlDoc.Add(xmlElem);
 
         // Create an outStream from the Blob, notice the encoding.
-        TempBlob.Blob.CreateOutStream(outStr, TextEncoding::UTF8);
+        TempBlob.CreateOutStream(outStr, TextEncoding::UTF8);
 
         // Write the contents of the doc to the stream
         xmlDoc.WriteTo(outStr);
 
          // From the same Blob, that now contains the XML document, create an inStr
-        TempBlob.Blob.CreateInStream(inStr, TextEncoding::UTF8);
+        TempBlob.CreateInStream(inStr, TextEncoding::UTF8);
 
         // Save the data of the InStream as a file.
         File.DownloadFromStream(inStr, 'Export', '', '', fileName);

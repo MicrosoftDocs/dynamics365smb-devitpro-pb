@@ -1,28 +1,32 @@
 ---
 title: "Compressed Property"
+description: "Sets a value that specifies whether a BLOB is compressed."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/12/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 19503643-223d-4157-8311-eb4e97621ea6
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Compressed Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets a value that specifies whether a BLOB is compressed.  
-  
-## Applies to  
+Sets a value that specifies whether a BLOB is compressed.
 
-Fields of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md)   
+## Applies to
+-   Table Field
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property value
 
-**True** if the BLOB is compressed, otherwise **false**. The default is **false**.
+**True** if the BLOB is compressed, otherwise **false**. The default is **true**.
 
 ## Syntax
 
@@ -30,6 +34,9 @@ Fields of the [BLOB Data Type](../datatypes/devenv-blob-data-type.md)
 Compressed = true;
 ```
 
+## Remarks
+It must be applied on a field of the [BLOB Data Type](../methods-auto/library.md).
+
 ## See Also  
 
-[BLOB Data Type](../datatypes/devenv-blob-data-type.md)
+[BLOB Data Type](../methods-auto/library.md)

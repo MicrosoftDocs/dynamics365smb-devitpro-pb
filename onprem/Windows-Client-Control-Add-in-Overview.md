@@ -14,7 +14,7 @@ manager: edupont
 # Windows Client Control Add-in Overview
 With [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you use [!INCLUDE[navnow](includes/navnow_md.md)] control add-ins to extend the [!INCLUDE[navnow](includes/navnow_md.md)] with custom functionality. A control add-in is a custom control, or visual element, for displaying and modifying data on [!INCLUDE[navnow](includes/navnow_md.md)] pages. The following illustration shows a control add-in example that displays a gauge control on a page.  
 
- ![Control add&#45;in example of a gauge control](media/NAV_ControlAddin_Gauge_Example.png "NAV\_ControlAddin\_Gauge\_Example")  
+ ![Control add&#45;in example of a gauge control.](media/NAV_ControlAddin_Gauge_Example.png "NAV\_ControlAddin\_Gauge\_Example")  
 
  Control add-ins can exchange data with the [!INCLUDE[nav_server](includes/nav_server_md.md)] on various data types and can respond to user interaction to raise events in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] that execute additional C/AL code.  
 
@@ -33,7 +33,7 @@ With [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you use [!INCLUDE[navnow
 ## Windows Client Control Add-in Model  
  The following illustration shows the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] in the [!INCLUDE[navnow](includes/navnow_md.md)] architecture.  
 
- ![RoleTailored client control add&#45;in model](media/NAVRTCControlAddinArchitecture.png "NAVRTCControlAddinArchitecture")  
+ ![RoleTailored client control add&#45;in model.](media/NAVRTCControlAddinArchitecture.png "NAVRTCControlAddinArchitecture")  
 
  You install control add-in assemblies on the computer that is running the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], not the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)]. Unlike pages that are instantiated by C/AL code, control add-ins are instantiated by using metadata that is in the [!INCLUDE[navnow](includes/navnow_md.md)] database.  
 

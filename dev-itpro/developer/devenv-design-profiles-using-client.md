@@ -3,11 +3,11 @@ title: "Using the Client to Create Profiles"
 description: "Gives an overview of how to create profiles by using the client together with Visual Studio Code."
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---

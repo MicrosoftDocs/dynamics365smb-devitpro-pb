@@ -1,28 +1,31 @@
 ---
-title: "Text.StrPos Method"
+title: "Text.StrPos(String, String) Method"
+description: "Searches for the first occurrence of substring inside a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrPos Method
+# Text.StrPos(String, String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Searches for the first occurrence of substring inside a string.
 
 
 ## Syntax
-```
+```AL
 Position :=   Text.StrPos(String: String, SubString: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
@@ -36,13 +39,13 @@ The substring for which you want to search.
 ## Return Value
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based index of the first occurrence of the substring inside the string.  
+The one-based index of the first occurrence of the substring inside the string.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The STRPOS method returns the position of the first occurrence of the substring.  
+ The StrPos method returns the position of the first occurrence of the substring.  
   
  If *SubString* cannot be found, then the method returns zero.  
   
@@ -50,9 +53,9 @@ The one-based index of the first occurrence of the substring inside the string.
   
 ## Example 1
 
- This example shows how to use the STRPOS method.  
+ This example shows how to use the StrPos method.  
   
-```  
+```al
 var
     Text000: Label 'ABC abc abc xy';  
     Text001: Label 'abc'; 
@@ -62,9 +65,9 @@ var
 begin
     String := Text000;  
     SubStr := Text001  
-    Pos := STRPOS(String, SubStr);  
-    MESSAGE(Text002 + Text003 + Text004, SubStr, String, Pos);  
-    // The STRPOS method is case-sensitive. Furthermore, it only  
+    Pos := StrPos(String, SubStr);  
+    Message(Text002 + Text003 + Text004, SubStr, String, Pos);  
+    // The StrPos method is case-sensitive. Furthermore, it only  
     // returns the position of the 1st occurrence of the substring.  
 end;
 ```  
@@ -79,7 +82,7 @@ end;
   
 ## Example 2
   
-```  
+```al
 Pos1 := StrPos("abc",""); // Returns 0.  
 Pos2 := StrPos("abc","c"); // Returns 3.  
 Pos3 := StrPos("abc","bc"); // Returns 2.  

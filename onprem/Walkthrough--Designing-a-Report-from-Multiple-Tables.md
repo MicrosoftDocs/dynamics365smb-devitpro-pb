@@ -65,7 +65,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows an example of the second page of the report.  
 
-     ![Completed report](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
+     ![Completed report.](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
 
 ## Defining the Dataset  
  In this task, Viktor will create the dataset that will display customers and their transaction details. The datasets for the data model will come from four tables. Viktor will create a data item for each for table.  
@@ -88,7 +88,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows an example of the Report Dataset Designer after you have added the data items.  
 
-     ![The DataItems in Object Designer](media/MicrosoftDynamicsNAV_DataItems.jpg "MicrosoftDynamicsNAV\_DataItems")  
+     ![The DataItems in Object Designer.](media/MicrosoftDynamicsNAV_DataItems.jpg "MicrosoftDynamicsNAV\_DataItems")  
 
 ## Defining Properties for the Data Items  
  Now that the data set is defined, Viktor will define the properties of data items.  
@@ -109,7 +109,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows the properties window for the **Customer** data item.  
 
-     ![Customer Data Item properties](media/MicrosoftDynamicsNAV_CustomerProperties.jpg "MicrosoftDynamicsNAV\_CustomerProperties")  
+     ![Customer Data Item properties.](media/MicrosoftDynamicsNAV_CustomerProperties.jpg "MicrosoftDynamicsNAV\_CustomerProperties")  
 
 7.  In Report Dataset Designer, select the **Cust. Ledger Entry** data item.  
 
@@ -125,7 +125,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows the **Properties** window for the **Cust. Ledger Entry** data item.  
 
-     ![Cust.Ledger Entry Properties](media/MicrosoftDynamicsNAV_CustLEntryProperties.jpg "MicrosoftDynamicsNAV\_CustLEntryProperties")  
+     ![Cust.Ledger Entry Properties.](media/MicrosoftDynamicsNAV_CustLEntryProperties.jpg "MicrosoftDynamicsNAV\_CustLEntryProperties")  
 
 13. Select the **Detailed Cust. Ledg. Entry** data item.  
 
@@ -145,7 +145,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows the **Properties** window for the **Detailed Cust. Ledg. Entry** data item.  
 
-     ![Detailed Cust. Ledger Entry Properties](media/MicrosoftDynamicsNAV_DetailedLedger.jpg "MicrosoftDynamicsNAV\_DetailedLedger")  
+     ![Detailed Cust. Ledger Entry Properties.](media/MicrosoftDynamicsNAV_DetailedLedger.jpg "MicrosoftDynamicsNAV\_DetailedLedger")  
 
 21. Select the **Sales Header** data item.  
 
@@ -161,7 +161,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows the **Properties** window for the **Sales Header** data item.  
 
-     ![Sales Header Properties window](media/MicrosoftDynamicsNAV_SalesHeaderProperties.jpg "MicrosoftDynamicsNAV\_SalesHeaderProperties")  
+     ![Sales Header Properties window.](media/MicrosoftDynamicsNAV_SalesHeaderProperties.jpg "MicrosoftDynamicsNAV\_SalesHeaderProperties")  
 
 27. Close the **Properties** window.  
 
@@ -189,7 +189,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows the **Customer** data item with its fields in Object Designer.  
 
-     ![Object Designer with customer fields](media/MicrosoftDynamicsNAV_CustomerFields.jpg "MicrosoftDynamicsNAV\_CustomerFields")  
+     ![Object Designer with customer fields.](media/MicrosoftDynamicsNAV_CustomerFields.jpg "MicrosoftDynamicsNAV\_CustomerFields")  
 
 4.  Select the **Cust. Ledger Entry** data item and repeat steps 1 through 3 to add the fields. The following table shows the fields in Report Dataset Designer.  
 
@@ -258,7 +258,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows an example of the request page that is displayed when the report is run.  
 
-     ![Request page](media/MicrosoftDynamicsNAV_RequestPage.jpg "MicrosoftDynamicsNAV\_RequestPage")  
+     ![Request page.](media/MicrosoftDynamicsNAV_RequestPage.jpg "MicrosoftDynamicsNAV\_RequestPage")  
 
      If you choose the **Preview** button on the request page, the report will display a blank page because a layout for the report is not designed yet.  
 
@@ -308,7 +308,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows the list control and the table.  
 
-     ![The list control on the report](media/MicrosoftDynamicsNAV_ListControl.jpg "MicrosoftDynamicsNAV\_ListControl")  
+     ![The list control on the report.](media/MicrosoftDynamicsNAV_ListControl.jpg "MicrosoftDynamicsNAV\_ListControl")  
 
      Note that the table contains two table rows, a header row \(first row\), and a data row \(second row\). The three parallel lines in the left border of the second row identify the data row.  
 
@@ -361,7 +361,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The layout that Viktor has designed to this point resembles the following illustration.  
 
-     ![The layout containing the customer data](media/MicrosoftDynamicsNAV_CustomerData.jpg "MicrosoftDynamicsNAV\_CustomerData")  
+     ![The layout containing the customer data.](media/MicrosoftDynamicsNAV_CustomerData.jpg "MicrosoftDynamicsNAV\_CustomerData")  
 
 16. On the **Build** menu, choose **Build Web site** to build the project. Inspect the **Output** pane and make sure that there are no build errors. Close Visual Studio.  
 
@@ -467,7 +467,7 @@ A report object is composed of a report dataset and a visual layout. You design 
 
      The following illustration shows EntryNo and the EntryType cells directly under the CustomerNo cell  
 
-     ![Merged cells](media/MicrosoftDynamicsNAV_MergedCells.jpg "MicrosoftDynamicsNAV\_MergedCells")  
+     ![Merged cells.](media/MicrosoftDynamicsNAV_MergedCells.jpg "MicrosoftDynamicsNAV\_MergedCells")  
 
 28. Repeat steps through 27 to put the **Transaction No.** and **Journal Batch Name** captions and fields under the Description data. This creates a blank cell under the CurrencyCode field.  
 

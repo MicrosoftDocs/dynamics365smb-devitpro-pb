@@ -1,11 +1,11 @@
 ---
 title: "OCX Data Type"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.assetid: ebeaf3bf-796a-4862-bd1f-f3c3c7ce97fe
 caps.latest.revision: 14

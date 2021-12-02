@@ -2,16 +2,16 @@
 title: Technical Upgrade 
 description: The article explains how to upgrade the application code and how to merge code from different versions of the application.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
-# Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prodlong.md)] 2019 Wave 2
+# Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prod_long.md)] 2019 Wave 2
 
 <!--
 > [!IMPORTANT]  
@@ -19,22 +19,22 @@ ms.service: "dynamics365-business-central"
 >
 > Please note that this topic is a draft in progress. We are still working on adding more details to the steps described in this topic.
 -->
-Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 release wave 2 platform (version 15). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
+Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 platform (version 15). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
 <!-- For this scenario, I used a BC 14.0 modified base application on a BC 14.0 server instance, which include some customization on C/AL objects in the base application and a custom extension that modified the Item table. is proecess will convert the entire BC 14 custom application to an Extension on the BC 15 platform.-->
 
- ![Upgrade on customized Business Central application](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
+ ![Upgrade on customized Business Central application.](../developer/media/bc15-upgrade-customized-app.png "Upgrade on customize Business Central application")  
  
 
 #### Single-tenant and multitenant deployments
 
-The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
 ## Prerequisites
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 15 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 15 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
    
    If your solution is already on version 14, then you don't have to upgrade to the latest version 15 update.
 
@@ -58,7 +58,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
  For more information, see [Upgrading to Dynamics 365 Business Central On-Premises](upgrading-to-business-central-on-premises.md).
 
 -->
-## Task 1: Install [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2019 release wave 2 (version 15.0)
+## Task 1: Install [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 release wave 2 (version 15.0)
 
 1. Before you install version 15, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 15.0 tools.
 
@@ -136,10 +136,11 @@ Convert your solution from C/AL code to AL code. For more information, see [Code
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 15.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
-2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
+3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
-    ```
+    ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server>\<database instance> -DatabaseName "<BC14 database name>"
     ```
     When completed, a message like the following displays in the console:
@@ -151,11 +152,17 @@ This task runs a technical upgrade on the application database. A technical upgr
     DatabaseLocation    :
     Collation           :
     ```
+
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
+
 ## Task 5: Connect and configure the version 15 server instance
 
 When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 15.0 upgrade and can be reverted after you complete the upgrade.
 
-1. Set the server instance to connect to the application database.
+1. If the database is on Azure SQL Database, add your user account to the **dbmanager** database role on the master database.
+
+    This membership is only required for converting the database, and can be removed afterwards. This step isn't required for Azure SQL Manage Instance.
+2. Set the server instance to connect to the application database.
 
     ```
     Set-NAVServerConfiguration -ServerInstance <BC15 server instance> -KeyName DatabaseName -KeyValue "<BC14 database name>"
@@ -163,13 +170,14 @@ When you installed version 15 in **Task 1**, a version 15 [!INCLUDE[server](../d
     
     In a single tenant deployment, this command mounts the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. Disable task scheduler on the server instance for purposes of upgrade.
+3. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```
     Set-NavServerConfiguration -ServerInstance <BC15 server instance> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
     Be sure to re-enable task scheduler after upgrade if needed.
-3. Restart the server instance.
+
+4. Restart the server instance.
 
     ```
     Restart-NAVServerInstance -ServerInstance <BC15 server instance>
@@ -219,7 +227,7 @@ The application database includes the **$ndo$dbproperty** table which stores the
 
 he Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
 
-To increase the application version of the application database, use the [Set-NAVApplication](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
+To increase the application version of the application database, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 
     ```
     Set-NAVApplication BC150 -ApplicationVersion 15.0.34737.0 -force
@@ -369,7 +377,7 @@ Now, your application is fully upgraded to the version 15 platform.
 
     To upgrade the control add-ons, do the following steps:
 
-    1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+    1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
     2. Search for and open the **Control Add-ins** page.
     3. Choose **Actions** > **Control Add-in Resource** > **Import**.
     4. Locate and select the .zip file for the control add-in and choose **Open**.

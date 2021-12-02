@@ -2,11 +2,11 @@
 title: Developing telemetry into your Business Central application
 description: This topic desscribes how to add code to application objects that enables you to gather telemetry.
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -22,14 +22,14 @@ Another aspect of logging is *telemetry*, which is collecting data about how you
 
 ## Creating custom telemetry signal
 
-There are two different resources where telemetry trace signals can be sent for monitoring and analyzing: Event Log and Microsoft Azure Application Insights. By default, the [!INCLUDE[prodshort](includes/prodshort.md)] application is instrumented to emit several system telemetry trace signals to these destinations. Custom telemetry trace signals enable you to send telemetry data from anywhere in the application code to either of these destinations.
+There are two different resources where telemetry trace signals can be sent for monitoring and analyzing: Event Log and Microsoft Azure Application Insights. By default, the [!INCLUDE[prod_short](includes/prod_short.md)] application is instrumented to emit several system telemetry trace signals to these destinations. Custom telemetry trace signals enable you to send telemetry data from anywhere in the application code to either of these destinations.
 
-The procedure for creating custom telemetry signals is different for each resource. Your choice might also depend on whether you are developing for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] online or on-premises.
+The procedure for creating custom telemetry signals is different for each resource. Your choice might also depend on whether you are developing for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online or on-premises.
 
 |Reource|Description|Online|On-premises|More information|
 |-----------|-----------|------|-----------|----------------|
-|Application Insights|Create custom telemetry signals that are sent to an Application Insights resource in Azure. [Application Insights](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. <br /><br />Extension developers can specify whether the signal is only sent to the extension publisher or also to the VAR partner telemetry resource.<br /><br />You create these custom trace signals by using the LOGMESSAGE method in code.|![check mark for feature](media/check.png)|![check mark for feature](media/check.png)|[See...](devenv-instrument-application-for-telemetry-app-insights.md)|
-|Event Log| Create custom telemetry trace signals that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace signals by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.||![check mark for feature](media/check.png)|[See...](devenv-instrument-application-for-telemetry-event-log.md)|
+|Application Insights|Create custom telemetry signals that are sent to an Application Insights resource in Azure. [Application Insights](/azure/azure-monitor/app/app-insights-overview) is a service hosted within Azure that gathers telemetry data for analysis and presentation. <br /><br />Extension developers can specify whether the signal is only sent to the extension publisher or also to the VAR partner telemetry resource.<br /><br />You create these custom trace signals by using the LOGMESSAGE method in code.|![check mark for feature.](media/check.png)|![check mark for feature](media/check.png)|[See...](devenv-instrument-application-for-telemetry-app-insights.md)|
+|Event Log| Create custom telemetry trace signals that are sent to the Event Log of the [!INCLUDE[server](includes/server.md)] machine. You create these custom trace signals by using the [SENDTRACETAG method](methods-auto/session/session-sendtracetag-method.md) in code.||![check mark for feature.](media/check.png)|[See...](devenv-instrument-application-for-telemetry-event-log.md)|
 
 > [!NOTE]
 > Using Application Insights is recommended. 

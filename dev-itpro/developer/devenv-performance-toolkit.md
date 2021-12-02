@@ -3,19 +3,19 @@ title: "Performance Toolkit Extension"
 description: Test your extensions for performance regressions during the development process. 
 author: bholtorf
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
 ---
 
 # The Performance Toolkit Extension
-This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prodshort](includes/prodshort.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
+This extension is built for independent solution vendors (ISVs) and value added resellers (VARs) who develop vertical solutions and customize [!INCLUDE[prod_short](includes/prod_short.md)] for their customers. In this type of collaboration, things often change between released versions on both sides, so it's important that ISVs and VARs can ensure that new versions of their solutions don't introduce performance regressions as the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions.
 
-In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prodshort](includes/prodshort.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prodshort](includes/prodshort.md)] process per hour?"
+In short, the Performance Toolkit helps answer questions such as, "Does my solution for [!INCLUDE[prod_short](includes/prod_short.md)] support X number of users doing this, that, and the other thing at the same time?" It doesn't answer questions such as, "How many orders can [!INCLUDE[prod_short](includes/prod_short.md)] process per hour?"
 
 > [!IMPORTANT]
 > You can use the toolkit only in sandbox environments and Docker images. You cannot use it in a production tenant.
@@ -25,7 +25,7 @@ The Performance Toolkit is two extensions, the **Performance Toolkit**, which is
 
 * A framework for defining a set of tests or scenarios to run in parallel. The framework also logs results and lets you import and export suite definitions.  
 * Predefined test suites that cover basic scenarios, which can also serve as inspiration for other suites that suit your customer environments.
-* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, you must start those scenarios from outside [!INCLUDE[prodshort](includes/prodshort.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the Run from PowerShell](devenv-performance-toolkit.md#starting-the-run-from-powershell). 
+* A command line tool that must be installed on a client computer. To simulate multiple users signing in and using pages, you must start those scenarios from outside [!INCLUDE[prod_short](includes/prod_short.md)]. The command line tool will run the number of concurrent client sessions that is specified in the suit. For more information, see [Starting the Run from PowerShell](devenv-performance-toolkit.md#starting-the-run-from-powershell). 
 
 ## Single and Multiple Sessions
 Typically, you'll want to run the suite for multiple sessions at the same time. After you configure the suite, you can do that by using the **Start** action. However, if you want to do light-weight testing, for example, early in the development phase, you can choose the **Start in Single Run mode** action to run your suite just once, and as fast as possible. Single Run mode lets you monitor the number of SQL statements between runs and define baselines, and gives you quick feedback that can help identify regressions early on.
@@ -61,7 +61,7 @@ The settings to configure a suite depend on the environment that you want to sim
    > [!TIP]
    > The lines will contain some of the settings from the header. Updating the values on the lines will also update the header.
     1. On the **BCPT Suite Lines** FastTab, choose the codeunits to run.
-    2. In the **Parameters** field, enter a parameter to define iterations such as, for example, creating lines on documents. For example, a parameter **Lines=10** will create 10 lines on a document.  
+    2. In the **Parameters** field, enter a parameter to define iterations such as, for example, creating lines on documents. For example, a parameter **Lines=10** will create 10 lines on a document. The Parameter field must not contain any spaces.
     3. In the **No. of Sessions** field, enter the number of concurrent users to simulate. 
     4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit.md#running-in-the-background-and-foreground).
 
@@ -74,15 +74,35 @@ $Credential = New-Object PSCredential -ArgumentList <user email>,(ConvertTo-Secu
 
 ```
  
-To start tests in a [!INCLUDE[prodshort](includes/prodshort.md)] online sandbox, run the following command:
+To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] online sandbox, run the following command:
 
 ```
-RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential $Credential -SandboxName <sandbox name> -TestRunnerPage 149002 -SuiteCode "TRADE-50U"
+RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential $Credential -SandboxName <sandbox name> -ClientId <AAD application ID> -TestRunnerPage 149002 -SuiteCode "TRADE-50U" -BCPTTestRunnerInternalFolderPath <path to Internal folder>
+
+```
+
+To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] onpremise database, run the following command:
+
+```
+RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Credential -TestRunnerPage 149002 -SuiteCode "TRADE-50U" -ServiceUrl <webclient address> -BCPTTestRunnerInternalFolderPath <path to Internal folder>
 
 ```
 
 > [!NOTE]
 > When you start tests from PowerShell, there is a two second delay between new sessions.
+
+> [!NOTE]
+> When you use RunBCPTTests.ps1 these are the most important parameters:
+> - Environment:
+> Specifies the environment the tests will be run in. The supported values are 'PROD', 'TIE' and 'OnPrem'. Default is 'PROD'.
+> - AuthorizationType:
+> Specifies the authorizatin type needed to authorize to the service. The supported values are 'Windows','NavUserPassword' and 'AAD'
+> - SandboxName:
+> Specifies the sandbox name. This is necessary only when the environment is either 'PROD' or 'TIE'. Default is 'sandbox'.
+> - ServiceUrl:
+> Specifies the base url of the service. This parameter is used only in 'OnPrem' environment. Example http://localhost:8080/PerformanceToolkit
+> - ClientId:
+> Specifies the guid that the BC is registered with in AAD. To setup an AAD go to https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess
 
 ## Analyzing Results
 When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
@@ -100,6 +120,9 @@ The **Operation** column shows the individual measurements, where the term _Scen
 This example shows how to use Single Run mode for performance regression testing (PRT) between changes to code, to evaluate SQL calls and timing. Often, when developing a new extension, you start out with limited code and may want to wait to do a larger benchmark test with simulated concurrent users until you’re closer to having a full, end-to-end scenario. You can use the **Start in Single Run Mode** action to perform a limited test, for example, on a new extension. Single Run mode will still provide things like a baseline, the ability to run the test in the background, and give you instant feedback. 
 
 The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline. 
+
+> [!TIP]
+> If you attach an application Insights key in the admin center or NST then the log entries are also shown in the Application Insights ID.
 
 ## To run a test in Single Run mode
 The following steps provide an example of how to run a PRT in Single Run mode.
@@ -150,7 +173,7 @@ The results of the PRT are shown on the **BCPT Suite Lines** FastTab. The follow
 ## Writing Test Cases (codeunits)
 A test case is a codeunit of either a **Normal** or **Test** subtype. If the subtype is Normal, the test scenario should be defined in the OnRun trigger because the Performance Toolkit uses the codeunit to run the testcase. 
 
-To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. Codeunit BCPT Test Context is an interface for running tests. Tests can use the StartScenario amd EndScenario functions on the BCPT Test Context codeunit to log when a scenario that is being measured started and stopped. To simulate user delays, the UserWait() function should be called while moving between fields to make the tests more realistic. The BCPT Test Context codeunit also exposes the parameters that are set on the test codeunit to the test suite. When using [!INCLUDE[prodshort](includes/prodshort.md)], an implicit Commit() is called for every interaction, and that should be simulated in the tests by calling an explicit Commit().
+To interact with pages and make the tests more realistic, define a codeunit of the subtype **Test**, as shown in the example for codeunit BCPT Open Item List. Codeunit BCPT Test Context is an interface for running tests. Tests can use the StartScenario amd EndScenario functions on the BCPT Test Context codeunit to log when a scenario that is being measured started and stopped. To simulate user delays, the UserWait() function should be called while moving between fields to make the tests more realistic. The BCPT Test Context codeunit also exposes the parameters that are set on the test codeunit to the test suite. When using [!INCLUDE[prod_short](includes/prod_short.md)], an implicit Commit() is called for every interaction, and that should be simulated in the tests by calling an explicit Commit().
 
 ## See Also
 [Testing the Application Overview](devenv-testing-application.md)  

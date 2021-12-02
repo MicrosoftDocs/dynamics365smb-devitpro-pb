@@ -1,24 +1,27 @@
 ---
-title: "FilterPageBuilder.AddTable Method"
+title: "FilterPageBuilder.AddTable(String, Integer) Method"
+description: "Adds filter control for a table to a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.AddTable Method
+# FilterPageBuilder.AddTable(String, Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Adds filter control for a table to a filter page.
 
 
 ## Syntax
-```
+```AL
 [Name := ]  FilterPageBuilder.AddTable(Name: String, TableNo: Integer)
 ```
 ## Parameters
@@ -36,29 +39,29 @@ The ID of the table object that you want to filter on.
 
 
 ## Return Value
-*Name*  
+*[Optional] Name*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- In the filter page that is rendered in the client, the ADDTABLE method defines a filter control for the specified table where the user can set filters on specific fields in the table.  
+ In the filter page that is rendered in the client, the AddTable method defines a filter control for the specified table where the user can set filters on specific fields in the table.  
 
- You can use the **ADDFIELD Method** or [ADDFIELDNO Method](../../methods-auto/filterpagebuilder/filterpagebuilder-addfieldno-method.md) method to add field of the table to the filter control.  
+ You can use the **AddField Method** or [AddFieldNo Method](../../methods-auto/filterpagebuilder/filterpagebuilder-addfieldno-method.md) method to add field of the table to the filter control.  
 
 ## Example  
  The following example initializes a filter page object that includes a filter control that uses the Date system table. The filter control has the caption of **Date record**.  
 
-```  
+```al
 var
     varDateItem: Text[30];
     varFilterPageBuilder: FilterPageBuilder;
 
 begin
     varDateItem := 'Date record';  
-    varFilterPageBuilder.ADDTABLE(varDateItem, DATABASE::Date);
+    varFilterPageBuilder.AddTable(varDateItem, Database::Date);
     varFilterPageBuilder.RunModal(); 
 end;
 ```  

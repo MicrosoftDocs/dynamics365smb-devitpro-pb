@@ -1,36 +1,29 @@
 ---
 title: "TableSeparator Property"
+description: "Specifies the table separator for a table."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 02bbb812-0ff4-429a-b1c0-8b28270a781b
-caps.latest.revision: 10
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # TableSeparator Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies the table separator for a table.  
-  
-## Applies to  
-  
-- XMLports  
-  
-## Property Value  
-  
-|**Value**|**Description**|  
-|---------------|---------------------|  
-|**\<None>**|There is no table separator.|  
-|**\<NewLine>**|Any combination of CR and LF characters.|  
-|**\<CR/LF>**|CR followed by LF.|  
-|**\<CR>**|CR alone.|  
-|**\<LF>**|LF alone.|  
-|**\<TAB>**|Tabulator alone.|  
-|**Other strings**|The literal string entered.|  
+Specifies the table separator for a table.
+
+## Applies to
+-   Xml Port
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 
 ## Syntax
 
@@ -42,7 +35,7 @@ TableSeparator = '<NewLine>';
 
 **TableSeparator** property is only used if the **Format Property** is set to **Variable Text** or **Fixed Text**. Otherwise, the setting is ignored.  
  
-This property specifies how tables should be separated. The default value is a new line \(**\<NewLine>**\). 
+This property specifies how tables should be separated. The default value is (two newlines) \(**\<NewLine>\<NewLine>**\). 
 
 The strings in the preceding table must be entered literally, that is, the **<** and **>** characters must be entered. These special strings can be combined and can be mixed with other characters.  
 

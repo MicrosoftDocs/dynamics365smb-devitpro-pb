@@ -1,26 +1,29 @@
 ---
-title: "Media.ExportFile Method"
+title: "Media.ExportFile(String) Method"
+description: "Exports the media object (such as an image) that is currently used on record to a file on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ExportFile Method
+# Media.ExportFile(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Exports the media object (such as an image) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a Media data type field.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [Result := ]  Media.ExportFile(Filename: String)
 ```
 ## Parameters
@@ -34,9 +37,9 @@ Specifies the full path and name of the file to create for the exported media.
 
 
 ## Return Value
-*Result*  
+*[Optional] Result*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the media was successfully exported, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

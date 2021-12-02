@@ -6,17 +6,17 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # Embed App Overview
 
 [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is a term that defines an end-to-end solution meeting the specific needs of a vertical or micro-vertical industry.  
 
-[!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as [!include[prodshort](../developer/includes/prodshort.md)] is embedded as an integral part of the overall solution.   
+[!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] plays a vital role in the Embed App, as [!include[prod_short](../developer/includes/prod_short.md)] is embedded as an integral part of the overall solution.   
 
 Some examples of an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] include:  
 - A Dentist solution  
@@ -25,7 +25,7 @@ Some examples of an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] incl
 
 An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] refers to what is being provided to a given customer segment, unrelated to how the solution is being implemented or architected. An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] can be built using AL, in other words extension, code-customization, and a combination of extensions and code-customization.  
 
-![Embed App overview](../media/embed_app_overview.png "Embed App overview")  
+![Embed App overview.](../media/embed_app_overview.png "Embed App overview")  
 
 ## Components
 
@@ -42,7 +42,7 @@ On a high level, an [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is a
     This includes additional [!INCLUDE[embedapp](../developer/includes/embedapp.md)] properties that are specific to this type of app and not otherwise available for other types of apps (see the list below).  
 - Base application and tenant template (optional)  
 
-The following capabilities are only available for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and not for other types of [!INCLUDE[prodshort](../developer/includes/prodshort.md)] apps (Connect and Add-on).
+The following capabilities are only available for the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and not for other types of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] apps (Connect and Add-on).
 
 ### Partner Branding
 
@@ -57,7 +57,7 @@ The [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will promote the par
 - A dedicated product tile, icon, and short marketing description in the Dynamics shell ([https://home.dynamics.com](https://home.dynamics.com))  
 - In-product messages (such as pop-up errors, warnings, notifications)  
 
-![Tiles with Embed App apps](../media/embed-app-apps.png "Embed App apps")  
+![Tiles with Embed App apps.](../media/embed-app-apps.png "Embed App apps")  
 
 ### Exclusivity
 
@@ -73,12 +73,8 @@ Partners can choose to bring their own code-customized base application as an [!
 
 - Shortening time-to-market ("lift and shift" approach).
 
-    The partner's current solution is a significantly customized version of the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] application and it will require substantial time and effort to migrate it into extensions. A partner can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prodshort](../developer/includes/prodshort.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model.  
-- Overcoming the limitations of the current extensions framework.
+    The partner's current solution is a significantly customized version of the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] application and it will require substantial time and effort to migrate it into extensions. A partner can lift their solution as-is (upgraded to a supported platform) to [!INCLUDE[[prod_short](../developer/includes/prod_short.md)] service and start offering it to their new and prospective customers. Then, they can gradually start moving their functionality into extensions to achieve the benefits that come with the extension model. The earliest version of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] application you can bring to the service is version 16.  
 
-    Extensions today can support many scenarios and the Microsoft team is working on extending these capabilities even more. However, some customization needs of the partners are not yet possible using the current version of the extensions framework, so partners can choose to do these changes directly in the base application using C/SIDE Development Environment based on [!INCLUDE [prodshort](../developer/includes/prodshort.md)] version 14.  
-- Availability of 3rd party add-ins as extensions.
-    
 - Usage of .NET interoperability and custom assemblies.
 
     Partners that use .NET interoperability in their current application to address multiple business scenarios. Although extensions today allow a number of these scenarios to be implemented in AL, they don't and cannot cover for all possible scenarios of .NET usage. Therefore, the partner can choose to import the required .NET add-ins into the Add-ins table of the base application, and these add-ins will automatically be deployed into the environment where they will be running.
@@ -87,7 +83,7 @@ Partners can choose to bring their own code-customized base application as an [!
 
 - An [!INCLUDE[embedapp](../developer/includes/embedapp.md)] is the property of the partner, so the customers of the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] must be able to find the partner's own legal, privacy, contact, community and feedback links (not Microsoft links) when they work with the app:
 
-    ![Embed App contact](../media/embed-app-contact.png "Embed App contact")  
+    ![Embed App contact.](../media/embed-app-contact.png "Embed App contact")  
 
 - Safe listed domains for embedding [!INCLUDE[embedapp](../developer/includes/embedapp.md)] pages into other web sites, including SharePoint ("frame ancestors") 
 - Target version of [!INCLUDE[d365_bus_central_md](../developer/includes/d365_bus_central_md.md)] platform
@@ -99,7 +95,7 @@ At this stage, within the extensions and base application, the partner can work 
 
 #### Platform version availability
 
-Microsoft is going to make new versions of the [!include[prodshort](../developer/includes/prodshort.md)] platform available to [!INCLUDE [embedapp](../developer/includes/embedapp.md)] partners through the Lifecycle Services portal (LCS). The partner will then have to pick the platform they want to use for deployment of their solution.
+Microsoft is going to make new versions of the [!include[prod_short](../developer/includes/prod_short.md)] platform available to [!INCLUDE [embedapp](../developer/includes/embedapp.md)] partners through the Lifecycle Services portal (LCS). The partner will then have to pick the platform they want to use for deployment of their solution.
 
 #### Deploying versions
 
@@ -113,6 +109,6 @@ Any existing deployments, running on platform versions that are older than 3 upd
 [Qualification and Onboarding](embed-app-qualifications-onboarding.md)  
 [Managing in Microsoft Lifecycle Services](embed-app-lifecycle-services.md)  
 [Components and Capabilities](app-components.md)  
-[Deployment of [!INCLUDE[prodlong](../developer/includes/prodlong.md)]](Deployment.md)  
+[Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](../administration/Administration.md)  

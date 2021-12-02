@@ -1,24 +1,27 @@
 ---
-title: "Query.ColumnCaption Method"
+title: "Query.ColumnCaption(Any) Method"
+description: "Returns the current caption of a query column as a text string."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.ColumnCaption Method
+# Query.ColumnCaption(Any) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Returns the current caption of a query column as a text string.
 
 
 ## Syntax
-```
+```AL
 Caption :=   Query.ColumnCaption(Column: Any)
 ```
 ## Parameters
@@ -34,7 +37,7 @@ Refers to the name of the query column. The name of a query column is specified 
 ## Return Value
 *Caption*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The query column caption.  
+The query column caption.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

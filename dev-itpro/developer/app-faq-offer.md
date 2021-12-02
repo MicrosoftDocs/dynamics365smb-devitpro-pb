@@ -1,18 +1,18 @@
 ---
 title: "FAQ about Managing and Submitting your Business Central Offer"
 description: "Get answers to some of your questions about managing an offer in Partner Center when you build an app for Dynamics 365 Business Central"
-author: rweigel
+author: freddyk
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 10/01/2021
 ms.reviewer: edupont
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: rweigel
+ms.author: freddyk
 ---
 
 # FAQ about Managing and Submitting your Business Central Offer
 
-This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prodshort](../includes/prodshort.md)].
+This section contains answers to frequently asked questions about managing the offer in Partner Center when you submit an app for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 ## If I click the Go Live button, does that mean my app will go live to AppSource?
 
@@ -25,6 +25,11 @@ This is the button you should click when you want to submit your app for validat
 ## I only made marketing changes. Will my app have to go through technical validation?
 
 No. If you do not change your app in a submission, we skip technical validation.
+
+## Is there a good way get the status of the validation as it happens?
+
+[!INCLUDE[appsource-appinsights](includes/appsource-appinsights.md)].
+
 
 ## See also
 

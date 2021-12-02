@@ -64,9 +64,9 @@ Get-Help <cmd name> -online
 >[!NOTE]
 >The cmdlet help for [!INCLUDE[nav2017](includes/nav2017.md)] is currently not available in the MSDN Library. The *-online* switch parameter will open the [!INCLUDE[navcorfu](includes/navcorfu_md.md)] version of the help in the MSDN Library instead. For the latest cndlet help, use the cmdlet help in command-line interface (by omitting *-online* switch parameter).
 
-For more information about [!INCLUDE[nav_shell](includes/nav_shell_md.md)] cmdlets, see [Administration Cmdlets for Microsoft Dynamics NAV](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.management) and [Administration Cmdlets for Microsoft Dynamics NAV Extensions](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.management).  
+For more information about [!INCLUDE[nav_shell](includes/nav_shell_md.md)] cmdlets, see [Administration Cmdlets for Microsoft Dynamics NAV](/powershell/module/microsoft.dynamics.nav.management) and [Administration Cmdlets for Microsoft Dynamics NAV Extensions](/powershell/module/microsoft.dynamics.nav.apps.management).  
 
-For more information about [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] cmdlets, see [Development Cmdlets for Microsoft Dynamics NAV](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.model.tools) and [Development Cmdlets for Microsoft Dynamics NAV Extensions](https://docs.microsoft.com/powershell/module/microsoft.dynamics.nav.apps.tools).  
+For more information about [!INCLUDE[nav_dev_shell](includes/nav_dev_shell_md.md)] cmdlets, see [Development Cmdlets for Microsoft Dynamics NAV](/powershell/module/microsoft.dynamics.nav.model.tools) and [Development Cmdlets for Microsoft Dynamics NAV Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools).  
 
  For more information about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/?LinkID=252252).  
 

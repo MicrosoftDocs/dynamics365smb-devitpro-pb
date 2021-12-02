@@ -1,24 +1,27 @@
 ---
-title: "TextBuilder.Replace Method"
+title: "TextBuilder.Replace(Text, Text, Integer, Integer) Method"
+description: "Replaces, within a substring of this instance, all occurrences of a specified string in this TextBuilder instance with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TextBuilder.Replace Method
+# TextBuilder.Replace(Text, Text, Integer, Integer) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Replaces, within a substring of this instance, all occurrences of a specified string in this TextBuilder instance with another specified string.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  TextBuilder.Replace(OldText: Text, NewText: Text, StartIndex: Integer, Count: Integer)
 ```
 ## Parameters
@@ -44,9 +47,9 @@ The length of the substring.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if all occurrences of a specified string were successfully replaced, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if all occurrences of a specified string were successfully replaced, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

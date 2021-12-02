@@ -1,24 +1,27 @@
 ---
-title: "Record.GetBySystemId Method"
+title: "Record.GetBySystemId(Guid) Method"
+description: "Gets a record by its SystemId."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.GetBySystemId Method
+# Record.GetBySystemId(Guid) Method
+> **Version**: _Available or changed with runtime version 4.0._
+
 Gets a record by its SystemId.
 
 
 ## Syntax
-```
+```AL
 [RecordExists := ]  Record.GetBySystemId(SystemId: Guid)
 ```
 ## Parameters
@@ -32,9 +35,9 @@ The SystemId of the record to retrieve.
 
 
 ## Return Value
-*RecordExists*  
+*[Optional] RecordExists*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the record exists; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the record exists; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -44,9 +47,9 @@ Every record has a SystemId, which is stored in the SystemId field of the table.
 
 ## Example
   
-This example shows how to use the GETBYSYSTEMID method to retrieve a record.
+This example shows how to use the GetBySystemId method to retrieve a record.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer was found.';

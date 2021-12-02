@@ -1,24 +1,27 @@
 ---
-title: "Report.PageNo Method"
+title: "Report.PageNo([Integer]) Method"
+description: "Gets or sets the current page number of a report."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.PageNo Method
+# Report.PageNo([Integer]) Method
+> **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
+
 Gets or sets the current page number of a report.
 
 
 ## Syntax
-```
+```AL
 [CurrPageNo := ]  Report.PageNo([NewPageNo: Integer])
 ```
 ## Parameters
@@ -26,15 +29,15 @@ Gets or sets the current page number of a report.
 &emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.  
 
-*NewPageNo*  
+*[Optional] NewPageNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The new page number of a report.  
 
 
 ## Return Value
-*CurrPageNo*  
+*[Optional] CurrPageNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The current page number of a report.  
+The current page number of a report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

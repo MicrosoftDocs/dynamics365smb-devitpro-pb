@@ -1,28 +1,31 @@
 ---
-title: "RecordRef.Caption Method"
+title: "RecordRef.Caption() Method"
+description: "Gets the caption of the table that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Caption Method
+# RecordRef.Caption() Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the caption of the table that is currently selected. Returns an error if no table is selected.
 
 
 ## Syntax
-```
+```AL
 Caption :=   RecordRef.Caption()
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 
 ## Parameters
 *RecordRef*  
@@ -32,29 +35,29 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 ## Return Value
 *Caption*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The caption of the table.  
+The caption of the table.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- This method works just like the [TABLECAPTION Method (Record)](../record/record-tablecaption-method.md).  
+ This method works just like the [TableCaption Method (Record)](../record/record-tablecaption-method.md).  
   
 ## Example  
- The following example selects tables 3 through 5 and opens each table as a RecordRef variable that is named MyRecordRef. The CAPTION method uses the RecorRef variable to retrieve the caption for each of the tables and displays the table number and the caption in a message box. The [CLOSE Method (RecordRef)](recordref-close-method.md) closes the table.
+ The following example selects tables 3 through 5 and opens each table as a RecordRef variable that is named MyRecordRef. The Caption method uses the RecorRef variable to retrieve the caption for each of the tables and displays the table number and the caption in a message box. The [Close Method (RecordRef)](recordref-close-method.md) closes the table.
   
-```
+```al
 var
     varCaption: Text;
     i: Integer;
     MyRecordRef: RecordRef;
     Text000: Label 'Table No: %1 Caption: %2';
 begin
-    for i := 3 TO 6 do begin  
-        MyRecordRef.OPEN(i);  
-        varCaption := MyRecordRef.CAPTION;  
-        MESSAGE(Text000, i, varCaption);  
-        MyRecordRef.CLOSE;  
+    for i := 3 to 6 do begin  
+        MyRecordRef.Open(i);  
+        varCaption := MyRecordRef.Caption;  
+        Message(Text000, i, varCaption);  
+        MyRecordRef.Close;  
         end;  
 end;
 ```  

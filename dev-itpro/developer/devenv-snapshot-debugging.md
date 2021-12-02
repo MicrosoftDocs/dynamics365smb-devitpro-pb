@@ -3,26 +3,27 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/09/2020
+ms.date: 11/23/2021
 ms.reviewer: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # Snapshot Debugging
 
-[!INCLUDE[2020_releasewave2_preview](../includes/2020_releasewave2_preview.md)]
+> [!NOTE]  
+> With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
 
-Snapshot debugging allows a delegated admin to record AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. For a delegated admin to create and download a snapshot file that exists on the server on behalf of an end-user, the delegated admin must be part of the **D365 Snapshot Debug** permission group. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
-
-> [!IMPORTANT]  
-> With this release snapshot debugging is enabled in *sandbox environments* only. Debugging in a production environment will be enabled with a later release. You can, however, use snapshot debugging in this release to attach to a specific user session, which is currently not possible with regular debugging.
+Snapshot debugging allows recording AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
 
 Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
 - Snappoints  
 - AL exceptions
+
+> [!NOTE]  
+> With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it is possible to snapshot debug event subscribers triggered from built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built-in-codeunit-triggers).
 
 > [!IMPORTANT]  
 > To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
@@ -44,15 +45,19 @@ From Visual Studio Code, you start a snapshot by creating a snapshot configurati
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file will now contain the following information: 
+Choose whether to run the session on a cloud service or locally. The configuration file contains the following information: 
 
 |Setting | Description |
 |--------|-------------|
-|`userId`| The GUID of the user on whose behalf a snapshot debugging will be started. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. For more information, see [JSON Files](devenv-json-files.md).|
+|`userId`| The GUID of the user on whose behalf a snapshot debugging will be started. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` does not work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [JSON Files](devenv-json-files.md).|
 |`sessionId`| A session ID for the user specified above in `userId`.|
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
+|`tenant`| The AAD tenant ID for the tenant to connect to. Specify this if targeting a different tenant from the user's own AAD tenant, for example when running as a delegated admin.|
 
 When a configuration is defined, a snapshot debugging session can be initialized by pressing **Ctrl+Shift+P** and then selecting **AL:Initialize Snapshot Debugging** or by pressing **F7**.
+
+> [!NOTE]  
+> If you are going to use the snapshot for profiling the code, you must enable the configuration parameter called `executionContext`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).
 
 To record the AL execution, the server will now wait for a connection to happen where the following rules apply: 
 
@@ -60,9 +65,13 @@ To record the AL execution, the server will now wait for a connection to happen 
 - If only a `userId` is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
 
-Once a snapshot debugging session is initialized the snapshot debugging session counter on the status-bar will be updated and look like this:
 
-![Snapshot Debugger Counter](media/snapshotdebugger.png)
+> [!TIP]  
+> If you are having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
+
+Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
+
+![Snapshot Debugger Counter.](media/snapshotdebugger.png)
 
 ## Status of a snapshot debugging session
 
@@ -87,10 +96,7 @@ Snapshot debugging sessions that have produced a snapshot file can be debugged. 
 
 ## Downloading symbols on the snapshot debugger endpoint
 
-In order to download symbols on a production server, you need permission related entries:
-
-- Be a delegated admin
-- The read-only access to the **Published Application** table emphasized in the **D365 EXTENSION MGT** permission set should also be granted.
+In order to download symbols on a production server, you need permission related entries. The read-only access to the **Published Application** table emphasized in the **D365 Snapshot Debug** permission set should be granted.
 
 Debugging requires that symbols on the server are matched with the symbols that the user has locally. If this is not the case, and you set a breakpoint on a given line in Visual Studio Code, the line of code may differ from what is on the server.
 
@@ -103,7 +109,7 @@ Symbols download is using the **snapshotInitialize** debug configuration setting
             "request": "snapshotInitialize",
             "environmentType": "OnPrem",
             "server": "http://localhost",
-            "serverInstance": "BC170",
+            "serverInstance": "BC190",
             "authentication": "UserPassword",
             "breakOnNext": "WebClient"
         },
@@ -123,6 +129,10 @@ Once a snapshot debugging session starts in Visual Studio Code, code execution w
 
 The user can set breakpoints and continue execution to that breakpoint for testing, for example, if a line is hit, but it is the snappoint that carries the real information.
 
+## Snapshot debugging built-in codeunit triggers
+
+Built-in codeunit triggers can be snapshot-debugged if they are part of the stack trace, these are System Action Triggers, or Company Triggers. This provides a way to snapshot debug that part of the Base App too. To help locate where built-in codeunit triggers are called, use the **Event Recorder** in [!INCLUDE[prod_short](includes/prod_short.md)]. From the code, when all symbols on the snapshot endpoint have been downloaded, see [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint), you can add AL code that contains a reference to that particular event subscription and then use **Go to Definition** to locate the place where that particular codeunit trigger is defined in the .dal file. Adding a snappoint to the code in the .dal file and then initiating the snapshot debugger session will ensure that the code is part of the stacktrace. When the generated snapshot file is then opened in the debugger, the execution will break on the snappoint.
+
 ## Snapshot debugging versus regular debugging
 
 Snapshot debugging is almost the same as a regular debugging with the differences mentioned in the following:
@@ -139,9 +149,6 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 |A snappoint may resolve as a non-reachable breakpoint if there was no execution state on the server hitting the snappoint.|
 |A snapshot debugger session with a Business Central server will be closed if not attached to after 30 minutes.|
 |If a snapshot debugger session is started, it has to be finished after 10 minutes.|
-
-<!-- Getting variables is expensive.-->
-<!-- We may also enable a server settings (not in effect now, but we may for the Prod) that may not collect variable information on snap points if the resource consumption on the server (SAAS scenario) is within certain (we determine it) thresholds. I do not know how to put this "nicely", but basically we can anytime disable to get variable information for sessions that behave like "elephants in a china shop" -->
  
 ## See Also
 
@@ -150,7 +157,7 @@ Snapshot debugging is almost the same as a regular debugging with the difference
 [Developing Extensions](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [AL Code Navigation](devenv-al-code-navigation.md)  
-[EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
-[EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  
-[LongrunningSQLStatementsThreshold Property](properties/devenv-longrunningsqlstatementsthreshold-property.md)  
-[NumberOfSQLStatements Property](properties/devenv-numberofsqlstatements-property.md)  
+[EnableLongRunningSQLStatements Property](./properties/devenv-properties.md)  
+[EnableSQLInformationDebugger Property](./properties/devenv-properties.md)  
+[LongrunningSQLStatementsThreshold Property](./properties/devenv-properties.md)  
+[NumberOfSQLStatements Property](./properties/devenv-properties.md)

@@ -1,27 +1,29 @@
 ---
-title: "ShortCutKey Property"
+title: "ShortcutKey Property"
+description: "Sets a shortcut key for selecting a menu item."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: b20579b0-444c-45d5-b98b-882d3255ad88
-caps.latest.revision: 7
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# ShortcutKey Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-# ShortCutKey Property
+Sets a shortcut key for selecting a menu item.
 
-Sets a shortcut key for selecting an action.
-  
-  
 ## Applies to
+-   Page Action
 
--  Actions on pages
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This property is fully functional in the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] Web client.
 
 ## Syntax
 
@@ -36,6 +38,8 @@ Pressing the key that you designate with this property provides the same result 
 Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](/dynamics365/business-central/keyboard-shortcuts). 
 
 Note that the shortcut keys that you set with this property have precedence over the default shortcut keys of the web browser that you are using and that they will override their behavior.
+
+For more information, see [Adding Actions to a Page](../devenv-adding-actions-to-a-page.md).
   
 ## See Also
 

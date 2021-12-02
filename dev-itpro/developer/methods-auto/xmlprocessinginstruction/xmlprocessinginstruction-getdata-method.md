@@ -1,24 +1,27 @@
 ---
-title: "XmlProcessingInstruction.GetData Method"
+title: "XmlProcessingInstruction.GetData(var Text) Method"
+description: "Gets the content of the processing instruction, excluding the target."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlProcessingInstruction.GetData Method
+# XmlProcessingInstruction.GetData(var Text) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets the content of the processing instruction, excluding the target.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  XmlProcessingInstruction.GetData(var Result: Text)
 ```
 ## Parameters
@@ -32,9 +35,9 @@ The content of the processing instruction, excluding the target.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

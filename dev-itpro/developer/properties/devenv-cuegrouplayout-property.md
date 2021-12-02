@@ -1,26 +1,34 @@
 ---
 title: "CuegroupLayout Property"
+description: "Specifies if the layout is wide."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-author: jswymer
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # CuegroupLayout Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets whether a `cuegroup` control displays in the wide layout.   
-  
-## Applies to  
-  
-- `cuegroup` controls
-  
-## Property Values  
+Specifies if the layout is wide.
 
-`wide` sets the `cuegroup` control to the wide layout; otherwise, the control uses the normal layout.     
+## Applies to
+-   Page Group
+
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Wide**|Sets the `cuegroup` control to the wide layout|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Syntax
 
@@ -51,6 +59,3 @@ cuegroup(SalesCueContainer)
 [Properties](devenv-properties.md)
 [Rowspan Property](devenv-rowspan-property.md)  
 [Columnspan Property](devenv-columnspan-property.md)
-<!--
-[How to: Arrange Fields in Rows and Columns Using the GridLayout Control](How-to-Arrange-Fields-in-Rows-and-Columns-Using-the-GridLayout-Control.md) 
--->

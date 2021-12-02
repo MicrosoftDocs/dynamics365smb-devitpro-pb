@@ -1,24 +1,27 @@
 ---
-title: "Record.Insert Method"
+title: "Record.Insert(Boolean, Boolean) Method"
+description: "Inserts a record into a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/23/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.Insert Method
+# Record.Insert(Boolean, Boolean) Method
+> **Version**: _Available or changed with runtime version 4.0._
+
 Inserts a record into a table.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Record.Insert(RunTrigger: Boolean, InsertWithSystemId: Boolean)
 ```
 ## Parameters
@@ -37,9 +40,9 @@ If this parameter is true, the SystemId field of the record is given a value tha
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -50,9 +53,9 @@ The inserted record will automatically get assigned a SystemId by the platform. 
 
 ## Example
   
-This example shows how to use the INSERT method to insert a record with a specified SystemId.
+This example shows how to use the Insert method to insert a record with a specified SystemId.
 
-```
+```al
 var
     CustomerRec: Record Customer;
     Text000: Label 'Customer no: %1 inserted.';
@@ -61,7 +64,7 @@ begin
     CustomerRec.Init(); 
     CustomerRec."No." := '1120'; 
     CustomerRec.SystemId := '{B6666666-F5A2-E911-8180-001DD8B7338E}';  
-    if CustomerRec.INSERT(true, true) then  
+    if CustomerRec.Insert(true, true) then  
       Message(Text000, CustomerRec."No.")  
     else  
       Message(Text001, CustomerRec."No.");

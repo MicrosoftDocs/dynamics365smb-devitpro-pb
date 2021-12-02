@@ -2,30 +2,36 @@
 title: "Technical Upgrade From Version 14 to Version 17"
 description: Describes how to do a technical upgrade from Business Central 14 to 17
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade From Version 14 to Version 17
 
-Use this process when you have a code customized [!INCLUDE[prodshort](../developer/includes/prodshort.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
+Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 platform (version 17). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
- ![Upgrade on customized Business Central application](../developer/media/bc14-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
+ ![Upgrade on customized Business Central application.](../developer/media/bc14-to-17-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
  
-#### Single-tenant and multitenant deployments
+## General information
+ 
+### Single-tenant and multitenant deployments
 
-The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
+### Personalization and customizations
+
+[!INCLUDE[windows-client-upgrade](../developer/includes/windows-client-upgrade.md)]
 
 ## Prerequisites
 
 1. Upgrade to Business Central Spring 2019 (version 14).
 
-   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 17 update. For more information, see [[!INCLUDE[prodlong](../developer/includes/prodlong.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+   There are several updates for version 14. When upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, upgrade to the latest version 14 update that has a compatible version 17 update. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
    
    If your solution is already on version 14, then you don't have to upgrade to the latest version 17 update.
 
@@ -125,22 +131,26 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the database from the version 14.0 platform to the version 17.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator.
+[!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 
-2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator.
 
-    ```
+3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
+
+    ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer <database server>\<database instance> -DatabaseName "<BC14 database name>"
     ```
+
     When completed, a message like the following displays in the console:
 
-    ```
+    ```powershell
     DatabaseServer      : .\BCDEMO
     DatabaseName        : Demo Database BC (14-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
     ```
+[!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
 ## Task 5: Configure version 17 server
 
@@ -165,9 +175,9 @@ When you installed version 17 in **Task 1**, a version 17 [!INCLUDE[server](../d
     ```
     Restart-NAVServerInstance -ServerInstance <BC17 server instance>
     ```
-## <a name="UploadLicense"></a> Task 6: Upload [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license  
+## <a name="UploadLicense"></a> Task 6: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
-If you have a new [!INCLUDE[prodshort](../developer/includes/prodshort.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
+If you have a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense): 
 
 ```powershell
 Import-NAVServerLicense -ServerInstance <BC17 server instance> -LicenseFile "<path to the license>"
@@ -297,7 +307,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] installation includes ne
 
 To upgrade the control add-ins from the client, do the following steps:
 
-1. Open the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] client.
+1. Open the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 2. Search for and open the **Control Add-ins** page.
 3. Choose **Actions** > **Control Add-in Resource** > **Import**.
 4. Locate and select the .zip file for the control add-in and choose **Open**.

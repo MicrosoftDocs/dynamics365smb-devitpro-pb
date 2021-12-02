@@ -1,23 +1,30 @@
 ---
 title: "ExternalType Property"
-description: Specifies the name of the orginal table in the external database. 
+description: "Specifies the type of the original table field in the external database."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ExternalType Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies the data type of the corresponding field data type in the external database table. For example, tables in Dynamics 365 Sales database.
+Specifies the type of the original table field in the external database.
 
-## Applies to  
+Specify this property if the original type is different from the type that you specify in the Type property. This means that you can use a different type for the table.
 
-- Fields 
+## Applies to
+-   Table Field
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
 
@@ -41,5 +48,5 @@ This property is used when you specify **CDS**, **MicrosoftGraph** or **External
 
 [TableType Property](devenv-tabletype-property.md)  
 [ExternalSchema Property](devenv-externalschema-property.md)  
-[Name Property](devenv-name-property.md)  
-[Properties](devenv-properties.md)  
+[Name Property](./devenv-properties.md)  
+[Properties](devenv-properties.md)

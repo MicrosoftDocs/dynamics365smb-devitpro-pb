@@ -1,11 +1,11 @@
 ---
 title: "Implementing the Camera in AL"
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: blrobl
 ---
@@ -158,5 +158,5 @@ For information about troubleshooting access to camera, see [Troubleshooting: Ca
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Implementing Location in AL](devenv-implement-location-al.md)  
 [CameraOptions Overview](devenv-Camera-options.md)  
-[RunOnClient property](properties/devenv-runonclient-property.md)  
-[WithEvents property](properties/devenv-withevents-property.md) 
+[RunOnClient property](./properties/devenv-properties.md)  
+[WithEvents property](./properties/devenv-properties.md)

@@ -3,11 +3,11 @@ title: Table, Table Fields, and Table Extension Properties
 description: This topic lists table properties that apply to feilds of a table object.
 author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
 ms.author: solsen
@@ -15,7 +15,9 @@ ms.author: solsen
 
 # Table, Table Fields, and Table Extension Properties
 
-The following topic lists properties that apply to the [table object](../devenv-table-object.md) and table fields and, in some cases, to the [table extension object](../devenv-table-ext-object.md) as specified below.
+This article lists properties that apply to the [table object](../devenv-table-object.md) and table fields and, in some cases, to the [table extension object](../devenv-table-ext-object.md) as specified below.
+
+[!INCLUDE[properties_note](../includes/properties_note.md)]
 
 |Property Name|Available for Table<br />  Extension Object|Applies to|
 |-------------|-----------|---------------------|
@@ -33,7 +35,7 @@ The following topic lists properties that apply to the [table object](../devenv-
 |[CharAllowed Property](devenv-charallowed-property.md)||<ul><li>Code field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
 |[ClosingDates Property](devenv-closingdates-property.md)|X|<ul><li>Date field</li></ul>|
 |[Compressed Property](devenv-compressed-property.md)||<ul><li>BLOB field</li></ul>|
-|[Data Type](devenv-data-type-property.md)||<ul><li>Table fields</li></ul>|
+|[Data Type](./devenv-properties.md)||<ul><li>Table fields</li></ul>|
 |[DataClassification](devenv-dataclassification-property.md)||<ul><li>Table object</li></ul>|
 |[DataCaptionFields Property](devenv-datacaptionfields-property.md)|X|<ul><li>Table object</li></ul>|
 |[DataPerCompany Property](devenv-datapercompany-property.md)||<ul><li>Table object</li></ul>|
@@ -47,14 +49,12 @@ The following topic lists properties that apply to the [table object](../devenv-
 |[ExternalName Property](devenv-externalname-property.md)||<ul><li>Table object</li></ul>|
 |[ExternalSchema Property](devenv-externalschema-property.md)||<ul><li>Table object</li></ul>|
 |[FieldClass Property](devenv-fieldclass-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
-|[ID Property](devenv-id-property.md)||<ul><li>Table object</li></ul>|
 |[InitValue Property](devenv-initvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[LinkedInTransaction Property](devenv-linkedintransaction-property.md)||<ul><li>Table object</li></ul>|
 |[LinkedObject Property](devenv-linkedobject-property.md)||<ul><li>Table object</li></ul>|
 |[LookupPageID Property](devenv-lookuppageid-property.md)||<ul><li>Table object</li></ul>|
 |[MaxValue Property](devenv-maxvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[MinValue Property](devenv-minvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>| 
-|[Name Property](devenv-name-property.md)||<ul><li>Table object</li></ul>|
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 
 |[Numeric Property](devenv-numeric-property.md)||<ul><li>Code field</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
 |[ObsoleteReason](devenv-obsoletereason-property.md)||<ul><li>Table object</li><li>Table keys</li><li>Text field</li></ul>|
@@ -63,11 +63,11 @@ The following topic lists properties that apply to the [table object](../devenv-
 |[OptionMembers Property](devenv-optionmembers-property.md)||<ul><li>Option field</li></ul>|
 |[PasteIsValid Property](devenv-pasteisvalid-property.md)||<ul><li>Table object</li></ul>|
 |[Permissions Property](devenv-permissions-property.md)||<ul><li>Table object</li></ul>|
-|[ReplicateData Property](devenv-replicatedata-property.md)|<ul><li>Table object</li></ul>|
+|[ReplicateData Property](devenv-replicatedata-property.md)||<ul><li>Table object</li></ul>|
 |[Scope (Table) Property](devenv-scope-table-property.md)||<ul><li>Table object</li></ul>|
 |[SignDisplacement Property](devenv-signdisplacement-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
-|[SQLDataType Property](devenv-sql-data-type-property.md)||<ul><li>Code field</li><li>OemCode field</li></ul>|
-|[SqlTimeStamp Property](devenv-sql-timestamp-property.md)||<ul><li>BigInteger</li></ul>|
+|[SQLDataType Property](./devenv-sqldatatype-property.md)||<ul><li>Code field</li><li>OemCode field</li></ul>|
+|[SqlTimeStamp Property](./devenv-sqltimestamp-property.md)||<ul><li>BigInteger</li></ul>|
 |[SubType Property \(BLOB\)](devenv-subtype-blob-property.md)||<ul><li>BLOB field</li></ul>|
 |[TableRelation Property](devenv-tablerelation-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[TableType Property](devenv-tabletype-property.md)||<ul><li>Table object</li></ul>|
@@ -140,7 +140,7 @@ The following topic lists properties that apply to the table object.
 |[MinValue Property](devenv-minvalue-property.md)|X||  
 |[NotBlank Property](devenv-notblank-property.md)|X||
 |[SignDisplacement Property](devenv-signdisplacement-property.md)|X||
-|[SqlTimeStamp Property](devenv-sql-timestamp-property.md)|X||
+|[SqlTimeStamp Property](./devenv-sqltimestamp-property.md)|X||
 |[TableRelation Property](devenv-tablerelation-property.md)|X||
 |[ValidateTableRelation Property](devenv-validatetablerelation-property.md)|X||
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)|X|| 
@@ -194,7 +194,7 @@ The following topic lists properties that apply to the table object.
 |[InitValue Property](devenv-initvalue-property.md)|X||
 |[NotBlank Property](devenv-notblank-property.md)|X||
 |[Numeric Property](devenv-numeric-property.md)|X||
-|[SQLDataType Property](devenv-sql-data-type-property.md)|X||
+|[SQLDataType Property](./devenv-sqldatatype-property.md)|X||
 |[TableRelation Property](devenv-tablerelation-property.md)|X||
 |[ValidateTableRelation Property](devenv-validatetablerelation-property.md)|X||
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)|X||
@@ -402,7 +402,7 @@ The following topic lists properties that apply to the table object.
 |[InitValue Property](devenv-initvalue-property.md)|X||
 |[NotBlank Property](devenv-notblank-property.md)|X||
 |[Numeric Property](devenv-numeric-property.md)|X||
-|[SQLDataType Property](devenv-sql-data-type-property.md)|X||
+|[SQLDataType Property](./devenv-sqldatatype-property.md)|X||
 |[TableRelation Property](devenv-tablerelation-property.md)|X||
 |[ValidateTableRelation Property](devenv-validatetablerelation-property.md)|X||
 |[ValuesAllowed Property](devenv-valuesallowed-property.md)|X||
@@ -457,7 +457,7 @@ The following topic lists properties that apply to the table object.
 |[MinValue Property](devenv-minvalue-property.md)|X||
 |[NotBlank Property](devenv-notblank-property.md)|X||
 |[OptionCaptionML Property](devenv-optioncaptionml-property.md)|X|X|
-|[OptionMembers Property](devenv-optionstring-property.md)|X||
+|[OptionMembers Property](./devenv-optionmembers-field-property.md)|X||
 |[SignDisplacement Property](devenv-signdisplacement-property.md)|X||
 |[TableRelation Property](devenv-tablerelation-property.md)|X||
 |[ValidateTableRelation Property](devenv-validatetablerelation-property.md)|X||

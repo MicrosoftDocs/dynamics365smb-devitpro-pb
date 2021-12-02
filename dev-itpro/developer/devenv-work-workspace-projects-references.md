@@ -2,11 +2,11 @@
 title: "Working with Multiple Projects and Project References"
 description: "Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
-ms.date: 10/01/2020
+ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -18,11 +18,11 @@ ms.author: solsen
 A project reference in an AL-based workspace is defined as a dependency in the `app.json` file and exists as a project in the workspace. There is no special visual representation of a project reference. 
 
 > [!IMPORTANT]  
-> A *project reference* is the full `id`, `name`, `publisher`, and `version` of an existing project in the workspace. This is contrary to an application reference where it is enough to specify a minimal version.
+> A *project reference* is the full `id`, `name`, `publisher`, and `version` of an existing project in the workspace. This is contrary to an application reference where it is enough to specify a minimal version. If you are using workspaces with multiple projects and change the `name` or `publisher` of an extension in the workspace, the dependencies in the app.json file must be updated with the new name and publisher or you may encounter issues with reference resolution. For more information, see [App Identity](devenv-app-identity.md).
 
 In the example below, the project called **Leaf** defines two dependencies to the projects **Middle** and **Root**. Since both **Root** and **Middle** are projects in the workspace they are considered project references.
 
-![Workspace Dependencies](media/projectreference.png)
+![Workspace Dependencies.](media/projectreference.png)
 
 The advantage of working with project references is that there is no need to download the symbols for a project reference. They are there as the symbols for the reference project and will be resolved as they are modified. For example, if you add a new method to a codeunit in the **Root** project and reference the codeunit in the **Leaf** project, the method will automatically resolve as you touch the **Leaf** project.
 
@@ -40,7 +40,7 @@ A project is considered changed if any of its application objects have changed i
 
 For example, in a workspace with three projects; **Leaf**, **Middle**, and **Base**. **Leaf** depends on **Middle** and **Base**, and **Middle** depends on **Base** as illustrated below:
 
-![flow1](media/flow1.png "Dependency flow between projects")
+![flow1.](media/flow1.png "Dependency flow between projects")
 
 Assuming that: 
 1. All three projects; **Leaf**, **Base**, and **Middle** have changed. 
@@ -57,7 +57,7 @@ Although server publishing is an internal step, it does have an impact on the de
 
 For example, in a workspace with two projects; **Leaf** depends on **Base**, and **External** and **Indirect** are projects outside of the workspace as illustrated below:
 
-![flow2](media/flow2.png "Dependency flow with two external projects")
+![flow2.](media/flow2.png "Dependency flow with two external projects")
 
 Assuming that:
 1. A workspace exists with **Leaf** and **Base** as workspace projects.

@@ -1,23 +1,36 @@
 ---
 title: "Editable Property"
+description: "Sets a value that indicates whether a field, page, or control can be edited through the UI."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Editable Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets a value that indicates whether a field, page, or control can be edited through the UI.  
+Sets a value that indicates whether a field, page, or control can be edited through the UI.
 
-## Applies to  
+## Applies to
+-   Table Field
+-   Page
+-   Request Page
+-   Page Label
+-   Page Field
+-   Page Group
+-   Page System Part
+-   Page Chart Part
+-   Page Part
 
-- Pages and group, part, and field controls  
-- Table fields  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value
 
@@ -53,5 +66,5 @@ On pages, you use the **Editable** property for group, part, field, and action c
 ## See Also
 
 [Properties](devenv-properties.md)   
-[Page Properties](devenv-page-properties.md)  
-[InDataSet Property](devenv-indataset-property.md)
+[Page Properties](./devenv-properties.md)  
+[InDataSet Property](../methods/devenv-indataset-attribute.md)

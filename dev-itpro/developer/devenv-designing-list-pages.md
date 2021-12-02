@@ -3,11 +3,11 @@ title: Designing List Pages for Business Central
 description: "Provides and overview of List page design"
 author: jswymer
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
@@ -50,7 +50,7 @@ For a simple code example of a list page, see [Simple List Page Example](devenv-
 
 The following figure illustrates the general layout and elements of a list page.
 
-![List page](media/list-page-overview-v3.png "List page overview")
+![List page.](media/list-page-overview-v3.png "List page overview")
 
 The following table describes the elements of a typical list page.
 
@@ -111,7 +111,7 @@ Using the [Scope (Action)](properties/devenv-scope-action-property.md) property,
 
 ### Configure the gesture for actions
 
-Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface. For more information, see [Implementation Tips for Gestures](properties/devenv-implementation-tips-gestures-property.md).
+Using the [Gesture](properties/devenv-gesture-property.md) property, configure the swipe direction for running actions on a device with a touch interface.
 
 ## See Also
 

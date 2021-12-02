@@ -1,42 +1,45 @@
 ---
-title: "XmlReadOptions.PreserveWhitespace Method"
+title: "XmlReadOptions.PreserveWhitespace([Boolean]) Method"
+description: "Gets or sets a value that indicates whether insignificant white space should be preserved during parsing."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlReadOptions.PreserveWhitespace Method
+# XmlReadOptions.PreserveWhitespace([Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets or sets a value that indicates whether insignificant white space should be preserved during parsing.
 
 
 ## Syntax
-```
+```AL
 [Value := ]  XmlReadOptions.PreserveWhitespace([NewValue: Boolean])
 ```
-> [!NOTE]  
-> This method can be invoked using property access syntax.  
+> [!NOTE]
+> This method can be invoked using property access syntax.
 ## Parameters
 *XmlReadOptions*  
 &emsp;Type: [XmlReadOptions](xmlreadoptions-data-type.md)  
 An instance of the [XmlReadOptions](xmlreadoptions-data-type.md) data type.  
 
-*NewValue*  
+*[Optional] NewValue*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 The new value of the flag.  
 
 
 ## Return Value
-*Value*  
+*[Optional] Value*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if insignificant white spaces are preserved during parsing, otherwise **false**.  
+**true** if insignificant white spaces are preserved during parsing, otherwise **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

@@ -1,24 +1,27 @@
 ---
-title: "Report.WordLayout Method"
+title: "Report.WordLayout(var InStream) Method"
+description: "Gets the Word report layout that is used on a report and returns it as a data stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.WordLayout Method
-Gets the Word report layout that is used on a report and returns it as a data stream. The method has an instance call and a static call. The following code shows the syntax of the WORDLAYOUT method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
+# Report.WordLayout(var InStream) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
+Gets the Word report layout that is used on a report and returns it as a data stream.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Report.WordLayout(var InStream: InStream)
 ```
 ## Parameters
@@ -33,9 +36,9 @@ The variable in which to return the Word report layout.
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

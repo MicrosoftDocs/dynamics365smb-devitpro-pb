@@ -2,7 +2,7 @@
 author: edupont04
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.date: 11/12/2020
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 ### Join the Microsoft Partner Network

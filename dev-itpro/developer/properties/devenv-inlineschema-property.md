@@ -1,25 +1,29 @@
 ---
 title: "InlineSchema Property"
+description: "Specifies whether an XML schema definition should be included inside an XML document."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: ef675ff7-3085-4678-8fb8-527f7b0af53a
-caps.latest.revision: 5
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # InlineSchema Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Specifies whether an XML schema definition should be included inside an XML document.  
+Specifies whether an XML schema definition should be included inside an XML document.
 
-## Applies to  
-  
-- XMLports  
-  
+## Applies to
+-   Xml Port
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Property Value  
 
 **True** if the XML schema definition should be included in the XML document; otherwise, **false**.  
@@ -45,4 +49,4 @@ Inline schemas can be useful in many situations. You can use inline schemas in t
 ## See Also
 
 [Properties](devenv-properties.md)   
-[XMLport Data Type](../datatypes/devenv-xmlport-data-type.md)
+[XMLport Data Type](../methods-auto/library.md)

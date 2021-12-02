@@ -1,25 +1,29 @@
 ---
-title: "SQLTimestamp Property"
-description: Describes the SQLTimestanp property on table fields in Business Central
+title: "SqlTimestamp Property"
+description: "Specifies a field to be a timestamp field."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.assetid: 615d15ba-5d0e-4071-bfa2-c262c1dccbf4
-caps.latest.revision: 3
 author: SusanneWindfeldPedersen
 ---
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+# SqlTimestamp Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-# SQLTimestamp Property
+Specifies a field to be a timestamp field.
 
-Specifies a field to be a timestamp field.  
+## Applies to
+-   Table Field
 
-## Applies to  
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-- Table Fields  
 
 ## Property Value  
 

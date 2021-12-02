@@ -1,26 +1,29 @@
 ---
-title: "Media.ImportFile Method"
+title: "Media.ImportFile(Text, Text [, Text]) Method"
+description: "Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ImportFile Method
+# Media.ImportFile(Text, Text [, Text]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client. The media file is imported to the application database, and a reference to the media is included in the Media data type field.
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
 
 ## Syntax
-```
+```AL
 [ID := ]  Media.ImportFile(Filename: Text, Description: Text [, MimeType: Text])
 ```
 ## Parameters
@@ -36,15 +39,15 @@ Specifies the full path and name of the media file to be added.
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies text that can be used in the client to describe the media.
         
-*MimeType*  
+*[Optional] MimeType*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.  
 
 
 ## Return Value
-*ID*  
+*[Optional] ID*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+The unique ID that is assigned to the media object in the database. You can also get the ID by using the MediaId method. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -77,8 +80,8 @@ To support the example code that follows, create the following objects:
   -   List type page that uses the **My Items** table as its source.
   -   A repeater control that contains the fields of the **My Items** table.
 
-      >[!NOTE]
-      >It is not necessary to include the **Media** data type field on the page.
+      > [!NOTE]  
+      > It is not necessary to include the **Media** data type field on the page.
 
   Use the page to add one or more items to the table, assigning each item a number like 1,2,3, and so on.
 
@@ -92,7 +95,7 @@ With the objects in place, you can add and run the following AL code to import t
 
 The example code iterates over records in the **My Items** table. For each record, it looks in the *C:\images* folder for a file whose name matches the **No.** field of the record. If there is a match, the file is imported and a message appears; otherwise, nothing happens.
 
-```
+```al
  var
     myItemRec: Record "My Items";
     fileName: Text;

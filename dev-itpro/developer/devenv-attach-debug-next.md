@@ -2,11 +2,11 @@
 title: "Attach and Debug Next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -60,11 +60,11 @@ The following configurations for attach are supported:
 
 ### To start an attach session
 
-1. In Visual Studio Code, under **Debug**, choose **Add configuration**.
+1. In Visual Studio Code, under **Run**, choose **Add configuration**.
 2. Choose whether to attach to a cloud or a local session.  
 The `launch.json` file is now populated with the correct attach configuration settings. If you selected a local session, change the default settings to point to your local server in the `server` and `serverInstance` settings.
 3. Set `breakOnNext` to specify the client type on which to break.
-4. In your code, set at least one breakpoint using **Debug** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
+4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
 5. It is important to make sure to publish your app by pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Your app *will not be* published if you only press **F5**.  
     > [!IMPORTANT]  
@@ -80,8 +80,10 @@ You can always add more breakpoints while debugging.
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
+[Debugging](devenv-debugging.md)  
+[Snapshot Debugging](devenv-snapshot-debugging.md)  
 [JSON Files](devenv-json-files.md)  
-[EnableLongRunningSQLStatements Property](properties/devenv-enablelongrunningsqlstatements-property.md)  
-[EnableSQLInformationDebugger Property](properties/devenv-enablesqlinformationdebugger-property.md)  
-[LongrunningSQLStatementsThreshold Property](properties/devenv-longrunningsqlstatementsthreshold-property.md)  
-[NumberOfSQLStatements Property](properties/devenv-numberofsqlstatements-property.md)  
+[EnableLongRunningSQLStatements Property](./properties/devenv-properties.md)  
+[EnableSQLInformationDebugger Property](./properties/devenv-properties.md)  
+[LongrunningSQLStatementsThreshold Property](./properties/devenv-properties.md)  
+[NumberOfSQLStatements Property](./properties/devenv-properties.md)

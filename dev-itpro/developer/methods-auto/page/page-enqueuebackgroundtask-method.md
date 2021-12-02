@@ -1,24 +1,27 @@
 ---
-title: "Page.EnqueueBackgroundTask Method"
+title: "Page.EnqueueBackgroundTask(var Integer, Integer [, var Dictionary of [Text, Text]] [, Integer] [, PageBackgroundTaskErrorLevel]) Method"
+description: "Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Page.EnqueueBackgroundTask Method
+# Page.EnqueueBackgroundTask(var Integer, Integer [, var Dictionary of [Text, Text]] [, Integer] [, PageBackgroundTaskErrorLevel]) Method
+> **Version**: _Available or changed with runtime version 4.0._
+
 Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, or the page record ID on the task changed, the task is cancelled.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  Page.EnqueueBackgroundTask(var TaskId: Integer, CodeunitId: Integer [, var Parameters: Dictionary of [Text, Text]] [, Timeout: Integer] [, ErrorLevel: PageBackgroundTaskErrorLevel])
 ```
 ## Parameters
@@ -32,28 +35,28 @@ Specifies the ID of the new page background task. The ID is assigned to the Task
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the ID of the codeunit to run when the task is started.  
-*Parameters*  
+*[Optional] Parameters*  
 &emsp;Type: [Dictionary of [Text, Text]](../dictionary/dictionary-data-type.md)  
 Specifies a collection of keys and values that are passed to the OnRun trigger of the codeunit that runs when the page background task session is started.  
-*Timeout*  
+*[Optional] Timeout*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the number of milliseconds that the page background task can run before it is automatically cancelled.  
-*ErrorLevel*  
+*[Optional] ErrorLevel*  
 &emsp;Type: [PageBackgroundTaskErrorLevel](../pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)  
 Specifies the level of error handling on page background task level.  
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the page background task is successfully queued for execution; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the page background task is successfully queued for execution; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
-The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the ENQUEUEBACKGROUNDTASK method from a page trigger. The ID of the current record of the page must remain static after the call is made and while the background task is running. Otherwise, the task will be canceled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
+The enqueued page background task stores the record ID of the current page. If the current record ID on the page changes, or the page is closed, the task is canceled. Typically, you call the EnqueueBackgroundTask method from a page trigger. The ID of the current record of the page must remain static after the call is made and while the background task is running. Otherwise, the task will be canceled. For this reason, we recommend that you don't enqueue the background task from the `OnOpenPage` trigger. Instead, use the  `OnAfterGetRecord` or `OnAfterGetCurrRecord` triggers.
 
 ​The **Child Session Max Concurrency** setting of the [!INCLUDE[server](../../includes/server.md)] controls how many page background tasks can be run simultaneously for a parent session.  The setting has a default value of 5. If this number is exceeded, then they'll be queued and run when a slot becomes available as other tasks are finished. Enqueuing the task will fail if the total number of enqueued tasks exceed the **Child Sessions Max Queue Length** server configuration setting.​ For more information, see [Configuring Business Central Server - Asynchronous Processing](../../../administration/configure-server-instance.md#PBT).
 
@@ -72,9 +75,9 @@ It's possible to enqueue the task again in the completion trigger or error trigg
 
 ## Example
 
-The following code extends the **Customer Card** page with a page background task by using the ENQUEUEBACKGROUNDTASK method. For more information about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
+The following code extends the **Customer Card** page with a page background task by using the EnqueueBackgroundTask method. For more information about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
   
-```
+```al
 pageextension 50100 CustomerCardExt extends "Customer Card"
 {
     layout
@@ -131,5 +134,6 @@ pageextension 50100 CustomerCardExt extends "Customer Card"
 
 [Page Background Tasks](../../devenv-page-background-tasks.md)  
 [Page Data Type](page-data-type.md)  
+[System-Defined Variables](../../devenv-system-defined-variables.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

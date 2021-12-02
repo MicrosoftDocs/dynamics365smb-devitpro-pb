@@ -3,11 +3,11 @@ title: "Defining an XMLport schema"
 description: "An XMLport schema determines which data is exported from or imported to Dynamics 365 Business Central database tables and the format and structure of the files used."
 author: blrobl
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: t-blrobl
 ---
@@ -35,8 +35,8 @@ You nest nodes inside other nodes in order to define the structure of the XMLpor
 |`textelement`|Defines a new text element in the XMLport. It is used for XML elements that do not map to a database item or when the database does not need the information.|
 |`textattribute`|Defines a new text attribute in the XMLport. It is used for XML attributes that do not map to a database item or when the database does not need the information.|
 |`tableelement`|Defines a new table element in the XMLport. It is used for XML elements that map to a table in the database, which is specified in the [SourceTable Property](properties/devenv-sourcetable-property.md). When the XMLport is run, the code nested inside the table element is iterated for all records in the underlying table.|
-|`fieldelement`|Defines a new field element in the XMLport. It is used for XMLport elements that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md). You must specify it inside the parent table element of the field. |
-|`fieldattribute`|Defines a new field attribute in the XMLport. It is used for XMLport attributes that map to a field in the database, which is specified in the [SourceField Property](properties/devenv-sourcefield-property.md).|
+|`fieldelement`|Defines a new field element in the XMLport. It is used for XMLport elements that map to a field in the database, which is specified in the [SourceField Property](./properties/devenv-properties.md). You must specify it inside the parent table element of the field. |
+|`fieldattribute`|Defines a new field attribute in the XMLport. It is used for XMLport attributes that map to a field in the database, which is specified in the [SourceField Property](./properties/devenv-properties.md).|
 
 > [!NOTE]  
 > There can only be one `<root>` node, which must be an element. If the [Format Property](properties/devenv-format-property.md) is set to **Xml**, it must be a `textelement` node.
@@ -76,6 +76,6 @@ For information about the use of namespaces in XMLports see [Using Namespaces wi
 [XMLport Object](devenv-xmlport-object.md)  
 [XMLport Data Type](methods-auto/xmlport/xmlport-data-type.md)  
 [Using Namespaces with XMLports](devenv-using-namespaces-with-xmlports.md)  
-[XMLport Triggers](triggers/devenv-xmlport-triggers.md)  
+[XMLport Triggers](triggers-auto/xmlport/devenv-oninitxmlport-xmlport-trigger.md)
 [Request Pages](devenv-request-pages.md)  
 [XMLport Overview](devenv-xmlport-overview.md)

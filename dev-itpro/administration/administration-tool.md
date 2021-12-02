@@ -5,24 +5,24 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ---
 
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
 > [!TIP]
-> You can also administrate your [!INCLUDE[prodshort](../developer/includes/prodshort.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](/powershell/business-central/overview).   
+> You can also administrate your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment using [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets. For more information, see [Microsoft Dynamics 365 Windows PowerShell Cmdlets](/powershell/business-central/overview).   
 
 ## Install the [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
 To install [!INCLUDE[admintool](../developer/includes/admintool.md)], use the [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] and choose either **Server Option** or **Administration Tool** under the custom options page. For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
 ## Run the [!INCLUDE[admintool](../developer/includes/admintool.md)]  
-You typically run the [!INCLUDE[admintool](../developer/includes/admintool.md)] by choosing **Business Central Administration** from the Start menu. Or, you can open the MMC first and then add the [!INCLUDE[prodshort](../developer/includes/prodshort.md)] snap-in. In this case, choose **Run** from the Start menu and then specify the Microsoft Management Console:  
+You typically run the [!INCLUDE[admintool](../developer/includes/admintool.md)] by choosing **Business Central Administration** from the Start menu. Or, you can open the MMC first and then add the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] snap-in. In this case, choose **Run** from the Start menu and then specify the Microsoft Management Console:  
 
 ```
 mmc
@@ -39,7 +39,7 @@ mmc
 
 -   The left pane shows a tree view that lists all [!INCLUDE[server](../developer/includes/server.md)] computers that you are administering from this computer and all [!INCLUDE[server](../developer/includes/server.md)] instances on those computers.  
 
-     ![Console root with two server instances](../media/ConsoleRootExp.png "ConsoleRootExp")  
+     ![Console root with two server instances.](../media/ConsoleRootExp.png "ConsoleRootExp")  
   
 -   The **center pane** shows information about the item that you have selected in the left pane. When the selected item is a computer running [!INCLUDE[server](../developer/includes/server.md)], the center pane shows a list of [!INCLUDE[server](../developer/includes/server.md)] instances on that computer and the status of each instance \(running or stopped\), and the name of the account the instance is running under.  
   

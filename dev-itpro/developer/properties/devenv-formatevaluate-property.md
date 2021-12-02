@@ -1,29 +1,36 @@
 ---
 title: "FormatEvaluate Property"
+description: "Sets the data that is being imported or exported as XML data types or as the standard AL data types."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 08/18/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # FormatEvaluate Property
+> **Version**: _Available or changed with runtime version 1.0._
 
-Sets the data that is being imported or exported as XML data types or as the standard AL data types.  
-  
-## Applies to  
+Sets the data that is being imported or exported as XML data types or as the standard AL data types.
 
-- XMLports  
-  
-## Property Values  
+## Applies to
+-   Xml Port
 
-AL Format/Evaluate (default)  
-  
-XML Format/Evaluate  
- 
+## Property Value
+
+|Value|Description|
+|-----------|---------------------------------------|
+|**Legacy**|The data uses the standard AL data types.|
+|**Xml**|The data uses the standard XML data types.|
+
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
 ## Syntax
 
 ```AL
@@ -60,10 +67,10 @@ The following XML Data types require evaluation.
   
 This is an XMLport property and therefore applies to all the data that is being streamed. It cannot be applied only to specific fields.  
   
-For more information about formatting AL data types, see [Format Property](devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [Temporary Property (XMLports)](devenv-temporary-xmlports-property.md).  
+For more information about formatting AL data types, see [Formatting Values, Dates, and Time](../devenv-format-property.md). For more information about evaluating variables, see [EVALUATE Method](../methods-auto/system/system-evaluate-method.md). For more information about using temporary tables, see [UseTemporary Property (XMLport)](devenv-usetemporary-xmlport-property.md).  
   
 ## See Also  
 
-[Format Property (XMLports)](devenv-format-xmlports-property.md)   
-[Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)   
-[Temporary Property (XMLports)](devenv-temporary-xmlports-property.md)
+[Format Property (XMLports)](devenv-format-property.md)  
+[Evaluate Method](../methods-auto/system/system-EVALUATE-method.md)  
+[UseTemporary Property (XMLport)](devenv-usetemporary-xmlport-property.md)

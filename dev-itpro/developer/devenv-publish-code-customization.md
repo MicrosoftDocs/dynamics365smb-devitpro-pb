@@ -3,11 +3,11 @@ title: "Publishing a Code-Customized Base Application"
 description: "Description of the process of publishing a code customization for Dynamics 365 Business Central on-prem"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
@@ -58,7 +58,7 @@ Make sure to have the following prerequisites installed to be able to follow the
     }
     ...
     ```
-6. Use the [!INCLUDE[prodshort](../includes/prodshort.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
+6. Use the [!INCLUDE[prod_short](../includes/prod_short.md)] Administration Console to ensure that the settings for developing for on-premises are correctly set. On the **Development** tab these must be: 
     - **Allowed Extension Target Level** is set to **OnPrem**.
     - **Enable Developer Service Endpoint** checkbox is selected.
 7. In the `app.json` file, in the `dependencies` section, make sure that `version` is set to the version of the System Application found in the project under `.alpackages`. For example:
@@ -76,7 +76,7 @@ Make sure to have the following prerequisites installed to be able to follow the
 
     ```json
     "al.assemblyProbingPaths": [
-        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170",
+        "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\170\\Service",
         "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\170",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8",
         "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"

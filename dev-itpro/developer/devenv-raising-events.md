@@ -2,11 +2,11 @@
 title: "Raising Events"
 description: This article describes how to modify the application to raise an event in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -25,7 +25,7 @@ If there are no subscribers to the published event, then the line of code that c
 Typing the shortcut `teventsub` will create the basic event subscriber syntax when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code. 
 
 > [!TIP]  
-> Typing the keyboard shortcut `Ctrl + space` displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
+> Typing the keyboard shortcut **Ctrl+Space** displays IntelliSense to help you fill in the attribute arguments and to discover which events are available to use.
 
 ## Example
 
@@ -47,7 +47,7 @@ pageextension 50100 MyCustomerExt extends "Customer Card"
             var
                 Publisher: Codeunit MyPublishers;
             begin
-                Publisher.OnAddressLineChanged(Address);
+                Publisher.OnAddressLineChanged(Rec.Address);
             end;
         }
     }
@@ -58,7 +58,8 @@ To learn about how the event used in this example is published, see [Publishing 
 
 The next step would be to subscribe to the event to handle to condition. To see an example of how to subscribe to this event, see [Subscribing to Events Example](devenv-subscribing-to-events.md#example-1).  
 
-## See Also  
- [Publishing Events](devenv-publishing-events.md)   
- [Subscribing to Events](devenv-subscribing-to-events.md)   
- [Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   
+## See Also
+
+[Publishing Events](devenv-publishing-events.md)   
+[Subscribing to Events](devenv-subscribing-to-events.md)   
+[Events in AL](devenv-events-in-al.md)   

@@ -1,28 +1,31 @@
 ---
-title: "System.Format Method"
+title: "System.Format(Any, Integer, String) Method"
+description: "Formats a value into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Format Method
+# System.Format(Any, Integer, String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Formats a value into a string.
 
 
 ## Syntax
-```
+```AL
 String :=   System.Format(Value: Any, Length: Integer, FormatString: String)
 ```
-> [!NOTE]  
-> This method can be invoked without specifying the data type name.  
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
@@ -40,12 +43,13 @@ A literal string that defines a format as in the Format Property.
 ## Return Value
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-  
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
 For the *Length* parameter, the following rules apply:  
 
 - If *Length* = 0 then the entire value is returned (default).  
@@ -62,7 +66,7 @@ For the *Length* parameter, the following rules apply:
 
    If *Value* exceeds *Length* characters, then *String* is truncated to *Length* characters.
 
-For the *Format* parameter, see [Format Property](../../properties/devenv-format-property.md) for more information.
+For the *Format* parameter, see [Formatting Values, Dates, and Time](../../devenv-format-property.md) for more information.
 
 The *FormatNumber* parameter specifies the format that you want to use. The basic options for the Decimal data type are as follows:  
 
@@ -82,13 +86,13 @@ The *FormatNumber* parameter specifies the format that you want to use. The basi
 ## Example 1
 
 
-```  
+```al
 var
     Text000: Label 'The formatted value >%1<';
 begin
-    MESSAGE(Text000, FORMAT(-123456.78, 12, 3));  
-    MESSAGE(Text000, FORMAT(-123456.78, 12, '<Standard Format,3>'));  
-    MESSAGE(Text000, FORMAT(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
+    Message(Text000, Format(-123456.78, 12, 3));  
+    Message(Text000, Format(-123456.78, 12, '<Standard Format,3>'));  
+    Message(Text000, Format(-123456.78, 12, '<Integer Thousand><Decimals><Sign,1>'));  
 end;
 
 ```  
@@ -112,11 +116,12 @@ On a computer that has the regional format set to Danish \(Denmark\), the messag
 ## Example 2
 
 This example shows how to use a string to build a format.
-```  
+
+```al
 var
     Text000: Label 'Today is %1';
 begin 
-    MESSAGE(Text000, FORMAT(TODAY,0,'<Month Text> <Day>'));  
+    Message(Text000, Format(Today,0,'<Month Text> <Day>'));  
 end;
 ```  
 
@@ -126,7 +131,7 @@ The message window displays the following:
 
 
 ## See Also
-[Format Property](../../properties/devenv-format-property.md)  
+[Formatting Values, Dates, and Time](../../devenv-format-property.md)  
 [System Data Type](system-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

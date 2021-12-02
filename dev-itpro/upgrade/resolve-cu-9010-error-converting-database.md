@@ -2,16 +2,16 @@
 title: "Resolving Codeunit 9010 Compilation Error"
 description: "Explains how to resolve the compilation error that you get for Codeunit 9010 when converting a database from Dynamics NAV 2018."
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Resolving Codeunit 9010 Compilation Error 
-This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prodshort.md)].
+This article explains how to resolve the compilation error that you get for codeunit **9010 Azure AD User Management** when converting a [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] database to  [!INCLUDE[prodhort](../developer/includes/prod_short.md)].
 
 ## Resolution
 <!--
@@ -411,8 +411,8 @@ OBJECT Codeunit 9010 Azure AD User Management
 
       TempString := GraphUser.GivenName;
       IF GraphUser.Surname <> '' THEN
-      TempString := TempString + ' ';
-      TempString := TempString + GraphUser.Surname;
+      TempString += ' ';
+      TempString += GraphUser.Surname;
       TempString := COPYSTR(TempString,1,MAXSTRLEN(User."Full Name"));
       IF LOWERCASE(User."Full Name") <> LOWERCASE(TempString) THEN BEGIN
       User."Full Name" := TempString;

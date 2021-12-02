@@ -1,24 +1,27 @@
 ---
-title: "Report.ObjectId Method"
+title: "Report.ObjectId([Boolean]) Method"
+description: "Gets or sets the name or number of the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.ObjectId Method
+# Report.ObjectId([Boolean]) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Gets or sets the name or number of the report.
 
 
 ## Syntax
-```
+```AL
 String :=   Report.ObjectId([UseNames: Boolean])
 ```
 ## Parameters
@@ -26,7 +29,7 @@ String :=   Report.ObjectId([UseNames: Boolean])
 &emsp;Type: [Report](report-data-type.md)  
 An instance of the [Report](report-data-type.md) data type.  
 
-*UseNames*  
+*[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** (default value) if the returned string contains the name of the report, **false** if the returned string contains the number of the report.  
 
@@ -34,7 +37,7 @@ An instance of the [Report](report-data-type.md) data type.
 ## Return Value
 *String*  
 &emsp;Type: [String](../string/string-data-type.md)  
-The name or number of the report.  
+The name or number of the report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

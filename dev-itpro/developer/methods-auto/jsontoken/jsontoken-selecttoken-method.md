@@ -1,24 +1,27 @@
 ---
-title: "JsonToken.SelectToken Method"
+title: "JsonToken.SelectToken(String, var JsonToken) Method"
+description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonToken.SelectToken Method
+# JsonToken.SelectToken(String, var JsonToken) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Selects a JsonToken using a JPath expression.
 
 
 ## Syntax
-```
+```AL
 [Ok := ]  JsonToken.SelectToken(Path: String, var Result: JsonToken)
 ```
 ## Parameters
@@ -36,9 +39,9 @@ A JsonToken variable that will contain the result if the operation is successful
 
 
 ## Return Value
-*Ok*  
+*[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.    
+**true** if the read was successful; otherwise, **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -74,12 +77,16 @@ var
     query : Text;
     salaryToken : JsonToken;
 begin
-    query := '$.company.employees[?(@.id=="'+employeeId+'")].salary';
+    query := '$.company.employees[?(@.id=='''+employeeId+''')].salary';
     companyData.SelectToken(query, salaryToken);
 
     salary := salaryToken.AsValue().AsDecimal();    
 end;
 ```
+
+> [!NOTE]
+> Ensure that the selected expression contains ' (single quotation mark) and not " (double quotation mark) to decorate the string value.
+
 ## See Also
 [JsonToken Data Type](jsontoken-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

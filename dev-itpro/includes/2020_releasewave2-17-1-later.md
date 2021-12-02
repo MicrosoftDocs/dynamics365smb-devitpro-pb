@@ -1,0 +1,1 @@
+> **APPLIES TO:** Business Central 2020 release wave 2 (update 17.1) and later

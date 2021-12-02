@@ -1,24 +1,27 @@
 ---
-title: "JsonObject.Contains Method"
+title: "JsonObject.Contains(String) Method"
+description: "Verifies if a JsonObject contains a property with a given key."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Contains Method
+# JsonObject.Contains(String) Method
+> **Version**: _Available or changed with runtime version 1.0._
+
 Verifies if a JsonObject contains a property with a given key.
 
 
 ## Syntax
-```
+```AL
 Ok :=   JsonObject.Contains(Key: String)
 ```
 ## Parameters
@@ -34,7 +37,7 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 ## Return Value
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the object contains a property with the given key; otherwise, **false**.  
+**true** if the object contains a property with the given key; otherwise, **false**.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

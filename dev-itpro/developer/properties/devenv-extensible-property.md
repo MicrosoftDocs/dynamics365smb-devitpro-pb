@@ -1,31 +1,35 @@
 ---
 title: "Extensible Property"
-author: SusanneWindfeldPedersen
+description: "Sets whether the report can be extended."
+ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.service: "dynamics365-business-central"
-ms.author: solsen
+author: SusanneWindfeldPedersen
 ---
-
+[//]: # (START>DO_NOT_EDIT)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Extensible Property
+> **Version**: _Available or changed with runtime version 7.0._
 
-[!INCLUDE[2019_releasewave2.md](../../includes/2019_releasewave2.md)]
+Sets whether the report can be extended.
 
-Sets a value that indicates whether a table, page, or enum can be extended. If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, or `enumextension` respectively.
+## Applies to
+-   Report
+-   Enum Type
+-   Table
+-   Page
 
-## Applies to  
-
-- Tables
-- Pages
-- Enums
+[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Property Value  
 
-**True** if the table, page, or enum can be extended; otherwise, **false**. The default is **true** on tables and pages, and **false** on enums.  
+**True** if the table, page, report, or enum can be extended; otherwise, **false**. The default is **true** on tables, pages, and reports, whereas it is **false** on enums.  
 
 ## Syntax
 
@@ -37,6 +41,10 @@ table 50111 MyTable
     ...
 
 ```
+
+## Remarks
+
+If the value is **true**, the object can be extended using a `tableextension`, `pageextension`, `reportextension`, or `enumextension` respectively.
 
 ## See Also
 
