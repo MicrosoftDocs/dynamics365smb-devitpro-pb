@@ -88,7 +88,7 @@ The onboarding process involves a manual verification step that verifies that yo
 
 Provide the following information in the email:
 - Your AAD tenant ID. Obtain this information from the Azure portal by going to the Azure Active Directory Overview page.
-- Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults.
+- Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults. **Note: It is important that all the AppSource extensions are included in the key vault.**
 - Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.
 
 
