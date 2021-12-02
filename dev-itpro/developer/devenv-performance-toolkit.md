@@ -91,17 +91,15 @@ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Cre
 > When you start tests from PowerShell, there is a two second delay between new sessions.
 
 > [!NOTE]
-> When you use RunBCPTTests.ps1 these are the most important parameters:
-> - Environment:
-> Specifies the environment the tests will be run in. The supported values are 'PROD', 'TIE' and 'OnPrem'. Default is 'PROD'.
-> - AuthorizationType:
-> Specifies the authorization type needed to authorize to the service. The supported values are 'Windows','NavUserPassword' and 'AAD'
-> - SandboxName:
-> Specifies the sandbox name. This is necessary only when the environment is either 'PROD' or 'TIE'. Default is 'sandbox'.
-> - ServiceUrl:
-> Specifies the base URL of the service. This parameter is used only in 'OnPrem' environment. Example http://localhost:8080/PerformanceToolkit
-> - ClientId:
-> Specifies the guid that the Business Central is registered with in Azure AD. To setup Azure AD, go to https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess
+> When you use RunBCPTTests.ps1, these are the most important parameters:
+> |Parameter|Description|
+> |---------|-----------|
+> |`-Environment`|Specifies the environment the tests will be run in. The supported values are `PROD`, `TIE`, and `OnPrem`. Default is `PROD`.|
+> |`AuthorizationType`|Specifies the authorization type needed to authorize to the service. The supported values are `Windows`,`NavUserPassword`, and `AAD`.|
+> |`SandboxName`|Specifies the sandbox name. This is necessary only when the environment is either `PROD` or `TIE`. Default is `sandbox`.|
+> |`ServiceUrl`|Specifies the base URL of the service. This parameter is used only in `OnPrem` environment. For example, `http://localhost:8080/PerformanceToolkit`.|
+> |`ClientId`|Specifies the guid that the Business Central is registered with in Azure AD. To setup Azure AD, go to [https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess).|
+
 
 ## Analyzing Results
 When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
