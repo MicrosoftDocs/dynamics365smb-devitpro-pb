@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -3043,6 +3043,7 @@
 #### [EntitySetCaptionML Property](developer/properties/devenv-entitysetcaptionml-property.md)
 #### [EntitySetName Property](developer/properties/devenv-entitysetname-property.md)
 #### [EventSubscriberInstance Property](developer/properties/devenv-eventsubscriberinstance-property.md)
+#### [ExcelLayout Property](developer/properties/devenv-excellayout-property.md)
 #### [ExecutionTimeout Property](developer/properties/devenv-executiontimeout-property.md)
 #### [ExtendedDatatype Property](developer/properties/devenv-extendeddatatype-property.md)
 #### [Extensible Property](developer/properties/devenv-extensible-property.md)
