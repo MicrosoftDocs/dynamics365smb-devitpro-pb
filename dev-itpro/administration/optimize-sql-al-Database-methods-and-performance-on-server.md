@@ -13,7 +13,7 @@ ms.service: "dynamics365-business-central"
 
 This topic describes the relationship between basic database methods in AL and SQL statements.  
   
-## Get, Find, and Next  
+## Get, Find, FindSet, and Next  
 
 The AL language offers several methods to retrieve record data. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
   
