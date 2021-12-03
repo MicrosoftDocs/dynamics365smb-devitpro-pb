@@ -40,6 +40,9 @@ Whether the value of this property can be changed is dependent on if the table h
 
 The value `true` means that data is available to the current company only, this is the default value. You can only set this property to `true` if the table is empty in all companies, or if the table holds data in only one company. You cannot change the value to `false` if there is data in the table in any of the companies. 
 
+> [!NOTE]
+> Switching to DataPerCompany requires you to synchronize the extension that includes the table, and any extension that extends the table, by using the ForceSync mode. Otherwise, you'll get an error like: `sync-navapp : Table '' ::The table '' changed datapercompany from 'False' to 'True' and that is not allowed.`. For more information about syncing an extension, see [Sync-NavApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).
+
 ## See Also  
 
 [Properties](devenv-properties.md)  
