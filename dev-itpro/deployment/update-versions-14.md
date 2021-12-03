@@ -34,7 +34,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
-|[5009176](https://support.microsoft.com/help/5009176)|Cumulative Update 30|December 2021|Application 14.31.</br>Platform Build 14.0.|
+|[5009176](https://support.microsoft.com/help/5009176)|Cumulative Update 30|December 2021|Application 14.31.48045</br>Platform Build 14.0.48027|
 |[5007776](https://support.microsoft.com/help/5007776)|Cumulative Update 29|November 2021|Application 14.30.47917</br>Platform Build 14.0.47914|
 |[5007023](https://support.microsoft.com/help/5007023)|Cumulative Update 28|October 2021|Application 14.29.47804</br>Platform Build 14.0.47800|
 |[5006072](https://support.microsoft.com/help/5006072)|Cumulative Update 27|September 2021|Application 14.28.47690</br>Platform Build 14.0.47686|
