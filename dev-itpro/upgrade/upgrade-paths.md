@@ -8,7 +8,7 @@ ms.suite: na
 ms.service: "dynamics365-business-central"
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 10/07/2021
+ms.date: 12/01/2021
 ---
 
 # Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases
@@ -31,35 +31,39 @@ The following sections provide the supported upgrade paths to the different [!IN
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v17)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v18)</li></ul>|Direct|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v15</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v16</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v17</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v18</li></ul>|Direct|
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 Release Wave 1 (v18)
 
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v17)</li></ul>|Direct|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v15</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v16</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v17</li></ul>|Direct|
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 Release Wave 2 (v17)
 
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v16)</li></ul>|Direct|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v15</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v16</li></ul>|Direct|
 
-## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 Release Wave 1 (v16) 
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 Release Wave 1 (v16)
 
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
-|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] (v15)</li></ul>|Direct|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v15</li></ul>|Direct|
 
-## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 Release Wave 2 (v15) 
+[!INCLUDE [upgrade-16](../includes/upgrade-16.md)]
+
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 Release Wave 2 (v15)
 
 |  Source version  |   Upgrade path  |
 |------------|--------------|
 |<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] v13</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
 |<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14</li></ul>|Direct |
+
+[!INCLUDE [upgrade-15](../includes/upgrade-15.md)]
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (v14)
 
