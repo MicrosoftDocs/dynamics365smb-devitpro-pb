@@ -29,7 +29,7 @@ The various .NET implementations target specific versions of .NET Standard. <!--
 
 ## What does that mean for your .NET add-ins?
 
-With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and upgrade it in order to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Addins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
+With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and upgrade it in order to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Add-ins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
 
 ## Using the Visual Studio .NET Portability Analyzer extension
 
