@@ -47,7 +47,7 @@ The name of the company to which you want to change. If you omit this parameter,
 
 When executing this method, the user's access rights are respected. For example, a user cannot access data in *CompanyName* unless he already has the necessary access rights.  
 
-The **ChangeCompany** method is not affected by the [Reset Method (RecordRef)](recordref-reset-method.md). You can deselect a company by making a new call to **ChangeCompany** or by using the [Clear Method](../system/system-clear-joker-method.md).  
+The **ChangeCompany** method is not affected by the [Reset Method (RecordRef)](../recordref/recordref-reset-method.md). You can deselect a company by making a new call to **ChangeCompany** or by using the [Clear Method](../system/system-clear-joker-method.md).  
 
 Global filters always belong to a specific company. If you use the following code to select the company named NewCompany, any filters assigned to *RecordRef* will be transferred to *RecordRef* in the new company.  
 
