@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/24/2021
+ms.date: 12/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,7 +76,7 @@ The following methods are available on instances of the Record data type.
 |[IsEmpty()](record-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
 |[IsTemporary()](record-istemporary-method.md)|Determines whether a record refers to a temporary table.|
 |[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
-|[LockTable([Boolean] [, Boolean])](record-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
+|[LockTable([Boolean] [, Boolean])](record-locktable-method.md)|Starts locking on a table to protect it from write transactions that conflict with each other.|
 |[Mark([Boolean])](record-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
 |[MarkedOnly([Boolean])](record-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark (Record) method.|
 |[Modify([Boolean])](record-modify-method.md)|Modifies a record in a table.|
