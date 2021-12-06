@@ -27,13 +27,13 @@ The set of fundamental APIs, sometimes referred to as the .NET Base Class Librar
 
 The various .NET implementations target specific versions of .NET Standard. <!--, see xxx for more information.-->
 
-### What does that mean for your .NET add-ins?
+## What does that mean for your .NET add-ins?
 
-With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and upgrade it in order to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
+With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and upgrade it in order to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Addins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
 
-### Using the Visual Studio .NET Portability Analyzer extension
+## Using the Visual Studio .NET Portability Analyzer extension
 
-The .NET Portability Analyzer extension from the Visual Studio Marketplace is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable to a specified .NET platform.
+The .NET Portability Analyzer extension from the Visual Studio Marketplace is a tool you can use to check for compatibility to .NET Standard. It analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable to a specified .NET platform.
 
 When installed, the tool must be configured to define the type of portability analysis needed, such as the target .NET versions that you want to be compatible with. To do that, complete the following steps:
 
@@ -43,7 +43,7 @@ When installed, the tool must be configured to define the type of portability an
 
 This opens up a **Portability Analysis Results** page with and assessment of compatibility, and a list of recommended changes. 
 
-### Using the Microsoft ApiPort tool
+## Using the Microsoft ApiPort tool
 
 Microsofts ApiPort tool is another way to check for compatibility to .NET Standard. This tool allows you to analyze  files in case you do not have access to the original source code. 
 
