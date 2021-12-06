@@ -726,6 +726,8 @@ GET https://apps.businesscentral.dynamics.com/v1.0/apps/41a68924-7fcf-4fd0-9200-
 An `environment hotfix` represents the action of pushing out an update (new `version`) of an `app` to a customer's `environment` as part of fixing a critical issue.  
 Only `version`s where the major and minor components haven't changed can be pushed as hotfixes.
 
+It is also not possible to apply a hotfix to an already installed application version of `preview` availability. To apply a hotfix, you need to either uninstall the `preview` application version from the environment you are trying to update or change the availability of that application version from `preview` to `available`. 
+
 ### Properties
 
 |Name|Description|Schema|
