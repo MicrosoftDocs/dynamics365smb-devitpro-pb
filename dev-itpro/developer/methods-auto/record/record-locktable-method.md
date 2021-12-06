@@ -1,9 +1,9 @@
 ---
 title: "Record.LockTable([Boolean] [, Boolean]) Method"
-description: "Locks a table to protect it from write transactions that conflict with each other."
+description: "Starts locking on a table to protect it from write transactions that conflict with each other."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 # Record.LockTable([Boolean] [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
-Locks a table to protect it from write transactions that conflict with each other.
+Starts locking on a table to protect it from write transactions that conflict with each other.
 
 
 ## Syntax
@@ -32,6 +32,7 @@ An instance of the [Record](record-data-type.md) data type.
 *[Optional] Wait*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies what to do if the table is already locked. If this parameter is true and if another application has already locked the table, the system will wait until the table is unlocked. If this parameter is false and if another application has already locked the table, a run-time error occurs.  
+
 *[Optional] VersionCheck*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If this parameter is true, the version of the Record will be checked. If this parameter is false, blank, or not used, the version will not be checked.  
@@ -39,6 +40,20 @@ If this parameter is true, the version of the Record will be checked. If this pa
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+If the session is not using Read Scale-Out, then LockTable does the following:  
+
+1) Starts a transaction.
+2) Makes sure that all subsequent statements that read data will apply an UPDLOCK on the database.
+
+If the session is using Read Scale-Out, then LockTable does the following:
+
+1) Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
+
+
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
