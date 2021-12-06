@@ -53,7 +53,7 @@ To use the tool, do the following:
 
 1. Open a command prompt and type `ApiPort.exe analyze -f MyLibrary.dll`.
 
-The tool can also help analyse projects with dependencies between DLL files and visualize the dependencies. This is useful in more complex solutions with portability problems.
+The tool can also help analyze projects with dependencies between DLL files and visualize the dependencies. This is useful in more complex solutions with portability problems.
 
 To analyze dependencies, do the following:
 
