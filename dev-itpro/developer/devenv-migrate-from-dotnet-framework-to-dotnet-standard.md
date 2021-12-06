@@ -1,6 +1,6 @@
 ---
 title: "Migrating from .NET Framework to .NET Standard"
-description: "Description of the process of migrating dlls used from AL from .NET Framework to .NET Standard"
+description: "Description of the process of migrating DLLs used from AL from .NET Framework to .NET Standard"
 author: kepontop
 ms.custom: na
 ms.date: 12/01/2021
@@ -45,30 +45,26 @@ This opens up a **Portability Analysis Results** page with and assessment of com
 
 ### Using the Microsoft ApiPort tool
 
-Microsofts ApiPort tool is another way to check for compatibility to .NET Standard. This tool allows you to analyze DLL files in case you do not have access to the original source code. 
+Microsofts ApiPort tool is another way to check for compatibility to .NET Standard. This tool allows you to analyze  files in case you do not have access to the original source code. 
 
-You can download the ApiPort tool here: [.NET API Portability Github repository](https://github.com/Microsoft/dotnet-apiport)
+You can download the ApiPort tool at [.NET API Portability Github repository](https://github.com/Microsoft/dotnet-apiport).
 
+To use the tool, do the following:
 
-To use the tool, open a command prompt and type
+1. Open a command prompt and type `ApiPort.exe analyze -f MyLibrary.dll`.
 
-ApiPort.exe analyze -f MyLibrary.dll 
+The tool can also help analyse projects with dependencies between DLL files and visualize the dependencies. This is useful in more complex solutions with portability problems.
 
+To analyze dependencies, do the following:
 
-The tool can also help analyse projects with dependencies between dll files and visualize the dependencies. This is useful in more complex solutions with portability problems.
-
-To analyze dependencies, open a command prompt and type
-
-ApiPort.exe analyze -r DGML -f [directory or your solution]
+1. Open a command prompt and type `ApiPort.exe analyze -r DGML -f [directory or your solution]`
 
 When the command finished, you have a DGML file that can be opened in Visual Studio. Directed Graph Markup Language (DGML) describes information used for visualization and complexity analysis, and is the format used to persist code maps in Visual Studio.
 
-
-
 ## See Also
+
 [Getting Started with AL](devenv-get-started.md)  
-[.NET Control Add-Ins](devenv-dotnet-controladdins.md)        
-[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)     
+[.NET Control Add-Ins](devenv-dotnet-controladdins.md)  
+[Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)  
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-
