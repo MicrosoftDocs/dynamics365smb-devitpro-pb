@@ -32,7 +32,9 @@ Based on the app.json file of your extension, the service automatically computes
 
 ### Against which countries/regions are my apps validated?
 
-The extensions in your submission are validated for all the country/regions targeted by the submission. You can see which countries you have selected in Partner Center under `Availability > Edit Markets`.
+The extensions in your submission are validated for all the countries/regions targeted by the submission which are available in Business Central. You can see which countries/regions you have selected in Partner Center under `Availability > Edit Markets`. 
+
+Note that when adding new localizations in Business Central, these countries/regions can be added to Partner Center before they are actually ready in Business Central. If you are targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to Business Central if the localization isn't yet ready in Business Central. Generally, it is possible to upload apps for 'Planned' localizations a few weeks before they are officially released. When the localization becomes available, if you are experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you are using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
 ### Against which baselines are my apps validated?
 
@@ -66,6 +68,8 @@ If this stage failed with an error message similar to `The validation of the sub
 > A lot of information is provided in the custom dimensions of the signals. For more information, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
+
+If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission does not target any countries/regions currently available in Business Central. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in Business Central and resubmit your offer. Generally, it is possible to upload apps for new localizations, a few weeks before they are made available to customers.
 
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
