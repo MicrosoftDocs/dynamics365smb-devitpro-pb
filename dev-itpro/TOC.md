@@ -530,6 +530,7 @@
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
