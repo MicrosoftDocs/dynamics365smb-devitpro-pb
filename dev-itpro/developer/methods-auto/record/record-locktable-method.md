@@ -39,6 +39,20 @@ If this parameter is true, the version of the Record will be checked. If this pa
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+If the session is not using Read Scale-Out, then LockTable does the following:  
+
+1) Starts a transaction.
+2) Makes sure that all subsequent statements that read data will apply an UPDLOCK on the database.
+
+If the session is using Read Scale-Out, then LockTable does the following:
+
+1) Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
+
+
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
