@@ -48,7 +48,7 @@ When setting up your offer in Partner Center, you must still include a test pack
 
 Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We do not run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
-### When I submit an app to AppSource; do you always make a manual validation based on the provided Usage Key Documentation?  
+### When I submit an app to AppSource; do you always make a manual validation based on the provided 'Key Usage Scenario' document?  
 
 When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenario', but it isn't used during the validation of the submission.
 
