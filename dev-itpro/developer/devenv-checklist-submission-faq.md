@@ -44,11 +44,15 @@ You can know which versions of your extensions were used as baseline during the 
 
 ### How many automated tests do we need to run for validation and how high must the test coverage be?  
 
-Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We do not run tests of your apps, nor do we have a set value i.e., we do not state that you need to have a code coverage of a certain percentage. Instead, we rely on you to test your app properly to give your customers a good experience.
+When setting up your offer in Partner Center, you must still include a test package in 'App Tests Automation', but it isn't used during the validation of the submission.
 
-### When I submit an app to AppSource; do you always make a manual validation based on the provided documentation?  
+Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We do not run tests of your apps, nor do we have a set value for a required code coverage. Instead, we rely on you to test your app properly to give your customers a good experience.
 
-We don't use the manual with every validation. We reserve the right to do it, but we don't do it for every app. 
+### When I submit an app to AppSource; do you always make a manual validation based on the provided Usage Key Documentation?  
+
+When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenartio', but it isn't used during the validation of the submission.
+
+We do not run a manual validation of the apps anymore. Instead, we rely on you to test that your app provides your customers with a good experience.
 
 ### When are my apps ready to be installed in my Business Central environment?
 
