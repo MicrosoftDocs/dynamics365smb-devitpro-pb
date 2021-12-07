@@ -134,7 +134,7 @@ No, it is not required to use an EV code-signing certificate. Standard code-sign
 
 Yes, you can re-use the same code-signing certificate for multiple extensions. Code-signing certificates have a validity period defined over time.
 
-## Questions about names, affixes and ID ranges
+## Questions about names, affixes, and ID ranges
 
 In the following, you can read about how affixes and ID ranges are assigned.
 
@@ -154,7 +154,7 @@ The object IDs are registered per partner, not per extension. You can then use a
 
 We would like longer names as well. Introducing namespaces could be one investment. However, such a changes has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255.
 
-## Questions about App identity
+## Questions about app identity
 
 This section contains questions related to the identity of apps in AppSource. For more information, see the questions in [App Identity](devenv-app-identity.md).
 
@@ -210,7 +210,7 @@ When your question is related to one of the following topics:
 
 When your submission has been successfully completed in Partner Center, but your customers are experiencing issues installing or using the app.
 
-### When do I log an issue on NavContainerHelper on Github?
+### When do I log an issue on NavContainerHelper on GitHub?
 
 When you have questions or bugs regarding the self-validation script. For more information, see [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
 
