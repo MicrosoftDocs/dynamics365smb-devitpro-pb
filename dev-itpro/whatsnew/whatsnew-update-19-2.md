@@ -51,5 +51,5 @@ Although change will happen in March 2022, we strongly recommend you perform ste
 **Business Central Launch Event**  
 On October 18, we released the Business Central Launch Event - an online event with 15 sessions on what's new in Dynamics 365 Business Central 2021 release wave 2. The sessions are within the following four areas: Administration and Development, Service and Platform, Better with Microsoft 365 and Modern Client. Register and watch the 15 sessions now: [aka.ms/BCLE](https://aka.ms/BCLE).
 
-**Customer References**  
-We now have 100+ Business Central customer stories on the Microsoft Customer Stories site. These stories come in handy when prospects ask for reference stories, so remember to bookmark: [Microsoft Customer Stories Search](https://customers.microsoft.com/en-us/search?sq=%22Dynamics%20365%20Business%20Central%22&ff=&p=0&so=story_publish_date%20desc).
+**Apps in AppSource**  
+We now have 2000+ Business Central apps in AppSource! Find all the apps here: [Business Central apps in AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=dynamics-365-business-central).
