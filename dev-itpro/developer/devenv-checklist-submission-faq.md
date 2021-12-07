@@ -42,6 +42,14 @@ The service will verify that your extensions do not introduce breaking changes b
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
+### How many automated tests do we need to run for validation and how high must the test coverage be?  
+
+Test automation is something we expect you to run, to test your app and to make sure that the quality of your app is high. We do not run tests of your apps, nor do we have a set value i.e., we do not state that you need to have a code coverage of a certain percentage. Instead, we rely on you to test your app properly to give your customers a good experience.
+
+### When I submit an app to AppSource; do you always make a manual validation based on the provided documentation?  
+
+We don't use the manual with every validation. We reserve the right to do it, but we don't do it for every app. 
+
 ### When are my apps ready to be installed in my Business Central environment?
 
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation in Business Central.
@@ -89,6 +97,23 @@ If this stage failed with the following error message `Automated upload to Busin
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
 
+## Questions about developing and maintaining AppSource apps
+
+### How can we automatically test apps where there is no Docker Image?  
+
+There are a few options: 
+1. Request a runtime package from the AppSource developer and deploy that on your sandbox. 
+2. Test your application on an online sandbox. The latest ContainerHelper does support running full CI/CD pipelines using an online sandbox.
+
+### What does it mean if I have an app in development that needs another dependency loaded, but I can't get the dependency's codeunits to load in my BC docker instance because it says the dependency's range is outside my range?
+
+It means that your license doesn't allow you to publish that application. A recommendation would be to either get a runtime package from the developer of that AppSource app, which will allow you to bypass the licensing check or to try and test it on an online sandbox environment where that AppSource app is already installed. 
+
+### How can we issue hotfixes fast once our app is live in AppSource? Let's say we have customers live on our app and we need to deploy something instantly; do we need to wait an entire calendar week for that to be validated?  
+We have automated a lot of things and most of the submissions are now processed within one business day. The technical validation of the app is fully automated so you will know within a few minutes (hours in the worst case) if your app passed the validation or not. Once your app has passed the certification stage, it is automatically published to [!INCLUDE[prod_short](../includes/prod_short.md)] and becomes available for your customers. 
+
+Before submitting your apps in Partner Center, our recommendation is to make sure you fulfilled all the requirements in the technical validation checklist, including running the self-validation.
+
 ## Questions about code-signing validation
 
 This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Signing an APP Package File](devenv-sign-extension.md).
@@ -105,7 +130,7 @@ No, it is not required to use an EV code-signing certificate. Standard code-sign
 
 Yes, you can re-use the same code-signing certificate for multiple extensions. Code-signing certificates have a validity period defined over time.
 
-## Questions about affixes and ID ranges
+## Questions about names, affixes and ID ranges
 
 In the following, you can read about how affixes and ID ranges are assigned.
 
@@ -121,7 +146,11 @@ No, you do not need to request a new ID range for each of your extensions.
 
 The object IDs are registered per partner, not per extension. You can then use a subset of this range for each of your extensions. It is your responsibility to ensure that you are not defining objects with the same IDs in different extensions. If you are doing so, the extensions defining these objects cannot be installed together on the same environment. For more information, see [Get Started Building Apps](readiness/get-started.md#requesting-an-object-range).
 
-## Questions about App identity changes
+### Is there going to be made any changes to the object names character limitation (30 characters) within the near future? 
+
+We would like longer names as well. Introducing namespaces could be one investment. However, such a changes has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255.
+
+## Questions about App identity
 
 This section contains questions related to the identity of apps in AppSource. For more information, see the questions in [App Identity](devenv-app-identity.md).
 
@@ -145,7 +174,15 @@ When changing the publisher of an extension, you must:
 - make sure that your submission only targets releases of Business Central starting from 19.0,
 - contact d365val@microsoft.com in order to register your affixes to your new publisher name.
 
-## Channels to report issues
+### Is it possible to have multiple apps with the same ID in AppSource? 
+
+Each unique codebase have one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you'll get conflicts. 
+
+### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries? 
+
+If they are different apps (different code) they should have different identity. Identity is used in, for example, app management, dependencies, support cases and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
+
+## Channels to ask questions or report issues
 
 In the following, you can read about how you reach out for support most efficiently.
 
@@ -175,8 +212,9 @@ When you have questions or bugs regarding the self-validation script. For more i
 
 ### When do I write on Yammer?
 
-- When you have questions related to development (which code-signing certificate to use, best practices, etc.).
-- Or, when you have other questions that pertain to this area - use [aka.ms/bcyammer](https://aka.ms/bcyammer).
+When you have questions on developing and maintaining AppSource apps, you can ask a question on Yammer. In this group, you will find announcements from Microsoft together with discussions around various AppSource related topics.
+
+You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, please email dyn365bep@microsoft.com. 
 
 ## See also
 
