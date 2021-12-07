@@ -27,21 +27,8 @@ Find an overview of hotfixes in this [article]()
 - [AL compiler diagnostic messages includes URLs](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/al-compiler-diagnostic-messages-includes-urls)
 
 ## Localization updates
-
-| Country| Feature change |
-|-------------|--------------|
-|W1 | Update of Intrastat file export format and printed form|
-|Spain | XXXXXXX |
-|Norway | XXXXXXX |
-|Austria | XXXXXXX | 
-|Netherlands | XXXXXXX 
-| Finland | XXXXXX |
-| Denmark | XXXXXX |
-| France | XXXXXX |
-| United Kingdom | XXXXXX |
-| Mexico | XXXXXX |
-| Sweden | XXXXXX |
-| Germany | XXXXXX |
+- [All countries that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
+- [New VAT Return submission for Norway](INSERT LINK)
 
 ## Release Plan
 
