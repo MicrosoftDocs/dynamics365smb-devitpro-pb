@@ -141,7 +141,7 @@ No, you do not need to request a new ID range for each of your extensions.
 
 The object IDs are registered per partner, not per extension. You can then use a subset of this range for each of your extensions. It is your responsibility to ensure that you are not defining objects with the same IDs in different extensions. If you are doing so, the extensions defining these objects cannot be installed together on the same environment. For more information, see [Get Started Building Apps](readiness/get-started.md#requesting-an-object-range).
 
-### Is there going to be made any changes to the object names character limitation (30 characters) within the near future? 
+### Will there be any changes made to the object names character limitation (30 characters) within the near future? 
 
 We would like longer names as well. Introducing namespaces could be one investment. However, such a changes has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255. This is on our long term backlog, but haven't any changes planned in the near future.
 
@@ -175,7 +175,7 @@ Each unique codebase have one unique ID. If you have four apps in AppSource, you
 
 ### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries? 
 
-If they are different apps (different code) they should have different identity. Identity is used in, for example, app management, dependencies, support cases and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
+If they are different apps (different code) they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
 
 ## Channels to ask questions or report issues
 
