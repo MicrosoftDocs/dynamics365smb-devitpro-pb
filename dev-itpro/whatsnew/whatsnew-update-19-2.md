@@ -22,10 +22,9 @@ Find an overview of hotfixes in this [article]()
 
 ## Feature changes
 
-- [Copying environments of different types](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/copying-environments-different-types)
-- [Operations log enhancements](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/operations-log-enhancements)
-- [Restart environments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/restarting-environments)
-- [Shipping agent information is copied from sales orders to warehouse shipments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/shipping-agent-information-copied-sales-orders-warehouse-shipments)
+- [Delegated admin can create job queue entries and request approval by a licensed user](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
+- [Use two-dimensional barcodes in reports (Business Central online)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
+- [AL compiler diagnostic messages includes URLs](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/al-compiler-diagnostic-messages-includes-urls)
 
 ## Localization updates
 
