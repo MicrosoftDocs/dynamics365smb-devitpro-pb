@@ -50,7 +50,7 @@ Test automation is something we expect you to run, to test your app and to make 
 
 ### When I submit an app to AppSource; do you always make a manual validation based on the provided Usage Key Documentation?  
 
-When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenartio', but it isn't used during the validation of the submission.
+When setting up your offer in Partner Center, you must still include a document in 'Key Usage Scenario', but it isn't used during the validation of the submission.
 
 We do not run a manual validation of the apps anymore. Instead, we rely on you to test that your app provides your customers with a good experience.
 
