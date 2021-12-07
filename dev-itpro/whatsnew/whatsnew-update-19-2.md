@@ -28,8 +28,20 @@ Find an overview of hotfixes in this [article]()
 
 ## Localization updates
 
-
-
+| Country| Feature change |
+|-------------|--------------|
+|W1 | Update of Intrastat file export format and printed form|
+|Spain | XXXXXXX |
+|Norway | XXXXXXX |
+|Austria | XXXXXXX | 
+|Netherlands | XXXXXXX 
+| Finland | XXXXXX |
+| Denmark | XXXXXX |
+| France | XXXXXX |
+| United Kingdom | XXXXXX |
+| Mexico | XXXXXX |
+| Sweden | XXXXXX |
+| Germany | XXXXXX |
 
 ## Release Plan
 
