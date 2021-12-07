@@ -103,20 +103,11 @@ If your submission failed at another stage than "Automated application validatio
 
 ## Questions about developing and maintaining AppSource apps
 
-### How can we automatically test apps where there is no Docker Image?  
-
-There are a few options: 
-1. Request a runtime package from the AppSource developer and deploy that on your sandbox. 
-2. Test your application on an online sandbox. The latest ContainerHelper does support running full CI/CD pipelines using an online sandbox.
+This sections contains frequently asked questions regarding developing apps (in Docker or SaaS). Fore information, about maintaining apps after they have reached the AppSource marketplace, see [Update Lifecycle for AppSource Apps FAQ](devenv-update-app-life-cycle-faq.md).
 
 ### What does it mean if I have an app in development that needs another dependency loaded, but I can't get the dependency's codeunits to load in my BC docker instance because it says the dependency's range is outside my range?
 
 It means that your license doesn't allow you to publish that application. A recommendation would be to either get a runtime package from the developer of that AppSource app, which will allow you to bypass the licensing check or to try and test it on an online sandbox environment where that AppSource app is already installed. 
-
-### How can we issue hotfixes fast once our app is live in AppSource? Let's say we have customers live on our app and we need to deploy something instantly; do we need to wait an entire calendar week for that to be validated?  
-We have automated a lot of things and most of the submissions are now processed within one business day. The technical validation of the app is fully automated so you will know within a few minutes (hours in the worst case) if your app passed the validation or not. Once your app has passed the certification stage, it is automatically published to [!INCLUDE[prod_short](../includes/prod_short.md)] and becomes available for your customers. 
-
-Before submitting your apps in Partner Center, our recommendation is to make sure you fulfilled all the requirements in the technical validation checklist, including running the self-validation.
 
 ## Questions about code-signing validation
 
@@ -152,7 +143,7 @@ The object IDs are registered per partner, not per extension. You can then use a
 
 ### Is there going to be made any changes to the object names character limitation (30 characters) within the near future? 
 
-We would like longer names as well. Introducing namespaces could be one investment. However, such a changes has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255.
+We would like longer names as well. Introducing namespaces could be one investment. However, such a changes has down-stream breaking impact (any caller needs to qualify calls) and there are SQL constraints on name lengths for tables, which currently include company name, table name, app ID and needs to be maximum 255. This is on our long term backlog, but haven't any changes planned in the near future.
 
 ## Questions about app identity
 
