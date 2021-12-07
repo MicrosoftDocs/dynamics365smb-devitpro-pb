@@ -2,7 +2,7 @@
 title: "How to Work with a Performance Problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/06/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,23 +13,44 @@ author: KennieNP
 
 # How to work with a performance problem
 
-What do you do if users complain that "it is slow"? In this section, we describe a troubleshooting process that can help to guide you to find the root cause of the problem.
+What do you do if users complain that "it's slow"? In this section, we describe a troubleshooting process that can help to guide you to find the root cause of the problem.
 
-Before getting started on solving a performance tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This is sometimes called "establishing a baseline." 
+Before getting started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This task is sometimes called "establishing a baseline." 
 
 To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
 
-* When you want to ensure that new code does not introduce a regression. 
+* When you want to ensure that new code doesn't introduce a regression. 
 * In a sandbox environment when, for example, the number of users running the same process increases significantly. 
 * When you want to roll out a new process, or install a new extension. 
 
-To solve a performance problem, a common pattern is to do iterations of the following:
+To solve a performance problem, a common pattern is to do iterations of the following tasks:
 
 1. Measure system performance and collecting performance data
 2. Locate a bottleneck
 3. Eliminate the bottleneck
 
-and continue until the "slow" operations are comparable to the established baseline.
+Continue until the "slow" operations are comparable to the established baseline.
+
+## Analyzing performance issues using telemetry
+
+For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md). 
+
+Here are some ways where telemetry can help troubleshoot performance issues:
+
+| Area | Telemetry | Why |
+|---------------------------|------------|------------|
+| Page Background Task      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task will open a new session. Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
+| Sign-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
+| Something was slow during this period of time | [Company lifecycle signal](../administration/telemetry-company-lifecycle-trace.md) | Check whether a copy-company operation was running while the performance issue occurred. |
+| Something was slow during this period of time | [Database locks signal](../administration/telemetry-database-locks-trace.md) | Maybe the performance issue was because of locking in the database. |
+| Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-update-trace.md) | Maybe an extension was installed that interferes with the page in question.|
+| Some pages or reports are slow to load | [Long running SQL queries](../administration/telemetry-long-running-sql-query-trace.md) | Investigate whether the data operations on the page or report are taking a long time to complete. |
+| A report is slow | [Report signal](../administration/telemetry-reports-trace.md)  | Check whether the report is reading more data than you expected. |
+| System UI feels slow | [Web service requests signal](../administration/telemetry-webservices-trace.md) | Calling your environment too  aggressively with web service requests can affect performance of the system. |
+
+
+
+This page shows an overview of all currently available signals: [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 ## See Also
 
