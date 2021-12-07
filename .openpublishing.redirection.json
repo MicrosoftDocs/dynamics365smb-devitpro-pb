@@ -7298,6 +7298,11 @@
     "source_path": "dev-itpro/developer/analyzers/uicop-aw0012-synopsispropertieslimitedsupport.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/analyzers/uicop",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/readiness/readiness-technical-validation-faq.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission-faq",
+    "redirect_document_id": false
    }
   ] 
 }
