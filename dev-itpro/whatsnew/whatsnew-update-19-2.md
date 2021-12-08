@@ -21,9 +21,9 @@ Would you like to know what has changed in update 19.1? Below you'll find an ove
 Find an overview of hotfixes in this [article]()
 
 ## Feature changes
-
 - [Use two-dimensional barcodes in reports (Business Central online)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
 - [AL compiler diagnostic messages includes URLs](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/al-compiler-diagnostic-messages-includes-urls)
+- [Synchronize multiline text fields between Business Central and Dataverse (and Dynamics 365 Sales)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features)
 
 ## Localization updates
 - [All countries that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
