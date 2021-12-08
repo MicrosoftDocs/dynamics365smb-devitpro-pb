@@ -88,31 +88,31 @@ The report payload contains metadata for the report object and a list of attribu
     "invokedby":"00000000-0000-0000-0000-000000000001",
     "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
     "companyname":"CRONUS International Ltd.",
-    "printername":"",    
+    "printername":"",
 }
 
 ```
 
 <!--
 {
-    "filterviews": 
-    [ 
-        { 
-            "name":"[DATA_ITEM_NAME]", 
-            "tableid":"[TABLE_ID]", 
-            "view":"[FILTER_VIEW]" 
-        } 
+    "filterviews":
+    [
+        {
+            "name":"[DATA_ITEM_NAME]",
+            "tableid":"[TABLE_ID]",
+            "view":"[FILTER_VIEW]"
+        }
     ],
-    "version":1,   
-    "objectname":"[OBJECT_NAME]", 
-    "objectid":[REPORT_ID], 
-    "documenttype":"[MIME_TYPE]", 
-    "invokedby":"[SESSION_USER_ID]", 
+    "version":1,
+    "objectname":"[OBJECT_NAME]",
+    "objectid":[REPORT_ID],
+    "documenttype":"[MIME_TYPE]",
+    "invokedby":"[SESSION_USER_ID]",
     "invokeddatetime":"[CLENT_LOCAL_DATETIME]", // for example, "2019-10-22T22:25:54.338+02:00"
-    "printername":"My Printer", 
-    "companyname":"[COMPANY_NAME]", 
-} 
- 
+    "printername":"My Printer",
+    "companyname":"[COMPANY_NAME]",
+}
+
 ```
 -->
 
@@ -132,11 +132,11 @@ Specifies the MIME type of the document.
 
 #### *documeninvokedby*
 
-Specifies the ID of the user who invoked the print action.  
+Specifies the ID of the user who invoked the print action.
 
 #### *invokeddatetime*
 
-Specifies the date and time that the print action was invoked, for example, 2019-10-22T22:25:54.338+02:00. The value is the date and time on the client machine.  
+Specifies the date and time that the print action was invoked, for example, 2019-10-22T22:25:54.338+02:00. The value is the date and time on the client machine.
 
 #### *companyname*
 
@@ -164,7 +164,7 @@ Specifies the name of the view.
 
 ## Sample code
 
-Subscribe to the standard event in codeunit ReportManagement. This sample saves the JSON payload to a text file and copies the document stream content to the target stream. 
+Subscribe to the standard event in codeunit ReportManagement. This sample saves the JSON payload to a text file and copies the document stream content to the target stream.
 
 ```AL
 [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentReady', '', true, true)]
