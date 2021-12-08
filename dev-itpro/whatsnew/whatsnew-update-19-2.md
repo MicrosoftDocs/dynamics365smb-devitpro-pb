@@ -22,7 +22,6 @@ Find an overview of hotfixes in this [article]()
 
 ## Feature changes
 
-- [Delegated admin can create job queue entries and request approval by a licensed user](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
 - [Use two-dimensional barcodes in reports (Business Central online)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
 - [AL compiler diagnostic messages includes URLs](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/al-compiler-diagnostic-messages-includes-urls)
 
