@@ -25,11 +25,15 @@ The latest .NET implementation, open source and available for multiple operating
 - .NET Standard  
 The set of fundamental APIs, sometimes referred to as the .NET Base Class Library (BCL) that all .NET implementations must implement. By targeting .NET Standard, you can build libraries that you can share across all your .NET apps, no matter on which .NET implementation or operating system they run.
 
-The various .NET implementations target specific versions of .NET Standard. <!--, see xxx for more information.-->
+The various .NET implementations target specific versions of .NET Standard. 
 
 ## What does that mean for your .NET add-ins?
 
-With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and upgrade it in order to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Add-ins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
+With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and decide on how to proceed to ensure continued compatibility.
+
+- As .NET add-ins are not supported in the cloud, you should consider options for moving some or all scenarios to technologies that are supported in the cloud, for example, Azure Functions, thereby improving cloud readiness of the solution even if not yet migrating to cloud.
+- You can also upgrade add-ins to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Add-ins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
+
 
 ## Using the Visual Studio .NET Portability Analyzer extension
 
