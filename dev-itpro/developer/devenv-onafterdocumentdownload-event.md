@@ -120,7 +120,7 @@ Specifies the ID of the object.
 
 Specifies the MIME type of the document.
 
-#### *documeninvokedby*
+#### *invokedby*
 
 Specifies the ID of the user who invoked the print action.
 
