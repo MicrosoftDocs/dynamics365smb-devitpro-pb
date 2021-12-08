@@ -3,7 +3,7 @@ title: "Migrating from .NET Framework to .NET Standard"
 description: "Description of the process of migrating DLLs used from AL from .NET Framework to .NET Standard"
 author: kennienp
 ms.custom: na
-ms.date: 12/01/2021
+ms.date: 12/08/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ The various .NET implementations target specific versions of .NET Standard.
 With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET Standard, you need to check your add-in code and decide on how to proceed to ensure continued compatibility.
 
 - As .NET add-ins are not supported in the cloud, you should consider options for moving some or all scenarios to technologies that are supported in the cloud, for example, Azure Functions, thereby improving cloud readiness of the solution even if not yet migrating to cloud.
-- You can also upgrade add-ins to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Add-ins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
+- You can also upgrade add-ins to be .NET Standard compliant. Some of .NET add-ins will be fully compliant out of the box or easily portable to be .NET Standard compliant, but for other more complex solutions, this process could involve more work. Add-ins compiled with .NET Framework and not .NET Standard will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2.
 
 
 ## Using the Visual Studio .NET Portability Analyzer extension
