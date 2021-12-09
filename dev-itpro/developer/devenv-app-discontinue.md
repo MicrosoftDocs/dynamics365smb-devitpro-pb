@@ -21,7 +21,7 @@ The following section describes the process that we recommend AppSource partners
 Update the AppSource listing to inform potential customers that the app should not be installed and that it will not be maintained in the future. The AppSource listing should still remain available to allow you to deploy bug fixes for your existing customers, but also to allow your existing customers to reinstall the app if they have uninstalled it by accident as their business might depend on it.
 
 > [!NOTE]
-> As the offer can still be installed by new customers, we recommend switching the listing type to 'Contact Me' in order for you to control who is installing the app, see [Listing Types](readiness/readiness-checklist-e-industries-categories-apptype#listing-type). You can also define custom logic within your app to define who is allowed to install it.
+> As the offer can still be installed by new customers, we recommend switching the listing type to 'Contact Me' in order for you to control who is installing the app, see [Listing Types](readiness/readiness-checklist-e-industries-categories-apptype.md#listing-type). You can also define custom logic within your app to define who is allowed to install it.
 
 ## Notify existing customers (T+1 to T+60)
 
