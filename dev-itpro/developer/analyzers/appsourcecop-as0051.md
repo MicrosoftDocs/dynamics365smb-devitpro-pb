@@ -22,7 +22,7 @@ The manifest property must be specified and contain a meaningful value. The valu
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-You can find the list of manifest properties which must be specified in AppSource submission in [App.json file](../devenv-json-files.md#Appjson).
+The list of properties which must be specified in the manifest of extensions targeting the AppSource marketplace can be found in [App.json file](../devenv-json-files.md#Appjson).
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
