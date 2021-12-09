@@ -43,7 +43,7 @@ No. It is the responsibility of the partner maintaining the environment to unins
 
 The customer does not receive any notification from Business Central about the fact that the offer has been deprecated. It is your responsability to reach out to your customers. If at some point, the app blocks the upgrade of the environment, then the partner maintaining the environment will be notified that the app is blocking upgrade. The partner maintaining the environment, can then decide at that point to uninstall it or to contact you for additional information. For more information, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
 
-## Does the app gets automatically uninstalled from customer environments?
+## Does the app get automatically uninstalled from customer environments?
 
 The app will not be automatically uninstalled from customer environments. If the app blocks the upgrade of the environment and the partner maintaining the environment has not unblocked the upgrade by uninstalling the app, the app will be uninstalled automatically. For more information, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md).
 
