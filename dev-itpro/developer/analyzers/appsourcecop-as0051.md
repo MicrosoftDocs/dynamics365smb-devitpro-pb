@@ -21,6 +21,9 @@ Manifest property is required for AppSource submission
 The manifest property must be specified and contain a meaningful value. The value of the property might be displayed to users in the AppSource marketplace.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+You can find the list of manifest properties which must be specified in AppSource submission in [App.json file](../devenv-json-files.md#Appjson).
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
