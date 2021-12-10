@@ -82,24 +82,24 @@ To see the available updates for Business Central 2020 Release Wave 1, see [Rele
 
 ## Version 15 compatibility
 
-The following table lists the Business Central 15 versions and the 16, 17, and 18 versions that are compatible for upgrade.
+The following table lists the Business Central 15 versions and the 16, 17, 18, and 19 versions that are compatible for upgrade.
 
-|Version 15|Version 16|Version 17|Version 18|
-|----------|----------|----------|----------|
-|15.0 to 15.4|16.0|17.0|18.0|
-|[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|
-|[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|
-|[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|
-|[15.8](https://support.microsoft.com/help/4563406)|[16.4](https://support.microsoft.com/help/4563415)|17.0|18.0|
-|[15.9](https://support.microsoft.com/help/4563414)|[16.5](https://support.microsoft.com/help/4576664) |17.0|18.0|
-|[15.10](https://support.microsoft.com/help/4576663)|[16.6](https://support.microsoft.com/help/4583501)|17.0|18.0|
-|[15.11](https://support.microsoft.com/help/4583500)|[16.7](https://support.microsoft.com/help/4583513)|[17.1](https://support.microsoft.com/help/4583515)|18.0|
-|[15.12](https://support.microsoft.com/help/4583512)|[16.8](https://support.microsoft.com/help/4583553)|[17.2](https://support.microsoft.com/help/4583554)|18.0|
-|[15.13](https://support.microsoft.com/help/4583552)|[16.9](https://support.microsoft.com/help/4595151)|[17.3](https://support.microsoft.com/help/4595152)|18.0|
-|[15.14](https://support.microsoft.com/help/4595150)|[16.10](https://support.microsoft.com/help/5000695)|[17.4](https://support.microsoft.com/help/5000696)|18.0|
-|[15.15](https://support.microsoft.com/help/5000694)|[16.11](https://support.microsoft.com/help/5001234)|[17.5](https://support.microsoft.com/help/5001235)|18.0|
-|[15.16](https://support.microsoft.com/help/5001233)|[16.12](https://support.microsoft.com/help/5001734)|[17.6](https://support.microsoft.com/help/5001735)|18.0|
-|[15.17](https://support.microsoft.com/help/5001733)|[16.13](https://support.microsoft.com/help/5003473)|[17.7](https://support.microsoft.com/help/5003474)|[18.1](https://support.microsoft.com/help/5003475)|
+|Version 15|Version 16|Version 17|Version 18|Version 19|
+|----------|----------|----------|----------|----------|
+|15.0 to 15.4|16.0|17.0|18.0|19.0|
+|[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|19.0|
+|[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|19.0|
+|[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|19.0|
+|[15.8](https://support.microsoft.com/help/4563406)|[16.4](https://support.microsoft.com/help/4563415)|17.0|18.0|19.0|
+|[15.9](https://support.microsoft.com/help/4563414)|[16.5](https://support.microsoft.com/help/4576664) |17.0|18.0|19.0|
+|[15.10](https://support.microsoft.com/help/4576663)|[16.6](https://support.microsoft.com/help/4583501)|17.0|18.0|19.0|
+|[15.11](https://support.microsoft.com/help/4583500)|[16.7](https://support.microsoft.com/help/4583513)|[17.1](https://support.microsoft.com/help/4583515)|18.0|19.0|
+|[15.12](https://support.microsoft.com/help/4583512)|[16.8](https://support.microsoft.com/help/4583553)|[17.2](https://support.microsoft.com/help/4583554)|18.0|19.0|
+|[15.13](https://support.microsoft.com/help/4583552)|[16.9](https://support.microsoft.com/help/4595151)|[17.3](https://support.microsoft.com/help/4595152)|18.0|19.0|
+|[15.14](https://support.microsoft.com/help/4595150)|[16.10](https://support.microsoft.com/help/5000695)|[17.4](https://support.microsoft.com/help/5000696)|18.0|19.0|
+|[15.15](https://support.microsoft.com/help/5000694)|[16.11](https://support.microsoft.com/help/5001234)|[17.5](https://support.microsoft.com/help/5001235)|18.0|19.0|
+|[15.16](https://support.microsoft.com/help/5001233)|[16.12](https://support.microsoft.com/help/5001734)|[17.6](https://support.microsoft.com/help/5001735)|18.0|19.0|
+|[15.17](https://support.microsoft.com/help/5001733)|[16.13](https://support.microsoft.com/help/5003473)|[17.7](https://support.microsoft.com/help/5003474)|[18.1](https://support.microsoft.com/help/5003475)|19.0|
 
 To see the available updates for Business Central 2019 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
 
