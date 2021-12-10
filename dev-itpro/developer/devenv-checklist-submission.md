@@ -13,7 +13,7 @@ ms.author: freddyk
 
 # Technical Validation
 
-Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the Business Central Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+Below you will find a checklist of all requirements that you **must meet before submitting** an extension for validation. You will also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 > [!TIP]  
 > If you have questions around validation for your app, see [Technical Validation FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
@@ -45,11 +45,11 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Use `addfirst` and `addlast` for placing your actions on Business Central pages. This eliminates breaking your app due to Business Central core changes.|[Placing Actions and Controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls)|
 |The extension submitted must not be a runtime package.|[Creating Runtime Packages](devenv-creating-runtime-packages.md)|
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
-|The extension submitted must specify the Application manifest property.|The Application manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
+|The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
 
 ## Technical validation performed by the Business Central validation team
 
-The primary responsibility of the technical validation is to ensure that the Business Central online service is stable and that the apps can be installed and run without destabilizing the service.
+The primary responsibility of the technical validation is to ensure that the [!INCLUDE [prod_short](includes/prod_short.md)] online service is stable and that the apps can be installed and run without destabilizing the service.
 
 The technical validation is fully automated and validates the requirements defined in the technical validation checklist above.
 
@@ -70,7 +70,7 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in Business Central for the targeted countries/regions. If you are making your libraries available in new countries, you should increase the version number.
+> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you are making your libraries available in new countries, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
@@ -104,11 +104,11 @@ Please include app and all library apps in both previousApps and apps and please
 > The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
 > [!Important]  
-> The computer on which you run this command must have Docker and the latest BcContainerHelper PowerShell module installed and be able to run Business Central on Docker.
+> The computer on which you run this command must have Docker and the latest `BcContainerHelper` PowerShell module installed and be able to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 >
-> If you are having issues with Business Central on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
+> If you are having issues with [!INCLUDE [prod_short](includes/prod_short.md)] on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
 >
-> You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run Business Central on Docker.
+> You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 
 > [!NOTE]  
 > It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
