@@ -51,10 +51,38 @@ Here are some ways where telemetry can help troubleshoot performance issues:
 
 This page shows an overview of all currently available signals: [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
+
+## Analyzing database performance issues using verbose telemetry
+If you want to capture all SQL queries for a short period of time for a given session, you can enable Additional logging from the Help & Support page. This lets you analyze queries that take a short time to run but happen very frequently. 
+
+Read more about additional logging here: [Help and Support page](../../product-help-and-support.md#troubleshooting)
+
+With Business Central On-premises, you can also change the default threshold that defines long running queries. Read more here: [](../administration/telemetry-long-running-sql-query-trace.md).
+
+
 ## Analyzing performance issues using the page inspector
 If a specific page takes too long to load, it might be due to extensions that are adding expensive operations to the page triggers. You can use the page inspector to analyze this by navigating to the Extensions tab. It displays installed extensions that affect the selected page or its source table by showing the time (in milliseconds) it took to run the extension in the call stack and the number of event subscribers run in the extension.
 
 Read more about how to use the page inspector to troubleshoot extension performance here: [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
+
+## Analyzing performance issues using the AL profiler
+With the AL Profiler for the AL Language extension you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. 
+
+If a specific page takes too long to load, it might be due to extensions that are adding expensive operations to the page triggers. You can use the page inspector to analyze this by navigating to the Extensions tab. It displays installed extensions that affect the selected page or its source table by showing the time (in milliseconds) it took to run the extension in the call stack and the number of event subscribers run in the extension.
+
+Read more about how to use the AL profiler to troubleshoot performance here: [AL Profiler Overview](../developer/devenv-al-profiler-overview.md).
+
+## Which tools are good when?
+
+Here are the pros and cons of the different performance tools described above:
+
+|Performance tool | Properties |
+|---------------------------------|-------------|
+|Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Very little performance impact to have turned on always. <br> Telemetry needs to be enabled before the performance issue occur. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
+|Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject a lot of data into Azure Application Insights. <br> Data collection must happen live. |
+| Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
+| AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. | 
+
 
 ## See Also
 
