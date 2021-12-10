@@ -52,7 +52,11 @@ If the session is using Read Scale-Out, then LockTable does the following:
 
 1) Makes sure that all subsequent statements that read data use REPEATABLEREAD on the database.
 
+Because all write operations automatically lock the table that is being used, LockTable would appear unnecessary. However, you could have a transaction in which an application wants to inspect data before possibly changing it, with a guarantee that the data being changed has not been modified by other applications since the read operation. The solution is to explicitly lock the table before the read operation. This makes sure that no other application makes changes between the read operation and the possible write operation.
 
+The table lock is released (unlocked) when the transaction is committed.
+
+This method works the same as the RecordRef [LockTable Method](../recordref/recordref-locktable-method.md).
 
 ## See Also
 [Record Data Type](record-data-type.md)  

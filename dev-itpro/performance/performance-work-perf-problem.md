@@ -15,6 +15,8 @@ author: KennieNP
 
 What do you do if users complain that "it's slow"? In this section, we describe a troubleshooting process that can help to guide you to find the root cause of the problem.
 
+
+## A generic performance tuning process
 Before getting started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This task is sometimes called "establishing a baseline." 
 
 To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
@@ -32,7 +34,6 @@ To solve a performance problem, a common pattern is to do iterations of the foll
 Continue until the "slow" operations are comparable to the established baseline.
 
 ## Analyzing performance issues using telemetry
-
 For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md). 
 
 Here are some ways where telemetry can help troubleshoot performance issues:
@@ -48,9 +49,12 @@ Here are some ways where telemetry can help troubleshoot performance issues:
 | A report is slow | [Report signal](../administration/telemetry-reports-trace.md)  | Check whether the report is reading more data than you expected. |
 | System UI feels slow | [Web service requests signal](../administration/telemetry-webservices-trace.md) | Calling your environment too  aggressively with web service requests can affect performance of the system. |
 
-
-
 This page shows an overview of all currently available signals: [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
+
+## Analyzing performance issues using the page inspector
+If a specific page takes too long to load, it might be due to extensions that are adding expensive operations to the page triggers. You can use the page inspector to analyze this by navigating to the Extensions tab. It displays installed extensions that affect the selected page or its source table by showing the time (in milliseconds) it took to run the extension in the call stack and the number of event subscribers run in the extension.
+
+Read more about how to use the page inspector to troubleshoot extension performance here: [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
 
 ## See Also
 
