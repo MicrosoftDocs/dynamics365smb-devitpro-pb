@@ -4,7 +4,7 @@ description: "Description of how to use the AL profiler to analyze method calls 
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/04/2021
+ms.date: 12/10/2021
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
@@ -121,12 +121,17 @@ The following table provides an overview of the shortcut key combinations that y
 |-(minus) | Collapse all nodes.|
 |*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
-## Inline CodeLens for AL profiling results
+
+## Inline Profiler CodeLens for AL profiling results
+
+The Profiler CodeLens for AL enables showing profile results. At hover, the Profiler CodeLens displays time spent in milliseconds for a specific method, and the number of hits on the method. When opening a profiler file, the lens will show information on all statements that appear as frames in the profiler.
+
+General CodeLens support for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
+
+While in the settings file, you can now add two options for the Profiler CodeLens for AL. The `"al.areProfileLensesSupported": true` enables the CodeLens and is by *default* true. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. This must be set to the value in milliseconds which is the lower limit. The *default* for this setting is `500` milliseconds (ms). Any value below the stated threshold will not be shown. 
 
 > [!NOTE]  
-> CodeLens for AL profiling results is in preview with runtime 8.0.
-
-CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. 
+> Because of the aggregation of frames, there can be minor discrepancies between the information appearing in the CodeLens and in the profiler.
 
 ## See Also
 
