@@ -128,7 +128,7 @@ The Profiler CodeLens for AL enables showing profile results. At hover, the Prof
 
 General CodeLens support for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
 
-While in the settings file, you can now add two options for the Profiler CodeLens for AL. The `"al.areProfileLensesSupported": true` enables the CodeLens and is by *default* true. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. This must be set to the value in milliseconds which is the lower limit. The *default* for this setting is `500` milliseconds (ms). Any value below the stated threshold will not be shown. 
+While in the settings file, you can now add two options for the Profiler CodeLens for AL. The `"al.areProfileLensesSupported": true` enables the CodeLens and is by *default* true. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. This must be set to the value in milliseconds which is the lower limit. The *default* for this setting is `500` milliseconds (ms). Any value below the stated threshold will not be shown. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 > [!NOTE]  
 > Because of the aggregation of frames, there can be minor discrepancies between the information appearing in the CodeLens and in the profiler.
