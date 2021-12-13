@@ -74,11 +74,11 @@ Read more about how to use the AL profiler to troubleshoot performance here: [AL
 
 ## Which tools are good when?
 
-Here are the pros and cons of the different performance tools described above:
+In the following, you can read about the pros and cons of the different performance tools described above.
 
 |Performance tool | Properties |
 |---------------------------------|-------------|
-|Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Very little performance impact to have turned on always. <br> Telemetry needs to be enabled before the performance issue occur. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
+|Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Very little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject a lot of data into Azure Application Insights. <br> Data collection must happen live. |
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
 | AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. | 
