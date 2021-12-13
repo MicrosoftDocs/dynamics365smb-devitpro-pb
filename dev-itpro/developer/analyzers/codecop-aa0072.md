@@ -1,9 +1,9 @@
 ---
-title: "CodeCop Rule AA0072"
+title: "CodeCop Info AA0072"
 description: "To improve readability the name of variables and parameters must be suffixed with the type or object name."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0072
+# CodeCop Info AA0072
 The name of variables and parameters must be suffixed with the type or object name.
 
 ## Description

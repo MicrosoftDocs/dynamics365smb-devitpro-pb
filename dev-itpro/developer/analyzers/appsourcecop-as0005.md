@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0005"
+title: "AppSourceCop Error AS0005"
 description: "Fields must not change name; their names are case-sensitive."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0005
+# AppSourceCop Error AS0005
 Fields must not change name
 
 ## Description
