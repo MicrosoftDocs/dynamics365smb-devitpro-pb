@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0694"
 description: "The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 12/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.
 
 > [!IMPORTANT]
-> This warning will become an error in Spring 2022.
+> This warning will become an error in Spring 2022.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
