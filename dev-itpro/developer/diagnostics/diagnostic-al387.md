@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Namespace '{0}' is already specified.
 
+## Description
+A namespace has been defined multiple times.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

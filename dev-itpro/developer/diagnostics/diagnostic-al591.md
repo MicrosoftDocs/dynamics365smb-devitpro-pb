@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The property {0} is only supported on {1}.
 
+## Description
+The referenced property is not supported on the element is was set on. For more information on the elements the property applies to, refer to the property's documentation.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

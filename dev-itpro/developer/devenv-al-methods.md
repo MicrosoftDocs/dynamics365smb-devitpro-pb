@@ -2,7 +2,7 @@
 title: "Working with AL methods"
 description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ Like other languages, AL methods are a fundamental programming element. A method
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope Attribute](attributes/devenv-scope-attribute.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
 

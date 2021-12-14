@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Reference '{0}' in application object '{1}' does not exist.
 
+## Description
+Cannot resolve the type of the referenced element.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The field '{0}' is not found in the target '{1}'.
 
+## Description
+The referenced field is missing.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

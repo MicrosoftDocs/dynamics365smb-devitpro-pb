@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The link '{0}' specified in the HelpLink property must either contain one placeholder with value 0 for the user locale, or no placeholders.
 
+## Description
+The link specified in the **HelpLink** property must either contain one placeholder with value 0 for the user locale, or no placeholders.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

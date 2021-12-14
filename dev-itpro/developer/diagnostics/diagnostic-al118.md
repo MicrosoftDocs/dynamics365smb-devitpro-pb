@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The name '{0}' does not exist in the current context.
 
+## Description
+The referenced name does not exist in the current context.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

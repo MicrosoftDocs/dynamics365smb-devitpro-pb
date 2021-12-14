@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 A local or parameter named '{0}' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter.
 
+## Description
+Cannot declare local or parameter in a scope if there already is a local or parameter with the same name used in an enclosing local scope.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

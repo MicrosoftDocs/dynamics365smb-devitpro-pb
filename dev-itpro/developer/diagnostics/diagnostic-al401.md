@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Multiple page customizations have been specified for the same page {0} within the same profile.
 
+## Description
+Only one page customization per page is allowed within a profile.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 An '=' is expected for property {0}.
 
+## Description
+An '=' is expected between a property and its value. The correct syntax is `Property_name = value;`.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

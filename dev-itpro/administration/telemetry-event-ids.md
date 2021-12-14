@@ -99,6 +99,7 @@ PartnerDiagnosticsEventSchemaTag.cs-->
 |LC0035|AppSource Submission|[AppSource submission validation request completed with failures: {validationRequestId}](telemetry-appsource-submission-validation-trace.md#submissionrequestcompletedwithfailures) |
 |LC0036|AppSource Submission|[(Version, country-region) validation completed with failures: version {version}, country-region {countryRegion}](telemetry-appsource-submission-validation-trace.md#versioncountryvalidationcompletedwithfailures) |
 | LC0037| AppSource Submission | [Extension validation completed with failures: version {version}, country-region {countryRegion} for extension {extensionName} version {extensionVersion} by {extensionPublisher} ({extensionId})](telemetry-appsource-submission-validation-trace.md#extensionvalidationcompletedwithfailures)  |
+|LC0038|AppSource Submission|[Diagnostic reported on AppSource submission validation request: {validationRequestId}](telemetry-appsource-submission-validation-trace.md#submissionrequestdiagnostic)|
 | LC0040 |Task Scheduler | [Task {taskId} created: {codeunitObjectId} scheduled to run after {notBefore}. Ready to run: {isReady}](telemetry-task-scheduler-trace.md#task-created) |
 | LC0041 | Task Scheduler  | [Task {taskId} ready: {codeunitObjectId} set ready to run after {notBefore}.](telemetry-task-scheduler-trace.md#task-ready) |
 | LC0042 | Task Scheduler  | [Task {taskId} removed: {codeunitObjectId}.](telemetry-task-scheduler-trace.md#task-removed) |

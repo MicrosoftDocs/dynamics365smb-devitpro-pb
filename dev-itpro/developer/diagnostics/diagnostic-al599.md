@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 A control add-in with the same internal name '{0}' is already defined.
 
+## Description
+Multiple control add-ins with the same metadata name are defined.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 There is an 'ELSE' statement without an 'IF' in property {0}.
 
+## Description
+An 'ELSE' statement must be preceeded by an 'IF'.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -3,7 +3,7 @@ title: "HttpClient.UseWindowsAuthentication(String, String [, String]) Method"
 description: "Sets the HttpClient credentials to use the specified network credentials for Windows authentication."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

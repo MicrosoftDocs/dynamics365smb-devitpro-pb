@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 '{0}' does not implement {1}.
 
+## Description
+The referenced application object does not implement the specified interface.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

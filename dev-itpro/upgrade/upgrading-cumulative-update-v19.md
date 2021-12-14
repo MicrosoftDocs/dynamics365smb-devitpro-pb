@@ -47,7 +47,7 @@ The application includes AL extensions that define the objects and code that mak
 
 ### Single-tenant and multitenant deployments
 
-The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
 ### Platform versus application update
 
@@ -289,6 +289,10 @@ Compile all published extensions against the new platform.
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
     You'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
+
+    ```powershell  
+    Mount-NAVTenant -ServerInstance $BCServerInstanceName -DatabaseName $TenantDatabase -Tenant $TenantId 
+    ```
 
 2. Synchronize the tenant.
   

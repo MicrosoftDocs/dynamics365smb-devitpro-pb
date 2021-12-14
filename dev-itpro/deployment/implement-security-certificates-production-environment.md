@@ -136,7 +136,7 @@ After you have installed the root CA on the computer running the [!INCLUDE[webse
   
 1.  Open the ClientUserSettings.config configuration file.  
   
-     The location of this file is *Users\\\<*username*>\\AppData\\RoamingLocal\\Microsoft\\[!INCLUDE[prod_long](../developer/includes/prod_long.md)]\\<version>*.
+     The location of this file is *Users\\\<*username*>\\AppData\\RoamingLocal\\Microsoft\\[!INCLUDE[prod_long](../developer/includes/prod_long.md)]\\\<version>*.
   
      By default, this file is hidden. Therefore, you may have to change your folder options in Windows Explorer to view hidden files.  
   

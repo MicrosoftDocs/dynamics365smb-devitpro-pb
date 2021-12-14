@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The event '{0}' must not have a parameter name 'sender' when it specifies to include sender.
 
+## Description
+An event publisher must not have a parameter name 'sender' when it specifies to include sender.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

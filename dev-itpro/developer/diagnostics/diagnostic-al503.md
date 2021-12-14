@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Reference '{0}' in application object '{1}' is ambiguous.
 
+## Description
+Ambiguous reference to an application object.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

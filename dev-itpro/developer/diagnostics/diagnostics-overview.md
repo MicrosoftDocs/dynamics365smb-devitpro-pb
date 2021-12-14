@@ -17,6 +17,7 @@ author: SusanneWindfeldPedersen
 # AL Compiler Diagnostics
 
 
+
 |Id|Description|Default Severity|
 |--|-----------|----------------|
 |[AL0100](diagnostic-al100.md)|Unterminated multiline comment.|Error|

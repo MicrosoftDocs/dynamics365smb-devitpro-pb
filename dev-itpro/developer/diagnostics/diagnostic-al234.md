@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 An action with ID = {0} is already defined.
 
+## Description
+Multiple actions with the same ID are defined.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

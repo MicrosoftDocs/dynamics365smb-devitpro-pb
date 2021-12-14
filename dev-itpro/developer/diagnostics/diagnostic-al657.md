@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The property {0} is mandatory for ListParts and PageParts.
 
+## Description
+The properties **EntitySetName** and **EntityName** are mandatory for ListParts and PageParts nested in API pages.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

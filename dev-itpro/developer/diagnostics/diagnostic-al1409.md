@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Page '{0}' should be of type 'RoleCenter'.
 
+## Description
+The page used as a Role Center for a profile or profile extension is not a page of type 'RoleCenter'.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

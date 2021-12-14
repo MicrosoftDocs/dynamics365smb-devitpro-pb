@@ -1,0 +1,1 @@
+The [Known Issues](../../upgrade/known-issues.md) article describes issues that can impact installation, upgrade, and various operations of [!INCLUDE[prod short](prod_short.md)] on-premises. Review the issues that pertain to the Business Central version you're upgrading to. Some of the issues must be addressed before you upgrade, while others can be resolved afterwards. 

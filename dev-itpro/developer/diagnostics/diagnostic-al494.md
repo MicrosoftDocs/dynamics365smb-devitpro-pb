@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The action area '{0}' can only directly contain groups.
 
+## Description
+An action area con only diretly contain groups.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

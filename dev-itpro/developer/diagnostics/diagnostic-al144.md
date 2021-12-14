@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 Wrong number of indices inside []; expected {0}.
 
+## Description
+The number of indices inside [] does not match the dimensions of the array.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -20,6 +20,9 @@ author: SusanneWindfeldPedersen
 
 The view '{0}' is not found in the target '{1}'.
 
+## Description
+The referenced view is missing in the target page.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
