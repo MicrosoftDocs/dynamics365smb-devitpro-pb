@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 07/27/2021
+ms.date: 12/15/2021
 ms.author: edupont
 ---
 
@@ -34,6 +34,9 @@ You can create environments of different types. Which type of environment to cho
 [!INCLUDE [admin-env-prod](../developer/includes/admin-env-prod.md)]
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
+
+> [!NOTE]
+> [!INCLUDE [admin-suspended](../includes/admin-suspended.md)]
 
 ### Manage production environments
 

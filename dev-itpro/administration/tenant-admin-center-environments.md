@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 11/29/2021
+ms.date: 12/15/2021
 ms.author: jswymer
 ---
 
@@ -33,6 +33,8 @@ You can create environments of different types. Choose the type of environment b
 ### Production environments
 
 [!INCLUDE [admin-env-prod](../developer/includes/admin-env-prod.md)]
+
+[!INCLUDE [admin-suspended](../includes/admin-suspended.md)]
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
