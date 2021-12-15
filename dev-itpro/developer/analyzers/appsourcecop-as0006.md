@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0006"
+title: "AppSourceCop Error AS0006"
 description: "Tables that have been published must not change name."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0006
+# AppSourceCop Error AS0006
 Tables that have been published must not change name.
 
 ## Description
