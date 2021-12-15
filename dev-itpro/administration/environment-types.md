@@ -40,9 +40,9 @@ You can create environments of different types. Which type of environment to cho
 
 ### Manage production environments
 
-Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to mange the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
+Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
 
-Alternatively, use the [Administration Center API](administration-center-api.md).  
+Instead, use the [Administration Center API](administration-center-api.md).  
 
 ## Sandbox environments
 
@@ -56,7 +56,7 @@ Alternatively, use the [Administration Center API](administration-center-api.md)
 
 ### Manage sandbox environments
 
-Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to mange the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
+Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
 
 Alternatively, use the [Administration Center API](administration-center-api.md).  
 
@@ -70,7 +70,7 @@ It is possible to enable and try the full functionality of the standard version 
 
 ### Complete sample data
 
-The standard demonstration company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] includes sample data for a limited number of scenarios. You can also create a new company with the **Advanced Evaluation - Complete Sample Data** option so that users can take training or step through walkthroughs that require additional sample data, such as [Walkthrough: Receiving and Putting Away in Basic Warehouse Configurations](/dynamics365/business-central/walkthrough-receiving-and-putting-away-in-basic-warehousing). This sample data is very different from the standard sample data, and we advise that you do not capture and share screenshots with this advanced sample data.  
+The standard demonstration company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] includes sample data for a limited number of scenarios. You can also create a new company with the **Advanced Evaluation - Complete Sample Data** option. In this type of company, users can take training or step through walkthroughs that require more sample data, such as [Walkthrough: Receiving and Putting Away in Basic Warehouse Configurations](/dynamics365/business-central/walkthrough-receiving-and-putting-away-in-basic-warehousing). This sample data is different from the standard sample data, and we advise that you do not capture and share screenshots with this advanced sample data.  
 
 For more information, see [Creating New Companies in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](/dynamics365/business-central/about-new-company) in the business functionality content.
 
