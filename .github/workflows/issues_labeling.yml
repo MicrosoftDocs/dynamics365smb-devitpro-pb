@@ -23,5 +23,5 @@ jobs:
       - uses: Naturalclar/issue-action@v2.0.2
         with:
           title-or-body: "both"
-          parameters: '[ {"keywords": ["bug", "error"], "labels": ["BUG"], "assignees": ["SusanneWindfeldPedersen"]}, {"keywords": ["help", "guidance"], "labels": ["help-wanted"], "assignees": ["jswymer"]}]'
+          parameters: '[ {"keywords": ["bug", "error", "wrong", "invalid", "incorrect"], "labels": ["BUG"], {"keywords": ["detail", "detailed", "information", "enhance", "help", "helpful", "improvement", "improve", "additional", "clarification"], "labels": ["needs more detail"]}, {"keywords": ["example", "sample", "code"], "labels": ["sample code"]}, {"keywords": ["reference", "method", "property", "trigger", "attribute", "analyzer"], "labels": ["reference docs"]}, {"keywords": ["REST", "API"], "labels": ["api"]}, {"keywords": ["REST", "API"], "labels": ["api"]}, {"keywords": ["NAV"], "labels": ["NAV"]}, {"keywords": ["powershell"], "labels": ["powershell"]}, {"keywords": ["report, reporting"], "labels": ["reporting"]}, {"keywords": ["web services"], "labels": ["web services"]}]'
           github-token: "${{ secrets.GITHUB_TOKEN }}"
