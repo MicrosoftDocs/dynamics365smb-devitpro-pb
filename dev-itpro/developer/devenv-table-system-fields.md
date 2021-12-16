@@ -149,6 +149,17 @@ There are a couple points of interest you should know:
 - If a record is copied into a temporary table, the data audit field values are copied as well. The values aren't changed by the server when calling a modify or insert method.  
 - It's possible to use audit fields in a key. The platform doesn't automatically index these fields in any way.
 
+If you want to translate a user security id guid to the corresponding user name, the following AL code might be useful:
+```
+procedure GetUserNameFromSecurityId(userSecurityID: Guid): Code[50]
+    var
+        User: Record User;
+    begin
+        User.Get(secID);
+        exit(User."User Name");
+    end;
+```  
+
 ## <a name="timestamp"></a> Timestamp field
 
 The **timestamp** field contains row version numbers for records, as maintained in SQL Server. The **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. However, you can't write to the **timestamp** field.  
