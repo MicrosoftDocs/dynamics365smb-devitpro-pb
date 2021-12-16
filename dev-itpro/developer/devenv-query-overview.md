@@ -34,7 +34,7 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 
 - Using the query as a data source for a page. To do this, you have to copy the query resulting dataset into a temporary table and set it as the source table for the page. 
 
-- Using the query as a data source for a report. To do this, you have to copy the query resulting dataset into a temporary table which can then be used by the report. 
+- Using the query as a data source for a report. To do this, create a global variable that points to the query. Then use the variable in the report dataset. For more information see, [Defining a Report Dataset](devenv-report-dataset.md).
 
 - Performing calculations on data such as computing sums and averages. For more information see, [Query Totals and Grouping](devenv-query-totals-grouping.md).
 
