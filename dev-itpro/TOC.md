@@ -3489,6 +3489,7 @@
 #### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
 ### [OData](webservices/odata-web-services.md)
+#### [OData Query performance](webservices/odata-client-performance.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)

@@ -64,7 +64,7 @@ The **Edit in Excel** feature uses UI pages exposed through OData. This means th
 ### Endpoint performance
 
 #### Anti-patterns (don't do this)
-Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
+Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, are not returned in web service results, but will use resources to prepare.
 
 Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
@@ -87,11 +87,15 @@ Do not use a deprecated protocol such as SOAP. Instead, utilize newer technology
 
 - The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It is possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
-- For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
-
 - If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set DataAccessIntent = ReadOnly. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
-- Use OData transaction $batch requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
+### OData Performance patterns
+When calling OData web services, there are a number of strategies that you can use to speed up your queries
+- Limiting the set ($filter or $top) if you're using an expensive $expand statement
+- Using OData transaction $batch
+- Using Data Access Intent Readonly with OData
+
+For more details about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
 
 ### How to handle large volumes of web service calls
 When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
@@ -110,8 +114,6 @@ Make sure that your external application can handle the two HTTP status codes *4
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
-
-By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
 
 ## Writing efficient reports
 
