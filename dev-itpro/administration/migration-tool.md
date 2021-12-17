@@ -61,20 +61,13 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
 
 4. Company Selection
 
-    From the list of companies from your on-premises solution, the source of the migration, select the companies you want to migrate data for. If the company does not exist in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, it will be automatically created for you.  
+    From the list of companies from your on-premises solution, the source of the migration, select the companies you want to migrate data for. If the company does not exist in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, it will be automatically created for you. This process may take several minutes depending on the number of companies that need to be created.
+    
+    > [!Important]
+    > While it is possible to migrate companies separately, once you disable the Cloud Migration and go live with the migrated companies, you cannot migrate more companies into the same environment. Make sure you migrate all required companies into the environment, before disabling the migration and allowing users to access these companies.
 
-    > [!NOTE]
-    > This process may take several minutes depending on the number of companies that need to be created.
-
-5. Enable & Scheduling Migration
-
-    The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly.  
-
-    > [!TIP]
-    > We recommend that you schedule your data migration for off-peak business hours since it can take many hours to run, depending on the amount of data.
-    >
-    > We also recommend that you make sure that all users are logged out of both the source company and the target company.
-
+5. Choose finish to close the wizard. 
+    
 Once you have migrated the data that you want to migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online are overwritten.  
 
 > [!NOTE]  
