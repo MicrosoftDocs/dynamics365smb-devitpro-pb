@@ -32,6 +32,7 @@ You create a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_
 
 In order to define the underlying data model, you use the report dataset. A report dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fine_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. You build the report dataset by adding data items and columns. For more information, see [Report Dataset](devenv-report-dataset.md). You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
+[!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
 ## Report layouts  
 
