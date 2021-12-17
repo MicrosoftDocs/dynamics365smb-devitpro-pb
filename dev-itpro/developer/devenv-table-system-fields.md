@@ -149,8 +149,9 @@ There are a couple points of interest you should know:
 - If a record is copied into a temporary table, the data audit field values are copied as well. The values aren't changed by the server when calling a modify or insert method.  
 - It's possible to use audit fields in a key. The platform doesn't automatically index these fields in any way.
 
-If you want to translate a user security id guid to the corresponding user name, the following AL code might be useful:
-```
+If you want to translate a user security ID GUID to the corresponding user name, the following AL code might be useful:
+
+```al
 procedure GetUserNameFromSecurityId(userSecurityID: Guid): Code[50]
     var
         User: Record User;
