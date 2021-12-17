@@ -1,5 +1,5 @@
 ---
-title: Running the Cloud Migration Tool
+title: Run the Cloud Migration Tool
 description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics NAV.
 
 author: bmeier94
@@ -10,12 +10,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 11/03/2021
+ms.date: 12/17/2021
 ms.author: edupont
 
 ---
 
-# Running the Cloud Migration Tool
+# Run the Cloud Migration Tool
 
 The **Set up Cloud Migration** assisted setup guide helps administrators migrate data from supported on-premises solutions to [!INCLUDE [prod_short](../includes/prod_short.md)] online as part of the migration to the cloud.  
 
@@ -61,20 +61,13 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
 
 4. Company Selection
 
-    From the list of companies from your on-premises solution, the source of the migration, select the companies you want to migrate data for. If the company does not exist in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, it will be automatically created for you.  
+    From the list of companies from your on-premises solution, the source of the migration, select the companies you want to migrate data for. If the company does not exist in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, it will be automatically created for you. This process may take several minutes depending on the number of companies that need to be created.
+    
+    > [!Important]
+    > [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)] You can run the cloud migration tool many times, and you can migrate companies one by one. But once you disable cloud migration and go live with the migrated companies, you cannot migrate more companies into the same environment. Make sure that you migrate all required companies into the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment, before you disable the migration and allow users to access and actively use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
 
-    > [!NOTE]
-    > This process may take several minutes depending on the number of companies that need to be created.
-
-5. Enable & Scheduling Migration
-
-    The final page in the wizard allows you to enable the migration process and create a schedule for when the data migration should occur. These settings are also available within your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online on the **Cloud Migration Management** page. You have the option to schedule migrations daily or weekly.  
-
-    > [!TIP]
-    > We recommend that you schedule your data migration for off-peak business hours since it can take many hours to run, depending on the amount of data.
-    >
-    > We also recommend that you make sure that all users are logged out of both the source company and the target company.
-
+5. Choose finish to close the wizard. 
+    
 Once you have migrated the data that you want to migrate to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, you end the migration by disabling cloud migration in the **Cloud Migration Setup** page. This is an important step, because each time someone runs the migration, outstanding documents for vendors and customers, general ledger account numbers, inventory items, and any other changes made in the target company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online are overwritten.  
 
 > [!NOTE]  
