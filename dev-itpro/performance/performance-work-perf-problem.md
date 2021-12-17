@@ -57,7 +57,7 @@ This page shows an overview of all currently available signals: [Monitoring and 
 
 If you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. 
 
-Read more about additional logging here [Help and Support page](../product-help-and-support.md#troubleshooting).
+Read more about additional logging here [Help and Support page](../help-and-support.md#troubleshooting).
 
 With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can also change the default threshold that defines long running queries. For more information, see [Analyzing Long Running Operation (SQL Query) Telemetry](../administration/telemetry-long-running-sql-query-trace.md).
 
