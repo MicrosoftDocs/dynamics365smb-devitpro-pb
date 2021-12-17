@@ -1,5 +1,5 @@
 ---
-title: Running the Cloud Migration Tool
+title: Run the Cloud Migration Tool
 description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics NAV.
 
 author: bmeier94
@@ -10,12 +10,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 11/03/2021
+ms.date: 12/17/2021
 ms.author: edupont
 
 ---
 
-# Running the Cloud Migration Tool
+# Run the Cloud Migration Tool
 
 The **Set up Cloud Migration** assisted setup guide helps administrators migrate data from supported on-premises solutions to [!INCLUDE [prod_short](../includes/prod_short.md)] online as part of the migration to the cloud.  
 
@@ -64,7 +64,7 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
     From the list of companies from your on-premises solution, the source of the migration, select the companies you want to migrate data for. If the company does not exist in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, it will be automatically created for you. This process may take several minutes depending on the number of companies that need to be created.
     
     > [!Important]
-    > While it is possible to migrate companies separately, once you disable the Cloud Migration and go live with the migrated companies, you cannot migrate more companies into the same environment. Make sure you migrate all required companies into the environment, before disabling the migration and allowing users to access these companies.
+    > [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)] You can run the cloud migration tool many times, and you can migrate companies one by one. But once you disable cloud migration and go live with the migrated companies, you cannot migrate more companies into the same environment. Make sure that you migrate all required companies into the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online environment, before you disable the migration and allow users to access and actively use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
 
 5. Choose finish to close the wizard. 
     
