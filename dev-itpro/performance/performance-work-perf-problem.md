@@ -45,7 +45,7 @@ In the following, you can read about ways where telemetry can help troubleshoot 
 | Sign-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
 | Something was slow during this period of time | [Company lifecycle signal](../administration/telemetry-company-lifecycle-trace.md) | Check whether a copy-company operation was running while the performance issue occurred. |
 | Something was slow during this period of time | [Database locks signal](../administration/telemetry-database-locks-trace.md) | Maybe the performance issue was because of locking in the database. |
-| Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-update-trace.md) | Maybe an extension was installed that interferes with the page in question.|
+| Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-lifecycle-trace.md) | Maybe an extension was installed that interferes with the page in question.|
 | Some pages or reports are slow to load | [Long running SQL queries](../administration/telemetry-long-running-sql-query-trace.md) | Investigate whether the data operations on the page or report are taking a long time to complete. |
 | A report is slow | [Report signal](../administration/telemetry-reports-trace.md)  | Check whether the report is reading more data than you expected. |
 | System UI feels slow | [Web service requests signal](../administration/telemetry-webservices-trace.md) | Calling your environment too  aggressively with web service requests can affect performance of the system. |
@@ -70,8 +70,6 @@ Read more about how to use the page inspector to troubleshoot extension performa
 ## Analyzing performance issues using the AL profiler
 
 With the AL Profiler for the AL Language extension you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. 
-
-If a specific page takes too long to load, it might be due to extensions that are adding expensive operations to the page triggers. You can use the page inspector to analyze this by navigating to the Extensions tab. It displays installed extensions that affect the selected page or its source table by showing the time (in milliseconds) it took to run the extension in the call stack and the number of event subscribers run in the extension.
 
 Read more about how to use the AL profiler to troubleshoot performance here [AL Profiler Overview](../developer/devenv-al-profiler-overview.md).
 
