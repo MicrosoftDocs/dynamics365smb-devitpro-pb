@@ -399,7 +399,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Sessions started
 - Web Service Requests
 
-Read more in this section: [How to use telemetry to analyze performance](./performance-online.md#telemetry)
+For more information, see the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
 
 ### Troubleshooting
 
