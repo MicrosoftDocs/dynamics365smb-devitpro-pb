@@ -7,7 +7,7 @@ ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.author: freddyk
+ms.author: solsen
 ---
 
 # AL-Go Get started
