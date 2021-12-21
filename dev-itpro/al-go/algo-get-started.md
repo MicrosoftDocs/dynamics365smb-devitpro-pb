@@ -26,6 +26,7 @@ ms.author: solsen
 
 1. Start Visual Studio Code, press **Ctrl+Alt+P** and select **Git Clone** and paste the URL that you copied in the previous section.
 1. Choose which folder to clone the directory to.
+1. <!-- authentication?? -->
 1. 
 
 ## See also
