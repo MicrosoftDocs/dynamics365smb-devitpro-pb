@@ -1,17 +1,19 @@
 ---
 title: SOAP and ODATA Web Services
 description: Compare the features of APIs, SOAP, and OData web services and know how to create and maintain these services. 
+author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
+ms.author: jswymer
+ms.date: 04/01/2021
 ---
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Services
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: APIs, SOAP and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they're immediately available on the network.  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: API, SOAP, and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they're immediately available on the network.  
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are stateless and don't preserve the values of global variables or single-instance codeunits between calls.  
 
