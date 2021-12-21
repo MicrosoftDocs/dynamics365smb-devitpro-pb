@@ -17,18 +17,7 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
-<!---
-These changes are not confirmed yet
-
-## Changes in 2022 release wave 2
-
-### Expose UI pages as SOAP endpoints (Removal)
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Replaced | SOAP has been superseded by OData V4. SOAP endpoints are deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
-
+## Changes in 2022 release wave 2 (version 21.0)
 
 ### Business Central Server Administration tool (Removal)
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
@@ -36,9 +25,19 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in a later release. Please transition to using the provided Powershell cmdlets in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
+
+<!---
+These changes are not confirmed yet
+
+### Expose UI pages as SOAP endpoints (Removal)
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | SOAP has been superseded by OData V4. SOAP endpoints are deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that integrations are migrated to OData V4 as soon as possible.|
 --->
 
-## Changes in 2022 release wave 1
+## Changes in 2022 release wave 1 (version 20.0)
 
 ### .NET add-ins not using .NET Standard (Removal)
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
@@ -64,7 +63,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Removed | With releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database. This has changed with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] v.18.0. With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2022 release wave 1, the support for defining permissions and entitlements as data in the application database will be removed. For more information, see [Entitlements and Permissions Overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
 
-## Changes in 2021 release wave 2
+## Changes in 2021 release wave 2 (version 19.0)
 
 ### Business Central app for Windows
 
@@ -135,7 +134,7 @@ The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and 
 > [!NOTE]
 > The feature is separate from and has no affect on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]add-in for Outlook, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
-## Changes in 2021 release wave 1
+## Changes in 2021 release wave 1 (version 18.0)
 
 ### .NET add-ins not using .NET Standard (Warning)
 
@@ -175,7 +174,7 @@ The following component is **Removed** with [!INCLUDE[prod_short](../developer/i
 <!--BDM-->
 We have simplified the story for how to deploy Help for a customer-specific solution of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the [Docs.microsoft.com](/dynamics365/business-central/) site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, so any investment on-premises carries forward if you migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
 
-## Deprecated Features in 2019 release wave 2
+## Changes in 2019 release wave 2 (version 15.0)
 The following sections describe the features that were deprecated in 2019 release wave 2.
 
 ### The Windows Client
