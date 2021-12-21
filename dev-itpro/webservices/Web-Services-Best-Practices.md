@@ -1,14 +1,18 @@
 ---
-title: "Web Services Best Practices"
+title: Web Services Best Practices
+description: Get the list of recommendations for how to use web services in your Business Central solution.
+author: edupont04
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics365-business-central
+ms.author: edupont
 ---
 # Web Services Best Practices
+
 This article provides recommendations that you can implement to make your web services applications faster and easier to understand and maintain.  
   
 |Recommendation|Example|  

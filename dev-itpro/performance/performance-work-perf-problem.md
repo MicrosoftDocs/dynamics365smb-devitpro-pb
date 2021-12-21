@@ -2,7 +2,7 @@
 title: "How to Work with a Performance Problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 12/06/2021
+ms.date: 12/21/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,12 +52,11 @@ In the following, you can read about ways where telemetry can help troubleshoot 
 
 This page shows an overview of all currently available signals: [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
-
 ## Analyzing database performance issues using verbose telemetry
 
-If you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. 
+If you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently.  
 
-Read more about additional logging here [Help and Support page](../help-and-support.md#troubleshooting).
+Read more about additional logging in the [Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting) section of the Resources for Help and Support article in the business functionality docs.
 
 With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can also change the default threshold that defines long running queries. For more information, see [Analyzing Long Running Operation (SQL Query) Telemetry](../administration/telemetry-long-running-sql-query-trace.md).
 
