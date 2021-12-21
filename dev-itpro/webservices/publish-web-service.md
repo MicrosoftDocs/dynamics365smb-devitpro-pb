@@ -36,23 +36,26 @@ translation.priority.ht:
   - sv-se
 ---
 
-# Publishing a Web Service 
+# Publishing a Web Service in Business Central
+
 Users discover web services by pointing a browser at the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and requesting a list of available services. When you publish a web service, it's immediately available over the network for authenticated users. All authorized users have access to metadata for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services, but only users who have sufficient [!INCLUDE[prod_short](../developer/includes/prod_short.md)] permissions can access actual data.  
 
 Depending on the type of web service (API, OData, or SOAP), the web service might need to be published to be available for users.
 
 ## Publishing a API Web Service
-If the API stack have been enabled for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, then no additional setup is needed to make an API web service available. 
 
-The API stack is enabled by default in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information on how to enable APIs for on-premises environments, please visit [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).
+If the API stack has been enabled for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, then no additional setup is needed to make an API web service available.  
 
-## Creating and Publishing a OData or SOAP Web Service
-You can set up a SOAP or OData based web service in the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] or [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. You must then publish the web service so that it's available to service requests over the network. 
+The API stack is enabled by default in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information on how to enable APIs for on-premises environments, please visit [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md).  
+
+## Creating and Publishing an OData or SOAP Web Service
+
+You can set up a SOAP or OData based web service in the client. You must then publish the web service so that it's available to service requests over the network. 
 
 
- The following steps explain how to create and publish a web service.  
+The following steps explain how to create and publish a web service.  
   
-1. Open the client.  
+1. Open the client, such as a browser at [https://businesscentral.dynamics.com/?](https://businesscentral.dynamics.com/?).  
   
 2. Choose the ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Search for Page or Report icon") icon, enter **Web Services**, and then choose the related link.
   
@@ -61,7 +64,9 @@ You can set up a SOAP or OData based web service in the [!INCLUDE[nav_web](../de
 4. In the **Object Type** column, select **Codeunit**, **Page**, or **Query**.  
   
    > [!NOTE] 
-   >  **Codeunit** and **Page** are valid types for SOAP web services. **Page** and **Query** are valid types for OData web services.  
+   > **Codeunit** and **Page** are valid types for SOAP web services. 
+   > 
+   > **Page** and **Query** are valid types for OData web services.  
   
 5. In the **Object ID** column, select the object ID of the object that you want to expose. For example, to expose the customer card as a web service, enter **21**.  
   
@@ -110,7 +115,7 @@ https://localhost:7048/<serverinstance>/OData/Company('CRONUS International Ltd.
 https://localhost:7048/<serverinstance>/OData/Customer?company='CRONUS International Ltd.'  
 ```  
 
-## Unpublishing a OData or SOAP web service
+## Unpublishing an OData or SOAP web service
 
 To unpublish a webs service, clear the **Published** check box. This step will make the web service inaccessible.
 
