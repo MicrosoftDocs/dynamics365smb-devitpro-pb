@@ -47,3 +47,4 @@ Business Central will now start.
 1. In the left pane, choose **Build** and inspect the workflow run, expand the **Run Pipeline** section in the build, and the **Compiling apps** subsection
 
 ## See also
+
