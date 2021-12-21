@@ -12,7 +12,9 @@ ms.author: solsen
 
 # AL-Go Get started
 
-## Getting started on GitHub
+The following steps will help you get started by creating a repository on GitHub using the available template. Then you will open the generated repository in Visual Studio Code and run a PowerShell script which will set up a local developer environment for you. 
+
+## Getting the repo ready on GitHub
 
 1. Navigate to https://github.com/microsoft/AL-Go-PTE and choose **Use this template**
 1. In the **Repository name** field, enter `app1` and then select if the repository will be **Private** or **Public**.
@@ -41,5 +43,7 @@ Business Central will now start.
 ## Check the workflow on GitHub
 
 1. Go back to the repository on www.github.com, on the **Actions** tab, investigate the workflow that you started by committing and sync'ing your changes in the previous step.
+1. When the build is done, inspect the **Build summary**.
+1. Inspect the workflow run by choosing the build job, expanding the Run Pipeline section and the Compiling apps subsection
 
 ## See also
