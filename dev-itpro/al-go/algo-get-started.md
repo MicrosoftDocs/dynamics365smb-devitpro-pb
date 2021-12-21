@@ -40,6 +40,6 @@ Business Central will now start.
 
 ## Check the workflow on GitHub
 
-1. Back on github.com, investigate your Workflows by going to the **Workflows** tab.
+1. Go back to the repository on www.github.com, on the **Actions** tab, investigate the workflow that you started by committing and sync'ing your changes in the previous step.
 
 ## See also
