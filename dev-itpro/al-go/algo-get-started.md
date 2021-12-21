@@ -24,7 +24,7 @@ The following steps will help you get started by creating a repository on GitHub
 1. Once the workflow has completed, go to the **< > Code** tab.
 1. Choose the **< > Code** button, and copy the **HTTPS** URL. The URL is equivalent to `https://github.com/user/app1.git`.
 
-## Continue in Visual Studio Code
+## Setting up the environment in Visual Studio Code
 
 1. Start Visual Studio Code, press **Ctrl+Alt+P** and select **Git Clone** and paste the URL that you copied in the previous section.
 1. Choose which folder to clone the directory to.
@@ -43,7 +43,7 @@ Business Central will now start.
 ## Check the workflow on GitHub
 
 1. Go back to the repository on www.github.com, on the **Actions** tab, investigate the workflow that you started by committing and sync'ing your changes in the previous step.
-1. When the build is done, inspect the **Build summary**.
-1. Inspect the workflow run by choosing the build job, expanding the Run Pipeline section and the Compiling apps subsection
+1. When the build is done, chose the workflow to inspect the build summary.
+1. In the left pane, choose **Build** and inspect the workflow run, expand the **Run Pipeline** section in the build, and the **Compiling apps** subsection
 
 ## See also
