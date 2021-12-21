@@ -33,7 +33,7 @@ The following table lists the Business Central 18 versions and the 19 versions t
 |----------|----------|
 |18.0 to 18.5|19.0|
 |[18.6](https://support.microsoft.com/help/5007026)|[19.1](https://support.microsoft.com/help/5007779)|
-|[18.7](https://support.microsoft.com/help/5007778)|19.2 *not yet available*|
+|[18.7](https://support.microsoft.com/help/5007778)|[19.2](https://support.microsoft.com/help/5009178)|
 |[18.8](https://support.microsoft.com/help/5009179)<sup>[\[1\]](#1)</sup>|19.3|
 
 To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
@@ -51,7 +51,7 @@ The following table lists the Business Central 17 versions, and the 18 and 19 ve
 |[17.9](https://support.microsoft.com/help/5005374)|[18.5](https://support.microsoft.com/help/5006076)|19.0|
 |[17.10](https://support.microsoft.com/help/5004716)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
 |[17.11](https://support.microsoft.com/help/5007025)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|
-|[17.12](https://support.microsoft.com/help/5007777)|[18.8](https://support.microsoft.com/help/5009179)|19.2 *not yet available*|
+|[17.12](https://support.microsoft.com/help/5007777)|[18.8](https://support.microsoft.com/help/5009179)|[19.2](https://support.microsoft.com/help/5009178)|
 |[17.13](https://support.microsoft.com/help/5009177)<sup>[\[1\]](#1)</sup>|18.9|19.3|
 
 To see the available updates for Business Central 2020 Release Wave 2, see [Released updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2](https://support.microsoft.com/en-us/help/4583507).
@@ -82,24 +82,24 @@ To see the available updates for Business Central 2020 Release Wave 1, see [Rele
 
 ## Version 15 compatibility
 
-The following table lists the Business Central 15 versions and the 16, 17, and 18 versions that are compatible for upgrade.
+The following table lists the Business Central 15 versions and the 16, 17, 18, and 19 versions that are compatible for upgrade.
 
-|Version 15|Version 16|Version 17|Version 18|
-|----------|----------|----------|----------|
-|15.0 to 15.4|16.0|17.0|18.0|
-|[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|
-|[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|
-|[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|
-|[15.8](https://support.microsoft.com/help/4563406)|[16.4](https://support.microsoft.com/help/4563415)|17.0|18.0|
-|[15.9](https://support.microsoft.com/help/4563414)|[16.5](https://support.microsoft.com/help/4576664) |17.0|18.0|
-|[15.10](https://support.microsoft.com/help/4576663)|[16.6](https://support.microsoft.com/help/4583501)|17.0|18.0|
-|[15.11](https://support.microsoft.com/help/4583500)|[16.7](https://support.microsoft.com/help/4583513)|[17.1](https://support.microsoft.com/help/4583515)|18.0|
-|[15.12](https://support.microsoft.com/help/4583512)|[16.8](https://support.microsoft.com/help/4583553)|[17.2](https://support.microsoft.com/help/4583554)|18.0|
-|[15.13](https://support.microsoft.com/help/4583552)|[16.9](https://support.microsoft.com/help/4595151)|[17.3](https://support.microsoft.com/help/4595152)|18.0|
-|[15.14](https://support.microsoft.com/help/4595150)|[16.10](https://support.microsoft.com/help/5000695)|[17.4](https://support.microsoft.com/help/5000696)|18.0|
-|[15.15](https://support.microsoft.com/help/5000694)|[16.11](https://support.microsoft.com/help/5001234)|[17.5](https://support.microsoft.com/help/5001235)|18.0|
-|[15.16](https://support.microsoft.com/help/5001233)|[16.12](https://support.microsoft.com/help/5001734)|[17.6](https://support.microsoft.com/help/5001735)|18.0|
-|[15.17](https://support.microsoft.com/help/5001733)|[16.13](https://support.microsoft.com/help/5003473)|[17.7](https://support.microsoft.com/help/5003474)|[18.1](https://support.microsoft.com/help/5003475)|
+|Version 15|Version 16|Version 17|Version 18|Version 19|
+|----------|----------|----------|----------|----------|
+|15.0 to 15.4|16.0|17.0|18.0|19.0|
+|[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|19.0|
+|[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|19.0|
+|[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|19.0|
+|[15.8](https://support.microsoft.com/help/4563406)|[16.4](https://support.microsoft.com/help/4563415)|17.0|18.0|19.0|
+|[15.9](https://support.microsoft.com/help/4563414)|[16.5](https://support.microsoft.com/help/4576664) |17.0|18.0|19.0|
+|[15.10](https://support.microsoft.com/help/4576663)|[16.6](https://support.microsoft.com/help/4583501)|17.0|18.0|19.0|
+|[15.11](https://support.microsoft.com/help/4583500)|[16.7](https://support.microsoft.com/help/4583513)|[17.1](https://support.microsoft.com/help/4583515)|18.0|19.0|
+|[15.12](https://support.microsoft.com/help/4583512)|[16.8](https://support.microsoft.com/help/4583553)|[17.2](https://support.microsoft.com/help/4583554)|18.0|19.0|
+|[15.13](https://support.microsoft.com/help/4583552)|[16.9](https://support.microsoft.com/help/4595151)|[17.3](https://support.microsoft.com/help/4595152)|18.0|19.0|
+|[15.14](https://support.microsoft.com/help/4595150)|[16.10](https://support.microsoft.com/help/5000695)|[17.4](https://support.microsoft.com/help/5000696)|18.0|19.0|
+|[15.15](https://support.microsoft.com/help/5000694)|[16.11](https://support.microsoft.com/help/5001234)|[17.5](https://support.microsoft.com/help/5001235)|18.0|19.0|
+|[15.16](https://support.microsoft.com/help/5001233)|[16.12](https://support.microsoft.com/help/5001734)|[17.6](https://support.microsoft.com/help/5001735)|18.0|19.0|
+|[15.17](https://support.microsoft.com/help/5001733)|[16.13](https://support.microsoft.com/help/5003473)|[17.7](https://support.microsoft.com/help/5003474)|[18.1](https://support.microsoft.com/help/5003475)|19.0|
 
 To see the available updates for Business Central 2019 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2019 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
 
@@ -143,7 +143,7 @@ The following table lists the Business Central 14 versions and the 15, 16, 17, 1
 |[14.27 (cumulative update 26)](https://support.microsoft.com/help/5005370)|None|[16.16](https://support.microsoft.com/help/5006074)|[17.10](https://support.microsoft.com/help/5006075)|[18.5](https://support.microsoft.com/help/5006076)|19.0|
 |[14.28 (cumulative update 27)](https://support.microsoft.com/help/5006072)|None|[16.17](https://support.microsoft.com/help/5007024)|[17.11](https://support.microsoft.com/help/5007025)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
 |[14.29 (cumulative update 28)](https://support.microsoft.com/help/5007023)|None|16.18|[17.12](https://support.microsoft.com/help/5007777)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|
-|[14.30 (cumulative update 29)](https://support.microsoft.com/help/5007776)|None|None|[17.13](https://support.microsoft.com/help/5009177)|[18.8](https://support.microsoft.com/help/5009179)|19.2 *not yet available*|
+|[14.30 (cumulative update 29)](https://support.microsoft.com/help/5007776)|None|None|[17.13](https://support.microsoft.com/help/5009177)|[18.8](https://support.microsoft.com/help/5009179)|[19.2](https://support.microsoft.com/help/5009178)|
 |[14.31 (cumulative update 30)](https://support.microsoft.com/help/5009176)<sup>[\[1\]](#1)</sup>|None|None|17.14|18.9|19.3|
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).  

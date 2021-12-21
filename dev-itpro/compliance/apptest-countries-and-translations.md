@@ -139,7 +139,7 @@ This table gives an overview of supported languages and how application language
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
 |Italian (Switzerland)|it-CH|Microsoft, Available on AppSource|
 |Italian (Italy)|it-IT|Microsoft, Available on AppSource|
-|Japanese (Japan)|jp-JP|Partner, Available on AppSource|
+|Japanese (Japan)|ja-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
 |Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|

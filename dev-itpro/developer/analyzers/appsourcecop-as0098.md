@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0098"
+title: "AppSourceCop Warning AS0098"
 description: "An affix is needed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/08/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0098
+# AppSourceCop Warning AS0098
 An affix is needed.
 
 ## Description
