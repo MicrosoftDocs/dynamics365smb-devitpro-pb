@@ -33,6 +33,13 @@ The script might show a dialog asking for permissions to run Docker commands, se
 1. Wait for completion of the script.
 1. Once the script is completed, press **Ctrl+Alt+P** and choose **Clear credentials cache**.
 1. Open the `HelloWorld.al` file, modify the string as you want and then press **F5**.  
-Depending on selected authentication method, Visual Studio Code might ask for the credentials that you provided in step 5 earlier.
+Depending on selected authentication method, Visual Studio Code might ask for the credentials that you provided in step 5.  
+Business Central will now start.
+1. Back in Visual Studio Code, you will see that in addition to your changes in the `HelloWorld.al`file, the `launch.json` file was also modified with the information about the local environment. 
+1. Now, from the Visual Studio Code source control, stage your changes, commit them, and **Sync changes**.
+
+## Check the workflow on GitHub
+
+1. Back on github.com, investigate your Workflows by going to the **Workflows** tab.
 
 ## See also
