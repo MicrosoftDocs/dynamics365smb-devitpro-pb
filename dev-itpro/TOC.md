@@ -3480,6 +3480,7 @@
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
+#### [OData Query performance](odata-client-performance.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
