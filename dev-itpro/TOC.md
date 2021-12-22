@@ -182,15 +182,15 @@
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
-### [Running the cloud migration tool](administration/migration-tool.md)
+### [Run the cloud migration tool](administration/migration-tool.md)
 ### [Manage the migration to the cloud](administration/migration-management.md)
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
 <!-- end migrate -->
+<!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
@@ -217,6 +217,7 @@
 ### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
+<!-- end telemetry -->
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
@@ -3480,7 +3481,7 @@
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
-#### [OData Query performance](odata-client-performance.md)
+#### [OData Query Performance](webservices/odata-client-performance.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
