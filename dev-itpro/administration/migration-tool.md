@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, migration
-ms.date: 12/17/2021
+ms.date: 12/22/2021
 ms.author: edupont
 
 ---
@@ -27,7 +27,8 @@ In the following sections, you're working in [!INCLUDE [prod_short](../includes/
 
 > [!TIP]
 > We recommend that you start the migration by running the assisted setup from a company other than the company that you are migrating data to. For example, sign into the demonstration company, CRONUS, and start the process there. This way, you can make sure that all users are logged out of the original company and the target company. This is especially important when you migrate from [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises current version because you can run the migration tool multiple times.
->
+
+> [!IMPORTANT]
 > [!INCLUDE [bc-cloud-migrate-prod](../includes/bc-cloud-migrate-prod.md)]
 
 ## The Set up Cloud Migration assisted setup guide
@@ -42,7 +43,7 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
 
     On this page, specify the on-premises solution that you want to replicate data from. All supported sources will appear in the list. If you don't see your product, navigate to the **Manage Extensions** page, and then verify that the intelligent cloud extension for your on-premises solution is installed.
 
-    To set up migration from earlier versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central earlier versions* as the product.
+    Specifically to set up migration from earlier versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], in the **Data Migration Setup** dialog, choose *Dynamics 365 Business Central earlier versions* as the product.
 
     > [!TIP]
     > Use the migration tool to migrate from the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] or supported earlier versions. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)] If your on-premises solution is a version that is older than the supported versions, including versions of [!INCLUDE [nav2018_md](../developer/includes/nav2018_md.md)] and older, then you must upgrade your on-premises solution. For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](../upgrade/upgrade-paths.md).  

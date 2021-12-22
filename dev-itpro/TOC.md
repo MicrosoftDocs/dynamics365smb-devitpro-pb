@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -182,15 +182,15 @@
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
-### [Running the cloud migration tool](administration/migration-tool.md)
+### [Run the cloud migration tool](administration/migration-tool.md)
 ### [Manage the migration to the cloud](administration/migration-management.md)
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
 <!-- end migrate -->
+<!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
@@ -217,6 +217,7 @@
 ### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
+<!-- end telemetry -->
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
@@ -3480,6 +3481,7 @@
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
+#### [OData Query Performance](webservices/odata-client-performance.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
@@ -3544,12 +3546,8 @@
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
-## Deprecated Tables
-### [Deprecated Tables](upgrade/deprecated-tables.md)
-### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated Features
+## Deprecated Features in the Application
 ### [Deprecated Features in the Base App](upgrade/deprecated-features-w1.md)  
-### [Deprecated Features in the Platform](upgrade/deprecated-features-platform.md)  
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -3567,6 +3565,14 @@
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
+## [Deprecated Features in the Platform](upgrade/deprecated-features-platform.md)  
+## Deprecated Tables
+### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
+## Deprecated Code
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
 <!--on-prem-->
 # Business Central on-premises
