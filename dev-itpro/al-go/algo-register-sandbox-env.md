@@ -21,6 +21,12 @@ ms.author: solsen
 1. Under **Environment secrets**, choose the **Add Secret** action. Create a secret called `AUTHCONTEXT`, and enter a COMPRESSED JSON construct with 3 values: TenantID (where the environment lives), ClientID, and ClientSecret (from the pre-requisites), such as:  
 ```json
 {"TenantID":"<TenantID>","ClientID":"<theClientID>","ClientSecret":"<theClientSecret>"}
+```  
+For example:
+```json
+...
 ```
-1. 
+1. Now, navigate to the **Actions** tab, select the **Publish To Environment** workflow and choose **Run workflow**. Enter `latest` in the **App version** field and the name of your environment or keep the * in the environment to receive the new version field, and then choose **Run workflow**.
+
+
 ## See also
