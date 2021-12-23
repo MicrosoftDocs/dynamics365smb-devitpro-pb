@@ -14,6 +14,13 @@ ms.author: solsen
 
 > *Prerequisites: A completed [Add a Test App](algo-add-test-app.md), an AAD App, and an online sandbox environment called `QA` with the setup for Service-to-Service as specified in [task 1](../administration/automation-apis-using-s2s-authentication.md#task-1-register-an-azure-ad-application-for-authentication-to-business-central) and [task 2](../administration/automation-apis-using-s2s-authentication.md#task-2-set-up-the-azure-ad-application-in-) in the [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md) topic completed. You will also need the `BcContainerHelper` PowerShell module installed on your computer.*
 
+> [!NOTE]  
+> Environments are only supported in public repositories or with GitHub Enterprise license. For more information, see [Using environments for deployment](/actions/deployment/targeting-different-environments/using-environments-for-deployment). We are considering adding a secondary option for listing environments.
 
-
+1. On www.github.com, go to your project, and on the **Settings** tab and in the left pane, choose **Environments**. Choose the **New Environment** button and specify the name of the environment you have created in your tenant, for example `QA` and then choose **Configure environment**.
+1. Under **Environment secrets**, choose the **Add Secret** action. Create a secret called `AUTHCONTEXT`, and enter a COMPRESSED JSON construct with 3 values: TenantID (where the environment lives), ClientID, and ClientSecret (from the pre-requisites), such as:  
+```json
+{"TenantID":"<TenantID>","ClientID":"<theClientID>","ClientSecret":"<theClientSecret>"}
+```
+1. 
 ## See also
