@@ -24,4 +24,5 @@ This workflow will at some point fail. If you inspect the build, you can see the
 
 ## See also
 
+[Get Started](algo-get-started.md)  
 [Register a Customer Sandbox Environment for Continuous Deployment using S2S Authentication](algo-register-sandbox-env.md)
