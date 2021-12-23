@@ -450,7 +450,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+    This step publishes the extensions you created in Task 4. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
 
 3. Restart the server instance.
 
@@ -652,23 +652,24 @@ Run the data upgrade on the extensions in the following order:
 3. Install the Microsoft Application extension
 4. Upgrade customization extensions, Microsoft, and third-party extensions.
 
-  > [!NOTE]
-  >
-  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
-  >
-  > - Install the QR Generator.
-  > - Upgrade the Tax Engine extension.
-  > - Upgrade the India Tax Base extension.
-  > - Upgrade the India GST extension.
-  > - Upgrade the India Gate Entry extension.
-  > - Upgrade the India TCS extension.
-  > - Upgrade the India TDS extension.
-  > - Upgrade the India Voucher Interface extension.
-  > - Upgrade the Fixed Asset Depreciation for India extension.
-  > - Install the India Reports extension.
-  > - Upgrade the India Data Migration.
+   > [!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
+   >
+   > - Install the QR Generator.
+   > - Upgrade the Tax Engine extension.
+   > - Upgrade the India Tax Base extension.
+   > - Upgrade the India GST extension.
+   > - Upgrade the India Gate Entry extension.
+   > - Upgrade the India TCS extension.
+   > - Upgrade the India TDS extension.
+   > - Upgrade the India Voucher Interface extension.
+   > - Upgrade the Fixed Asset Depreciation for India extension.
+   > - Install the India Reports extension.
+   > - Upgrade the India Data Migration.
 
    For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
+
 5. Install remaining customization extensions for which you didn't create and publish an empty version.
 
 ## Task 18: Upgrade control add-ins
