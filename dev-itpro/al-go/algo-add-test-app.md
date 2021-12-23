@@ -22,5 +22,6 @@ ms.author: solsen
 This workflow will at some point fail. If you inspect the build, you can see the details of the error.
 1. 
 
-
 ## See also
+
+[Register a Customer Sandbox Environment for Continuous Deployment using S2S Authentication](algo-register-sandbox-env.md)

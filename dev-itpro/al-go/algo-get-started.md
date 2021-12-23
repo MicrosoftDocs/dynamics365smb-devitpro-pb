@@ -48,3 +48,5 @@ Business Central will now start.
 
 ## See also
 
+[Add a Test App](algo-add-test-app.md)  
+[Register a Customer Sandbox Environment for Continuous Deployment using S2S Authentication](algo-register-sandbox.md)  
