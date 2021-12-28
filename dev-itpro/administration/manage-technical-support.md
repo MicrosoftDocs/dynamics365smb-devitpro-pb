@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/02/2021
+ms.date: 12/28/2021
 ms.author: edupont
 
 ---
@@ -153,7 +153,8 @@ Sometimes the tenant has run into a problem that the partner cannot resolve. In 
 
 Both internal and delegated administrators can access [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], and then, in the **Support** menu, choose the **New Support Request** button. This link signs you in to the Power Platform Admin Center. Here, you can launch the **New Support Request** guide that will help you identify potential solutions or workarounds based on how you fill in the various fields.  
 
-In the Power Platform Admin Center, both internal and delegated administrators can explore different solutions based on the keywords that they specify.  
+> [!TIP]
+> In the Power Platform Admin Center, use the **See solutions** button to find potential guidance or workarounds. Based on your search keywords, links to suggested content are shown on the **Solutions** tab.
 
 > [!NOTE]
 > The internal administrator cannot contact Microsoft directly. If you are an internal admin and suspect that something is wrong with your [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you must contact your partner for next steps.
@@ -164,6 +165,8 @@ As the delegated administrator, if you are logged into the [!INCLUDE [prodadminc
 
 > [!TIP]
 > Alternatively, you can use customer-specific URLs such as `https://admin.powerplatform.microsoft.com/account/login/[customer tenant ID]`.
+
+[!INCLUDE [admin-supportplan](../includes/admin-supportplan.md)]
 
 #### To start the process of submitting a new support request from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 
@@ -180,7 +183,9 @@ In the Power Platform Admin Center, you are automatically logged in with informa
 You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version numbers. For more information, see [View solutions or enter a support request through the new support center](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the Power Platform administration content.  
 
 > [!IMPORTANT]
-> Your company must be registered as a partner in order to submit a support request to Microsoft, and you must have the ASfP (Advanced Support for Partners) support plan. The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md). Your service account manager can get you more information about getting the ASfP, and, if you already have a support plan, they can get the contract information and access ID that you must specify when you submit a new support request on behalf of your customer.  
+> [!INCLUDE [admin-supportplan](../includes/admin-supportplan.md)]
+
+The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated Administrator Access to Business Central Online](../administration/delegated-admin.md).  
 
 Microsoft Support will keep you updated on the status of your support request. You can also see the status in the Power Platform Admin Center. For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).  
 
