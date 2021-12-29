@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -155,7 +155,6 @@
 ### [Licenses and entitlements](deployment/licensing.md)
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
-### [Manage technical support](administration/manage-technical-support.md)
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Recommend apps](administration/recommend-apps.md)
@@ -170,7 +169,7 @@
 <!--Potentially add RapidStart here?-->
 <!-- onboard customers-->
 ## Onboard your customers
-### [Trials and Sign-ups](deployment/customer-signup.md)
+### [Trials and sign-ups](deployment/customer-signup.md)
 <!-- ### Do cool demos -->
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
@@ -178,7 +177,12 @@
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Recommend Apps](administration/recommend-apps.md)  
+### [Recommend apps](administration/recommend-apps.md)
+<!-- support-->
+## Manage technical support
+### [Manage technical support overview](administration/manage-technical-support.md)
+### [Escalate support issues to Microsoft](administration/raise-support-case.md)
+### [Report customer outages](administration/report-outage.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
