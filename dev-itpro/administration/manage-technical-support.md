@@ -161,67 +161,22 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 
 ### <a name="submitsupportrequest"></a>Submitting support requests on behalf of your customer
 
-As the delegated administrator, if you are logged into the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you can use the **New Support Request** link in the **Support** menu to submit a support request on behalf of your customer.  
-
-> [!TIP]
-> Alternatively, you can use customer-specific URLs such as `https://admin.powerplatform.microsoft.com/account/login/[customer tenant ID]`.
-
 [!INCLUDE [admin-supportplan](../includes/admin-supportplan.md)]
+
+[!INCLUDE [admin-escalate](../includes/admin-escalate.md)]
+
+> [!NOTE]
+> Outages are frustrating but rare. If your customer reports that they cannot access [!INCLUDE [prod_short](../includes/prod_short.md)] at all, help them test their connection and other potential local problems. For more information, see the [Report Customer Outages](report-outage.md) section here, and also bookmark the article [How do I check my online service health?](/power-platform/admin/check-online-service-health) in the Power Platform administration content.  
 
 #### To start the process of submitting a new support request from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
-2. In the **Support** menu, choose **New Support Request**.
-
-    This opens a new browser tab so that you can submit the support request in the Power Platform Admin Center.
-
-In the Power Platform Admin Center, you are automatically logged in with information about the customer tenant that you work on behalf of. Create a new support request and fill in the fields as appropriate.  
-
-> [!TIP]
-> Use the **See solutions** button to find potential guidance or workarounds. Based on your search keywords, links to suggested content are shown on the **Solutions** tab.
-
-You can find most of the necessary information in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], including the tenant ID and the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] version numbers. For more information, see [View solutions or enter a support request through the new support center](/power-platform/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in the Power Platform administration content.  
-
-> [!IMPORTANT]
-> [!INCLUDE [admin-supportplan](../includes/admin-supportplan.md)]
-
-The support person can be a member of the **Helpdesk agent** group in the customer's Azure AD tenant or a global administrator. For more information, see [Delegated Administrator Access to Business Central Online](../administration/delegated-admin.md).  
-
-Microsoft Support will keep you updated on the status of your support request. You can also see the status in the Power Platform Admin Center. For more information, see [Power Platform Admin Center](/power-platform/admin/admin-documentation).  
+[!INCLUDE [admin-escalate-submitTAC](../includes/admin-escalate-submitTAC.md)]
 
 #### To start the process of submitting a new support request from the Partner Center
 
-You can also start the process from the Partner Center, where you can choose the customer you want to open a case on, and then follow the support request work flow. This will redirect the delegated administrator to the Power Platform admin center in the context of the customer's tenant.  
-
-However, you might need information from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which is why we recommend that route. For more information, see [Report problems on behalf of a customer](/partner-center/report-problems-on-behalf-of-a-customer) in the Partner Center content.
+[!INCLUDE [admin-escalate-submitPC](../includes/admin-escalate-submitPC.md)]
 
 <!-- TODO: How to manage your customers' support issues -->
-
-## Report customer outages
-
-When a customer has a situation where no users can sign in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you must take immediate action. Outages are frustrating but rare. Make sure that the users are not unable to sign in due to problems with their network connection, for example. For more information, see [How do I check my online service health?](/power-platform/admin/check-online-service-health) in the Power Platform administration content.  
-
-Internal and delegated administrators can report this outage to Microsoft by using the **Report Production Outage** action for the relevant production environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. This action creates a support ticket for Microsoft with all the information that is needed to begin steps to resolve the issue.  
-
-> [!NOTE]
-> This option is not available in sandbox environments.  
-
-### To report an outage
-
-1. On the **Environments** tab of the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], choose the relevant environment to open the environment details.
-2. In the action ribbon, choose **Support**, and then choose **Report Production Outage**.
-3. In the **Report Production Outage** pane, choose the outage type:
-
-    - Unable to sign in (all users)
-    - Cannot access API/Web Service
-
-4. Enter your name, email address, and phone number. This information will be included in the support ticket.  
-5. Choose **Next**.
-6. In the next pane, provide details about the outage, including which browsers users have tried to sign in with, any companies that you can sign into, and errors and correlation IDs. This information will be included in the support ticket.  
-7. Finally, add the date and time when the outage began. This information will also flow to the support ticket.  
-8. Choose the consent checkbox, and then choose **Report**.
-
-A support request ticket is then created, and you will see a dialog box with the ticket ID. You can then monitor progress in the **Reported Outages** section. From there, you can access the tickets in the Partner Center. For more information, see the [Microsoft Partner Center](/partner-center/) documentation.  
 
 ## See Also
 
