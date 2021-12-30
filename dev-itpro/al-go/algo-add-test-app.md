@@ -20,7 +20,8 @@ ms.author: solsen
 1. When the workflow has completed, navigate to the **Pull requests** tab, inspect the pull request, and then **Merge** the pull request.
 1. Now, go to the **Actions** tab and you will see that a **Merge pull request** CI workflow has been started.  
 This workflow will at some point fail. If you inspect the build, you can see the details of the error.
-1. 
+1. To fix the error, open Visuaul Studio Code, and pull changes from the server by using the sync button, open the `HelloWorld.Test.al` file and fix the test message.
+1. Now, stage, commit, and push the change. On www.github.com, in the **Actions** tab, you will see that your check-in caused another CI workflow to be kicked off.
 
 ## See also
 
