@@ -3,7 +3,7 @@ title: "Register a Customer Production Environment for Manual Deployment"
 description: ""
 author: freddyk
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/30/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
