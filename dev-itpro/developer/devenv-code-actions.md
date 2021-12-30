@@ -16,13 +16,13 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the opt
 
 In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions are available in the current version:
 
-- Multiple IF to CASE converting code action.
-- Spell check code action.  
-- Interface implementer.
-- Make method local.
-- Use parenthesis for method call.
-- Fix explicit `with` statements.
-- Fix implicit with statements.
+- Multiple IF to CASE converting code action
+- Spell check code action
+- Interface implementer
+- Make method local
+- Use parenthesis for method call
+- Fix explicit `with` statements
+- Fix implicit with statements
 
 ## To enable AL Code Actions
 
