@@ -12,4 +12,8 @@ ms.author: solsen
 
 # Update AL-Go System Files
 
+> *The prerequisite for this how to is that you have followed and completed the [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md) instructions.*
+
+
+
 ## See also

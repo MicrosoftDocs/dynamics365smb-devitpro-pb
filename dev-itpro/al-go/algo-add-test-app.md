@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Add a Test App
 
-> *The prerequisite for this how to is a completed [Get started](algo-get-started.md)*
+> *The prerequisite for this how to is that you have followed and completed the [Get started](algo-get-started.md) instructions*.
 
 1. On www.github.com, for your previously created solution, go to the **Actions** tab.
 1. In the left pane, select the **Create a new test app** workflow, and then choose the **Run workflow** button.
