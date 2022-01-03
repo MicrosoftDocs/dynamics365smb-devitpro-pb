@@ -24,5 +24,6 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 1. Open a browser window, log into www.github.com and navigate to **Settings** and then choose **Personal access tokens** in the left pane. Create a new personal access token; name it, set the expiration date, and check the workflow option in the list of scopes.
 1. Generate the token and copy it to the clipboard. **Note:** You will not be able to see the token again.
 1. On www.github.com, open **Settings** in your project and in the left pane select **Secrets**. Choose the **New repository secret** button and create a secret called `GHTOKENWORKFLOW` and paste the personal access token that you saved in the previous step into the **Value** field and then choose the **Add secret** button.
+1. On www.github.com, on the **Actions** tab in your project, select the **Update AL-Go system files** workflow and choose **Run workflow**. Leave the **Template Repository URL** blank and choose **Run workflow**.
 
 ## See also
