@@ -7,7 +7,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 01/03/2022
 ms.author: solsen
 ---
 
@@ -72,9 +72,9 @@ Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |netTaxAmount|decimal|The net tax amount is the tax amount calculated from net amount. Read-Only.|
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |shipmentDate|date|The date the item in the line is expected to ship.|
-|shippedQuantity|decimal|The quantity of items from the order already shipped.|
+|shippedQuantity|decimal|The quantity of items from the order already shipped. Read-Only.|
 |invoicedQuantity|decimal|The quantity of items from the sales order line that was invoiced.|
-|invoiceQuantity|decimal|The quantity of items from the sales order line to be invoiced.|
+|invoiceQuantity|decimal|The quantity of items from the sales order line to be invoiced. Read-Only.|
 |shipQuantity|decimal|The quantity of items from the order to be shipped.|
 |itemVariantId|GUID|The ID of the item variant in the sales order line.|
 
