@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -23,7 +23,7 @@ In the following, you can read about how submissions are handled and learn how t
 
 The extensions in your submission are validated for all the releases targeted by your submission.
 
-Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the examples in [Technical Validation Checklist](devenv-checklist-submission.md).
+Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the example in [Technical Validation Checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
 > [!Important]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
