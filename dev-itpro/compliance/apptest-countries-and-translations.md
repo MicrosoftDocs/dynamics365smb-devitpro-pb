@@ -133,7 +133,7 @@ This table gives an overview of supported languages and how application language
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
-|Greek (Greece)|gr-GR|Partner, Available on AppSource|
+|Greek (Greece)|el-GR|Partner, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
@@ -143,7 +143,7 @@ This table gives an overview of supported languages and how application language
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
 |Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|
-|Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
+|Norwegian, Bokmål (Norway)|nb-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
