@@ -22,6 +22,7 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 1. Now there is a difference in the files. AL-Go doesn’t support changes to the AL-Go system files and will warn if that happens. The CI/CD pipeline, which kicked off when pushing the change gives this warning.
 1. To update the AL-Go system files using the **Update AL-Go System Files** workflow, you need to provide a secret called `GHWORKFLOWTOKEN` that contains a Personal Access Token with permissions to modify workflows.
 1. Open a browser window, log into www.github.com and navigate to **Settings** and then choose **Personal access tokens** in the left pane. Create a new personal access token; name it, set the expiration date, and check the workflow option in the list of scopes.
-1. 
+1. Generate the token and copy it to the clipboard. **Note:** You will not be able to see the token again.
+1. On www.github.com, open **Settings** in your project and in the left pane select **Secrets**. Choose the **New repository secret** button and create a secret called `GHTOKENWORKFLOW` and paste the personal access token that you saved in the previous step into the **Value** field and then choose the **Add secret** button.
 
 ## See also
