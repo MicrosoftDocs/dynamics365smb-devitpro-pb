@@ -25,5 +25,8 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 1. Generate the token and copy it to the clipboard. **Note:** You will not be able to see the token again.
 1. On www.github.com, open **Settings** in your project and in the left pane select **Secrets**. Choose the **New repository secret** button and create a secret called `GHTOKENWORKFLOW` and paste the personal access token that you saved in the previous step into the **Value** field and then choose the **Add secret** button.
 1. On www.github.com, on the **Actions** tab in your project, select the **Update AL-Go system files** workflow and choose **Run workflow**. Leave the **Template Repository URL** blank and choose **Run workflow**.
+1. Inspect the pull request and confirm that it reverts your change to the `LocalDevEnv.ps1` file.
+
+By default, this workflow will apply any updates to the workflow files (in the .github\workflows folder) or system scripts (in the .AL-Go folder) from the template repository used to spin up the repository. If you want to change branch or template URL, you can specify the `templateUrl@branch` when you run the workflow.
 
 ## See also
