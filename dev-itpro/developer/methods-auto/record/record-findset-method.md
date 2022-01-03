@@ -3,7 +3,7 @@ title: "Record.FindSet([Boolean] [, Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/22/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -78,11 +78,10 @@ codeunit 50111 SetFilter
 
     begin
         SalesLine.SetFilter("Purch. Order Line No.", '<>0');
-        if SalesLine.FindSet then begin
+        if SalesLine.FindSet then
         repeat
             CopyLine(SalesLine);  
         until SalesLine.Next() = 0;  
-        end;  
     end;
     
 }
@@ -105,12 +104,11 @@ codeunit 50122 SetRange
     begin
         SalesLine.SetRange("Document Type", DocumentType);
         SalesLine.SetRange("Document No.", DocumentNo);
-        if SalesLine.FindSet(true, false) then begin
+        if SalesLine.FindSet(true, false) then
             repeat
                 SalesLine."Location Code" := GetNewLocation(SalesLine);
                 SalesLine.Modify;
             until SalesLine.Next = 0;
-        End;
     end;
 }
 ```
@@ -134,13 +132,12 @@ codeunit 50125 LoopAndUpdate
         SalesShptLine.SetCurrentKey("Order No.", "Order Line No.");
         SalesShptLine.SetRange("Order No.", SalesLine."Document No.");
         SalesShptLine.SetRange("Order Line No.", SalesLine."Line No.");
-        if SalesShptLine.FindSet(true, true) then begin
+        if SalesShptLine.FindSet(true, true) then
             repeat
                 SalesShptLine2 := SalesShptLine;
                 SalesShptLine2."Order Line No." := SalesShptLine."Order Line No." + 10000;
                 SalesShptLine2.Modify;
             until SalesShptLine.Next = 0;
-        END;
     end;
 
 }

@@ -1,9 +1,9 @@
 ---
-title: "CodeCop Rule AA0213"
+title: "CodeCop Warning AA0213"
 description: "Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0213
+# CodeCop Warning AA0213
 Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.
 
 ## Description
