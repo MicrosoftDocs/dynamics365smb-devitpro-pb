@@ -80,7 +80,29 @@ codeunit 50121 MarkedRecord
 This next example shows how to use the Mark method together with the MarkedOnly method, assuming that no records are marked initially.
 
 ```al
+codeunit 50121 MarkedOnlyRecord
+{
+    trigger OnRun()
+    var
+        Customer: Record Customer;
+        No1: Integer;
+        No2: Integer;
+        Text001: Text;
+        Text002: Text;
+    begin
+        Text001 := 'Number of records before MarkedOnly: %1\';
+        Text002 := 'Number of records after MarkedOnly: %2';
 
+        Customer.SetCurrentKey(Customer."No.");
+        Customer."No." := '10000';
+        Customer.Find('=');
+        Customer.Mark(true);
+        No1 := Customer.Count();
+        Customer.MarkedOnly(true);
+        No2 := Customer.Count();
+        Message(Text001 + Text002, No1, No2);
+    end;
+}
 ```
 
 ## See Also
