@@ -48,7 +48,7 @@ You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to act
 
 ## Example
 
-This example shows how to use the Mark method.
+This example shows how to use the Mark method, assuming that no records are marked initially. The example loops through the customer records and marks a specific record. The message dialog displays the records one by one with information about whether the record is marked or not.
 
 ```al
 codeunit 50121 MarkedRecord
