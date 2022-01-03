@@ -22,7 +22,7 @@ The 'application' property in the app.json file must be specified on apps target
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-The `application` property is used in order to compute the minimum release of [!INCLUDE [prod_short](includes/prod_short.md)] for which your extension will be validated and made available for.
+The `application` property is used in order to compute the minimum release of [!INCLUDE [prod_short](../includes/prod_short.md)] for which your extension will be validated and made available for.
 
 For more information about the computation of the minimum release targeted by an AppSource submission, see [Technical Validation Checklist](../devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
