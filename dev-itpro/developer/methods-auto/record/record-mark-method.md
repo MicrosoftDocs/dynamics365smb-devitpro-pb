@@ -46,6 +46,35 @@ Specifies if a record is marked.
 
 You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to activate a special filter where your view of the table includes only records marked by the **Mark (Record)** method.
 
+## Example
+
+This example shows how to use the Mark method.
+
+```al
+codeunit 50121 MarkedRecord
+{
+    trigger OnRun()
+    var
+        Customer: Record Customer;
+        Marked: Boolean;
+        Text000: Text;
+    begin
+        Text000 := 'Customer."No." %1, Marked?: %2';
+
+        Customer.SetCurrentKey("No.");
+        Customer."No." := '10000';
+        Customer.Find('=');
+        Customer.Mark(true); // Mark a record.  
+        Customer.Find('-'); // Find first record.  
+        repeat // Go through records  
+            Marked := Customer.Mark; // Test if marked.  
+            Message(Text000, Customer."No.", Marked);
+        until
+            Customer.Next = 0;
+    end;
+}
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
