@@ -46,7 +46,7 @@ Specifies if a record is marked.
 
 You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to activate a special filter where your view of the table includes only records marked by the **Mark (Record)** method.
 
-## Example
+## Example 1
 
 This example shows how to use the Mark method, assuming that no records are marked initially. The example loops through the customer records and marks a specific record. The message dialog displays the records one by one with information about whether the record is marked or not.
 
@@ -73,6 +73,14 @@ codeunit 50121 MarkedRecord
             Customer.Next = 0;
     end;
 }
+```
+
+## Example 2
+
+This next example shows how to use the Mark method together with the MarkedOnly method, assuming that no records are marked initially.
+
+```al
+
 ```
 
 ## See Also
