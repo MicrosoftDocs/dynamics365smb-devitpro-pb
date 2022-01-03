@@ -46,6 +46,8 @@ Specifies if a record is marked.
 
 You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to activate a special filter where your view of the table includes only records marked by the **Mark (Record)** method.
 
+The mark on a record is temporary, and disappears when the current session ends.
+
 ## Example 1
 
 This example shows how to use the Mark method, assuming that no records are marked initially. The example loops through the customer records and marks a specific record. The message dialog displays the records one by one with information about whether the record is marked or not.
