@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/08/2021
+ms.date: 01/03/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual

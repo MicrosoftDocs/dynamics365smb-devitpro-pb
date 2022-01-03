@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
