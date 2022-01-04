@@ -44,9 +44,9 @@ Specifies if a record is marked.
 
 ## Remarks
 
-You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to activate a special filter where your view of the table includes only records marked by the **Mark (Record)** method.
+The mark on a record is temporary, and disappears when the current session ends. The Mark method is valid for the specific record instance/variable, and not shared between all variables of the same record type in a session.
 
-The mark on a record is temporary, and disappears when the current session ends.
+You can use the [MarkedOnly (Record) Method](record-markedonly-method.md) to activate a special filter where your view of the table includes only records marked by the **Mark (Record)** method.
 
 ## Example 1
 
