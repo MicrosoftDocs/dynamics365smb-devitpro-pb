@@ -27,7 +27,7 @@ Find an overview of hotfixes in this [article]()
 
 ## Localization updates
 - [All countries that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
-- [New VAT Return submission for Norway](INSERT LINK)
+- New VAT Return submission for Norway
 - *Please note that [MX Carta de Porte 1.0](/dynamics365/business-central/localfunctionality/mexico/packing-slips-transfer-orders) was released with update 19.1*
 
 ## Release Plan
