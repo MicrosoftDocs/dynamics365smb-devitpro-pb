@@ -18,7 +18,7 @@ Would you like to know what has changed in update 19.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article]()
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5009178)
 
 ## Feature changes
 - [Use two-dimensional barcodes in reports (Business Central online)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
