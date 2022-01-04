@@ -1,9 +1,9 @@
 ---
-title: "Update 19.2 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
-description: Get an overview of new and changed capabilities in the 19.2 update of Business Central online, which is part of 2021 release wave 2.
+title: "Update 19.3 for Microsoft Dynamics 365 Business Central 2021 Release Wave 2"
+description: Get an overview of new and changed capabilities in the 19.3 update of Business Central online, which is part of 2021 release wave 2.
 ms.author: a-emniel
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 01/04/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,31 +12,29 @@ ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 19.2 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
+# Update 19.3 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
 
-Would you like to know what has changed in update 19.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 19.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5009178)
+Find an overview of hotfixes in this [article]()
 
 ## Feature changes
-- [Use two-dimensional barcodes in reports (Business Central online)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
-- [AL compiler diagnostic messages includes URLs](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/al-compiler-diagnostic-messages-includes-urls)
-- [Synchronize multiline text fields between Business Central and Dataverse (and Dynamics 365 Sales)](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features)
+- [XXXXX](XXXXX)
+
 
 ## Localization updates
-- [All countries that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
--  [MX Carta de Porte 2.0](/dynamics365/business-central/localfunctionality/mexico/packing-slips-transfer-orders)
-- New VAT Return submission for Norway
+- [XXXX](XXXX)
+
 
 ## Release Plan
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 1 (release from April 2021 through September 2021), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 19.2
+## Upgrade to 19.3
 
-Please note that new customers will automatically get the latest builds of Business Central (19.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (19.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
