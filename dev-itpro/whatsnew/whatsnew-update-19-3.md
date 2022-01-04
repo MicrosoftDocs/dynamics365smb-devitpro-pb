@@ -23,9 +23,18 @@ Find an overview of hotfixes in this [article]()
 ## Feature changes
 - [XXXXX](XXXXX)
 
-
 ## Localization updates
-- [XXXX](XXXX)
+
+| Country| Feature change |
+|-------------|--------------|
+|Norway | Possibility to setup 'VAT Code' in the VAT statement|
+|Norway | New VAT codes can be setup from the Wizard |
+|Norway | New entities related to the new VAT codes: VAT specification, VAT Note |
+|Norway | Store and download multiple submission and response requests | 
+|Norway | Handle VAT Registration No. properly |
+|Italy | Intrastat update |
+|XXX | Deprecate ASCII file format for the intrastate export|
+
 
 
 ## Release Plan
@@ -39,14 +48,8 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Upcoming Business Central Office Hours Calls**  
-Make sure to join the office hours calls 'Universal Code Initiative' on January 11 and 'How we secure your data in Business Central' on February 1. Note that these calls will be held in two different time zones; first call is at 08.00am-09.00am CET / 06.00pm-07.00 PM AEST and second call is at 5.00pm-6.00pm CET / 08.00am-09.00am PST. Register and stay tuned for upcoming calls: https://aka.ms/BCOfficeHours. Watch on-demand recordings: https://aka.ms/BCOfficeHoursRecordings. 
+Make sure to join the office hours calls 'Universal Code Initiative' on January 11 and 'How we secure your data in Business Central' on February 1. Note that both calls will be held in two different time zones; first call is at 08.00am-09.00am CET / 06.00pm-07.00 PM AEST and second call is at 5.00pm-6.00pm CET / 08.00am-09.00am PST. Register and stay tuned for upcoming calls: https://aka.ms/BCOfficeHours. Watch on-demand recordings: https://aka.ms/BCOfficeHoursRecordings. 
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
 Although change will happen in March 2022, we strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
-
-**Business Central Launch Event**  
-On October 18, we released the Business Central Launch Event - an online event with 15 sessions on what's new in Dynamics 365 Business Central 2021 release wave 2. The sessions are within the following four areas: Administration and Development, Service and Platform, Better with Microsoft 365 and Modern Client. Register and watch the 15 sessions now: [aka.ms/BCLE](https://aka.ms/BCLE).
-
-**Apps in AppSource**  
-We now have 2000+ Business Central apps in AppSource! Find all the apps here: [Business Central apps in AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=dynamics-365-business-central).
