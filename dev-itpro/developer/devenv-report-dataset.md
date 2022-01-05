@@ -91,13 +91,13 @@ dataset
 
     trigger OnAfterGetRecord()
     begin
-        IF NOT MyQuery.READ() THEN
-        CurrReport.BREAK;
+        if not MyQuery.Read() then
+            CurrReport.Break();
     end;
 }
 
 var 
-    MyQuery : Query "CustomerQuery";
+    MyQuery: Query "CustomerQuery";
 
 ```
 
