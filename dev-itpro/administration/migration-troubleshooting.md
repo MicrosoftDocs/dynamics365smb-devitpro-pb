@@ -182,7 +182,7 @@ If cloud migration has completed successfully, but pages in [!INCLUDE [prod_shor
 
     - Unpublish the relevant apps and sync the on-premises tenant to update the SQL Server database. For more information, see [Windows PowerShell Cmdlets for Business Central Version 19](/powershell/business-central/overview?view=businesscentral-ps-19&preserve-view=true).  
 
-    - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api.md#app-management) or AppSource.
+    - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api_app_management.md) or AppSource.
 
   - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. For more information, see the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  
 
