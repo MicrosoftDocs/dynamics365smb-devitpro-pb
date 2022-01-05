@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 09/28/2021
+ms.date: 01/05/2022
 ms.author: dmitrych
 ms.review: jswymer
 ---
@@ -130,7 +130,7 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
 > Database: online
 
-- When running the **Data Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps you've installed, the assisted setup will let you choose from three options:
+- When running the **Data Migration Setup** assisted setup, make sure to select the right product that you want to migrate from. Depending on which Cloud Migration apps you've installed, the assisted setup will let you choose from three options:
 
     |Option|When to use|
     |------|-----------|
@@ -145,6 +145,19 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
   - Determines which upgrade code will be executed.
 
     If that field is blank, the migration can't run.  
+
+## Company names
+
+The cloud migration process can become difficult if the names of the companies in [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] include special characters or trailing spaces, for example. To test that the company names are valid, run a query in the on-premises database such as the following:
+
+```sql
+SELECT *
+FROM Company
+
+Where ([Name] like '% ') or ([Name] like ' %' ) or ([Name] like '%' + Char(10) + '%') or ([Name ] like '%' + Char(13) + '%')
+```
+
+Simply change the company name, run the migration, and then, when migration is complete, change the company name in the target environment as appropriate.  
 
 ## Missing or corrupted data after cloud migration
 
