@@ -88,7 +88,7 @@ In the following, you can read about the pros and cons of the different performa
 This example illustrates how you can use the performance tuning process and telemetry to deal with a performance problem in a report from an AppSource extension.
 
 - Together with the tenant administrator/customer, you need to define "slow" and what the acceptable rendering time will be. 
-- Then, use telemetry to find data about time spent in the report: long running SQL queries (eventId RT0005) and report rendering time (eventId RT0006) are the main data sources for this. Telemetry for long running AL methods (eventId RT00180 might also be useful here. Now you have baseline data.
+- Then, use telemetry to find data about time spent in the report: long running SQL queries (eventId RT0005) and report rendering time (eventId RT0006) are the main data sources for this. Telemetry for long running AL methods (eventId RT00180) might also be useful here. Now you have baseline data.
 - Also, use telemetry on report rendering time (eventId RT0006) to find out if the report is running with data access intent ReadOnly. If not, configure it to do so. Some reports write data, so this is not always possible.
 - Do you see long running SQL queries for the report in telemetry (eventId RT0005)? If so, you can add appropriate indexes using a table extension.
 - After configuring data access intent and maybe having added indexes, measure rendering time and compare with the baseline. Also check if the new rendering time is good enough with respect to the acceptable rendering time that you defined together with the tenant administrator/customer. If the performance is still not good enough, you probably need to involve the extension publisher. 
