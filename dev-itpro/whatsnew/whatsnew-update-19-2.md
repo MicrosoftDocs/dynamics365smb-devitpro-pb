@@ -28,7 +28,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Localization updates
 - [All countries that use the Intrastat format have been updated to 2022 requirements](/dynamics365/business-central/finance-how-setup-report-intrastat)
 -  [MX Carta de Porte 2.0](/dynamics365/business-central/localfunctionality/mexico/packing-slips-transfer-orders)
-- New VAT Return submission for Norway
+- [New VAT Return submission for Norway](/dynamics365/business-central/localfunctionality/norway/norwegian-vat-reporting)
 
 ## Release Plan
 
