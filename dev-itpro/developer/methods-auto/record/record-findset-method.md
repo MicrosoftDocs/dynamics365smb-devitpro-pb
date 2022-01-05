@@ -3,7 +3,7 @@ title: "Record.FindSet([Boolean] [, Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/22/2021
+ms.date: 01/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,9 +64,13 @@ This method is designed to optimize finding and updating sets. If you set any or
 
 This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
 
+## Examples
+
+The following examples are meant for illustration purposes of the usage of the `FindSet` method only and are not meant to illustrate best practices.
+
 ## Example 1
 
-This example shows how to use the `Findset` method to loop through a set without updating it, but running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
+This example shows how to use the `FindSet` method to loop through a set without updating it, but running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
 
 ```al
 procedure Example_1()
