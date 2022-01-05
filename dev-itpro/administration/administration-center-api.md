@@ -38,7 +38,7 @@ Sign in to the [Azure portal](https://portal.azure.com) to register your client 
 4. Choose a **Redirect URI**. If it's a **Native** app, you can choose for example: **BusinessCentralWebServiceClient://auth**. If it's a **Web app/API** app, set the value to the actual URL of the web application.
 5. During the registration of the app, make sure to go to **Settings**, and then under **API ACCESS**, choose **Required permissions**. Choose **Add**, and then under **Add API Access**, choose **Select an API** and search for the **Dynamics 365 Business Central** option. Choose **Dynamics 365 Business Central**, select **Delegated permissions**, and then choose the **Done** button.  
     > [!NOTE]  
-    > If **Dynamics 365** doesn't show up in search, it's because the tenant doesn't have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for Dynamics 365 Business Central with a user from the directory.
+    > If **Dynamics 365 Business Central** doesn't show up in search, it's because the tenant doesn't have any knowledge of Dynamics 365 Business Central. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for Dynamics 365 Business Central with a user from the directory.
 6. Make a note of both the **Application ID** and the **Redirect URI**. They'll be needed later.
 
 ## Getting an access token
