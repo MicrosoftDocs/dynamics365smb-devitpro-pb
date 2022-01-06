@@ -27,13 +27,9 @@ Find an overview of hotfixes in this [article]()
 
 | Country| Feature change |
 |-------------|--------------|
-|Norway | Possibility to setup 'VAT Code' in the VAT statement|
-|Norway | New VAT codes can be setup from the Wizard |
-|Norway | New entities related to the new VAT codes: VAT specification, VAT Note |
-|Norway | Store and download multiple submission and response requests | 
-|Norway | Handle VAT Registration No. properly |
-|Italy | Intrastat update |
-|XXX | Deprecate ASCII file format for the intrastate export|
+|W1 | Intrastat update |
+|Norway | Update for the Electronic VAT return feature|
+|Germany | Deprecate ASCII file format for the intrastat export|
 
 
 
@@ -53,3 +49,6 @@ Make sure to join the office hours calls 'Universal Code Initiative' on January 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
 Although change will happen in March 2022, we strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
+
+**Join Directions NA on April 3-6, 2022**  
+Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536).   
