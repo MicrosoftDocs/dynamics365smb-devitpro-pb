@@ -132,12 +132,13 @@ Make sure to have the following prerequisites installed to be able to follow the
     > [!NOTE]  
     > Use `"dependencyPublishingOption": "Ignore"` in the `launch.json` file to only publish this extension. For more information, see [JSON Files](devenv-json-files.md).
 
-15. Import a license with rights to publish the extension. For example:  
+14. Import a license with rights to publish the extension. For example:
+
     ```
-    Import-NAVServerLicense -ServerInstance BC170 -LicenseFile "C:\Users\mylicense.flf"
+    Import-NAVServerLicense -ServerInstance BC -LicenseFile "C:\Users\mylicense.BCLicense"
     ```
 
-16. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
+15. Press **Ctrl+F5** to publish the modified Base Application as an extension from Visual Studio Code.
 
 The Base Application is now published with the small customization of bolding the text in the **Name** field on the **Customer Card** page.
 

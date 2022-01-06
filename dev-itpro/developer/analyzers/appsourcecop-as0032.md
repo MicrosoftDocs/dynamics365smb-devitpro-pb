@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0032"
+title: "AppSourceCop Error AS0032"
 description: "Controls that have been published must not be deleted, because it will break dependent extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 01/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,8 +14,8 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0032
-Controls that have been published must not be deleted/
+# AppSourceCop Error AS0032
+Controls that have been published must not be deleted.
 
 ## Description
 Controls that have been published must not be deleted, because it will break dependent extensions.
