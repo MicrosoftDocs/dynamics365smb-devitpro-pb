@@ -94,21 +94,20 @@ procedure Example_1()
 This example shows how to use the `FindSet` method function to loop through a set and update a field that is *not within* the current key.
 
 ```al
-procedure Example_2()
+    procedure Example_2()
     var
         Customer: Record Customer;
-        SalesLine: Record "Sales Line";
+        SalesHeader: Record "Sales Header";
     begin
         Customer.FindFirst();
-        SalesLine.SetRange("Sell-to Customer No.", Customer."No.");
-        SalesLine.SetFilter("Bill-to Customer No.", '<>%1', Customer."No.");
-        if Salesline.FindSet(true, false) then
+        SalesHeader.SetRange("Sell-to Customer No.", Customer."No.");
+        SalesHeader.SetFilter("Bill-to Customer No.", '<>%1', Customer."No.");
+        if SalesHeader.findset(true, false) then
             repeat
-                SalesLine."Bill-to Customer No." := Customer."No.";
-                SalesLine.Modify();
-            until SalesLine.Next() = 0;
+                SalesHeader."Ship-to contact" := SalesHeader."Bill-to Contact";
+                SalesHeader.Modify();
+            until SalesHeader.Next() = 0;
     end;
-
 ```
 
 ## Example 3
