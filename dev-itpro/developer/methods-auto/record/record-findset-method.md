@@ -73,7 +73,7 @@ The following examples are meant for illustration purposes of the usage of the `
 This example shows how to use the `FindSet` method to loop through a set without updating it, but running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
 
 ```al
-procedure Example_1()
+    procedure Example_1()
     var
         CompanyInformation: Record "Company Information";
         Customer: Record Customer;
@@ -115,7 +115,7 @@ This example shows how to use the `FindSet` method function to loop through a se
 This example shows how to use the `FindSet` method to loop through a set and update a field that is *within* the current key.
 
 ```al
-procedure Example_3(SalesLine: Record "Sales Line")
+    procedure Example_3(SalesLine: Record "Sales Line")
     var
         SalesShptLine: Record "Sales Shipment Line";
         SalesShptLine2: Record "Sales Shipment Line";
