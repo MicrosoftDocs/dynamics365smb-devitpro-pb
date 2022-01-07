@@ -4,7 +4,7 @@ description: Learn how to get started developing a Connect app
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,8 @@ When you have your tenant, you can sign into the UI to play with the product, as
     - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example `https://api.businesscentral.dynamics.com/v2.0/production/cronus.com/api/v2.0`.  
         > [!IMPORTANT]  
         > When going into production, you should use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint `https://api.businesscentral.dynamics.com/v2.0/production/api/v2.0`. For exploring and initial development, you can use basic authentication.
+        > [!IMPORTANT]  
+        > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. For more information, see [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#accesskeys).
 
 For constructing the URL to the environment, the path needs to contain the environment name. To get all environments for the tenant call `GET https://api.businesscentral.dynamics.com/environments/v2.0/`. That will return the name for all environments in the tenant. OAuth required for this endpoint. [See Exploring the APIs with Postman and AAD authentication below](#exploring-the-apis-with-postman-and-aad-authentication).
 

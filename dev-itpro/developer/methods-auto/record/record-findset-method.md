@@ -3,7 +3,7 @@ title: "Record.FindSet([Boolean] [, Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/22/2021
+ms.date: 01/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,70 +64,61 @@ This method is designed to optimize finding and updating sets. If you set any or
 
 This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
 
+## Examples
+
+The following examples are meant for illustration purposes of the usage of the `FindSet` method only and are not meant to illustrate best practices.
+
 ## Example 1
 
-This example shows how to use the `Findset` method to loop through a set without updating it. This example requires a `CopyLine` method, which is not included in this example:
+This example shows how to use the `FindSet` method to loop through a set without updating it, but running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
 
 ```al
-
-codeunit 50111 SetFilter
-{
-    trigger OnRun()
+    procedure Example_1()
     var
-        SalesLine: Record "Sales Line";
-
+        CompanyInformation: Record "Company Information";
+        Customer: Record Customer;
     begin
-        SalesLine.SetFilter("Purch. Order Line No.", '<>0');
-        if SalesLine.FindSet then
-        repeat
-            CopyLine(SalesLine);  
-        until SalesLine.Next() = 0;  
+        CompanyInformation.Get();
+        Customer.SetFilter("Country/Region Code", '<>%1', CompanyInformation."Country/Region Code");
+        if Customer.FindSet() then
+            repeat
+                Customer.VATRegistrationValidation();
+            until Customer.Next() = 0;
     end;
-    
-}
+
+
 ```
 
 ## Example 2
 
-This example shows how to use the `FindSet` method function to loop through a set and update a field that is not within the current key. This example requires a `GetNewLocation` method, which is not included in the example:
+This example shows how to use the `FindSet` method to loop through a set and update a field that is *not within* the current key.
 
 ```al
-codeunit 50122 SetRange
-{
-    trigger OnRun()
-
+    procedure Example_2()
     var
-        SalesLine: Record "Sales Line";
-        DocumentType: Option;
-        DocumentNo: Code[200];
-
+        Customer: Record Customer;
+        SalesHeader: Record "Sales Header";
     begin
-        SalesLine.SetRange("Document Type", DocumentType);
-        SalesLine.SetRange("Document No.", DocumentNo);
-        if SalesLine.FindSet(true, false) then
+        Customer.FindFirst();
+        SalesHeader.SetRange("Sell-to Customer No.", Customer."No.");
+        SalesHeader.SetFilter("Bill-to Customer No.", '<>%1', Customer."No.");
+        if SalesHeader.FindSet(true, false) then
             repeat
-                SalesLine."Location Code" := GetNewLocation(SalesLine);
-                SalesLine.Modify;
-            until SalesLine.Next = 0;
+                SalesHeader."Ship-to contact" := SalesHeader."Bill-to Contact";
+                SalesHeader.Modify();
+            until SalesHeader.Next() = 0;
     end;
-}
 ```
 
 ## Example 3
 
-This example shows how to use the `FindSet` method to loop through a set and update a field that is within the current key.
+This example shows how to use the `FindSet` method to loop through a set and update a field that is *within* the current key.
 
 ```al
-
-codeunit 50125 LoopAndUpdate
-{
-    trigger OnRun()
-
+    procedure Example_3(SalesLine: Record "Sales Line")
     var
         SalesShptLine: Record "Sales Shipment Line";
         SalesShptLine2: Record "Sales Shipment Line";
-        SalesLine: Record "Sales Line";
-
     begin
         SalesShptLine.SetCurrentKey("Order No.", "Order Line No.");
         SalesShptLine.SetRange("Order No.", SalesLine."Document No.");
@@ -135,12 +126,11 @@ codeunit 50125 LoopAndUpdate
         if SalesShptLine.FindSet(true, true) then
             repeat
                 SalesShptLine2 := SalesShptLine;
-                SalesShptLine2."Order Line No." := SalesShptLine."Order Line No." + 10000;
-                SalesShptLine2.Modify;
+                SalesShptLine2."Order No." := '';
+                SalesShptLine2."Order Line No." := 0;
+                SalesShptLine2.Modify();
             until SalesShptLine.Next = 0;
     end;
-
-}
 
 ```
 
