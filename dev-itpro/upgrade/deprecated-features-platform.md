@@ -44,6 +44,14 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Removed | With releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database. This has changed with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] v.18.0. With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2022 release wave 1, the support for defining permissions and entitlements as data in the application database will be removed. For more information, see [Entitlements and Permissions Overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
 
+### <a name="deprecate legacy v1 endpoints"></a>Deprecate legacy V1 endpoints for Power Automate, Power Apps and Logic Apps in favour of newer technology  
+The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being **replaced** later in 2022 and as a consequence we encourage everyone to switch to the most up-to-date V3 endpoints.
+
+|Moved, Removed, or Replaced? |Why?|
+|---------|---------|
+|Replaced | Introduced back in 2018 and replaced with new endpoints several releases ago the legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being finally discontinued. Since more than a year ago actions based on these endpoints are not exposed in the Power Automate or Power Apps UI in any form. Partners are also educated and encouraged to use actions based on current V3 endpoints, so in 2022 we will be completely removing access to V1 endpoints in our connector. Any partners and customers who had in the past created a flow or app based on these olde endpoints and have not moved to the new ones needs to update their Power Automate flows or Power Apps now and switch to V3 actions. |
+
+
 ## Changes in 2021 release wave 2
 
 ### Business Central app for Windows
