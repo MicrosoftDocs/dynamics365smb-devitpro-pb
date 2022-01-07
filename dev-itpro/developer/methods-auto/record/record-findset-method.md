@@ -102,7 +102,7 @@ This example shows how to use the `FindSet` method function to loop through a se
         Customer.FindFirst();
         SalesHeader.SetRange("Sell-to Customer No.", Customer."No.");
         SalesHeader.SetFilter("Bill-to Customer No.", '<>%1', Customer."No.");
-        if SalesHeader.findset(true, false) then
+        if SalesHeader.FindSet(true, false) then
             repeat
                 SalesHeader."Ship-to contact" := SalesHeader."Bill-to Contact";
                 SalesHeader.Modify();
