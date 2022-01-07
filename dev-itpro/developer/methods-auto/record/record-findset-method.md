@@ -91,7 +91,7 @@ This example shows how to use the `FindSet` method to loop through a set without
 
 ## Example 2
 
-This example shows how to use the `FindSet` method function to loop through a set and update a field that is *not within* the current key.
+This example shows how to use the `FindSet` method to loop through a set and update a field that is *not within* the current key.
 
 ```al
     procedure Example_2()
