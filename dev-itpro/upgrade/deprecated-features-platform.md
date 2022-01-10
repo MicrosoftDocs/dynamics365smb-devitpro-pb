@@ -45,7 +45,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed | With releases of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] prior to 2021 release wave 1 (v.18.0), System and Extension permissions and entitlements were defined as data in the application database. This has changed with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] v.18.0. With [!INCLUDE [prod_short](../developer/includes/prod_short.md)] 2022 release wave 1, the support for defining permissions and entitlements as data in the application database will be removed. For more information, see [Entitlements and Permissions Overview](../developer/devenv-entitlements-and-permissionsets-overview.md).|
 
 ### <a name="deprecate legacy v1 endpoints"></a>Deprecate legacy V1 endpoints for Power Automate, Power Apps and Logic Apps in favour of newer technology  
-The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being **replaced** later in 2022 and as a consequence we encourage everyone to switch to the most up-to-date V3 endpoints.
+The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being **replaced** later in Business Central online in 2022 and as a consequence we encourage everyone to switch to the most up-to-date V3 endpoints.
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
