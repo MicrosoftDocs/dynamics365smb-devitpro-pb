@@ -453,8 +453,8 @@ For more information, see [API Query Type](devenv-api-querytype.md)
 
 ## See Also
 [Getting Started with AL](../developer/devenv-get-started.md)  
-[API Page Type](devenv-api-pagetype.md)
-[API Query Type](devenv-api-querytype.md)
+[API Page Type](devenv-api-pagetype.md)   
+[API Query Type](devenv-api-querytype.md)   
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  
 [APIVersion Property](properties/devenv-apiversion-page-property.md)  
