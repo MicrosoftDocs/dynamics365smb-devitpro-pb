@@ -1,13 +1,15 @@
 ---
-title: "Extending Document Sharing and OneDrive for Business"
+title: Extending Document Sharing and OneDrive for Business
+description: Learn how the document sharing capability is used with OneDrive for Business, and how you can extend it.
 ms.custom: na
-ms.date: 10/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
+ms.author: jswymer
+ms.date: 10/01/2021
 ---
 # Extending Document Sharing and OneDrive for Business Integration
 
@@ -58,7 +60,7 @@ ALAppExtensions repo on GitHub.
 To support integration with OneDrive for Business, the base application uses the document sharing module of the system application. Keep in mind that OneDrive itself is built on top of the SharePoint file platform. Integration with OneDrive is made available through the SharePoint service on Microsoft Azure.
 
 > [!NOTE]
-> With Business Central online the connection to the SharePoint service is done automatically. With on-premises, you have to set it up manually. For more information, see [Configuring Business Central On-premises for OneDrive Integration](https://docs.microsoft.com/en-us/dynamics365/business-central/admin-onedrive-integration#configuring-business-central-on-premises).
+> With Business Central online the connection to the SharePoint service is done automatically. With on-premises, you have to set it up manually. For more information, see [Configuring Business Central On-premises for OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration#configuring-business-central-on-premises).
 
 The core to the base application functionality for OneDrive integration is codeunit **9510 Document Service Management**. This codeunit provides functions for storing documents to OneDrive through the SharePoint service. Some points of interest are described below.
 
