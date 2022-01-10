@@ -55,7 +55,11 @@ The property setting is checked during validation. Validation occurs only if the
 > [!NOTE]  
 > When using `CurrPage.Editable`, the **Editable** property also reflects the page mode that the page was opened in. This applies to Edit, Create, and Delete modes, but not to View mode. If the page is editable, then `CurrPage.Editable` will return **false**.  
 
-On pages, you use the **Editable** property for group, part, field, and action controls. You can make them editable or non-editable either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as "Balance Due (LCY)" > "Credit Limit (LCY)" for a page showing the Customer table.
+On pages, you use the **Editable** property for group, part, field, and action controls. You can make them editable or non-editable either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression. For a page showing the Customer table, an example could be:
+
+```al
+Editable = "Balance Due (LCY)" > "Credit Limit (LCY)"
+```
 
 > [!CAUTION]  
 > Do not use `CurrPage.Editable` to prevent users from deleting entries. We recommend that you use permissions to control which users can delete data.  
