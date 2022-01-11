@@ -38,7 +38,8 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is now allowed. The default value of `allowDebugging` is `false`. The **AL: Go!** template sets `allowDebugging` to `true`.
 
-For a more refined setting, you can specify the `NonDebuggable` attribute on methods and variables. Regardless of the resource exposure policy setting, methods and variables marked with the `[NonDebuggable]` attribute, will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+> [!NOTE]  
+> Unless you have specified the `NonDebuggable` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into these. If you, however, have marked the methods and variables marked with the `[NonDebuggable]` attribute, these will remain non-debuggable regardless of the resource exposure policy setting. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 If you want to allow debugging into your extension to view the source code, the `allowDebugging` property in the `app.json` file must be set to `true`. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to `true` in the `app.json` file for extension A as shown in the example below. By adding this setting, you *enable debugging* into an extension to view the source code and variables when that extension is set as a dependency.
 
