@@ -52,7 +52,7 @@ If you want to allow debugging into your extension to view the source code, the 
 
 #### The [NonDebuggable] attribute
 
-Unless you have specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables marked with the `[NonDebuggable]` attribute, these will remain non-debuggable regardless of the resource exposure policy setting. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+Unless you have specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables marked with the `[NonDebuggable]` attribute, these will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 
 #### When should I set `allowDebugging` to `true`?
