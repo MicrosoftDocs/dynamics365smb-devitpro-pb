@@ -9,7 +9,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 01/11/2022
 ms.author: solsen
 ---
 
@@ -44,6 +44,37 @@ If successful, this method returns ```201 Created``` response code and a **item*
 You will see two links in the response, `pictureContent@odata.mediaEditLink` and `pictureContent@odata.mediaReadLink`. Use these by making a `GET` request to download the picture, or making a `PATCH` request to upload a new picture.
 
 `Content-Type` in the request header must be `application/octet-stream` and the request body should be the image itself in binary format.
+
+On a local instance, using PowerShell you can then do as in the following example:
+
+```
+function Upload-File
+(
+[string] $Etag = '*',
+[string] $Url,
+[string] $SourceFilePath
+)
+
+{
+$headers = @{"If-Match"=$Etag}
+
+#Win auth
+#Invoke-RestMethod -Uri $Url -Method Patch -InFile $SourceFilePath -Headers $headers -ContentType "application/octet-stream" -UseDefaultCredentials
+
+#NavUserPwd
+$Credentials = Get-Credential
+Invoke-RestMethod -Uri $Url -Method Patch -InFile $SourceFilePath -Headers $headers -ContentType "application/octet-stream" -Credential $Credentials
+
+}
+```
+
+Then run the function as follows:
+
+```
+$MyPic = "C:\Pictures\MyDog.png"
+$ItemUrl = 'My-PC:19048/.../pictureContent'
+Upload-File -Url $ItemUrl -SourceFilePath $MyPic
+```
 
 ## Example
 
