@@ -36,7 +36,14 @@ POST businesscentralPrefix/companies({companyId})/items({itemId})/picture
 In the request body, supply a JSON representation of **items** object.
 
 ## Response
+
 If successful, this method returns ```201 Created``` response code and a **item** object in the response body.
+
+## Remarks
+
+You will see two links in the response, `pictureContent@odata.mediaEditLink` and `pictureContent@odata.mediaReadLink`. Use these by making a `GET` request to download the picture, or making a `PATCH` request to upload a new picture.
+
+`Content-Type` in the request header must be `application/octet-stream` and the request body should be the image itself in binary format.
 
 ## Example
 
@@ -55,11 +62,8 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({item
 ```json
 
 ```
+
 **Response**
-
-```json
-
-```
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
