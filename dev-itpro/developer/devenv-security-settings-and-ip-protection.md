@@ -47,6 +47,10 @@ If you want to allow debugging into your extension to view the source code, the 
 `"resourceExposurePolicy": {"allowDebugging": true}`
 ```
 
+> [!NOTE]  
+> `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to `false` can still be accessed and copied using [Designer](devenv-inclient-designer.md).
+
+
 #### When can code be viewed even though the `allowDebugging` flag is set to `false`
 
 There are a few cases where code can be debugged into despite the `allowDebugging` flag has been set to `false`. These are:
@@ -54,10 +58,6 @@ There are a few cases where code can be debugged into despite the `allowDebuggin
 - Even though `allowDebugging` is set to `false`, you will still be able to view that code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource.
 - Custom external tools for AL might get access to the DAL information exposed by the debugger by listening to debugger events triggered by Visual Studio Code.
  
-
-> [!NOTE]  
-> `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to `false` can still be accessed and copied using [Designer](devenv-inclient-designer.md).
-
 ### allowDownloadingSource
 
 When this is set to `true` in the `app.json` file of extension A, the source code and any media files of extension A can be downloaded, for example, from the **Download Source** option in the **Extension Management** page in [!INCLUDE[prod_short](includes/prod_short.md)]. Extension A can be a PTE or a DEV extension. The default value of `allowDownloadingSource` is `false`.
