@@ -64,7 +64,7 @@ The default value of the `allowDebugging` flag is `false`. It is recommended tha
 
 There are a few cases where code can be debugged into despite the `allowDebugging` flag has been set to `false`. These are:
 
-- Even though `allowDebugging` is set to `false`, you will still be able to view that code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource.
+- Someone will still be able to view your code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource.
 - Custom external tools for AL might get access to the DAL information exposed by the debugger by listening to debugger events triggered by Visual Studio Code.
  
 ### allowDownloadingSource
