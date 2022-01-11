@@ -36,7 +36,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is now allowed. The default value of `allowDebugging` is `false`. The **AL: Go!** template sets `allowDebugging` to `true`.
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is not allowed. The default value of `allowDebugging` is `false`. The **AL: Go!** template sets `allowDebugging` to `true`.
 
 > [!NOTE]  
 > Unless you have specified the `NonDebuggable` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into these. If you, however, have marked the methods and variables marked with the `[NonDebuggable]` attribute, these will remain non-debuggable regardless of the resource exposure policy setting. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
@@ -49,6 +49,9 @@ If you want to allow debugging into your extension to view the source code, the 
 
 > [!IMPORTANT]  
 > Even though `allowDebugging` is set to `false`, you will still be able to view that code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource.
+
+> [!IMPORTANT]  
+> Be aware that any custom external tools for AL might get access to the DAL information exposed by the debugger by listening to debugger events triggered by Visual Studio Code.
 
 > [!NOTE]  
 > `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to `false` can still be accessed and copied using [Designer](devenv-inclient-designer.md).
