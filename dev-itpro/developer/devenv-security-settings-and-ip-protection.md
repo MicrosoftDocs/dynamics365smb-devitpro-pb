@@ -36,10 +36,10 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 ### allowDebugging
 
-To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is not allowed. The default value of `allowDebugging` is `false`. Note that the **AL: Go!** template sets `allowDebugging` to `true`.
+To allow debugging into your extension, when the extension is taken as a dependency, you must set the `allowDebugging` flag, otherwise debugging is not allowed. The default value of `allowDebugging` is `false`. 
 
 > [!NOTE]  
-> Unless you have specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into these. If you, however, have marked the methods and variables marked with the `[NonDebuggable]` attribute, these will remain non-debuggable regardless of the resource exposure policy setting. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+> The **AL: Go!** template sets `allowDebugging` to `true`.
 
 If you want to allow debugging into your extension to view the source code, the `allowDebugging` property in the `app.json` file must be set to `true`. For example, if a developer develops extension A and he or someone else on the team develops extension B, and B depends on A, then debugging B will only step into the code for A if a method from A is called and if the `allowDebugging` flag is set to `true` in the `app.json` file for extension A as shown in the example below. By adding this setting, you *enable debugging* into an extension to view the source code and variables when that extension is set as a dependency.
 
@@ -50,8 +50,17 @@ If you want to allow debugging into your extension to view the source code, the 
 > [!NOTE]  
 > `allowDebugging` does not apply to [Profiles](devenv-profile-object.md), [Page Customizations](devenv-page-customization-object.md) and [Views](devenv-views.md), because these objects cannot define any custom logic in procedures or triggers. The code for Profiles, Page Customizations, and Views defined in an extension with `allowDebugging` set to `false` can still be accessed and copied using [Designer](devenv-inclient-designer.md).
 
+#### NonDebuggable attribute
 
-#### When can code be viewed even though the `allowDebugging` flag is set to `false`
+Unless you have specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables marked with the `[NonDebuggable]` attribute, these will remain non-debuggable regardless of the resource exposure policy setting. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+
+
+#### When should I set `allowDebugging` to `true`?
+
+The default value of the `allowDebugging` flag is `false`. It is recommended that you only set this flag to `true` if you trust who is extending your extension. If `allowDebugging` is set to `true` anyone who extends your code has access to debug into it. If you want to allow only some to have access to your code, you can override the resource policy. For more information, see [Overriding the resource policy](devenv-security-settings-and-ip-protection.md#overriding-the-resource-policy) in this topic.
+
+
+#### When can code be viewed even though the `allowDebugging` flag is set to `false`?
 
 There are a few cases where code can be debugged into despite the `allowDebugging` flag has been set to `false`. These are:
 
