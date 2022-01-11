@@ -68,7 +68,7 @@ Invoke-RestMethod -Uri $Url -Method Patch -InFile $SourceFilePath -Headers $head
 }
 ```
 
-Then run the function as follows:
+And then run the function as follows:
 
 ```
 $MyPic = "C:\Pictures\MyDog.png"
@@ -88,19 +88,10 @@ Here is an example of a request.
 POST https://{businesscentralPrefix}/api/v2.0/companies({companyId})/items({itemId})/picture
 ```
 
-**Request body**
-
-```json
-
-```
-
-**Response**
-
 ## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
 
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 [Item](../resources/dynamics_item.md)  
 [Get item defaultDimensions](dynamics_item_get_defaultdimensions.md)  
 [Update item defaultDimensions](dynamics_item_update_defaultdimensions.md)  
 [Delete item defaultDimensions](dynamics_item_delete_defaultdimensions.md)  
-
