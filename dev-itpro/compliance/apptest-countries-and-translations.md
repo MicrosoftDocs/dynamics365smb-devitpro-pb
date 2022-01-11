@@ -53,7 +53,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
 |India|Microsoft|Available|IN|Central India|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
-|Japan|Partner|Available|JP|Southeast Asia, Singapore|
+|Japan|Partner|Available|JP|Japan East, Japan|
 |Kenya|Partner|Available|KE|South Africa North|
 |Latvia|Partner|Available|LV|North Europe, Ireland|
 |Lebanon|Partner|Available|LB|UAE North|
@@ -82,7 +82,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Slovakia|Partner|Planned|SK|West Eeurope, Netherlands|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
 |South Africa|Partner|Available|ZA|South Africa North|
-|South Korea|Partner|Available|KR|Southeast Asia, Singapore|
+|South Korea|Partner|Available|KR|Korea Central, Korea|
 |Spain|Microsoft|Available|ES|West Europe, Netherlands|
 |Sri Lanka|Partner|Available|LK|Southeast Asia, Singapore|
 |Sweden|Microsoft|Available|SE|North Europe, Ireland|
