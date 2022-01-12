@@ -354,6 +354,7 @@
 #### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
 #### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 #### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
+#### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 #### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
