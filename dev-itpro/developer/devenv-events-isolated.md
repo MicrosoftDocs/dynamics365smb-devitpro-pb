@@ -40,7 +40,7 @@ The reason for this behavior is that these operations require that all operation
 
 ## How to define an isolated event
 
-The [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) include the `Isolated` boolean argument, for example:
+The [BusinessEvent](attributes/devenv-businessevent-attribute.md), [IntegrationEvent](attributes/devenv-integrationevent-attribute.md), and [InternalEvent](attributes/devenv-internalevent-attribute.md) attributes include the `Isolated` boolean argument, for example:
 
 ```al
 [InternalEvent(IncludeSender: Boolean, Isolated: Boolean)]
