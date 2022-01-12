@@ -13,7 +13,7 @@ ms.author: jswymer
 ---
 # Moving from OnCompanyOpen to OnCompanyOpenCompleted
 
-[!INCLUDE2022_releasewave1](../includes/2022_releasewave1.md)
+[!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
 With the introduction of [isolated events](devenv-events-isolated.md), it's possible to write events that don't interrupt execution when errors occur in event subscribers. The platform-based event *OnCompanyOpenCompleted* is an isolated event, antage of this to ensure the user will no longer be unable to login upon a failure in an event subscriber.
 
