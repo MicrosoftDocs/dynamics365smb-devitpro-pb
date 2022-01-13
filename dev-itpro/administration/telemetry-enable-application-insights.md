@@ -83,6 +83,8 @@ The way you enable Application Insights depends on whether you want to connect t
         Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
         ```
 
+        If you use the same Azure Application Insights resource for multiple environments, consider also using the AadTenantId parameter to distinguish tenants in telemetry.
+
 ## Enable in Docker
 
 If you're using the BcContainerHelper module, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
