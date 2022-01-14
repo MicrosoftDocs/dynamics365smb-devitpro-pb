@@ -13,7 +13,9 @@ author: SusanneWindfeldPedersen
 
 # Azure AD authentication for Business Central on-premises
 
-In addition to using Windows and NavUserPassword authentication, you can use Azure AD to authenticate and publish on-premises installations and containers from Visual Studio Code. This enables, for example, debugging scenarios for permissions or web services from Visual Studio Code.
+In addition to using Windows and NavUserPassword authentication, you can use Azure AD to authenticate and publish on-premises installations and containers from Visual Studio Code. This makes it possible to mimic cloud-based operations in an on-premises environment including debugging scenarios or web services.
+
+To enable Azure AD authentication, make sure to do the following: 
 
 - Use the `primaryTenantDomain` setting in the `launch.json` file to specify the URL of the Azure AD organization or company associated with the Azure AD tenant. For more information, see [Find tenant ID, domain name, user object ID](/partner-center/find-ids-and-domain-names). 
 - On the NST you must ensure that the server is set up to use Azure AD as authentication mechanism. For more information, see [User Authentication with Azure AD for Single Sign-on](../administration/authenticating-users-with-azure-active-directory.md).
