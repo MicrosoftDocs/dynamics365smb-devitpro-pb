@@ -96,7 +96,8 @@ The following table describes the settings in the `launch.json` file. The `launc
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
-|primaryTenantDomain|No|The primary tenant domain URL for the cloud AAD user. This is used for on-prem AAD scenarios. The primary tenant domain parameter is equivalent to the `tenant` parameter for cloud scenarios.|
+|primaryTenantDomain|No|Specifies the URL of the Azure AD organization or company associated with the Azure AD tenant. This setting is to used enable AAD scenarios for on-premises installations. For more information, see [Azure AD authentication for Business Central on-premises
+](devenv-aad-auth-onprem.md)|
 
 
 ### Publish to cloud settings
