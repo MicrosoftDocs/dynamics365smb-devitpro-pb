@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/05/2021
+ms.date: 01/14/2022
 ms.author: edupont
 ---
 
@@ -266,19 +266,58 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 
 ## Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *MicrosoftDocs/dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There is a lot of good advice and best practices published in the [Microsoft Docs contributor guide](https://docs.microsoft.com/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
 
-> [!NOTE]
-> Microsoft accepts pull requests to the *MicrosoftDocs/dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+We have two public GitHub repos that you can contribute to:
+
+- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
+
+    This repo contains a copy of the source files for the business functionality content that publishes at `https://docs.microsoft.com/en-us/dynamics365/business-central`  
+
+    > [!NOTE]
+    > Microsoft does not accept pull requests to the the translation repos, such as *dynamics365smb-docs-pr.da-dk*, *dynamics365smb-docs-pr.de-de*, or *dynamics365smb-docs-pr.it-it* repo. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+- [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)  
+    This repo contains a copy of the source files for the developer and admin content that publishes at `https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro`  
+
+For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team will then review the request and include the changes as appropriate.
+
+### Get started
+
+If you want to suggest a minor (or major) change to an existing article, follow these steps:
+
+1. Find the published article, such as [Using OData to Return or Obtain a JSON Document](../webservices/return-obtain-json-document.md).  
+2. In the top right corner of the article, choose the **Edit** button.
+
+    Choosing the button takes you to the source file on GitHub. In this example, that's [https://github.com/MicrosoftDocs/dynamics365smb-devitpro/blob/main/dev-itpro/webservices/return-obtain-json-document.md](https://github.com/MicrosoftDocs/dynamics365smb-devitpro/blob/main/dev-itpro/webservices/return-obtain-json-document.md).  
+
+    > [!NOTE]
+    > If you're not already signed in with a GitHub account, you'll be prompted to sign in or create a new account. You cannot contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content without a GitHub account.
+3. In the top right corner of the MarkDown file, choose the pencil icon. Depending on who you are, you'll be taken to a fork of Microsoft's repo, or you'll be able to work in a branch in Microsoft's repo.
+4. Make the relevant changes (and remember to save the changes!).
+5. Submit a *pull request* to the source repo.
+
+    You'll see something like this configuration in a browser:
+
+    :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
+
+For more information, see [Quick edits to existing documents](/contribute/#quick-edits-to-existing-documents).
+
+### Get thorough
+
+If you're going to contribute at a greater scale, for example as part of a community project that adds code examples to a bunch of technical walkthroughs, you'll probably prefer to work locally on your device, based on a clone of your fork. See the article [Install content authoring tools](/contribute/get-started-setup-tools) in the Microsoft Docs Contributor Guide for recommended tools and processes. The Microsoft team typically follows that workflow.  
 
 To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
 
-1. Commit the changes to your repo that you want to include in the pull request.
+1. Commit the changes to your fork that you want to include in the pull request.
 2. Choose **Sync** to push the changes up to your repo on GitHub.
-3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/main* branch, and then choose **Pull Request**.
+3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/main* branch, and then choose **Pull Request**.  
+
+    You'll see something like this configuration in a browser:
+
+    :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
 
 > [!TIP]
-> If you want to request brand new content, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
+> If you want to request brand new content, as opposed to contributing, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## See also
 
