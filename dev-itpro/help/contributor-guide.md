@@ -61,7 +61,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
     In the source repo only, contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
 - business-central
 
-    Contains MarkDown files with content that is relevant for endusers, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
+    Contains MarkDown files with content that is relevant for business users, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 - media-source
 
     Contains source files for some of the pictures that are used in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content
@@ -130,7 +130,7 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 3. Get hold of your favorite MarkDown editor, and start making changes.
 
-    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [Markdig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
+    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [MarkDig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
     If you want to work locally, you can edit using any text editor. Just save the file as a .md type. Here are two good tools that provide you with some nice features, including a preview of how the content will be rendered in HTML:
 
@@ -143,7 +143,6 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
 
-
 ## Get the content without a GitHub account
 
 If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool, create your own scripts, or follow this process to fork a repo manually.  
@@ -152,7 +151,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 1. Go to the relevant GitHub repo, such as this one for German: [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/).  
 
-    You can see in the browser when the content was last updated. Alternatively, go to the [releases](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/releases) tab and choose the package that you need for your solution. For more information, see [What the GitHub repos contain](#what-the-github-repos-contain).    
+    You can see in the browser when the content was last updated. Alternatively, go to the [releases](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/releases) tab and choose the package that you need for your solution. For more information, see [What the GitHub repos contain](#what-the-github-repos-contain).  
 2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
 3. Open the downloaded *dynamics365smb-docs-pr.de-de-main.zip* file and extract to a relevant location.
 
@@ -266,7 +265,7 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 
 ## Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There is a lot of good advice and best practices published in the [Microsoft Docs contributor guide](https://docs.microsoft.com/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There is a lot of good advice and best practices published in the [Microsoft Docs contributor guide](/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
 
 We have two public GitHub repos that you can contribute to:
 
