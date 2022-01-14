@@ -50,7 +50,7 @@ The data must be exported into files to be included in the extension. To use the
     > [!NOTE]  
     > Export each web service to a separate XML file.
 
-3. Add the exported web services files to the Visual Studio Code project that contains your extension. An exported web service XML file looks like that:
+3. Add the exported web services files to the Visual Studio Code project that contains your extension. An exported web service XML file looks like the following:
 
     ```XML
     <?xml version="1.0" encoding="utf-8"?>
