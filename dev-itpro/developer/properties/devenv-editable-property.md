@@ -53,7 +53,7 @@ If a page has **Editable** set to **false**, then the controls on the page are n
 The property setting is checked during validation. Validation occurs only if the field or control value is updated through the UI, for example, if a value is updated on a page or if a field is updated in a table. If a field is updated through application code, then the **Editable** property is not validated.  
 
 > [!NOTE]  
-> When using `CurrPage.Editable`, the **Editable** property also reflects the page mode that the page was opened in. This applies to Edit, Create, and Delete modes, but not to View mode. If the page is editable, then `CurrPage.Editable` will return **false**.  
+> When using `CurrPage.Editable`, the **Editable** property also reflects the page mode that the page was opened in. This applies to Edit, Create, and Delete modes, but not to View mode. If the page not is editable, then `CurrPage.Editable` will return **false**.  
 
 On pages, you use the **Editable** property for group, part, field, and action controls. You can make them editable or non-editable either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression. For a page showing the Customer table, an example could be:
 
