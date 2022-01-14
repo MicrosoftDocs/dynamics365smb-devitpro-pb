@@ -324,6 +324,7 @@
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ### [Signing an App Package File](developer/devenv-sign-extension.md)
+### [Azure AD Authentication for Business Central On-Premises](developer/devenv-aad-auth-onprem.md)
 ## Working with Projects and Workspaces
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
