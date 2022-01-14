@@ -3,13 +3,13 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
 ms.date: 01/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
+ms.custom: intro-internal
 ---
 
 # Getting Started Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]

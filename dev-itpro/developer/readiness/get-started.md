@@ -7,6 +7,7 @@ ms.service: "dynamics365-business-central"
 ms.reviewer: edupont
 ms.author: kurtju
 ms.date: 04/01/2021
+ms.custom: intro-internal
 ---
 
 # Get Started with Building Apps
