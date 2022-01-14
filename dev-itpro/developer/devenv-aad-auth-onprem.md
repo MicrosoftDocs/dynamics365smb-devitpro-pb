@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # Azure AD authentication for Business Central on-premises
 
-In addition to using Windows and NavUserPassword authentication, you can use Azure AD to authenticate and publish on-premises installations and containers from Visual Studio Code. This makes it possible to mimic cloud-based operations in an on-premises environment including debugging scenarios or web services.
+In addition to using Windows and NavUserPassword authentication, you can use Azure AD to authenticate and publish from on-premises installations and containers in Visual Studio Code. This makes it possible to mimic cloud-based operations in an on-premises environment including debugging scenarios or web services.
 
 To enable Azure AD authentication, make sure to do the following: 
 
