@@ -23,6 +23,8 @@ Get an overview of new and upcoming changes in the [Dynamics 365 release plans](
 
 [!INCLUDE[prod_short](includes/prod_short.md)] online is available in a number of markets, and new countries go live on a quarterly basis. For more information, see [Countries and Translations Supported](compliance/apptest-countries-and-translations.md).  
 
+For a visual overview of where [!INCLUDE [prod_short](includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
+
 ## Built upon a foundation of trust, security, and compliance
 
 On the [Service Trust](https://servicetrust.microsoft.com/) site, review the available independent audit reports for Microsoft's Cloud services. Find information about compliance with data protection standards and regulatory requirements, such as International Organization for Standardization (ISO), Service Organization Controls (SOC), and and international privacy standards.  
@@ -81,9 +83,9 @@ Reducing the incident volume is one way to decrease live site burden and to impr
 
 When investigating live site incidents, the [!INCLUDE [prod_short](includes/prod_short.md)] team follows a standard operational process that's common across Microsoft and the industry.  
 
-The following image summarizes the standard live site incident handling lifecycle.  
+The following diagram illustrates the main steps in the lifecycle of standard live site incident management.  
 
-:::image type="content" source="media/service-admin-site-reliability-engineering-model-04.png" alt-text="Visual showing the live site incident process handling lifecycle.":::
+:::image type="content" source="media/service-overview-livesite.png" alt-text="Visual showing the live site incident process handling lifecycle.":::
 
 In the first phase, which is the **service monitoring** phase, the SRE team works with engineers, program managers, and the Senior Leadership Team to define Service Level Indicators (SLIs) and Service Level Objectives (SLOs) for both major scenarios and minor scenarios. These objectives apply to different metrics of the service, including scenario/component reliability, scenario/component performance (latency), and resource consumption. The live site team and product team then craft alerts that monitor Service Level Indicators (SLIs) against agreed upon targets. When violations are detected, an alert is triggered for investigation.  
 
