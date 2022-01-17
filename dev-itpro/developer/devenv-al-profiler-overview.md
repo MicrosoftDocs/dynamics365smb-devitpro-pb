@@ -5,7 +5,7 @@ description: "Description of how to use the AL profiler to analyze method calls 
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/04/2021
-ms.topic: conceptual
+ms.topic: overview
 ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
