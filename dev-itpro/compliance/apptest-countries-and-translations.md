@@ -90,7 +90,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
 |Tunisia|Partner|Available|TN|South Africa North|
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
-|Ukraine|Partner|Planned|UA|West Europe, Netherlands|
+|Ukraine|Partner|Available|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
 |United States|Microsoft|Available|US|East US|
@@ -159,7 +159,7 @@ This table gives an overview of supported languages and how application language
 |Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
-|Ukrainian)|uk-UA|Partner, Available on AppSource (pending)|
+|Ukrainian (Ukraine)|uk-UA|Partner, Available on AppSource|
 |Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
 
 > [!NOTE]  

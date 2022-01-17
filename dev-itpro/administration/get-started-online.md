@@ -10,6 +10,7 @@ ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 12/28/2021
 ms.author: edupont
+ms.custom: intro-internal
 ---
 
 # Get Started as a Reseller of Business Central Online
