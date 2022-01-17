@@ -65,7 +65,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
-    |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC190/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC190/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC190/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+
 
     When completed, an **Overview** displays in the portal for the new application.
 

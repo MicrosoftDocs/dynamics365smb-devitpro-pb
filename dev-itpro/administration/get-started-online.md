@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 11/02/2021
+ms.date: 12/28/2021
 ms.author: edupont
 ---
 
@@ -81,7 +81,11 @@ If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)]
 
 ## Step 5: Configure the support experience
 
-As a Business Central reselling partner, you are an administrator of your customers' Business Central tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft. For more information, see [Technical Support for Business Central](../technical-support.md).  
+As a [!INCLUDE [prod_short](../includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE [prod_short](../includes/prod_short.md)] tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
+
+[!INCLUDE [admin-supportplan](../includes/admin-supportplan.md)]
+
+For more information, see [Technical Support for Business Central](../technical-support.md) and [Managing Technical Support](manage-technical-support.md).  
 
 ## Step 6: Maintain your customers' Business Central
 

@@ -64,6 +64,7 @@ pageextension 50101 CustomerListExt extends "Customer List"
 
 ## See Also  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)   
+[Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)   
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)   
 [Method Attributes](attributes/devenv-method-attributes.md)  

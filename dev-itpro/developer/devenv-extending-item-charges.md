@@ -89,7 +89,7 @@ In the new codeunit, add functions to distribute the charges over the item lines
                 TempItemChargeAssgntPurch := ItemChargeAssignmentPurch;
                 TempItemChargeAssgntPurch.Insert(false);
                 GetItemValues(TempItemChargeAssgntPurch, LineArray);
-                TotalFairyDust := TotalFairyDust + (LineArray[2] * LineArray[1]);
+                TotalFairyDust += (LineArray[2] * LineArray[1]);
             end;
         until ItemChargeAssignmentPurch.Next = 0;
 

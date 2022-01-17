@@ -290,6 +290,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         For more information about mounting tenants, see [Mount or Dismount a Tenant on a Business Central Server Instance](mount-dismount-tenant.md).-->
     ---
 
+    > [!IMPORTANT]
+    > The **Application Client Certificate Thumbprint**, **Application Client ID**, and **Application Client Secret** parameters aren't used. The **Application Client ID** must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
 4. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
 
     On the **Azure Active Directory** tab, set the **Azure AD App URI**. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting.
@@ -420,6 +422,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
     ---
 
+    > [!IMPORTANT]
+    > The `AzureActiveDirectoryClientSecret`, `AzureActiveDirectoryClientId`, and `AzureActiveDirectoryClientSecret` parameters aren't used. The `AzureActiveDirectoryClientId` must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
 4. Disable token-signing certificate validation by setting `DisableTokenSigningCertificateValidation` to `true`.
 
     ```powershell

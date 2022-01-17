@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 19.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Builds for Business Central in Ukraine are delayed.
+> Builds for Business Central in Ukraine are now released.
 
 ## Hotfixes
 
@@ -28,9 +28,16 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 - [Copying environments of different types](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/copying-environments-different-types)
 - [Operations log enhancements](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/operations-log-enhancements)
 - [Restart environments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/restarting-environments)
+- [Support for 2D barcodes](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
 - [Shipping agent information is copied from sales orders to warehouse shipments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/shipping-agent-information-copied-sales-orders-warehouse-shipments)
 
 ## Localization updates
+
+| Country| Feature change | Download link | 
+|-------------|--------------|--------------|
+| Mexico | *Complement to CFDI “Carta de Porte” 1.0.* Mexican companies must be able to print and send Carta de Porte-compliant packing slips and transfer orders electronically as Comprobante Fiscal Digital por Internet (CFDI) files. As of December 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory. Business Central supports CFDI and Carta de Porte so that you can print packing slips and transfer orders that have the required digital signature.| [Version 2017](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/NAV2017_CU59_MX_30653_NA.zip), [Version 2018](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/NAV2018_CU46_MX_NA_48009.zip), [Spring 2019](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/Spring19_CU29_MX_NA_48007.zip), [2020 Release Wave 2](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/2020Wave2_17.2_MX_32775.zip), [2021 Release Wave 1](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/2021Wave1_18.7_MX_32778.zip), [2021 Release Wave 2](https://download.microsoft.com/download/6/9/5/695dc556-105c-4014-ad04-648c5f338d8d/2021Wave2_19.1_MX_32949.zip) 
+|United States|Form 1099. Format changes as of December 2021: The Internal Revenue Service (IRS) requires one or more versions of the 1099 tax form for payments to vendors. Copies of these forms must be sent to vendors annually on or before the last day of January. On your purchase documents, you can specify that the document is 1099 liable, and you can specify the 1099 code for the vendor. [Reporting Transactions as 1099 Liable in the US](/dynamics365/business-central/localfunctionality/unitedstates/tax-1099).
+
 
 **Business Central is released in the following new countries:**  
 - [Argentina](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--argentina)  
@@ -38,7 +45,9 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 - [Chile](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--chile)
 - [Puerto Rico](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--puerto-rico) 
 - [Slovakia](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--slovakia)
-- [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) (not released yet)
+- [Ukraine](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/countryregional-expansion--ukraine) 
+
+
 
 
 ## Release Plan

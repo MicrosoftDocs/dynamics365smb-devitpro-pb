@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0054"
+title: "AppSourceCop Error AS0054"
 description: "The AppSourceCop configuration must specify one of the following properties: 'mandatorySuffix', 'mandatoryPrefix', or 'mandatoryAffixes'."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0054
+# AppSourceCop Error AS0054
 The AppSourceCop configuration must specify the set of affixes used by the application
 
 ## Description
@@ -38,7 +38,7 @@ For more information, see [AppSourceCop Rule AS0011](appsourcecop-as0011.md).
 
 The use of affixes is required for extensions submitted to the AppSource marketplace, see [Technical Validation Checklist](../devenv-checklist-submission.md).
 
-In order to register your affixes, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com). For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
+In order to register your affixes, see [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md).
 
 ## See Also  
 

@@ -58,7 +58,8 @@ codeunit [ID] [NAME]
 Each extension version has a set of properties that contain information about the extension, including: AppVersion, DataVersion, Dependencies, Id, Name, and Publisher. This information can be useful when installing. For example, one of the more important properties is the `DataVersion` property, which tells you what version of data you are dealing with. These properties are encapsulated in a `ModuleInfo` data type. You can access these properties by through the `NAVApp.GetCurrentModuleInfo()` and `NAVAPP.GetModuleInfo()` methods. For more information, see [NavApp Data Type](methods-auto/navapp/navapp-data-type.md)
 
 ### Install codeunit example
-This example uses the ` OnInstallAppPerDatabase()` trigger to check whether the data version of the previous extension version is compatible for the upgrade.
+
+This example uses the ` OnInstallAppPerDatabase()` trigger to check whether an extension is being installed for the first time or it's being reinstalled.
 
 ```AL
 codeunit 50100 MyInstallCodeunit
