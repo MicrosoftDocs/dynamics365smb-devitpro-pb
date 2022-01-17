@@ -153,7 +153,7 @@ codeunit 50100 MyCodeunit
 In version 2.0, the procedure `MyProcedure` is now returning a boolean. However, it does not break the compilation of dependent extensions because they were not consuming the return type of the procedure.
 
 > [!IMPORTANT]  
-> Adding a return type to a procedure is a runtime breaking changes. Dependent extensions that are referencing the procedure must be recompiled in order to avoid experiencing issues at runtime. OnPrem, this can be done using [Repair-NavApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp). In SaaS, we do not allow adding return types, this is validated by [AS0102](appsourcecop-as0102.md).
+> Adding a return type to a procedure is a runtime breaking changes. Dependent extensions that are referencing the procedure must be recompiled in order to avoid experiencing issues at runtime. For on-premises installations this can be done using [Repair-NavApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp). For SaaS, we do not allow adding return types, this is validated by the rule [AS0102](appsourcecop-as0102.md).
 
 ### Example 2 - Adding a TryFunction attribute to a procedure
 
