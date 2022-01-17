@@ -136,7 +136,7 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 
 ## Authenticating with Azure AD on Business Central on-premises
 
-You can use Azure AD as the authentication mechanism for Business Central on-premises. For more information, see [Azure AD authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
+You can use Azure AD as the authentication mechanism for Business Central on-premises or containers. For more information, see [Azure AD authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
 ## See Also
 
