@@ -7,7 +7,7 @@ ms.date: 11/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: overview
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---

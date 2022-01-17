@@ -4,7 +4,7 @@ description: The Business Central architecture includes of three core components
 ms.custom: na
 ms.date: 04/26/2021
 ms.reviewer: na
-ms.topic: conceptual
+ms.topic: overview
 ms.service: "dynamics365-business-central"
 ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
 author: jswymer
