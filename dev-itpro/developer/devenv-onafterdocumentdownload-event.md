@@ -79,6 +79,7 @@ The report payload contains metadata for the report object and a list of attribu
     "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
     "companyname":"CRONUS International Ltd.",
     "printername":"",
+    "intent":"Download",
 }
 
 ```
@@ -101,6 +102,8 @@ The report payload contains metadata for the report object and a list of attribu
     "invokeddatetime":"[CLENT_LOCAL_DATETIME]", // for example, "2019-10-22T22:25:54.338+02:00"
     "printername":"My Printer",
     "companyname":"[COMPANY_NAME]",
+    "intent":"[REPORTINTENT]", // platform enum type serialized as string 'None|Print|Preview|Save|Schedule|Download|Parameters'
+
 }
 
 ```
@@ -152,6 +155,14 @@ Specifies ID of the table for the view.
 
 Specifies the name of the view.
 
+### *intent"
+
+Specifices the intent of the current report invocation, can be one of the following values.
+
+- Print
+- Preview
+- Download
+
 ## Sample code
 
 Save the JSON payload to text file in the temporary folder and save the report artifact to a file. Skip the clinet download by setting _Success_ to true.
@@ -165,6 +176,8 @@ var
     ObjectName: JsonToken;
     DocumentTypeParts: List of [Text];
     DocumentType: JsonToken;
+    ReportIntentJson: JsonToken;
+    ReportIntentTxt: Text;
     FileHandler: File;
     FileContent: OutStream;
     FilePath: Text;
@@ -180,6 +193,18 @@ begin
     JsonFile.Create(TempFolderPath + 'OnAfterDocumentDownload.json', TextEncoding::UTF8);
     JsonFile.Write(JsonText);
     JsonFile.Close();
+
+    ObjectPayload.Get('intent', ReportIntentJson);
+    ReportIntentTxt := ReportIntentJson.AsValue().AsText();
+
+    case ReportIntentTxt of
+        'Download':
+            HandleDownloadScenario();
+        'Preview':
+            HandlePreviewScenario();
+        'Print':
+            HandlePrintScenario();
+    end;
 
     ObjectPayload.Get('objectname', ObjectName);
     FileName := ObjectName.AsValue().AsText();

@@ -89,6 +89,7 @@ The report payload contains metadata for the report object and a list of attribu
     "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
     "companyname":"CRONUS International Ltd.",
     "printername":"",
+    "intent":"Save",
 }
 
 ```
@@ -111,6 +112,7 @@ The report payload contains metadata for the report object and a list of attribu
     "invokeddatetime":"[CLENT_LOCAL_DATETIME]", // for example, "2019-10-22T22:25:54.338+02:00"
     "printername":"My Printer",
     "companyname":"[COMPANY_NAME]",
+    "intent":"[REPORTINTENT]", // platform enum type serialized as string 'None|Print|Preview|Save|Schedule|Download|Parameters'
 }
 
 ```
@@ -162,6 +164,15 @@ Specifies ID of the table for the view.
 
 Specifies the name of the view.
 
+### *intent"
+
+Specifices the intent of the current report invocation, can be one of the following values.
+
+- Print
+- Preview
+- Save
+- Download
+
 ## Sample code
 
 Subscribe to the standard event in codeunit ReportManagement. This sample saves the JSON payload to a text file and copies the document stream content to the target stream.
@@ -173,6 +184,8 @@ var
     JsonText: Text;
     JsonFile: File;
     mimeType: Text;
+    ReportIntentJson: JsonToken;
+    ReportIntentTxt: Text;
 begin
     // Save the report payload in a text file.
     ObjectPayload.WriteTo(JsonText);
@@ -181,6 +194,18 @@ begin
     JsonFile.Write(JsonText);
     JsonFile.Close();
 
+    ObjectPayload.Get('intent', ReportIntentJson);
+    ReportIntentTxt := ReportIntentJson.AsValue().AsText();
+
+    case ReportIntentTxt of
+        'Save':
+            HandleSaveScenario();
+        'Download':
+            HandleDownloadScenario();
+        'Print':
+            HandlePrintScenario();
+    end;
+    
     // do something on the document stream and write it back to the serverr.
     CopyStream(TargetStream, DocumentStream);
     Success := true;
