@@ -16,7 +16,7 @@ This article describes the syntax of the OnCustomDocumentMerger event which will
 
 ## Usage
 
-Use the OnCustomDocumentMerger event to specify what happens when the user have specfied a custom report layout type that is to be rendered into an artifact in application code. For more information about subscribing to this event, see [Developing Repprt Custom Render Extensions Overview](devenv-reports-custom-render.md).
+Use the OnCustomDocumentMerger event to specify what happens when the user have specfied a custom report layout type that is to be rendered into an artifact in application code. For more information about subscribing to this event, see [Developing Report Custom Render Extensions Overview](devenv-reports-custom-render.md).
 
 ## Publisher
 
