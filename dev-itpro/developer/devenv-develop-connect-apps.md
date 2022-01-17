@@ -3,13 +3,13 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
 ms.date: 01/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
+ms.custom: intro-internal
 ---
 
 # Getting Started Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
@@ -49,7 +49,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
 1. Follow the instructions in the [Integrating applications with Azure Active Directory](/azure/active-directory/develop/quickstart-register-app) article. The next steps elaborate on some of the specific settings you must enable.
 2. On the **API permissions** page for your app, click the **Add a permission** button. 
 3. Make sure the **Microsoft APIs** tab is selected. In the *Commonly used Microsoft APIs* section, click on the **Dynamics 365 Business Central** and select **Delegated permissions**.  
-1. Ensure that the right permission is checked: **user_impersonation**. Use the search box if necessary.
+1. Ensure that the right permission is checked: **Financials.ReadWrite.All**. Use the search box if necessary.
 1. Click the **Add permissions** button.
     > [!NOTE]  
     > If **Dynamics 365** does not show up in search, it's because the tenant does not have any knowledge of Dynamics 365. To make it visible, an easy way is to register for a [free trial](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1) for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] with a user from the directory. 
