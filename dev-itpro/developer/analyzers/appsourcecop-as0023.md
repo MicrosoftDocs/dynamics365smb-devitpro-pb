@@ -24,12 +24,16 @@ A return type cannot be modified in external procedures.
 
 ## Remarks
 
-This rule validates that the return type of a public procedure has not been changed in a way that would break dependent extensions.
+This rule validates that the return type of a public procedure has not been changed in a way that would break the compilation of dependent extensions.
 It is not allowed to change the return type of a public procedure that was published with a return type in a previous version.
-It is only allowed to add a return type to a procedure which previously did not have one.
+Adding a return type is allowed by this rule, but is validated by [AS0102](appsourcecoup-as0102.md).
 
 > [!NOTE]  
 > This rule also covers the cases related to the [TryFunction](../methods/devenv-tryfunction-attribute.md) attribute which implicitly defines a Boolean return type. 
+
+## How to fix this diagnostic?
+
+Reverting the change will fix this diagnostic. If changing the return type is required, the recommended approach is to mark the procedure with the [Obsolete](../attributes/devenv-obsolete-attribute.md) attribute and introduce a new one with the desired return type. In a future version, once all dependent extensions have updated their code to not reference the obsolete procedure, you can remove it.
 
 ## Code examples triggering the rule
 
@@ -146,7 +150,10 @@ codeunit 50100 MyCodeunit
 }
 ```
 
-In version 2.0, the procedure `MyProcedure` is now returning a boolean. However, it does not break dependent extensions because they were not consuming the return type of the procedure.
+In version 2.0, the procedure `MyProcedure` is now returning a boolean. However, it does not break the compilation of dependent extensions because they were not consuming the return type of the procedure.
+
+> [!IMPORTANT]  
+> Adding a return type to a procedure is a runtime breaking changes. Dependent extensions that are referencing the procedure must be recompiled in order to avoid experiencing issues at runtime. OnPrem, this can be done using [Repair-NavApp](https://docs.microsoft.com/en-us/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp). In SaaS, we do not allow adding return types, this is validated by [AS0102](appsourcecop-as0102.md).
 
 ### Example 2 - Adding a TryFunction attribute to a procedure
 
