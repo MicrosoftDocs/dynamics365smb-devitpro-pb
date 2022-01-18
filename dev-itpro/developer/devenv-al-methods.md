@@ -69,7 +69,7 @@ For example, the following method declaration includes two parameters: `MyCustom
  procedure MyMethod(MyCustomer : Record Customer; var MyDimension : ARRAY [2] OF Boolean)
 ```
 
-This example also illustrates how parameters can be passed by value or by reference. For more information, see the section [Parameters](devenv-al-methods.md#Parameters) below.
+This example also illustrates how parameters can be *passed by value* or *passed by reference*. The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference in the example above. For more information, see the section [Parameters](devenv-al-methods.md#Parameters) below.
 
 ### Return values (optional)
 
