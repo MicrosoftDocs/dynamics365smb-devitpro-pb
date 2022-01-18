@@ -85,7 +85,9 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |November 30, 2021 | Can Business Central Online (SaaS) handle large customers?|
 |December 7, 2021 | Using telemetry to improve your partner practices and processes |
 |December 14, 2021 |  Performance Toolkit and Profiler| 
- 
+|January 11, 2021 | Universal Code Initiative |
+|February 1, 2021 | How we secure your data in Business Central| 
+  
 **Business Central Localization Apps Office Hours Calls**  
 Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. Register for the calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
 

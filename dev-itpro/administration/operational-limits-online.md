@@ -123,6 +123,9 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Rate|Specifies how many SOAP requests per minute are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br /> 300 requests/minute<br /><br />Production:<br />600 requests/minute|
 |Operation timeout|The maximum amount of time that the service gives to a single SOAP request. When the limit is exceeded, HTTP response code `408 - Request Timeout` is returned.|8 minutes|
 
+> [!TIP]  
+> Throttling will happen when many requests are issued at the same time. If requests are taking a long time to complete, throttling might also occur due to the request queue being filled up. To optimize throughput, ensure to use APIs or OData over SOAP, as they execute faster. 
+
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
 -->

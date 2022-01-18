@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0559"
 description: "A Part type page cannot contain other parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 12/13/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,8 @@ author: SusanneWindfeldPedersen
 A Part type page cannot contain other parts.
 
 > [!IMPORTANT]
-> This warning will become an error in Spring 2020.
+> This warning will become an error in Spring 2020.  
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -44,7 +44,7 @@ One way to speed up things is to reduce the work that the system must do. For ex
 
 Remove calculated fields from lists if they aren't needed, especially on larger tables. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and FactBoxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
 ### Pattern - Offloading the UI thread
 
@@ -53,7 +53,7 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
 ### Making Edit-in-Excel faster
-The **Edit in Excel** feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
+The **Edit in Excel** feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating fact boxes, avoid calculation, and avoid defaulting logic.
 
 ## Writing efficient Web Services
 
@@ -64,7 +64,7 @@ The **Edit in Excel** feature uses UI pages exposed through OData. This means th
 ### Endpoint performance
 
 #### Anti-patterns (don't do this)
-Avoid using standard UI pages to expose as web service endpoints. Many things, like FactBoxes, aren't exposed in OData, but will use resources to compute.
+Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, are not returned in web service results, but will use resources to prepare.
 
 Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
@@ -87,11 +87,15 @@ Do not use a deprecated protocol such as SOAP. Instead, utilize newer technology
 
 - The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It is possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
-- For OData, limit the set ($filter or $top) if you're using an expensive $expand statement. If you've moved calculated fields to a separate page, then it's good practice to limit the set to get better performance.
+- If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set `DataAccessIntent = ReadOnly`. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
-- If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set DataAccessIntent = ReadOnly. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
+### OData Performance patterns
+When calling OData web services, there are a number of strategies that you can use to speed up your queries
+- Limiting the set ($filter or $top) if you're using an expensive $expand statement
+- Using OData transaction $batch
+- Using Data Access Intent Read-only with OData
 
-- Use OData transaction $batch requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
+For more details about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
 
 ### How to handle large volumes of web service calls
 When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
@@ -110,8 +114,6 @@ Make sure that your external application can handle the two HTTP status codes *4
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
-
-By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you can instruct Business Central to run requests against a replica of the database, which can lead to improved performance. To learn more, see [Specifying Data Access Intent for GET requests](../developer/devenv-connect-apps-tips.md#DataAccessIntent).
 
 ## Writing efficient reports
 
@@ -150,7 +152,7 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). Also, please use a TextBuilder instead of BigText when possible.
+When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, please use a `TextBuilder` data type instead of `BigText` when possible. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
@@ -275,7 +277,7 @@ Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) incl
 One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
 
 ### Non-clustered Columnstore Indexes (NCCI)
-Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes refered to as NCCIs) are supported on tables. 
+Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes referred to as NCCIs) are supported on tables. 
 
 You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
 
@@ -342,7 +344,7 @@ For more information, see [NumberSequence Data Type](../developer/methods-auto/n
 
 #### Analyzing database locks
 
-There are two tools that you can use to analyse database locks happening in the environment: the **Database Locks** page, and database lock timeout telemetry.
+There are two tools that you can use to analyze database locks happening in the environment: the **Database Locks** page, and database lock timeout telemetry.
 
 The **Database Locks** page gives a snapshot of all current database locks in SQL Server. It provides information like the table and database resource affected by the lock, and sometimes also the AL object or method that ran the transaction that caused the lock. These details can help you better understand the locking condition.
 
@@ -397,7 +399,7 @@ The following performance telemetry is available in Azure Application Insights (
 - Sessions started
 - Web Service Requests
 
-Read more in this section: [How to use telemetry to analyze performance](./performance-online.md#telemetry)
+For more information, see the [Analyzing performance issues using telemetry](performance-work-perf-problem.md#analyzing-performance-issues-using-telemetry) section.
 
 ### Troubleshooting
 
