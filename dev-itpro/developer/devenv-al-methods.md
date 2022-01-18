@@ -63,12 +63,12 @@ To declare a global method, *omit* `local`:
 
 A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by semicolons. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype. 
 
-When passing parameters there are two options; passing by value, which is the default behavior, or passing by reference, in which case you must specify the `var` keyword.
+When passing parameters there are two options; *passing by value*, which is the default behavior, or *passing by reference*, in which case you must specify the `var` keyword.
 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
 ```AL
- procedure  Mymethod(MyCustomer : Record Customer;var MyDimension : ARRAY [2] OF Boolean)
+ procedure MyMethod(MyCustomer : Record Customer; var MyDimension : ARRAY [2] OF Boolean)
 ```
 
 In this example the first parameter of `MyMethod` which is `MyCustomer` is passed by value, and the second parameter `MyDimension` is passed by reference, specified by the `var` keyword.
