@@ -34,7 +34,7 @@ The following table lists the Business Central 18 versions and the 19 versions t
 |18.0 to 18.5|19.0|
 |[18.6](https://support.microsoft.com/help/5007026)|[19.1](https://support.microsoft.com/help/5007779)|
 |[18.7](https://support.microsoft.com/help/5007778)|[19.2](https://support.microsoft.com/help/5009178)|
-|[18.8](https://support.microsoft.com/help/5009179)|19.3 *(not available yet)*|
+|[18.8](https://support.microsoft.com/help/5009179)|[19.3](https://support.microsoft.com/help/5010207)|
 |[18.9](https://support.microsoft.com/help/5010206)<sup>[\[1\]](#1)</sup>|19.4|
 
 To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
@@ -53,7 +53,7 @@ The following table lists the Business Central 17 versions, and the 18 and 19 ve
 |[17.10](https://support.microsoft.com/help/5004716)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
 |[17.11](https://support.microsoft.com/help/5007025)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|
 |[17.12](https://support.microsoft.com/help/5007777)|[18.8](https://support.microsoft.com/help/5009179)|[19.2](https://support.microsoft.com/help/5009178)|
-|[17.13](https://support.microsoft.com/help/5009177)|[18.9](https://support.microsoft.com/help/5010206)|19.3 *(not available yet)*|
+|[17.13](https://support.microsoft.com/help/5009177)|[18.9](https://support.microsoft.com/help/5010206)|[19.3](https://support.microsoft.com/help/5010207)|
 |[17.14](https://support.microsoft.com/help/5010205)<sup>[\[1\]](#1)</sup>|18.10|19.4|
 
 
@@ -147,7 +147,7 @@ The following table lists the Business Central 14 versions and the 15, 16, 17, 1
 |[14.28 (cumulative update 27)](https://support.microsoft.com/help/5006072)|None|[16.17](https://support.microsoft.com/help/5007024)|[17.11](https://support.microsoft.com/help/5007025)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
 |[14.29 (cumulative update 28)](https://support.microsoft.com/help/5007023)|None|16.18|[17.12](https://support.microsoft.com/help/5007777)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|
 |[14.30 (cumulative update 29)](https://support.microsoft.com/help/5007776)|None|None|[17.13](https://support.microsoft.com/help/5009177)|[18.8](https://support.microsoft.com/help/5009179)|[19.2](https://support.microsoft.com/help/5009178)|
-|[14.31 (cumulative update 30)](https://support.microsoft.com/help/5009176)<sup>[\[1\]](#1)</sup>|None|None|[17.14](https://support.microsoft.com/help/5010205)|[18.9](https://support.microsoft.com/help/5010206)|19.3 *(not available yet)*|
+|[14.31 (cumulative update 30)](https://support.microsoft.com/help/5009176)<sup>[\[1\]](#1)</sup>|None|None|[17.14](https://support.microsoft.com/help/5010205)|[18.9](https://support.microsoft.com/help/5010206)|[19.3](https://support.microsoft.com/help/5010207)|
 |[14.32 (cumulative update 31)](https://support.microsoft.com/help/5010204)<sup>[\[1\]](#1)</sup>|None|None|17.15|18.10|19.4|
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).  
