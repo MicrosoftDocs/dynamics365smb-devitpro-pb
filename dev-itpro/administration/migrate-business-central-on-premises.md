@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge,
-ms.date: 11/23/2021
+ms.date: 01/05/2022
 ms.author: edupont
 
 ---
@@ -69,14 +69,14 @@ The migration from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] o
 > [!IMPORTANT]
 > Do not run the cloud migration in an environment that is currently used in production. Either the data replication or the data upgrade can result in the loss of data that is database-specific, such as media content, since the data in that table will be replaced with the data from the table in the on-premises database. Any records that exist only in the online database will be lost.
 
-### Testing the migration
+### Test the migration
 
 To help you test the migration, you can run the data replication step in the target production environment, and then create a sandbox environment based on this production environment. That way, you run the data upgrade step in the sandbox environment for safe testing before you run the data upgrade step in the production environment.  
 
 > [!IMPORTANT]
 > If you create a sandbox environment that is a copy of the production environment, do not run the replication in the sandbox. Always run the data replication in the environment that you plan to use for production, and then create a new sandbox copy.
 
-## Migrating data from extensions
+## Migrate data from extensions
 
 When your on-premises solution is connected to the cloud, it is highly recommended that you test the impact of any extension in a sandbox environment before you install the extensions in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] production environment to help avoid any data failures or unintended consequences.  
 
@@ -117,6 +117,19 @@ If you upgrade to a new version of [!INCLUDE [prod_short](../developer/includes/
 > In [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, install, publish, or upgrade the **Intelligent Cloud Base** extension first, and then the product-specific extension or extensions.
 
 Also, at the end of the upgrade, you must make sure that the `applicationVersion` field in the `ndo$tenantdatabaseproperty` table is set to the right version. If the field is blank, or if it is set to an older version than the migration tool supports, the migration cannot run. For more information, see [Post-upgrade tasks](../upgrade/upgrade-unmodified-application-v14-v17.md#post-upgrade-tasks).  
+
+## Companies and data
+
+The cloud migration capabilities are optimized to migrate data in batches of up to 10 companies. However, a [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] database often includes more companies. In some cases, the database contains several hundred companies.  
+
+In such cases, here are our recommendations for how to manage the migration:
+
+* Break the migration into batches.  
+* If the companies include very large data sets, break the migration into smaller batches.  
+
+    For example, you're migrating 10 companies, but two companies include 50 GB each plus 30 GB shared data. In this example, we recommend that you migrate each of the large companies individually.
+* Be mindful of any extensions that might complicate the migration as described in the [Migrate data from extensions](#migrate-data-from-extensions) section.  
+* Check that the company names are valid. For more information, see [Company names](migration-troubleshooting.md#company-names) in the Troubleshooting article.  
 
 ## See also
 
