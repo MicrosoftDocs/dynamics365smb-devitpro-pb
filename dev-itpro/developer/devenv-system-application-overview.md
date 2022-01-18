@@ -6,10 +6,10 @@ ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.topic: overview
 ms.service: "dynamics365-business-central"
 ms.author: bholtorf
-ms.date: 04/01/2021
+ms.date: 10/01/2021
 ---
 
 # Overview of the System Application
@@ -46,6 +46,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Data Compression|Compresses and uncompresses data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Data%20Compression/README.md)|
 |Date-Time Dialog|Provides helper functions for entering date-time values.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Date-Time%20Dialog/README.md)|
 |Default Role Center|Supports the default RoleCenter selection.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Default%20Role%20Center/README.md)|
+|Document Sharing|Enable document sharing flows through a valid document service, like OneDrive for Business|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/System/Document%20Sharing/README.md)|
 |DotNet Aliases|Defines aliases for .NET classes.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/DotNet%20Aliases/README.md)|
 |Environment Information|Contains helper methods for getting information about the tenant and general settings.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Environment%20Information/README.md)|
 |Extension Management|Provides the tools needed to manage an extension.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Extension%20Management/README.md)|

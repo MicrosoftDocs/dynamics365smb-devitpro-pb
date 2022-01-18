@@ -3,7 +3,7 @@ title: "Record.FindSet([Boolean] [, Boolean]) Method"
 description: "Finds a set of records in a table based on the current key and filter."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 01/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,6 +46,95 @@ Set this parameter to true if you want to modify any field value within the curr
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with `repeat..until`.  
+  
+Furthermore, `FindSet` only allows you to loop through the recordset from the top down. If you want to loop from the bottom up, you should use `Find(‘+’)`.  
+  
+The general rules for using `FindSet` are the following:  
+  
+- `FindSet(False,False)` - Read-only. This uses no server cursors and the record set is read with a single server call.  
+- `FindSet(True,False)` - This is used to update non-key fields. This uses a cursor with a fetch buffer similar to `Find(‘-’)`.  
+  
+- `FindSet(True,True)` - This is used to update key fields.  
+  
+This method is designed to optimize finding and updating sets. If you set any or both of the parameters to **false**, you can still modify the records in the set but these updates will not be performed optimally.  
+
+This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
+
+## Examples
+
+The following examples are meant for illustration purposes of the usage of the `FindSet` method only and are not meant to illustrate best practices.
+
+## Example 1
+
+This example shows how to use the `FindSet` method to loop through a set without updating it, but running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
+
+```al
+    procedure Example_1()
+    var
+        CompanyInformation: Record "Company Information";
+        Customer: Record Customer;
+    begin
+        CompanyInformation.Get();
+        Customer.SetFilter("Country/Region Code", '<>%1', CompanyInformation."Country/Region Code");
+        if Customer.FindSet() then
+            repeat
+                Customer.VATRegistrationValidation();
+            until Customer.Next() = 0;
+    end;
+
+
+```
+
+## Example 2
+
+This example shows how to use the `FindSet` method to loop through a set and update a field that is *not within* the current key.
+
+```al
+    procedure Example_2()
+    var
+        Customer: Record Customer;
+        SalesHeader: Record "Sales Header";
+    begin
+        Customer.FindFirst();
+        SalesHeader.SetRange("Sell-to Customer No.", Customer."No.");
+        SalesHeader.SetFilter("Bill-to Customer No.", '<>%1', Customer."No.");
+        if SalesHeader.FindSet(true, false) then
+            repeat
+                SalesHeader."Ship-to contact" := SalesHeader."Bill-to Contact";
+                SalesHeader.Modify();
+            until SalesHeader.Next() = 0;
+    end;
+```
+
+## Example 3
+
+This example shows how to use the `FindSet` method to loop through a set and update a field that is *within* the current key.
+
+```al
+    procedure Example_3(SalesLine: Record "Sales Line")
+    var
+        SalesShptLine: Record "Sales Shipment Line";
+        SalesShptLine2: Record "Sales Shipment Line";
+    begin
+        SalesShptLine.SetCurrentKey("Order No.", "Order Line No.");
+        SalesShptLine.SetRange("Order No.", SalesLine."Document No.");
+        SalesShptLine.SetRange("Order Line No.", SalesLine."Line No.");
+        if SalesShptLine.FindSet(true, true) then
+            repeat
+                SalesShptLine2 := SalesShptLine;
+                SalesShptLine2."Order No." := '';
+                SalesShptLine2."Order Line No." := 0;
+                SalesShptLine2.Modify();
+            until SalesShptLine.Next = 0;
+    end;
+
+```
+
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

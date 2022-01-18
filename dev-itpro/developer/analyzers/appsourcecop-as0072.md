@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0072"
+title: "AppSourceCop Hidden AS0072"
 description: "The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version (Major.Minor)."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0072
+# AppSourceCop Hidden AS0072
 The ObsoleteTag property and the Tag in the Obsolete attribute must be set to the next release version.
 
 ## Description

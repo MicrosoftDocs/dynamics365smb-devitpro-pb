@@ -20,7 +20,16 @@ After an administrator or a Microsoft Certified Partner initially installs [!INC
 > [!NOTE]  
 > Uploading the license file is typically something you do once for each database installation, not once for each client installation. If you need to upload a license for a specific database, see [Uploading a License File for a Specific Database](#UploadtoDatabase).  
 
-Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRONUS.flf, which is the demonstration license file. All license files that are not demonstration license files are named FIN.flf. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
+Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRONUS.flf, which is the demonstration license file. All license files that aren't demonstration license files are named fin.flf or fin.bclicense. The demonstration license file has been given a different name so that it cannot be mistakenly overwritten.  
+
+## FLF and bclicense file types
+
+Depending on your Business Central version and when you got your license, the license is either delivered as a single .flf file or as a \.zip that contains both a .flf and a \.bclicense file. The .flf file type is the legacy license format. The \.bclicense file type is the newer license format. Both file types provide the same terms and permissions. But the \.bclicense file type is better suited for large license files than the \.flf file type. With large licenses, you might have problems importing a \.flf file. The .flf file type will eventually be deprecated.
+
+So we recommend that you use the \.bclicense file if you've gotten one.
+
+> [!NOTE]
+> The bclicense file type is only supported on versions 17.12, 18.7, 19.1 and later.
 
 ## Upload the License File to SQL Server
 
@@ -34,12 +43,16 @@ To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/modu
     Import-NAVServerLicense -ServerInstance <server instance> -LicenseFile "<path to the license>"
     ```
 
-    Replace `<server instance>`with your [!INCLUDE[server](../developer/includes/server.md)] instance name. Replace `<path to the license>` with the folder path and file name of your license.
-
-3. Restart the server instance.
+    Replace `<server instance>`with your [!INCLUDE[server](../developer/includes/server.md)] instance name. Replace `<path to the license>` with the folder path and file name of your license. For example:
 
     ```powershell
-    Restart-NAVServerInstance -ServerInstance <server instance>
+    Import-NAVServerLicense -ServerInstance BC -LicenseFile "c:\licenses\fin.bclicense"
+    ```
+
+3. Restart the server instance. For example:
+
+    ```powershell
+    Restart-NAVServerInstance -ServerInstance BC
     ```
 
 ## Upload the License File to SQL Server using the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)]
@@ -48,40 +61,41 @@ To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/modu
 
 The following procedure uploads the license for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] databases on the SQL Server instance.  
 
-1.  Start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
+1. Start the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)].  
 
     > [!NOTE]  
     >  On a computer running any version of Windows with User Access Control enabled, you must start the development environment as an administrator.  
 
-2.  Verify that you are connected to your database. On the **File** menu, point to **Database**, and then choose **Open**.  
+2. Verify that you are connected to your database. On the **File** menu, point to **Database**, and then choose **Open**.  
 
-3.  Upload the new license.  
+3. Upload the new license.  
 
-    1.  On the **Tools** menu, choose **License Information**.  
+    1. On the **Tools** menu, choose **License Information**.  
 
-    2.  In the **License Information** window, choose **Upload**.  
+    2. In the **License Information** window, choose **Upload**.  
 
-    3.  In the **Upload License File** dialog box, browse to and open the license file.  
+    3. In the **Upload License File** dialog box, browse to and open the license file.  
 
      You should see the following message:  
 
      **The Server license was successfully uploaded.**  
 
-4.  Restart the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to activate the license.  
+4. Restart the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] to activate the license.  
 
-5.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
+5. Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
 > [!NOTE]  
 >  Always review your license file after uploading, to verify that all information is correct and that you have all necessary license granules.  
 
-##  <a name="UploadtoDatabase"></a> Uploading a License File for a Specific Database  
+### <a name="UploadtoDatabase"></a> Uploading a License File for a Specific Database  
 
-1.  In the development environment, on the **File** menu, point to **Database**, and then choose **Alter**.  
+1. In the development environment, on the **File** menu, point to **Database**, and then choose **Alter**.  
 
-2.  In the **Alter Database** window, choose **Integration**, and then select **Save license in database**.  
+2. In the **Alter Database** window, choose **Integration**, and then select **Save license in database**.  
 
-3.  Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
+3. Restart all [!INCLUDE[server](../developer/includes/server.md)] instances on the computer to activate the license for other clients.  
 
-## See Also  
- [Business Central Software License Terms](https://www.microsoft.com/download/details.aspx?id=57274)  
- [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  
+## See Also
+
+[Business Central Software License Terms](https://www.microsoft.com/download/details.aspx?id=57274)  
+[Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)  

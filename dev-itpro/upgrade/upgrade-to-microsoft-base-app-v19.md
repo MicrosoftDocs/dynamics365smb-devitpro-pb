@@ -429,7 +429,7 @@ In this step, you configure the version 19 server instance. In particular, you c
 Import the version 19 partner license. To import the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
 ```powershell
-Import-NAVServerLicense $-ServerInstance <server instance name> -LicenseFile <path>
+Import-NAVServerLicense -ServerInstance <server instance name> -LicenseFile <path>
 ```
 
 Restart the server instance.
