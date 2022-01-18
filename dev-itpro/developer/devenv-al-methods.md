@@ -114,9 +114,9 @@ In a method call, the parameters are separated by commas, and the optional param
   
 When passing parameters there are two options; *passing by value*, which is the default behavior, or *passing by reference*, in which case you must specify the `var` keyword.
 
-- If a parameter is passed by value, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
+- If a parameter is *passed by value*, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
   
-- If a parameter is passed by reference, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
+- If a parameter is *passed by reference*, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
 
 ## Example 1  
 
