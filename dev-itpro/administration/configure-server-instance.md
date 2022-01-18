@@ -386,6 +386,7 @@ The following table describes fields on the **Development** tab in the [!INCLUDE
 |HttpClient AL Function Maximum Timeout|NavHttpClientMaxTimeout|Specifies the maximum allowed timeout value that can be set for the HttpClient Timeout AL method.<br /><br />The value has the format HH:MM:SS.<br /><br />Default: 00:05:00<br />Dynamically Updatable: Yes|
 |HttpClient AL Function Response Size|NavHttpClientMaxResponseContentSize|Specifies the maximum size in megabytes of a response buffer used by the HttpClient AL function.<br /><br />The maximum allowed extension size can be adjusted based on the HttpClient AL Function Maximum Timeout setting.<br /><br />Default: 15<br />Dynamically Updatable: Yes|
 |Port|DeveloperServicesPort|The listening HTTP port for Microsoft Dynamics NAV Developer web services.<br /><br />Valid range: 1 - 65535<br />Default: 7049<br />Dynamically Updatable: No|
+|*not available*|ForceExtensionAllowedTargetLevel| This setting is only used for Business Central on-premises scenarios using Azure AD from Visual Studio Code in which case the setting must be set to `true`. This setting is not available from the UI. Default: `false`. For more information, see [Using Azure AD authentication for Business Central on-premises](../developer/devenv-aad-auth-onprem.md).|
 
 ## <a name="Compatibility"></a>Compatibility Settings
 
