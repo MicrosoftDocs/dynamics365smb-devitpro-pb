@@ -48,7 +48,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Upcoming Business Central Office Hours Calls**  
-Make sure to join the office hours calls 'Universal Code Initiative' on January 11 and 'How we secure your data in Business Central' on February 1. Note that both calls will be held in two different time zones; first call is at 08.00am-09.00am CET / 06.00pm-07.00 PM AEST and second call is at 5.00pm-6.00pm CET / 08.00am-09.00am PST. Register and stay tuned for upcoming calls: https://aka.ms/BCOfficeHours. Watch on-demand recordings: https://aka.ms/BCOfficeHoursRecordings. 
+Make sure to join the office hours call 'How we secure your data in Business Central' on February 1. Note that this call will be held in two different time zones; first call is at 08.00am-09.00am CET / 06.00pm-07.00 PM AEST and second call is at 5.00pm-6.00pm CET / 08.00am-09.00am PST. Register and stay tuned for upcoming calls: https://aka.ms/BCOfficeHours. Watch on-demand recordings: https://aka.ms/BCOfficeHoursRecordings. 
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication. 
