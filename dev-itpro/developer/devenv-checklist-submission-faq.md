@@ -42,6 +42,15 @@ The service will verify that your extensions do not introduce breaking changes b
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
+### Which apps are validated in my submission?
+
+The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries which are not required by the main extension, they will be ignored during the validation and won't be uploaded to the service.
+
+For example, let's consider an app A which has an offer in the AppSource marketplace and A depends on a library named B which doesn't have any dependencies. If you create a new submission with A as the main app and include as libraries B, C, and D, then only A and B will be validated. C and D will be ignored because they are not required by the main app A. If B is updated to depend on C and D, then all apps in the submissions will now be validated by the service.
+
+> [!Note]  
+> If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app won't be validated again for these countries/regions.
+
 ### How many automated tests do we need to run for validation and how high must the test coverage be?  
 
 When setting up your offer in Partner Center, you must still include a test package in 'App Tests Automation', but it isn't used during the validation of the submission.
