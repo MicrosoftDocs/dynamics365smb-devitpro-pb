@@ -3,7 +3,7 @@ title: "Compiler Error AL0169"
 description: "The option value '{0}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 11/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: SusanneWindfeldPedersen
 The option value '{0}' is not valid.
 
 ## Description
-Invalid option value.  
+Non-valid option value.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -6,7 +6,7 @@ ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.topic: overview
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -19,7 +19,7 @@ Queries enable you to retrieve records from one or more tables or data sources a
 
 There are two types of query objects: normal and API.
 
-- A normal query retrieves records from business data tables in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database, and can be used to display data in the user interface. This type of query is created by a query object. For more information, [Query Object](devenv-query-object.md). 
+- A normal query retrieves records from business data tables in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database, and can be used to display data in the user interface. This type of query is created by a query object. For more information, see [Query Object](devenv-query-object.md). 
 - An API query is used to generate web service endpoints and this type of page cannot be displayed in the user interface. A query of the API type can be used to join data from different data sources. The data can only be viewed. For information about creating a query of the type API, see [API Query Type](devenv-api-querytype.md).
 
 ### Query usages
@@ -34,9 +34,9 @@ The following examples show how you can use queries in your [!INCLUDE[d365fin_lo
 
 - Using the query as a data source for a page. To do this, you have to copy the query resulting dataset into a temporary table and set it as the source table for the page. 
 
-- Using the query as a data source for a report. To do this, you have to copy the query resulting dataset into a temporary table which can then be used by the report. 
+- Using the query as a data source for a report. To do this, create a global variable that points to the query. Then use the variable in the report dataset. For more information see, [Defining a Report Dataset](devenv-report-dataset.md).
 
-- Performing calculations on data such as computing sums and averages. For more information see, [Query Totals and Grouping](devenv-query-totals-grouping.md).
+- Performing calculations on data such as computing sums and averages. For more information, see [Query Totals and Grouping](devenv-query-totals-grouping.md).
 
 - Replacing nested loops that use record variables to retrieve or to detect duplicate records. For more information, see [Using Queries Instead of Record Variables](devenv-query-using-instead-record-variables.md).
 
@@ -51,14 +51,14 @@ begin
     // Sets a filter to display only sales quantities greater than 20.  
     MyQuery.SETFILTER(Quantity, '>20');   
     // Runs the query.  
-    MyQuery.OPEN;  
+    MyQuery.Open;  
     // Reads each row in the dataset and displays a message with column values.  
     // Stops reading when there are no more rows remaining in the dataset (READ is FALSE).  
-    while MyQuery.READ do  
+    while MyQuery.Read do  
     begin  
-      MESSAGE(Text000, MyQuery.Name, MyQuery.Quantity);  
+      Message(Text000, MyQuery.Name, MyQuery.Quantity);  
     end;  
-    MyQuery.CLOSE;  
+    MyQuery.Close;  
 end;
 ```
 

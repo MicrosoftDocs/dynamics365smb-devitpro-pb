@@ -23,7 +23,7 @@ Prospects and customers can also subscribe for an evaluation version by using se
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-[!include[prod_short](../developer/includes/prod_short.md)] does not use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (*.flf). Instead, permissions are generated based on entitlements.  
+[!include[prod_short](../developer/includes/prod_short.md)] doesn't use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (*.flf). Instead, permissions are generated based on entitlements.  
 
 We define license permissions (per object) in the **Entitlements** table. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Azure Active Directory (Azure AD) service plans.  
 

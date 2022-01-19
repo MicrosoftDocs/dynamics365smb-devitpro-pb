@@ -28,6 +28,7 @@ Find an overview of hotfixes in this [article](https://prod.support.services.mic
 - [Copying environments of different types](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/copying-environments-different-types)
 - [Operations log enhancements](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/operations-log-enhancements)
 - [Restart environments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/restarting-environments)
+- [Support for 2D barcodes](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-two-dimensional-barcodes-reports-business-central-online)
 - [Shipping agent information is copied from sales orders to warehouse shipments](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/shipping-agent-information-copied-sales-orders-warehouse-shipments)
 
 ## Localization updates

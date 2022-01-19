@@ -1,9 +1,9 @@
 ---
-title: "CodeCop Rule AA0073"
+title: "CodeCop Warning AA0073"
 description: "Only temporary variable names must be prefixed with Temp."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0073
+# CodeCop Warning AA0073
 The name of temporary variable must be prefixed with Temp.
 
 ## Description

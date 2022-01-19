@@ -1,19 +1,22 @@
 ---
 title: "AL Database Methods and Performance on SQL Server"
+description: Read about the relationship between basic database methods in AL and SQL statements in Business Central.  
+author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
+ms.author: jswymer
+ms.date: 12/21/2021
 ---
 
 # AL Database Methods and Performance on SQL Server
 
 This topic describes the relationship between basic database methods in AL and SQL statements.  
   
-## Get, Find, and Next  
+## Get, Find, FindSet, and Next  
 
 The AL language offers several methods to retrieve record data. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
   
@@ -120,7 +123,7 @@ until Customer.Next = 0;
 
 Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. if the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
   
-The **LockTable** method does not require any separate SQL statements. It only causes any subsequent reading from the table to lock the table or parts of it.  
+The **LockTable** method does not require any separate SQL statements. It will cause any subsequent reading from any tables to be done with an update lock. For more information, see [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md). 
 
 ## ModifyAll and DeleteAll
 
