@@ -71,23 +71,13 @@ The major updates are typically made available twice a year, in April and in Oct
 
 On the release day, all new sign-ups and all newly created environments (sandbox and production), are directed to the new version. For existing environments, running on the previous version, updates are made available gradually across the supported regions over the coming days and weeks. It's not possible to speed up this process for your environment through Microsoft Support.  
 
-## Scheduling updates
+## Schedule updates
 
 When the update becomes available for your environment, a notification email is sent to all [notification recipients](tenant-admin-center-notifications.md) that you've registered in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. A notification about the update availability is also shown in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] itself.  
 
 Starting this day, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to [schedule the date](tenant-admin-center-update-management.md#schedule) when you prefer the update to happen.  
 
-The following fields on the environment page can help you plan the update:
-
-|Field|Description|
-|-----|-----------|
-|**Available Update Version**|Specifies the version to which you can update your environment|
-|**Update Scheduling Available**|Specifies whether it's possible for you to change the update date. The options are **Yes** or **No**.|
-|**Scheduled Update Date**| Specifies the default update date set by Microsoft. You can change this date to one you prefer, if **Update Scheduling Available** is set to **Yes**|
-|**Update Rollout State**|Microsoft can sometimes postpone the updates for various reasons. This field provides information that can help you track the current state of the rollout. For more information about what happens in such cases, see [Postponed updates](#postponed)|
-
-> [!IMPORTANT]
-> If you don't set a date in the **Scheduled Update Date** field, Microsoft will update the environment automatically on any day between the default date and the date that is shown as the last possible update date in your notification email. If you don't want your environment to be updated automatically, change the update date to one that fits you better.
+[!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
 
 When the scheduled update date arrives, the update runs automatically within the update window that you've specified for this environment. All users will be disconnected from this environment, and all attempts to sign in during the update will be blocked with the message `Service is under maintenance`.  
 
@@ -115,9 +105,7 @@ In some cases, even after the update is available in your area, you are still no
 
 - Your per-tenant extensions aren't compatible with the next major update.  
 
-    Before rolling out the next major update, Microsoft routinely checks per-tenant extensions in all existing environments for compatibility with the next major update. If we detect compatibility issues with the upcoming version, we send email notifications that describe the detected issues to the notification recipients.  
-
-    If you discover any such issues, apply the changes to your solution as usual using Visual Studio Code. Test the new app in a sandbox environment that runs on the new major version, either in preview or the official version. If tests complete successfully, upload the new app version into your production environment in the **Extension Management** page, setting the **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when your environment is updated. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).  
+    [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
 
 - The AppSource apps that are installed in your environment aren't yet available for the next major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
@@ -127,8 +115,8 @@ In some cases, even after the update is available in your area, you are still no
 
 An environment may fail to update for various reasons, such as the following:
 
-- Per-tenant extension compatibility issues
-- AppSource app compatibility issues
+- Per-tenant extension compatibility issues  
+- AppSource app compatibility issues  
 - Internal update issues  
 
 Any environment that fails to update will be automatically restored to the original application version so that users could connect to it again. The environment is then automatically rescheduled for a new update attempt in seven days. If you consider the issue resolved and want to try the update again, change the update date to an earlier date or the current date.  

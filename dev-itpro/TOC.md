@@ -132,6 +132,7 @@
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
 ### [Manage updates](administration/tenant-admin-center-update-management.md)
 ### [Manage sessions](administration/tenant-admin-center-manage-sessions.md)
+### [Copy a production or sandbox environment](administration/tenant-admin-center-environments-copy.md)
 ### [Rename environments](administration/tenant-admin-center-environments-rename.md)
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
@@ -156,7 +157,6 @@
 ### [Licenses and entitlements](deployment/licensing.md)
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
-### [Manage technical support](administration/manage-technical-support.md)
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Recommend apps](administration/recommend-apps.md)
@@ -171,7 +171,7 @@
 <!--Potentially add RapidStart here?-->
 <!-- onboard customers-->
 ## Onboard your customers
-### [Trials and Sign-ups](deployment/customer-signup.md)
+### [Trials and sign-ups](deployment/customer-signup.md)
 <!-- ### Do cool demos -->
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
@@ -179,19 +179,24 @@
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Recommend Apps](administration/recommend-apps.md)  
+### [Recommend apps](administration/recommend-apps.md)
+<!-- support-->
+## Manage technical support
+### [Manage technical support overview](administration/manage-technical-support.md)
+### [Escalate support issues to Microsoft](administration/raise-support-case.md)
+### [Report customer outages](administration/report-outage.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
-### [Running the cloud migration tool](administration/migration-tool.md)
+### [Run the cloud migration tool](administration/migration-tool.md)
 ### [Manage the migration to the cloud](administration/migration-management.md)
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
 <!-- end migrate -->
+<!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
@@ -218,6 +223,7 @@
 ### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
+<!-- end telemetry -->
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
@@ -293,7 +299,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-#### [Technical Validation FAQ](developer/readiness/readiness-technical-validation-faq.md)
+#### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
@@ -349,6 +355,7 @@
 #### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
 #### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
 #### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
+#### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 #### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
@@ -472,8 +479,8 @@
 ### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
 ### [Substituting a Report](developer/devenv-substituting-reports.md)
 ### [Testing a Report](developer/devenv-testing-reports.md)
-### [How to: Create a Word Layout Report](developer/devenv-howto-report-layout.md)
-### [How to: Create an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
+### [Creating a Word Layout Report](developer/devenv-howto-report-layout.md)
+### [Creating an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Adding Barcodes](developer/devenv-report-add-barcodes.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
@@ -531,6 +538,7 @@
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
@@ -1048,6 +1056,7 @@
 ###### [AL0690](developer/diagnostics/diagnostic-al690.md)
 ###### [AL0691](developer/diagnostics/diagnostic-al691.md)
 ###### [AL0693](developer/diagnostics/diagnostic-al693.md)
+###### [AL0696](developer/diagnostics/diagnostic-al696.md)
 ###### [AL0999](developer/diagnostics/diagnostic-al999.md)
 ###### [AL1001](developer/diagnostics/diagnostic-al1001.md)
 ###### [AL1002](developer/diagnostics/diagnostic-al1002.md)
@@ -1220,6 +1229,7 @@
 ###### [AL0692](developer/diagnostics/diagnostic-al692.md)
 ###### [AL0694](developer/diagnostics/diagnostic-al694.md)
 ###### [AL0695](developer/diagnostics/diagnostic-al695.md)
+###### [AL0697](developer/diagnostics/diagnostic-al697.md)
 ##### Hidden messages
 ###### [AL0605](developer/diagnostics/diagnostic-al605.md)
 ###### [AL0607](developer/diagnostics/diagnostic-al607.md)
@@ -1479,6 +1489,8 @@
 ##### [Names() Method](developer/methods-auto/enum/enum-names--method.md)
 ##### [Ordinals() Method](developer/methods-auto/enum/enum-ordinals--method.md)
 #### [ErrorInfo Data Type](developer/methods-auto/errorinfo/errorinfo-data-type.md)
+##### [Create() Method](developer/methods-auto/errorinfo/errorinfo-create--method.md)
+##### [Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method](developer/methods-auto/errorinfo/errorinfo-create-string-boolean-table-integer-integer-string-verbosity-dataclassification-dictionary[text,text]-method.md)
 ##### [Callstack() Method](developer/methods-auto/errorinfo/errorinfo-callstack-method.md)
 ##### [Collectible([Boolean]) Method](developer/methods-auto/errorinfo/errorinfo-collectible-method.md)
 ##### [ControlName([String]) Method](developer/methods-auto/errorinfo/errorinfo-controlname-method.md)
@@ -1500,6 +1512,8 @@
 ##### [Caption() Method](developer/methods-auto/fieldref/fieldref-caption-method.md)
 ##### [Class() Method](developer/methods-auto/fieldref/fieldref-class-method.md)
 ##### [EnumValueCount() Method](developer/methods-auto/fieldref/fieldref-enumvaluecount-method.md)
+##### [FieldError([String]) Method](developer/methods-auto/fieldref/fieldref-fielderror-string-method.md)
+##### [FieldError(ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-fielderror-errorinfo-method.md)
 ##### [GetEnumValueCaption(Integer) Method](developer/methods-auto/fieldref/fieldref-getenumvaluecaption-method.md)
 ##### [GetEnumValueCaptionFromOrdinalValue(Integer) Method](developer/methods-auto/fieldref/fieldref-getenumvaluecaptionfromordinalvalue-method.md)
 ##### [GetEnumValueName(Integer) Method](developer/methods-auto/fieldref/fieldref-getenumvaluename-method.md)
@@ -1519,24 +1533,43 @@
 ##### [SetFilter(String [, Any,...]) Method](developer/methods-auto/fieldref/fieldref-setfilter-method.md)
 ##### [SetRange([Any] [, Any]) Method](developer/methods-auto/fieldref/fieldref-setrange-method.md)
 ##### [TestField() Method](developer/methods-auto/fieldref/fieldref-testfield--method.md)
+##### [TestField(ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-errorinfo-method.md)
 ##### [TestField(Byte) Method](developer/methods-auto/fieldref/fieldref-testfield-byte-method.md)
+##### [TestField(Byte, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-byte-errorinfo-method.md)
 ##### [TestField(Boolean) Method](developer/methods-auto/fieldref/fieldref-testfield-boolean-method.md)
+##### [TestField(Boolean, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-boolean-errorinfo-method.md)
 ##### [TestField(Char) Method](developer/methods-auto/fieldref/fieldref-testfield-char-method.md)
+##### [TestField(Char, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-char-errorinfo-method.md)
 ##### [TestField(Option) Method](developer/methods-auto/fieldref/fieldref-testfield-option-method.md)
+##### [TestField(Option, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-option-errorinfo-method.md)
 ##### [TestField(Integer) Method](developer/methods-auto/fieldref/fieldref-testfield-integer-method.md)
+##### [TestField(Integer, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-integer-errorinfo-method.md)
 ##### [TestField(BigInteger) Method](developer/methods-auto/fieldref/fieldref-testfield-biginteger-method.md)
+##### [TestField(BigInteger, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-biginteger-errorinfo-method.md)
 ##### [TestField(Decimal) Method](developer/methods-auto/fieldref/fieldref-testfield-decimal-method.md)
+##### [TestField(Decimal, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-decimal-errorinfo-method.md)
 ##### [TestField(Guid) Method](developer/methods-auto/fieldref/fieldref-testfield-guid-method.md)
+##### [TestField(Guid, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-guid-errorinfo-method.md)
 ##### [TestField(String) Method](developer/methods-auto/fieldref/fieldref-testfield-string-method.md)
+##### [TestField(String, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-string-errorinfo-method.md)
 ##### [TestField(Label) Method](developer/methods-auto/fieldref/fieldref-testfield-label-method.md)
+##### [TestField(Label, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-label-errorinfo-method.md)
 ##### [TestField(Text) Method](developer/methods-auto/fieldref/fieldref-testfield-text-method.md)
+##### [TestField(Text, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-text-errorinfo-method.md)
 ##### [TestField(Code) Method](developer/methods-auto/fieldref/fieldref-testfield-code-method.md)
+##### [TestField(Code, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-code-errorinfo-method.md)
 ##### [TestField(Date) Method](developer/methods-auto/fieldref/fieldref-testfield-date-method.md)
+##### [TestField(Date, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-date-errorinfo-method.md)
 ##### [TestField(DateTime) Method](developer/methods-auto/fieldref/fieldref-testfield-datetime-method.md)
+##### [TestField(DateTime, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-datetime-errorinfo-method.md)
 ##### [TestField(Time) Method](developer/methods-auto/fieldref/fieldref-testfield-time-method.md)
+##### [TestField(Time, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-time-errorinfo-method.md)
 ##### [TestField(Variant) Method](developer/methods-auto/fieldref/fieldref-testfield-variant-method.md)
+##### [TestField(Variant, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-variant-errorinfo-method.md)
 ##### [TestField(Enum) Method](developer/methods-auto/fieldref/fieldref-testfield-anyenum-method.md)
+##### [TestField(Enum, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-anyenum-errorinfo-method.md)
 ##### [TestField(Any) Method](developer/methods-auto/fieldref/fieldref-testfield-joker-method.md)
+##### [TestField(Any, ErrorInfo) Method](developer/methods-auto/fieldref/fieldref-testfield-joker-errorinfo-method.md)
 ##### [Type() Method](developer/methods-auto/fieldref/fieldref-type-method.md)
 ##### [Validate([Any]) Method](developer/methods-auto/fieldref/fieldref-validate-method.md)
 ##### [Value([Any]) Method](developer/methods-auto/fieldref/fieldref-value-method.md)
@@ -2275,6 +2308,8 @@
 ##### [DeleteLinks() Method](developer/methods-auto/record/record-deletelinks-method.md)
 ##### [FieldActive(Any) Method](developer/methods-auto/record/record-fieldactive-method.md)
 ##### [FieldCaption(Any) Method](developer/methods-auto/record/record-fieldcaption-method.md)
+##### [FieldError(Any [, String]) Method](developer/methods-auto/record/record-fielderror-joker-string-method.md)
+##### [FieldError(Any, ErrorInfo) Method](developer/methods-auto/record/record-fielderror-joker-errorinfo-method.md)
 ##### [FieldName(Any) Method](developer/methods-auto/record/record-fieldname-method.md)
 ##### [FieldNo(Any) Method](developer/methods-auto/record/record-fieldno-method.md)
 ##### [FilterGroup([Integer]) Method](developer/methods-auto/record/record-filtergroup-method.md)
@@ -2327,18 +2362,31 @@
 ##### [TableCaption() Method](developer/methods-auto/record/record-tablecaption-method.md)
 ##### [TableName() Method](developer/methods-auto/record/record-tablename-method.md)
 ##### [TestField(Any) Method](developer/methods-auto/record/record-testfield-joker-method.md)
+##### [TestField(Any, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-errorinfo-method.md)
 ##### [TestField(Any, Boolean) Method](developer/methods-auto/record/record-testfield-joker-boolean-method.md)
+##### [TestField(Any, Boolean, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-boolean-errorinfo-method.md)
 ##### [TestField(Any, Integer) Method](developer/methods-auto/record/record-testfield-joker-integer-method.md)
+##### [TestField(Any, Integer, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-integer-errorinfo-method.md)
 ##### [TestField(Any, BigInteger) Method](developer/methods-auto/record/record-testfield-joker-biginteger-method.md)
+##### [TestField(Any, BigInteger, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-biginteger-errorinfo-method.md)
 ##### [TestField(Any, Decimal) Method](developer/methods-auto/record/record-testfield-joker-decimal-method.md)
+##### [TestField(Any, Decimal, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-decimal-errorinfo-method.md)
 ##### [TestField(Any, Guid) Method](developer/methods-auto/record/record-testfield-joker-guid-method.md)
+##### [TestField(Any, Guid, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-guid-errorinfo-method.md)
 ##### [TestField(Any, Text) Method](developer/methods-auto/record/record-testfield-joker-text-method.md)
+##### [TestField(Any, Text, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-text-errorinfo-method.md)
 ##### [TestField(Any, Label) Method](developer/methods-auto/record/record-testfield-joker-label-method.md)
+##### [TestField(Any, Label, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-label-errorinfo-method.md)
 ##### [TestField(Any, TextConst) Method](developer/methods-auto/record/record-testfield-joker-textconst-method.md)
+##### [TestField(Any, TextConst, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-textconst-errorinfo-method.md)
 ##### [TestField(Any, Code) Method](developer/methods-auto/record/record-testfield-joker-code-method.md)
+##### [TestField(Any, Code, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-code-errorinfo-method.md)
 ##### [TestField(Any, String) Method](developer/methods-auto/record/record-testfield-joker-string-method.md)
+##### [TestField(Any, String, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-string-errorinfo-method.md)
 ##### [TestField(Any, Enum) Method](developer/methods-auto/record/record-testfield-joker-anyenum-method.md)
+##### [TestField(Any, Enum, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-anyenum-errorinfo-method.md)
 ##### [TestField(Any, Any) Method](developer/methods-auto/record/record-testfield-joker-joker-method.md)
+##### [TestField(Any, Any, ErrorInfo) Method](developer/methods-auto/record/record-testfield-joker-joker-errorinfo-method.md)
 ##### [TransferFields(var Record [, Boolean]) Method](developer/methods-auto/record/record-transferfields-table-boolean-method.md)
 ##### [TransferFields(var Record, Boolean, Boolean) Method](developer/methods-auto/record/record-transferfields-table-boolean-boolean-method.md)
 ##### [Validate(Any [, Any]) Method](developer/methods-auto/record/record-validate-method.md)
@@ -3421,18 +3469,41 @@
 # Integration
 <!-- web service -->
 ## Web Services
-### [Web Services](webservices/web-services.md)
-### [Terms of Use](webservices/webservices-terms-of-use.md)
+### [Web Services Overview](webservices/web-services.md)
+### [Terms of Use for Web Services](webservices/webservices-terms-of-use.md)
 ### General
 #### [Publishing a Web Service](webservices/publish-web-service.md)
 #### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
 #### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
+#### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
-### [SOAP](webservices/soap-web-services.md)
+### API
+#### [Overview](webservices/api-overview.md)
+#### [Business Central API (v2.0)](api-reference/v2.0/index.md)
+#### [Business Central API (v1.0)](api-reference/v1.0/index.md)
+#### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+### OData
+#### [Overview](webservices/odata-web-services.md)
+#### [OData Query Performance](webservices/odata-client-performance.md)
+#### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
+#### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
+#### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
+#### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
+#### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
+#### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
+#### [Containments and Associations](webservices/use-containments-associations.md)
+#### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
+#### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
+#### [Known OData Limitations](webservices/odata-known-limitations.md)
+### SOAP
+#### [Overview](webservices/soap-web-services.md)
 #### [SOAP Service URIs](webservices/soap-web-service-uris.md)
 #### [Basic Operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
@@ -3448,25 +3519,13 @@
 ##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
 #### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
-### [OData](webservices/odata-web-services.md)
-#### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
-#### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
-#### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
-#### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
-#### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
-#### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
-#### [Containments and Associations](webservices/use-containments-associations.md)
-#### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
-#### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
-#### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
-#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
 ## Connect Apps
 ### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using Filtering](developer/devenv-connect-apps-filtering.md)
-## [Developing a Custom API](developer/devenv-develop-custom-api.md)
+### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
@@ -3491,18 +3550,12 @@
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
-## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
+## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
-## Authenticating Using OAuth
-### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!--deprecated features -->
 # Removed or deprecated features
-## Deprecated Tables
-### [Deprecated Tables](upgrade/deprecated-tables.md)
-### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated Features
-### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+## Deprecated Features in the Application
+### [Deprecated Features in the Base App](upgrade/deprecated-features-w1.md)  
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -3520,6 +3573,14 @@
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
+## [Deprecated Features in the Platform](upgrade/deprecated-features-platform.md)  
+## Deprecated Tables
+### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
+## Deprecated Code
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
 <!--on-prem-->
 # Business Central on-premises
@@ -3631,6 +3692,7 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Telemetry Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Feature Telemetry](administration/telemetry-feature-telemetry.md)
 #### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)

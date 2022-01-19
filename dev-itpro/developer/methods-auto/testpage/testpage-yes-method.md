@@ -37,7 +37,27 @@ The Yes system action.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The *Yes* action is used to confirm a modal page or test page.
+
+The **Yes** method just retrieves the *Yes* system action, but does not execute it. To invoke the *Yes* action on the test page use the [Invoke Method](../testaction/testaction-invoke-method.md), as shown in the example below. 
+
+## Example
+
+The following example uses a handler method to confirm the `"Create Order From Sales"` modal test page when invoked in code.
+
+```
+[ModalPageHandler]
+procedure CreateOrderFromSalesModalPageHandler(var CreateOrderFromSales: TestPage "Create Order From Sales")
+begin
+    CreateOrderFromSales.Yes.Invoke();
+end;
+```
+
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  
+[Invoke Method](../testaction/testaction-invoke-method.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

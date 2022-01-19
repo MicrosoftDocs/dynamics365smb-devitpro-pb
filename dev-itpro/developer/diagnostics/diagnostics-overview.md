@@ -3,11 +3,11 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 11/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: overview
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
@@ -17,8 +17,7 @@ author: SusanneWindfeldPedersen
 # AL Compiler Diagnostics
 
 
-
-|Id|Description|Default Severity|
+|Id|Message|Default Severity|
 |--|-----------|----------------|
 |[AL0100](diagnostic-al100.md)|Unterminated multiline comment.|Error|
 |[AL0101](diagnostic-al101.md)|Constant value '{0}' is outside the range for a Decimal.|Error|
@@ -116,7 +115,7 @@ author: SusanneWindfeldPedersen
 |[AL0196](diagnostic-al196.md)|The call is ambiguous between the method '{0}' defined in {1} '{2}' by the extension '{3}' and the method '{4}' defined in {5} '{6}' by the extension '{7}'.|Error|
 |[AL0197](diagnostic-al197.md)|An application object of type '{0}' with name '{1}' is already declared by the extension '{2}'.|Error|
 |[AL0198](diagnostic-al198.md)|Expected one of the application object keywords ({0}).|Error|
-|[AL0199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric(Decimal, BigInteger, Integer, or Duration).|Error|
+|[AL0199](diagnostic-al199.md)|The type of the sum index field '{0}' must be numeric (Decimal, BigInteger, Integer, or Duration).|Error|
 |[AL0200](diagnostic-al200.md)|Property '{0}' is obsolete and will be removed in a future version.|Warning|
 |[AL0201](diagnostic-al201.md)|The {0} FlowField is not a Boolean field. If a FlowField CalcFormula starts with 'Exist', then the FlowField must be a Boolean type field.|Error|
 |[AL0202](diagnostic-al202.md)|The {0} FlowField is not an Integer field. If a FlowField CalcFormula starts with 'Count', then the FlowField must be an Integer type field.|Error|
@@ -202,7 +201,7 @@ author: SusanneWindfeldPedersen
 |[AL0293](diagnostic-al293.md)|Property value {0} is not in the field's OptionMembers.|Error|
 |[AL0294](diagnostic-al294.md)|The type of property value {0} does not match the field’s type.|Error|
 |[AL0295](diagnostic-al295.md)|The field '{0}' is not found in the target '{1}'.|Error|
-|[AL0296](diagnostic-al296.md)|The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development. For more information, see: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-compilation-scope-overview.|Error|
+|[AL0296](diagnostic-al296.md)|The application object or method '{0}' has scope '{1}' and cannot be used for '{2}' development.|Error|
 |[AL0297](diagnostic-al297.md)|The application object identifier '{0}' is not valid. It must be within the allowed ranges '{1}'.|Error|
 |[AL0298](diagnostic-al298.md)|The data type of the expression assigned to the 'StyleExpr' property is not valid. Valid data types are Boolean, Text, or Code.|Error|
 |[AL0299](diagnostic-al299.md)|Member name '{0}' is only allowed on triggers.|Warning (Future Error)|
@@ -493,8 +492,8 @@ author: SusanneWindfeldPedersen
 |[AL0601](diagnostic-al601.md)|{0} '{1}' is removed. {2}.|Warning (Future Error)|
 |[AL0602](diagnostic-al602.md)|'{0}' is inaccessible due to its protection level.|Warning (Future Error)|
 |[AL0603](diagnostic-al603.md)|An implicit conversion is being performed from a value of type '{0}' to a value of type '{1}'. This conversion can lead to unexpected runtime issues.|Warning (Future Error)|
-|[AL0604](diagnostic-al604.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}.'.|Warning (Future Error)|
-|[AL0605](diagnostic-al605.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}.'.|Hidden|
+|[AL0604](diagnostic-al604.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}'.|Warning (Future Error)|
+|[AL0605](diagnostic-al605.md)|Use of implicit 'with' will be removed in the future. Qualify with '{0}'.|Hidden|
 |[AL0606](diagnostic-al606.md)|The 'with' statement is deprecated and will be removed for cloud development in a future release.|Warning (Future Error)|
 |[AL0607](diagnostic-al607.md)|The 'with' statement is deprecated and will be removed for cloud development in a future release.|Hidden|
 |[AL0608](diagnostic-al608.md)|The OrderBy property must specify at least one field on which to sort the data.|Warning (Future Error)|
@@ -567,8 +566,7 @@ author: SusanneWindfeldPedersen
 |[AL0682](diagnostic-al682.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Error|
 |[AL0683](diagnostic-al683.md)|The permissionset '{0}' belongs to a different module and cannot be used when defining entitlements.|Error|
 |[AL0684](diagnostic-al684.md)|The permissionset '{0}' contains permissionsets or permission for objects from other module. Permissions on objects from other modules will be ignored.|Warning|
-|[AL0685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. 
-Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
+|[AL0685](diagnostic-al685.md)|The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'. This could result in a runtime error. Please make sure that the target field's length is less than equal to the source field length.|Warning (Future Error)|
 |[AL0686](diagnostic-al686.md)|The base type already defines a method called '{0}' with the same parameter types.|Error|
 |[AL0687](diagnostic-al687.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the primary key in the IncludeFields property.|Error|
 |[AL0688](diagnostic-al688.md)|The key '{0}' on table '{1}' cannot contain the fields defined for the key in the IncludeFields property.|Error|
@@ -579,6 +577,8 @@ Please make sure that the target field's length is less than equal to the source
 |[AL0693](diagnostic-al693.md)|The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.|Error|
 |[AL0694](diagnostic-al694.md)|The field '{0}' which is part of the primary key of table '{1}' cannot be obsolete. All related properties will have no effect.|Warning (Future Error)|
 |[AL0695](diagnostic-al695.md)|The method {0} will only be available for {1} development for runtime version {2}.|Warning (Future Error)|
+|[AL0696](diagnostic-al696.md)|Argument {0}: The argument should be a valid Field type.|Error|
+|[AL0697](diagnostic-al697.md)|Argument {0}: The argument should be a valid Field type.|Warning (Future Error)|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

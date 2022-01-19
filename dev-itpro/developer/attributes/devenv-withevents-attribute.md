@@ -3,7 +3,7 @@ title: "WithEvents Attribute"
 description: "Sets whether a DotNet variable subscribes to the events published by a .NET Framework type."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 11/19/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ author: SusanneWindfeldPedersen
 Sets whether a DotNet variable subscribes to the events published by a .NET Framework type.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> This attribute is supported only in Business Central on-premises.
 
 ## Applies To
 

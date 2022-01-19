@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/12/2022
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -12,13 +12,12 @@ ms.author: soalex
 
 # Country/regional availability and supported languages
 
-This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
+This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
 > [!NOTE]  
 > In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s). Note, that availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as a cloud service and does not concern availability of partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
-
 
 ## Countries and regions
 
@@ -53,7 +52,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
 |India|Microsoft|Available|IN|Central India|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
-|Japan|Partner|Available|JP|Southeast Asia, Singapore|
+|Japan|Partner|Available|JP|Japan East, Japan|
 |Kenya|Partner|Available|KE|South Africa North|
 |Latvia|Partner|Available|LV|North Europe, Ireland|
 |Lebanon|Partner|Available|LB|UAE North|
@@ -79,10 +78,10 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Saudi Arabia|Partner|Available|SA|UAE North|
 |Serbia|Partner|Available|RS|West Europe, Netherlands|
 |Singapore|Partner|Available|SG|Southeast Asia, Singapore|
-|Slovakia|Partner|Planned|SK|West Eeurope, Netherlands|
+|Slovakia|Partner|Planned|SK|West Europe, Netherlands|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
 |South Africa|Partner|Available|ZA|South Africa North|
-|South Korea|Partner|Available|KR|Southeast Asia, Singapore|
+|South Korea|Partner|Available|KR|Korea Central, Korea|
 |Spain|Microsoft|Available|ES|West Europe, Netherlands|
 |Sri Lanka|Partner|Available|LK|Southeast Asia, Singapore|
 |Sweden|Microsoft|Available|SE|North Europe, Ireland|
@@ -91,11 +90,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
 |Tunisia|Partner|Available|TN|South Africa North|
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
-|Ukraine|Partner|Planned|UA|West Europe, Netherlands|
+|Ukraine|Partner|Available|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
 |United States|Microsoft|Available|US|East US|
 |Vietnam|Partner|Available|VN|Southeast Asia, Singapore|
+
+For an overview of where [!INCLUDE [prod_short](../includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 
 ## Important information regarding planned availability
 
@@ -133,17 +134,17 @@ This table gives an overview of supported languages and how application language
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
-|Greek (Greece)|gr-GR|Partner, Available on AppSource|
+|Greek (Greece)|el-GR|Partner, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
 |Italian (Switzerland)|it-CH|Microsoft, Available on AppSource|
 |Italian (Italy)|it-IT|Microsoft, Available on AppSource|
-|Japanese (Japan)|jp-JP|Partner, Available on AppSource|
+|Japanese (Japan)|ja-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
 |Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|
-|Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
+|Norwegian, Bokmål (Norway)|nb-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
@@ -158,7 +159,7 @@ This table gives an overview of supported languages and how application language
 |Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
-|Ukrainian)|uk-UA|Partner, Available on AppSource (pending)|
+|Ukrainian (Ukraine)|uk-UA|Partner, Available on AppSource|
 |Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
 
 > [!NOTE]  

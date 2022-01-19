@@ -11,11 +11,11 @@ author: jswymer
 ms.date: 07/09/2021
 ---
 
-# Enable Sending Telemetry to Application Insights
+# Enable Environment Telemetry in Application Insights
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This article describes how to set up tenants to send telemetry data to Azure Application Insights for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises environments.
+This article describes how to set up sending telemetry data to Azure Application Insights for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises environments.
 
 ## <a name="appinsights"></a>Get started
 
@@ -83,6 +83,8 @@ The way you enable Application Insights depends on whether you want to connect t
         Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
         ```
 
+        If you use the same Azure Application Insights resource for multiple environments, consider also using the AadTenantId parameter to distinguish tenants in telemetry.
+
 ## Enable in Docker
 
 If you're using the BcContainerHelper module, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
@@ -107,6 +109,7 @@ If the Application Insights resource is tied to your partner account, and you en
 
 ## See Also
 
+[Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
 [Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Monitoring and Analyzing With Telemetry](telemetry-overview.md)  
