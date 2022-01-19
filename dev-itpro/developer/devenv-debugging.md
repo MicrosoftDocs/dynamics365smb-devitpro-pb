@@ -134,6 +134,10 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
+## Authenticating with Azure AD on Business Central on-premises
+
+You can use Azure AD as the authentication mechanism for Business Central on-premises or containers. For more information, see [Azure AD authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
+
 ## See Also
 
 [Attach and Debug Next](devenv-attach-debug-next.md)  
