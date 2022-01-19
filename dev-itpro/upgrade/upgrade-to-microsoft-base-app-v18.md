@@ -502,9 +502,22 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
     You only need to use the -SkipAppVersionCheck if you didn't increase the application version in Task 8. This step will automatically install the table migration extension.    -->
 
-2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
+2. Before continuing, wait until the data upgrade process completes, and the tenant status becomes operational. It can take several minutes before the process completes.
 
-    When completed, the table migration extension will be installed.
+   To view the progress of the data upgrade, run Get-NavDataUpgrade cmdlet with the `–Progress` or `–Detailed` switches, like:
+   
+   ```powershell
+   Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Progress
+   ```
+   Or
+
+   ```powershell
+   Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Detailed
+   ```
+
+   The process is complete when you see `State = Operational` in the results.
+
+   When completed, the table migration extension will be installed.
 
 3. Install the empty versions of the system, base, and custom extensions that you published in **Task 8**.
 
@@ -764,6 +777,10 @@ We recommend setting the value to application build number for the version 18 up
    ```powershell
    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
    ```
+
+The data upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Progress` or `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Detailed`.
+
+Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance until the process is complete, that is, when you see `State = Operational` in the results from the Get-NAVDataUpgrade cmdlet. Also, you won't be able to do operations, like installing extensions, until the state is operational. It can take several minutes before the process completes.
 
 ## Post-upgrade tasks
 

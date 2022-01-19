@@ -2,7 +2,6 @@
 title: "Getting Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
@@ -10,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
+ms.custom: intro-internal
 ---
 
 # Getting Started with AL
