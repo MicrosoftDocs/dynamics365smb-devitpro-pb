@@ -27,13 +27,19 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |EU countries | Updates have been made to Intrastat reporting to support the new requirements for 2022 in each country required to do Intrastat reporting. These updates are related to the obligation to report new data -Partner VAT no. and Country of Origin - for some Intrastat related transactions. The fields are exported according to the required file format specified in each country. Additionally, some adjustments in the Nature of Transaction data field and minor bug fixes are released. Please find the documentation about Intrastat reporting [here](/dynamics365/business-central/finance-how-setup-report-intrastat)
 |Mexico | *Complement to CFDI “Carta de Porte” 2.0.* Mexican companies must be able to print and send Carta de Porte-compliant packing slips and transfer orders electronically as Comprobante Fiscal Digital por Internet (CFDI) files. As of January 1, 2022, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory. Business Central supports CFDI and Carta de Porte so that you can print packing slips and transfer orders that have the required digital signature.|
 |Germany | The ASCII file format for Intrastat reporting is no longer used, therefore ASCII file format has been deprecated in this release, XML format will be used going forward.|
-|Norway | The Electronic VAT return feature has been updated to support the new requirement for VAT return reporting, new capabilities include: 
-- Possibility to setup "VAT Code" in the VAT statement
-- New VAT codes which can be setup from the Wizard
-- New entities related to the new VAT codes introduced: VAT specification, VAT Note
+|Norway | The Electronic VAT return feature has been updated to support the new requirement for VAT return reporting. 
+
+Thefollowing list provides more information about the new electronic VAT return capabilities in Norway:
+
+- Possibility to set up **VAT Code** in the VAT statement
+- New VAT codes which can be setup from the wizard
+- New entities related to the new VAT codes introduced:
+
+  - VAT specification
+  - VAT Note
 - You can now store and download multiple submission and response requests
-- The electronic VAT return only supports numbers, therefore any “VAT registration no.” with characters will be converted into numbers only. A “VAT registration no.” like "NO 777777 MVA" will be reported as "777777". So you won't need to change the existing "VAT registration no." in order to do reporting.
-- Please find the documentation about Norwegian VAT reporting [here](/dynamics365/business-central/finance-how-setup-report-intrastat).  
+- The electronic VAT return only supports numbers. Any VAT registration no. with characters will be converted into numbers only. A VAT registration no. such as *NO 777777 MVA* will be reported as *777777*. So you won't need to change the existing VAT registration no. in order to do reporting.
+- Learn more about Norwegian VAT reporting [here](/dynamics365/business-central/finance-how-setup-report-intrastat).  
 
 
 
