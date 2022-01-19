@@ -29,13 +29,17 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 |Germany | The ASCII file format for Intrastat reporting is no longer used, therefore ASCII file format has been deprecated in this release, XML format will be used going forward.|
 |Norway | The Electronic VAT return feature has been updated to support the new requirement for VAT return reporting. 
 
-**The new capabilities for The Electronic VAT return feature in Norway include:** 
-- Possibility to setup "VAT Code" in the VAT statement
-- New VAT codes which can be setup from the Wizard
-- New entities related to the new VAT codes introduced: VAT specification, VAT Note
+Thefollowing list provides more information about the new electronic VAT return capabilities in Norway:
+
+- Possibility to set up **VAT Code** in the VAT statement
+- New VAT codes which can be setup from the wizard
+- New entities related to the new VAT codes introduced:
+
+  - VAT specification
+  - VAT Note
 - You can now store and download multiple submission and response requests
-- The electronic VAT return only supports numbers, therefore any “VAT registration no.” with characters will be converted into numbers only. A “VAT registration no.” like "NO 777777 MVA" will be reported as "777777". So you won't need to change the existing "VAT registration no." in order to do reporting.
-- Please find the documentation about Norwegian VAT reporting [here](/dynamics365/business-central/finance-how-setup-report-intrastat).  
+- The electronic VAT return only supports numbers. Any VAT registration no. with characters will be converted into numbers only. A VAT registration no. such as *NO 777777 MVA* will be reported as *777777*. So you won't need to change the existing VAT registration no. in order to do reporting.
+- Learn more about Norwegian VAT reporting [here](/dynamics365/business-central/finance-how-setup-report-intrastat).  
 
 
 
