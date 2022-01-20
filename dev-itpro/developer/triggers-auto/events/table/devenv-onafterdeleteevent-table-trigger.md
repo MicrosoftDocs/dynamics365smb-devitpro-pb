@@ -3,7 +3,7 @@ title: "OnAfterDeleteEvent (Table) Trigger Event"
 description: "Executed after a record is deleted from a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed after a record is deleted from a table.
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnAfterDeleteEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record; RunTrigger: Boolean)
+local procedure MyProcedure(var Rec: Record; RunTrigger: Boolean)
 begin
     ...
 end;

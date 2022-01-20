@@ -3,7 +3,7 @@ title: "OnBeforeValidateEvent (Table) Trigger Event"
 description: "Executed before a field is validated when its value has been changed."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed before a field is validated when its value has been changed.
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Table, Database::<Table Name>, 'OnBeforeValidateEvent', '<Field Name>', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record; xRec: Record; CurrFieldNo: Integer)
+local procedure MyProcedure(var Rec: Record; var xRec: Record; CurrFieldNo: Integer)
 begin
     ...
 end;
