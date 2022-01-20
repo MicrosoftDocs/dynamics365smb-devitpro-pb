@@ -28,7 +28,7 @@ A page customization object specifies layout and action modifications to a speci
 
 To make the modifications, you use [placement keywords](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) in the `layout` and `actions` sections.
 
-The same page customization objects can used in different profile objects. A profile object does not necessarily use any page customization objects, but a page customization has no effect without being associated with a profile object.
+The same page customization objects can be used in different profile objects. A profile object does not necessarily use any page customization objects, but a page customization has no effect without being associated with a profile object.
 
 ## Example
 
