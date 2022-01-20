@@ -3,7 +3,7 @@ title: "OnNewRecordEvent (Page) Trigger Event"
 description: "Executed after the OnNewRecord trigger, which is called before a new record is initialized."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed after the OnNewRecord trigger, which is called before a new record is i
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnNewRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record; BelowxRec: Boolean; xRec: Record)
+local procedure MyProcedure(var Rec: Record; BelowxRec: Boolean; var xRec: Record)
 begin
     ...
 end;
