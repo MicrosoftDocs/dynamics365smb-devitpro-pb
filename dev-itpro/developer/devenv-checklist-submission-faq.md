@@ -42,8 +42,8 @@ The service will verify that your extensions do not introduce breaking changes b
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
-> [!IMPORTANT]
-> As soon as your app has been uploaded to the AppSource marketplace, it will be used as baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes (breaking changes on tables or table extensions). This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you are still developing it and are expecting to change it in the near future.
+> [!IMPORTANT]  
+> As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you are still developing it and expect to change it in the near future.
 
 ### Which apps are validated in my submission?
 
