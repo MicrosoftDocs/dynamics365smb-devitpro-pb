@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 01/20/2022
 ---
 
 # Add your App to AppSource
@@ -21,8 +21,8 @@ AppSource is a market place where partners can provide marketing details, such a
 >
 > All other apps do submit their app to App Source. For more information, see [Technical Validation Checklist](../developer/devenv-checklist-submission.md) and [Marketing Validation Checklist](../developer/readiness/readiness-checklist-marketing.md).  
 
-> [!IMPORTANT]
-> As soon as your app has been uploaded to the AppSource marketplace, it will be used as baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes (breaking changes on tables or table extensions). This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you are still developing it and are expecting to change it in the near future.
+> [!IMPORTANT]  
+> As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submission(s). As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you are still developing it and expect to change it in the near future.
 
 ## See Also
 
