@@ -132,6 +132,7 @@ PartnerDiagnosticsEventSchemaTag.cs-->
 | RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](telemetry-webservices-outgoing-trace.md) |
 | RT0020 | Web service key request| [Authentication with Web Service Key succeeded: {endpoint}](telemetry-webservices-access-key-trace.md#succeeded) |
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](telemetry-webservices-access-key-trace.md#failed) |
+| RT0028 | Deadlock |Deadlock||
 
 ## See also
 
