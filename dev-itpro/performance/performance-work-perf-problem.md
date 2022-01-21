@@ -17,13 +17,13 @@ What do you do if users complain that "it's slow"? In this section, we describe 
 
 ## A generic performance tuning process
 
-Before getting started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of "slow" operations with users. This task is sometimes called "establishing a baseline." 
+Before getting started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of the "slow" operations with users. Learning about the users expectations is key when determining when the performance tuning effort has been successful (or if the expectations are unrealistic). 
 
-To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
-
+You also need to measure how the system performs on the given operation before starting to change anything. This task is sometimes called "establishing a baseline." To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
 * When you want to ensure that new code doesn't introduce a regression. 
 * In a sandbox environment when, for example, the number of users running the same process increases significantly. 
 * When you want to roll out a new process, or install a new extension. 
+
 
 To solve a performance problem, a common pattern is to do iterations of the following tasks:
 
@@ -88,7 +88,7 @@ In the following, you can read about the pros and cons of the different performa
 This example illustrates how you can use the performance tuning process and telemetry to deal with a performance problem in a report from an AppSource extension.
 
 - Together with the tenant administrator/customer, you need to define "slow" and what the acceptable rendering time will be. 
-- Then, use telemetry to find data about time spent in the report: long running SQL queries (eventId RT0005) and report rendering time (eventId RT0006) are the main data sources for this. Telemetry for long running AL methods (eventId RT00180 might also be useful here. Now you have baseline data.
+- Then, use telemetry to find data about time spent in the report: long running SQL queries (eventId RT0005) and report rendering time (eventId RT0006) are the main data sources for this. Telemetry for long running AL methods (eventId RT00180) might also be useful here. Now you have baseline data.
 - Also, use telemetry on report rendering time (eventId RT0006) to find out if the report is running with data access intent ReadOnly. If not, configure it to do so. Some reports write data, so this is not always possible.
 - Do you see long running SQL queries for the report in telemetry (eventId RT0005)? If so, you can add appropriate indexes using a table extension.
 - After configuring data access intent and maybe having added indexes, measure rendering time and compare with the baseline. Also check if the new rendering time is good enough with respect to the acceptable rendering time that you defined together with the tenant administrator/customer. If the performance is still not good enough, you probably need to involve the extension publisher. 

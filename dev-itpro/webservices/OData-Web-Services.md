@@ -36,33 +36,15 @@ The topics in this section describe the key concepts and techniques for accessin
 |Use FlowFilters in OData URIs.|[Using FlowFilters in OData URIs](use-flowfilters-in-odata-uris.md)|  
 |Use server-driven paging in OData URIs.|[Server-Driven Paging in OData Web Services](Server-Driven-Paging-in-OData-Web-Services.md)|  
 |Navigate in an OData web service application by using resource properties.|[Using Containments and Associations](use-containments-associations.md)|  
-|Write to the database through an OData web service that exposes a writable page.|[Using OData Web Services to Modify Data](use-odata-to-modify-data.md)|  
+|Write to the database through an OData web service that exposes a writable page.|[Using OData Web Services to Modify Data](use-odata-to-modify-data.md)|
+|Learn about limitations with Business Central OData|[Known OData Limitations](odata-known-limitations.md)|    
 
 ## Enabling and Configuring OData on the [!INCLUDE[server](../developer/includes/server.md)]
  
 The [!INCLUDE[server](../developer/includes/server.md)] instance has several configurations settings that enable and control OData services. For more information, see [OData Services Settings](../administration/configure-server-instance.md#ODataServices).
 
 ## Known Limitations with Business Central OData
-
-### Filters
-
-You can specify filters in OData web services in general that are not supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] , such as using an OR operator to filter on two different fields. In those cases, you will see the following error:  
-  
-```  
-An error occurred while processing this request.   
- The 'OR' operator is not supported on distinct fields on an OData filter.  
-```  
-
-### Lambda operators
-
-Lambda operators are not supported by [!INCLUDE[prod_short](../developer/includes/prod_short.md)] OData APIs. If lambda operators are used, the filter expression will be ignored.
-
-### UI pages
-If you use Web services that are based on UI pages, you must expect the same behavior from the Web service as from the UI page. If you want to have full control and separation of concern it is recommended to use the Business Central APIs instead.
-
-### Deep patching
-
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports deep insert, but not deep patching. Multiple requests will need to be issued when patching nested entities. 
+The Open Data Protocol \(OData\) implementation in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] does not implement all features in the OData specification. For more information, see [Known OData Limitations](odata-known-limitations.md).
 
 ## See Also  
 

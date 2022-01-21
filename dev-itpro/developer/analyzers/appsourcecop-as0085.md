@@ -1,9 +1,9 @@
 ---
 title: "AppSourceCop Warning AS0085"
-description: "The 'application' property must be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies."
+description: "The 'application' property should be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,10 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Warning AS0085
-The 'application' property must be used instead of explicit dependencies
+The 'application' property should be used instead of explicit dependencies
 
 ## Description
-The 'application' property must be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
+The 'application' property should be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

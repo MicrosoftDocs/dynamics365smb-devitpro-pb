@@ -3,7 +3,7 @@ title: "OnLookup (Page Field Extension) Trigger"
 description: "Runs in place of the normal lookup features for the current page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/05/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,7 @@ Runs in place of the normal lookup features for the current page.
 
 ## Syntax
 ```AL
-trigger OnLookup(Text: Text): Ok
+trigger OnLookup(var Text: Text): Ok
 begin
     ...
 end;

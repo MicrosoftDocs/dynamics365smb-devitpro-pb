@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 10/27/2021
+ms.date: 01/03/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -23,7 +23,7 @@ In the following, you can read about how submissions are handled and learn how t
 
 The extensions in your submission are validated for all the releases targeted by your submission.
 
-Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the examples in [Technical Validation Checklist](devenv-checklist-submission.md).
+Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the example in [Technical Validation Checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
 > [!Important]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
@@ -41,6 +41,18 @@ Note that when adding new localizations in Business Central, these countries/reg
 The service will verify that your extensions do not introduce breaking changes by comparing them to the latest version available in AppSource for each country validated.
 
 You can know which versions of your extensions were used as baseline during the breaking change validation by enabling Azure Application Insights in your extension and running this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
+
+> [!IMPORTANT]  
+> As soon as your app has been uploaded to the AppSource marketplace, it will be used as a baseline during the technical validation of your next submissions. As a consequence, you won't be allowed to perform breaking changes without obsoleting the AL objects first and you won't be allowed to perform schema breaking changes; breaking changes on tables or table extensions. This applies also if your extension isn't used by customers yet. You should then not submit your app to the AppSource marketplace if you are still developing it and expect to change it in the near future.
+
+### Which apps are validated in my submission?
+
+The main app and the libraries required by the main app are validated and uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)]. If you have included libraries which are not required by the main app, they will be ignored during the validation and will not be uploaded to the service.
+
+For example, let's consider an app A which has an offer in the AppSource marketplace and A depends on a library named B which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B will be validated. C and D will be ignored because they are not required by the main app A. If B is updated to depend on C and D, then all apps in the submission will now be validated by the service.
+
+> [!Note]  
+> If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app will not be validated again for these countries/regions.
 
 ### How many automated tests do we need to run for validation and how high must the test coverage be?  
 
@@ -68,7 +80,7 @@ You are only required to include the dependencies for your extension as part of 
 
 If you did not include the dependencies for your app and they are not available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you have already published another .app file for this extension to Business Central as part of a previous submission. If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you are making your library available in new countries, you should use the .app file that has already been uploaded to Business Central or increase the version number in the manifest of the extension (the app.json file).
+If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you have already published another .app file for this extension to Business Central as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you are making your library available in new countries, you should use the .app file that has already been uploaded to Business Central or increase the version number in the manifest of the extension (the app.json file).
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 

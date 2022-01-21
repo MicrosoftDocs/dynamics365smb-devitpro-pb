@@ -3,7 +3,7 @@ title: "OnModifyRecordEvent (Page) Trigger Event"
 description: "Executed after the OnModifyRecord trigger, which is called before a record is modified in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ Executed after the OnModifyRecord trigger, which is called before a record is mo
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnModifyRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record; xRec: Record; AllowModify: Boolean)
+local procedure MyProcedure(var Rec: Record; var xRec: Record; var AllowModify: Boolean)
 begin
     ...
 end;

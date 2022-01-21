@@ -27,7 +27,10 @@ Initially, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses CRON
 Depending on your Business Central version and when you got your license, the license is either delivered as a single .flf file or as a \.zip that contains both a .flf and a \.bclicense file. The .flf file type is the legacy license format. The \.bclicense file type is the newer license format. Both file types provide the same terms and permissions. But the \.bclicense file type is better suited for large license files than the \.flf file type. With large licenses, you might have problems importing a \.flf file. The .flf file type will eventually be deprecated.
 
 So we recommend that you use the \.bclicense file if you've gotten one.
- 
+
+> [!NOTE]
+> The bclicense file type is only supported on versions 17.12, 18.7, 19.1 and later.
+
 ## Upload the License File to SQL Server
 
 To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense).  
