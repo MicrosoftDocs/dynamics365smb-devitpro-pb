@@ -14,9 +14,6 @@ author: EmmaNielsson
 
 # Update 19.3 for Microsoft Dynamics 365 Business Central online 2021 release wave 2
 
-> [!NOTE]
-> Updated 19.3 is expected to be available towards the end of January 2022.
-
 Would you like to know what has changed in update 19.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes

@@ -114,9 +114,9 @@ Occurs when a user sign-in has failed authorization.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod short](../developer/includes/prod_short.md)] telemetry schema. |
 -->
 
-### <a name="authorizationfailures"></a> Troubleshooting failures
+## <a name="authorizationfailures"></a> Troubleshooting (Pre Open Company) authorization failures
 
-#### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
+### The user was successfully authenticated in Azure Active Directory but the user account is disabled in Business Central.
 
 This message occurs when the user's account is valid, but the account is disabled. If you open the user account in Business Central, you'll see the **State** field is set to **Disabled**.
 
@@ -124,7 +124,7 @@ This message occurs when the user's account is valid, but the account is disable
 
 Enable the user account by setting the **State** field to **Enabled**. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
-#### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
+### A user successfully authenticated in Azure Active Directory but the user does not have any entitlements in Business Central.
 
 This message occurs if the user has an account, but the account hasn't been assigned any entitlements.
 
@@ -138,7 +138,7 @@ Entitlements are assigned to the user account in the Microsoft 365 admin center 
 
 - From the Microsoft Partner Center, see [User management tasks for customer accounts](/partner-center/assign-licenses-to-users).
 
-#### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
+### The user is not a direct/indirect member of the security group associated with the environment, or the group does not exist, hence restricting the user access to the environment
 
 In Azure Active Directory (Azure AD), you can create security that include users that you want to give access to your environments. Then, from the Business Central Admin center, you can associate the groups with your environments. This error occurs if the user who tries to sign in isn't a member of the security group, or the security group assigned to the environment doesn't exist in Azure AD. For more information, see [Managing Production and Sandbox Environments in the Admin Center](tenant-admin-center-environments.md).
 
@@ -213,9 +213,9 @@ Occurs when a company has failed to open.
 |eventId|**RT0002**|
 
 
-### <a name="opencompanyfailures"></a>Troubleshooting failures
+## <a name="opencompanyfailures"></a>Troubleshooting (Open Company) authorization failures
 
-#### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
+### The company name is not valid, because the name is either empty or exceeds the maximum allowed length.
 
 This message occurs when a user tries to sign in to a company whose name exceeds the maximum allowed length.
 
@@ -223,7 +223,7 @@ This message occurs when a user tries to sign in to a company whose name exceeds
 
 This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. If the name exceeds 30 characters, then this message occurs. Make sure that the user has the proper name of the company.
 
-#### The user does not have permission to access the company.
+### The user does not have permission to access the company.
 
 This message occurs when a user account in Business Central doesn't have the proper permissions to the company.
 
@@ -234,7 +234,7 @@ In Business Central, open the user account and modify the permissions the user t
 > [!TIP]
 > A good starting point is to look at the **Effective Permissions** that the user has on the company. You can do this from the user card by selecting **Effective Permissions** and setting the **Company** to the company in question.
 
-#### The company doesn't exist.
+### The company doesn't exist.
 
 This message occurs when a user tries to sign in to a company, but the company isn't found in Business Central.
 
@@ -242,7 +242,7 @@ This message occurs when a user tries to sign in to a company, but the company i
 
 This message typically occurs when a user tries to access a specific company in Business Center by entering a URL in the browser address, for example, `https://businesscentral.dynamics.com/?company=CRONUS%20International%20Ltd.`. Make sure that the user has the proper name of the company.
 
-#### User cannot open the company because the tenant is locked.
+### User cannot open the company because the tenant is locked.
 
 This message indicates that the tenant has been locked by Microsoft, typically for security reasons like preventing repeated malicious sign-in attempts. The tenant isn't accessible by any user.
 
@@ -254,7 +254,7 @@ For help with resolving this issue, read the following articles or contact Micro
 
 - ["It looks like your account has been blocked" error when signing in to Microsoft 365](/office365/troubleshoot/access-management/account-blocked-error-when-sign-in)
 
-#### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
+### The user can't sign in to the company because the assigned license has expired or the trial period has ended.
 
 This message occurs for one the following reasons:
 
@@ -266,7 +266,7 @@ This message occurs for one the following reasons:
 Renew the existing license or obtain a new license. Licenses are purchased through the Cloud Solution Provider (CSP)
 program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
 
-#### You can't open the company, because it is a production company. Your license isn't valid for use on production companies.
+### You can't open the company, because it is a production company. Your license isn't valid for use on production companies.
 
 This message occurs because the license doesn't allow the user to open production companies. For example, the user may be using a trial license that is only valid on the evaluation version.
 
@@ -275,7 +275,7 @@ This message occurs because the license doesn't allow the user to open productio
 Obtain a license that can be used on production companies. Licenses are purchased through the Cloud Solution Provider (CSP)
 program. For more information, see the [Cloud Service Provider site](https://partner.microsoft.com/cloud-solution-provider) and the [Microsoft Dynamics 365 Business Central Licensing Guide](https://download.microsoft.com/download/D/A/4/DA497449-9805-42DC-91F5-A857295C233D/Dynamics%20365%20Business%20Central%20Licensing%20Guide%20Oct%202019.pdf).
 
-#### Error in OnOpenCompany trigger
+### Error in OnOpenCompany trigger
 
 This message occurs when AL code causes an error during the OnOpenCompany trigger or event.
 
