@@ -15,7 +15,7 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-With the introduction of [isolated events](devenv-events-isolated.md), it's possible to write events that don't interrupt execution when errors occur in event subscribers. The platform-based event *OnCompanyOpenCompleted* is an isolated event, antage of this to ensure the user will no longer be unable to login upon a failure in an event subscriber.
+With the introduction of [isolated events](devenv-events-isolated.md), it's possible to write events that don't interrupt execution when errors occur in event subscribers. The platform-based event *OnCompanyOpenCompleted* is an isolated event. antage of this to ensure the user will no longer be unable to login upon a failure in an event subscriber.
 
 Moving from the “OnCompanyOpen” event to “OnCompanyOpenCompleted” event is as easy as changing the event subscriber definition. Furthermore, events that are emitted from within the “OnCompanyOpen” will slowly be moved onto the “OnCompanyOpenCompleted” or becomes isolated themselves.
 
