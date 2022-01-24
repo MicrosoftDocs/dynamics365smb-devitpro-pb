@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Update AL-Go System Files
 
-> *The prerequisite for this how to is that you have followed and completed the [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md) instructions.*
+> *The prerequisite for this how to is that you have completed the [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md) instructions.*
 
 Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go system files. AL-Go system files are scripts in the `.AL-Go` folder and workflows in the `.github` folder. Looking into the details of the Check for updates to Al-Go system files, usually looks like this:
 
