@@ -1,5 +1,5 @@
 ---
-title: "Create Online Development Environment from Visual Studio Code"
+title: "Create an Online Development Environment from Visual Studio Code"
 description: ""
 author: freddyk
 ms.custom: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Create Online Development Environment from Visual Studio Code
+# Create an Online Development Environment from Visual Studio Code
 
 > *The prerequisite for this how to is that you have completed the [Use Azure KeyVault for secrets with AL-Go](algo-use-azure-key-vault-for-secrets.md) instructions.*
 
