@@ -15,9 +15,24 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-With the introduction of [isolated events](devenv-events-isolated.md), it's possible to write events that don't interrupt execution when errors occur in event subscribers. The platform-based event OnCompanyOpenCompleted takes advantage of this to ensure the user will no longer be unable to login upon a failure in an event subscriber.
+With the introduction of [isolated events](devenv-events-isolated.md), it's possible to write events that don't stop executing when errors occur in their event subscribers. The platform-based event OnCompanyOpenCompleted is an isolated event that takes advantage of this functionality. Subscribing to the OnCompanyOpenCompleted event helps ensure users aren't prevented from signing in to Business Central because of a failed event subscriber.
 
-Moving from the OnCompanyOpen event to OnCompanyOpenCompleted event is as easy as changing the event subscriber definition. Furthermore, events that are emitted from within the OnCompanyOpen will slowly be moved onto the OnCompanyOpenCompleted or becomes isolated themselves.
+The OnCompanyOpenCompleted event is designed to replace the OnCompanyOpen event, which is obsolete and will eventually be removed. The OnCompanyOpenCompleted event, like the OnCompanyOpen event, is raised during sign-in, when trying to open the company. With the OnCompanyOpen event, a failure in any event subscriber will stop the sign-in process. This behavior can be problematic because there may be several subscribers, and failures don't necessarily justify preventing the user from signing in. With the OnCompanyOpenCompleted event, the sign-in process continues even though an event subscriber fails.
+
+We recommend subscribing to the OnCompanyOpenCompleted event instead of the OnCompanyOpen event. Moving from the OnCompanyOpen event to OnCompanyOpenCompleted event is as easy as changing the event subscriber definition. For example, change:
+
+```al
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"Company Triggers", 'OnCompanyOpen', '', false, false)]
+```
+
+to:
+
+```al
+[EventSubscriber(ObjectType::Codeunit, Codeunit::"Company Triggers", 'OnCompanyOpenCompleted', '', false, false)]
+```
+
+> [!NOTE
+> Events that are emitted from within the OnCompanyOpen will eventually be moved to the OnCompanyOpenCompleted event or also changed to isolated events.
 
 ## See Also
 
