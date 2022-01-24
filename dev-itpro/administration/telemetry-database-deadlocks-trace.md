@@ -16,6 +16,8 @@ ms.author: jswymer
 
 **INTRODUCED IN:** Business Central 2022 release wave 1, version 20.0
 
+
+RT0028 
 Database lock timeout telemetry gathers information about database locks that have timed out. The telemetry data allows you to troubleshoot what caused these locks.
 
 In the client, when a lock has timed out, the user is presented with a message, similar to the following message:
@@ -58,7 +60,7 @@ Occurs when a database lock has timed out.
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|eventId|**RT0012**|
+|eventId|**RT0028**|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |extensionId|Specifies the AppID of the extension that was involved in the lock.|
