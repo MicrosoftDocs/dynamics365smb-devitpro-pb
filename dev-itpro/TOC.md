@@ -63,14 +63,15 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
 ### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
 ### [Update 19.1](whatsnew/whatsnew-update-19-1.md)
-### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
-### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
-### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
-### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
-### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 ### Updates for earlier major versions
+#### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
+#### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
+#### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
+#### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
+#### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 #### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 #### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 #### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
@@ -324,6 +325,7 @@
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ### [Signing an App Package File](developer/devenv-sign-extension.md)
+### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 ## Working with Projects and Workspaces
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
@@ -342,7 +344,7 @@
 ### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-### [Exporting Data for Extensions](developer/devenv-export-data-for-extension.md)
+### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
 ### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ## Extending the Base Application

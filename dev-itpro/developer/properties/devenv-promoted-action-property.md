@@ -55,6 +55,8 @@ For the Promoted property to have an effect, you must also set the [PromotedCate
 
 For more information about promoting actions, see [Promoted Actions](../devenv-promoted-actions.md).
 
+For more information about the Promoted property used together with the Scope property, see [Scope property](devenv-scope-action-property.md).
+
 > [!NOTE] 
 > On [!INCLUDE[d365fin_tablet_md](../includes/d365fin_tablet_md.md)] and [!INCLUDE[d365fin_phone_md](../includes/d365fin_phone_md.md)], only promoted actions are displayed.  
   
