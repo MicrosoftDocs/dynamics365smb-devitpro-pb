@@ -17,7 +17,7 @@ ms.author: jswymer
 
 With the introduction of [isolated events](devenv-events-isolated.md), it's possible to write events that don't stop executing when errors occur in their event subscribers. The platform-based event OnCompanyOpenCompleted is an isolated event that takes advantage of this functionality. Subscribing to the OnCompanyOpenCompleted event helps ensure users aren't prevented from signing in to Business Central because of a failed event subscriber.
 
-## About 
+## About the OnCompanyOpenCompleted event
 
 The OnCompanyOpenCompleted event is designed to replace the OnCompanyOpen event, which is obsolete and will eventually be removed. The OnCompanyOpenCompleted event, like the OnCompanyOpen event, is raised during sign-in, when trying to open the company. With the OnCompanyOpen event, a failure in any event subscriber will stop the sign-in process. This behavior can be problematic for a couple reasons. There may be several subscribers from various extensions, and failures don't necessarily justify preventing the user from signing in. With the OnCompanyOpenCompleted event, the sign-in process continues even though an event subscriber fails.
 
