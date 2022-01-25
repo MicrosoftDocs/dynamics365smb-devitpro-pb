@@ -72,7 +72,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |-------|---------|-----|
 |name|Yes|"Your own server"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
-|request|Yes|Request type of the configuration. Can be set to `"launch"` or `"attach"` . Required by Visual Studio Code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+|request|Yes|Request type of the configuration. Can be set to `"launch"`, `"attach"`, or `"snapshotInitialize"` . Required by Visual Studio Code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md) and [Snapshot Debugging](devenv-snapshot-debugging.md).|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
