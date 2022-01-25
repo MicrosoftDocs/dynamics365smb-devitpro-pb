@@ -29,10 +29,9 @@ ms.author: solsen
 "AppSourceCopMandatoryAffixes": [ "BingMaps" ],
 ```
 
-1. Meaning that the AppSourceCopMandatoryAffixes is set to check that I use BingMaps as an affix for my objects. The second setting is only needed if my secret is called something else than expected. AL-Go is by default looking for a secret called LicenseFileUrl, but you might have multiple repositories sharing the same KeyVault but needing different secrets. In this case you create a setting called "<secretname>SecretName", specifying the actual secret name in the KeyVault. This mechanism is used for all secrets. In my BuildVariables KeyVault, the LicenseFileUrl secret is called LicenseFile. After these changes, my CI pipeline completes:
-1. 
-1. AppSource apps need to be code-signed. To achieve this, you must create two secrets in the GitHub repo or in your KeyVault. CodeSignCertificateUrl should be a secure download URL to your <Code Signing Certificate>.pfx file and CodeSignCertificatePassword should be the password for this .pfx file. Adding these secrets will cause the CI workflow and the Create Release workflow to sign the .app files. In the pipeline, you will see a new step.
-1. f your secrets are called something else than CodesignCertificateUrl and CodesignCertificatePassword, you can add an indirection to the .AL-Go\settings.json file:
+1. This setting means that it is checked that I use BingMaps as an affix for my objects. The second setting is only needed if my secret is called something else than expected. AL-Go is by default looking for a secret called LicenseFileUrl, but you might have multiple repositories sharing the same KeyVault but needing different secrets. In this case you create a setting called "<secretname>SecretName", specifying the actual secret name in the KeyVault. This mechanism is used for all secrets. In my BuildVariables KeyVault, the LicenseFileUrl secret is called LicenseFile. After these changes, my CI pipeline completes:
+1. AppSource apps must be code-signed. To achieve this, you must create two secrets in the GitHub repo or in your key vault. CodeSignCertificateUrl should be a secure download URL to your <Code Signing Certificate>.pfx file and CodeSignCertificatePassword should be the password for this .pfx file. Adding these secrets will cause the CI workflow and the Create Release workflow to sign the .app files. In the pipeline, you will see a new step.
+1. f your secrets are called something else than `CodesignCertificateUrl` and `CodesignCertificatePassword`, you can add an indirection to the .AL-Go\settings.json file, like this:
 
 ```json
 "CodeSignCertificateUrlSecretName": "myCodeSignCertUrl",
