@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/28/2021
+ms.date: 01/25/2022
 ms.author: edupont
 
 ---
@@ -24,6 +24,8 @@ Both internal administrators and their partner can use the [!INCLUDE [prodadminc
 ## Internal administrators
 
 The internal administrator can work with users to identify solutions or workarounds, such as missing setup, missing permissions, and other issues. If users are not sure if things are not working as intended, they can check the [Help and Learn content](../user-assistance.md) for the intended behavior. For more technical problems, administrators can find information in the **Help and Support** page to help with this investigation. For more information, see the [Finding technical information](#finding-technical-information) section.  
+
+As the tenant admin, you can check the Microsoft 365 admin center for incidents. For more information, see the [Monitor service health](#monitor-service-health) section.  
 
 Internal administrators can also [create sandbox environments](environment-types.md#sandbox-environments) for deeper troubleshooting, for example, before they decide to contact their partner for technical support. The partner must have specified their support contact details in the **Help and Support** page.  
 
@@ -180,10 +182,12 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 
 ## See Also
 
+[How to check service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide&preserve-view=true#how-to-check-service-health)  
 [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Technical Support for Business Central](../technical-support.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
+[Escalate Support Issues to Microsoft](raise-support-case.md)  
 [Deployment Overview](../deployment/Deployment.md)  
 [Administration as a partner](tenant-administration.md#administration-as-a-partner)  
 [Administration of Business Central Online](tenant-administration.md)  
