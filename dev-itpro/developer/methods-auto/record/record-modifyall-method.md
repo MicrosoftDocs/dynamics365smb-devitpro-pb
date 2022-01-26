@@ -48,6 +48,9 @@ If this parameter is true, the code in the OnModify Trigger is executed. If this
 
 ## Remarks
 
+> [!IMPORTANT]  
+> By design of the **ModifyAll** method, the global variables of the record instance being modified will be initialized to their default value during the execution of the [OnModify trigger](../../triggers-auto/table/devenv-onmodify-table-trigger.md), independenty of the value that was previosuly set.
+
 If no filter is set, the field is modified in all records in the table. If a filter is set, the fields are modified only in the records which fall within the range specified by the filter. Records where the field is already equal to the new value are also updated. 
 
 The `OnValidate` field trigger is never run when `ModifyAll` is used. Using ModifyAll() is recommended if field validation is not wanted or needed. Otherwise, [Record.Modify Method](record-modify-method.md) can be used.
