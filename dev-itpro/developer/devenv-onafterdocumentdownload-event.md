@@ -2,21 +2,22 @@
 title: "OnAfterDocumentDownload Event"
 description: Describe the OnAfterDocumentDownload Event in Business Central.
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 01/26/2022
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
+
 # OnAfterDocumentDownload Event
 
 This article describes the syntax of the OnAfterDocumentDownload event and the attributes of the report payload.
 
 ## Usage
 
-Use the OnAfterDocumentDownload event to specify what happens when the user generated a report artifact (stream or file) from code or a request page action. The `OnAfterDocumentDownload` event is used to enable document patching scenarios in application.
+Use the OnAfterDocumentDownload event to specify what happens when the user has generated a report artifact (stream or file) from code or a request page action. The `OnAfterDocumentDownload` event is used to enable document patching scenarios in the application.
 
 ## Publisher
 
@@ -24,7 +25,7 @@ Codeunit **44 ReportManagement**.
 
 ## Raised
 
-When the report runtime have generated an output artifact is going to be downloaded to a UI client. This can occur when the user invokes one of the SendTo actions in the report request page or when the document is being printed using the client print capability.
+When the report runtime has generated an output artifact which is going to be downloaded to a UI client. This can occur when the user invokes one of the SendTo actions in the report request page or when the document is being printed using the client print capability.
 
 ## Syntax
 
@@ -129,7 +130,7 @@ Specifies the ID of the user who invoked the print action.
 
 #### *invokeddatetime*
 
-Specifies the date and time that the print action was invoked, for example, 2019-10-22T22:25:54.338+02:00. The value is the date and time on the client machine.
+Specifies the date and time that the print action was invoked, for example, `2019-10-22T22:25:54.338+02:00`. The value is the date and time on the client machine.
 
 #### *companyname*
 
@@ -157,7 +158,7 @@ Specifies the name of the view.
 
 ### *intent"
 
-Specifices the intent of the current report invocation, can be one of the following values.
+Specifies the intent of the current report invocation, which can be one of the following values.
 
 - Print
 - Preview
@@ -165,7 +166,7 @@ Specifices the intent of the current report invocation, can be one of the follow
 
 ## Sample code
 
-Save the JSON payload to text file in the temporary folder and save the report artifact to a file. Skip the clinet download by setting _Success_ to true.
+Save the JSON payload to text file in the temporary folder and save the report artifact to a file. Skip the client download by setting `Success` to `true`.
 
 ```AL
 [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterDocumentDownload', '', true, true)]
