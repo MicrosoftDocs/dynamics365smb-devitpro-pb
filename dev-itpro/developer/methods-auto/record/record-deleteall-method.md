@@ -41,7 +41,7 @@ Specifies whether to run the AL code in the OnDelete Trigger. If this parameter 
 ## Remarks
 
 > [!IMPORTANT]  
-> By design, the **DeleteAll** method will initialize the global variables of the record instance being deleted to their default value during its execution, independently of the value that was previously set.
+> By design, the global variables of the record instance being deleted will be initialized to their default value during the **DeleteAll** method execution, independently of the value that was previously set.
 
 ## See Also
 [Record Data Type](record-data-type.md)  

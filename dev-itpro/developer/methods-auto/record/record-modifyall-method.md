@@ -49,7 +49,7 @@ If this parameter is true, the code in the OnModify Trigger is executed. If this
 ## Remarks
 
 > [!IMPORTANT]  
-> By design, the **ModifyAll** method will initialize the global variables of the record instance being modified to their default value during its execution, independently of the value that was previously set.
+> By design, the global variables of the record instance being modified will be initialized to their default value during the **ModifyAll** method execution, independently of the value that was previously set.
 
 If no filter is set, the field is modified in all records in the table. If a filter is set, the fields are modified only in the records which fall within the range specified by the filter. Records where the field is already equal to the new value are also updated. 
 
