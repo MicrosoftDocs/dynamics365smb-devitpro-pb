@@ -41,7 +41,7 @@ Specifies whether to run the AL code in the OnDelete Trigger. If this parameter 
 ## Remarks
 
 > [!IMPORTANT]  
-> By design of the **DeleteAll** method, the global variables of the record instance being modified will be initialized to their default value during the execution of the [OnDelete trigger](../../triggers-auto/table/devenv-ondelete-table-trigger.md), independenty of the value that was previosuly set.
+> By design, the **DeleteAll** method will initialize the global variables of the record instance being deleted to their default value during its execution, independently of the value that was previously set.
 
 ## See Also
 [Record Data Type](record-data-type.md)  
