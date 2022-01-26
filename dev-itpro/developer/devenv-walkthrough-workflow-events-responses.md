@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 04/01/2021
+ms.date: 01/19/2022
 ---
 # Walkthrough: Implementing New Workflow Events and Responses
 
@@ -317,7 +317,7 @@ You'll update this method in step 8 in the next section.
     }
     ```
 
-    Here, the **Visibility** property of the group is set to `"Response Option Group" = 'GROUP 51000'`, but you can set it to another value.  
+    Here, the **Visibility** property of the group is set to `"Response Option Group" = 'GROUP 50100'`, but you can set it to another value.  
 
 5. Go back to MyWorkflowResponses.codeunit.al and the ´AddMyWorkflowResponsesToLibrary` method.  
 
@@ -384,7 +384,7 @@ In this section, you'll add new workflow event/response combinations to table 15
 
 ## Register workflow event hierarchies
 
-In this section, you'll add new workflow event/event combinations to table 1509 **WF Event/Response Combination** so that they workflow events appear in the correct hierarchy in the **Workflow Events** page.  
+In this section, you'll add new workflow event/event combinations to table 1509 **WF Event/Response Combination** so that the workflow events appear in the correct hierarchy in the **Workflow Events** page.  
 
 ### To register workflow event hierarchies needed for the new workflow event  
 
