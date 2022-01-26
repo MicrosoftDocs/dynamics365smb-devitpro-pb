@@ -565,7 +565,7 @@ https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=
 
 When you mount a tenant, you can give the tenant an additional ID by setting the `-AlternateId` parameter. Users can then access the tenant using this ID as a well as the original. The alternate ID is useful if you have different host names for tenants. In this case, you have to set up URL rewriting in the web.config file for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).
 
-### Using Visual Studio
+### Using Visual Studio Code
 
 If you are connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you do not do this, you will get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
 
