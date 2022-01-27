@@ -220,7 +220,7 @@ When you have questions or bugs regarding the self-validation script. For more i
 
 ### When do I write on Yammer?
 
-When you have questions on developing and maintaining AppSource apps or about the validation process, you can ask a question on Yammer. In this group, you will find announcements from Microsoft together with discussions around various AppSource related topics.
+When you have questions on developing and maintaining AppSource apps or about the validation process, you can ask a question on Yammer. In this group, you will find announcements from Microsoft together with discussions around various AppSource-related topics.
 
 You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, please email dyn365bep@microsoft.com. 
 
