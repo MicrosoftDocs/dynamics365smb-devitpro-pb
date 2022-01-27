@@ -1,6 +1,6 @@
 ---
 title: "Branching Strategy"
-description: ""
+description: "Decide on a strategy for branches and collaboration for CI/CD and AL-Go"
 author: freddyk
 ms.custom: na
 ms.date: 01/21/2022

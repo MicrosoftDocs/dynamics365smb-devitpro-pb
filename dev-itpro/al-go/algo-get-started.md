@@ -1,6 +1,6 @@
 ---
-title: "Get started "
-description: ""
+title: "Get started"
+description: "Get started with AL-Go for GitHub and create repository from template"
 author: freddyk
 ms.custom: na
 ms.date: 04/01/2021

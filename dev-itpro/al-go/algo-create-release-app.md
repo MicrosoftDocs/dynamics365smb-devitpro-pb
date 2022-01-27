@@ -1,6 +1,6 @@
 ---
 title: "Create a Release of Your Application"
-description: ""
+description: "Create a release of your AL-Go application."
 author: freddyk
 ms.custom: na
 ms.date: 04/01/2021

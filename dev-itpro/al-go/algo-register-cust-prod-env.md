@@ -1,6 +1,6 @@
 ---
 title: "Register a Customer Production Environment for Manual Deployment"
-description: ""
+description: "Set up and register a customer production environment for AL-Go for manual deployment"
 author: freddyk
 ms.custom: na
 ms.date: 12/30/2021
