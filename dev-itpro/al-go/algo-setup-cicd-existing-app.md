@@ -1,6 +1,6 @@
 ---
 title: "Set up CI/CD for an Existing Appsource App"
-description: ""
+description: "Setting up continuous integration, continuous delivery (CI/CD) for an existing AppSource App"
 author: freddyk
 ms.custom: na
 ms.date: 01/24/2022
