@@ -19,7 +19,7 @@ Allows you to manage environment-specific settings such as the environment's App
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -52,7 +52,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -104,7 +104,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
