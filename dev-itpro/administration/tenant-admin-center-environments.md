@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 12/15/2021
+ms.date: 01/26/2022
 ms.author: jswymer
 ---
 
@@ -137,8 +137,11 @@ Currently, the log includes the following operations:
 |Copy environment|An environment was created from a copy of another environment.|[See...](tenant-admin-center-environments-copy.md)|[See...](administration-center-api_environments.md#copy-environment)||
 |Create environment |A new environment was created|[See...](#create-a-new-environment)|[See...](administration-center-api_environments.md#create-new-environment)||
 |Delete environment|An environment was deleted.|[See...](#delete-an-environment)|[See...](administration-center-api_environments.md#delete-environment)||
-|Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
+|Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li></ul>|[See update management...](tenant-admin-center-update-management.md)<br /><br />[See telemetry...](tenant-admin-center-telemetry.md)|[See...](administration-center-api_environment_settings.md)||
 |Move environment|An environment was moved to another Azure Active Directory organization.|[See...](tenant-admin-center-environments-move.md)|||
+|Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
+|Restart environment|Environment was restarted|[See...](tenant-admin-center-manage-sessions.md#restart-environment)||
+|Update|An environment is updated to a newer version.|[See...](tenant-admin-center-update-management.md)|[See...](administration-center-api_environment_settings.md)|
 |Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[See...](appmanagement/app-management-api.md#schedule-environment-hotfix)||
 |Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[See...](administration-center-api_app_management.md#install-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
 |Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[See...](administration-center-api_app_management.md#uninstall-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
