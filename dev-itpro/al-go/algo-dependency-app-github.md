@@ -30,15 +30,14 @@ The `appDependencyProbingPaths` key in the settings expects a json array with th
 
 ```
 
+The following table describes the settings:
 
-`repo` specifies the URL of the foreign repository.
-
-`version` specifies the version of the dependency to be downloaded it could be set to latest or a specific version.
-
-`release_status` specifies the type of release on the foreign repository. The artifacts can be downloaded from a release, prerelease, or a draft.
-
-`authTokenSecret` If the foreign repository is private, to download the artifacts an access token is needed. In this case a secret should be added to GitHub secrets or Azure Key vault and the name of the secret should be provided in the settings.
-
-`projects` specifies the project in a multi project repository. “*” means all projects.
+|Setting|Description|
+|-------|-----------|
+|`repo`|Specifies the URL of the foreign repository.|
+|`version`|Specifies the version of the dependency to be downloaded; it could be set to latest or to a specific version.|
+|`release_status`|Specifies the type of release on the foreign repository. The artifacts can be downloaded from a release, prerelease, or a draft.|
+|`authTokenSecret`|If the foreign repository is private, to download the artifacts an access token is needed. In this case a secret should be added to GitHub secrets or Azure Key Vault and the name of the secret should be provided in the settings.|
+|`projects`|Specifies the project in a multi project repository. “*” means all projects.|
 
 # See also
