@@ -101,7 +101,7 @@ If this stage failed with an error message similar to `The submission must targe
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
 
 > [!NOTE]
-> As the extensions in your submission are validated for each release and country/region targeted by the submissions, the validation results can be really verbose and cannot always be entirely displayed in Partner Center. The error message will then end with `...(Truncated)`. If that happens for your submission, you should either enable Azure Application Insights in your extension, run the self-validation script, or fix the errors visible and iterate on your submission.
+> Because the extensions in your submission are validated for each release and country/region targeted by the submissions, the validation results can be really verbose and cannot always be displayed in their full length in Partner Center. The error message will then end with `...(Truncated)`. If that happens for your submission, you should either enable Azure Application Insights in your extension, run the self-validation script, or fix the errors visible and iterate on your submission.
 
 ### My app failed at the "Certification" stage, what do I do next?
 
