@@ -124,6 +124,7 @@ table 50100 Student
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  
 [SIFT Tuning and Tracing](devenv-sift-tuning-and-tracing.md)  
 [SIFT Performance](devenv-sift-performance.md)  
+[NCCI Overview)](devenv-ncci-overview.md)  
 [NCCI and SQL Server](devenv-ncci-and-sql-server.md)  
 [NCCI Tuning and Tracing](devenv-ncci-tuning-and-tracing.md)  
 [NCCI Performance](devenv-ncci-performance.md)  

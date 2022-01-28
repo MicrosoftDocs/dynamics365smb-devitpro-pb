@@ -22,7 +22,9 @@ With an NCCI, only one index structure exists and needs to be maintained. So the
 
 ## See Also
 
+[NCCI Overview)](devenv-ncci-overview.md)  
+[NCCI and SQL Server](devenv-ncci-and-sql-server.md)  
+[NCCI Performance](devenv-ncci-performance.md)  
+[Migrating from SIFT to NCCI](devenv-migrating-from-sift-to-ncci.md)  
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
-[SIFT and SQL Server](devenv-sift-and-sql-server.md)  
-[SIFT Performance](devenv-sift-performance.md)  
 [FlowFields](devenv-flowfields.md)  

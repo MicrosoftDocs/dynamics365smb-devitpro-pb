@@ -24,7 +24,7 @@ With SIFT keys, any insert, update, or delete operations to the underlying table
 
 ## See Also
 
-[NCCI Overview)](devenv-ncci-technology.md)  
-[NCCI Tuning and Tracing](devenv-ncci-Tuning-and-Tracing.md)  
-[NCCI and Performance](devenv-ncci-Performance.md)  
+[NCCI Overview)](devenv-ncci-overview.md)  
+[NCCI Tuning and Tracing](devenv-ncci-tuning-and-tracing.md)  
+[NCCI Performance](devenv-ncci-performance.md)  
 [Migrating from SIFT to NCCI](devenv-migrating-from-sift-to-ncci.md)  
