@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
-ms.date: 04/01/2021
+ms.date: 01/28/2022
 ms.author: edupont
 ---
 
@@ -53,6 +53,12 @@ To help users set up [!INCLUDE [prod_short](includes/prod_short.md)] on the firs
 
 For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).  
 
+### Help pane
+
+[!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
+
+When the user opens the Help pane, they see content and links to learn more based on where they are in the product. Once users discover the Help pane, they will be able to help themselves get unblocked, we hope.  
+
 ## Help users get unblocked
 
 Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes descriptions for all controls and actions that can be accessed when you choose the caption of the control or action. In combination with descriptive captions and instructional text, these tooltips, or callouts, constitute the larger part of our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
@@ -69,6 +75,10 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 
 > [!TIP]
 > Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
+>
+> [!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]: The *Learn more* links open the Help pane. In most cases, the pane shows the following types of content:
+>
+> [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
 The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) adds another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
 
