@@ -74,11 +74,11 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
 > [!TIP]
-> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
+> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.  
 >
-> [!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]: The *Learn more* links open the Help pane. In most cases, the pane shows the following types of content:
+> Starting in 2022 release wave 1, the Help pane shows content to help the user find the right content.
 >
-> [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
+> For more information, see the [Help users learn more](#help-users-learn-more) section.
 
 The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) adds another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
 
@@ -92,7 +92,19 @@ The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are co
 
 ## Help users learn more
 
-The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative. Users can access this content either through the *Learn more* link in tooltips, or by using the *Ctrl+F1* keyboard shortcut. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).  
+The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative.
+
+Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the *Ctrl+F1* keyboard shortcut.  
+
+### Links in the Help pane
+
+[!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
+
+The *Learn more* links open the Help pane. In most cases, the pane shows the following types of content:
+
+[!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
+
+The partner-provided links are based on the mechanism for adding links through app-level and page-level configuration. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).  
 
 The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
 
@@ -107,7 +119,7 @@ For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)
 
 On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
 
-We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the *dynamics365smb-docs* repo and we cannot address issues or questions about the product.  
+We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. Also, we cannot address issues or questions about the product.  
 
 > [!IMPORTANT]
 > Microsoft only accepts pull requests to the *dynamics365smb-docs* repo, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
