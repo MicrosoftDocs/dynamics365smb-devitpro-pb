@@ -138,6 +138,10 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 > [!NOTE]  
 > Because of the aggregation of frames, there can be minor discrepancies between the information appearing in the CodeLens and in the profiler.
 
+## Sampling profiling
+
+If you choose `Sampling` as the `profilingType` then the `executionContext` property in the configuration file must be set to `Profile`, because debugging is not supported while running sampling profiling.
+
 ## See Also
 
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
