@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
-ms.date: 10/01/2021
+ms.date: 01/28/2022
 ms.author: edupont
 ---
 
@@ -37,7 +37,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > [!TIP]
 > The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
-> We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 16.4, you could have taken a snapshot of the content in GitHub before version 17.0 became available.
+> We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 19.4, you could have taken a snapshot of the content in GitHub before version 20.0 became available.
 
 [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
@@ -119,20 +119,27 @@ Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no f
 You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 Finance and Operations apps. That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 
 > [!IMPORTANT]
-> Currently, search in [!INCLUDE [prod_short](../includes/prod_short.md)] cannot access sites other than the *docs.microsoft.com* site. This limitation also impacts the search tab in the updated help pane that is part of 2021 release wave 2, version 19.0 and later. The search capabilities only apply to the *docs.microsoft.com* site, including Microsoft Learn.
+> Currently, search in the [!INCLUDE [prod_short](../includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.
 >
 > However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
+In versions older than 2022 release wave 1, the in-product search includes searching content on the ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
+
 ### Optional: Get Microsoft's content
 
-If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
+If you deploy a solution that customizes Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. In most other cases, such as if you build an add-on app, you do not need Microsoft's content. Your own content will supplement Microsoft's content in the same way that your code supplements Microsoft's code. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+
+> [!IMPORTANT]
+> The remainder of this section is for those people who need a copy of Microsoft's content to deploy to a website along with their own content.  
+
+Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
 > [!TIP]
 > The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
-Let's take an example: You are deploying version 17.4 on-premises for a customer in Belgium in June 2021. Back in March 2021, you knew that version 18.0 was coming up, so you ran the [custom help toolkit's HtmlFromRepoGenerator tool](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's source files from the relevant repos. In this example, you would configure the tool to process the following repos:
+Let's take an example: In January 2022, you were deploying version 19.2 on-premises for a customer in Belgium. You knew that version 20.0 was coming up, so you ran the [custom help toolkit's HtmlFromRepoGenerator tool](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) to get the latest version of Microsoft's source files from the relevant repos. In this example, you would configure the tool to process the following repos:
 
 * [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)  
 * [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.fr-be](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.fr-be)  

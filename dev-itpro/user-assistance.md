@@ -106,7 +106,13 @@ The *Learn more* links open the Help pane. In most cases, the pane shows the fol
 
 The partner-provided links are based on the mechanism for adding links through app-level and page-level configuration. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).  
 
-The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
+The following screenshot illustrates the Help pane when it is opened from a *Learn more* link on a tooltip for the **Due Date** field in the **Purchase Invoice** page.
+
+:::image type="content" source="media/ua_help_pane.png" alt-text="Help pane with tooltip text, page metadata link, and links to Docs.microsoft.com.":::
+
+In this case, the **Purchase Invoice** page has not been extended by any apps. If two apps had extended the page, their page-level and app-level configuration would be used to add links on a card between the *About this page or task* and *Related articles from Microsoft Docs* cards.  
+
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
 
 There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 

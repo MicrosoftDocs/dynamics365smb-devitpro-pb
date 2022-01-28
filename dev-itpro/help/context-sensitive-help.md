@@ -1,17 +1,19 @@
 ---
-title: "Configure Context-Sensitive Help"
+title: Configure Context-Sensitive Help
 description: Learn about how to add context-sensitive Help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.service: dynamics365-business-central
 ms.author: edupont
-ms.date: 04/01/2021
+ms.date: 01/28/2022
 ---
 
 # Configure Context-Sensitive Help
 
 A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in. When you build an app for [!INCLUDE [prod_short](../includes/prod_short.md)] online, we expect you to provide Help for your solution that can be accessed from the *Learn more* links on tooltips. For more information, see [Help users learn more](../user-assistance.md#help-users-learn-more).  
+
+Starting in 2022 release wave 1, version 20, the *Learn more* links open the Help pane. The same mechanism makes sure that your links are available in the Help pane.
 
 The *Learn more* links are generated based on two configuration settings:
 
