@@ -79,7 +79,7 @@ The following feature will be deprecated with [!INCLUDE[prod_short](../developer
 
 |Moved, Removed, or Replaced? |	Why?|
 |-----------------------------|-----|
-|Removed| The nativeInvoicing API will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2. Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] standard APIs instead. For more information, see [link]().|
+|Removed| The nativeInvoicing API will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2. Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] standard APIs instead. For more information, see [API(V2.0) for Dynamics 365 Business Central](../api-reference/v2.0/index.md).|
 
 ## Changes in 2021 release wave 2 (version 19.0)
 
