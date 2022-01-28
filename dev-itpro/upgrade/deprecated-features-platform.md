@@ -3,7 +3,7 @@ title: "Deprecated features in client, server, database"
 description: Describes the features that have been removed or replaced in the platform components of Business Central. 
 author: bholtorf
 ms.custom: na
-ms.date: 01/19/2022
+ms.date: 01/28/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,7 +73,7 @@ The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps 
 |---------|---------|
 |Replaced | Introduced back in 2018 and replaced with new endpoints several releases ago the legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being finally discontinued. Since more than a year ago actions based on these endpoints are not exposed in the Power Automate or Power Apps UI in any form. Partners are also educated and encouraged to use actions based on current V3 endpoints, so in 2022 we will be completely removing access to V1 endpoints in our connector. Any partners and customers who had in the past created a flow or app based on these olde endpoints and have not moved to the new ones needs to update their Power Automate flows or Power Apps now and switch to V3 actions. |
 
-### <a name="invoicingapi"></a>nativeInvoicing APIs
+### <a name="invoicingapi"></a>Deprecating nativeInvoicing APIs
 
 The following feature will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
 
