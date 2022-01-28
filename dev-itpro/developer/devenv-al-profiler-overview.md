@@ -142,6 +142,13 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 
 If you choose `Sampling` as the `profilingType` then the `executionContext` property in the configuration file must be set to `Profile`, because debugging is not supported while running sampling profiling.
 
+
+The following server restrictions exist for sampling profiling: 
+
+- The maximum duration of a sampling session is 10 minutes. Configurable server setting. 
+- The number of stack frame entries is limited to 2000. Configurable server setting.
+
+
 ## See Also
 
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
