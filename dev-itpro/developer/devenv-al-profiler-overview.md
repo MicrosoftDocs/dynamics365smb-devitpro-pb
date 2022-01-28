@@ -140,8 +140,13 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 
 ## Sampling profiling
 
-If you choose `Sampling` as the `profilingType` then the `executionContext` property in the configuration file must be set to `Profile`, because debugging is not supported while running sampling profiling.
+Sampling profiling is useful for an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code.
 
+To start sampling profiling, you must choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And then the `executionContext` property must be set to `Profile`, because debugging is not supported while running sampling profiling.
+
+```json
+
+```
 
 The following server restrictions exist for sampling profiling: 
 
