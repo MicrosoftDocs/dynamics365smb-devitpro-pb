@@ -159,7 +159,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prod_short](../develo
     ```  
     {
         "url": "https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.3.0.0/*",
-        "type": "Spa"
+        "type": "Web"
     }
     ```  
 
