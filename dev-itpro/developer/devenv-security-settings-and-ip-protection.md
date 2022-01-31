@@ -145,5 +145,5 @@ Specifying the `applicationInsightsConnectionString` setting for your extension,
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
-[AL Development Environment](devenv-reference-overview.md)  
+[AL Development Reference](devenv-reference-overview.md)  
 [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md)  
