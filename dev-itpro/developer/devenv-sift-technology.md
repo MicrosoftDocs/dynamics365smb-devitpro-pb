@@ -1,5 +1,6 @@
 ---
 title: "SumIndexField Technology (SIFT)"
+description: Provides an introduction to SIFT indexes in Business Central.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -17,4 +18,5 @@ SumIndexField Technology \(SIFT\) lets you quickly calculate the sums of numeric
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  
 [SIFT Tuning and Tracing](devenv-sift-tuning-and-tracing.md)  
 [SIFT Performance](devenv-sift-performance.md)  
+[Migrating from SIFT to NCCI](devenv-migrating-from-sift-to-ncci.md)
 [FlowFields](devenv-flowfields.md)

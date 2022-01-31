@@ -577,13 +577,14 @@
 <!-- end Rules and Guidelines -->
 <!-- AL programming -->
 ## AL Programming
-### [AL Development Environment](developer/devenv-reference-overview.md)
+### [AL Development Reference](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
 ### [Working with AL Methods](developer/devenv-al-methods.md)
+### [System-Defined Variables](developer/devenv-system-defined-variables.md)
 ### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
 #### [Region Directive](developer/directives/devenv-directive-region.md)
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
@@ -1273,6 +1274,12 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### Nonclustered Columnstore Indexes (NCCI)
+#### [NCCI Overview](developer/devenv-ncci-overview.md)
+#### [NCCI and SQL Server](developer/devenv-ncci-and-sql-server.md)
+#### [NCCI Tuning and Tracing](developer/devenv-ncci-tuning-and-tracing.md)
+#### [NCCI Performance](developer/devenv-ncci-performance.md)
+#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
 ### SumIndexField Technology (SIFT)
 #### [SIFT Overview](developer/devenv-sift-technology.md)
 #### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
