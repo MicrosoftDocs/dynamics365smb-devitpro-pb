@@ -68,7 +68,7 @@ query 20000 "APIV1 - Customer Sales"
 ```
 
 ## See Also
-[AL Development Environment](devenv-reference-overview.md)  
+[AL Development Reference](devenv-reference-overview.md)  
 [API Page Type](devenv-api-pagetype.md)  
 [APIPublisher Property](properties/devenv-apipublisher-query-property.md)  
 [APIGroup Property](properties/devenv-apigroup-query-property.md)  
