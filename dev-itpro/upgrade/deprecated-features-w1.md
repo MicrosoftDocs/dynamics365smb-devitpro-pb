@@ -17,8 +17,6 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
-## Changes in 2021 release wave 2
-
 ### Standard APIs, Beta version
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2.
