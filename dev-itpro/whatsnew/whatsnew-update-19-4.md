@@ -22,15 +22,16 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes  
 - [Delegated admin can create job queue entries and request approval by a licensed user](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
-- [Use secondary read-only database for Power BI reporting](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-secondary-read-only-database-power-bi-reporting)
+- [Allow Delegated Admin to Setup Cloud Migration](XX)
 
 ## Localization updates
 
-| Country| Feature change |
-|-------------|--------------|
-|XXXX | Insert your text here
-|XXXX | Insert your text here|
-|XXXX | Insert your text here
+| Country| Feature  |Description|
+|-------------|--------------|--------------|
+|Mexico | CFDI Cancellation Schema changes|As of 2022, it will be necessary to indicate the reason for the cancellation of the vouchers. We have added the list of reasons that can be selected for the posted document before cancellation | 
+|Norway | February update for the Electronic VAT return submission feature | Various changes made for the existing Norwegian feature have been made: *Fix issue with opening service connections when Electronic VAT Setup does not exist*, *Fix issue with validating the sign of VAT Statement Report Line when VAT Code has "SAF-T VAT Code" specified*, *Add missed VAT code “1T”*, and *Add possibility to copy reporting codes to SAF-T codes* |
+|Germany | Improve the visibility of the Elster xml file’s content |We have added a possibility to see the amounts from the resulted Elster xml file |
+|Italy | Intrastat changes |We have changed the export format to be aligned with the new format |
 
 
 ## Release Plan  
