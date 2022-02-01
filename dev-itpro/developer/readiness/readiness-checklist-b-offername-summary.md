@@ -17,13 +17,13 @@ ms.author: a-emniel
 
 When creating a name for your offer, you can use the following two naming structures:
 
-- Name 1: [Your offer name] for (Microsoft) Dynamics 365 Business Central 
+- Name 1: [Your offer name] for Dynamics 365 Business Central 
 
-    *Example: Sales & Inventory Forecast for Microsoft Dynamics 365 Business Central*
+    *Example: QR Generator for Dynamics 365 Business Central*
 
 - Name 2: Your offer name only 
 
-    *Example: Sales & Inventory Forecast*  
+    *Example: QR Generator*  
 
 
 
