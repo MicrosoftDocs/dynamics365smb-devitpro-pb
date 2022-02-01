@@ -46,12 +46,15 @@ If you set the ValidateTableRelation property to **false**, then you should also
 Whether set to **true** or **false**, as a user types data in the field, a lookup opens and shows all entries that match what was typed. The difference is how the lookup behaves:
 
 - With the property set to **true**, the entry that best matches what the user has typed is automatically selected in the lookup. Pressing the Tab or Enter key will save the selected entry. If there's no entry that matches what the user has typed, the empty lookup stays open. Pressing Tab or Enter when there's no match causes a validation error.
-- With the property to **false**, no entry is automatically selected in the lookup - focus remains in the field. Pressing Tab or Enter will save whatever value the user has entered so far, letting the user enter free text. If there's no entry that matches what the user has typed, the lookup closes. To select an entry in the lookup, the user has to do it manually, for example, by pressing the down arrow to move focus into the lookup.
+- With the property to **false**, no entry is automatically selected in the lookup - focus stays on the field. Pressing Tab or Enter will save whatever value the user has entered so far, letting the user enter free text. If there's no entry that matches what the user has typed, the lookup closes. To select an entry in the lookup, the user has to do it manually, for example, by pressing the down arrow to move focus into the lookup.
 
 > [!NOTE]
 > The behavior of the ValidateTableRelation property when **false** was changed in Business Central 2020 release wave 1 (runtime 8.0). In earlier versions, lookup has the following behavior:
 > When typing in the field, focus switches to an entry in the lookup.
 > The lookup stays open even if there's no match to what is typed in the field.
+
+> [!TIP]
+> If the field isn't part of a key, using the [OnAfterLookup (Page Field) Trigger](../triggers-auto/pagefield/devenv-onafterlookup-pagefield-trigger.md) can be useful way to resolve the right record when a user picks something from a lookup that's not a key.
 
 ## See Also  
 
