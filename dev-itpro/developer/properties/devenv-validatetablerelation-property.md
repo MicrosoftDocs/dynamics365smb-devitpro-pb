@@ -43,10 +43,12 @@ If you want to let users enter any value without validating the entry, then choo
   
 If you set the ValidateTableRelation property to **false**, then you should also set the TestTableRelation property to **false**. Otherwise, a database test on the field relations in a database may fail.  
 
-Whether set to **true** or **false**, as a user types data in the field, a lookup opens and shows all entries that match what was typed. The difference is how the lookup behaves:
+### Lookup behavior
 
-- With the property set to **true**, the entry that best matches what the user has typed is automatically selected in the lookup. Pressing the Tab or Enter key will save the selected entry. If there's no entry that matches what the user has typed, the empty lookup stays open. Pressing Tab or Enter when there's no match causes a validation error.
-- With the property to **false**, no entry is automatically selected in the lookup - focus stays on the field. Pressing Tab or Enter will save whatever value the user has entered so far, letting the user enter free text. If there's no entry that matches what the user has typed, the lookup closes. To select an entry in the lookup, the user has to do it manually, for example, by pressing the down arrow to move focus into the lookup.
+Whether the property is set to **true** or **false**, as a user types data in the field, a lookup opens and shows a filtered list of entries that match what was typed. The difference is how the lookup behaves:
+
+- When **true**, the entry that best matches what the user has typed is automatically selected in the lookup. Pressing the Tab or Enter key will save the selected entry. If there's no entry that matches what the user has typed, the empty lookup stays open. Pressing Tab or Enter when there's no match causes a validation error.
+- When **false**, no entry is automatically selected in the lookup - focus stays on the field. Pressing Tab or Enter will save whatever value the user has entered so far, letting the user enter free text. If there's no entry that matches what the user has typed, the lookup closes. To select an entry in the lookup, the user has to do it manually, for example, by pressing the down arrow to move focus into the lookup.
 
 > [!NOTE]
 > The behavior of the ValidateTableRelation property when **false** was changed in Business Central 2020 release wave 1 (runtime 8.0). In earlier versions, lookup has the following behavior:
