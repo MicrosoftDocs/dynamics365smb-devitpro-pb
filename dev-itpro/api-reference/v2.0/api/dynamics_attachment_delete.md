@@ -20,7 +20,7 @@ Deletes attachments in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-DELETE businesscentralPrefix/companies({companyId})/attachments({parentId},{attachmentId})
+DELETE businesscentralPrefix/companies({companyId})/attachments({attachmentId})
 ```
 
 ## Request headers

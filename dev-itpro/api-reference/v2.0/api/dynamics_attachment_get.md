@@ -20,7 +20,7 @@ Retrieve the properties and relationships of an attachments object for [!INCLUDE
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/attachments$filter=parentId eq {journalLineId}
+GET businesscentralPrefix/companies({id})/attachments$filter=parentId eq {journalLineId} and parentType eq ‘Journal’
 ```
 
 > [!NOTE]  
