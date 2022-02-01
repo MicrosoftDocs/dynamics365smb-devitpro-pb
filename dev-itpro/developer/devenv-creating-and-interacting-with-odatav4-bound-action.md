@@ -117,7 +117,7 @@ POST /ODataV4/Company({companyName})/SalesInvoiceCopy({id})/NAV.Copy
 
 
 ## See Also
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
 [Exporting Permission Sets](devenv-export-permission-sets.md)  
