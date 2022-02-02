@@ -26,28 +26,20 @@ The following lists some of the error handling methods that are available in AL,
 > [!TIP]  
 > If you already know the name of a data type, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster.
 
-For the [Dialog Data Type](methods-auto/dialog/dialog-data-type.md):
+|Data Type| Method|
+|---------|-------|
+|[Dialog Data Type](methods-auto/dialog/dialog-data-type.md)|[Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md) |
+|[System Data Type](methods-auto/system/system-data-type.md)|[ClearLastError Method](methods-auto/system/system-clearlasterror-method.md) <br>[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)<br>[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)<br>[GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)<br>[GetLastErrorText Method](methods-auto/system/system-getlasterrortext-method.md)|
+|[ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) | Contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages. Go to the data type topic for an overview.|
 
-- [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md)  
+|Option Type|
+|-----------|
+|[ErrorType Option Type](methods-auto/errortype/errortype-option.md)|
+|[ErrorBehavior Option Type](methods-auto/errorbehavior/errorbehavior-option.md)|
 
-For the [System Data Type](methods-auto/system/system-data-type.md):
-
-- [ClearLastError Method](methods-auto/system/system-clearlasterror-method.md)  
-- [GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)  
-- [GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)  
-- [GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)  
-- [GetLastErrorText Method](methods-auto/system/system-getlasterrortext-method.md)  
-
-The [ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages.
-
-The following error option types are available for AL:
-
-[ErrorType Option Type](methods-auto/errortype/errortype-option.md)
-[ErrorBehavior Option Type](methods-auto/errorbehavior/errorbehavior-option.md)
-
-the following error attributes are available for AL:
-
-[ErrorBehavior Attribute](methods-auto/errorbehavior/errorbehavior-attribute.md)
+|Attribute|
+|---------|
+|[ErrorBehavior Attribute](methods-auto/errorbehavior/errorbehavior-attribute.md)|
 
 
 ## See also
