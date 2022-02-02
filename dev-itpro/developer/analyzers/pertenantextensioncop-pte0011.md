@@ -21,6 +21,11 @@ The extension publisher length must not exceed the specified limit.
 The extension publisher length must not exceed the specified limit.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+This rule verifies that the extension publisher specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

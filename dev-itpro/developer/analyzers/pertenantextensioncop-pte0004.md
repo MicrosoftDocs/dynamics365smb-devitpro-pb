@@ -21,6 +21,52 @@ Table definitions must have a matching permission set.
 Table definitions must have a matching permission set.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+In order to prevent runtime issues caused by missing permissions, all table definitions in your extension must be included in a permission set.
+
+## How to fix this diagnostic?
+
+Permissions can be defined either using XML, or using AL permission set objects.
+
+In order to generate XML permission sets, you can use the dedicated command in Visual Studio Code:
+1. Press Ctrl + Shift + P in order to open the command palette
+2. Select 'AL: Generate permission set containing current extension objects'. This will generate the XML permission set for your extension.
+3. Rebuild your extension with Ctrl + Shift + B to package the permission set with your extension.
+
+In order to create AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
+
+## Code examples not trigger the rule
+
+For the following example, let's consider an extension that has the following source code:
+
+```AL
+table 50100 MyTable
+{
+    fields
+    {
+        field(1; MyField; Integer) { }
+    }
+}
+```
+
+### Example 1 - Permission defined in XML
+
+```XML
+
+```
+
+The XML permission set grant access to the table and satisfies then the validation.
+
+### Example 2 - Permission defined in AL
+
+```
+
+```
+
+The AL permission set grant access to the table and satisfies then the validation.
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
