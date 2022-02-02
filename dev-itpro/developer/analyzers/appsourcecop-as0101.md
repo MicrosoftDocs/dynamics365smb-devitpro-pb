@@ -1,6 +1,6 @@
 ---
-title: "AppSourceCop Error AS0077"
-description: "Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it."
+title: "AppSourceCop Error AS0101"
+description: "Any change to the 'Isolated' argument is disallowed because it may break depdendent extensions that have subscribed to the event."
 ms.author: solsen
 ms.custom: na
 ms.date: 02/02/2022
@@ -14,11 +14,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Error AS0077
-Adding a var modifier in events is not allowed
+# AppSourceCop Error AS0101
+The 'Isolated' argument cannot be changed, added, or removed.
 
 ## Description
-Adding a var modifier in events is not allowed as it might break the runtime behavior of extensions subscribing to it.
+Any change to the 'Isolated' argument is disallowed because it may break depdendent extensions that have subscribed to the event.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

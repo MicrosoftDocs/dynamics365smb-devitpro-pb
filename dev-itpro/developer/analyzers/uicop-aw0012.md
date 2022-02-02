@@ -1,9 +1,10 @@
 ---
 title: "UICop Warning AW0012"
-description: "The Web client does not support About properties in certain contexts."
+description: "
+      The Web client does not support using properties for teaching tips in certain contexts."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 02/02/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,10 +16,11 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # UICop Warning AW0012
-The Web client does not support About properties in certain contexts.
+The Web client does not support properties for teaching tips in certain contexts.
 
 ## Description
-The Web client does not support About properties in certain contexts. Please see the properties' documentation for further information.
+
+      The Web client does not support using properties for teaching tips in certain contexts. Please see the following property topics for more information: [AboutTitle Property](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttitle-property), [AboutTitleML Property](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttitleml-property), [AboutText Property](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttext-property), and [AboutTextML Property](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-abouttextml-property).
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

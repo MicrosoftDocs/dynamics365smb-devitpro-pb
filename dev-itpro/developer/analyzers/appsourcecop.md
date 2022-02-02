@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/17/2022
+ms.date: 02/02/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -88,8 +88,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0074](appsourcecop-as0074.md)|The Obsolete Tag must be the same across branches.|Design|Hidden|
 |[AS0075](appsourcecop-as0075.md)|Obsolete Reason must be set.|Design|Warning|
 |[AS0076](appsourcecop-as0076.md)|Obsolete Tag format.|Design|Hidden|
-|[AS0077](appsourcecop-as0077.md)|Adding a var modifier in events is not allowed|Upgrade|Warning|
-|[AS0078](appsourcecop-as0078.md)|Adding or removing a var modifier in external procedures is not allowed|Upgrade|Warning|
+|[AS0077](appsourcecop-as0077.md)|Adding a var modifier in events is not allowed|Upgrade|Error|
+|[AS0078](appsourcecop-as0078.md)|Adding or removing a var modifier in external procedures is not allowed|Upgrade|Error|
 |[AS0079](appsourcecop-as0079.md)|An affix is required for procedures defined in extension objects.|Extensibility|Warning|
 |[AS0080](appsourcecop-as0080.md)|Fields must not decrease in length|Upgrade|Error|
 |[AS0081](appsourcecop-as0081.md)|InternalsVisibleTo should not be used as a security feature.|Extensibility|Warning|
@@ -112,7 +112,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0098](appsourcecop-as0098.md)|An affix is needed.|Extensibility|Warning|
 |[AS0099](appsourcecop-as0099.md)|The member ID should be within the allowed range|Extensibility|Info|
 |[AS0100](appsourcecop-as0100.md)|The 'application' property in the app.json file must be specified.|Extensibility|Error|
-|[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Warning|
+|[AS0101](appsourcecop-as0101.md)|The 'Isolated' argument cannot be changed, added, or removed.|Upgrade|Error|
+|[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
