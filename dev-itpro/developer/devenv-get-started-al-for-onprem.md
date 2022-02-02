@@ -38,5 +38,5 @@ To get started with a mixed development environment of C/SIDE and AL, you must f
 > Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/al).
 
 ## See Also 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  

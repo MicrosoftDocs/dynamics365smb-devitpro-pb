@@ -63,6 +63,6 @@ entitlement BC_PerUserServicePlan
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permission Set Extension Object](devenv-permissionset-ext-object.md)

@@ -47,5 +47,5 @@ codeunit 50113 CreateCustomer
 [Developing Extensions](devenv-dev-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [XML Comments in Code](devenv-xml-comments.md)
