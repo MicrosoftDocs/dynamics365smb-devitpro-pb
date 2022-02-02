@@ -37,7 +37,7 @@ In order to generate XML permission sets, you can use the dedicated command in V
 
 In order to create AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
 
-## Code examples not trigger the rule
+## Code examples not triggering the rule
 
 For the following example, let's consider an extension that has the following source code:
 
@@ -54,7 +54,21 @@ table 50100 MyTable
 ### Example 1 - Permission defined in XML
 
 ```XML
-
+<?xml version="1.0" encoding="utf-8"?>
+<PermissionSets>
+  <PermissionSet RoleID="ALPROJECT15" RoleName="ALProject15">
+    <Permission>
+      <ObjectID>50100</ObjectID>
+      <ObjectType>0</ObjectType>
+      <ReadPermission>1</ReadPermission>
+      <InsertPermission>1</InsertPermission>
+      <ModifyPermission>1</ModifyPermission>
+      <DeletePermission>1</DeletePermission>
+      <ExecutePermission>0</ExecutePermission>
+      <SecurityFilter />
+    </Permission>
+  </PermissionSet>
+</PermissionSets>
 ```
 
 The XML permission set grant access to the table and satisfies then the validation.
@@ -62,7 +76,11 @@ The XML permission set grant access to the table and satisfies then the validati
 ### Example 2 - Permission defined in AL
 
 ```
-
+permissionset 50100 MyPermissionSet
+{
+    Assignable = true;
+    Permissions = tabledata MyTable = RIMD;
+}
 ```
 
 The AL permission set grant access to the table and satisfies then the validation.
