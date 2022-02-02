@@ -23,8 +23,7 @@ The extension name length must not exceed the specified limit.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-
-This rule verifies that the extension name specified in the [app.json](../devenv-json-files.md) does not exceed 50 characters.
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0047](appsourcecop-as0047.md).
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  

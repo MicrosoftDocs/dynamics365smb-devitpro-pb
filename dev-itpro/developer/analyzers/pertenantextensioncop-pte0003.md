@@ -23,7 +23,7 @@ Functions must not subscribe to CompanyOpen events.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], extensions should no longer use the **OnBeforeCompanyOpen** and **OnAfterCompanyOpen** events. For more information, see [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](../../compliance/apptest-onbeforecompanyopen.md).
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0061](appsourcecop-as0061.md).
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
