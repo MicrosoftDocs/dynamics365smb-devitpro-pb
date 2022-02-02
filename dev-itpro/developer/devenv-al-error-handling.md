@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # AL Error Handling
 
-There are a number of error handling features in AL that can help you deal with unexpected situations that occur when code is run. This section contains topics about using these methods in AL to handle these errors that occur during code execution, while making sure that your application has a consistent user interface. The following conceptual topics introduce error handling in AL.
+There are a number of error handling features in AL that can help you deal with unexpected situations that occur when code is run. This section contains topics about using these methods in AL to handle these errors that occur during code execution, while making sure that your application has a consistent user interface. The following topics introduce error handling in AL.
 
 - [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)  
 - [Collecting Errors](devenv-error-collection.md)  
@@ -21,7 +21,10 @@ There are a number of error handling features in AL that can help you deal with 
 
 ## Error handling methods in AL
 
-The following error handling methods are available in AL.
+The following lists some of the error handling methods that are available in AL, but this is not an exhaustive list. Many data types offer error handling for specific areas such as operations on FieldRef and Records. 
+
+> [!TIP]  
+> If you already know the name of a data type, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster.
 
 For the [Dialog Data Type](methods-auto/dialog/dialog-data-type.md):
 
@@ -37,9 +40,15 @@ For the [System Data Type](methods-auto/system/system-data-type.md):
 
 The [ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages.
 
-The following error option type is available for AL:
+The following error option types are available for AL:
 
-[ErrorType Option](methods-auto/errortype/errortype-option.md)
+[ErrorType Option Type](methods-auto/errortype/errortype-option.md)
+[ErrorBehavior Option Type](methods-auto/errorbehavior/errorbehavior-option.md)
+
+the following error attributes are available for AL:
+
+[ErrorBehavior Attribute](methods-auto/errorbehavior/errorbehavior-attribute.md)
+
 
 ## See also
 
