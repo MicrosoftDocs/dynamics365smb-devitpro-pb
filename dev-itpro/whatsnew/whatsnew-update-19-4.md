@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes  
 - [Delegated admin can create job queue entries and request approval by a licensed user](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
-- [Allow Delegated Admin to Setup Cloud Migration](XX)
+- Allow Delegated Admin to Setup Cloud Migration
 
 ## Localization updates
 
@@ -45,6 +45,9 @@ Please note that new customers will automatically get the latest builds of Busin
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
+
+**Avoid an expected data upgrade during cloud migration**  
+When you run cloud migration from a previous version of Business Central, one of the process steps is to run the data upgrade logic to align the migrated data to the format of the current version. We strongly recommend that you perform this step one time after you have completed the migration of all your customer’s data to the online environment. If a planned Business Central major or minor update is applied to this environment, the update will automatically include the upgrade of the data that was migrated by the cloud migration. These planned updates also turn off cloud migration for the environment. To avoid this situation, and to allow you to complete the migration and data upgrade for your environment, we recommend that you postpone any scheduled major and minor updates for the target environment until you have completed cloud migration. You can postpone updates in the Business Central admin center. For more information, see [Managing Updates](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management). 
 
 **Upcoming Business Central Office Hours Calls**  
 Make sure to join the office hours call 'How to use OAuth, when calling Business Central APIs and web services' on February 22. The call is at 5.00pm - 6.00pm CET / 08.00am -09.00am PST. Register and stay tuned for upcoming calls: https://aka.ms/BCOfficeHours. Watch on-demand recordings: https://aka.ms/BCOfficeHoursRecordings. 
