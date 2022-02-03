@@ -29,8 +29,18 @@ The following lists some of the error handling methods that are available in AL,
 |Data Type| Method|
 |---------|-------|
 |[Dialog Data Type](methods-auto/dialog/dialog-data-type.md)|[Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md) |
-|[System Data Type](methods-auto/system/system-data-type.md)|[ClearLastError Method](methods-auto/system/system-clearlasterror-method.md) <br>[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)<br>[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)<br>[GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)<br>[GetLastErrorText Method](methods-auto/system/system-getlasterrortext-method.md)|
+|[System Data Type](methods-auto/system/system-data-type.md)|[ClearLastError Method](methods-auto/system/system-clearlasterror-method.md) <br>[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)<br>[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)<br>[GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)<br>[GetLastErrorText Method](methods-auto/system/system-getlasterrortext--method.md)|
 |[ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) | Contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages. Go to the data type topic for an overview.|
+
+## Examples
+
+For examples of how some of these error handling methods are implemented in the base application, see the following table:
+
+|Method|Base Application Reference|
+|-----|-----|
+|[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)| See codeunit `JobQueueErrorHandler`.|
+|[ClearLastError Method](methods-auto/system/system-clearlasterror-method.md)|See codeunit `BatchProcessingMgt`.|
+
 
 ## See also
 
