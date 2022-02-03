@@ -21,6 +21,10 @@ Fields must use ApplicationArea property.
 Fields must use ApplicationArea property.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0062](appsourcecop-as0062.md).
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
