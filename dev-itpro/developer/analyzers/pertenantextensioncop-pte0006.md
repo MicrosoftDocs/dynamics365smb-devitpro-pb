@@ -23,6 +23,7 @@ Encryption key functions must not be invoked.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 This rule validates that your extension does not invoke the following methods because they are only supported on-premises:
+
 - [CreateEncryptionKey](../methods-auto/system/system-createencryptionkey-method.md)
 - [DeleteEncryptionKey](../methods-auto/system/system-deleteencryptionkey-method.md)
 - [ExportEncryptionKey](../methods-auto/system/system-exportencryptionkey-method.md)
@@ -33,7 +34,7 @@ This rule validates that your extension does not invoke the following methods be
 
 ## How to fix this diagnostic?
 
-You must remove the references to the encryption key functions from your AL code.
+You must remove the references to the encryption key methods from your AL code.
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
