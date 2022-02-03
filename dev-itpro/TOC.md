@@ -346,7 +346,6 @@
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
 ### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
 ## Extending the Base Application
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
