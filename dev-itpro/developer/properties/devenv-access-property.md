@@ -100,6 +100,9 @@ codeunit 50113 MyCodeunit
 > [!IMPORTANT]  
 > This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection-based mechanisms such as `RecordRef`, or `TransferFields`. And the `OnRun` trigger can be run on `internal` codeunits by using `Codeunit.Run`. Setting the object accessibility level as `Access = Internal;` *cannot* be used as a security boundary. Also see [JSON Files](../devenv-json-files.md#Appjson).
 
+> [!NOTE]
+> The accessibility of tables and table fields is taken into account when using [Designer](../devenv-inclient-designer.md). As a consequence, only table fields which have their accessibility set to `Public` can be added to the page. 
+
 ## See Also  
 [Properties](devenv-properties.md)   
 [Extensible Property](devenv-extensible-property.md)   

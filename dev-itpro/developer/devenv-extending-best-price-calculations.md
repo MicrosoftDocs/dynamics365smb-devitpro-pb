@@ -13,38 +13,42 @@ author: bholtorf
 # Extending Price Calculations
 If you offer special prices and line discounts for sales and purchases, [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] can automatically calculate prices on sales and purchase documents, and on job and item journal lines. The price is the lowest permissible price with the highest permissible line discount on a given date. [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] automatically calculates the price when it inserts the unit price and the line discount percentage for items on new document and journal lines. For more information, see [Price Calculation](/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements#best-price-calculation).
 
-This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as "Business Central Version 15" in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1 and later. 
+This topic describes how price calculations are implemented in 2020 release wave 1 (referred to as "Business Central Version 16" in the illustrations), and provides comparisons with 2019 release wave 2 (referred to as Business Central Version 15 in the illustrations) to show what we have changed. It also provides some examples of how you can extend price calculations in 2020 release wave 1 and later. 
 
 ## Price Calculation Setup
 Price calculations are based on the **Price Calculation Setup** table, where you can choose an existing implementation, as shown in the following image.
 
 :::image type="content" source="../media/best-pricing-diagram1-setup.png" alt-text="Diagram showing a price calculation implementation.":::
 
-The Price Calculation Setup table has the Code field as its primary key. The value of the field is calculated by combining the values in the Method, Type, Asset Type, and Implementation fields. For example, it is '[1-1-0]-7003' for the setup line when the following fields contain the following values: 
+The Price Calculation Setup table has the Code field as its primary key. The value of the field is calculated by combining the values in the Method, Type, Product Type, and Implementation fields. For example, it is **[1-1-0]-7003** for the setup line when the following fields contain the following values: 
 
-- Method contains Lowest Price
-- Type contains Sale
-- Asset Type contains All
-- Implementation is Business Central (Version 15.0)"
+- **Method** contains **Lowest Price**
+- **Type** contains **Sale**
+- **Product Type** contains **All**
+- **Implementation** contains **Business Central (Version 15.0)**
 
-You can have multiple setups with the same combination of method, type, and asset type. The implementation value should always be different though, because each implementation provides different calculations. The default implementation is defined by the Default field. For example, in 2020 release wave 1 the following setups are available:
+You can have multiple setups with the same combination of method, type, and product type. The implementation should always be different though, because each implementation provides different calculations. The default implementation is defined by the **Default** field. For example, in 2020 release wave 1 the following setups are available:
 
-|Method  |Type  |Asset Type  |Implementation  |Default  |
+|Method  |Type  |Product Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
 |Lowest Price|Sale|All|Business Central (Version 15.0)|X|
 |Lowest Price|Sale|All|Business Central (Version 16.0)| |
 
-By default, all sales lines use the "Business Central (Version 15.0)" implementation to calculate prices, unless the second line has detailed setup lines that define exceptions. 
+By default, all sales lines use the Business Central (Version 15.0) implementation to calculate prices, unless the second line has a detailed setup that defines exceptions. 
 
-The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and asset type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an asset (Item, Resource, and so on) on the document line. If we find a matching setup, we use its implementation for price calculation. If there is no matching setup exception, we use the default implementation. 
+The Price Calculation method on the document line searches for a setup that that has a matching combination of the method, the price type, and product type on the document line. The method then searches for detailed lines that contain exceptions for the combination of a source group (Customer, Vendor, and Job) and an product (item, resource, and so on) on the document line. If a matching setup is found its implementation is used to calculate a price. If there is no matching setup exception, we use the default implementation. 
 
-For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is "Business Central (Version 15.0)," but "Business Central (Version 16.0)" implementation contains a detailed setup line for Item 1000. That means that the "Business Central (Version 16.0)" implementation will calculate the price. 
-Detailed setup records are to be entered by users and only make sense for the non-default setup records. The following image shows the relation between the setup line and the detailed setup.
+For example, let's say we have a line on a sales order for Customer 20000 contains item 1000. The default implementation for the sale of any asset is Business Central (Version 15.0), but the Business Central (Version 16.0) implementation contains a detailed setup line for Item 1000. That means that the Business Central (Version 16.0) implementation will calculate the price. 
+
+You can enter detailed setup records for non-default setup lines. The following image shows the relation between a setup line and a detailed setup.
 
 :::image type="content" source="../media/best-pricing-diagram2-detailed-setup.png" alt-text="Diagram showing an example of a default setup.":::
 
-For the Business Central (Version 15.0) implementation, you can only edit the Default field. The records are inserted by the codeunits that subscribe to the OnFindSupportedSetup() event in the Price Calculation Mgt. codeunit. The two price calculation implementation codeunits add pairs of such records, one for the sale of assets and another for purchases. 
+For a Business Central (Version 15.0) implementation, you can only edit the Default field. The records are inserted by the codeunits that subscribe to the OnFindSupportedSetup() event in the Price Calculation Mgt. codeunit. The two price calculation implementation codeunits add pairs of such records, one for the sale of products and another for purchases. 
+
 Because the Price Calculation Setup table is extensible, you can add new fields to the key by subscribing to the OnAfterDefineCode() event.
+
+Each codeunit that implements the **Price Calculation** interface must subscribe to the OnFindSupportedSetup() event of the Price Calculation Mgt codeunit to fill the price calculation setup table with new options.
 
 ### Price Type
 The Type field is an extensible Price Type enum that contains the following values:
@@ -55,8 +59,8 @@ The Type field is an extensible Price Type enum that contains the following valu
 
 The values are part of the composite key in the Price Calculation Setup table. Sales and service lines use the Sale type, purchase lines use the Purchase type, and job or item journal lines use both for calculating price and cost. The Any value is the default value, and is used when a line contains both a price and a cost.
 
-### Asset Type
-The "Asset Type" field is an extensible "Price Asset Type" enum that contains the following values:
+### Product Type
+The **Product Type** field is an extensible **Price Asset Type** enum that contains the following values:
 
 * All (0)
 * Item (10)
@@ -66,17 +70,17 @@ The "Asset Type" field is an extensible "Price Asset Type" enum that contains th
 * Service Cost (50)
 * G/L Account (60)
 
-The Asset Type is part of the composite key in the Price Calculation Setup table. If the only setup record contains "Asset Type" - All, special price calculation implementations per asset type are not needed. The default implementation will be used regardless of the asset type in the document line. If you need different implementations, you must add a setup line with another asset type. For example, the following table shows a Resource Pricing implementation with a Resource asset type. 
+The value in the Product Type field is part of the composite key in the Price Calculation Setup table. If the only setup record contains **Product Type - All**, special price calculation implementations per product type are not needed. The default implementation will be used regardless of the product type in the document line. If you need different implementations, you must add a setup line with another product type. For example, the following table shows a Resource Pricing implementation with a resource asset type. 
 
-|Method  |Type  |Asset Type  |Implementation  |Default  |
+|Method  |Type  |Product Type  |Implementation  |Default  |
 |---------|---------|---------|---------|---------|
 |Lowest Price |Sale |All|Business Central (Version 15.0)|X|
 |Lowest Price |Sale |Resource|Resource Pricing |X|
 
-Because only one record has the combination of Lowest Price, Sale, and Resource it will be the default. If a sales line sells a resource, its price will be calculated by Resource Pricing implementation. All other assets will use the "Business Central (Version 15.0)" implementation.
+Because only one record has the combination of Lowest Price, Sale, and Resource it will be the default. If a sales line sells a resource, its price will be calculated by the Resource Pricing implementation. All other products will use the Business Central (Version 15.0) implementation.
 
 ### Price Calculation Method
-The Method field is an extensible Price Calculation Method enum that contains the following values: 
+The **Method** field is an extensible **Price Calculation Method** enum that contains the following values: 
 
 * Not defined (0)
 * Lowest Price (1)
@@ -776,8 +780,8 @@ enumextension 50005 "Hierarchical Price Method" extends "Price Calculation Metho
 
 We'll add a new codeunit that does the following:
 
-* Adds setup for the new method. Codeunit **Price Calculation Mgt.** provides the **OnFindSupportedSetup** event that allows us to add **Price Calculation Setup** records. Subscribe to it, and add the default setup record for the new method, for the sale type, all asset types, and "Business Central (Version 16.0)" implementation.
-* Modify the price source list that is generated by the "Business Central (Version 16.0)" implementation. Codeunit **Sales Line - Price** provides the **OnAfterAddSources** event and passes the price source list that can be overridden. Replace the incoming list with a new list that includes price sources at different levels, where a higher level means a higher priority.
+* Adds setup for the new method. Codeunit **Price Calculation Mgt.** provides the **OnFindSupportedSetup** event that allows us to add **Price Calculation Setup** records. Subscribe to it, and add the default setup record for the new method, for the sale type, all product types, and Business Central (Version 16.0) implementation.
+* Modify the price source list that is generated by the Business Central (Version 16.0) implementation. Codeunit **Sales Line - Price** provides the **OnAfterAddSources** event and passes the price source list that can be overridden. Replace the incoming list with a new list that includes price sources at different levels, where a higher level means a higher priority.
 
 The following example shows how.
 
