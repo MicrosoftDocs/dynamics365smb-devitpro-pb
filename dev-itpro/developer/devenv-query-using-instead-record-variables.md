@@ -121,4 +121,4 @@ The `OutputData` method performs the same operations as the `OutputData` method 
 [TOPNUMBEROFROWS Method](methods-auto/query/queryinstance-topnumberofrows-method.md)  
 [API Query Type](devenv-api-querytype.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
