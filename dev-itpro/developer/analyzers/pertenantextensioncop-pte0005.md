@@ -21,6 +21,10 @@ Property 'target' has invalid value.
 'Internal' is a reserved usage for the 'target' property.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0053](appsourcecop-as0053.md).
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
