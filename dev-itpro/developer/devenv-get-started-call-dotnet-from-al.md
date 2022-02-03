@@ -19,7 +19,7 @@ You can call .NET type members, including methods, properties, and constructors,
 > [!IMPORTANT]  
 > .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md#Appjson). 
 > 
-> Alternatively you can use services such as Azure Functions to call into .NET dlls from AL, which will also work online.
+> Alternatively you can use services such as Azure Functions to call into .NET dlls from AL, which will also work online. For online training, see [Use Azure Functions with Dynamics 365 Business Central](/learn/modules/use-azure-functions/).
 
 ## Enabling .NET Interoperability
 
