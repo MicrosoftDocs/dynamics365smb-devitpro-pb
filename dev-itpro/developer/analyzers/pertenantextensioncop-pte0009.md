@@ -46,7 +46,7 @@ The following manifest specifies the properties `helpBaseUrl` and `supportLocale
 
 ## Code example not triggering the rule
 
-The following manifest does not specifies the properties `helpBaseUrl` and `supportLocales` and is then not valid.
+The following manifest does not specifies the properties `helpBaseUrl` and `supportLocales` and is valid.
 
 ```JSON
 {
