@@ -24,7 +24,7 @@ Object ID must be in free range.
 
 ## Remarks
 
-This rule validates that all the object IDs defined in your extension are within range 50,000-99,999 that is allocated for Per-Tenant-Extensions. For more information about the ID ranges for extensions, see [Object Ranges](../devenv-object-ranges.md). 
+This rule validates that all the object IDs defined in your extension are within range 50,000-99,999 that is allocated for per-tenant extensions. For more information about the ID ranges for extensions, see [Object Ranges](../devenv-object-ranges.md). 
 
 ## How to fix this diagnostic?
 
