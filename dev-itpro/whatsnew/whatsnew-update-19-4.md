@@ -20,7 +20,6 @@ Would you like to know what has changed in update 19.4? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5010207).
 
 ## Feature changes  
-- [Delegated admin can create job queue entries and request approval by a licensed user](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
 - Allow Delegated Admin to setup and run Cloud Migration with approval from a licensed user
 
 ## Localization updates
