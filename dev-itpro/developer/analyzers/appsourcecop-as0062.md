@@ -26,7 +26,7 @@ Page controls and actions must use the ApplicationArea property to be visible to
 
 Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences. They are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios. Controls or actions without application area are not displayed in SaaS.
 
-This rule validates that the ApplicationArea property is set on actions and controls. For more information, see [ApplicationArea Property](../properties/devenv-applicationarea-property.md).
+This rule validates that the `ApplicationArea` property is set on actions and controls. For more information, see [ApplicationArea Property](../properties/devenv-applicationarea-property.md).
 
 ## How to fix this diagnostic?
 
