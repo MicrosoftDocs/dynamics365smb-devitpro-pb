@@ -28,12 +28,13 @@ In order to prevent runtime issues caused by missing permissions, all table defi
 
 ## How to fix this diagnostic?
 
-Permissions can be defined either using XML, or using AL permission set objects.
+Permissions can be defined either by using XML, or by using AL permission set objects.
 
 In order to generate XML permission sets, you can use the dedicated command in Visual Studio Code:
-1. Press Ctrl + Shift + P in order to open the command palette
-2. Select 'AL: Generate permission set containing current extension objects'. This will generate the XML permission set for your extension.
-3. Rebuild your extension with Ctrl + Shift + B to package the permission set with your extension.
+
+1. Press **Ctrl+Shift+P** in order to open the command palette.
+2. Select **AL: Generate permission set containing current extension objects**. This will generate the XML permission set for your extension.
+3. Rebuild your extension by pressing **Ctrl+Shift+B** to package the permission set with your extension.
 
 In order to create AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
 
@@ -75,7 +76,7 @@ The XML permission set grant access to the table and satisfies then the validati
 
 ### Example 2 - Permission defined in AL
 
-```
+```AL
 permissionset 50100 MyPermissionSet
 {
     Assignable = true;
@@ -83,7 +84,7 @@ permissionset 50100 MyPermissionSet
 }
 ```
 
-The AL permission set grant access to the table and satisfies then the validation.
+The AL permission set grants access to the table and thereby satisfies the validation.
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  

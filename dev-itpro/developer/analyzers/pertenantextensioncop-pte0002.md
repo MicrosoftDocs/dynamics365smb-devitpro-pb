@@ -24,7 +24,7 @@ Field ID must be in free range.
 
 ## Remarks
 
-This rule validates that all table field IDs defined in your extension are within range 50,000-99,999 that is allocated for Per-Tenant-Extensions. For more information about the ID ranges for extensions, see [Object Ranges](../devenv-object-ranges.md). 
+This rule validates that all table field IDs defined in your extension are within range 50,000-99,999 that is allocated for per-tenant extensions. For more information about the ID ranges for extensions, see [Object Ranges](../devenv-object-ranges.md). 
 
 > [!NOTE]
 > When a new AL table, you are also allowed to use the range 0-49,999 for the ID of your table fields.
