@@ -17,6 +17,14 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2022 release wave 1
+The following feature is marked as `obsolete:pending` in 2022 release wave 1.
+
+### XBRL reporting
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).|
+
 ## Changes in 2021 release wave 2
 
 ### Standard APIs, Beta version
@@ -33,7 +41,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | The ability to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse using the client secret Service-to-Service authentication will be removed for online tenants hosted by Microsoft in March, 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in Business Central 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](https://go.microsoft.com/fwlink/?linkid=2167233). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
+|Removed | The ability to use client secret Service-to-Service authentication to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse will be removed for online tenants hosted by Microsoft in March 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in client secret Service-to-Service authentication 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](https://go.microsoft.com/fwlink/?linkid=2167233). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
 
 ### Legacy Outlook add-in for synchronizing data
 
@@ -44,23 +52,23 @@ The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and 
 |Removed | This add-in used Business Central web services based on outdated technology.|
 
 > [!NOTE]
-> The feature is separate from and has no affect on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]add-in for Outlook, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
+> The feature is separate from and has no effect on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] add-in for Outlook, which is described at [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/work-outlook-addin).
 
 ## Deprecated Features in 2020 release wave 1
 The following feature was marked as `obsolete:pending` in 2020 release wave 1.
 
 ### Best Price Calculations
-When you have recorded special prices and line discounts for sales and purchases, Business Central ensures that your profit on item trade is always optimal by automatically calculating the best price on sales and purchase documents and on job and item journal lines.
+When you have recorded special prices and line discounts for sales and purchases, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] ensures that your profit on item trade is always optimal. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] calculates the best price on sales and purchase documents and on job and item journal lines.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Replaced|The functionality is replaced with new calculations that you can extend to include additional sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](../developer/devenv-extending-best-price-calculations.md).|
+|Replaced|The functionality is replaced with new calculations that you can extend to include other sources or calculation methods. The current capabilities will be available, and can be used in parallel with the new, until 2021 release wave 1. For more information, see [Extending Best Price Calculations](../developer/devenv-extending-best-price-calculations.md).|
 
 ## Deprecated Features in 2019 release wave 2
 The following sections describe the features that were deprecated in 2019 release wave 2.
 
 ### The Bank Data Conversion Service
-You can use the bank data conversion service from AMC to convert bank data from an XML file that you export from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] into a format that your bank can accept.
+You can use AMC's bank data conversion service to convert bank data from an XML file that you export from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] into a format that your bank can accept.
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
@@ -89,18 +97,18 @@ You can personalize pages and configure profiles by adding or removing fields, a
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Replaced|The shift to AL caused the legacy personalization and profile configuration features to become outdated, so we have introduced new tooling. In this release, existing personalizations and configurations are discarded, and you must use the new tools to recreate them. Your new changes will be kept in future releases.|
+|Replaced|The shift to AL made the legacy features for personalization and configuring profiles outdated. Therefore, we've introduced new tooling. In this release, existing personalizations and configurations are discarded, and you must use the new tools to recreate them. Your new changes will be kept in future releases.|
 
 ## Objects that have been marked as obsolete
 Part of deprecating features is marking the objects that comprise them as "obsolete." Before we deprecate an object, we tag it as "obsolete:pending" to alert our partners of it's deprecation. The object will have the tag for one year before we remove it from [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 <!--should probably mention the other tags too. For example, "after one year we will mark the object as "ObsoleteState:Removed."-->
 
 ## Breaking Changes
-When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
+When we move, remove, or replace an object, breaking changes can occur in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document. The document lists known issues and suggestions for what to do about them.
 
 ## Features that are available only in the online version
 <!--Should we include a section about this?-->
-Some features are available only under very specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
+Some features are available only under specific circumstances, or not at all intended for use in on-premises versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For a list and descriptions of those features, see [Features not implemented in on-premises deployments](../features-not-implemented-on-premises.md).
 
 ## See Also
 

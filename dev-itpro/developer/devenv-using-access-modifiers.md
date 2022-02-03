@@ -39,5 +39,5 @@ Setting access to `internal` is linked to the [JSON Files](devenv-json-files.md)
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Access Property](properties/devenv-access-property.md)

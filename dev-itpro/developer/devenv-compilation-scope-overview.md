@@ -31,7 +31,7 @@ The `target` property informs the compiler which APIs can be used within the cur
 Methods can be marked with the `[Scope()]` attribute to specify the compilation target and tables can be marked with the `Scope` property. Both instruct the compiler which target the method or table can be used in. For more information, see [Scope Attribute](methods/devenv-scope-attribute.md) and [Scope (Table) Property](properties/devenv-scope-table-property.md).
 
 ## See Also  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [JSON Files](devenv-json-files.md)  
 [Scope Attribute](methods/devenv-scope-attribute.md)  
