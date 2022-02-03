@@ -72,11 +72,11 @@ The following table describes the settings in the `launch.json` file. The `launc
 |-------|---------|-----|
 |name|Yes|"Your own server"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
-|request|Yes|Request type of the configuration. Can be set to `"launch"` or `"attach"` . Required by Visual Studio Code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+|request|Yes|Request type of the configuration. Can be set to `"launch"`, `"attach"`, or `"snapshotInitialize"` . Required by Visual Studio Code. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md) and [Snapshot Debugging](devenv-snapshot-debugging.md).|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
-|authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. Currently, AAD authentication is supported only for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandboxes. AAD authentication cannot be used for on-premise servers.|
+|authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. To use AAD authentication for on-premise servers, you must fill in the `primaryTenantDomain` setting. For more information, see [Using Azure AD authentication for Business Central on-premises installations](devenv-aad-auth-onprem.md).|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`) or Table type (`"Table"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page and Table are currently supported.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
@@ -96,7 +96,8 @@ The following table describes the settings in the `launch.json` file. The `launc
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
-|primaryTenantDomain|No|The primary tenant domain URL for the cloud AAD user. This is used for on-prem AAD scenarios. The primary tenant domain parameter is equivalent to the `tenant` parameter for cloud scenarios.|
+|primaryTenantDomain|No|Specifies the URL of the Azure AD organization or company associated with the Azure AD tenant. This setting is to used enable AAD scenarios for on-premises installations. For more information, see [Azure AD authentication for Business Central on-premises
+](devenv-aad-auth-onprem.md)|
 
 
 ### Publish to cloud settings

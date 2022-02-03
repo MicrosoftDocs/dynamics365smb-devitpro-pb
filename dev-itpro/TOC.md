@@ -67,12 +67,12 @@
 ### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
 ### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
 ### [Update 19.1](whatsnew/whatsnew-update-19-1.md)
-### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
-### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
-### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
-### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
-### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 ### Updates for earlier major versions
+#### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
+#### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
+#### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
+#### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
+#### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 #### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 #### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 #### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
@@ -326,6 +326,7 @@
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ### [Signing an App Package File](developer/devenv-sign-extension.md)
+### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 ## Working with Projects and Workspaces
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
@@ -344,9 +345,17 @@
 ### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-### [Exporting Data for Extensions](developer/devenv-export-data-for-extension.md)
+### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
+## Using the System Application
+### [Overview of the System Application](developer/devenv-system-application-overview.md)
+### Creating New Modules in the System Application
+#### [Module Architecture](developer/devenv-blueprint.md)
+#### [Getting Started with Modules](developer/devenv-getting-started.md)
+#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
+#### [Create a New Module](developer/devenv-new-module.md)
+#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
+#### [Change a Module](developer/devenv-change-a-module.md)
 ## Extending the Base Application
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
@@ -358,19 +367,6 @@
 #### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 #### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 #### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
-## Using the System Application
-### [Overview of the System Application](developer/devenv-system-application-overview.md)
-### Creating New Modules in the System Application
-#### [Module Architecture](developer/devenv-blueprint.md)
-#### [Getting Started with Modules](developer/devenv-getting-started.md)
-#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
-#### [Create a New Module](developer/devenv-new-module.md)
-#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
-#### [Change a Module](developer/devenv-change-a-module.md)
-## Code Deprecation
-### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
-### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
@@ -561,6 +557,10 @@
 ### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
+## Code Deprecation
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
@@ -583,6 +583,7 @@
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
 ### [Working with AL Methods](developer/devenv-al-methods.md)
+### [System-Defined Variables](developer/devenv-system-defined-variables.md)
 ### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
 #### [Region Directive](developer/directives/devenv-directive-region.md)
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
@@ -1272,6 +1273,12 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### Nonclustered Columnstore Indexes (NCCI)
+#### [NCCI Overview](developer/devenv-ncci-overview.md)
+#### [NCCI and SQL Server](developer/devenv-ncci-and-sql-server.md)
+#### [NCCI Tuning and Tracing](developer/devenv-ncci-tuning-and-tracing.md)
+#### [NCCI Performance](developer/devenv-ncci-performance.md)
+#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
 ### SumIndexField Technology (SIFT)
 #### [SIFT Overview](developer/devenv-sift-technology.md)
 #### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)

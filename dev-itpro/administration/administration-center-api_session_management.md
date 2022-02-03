@@ -23,7 +23,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 ### Response
@@ -56,7 +56,7 @@ GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ### Response
@@ -85,7 +85,7 @@ GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also

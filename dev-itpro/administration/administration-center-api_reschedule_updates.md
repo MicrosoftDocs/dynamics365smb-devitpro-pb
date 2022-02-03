@@ -21,7 +21,7 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about updates that have already been scheduled for a specific environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 ### Route Parameters
@@ -65,7 +65,7 @@ Reschedule an update, if able.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/upgrade
+PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 ### Route Parameters

@@ -21,6 +21,11 @@ The extension publisher length must not exceed the specified limit.
 The extension publisher length must not exceed the specified limit.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0048](appsourcecop-as0048.md).
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
