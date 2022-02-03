@@ -68,7 +68,7 @@ This example creates the codeunit **50101 MySubscribers** to subscribe to an eve
 - The codeunit **50100 MyPublishers** with the event publisher method `OnAddressLineChanged` already exists. For an example, see [Publishing Event Example](devenv-publishing-events.md#example).
 - The code for raising the `OnAddressLineChanged` event has been added to the **Customer Card** page.  For an example, see [Raising Event Example](devenv-raising-events.md#example).
 
-The following code creates a codeunit called **50101 MySubscribers** that includes an event subscriber method, called `CheckAddressLine`. The method includes code for handling the published event.
+The following code creates a codeunit called **50101 MySubscribers** that includes an event subscriber method, called `CheckAddressLineOnAddressLineChanged`. The method includes code for handling the published event.
 
 ```AL
 codeunit 50101 MySubscribers
@@ -76,7 +76,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"MyPublishers", 'OnAddressLineChanged', '', true, true)]
-    procedure CheckAddressLine(line : Text[100]);
+    procedure CheckAddressLineOnAddressLineChanged(line : Text[100]);
     begin
         if (StrPos(line, '+') > 0) then begin
             Message('Can''t use a plus sign (+) in the address [' + line + ']');
@@ -98,7 +98,7 @@ codeunit 50101 MySubscribers
     EventSubscriberInstance = StaticAutomatic;
 
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnBeforeValidateEvent', 'Address', true, true)]
-    local procedure CheckAddressLine(var Rec : Record Customer)
+    local procedure CheckAddressLineOnBeforeValidateEvent(var Rec : Record Customer)
     begin
         if (StrPos(Rec.Address, '+') > 0) then begin
             Message('Can''t use a plus sign (+) in the address [%1]', Rec.Address);
