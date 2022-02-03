@@ -23,70 +23,7 @@ Fields must use ApplicationArea property.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-
-Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences. They are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios. Controls or actions without application area are not displayed in SaaS.
-
-This rule validates that the ApplicationArea property is set on actions and controls. For more information, see [ApplicationArea Property](../properties/devenv-applicationarea-property.md).
-
-## How to fix this diagnostic?
-
-You must add the `ApplicationArea` property.
-
-## Code example triggering the rule
-
-```AL
-page 50100 MyPage
-{
-    layout
-    {
-        area(Content)
-        {
-            field(MyField; 150) { }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(MyAction) { }
-        }
-    }
-}
-```
-
-The field `MyField` and the action `MyAction` are not valid because they do not have the `ApplicationArea` property set.
-
-## Code example not triggering the rule
-
-```AL
-page 50100 MyPage
-{
-    layout
-    {
-        area(Content)
-        {
-            field(MyField; 150)
-            { 
-                ApplicationArea = All;
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(MyAction) 
-            {
-                ApplicationArea = All;
-            }
-        }
-    }
-}
-```
-
-The field `MyField` and the action `MyAction` are valid because they have the `ApplicationArea` property set.
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0062](appsourcecop-as0062.md).
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
