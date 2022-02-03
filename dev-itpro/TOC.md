@@ -346,6 +346,15 @@
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
 ### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
+## Using the System Application
+### [Overview of the System Application](developer/devenv-system-application-overview.md)
+### Creating New Modules in the System Application
+#### [Module Architecture](developer/devenv-blueprint.md)
+#### [Getting Started with Modules](developer/devenv-getting-started.md)
+#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
+#### [Create a New Module](developer/devenv-new-module.md)
+#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
+#### [Change a Module](developer/devenv-change-a-module.md)
 ## Extending the Base Application
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
@@ -357,19 +366,6 @@
 #### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 #### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 #### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
-## Using the System Application
-### [Overview of the System Application](developer/devenv-system-application-overview.md)
-### Creating New Modules in the System Application
-#### [Module Architecture](developer/devenv-blueprint.md)
-#### [Getting Started with Modules](developer/devenv-getting-started.md)
-#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
-#### [Create a New Module](developer/devenv-new-module.md)
-#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
-#### [Change a Module](developer/devenv-change-a-module.md)
-## Code Deprecation
-### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
-### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
@@ -560,6 +556,10 @@
 ### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
+## Code Deprecation
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
