@@ -1,9 +1,9 @@
 ---
 title: "Type Property"
-description: "The type of entitlement."
+description: "Sets the format type of the report layout."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 02/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,24 +15,22 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # Type Property
-> **Version**: _Available or changed with runtime version 7.0._
+> **Version**: _Available or changed with runtime version 9.0._
 
-The type of entitlement. When a user logs into Business Central, it is checked if the user is assigned the given AAD service plan, the given AAD role etc., and if that is the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
+Sets the format type of the report layout.
 
 ## Applies to
+-   Report Layout
 -   Entitlement
 
 ## Property Value
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**PerUserServicePlan**|The entitlement is associated with an AAD service plan which is licensed to specific users.|
-|**FlatRateServicePlan**|The entitlement is associated with an AAD service plan which is licensed to an AAD tenant.|
-|**Role**|The entitlement is associated with an AAD role.|
-|**ConcurrentUserServicePlan**|The entitlement is associated with a named AAD group.|
-|**Application**|The entitlement is associated with an AAD application.|
-|**ApplicationScope**|The entitlement is associated with an AAD application scope.|
-|**Implicit**|Everyone has this license.|
+|**RDLC**|Specifies that the format of this report layout is RDLC.|
+|**Word**|Specifies that the format of this report layout is Word.|
+|**Excel**|Specifies that the format of this report layout is Excel.|
+|**Custom**|Specifies that the format of this report layout is a user-defined custom type. This requires the MimeType property to be set.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
