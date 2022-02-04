@@ -1,7 +1,6 @@
 ---
 title: "AL Profiler Overview"
-description: "Description of how to use the AL profiler to analyze method calls in code written for Business Central."
-
+description: "Description of how to use the AL profiler to analyze performance in code written for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/04/2021
@@ -12,7 +11,14 @@ ms.author: solsen
 
 # AL Profiler Overview
 
-[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)]
+[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] <!-- new include for 2022RW1-->
+
+Profiling allows you to do collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling and sampling profiling. Read more in the sections below:
+
+[Snapshot profiling](devenv-alprofiler-overview.md#snapshot-profiling)
+[Sampling profiling](devenv-alprofiler-overview.md#sampling-profiling)
+
+## Snapshot profiling
 
 With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views.
 
@@ -140,7 +146,7 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 
 ## Sampling profiling
 
-Sampling profiling is useful for an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code.
+Sampling profiling is useful as an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code.
 
 To start sampling profiling, you must choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And then the `executionContext` property must be set to `Profile`, because debugging is not supported while running sampling profiling.
 
