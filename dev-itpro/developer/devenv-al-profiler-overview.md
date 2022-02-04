@@ -24,7 +24,7 @@ With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.
 
 The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. To be able to snapshot debug, you must be a **delegated admin**. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
-## Snapshot configuration setting
+## Snapshot configuration settings
 
 In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration has a parameter called  `executionContext` which has the following values in the table below. If nothing is specified, the configuration is `DebugAndProfile` by default.
 
@@ -34,9 +34,11 @@ In order to do profiling on code, you must first capture a snapshot of running c
 |`Profile` | The snapshot session will only gather profile information, snappoints will be ignored, and debugging will not work.|
 |`DebugAndProfile` | Both debugging and profiling will be available as a result of a snapshot session. This is the default setting.|
 
-This means that if we want to use the snapshot both for debugging and profiling purposes, the configuration for the snapshot in the `launch.json` file, must look equivalent to the following:
+Furthermore, the `profilingType` must be set to `Instrumentation` as illustrated in the example below.
 
-```al
+Looking at the example, if we want to use the snapshot both for debugging and profiling purposes, the configuration for the snapshot in the `launch.json` file, must look equivalent to the following:
+
+```json
 "configurations": [ 
         {
             "name": "snapshotInitialize: Your own server",
@@ -45,12 +47,12 @@ This means that if we want to use the snapshot both for debugging and profiling 
             "request": "snapshotInitialize",
             "environmentType": "OnPrem",
             "server": "http://localserver",
-            "serverInstance": "BC190",
+            "serverInstance": "BC200",
             "authentication": "Windows",
             "breakOnNext": "WebClient",
-            "executionContext": "DebugAndProfile"
-        },
-    ...
+            "executionContext": "DebugAndProfile",
+            "profilingType": "Instrumentation"
+        }
 ```
 
 Then, when the snapshot file is downloaded, you can generate a profile file. This can be done in one of two ways:
@@ -146,12 +148,25 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 
 ## Sampling profiling
 
-Sampling profiling is useful as an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code.
+Sampling profiling is useful as an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code. <!-- in-client profiler implementation -->
 
-To start sampling profiling, you must choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And then the `executionContext` property must be set to `Profile`, because debugging is not supported while running sampling profiling.
+To start sampling profiling, you must choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And the `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
 
 ```json
-
+"configurations": [ 
+        {
+            "name": "Your own server",
+            "type": "al",
+            "userId": "555",
+            "request": "snapshotInitialize", // check!!
+            "environmentType": "OnPrem",
+            "server": "http://localserver",
+            "serverInstance": "BC200",
+            "authentication": "Windows",
+            "breakOnNext": "WebClient",
+            "executionContext": "Profile",
+            "profilingType": "Sampling"
+        }
 ```
 
 The following server restrictions exist for sampling profiling: 
