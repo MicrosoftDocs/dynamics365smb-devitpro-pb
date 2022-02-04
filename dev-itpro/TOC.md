@@ -3536,6 +3536,7 @@
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
+### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power BI -->
