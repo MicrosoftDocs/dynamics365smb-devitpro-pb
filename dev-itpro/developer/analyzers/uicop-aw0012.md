@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 The Web client does not support About properties in certain contexts.
 
 ## Description
-The Web client does not support About properties in certain contexts. Please see the properties' documentation for further information.
+The Web client does not support using properties for teaching tips in certain contexts. Please see the property topics below for more information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
