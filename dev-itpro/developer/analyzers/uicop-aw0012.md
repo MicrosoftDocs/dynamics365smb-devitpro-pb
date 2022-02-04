@@ -21,11 +21,13 @@ The Web client does not support properties for teaching tips in certain contexts
 The Web client does not support using properties for teaching tips in certain contexts. Please see the property topics below for more information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+- [AboutTitle Property](../properties/devenv-abouttitle-property.md)   
+- [AboutTitleML Property](../properties/devenv-abouttitleml-property.md)   
+- [AboutText Property](../properties/devenv-abouttext-property.md)   
+- [AboutTextML Property](../properties/devenv-abouttextml-property.md)    
+
 ## See Also  
-[AboutTitle Property](../properties/devenv-abouttitle-property.md)   
-[AboutTitleML Property](../properties/devenv-abouttitleml-property.md)   
-[AboutText Property](../properties/devenv-abouttext-property.md)   
- [AboutTextML Property](../properties/devenv-abouttextml-property.md)    
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
