@@ -50,7 +50,9 @@ That gives you the latest available version in our service.
 Our recommendation is to pack more bug fixes and features into less frequent updates. Try to avoid frequent submissions containing very few changes. Being on a more frequent cadence than Business Central (monthly) is not advised. This leads to lower churn to production tenants.
 
 ## What if a customer reports a critical bug in my app and needs an immediate hotfix version of my app?
-We have automated some parts of the validation of AppSource submissions and most submissions are now validated under one business day. As a consequence, we do not have a fast track validation process anymore.
+We have automated a lot of things and most of the submissions are now processed within one business day. The technical validation of the app is fully automated so you will know within a few minutes (hours in the worst case) if your app passed the validation or not. Once your app has passed the certification stage, it is automatically published to [!INCLUDE[prod_short](../includes/prod_short.md)] and becomes available for your customers. 
+
+Before submitting your apps in Partner Center, our recommendation is to make sure you fulfilled all the requirements in the technical validation checklist, including running the self-validation.
 
 ## Do you have any tips for us when submitting updates of our app?
 Yes, we have some valuable tips we would like to share. These are tips that can save you time in the validation process. They will help lead to fewer (and possibly zero) failures during validation. Most importantly; they will lead to fewer issues being found in production by customers.

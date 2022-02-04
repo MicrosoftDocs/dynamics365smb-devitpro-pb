@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 01/26/2022
 ---
 
 # Environments
@@ -29,13 +29,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.9/applications/environments
+GET /admin/v2.11/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments
+GET /admin/v2.11/applications/{applicationFamily}/environments
 ```
 
 ### Route Parameters
@@ -77,7 +77,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -120,7 +120,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -245,14 +245,14 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
+POST /admin/v2.11/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
 ```
 
 API v2.8 and earlier:
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.11/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 ### Route Parameters
@@ -379,7 +379,7 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 Deletes the specified environment. Warning: A production environment shouldn't be deleted.
 
 ```
-DELETE /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -444,7 +444,7 @@ Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 ### Routing parameters
@@ -492,7 +492,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 ### Routing parameters
@@ -574,7 +574,7 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 ### Route Parameters
@@ -608,7 +608,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.9/environments/usedstorage
+GET /admin/v2.11/environments/usedstorage
 ```
 
 ### Response
@@ -631,7 +631,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.9/environments/quotas
+GET /admin/v2.11/environments/quotas
 ```
 
 ### Response
@@ -660,7 +660,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.9/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.11/applications/{applicationType}/environments/{environmentName}/operations 
 ```
 
 ### Operation types
@@ -669,20 +669,30 @@ Data is returned for the following operation types:
 
 |Type|Description|More information|
 |----|-----------|----------------|
+|Copy<sup>3</sup>|An environment was created from a copy of another environment.|[Copy a Production or Sandbox Environment in the Admin Center](tenant-admin-center-environments-copy.md)<br><br>[Copy Endpoint](#copy-environment)|
+|Create<sup>3</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)||
+|Delete<sup>2</sup>|An environment was deleted.|[Delete Environment in Admin Center](tenant-admin-center-environments.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
 |EnvironmentAppHotfix<sup>1</sup>|App was hotfixed by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
-|EnvironmentAppUpdate<sup>1</sup> |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](#update-an-app)|
-|EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](#install-an-app)|
-|EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](#uninstall-an-app)|
-|Copy<sup>2</sup>|An environment was created from a copy of another environment.|[Copy a Production or Sandbox Environment in the Admin Center](tenant-admin-center-environments-copy.md)<br><br>[Copy Endpoint](#copy-environment)|
-|Create<sup>2</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)||
-|Delete|An environment was deleted.|[Delete Environment in Admin Center](tenant-admin-center-environments.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
+|EnvironmentAppUpdate<sup>1</sup> |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api_app_management.md#update-an-app)|
+|EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
+|EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Azure Active Directory groups in Admin Center](tenant-admin-center-environments.md#manage-access-using-azure-active-directory-groups)|
+|MoveToAnotherAadTenant|An environment was moved to another Azure Active Directory organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
-|MoveToAnotherAadTenant|An environment was moved to another Azure Active Directory organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)
+|Restart<sup>4</sup>|An environment was restarted.|[Restart Environment](tenant-admin-center-manage-sessions.md#restart-environment)|
+|Update<sup>5</sup>|Records a long-running background operation that occurs when an environment is updated to a newer version.||
 
 <sup>1</sup> These operations are only supported with API version 2.6 and later. For these operations, the data returned is the same as for [Get App Operations](#get-app-operations), but in a different format.
 
-<sup>2</sup> These operations are only recorded with API version 2.9 and later.
+<sup>2</sup> These operations are only supported with API version 2.8 and later.
+
+<sup>3</sup> These operations are only supported with API version 2.9 and later.
+
+<sup>4</sup> These operations are only supported with API version 2.10 and later.
+
+<sup>5</sup> These operations are only supported with API version 2.11 and later.
+
 <!--
 - EnvironmentRename 
 - PitRestore 
@@ -756,7 +766,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```
-GET /admin/v2.9/applications/{applicationType}/environments/operations 
+GET /admin/v2.11/applications/{applicationType}/environments/operations 
 ```
 
 ### Operation types

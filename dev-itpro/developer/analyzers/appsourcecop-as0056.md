@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0056"
+title: "AppSourceCop Warning AS0056"
 description: "The country/region codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/18/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0056
+# AppSourceCop Warning AS0056
 The country/region codes specified in the 'supportedCountries' property must be valid ISO 3166-1 alpha-2 codes
 
 ## Description

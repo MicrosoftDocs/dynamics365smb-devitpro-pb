@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2021
+ms.date: 01/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0029](appsourcecop-as0029.md)|Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break|Upgrade|Error|
 |[AS0030](appsourcecop-as0030.md)|Pages that have been published must not be renamed.|Upgrade|Error|
 |[AS0031](appsourcecop-as0031.md)|Actions that have been published must not be deleted.|Upgrade|Error|
-|[AS0032](appsourcecop-as0032.md)|Controls that have been published must not be deleted/|Upgrade|Error|
+|[AS0032](appsourcecop-as0032.md)|Controls that have been published must not be deleted.|Upgrade|Error|
 |[AS0033](appsourcecop-as0033.md)|Views that have been published must not be deleted.|Upgrade|Error|
 |[AS0034](appsourcecop-as0034.md)|Unsupported table property change|Upgrade|Error|
 |[AS0036](appsourcecop-as0036.md)|Unsupported table field property change|Upgrade|Error|
@@ -96,7 +96,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0082](appsourcecop-as0082.md)|It is not allowed to rename an enum value.|Upgrade|Error|
 |[AS0083](appsourcecop-as0083.md)|It is not allowed to delete a value from an enum.|Upgrade|Error|
 |[AS0084](appsourcecop-as0084.md)|The ID range assigned to the extension must be within the allowed range|Extensibility|Error|
-|[AS0085](appsourcecop-as0085.md)|The 'application' property must be used instead of explicit dependencies|Extensibility|Warning|
+|[AS0085](appsourcecop-as0085.md)|The 'application' property should be used instead of explicit dependencies|Extensibility|Warning|
 |[AS0086](appsourcecop-as0086.md)|Fields must not increase in length|Upgrade|Warning|
 |[AS0087](appsourcecop-as0087.md)|Translations of enum value captions must not contain commas|Extensibility|Warning|
 |[AS0088](appsourcecop-as0088.md)|Objects with an ID that can be referenced and which have been published must not be deleted.|Upgrade|Error|
@@ -111,6 +111,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0097](appsourcecop-as0097.md)|The publisher name of an extension cannot be changed.|Configuration|Error|
 |[AS0098](appsourcecop-as0098.md)|An affix is needed.|Extensibility|Warning|
 |[AS0099](appsourcecop-as0099.md)|The member ID should be within the allowed range|Extensibility|Info|
+|[AS0100](appsourcecop-as0100.md)|The 'application' property in the app.json file must be specified.|Extensibility|Error|
+|[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -137,6 +139,7 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |obsoleteTagVersion|No|Specifies the next Major.Minor version of the extension in the current branch in order to validate the ObsoleteTag values with AS0072. This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
 |obsoleteTagPattern|No|The Obsolete tag pattern used by AS0076. This should be a valid regular expression. By default, the pattern '(\\d+)\\.(\\d+)' is used.|
 |obsoleteTagPatternDescription|No|A human-readable description for the ObsoleteTagPattern regular expression. This is used in diagnostics reported by AS0076. By default, 'Major.Minor' is used.|
+|obsoleteTagAllowedVersions|No|A comma-separated list of Major.Minor versions that will be allowed as ObsoleteTag values by AS0072. This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
 |baselinePackageCachePath|No|The path to the folder containing the baseline and its dependencies with which you want to compare the current package for breaking changes. By default, the package cache path for the current project is used (see 'al.packageCachePath' setting).|
 
 The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. This package must be located in the baseline package cache folder of your extension. This cache can be specified using the `baselinePackageCachePath` property. If this property is not specified, the dependency package cache path of the extension will be used instead. The `al.packageCachePath` setting allows you to specify the path to the folder that will act as the cache for the dependencies symbol files used by your project. AppSourceCop will compare the previous version of your extension with its current version and will report any breaking changes introduced by the current package.

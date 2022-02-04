@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 02/01/2022
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -12,32 +12,40 @@ ms.author: soalex
 
 # Country/regional availability and supported languages
 
-This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.
+This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
 > [!NOTE]  
 > In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s). Note, that availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as a cloud service and does not concern availability of partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
 
-
 ## Countries and regions
 
 |Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
 |-----------|---------|------------|-----------|---------|
 |Algeria|Partner|Available|DZ|South Africa North|
-|Argentina|Partner|Planned|AR|Brazil South|
+|Angola|Partner|Planned, 2022 release wave 1|AO|South Africa North|
+|Argentina|Partner|Available|AR|Brazil South|
 |Australia|Microsoft|Available|AU|Australia East|
 |Austria|Microsoft|Available|AT|West Europe, Netherlands|
+|Bahrain|Partner|Planned, 2022 release wave 1|BH|UAE North|
 |Bangladesh|Partner|Available|BD|Southeast Asia, Singapore|
 |Belgium|Microsoft|Available|BE|West Europe, Netherlands|
-|Bulgaria|Partner|Planned|BG|West Europe, Netherlands|
+|Bosnia and Herzegovina|Partner|Planned, 2022 release wave 1|BA|West Europe, Netherlands|
+|Botswana|Partner|Planned, 2022 release wave 1|BW|South Africa North|
+|Bulgaria|Partner|Available|BG|West Europe, Netherlands|
 |Brazil|Partner|Available|BR|Brazil South|
 |Canada|Microsoft|Available|CA|Canada Central|
-|Chile|Partner|Planned|CL|Brazil South|
+|Chile|Partner|Available|CL|Brazil South|
 |Colombia|Partner|Available|CO|Brazil South|
+|Costa Rica|Partner|Planned, 2022 release wave 1|CR|Brazil South|
 |Croatia|Partner|Available|HR|West Europe, Netherlands|
+|Cyprus|Partner|Planned, 2022 release wave 1|CY|West Europe, Netherlands|
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
 |Denmark|Microsoft|Available|DK|North Europe, Ireland|
+|Dominican Republic|Partner|Planned, 2022 release wave 1|DO|Brazil South|
+|Ecuador|Partner|Planned, 2022 release wave 1|EC|Brazil South|
+|El Salvador|Partner|Planned, 2022 release wave 1|SV|Brazil South|
 |Egypt|Partner|Available|EG|South Africa North|
 |Estonia|Partner|Available|EE|North Europe, Ireland|
 |Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
@@ -46,6 +54,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Germany|Microsoft|Available|DE|Germany West Central|
 |Greece|Partner|Available|GR|West Europe, Netherlands|
 |Greenland (Denmark)|Microsoft|Available|DK|West Europe, Netherlands|
+|Guatemala|Partner|Planned, 2022 release wave 1|GT|Brazil South|
+|Honduras|Partner|Planned, 2022 release wave 1|HN|Brazil South|
 |Hong Kong SAR|Partner|Available|HK|Southeast Asia, Singapore|
 |Hungary|Partner|Available|HU|West Europe, Netherlands|
 |Iceland|Microsoft|Available|IS|North Europe, Ireland|
@@ -53,49 +63,60 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
 |India|Microsoft|Available|IN|Central India|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
-|Japan|Partner|Available|JP|Southeast Asia, Singapore|
+|Jamaica|Partner|Planned, 2022 release wave 1|JM|South Central US|
+|Japan|Partner|Available|JP|Japan East, Japan|
 |Kenya|Partner|Available|KE|South Africa North|
 |Latvia|Partner|Available|LV|North Europe, Ireland|
 |Lebanon|Partner|Available|LB|UAE North|
 |Lithuania|Partner|Available|LT|North Europe, Ireland|
 |Luxembourg|Partner|Available|LU|West Europe, Netherlands|
 |Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
+|Maldives|Partner|Planned, 2022 release wave 1|MV|Southeast Asia, Singapore|
 |Malta|Partner|Available|MT|West Europe, Netherlands|
+|Mauritius|Partner|Planned, 2022 release wave 1|MU|South Africa North|
 |Mexico|Microsoft|Available|MX|South Central US|
 |Morocco|Partner|Available|MA|South Africa North|
 |Myanmar|Partner|Planned|MM|Southeast Asia, Singapore|
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
+|Nicaragua|Partner|Planned, 2022 release wave 1|NI|Brazil South|
 |Nigeria|Partner|Available|NG|South Africa North|
 |Norway|Microsoft|Available|NO|Norway East|
+|Panama|Partner|Planned, 2022 release wave 1|PA|Brazil South|
+|Paraguay|Partner|Planned, 2022 release wave 1|PY|Brazil South|
 |Peru|Partner|Available|PE|Brazil South|
 |Philippines|Partner|Available|PH|Southeast Asia, Singapore|
 |Poland|Partner|Available|PL|West Europe, Netherlands|
 |Portugal|Partner|Available|PT|West Europe, Netherlands|
-|Puerto Rico|Partner|Planned|PR|Brazil South|
+|Puerto Rico|Partner|Available|PR|Brazil South|
 |Qatar|Partner|Available|QA|UAE North|
 |Romania|Partner|Available|RO|West Europe, Netherlands|
 |Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
 |Saudi Arabia|Partner|Available|SA|UAE North|
 |Serbia|Partner|Available|RS|West Europe, Netherlands|
 |Singapore|Partner|Available|SG|Southeast Asia, Singapore|
-|Slovakia|Partner|Planned|SK|West Eeurope, Netherlands|
+|Slovakia|Partner|Available|SK|West Europe, Netherlands|
 |Slovenia|Partner|Available|SI|West Europe, Netherlands|
 |South Africa|Partner|Available|ZA|South Africa North|
-|South Korea|Partner|Available|KR|Southeast Asia, Singapore|
+|South Korea|Partner|Available|KR|Korea Central, Korea|
 |Spain|Microsoft|Available|ES|West Europe, Netherlands|
 |Sri Lanka|Partner|Available|LK|Southeast Asia, Singapore|
 |Sweden|Microsoft|Available|SE|North Europe, Ireland|
 |Switzerland|Microsoft|Available|CH|Switzerland North|
 |Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
+|Trinidad and Tobago|Partner|Planned, 2022 release wave 1|TT|Brazil South|
 |Tunisia|Partner|Available|TN|South Africa North|
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
-|Ukraine|Partner|Planned|UA|West Europe, Netherlands|
+|Ukraine|Partner|Available|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
 |United States|Microsoft|Available|US|East US|
+|Uruguay|Partner|Planned, 2022 release wave 1|UY|Brazil South|
 |Vietnam|Partner|Available|VN|Southeast Asia, Singapore|
+|Zimbabwe|Partner|Planned, 2022 release wave 1|ZW|South Africa North|
+
+For an overview of where [!INCLUDE [prod_short](../includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 
 ## Important information regarding planned availability
 
@@ -133,17 +154,17 @@ This table gives an overview of supported languages and how application language
 |French (Canada)|fr-CA|Microsoft, Available on AppSource|
 |French (Switzerland)|fr-CH|Microsoft, Available on AppSource|
 |French (France)|fr-FR|Microsoft, Available on AppSource|
-|Greek (Greece)|gr-GR|Partner, Available on AppSource|
+|Greek (Greece)|el-GR|Partner, Available on AppSource|
 |Croatian (Croatia)|hr-HR|Partner, Available on AppSource|
 |Hungarian (Hungary)|hu-HU|Partner, Available on AppSource|
 |Icelandic (Iceland)|is-IS|Microsoft, Available on AppSource|
 |Italian (Switzerland)|it-CH|Microsoft, Available on AppSource|
 |Italian (Italy)|it-IT|Microsoft, Available on AppSource|
-|Japanese (Japan)|jp-JP|Partner, Available on AppSource|
+|Japanese (Japan)|ja-JP|Partner, Available on AppSource|
 |Korean (Korea)|ko-KR|Partner, Available on AppSource|
 |Latvian (Latvia)|lv-LV|Partner, Available on AppSource|
 |Lithuanian (Lithuania)|lt-LT|Partner, Available on AppSource|
-|Norwegian (Norway)|no-NO|Microsoft, Available on AppSource|
+|Norwegian, Bokmål (Norway)|nb-NO|Microsoft, Available on AppSource|
 |Dutch (Belgium)|nl-BE|Microsoft, Available on AppSource|
 |Dutch (Netherlands)|nl-NL|Microsoft, Available on AppSource|
 |Polish (Poland)|pl-PL|Partner, Available on AppSource|
@@ -158,7 +179,7 @@ This table gives an overview of supported languages and how application language
 |Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
-|Ukrainian)|uk-UA|Partner, Available on AppSource (pending)|
+|Ukrainian (Ukraine)|uk-UA|Partner, Available on AppSource|
 |Vietnamese (Vietnam)|vi-VN|Partner, Available on AppSource|
 
 > [!NOTE]  

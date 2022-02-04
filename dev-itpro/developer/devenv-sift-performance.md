@@ -1,5 +1,6 @@
 ---
 title: "SIFT and Performance"
+description: This article looks at the factors you must take into consideration when you deal with SIFT and performance. 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -46,4 +47,5 @@ This topic looks at the factors you must take into consideration when you deal w
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  
 [SIFT Tuning and Tracing](devenv-sift-tuning-and-tracing.md)  
+[Migrating from SIFT to NCCI](devenv-migrating-from-sift-to-ncci.md)
 [FlowFields](devenv-FlowFields.md)  

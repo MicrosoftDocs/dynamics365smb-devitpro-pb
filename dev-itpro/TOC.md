@@ -63,13 +63,15 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
+### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
 ### [Update 19.1](whatsnew/whatsnew-update-19-1.md)
-### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
-### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
-### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
-### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
-### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 ### Updates for earlier major versions
+#### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
+#### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
+#### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
+#### [Update 18.2](whatsnew/whatsnew-update-18-2.md)
+#### [Update 18.1](whatsnew/whatsnew-update-18.1.md)
 #### [Update 17.5](whatsnew/whatsnew-update-17-5.md)
 #### [Update 17.4](whatsnew/whatsnew-update-17-4.md)
 #### [Update 17.3](whatsnew/whatsnew-update-17-3.md)
@@ -155,7 +157,6 @@
 ### [Licenses and entitlements](deployment/licensing.md)
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
-### [Manage technical support](administration/manage-technical-support.md)
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Recommend apps](administration/recommend-apps.md)
@@ -170,7 +171,7 @@
 <!--Potentially add RapidStart here?-->
 <!-- onboard customers-->
 ## Onboard your customers
-### [Trials and Sign-ups](deployment/customer-signup.md)
+### [Trials and sign-ups](deployment/customer-signup.md)
 <!-- ### Do cool demos -->
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
@@ -178,19 +179,24 @@
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Recommend Apps](administration/recommend-apps.md)  
+### [Recommend apps](administration/recommend-apps.md)
+<!-- support-->
+## Manage technical support
+### [Manage technical support overview](administration/manage-technical-support.md)
+### [Escalate support issues to Microsoft](administration/raise-support-case.md)
+### [Report customer outages](administration/report-outage.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
-### [Running the cloud migration tool](administration/migration-tool.md)
+### [Run the cloud migration tool](administration/migration-tool.md)
 ### [Manage the migration to the cloud](administration/migration-management.md)
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshooting cloud migration](administration/migration-troubleshooting.md)
-<!--### [Migrating from Dynamics SL](administration/migrate-data.md)-->
+### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
 <!-- end migrate -->
+<!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
@@ -217,6 +223,7 @@
 ### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
+<!-- end telemetry -->
 ## Automation
 ### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
@@ -292,7 +299,7 @@
 #### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-#### [Technical Validation FAQ](developer/readiness/readiness-technical-validation-faq.md)
+#### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Getting Started with AL for On-Premises
 #### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
@@ -318,6 +325,7 @@
 ### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 ### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 ### [Signing an App Package File](developer/devenv-sign-extension.md)
+### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 ## Working with Projects and Workspaces
 ### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
 ### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
@@ -336,19 +344,8 @@
 ### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 ### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-### [Exporting Data for Extensions](developer/devenv-export-data-for-extension.md)
+### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
-## Extending the Base Application
-### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
-### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
-### [Extending Application Areas](developer/devenv-extending-application-areas.md)
-### Examples
-#### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-#### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-#### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-#### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
-#### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ## Using the System Application
 ### [Overview of the System Application](developer/devenv-system-application-overview.md)
 ### Creating New Modules in the System Application
@@ -358,10 +355,17 @@
 #### [Create a New Module](developer/devenv-new-module.md)
 #### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
 #### [Change a Module](developer/devenv-change-a-module.md)
-## Code Deprecation
-### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
-### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
+## Extending the Base Application
+### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
+### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
+### [Extending Application Areas](developer/devenv-extending-application-areas.md)
+### Examples
+#### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
+#### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
+#### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+#### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
+#### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
+#### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
@@ -530,6 +534,7 @@
 ### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
 ## .NET in AL
 ### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 ### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 ### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 ### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
@@ -551,6 +556,10 @@
 ### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
+## Code Deprecation
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
@@ -573,6 +582,7 @@
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
 ### [Working with AL Methods](developer/devenv-al-methods.md)
+### [System-Defined Variables](developer/devenv-system-defined-variables.md)
 ### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
 #### [Region Directive](developer/directives/devenv-directive-region.md)
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
@@ -1262,6 +1272,12 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### Nonclustered Columnstore Indexes (NCCI)
+#### [NCCI Overview](developer/devenv-ncci-overview.md)
+#### [NCCI and SQL Server](developer/devenv-ncci-and-sql-server.md)
+#### [NCCI Tuning and Tracing](developer/devenv-ncci-tuning-and-tracing.md)
+#### [NCCI Performance](developer/devenv-ncci-performance.md)
+#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
 ### SumIndexField Technology (SIFT)
 #### [SIFT Overview](developer/devenv-sift-technology.md)
 #### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
@@ -3461,18 +3477,41 @@
 # Integration
 <!-- web service -->
 ## Web Services
-### [Web Services](webservices/web-services.md)
-### [Terms of Use](webservices/webservices-terms-of-use.md)
+### [Web Services Overview](webservices/web-services.md)
+### [Terms of Use for Web Services](webservices/webservices-terms-of-use.md)
 ### General
 #### [Publishing a Web Service](webservices/publish-web-service.md)
 #### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
 #### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
 #### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
+#### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
-### [SOAP](webservices/soap-web-services.md)
+### API
+#### [Overview](webservices/api-overview.md)
+#### [Business Central API (v2.0)](api-reference/v2.0/index.md)
+#### [Business Central API (v1.0)](api-reference/v1.0/index.md)
+#### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+### OData
+#### [Overview](webservices/odata-web-services.md)
+#### [OData Query Performance](webservices/odata-client-performance.md)
+#### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
+#### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
+#### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
+#### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
+#### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
+#### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
+#### [Containments and Associations](webservices/use-containments-associations.md)
+#### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
+#### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
+#### [Known OData Limitations](webservices/odata-known-limitations.md)
+### SOAP
+#### [Overview](webservices/soap-web-services.md)
 #### [SOAP Service URIs](webservices/soap-web-service-uris.md)
 #### [Basic Operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
@@ -3488,28 +3527,17 @@
 ##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
 #### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
-### [OData](webservices/odata-web-services.md)
-#### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
-#### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
-#### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
-#### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
-#### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
-#### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
-#### [Containments and Associations](webservices/use-containments-associations.md)
-#### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
-#### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
-#### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
-#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 <!-- end web services -->
 ## Connect Apps
 ### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using Filtering](developer/devenv-connect-apps-filtering.md)
-## [Developing a Custom API](developer/devenv-develop-custom-api.md)
+### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
+### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power BI -->
@@ -3531,18 +3559,12 @@
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
-## [Dynamics 365 Business Central API (v2.0)](api-reference/v2.0/index.md)
-## [Dynamics 365 Business Central API (v1.0)](api-reference/v1.0/index.md)
+## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
-## Authenticating Using OAuth
-### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!--deprecated features -->
 # Removed or deprecated features
-## Deprecated Tables
-### [Deprecated Tables](upgrade/deprecated-tables.md)
-### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated Features
-### [Deprecated Features in W1](upgrade/deprecated-features-w1.md)
+## Deprecated Features in the Application
+### [Deprecated Features in the Base App](upgrade/deprecated-features-w1.md)  
 ### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
 ### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -3560,6 +3582,14 @@
 ### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
 ### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
 ### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
+## [Deprecated Features in the Platform](upgrade/deprecated-features-platform.md)  
+## Deprecated Tables
+### [Deprecated Tables](upgrade/deprecated-tables.md)
+### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
+## Deprecated Code
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
 <!--on-prem-->
 # Business Central on-premises
@@ -3671,6 +3701,7 @@
 ### Monitoring and Analyzing Using Telemetry
 #### [Telemetry Overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
+#### [Feature Telemetry](administration/telemetry-feature-telemetry.md)
 #### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)

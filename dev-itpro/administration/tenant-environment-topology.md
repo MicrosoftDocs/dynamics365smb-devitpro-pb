@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/15/2021
+ms.date: 12/28/2021
 ms.author: edupont
 ---
 
@@ -17,7 +17,7 @@ ms.author: edupont
 When someone wants to buy [!INCLUDE [prod_short](../includes/prod_short.md)] online, a couple of questions must be answered because [!INCLUDE [prod_short](../includes/prod_short.md)] can be configured along several different axes. In this section, we describe the topology of [!INCLUDE [prod_short](../includes/prod_short.md)] online so that you can make qualified decisions for how a [!INCLUDE [prod_short](../includes/prod_short.md)] tenant will be deployed and configured.  
 
 > [!TIP]
-> [!INCLUDE [prod_short](../includes/prod_short.md)] is available in a limited number of markets. For more information, see [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).  
+> [!INCLUDE [prod_short](../includes/prod_short.md)] is available in a limited number of markets. For more information, see [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md). For a visual overview of where [!INCLUDE [prod_short](../includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 
 ## Microsoft 365 and Azure Active Directory
 
@@ -56,12 +56,18 @@ Because Contoso has a German subsidiary that has separate accounting requirement
 
 The users in all three environments are defined in the same Azure AD tenant. This way, all licensed users can work in all environments. Individual access to various capabilities is controlled through permissions.  
 
-Alternatively, the organization could have chosen to use a separate Azure AD tenant for the German subsidiary. In that case, users from the Danish Azure AD tenant would not be able to access the German production environment.  
+Alternatively, the organization could have chosen to use a separate Azure AD tenant for the German subsidiary so that the German environment could use the *Essentials* license type rather than the *Premium* license type.  
+
+The following diagram illustrates how things would look for Contoso if they wanted to use two different license types:  
+
+:::image type="content" source="../media/admin_contoso_org-bc2.png" alt-text="Chart that shows two Azure AD tenants with each one production environment and one sandbox.":::
+
+In this type of configuration, users from the Danish Azure AD tenant cannot access the German environments. However, [!INCLUDE [prod_short](../includes/prod_short.md)] supports [consolidation of financial data from different companies](/dynamics365/business-central/finance-consolidated-company-reporting) so that Contoso's HQ can still get a complete overview of the business.  
 
 > [!IMPORTANT]
-> As the example illustrates, the Azure AD tenant plays an important role in how users can access [!INCLUDE [prod_short](../includes/prod_short.md)]. Users from one Azure AD tenant cannot access environments that belong to another Azure AD tenant.
+> As the examples illustrate, the Azure AD tenant plays an important role in how users can access [!INCLUDE [prod_short](../includes/prod_short.md)]. Users from one Azure AD tenant cannot access environments that belong to another Azure AD tenant.
 
-Contoso is just an example to illustrate how the Azure AD tenant both affects and reflects the organizational structure. In some cases, this example is overly simplistic; in other cases, the example is too complicated. We recommend that customers work closely with their reselling partner to understand how to configure their [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
+Contoso is just an example to illustrate how the Azure AD tenant both affects and reflects the organizational structure. In some cases, this example is overly simplistic; in other cases, the example is too complicated. We recommend that customers work closely with their Microsoft reselling partner to understand how to configure their [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
 > [!TIP]
 > For information about how to find out which Azure region a [!INCLUDE [prod_short](../includes/prod_short.md)] environment is deployed to, see the overview at [Country/regional availability and supported languages](../compliance/apptest-countries-and-translations.md).

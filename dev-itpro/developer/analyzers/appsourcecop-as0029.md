@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Rule AS0029"
+title: "AppSourceCop Error AS0029"
 description: "Pages and PageExtensions that have been published must not be deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0029
+# AppSourceCop Error AS0029
 Pages and PageExtensions that have been published must not be deleted, since dependent extensions may break
 
 ## Description

@@ -3,7 +3,7 @@ title: Monitoring and Analyzing Telemetry
 description: Learn how the Business Central provides telemetry for each environment, both for online and for on-premises environments.  
 author: jswymer
 ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -56,7 +56,7 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 |Retention policy trace<sup>[\[3\]](#3)</sup>|Provides information about the usage of the retention policy feature.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-retention-policy-trace.md)|
 |Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-trace.md)|
 |Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
-|Table index trace<sup>[\[3\]](#3)</sup>|Provides information about the addition or removal of a table index.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-field-monitoring-trace.md) |
+|Table index trace<sup>[\[3\]](#3)</sup>|Provides information about the addition or removal of a table index.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-table-index-trace.md) |
 |Task scheduler lifecycle|Provides information the execution of scheduled tasks.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-task-scheduler-trace.md) |
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
 

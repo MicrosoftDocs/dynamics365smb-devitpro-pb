@@ -1,9 +1,9 @@
 ---
-title: "PerTenantExtensionCop Rule PTE0010"
+title: "PerTenantExtensionCop Error PTE0010"
 description: "The extension name length must not exceed the specified limit."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,13 +14,17 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# PerTenantExtensionCop Rule PTE0010
+# PerTenantExtensionCop Error PTE0010
 The extension name length must not exceed the specified limit.
 
 ## Description
 The extension name length must not exceed the specified limit.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0047](appsourcecop-as0047.md).
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
