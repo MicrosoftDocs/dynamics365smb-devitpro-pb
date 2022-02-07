@@ -12,8 +12,6 @@ ms.date: 04/01/2021
 
 # Customizing an Integration with Microsoft Dataverse
 
-
-
 This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
 > [!TIP]
