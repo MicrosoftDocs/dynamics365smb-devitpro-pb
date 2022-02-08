@@ -19,7 +19,16 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
+### WS-Federation with Azure Active Directory authentication
+
+The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | For Azure AD authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation.|
+
 ### Business Central Server Administration tool (Removal)
+
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
 |Removed or Replaced? |Why?|
