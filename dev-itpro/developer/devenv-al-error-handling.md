@@ -19,18 +19,23 @@ There are a number of error handling features in AL that can help you deal with 
 - [Collecting Errors](devenv-error-collection.md)  
 - [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 
-## Error handling methods in AL
 
-The following lists some of the error handling methods that are available in AL, but this is not an exhaustive list. Many data types offer error handling for specific areas such as operations on FieldRef and Records. 
 
-> [!TIP]  
-> If you already know the name of a data type, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster.
 
-|Data Type| Method|
-|---------|-------|
+| If you want to...| Then use|
+|------------------|---------|
+| Check for an error in code and decide to do something if the error occurs. | `if <Error> then` |
+| Check for an error and show a simple error dialog to the user. |`Dialog.Error(Message: ErrorInfo)`. For more information, see [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md). |
+| Check for an error and show an error dialog to the user with added support information. | [ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) |
+
+## Overview of error handling methods in AL
+
 |[Dialog Data Type](methods-auto/dialog/dialog-data-type.md)|[Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md) |
 |[System Data Type](methods-auto/system/system-data-type.md)|[ClearLastError Method](methods-auto/system/system-clearlasterror-method.md) <br>[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)<br>[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)<br>[GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)<br>[GetLastErrorText Method](methods-auto/system/system-getlasterrortext--method.md)|
 |[ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) | Contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages. Go to the data type topic for an overview.|
+
+> [!TIP]  
+> If you already know the name of a data type, use the **Filter by title** field in the upper left corner, above the table of contents to find the topic faster.
 
 ## Examples
 
