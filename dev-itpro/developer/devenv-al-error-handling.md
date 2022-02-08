@@ -21,7 +21,7 @@ The following topics introduce error handling in AL:
 - [Collecting Errors](devenv-error-collection.md)  
 - [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
 
-## Overview of error handling methods in AL
+## Error handling methods in AL
 
 For examples of using different error handling methods in AL, see the following table:
 
