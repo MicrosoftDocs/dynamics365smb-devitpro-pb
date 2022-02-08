@@ -46,7 +46,7 @@ For examples of different error handling strategies, see the following table:
 
 | If you want to...| Then use|
 |------------------|---------|
-| Check for an error in code and decide to do something if the error occurs. | `if <Error> then` |
+| Check for an error in code and decide to do something if the error occurs. | `if Error(Message: ErrorInfo) then` |
 | Check for an error and show a simple error dialog to the user. |`Dialog.Error(Message: ErrorInfo)`. For more information, see [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md). |
 | Check for an error and show an error dialog to the user with added support information. | [Using the ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) |
 | Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
