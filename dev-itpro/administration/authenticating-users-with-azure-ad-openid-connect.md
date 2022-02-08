@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Configure Azure Active Directory Authentication and OpenID Connect
 
-[!INCLUDE[2022_releasewave1](../developer/includes/2022_releasewave1.md)]
+[!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
 This article explains how to configure Azure Active Directory authentication. 
 
