@@ -42,7 +42,7 @@ The AL language offers several methods to retrieve record data. In [!INCLUDE[pro
   
 ### Dynamic result sets  
 
-Any result set that is returned from a call to the Find methods discussed in the previous section is dynamic. That means that the result set is guaranteed to contain any changes that you make further ahead in the result set. However, this feature comes at a cost. if any modifications are made to a table which is being traversed, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] might have to issue an extra SQL statement to guarantee that the result set is dynamic.  
+Any result set that is returned from a call to the Find methods discussed in the previous section is dynamic. That means that the result set is guaranteed to contain any changes that you make further ahead in the result set. However, this feature comes at a cost. If any modifications are made to a table which is being traversed, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] might have to issue an extra SQL statement to guarantee that the result set is dynamic.  
   
 The following code shows how records are most efficiently retrieved. **FindSet** is the most efficient method to use because this example reads all records.  
   
@@ -121,8 +121,48 @@ until Customer.Next = 0;
   
 ## Insert, Modify, Delete, and LockTable
 
-Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. if the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
-  
+Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. If the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
+
+Cloning a record before a **Modify** or **Delete** operation issues an extra SQL statement, since the SQL `SELECT` query is restarted every time the table is cloned. A record will be cloned when calling the [Copy Method](../developer/methods-auto/record/record-copy-method.md) on a record, when using a **RecordRef** or when the operation is performed inside a function where the record is not passed with the `var` parameter.
+
+The following code samples will lead to a bad performance, since they will incur an extra SQL statement per record in the table.
+
+```
+if (MyTable.FindSet()) then
+    repeat begin
+        MyTableCopy.Copy(MyTable);
+        // ...
+        MyTableCopy.Modify(); // or .Delete();
+    end until MyTable.Next() = 0;
+```
+
+```
+if (MyTable.FindSet()) then
+    repeat begin
+        RecRef.GetTable(MyTable);
+        // ...
+        RecRef.Modify(); // or .Delete();
+    end until MyTable.Next() = 0;
+```
+
+Instead, you should do the following, which will only issue an extra SQL statement:
+
+```
+RecRef.Open(Database::"My Table");
+  if (RecRef.FindSet()) then
+      repeat begin
+          // ...
+          RecRef.Modify(); // or .Delete();
+      end until RecRef.Next() = 0;
+```
+
+```
+if (MyTable.FindSet()) then
+  repeat begin
+      MyTable.Modify(); // or .Delete();
+  end until MyTable.Next() = 0;
+```
+
 The **LockTable** method does not require any separate SQL statements. It will cause any subsequent reading from any tables to be done with an update lock. For more information, see [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md). 
 
 ## ModifyAll and DeleteAll
