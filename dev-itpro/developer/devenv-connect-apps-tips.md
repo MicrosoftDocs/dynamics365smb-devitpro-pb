@@ -76,7 +76,7 @@ It's possible to specify that all inner requests in a certain OData $batch reque
 
 To enable transactional batch behavior, include the `Isolation: snapshot` header with the $batch request.
 
-For more information, see [Using OData transactional $batch requests](../webservices/use-odata-batch.md)
+For more information, see [Using OData Transactional $batch Requests](../webservices/use-odata-batch.md)
 
 ## <a name="DataAccessIntent"></a>Specifying Data Access Intent for GET requests
 
