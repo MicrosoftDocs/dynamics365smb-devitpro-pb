@@ -13,7 +13,7 @@ ms.author: solsen
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] <!-- new include for 2022RW1-->
 
-Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling and sampling profiling. Read more in the sections below:
+Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling. Based on a snapshot of running code, you can also choose to do sampling profiling. Read more in the sections below:
 
 - [Snapshot profiling](devenv-alprofiler-overview.md#snapshot-profiling)  
 - [Sampling profiling](devenv-alprofiler-overview.md#sampling-profiling)
@@ -148,7 +148,11 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 
 ## Sampling profiling
 
-Sampling profiling is useful as an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code. <!-- in-client profiler implementation -->
+Sampling profiling is useful as an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code. Sampling profiling is based on a snapshot of running code. It gets the AL stack frame of the currently executing AL method in the context of an attached session in a given time interval.
+
+Sampling is not as accurate as instrumentation profiling is. But it can give an indication about the self-time of an AL method. The benefit of doing sampling is that it is less noisy and is much faster to get profile information.
+
+<!-- in-client profiler implementation -->
 
 To start sampling profiling, you must choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And the `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
 
