@@ -1,21 +1,23 @@
 ---
-title: Using OData transactional $batch requests
-description: How to specify that all inner requests in a certain OData $batch request are processed in a transactional way
+title: Using OData Transactional $batch Requests
+description: How to specify that all inner requests in a certain OData $batch request are processed in a transactional way in Business Central.
 ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
+ms.date: 02/09/2022
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ---
 
-# Using OData transactional $batch requests
+# Using OData Transactional $batch Requests
+
 > **APPLIES TO:** Business Central 2020 release wave 2 (version 17.1) and later
 
 It's possible to specify that all inner requests in a certain OData $batch request are processed in a transactional way. If one of the inner requests fails after another request (or requests) has committed changes, all changes within a batch will be reverted as if the batch request never happened. Transactional $batch requests are useful in scenarios where a single business operation spans multiple requests, because they prevent adverse effects if parts of the operation fail. Also, they can improve performance by reducing the number of requests the client needs to do when errors occur.
 
 ## Enabling OData transactional batch behavior
+
 To enable transactional batch behavior, include the `Isolation: snapshot` header with the $batch request.
 
 ## Example
