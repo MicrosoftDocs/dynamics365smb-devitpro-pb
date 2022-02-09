@@ -1,9 +1,9 @@
 ---
 title: "PerTenantExtensionCop Error PTE0009"
-description: "The properties 'HelpBaseUrl' and 'SupportedLocales' are reserved for translation apps."
+description: "The properties 'helpBaseUrl' and 'supportedLocales' are reserved for translation apps."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 02/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 This app.json property must not be used for per-tenant extensions.
 
 ## Description
-The properties 'HelpBaseUrl' and 'SupportedLocales' are reserved for translation apps.
+The properties 'helpBaseUrl' and 'supportedLocales' are reserved for translation apps.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
