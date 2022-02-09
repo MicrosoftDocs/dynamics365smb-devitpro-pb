@@ -22,6 +22,10 @@ The Web client does not support using properties for teaching tips in certain co
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+The following properties are used to enable teaching tips in the UI. For more information, see:
+
 - [AboutTitle Property](../properties/devenv-abouttitle-property.md)   
 - [AboutTitleML Property](../properties/devenv-abouttitleml-property.md)   
 - [AboutText Property](../properties/devenv-abouttext-property.md)   
