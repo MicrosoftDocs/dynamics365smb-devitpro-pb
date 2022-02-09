@@ -22,7 +22,9 @@ By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you ca
 
 ## Using OData transaction `$batch`
 
-Use OData transaction `$batch` requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
+Use OData transaction `$batch` requests where relevant. They can reduce the number of requests the client needs to do when errors occur. 
+
+For more information, see [Using OData transactional $batch requests](webservices/use-odata-batch.md).
 
 ## Limiting the set (`$filter` or `$top`) if you're using an expensive `$expand` statement
 
