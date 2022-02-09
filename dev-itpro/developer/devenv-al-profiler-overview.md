@@ -13,17 +13,22 @@ ms.author: solsen
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] <!-- new include for 2022RW1-->
 
-Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for instrumentation profiling and sampling profiling.
+Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling.
 
-## Snapshot profiling
+## Snapshot of running code
 
-With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. There are two types of profiling; instrumentation profiling and sampling profiling. Both types of profiling are based on a snapshot of running code. Instrumentation profiling is more accurate and provides more insight. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. The sampling profiling is less accurate, but faster.
+With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. There are two types of profiling; *instrumentation* profiling and *sampling* profiling. Both types of profiling are based on a snapshot of running code. Instrumentation profiling is more accurate and provides more insight. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. The sampling profiling is less accurate, but faster.
 
-The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. To be able to snapshot debug, you must be a **delegated admin**. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
+<!--
+The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. To be able to snapshot debug, you must be a **delegated admin**. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). -->
 
-### Snapshot configuration settings
+## Snapshot configuration settings
 
-In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration has a parameter called  `executionContext` which has the following values in the table below. If nothing is specified, the configuration is `DebugAndProfile` by default.
+In order to do any profiling on code, you must first capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to do. 
+
+### To set up a snapshot configuration for instrumentation profiling
+
+The parameter called  `executionContext` has the following values in the table below. If nothing is specified, the configuration is `DebugAndProfile` by default.
 
 |Option|Description|
 |------|-----------|
@@ -31,7 +36,7 @@ In order to do profiling on code, you must first capture a snapshot of running c
 |`Profile` | The snapshot session will only gather profile information, snappoints will be ignored, and debugging will not work.|
 |`DebugAndProfile` | Both debugging and profiling will be available as a result of a snapshot session. This is the default setting.|
 
-Furthermore, the `profilingType` must be set to `Instrumentation` as illustrated in the example below.
+The `profilingType` must be set to `Instrumentation` as illustrated in the example below.
 
 Looking at the example, if we want to use the snapshot both for debugging and profiling purposes, the configuration for the snapshot in the `launch.json` file, must look equivalent to the following:
 
@@ -51,6 +56,29 @@ Looking at the example, if we want to use the snapshot both for debugging and pr
             "profilingType": "Instrumentation"
         }
 ```
+
+### To set up a snapshot configuration for sampling profiling
+
+For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.json` configuration file. The `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
+
+```json
+"configurations": [ 
+        {
+            "name": "Your own server",
+            "type": "al",
+            "userId": "555",
+            "request": "snapshotInitialize",
+            "environmentType": "OnPrem",
+            "server": "http://localserver",
+            "serverInstance": "BC200",
+            "authentication": "Windows",
+            "breakOnNext": "WebClient",
+            "executionContext": "Profile",
+            "profilingType": "Sampling"
+        }
+```
+
+## Generating a profile file
 
 Then, when the snapshot file is downloaded, you can generate a profile file. This can be done in one of two ways:
 
@@ -151,24 +179,7 @@ Sampling is not as accurate as instrumentation profiling is. But it can give an 
 
 <!-- in-client profiler implementation -->
 
-To start sampling profiling, you must make sure that the configuration file is set up correctly. Choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And the `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
 
-```json
-"configurations": [ 
-        {
-            "name": "Your own server",
-            "type": "al",
-            "userId": "555",
-            "request": "snapshotInitialize",
-            "environmentType": "OnPrem",
-            "server": "http://localserver",
-            "serverInstance": "BC200",
-            "authentication": "Windows",
-            "breakOnNext": "WebClient",
-            "executionContext": "Profile",
-            "profilingType": "Sampling"
-        }
-```
 
 The following server restrictions exist for sampling profiling: 
 
