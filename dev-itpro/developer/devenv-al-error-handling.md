@@ -2,7 +2,7 @@
 title: "AL Error Handling"
 description: "Error handling in AL for Business Central"
 ms.custom: na
-ms.date: 02/02/2022
+ms.date: 02/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,20 +50,10 @@ For examples of different error handling strategies, see the following table:
 | Check for an error and show a simple error dialog to the user. |`Dialog.Error(Message: ErrorInfo)`. For more information, see [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md). |
 | Check for an error and show an error dialog to the user with added support information. | [Using the ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) |
 | Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
-| Do bulk validations in AL and not show an error dialog for each of them to the user | [Collecting Errors](devenv-error-collection.md) |
-| Catch errors/exceptions that are thrown during .NET Framework interoperability operations (on-premises only| [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
-
-<!-- ## Examples
-
-For examples of how some of these error handling methods are implemented in the base application, see the following table:
-
-|Method|Base Application Reference|
-|-----|-----|
-|[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)| See codeunit `JobQueueErrorHandler`.|
-|[ClearLastError Method](methods-auto/system/system-clearlasterror-method.md)|See codeunit `BatchProcessingMgt`.| -->
-
+| Do bulk validations in AL and not show an error dialog for each of them to the user. | [Collecting Errors](devenv-error-collection.md) |
+| Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
 
 ## See also
 
-[AL Control Statements](devenv-al-control-statements.md)   
+[AL Control Statements](devenv-al-control-statements.md)  
 [AL Development Environment](devenv-reference-overview.md)
