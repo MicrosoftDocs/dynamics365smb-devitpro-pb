@@ -145,11 +145,6 @@ This task can be done from the [!INCLUDE[prod_short](../developer/includes/prod_
 
 For more information about setting up users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
-> [!IMPORTANT]  
-> Single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and SharePoint.  
->
-> We recommend that you provide guidance to your users for signing out of their account when they're done, so that you can keep your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment more secure.  
-
 ## Task 4: Configure [!INCLUDE[server](../developer/includes/server.md)]
 
 Once you have the Azure AD tenant and a registered application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you configure the [!INCLUDE[server](../developer/includes/server.md)] instance for Azure AD authentication.
@@ -473,6 +468,13 @@ When you mount a tenant, you can give the tenant an additional ID by setting the
 ### Using Visual Studio Code
 
 If you are connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you do not do this, you will get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
+
+
+### Give users guidance about single sign-on
+
+Single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and SharePoint.  
+
+We recommend that you provide guidance to your users for signing out of their account when they're done, so that you can keep your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment more secure.  
 
 ## See Also  
 
