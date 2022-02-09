@@ -13,10 +13,10 @@ ms.author: solsen
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] <!-- new include for 2022RW1-->
 
-Profiling allows you to do collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling and sampling profiling. Read more in the sections below:
+Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling and sampling profiling. Read more in the sections below:
 
-[Snapshot profiling](devenv-alprofiler-overview.md#snapshot-profiling)
-[Sampling profiling](devenv-alprofiler-overview.md#sampling-profiling)
+- [Snapshot profiling](devenv-alprofiler-overview.md#snapshot-profiling)  
+- [Sampling profiling](devenv-alprofiler-overview.md#sampling-profiling)
 
 ## Snapshot profiling
 
@@ -24,7 +24,7 @@ With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.
 
 The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. To be able to snapshot debug, you must be a **delegated admin**. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
-## Snapshot configuration settings
+### Snapshot configuration settings
 
 In order to do profiling on code, you must first capture a snapshot of running code. The snapshot configuration has a parameter called  `executionContext` which has the following values in the table below. If nothing is specified, the configuration is `DebugAndProfile` by default.
 
@@ -62,7 +62,7 @@ Then, when the snapshot file is downloaded, you can generate a profile file. Thi
 
 The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in Visual Studio Code.
 
-## Graph of method calls
+### Graph of method calls
 
 To investigate the graph of method calls, you open the generated profile file in the performance profiling editor. If you click the file directly, it opens up in *top-down* view. See the **View modes** section for more information. You can also right-click a profile file and get the following options: **AL Profile Visualizer TopDown Graph** and **AL Profile Visualizer BottomUp Graph**. When the profile file opens, it looks similar to the illustration below:
 
@@ -83,26 +83,26 @@ The color legend can be changed by specifying the `al.profilerColors` property i
 > [!IMPORTANT]  
 > If you run Visual Studio Code with the setting **Run as administrator**, the graph will not display in the performance profiling editor view. As a workaround, you can launch Visual Studio Code from the command line with the flag `--no-sandbox`.
 
-### View modes
+#### View modes
 
 To switch between views, you can either right-click the profile file and choose a view, or you can use the small button in the upper right corner. There are two different view modes in the graph; *top-down* and *bottom-up*.
 
 When sorting the stack *top-down*, the graph sorts the methods according to call sequence, which means that the child nodes are the methods called from the parent node. And when sorting *bottom-up*, the graph is sorted as a *reverse* call stack, which means that the child nodes are methods who *called* the parent node.
 
-### Details
+#### Details
 
 To investigate further, the **Self-time** and **Total time** columns are important indicators of where time is spent in the code. The **Self-time** is the amount of time spent in the method only, excluding any calls out of the method. The **Total time** is the amount of **Self-time** *plus* any calls out of the method. On *bottom-up* graphs the **Total time** and **Self-time** columns are sortable. Clicking them will first sort them *ascending*, clicking again will sort them *descending*.
 
 **Hit count** is only available on *top-down* graphs and shows the number of times a specific method was called. Time spent is aggregated. 
 
-### Filtering
+#### Filtering
 
 The nodes in the graph can be filtered. The syntax is the following:
 
 `@column name | <alias> <op> <value> where `<br> 
 `<column name> := [function, url, path, selfTime, totalTime, id, objectType, objectName, declaringApplication]`
 
-#### Column name aliases
+##### Column name aliases
 
 The aliases that are available for the column names are:
 
@@ -114,7 +114,7 @@ The aliases that are available for the column names are:
 `string operators : [:, =, !=, <>, ~, =]`  
 `~ = := <regex>`
 
-##### Filtering examples
+###### Filtering examples
 
 |Expression|Result|
 |----------|------|
@@ -122,7 +122,7 @@ The aliases that are available for the column names are:
 |@h > 20 | Shows all nodes in the graph where the hit count was larger than 20. |
 |@da ~= Ba* | Shows all nodes in the graph that start with Ba.|
 
-## Keyboard shortcuts for navigating the graph
+### Keyboard shortcuts for navigating the graph
 
 The following table provides an overview of the shortcut key combinations that you can use when you are working in the graph of method calls.
 
@@ -135,7 +135,7 @@ The following table provides an overview of the shortcut key combinations that y
 |*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 
-## Inline Profiler CodeLens for AL profiling results
+### Inline Profiler CodeLens for AL profiling results
 
 The Profiler CodeLens for AL enables showing profile results. At hover, the Profiler CodeLens displays time spent in milliseconds for a specific method, and the number of hits on the method. When opening a profiler file, the lens will show information on all statements that appear as frames in the profiler.
 
