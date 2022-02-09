@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Configure Azure Active Directory Authentication and OpenID Connect
+# Configure Azure Active Directory Authentication with OpenID Connect
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-This article explains how to configure Azure Active Directory authentication. 
+This article explains how to configure Business Central to use Azure Active Directory to authenticate users. This setup configures Azure AD authentication to use OpenID connect. 
 
 ## Preparation
 
@@ -29,8 +29,6 @@ This article explains how to configure Azure Active Directory authentication.
 To get started, you need an Azure AD tenant. The Azure AD tenant is where you manage user accounts and register apps, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 There are a couple ways to get an Azure AD tenant:
-
-<!--    Then, if you add the email addresses for those user accounts to the user accounts in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  -->
 
 - Sign up a Microsoft 365 plan
 
