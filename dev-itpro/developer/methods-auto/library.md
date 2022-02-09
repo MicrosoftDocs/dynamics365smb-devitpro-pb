@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/24/2021
+ms.date: 02/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,7 +40,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[DotNet](dotnet/dotnet-data-type.md)|Represents an unspecified .NET type.|
 |[Duration](duration/duration-data-type.md)|Represents the difference between two DateTimes. This value can be negative. It is stored as a 64-bit integer. The integer value is the number of milliseconds during the duration.|
 |[Enum](enum/enum-data-type.md)|Represents the text content of an element or attribute.|
-|[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error. Supported for Business Central online from runtime 8.0.|
+|[ErrorInfo](errorinfo/errorinfo-data-type.md)|Provides a structure for grouping information about an error.|
 |[FieldRef](fieldref/fieldref-data-type.md)|Identifies a field in a table and gives you access to this field.|
 |[File](file/file-data-type.md)|Represents a file.|
 |[FilterPageBuilder](filterpagebuilder/filterpagebuilder-data-type.md)|Stores filter configurations for a filter page. A filter page is a dynamic page type that contains one or more filter controls that enables users to set filters on fields of the underlying tables.|
@@ -131,6 +131,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
+|[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
 |[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
