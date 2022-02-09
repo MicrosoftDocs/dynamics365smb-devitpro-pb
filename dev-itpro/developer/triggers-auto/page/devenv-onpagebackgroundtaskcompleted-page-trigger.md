@@ -68,7 +68,10 @@ The following example modifies the **OnPageBackgroundTaskCompleted** trigger to 
         end;
     end;
 ```
-
+> [!NOTE]
+The callback triggers can't execute UI operations, except notifications and control updates.
+This means that e.g. CurrPage.Update() statements are ignored, as they in many cases would lead to infinite loops when Page Background Tasks are started from the OnAfterGetCurrRecord trigger.
+ 
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
