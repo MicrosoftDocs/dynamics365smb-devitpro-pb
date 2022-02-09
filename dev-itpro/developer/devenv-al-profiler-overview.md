@@ -13,14 +13,11 @@ ms.author: solsen
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] <!-- new include for 2022RW1-->
 
-Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling. Based on a snapshot of running code, you can also choose to do sampling profiling. Read more in the sections below:
-
-- [Snapshot profiling](devenv-alprofiler-overview.md#snapshot-profiling)  
-- [Sampling profiling](devenv-alprofiler-overview.md#sampling-profiling)
+Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for snapshot profiling. Based on a snapshot of running code, you can also choose to do sampling profiling. 
 
 ## Snapshot profiling
 
-With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views.
+With the AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. 
 
 The AL profiler works on a snapshot of running code. Snapshot debugging is a recording of running code that allows for later offline inspection. To be able to snapshot debug, you must be a **delegated admin**. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md). 
 
@@ -154,7 +151,7 @@ Sampling is not as accurate as instrumentation profiling is. But it can give an 
 
 <!-- in-client profiler implementation -->
 
-To start sampling profiling, you must choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And the `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
+To start sampling profiling, you must make sure that the configuration file is set up correctly. Choose `Sampling` as the `profilingType` in the `launch.json` configuration file. And the `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
 
 ```json
 "configurations": [ 
@@ -162,7 +159,7 @@ To start sampling profiling, you must choose `Sampling` as the `profilingType` i
             "name": "Your own server",
             "type": "al",
             "userId": "555",
-            "request": "snapshotInitialize", // check!!
+            "request": "snapshotInitialize",
             "environmentType": "OnPrem",
             "server": "http://localserver",
             "serverInstance": "BC200",
