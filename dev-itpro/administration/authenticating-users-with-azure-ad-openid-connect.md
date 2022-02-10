@@ -1,6 +1,6 @@
 ---
-title: User Authentication with Azure AD for Single Sign-on
-description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Microsoft 365.
+title: Configure Azure Active Directory Authentication with OpenID Connect
+description: Learn how to authentication Business Central users by using Azure Active Directory with OpenID Connect.
 ms.custom: na
 ms.date: 01/26/2022
 ms.reviewer: na
@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-This article explains how to configure Business Central to use Azure Active Directory to authenticate users. This setup configures Azure AD authentication to use OpenID connect. 
+This article explains how to configure Business Central to use Azure Active Directory to authenticate users. This setup configures Azure AD authentication to use [OpenID connect](). 
 
 ## Preparation
 
