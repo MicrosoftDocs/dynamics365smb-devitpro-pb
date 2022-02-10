@@ -123,9 +123,9 @@ until Customer.Next = 0;
 
 Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. If the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
 
-Cloning a record before a **Modify** or **Delete** operation issues an extra SQL statement, since the SQL `SELECT` query is restarted every time the table is cloned. A record will be cloned when calling the [Copy Method](../developer/methods-auto/record/record-copy-method.md), when using a **RecordRef** or when the operation is performed inside a function where the record is not passed with the `var` parameter.
+Cloning a record before a **Modify** or **Delete** operation issues an extra SQL statement, since the SQL `SELECT` query is restarted every time the table is cloned. A record will be cloned when calling the [Copy Method](../developer/methods-auto/record/record-copy-method.md), when using a **RecordRef** or when the record is not passed with the `var` parameter within a function.
 
-The following code samples will lead to a bad performance, since they will incur an extra SQL statement per record in the table.
+The following code samples will lead to a bad performance, since they will issue an extra SQL statement per record in the table.
 
 ```
 if (MyTable.FindSet()) then
@@ -145,15 +145,15 @@ if (MyTable.FindSet()) then
     end until MyTable.Next() = 0;
 ```
 
-Instead, you should do the following, which will only issue an extra SQL statement:
+Instead, you should do the following, which only requires an extra SQL statement:
 
 ```
 RecRef.Open(Database::"My Table");
-  if (RecRef.FindSet()) then
-      repeat begin
-          // ...
-          RecRef.Modify(); // or .Delete();
-      end until RecRef.Next() = 0;
+if (RecRef.FindSet()) then
+    repeat begin
+        // ...
+        RecRef.Modify(); // or .Delete();
+    end until RecRef.Next() = 0;
 ```
 
 ```
