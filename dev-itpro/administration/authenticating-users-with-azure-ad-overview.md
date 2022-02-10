@@ -68,7 +68,7 @@ Set-NAVWebServerConfiguration -KeyName UseLegacyAcsAuthentication -KeyValue "tru
 
 ### Configuring Azure AD authentication in earlier versions
 
-The Azure AD authentication setup hasn't changed for versions 19 and earlier. For more information, see [Configure Azure AD Authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
+The Azure AD authentication setup hasn't changed for versions 19 and earlier. For more information, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md)
 
 ## See Also  
 
