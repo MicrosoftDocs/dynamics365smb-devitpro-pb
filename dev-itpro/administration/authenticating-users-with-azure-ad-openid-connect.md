@@ -306,20 +306,6 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     Set-NAVServerConfiguration -ServerInstance BC200  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
     ```
 
-6. Increase the `ExtendedSecurityTokenLifetime` parameter value.
-
-   This parameter defines the interval of time that a client session can remain inactive before the session is dropped. If the value is too low, users may experience the error: **Connection is not longer available or was lost**. The event log will include the error: **The SAML2 token is not valid because its validity period has ended.** for the server instance. Increasing this value will resolve this issue. We recommend that you set it to a value greater than 8 hours.
-
-    ```powershell
-    Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ExtendedSecurityTokenLifetime -KeyValue "<hours>"
-    ```
-
-    **Example**
-
-    ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC200  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
-    ```
-
 7. Restart the server instance. For example:
 
     ```powershell
@@ -438,7 +424,7 @@ With Basic authentication, the [!INCLUDE[prod_short](../developer/includes/prod_
 
 With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).
 
-## Security and configuration tips
+## Additional Security and configuration 
 
 ### Set the access token lifetime
 
@@ -455,6 +441,20 @@ Follow the steps outlined below.
 6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
 
 For reference, see the prerequisites section in the following article: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites).
+
+### Increase the `ExtendedSecurityTokenLifetime` parameter value on Business Central Server
+
+This parameter defines the interval of time that a client session can remain inactive before the session is dropped. If the value is too low, users may experience the error: **Connection is not longer available or was lost**. The event log will include the error: **The SAML2 token is not valid because its validity period has ended.** for the server instance. Increasing this value will resolve this issue. We recommend that you set it to a value greater than 8 hours.
+
+```powershell
+Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ExtendedSecurityTokenLifetime -KeyValue "<hours>"
+```
+
+**Example**
+
+```powershell
+Set-NAVServerConfiguration -ServerInstance BC200  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
+```
 
 ### Using host names for tenants
 
