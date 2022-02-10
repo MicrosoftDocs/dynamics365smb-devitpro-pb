@@ -114,25 +114,23 @@ To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user 
 
 2. Assign Azure user principle name to the Business Central user. t or using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-<!--# [Business Central Web client](#tab/admintool)
+  # [Business Central Web client](#tab/admintool)
 
-1. Start the [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and open the **Users** page.
-2. Open the user that you want to modify.
-3. Under **Microsoft 365 (Authentication)**, set the **Authentication Email** to the user principle name  in Azure AD.
+  1. Start the [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and open the **Users** page.
+  2. Open the user that you want to modify.
+  3. Under **Microsoft 365 (Authentication)**, set the **Authentication Email** to the user principle name  in Azure AD.
 
-# [Administration Shell](#tab/adminshell) -->
+  # [Administration Shell](#tab/adminshell)
 
-    1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+  1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+  2. Run the [Set-NAVServerUser cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserveruser) to set the authentication email. For example:
 
-    2. Run the [Set-NAVServerUser cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserveruser) to set the authentication email. For example:
+     ```powershell
+     Set-NAVServerUser -WindowsAccount yourdomain\username -AuthenticationEmail "AzureAD_principal_name"
+     ```
+---
 
-        ```powershell
-        Set-NAVServerUser -WindowsAccount yourdomain\username -AuthenticationEmail "AzureAD_principal_name"
-        ```
-<!-- --- -->
-
-
-    You can also do this step from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
+For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
 ## Task 4: Configure [!INCLUDE[server](../developer/includes/server.md)]
 
