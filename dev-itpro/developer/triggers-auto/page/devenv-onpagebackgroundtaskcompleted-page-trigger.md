@@ -1,6 +1,6 @@
 ---
 title: "OnPageBackgroundTaskCompleted (Page) Trigger"
-description: "Runs after a page background task has successfully completed."
+description: "Runs after a page background task has completed successfully."
 ms.author: solsen
 ms.custom: na
 ms.date: 09/23/2021
@@ -45,7 +45,7 @@ Specifies the results of the page background task.
 
 ## Remarks
 
-The callback triggers can't execute UI operations, except notifications and control updates. This means that, for example, CurrPage.Update() statements are ignored because they would in many cases lead to infinite loops when page background tasks are started from the [OnAfterGetCurrRecord](triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) trigger.
+The callback triggers can't execute UI operations, except notifications and control updates. This means that, for example, CurrPage.Update() statements are ignored because they would in many cases lead to infinite loops when page background tasks are started from the [OnAfterGetCurrRecord](devenv-onaftergetcurrrecord-page-trigger.md) trigger.
 
 ## Example
 
