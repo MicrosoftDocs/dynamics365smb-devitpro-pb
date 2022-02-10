@@ -212,7 +212,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 2. Set the `ClientServicesCredentialType` to `AccessControlService`.
 
    ```powershell
-   Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName ClientServicesCredentialType -KeyValue AccessControlService
+   Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ClientServicesCredentialType -KeyValue AccessControlService
    ```
 
 3. Configure the Azure Active Directory settings.
@@ -226,7 +226,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         The value has the following format:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName ValidAudiences -KeyValue "<application ID>"
+        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>"
         ```
 
         **Example**
@@ -240,7 +240,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         The value has the following format:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/<AAD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/<AAD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
         |Parameter|Description|
@@ -260,7 +260,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         The value has the following format:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName ValidAudiences -KeyValue "<application ID>"
+        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>"
         ```
 
         **Example**
@@ -274,7 +274,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         The value has the following format:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/<AADTENANTID>/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/<AADTENANTID>/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
         |Parameter|Description|
@@ -289,13 +289,13 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 4. Disable token-signing certificate validation by setting `DisableTokenSigningCertificateValidation` to `true`.
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName DisableTokenSigningCertificateValidation -KeyValue true
+    Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName DisableTokenSigningCertificateValidation -KeyValue true
     ```
 
 5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName AppIdUri -KeyValue "<Application ID URI>"
+    Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName AppIdUri -KeyValue "<Application ID URI>"
     ```
 
     The value is typically the same as the *wtrealm* parameter value of the WSFederationLoginEndpoint parameter. 
@@ -311,7 +311,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
    This parameter defines the interval of time that a client session can remain inactive before the session is dropped. If the value is too low, users may experience the error: **Connection is not longer available or was lost**. The event log will include the error: **The SAML2 token is not valid because its validity period has ended.** for the server instance. Increasing this value will resolve this issue. We recommend that you set it to a value greater than 8 hours.
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance <BC server instance name>  -KeyName ExtendedSecurityTokenLifetime -KeyValue "<hours>"
+    Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ExtendedSecurityTokenLifetime -KeyValue "<hours>"
     ```
 
     **Example**
