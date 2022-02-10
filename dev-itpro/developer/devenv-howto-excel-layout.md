@@ -14,11 +14,30 @@ ms.author: solsen
 
 When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on an Excel layout. For more information about the report object, see [Report Object](devenv-report-object.md).
 
-## Create an Excel layout report
+## Create a simple Excel layout report
 
-The following example extends the Customer List page with a trigger that runs the report as soon as the Customer List page is opened.
+The following example extends the **Customer List** report with a new Excel layout. The layout does not yet exist, but will be generated based on the existing report dataset for Customer List. 
 
-1. Create a new extension to the **Customer List** page that contains code to run the report and a report object by adding the following lines of code: 
+1. Create a new report extension of the **Customer List** page by adding the following lines of code: 
+
+```al
+reportextension 50101 MyExtendedCustList extends "Customer - List"
+{
+    ...
+    rendering
+    {
+        layout(LayoutExcel)
+        {
+            Type = Excel;
+            LayoutFile = 'MyExcelCustomerList.xlsx';
+        }
+    }
+}
+```
+
+2. Press **Ctrl+Shift+P**, and then choose **AL: Package** and the `MyExcelCustomerList.xlsx` will be generated for you in the right pane of Visual Studio Code. 
+1. Right-click the file, and choose **Reveal in File Explorer**. This will open the File Explorer.
+1. Choose the `MyExcelCustomerList.xlsx` file, and open it in Excel.
 
 
 ## See also
