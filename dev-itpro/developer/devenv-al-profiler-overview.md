@@ -24,7 +24,7 @@ The AL profiler works on a snapshot of running code. Snapshot debugging is a rec
 
 ## Snapshot configuration settings
 
-In order to do any profiling on code, you must first capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to do. 
+In order to do any profiling on code, you must first capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. 
 
 ### To set up a snapshot configuration for instrumentation profiling
 
@@ -78,9 +78,9 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
         }
 ```
 
-## Generating a profile file
+## Generating a profile file for instrumentation profiling
 
-Then, when the snapshot file is downloaded, you can generate a profile file. This can be done in one of two ways:
+Once the snapshot file is downloaded, you can generate a profile file. This can be done in one of two ways:
 
 1. Open the Command Palette by using the **Ctrl+Shift+P** shortcut, then select the **AL: Generate profile file** command and choose a snapshot from the dropdown menu.
 1. Alternatively, in the Visual Studio Code explorer, right-click the specific snapshot file and choose **Generate Profile File**.
