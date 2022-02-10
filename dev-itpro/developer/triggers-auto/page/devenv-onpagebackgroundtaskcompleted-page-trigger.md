@@ -70,7 +70,7 @@ The following example modifies the **OnPageBackgroundTaskCompleted** trigger to 
 ```
 
 > [!NOTE]
-The callback triggers can't execute UI operations, except notifications and control updates. This means that, for example, CurrPage.Update() statements are ignored because they would in many cases lead to infinite loops when page background tasks are started from the [OnAfterGetCurrRecord](triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) trigger.
+> The callback triggers can't execute UI operations, except notifications and control updates. This means that, for example, CurrPage.Update() statements are ignored because they would in many cases lead to infinite loops when page background tasks are started from the [OnAfterGetCurrRecord](triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) trigger.
 
 ## See Also
 
