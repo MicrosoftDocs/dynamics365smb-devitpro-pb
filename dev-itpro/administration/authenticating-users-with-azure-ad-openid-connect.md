@@ -219,8 +219,6 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
     This step is different for a single-tenant and multitenant [!INCLUDE[server](../developer/includes/server.md)] deployments.
 
-    # [Single-tenant](#tab/singletenant)
-
     1. Set the `ValidAudiences` parameter to the **Application (client) ID** of the registered application in Azure AD.
 
         The value has the following format:
@@ -243,45 +241,38 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/<AAD TENANT ID>/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
-        |Parameter|Description|
-        |-|-|-|
-        |`<AAD TENANT ID>`|The ID of the Azure AD tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`. The value is the same as what you used in the WS-federation login endpoint in the previous step.|
+        # [Single-tenant](#tab/singletenant)
 
-        **Example**
+        Replace `<AAD TENANT ID>` with the ID of the Azure AD tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
+
+        For example:
 
         ```powershell
         Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"
         ```  
 
-    # [Multitenant-tenant](#tab/multitenant)
+        # [Multitenant-tenant](#tab/multitenant)
 
-    1. Set the `ValidAudiences` parameter to the **Application (client) ID** of the registered application in Azure AD.
+        Replace `<AAD TENANT ID>` with one of the following values:
 
-        The value has the following format:
+        |Value|Description|
+        |-|-|
+        |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. The Azure AD Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
+        |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant|
+
+        For example:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>"
+        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/{AADTENANTID}/FederationMetadata/2007-06/FederationMetadata.xml"
+        ```
+        
+        or
+
+        ```powershell
+        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
-        **Example**
-
-        ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "44444444-cccc-5555-dddd-666666666666"
-        ```  
-
-    2. Set the `ClientServicesFederationMetadataLocation` parameter.
-
-        The value has the following format:
-
-        ```powershell
-        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/<AADTENANTID>/FederationMetadata/2007-06/FederationMetadata.xml"
-        ```
-
-        |Parameter|Description|
-        |-|-|-|
-        |`<AADTENANTID>`|Set this parameter to one of the following values:<ul><li>`{AADTENANTID}`- Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. The Azure AD Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.</li><li>`common`- Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant.</li></ul>|
-
-    ---
+        ---
 
     > [!IMPORTANT]
     > The `AzureActiveDirectoryClientSecret`, `AzureActiveDirectoryClientId`, and `AzureActiveDirectoryClientSecret` parameters aren't used. The `AzureActiveDirectoryClientId` must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
