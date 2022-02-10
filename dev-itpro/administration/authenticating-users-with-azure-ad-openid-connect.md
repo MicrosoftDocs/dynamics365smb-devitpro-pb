@@ -108,7 +108,7 @@ You can postpone this task for most users and do it after you complete Azure AD 
 
 To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account with Azure AD, you set the user's authentication email in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to the user's principal name in Azure AD, like *chris@contoso.com*. <!-- When you combine this setting with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].-->
 
-1. In the [Azure portal](https://portal.azure.com), get the user's principle name in Azure AD.
+1. In the [Azure portal](https://portal.azure.com), get the Azure AD user's principle name.
 
     For more information, see [Users in Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) in the Azure help.
 
@@ -122,13 +122,13 @@ To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user 
 
 # [Administration Shell](#tab/adminshell) -->
 
-1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+    1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
-2. Run the [Set-NAVServerUser cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserveruser) to set the authentication email. For example:
+    2. Run the [Set-NAVServerUser cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserveruser) to set the authentication email. For example:
 
-    ```powershell
-    Set-NAVServerUser -WindowsAccount yourdomain\username -AuthenticationEmail "AzureAD_principal_name"
-    ```
+        ```powershell
+        Set-NAVServerUser -WindowsAccount yourdomain\username -AuthenticationEmail "AzureAD_principal_name"
+        ```
 <!-- --- -->
 
 
