@@ -12,6 +12,18 @@ ms.author: solsen
 
 # Defining multiple report layouts
 
-In AL you have the option of defining multiple layouts for one report. The layouts must be of the same type, meaning you can have multiple Word layouts for one report, or multiple Excel layouts for one report. You cannot have both a Word and an Excel layout defined for one report.
+In AL you have the option of defining multiple layouts for one report. This applies to both report objects, and report extension objects. The layouts must be of the same type, meaning that you can have multiple Word layouts for one report, or multiple Excel layouts for one report. You cannot have both a Word and an Excel layout defined for one report.
+
+To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one more more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a caption and a summary which will be displayed to the user in the **Report Layout** <!--check--> page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If you do not specify a caption, the layout name will be displayed to the user.
+
+## Layout definition in AL
+
+```al
+
+```
+
+<!-- not use old and new at same time -->
+<!-- new code action-->
+<!-- allows packaging as extensions -->
 
 ## See also
