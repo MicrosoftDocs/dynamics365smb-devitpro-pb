@@ -87,7 +87,7 @@ permissionset 50100 MyPermissionSet
 The AL permission set grants access to the table and thereby satisfies the validation.
 
 > [!NOTE]  
-> You can grant read access to all your tables using `tabledata * = R;`.
+> You can grant read access to all your tables using `*`. For instance `tabledata * = R;` grants read access to all of them.
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
