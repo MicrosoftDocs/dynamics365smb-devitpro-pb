@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Creating an Excel Layout Report
 
-When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on an Excel layout. For more information about the report object, see [Report Object](devenv-report-object.md).
+When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on an Excel layout. For more information about the report object, see [Report Object](devenv-report-object.md) and for report extension objects, see [Report Extension Object](devenv-report-ext-object.md).
 
 ## Create a simple Excel layout report
 
@@ -23,7 +23,6 @@ The following example extends the **Customer List** report with a new Excel layo
 ```al
 reportextension 50101 MyExtendedCustList extends "Customer - List"
 {
-    ...
     rendering
     {
         layout(LayoutExcel)
