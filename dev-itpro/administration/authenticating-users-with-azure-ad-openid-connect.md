@@ -112,7 +112,7 @@ To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user 
 
     For more information, see [Users in Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) in the Azure help.
 
-2. Assign Azure user principle name to the Business Central user. t or using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+2. Assign the Azure user principle name to the Business Central user. You can use the web client or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
   # [Business Central Web client](#tab/admintool)
 
