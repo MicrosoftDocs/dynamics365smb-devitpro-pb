@@ -33,7 +33,7 @@ For examples of using different error handling methods in AL, see the following 
 |[ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) | Contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages. Go to the data type topic for an overview.|
 |[System Data Type](methods-auto/system/system-data-type.md)|Is a complex data type and contains multiple methods for getting and classifying errors.|
 |[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)| Gets the call stack from where the last error occurred. |
-|[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)| Gets the classification of the last error that occurred. |
+|[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode-method.md)| Gets the classification of the last error that occurred. |
 |[GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)| Gets the last System.Exception object that occurred. |
 |[GetLastErrorText Method](methods-auto/system/system-getlasterrortext--method.md)| Gets the last error that occurred in the debugger. |
 
