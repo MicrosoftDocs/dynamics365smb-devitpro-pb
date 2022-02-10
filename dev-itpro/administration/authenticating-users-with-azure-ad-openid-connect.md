@@ -106,9 +106,13 @@ Each user in your Azure AD tenant that will access [!INCLUDE[prod_short](../deve
 
 You can postpone this task for most users and do it after you complete Azure AD setup. But you must do this task now for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account. If you don't, you won't be able to sign in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] after you switch to Azure AD.
 
-To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account with Azure AD, you'll set the user principal name of the user in Azure AD, like *chris@contoso.com*, as the user's authentication email in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. When you combine this setting with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].
+To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account with Azure AD, you set the user's authentication email in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to the user's principal name in Azure AD, like *chris@contoso.com*. When you combine this setting with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].
 
-This task can be done from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client or using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+1. In the [Azure portal](https://portal.azure.com), get the user's principle name in Azure AD.
+
+    For more information, see [Users in Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) in the Azure help.
+
+2. Assign Azure user principle name to the Business Central user. t or using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 <!--# [Business Central Web client](#tab/admintool)
 
@@ -127,7 +131,8 @@ This task can be done from the [!INCLUDE[prod_short](../developer/includes/prod_
     ```
 <!-- --- -->
 
-For more information about setting up users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
+
+    You can also do this step from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
 ## Task 4: Configure [!INCLUDE[server](../developer/includes/server.md)]
 
