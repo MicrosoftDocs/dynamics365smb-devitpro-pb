@@ -32,18 +32,22 @@ Azure AD authentication enables [!INCLUDE[prod_short](../developer/includes/prod
 
 ## Moving from WS-Federation to OpenID Connect
 
+[!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
+
 Starting with 2022 release wave 1 (version 20), Business Central supports the OpenID Connect (OIDC) protocol for Azure AD authentication. In previous releases, Azure AD authentication in Business Central used WS-Federation (Web Services Federation Language). [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](azure/active-directory/develop/v2-protocols-oidc).
 
 With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It will be removed in a later release. Until it's removed, you can continue to use Azure AD authentication with WS-Federation, but we recommend using OpenID Connect.
 
+For the complete setup of Azure AD with OpenID Connect, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
+> [!NOTE]
+> If you're setting up [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 9 or earlier, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
+### Switch an existing configuration from WS-Federation to OpenID Connect
 
-### Switch an existing configuration from WS-Federation to h OpenID Connect
+The setup of Azure AD authentication with OpenID Connect is similar to the legacy WS-Federation setup. But there are some important differences. If you want to change an existing setup from WS-Federation to OpenID connect, make the following changes:
 
-The setup of Azure AD authentication with OpenID Connect is similar to the legacy WS-Federation setup. But there are some important differences. So if you're upgrading an existing deployment from WS-Federation to OpenID connect, you'll have to make the following changes:
-
-1. In Azure Active Directory, enable ID tokens on the registered application for Business Central authentication.
+1. In Azure Active Directory, enable ID tokens on the registered application for Business Central authentication. You do this change from the [Azure portal](https://portal.azure.com).
 2. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
 
     1. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to include the `ValidAudiences` parameter set to the application ID assigned to the registered application in Azure AD.
@@ -61,7 +65,7 @@ The setup of Azure AD authentication with OpenID Connect is similar to the legac
 
 For the complete setup, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
-### Configuring Azure AD authentication with WS-Federation in version 20
+### Configure WS-Federation in version 20
 
 Whether you setting up a new deployment or upgrading from an earlier version, you can still use WS-Federation for now. The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication`. To use Azure AD authentication with WS-Federation, set the value to `true`. For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
 
@@ -69,9 +73,7 @@ Whether you setting up a new deployment or upgrading from an earlier version, yo
 Set-NAVWebServerConfiguration -KeyName UseLegacyAcsAuthentication -KeyValue "true"
 ```
 
-### Configuring Azure AD authentication in earlier versions
-
-The Azure AD authentication setup hasn't changed for versions 19 and earlier. For more information, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md)
+For the complete setup, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
 ## See Also  
 
