@@ -342,7 +342,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     Set-NAVWebServerInstanceConfiguration -ServerInstance BC200 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
     ```
 
-2. Set the `AadApplicationId` to the application (client) ID of the registered application for Business Central in Azure AD. .
+2. Set the `AadApplicationId` to the application (client) ID of the registered application for Business Central in Azure AD.
 
     ```powershell
     Set-NAVWebServerInstanceConfiguration -ServerInstance $BCServerInstanceName -KeyName AadApplicationId -KeyValue $AADApplicationId
@@ -351,7 +351,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadApplicationId "b90cd8cd-0361-4dba-b080-8a10c78fe1d9"
+    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadApplicationId "44444444-cccc-5555-dddd-666666666666"
 
     ```
 3. Set the `AadAuthorityUri` to the `https://login.microsoftonline.com/<AzureADTenantID>` where `<AADTenentID>` is the Azure AD tenant ID.
@@ -360,14 +360,41 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<AzureADTenantID>"
     ```
 
+    # [Single-tenant](#tab/singletenant)
+
+    Replace `<AAD TENANT ID>` with the ID of the Azure AD tenant ID or its domain, for example, `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.
+
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/d88985a1-c863-442c-bb5f-dc622e480a8d"
+    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/11111111-aaaa-2222-bbbb-333333333333"
     ```
 
----
+    # [Multitenant-tenant](#tab/multitenant)
 
+    Replace `<AAD TENANT ID>` with one of the following values:
+
+    |Value|Description|
+    |-|-|
+    |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. The Azure AD Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
+    |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant|
+
+    For example:
+
+    ```powershell
+    Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/{AADTENANTID}"
+    ```
+    
+    or
+
+    ```powershell
+    Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common"
+    ```
+
+    ---
+<!--
+---
+-->
 For more information, see [Configure Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](configure-web-server.md) and [Configure Authentication](users-credential-types.md).
 
 ## Task 7: Mount tenants (multitenant only)
