@@ -465,7 +465,15 @@ Configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomp
     "ClientServicesCredentialType":  "AccessControlService",
     ```
 
-3. Save the navsettings.json file
+3. If you're setting up Business Central version 20, add the following line:
+
+    ```
+    "UseLegacyAcsAuthentication":  "false"
+    ```
+
+    This line is required so that WS-Federation is used instead of OpenID Connect.
+ 
+4. Save the navsettings.json file
 
 For more information, see [Configure Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](configure-web-server.md) and [Configure Authentication](users-credential-types.md).
 
