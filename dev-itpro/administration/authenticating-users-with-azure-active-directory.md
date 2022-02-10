@@ -468,7 +468,7 @@ Configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomp
 3. If you're setting up Business Central version 20, add the following line:
 
     ```
-    "UseLegacyAcsAuthentication":  "false"
+    "UseLegacyAcsAuthentication":  "true"
     ```
 
     This line is required so that WS-Federation is used instead of OpenID Connect.
