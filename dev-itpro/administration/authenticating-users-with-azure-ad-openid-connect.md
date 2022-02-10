@@ -52,22 +52,6 @@ If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 
     For more information, see [Quickstart: Add new users to Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory). Later, you'll have to map the users in Azure AD to your users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-### Set the access token lifetime
-
-> [!IMPORTANT]  
-> For security reasons, we recommend that you limit the lifetime of the access token to 10 minutes as described in this section.
-
-Follow the steps outlined below.
-
-1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
-2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
-3. Sign in as the tenant admin. 
-4. Run the `Get-AzureADPolicy` command. 
-5. For each `Id` that is the result of above command, run `Remove-AzureADPolicy -Id {Guid}`. 
-6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
-
-For reference, see the prerequisites section in the following article: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites).
-
 ## Task 2: Register an application in the Azure AD tenant  
 
 In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution as an application in the Azure AD tenant.
@@ -126,13 +110,13 @@ To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user 
 
 This task can be done from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web client or using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
-# [Business Central Web client](#tab/admintool)
+<!--# [Business Central Web client](#tab/admintool)
 
 1. Start the [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and open the **Users** page.
 2. Open the user that you want to modify.
 3. Under **Microsoft 365 (Authentication)**, set the **Authentication Email** to the user principle name  in Azure AD.
 
-# [Administration Shell](#tab/adminshell)
+# [Administration Shell](#tab/adminshell) -->
 
 1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
@@ -141,7 +125,7 @@ This task can be done from the [!INCLUDE[prod_short](../developer/includes/prod_
     ```powershell
     Set-NAVServerUser -WindowsAccount yourdomain\username -AuthenticationEmail "AzureAD_principal_name"
     ```
----
+<!-- --- -->
 
 For more information about setting up users in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions).
 
@@ -149,7 +133,7 @@ For more information about setting up users in [!INCLUDE[prod_short](../develope
 
 Once you have the Azure AD tenant and a registered application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you configure the [!INCLUDE[server](../developer/includes/server.md)] instance for Azure AD authentication.
 
-You can configure the [!INCLUDE[server](../developer/includes/server.md)] by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+<!-- You can configure the [!INCLUDE[server](../developer/includes/server.md)] by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 # [Administration Tool](#tab/admintool)
 
@@ -216,7 +200,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
 7. Restart the server instance.
 
-# [Administration Shell](#tab/adminshell)
+# [Administration Shell](#tab/adminshell)-->
 
 1. Run [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
  
@@ -338,11 +322,13 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
     ```powershell
     Restart-NAVServerInstance -ServerInstance BC200
     ```
-
+<!--
 ---
+-->
 
 ## Task 5: Configure [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)]
 
+<!--
 
 # [navsettings.config](#tab/navsettings)
 
@@ -368,7 +354,7 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
 5. Save the navsettings.json file
 
-# [Administration Sehll](#tab/adminshell)
+# [Administration Sehll](#tab/adminshell) -->
 
 1. Set the `ClientServicesCredentialType` key value to `AccessControlService`.
 
@@ -408,7 +394,7 @@ For more information, see [Configure Configuring [!INCLUDE[webserver](../develop
 
 If you have a multitenant [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment, mount the tenant databases on the [!INCLUDE[server](../developer/includes/server.md)].
 
-Use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For more information about mounting tenants, see [Mount or Dismount a Tenant on a Business Central Server Instance](mount-dismount-tenant.md).
+<!-- Use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For more information about mounting tenants, see [Mount or Dismount a Tenant on a Business Central Server Instance](mount-dismount-tenant.md).
 
 # [Administration Tool](#tab/admintool)
 
@@ -418,7 +404,7 @@ In the navigation pane, use the **Tenants** node  to mount the tenants.
 - If you'll be using different Azure AD tenants, set the **Azure AD Tenant ID** to the ID or domain name of the Azure AD tenant that you want to use for the tenant. For example, **11111111-aaaa-2222-bbbb-333333333333** or **CRONUSInternationLtd.onmicrosoft.com**.
 - Also, if you've set up different host names that you want to use accessing the tenant, set the **Alternate ID**. See [Using alternate tenant IDs](#altid).
 
-# [Administration Shell](#tab/adminshell)
+# [Administration Shell](#tab/adminshell)-->
 
 Mount your tenants by using the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
 
@@ -431,8 +417,9 @@ For example:
 ```powershell
 Mount-NAVTenant -ServerInstance BC200  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
 ```
-
----
+<!--
+--- 
+-->
 
 ## Task 8: Set up other users and web service accounts
   
@@ -448,7 +435,23 @@ With Basic authentication, the [!INCLUDE[prod_short](../developer/includes/prod_
 
 With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).
 
-## Additional tips
+## Security and configuration tips
+
+### Set the access token lifetime
+
+> [!IMPORTANT]  
+> For security reasons, we recommend that you limit the lifetime of the access token to 10 minutes as described in this section.
+
+Follow the steps outlined below.
+
+1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
+2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
+3. Sign in as the tenant admin. 
+4. Run the `Get-AzureADPolicy` command. 
+5. For each `Id` that is the result of above command, run `Remove-AzureADPolicy -Id {Guid}`. 
+6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
+
+For reference, see the prerequisites section in the following article: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites).
 
 ### Using host names for tenants
 
