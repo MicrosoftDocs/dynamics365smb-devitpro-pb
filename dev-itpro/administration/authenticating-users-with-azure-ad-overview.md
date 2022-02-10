@@ -36,7 +36,10 @@ Starting with 2022 release wave 1 (version 20), Business Central supports the Op
 
 With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It will be removed in a later release. Until it's removed, you can continue to use Azure AD authentication with WS-Federation, but we recommend using OpenID Connect.
 
-### Upgrading to Azure AD authentication with OpenID Connect
+
+
+
+### Switch an existing configuration from WS-Federation to h OpenID Connect
 
 The setup of Azure AD authentication with OpenID Connect is similar to the legacy WS-Federation setup. But there are some important differences. So if you're upgrading an existing deployment from WS-Federation to OpenID connect, you'll have to make the following changes:
 
