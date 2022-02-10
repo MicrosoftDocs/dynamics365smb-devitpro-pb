@@ -46,11 +46,11 @@ For examples of different error handling strategies, see the following table:
 
 | If you want to...| Then use|
 |------------------|---------|
-| Run a code unit and decide to do something if an error occurs. | `if Codeunit.run() then` |
+| Run a code unit and decide to do something if an error occurs. | `if not Codeunit.run()`. For more information, see [Codeunit.Run return value](methods-auto/codeunit/codeunit-run-method.md) |
 | Check for an error and show a simple error dialog to the user. |`Dialog.Error(Message: ErrorInfo)`. For more information, see [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md). |
-| Check for an error and show an error dialog to the user with added support information. | [Using the ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) |
-| Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
+| Check for an error and show an error dialog to the user with added support information. | [Using the ErrorInfo Data Type with the Error Method](methods-auto/errorinfo/errorinfo-data-type.md) |
 | Do bulk validations in AL and not show an error dialog for each of them to the user. | [Collecting Errors](devenv-error-collection.md) |
+| Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
 | Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
 
 ## See also
