@@ -43,6 +43,10 @@ Specifies the results of the page background task.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
+The callback triggers can't execute UI operations, except notifications and control updates. This means that, for example, CurrPage.Update() statements are ignored because they would in many cases lead to infinite loops when page background tasks are started from the [OnAfterGetCurrRecord](triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) trigger.
+
 ## Example
 
 The following example modifies the **OnPageBackgroundTaskCompleted** trigger to update the page with the started and finished times that were calculated in the page background task, and displays a notification that the times have been updated. For more details about this example, see [Page Background Tasks](../../devenv-page-background-tasks.md).
@@ -68,9 +72,6 @@ The following example modifies the **OnPageBackgroundTaskCompleted** trigger to 
         end;
     end;
 ```
-
-> [!NOTE]
-> The callback triggers can't execute UI operations, except notifications and control updates. This means that, for example, CurrPage.Update() statements are ignored because they would in many cases lead to infinite loops when page background tasks are started from the [OnAfterGetCurrRecord](triggers-auto/page/devenv-onaftergetcurrrecord-page-trigger.md) trigger.
 
 ## See Also
 
