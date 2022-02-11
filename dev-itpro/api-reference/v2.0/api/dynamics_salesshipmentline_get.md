@@ -7,7 +7,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 02/11/2022
 ms.author: solsen
 ---
 
@@ -20,8 +20,8 @@ Retrieve the properties and relationships of a salesShipmentLine object for [!IN
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/salesShipmentLines({id})/salesShipmentLines({salesShipmentLineId})
-GET businesscentralPrefix/companies({id})/salesShipmentLines({salesShipmentLineId})
+GET businesscentralPrefix/companies({id})/salesShipments({id})/salesShipmentLines({salesShipmentLineId})
+GET businesscentralPrefix/companies({id})/salesShipments({salesShipmentLineId})
 ```
 
 ## Request headers
