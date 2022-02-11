@@ -35,8 +35,10 @@ reportextension 50101 MyExtendedCustList extends "Customer - List"
 ```
 
 2. Press **Ctrl+Shift+P**, and then choose **AL: Package** and the `MyExcelCustomerList.xlsx` will be generated for you in the right pane of Visual Studio Code. 
-1. Right-click the file, and choose **Reveal in File Explorer**. This will open the File Explorer.
+1. Right-click the file, and choose **Reveal in File Explorer**. This will open File Explorer.
 1. Choose the `MyExcelCustomerList.xlsx` file, and open it in Excel.
+1. Make change <!-- todo -->
+1. Back in Visual Studio Code, press **Ctrl+F5** to compile and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
 
 
 ## See also
