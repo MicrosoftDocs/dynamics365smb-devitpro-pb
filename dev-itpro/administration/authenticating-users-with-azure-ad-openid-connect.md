@@ -40,13 +40,13 @@ There are a couple ways to get an Azure AD tenant:
 
 ### Create your own Azure AD tenants
 
-If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment configured for multitenancy, you can choose to use the same Azure AD tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants or you can create a separate Azure AD tenant for each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.
+If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises deployment configured for multitenancy, you can choose to use the same Azure AD tenant for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenants. Or you can create a separate Azure AD tenant for each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant.
 
 1. Sign up for an Azure subscription at [https://azure.microsoft.com](https://azure.microsoft.com).
 2. Sign in to [Azure portal](https://portal.azure.com).
 3. Create a directory by following the instructions at [How to get an Azure Active Directory tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
-    This step will create an Azure AD tenant. When you create an Azure Active Directory in the Azure portal, you specify an initial domain name that identifies your Azure AD tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You'll use the domain name when you add users to your Azure AD and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the tasks that follow, this is referred to as the Azure AD Tenant ID. 
+    This step will create an Azure AD tenant. When you create an Azure Active Directory in the Azure portal, you specify an initial domain name that identifies your Azure AD tenant, such as *solutions.onmicrosoft.com* or *cronusinternationltd.onmicrosoft.com*. You'll use the domain name when you add users to your Azure AD and when you configure the [!INCLUDE[server](../developer/includes/server.md)] instance. In the tasks that follow, this value is referred to as the Azure AD Tenant ID. 
 
 4. After you've created the Azure AD tenant, add users.
 
@@ -106,7 +106,7 @@ Each user in your Azure AD tenant that will access [!INCLUDE[prod_short](../deve
 
 You can postpone this task for most users and do it after you complete Azure AD setup. But you must do this task now for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account. If you don't, you won't be able to sign in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] after you switch to Azure AD.
 
-To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account with Azure AD, you set the user's authentication email in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to the user's principal name in Azure AD, like *chris@contoso.com*. <!-- When you combine this setting with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].-->
+To associate a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user with Azure AD, set the user's authentication email in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to the user's principal name in Azure AD, like *chris@contoso.com*. <!-- When you combine this setting with the relevant configuration of the [!INCLUDE[server](../developer/includes/server.md)] instance, users achieve single sign-on when they access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].-->
 
 1. In the [Azure portal](https://portal.azure.com), get the Azure AD user's principle name.
 
@@ -253,20 +253,16 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
         # [Multitenant-tenant](#tab/multitenant)
 
-        Replace `<AAD TENANT ID>` with one of the following values:
+        Replace `<AAD TENANT ID>` with `common`.
 
+        <!--
         |Value|Description|
         |-|-|
         |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. The Azure AD Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
         |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant|
+        -->
 
         For example:
-
-        ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/{AADTENANTID}/FederationMetadata/2007-06/FederationMetadata.xml"
-        ```
-        
-        or
 
         ```powershell
         Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
@@ -297,7 +293,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     Set-NAVServerConfiguration -ServerInstance BC200  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
     ```
 
-7. Restart the server instance. For example:
+6. Restart the server instance. For example:
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance BC200
@@ -336,13 +332,13 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
 # [Administration Sehll](#tab/adminshell) -->
 
-1. Set the `ClientServicesCredentialType` key value to `AccessControlService`.
+1. Set the `ClientServicesCredentialType` key to `AccessControlService`.
 
     ```powershell
     Set-NAVWebServerInstanceConfiguration -ServerInstance BC200 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
     ```
 
-2. Set the `AadApplicationId` to the application (client) ID of the registered application for Business Central in Azure AD.
+2. Set the `AadApplicationId` key to the application (client) ID of the registered application for Business Central in Azure AD.
 
     ```powershell
     Set-NAVWebServerInstanceConfiguration -ServerInstance $BCServerInstanceName -KeyName AadApplicationId -KeyValue $AADApplicationId
@@ -352,9 +348,9 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
     ```powershell
     Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadApplicationId "44444444-cccc-5555-dddd-666666666666"
-
     ```
-3. Set the `AadAuthorityUri` to the `https://login.microsoftonline.com/<AzureADTenantID>` where `<AADTenentID>` is the Azure AD tenant ID.
+
+3. Set the `AadAuthorityUri` key.
 
     ```powershell
     Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<AzureADTenantID>"
@@ -372,19 +368,23 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
     # [Multitenant-tenant](#tab/multitenant)
 
-    Replace `<AAD TENANT ID>` with one of the following values:
+    Replace `<AAD TENANT ID>` with `common`.
+
+    <!--
 
     |Value|Description|
     |-|-|
     |`{AADTENANTID}`|Use this value if each [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant corresponds to an Azure AD tenant that has a service principal. The [!INCLUDE[server](../developer/includes/server.md)] instance will automatically replace `{AADTENANTID}` with the correct Azure AD tenant. The Azure AD Tenant ID is specified when you mount the tenant. ID parameter that is specified when mounting a tenant replaces the placeholder.
     |`common`|Use this value if the corresponding [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application in Azure AD configured as a multitenant application, but tenants will use the same Azure AD tenant|
 
+    -->
     For example:
 
+    <!--
     ```powershell
     Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/{AADTENANTID}"
     ```
-    
+    -->
     or
 
     ```powershell
@@ -440,9 +440,9 @@ With Azure AD authentication, [!INCLUDE[prod_short](../developer/includes/prod_s
 
 With Basic authentication, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user account must have web service access key. To sign in, instead using their Azure AD password, users provide the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] the web service access key. For information about setting up web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 
-With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).
+With OAuth, users are authenticated based on their Azure AD credentials, providing a more direct and single sign-on experience. See [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).
 
-## Additional Security and configuration 
+## More Security and configuration tips
 
 ### Set the access token lifetime
 
@@ -452,7 +452,7 @@ With OAuth, users are authenticated based on their Azure AD credentials, providi
 Follow the steps outlined below.
 
 1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
-2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
+2. Run the following command to sign in to your Azure AD admin account: `Connect-AzureAD -Confirm`
 3. Sign in as the tenant admin. 
 4. Run the `Get-AzureADPolicy` command. 
 5. For each `Id` that is the result of above command, run `Remove-AzureADPolicy -Id {Guid}`. 
@@ -491,14 +491,14 @@ When you mount a tenant, you can give the tenant an additional ID by setting the
 
 ### Using Visual Studio Code
 
-If you are connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you do not do this, you will get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
+If you're connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you don't do this step, you'll get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
 
 
 ### Give users guidance about single sign-on
 
-Single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they are still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and SharePoint.  
+Single sign-on means that users are still signed in to Azure AD when they sign out from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], unless they close all browser windows. However, if a user selected the **Keep me signed in** field when they signed in, they're still signed in when they close the browser window. To fully sign out from Azure AD, the user must sign out from each application that uses Azure AD, including [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and SharePoint.  
 
-We recommend that you provide guidance to your users for signing out of their account when they're done, so that you can keep your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment more secure.  
+We recommend that you provide guidance to your users for signing out of their account when they're done. Doing so will help can keep your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment more secure.  
 
 ## See Also  
 

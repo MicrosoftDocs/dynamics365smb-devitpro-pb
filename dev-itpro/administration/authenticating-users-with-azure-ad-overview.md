@@ -41,11 +41,11 @@ With the introduction of OpenID Connect, WS-Federation support in Business Centr
 For the complete setup of Azure AD with OpenID Connect, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 > [!NOTE]
-> If you're setting up [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 9 or earlier, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 19 and earlier still only support WS-Federation. If you're setting up one of these version, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
 ### Switch an existing configuration from WS-Federation to OpenID Connect
 
-The setup of Azure AD authentication with OpenID Connect is similar to the legacy WS-Federation setup. But there are some important differences. If you want to change an existing setup from WS-Federation to OpenID connect, make the following changes:
+The following steps outline how to change an existing setup from WS-Federation to OpenID connect.
 
 1. In Azure Active Directory, enable ID tokens on the registered application for Business Central authentication. You do this change from the [Azure portal](https://portal.azure.com).
 2. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
@@ -63,11 +63,13 @@ The setup of Azure AD authentication with OpenID Connect is similar to the legac
         Set-NAVWebServerConfiguration -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<Azure_AD_Tenant_ID>"
         ```
 
-For the complete setup, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+For the complete setup with more details, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
-### Configure WS-Federation in version 20
+### Configure legacy WS-Federation in version 20
 
-Whether you setting up a new deployment or upgrading from an earlier version, you can still use WS-Federation for now. The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication`. To use Azure AD authentication with WS-Federation, set the value to `true`. For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
+Whether you setting up a new version 20 deployment or upgrading from version 19 or earlier, you can set up use WS-Federation for now. The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
+
+For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
 
 ```powershell
 Set-NAVWebServerConfiguration -KeyName UseLegacyAcsAuthentication -KeyValue "true"
