@@ -45,7 +45,7 @@ For the complete setup of Azure AD with OpenID Connect, see [Configure Azure AD 
 
 ### Switch an existing configuration from WS-Federation to OpenID Connect
 
-The following steps outline how to change an existing setup from WS-Federation to OpenID connect.
+The complete setup for OpenID Connect isn't much different than for WS-Federation. The following steps outline the modifications you have to make to an existing deployment to go from WS-Federation to OpenID connect.
 
 1. In Azure Active Directory, enable ID tokens on the registered application for Business Central authentication. You do this change from the [Azure portal](https://portal.azure.com).
 2. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
