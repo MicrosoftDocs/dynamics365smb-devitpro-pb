@@ -14,6 +14,8 @@ ms.author: solsen
 
 > *The prerequisite for this how to is that you have completed the [Register a customer sandbox environment for Continuous Deployment using Service-to-Service Authentication](algo-create-release-app.md) instructions.*
 
+## Steps
+
 1. On www.github.com, in your project, go to the **Actions** tab and in the left pane, select **Create Release**. 
 1. Choose **Run workflow**, and in the dialog enter `1.0` as name and tag of the release, and then choose **Run workflow**.
 1. When the create release workflow completes, choose the **< > Code** tab to see the releases.

@@ -15,6 +15,8 @@ ms.author: solsen
 
 > *The prerequisites for this how to is that you have a GitHub account and have experience from the other how-to's in this section*
 
+## Steps
+
 1. Navigate to https://github.com/microsoft/AL-Go-AppSource and choose the **Use this template** button.
 1. Enter `app3` in the **Repository name** field and then choose the **Create repository from template** button.
 1. My current AppSource App is using Azure DevOps, I download the entire source as a .zip file and place it on Dropbox or Azure Blob storage and create a secure download Url to the .zip file.

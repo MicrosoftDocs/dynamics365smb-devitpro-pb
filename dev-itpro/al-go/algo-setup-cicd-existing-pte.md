@@ -16,6 +16,8 @@ ms.author: solsen
 
 This how to uses the BingMaps sample app, which can be found on Azure DevOps [](https://dev.azure.com/businesscentralapps/_git/BingMaps). Copy the following URL (a direct download of the main branch of the BingMaps sample) to the clipboard: https://dev.azure.com/businesscentralapps/BingMaps/_apis/git/repositories/BingMaps/items/items?path=/&versionDescriptor[versionOptions]=0&versionDescriptor[versionType]=0&versionDescriptor[version]=master&resolveLfs=true&$format=zip&api-version=5.0&download=true – you can download the .zip file and see the content of it.
 
+## Steps
+
 1. Navigate to https://github.com/microsoft/AL-Go-PTE and then choose **Use this template**.
 1. Enter `app2` as repository name and select **Create Repository** from template.
 1. On the **Actions** tab, select the **Add existing app or test app** workflow and then choose **Run workflow**.

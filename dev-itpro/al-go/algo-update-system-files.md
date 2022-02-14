@@ -18,6 +18,8 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 
 <!-- image -->
 
+## Steps
+
 1. In Visual Studio Code, modify the `LocalDevEnv.ps1` file, stage the change, and then commit and push it.
 1. Now there is a difference in the files. AL-Go doesn’t support changes to the AL-Go system files and will warn if that happens. The CI/CD pipeline, which kicked off when pushing the change gives this warning.
 1. To update the AL-Go system files using the **Update AL-Go System Files** workflow, you need to provide a secret called `GHWORKFLOWTOKEN` that contains a Personal Access Token with permissions to modify workflows.
