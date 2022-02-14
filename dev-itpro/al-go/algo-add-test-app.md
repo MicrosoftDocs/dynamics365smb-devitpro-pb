@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Add a Test App
 
-> *The prerequisite for this how to is that you have completed the [Get started](algo-get-started.md) instructions*.
+> *The prerequisite for this how to is that you have completed the [Create a new per-tenant extension and start developing in Visual Studio Code](algo-get-started.md) instructions*.
 
 ## Steps
 

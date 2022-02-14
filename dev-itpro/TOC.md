@@ -558,7 +558,7 @@
 <!-- Rules and Guidelines -->
 ## AL-Go for GitHub
 ### [AL-Go Overview](algo/algo-overview.md)
-### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](algo/get-started.md)
+### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](algo/algo-get-started.md)
 ### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
 ### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo/algo-register-sandbox-env-md)
 ### [Create a Release of Your Application](algo/algo-create-release-app.md)
