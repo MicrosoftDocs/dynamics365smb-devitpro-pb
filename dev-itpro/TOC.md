@@ -598,6 +598,7 @@
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
+### [AL Error Handling](developer/devenv-al-error-handling.md)
 ### [Working with AL Methods](developer/devenv-al-methods.md)
 ### [System-Defined Variables](developer/devenv-system-defined-variables.md)
 ### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
@@ -3510,6 +3511,7 @@
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+#### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData Query Performance](webservices/odata-client-performance.md)
@@ -3522,6 +3524,7 @@
 #### [Containments and Associations](webservices/use-containments-associations.md)
 #### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
 #### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
@@ -3553,6 +3556,7 @@
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
+### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power BI -->
