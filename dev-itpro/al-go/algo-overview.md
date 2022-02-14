@@ -24,22 +24,22 @@ The template repositories to use as starting point are:
 
 The usage scenarios below take you through how to get started and how to perform the most common tasks.
 
-[Create a new per-tenant extension (like AL Go) and start developing in VS Code]()
-[Add a test app to an existing project]()
-[Register a customer sandbox environment for Continuous Deployment using S2S]()
-[Create a release of your application]()
-[Register a customer production environment for Manual Deployment]()
-[Update AL-Go system files]()
-[Use Azure KeyVault for secrets with AL-Go]()
-[Create Online Development Environment from VS Code]()
-[Create Online Development Environment from GitHub]()
-[Set up CI/CD for an existing per tenant extension (BingMaps)]()
-[Set up CI/CD for an existing AppSource App]()
-[Enable KeyVault access for your AppSource App during development and/or tests]()
-[Set up your own GitHub runner to increase build performance]()
-[Introducing a dependency to another GitHub repository]()
-[Enabling Telemetry for AL-Go workflows and actions]()
-[Branching strategies and some of the best practices]()
+[Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](get-started.md)
+[Add a Test App to an Existing Project](algo-add-test-app.md)
+[Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env-md)
+[Create a Release of Your Application](algo-create-release-app.md)
+[Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md)
+[Update AL-Go System Files](algo-update-system-files.md)
+[Use Azure KeyVault for Secrets with AL-Go](algo-enable-keyvault-app-development.md)
+[Create Online Development Environment from Visual Studio Code](algo-create-online-dev-env-vscode.md)
+[Create Online Development Environment from GitHub](algo-create-online-dev-env-github.md)
+[Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md)
+[Set up CI/CD for an Existing AppSource App](algo-setup-cicd-existing-app.md)
+[Enable KeyVault Access for Your AppSource App during Development and/or Test](algo-enable-keyvault-app-development.md)
+[Set up Your Own GitHub Runner to Increase Build Performance](algo-setup-github-runner-performance.md)
+[Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)
+[Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)
+[Branching Strategies](algo-branching-strategy.md)
 
 Note: Please refer to this description to learn about the settings file and how you can modify default behaviors.
 

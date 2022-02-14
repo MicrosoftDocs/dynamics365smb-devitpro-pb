@@ -568,7 +568,7 @@
 ### [Create Online Development Environment from GitHub](algo/algo-create-online-dev-env-github.md)
 ### [Set up CI/CD for an Existing Per-Tenant Extension](algo/algo-setup-cicd-existing-pte.md)
 ### [Set up CI/CD for an Existing AppSource App](algo/algo-setup-cicd-existing-app.md)
-### [Enable KeyVault Access for Your AppSource App during Development and/or Test](algo/)
+### [Enable KeyVault Access for Your AppSource App during Development and/or Test](algo/algo-enable-keyvault-app-development.md)
 ### [Set up Your Own GitHub Runner to Increase Build Performance](algo/algo-setup-github-runner-performance.md)
 ### [Introducing a Dependency to Another GitHub Repository](algo/algo-dependency-app-github.md)
 ### [Enabling Telemetry for AL-Go Workflows and Actions](algo/algo-enabling-telemetry.md)

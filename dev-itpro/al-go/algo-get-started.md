@@ -1,5 +1,5 @@
 ---
-title: "Get started"
+title: "Create a new per-tenant extension and start developing in Visual Studio Code"
 description: "Get started with AL-Go for GitHub and create repository from template for Business Central."
 author: freddyk
 ms.custom: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# AL-Go Get started
+# Create a new per-tenant extension and start developing in Visual Studio Code
 
 The following steps will help you get started by creating a repository on GitHub using the available template. Then you will open the generated repository in Visual Studio Code and run a PowerShell script which will set up a local developer environment for you. 
 
