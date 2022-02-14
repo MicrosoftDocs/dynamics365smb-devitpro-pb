@@ -4,7 +4,6 @@ description: Learn how to read version numbers in Business Central and how to un
 author: edupont04
 
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 ms.author: edupont
 ms.date: 04/01/2021
 ---

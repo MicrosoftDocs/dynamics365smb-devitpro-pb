@@ -7,7 +7,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.date: 04/13/2021
 ---
 # Legal Resources for Business Central On-Premises

@@ -6,7 +6,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: freddyk
 ms.date: 08/01/2021
 ---

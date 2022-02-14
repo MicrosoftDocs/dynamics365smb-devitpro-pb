@@ -2,7 +2,6 @@
 title: Preparing your network for the Excel Add-In
 description: This article includes information that helps administrators configure advanced device and network settings for the Excel add-in for Business Central.
 author: mikebcMSFT
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: edupont

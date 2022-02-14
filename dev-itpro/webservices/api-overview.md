@@ -8,7 +8,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: dynamics365-business-central
 ms.author: kepontop
 ms.date: 12/21/2021
 ---

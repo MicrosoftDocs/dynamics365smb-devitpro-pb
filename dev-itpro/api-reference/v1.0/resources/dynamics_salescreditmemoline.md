@@ -4,7 +4,6 @@ description: (v1.0) A sales credit memo line.
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na

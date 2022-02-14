@@ -5,7 +5,6 @@ author: sorenfriisalexandersen
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.date: 04/01/2021
 ms.author: soalex
 ---

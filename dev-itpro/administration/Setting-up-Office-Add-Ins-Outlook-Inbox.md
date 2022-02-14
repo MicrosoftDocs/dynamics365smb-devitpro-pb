@@ -7,7 +7,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Set Up the Business Central Add-In for Outlook with Business Central On-premises

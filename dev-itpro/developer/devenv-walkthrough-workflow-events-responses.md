@@ -4,7 +4,6 @@ description: Learn how you can extend the native workflows by adding workflow ev
 author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 02/11/2022
 ---

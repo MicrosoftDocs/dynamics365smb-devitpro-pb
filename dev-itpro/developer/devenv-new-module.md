@@ -9,7 +9,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: bholtorf
-ms.service: "dynamics365-business-central"
 ---
 
 # Create a New Module in the System Application

@@ -4,7 +4,6 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.date: 01/19/2022
 ms.author: jswymer
 ---

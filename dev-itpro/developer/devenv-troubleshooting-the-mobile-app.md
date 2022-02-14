@@ -6,7 +6,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting
-ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 # Troubleshooting the Business Central Mobile App On-Premises
