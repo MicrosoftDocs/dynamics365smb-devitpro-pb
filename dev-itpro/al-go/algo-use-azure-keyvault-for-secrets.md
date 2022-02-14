@@ -1,6 +1,6 @@
 ---
 title: "Use Azure KeyVault for secrets with AL-Go"
-description: "Using Azure KeyValut for storing secrets on AL-Go projects."
+description: "Using Azure key vault for storing secrets on AL-Go projects for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 01/21/2022

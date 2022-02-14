@@ -1,6 +1,6 @@
 ---
 title: "Create an Online Development Environment from GitHub"
-description: "Create an online development environment in GitHub for AL-Go"
+description: "Create an online development environment in GitHub for AL-Go for Business Central"
 author: freddyk
 ms.custom: na
 ms.date: 01/21/2022

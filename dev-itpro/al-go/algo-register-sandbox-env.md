@@ -1,6 +1,6 @@
 ---
 title: "Register a customer sandbox environment for Continuous Deployment using Service-to-Service Authentication"
-description: ""
+description: "Register a sandbox environment for CI/CD using S2S authentication for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 04/01/2021

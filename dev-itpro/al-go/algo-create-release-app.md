@@ -1,6 +1,6 @@
 ---
 title: "Create a Release of Your Application"
-description: "Create a release of your AL-Go application."
+description: "Create a release of your AL-Go application for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 04/01/2021

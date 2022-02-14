@@ -1,6 +1,6 @@
 ---
 title: "Enable key vault access for your AppSource App during development and/or test"
-description: "Set up key vault access for an AppSource app for AL-Go"
+description: "Set up key vault access for an AppSource app for AL-Go for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 01/27/2022

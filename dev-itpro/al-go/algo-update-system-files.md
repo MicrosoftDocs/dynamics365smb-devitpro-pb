@@ -1,6 +1,6 @@
 ---
 title: "Update AL-Go System Files"
-description: "Updating the AL-Go system files for your project."
+description: "Updating the AL-Go system files for your project for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 12/30/2021

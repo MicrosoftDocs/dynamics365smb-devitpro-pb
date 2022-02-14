@@ -1,6 +1,6 @@
 ---
 title: "Add a Test App"
-description: "Adding a test app to your AL-Go solution"
+description: "Adding a test app to your AL-Go solution for Business Central"
 author: freddyk
 ms.custom: na
 ms.date: 12/30/2021

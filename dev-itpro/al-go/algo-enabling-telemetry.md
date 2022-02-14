@@ -1,6 +1,6 @@
 ---
 title: "Enabling Telemetry"
-description: "Enable partner telemetry by adding Application Insights to AL-Go."
+description: "Enable partner telemetry by adding Application Insights to AL-Go for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 12/30/2021

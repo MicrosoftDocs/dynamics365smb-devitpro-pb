@@ -1,6 +1,6 @@
 ---
 title: "Set up CI/CD for an existing per-tenant extension (BingMaps)"
-description: "Setting up continuous integration, continuous delivery for existing PTE extension."
+description: "Setting up continuous integration, continuous delivery for existing PTE extension for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 01/24/2022

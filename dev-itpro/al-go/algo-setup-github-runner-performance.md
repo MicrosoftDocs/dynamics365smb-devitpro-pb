@@ -1,6 +1,6 @@
 ---
 title: "Set up your own GitHub runner to increase build performance"
-description: "Setting up a GitHub runner to help increase the performance on builds for AL-Go projects."
+description: "Setting up a GitHub runner to help increase the performance on builds for AL-Go projects for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 01/21/2022
