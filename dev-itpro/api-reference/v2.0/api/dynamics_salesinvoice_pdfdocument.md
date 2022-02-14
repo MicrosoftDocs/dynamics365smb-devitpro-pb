@@ -4,7 +4,6 @@ description: Gets a PDF document on a salesInvoice in Dynamics 365 Business Cent
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na

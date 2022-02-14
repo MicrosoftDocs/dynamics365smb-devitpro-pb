@@ -5,7 +5,6 @@ author: edupont04
 ms.custom: na
 ms.date: 04/21/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: edupont
 ---
 

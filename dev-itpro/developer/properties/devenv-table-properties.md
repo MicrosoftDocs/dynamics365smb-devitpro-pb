@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
 ms.author: solsen
 ---

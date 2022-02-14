@@ -3,7 +3,6 @@ title: Enabling upcoming features ahead of time
 description: Learn how to enable select features ahead of time as the administrator of Business Central online or on-premises. 
 author: mikebcMSFT
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na

@@ -3,8 +3,7 @@
     description: Streamline your implementation process by turning a set of company types you use with most customers into company configuration packages available for reuse.
     author: edupont04
 
-    ms.service: dynamics365-business-central
-    ms.topic: conceptual
+        ms.topic: conceptual
     ms.devlang: na
     ms.tgt_pltfrm: na
     ms.workload: na
