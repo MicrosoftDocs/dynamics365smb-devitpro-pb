@@ -515,7 +515,8 @@
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## Formatting Data
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
+### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)  
+### [About Dates in Business Central](developer/devenv-about-dates.md)
 ## Translations
 ### [Translations Overview](developer/devenv-translations-overview.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
