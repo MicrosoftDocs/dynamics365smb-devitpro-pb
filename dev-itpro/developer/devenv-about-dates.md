@@ -23,7 +23,11 @@ Working with dates and time zones in Business Central, the following provides a 
 - The places in Business Central, where you still see `Date` fields are there because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or similar.
 - `Date` fields are never converted per time zone, a date value stays as it was entered.
 - The posting date is entered by the user in the UI and as such represents the date on which this line is posted in the journal.
-- The problem comes when the posting date field is defaulted in code using the TODAY function or a conversion from a datetime to a date. This conversion uses the users timezone and here comes the problem…
-- With the current settings we have no way of guessing what the right date for a conversion like this is. Today we use UTC which for Businesses in the US and Australia will surface immediately. I am afraid that any change in this behavior might work for some customers but would cause a breaking change for other customers. This is not a bug, which we can issue a quick fix for.
+
+> [!NOTE]  
+> Issues can occur when the posting date field is defaulted in code using the `Today` method or using a conversion from a `DateTime` to `Date`. This conversion uses the users timezone. Based on the current settings, it is not possible to guess what the right date for a conversion like that is. Today UTC is used, which for businesses in the US and Australia will surface immediately.
 
 ## See also
+
+[DateTime Data Type](methods-auto/datetime/datetime-data-type.md)  
+[Date Data Type](methods-auto/date/date-data-type.md)
