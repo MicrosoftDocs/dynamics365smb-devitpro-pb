@@ -18,10 +18,10 @@ Working with dates and time zones in Business Central, the following provides a 
 - When a user logs into Business Central for the first time, this timezone is set using settings from the browser.
 - Business Central stores **all** `DateTime` fields as UTC and in the UI layer, we convert this to the timezone, specified by the user on the **User Settings** page.
 - Two users might see a timestamp differently, but the point-in-time is the same.
-- The Time Zone user settings is in the UI and as such is only known by the Client. You cannot set a time zone per user in the User Card in Business Central.
-- Web Services connections are running using the UTC timezone and all datetime’s transferred in OData include a time zone as well. 
-- The places in Business Central, where you still see DATE fields that is because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or like.
-- DATE fields are never converted per time zone, a date value stays as entered.
+- The **Time Zone** field on the **User Settings** page is in the UI and as such is only known by the client. You cannot set a time zone per user on the **User Card** page in Business Central.
+- Web Services connections are running using the UTC timezone and all DateTime’s transferred in OData include a time zone as well. 
+- The places in Business Central, where you still see `Date` fields are there because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or similar.
+- `Date` fields are never converted per time zone, a date value stays as it was entered.
 - The posting date is entered by the user in the UI and as such represents the date on which this line is posted in the journal.
 - The problem comes when the posting date field is defaulted in code using the TODAY function or a conversion from a datetime to a date. This conversion uses the users timezone and here comes the problem…
 - With the current settings we have no way of guessing what the right date for a conversion like this is. Today we use UTC which for Businesses in the US and Australia will surface immediately. I am afraid that any change in this behavior might work for some customers but would cause a breaking change for other customers. This is not a bug, which we can issue a quick fix for.
