@@ -12,15 +12,15 @@ ms.author: solsen
 
 # About Dates in Business Central
 
-Working with dates and time zones in Business Central, the following provides a list of what's good to know.
+Working with dates and time zones in [!INCLUDE[prod_short](../includes/prod_short.md)], the following provides a list of what's good to know.
 
-- Every Business Central user has a timezone specified on the page **User Settings**.
-- When a user logs into Business Central for the first time, this timezone is set using settings from the browser.
-- Business Central stores **all** `DateTime` fields as UTC and in the UI layer, we convert this to the timezone, specified by the user on the **User Settings** page.
+- Every [!INCLUDE[prod_short](../includes/prod_short.md)] user has a timezone specified on the page **User Settings**.
+- When a user logs into [!INCLUDE[prod_short](../includes/prod_short.md)] for the first time, this timezone is set using settings from the browser.
+- [!INCLUDE[prod_short](../includes/prod_short.md)] stores **all** `DateTime` fields as UTC and in the UI layer, we convert this to the timezone, specified by the user on the **User Settings** page.
 - Two users might see a timestamp differently, but the point-in-time is the same.
 - The **Time Zone** field on the **User Settings** page is in the UI and as such is only known by the client. You cannot set a time zone per user on the **User Card** page in Business Central.
-- Web Services connections are running using the UTC timezone and all DateTime’s transferred in OData include a time zone as well. 
-- The places in Business Central, where you still see `Date` fields are there because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or similar.
+- Web Services connections are running using the UTC timezone and all `DateTime` types transferred in OData include a time zone as well. 
+- The places in [!INCLUDE[prod_short](../includes/prod_short.md)], where you still see `Date` fields are there because these fields don’t represent a timestamp. Instead, they represent a date for financial reporting or similar.
 - `Date` fields are never converted per time zone, a date value stays as it was entered.
 - The posting date is entered by the user in the UI and as such represents the date on which this line is posted in the journal.
 
