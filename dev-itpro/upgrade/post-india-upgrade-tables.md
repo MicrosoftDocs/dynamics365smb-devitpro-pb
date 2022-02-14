@@ -1,10 +1,8 @@
 ---
     title: Publish, Synchronize and Install the ‘IndiaUpgradeTables’ extension
     description: Specifies Basic Process for Publishing, Synchronizing and Installing the ‘IndiaUpgradeTables’ extension
-
     author: v-debapd
-
-        ms.topic: article
+    ms.topic: article
     ms.devlang: na
     ms.tgt_pltfrm: na
     ms.workload: na
