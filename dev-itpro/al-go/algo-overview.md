@@ -18,8 +18,10 @@ The goal is that people who have created their GitHub repositories based on the 
 
 The template repositories to use as starting point are:
 
-- [https://github.com/microsoft/AL-Go-PTE](https://github.com/microsoft/AL-Go-PTE) is the GitHub repository template for per-tenant extensions. For creating a per-tenant extension, this is your starting point.
-- [https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource) is the GitHub repository template for AppSource apps. For creating an AppSource app, this is your starting point.
+- For creating a **per-tenant extension**, this is your starting point
+**[https://github.com/microsoft/AL-Go-PTE](https://github.com/microsoft/AL-Go-PTE)** is the GitHub repository template for per-tenant extensions.
+- For creating an **AppSource app**, this is your starting point
+**[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
 
 The usage scenarios below take you through how to get started and how to perform the most common tasks.
@@ -42,3 +44,5 @@ The usage scenarios below take you through how to get started and how to perform
 - [Branching Strategies](algo-branching-strategy.md)  
 
 ## See also
+
+[Developing Extensions in AL](../developer/devenv-dev-overview.md)
