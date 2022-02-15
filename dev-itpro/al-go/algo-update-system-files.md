@@ -21,7 +21,7 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 ## Steps
 
 1. In Visual Studio Code, modify the `LocalDevEnv.ps1` file, stage the change, and then commit and push it.
-1. Now there is a difference in the files. AL-Go doesn’t support changes to the AL-Go system files and will warn if that happens. The CI/CD pipeline, which kicked off when pushing the change gives this warning.
+1. Now, there is a difference in the files. AL-Go doesn’t support changes to the AL-Go system files and will warn if that happens. The CI/CD pipeline, which kicked off when pushing the change gives this warning.
 1. To update the AL-Go system files using the **Update AL-Go System Files** workflow, you need to provide a secret called `GHWORKFLOWTOKEN` that contains a Personal Access Token with permissions to modify workflows.
 1. Open a browser window, log into www.github.com and navigate to **Settings** and then choose **Personal access tokens** in the left pane. Create a new personal access token; name it, set the expiration date, and check the workflow option in the list of scopes.
 1. Generate the token and copy it to the clipboard. **Note:** You will not be able to see the token again.
@@ -29,7 +29,7 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 1. On www.github.com, on the **Actions** tab in your project, select the **Update AL-Go system files** workflow and choose **Run workflow**. Leave the **Template Repository URL** blank and choose **Run workflow**.
 1. Inspect the pull request and confirm that it reverts your change to the `LocalDevEnv.ps1` file.
 
-By default, this workflow will apply any updates to the workflow files (in the .github\workflows folder) or system scripts (in the .AL-Go folder) from the template repository used to spin up the repository. If you want to change branch or template URL, you can specify the `templateUrl@branch` when you run the workflow.
+By default, this workflow will apply any updates to the workflow files (in the `.github\workflows` folder) or system scripts (in the `.AL-Go` folder) from the template repository used to spin up the repository. If you want to change branch or template URL, you can specify the `templateUrl@branch` when you run the workflow.
 
 ## Next steps
 

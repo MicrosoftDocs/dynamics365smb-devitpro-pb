@@ -16,7 +16,8 @@ ms.author: solsen
 
 ## Steps
 
-1. Add the `authContext` secret, see [Register a customer sandbox environment for Continuous Deployment using Service-to-Service Authentication](algo-register-sandbox-env.md) and the `ghTokenWorkflow` secret, [Update AL-Go System Files](algo-update-system-files.md) as secrets in your KeyVault. Remove the secrets from repository secrets and environment secrets.
+1. Add the `authContext` secret, see [Register a customer sandbox environment for Continuous Deployment using Service-to-Service Authentication](algo-register-sandbox-env.md) and the `ghTokenWorkflow` secret, [Update AL-Go System Files](algo-update-system-files.md) as secrets in your KeyVault. 
+1. Remove the secrets from repository secrets and environment secrets.
 1. Run the CI/CD pipeline to see that the deployment still works, reading the `authContext` secret from the KeyVault.
 1. Run the [Update AL-Go System Files](algo-update-system-files.md) flow to see that updating the AL-Go system files still works.
 

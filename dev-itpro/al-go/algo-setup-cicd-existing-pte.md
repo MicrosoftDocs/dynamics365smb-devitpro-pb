@@ -14,7 +14,7 @@ ms.author: solsen
 
 > *The prerequisites for this how to is that you have a GitHub account.*
 
-This how to uses the BingMaps sample app, which can be found on Azure DevOps [](https://dev.azure.com/businesscentralapps/_git/BingMaps). Copy the following URL (a direct download of the main branch of the BingMaps sample) to the clipboard: https://dev.azure.com/businesscentralapps/BingMaps/_apis/git/repositories/BingMaps/items/items?path=/&versionDescriptor[versionOptions]=0&versionDescriptor[versionType]=0&versionDescriptor[version]=master&resolveLfs=true&$format=zip&api-version=5.0&download=true – you can download the .zip file and see the content of it.
+This how to uses the BingMaps sample app, which can be found on Azure DevOps [Business Central apps repo](https://dev.azure.com/businesscentralapps/_git/BingMaps). Copy the following URL (a direct download of the main branch of the BingMaps sample) to the clipboard: `https://dev.azure.com/businesscentralapps/BingMaps/_apis/git/repositories/BingMaps/items/items?path=/&versionDescriptor[versionOptions]=0&versionDescriptor[versionType]=0&versionDescriptor[version]=master&resolveLfs=true&$format=zip&api-version=5.0&download=true` – you can download the .zip file and see the content of it.
 
 ## Steps
 
