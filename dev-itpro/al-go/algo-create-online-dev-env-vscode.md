@@ -27,7 +27,7 @@ ms.author: solsen
 
 ## Next step
 
-Now, you're ready to []().
+You can also choose to [Create Online Development Environment from GitHub](algo-create-online-dev-env-github.md).
 
 
 ## See also

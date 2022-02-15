@@ -27,5 +27,8 @@ This how to uses the BingMaps sample app, which can be found on Azure DevOps [](
 1. After the workflow completes, you can investigate the output and see that everything works.
 1. Use [Register a customer sandbox environment for Continuous Deployment using Service-to-Service Authentication](algo-register-sandbox-env.md), [Create a Release of Your Application](algo-create-release-app.md), and [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md) to set up customer environments, publish, and test the app.
 
+## Next step
+
+It is also possible to [Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md).
 
 ## See also

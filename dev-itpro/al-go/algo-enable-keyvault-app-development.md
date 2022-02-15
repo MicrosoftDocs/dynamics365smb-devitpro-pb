@@ -28,4 +28,8 @@ In the case of key vault access for apps, it is not enough to just add the secre
 
 With this, containers set up for build pipelines or development environments will have access to this key vault.
 
+## Next step
+
+Now, you can go and [Create Online Development Environment from Visual Studio Code](algo-create-online-dev-env-vscode.md).
+
 ## See also
