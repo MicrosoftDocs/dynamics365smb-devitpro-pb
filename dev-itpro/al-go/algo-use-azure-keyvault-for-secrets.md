@@ -20,4 +20,8 @@ ms.author: solsen
 1. Run the CI/CD pipeline to see that the deployment still works, reading the `authContext` secret from the KeyVault.
 1. Run the [Update AL-Go System Files](algo-update-system-files.md) flow to see that updating the AL-Go system files still works.
 
+## Next step
+
+Next, you can look at how to [Set up Your Own GitHub Runner to Increase Build Performance](algo-setup-github-runner-performance.md). 
+
 ## See also
