@@ -1,6 +1,6 @@
 ---
 title: Business Central Admin Center API - stuff
-description: Learn about the Business Central administration center API for logging telemetry.
+description: Learn about the Business Central administration center API for logging telemetry (this is a duplicate, through).
 author: jswymer
 ms.topic: conceptual
 ms.devlang: na
