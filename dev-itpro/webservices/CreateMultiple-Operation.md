@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # CreateMultiple Operation
 Creates a set of records. The supplied record object is overwritten with the version that is created by the page.  

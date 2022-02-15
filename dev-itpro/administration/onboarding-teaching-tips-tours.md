@@ -4,7 +4,6 @@ description: Learn about the teaching tips that you can apply to your Business C
 author: sorenfriisalexandersen
 manager: edupont
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 ms.date: 10/04/2021
 ms.author: soalex
 ---

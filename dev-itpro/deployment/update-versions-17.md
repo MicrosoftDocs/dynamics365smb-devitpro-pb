@@ -4,7 +4,6 @@ description: "Learn about the updates for Dynamics 365 Business Central 2020 Rel
 author: jswymer
 ms.custom: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 02/08/2022
 ---

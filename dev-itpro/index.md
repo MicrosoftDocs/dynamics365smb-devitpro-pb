@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ---
 # Development and Administration for Dynamics 365 Business Central
 
@@ -82,5 +81,6 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 [The Lifecycle of Apps and Extensions](developer/devenv-app-life-cycle.md)  
 [Maintenance of AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)  
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
+[Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
 [Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
 [Dynamics 365 Product Licensing](https://www.microsoft.com/Licensing/product-licensing/dynamics365)  

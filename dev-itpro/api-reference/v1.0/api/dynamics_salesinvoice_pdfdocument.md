@@ -4,7 +4,6 @@ description: (v1.0) Gets a PDF document on a salesInvoice in Dynamics 365 Busine
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na

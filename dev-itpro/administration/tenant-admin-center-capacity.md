@@ -2,7 +2,6 @@
 title: Managing Capacity
 description: Use the Business Central administration center to manage your tenant capacity 
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

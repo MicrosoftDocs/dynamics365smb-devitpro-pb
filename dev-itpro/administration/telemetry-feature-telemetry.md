@@ -2,7 +2,6 @@
 title: Feature Telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.  
 author: bholtorf
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
