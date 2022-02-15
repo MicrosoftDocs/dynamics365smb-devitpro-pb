@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
 # Upgrade Customized Version 14.0 Application to Version 15.0 Base Application

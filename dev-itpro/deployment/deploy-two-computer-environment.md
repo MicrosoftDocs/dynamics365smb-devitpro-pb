@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Deploying [!INCLUDE[prodsshort](../developer/includes/prod_short.md)] in a Two-Computer Topology

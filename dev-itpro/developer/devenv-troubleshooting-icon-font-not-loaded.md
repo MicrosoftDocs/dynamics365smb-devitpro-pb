@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting
-ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 # Troubleshooting: Icon Font Not Loaded

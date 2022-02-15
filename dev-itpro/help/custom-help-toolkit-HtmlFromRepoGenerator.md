@@ -4,7 +4,6 @@ description: This article describes the HtmlFromRepoGenerator tool in the custom
 
 author: edupont04
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.date: 09/20/2021
 ms.author: edupont
 ---

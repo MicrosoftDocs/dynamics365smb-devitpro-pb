@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 manager: edupont
 ---
 # Legal Resources for Microsoft Dynamics NAV Universal Apps

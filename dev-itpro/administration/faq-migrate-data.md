@@ -4,7 +4,6 @@ description: Get answers to your questions about migrating to the cloud from an 
 author: bmeier94
 
 ms.reviewer: edupont
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms. search.keywords: cloud, edge
 ms.date: 04/01/2021
