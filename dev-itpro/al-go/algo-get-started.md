@@ -31,8 +31,7 @@ The following steps will help you get started by creating a repository on GitHub
 1. Now, open the cloned repository and then open the workspace in Visual Studio Code when prompted for it.
 1. In the `.AL-Go` folder, choose the `localDevEnv.ps1` script and in the upper right corner of the script, choose **Run**.
 1. As the script is running, you must enter container name, authentication mechanism, credentials, and select `none` if asked for a license file.  
-The script might show a dialog asking for permissions to run Docker commands, select **Yes** in this dialog. 
-1. Wait for completion of the script.
+The script might show a dialog asking for permissions to run Docker commands, select **Yes** in this dialog and wait for completion of the script.
 1. Once the script is completed, press **Ctrl+Alt+P** and choose **Clear credentials cache**.
 1. Open the `HelloWorld.al` file, modify the string as you want and then press **F5**.  
 Depending on selected authentication method, Visual Studio Code might ask for the credentials that you provided in step 5. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will now start.

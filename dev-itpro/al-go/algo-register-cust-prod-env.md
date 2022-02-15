@@ -15,7 +15,7 @@ ms.author: solsen
 > *The prerequisites for this how to is that you have completed the [Create a Release of Your Application](algo-create-release-app.md) instructions, and that you have an online production environment setup for S2S as specified in [task 2](../administration/automation-apis-using-s2s-authentication.md#task-2-set-up-the-azure-ad-application-in-) in the [Using Service-to-Service (S2S) Authentication](../administration/automation-apis-using-s2s-authentication.md) in the [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md) topic, using the same AAD App as you did in the Create a Release of Your Application scenario.*
 
 > [!NOTE]  
-> Environments are only supported in public repositories or with GitHub Enterprise license (see https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment). We are considering adding a secondary option for listing environments.
+> Environments are only supported in public repositories or with GitHub Enterprise license, see [Using environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment). We are considering adding a secondary option for listing environments.
 
 ## Steps
 
