@@ -40,4 +40,8 @@ The following table describes the settings:
 |`authTokenSecret`|If the foreign repository is private, to download the artifacts an access token is needed. In this case a secret should be added to GitHub secrets or Azure Key Vault and the name of the secret should be provided in the settings.|
 |`projects`|Specifies the project in a multi project repository. “*” means all projects.|
 
+## Next Step
+
+Next, you can look at [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md).
+
 # See also

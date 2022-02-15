@@ -41,4 +41,8 @@ GitHub runners can be registered for an organization (accessible for all reposit
 1. Decreasing the number of runners to four causes the build performance to be similar to when running just one build.
 1. Turning off real-time protection on the self-hosted runner makes builds go ~25% faster.
 
+## Next step
+
+From here, you can look at [Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md).  
+
 ## See also
