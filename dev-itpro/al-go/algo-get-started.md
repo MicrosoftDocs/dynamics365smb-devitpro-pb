@@ -52,5 +52,6 @@ A next step to take, could be [Add a Test App to an Existing Project](algo-add-t
 
 ## See also
 
+[AL-Go Overview](algo-overview.md)  
 [Add a Test App](algo-add-test-app.md)  
 [Register a Customer Sandbox Environment for Continuous Deployment using S2S Authentication](algo-register-sandbox.md)  

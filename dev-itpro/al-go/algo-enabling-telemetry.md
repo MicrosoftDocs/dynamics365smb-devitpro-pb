@@ -64,3 +64,5 @@ The following table lists the telemetry signals for different workflows:
 Now, you might want to look into [Branching Strategies](algo-branching-strategy.md).
 
 ## See also
+
+[AL-Go Overview](algo-overview.md)  

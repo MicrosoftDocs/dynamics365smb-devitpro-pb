@@ -55,3 +55,5 @@ Useful links Read more about flow and some of the basic terminology here https:/
 Here you can find useful information about branching patterns and anti-patterns https://youtu.be/t_4lLR6F_yk
 
 ## See also
+
+[AL-Go Overview](algo-overview.md)  

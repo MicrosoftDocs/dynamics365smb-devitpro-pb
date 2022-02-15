@@ -36,3 +36,5 @@ By default, this workflow will apply any updates to the workflow files (in the .
 Next, you can go to [Use Azure KeyVault for Secrets with AL-Go](algo-enable-keyvault-app-development.md).
 
 ## See also
+
+[AL-Go Overview](algo-overview.md)  

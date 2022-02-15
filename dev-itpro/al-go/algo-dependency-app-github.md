@@ -44,4 +44,6 @@ The following table describes the settings:
 
 Next, you can look at [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md).
 
-# See also
+## See also
+
+[AL-Go Overview](algo-overview.md)  

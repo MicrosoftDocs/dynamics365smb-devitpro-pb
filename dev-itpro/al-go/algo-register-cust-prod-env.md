@@ -27,3 +27,5 @@ ms.author: solsen
 Next, you can [Update AL-Go System Files](algo-update-system-files.md).
  
 ## See also
+
+[AL-Go Overview](algo-overview.md)  

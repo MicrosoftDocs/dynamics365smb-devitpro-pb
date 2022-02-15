@@ -44,4 +44,6 @@ ms.author: solsen
 
 A next step could now be to [Enable KeyVault Access for Your AppSource App during Development and/or Test](algo-enable-keyvault-app-development.md). 
 
-## See also
+## See 
+
+[AL-Go Overview](algo-overview.md)  

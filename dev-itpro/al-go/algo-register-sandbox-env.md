@@ -38,5 +38,6 @@ As a next step, you can now [Create a Release of Your Application](algo-create-r
 
 ## See also
 
+[AL-Go Overview](algo-overview.md)  
 [Get Started](algo-get-started.md)  
 [Add a Test App](algo-add-test-app.md)  

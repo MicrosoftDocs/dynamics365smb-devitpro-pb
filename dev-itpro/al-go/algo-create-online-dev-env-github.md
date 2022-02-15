@@ -34,6 +34,8 @@ If you do **not** provide an `AdminCenterApiCredentials` secret, the workflow wi
 
 ## Next step
 
-Now, you're ready to []().
+
 
 ## See also
+
+[AL-Go Overview](algo-overview.md)  
