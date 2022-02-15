@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Enable Key Vault Access for your AppSource App during Development and/or Test
 
-For AppSource apps, if you want to enable key vault access for your app (as described here https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-app-key-vault-overview) you can add the access to this key vault in your local development environment or your pipelines (for running tests) by adding 3 secrets to either the GitHub repo or your key vault. Based on this walkthrough https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/setup-app-key-vault-onprem you will need to create 3 secrets:
+For AppSource apps, if you want to enable key vault access for your app as described in [Using App Key Vaults with Business Central Extensions](../developer/devenv-app-key-vault-overview.md), you can add the access to this key vault in your local development environment or your pipelines (for running tests) by adding 3 secrets to either the GitHub repo or your key vault. Based on the walkthrough [Setting up App Key Vaults for Business Central On-premises](../administration/setup-app-key-vault-onprem.md) you will need to create 3 secrets:
 
 - A `KeyVaultClientId`, which is the Client ID for the Azure AD App with access to the key vault.
 - A `KeyVaultCertificateUrl`, pointing to a certificate which gives you access to the Azure AD App.
