@@ -24,6 +24,10 @@ The release notes are pulled from all pull requests checked in since the last re
 1. Choose the **Edit** button icon (the pencil) to modify the release notes.  
 At the bottom, you can see the artifacts published, both the apps and the source code. A tag is created in the repository for the release number to always keep this.
 
+## Next step
+
+Now, you can move on to [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md).  
+
 ## See also
 
 [Get Started](algo-get-started.md)  

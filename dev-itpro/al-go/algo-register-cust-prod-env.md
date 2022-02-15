@@ -22,5 +22,8 @@ ms.author: solsen
 1. Following the process in the [Register a Customer Sandbox Environment for Continuous Deployment using S2S Authentication](algo-register-sandbox-env.md) topic, you can add an environment to the GitHub repository under the **Settings** tab called `MYPROD` (Production) (the name of your production environment followed by “ (Production)”), which maps to a production environment called `MYPROD`. Remember to add the `AUTHCONTEXT` secret. Apps will **not** be deployed to production environments from the CI/CD pipeline, by adding the (Production) tag, the environment will be filtered out already during the Analyze phase. You need to run the **Publish To Environment** workflow to publish the apps. Leave the `App` version as current, which means that the latest released bits are published to `MYPROD`.
 2. After running the **Publish to Environment** workflow, check that the app was deployed to the `MYPROD` environment only.
 
+## Next step
 
+Next, you can [Update AL-Go System Files](algo-update-system-files.md).
+ 
 ## See also

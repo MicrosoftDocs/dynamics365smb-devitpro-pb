@@ -31,4 +31,8 @@ Every time a CI/CD pipeline runs, it checks whether there are updates to AL-Go s
 
 By default, this workflow will apply any updates to the workflow files (in the .github\workflows folder) or system scripts (in the .AL-Go folder) from the template repository used to spin up the repository. If you want to change branch or template URL, you can specify the `templateUrl@branch` when you run the workflow.
 
+## Next steps
+
+Next, you can go to [Use Azure KeyVault for Secrets with AL-Go](algo-enable-keyvault-app-development.md).
+
 ## See also
