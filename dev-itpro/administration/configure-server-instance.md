@@ -4,7 +4,6 @@ description: Configure and modify settings in the Setup or Installed Business Ce
 author: jswymer
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.date: 01/19/2022
 ms.author: jswymer
 ---
@@ -233,6 +232,7 @@ The following table describes fields on the **Management Services** tab in the [
 |Setting|Key Name|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
 |-------|--------|-------------------------------------------------------------------|  
 |Enable Management Services|ManagementServicesEnabled|Specifies whether [!INCLUDE[admintool](../developer/includes/admintool.md)] is enabled for this server instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
+|Idle Client Timeout|ManagementServicesIdleClientTimeout|Specifies the amount of time a PowerShell command, like Invoke-NAVCodeunit, can run before the session times out and closes.<br /><br />The value has the format hh:mm:ss.<br />Default: 10:00:00<br />Dynamically Updatable: No|
 |Port|ManagementServicesPort|The listening TCP port for the [!INCLUDE[admintool](../developer/includes/admintool.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically Updatable: No|  
 
 ## Azure Key Vault Client Identity Tab Settings

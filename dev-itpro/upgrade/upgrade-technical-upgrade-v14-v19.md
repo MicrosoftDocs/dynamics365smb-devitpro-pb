@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade From Version 14 to Version 19
 

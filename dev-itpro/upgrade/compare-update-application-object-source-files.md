@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Compare and Update Application Object Source Files
 You can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to compare different sets of application objects to identify the differences. Then, you can choose to apply all or some of the differences to a target solution.  

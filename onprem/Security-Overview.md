@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.assetid: f80ed2c6-b416-4e51-b770-0141505317bc
 caps.latest.revision: 17
 ---

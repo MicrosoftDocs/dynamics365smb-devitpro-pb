@@ -2,7 +2,6 @@
 title: Analyzing AppSource Submission Validation Trace Telemetry
 description: Learn about the telemetry for publishing apps to AppSource from Partner Center.  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

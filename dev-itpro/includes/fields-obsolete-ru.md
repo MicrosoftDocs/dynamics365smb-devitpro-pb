@@ -1,7 +1,6 @@
 ---
 author: AndreiPanko
 
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 06/29/2021
 ms.author: andreipa

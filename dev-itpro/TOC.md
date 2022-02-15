@@ -515,7 +515,8 @@
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## Formatting Data
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
+### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)  
+### [About Dates in Business Central](developer/devenv-about-dates.md)
 ## Translations
 ### [Translations Overview](developer/devenv-translations-overview.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
@@ -3485,6 +3486,7 @@
 #### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
 #### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
@@ -3494,9 +3496,11 @@
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+#### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData Query Performance](webservices/odata-client-performance.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
@@ -3514,6 +3518,7 @@
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP Service URIs](webservices/soap-web-service-uris.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Basic Operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
 ##### [CreateMultiple](webservices/CreateMultiple-operation.md)
