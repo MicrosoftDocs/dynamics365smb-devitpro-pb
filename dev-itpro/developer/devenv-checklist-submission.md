@@ -85,7 +85,6 @@ With the latest version of BcContainerHelper, you can run a single command, whic
 
 ```powershell
 $validationResults = Run-AlValidation `
-    -licenseFile "path/url to license file" `
     -validateCurrent `
     -installApps @( "path/url to your foreign dependencies, apps which will not be part of the validation (or blank if this is the first)" ) `
     -previousApps @( "path/url to your previous version of the .app files (or blank if this is the first)" ) `
