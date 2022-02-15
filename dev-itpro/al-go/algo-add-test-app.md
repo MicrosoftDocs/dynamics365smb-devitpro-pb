@@ -27,6 +27,10 @@ This workflow will at some point fail. If you inspect the build, you can see the
 This time it should be passing and if you investigate the CI/CD workflow, you will see that the deploy step has been skipped as no environment existed.
 
 
+## Next step
+
+Now, a next step to take, could be [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env-md). 
+
 ## See also
 
 [Get Started](algo-get-started.md)  

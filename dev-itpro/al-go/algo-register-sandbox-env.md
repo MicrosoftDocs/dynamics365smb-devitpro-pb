@@ -32,6 +32,9 @@ For example:
 When the workflow completes, you can inspect the output of the workflow.
 1. And, you can open the `QA` environment, navigate to **Customers** and see that your very own **Hello World** message appears.
 
+## Next step
+
+As a next step, you can now [Create a Release of Your Application](algo-create-release-app.md). 
 
 ## See also
 

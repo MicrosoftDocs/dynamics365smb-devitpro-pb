@@ -25,5 +25,9 @@ ms.author: solsen
 1. The `launch.json` file will be updated with your new environment in Visual Studio Code. You can decide whether you want to check-in the changes to the repo or only use this locally.
 
 
+## Next step
+
+Now, you're ready to []().
+
 
 ## See also

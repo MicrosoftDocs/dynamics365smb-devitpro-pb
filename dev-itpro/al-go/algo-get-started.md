@@ -44,7 +44,11 @@ Business Central will now start.
 
 1. Go back to the repository on www.github.com, on the **Actions** tab, investigate the workflow that you started by committing and sync'ing your changes in the previous step.
 1. When the build is done, chose the workflow to inspect the build summary.
-1. In the left pane, choose **Build** and inspect the workflow run, expand the **Run Pipeline** section in the build, and the **Compiling apps** subsection
+1. In the left pane, choose **Build** and inspect the workflow run, expand the **Run Pipeline** section in the build, and the **Compiling apps** subsection.
+
+## Next step
+
+A next step to take, could be [Add a Test App to an Existing Project](algo-add-test-app.md).
 
 ## See also
 
