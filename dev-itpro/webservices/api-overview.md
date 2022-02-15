@@ -25,11 +25,13 @@ The articles in this section describe the key concepts and techniques for using 
 |Enable built-in APIs | [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
 |Explore built-in APIs | [Business Central API (v2.0)](../api-reference/v2.0/index.md) |  
 |Develop a custom API | [Developing a Custom API](../developer/devenv-develop-custom-api.md) |
+|Use APIs to automate tenant administration tasks | [Administration API](../administration/itpro-introduction-to-automation-apis.md) |
 
 ## See Also
 
 [Business Central API (v2.0)](../api-reference/v2.0/index.md)  
 [Business Central API (v1.0)](../api-reference/v1.0/index.md)  
 [Developing a Custom API](../developer/devenv-develop-custom-api.md)  
+[Administration API](../administration/itpro-introduction-to-automation-apis.md)
 [API Page Type](../developer/devenv-api-pagetype.md)  
 [API Query Type](../developer/devenv-api-querytype.md)  
