@@ -115,7 +115,7 @@ PartnerDiagnosticsEventSchemaTag.cs-->
 | RT0003 | Authorization| [Authorization Succeeded (Pre Open Company)](telemetry-authorization-trace.md#authorizationsucceededpreopencompany) | 
 | RT0004 | Authorization| [Authorization Succeeded (Open Company)](telemetry-authorization-trace.md#authorization-succeeded-open-company) |
 | RT0005 | Performance | [Operation exceeded time threshold (SQL query)](telemetry-long-running-sql-query-trace.md) |
-| RT0006 | Report generation | [Success report generation](telemetry-reports-trace.md#success-report-generation) |
+| RT0006 | Report generation | [Success report generation](telemetry-reports-trace.md#successful-report-generation) |
 | RT0006 | Report generation | [Report rendering failed: {report ID} - {report name}](telemetry-reports-trace.md#failed-report-generation) |
 | RT0007 | Report generation | [Cancellation report generation](telemetry-reports-trace.md#cancellation-report-generation) | 
 | RT0008 | Incoming Web service requests | [Web service called ({category of request}): {endpoint}](telemetry-webservices-trace.md) |

@@ -1,5 +1,5 @@
 ---
-title: Business Central Admin Center API - Notifications
+title: Business Central Admin Center API - stuff
 description: Learn about the Business Central administration center API for logging telemetry.
 author: jswymer
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 10/05/2021
 ---
 
-# Telemetry
+# Telemetry 
 
 Telemetry includes the top-level AL events and any returned errors logged from the service. These events can provide necessary information and errors that can be used to troubleshoot issues happening in the tenant's environment. 
 
@@ -67,6 +67,6 @@ Returns the telemetry logs and with data column headers.
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

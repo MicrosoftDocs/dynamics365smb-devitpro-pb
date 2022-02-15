@@ -151,6 +151,6 @@ Returns a detailed list of the database exports that occurred within the provide
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)
+[The Business Central Administration Center API](administration-center-api.md)
 [Manage Apps](tenant-admin-center-manage-apps.md)
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)
