@@ -25,7 +25,7 @@ Working with dates and time zones in [!INCLUDE[prod_short](../includes/prod_shor
 - The posting date is entered by the user in the UI and as such represents the date on which this line is posted in the journal.
 
 > [!NOTE]  
-> Issues can occur when the posting date field is defaulted in code using the `Today` method or using a conversion from a `DateTime` to `Date`. This conversion uses the users timezone. Based on the current settings, it is not possible to guess what the right date for a conversion like that is. Today UTC is used, which for businesses in the US and Australia will surface immediately.
+> Issues can occur when the posting date field is defaulted in code using the `Today` method or using a conversion from a `DateTime` to `Date`. This conversion uses the user's timezone. Based on the current settings, it is not possible to guess what the right date for a conversion like that is. Today UTC is used, which for businesses in the US and Australia will surface immediately.
 
 ## See also
 
