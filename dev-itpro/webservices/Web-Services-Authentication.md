@@ -16,6 +16,12 @@ When users send a request for a web service, they're authenticated according to 
 > [!IMPORTANT]
 > With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the use of access keys (Basic Auth) for web service authentication is [deprecated](../upgrade/deprecated-features-platform.md#accesskeys). We recommend that you use OAuth2 instead. For more information, see [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md).
 
+## How to use an Oauth for SOAP and OData Web Service Authentication
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports the OAuth authorization protocol for SOAP and OData web services. This is the recommended authentication method for all [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web service endpoints. 
+
+For more information, see [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md).
+
+
 ## About NavUserPassword and AccessControlService credential types
   
 If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services by specifying a password or access key. You set up the user accounts in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, based on how they'll access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service, you can generate a web service access key and specify that key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
@@ -30,10 +36,12 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data is consume
   
 The same limitation applies to exposing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data in external products such as a browser or a Microsoft .NET Framework assembly.
 
-## <a name="accesskey"></a>How to use an Access Key for SOAP and OData Web Service Authentication
-
+## <a name="accesskey"></a>How to use an Access Key for SOAP and OData Web Service Authentication (deprecated)
 If your solution is configured for NavUserPassword or AccessControlService authentication, then you can configure [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts to include an access key that can be used instead of a password to authenticate SOAP and OData web service requests. A web service access key is a random 44 character string that is associated with the user account. Because it can only be used for SOAP and OData web services, it doesn't require the same level of protection as a password.  
-  
+
+> [!IMPORTANT]
+> With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the use of access keys (Basic Auth) for web service authentication is [deprecated](../upgrade/deprecated-features-platform.md#accesskeys). We recommend that you use OAuth2 instead. For more information, see [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md).
+
 ### Generate a Web Service Access Key
   
 Follow these instructions to generate a web service access key for a user. You perform these steps from the user setup in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
