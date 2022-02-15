@@ -4,7 +4,6 @@ description: We are constantly streamlining and adjusting our app in-step with m
 author: bholtorf
 
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

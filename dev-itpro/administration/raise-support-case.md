@@ -3,7 +3,6 @@ title: Escalate support issues to Microsoft
 description: Learn about how to escalate technical support cases on behalf of your Business Central online customers as the delegated administrator.
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

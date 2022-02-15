@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Comparing and Merging Application Object Source Files
 When you create or modify application objects, you use the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)], and you import and export objects as .fob files. But you can also export objects as text files and use other tools, such as the [!INCLUDE[devshell](../developer/includes/devshell.md)], to make general changes to the objects. For example, you can use [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets to merge changes from an upgrade with your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution.  

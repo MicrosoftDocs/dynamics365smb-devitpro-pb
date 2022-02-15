@@ -1,6 +1,5 @@
 ---
 author: jobulsin
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 01/18/2022
 ms.author: jobulsin

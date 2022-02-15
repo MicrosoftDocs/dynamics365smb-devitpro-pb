@@ -1,10 +1,7 @@
 ---
     title: India Data migration Toolkit Overview
     description: Specifies India Data Migration Toolkit Overview
-
     author: v-debapd
-
-    ms.service: dynamics365-business-central
     ms.topic: overview
     ms.devlang: na
     ms.tgt_pltfrm: na

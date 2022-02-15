@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 19
 

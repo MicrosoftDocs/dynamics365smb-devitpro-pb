@@ -3,7 +3,6 @@ title: Administration of Business Central Online
 description: Learn about how you as the internal administrator or as a reselling partner can manage online tenants of Dynamics 365 Business Central.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na

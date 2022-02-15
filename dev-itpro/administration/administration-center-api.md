@@ -2,7 +2,6 @@
 title: Business Central Administration Center API | Microsoft Docs
 description: Learn about the Business Central administration center API.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

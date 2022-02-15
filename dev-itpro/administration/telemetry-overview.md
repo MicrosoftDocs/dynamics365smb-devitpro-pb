@@ -2,7 +2,6 @@
 title: Monitoring and Analyzing Telemetry
 description: Learn how the Business Central provides telemetry for each environment, both for online and for on-premises environments.  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na

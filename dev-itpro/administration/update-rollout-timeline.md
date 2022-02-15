@@ -3,7 +3,6 @@ title: Major Updates and Minor Updates for Business Central Online
 description: Learn about the timeline for how updates of Business Central online roll out. You can prepare for both major updates and minor updates with minimal disruption of your users' productivity.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

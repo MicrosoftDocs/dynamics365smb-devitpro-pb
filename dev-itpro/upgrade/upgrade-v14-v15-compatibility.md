@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 
 # [!INCLUDE[prod long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix
