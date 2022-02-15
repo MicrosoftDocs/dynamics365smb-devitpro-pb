@@ -224,8 +224,8 @@
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
-## Automation
-### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
+## Automation APIs
+### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
@@ -3489,11 +3489,12 @@
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
-### API
+### APIs
 #### [Overview](webservices/api-overview.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+#### [Administration API](administration/itpro-introduction-to-automation-apis.md)
 #### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
