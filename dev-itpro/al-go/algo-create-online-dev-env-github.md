@@ -34,7 +34,7 @@ If you do **not** provide an `AdminCenterApiCredentials` secret, the workflow wi
 
 ## Next step
 
-
+Next, you can look into how to [Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md).  
 
 ## See also
 
