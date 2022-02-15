@@ -16,29 +16,30 @@ When you create a new report, there are two tasks main tasks. First, you define 
 
 ## Create a simple Excel layout report
 
-The following example extends the **Customer List** report with a new Excel layout. The layout does not yet exist, but will be generated based on the existing report dataset for Customer List. 
+The following example extends the **Customer List** report only to add a `rendering` section, which adds a new Excel layout to the list of options for printing the **Customer List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report. 
 
 1. Create a new report extension of the **Customer List** page by adding the following lines of code: 
 
-```al
-reportextension 50101 MyExtendedCustList extends "Customer - List"
-{
-    rendering
+    ```al
+    reportextension 50101 MyExtCustList extends "Customer - List"
     {
-        layout(LayoutExcel)
+        rendering
         {
-            Type = Excel;
-            LayoutFile = 'MyExcelCustomerList.xlsx';
+            layout(LayoutExcel)
+            {
+                Type = Excel;
+                LayoutFile = 'MyExcelCustomerList.xlsx';
+            }
         }
     }
-}
-```
-
-2. Press **Ctrl+Shift+P**, and then choose **AL: Package** and the `MyExcelCustomerList.xlsx` will be generated for you in the right pane of Visual Studio Code. 
+    ```    
+2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package** and the `MyExcelCustomerList.xlsx` will be generated for you in the right pane of Visual Studio Code. 
 1. Right-click the file, and choose **Reveal in File Explorer**. This will open File Explorer.
-1. Choose the `MyExcelCustomerList.xlsx` file, and open it in Excel.
+1. Choose the `MyExcelCustomerList.xlsx` file, and then open it in Excel.
 1. Make change <!-- todo -->
-1. Back in Visual Studio Code, press **Ctrl+F5** to compile and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].  
+1. Back in Visual Studio Code, press **Ctrl+F5** to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].
+1. Now, search for **Customer List** report, and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
+1. Choose **Excel** on the request page of the report.
 
 
 ## See also
