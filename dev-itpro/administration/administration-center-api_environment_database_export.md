@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Environment Database Export
 description: Learn about the Business Central administration center API for exporting an environment database.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

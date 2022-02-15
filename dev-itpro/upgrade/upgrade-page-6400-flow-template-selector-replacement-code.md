@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
 # Page 6400 Flow Template Selector Replacement Code

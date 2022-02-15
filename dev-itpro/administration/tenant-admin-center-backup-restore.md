@@ -2,7 +2,6 @@
 title: Restoring an Environment in the Admin Center
 description: Use the Business Central administration center to restore backups of environments. 
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

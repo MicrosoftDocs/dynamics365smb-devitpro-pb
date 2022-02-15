@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: solsen
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
