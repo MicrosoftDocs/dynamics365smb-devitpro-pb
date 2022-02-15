@@ -1,6 +1,6 @@
 ---
 title: "Overview of AL-Go"
-description: ""
+description: "Overview of how to use AL-Go for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 02/14/2022
@@ -12,9 +12,9 @@ ms.author: solsen
 
 # Overview of AL-Go
 
-AL-Go for GitHub contains a set of GitHub templates and actions that can be used to set up and maintain professional DevOps processes for your Business Central AL projects.
+AL-Go for GitHub contains a set of GitHub templates and actions that can be used to set up and maintain professional DevOps processes for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] AL projects.
 
-The goal is that people who have created their GitHub repositories based on the AL-Go templates, can maintain these repositories and stay current just by running a workflow, which updates their repositories. This includes necessary changes to scripts and workflows to cope with new features and functions in Business Central.
+The goal is that people who have created their GitHub repositories based on the AL-Go templates, can maintain these repositories and stay current just by running a workflow, which updates their repositories. This includes necessary changes to scripts and workflows to cope with new features and functions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 The template repositories to use as starting point are:
 

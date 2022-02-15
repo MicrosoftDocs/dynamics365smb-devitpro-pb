@@ -1,6 +1,6 @@
 ---
 title: "Create an Online Development Environment from Visual Studio Code"
-description: "Create an online development environment from Visual Studio Code for AL-Go for Business Central"
+description: "Create an online development environment from Visual Studio Code for AL-Go for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 01/21/2022
@@ -21,7 +21,7 @@ ms.author: solsen
 1. Open a browser window and enter this URL `https://aka.ms/devicelogin`, then paste in the code provided, sign in and accept that you are trying to sign in with PowerShell.
 1. Wait for the script to finish. All apps are compiled and published to the online environment using the development scope and Visual Studio Code is now ready for RAD development.
 1. Modify your app, press **F5** and in the drop-down, select the Cloud Sandbox with your new name.
-1. Your online Business Central environment will now include your newest app changes.
+1. Your online [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment will now include your newest app changes.
 1. The `launch.json` file will be updated with your new environment in Visual Studio Code. You can decide whether you want to check-in the changes to the repo or only use this locally.
 
 

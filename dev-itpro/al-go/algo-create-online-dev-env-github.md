@@ -1,6 +1,6 @@
 ---
 title: "Create an Online Development Environment from GitHub"
-description: "Create an online development environment in GitHub for AL-Go for Business Central"
+description: "Create an online development environment in GitHub for AL-Go for Business Central."
 author: freddyk
 ms.custom: na
 ms.date: 01/21/2022
@@ -14,7 +14,7 @@ ms.author: solsen
 
 > *The prerequisites for this how to is that you have completed the [Use Azure KeyVault for secrets with AL-Go](algo-use-azure-keyvault-for-secrets.md) instructions.* 
 
-To create an online development environment, we need to authenticate to our Business Central Admin API using OAuth. The (Create Online Dev. Environment) workflow works unattended if you provide a secret called `AdminCenterApiCredentials`, either as a GitHub Secret or in a key vault. Currently, the Admin Center API does not yet support S2S, which means that the `AdminCenterApiCredentials` cannot be formatted like explained in section 3, but must be formatted as: `{"refreshtoken":"refreshtoken"}`.
+To create an online development environment, we need to authenticate to our [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Admin API using OAuth. The (Create Online Dev. Environment) workflow works unattended if you provide a secret called `AdminCenterApiCredentials`, either as a GitHub Secret or in a key vault. Currently, the Admin Center API does not yet support S2S, which means that the `AdminCenterApiCredentials` cannot be formatted like explained in section 3, but must be formatted as: `{"refreshtoken":"refreshtoken"}`.
 
 Getting the refresh token can be done using this command on a machine with `BcContainerHelper` installed:
 

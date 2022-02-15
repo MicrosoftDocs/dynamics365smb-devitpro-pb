@@ -16,7 +16,7 @@ The following steps will help you get started by creating a repository on GitHub
 
 ## Getting the repo ready on GitHub
 
-1. Navigate to https://github.com/microsoft/AL-Go-PTE and choose **Use this template**
+1. Navigate to https://github.com/microsoft/AL-Go-PTE and choose **Use this template**.
 1. In the **Repository name** field, enter `app1` and then select if the repository will be **Private** or **Public**.
 1. Choose the **Create repository from template** button.
 1. On the **Actions** tab, under **Workflows** select **Create a new app**, and then choose the **Run workflow** drop-down button.
@@ -35,8 +35,7 @@ The script might show a dialog asking for permissions to run Docker commands, se
 1. Wait for completion of the script.
 1. Once the script is completed, press **Ctrl+Alt+P** and choose **Clear credentials cache**.
 1. Open the `HelloWorld.al` file, modify the string as you want and then press **F5**.  
-Depending on selected authentication method, Visual Studio Code might ask for the credentials that you provided in step 5.  
-Business Central will now start.
+Depending on selected authentication method, Visual Studio Code might ask for the credentials that you provided in step 5. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will now start.
 1. Back in Visual Studio Code, you will see that in addition to your changes in the `HelloWorld.al`file, the `launch.json` file was also modified with the information about the local environment. 
 1. Now, from the Visual Studio Code source control, stage your changes, commit them, and **Sync changes**.
 
