@@ -1,6 +1,5 @@
 ---
 author: dmc-dk
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.reviewer: edupont
 ms.date: 04/01/2021

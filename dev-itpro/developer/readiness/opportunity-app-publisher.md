@@ -5,7 +5,6 @@ author: edupont04
 manager: edupont
 
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 ms.date: 04/01/2021
 ms.author: kurtju
 ---

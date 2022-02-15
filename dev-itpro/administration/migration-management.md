@@ -3,7 +3,6 @@ title: Manage the migration to the cloud from your Business Central online
 description: Migrate your data to the cloud from an on-premises solution based on Business Central, Dynamics GP, or Dynamics NAV.
 author: bmeier94
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

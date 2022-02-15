@@ -3,7 +3,6 @@ title: Get started as a reseller of Business Central Online
 description: Learn about how to get started as a reselling partner of Dynamics 365 Business Central online, how to become a partner, and how to onboard customers.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
@@ -40,6 +39,8 @@ The "Ready to Go" program is designed to support you in the journey of bringing 
 When you become a Microsoft Partner Network member, you gain access to membership benefits that can help you build and grow your business. For more information, see [Explore your Go-To-Market with Microsoft offers](/partner-center/mpn-learn-about-go-to-market-benefits) in the Partner Center docs.  
 
 As a Dynamics 365 reseller, you benefit from Microsoft's investments in an always up-to-date modern platform, you can bundle recognized apps from the Microsoft commercial marketplace into an offering that fits the needs of your customers, reach more customers by using Microsoft's commercial marketplace to promote your packaged consulting service offerings or customization services, and streamline your own processes and build tools with Power BI, Power Automate, and Power Apps connected to [!INCLUDE[prod_short](../includes/prod_short.md)].  
+
+The [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central) landing site has plenty of material to help you build a practice, go to market, drive readiness, and keep track of upcoming events (requires a partner account).  
 
 ### Marketing assets
 
@@ -101,3 +102,4 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
+[Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  

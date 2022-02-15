@@ -3,7 +3,6 @@ title: Migrate to Business Central online from on-premises
 description: Learn how to migrate to the cloud from Business Central on-premises using an assisted setup guide in Business Central online.
 
 author: jenolson
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

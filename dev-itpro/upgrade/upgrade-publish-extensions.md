@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 #  <a name="AddExtensions"></a>Publishing, Upgrading, and Installing Extensions During Upgrade

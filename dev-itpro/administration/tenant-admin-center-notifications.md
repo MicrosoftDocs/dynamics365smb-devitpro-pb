@@ -3,7 +3,6 @@ title: Managing Tenant-Specific Notifications
 description: Learn about how a VAR or an internal administrator can manage tenant notifications. 
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

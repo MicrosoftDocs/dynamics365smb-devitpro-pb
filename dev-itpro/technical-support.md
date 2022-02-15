@@ -4,7 +4,6 @@ description: Learn about how to support your Business Central customers, online 
 author: edupont04
 ms.reviewer: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 11/02/2021
 ---

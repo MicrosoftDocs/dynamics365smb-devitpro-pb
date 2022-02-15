@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Using OData to Return or Obtain a JSON Document
 You can publish a page as a web service and consume it using JavaScript Object Notation \(JSON\).  

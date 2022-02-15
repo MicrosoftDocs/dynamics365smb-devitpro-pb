@@ -2,7 +2,6 @@
 title: Application Access Management
 description: Learn how application access management works as an Embed App ISV and VAR.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
