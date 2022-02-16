@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 06/17/2021
+ms.date: 02/16/2022
 ms.author: edupont
 ---
 
@@ -100,7 +100,7 @@ In some cases, even after the update is available in your area, you are still no
 
 - You've just created a new sandbox environment as a copy of your production environment. In this case, the sandbox environment is created on the same version as the production environment it was copied from. If your newly created sandbox environment is running on the last minor update of the previous version, Microsoft will schedule it for update automatically within one hour.  
 
-    You'll receive email notification and will see the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]when it happens. The scheduled update date for this environment will be set to seven days from the current date. This gives you enough time to change the date to one that fits you better, including the current date.  
+    You'll receive email notification and will see the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] when it happens. The scheduled update date for this environment will be set to seven days from the current date. This gives you enough time to change the date to one that fits you better, including the current date.  
 
 - Your per-tenant extensions aren't compatible with the next major update.  
 
@@ -109,6 +109,9 @@ In some cases, even after the update is available in your area, you are still no
 - The AppSource apps that are installed in your environment aren't yet available for the next major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
     While most AppSource apps are kept up to date by the app providers, a particular app might need more time to prepare for the next major update and isn't yet available for it. In this situation, contact the app owner to understand their availability plans.  
+
+> [!TIP]
+> Make sure each environment has the right contacts set up t get email notification. For more information, see [Managing Tenant-Specific Notifications](tenant-admin-center-notifications.md).
 
 ## Failed updates and rescheduling
 
