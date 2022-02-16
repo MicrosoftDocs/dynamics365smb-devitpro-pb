@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.assetid: 56b70fb2-c01f-4558-89f0-f991f2a24d78
 caps.latest.revision: 5
 author: SusanneWindfeldPedersen

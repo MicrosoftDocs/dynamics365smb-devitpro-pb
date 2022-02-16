@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 02/01/2022
 ms.reviewer: edupont
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: soalex
 ---
 

@@ -2,7 +2,6 @@
 title: Analyzing Table Index Trace Telemetry
 description: Learn about the telemetry for changes made to table indexes  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

@@ -225,8 +225,8 @@
 ### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 ### [Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
-## Automation
-### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
+## Automation APIs
+### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
@@ -516,7 +516,8 @@
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## Formatting Data
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
+### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)  
+### [About Dates in Business Central](developer/devenv-about-dates.md)
 ## Translations
 ### [Translations Overview](developer/devenv-translations-overview.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
@@ -582,6 +583,7 @@
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
+### [AL Error Handling](developer/devenv-al-error-handling.md)
 ### [Working with AL Methods](developer/devenv-al-methods.md)
 ### [System-Defined Variables](developer/devenv-system-defined-variables.md)
 ### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
@@ -3485,18 +3487,22 @@
 #### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
 #### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
-### API
+### APIs
 #### [Overview](webservices/api-overview.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+#### [Administration API](administration/itpro-introduction-to-automation-apis.md)
+#### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData Query Performance](webservices/odata-client-performance.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
@@ -3506,6 +3512,7 @@
 #### [Containments and Associations](webservices/use-containments-associations.md)
 #### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
 #### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
 #### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
@@ -3513,6 +3520,7 @@
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP Service URIs](webservices/soap-web-service-uris.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Basic Operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
 ##### [CreateMultiple](webservices/CreateMultiple-operation.md)
@@ -3537,6 +3545,7 @@
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
+### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power BI -->

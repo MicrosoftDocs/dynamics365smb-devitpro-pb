@@ -4,7 +4,6 @@ description: This article describes the components in the custom help toolkit fo
 author: edupont04
 
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.reviewer: jowilco
 ms.date: 02/01/2022
 ms.author: edupont

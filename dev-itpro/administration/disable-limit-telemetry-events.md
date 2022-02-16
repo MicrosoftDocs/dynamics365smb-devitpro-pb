@@ -1,12 +1,12 @@
 ---
 title: "Turn Off or Limit Telemetry Trace Events"
+description: Get tips for how to configure telemetry traces, depending on what you want to measure.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Turn Off or Limit Telemetry Trace Events

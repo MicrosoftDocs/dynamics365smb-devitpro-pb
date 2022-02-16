@@ -7,7 +7,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Set Up the Business Central Add-In for Outlook with Business Central On-premises
@@ -112,9 +111,7 @@ You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)]
    The base URL the public URL that can be used by Outlook clients to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyNavWebServer:443/BC130`.
 
    With the Set-NAVServerConfiguration cmdlet, set the `PublicWebBaseUrl` key.
-3. Set the **Valid Audiences** setting for Azure AD to include the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
-
-   The host name is the web client URL with the port number and server instance, like `https://MyNavWebServer`.
+3. Set the **Valid Audiences** setting for Azure AD to include the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], which is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
 
 ## <a name="centralized-deployment"></a>Centralized Deployment
 

@@ -6,7 +6,6 @@ ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: blrobl
 ms.author: t-blrobl
 ---

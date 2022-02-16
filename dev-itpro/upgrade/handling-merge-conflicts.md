@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Handling Merge Conflicts
 When you merge application changes by running the [Merge-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/merge-navapplicationobject) cmdlet or the [Update-NAVApplicationObject](/powershell/module/microsoft.dynamics.nav.model.tools/update-navapplicationobject) cmdlet, the differences are applied automatically if it is possible. However, when conflicts are detected, they are captured in **CONFLICT** files. The CONFLICT files clearly identify where two parties such as you and Microsoft have changed the same object or parts of it. You can open a CONFLICT file in Notepad, for example, and see the type of conflict, such as a code conflict or conflicting object property values. By clearly identifying the conflicts in this manner and automatically merging all other changes, you can more easily resolve the conflicts.  

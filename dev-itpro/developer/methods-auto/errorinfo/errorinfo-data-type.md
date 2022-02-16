@@ -3,12 +3,11 @@ title: "ErrorInfo Data Type"
 description: "Provides a structure for grouping information about an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2021
+ms.date: 02/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -17,7 +16,7 @@ author: SusanneWindfeldPedersen
 # ErrorInfo Data Type
 > **Version**: _Available or changed with runtime version 3.0._
 
-Provides a structure for grouping information about an error. Supported for Business Central online from runtime 8.0.
+Provides a structure for grouping information about an error.
 
 
 The following methods are available on the ErrorInfo data type.

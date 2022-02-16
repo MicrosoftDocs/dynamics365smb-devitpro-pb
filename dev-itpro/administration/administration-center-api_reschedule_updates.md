@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Reschedule Updates
 description: Learn about the Business Central administration center API for rescheduling updates.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -100,6 +99,6 @@ PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

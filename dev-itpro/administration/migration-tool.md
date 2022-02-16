@@ -3,7 +3,6 @@ title: Run the Cloud Migration Tool
 description: Get a cloud tenant so you can migrate to the cloud when you have an on-premises solution based on Business Central, Dynamics GP, Dynamics NAV.
 
 author: bmeier94
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -38,6 +37,8 @@ When you choose the **Set up Cloud Migration** assisted setup, it launches the *
 1. Welcome and Consent page
 
     This page provides an overview of what the wizard will do. You must agree to the displayed warning message before you can continue to the next step.
+
+    If the user running this flow is a delegated administrator, they must receive approval from a licensed user with either the *Essentials* or the *Premium* license and SUPER permissions in order to run the cloud migration. In this case, the **Data Migration Setup** guide will display an additional step, where the delegated administrator can copy the auto-generated approval link and send it to the licensed user for approval. Once the licensed user has approved the request, the delegated administrator can continue with the setup of the cloud migration and perform all other steps required to complete that process. The customer, meaning the licensed user, can always revoke the permission to run the migration by choosing the same approval link tht was shared by the delegated administrator, or from the **Cloud Migration Approval** page.  
 
 2. Product selection
 

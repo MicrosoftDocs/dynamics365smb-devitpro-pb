@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade from Version 15 to Version 16
 

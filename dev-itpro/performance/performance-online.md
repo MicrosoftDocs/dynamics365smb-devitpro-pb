@@ -6,7 +6,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: KennieNP
 ms.date: 04/01/2021
 ---

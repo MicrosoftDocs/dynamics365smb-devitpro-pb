@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # SOAP Web Services
 SOAP web services enable full flexibility for building operation-centric services. They provide industry-standard interoperability and channel and host pluggability.  

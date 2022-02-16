@@ -4,7 +4,6 @@ description: Find links to information about the underlying service's maintenanc
 author: edupont04
 ms.reviewer: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 07/27/2021
 ---

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -85,6 +84,9 @@ permissionset 50100 MyPermissionSet
 ```
 
 The AL permission set grants access to the table and thereby satisfies the validation.
+
+> [!NOTE]  
+> You can grant access to all your tables using `*`. For instance `tabledata * = R;` grants read access to all of them.
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
