@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 12/15/2021
+ms.date: 02/08/2022
 ms.author: edupont
 ---
 
@@ -48,6 +48,15 @@ Instead, use the [Administration Center API](administration-center-api.md).
 [!INCLUDE [admin-env-sandbox](../developer/includes/admin-env-sandbox.md)]
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
+
+### <a name="partnersandbox"></a>Partner sandboxes
+
+As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* license. You'll need a valid Microsoft Partner Network (MPN) ID. You must also have at least five employees who will use the partner sandboxes that you create using this license. This offer was made available in February 2022 to support partners that need non-production environments to learn, test, and deliver end-to-end customer demos with their solutions.  
+
+> [!IMPORTANT]
+> The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use only on the partner’s tenant. You are not allowed to use this license in a customer tenant, nor in a production environment.  
+
+Partners can purchase the unique, partner-only license via Web Direct to create flexible, cost-effective solutions that do not expire. Accessing the SKUs and pricing is simple: [Go to experience.dynamics.com](https://experience.dynamics.com/requestlicense/) and submit a request for the *Dynamics 365 Business Central Partner Sandbox* license. Use a valid MPN ID. Once your request is approved, you receive a token to purchase the SKUs directly. Pay by credit card. If the total billing is over $500/month for your company, then you can pay by invoice.
 
 ### <a name="precautions"></a>Precautions for sandbox environments with production data
 
