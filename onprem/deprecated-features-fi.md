@@ -3,7 +3,6 @@ title: Finnish Features that are Moved, Removed, or Replaced | Microsoft Docs
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Finland that we have moved, removed, or replaced.
 author: bholtorf
 
-ms.service: dynamics365-financials
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na

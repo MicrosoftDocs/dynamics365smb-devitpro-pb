@@ -4,10 +4,9 @@ description: Get answers to your questions about migrating to the cloud from an 
 author: bmeier94
 
 ms.reviewer: edupont
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms. search.keywords: cloud, edge
-ms.date: 04/01/2021
+ms.date: 02/18/2022
 ms.author: edupont
 ---
 
@@ -40,7 +39,7 @@ Data is migrated using an Azure service called Azure Data Factory (ADF). ADF is 
 
 There are no restrictions on the type of data that can be migrated. In the current version of Business Central, the migration tool is by default limited to migrate databases up to 80 GB. If your database is larger than 80 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
 
-If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Adding a tenant to an existing runtime service, or updating companies](migrate-data.md#adding-a-tenant-to-an-existing-runtime-service-or-updating-companies).
+If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Run the tool multiple times](migrate-data.md#run-the-tool-multiple-times).
 
 If you are looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful.  
 
@@ -106,6 +105,5 @@ The extension must be created in the same manner as any other extension. For dat
 
 ## See also
 
-[Running the Cloud Migration Tool](migration-tool.md)  
 [Troubleshooting Cloud Migration](migration-troubleshooting.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  

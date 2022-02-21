@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Merge Application Changes
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] includes [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] cmdlets that can help you apply changes to your application by comparing and merging application objects from different versions. For example, you can use the Merge-NAVApplicationObject cmdlet to update your solution when Microsoft releases an update.  

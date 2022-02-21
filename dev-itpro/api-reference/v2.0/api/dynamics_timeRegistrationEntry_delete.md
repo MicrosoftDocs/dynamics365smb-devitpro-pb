@@ -4,7 +4,6 @@ description: Deletes a timeRegistrationEntry object in Dynamics 365 Business Cen
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na

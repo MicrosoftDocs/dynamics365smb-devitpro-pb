@@ -3,7 +3,6 @@ title: Understanding the infrastructure of Business Central online
 description: Learn about how environments in Business Central online reflect the Azure AD tenant with an example of environments and companies across two countries.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
