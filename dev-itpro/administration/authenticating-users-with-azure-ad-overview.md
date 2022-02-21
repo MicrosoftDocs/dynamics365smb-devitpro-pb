@@ -45,7 +45,7 @@ For the complete setup of Azure AD with OpenID Connect, see [Configure Azure AD 
 
 ### Switch an existing configuration from WS-Federation to OpenID Connect
 
-The complete setup for OpenID Connect isn't much different than for WS-Federation. The following steps outline the modifications you have to make to an existing deployment to go from WS-Federation to OpenID connect.
+The complete setup for OpenID Connect isn't much different than it is for WS-Federation. The following steps outline the modifications you have to make to an existing deployment to go from WS-Federation to OpenID connect.
 
 1. In Azure Active Directory, enable ID tokens on the registered application for Business Central authentication. You do this change from the [Azure portal](https://portal.azure.com).
 2. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
@@ -67,7 +67,7 @@ For the complete setup with more details, see [Configure Azure AD Authentication
 
 ### Configure legacy WS-Federation in version 20
 
-Whether you setting up a new version 20 deployment or upgrading from version 19 or earlier, you can set up use WS-Federation for now. The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
+Whether setting up a new version 20 deployment or upgrading a version 19 or earlier, you can still set up the Azure AD authentication use WS-Federation for now. The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
 
 For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
 
