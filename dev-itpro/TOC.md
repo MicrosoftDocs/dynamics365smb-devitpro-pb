@@ -287,6 +287,7 @@
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
 ### [AL Profiler](developer/devenv-al-profiler-overview.md)
+### [Performance Profiler](developer/devenv-performance-profiler-overview.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
