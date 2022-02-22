@@ -12,7 +12,7 @@ ms.topic: conceptual
 author: bholtorf
 ---
 # Performance Profiler Overview
-If a business process takes longer than expected, your administrator can use the Performance Profiler page to record a snapshot of the process and then investigate it. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed. By default, a "slow" process is anything that takes more than 200 milliseconds. 
+If a business process takes longer than expected, your administrator can use the Performance Profiler page to record a snapshot of the process. A "slow" process is anything that takes more than 200 milliseconds to complete. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed. Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself. For more information, see [Viewing technical information](devenv-performance-profiler-overview.md#viewing-technical-information). 
 
 <!--Do we want to say something about the fact that the profiles can help identify which support organization the customer should contact?-->
 
@@ -44,6 +44,7 @@ If you want to share a recording, for example, if you're in contact with the com
 The Performance Profiler features are a simplified version of the AL Profiler for the AL Language extension in Visual Studio Code. You can capture a performance profile of the code that was run during a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
 
 ## See Also
-[Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-debugging)
-[Snapshot Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)
-[AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview)  
+[Managing Technical Support](/dynamics365/business-central/dev-itpro/administration/manage-technical-support)  
+[Escalate support issues to Microsoft](/dynamics365/business-central/dev-itpro/administration/raise-support-case)  
+[Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-debugging)  
+[Snapshot Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)  

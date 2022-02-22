@@ -186,6 +186,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
+### [Performance Profiler](developer/devenv-performance-profiler-overview.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
@@ -287,7 +288,6 @@
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
 ### [AL Profiler](developer/devenv-al-profiler-overview.md)
-### [Performance Profiler](developer/devenv-performance-profiler-overview.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
