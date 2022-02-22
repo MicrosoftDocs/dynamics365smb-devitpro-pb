@@ -21,7 +21,7 @@ ms.author: jobulsin
   - AMC Banking 365 Fundamentals
     - The Service URL in AMC Banking Setup is reset to default for Sandbox environments
   - Email - Outlook REST API
-    - All email accounts of types "Microsoft 365" and "Current User" are deleted
+    - All email accounts of types "Microsoft 365" and "Current User" are deleted. Deletion of these records invalidates the Field Monitoring Setup record.
   - Email - SMTP Connector
     - SMTP Server details are deleted
 - The following changes are made for specific localizations
