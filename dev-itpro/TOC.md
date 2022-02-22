@@ -186,7 +186,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
-### [Performance Profiler](developer/devenv-performance-profiler-overview.md)
+### [Performance Profiler](developer/performance-profiler-overview.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
