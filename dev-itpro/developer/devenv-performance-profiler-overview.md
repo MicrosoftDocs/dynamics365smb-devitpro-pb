@@ -5,17 +5,18 @@ ms.author: bholtorf
 ms.custom: na
 ms.date: 02/21/2022
 ms.reviewer: na
+ms.search.forms: 24
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
 ---
 # Performance Profiler Overview
-If a business process takes longer than expected, your administrators can use the Performance Profiler page to record the process and then investigate it. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed. By default, a "slow" process is anything that takes more than 200 milliseconds. 
+If a business process takes longer than expected, your administrator can use the Performance Profiler page to record a snapshot of the process and then investigate it. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed. By default, a "slow" process is anything that takes more than 200 milliseconds. 
 
 <!--Do we want to say something about the fact that the profiles can help identify which support organization the customer should contact?-->
 
-When you stop recording you'll get two types of insights:
+After you record a snapshot you'll get two types of insights:
 
 * The **Time Spent** chart shows how many milliseconds each app took to complete its part.
 * The **Active Apps** chart shows how much faster the process could be if you remove each app.
@@ -29,18 +30,20 @@ You can use the **App Name** and **App Publisher** actions to filter the charts,
 To record a process, you must be an administrator, and you must be assigned the **D365 SNAPSHOT DEBUG** permission set.
 
 ## Viewing technical information
-If you want to dig into the technical specifics yourself, you can turn on the **Show technical information** toggle. That adds the **Time Spent by Application Object** and **Call Tree** FastTabs.
+If you want to dig into the technical specifics, you can turn on the **Show technical information** toggle. That adds the **Time Spent by Application Object** and **Call Tree** FastTabs. The following table describes the FastTabs.
 
-### Time Spent by Application Object
-This FastTab shows the objects, such as pages, codeunits, and tables, that were involved in the process. The interesting things here are the **Time Spent** and **Samples** columns. The Time Spent column focuses on the object, and shows how long it was active during the recording. The Samples column shows the number of times that the profiler 
-
-<!--Why do we sample some objects more than others? Is there some kind of trigger?-->
-
-### Call Tree
-The **Self Time** and **Total Time** columns show where time is spent in the code. The **Self Time** column shows the amount of time spent in the method only, and excludes calls out of the method. The **Total Time** field is the Self Time amount *plus* calls out of the method. <!--What do you actually learn from these numbers? -->
+|FastTab  |Description  |
+|---------|---------|
+|Time Spent by Application Object|This FastTab shows the objects, such as pages, codeunits, and tables, that were involved in the process. The interesting things here are the **Time Spent** and **Samples** columns. The Time Spent column focuses on the object, and shows how long it was active during the recording. The Samples column shows the number of times that the profiler sampled the performance of the object.<!--Why do we sample some objects more than others? Is there some kind of trigger?-->|
+|Call Tree|The **Self Time** and **Total Time** columns show where time is spent in the code. The **Self Time** column shows the amount of time spent in the method only, and excludes calls out of the method. The **Total Time** field is the Self Time amount *plus* calls out of the method. <!--What do you actually learn from these numbers? -->|
 
 ## Downloading and Sharing Performance Profiles
 If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can download the recording and then copy the file to OneDrive.  
 
+## The Performance Profiler and the AL Profiler
+The Performance Profiler features are a simplified version of the AL Profiler for the AL Language extension in Visual Studio Code. You can capture a performance profile of the code that was run during a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
+
 ## See Also
+[Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-debugging)
+[Snapshot Debugging](/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging)
 [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview)  
