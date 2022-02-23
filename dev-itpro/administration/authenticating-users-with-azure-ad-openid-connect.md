@@ -273,13 +273,14 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     > [!IMPORTANT]
     > The `AzureActiveDirectoryClientSecret`, `AzureActiveDirectoryClientId`, and `AzureActiveDirectoryClientSecret` parameters aren't used. The `AzureActiveDirectoryClientId` must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
 
+<!--
 4. Disable token-signing certificate validation by setting `DisableTokenSigningCertificateValidation` to `true`.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName DisableTokenSigningCertificateValidation -KeyValue true
     ```
-
-5. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
+-->
+4. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName AppIdUri -KeyValue "<Application ID URI>"
@@ -293,7 +294,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     Set-NAVServerConfiguration -ServerInstance BC200  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
     ```
 
-6. Restart the server instance. For example:
+5. Restart the server instance. For example:
 
     ```powershell
     Restart-NAVServerInstance -ServerInstance BC200
