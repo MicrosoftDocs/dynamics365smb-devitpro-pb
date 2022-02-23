@@ -1,6 +1,6 @@
 ---
-title: Business Central Administration Center API | Microsoft Docs
-description: Learn about the Business Central administration center API.
+title: Business Central Administration Center API 
+description: Get introduced to the Business Central administration center API.
 author: jswymer
 ms.topic: conceptual
 ms.devlang: na

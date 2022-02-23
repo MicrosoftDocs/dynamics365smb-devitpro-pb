@@ -682,7 +682,7 @@ Data is returned for the following operation types:
 |Restart<sup>4</sup>|An environment was restarted.|[Restart Environment](tenant-admin-center-manage-sessions.md#restart-environment)|
 |Update<sup>5</sup>|Records a long-running background operation that occurs when an environment is updated to a newer version.||
 
-<sup>1</sup> These operations are only supported with API version 2.6 and later. For these operations, the data returned is the same as for [Get App Operations](#get-app-operations), but in a different format.
+<sup>1</sup> These operations are only supported with API version 2.6 and later. For these operations, the data returned is the same as for [Get App Operations](administration-center-api_app_management.md#get-app-operations), but in a different format.
 
 <sup>2</sup> These operations are only supported with API version 2.8 and later.
 

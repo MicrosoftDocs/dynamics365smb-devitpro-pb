@@ -11,7 +11,7 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 10/05/2021
 ---
 
-# Notifications
+# Notifications (API)
 
 Notifications are sent to the recipient email addresses set up for the tenant. For example, notifications are sent for update availability, successful updates, update failures, and extension validations.
 
@@ -137,6 +137,6 @@ Returns the notification settings.
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
