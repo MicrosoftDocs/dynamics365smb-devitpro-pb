@@ -10,7 +10,8 @@ ms.author: solsen
 
 # AL Profiler Overview
 
-[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] <!-- new include for 2022RW1-->
+[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] and updated with sampling profiling for Business Central 2022 release wave 1.
+
 
 Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling.
 
