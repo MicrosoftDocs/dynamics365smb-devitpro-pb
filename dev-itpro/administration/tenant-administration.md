@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 10/15/2021
+ms.date: 02/23/2022
 ms.author: edupont
 ---
 
@@ -44,7 +44,7 @@ The **Global admin** role makes you an administrator of your organization's Micr
 
 When your organization subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you have a relationship with [an authorized partner of Microsoft](/microsoft-365/admin/misc/add-partner). The partner company assists with licensing, configuration, and other tasks. They can also help you get [telemetry](telemetry-overview.md) about your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment.  
 
-The partner will have access to your tenant as a *delegated administrator*. You can configure their access to your data. For more information, see [Managing delegated permissions as an internal administrator](delegated-admin.md#managing-delegated-permissions-as-an-internal-administrator).
+The partner will have access to your tenant as a *delegated administrator*. You can configure their access to your data. Starting in February 2022, the partner can request *granular delegated admin privileges*, and we recommend that you work with your partner or partners to change their access to your tenant to use the *Dynamics 365 administrator* role rather than the *Global admin* role. For more information, see [Managing delegated permissions as an internal administrator](delegated-admin.md#managing-delegated-permissions-as-an-internal-administrator).  
 
 If your organization decides to switch to another partner, you must take the following steps:
 
