@@ -32,4 +32,4 @@
 
 <sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
 
-<sup>5</sup><a name="4"></a>Introduced in Business Central 2022 release wave 1, version 20.
+<sup>5</sup><a name="5"></a>Introduced in Business Central 2022 release wave 1, version 20.
