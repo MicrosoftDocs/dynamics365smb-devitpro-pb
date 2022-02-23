@@ -44,10 +44,10 @@ Occurs when a deadlock occurs.
 |---------|-----|
 |eventId|**RT0028**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
-|alObjectId|Specifies the ID of the running AL object that requested the lock. |
-|alObjectName|Specifies the name of the running AL object that requested the lock. not shown|
-|alObjectType|Specifies the type of the running AL object that requested the lock, such as a page or report. |
+|alExecutingMethodScope|Specifies the AL action that ran the transaction that caused the deadlock.|
+|alObjectId|Specifies the ID of the running AL object ran the transaction that caused the deadlock. |
+|alObjectName|Specifies the name of the running AL object ran the transaction that caused the deadlock.|
+|alObjectType|Specifies the type of the running AL object that ran the transaction that caused the deadlock, such as a page or report. |
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
@@ -55,12 +55,11 @@ Occurs when a deadlock occurs.
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
-|extensionId|Specifies the AppID of the extension that was involved in the lock.|
-|extensionName|Specifies the name of the extension that was involved in the lock.|
-|extensionVersion|Specifies the version of that was involved in the lock.|
-|sessionId|Specifies the ID of the session that requested the lock. |
-|snapshotId|Specifies the ID of the database snapshot. This ID is used to identify associated **Database lock snapshot** trace events.|
-|sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
+|extensionId|Specifies the AppID of the extension that was involved in the deadlock.|
+|extensionName|Specifies the name of the extension that was involved in the deadlock.|
+|extensionVersion|Specifies the version of that was involved in the deadlock.|
+|sessionId|Specifies the ID of the session that was involved by the deadlock. |
+|sqlServerSessionId|Specifies the ID of the SQL server session that involved in the deadlock. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ## See also
