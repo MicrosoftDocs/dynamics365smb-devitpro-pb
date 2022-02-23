@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -21,6 +20,10 @@ Test assertion functions are not allowed in a non-test context.
 Test assertion functions are not allowed in a non-test context.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0058](appsourcecop-as0058.md).
+
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
 [Getting Started with AL](../devenv-get-started.md)  

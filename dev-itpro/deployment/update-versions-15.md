@@ -5,7 +5,6 @@ author: jswymer
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 04/01/2021
 

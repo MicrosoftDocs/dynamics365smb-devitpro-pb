@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Export and Import Permission Sets and Permissions

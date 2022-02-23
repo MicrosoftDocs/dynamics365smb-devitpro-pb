@@ -2,7 +2,6 @@
 title: Analyzing Long Running AL Methods Telemetry
 description: Learn about analyzing long running AL methods in Business Central.  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

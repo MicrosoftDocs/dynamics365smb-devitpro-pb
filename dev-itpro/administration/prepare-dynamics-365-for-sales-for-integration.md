@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
-ms.service: dynamics365-business-central
 ---
 # Preparing Dynamics 365 Sales for Integration
 

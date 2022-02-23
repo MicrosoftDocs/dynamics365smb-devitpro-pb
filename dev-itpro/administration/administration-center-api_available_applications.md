@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Available Applications
 description: Learn about the Business Central administration center API for getting information about the applications.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -21,7 +20,7 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
 ```
-GET /admin/v2.9/applications/
+GET /admin/v2.11/applications/
 ```
 
 ### Response
@@ -48,7 +47,7 @@ GET /admin/v2.9/applications/
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/v2.11/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 ### Route Parameters
@@ -73,6 +72,6 @@ GET /admin/v2.9/applications/{applicationFamily}/Countries/{countryCode}/Rings/{
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

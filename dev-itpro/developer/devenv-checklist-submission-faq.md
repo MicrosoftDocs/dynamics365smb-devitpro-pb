@@ -7,7 +7,6 @@ ms.date: 01/03/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: qutreson
 ---
 
@@ -25,7 +24,7 @@ The extensions in your submission are validated for all the releases targeted by
 
 Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the example in [Technical Validation Checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
-> [!Important]  
+> [!IMPORTANT]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
 >
 > For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
@@ -51,8 +50,15 @@ The main app and the libraries required by the main app are validated and upload
 
 For example, let's consider an app A which has an offer in the AppSource marketplace and A depends on a library named B which doesn't have any dependencies. If you create a new submission with A as the main app and include B, C, and D as libraries, then only A and B will be validated. C and D will be ignored because they are not required by the main app A. If B is updated to depend on C and D, then all apps in the submission will now be validated by the service.
 
-> [!Note]  
+> [!NOTE]  
 > If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app will not be validated again for these countries/regions.
+
+> [!IMPORTANT]
+> If one or more libraries in your submission have their own offer, their listing(s) in the AppSource marketplace won't be updated automatically. In order to keep the listing(s) in sync with the version of the app(s) uploaded to Business Central, you should submit a submission for their related offer(s).
+
+### How long does the 'Automated application validation' take?
+
+During 'Automated application validation', the apps in your submission are validated for each of the country/regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to AppSource, then it will also run the breaking change validation using the apps currently in AppSource as baseline. Depending on the size of your app, the validation time can vary. Submissions are generally processed within a few minutes and we expect all submissions to be processed under 3 hours. However, if your app contains thousands of AL files, this can take longer. We would then recommend splitting the app in smaller modules as this would also improve the development experience and the maintainability of your code base.
 
 ### How many automated tests do we need to run for validation and how high must the test coverage be?  
 
@@ -89,13 +95,16 @@ At this stage, your extensions are validated to assess whether they meet the req
 If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
 
 > [!NOTE]
-> A lot of information is provided in the custom dimensions of the signals. For more information, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+> A lot of information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. For more information, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
 
 If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission does not target any countries/regions currently available in Business Central. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in Business Central and resubmit your offer. Generally, it is possible to upload apps for new localizations, a few weeks before they are made available to customers.
 
 If this stage failed with the following error message `Automated validation of the submission has failed. Please retry the operation and contact Partner Center support if it fails again. `, you should create a new submission in Partner Center. If your submission fails again, you should create a support case in Partner Center as documented in this article.
+
+> [!NOTE]
+> Because the extensions in your submission are validated for each release and country/region targeted by the submissions, the validation results can be really verbose and cannot always be displayed in their full length in Partner Center. The error message will then end with `...(Truncated)`. If that happens for your submission, you should either enable Azure Application Insights in your extension, run the self-validation script, or fix the errors visible and iterate on your submission.
 
 ### My app failed at the "Certification" stage, what do I do next?
 
@@ -199,14 +208,9 @@ When registering affixes for your publisher, or adding a new publisher name to y
 
 ### When do I contact Partner Center customer support?
 
-When your question is related to one of the following topics:
+When your submission fails to be successfully completed in Partner Center, but are having issues updating your extension(s) to fix the validation errors.
 
-- Failed technical validation of the submission ('Automated application validation' stage),
-- Failed marketing validation of the submission ('Certification' stage),
-- Failed upload of the extensions in the submission ('Publish application with the service' stage),
-- Requesting an exception for a breaking change.
-
-> [!Important]  
+> [!IMPORTANT]  
 > If you are using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
@@ -219,7 +223,7 @@ When you have questions or bugs regarding the self-validation script. For more i
 
 ### When do I write on Yammer?
 
-When you have questions on developing and maintaining AppSource apps, you can ask a question on Yammer. In this group, you will find announcements from Microsoft together with discussions around various AppSource related topics.
+When you have questions on developing and maintaining AppSource apps or about the validation process, you can ask a question on Yammer. In this group, you will find announcements from Microsoft together with discussions around various AppSource-related topics.
 
 You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, please email dyn365bep@microsoft.com. 
 

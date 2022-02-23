@@ -2,12 +2,11 @@
 title: Setting up App Key Vaults for Business Central
 description: Describes how to use an Azure Key vault with Business Central extensions for online.
 ms.custom: na
-ms.date: 12/03/2021
+ms.date: 02/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Setting up App Key Vaults for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
@@ -82,11 +81,18 @@ The next task is to grant the key vault reader application permission to read se
 
 ## Contact Microsoft to enable the App Key Vault feature
 
-Send an email to [bcappkeyvaultonboard@microsoft.com](mailto:bcappkeyvaultonboard@microsoft.com) to start the onboarding process. Do this step before you publish your updated extension to Partner Center.
+Send an email to [bcappkeyvaultonboard@microsoft.com](mailto:bcappkeyvaultonboard@microsoft.com) to start the onboarding process following this guideline:
+
+- If it is a new AppSource app, you should send the email after you have published the app on Partner Center. When the app has been onboarded to the app key vault, you then need to publish a new version of the app to Partner Center.
+
+- If it is an existing AppSource app, you can send the email at any time, but it will only take effect when you publish a new version of the app to Partner Center.
+
+<!-- Do this step before you publish your updated extension to Partner Center.-->
 
 The onboarding process involves a manual verification step that verifies that you own the AAD tenant that contains the key vaults.
 
 Provide the following information in the email:
+
 - Your AAD tenant ID. Obtain this information from the Azure portal by going to the Azure Active Directory Overview page.
 - Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults. **Note: It is important that all your AppSource extensions that need access to a key vault are included, as it is not enough to just set the key vault property in your `app.json` manifest files.**
 - Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.

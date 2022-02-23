@@ -10,7 +10,6 @@ ms.topic: reference
 ms.author: solsen
 author: SusanneWindfeldPedersen
 manager: edupont
-ms.service: "dynamics365-business-central"
 ---
 
 # OnRun Trigger

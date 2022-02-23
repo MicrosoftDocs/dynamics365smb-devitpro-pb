@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Designing Indented Hierarchy Lists
@@ -98,7 +97,7 @@ In the client, run the page and add records to the table. Be sure to set the **I
 
 In a fixed hierarchy, child rows are always shown, as illustrated in the following figure.
 
-![Fixed indented list.](media/static-tree-2.png "Fixed indented list")
+![Fixed hierarchy](media/static-tree-2.png "Fixed hierarchy")
 
 In the figure, indentation is applied to the second column. Setting up the fixed indented hierarchy involves configuring two properties on the page object: IndentColumn and IndentationControls.
 
@@ -173,7 +172,7 @@ For a more detailed implementation example, see the [Chart of Accounts](https://
 
 In a collapsible hierarchy, users can collapse and expand parent rows to show and hide child records.
 
-![Fixed indented list.](media/collapsible-tree.png "Fixed indented list")
+![collapsible hierarchy.](media/collapsible-tree.png "collapsible hierarchy")
 
 Setting up a collapsible hierarchy is similar to the fixed indented list, except for the properties that you set. A collapsible hierarchy involves three properties: IndentColumn, ShowsAsTree, and TreeInitialState.
 

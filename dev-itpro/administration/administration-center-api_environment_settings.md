@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Environment Settings
 description: Learn about the Business Central administration center API for setting up environments.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -19,7 +18,7 @@ Allows you to manage environment-specific settings such as the environment's App
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -52,7 +51,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -104,7 +103,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
@@ -216,6 +215,6 @@ DELETE /admin/v2.8/applications/{applicationFamily}/environments/{environmentNam
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

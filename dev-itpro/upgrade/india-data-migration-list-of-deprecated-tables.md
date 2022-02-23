@@ -4,7 +4,6 @@ description: Specifies list of deprecated tables
 
 author: v-debapd
 
-ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na

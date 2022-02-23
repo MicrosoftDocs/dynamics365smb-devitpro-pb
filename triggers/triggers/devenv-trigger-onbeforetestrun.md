@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: solsen
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ---
 
 # OnBeforeTestRun Trigger
