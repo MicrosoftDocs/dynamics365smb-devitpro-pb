@@ -2,7 +2,6 @@
 title: Analyzing Permission Changes Trace Telemetry
 description: Learn about the telemetry for permission changes made in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,6 @@ title: Russian Features that are Moved, Removed, or Replaced
 description: We are constantly streamlining and adjusting our app in-step with market developments. Read about the features for Russia that we have moved, removed, or replaced.
 author: AndreiPanko
 
-ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na

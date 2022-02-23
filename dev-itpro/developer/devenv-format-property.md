@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -259,4 +258,5 @@ For Text and Code, all formats should resemble the following: \<Text>.
   
 ## See Also
 
-[DecimalPlaces Property](properties/devenv-decimalplaces-property.md)
+[DecimalPlaces Property](properties/devenv-decimalplaces-property.md)  
+[About Dates in Business Central](devenv-about-dates.md)

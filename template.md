@@ -4,7 +4,6 @@ description: [One sentence description of feature. Text with lots of keywords fo
 author: [author's GitHub alias]
 ms.reviewer: solsen
 ms.topic: article
-ms.service: dynamics365-business-central
 ms.author: [author's Microsoft alias, if you work for Microsoft; otherwise solsen]
 ms.date: [Today's date, such as 10/05/2021]
 

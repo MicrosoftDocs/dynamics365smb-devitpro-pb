@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - App Management
 description: Learn about using the Business Central admin center API to manage apps.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -55,7 +54,7 @@ Installs an app on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/install 
 ```
 
 ### Route Parameters
@@ -132,7 +131,7 @@ Uninstalls an app from an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/uninstall  
 ```
 
 ### Route Parameters
@@ -194,7 +193,7 @@ Example `400 Bad Request` response when dependent apps need to be uninstalled fi
 Get information about apps that are installed on the environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/apps
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/apps
 ```
 
 ### Route Parameters
@@ -228,7 +227,7 @@ Returns information about the apps installed on the environment.
 Get information about new app versions that are available for apps currently installed on the environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/apps/availableUpdates
 ```
 
 ### Route Parameters
@@ -269,7 +268,7 @@ Updates an app using an existing endpoint, but when new parameters in the reques
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
+POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/update
 ```
 
 ### Route Parameters
@@ -332,7 +331,7 @@ Example `400 Bad Request` response when dependent apps need to be updated first:
 Gets information about app install, uninstall, and update operations for the specified app.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/apps/{appId}/operations/[{operationId}]
 ```
 
 ### Route Parameters
@@ -371,6 +370,6 @@ Returns the list of app update operations for the specified app.
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

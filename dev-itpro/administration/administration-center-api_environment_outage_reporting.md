@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Environment Outage Reporting
 description: Learn about the Business Central administration center API for reporting an environment outage.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -21,7 +20,7 @@ Enables the ability to report that an environment isn't accessible and may requi
 Gets the list of supported categories of outages
 
 ```
-GET /admin/v2.9/support/outageTypes
+GET /admin/v2.11/support/outageTypes
 ```
 
 ### Response
@@ -50,7 +49,7 @@ Returns a list with information about the supported outage types for reporting
 Gets the list of metadata about questions that need to be answered when reporting an environment outage
 
 ```
-GET /admin/v2.9/support/outageTypes/{outageType}/outageQuestions
+GET /admin/v2.11/support/outageTypes/{outageType}/outageQuestions
 ```
 
 ### Response
@@ -86,7 +85,7 @@ Returns the list of question metadata for the provided outage type
 Gets the list of outages that have been previously reported 
 
 ```
-GET /admin/v2.9/support/reportedoutages
+GET /admin/v2.11/support/reportedoutages
 ```
 
 ### Response
@@ -122,7 +121,7 @@ Initiates an outage report indicating that an environment isn't accessible
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
+POST /admin/v2.11/support/applications/{applicationFamily}/environments/{environmentName}/reportoutage
 ```
 
 ### Route Parameters
@@ -171,6 +170,6 @@ Returns information about the created outage report
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -47,6 +46,9 @@ If this parameter is true, the code in the OnModify Trigger is executed. If this
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!IMPORTANT]  
+> By design, the global variables of the record instance being modified will be initialized to their default value during the **ModifyAll** method execution, independently of the value that was previously set.
 
 If no filter is set, the field is modified in all records in the table. If a filter is set, the fields are modified only in the records which fall within the range specified by the filter. Records where the field is already equal to the new value are also updated. 
 

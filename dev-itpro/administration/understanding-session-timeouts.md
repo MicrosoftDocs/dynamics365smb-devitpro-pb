@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 
 ---
@@ -53,7 +52,7 @@ When you start a client, such as connecting to [!INCLUDE [prod_short](../develop
 
 -   *SessionTimeout* setting on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Web Server.  
 
- The session closes according to the setting that has the shortest time period. By default, the *ClientServicesIdleClientTimeout* setting is set to **MaxValue**, which means no time limit, and the *SessionTimout* setting is 00:20:00 \(20 minutes\). This means that when client connection is inactive, a session will close after 20 minutes. The following figure illustrates the timeout behavior:  
+ The session closes according to the setting that has the shortest time period. By default, the *ClientServicesIdleClientTimeout* setting is set to **MaxValue**, which means no time limit, and the *SessionTimeout* setting is 00:20:00 \(20 minutes\). This means that when client connection is inactive, a session will close after 20 minutes. The following figure illustrates the timeout behavior:  
 
  ![Inactivity session timeout.](../media/NAV_Inactivity_SessionTimeout.png "Inactivity session timeout")  
 

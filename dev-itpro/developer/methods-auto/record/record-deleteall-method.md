@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -37,6 +36,12 @@ Specifies whether to run the AL code in the OnDelete Trigger. If this parameter 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!IMPORTANT]  
+> By design, the global variables of the record instance being deleted will be initialized to their default value during the **DeleteAll** method execution, independently of the value that was previously set.
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

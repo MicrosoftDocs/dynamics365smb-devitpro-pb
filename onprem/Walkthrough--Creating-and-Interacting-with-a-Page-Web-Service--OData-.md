@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ---
 # Walkthrough: Creating and Interacting with a Page Web Service (OData)
 This walkthrough illustrates how you can publish a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] page as an OData web service, use it in a Visual Studio console application, and change data in [!INCLUDE[prodshort](../developer/includes/prodshort.md)] through the web service.  

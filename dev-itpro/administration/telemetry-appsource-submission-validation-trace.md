@@ -2,7 +2,6 @@
 title: Analyzing AppSource Submission Validation Trace Telemetry
 description: Learn about the telemetry for publishing apps to AppSource from Partner Center.  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -242,7 +241,7 @@ Occurs when the validation for a specific extension the submission has completed
 | extensionName|Specifies the name of the extension in the submission that was validated.|
 | extensionPublisher|Specifies the publisher of the extension in the submission that was validated.|
 | extensionVersion|Specifies the version of the extension in the submission that was validated.|
-|failureReason|**One or more extension validation tasks have failed**|
+|failureReason|**One or more error diagnostics were reported. For more information about the diagnostics, see traces with eventId LC0034.**|
 |severity|**Error**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated) that the extension was validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||
@@ -297,7 +296,7 @@ Occurs when the validation has completed for a specific version and country, and
 |baselineExtensions|Specifies the previous versions of the extensions in the app and the extensions they're dependent on. These extensions form the baseline for validation if publishing a newer version of an app that's already published.|
 |countryRegion|Specifies the localized version of the app that was validated. |
 |extensions|Specifies the extensions that were part of the submission and were validated. Select the arrow to expand the dimension to see the details about each extension.|
-|failureReason|**One  more extension validation tasks have failed.**|
+|failureReason|**One or more extension validation tasks have failed.**|
 |severity|**Error**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated) that the app was validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||

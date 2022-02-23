@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
@@ -423,4 +422,5 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
-[Performance tips for business users](performance-users.md)
+[Performance tips for business users](performance-users.md)  
+[AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)

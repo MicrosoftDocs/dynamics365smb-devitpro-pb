@@ -5,8 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-ms.date: 01/14/2022
+ms.date: 02/01/2022
 ms.author: edupont
 ---
 
@@ -15,7 +14,7 @@ ms.author: edupont
 The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files. You can also find guidance in the [Docs Contributor Guide](/contribute/).  
 
 > [!TIP]
-> If you want to get Microsoft's content and deploy it to your own website with or without customizations, see [Custom Help Toolkit](custom-help-toolkit.md).
+> If you want to get Microsoft's content and deploy it to your own website with or without customizations, the custom Help toolkit can help you. But you do not have to use the toolkit. That depends on the nature of your solution. For more information, see see [Custom Help Toolkit](custom-help-toolkit.md).
 
 ## Get content from the GitHub repos
 

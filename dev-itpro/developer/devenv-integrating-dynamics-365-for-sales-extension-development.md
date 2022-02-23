@@ -7,13 +7,12 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
 # Integrating Microsoft Dataverse for Extension Development
 
-[!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
 
 Develop extensions and streamline the workflow by synchronizing [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data with [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 

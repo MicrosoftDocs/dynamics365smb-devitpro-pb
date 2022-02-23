@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: overview
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 <!--

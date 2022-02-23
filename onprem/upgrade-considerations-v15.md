@@ -8,7 +8,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: dynamics365-business-central
 ms.date: 04/01/2019
 ms.author: jswymer
 ---

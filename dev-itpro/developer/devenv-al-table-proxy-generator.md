@@ -7,14 +7,13 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
 
 # AL Table Proxy Generator
 
-[!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
+
 
 The **AL Table Proxy Generator** tool can be used to generate one or more tables for integration with Microsoft Dataverse. When one or more tables are present in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], but not in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], the tool can be run to generate integration or proxy tables for the specified table or tables.
 

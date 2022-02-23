@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 04/01/2021
 ---
@@ -53,6 +52,9 @@ In addition to the AtomPub format, the OData implementation in [!INCLUDE[prod_sh
 
 ### SOAP Web Services  
  SOAP web services allow full flexibility for building operation-centric services. They provide industry standard interoperability. The most common type of messaging pattern in SOAP is the Remote Procedure Call \(RPC\), where one network node \(the client\) sends a request message to another node \(the server\), and the server sends a response message to the client.
+
+> [!IMPORTANT]
+> SOAP is replaced by OData V4. The support for SOAP endpoints will be removed in a later release. We recommend that you migrate integrations to OData V4 or REST API web services as soon as possible.  
 
 ### Page Web Services  
 When you expose a page as an OData web service, you can query that data to return a service metadata \(EDMX\) document, an AtomPub document, or a JavaScript Object Notation \(JSON\) document. You can also write back to the database if the exposed page is writable. For more information, see [OData Web Services](OData-Web-Services.md).  

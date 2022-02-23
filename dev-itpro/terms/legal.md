@@ -5,7 +5,6 @@ author: jswymer
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.service: dynamics365-business-central
 ms.date: 01/10/2022
 ms.author: edupont
 ---
