@@ -3,7 +3,7 @@ title: "Maintain AppSource apps and per-tenant extensions"
 description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
 author: edupont04
 ms.custom: na
-ms.date: 04/21/2021
+ms.date: 01/31/2022
 ms.topic: conceptual
 ms.author: edupont
 ---
@@ -13,6 +13,10 @@ ms.author: edupont
 As a partner, keeping your apps and per-tenant extensions (PTEs) up to date is your responsibility. [!INCLUDE [prod_short](includes/prod_short.md)] is regularly updated with major and minor releases. These updates provide customers with a business application that is always compliant, secure, and enriched with new platform and application functionality. Often customers choose [!INCLUDE [prod_short](includes/prod_short.md)] because of this promise of having an always up-to-date business solution.  
 
 To not break this promise, developers that bring apps to Microsoft AppSource, and resellers that provide PTEs to respond to the unique needs of customers, have a responsibility to align their code to the Microsoft release rhythm.  
+
+The following diagram illustrates the time for how updates roll out for [!INCLUDE [prod_short](includes/prod_short.md)] online and how you can use previews to test your apps ahead of time:
+
+:::image type="content" source="../media/update-rollout-timeline-preview.png" alt-text="Timeline for preview environments and major updates":::
 
 An inability for Microsoft to update tenants because of publishers incompatible code causes serious disruption in the service and must be avoided since it impacts the trustworthiness of the service and customer satisfaction.  
 
@@ -30,7 +34,7 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Information about what will be deprecated
 
-    With all [!INCLUDE [prod_short](includes/prod_short.md)] releases, Microsoft controls and regulates breaking changes with major releases and [communicates upcoming breaking changes](../upgrade/deprecated-features-w1.md) at least one year in advance. If developers missed this above info, the compiler in Visual Studio Code also [warns for potential controls that will become obsolete](analyzers/appsourcecop-as0074.md) in future versions and how to deal with them.  
+    With all [!INCLUDE [prod_short](includes/prod_short.md)] releases, Microsoft controls and regulates breaking changes with major releases and [communicates upcoming breaking changes](../upgrade/deprecated-features-w1.md) at least one year in advance. If developers missed this above info, the compiler in Visual Studio Code also [warns for potential controls that will become obsolete](analyzers/appsourcecop-as0074.md) in future versions and how to deal with them. Use the analyzers actively to make sure your code is ready for the next update.  
 
 - Policy definitions and terms
 
@@ -98,9 +102,9 @@ This section describes the processes that are initiated during and after upgrade
 
     If this wind-down period is initiated, and the customer was able to fix the incompatible issues with their reseller and potential publishers, it will be at Microsoft discretion if the publisher's code will be removed from [!INCLUDE [prod_short](includes/prod_short.md)] or not.  
 
-### Get notified about incompatibilities by Microsoft
+## Get notified about incompatibilities by Microsoft
 
-It is crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the above process:  
+It is crucial for you to keep contact details correctly up to date. We advise you to use global team aliases instead of individual mail addresses. Here are the mail addresses that we'll use in the process that is described in the [When apps or PTEs cannot be updated by Microsoft](#when-apps-or-ptes-cannot-be-updated-by-microsoft) section:  
 
 - PTE publishers
 
@@ -121,3 +125,4 @@ It is crucial for you to keep contact details correctly up to date. We advise yo
 [Microsoft Responsibilities for Apps on Business Central online](../deployment/microsoft-responsibilities.md)  
 [Technical Support for Business Central online](../technical-support.md)  
 [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
+[Major Updates and Minor Updates for Business Central Online](../administration/update-rollout-timeline.md)  

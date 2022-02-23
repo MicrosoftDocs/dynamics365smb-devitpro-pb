@@ -59,39 +59,32 @@ Use the GitHub forum to post questions about Visual Studio Code and AL Language 
 Join the conversation about Business Central for partners on Yammer: [aka.ms/BCYammer](https://aka.ms/bcyammer)  
 
 **Business Central Office Hours Calls**  
-Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from January 2021 throughout June 2021 below. Register for the live calls at [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours) and find on-demand recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficehoursRecordings). 
+Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from January 2021 throughout June 2021 below. Register for the live calls at [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours) and find on-demand recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficehoursRecordings).
 
 | Date      | Topic |
 |--------------|--------------|
-|Jan 12, 2021 | Customer Migration Tooling |
-|Jan 26, 2021 | Power Platform Integration - Power BI |
-|Feb 9, 2021 | Power Platform, Power Apps, and Dataverse (formerly known as CDS) |
-|Feb 23, 2021 | Performance Toolkit and Telemetry; How to deploy for performance |
-|Mar 9, 2021 | Integrating with Microsoft Teams |
-|Mar 23, 2021 | Business Central apps in AppSource |
-|April 7, 2021 | Rolling out 2021 Release Wave 1 |
-|April 20, 2021 | Environments in Business Central Online |
-|May 4, 2021 | Report Extensibility |
-|May 18, 2021 | Snapshot Debugging (in production and troubleshooting in general) |
-|June 1, 2021 | Performance Toolkit |
-|June 15, 2021 | Working with Dimensions |
-|June 29, 2021 | DevOps Processes for Per Tenant Extensions | 
-|August 17, 2021 | Business Central apps in AppSource |
-|August 31, 2021 | Cloud Migration |
-|September 14, 2021 | How to use OAuth, when calling Business Central APIs and web services |
-|October 12, 2021 | Business Central apps in AppSource |
-|November 9, 2021 |  Improvements to data synchronization to Dataverse and Dynamics 365 Sales| 
-|November 30, 2021 | Can Business Central Online (SaaS) handle large customers?|
+|March 8, 2022 | Business Central apps in AppSource|
+|February 22, 2022 |  How to use OAuth, when calling Business Central APIs and web services| 
+|February 1, 2022 | How we secure your data in Business Central|
+|January 11, 2022 | Universal Code Initiative |
+|December 14, 2021 | Performance Toolkit and Profiler|
 |December 7, 2021 | Using telemetry to improve your partner practices and processes |
-|December 14, 2021 |  Performance Toolkit and Profiler| 
-|January 11, 2021 | Universal Code Initiative |
-|February 1, 2021 | How we secure your data in Business Central| 
-  
+|November 30, 2021 | Can Business Central Online (SaaS) handle large customers?|
+|November 9, 2021 |  Improvements to data synchronization to Dataverse and Dynamics 365 Sales|
+|October 12, 2021 | Business Central apps in AppSource |
+|September 14, 2021 | How to use OAuth, when calling Business Central APIs and web services|
+|August 31, 2021 | Cloud Migration |
+|August 17, 2021 | Business Central apps in AppSource |
+|June 29, 2021 | DevOps Processes for Per Tenant Extensions | 
+|June 15, 2021 | Working with Dimensions |
+|June 1, 2021 | Performance Toolkit |
+
+
 **Business Central Localization Apps Office Hours Calls**  
 Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. Register for the calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
 
  > [!NOTE]  
- > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register before the call, you can register at any point after the call and then watch the recording. 
+ > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register prior to the call, you can always find the office hours recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
 
 ## Social
 

@@ -56,8 +56,8 @@ The following tasks are *not* available to the delegated administrator:
     Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.
 
 - Access a web service by using a Web Service Access key.
-   
-    Usage of Web Service Access key is being deprecated. Find out more [here](../upgrade/deprecated-features-w1.md#accesskeys).
+
+    Usage of Web Service Access key is deprecated in 2022 release wave 1. Find out more [here](../upgrade/deprecated-features-platform.md#accesskeys).
 
 ## Managing delegated permissions as a partner
 

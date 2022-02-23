@@ -24,7 +24,8 @@ When creating a name for your offer, you can use the following two naming struct
 
     *Example: QR Generator*  
 
-
+> [!NOTE]  
+> The name of your app can not exceed 50 characters.
 
 **How to create a strong app name for your offer**:
 
