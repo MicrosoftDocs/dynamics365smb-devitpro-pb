@@ -69,5 +69,5 @@ Occurs when a deadlock occurs.
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)  
+[Database Lock Timeout Telemetry](telemetry-database-locks-trace.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
