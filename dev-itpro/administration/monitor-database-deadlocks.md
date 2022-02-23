@@ -18,6 +18,7 @@ Deadlocks can prevent users from completing tasks in the [!INCLUDE[prod_short](.
 For general information about deadlocks, see [Detecting and Ending Deadlocks](/previous-versions/sql/sql-server-2008-r2/ms178104(v=sql.105)).
 
 ## Setting Up Deadlock Logging
+
 Setting up deadlock logging requires you to configure the SQL Server instance and the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 **Note:**  If you installed the [!INCLUDE[server](../developer/includes/server.md)] and database components by using the **Install Demo** option in the [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)], then deadlock logging is set up by default.   
