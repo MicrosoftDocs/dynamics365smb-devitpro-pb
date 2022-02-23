@@ -21,4 +21,4 @@
 | RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](../administration/telemetry-webservices-outgoing-trace.md) |
 | RT0020 | Web service key request| [Authentication with Web Service Key succeeded: {endpoint}](../administration/telemetry-webservices-access-key-trace.md#succeeded) |
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](../administration/telemetry-webservices-access-key-trace.md#failed) |
-| RT0028 | Deadlock |Deadlock||
+| RT0028 | Performance | [Database deadlock occurred](../administration/telemetry-database-deadlocks-trace.md#database-deadlock-occured) | 
