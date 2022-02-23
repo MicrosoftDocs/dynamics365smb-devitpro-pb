@@ -16,7 +16,7 @@ When you create a new report, there are two tasks main tasks. First, you define 
 
 ## Create a simple Excel layout report
 
-The following example extends the **Customer List** report only by adding a `rendering` section, which adds a new Excel layout to the list of options for printing the **Customer List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report and can then be modeled by using Excel reporting capabilities.
+The following example extends the **Customer List** report only by adding a `rendering` section, which adds a new Excel layout to the list of options for printing the **Customer List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report and can then be modeled by using Excel reporting capabilities. The example uses the [Type Property](properties/devenv-type-property.md) to set the type of report to `Excel` and it uses the [LayoutFile Property](developer/properties/devenv-layoutfile-property.md) to specify the name of the file that contains the Excel layout. If this is not present, it will be generated.
 
 1. Create a new report extension of the **Customer List** page by adding the following lines of code: 
 
