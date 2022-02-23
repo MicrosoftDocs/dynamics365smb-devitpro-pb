@@ -47,10 +47,10 @@ Occurs when a deadlock occurs.
 |---------|-----|
 |eventId|**RT0028**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the running AL object ran the transaction that was victim of the deadlock. |
-|alObjectName|Specifies the name of the running AL object ran the transaction that was victim of the deadlock.|
-|alObjectName|Specifies the name of the running AL object ran the transaction that victim of the deadlock.|
-|alObjectType|Specifies the type of the running AL object that ran the transaction that was victim of the deadlock, such as a page or report. |
+|alObjectId|Specifies the ID of the AL object that ran the transaction that was victim of the deadlock. |
+|alObjectName|Specifies the name of the AL object that ran the transaction that was victim of the deadlock.|
+|alObjectName|Specifies the name of the AL object that ran the transaction that victim of the deadlock.|
+|alObjectType|Specifies the type of the AL object that ran the transaction that was victim of the deadlock, such as a page or report. |
 |alStackTrace|The stack trace in AL.|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company.|
