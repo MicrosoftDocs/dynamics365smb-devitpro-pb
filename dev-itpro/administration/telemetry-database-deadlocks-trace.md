@@ -28,7 +28,7 @@ As a partner or developer, this telemetry provides several benefits:
   - Database lock trace telemetry. For more information, see [Database lock trace telemetry](telemetry-database-locks-trace.md).
 
 > [!IMPORTANT]
-> For Business Central on-premises, you must turn on the EnableDeadlockMonitoring setting of the [!INCLUDE[server](../developer/includes/server.md)] instance to collect the telemetry.  For more information, see [Configuring Business Central Server](configure-server-instance.md).
+> For Business Central on-premises, you must turn on the EnableDeadlockMonitoring setting of the [!INCLUDE[server](../developer/includes/server.md#Database)] instance to collect the telemetry.  For more information, see [Configuring Business Central Server](configure-server-instance.md).
 
 ## Database deadlock occurred
 
