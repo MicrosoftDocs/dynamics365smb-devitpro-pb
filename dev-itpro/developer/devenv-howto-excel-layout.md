@@ -16,7 +16,7 @@ When you create a new report, there are two tasks main tasks. First, you define 
 
 ## Create a simple Excel layout report
 
-The following example extends the **Customer List** report only to add a `rendering` section, which adds a new Excel layout to the list of options for printing the **Customer List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report. 
+The following example extends the **Customer List** report only by adding a `rendering` section, which adds a new Excel layout to the list of options for printing the **Customer List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report and can then be modeled by using Excel reporting capabilities.
 
 1. Create a new report extension of the **Customer List** page by adding the following lines of code: 
 
@@ -32,10 +32,11 @@ The following example extends the **Customer List** report only to add a `render
             }
         }
     }
-    ```    
-2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package** and the `MyExcelCustomerList.xlsx` will be generated for you in the right pane of Visual Studio Code. 
-1. Right-click the file, and choose **Reveal in File Explorer**. This will open File Explorer.
-1. Choose the `MyExcelCustomerList.xlsx` file, and then open it in Excel.
+    ```
+
+2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package**. The `MyExcelCustomerList.xlsx` will be generated, as you can see in the right pane of Visual Studio Code. 
+1. Right-click the generated `MyExcelCustomerList.xlsx` file, and choose **Reveal in File Explorer**. This will open File Explorer.
+1. Choose the `MyExcelCustomerList.xlsx` file in File Explorer, and right-click it to open it in Excel.
 1. Make change <!-- todo -->
 1. Back in Visual Studio Code, press **Ctrl+F5** to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].
 1. Now, search for **Customer List** report, and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
@@ -48,3 +49,9 @@ The following example extends the **Customer List** report only to add a `render
 [Report Object](devenv-report-object.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[DefaultRenderingLayout Property](developer/properties/devenv-defaultrenderinglayout-property.md)  
+[ExcelLayout Property](developer/properties/devenv-excellayout-property.md)  
+[LayoutFile Property](developer/properties/devenv-layoutfile-property.md)  
+[MimeType Property](developer/properties/devenv-mimetype-property.md)  
+[Summary Property](developer/properties/devenv-summary-property.md)  
+[SummaryML Property](developer/properties/devenv-summaryml-property.md)
