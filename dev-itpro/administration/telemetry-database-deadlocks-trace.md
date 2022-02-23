@@ -20,8 +20,8 @@ The database deadlock telemetry gathers information about deadlocks that happen.
 
 As a partner or developer, this telemetry provides several benefits:
 
-- Makes you aware that there are deadlocks happening
-- Let's you identify who was the victim in deadlock situations
+- Makes you aware that there are deadlocks happening.
+- Let's you identify who was the victim in deadlock situations.
 - In some deadlock problems, the process that is the victim and the process that succeeds will change by chance. In these cases, both will be stored in the telemetry resource as different deadlock events.
 - For further monitoring and troubleshooting, this telemetry is complimented by other features like:
   - Enable SQL database deadlock monitoring on a sandbox or on-premises environment. For more information, see [Monitoring SQL Database Deadlocks](monitor-database-deadlocks.md).
