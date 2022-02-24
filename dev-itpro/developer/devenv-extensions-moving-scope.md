@@ -17,19 +17,18 @@ This topic describes the different options you have for moving an app from one s
 
 For a definition of the different extension types and their scope, see [Extension Types and Scope](devenv-extension-types-and-scope.md).
 
-
 ## Moving a PTE to AppSource
 
 Scenario: You have deployed your extension for selected customers as a PTE and are now aiming at covering more markets by deploying it as an AppSource app.
 
-### Identity requirements
+### Identity requirements for the PTE
 
 - Changing the App ID 
   - This means that the data won't be available anymore, see below.
-  - This means that dependent extensions will need to be updated to use the new App ID in their `app.json` file.
+  - This means that dependent extensions will need to be updated to use the new app ID in their `app.json` file.
 - Changing the name, publisher, or version to make sure that there is no PTE and an AppSource with same name, publisher, and version.
 
-### AppSource requirements
+### AppSource requirements for the PTE to become an AppSource app
 
 - Changing the ID of all objects to be in the AppSource range. PTEs are using a different range.
 - Use affixes, except for PTEs, they are not required to use affixes.
@@ -48,21 +47,54 @@ Scenario: You have deployed your extension for selected customers as a PTE and a
 
 Scenario: You are done developing a new offer or a new version of an existing offer and are now ready to make it available for all your customers in SaaS.
 
-> []  
+> [!NOTE]  
 > When publishing to AppSource, it is recommended to enable the AppSourceCop analyzer. For more information, see [AppSourceCop](analyzers/appsourcecop.md).
 
-### Identity requirements
+### Identity requirements for the DEV extension
 
 - Changing the version of the app before submitting to AppSource.
 - Or, unpublishing the DEV extension before submitting to AppSource.
 
-### AppSource requirements
+### AppSource requirements for the DEV extension to become an AppSource app
 
 - Make sure that the ID of all objects to be in the AppSource range (DEVs don't have range limitation)
 - Use affixes (DEVs are not required to use affixes)
 - Full list:
   - [Technical Validation Checklist](devenv-checklist-submission.md)
   - [Marketing Validation Checklist](readiness/readiness-checklist-marketing.md)
+
+
+## Publishing an AppSource app as a DEV extension
+
+Scenario: Showing a preview of an app to a customer or developing the next version of the app.
+
+Publishing an AppSource app to a sandbox environment as DEV extension is common scenario when you want to show a previews of your app to a customer or during active development.
+
+There are few requirements that every AL developer should have in mind when publishing an AppSource app as a DEV extension.
+
+- DEV extensions should have different IDs because there might be other global apps published to your service and they will collide.
+- A DEV extension cannot replace an AppSource app if another AppSource app depends on that particular AppSource app. If you want to achieve such functionality the whole chain of dependencies should be published as non-global apps (PTE or DEV).  
+    > [!IMPORTANT]  
+    > It is highly recommended to not try to replace an AppSource app.
+
+DEV extensions, as the name presumes, are used for development purposes and this is the reason why you can control their lifecycle (publish, install, upgrade, and more). Many AL developers use DEV extensions to test their global apps and we highly advise them to not use the same app ID as their (future) AppSource app. Testing scenarios might include replacing one or more AppSource apps in your chain of dependencies with DEV extensions, however every AL developer should have in mind that the system doesn't allow replacement of AppSource app with DEV extension if another AppSource app depend on the first AppSource app. 
+
+### Identity requirements for the AppSource app to become a DEV extension
+
+There are no specific identity requirements.
+
+## Moving a DEV extension to a PTE
+
+Scenario: Deploying your app to a production environment.
+
+### Identity requirements for moving a DEV extension to a PTE
+
+No specific identity requirements.
+
+### PTE requirements
+
+Enabling the [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md)
+
 
 
 ## See Also
