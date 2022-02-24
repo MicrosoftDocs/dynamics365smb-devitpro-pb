@@ -28,7 +28,7 @@ It is not allowed to change the return type of a public procedure that was publi
 Adding a return type is allowed by this rule, but is validated by [AS0102](appsourcecoup-as0102.md).
 
 > [!NOTE]  
-> This rule also covers the cases related to the [TryFunction](../methods/devenv-tryfunction-attribute.md) attribute which implicitly defines a Boolean return type. 
+> This rule also covers the cases related to the [TryFunction](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute) attribute which implicitly defines a Boolean return type. 
 
 ## How to fix this diagnostic?
 

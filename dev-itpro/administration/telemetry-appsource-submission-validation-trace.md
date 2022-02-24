@@ -15,7 +15,7 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.4, and later
 
-When you submit an app to AppSource using Partner Center, it starts an automated validation process. This technical validation process ensures the extensions in the app meet the technical requirements for going live. It goes through many of the same checks described in [technical validation](https://aka.ms/CheckBeforeYouSubmit).
+When you submit an app to AppSource using Partner Center, it starts an automated validation process. This technical validation process ensures the extensions in the app meet the technical requirements for going live. It goes through many of the same checks described in [technical validation](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission).
 
 If an app's set up for it, telemetry traces are emitted to and recorded in Application Insights. The data provides details about the success or failure of different phases of the validation. For more information about setting up telemetry for an app, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
@@ -40,7 +40,7 @@ Extensions are validated using the AL compiler and the [AppSourceCop code analyz
 10. *Repeat 2-8 for other Business Central releases targeted by the submission*
 11. AppSource submission validation request completed (successfully or with failures)
 
-To reduce the risk of failing the AppSource validation process, review the [technical validation](https://aka.ms/CheckBeforeYouSubmit) checklist before you submit an app.
+To reduce the risk of failing the AppSource validation process, review the [technical validation](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission) checklist before you submit an app.
 
 ## <a name="validationrequeststarted"></a>AppSource submission validation request started
 
@@ -359,4 +359,4 @@ Occurs when the submission validation process has fully completed, but errors oc
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]  
+[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]
