@@ -35,7 +35,7 @@ Refers to the name of the query column. The name of a query column is specified 
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The query column name.
 
 

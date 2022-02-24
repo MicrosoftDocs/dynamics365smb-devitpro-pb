@@ -29,7 +29,7 @@ Finds a record in a table that is based on the values stored in keys.
 An instance of the [Record](record-data-type.md) data type.  
 
 *[Optional] Which*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies how to perform the search. The table is searched until either a record  is found or there are no more records. Each character in this string can be present only one time. You can combine the '=', '\<', and '\>' characters. You can use the following characters:
 -   =  to search for a record that equals the key values (default)
 -  \>  to search for a record that is larger than the key values
