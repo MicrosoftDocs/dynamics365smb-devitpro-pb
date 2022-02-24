@@ -29,11 +29,11 @@ Sets the value of the specified attribute or creates it if is not part of the co
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The fully qualified name of the attribute to set.
         
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value to set for the attribute.  
 
 
