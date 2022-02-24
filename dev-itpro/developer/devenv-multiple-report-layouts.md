@@ -12,9 +12,9 @@ ms.author: solsen
 
 # Defining multiple report layouts
 
-In AL you have the option of defining multiple layouts for one report. This applies to both report objects, and report extension objects. The layouts can be of different types, meaning that you can have, for example, a Word layout and an Excel layout for one report, or multiple Excel layouts for one report.
+In AL you have the option of defining multiple layouts for one report in code. This means that you can offer multiple versions of a layout for different purposes. It applies to both report objects, and report extension objects. The layouts can be of different types, meaning that you can have, for example, a Word layout and an Excel layout for one report, or multiple Excel layouts for one report.
 
-To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one more more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a caption and a summary which will be displayed to the user in the **Report Layout Selection** <!--check--> page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If you do not specify a caption, the layout name will be displayed to the user. <!-- localizable-->
+To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property]() and a [Summary Property]() which will be displayed to the user in the **Report Layout Selection** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If you do not specify a caption, the layout name will be displayed to the user. If the extensions is translated, these properties will be included in the .xliff file and translated as well. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
 
 The `defaultLayout` property does not apply to the multiple layouts functionality. Instead, you must use the `defaultRenderingLayout` property to specify which of the defined layouts is the default.
 
