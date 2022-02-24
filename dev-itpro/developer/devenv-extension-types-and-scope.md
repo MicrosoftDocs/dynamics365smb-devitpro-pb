@@ -35,28 +35,32 @@ Global apps can only depend on other global apps.
 
 ### Environment types
 
-They can exist in PROD and Sandbox environments.
+Global apps can exist in PROD and in sandbox environments.
 
 #### How to install them
-	- From the AppSource marketplace, click on 'Contact Me', 'Free Trial', or 'Get It Now' and follow the steps.
-	- From the Extension Management page, you can navigate to the AppSource embed view, find the app and install it.
-	-  Installing and Uninstalling Extensions in Business Central - Business Central | Microsoft Docs 
-	
-Note: You need to check that the app is available for the country/region of your environment.
+
+- From the AppSource marketplace, choose **Contact Me**, **Free Trial**, or **Get It Now** and follow the steps.
+- From the **Extension Management** page in Business Central, you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central]().
+
+> [!NOTE]  
+> You must check that the app is available for the country/region of your environment.
 
 ### Behavior on environment upgrade
 
-Global apps are preserved on upgrade for both PROD and Sandboxes
+Global apps are preserved on upgrade for both PROD and sandboxes.
 
 #### AppSource apps
-	- AppSource apps are never uninstalled unless they are preventing the tenant to upgrade as documented here: Maintain AppSource apps and per-tenant extensions - Business Central | Microsoft Docs
-	- AppSource apps are updated to the latest version during upgrades to a new Business Central major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher.
+
+- AppSource apps are never uninstalled unless they are preventing the tenant to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md).
+- AppSource apps are updated to the latest version during upgrades to a new Business Central major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher.
 
 #### Microsoft apps
-	- Microsoft apps are always updated to the latest compatible version during upgrades to a new Business Central version.
+
+- Microsoft apps are always updated to the latest compatible version during upgrades to a new Business Central version.
 
 #### Embed apps
-	- Embed apps behavior is controlled by the partner deploying the apps.
+
+- Embed apps behavior is controlled by the partner deploying the apps.
 
 
 ## See Also
