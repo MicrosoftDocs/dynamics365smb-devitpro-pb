@@ -42,7 +42,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Discover the features for 2022 release wave 1**  
-Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
+Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/planned-features).
 
 **o	Use secondary read-only database for Power BI reporting**  
 Please note that with newest Power BI Desktop update (expected in late February 2022) all new Business Central Power BI reports will be now sourced from a secondary, read-only database. This leaves the main database ready for transactions, which enhances performance of the system. This feature is part of the Power BI connector for Business Central. After updating Power BI Desktop this feature it's enabled by default for all new reports but turned off for existing reports. Read more [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-secondary-read-only-database-power-bi-reporting).
@@ -58,4 +58,4 @@ To ensure no disruptions in integration between Business Central and Dataverse y
 Although change will happen in March 2022, we strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
 
 **Join Directions NA on April 3-6, 2022**  
-Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536).   
+Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536).
