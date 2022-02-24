@@ -31,13 +31,13 @@ author: SusanneWindfeldPedersen
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *[Optional] PageCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value to set for the FilterPageBuilder UI caption.  
 
 
 ## Return Value
 *[Optional] PageCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The current value of the FilterPageBuilder UI caption.
 
 

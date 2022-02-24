@@ -29,14 +29,14 @@ Adds a table field to the filter control for a table on filter page.
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The name of the table field to add to the filter control for a table.
         
 *[Optional] Filter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A default filter on the field that is specified by the Field parameter.  
 
 

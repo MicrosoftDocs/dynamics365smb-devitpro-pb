@@ -29,7 +29,7 @@ Adds a table field to the filter control for a table on the filter page.
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
         
 *FieldNo*  
@@ -37,7 +37,7 @@ The name that is assigned to the table in the filter control. This value must ma
 The number that is assigned to the field in the table as specified by the Field No. Property.
         
 *[Optional] Filter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A default filter on the field that is specified by the Field parameter.  
 
 
