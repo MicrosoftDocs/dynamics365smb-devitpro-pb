@@ -38,7 +38,7 @@ Scenario: You have deployed your extension for selected customers as a PTE and a
     
 <!-- the same extension cannot be installed as a pte and global on an env. Object name will collied -->
 
-### Other information
+### Other information about the PTE
 
 > If you want to move the data by having the two apps installed side-by-side, then you must ensure that the two apps (AppSource and PTE) can be installed side-by-side. For this, they must not share any object names nor IDs.  
 > All dependent extensions will have to be updated to use the new App ID in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
@@ -92,7 +92,7 @@ Scenario: Deploying your app to a production environment.
 
 No specific identity requirements.
 
-### PTE requirements
+### PTE requirements for moving the DEV extension
 
 Enabling the [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md).
 
@@ -107,12 +107,12 @@ Scenario: Reducing the availability of your app to select customers.
   - This means that dependent extensions will need to be updated to use the new App ID in their `app.json` file.
   - If deprecating the offer, see [Discontinuing an AppSource app](devenv-app-discontinue.md).
 
-## PTE requirements
+## PTE requirements for moving the AppSource app
 
 - Changing the ID of all objects to be in the PTE range (AppSource apps are using a different range)
 - [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md)
 
-## Other information
+## Other information about the AppSource app
 
 - Even if you stop distributing the offer in Partner Center, the app still exists in Business Central and the App ID remains reserved for it. It then cannot be attributed to the PTE.
 - If you want to move the data by having the two apps installed side-by-side, then you must ensure that the two apps (AppSource and PTE) can be installed side-by-side. For this, they must not share any object names nor IDs.
