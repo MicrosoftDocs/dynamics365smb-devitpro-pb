@@ -24,7 +24,7 @@ The `defaultLayout` property does not apply to the multiple layouts functionalit
 
 ## Layout definition in AL
 
-The following example illustrates how the `EmpReportExt` report extends the `"Employee - Phone Nos."` list by adding three report layouts as options for printing this report. The report extension only adds the layouts, the dataset is the same as the existing report. 
+The following example illustrates how the `EmpReportExt` report extends the `"Employee - Phone Nos."` list by adding three report layouts as options for printing this report. The report extension only adds the layouts, the dataset is the same as the existing report, which gives the possibility to package report layouts as extensions.
 
 ```al
 reportextension 50102 EmpReportExt extends "Employee - Phone Nos."
@@ -57,8 +57,8 @@ reportextension 50102 EmpReportExt extends "Employee - Phone Nos."
 }
 ```
 
-<!-- not use old and new at same time -->
-<!-- new code action-->
-<!-- allows packaging as extensions -->
-
 ## See also
+
+[Creating an Excel Layout Report](devenv-howto-excel-layout.md)  
+[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word Layout Report](devenv-howto-report-layout.md)
