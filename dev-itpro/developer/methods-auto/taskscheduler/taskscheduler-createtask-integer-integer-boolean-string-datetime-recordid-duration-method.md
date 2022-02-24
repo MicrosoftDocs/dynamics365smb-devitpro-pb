@@ -37,7 +37,7 @@ Specifies the ID of the codeunit to run.
 Sets the task to the ready state. A task cannot run unless it is ready.
           
 *Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the company to run the task for. If you do not specify a company, the task will run in the user’s current company.
           
 *NotBefore*  
@@ -68,4 +68,4 @@ Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more i
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)  
+[Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)

@@ -29,13 +29,13 @@ Path :=   System.ExportEncryptionKey(Password: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Password*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the password for the encryption key file.  
 
 
 ## Return Value
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A temporary filepath to where the key is exported.
 
 
