@@ -25,7 +25,7 @@ Error :=   ErrorInfo.Create(Message: String [, Collectible: Boolean] [, var Reco
 ```
 ## Parameters
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The error message.  
 *[Optional] Collectible*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -40,7 +40,7 @@ A field number that the error relates to. This parameter is optional.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 A page that the error relates to. This parameter is optional.  
 *[Optional] ControlName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A control name that the error relates to. This parameter is optional.  
 *[Optional] Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  

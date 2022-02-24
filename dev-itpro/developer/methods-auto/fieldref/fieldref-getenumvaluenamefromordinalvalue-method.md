@@ -35,7 +35,7 @@ The Enum value's ordinal value to get the Enum value (or Option member) name for
 
 ## Return Value
 *The Enum value name or empty if the ordinal value doesn't exist*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The Enum value name.
 
 
