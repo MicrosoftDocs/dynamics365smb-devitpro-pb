@@ -31,7 +31,7 @@ Exports a binary large object (BLOB) to a file.
 An instance of the [Blob](blob-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and name of the BLOB that you want to export. When you enter the path, consider these shortcuts:
 -   You can omit the drive letter if the command is located on the current drive.
 -   You can omit the full path if the command is located in the current directory.
@@ -41,7 +41,7 @@ The path and name of the BLOB that you want to export. When you enter the path, 
 
 ## Return Value
 *[Optional] ExportName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the created file.
 
 
