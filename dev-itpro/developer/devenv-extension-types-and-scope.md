@@ -111,6 +111,16 @@ The `resourceExposurePolicy` applies differently to DEV extensions. For more inf
 <!-- allow download property is the only property which is effective from the policy set in the manifest and the rest of properties are set to true 
 Apps published as dev extensions ignore the resource exposure policy settings.-->
 
+## Constraints on extension types
+
+In general, extensions are uniquely defined by their App ID. A specific version of an app is defined by the App ID and Version, adding Environment for per-tenant extensions. However, due to some current limitations in our service, some scenarios are not supported when extensions have a different App ID, but have the same Name, Publisher, and Version.
+
+- It is not possible to deploy an AppSource app and a PTE with the same App ID. During the upload of a PTE, we are validating that there is not an AppSource app with the same App ID. Currently, the AppSource validation process allows you to upload an app with the same App ID as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
+
+- It is not possible to deploy an AppSource app and a DEV extension with the same App ID and version. When deploying the DEV version of an AppSource app from Visual Studio code to a sandbox environment, e.g., for development or troubleshooting, you must make sure that your DEV extension has a different version than what is published to AppSource. Similarly, after you are done developing/testing your extension, you should increase the version before submitting to AppSource.
+
+- It is not possible to have an AppSource app and a PTE or DEV extension with the same name, publisher and version. Due to some current limitations in our service, some scenarios are not supported when extensions have a different App ID, but the same Name, Publisher and Version. 
+
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
