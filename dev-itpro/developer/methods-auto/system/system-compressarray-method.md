@@ -27,7 +27,7 @@ Moves all non-empty strings (text) in an array to the beginning of the array. Th
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *StringArray*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The string array that you want to compress.  
 
 
