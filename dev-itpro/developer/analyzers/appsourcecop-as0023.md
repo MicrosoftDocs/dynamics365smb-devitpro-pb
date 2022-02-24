@@ -25,7 +25,7 @@ A return type cannot be modified in external procedures.
 
 This rule validates that the return type of a public procedure has not been changed in a way that would break the compilation of dependent extensions.
 It is not allowed to change the return type of a public procedure that was published with a return type in a previous version.
-Adding a return type is allowed by this rule, but is validated by [AS0102](./appsourcecoup-as0102.md).
+Adding a return type is allowed by this rule, but is validated by [AS0102](appsourcecop-as0102.md).
 
 > [!NOTE]  
 > This rule also covers the cases related to the [TryFunction](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute) attribute which implicitly defines a Boolean return type. 
