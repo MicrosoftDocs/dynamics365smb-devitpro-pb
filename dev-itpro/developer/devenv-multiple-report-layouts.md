@@ -24,8 +24,10 @@ The `defaultLayout` property does not apply to the multiple layouts functionalit
 
 ## Layout definition in AL
 
+The following example illustrates how the `EmpReportExt` report extends the `"Employee - Phone Nos."` list by adding three report layouts as options for printing this report. The report extension only adds the layouts, the dataset is the same as the existing report. 
+
 ```al
-reportextension 50102 MySecondList extends "Employee - Phone Nos."
+reportextension 50102 EmpReportExt extends "Employee - Phone Nos."
 {
     rendering
     {
