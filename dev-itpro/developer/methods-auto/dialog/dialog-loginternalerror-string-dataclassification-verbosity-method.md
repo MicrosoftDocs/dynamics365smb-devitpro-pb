@@ -29,7 +29,7 @@ Log internal errors for telemetry.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This string contains the text of the error message you want to log into telemetry. It is not what the user will get, they will only get a generic error message.
         
 *DataClassificationInstance*  
