@@ -37,7 +37,7 @@ Global apps can only depend on other global apps.
 
 Global apps can exist in PROD and in sandbox environments.
 
-#### How to install them
+#### How to install
 
 - From the AppSource marketplace, choose **Contact Me**, **Free Trial**, or **Get It Now** and follow the steps.
 - From the **Extension Management** page in Business Central, you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central]().
@@ -62,6 +62,29 @@ Global apps are preserved on upgrade for both PROD and sandboxes.
 
 - Embed apps behavior is controlled by the partner deploying the apps.
 
+## Per-Tenant Extensions (PTEs)
+	
+These apps are unique per environment. Per-tenant extensions are uniquely defined by their App ID, version, and environment. 
+
+<!-- kberes: Maybe we should define the term Environment that we all mean the same. -->
+
+You can deploy multiple PTEs with the same App ID and version, but different content to multiple environments. This might, however, cause you additional overhead when managing these environments.
+	
+You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You may also choose to force sync a PTE.
+	
+PTE can have dependencies on Global apps, on other PTEs, or on DEV extensions.
+	
+### Environment types
+	
+PTEs can exist in PROD and sandbox environments.
+	
+### How to install
+
+From the **Extension Management** page in Business Central, you must upload the .app file. For more information, see [Installing and Uninstalling Extensions in Business Central](). <!-- publishing a pte is different on-prem -->
+	
+### Behavior on upgrade
+
+PTEs are never uninstalled from a PROD environment, unless they are preventing the environment to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data is not removed. And they can be upgraded to a newer version if a newer version has been staged on upgrade from the **Extension Management** page.
 
 ## See Also
 
