@@ -35,7 +35,7 @@ The index of the field that you want to get the options from. This parameter is 
 
 ## Return Value
 *Result*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The options for a field on a test page.
 
 

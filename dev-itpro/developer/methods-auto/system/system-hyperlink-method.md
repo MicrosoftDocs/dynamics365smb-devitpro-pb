@@ -27,7 +27,7 @@ Passes a URL as an argument to an Internet browser, such as Windows Internet Exp
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *URL*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
  A URL that is passed to the Internet browser as an argument.  
 
 
