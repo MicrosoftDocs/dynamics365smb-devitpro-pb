@@ -29,13 +29,13 @@ ReportParameters :=   Report.RunRequestPage([PageParameters: String])
 An instance of the [Report](report-data-type.md) data type.  
 
 *[Optional] PageParameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string of request page parameters as XML to use to run the report.  
 
 
 ## Return Value
 *ReportParameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 XML string that contains the request page parameters that are entered on the request page
 
 

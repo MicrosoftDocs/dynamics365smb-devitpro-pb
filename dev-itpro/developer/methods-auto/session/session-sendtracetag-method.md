@@ -29,11 +29,11 @@ Send a trace tag to the telemetry service.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Tag*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The tag.
         
 *Category*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The category.
         
 *Verbosity*  
@@ -41,7 +41,7 @@ The category.
 The verbosity.
         
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The message.
         
 *[Optional] DataClassification*  

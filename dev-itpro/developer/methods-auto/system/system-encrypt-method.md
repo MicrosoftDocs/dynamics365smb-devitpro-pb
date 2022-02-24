@@ -27,13 +27,13 @@ EncryptedString :=   System.Encrypt(PlainTextString: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *PlainTextString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The input string that will be encrypted. The input string cannot exceed a length of 215 plain characters. If the input string includes special characters the length is even more reduced.  
 
 
 ## Return Value
 *EncryptedString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The output string that is encrypted.
 
 
