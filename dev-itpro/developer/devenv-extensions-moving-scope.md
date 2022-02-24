@@ -44,7 +44,25 @@ Scenario: You have deployed your extension for selected customers as a PTE and a
 > All dependent extensions will have to be updated to use the new App ID in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
 
 
+## Moving a DEV extension to AppSource
 
+Scenario: You are done developing a new offer or a new version of an existing offer and are now ready to make it available for all your customers in SaaS.
+
+> []  
+> When publishing to AppSource, it is recommended to enable the AppSourceCop analyzer. For more information, see [AppSourceCop](analyzers/appsourcecop.md).
+
+### Identity requirements
+
+- Changing the version of the app before submitting to AppSource.
+- Or, unpublishing the DEV extension before submitting to AppSource.
+
+### AppSource requirements
+
+- Make sure that the ID of all objects to be in the AppSource range (DEVs don't have range limitation)
+- Use affixes (DEVs are not required to use affixes)
+- Full list:
+  - [Technical Validation Checklist](devenv-checklist-submission.md)
+  - [Marketing Validation Checklist](readiness/readiness-checklist-marketing.md)
 
 
 ## See Also
