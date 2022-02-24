@@ -31,13 +31,13 @@ Gets or sets the value of the attribute.
 An instance of the [XmlAttribute](xmlattribute-data-type.md) data type.  
 
 *[Optional] NewValue*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new value of the attribute.  
 
 
 ## Return Value
 *[Optional] Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value of the attribute.
 
 
