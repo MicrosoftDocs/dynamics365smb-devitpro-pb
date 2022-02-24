@@ -480,7 +480,7 @@
 ### [Creating a Word Layout Report](developer/devenv-howto-report-layout.md)
 ### [Creating an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)  
 ### [Creating an Excel Layout Report](developer/devenv-howto-excel-layout.md)  
-### [Defining multiple report layouts](developer/devenv-multiple-report-layouts.md)
+### [Defining Multiple Report Layouts](developer/devenv-multiple-report-layouts.md)
 ### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 ### [Adding Barcodes](developer/devenv-report-add-barcodes.md)
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
