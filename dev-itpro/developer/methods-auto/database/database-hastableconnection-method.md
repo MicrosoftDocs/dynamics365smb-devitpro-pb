@@ -31,7 +31,7 @@ Ok :=   Database.HasTableConnection(Type: TableConnectionType, Name: String)
 Specifies the type of table connection as defined in the TableType property.
         
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the external table connection. You must already have registered a table connection with this name.  
 
 

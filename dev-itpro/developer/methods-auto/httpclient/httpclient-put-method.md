@@ -29,7 +29,7 @@ Sends a PUT request to the specified URI as an asynchronous operation.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path the request is sent to.
         
 *Content*  

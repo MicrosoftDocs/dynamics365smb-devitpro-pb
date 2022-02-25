@@ -29,7 +29,7 @@ Reads the JSON data from the string into a JsonToken variable.
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The String object from which the JSON data will be read.  
 
 

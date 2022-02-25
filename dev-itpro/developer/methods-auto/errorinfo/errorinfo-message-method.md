@@ -31,13 +31,13 @@ Specifies the message that will be sent to telemetry. For a 'Client' error type,
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.  
 
 *[Optional] Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The message of the ErrorInfo  
 
 
 ## Return Value
 *[Optional] Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The current message of the ErrorInfo.
 
 

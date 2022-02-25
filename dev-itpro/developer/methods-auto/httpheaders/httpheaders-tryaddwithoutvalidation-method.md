@@ -29,10 +29,10 @@ Adds the specified header and its value into the HttpHeaders collection. Doesn't
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The header to add to the collection.  
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The content of the header.  
 
 

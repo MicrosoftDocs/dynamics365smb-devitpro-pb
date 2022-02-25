@@ -25,15 +25,15 @@ XmlDocumentType :=   XmlDocumentType.Create(Name: String, PublicId: String, Syst
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string that contains the qualified name of the DTD, which is the same as the qualified name of the root element of the XML document.
         
 *PublicId*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string that contains the public identifier of an external public DTD.
         
 *SystemId*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string that contains the system identifier of an external private DTD.  
 
 

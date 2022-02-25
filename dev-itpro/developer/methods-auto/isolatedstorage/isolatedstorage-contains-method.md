@@ -25,7 +25,7 @@ HasValue :=   IsolatedStorage.Contains(Key: String [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The key to locate in the storage.
         
 *[Optional] DataScope*  

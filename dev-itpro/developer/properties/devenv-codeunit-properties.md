@@ -82,15 +82,15 @@ This topic lists properties that apply to the Codeunit object, variables, text c
 |[ID Property](./devenv-properties.md)|X|
 |[Local Property](./devenv-properties.md)|X|
 |[MethodType Property \(Upgrade Codeunits\)](./devenv-properties.md)|X|
-|[MethodType Property \(Test Codeunits\)](../methods/devenv-handlerfunctions-attribute.md)|X|
-|[HandlerMethods Property](../methods/devenv-handlerfunctions-attribute.md)|X|
+|[MethodType Property \(Test Codeunits\)](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute)|X|
+|[HandlerMethods Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute)|X|
 |[TransactionModel Property](./devenv-properties.md)|X|
-|[TryMethod Property](../methods/devenv-tryfunction-attribute.md)|X|
+|[TryMethod Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute)|X|
 |[Event Property](./devenv-properties.md)|X|
 |[EventMethod Property](./devenv-properties.md)|X|
 |[EventPublisherObject Property](./devenv-properties.md)|X|
 |[EventType Property](./devenv-properties.md)|X|
-|[GlobalVarAccess Property](../methods/devenv-integration-attribute.md)|X|
+|[GlobalVarAccess Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute)|X|
 |[IncludeSender Property](./devenv-properties.md)|X|
 |[EventPublisherElement Property](./devenv-properties.md)|X|
     

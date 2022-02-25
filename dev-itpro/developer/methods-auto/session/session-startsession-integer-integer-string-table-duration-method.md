@@ -33,7 +33,7 @@ The ID of the new session that is started. The ID is assigned to the SessionID v
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the codeunit to run when the session is started.  
 *Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
@@ -62,4 +62,4 @@ For information about how dialog boxes are handled in a background session, see 
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)  
+[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)

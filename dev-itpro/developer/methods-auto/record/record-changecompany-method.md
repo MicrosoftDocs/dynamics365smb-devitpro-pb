@@ -29,7 +29,7 @@ Redirects references to table data from one company to another.
 An instance of the [Record](record-data-type.md) data type.  
 
 *[Optional] CompanyName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the company to which you want to change. If you omit this parameter, you change back to the current company.
           
 

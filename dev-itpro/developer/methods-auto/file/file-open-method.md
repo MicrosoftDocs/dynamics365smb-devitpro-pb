@@ -33,7 +33,7 @@ Opens an ASCII or binary file. This method does not create the file if it does n
 An instance of the [File](file-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 *[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  

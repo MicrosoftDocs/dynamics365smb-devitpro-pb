@@ -33,7 +33,7 @@ Sets a password for the user iwith the given user security ID. If the given pass
 User security ID of the user for which to set the password.
         
 *Password*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The password to set for the user.  
 
 

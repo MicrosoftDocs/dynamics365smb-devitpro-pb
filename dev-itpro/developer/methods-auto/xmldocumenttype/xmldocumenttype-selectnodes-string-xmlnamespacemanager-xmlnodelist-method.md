@@ -29,7 +29,7 @@ Selects a list of nodes matching the XPath expression.
 An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The XPath expression.
         
 *NamespaceManager*  

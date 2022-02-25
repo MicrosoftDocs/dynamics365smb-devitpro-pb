@@ -31,7 +31,7 @@ ID :=   Database.UserId()
 
 ## Return Value
 *ID*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This string contains the value of the User Name field in table 2000000120, the User table, for the current user.
 
 
