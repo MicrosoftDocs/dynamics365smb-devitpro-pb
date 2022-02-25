@@ -31,13 +31,13 @@ Gets or sets the time zone property in a SessionSettings object.
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
 *[Optional] NewTimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the time zone property in the SessionsSettings object. The value must be a valid Windows time zone name, such as **UTC** or **Pacific Standard Time**.  
 
 
 ## Return Value
 *[Optional] TimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The time zone set in the SessionSettings object.
       
 
@@ -68,4 +68,4 @@ end;
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)  
+[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)

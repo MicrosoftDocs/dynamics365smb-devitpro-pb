@@ -31,11 +31,11 @@ Registers a table connection to an external database.
 Specifies the type of table connection as defined in the TableType property.
         
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the name of the connection in your code, or the name of the primary key field on the table.
         
 *Connection*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the connection to the external database.  
 
 

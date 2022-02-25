@@ -27,7 +27,7 @@ DisplayName :=   CompanyProperty.DisplayName()
 
 ## Return Value
 *DisplayName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The display name of the company as specified in the **Display Name** field in the **Company** table. If no display name is specified, the company name that is stored in the **Name** field is returned. 
 
 

@@ -29,11 +29,11 @@ Log internal errors for telemetry.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This string contains the text of the error message you want to log into telemetry. Use a percent sign (%) to insert a variable value into the string. Place the percent where you want the system to substitute the variable value. You may only insert one variable value. It is not what the user will get, they will only get a generic error message.
         
 *SubstitutionString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This string replaces a percent sign in the "Message" Parameter.
         
 *DataClassificationInstance*  

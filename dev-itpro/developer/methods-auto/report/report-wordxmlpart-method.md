@@ -42,7 +42,7 @@ The following example illustrates the same XML with the ExtendedFormat set to fa
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

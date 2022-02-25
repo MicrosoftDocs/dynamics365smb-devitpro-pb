@@ -29,7 +29,7 @@ Sets the internal subset for this Document Type Definition (DTD).
 An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string that contains the new internal subset for this Document Type Definition (DTD).  
 
 
