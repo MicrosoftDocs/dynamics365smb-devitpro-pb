@@ -3,7 +3,7 @@ title: "Caption Property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 02/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,7 @@ Sets the string that is used to identify a control or other object in the user i
 -   Report Column
 -   Enum Value
 -   Page View
+-   Report Layout
 -   Profile
 -   Enum Type
 -   Permission Set
