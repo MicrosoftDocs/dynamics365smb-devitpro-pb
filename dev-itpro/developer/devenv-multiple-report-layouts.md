@@ -16,7 +16,7 @@ In AL you have the option of defining multiple layouts for one report in code. T
 
 ## Enabling multiple layouts
 
-To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which will be displayed to the user in the **Report Layout Selection** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
+To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which will be displayed to the user in the **Report Layouts** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
 
 > [!NOTE]  
 > If you do not specify a caption, the layout name will be displayed to the user. 
@@ -32,28 +32,30 @@ reportextension 50102 EmpReportExt extends "Employee - List"
 {
     rendering
     {
-        layout(LayoutExcel)
-        {
-
-            Type = Excel;
-            Summary = 'Employee list sorted by last name in Excel';
-            LayoutFile = 'EmpSortedByLastName.xlsx';
-        }
-
         layout(LayoutExcelPivot)
         {
+
             Type = Excel;
+            Caption = 'ExcelPivot';
             Summary = 'Employee list shown in Pivot table in Excel';
             LayoutFile = 'EmpShownAsPivot.xlsx';
+        }
+
+        layout(LayoutExcel)
+        {
+            Type = Excel;
+            Caption = 'ExcelColumns';
+            Summary = 'Employee list sorted by last name in Excel';
+            LayoutFile = 'EmpSortedByLastName.xlsx';
         }
 
         layout(LayoutWord)
         {
             Type = Word;
+            Caption = 'WordList';
             Summary = 'Employee list sorted by last name in Word';
             LayoutFile = 'EmpSortedByLastName.docx';
         }
-
     }
 }
 ```
