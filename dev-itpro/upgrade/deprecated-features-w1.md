@@ -40,7 +40,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | The ability to use client secret Service-to-Service authentication to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse will be removed for online tenants hosted by Microsoft in March 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in client secret Service-to-Service authentication 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](https://go.microsoft.com/fwlink/?linkid=2167233). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
+|Removed | The ability to use client secret Service-to-Service authentication to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse will be removed for online tenants hosted by Microsoft in March 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in client secret Service-to-Service authentication 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/upgrade-certificate-based-service-to-service-authentication-dataverse-dynamics-365-integration). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
 
 ### Legacy Outlook add-in for synchronizing data
 
@@ -113,4 +113,4 @@ Some features are available only under specific circumstances, or not at all int
 
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)

@@ -31,13 +31,13 @@ Gets or sets the encoding of the XML document.
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
 
 *[Optional] NewValue*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new value for the encoding of the XML document.  
 
 
 ## Return Value
 *[Optional] Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The encoding of the XML document.
 
 

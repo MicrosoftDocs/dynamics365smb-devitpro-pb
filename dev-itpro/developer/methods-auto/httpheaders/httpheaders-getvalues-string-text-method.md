@@ -29,7 +29,7 @@ Gets the values for the specified key.
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The specified header.
         
 *Values*  

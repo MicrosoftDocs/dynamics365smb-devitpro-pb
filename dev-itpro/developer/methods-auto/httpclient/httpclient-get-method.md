@@ -29,7 +29,7 @@ Sends a GET request to get the resource identified by the request URL.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path the request is sent to.
         
 *Response*  

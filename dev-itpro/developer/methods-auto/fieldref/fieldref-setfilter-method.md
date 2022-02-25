@@ -29,7 +29,7 @@ Assigns a filter to a field that you specify.
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, , &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run time.  
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

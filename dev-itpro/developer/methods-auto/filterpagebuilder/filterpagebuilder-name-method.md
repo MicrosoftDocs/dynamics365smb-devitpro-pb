@@ -35,7 +35,7 @@ The index of a filter control. The value must be in the range 1 to N, where N is
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the filter control.
 
 

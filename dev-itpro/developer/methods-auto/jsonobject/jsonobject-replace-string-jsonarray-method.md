@@ -29,7 +29,7 @@ Replaces the value of the property with the given key with the new value.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 *Value*  
 &emsp;Type: [JsonArray](../jsonarray/jsonarray-data-type.md)  

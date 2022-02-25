@@ -33,7 +33,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 ## Return Value
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The markup representing only the child nodes of this node.
 
 
