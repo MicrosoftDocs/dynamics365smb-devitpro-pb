@@ -1,5 +1,5 @@
 ---
-title: "Defining multiple report layouts"
+title: "Defining Multiple Report Layouts"
 description: "Describes how to define multiple layouts for one report in Business Central using AL."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -10,13 +10,18 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Defining multiple report layouts
+# Defining Multiple Report Layouts
 
-In AL you have the option of defining multiple layouts for one report in code. This means that you can offer multiple versions of a layout for different purposes. Defining multiple layouts applies to both report objects, and report extension objects. The layouts can be of different types, meaning that you can have, for example, a Word layout and an Excel layout for one report, or multiple Excel layouts for one report. You can create reportextensions that only add layouts to an existing report and package it as an extension .al file.
+In AL you have the option of defining multiple layouts for one report in code. This means that you can offer multiple versions of a layout for different purposes. Defining multiple layouts applies to both report objects, and report extension objects. The layouts can be of different types, meaning that you can have, for example, a Word layout and an Excel layout for one report, or multiple Excel layouts for one report. This enables creating report extensions that only add layouts to an existing report and packaging it as an extension .al file.
 
 ## Enabling multiple layouts
 
-To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which will be displayed to the user in the **Report Layout Selection** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. If you do not specify a caption, the layout name will be displayed to the user. If the extension is translated, the `Caption` and `Summary` properties are included in the .xliff file and translated as well. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
+To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which will be displayed to the user in the **Report Layout Selection** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
+
+> [!NOTE]  
+> If you do not specify a caption, the layout name will be displayed to the user. 
+
+If the extension is translated, the `Caption` and `Summary` properties are included in the .xliff file and translated as well. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
 
 ## Layout definition in AL
 
@@ -53,7 +58,7 @@ reportextension 50102 EmpReportExt extends "Employee - List"
 }
 ```
 
-If one or more of the layouts do not exist, they will be generated when pressing **Ctrl+Shift+P**, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. 
+If one or more of the layouts do not exist, they will be generated when pressing **Ctrl+Shift+P**, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
 
 Creating layouts in Excel, RDL, or Word is further described in the topics shown under [See also](devenv-multiple-report-layouts.md#see-also).
 
