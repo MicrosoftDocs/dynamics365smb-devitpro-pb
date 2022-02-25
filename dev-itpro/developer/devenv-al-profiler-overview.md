@@ -177,14 +177,16 @@ Sampling profiling is useful as an initial analysis of code performance. You can
 
 Sampling is not as accurate as instrumentation profiling is. But it can give an indication about the self-time of an AL method. The benefit of doing sampling is that it is less noisy and is much faster to get profile information.
 
-<!-- in-client profiler implementation -->
+There are a few server restrictions for sampling profiling: 
+
+- The maximum duration of a sampling session is 10 minutes. This is a configurable server setting. 
+- The number of stack frame entries is limited to 2000. This is a configurable server setting.
 
 
+### Performance profiling in Business Central
 
-The following server restrictions exist for sampling profiling: 
+In Business Central, you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
 
-- The maximum duration of a sampling session is 10 minutes. Configurable server setting. 
-- The number of stack frame entries is limited to 2000. Configurable server setting.
 
 
 ## See Also
