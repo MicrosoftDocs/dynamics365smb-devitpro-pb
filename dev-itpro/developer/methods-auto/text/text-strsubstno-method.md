@@ -27,7 +27,7 @@ NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string containing '#' and/or '%' fields.
         
 *[Optional] Value1*  
@@ -37,7 +37,7 @@ One or more values (expressions) that you want to insert into String. You can sp
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Returns a new string with the provided values inserted into the specified string.
 
 

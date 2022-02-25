@@ -29,7 +29,7 @@ Stops the execution of the code, causing a run-time error, and creates an error 
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *[Optional] Text*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Use this optional parameter to include the text of the error message. If this parameter is not present, default text will be used.  
 
 

@@ -29,7 +29,7 @@ DescendantElements :=   XmlDocument.GetDescendantElements(Name: String)
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The fully qualified name of the elements to retrieve.  
 
 

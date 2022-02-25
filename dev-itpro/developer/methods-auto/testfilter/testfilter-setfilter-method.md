@@ -33,7 +33,7 @@ An instance of the [TestFilter](testfilter-data-type.md) data type.
 The field that you want to apply the filter to.
           
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The filter to apply to the specified field.
           
 

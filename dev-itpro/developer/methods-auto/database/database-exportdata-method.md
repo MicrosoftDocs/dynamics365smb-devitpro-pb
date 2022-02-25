@@ -37,7 +37,7 @@ Specifies if you want to display a dialog box where the user can confirm the act
 Specifies the name and location of the file that the data must be exported to. The file must have the .navdata extension.
         
 *[Optional] Description*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies a description for the exported data.
         
 *[Optional] IncludeApplication*  

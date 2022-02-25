@@ -35,7 +35,7 @@ The index of the validation error that occurred on the test page.
 
 ## Return Value
 *Result*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The validation error that occurred on a test page.
 
 

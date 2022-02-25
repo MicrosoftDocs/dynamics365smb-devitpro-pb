@@ -33,7 +33,7 @@ An instance of the [Record](record-data-type.md) data type.
 The field for which you want to create an error message.
           
 *[Optional] Text*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Use this optional parameter to include the text of the error message. If you do not use this parameter, then default text is used as shown in the following examples. You can use backslashes (\\) to break lines.
           
 
@@ -43,4 +43,4 @@ Use this optional parameter to include the text of the error message. If you do 
 ## See Also
 [Record Data Type](record-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)
