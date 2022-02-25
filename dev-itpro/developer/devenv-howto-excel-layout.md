@@ -48,12 +48,14 @@ Excel now opens and you should see the dataset of the Contact List.
 1. In Excel, you should now see the Contact List report as a pivot table, sorted as you specified in step 6.
 
 
+It is possible to specify multiple layouts for a report. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
+
 ## See also
 
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Defining multiple report layouts](devenv-multiple-report-layouts.md)  
+[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
 [ExcelLayout Property](developer/properties/devenv-excellayout-property.md)  
 [LayoutFile Property](developer/properties/devenv-layoutfile-property.md)  
