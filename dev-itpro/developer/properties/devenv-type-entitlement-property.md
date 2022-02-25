@@ -1,9 +1,9 @@
 ---
-title: "Type (Report) Property"
-description: "Sets the format type of the report layout."
+title: "Type (Entitlement) Property"
+description: "The type of entitlement."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/04/2022
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,23 +13,25 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Type (Report) Property
-> **Version**: _Available or changed with runtime version 9.0._
+# Type (Entitlement) Property
+> **Version**: _Available or changed with runtime version 7.0._
 
-Sets the format type of the report layout.
+The type of entitlement. When a user logs into Business Central, it is checked if the user is assigned the given AAD service plan, the given AAD role etc., and if that is the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
 
 ## Applies to
--   Report Layout
 -   Entitlement
 
 ## Property Value
 
 |Value|Description|
 |-----------|---------------------------------------|
-|**RDLC**|Specifies that the format of this report layout is RDLC.|
-|**Word**|Specifies that the format of this report layout is Word.|
-|**Excel**|Specifies that the format of this report layout is Excel.|
-|**Custom**|Specifies that the format of this report layout is a user-defined custom type. This requires the MimeType property to be set.|
+|**PerUserServicePlan**|The entitlement is associated with an AAD service plan which is licensed to specific users.|
+|**FlatRateServicePlan**|The entitlement is associated with an AAD service plan which is licensed to an AAD tenant.|
+|**Role**|The entitlement is associated with an AAD role.|
+|**ConcurrentUserServicePlan**|The entitlement is associated with a named AAD group.|
+|**Application**|The entitlement is associated with an AAD application.|
+|**ApplicationScope**|The entitlement is associated with an AAD application scope.|
+|**Implicit**|Everyone has this license.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -56,4 +58,3 @@ entitlement MyEntitlement
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
