@@ -16,28 +16,28 @@ When you create a new report, there are two tasks main tasks. First, you define 
 
 ## Create a simple Excel layout report
 
-The following example extends the **Customer List** report only by adding a `rendering` section, which adds a new Excel layout to the list of options for printing the **Customer List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report and can then be modeled by using Excel reporting capabilities. The example uses the [Type Property](properties/devenv-type-property.md) to set the type of report to `Excel` and it uses the [LayoutFile Property](developer/properties/devenv-layoutfile-property.md) to specify the name of the file that contains the Excel layout. If this is not present, it will be generated.
+The following example extends the **Contact List** report only by adding a `rendering` section, which adds a new Excel layout to the list of options for printing the **Contact List** report. The layout does not yet exist, but will be generated based on the existing report dataset for the report and can then be modeled by using Excel reporting capabilities. The example uses the [Type Property](properties/devenv-type-property.md) to set the type of report to `Excel` and it uses the [LayoutFile Property](developer/properties/devenv-layoutfile-property.md) to specify the name of the file that contains the Excel layout. If this is not present, it will be generated.
 
-1. Create a new report extension of the **Customer List** page by adding the following lines of code: 
+1. Create a new report extension of the **Contact List** page by adding the following lines of code: 
 
     ```al
-    reportextension 50101 MyExtCustList extends "Customer - List"
+    reportextension 50101 MyExtContactList extends "Contact - List"
     {
         rendering
         {
             layout(LayoutExcel)
             {
                 Type = Excel;
-                LayoutFile = 'MyExcelCustomerList.xlsx';
+                LayoutFile = 'MyExcelContactList.xlsx';
             }
         }
     }
     ```
 
-2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package**. The `MyExcelCustomerList.xlsx` will be generated, as you can see in the right pane of Visual Studio Code. 
-1. Right-click the generated `MyExcelCustomerList.xlsx` file, and choose **Reveal in File Explorer**. This will open File Explorer.
-1. Choose the `MyExcelCustomerList.xlsx` file in File Explorer, and right-click it to open it in Excel.
-1. Make change <!-- todo -->
+2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package**. The `MyExcelContactList.xlsx` will be generated, as you can see in the right pane of Visual Studio Code. 
+1. Right-click the generated `MyExcelContactList.xlsx` file, and choose **Reveal in File Explorer**. This will open File Explorer.
+1. Choose the `MyExcelContactList.xlsx` file in File Explorer and open it in Excel.  
+Excel now opens and you can see the dataset of the 
 1. Back in Visual Studio Code, press **Ctrl+F5** to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].
 1. Now, search for **Customer List** report, and run the report in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. 
 1. Choose **Excel** on the request page of the report.
