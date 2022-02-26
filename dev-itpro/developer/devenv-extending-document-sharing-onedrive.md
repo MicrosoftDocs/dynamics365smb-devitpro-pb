@@ -12,13 +12,18 @@ ms.date: 10/01/2021
 ---
 # Extending Document Sharing and OneDrive for Business Integration
 
+[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)]
+
 Business Central developers can tap into Microsoft 365 native file viewers and file sharing capabilities. This article explains the document sharing capability. You'll learn how it's used with OneDrive for Business, and how you can extend it.
 
 ## Overview
 
-Standard functionality in Business Central makes it easy for users to store, manage, and share files with other people through OneDrive for Business. On most pages where files are available for downloading, users will find an **Open in OneDrive** action. They'll see this action, for example, on reports in the **Report Inbox** or on files attached to records. For more information about the user experience, see [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview).
+Standard functionality in Business Central makes it easy for users to store, manage, and share files with other people through OneDrive for Business. On most pages where files are available for downloading, users will find an **Open in OneDrive** an **Share** action. They'll see this action, for example, on reports in the **Report Inbox** or on files attached to records. For more information about the user experience, see [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview).
 
 In the application code, the document sharing and OneDrive capabilities are divided between the system application and the base application. The system application provides that platform working with document sharing services&mdash;the base application makes it specific to OneDrive. As an AL developer, you can use the system and base applications to extend the OneDrive capabilities. Or even target another document sharing service.
+
+> [NOTE]
+> The **Share** action was introduced in Business Central 2022 release wave 1.
 
 ## System application
 
@@ -63,14 +68,18 @@ To support integration with OneDrive for Business, the base application uses the
 
 The core to the base application functionality for OneDrive integration is codeunit **9510 Document Service Management**. This codeunit provides functions for storing documents to OneDrive through the SharePoint service. Some points of interest are described below.
 
-[ ![Shows the document service management codeunit.](media/document-service-mgt-cu.png) ](media/document-service-mgt-cu.png)
+[ ![Shows the document service management codeunit.](media/document-service-mgt-cu-v2.png) ](media/document-service-mgt-cu.png)
 
 The base application is used to specify the URL of the document to be opened in OneDrive. The document information is stored as record in the **Document Sharing** table. Documents can be stored and passed to OneDrive as either BLOB or Media data types. 
 
-Codeunit **9510 Document Service Management** includes two procedures that run the **Document Sharing** codeunit of the system application to start the document flow:
+Codeunit **9510 Document Service Management** includes two procedures that run the **Document Sharing** codeunit of the system application to start the document flow for either opening the document in OneDrive or sharing the document with other in OneDrive:
 
-- `OpenInOneDrive(FileName: Text; FileExtension: Text; InStream: InStream)` is used for sharing documents stored as BLOBs.
-- `OpenInOneDriveFromMedia(FileName: Text; FileExtension: Text; MediaId: Guid)` is used for sharing documents stored as Media. 
+|Method|Description|
+|------|-----------|
+|`OpenInOneDrive(FileName: Text; FileExtension: Text; InStream: InStream)`|For copying documents stored as BLOBs to OneDrive and opening the documents.|
+|`OpenInOneDriveFromMedia(FileName: Text; FileExtension: Text; MediaId: Guid)`|Fr sharing documents stored as Media to OneDrive and opening the document. |
+|`ShareWithOneDrive(FileName: Text; FileExtension: Text; InStream: InStream)`|For copying documents stored as BLOBs to OneDrive and sharing the documents with other people.|
+|`ShareWithOneDriveFromMedia(FileName: Text; FileExtension: Text; MediaId: Guid)`|For copying documents stored as BLOBs to OneDrive and sharing the documents with other people.|
 
 These procedures call `SetFileNameAndExtension(TempDocumentSharing, FileName, FileExtension)` to set the file name and extension of the document.
 
