@@ -99,7 +99,7 @@ The following diagram illustrates the interaction between the system and base ap
 
 ## Example
 
-The following example extends the **Posted Sales Invoice** page of the base application to include an action to open a PDF version of a sales invoice in OneDrive.
+The following example extends the **Posted Sales Invoice** page of the base application to include an actions to open and share a PDF version of a sales invoice in OneDrive.
 
 ```al
 pageextension 50100 PostedSalesInvExt extends "Posted Sales Invoice"
@@ -136,6 +136,35 @@ pageextension 50100 PostedSalesInvExt extends "Posted Sales Invoice"
                     DocumentServiceManagement.OpenInOneDrive(StrSubstNo(SalesInvoiceName, Rec."No."), '.pdf', InStr);
                 end;
             }
+
+            action(ShareInOneDrive)
+            {
+                // The properties provide a look and feel that's consistent with the OneDrive experience in other places of the base application.
+                ApplicationArea = Basic, Suite;
+                Caption = 'Share';
+                ToolTip = 'Copy the file to your Business Central folder in OneDrive and share it with other people.', Comment = 'OneDrive should not be translated';
+                Image = Share;
+                Promoted = true;
+                PromotedCategory = Category6;
+                PromotedOnly = true;
+
+                // Enables the action if connection is enabled.
+                Enabled = ShareOptionsEnabled;
+
+                trigger OnAction()
+                var
+                    TempBlob: Codeunit "Temp Blob";
+                    DocumentServiceManagement: Codeunit "Document Service Management";
+                    InStr: InStream;
+                begin
+                    GetInvoice(TempBlob);
+
+                    TempBlob.CreateInStream(InStr);
+
+                    // Helper to invoke document sharing flow
+                    DocumentServiceManagement.ShareWithOneDrive(StrSubstNo(SalesInvoiceName, Rec."No."), '.pdf', InStr);
+                end;
+            }
         }
     }
 
@@ -163,6 +192,8 @@ pageextension 50100 PostedSalesInvExt extends "Posted Sales Invoice"
     end;
 }
 ```
+
+
 ## FAQ
 
 ### Do I have to use the base application?
