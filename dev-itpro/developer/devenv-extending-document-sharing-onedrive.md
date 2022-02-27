@@ -72,7 +72,7 @@ The core to the base application functionality for OneDrive integration is codeu
 
 The base application is used to specify the URL of the document to be opened in OneDrive. The document information is stored as record in the **Document Sharing** table. Documents can be stored and passed to OneDrive as either BLOB or Media data types. 
 
-Codeunit **9510 Document Service Management** includes two procedures that run the **Document Sharing** codeunit of the system application to start the document flow for either opening the document in OneDrive or sharing the document with other in OneDrive:
+Codeunit **9510 Document Service Management** includes four procedures that run the **Document Sharing** codeunit of the system application to start the document flow for either opening the document in OneDrive or sharing the document with other in OneDrive:
 
 |Method|Description|
 |------|-----------|
@@ -93,7 +93,7 @@ In an extension or embed app, subscribe to these events to target different docu
 
 ## System and Base application interaction
 
-The following diagram illustrates the interaction between the system and base application. The diagram has been simplified to show main points of interest.
+The following diagram illustrates the interaction between the system and base application. The diagram has been simplified to show main points of interest. Although it shows the flow for opening in OneDrive, the flow is similar for sharing.
 
 [ ![Shows the interaction between document management service and document sharing.](media/onedrivesequence.png) ](media/onedrivesequence.png)
 
