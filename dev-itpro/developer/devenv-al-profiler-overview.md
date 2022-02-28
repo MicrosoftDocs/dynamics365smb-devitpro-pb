@@ -175,9 +175,9 @@ While in the settings file, you can now add two options for the Profiler CodeLen
 
 Sampling profiling is useful as an initial analysis of code performance. You can perform sampling profiling in Visual Studio Code on AL code. Sampling profiling is based on a snapshot of running code. It gets the AL stack frame of the currently executing AL method in the context of an attached session in a given time interval.
 
-Sampling is not as accurate as instrumentation profiling is. But it can give an indication about the self-time of an AL method. The benefit of doing sampling is that it is less noisy and is much faster to get profile information.
+Sampling is not as accurate as instrumentation profiling is. But it can give an indication about the self-time of an AL method. The benefit of doing sampling profiling is that it is less noisy and is much faster to get profile information.
 
-There are a few server restrictions for sampling profiling: 
+There are a few server restrictions for sampling profiling to be aware of:
 
 - The maximum duration of a sampling session is 10 minutes. This is a configurable server setting. 
 - The number of stack frame entries is limited to 2000. This is a configurable server setting.
@@ -185,7 +185,7 @@ There are a few server restrictions for sampling profiling:
 
 ### Performance profiling in Business Central
 
-In Business Central, you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
+In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in Business Central. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
 
 
 
