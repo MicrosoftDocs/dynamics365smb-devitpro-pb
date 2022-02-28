@@ -54,6 +54,8 @@ entitlement MyEntitlement
 }
 ```
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Type (Entitlement) Property](devenv-type-entitlement-property.md)
