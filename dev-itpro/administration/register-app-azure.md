@@ -72,13 +72,14 @@ The first task is to use Azure portal to register an application for Business Ce
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
     |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
-    |[Open in OneDrive](/dynamics365/business-central/admin-onedrive-integration)|SharePoint|AllSites.Write|Delegated|Read and write items in all site collections|
-    |||MyFiles.Write|Delegated|Read and write user files|
-    |||User.Read.All|Delegated|Read user profiles|
+    |[Open in OneDrive](/dynamics365/business-central/admin-onedrive-integration)|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
+    |||User.ReadWrite.All|Delegated|Read and write user profiles|
+    |||For Business Central 2021 release wave 2 (version 19), use these permissions instead:<br>AllSites.Write, MyFiles.Write, User.Read.All |||
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
     |[Universal Print integration](/dynamics365/business-central/ui-specify-printer-selection-reports#set-up-universal-print)|Microsoft Graph |PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
     |||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
+
 
 ## Set up the registered application in Business Central
 
