@@ -23,6 +23,12 @@ Sets the mimetype that is associated with this custom report layout.
 -   Report Layout
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Remarks
+
+To enable a custom report layout, the MimeType property must be set. The [Type (Report) Property](devenv-type-report-property.md) must then be set to **Custom**.
+
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
