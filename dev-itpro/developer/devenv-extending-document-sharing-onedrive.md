@@ -22,7 +22,7 @@ Standard functionality in Business Central makes it easy for users to store, man
 
 In the application code, the document sharing and OneDrive capabilities are divided between the system application and the base application. The system application provides that platform working with document sharing services&mdash;the base application makes it specific to OneDrive. As an AL developer, you can use the system and base applications to extend the OneDrive capabilities. Or even target another document sharing service.
 
-> [NOTE]
+> [!NOTE]
 > The **Share** action was introduced in Business Central 2022 release wave 1.
 
 ## System application
