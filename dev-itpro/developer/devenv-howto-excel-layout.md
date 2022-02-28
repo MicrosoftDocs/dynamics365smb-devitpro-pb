@@ -12,9 +12,7 @@ ms.author: solsen
 
 # Creating an Excel Layout Report
 
-When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a basic report based on an Excel layout. 
-
-With the Excel report layout, you can create a basic report that prints a dataset and leave it up to the end-user to further modify it. This offers flexibility and freedom for the end-user, being able to change the look and feel of a report, adding additional views, filtering, and sorting on data. Such a layout designed by the end-user, can be imported and used as a new layout.
+When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. With the Excel report layout, you can create a basic report that prints a dataset and leave it up to the end-user to further modify it. This offers flexibility and freedom for the end-user, being able to change the look and feel of a report, adding additional views, filtering, and sorting on data. Such a layout designed by the end-user, can be imported and used as a new layout. The following steps will show how to create a basic report based on an Excel layout. 
 
 For more information about the report object, see [Report Object](devenv-report-object.md) and for report extension objects, see [Report Extension Object](devenv-report-ext-object.md).
 
