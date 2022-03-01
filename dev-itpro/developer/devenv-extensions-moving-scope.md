@@ -96,23 +96,23 @@ No specific identity requirements.
 
 Enabling the [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md).
 
-## Moving an AppSource as PTE
+## Moving an AppSource app as PTE
 
 Scenario: Reducing the availability of your app to select customers.
 
-## Identity requirements for moving an AppSource app to a PTE
+### Identity requirements for moving an AppSource app to a PTE
 
 - Changing the App ID
   - This means that the data won't be available anymore (see below)
   - This means that dependent extensions will need to be updated to use the new App ID in their `app.json` file.
   - If deprecating the offer, see [Discontinuing an AppSource app](devenv-app-discontinue.md).
 
-## PTE requirements for moving the AppSource app
+### PTE requirements for moving the AppSource app
 
 - Changing the ID of all objects to be in the PTE range (AppSource apps are using a different range)
 - [PerTenantExtensionCop Analyzer](analyzers/pertenantextensioncop.md)
 
-## Other information about the AppSource app
+### Other information about the AppSource app
 
 - Even if you stop distributing the offer in Partner Center, the app still exists in Business Central and the App ID remains reserved for it. It then cannot be attributed to the PTE.
 - If you want to move the data by having the two apps installed side-by-side, then you must ensure that the two apps (AppSource and PTE) can be installed side-by-side. For this, they must not share any object names nor IDs.
