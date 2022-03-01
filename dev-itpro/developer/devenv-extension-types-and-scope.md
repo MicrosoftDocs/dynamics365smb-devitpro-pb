@@ -95,7 +95,7 @@ PTEs are never uninstalled from a PROD environment, unless they are preventing t
 
 This includes extensions published from Visual Studio Code or created using Designer in Business Central.
 
-You can deploy a DEV extension with the same App ID and version, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app.
+You can deploy a DEV extension with the same App ID and version, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
 
 DEV extensions can have dependencies on Global apps, on per-tenant extensions, or on other DEV extensions.
 
