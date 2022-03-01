@@ -39,11 +39,16 @@ Global apps can exist in PROD and in sandbox environments.
 
 #### How to install
 
+For AppSource and Microsoft apps:
+
 - From the AppSource marketplace, choose **Contact Me**, **Free Trial**, or **Get It Now** and follow the steps.
 - From the **Extension Management** page in Business Central, you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
 > You must check that the app is available for the country/region of your environment.
+
+For Embed ISVs, installation is handled by the Embed ISV partner.
+
 
 ### Behavior on environment upgrade
 
