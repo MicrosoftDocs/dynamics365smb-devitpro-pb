@@ -118,7 +118,7 @@ Apps published as dev extensions ignore the resource exposure policy settings.--
 
 ## Constraints on extension types
 
-In general, extensions are uniquely defined by their App ID. A specific version of an app is defined by the App ID and version, adding Environment for per-tenant extensions. However, due to some current limitations in our service, some scenarios are not supported when extensions have a different App ID, but have the same name, publisher, and version.
+In general, extensions are uniquely defined by their App ID. A specific version of an app is defined by the App ID and version, adding Environment for per-tenant extensions.
 
 - It is not possible to deploy an **AppSource app** and a **PTE** with the same App ID. During the upload of a PTE, we are validating that there is not an AppSource app with the same App ID. Currently, the AppSource validation process allows you to upload an app with the same App ID as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
 
