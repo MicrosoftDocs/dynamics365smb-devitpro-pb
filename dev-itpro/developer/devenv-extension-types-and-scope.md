@@ -25,11 +25,11 @@ The definition of a global app is that it fulfills one or more of the following:
 - It is installed from the AppSource marketplace  
 - It is provided by embed ISVs if your environment uses a code-customized base application. For more information, see [Publishing a Code-Customized Base Application](devenv-publish-code-customization.md).
 
-AppSource apps are uniquely defined by their app ID and version.
+Global apps are uniquely defined by their app ID and version.
 
-You cannot deploy a Global app with same the app ID and AppSource apps are uniquely defined by their app ID and version, but different content to multiple environments. 
+You cannot deploy a Global app with same the app ID and version, but different content to multiple environments.
 
-You can choose to install, uninstall or upgrade AppSource apps, but you do not control when they are published or unpublished because they might be used by other environments in the service. It is not possible to force sync a Global app.
+You can choose to install, uninstall or upgrade Global apps, but you do not control when they are published or unpublished because they might be used by other environments in the service. It is not possible to force sync a Global app.
 
 Global apps can only depend on other global apps.
 
