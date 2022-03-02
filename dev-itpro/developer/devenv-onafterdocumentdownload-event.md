@@ -17,7 +17,7 @@ This article describes the syntax of the OnAfterDocumentDownload event and the a
 
 ## Usage
 
-Use the OnAfterDocumentDownload event to specify what happens when the user has generated a report artifact (stream or file) from code or a request page action. The `OnAfterDocumentDownload` event is used to enable document patching scenarios in the application.
+Use the OnAfterDocumentDownload event to specify what happens when the user has generated a report artifact by stream or file, from code or a request page action. The `OnAfterDocumentDownload` event is used to enable document patching scenarios in the application.
 
 ## Publisher
 
@@ -58,7 +58,7 @@ A stream object that contains the generated artifact. The actual data type can b
 
 Type: [Boolean](methods-auto/boolean/boolean-data-type.md)
 
-Specifies whether the extension handled the generated articat successfully. The document will not be download to the client if the application code handles the artifact and set the *Success* parameter to true.
+Specifies whether the extension handled the generated artifact successfully. The document will not be downloaded to the client if the application code handles the artifact and sets the *Success* parameter to true.
 
 ## <a name="reportpayload"></a>Report payload
 
