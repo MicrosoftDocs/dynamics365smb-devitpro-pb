@@ -17,7 +17,7 @@ This article describes the syntax of the OnAfterDocumentReady event and the attr
 
 ## Usage
 
-Use the OnAfterDocumentReady event to specify what happens when the user has generated a report artifact (stream or file) from code or a request page action. The `OnAfterDocumentReady` event is used to enable document patching scenarios in the application or to copy the artifact to a different location during testing.
+Use the OnAfterDocumentReady event to specify what happens when the user has generated a report artifact by stream or file, from code or a request page action. The `OnAfterDocumentReady` event is used to enable document patching scenarios in the application or to copy the artifact to a different location during testing.
 
 The event input is the report ID, a JSON collection with report runtime information and the generated document in an InStream. Use the `documenttype` JSON property to identify the data type stored in the `DocumentStream` parameter and act accordingly. The final result must be written to the `TargetStream` parameter and the parameter `Success` must be set to `true` if the modified stream is to be used in the platform. The content in the `TargetStream` will be discarded if the `Success` parameter is `false` upon return from the procedure.
 
@@ -56,7 +56,7 @@ Instance of the report payload. For more information, see [Report payload struct
 
 Type: [InStream](methods-auto/instream/instream-data-type.md)
 
-A stream object that contains the generated artifact. The actual data type can be found from the mime type in the report payload document.
+A stream object that contains the generated artifact. The actual data type can be found from the MIME type in the report payload document.
 
 ### *TargetStream*
 
