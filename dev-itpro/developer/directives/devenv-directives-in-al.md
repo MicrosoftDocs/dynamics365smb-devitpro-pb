@@ -25,6 +25,9 @@ Any code can be made conditional, including table fields, and checked using a co
 > [!NOTE]  
 > Built-in symbols are currently not supported in AL. Symbols must be defined in a specific file or in the `app.json` file.
 
+> [!NOTE]  
+> User Personalization and Profile Configuration (including Profile copy) are not meant to work with directives, so platform just ignore/remove them when possible (#pragma, #region, #endregion) and fail with an error when not supported (#if, #elif, #define, etc).
+
 ## Conditional directives
 
 The following conditional preprocessor directives are supported in AL.
