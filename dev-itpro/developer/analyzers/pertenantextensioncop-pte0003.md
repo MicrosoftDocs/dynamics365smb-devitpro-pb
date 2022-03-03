@@ -1,9 +1,9 @@
 ---
 title: "PerTenantExtensionCop Error PTE0003"
-description: "Functions must not subscribe to CompanyOpen events."
+description: "Procedures must not subscribe to CompanyOpen events because it can increase the login time for Dynamics 365 Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,10 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PerTenantExtensionCop Error PTE0003
-Functions must not subscribe to CompanyOpen events.
+Procedures must not subscribe to CompanyOpen events
 
 ## Description
-Functions must not subscribe to CompanyOpen events.
+Procedures must not subscribe to CompanyOpen events because it can increase the login time for Dynamics 365 Business Central.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

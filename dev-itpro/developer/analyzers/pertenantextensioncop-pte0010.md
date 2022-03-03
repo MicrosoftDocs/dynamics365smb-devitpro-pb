@@ -1,9 +1,9 @@
 ---
 title: "PerTenantExtensionCop Error PTE0010"
-description: "The extension name length must not exceed the specified limit."
+description: "The extension name length must not exceed the limit of 50 characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,10 +15,10 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # PerTenantExtensionCop Error PTE0010
-The extension name length must not exceed the specified limit.
+The extension name is too long.
 
 ## Description
-The extension name length must not exceed the specified limit.
+The extension name length must not exceed the limit of 50 characters.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
