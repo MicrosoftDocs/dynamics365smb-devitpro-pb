@@ -1,8 +1,8 @@
 ---
-title: "Technical Upgrade to Version 19"
-description: Describes how to do a technical upgrade from Business Central 16, and 17, and V18 to V19
+title: "Technical Upgrade to Version 20"
+description: Describes how to do a technical upgrade from Business Central 17, V18, and V19 to V20
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Technical Upgrade to Version 19
+# Technical Upgrade to Version 20
 
 Use this process to upgrade any of the following versions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 platform (version 19). This process won't upgrade the application to the latest version.
 
