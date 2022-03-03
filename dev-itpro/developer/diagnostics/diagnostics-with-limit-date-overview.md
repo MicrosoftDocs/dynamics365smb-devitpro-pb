@@ -1,5 +1,5 @@
 ---
-title: "AL Diagnostics with Error Limit Date"
+title: "Warnings that will turn or have turned into errors"
 description: ""
 ms.author: solsen
 ms.custom: na
