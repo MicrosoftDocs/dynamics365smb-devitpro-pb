@@ -18,7 +18,7 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
 
- ![Upgrade on customized Business Central application.](../developer/media/19-technical-upgrade.png "Upgrade on customize Business Central application")
+ ![Upgrade on customized Business Central application.](../developer/media/20-technical-upgrade.png "Upgrade on customize Business Central application")
 
 ## Before you begin
 
