@@ -260,7 +260,9 @@ Compile all published extensions against the new platform.
 
     For a single-tenant deployment, you can either set the `$TenantId` to `default` or omit the `-Tenant $TenantId` parameter. For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-3. If you published new extension versions, like for system application and base application, synchronize the new versions with the tenant. Sychronize the extensions in order of dependency, for example:
+<!--
+
+3. If you published new extension versions, like for system application and base application, synchronize the new versions with the tenant. Synchronize the extensions in order of dependency, for example:
 
     ```powershell  
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "System Application" -Version "<version>" -Tenant $TenantId
@@ -269,6 +271,7 @@ Compile all published extensions against the new platform.
     ```powershell  
     Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Base Application" -Version "<version>" -Tenant $TenantId
     ```
+
 
 ## Task 9: Upgrade new extension versions
 
@@ -284,6 +287,7 @@ Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Applica
 
 This step will install the new versions on the tenant.
 
+-->
 ## Task 10: Reinstall extensions (single-tenant only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before, unless you've published new versions.
