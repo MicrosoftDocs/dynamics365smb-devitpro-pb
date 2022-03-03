@@ -48,7 +48,7 @@ $DatabaseServer = "The SQL Server instance that hosts the databases. The value h
 $SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\\Microsoft_System Application.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBCVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 18.1.24582.0"
+$NewBCVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 19.1.24582.0"
 $PartnerLicense = "The file path and name of the partner license"
 $CustomerLicense = "The file path and name of the customer license"
 $AddinsFolder = "The file path to the Add-ins folder of version 20 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins."
@@ -170,7 +170,7 @@ This task runs a technical upgrade on the application database to convert it to 
 
 ## Task 5: Configure version 20 server
 
-When you installed version 20 in **Task 2**, a version 20 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
+When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -180,7 +180,7 @@ When you installed version 20 in **Task 2**, a version 20 [!INCLUDE[server](../d
 
     In a single tenant deployment, this command will mount the tenant automatically. For more information, see [Connecting a Server Instance to a Database](../administration/connect-server-to-database.md).
 
-2. Disable task Scheduler on the server instance for purposes of upgrade.
+2. Disable task scheduler on the server instance for purposes of upgrade.
 
     ```powershell
     Set-NavServerConfiguration -ServerInstance $NewBcServerInstance -KeyName "EnableTaskScheduler" -KeyValue false
