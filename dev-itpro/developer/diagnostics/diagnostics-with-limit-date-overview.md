@@ -18,7 +18,7 @@ author: SusanneWindfeldPedersen
 
 This topic lists all the warning diagnostics that will turn or have turned into an error in the specified Business Central release.
 
-|Release|Diagnsotics|
+|Release|Diagnostics|
 |---------|-----------|
 |2023 release wave 1|- [AL0711](diagnostic-al711.md)<br/>|
 |2022 release wave 2|- [AL0660](diagnostic-al660.md)<br/>- [AL0677](diagnostic-al677.md)<br/>- [AL0697](diagnostic-al697.md)<br/>- [AL0715](diagnostic-al715.md)<br/>|
