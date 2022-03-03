@@ -288,7 +288,7 @@ Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Applica
 This step will install the new versions on the tenant.
 
 -->
-## Task 10: Reinstall extensions (single-tenant only)
+## Task 9: Reinstall extensions (single-tenant only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before, unless you've published new versions.
 
@@ -323,11 +323,11 @@ At line:1 char:1
     + FullyQualifiedErrorId : System.ServiceModel.CommunicationException,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
 -->
 
-## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 10: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-## Task 12: Install upgraded permissions sets
+## Task 11: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
