@@ -86,13 +86,15 @@ In this task, you prepare the application and tenant databases for the upgrade.
     You'll need these packages later to publish and install the extensions again.
 3. Uninstall all extensions from the old tenants.
 
-    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
+    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator. [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)].
+    
+    Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
     ``` 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version -Tenant <tenant ID>}
     ``` 
 
-    If you have a single tenant deployment, you can omit the `-Tenant` parameter and value. 
+    If you have a single tenant deployment, you can omit the `-Tenant` parameter and value.
 
 3. Unpublish all extensions from the application server instance.
 
@@ -133,6 +135,8 @@ This task runs a technical upgrade on the application database. A technical upgr
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17.0 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
 3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 

@@ -3524,7 +3524,7 @@
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 #### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
 #### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 #### [Known OData Limitations](webservices/odata-known-limitations.md)
 ### SOAP

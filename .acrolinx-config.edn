@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["^main$"]
- :allowed-filename-matches ["dev-itpro"]
+ :allowed-filename-matches ["(?i)dev-itpro/(?:(embedapps|help|includes|security|whatsnew)/)"]
  :guidance-profile "dc59e3ef-24fd-46d7-9156-0491aaae6bef" ;; Profile ID for "BAG-specific" 
  :acrolinx-check-settings
  {
