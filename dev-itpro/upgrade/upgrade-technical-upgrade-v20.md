@@ -12,11 +12,11 @@ author: jswymer
 ---
 # Technical Upgrade to Version 20
 
-Use this process to upgrade any of the following versions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 platform (version 19). This process won't upgrade the application to the latest version.
+Use this process to upgrade any of the following versions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 platform (version 20). This process won't upgrade the application to the latest version.
 
+- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (version 19)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
 
  ![Upgrade on customized Business Central application.](../developer/media/19-technical-upgrade.png "Upgrade on customize Business Central application")
 
@@ -32,40 +32,42 @@ Review the information in this section before you start upgrading your deploymen
 
 [!INCLUDE[upgrade_runtime_packages](../developer/includes/upgrade_runtime_packages.md)]
 
-
 ### PowerShell variables used in tasks
 
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment. 
 
 ```powershell
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC180"
-$NewBcServerInstance = "The name of the Business Central server instance for version 19, for example: BC190"
+$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC190"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. For a single-tenant deployment, this is the same as $TenantDatabase." 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
-$OldVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 18.1.24582.0"
+$OldVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 19.1.24582.0"
 $PartnerLicense = "The file path and name of the partner license"
-$AddinsFolder = 'The file path to the Add-ins folder of version 19 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins'
+$AddinsFolder = 'The file path to the Add-ins folder of version 20 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins'
 $CustomerLicense = "The file path and name of the customer license"
 ```
 
-## Task 1: Install version 19
+## Task 1: Install version 20
 
-1. Choose a version 19 that's compatible with your current platform version.
+1. Choose a version 20 that's compatible with your current platform version.
 
-    There are several updates for each Business Central version. The update of your current version must be compatible version 19 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 18.6, you can't upgrade to 19.0. You'll have to wait until 19.1 is available. 
+    There are several updates for each Business Central version. The update of your current version must be compatible version 20 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 18.6, you can't upgrade to 19.0. You'll have to wait until 19.1 is available. 
 
-2. Before you install version 19, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 19.0 tools.
+2. Before you install version 20, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 20.0 tools.
 
-3. Install version 19 components.
+3. Install version 20 components.
 
-    You'll keep previous version installed for now. When you install version 19, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 18.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll keep previous version installed for now. When you install version 20, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 18.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
+
+<!--
 4. Copy Dynamics Online Connect add-in (upgrade from version 16 or earlier).
 
-    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 19 server installation.
+    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 20 server installation.
+-->
 
 ## Task 2: Upgrade permission sets
 
@@ -73,67 +75,11 @@ Version 18 introduced the capability to define permissions sets as AL objects, i
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
-<!-- ## Prereuisites 
-1. Your current platform version is compatible with version 18.
-
-    There are several updates for each Business Central version. The update of your current version must be compatible version 18 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 17.6, you can't upgrade to 18.0. You'll have to wait until 17.7 is available.  
-
-3. Disable data encryption.
-
-    If the current server instance uses data encryption, disable it. You can enable it again after upgrading.
-
-    For more information, see [Managing Encryption and Encryption Keys](how-to-export-and-import-encryption-keys.md#encryption).
-
-    Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
--->
-
-<!--
-## Task 3: Rewrite code to handle obsoleted system tables (v15 only)
-
-In version 19, several system tables were removed and replaced by new tables, compared to version 15. For a list of these tables and the corresponding new tables, see [Deprecated Tables](deprecated-tables.md). Code that uses the deprecated tables, must be rewritten to use the new tables. This change will typically affect your base application or the Microsoft System Application, if you're using it.
-
-For the base application or system application extensions, you'll have to create a new version that uses the new tables. The basic steps are as follows:
-
-1. Create AL project in Visual Studio Code for the system and/or base application.
-
-    If you're using the Microsoft System Application, start with this project first.
-
-2. Include the source files of the current version in the project.
-
-3. Copy the version 19 System symbols (System.app) file to the **.alpackages** folder of the project.
-
-    You'll find the System.app file on the installation media (DVD) for version 19 or in the **AL Development Environment** installation folder. By default, the folder is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\AL Development Environment.
-
-    For the base application, also include the extension package (.app) for the new version of the Microsoft System Application, if you're using it.
-
-4. Modify the app.json:
-
-    - Increase `"version"` number. You have to increase the version so you can run a data upgrade later in this process.
-    - Set `"runtime"` to `8.0`
-    - Set `"platform"` to `19.0.0.0`
-    - Set `"target"` to `OnPrem`
-
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
-5. In the **dotnet.al** files in the project, find and delete all instances of `Version = '15.0.0.0';` in **Microsoft.Dynamics.Nav** and  **Microsoft.Dynamics.Framework** assembly declarations.
-
-6. Rewrite code that references the deprecated table to reference the new tables.
-
-    Try to build the project first to see what errors you get. Then, resolve the errors. <!-- For help about most of the errors, see [Rewriting Code for Breaking Changes](deprecated-tables-fix-compile-errors.md).
-
-7. Compile and build the new version of the extension.-->
-
-
 ## <a name="Preparedb"></a> Task 3: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
 
 1. Make backup of the database.
-
-<!--
-2. Make sure that you have the extension packages for all published extensions.
-
-    You'll need these packages later to re-publish and install the extensions again.
--->
 
 2. Disable data encryption.
 
@@ -146,7 +92,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for the previous version, like 18, as an administrator. [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
-    
+
     Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
     ```powershell 
@@ -177,14 +123,14 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
-## Task 4: Convert application database to version 19
+## Task 4: Convert application database to version 20
 
-This task runs a technical upgrade on the application database. A technical upgrade converts the current database to the version 19.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database. A technical upgrade converts the current database to the version 20.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
 > [!IMPORTANT]
 > The conversion does not modify the application objects, but it will remove any modifications that you have made to system tables. After the conversion you will no longer be able to use it with current version.
 
-1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 19.0 as an administrator.
+1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 20.0 as an administrator.
 
    [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
@@ -206,9 +152,9 @@ This task runs a technical upgrade on the application database. A technical upgr
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 5: Configure version 19 server
+## Task 5: Configure version 20 server
 
-When you installed version 19 in **Task 1**, a version 19 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for the upgrade and can be reverted after you complete the upgrade.
+When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for the upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
