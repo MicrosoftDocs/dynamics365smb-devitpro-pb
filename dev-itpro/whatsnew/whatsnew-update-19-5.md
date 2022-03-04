@@ -28,9 +28,8 @@ Find an overview of hotfixes in this [article](INSERT).
 |-------------|--------------|--------------|
 |Norway | Updated SAF-T export | Fixed issue with exporting bank data in SAF-T in accordance with BankAccountStructure |
 
-
 ## Release Plan  
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 2 (release from October 2021 through May 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 2 (release from October 2021 through March 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
 ## Upgrade to 19.5
 
@@ -41,9 +40,6 @@ Please note that new customers will automatically get the latest builds of Busin
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
 
-**Use secondary read-only database for Power BI reporting**  
-Please note that with newest Power BI Desktop update (expected in late February 2022) all new Business Central Power BI reports will be now sourced from a secondary, read-only database. This leaves the main database ready for transactions, which enhances performance of the system. This feature is part of the Power BI connector for Business Central. After updating Power BI Desktop this feature it's enabled by default for all new reports but turned off for existing reports. Read more [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/use-secondary-read-only-database-power-bi-reporting).
-
 **Avoid an unexpected data upgrade during cloud migration**  
 When you run cloud migration from a previous version of Business Central, one of the process steps is to run the data upgrade logic to align the migrated data to the format of the current version. We strongly recommend that you perform this step one time after you have completed the migration of all your customer’s data to the online environment. If a planned Business Central major or minor update is applied to this environment, the update will automatically include the upgrade of the data that was migrated by the cloud migration. These planned updates also turn off cloud migration for the environment. To avoid this situation, and to allow you to complete the migration and data upgrade for your environment, we recommend that you postpone any scheduled major and minor updates for the target environment until you have completed cloud migration. You can postpone updates in the Business Central admin center. For more information, see [Managing Updates](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management).  
 
@@ -52,7 +48,7 @@ Make sure to join the office hours call 'Business Central apps in AppSource' on 
 
 **Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
 To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication.  
-The change will happen in March 2022 and we strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
+The change will happen in March 2022. We strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
 
 **Join Directions NA on April 3-6, 2022**  
 Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536). 
