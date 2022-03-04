@@ -77,7 +77,7 @@ Creating layouts in Excel, RDL, or Word is further described in the topics shown
 
 ## See also
 
-[Creating an Excel Layout Report](devenv-howto-excel-layout.md)  
+[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
-[Creating a Custom Layout Report](devenv-howto-custom-report-layout.md)  <!-- create -->
+[Creating a Custom Layout Report](devenv-howto-custom-report-layout.md)
