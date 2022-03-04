@@ -16,6 +16,8 @@ ms.date: 04/01/2021
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are stateless and don't preserve the values of global variables or single-instance codeunits between calls.  
 
+[!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
+
 ## Web Service Telemetry
 All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
 

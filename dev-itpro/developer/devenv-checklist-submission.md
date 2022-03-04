@@ -167,7 +167,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 
 The minimum release of the extension is then 18.0.
 
-Note that for AppSource extensions, it is now required to use the `application` property instead of explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
+Note that for AppSource extensions, it is now required to use the `application` property instead of explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop).
 
 <!-- ### How to specify a maximum release for your extension?
 
@@ -202,4 +202,4 @@ In this case, you can create a version 1.0.0.1 of your extension and submit it w
 -->
 
 ## See Also
-[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  
+[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)
