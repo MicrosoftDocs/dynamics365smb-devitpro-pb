@@ -26,7 +26,7 @@ Any code can be made conditional, including table fields, and checked using a co
 > Built-in symbols are currently not supported in AL. Symbols must be defined in a specific file or in the `app.json` file.
 
 > [!NOTE]  
-> User Personalization and Profile Configuration (including Profile copy) are not meant to work with directives, so platform just ignore/remove them when possible (#pragma, #region, #endregion) and fail with an error when not supported (#if, #elif, #define, etc).
+> User personalization and profile configuration (including profile copy) are not meant to work with directives, which means that they are ignored by the platform in the cases of #pragma, #region, #endregion and fail with an error when they are not supported for #if, #elif, #define, etc.
 
 ## Conditional directives
 
