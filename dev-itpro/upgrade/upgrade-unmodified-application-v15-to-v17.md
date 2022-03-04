@@ -41,6 +41,8 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
 
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.
@@ -115,6 +117,9 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 This task runs a technical upgrade on the application database to convert it from the version 15 platform to the version 17 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 17 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
     ```powershell
