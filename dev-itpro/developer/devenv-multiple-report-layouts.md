@@ -18,6 +18,8 @@ In AL you have the option of defining multiple layouts for one report in code. T
 
 To enable multiple layouts, you must use the `rendering` section of a report object. Inside the `rendering` section, you define one or more `layout` sections. In each of the `layout` sections, you specify details about the layout file path and name, you provide a [Caption Property](properties/devenv-caption-property.md) and a [Summary Property](properties/devenv-summary-property.md) which will be displayed to the user in the **Report Layouts** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. 
 
+The default layout can be specified with the [DefaultRenderingLayout Property](properties/devenv-defaultrenderinglayout-property.md) report property. This property *cannot* be set on report extension objects, only on report objects.
+
 > [!NOTE]  
 > If you do not specify a caption, the layout name will be displayed to the user. 
 
@@ -56,6 +58,15 @@ reportextension 50102 EmpReportExt extends "Employee - List"
             Summary = 'Employee list sorted by last name in Word';
             LayoutFile = 'EmpSortedByLastName.docx';
         }
+
+        layout(UserDefinedType)
+        {
+            Type = Custom;
+            Caption = 'UserDefinedList';
+            Summary = 'Employee list sorted by last name in external custom render';
+            LayoutFile = 'EmpSortedByLastName.html';
+            MimeType = 'Application/AppName/Report/MyUserDefinedType';
+        }
     }
 }
 ```
@@ -68,4 +79,5 @@ Creating layouts in Excel, RDL, or Word is further described in the topics shown
 
 [Creating an Excel Layout Report](devenv-howto-excel-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Creating a Word Layout Report](devenv-howto-report-layout.md)
+[Creating a Word Layout Report](devenv-howto-report-layout.md)  
+[Creating a Custom Layout Report](devenv-howto-custom-report-layout.md)  <!-- create -->
