@@ -27,7 +27,7 @@ If the extension is translated, the `Caption` and `Summary` properties are inclu
 
 ## Layout definition in AL
 
-The following example illustrates how the `EmpReportExt` report extends the `"Employee - List"` list by adding three report layouts as options for printing this report. The report extension only adds the layouts, the dataset remains the same as the existing Employee List report.
+The following example illustrates how the `EmpReportExt` report extends the `"Employee - List"` list by adding four report layouts as options for printing this report. The report extension only adds the layouts, the dataset remains the same as the existing Employee List report.
 
 ```al
 reportextension 50102 EmpReportExt extends "Employee - List"
@@ -73,7 +73,7 @@ reportextension 50102 EmpReportExt extends "Employee - List"
 
 If one or more of the layouts do not exist, they will be generated when pressing **Ctrl+Shift+P**, and then choosing **AL: Package**. The layouts will appear in your project in the right pane of Visual Studio Code. The generated reports contain the dataset from the report, and you can modify and model the reports in each of the layout types as you want.
 
-Creating layouts in Excel, RDL, or Word is further described in the topics shown under [See also](devenv-multiple-report-layouts.md#see-also).
+Creating layouts in Excel, RDL, Word or creating a custom layout is further described in the topics shown under [See also](devenv-multiple-report-layouts.md#see-also).
 
 ## See also
 
