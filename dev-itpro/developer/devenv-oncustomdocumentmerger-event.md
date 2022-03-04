@@ -1,3 +1,4 @@
+
 ---
 title: "OnCustomDocumentMerger Event"
 description: Describe the OnCustomDocumentMerger Event in Business Central.
@@ -13,7 +14,7 @@ author: jswymer
 
 # OnCustomDocumentMerger Event
 
-This article describes the syntax of the OnCustomDocumentMerger event which will enable use of custom renders given a dataset and a layout.
+This article describes the syntax of the OnCustomDocumentMerger event which will enable use of custom renders given a dataset and a layout. The layout must be specified as a Custom Layout in the rendering section within the report definition.
 
 ## Usage
 
@@ -83,9 +84,63 @@ Specifies whether the extension handled the merge action successfully.
 > - Download to the client
 > - Print or preview
 
+## Sample Code
+
+The simplest possible custom document render can can be implemented like the following sample that will use the existing application logic to render Xml datasets into Microsoft Word or Pdf documents using a given template (Word template).
+
+``al
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMerger', '', true, true)]
+    local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
+    var
+        DocumentReportMgt: Codeunit "Document Report Mgt.";
+        TempBlob: Codeunit "Temp Blob";
+        DataInStream: InStream;
+        DataOutStream: OutStream;
+    begin
+        if IsHandled then
+            exit;
+
+        TempBlob.CreateOutStream(DataOutStream);
+
+        // The supported actions
+        case ReportAction of
+            ReportAction::SaveAsPdf, ReportAction::Preview, ReportAction::Print:
+                begin
+                    // Try to merge the xml data with the layyout and create a stream with the resulting Word document.
+                    if not DocumentReportMgt.TryXmlMergeWordDocument(LayoutData, XmlData, DataOutStream) then
+                        error('Unable to handle custom document merge');
+                    // Convert the Word document to a PDF document using the streams in the blob object.
+                    DocumentReportMgt.ConvertWordToPdf(TempBlob, ObjectID);
+                    TempBlob.CreateInStream(DataInStream);
+                    // Return the stream data to the printDocumentStream for further processing in the server.
+                    CopyStream(printDocumentStream, DataInStream);
+                    IsHandled := true;
+                end;
+            ReportAction::SaveAsHtml:
+                begin
+                    if not DocumentReportMgt.TryXmlMergeWordDocument(LayoutData, XmlData, DataOutStream) then
+                        error('Unable to handle custom document merge');
+                    DocumentReportMgt.ConvertWordToHtml(TempBlob);
+                    TempBlob.CreateInStream(DataInStream);
+                    CopyStream(printDocumentStream, DataInStream);
+                    IsHandled := true;
+                end;
+            ReportAction::SaveAsWord:
+                begin
+                    if not DocumentReportMgt.TryXmlMergeWordDocument(LayoutData, XmlData, printDocumentStream) then
+                        error('Unable to handle custom document merge');
+                    IsHandled := true;
+                end;
+            else
+                error('Unsupported report action %0', ReportAction);
+        end;
+    end;
+``
+
 ## See Also
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)
+[Developing Report Custom Render Extensions Overview](devenv-reports-custom-render.md)
 [Developing Printer Extensions Overview](devenv-reports-printing.md)
 [Creating a Printer Extension](devenv-reports-create-printer-extension.md)
 [Events in AL](devenv-events-in-al.md)
