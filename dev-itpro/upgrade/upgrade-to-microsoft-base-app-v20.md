@@ -86,7 +86,7 @@ The first step, and the largest step, is to create extensions for the customizat
 
 For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
 
-Also, be aware that in version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
+Also, be aware that since version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
 
 
 ## Task 4: Create empty System, Base, and customization extensions
@@ -104,45 +104,45 @@ The only file in the extension project that's required is an app.json. You can c
 3. Modify the app.json file.
 
     The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
-    
+
     - The `id` and `name` must match the value used by Microsoft's extensions.
-    - Set the `version` to any version lower than 19.0.0.0, like 14.0.0.0.
+    - Set the `version` to any version lower than 20.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
     - Set the `runtime` to `"8.0"`.
 
     The app.json files for each extension should look similar to following examples:
-    
-    **System Application** 
-    
+
+    **System Application**
+
     ```json
       "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
       "name": "System Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
-      "runtime": "8.0",
+      "runtime": "9.0",
       "target": "OnPrem"
     ```
-    
-    **Base Application**   
-    
+
+    **Base Application**
+
     ```json
       "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
       "name": "Base Application",
       "publisher": "Microsoft",
       "version": "14.0.0.0",
-      "runtime": "8.0",
+      "runtime": "9.0",
       "target": "OnPrem"
     ```
 
-    **Customization extensions**   
-    
+    **Customization extensions**
+
     ```json
       "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
       "name": "<extension name>",
       "publisher": "<extension publisher",
       "version": "<extension version - must be lower than the final version>",
-      "runtime": "8.0",
+      "runtime": "9.0",
       "target": "OnPrem"
     ```
 
@@ -220,11 +220,11 @@ You'll create two versions of this extension. The first version contains the tab
       "logo": "",
       "dependencies": [],
       "screenshots": [],
-      "platform": "19.0.0.0",
+      "platform": "1920.0.0.0",
       "idRanges": [  ],
       "contextSensitiveHelpUrl": "https://bc14baseapptablesonly.com/help/",
       "showMyCode": true,
-      "runtime": "8.0",
+      "runtime": "9.0",
       "target": "OnPrem"
     }
     ```
@@ -285,36 +285,7 @@ You'll create two versions of this extension. The first version contains the tab
     To build the extension package, press Ctrl+Shift+B.
 
 ## DATA UPGRADE
-<!--
-```powershell
-$OldBcServerInstance = 
-$NewBcServerInstance = "BC190"
-$TenantDatabase = "Demo Database BC (14-0)" # !!! This has to be present in the database server with the right permissions.
-$TenantId = "default"
-$ApplicationDatabase = "Demo Database BC (14-0)"
-$DatabaseServer = ".\BCDEMO"
-$MigrExtName = 
-$MigrExtTabOnlyVerPath = "C:\Users\jswymer\Documents\AL\bc14baseapptablesonly\My publisher_bc14baseapptablesonly_1.0.0.0.app"
-$MigrExtTabOnlyVerNo = 
-$MigrExtEmptyVerPath = "C:\Users\jswymer\Documents\AL\bc14baseapptablesonlymigration\My publisher_bc14baseapptablesonly_1.0.0.1.app"
-$MigrExtEmptyVerNo =  
-$SysAppEmptyVerPath = "C:\Users\jswymer\Documents\AL\bc14emptysysapp\Microsoft_System Application_14.0.0.0.app"
-$SysAppFinalVerPath = "\\vedfssrv01\DynNavFS\Ship\w1\19.0\30459\W1DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
-$BaseAppEmptyVerPath = "C:\Users\jswymer\Documents\AL\bc14empttbaseapp-19\Microsoft_Base Application_14.0.0.0.app"
-$BaseAppFinalVerPath  = "\\vedfssrv01\DynNavFS\Ship\w1\19.0\30459\W1DVD\Applications\system application\source\Microsoft_System Application.app"
-$CustExtName = "C:\Users\jswymer\Documents\AL\MyTableEmpty\Default publisher_MyTable_1.0.0.0.app"
-$CustExtEmptyVerPath = "C:\Users\jswymer\Documents\AL\MyTableEmpty\Default publisher_MyTable_1.0.0.0.app"
-$CustExtEmptyVerNo = "C:\Users\jswymer\Documents\AL\custtblextempty\Default publisher_MyCustExt_1.0.0.0.app"
-$CustExtFinalVerPath = "C:\Users\jswymer\Documents\AL\custtblextempty\Default publisher_MyCustExt_1.0.0.0.app"
-$CustExtFinalVerNo = "C:\Users\jswymer\Documents\AL\custtblextempty\Default publisher_MyCustExt_1.0.0.0.app"
-$ApplicationAppPath = "\\vedfssrv01\DynNavFS\Ship\w1\19.0\30459\W1DVD\Applications\Application\Source\Microsoft_Application.app"
-$PartnerLicense = "C:\NAV Licenses\v16\16xLicense.flf"
-$OldBcVersion = "19.0.29894.30459"
-$NewBcVersion = "19.0.29894.30459"
-$BcVersion = "19.0.29894.30459"
-$NewBcVersion = "19.0.29894.30459"
-$AddinsFolder = "C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins
-```-->
+
 ## Task 6: Prepare databases
 
 1. Make backup of the databases.
@@ -328,22 +299,23 @@ $AddinsFolder = "C:\Program Files\Microsoft Dynamics 365 Business Central\190\Se
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
 
    [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
-   
+
 4. (Single-tenant only) Uninstall all extensions from the tenants.
 
     To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.  For example, you can uninstall all extensions with a single command:
 
     ```powershell
     Get-NAVAppInfo -ServerInstance <server instance name> -Tenant <tenant ID>| % { Uninstall-NAVApp -ServerInstance <server instance name> -Tenant <tenant ID> -Name $_.Name -Version $_.Version -Force}
-    ``` 
+    ```
 
-5.  (Single-tenant only) Unpublish all extensions from the application server instance.
+5. (Single-tenant only) Unpublish all extensions from the application server instance.
 
     To unpublish an extension, use the [Unpublish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/unpublish-navapp). For example, you can unpublish all extensions by using a single command:
 
     ```powershell
     Get-NAVAppInfo -ServerInstance <BC14 server instance> | % { Unpublish-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version }
     ```
+
 6. Unpublish all system, test, and application symbols.
 
     To unpublish symbols, use the Unpublish-NAVAPP cmdlet with the `-SymbolsOnly` switch.
@@ -360,6 +332,7 @@ $AddinsFolder = "C:\Program Files\Microsoft Dynamics 365 Business Central\190\Se
     ```powershell
     Dismount-NAVTenant -ServerInstance <server instance name> -Tenant <tenant ID>
     ```
+
 8. Stop the server instance.
 
     ```powershell
@@ -419,6 +392,7 @@ In this step, you configure the version 20 server instance. In particular, you c
     ```powershell
     Set-NavServerConfiguration -ServerInstance <server instance name> -KeyName "EnableTaskScheduler" -KeyValue false
     ```
+
     Be sure to re-enable task scheduler after upgrade if needed.
 4. Restart the server instance.
 
@@ -520,10 +494,11 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 2. Before continuing, wait until the data upgrade process completes, and the tenant status becomes operational. It can take several minutes before the process completes.
 
    To view the progress of the data upgrade, run Get-NavDataUpgrade cmdlet with the `–Progress` or `–Detailed` switches, like:
-   
+
    ```powershell
    Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Progress
    ```
+
    Or
 
    ```powershell
@@ -690,50 +665,7 @@ Run the data upgrade on the extensions in the following order:
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-<!--
-The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
 
-- Microsoft.Dynamics.Nav.Client.BusinessChart
-- Microsoft.Dynamics.Nav.Client.FlowIntegration
-- Microsoft.Dynamics.Nav.Client.OAuthIntegration
-- Microsoft.Dynamics.Nav.Client.PageReady
-- Microsoft.Dynamics.Nav.Client.PowerBIManagement
-- Microsoft.Dynamics.Nav.Client.RoleCenterSelector
-- Microsoft.Dynamics.Nav.Client.SocialListening
-- Microsoft.Dynamics.Nav.Client.SatisficationSurvey
-- Microsoft.Dynamics.Nav.Client.TimelineVisualization
-- Microsoft.Dynamics.Nav.Client.VideoPlayer
-- Microsoft.Dynamics.Nav.Client.WebPageViewer
-- Microsoft.Dynamics.Nav.Client.WelcomeWizard
-
-To upgrade the control add-ins from the client, do the following steps:
-
-1. Open the [!INCLUDE[](../developer/includes/prod_short.md)] client.
-2. Search for and open the **Control Add-ins** page.
-3. Choose **Actions** > **Control Add-in Resource** > **Import**.
-4. Locate and select the .zip file for the control add-in and choose **Open**.
-
-    The .zip files are located in the **Add-ins** folder of the [!INCLUDE[server](../developer/includes/server.md)] installation. There's a subfolder for each add-in. For example, the path to the Business Chart control add-in is `C:\Program Files\Microsoft Dynamics 365 Business Central\180\Service\Add-ins\BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip`.
-5. After you've imported all the new control add-in versions, restart Business Central Server instance.
-
-Alternatively, you can use the [Set-NAVAddin cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navaddin) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. For example, the following commands update the control add-ins installed by default. Modify the commands to suit:
-
-```powershell
-$InstanceName = 'BC190'
-$ServicesAddinsFolder = 'C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins'
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.BusinessChart' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'BusinessChart\Microsoft.Dynamics.Nav.Client.BusinessChart.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.FlowIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'FlowIntegration\Microsoft.Dynamics.Nav.Client.FlowIntegration.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.OAuthIntegration' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'OAuthIntegration\Microsoft.Dynamics.Nav.Client.OAuthIntegration.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.PageReady' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'PageReady\Microsoft.Dynamics.Nav.Client.PageReady.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.PowerBIManagement' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'PowerBIManagement\Microsoft.Dynamics.Nav.Client.PowerBIManagement.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.RoleCenterSelector' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'RoleCenterSelector\Microsoft.Dynamics.Nav.Client.RoleCenterSelector.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.SatisfactionSurvey' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'SatisfactionSurvey\Microsoft.Dynamics.Nav.Client.SatisfactionSurvey.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.SocialListening' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'SocialListening\Microsoft.Dynamics.Nav.Client.SocialListening.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.VideoPlayer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'VideoPlayer\Microsoft.Dynamics.Nav.Client.VideoPlayer.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WebPageViewer' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WebPageViewer\Microsoft.Dynamics.Nav.Client.WebPageViewer.zip')
-Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
-```
--->
 ## Task 19: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.

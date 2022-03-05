@@ -3745,7 +3745,7 @@
 #### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v20.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v19.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v20.md)
 ##### [From Versions 17, 18, or 19 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v20.md)
 ##### Related Articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
