@@ -20,7 +20,7 @@ This article describes how to upgrade a customized version 14 application to a v
 
 The upgrade is divided into two sections: Application Upgrade and Data Upgrade. The Application Upgrade section deals with upgrading the application code. For the application upgrade, you'll have to create several extensions. Some of these extensions are only used for upgrade purposes. The Data Upgrade section deals with upgrading the data on tenants - publishing, syncing, and installing extensions. For this scenario, the data upgrade consists of two phases for migrating data from the current tables to extension-based tables. The following figure illustrates the upgrade process.  
 
-![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC19.png "Upgrade on unmodified Business Central application") 
+[![Shows the upgrade on unmodified Business Central application.](../developer/media/Upgrade-BC14-custom-BC20.png)](../developer/media/Upgrade-BC14-custom-BC20-large.png#lightbox)
 
 The process uses two special features for migrating tables and data to extensions:
 
