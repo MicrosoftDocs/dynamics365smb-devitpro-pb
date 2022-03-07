@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.date: 03/08/2022
+ms.date: 03/07/2022
 ms.author: edupont
 ---
 
@@ -66,7 +66,7 @@ The Help pane shows four types of links:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
-If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](../includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.  
+If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.  
 
 ## Help users get unblocked
 
