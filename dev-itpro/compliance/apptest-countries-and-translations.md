@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 02/01/2022
 ms.reviewer: edupont
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: soalex
 ---
 
@@ -76,7 +75,6 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Mauritius|Partner|Planned, 2022 release wave 1|MU|South Africa North|
 |Mexico|Microsoft|Available|MX|South Central US|
 |Morocco|Partner|Available|MA|South Africa North|
-|Myanmar|Partner|Planned|MM|Southeast Asia, Singapore|
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
 |Nicaragua|Partner|Planned, 2022 release wave 1|NI|Brazil South|

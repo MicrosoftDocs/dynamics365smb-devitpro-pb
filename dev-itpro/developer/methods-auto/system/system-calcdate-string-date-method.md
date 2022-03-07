@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,7 +27,7 @@ NewDate :=   System.CalcDate(DateExpression: String [, Date: Date])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *DateExpression*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The date expression can be any length. The string is interpreted from left to right with one subexpression at a time. The following rules describe the valid syntax of date expressions:
 -   DateExpression = [\<Subexpression\>][\<Subexpression\>][\<Subexpression\>]
 -   \<Subexpression\> = [\<Sign\>] \<Term\>-   \<Sign\> = + | -

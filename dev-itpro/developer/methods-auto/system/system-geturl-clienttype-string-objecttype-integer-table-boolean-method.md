@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,7 @@ String :=   System.GetUrl(ClientType: ClientType [, Company: String] [, ObjectTy
 Specifies the client that you want to generate the URL for. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.
         
 *[Optional] Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the company that the URL must contain. If you do not specify a company, the URL will run in the user’s current company.
         
 *[Optional] ObjectType*  
@@ -55,7 +54,7 @@ Specifies whether to include filters that are defined on the object as a text st
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

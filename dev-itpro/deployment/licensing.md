@@ -5,7 +5,6 @@ description: Provides an overview of the licensing in Business Central
 ms.reviewer: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 01/19/2022
 ---

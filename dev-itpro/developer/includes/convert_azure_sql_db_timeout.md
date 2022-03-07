@@ -1,6 +1,5 @@
 ---
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 04/12/2021
 ms.author: jswymer

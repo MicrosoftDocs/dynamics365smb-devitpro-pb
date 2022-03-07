@@ -4,7 +4,6 @@ description: Learn how to create links from text and pictures fields in Word rep
 ms.author: jswymer
 ms.date: 11/22/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.tgt_pltfrm: na
 ---
 

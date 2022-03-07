@@ -1,21 +1,26 @@
 ---
-title: Prepare for major updates with preview environments | Microsoft Docs
+title: Prepare for major updates with preview environments
 description: Learn how to use preview sandboxes to help prepare for the next major update of Business Central online.
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 04/01/2021
+ms.date: 01/06/2022
 ms.author: edupont
 ---
 
 # Prepare for major updates with preview environments
 
 [!INCLUDE [admin-previews](../developer/includes/admin-previews.md)]
+
+The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
+
+![Generic timeline for steps to get a preview of a major update with sample dates for the two release waves each year.](../media/update-rollout-timeline-preview.png)
+
+For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md).  
 
 ## Practice and test
 
@@ -27,7 +32,7 @@ Once you have the preview, start using it:
 
     Upload and install your extensions into the sandbox environments created on the preview version and run through the functionality. Verify that the customization continues to work and is compatible with the new version.  
 
-    In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting **Deploy to** field to **Next major version**. This way the compatible version of your app will be used when you schedule upgrade of your production environment to the new major update once it becomes available.
+    In rare cases, if you discover any changes required for your per-tenant extension to become compatible with the next release, apply the changes to your app, test it again on a sandbox environment running on a preview version. Then, if tests complete successfully, upload the app into your production environment, setting the **Deploy to** field to *Next major version*. This way, the compatible version of your app will be used when you schedule the upgrade of your production environment to the new major update once it becomes available.
 
 3. Test the quality. If you run into issues related to the preview, please provide [feedback on Collaborate](#provide-feedback-on-the-preview).
 

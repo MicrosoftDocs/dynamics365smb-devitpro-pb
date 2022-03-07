@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,7 +27,7 @@ Ok :=   Dialog.Confirm(String: String [, Default: Boolean] [, Value1: Any,...])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the string that is displayed in the dialog box. Use a backslash (\\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
         
 *[Optional] Default*  

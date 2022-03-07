@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,10 +27,10 @@ Logs a trace message to a telemetry account.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *EventId*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The event ID of trace message.   
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The message logged into telemetry.   
 *Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
@@ -45,16 +44,16 @@ Specifies the scope of this trace message:
 - ExtensionPublisher: Will emit this trace message to the Extension Publisher's telemetry account.
 - All: Will emit this trace message additionally to the Partner's telemetry account.   
 *Dimension1*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
 *Value1*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value of Dimension1.   
 *[Optional] Dimension2*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
 *[Optional] Value2*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value of Dimension2.   
 
 

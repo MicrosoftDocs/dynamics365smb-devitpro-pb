@@ -1,5 +1,5 @@
 ---
-title: "How to: Publish and Install an Extension v2.0"
+title: "How to: Publish and Install an Extension"
 description: "Description of the process of publishing and installing an extension"
 author: jswymer
 ms.custom: na
@@ -8,11 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
-# Publishing and Installing an Extension v2.0
+# Publishing and Installing an Extension
 
 To make your extension available to tenant users requires three basic tasks: publish the extension package to the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] server instance, synchronize the extension with the tenant database, and install the extension on the tenant.
 

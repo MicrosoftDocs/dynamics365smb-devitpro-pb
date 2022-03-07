@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 11/02/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: grobyns
 ---
 
@@ -130,4 +129,4 @@ If an action or other code element points to a now removed object, then the guid
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
-[Obsolete Attribute](methods/devenv-obsolete-attribute.md)
+[Obsolete Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)
