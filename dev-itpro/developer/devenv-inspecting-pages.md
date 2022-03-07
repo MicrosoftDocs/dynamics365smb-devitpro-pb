@@ -98,7 +98,7 @@ The **Table Fields** tab displays information about all fields in the source tab
 Each field is shown with the following information:
 
 - Field name as specified by the [Name property](./properties/devenv-properties.md).
-- Field number as specified by the [Field No property](properties/devenv-field-no.-property.md).
+- Field number as specified by the [Field No property](/dynamics365/business-central/dev-itpro/developer/properties/devenv-properties).
 - Data type as specified by the [Data Type property](./properties/devenv-properties.md).
 - If the field is a primary key, it's indicated by **PK**. A primary is  specified by the [Key property](./properties/devenv-properties.md).
 - Value of the field.
