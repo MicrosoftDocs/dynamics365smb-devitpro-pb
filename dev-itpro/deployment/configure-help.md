@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 02/01/2022
+ms.date: 03/07/2022
 ms.author: edupont
 ---
 
@@ -35,7 +35,7 @@ For inspiration for how to create a website that can host your content, take a l
 For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For example, use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to help you deploy content to an Azure Web App. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files). Other types of websites can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
-> The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-platform.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
+> The legacy Dynamics NAV Help Server component was deprecated and removed in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-platform.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
 > The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
@@ -81,38 +81,16 @@ If you want to use Help Server, then you must specify the server and port in the
 
 > [!IMPORTANT]
 > In version 18 and later versions, if you use the legacy Dynamics NAV Help Server component as a standalone website, then you must use the settings for the online library that is described in the previous section.
->
-> The following content in this section applies to using Help Server as it was originally intended to be used. However, this type of usage is no longer supported, starting with 2021 release wave 1.
 
-The navsettings.json file must contain the following settings in the `NAVWebSettings` element:
-
-```json
-{
-  "NAVWebSettings": {
-    //HelpServer: Name of the Dynamics NAV Help Server to connect to,
-    "HelpServer": "https://myserver.com",
-    //HelpServerPort:  The listening TCP port for the Dynamics NAV Help Server. Valid range: 1-65535,
-    "HelpServerPort": "49000",
-    // [...more keys]
-  },
-  "ApplicationIdSettings": {
-    // [...more keys]
-  }
-}
-```
-
-In the example, `https://myserver.com` represents the URL to the Help Server instance, and the value of the `HelpServerPort`setting determines that port 49000 on that webserver is where the content is. For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and administration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
+For more information, see [Configuring Microsoft Dynamics NAV Help Server](/dynamics-nav/configuring-microsoft-dynamics-nav-help-server) in the developer and administration content for [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)].  
 
 > [!IMPORTANT]
-> If you use Help Server, the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md) does not work. Neither does the original Help lookup mechanism that was based on filenames that reflected the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server?target=_blank).
+> If you use Help Server, context-sensitive Help does not work anymore. Neither the UI-to-Help mapping functionality that is described in [Configure Context-Sensitive Help](../help/context-sensitive-help.md), nor the original Help lookup mechanism that was based on filenames that reflected the object IDs, such as N_123.htm for the page object with the ID 123. For more information, see the blog post [Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server?target=_blank).
 
 > [!TIP]
-> If you are upgrading from [!INCLUDE [navsicily_md](../developer/includes/navsicily_md.md)] or later, you can reuse your existing Help Server content by simply replacing the product name and make any other changes that apply to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. Alternatively,deploy your existing content to an online library.
+> If you are upgrading from [!INCLUDE [navsicily_md](../developer/includes/navsicily_md.md)] or later, you can reuse your existing Help Server content by simply replacing the product name and make any other changes that apply to your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. But we encourage you to deploy the content to another website.
 
 [!INCLUDE [nav2017classichelp](../developer/includes/nav2017classichelp.md)]
-
-> [!IMPORTANT]
-> Specifically for the preview of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] in India, the installation of Help Server fails due to missing files on the installation media. The solution is to install Help Server without the HTML files for local functionality and instead pick up the content from GitHub. For more information, see [Get updates from Microsoft](../help/contributor-guide.md#get-updates-from-microsoft).
 
 ## Deploy content to your website
 
@@ -134,10 +112,12 @@ In versions older than 2022 release wave 1, the in-product search includes searc
 
 ### Optional: Get Microsoft's content
 
-If you deploy a solution that customizes Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. In most other cases, such as if you build an add-on app, you do not need Microsoft's content. Your own content will supplement Microsoft's content in the same way that your code supplements Microsoft's code. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
+If you deploy a solution that customizes Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. In most other cases, such as if you build an add-on app, you do *not* need Microsoft's content. Your own content will supplement Microsoft's content in the same way that your code supplements Microsoft's code. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 > [!IMPORTANT]
-> The remainder of this section is for those people who need a copy of Microsoft's content to deploy to a website along with their own content.  
+> The remainder of this section is for those people who need a copy of Microsoft's content to deploy to a website along with their own content. In many cases, you do not need to customize Microsoft's content, and this section is irrelevant for you. However, if you deploy a customized solution on-premises or in a closed environment, then you might need to include Microsoft's content in your Help website.
+
+[!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
 Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
