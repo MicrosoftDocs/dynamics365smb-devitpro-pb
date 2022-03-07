@@ -39,7 +39,7 @@ The following example extends the **Contact List** report only by adding a `rend
 2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package**. The `MyExcelContactList.xlsx` will be generated, as you can see in the right pane of Visual Studio Code. 
 1. Right-click the generated `MyExcelContactList.xlsx` file, and choose **Reveal in File Explorer**. This will open File Explorer.
 1. Choose the `MyExcelContactList.xlsx` file in File Explorer and open it in Excel.  
-Excel now opens and you should see the dataset of the Contact List.
+Excel now opens and you should see the dataset of the Contact List. **Note** that it is important to not change the dataset in Excel, only the layout.
 1. In Excel, go to the **Insert** tab, choose **PivotTable**, and then choose **From Table/Range** with the default options of **Data** and **New worksheet**. Choose the **OK** button.
 1. From the **PivotTable Fields** pane to the right, choose a suitable number of fields to add to the report.
 1. Save the report and close the Excel window.
