@@ -108,7 +108,7 @@ You can see an example of how to deploy content to an Azure web app in the artic
 >
 > However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
-In versions older than 2022 release wave 1, the in-product search includes searching content on the ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
+In versions older than 2022 release wave 1, the in-product search includes searching content on the [Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
 
 ### Optional: Get Microsoft's content
 
