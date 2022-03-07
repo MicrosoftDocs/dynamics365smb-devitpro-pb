@@ -17,7 +17,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 19.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](INSERT).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-19-5-for-microsoft-dynamics-365-business-central-on-premises-2021-release-wave-2-application-build-19-5-36700-platform-build-19-0-36625-c9b94708-c269-4b64-a288-1d7c7c50f919).
 
 ## Localization updates
 
