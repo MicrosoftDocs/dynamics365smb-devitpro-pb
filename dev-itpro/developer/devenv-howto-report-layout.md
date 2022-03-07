@@ -73,6 +73,7 @@ You'll now see the generated report in preview mode.
 
 > [!NOTE]  
 > If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
+>
 >```json
 >"al.compilationOptions": {
 >   "generateReportLayout": true
@@ -80,6 +81,28 @@ You'll now see the generated report in preview mode.
 >```
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
+
+## Selecting the Microsoft Word rendering engine
+
+The rendering of Word Reports is controlled by an application feature key.
+Enabling the key `RenderWordReportsInPlatform` in `Feature Mananagement` will switch the Microsoft Word report rendering to the new platform rendering which supports multiple layouts and new triggers for Save and Download actions. 
+Application rendering is obsolete and will be deprecated in a future release. Stay on the old platform if you have extensions that use custom Word layouts and that cannot use the new platform (dependencies on events OnBeforeMergeDocument or OnBeforeMergeWordDocument).
+
+The following AL snippet can be used in code to implement rendering differentiation in extensions.
+
+```al
+ var
+    FeatureKey: Record "Feature Key";
+    PlatformRenderingInPlatformTxt: Label 'RenderWordReportsInPlatform', Locked = true;
+
+// code snip
+if (FeatureKey.Get(PlatformRenderingInPlatformTxt) and (FeatureKey.Enabled = FeatureKey.Enabled::"All Users")) then
+    // Platform rendering of Word Reports, Custom layout types will be handled by OnCustomDocumentMerger event
+    ....
+else
+    // App rendering - The type will be treated like a word file and rendered by the app.
+    ...
+```
 
 ## See Also
 
