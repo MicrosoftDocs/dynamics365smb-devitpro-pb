@@ -24,7 +24,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
 |Norway | Updated SAF-T export | Fixed issue with exporting bank data in SAF-T in accordance with BankAccountStructure |
-| India | Preview Posting on Service Transfer Order | Document Service Transfer Order in Indian localization now has Preview Posting action to enable review the different types of entries that will be created when you post the document. |
+| India | Preview Posting on Service Transfer Order | Document Service Transfer Order in the Indian localization now has Preview Posting action to enable review of the different types of entries that will be created when you post the document. |
 
 ## Release Plan  
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2021 release wave 2 (release from October 2021 through March 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
