@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Installing a [!INCLUDE[prodshort](../developer/includes/prodshort.md)] 2019 Release Wave 2 Update

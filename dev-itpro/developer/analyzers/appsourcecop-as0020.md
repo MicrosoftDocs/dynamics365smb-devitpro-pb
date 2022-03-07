@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -25,9 +24,9 @@ The event attribute type cannot be changed because it might break dependent exte
 ## Remarks
 As part of your extension, you can [publish events](../devenv-publishing-events.md) that will be available for other extensions [to subscribe to](../devenv-subscribing-to-events.md).
 In AL, you can define events of the following types:
-- [BusinessEvent](../methods/devenv-business-attribute.md)
-- [IntegrationEvent](../methods/devenv-integration-attribute.md)
-- [InternalEvent](../methods/devenv-internal-attribute.md)
+- [BusinessEvent](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-businessevent-attribute)
+- [IntegrationEvent](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute)
+- [InternalEvent](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internalevent-attribute)
 
 This rule verifies that the conversion of an event from one version to another does not potentially break dependent extensions.
 
@@ -235,4 +234,4 @@ codeunit 50120 AnotherCodeunit
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

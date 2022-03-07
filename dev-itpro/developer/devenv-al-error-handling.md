@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -33,7 +32,7 @@ For examples of using different error handling methods in AL, see the following 
 |[ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) | Contains a set of methods that helps identify errors, classify these errors, send errors to telemetry and display UI messages. Go to the data type topic for an overview.|
 |[System Data Type](methods-auto/system/system-data-type.md)|Is a complex data type and contains multiple methods for getting and classifying errors.|
 |[GetLastErrorCallStack Method](methods-auto/system/system-getlasterrorcallstack-method.md)| Gets the call stack from where the last error occurred. |
-|[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode.method.md)| Gets the classification of the last error that occurred. |
+|[GetLastErrorCode Method](methods-auto/system/system-getlasterrorcode-method.md)| Gets the classification of the last error that occurred. |
 |[GetLastErrorObject Method](methods-auto/system/system-getlasterrorobject-method.md)| Gets the last System.Exception object that occurred. |
 |[GetLastErrorText Method](methods-auto/system/system-getlasterrortext--method.md)| Gets the last error that occurred in the debugger. |
 
@@ -46,11 +45,11 @@ For examples of different error handling strategies, see the following table:
 
 | If you want to...| Then use|
 |------------------|---------|
-| Run a code unit and decide to do something if an error occurs. | `if Codeunit.run() then` |
+| Run a code unit and decide to do something if an error occurs. | `if not Codeunit.run()`. For more information, see [Codeunit.Run return value](methods-auto/codeunit/codeunit-run-method.md) |
 | Check for an error and show a simple error dialog to the user. |`Dialog.Error(Message: ErrorInfo)`. For more information, see [Error Method](methods-auto/dialog/dialog-error-errorinfo-method.md). |
-| Check for an error and show an error dialog to the user with added support information. | [Using the ErrorInfo Data Type](methods-auto/errorinfo/errorinfo-data-type.md) |
-| Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
+| Check for an error and show an error dialog to the user with added support information. | [Using the ErrorInfo Data Type with the Error Method](methods-auto/errorinfo/errorinfo-data-type.md) |
 | Do bulk validations in AL and not show an error dialog for each of them to the user. | [Collecting Errors](devenv-error-collection.md) |
+| Catch errors raised by other AL methods| [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md) | 
 | Catch errors/exceptions that are thrown during .NET framework interoperability operations (on-premises only). | [Handling .NET Exceptions using Try Methods](devenv-handling-errors-using-try-methods.md)|
 
 ## See also

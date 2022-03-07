@@ -4,10 +4,9 @@ description: "Best Practices for writing AL code."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 09/10/2021
+ms.date: 03/04/2022
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -15,10 +14,10 @@ ms.author: solsen
 
 This page defines some of the best practices to follow when writing AL code for [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. These best practices are additional to rules and guidelines that are caught during compilation of AL code. We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
-> [!NOTE]  
-> If a best practice is not mentioned here, the PreCal rules listed [here](https://community.dynamics.com/nav/w/designpatterns/156.3-cal-coding-guidelines) apply.
+> [!TIP]  
+> Check out the great work that is going on at [https://alguidelines.dev/](https://alguidelines.dev/). New design patterns and best practices are being established, so join the discussions, and contribute through [GitHub](https://github.com/microsoft/alguidelines).
 
-## Extension structure 
+## Extension structure
 
 An extension is fully contained in a single folder. This folder often contains multiple files, such as `app.json` and `launch.json` files, perhaps an image file representing the extension's logo, various folders for source; "\src", other resources; "\res", and a test folder; "\test" folder. The extension does not need to follow a flat structure, which means that, depending on the amount of application files, additional folders can be used in the "src" or "test" folders to group objects based on their functionality, which can help make maintaining a large .al project easier.
 

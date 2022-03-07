@@ -7,7 +7,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 
@@ -46,12 +45,12 @@ end;
 
 The parameters of the methods that are being handled are passed as parameters to the handler methods. For example, when **Message** is called in a test method, the parameter of the **Message** method is passed as the parameter of the **MessageHandler** method. For page and report handlers, the page, report, or request page is passed as the parameter of the **PageHandler**, **ModalPageHandler**, **ReportHandler**, or **RequestPageHandler**.
 
-You can call handler methods from methods that have the [Test Attribute](methods/devenv-test-attribute.md) and then specify the handler methods that it will use in the [HandlerFunctions Attribute](methods/devenv-handlerfunctions-attribute.md). The code inside the test method should simulate that the UI was actually raised and some values entered or some actions were taken. You can specify more than one handler method by separating the handler method names with a comma. 
+You can call handler methods from methods that have the [Test Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-test-attribute) and then specify the handler methods that it will use in the [HandlerFunctions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute). The code inside the test method should simulate that the UI was actually raised and some values entered or some actions were taken. You can specify more than one handler method by separating the handler method names with a comma. 
 
 > [!NOTE]
-> Every handler method that you enter in the [HandlerFunctions Attribute](methods/devenv-handlerfunctions-attribute.md) of a test method must be called at least one time in the test method. If you run a test method that has a handler method listed that is not called, then the test fails.
+> Every handler method that you enter in the [HandlerFunctions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute) of a test method must be called at least one time in the test method. If you run a test method that has a handler method listed that is not called, then the test fails.
 
-The following example shows a test method that uses the [HandlerFunctions Attribute](methods/devenv-handlerfunctions-attribute.md) to call the **MessageHandler** method.
+The following example shows a test method that uses the [HandlerFunctions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-handlerfunctions-attribute) to call the **MessageHandler** method.
 
 ```AL
 [Test]

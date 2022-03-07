@@ -2,7 +2,6 @@
 title: Analyzing Web Service Access Key Telemetry | Microsoft Docs
 description: Learn about the web service access key telemetry in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -16,9 +15,11 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17.3, and later
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data about the success or failure of authenticating web service access keys on web service requests.
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data about the success or failure of authenticating web service access keys on web service requests. 
 
-In a future release, web service access key feature will be deprecated. As a partner or customer, this data lets you monitor the use of web service access keys on your environments in preparation for this change.
+[!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
+
+As a partner or customer, this data lets you monitor the use of web service access keys on your environments in preparation for the deprecation of the feature.
 
 For information about web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 

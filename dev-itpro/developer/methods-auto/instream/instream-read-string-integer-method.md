@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,7 +29,7 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 An instance of the [InStream](instream-data-type.md) data type.  
 
 *Variable*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

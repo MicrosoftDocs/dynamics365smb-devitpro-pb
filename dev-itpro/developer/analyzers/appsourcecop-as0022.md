@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -29,7 +28,7 @@ This rule verifies that procedures which were exposed to dependent extensions in
 The availability of a procedure is defined by:
 - the access modifier set on the object declaring the procedure
 - the access modifier set on the procedure
-- the [Scope attribute](../methods/devenv-scope-attribute.md) that is added on the procedure
+- the [Scope attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-scope-attribute) that is added on the procedure
 
 ## Code examples triggering the rule
 
@@ -163,4 +162,4 @@ In version 2.0, the procedure `MyOnPremProcedure` becomes available for both `On
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

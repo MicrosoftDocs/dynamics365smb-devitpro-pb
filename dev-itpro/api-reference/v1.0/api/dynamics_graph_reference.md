@@ -4,7 +4,6 @@ description: (v1.0) API documentation for integration with Microsoft Graph
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: get-started-article
 ms.devlang: na
 ms.tgt_pltfrm: na
