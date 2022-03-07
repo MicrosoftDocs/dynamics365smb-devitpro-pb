@@ -3,7 +3,7 @@ title: "Update 19.5 for Microsoft Dynamics 365 Business Central 2021 Release Wav
 description: Get an overview of new and changed capabilities in the 19.5 update of Business Central online, which is part of 2021 release wave 2.
 ms.author: a-emniel
 ms.custom: na
-ms.date: 02/16/2022
+ms.date: 03/07/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,4 +49,5 @@ To ensure no disruptions in integration between Business Central and Dataverse y
 The change will happen in March 2022. We strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
 
 **Join Directions NA on April 3-6, 2022**  
-Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536).
+
+Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536). 
