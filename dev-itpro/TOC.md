@@ -63,6 +63,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 ### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
 ### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
 ### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
@@ -393,14 +394,21 @@
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
 ### [View Table Data](developer/devenv-view-table-data.md)
-### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
-### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
 ### [Temporary Tables](developer/devenv-temporary-tables.md)
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
+## Reading and Writing data
+### [Data Access](administration/optimize-sql-data-access.md)
+### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
+### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
+### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
+### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
+### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
 ### Partial Records
 #### [Using Partial Records](developer/devenv-partial-records.md)
 #### [FAQ](developer/devenv-partial-records-faq.md)
@@ -3515,7 +3523,7 @@
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 #### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
 #### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 #### [Known OData Limitations](webservices/odata-known-limitations.md)
 ### SOAP
@@ -3681,6 +3689,11 @@
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### [Setting Up the Add-In for Outlook Integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
 ### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
+### Configuring Business Central Database
+#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
+#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
+#### [Using Table Partitioning and Data Compression](administration/using-sql-partitioning-and-compression.md)
+#### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
@@ -3693,18 +3706,8 @@
 ##### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 ##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
+### Analyzing Database Performance
 #### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-### SQL Server Performance
-#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
-#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
-#### [Data Access](administration/optimize-sql-data-access.md)
-#### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
-#### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
-#### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
-#### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
-#### Read Scale-Out
-##### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
-##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using Telemetry

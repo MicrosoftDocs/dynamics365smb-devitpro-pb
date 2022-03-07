@@ -25,11 +25,11 @@ XmlAttribute :=   XmlAttribute.Create(Name: String, Value: String)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The qualified name of the attribute. If the name is of the form {{namespace}}localName, it will be qualified with the given namespace.
         
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value of the attribute.  
 
 

@@ -21,16 +21,16 @@ The properties 'helpBaseUrl' and 'supportedLocales' are reserved for translation
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule validates that the manifest of your extension (app.json) does not specify the properties `helpBaseUrl` and `supportLocales`.
+This rule validates that the manifest of your extension (app.json) does not specify the properties `helpBaseUrl` and `supportedLocales`.
 For more information, see [JSON files](../devenv-json-files.md) and [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## How to fix this diagnostic?
 
-You must remove the properties `helpBaseUrl` and `supportLocales` from the manifest of your extension (app.json).
+You must remove the properties `helpBaseUrl` and `supportedLocales` from the manifest of your extension (app.json).
 
 ## Code example triggering the rule
 
-The following manifest specifies the properties `helpBaseUrl` and `supportLocales` and is then not valid.
+The following manifest specifies the properties `helpBaseUrl` and `supportedLocales` and is then not valid.
 
 ```JSON
 {

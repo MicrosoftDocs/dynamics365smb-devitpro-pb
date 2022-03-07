@@ -29,13 +29,13 @@ Atomizes the specified string and adds it to the XmlNameTable.
 An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The string to add.  
 
 
 ## Return Value
 *[Optional] AddedKey*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new atomized string or the existing one if it already exists
 
 

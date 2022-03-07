@@ -40,7 +40,7 @@ If you omit this parameter or set it to false, then the element attributes are n
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string representation of the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

@@ -29,7 +29,7 @@ HasNamespace :=   XmlNamespaceManager.HasNamespace(Prefix: String)
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Prefix*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The prefix of the namespace you want to find.  
 
 

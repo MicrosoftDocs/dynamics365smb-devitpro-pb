@@ -29,7 +29,7 @@ View :=   FilterPageBuilder.GetView(Name: String [, UseNames: Boolean])
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
         
 *[Optional] UseNames*  
@@ -40,7 +40,7 @@ Specifies whether a field caption or field number should be returned. This param
 
 ## Return Value
 *View*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The view that is configured for the filter control that is identified by Name.
 
 

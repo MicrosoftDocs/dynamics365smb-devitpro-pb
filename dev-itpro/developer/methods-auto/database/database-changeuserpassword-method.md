@@ -29,11 +29,11 @@ Changes the password for the current user.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *OldPassword*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The old password for the user.
         
 *NewPassword*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new password for the user.  
 
 

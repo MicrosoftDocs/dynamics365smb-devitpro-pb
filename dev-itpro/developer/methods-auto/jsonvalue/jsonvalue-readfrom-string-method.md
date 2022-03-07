@@ -29,7 +29,7 @@ Reads the JSON data into a JsonValue variable.
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Data*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The String object from which the JSON data will be read.  
 
 
