@@ -24,12 +24,13 @@ The development environment contains a code action that can convert the *legacy 
 
 ## Rendering section
 
-The rendering section consists of one or more named layout declarations.
+The `rendering` section consists of one or more named layout declarations.
 
-### Layout declaration
+### Layout declaration in AL 
 
-Properties Type and LayoutFile are mandatory, whereas the Caption and Summary properties are optional, but strongly recommended. The application will show the translated caption and summaries to the end-user, with fallback to the layout name in case the caption is undefined.
-The MimeType property is only supported if the Type is declared as Custom, and is a free text string. It's recommended that it follows the standard naming for mime types or follows this path Application/Report/ExtensionName (replace ExtenasionName with a shortform that identifies the ownning extension). When custom render layouts are being copied by users (for customization), the mimetype follows the layout and can be verified during selection.
+When declaring a layout in AL, the properties [Type](properties/devenv-type-property.md) and [LayoutFile](properties/devenv-layoutfile-property.md) are mandatory, whereas the properties [Caption](properties/devenv-caption-property.md) and [Summary](properties/devenv-summary-property.md) are optional, but strongly recommended. The application will show the translated caption and summaries to the end-user, with fallback to the layout name in case the caption is undefined. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
+
+The [MimeType](properties/devenv-mimetype-property.md) property is only supported if the `Type` is declared as `Custom`, and is a free-text string. It's recommended that it follows the standard naming for mime types or follows this path Application/Report/ExtensionName (replace ExtenasionName with a shortform that identifies the ownning extension). When custom render layouts are being copied by users (for customization), the mimetype follows the layout and can be verified during selection.
 
 ```al
 layout(name)
