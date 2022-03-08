@@ -90,7 +90,7 @@ The reportAction dimension shows actions taken to generate a report. The action 
 |Print|The user selected to print the report.|
 |Preview|The user selected to preview the report from the request page.|
 |Save|The report was saved to a file by a call to the [SaveAs method](/dynamics365/business-central/dev-itpro/developer/methods-auto/report/report-saveas-method) in AL code.|
-|Schedhule|The user selected to schedule the report from the request page.|
+|Schedhule|The user selected to schedule the report from the request page. <!-- haven't seen this. seems to show as saved -->|
 |Download|The user downloaded the report as a file from the request page.  |
 |Parameters|Parameters and filters were collected from request page without rendering the output.|
 
@@ -103,12 +103,10 @@ The documentFormat dimension shows the output of the generated report as a resul
 |None|There was no output, for example, the user canceled.|
 |Rdlc|The output was an .rdlc file type.|
 |Word|The output was an .docx file type.|
-|Excel|The output was an .xlsx file type.|
+|Excel|The output was an .xlsx file type that included the layout and dataset.|
 |ExcelDataset|The output was an .xlsx file type that contained the dataset only.|
 |Custom|The output was an custom file type.|
 |ProcessingOnly|The action was for processing report without any kind of layout.|
-
-
 
 ## Failed report generation
 
