@@ -37,11 +37,13 @@ Data is migrated using an Azure service called Azure Data Factory (ADF). ADF is 
 
 ## Are there any limits on the amount or type of data that will migrate?
 
-There are no restrictions on the type of data that can be migrated. In the current version of Business Central, the migration tool is by default limited to migrate databases up to 80 GB. If your database is larger than 80 GB, we recommend that you reduce the number of companies that you are migrating data for. You can specify which companies to include in the migration in the assisted setup wizard.
+There are no restrictions on the type of data that can be migrated. [!INCLUDE [db-storage-limit](../includes/db-storage-limit.md)]  
+
+We recommend that you reduce the number of companies that you are migrating data for in each migration run. You can specify which companies to include in the migration in the assisted setup wizard.  
 
 If you want to add more companies after the first selection of companies, you can add additional companies in the **Cloud Migration Management** page in Business Central online. For more information, see [Run the tool multiple times](migrate-data.md#run-the-tool-multiple-times).
 
-If you are looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful.  
+If you are looking at migrating databases larger than 80 GB, we recommend that you contact the support team and work with them to make sure that the migration is successful. See also [Managing Capacity](tenant-admin-center-capacity.md).  
 
 ## Is my SQL connection string required to set up the connection?
 
