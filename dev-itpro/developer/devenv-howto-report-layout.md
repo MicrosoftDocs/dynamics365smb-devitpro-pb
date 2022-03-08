@@ -98,12 +98,12 @@ The following AL snippet can be used in code to implement rendering differentiat
     FeatureKey: Record "Feature Key";
     PlatformRenderingInPlatformTxt: Label 'RenderWordReportsInPlatform', Locked = true;
 
-// code snip
+// code snippet
 if (FeatureKey.Get(PlatformRenderingInPlatformTxt) and (FeatureKey.Enabled = FeatureKey.Enabled::"All Users")) then
-    // Platform rendering of Word Reports, Custom layout types will be handled by OnCustomDocumentMerger event
+    // Platform rendering of Word reports, Custom layout types will be handled by the OnCustomDocumentMerger event
     ....
 else
-    // App rendering - The type will be treated like a word file and rendered by the app.
+    // App rendering - The report type will be treated like a Word file and rendered by the application
     ...
 ```
 
