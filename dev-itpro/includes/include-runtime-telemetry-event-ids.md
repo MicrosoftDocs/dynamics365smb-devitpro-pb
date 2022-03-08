@@ -21,5 +21,5 @@
 | RT0019 | Outgoing Web service requests  | [Web Service Called (Outgoing): {endpoint}](../administration/telemetry-webservices-outgoing-trace.md) |
 | RT0020 | Web service key request| [Authentication with Web Service Key succeeded: {endpoint}](../administration/telemetry-webservices-access-key-trace.md#succeeded) |
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](../administration/telemetry-webservices-access-key-trace.md#failed) |
-|RT0023||[Verbose telemetry enabled for session: {sessionId}]()|
-|RT0024|||
+|RT0023|Troubleshooting|[Verbose telemetry enabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#enabled)|
+|RT0024|Troubleshooting|[Verbose telemetry disabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#enabled)|
