@@ -1,6 +1,6 @@
 ---
-title: "Report Layout declarations"
-description: Describe the Report layout declarations.
+title: "Report Layout Definition"
+description: Report layout definitions in AL for Business Central.
 ms.custom: na
 ms.date: 04/03/2022
 ms.reviewer: solsen
@@ -11,9 +11,9 @@ ms.service: "dynamics365-business-central"
 author: nhsejth
 ---
 
-# Report layout declarations
+# Report Layout Definitions
 
-Report layouts can be specified in one of two methods in the report AL object:
+When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. You can use the [Report Object](devenv-report-object-md) and [Report Extension Object](devenv-report-ext-object.md) to define reports in AL. When you define the layout section of a report, there are two ways to do that.
 
 1. The legacy layout definition support the use of one RDLC layout and one Microsoft Word layout per AL object and you can specify which report layout type is the default.
 1. The rendering section within the AL object allows you to specify a number of named layouts in the object and yoy specify the default layout by name and not by type. This is the recommended syntax to use.
