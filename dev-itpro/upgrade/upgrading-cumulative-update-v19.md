@@ -1,5 +1,5 @@
 ---
-title: Install a version 9 update
+title: Install a version 19 update
 description: This article describes the tasks required for getting the monthly version 19 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
 ms.date: 09/01/2021
@@ -190,6 +190,9 @@ Also, to ensure that the existing published extensions work on the new platform,
 ## Convert existing database to new platform
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
 
     ```powershell

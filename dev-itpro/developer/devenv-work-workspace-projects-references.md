@@ -98,7 +98,7 @@ To control how dependency publishing is performed on the server, the `launch.jso
 
 ## Incremental Build setting
 
-If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project refernces, all resolution will happen from the referenced project, instead of happening from an app in the `\packagecache` folder which will enhance the build time. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolution will happen from the referenced project, instead of happening from an app in the `\packagecache` folder which will enhance the build time. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 ## See also
 

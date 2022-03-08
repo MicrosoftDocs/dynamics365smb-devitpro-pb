@@ -96,6 +96,9 @@ In event viewer, you'll see the following error:
 To workaround this issue, activate the `EnableLegacyIterationCount` feature switch by completing these steps.
 
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+
 2. Run the following command to determine which feature switches are enabled:
 
    ```powershell
