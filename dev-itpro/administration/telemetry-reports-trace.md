@@ -101,10 +101,10 @@ The documentFormat dimension shows the output of the generated report as a resul
 |Value|Description|
 |-----|-----------|
 |None|There was no output, for example, the user canceled.|
-|Rdlc|The output was an .rdlc file type.|
-|Word|The output was an .docx file type.|
-|Excel|The output was an .xlsx file type that included the layout and dataset.|
-|ExcelDataset|The output was an .xlsx file type that contained the dataset only.|
+|Rdlc|The output was a .rdlc file type.|
+|Word|The output was a .docx file type.|
+|Excel|The output was a .xlsx file type that included the layout and dataset.|
+|ExcelDataset|The output was a .xlsx file type that contained the dataset only.|
 |Custom|The output was an custom file type.|
 |ProcessingOnly|The action was for processing report without any kind of layout.|
 
