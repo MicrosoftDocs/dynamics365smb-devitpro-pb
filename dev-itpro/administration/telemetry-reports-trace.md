@@ -67,6 +67,7 @@ The custom dimensions that are of particular interest for this operation include
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|reportAction|reportAction|
 |reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
@@ -75,6 +76,7 @@ The custom dimensions that are of particular interest for this operation include
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements<sup>[\[1\]](#1)</sup>.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
+
 
 <sup><a name=1>1</a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
@@ -114,6 +116,7 @@ The following table explains the general dimensions of the **Failed report gener
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
+|reportAction|Specifies the action that was done on the report.|
 |result|Specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
 |serverExecutionTime|Specifies the amount of time used by service on the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed. |
