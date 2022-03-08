@@ -21,6 +21,7 @@
 |Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-webservices-outgoing-trace.md)|
 |Table index trace<sup>[\[3\]](#3)</sup>|Provides information about the addition or removal of a table index.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-table-index-trace.md) |
 |Task scheduler lifecycle|Provides information the execution of scheduled tasks.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-task-scheduler-trace.md) |
+|Verbose telemetry enabled/disabled trace<sup>[\[5\]](#5)</sup>|Provides about when additional logging is enabled and disabled from the client.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-verbose-logging-trace.md) |
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-webservices-access-key-trace.md)|
 
 <sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
@@ -30,3 +31,5 @@
 <sup>3</sup><a name="3"></a>Introduced in Business Central 2020 release wave 1, version 17.1. For extension telemetry, this signal was introduced in 2021 release wave 1, version 18.1.
 
 <sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
+
+<sup>5</sup><a name="4"></a>Introduced in Business Central 2022 release wave 1, version 20.
