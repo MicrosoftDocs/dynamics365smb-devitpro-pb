@@ -15,13 +15,15 @@ ms.author: jswymer
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)] 
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data about the success or failure of authenticating web service access keys on web service requests. 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] users can temporarily set up their environment to emit more verbose telemetry by going to the **Help and Support** page in the client and selecting **Additional Logging**.  They'll typically only do this when asked by a partner or support representative to help troubleshoot problems. This additional logging will continue for 15 minutes or until the user closes the browser or signs out of Business Central&mdash;then it's turned off
 
-For information about web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
+A telemetry trace is recorded whenever additional logging is turned on or off.
+
+For information about enabling additional logging, see [https://docs.microsoft.com/en-us/dynamics365/business-central/product-help-and-support#troubleshooting](https://docs.microsoft.com/en-us/dynamics365/business-central/product-help-and-support#troubleshooting).
 
 ## <a name="enabled"></a>Verbose telemetry enabled for session
 
-Occurs when **Additional Logging** is turned on from the **Help and Support** page in the client. 
+Occurs when additional logging is turned on from the **Help and Support** page in the client. 
 
 ### General dimensions
 
@@ -53,7 +55,7 @@ The following table explains the custom dimensions included in the trace.
 
 ## <a name="enabled"></a>Verbose telemetry disabled for session
 
-Occurs when **Additional Logging** is turned off because a user closed the browser in which Business Central was running or they signed out of Business Central. 
+Occurs when additional logging is turned off because a user closed the browser in which Business Central was running or they signed out of Business Central.
 
 ### General dimensions
 
