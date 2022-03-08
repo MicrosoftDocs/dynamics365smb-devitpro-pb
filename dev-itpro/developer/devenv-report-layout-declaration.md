@@ -13,10 +13,12 @@ author: nhsejth
 
 # Report Layout Definitions
 
+[!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
+
 When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. You can use the [Report Object](devenv-report-object-md) and [Report Extension Object](devenv-report-ext-object.md) to define reports in AL. When you define the layout section of a report, there are two ways to do that.
 
-1. The legacy layout definition support the use of one RDLC layout and one Microsoft Word layout per AL object and you can specify which report layout type is the default.
-1. The rendering section within the AL object allows you to specify a number of named layouts in the object and yoy specify the default layout by name and not by type. This is the recommended syntax to use.
+1. In versions prior to [!INCLUDE[prod_short](../includes/prod_short.md)] release wave 1, layout definitions support the use of one RDL layout and one Microsoft Word layout per AL object and then you can specify which report layout type is the default.
+2. The rendering section within the AL object allows you to specify a number of named layouts in the object and yoy specify the default layout by name and not by type. This is the recommended syntax to use.
 
 The development environment contains a code action that can convert the legacy layout definition into the new rendering section for easy update during application update (AL codeactions must be enabled in the VS Code settings file).
 
