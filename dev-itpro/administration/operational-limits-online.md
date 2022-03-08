@@ -108,6 +108,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Max request queue size|The maximum number of pending OData V4 requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
 |Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. |8 minutes|
+|Max Number of Subscriptions|The maximum number of Webhook subscriptions. |200|
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|
