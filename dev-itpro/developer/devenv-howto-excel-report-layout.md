@@ -49,6 +49,14 @@ Excel now opens and you should see the dataset of the Contact List. **Note** tha
 1. On the request page, choose the **Download** button, and once the report is downloaded, open it.
 1. In Excel, you should now see the Contact List report as a pivot table, sorted as you specified in step 6.
 
+> [!NOTE]  
+> If the report layout is not generated, open the `settings.json` from Visual Studio Code. Use **Ctrl+Shift+P**, then choose **Preferences: Open User Settings**, locate the **AL Language extension**. Under **Compilation Options**, choose **Edit in settings.json** and add the following line:  
+>
+>```json
+>"al.compilationOptions": {
+>   "generateReportLayout": true
+> }
+>```
 
 It is possible to specify multiple layouts for a report. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
