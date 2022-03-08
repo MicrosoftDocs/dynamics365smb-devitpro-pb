@@ -1,9 +1,9 @@
 ---
-title: "Warnings that will turn or have turned into errors"
+title: "Warnings Turning into Errors Overview"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# Warnings that will turn or have turned into errors
+# Warnings Turning into Errors Overview
 
 This topic lists all the warning diagnostics that will turn or have turned into an error in the specified Business Central release.
 
