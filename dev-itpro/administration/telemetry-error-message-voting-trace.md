@@ -55,7 +55,7 @@ The following table explains the custom dimensions included in the trace.
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |hostType|Specifies [tbd]|
-|environmentName|Specifies the name of the tenant environment. Not included with Business Central on-premises. See [Managing Environments](tenant-admin-center-environments.md).|
+|environmentName|Specifies the name of the tenant environment. This dimension isn't included with Business Central on-premises. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |errorMessage|Specifies the error shown to the user.|
 |exceptionId|Specifies the GUID assigned to the error.|
