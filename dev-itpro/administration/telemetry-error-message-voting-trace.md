@@ -34,7 +34,7 @@ The following table explains the general dimensions included in the trace. The t
 |Dimension|Description or value|
 |---------|-----|-----------|
 |message|**User gave feedback on error message: [OK|Not OK]**|
-|severityLevel|**1**|
+|severityLevel|**3**|
 
 ### Custom dimensions
 
