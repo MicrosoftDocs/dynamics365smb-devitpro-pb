@@ -25,6 +25,12 @@ The following sections provide the supported upgrade paths to the different [!IN
 > [!NOTE]
 > Minor updates are regularly made available for each release wave. Not all minor updates between two releases are compatible. Make sure you upgrade to a release update that's compatible with your current version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
 
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 Release Wave 1 (v20)
+|  Source version  |  Path  |
+|------------|--------------|
+|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)] (version 8)</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] (version 9)</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)] (version 10)</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)] (version 11)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] October 2018 (version 13)</li></ul>|<ol><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20)</li></ol>This path requires you convert your application from C/AL to AL.|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 Release Wave 2 (version 15)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (version 19)</li></ul>|Direct to version 20|
+
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 Release Wave 2 (v19)
 
 |  Source version  |   Upgrade path  |
