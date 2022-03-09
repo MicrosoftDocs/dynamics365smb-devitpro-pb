@@ -58,6 +58,9 @@ The following table explains the custom dimensions included in the trace.
 <!--
 {"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1","alStackTrace":"undefined","hostType":"Browser","userLocale":"en-US","exceptionId":"undefined","errorMessage":"undefined","userFeedback":"No","appId":"null","appName":"null","appPublisher":"null","appVersion":"null","environmentName":"null"}
 
+
+{"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","environmentType":"undefined","companyName":"CRONUS International Ltd.","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","clientType":"Desktop","component":"Dynamics 365 Business Central Client","eventId":"CL0002","userFeedback":"No","userLocale":"en-US","appVersion":"1.0.0.0","appPublisher":"Default publisher","environmentName":"null","exceptionId":"4c70c77a-147e-4fc1-af16-96cf7c008fa6","alStackTrace":"CustomerListExt(PageExtension 50110).OnOpenPage(Trigger) line 8 - ALlogmessage by Default publisher","hostType":"Browser","errorMessage":"Use ERROR with a text constant to improve telemetry details","appId":"f2ae006d-deef-4990-828e-4c76906e7171","appName":"ALlogmessage","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1"}
+
 -->
 
 ## <a name="failed"></a>Authentication with web service key failed
