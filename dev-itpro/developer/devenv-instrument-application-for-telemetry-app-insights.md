@@ -91,6 +91,7 @@ The following table explains CustomDimensions that are automatically included in
 |alObjectId|Specifies the ID of the object that called the LOGMESSAGE method.|
 |alObjectName|Specifies the name of the object that called the LOGMESSAGE method.|
 |alObjectType|Specifies the type of the object that called the LOGMESSAGE method, like `PageExtension` for a page extension object. |
+|clientType|Specifies the type of client that ran LOGMESSAGE method, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |companyName|Specifies the company in Business Central|
 |component|**Dynamics 365 Business Central Server**.|
