@@ -21,7 +21,7 @@ Service-to-Service (S2S) authentication is suited for scenarios where integratio
 
 In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. 
 
-## Feature Availability
+## Feature availability
 
 The following table describes in which versions S2S authentication was made available for online or on-premises environments.
 
