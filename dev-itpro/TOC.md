@@ -3779,7 +3779,7 @@
 ###### Data Migration Toolkit - India
 ####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
 ##### [From Version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
 ### Business Central 2021 Release Wave 2
