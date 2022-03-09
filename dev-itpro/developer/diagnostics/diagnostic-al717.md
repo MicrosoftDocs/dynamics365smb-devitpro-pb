@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0402"
-description: "Expression {0} cannot be specified more than once in a 'case' statement."
+title: "Compiler Warning AL0717"
+description: "The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/01/2022
@@ -13,14 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0402
+# Compiler Warning AL0717
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Expression {0} cannot be specified more than once in a 'case' statement.
-
-## Description
-Duplicate expression in a 'case' statement. Expressions in a 'case' statement must be unique.  
+The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
