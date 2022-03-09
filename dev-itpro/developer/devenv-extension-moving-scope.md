@@ -1,6 +1,6 @@
 ---
 title: "Moving Between Extension Scopes"
-description: ""
+description: "Describes how an extension in one scope can be moved into another scope in Business Central."
 ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
@@ -31,9 +31,9 @@ For a definition of the different extension types and their scope, see [Extensio
 
 - AppSource apps and PTEs are using different ID ranges. You must then change the ID of all the objects in your extension. For more information, see [Object Ranges](devenv-object-ranges.md).
 
-- AppSource apps are required to use affixes for their object names, while PTEs do not have any affix usage requirements. You might then have to rename all the objects in your extension to use affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md) 
+- AppSource apps are required to use affixes for their object names, while PTEs do not have any affix usage requirements. You might then have to rename all the objects in your extension to use affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
-- You can here the full list of requirements for AppSource apps:  
+- You can find the full list of requirements for AppSource apps here:  
   - [Technical Validation Checklist](devenv-checklist-submission.md)
   - [Marketing Validation Checklist](readiness/readiness-checklist-marketing.md)
     
@@ -57,7 +57,7 @@ For a definition of the different extension types and their scope, see [Extensio
 - Due to some current limitations in our service, it is not possible to have an AppSource app and a PTE extension with the same `name`, `publisher`, and `version`. You must then change the `name`, `publisher`, or `version` of the app before uploading it to AppSource.
 
 > [!NOTE]  
-> Alternatively, you can also uninstall and unpublish the DEV extension with this `App ID` from your sandboxes environment. Make sure to select the option to delete the extension data and extension schema when uninstalling the extension.
+> Alternatively, you can also uninstall and unpublish the DEV extension with this app `id` from your sandboxes environment. Make sure to select the option to delete the extension data and extension schema when uninstalling the extension.
 
 ### Additional requirements for moving a DEV extension to AppSource
 
@@ -65,7 +65,7 @@ For a definition of the different extension types and their scope, see [Extensio
 
 - AppSource apps are required to use affixes for their object names, while DEV extensions do not have any affix usage requirements. You might then have to rename all the objects in your extension to use affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md) 
 
-- You can here the full list of requirements for AppSource apps:  
+- You can find the full list of requirements for AppSource apps here:  
   - [Technical Validation Checklist](devenv-checklist-submission.md)
   - [Marketing Validation Checklist](readiness/readiness-checklist-marketing.md)
 
@@ -78,11 +78,11 @@ Publishing an AppSource app to a sandbox environment as DEV extension is common 
 
 ### Identity requirements for publishing an AppSource app as a DEV extension
 
-- DEV extensions should have a different `App ID` because there might be other global apps published to your service and they will collide. If you do not change the `App ID`, the app that you have published from Visual Studio Code to a developer sandbox will be automatically unpublished from your environment if another user tries to install the AppSource app in their environment.
+- DEV extensions should have a different app `id` because there might be other global apps published to your service and they will collide. If you do not change the app `id`, the app that you have published from Visual Studio Code to a developer sandbox will be automatically unpublished from your environment if another user tries to install the AppSource app in their environment.
 
 ### Additional requirements for publishing an AppSource app as a DEV extension
 
-- If you haven't changed the `App ID` of the AppSource app in your DEV extension, to prevent publishing the DEV extension if another AppSource app depends on that particular AppSource app. If you want to achieve such functionality the whole chain of dependencies should be published as DEV extensions with different `App ID`.
+- If you haven't changed the app `id` of the AppSource app in your DEV extension, to prevent publishing the DEV extension if another AppSource app depends on that particular AppSource app. If you want to achieve such functionality the whole chain of dependencies should be published as DEV extensions with different app `id`.
 
 ## Publishing a PTE as a DEV extension
 
@@ -132,7 +132,7 @@ You can find the full list of requirements for PTE in the documentation for the 
 
 - If you want to move the data by having the two apps (PTE and AppSource app) installed side-by-side, then you must ensure that the two apps can be installed side-by-side. For this, they must not share any object names nor IDs. You can then define another PTE depending on both apps that would take care of moving the data.
 
-- All dependent extensions will have to be updated to use the new `App ID` in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
+- All dependent extensions will have to be updated to use the new app `id` in their `app.json` file and to reference the objects defined in the extension by their new name and object ID.
 
 
 ## See Also
