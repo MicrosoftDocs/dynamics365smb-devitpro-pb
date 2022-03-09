@@ -1,6 +1,6 @@
 ---
 title: "Extension Types and Scope"
-description: ""
+description: "Describes the different types of extensions for Business Central and how broad their scope is."
 ms.custom: na
 ms.author: solsen
 ms.date: 02/24/2022
@@ -49,10 +49,9 @@ For AppSource and Microsoft apps:
 
 For apps provided by Embed ISVs, installation is handled by the Embed ISV partner.
 
-
 ### Behavior on environment upgrade
 
-Global apps are preserved on upgrade for both Production and sandboxes.
+Global apps are preserved on upgrade for both production and sandbox environments.
 
 #### AppSource apps
 
@@ -83,11 +82,11 @@ PTEs can exist in Production and sandbox environments. For more information, see
 	
 ### How to install
 
-From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you must upload the .app file. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall). <!-- publishing a pte is different on-prem -->
+From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you must upload the .app file. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 	
 ### Behavior on upgrade
 
-PTEs are never uninstalled from a Production environment, unless they are preventing the environment to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data is not removed. PTEs can be upgraded to a newer version during the environment upgrade if a newer version has been staged from the **Extension Management** page.
+PTEs are never uninstalled from a production environment, unless they are preventing the environment to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data is not removed. PTEs can be upgraded to a newer version during the environment upgrade if a newer version has been staged from the **Extension Management** page.
 
 ## DEV extensions
 
@@ -113,16 +112,15 @@ For information on how to install, see [Using Designer](devenv-inclient-designer
 
 ### Behavior on upgrade
 
-DEV extensions are uninstalled when the sandbox environment is upgraded or relocated wihin our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available. Any PTE that depends on a DEV extension is also uninstalled in that case.
+DEV extensions are uninstalled when the sandbox environment is upgraded or relocated within our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available. Any PTE that depends on a DEV extension is also uninstalled in that case.
 
 ## Constraints on extension types
 
-In general, extensions are uniquely defined by their `id`. A specific version of an app is defined by the `id` and `version`, adding Environment for per-tenant extensions.
+In general, extensions are uniquely defined by their `id`. A specific version of an app is defined by the `id` and `version`, adding `environment` for per-tenant extensions.
 
 - It is not possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we are validating that there is not a Global app app with the same `id`. Currently, the AppSource validation process allows you to upload an app with the same `id` as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
 
-- It is not possible to deploy an **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you are done developing/testing your extension, you should increase the `version` before submitting to AppSource. We also recommend changing the `id` of the app.
-
+- It is not possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you are done developing/testing your extension, you should increase the `version` before submitting to AppSource. We also recommend changing the `id` of the app.
 - Due to some current limitations in our service, it is not possible to have an **Global app** and a **PTE** or **DEV** extension with the same `name`, `publisher`, and `version`, even if they have a different `id`.
 
 ## See Also
