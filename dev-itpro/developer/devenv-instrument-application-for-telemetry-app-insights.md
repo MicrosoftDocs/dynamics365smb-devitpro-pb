@@ -67,7 +67,7 @@ Use the parameters to build the dimensions, or columns, that will show for the t
 |Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace signal. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
 |DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace signal. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
 |TelemetryScope|Scope of emitting the telemetry. <ul><li>`extensionpublisher` sends the custom signal only to the Application Insight resource specified in the extension's app.json file</li><li>`all` sends the custom signal to Application Insight resource specified in the extension's app.json file and on the tenant. </li></ul> |telemetryScope
-|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that will be included in trace by default. |
+|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that will be included in trace by default. See [Default CustomDimensions](#default-customdimensions)|
 |Dimension1|A text string that specifies the name of the custom dimension.|
 |Value1|A text string that specifies the value of Dimension1.|
 |Dimension2|A text string that specifies the name of the custom dimension.|
@@ -76,7 +76,7 @@ Use the parameters to build the dimensions, or columns, that will show for the t
 > [!NOTE]
 > In Application Insights, the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `result`, then in the trace logged in Application Insights, names appears as `alresult`.
 
-##### Default CustomDimension
+##### Default CustomDimensions
 
 The following table explains CustomDimensions that are automatically included in ALMessage traces that are sent to Application Insights.
 
