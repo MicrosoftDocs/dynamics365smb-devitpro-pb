@@ -19,14 +19,10 @@ When a user gets an error message while working in the application, the message 
 
 ![Shows the error dialog and the voting actions, Yes and No, about the helpfulness of the message.](../developer/media/error-voting.png )
 
-If a user selects either **Yes** or **No**, a signal is emitted and recorded in Application Insights. This information can help
-iThe [!INCLUDE[prod_short](../developer/includes/prod_short.md)] emits telemetry data about the success or failure of authenticating web service access keys on web service requests. 
+If a user selects either **Yes** or **No**, a signal is emitted and recorded in Application Insights. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
 
-[!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
+This voting feature appears on all error messages thrown by calls to the [Error(String)](../developer/methods-auto/dialog/dialog-error-string-joker-method.md) and [Error(ErrorInfo)](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dialog/dialog-error-errorinfo-method) methods in AL code.
 
-As a partner or customer, this data lets you monitor the use of web service access keys on your environments in preparation for the deprecation of the feature.
-
-For information about web service access keys, see [How to use an Access Key for SOAP and OData Web Service Authentication](../webservices/web-services-authentication.md#accesskey).
 
 ## <a name="succeeded"></a>Authentication with web service key succeeded
 
@@ -49,23 +45,23 @@ The following table explains the custom dimensions included in the trace.
 |---------|-----|
 |eventId|**CL0002**|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the AL object that was run by request.|
-|alObjectName|Specifies the ID of the AL object that was run by request.|
-|alObjectType|Specifies the ID of the AL object that was run by request.|
-|alStackTrace|Specifies the ID of the AL object that was run by request.|
-|appId|Specifies the appID of the extension that the report object belongs to.|
-|appName|Specifies the name of the extension that threw the error message.|
-|appVersion|Specifies the version of the extension that threw the error message.|
+|alObjectId|Specifies the ID of the AL object that threw the error.|
+|alObjectName|Specifies the ID of the AL object that threw the error.|
+|alObjectType|Specifies the ID of the AL object that threw the error.|
+|alStackTrace|Specifies the stack trace in AL code for the error.|
+|appId|Specifies the ID of the extension that threw the error.|
+|appName|Specifies the name of the extension that threw the error.|
+|appVersion|Specifies the version of the extension that threw the error.|
 |clientType|Specifies the type of client that executed the message, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|hostType||
+|hostType|Specifies [tbd]|
 |environmentName|Specifies the name of the tenant environment. Not included with Business Cenytal on-premises. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |errorMessage|Specifies the error shown to the user.|
-|exceptionId||
-|userFeedback|Specifies what the user voted, either **Yes** or **No**.|
-|userLocale|Speci|
+|exceptionId|Specifies the GUID assigned to the error.|
+|userFeedback|Specifies what the user voted, which can be either **Yes** or **No**.|
+|userLocale|Specifies the regional language version of the message. The value is a language culture name, like **en-US** for English US and **da-DK** for Danish.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <!--
