@@ -25,9 +25,9 @@ The definition of a global app is that it fulfills one or more of the following:
 - It is installed from the AppSource marketplace  
 - It is provided by embed ISVs if your environment uses a code-customized base application. For more information, see [Publishing a Code-Customized Base Application](devenv-publish-code-customization.md).
 
-Global apps are uniquely defined by their app ID and version.
+Global apps are uniquely defined by their `id` and `version`.
 
-You cannot deploy a Global app with same the app ID and version, but different content to multiple environments.
+You cannot deploy a Global app with same the `id` and `version`, but different content to multiple environments.
 
 You can choose to install, uninstall or upgrade Global apps, but you do not control when they are published or unpublished because they might be used by other environments in the service. It is not possible to force sync a Global app.
 
@@ -35,7 +35,7 @@ Global apps can only depend on other global apps.
 
 ### Environment types
 
-Global apps can exist in PROD and in sandbox environments.
+Global apps can exist in Production and in sandbox environments. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 
 #### How to install
 
@@ -45,14 +45,14 @@ For AppSource and Microsoft apps:
 - From the **Extension Management** page in Business Central, you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
-> You must check that the app is available for the country/region of your environment.
+> The AppSource offer listing contains the list of supported countries. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
 
-For Embed ISVs, installation is handled by the Embed ISV partner.
+For apps provided by Embed ISVs, installation is handled by the Embed ISV partner.
 
 
 ### Behavior on environment upgrade
 
-Global apps are preserved on upgrade for both PROD and sandboxes.
+Global apps are preserved on upgrade for both Production and sandboxes.
 
 #### AppSource apps
 
@@ -61,19 +61,17 @@ Global apps are preserved on upgrade for both PROD and sandboxes.
 
 #### Microsoft apps
 
-- Microsoft apps are always updated to the latest compatible version during upgrades to a new Business Central version.
+- Microsoft apps are always updated to the latest compatible version for the corresponding major/minor during upgrades to a new Business Central version.
 
 #### Embed apps
 
-- Embed apps behavior is controlled by the partner deploying the apps.
+- Embed apps behavior on environment upgrade is controlled by the partner deploying the apps.
 
 ## Per-Tenant Extensions (PTEs)
 
-These apps are unique per environment. Per-tenant extensions are uniquely defined by their app `id`, version, and environment. 
+These apps are unique per environment. Per-tenant extensions are uniquely defined by their app `id`, `version`, and the `environment` where they are deployed. 
 
-<!-- kberes: Maybe we should define the term Environment that we all mean the same. -->
-
-You can deploy multiple PTEs with the same app ID and version, but different content to multiple environments. This might, however, cause you additional overhead when managing these environments.
+You can deploy multiple PTEs with the same `id` and `version`, but different content to multiple environments. This might, however, cause you additional overhead when managing these environments.
 	
 You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You may also choose to force sync a PTE.
 	
@@ -81,7 +79,7 @@ PTE can have dependencies on Global apps, on other PTEs, or on DEV extensions.
 	
 ### Environment types
 	
-PTEs can exist in PROD and sandbox environments.
+PTEs can exist in Production and sandbox environments. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 	
 ### How to install
 
@@ -89,19 +87,24 @@ From the **Extension Management** page in Business Central, you must upload the 
 	
 ### Behavior on upgrade
 
-PTEs are never uninstalled from a PROD environment, unless they are preventing the environment to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data is not removed. And they can be upgraded to a newer version if a newer version has been staged on upgrade from the **Extension Management** page.
+PTEs are never uninstalled from a Production environment, unless they are preventing the environment to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md). PTEs are uninstalled when the sandbox environment is relocated if they dependent on DEV extensions, but the data is not removed. PTEs can be upgraded to a newer version during the environment upgrade if a newer version has been staged from the **Extension Management** page.
 
 ## DEV extensions
 
-This includes extensions published from Visual Studio Code or created using Designer in Business Central.
+This includes extensions published from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) in Business Central.
 
-You can deploy a DEV extension with the same App ID and version, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
+You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
+
+The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protetion.md).
+
+<!-- allow download property is the only property which is effective from the policy set in the manifest and the rest of properties are set to true 
+Apps published as dev extensions ignore the resource exposure policy settings.-->
 
 DEV extensions can have dependencies on Global apps, on per-tenant extensions, or on other DEV extensions.
 
 ### Environment types
 
-They can only exist in sandbox environments.
+DEV extensions can only exist in sandbox environments. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 
 ### How to install
 
@@ -109,22 +112,17 @@ For information on how to install, see the following [Using Designer](devenv-inc
 
 ### Behavior on upgrade
 
-DEV extensions are uninstalled when the sandbox environment is relocated, but the data is not removed. Any PTE that depends on a DEV extension is also uninstalled in that case.
-
-The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protetion.md).
-
-<!-- allow download property is the only property which is effective from the policy set in the manifest and the rest of properties are set to true 
-Apps published as dev extensions ignore the resource exposure policy settings.-->
+DEV extensions are uninstalled when the sandbox environment is upgraded or relocated wihin our service. However, the data of an app is not removed, so you only have to re-publish and install the app to make it available. Any PTE that depends on a DEV extension is also uninstalled in that case.
 
 ## Constraints on extension types
 
-In general, extensions are uniquely defined by their App ID. A specific version of an app is defined by the App ID and version, adding Environment for per-tenant extensions.
+In general, extensions are uniquely defined by their `id`. A specific version of an app is defined by the `id` and `version`, adding Environment for per-tenant extensions.
 
-- It is not possible to deploy an **AppSource app** and a **PTE** with the same App ID. During the upload of a PTE, we are validating that there is not an AppSource app with the same App ID. Currently, the AppSource validation process allows you to upload an app with the same App ID as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
+- It is not possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we are validating that there is not a Global app app with the same `id`. Currently, the AppSource validation process allows you to upload an app with the same `id` as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
 
-- It is not possible to deploy an **AppSource app** and a **DEV** extension with the same App ID and version. When deploying the DEV version of an AppSource app from Visual Studio code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different version than what is published to AppSource. Similarly, after you are done developing/testing your extension, you should increase the version before submitting to AppSource.
+- It is not possible to deploy an **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you are done developing/testing your extension, you should increase the `version` before submitting to AppSource. We also recommend changing the `id` of the app.
 
-- It is not possible to have an **AppSource app** and a **PTE** or **DEV** extension with the same name, publisher, and version. Due to some current limitations in our service, some scenarios are not supported when extensions have a different App ID, but the same name, publisher, and version. 
+- Due to some current limitations in our service, it is not possible to have an **Global app** and a **PTE** or **DEV** extension with the same `name`, `publisher`, and `version`, even if they have a different `id`.
 
 ## See Also
 
