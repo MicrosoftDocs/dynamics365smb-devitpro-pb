@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 This topic provides an overview of the different extension types and their scope. 
 
-An extension can move from one scope to another under certain circumstances. For more information, see [Moving Between Extension Scopes](devenv-extensions-moving-scope.md).
+An extension can move from one scope to another under certain circumstances. For more information, see [Moving Between Extension Scopes](devenv-extension-moving-scope.md).
 
 ## Global apps
 
@@ -42,7 +42,7 @@ Global apps can exist in Production and in sandbox environments. For more inform
 For AppSource and Microsoft apps:
 
 - From the AppSource marketplace, choose **Contact Me**, **Free Trial**, or **Get It Now** and follow the steps.
-- From the **Extension Management** page in Business Central, you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
+- From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you can navigate to the AppSource embed view, locate the app, and install it. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall).
 
 > [!NOTE]  
 > The AppSource offer listing contains the list of supported countries. You must verify that the app is available for the country/region of your environment. If it isn't available for the country/region of your environment, the installation will fail.
@@ -57,11 +57,11 @@ Global apps are preserved on upgrade for both Production and sandboxes.
 #### AppSource apps
 
 - AppSource apps are never uninstalled unless they are preventing the tenant to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md).
-- AppSource apps are updated to the latest version during upgrades to a new Business Central major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher.
+- AppSource apps are updated to the latest version during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher.
 
 #### Microsoft apps
 
-- Microsoft apps are always updated to the latest compatible version for the corresponding major/minor during upgrades to a new Business Central version.
+- Microsoft apps are always updated to the latest compatible version for the corresponding major/minor during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] version.
 
 #### Embed apps
 
@@ -83,7 +83,7 @@ PTEs can exist in Production and sandbox environments. For more information, see
 	
 ### How to install
 
-From the **Extension Management** page in Business Central, you must upload the .app file. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall). <!-- publishing a pte is different on-prem -->
+From the **Extension Management** page in [!INCLUDE[prod_short](../includes/prod_short.md)], you must upload the .app file. For more information, see [Installing and Uninstalling Extensions in Business Central](/dynamics365/business-central/ui-extensions-install-uninstall). <!-- publishing a pte is different on-prem -->
 	
 ### Behavior on upgrade
 
@@ -91,7 +91,7 @@ PTEs are never uninstalled from a Production environment, unless they are preven
 
 ## DEV extensions
 
-This includes extensions published from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) in Business Central.
+DEV extensions are used for development purposes. This includes extensions published from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
 

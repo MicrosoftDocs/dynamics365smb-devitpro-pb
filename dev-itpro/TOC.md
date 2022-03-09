@@ -336,7 +336,7 @@
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 ### [Extension Types and Scope](developer/devenv-extension-types-and-scope.md)
-### [Moving Between Extension Scopes](developer/devenv-extensions-moving-scope.md)
+### [Moving Between Extension Scopes](developer/devenv-extension-moving-scope.md)
 ### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
