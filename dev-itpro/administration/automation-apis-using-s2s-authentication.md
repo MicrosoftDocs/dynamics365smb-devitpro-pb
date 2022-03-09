@@ -13,10 +13,6 @@ ms.author: jswymer
  
 # Using Service-to-Service (S2S) Authentication 
 
-<!-- > **APPLIES TO:** Business Central Online only. S2S for automation APIs requires 2020 release wave 2 (version 17.0) or later. S2S for standard Business Central APIs, custom APIs, and web services requires Business Central 2021 release wave 1, version 18.3 or later -->
-
-<!-- Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.    -->
-
 Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
 > [!NOTE]
@@ -26,19 +22,21 @@ Service-to-Service (S2S) authentication is suited for scenarios where integratio
 In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. 
 
 ## Feature Availability
-The following table describes in which versions Service-to-Service (S2S) authentication was made available for online or on-premises environments.
 
-|API  |Online: Introduced in version |On-premises: Introduced in version|
+The following table describes in which versions S2S authentication was made available for online or on-premises environments.
+
+|API  |Online |On-premises|
 |-----|------|-----------|
 |Business Central automation APIs | version 17.0 | versions 18.11 and 19.5 |
-|Business Central APIs v2.0| version 18.3 | versions 18.11 and 19.5 | 
-|Business Central APIs v2.0| version 18.3 | versions 18.11 and 19.5 | 
-|Business Central custom APIs| version 18.3 | versions 18.11 and 19.5 | 
-|Business Central web services| version 18.3 | versions 18.11 and 19.5 | 
+|Business Central APIs v1.0| version 18.3 | versions 18.11 and 19.5 |
+|Business Central APIs v2.0| version 18.3 | versions 18.11 and 19.5 |
+|Business Central custom APIs| version 18.3 | versions 18.11 and 19.5 |
+|Business Central web services| version 18.3 | versions 18.11 and 19.5 |
 
+## Main usage scenarios
 
-## Main Usage Scenarios
 Two main scenarios are enabled with S2S authentication:
+
 1. Company setup using automation API
 
     Automation APIs provide capability for automating company setup through APIs. The automation APIs are used to hydrate tenants, that is, to bring them to an initial state.
