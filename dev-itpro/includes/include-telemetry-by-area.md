@@ -7,6 +7,7 @@
 |Configuration package lifecycle|Provides information about operations done on configuration packages, including exporting, importing, applying, and deleting. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-configuration-package-trace.md)|
 |Database lock timeouts|Provides information about database locks that have timed out. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-database-locks-trace.md)|
 |Email|Provides information about the success or failure of sending emails.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-email-trace.md) |
+|Error message quality<sup>[\[5\]](#5)</sup>|Provides information about error messages that users thought were helpful or unhelpful.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-error-message-voting-trace.md) |
 |Extension lifecycle <sup>[\[2\]](#2)</sup>|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-extension-lifecycle-trace.md) |
 |Extension update|Provides information about errors that occur and upgrade tags used when upgrading an extension.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-extension-update-trace.md) |
 |Field monitoring trace|Provides information about the usage of the field monitoring feature.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-field-monitoring-trace.md) |
@@ -30,3 +31,5 @@
 <sup>3</sup><a name="3"></a>Introduced in Business Central 2020 release wave 1, version 17.1. For extension telemetry, this signal was introduced in 2021 release wave 1, version 18.1.
 
 <sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
+
+<sup>5</sup><a name="5"></a>Introduced in Business Central 2022 release wave 1, version 20.

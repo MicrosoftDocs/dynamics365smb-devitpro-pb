@@ -21,12 +21,11 @@ When a user gets an error message while working in the application, the message 
 
 If a user selects either **Yes** or **No**, a signal is emitted and recorded in Application Insights. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
 
-This voting feature appears on all error messages thrown by calls to the [Error(String)](../developer/methods-auto/dialog/dialog-error-string-joker-method.md) and [Error(ErrorInfo)](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dialog/dialog-error-errorinfo-method) methods in AL code.
+This voting feature appears on all error messages that are thrown by calls to the [Error(String)](../developer/methods-auto/dialog/dialog-error-string-joker-method.md) and [Error(ErrorInfo)](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dialog/dialog-error-errorinfo-method) methods.
 
+## <a name="succeeded"></a>User gave feedback on error message
 
-## <a name="succeeded"></a>Authentication with web service key succeeded
-
-Occurs when a web service access key was authenticated successfully.
+Occurs when a use selects either **Yes** or **No** to the question on the error dialog as to whether the message was helpful.
 
 ### General dimensions
 
@@ -34,7 +33,7 @@ The following table explains the general dimensions included in the trace. The t
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|message|**Authentication with Web Service Key succeeded: {endpoint}**|
+|message|**User gave feedback on error message: [OK|Not OK]**|
 |severityLevel|**1**|
 
 ### Custom dimensions
