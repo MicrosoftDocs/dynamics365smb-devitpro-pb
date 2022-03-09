@@ -67,7 +67,7 @@ Use the parameters to build the dimensions, or columns, that will show for the t
 |Verbosity<sup>[*](#*)|An enumeration that specifies the severity level of the telemetry trace signal. The value can be `Critical`, `Error`, `Warning`, `Normal`, or `Verbose`. |severityLevel<br /><br />`4`=`Critical`<br />`3`=`Error`<br />`2`=`Warning`<br />`1`=`Normal` <br />`0`=`Verbose`<br />|
 |DataClassification[*](#*)|A DataClassification data type that assigns a classification to the telemetry trace signal. For more information, see [Data Classifications](devenv-classifying-data.md#DataClassifications).|dataClassification|
 |TelemetryScope|Scope of emitting the telemetry. <ul><li>`extensionpublisher` sends the custom signal only to the Application Insight resource specified in the extension's app.json file</li><li>`all` sends the custom signal to Application Insight resource specified in the extension's app.json file and on the tenant. </li></ul> |telemetryScope
-|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that will be included in trace by default. See [Default CustomDimensions](#default-customdimensions)|
+|CustomDimensions|A dictionary of text that defines the custom dimensions for the trace signal in Application Insights. There are several CustomDimensions that will be included in traces by default. See [Default CustomDimensions](#default-customdimensions)|
 |Dimension1|A text string that specifies the name of the custom dimension.|
 |Value1|A text string that specifies the value of Dimension1.|
 |Dimension2|A text string that specifies the name of the custom dimension.|
@@ -85,12 +85,12 @@ The following table explains CustomDimensions that are automatically included in
 |Dimension|Description or value|
 |---------|-----|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alCallerAppPublishser|Specifies the publisher of the extension that emitted the telemetry signal to Application Insights. This is typically the publisher of the base application, which is `Microsoft`.|
 |alCallerAppName|Specifies the name of the extension that emitted the telemetry signal to Application Insights. This is typically the base application.|
+|alCallerAppPublishser|Specifies the publisher of the extension that emitted the telemetry signal to Application Insights. This is typically the publisher of the base application, which is `Microsoft`.|
 |alCallerAppVersion|Specifies the version number of the extension that emitted the telemetry signal to Application Insights. This is typically the version of the base application.|
 |alObjectId|Specifies the ID of the object that called the LOGMESSAGE method.|
 |alObjectName|Specifies the name of the object that called the LOGMESSAGE method.|
-|alObjectName|Specifies the type of the object that called the LOGMESSAGE method, like `PageExtension` for a page extension object. |
+|alObjectType|Specifies the type of the object that called the LOGMESSAGE method, like `PageExtension` for a page extension object. |
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |companyName|Specifies the company in Business Central|
 |component|**Dynamics 365 Business Central Server**.|
