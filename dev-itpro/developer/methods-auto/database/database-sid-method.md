@@ -29,13 +29,13 @@ SID :=   Database.SID([UserAccount: String])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *[Optional] UserAccount*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The Windows user account for which you want to get the SID. You must specify a domain and user name, such as 'cronus\\simon'.  
 
 
 ## Return Value
 *SID*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The SID of the specified Windows user account.
 
 

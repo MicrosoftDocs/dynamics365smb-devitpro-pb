@@ -27,7 +27,7 @@ Sends a file from the client computer to the corresponding server. The client co
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FromFilter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The type of file that can be uploaded to the server. A user can try to upload any file type but an error occurs if the file is not the specified type.
         
 *InStream*  
@@ -80,4 +80,4 @@ codeunit 50100 MyCodeunit
 ## See Also
 [File Data Type](file-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

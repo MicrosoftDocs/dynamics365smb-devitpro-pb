@@ -35,7 +35,7 @@ Specifies the handler methods that are used by the test method.
 
 ### Arguments
 *HandlerNames*  
-&emsp;Type: [String](../methods-auto/string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The names of the handler methods used by the test method.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -71,4 +71,4 @@ end
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

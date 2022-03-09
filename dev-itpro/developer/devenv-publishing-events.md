@@ -42,7 +42,7 @@ The following procedure provides an outline of the tasks that are involved in cr
 
      Give the method a name that has the format *On\[Event\]*, where *\[Event\]* is text that indicates what occurred, such as `OnAddressLineChanged`.  
 
-3.  Decorate the method with either the [Integration attribute](methods/devenv-integration-attribute.md) or [Business attribute](methods/devenv-business-attribute.md) as follows: 
+3.  Decorate the method with either the [Integration attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute) or [Business attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-businessevent-attribute) as follows: 
 
     ```AL
     [IntegrationEvent(IncludeSender : Boolean, GlobalVarAccess : Boolean)] 
@@ -86,4 +86,4 @@ The next step is to raise this event in the application. To see an example for h
 ## See Also  
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
-[Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)   
+[Events [!INCLUDE[d365fin_md](includes/d365fin_md.md)]](devenv-events-in-al.md)

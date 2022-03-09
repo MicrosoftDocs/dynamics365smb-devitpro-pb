@@ -31,7 +31,7 @@ Saves the resulting data set of a query as an .xml file. The following code show
 The ID of the query object that you want to save as an .xml file.  If the query that you specify does not exist, then a run-time error occurs.
         
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and name of the file that you want to save the query to.
         
 *[Optional] Record*  

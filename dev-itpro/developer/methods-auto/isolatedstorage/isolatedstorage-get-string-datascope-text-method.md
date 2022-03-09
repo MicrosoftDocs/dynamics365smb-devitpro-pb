@@ -25,7 +25,7 @@ Gets the value associated with the specified key.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The key of the value to get. If the specified key is not found an error will be reported.
         
 *[Optional] DataScope*  
