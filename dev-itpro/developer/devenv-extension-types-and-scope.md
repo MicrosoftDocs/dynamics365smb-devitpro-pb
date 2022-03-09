@@ -29,7 +29,7 @@ Global apps are uniquely defined by their `id` and `version`.
 
 You cannot deploy a Global app with same the `id` and `version`, but different content to multiple environments.
 
-You can choose to install, uninstall or upgrade Global apps, but you do not control when they are published or unpublished because they might be used by other environments in the service. It is not possible to force sync a Global app.
+You can choose to install, uninstall or upgrade Global apps, but you do not control when they are published or unpublished because they might be used by other environments in the service. It is also not possible to force sync a Global app.
 
 Global apps can only depend on other global apps.
 
@@ -57,7 +57,7 @@ Global apps are preserved on upgrade for both Production and sandboxes.
 #### AppSource apps
 
 - AppSource apps are never uninstalled unless they are preventing the tenant to upgrade. For more information, see [Maintain AppSource apps and per-tenant extensions](app-maintain.md).
-- AppSource apps are updated to the latest version during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher.
+- AppSource apps are updated to the latest version during upgrades to a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version (for instance 19.5 to 20.0), but are preserved during minor version upgrade (for instance 19.0 to 19.1) - unless the app was marked as incompatible by the extension publisher through a support request.
 
 #### Microsoft apps
 
@@ -95,7 +95,8 @@ DEV extensions are used for development purposes. This includes extensions publi
 
 You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
 
-The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protetion.md).
+> [!NOTE]  
+> The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protetion.md).
 
 <!-- allow download property is the only property which is effective from the policy set in the manifest and the rest of properties are set to true 
 Apps published as dev extensions ignore the resource exposure policy settings.-->
@@ -108,7 +109,7 @@ DEV extensions can only exist in sandbox environments. For more information, see
 
 ### How to install
 
-For information on how to install, see the following [Using Designer](devenv-inclient-designer.md) and [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
+For information on how to install, see [Using Designer](devenv-inclient-designer.md) and [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md).
 
 ### Behavior on upgrade
 
