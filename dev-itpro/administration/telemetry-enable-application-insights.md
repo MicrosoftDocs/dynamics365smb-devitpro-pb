@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
-ms.date: 07/09/2021
+ms.date: 03/10/2022
 ---
 
 # Enable Environment Telemetry in Application Insights
@@ -18,7 +18,6 @@ This article describes how to set up sending telemetry data to Azure Application
 
 > [!NOTE]
 > For extension telemetry, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
-
 
 ## <a name="appinsights"></a>Get started (set up Azure Application Insights)
 
@@ -69,8 +68,12 @@ For [!INCLUDE [prod_short](../includes/prod_short.md)] online:
 3. Choose the **Save** button.
 
 ### For on-premises environments (single-tenant mode)
-For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance. 
 
+For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance.
+
+```powershell
+Set-NAVServerConfiguration -ServerInstance BC200 -Tenant tenant1 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+```
 For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
 
 ### For on-premises environments (multi-tenant mode)
@@ -79,18 +82,19 @@ For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_sho
 The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 
 or
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
 ```
 
 If you use the same Azure Application Insights resource for multiple environments, consider also using the AadTenantId parameter to distinguish tenants in telemetry.
 
-### For on-premises Docker sandbox environments 
+### For on-premises Docker sandbox environments
+
 If you're using the BcContainerHelper module, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
 
 ```powershell
@@ -106,6 +110,25 @@ You can specify the same or another key when creating more tenants:
 ```powershell
 New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2222-3333-4444-555555555555" 
 ```
+
+## Assign a telemetry ID to users
+
+To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain traces, but not all. The appears only in traces that the Business Central service/server emits in the context of a user session. So, for example, traces emitted by the Web server won't  include this ID.
+
+By default, users aren't assigned an actual telemetry ID. Instead, the telemetry ID is a null GUID, like `{00000000-0000-0000-0000-000000000000} `, which isn't used in telemetry. To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
+
+1. Sign in to Business Central using an administrator account.
+2. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Users**, and then choose the related link.
+3. Choose the user name to open the **User Card** page.
+4. Select the **Telemetry ID** field ![lookup button that opens the dialog for setting the telemetry ID.](../developer/media/ellipse-button.png).
+
+  ![Dialog for setting the telemetry ID on the user.](../developer/media/telemetry-id.png).
+
+  - To assign or change the telemetry ID, choose **Set field to random GUID** > **OK**.
+  - To clear the telemetry ID, choose **Set field to null GUID** > **OK**.
+
+> [!NOTE]
+> We recommend that you assign a telemetry ID only while troubleshooting and change the ID when if it's used for an extended period of time.
 
 ## Cleaning up settings
 
