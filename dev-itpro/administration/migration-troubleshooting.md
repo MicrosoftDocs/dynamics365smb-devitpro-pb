@@ -133,7 +133,7 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 18.|
+    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version.|
     |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
     |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
