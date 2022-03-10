@@ -1,0 +1,1 @@
+For more information, see [Start Business Central Administration Shell](/powershell/business-central/overview#start).
