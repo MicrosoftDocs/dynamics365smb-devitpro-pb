@@ -118,7 +118,7 @@ To help troubleshooting problems experienced by a given Business Central user, y
 By default, users aren't assigned an actual telemetry ID. Instead, the telemetry ID is a null GUID, like `{00000000-0000-0000-0000-000000000000}`, which doesn't show in telemetry. To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
 
 1. Sign in to Business Central using an administrator account.
-2. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Users**, and then choose the related link.
+2. Choose the ![Lightbulb that opens the Tell Me feature.](../developer/media/search_small.png "Tell me what you want to do") icon, enter **Users**, and then choose the related link.
 3. Choose the user name to open the **User Card** page.
 4. Select the **Telemetry ID** field ![lookup button that opens the dialog for setting the telemetry ID.](../developer/media/ellipse-button.png).
 
