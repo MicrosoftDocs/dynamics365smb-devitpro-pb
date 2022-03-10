@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -336,6 +336,8 @@
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [Extension Types and Scope](developer/devenv-extension-types-and-scope.md)
+### [Moving Between Extension Scopes](developer/devenv-extension-moving-scope.md)
 ### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
@@ -603,6 +605,7 @@
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
+##### [Warnings Turning into Errors Overview](developer/diagnostics/diagnostics-with-limit-date-overview.md)
 <!-- [//]: # (START>DO_NOT_EDIT_DIAGNOSTICS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -1070,6 +1073,20 @@
 ###### [AL0691](developer/diagnostics/diagnostic-al691.md)
 ###### [AL0693](developer/diagnostics/diagnostic-al693.md)
 ###### [AL0696](developer/diagnostics/diagnostic-al696.md)
+###### [AL0698](developer/diagnostics/diagnostic-al698.md)
+###### [AL0704](developer/diagnostics/diagnostic-al704.md)
+###### [AL0705](developer/diagnostics/diagnostic-al705.md)
+###### [AL0706](developer/diagnostics/diagnostic-al706.md)
+###### [AL0707](developer/diagnostics/diagnostic-al707.md)
+###### [AL0708](developer/diagnostics/diagnostic-al708.md)
+###### [AL0709](developer/diagnostics/diagnostic-al709.md)
+###### [AL0710](developer/diagnostics/diagnostic-al710.md)
+###### [AL0712](developer/diagnostics/diagnostic-al712.md)
+###### [AL0713](developer/diagnostics/diagnostic-al713.md)
+###### [AL0714](developer/diagnostics/diagnostic-al714.md)
+###### [AL0716](developer/diagnostics/diagnostic-al716.md)
+###### [AL0718](developer/diagnostics/diagnostic-al718.md)
+###### [AL0720](developer/diagnostics/diagnostic-al720.md)
 ###### [AL0999](developer/diagnostics/diagnostic-al999.md)
 ###### [AL1001](developer/diagnostics/diagnostic-al1001.md)
 ###### [AL1002](developer/diagnostics/diagnostic-al1002.md)
@@ -1132,12 +1149,12 @@
 ###### [AL1130](developer/diagnostics/diagnostic-al1130.md)
 ###### [AL1150](developer/diagnostics/diagnostic-al1150.md)
 ###### [AL1151](developer/diagnostics/diagnostic-al1151.md)
+###### [AL1152](developer/diagnostics/diagnostic-al1152.md)
 ##### Warning messages
 ###### [AL0200](developer/diagnostics/diagnostic-al200.md)
 ###### [AL0235](developer/diagnostics/diagnostic-al235.md)
 ###### [AL0251](developer/diagnostics/diagnostic-al251.md)
 ###### [AL0254](developer/diagnostics/diagnostic-al254.md)
-###### [AL0273](developer/diagnostics/diagnostic-al273.md)
 ###### [AL0374](developer/diagnostics/diagnostic-al374.md)
 ###### [AL0424](developer/diagnostics/diagnostic-al424.md)
 ###### [AL0432](developer/diagnostics/diagnostic-al432.md)
@@ -1174,6 +1191,7 @@
 ###### [AL0659](developer/diagnostics/diagnostic-al659.md)
 ###### [AL0679](developer/diagnostics/diagnostic-al679.md)
 ###### [AL0684](developer/diagnostics/diagnostic-al684.md)
+###### [AL0717](developer/diagnostics/diagnostic-al717.md)
 ###### [AL1000](developer/diagnostics/diagnostic-al1000.md)
 ###### [AL1003](developer/diagnostics/diagnostic-al1003.md)
 ###### [AL1004](developer/diagnostics/diagnostic-al1004.md)
@@ -1190,6 +1208,7 @@
 ###### [AL1072](developer/diagnostics/diagnostic-al1072.md)
 ##### Warning (Future Error) messages
 ###### [AL0269](developer/diagnostics/diagnostic-al269.md)
+###### [AL0273](developer/diagnostics/diagnostic-al273.md)
 ###### [AL0299](developer/diagnostics/diagnostic-al299.md)
 ###### [AL0468](developer/diagnostics/diagnostic-al468.md)
 ###### [AL0481](developer/diagnostics/diagnostic-al481.md)
@@ -1243,10 +1262,13 @@
 ###### [AL0694](developer/diagnostics/diagnostic-al694.md)
 ###### [AL0695](developer/diagnostics/diagnostic-al695.md)
 ###### [AL0697](developer/diagnostics/diagnostic-al697.md)
+###### [AL0711](developer/diagnostics/diagnostic-al711.md)
+###### [AL0715](developer/diagnostics/diagnostic-al715.md)
 ##### Hidden messages
 ###### [AL0605](developer/diagnostics/diagnostic-al605.md)
 ###### [AL0607](developer/diagnostics/diagnostic-al607.md)
 ##### Information messages
+###### [AL0719](developer/diagnostics/diagnostic-al719.md)
 ###### [AL1031](developer/diagnostics/diagnostic-al1031.md)
 ###### [AL1076](developer/diagnostics/diagnostic-al1076.md)
 ##### Fatal Error messages
