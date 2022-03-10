@@ -42,7 +42,8 @@ AboutTextML = ENU = 'Sales invoices appear in this list until they are finalized
 
 ## Remarks 
 
-For more information, see the [AboutText Property](devenv-abouttext-property.md).
+For more information, see the [AboutText Property](devenv-abouttext-property.md). 
+For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md).
 
 ## See Also  
 
