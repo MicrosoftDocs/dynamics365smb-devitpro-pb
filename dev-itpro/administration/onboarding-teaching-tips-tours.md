@@ -145,7 +145,7 @@ Bolded text can call out the most important points, such as
 
 - If the feature is already mentioned in the title, consider if it's necessary to highlight the word again in the body text. Bolding a word once in a tip is usually enough.
 
-  ![Example of Page Teaching Tip mentioning a page name highlighted with bold text ]/../media/onboarding-teaching-tip-page-bold.png)
+  ![Example of Page Teaching Tip mentioning a page name highlighted with bold text ](../media/onboarding-teaching-tip-page-bold.png)
 
 ### Italics
 
@@ -155,13 +155,13 @@ Italic text can be used to bring attention to key terms or field values, such as
 
 - Field value, such as *Closed*
 
-![Example of Tour Teaching Tip describing the field value Closed marked with italic ]/../media/onboarding-teaching-tip-page-italics.png)
+![Example of Tour Teaching Tip describing the field value Closed marked with italic ](../media/onboarding-teaching-tip-page-italics.png)
 
 ### Links to open pages
 
 Adding links to page teaching tips can be relevant in the following cases:  
 
-- Links can be added to page teaching tips, to help discoverability of a related key page or list in Business Central, such as linking to the **Item Templates** page from a teaching tip on the **Items list** page.  
+- Links can be added to page teaching tips, to help discoverability of a related key page or list in Business Central, such as linking to the **Item Templates** page from a teaching tip on the **Items** list page.  
 
 #### Best practice for use of Italic text
 
@@ -171,7 +171,7 @@ Adding links to page teaching tips can be relevant in the following cases:
 
 The following illustration shows a page teaching tip with a link to guide users to a related page in Business Central, such as the **Posted Sales Invoices** list, that users might be looking for in the **Sales Invoices** list.
 
-![Example of a Page Teaching Tip with a link to guide users to a related page in BC such as the Posted Sales Invoices list  that users might be looking for  ]/../media/onboarding-teaching-tip-page-link.png) |     |
+![Example of a Page Teaching Tip with a link to guide users to a related page object, such as the Posted Sales Invoices list, that users might be looking for  ](../media/onboarding-teaching-tip-page-link.png)
 
 ### Common pitfalls
 
