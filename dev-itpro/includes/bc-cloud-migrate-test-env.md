@@ -9,4 +9,4 @@ To help you test the migration, you can migrate data to the target production en
 > [!IMPORTANT]
 > If you create a sandbox environment that is a copy of the production environment, do not run the replication in the sandbox. Always run the data replication in the environment that you plan to use for production, and then create a new sandbox copy.
 
-For Dynamics GP, you can create a diagnostics run from the *Cloud Migration Management** page to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.  
+For Dynamics GP, you can create a diagnostics run from the **Cloud Migration Management** page to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.  

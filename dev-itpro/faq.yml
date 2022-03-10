@@ -81,7 +81,7 @@ sections:
         answer: |
           For [!INCLUDE [prod_short](developer/includes/prod_short.md)] online, there is a limit to how much database storage capacity we allow each tenant to use for their environments (databases).
 
-          [!INCLUDE [admin-db-quota](developer/includes/admin-db-quota.md)]
+          [!INCLUDE [db-storage-limit](includes/db-storage-limit.md)]
 
           For more information, see [Managing capacity](administration/tenant-admin-center-capacity.md).
 

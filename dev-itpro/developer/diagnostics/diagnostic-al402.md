@@ -3,7 +3,7 @@ title: "Compiler Error AL0402"
 description: "Expression {0} cannot be specified more than once in a 'case' statement."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
