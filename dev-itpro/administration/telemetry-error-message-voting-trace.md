@@ -34,7 +34,8 @@ The following table explains the general dimensions included in the trace. The t
 |Dimension|Description or value|
 |---------|-----|-----------|
 |message|**User gave feedback on error message: [OK|Not OK]**|
-|severityLevel|**3**|
+
+<!-- removed by request |severityLevel|**3**| -->
 
 ### Custom dimensions
 
@@ -51,10 +52,8 @@ The following table explains the custom dimensions included in the trace.
 |appId|Specifies the ID of the extension that threw the error.|
 |appName|Specifies the name of the extension that threw the error.|
 |appVersion|Specifies the version of the extension that threw the error.|
-|clientType|Specifies the type of client that executed the message, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|hostType|Specifies [tbd]|
 |environmentName|Specifies the name of the tenant environment. This dimension isn't included with Business Central on-premises. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |errorMessage|Specifies the error shown to the user.|
@@ -62,6 +61,10 @@ The following table explains the custom dimensions included in the trace.
 |userFeedback|Specifies what the user voted, which can be either **Yes** or **No**.|
 |userLocale|Specifies the regional language version of the message. The value is a language culture name, like **en-US** for English US and **da-DK** for Danish.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+<!--
+|clientType|Specifies the type of client that executed the message, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
+|hostType|Specifies [tbd]|-->
 
 <!--
 {"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectType":"Page","alObjectName":"Dialog","alObjectId":"-1","alStackTrace":"undefined","hostType":"Browser","userLocale":"en-US","exceptionId":"undefined","errorMessage":"undefined","userFeedback":"No","appId":"null","appName":"null","appPublisher":"null","appVersion":"null","environmentName":"null"}
