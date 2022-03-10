@@ -122,10 +122,10 @@ By default, users aren't assigned an actual telemetry ID. Instead, the telemetry
 3. Choose the user name to open the **User Card** page.
 4. Select the **Telemetry ID** field ![lookup button that opens the dialog for setting the telemetry ID.](../developer/media/ellipse-button.png).
 
-  ![Dialog for setting the telemetry ID on the user.](../developer/media/telemetry-id.png).
+   ![Dialog for setting the telemetry ID on the user.](../developer/media/telemetry-id.png).
 
-  - To assign or change the telemetry ID, choose **Set field to random GUID** > **OK**.
-  - To clear the telemetry ID, choose **Set field to null GUID** > **OK**.
+   - To assign or change the telemetry ID, choose **Set field to random GUID** > **OK**.
+   - To clear the telemetry ID, choose **Set field to null GUID** > **OK**.
 
 > [!NOTE]
 > We recommend that you assign a telemetry ID only while troubleshooting and change the ID when if it's used for an extended period of time.
