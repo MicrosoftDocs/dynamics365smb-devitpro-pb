@@ -113,9 +113,9 @@ New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2
 
 ## Assign a telemetry ID to users
 
-To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain traces, but not all. It is used only in traces that Business Central service/server emits in the context of a user session. So, for example, traces emitted by the Web server won't  include this ID.
+To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain traces, but not all. Specifically, it's used only in traces that the Business Central service/server emits in the context of a user session. So, for example, traces that the Business Central Web server emits won't include this ID.
 
-By default, users aren't assigned an actual telemetry ID. Instead, the telemetry ID is a null GUID, like `{00000000-0000-0000-0000-000000000000} `, which isn't used in telemetry. To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
+By default, users aren't assigned an actual telemetry ID. Instead, the telemetry ID is a null GUID, like `{00000000-0000-0000-0000-000000000000}`, which doesn't show in telemetry. To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
 
 1. Sign in to Business Central using an administrator account.
 2. Choose the ![Lightbulb that opens the Tell Me feature.](media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Users**, and then choose the related link.
@@ -129,6 +129,8 @@ By default, users aren't assigned an actual telemetry ID. Instead, the telemetry
 
 > [!NOTE]
 > We recommend that you assign a telemetry ID only while troubleshooting and change the ID when if it's used for an extended period of time.
+
+
 
 ## Cleaning up settings
 
