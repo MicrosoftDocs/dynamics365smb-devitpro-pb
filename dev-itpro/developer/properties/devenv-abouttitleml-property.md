@@ -38,7 +38,8 @@ AboutTitleML = ENU = 'About sales invoices', DAN = 'Om salgsfakturaer';
 
 ## Remarks
 
-For more information, see the [AboutTitle Property](devenv-abouttitle-property.md).
+For more information, see the [AboutTitle Property](devenv-abouttitle-property.md). 
+For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md).
 
 ## See Also
 
