@@ -3,11 +3,12 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 02/07/2022
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -132,6 +133,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
+|[ReportLayoutType](reportlayouttype/reportlayouttype-option.md)|Represents the type of a report layout.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
 |[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|
