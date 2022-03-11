@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Using Containments and Associations
 Containments and associations are relationships between pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. OData web services support navigation between pages using containments and associations.  

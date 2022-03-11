@@ -3,12 +3,11 @@ title: "Deprecated features in client, server, database"
 description: Describes the features that have been removed or replaced in the platform components of Business Central. 
 author: bholtorf
 ms.custom: na
-ms.date: 01/19/2022
+ms.date: 01/28/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 
 # Deprecated Features in the Platform - Clients, Server, and Database
@@ -26,6 +25,15 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in the 2022 release wave 2 (version 21.0). Please use the [Windows PowerShell cmdlets](/powershell/business-central/overview) that we make available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
+### .NET add-ins not using .NET Standard (Removal)
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2. |
+
+
+
 <!---
 These changes are not confirmed yet
 
@@ -39,13 +47,6 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2022 release wave 1 (version 20.0)
 
-### .NET add-ins not using .NET Standard (Removal)
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1.
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1. |
-
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
@@ -53,7 +54,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed (online only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services.|
+|Removed (online only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).  For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services. |
 
 ### <a name="permissions"></a>Permissions defined as data
 
@@ -70,6 +71,14 @@ The legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
 |Replaced | Introduced back in 2018 and replaced with new endpoints several releases ago the legacy V1 endpoints served by our Power Automate, Power Apps and Logic Apps connector are being finally discontinued. Since more than a year ago actions based on these endpoints are not exposed in the Power Automate or Power Apps UI in any form. Partners are also educated and encouraged to use actions based on current V3 endpoints, so in 2022 we will be completely removing access to V1 endpoints in our connector. Any partners and customers who had in the past created a flow or app based on these olde endpoints and have not moved to the new ones needs to update their Power Automate flows or Power Apps now and switch to V3 actions. |
+
+### <a name="invoicingapi"></a>Deprecating nativeInvoicing APIs
+
+The following feature will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.
+
+|Moved, Removed, or Replaced? |	Why?|
+|-----------------------------|-----|
+|Removed| The nativeInvoicing API will be deprecated with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 and **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2. Use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] standard APIs instead. For more information, see [API(V2.0) for Dynamics 365 Business Central](../api-reference/v2.0/index.md).|
 
 ## Changes in 2021 release wave 2 (version 19.0)
 

@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -200,7 +199,10 @@ case <Expression> of
 end;  
 ```  
 
-In this definition, *`<Expression>`* cannot be a record and *`<Value set>`* must be an expression or a range.  
+In this definition, the result of *`<Expression>`* is matched against each value set and *`<Value set>`* must be an expression or a range.  
+
+> [!NOTE]
+> *`<Expression>`* cannot be an application object variable, since application objects do not have a comparator.
 
 Case statements are also called multiple option statements and are typically used when you must choose between more than two different actions. The method of the case statement is as follows:  
 

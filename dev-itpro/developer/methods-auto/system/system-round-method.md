@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -37,7 +36,7 @@ This optional parameter determines the precision used when rounding. If you do n
 2.  If you have customized Codeunit 45 and it does not implement the ReadRounding method, then the precision is specified as 2 digits after the decimal.
           
 *[Optional] Direction*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This optional parameter specifies how to round the Number parameter. The default rounding method is '='. The following are the options for rounding:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
 -   '\>' rounds up

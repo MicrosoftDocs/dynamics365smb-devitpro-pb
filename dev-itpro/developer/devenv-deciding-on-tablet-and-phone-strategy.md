@@ -6,7 +6,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: blrobl
 ---
 # Deciding on Your Tablet and Phone Strategy

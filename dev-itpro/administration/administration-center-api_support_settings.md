@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Support Settings
 description: Learn about the Business Central administration center API for managing support settings.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -21,7 +20,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.9/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.11/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route Parameters
@@ -60,7 +59,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.9/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.11/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route Parameters
@@ -107,6 +106,6 @@ Returns the newly updated support contact information.
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

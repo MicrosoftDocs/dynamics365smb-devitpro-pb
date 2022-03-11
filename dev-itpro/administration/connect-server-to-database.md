@@ -8,7 +8,6 @@ ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.service: "dynamics365-business-central"
 ---
 
 # Connecting a Business Central Server Instance to a Database

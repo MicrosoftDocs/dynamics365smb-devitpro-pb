@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: a-emniel
 ---
 
@@ -17,15 +16,16 @@ ms.author: a-emniel
 
 When creating a name for your offer, you can use the following two naming structures:
 
-- Name 1: [Your offer name] for (Microsoft) Dynamics 365 Business Central 
+- Name 1: [Your offer name] for Dynamics 365 Business Central 
 
-    *Example: Sales & Inventory Forecast for Microsoft Dynamics 365 Business Central*
+    *Example: QR Generator for Dynamics 365 Business Central*
 
 - Name 2: Your offer name only 
 
-    *Example: Sales & Inventory Forecast*  
+    *Example: QR Generator*  
 
-
+> [!NOTE]  
+> The name of your app can not exceed 50 characters.
 
 **How to create a strong app name for your offer**:
 

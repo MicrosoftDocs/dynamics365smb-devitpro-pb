@@ -7,7 +7,6 @@ ms.reviewer: solsen
 ms.date: 04/01/2021
 ms.suite: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 
 # Extending Pages Previously Based on the Date Virtual Table

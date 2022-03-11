@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ms.custom: intro-internal
 ---
@@ -72,7 +71,7 @@ To modify the telemetry setting, press **Ctrl+Shift+P** in Visual Studio Code an
 
 <!-- 
 ## The symbol file
-The symbol file contains metadata of the application. This is what your extension is being built on, and therefore the symbol file must be present. If it is not present, you will be prompted to download it. For more information about the platform symbol file, see [Symbols](devenv-symbols.md). -->
+The symbol file contains metadata of the application. This is what your extension is being built on, and therefore the symbol file must be present. If it is not present, you will be prompted to download it. For more information about the platform symbol file, see [Symbols](/dynamics365/business-central/dev-itpro/developer/devenv-get-started). -->
 
 ## Installing and publishing an extension
 

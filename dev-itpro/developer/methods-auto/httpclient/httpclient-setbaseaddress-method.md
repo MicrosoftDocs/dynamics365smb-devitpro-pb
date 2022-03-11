@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,7 +29,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *NewBaseAddress*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The base address of the Uniform Resource Identifier (URI) of the Internet resource used when sending requests.  
 
 

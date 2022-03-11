@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -20,12 +19,12 @@ ms.author: solsen
 > REST programming is not natively supported in C/SIDE. In order to run the APIs you must add the REST dependent types manually. Existing W1 objects can compile and load, but some .NET types cannot be loaded into the C/SIDE Development environment variable editor due to missing server dependencies.
 
 ## Enable access to the APIs
-1. Open [!INCLUDE[prod_short](../../includes/prod_short.md)] Administration tool. 
-2. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
-3. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
+1. Open the [Business Central Administration tool](../../administration/administration-tool.md).
+1. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
+1. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
     When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[prod_short](../../includes/prod_short.md)] server. The default port for OData web services is 7048.
-4. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
-5. On the **API Setup** page, choose the **Integrate APIs** button.  
+1. In [!INCLUDE[prod_short](../../includes/prod_short.md)], search for **API Setup** and then choose the related link.
+1. On the **API Setup** page, choose the **Integrate APIs** button.  
     This will start a process of populating all the integration tables with records for all APIs. The process can take several minutes.
 
 Depending on where you want to access the APIs from, you must specify the correct endpoint. For more information, see [Endpoints for APIs](endpoints-apis-for-dynamics.md).

@@ -1,12 +1,12 @@
 ---
 title: "Monitoring SQL Database Deadlocks"
+description: Read about how you can configure Business Central on-premises to log deadlocks that occur in the SQL database.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 # Monitoring SQL Database Deadlocks
@@ -43,7 +43,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
 
     The event_file target writes event session output from a buffer to a disk file that you specify. There are two ways to do this:
     - From Object Explorer, open the session's **Properties**, and then on the **Data Storage** page, add an **event_file** type target.  
-    - Using a query, run the [ALTER EVENT SESSION](/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017) transact-sql statement. For example:
+    - Using a query, run the [ALTER EVENT SESSION](/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017&preserve-view=true) transact-sql statement. For example:
       ```
       ALTER EVENT SESSION [Demo Database BC_deadlock_monitor]
           ON SERVER
@@ -54,7 +54,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
       ```
     Replace `C:\logging\mydeadlocks.xel` with the path and file name that you want to store the data.
    
-    For more information see [Alter an Extended Events Session](/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
+    For more information see [Alter an Extended Events Session](/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017&preserve-view=true) and [Targets for Extended Events in SQL Server](/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target&preserve-view=true).
     
 2. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, create a view that has the name `deadlock_report_event_file_view` and uses the new event_file target.  
 

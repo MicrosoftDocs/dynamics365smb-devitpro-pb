@@ -1,12 +1,12 @@
 ---
 title: "Authenticating Users with Active Directory Federation Services"
+description: Learn how to configure Business Central on-premises to use AD FS authentication.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Authenticating Users with Active Directory Federation Services
@@ -51,7 +51,7 @@ You must complete these steps separately for [!INCLUDE[webserver](../developer/i
 1.  Open **Server Manager** on the computer that is running AD FS, choose **AD FS** > **Tools** > **AD FS Management**.
 2.  Right-click **Relying Party Trusts**, and then choose **Add Relying Party Trust**.
 
-    ![AD FS Management.](../media/ADFS_Console.png "AD FS Management")
+    ![AD FS Management in Windows Explorer menu.](../media/ADFS_Console.png "AD FS Management in Windows Explorer menu")
 
     The **Add Relying Party Trust Wizard** appears.
 3.  In the **Welcome** step, choose **Claims aware**, and then choose **Start**.
@@ -139,7 +139,7 @@ Based on whether you will be using SAML tokens or JSON Web Tokens (JWT), which a
 
     Choose **OK** when done to close the **Edit Claim Rules** dialog box.
 
-    ![AD FS Edit Claims Rule Done.](../media/ADFS_EditClaimsRule3.png "AD FS Edit Claims Rule Done")
+    ![Edit Claims Rules dialog.](../media/ADFS_EditClaimsRule3.png "Edit Claims Rules dialog")
 
 ### Set up support for JSON Web tokens (JWT)
 

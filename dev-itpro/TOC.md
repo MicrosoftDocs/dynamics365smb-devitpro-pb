@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -63,6 +63,8 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
+### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
 ### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
 ### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
 ### [Update 19.1](whatsnew/whatsnew-update-19-1.md)
@@ -188,10 +190,8 @@
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
-### [Run the cloud migration tool](administration/migration-tool.md)
-### [Manage the migration to the cloud](administration/migration-management.md)
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
-### [Migrate from Dynamics GP](administration/migrate-dynamics-gp.md)
+### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
@@ -199,33 +199,36 @@
 <!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
+### [Available telemetry](administration/telemetry-available-telemetry.md) 
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
-### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
-### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
-### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
-### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
-### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
-### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
-### [Email Telemetry](administration/telemetry-email-trace.md)
-### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
-### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
-### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
-### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
-### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
-### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
-### [Page View Telemetry](administration/telemetry-page-view-trace.md)
-### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
-### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
-### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
-### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
-### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
-### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
-### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
-### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
-### [Event IDs](administration/telemetry-event-ids.md)
+### Telemetry by area
+#### [Overview](administration/telemetry-area-overview.md)
+#### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
+#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
+#### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
+#### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
+#### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
+#### [Email Telemetry](administration/telemetry-email-trace.md)
+#### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
+#### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
+#### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
+#### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
+#### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
+#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Page View Telemetry](administration/telemetry-page-view-trace.md)
+#### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
+#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
+#### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
+#### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
+#### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
+#### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
+#### [Web Service Requests Telemetry (Incoming)](administration/telemetry-webservices-trace.md)
+#### [Web Service Requests Telemetry (Outgoing)](administration/telemetry-webservices-outgoing-trace.md)
+### [Telemetry by Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
-## Automation
-### [Introduction to Automation APIs](administration/itpro-introduction-to-automation-apis.md)
+## Automation APIs
+### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Automation company](administration/resources/dynamics_automationcompany.md)
@@ -333,6 +336,8 @@
 ### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
 ### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+### [Extension Types and Scope](developer/devenv-extension-types-and-scope.md)
+### [Moving Between Extension Scopes](developer/devenv-extension-moving-scope.md)
 ### FAQ about apps
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
@@ -346,7 +351,15 @@
 ### [Generating Delta Files](developer/devenv-generating-delta-files.md)
 ### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
 ### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-### [Converting from Extensions V1 to Extensions V2](developer/devenv-upgrade-v1-to-v2-overview.md)
+## Using the System Application
+### [Overview of the System Application](developer/devenv-system-application-overview.md)
+### Creating New Modules in the System Application
+#### [Module Architecture](developer/devenv-blueprint.md)
+#### [Getting Started with Modules](developer/devenv-getting-started.md)
+#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
+#### [Create a New Module](developer/devenv-new-module.md)
+#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
+#### [Change a Module](developer/devenv-change-a-module.md)
 ## Extending the Base Application
 ### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 ### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
@@ -358,19 +371,6 @@
 #### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 #### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 #### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
-## Using the System Application
-### [Overview of the System Application](developer/devenv-system-application-overview.md)
-### Creating New Modules in the System Application
-#### [Module Architecture](developer/devenv-blueprint.md)
-#### [Getting Started with Modules](developer/devenv-getting-started.md)
-#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
-#### [Create a New Module](developer/devenv-new-module.md)
-#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
-#### [Change a Module](developer/devenv-change-a-module.md)
-## Code Deprecation
-### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
-### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Events
 ### [Events in AL](developer/devenv-events-in-al.md)
 ### [Event Types](developer/devenv-event-types.md)
@@ -396,14 +396,21 @@
 ### [Table Extension Object](developer/devenv-table-ext-object.md)
 ### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
 ### [View Table Data](developer/devenv-view-table-data.md)
-### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
-### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
 ### [Temporary Tables](developer/devenv-temporary-tables.md)
 ### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
 ### [Classifying Data](developer/devenv-classifying-data.md)
 ### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
+## Reading and Writing data
+### [Data Access](administration/optimize-sql-data-access.md)
+### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
+### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
+### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
+### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
+### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
+### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
 ### Partial Records
 #### [Using Partial Records](developer/devenv-partial-records.md)
 #### [FAQ](developer/devenv-partial-records-faq.md)
@@ -520,7 +527,8 @@
 ### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
 ## Formatting Data
 ### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
+### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)  
+### [About Dates in Business Central](developer/devenv-about-dates.md)
 ## Translations
 ### [Translations Overview](developer/devenv-translations-overview.md)
 ### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
@@ -561,6 +569,10 @@
 ### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
+## Code Deprecation
+### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Rules and Guidelines
 ### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
 ### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
@@ -582,6 +594,7 @@
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
 ### [AL Control Statements](developer/devenv-al-control-statements.md)  
 ### [AL Complex Types](developer/devenv-al-complextypes.md)
+### [AL Error Handling](developer/devenv-al-error-handling.md)
 ### [Working with AL Methods](developer/devenv-al-methods.md)
 ### [System-Defined Variables](developer/devenv-system-defined-variables.md)
 ### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
@@ -592,6 +605,7 @@
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
+##### [Warnings Turning into Errors Overview](developer/diagnostics/diagnostics-with-limit-date-overview.md)
 <!-- [//]: # (START>DO_NOT_EDIT_DIAGNOSTICS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -1059,6 +1073,20 @@
 ###### [AL0691](developer/diagnostics/diagnostic-al691.md)
 ###### [AL0693](developer/diagnostics/diagnostic-al693.md)
 ###### [AL0696](developer/diagnostics/diagnostic-al696.md)
+###### [AL0698](developer/diagnostics/diagnostic-al698.md)
+###### [AL0704](developer/diagnostics/diagnostic-al704.md)
+###### [AL0705](developer/diagnostics/diagnostic-al705.md)
+###### [AL0706](developer/diagnostics/diagnostic-al706.md)
+###### [AL0707](developer/diagnostics/diagnostic-al707.md)
+###### [AL0708](developer/diagnostics/diagnostic-al708.md)
+###### [AL0709](developer/diagnostics/diagnostic-al709.md)
+###### [AL0710](developer/diagnostics/diagnostic-al710.md)
+###### [AL0712](developer/diagnostics/diagnostic-al712.md)
+###### [AL0713](developer/diagnostics/diagnostic-al713.md)
+###### [AL0714](developer/diagnostics/diagnostic-al714.md)
+###### [AL0716](developer/diagnostics/diagnostic-al716.md)
+###### [AL0718](developer/diagnostics/diagnostic-al718.md)
+###### [AL0720](developer/diagnostics/diagnostic-al720.md)
 ###### [AL0999](developer/diagnostics/diagnostic-al999.md)
 ###### [AL1001](developer/diagnostics/diagnostic-al1001.md)
 ###### [AL1002](developer/diagnostics/diagnostic-al1002.md)
@@ -1121,12 +1149,12 @@
 ###### [AL1130](developer/diagnostics/diagnostic-al1130.md)
 ###### [AL1150](developer/diagnostics/diagnostic-al1150.md)
 ###### [AL1151](developer/diagnostics/diagnostic-al1151.md)
+###### [AL1152](developer/diagnostics/diagnostic-al1152.md)
 ##### Warning messages
 ###### [AL0200](developer/diagnostics/diagnostic-al200.md)
 ###### [AL0235](developer/diagnostics/diagnostic-al235.md)
 ###### [AL0251](developer/diagnostics/diagnostic-al251.md)
 ###### [AL0254](developer/diagnostics/diagnostic-al254.md)
-###### [AL0273](developer/diagnostics/diagnostic-al273.md)
 ###### [AL0374](developer/diagnostics/diagnostic-al374.md)
 ###### [AL0424](developer/diagnostics/diagnostic-al424.md)
 ###### [AL0432](developer/diagnostics/diagnostic-al432.md)
@@ -1163,6 +1191,7 @@
 ###### [AL0659](developer/diagnostics/diagnostic-al659.md)
 ###### [AL0679](developer/diagnostics/diagnostic-al679.md)
 ###### [AL0684](developer/diagnostics/diagnostic-al684.md)
+###### [AL0717](developer/diagnostics/diagnostic-al717.md)
 ###### [AL1000](developer/diagnostics/diagnostic-al1000.md)
 ###### [AL1003](developer/diagnostics/diagnostic-al1003.md)
 ###### [AL1004](developer/diagnostics/diagnostic-al1004.md)
@@ -1179,6 +1208,7 @@
 ###### [AL1072](developer/diagnostics/diagnostic-al1072.md)
 ##### Warning (Future Error) messages
 ###### [AL0269](developer/diagnostics/diagnostic-al269.md)
+###### [AL0273](developer/diagnostics/diagnostic-al273.md)
 ###### [AL0299](developer/diagnostics/diagnostic-al299.md)
 ###### [AL0468](developer/diagnostics/diagnostic-al468.md)
 ###### [AL0481](developer/diagnostics/diagnostic-al481.md)
@@ -1232,10 +1262,13 @@
 ###### [AL0694](developer/diagnostics/diagnostic-al694.md)
 ###### [AL0695](developer/diagnostics/diagnostic-al695.md)
 ###### [AL0697](developer/diagnostics/diagnostic-al697.md)
+###### [AL0711](developer/diagnostics/diagnostic-al711.md)
+###### [AL0715](developer/diagnostics/diagnostic-al715.md)
 ##### Hidden messages
 ###### [AL0605](developer/diagnostics/diagnostic-al605.md)
 ###### [AL0607](developer/diagnostics/diagnostic-al607.md)
 ##### Information messages
+###### [AL0719](developer/diagnostics/diagnostic-al719.md)
 ###### [AL1031](developer/diagnostics/diagnostic-al1031.md)
 ###### [AL1076](developer/diagnostics/diagnostic-al1076.md)
 ##### Fatal Error messages
@@ -1273,6 +1306,12 @@
 ### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
 ### [Flowfields](developer/devenv-flowfields.md)
 ### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### Nonclustered Columnstore Indexes (NCCI)
+#### [NCCI Overview](developer/devenv-ncci-overview.md)
+#### [NCCI and SQL Server](developer/devenv-ncci-and-sql-server.md)
+#### [NCCI Tuning and Tracing](developer/devenv-ncci-tuning-and-tracing.md)
+#### [NCCI Performance](developer/devenv-ncci-performance.md)
+#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
 ### SumIndexField Technology (SIFT)
 #### [SIFT Overview](developer/devenv-sift-technology.md)
 #### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
@@ -3479,18 +3518,22 @@
 #### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
 #### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
-### API
+### APIs
 #### [Overview](webservices/api-overview.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
+#### [Administration API](administration/itpro-introduction-to-automation-apis.md)
+#### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData Query Performance](webservices/odata-client-performance.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
 #### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
@@ -3500,13 +3543,15 @@
 #### [Containments and Associations](webservices/use-containments-associations.md)
 #### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
+#### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
 #### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](webservices/walkthrough-creating-and-interacting-odata-v4-bound-action.md)
+#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action)
 #### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 #### [Known OData Limitations](webservices/odata-known-limitations.md)
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP Service URIs](webservices/soap-web-service-uris.md)
+#### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Basic Operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
 ##### [CreateMultiple](webservices/CreateMultiple-operation.md)
@@ -3531,6 +3576,7 @@
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
+### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
 <!-- Microsoft Power BI -->
@@ -3665,6 +3711,11 @@
 ### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
 ### [Setting Up the Add-In for Outlook Integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
 ### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
+### Configuring Business Central Database
+#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
+#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
+#### [Using Table Partitioning and Data Compression](administration/using-sql-partitioning-and-compression.md)
+#### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central Server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
 #### Monitoring Server Events
@@ -3677,18 +3728,8 @@
 ##### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
 ##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
+### Analyzing Database Performance
 #### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-### SQL Server Performance
-#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
-#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
-#### [Data Access](administration/optimize-sql-data-access.md)
-#### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
-#### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
-#### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
-#### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
-#### Read Scale-Out
-##### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
-##### [Configuring Database for Read Scale-Out](administration/database-read-scale-out-configuration.md)
 #### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using Telemetry
@@ -3708,11 +3749,11 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
-#### [Incoming Web Services Requests Telemetry](administration/telemetry-webservices-trace.md)
-#### [Outgoing Web Services Requests Telemetry](administration/telemetry-webservices-outgoing-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
+#### [Web Service Requests Telemetry (Incoming)](administration/telemetry-webservices-trace.md)
+#### [Web Service Requests Telemetry (Outgoing)](administration/telemetry-webservices-outgoing-trace.md)
 #### [Event IDs](administration/telemetry-event-ids.md)
 ### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)

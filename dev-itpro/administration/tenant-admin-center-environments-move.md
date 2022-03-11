@@ -2,7 +2,6 @@
 title: Move an environment to another Azure Active Directory organization
 description: You can move a Business Central environment to another Azure Active Directory tenant. Start in the Business Central admin center.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,13 +31,13 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new file name.  
 
 
 ## Return Value
 *[Optional] FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The current value of the FileName Property of an XmlPort.
 
 

@@ -1,15 +1,15 @@
 ---
 title: "Tuning and Tracing"
+description: Explains how to tune and trace SIFT indexes in Business Central.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
-# Tuning and Tracing
+# SIFT Tuning and Tracing
 As a result of using indexed views, SIFT keys are exposed to SQL Server tracing and tuning tools. For example, the SQL Server profiler can display information about which indexed views are maintained for a specific table. This makes it easy for you to assess the cost of maintaining SIFT keys and allows you to make informed decisions about any adjustments that might be required.  
   
 ## SIFT Keys  
@@ -38,5 +38,6 @@ As a result of using indexed views, SIFT keys are exposed to SQL Server tracing 
 
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [SIFT and SQL Server](devenv-sift-and-sql-server.md)  
-[SIFT Performance](devenv-sift-performance.md)  
+[SIFT Performance](devenv-sift-performance.md)
+[Migrating from SIFT to NCCI](devenv-migrating-from-sift-to-ncci.md)
 [FlowFields](devenv-flowfields.md)  

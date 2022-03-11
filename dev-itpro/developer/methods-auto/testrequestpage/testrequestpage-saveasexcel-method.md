@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,7 @@ Saves a report as a Microsoft Excel (.xls) file.
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and file name to which the report is saved. The file name extension should be .xls.  
 
 

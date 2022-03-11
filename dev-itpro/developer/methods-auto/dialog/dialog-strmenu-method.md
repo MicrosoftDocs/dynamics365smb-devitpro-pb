@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,7 +27,7 @@ OptionNumber :=   Dialog.StrMenu(OptionMembers: String [, DefaultNumber: Integer
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *OptionMembers*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A comma-separated string. Each substring in OptionString specifies an option on the menu. The string can be a text constant that is enabled for multilanguage functionality.
         
 *[Optional] DefaultNumber*  
@@ -36,7 +35,7 @@ A comma-separated string. Each substring in OptionString specifies an option on 
 Use this optional parameter to determine a default option, which is highlighted. The options are numbered 1, 2, 3, 4, and so on. If you omit this optional parameter, the first option (1) is used as the default.
           
 *[Optional] Instruction*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Use this optional parameter to add a description to the option values.  
 
 

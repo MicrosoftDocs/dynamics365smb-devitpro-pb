@@ -4,7 +4,6 @@ description: (v1.0) Gets a customer sales object in Dynamics 365 Business Centra
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
