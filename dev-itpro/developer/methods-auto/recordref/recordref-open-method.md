@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -36,7 +35,7 @@ The number of the table.
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
 *[Optional] CompanyName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the company to which you want to change. If you omit this parameter, the current company is used.  
 
 

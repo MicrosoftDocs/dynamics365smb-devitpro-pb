@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -53,4 +52,4 @@ profile MyProfile
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](../methods/devenv-indataset-attribute.md)
+[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)

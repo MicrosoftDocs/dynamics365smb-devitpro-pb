@@ -1,5 +1,6 @@
 ---
 title: "Special Permission Sets"
+description: Learn about built-in permissions sets that carry special meaning in Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/11/2021
@@ -7,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 
 # Special Permission Sets

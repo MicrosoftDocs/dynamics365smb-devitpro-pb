@@ -3,12 +3,11 @@ title: "PerTenantExtensionCop Error PTE0009"
 description: "The properties 'helpBaseUrl' and 'supportedLocales' are reserved for translation apps."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 02/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -22,16 +21,16 @@ The properties 'helpBaseUrl' and 'supportedLocales' are reserved for translation
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-This rule validates that the manifest of your extension (app.json) does not specify the properties `helpBaseUrl` and `supportLocales`.
+This rule validates that the manifest of your extension (app.json) does not specify the properties `helpBaseUrl` and `supportedLocales`.
 For more information, see [JSON files](../devenv-json-files.md) and [Working with Translation Files](../devenv-work-with-translation-files.md).
 
 ## How to fix this diagnostic?
 
-You must remove the properties `helpBaseUrl` and `supportLocales` from the manifest of your extension (app.json).
+You must remove the properties `helpBaseUrl` and `supportedLocales` from the manifest of your extension (app.json).
 
 ## Code example triggering the rule
 
-The following manifest specifies the properties `helpBaseUrl` and `supportLocales` and is then not valid.
+The following manifest specifies the properties `helpBaseUrl` and `supportedLocales` and is then not valid.
 
 ```JSON
 {

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -58,7 +57,7 @@ For example, the following ruleset turns the diagnostic for rule AS0073 into an 
 
 When the property [Obsolete State](../properties/devenv-obsoletestate-property.md) is used to mark an object as `Obsolete Pending` or `Obsolete Removed`, you need to also specify the property [Obsolete Tag](../properties/devenv-obsoletetag-property.md).
 
-When the attribute [Obsolete](../methods/devenv-obsolete-attribute.md) is used, you need to specify the obsolete tag attribute parameter.
+When the attribute [Obsolete](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute) is used, you need to specify the obsolete tag attribute parameter.
 
 
 ## Code examples triggering the rule
@@ -125,4 +124,4 @@ codeunit 50100 MyCodeunit
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

@@ -7,7 +7,6 @@ ms.date: 01/03/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: qutreson
 ---
 
@@ -56,6 +55,10 @@ For example, let's consider an app A which has an offer in the AppSource marketp
 
 > [!IMPORTANT]
 > If one or more libraries in your submission have their own offer, their listing(s) in the AppSource marketplace won't be updated automatically. In order to keep the listing(s) in sync with the version of the app(s) uploaded to Business Central, you should submit a submission for their related offer(s).
+
+### How long does the 'Automated application validation' take?
+
+During 'Automated application validation', the apps in your submission are validated for each of the country/regions and each of the releases of [!INCLUDE[prod_short](../includes/prod_short.md)] targeted. If you already have a version of these extensions published to AppSource, then it will also run the breaking change validation using the apps currently in AppSource as baseline. Depending on the size of your app, the validation time can vary. Submissions are generally processed within a few minutes and we expect all submissions to be processed under 3 hours. However, if your app contains thousands of AL files, this can take longer. We would then recommend splitting the app in smaller modules as this would also improve the development experience and the maintainability of your code base.
 
 ### How many automated tests do we need to run for validation and how high must the test coverage be?  
 

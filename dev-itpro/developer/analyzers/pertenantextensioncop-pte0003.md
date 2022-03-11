@@ -3,12 +3,11 @@ title: "PerTenantExtensionCop Error PTE0003"
 description: "Procedures must not subscribe to CompanyOpen events because it can increase the login time for Dynamics 365 Business Central."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 02/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

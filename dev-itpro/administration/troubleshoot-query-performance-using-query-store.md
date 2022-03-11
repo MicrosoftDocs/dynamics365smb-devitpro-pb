@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: troubleshooting
-ms.service: "dynamics365-business-central"
 ms.author: kepontop
 ---
 # Troubleshooting: Using Query Store to Monitor Query Performance in Business Central

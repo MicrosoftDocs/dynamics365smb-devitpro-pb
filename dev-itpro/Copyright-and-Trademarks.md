@@ -1,5 +1,6 @@
 ---
 title: "Copyright and Trademarks"
+description: Landing page for legal notices for Business Central on-premises.
 author: solsen
 ms.custom: na
 ms.date: 04/01/2021
@@ -7,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 
 ---

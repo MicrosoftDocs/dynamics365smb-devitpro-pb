@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 ms.search.keywords: reports, triggers, trigger flow, sequence
 ---
 
@@ -188,4 +187,4 @@ ROOT OnMergeDocumentReport
 [Report Triggers](triggers-auto/report/devenv-oninitreport-report-trigger.md) 
 [Report Data Item Triggers](triggers-auto/reportdataitem/devenv-onpredataitem-reportdataitem-trigger.md)  
 [Report Object](devenv-report-object.md)  
-[Triggers](triggers/devenv-triggers.md)  
+[Triggers](/dynamics365/business-central/dev-itpro/developer/triggers-auto/devenv-triggers)

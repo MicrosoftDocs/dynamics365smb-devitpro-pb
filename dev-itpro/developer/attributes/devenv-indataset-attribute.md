@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -33,6 +32,16 @@ Sets whether the AL variable's value is included in the dataset.
 ```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+```al
+var
+    [InDataSet]
+    StyleIsStrong: Boolean;
+    [InDataSet]
+    NameIndent: Integer;
+```
 
 ## Remarks
 

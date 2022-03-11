@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -47,7 +46,7 @@ You can use the [GetLastErrorText method](methods-auto/system/system-getlasterro
 
 ## Creating a try method
 
-To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md). 
+To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute). 
 
 <!-- A try method has the following restrictions:  
 
@@ -74,7 +73,7 @@ end;
 
 When you run this codeunit, the execution of the `OnRun` trigger stops. The error message `An error occurred during the operation` is thrown in the UI.
 
-Now, set the [TryFunction Attribute](methods/devenv-tryfunction-attribute.md) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
+Now, set the [TryFunction Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute) of the  `MyTrymethod` method. Then, add code to the `OnRun` trigger to handle the return value of the try method: 
 
 ```AL
 [TryFunction]

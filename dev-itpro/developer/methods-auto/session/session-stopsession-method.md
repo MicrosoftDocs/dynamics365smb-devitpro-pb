@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -38,7 +37,7 @@ The ID of the session that you want to stop.The session can be any of the follow
 -   Background session
           
 *[Optional] Comment*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 An optional comment about the session event. The comment is stored in Table 2000000111, the Session Event table.
           
 

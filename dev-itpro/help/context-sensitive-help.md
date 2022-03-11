@@ -4,7 +4,6 @@ description: Learn about how to add context-sensitive Help to your Business Cent
 author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 04/01/2021
 ---

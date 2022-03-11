@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 author: jswymer
 ---
 # Resolving Compilation Errors When Converting a Dynamics NAV 2018 Database

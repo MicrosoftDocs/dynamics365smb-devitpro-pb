@@ -2,13 +2,12 @@
 title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
-ms.service: dynamics365-business-central
 ms.topic: troubleshooting
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: cloud, edge
-ms.date: 01/05/2022
+ms.date: 02/18/2022
 ms.author: dmitrych
 ms.review: jswymer
 ---
@@ -134,7 +133,7 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
     |Option|When to use|
     |------|-----------|
-    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version, currently version 18.|
+    |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version.|
     |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
     |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
@@ -197,9 +196,8 @@ When you've completed the migration, disable cloud migration by using the **Disa
 
 ## See also
 
-[Running the Cloud Migration Tool](migration-tool.md)  
+[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Migrate to Business Central Online from Business Central On-premises](migrate-business-central-on-premises.md)  
 [Migrate to Business Central Online from Dynamics GP](migrate-dynamics-gp.md)  
 [Upgrading from Dynamics NAV to Business Central Online](../upgrade/Upgrade-Considerations.md#online)  
-[Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [FAQ about Connecting to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
