@@ -1,4 +1,3 @@
-
 ---
 title: "OnCustomDocumentMerger Event"
 description: Describe the OnCustomDocumentMerger Event in Business Central.
@@ -18,7 +17,7 @@ This article describes the syntax of the OnCustomDocumentMerger event which will
 
 ## Usage
 
-Use the OnCustomDocumentMerger event to specify what happens when the user has specified a custom report layout type that is to be rendered into an artifact in application code. For more information about subscribing to this event, see [Developing Report Custom Render Extensions Overview](devenv-reports-custom-render.md).
+Use the OnCustomDocumentMerger event to specify what happens when the user has specified a custom report layout type that is to be rendered into an artifact in application code. For more information about subscribing to this event, see [Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md).
 
 ## Publisher
 
@@ -88,7 +87,7 @@ Specifies whether the extension handled the merge action successfully.
 
 The simplest possible custom document render can can be implemented like the following sample that will use the existing application logic to render Xml datasets into Microsoft Word or Pdf documents using a given template (Word template).
 
-``al
+```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMerger', '', true, true)]
     local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
     var
@@ -135,7 +134,7 @@ The simplest possible custom document render can can be implemented like the fol
                 error('Unsupported report action %0', ReportAction);
         end;
     end;
-``
+```
 
 ## See Also
 
