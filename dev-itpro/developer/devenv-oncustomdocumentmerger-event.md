@@ -139,7 +139,7 @@ The simplest possible custom document render can can be implemented like the fol
 ## See Also
 
 [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)
-[Developing Report Custom Render Extensions Overview](devenv-reports-custom-render.md)
+[Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md)
 [Developing Printer Extensions Overview](devenv-reports-printing.md)
 [Creating a Printer Extension](devenv-reports-create-printer-extension.md)
 [Events in AL](devenv-events-in-al.md)
