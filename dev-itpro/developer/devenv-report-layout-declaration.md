@@ -15,7 +15,7 @@ author: nhsejth
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. You can use the [Report Object](devenv-report-object-md) and [Report Extension Object](devenv-report-ext-object.md) to define reports in AL. When you define the layout section of a report, there are two ways to do that.
+When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. You can use the [Report Object](devenv-report-object.md) and [Report Extension Object](devenv-report-ext-object.md) to define reports in AL. When you define the layout section of a report, there are two ways to do that.
 
 1. In versions prior to [!INCLUDE[prod_short](../includes/prod_short.md)] release wave 1, layout definitions support the use of one RDL layout and one Microsoft Word layout per AL object and you then specify which report layout type is the default. We will refer to this syntax as the *legacy layout* in this topic.
 2. From version [!INCLUDE[prod_short](../includes/prod_short.md)] release wave 1, the `rendering` section within the AL object allows you to specify a number of named layouts in the object and you specify the default layout by name and not by type. **Note:** This is the recommended syntax to use.
