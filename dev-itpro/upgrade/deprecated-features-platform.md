@@ -18,6 +18,14 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
+### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API 
+The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Replaced| To help developers take advantage of all the identity features available in Azure Active Directory, we’re now recommending that all developers to use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API, so you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Azure AD Graph and will no longer provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
+
+
 ### Business Central Server Administration tool (Removal)
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
@@ -190,6 +198,17 @@ The following component is **Removed** with [!INCLUDE[prod_short](../developer/i
 
 <!--BDM-->
 We have simplified the story for how to deploy Help for a customer-specific solution of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the [Docs.microsoft.com](/dynamics365/business-central/) site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, so any investment on-premises carries forward if you migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
+
+## Changes in 2020 release wave 1 (version 16.0)
+The following sections describe the features that were deprecated in 2020 release wave 1.
+
+### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API 
+The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+
+|Moved, Removed, or Replaced?|Why?|
+|----|----|
+|Replaced| To help developers take advantage of all the identity features available in Azure Active Directory, we’re now recommending that all developers to use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API, so you can plan to update any applications that are still using either one of them. **Starting, June 30th, 2020**, Microsoft will no longer add any new features to ADAL and Azure AD Graph. We will continue to provide technical support and security updates but will no longer provide feature updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
+
 
 ## Changes in 2019 release wave 2 (version 15.0)
 The following sections describe the features that were deprecated in 2019 release wave 2.
