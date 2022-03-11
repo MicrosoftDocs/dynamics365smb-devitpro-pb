@@ -44,7 +44,7 @@ report 50000 "Standard Report Layout"
 
 The simplest possible custom document render can can be implemented like the following sample that will use the existing application logic to render Xml datasets into Microsoft Word or Pdf documents using a given template (Word template).
 
-``al
+```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMerger', '', true, true)]
     local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
     var
@@ -91,7 +91,7 @@ The simplest possible custom document render can can be implemented like the fol
                 error('Unsupported report action %0', ReportAction);
         end;
     end;
-``
+```
 
 ## See Also
 
