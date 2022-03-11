@@ -1,28 +1,23 @@
 ---
 title: Managing Capacity
-description: Use the Business Central administration center to manage your tenant capacity 
+description: Use the Business Central administration center to manage the storage capacity for a tenant. 
 author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, storage, capacity, quota, limit, database size
-ms.date: 06/25/2021
+ms.date: 03/08/2022
 ms.author: jswymer
 ---
 
-#  Managing Capacity
+# Managing Capacity
 
-To help customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] includes the **Capacity** page. The **Capacity** page provides an overview of the total database storage usage, with details about the storage used by every environment. The page also displays the currently used and the maximum allowed number of production and sandbox environments available for the customer.  
+To help our customers manage and plan their storage costs on an ongoing basis, the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] includes the **Capacity** page. The **Capacity** page provides an overview of the total database storage usage, with details about the storage used by every environment. The page also displays the currently used and the maximum allowed number of production and sandbox environments available for the customer.  
 
-Customers can purchase additional database capacity and environments via their reselling partner by using the following add-ons:
-  
-- Dynamics 365 Business Central Database Capacity (1 GB)
-- Dynamics 365 Business Central Database Capacity (100 GB)
-- Dynamics 365 Business Central Database Capacity Overage (1 GB)
-  
-   This lower-priced add-on is only available for the customers who purchased at least one Dynamics 365 Business Central Database Capacity (100 GB) add-on.
-- Dynamics 365 Business Central Additional Environment Add-on
+[!INCLUDE [db-storage-limit](../includes/db-storage-limit.md)]
+
+[!INCLUDE [db-storage-addons](../includes/db-storage-addons.md)]
 
 ## Number of environments
 
@@ -67,26 +62,26 @@ Use the **Capacity** page to see how many environments of each type you have ava
 
 Storage capacity usage of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is represented by **Database** on the **Capacity** page.  
 
-By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] customers can use up to 80 GB of database storage capacity across all their environments (production and sandbox). This limit means the sum of database capacity usage of all of their environments must not exceed 80 GB.
+[!INCLUDE [db-storage-limit](../includes/db-storage-limit.md)]
 
-Apart from the default storage capacity, the customer is entitled to additional storage capacity based on the number of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses they own: 
+[!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
-|License type|Additional storage (per each license)|
+Apart from the default storage capacity, the customer is entitled to additional storage capacity based on the number of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses they own:  
+
+|License type|Additional storage (for each license of this type)|
 |------|-----------|
 |Premium| 3 GB|
 |Essential| 2 GB|
 |Device|1 GB|
 
-Some businesses have unique scenarios that may require additional storage. For those organizations that need more space, there's an option to purchase extra database capacity as an add-on to their existing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscriptions through their reselling CSP partner. Both 1-GB and 100-GB add-ons are available. 
+[!INCLUDE [db-storage-addons](../includes/db-storage-addons.md)]
 
-Every additional production environment purchased by the customer also increases tenant-wide database capacity quota by 4 GB.  
-
-The **Storage capacity, by source** section shows how much capacity is available by default, how much extra capacity is added with user licenses, and how much additional capacity was specifically purchased via CSP. 
+The **Storage capacity, by source** section shows how much capacity is available by default, how much extra capacity is added with user licenses, and how much additional capacity was specifically purchased via CSP.  
 
 > [!NOTE]
-> Starting July 1, 2021, along with introduction of lower-priced capacity add-ons and per-license capacity quota extensions, the capacity occupied by the files or Blob data stored in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database (the content of the Tenant Media and Tenant Media Thumbnails tables) is counted towards the overall database storage capacity of the customer (tenant). 
+> Since July 1, 2021, along with introduction of lower-priced capacity add-ons and per-license capacity quota extensions, the capacity occupied by the files or Blob data stored in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database (the content of the Tenant Media and Tenant Media Thumbnails tables) is counted towards the overall database storage capacity of the customer (tenant).  
 
-#### Storage usage by environment
+### Storage usage by environment
 
 The **Storage usage by environment** section of the **Capacity** page provides a tenant-level view of where your organization is using storage capacity. Here you can see how much database storage is used by each environment. For each of your environments, you can also navigate to the [Table Information page](/dynamics365/business-central/admin-view-table-information) within [!INCLUDE[prod_short](../developer/includes/prod_short.md)], which let's you see the distribution of data size across tables.
 
@@ -101,7 +96,7 @@ Exceeding the paid database storage limit won't interrupt transaction processing
 
 However, once the capacity limits are exceeded, the customers won't be able to create new environments or copy their existing environments until the storage used by the existing environments is decreased to fit the quota or additional capacity is purchased. These operations will also be blocked for the customers who have more environments than they're entitled to, according to their subscription and purchased environment add-ons.  
 
-## Reducing Data Stored in Databases
+## Reducing data stored in databases
 
 There are a few things that you can do to reduce the amount of data stored in a database to keep it under its current limit. For more information, see [Reducing Data Stored in Databases](database-reduce-data.md).
 
