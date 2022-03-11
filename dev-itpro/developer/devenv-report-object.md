@@ -33,7 +33,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 
 ## Report example
 
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. This example defines a report that uses an RDLC report layout. For more information about creating an RDL report layout, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md). For more information on creating a report that uses Word Layout, see [Creating a Word Layout Report](devenv-howto-report-layout.md).
 
 ```AL
 report 50103 "Customer List"

@@ -3,7 +3,7 @@ title: "Caption Property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 02/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
