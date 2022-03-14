@@ -69,6 +69,7 @@ For more information about raising events, see [Raising Events](devenv-raising-e
 > Make sure that if a report is called on code, you use a compatible report to replace it to avoid run time errors.
 
 ## See Also
+
 [Report Data Type](methods-auto/report/report-data-type.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)   
 [Events in AL](devenv-events-in-al.md)  
