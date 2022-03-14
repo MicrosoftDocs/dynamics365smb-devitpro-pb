@@ -60,15 +60,6 @@ reportextension 50102 EmpReportExt extends "Employee - List"
             Summary = 'Employee list sorted by last name in Word';
             LayoutFile = 'EmpSortedByLastName.docx';
         }
-
-        layout(UserDefinedType)
-        {
-            Type = Custom;
-            Caption = 'UserDefinedList';
-            Summary = 'Employee list sorted by last name in external custom render';
-            LayoutFile = 'EmpSortedByLastName.html';
-            MimeType = 'Application/AppName/Report/MyUserDefinedType';
-        }
     }
 }
 ```
