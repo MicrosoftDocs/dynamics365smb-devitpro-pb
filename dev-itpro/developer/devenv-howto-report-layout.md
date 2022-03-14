@@ -114,3 +114,4 @@ else
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating an Excel Layout Report](devevn-howto-excel-report-layout.md)  
