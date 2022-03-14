@@ -88,3 +88,5 @@ You will now see the generated report in preview mode.
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
+[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
+[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
