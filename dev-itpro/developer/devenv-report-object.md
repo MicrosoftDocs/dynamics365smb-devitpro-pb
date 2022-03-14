@@ -19,7 +19,7 @@ Creating a report consists of two primary tasks; the first task is to create the
 
 For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
 
-You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are two types of report layouts; client report definition, also called RDL layouts and Word layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. 
+You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery.
 
 If you want to modify an existing report, for example, add new columns, add to the request page, or simply add a new layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
@@ -33,7 +33,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 
 ## Report example
 
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. This example defines a report that uses an RDLC report layout. For more information about creating an RDL report layout, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md). For more information on creating a report that uses Word Layout, see [Creating a Word Layout Report](devenv-howto-report-layout.md).
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. This example defines a report that uses an RDL report layout. For more information about creating an RDL report layout, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md). For more information on creating a report that uses Word Layout, see [Creating a Word Layout Report](devenv-howto-report-layout.md). For information about creating an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
 
 ```AL
 report 50103 "Customer List"
