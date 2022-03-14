@@ -13,7 +13,7 @@ ms.author: solsen
 
 When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md) and [Report Extension Object](devenv-report-ext-object.md).
 
-Later in this topic you can read more about [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+Later in this topic you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
 ## Create a Word layout report
 
