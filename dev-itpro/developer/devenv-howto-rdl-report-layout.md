@@ -18,7 +18,7 @@ When you create a new report for [!INCLUDE[d365fin_long_md](includes/d365fin_lon
 > [!IMPORTANT]  
 > RDL layouts can result in slower performance with document reports, regarding actions that are related to the user interface (for example. like sending emails) compared to Word layouts. When developing layouts for document reports, we recommend that you design Word layouts instead of RDL. With Word layouts, reports are not impacted by the security constraints on sandbox app domains like they are with RDL layouts. From a service perspective, RDL layouts are not trusted, so they will run in a sandbox app domain that only lives for the current report invocation.
 
-To create and modify RDL report layouts, you use SQL Server Report Builder or Visual Studio Report Designer. For information about required versions of these tools, see [System Requirements](../deployment/system-requirement-business-central.md).
+To create and modify RDL report layouts, you use SQL Server Report Builder or Microsoft RDLC Report Designer. For information about required versions of these tools, see [System Requirements](../deployment/system-requirement-business-central.md).
 
 ## Create an RDL layout report
 
