@@ -13,11 +13,11 @@ author: nhsejth
 
 # Developing a Custom Report Render
 
-This article describes the concept of a custom report render that managed the rendering of a generated report dataset with a layout type specified by external code (extension). The actual rendering will take place in the application by using the OnCustomDocumentMerger event provided by the ReportManagement Codeunit. The layout must be specified in the rendering section in the report definition.
+This article describes the concept of a custom report render that manages the rendering of a generated report dataset with a layout type specified by external code, meaning by an extension. The actual rendering will take place in the application by using the `OnCustomDocumentMerger` event provided by the `ReportManagement` codeunit. The layout must be specified in the `rendering` section in the report definition.
 
 ## History and context
 
-The custom render feature is a substitue for the business events that was used in the OnDocumentMerge event provided by the DocumnentManagement codeunit for rendering Word documents in the application. By using the custom render logic the report can support multiple layouts and the event code will not have dependencies to standard Word layout processing in platform or application. The layout files that are provided in the extension are imported without any further processing, whereas the Word documents are aligned with the platform requirements for that format.
+The custom render feature is a substitute for the business events that were used in the `OnDocumentMerge` event provided by the `DocumnentManagement` codeunit for rendering Word documents in the application. By using the custom render logic the report can support multiple layouts and the event code will not have dependencies to standard Word layout processing in platform or application. The layout files that are provided in the extension are imported without any further processing, whereas the Word documents are aligned with the platform requirements for that format.
 
 ## Layout declaration for a custom render
 
@@ -42,7 +42,7 @@ report 50000 "Standard Report Layout"
 
 ## Sample AL Code
 
-The simplest possible custom document render can can be implemented like the following sample that will use the existing application logic to render Xml datasets into Microsoft Word or Pdf documents using a given template (Word template).
+The simplest possible custom document render can be implemented as in the following sample that will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
 
 ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMerger', '', true, true)]
