@@ -13,6 +13,8 @@ author: nhsejth
 
 # Developing a Custom Report Render
 
+[!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
+
 This article describes the concept of a custom report render that manages the rendering of a generated report dataset with a layout type specified by external code, meaning by an extension. The actual rendering will take place in the application by using the `OnCustomDocumentMerger` event provided by the `ReportManagement` codeunit. The layout must be specified in the `rendering` section in the report definition.
 
 ## History and context

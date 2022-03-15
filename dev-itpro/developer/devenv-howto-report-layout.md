@@ -115,5 +115,7 @@ else
 [Setting up Hyperlinks in Word Report Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
+[Report Extension Object](devenv-report-ext-object.md)  
+[Developing a Custom Report Render](devenv-report-custom-render.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating an Excel Layout Report](devevn-howto-excel-report-layout.md)  
