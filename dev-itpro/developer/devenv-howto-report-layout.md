@@ -89,6 +89,8 @@ You'll now see the generated report in preview mode.
 
 The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Mananagement** page in Business Central will switch the Microsoft Word report rendering to the new platform rendering which supports multiple layouts and new triggers for **Save** and **Download** actions.
 
+For more information about the legacy custom render, see [Developing a Custom Report Render](devenv-report-custom-render.md).
+
 > [!NOTE]  
 > Application rendering is obsolete and will be deprecated in a future release. It is recommended to stay on the old platform if you have extensions that use custom Word layouts and therefore cannot use the new platform, for example, because of dependencies on the `OnBeforeMergeDocument` or `OnBeforeMergeWordDocument` events.
 
