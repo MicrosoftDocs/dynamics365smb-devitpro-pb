@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 # Substituting Reports
 
-In versions prior to [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)] extensibility is not supported for report objects in [!INCLUDE[d365_bus_cent_short_md](includes/d365_bus_cent_short_md.md)]. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**.
+In versions prior to [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1 extensibility is not supported for report objects. Therefore, if you want to make any changes to the dataset or the layout of a base application report, you must create a new version of the report and apply the changes on the new object. Then you can override the base report with your own customized version by subscribing to the **OnAfterSubstituteReport** event published by **Codeunit 44 – ReportManagement**. From [!INCLUDE[prod_short](includes/prod_short.md)] 2021 release wave 1, report extensi
 
 ## How to substitute a report for another report
 

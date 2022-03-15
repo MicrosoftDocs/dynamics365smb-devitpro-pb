@@ -2,7 +2,7 @@
 title: "Developing a Custom Report Render"
 description: Describe the custom report render logic.
 ms.custom: na
-ms.date: 04/03/2022
+ms.date: 03/15/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,7 +40,7 @@ report 50000 "Standard Report Layout"
 }
 ```
 
-## Sample AL Code
+## Sample AL code
 
 The simplest possible custom document render can be implemented as in the following sample that will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
 
