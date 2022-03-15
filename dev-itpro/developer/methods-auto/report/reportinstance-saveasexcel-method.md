@@ -3,7 +3,7 @@ title: "Report.SaveAsExcel(String) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "ToolTip Property"
 description: "Sets whether tooltips are provided for the given control, such as a field or action."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -57,7 +57,7 @@ Sets the maximum length of the specific ToolTip.
 
 ## Remarks
 
-The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages.  
+The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages. Tooltips can be up to 1024 characters long, exceeding this does not throw an error, but the rest of the tooltip is truncated `...`. The best practice is to not exceed 200 characters. For more information, see [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text).
 
 The following example illustrates how you can apply tooltips in an app:  
 

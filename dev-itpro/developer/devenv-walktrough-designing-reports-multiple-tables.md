@@ -6,14 +6,15 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
 # Walkthrough: Designing a Report from Multiple Tables
-A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for a RDL layout and in Microsoft Word for a Word layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
 
-## About This Walkthrough  
+A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You can design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for a RDL layout, in Microsoft Word for a Word layout, and in Microsoft Excel for an Excel layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
+
+## About This Walkthrough
+
 This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_long_md](includes/d365_dev_long_md.md)] and using Visual Studio Report Designer for designing an RDL layout.  
 
  This walkthrough illustrates the following tasks:  
@@ -26,7 +27,8 @@ This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_lo
 - Setting filters to hide empty rows and fields in a report.  
 - Building and running a report.  
 
-## Story  
+## Story
+
 Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked by his manager to create a report that shows data from the `Customer` (ID 18), `Cust. Ledger Entry` (ID 21), `Detailed Cust. Ledger Entry` (ID 379), and the `Sales Header` (ID 36) tables. The report should meet the following requirements:  
 
 - The report must display customer information at the top of the report.  
@@ -52,6 +54,7 @@ The following illustration shows an example of the second page of the report.
 ![Completed report.](media/MicrosoftDynamicsNAV_MultiDataSetReport.jpg "MicrosoftDynamicsNAV\_MultiDataSetReport")  
 
 ## Defining the Dataset
+
 Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
 He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he will use an RDL layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file he will use for the layout.
@@ -80,7 +83,8 @@ For each of the `column` controls he adds the [IncludeCaption Property](properti
 Finally, he sets the [PrintOnlyIfDetail Property](properties/devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
 
 
-## Adding Labels to the Report  
+## Adding Labels to the Report
+
 Viktor will now add labels to the report. You define the labels in the `label` part of the report. These labels will be used later as captions.  
 
 The following code exemplifies the code that Viktor has written for the report.

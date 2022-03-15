@@ -7,7 +7,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 ms.date: 04/01/2021
 ms.author: jswymer
 ---
@@ -26,7 +25,7 @@ The process consists of two parts:
 
 - Upgrade from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using the tools described in [Upgrading to Business Central on-premises (version 14)](upgrading-to-business-central-on-premises.md). For more information, see [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](upgrade-paths.md).  
 - Convert non-standard functionality and customizations to apps and per-tenant extensions. For more information, see [Deploying a Tenant Customization](../developer/devenv-deploy-tenant-customization.md).
-- Run the cloud migration tool as described in [Running the Cloud Migration Tool](../administration/migration-tool.md), and then switch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward.
+- Run the cloud migration tool as described in [Migrate On-Premises Data to Business Central Online](../administration/migrate-data.md), and then switch to use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online going forward.
 
 ## Upgrading from [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)]
 

@@ -3,7 +3,7 @@ title: "Report.RunRequestPage(Integer [, String]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ Parameters :=   Report.RunRequestPage(Number: Integer [, Parameters: String])
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report for which you want to run the request page. If the report that you specify does not exist, then a run-time error occurs.
           
+
 *[Optional] Parameters*  
 &emsp;Type: [String](../string/string-data-type.md)  
 A string of request page parameters as XML to use to run the report.

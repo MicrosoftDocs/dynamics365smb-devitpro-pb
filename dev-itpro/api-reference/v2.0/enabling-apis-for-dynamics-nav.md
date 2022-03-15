@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -20,7 +19,7 @@ ms.author: solsen
 
 ## Enable access to the APIs
 
-1. Open [!INCLUDE[prod_short](../../includes/prod_short.md)] Administration tool. 
+1. Open the [Business Central Administration tool](../../administration/administration-tool.md).
 2. Expand the **OData Services** tab, and select the **Enable OData Services** checkbox first, then select the **Enable API Services** checkbox.
 3. Check that the values for the **OData Base URL** and **Port** are entered correctly.  
     When exposing a web service, you must open the port for other consumers of your web service to access it. You can have your system administrator add the port through Windows Firewall on the computer running [!INCLUDE[prod_short](../../includes/prod_short.md)] server. The default port for OData web services is 7048.

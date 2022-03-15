@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -47,9 +46,10 @@ The following methods are available on instances of the List data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
+
 The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. Similarly, the List data type does not support holding instantiated records. For this purpose, use temporary tables.
 
-Lists are 1-based indexed, that is, the indexing of a List begins with 1.
+Lists are 1-based indexed, that is, the indexing of a List begins with 1. A copy of a list is a shallow copy.
 
 
 > [!WARNING]  

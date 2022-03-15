@@ -2,7 +2,6 @@
 title: GET attachments  
 description: Gets a attachments object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -20,7 +19,7 @@ Retrieve the properties and relationships of an attachments object for [!INCLUDE
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/attachments$filter=parentId eq {journalLineId} and parentType eq ‘Journal’
+GET businesscentralPrefix/companies({id})/attachments?$filter=parentId eq {journalLineId} and parentType eq ‘Journal’
 ```
 
 > [!NOTE]  
@@ -45,7 +44,7 @@ If successful, this method returns a ```200 OK``` response code and an **attachm
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v1.0/companies({id})/attachments$filter=parentId eq {journalLineId}
+GET https://{businesscentralPrefix}/api/v1.0/companies({id})/attachments?$filter=parentId eq {journalLineId}
 ```
 
 **Response**

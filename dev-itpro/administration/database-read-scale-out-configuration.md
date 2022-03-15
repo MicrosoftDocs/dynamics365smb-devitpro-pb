@@ -1,12 +1,12 @@
 ---
 title: Configuring a Database for Read Scale-Out
+description: Get tips for how to make your on-premises database ready for read scale-out.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Configuring a [!INCLUDE[prod_short.md](../developer/includes/prod_short.md)] Database for Read Scale-Out

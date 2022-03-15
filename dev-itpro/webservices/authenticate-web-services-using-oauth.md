@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
@@ -225,9 +224,10 @@ Although you haven't yet created the console application, the next thing to do i
 
 2. Grant the console application delegated permissions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
-    1. Select  **Settings** > **Required Permissions** > **Add** > **Select API**.
+    1. Select  **API Permissions ** > **Add a permission** > **APIs my organization uses**.
     2. Search for and select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application,
-    3. Select **Delegated Permissions**, and then save the changes.
+    3. Select **Delegated Permissions**.
+    4. Under **Permissions**, select **user_impersonation**, then **Add permissions**.
 
     For more information, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 

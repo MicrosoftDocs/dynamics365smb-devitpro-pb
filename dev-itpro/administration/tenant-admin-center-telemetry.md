@@ -3,7 +3,6 @@ title: Environment Telemetry
 description: Learn how the Business Central admin center provides telemetry for each environment.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

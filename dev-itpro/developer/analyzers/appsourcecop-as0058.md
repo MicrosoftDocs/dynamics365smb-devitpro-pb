@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -35,7 +34,7 @@ For more information about the usage of AssertError, see:
 Error handling in production code must be done using Try Methods.
 
 For more information, see:
-- [TryFunction attribute](../methods/devenv-tryfunction-attribute.md)
+- [TryFunction attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute)
 - [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md)
 
 ## See Also  

@@ -3,7 +3,7 @@ title: "Compiler Error AL0619"
 description: "The attribute '{0}' on procedure '{1}' is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

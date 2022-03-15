@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # User Security in Business Central
 

@@ -3,7 +3,7 @@ title: "PaperSourceLastPage Property"
 description: "Specifies which paper source to use when printing the last page of the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
