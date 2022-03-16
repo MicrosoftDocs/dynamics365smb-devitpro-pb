@@ -16,7 +16,7 @@ The behavior of AL-Go for GitHub is very much controlled by the settings in the 
 
 ## Where is the settings file located?
 
-An AL-Go repository can consist of a single project (with multiple apps) or multiple projects (each with multiple apps). Multiple projects in a single repository are comparable to multiple repositories; they are built, deployed, and tested separately. All apps in each project (single or multiple) are built together in the same pipeline, published and tested together. If a repository is multiple projects, each project is stored in a separate folder in the root of the repository.
+An AL-Go repository can consist of a single project (with multiple apps) or multiple projects (each with multiple apps). Multiple projects in a single repository are comparable to multiple repositories; they are built, deployed, and tested separately. All apps in each project (single or multiple) are built together in the same pipeline, published, and tested together. If a repository is multiple projects, each project is stored in a separate folder in the root of the repository.
 
 When running a workflow or a local script, the settings are applied by reading one or more settings files. Last applied settings file wins. The following lists the settings files and their location:
 
@@ -25,7 +25,7 @@ When running a workflow or a local script, the settings are applied by reading o
 > [!NOTE]  
 > The repository settings file can also contains BcContainerHelper settings, which will be applied when loading BcContainerHelper in a workflow (see expert section).
 
-**.AL-Go\settings.json** is the project settings file. If the repository is a single project, the .AL-Go folder is in the root folder of the repository. If the repository contains multiple projects, there will be a .AL-Go folder in each project folder.
+**.AL-Go\settings.json** is the project settings file. If the repository is a single project, the .AL-Go folder is in the root folder of the repository. If the repository contains multiple projects, there will be an .AL-Go folder in each project folder.
 
 **.AL-Go\<workflow>.settings.json** is the workflow-specific settings file. This option is used for the Current, NextMinor and NextMajor workflows to determine artifacts and build numbers when running these workflows.
 
@@ -44,6 +44,7 @@ When running a workflow or a local script, the settings are applied by reading o
 | appDependencyProbingPaths | Array of dependency specifications, from which apps will be downloaded when the CI/CD workflow is starting. Every dependency specification consists of the following properties:<br />**repo** = repository<br />**version** = version<br />**release_status** = release/prerelease/draft<br />**projects** = projects<br />**authtoken** = Auth token<br />**TODO:** complete documentation and add to tests | [ ] |
 
 ## Basic Repository settings
+
 The repository settings are only read from the repository settings file (.github\AL-Go-Settings.json)
 
 | Name | Description |
@@ -100,9 +101,9 @@ The repository settings are only read from the repository settings file (.github
 | doNotRunTests | This setting forces the pipeline to NOT run the tests in testFolders. Tests are still being built and published | false |
 | memoryLimit | Specifies the memory limit for the build container. By default, this is left to BcContainerHelper to handle and will currently be set to 8G | 8G |
 
-# Expert level
+## Expert level
 
-## Run-AlPipeline script override
+### Run-AlPipeline script override
 
 AL-Go for GitHub utilizes the Run-AlPipeline function from BcContaineHelper to perform the actual build (compile, publish, test etc). The Run-AlPipeline function supports overriding functions for creating containers, compiling apps and a lot of other things.
 
@@ -124,14 +125,15 @@ This functionality is also available in AL-Go for GitHub, by adding a file to th
 | GetBcContainerAppRuntimePackage.ps1 | Get the runtime package specified by the $parameters hashtable |
 | RemoveBcContainer.ps1 | Cleanup based on the $parameters hashtable |
 
-## BcContainerHelper settings
+### BcContainerHelper settings
 
-TODO: Repo settings file can contain BcContainerHelper settings.
+Repo settings file can contain BcContainerHelper settings. Information to come later.
 
-## Your own version of AL-Go for GitHub
+### Your own version of AL-Go for GitHub
 
-For experts only, following the description [here](Contributing.md) you can setup a local fork of **AL-Go for GitHub** and use that as your templates. You can fetch upstream changes from Microsoft regularly to incorporate these changes into your version and this way have your modified version of AL-Go for GitHub.
+For experts only, following the description [here](https://https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contributing.md) you can setup a local fork of **AL-Go for GitHub** and use that as your templates. You can fetch upstream changes from Microsoft regularly to incorporate these changes into your version and this way have your modified version of AL-Go for GitHub.
 
-**Note:** Our goal is to never break repositories, which are using AL-Go for GitHub as their template. We almost certainly will break you if you create local modifications to scripts and pipelines.
+> [!NOTE]  
+> Our goal is to never break repositories, which are using AL-Go for GitHub as their template. We almost certainly will break you if you create local modifications to scripts and pipelines.
 
 ## See also
