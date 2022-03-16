@@ -29,14 +29,14 @@ Parameters :=   Report.RunRequestPage(Number: Integer [, Parameters: String])
 The ID of the report for which you want to run the request page. If the report that you specify does not exist, then a run-time error occurs.
           
 *[Optional] Parameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string of request page parameters as XML to use to run the report.
           
 
 
 ## Return Value
 *Parameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 XML string that contains the request page parameters that are entered on the request page
 
 

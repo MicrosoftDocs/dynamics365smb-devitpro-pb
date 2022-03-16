@@ -31,13 +31,13 @@ Gets and sets the RecordSeparator used when running, importing or exporting the 
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] Separator*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new value of the RecordSeparator.  
 
 
 ## Return Value
 *[Optional] Separator*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The RecordSeparator used when running, importing or exporting the XmlPort.
 
 

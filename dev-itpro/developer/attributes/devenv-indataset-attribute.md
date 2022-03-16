@@ -33,6 +33,16 @@ Sets whether the AL variable's value is included in the dataset.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Example
+
+```al
+var
+    [InDataSet]
+    StyleIsStrong: Boolean;
+    [InDataSet]
+    NameIndent: Integer;
+```
+
 ## Remarks
 
 The **InDataSet** attribute is defined on variables of the type [Boolean](../methods-auto/boolean/boolean-data-type.md) or [Integer](../methods-auto/integer/integer-data-type.md) on pages.  

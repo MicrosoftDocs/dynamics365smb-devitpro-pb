@@ -1,27 +1,30 @@
 ---
-title: Migrate from Dynamics GP to Business Central online
-description: Learn how to migrate to the cloud from Dynamics GP using an assisted setup guide in Business Central online.
-
+title: Migrate Dynamics GP data to the cloud
+description: Learn how to migrate to the cloud from Dynamics GP using an assisted setup guide in Business Central online. Move historical data to Azure Data Lake.
 author: jenolson
+
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge, gp, migration
-ms.date: 04/01/2021
+ms.search.form: 4003
+ms.date: 02/18/2022
 ms.author: edupont
 
 ---
 
-# Migrate to Business Central Online from Dynamics GP
+# Migrate Dynamics GP Data to the Cloud
 
 An assisted setup guide in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can help you migrate data from Dynamics GP. You can migrate data from Dynamics GP 2015 and later versions of Dynamics GP. For more information, see [System requirements](faq-migrate-data.md#system-requirements).  
 
 > [!IMPORTANT]
 > Migrating from Dynamics GP using the **Cloud Migration Setup** assisted setup guide is currently only supported for the following markets: United States, Canada, United Kingdom, Australia.
 
-## Migrated data
+The end-to-end process is described [here](migrate-data.md). In this article, we talk about background information and things to take into consideration.  
+
+## Dynamics GP data
 
 When you migrate from Dynamics GP, the following information is migrated from Dynamics GP to Business Central online:
 
@@ -31,19 +34,19 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
     Account Summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP.
 
-    Let us look at an example of an account from Dynamics GP, using the year 2019 as an example:
+    Let us look at an example of an account from Dynamics GP, using the year 2022 as an example:
 
     |Account in Dynamics GP |Year|Name  |Amount  |
     |-----------------------|----|------|--------|
-    |000-1100-00  Cash |Year 2019 |  |  |
+    |000-1100-00  Cash |Yes 2022 |  |  |
     |     |  |Period 1| 250.00 |
     |     |  |Period 2 | 117.00 |
     |     |  |Period 3 |340.00 |
-    |000-1100-01  Cash |Year 2019 |  |  |
+    |000-1100-01  Cash |Yes 2022 |  |  |
     |     |  |Period 1| 240.00 |
     |     |  |Period 2 | 102.00 |
     |     |  |Period 3 |501.00 |
-    |000-4000-00 Sales |Year 2019 |  |  |
+    |000-4000-00 Sales |Yes 2022 |  |  |
     |     |  |Period 1| 490.00 |
     |     |  |Period 2 | 219.00 |
     |     |  |Period 3 |841.00 |
@@ -52,15 +55,15 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
     |Transaction date |Account No.|Amount  |Dimensions|
     |-----------------|-----------|--------|----------|
-    |1/31/2019        |1100   |250.00 |Dimension 000, 00|
-    |1/31/2019        |1100   |240.00 |Dimension 000, 01|
-    |1/31/2019        |4000   |490.00 |Dimension 000, 00|
-    |2/28/2019        |1100   |117.00 |Dimension 000, 00|
-    |2/28/2019        |1100   |102.00 |Dimension 000, 01|
-    |2/28/2019        |4000   |219.00 |Dimension 000, 00|
-    |3/31/2019        |1100   |340.00 |Dimension 000, 00|
-    |3/31/2019        |1100   |501.00 |Dimension 000, 01|
-    |3/31/2019        |4000   |841.00 |Dimension 000, 00|
+    |1/31/2022        |1100   |250.00 |Dimension 000, 00|
+    |1/31/2022        |1100   |240.00 |Dimension 000, 01|
+    |1/31/2022        |4000   |490.00 |Dimension 000, 00|
+    |2/28/2022        |1100   |117.00 |Dimension 000, 00|
+    |2/28/2022        |1100   |102.00 |Dimension 000, 01|
+    |2/28/2022        |4000   |219.00 |Dimension 000, 00|
+    |3/31/2022        |1100   |340.00 |Dimension 000, 00|
+    |3/31/2022        |1100   |501.00 |Dimension 000, 01|
+    |3/31/2022        |4000   |841.00 |Dimension 000, 00|
 
     The data migration generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values *000*, *100*, and *200*, respectively. A second dimension, *Division*, will show the values *00*, *01*, and *02*, respectively.
 
@@ -87,13 +90,13 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
 6. Checkbook master data.  
 
-    We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as we will bring over transactions that have not been reconciled during the migration process.  
+    We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../includes/prod_short.md)] as we will bring over transactions that have not been reconciled during the migration process.  
 
 ## Diagnostics run
 
 In the **Cloud Migration Management** page, you can create a diagnostics run to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.
 
-The maximum field length is different in Dynamics GP (30) and [!INCLUDE [prod_short](../developer/includes/prod_short.md)] (20), and the diagnostics run checks for issues and shows warnings. The tool also checks item numbers to look for duplicates based on the character limit, and it checks to make sure there are no blank posting accounts that are needed for posting of transactions with the migration.
+The maximum field length is different in Dynamics GP (30) and [!INCLUDE [prod_short](../includes/prod_short.md)] (20), and the diagnostics run checks for issues and shows warnings. The tool also checks item numbers to look for duplicates based on the character limit, and it checks to make sure there are no blank posting accounts that are needed for posting of transactions with the migration.
 
 Here is an example of what you might see when you run a diagnostic run:
 
@@ -101,13 +104,18 @@ Here is an example of what you might see when you run a diagnostic run:
 
 ## Migration tool support for Australia
 
-Starting with 2020 release wave 2, organizations in Australia can migrate from Dynamics GP to an Australian version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online.
+Starting with 2020 release wave 2, organizations in Australia can migrate from Dynamics GP to an Australian version of [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-The process to run the migration in an Australian [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is the same as running a migration in the other supported countries. However, there is some setup that needs to be done before the migration can be run. To make the changes to the setup, you must run through the cloud migration wizard. When the wizard setup is complete, and companies are fully set up, you must log into the companies that you are planning to migrate and make the following changes
+The process to run the migration in an Australian [!INCLUDE [prod_short](../includes/prod_short.md)] online is the same as running a migration in the other supported countries. However, there is some setup that needs to be done before the migration can be run. To make the changes to the setup, you must run through the cloud migration wizard. When the wizard setup is complete, and companies are fully set up, you must log into the companies that you are planning to migrate and make the following changes
 
-* With transactions that are being migrated, we bring over totals on the invoices for the customers so GST information is already included in the transactions. You must turn off the GST and Adjustment Mandatory features in the **General Ledger Setup** page to allow the transactions to post during the migration. After the migration is complete, you can turn both GSP and Adjustment Mandatory back on so that new transactions that are entered in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online will use this functionality.
+* Transactions
 
-* Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields.  
+  With transactions that are being migrated, we bring over totals on the invoices for the customers so GST information is already included in the transactions. You must turn off the GST and Adjustment Mandatory features in the **General Ledger Setup** page to allow the transactions to post during the migration. After the migration is complete, you can turn both GSP and Adjustment Mandatory back on so that new transactions that are entered in [!INCLUDE [prod_short](../includes/prod_short.md)] online will use this functionality.
+
+* Posting groups
+
+  Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields.  
+
 
 ## <a name="lake"></a>Move your Dynamics GP database to Azure Data Lake
 
@@ -115,7 +123,7 @@ Starting with 2020 release wave 2, you can create a copy of the Dynamics GP data
 
 To create an Azure Data Lake storage account, you log in to your Azure subscription (or sign up for an Azure subscription). Once logged into the Azure portal, you can create a storage account. Under the **Access Keys** section of the information about your storage account in the Azure portal, you can see the keys that you must provide in the cloud migration wizard in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. For more information about Azure Data Lake and setting up a storage account, see [Azure documentation](/azure/storage/blobs/data-lake-storage-introduction).  
 
-### To move to Azure Data Lake
+## To move to Azure Data Lake
 
 1. In your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant, choose the :::image type="icon" source="../media/search_small.png" border="false"::: icon, enter **Cloud Migration Management**, and then choose the related link.
 2. Choose the **Azure Data Lake** action.
@@ -133,4 +141,7 @@ At the end of the migration, you have a completely copy of your Dynamics GP data
 
 ## See also
 
+[Run the assisted setup guide](migrate-data.md#run-the-assisted-setup-guide)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
+[Troubleshooting Cloud Migration](migration-troubleshooting.md)  
+[FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  

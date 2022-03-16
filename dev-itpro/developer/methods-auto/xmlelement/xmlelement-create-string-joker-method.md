@@ -25,7 +25,7 @@ XmlElement :=   XmlElement.Create(Name: String, Content: Any,...)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The fully qualified name of the element to create.
         
 *Content*  

@@ -31,13 +31,13 @@ Shows the caption in the title bar. For example, the default value in English (U
 An instance of the [RequestPage](requestpage-data-type.md) data type.  
 
 *[Optional] NewCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 
 
 ## Return Value
 *[Optional] Caption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

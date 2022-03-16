@@ -25,11 +25,11 @@ Sets the value associated with the specified key.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The key of the value to set.
         
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The value that will be associated with the specified key.
         
 *[Optional] DataScope*  

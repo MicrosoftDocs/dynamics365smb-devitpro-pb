@@ -33,7 +33,7 @@ ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: String [,
 Input stream that contains the object to store as a media object.
         
 *Filename*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 File name to associate with the created media object.
         
 *[Optional] MinutesToExpire*  

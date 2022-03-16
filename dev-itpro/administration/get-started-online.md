@@ -40,6 +40,8 @@ When you become a Microsoft Partner Network member, you gain access to membershi
 
 As a Dynamics 365 reseller, you benefit from Microsoft's investments in an always up-to-date modern platform, you can bundle recognized apps from the Microsoft commercial marketplace into an offering that fits the needs of your customers, reach more customers by using Microsoft's commercial marketplace to promote your packaged consulting service offerings or customization services, and streamline your own processes and build tools with Power BI, Power Automate, and Power Apps connected to [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
+The [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central) landing site has plenty of material to help you build a practice, go to market, drive readiness, and keep track of upcoming events (requires a partner account).  
+
 ### Marketing assets
 
 Microsoft provides marketing assets that you can use to build a business based on Microsoft. For more information, see the following sites:
@@ -100,3 +102,4 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
+[Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  

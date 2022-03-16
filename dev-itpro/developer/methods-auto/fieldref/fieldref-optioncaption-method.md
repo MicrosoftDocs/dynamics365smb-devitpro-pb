@@ -33,7 +33,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
 *OptionCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

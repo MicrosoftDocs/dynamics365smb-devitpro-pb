@@ -1,5 +1,6 @@
 ---
 title: "Turn Off or Limit Telemetry Trace Events"
+description: Get tips for how to configure telemetry traces, depending on what you want to measure.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

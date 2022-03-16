@@ -29,7 +29,7 @@ Finds the prefix declared for the given namespace URI.
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Uri*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The namespace to resolve for the prefix.
         
 *Result*  

@@ -1,5 +1,6 @@
 ---
 title: Configuring a Database for Read Scale-Out
+description: Get tips for how to make your on-premises database ready for read scale-out.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

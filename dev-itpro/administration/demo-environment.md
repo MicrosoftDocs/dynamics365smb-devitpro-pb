@@ -8,7 +8,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 05/31/2021
+ms.date: 02/08/2022
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
@@ -117,6 +117,15 @@ We recommend that you convert the environment to a sandbox environment for demo 
 * Reset the environment with specific Dynamics 365 apps with or without sample data to demo to various audiences. For more information, see [Reset environment](/power-platform/admin/reset-environment).  
 
   For example, when you reset the sandbox environment, you can choose to deploy Sales enterprise and demo integration between [!INCLUDE [prod_short](../includes/prod_short.md)] and the full capabilities of Dynamics 365 Sales. For more information, see [Integrating with Dynamics 365 Sales](/dynamics365/business-central/admin-prepare-dynamics-365-for-sales-for-integration#integrating-through-dataverse) in the business functionality content.  
+
+## Demo in a sandbox environment
+
+You can set up tailored demo environments in a sandbox environment if you already have a [!INCLUDE [prod_short](../includes/prod_short.md)] tenant. For example, to show two different implementations of a capability, or to illustrate an integration point.  
+
+> [!NOTE]
+> Sandboxes are limited in functionality, including performance. For more information, see [Sandbox environments](environment-types.md#sandbox-environments).
+
+Starting in February 2022, partners can request dedicated licenses to set up additional sandbox environments. For more information, see [Partner sandboxes](environment-types.md#partnersandbox).  
 
 ## See also
 

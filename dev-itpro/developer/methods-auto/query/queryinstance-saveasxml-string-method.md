@@ -31,7 +31,7 @@ Saves the resulting data set of a query as XML
 An instance of the [Query](query-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and name of the file that you want to save the query to.  
 
 
