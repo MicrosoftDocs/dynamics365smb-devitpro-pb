@@ -42,6 +42,7 @@ The usage scenarios below take you through how to get started and how to perform
 - [Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)  
 - [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)  
 - [Branching Strategies](algo-branching-strategy.md)  
+- [Settings](algo-settings.md)
 
 ## See also
 
