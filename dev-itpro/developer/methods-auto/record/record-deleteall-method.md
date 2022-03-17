@@ -42,6 +42,9 @@ Specifies whether to run the AL code in the OnDelete Trigger. If this parameter 
 > [!IMPORTANT]  
 > By design, the global variables of the record instance being deleted will be initialized to their default value during the **DeleteAll** method execution, independently of the value that was previously set.
 
+> [!IMPORTANT]  
+> Setting `RunTrigger` to **false** only affects the OnDelete trigger.  The `OnBeforeDelete` and `OnAfterDelete` triggers from Table Extensions will still execute regardless.
+ 
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
