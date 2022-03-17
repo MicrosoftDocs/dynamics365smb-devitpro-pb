@@ -3,7 +3,7 @@ title: "Report.SaveAsWord(Integer, String [, var Record]) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Word (.doc) document."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ The ID of the report that you want to run. If the report you specify does not ex
           
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The path and the name of the file that you want to save the report as. The path must exist, the file must not be being used, and the server process must have permission to write to the file. Otherwise, you will get errors.
         
 
