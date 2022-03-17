@@ -16,6 +16,16 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2023 release wave 1 (version 22.0)
+
+### Business Central Telemetry: using an instrumentation key (Removal)
+On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Support for using an instrumentation key to setup telemetry for Business Central environments or apps will be removed in the 2023 release wave 1 (version 22.0). Please use the Azure Applications Insights connection string instead. |
+
+
 ## Changes in 2022 release wave 2 (version 21.0)
 
 ### Business Central Server Administration tool (Removal)
