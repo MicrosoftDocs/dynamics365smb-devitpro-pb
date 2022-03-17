@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 01/19/2022
+ms.date: 03/17/2022
 ---
 
 # Licensing in Dynamics 365 Business Central
@@ -40,7 +40,7 @@ The **User Group Plan** table stores the mapping between the service plans and t
 
 When a user logs in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)], the service applies the intersection of the entitlements that are associated with the user's service plan (or Azure AD role) and the permissions that are defined for that user. Entitlements always have higher priority over permissions. For example, even is the user is given SUPER permissions by the admin but has the Team Member license assigned – the user can still only access the objects defined by the Team Member entitlements.  
 
-You can verify how entitlements, licenses, and user groups work together by looking at the **Effective Permissions** page, which you can access from the **User** page. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
+You can verify how entitlements, licenses, and user groups work together by looking at the **Effective Permissions** page, which you can access from the **User** page. Starting with 2022 release wave 1, admins can also customize the default permissions per license type. For more information, see [Create Users According to Licenses](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].  
 
 ### Entitlements in production and sandbox environments
 
