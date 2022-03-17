@@ -182,12 +182,9 @@ There are a few server restrictions for sampling profiling to be aware of:
 - The maximum duration of a sampling session is 10 minutes. This is a configurable server setting. 
 - The number of stack frame entries is limited to 2000. This is a configurable server setting.
 
-
 ### Performance profiling in Business Central
 
-In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in Business Central. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
-
-
+In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a .alcpuprofile file, which can be downloaded and shared using OneDrive. When receiving such a .alcpuprofile file, it can be opened in Visual Studio Code and further investigated. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
 
 ## See Also
 
