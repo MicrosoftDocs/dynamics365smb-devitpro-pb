@@ -96,6 +96,15 @@ To control how dependency publishing is performed on the server, the `launch.jso
 > [!NOTE]  
 > With the `Ignore` setting only **Leaf** will be published against what has already been published on the server for **Middle** and **Base**. If a change has been done on **Base** that would break **Leaf**, even though local compilation would pass, the server compilation will fail in this scenario. The benefit of using this option is to gain publishing time when **Base** is a large project. Assuming that **Base** is published, then **Leaf** and **Middle** will be left untouched on the server. Only runtime errors will reveal if **Base** has broken **Middle** and **Leaf**.
 
+## Traversing the dependency graph
+
+[!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
+
+To remove unnecessary manual work, use the **AL: Publish full dependency tree for active project** command which will traverse a project dependency graph in the workspace and install any required projects if these are not already deployed to the NST server. 
+
+> [!NOTE]  
+> This will only traverse project and app references covered by the workspace. If the deployed AL project has dependencies to apps that are not included in the workspace, these will still have to be present or manually deployed in advance.
+
 ## Incremental Build setting
 
 If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolution will happen from the referenced project, instead of happening from an app in the `\packagecache` folder which will enhance the build time. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
