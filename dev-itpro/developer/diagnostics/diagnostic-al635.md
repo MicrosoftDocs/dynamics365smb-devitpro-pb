@@ -3,11 +3,12 @@ title: "Compiler Warning (Future Error) AL0635"
 description: "A method with 'OnPrem' scope cannot be used as event subscriber."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
