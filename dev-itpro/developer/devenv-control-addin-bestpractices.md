@@ -20,6 +20,11 @@ When developing control add-ins it's important to provide the best possible expe
 
 The dialog can be closed by the user, but will appear again if the control add-in continues to run slowly. To ensure that the client is responsive and fast, the non-responsive or non-performant control add-in will result in continuous warnings, and if the problem persists the control add-in communication is throttled depending on the volume of communication with the [!INCLUDE[prod_short](../includes/prod_short.md)] service​.
 
+[InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)  
+[GetEnvironment Method](methods/devenv-getenvironment-method.md)
+
+## Code examples
+
 ## See also
 
 [Control Add-In Resiliency](/dynamics365/business-central/across-controladdin-resiliency) <!-- link to app doc -->
