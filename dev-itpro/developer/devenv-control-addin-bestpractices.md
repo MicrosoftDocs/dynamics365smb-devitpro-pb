@@ -18,9 +18,7 @@ When developing control add-ins it's important to provide the best possible expe
 
 :::image type="content" source="media/controladdin-resiliency.png" alt-text="Busy control add-in detected.":::
 
-The dialog can be closed by the user, but will appear again if the control add-in continues to run slowly. 
-
-To avoid 
+The dialog can be closed by the user, but will appear again if the control add-in continues to run slowly. The user is encouraged to contact the administrator or vendor of the control add-in. To ensure that the client is responsive and fast, the non-responsive or non-performant control add-in will result in continuous warnings, and if the problem persists throttle the control add-in communication depending on the volume of communication with the [!INCLUDE[prod_short](../includes/prod_short.md)] service​.
 
 ## See also
 
