@@ -23,6 +23,8 @@ When an object is marked as obsolete, another 12 months will pass before the cod
 
 When a major update of [!INCLUDE[prod_short](../includes/prod_short.md)] is released, and you start seeing deprecation warnings, it is strongly encouraged to start removing dependencies by refactoring the code. This work is important to do because once Microsoft does remove the code, the dependent app will be broken if it has not been refactored.
 
+If you want to validate that your extension does not reference objects that are pending obsoletion with an obsolete tag version lower than the a given version, you can use the [AppSourceCop](analyzers/appsourcecop.md) by setting the `obsoleteTagMinAllowedMajorMinor` in the AppSourceCop.json. For more information, see [AS0105](analyzers/appsourcecop-as0105.md).
+
 ## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  

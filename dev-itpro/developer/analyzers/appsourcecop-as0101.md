@@ -1,9 +1,9 @@
 ---
-title: "PerTenantExtensionCop Error PTE0004"
-description: "Table definitions must have a matching permission set."
+title: "AppSourceCop Error AS0101"
+description: "Any change to the 'Isolated' argument is disallowed because it may break depdendent extensions that have subscribed to the event."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 03/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,18 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# PerTenantExtensionCop Error PTE0004
-Table definitions must have a matching permission set.
+# AppSourceCop Error AS0101
+The 'Isolated' argument cannot be changed, added, or removed.
 
 ## Description
-Table definitions must have a matching permission set.
+Any change to the 'Isolated' argument is disallowed because it may break depdendent extensions that have subscribed to the event.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-## Remarks
-For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0103](appsourcecop-as0103.md).
-
 ## See Also  
-[PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
