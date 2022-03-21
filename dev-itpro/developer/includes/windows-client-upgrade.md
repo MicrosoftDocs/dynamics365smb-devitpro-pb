@@ -2,4 +2,4 @@ Since version 14, the way user profiles are defined, stored, and customized has 
 
 - [Customize Pages for Profiles](/dynamics365/business-central/ui-personalization-manage)
 - [Personalize Your Workspace](/dynamics365/business-central/ui-personalization-user)
-- [Designing Profiles](../developer/devenv-design-profiles.md)
+- [Designing Profiles](/dynamics365/business-central/dev-itpro/developer/devenv-design-profiles)
