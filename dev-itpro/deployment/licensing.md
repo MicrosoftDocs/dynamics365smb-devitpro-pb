@@ -6,23 +6,23 @@ ms.reviewer: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 03/17/2022
+ms.date: 03/21/2022
 ---
 
 # Licensing in Dynamics 365 Business Central
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses can only be purchased through CSP. Microsoft offers several types of paid licenses (users):
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] licenses can only be purchased through CSP. Microsoft offers several types of paid licenses for business users:
 
 - Essential  
 - Premium  
 - Team Member  
 - External Accountant  
 
-Prospects and customers can also subscribe for an evaluation version by using self-service sign-up (also known as the viral trial). This subscription comes with 10000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using non-production companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
+Prospects and customers can also subscribe for an evaluation version by using self-service sign-up, also known as the viral trial. This subscription comes with 10000 licenses, and partners can use such viral trials to let prospects explore [!INCLUDE [prod_short](../includes/prod_short.md)] using non-production companies. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-[!include[prod_short](../developer/includes/prod_short.md)] doesn't use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (*.flf). Instead, permissions are generated based on entitlements.  
+[!include[prod_short](../developer/includes/prod_short.md)] doesn't use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (.flf). Instead, permissions are generated based on entitlements.  
 
 We define license permissions (per object) in the **Entitlements** table. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Azure Active Directory (Azure AD) service plans.  
 
