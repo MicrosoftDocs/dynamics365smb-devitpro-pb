@@ -23,19 +23,19 @@ Table definitions must have a matching permission set.
 
 ## Remarks
 
-In order to prevent runtime issues caused by missing permissions, all table definitions in your extension must be included in a permission set.
+To prevent runtime issues caused by missing permissions, all table definitions in your extension must be included in a permission set.
 
 ## How to fix this diagnostic?
 
 Permissions can be defined either by using XML, or by using AL permission set objects.
 
-In order to generate XML permission sets, you can use the dedicated command in Visual Studio Code:
+To generate XML permission sets, you can use the dedicated command in Visual Studio Code:
 
-1. Press **Ctrl+Shift+P** in order to open the command palette.
+1. Press **Ctrl+Shift+P** to open the command palette.
 2. Select **AL: Generate permission set containing current extension objects**. This will generate the XML permission set for your extension.
 3. Rebuild your extension by pressing **Ctrl+Shift+B** to package the permission set with your extension.
 
-In order to create AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
+For more information about AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
 
 ## Code examples not triggering the rule
 
@@ -71,7 +71,7 @@ table 50100 MyTable
 </PermissionSets>
 ```
 
-The XML permission set grant access to the table and satisfies then the validation.
+The XML permission set grants access to the table and thereby satisfies the validation.
 
 ### Example 2 - Permission defined in AL
 
