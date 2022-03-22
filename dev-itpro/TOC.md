@@ -210,6 +210,7 @@
 #### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
 #### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
 #### [Email Telemetry](administration/telemetry-email-trace.md)
+#### [Analyzing Error Message Quality Telemetry](../administration/telemetry-error-message-voting-trace.md) 
 #### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
 #### [Feature Telemetry](administration/telemetry-feature-telemetry.md)
