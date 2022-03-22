@@ -74,7 +74,7 @@ For a definition of the different extension types and their scope, see [Extensio
 
 **Scenario:** Showing a preview of an app to a customer or developing the next version of the app.
 
-Publishing an AppSource app to a sandbox environment as DEV extension is common scenario when you want to show a previews of your app to a customer or during active development.
+Publishing an AppSource app to a sandbox environment as a DEV extension is a common scenario when you want to show a preview of your app to a customer or during active development.
 
 ### Identity requirements for publishing an AppSource app as a DEV extension
 

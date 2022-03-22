@@ -22,12 +22,15 @@ In the following, you can read about how submissions are handled and learn how t
 
 The extensions in your submission are validated for all the releases targeted by your submission.
 
-Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the example in [Technical Validation Checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
+Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the example in [Technical Validation Checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated). The 'Target Release' (Current, Next Minor, Next Major) available under 'Supplemental Content' in Partner Center is ignored and will be removed.
 
 > [!IMPORTANT]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
 >
 > For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
+
+> [!NOTE]  
+> 30 days before the release of a new [!INCLUDE[prod_short](../includes/prod_short.md)] major version, all submissions are validated against the upcoming release. The apps in your submission must then be compatible with the upcoming release. The goal is to ensure that your customers won't be blocked during the upgrade of their environment.
 
 ### Against which countries/regions are my apps validated?
 
