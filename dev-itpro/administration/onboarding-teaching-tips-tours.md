@@ -137,7 +137,7 @@ Bolded text can call out the most important points, such as
 
 - Keyboard shortcuts, such as **Alt+Q**
 
-#### Best practice for use of bolded text
+#### Best practices for use of bolded text
 
 - Use bolded text sparsely to avoid "shouting".
 
@@ -159,7 +159,13 @@ Italic text can be used to bring attention to key terms or field values, such as
 
 ![Example of Tour Teaching Tip describing the field value Closed marked with italic ](../media/onboarding-teaching-tip-page-italics.png)
 
-#### Best practice for use of Italic text
+### Links to open pages
+
+Adding links to page teaching tips can be relevant in the following cases:  
+
+- Links can be added to page teaching tips, to help users discover a key related page in [!INCLUDE [prod_short](../includes/prod_short.md)], such as linking to the **Item Templates** page from a teaching tip on the **Items** list page.  
+
+#### Best practices for use of links
 
 - Use links sparsely and use only in page teaching tips. It may be confusing to send users elsewhere.
 
@@ -174,12 +180,6 @@ The following illustration shows a page teaching tip with a link to guide users 
 - When you want to call out page names with bold, make sure only the caption is marked, such as `**Sales Invoice** page` or `**Sales Invoices** list`. In these examples, "page" and "list" don't have and shouldn't have rich text applied.
 
 - Don't apply multiple rich text styles to the same word. Apply one type of formatting only, bold, italic, or a link.
-
-### Links to open pages
-
-Adding links to page teaching tips can be relevant in the following cases:  
-
-- Links can be added to page teaching tips, to help users discover a key related page in [!INCLUDE [prod_short](../includes/prod_short.md)], such as linking to the **Item Templates** page from a teaching tip on the **Items** list page.  
 
 ## Tooltips and control teaching tips are complementary
 
