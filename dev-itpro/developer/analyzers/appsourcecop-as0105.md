@@ -27,7 +27,7 @@ When Microsoft obsoletes code, the obsolete tag is set to the version in which t
 
 If the tag is set to, for example, `'18.0'`, the code will still be present in versions 19 and 20. We will at the earliest remove the code in version 21. Assuming the code is removed in version 21, this can happen right after version 20 was released, but could also happen later during the release.
 
-This rule helps you validating early that your app is ready for a given release of Business Central without relying for Microsoft to actually remove the code.
+This rule helps you validate early if your app is ready for a given release of Business Central without relying on Microsoft to actually remove the code.
 
 ## How to enable the validation?
 
@@ -43,13 +43,13 @@ For example:
 ```
 
 > [!IMPORTANT]
-> Enabling this rule has a performance impact, especially on large projects. We do not recommend keeping it always enabled, but we highly recommend enabling it in order to remove references to obsolete pending objects that can be removed with the upcoming release of Business Central. After all object references have been fixed, you can disable the rule again.
+> Enabling this rule has a performance impact, especially on large projects. We do not recommend keeping it enabled always, but we highly recommend enabling it in order to remove references to obsolete pending objects that can potentially be removed with the upcoming release of Business Central. After all object references have been fixed, you can turn off the rule again.
 
 ## How to fix this diagnostic?
 
 If you do not want to validate that your app is not referencing obsolete objects with obsolete tags lower than a given version, remove the property `obsoleteTagMinAllowedMajorMinor` in the AppSourceCop.json file.
 
-If you do not want to validate that your app is not referencing obsolete objects with obsolete tags lower than a given version, remove the references to obsolete code following the instructions in the [ObsoleteReason](../properties/devenv-obsoletereason-property.md).
+If you do not want to validate that your app is not referencing obsolete objects with obsolete tags lower than a given version, remove the references to obsolete code following the instructions in the [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md).
 
 ## Code examples
 
