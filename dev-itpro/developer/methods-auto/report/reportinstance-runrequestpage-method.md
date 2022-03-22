@@ -3,7 +3,7 @@ title: "Report.RunRequestPage([String]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,13 @@ ReportParameters :=   Report.RunRequestPage([PageParameters: String])
 An instance of the [Report](report-data-type.md) data type.  
 
 *[Optional] PageParameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string of request page parameters as XML to use to run the report.  
 
 
 ## Return Value
 *ReportParameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 XML string that contains the request page parameters that are entered on the request page
 
 

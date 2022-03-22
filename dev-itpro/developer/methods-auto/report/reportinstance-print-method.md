@@ -3,7 +3,7 @@ title: "Report.Print(String [, String] [, RecordRef]) Method"
 description: "Prints a specified report without running the request page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,12 +32,12 @@ Prints a specified report without running the request page. Instead of using the
 An instance of the [Report](report-data-type.md) data type.  
 
 *Parameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
           
 
 *[Optional] PrinterName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the printer to use to print the report. The printer must be set up on the client computer. If you do not set this variable, the printer that is set as the default printer is used.
           
 

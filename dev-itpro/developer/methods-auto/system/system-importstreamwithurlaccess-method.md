@@ -3,7 +3,7 @@ title: "System.ImportStreamWithUrlAccess(InStream, String [, Integer]) Method"
 description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,10 +32,12 @@ ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: String [,
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
 Input stream that contains the object to store as a media object.
         
+
 *Filename*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 File name to associate with the created media object.
         
+
 *[Optional] MinutesToExpire*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Number of minutes after which the object will expire.  

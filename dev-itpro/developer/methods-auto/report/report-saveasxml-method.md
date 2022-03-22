@@ -3,7 +3,7 @@ title: "Report.SaveAsXml(Integer, String [, var Record]) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ The ID of the query object that you want to save as an .xml file.  If the query 
         
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The path and name of the file that you want to save the query to.
         
 

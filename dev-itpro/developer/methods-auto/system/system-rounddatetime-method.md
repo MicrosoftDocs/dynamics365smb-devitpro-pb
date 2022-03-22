@@ -3,7 +3,7 @@ title: "System.RoundDateTime(DateTime [, BigInteger] [, String]) Method"
 description: "Rounds a DateTime."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,12 +29,14 @@ NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigIntege
 *Datetime*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The DateTime that you want to round.  
+
 *[Optional] Precision*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
 This optional parameter determines the precision used when rounding. The default value is 1000, which rounds to the nearest second. You can only use positive BigIntegers.
         
+
 *[Optional] Direction*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 This optional parameter specifies how to round the DateTime. The default rounding method is '='. You can change the method by using the following options:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
 -   '\>' rounds up

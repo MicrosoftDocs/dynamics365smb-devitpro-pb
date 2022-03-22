@@ -3,7 +3,7 @@ title: "IsolatedStorage.Delete(String [, DataScope]) Method"
 description: "Deletes the value with the specified key from the isolated storage."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,9 +25,10 @@ Deletes the value with the specified key from the isolated storage.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The key of the value to remove.
         
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope from which to remove the value with the given key. If a value is not passed in, the default value DataScope::Module will be used.  
