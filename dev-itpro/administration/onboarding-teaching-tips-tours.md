@@ -1,4 +1,4 @@
-﻿---
+---
 title: Teaching tips and in-app tours for onboarding users
 description: Learn about the teaching tips that you can apply to your Business Central to help users get started.
 author: sorenfriisalexandersen
@@ -157,12 +157,6 @@ Italic text can be used to bring attention to key terms or field values, such as
 
 ![Example of Tour Teaching Tip describing the field value Closed marked with italic ](../media/onboarding-teaching-tip-page-italics.png)
 
-### Links to open pages
-
-Adding links to page teaching tips can be relevant in the following cases:  
-
-- Links can be added to page teaching tips, to help discoverability of a related key page or list in Business Central, such as linking to the **Item Templates** page from a teaching tip on the **Items** list page.  
-
 #### Best practice for use of Italic text
 
 - Use links sparsely and use only in page teaching tips. It may be confusing to send users elsewhere.
@@ -175,10 +169,16 @@ The following illustration shows a page teaching tip with a link to guide users 
 
 ### Common pitfalls
 
-- When you want to call out page names with bold, make sure only the caption is marked, such as **Sales Invoice** page or **Sales Invoices** list. In this example, "page" and "list" don't have and shouldn't have rich text applied.
+- When you want to call out page names with bold, make sure only the caption is marked, such as ´**Sales Invoice** page´ or ´**Sales Invoices** list´. In these examples, "page" and "list" don't have and shouldn't have rich text applied.
 
 - Don't apply multiple rich text styles to the same word. Apply one type of formatting only, bold, italic, or a link.
 
+### Links to open pages
+
+Adding links to page teaching tips can be relevant in the following cases:  
+
+- Links can be added to page teaching tips, to help discoverability of a related key page or list in Business Central, such as linking to the **Item Templates** page from a teaching tip on the **Items** list page.  
+- 
 ## Tooltips and control teaching tips are complementary
 
 [!INCLUDE [ua-tooltips-teachingtips](../includes/ua-tooltips-teachingtips.md)]
