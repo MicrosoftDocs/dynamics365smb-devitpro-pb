@@ -49,7 +49,7 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 |alObjectId|Specifies the ID of the page object that was opened.|
 |alObjectName|Specifies the name of the page object that was opened.|
 |alObjectType|**Page**|
-|appId|Specifies the id of the extension that the page belongs to.|
+|appId|Specifies the ID of the extension that the page belongs to.|
 |appName|Specifies the name of the extension that the page belongs to.|
 |appPublisher| Specifies the publisher of the extension that the page belongs to. |
 |appVersion|Specifies the version of the extension that the page belongs to.|
