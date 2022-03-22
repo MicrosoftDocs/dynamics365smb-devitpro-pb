@@ -3,7 +3,7 @@ title: "FilterPageBuilder.AddRecordRef(String, RecordRef) Method"
 description: "Adds a filter control for a table to a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,9 +29,10 @@ Adds a filter control for a table to a filter page. The table is specified by a 
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
         
+
 *RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The record reference to use in the filter control.  
@@ -39,7 +40,7 @@ The record reference to use in the filter control.
 
 ## Return Value
 *[Optional] Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
        If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
