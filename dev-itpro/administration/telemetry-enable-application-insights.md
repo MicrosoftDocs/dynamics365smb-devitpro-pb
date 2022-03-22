@@ -43,7 +43,10 @@ This article describes how to set up sending telemetry data to Azure Application
     - For later versions, copy the **Connection String**.
 
         > [!NOTE]
-        > For these versions, you can use either the instrumentation key or the connection string. However, for reliability, we recommend that you use the connection string.  
+        > For these versions, you can use either the instrumentation key or the connection string. However, for reliability, we recommend that you use the connection string. 
+
+        > [!NOTE]
+        > Transition to using connection strings for data ingestion in Application Insights by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Applications Insights resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
 ## Enable telemetry on tenants
 
