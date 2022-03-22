@@ -62,7 +62,7 @@ For more information, see [Teaching tips and in-app tours for onboarding users](
 
 When the user opens the Help pane, they see content and links to learn more based on where they are in the product. Once users discover the Help pane, they will be able to help themselves get unblocked, we hope.  
 
-The Help pane shows four types of links:
+The Help pane shows up to four types of links:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
