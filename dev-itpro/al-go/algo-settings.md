@@ -34,7 +34,7 @@ When running a workflow or a local script, the settings are applied by reading o
 ## Basic settings
 
 | Name | Description | Default value |
-| :-- | :-- | :-- |
+| :-| :-| :-|
 | type | Specifies the type of project. Allowed values are **PTE** or **AppSource App**. This value comes with the default repository. | `PTE` |
 | country | Specifies which country this app is built against. | `us` |
 | repoVersion | RepoVersion is the repository version number. The repository version number is used for naming build artifacts in the CI/CD workflow. Build artifacts are named **\<project\>-Apps-\<repoVersion\>.\<build\>.\<revision\>** and can contain multiple apps. Individual apps are versioned independently of this setting. | `1.0` |
@@ -48,7 +48,7 @@ When running a workflow or a local script, the settings are applied by reading o
 The repository settings are only read from the repository settings file (.github\AL-Go-Settings.json)
 
 | Name | Description |
-| :-- | :-- |
+| :-| :-|
 | templateUrl | Defines the URL of the template repository used to create this project and is used for checking and downloading updates to AL-Go System files. |
 | nextMajorSchedule | CRON schedule for when NextMajor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | nextMinorSchedule | CRON schedule for when NextMinor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
@@ -58,8 +58,8 @@ The repository settings are only read from the repository settings file (.github
 ## Advanced settings
 
 | Name | Description | Default value |
-| :-- | :-- | :-- |
-| artifact | Determines the artifacts used for building and testing the app.<br />This setting can either be an absolute pointer to Business Central artifacts (https://... - rarely used) or it can be a search specification for artifacts `(\<storageaccount\>/\<type\>/\<version\>/\<country\>/\<select\>/\<sastoken\>)`.<br />If not specified, the artifacts used will be the latest sandbox artifacts from the country specified in the country setting. | |
+| :-| :-| :-|
+| artifact | Determines the artifacts used for building and testing the app.<br />This setting can either be an absolute pointer to Business Central artifacts (https://... rarely used) or it can be a search specification for artifacts `(\<storageaccount\>/\<type\>/\<version\>/\<country\>/\<select\>/\<sastoken\>)`.<br />If not specified, the artifacts used will be the latest sandbox artifacts from the country specified in the country setting. | |
 | companyName | Company name selected in the database, used for running the CI/CD workflow. Default is to use the default company in the selected Business Central localization. | |
 | versioningStrategy | The versioning strategy determines how versioning is performed in this project. The version number of an app consists of 4 tuples: **Major**.**Minor**.**Build**.**Revision**. **Major** and **Minor** are read from the app.json file for each app. **Build** and **Revision** are calculated. Currently 3 versioning strategies are supported:<br />**0** = **Build** is the **github [run_number](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context)** for the CI/CD workflow, increased by the **runNumberOffset** setting value (if specified). **Revision** is the **github [run_attempt](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context)** subtracted 1.<br />**1** = **Build** is the **github [run_id](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context)** for the repository. **Revision** is the **github [run_attempt](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context)** subtracted 1.<br />**2** = **Build** is the current date  as **yyyyMMdd**. **Revision** is the current time as **hhmmss**. Date and time are always **UTC** timezone to avoid problems during daylight savings time change. Note that if two CI/CD workflows are started within the same second, this could yield to identical version numbers from two differentruns.<br />**+16** use **repoVersion** setting as **appVersion** (**Major** and **Minor**) for all apps | 0 |
 | additionalCountries | This property can be set to an additional number of countries to compile, publish and test your app against during workflows. Note that this setting can be different in NextMajor and NextMinor workflows compared to the CI/CD workflow, by specifying a different value in a workflow settings file. | [ ] |
@@ -87,11 +87,11 @@ The repository settings are only read from the repository settings file (.github
 ## Expert settings (rarely used)
 
 | Name | Description | Default value |
-| :-- | :-- | :-- |
+| :-| :-| :-|
 | repoName | the name of the repository | name of GitHub repository |
 | runNumberOffset | when using **VersioningStrategy** 0, the CI/CD workflow uses the GITHUB RUN_NUMBER as the build part of the version number as described under VersioningStrategy. The RUN_NUMBER is ever increasing and if you want to reset it, when increasing the Major or Minor parts of the version number, you can specify a negative number as runNumberOffset. You can also provide a positive number to get a starting offset. Read about RUN_NUMBER [here](https://docs.github.com/en/actions/learn-github-actions/contexts) | 0 |
 | applicationDependency | Application dependency defines the lowest Business Central version supported by your app (Build will fail early if artifacts used are lower than this). The value is calculated by reading app.json for all apps, but cannot be lower than the applicationDependency setting which has a default value of 18.0.0.0 | 18.0.0.0 |
-| installTestRunner | Determines wheather the test runner will be installed in the pipeline. If there are testFolders in the project, this setting will be true. | calculated |
+| installTestRunner | Determines whether the test runner will be installed in the pipeline. If there are testFolders in the project, this setting will be true. | calculated |
 | installTestFramework | Determines whether the test framework apps will be installed in the pipeline. If the test apps in the testFolders have dependencies on the test framework apps, this setting will be true | calculated |
 | installTestLibraries | Determines whether the test libraries apps will be installed in the pipeline. If the test apps in the testFolders have dependencies on the test library apps, this setting will be true | calculated |
 | installPerformanceToolkit | Determines whether the performance test toolkit apps will be installed in the pipeline. If the test apps in the testFolders have dependencies on the performance test toolkit apps, this setting will be true | calculated |
@@ -105,12 +105,12 @@ The repository settings are only read from the repository settings file (.github
 
 ### Run-AlPipeline script override
 
-AL-Go for GitHub utilizes the Run-AlPipeline function from BcContaineHelper to perform the actual build (compile, publish, test etc). The Run-AlPipeline function supports overriding functions for creating containers, compiling apps and a lot of other things.
+AL-Go for GitHub utilizes the `Run-AlPipeline` function from `BcContainerHelper` to perform the actual build (compile, publish, test etc). The `Run-AlPipeline` function supports overriding functions for creating containers, compiling apps and a lot of other things.
 
 This functionality is also available in AL-Go for GitHub, by adding a file to the .AL-Go folder, you automatically override the function.
 
 | Override | Description |
-| :-- | :-- |
+| :-| :-|
 | DockerPull.ps1 | Pull the image specified by the parameter $imageName |
 | NewBcContainer.ps1 | Create the container using the parameters transferred in the $parameters hashtable |
 | ImportTestToolkitToBcContainer.ps1 | Import the test toolkit apps specified by the $parameters hashtable |
@@ -127,13 +127,30 @@ This functionality is also available in AL-Go for GitHub, by adding a file to th
 
 ### BcContainerHelper settings
 
-Repo settings file can contain BcContainerHelper settings. Information to come later.
+Repo settings file can contain `BcContainerHelper` settings. Information to come later.
 
 ### Your own version of AL-Go for GitHub
 
-For experts only, following the description [here](https://https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contributing.md) you can setup a local fork of **AL-Go for GitHub** and use that as your templates. You can fetch upstream changes from Microsoft regularly to incorporate these changes into your version and this way have your modified version of AL-Go for GitHub.
+For experts only, following the description [here](https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contributing.md) you can setup a local fork of **AL-Go for GitHub** and use that as your templates. You can fetch upstream changes from Microsoft regularly to incorporate these changes into your version and this way have your modified version of AL-Go for GitHub.
 
 > [!NOTE]  
 > Our goal is to never break repositories, which are using AL-Go for GitHub as their template. We almost certainly will break you if you create local modifications to scripts and pipelines.
 
 ## See also
+
+[Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](get-started.md)  
+[Add a Test App to an Existing Project](algo-add-test-app.md)  
+[Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env-md)  
+[Create a Release of Your Application](algo-create-release-app.md)  
+[Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md)  
+[Update AL-Go System Files](algo-update-system-files.md)  
+[Use Azure KeyVault for Secrets with AL-Go](algo-enable-keyvault-app-development.md)  
+[Create Online Development Environment from Visual Studio Code](algo-create-online-dev-env-vscode.md)  
+[Create Online Development Environment from GitHub](algo-create-online-dev-env-github.md)  
+[Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md)  
+[Set up CI/CD for an Existing AppSource App](algo-setup-cicd-existing-app.md)  
+[Enable KeyVault Access for Your AppSource App during Development and/or Test](algo-enable-keyvault-app-development.md)  
+[Set up Your Own GitHub Runner to Increase Build Performance](algo-setup-github-runner-performance.md)  
+[Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)  
+[Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)  
+[Branching Strategies](algo-branching-strategy.md)  
