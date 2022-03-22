@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Session Management
 description: Learn about the Business Central administration center API.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -23,7 +22,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 ### Response
@@ -56,7 +55,7 @@ GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ### Response
@@ -85,11 +84,11 @@ GET /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.9/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

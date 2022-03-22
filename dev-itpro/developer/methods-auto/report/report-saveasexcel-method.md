@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,7 @@ Saves a report on the computer that is running the server as a Microsoft Excel (
 The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
           
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and the name of the file that you want to save the report as. The path must exist, the file must not be used, and the server process must have permission to write to the file. Otherwise, you will get errors.
         
 *[Optional] Record*  

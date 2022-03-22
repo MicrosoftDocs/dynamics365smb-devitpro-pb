@@ -6,7 +6,6 @@ ms.date: 05/19/2021
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ms.author: jswymer
 ---

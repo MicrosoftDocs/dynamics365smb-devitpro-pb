@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
@@ -46,6 +45,9 @@ Up until runtime version 7.2 you cannot use the `"applicationInsightsConnectionS
 ```
 
 Where `<instrumentation key>` is replaced by the key denoted in the connection string as `InstrumentationKey=<instrumentation key>;<some other parameters>`.
+
+> [!NOTE]
+> Transition to using connection strings for data ingestion in Application Insights by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Applications Insights resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
 ## See Also  
 [Getting Started with AL](devenv-get-started.md)  

@@ -1,14 +1,13 @@
 ---
 title: "Compiler Error AL0402"
-description: "Expression {0} cannot be specified more than once in a case statement."
+description: "Expression {0} cannot be specified more than once in a 'case' statement."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -18,10 +17,10 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Expression {0} cannot be specified more than once in a case statement.
+Expression {0} cannot be specified more than once in a 'case' statement.
 
 ## Description
-Duplicate expression in a case statement. Expressions in a case statement must be unique.  
+Duplicate expression in a 'case' statement. Expressions in a 'case' statement must be unique.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,12 +3,11 @@ title: "OnAfterGetCurrRecordEvent (Page) Trigger Event"
 description: "Executed after the OnAfterGetCurrRecord trigger, which is called after the current record is retrieved from the table."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,7 +23,7 @@ Executed after the OnAfterGetCurrRecord trigger, which is called after the curre
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnAfterGetCurrRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record)
+local procedure MyProcedure(var Rec: Record)
 begin
     ...
 end;

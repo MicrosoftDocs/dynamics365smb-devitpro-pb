@@ -2,7 +2,6 @@
 title: Analyzing AppSource Submission Validation Trace Telemetry
 description: Learn about the telemetry for publishing apps to AppSource from Partner Center.  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -16,7 +15,7 @@ ms.author: jswymer
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.4, and later
 
-When you submit an app to AppSource using Partner Center, it starts an automated validation process. This technical validation process ensures the extensions in the app meet the technical requirements for going live. It goes through many of the same checks described in [technical validation](https://aka.ms/CheckBeforeYouSubmit).
+When you submit an app to AppSource using Partner Center, it starts an automated validation process. This technical validation process ensures the extensions in the app meet the technical requirements for going live. It goes through many of the same checks described in [technical validation](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission).
 
 If an app's set up for it, telemetry traces are emitted to and recorded in Application Insights. The data provides details about the success or failure of different phases of the validation. For more information about setting up telemetry for an app, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
@@ -41,7 +40,7 @@ Extensions are validated using the AL compiler and the [AppSourceCop code analyz
 10. *Repeat 2-8 for other Business Central releases targeted by the submission*
 11. AppSource submission validation request completed (successfully or with failures)
 
-To reduce the risk of failing the AppSource validation process, review the [technical validation](https://aka.ms/CheckBeforeYouSubmit) checklist before you submit an app.
+To reduce the risk of failing the AppSource validation process, review the [technical validation](/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission) checklist before you submit an app.
 
 ## <a name="validationrequeststarted"></a>AppSource submission validation request started
 
@@ -242,7 +241,7 @@ Occurs when the validation for a specific extension the submission has completed
 | extensionName|Specifies the name of the extension in the submission that was validated.|
 | extensionPublisher|Specifies the publisher of the extension in the submission that was validated.|
 | extensionVersion|Specifies the version of the extension in the submission that was validated.|
-|failureReason|**One or more extension validation tasks have failed**|
+|failureReason|**One or more error diagnostics were reported. For more information about the diagnostics, see traces with eventId LC0034.**|
 |severity|**Error**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated) that the extension was validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||
@@ -297,7 +296,7 @@ Occurs when the validation has completed for a specific version and country, and
 |baselineExtensions|Specifies the previous versions of the extensions in the app and the extensions they're dependent on. These extensions form the baseline for validation if publishing a newer version of an app that's already published.|
 |countryRegion|Specifies the localized version of the app that was validated. |
 |extensions|Specifies the extensions that were part of the submission and were validated. Select the arrow to expand the dimension to see the details about each extension.|
-|failureReason|**One  more extension validation tasks have failed.**|
+|failureReason|**One or more extension validation tasks have failed.**|
 |severity|**Error**|
 |version|Specifies the [Business Central release](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated) that the app was validated against, like **19.0** or **18.4**.|
 |[See common custom dimensions](#other)||
@@ -360,4 +359,4 @@ Occurs when the submission validation process has fully completed, but errors oc
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]  
+[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]

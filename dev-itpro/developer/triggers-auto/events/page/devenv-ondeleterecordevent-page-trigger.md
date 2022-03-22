@@ -3,12 +3,11 @@ title: "OnDeleteRecordEvent (Page) Trigger Event"
 description: "Executed after the OnDeleteRecord trigger, which is called before a record is deleted from a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,7 +23,7 @@ Executed after the OnDeleteRecord trigger, which is called before a record is de
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnDeleteRecordEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record; AllowDelete: Boolean)
+local procedure MyProcedure(var Rec: Record; var AllowDelete: Boolean)
 begin
     ...
 end;

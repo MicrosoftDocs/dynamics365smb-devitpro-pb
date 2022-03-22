@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Installing a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 Cumulative Update

@@ -1,8 +1,7 @@
 ---
-title: "API(V2.0) for Dynamics 365 Business Central  "
+title: "API(V2.0) for Dynamics 365 Business Central"
 description: "Reference content for the API(V2.0) endpoint for integration with Dynamics 365 Business Central."
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: get-started-article
 ms.devlang: na
 ms.tgt_pltfrm: na

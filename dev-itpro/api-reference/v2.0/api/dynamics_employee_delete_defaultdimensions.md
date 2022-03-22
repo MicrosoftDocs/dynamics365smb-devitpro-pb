@@ -4,7 +4,6 @@ description: Deletes the default dimensions of the employee in Dynamics 365 Busi
  
 author: SusanneWindfeldPedersen
 
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na

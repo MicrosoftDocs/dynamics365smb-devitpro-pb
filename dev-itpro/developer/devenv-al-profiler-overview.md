@@ -6,7 +6,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 10/04/2021
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -47,7 +46,12 @@ This means that if we want to use the snapshot both for debugging and profiling 
     ...
 ```
 
-Then, when the snapshot file is downloaded, you can generate a profile file, based on the snapshot by using the **AL: Generate profile file** option. The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in Visual Studio Code.
+Then, when the snapshot file is downloaded, you can generate a profile file. This can be done in one of two ways:
+
+1. Open the Command Palette by using the **Ctrl+Shift+P** shortcut, then select the **AL: Generate profile file** command and choose a snapshot from the dropdown menu.
+1. Alternatively, in the Visual Studio Code explorer, right-click the specific snapshot file and choose **Generate Profile File**.
+
+The profile file for AL code has the extension `.alcpuprofile` and when you open the file, it displays in the performance profiling editor view in Visual Studio Code.
 
 ## Graph of method calls
 
@@ -121,12 +125,17 @@ The following table provides an overview of the shortcut key combinations that y
 |-(minus) | Collapse all nodes.|
 |*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
-## Inline CodeLens for AL profiling results
+
+## Inline Profiler CodeLens for AL profiling results
+
+The Profiler CodeLens for AL enables showing profile results. At hover, the Profiler CodeLens displays time spent in milliseconds for a specific method, and the number of hits on the method. When opening a profiler file, the lens will show information on all statements that appear as frames in the profiler.
+
+General CodeLens support for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings.
+
+While in the settings file, you can now add two options for the Profiler CodeLens for AL. The `"al.areProfileLensesSupported": true` enables the CodeLens and is by *default* true. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. This must be set to the value in milliseconds which is the lower limit. The *default* for this setting is `500` milliseconds (ms). Any value below the stated threshold will not be shown. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 > [!NOTE]  
-> CodeLens for AL profiling results is in preview with runtime 8.0.
-
-CodeLens for Visual Studio Code is enabled in the user or workspace settings by adding the `"editor.codeLens": true` setting for the specific user or for the workspace. CodeLens is also available for showing profile results. At hover, CodeLens displays time spent in milliseconds for the specific method, and number of hits. The option for adding a lower limit for time spent on statement execution is `al.statementLensMin`. To activate this setting, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. 
+> Because of the aggregation of frames, there can be minor discrepancies between the information appearing in the CodeLens and in the profiler.
 
 ## See Also
 

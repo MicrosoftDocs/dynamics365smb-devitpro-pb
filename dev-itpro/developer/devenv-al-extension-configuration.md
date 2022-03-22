@@ -3,12 +3,11 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/15/2021
+ms.date: 12/10/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -24,6 +23,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Setting|Value|
 |-------|-----|
 |Assembly Probing Paths|Sets the list of directory paths where the compiler searches for referenced .NET assemblies. For example: `"al.assemblyProbingPaths": ["./.netpackages", "C:/Program Files/Assemblies"]`|
+|Are Profile Lenses Supported| Enables the Profiler CodeLens for AL, default value is `true`. Syntax is `"al.areProfileLensesSupported": true`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Browser|Specifies the browser in which to open the Business Central client when launching the application from Visual Studio Code.|
 |Background Code Analysis|Specifies whether the code analysis should be performed in the background.|
 |Code Analyzers|Sets the list of paths to code analyzers to use for performing code analysis. For example: `"al.codeAnalyzers": ["${AppSourceCop}", "${CodeCop}"]`.|
@@ -40,7 +40,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
-|Statement Lens Minimum|Sets the lower limit for time spent on statement execution. Syntax is `al.statementLensMin`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
+|Statement Lens Minimum|Sets the lower limit for time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
 
 ## See Also

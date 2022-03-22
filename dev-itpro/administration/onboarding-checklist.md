@@ -3,7 +3,6 @@ title: Get Users Started with the Checklist
 description: Learn how to customize the checklist that users can launch from the Welcome banner.
 ms.date: 10/01/2021
 ms.topic: conceptual
-ms.service: dynamics365-business-central
 author: sorenfriisalexandersen
 ms.author: soalex
 ms.reviewer: edupont

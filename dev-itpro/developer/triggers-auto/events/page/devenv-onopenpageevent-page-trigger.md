@@ -3,12 +3,11 @@ title: "OnOpenPageEvent (Page) Trigger Event"
 description: "Executed after the OnOpenPage trigger, which is called after a page is initialized and run."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,7 +23,7 @@ Executed after the OnOpenPage trigger, which is called after a page is initializ
 ## Syntax
 ```AL
 [EventSubscriber(ObjectType::Page, Page::<Page Name>, 'OnOpenPageEvent', '', <SkipOnMissingLicense>, <SkipOnMissingPermission>)]
-local procedure MyProcedure(Rec: Record)
+local procedure MyProcedure(var Rec: Record)
 begin
     ...
 end;

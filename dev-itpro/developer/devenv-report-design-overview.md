@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -59,7 +58,7 @@ You create Word layouts by using a Word Document. Word layouts are based on a Wo
 [Reports](devenv-reports.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
-[Report Data Type](datatypes/devenv-report-data-type.md)  
+[Report Data Type](/dynamics365/business-central/dev-itpro/developer/methods-auto/library)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Request Pages](devenv-request-pages.md)

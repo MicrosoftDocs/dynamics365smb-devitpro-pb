@@ -2,7 +2,6 @@
 title: Business Central Admin Center API - Environment Database Export
 description: Learn about the Business Central administration center API for exporting an environment database.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -21,7 +20,7 @@ Allows for the export of an environment's Azure database. Databases are exported
 Gets information about the number of exports allowed per month and the amount remaining.
 
 ```
-GET /admin/v2.9/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
+GET /admin/v2.11/exports/applications/{applicationFamily}/environments/{environmentName}/metrics
 ```
 
 ### Route Parameters
@@ -53,7 +52,7 @@ Starts the export of an environment's database to a provided Azure storage accou
 
 ```
 Content-Type: application/json
-POST /admin/v2.9/exports/applications/{applicationFamily}/environments/{environmentName}
+POST /admin/v2.11/exports/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -87,7 +86,7 @@ POST /admin/v2.9/exports/applications/{applicationFamily}/environments/{environm
 Gets information about the exports that have been done within a provided time frame, for which environment, and by which user.
 
 ```
-POST /admin/v2.9/exports/history?start={startTime}&end={endTime}
+POST /admin/v2.11/exports/history?start={startTime}&end={endTime}
 ```
 
 ### Query parameters
@@ -152,6 +151,6 @@ Returns a detailed list of the database exports that occurred within the provide
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)
+[The Business Central Administration Center API](administration-center-api.md)
 [Manage Apps](tenant-admin-center-manage-apps.md)
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)

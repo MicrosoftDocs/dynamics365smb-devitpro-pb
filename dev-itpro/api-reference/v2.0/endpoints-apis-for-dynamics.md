@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 ---
@@ -22,8 +21,7 @@ ms.author: solsen
 Once you have the API access enabled, you can write code that integrates your web service or SaaS solution with [!INCLUDE[prod_short](../../includes/prod_short.md)]. Creating your integration through an API provides simple access to the supported functionality in a single endpoint, giving you a simplified experience for creating a single app with integrations across multiple Microsoft products.
 
 > [!IMPORTANT]  
-> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)] environments, the name of the environment being connected to, needs to go into the URI. To retrieve a list of environments deployed on the tenant, call:
-`GET https://api.businesscentral.dynamics.com/environments/v2.0/`.
+> With the introduction of multiple [!INCLUDE[prod_short](../../includes/prod_short.md)] environments, the name of the environment being connected to needs to go into the URI.  To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../../webservices/api-get-environments.md).
 
 ### [!INCLUDE[prod_short](../../includes/prod_short.md)]
 

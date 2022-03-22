@@ -1,6 +1,5 @@
 ---
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: include
 ms.date: 10/26/2021
 ms.author: edupont
@@ -19,3 +18,5 @@ When an environment is created as a copy of another environment, a number of pre
 - Any General Data Protection Regulation (GDPR) action must be handled separately and repeated for the environment. There is no synchronization with the original environment after the copy has been created.  
 
     The internal administrator has the same tools and responsibilities for the copy as they do for the original environment. As a data processor, [!INCLUDE [prod_short](prod_short.md)] offers the same level of data protection and data handling restrictions to all types of environments, both sandboxes and production environments.  
+    
+[!INCLUDE [create copy-restore-cleanup-operations](copy-restore-cleanup-operations.md)]

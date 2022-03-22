@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,7 @@ Opens a dialog window.
 An instance of the [Dialog](dialog-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This string contains the text that you want to display in the window. Use a backslash (\\) to start a new line. Use number signs (#) to insert variable values into the string. Place the number signs where you want to substitute the variable value. Place a number in the part of the string where a variable value will be substituted (for example, #1####) to be able to reference this field for updating.  The number of # characters in the string indicates the length of the field. You can update the fields using the UPDATE method (Dialog) or by letting the user edit the values.
           
 *[Optional] Variable1*  
