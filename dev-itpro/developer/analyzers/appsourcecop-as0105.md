@@ -87,7 +87,7 @@ Example:
 
 ### Code example not triggering the rule
 
-If the `obsoleteTagMinAllowedMajorMinor` version is set to any version  higher than `18.0`, then an error is reported.
+If the `obsoleteTagMinAllowedMajorMinor` version is set to any version higher than `18.0`, then an error is reported.
 
 Example:
 ```JSON
