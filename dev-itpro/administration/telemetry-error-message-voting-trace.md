@@ -76,7 +76,7 @@ The following table explains the custom dimensions included in the trace.
 {"telemetrySchemaVersion":"1.2","componentVersion":"20.0.36722.0","companyName":"CRONUS International Ltd.","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","component":"Dynamics 365 Business Central Client","eventId":"CL0002","clientType":"Desktop","alObjectName":"Dialog","alObjectType":"Page","alObjectId":"-1","alStackTrace":"CustomerListExt(PageExtension 50110).OnOpenPage(Trigger) line 9 - ALlogmessage by Default publisher","appPublisher":"Default publisher","appName":"ALlogmessage","hostType":"Browser","environmentName":"null","appId":"f2ae006d-deef-4990-828e-4c76906e7171","userFeedback":"Yes","appVersion":"1.0.0.0","userLocale":"en-US","errorMessage":"Something went wrong again","exceptionId":"ddc77782-caa0-44a9-8fae-9329375613e2"}
 
 -->
- 
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
