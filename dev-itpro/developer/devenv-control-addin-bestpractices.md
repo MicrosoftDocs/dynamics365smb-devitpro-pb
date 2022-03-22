@@ -14,7 +14,7 @@ ms.author: solsen
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-When developing control add-ins it's important to provide the best possible experience, as well as performance so that users can maintain their productivity without disruption. With the newest version of [!INCLUDE[prod_short](../includes/prod_short.md)] the client, if it detects a slow, or bad performant control add-in, will present the user with a dialog equivalent to this:
+When developing control add-ins it's important to provide the best possible experience, as well as performance so that users can maintain their productivity without interruption. With the newest version of [!INCLUDE[prod_short](../includes/prod_short.md)] the client, if it detects a slow, or bad performant control add-in, will present the user with a dialog equivalent to the following.
 
 :::image type="content" source="media/controladdin-resiliency.png" alt-text="Busy control add-in detected.":::
 
@@ -63,6 +63,7 @@ function invokeALTriggerTheRightWay() {
         () => { /* error handling */ });
 }
 ```
+
 ## See also
 
 [Control Add-In Resiliency](/dynamics365/business-central/across-controladdin-resiliency) <!-- link to app doc -->  
