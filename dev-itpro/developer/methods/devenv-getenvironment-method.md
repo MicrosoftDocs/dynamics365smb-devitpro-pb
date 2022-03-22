@@ -2,7 +2,7 @@
 title: "GetEnvironment Method"
 description: "The GetEnvironment method in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,7 @@ Returns an object that contains the following members:
 |OnBusyChanged|Type: Function<br /><br /> A function that is called when the **Busy** state of the client has changed.<br /><br /> **Function Syntax**<br /><br /> The syntax of the function is the following:<br /><br /> `function callback()`|  
 |Platform|Type: Integer<br /><br /> An integer indicating the underlying platform that the control add-in is being rendered on. Possible values:<br /><br /> 0 – [!INCLUDE[nav_windows](../includes/nav_windows_md.md)].<br /><br /> 1 – [!INCLUDE[nav_web](../includes/nav_web_md.md)], [!INCLUDE[nav_tablet](../includes/nav_tablet_md.md)], or [!INCLUDE[nav_phone](../includes/nav_phone_md.md)] in a browser.<br /><br /> 2 – [!INCLUDE[nav_uni_app](../includes/nav_uni_app_md.md)].<br /><br /> 3 - Microsoft Office add-in.|
 |UserInteractionMode|Type: Integer <br /><br />An integer indicating the user interaction mode that the control add-in is being rendered under. Possible values:<br /><br /> 0 - Mouse <br /><br /> 1 - Touch|  
+|OnClosed|---|
   
 ## Example
 

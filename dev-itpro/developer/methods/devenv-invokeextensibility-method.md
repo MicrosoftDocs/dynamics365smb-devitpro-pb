@@ -3,7 +3,7 @@ title: "InvokeExtensibilityMethod Method"
 description: "The InvokeExtensibilityMethod in AL for Business Central"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,6 +27,7 @@ Invokes an AL trigger on the [!INCLUDE[d365fin_server_md](../includes/d365fin_se
 |*arguments*|Type: Array<br /><br /> An array that contains the arguments to pass to the AL trigger. Note that the arguments must be supplied in an array even when the trigger only takes one argument.|  
 |*skipIfBusy*|Type: Boolean<br /><br /> A value to indicate whether to invoke the extensibility method if the client is busy. This parameter is optional and the default value is **false**.|  
 |*callback*|Type: function<br /><br /> A function that is called when the extensibility method has finished execution on the server. This parameter is optional.|  
+|*succeed*|---|
   
 > [!IMPORTANT]  
 > The callback function is useful for synchronizing multiple calls to the server. This is used, for example, when transferring multiple data blocks to the server to prevent overflowing the communication channel between the client and the server.  
