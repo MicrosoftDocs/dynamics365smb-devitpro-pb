@@ -20,9 +20,49 @@ When developing control add-ins it's important to provide the best possible expe
 
 The dialog can be closed by the user, but will appear again if the control add-in continues to run slowly. To ensure that the client is responsive and fast, the non-responsive or non-performant control add-in will result in continuous warnings, and if the problem persists the control add-in communication is throttled depending on the volume of communication with the [!INCLUDE[prod_short](../includes/prod_short.md)] service​.
 
-
 ## Code examples
 
+### Bad code example
+
+The following example illustrates code that is problematic and might cause performance issues.
+
+```javascript
+function invokeALTriggerTheWrongWay() {
+    // Invoke the trigger every 10 seconds, ignoring 
+    // whether the previous call has completed
+    window.setTimeout(() => {
+        Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
+            "MyTrigger",
+            arguments,
+            false);
+
+        invokeALTriggerTheWrongWay();
+    }, 
+    10000);
+}
+```
+
+### Good code example
+
+The following example illustrates the right implementation.
+
+```javascript
+function invokeALTriggerTheRightWay() {
+    Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
+        "MyTrigger",
+        arguments,
+        false,
+        () => {
+            // Invoking the AL trigger has completed, invoke
+            // the AL trigger again in 10 seconds
+            window.setTimeout(() => {
+                invokeALTriggerTheRightWay();
+            },
+            10000);
+        },
+        () => { /* error handling */ });
+}
+```
 ## See also
 
 [Control Add-In Resiliency](/dynamics365/business-central/across-controladdin-resiliency) <!-- link to app doc -->  
