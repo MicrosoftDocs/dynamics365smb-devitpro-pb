@@ -99,7 +99,7 @@ The repository settings are only read from the repository settings file (.github
 | enablePerTenantExtensionCop | Determines whether the PerTenantExtensionCop will be enabled in the pipeline. If the project type is PTE, then the PerTenantExtensionCop will be enabled by default. You can set this value to false to force the PerTenantExtensionCop to be disabled | calculated |
 | doNotBuildTests | This setting forces the pipeline to NOT build and run the tests in testFolders | false |
 | doNotRunTests | This setting forces the pipeline to NOT run the tests in testFolders. Tests are still being built and published | false |
-| memoryLimit | Specifies the memory limit for the build container. By default, this is left to BcContainerHelper to handle and will currently be set to 8G | 8G |
+| memoryLimit | Specifies the memory limit for the build container. By default, this is left to `BcContainerHelper` to handle and will currently be set to 8G | 8G |
 
 ## Expert level
 
