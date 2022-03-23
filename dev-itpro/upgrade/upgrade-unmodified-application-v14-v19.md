@@ -410,7 +410,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     For each extension, run the Sync-NAVApp cmdlet:
 
     ```powershell
-    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewVersion
+    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewBcVersion
     ```
 
   >[!NOTE]
@@ -461,7 +461,7 @@ If you have a multitenant deployment, do these steps for each tenant.
         You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
 
         ```powershell
-        Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewVersion
+        Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBcVersion
         ```
     > [!NOTE]
     >
