@@ -3,7 +3,7 @@ title: "File.IsPathTemporary(String) Method"
 description: "Validates whether the given path is located in the current users temporary folder within the current service."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Validates whether the given path is located in the current users temporary folde
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the file, including the path.  
 
 

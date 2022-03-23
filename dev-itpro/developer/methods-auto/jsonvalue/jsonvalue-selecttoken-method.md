@@ -3,7 +3,7 @@ title: "JsonValue.SelectToken(String, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,9 @@ Selects a JsonToken using a JPath expression.
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
+
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
   
