@@ -3,7 +3,7 @@ title: "Text.StrLen(String) Method"
 description: "Gets the length of a string you define."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Length :=   Text.StrLen(String: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 The string for which you want to determine the length.  
 
 
