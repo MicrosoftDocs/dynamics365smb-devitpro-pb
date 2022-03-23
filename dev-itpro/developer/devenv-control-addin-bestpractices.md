@@ -24,7 +24,7 @@ The dialog can be closed by the user, but will appear again if the control add-i
 
 ### Bad code example
 
-The following example illustrates code that is problematic and might cause performance issues.
+The following example illustrates code that is problematic and might cause performance issues because the trigger is invoked no matter if the previous calls are completed.
 
 ```javascript
 function invokeALTriggerTheWrongWay() {
@@ -44,7 +44,7 @@ function invokeALTriggerTheWrongWay() {
 
 ### Good code example
 
-The following example illustrates the right implementation.
+The following example illustrates the right implementation where the trigger is invoked when the previous call is completed.
 
 ```javascript
 function invokeALTriggerTheRightWay() {
