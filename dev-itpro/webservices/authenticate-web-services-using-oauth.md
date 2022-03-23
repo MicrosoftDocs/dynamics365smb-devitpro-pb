@@ -540,7 +540,7 @@ string refreshToken = authenticationResult.RefreshToken;
 
 The `access token` is the one that is actually used when the client application calls the web service. The access token is relatively short-lived (for example, one hour by default, and one day maximum). When it expires, the client application needs a new access token.
 
-To obtain new access token when the current access token expires, one can leverage token cache. For more information, see [Acquire & cache tokens with Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-acquire-cache-tokens.md).
+To obtain new access token when the current access token expires, one can leverage token cache. For more information, see [Acquire & cache tokens with Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-acquire-cache-tokens).
 
 The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).  
 
