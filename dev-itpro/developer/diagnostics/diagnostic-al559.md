@@ -3,11 +3,12 @@ title: "Compiler Warning (Future Error) AL0559"
 description: "A Part type page cannot contain other parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/13/2021
+ms.date: 03/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -20,7 +21,7 @@ author: SusanneWindfeldPedersen
 A Part type page cannot contain other parts.
 
 > [!IMPORTANT]
-> This warning will become an error in Spring 2020.  
+> This warning will become an error with Business Central 2020 release wave 1.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -3,7 +3,7 @@ title: "FilterPageBuilder.PageCaption([String]) Method"
 description: " Gets or sets the FilterPageBuilder UI caption."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ author: SusanneWindfeldPedersen
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *[Optional] PageCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The value to set for the FilterPageBuilder UI caption.  
 
 
 ## Return Value
 *[Optional] PageCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The current value of the FilterPageBuilder UI caption.
 
 

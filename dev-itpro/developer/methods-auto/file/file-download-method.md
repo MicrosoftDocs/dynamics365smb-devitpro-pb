@@ -3,7 +3,7 @@ title: "File.Download(String, String, String, String, var Text) Method"
 description: "Sends a file from a server computer to the client computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,21 +29,25 @@ Sends a file from a server computer to the client computer. The client computer 
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FromFile*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the file on the server computer that you want to download to the client computer.
         
+
 *DialogTitle*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The title that you want to display in the dialog box for downloading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
           
+
 *ToFolder*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The default folder in which to save the file to be downloaded. The folder name is displayed in the dialog box for downloading the file. The folder can be changed by the user. This parameter is not supported by the web client. By default, the files are saved to the default download location that is configured in the end-user's browser.
           
+
 *ToFilter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The type of file that can be downloaded to the client computer. The type is displayed in the dialog box for downloading the file. This parameter is not supported by the web client.
           
+
 *ToFile*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The name to give the downloaded file. This is the default file name that is shown in the dialog box for downloading the file. This value can be changed by the user.  

@@ -3,7 +3,7 @@ title: "XmlText.Create(String) Method"
 description: "Creates an XmlText node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Value :=   XmlText.Create(Content: String)
 ```
 ## Parameters
 *Content*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string that contains the value of the new XmlText node.  
 
 

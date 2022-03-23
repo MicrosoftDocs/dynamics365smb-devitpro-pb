@@ -3,7 +3,7 @@ title: "Session.StartSession(var Integer, Integer [, String] [, var Record]) Met
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,12 +29,15 @@ Starts a session without a UI and runs the specified codeunit.
 *SessionId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the new session that is started. The ID is assigned to the SessionID variable after the session is started successfully. This parameter is passed by reference to the method.  
+
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the codeunit to run when the session is started.  
+
 *[Optional] Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.  
@@ -86,4 +89,4 @@ end;
 ## See Also
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

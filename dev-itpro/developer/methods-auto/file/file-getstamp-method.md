@@ -3,7 +3,7 @@ title: "File.GetStamp(String, var Date [, var Time]) Method"
 description: "Gets the exact time that a file was last written to."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,16 +29,18 @@ Gets the exact time that a file was last written to.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the file, including the path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.
 -   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
           
+
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 The date that the file was last written to.
         
+
 *[Optional] Time*  
 &emsp;Type: [Time](../time/time-data-type.md)  
 The time that the file was last written to. Optional.

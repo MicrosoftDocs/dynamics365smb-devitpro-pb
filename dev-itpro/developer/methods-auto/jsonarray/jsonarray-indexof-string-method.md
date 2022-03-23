@@ -3,7 +3,7 @@ title: "JsonArray.IndexOf(String) Method"
 description: "Determines the index of a specific value in the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Index :=   JsonArray.IndexOf(Value: String)
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
 
 

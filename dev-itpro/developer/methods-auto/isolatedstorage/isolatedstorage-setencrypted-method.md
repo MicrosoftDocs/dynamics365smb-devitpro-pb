@@ -3,7 +3,7 @@ title: "IsolatedStorage.SetEncrypted(String, String [, DataScope]) Method"
 description: "Encrypts and sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,11 +25,13 @@ Encrypts and sets the value associated with the specified key. The input string 
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The key of the value to set.  
+
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The value that will be associated with the specified key.  
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the stored data. If a value is not passed in, the default value DataScope::Module will be used.  

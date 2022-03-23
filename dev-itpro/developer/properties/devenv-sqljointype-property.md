@@ -3,11 +3,12 @@ title: "SqlJoinType Property"
 description: "Sets the data item link type between data items in a query to determine the records that are included in the resulting data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

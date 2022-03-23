@@ -3,7 +3,7 @@ title: "HttpHeaders.Contains(String) Method"
 description: "Checks if the specified header exists in the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Result :=   HttpHeaders.Contains(Name: String)
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The specific header.  
 
 

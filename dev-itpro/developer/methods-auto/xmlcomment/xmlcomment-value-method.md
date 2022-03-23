@@ -3,7 +3,7 @@ title: "XmlComment.Value([String]) Method"
 description: "Gets or sets the string value of this comment."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Gets or sets the string value of this comment.
 An instance of the [XmlComment](xmlcomment-data-type.md) data type.  
 
 *[Optional] NewValue*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The new value of this comment.  
 
 
 ## Return Value
 *[Optional] Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The new value of this comment.
 
 

@@ -3,7 +3,7 @@ title: "SessionSettings.TimeZone([String]) Method"
 description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Gets or sets the time zone property in a SessionSettings object.
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
 *[Optional] NewTimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies the time zone property in the SessionsSettings object. The value must be a valid Windows time zone name, such as **UTC** or **Pacific Standard Time**.  
 
 
 ## Return Value
 *[Optional] TimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The time zone set in the SessionSettings object.
       
 
@@ -68,4 +68,4 @@ end;
 [SessionSettings Data Type](sessionsettings-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)  
+[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)

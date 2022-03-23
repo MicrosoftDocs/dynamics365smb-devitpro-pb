@@ -3,7 +3,7 @@ title: "XmlAttributeCollection.Get(String, var XmlAttribute) Method"
 description: "Gets the specified attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,9 +29,10 @@ Gets the specified attribute.
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The qualified name of the attribute to retrieve.
         
+
 *Result*  
 &emsp;Type: [XmlAttribute](../xmlattribute/xmlattribute-data-type.md)  
 Variable containing the requested XmlAttribute if the operation is successful.  

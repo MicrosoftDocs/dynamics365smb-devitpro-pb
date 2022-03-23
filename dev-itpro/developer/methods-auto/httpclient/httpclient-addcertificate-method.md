@@ -3,7 +3,7 @@ title: "HttpClient.AddCertificate(String [, String]) Method"
 description: "Adds a certificate to the HttpClient class."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,10 +29,11 @@ Adds a certificate to the HttpClient class.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Certificate*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The Base64 encoded certificate.  
+
 *[Optional] Password*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The certificate password.  
 
 

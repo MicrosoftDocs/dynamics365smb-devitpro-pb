@@ -3,7 +3,7 @@ title: "IsolatedStorage.Get(String [, DataScope], var Text) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +25,15 @@ Gets the value associated with the specified key.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The key of the value to get. If the specified key is not found an error will be reported.
         
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the data to retrieve. If a value is not passed in, the default value DataScope::Module will be used.
         
+
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The value that is associated with the specified key.  

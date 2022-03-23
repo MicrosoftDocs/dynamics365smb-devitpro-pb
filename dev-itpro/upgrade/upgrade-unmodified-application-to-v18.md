@@ -98,6 +98,8 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
 
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+
 4. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.

@@ -3,7 +3,7 @@ title: "TestField.GetValidationError([Integer]) Method"
 description: "Gets the validation error that occurred on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The index of the validation error that occurred on the test page.
 
 ## Return Value
 *Result*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The validation error that occurred on a test page.
 
 

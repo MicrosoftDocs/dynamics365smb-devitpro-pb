@@ -66,6 +66,9 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 1. Make backup of the databases.
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 3. Uninstall all extensions from the old tenants.
 
     In this step, you uninstall any extensions that are currently installed on the database.

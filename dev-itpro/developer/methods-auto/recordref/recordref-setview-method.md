@@ -3,7 +3,7 @@ title: "RecordRef.SetView(String) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets the current sort order, key, and filters on a table.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The string format is the same as the SourceTableView property on pages.  
 
 

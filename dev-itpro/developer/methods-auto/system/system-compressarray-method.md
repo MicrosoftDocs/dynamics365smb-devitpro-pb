@@ -3,7 +3,7 @@ title: "System.CompressArray(Array of [String]) Method"
 description: "Moves all non-empty strings (text) in an array to the beginning of the array."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Moves all non-empty strings (text) in an array to the beginning of the array. Th
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *StringArray*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The string array that you want to compress.  
 
 

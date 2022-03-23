@@ -3,7 +3,7 @@ title: "ModuleInfo.Publisher() Method"
 description: "Gets the publisher of the specified application."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ Publisher :=   ModuleInfo.Publisher()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *ModuleInfo*  
 &emsp;Type: [ModuleInfo](moduleinfo-data-type.md)  
@@ -33,7 +32,7 @@ An instance of the [ModuleInfo](moduleinfo-data-type.md) data type.
 
 ## Return Value
 *Publisher*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The publisher of the specified application.
 
 

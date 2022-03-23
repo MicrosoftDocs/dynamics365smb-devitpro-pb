@@ -3,7 +3,7 @@ title: "Text.StrPos(String, String) Method"
 description: "Searches for the first occurrence of substring inside a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,11 +27,12 @@ Position :=   Text.StrPos(String: String, SubString: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 The string in which you want to search.
         
+
 *SubString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 The substring for which you want to search.  
 
 
