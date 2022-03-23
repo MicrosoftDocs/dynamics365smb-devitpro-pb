@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 03/23/2022
 ms.author: jswymer
 ---
 
@@ -19,7 +19,7 @@ ms.author: jswymer
 
 A telemetry trace is recorded whenever additional logging is turned on or off.
 
-For information about enabling additional logging, see [Resources for Help and Support](https://docs.microsoft.com/en-us/dynamics365/business-central/product-help-and-support).
+For information about enabling additional logging, see [Resources for Help and Support](/dynamics365/business-central/product-help-and-support).
 
 ## <a name="enabled"></a>Verbose telemetry enabled for session
 
@@ -84,7 +84,6 @@ The following table explains the custom dimensions included in the trace.
 {"telemetrySchemaVersion":"0.1","componentVersion":"20.0.36722.0","environmentType":"Production","aadTenantId":"d88985a1-c863-442c-bb5f-dc622e480a8d","component":"Dynamics 365 Business Central Server","eventId":"RT0024"}
 
 -->
-
 
 ## See also
 
