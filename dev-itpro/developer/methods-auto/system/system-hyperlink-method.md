@@ -3,7 +3,7 @@ title: "System.Hyperlink(String) Method"
 description: "Passes a URL as an argument to an Internet browser, such as Windows Internet Explorer."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ Passes a URL as an argument to an Internet browser, such as Windows Internet Exp
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *URL*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
  A URL that is passed to the Internet browser as an argument.  
 
 

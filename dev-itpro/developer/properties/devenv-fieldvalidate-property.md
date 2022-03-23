@@ -3,11 +3,12 @@ title: "FieldValidate Property"
 description: "Sets a value that specifies whether the values in the source field are validated by the OnValidate (Fields) trigger for the field."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
