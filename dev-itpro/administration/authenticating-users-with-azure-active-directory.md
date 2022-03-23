@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Azure Active Directory
+# Configure Azure Active Directory Authentication with WS-Federation
 
 > **APPLIES TO:** Business Central 2021 release wave 2 (version 19) and earlier
 
