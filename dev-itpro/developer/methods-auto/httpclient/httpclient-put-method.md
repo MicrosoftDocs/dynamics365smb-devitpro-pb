@@ -3,7 +3,7 @@ title: "HttpClient.Put(String, HttpContent, var HttpResponseMessage) Method"
 description: "Sends a PUT request to the specified URI as an asynchronous operation."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,15 @@ Sends a PUT request to the specified URI as an asynchronous operation.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The path the request is sent to.
         
+
 *Content*  
 &emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)  
 The HTTP request content sent to the server.
         
+
 *Response*  
 &emsp;Type: [HttpResponseMessage](../httpresponsemessage/httpresponsemessage-data-type.md)  
 The response received from the remote endpoint.  

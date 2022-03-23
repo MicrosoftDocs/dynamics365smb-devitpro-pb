@@ -3,7 +3,7 @@ title: "FilterPageBuilder.Name(Integer) Method"
 description: "Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The index of a filter control. The value must be in the range 1 to N, where N is
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the filter control.
 
 

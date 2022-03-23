@@ -3,11 +3,12 @@ title: "TryFunction Attribute"
 description: "Specifies the method to be a try method, which can be used to catch and handle errors and exceptions that occur when code is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
