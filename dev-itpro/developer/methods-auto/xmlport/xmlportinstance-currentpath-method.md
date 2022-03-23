@@ -3,12 +3,11 @@ title: "Xmlport.CurrentPath() Method"
 description: "Returns the CurrentPath for a given node, used when exporting an XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,7 +23,6 @@ Returns the CurrentPath for a given node, used when exporting an XmlPort.
 ```AL
 Path :=   Xmlport.CurrentPath()
 ```
-
 ## Parameters
 *Xmlport*  
 &emsp;Type: [Xmlport](xmlport-data-type.md)  
@@ -32,7 +30,7 @@ An instance of the [Xmlport](xmlport-data-type.md) data type.
 
 ## Return Value
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The current path for a given node.
 
 

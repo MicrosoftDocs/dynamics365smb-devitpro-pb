@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -34,7 +33,7 @@ There are two other special objects which are specifically used for building ext
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
 
-You have several options for creating new objects with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. For more information about the objects that you can create for your extension, see [AL Development Reference](devenv-reference-overview.md).
+You have several options for creating new objects with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code. For more information about the objects that you can create for your extension, see [AL Development Environment](devenv-reference-overview.md).
 
 ## Developing extensions in Visual Studio Code
 
@@ -76,7 +75,7 @@ When all development and testing is done, you can submit your extension package 
 [Getting Started with AL](devenv-get-started.md)  
 [Getting Started Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [XML Comments in Code](devenv-xml-comments.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
 [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  

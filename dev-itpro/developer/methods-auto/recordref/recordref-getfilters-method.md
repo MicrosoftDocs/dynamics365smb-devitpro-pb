@@ -3,12 +3,11 @@ title: "RecordRef.GetFilters() Method"
 description: "Determines which filters have been applied to the table referred to by the RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,6 @@ String :=   RecordRef.GetFilters()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
@@ -34,7 +32,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Filters that have been applied to the table that is referred to by the RecordRef parameter.
 
 

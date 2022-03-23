@@ -3,12 +3,11 @@ title: "JsonObject.SelectToken(String, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,8 +29,9 @@ Selects a JsonToken using a JPath expression.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A valid JPath expression.  
+
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 A JsonToken variable that will contain the result if the operation is successful.  

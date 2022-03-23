@@ -3,12 +3,11 @@ title: "XmlDeclaration.Version([String]) Method"
 description: "Gets or sets the version property for this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,13 +31,13 @@ Gets or sets the version property for this document.
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
 
 *[Optional] NewValue*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string containing the version property for this document.  
 
 
 ## Return Value
 *[Optional] Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The version property for this document.
 
 

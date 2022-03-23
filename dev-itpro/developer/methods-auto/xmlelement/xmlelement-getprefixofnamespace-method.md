@@ -3,12 +3,11 @@ title: "XmlElement.GetPrefixOfNamespace(String, var Text) Method"
 description: "Gets the prefix associated with a namespace URI for this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,9 +29,10 @@ Gets the prefix associated with a namespace URI for this element.
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *Namespace*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A namespace URI to look up.
         
+
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the namespace prefix.  

@@ -3,7 +3,7 @@ title: "DefaultImplementation Property"
 description: "Specifies the default implementer for the enum value if there is no explicit implementer set for the value."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

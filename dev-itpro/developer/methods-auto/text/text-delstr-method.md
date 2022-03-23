@@ -3,12 +3,11 @@ title: "Text.DelStr(String, Integer [, Integer]) Method"
 description: "Deletes a substring inside a string (text or code)."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,13 +27,15 @@ NewString :=   Text.DelStr(String: String, Position: Integer [, Length: Integer]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 The input string.
         
+
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The position of the first character that you want to delete. Position must be greater than zero (0). If Position exceeds the length of String, DELSTR returns the original string, unchanged.
         
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies how many characters to delete. Length must be greater than zero (0).  
@@ -42,7 +43,7 @@ Specifies how many characters to delete. Length must be greater than zero (0).
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 The input string without the specified substring.
 
 

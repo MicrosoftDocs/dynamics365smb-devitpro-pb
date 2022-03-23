@@ -3,12 +3,11 @@ title: "Session.StartSession(var Integer, Integer, Duration [, String] [, var Re
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/10/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,15 +29,19 @@ Starts a session without a UI and runs the specified codeunit.
 *SessionId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the new session that is started. The ID is assigned to the SessionID variable after the session is started successfully. This parameter is passed by reference to the method.  
+
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the codeunit to run when the session is started.  
+
 *Timeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
 Specifies the timeout of the created session. If not specified a default timeout will be used; for OnPrem, the default timeout is set on the server, for SaaS the current default timeout is 12 hours, and may change in the future.  
+
 *[Optional] Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record that is passed to the OnRun trigger of the codeunit that runs when the session is started.  
@@ -61,4 +64,4 @@ For information about how dialog boxes are handled in a background session, see 
 ## See Also
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

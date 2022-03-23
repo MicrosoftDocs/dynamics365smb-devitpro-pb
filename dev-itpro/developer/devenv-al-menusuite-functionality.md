@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/01/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -92,4 +91,4 @@ After you change these properties by using the [!INCLUDE[nav_dev_long_md](includ
 [UsageCategory Property](properties/devenv-usagecategory-property.md)  
 [Page Object](devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
-[AL Development Reference](devenv-reference-overview.md)
+[AL Development Environment](devenv-reference-overview.md)

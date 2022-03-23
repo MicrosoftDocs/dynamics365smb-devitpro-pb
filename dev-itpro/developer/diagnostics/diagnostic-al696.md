@@ -3,7 +3,7 @@ title: "Compiler Error AL0696"
 description: "Argument {0}: The argument should be a valid Field type."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

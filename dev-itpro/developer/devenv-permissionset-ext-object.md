@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -44,7 +43,7 @@ permissionsetextension 50140 "Extended Sales Doc" extends "Sales Person"
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
 [Permission Set Object](devenv-permissionset-object.md)  
 [Permissions on Database Objects](devenv-permissions-on-database-objects.md)  

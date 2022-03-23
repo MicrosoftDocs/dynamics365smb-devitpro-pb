@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 --- 
 
@@ -103,7 +102,7 @@ The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] platform will autom
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md)  

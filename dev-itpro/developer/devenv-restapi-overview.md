@@ -8,11 +8,11 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
 # HTTP, JSON, TextBuilder, and XML API Overview
+
 With the API for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you have HTTP, JSON, TextBuilder, and XML classes available for accessing services. The following table shows the classes that are available. 
 
 ## API reference
@@ -23,7 +23,7 @@ With the API for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you ha
 |[HttpContent](methods-auto/httpcontent/httpcontent-data-type.md)|A base class representing an HTTP entity body and content headers.|
 |[HttpHeaders](methods-auto/httpheaders/httpheaders-data-type.md)|The HttpHeaders class contains a collection of headers and their values.|
 |[HttpRequestMessage](methods-auto/httprequestmessage/httprequestmessage-data-type.md)|Represents an HTTP request message.|
-|[HttpReponseMessage](methods-auto/httpresponsemessage/httpresponsemessage-data-type.md)|Represents an HTTP response message.|
+|[HttpResponseMessage](methods-auto/httpresponsemessage/httpresponsemessage-data-type.md)|Represents an HTTP response message.|
 |[JsonArray](methods-auto/jsonarray/jsonarray-data-type.md)|JsonArray is a container for any well-formed JSON array. A default JsonArray contains an empty JSON array.|
 |[JsonObject](methods-auto/jsonobject/jsonobject-data-type.md)|JsonObject object is a container for any well-formed JSON object. A default JsonObject contains an empty JSON object.|
 |[JsonToken](methods-auto/jsontoken/jsontoken-data-type.md)|JsonToken object is a container for any well-formed JSON data. A default JsonToken contains the JSON value of NULL.|
@@ -46,7 +46,8 @@ With the API for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you ha
 
 
 ## See Also
+
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Data Types and Methods in AL](methods-auto/library.md)

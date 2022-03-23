@@ -3,12 +3,11 @@ title: "RecordRef.Find([String]) Method"
 description: "Finds a record in a table based on the values stored in the key fields."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,7 +29,7 @@ Finds a record in a table based on the values stored in the key fields.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *[Optional] Which*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies how to perform the search. The table will be searched until the record is found or there are no more records. Each character in the string can be present only one time. You can use the following characters:
 -   =  search for a record that equals the key values (default)
 -   \>  search for a record that is larger than the key values

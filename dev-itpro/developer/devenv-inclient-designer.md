@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -162,4 +161,4 @@ Accessing Designer is controlled on a user or user group basis by the **D365 EXT
 
 [Developing Extensions](devenv-dev-overview.md)  
 [Getting Started with AL](devenv-get-started.md)  
-[AL Development Reference](devenv-reference-overview.md)
+[AL Development Environment](devenv-reference-overview.md)

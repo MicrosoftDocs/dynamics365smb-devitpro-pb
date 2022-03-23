@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -78,7 +77,7 @@ You can always add more breakpoints while debugging.
 
 ## See Also  
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Debugging](devenv-debugging.md)  
 [Snapshot Debugging](devenv-snapshot-debugging.md)  

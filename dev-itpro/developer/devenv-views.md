@@ -6,7 +6,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -104,7 +103,7 @@ In general, views can in several ways be compared to page customizations. These 
 - It is not possible to create new controls for a page from a view.
 
 ## See Also  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Page Object](devenv-page-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

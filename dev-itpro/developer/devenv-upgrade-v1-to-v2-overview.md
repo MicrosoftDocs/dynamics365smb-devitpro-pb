@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
@@ -141,4 +140,4 @@ The upgrade code unit becomes an integral part of the extension. The **NAVAPP** 
 ## See Also
 [Getting Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
-[AL Development Reference](devenv-reference-overview.md)
+[AL Development Environment](devenv-reference-overview.md)

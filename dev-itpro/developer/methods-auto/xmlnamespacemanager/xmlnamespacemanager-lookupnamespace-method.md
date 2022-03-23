@@ -3,12 +3,11 @@ title: "XmlNamespaceManager.LookupNamespace(String, var Text) Method"
 description: "Gets the namespace URI for the specified prefix."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,9 +29,10 @@ Gets the namespace URI for the specified prefix.
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Prefix*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The prefix whose namespace URI you want to resolve. To match the default namespace, pass an empty string.
         
+
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The namespace URI for prefix.  

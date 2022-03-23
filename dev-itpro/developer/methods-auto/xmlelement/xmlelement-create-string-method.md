@@ -3,12 +3,11 @@ title: "XmlElement.Create(String) Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,7 @@ XmlElement :=   XmlElement.Create(Name: String)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The fully qualified name of the element to create.  
 
 

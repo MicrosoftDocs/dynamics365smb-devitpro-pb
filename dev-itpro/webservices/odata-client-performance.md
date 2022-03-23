@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: kepontop
 ms.date: 12/17/2021
 ---
@@ -22,7 +21,9 @@ By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you ca
 
 ## Using OData transaction `$batch`
 
-Use OData transaction `$batch` requests where relevant. They can reduce the number of requests the client needs to do when errors occur. For more information, see [Tips for working with the APIs - OData transactional $batch requests](../developer/devenv-connect-apps-tips.md#batch).
+Use OData transaction `$batch` requests where relevant. They can reduce the number of requests the client needs to do when errors occur. 
+
+For more information, see [Using OData transactional $batch requests](/dynamics365/business-central/dev-itpro/webservices/use-odata-batch).
 
 ## Limiting the set (`$filter` or `$top`) if you're using an expensive `$expand` statement
 

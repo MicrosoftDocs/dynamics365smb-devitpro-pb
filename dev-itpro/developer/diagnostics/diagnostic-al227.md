@@ -3,7 +3,7 @@ title: "Compiler Error AL0227"
 description: "A key with ID {0} is already defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

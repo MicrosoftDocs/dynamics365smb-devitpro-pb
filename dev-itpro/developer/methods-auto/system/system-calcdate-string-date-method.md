@@ -3,12 +3,11 @@ title: "System.CalcDate(String [, Date]) Method"
 description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,7 +27,7 @@ NewDate :=   System.CalcDate(DateExpression: String [, Date: Date])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *DateExpression*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The date expression can be any length. The string is interpreted from left to right with one subexpression at a time. The following rules describe the valid syntax of date expressions:
 -   DateExpression = [\<Subexpression\>][\<Subexpression\>][\<Subexpression\>]
 -   \<Subexpression\> = [\<Sign\>] \<Term\>-   \<Sign\> = + | -
@@ -42,6 +41,7 @@ These production rules show that date expressions consist of zero, one, two, or 
 -   CW (current week; corresponds to \<Prefix\>\<Unit\>)
 The internal calendar starts on Monday and ends on Sunday. This means that Monday is weekday 1 and Sunday is weekday 7. A run-time error occurs if the syntax of DateExpression is incorrect.
           
+
 *[Optional] Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 Use this optional parameter to define a reference date. The default is the current system date. If you omit this optional value, the current system date is used.  

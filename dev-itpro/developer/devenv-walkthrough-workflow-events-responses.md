@@ -4,10 +4,10 @@ description: Learn how you can extend the native workflows by adding workflow ev
 author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: edupont
-ms.date: 01/19/2022
+ms.date: 02/11/2022
 ---
+
 # Walkthrough: Implementing New Workflow Events and Responses
 
 If a business scenario requires a workflow event or a workflow response that is not supported in a [!INCLUDE [prod_short](includes/prod_short.md)] solution, you must implement it by extending the application code.  
@@ -72,7 +72,7 @@ Each subsection takes you through the discrete steps.
 
 1. Create a new .al file, such as MyWorkflowEvents.codeunit.al, and add a codeunit that will be used for new workflow events. Name it to reflect that it is used to identify the new workflow event, such as `MyWorkflowEvents`.  
 
-2. Add a method in the codeunit. Optionally, use the shortcut `teventint`. Name the method to reflect that it is used to identify the workflow event, such as `MyWorkflowEventCode`, and make it take 128 characters of code as a parameter.  
+2. Add a method in the codeunit. Optionally, use the shortcut `tprocedure`. Name the method to reflect that it is used to identify the workflow event, such as `MyWorkflowEventCode`, and make it take 128 characters of code as a parameter.  
 
 > [!TIP]
 > The terminology can be a bit confusing here. This method is not an *AL event*. It's a method that declares the *workflow event*, and it will subscribe to an *AL event* that, when triggered, will trigger the *workflow event*.
@@ -92,7 +92,7 @@ codeunit 50101 MyWorkflowEvents
 
 1. Create another method in the codeunit. Name it to reflect that it is used to add the workflow event to the library, such as `AddMyWorkflowEventsToLibrary`.  
 
-    This method will subscribe to the `OnAddWorkflowEventsToLibrary` method in the `Workflow Event Handling` codeunit in the base application, so you must set the [EventSubscriber](methods/devenv-eventsubscriber-attribute.md) attribute, and you must add code that handles the event.
+    This method will subscribe to the `OnAddWorkflowEventsToLibrary` method in the `Workflow Event Handling` codeunit in the base application, so you must set the [EventSubscriber](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-eventsubscriber-attribute) attribute, and you must add code that handles the event.
 
 The following code illustrates the new method in the `MyWorkflowEvents` codeunit:
 
@@ -151,7 +151,7 @@ The following code illustrates the new method in the `MyWorkflowEvents` codeunit
 
 ### To subscribe to the event and implement the workflow event  
 
-1. Go back to the MyWorkflowEvents.codeunit.al file file and add another method in the `MyWorkflowEvents` codeunit. Name the new method to reflect that it is used to subscribe to and implement the workflow event, such as `RunWorkflowOnAfterPostPurchaseHeader`.  
+1. Go back to the MyWorkflowEvents.codeunit.al file and add another method in the `MyWorkflowEvents` codeunit. Name the new method to reflect that it is used to subscribe to and implement the workflow event, such as `RunWorkflowOnAfterPostPurchaseHeader`.  
 
 The following code illustrates the new workflow event that subscribes to your previously created event:
 
@@ -469,4 +469,4 @@ You have now enabled a new workflow scenario by implementing the required workfl
 [Codeunit Object](devenv-codeunit-object.md)  
 [Table Object](devenv-table-object.md)  
 [Getting Started with AL](devenv-get-started.md)  
-[Development and Administration for Dynamics 365 Business Central](../index.md)  
+[Development and Administration for Dynamics 365 Business Central](../index.md)

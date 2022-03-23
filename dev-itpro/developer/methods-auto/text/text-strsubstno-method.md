@@ -3,12 +3,11 @@ title: "Text.StrSubstNo(String [, Any,...]) Method"
 description: "Replaces %1, %2, %3..."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,9 +27,10 @@ NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 A string containing '#' and/or '%' fields.
         
+
 *[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 One or more values (expressions) that you want to insert into String. You can specify up to 10 values.  
@@ -38,7 +38,7 @@ One or more values (expressions) that you want to insert into String. You can sp
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 Returns a new string with the provided values inserted into the specified string.
 
 

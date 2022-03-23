@@ -3,12 +3,11 @@ title: "HttpClient.Get(String, var HttpResponseMessage) Method"
 description: "Sends a GET request to get the resource identified by the request URL."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,9 +29,10 @@ Sends a GET request to get the resource identified by the request URL.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The path the request is sent to.
         
+
 *Response*  
 &emsp;Type: [HttpResponseMessage](../httpresponsemessage/httpresponsemessage-data-type.md)  
 The response received from the remote endpoint.  

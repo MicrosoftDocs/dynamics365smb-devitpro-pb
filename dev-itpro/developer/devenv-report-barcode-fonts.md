@@ -8,23 +8,23 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
 # Barcode Fonts with Business Central Online
 
+[!INCLUDE[2021_releasewave1](../includes/2021_releasewave1.md)]
+
 Business Central online includes the following one-dimensional (1D) and two-dimensional (2D) barcode fonts and symbologies from [IDAutomation](https://www.idautomation.com). The fonts have different specifications for characteristics like encode numbers, symbols, uppercase, and lowercase text. Knowing the specifications is useful for calibrating fonts used on report layouts. Barcode symbology is the mapping between data and the barcode image. It defines how to encode the data, including computation of a checksum and required start and stop marker symbol.
 
-> [!NOTE]
-> Two-dimensional (2D) barcode fonts and encoders are only included in version 19.1 and later.
+For information and examples about adding barcodes to reports, see [Adding Barcodes to Reports](devenv-report-add-barcodes.md).
 
 ## One-dimensional barcode fonts
 
 |Font|Symbology|Description|Specifications|
 |----|---------|-----------|---------|
 |Code39|Code39|<ul><li>Variable length</li><li>43 characters, uppercase letters (A through Z), numeric digits (0 through 9), and special characters (-, ., $, /, +, %, and space)</li><li>* is used for both start and stop delimiters. </li><li>Nine elements per character (five bars and four spaces).</li></ul>|[See...](https://www.idautomation.com/barcode-fonts/code-39/fontnames/)|
-|Code_93|Code_39|<ul><li>Primarily by Canada Post to encode delivery information.</li><li>Alphanumeric</li><li>Variable length</li><li>Every symbol includes two check characters.</li><li>Each character is nine modules wide, with three bars and three spaces.</li><li> Each bar and space is from 1 to 4 modules wide.</li></ul> |[See...](https://www.idautomation.com/barcode-fonts/code-39/fontnames/)|
+|Code_93|Code_39|<ul><li>Primarily by Canada Post to encode delivery information.</li><li>Alphanumeric</li><li>Variable length</li><li>Every symbol includes two check characters.</li><li>Each character is nine modules wide, with three bars and three spaces.</li><li> Each bar and space is from 1 to 4 modules wide.</li></ul> |[See...](https://www.idautomation.com/barcode-fonts/code-93/user-manual/)|
 |Codabar|Codabar|<ul><li>Characters 0-9, letters A to D and the following symbols: - $ / +. </li><li>Self-checking, no checksum characters requirement.</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Parentheses ( ) can be used as the start and stop code so letters don't appear readable version of the fonts.</li></ul>|[See...](https://www.idautomation.com/barcode-fonts/codabar/user-manual/)|
 |Code 128|Code 128|<ul><li> High-density linear barcode symbology for alphanumeric or numeric-only barcodes </li><li>Encodes 128 ASCII characters</li><li>Uppercase letters A, B, C, and D are used for start and stop codes.</li><li>Compact barcodes compared to other fonts like Code 39, especially when text is mostly digits</li></ul>|[See...](https://www.idautomation.com/barcode-fonts/code-128/user-manual/)|
 |Interleaved 2 of 5|Interleaved 2 of 5|<ul><li>Continuous two-width barcode symbology encoding digits</li><li>Encodes pairs of digits. The first digit is encoded in the five bars (black lines). The second digit is encoded in the five interleaved spaces (or white lines). </li><li>Two out of five bars or spaces are wide</li></ul>|[See...](https://www.idautomation.com/barcode-fonts/interleaved-2of5/)|
@@ -38,6 +38,9 @@ Business Central online includes the following one-dimensional (1D) and two-dime
 
 ## Two-dimensional barcode fonts
 
+> [!NOTE]
+> Two-dimensional (2D) barcode fonts and encoders are only included in version 19.1 and later.
+
 |Font|Description|Specifications|
 |----|-----------|--------------|
 |Aztec|Area-efficient symbology capable of encoding large amounts of data. Encoded data can include alphabetic characters, numbers, text, and bytes of data, including extended types, Unicode characters, and small pictures.|[See...](https://www.idautomation.com/barcode-fonts/2d/aztec/user-manual/)|
@@ -46,6 +49,14 @@ Business Central online includes the following one-dimensional (1D) and two-dime
 |PDF417|Area-efficient symbology capable of encoding and reading approximately 850 characters. Uses Reed Solomon error correction, which means it can withstand some damage without loss of data. This error correction leads to less read errors then linear barcodes.|[See...](https://www.idautomation.com/barcode-fonts/2d/pdf417/user-manual/)|
 |QR-Code|Generates QR-Code symbols with font encoders and graphic encoders. Support byte, text, and numeric encoding modes.|[See...](https://www.idautomation.com/barcode-fonts/2d/qr-code/user-manual/)
 
+## <a name="font"></a> Font versions and names
+
+A font can consist of several versions to support different requirements for characteristics like width and height, human-readability, and so on. Each font version has a specific name. You use the font name to set up the barcode in a report layout.
+
+IDAutomation also provides evaluation (demo) fonts for trial and test purposes. The evaluation fonts have names that are similar to the purchased fonts. Evaluation fonts typically include an *S* and *Demo* in font name. For example, Code 39 includes a purchased font with the name **IDAutomationHC39M** and an evaluation font with the name **IDAutomationSHC39M Demo**.
+
+When you're applying barocode font in the report layout for a Business Central online production environment, be sure to use the purchased font name; not the evaluation font name. If you use the evaluation font name, the barcode won't render. Refer to font specifications linked above to see a list of purchased font names.
+
 ## See Also
 
 [Adding Barcodes to Reports](devenv-report-add-barcodes.md)  
@@ -53,4 +64,4 @@ Business Central online includes the following one-dimensional (1D) and two-dime
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  

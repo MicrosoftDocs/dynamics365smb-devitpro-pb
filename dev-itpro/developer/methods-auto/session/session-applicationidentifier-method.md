@@ -3,12 +3,11 @@ title: "Session.ApplicationIdentifier() Method"
 description: "Gets the application ID associated with the current thread."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -27,10 +26,9 @@ AppId :=   Session.ApplicationIdentifier()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *AppId*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The application ID associated with the current thread.
 
 

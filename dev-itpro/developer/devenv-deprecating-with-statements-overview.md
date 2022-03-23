@@ -7,7 +7,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 author: esbenk
 ---
 
@@ -258,7 +257,7 @@ It is also possible to use `#pragma` to suppress individual warnings for one or 
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Directives in AL](directives/devenv-directives-in-al.md)  
 [Pragma Directive](directives/devenv-directive-pragma.md)  

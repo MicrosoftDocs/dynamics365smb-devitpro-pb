@@ -3,12 +3,11 @@ title: Table, Table Fields, and Table Extension Properties
 description: This topic lists table properties that apply to feilds of a table object.
 author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 02/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 ms.assetid: cf65e1e0-f696-4aac-afbd-992cd82f98de
 ms.author: solsen
 ---
@@ -41,7 +40,7 @@ This article lists properties that apply to the [table object](../devenv-table-o
 |[DataPerCompany Property](devenv-datapercompany-property.md)||<ul><li>Table object</li></ul>|
 |[DateFormula Property](devenv-dateformula-property.md)||<ul><li>Code</li><li>OemCode field</li><li>OemText field</li><li>Text field</li></ul>|
 |[Description Property](devenv-description-property.md)|X|<ul><li>Table object</li><li>BLOB field</li><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>TableFilter field</li><li>Text field</li><li>Time field</li></ul>|
-|[DrillDownPageID Property](devenv-drilldownpageid-property.md)||<ul><li>Table object</li></ul>|
+|[DrillDownPageID Property](devenv-drilldownpageid-property.md)|X|<ul><li>Table object</li></ul>|
 |[Editable Property](devenv-editable-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[Enabled Property](devenv-enabled-property.md)||<ul><li>BLOB field</li><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>TableFilter field</li><li>Text field</li><li>Time field</li></ul>|
 |[ExtendedDataType Property](devenv-extendeddatatype-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
@@ -52,7 +51,7 @@ This article lists properties that apply to the [table object](../devenv-table-o
 |[InitValue Property](devenv-initvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>|
 |[LinkedInTransaction Property](devenv-linkedintransaction-property.md)||<ul><li>Table object</li></ul>|
 |[LinkedObject Property](devenv-linkedobject-property.md)||<ul><li>Table object</li></ul>|
-|[LookupPageID Property](devenv-lookuppageid-property.md)||<ul><li>Table object</li></ul>|
+|[LookupPageID Property](devenv-lookuppageid-property.md)|X|<ul><li>Table object</li></ul>|
 |[MaxValue Property](devenv-maxvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>|
 |[MinValue Property](devenv-minvalue-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Date field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>Integer field</li><li>Option field</li><li>Time field</li></ul>| 
 |[NotBlank Property](devenv-notblank-property.md)||<ul><li>BigInteger field</li><li>Boolean field</li><li>Code field</li><li>Date field</li><li>DateFormula field</li><li>DateTime field</li><li>Decimal field</li><li>Duration field</li><li>GUID field</li><li>Integer field</li><li>OemCode field</li><li>OemText field</li><li>Option field</li><li>RecordID field</li><li>Text field</li><li>Time field</li></ul>| 

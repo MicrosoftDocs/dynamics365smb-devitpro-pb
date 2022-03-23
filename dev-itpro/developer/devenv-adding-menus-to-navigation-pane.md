@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 # Adding Menus to the Navigation and Actions Area
@@ -162,7 +161,7 @@ addlast(Reporting)
   
 
 ## See Also
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Pages and Reports to Tell Me](devenv-al-menusuite-functionality.md)  

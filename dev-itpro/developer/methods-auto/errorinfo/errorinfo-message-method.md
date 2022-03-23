@@ -3,12 +3,11 @@ title: "ErrorInfo.Message([String]) Method"
 description: "Specifies the message that will be sent to telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/24/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,13 +31,13 @@ Specifies the message that will be sent to telemetry. For a 'Client' error type,
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.  
 
 *[Optional] Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The message of the ErrorInfo  
 
 
 ## Return Value
 *[Optional] Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The current message of the ErrorInfo.
 
 

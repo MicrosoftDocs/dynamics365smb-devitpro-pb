@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -99,5 +98,5 @@ The `BCContainerHelper` module also allows you to add the `-includeCSide` switch
 [Getting Started with AL](devenv-get-started.md)  
 [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  

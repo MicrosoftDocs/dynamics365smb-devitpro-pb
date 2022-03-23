@@ -8,7 +8,6 @@ ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: mikebc
 ---
 # Page Parts Overview
@@ -89,7 +88,7 @@ Like other page types, you can design a part page to use one or more page backgr
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [FactBoxes](devenv-adding-a-factbox-to-page.md)  
 [Headlines](devenv-create-role-center-headline.md)  

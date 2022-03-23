@@ -3,12 +3,11 @@ title: "Database.UnregisterTableConnection(TableConnectionType, String) Method"
 description: "Unregisters a table connection to an external database."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,8 +30,9 @@ Unregisters a table connection to an external database.
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
 Specifies the type of table connection as defined in the TableType property. If the table is of type ExternalSQL, UNREGISTERTABLECONNECTION rolls back the current transaction.
         
+
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies the name of the connection in your code, or the name of the primary key field on the table.  
 
 

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -122,7 +121,7 @@ For more examples, see [https://stackoverflow.com/questions/3143324/what-are-bes
 
 ## See Also  
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [Microsoft Writing Style Guide](/style-guide/welcome/)  

@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 04/01/2021
 ---
@@ -16,6 +15,8 @@ ms.date: 04/01/2021
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports three types of web services: API, SOAP, and OData. Web services are a lightweight, industry-standard way to make application functionality available to various external systems and users. Developers can create and publish functionality as web services, where they expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit. When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] objects are published as web services, they're immediately available on the network.  
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are stateless and don't preserve the values of global variables or single-instance codeunits between calls.  
+
+[!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
 
 ## Web Service Telemetry
 All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.

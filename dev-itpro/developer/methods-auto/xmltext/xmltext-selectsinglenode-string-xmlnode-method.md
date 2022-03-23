@@ -3,12 +3,11 @@ title: "XmlText.SelectSingleNode(String, var XmlNode) Method"
 description: "Selects the first XmlNode that matches the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,9 +29,10 @@ Selects the first XmlNode that matches the XPath expression.
 An instance of the [XmlText](xmltext-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The XPath expression.
         
+
 *Node*  
 &emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)  
 The first XmlNode that matches the XPath query.  

@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 author: jswymer
 ---
@@ -163,5 +162,5 @@ query 50102 "Top Customer Overview"
 [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)  
 [Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  

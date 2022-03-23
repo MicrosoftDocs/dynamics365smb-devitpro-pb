@@ -3,12 +3,11 @@ title: "XmlElement.Create(String, String, Any,...) Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,13 +25,15 @@ XmlElement :=   XmlElement.Create(LocalName: String, NamespaceUri: String, Conte
 ```
 ## Parameters
 *LocalName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The local name of the element to create.
         
+
 *NamespaceUri*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The namespace URI of the element to create.
         
+
 *Content*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The content to add to the element to create.  

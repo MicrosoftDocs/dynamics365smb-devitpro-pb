@@ -3,7 +3,7 @@ title: "Report.WordXmlPart([Boolean]) Method"
 description: "Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,7 @@ If you omit this parameter or set it to false, then the element attributes are n
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string representation of the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading the Data to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]: Single-Tenant Deployment
 

@@ -3,7 +3,7 @@ title: "Report.ShowOutput() Method"
 description: "Returns the current setting of whether a section should be printed, and changes this setting."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,6 @@ Returns the current setting of whether a section should be printed, and changes 
 ```AL
 Show :=   Report.ShowOutput()
 ```
-
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  

@@ -3,12 +3,11 @@ title: "XmlNamespaceManager.HasNamespace(String) Method"
 description: "Gets a value indicating whether the supplied prefix has a namespace defined for the current scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,7 +29,7 @@ HasNamespace :=   XmlNamespaceManager.HasNamespace(Prefix: String)
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Prefix*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The prefix of the namespace you want to find.  
 
 

@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 11/30/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -70,7 +69,7 @@ page 50120 MyCustomerApi
 
 ## See Also  
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  
 [Developing a Custom API](devenv-develop-custom-api.md)  
 [Page Extension Object](devenv-page-ext-object.md)  

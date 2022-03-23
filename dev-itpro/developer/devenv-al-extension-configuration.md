@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -46,7 +45,7 @@ The following table describes the user and workspace settings for the AL Languag
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Debugging in AL](devenv-debugging.md)  
 [JSON Files](devenv-json-files.md)  
 [Working with multiple projects and project references](devenv-work-workspace-projects-references.md)  

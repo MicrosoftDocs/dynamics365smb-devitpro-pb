@@ -3,12 +3,11 @@ title: "FieldRef.OptionMembers() Method"
 description: "Gets the list of options that are available in the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,6 @@ OptionMembers :=   FieldRef.OptionMembers()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
@@ -34,7 +32,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
 *OptionMembers*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 
 
 

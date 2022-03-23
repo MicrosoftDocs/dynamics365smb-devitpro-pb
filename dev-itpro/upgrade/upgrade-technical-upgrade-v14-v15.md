@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade to [!INCLUDE[prolong](../developer/includes/prod_long.md)] 2019 Wave 2
 
@@ -138,6 +137,8 @@ This task runs a technical upgrade on the application database. A technical upgr
 
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15.0 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
     ```powershell

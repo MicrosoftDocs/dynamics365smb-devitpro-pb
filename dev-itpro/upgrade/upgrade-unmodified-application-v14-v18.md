@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading Unmodified C/AL Application to Version 18
 
@@ -101,6 +100,9 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 4. Uninstall all extensions from the old tenants.
 
     In this step, you uninstall any extensions that are currently installed on the database.

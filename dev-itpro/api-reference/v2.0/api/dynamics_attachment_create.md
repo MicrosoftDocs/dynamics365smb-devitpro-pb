@@ -2,12 +2,11 @@
 title: Create attachment  
 description: Creates a attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 02/01/2022
 ms.author: solsen
 ---
 
@@ -43,15 +42,14 @@ If successful, this method returns ```201 Created``` response code and a **attac
 
 Here is an example of a request.
 
-```json
-POST https://{businesscentralPrefix}/api/v1.0/companies({id})/attachments
 Content-type: application/json
 ```json
 {
-	"parentId" : "0a077d18-45e3-ea11-bb43-000d3a2feca1",
-	"fileName": "myPDF.pdf"
+    "parentId" : "0a077d18-45e3-ea11-bb43-000d3a2feca1",
+    "fileName": "myPDF.pdf",
+    "parentType": "Journal"
 }
-```
+
 ParentId is the Id of the entity, for which an attachment is being created.
 
 **Response**

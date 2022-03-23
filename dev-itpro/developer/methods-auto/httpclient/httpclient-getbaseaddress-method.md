@@ -3,12 +3,11 @@ title: "HttpClient.GetBaseAddress() Method"
 description: "Gets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,6 @@ CurrentBaseAddress :=   HttpClient.GetBaseAddress()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *HttpClient*  
 &emsp;Type: [HttpClient](httpclient-data-type.md)  
@@ -34,7 +32,7 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 ## Return Value
 *CurrentBaseAddress*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The base address of URI of the Internet resource used when sending requests.
 
 

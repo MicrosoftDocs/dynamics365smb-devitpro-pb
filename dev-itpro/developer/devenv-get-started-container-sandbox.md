@@ -3,10 +3,8 @@ title: "Get started with the Container Sandbox Development Environment"
 description: "Overview of the getting started with the container-based development."
 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.custom: intro-internal
 ---
@@ -150,4 +148,4 @@ Creating Desktop Shortcuts for MyBCapp2
 [Running a Container-Based Development Environment](devenv-running-container-development.md)  
 [Working with Sandboxes and Entitlements](devenv-work-sandbox-entitlements.md)  
 [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  

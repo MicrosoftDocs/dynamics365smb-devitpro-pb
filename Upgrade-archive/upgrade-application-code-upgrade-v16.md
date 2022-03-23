@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ROBOTS: NOINDEX
 ---
 # Application Code Upgrade for [!INCLUDE[prodlong](../developer/includes/prodlong.md)] 2020 Release Wave 1

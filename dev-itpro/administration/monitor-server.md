@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Monitoring Business Central Server
 These articles describe the features for monitoring and troubleshooting [!INCLUDE[server](../developer/includes/server.md)].  

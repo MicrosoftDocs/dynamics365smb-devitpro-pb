@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -207,4 +206,4 @@ codeunit 50111 MyCodeunit
 
 [Write and WriteText Methods](methods-auto/outstream/outstream-data-type.md)  
 [Read and ReadText Methods](methods-auto/instream/instream-data-type.md)  
-[AL Development Reference](devenv-reference-overview.md)    
+[AL Development Environment](devenv-reference-overview.md)    

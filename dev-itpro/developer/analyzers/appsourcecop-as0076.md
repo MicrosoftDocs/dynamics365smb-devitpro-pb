@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -22,7 +21,7 @@ Obsolete Tag must have a specific format.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-The ObsoleteTag [property](../properties/devenv-obsoletetag-property.md) and [attribute parameter](../methods/devenv-obsolete-attribute.md) values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify them using a Regex expression.
+The ObsoleteTag [property](../properties/devenv-obsoletetag-property.md) and [attribute parameter](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute) values are not validated by the AL compiler. However it is possible to setup the AppSourceCop to verify them using a Regex expression.
 
 ## Setting up AppSourceCop to validate the Obsolete Tag
 
@@ -111,4 +110,4 @@ codeunit 50100 MyCodeunit
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

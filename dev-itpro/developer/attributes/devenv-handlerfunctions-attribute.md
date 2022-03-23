@@ -3,7 +3,7 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -72,4 +72,4 @@ end
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Developing Extensions](../devenv-dev-overview.md)

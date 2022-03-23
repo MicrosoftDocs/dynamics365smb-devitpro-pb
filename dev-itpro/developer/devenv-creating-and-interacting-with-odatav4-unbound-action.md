@@ -8,7 +8,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: vlnagorn
 ---
 
@@ -92,7 +91,7 @@ HTTP/1.1 200 OK
 ```
 
 ## See Also
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Creating and Interacting with an OData V4 Bound Action](devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  

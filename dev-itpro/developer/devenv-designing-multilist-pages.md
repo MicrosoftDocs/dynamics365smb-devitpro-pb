@@ -8,7 +8,6 @@ ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: mikebc
 ---
 # Designing pages having multiple lists.
@@ -17,7 +16,7 @@ ms.author: mikebc
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Page Types and Layouts](devenv-page-types-and-layouts.md)  
 [Page Parts Overview](devenv-designing-parts.md)
 [Designing ListParts](devenv-designing-listparts.md)

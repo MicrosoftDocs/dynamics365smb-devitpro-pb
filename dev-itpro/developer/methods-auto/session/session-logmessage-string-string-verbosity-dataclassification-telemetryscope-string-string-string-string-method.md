@@ -3,12 +3,11 @@ title: "Session.LogMessage(String, String, Verbosity, DataClassification, Teleme
 description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,33 +27,41 @@ Logs a trace message to a telemetry account.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *EventId*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The event ID of trace message.   
+
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The message logged into telemetry.   
+
 *Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
 The verbosity of the log.   
+
 *DataClassification*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 Classification of data in message.   
+
 *TelemetryScope*  
 &emsp;Type: [TelemetryScope](../telemetryscope/telemetryscope-option.md)  
 Specifies the scope of this trace message:
 - ExtensionPublisher: Will emit this trace message to the Extension Publisher's telemetry account.
 - All: Will emit this trace message additionally to the Partner's telemetry account.   
+
 *Dimension1*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
+
 *Value1*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The value of Dimension1.   
+
 *[Optional] Dimension2*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
+
 *[Optional] Value2*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The value of Dimension2.   
 
 

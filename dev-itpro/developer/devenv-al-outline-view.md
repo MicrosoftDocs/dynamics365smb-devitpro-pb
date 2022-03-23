@@ -6,7 +6,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -26,5 +25,5 @@ You manage the look and feel of the **Outline** view by defining a number of set
 + `outline.problems.colors` - Colors used for errors and warnings
 
 ## See Also
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [AL Formatter](devenv-al-formatter.md)  

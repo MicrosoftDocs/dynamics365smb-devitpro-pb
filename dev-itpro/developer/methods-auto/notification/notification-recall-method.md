@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -52,7 +51,7 @@ The following code creates a notification and sends it if NewBalance is greater 
 ```al
 MyNotification.ID := '00000000-0000-0000-0000-000000000001';
 IF NewBalance > Rec. "Credit Limit" then begin
-  MyNotification.Message := 'The customer's current balance exceeds their credit limit.';
+  MyNotification.Message := 'The customer''s current balance exceeds their credit limit.';
   MyNotification.Scope := NotificationScope::LocalScope;
   MyNotification.AddAction('Fix it.', 50001, 'FixCustomerCreditLimit');
   MyNotification.SetData('CustomerNo.', Rec."No.");

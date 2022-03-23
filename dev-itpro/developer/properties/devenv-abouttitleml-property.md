@@ -3,7 +3,7 @@ title: "AboutTitleML Property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,8 @@ AboutTitleML = ENU = 'About sales invoices', DAN = 'Om salgsfakturaer';
 
 ## Remarks
 
-For more information, see the [AboutTitle Property](devenv-abouttitle-property.md).
+For more information, see the [AboutTitle Property](devenv-abouttitle-property.md). 
+For more information about designing teaching tips and tours, see [Teaching tips and in-app tours for onboarding users](../../administration/onboarding-teaching-tips-tours.md).
 
 ## See Also
 

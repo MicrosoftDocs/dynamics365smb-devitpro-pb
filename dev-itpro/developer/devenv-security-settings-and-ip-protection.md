@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -145,5 +144,5 @@ Specifying the `applicationInsightsConnectionString` setting for your extension,
 ## See Also
 
 [JSON Files](devenv-json-files.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md)  

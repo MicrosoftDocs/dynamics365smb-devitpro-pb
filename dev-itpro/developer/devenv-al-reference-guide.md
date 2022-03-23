@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 
 # AL Reference Guide
@@ -33,5 +32,5 @@ For more information about the [!INCLUDE[d365_dev_long_md](includes/d365_dev_lon
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [AL Methods Overview](devenv-al-methods.md)  

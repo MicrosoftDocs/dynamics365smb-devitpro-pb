@@ -3,12 +3,11 @@ title: "System.ExportEncryptionKey(String) Method"
 description: "Returns a password protected temporary filepath containing the encryption key."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,13 +29,13 @@ Path :=   System.ExportEncryptionKey(Password: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Password*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies the password for the encryption key file.  
 
 
 ## Return Value
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A temporary filepath to where the key is exported.
 
 

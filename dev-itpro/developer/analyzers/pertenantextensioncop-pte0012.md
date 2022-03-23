@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -22,7 +21,8 @@ The InternalsVisibleTo setting will expose your internal objects to any extensio
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-For more information, see [JSON Files](../devenv-json-files.md).
+## Remarks
+For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0081](appsourcecop-as0081.md).
 
 ## See Also
 

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
 caps.latest.revision: 18
@@ -47,5 +46,5 @@ codeunit 50113 CreateCustomer
 [Developing Extensions](devenv-dev-overview.md)  
 [Table Extension Object](devenv-table-ext-object.md)  
 [Page Extension Object](devenv-page-ext-object.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [XML Comments in Code](devenv-xml-comments.md)

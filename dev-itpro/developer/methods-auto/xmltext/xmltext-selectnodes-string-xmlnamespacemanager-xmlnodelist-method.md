@@ -3,12 +3,11 @@ title: "XmlText.SelectNodes(String, XmlNamespaceManager, var XmlNodeList) Method
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,13 +29,15 @@ Selects a list of nodes matching the XPath expression.
 An instance of the [XmlText](xmltext-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The XPath expression.
         
+
 *NamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](../xmlnamespacemanager/xmlnamespacemanager-data-type.md)  
 An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.
         
+
 *NodeList*  
 &emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)  
 An XmlNodeList containing a collection of nodes matching the XPath expression.  

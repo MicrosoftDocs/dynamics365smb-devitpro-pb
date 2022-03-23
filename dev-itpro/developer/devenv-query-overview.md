@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
@@ -68,5 +67,5 @@ end;
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
 [Query Properties](properties/devenv-query-properties.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

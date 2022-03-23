@@ -5,7 +5,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -68,7 +67,7 @@ query 20000 "APIV1 - Customer Sales"
 ```
 
 ## See Also
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [API Page Type](devenv-api-pagetype.md)  
 [APIPublisher Property](properties/devenv-apipublisher-query-property.md)  
 [APIGroup Property](properties/devenv-apigroup-query-property.md)  

@@ -8,7 +8,6 @@ ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.date: 09/28/2021
 ---
 # Setting up the Business Central Add-in for Excel in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises

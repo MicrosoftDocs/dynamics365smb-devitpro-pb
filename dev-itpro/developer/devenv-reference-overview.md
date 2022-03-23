@@ -1,5 +1,5 @@
 ---
-title: "AL Development Reference"
+title: "AL Development Environment"
 description: "Overview of the objects in the AL Language development environment."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -8,11 +8,10 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# AL Development Reference
+# AL Development Environment
 
 This section describes all of the objects that are available with the AL Language development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 

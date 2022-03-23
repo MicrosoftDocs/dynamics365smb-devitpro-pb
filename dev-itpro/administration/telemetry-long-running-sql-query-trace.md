@@ -2,7 +2,6 @@
 title: Analyzing Long Running Operation (SQL Query) Telemetry
 description: Learn about analyzing long running operation (SQL Query) in Business Central.  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -14,7 +13,7 @@ ms.author: jswymer
 
 # Analyzing Long Running Operation (SQL Query) Telemetry
 
-Any SQL query that takes longer than 1000 milliseconds to execute will be sent to your Azure Application Insights resource. This enables you to focus on tuning SQL queries that take too long to execute (maybe one or more tables miss an index or maybe some filters are missing). It also reduces the ingestion of data into the Azure Application Insights resource to save cost of having telemetry.
+Any SQL query that takes longer than 750 milliseconds to execute will be sent to your Azure Application Insights resource. This enables you to focus on tuning SQL queries that take too long to execute (maybe one or more tables miss an index or maybe some filters are missing). It also reduces the ingestion of data into the Azure Application Insights resource to save cost of having telemetry.
 
 If you want to capture all SQL queries for a short period of time for a given session, you can enable **Additional logging** from the **Help & Support** page. This lets you analyze queries that take a short time to run but happen very frequently. For Business Central online, additional logging is available on production environments running version 17.4 or later. For Business Central on-premises, additional logging is available on environments running version 18.6 or later.
 

@@ -3,7 +3,7 @@ title: "Report.WordXmlPart(Integer [, Boolean]) Method"
 description: "Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ String :=   Report.WordXmlPart(Number: Integer [, ExtendedFormat: Boolean])
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
         
+
 *[Optional] ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 If you set this variable to true, then XML elements will include the following attributes:
@@ -43,7 +44,7 @@ The following example illustrates the same XML with the ExtendedFormat set to fa
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

@@ -3,12 +3,11 @@ title: "Text.StrCheckSum(String [, String] [, Integer]) Method"
 description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,13 +27,15 @@ CheckNumber :=   Text.StrCheckSum(String: String [, WeightString: String] [, Mod
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 This string contains the number for which you want to calculate a checksum. You can only enter the numeric characters 0-9 in this string. If you enter anything else, a run-time error will occur. If String is empty, 0 is returned.
         
+
 *[Optional] WeightString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.
         
+
 *[Optional] Modulus*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number that you want to use in the checksum formula. The default value is 10.  

@@ -3,12 +3,11 @@ title: "Session.SetDocumentServiceToken(String) Method"
 description: "Sets the document service token in the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,7 +27,7 @@ Sets the document service token in the current session.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Token*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The access token.  
 
 

@@ -3,12 +3,11 @@ title: "XmlAttributeCollection.Remove(String, String) Method"
 description: "Removes the specified attribute from the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,11 +29,12 @@ Removes the specified attribute from the collection.
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *LocalName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The local name of the attribute to remove.
         
+
 *NamespaceUri*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The namespace URI of the attribute to remove.  
 
 

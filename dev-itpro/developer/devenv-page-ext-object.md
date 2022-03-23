@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -260,4 +259,4 @@ pageextension 50114 AddCustomerReport extends "Customer List"
 [Page, Page Fields, and Page Extension Properties](properties/devenv-page-property-overview.md)  
 [Extending Pages Previously Based on the Date Virtual Table](devenv-extend-pages-based-on-date-virtual-table.md)
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  

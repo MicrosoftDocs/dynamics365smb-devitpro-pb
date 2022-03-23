@@ -3,12 +3,11 @@ title: "XmlNamespaceManager.AddNamespace(String, String) Method"
 description: "Adds the given namespace to the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,11 +29,12 @@ Adds the given namespace to the collection.
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Prefix*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The prefix to associate with the namespace being added. Use an empty string to add a default namespace.
         
+
 *Uri*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The namespace to add.  
 
 

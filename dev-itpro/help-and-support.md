@@ -4,7 +4,6 @@ description: Learn about resources for support and product Help for Business Cen
 author: edupont04
 ms.reviewer: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: edupont
 ms.date: 10/01/2021
 ---

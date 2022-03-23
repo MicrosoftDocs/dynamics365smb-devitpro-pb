@@ -3,12 +3,11 @@ title: "Record.Find([String]) Method"
 description: "Finds a record in a table that is based on the values stored in keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,7 +29,7 @@ Finds a record in a table that is based on the values stored in keys.
 An instance of the [Record](record-data-type.md) data type.  
 
 *[Optional] Which*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies how to perform the search. The table is searched until either a record  is found or there are no more records. Each character in this string can be present only one time. You can combine the '=', '\<', and '\>' characters. You can use the following characters:
 -   =  to search for a record that equals the key values (default)
 -  \>  to search for a record that is larger than the key values

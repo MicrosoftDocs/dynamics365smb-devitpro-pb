@@ -3,7 +3,6 @@ title: Automation API Overview | Microsoft Docs
 description: Overview of the API available for automation in Dynamics 365 Business Central.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na

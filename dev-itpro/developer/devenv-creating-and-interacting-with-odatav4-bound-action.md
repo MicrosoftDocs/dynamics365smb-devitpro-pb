@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -117,7 +116,7 @@ POST /ODataV4/Company({companyName})/SalesInvoiceCopy({id})/NAV.Copy
 
 
 ## See Also
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
 [Devoloping for Multiple Platform Versions](devenv-developing-for-multiple-platform-versions.md)  
 [Exporting Permission Sets](devenv-export-permission-sets.md)  

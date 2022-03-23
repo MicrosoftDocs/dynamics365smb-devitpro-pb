@@ -6,7 +6,6 @@ author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 08/26/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -68,6 +67,6 @@ If you, during development, for example, discover that you no longer want field 
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Upgrading Extensions](devenv-upgrading-extensions.md)  
 [Debugging](devenv-debugging.md)  

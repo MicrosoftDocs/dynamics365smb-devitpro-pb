@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -31,7 +30,7 @@ For a report to be extended, the `Extensible` property must be set to `true`. Th
 
 ## Report extension layout
 
-A report extension can have only one layout defined, this means one RDL report layout and/or one Word layout. The report layout of an existing report cannot be extended, only substituted. To use an existing report as a starting point, you can download the layout from [!INCLUDE [prod_short](../includes/prod_short.md)] and include it in the extension project. 
+From [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1, report extensions can have one or more layouts defined. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md). The report layout of an existing report cannot be extended, only substituted. To use an existing report as a starting point, you can download the layout from [!INCLUDE [prod_short](../includes/prod_short.md)] and include it in the extension project. 
 
 Layouts that are included in a report extension will show up in [!INCLUDE [prod_short](../includes/prod_short.md)] as built-in layouts. The layout in a report extension will **not automatically** be used when the report extension is deployed. To use the report extension layout, go to the **Report Layout Selection** page in [!INCLUDE [prod_short](../includes/prod_short.md)], make sure to choose to use a *built-in* layout in the **Selected layout** field, and then choose the layout for the report in question from the **Custom Layout Description** drop-down box.
 
@@ -136,7 +135,7 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 [Page Extension Object](devenv-page-ext-object.md)  
 [Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [OnPostReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)  
 [OnPreReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)  
 [OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafteraftergetrecord-reportextensiondatasetmodify-trigger.md)  

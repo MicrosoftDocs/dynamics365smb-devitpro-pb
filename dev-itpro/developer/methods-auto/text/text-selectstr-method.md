@@ -3,12 +3,11 @@ title: "Text.SelectStr(Integer, String) Method"
 description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,14 +30,15 @@ NewString :=   Text.SelectStr(Number: Integer, CommaString: String)
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies which substring to retrieve. The substrings in the comma-separated string are numbered 1, 2, 3, and so on. If Number is greater than the actual number of substrings, then a run-time error occurs.
         
+
 *CommaString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 A string that contains substrings separated by commas. The maximum length of this string is 391 characters.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](text-data-type.md)  
 The substring from the comma-separated string at the index specified.
 
 

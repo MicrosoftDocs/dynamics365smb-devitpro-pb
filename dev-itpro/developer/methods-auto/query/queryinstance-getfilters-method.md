@@ -3,12 +3,11 @@ title: "Query.GetFilters() Method"
 description: "Returns the filters that are applied to all columns in the query."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,6 @@ Filter :=   Query.GetFilters()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  
@@ -34,7 +32,7 @@ An instance of the [Query](query-data-type.md) data type.
 
 ## Return Value
 *Filter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 All filters of the query
 
 

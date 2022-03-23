@@ -3,12 +3,11 @@ title: "XmlDocument.ReadFrom(String, XmlReadOptions, var XmlDocument) Method"
 description: "Reads and parses the XML document from the given data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,13 +25,15 @@ Reads and parses the XML document from the given data source.
 ```
 ## Parameters
 *Text*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string containing an XML document.
         
+
 *ReadOptions*  
 &emsp;Type: [XmlReadOptions](../xmlreadoptions/xmlreadoptions-data-type.md)  
 Specifies options for customizing how the document is parsed.
         
+
 *Result*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 The XmlDocument parsed from the given data source.  

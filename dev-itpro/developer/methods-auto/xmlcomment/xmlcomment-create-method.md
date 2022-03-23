@@ -3,12 +3,11 @@ title: "XmlComment.Create(String) Method"
 description: "Creates an XmlComment node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,7 @@ Comment :=   XmlComment.Create(Value: String)
 ```
 ## Parameters
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string that contains the contents of the new XmlComment node.  
 
 

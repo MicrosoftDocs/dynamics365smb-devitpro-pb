@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -89,7 +88,7 @@ tableextension 50115 RetailWinterSportsStore extends Customer
 
 ## See Also
 
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Table Overview](devenv-tables-overview.md)  
 [Table Object](devenv-table-object.md)  
 [Table, Table Fields, and Table Extension Properties](properties/devenv-table-properties.md)  

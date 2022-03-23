@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -58,7 +57,7 @@ pagecustomization MyCustomization customizes "Customer List"
 ```
 
 ## See Also  
-[AL Development Reference](devenv-reference-overview.md)  
+[AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [Page Customization Object](devenv-page-customization-object.md)

@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -25,7 +24,7 @@ Reports can also be used to process data without printing or displaying content.
 
 ## Creating reports
 
-Creating a report involves two primary tasks. First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. After the dataset has been designed, you design the visual layout of the report. There are two types of report layouts that you can create: layouts using report definition language (RDL) and Word report layouts. Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new dataitems, adding to the request page, or adding a new layout.
+Creating a report involves two primary tasks. First, you create a report object and design the dataset. The dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. After the dataset has been designed, you design the visual layout of the report. There are three types of report layouts that you can create: layouts using report definition language (RDL), Word report layouts, and Excel report layouts. Another option is to extend the functionality of an existing report with a [Report Extension Object](devenv-report-ext-object.md) by adding columns to the existing report dataset, adding new data items, adding to the request page, or adding a new layout.
 
 ## Getting started
 
@@ -39,7 +38,9 @@ The following table includes links to help you get started with designing the re
 |Understanding the data model and dataset of a report|[Defining a Report Dataset](devenv-report-dataset.md)|  
 |Learn how to create a report using a Word layout|[Creating a Word Layout Report](devenv-howto-report-layout.md)| 
 |Learn how to create a report using an RDL layout report.|[Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)|
- 
+|Learn about creating a report based on an Excel layout.|[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)|
+|Learn how to create a report using a customer defined layout type.|[Creating a custom Layout Report](devenv-report-custom-render.md)|
+|Learn how to define multiple report layouts for one report.|[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)|
 
 ## See Also
 
@@ -48,4 +49,7 @@ The following table includes links to help you get started with designing the re
 [Creating a Report](devenv-howto-report-layout.md)  
 [Request Pages](devenv-request-pages.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
+[Creating a Word Layout Report](devenv-howto-report-layout.md)  
+[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  
+[Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
 [Utilizing Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md)  

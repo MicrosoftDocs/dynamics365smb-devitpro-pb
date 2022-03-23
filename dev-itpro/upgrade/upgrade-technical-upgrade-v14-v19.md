@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Technical Upgrade From Version 14 to Version 19
 
@@ -108,7 +107,9 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 3. Uninstall all extensions from the old tenants.
 
-    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
+    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14.0 as an administrator. [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+    
+    Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
     ```powershell 
     Get-NAVAppInfo -ServerInstance <BC14 server instance> -Tenant <tenant ID> | % { Uninstall-NAVApp -ServerInstance <BC14 server instance> -Name $_.Name -Version $_.Version -Tenant <tenant ID>}
@@ -155,6 +156,8 @@ This task runs a technical upgrade on the application database. A technical upgr
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 19.0 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
 3. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion:
 
