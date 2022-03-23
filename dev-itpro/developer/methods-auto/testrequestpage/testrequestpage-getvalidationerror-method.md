@@ -3,7 +3,7 @@ title: "TestRequestPage.GetValidationError([Integer]) Method"
 description: "Gets the validation error that occurred on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The index of the validation error that occurred on the test page.
 
 ## Return Value
 *Error*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The validation error that occured at the specified index.
 
 

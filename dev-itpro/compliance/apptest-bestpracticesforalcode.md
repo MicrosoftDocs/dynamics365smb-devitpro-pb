@@ -133,14 +133,14 @@ page 123 PageName
     }
 
     var
-        tempCustomer: Record Customer temporary;
+        TempCustomer: Record Customer temporary;
 
     [EventSubscriber(ObjectType::Page, Page::"Item Card", 'OnAfterGetCurrRecordEvent', '', false, false)]
     local procedure OnOpenItemCard(var rec: Record Item)
     var
-        onRecord: Option " ", Item, Contact;
+        OnRecord: Option " ", Item, Contact;
     begin
-        EnablePictureAnalyzerNotification(rec."No.", onRecord::Item);
+        EnablePictureAnalyzerNotification(rec."No.", OnRecord::Item);
     end;
 }
 
@@ -187,7 +187,7 @@ In AL, objects are referenced by their object name, not by their ID.
 Page.RunModal(Page::"Customer Card", ...)
  
 var
-    customer: Record Customer;
+    Customer: Record Customer;
 ```
 
 ## Variable and field naming 
@@ -208,8 +208,8 @@ Furthermore:
 ### Example
 
 ```
-tempCustomer: Record Customer temporary;
-vendor: Record Vendor; 
+TempCustomer: Record Customer temporary;
+Vendor: Record Vendor; 
 ```
 
 ## Method declaration 
@@ -254,7 +254,7 @@ When declaring a variable or a parameter, the name of that variable or parameter
 
 ```
 var
-    number: Integer;
+    Number: Integer;
 
 local procedure MyProcedure(a: Integer; b: Integer): Integer 
 ```

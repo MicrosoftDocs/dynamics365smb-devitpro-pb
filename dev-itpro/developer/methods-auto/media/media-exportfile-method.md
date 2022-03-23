@@ -3,7 +3,7 @@ title: "Media.ExportFile(String) Method"
 description: "Exports the media object (such as an image) that is currently used on record to a file on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Exports the media object (such as an image) that is currently used on record to 
 An instance of the [Media](media-data-type.md) data type.  
 
 *Filename*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies the full path and name of the file to create for the exported media.  
 
 
