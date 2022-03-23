@@ -3,7 +3,7 @@ title: "XmlProcessingInstruction.Create(String, String) Method"
 description: "Creates an XmlProcessingInstruction node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,11 +25,12 @@ XmlProcessingInstruction :=   XmlProcessingInstruction.Create(Target: String, Da
 ```
 ## Parameters
 *Target*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The target of the processing instruction.
         
+
 *Data*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The content of the processing instruction, excluding the target.  
 
 

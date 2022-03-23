@@ -28,7 +28,15 @@ On 31 March 2025, technical support for instrumentation key–based global inges
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
-### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API 
+### WS-Federation with Azure Active Directory authentication
+
+The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation. For more information, see [Moving from WS-Federation to OpenID Connect](../administration/authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).|
+
+### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API
 The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
@@ -37,6 +45,7 @@ The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD
 
 
 ### Business Central Server Administration tool (Removal)
+
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
 |Removed or Replaced? |Why?|

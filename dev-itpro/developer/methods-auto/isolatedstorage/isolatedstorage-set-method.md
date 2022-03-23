@@ -3,7 +3,7 @@ title: "IsolatedStorage.Set(String, String [, DataScope]) Method"
 description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,13 +25,15 @@ Sets the value associated with the specified key.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The key of the value to set.
         
+
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The value that will be associated with the specified key.
         
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the stored data. If a value is not passed in, the default value DataScope::Module will be used.  
