@@ -40,6 +40,4 @@ to:
 
 ## See Also
 
-[Isolated Events](devenv-events-isolated.md)
-[Checklist for Submitting Your App](../developer/devenv-checklist-submission.md)  
-[Rules and Guidelines for AL Code](apptest-overview.md)  
+[Isolated Events](devenv-events-isolated.md)  
