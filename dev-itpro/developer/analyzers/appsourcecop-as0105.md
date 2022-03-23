@@ -29,6 +29,8 @@ If the tag is set to, for example, `'18.0'`, the code will still be present in v
 
 This rule helps you validate early if your app is ready for a given release of Business Central without relying on Microsoft to actually remove the code.
 
+Fore more information about deprecating code, see [Microsoft Timeline for Deprecating Code in Business Central](../devenv-deprecation-timeline.md).
+
 ## How to enable the validation?
 
 By setting the `obsoleteTagMinAllowedMajorMinor` in the AppSourceCop.json, you can validate that your extension does not reference any objects that are pending obsoletion with an obsolete tag lower than the version you have specified.
@@ -47,9 +49,9 @@ For example:
 
 ## How to fix this diagnostic?
 
-If you do not want to validate that your app is not referencing obsolete objects with obsolete tags lower than a given version, remove the property `obsoleteTagMinAllowedMajorMinor` in the AppSourceCop.json file.
+If you do not want to validate if your app is referencing obsolete objects with obsolete tags lower than a given version, remove the property `obsoleteTagMinAllowedMajorMinor` in the AppSourceCop.json file.
 
-If you do not want to validate that your app is not referencing obsolete objects with obsolete tags lower than a given version, remove the references to obsolete code following the instructions in the [ObsoleteReason Property](../properties/devenv-obsoletereason-property.md).
+If you want to validate if your app is referencing obsolete objects with obsolete tags lower than a given version, remove the references to obsolete code following the instructions in the obsolete reason.
 
 ## Code examples
 
