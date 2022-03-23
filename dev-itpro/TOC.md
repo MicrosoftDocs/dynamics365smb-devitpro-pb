@@ -208,6 +208,7 @@
 #### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
 #### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
+#### [Database Deadlock Telemetry](administration/telemetry-database-deadlocks-trace.md)
 #### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
 #### [Email Telemetry](administration/telemetry-email-trace.md)
 #### [Error Message Quality Telemetry](administration/telemetry-error-message-voting-trace.md) 
