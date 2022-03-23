@@ -3,7 +3,7 @@ title: "DefaultLayout System Option"
 description: "The default layout to be used by a report."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ The default layout to be used by a report.
 |None|The default layout is not set.|
 |RDLC|The default layout is RDLC.|
 |Word|The default layout is Word.|
+|Excel|The default layout is Excel.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
