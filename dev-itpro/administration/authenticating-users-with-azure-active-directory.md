@@ -16,7 +16,7 @@ author: jswymer
 The article describes the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. The configuration in this article sets up Azure AD authentication to use the WS-Federation protocol.
 
 > [!IMPORTANT]  
-> Azure AD authentication with WS-Federation has been deprecated in later [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases and replaced with OpenID Connect. For more information, see [Moving from WS-Federation to OpenID Connect](authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-openid-connect). But if you're running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version), you have the option to WS-Federation.
+> Azure AD authentication with WS-Federation has been deprecated in later [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases and replaced with OpenID Connect. For more information, see [Moving from WS-Federation to OpenID Connect](authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect). But if you're running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version), you have the option to WS-Federation.
 
 ## Preparation
 

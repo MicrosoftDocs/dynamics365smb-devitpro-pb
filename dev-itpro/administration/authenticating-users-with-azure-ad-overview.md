@@ -34,7 +34,7 @@ Azure AD authentication enables [!INCLUDE[prod_short](../developer/includes/prod
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-Starting with 2022 release wave 1 (version 20), Business Central supports the OpenID Connect (OIDC) protocol for Azure AD authentication. In previous releases, Azure AD authentication in Business Central used WS-Federation (Web Services Federation Language). [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](azure/active-directory/develop/v2-protocols-oidc).
+Starting with 2022 release wave 1 (version 20), Business Central supports the OpenID Connect (OIDC) protocol for Azure AD authentication. In previous releases, Azure AD authentication in Business Central used WS-Federation (Web Services Federation Language). [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](/azure/active-directory/develop/v2-protocols-oidc).
 
 With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It will be removed in a later release. Until it's removed, you can continue to use Azure AD authentication with WS-Federation, but we recommend using OpenID Connect.
 
