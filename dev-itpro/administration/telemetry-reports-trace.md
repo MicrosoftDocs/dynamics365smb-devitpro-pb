@@ -86,13 +86,13 @@ The reportAction dimension shows actions taken to generate a report. The action 
 
 |Value|Description|
 |-----|-----------|
-|None|There was no results from the request page, for example, the user canceled.|
+|None|There were no results from the request page, for example, the user canceled.|
 |Print|The user selected to print the report.|
 |Preview|The user selected to preview the report from the request page.|
 |Save|The report was saved to a file by a call to the [SaveAs method](/dynamics365/business-central/dev-itpro/developer/methods-auto/report/report-saveas-method) in AL code.|
-|Schedhule|The user selected to schedule the report from the request page. <!-- haven't seen this. seems to show as saved -->|
+|Schedule|The user selected to schedule the report from the request page.|
 |Download|The user downloaded the report as a file from the request page.  |
-|Parameters|Parameters and filters were collected from request page without rendering the output.|
+|Parameters|Parameters and filters were collected from the request page without rendering the output.|
 
 ### <a name=documentFormat></a>documentFormat
 
