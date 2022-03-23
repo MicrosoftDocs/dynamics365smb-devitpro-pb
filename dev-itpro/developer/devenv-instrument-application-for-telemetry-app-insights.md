@@ -96,8 +96,8 @@ The following table explains CustomDimensions that are automatically included in
 |companyName|Specifies the company in Business Central|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](../administration/tenant-admin-center-environments.md).|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](../administration/tenant-admin-center-environments.md#types-of-environments)|
 | extensionName|Specifies the name of the extension that called the LOGMESSAGE method.|
 | extensionId|Specifies the ID of the extension that called the LOGMESSAGE method.|
 | extensionPublisher|Specifies the publisher of the extension called the LOGMESSAGE method.|
