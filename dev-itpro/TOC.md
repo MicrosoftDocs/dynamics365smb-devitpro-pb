@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -155,8 +155,8 @@
 #### [Telemetry](administration/administration-center-api_telemetry.md)
 <!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 ## Entitlements and permissions
-### [Entitlements and permission sets overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ### [Licenses and entitlements](deployment/licensing.md)
+### [Entitlements and permission sets technical overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
 ### [Enabling new features ahead of time](administration/feature-management.md)

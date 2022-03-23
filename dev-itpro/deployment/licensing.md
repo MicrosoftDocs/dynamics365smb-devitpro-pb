@@ -6,7 +6,7 @@ ms.reviewer: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 03/21/2022
+ms.date: 03/23/2022
 ---
 
 # Licensing in Dynamics 365 Business Central
@@ -22,11 +22,11 @@ Prospects and customers can also subscribe for an evaluation version by using se
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-[!include[prod_short](../developer/includes/prod_short.md)] doesn't use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (.flf). Instead, permissions are generated based on entitlements.  
+[!include[prod_short](../developer/includes/prod_short.md)] online doesn't use the classic [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] license files (.flf). Instead, permissions are generated based on entitlements.  
 
-We define license permissions (per object) in the **Entitlements** table. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Azure Active Directory (Azure AD) service plans.  
+Behind the scenes, the **Entitlements** table defines license permissions per object. Entitlements are grouped in the **Entitlement Set** table, and then each entitlement set is associated with one of the four Azure Active Directory (Azure AD) service plans.  
 
-This means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Azure AD and then load the corresponding entitlements as license permissions.  
+This means that when a user purchases, for example, an Essential license and tries to sign in to Business Central, we retrieve the user's service plan (in this case Essential) from Azure AD, and then load the corresponding entitlements as license permissions.  
 
 > [!NOTE]
 > For more information about the different types of licenses and how licensing works in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], see the Dynamics 365
@@ -34,7 +34,7 @@ Licensing Guide, which you can download from [https://go.microsoft.com/fwlink/?L
 
 ## Entitlements and user groups
 
-*Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a customer is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft.  
+*Entitlements* are permissions that describe which objects in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] a user is entitled to use according to their Azure Active Directory role or the license they purchased from Microsoft.  
 
 The **User Group Plan** table stores the mapping between the service plans and the user groups. Based on this mapping, the service determines which user group is assigned to a user by default when a user logs in to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] for the first time. The user group assigns a specific license (or makes the user a member of a specific Azure AD role).  
 
@@ -46,11 +46,9 @@ You can verify how entitlements, licenses, and user groups work together by look
 
 In versions earlier than 2020 release wave 2 (version 17.0), entitlements are only enforced in production environments so that prospective and existing customers could explore the functionality of the Premium subscription in a sandbox environment without having to purchase a Premium license.  
 
-However, partners that create and test their extensions using sandbox environments of that type could miss errors in their code that would be related to entitlements or access, so that those issues would not be found until they deployed their extensions to the production environments.  
+However, partners that create and test their extensions using sandbox environments of that type could miss errors in their code that would be related to entitlements or access, so that those issues would not be found until they deployed their extensions to the production environments. So, since2020 release wave 2, the license checks for entitlements are now also enforced in the sandbox environments.  
 
-Also, you can explore such functionality by creating an evaluation company in either a production or a sandbox environment using the free evaluation subscription that is available from [https://dynamics.microsoft.com/business-central](https://dynamics.microsoft.com/business-central/overview).  Alternatively, you can use the **Business Central Premium - Trial** subscription that is available through the CSP program as described [here](customer-signup.md#premiumtrial). By using these subscription types, customers and partners can explore the capabilities included with the Premium subscription.  
-
-With 2020 release wave 2, the license checks for entitlements are now also enforced in the sandbox environments.  
+Now, you can explore such functionality by creating an evaluation company in either a production or a sandbox environment using the free evaluation subscription that is available from [https://dynamics.microsoft.com/business-central](https://dynamics.microsoft.com/business-central/overview).  Alternatively, you can use the **Business Central Premium - Trial** subscription that is available through the CSP program as described [here](customer-signup.md#premiumtrial). By using these subscription types, customers and partners can explore the capabilities included with the Premium subscription.  
 
 ## Reassigning licenses
 
