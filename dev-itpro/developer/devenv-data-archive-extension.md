@@ -126,6 +126,6 @@ The application objects for data archiving are available in the System Applicati
 -->
 
 ## See Also
-[The Data Archive Extension](/dynamics365/business-central/admin-archive-data.md)  
-[The Microsoft_Application.app File](/developer/devenv-application-app-file.md)  
-[Extending Application Areas](/developer/devenv-extending-application-areas)
+[The Data Archive Extension](/dynamics365/business-central/admin-archive-data)  
+[The Microsoft_Application.app File](devenv-application-app-file.md)  
+[Extending Application Areas](devenv-extending-application-areas.md)
