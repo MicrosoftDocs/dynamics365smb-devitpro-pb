@@ -3718,7 +3718,13 @@
 #### [Administration Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
 #### [Development Cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
 #### [Development Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
-### [Authentication and Credential Types](administration/users-credential-types.md)
+### Configuring User Authentication
+#### [Authentication and Credential Types](administration/users-credential-types.md)
+#### Authenticating with Azure Active Directory
+##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
+##### [Configure Azure AD Authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
+##### [Configure Azure AD Authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
+#### [Authenticating with NavUserPassword](administration/authenticating-users-with-navuserpassword.md)
 ### [Configuring Business Central Server](administration/configure-server-instance.md)
 ### Configuring Business Central Web Server
 #### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
