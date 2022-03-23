@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 07/29/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: bholtorf
 ---
 
@@ -33,12 +32,12 @@ This topic describes how to set up an environment for developing a module in the
 5. Open Visual Studio Code, and then go to the **System Modules** folder in the cloned repository.
 6. Run the **code ALAppExtensions/Modules/System** command.
 7. In the **System** folder, open the **app.json** and note the **version** that is listed. You will need that in step 3 in the process of setting up a Docker container.
-8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. Set the `"al.assemblyProbingPaths"` parameter:  
+8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. The following is an example of how to set the `"al.assemblyProbingPaths"` parameter. The path to the assemblies can differ, for example, depending on where you keep them or the version you want to use.  
 
     ```json
-        "al.assemblyProbingPaths": [
-        "C:/NugetCache/NET_Framework_48_TargetingPack.4.8.3761",
-        "C:/bcartifacts.cache/onprem/18.0.23013.23795",
+        "al.assemblyProbingPaths": [                
+        "C:/Windows/Microsoft.NET/Framework64/v4.0.30319",   
+        "C:/bcartifacts.cache/onprem/19.0.29894.30693",        
         "C:/WINDOWS/assembly"
     ],
     ```

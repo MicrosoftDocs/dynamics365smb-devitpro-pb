@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -38,7 +37,7 @@ Specifies the ID of the codeunit to run.
 Sets the task to the ready state. A task cannot run unless it is ready.
           
 *[Optional] Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the company to run the task for. If you do not specify a company, the task will run in the user’s current company.
           
 *[Optional] NotBefore*  
@@ -76,4 +75,4 @@ end;
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

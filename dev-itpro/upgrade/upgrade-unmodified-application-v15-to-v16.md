@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 
 # Upgrading Version 15 Base Application to Version 16
@@ -20,7 +19,7 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
 #### Single-tenant and multitenant deployments
 
-The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
 ## Prerequisites
 
@@ -56,6 +55,8 @@ The process for upgrading the similar for a single-tenant and multitenant deploy
 1. Make backup of the databases.
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)] 
 
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 

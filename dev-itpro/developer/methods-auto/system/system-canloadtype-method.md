@@ -3,12 +3,11 @@ title: "System.CanLoadType(DotNet) Method"
 description: "Tests if the specified .NET Framework type can be loaded."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

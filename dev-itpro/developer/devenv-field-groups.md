@@ -1,17 +1,16 @@
 ---
 title: Field Groups
-description: A field group defines the fields to display in a drop-down control in Dynamics 365 Business Central. 
+description: A field group defines the fields to display in a DropDown control in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 10/29/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
-# Field Groups (Drop-Down Controls)
+# Field Groups (DropDown Controls)
 
 A field group in table or table extension objects defines the fields to display in a drop-down control on pages that use the table. 
 
@@ -56,9 +55,12 @@ In order to add fields to a field group, you create a table extension and specif
 > [!WARNING]  
 > The server will remove the duplicates, if multiple extensions attempt to add the same field more than once. A field can only be added to the field group once.
 
-## Define fields for a drop-down control
+## Add fields for a drop-down control
 
-You define a field to include in a drop-down control by using the `DropDown` field group name in the keyword.
+You add a field to include in a drop-down control by using the `DropDown` field group name in the keyword.
+
+> [!NOTE]  
+> Adding a *new* fieldgroup to a table extension is not possible.
 
 The following example illustrates how to add the field 
 

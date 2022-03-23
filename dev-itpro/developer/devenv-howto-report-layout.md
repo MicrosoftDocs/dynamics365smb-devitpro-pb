@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 05/28/2021
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -83,6 +82,8 @@ You'll now see the generated report in preview mode.
 
 ## See Also
 
+
+[Setting up Hyperlinks in Word Report Layouts](devenv-hyperlinks-in-word-report-layouts.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
 [Report Object](devenv-report-object.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  

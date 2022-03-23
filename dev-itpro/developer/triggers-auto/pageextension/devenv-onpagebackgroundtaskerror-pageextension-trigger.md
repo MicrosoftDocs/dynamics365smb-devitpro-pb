@@ -3,12 +3,11 @@ title: "OnPageBackgroundTaskError (Page Extension) Trigger"
 description: "Runs when an error occurs in a page background task."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/23/2021
+ms.date: 01/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -23,7 +22,7 @@ Runs when an error occurs in a page background task.
 
 ## Syntax
 ```AL
-trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; IsHandled: Boolean)
+trigger OnPageBackgroundTaskError(TaskId: Integer; ErrorCode: Text; ErrorText: Text; ErrorCallStack: Text; var IsHandled: Boolean)
 begin
     ...
 end;

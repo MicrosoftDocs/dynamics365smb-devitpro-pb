@@ -6,7 +6,6 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: KennieNP
 ms.date: 04/01/2021
 ---
@@ -33,26 +32,6 @@ Secondly, it is because the sandbox services configuration. Sandbox configuratio
 <!--
 Due to the nature of the operations our users perform in the sandbox environments, such as (for instance frequent publishing and installation of per-tenant extensions (PTEs), which are not yet of production quality, creating multiple companies for different users to try their scenarios, initializing test environments with data via RapidStart, and so on etc.), and due to the Sandbox services configuration (with more density, and very different thresholds), the users will often cannot get the same performance and reliability as they get in their production environments.  -->
 
-## Telemetry
-
-For monitoring and analyzing performance issues in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service, we recommend connecting Azure AppInsights to the environments that you want to get signals from. For more information, see [Enable Sending Telemetry to Application Insights](../administration/telemetry-enable-application-insights.md). 
-
-Here are some ways where telemetry can help troubleshoot performance issues:
-
-| Area | Telemetry | Why |
-|---------------------------|------------|------------|
-| Page Background Task      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Each page background task will open a new session. Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
-| Sign-in      | [Authorization signal](../administration/telemetry-authorization-trace.md)   | Any expensive action in the OnCompanyOpen trigger will slow down opening new sessions. | 
-| Something was slow during this period of time | [Company lifecycle signal](../administration/telemetry-company-lifecycle-trace.md) | Check whether a copy-company operation was running while the performance issue occurred. |
-| Something was slow during this period of time | [Database locks signal](../administration/telemetry-database-locks-trace.md) | Maybe the performance issue was because of locking in the database. |
-| Suddenly the XYZ page is slow | [Extension lifecycle signal](../administration/telemetry-extension-update-trace.md) | Maybe an extension was installed that interferes with the page in question.|
-| Some pages or reports are slow to load | [Long running SQL queries](../administration/telemetry-long-running-sql-query-trace.md) | Investigate whether the data operations on the page or report are taking a long time to complete. |
-| A report is slow | [Report signal](../administration/telemetry-reports-trace.md)  | Check whether the report is reading more data than you expected. |
-| System UI feels slow | [Web service requests signal](../administration/telemetry-webservices-trace.md) | Calling your environment too  aggressively with web service requests can affect performance of the system. |
-
-
-
-This page shows an overview of all currently available signals: [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
 ## Operational Limits
 

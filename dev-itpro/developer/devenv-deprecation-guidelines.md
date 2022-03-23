@@ -3,10 +3,9 @@ title: "Best Practices for Deprecation of Code in the Base App"
 description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/02/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: grobyns
 ---
 
@@ -54,7 +53,7 @@ When we obsolete code, we:
         #endif
         ```
 
-    - If a table is to be removed, then we'll use `#if #else #endif`
+    - If a table or table field is to be removed, then we'll use `#if #else #endif`
 
         ```al
 
@@ -64,13 +63,29 @@ When we obsolete code, we:
             Caption = 'Aggregated Assisted Setup';
         #if CLEAN16
             ObsoleteState = Removed;
+            ObsoleteTag = '17.0';
         #else
             ObsoleteState = Pending;
+            ObsoleteTag = '16.0';
         #endif
             ObsoleteReason = 'Data available in Assisted Setup already- extensions also register in the same table.';
-            ObsoleteTag = '16.0';
         ```        
 
+        ```al
+        field(11701; "Bank Account No."; Text[30])
+        {
+            Caption = 'Bank Account No.';
+            Editable = false;
+        #if CLEAN18
+            ObsoleteState = Removed;
+            ObsoleteTag = '18.0';
+        #else
+            ObsoleteState = Pending;
+            ObsoleteTag = '17.0';
+        #endif
+            ObsoleteReason = 'Moved to Core Localization Pack for Czech.';
+        }
+        ```
     - If a table is to be marked as `Temporary`, then we'll use `#if #else #endif`
 
         ```al
@@ -114,4 +129,4 @@ If an action or other code element points to a now removed object, then the guid
 [ObsoleteTag Property](properties/devenv-obsoletetag-property.md)  
 [ObsoleteState Property](properties/devenv-obsoletestate-property.md)  
 [ObsoleteReason Property](properties/devenv-obsoletereason-property.md)  
-[Obsolete Attribute](methods/devenv-obsolete-attribute.md)
+[Obsolete Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute)

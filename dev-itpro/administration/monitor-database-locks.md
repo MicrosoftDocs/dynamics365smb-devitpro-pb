@@ -1,12 +1,12 @@
 ---
 title: "Monitoring SQL Database Locks"
+description: Read about database locks for Business Central on-premises.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Monitoring SQL Database Locks

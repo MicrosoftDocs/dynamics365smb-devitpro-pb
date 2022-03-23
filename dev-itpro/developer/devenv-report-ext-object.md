@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -43,7 +42,7 @@ Typing the shortcut `treportext` will create the basic layout for a report exten
 
 ## Report extension example
 
-The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report. For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md). The example also illustrates how a new field added to the report extension, can be modified using the `OnBeforeAfterGetRecord` trigger. For more information about report extension dataset triggers, see [Report Extension Data Set Modify triggers](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md). 
+The following example illustrates a simplified table extension which adds a new field to the `Customer` table, `MyField`. The report extension `MyExtension` then adds `MyField` as well as an additional field in original `Customer` table to the **Customer - Top 10 List** report. For a more advanced example, see [Report Extension Example](devenv-report-ext-example.md). The example also illustrates how a new field added to the report extension, can be modified using the `OnBeforeAfterGetRecord` trigger. For more information, see [OnBeforeAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md). For a list of triggers that can be used inside the `modify` section of a report, go to the [See Also](devenv-report-ext-object.md#see-also) section.
 
 > [!NOTE]  
 > Inside the `requestpage` element, you cannot modify any properties.
@@ -124,7 +123,6 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 }
 ```
 
-
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
 ## See Also
@@ -138,3 +136,11 @@ reportextension 50110 MyExtension extends "Customer - Top 10 List"
 [Page Properties](properties/devenv-page-property-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
+[OnPostReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onpostreport-reportextension-trigger.md)  
+[OnPreReport (Report Extension) Trigger](triggers-auto/reportextension/devenv-onprereport-reportextension-trigger.md)  
+[OnAfterAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafteraftergetrecord-reportextensiondatasetmodify-trigger.md)  
+[OnAfterPostDataItem (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafterpostdataitem-reportextensiondatasetmodify-trigger.md)  
+[OnAfterPreDataItem (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onafterpredataitem-reportextensiondatasetmodify-trigger.md)  
+[OnBeforeAfterGetRecord (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onbeforeaftergetrecord-reportextensiondatasetmodify-trigger.md)  
+[OnBeforePostDataItem (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepostdataitem-reportextensiondatasetmodify-trigger.md)  
+[OnBeforePreDataItem (Report Extension Data Set Modify) Trigger](triggers-auto/reportextensiondatasetmodify/devenv-onbeforepredataitem-reportextensiondatasetmodify-trigger.md)

@@ -3,11 +3,10 @@ title: "Get started with the Container Sandbox Development Environment"
 description: "Overview of the getting started with the container-based development."
 
 author: SusanneWindfeldPedersen
-ms.custom: na
 ms.date: 04/01/2021
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
+ms.custom: intro-internal
 ---
 
 # Get started with the Container Sandbox Development Environment

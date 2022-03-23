@@ -3,12 +3,11 @@ title: "Report.SaveAsHtml(Integer, String [, var Record]) Method"
 description: "Saves a report as an HTML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,7 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 The ID of the report object that you want to run.
         
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The folder path and name of the file that you want to save the report as. The path must already exist and the service (login) account that is used by the server instance must have permission to write to the target folder. Otherwise, you will get errors.
           
 *[Optional] Record*  

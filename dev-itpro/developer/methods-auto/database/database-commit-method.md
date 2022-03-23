@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -35,7 +34,7 @@ Ends the current write transaction.
 
 When a codeunit begins, it automatically enables write transactions to be performed. When an AL code module completes, it automatically ends the write transaction by committing the updates made by the AL code.  
 
-This means that if you want the codeunit to perform a single write transaction, it is automatically handled for you. However, if you want the codeunit to perform multiple write transactions, you must use the Commit method to end one write transaction before you can start the next. The COMMIT method separates write transactions in an AL code module.  
+This means that if you want the codeunit to perform a single write transaction, it is automatically handled for you. However, if you want the codeunit to perform multiple write transactions, you must use the Commit method to end one write transaction before you can start the next. The Commit method separates write transactions in an AL code module.  
 
 ## Example
 
@@ -44,7 +43,7 @@ The following pseudo-code example contains two write transactions. When it begin
 ```  
 BeginWriteTransactions  
 (AL Statements) // Transaction 1  
-COMMIT  
+Commit();  
 (AL Statements) // Transaction 2  
 EndWriteTransactions   
 ```  

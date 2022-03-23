@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,7 +30,7 @@ Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647
   
 ```al
 IntegerVar := -2147483647;  
-IntegerVar := IntegerVar - 1;  
+IntegerVar -= 1;  
 ```  
   
  If you try to indirectly assign a value that is smaller than -2,147,483,648 or larger than 2,147,483,647, then you get a run-time error.  

@@ -5,8 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-ms.date: 10/05/2021
+ms.date: 02/01/2022
 ms.author: edupont
 ---
 
@@ -15,7 +14,7 @@ ms.author: edupont
 The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files. You can also find guidance in the [Docs Contributor Guide](/contribute/).  
 
 > [!TIP]
-> If you want to get Microsoft's content and deploy it to your own website with or without customizations, see [Custom Help Toolkit](custom-help-toolkit.md).
+> If you want to get Microsoft's content and deploy it to your own website with or without customizations, the custom Help toolkit can help you. But you do not have to use the toolkit. That depends on the nature of your solution. For more information, see see [Custom Help Toolkit](custom-help-toolkit.md).
 
 ## Get content from the GitHub repos
 
@@ -61,7 +60,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
     In the source repo only, contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
 - business-central
 
-    Contains MarkDown files with content that is relevant for endusers, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
+    Contains MarkDown files with content that is relevant for business users, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 - media-source
 
     Contains source files for some of the pictures that are used in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content
@@ -130,7 +129,7 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 3. Get hold of your favorite MarkDown editor, and start making changes.
 
-    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [Markdig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
+    The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [MarkDig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
     If you want to work locally, you can edit using any text editor. Just save the file as a .md type. Here are two good tools that provide you with some nice features, including a preview of how the content will be rendered in HTML:
 
@@ -143,7 +142,6 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
 
-
 ## Get the content without a GitHub account
 
 If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool, create your own scripts, or follow this process to fork a repo manually.  
@@ -152,7 +150,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 1. Go to the relevant GitHub repo, such as this one for German: [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/).  
 
-    You can see in the browser when the content was last updated. Alternatively, go to the [releases](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/releases) tab and choose the package that you need for your solution. For more information, see [What the GitHub repos contain](#what-the-github-repos-contain).    
+    You can see in the browser when the content was last updated. Alternatively, go to the [releases](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de/releases) tab and choose the package that you need for your solution. For more information, see [What the GitHub repos contain](#what-the-github-repos-contain).  
 2. Choose the green **Clone or download** button, and then choose **Download ZIP**.
 3. Open the downloaded *dynamics365smb-docs-pr.de-de-main.zip* file and extract to a relevant location.
 
@@ -266,19 +264,58 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 
 ## Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the *MicrosoftDocs/dynamics365smb-docs repo*. For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo, you create a *pull request* from your repo to the *MicrosoftDocs/dynamics365smb-docs* repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There is a lot of good advice and best practices published in the [Microsoft Docs contributor guide](/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
 
-> [!NOTE]
-> Microsoft accepts pull requests to the *MicrosoftDocs/dynamics365smb-docs* repo only, not the language-specific repos. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+We have two public GitHub repos that you can contribute to:
+
+- [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
+
+    This repo contains a copy of the source files for the business functionality content that publishes at `https://docs.microsoft.com/en-us/dynamics365/business-central`  
+
+    > [!NOTE]
+    > Microsoft does not accept pull requests to the the translation repos, such as *dynamics365smb-docs-pr.da-dk*, *dynamics365smb-docs-pr.de-de*, or *dynamics365smb-docs-pr.it-it* repo. If you have feedback about translations, please report a GitHub issue in the relevant repo.
+- [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)  
+    This repo contains a copy of the source files for the developer and admin content that publishes at `https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro`  
+
+For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team will then review the request and include the changes as appropriate.
+
+### Get started
+
+If you want to suggest a minor (or major) change to an existing article, follow these steps:
+
+1. Find the published article, such as [Using OData to Return or Obtain a JSON Document](../webservices/return-obtain-json-document.md).  
+2. In the top right corner of the article, choose the **Edit** button.
+
+    Choosing the button takes you to the source file on GitHub. In this example, that's [https://github.com/MicrosoftDocs/dynamics365smb-devitpro/blob/main/dev-itpro/webservices/return-obtain-json-document.md](https://github.com/MicrosoftDocs/dynamics365smb-devitpro/blob/main/dev-itpro/webservices/return-obtain-json-document.md).  
+
+    > [!NOTE]
+    > If you're not already signed in with a GitHub account, you'll be prompted to sign in or create a new account. You cannot contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content without a GitHub account.
+3. In the top right corner of the MarkDown file, choose the pencil icon. Depending on who you are, you'll be taken to a fork of Microsoft's repo, or you'll be able to work in a branch in Microsoft's repo.
+4. Make the relevant changes (and remember to save the changes!).
+5. Submit a *pull request* to the source repo.
+
+    You'll see something like this configuration in a browser:
+
+    :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
+
+For more information, see [Quick edits to existing documents](/contribute/#quick-edits-to-existing-documents).
+
+### Get thorough
+
+If you're going to contribute at a greater scale, for example as part of a community project that adds code examples to a bunch of technical walkthroughs, you'll probably prefer to work locally on your device, based on a clone of your fork. See the article [Install content authoring tools](/contribute/get-started-setup-tools) in the Microsoft Docs Contributor Guide for recommended tools and processes. The Microsoft team typically follows that workflow.  
 
 To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
 
-1. Commit the changes to your repo that you want to include in the pull request.
+1. Commit the changes to your fork that you want to include in the pull request.
 2. Choose **Sync** to push the changes up to your repo on GitHub.
-3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/main* branch, and then choose **Pull Request**.
+3. When the sync is completed, choose **Pull Request**, make sure that the pull request points at the *origin/main* branch, and then choose **Pull Request**.  
+
+    You'll see something like this configuration in a browser:
+
+    :::image type="content" source="../media/contributor-guide-contribute.png" alt-text="The start of a pull request with fork on the right and target to the left.":::
 
 > [!TIP]
-> If you want to request brand new content, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
+> If you want to request brand new content, as opposed to contributing, we ask you to submit a request of type *Documentation* at [https://aka.ms/bcideas](https://aka.ms/bcideas).
 
 ## See also
 

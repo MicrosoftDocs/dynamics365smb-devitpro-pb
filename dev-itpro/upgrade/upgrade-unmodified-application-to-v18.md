@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 
 # Upgrading Microsoft System and Base Application to Version 18
@@ -23,9 +22,31 @@ Use this scenario if you have one of the following versions that uses the Micros
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
-#### Single-tenant and multitenant deployments
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
+## Before you begin
+
+<!--Consider the information in this section before you start upgrading your deployment.-->
+
+<!--
+### Single-tenant and multitenant deployments
 
 The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+-->
+
+<!--
+### Prepare for tables that have changed to temporary tables
+
+Starting with version 18, several base application tables are now temporary tables. This change may affect the upgrade from version 17 or earlier. For more information, see [Upgrading Base Application Tables That Have Changed to Temporary](upgrade-temporary-tables.md).
+-->
+
+### Consider known issues
+
+[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
+
+### Prepare new runtime packages
+
+[!INCLUDE[upgrade_runtime_packages](../developer/includes/upgrade_runtime_packages.md)]
 
 ## Task 1: Install version 18
 
@@ -76,6 +97,8 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
 4. (Single-tenant only) Uninstall all extensions from the old tenants.
 
@@ -260,6 +283,8 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 6. Recompile extensions not build on version 18.
 
+    [!INCLUDE[repair_runtime_packages](../developer/includes/repair_runtime_packages.md)]
+
     Do this step for any published extension versions that aren't built on version 18, and you want to reinstall on tenants. These extensions must be recompiled to work with version 18. To recompile the extensions, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet:
 
     ```powershell  
@@ -440,7 +465,7 @@ This task serves two purposes. It ensures that personalization works as expected
 
 On the **Help and Support** page in the client, you'll see an application version, such as 17.0.2345.6. For an explanation of the number, see [Version numbers in Business Central](../administration/version-numbers.md). This version isn't updated automatically when you install an update. If you want the version to reflect the version of the update or your own version, you change it manually.
 
-We recommend setting the value to application build number for the version 18 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/help/4528706). <!--TODO fix link-->.
+We recommend setting the value to application build number for the version 18 update. You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
 
 1. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication):
 
@@ -467,10 +492,11 @@ We recommend setting the value to application build number for the version 18 up
     ```powershell
     Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
     ```
-    The Data Upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVTenant -ServerInstance <server instance name> -ForceRefresh -Tenant <tenant ID>`
 
-Do not stop the Business Central service until the process is complete, i.e. when you can see that "State = Operational" in the results from the Get-NAVDataUpgrade cmdlet. 
-    
+The data upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Progress` or `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Detailed`.
+
+Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance until the process is complete, that is, when you see `State = Operational` in the results from the Get-NAVDataUpgrade cmdlet. Also, you won't be able to do operations, like installing extensions, until the state is operational. It can take several minutes before the process completes.
+
 ## Post-upgrade tasks
 
 1. Enable task scheduler on the server instance.

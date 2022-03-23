@@ -5,8 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
-ms.date: 10/01/2021
+ms.date: 02/01/2022
 ms.author: edupont
 ---
 
@@ -25,6 +24,10 @@ When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_shor
 
 You can add Microsoft's content to your website, or you can deploy just your own content. The choice is yours and depends on the requirements of your users, the size of your app, and the amount of customization you want to make. The custom Help toolkit includes tools that can help you prepare and deploy content. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
+[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
+
+[!INCLUDE [ua-toolkit-online](../includes/ua-toolkit-online.md)]
+
 For inspiration for how to create a website that can host your content, take a look at [this tutorial](/azure/search/tutorial-python-overview) that creates a static web app and adds a search service in a few relatively straightforward steps.  
 
 ## On-premises deployments
@@ -32,7 +35,7 @@ For inspiration for how to create a website that can host your content, take a l
 For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can choose between using any online website or the legacy Dynamics NAV Help Server, and you can configure different Help experience for each [!INCLUDE[webserver](../developer/includes/webserver.md)] instance. For example, use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to help you deploy content to an Azure Web App. For supported versions, the legacy Dynamics NAV Help Server component is a simple website that requires your Help to be in a specific format (HTML files). Other types of websites can host any content that you want to make available. Your choice depends on the needs of your solution and your users. If you add configuration for an online library, you must remove any settings for Help Server.  
 
 > [!IMPORTANT]
-> The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-w1.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
+> The legacy Dynamics NAV Help Server component is deprecated in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-platform.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
 > The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
@@ -65,6 +68,10 @@ For more information, see [Configuring [!INCLUDE[webserver](../developer/include
 
 > [!TIP]
 > The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
+
+[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
+
+[!INCLUDE [ua-toolkit-onprem](../includes/ua-toolkit-onprem.md)]
 
 ### Legacy Help Server
 
@@ -125,7 +132,7 @@ You can see an example of how to deploy content to an Azure web app in the artic
 
 ### Optional: Get Microsoft's content
 
-If you deploy a solution that is based on Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
+If you deploy a solution customizes Microsoft's default application, then you might want to include a customized version of Microsoft's business functionality content on your website. Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
 > [!TIP]
 > The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
@@ -153,6 +160,8 @@ We suggest that your website clearly indicates what is under Microsoft's copyrig
 ## Fork the Microsoft repos, and customize or extend the content
 
 If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the repos that contain translations. For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
+
+[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
 
 ## See Also
 

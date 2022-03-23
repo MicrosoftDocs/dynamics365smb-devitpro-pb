@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -45,12 +44,12 @@ An instance of the [TestPage](testpage-data-type.md) data type.
  This example requires that you create a TestPage variable named CustomerList with a Subtype of Customer List.  
   
 ```al
-CustomerList.OpenView;  
+CustomerList.OpenView();  
 // Loops through all customers and displays the customer name.  
-if CustomerList.First then  
+if CustomerList.First() then  
   repeat  
     Message('%1';CustomerList.Name);  
-until not CustomerList.NEXT;  
+until not CustomerList.Next();  
   
 ```
 

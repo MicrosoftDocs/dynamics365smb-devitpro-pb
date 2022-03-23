@@ -3,12 +3,11 @@ title: "File.Name() Method"
 description: "Gets the name of an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -38,7 +37,7 @@ An instance of the [File](file-data-type.md) data type.
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

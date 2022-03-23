@@ -3,12 +3,11 @@ title: "System.ApplicationPath() Method"
 description: "Returns the path of the directory where the executable file for the product is installed."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -34,7 +33,7 @@ String :=   System.ApplicationPath()
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

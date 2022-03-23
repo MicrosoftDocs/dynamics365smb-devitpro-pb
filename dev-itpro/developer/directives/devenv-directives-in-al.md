@@ -7,7 +7,6 @@ ms.date: 04/01/2021
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -26,6 +25,9 @@ Any code can be made conditional, including table fields, and checked using a co
 > [!NOTE]  
 > Built-in symbols are currently not supported in AL. Symbols must be defined in a specific file or in the `app.json` file.
 
+> [!NOTE]  
+> User personalization and profile configuration (including profile copy) are not meant to work with directives, which means that they are ignored by the platform in the cases of #pragma, #region, #endregion and fail with an error when they are not supported for #if, #elif, #define, etc.
+
 ## Conditional directives
 
 The following conditional preprocessor directives are supported in AL.
@@ -43,8 +45,16 @@ The following conditional preprocessor directives are supported in AL.
 
 Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the [Conditional code](devenv-directives-in-al.md#conditional-directives) example below. A symbol has a boolean value, that means it evaluates to `true` or `false`.
 
+The app.json syntax is:
+
 ```json
-"preprocessorSymbols": [ "DEBUG" ]
+"preprocessorSymbols": [name [,name2]]
+```
+
+For example:
+
+```json
+"preprocessorSymbols": [ "DEBUG","PROD"]
 ```
 
 For more information, see [JSON Files](../devenv-json-files.md).

@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
 caps.latest.revision: 24
 ms.author: jswymer
@@ -49,7 +48,7 @@ There are some components that require other software to run. For example, the d
    - [Business Central 2020 Release Wave 2](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-2-186fa656-a75c-70f2-1131-adc70e97f280)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.
-3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central <release> files**.
+3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central \<release\> files**.
 4. Follow the instructions.
 
 ## Before you run Setup

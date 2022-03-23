@@ -1,12 +1,12 @@
 ---
 title: "SIFT and SQL Server"
+description: Explains how SIFT in Business Central tables work with SQL Server.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # SIFT and SQL Server
@@ -24,7 +24,7 @@ A SumIndexField is always associated with a key and each key can have a maximum 
 
  The following is an example of how [!INCLUDE[prod_short](includes/prod_short.md)] creates an indexed view for a SIFT key that consists of the **AccountNo.** and **PostingDate** fields with a total for the **Amount** field.  
 
-```  
+```SQL
 CREATE VIEW GLEntry$VSIFT$1 AS
 SELECT SUM(Amount) as SUM$Amount, AccountNo, PostingDate
 FROM GLEntry
@@ -38,16 +38,16 @@ GLEntry$VSIFT$1(AccountNo, PostingDate)
 
  The following AL code example retrieves a total.  
 
-```  
-GLEntry.SETCURRENTKEY("G/L Account No.","Posting Date");  
-GLEntry.SETRANGE("G/L Account No.",'1110');  
-GLEntry.SETRANGE("Posting Date",DMY2DATE(1,1,2007),DMY2DATE(15,12,2007));  
-GLEntry.CALCSUMS(Amount); 
+```AL
+GLEntry.SetCurrentKey("G/L Account No.", "Posting Date");  
+GLEntry.SetRange("G/L Account No.", '1110');  
+GLEntry.SetRange("Posting Date", DMY2Date(1,1,2007), DMY2Date(15,12,2007));  
+GLEntry.CalcSums(Amount); 
 ```  
 
  The following code example shows how the same total is retrieved through an indexed view.  
 
-```  
+```SQL
 SELECT SUM(SUM$Amount)
 FROM GLEntry$VSIFT$1 WITH(NOEXPAND)
 WHERE AccountNo=?
@@ -59,3 +59,4 @@ AND PostingDate<=?
 [SumIndexField Technology \(SIFT\)](devenv-sift-technology.md)  
 [Tuning and Tracing](devenv-sift-Tuning-and-Tracing.md)   
 [SIFT and Performance](devenv-SIFT-Performance.md)
+[Migrating from SIFT to NCCI](devenv-migrating-from-sift-to-ncci.md)

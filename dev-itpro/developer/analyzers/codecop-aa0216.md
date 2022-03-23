@@ -1,20 +1,19 @@
 ---
-title: "CodeCop Rule AA0216"
+title: "CodeCop Warning AA0216"
 description: "Use a text constant for passing user messages and errors without concatenations."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0216
+# CodeCop Warning AA0216
 Use a text constant for passing user messages and errors without concatenations.
 
 ## Description

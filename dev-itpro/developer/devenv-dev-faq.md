@@ -3,12 +3,11 @@ title: "FAQ for Developing in AL"
 description: "Overview of frequently asked questions for development using the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 10/14/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -31,6 +30,10 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 ## How do I enable the debugger?
 
 To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md). To read about snapshot debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
+
+## Where do I find help regarding AppSource validation and submission?
+
+When submitting an app for AppSource, you must make sure that it validates against the [Technical Validation Checklist](devenv-checklist-submission.md). For frequently asked questions, see [Technical Validation Checklist FAQ](devenv-checklist-submission-faq.md).
 
 ## What constitutes the identity of an app?
 

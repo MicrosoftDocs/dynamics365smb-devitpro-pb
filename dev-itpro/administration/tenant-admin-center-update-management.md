@@ -3,13 +3,12 @@ title: Managing Updates in the Admin Center
 description: Use the Business Central administration center to manage environment updates, including setting update windows and update dates.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 04/19/2021
+ms.date: 12/10/2021
 ms.author: edupont
 ---
 
@@ -41,7 +40,11 @@ This timeslot now becomes the default window when updates will be applied to thi
 
 ## <a name="schedule"></a>Schedule an update date
 
-Once an update is available, you can choose a specific date that each environment is updated. The **Available update version** field in the **Version Management** section of the environment details also displays the version number of the available update version.
+Once an update is available, you can choose a specific date that each environment is updated.  
+
+[!INCLUDE [admin-set-update-date](../includes/admin-set-update-date.md)]
+
+For more information, see [Schedule updates](update-rollout-timeline.md#schedule-updates).  
 
 To schedule an update date:
 
@@ -63,9 +66,17 @@ If an administrator has chosen the **Set update date** action but not set a date
 For updates that tenant administrators can schedule, a notification is sent to all notification recipients that are listed on the **Notification recipients** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Managing Tenant Notifications](tenant-admin-center-notifications.md).
 
 > [!IMPORTANT]
-> To not miss update notifications from Microsoft, you must add [notification recipients](tenant-admin-center-notifications.md) and verify that the e-mails are not redirected to a spam folder by your e-mail software. The notifications are sent from the Microsoft Partner Center address, `msftpc@microsoft.com` and contain `Dynamics 365 Business Central` in the subject line.  
+> [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
 
-For versions earlier than 2021 release wave 1, admins cannot schedule the monthly minor updates. Until such environments are updated to version 18.0 and later, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.
+For versions earlier than 2021 release wave 1, admins cannot schedule the monthly minor updates. Until such environments are updated to version 18.0 and later, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.  
+
+## Environments that cannot get updated
+
+Sometimes an environment cannot get the new update. For example, a per-tenant extension might conflict with the changes in the new version of the base application.  
+
+[!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
+
+For more information, see [Failed updates and rescheduling](update-rollout-timeline.md#failed-updates-and-rescheduling).  
 
 ## See also
 

@@ -70,6 +70,9 @@
         "upgrade/*.md": "jswymer",
         "webservices/*.md": "jswymer",
         "whatsnew/*.md": "SusanneWindfeldPedersen"
+      },
+      "ms.service": {
+        "**.*": "dynamics365-business-central"
       }
     },
     "template": [],

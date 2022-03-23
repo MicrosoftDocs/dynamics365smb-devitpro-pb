@@ -8,7 +8,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.author: jswymer
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 

@@ -3,12 +3,11 @@ title: "System.ImportObjects(String [, Integer]) Method"
 description: "Imports application objects from a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,7 +29,7 @@ Imports application objects from a file.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path of the file from which the objects will be imported.
         
 *[Optional] Format*  

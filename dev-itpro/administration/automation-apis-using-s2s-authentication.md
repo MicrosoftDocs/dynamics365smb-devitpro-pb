@@ -8,24 +8,32 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
  
 # Using Service-to-Service (S2S) Authentication 
 
-> **APPLIES TO:** Business Central Online only. S2S for automation APIs requires 2020 release wave 2 (version 17.0) or later. S2S for standard Business Central APIs, custom APIs, and web services requires Business Central 2021 release wave 1, version 18.3 or later
-
-<!-- Starting with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2, version 17, service-to-service authentication is enabled for Automation APIs. Service-to-service authentication enables external services to connect as an application, without impersonating normal users.    -->
-
-Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
-
-Business Central 2020 release wave 2 (version 17.0) introduced S2S authentication support for accessing Business Central automation APIs. 2021 release wave 1 (version 18.3) expanded S2S authentication for access to the Business Central APIs [v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/) and [v1.0](/dynamics365/business-central/dev-itpro/api-reference/v1.0/), [custom APIs](../developer/devenv-develop-custom-api.md), and web services.
+Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
 > [!NOTE]
 > For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory documentation.
 
-## Usage
+
+In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. 
+
+## Feature availability
+
+The following table describes in which versions S2S authentication was made available for online or on-premises environments.
+
+|API  |Online |On-premises|
+|-----|------|-----------|
+|Business Central automation APIs | version 17.0 | versions 18.11 and 19.5 |
+|Business Central APIs v1.0| version 18.3 | versions 18.11 and 19.5 |
+|Business Central APIs v2.0| version 18.3 | versions 18.11 and 19.5 |
+|Business Central custom APIs| version 18.3 | versions 18.11 and 19.5 |
+|Business Central web services| version 18.3 | versions 18.11 and 19.5 |
+
+## Main usage scenarios
 
 Two main scenarios are enabled with S2S authentication:
 
@@ -45,7 +53,7 @@ To enable service-to-service authentication, you'll have to do two things:
 
 - Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-- Grant access for that Azure AD application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+- Grant access for that application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 These tasks are described in the sections that follow. 
 
@@ -66,7 +74,11 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
 
+
     When completed, an **Overview** displays in the portal for the new application.
+
+    > [!NOTE]
+    > Copy the **Application (client) ID** of the registered application. You'll need this later. You can get this value from the **Overview** page.
 
 3. Create a client secret for the registered application as follows:
 
@@ -78,7 +90,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
     For the latest guidelines about adding client secrets in Azure AD, see [Add credentials ](/azure/active-directory/develop/quickstart-register-app#add-credentials) in the Azure documentation.
 
-4. Grant the registered application **API.ReadWrite.All** or **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]** API as follows:
+4. Grant the registered application **API.ReadWrite.All** and **Automation.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]** API as follows:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
     2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
@@ -126,7 +138,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
    > [!TIP]
    > Pre-consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
 
-## Calling API and web servicesOAuth2Flows
+## Calling API and web services OAuth2Flows
 
 After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 

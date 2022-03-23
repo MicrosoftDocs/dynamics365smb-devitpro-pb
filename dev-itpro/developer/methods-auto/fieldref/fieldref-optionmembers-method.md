@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -34,11 +33,38 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
 *OptionMembers*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+All the options for this field are returned as a comma-separated string. This method returns an error if no field is selected.  
+If the field is not an option an empty string is returned.
+  
+## Example
+
+The following example opens the Item table with a RecordRef variable named `ItemRecref` and it then creates a reference to field 19 \(Price/Profit Calculation\), which is an Options field. The `OptionMembers` method retrieves the options in the field and displays them as a comma-separated list.
+
+```al
+codeunit 50112 RetrieveOptions
+{
+    trigger OnRun()
+    var
+        MyFieldRef: FieldRef;
+        ItemRecref: RecordRef;
+        OptionMembers: Text;
+    begin
+        ItemRecref.Open(Database::Item);
+        MyFieldRef := ItemRecref.Field(19);
+        OptionMembers := MyFieldRef.OptionMembers;
+        Message(' %1', OptionMembers);
+    end;
+}
+```
+
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

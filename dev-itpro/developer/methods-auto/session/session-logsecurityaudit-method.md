@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,22 +27,22 @@ Logs an IfX audit message to a telemetry account.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Description*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The description for the audit message.  
 *Result*  
 &emsp;Type: [SecurityOperationResult](../securityoperationresult/securityoperationresult-option.md)  
 The result state of the operation.  
 *ResultDescription*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The description of the result state.  
 *AuditCategory*  
 &emsp;Type: [AuditCategory](../auditcategory/auditcategory-option.md)  
 The category of the audit message.  
 *[Optional] TargetType*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The target type(s) of this audit message must correspond to target name(s).  
 *[Optional] TargetName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The target name(s) of this audit message must correspond to target type(s).  
 
 
@@ -52,4 +51,4 @@ The target name(s) of this audit message must correspond to target type(s).
 ## See Also
 [Session Data Type](session-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

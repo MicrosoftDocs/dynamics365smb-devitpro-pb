@@ -5,9 +5,8 @@ author: jswymer
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
-ms.date: 10/01/2021
+ms.date: 03/04/2022
 
 ---
 
@@ -26,7 +25,6 @@ The latest cumulative update listed includes new hotfixes and regulatory, plus h
 
 We recommend that you install the latest cumulative update.
 
-
 ## Available updates for Business Central April 2019
 
 The following table lists the cumulative updates released for the Spring 2019 release of Business Central (version 14). The cumulative updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description. 
@@ -35,6 +33,11 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5012304](https://support.microsoft.com/help/5012304)|Cumulative Update 33|March 2022||Application 14.33.48304</br>Platform Build 14.0.48395|
+|[5011303](https://support.microsoft.com/help/5011303)|Cumulative Update 32|February 2022|Application 14.33.48304</br>Platform Build 14.0.48295|
+|[5010204](https://support.microsoft.com/help/5010204)|Cumulative Update 31|January 2022|Application 14.32.48220</br>Platform Build 14.0.48208|
+|[5009176](https://support.microsoft.com/help/5009176)|Cumulative Update 30|December 2021|Application 14.31.48045</br>Platform Build 14.0.48027|
+|[5007776](https://support.microsoft.com/help/5007776)|Cumulative Update 29|November 2021|Application 14.30.47917</br>Platform Build 14.0.47914|
 |[5007023](https://support.microsoft.com/help/5007023)|Cumulative Update 28|October 2021|Application 14.29.47804</br>Platform Build 14.0.47800|
 |[5006072](https://support.microsoft.com/help/5006072)|Cumulative Update 27|September 2021|Application 14.28.47690</br>Platform Build 14.0.47686|
 |[5005370](https://support.microsoft.com/help/5005370)|Cumulative Update 26|August 2021|Application 14.27.47563</br>Platform Build 14.0.47540|

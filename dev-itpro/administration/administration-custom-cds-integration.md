@@ -5,14 +5,11 @@ author: bholtorf
 ms.custom: na
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: bholtorf
 ms.date: 04/01/2021
 ---
 
 # Customizing an Integration with Microsoft Dataverse
-
-[!INCLUDE[cc_data_platform_banner](../includes/cc_data_platform_banner.md)]
 
 This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
@@ -21,7 +18,7 @@ This walkthrough describes how to customize an integration between [!INCLUDE[pro
 
 ## About this walkthrough
 
-This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high-level, those process involve the following tasks:  
+This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high level, those processes involve the following tasks:  
 
 1. Develop an AL extension to integrate tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Create an integration table object in [!INCLUDE[prod_short](../includes/prod_short.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table to a [!INCLUDE[prod_short](../includes/prod_short.md)] record type.  
@@ -37,7 +34,7 @@ This walkthrough describes how to integrate new and existing extensions with [!I
 
 ## Prerequisites
 
-This walkthrough requires the following:  
+This walkthrough has the following requirements:  
 
 - [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], including the following:  
     - Worker table.
@@ -58,7 +55,7 @@ This walkthrough requires the following:
 
 ## Create an integration table in Business Central for the Dataverse table  
 
-To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prod_short](../includes/prod_short.md)], you must create a table object in [!INCLUDE[prod_short](../includes/prod_short.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prod_short](../includes/prod_short.md)] database. For this walkthrough we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prod_short](../includes/prod_short.md)] database. 
+To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prod_short](../includes/prod_short.md)], you must create a table object in [!INCLUDE[prod_short](../includes/prod_short.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prod_short](../includes/prod_short.md)] database. For this walkthrough, we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prod_short](../includes/prod_short.md)] database. 
 
 > [!NOTE]  
 > The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
@@ -80,7 +77,7 @@ To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tab
 
 ## Create a page for displaying Dataverse data  
 
-For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific table, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, such as all workers. In this walkthrough we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
+For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific table, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, such as all workers. In this walkthrough, we will create a list page that uses the generated integration table **CDS Worker** with ID 50000 as its data source.  
 
 ### To create a list page to display Dataverse workers  
 
@@ -145,17 +142,17 @@ page 50001 "CDS Worker List"
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 ### To create a column on list page to display which workers are coupled
-To track whether an employee record is coupled to a corresponding worker record in Dataverse, do the following:
-1. Add a boolean field called "Coupled to CRM" to your Business Central table. 
+To track whether an employee record is coupled to a corresponding worker record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], do the following:
+1. Add a boolean field called "Coupled to CRM" to your [!INCLUDE[prod_short](../includes/prod_short.md)] table. 
 
  > [!IMPORTANT]  
  > The name of the new field must be **Coupled to CRM**.
 
 3. Add a control that shows the **Coupled to CRM** field on the list page. There is no constraint about how to name this new control in the UI.
 
-Every time you couple or uncouple a record from your Business Central table to an record in Dataverse, the synchronization engine will update the Coupled to CRM field that you added.
+Every time you couple or uncouple a record from your [!INCLUDE[prod_short](../includes/prod_short.md)] table to a record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], the synchronization engine will update the Coupled to CRM field that you added.
 
-This will work only for records that you couple or uncouple after you have added the Coupled to CRM field. To update this field value on records that were coupled before you added the Coupled to CRM field, you must run the following code. We recommend that you run the code as a background task.
+This will only update records that you couple or uncouple after you have added the Coupled to CRM field. To update this field value on records that were coupled before you added the Coupled to CRM field, you must run the following code. We recommend that you run the code as a background task.
 
 ```al
 local procedure SetCoupledFlags()
@@ -226,7 +223,7 @@ begin
 end;
 ```
 
-4. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnAddEntityTableMapping** event in order to enable deep linking between coupled [!INCLUDE[prod_short](../includes/prod_short.md)] records and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] records.
+4. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnAddEntityTableMapping** event to enable deep linking between coupled records.
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', true, true)]
@@ -384,7 +381,7 @@ By subscribing to this event, you can modify the filter that is set on `Matching
 -->
 ## Customizing Uncoupling
 
-Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To do this, adjust the function **InsertIntegrationTableMapping** in your codeunit, as follows:
+Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To specify the codeunit, adjust the function **InsertIntegrationTableMapping** in your codeunit, as follows:
 
 ```al
 local procedure InsertIntegrationTableMapping(var IntegrationTableMapping: Record "Integration Table Mapping"; MappingName: Code[20]; TableNo: Integer; IntegrationTableNo: Integer; IntegrationTableUIDFieldNo: Integer; IntegrationTableModifiedFieldNo: Integer; TableConfigTemplateCode: Code[10]; IntegrationTableConfigTemplateCode: Code[10]; SynchOnlyCoupledRecords: Boolean)
@@ -401,7 +398,7 @@ During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 535
 
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
-Be aware that custom uncoupling is running in background as it could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables and it might take significant time.
+Custom uncoupling running in the background could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables and it might take significant time.
 
 > [!TIP]
 > To reset Company ID on uncoupling custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, users can subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as follows:
@@ -420,7 +417,7 @@ Be aware that custom uncoupling is running in background as it could modify [!IN
 For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **CDS Worker**) with the table in [!INCLUDE[prod_short](../includes/prod_short.md)] (in this case, **Employee**). There are two types of mapping:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prod_short](../includes/prod_short.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  
-- **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prod_short](../includes/prod_short.md)]. This determines which field in [!INCLUDE[prod_short](../includes/prod_short.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
+- **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prod_short](../includes/prod_short.md)]. This mapping determines which field in [!INCLUDE[prod_short](../includes/prod_short.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
 
 In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
@@ -477,7 +474,7 @@ To create an integration field mapping, follow these steps:
     end;
     ```
 
-2. In the event subscriber that we created for our integration table mapping (in step 3 in the previous process), after we insert the integration table mapping we will add field mappings, as follows:
+2. In the event subscriber that we created for our integration table mapping (in step 3 in the previous process), after we insert the integration table mapping we'll add field mappings, as follows:
 
     ```al
     InsertIntegrationFieldMapping('EMPLOYEE-WORKER', Employee.FieldNo("First Name"), CDSWorker.FieldNo(cdm_FirstName), IntegrationFieldMapping.Direction::Bidirectional, '', true, false);
@@ -545,17 +542,24 @@ During the synchronization process, certain events are published and raised by c
 |**OnBeforeApplyRecordTemplate**|Occurs before applying configuration templates to new records, and can be used to implement algorithms for determining which configuration template to use.<!--point to section about templates.-->|  
 |**OnAfterApplyRecordTemplate**|Occurs after configuration templates are applied to new records, and can be used to change data after configuration templates have been applied.|  
 |**OnBeforeTransferRecordFields**|Occurs before transferring data in modified fields (which are defined in the **Integration Field Mapping** table) from the source table to the destination table. It can be used to validate the source or destination before the data is moved.|  
-|**OnAfterTransferRecordFields**|Occurs after transferring modified field data (which are defined in the Integration Field Mapping table) from the source table to the destination table. It can be used to transfer additional data, validate lookups, and so on. Setting the **AdditionalFieldsWereModified** parameter will cause a destination record modification even though no fields were modified.|  
+|**OnAfterTransferRecordFields**|Occurs after transferring modified field data (which are defined in the Integration Field Mapping table) from the source table to the destination table. It can be used to transfer other data, validate lookups, and so on. Setting the **AdditionalFieldsWereModified** parameter will cause a destination record modification even though no fields were modified.|  
 |**OnBeforeInsertRecord**|Occurs before inserting a new destination record, and can be used to initialize fields, such as primary keys.|  
-|**OnAfterInsertRecord**|Occurs after a new destination record is inserted, and can be used to perform post-insert operations such as updating related data.|  
+|**OnAfterInsertRecord**|Occurs after a new destination record is inserted, and can be used to do post-insert operations such as updating related data.|  
 |**OnBeforeModifyRecord**|Occurs before modifying an existing destination record, and can be used to validate or change data before modification.|  
-|**OnAfterModifyRecord**|Occurs after an existing destination record is modified, and can be used to perform post-modify operations such as updating related data.|  
-|**OnTransferFieldData**|Occurs before an existing destination field value is transferred to a source field, and can be used to perform specific transformations of data when the data types of the source and the destination field are different but can be mapped.|  
+|**OnAfterModifyRecord**|Occurs after an existing destination record is modified, and can be used to do post-modify operations such as updating related data.|  
+
+The following table describes the events that are published by codeunit **Integration Record Synch. (ID 5336)**.
+
+|Event|Description|  
+|-----|-----------|  
+|**OnTransferFieldData**|Occurs before an existing destination field value is transferred to a source field, and can be used for specific data transformations when the data types of the source and the destination field are different but can be mapped.|
+|**OnGetBlobFieldEncoding**|Occurs when the process must read or write a BLOB field in [!INCLUDE[prod_short](../includes/prod_short.md)] while synchronizing the field with a multiline text field in Dataverse. Use this event to specify the encoding of the text value in the BLOB field if it differs from the default encoding, which is TextEncoding::UTF8.|  
+
 
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 > [!TIP]  
-> In order to have Company ID mapping for custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, users can subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
+> To get the same Company ID mapping for custom tables as the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
 > ```al
 >   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
 >   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
@@ -593,7 +597,7 @@ Let us explore another scenario. If we added an **Industry** field to the **Cont
 
 ## Extend the contact table and page with the Industry field
 
-To synchronize the **Industry** field we need to add the field in [!INCLUDE[prod_short](../includes/prod_short.md)]. The following code example extends table **Contact** and page **Contact Card** with new the field. For example:
+To synchronize the **Industry** field, we need to add the field in [!INCLUDE[prod_short](../includes/prod_short.md)]. The following code example extends table **Contact** and page **Contact Card** with new the field. For example:
 
 ```al
 tableextension 60001 ContactExtension extends Contact
@@ -624,7 +628,7 @@ pageextension 60001 ContactCardExtension extends "Contact Card"
 
 ## Add new integration field mapping for Industry
 
-Now that we have the field in both [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that we will subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
+Now that we have the field in both [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], we can add a new integration field mapping for it. To do that, we'll subscribe to the **OnAfterResetContactContactMapping** event in codeunit **CDS Setup Defaults** (ID 7204), as follows:
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Setup Defaults", 'OnAfterResetContactContactMapping', '', true, true)]
@@ -643,7 +647,7 @@ begin
 end;
 ```
 
-After we publish the extension we can update the mappings by running the **CDS Connection Setup** page and choosing **Use Default Synchronization Setup**.  
+After we publish the extension, we can update the mappings by running the **CDS Connection Setup** page and choosing **Use Default Synchronization Setup**.  
 
 ## See Also
 

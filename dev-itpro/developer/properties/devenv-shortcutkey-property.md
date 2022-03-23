@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -38,6 +37,8 @@ Pressing the key that you designate with this property provides the same result 
 Some shortcut keys have default assignments. Do not reuse shortcut keys that are already assigned. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](/dynamics365/business-central/keyboard-shortcuts). 
 
 Note that the shortcut keys that you set with this property have precedence over the default shortcut keys of the web browser that you are using and that they will override their behavior.
+
+For more information, see [Adding Actions to a Page](../devenv-adding-actions-to-a-page.md).
   
 ## See Also
 

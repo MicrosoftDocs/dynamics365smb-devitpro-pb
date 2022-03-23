@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Using Containments and Associations
 Containments and associations are relationships between pages in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. OData web services support navigation between pages using containments and associations.  
@@ -68,9 +67,8 @@ https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd
 ```  
   
 ## Using Associations  
-@todo: Damien to provide input. But removing the formant for Odatav3
 
- Associations are possible when two published pages are linked. Here is an example:  
+Associations are possible when two published pages are linked. Here is an example:  
   
 -   Page 42,  Sales Order, has its **SourceTable** property set to table 36,  Sales Header. The source expression for the **Sell\_to\_Customer\_No** control on page 42 is field 2,  Sell-to Customer No., in table 36.  
   
@@ -86,14 +84,14 @@ https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd
   
  This information provides the necessary information to create a URI to access a record on the Customer List page by using an association:  
   
-```  
+```http 
 https://localhost:7048/<server instance>/OData/Company('CRONUS-International-Ltd.')  
              /SalesOrder(Document_Type='Order',No='101005')/Sell_to_Customer_No_Link  
 ```  
   
  The following URI returns the same information with direct access to the Customer List page:  
   
-```  
+```http
 https://localhost:7048/<server instance>/OData/CustomerList('30000')  
 ```  
   

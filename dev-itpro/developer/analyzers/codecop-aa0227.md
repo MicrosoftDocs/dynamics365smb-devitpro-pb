@@ -1,20 +1,19 @@
 ---
-title: "CodeCop Rule AA0227"
+title: "CodeCop Warning AA0227"
 description: "In upgrade codeunits always remember to specify optional return values on methods that can cause run-time errors."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0227
+# CodeCop Warning AA0227
 Optional return value should not be omitted in upgrade codeunits.
 
 ## Description

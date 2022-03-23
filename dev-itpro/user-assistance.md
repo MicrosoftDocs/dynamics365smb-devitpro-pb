@@ -5,7 +5,6 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.date: 04/01/2021
 ms.author: edupont
 ---
@@ -87,6 +86,9 @@ The content that Microsoft publishes under the user assistance concept of *Learn
 The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
 
 There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
+
+> [!NOTE]
+> Currently, [!INCLUDE [prod_short](includes/prod_short.md)] does not require the Help for your own functionality to be created in a specific format. But we expect you to make it available on a website that the users of your functionality can access. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).
 
 For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)], free online learning is also available on Microsoft Learn. For more information, see the [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json).
 

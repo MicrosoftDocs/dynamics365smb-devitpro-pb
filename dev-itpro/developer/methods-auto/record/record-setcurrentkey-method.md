@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -57,7 +56,7 @@ You can use SetCurrentKey for selecting a key and sorting. When you use SetCurre
 
   - If the field that you specify is the first component of several keys, the key that is selected may not be the key that you expect.  
 
-  - If no keys can be found that include the fields that you specify, the return value is **false**. If you do not test the return value, a run-time error occurs. If you do test the return value, the program will continue to run even though no key was found.
+  - If no keys can be found that include the fields that you specify, the return value is **false**.
   
 ## See Also
 [Record Data Type](record-data-type.md)  

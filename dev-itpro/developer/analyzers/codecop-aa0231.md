@@ -1,20 +1,19 @@
 ---
-title: "CodeCop Rule AA0231"
+title: "CodeCop Warning AA0231"
 description: "The data classification context will be lost when using the StrSubstNo method or string concatenation as a parameter in the Error method."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0231
+# CodeCop Warning AA0231
 StrSubstNo or string concatenation must not be used as a parameter in the Error method.
 
 ## Description

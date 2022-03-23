@@ -3,12 +3,11 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/08/2021
+ms.date: 12/06/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -49,7 +48,8 @@ The following methods are available on instances of the Record data type.
 |[DeleteLinks()](record-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
 |[FieldActive(Any)](record-fieldactive-method.md)|Checks whether a field is enabled.|
 |[FieldCaption(Any)](record-fieldcaption-method.md)|Gets the current caption of the specified field as a string.|
-|[FieldError(Any [, String])](record-fielderror-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
+|[FieldError(Any [, String])](record-fielderror-joker-string-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
+|[FieldError(Any, ErrorInfo)](record-fielderror-joker-errorinfo-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
 |[FieldName(Any)](record-fieldname-method.md)|Gets the name of a field as a string.|
 |[FieldNo(Any)](record-fieldno-method.md)|Gets the number assigned to a field in the table description.|
 |[FilterGroup([Integer])](record-filtergroup-method.md)|Gets or sets the filter group that is applied to a table.|
@@ -75,7 +75,7 @@ The following methods are available on instances of the Record data type.
 |[IsEmpty()](record-isempty-method.md)|Determines whether a table or a filtered set of records is empty.|
 |[IsTemporary()](record-istemporary-method.md)|Determines whether a record refers to a temporary table.|
 |[LoadFields(Any,...)](record-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
-|[LockTable([Boolean] [, Boolean])](record-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
+|[LockTable([Boolean] [, Boolean])](record-locktable-method.md)|Starts locking on a table to protect it from write transactions that conflict with each other.|
 |[Mark([Boolean])](record-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
 |[MarkedOnly([Boolean])](record-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark (Record) method.|
 |[Modify([Boolean])](record-modify-method.md)|Modifies a record in a table.|
@@ -102,18 +102,31 @@ The following methods are available on instances of the Record data type.
 |[TableCaption()](record-tablecaption-method.md)|Gets the current caption of a table as a string.|
 |[TableName()](record-tablename-method.md)|Gets the name of a table.|
 |[TestField(Any)](record-testfield-joker-method.md)|Tests that the content of the field is not zero or blank (empty string).|
+|[TestField(Any, ErrorInfo)](record-testfield-joker-errorinfo-method.md)|Tests that the content of the field is not zero or blank (empty string).|
 |[TestField(Any, Boolean)](record-testfield-joker-boolean-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Boolean, ErrorInfo)](record-testfield-joker-boolean-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Integer)](record-testfield-joker-integer-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Integer, ErrorInfo)](record-testfield-joker-integer-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, BigInteger)](record-testfield-joker-biginteger-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, BigInteger, ErrorInfo)](record-testfield-joker-biginteger-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Decimal)](record-testfield-joker-decimal-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Decimal, ErrorInfo)](record-testfield-joker-decimal-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Guid)](record-testfield-joker-guid-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Guid, ErrorInfo)](record-testfield-joker-guid-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Text)](record-testfield-joker-text-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-text-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Label)](record-testfield-joker-label-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Label, ErrorInfo)](record-testfield-joker-label-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, TextConst)](record-testfield-joker-textconst-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, TextConst, ErrorInfo)](record-testfield-joker-textconst-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Code, ErrorInfo)](record-testfield-joker-code-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, String)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, String, ErrorInfo)](record-testfield-joker-string-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Enum, ErrorInfo)](record-testfield-joker-anyenum-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Any, ErrorInfo)](record-testfield-joker-joker-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TransferFields(var Record [, Boolean])](record-transferfields-table-boolean-method.md)|Copies all matching fields in one record to another record.|
 |[TransferFields(var Record, Boolean, Boolean)](record-transferfields-table-boolean-boolean-method.md)|Copies all matching fields in one record to another record.|
 |[Validate(Any [, Any])](record-validate-method.md)|Calls the OnValidate trigger for the field that you specify.|

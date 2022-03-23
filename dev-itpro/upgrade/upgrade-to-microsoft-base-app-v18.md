@@ -9,20 +9,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading Customized C/AL Application to Microsoft Base Application Version 18
 
 This article describes how to upgrade a customized version 14 application to a version 18 solution that uses the Microsoft Base Application.
 
  ![Shows the upgrade of an unmodified Business Central application.](../developer/media/bc14-to-18-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 18") 
-
-<!--
-
-#### Single-tenant and multitenant deployments
-
-The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
--->
 
 ## Overview
 
@@ -40,9 +32,13 @@ The process uses two special features for migrating tables and data to extension
 
     The *migration.json* file is used to migrate tables and fields from one extension to another. In this case, migration is from the table migration extension to system and base application tables. For more information about the migration.json, see [The Migration.json File](../developer/devenv-migration-json-file.md).
 
-#### Single-tenant and multitenant deployments
+### Single-tenant and multitenant deployments
 
-The process for upgrading is similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application and business data are included in the same database. While with a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
+### Personalization and customizations
+
+[!INCLUDE[windows-client-upgrade](../developer/includes/windows-client-upgrade.md)]
 
 ## <a name="prereqs"></a>Prerequisites
 
@@ -75,6 +71,7 @@ The process for upgrading is similar for a single-tenant and multitenant deploym
 Version 18 introduces the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+
 ## APPLICATION UPGRADE
 
 This section describes how to upgrade the application code. This work involves creating various extensions.
@@ -86,7 +83,73 @@ The first step, and the largest step, is to create extensions for the customizat
 - Create extensions for the target platform **7.0 Business Central 2021 release wave 1**.
 - Include dependencies for the Microsoft System, Base, and Application extensions for version 18.0.0.0.
 
-## Task 4: Create table migration extension
+For example, if your application includes custom tables, then create extensions that include table objects and logic for the custom tables. If the application includes custom fields on system or base application tables, create extensions that include table extension objects to cover the custom fields. As part of this upgrade process, the data currently stored in custom tables or fields will be migrated from the existing tables to the new ones defined in the extensions.
+
+Also, be aware that in version 18, several base application tables are now temporary tables. This change may affect the upgrade. For more information, see [Known Issues - Tables changed to temporary may prevent synchronizing new base application version](known-issues.md#temptables).
+
+## Task 4: Create empty System, Base, and customization extensions
+
+For the interim phase of migrating tables and data to extensions, you create empty extension versions for:
+
+- Microsoft system application
+- Microsoft base application
+- Each new customization extension that includes table or table extension objects for moving out of the existing base application. You don't have to create empty versions for extensions that don't include table changes. For example, the extension only includes a page object and code.
+
+The only file in the extension project that is required is an app.json. You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
+
+1. In Visual Studio Code, select **View** > **Command Palette** > **AL: Go!** and follow instructions.
+2. Delete the HelloWorld.al sample file from the project.
+3. Modify the app.json file.
+
+    The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
+    
+    - The `id` and `name` must match the value used by Microsoft's extensions.
+    - Set the `version` to any version lower than 18.0.0.0, like 14.0.0.0.
+    - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
+    - Remove all other settings. It's important that there are no `"dependencies"` set.
+    - Set the `runtime` to `"7.0"`.
+
+    The app.json files for the **System Application** and **Base Application** extensions, should look similar to following examples:
+    
+    **System Application** 
+    
+    ```json
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "name": "System Application",
+      "publisher": "Microsoft",
+      "version": "14.0.0.0",
+      "runtime": "7.0"
+    ```
+    
+    **Base Application**   
+    
+    ```json
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "Base Application",
+      "publisher": "Microsoft",
+      "version": "14.0.0.0",
+      "runtime": "7.0"
+    ```
+
+    **Customization extensions**   
+    
+    ```json
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "name": "<extension name>",
+      "publisher": "<extension publisher",
+      "version": "<extension version - must be lower than the final version>",
+      "runtime": "8.0",
+      "target": "OnPrem"
+    ```
+
+    > [!NOTE]
+    > For customization extensions, the version number must be lower than the final version for publication. Otherwise, you can't run upgrade on the extension later.
+4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
+
+> [!TIP]
+> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in **Task 14**. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
+
+## Task 5: Create table migration extension
 
 In this step, you create an extension that consists only of the non-system table objects from your custom base application. The table objects will only include the properties and field definitions. They won't include AL code on triggers or methods. This extension is an interim extension used only during the upgrade. 
 
@@ -190,9 +253,6 @@ You'll create two versions of this extension. The first version contains the tab
             },
             {
                 "id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>"
-            },
-            {
-                "id": "<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>"
             }
         ]
     }
@@ -202,7 +262,7 @@ You'll create two versions of this extension. The first version contains the tab
 
     - `63ca2fa4-4f03-4f2b-a480-172fef340d3f` identifies the system application extension
     - `437dbf0e-84ff-417a-965d-ed2bb9650972` identifies the base application extension
-    - The two other IDs are examples that identify other new customization extensions you might have. Replace or remove these entries as needed.
+    - The last entry is an example that identifies new customization extension. Include an entry for each customization extension for which you created an empty version in **Task 4**. Replace `<NNNNNNNN-NNNN-NNNN-NNNN-NNNNNNNNNNNN>` with the actual extension ID. Remove this entry if not used.
 
     For more information about the migration.json, see [The Migration.json File](../developer/devenv-migration-json-file.md).
 
@@ -222,51 +282,6 @@ You'll create two versions of this extension. The first version contains the tab
 
     To build the extension package, press Ctrl+Shift+B.
 
-## Task 5: Create empty System, Base, and customization extensions
-
-Create two empty extensions: one for the Microsoft base application and another for the System Application. Also, create an empty extension for each new customization extension. The only file in the extension project that is required is an app.json.
-
-You can create the empty extension like any other extension by adding an AL project in Visual Studio Code:
-
-1. In Visual Studio Code, select **View** > **Command Palette** > **AL: Go!** and follow instructions.
-2. Delete the HelloWorld.al sample file from the project.
-3. Modify the app.json file.
-
-    The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
-    
-    - The `id` and `name` must match the value used by Microsoft's extensions.
-    - Set the `version` to any version lower than 18.0.0.0, like 14.0.0.0.
-    - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
-    - Remove all other settings. It's important that there are no `"dependencies"` set.
-    - Set the `runtime` to `"7.0"`.
-
-    The app.json files for the **System Application** and **Base Application** extensions, should look similar to following examples:
-    
-    **System Application** 
-    
-    ```json
-      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
-      "name": "System Application",
-      "publisher": "Microsoft",
-      "version": "14.0.0.0",
-      "runtime": "7.0"
-    ```
-    
-    **Base Application**   
-    
-    ```json
-      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
-      "name": "Base Application",
-      "publisher": "Microsoft",
-      "version": "14.0.0.0",
-      "runtime": "7.0"
-    ```
-
-4. Build and compile the extension package. To build the extension package, press Ctrl+Shift+B.
-
-> [!TIP]
-> This step is only required if you need to trigger a data upgrade on these extensions, which you'll do by running Start-NavAppDataUpgrade on these extensions in Task 14. For the scenario in this article, at a minimum this step is required for the System and Base Applications. You can skip this step for any customization extensions that do not not include upgrade code.
-
 ## DATA UPGRADE
 
 ## Task 6: Prepare databases
@@ -280,6 +295,9 @@ You can create the empty extension like any other extension by adding an AL proj
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 4. (Single-tenant only) Uninstall all extensions from the tenants.
 
     To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.  For example, you can uninstall all extensions with a single command:
@@ -356,7 +374,7 @@ In this step, you configure the version 18 server instance. In particular, you c
 
 2. Configure the `DestinationAppsForMigration` setting of the server instance to table migration extension.
 
-    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 4**.
+    You'll need the ID, name, and publisher for the table migration extension that you created in **Task 5**.
 
     ```powershell
     Set-NAVServerConfiguration -ServerInstance <server instance name> -KeyName "DestinationAppsForMigration" -KeyValue '[{"appId":"<table migration extension ID>", "name":"<table migration extension>", "publisher": "<publisher>"}]'
@@ -414,7 +432,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+    This step publishes the extensions you created in **Task 4**. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
 
 3. Restart the server instance.
 
@@ -453,7 +471,7 @@ If you have a multitenant deployment, do these steps for each tenant.
 
     With a single-tenant deployment, you can omit the `-Tenant` parameter and value.
 
-3. Synchronize the tenant with the table migration extension. This is the tables only extension you created in task 4.
+3. Synchronize the tenant with the table migration extension. This is the tables only extension you created in **Task 5**.
 
     Use the [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet:
 
@@ -467,7 +485,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     > To verify the tenant state, run [Get-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/get-navtenant) cmdlet with the `-ForceRefresh` switch:
     >
     > `Get-NAVTenant <server instance> -Tenant <default> -ForceRefresh`
-4. Synchronize the empty versions of system application, base application, and customization extensions that you published in Task 8.
+4. Synchronize the empty versions of system application, base application, and customization extensions that you published in **Task 8**.
 
 ## Task 12: Install DestinationAppsForMigration and move tables
 
@@ -486,11 +504,24 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
     You only need to use the -SkipAppVersionCheck if you didn't increase the application version in Task 8. This step will automatically install the table migration extension.    -->
 
-2. To view the progress of the data upgrade, you can run Get-NavDataUpgrade cmdlet with the `–Progress` switch.
+2. Before continuing, wait until the data upgrade process completes, and the tenant status becomes operational. It can take several minutes before the process completes.
 
-    When completed, the table migration extension will be installed.
+   To view the progress of the data upgrade, run Get-NavDataUpgrade cmdlet with the `–Progress` or `–Detailed` switches, like:
+   
+   ```powershell
+   Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Progress
+   ```
+   Or
 
-3. Install the empty versions of the system, base, and custom extensions that you published in Task 8.
+   ```powershell
+   Get-NAVDataUpgrade -ServerInstance <server instance name> -Tenant <tenant ID> -Detailed
+   ```
+
+   The process is complete when you see `State = Operational` in the results.
+
+   When completed, the table migration extension will be installed.
+
+3. Install the empty versions of the system, base, and custom extensions that you published in **Task 8**.
 
     To install the extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). 
 
@@ -502,7 +533,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 13: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions.
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in **Task 1**, not the empty versions that you created in **Task 4**.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 
@@ -617,7 +648,8 @@ Run the data upgrade on the extensions in the following order:
 3. Install the Microsoft Application extension
 4. Upgrade customization extensions, Microsoft, and third-party extensions.
 
-   For customization extensions, only do this task for those extensions that have an empty version currently installed on the tenant (see **Task 11**). If you have a customization extension for which you didn't create and publish an empty version, complete the next task to install these extensions.
+   For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
+5. Install remaining customization extensions for which you didn't create and publish an empty version.
 
 <!-- Error when UsePermissionsFromExtensions false
 PS C:\Windows\system32> Start-NAVAppDataUpgrade -ServerInstance $NewInstanceName -Name "Base Application" -version $Version -Force
@@ -642,17 +674,8 @@ At line:1 char:1
     + FullyQualifiedErrorId : MicrosoftDynamicsNavServer$BC180/default,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.StartNavAppDataUpgrade
  
 -->
-## Task 18: Install remaining customization extensions
 
-Complete this task for customizations extension that you created in Task 1, but create and publish an empty version first.
-
-To install each extension, run the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp): 
-
-```powershell
-Install-NAVApp -ServerInstance <server instance name> -Name "<name>" -Version <extension version>
-```
-
-## Task 19: Upgrade control add-ins
+## Task 18: Upgrade control add-ins
 
 The [!INCLUDE[server](../developer/includes/server.md)] installation includes new versions of the Microsoft-provided Javascript-based control add-ins that must be upgraded.
 
@@ -697,7 +720,7 @@ Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Cl
 Set-NAVAddIn -ServerInstance $InstanceName -AddinName 'Microsoft.Dynamics.Nav.Client.WelcomeWizard' -PublicKeyToken 31bf3856ad364e35 -ResourceFile ($AppName = Join-Path $ServicesAddinsFolder 'WelcomeWizard\Microsoft.Dynamics.Nav.Client.WelcomeWizard.zip')
 ```
 
-## Task 20: Install upgraded permissions sets
+## Task 19: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
@@ -723,7 +746,7 @@ In this task, you install the custom permission sets that you upgraded earlier i
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
 
-## Task 21: Change application version
+## Task 20: Change application version
 
 This task serves two purposes. It ensures that personalization works as expected after upgrade. It's also useful for support purposes and answering a common question about the application version.  
 
@@ -756,6 +779,10 @@ We recommend setting the value to application build number for the version 18 up
    ```powershell
    Start-NAVDataUpgrade -ServerInstance <server instance name> -FunctionExecutionMode Serial -Tenant <tenant ID>
    ```
+
+The data upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Progress` or `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Detailed`.
+
+Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance until the process is complete, that is, when you see `State = Operational` in the results from the Get-NAVDataUpgrade cmdlet. Also, you won't be able to do operations, like installing extensions, until the state is operational. It can take several minutes before the process completes.
 
 ## Post-upgrade tasks
 

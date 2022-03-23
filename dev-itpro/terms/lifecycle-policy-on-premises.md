@@ -5,7 +5,6 @@ author: jswymer
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ms.date: 04/13/2021
 
@@ -44,6 +43,9 @@ Licensed customers must stay current with updates to the [!INCLUDE[prod_long](..
 
 \*\* In order to obtain mainstream support after April 14, 2020, customers must update to the April 2019 release or a later update for the April 2019 version  
 
+> [!CAUTION]
+> Once a product version under fixed lifecycle is out of mainstream support, access to extended support requires Unified support status. Learn more about extended support [here](/lifecycle/policies/fixed), and learn more about Unified support [here](https://www.microsoft.com/unifiedsupport/overview).
+
 ## See Also
 
 [Microsoft Lifecycle Policy for Business Central on-premises](/lifecycle/products/dynamics-365-business-central-onpremises-modern-policy)  
@@ -51,3 +53,4 @@ Licensed customers must stay current with updates to the [!INCLUDE[prod_long](..
 [Development and Administration Help for Dynamics 365 Business Central](../index.md)  
 [Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../upgrade/upgrading-to-business-central.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
+[Service Overview for Business Central Online](../service-overview.md)  

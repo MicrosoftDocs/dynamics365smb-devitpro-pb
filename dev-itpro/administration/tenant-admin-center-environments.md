@@ -2,13 +2,12 @@
 title: Managing Production and Sandbox Environments
 description: Use the Business Central administration center to manage your tenant environments, both sandbox and production environments. Create new environments, or restore point-in-time backups.
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 10/01/2021
+ms.date: 01/26/2022
 ms.author: jswymer
 ---
 
@@ -34,6 +33,8 @@ You can create environments of different types. Choose the type of environment b
 
 [!INCLUDE [admin-env-prod](../developer/includes/admin-env-prod.md)]
 
+[!INCLUDE [admin-suspended](../includes/admin-suspended.md)]
+
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
 ### Sandbox environments
@@ -52,7 +53,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provid
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
-You can create new environments that are either production environments or sandboxes. You can also copy an existing environment. For more information, see the [Copy an environment](#copy-an-environment) section.  
+You can create new environments that are either production environments or sandboxes. You can also copy an existing environment. For more information, see [Copy a Production or Sandbox Environment](tenant-admin-center-environments-copy.md).  
 
 ### To create a new environment that is not a copy of an existing environment
 
@@ -82,37 +83,15 @@ The version list may also have one or more *preview* versions. Preview versions 
 
 When you create a sandbox environment on a preview version, the environment will automatically be updated to new preview versions when they become available. However, the environment won't be updated to the production version. Once a sandbox environment is on a preview version, it must stay on a preview version until it's deleted. The environment can also be deleted if an update between preview versions fails. We recommend that preview versions are used only for temporary testing of an upcoming release.
 
-## Copy an environment
-
-[!INCLUDE [2021_releasewave2](../includes/2021_releasewave2.md)]
-
-You can create an environment that is a copy of an existing environment, such as a sandbox that is based on production for troubleshooting, or a production environment that is based on a sandbox, for example. When you create an environment as a copy of another environment, the new environment is created on the same application version as the environment that you are copying. The new environment will contain all per-tenant extensions and AppSource extensions that are installed and published in the original environment that is being copied.
-
-### To copy an environment
-
-1. Select **Environments**, then select the environment you want to rename.
-2. On the **Environment Details** page, choose the **Copy** action.
-3. In the **Copy environment** pane, specify the type of environment that you want to create based on the current environment.
-4. Specify a name for the new environment.
-5. Choose the **Create** action.
-
-When the process starts, you can go to the list of your environments and see the status of the new environment. At first, you'll see the new environment with the state **Copy queued**, which changes to **Copying**, and then **Active** once the new environment is fully up and running. The original environment that the new environment is based on remains active.  
-
-### Environment copies
-
-[!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
-
 ## Manage access using Azure Active Directory groups
 
-To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, direct members of that Azure AD group will be synchronized to Business Central and granted access to that environment. Using Azure AD groups brings the following benefits:
-
-- Central management of access to environments through Azure AD groups.  
-- Only the users in the assigned Azure AD group are imported into the environment.
+To manage access at the environment level, you can assign an Azure Active Directory (Azure AD) group to the environment. By assigning an Azure AD group to an environment, only direct and indirect members of the group are granted access to the environment. Indirect members are users in another group, which itself is a member of the group assigned to the environment. Although all licensed users in Azure AD will be added to the environment when it's synchronized with Microsoft 365, only group members can sign in.
 
 From the **Environments** page, you'll see the currently assigned group in the **Security Group** column. **Not set** indicates that no group has been assigned. **Not available** indicates that the group that was assigned is no longer available in the Azure AD.
 
 > [!NOTE]
-> The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group. 
+> The restrictions imposed by a security group don't apply to administrators. Local and delegated admins can freely sign in to all environments, regardless of the assigned group.
+ 
 ### Assign, change, or remove a group
 
 Before you can assign an Azure AD group to an environment, the group must be created in your Azure AD tenant. For more information, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) in the Azure documentation.
@@ -135,28 +114,6 @@ Before you can assign an Azure AD group to an environment, the group must be cre
 > [!NOTE]
 > If you change or remove a group, it can take a while before the changes to take effect or access is revoked from users.
 
-## <a name="opslog"></a>Log of administrative operations
-
-The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
-
-### Operations
-
-Currently, the log includes the following operations:
-
-|Type|Description|More information|
-|----|-----------|----------------|
-|Rename environment|Environment was renamed by using the Admin Center.|[Rename an Environment](tenant-admin-center-environments-rename.md)|
-|Restore environment|Environment was restored by using the Admin Center.|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
-|Move environment|An environment was moved to another Azure Active Directory organization.|[Move an Environment](tenant-admin-center-environments-move.md)
-|Environment app hotfix|A hotfix was applied to the app by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
-|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api.md#install-an-app)|
-|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api.md#uninstall-an-app)|
-|Environment app update |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api.md#update-an-app)|
-
-### Retention period
-
-The operations are kept for 365 days, after which they're deleted.
-
 ## Delete an environment
 
 You can delete environments in the admin center, such as when a sandbox environment is not longer needed.  
@@ -166,12 +123,40 @@ You can delete environments in the admin center, such as when a sandbox environm
 >
 > Also, be very careful before you choose the *Delete* action for the environment. The action is irreversible.
 
+## <a name="opslog"></a>Log of administrative operations
+
+The **Operations** section of [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] provides a log of operations that internal administrators and delegated administrators from the partner have made in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] or through the admin center API. Use this log to see which operations were created and when. You can also access detailed error messages in this log, should any operation fail.
+
+### Operations
+
+Currently, the log includes the following operations:
+
+|Type|Description|Admin center|API|Extension Management Page|
+|----|-----------|------------|---|-------------------------|
+|Copy environment|An environment was created from a copy of another environment.|[See...](tenant-admin-center-environments-copy.md)|[See...](administration-center-api_environments.md#copy-environment)||
+|Create environment |A new environment was created|[See...](#create-a-new-environment)|[See...](administration-center-api_environments.md#create-new-environment)||
+|Delete environment|An environment was deleted.|[See...](#delete-an-environment)|[See...](administration-center-api_environments.md#delete-environment)||
+|Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li></ul>|[See update management...](tenant-admin-center-update-management.md)<br /><br />[See telemetry...](tenant-admin-center-telemetry.md)|[See...](administration-center-api_environment_settings.md)||
+|Move environment|An environment was moved to another Azure Active Directory organization.|[See...](tenant-admin-center-environments-move.md)|||
+|Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||
+|Restart environment|Environment was restarted|[See...](tenant-admin-center-manage-sessions.md#restart-environment)||
+|Update environment|An environment is updated to a newer version.|[See...](tenant-admin-center-update-management.md)|[See...](administration-center-api_environment_settings.md)|
+|Environment app hotfix|A hotfix was applied to the app by using the App Management API.||[See...](appmanagement/app-management-api.md#schedule-environment-hotfix)||
+|Environment app install|App was installed by using the tenant's **Extension Management** page or the API install endpoint.||[See...](administration-center-api_app_management.md#install-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)|
+|Environment app uninstall|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.||[See...](administration-center-api_app_management.md#uninstall-an-app)|[See...](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)|
+|Environment app update |App was updated either by the Admin Center or API update endpoint.|[See...](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)|[See...](administration-center-api_app_management.md#update-an-app)||
+
+### Retention period
+
+The operations are kept for 180 days, after which they're deleted.
+
 ## See also
 
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Managing Apps](tenant-admin-center-manage-apps.md)  
 [Updating Environments](tenant-admin-center-update-management.md)  
 [Managing Sessions](tenant-admin-center-manage-sessions.md)  
+[Copy a Production or Sandbox Environment](tenant-admin-center-environments-copy.md)  
 [Rename Environments](tenant-admin-center-environments-rename.md)  
 [Restoring an Environment](tenant-admin-center-backup-restore.md)  
 [Move an Environment to another Azure Active Directory organization](tenant-admin-center-environments-move.md)  

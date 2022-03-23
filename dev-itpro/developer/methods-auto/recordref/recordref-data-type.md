@@ -3,12 +3,11 @@ title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 11/03/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -75,7 +74,7 @@ The following methods are available on instances of the RecordRef data type.
 |[KeyCount()](recordref-keycount-method.md)|Gets the number of keys that exist in the table that is referred to by the RecordRef. Returns an error if no table is selected.|
 |[KeyIndex(Integer)](recordref-keyindex-method.md)|Gets the KeyRef of the key that has the index specified in the table that is currently selected. The key can be composed of fields of any supported data type. Data types that are not supported include BLOBs, FlowFilters, variables, and functions. If the sorting key is set to a field that is not part of a key, then the KEYINDEX is -1.|
 |[LoadFields(Integer,...)](recordref-loadfields-method.md)|Accesses the table's corresponding data source and loads the values of the specified fields on the record.|
-|[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Locks a table to protect it from write transactions that conflict with each other.|
+|[LockTable([Boolean] [, Boolean])](recordref-locktable-method.md)|Starts locking on a table to protect it from write transactions that conflict with each other.|
 |[Mark([Boolean])](recordref-mark-method.md)|Marks a record. You can also use this method to determine whether a record is marked.|
 |[MarkedOnly([Boolean])](recordref-markedonly-method.md)|Activates a special filter. After you use this function, your view of the table includes only records marked by the Mark method (RecordRef).|
 |[Modify([Boolean])](recordref-modify-method.md)|Modifies a record in a table.|

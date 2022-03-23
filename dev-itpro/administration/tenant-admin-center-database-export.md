@@ -3,7 +3,6 @@ title: Exporting Databases in the Admin Center
 description: Use the Business Central administration center to export tenant databases per environment.  
 author: jswymer
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -25,6 +24,9 @@ From the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], 
 - You can only request a database export if the customer has a paid Business Central subscription.
 - You must have explicit permission to export databases. For more information, see the [Users who can export databases](#users-who-can-export-databases) section.
 - You can't export your database to an Azure premium storage account. The steps in this article are only supported on Azure standard storage accounts.
+
+> [!NOTE]
+> For each environment, you can export the database a maximum of 10 times per month. You can see the number of exports still remaining for the current month in the **Create Database Export** pane when creating the export file.
 
 ## Setting up Azure storage
 
@@ -69,8 +71,6 @@ When you've created the Azure storage account and generated the SAS URI, you can
 
 Once the export operation begins, the BACPAC file is generated and exported to the indicated Azure storage account. The operation may take several minutes to several hours depending on the size of the database. You can close the browser window with the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] during the export. When the export completes, you can access the export file in the defined container in your Azure storage account. Optionally, you can import the data into a new database in Azure SQL Database or SQL Server for further processing. For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import).  
 
-> [!NOTE]
-> There is a limit to the number of times you can export the database for each environment in any given month. The **Create Database Export** pane includes information about the number of exports still remaining that month.
 
 ## Viewing the export history
 

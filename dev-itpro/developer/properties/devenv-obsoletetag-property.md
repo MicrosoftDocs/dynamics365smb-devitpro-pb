@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -63,7 +62,7 @@ ObsoleteTag = 'This field is being deprecated with the newest build of the produ
 
 ## Remarks
 
-Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. For more information, see [Obsolete Attribute](../methods/devenv-obsolete-attribute.md).
+Use this property to add valuable information to developers about an object or element that will become obsolete in time or is already obsolete. For procedures and variables, the obsolete tag can be specified as an optional parameter in the `Obsolete` attribute: `[Obsolete('<Reason>','<tag>')]`. For more information, see [Obsolete Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-obsolete-attribute).
 
 For an elaborate example of deprecating, see [Best Practices for Deprecation of Code in the Base App](../devenv-deprecation-guidelines.md).
 
@@ -73,4 +72,4 @@ For an elaborate example of deprecating, see [Best Practices for Deprecation of 
 [ObsoleteState](devenv-obsoletestate-property.md)  
 [Properties](devenv-properties.md)  
 [MethodType Property (Upgrade Codeunits)](../devenv-methodtype-property-upgrade-codeunits.md)  
-[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)  
+[Obsolete Attribute](../attributes/devenv-obsolete-attribute.md)

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -54,5 +53,5 @@ From the client, the property value can be overwritten by using page **9880 Data
 [Optimizing SQL Server Performance](../../administration/optimize-sql-server-performance.md)  
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  
-[InDataSet Property](../methods/devenv-indataset-attribute.md)  
+[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)  
 [Specifying Data Access Intent for GET requests](../devenv-connect-apps-tips.md#DataAccessIntent)

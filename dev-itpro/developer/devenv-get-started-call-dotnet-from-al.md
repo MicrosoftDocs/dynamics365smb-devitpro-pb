@@ -2,14 +2,13 @@
 title: "Getting started with Microsoft .NET Interoperability from AL"
 description: "Description of the process of referencing and using .NET types"
 author: solsen
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
+ms.custom: intro-internal
 ---
 
 # Getting started with Microsoft .NET Interoperability from AL
@@ -17,7 +16,9 @@ ms.author: solsen
 You can call .NET type members, including methods, properties, and constructors, from AL code. In this article we will guide you through the process of creating an extension that uses .NET types.
 
 > [!IMPORTANT]  
-> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md#Appjson).
+> .NET Interoperability is only available on-premise. If you want to use this functionality, you must set the `"target": "OnPrem"` in the `app.json` file. For more information, see [JSON Files](devenv-json-files.md#Appjson). 
+> 
+> Alternatively you can use services such as Azure Functions to call into .NET dlls from AL, which will also work online. For online training, see [Use Azure Functions with Dynamics 365 Business Central](/learn/modules/use-azure-functions/).
 
 ## Enabling .NET Interoperability
 
@@ -94,7 +95,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
         now: DotNet MyDateTime;
     begin
         now := now.UtcNow();
-        Message('Hello, world! It is: ' + now.ToString());
+        Message('Hello, world! It is: %1 ' + now.ToString());
     end;
 }
 ```

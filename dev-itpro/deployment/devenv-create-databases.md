@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Creating Databases in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
@@ -83,15 +82,15 @@ To create an application database, complete the following steps:
     For example:
 
     ```powershell
-    Set-NAVServerConfiguration BC118 -KeyName DatabaseName -KeyValue "MyBCApplicationDB"
+    Set-NAVServerConfiguration -ServerInstance BC -KeyName DatabaseName -KeyValue "MyBCApplicationDB"
     ```
 
-4. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) to set the application version on the database.
+4. Run the [Set-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) to set the application version on the new database.
 
     To set the application version, use the `-ApplicationVersion` parameter. The value must have the format `major.minor.[build[.revision]]`, such as '18.1', '18.1.0', or 18.1.0.0'. For example:
 
     ```powershell
-    Set-NAVApplication BC -ApplicationVersion 18.1.0.0 -Force
+    Set-NAVApplication -ServerInstance BC -ApplicationVersion 18.1.0.0 -Force
     ```
 
     This step is required to synchronize your tenant and extensions later. This step sets a value to the `applicationversion` column in the **$ndo$dbproperty** table of the application database.

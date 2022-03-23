@@ -3,12 +3,11 @@ title: "TableType Property"
 description: "Specifies the table type."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 12/17/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,9 +27,9 @@ Specifies the table type.
 |-----------|---------------------------------------|
 |**Normal**|Specifies the table type used for Dynamics 365 Business Central.|
 |**CRM**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
-|**ExternalSQL**|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database.|
-|**Exchange**|This is for internal use only.|
-|**MicrosoftGraph**|This is for internal use only.|
+|**ExternalSQL**|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database. This table type is not supported in Business Central online.|
+|**Exchange**|This table type is not supported in Business Central online.|
+|**MicrosoftGraph**|This table type is not supported in Business Central online.|
 |**CDS**|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
 |**Temporary**|Specifies the table as an in-memory table used to store temporary data.|
 

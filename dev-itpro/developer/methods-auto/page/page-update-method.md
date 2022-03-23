@@ -3,12 +3,11 @@ title: "Page.Update([Boolean]) Method"
 description: "Saves the current record and then updates the controls on the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/15/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -39,7 +38,7 @@ Set this parameter to true if you want to save the current record. Set this para
 
 ## Remarks
 
-The `SaveRecord` default value is true. The default value of SaveRecord, however, depends on whether SourceTable is specified or not. If SourceTable is not defined (== null), then the default value is `false`. If SourceTable is specified then the default value is `true`.
+The `SaveRecord` default depends on whether SourceTable is specified or not. If SourceTable is not defined (== null), then the default value is `false`. If SourceTable is specified then the default value is `true`.
 
 ## See Also
 

@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -14,8 +13,6 @@ ms.author: solsen
 The table extension object allows you to add additional fields or to change some properties on a table provided by the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service. In this way, you can add data to the same table and treat it as a single table. For example, you may want to create a table extension for a retail winter sports store. In your solution you want to have `ShoeSize` as an additional field on the customer table. Adding this as an extension allows you to write code for the customer record and also include values for the `ShoeSize`.
 
 Along with defining other fields, the table extension is where you write trigger code for your additional fields.
-
-Just like in the table object, you can define keys for fields added in the table extension. But you can also add keys for fields that only exist on the table you extend, in case you want to extend the keys provided in the base table definition. See [Table Keys](devenv-table-keys.md) for examples on how to define keys in a table extension.
 
 When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] , you will follow the code layout for a table extension as shown in the example below.
 
@@ -31,6 +28,8 @@ When developing a solution for [!INCLUDE[d365fin_long_md](includes/d365fin_long_
 > [!IMPORTANT]  
 > Extending tables from Dynamics 365 for Sales is currently not supported.
 
+## Using a table extension to add a key to the base table
+Just like in the table object, you can define keys for fields added in the table extension. But you can also add keys for fields that only exist on the table you extend, in case you want to extend the keys provided in the base table definition. See [Table Keys](devenv-table-keys.md) for examples on how to define keys in a table extension.
 
 ## Snippet support
 Typing the shortcut `ttableext` will create the basic layout for a table extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.

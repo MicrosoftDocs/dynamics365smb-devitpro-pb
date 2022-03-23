@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,6 +23,7 @@ Sets whether an Enum can be assigned to from another Enum type. This is intended
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+The default value of this property is `false`.
 
 > [!IMPORTANT]  
 > This property provides backwards compatibility in certain cases when converting from options to enums. It should not be used for enums that are not converted from options. 
@@ -35,6 +35,7 @@ Sets whether an Enum can be assigned to from another Enum type. This is intended
 ```AL
 AssignmentCompatibility = true;
 ```
+
 
 ## See Also
 [Extensible Enums](../devenv-extensible-enums.md)  

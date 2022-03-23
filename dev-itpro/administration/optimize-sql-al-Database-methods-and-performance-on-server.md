@@ -1,19 +1,21 @@
 ---
 title: "AL Database Methods and Performance on SQL Server"
+description: Read about the relationship between basic database methods in AL and SQL statements in Business Central.  
+author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.author: jswymer
+ms.date: 12/21/2021
 ---
 
 # AL Database Methods and Performance on SQL Server
 
 This topic describes the relationship between basic database methods in AL and SQL statements.  
   
-## Get, Find, and Next  
+## Get, Find, FindSet, and Next  
 
 The AL language offers several methods to retrieve record data. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], records are retrieved using multiple active result sets (MARS). Generally, retrieving records with MARS is faster than with server-side cursors. Additionally, each function is optimized for a specific purpose. To achieve optimal performance you must use the method that is best suited for a given purpose.  
   
@@ -39,7 +41,7 @@ The AL language offers several methods to retrieve record data. In [!INCLUDE[pro
   
 ### Dynamic result sets  
 
-Any result set that is returned from a call to the Find methods discussed in the previous section is dynamic. That means that the result set is guaranteed to contain any changes that you make further ahead in the result set. However, this feature comes at a cost. if any modifications are made to a table which is being traversed, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] might have to issue an extra SQL statement to guarantee that the result set is dynamic.  
+Any result set that is returned from a call to the Find methods discussed in the previous section is dynamic. That means that the result set is guaranteed to contain any changes that you make further ahead in the result set. However, this feature comes at a cost. If any modifications are made to a table which is being traversed, then [!INCLUDE[prod_short](../developer/includes/prod_short.md)] might have to issue an extra SQL statement to guarantee that the result set is dynamic.  
   
 The following code shows how records are most efficiently retrieved. **FindSet** is the most efficient method to use because this example reads all records.  
   
@@ -52,17 +54,17 @@ if FindSet then
   
 ## <a name="calc"></a>CalcFields, CalcSums, and Count  
 
-Each call to **CalcFields**, **CalcField**, **CalcSums**, or **CalcSums** methods that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
+Each call to **CalcFields**, **CalcField**, **CalcSum**, or **CalcSums** methods that calculates a sum requires a separate SQL statement unless the client has calculated the same sum or another sum that uses the same SumIndexFields or filters in a recent operation, and therefore, the result is cached.  
   
-Each **CalcFields** or **CalcSums** request should be confined to use only one SifT index. The SifT index can only be used if:  
+Each **CalcFields** or **CalcSums** request should be confined to use only one SIFT index. The SIFT index can only be used if:  
   
-- All requested sum-fields are contained in the same SifT index.  
+- All requested sum-fields are contained in the same SIFT index.  
   
-- The filtered fields are part of the key fields specified in the SifT index containing all the sum fields.  
+- The filtered fields are part of the key fields specified in the SIFT index containing all the sum fields.  
   
 if neither of these requirements is fulfilled, then the sum will be calculated directly from the base table.  
   
-In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SifT indexes can be used to count records in a filter provided that a SifT index exists that contains all filtered fields in the key fields that are defined for the SifT index.  
+In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SIFT indexes can be used to count records in a filter provided that a SIFT index exists that contains all filtered fields in the key fields that are defined for the SIFT index.  
   
 ## SetAutoCalcFields  
 
@@ -118,9 +120,49 @@ until Customer.Next = 0;
   
 ## Insert, Modify, Delete, and LockTable
 
-Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. if the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
-  
-The **LockTable** method does not require any separate SQL statements. It only causes any subsequent reading from the table to lock the table or parts of it.  
+Each call to **Insert**, **Modify**, or **Delete** methods requires a separate SQL statement. If the table that you Modify contains SumIndexes, then the operations will be much slower. As a test, select a table that contains SumIndexes and execute one hundred **Insert**, **Modify**, or **Delete** operations to measure how long it takes to maintain the table and all its SumIndexes.  
+
+Cloning a record before a **Modify** or **Delete** operation issues an extra SQL statement, since the SQL `SELECT` query is restarted every time the table is cloned. A record will be cloned when calling the [Copy Method](../developer/methods-auto/record/record-copy-method.md), when using a **RecordRef** or when the record is not passed with the `var` parameter within a function.
+
+The following code samples will lead to a bad performance, since they will issue an extra SQL statement per record in the table.
+
+```
+if (MyTable.FindSet()) then
+    repeat begin
+        MyTableCopy.Copy(MyTable);
+        // ...
+        MyTableCopy.Modify(); // or .Delete();
+    end until MyTable.Next() = 0;
+```
+
+```
+if (MyTable.FindSet()) then
+    repeat begin
+        RecRef.GetTable(MyTable);
+        // ...
+        RecRef.Modify(); // or .Delete();
+    end until MyTable.Next() = 0;
+```
+
+Instead, you should do the following, which only requires an extra SQL statement:
+
+```
+RecRef.Open(Database::"My Table");
+if (RecRef.FindSet()) then
+    repeat begin
+        // ...
+        RecRef.Modify(); // or .Delete();
+    end until RecRef.Next() = 0;
+```
+
+```
+if (MyTable.FindSet()) then
+  repeat begin
+      MyTable.Modify(); // or .Delete();
+  end until MyTable.Next() = 0;
+```
+
+The **LockTable** method does not require any separate SQL statements. It will cause any subsequent reading from any tables to be done with an update lock. For more information, see [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md). 
 
 ## ModifyAll and DeleteAll
 

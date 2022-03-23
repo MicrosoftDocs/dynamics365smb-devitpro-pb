@@ -1,14 +1,13 @@
 ---
 title: "ErrorBehavior Attribute"
-description: "Specifies the behavior of colletable errors inside the method scope."
+description: "Specifies the behavior of collectable errors inside the method scope."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/13/2021
+ms.date: 12/17/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -18,7 +17,7 @@ author: SusanneWindfeldPedersen
 # ErrorBehavior Attribute
 > **Version**: _Available or changed with runtime version 8.0._
 
-Specifies the behavior of colletable errors inside the method scope.
+Specifies the behavior of collectable errors inside the method scope.
 
 
 ## Applies To

@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
@@ -61,6 +60,35 @@ if TestFile.Open('C:\temp\simple.xml') then begin
 else  
   Error(Text001);  
 ```  
+
+### Example
+
+If you want to perform arithmetic operations on a variable and then assign the result to the same variable, you can use the following syntax.
+
+```AL
+Counter := 0;
+
+// you can use this syntax 
+
+// for addition
+Counter += 1;
+// for subtraction
+Counter -= 1;
+// for multiplication
+Counter *= 1:
+// for division
+Counter /= 1;
+
+// instead of 
+Counter := Counter + 1;
+```
+
+The following examples shows how to use this syntax on variables of the [Text Data Type](methods-auto/text/text-data-type.md).
+
+```AL
+String := "Hello ";
+String += "World";
+```
 
 ## Method statements
 You use method statements to execute either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 

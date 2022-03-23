@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Resolving My Settings Page Implementation After a Database Conversion
 When you convert a [!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)] database, the My Settings page in the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)] will not work properly. This article explains how to resolve the problem.

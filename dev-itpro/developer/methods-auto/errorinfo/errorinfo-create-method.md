@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,7 +25,7 @@ Error :=   ErrorInfo.Create(Message: String [, Collectible: Boolean] [, var Reco
 ```
 ## Parameters
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The error message.  
 *[Optional] Collectible*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -41,7 +40,7 @@ A field number that the error relates to. This parameter is optional.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 A page that the error relates to. This parameter is optional.  
 *[Optional] ControlName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A control name that the error relates to. This parameter is optional.  
 *[Optional] Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
@@ -62,6 +61,8 @@ Set of additional dimensions, specified as a dictionary. This parameter is optio
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
+
+[Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)

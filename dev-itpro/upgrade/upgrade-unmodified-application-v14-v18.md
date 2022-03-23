@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading Unmodified C/AL Application to Version 18
 
@@ -17,9 +16,15 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-18-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
-## Single-tenant and multitenant deployments
+## General information
+ 
+### Single-tenant and multitenant deployments
 
-The process for upgrading the similar for a single-tenant and multitenant deployment. However, there are some inherent differences. With a single-tenant deployment, the application code and business data are in the same database. In a multitenant deployment, application code is in a separate database (the application database) than the business data (tenant). In the procedures that follow, for a single-tenant deployment, consider references to the *application database* and *tenant database* as the same database. Steps are marked as *Single-tenant only* or *Multitenant only* where applicable.
+[!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
+
+### Personalization and customizations
+
+[!INCLUDE[windows-client-upgrade](../developer/includes/windows-client-upgrade.md)]
 
 ## PowerShell variables used in tasks
 
@@ -95,6 +100,9 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 4. Uninstall all extensions from the old tenants.
 
     In this step, you uninstall any extensions that are currently installed on the database.
@@ -522,6 +530,10 @@ We recommend setting the value to application build number for the version 17 up
    ```powershell
    Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -FunctionExecutionMode Serial -Tenant $TenantId
    ```
+
+The data upgrade process will be running in the background after running the above Start-NAVDataUpgrade cmdlet. You check on the progress using the Get-NAVDataUpgrade cmdlet: such as: `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Progress` or `Get-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -Detailed`.
+
+Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance until the process is complete, that is, when you see `State = Operational` in the results from the Get-NAVDataUpgrade cmdlet. Also, you won't be able to do operations, like installing extensions, until the state is operational. It can take several minutes before the process completes.
 
 ## Post-upgrade tasks
 

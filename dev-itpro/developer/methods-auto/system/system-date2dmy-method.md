@@ -3,12 +3,11 @@ title: "System.Date2DMY(Date, Integer) Method"
 description: "Gets the day, month, or year of a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,9 +29,14 @@ Number :=   System.Date2DMY(Date: Date, Value: Integer)
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 The input date.  
+
 *Value*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-  
+Specifies what the method should return. The valid options are 1, 2, and 3.
+- The value 1 corresponds to Day (1-31).
+- The value 2 corresponds to Month (1-12).
+- The value 3 corresponds to Year.
+        
 
 
 ## Return Value

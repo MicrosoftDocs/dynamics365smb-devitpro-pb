@@ -1,9 +1,7 @@
 ---
-    title: Set Up Standard Company Configuration Packages
+    title: Set Up Company Configuration Packages
     description: Streamline your implementation process by turning a set of company types you use with most customers into company configuration packages available for reuse.
     author: edupont04
-
-    ms.service: dynamics365-business-central
     ms.topic: conceptual
     ms.devlang: na
     ms.tgt_pltfrm: na
@@ -13,11 +11,11 @@
     ms.author: edupont
 
 ---
-# Set Up Standard Company Configuration Packages
+# Set Up Company Configuration Packages
 
 As you grow your business, you will likely come to rely on a set of company types that you use with most of your customers. You can streamline your implementation process by turning these types into company configuration packages that are available for reuse.  
 
-In general, create a configuration package per functional area, for example, create a package for your manufacturing functionality. That lets you apply and set up new areas in a company as you need them  
+In general, create a configuration package per functional area. For example, create a package for your manufacturing functionality. That lets you apply and set up new areas in a company as you need them  
 
 Another approach would be to create a package that includes the tables that define setup, such as the following:  
 
@@ -34,7 +32,7 @@ Another approach would be to create a package that includes the tables that defi
 - VAT Posting Setup  
 - Inventory Posting Setup  
 
-To see a complete list of setup tables, Choose the :::image type="icon" source="../developer/media/search-icon.png" border="false"::: icon, enter **Manual Setup**, and then choose the related link.  
+To see a complete list of setup tables, choose the :::image type="icon" source="../developer/media/search-icon.png" border="false"::: icon, enter **Manual Setup**, and then choose the related link.  
 
 > [!IMPORTANT]
 > Use caution if you choose tables or fields that have the same temporal name but are differentiated by special characters, such as %, &, <, >, (, and ). For example, table "XYZ" might contain the "Field 1" and "Field 1%" fields.

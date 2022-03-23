@@ -2,7 +2,6 @@
 title:  App Key Vault Secret Trace Telemetry | Microsoft Docs
 description: Learn about app key vault secret trace telemetry in Business Central  
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

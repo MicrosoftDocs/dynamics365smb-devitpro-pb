@@ -6,22 +6,25 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ms.date: 07/09/2021
 ---
 
-# Enable Sending Telemetry to Application Insights
+# Enable Environment Telemetry in Application Insights
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-This article describes how to set up tenants to send telemetry data to Azure Application Insights for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises environments.
+This article describes how to set up sending telemetry data to Azure Application Insights for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises environments.
 
-## <a name="appinsights"></a>Get started
+> [!NOTE]
+> For extension telemetry, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
+
+
+## <a name="appinsights"></a>Get started (set up Azure Application Insights)
 
 1. If you don't already have one, get a subscription to [Microsoft Azure](https://azure.microsoft.com).
 2. Sign in to the [Azure portal](https://portal.azure.com).
-3. Create an Application Insights resource by following the guidelines at [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
+3. Create an Azure Application Insights resource by following the guidelines at [Workspace-based Application Insights resources](/azure/azure-monitor/app/create-workspace-resource).
 
     [!INCLUDE [admin-appinsights-germany](../includes/admin-appinsights-germany.md)]
 
@@ -41,50 +44,56 @@ This article describes how to set up tenants to send telemetry data to Azure App
     - For later versions, copy the **Connection String**.
 
         > [!NOTE]
-        > For these versions, you can use either the instrumentation key or the connection string. However, for reliability, we recommend that you use the connection string.  
+        > For these versions, you can use either the instrumentation key or the connection string. However, for reliability, we recommend that you use the connection string. 
 
-## Enable on tenants
+        > [!NOTE]
+        > Transition to using connection strings for data ingestion in Application Insights by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Applications Insights resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
+
+## Enable telemetry on tenants
 
 Once you have the resource and its connection string or instrumentation key, you can enable your tenants to send telemetry to your Application Insights resource.
 
 The way you enable Application Insights depends on whether you want to connect to a [!INCLUDE [prod_short](../includes/prod_short.md)] online or [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. For on-premises, if also depends on whether the [!INCLUDE[server](../developer/includes/server.md)] instance is configured as a single-tenant or multitenant instance.
 
-1. For [!INCLUDE [prod_short](../includes/prod_short.md)] online:
+### For online environments
 
-    1. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
+For [!INCLUDE [prod_short](../includes/prod_short.md)] online:
 
-        > [!IMPORTANT]  
-        > The next steps require a restart to the environment, which is triggered automatically at the end of this procedure. Plan to do this during non-working hours to avoid disruptions.
-    2. On the **Environment** page, the **Application Insights Key** field shows if the environment already uses application insights.
+1. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
 
-        To enable application insights, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
+    > [!IMPORTANT]  
+    > The next steps require a restart to the environment, which is triggered automatically at the end of this procedure. Plan to do this during non-working hours to avoid disruptions.
+2. On the **Environment** page, the **Application Insights Key** field shows if the environment already uses application insights.
 
-        > [!NOTE]
-        > In version 15 and 16, to enable application insights, choose the **Application Insights Key** action, and then specify the instrumentation key.
-    3. Choose the **Save** button.
+    To enable application insights, choose the **Define** caption, and then, in the **Set Application Insights Key** pane, choose the **Enable application insights** field and enter the instrumentation key in the **Instrumentation Key** field.  
 
-2. For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises:
+    > [!NOTE]
+    > In version 15 and 16, to enable application insights, choose the **Application Insights Key** action, and then specify the instrumentation key.
+3. Choose the **Save** button.
 
-    1. Set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
+### For on-premises environments (single-tenant mode)
+For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance. 
 
-3. For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises:
+For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
 
-    1. Enable this feature on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
+### For on-premises environments (multi-tenant mode)
+For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, enable telemetry on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
-        The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
+The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
-        ```powershell
-        Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
-        ```
+```powershell
+Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+```
 
-        or
+or
 
-        ```powershell
-        Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
-        ```
+```powershell
+Mount-NAVTenant -ServerInstance BC180 -Tenant tenant1 -DatabaseName "Demo Database BC (18-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
+```
 
-## Enable in Docker
+If you use the same Azure Application Insights resource for multiple environments, consider also using the AadTenantId parameter to distinguish tenants in telemetry.
 
+### For on-premises Docker sandbox environments 
 If you're using the BcContainerHelper module, specify the Application Insights instrumentation key when you create the container. The key is used on the server instance for a single-tenant container. For a multi-tenant container, it's used on the default tenant.
 
 ```powershell
@@ -107,6 +116,7 @@ If the Application Insights resource is tied to your partner account, and you en
 
 ## See Also
 
+[Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)  
 [Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Monitoring and Analyzing With Telemetry](telemetry-overview.md)  

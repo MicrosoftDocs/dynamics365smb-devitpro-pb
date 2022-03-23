@@ -2,8 +2,7 @@
 title: Monitoring and Analyzing Telemetry
 description: Learn how the Business Central provides telemetry for each environment, both for online and for on-premises environments.  
 author: jswymer
-ms.service: dynamics365-business-central
-ms.topic: conceptual
+ms.topic: overview
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -27,57 +26,28 @@ Application Insights can be enabled on two different levels:
     When enabled on the tenant, either for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations.
 - Extension  
 
-    With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis. An Application Insights key is set in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
+    With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis by setting an Application Insights connection in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
 
 Both for tenant-level and for extension-level telemetry, it is possible to craft custom telemetry messages directly from AL using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md).  
 
 ## Available telemetry
-
 In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged as traces. Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations:  
 
-|Area | Description |Online|On-premises|Extension support|More information|
-|-----|-------------|------|-----------|-----------------|--------|
-|AppSource Submission Validation|Provides information about validation when an extension is submitted to AppSource.|![check mark for feature.](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)|[See...](telemetry-appsource-submission-validation-trace.md)|
-|App key vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|![check mark for feature.](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-key-vault-trace.md) |
-|Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check mark for feature.](../developer/media/check.png)|||[See...](telemetry-authorization-trace.md) |
-|Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-company-lifecycle-trace.md) |
-|Configuration package lifecycle|Provides information about operations done on configuration packages, including exporting, importing, applying, and deleting. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-configuration-package-trace.md)|
-|Database lock timeouts|Provides information about database locks that have timed out. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-database-locks-trace.md)|
-|Email|Provides information about the success or failure of sending emails.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-email-trace.md) |
-|Extension lifecycle <sup>[\[2\]](#2)</sup>|Provides information about the success or failure of extension-related operations, like publishing, synchronizing, installing, and more.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-lifecycle-trace.md) |
-|Extension update|Provides information about errors that occur and upgrade tags used when upgrading an extension.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-extension-update-trace.md) |
-|Field monitoring trace|Provides information about the usage of the field monitoring feature.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-field-monitoring-trace.md) |
-|Job queue|Provides information about creating and running job queue entries.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-job-queue-lifecycle-trace.md) |
-|Long running AL method trace<sup>[\[3\]](#3)</sup>|Provides information about long running AL methods.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-al-method-trace.md) |
-|Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-long-running-sql-query-trace.md)|
-|Page views|Provides information about the pages that users open in the modern client.|![check mark for feature.](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)<sup>[\[4\]](#4)</sup>|[See...](telemetry-page-view-trace.md)|
-|Permissions|Provides information about adding, removing, and assigning permission sets.|![check mark for feature.](../developer/media/check.png)|||[See...](telemetry-permission-changes-trace.md)|
-|Report generation|Provides information about the execution of reports.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-reports-trace.md)|
-|Retention policy trace<sup>[\[3\]](#3)</sup>|Provides information about the usage of the retention policy feature.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-retention-policy-trace.md)|
-|Incoming web service requests|Provides information about the execution time of incoming web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-trace.md)|
-|Outgoing web service requests|Provides information about the execution time of outgoing web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-webservices-outgoing-trace.md)|
-|Table index trace<sup>[\[3\]](#3)</sup>|Provides information about the addition or removal of a table index.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](telemetry-field-monitoring-trace.md) |
-|Task scheduler lifecycle|Provides information the execution of scheduled tasks.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-task-scheduler-trace.md) |
-|Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
-
-<sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
-
-<sup>2</sup><a name="2"></a>Introduced in Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1.
-
-<sup>3</sup><a name="3"></a>Introduced in Business Central 2020 release wave 1, version 17.1. For extension telemetry, this signal was introduced in 2021 release wave 1, version 18.1.
-
-<sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
-
-<!--
-|Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
--->
+[!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
 ## <a name="enable"></a> Enabling Application Insights
-
 Sending telemetry data to Application Insights requires you have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to your Application Insights resource. For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
 
 > [!NOTE]
 > For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
+
+## <a name="ingest"></a> Controlling data ingestion
+Azure Application Insights support that you can override the standard data ingestion endpoint provided in the connection string available from the Azure Application Insights portal. This means that you can send telemetry data to your own component to do post-processing such as filtering or enrichment before ingesting data into your data source of choice (an Azure SQL database, a datalake, Azure Log Analytics, Azure Application Insights, or a third-party data store.)
+
+You override the ingestion endpoint by using the IngestionEndpoint key in the Azure Application Insights connection string
+
+Read more in the documentation here: [Overriding the Azure Application Insights standard connection string](/azure/azure-monitor/app/sdk-connection-string?tabs=net#connection-string-with-explicit-endpoint-overrides)
+
 
 ## <a name="viewing"></a>Viewing telemetry data in Application Insights
 
@@ -97,7 +67,7 @@ As a simple example, follow these steps:
 
 ### <a name="customdimensions"></a>About Custom Dimensions
 
-Each trace includes a `customDimensions` column. The `customDimensions` column, in turn, includes a set dimensions that contain metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. If a dimension's value exceeds 8000 characters, additional dimensions will be added to the trace for containing the excess characters. There can be up to two additional parameters, each with a maximum 8000 characters. The additional dimensions will have the names that `<custom_dimension_name>_1` and `<custom_dimension_name>_2`, where `<custom_dimension_name>` is the name of the original dimension. For example, if the custom dimension is `extensionCompilationDependencyList`, then the additional dimensions would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+Each trace includes a `customDimensions` column. The `customDimensions` column, in turn, includes a set dimensions that contain metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. When logging an event where a dimension's value exceeds 8000 characters, the BC server will add additional overflow dimension keys to the event to contain the excess characters. There can be up to two additional of these overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. For example, if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
 
 > [!NOTE]
 > The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
@@ -108,6 +78,13 @@ In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] BCTech reposi
 
 For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
 
+## [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry FAQ
+
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] BCTech repository on GitHub have an extensive FAQ on telemetry in Azure Application Insights.
+
+For more information, see [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/FAQ.md).
+    
+    
 ## See also
 
 [Telemetry Event IDs](telemetry-event-ids.md)  

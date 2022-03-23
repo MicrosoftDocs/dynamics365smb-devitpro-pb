@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,10 +29,10 @@ Adds a link to a record.
 An instance of the [Record](record-data-type.md) data type.  
 
 *URL*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 *[Optional] Description*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 
 
@@ -44,6 +43,32 @@ An instance of the [Record](record-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+When you add a link to a page or a table, an entry is created in the **Record Link** system table. Each entry is given an ID.  
+  
+The URL can be a link to a website, a file stored on the local computer or on a remote computer, or a link to a [!INCLUDE [prod_short](../../includes/prod_short.md)] page.  
+
+## Example
+
+In this example, you get the customer record that has a primary key number of 15000 and then add the specified URL to the **Record Link** table for that customer. You can then view the link in the **Links** FactBox on the Customer list or Customer card pages. 
+
+```al
+codeunit 50111 CustomerLink
+{
+    trigger OnRun()
+    var
+        Customer: Record Customer;
+        Id: Integer;
+
+    begin
+        Customer.Get('15000');
+        Id := Customer.AddLink('www.northwindtraders.com', 'Northwind Traders');
+    end;
+}
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

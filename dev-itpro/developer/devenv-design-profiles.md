@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: jswymer
 ---
 
@@ -28,7 +27,7 @@ A page customization object specifies layout and action modifications to a speci
 
 To make the modifications, you use [placement keywords](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) in the `layout` and `actions` sections.
 
-The same page customization objects can used in different profile objects. A profile object does not necessarily use any page customization objects, but a page customization has no effect without being associated with a profile object.
+The same page customization objects can be used in different profile objects. A profile object does not necessarily use any page customization objects, but a page customization has no effect without being associated with a profile object.
 
 ## Example
 
@@ -70,7 +69,7 @@ pagecustomization MyCustomization customizes "Customer List"
 
 ## Using the client to create AL profiles and page customizations
 
-Creating profiles and page customizations can also be done from the client. This will typically be done by administrators or consultants to create new profiles or fine-tune the page customizations that provided by extensions. However, as a developer, you can also leverage the client to make profiles and page customizations in AL extensions. For more information, see [Using the Client to Create Profiles and Page Customizations](devenv-design-profiles-using-client.md).
+Creating profiles and page customizations can also be done from the client. This will typically be done by administrators or consultants to create new profiles or fine-tune the page customizations that are provided by extensions. However, as a developer, you can also leverage the client to make profiles and page customizations in AL extensions. For more information, see [Using the Client to Create Profiles and Page Customizations](devenv-design-profiles-using-client.md).
 
 ## Translating profiles
 

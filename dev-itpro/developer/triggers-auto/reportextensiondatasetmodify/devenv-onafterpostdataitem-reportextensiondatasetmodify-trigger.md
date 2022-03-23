@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,6 +31,24 @@ end;
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+This trigger can be called inside a `modify` section, as shown in this pseudo-code:
+
+```al
+reportextension 50111 MyExtension extends "Customer - List"
+{
+    dataset
+    {
+        modify(Customer)
+        {
+            trigger OnAfterPostDataItem()
+            begin
+                // Do some changes here
+            end;
+        }
+    }
+...
+```
 
 Use this trigger to perform any cleanup or post processing needed after a data item is processed. The base object trigger is run before this trigger. For more information, see [OnPostDataItem (Report Data Item) Trigger](../reportdataitem/devenv-onpostdataitem-reportdataitem-trigger.md)..  
 

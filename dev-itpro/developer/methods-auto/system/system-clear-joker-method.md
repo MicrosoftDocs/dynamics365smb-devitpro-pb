@@ -3,12 +3,11 @@ title: "System.Clear(var Any) Method"
 description: "Clears the value of a single variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/13/2021
+ms.date: 11/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

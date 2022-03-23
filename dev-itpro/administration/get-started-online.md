@@ -3,13 +3,13 @@ title: Get started as a reseller of Business Central Online
 description: Learn about how to get started as a reselling partner of Dynamics 365 Business Central online, how to become a partner, and how to onboard customers.  
 author: edupont04
 
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 09/07/2021
+ms.date: 12/28/2021
 ms.author: edupont
+ms.custom: intro-internal
 ---
 
 # Get Started as a Reseller of Business Central Online
@@ -39,6 +39,16 @@ The "Ready to Go" program is designed to support you in the journey of bringing 
 When you become a Microsoft Partner Network member, you gain access to membership benefits that can help you build and grow your business. For more information, see [Explore your Go-To-Market with Microsoft offers](/partner-center/mpn-learn-about-go-to-market-benefits) in the Partner Center docs.  
 
 As a Dynamics 365 reseller, you benefit from Microsoft's investments in an always up-to-date modern platform, you can bundle recognized apps from the Microsoft commercial marketplace into an offering that fits the needs of your customers, reach more customers by using Microsoft's commercial marketplace to promote your packaged consulting service offerings or customization services, and streamline your own processes and build tools with Power BI, Power Automate, and Power Apps connected to [!INCLUDE[prod_short](../includes/prod_short.md)].  
+
+The [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central) landing site has plenty of material to help you build a practice, go to market, drive readiness, and keep track of upcoming events (requires a partner account).  
+
+### Marketing assets
+
+Microsoft provides marketing assets that you can use to build a business based on Microsoft. For more information, see the following sites:
+
+* [Partner Network resources](https://partner.microsoft.com/asset#/?type=marketing-campaigns&area=mrkt)  
+* [Brand and trademark basics for partners](https://partner.microsoft.com/marketing/branding)  
+* [Go-to-market with Microsoft](https://partner.microsoft.com/solutions/go-to-market)  
 
 Specifically for going to market with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], Microsoft provides resources and guidance on the [Business Applications for small and medium-sized businesses (SMBs)](https://partner.microsoft.com/solutions/business-applications/smb) site. For more information, see [Business Central Go-To-Market resources](https://partner.microsoft.com/asset/collection/business-central-go-to-market-resources#/).  
 
@@ -73,7 +83,11 @@ If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)]
 
 ## Step 5: Configure the support experience
 
-As a Business Central reselling partner, you are an administrator of your customers' Business Central tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft. For more information, see [Technical Support for Business Central](../technical-support.md).  
+As a [!INCLUDE [prod_short](../includes/prod_short.md)] reselling partner, you are an administrator of your customers' [!INCLUDE [prod_short](../includes/prod_short.md)] tenants, and you are the first line of support. This means that you will get requests for support from your customers that you must triage, investigate, and either resolve or escalate to Microsoft.  
+
+[!INCLUDE [admin-supportplan](../includes/admin-supportplan.md)]
+
+For more information, see [Technical Support for Business Central](../technical-support.md) and [Managing Technical Support](manage-technical-support.md).  
 
 ## Step 6: Maintain your customers' Business Central
 
@@ -88,3 +102,4 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
+[Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  

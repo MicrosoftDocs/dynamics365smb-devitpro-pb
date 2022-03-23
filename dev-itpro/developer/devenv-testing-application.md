@@ -6,8 +6,7 @@ ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 author: jswymer
 ---
 
@@ -72,7 +71,7 @@ There are two types of test pages:
 You access the page's fields and properties or a field by using the dot notation. You open and close test pages, do actions on the test page, and navigate around the test page by using AL methods. For more information, see [Testing Pages](devenv-testing-pages.md).
 
 ## UI Handlers
-To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](methods/devenv-confirmhandler-attribute.md) set handles [Confirm Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md). You write AL code to return the relevant reply. 
+To create tests that can be automated, you must handle cases when user interaction is requested by code that is being tested. UI handlers run instead of the requested UI. UI handlers provide the same exit state as the UI. For example, a method that has the [ConfirmHandler Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-confirmhandler-attribute) set handles [Confirm Method](methods-auto/dialog/dialog-confirm-method.md) calls. If code that is being tested calls the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md), then the **ConfirmHandler** method is called instead of the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md). You write code in the **ConfirmHandler** method to verify that the expected question is displayed by the [Confirm Method](methods-auto/dialog/dialog-confirm-method.md). You write AL code to return the relevant reply. 
 
 You create a specific handler for each page that you want to handle and a specific report handler for each report that you want to handle.  
 
@@ -157,4 +156,3 @@ We recommend the following best practices for designing your application tests:
 [Testing the Advanced Extension Sample](devenv-extension-advanced-example-test.md)
 <!--[How to: Run Automated ApplicationTests](How-to--Run-Automated-ApplicationTests.md)   -->
 <!--[Walkthrough: Create a Test with Confirmation Dialog](Walkthrough--Create-a-Test-with-Confirmation-Dialog.md)  -->
-

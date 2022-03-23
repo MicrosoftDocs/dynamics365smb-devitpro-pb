@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 # Multitenant Deployment Setup Guide
 
@@ -55,6 +54,10 @@ For more information, see [Configuring Business Central Server](../administratio
 
 > [!TIP]
 > Instead of doing the two previous steps, you could use the [Mount-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Mount-NAVApplication). Running this cmdlet will enable the **Multitenant** and set up the data base connection.
+
+## Configure the Web client to accept host names for tenants (optional)
+
+If you want to use host names to access [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] for your tenants, follow this instructions at [Configure Business Central Web Server to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).
 
 ## Publish the symbols and extensions
 

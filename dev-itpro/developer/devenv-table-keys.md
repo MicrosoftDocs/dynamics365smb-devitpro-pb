@@ -2,12 +2,11 @@
 title: "Table Keys"
 description: Learn about table keys in Business Central
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/30/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.assetid: 973de351-209a-44b7-b8f6-7218a1fa69e6
 author: jswymer
 ---
@@ -63,14 +62,42 @@ Unlike primary keys, it's possible to define multiple unique secondary keys on a
 > [!NOTE]  
 > The `Unique` property isn't supported in table extension objects.
 
+### System keys
+
+There's always a unique secondary key on the **SystemId** field.
+
 ### Secondary keys with included fields
+
+[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)]
 
 With non-clustered secondary keys, you can use the [IncludedFields property](properties/devenv-includedfields-property.md) to add fields that aren't part of the key itself. In SQL server, these non-key fields correspond to what are called *included columns*. Using included fields lets you create indexes that cover more queries, and lets you bypass the maximum number of fields in a key.
 
 A secondary key with included fields can improve SQL query performance, especially when SQL index contains all columns in the query, either as key columns or included columns. The performance improves because the query optimizer can locate all the column values within the index. And, it doesn't access table or clustered index data, which results in fewer disk I/O operations. For more information about included columns in SQL, see [Create indexes with included columns](/sql/relational-databases/indexes/create-indexes-with-included-columns).
 
-### System keys
-There's always a unique secondary key on the **SystemId** field.
+### Non-clustered Columnstore keys
+
+[!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)]
+
+Non-clustered columnstore indexes (sometimes referred to as NCCIs) are supported on tables.
+
+With the ColumnStoreIndex property, you create a non-clustered columnstore index on the table in SQL server. Using a non-clustered columnstore key can improve query performance when doing analytics on large tables. This index type uses column-based data storage and query processing to achieve gains up to 10 times the query performance in analytical queries over traditional row-oriented storage. You can also achieve gains up to 10 times the data compression over the uncompressed data size on normal tables. 
+
+You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.) Whenever you would normally add a SIFT key on fields to do summation/count operations on, use a non-clustered columnstore key to add all the fields to the index instead.
+
+#### Example
+
+To illustrate, here's a simple example of replacing two SIFT keys with a single non-clustered columnstore index. Suppose you already have implemented two SIFT keys:
+
+- Key1: "WareHouseId, Color" SumField: "OnStock"
+- Key2: "WareHouseId, ItemId, Size" SumField: "OnStock"
+
+With a non-clustered columnstore index, you could just have one index defined as:
+
+- ColumnStoreIndex = WareHouseId,Color,ItemId,Size,OnStock
+
+For more information, see:
+- [ColumnStoreIndex Property](properties/devenv-columnstoreindex-property.md)
+- [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
 
 ## Clustered and non-clustered keys
 
@@ -158,6 +185,9 @@ Replace `Name` with descriptive text that you want to use to identify the key. R
 
 In a table object, the first `key` keyword defines the primary key. Subsequent `key` keywords define secondary keys.
 
+> [!TIP]
+> Starting in Business Central version 18, it is possible to create a table extension that only holds key definitions. You can utilize this to add keys to tables in the base application or in AppSource extensions, where you don't have ownership of the table definitions. 
+
 The following code illustrates simple examples of a table object and table extension object.
 
 ```AL
@@ -215,6 +245,19 @@ tableextension 50121 MyBaseTableExt extends MyBaseTable
         //key(ExtKey3; MyBaseField1, MyExtField2)
         //{
         //}
+    }
+}
+```
+
+```AL
+tableextension 50122 MyCustomerKeyExt extends Customer
+{
+    // This example illustrates how to use a table extension to add a key on the Customer table from the base application
+    keys
+    {
+        key(ExtKey1; "No.", "Name", City) 
+        {
+        }
     }
 }
 ```

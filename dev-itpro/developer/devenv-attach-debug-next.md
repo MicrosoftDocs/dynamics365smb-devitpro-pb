@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -60,11 +59,11 @@ The following configurations for attach are supported:
 
 ### To start an attach session
 
-1. In Visual Studio Code, under **Debug**, choose **Add configuration**.
+1. In Visual Studio Code, under **Run**, choose **Add configuration**.
 2. Choose whether to attach to a cloud or a local session.  
 The `launch.json` file is now populated with the correct attach configuration settings. If you selected a local session, change the default settings to point to your local server in the `server` and `serverInstance` settings.
 3. Set `breakOnNext` to specify the client type on which to break.
-4. In your code, set at least one breakpoint using **Debug** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
+4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
 5. It is important to make sure to publish your app by pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Your app *will not be* published if you only press **F5**.  
     > [!IMPORTANT]  

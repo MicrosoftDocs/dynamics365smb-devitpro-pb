@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -116,6 +115,7 @@ Only members of the .NET type implementing the control add-in that are annotated
 If within the same project you have a native AL control add-in and a .NET add-in with the same name, the .NET add-in will be the one used.  
 
 ## See Also
+[Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 [Getting Started with AL](devenv-get-started.md)  
 [Control Add-In Object](devenv-control-addin-object.md)      
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)     

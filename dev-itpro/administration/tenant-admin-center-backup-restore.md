@@ -2,7 +2,6 @@
 title: Restoring an Environment in the Admin Center
 description: Use the Business Central administration center to restore backups of environments. 
 author: jswymer
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -49,6 +48,9 @@ For more information about permissions sets and user groups, see [Assign Permiss
 - When restoring a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) won't be available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions will also not be available.
 - Per-tenant extensions you may have uploaded that target the **next** version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] won't be available in the restored environment&mdash;even if they were uploaded at the point-in-time you're restoring to. Per-tenant extensions that were already installed will be available in the restored environment.
 - Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to.
+- The update window and application insights connection string that are specified for the source environment in the admin center at the time when the restore operation started will be retained on the target environment. The target environment will not be restored to the values for these settings that existed on the source environment at the time that the source environment is being restored to.  
+
+[!INCLUDE [create copy-restore-cleanup-operations](../developer/includes/copy-restore-cleanup-operations.md)]
 
 ## Before you restore an environment
 

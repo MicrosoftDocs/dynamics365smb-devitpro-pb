@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -34,12 +33,14 @@ An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 ## Return Value
 *Callstack*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The callstack where the ErrorInfo was collected.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
+
+[Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)
 [Getting Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)

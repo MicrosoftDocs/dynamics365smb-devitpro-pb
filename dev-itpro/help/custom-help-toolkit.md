@@ -4,15 +4,20 @@ description: This article describes the components in the custom help toolkit fo
 author: edupont04
 
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.reviewer: jowilco
-ms.date: 04/01/2021
+ms.date: 02/01/2022
 ms.author: edupont
 ---
 
 # Custom Help Toolkit
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare customized Help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution. This Help content can then be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any tools or processes to build and deploy content; this toolkit is intended to help you in some of the steps that are required.
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare customized Help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] solution. This Help content can then be accessed from the user interface through the *Learn more* links as described in [Configure Context-Sensitive Help](context-sensitive-help.md). You are welcome to use any tools or processes to build and deploy content; this toolkit is intended to help you in some of the steps that are required.  
+
+[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
+
+[!INCLUDE [ua-toolkit-onprem](../includes/ua-toolkit-onprem.md)]
+
+[!INCLUDE [ua-toolkit-online](../includes/ua-toolkit-online.md)]
 
 The GitHub repository includes source code for the tools, and we welcome contributions and feedback to collaborate on improving the toolkit.  
 
@@ -32,7 +37,7 @@ The toolkit is available at [https://github.com/microsoft/dynamics365smb-custom-
 
 ## Custom Help
 
-Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/configure-help.md).
+Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience](../deployment/configure-help.md). The toolkit is especially useful if you customize Microsoft's content the same way that you customize Microsoft's code, and if you deploy a customer-specific solution that is based on Microsoft's base application. [!INCLUDE [ua-toolkit-online](../includes/ua-toolkit-online.md)]
 
 ## See also
 

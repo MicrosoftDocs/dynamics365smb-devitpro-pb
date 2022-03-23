@@ -1,20 +1,19 @@
 ---
-title: "CodeCop Rule AA0240"
+title: "CodeCop Warning AA0240"
 description: "Email and Phone No must not be present in any part of the source code that might be collected as telemetry data."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0240
+# CodeCop Warning AA0240
 Email and Phone No must not be present in any part of the source code.
 
 ## Description

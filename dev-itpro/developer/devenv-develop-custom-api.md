@@ -9,7 +9,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ---
 
 # Developing a Custom API
@@ -446,10 +445,15 @@ Which will result in following response:
     - Use captions for Enums
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
-## See Also
+## Using an API Query Type
+If you need to generate a web service endpoint that joins data between different tables, then consider using an API query object. This type of API cannot be used to display data in the user interface and data can only be read (not updated).
 
+For more information, see [API Query Type](devenv-api-querytype.md)
+
+## See Also
 [Getting Started with AL](../developer/devenv-get-started.md)  
-[API Page Type](devenv-api-pagetype.md)  
+[API Page Type](devenv-api-pagetype.md)   
+[API Query Type](devenv-api-querytype.md)   
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  
 [APIVersion Property](properties/devenv-apiversion-page-property.md)  

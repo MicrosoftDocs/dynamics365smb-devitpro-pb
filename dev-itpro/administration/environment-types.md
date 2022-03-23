@@ -2,19 +2,21 @@
 title: Production and Sandbox Environments
 description: Learn about the differences between production and sandbox environments for Dynamics 365 Business Central. 
 author: edupont04
-ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox
-ms.date: 07/27/2021
+ms.date: 03/03/2022
 ms.author: edupont
 ---
 
 # Production and Sandbox Environments
 
 You can create environments of different types. Which type of environment to choose depends on what you need it for.  
+
+> [!TIP]
+> If you're new to environments, get an overview of how Azure Active Directory, environments, and companies work in [!INCLUDE [prod_short](../includes/prod_short.md)] online at [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).
 
 <!--The following table outlines some of the benefits of each environment type.
 
@@ -32,11 +34,14 @@ You can create environments of different types. Which type of environment to cho
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
+> [!NOTE]
+> [!INCLUDE [admin-suspended](../includes/admin-suspended.md)]
+
 ### Manage production environments
 
-Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to mange the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
+Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
 
-Alternatively, use the [Administration Center API](administration-center-api.md).  
+Instead, use the [Administration Center API](administration-center-api.md).  
 
 ## Sandbox environments
 
@@ -44,13 +49,24 @@ Alternatively, use the [Administration Center API](administration-center-api.md)
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
+### <a name="partnersandbox"></a>Partner sandboxes
+
+As a partner, you can buy the *Dynamics 365 Business Central Partner Sandbox* license. You'll need a valid Microsoft Partner Network (MPN) ID. You must also have at least five employees who will use the partner sandboxes that you create using this license. This offer was made available in February 2022 to support partners that need non-production environments to learn, test, and deliver end-to-end customer demos with their solutions. The *Partner Sandbox* license gives access to Business Central Premium functionality.  
+
+> [!IMPORTANT]
+> The environments that you acquire through the *Dynamics 365 Business Central Partner Sandbox* license are strictly meant for use only on the partner’s tenant. You are not allowed to use this license in a customer tenant, nor in a production environment.  
+
+Use the *Partner Sandbox* license for an Microsoft 365 account that does not currently have a [!INCLUDE [prod_short](../includes/prod_short.md)] license. This gets you 1 production environment + 3 sandboxes. Alternatively, use the *Partner Sandbox* license to replace existing [!INCLUDE [prod_short](../includes/prod_short.md)] licenses in an existing environment; however, the license will not give you any additional environments on top of the environments you already had.  
+
+Partners can purchase the unique, partner-only license via Web Direct to create flexible, cost-effective solutions that do not expire. Accessing the SKUs and pricing is simple: [Go to experience.dynamics.com](https://experience.dynamics.com/requestlicense/) and submit a request for the *Dynamics 365 Business Central Partner Sandbox* license. Use a valid MPN ID. Once your request is approved, you receive a token to purchase the SKUs directly. Pay by credit card. If the total billing is over $500/month for your company, then you can pay by invoice.
+
 ### <a name="precautions"></a>Precautions for sandbox environments with production data
 
 [!INCLUDE [admin-env-sandbox-precautions](../developer/includes/admin-env-sandbox-precautions.md)]
 
 ### Manage sandbox environments
 
-Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to mange the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
+Use the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to manage the environments manually. For more information, see [Managing Production and Sandbox Environments](tenant-admin-center-environments.md).  
 
 Alternatively, use the [Administration Center API](administration-center-api.md).  
 
@@ -64,7 +80,7 @@ It is possible to enable and try the full functionality of the standard version 
 
 ### Complete sample data
 
-The standard demonstration company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] includes sample data for a limited number of scenarios. You can also create a new company with the **Advanced Evaluation - Complete Sample Data** option so that users can take training or step through walkthroughs that require additional sample data, such as [Walkthrough: Receiving and Putting Away in Basic Warehouse Configurations](/dynamics365/business-central/walkthrough-receiving-and-putting-away-in-basic-warehousing). This sample data is very different from the standard sample data, and we advise that you do not capture and share screenshots with this advanced sample data.  
+The standard demonstration company in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] includes sample data for a limited number of scenarios. You can also create a new company with the **Advanced Evaluation - Complete Sample Data** option. In this type of company, users can take training or step through walkthroughs that require more sample data, such as [Walkthrough: Receiving and Putting Away in Basic Warehouse Configurations](/dynamics365/business-central/walkthrough-receiving-and-putting-away-in-basic-warehousing). This sample data is different from the standard sample data, and we advise that you do not capture and share screenshots with this advanced sample data.  
 
 For more information, see [Creating New Companies in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]](/dynamics365/business-central/about-new-company) in the business functionality content.
 

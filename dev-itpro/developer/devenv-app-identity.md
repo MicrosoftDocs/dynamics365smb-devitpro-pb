@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
@@ -41,17 +40,21 @@ If you have copied the app or the manifest from another app, you must change the
 
 After the app has been published, you should only change the `id` if you intend to use the code base to develop a new app. You will not be able to upgrade from the app with the old `id` to the app with the new `id` because the system does not have knowledge about the correspondence.
 
-If you have published your app as a per-tenant extension, but you are now considering publishing it to AppSource, you must assign a new `id` to the AppSource app, as well as ensure that it follows all the technical requirements for publishing to AppSource.
+If you have published your app as a per-tenant extension, but you are now considering publishing it to AppSource, you must assign a new `id` to the AppSource app, as well as ensure that it follows all the technical requirements for publishing to AppSource. For more information, see [Moving Between Extension Scopes](devenv-extension-moving-scope.md).
 
-It is recommended to use a different `id` for the app that you publish from Visual Studio Code or to the container. Once you are satisfied with the quality of your app and ready to publish it to AppSource, it is recommended to use a different `id`. If you do not follow this approach, the app that you have published from Visual Studio Code to a developer sandbox will be automatically unpublished if another user tries to install the AppSource app.
+It is recommended to use a different `id` for the app that you publish from Visual Studio Code or to the container. Once you are satisfied with the quality of your app and ready to publish it to AppSource, it is recommended to use a different `id`. If you do not follow this approach, the app that you have published from Visual Studio Code to a developer sandbox will be automatically unpublished if another user tries to install the AppSource app. For more information, see [Moving Between Extension Scopes](devenv-extension-moving-scope.md).
 
 ## When is it okay to change the name of an app?
 
-The `name` of an app can be changed at any point also after it has been published. If the `name` is changed, the `version` must be incremented as well.
+If you are targeting only Business Central 2021 release wave 2 or later, the `name` of an app can be changed at any point also after it has been published. If the `name` is changed, the `version` must be incremented as well.
+
+If you are targeting versions of Business Central prior to 2021 release wave 2, then the `name` of an app cannot be changed after it has been published.
 
 ## When is it okay to change the publisher of an app?
 
-The `publisher` of an app can be changed at any point also after it is published. If the `publisher` is changed, the `version` must be incremented as well.
+If you are targeting only Business Central 2021 release wave 2 or later, the `publisher` of an app can be changed at any point also after it is published. If the `publisher` is changed, the `version` must be incremented as well.
+
+If you are targeting versions of Business Central prior to 2021 release wave 2, then the `publisher` of an app cannot be changed after it has been published.
 
 ## When is it okay to change the version of an app?
 

@@ -1,20 +1,19 @@
 ---
-title: "AppSourceCop Rule AS0069"
+title: "AppSourceCop Error AS0069"
 description: "An enum field replacing an option field should have at least the same number of values as the number of options members defined on the field in the previous version of the extension."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0069
+# AppSourceCop Error AS0069
 An enum field replacing an option field should have at least the same number of members.
 
 ## Description

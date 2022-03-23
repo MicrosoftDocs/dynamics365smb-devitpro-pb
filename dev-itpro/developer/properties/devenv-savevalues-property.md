@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -35,9 +34,13 @@ Sets whether user-specific control values are saved for this page.
 This information is saved in the `Page Data Personalization` table.  
 
 The **SaveValues** property enables the *Saved Settings* feature, that is, to save a predefined group of options for a page or request page. Filters are only saved for request pages. You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings).
+
+> [!NOTE]
+> When the [AllowScheduling Property](devenv-allowscheduling-property.md) is set to **false**, it cancels the effect of the **SaveValues** property in a request page, since the report won't support multiple views. 
   
 ## See Also
 
 [Properties](devenv-properties.md)  
 [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings)  
 [Using Saved Settings](/dynamics365/business-central/ui-work-report#SavedSettings)  
+[AllowScheduling Property](devenv-allowscheduling-property.md) 

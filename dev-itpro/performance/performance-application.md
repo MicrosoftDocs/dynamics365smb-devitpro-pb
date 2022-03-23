@@ -5,7 +5,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: KennieNP
 ---
 
@@ -36,6 +35,10 @@ When the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database ne
 ### Use number series that allow gaps
 
 Number series in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are shared resources that sometimes cause locking issues. Not all records that you create in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] are financial transactions that must use sequential numbering. Customer cards, sales quotes, and warehouse activities are examples of records that are assigned a number from a number series. They aren't subject to financial auditing and can be deleted. For all such number series, consider using number series that allow gaps to avoid locking issues. For more information, see [Gaps in Number Series](/dynamics365/business-central/ui-create-number-series#gaps-in-number-series).
+
+### Don't adjust cost item entries with too high a frequency
+
+All sales transactions have to get their cost calculated at some point&mdash;either at the time they're posted or batched up for later, like nightly or weekly, where all sales transactions that haven’t had their cost calculated yet are "adjusted". The main reason for postponing this operation to off-hours is that it locks many tables while running for a long time. A good frequency to start with could be to do it nightly and then evaluate if it needs to be adjusted to happen more or less frequently.
 
 ### Be cautious with the **Rename/Copy company** operations
 

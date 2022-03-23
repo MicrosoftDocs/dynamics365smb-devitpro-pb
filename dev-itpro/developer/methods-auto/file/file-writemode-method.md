@@ -3,12 +3,11 @@ title: "File.WriteMode([Boolean]) Method"
 description: "Use this method before you use OPEN method (File)] to set or test whether you can write to a file in later calls."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

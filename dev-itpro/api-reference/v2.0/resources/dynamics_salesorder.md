@@ -2,7 +2,6 @@
 title: salesOrder resource type  
 description: A sales order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
@@ -33,7 +32,7 @@ Represents a sales order in [!INCLUDE[prod_short](../../../includes/prod_short.m
 
 ## Bound Actions
 
-The salesOrder resource type offers a bound action called `shipAndInvoice` which ship and invoices the corresponding salesOrder batch.
+The salesOrder resource type offers a bound action called `shipAndInvoice` which ships and invoices the corresponding salesOrder batch.
 This is illustrated in the following example:
 `SHIPANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/salesOrders({id})/Microsoft.NAV.shipAndInvoice`
 

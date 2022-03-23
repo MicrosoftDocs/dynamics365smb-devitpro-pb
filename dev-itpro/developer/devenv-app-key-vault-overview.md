@@ -6,8 +6,7 @@ ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 author: jswymer
 ---
 # Using App Key Vaults with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Extensions

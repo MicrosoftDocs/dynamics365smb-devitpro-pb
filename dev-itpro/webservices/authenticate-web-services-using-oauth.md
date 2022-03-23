@@ -2,12 +2,11 @@
 title: "Using OAuth to Authenticate Business Central Web Services (OData and SOAP)"
 description: Learn how to use OAuth to authenticate Business Central web services (OData and SOAP)
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 
@@ -225,9 +224,10 @@ Although you haven't yet created the console application, the next thing to do i
 
 2. Grant the console application delegated permissions to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application.
 
-    1. Select  **Settings** > **Required Permissions** > **Add** > **Select API**.
+    1. Select  **API Permissions ** > **Add a permission** > **APIs my organization uses**.
     2. Search for and select the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application,
-    3. Select **Delegated Permissions**, and then save the changes.
+    3. Select **Delegated Permissions**.
+    4. Under **Permissions**, select **user_impersonation**, then **Add permissions**.
 
     For more information, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
 
@@ -379,9 +379,9 @@ Next, you create a C\# console application in Visual Studio.
 
 8. Set the [!INCLUDE[server](../developer/includes/server.md)] to use **AccessControlService** credential type again.
 
-### Install and add a reference to the Microsoft.IdentityModel.Clients.ActiveDirectory
+### Install and add a reference to the Microsoft.Identity.Client
 
-The Microsoft.IdentityModel.Clients.ActiveDirectory library contains utilities for calling OAuth web services. The library enables you to add code in the console application for acquiring a security token to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services. You can read about the package at [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory).
+The Microsoft.Identity.Client library contains utilities for token acquisition for OAuth web services. The library enables you to add code in the console application for acquiring a security token to access Business Central web services. You can read about the package at Microsoft.Identity.Client.
 
 Install the latest version of the package by using NuGet Package Manager in Visual Studio Code as follows:
 
@@ -389,10 +389,10 @@ Install the latest version of the package by using NuGet Package Manager in Visu
 2. At the `PM>` prompt, enter the following command:
 
     ```
-    Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 4.5.1
+    Install-Package Microsoft.Identity.Client -Version 4.40.0
     ```
 
-3. Add a reference to Microsoft.IdentityModel.Clients.ActiveDirectory in the console application project.
+3. Add a reference to Microsoft.Identity.Client in the console application project.
 
 ### Add code to console application
 
@@ -404,8 +404,8 @@ Install the latest version of the package by using NuGet Package Manager in Visu
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    
+    using Microsoft.Identity.Client;
+
     namespace MyBCCustomers
     {
         class Program
@@ -419,13 +419,16 @@ Install the latest version of the package by using NuGet Package Manager in Visu
             const string ClientRedirectUrl = "<https://mybcclient>";
             // Specifies the APP ID URI that is configured for the registered Business Central application in Azure AD
             const string ServerAppIdUri = "<https://mytenant.onmicrosoft.com/91ce5ad2-c339-46b3-831f-67e43c4c6abd>";
-    
+
             static void Main()
             {
                 // Get access token from Azure AD. This will show the login dialog.
-                var authenticationContext = new AuthenticationContext(<"https://login.microsoftonline.com/"> + AadTenantId, false);
-                AuthenticationResult authenticationResult = authenticationContext.AcquireTokenAsync(ServerAppIdUri, ClientId, new Uri(ClientRedirectUrl), new PlatformParameters(PromptBehavior.SelectAccount)).GetAwaiter().GetResult();
-    
+                            // Get access token from Azure AD. This will show the login dialog.
+                var client = PublicClientApplicationBuilder.Create(ClientId)
+                    .WithAuthority("https://login.microsoftonline.com/" + AadTenantId, false)
+                    .WithRedirectUri(ClientRedirectUrl)
+                    .Build();
+                AuthenticationResult authenticationResult = client.AcquireTokenInteractive(new string[] { $"{ServerAppIdUri}/.default" }).ExecuteAsync().GetAwaiter().GetResult();
                 // Connect to the Business Central OData web service and display a list of customers
                 var nav = new NAV.NAV(new Uri(<"https://localhost:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.'>)"));
                 nav.BuildingRequest += (sender, eventArgs) => eventArgs.Headers.Add("Authorization", authenticationResult.CreateAuthorizationHeader());
@@ -439,7 +442,6 @@ Install the latest version of the package by using NuGet Package Manager in Visu
             }
         }
     }
-    
     ``` 
 2. Build and run the application.
 
@@ -515,6 +517,7 @@ Once you have this information, follow these steps:
 ## Credentials lifetime
 
 With authentication methods other than Azure AD, like Windows or NavUserPassword, the credentials that users provide are persisted by application and used for as long as they're valid in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. However, this is more complicated for OAuth, because the security tokens that are used for authentication have a limited lifetime. The code to obtain OAuth credentials was as follows:
+
 <!-- 
 ```
 AuthenticationResult authenticationResult = authenticationContext.AcquireToken(
@@ -522,10 +525,9 @@ AuthenticationResult authenticationResult = authenticationContext.AcquireToken(
 ```
 -->
 ```
-AuthenticationResult authenticationResult = authenticationContext.AcquireTokenAsync(ServerAppIdUri, ClientId, new Uri(ClientRedirectUrl), new PlatformParameters(PromptBehavior.SelectAccount)).GetAwaiter().GetResult();
+AuthenticationResult authenticationResult = client.AcquireTokenInteractive(new string[] { $"{ServerAppIdUri}/.default" }).ExecuteAsync().GetAwaiter().GetResult();
 ```
-
-The `AuthenticationResult` actually contains two tokens: an access token and a refresh token.
+The `AuthenticationResult` actually contains two tokens: an access token and an ID token.
 
 <!--
 Clients use access tokens to access a protected resource.
@@ -535,9 +537,10 @@ string accessToken = authenticationResult.AccessToken;
 string refreshToken = authenticationResult.RefreshToken;
 ```
 -->
+
 The `access token` is the one that is actually used when the client application calls the web service. The access token is relatively short-lived (for example, one hour by default, and one day maximum). When it expires, the client application needs a new access token.
 
-The `refresh token` is used to obtain new access/refresh token pairs when the current access token expires. It lives much longer (for example, three months by default).
+To obtain new access token when the current access token expires, one can leverage token cache. For more information, see [Acquire & cache tokens with Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-acquire-cache-tokens).
 
 The lifetime of both these tokens is configurable. For more information about how to configure and manage these tokens for your installation, see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).  
 

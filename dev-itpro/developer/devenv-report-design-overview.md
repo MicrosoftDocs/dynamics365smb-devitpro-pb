@@ -7,8 +7,7 @@ ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.service: "dynamics365-business-central"
+ms.topic: overview
 ms.author: solsen
 ---
 
@@ -32,6 +31,7 @@ You create a report object in the [!INCLUDE[d365_dev_long_md](includes/d365_dev_
 
 In order to define the underlying data model, you use the report dataset. A report dataset determines the data that is extracted or calculated from the [!INCLUDE[d365fine_long_md](includes/d365fin_long_md.md)] database tables that can be used in a report. You build the report dataset by adding data items and columns. For more information, see [Report Dataset](devenv-report-dataset.md). You can also extend a dataset from an existing report, to add more columns for example. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
+[!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
 
 ## Report layouts  
 
@@ -58,7 +58,7 @@ You create Word layouts by using a Word Document. Word layouts are based on a Wo
 [Reports](devenv-reports.md)  
 [Report Object](devenv-report-object.md)  
 [Report Extension Object](devenv-report-ext-object.md)  
-[Report Data Type](datatypes/devenv-report-data-type.md)  
+[Report Data Type](/dynamics365/business-central/dev-itpro/developer/methods-auto/library)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Request Pages](devenv-request-pages.md)

@@ -2,12 +2,11 @@
 title: User Authentication with Azure AD for Single Sign-on
 description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Microsoft 365.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 01/26/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Azure Active Directory
@@ -290,6 +289,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
         For more information about mounting tenants, see [Mount or Dismount a Tenant on a Business Central Server Instance](mount-dismount-tenant.md).-->
     ---
 
+    > [!IMPORTANT]
+    > The **Application Client Certificate Thumbprint**, **Application Client ID**, and **Application Client Secret** parameters aren't used. The **Application Client ID** must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
 4. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
 
     On the **Azure Active Directory** tab, set the **Azure AD App URI**. The App ID URI is typically the same as the *wtrealm* parameter value of the **WS-Federation Endpoint** setting.
@@ -420,6 +421,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
     ---
 
+    > [!IMPORTANT]
+    > The `AzureActiveDirectoryClientSecret`, `AzureActiveDirectoryClientId`, and `AzureActiveDirectoryClientSecret` parameters aren't used. The `AzureActiveDirectoryClientId` must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
 4. Disable token-signing certificate validation by setting `DisableTokenSigningCertificateValidation` to `true`.
 
     ```powershell
@@ -561,6 +564,9 @@ https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=
 
 When you mount a tenant, you can give the tenant an additional ID by setting the `-AlternateId` parameter. Users can then access the tenant using this ID as a well as the original. The alternate ID is useful if you have different host names for tenants. In this case, you have to set up URL rewriting in the web.config file for the [!INCLUDE[webserver](../developer/includes/webserver.md)]. For more information, see [Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).
 
+### Using Visual Studio Code
+
+If you are connecting to your solution from Visual Studio Code, then you must also specify the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server config parameter `ValidAudiences` and set it to `https://api.businesscentral.dynamics.com`. If you do not do this, you will get the error `securitytokeninvalidaudienceexception` in the application log when trying to download symbols.
 
 ## See Also  
 

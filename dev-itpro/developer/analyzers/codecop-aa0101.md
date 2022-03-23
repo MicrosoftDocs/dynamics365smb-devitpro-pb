@@ -1,20 +1,19 @@
 ---
-title: "CodeCop Rule AA0101"
+title: "CodeCop Warning AA0101"
 description: "For pages of the type API the value of properties APIPublisher, APIGroup, EntityName, and EntitySetName value should be camel-cased to follow the Microsoft REST API Guidelines."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Rule AA0101
+# CodeCop Warning AA0101
 Use camel case property values in pages of type API.
 
 ## Description

@@ -4,7 +4,6 @@ description: Gets userPermission objects in Dynamics 365 Business Central.
 documentationcenter: ''
 author: henrikwh
 
-ms.service: "dynamics365-business-central"
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na

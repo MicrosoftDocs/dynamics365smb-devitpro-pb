@@ -3,12 +3,11 @@ title: "Dialog.Error(ErrorInfo) Method"
 description: "Displays an error message and ends the execution of AL code."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -20,7 +19,7 @@ author: SusanneWindfeldPedersen
 Displays an error message and ends the execution of AL code.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> From runtime version 8.0 and onward, this method is supported in Business Central online.
 
 ## Syntax
 ```AL

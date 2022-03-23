@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.assetid: e4c70172-b5bb-4649-a5cb-27fe0afd988c
 caps.latest.revision: 3
 author: jswymer
@@ -35,7 +34,12 @@ The following articles describe how to optimize performance in [!INCLUDE[prod_lo
 
 [Troubleshooting: Using Query Store to Monitor Query Performance in Business Central](troubleshoot-query-performance-using-query-store.md)
 
-[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md) 
+[Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries in Business Central](troubleshoot-long-running-queries-using-event-log.md)
+
+## Database Monitoring and performance tuning with Azure SQL Database
+
+Azure SQL Database and Azure SQL Managed Instance provide tools for collecting metrics and diagnostic information to monitor your database and improve its performance. For more information, see
+[Azure SQL Database and Azure SQL Managed Instance monitoring and performance tuning](/azure/azure-sql/database/monitoring-tuning-index). 
 
 ## See Also  
 [Installation Considerations for Microsoft SQL Server](../deployment/installation-considerations-for-microsoft-sql-server.md)   

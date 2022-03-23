@@ -1,20 +1,19 @@
 ---
-title: "AppSourceCop Rule AS0096"
+title: "AppSourceCop Error AS0096"
 description: "The name of an extension cannot be changed for extensions targeting a runtime version lower than '8.0' in their app.json file."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/02/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0096
+# AppSourceCop Error AS0096
 The name of an extension cannot be changed.
 
 ## Description

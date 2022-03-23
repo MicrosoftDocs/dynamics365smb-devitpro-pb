@@ -7,7 +7,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.assetid: 186b2dcd-97d5-499d-928e-15c069bb18f1
 caps.latest.revision: 13
 manager: edupont
@@ -94,15 +93,15 @@ When the client device, [!INCLUDE[webserver](../developer/includes/webserver.md)
 3.  At the command prompt, create an SPN for the [!INCLUDE[server](../developer/includes/server.md)] service using the following syntax.  
   
     ```  
-    setspn -A InstanceName/FullyQualifiedDomainNameOfServer:Port Domain\User  
+    setspn -A DynamicsNAV/FullyQualifiedDomainNameOfServer:Port Domain\User  
     ```  
   
-     Replace *InstanceName*, *FullyQualifiedDomainNameOfServer*, *Port*, and *Domain\\ServiceAccountUserName* with the appropriate values.  
+     Replace *FullyQualifiedDomainNameOfServer*, *Port*, and *Domain\\ServiceAccountUserName* with the appropriate values.  
   
-     For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and **[!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]** is the instance name, the actual command has the following format.  
+     For example, if **BCSERVER** is the name of the computer that is running [!INCLUDE[server](../developer/includes/server.md)], the actual command has the following format.  
   
     ```  
-    setspn -A BC160/BCSERVER.corp:7046 corp\bcdomainuser  
+    setspn -A DynamicsNAV/BCSERVER.corp:7046 corp\bcdomainuser  
     ```  
   
 ##  <a name="Kernel"></a> Configuring Kernel Mode Authentication on the [!INCLUDE[webserver](../developer/includes/webserver.md)]   

@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -37,7 +36,7 @@ The ID of the codeunit to run when the session is started.
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
 Specifies the timeout of the created session. If not specified a default timeout will be used; for OnPrem, the default timeout is set on the server, for SaaS the current default timeout is 12 hours, and may change in the future.  
 *[Optional] Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
@@ -61,4 +60,4 @@ For information about how dialog boxes are handled in a background session, see 
 ## See Also
 [Session Data Type](session-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

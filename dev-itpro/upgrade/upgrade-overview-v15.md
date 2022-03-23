@@ -6,10 +6,9 @@ ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.topic: overview
 ms.author: jswymer
 author: jswymer
-ms.service: "dynamics365-business-central"
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2019 Release Wave 2
 <!--
@@ -36,13 +35,13 @@ For details about each path, see the following articles:
 - [Upgrade of an Unmodified Application](upgrade-unmodified-application.md)
 - [Technical Upgrade of Customized Application](upgrade-technical-upgrade-v14-v15.md)
 
-*The following articles are currently being formalized and will be available as soon as possible*
+<!--*The following articles are currently being formalized and will be available as soon as possible*
  
 - Upgrade to the System Application
 - Upgrade to a Customized Version 15 Base Application  
 - Upgrade to the Microsoft Base Application
 
-<!--
+
 - [Upgrade to the Microsoft System Application](upgrade-system-application-v14-v15.md)
 - [Upgrade to Customized Base Application](upgrade-hybrid-upgrade-v14-v15.md)  
 - [Upgrade to the Microsoft Base Application](upgrade-full-upgrade-v14-v15.md)

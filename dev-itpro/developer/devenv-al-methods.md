@@ -2,12 +2,11 @@
 title: "Working with AL methods"
 description: "Methods also known as procedures are a fundamental programming element in AL for Business Central."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/16/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 
@@ -17,7 +16,7 @@ Like other languages, AL methods are a fundamental programming element. A method
 
 There are two types of methods: system methods (built-in) and user-defined (custom) methods.
 
-- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md).
+- Built-in methods are part of the platform. Built-in methods can be used for different purposes, such as string handling, text formatting, database handling, and so on. For information about the available built-in methods, see [AL method Reference](methods-auto/library.md) and [Essential AL methods](devenv-essential-al-methods.md). For information about method scope, see [Scope Attribute](attributes/devenv-scope-attribute.md).
 
 - Custom methods are specialized methods for your application to bind the objects, such as tables, pages, and code units, together to form a unified whole. You can create special methods for use anywhere in the database.
 
@@ -61,13 +60,15 @@ To declare a global method, *omit* `local`:
 
 ### Parameters (optional)
 
-A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by semicolons. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype.
+A parameter is one or more variables or expressions that are sent to the method through the method call. The parameter provides information to the method, and the method can modify that information. In the method declaration, you place the parameters in parentheses `()`. If there is more than one parameter, the parameters are separated by semicolons. A parameter is defined by a data type. Some data types, such as `Record`, require an additional subtype. 
 
 For example, the following method declaration includes two parameters: `MyCustomer`and `MyDimension`:
 
 ```AL
- procedure  Mymethod(MyCustomer : Record Customer;var MyDimension : ARRAY [2] OF Boolean)
+ procedure MyMethod(MyCustomer : Record Customer; var MyDimension : ARRAY [2] OF Boolean)
 ```
+
+This example also illustrates how parameters can be *passed by value* or *passed by reference*. The `MyCustomer` parameter is passed by value, and the `MyDimension` parameter is passed by reference in the example above. For more information, see the section [Parameters](devenv-al-methods.md#Parameters) below.
 
 ### Return values (optional)
 
@@ -110,11 +111,11 @@ The `MyRunMethod` returns no data back to the calling code.
 
 In a method call, the parameters are separated by commas, and the optional parameters may be omitted starting from the right. For example, this means that if a method has three optional parameters, then you cannot omit the second parameter without omitting the third parameter.  
   
-You can specify that a parameter is passed to a method by value or by reference.  
+When passing parameters there are two options; *passing by value*, which is the default behavior, or *passing by reference*, in which case you must specify the `var` keyword.
+
+- If a parameter is *passed by value*, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
   
-- If a parameter is passed by value, then a copy of the variable is passed to the method. Any changes that the method makes to the value of the variable are local changes that affect only the copy, not the variable itself.  
-  
-- If a parameter is passed by reference, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
+- If a parameter is *passed by reference*, then a reference to the variable is passed to the method. The method can change the value of the variable itself.  
 
 ## Example 1  
 

@@ -1,14 +1,13 @@
 ---
 title: "Getting Started with Modules"
 description: "Provides an overview of what you will need to work with modules in the System Application."
-ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: bholtorf
+ms.custom: intro-internal
 ---
 # Getting Started with Modules in the System Application
 This topic provides information about requirements for working with modules in the System Application.

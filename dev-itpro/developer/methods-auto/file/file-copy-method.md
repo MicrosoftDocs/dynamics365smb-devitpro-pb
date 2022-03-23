@@ -3,12 +3,11 @@ title: "File.Copy(String, String) Method"
 description: "Copies a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,14 +29,14 @@ Copies a file.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FromName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the file that you want to make a copy of, including its path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.
 -   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
           
 *ToName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name that you want to assign to the copy that includes its path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.

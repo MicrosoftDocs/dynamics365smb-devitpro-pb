@@ -8,7 +8,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -62,13 +61,12 @@ begin
         Error(NonSecureUriErr);
 end;
 ```
-```
+```al
 trigger OnRun()
 var
     URL: Text;
 begin
-    if IsSecureHttpUrl(URL) then
-    begin
+    if not IsSecureHttpUrl(URL) then begin
         message('URL is not secure.')
         exit(true);
     exit(false);

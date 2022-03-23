@@ -2,12 +2,11 @@
 title: purchaseOrder resource type  
 description: A purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.service: "dynamics365-business-central"
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 01/10/2022
 ms.author: solsen
 ---
 
@@ -31,6 +30,13 @@ Represents a purchase order in [!INCLUDE[prod_short](../../../includes/prod_shor
 |[POST purchaseOrder](../api/dynamics_purchaseorder_create.md)|purchaseOrder|Creates a purchase order object.|
 |[PATCH purchaseOrder](../api/dynamics_purchaseorder_update.md)|purchaseOrder|Updates a purchase order object.|
 
+## Bound Actions
+
+The purchaseOrder resource type offers a bound action called `receiveAndInvoice` which receives and invoices the corresponding purchaseOrder batch.
+This is illustrated in the following example:
+`RECEIVEANDINVOICE https://<server address>:<server API port>/<server instance name>/api/v2.0/companies({id})/purchaseOrders({id})/Microsoft.NAV.receiveAndInvoice`
+
+The response has no content; the response code is 204.
 
 ## Navigation
 

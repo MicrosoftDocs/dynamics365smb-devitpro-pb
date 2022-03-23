@@ -6,7 +6,6 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 ms.assetid: 3b99a282-bc11-471c-928c-3b305d94a900
 caps.latest.revision: 8
 author: SusanneWindfeldPedersen
@@ -28,7 +27,8 @@ page 50101 MyCustomers
 {
     PageType = List;
     SourceTable = Customer;
-    SourceTableView = sorting (Name) order(descending)
+    // The view of the Customer table is sorted by the Name and "No." fields on descending order.
+    SourceTableView = sorting (Name, "No.") order(descending)
  where ("Balance (LCY)" = filter (>= 50000), "Sales (LCY)" = filter (<> 0));
     layout
     {

@@ -1,20 +1,19 @@
 ---
-title: "AppSourceCop Rule AS0058"
+title: "AppSourceCop Error AS0058"
 description: "Only use AssertError in Test Codeunits."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0058
+# AppSourceCop Error AS0058
 Only use AssertError in Test Codeunits
 
 ## Description
@@ -35,7 +34,7 @@ For more information about the usage of AssertError, see:
 Error handling in production code must be done using Try Methods.
 
 For more information, see:
-- [TryFunction attribute](../methods/devenv-tryfunction-attribute.md)
+- [TryFunction attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute)
 - [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md)
 
 ## See Also  

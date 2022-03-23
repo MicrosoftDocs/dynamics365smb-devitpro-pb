@@ -1,20 +1,19 @@
 ---
-title: "AppSourceCop Rule AS0074"
+title: "AppSourceCop Hidden AS0074"
 description: "The Obsolete Tag must be the same across branches."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 12/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Rule AS0074
+# AppSourceCop Hidden AS0074
 The Obsolete Tag must be the same across branches.
 
 ## Description
