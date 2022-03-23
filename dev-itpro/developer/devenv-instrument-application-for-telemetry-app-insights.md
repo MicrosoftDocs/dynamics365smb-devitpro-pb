@@ -74,7 +74,7 @@ Use the parameters to build the dimensions, or columns, that will show for the t
 |Value2|A text string that specifies the value of Dimension2.|
 
 > [!NOTE]
-> In Application Insights, the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `result`, then in the trace logged in Application Insights, names appears as `alresult`.
+> In Application Insights, the name of custom dimension will be prefixed with `al`. For example, if the dimension string you define in code is `result`, then in the trace logged in Application Insights, the name appears as `alresult`.
 
 ##### Default CustomDimensions
 
