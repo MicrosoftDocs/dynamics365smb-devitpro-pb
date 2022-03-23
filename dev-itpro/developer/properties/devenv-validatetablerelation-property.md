@@ -39,7 +39,7 @@ ValidateTableRelation = false;
 
 For fields, use this property to determine whether to validate the user's entry based on the information already in the table set up through the [TableRelation property](devenv-tablerelation-property.md) property.  
   
-If you want to let users enter any value without validating the entry, then choose **false**. For example, on the **Item** card, you can specify the vendor that you typically purchase the item from. Set this property to **false** to allow users to select a vendor that may not already be in the **Vendor** table. It will then be up to the field's [OnValidate trigger](triggers-auto/field/devenv-onvalidate-field-trigger.md) to process what the user has typed, for example create a new vendor with that name.
+If you want to let users enter any value without validating the entry, then choose **false**. For example, on the **Item** card, you can specify the vendor that you typically purchase the item from. Set this property to **false** to allow users to select a vendor that may not already be in the **Vendor** table. It will then be up to the field's [OnValidate trigger](../triggers-auto/field/devenv-onvalidate-field-trigger.md) to process what the user has typed, for example create a new vendor with that name.
   
 If you set the ValidateTableRelation property to **false**, then you should also set the [TestTableRelation property](devenv-testtablerelation-property.md) to **false**. Otherwise, a database test on the field relations in a database may fail.  
 
