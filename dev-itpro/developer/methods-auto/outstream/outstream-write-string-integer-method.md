@@ -3,7 +3,7 @@ title: "OutStream.Write(String [, Integer]) Method"
 description: "Writes a specified number of bytes to the stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,9 @@ Writes a specified number of bytes to the stream. Data is written in binary form
 An instance of the [OutStream](outstream-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Contains the data to be written.  
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of bytes to be written. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, an error message is displayed.  

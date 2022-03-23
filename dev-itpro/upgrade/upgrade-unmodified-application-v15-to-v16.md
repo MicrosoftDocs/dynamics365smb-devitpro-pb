@@ -56,6 +56,8 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 15 as an administrator.
 
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)] 
+
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
     In this step, you uninstall the Base Application, System Application (if used), and any other extensions that are currently installed on the database.

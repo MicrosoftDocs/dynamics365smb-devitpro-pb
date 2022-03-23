@@ -3,7 +3,7 @@ title: "System.CaptionClassTranslate(String) Method"
 description: "Returns a translated version of the caption string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ String :=   System.CaptionClassTranslate(CaptionClassText: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *CaptionClassText*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A literal string that defines the caption.  
 
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 
 
 

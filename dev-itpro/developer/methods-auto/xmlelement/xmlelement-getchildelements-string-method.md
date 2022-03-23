@@ -3,7 +3,7 @@ title: "XmlElement.GetChildElements(String) Method"
 description: "Gets a list containing the child elements for this element, in document order."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ ChildElements :=   XmlElement.GetChildElements(Name: String)
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The fully qualified name of the elements to retrieve.  
 
 

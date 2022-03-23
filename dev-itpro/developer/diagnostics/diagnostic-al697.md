@@ -3,11 +3,12 @@ title: "Compiler Warning (Future Error) AL0697"
 description: "Argument {0}: The argument should be a valid Field type."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/13/2021
+ms.date: 03/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -20,7 +21,7 @@ author: SusanneWindfeldPedersen
 Argument {0}: The argument should be a valid Field type.
 
 > [!IMPORTANT]
-> This warning will become an error in Fall 2022.  
+> This warning will become an error with Business Central 2022 release wave 2.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

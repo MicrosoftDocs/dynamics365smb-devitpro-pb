@@ -3,7 +3,7 @@ title: "XmlNameTable.Get(String, var Text) Method"
 description: "Gets the atomized string with the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,9 +29,10 @@ Gets the atomized string with the specified value.
 An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The string to find.
         
+
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The atomized string object if the string has been atomized.  

@@ -3,7 +3,7 @@ title: "System.Encrypt(String) Method"
 description: "Takes a string as input and returns the encrypted value of the string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ EncryptedString :=   System.Encrypt(PlainTextString: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *PlainTextString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The input string that will be encrypted. The input string cannot exceed a length of 215 plain characters. If the input string includes special characters the length is even more reduced.  
 
 
 ## Return Value
 *EncryptedString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The output string that is encrypted.
 
 

@@ -3,11 +3,12 @@ title: "Report.Execute(Integer, String [, RecordRef]) Method"
 description: "Runs a report in preview or processing-only mode without showing the request page in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,10 +29,12 @@ Runs a report in preview or processing-only mode without showing the request pag
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run. If the report that you specify does not exist, then a run-time error occurs.
           
+
 *Parameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
           
+
 *[Optional] RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The RecordRef that refers to a record in a table.  

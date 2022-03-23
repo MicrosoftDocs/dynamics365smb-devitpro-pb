@@ -3,7 +3,7 @@ title: "RequestPage.Caption([String]) Method"
 description: "Shows the caption in the title bar."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Shows the caption in the title bar. For example, the default value in English (U
 An instance of the [RequestPage](requestpage-data-type.md) data type.  
 
 *[Optional] NewCaption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
 
 
 ## Return Value
 *[Optional] Caption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 
 
 

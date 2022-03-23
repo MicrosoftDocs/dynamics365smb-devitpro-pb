@@ -3,7 +3,7 @@ title: "TestRequestPage.Caption() Method"
 description: "Gets the caption of the test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ String :=   TestRequestPage.Caption()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *TestRequestPage*  
 &emsp;Type: [TestRequestPage](testrequestpage-data-type.md)  
@@ -33,7 +32,7 @@ An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The caption of the test page.
 
 

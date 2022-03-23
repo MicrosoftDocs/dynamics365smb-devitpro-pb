@@ -3,7 +3,7 @@ title: "JsonObject.Add(String, Option) Method"
 description: "Adds a new property to a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,9 @@ Adds a new property to a JsonObject.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
+
 *Value*  
 &emsp;Type: [Option](../option/option-data-type.md)  
   

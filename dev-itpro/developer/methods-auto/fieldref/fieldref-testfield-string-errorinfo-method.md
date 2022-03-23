@@ -3,7 +3,7 @@ title: "FieldRef.TestField(String, ErrorInfo) Method"
 description: "Determines whether the contents of a field matches a given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Determines whether the contents of a field matches a given value. If the content
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The value that you want to compare with the contents of the field referred to by FieldRef. The data type of Value must match the type of the field. If you include Value and the contents of the field do not match, an error message is displayed. If you omit Value and the content of the field is zero or blank (empty string), an error message is displayed.  
 
 *ErrorInfo*  

@@ -3,7 +3,7 @@ title: "BigText.TextPos(String) Method"
 description: "Gets the position at which a specific string first occurs in this BigText instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Position :=   BigText.TextPos(String: String)
 An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The text string to search for in the BigText variable. If this parameter is empty, then 0 is returned.
         
 

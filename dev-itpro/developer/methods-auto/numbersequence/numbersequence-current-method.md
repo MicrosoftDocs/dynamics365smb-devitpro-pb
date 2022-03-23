@@ -3,7 +3,7 @@ title: "NumberSequence.Current(String [, Boolean]) Method"
 description: "Gets the current value from the number sequence, without doing any increment."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,8 +25,9 @@ Current :=   NumberSequence.Current(Name: String [, CompanySpecific: Boolean])
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies the name of the number sequence.  
+
 *[Optional] CompanySpecific*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if the number sequence is company-specific. Default is true.  

@@ -3,7 +3,7 @@ title: "XmlProcessingInstruction.SetData(String) Method"
 description: "Sets the content of the processing instruction, excluding the target."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets the content of the processing instruction, excluding the target.
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The new content of the processing instruction, excluding the target.  
 
 

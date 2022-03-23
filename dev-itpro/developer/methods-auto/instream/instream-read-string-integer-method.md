@@ -3,7 +3,7 @@ title: "InStream.Read(var String [, Integer]) Method"
 description: "Reads a specified number of bytes from an InStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,9 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 An instance of the [InStream](instream-data-type.md) data type.  
 
 *Variable*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Describes the number of characters to be read. If you do not specify Length, the size of the variable is used. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, you receive an error message.  

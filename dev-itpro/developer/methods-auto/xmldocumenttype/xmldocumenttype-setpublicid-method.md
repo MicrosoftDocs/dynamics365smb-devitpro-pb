@@ -3,7 +3,7 @@ title: "XmlDocumentType.SetPublicId(String) Method"
 description: "Sets the public identifier for this Document Type Definition (DTD)."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets the public identifier for this Document Type Definition (DTD).
 An instance of the [XmlDocumentType](xmldocumenttype-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string that contains the new public identifier for this Document Type Definition (DTD).  
 
 

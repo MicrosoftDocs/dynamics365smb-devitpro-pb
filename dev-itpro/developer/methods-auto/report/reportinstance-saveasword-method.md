@@ -3,11 +3,12 @@ title: "Report.SaveAsWord(String) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Word (.doc) document."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,7 +32,7 @@ Saves a report on the computer that is running the server as a Microsoft Word (.
 An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The path and the name of the file that you want to save the report as. The path must exist, the file must not be being used, and the server process must have permission to write to the file. Otherwise, you will get errors.
           
 
