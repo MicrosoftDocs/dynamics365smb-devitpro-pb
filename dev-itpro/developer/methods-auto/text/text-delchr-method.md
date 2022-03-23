@@ -3,7 +3,7 @@ title: "Text.DelChr(String [, String] [, String]) Method"
 description: "Deletes chars contained in the which parameter in a string based on the contents on the where parameter."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,21 +27,23 @@ NewString :=   Text.DelChr(String: String [, Where: String] [, Which: String])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 The input string.
         
+
 *[Optional] Where*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 Specifies where to delete characters.
         
+
 *[Optional] Which*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 Specifies the characters that you want to delete.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 The end result String.
 
 

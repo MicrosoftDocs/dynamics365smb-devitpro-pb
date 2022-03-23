@@ -3,7 +3,7 @@ title: "JsonArray.Insert(Integer, String) Method"
 description: "Inserts the value at the given index in the array while shifting all the values to the right by one position."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,8 +31,9 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
   
+
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
 
 

@@ -3,7 +3,7 @@ title: "HttpResponseMessage.ReasonPhrase() Method"
 description: "Gets the reason phrase which typically is sent by servers together with the status code."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ ReasonPhrase :=   HttpResponseMessage.ReasonPhrase()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *HttpResponseMessage*  
 &emsp;Type: [HttpResponseMessage](httpresponsemessage-data-type.md)  
@@ -33,7 +32,7 @@ An instance of the [HttpResponseMessage](httpresponsemessage-data-type.md) data 
 
 ## Return Value
 *ReasonPhrase*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The reason phrase sent by the server.
 
 

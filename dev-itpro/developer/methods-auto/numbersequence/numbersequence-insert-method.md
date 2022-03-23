@@ -3,7 +3,7 @@ title: "NumberSequence.Insert(String [, BigInteger] [, BigInteger] [, Boolean]) 
 description: "Creates a number sequence in the database, with the given parameters."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,14 +25,17 @@ Creates a number sequence in the database, with the given parameters.
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Specifies the name of the number sequence.  
+
 *[Optional] Seed*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
 Specifies the first value coming from the number sequence. Default is 0.  
+
 *[Optional] Increment*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
 The increment value used for the number sequence. Default is 1.  
+
 *[Optional] CompanySpecific*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if the number sequence is company-specific. Default is true.  

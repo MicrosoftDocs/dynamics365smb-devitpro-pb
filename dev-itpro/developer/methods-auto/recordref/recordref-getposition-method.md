@@ -3,7 +3,7 @@ title: "RecordRef.GetPosition([Boolean]) Method"
 description: "Gets a string that contains the primary key of the current record."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ Indicates whether a reference to the field caption or the field number should be
 
 ## Return Value
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name or number of the field that contains the primary key.
 
 

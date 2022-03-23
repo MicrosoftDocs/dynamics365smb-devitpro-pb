@@ -3,7 +3,7 @@ title: "FilterPageBuilder.AddField(String, Any [, String]) Method"
 description: "Adds a table field to the filter control for a table on filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,14 +29,16 @@ Adds a table field to the filter control for a table on filter page.
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
+
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The name of the table field to add to the filter control for a table.
         
+
 *[Optional] Filter*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
 
 
