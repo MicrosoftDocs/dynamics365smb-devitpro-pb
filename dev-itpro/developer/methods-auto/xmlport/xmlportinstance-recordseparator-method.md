@@ -3,7 +3,7 @@ title: "Xmlport.RecordSeparator([String]) Method"
 description: "Gets and sets the RecordSeparator used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Gets and sets the RecordSeparator used when running, importing or exporting the 
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] Separator*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The new value of the RecordSeparator.  
 
 
 ## Return Value
 *[Optional] Separator*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The RecordSeparator used when running, importing or exporting the XmlPort.
 
 

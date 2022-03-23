@@ -3,7 +3,7 @@ title: "Report.WordXmlPart(Integer [, Boolean]) Method"
 description: "Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The following example illustrates the same XML with the ExtendedFormat set to fa
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The report data structure as structured XML that is compatible with Microsoft Word custom XML parts.
 
 

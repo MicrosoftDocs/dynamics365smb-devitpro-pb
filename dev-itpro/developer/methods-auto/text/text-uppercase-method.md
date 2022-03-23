@@ -3,7 +3,7 @@ title: "Text.UpperCase(String) Method"
 description: "Converts all letters in a string to uppercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ NewString :=   Text.UpperCase(String: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 The string that you want to convert to uppercase.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](text-data-type.md)  
 The string converted to uppercase.
 
 

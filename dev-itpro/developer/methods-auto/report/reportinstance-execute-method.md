@@ -3,7 +3,7 @@ title: "Report.Execute(String [, RecordRef]) Method"
 description: "Runs a report in preview or processing-only mode without showing the request page in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ Runs a report in preview or processing-only mode without showing the request pag
 An instance of the [Report](report-data-type.md) data type.  
 
 *Parameters*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](../text/text-data-type.md)  
 A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
           
 
