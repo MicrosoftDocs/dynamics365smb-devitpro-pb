@@ -72,6 +72,8 @@ codeunit 50101 MySubscribingCodeunit
 }
 ```
 
+For more information about isolated events, see [Isolated Events](../devenv-events-isolated.md).
+
 ## Example
 This example publishes a business type event by using the `OnAddressLineChanged` method. The method takes a single text data type parameter. The IncludeSender argument is set to **false**.
 
@@ -88,4 +90,5 @@ end;
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   
 [Subscribing to Events](../devenv-subscribing-to-events.md)   
+[Isolated Events](../devenv-events-isolated.md)  
 [Method Attributes](devenv-method-attributes.md)
