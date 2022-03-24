@@ -3,7 +3,7 @@ title: "Notification.GetData(String) Method"
 description: "Retrieves data that was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Value :=   Notification.GetData(Name: String)
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the data item that is specified by the SETDATA method call.  
 
 
 ## Return Value
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The data retrieved
 
 

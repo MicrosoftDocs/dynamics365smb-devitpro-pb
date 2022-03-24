@@ -3,7 +3,7 @@ title: "Database.SID([String]) Method"
 description: "Retrieves the security identifier (SID) of a Windows user account."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ SID :=   Database.SID([UserAccount: String])
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *[Optional] UserAccount*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The Windows user account for which you want to get the SID. You must specify a domain and user name, such as 'cronus\\simon'.  
 
 
 ## Return Value
 *SID*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The SID of the specified Windows user account.
 
 

@@ -3,7 +3,7 @@ title: "Notification.AddAction(String, Integer, String) Method"
 description: "Specifies an action for the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,15 +29,17 @@ Specifies an action for the notification.
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *Caption*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The text string that appears as the caption of the action in the notification UI. The string can be a text constant that is enabled for multilanguage functionality.
         
+
 *CodeunitID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the Codeunit to run when the action is initiated from the notification UI. The codeunit should contain at least one global method to be called by the notification action. The global method must have a Notification data type parameter for accepting the notification object.
         
+
 *MethodName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the method in the Codeunit, which is specified by the CodeunitID parameter, that you want to run for the action.  
 
 
