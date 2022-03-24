@@ -3,11 +3,12 @@ title: "AutoUpdate Property"
 description: "Sets whether a record in the database with the same primary key as the record in the imported XmlPort is updated with values from the imported record."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

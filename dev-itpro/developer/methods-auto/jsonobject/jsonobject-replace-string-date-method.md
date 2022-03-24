@@ -3,7 +3,7 @@ title: "JsonObject.Replace(String, Date) Method"
 description: "Replaces the value of the property with the given key with the new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,8 +29,9 @@ Replaces the value of the property with the given key with the new value.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
+
 *Value*  
 &emsp;Type: [Date](../date/date-data-type.md)  
   

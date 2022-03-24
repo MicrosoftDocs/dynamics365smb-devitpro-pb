@@ -3,7 +3,7 @@ title: "JsonValue.SetValue(String) Method"
 description: "Set the contents of the JsonValue variable to the JSON representation of the given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
   
 
 
