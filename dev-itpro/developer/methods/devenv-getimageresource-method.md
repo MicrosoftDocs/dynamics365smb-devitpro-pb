@@ -46,5 +46,5 @@ pushpin.SetCustomIcon("<div><img src='" + imageUrl +"'/></div>");
 
 [AL Method Reference](../methods-auto/library.md)  
 [GetEnvironment Method](devenv-getenvironment-method.md)   
-[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)
+[InvokeExtensibilityMethod Method](devenv-invokeextensibility-method.md)   
 [OpenWindow Method](devenv-openwindow-method.md)  

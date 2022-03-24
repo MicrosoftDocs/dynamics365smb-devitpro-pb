@@ -37,7 +37,7 @@ Returns an object that contains the following members:
 
 This code example illustrates how you can assign members of the object return type to variables, use the **Busy** member to determine whether the client is busy, and use the **OnClosed** to determine when the control add-in is being closed.  
   
-```  
+```javascript
 var environment = Microsoft.Dynamics.NAV.GetEnvironment();  
   
 var userName = environment.UserName;  

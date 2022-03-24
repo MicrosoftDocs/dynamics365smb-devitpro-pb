@@ -44,7 +44,7 @@ function invokeALTriggerTheWrongWay() {
 
 ### Good code example
 
-The following example illustrates the right implementation where the trigger is invoked when the previous call is completed.
+The following example illustrates the right implementation where the trigger is invoked only when the previous call is completed.
 
 ```javascript
 function invokeALTriggerTheRightWay() {
@@ -60,7 +60,7 @@ function invokeALTriggerTheRightWay() {
             },
             10000);
         },
-        () => { /* error handling */ });
+        () => { /* error handling and perhaps retrying */ });
 }
 ```
 
