@@ -1,9 +1,9 @@
 ---
-title: "PerTenantExtensionCop Error PTE0004"
-description: "Table definitions must have a matching permission set."
+title: "AppSourceCop Error AS0104"
+description: "The extension name is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 03/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,18 +13,19 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# PerTenantExtensionCop Error PTE0004
-Table definitions must have a matching permission set.
+# AppSourceCop Error AS0104
+The extension name is not valid.
 
 ## Description
-Table definitions must have a matching permission set.
+The extension name is not valid.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## Remarks
-For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS0103](appsourcecop-as0103.md).
+## How to fix this diagnostic?
+
+In order to fix this diagnostic, you must change the extension name in the manifest (app.json) of your extension.
 
 ## See Also  
-[PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
