@@ -39,7 +39,7 @@ The following table shows the minimum system requirements for the [!INCLUDE[nav_
 
 The following table shows the minimum system requirements for the [!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)].  
 
-For the latest information, see the app in the App Store, or Google Play.  
+For the latest information, see the app in the App Store or Google Play.  
 [![App Store.](../developer/media/install-mobile-app/appstore.png)](https://go.microsoft.com/fwlink/?LinkId=734847) [![Google Play](../developer/media/install-mobile-app/googleplay.png)](https://go.microsoft.com/fwlink/?LinkId=734849)  
 
 |Specification|Requirement|  
