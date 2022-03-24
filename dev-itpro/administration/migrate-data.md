@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
-ms.search.form: 2502, 4003
+ms.search.form: 1808, 2502, 4000, 4003, 4005, 4006, 4007, 4008, 4009, 40015, 4018, 4019, 4020, 4022
 ms.date: 02/18/2022
 ms.author: edupont
 
