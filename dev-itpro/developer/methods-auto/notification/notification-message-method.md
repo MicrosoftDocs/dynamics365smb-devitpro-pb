@@ -3,7 +3,7 @@ title: "Notification.Message([String]) Method"
 description: "Specifies the content of the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Specifies the content of the notification.
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *[Optional] Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Displays a text string in a message window.  
 
 
 ## Return Value
 *[Optional] Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The message
       
 

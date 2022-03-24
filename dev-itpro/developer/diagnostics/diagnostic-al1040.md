@@ -3,12 +3,11 @@ title: "Compiler Error AL1040"
 description: "The guid number '{0}' does not match the expected pattern: ^[0-9a-fA-F]{{8}}-[0-9a-fA-F]{{4}}-[0-9a-fA-F]{{4}}-[0-9a-fA-F]{{4}}-[0-9a-fA-F]{{12}}$."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

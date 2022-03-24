@@ -3,7 +3,7 @@ title: "JsonObject.ReadFrom(String) Method"
 description: "Reads the JSON data from the string into a JsonObject variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Reads the JSON data from the string into a JsonObject variable.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The String object from which the JSON data will be read.  
 
 

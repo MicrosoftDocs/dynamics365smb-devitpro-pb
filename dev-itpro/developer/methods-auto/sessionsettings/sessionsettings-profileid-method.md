@@ -3,7 +3,7 @@ title: "SessionSettings.ProfileId([String]) Method"
 description: "Gets or sets the profile ID property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,14 +31,14 @@ Gets or sets the profile ID property in a SessionSettings object.
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
 *[Optional] NewProfileId*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the ID of the profile to set in the SessionSettings object. The value must be a valid profile ID in the system table **2000000072 Profile**.
         
 
 
 ## Return Value
 *[Optional] ProfileId*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The profile ID that is set in the SessionSettings object.
       
 

@@ -3,7 +3,7 @@ title: "Session.StopSession(Integer [, String]) Method"
 description: "Stops a session."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,9 +36,8 @@ The ID of the session that you want to stop.The session can be any of the follow
 -   OData web services client session
 -   Background session
           
-
 *[Optional] Comment*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 An optional comment about the session event. The comment is stored in Table 2000000111, the Session Event table.
           
 

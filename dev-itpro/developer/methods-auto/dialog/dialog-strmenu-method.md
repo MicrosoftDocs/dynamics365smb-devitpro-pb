@@ -3,7 +3,7 @@ title: "Dialog.StrMenu(String [, Integer] [, String]) Method"
 description: "Creates a menu window that displays a series of options."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,17 +27,15 @@ OptionNumber :=   Dialog.StrMenu(OptionMembers: String [, DefaultNumber: Integer
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *OptionMembers*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A comma-separated string. Each substring in OptionString specifies an option on the menu. The string can be a text constant that is enabled for multilanguage functionality.
         
-
 *[Optional] DefaultNumber*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Use this optional parameter to determine a default option, which is highlighted. The options are numbered 1, 2, 3, 4, and so on. If you omit this optional parameter, the first option (1) is used as the default.
           
-
 *[Optional] Instruction*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Use this optional parameter to add a description to the option values.  
 
 

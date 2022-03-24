@@ -3,12 +3,11 @@ title: "Report.PaperSource(Integer [, Integer]) Method"
 description: "Gets or sets the paper source used for the current page or a specified page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,6 @@ An instance of the [Report](report-data-type.md) data type.
 *PaperBinNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The tray number.  
-
 *[Optional] PhysicalPage*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The page number.  

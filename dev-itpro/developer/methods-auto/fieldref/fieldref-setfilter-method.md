@@ -3,7 +3,7 @@ title: "FieldRef.SetFilter(String [, Any,...]) Method"
 description: "Assigns a filter to a field that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,9 +29,8 @@ Assigns a filter to a field that you specify.
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, , &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run time.  
-
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Replacement values to insert in replacement fields in the filter expression. The data type of Value must match the type of FieldRef.  

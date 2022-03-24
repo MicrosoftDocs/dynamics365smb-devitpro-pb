@@ -35,16 +35,6 @@ The main purpose of integration events is to enable the integration of other sol
 ### Development considerations
 
 An integration event can be changed to a business event later. At which time, it must adhere to the same implied contract and commitment as any business event. It can also simply be designed-in hook points for external add-ons. To learn about the syntax and example on how to use the IntegrationEvent type, see [IntegrationEvent Attribute](attributes/devenv-integrationevent-attribute.md). 
-
-<!--
-
-##  <a name="InternalEvents"></a> Internal events
-  
-An internal event is an it can only be raised and subscribed to from within the same extension it's published. The main purpose of internal events is to ....  -->
-
-### Development considerations
-
-To learn about the syntax and example on how to use the InternalEvent type, see [InternalEvent Attribute](attributes/devenv-internalevent-attribute.md). 
   
 ## Global events
   
@@ -69,12 +59,8 @@ Global events are predefined system events that are automatically raised by vari
 |44|ReportManagement|OnAfterGetPrinterName|
 |||[OnAfterDocumentPrintReady](devenv-onafterdocumentprintready-event.md)|
 |||OnAfterGetPaperTrayForReport|
-|||OnAfterGetPrinterName|
 |||OnAfterHasCustomLayout|
-|||[OnAfterDocumentReady](devenv-onafterdocumentready-event.md)|
-|||[OnAfterDocumentDownload](devenv-onafterdocumentready-event.md)|
 |||[OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md)|
-|||[OnCustomDocumentMerger](devenv-oncustomdocumentmerger-event.md)|
 |||OnAfterSubstituteReport|
 |45|AutoFormatManagement|OnAfterAutoFormatTranslate|
 |49|GlobalTriggerManagement|OnAfterGetGlobalTableTriggerMask|
@@ -184,4 +170,3 @@ The following table describes the parameters of the trigger events:
 [Publishing Events](devenv-publishing-events.md)   
 [Raising Events](devenv-raising-events.md)   
 [Subscribing to Events](devenv-subscribing-to-events.md)  
-[Isolated Events](devenv-events-isolated.md)  

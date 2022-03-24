@@ -3,7 +3,7 @@ title: "Xmlport.Filename([String]) Method"
 description: "Gets the current value of the FileName Property of an XmlPort and sets this property to a new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new file name.  
 
 
 ## Return Value
 *[Optional] FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The current value of the FileName Property of an XmlPort.
 
 

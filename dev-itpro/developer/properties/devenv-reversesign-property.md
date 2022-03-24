@@ -3,12 +3,11 @@ title: "ReverseSign Property"
 description: "Changes negative values into positive values and positive values into negative values in a column of a resulting query data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

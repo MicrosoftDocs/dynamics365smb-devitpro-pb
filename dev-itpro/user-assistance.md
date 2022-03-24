@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.date: 03/22/2022
+ms.date: 04/01/2021
 ms.author: edupont
 ---
 
@@ -29,13 +29,9 @@ In this article, we'll talk about the user assistance model itself and what it d
 
 ## Help users get started
 
-The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prod_short](developer/includes/prod_short.md)] on the first day. It's also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks. Any new product can be baffling at first. For infrequent tasks, even after months of using the product, users can find it hard to remember where that report is, or how to fill in that form.  
-
-The default version of [!INCLUDE [prod_short](includes/prod_short.md)] online includes in-product tours to introduce the first users of a new tenant to the general user interface and the most used pages. The in-product search makes it easy to find pages or reports - provided that you remember what they're called.  
+The user assistance concept of *Get Started* is not just about getting started with [!INCLUDE[prod_short](developer/includes/prod_short.md)] on the first day. It's also about getting started all the other days, and about getting started with infrequent and unfamiliar tasks.  
 
 We strive to make [!INCLUDE [prod_short](includes/prod_short.md)] easy to get started with in the browser and in the apps for desktop and mobile devices. Assistance in the shape of wizards is helpful for setup or filling in data for a complicated report, for example. Home pages that are designed for a particular role or job help users get started with their daily work – they can easily get to their most important tasks, and that means that [!INCLUDE[prod_short](developer/includes/prod_short.md)] helps them get their work done more efficiently. Similarly, in-product links to videos give new users a quick introduction to how the product works.  
-
-
 
 ### Onboarding checklist
 
@@ -56,18 +52,6 @@ To help users set up [!INCLUDE [prod_short](includes/prod_short.md)] on the firs
 
 For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).  
 
-### Help pane
-
-[!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
-
-When the user opens the Help pane, they see content and links to learn more based on where they are in the product. Once users discover the Help pane, they will be able to help themselves get unblocked, we hope.  
-
-The Help pane shows up to four types of links:
-
-[!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
-
-If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.  
-
 ## Help users get unblocked
 
 Even the best designed user interface can still be confusing to some. It can be difficult to predict what users will find confusing, and that is why the base application includes descriptions for all controls and actions that can be accessed when you choose the caption of the control or action. In combination with descriptive captions and instructional text, these tooltips, or callouts, constitute the larger part of our current implementation of *embedded user assistance*, which is an important principle in today's world of software design.  
@@ -83,9 +67,9 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
 > [!TIP]
-> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, Ctrl+F1 opens the Help pane with automatically generated links to related content from Microsoft and partners.
+> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface.
 
-The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) added another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
+The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) adds another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
 
 ### Guidelines for tooltip text
 
@@ -97,27 +81,9 @@ The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are co
 
 ## Help users learn more
 
-The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative.
+The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative. Users can access this content either through the *Learn more* link in tooltips, or by using the *Ctrl+F1* keyboard shortcut. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).  
 
-Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the *Ctrl+F1* keyboard shortcut.  
-
-### Links in the Help pane
-
-[!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
-
-The *Learn more* links on tooltips and the Ctrl+F1 shortcut now open the Help pane. In most cases, the pane shows the following types of content:
-
-[!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
-
-The partner-provided links are based on the mechanism for adding links through app-level and page-level configuration. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).  
-
-The following screenshot illustrates the Help pane when it is opened from the **Purchase Invoice** page.
-
-:::image type="content" source="media/ua_help_pane.png" alt-text="Help pane with tooltip text, page metadata link, and links to Docs.microsoft.com.":::
-
-In this case, the **Purchase Invoice** page has not been extended by any apps. If two apps had extended the page, their page-level and app-level configuration would be used to add links on a card after the *Related articles from Microsoft Docs* card.  
-
-The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)) so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
 
 There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 
@@ -130,7 +96,7 @@ For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)
 
 On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
 
-We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. Also, we cannot address issues or questions about the product.  
+We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the *dynamics365smb-docs* repo and we cannot address issues or questions about the product.  
 
 > [!IMPORTANT]
 > Microsoft only accepts pull requests to the *dynamics365smb-docs* repo, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
@@ -145,7 +111,7 @@ If you fork one of our repos, you will be authoring in MarkDown. We recommend th
 
 The [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with MarkDown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit MarkDown.  
 
-For other tips and tricks, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
+For other tips and tricks, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 

@@ -3,7 +3,7 @@ title: "Text.InsStr(String, String, Integer) Method"
 description: "Inserts a substring into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,15 +27,13 @@ NewString :=   Text.InsStr(String: String, SubString: String, Position: Integer)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The string into which you want to insert a substring.
         
-
 *SubString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The substring that you want to insert into String.
         
-
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies where to insert SubString. Position must be greater than or equal to 1. If Position is greater than the length of String, then the result is concatenated and copied to NewString.  
@@ -43,7 +41,7 @@ Specifies where to insert SubString. Position must be greater than or equal to 1
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The input string including the specified substring
 
 

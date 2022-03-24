@@ -3,12 +3,11 @@ title: "DeleteAllowed Property"
 description: "Sets a value that specifies whether users can delete records while using the  page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

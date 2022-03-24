@@ -3,12 +3,11 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -36,7 +35,7 @@ Specifies the handler methods that are used by the test method.
 
 ### Arguments
 *HandlerNames*  
-&emsp;Type: [String](../methods-auto/string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The names of the handler methods used by the test method.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

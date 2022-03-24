@@ -3,12 +3,11 @@ title: "Report.RunModal() Method"
 description: "Loads and executes the report that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,6 +23,7 @@ Loads and executes the report that you specify.
 ```AL
  Report.RunModal()
 ```
+
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  

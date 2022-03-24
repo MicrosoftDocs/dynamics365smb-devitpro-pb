@@ -3,7 +3,7 @@ title: "Text.IncStr(String) Method"
 description: "Increases a positive number or decrease a negative number inside a string by one (1)."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ NewString :=   Text.IncStr(String: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The string that you want to increase or decrease.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The incremented string.
 
 

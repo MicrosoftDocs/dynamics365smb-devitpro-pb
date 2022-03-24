@@ -3,7 +3,7 @@ title: "Session.SendTraceTag(String, String, Verbosity, String [, DataClassifica
 description: "Send a trace tag to the telemetry service."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,25 +29,21 @@ Send a trace tag to the telemetry service.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Tag*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The tag.
         
-
 *Category*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The category.
         
-
 *Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
 The verbosity.
         
-
 *Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The message.
         
-
 *[Optional] DataClassification*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 Classification of data in message.   

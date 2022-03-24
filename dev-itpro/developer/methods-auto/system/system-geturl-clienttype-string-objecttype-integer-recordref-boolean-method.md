@@ -3,7 +3,7 @@ title: "System.GetUrl(ClientType, String, ObjectType, Integer, RecordRef [, Bool
 description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,27 +30,22 @@ String :=   System.GetUrl(ClientType: ClientType, Company: String, ObjectType: O
 &emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
 Specifies the client that you want to generate the URL for. This parameter is required. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. The following table describes the options.\> A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.
           
-
 *Company*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the company that the URL must contain. If you do not specify a company, the URL will run in the user’s current company.
         
-
 *ObjectType*  
 &emsp;Type: [ObjectType](../objecttype/objecttype-option.md)  
 Value: Table, Page, Report, Codeunit, Query, or XmlPort. Specifies the object type that the URL must open. If you specify an object type, you must also specify an object ID in the ObjectId parameter. Otherwise, the user will see a runtime error. If you set the ObjectType parameter to Page, you can also specify a record variable in the Record parameter.
           
-
 *ObjectId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies the ID of the specified object type that the URL must open.
           
-
 *RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 Specifies the RecordRef variable that specifies which record to open.
         
-
 *[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to include filters that are defined on the object as a text string in the URL.
@@ -59,7 +54,7 @@ Specifies whether to include filters that are defined on the object as a text st
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

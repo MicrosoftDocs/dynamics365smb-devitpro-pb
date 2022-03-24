@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 03/22/2022
+ms.date: 09/30/2021
 ---
 
 # Trials and Sign-ups for Business Central Online
@@ -18,7 +18,7 @@ As a reselling partner, you can invite customers and prospects to sign up for an
 
 This means that you can show prospects a preview of what you are offering based on trials of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and other Dynamics 365 apps.  
 
-Adjust the onboarding checklist to fit your solution, and provide in-app tours for key experiences. For more information, see [Onboarding experiences in Business Central](../administration/onboarding-experiences.md).
+[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]: Adjust the onboarding checklist to fit your solution. For more information, see [Onboarding experiences in Business Central](../administration/onboarding-experiences.md).
 
 ## Prospects and trials
 

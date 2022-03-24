@@ -3,7 +3,7 @@ title: "ErrorInfo.Create(String [, Boolean] [, var Record] [, Integer] [, Intege
 description: "Creates a new ErrorInfo object."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/25/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Error :=   ErrorInfo.Create(Message: String [, Collectible: Boolean] [, var Reco
 ```
 ## Parameters
 *Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 The error message.  
 
 *[Optional] Collectible*  
@@ -45,7 +45,7 @@ A field number that the error relates to. This parameter is optional.
 A page that the error relates to. This parameter is optional.  
 
 *[Optional] ControlName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](../string/string-data-type.md)  
 A control name that the error relates to. This parameter is optional.  
 
 *[Optional] Verbosity*  
