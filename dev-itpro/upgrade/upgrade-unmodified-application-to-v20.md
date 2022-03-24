@@ -20,7 +20,7 @@ Use this scenario if you have one of the following versions that uses the Micros
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
 
 
- ![Upgrade on unmodified Business Central application.](../developer/media/bc20-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+[![Upgrade on unmodified Business Central application.](../developer/media/bc20-upgrade-unmodified-app.png)](../developer/media/bc20-upgrade-unmodified-app.png#lightbox)  
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
