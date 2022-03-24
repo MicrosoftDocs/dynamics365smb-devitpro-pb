@@ -1,9 +1,9 @@
 ---
-title: "File.IsPathTemporary(String) Method"
+title: "File.IsPathTemporary(Text) Method"
 description: "Validates whether the given path is located in the current users temporary folder within the current service."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.IsPathTemporary(String) Method
+# File.IsPathTemporary(Text) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Validates whether the given path is located in the current users temporary folder within the current service.
@@ -23,13 +23,13 @@ Validates whether the given path is located in the current users temporary folde
 
 ## Syntax
 ```AL
-[Ok := ]  File.IsPathTemporary(Name: String)
+[Ok := ]  File.IsPathTemporary(Name: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the file, including the path.  
 
 

@@ -3,7 +3,7 @@ title: "HttpClient.GetBaseAddress() Method"
 description: "Gets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 ## Return Value
 *CurrentBaseAddress*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The base address of URI of the Internet resource used when sending requests.
 
 

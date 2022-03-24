@@ -3,7 +3,7 @@ title: "System.Format(Any [, Integer] [, Integer]) Method"
 description: "Formats a value into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ This optional parameter specifies the format that you want to use.
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: "JsonValue.ReadFrom(String) Method"
+title: "JsonValue.ReadFrom(Text) Method"
 description: "Reads the JSON data into a JsonValue variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonValue.ReadFrom(String) Method
+# JsonValue.ReadFrom(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads the JSON data into a JsonValue variable.
@@ -21,7 +21,7 @@ Reads the JSON data into a JsonValue variable.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonValue.ReadFrom(Data: String)
+[Ok := ]  JsonValue.ReadFrom(Data: Text)
 ```
 ## Parameters
 *JsonValue*  
@@ -29,7 +29,7 @@ Reads the JSON data into a JsonValue variable.
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Data*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The String object from which the JSON data will be read.  
 
 

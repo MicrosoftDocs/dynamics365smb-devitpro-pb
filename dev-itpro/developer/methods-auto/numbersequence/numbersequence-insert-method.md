@@ -1,9 +1,9 @@
 ---
-title: "NumberSequence.Insert(String [, BigInteger] [, BigInteger] [, Boolean]) Method"
+title: "NumberSequence.Insert(Text [, BigInteger] [, BigInteger] [, Boolean]) Method"
 description: "Creates a number sequence in the database, with the given parameters."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# NumberSequence.Insert(String [, BigInteger] [, BigInteger] [, Boolean]) Method
+# NumberSequence.Insert(Text [, BigInteger] [, BigInteger] [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 4.0._
 
 Creates a number sequence in the database, with the given parameters.
@@ -21,11 +21,11 @@ Creates a number sequence in the database, with the given parameters.
 
 ## Syntax
 ```AL
- NumberSequence.Insert(Name: String [, Seed: BigInteger] [, Increment: BigInteger] [, CompanySpecific: Boolean])
+ NumberSequence.Insert(Name: Text [, Seed: BigInteger] [, Increment: BigInteger] [, CompanySpecific: Boolean])
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name of the number sequence.  
 
 *[Optional] Seed*  

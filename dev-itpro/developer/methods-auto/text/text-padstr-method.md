@@ -1,9 +1,9 @@
 ---
-title: "Text.PadStr(String, Integer [, String]) Method"
+title: "Text.PadStr(Text, Integer [, Text]) Method"
 description: "Changes the length of a string to a specified length."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.PadStr(String, Integer [, String]) Method
+# Text.PadStr(Text, Integer [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Changes the length of a string to a specified length. If the string is shorter than the specified length, length spaces are added at the end of the string to match the length. If the string is longer than the specified length, the string is truncated. If the specified length is less than 0, an exception is thrown.
@@ -21,13 +21,11 @@ Changes the length of a string to a specified length. If the string is shorter t
 
 ## Syntax
 ```AL
-NewString :=   Text.PadStr(String: String, Length: Integer [, FillCharacter: String])
+NewString :=   Text.PadStr(String: Text, Length: Integer [, FillCharacter: Text])
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The string that you want to increase or decrease.
         
 
@@ -37,13 +35,13 @@ The new length of the output string. If Length is less than the length of String
         
 
 *[Optional] FillCharacter*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 This is a string of length 1. This character is used to fill empty spaces at the end of the output string. If not specified, spaces are used as default. If the length of FillCharacter is not 1, an error is returned.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 A copy of the string with the expected length.
 
 

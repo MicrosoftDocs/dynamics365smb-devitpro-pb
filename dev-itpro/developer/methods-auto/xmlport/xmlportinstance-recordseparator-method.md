@@ -1,9 +1,9 @@
 ---
-title: "Xmlport.RecordSeparator([String]) Method"
+title: "Xmlport.RecordSeparator([Text]) Method"
 description: "Gets and sets the RecordSeparator used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Xmlport.RecordSeparator([String]) Method
+# Xmlport.RecordSeparator([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets and sets the RecordSeparator used when running, importing or exporting the XmlPort.
@@ -21,7 +21,7 @@ Gets and sets the RecordSeparator used when running, importing or exporting the 
 
 ## Syntax
 ```AL
-[Separator := ]  Xmlport.RecordSeparator([Separator: String])
+[Separator := ]  Xmlport.RecordSeparator([Separator: Text])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,13 +31,13 @@ Gets and sets the RecordSeparator used when running, importing or exporting the 
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] Separator*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The new value of the RecordSeparator.  
 
 
 ## Return Value
 *[Optional] Separator*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The RecordSeparator used when running, importing or exporting the XmlPort.
 
 

@@ -3,7 +3,7 @@ title: "System.GetLastErrorCallStack() Method"
 description: "Gets the call stack from where the last error occurred."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ String :=   System.GetLastErrorCallStack()
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 

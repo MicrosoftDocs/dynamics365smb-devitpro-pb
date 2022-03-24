@@ -1,9 +1,9 @@
 ---
-title: "System.RoundDateTime(DateTime [, BigInteger] [, String]) Method"
+title: "System.RoundDateTime(DateTime [, BigInteger] [, Text]) Method"
 description: "Rounds a DateTime."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.RoundDateTime(DateTime [, BigInteger] [, String]) Method
+# System.RoundDateTime(DateTime [, BigInteger] [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Rounds a DateTime.
@@ -21,7 +21,7 @@ Rounds a DateTime.
 
 ## Syntax
 ```AL
-NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: String])
+NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -36,7 +36,7 @@ This optional parameter determines the precision used when rounding. The default
         
 
 *[Optional] Direction*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 This optional parameter specifies how to round the DateTime. The default rounding method is '='. You can change the method by using the following options:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
 -   '\>' rounds up

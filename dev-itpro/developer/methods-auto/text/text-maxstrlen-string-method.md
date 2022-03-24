@@ -1,9 +1,9 @@
 ---
-title: "Text.MaxStrLen(String) Method"
+title: "Text.MaxStrLen(Text) Method"
 description: "Gets the maximum defined length of a string variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.MaxStrLen(String) Method
+# Text.MaxStrLen(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the maximum defined length of a string variable.
@@ -21,13 +21,11 @@ Gets the maximum defined length of a string variable.
 
 ## Syntax
 ```AL
-MaxLength :=   Text.MaxStrLen(String: String)
+MaxLength :=   Text.MaxStrLen(String: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The string variable for which you want to find the maximum length.  
 
 

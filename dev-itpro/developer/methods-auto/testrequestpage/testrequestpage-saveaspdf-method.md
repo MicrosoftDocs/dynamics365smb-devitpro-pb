@@ -1,9 +1,9 @@
 ---
-title: "TestRequestPage.SaveAsPdf(String) Method"
+title: "TestRequestPage.SaveAsPdf(Text) Method"
 description: "Saves a report as an Adobe Acrobat (.pdf) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TestRequestPage.SaveAsPdf(String) Method
+# TestRequestPage.SaveAsPdf(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report as an Adobe Acrobat (.pdf) file.
@@ -23,7 +23,7 @@ Saves a report as an Adobe Acrobat (.pdf) file.
 
 ## Syntax
 ```AL
- TestRequestPage.SaveAsPdf(FileName: String)
+ TestRequestPage.SaveAsPdf(FileName: Text)
 ```
 ## Parameters
 *TestRequestPage*  
@@ -31,7 +31,7 @@ Saves a report as an Adobe Acrobat (.pdf) file.
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and file name to which the report is saved. The file name extension should be .pdf.  
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, String, String [, String] [, String]) Method"
+title: "Session.LogMessage(Text, Text, Verbosity, DataClassification, TelemetryScope, Text, Text [, Text] [, Text]) Method"
 description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, String, String [, String] [, String]) Method
+# Session.LogMessage(Text, Text, Verbosity, DataClassification, TelemetryScope, Text, Text [, Text] [, Text]) Method
 > **Version**: _Available or changed with runtime version 5.4._
 
 Logs a trace message to a telemetry account.
@@ -21,17 +21,17 @@ Logs a trace message to a telemetry account.
 
 ## Syntax
 ```AL
- Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: String, Value1: String [, Dimension2: String] [, Value2: String])
+ Session.LogMessage(EventId: Text, Message: Text, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, Dimension1: Text, Value1: Text [, Dimension2: Text] [, Value2: Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *EventId*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The event ID of trace message.   
 
 *Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The message logged into telemetry.   
 
 *Verbosity*  
@@ -49,19 +49,19 @@ Specifies the scope of this trace message:
 - All: Will emit this trace message additionally to the Partner's telemetry account.   
 
 *Dimension1*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
 
 *Value1*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value of Dimension1.   
 
 *[Optional] Dimension2*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Additional dimension that will be emitted to the telemetry account and that can be used to specify filters in the query.   
 
 *[Optional] Value2*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value of Dimension2.   
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Query.SetFilter(Any, String [, Any,...]) Method"
+title: "Query.SetFilter(Any, Text [, Any,...]) Method"
 description: "Sets a filter on a column of a query to limit the records in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.SetFilter(Any, String [, Any,...]) Method
+# Query.SetFilter(Any, Text [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets a filter on a column of a query to limit the records in the resulting data set of a query.
@@ -21,7 +21,7 @@ Sets a filter on a column of a query to limit the records in the resulting data 
 
 ## Syntax
 ```AL
- Query.SetFilter(Column: Any, String: String [, Value: Any,...])
+ Query.SetFilter(Column: Any, String: Text [, Value: Any,...])
 ```
 ## Parameters
 *Query*  
@@ -34,7 +34,7 @@ The name of the column in the query that you want to filter. The name is defined
         
 
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
         
 

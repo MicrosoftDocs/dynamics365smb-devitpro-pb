@@ -1,9 +1,9 @@
 ---
-title: "Dialog.LogInternalError(String, DataClassification, Verbosity) Method"
+title: "Dialog.LogInternalError(Text, DataClassification, Verbosity) Method"
 description: "Log internal errors for telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog.LogInternalError(String, DataClassification, Verbosity) Method
+# Dialog.LogInternalError(Text, DataClassification, Verbosity) Method
 > **Version**: _Available or changed with runtime version 6.0._
 
 Log internal errors for telemetry.
@@ -23,13 +23,13 @@ Log internal errors for telemetry.
 
 ## Syntax
 ```AL
- Dialog.LogInternalError(Message: String, DataClassificationInstance: DataClassification, VerbosityInstance: Verbosity)
+ Dialog.LogInternalError(Message: Text, DataClassificationInstance: DataClassification, VerbosityInstance: Verbosity)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 This string contains the text of the error message you want to log into telemetry. It is not what the user will get, they will only get a generic error message.
         
 

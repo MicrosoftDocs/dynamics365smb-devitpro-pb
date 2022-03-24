@@ -1,9 +1,9 @@
 ---
-title: "Dialog.Error(String [, Any,...]) Method"
+title: "Dialog.Error(Text [, Any,...]) Method"
 description: "Displays an error message and ends the execution of AL code."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog.Error(String [, Any,...]) Method
+# Dialog.Error(Text [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Displays an error message and ends the execution of AL code.
@@ -21,13 +21,13 @@ Displays an error message and ends the execution of AL code.
 
 ## Syntax
 ```AL
- Dialog.Error(Message: String [, Value: Any,...])
+ Dialog.Error(Message: Text [, Value: Any,...])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 This string contains the text of the error message you want to display to the user. Use percent signs (%) or number signs (#) to insert variable values into the string. Place the percent or number signs where you want to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.
         
 

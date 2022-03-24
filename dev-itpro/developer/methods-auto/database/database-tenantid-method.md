@@ -3,7 +3,7 @@ title: "Database.TenantId() Method"
 description: "Gets the ID of the tenant that has started the current session."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ ID :=   Database.TenantId()
 
 ## Return Value
 *ID*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The ID of the tenant that has started the current session.
 
 

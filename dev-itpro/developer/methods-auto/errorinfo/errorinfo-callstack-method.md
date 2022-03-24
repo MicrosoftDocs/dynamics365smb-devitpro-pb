@@ -3,7 +3,7 @@ title: "ErrorInfo.Callstack() Method"
 description: "Specifies a callstack where the ErrorInfo was collected."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 ## Return Value
 *Callstack*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The callstack where the ErrorInfo was collected.
 
 

@@ -1,9 +1,9 @@
 ---
-title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, String, DateTime, RecordId, Duration) Method"
+title: "TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method"
 description: "Adds a task to ensure that a codeunit is not run before the specified time."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# TaskScheduler.CreateTask(Integer, Integer, Boolean, String, DateTime, RecordId, Duration) Method
+# TaskScheduler.CreateTask(Integer, Integer, Boolean, Text, DateTime, RecordId, Duration) Method
 > **Version**: _Available or changed with runtime version 7.0._
 
 Adds a task to ensure that a codeunit is not run before the specified time.
@@ -21,7 +21,7 @@ Adds a task to ensure that a codeunit is not run before the specified time.
 
 ## Syntax
 ```AL
-[Task := ]  TaskScheduler.CreateTask(CodeunitId: Integer, FailureCodeunitId: Integer, IsReady: Boolean, Company: String, NotBefore: DateTime, RecordID: RecordId, Timeout: Duration)
+[Task := ]  TaskScheduler.CreateTask(CodeunitId: Integer, FailureCodeunitId: Integer, IsReady: Boolean, Company: Text, NotBefore: DateTime, RecordID: RecordId, Timeout: Duration)
 ```
 ## Parameters
 *CodeunitId*  
@@ -40,7 +40,7 @@ Sets the task to the ready state. A task cannot run unless it is ready.
           
 
 *Company*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the company to run the task for. If you do not specify a company, the task will run in the user’s current company.
           
 

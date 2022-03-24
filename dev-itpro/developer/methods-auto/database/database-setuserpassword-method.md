@@ -1,9 +1,9 @@
 ---
-title: "Database.SetUserPassword(Guid, String) Method"
+title: "Database.SetUserPassword(Guid, Text) Method"
 description: "Sets a password for the user iwith the given user security ID."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database.SetUserPassword(Guid, String) Method
+# Database.SetUserPassword(Guid, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets a password for the user iwith the given user security ID. If the given password is blank, an empty string will be stored instead of a password hash. This will prevent the user from logging in using a password. Only SUPER can call this method. Passwords cannot be set for the empty GUID or for the default Super ID.
@@ -23,7 +23,7 @@ Sets a password for the user iwith the given user security ID. If the given pass
 
 ## Syntax
 ```AL
-[Ok := ]  Database.SetUserPassword(USID: Guid, Password: String)
+[Ok := ]  Database.SetUserPassword(USID: Guid, Password: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -34,7 +34,7 @@ User security ID of the user for which to set the password.
         
 
 *Password*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The password to set for the user.  
 
 

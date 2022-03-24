@@ -1,9 +1,9 @@
 ---
-title: "JsonObject.Replace(String, JsonToken) Method"
+title: "JsonObject.Replace(Text, JsonToken) Method"
 description: "Replaces the value of the property with the given key with the new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Replace(String, JsonToken) Method
+# JsonObject.Replace(Text, JsonToken) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Replaces the value of the property with the given key with the new value.
@@ -21,7 +21,7 @@ Replaces the value of the property with the given key with the new value.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonObject.Replace(Key: String, Value: JsonToken)
+[Ok := ]  JsonObject.Replace(Key: Text, Value: JsonToken)
 ```
 ## Parameters
 *JsonObject*  
@@ -29,7 +29,7 @@ Replaces the value of the property with the given key with the new value.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
 
 *Value*  

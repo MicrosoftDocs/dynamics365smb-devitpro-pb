@@ -1,9 +1,9 @@
 ---
-title: "Notification.HasData(String) Method"
+title: "Notification.HasData(Text) Method"
 description: "Checks if data was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.HasData(String) Method
+# Notification.HasData(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Checks if data was passed to a notification instance as specified by a SETDATA method call.
@@ -21,7 +21,7 @@ Checks if data was passed to a notification instance as specified by a SETDATA m
 
 ## Syntax
 ```AL
-Value :=   Notification.HasData(Name: String)
+Value :=   Notification.HasData(Name: Text)
 ```
 ## Parameters
 *Notification*  
@@ -29,7 +29,7 @@ Value :=   Notification.HasData(Name: String)
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the data item that is specified by the SETDATA method call.  
 
 

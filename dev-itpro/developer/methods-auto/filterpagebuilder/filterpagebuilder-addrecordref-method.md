@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.AddRecordRef(String, RecordRef) Method"
+title: "FilterPageBuilder.AddRecordRef(Text, RecordRef) Method"
 description: "Adds a filter control for a table to a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.AddRecordRef(String, RecordRef) Method
+# FilterPageBuilder.AddRecordRef(Text, RecordRef) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a filter control for a table to a filter page. The table is specified by a RecordRef variable that is passed to the method. This creates a filter control on the filter page, where users can set filter table data.
@@ -21,7 +21,7 @@ Adds a filter control for a table to a filter page. The table is specified by a 
 
 ## Syntax
 ```AL
-[Name := ]  FilterPageBuilder.AddRecordRef(Name: String, RecordRef: RecordRef)
+[Name := ]  FilterPageBuilder.AddRecordRef(Name: Text, RecordRef: RecordRef)
 ```
 ## Parameters
 *FilterPageBuilder*  
@@ -29,7 +29,7 @@ Adds a filter control for a table to a filter page. The table is specified by a 
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
         
 
@@ -40,7 +40,7 @@ The record reference to use in the filter control.
 
 ## Return Value
 *[Optional] Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The text that is specified by the Name parameter. If an error occurs at runtime, an empty text string is returned.
        If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 

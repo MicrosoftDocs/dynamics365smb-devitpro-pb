@@ -1,9 +1,9 @@
 ---
-title: "XmlProcessingInstruction.SetData(String) Method"
+title: "XmlProcessingInstruction.SetData(Text) Method"
 description: "Sets the content of the processing instruction, excluding the target."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlProcessingInstruction.SetData(String) Method
+# XmlProcessingInstruction.SetData(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the content of the processing instruction, excluding the target.
@@ -21,7 +21,7 @@ Sets the content of the processing instruction, excluding the target.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlProcessingInstruction.SetData(Value: String)
+[Ok := ]  XmlProcessingInstruction.SetData(Value: Text)
 ```
 ## Parameters
 *XmlProcessingInstruction*  
@@ -29,7 +29,7 @@ Sets the content of the processing instruction, excluding the target.
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The new content of the processing instruction, excluding the target.  
 
 

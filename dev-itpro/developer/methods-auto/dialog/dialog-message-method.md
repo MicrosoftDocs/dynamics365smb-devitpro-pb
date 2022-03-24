@@ -1,9 +1,9 @@
 ---
-title: "Dialog.Message(String [, Any,...]) Method"
+title: "Dialog.Message(Text [, Any,...]) Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog.Message(String [, Any,...]) Method
+# Dialog.Message(Text [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Displays a text string in a message window.
@@ -21,13 +21,13 @@ Displays a text string in a message window.
 
 ## Syntax
 ```AL
- Dialog.Message(String: String [, Value: Any,...])
+ Dialog.Message(String: Text [, Value: Any,...])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 This string contains the text you want the system to display in the message window. Use a backslash (\\) to start a new line. Use percent signs (%) to insert variable values into the string. Place the percent where you want the system to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.
         
 

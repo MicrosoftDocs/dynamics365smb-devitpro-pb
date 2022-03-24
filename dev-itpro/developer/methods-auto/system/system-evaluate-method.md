@@ -1,9 +1,9 @@
 ---
-title: "System.Evaluate(var Any, String [, Integer]) Method"
+title: "System.Evaluate(var Any, Text [, Integer]) Method"
 description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Evaluate(var Any, String [, Integer]) Method
+# System.Evaluate(var Any, Text [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Evaluates a string representation of a value into its typical representation. The result is assigned to a variable.
@@ -21,7 +21,7 @@ Evaluates a string representation of a value into its typical representation. Th
 
 ## Syntax
 ```AL
-[Ok := ]  System.Evaluate(var Variable: Any, String: String [, Number: Integer])
+[Ok := ]  System.Evaluate(var Variable: Any, String: Text [, Number: Integer])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -32,7 +32,7 @@ The value of the string is assigned to the variable.
         
 
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
  A string that contains a value of any simple AL data type.
         
 
