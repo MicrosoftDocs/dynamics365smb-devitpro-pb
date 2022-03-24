@@ -3,7 +3,7 @@ title: "XmlElement.GetDescendantElements(String, String) Method"
 description: "Gets a list containing the descendant elements for this element, in document order."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,12 +29,11 @@ DescendantElements :=   XmlElement.GetDescendantElements(LocalName: String, Name
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *LocalName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The local name of the elements to retrieve.
         
-
 *NamespaceUri*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The namespace URI of the elements to retrieve.  
 
 

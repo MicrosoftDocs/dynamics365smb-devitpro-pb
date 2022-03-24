@@ -3,7 +3,7 @@ title: "XmlProcessingInstruction.SetTarget(String) Method"
 description: "Sets the target of the processing instruction."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets the target of the processing instruction.
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new target of the processing instruction.  
 
 

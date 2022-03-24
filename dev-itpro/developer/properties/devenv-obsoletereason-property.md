@@ -3,12 +3,11 @@ title: "ObsoleteReason Property"
 description: "Specifies why the object or element has been marked as Pending or Obsolete in the ObsoleteState property."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -51,7 +50,6 @@ Specifies why the object or element has been marked as Pending or Obsolete in th
 -   Interface
 -   Control Add In
 -   Permission Set
--   Field Group
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

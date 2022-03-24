@@ -3,7 +3,7 @@ title: "HttpClient.UseWindowsAuthentication(String, String [, String]) Method"
 description: "Sets the HttpClient credentials to use the specified network credentials for Windows authentication."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,15 +31,13 @@ Sets the HttpClient credentials to use the specified network credentials for Win
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *UserName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The Windows user name.  
-
 *Password*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The password.  
-
 *[Optional] Domain*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The user's domain.  
 
 

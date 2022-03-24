@@ -3,12 +3,11 @@ title: "ColumnStoreIndex Property"
 description: "Sets the fields that are added to the ColumnStore index inside SQL Server."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 09/08/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

@@ -3,7 +3,7 @@ title: "RecordRef.CurrentCompany() Method"
 description: "Gets the current company of a database table referred to by a RecordRef."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,7 @@ Company :=   RecordRef.CurrentCompany()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
+
 ## Parameters
 *RecordRef*  
 &emsp;Type: [RecordRef](recordref-data-type.md)  
@@ -32,7 +33,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 ## Return Value
 *Company*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The name of the current company.
 
 

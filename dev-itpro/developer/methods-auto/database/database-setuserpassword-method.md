@@ -3,7 +3,7 @@ title: "Database.SetUserPassword(Guid, String) Method"
 description: "Sets a password for the user iwith the given user security ID."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,9 +32,8 @@ Sets a password for the user iwith the given user security ID. If the given pass
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
 User security ID of the user for which to set the password.
         
-
 *Password*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The password to set for the user.  
 
 

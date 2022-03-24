@@ -15,11 +15,11 @@ ms.author: solsen
 
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
-Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it is viewed and printed. 
+Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields  to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it is viewed and printed. 
 
 For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
 
-You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
+You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are two types of report layouts; client report definition, also called RDL layouts and Word layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. 
 
 If you want to modify an existing report, for example, add new columns, add to the request page, or simply add a new layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
@@ -33,7 +33,7 @@ Typing the shortcut `treport` will create the basic layout for a report object w
 
 ## Report example
 
-The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. This example defines a report that uses an RDL report layout. For more information about creating an RDL report layout, see [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md). For more information on creating a report that uses Word Layout, see [Creating a Word Layout Report](devenv-howto-report-layout.md). For information about creating an Excel layout, see [Creating an Excel Layout Report](devenv-howto-excel-report-layout.md).
+The following example is a report that prints the list of customers. The report object defines a dataset of columns from the Customer table. For more information on creating a Word Layout report, see [Creating a Report](devenv-howto-report-layout.md).
 
 ```AL
 report 50103 "Customer List"

@@ -3,12 +3,11 @@ title: "Compiler Error AL0579"
 description: "The value for the property '{0}' for the language code '{1}' is not valid because its length exceeds {2} characters ({3} characters)."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

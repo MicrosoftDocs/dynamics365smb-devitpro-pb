@@ -60,7 +60,6 @@ The custom dimensions that are of particular interest for this operation include
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|documentFormat|Specifies the format of the report outputs as a result of the report action. See [documentFormat](#documentFormat). This dimension was added in version 20.0.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
@@ -68,7 +67,6 @@ The custom dimensions that are of particular interest for this operation include
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
-|reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
 |reportingEngine | Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|**Success**|
 |serverExecutionTime|Specifies the amount of time it took the service to complete the request<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
@@ -79,34 +77,6 @@ The custom dimensions that are of particular interest for this operation include
 |totalTime|Specifies the amount of time it took for the system to generate the dataset and render the report<sup>[\[1\]](#1)</sup>. The time has the format hh:mm:ss.sssssss.|
 
 <sup><a name=1>1</a></sup>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
-
-### <a name=reportAction></a>reportAction
-
-The reportAction dimension shows actions taken to generate a report. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
-
-|Value|Description|
-|-----|-----------|
-|None|There were no results from the request page, for example, the user canceled.|
-|Print|The user selected to print the report.|
-|Preview|The user selected to preview the report from the request page.|
-|Save|The report was saved to a file by a call to the [SaveAs method](/dynamics365/business-central/dev-itpro/developer/methods-auto/report/report-saveas-method) in AL code.|
-|Schedule|The user selected to schedule the report from the request page.|
-|Download|The user downloaded the report as a file from the request page.  |
-|Parameters|Parameters and filters were collected from the request page without rendering the output.|
-
-### <a name=documentFormat></a>documentFormat
-
-The documentFormat dimension shows the output of the generated report as a result of the report action. The action can be taken from the report request page, for example, from the **Send To** menu,  or from AL code.
-
-|Value|Description|
-|-----|-----------|
-|None|There was no output, for example, the user canceled.|
-|Rdlc|The output was a .rdlc file type.|
-|Word|The output was a .docx file type.|
-|Excel|The output was a .xlsx file type that included the layout and dataset.|
-|ExcelDataset|The output was a .xlsx file type that contained the dataset only.|
-|Custom|The output was an custom file type.|
-|ProcessingOnly|The action was for processing report without any kind of layout.|
 
 ## Failed report generation
 
@@ -137,7 +107,6 @@ The following table explains the general dimensions of the **Failed report gener
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|Specifies a comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
-|documentFormat|Specifies the format of the report outputs as a result of the report action. See [documentFormat](#documentFormat). This dimension was added in version 20.0.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |eventId|**RT0006**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
@@ -145,8 +114,6 @@ The following table explains the general dimensions of the **Failed report gener
 |extensionName|Specifies the name of the extension that the report object belongs to.|
 |extensionVersion|Specifies the version of the extension that the report object belongs to.|
 |numberOfRows|Specifies the number of rows/records generated for the report dataset.|
-|reportAction|Specifies the action that was done on the report. See [reportAction](#reportAction). This dimension was added in version 20.0.|
-|reportingEngine| Specifies the reporting engine used to generate the report, such as **ProcessingOnly**, **Rdlc**, or **Word**. This dimension was added in version 17.3 |
 |result|Specifies the title of the exception that was thrown, such as **NavNCLDialogException**.|
 |serverExecutionTime|Specifies the amount of time used by service on the request. The time has the format hh:mm:ss.sssssss.|
 |sqlExecutes|Specifies the number of SQL statements that the report executed. |

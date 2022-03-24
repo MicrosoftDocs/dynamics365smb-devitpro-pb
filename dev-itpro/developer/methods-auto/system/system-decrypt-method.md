@@ -3,7 +3,7 @@ title: "System.Decrypt(String) Method"
 description: "Takes a string as input and returns the decrypted value of the string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,13 +27,13 @@ PlainTextString :=   System.Decrypt(EncryptedString: String)
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *EncryptedString*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The input string that will be decrypted.  
 
 
 ## Return Value
 *PlainTextString*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The output string that is decrypted.
 
 

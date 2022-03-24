@@ -3,7 +3,7 @@ title: "XmlElement.Create(String, Any,...) Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,10 +25,9 @@ XmlElement :=   XmlElement.Create(Name: String, Content: Any,...)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The fully qualified name of the element to create.
         
-
 *Content*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The content to add to the element to create.  

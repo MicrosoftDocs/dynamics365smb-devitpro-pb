@@ -3,7 +3,7 @@ title: "System.ImportEncryptionKey(String, String) Method"
 description: "Points to a password protected file that contains the key on the current server."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,11 +29,10 @@ Points to a password protected file that contains the key on the current server.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Path*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the file that contains the encryption key.  
-
 *Password*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the password the protects the file.  
 
 

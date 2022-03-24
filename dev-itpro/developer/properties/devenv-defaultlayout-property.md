@@ -3,12 +3,11 @@ title: "DefaultLayout Property"
 description: "Specifies whether the report uses the built-in RDL or Word report layout by default."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/02/2021
+ms.date: 06/23/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,7 +27,6 @@ Specifies whether the report uses the built-in RDL or Word report layout by defa
 |-----------|---------------------------------------|
 |**RDLC**|Specifies the built-in RDL layout as the default layout.|
 |**Word**|Specifies the built-in Word layout as the default layout.|
-|**Excel**|Specifies the built-in Excel layout as the default layout.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

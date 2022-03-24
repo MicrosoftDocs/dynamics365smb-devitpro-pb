@@ -3,12 +3,11 @@ title: "Compiler Warning AL0679"
 description: "The application object '{0}' is not included in any entitlement and will therefore not be accessible in the cloud."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 10/26/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

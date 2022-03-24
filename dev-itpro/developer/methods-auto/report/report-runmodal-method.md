@@ -3,12 +3,11 @@ title: "Report.RunModal(Integer [, Boolean] [, Boolean] [, var Record]) Method"
 description: "Loads and executes the report that you specify."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -29,17 +28,14 @@ Loads and executes the report that you specify.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run.
         
-
 *[Optional] RequestWindow*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether the request window for the report will be displayed. The request window is part of the report object.
         
-
 *[Optional] SystemPrinter*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies whether to use the default Windows printer or use table 78, Printer Selection, to find the correct printer for this report.
         
-
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that are attached to the record that you specify are used.

@@ -3,7 +3,7 @@ title: "MediaSet.ExportFile(String) Method"
 description: "Exports the media objects in the current media set of a record to individual files on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Exports the media objects in the current media set of a record to individual fil
 An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 *FilenamePrefix*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies the location and name of the exported media files. Each exported media file is given a name that consists of a prefix that you specify, plus an index number that is automatically assigned. The file name has the format prefix-index.type, for example, Image-1.jpg, Image-2.jpg, and Image-3.jpg. To set the parameter value, use the format: path\\prefix.type.
 -   path is the folder path where you want to store the files.
 -   prefix is the text that you want before the index number.
