@@ -14,7 +14,7 @@ author: jswymer
 
 Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 platform (version 20). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
- ![Upgrade on customized Business Central application.](../developer/media/bc14-to-20-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
+[![Upgrade on customized Business Central application.](../developer/media/bc14-to-20-technical-upgrade-unmodified-app.png)](../developer/media/bc14-to-20-technical-upgrade-unmodified-app.png#lightbox)  
  
 ## General information
  

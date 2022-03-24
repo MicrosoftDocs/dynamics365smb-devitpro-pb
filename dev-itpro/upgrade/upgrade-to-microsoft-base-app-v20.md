@@ -14,7 +14,7 @@ author: jswymer
 
 This article describes how to upgrade a customized version 14 application to a version 20 solution that uses the Microsoft system and base applications.
 
- ![Shows the upgrade of an unmodified Business Central application.](../developer/media/bc14-to-20-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 20") 
+[![Shows the upgrade of an unmodified Business Central v20 application.](../developer/media/bc14-to-20-cal-upgrade-to-base-app.png)](../developer/media/bc14-to-20-cal-upgrade-to-base-app.png#lightbox) 
 
 ## Overview
 
