@@ -3,7 +3,7 @@ title: "TestFilter.SetFilter(TestFilterField, String) Method"
 description: "Applies a filter to the specified field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,9 @@ An instance of the [TestFilter](testfilter-data-type.md) data type.
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  
 The field that you want to apply the filter to.
           
+
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The filter to apply to the specified field.
           
 

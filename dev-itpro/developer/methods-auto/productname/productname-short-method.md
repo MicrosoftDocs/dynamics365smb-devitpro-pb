@@ -3,7 +3,7 @@ title: "ProductName.Short() Method"
 description: "SHORT returns a text string that contains the application's short name."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/04/2022
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,10 +24,9 @@ SHORT returns a text string that contains the application's short name.
 ProductNameShort :=   ProductName.Short()
 ```
 
-
 ## Return Value
 *ProductNameShort*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 Text of the product's short name.
 
 

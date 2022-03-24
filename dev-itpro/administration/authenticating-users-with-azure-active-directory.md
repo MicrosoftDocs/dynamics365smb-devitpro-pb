@@ -9,26 +9,14 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Azure Active Directory
+# Configure Azure Active Directory Authentication with WS-Federation
 
-Microsoft Azure Active Directory \(Azure AD\) is a cloud service that provides identity and access capabilities for applications. The applications can be cloud-based, like on Microsoft Azure and  Microsoft 365, and installed on-premises, like [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+> **APPLIES TO:** Business Central 2021 release wave 2 (version 19) and earlier
 
+The article describes the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. The configuration in this article sets up Azure AD authentication to use the WS-Federation protocol.
 
-The article describes the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users.
-
-## Azure AD and [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
-
-With Azure AD authentication, you store user accounts and credentials in an Azure AD tenant. You then associate [!INCLUDE[prod_short](../developer/includes/prod_short.md)] user accounts with the Azure AD tenant user account. Once in place, users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] by using their Azure AD account.  
-
-Azure AD authentication enables [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to integrate with various applications and services, through a single sign-on experience. It's the required authentication method for some features offered by [!INCLUDE[prod_short](../developer/includes/prod_short.md)], such as:  
-
-- Excel add-in
-- Excel financial reports
-- Outlook add-in
-- Cover sheets for contact management
-- Power BI reports and charts
-- Power Automate Management
-- Service-to-Service authentication with Automation APIs
+> [!IMPORTANT]  
+> Azure AD authentication with WS-Federation has been deprecated in later [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases and replaced with OpenID Connect. For more information, see [Moving from WS-Federation to OpenID Connect](authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect). But if you're running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version), you have the option to WS-Federation.
 
 ## Preparation
 
@@ -476,7 +464,15 @@ Configure the [!INCLUDE[webservercomponents](../developer/includes/webservercomp
     "ClientServicesCredentialType":  "AccessControlService",
     ```
 
-3. Save the navsettings.json file
+3. If you're setting up Business Central version 20, add the following line:
+
+    ```
+    "UseLegacyAcsAuthentication":  "true"
+    ```
+
+    This line is required so that WS-Federation is used instead of OpenID Connect.
+ 
+4. Save the navsettings.json file
 
 For more information, see [Configure Configuring [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances](configure-web-server.md) and [Configure Authentication](users-credential-types.md).
 

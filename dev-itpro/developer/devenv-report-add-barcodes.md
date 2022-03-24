@@ -54,7 +54,7 @@ The tasks involved in creating a report that displays a barcode are as follows:
 
 2. If you don't want to use the built-in IDAutomation providers and encoders, create your own provider and encoders using the API.
 
-   When creating you own, adhere to the interface in the Barcode module. Use the built-in providers and encoders as a starting point. Consider contributing to the open-source project if you do.
+   When creating your own, adhere to the interface in the Barcode module. Use the built-in providers and encoders as a starting point. Consider contributing to the open-source project if you do.
 
 3. In AL code, add the barcode to a report or report extension object.
 

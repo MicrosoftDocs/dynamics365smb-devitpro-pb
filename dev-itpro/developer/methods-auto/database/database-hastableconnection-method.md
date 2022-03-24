@@ -3,7 +3,7 @@ title: "Database.HasTableConnection(TableConnectionType, String) Method"
 description: "Verifies if a connection to an external database exists based on the specified name."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,9 @@ Ok :=   Database.HasTableConnection(Type: TableConnectionType, Name: String)
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
 Specifies the type of table connection as defined in the TableType property.
         
+
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [String](../text/text-data-type.md)  
 The name of the external table connection. You must already have registered a table connection with this name.  
 
 
