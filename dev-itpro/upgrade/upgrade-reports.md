@@ -14,7 +14,7 @@ author: jswymer
 
 ## Updates to Business Central Report platform (version 20)
 
-In version 20 the reporting platform have been updated with respect to Microsoft Word render engine, Custom render suppport and improved layout management using extension layouts and new platform supported layout and selection tables. This also have an impact on the appliction events in the Report Management codeunit.
+In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in the Report Management codeunit.
 
 ### Document report with Microsoft Word layouts
 
