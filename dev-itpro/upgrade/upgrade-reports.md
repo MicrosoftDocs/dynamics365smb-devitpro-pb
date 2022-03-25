@@ -12,20 +12,25 @@ author: jswymer
 ---
 # Upgrading Reports
 
-## Updates to Business Central Report platform
+## Updates to Business Central Report platform (version 20)
 
-In version 20 the reporting platform have been updated with respect to Microsoft Word render engine, Custom render suppport and improved layout management using extension layouts and new platform supported layout and selection tables. This also have an impact on the appliction events in the Report Management codeunit. 
+In version 20 the reporting platform have been updated with respect to Microsoft Word render engine, Custom render suppport and improved layout management using extension layouts and new platform supported layout and selection tables. This also have an impact on the appliction events in the Report Management codeunit.
 
 ### Document report with Microsoft Word layouts
 
 The new platform natively supports rendering of Microsoft Word reports and if the application have customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previoius versions) by
 
-- Disable the application feature key `Feature: New Microsoft Word report rendering platform` 
-in the Feature Management page 
-- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report.
-- Customized use of OnAfterHasCustomLayout have to be reimplemented using the events
-    - OnSelectReportLayoutCode
-    - OnFetchReportLayoutByCode
+- Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the Feature Management page.
+- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report id and layout name.
+
+### Customization of OnAfterHasCustomLayout event
+
+Customized use of OnAfterHasCustomLayout have to be reimplemented using the events
+  - `OnSelectReportLayoutCode` - Will find the layout code and type that the application have set using the Report Layout Selection application table.
+  - `OnFetchReportLayoutByCode` - Will read the layout data from application tables (not needed if the layouts are stored in platform system tables by using extension provided layouts or layouts inserted manually in the `Tenant Report Layout` table).
+
+### Customization of `OnMergeDocumentReport` or `OnBeforeMergeDocument`
+Extensions that depend on the legay Microsoft Word render using the events `OnMergeDocumentReport` or `OnBeforeMergeDocument` should be updated to use the new Custom report render type and subscribe to `OnCustomDocumentMerger` instead. The layouts can now the added in the extension using the the `rendering` report AL section and will be stored in the platform layout tables. 
 
 ## New Business Events
 
@@ -144,11 +149,11 @@ Events for loading report layouts
 ### New code to be added to codeunit 44 Report Management to support the upgraded platform requirements:
 
 Add new functionality to support new platform driven events for documents and download, and for managing report layout selection and load from application logic.
-The old event OnAfterHasCustomLayout has been replaced with the following events:
+The old event `OnAfterHasCustomLayout` has been replaced with the following events:
 
-- SelectedBuiltinLayoutType, which will return the layout type selected for the current report. This is for backward compatibility only and uses the application layout selection table for retreiving the desired builtin layout type.
-- SelectReportLayoutCode, which will return the selection layout name and type using the Custom Report Layout selection table and associated logic. Substitue for OnAfterHasCustomLayout.
-- FetchReportLayoutByCode, will load the layout stream from application code, given a layout name and report id.
+- `SelectedBuiltinLayoutType`, which will return the layout type selected for the current report. This is for backward compatibility only and uses the application layout selection table for retreiving the desired builtin layout type.
+- `SelectReportLayoutCode`, which will return the selection layout name and type using the Custom Report Layout selection table and associated logic. Substitue for OnAfterHasCustomLayout.
+- `FetchReportLayoutByCode`, will load the layout stream from application code, given a layout name and report id.
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
@@ -305,3 +310,4 @@ end;
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
+[Custom Report Render Event](../developer/devenv-oncustomdocumentmerger-event.md)
