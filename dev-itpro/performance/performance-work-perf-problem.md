@@ -65,11 +65,24 @@ If a specific page takes too long to load, it might be due to extensions that ar
 
 Read more about how to use the page inspector to troubleshoot extension performance here [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
 
-## Analyzing performance issues using the AL profiler
+## Analyzing performance issues using the AL Profiler
 
 With the AL Profiler for the AL Language extension you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. 
 
+Before capturing a snapshot with a performance profile, you can choose between using instrumentation or sampling for the profile. Instrumentation captures all method calls with precise timings, but has a higher performance load on the NST, the snapshot will be larger and it can take longer to generate and extract the profile from the snapshot. Sampling captures method calls at predefined, repeated intervals. This has a smaller performance load on the NST, but calls shorter than the sampling interval might not be captured, and timings fall in sample buckets. 
+
 Read more about how to use the AL profiler to troubleshoot performance here [AL Profiler Overview](../developer/devenv-al-profiler-overview.md).
+
+## Analyzing performance issues using the in-client Performance Profiler 
+
+The in-client Performance Profiler can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly within the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time than using the AL Profiler using the *instrumentation* option. Recording is done in the web client and the collected data is also shown in web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow. 
+ 
+## Comparing the AL profiler and the in-client profiler
+
+|Profiler| Scenarios|
+|--------|----------|
+|AL Profiler | - Good when troubleshooting performance of a scenario.<br>- Very detailed information on where in the code the time is spent. <br>- No need to enable it, because it is always available. <br>- Requires a developer to run the tool. <br>- Data collection must happen live. |
+| In-client Profiler | - Good for troubleshooting a performance scenario in the web client.<br>- No developer required to run the tool. |
 
 ## Which tools are good when?
 
