@@ -22,7 +22,7 @@ The main endpoint for the API is:
 
 ## Set up cloud migration
 
-To create the set up you can issue a POST request, if it is a first setup, otherwise use a PATCH request. Issue the request against the following endpoint:
+To create the set up you can issue a `POST` request, if it is a first setup, otherwise use a `PATCH` request. Issue the request against the following endpoint:
 
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration
@@ -66,7 +66,7 @@ The above request will return a payload like:
 
 If you are migrating from Azure SQL you can skip next step:
 
-If you are migrating from SQLServer, you should take the `runtimeKey` value and install and connect Microsoft Integration Runtime by using this key. Then you need to issue a PATCH request such as the following:
+If you are migrating from SQLServer, you should take the `runtimeKey` value and install and connect Microsoft Integration Runtime by using this key. Then you need to issue a `PATCH` request such as the following:
 
 ```JSON
 PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})
@@ -83,6 +83,7 @@ Body:
 ```
 
 To complete the setup for both SQL and Azure SQL hosted databases invoke:
+
 ```json
 POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})/ Microsoft.NAV.completeSetup
 
@@ -124,25 +125,26 @@ If-Match: etag
 To exclude the company, issue the same request with a false value.
 
 Once the companies are marked for replication you can create them by running the following request:
+
 ```json
 POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies({AnyCompanyId}) /Microsoft.NAV.createCompaniesMarkedForReplication
 
 Authorization: Bearer {token}
-
 ```
 
-DELETE and POST are not allowed against this API; it is not possible to create or delete entities on this API.
+`DELETE` and `POST` are not allowed against this API; it is not possible to create or delete entities on this API.
 
 ## Cloud migration status
 
 To manage cloud migration or to track the status this API should be used:
+
 ```json
 GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus
 Authorization: Bearer {token}
-
 ```
 
 It will return the following payload:
+
 ```json
 {  
       "id": "679c8aa5-16a9-ec11-80f1-002248334988",
@@ -160,6 +162,7 @@ It will return the following payload:
 ```
 
 To start the replication find the cloudMigrationStatus with last endTime and invoke the following command:
+
 ```json
 POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runReplication
 Authorization: Bearer {token}
@@ -167,6 +170,7 @@ Authorization: Bearer {token}
 ```
 
 To refresh the status do the following request:
+
 ```json
 POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.refreshStatus
 Authorization: Bearer {token}
