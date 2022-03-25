@@ -2,7 +2,7 @@
 title: "How to Work with a Performance Problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 12/21/2021
+ms.date: 04/01/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -89,7 +89,7 @@ In the following, you can read about the pros and cons of the different performa
 |Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject a lot of data into Azure Application Insights. <br> Data collection must happen live. |
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
 | AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. |
-| In-client profiler | - Good for troubleshooting a performance scenario in the web client.<br>- No developer required to run the tool.| 
+| In-client performance profiler | - Good for troubleshooting a performance scenario in the web client.<br>- No developer required to run the tool.| 
 
 
 ## Example - How to deal with a performance problem in a report from an AppSource extension
