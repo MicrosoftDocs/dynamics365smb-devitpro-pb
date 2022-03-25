@@ -77,6 +77,8 @@ Read more about how to use the AL profiler to troubleshoot performance here [AL 
 
 The in-client Performance Profiler can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly within the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time than using the AL Profiler using the *instrumentation* option. Recording is done in the web client and the collected data is also shown in web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow.
 
+Read more about how to use the in-client profiler to troubleshoot performance here [Performance Profiler Overview](../administration/performance-profiler-overview.md)
+
 ## Which tools are good when?
 
 In the following, you can read about the pros and cons of the different performance tools described above.
