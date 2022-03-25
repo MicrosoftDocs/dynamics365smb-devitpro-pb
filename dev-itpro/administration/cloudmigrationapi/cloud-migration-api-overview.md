@@ -25,7 +25,7 @@ The main endpoint for the API is:
 To create the set up you can issue a `POST` request, if it is a first setup, otherwise use a `PATCH` request. Issue the request against the following endpoint:
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration
+POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration
 Authorization: Bearer {token}
 Content-type: application/json
 
@@ -69,7 +69,7 @@ If you are migrating from Azure SQL you can skip next step:
 If you are migrating from SQLServer, you should take the `runtimeKey` value and install and connect Microsoft Integration Runtime by using this key. Then you need to issue a `PATCH` request such as the following:
 
 ```JSON
-PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})
+PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})
 Authorization: Bearer {token}
 Content-type: application/json
 If-Match: etag
@@ -85,7 +85,7 @@ Body:
 To complete the setup for both SQL and Azure SQL hosted databases invoke:
 
 ```json
-POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})/ Microsoft.NAV.completeSetup
+POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})/ Microsoft.NAV.completeSetup
 
 ```
 
@@ -94,7 +94,7 @@ POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment na
 To create on-prem companies you can get the list first by issuing a request like this:
 
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies 
+GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies 
 Authorization: Bearer {token}
 
 The response will be like this for each of the companies:
@@ -112,7 +112,7 @@ The response will be like this for each of the companies:
 To include the company into the cloud migration you should issue following request:
 
 ```json
-PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies ({CompanyId})
+PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies ({CompanyId})
 Authorization: Bearer {token}
 Content-type: application/json
 If-Match: etag
@@ -127,7 +127,7 @@ To exclude the company, issue the same request with a false value.
 Once the companies are marked for replication you can create them by running the following request:
 
 ```json
-POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies({AnyCompanyId}) /Microsoft.NAV.createCompaniesMarkedForReplication
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies({AnyCompanyId}) /Microsoft.NAV.createCompaniesMarkedForReplication
 
 Authorization: Bearer {token}
 ```
@@ -139,7 +139,7 @@ Authorization: Bearer {token}
 To manage cloud migration or to track the status this API should be used:
 
 ```json
-GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus
+GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus
 Authorization: Bearer {token}
 ```
 
@@ -164,7 +164,7 @@ It will return the following payload:
 To start the replication find the cloudMigrationStatus with last endTime and invoke the following command:
 
 ```json
-POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runReplication
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runReplication
 Authorization: Bearer {token}
 
 ```
@@ -172,7 +172,7 @@ Authorization: Bearer {token}
 To refresh the status do the following request:
 
 ```json
-POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.refreshStatus
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.refreshStatus
 Authorization: Bearer {token}
 
 ```
@@ -180,14 +180,14 @@ Authorization: Bearer {token}
 To trigger the data upgrade do the following request:
 
 ```json
-POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runDataUpgrade
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runDataUpgrade
 Authorization: Bearer {token}
 ```
 
 To disable the replication as the last step do the following request:
 
 ```json
-POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.disableReplication
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}/api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.disableReplication
 Authorization: Bearer {token}
 
 ```
