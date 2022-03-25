@@ -18,7 +18,7 @@ You can upgrade from one major version of [!INCLUDE [prod_short](../includes/pro
 For an overview of the supported paths, see [Supported Upgrade Paths](upgrade-paths.md). For an overview of compatibility across minor versions, see the relevant sections in this article.  
 
 > [!TIP]
-> Some versions are marked with <a name="1"><sup>1</sup></a>, which means that the compatible upgrade versions for that version aren't available yet. If you are currently operating on this version, you'll have to wait until the next round of updates before you upgrade.
+> Some versions are marked with <a name="#1"><sup>1</sup></a>, which means that the compatible upgrade versions for that version aren't available yet. If you are currently operating on this version, you'll have to wait until the next round of updates before you upgrade.
 
 ## Before choosing the target version
 
