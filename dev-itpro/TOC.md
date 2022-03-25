@@ -276,7 +276,7 @@
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 ## Cloud Migration APIs
-### [Overview]()
+### [Cloud Migration API Overview](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Cloud migration company](administration/cloudmigrationapi/resources/dynamics_cloudmigrationcompany.md)
