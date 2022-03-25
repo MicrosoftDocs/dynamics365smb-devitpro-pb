@@ -100,7 +100,7 @@ The following table explains CustomDimensions that are automatically included in
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](../administration/tenant-admin-center-environments.md#types-of-environments)|
 | extensionName|Specifies the name of the extension that called the LOGMESSAGE method.|
 | extensionId|Specifies the ID of the extension that called the LOGMESSAGE method.|
-| extensionPublisher|Specifies the publisher of the extension called the LOGMESSAGE method.|
+| extensionPublisher|Specifies the publisher of the extension that called the LOGMESSAGE method.|
 | extensionVersion|Specifies the version of the compiled extension.|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|

@@ -18,7 +18,7 @@ Business Central developers can tap into Microsoft 365 native file viewers and f
 
 ## Overview
 
-Standard functionality in Business Central makes it easy for users to store, manage, and share files with other people through OneDrive for Business. On most pages where files are available for downloading, users will find an **Open in OneDrive** an **Share** action. They'll see this action, for example, on reports in the **Report Inbox** or on files attached to records. For more information about the user experience, see [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview).
+Standard functionality in Business Central makes it easy for users to store, manage, and share files with other people through OneDrive for Business. On most pages where files are available for downloading, users will find an **Open in OneDrive** and **Share** action. They'll see this action, for example, on reports in the **Report Inbox** or on files attached to records. For more information about the user experience, see [Business Central and OneDrive for Business Integration](/dynamics365/business-central/across-onedrive-overview).
 
 In the application code, the document sharing and OneDrive capabilities are divided between the system application and the base application. The system application provides that platform working with document sharing services&mdash;the base application makes it specific to OneDrive. As an AL developer, you can use the system and base applications to extend the OneDrive capabilities. Or even target another document sharing service.
 
