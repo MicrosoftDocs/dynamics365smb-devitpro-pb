@@ -88,6 +88,104 @@ POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment na
 
 ```
 
+## Cloud migration - create companies
 
+To create on-prem companies you can get the list first by issuing a request like this:
+
+```json
+GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies 
+Authorization: Bearer {token}
+
+The response will be like this for each of the companies:
+  {
+      "id": "{CompanyId}",
+      "name": "{CompanyName}",
+      "replicate": false,
+      "displayName": "{DislpayName}",
+      "estimatedSize":{SizeOfComapny},
+      "status": "",
+      "created": false
+    }
+```
+
+To include the company into the cloud migration you should issue following request:
+
+```json
+PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies ({CompanyId})
+Authorization: Bearer {token}
+Content-type: application/json
+If-Match: etag
+ {
+      "replicate": true
+}
+
+```
+
+To exclude the company, issue the same request with a false value.
+
+Once the companies are marked for replication you can create them by running the following request:
+```json
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationCompanies({AnyCompanyId}) /Microsoft.NAV.createCompaniesMarkedForReplication
+
+Authorization: Bearer {token}
+
+```
+
+DELETE and POST are not allowed against this API; it is not possible to create or delete entities on this API.
+
+## Cloud migration status
+
+To manage cloud migration or to track the status this API should be used:
+```json
+GET https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus
+Authorization: Bearer {token}
+
+```
+
+It will return the following payload:
+```json
+{  
+      "id": "679c8aa5-16a9-ec11-80f1-002248334988",
+      "runId": "79090ce4-404d-4274-829a-a3b18e99006c",
+      "startTime": "2022-03-21T12:57:17Z",
+      "endTime": "2022-03-21T12:58:48.35Z",
+      "replicationType": "Normal",
+      "status": "Completed",
+      "source": "Dynamics 365 Business Central earlier versions",
+      "details": "Cloud migration setup completed.",
+      "tablesSuccessful": 0,
+      "tablesFailed": 0,
+      "tablesRemaining": 0
+}
+```
+
+To start the replication find the cloudMigrationStatus with last endTime and invoke the following command:
+```json
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runReplication
+Authorization: Bearer {token}
+
+```
+
+To refresh the status do the following request:
+```json
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.refreshStatus
+Authorization: Bearer {token}
+
+```
+
+To trigger the data upgrade do the following request:
+
+```json
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.runDataUpgrade
+Authorization: Bearer {token}
+```
+
+To disable the replication as the last step do the following request:
+
+```json
+POST  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/cloudMigrationStatus ({LastStatusId}) /Microsoft.NAV.disableReplication
+Authorization: Bearer {token}
+
+```
 
 ## See also
