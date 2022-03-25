@@ -64,7 +64,7 @@ The following table lists the Business Central 17 versions, and the 18 and 19 ve
 |[17.7](https://support.microsoft.com/help/5003474)|[18.3](https://support.microsoft.com/help/5004715)|19.0|20.0|
 |[17.8](https://support.microsoft.com/help/5004716)|[18.4](https://support.microsoft.com/help/5005375)|19.0|20.0|
 |[17.9](https://support.microsoft.com/help/5005374)|[18.5](https://support.microsoft.com/help/5006076)|19.0|20.0|
-|[17.10](https://support.microsoft.com/help/5004716)|[18.6](https://support.microsoft.com/help/5007026)|19.0|
+|[17.10](https://support.microsoft.com/help/5004716)|[18.6](https://support.microsoft.com/help/5007026)|19.0|20.0|
 |[17.11](https://support.microsoft.com/help/5007025)|[18.7](https://support.microsoft.com/help/5007778)|[19.1](https://support.microsoft.com/help/5007779)|20.0|
 |[17.12](https://support.microsoft.com/help/5007777)|[18.8](https://support.microsoft.com/help/5009179)|[19.2](https://support.microsoft.com/help/5009178)|20.0|
 |[17.13](https://support.microsoft.com/help/5009177)|[18.9](https://support.microsoft.com/help/5010206)|[19.3](https://support.microsoft.com/help/5010207)|20.0|
@@ -81,7 +81,7 @@ The following table lists the Business Central 16 versions and the 17, 18, and 1
 
 |Version 16|Version 17|Version 18|Version 19|Version 20|
 |----------|----------|----------|----------|----------|
-|16.0 to 16.5|17.0|18.0|19.0|
+|16.0 to 16.5|17.0|18.0|19.0|20.0|
 |[16.6](https://support.microsoft.com/help/4583501)|[17.1](https://support.microsoft.com/help/4583515)|18.0|19.0|20.0|
 |[16.7](https://support.microsoft.com/help/4583513)|[17.2](https://support.microsoft.com/help/4583554)|18.0|19.0|20.0|
 |[16.8](https://support.microsoft.com/help/4583553)|[17.3](https://support.microsoft.com/help/4595152)|18.0|19.0|20.0|
@@ -105,7 +105,7 @@ The following table lists the Business Central 15 versions and the 16, 17, 18, a
 
 |Version 15|Version 16|Version 17|Version 18|Version 19|Version 20|
 |----------|----------|----------|----------|----------|----------|
-|15.0 to 15.4|16.0|17.0|18.0|19.0|
+|15.0 to 15.4|16.0|17.0|18.0|19.0|20.0|
 |[15.5](https://support.microsoft.com/help/4549678)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|19.0|20.0|
 |[15.6](https://support.microsoft.com/help/4549685)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|19.0|20.0|
 |[15.7](https://support.microsoft.com/help/4564071)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|19.0|20.0|
