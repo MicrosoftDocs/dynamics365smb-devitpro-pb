@@ -18,7 +18,7 @@ In version 20, the reporting platform has been updated with respect to Microsoft
 
 ### Document report with Microsoft Word layouts
 
-The new platform natively supports rendering of Microsoft Word reports and if the application have customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previoius versions) by
+The new platform natively supports rendering of Microsoft Word reports and if the application have customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by
 
 - Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the Feature Management page.
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.
