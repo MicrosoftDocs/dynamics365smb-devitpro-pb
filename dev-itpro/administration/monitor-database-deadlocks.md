@@ -18,7 +18,6 @@ Deadlocks can prevent users from completing tasks in the [!INCLUDE[prod_short](.
 For general information about deadlocks, see [Detecting and Ending Deadlocks](/previous-versions/sql/sql-server-2008-r2/ms178104(v=sql.105)).
 
 ## Setting Up Deadlock Logging
-
 Setting up deadlock logging requires you to configure the SQL Server instance and the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 **Note:**  If you installed the [!INCLUDE[server](../developer/includes/server.md)] and database components by using the **Install Demo** option in the [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)], then deadlock logging is set up by default.   
@@ -133,7 +132,6 @@ Deadlock event log entries have the event ID 705 and task category 33 (Telemetry
 **Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[server](../developer/includes/server.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
 
 ### View a graphical representation of the deadlock event
-
 To view a graphical representation of the deadlock, perform the following steps:
 1.  Open the deadlock event in Event Viewer.
 2.  On the General tab, go to the SQL Server deadlock xml report section, and then copy the text in the deadlock tag (including the start and end tag) to a text editor such as Notepad or Visual Studio Code.
@@ -141,7 +139,6 @@ To view a graphical representation of the deadlock, perform the following steps:
 4.  Open the file in SQL Server Management Studio.
 
 ### Filter on deadlock events
-
 All deadlock events have the trace tag **00000DI**. If you only want to see deadlocks events in the log, you can use this tag in an XML path filter on the log, as shown in the following example:
 
 ```
@@ -153,18 +150,8 @@ All deadlock events have the trace tag **00000DI**. If you only want to see dead
   </Query>
 </QueryList>
 ```
-
 For more information about XML filtering, see [Advanced XML filtering in the Windows Event Viewer](/archive/blogs/askds/advanced-xml-filtering-in-the-windows-event-viewer).
-
-## Monitor using Application Insights
-
-If you're deployment is enabled for it, you can also view data about deadlocks in an Application Insights resource in Azure. For more information, see:
-
-- [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md)
-- [Analyzing Database Deadlock Trace Telemetry](telemetry-database-deadlocks-trace.md)
-
-## See Also
-
+##  See Also
 [Monitoring Business Central Server Events](monitor-server-events.md)  
 [Monitoring SQL Database Locks](monitor-database-locks.md)  
 [Monitoring Business Central Server](monitor-server.md)  

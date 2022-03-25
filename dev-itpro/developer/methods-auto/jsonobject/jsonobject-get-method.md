@@ -3,7 +3,7 @@ title: "JsonObject.Get(String, var JsonToken) Method"
 description: "Retrieves the value of a property with a given key from a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,10 +29,9 @@ Retrieves the value of a property with a given key from a JsonObject.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
         
-
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 A variable of type JsonToken that will contain the result if the operation is successful.  

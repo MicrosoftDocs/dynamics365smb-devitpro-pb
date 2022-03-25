@@ -3,7 +3,7 @@ title: "XmlDeclaration.Create(String, String, String) Method"
 description: "Creates an XmlDeclaration node."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,17 +25,15 @@ XmlDeclaration :=   XmlDeclaration.Create(Version: String, Encoding: String, Sta
 ```
 ## Parameters
 *Version*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The version of the XML, usually "1.0".
         
-
 *Encoding*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The encoding for the XML document.
         
-
 *Standalone*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string containing "yes" or "no" that specifies whether the XML is standalone or requires external entities to be resolved.  
 
 

@@ -3,7 +3,7 @@ title: "FieldRef.FieldError([String]) Method"
 description: "Stops the execution of the code, causing a run-time error, and creates an error message for a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 10/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Stops the execution of the code, causing a run-time error, and creates an error 
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *[Optional] Text*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Use this optional parameter to include the text of the error message. If this parameter is not present, default text will be used.  
 
 

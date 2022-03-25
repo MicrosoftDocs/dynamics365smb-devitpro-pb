@@ -3,7 +3,7 @@ title: "Dialog.Message(String [, Any,...]) Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,10 +27,9 @@ Displays a text string in a message window.
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This string contains the text you want the system to display in the message window. Use a backslash (\\) to start a new line. Use percent signs (%) to insert variable values into the string. Place the percent where you want the system to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.
         
-
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 Any type of AL variable you want to insert into String. You can insert up to 10 values.  

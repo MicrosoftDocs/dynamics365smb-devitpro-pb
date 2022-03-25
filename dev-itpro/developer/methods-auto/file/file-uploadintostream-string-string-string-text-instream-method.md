@@ -3,7 +3,7 @@ title: "File.UploadIntoStream(String, String, String, var Text, var InStream) Me
 description: "Sends a file from the client computer to the corresponding server."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,25 +27,21 @@ Sends a file from the client computer to the corresponding server. The client co
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *DialogTitle*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The text displayed in the title bar of the Open dialog box. This parameter is not supported by the web client. The title is determined by the end-user's browser.
           
-
 *FromFolder*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path of the folder that is displayed in the File Open dialog box. This is the default folder, but the user can browse to any available location. This parameter is not supported by the web client. By default, the browser uses the folder that was last accessed.
           
-
 *FromFilter*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The type of file that can be uploaded to the server. A user can try to upload any file type but an error occurs if the file is not the specified type.
           
-
 *FromFile*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The default file to upload to the service. The name displays in the dialog box for uploading the file. The user can change the file. This parameter is not supported by the web client.
         
-
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
   

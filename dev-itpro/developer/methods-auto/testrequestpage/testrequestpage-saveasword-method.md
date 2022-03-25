@@ -3,7 +3,7 @@ title: "TestRequestPage.SaveAsWord(String) Method"
 description: "Saves a report as a Microsoft Word (.doc) file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Saves a report as a Microsoft Word (.doc) file.
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and file name to which the report is saved. The file name extension should be .doc.  
 
 

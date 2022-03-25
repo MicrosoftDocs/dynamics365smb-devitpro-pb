@@ -3,7 +3,7 @@ title: "HttpHeaders.TryAddWithoutValidation(String, String) Method"
 description: "Adds the specified header and its value into the HttpHeaders collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,11 +29,10 @@ Adds the specified header and its value into the HttpHeaders collection. Doesn't
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The header to add to the collection.  
-
 *Value*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The content of the header.  
 
 

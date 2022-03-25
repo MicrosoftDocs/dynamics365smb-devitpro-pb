@@ -3,12 +3,11 @@ title: "Report.SaveAsPdf(Integer, String [, var Record]) Method"
 description: "Saves a report as a .pdf file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,12 +30,10 @@ Saves a report as a .pdf file.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run.
         
-
 *FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and name of the file that you want to save the report as.
         
-
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  

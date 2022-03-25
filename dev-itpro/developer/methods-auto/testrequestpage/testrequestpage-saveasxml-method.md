@@ -3,7 +3,7 @@ title: "TestRequestPage.SaveAsXml(String, String) Method"
 description: "Saves a report data set and the labels on a report as two XML (.xml) files."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,12 +31,11 @@ Saves a report data set and the labels on a report as two XML (.xml) files.
 An instance of the [TestRequestPage](testrequestpage-data-type.md) data type.  
 
 *ParameterFileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and file name to which the paramater file is saved.
         
-
 *DataSetFileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The path and file name to which the data set file is saved.  
 
 

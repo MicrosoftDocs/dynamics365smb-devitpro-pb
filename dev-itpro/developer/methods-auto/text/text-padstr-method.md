@@ -3,7 +3,7 @@ title: "Text.PadStr(String, Integer [, String]) Method"
 description: "Changes the length of a string to a specified length."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,23 +27,21 @@ NewString :=   Text.PadStr(String: String, Length: Integer [, FillCharacter: Str
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The string that you want to increase or decrease.
         
-
 *Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The new length of the output string. If Length is less than the length of String, then String is truncated. Otherwise String is expanded with filler characters. If Length is less than 0, then an error is returned.
         
-
 *[Optional] FillCharacter*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 This is a string of length 1. This character is used to fill empty spaces at the end of the output string. If not specified, spaces are used as default. If the length of FillCharacter is not 1, an error is returned.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A copy of the string with the expected length.
 
 

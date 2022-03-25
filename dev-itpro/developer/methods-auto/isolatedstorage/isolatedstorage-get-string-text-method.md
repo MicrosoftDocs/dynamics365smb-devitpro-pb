@@ -3,7 +3,7 @@ title: "IsolatedStorage.Get(String, var Text) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,10 +25,9 @@ Gets the value associated with the specified key.
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The key of the value to get. If the specified key is not found an error will be reported.
         
-
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The value that is associated with the specified key.  

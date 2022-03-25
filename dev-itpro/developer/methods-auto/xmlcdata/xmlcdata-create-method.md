@@ -3,7 +3,7 @@ title: "XmlCData.Create(String) Method"
 description: "Creates an XmlCData node."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ CDataNode :=   XmlCData.Create(Value: String)
 ```
 ## Parameters
 *Value*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string that contains the value of the new XmlCData node.  
 
 

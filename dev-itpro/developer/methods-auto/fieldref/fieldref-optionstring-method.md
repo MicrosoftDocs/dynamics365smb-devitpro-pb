@@ -3,7 +3,7 @@ title: "FieldRef.OptionString() Method"
 description: "The 'OptionString' property has been deprecated and will be removed in the future."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,7 @@ OptionMembers :=   FieldRef.OptionString()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
+
 ## Parameters
 *FieldRef*  
 &emsp;Type: [FieldRef](fieldref-data-type.md)  
@@ -32,7 +33,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
 *OptionMembers*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 
 
 

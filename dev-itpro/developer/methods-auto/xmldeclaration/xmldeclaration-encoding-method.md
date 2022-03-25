@@ -3,7 +3,7 @@ title: "XmlDeclaration.Encoding([String]) Method"
 description: "Gets or sets the encoding of the XML document."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,13 +31,13 @@ Gets or sets the encoding of the XML document.
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
 
 *[Optional] NewValue*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The new value for the encoding of the XML document.  
 
 
 ## Return Value
 *[Optional] Value*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The encoding of the XML document.
 
 

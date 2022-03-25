@@ -3,7 +3,7 @@ title: "Database.ExportData(Boolean, var Text [, String] [, Boolean] [, Boolean]
 description: "Exports data from the database to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 11/05/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,32 +32,26 @@ Exports data from the database to a file. The data is not deleted from the datab
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to display a dialog box where the user can confirm the action.
         
-
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name and location of the file that the data must be exported to. The file must have the .navdata extension.
         
-
 *[Optional] Description*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Specifies a description for the exported data.
         
-
 *[Optional] IncludeApplication*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to export the application objects. Create a variable of type Boolean to specify this parameter.
           
-
 *[Optional] IncludeApplicationData*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to export the data that defines the application in the database. This includes the permissions, permission sets, profiles, and style sheets. Create a variable of type Boolean to specify this parameter.
           
-
 *[Optional] IncludeGlobalData*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if you want to export global, non-company specific data. Create a variable of type Boolean to specify this parameter.
           
-
 *[Optional] CompanyRecord*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the company or companies that must be imported.  

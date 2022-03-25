@@ -3,7 +3,7 @@ title: "Record.AddLink(String [, String]) Method"
 description: "Adds a link to a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,11 +29,10 @@ Adds a link to a record.
 An instance of the [Record](record-data-type.md) data type.  
 
 *URL*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
-
 *[Optional] Description*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
   
 
 

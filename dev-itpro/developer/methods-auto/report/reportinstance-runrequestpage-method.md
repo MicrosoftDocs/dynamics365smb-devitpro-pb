@@ -3,12 +3,11 @@ title: "Report.RunRequestPage([String]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -30,13 +29,13 @@ ReportParameters :=   Report.RunRequestPage([PageParameters: String])
 An instance of the [Report](report-data-type.md) data type.  
 
 *[Optional] PageParameters*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 A string of request page parameters as XML to use to run the report.  
 
 
 ## Return Value
 *ReportParameters*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 XML string that contains the request page parameters that are entered on the request page
 
 

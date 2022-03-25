@@ -3,7 +3,7 @@ title: "HttpClient.SetBaseAddress(String) Method"
 description: "Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 07/07/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *NewBaseAddress*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 The base address of the Uniform Resource Identifier (URI) of the Internet resource used when sending requests.  
 
 
