@@ -75,14 +75,7 @@ Read more about how to use the AL profiler to troubleshoot performance here [AL 
 
 ## Analyzing performance issues using the in-client Performance Profiler 
 
-The in-client Performance Profiler can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly within the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time than using the AL Profiler using the *instrumentation* option. Recording is done in the web client and the collected data is also shown in web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow. 
- 
-## Comparing the AL profiler and the in-client profiler
-
-|Profiler| Scenarios|
-|--------|----------|
-|AL Profiler | - Good when troubleshooting performance of a scenario.<br>- Very detailed information on where in the code the time is spent. <br>- No need to enable it, because it is always available. <br>- Requires a developer to run the tool. <br>- Data collection must happen live. |
-| In-client Profiler | - Good for troubleshooting a performance scenario in the web client.<br>- No developer required to run the tool. |
+The in-client Performance Profiler can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly within the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time than using the AL Profiler using the *instrumentation* option. Recording is done in the web client and the collected data is also shown in web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow.
 
 ## Which tools are good when?
 
@@ -93,7 +86,8 @@ In the following, you can read about the pros and cons of the different performa
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Very little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject a lot of data into Azure Application Insights. <br> Data collection must happen live. |
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
-| AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. | 
+| AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. |
+| In-client profiler | - Good for troubleshooting a performance scenario in the web client.<br>- No developer required to run the tool.| 
 
 
 ## Example - How to deal with a performance problem in a report from an AppSource extension
