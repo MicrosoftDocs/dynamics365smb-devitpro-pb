@@ -23,7 +23,9 @@ The methods from the "See Also" section are not auto-generated as they come from
 -->
   
 ## See Also  
+
 [InvokeExtensibilityMethod Method](methods/devenv-invokeextensibility-method.md)   
 [GetImageResource Method](methods/devenv-getimageresource-method.md)
 [GetEnvironment Method](methods/devenv-getenvironment-method.md)  
+[Control Add-in Best Practices](devenv-control-addin-bestpractices.md)  
 [OpenWindow Method](methods/devenv-openwindow-method.md)
