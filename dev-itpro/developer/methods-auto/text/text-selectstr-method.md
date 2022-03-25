@@ -1,9 +1,9 @@
 ---
-title: "Text.SelectStr(Integer, String) Method"
+title: "Text.SelectStr(Integer, Text) Method"
 description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.SelectStr(Integer, String) Method
+# Text.SelectStr(Integer, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Retrieves a substring from a comma-separated string.
@@ -21,10 +21,8 @@ Retrieves a substring from a comma-separated string.
 
 ## Syntax
 ```AL
-NewString :=   Text.SelectStr(Number: Integer, CommaString: String)
+NewString :=   Text.SelectStr(Number: Integer, CommaString: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
@@ -32,13 +30,13 @@ Specifies which substring to retrieve. The substrings in the comma-separated str
         
 
 *CommaString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 A string that contains substrings separated by commas. The maximum length of this string is 391 characters.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The substring from the comma-separated string at the index specified.
 
 

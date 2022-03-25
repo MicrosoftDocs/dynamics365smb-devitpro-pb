@@ -1,9 +1,9 @@
 ---
-title: "System.CalcDate(String [, Date]) Method"
+title: "System.CalcDate(Text [, Date]) Method"
 description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.CalcDate(String [, Date]) Method
+# System.CalcDate(Text [, Date]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Calculates a new date that is based on a date expression and a reference date.
@@ -21,13 +21,13 @@ Calculates a new date that is based on a date expression and a reference date.
 
 ## Syntax
 ```AL
-NewDate :=   System.CalcDate(DateExpression: String [, Date: Date])
+NewDate :=   System.CalcDate(DateExpression: Text [, Date: Date])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *DateExpression*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The date expression can be any length. The string is interpreted from left to right with one subexpression at a time. The following rules describe the valid syntax of date expressions:
 -   DateExpression = [\<Subexpression\>][\<Subexpression\>][\<Subexpression\>]
 -   \<Subexpression\> = [\<Sign\>] \<Term\>-   \<Sign\> = + | -

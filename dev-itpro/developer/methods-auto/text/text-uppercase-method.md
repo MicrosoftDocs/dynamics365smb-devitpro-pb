@@ -1,9 +1,9 @@
 ---
-title: "Text.UpperCase(String) Method"
+title: "Text.UpperCase(Text) Method"
 description: "Converts all letters in a string to uppercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.UpperCase(String) Method
+# Text.UpperCase(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Converts all letters in a string to uppercase.
@@ -21,19 +21,17 @@ Converts all letters in a string to uppercase.
 
 ## Syntax
 ```AL
-NewString :=   Text.UpperCase(String: String)
+NewString :=   Text.UpperCase(String: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The string that you want to convert to uppercase.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The string converted to uppercase.
 
 

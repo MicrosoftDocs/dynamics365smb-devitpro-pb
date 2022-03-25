@@ -1,20 +1,19 @@
 ---
-title: "Report.SaveAsPdf(String) Method"
+title: "Report.SaveAsPdf(Text) Method"
 description: "Saves a report as a .pdf file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAsPdf(String) Method
+# Report.SaveAsPdf(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report as a .pdf file.
@@ -24,7 +23,7 @@ Saves a report as a .pdf file.
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAsPdf(FileName: String)
+[Ok := ]  Report.SaveAsPdf(FileName: Text)
 ```
 ## Parameters
 *Report*  
@@ -32,7 +31,7 @@ Saves a report as a .pdf file.
 An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and name of the file that you want to save the report as.
           
 

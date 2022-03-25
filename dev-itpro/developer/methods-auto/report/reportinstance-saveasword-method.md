@@ -1,20 +1,19 @@
 ---
-title: "Report.SaveAsWord(String) Method"
+title: "Report.SaveAsWord(Text) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Word (.doc) document."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAsWord(String) Method
+# Report.SaveAsWord(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.
@@ -24,7 +23,7 @@ Saves a report on the computer that is running the server as a Microsoft Word (.
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAsWord(FileName: String)
+[Ok := ]  Report.SaveAsWord(FileName: Text)
 ```
 ## Parameters
 *Report*  
@@ -32,7 +31,7 @@ Saves a report on the computer that is running the server as a Microsoft Word (.
 An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and the name of the file that you want to save the report as. The path must exist, the file must not be being used, and the server process must have permission to write to the file. Otherwise, you will get errors.
           
 

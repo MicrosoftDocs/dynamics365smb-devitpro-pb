@@ -1,9 +1,9 @@
 ---
-title: "IsolatedStorage.Contains(String [, DataScope]) Method"
+title: "IsolatedStorage.Contains(Text [, DataScope]) Method"
 description: "Determines whether the storage contains a value with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.Contains(String [, DataScope]) Method
+# IsolatedStorage.Contains(Text [, DataScope]) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Determines whether the storage contains a value with the specified key.
@@ -21,11 +21,11 @@ Determines whether the storage contains a value with the specified key.
 
 ## Syntax
 ```AL
-HasValue :=   IsolatedStorage.Contains(Key: String [, DataScope: DataScope])
+HasValue :=   IsolatedStorage.Contains(Key: Text [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The key to locate in the storage.
         
 

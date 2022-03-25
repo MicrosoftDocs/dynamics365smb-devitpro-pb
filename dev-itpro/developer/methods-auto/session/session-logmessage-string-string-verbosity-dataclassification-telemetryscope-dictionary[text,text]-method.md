@@ -1,9 +1,9 @@
 ---
-title: "Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text]) Method"
+title: "Session.LogMessage(Text, Text, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text]) Method"
 description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.LogMessage(String, String, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text]) Method
+# Session.LogMessage(Text, Text, Verbosity, DataClassification, TelemetryScope, Dictionary of [Text, Text]) Method
 > **Version**: _Available or changed with runtime version 5.4._
 
 Logs a trace message to a telemetry account.
@@ -21,17 +21,17 @@ Logs a trace message to a telemetry account.
 
 ## Syntax
 ```AL
- Session.LogMessage(EventId: String, Message: String, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
+ Session.LogMessage(EventId: Text, Message: Text, Verbosity: Verbosity, DataClassification: DataClassification, TelemetryScope: TelemetryScope, CustomDimensions: Dictionary of [Text, Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *EventId*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The event ID of trace message.   
 
 *Message*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The message logged into telemetry.   
 
 *Verbosity*  

@@ -1,9 +1,9 @@
 ---
-title: "Session.StartSession(var Integer, Integer, Duration [, String] [, var Record]) Method"
+title: "Session.StartSession(var Integer, Integer, Duration [, Text] [, var Record]) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.StartSession(var Integer, Integer, Duration [, String] [, var Record]) Method
+# Session.StartSession(var Integer, Integer, Duration [, Text] [, var Record]) Method
 > **Version**: _Available or changed with runtime version 7.1._
 
 Starts a session without a UI and runs the specified codeunit.
@@ -21,7 +21,7 @@ Starts a session without a UI and runs the specified codeunit.
 
 ## Syntax
 ```AL
-[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Timeout: Duration [, Company: String] [, var Record: Record])
+[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Timeout: Duration [, Company: Text] [, var Record: Record])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -39,7 +39,7 @@ The ID of the codeunit to run when the session is started.
 Specifies the timeout of the created session. If not specified a default timeout will be used; for OnPrem, the default timeout is set on the server, for SaaS the current default timeout is 12 hours, and may change in the future.  
 
 *[Optional] Company*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
 
 *[Optional] Record*  

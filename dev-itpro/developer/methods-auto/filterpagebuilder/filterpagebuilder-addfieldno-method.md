@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.AddFieldNo(String, Integer [, String]) Method"
+title: "FilterPageBuilder.AddFieldNo(Text, Integer [, Text]) Method"
 description: "Adds a table field to the filter control for a table on the filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.AddFieldNo(String, Integer [, String]) Method
+# FilterPageBuilder.AddFieldNo(Text, Integer [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a table field to the filter control for a table on the filter page.
@@ -21,7 +21,7 @@ Adds a table field to the filter control for a table on the filter page.
 
 ## Syntax
 ```AL
-[Ok := ]  FilterPageBuilder.AddFieldNo(Name: String, FieldNo: Integer [, Filter: String])
+[Ok := ]  FilterPageBuilder.AddFieldNo(Name: Text, FieldNo: Integer [, Filter: Text])
 ```
 ## Parameters
 *FilterPageBuilder*  
@@ -29,7 +29,7 @@ Adds a table field to the filter control for a table on the filter page.
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
         
 
@@ -39,7 +39,7 @@ The number that is assigned to the field in the table as specified by the Field 
         
 
 *[Optional] Filter*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
 
 

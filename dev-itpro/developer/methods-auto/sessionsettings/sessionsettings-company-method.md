@@ -1,9 +1,9 @@
 ---
-title: "SessionSettings.Company([String]) Method"
+title: "SessionSettings.Company([Text]) Method"
 description: "Gets or sets the company property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SessionSettings.Company([String]) Method
+# SessionSettings.Company([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the company property in a SessionSettings object.
@@ -21,7 +21,7 @@ Gets or sets the company property in a SessionSettings object.
 
 ## Syntax
 ```AL
-[Company := ]  SessionSettings.Company([NewCompanyName: String])
+[Company := ]  SessionSettings.Company([NewCompanyName: Text])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,14 +31,14 @@ Gets or sets the company property in a SessionSettings object.
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
 *[Optional] NewCompanyName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name of the company in the SessionSettings object. The company must already exist in the database, otherwise you will get an error at runtime.
         
 
 
 ## Return Value
 *[Optional] Company*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the company that is set in the SessionSettings object.
       
 

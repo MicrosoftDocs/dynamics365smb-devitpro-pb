@@ -1,9 +1,9 @@
 ---
-title: "System.Encrypt(String) Method"
+title: "System.Encrypt(Text) Method"
 description: "Takes a string as input and returns the encrypted value of the string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Encrypt(String) Method
+# System.Encrypt(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Takes a string as input and returns the encrypted value of the string.
@@ -21,19 +21,19 @@ Takes a string as input and returns the encrypted value of the string.
 
 ## Syntax
 ```AL
-EncryptedString :=   System.Encrypt(PlainTextString: String)
+EncryptedString :=   System.Encrypt(PlainTextString: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *PlainTextString*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The input string that will be encrypted. The input string cannot exceed a length of 215 plain characters. If the input string includes special characters the length is even more reduced.  
 
 
 ## Return Value
 *EncryptedString*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The output string that is encrypted.
 
 

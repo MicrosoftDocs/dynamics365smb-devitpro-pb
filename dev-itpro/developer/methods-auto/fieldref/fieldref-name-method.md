@@ -3,7 +3,7 @@ title: "FieldRef.Name() Method"
 description: "Gets the name of a field as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ An instance of the [FieldRef](fieldref-data-type.md) data type.
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 

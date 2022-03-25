@@ -3,7 +3,7 @@ title: "ProductName.Marketing() Method"
 description: "MARKETING returns a text string that contains the application's marketing name."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ ProductNameMarketing :=   ProductName.Marketing()
 
 ## Return Value
 *ProductNameMarketing*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Text of the product's marketing name.
 
 

@@ -1,9 +1,9 @@
 ---
-title: "JsonArray.SelectToken(String, var JsonToken) Method"
+title: "JsonArray.SelectToken(Text, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonArray.SelectToken(String, var JsonToken) Method
+# JsonArray.SelectToken(Text, var JsonToken) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Selects a JsonToken using a JPath expression.
@@ -21,7 +21,7 @@ Selects a JsonToken using a JPath expression.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonArray.SelectToken(Path: String, var Result: JsonToken)
+[Ok := ]  JsonArray.SelectToken(Path: Text, var Result: JsonToken)
 ```
 ## Parameters
 *JsonArray*  
@@ -29,7 +29,7 @@ Selects a JsonToken using a JPath expression.
 An instance of the [JsonArray](jsonarray-data-type.md) data type.  
 
 *Path*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A valid JPath expression.
         
 

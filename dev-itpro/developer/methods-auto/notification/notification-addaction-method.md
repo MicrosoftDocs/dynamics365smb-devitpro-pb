@@ -1,9 +1,9 @@
 ---
-title: "Notification.AddAction(String, Integer, String) Method"
+title: "Notification.AddAction(Text, Integer, Text) Method"
 description: "Specifies an action for the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.AddAction(String, Integer, String) Method
+# Notification.AddAction(Text, Integer, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Specifies an action for the notification.
@@ -21,7 +21,7 @@ Specifies an action for the notification.
 
 ## Syntax
 ```AL
- Notification.AddAction(Caption: String, CodeunitID: Integer, MethodName: String)
+ Notification.AddAction(Caption: Text, CodeunitID: Integer, MethodName: Text)
 ```
 ## Parameters
 *Notification*  
@@ -29,7 +29,7 @@ Specifies an action for the notification.
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *Caption*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The text string that appears as the caption of the action in the notification UI. The string can be a text constant that is enabled for multilanguage functionality.
         
 
@@ -39,7 +39,7 @@ The ID of the Codeunit to run when the action is initiated from the notification
         
 
 *MethodName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the method in the Codeunit, which is specified by the CodeunitID parameter, that you want to run for the action.  
 
 

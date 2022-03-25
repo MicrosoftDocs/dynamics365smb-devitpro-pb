@@ -1,9 +1,9 @@
 ---
-title: "MediaSet.ExportFile(String) Method"
+title: "MediaSet.ExportFile(Text) Method"
 description: "Exports the media objects in the current media set of a record to individual files on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.ExportFile(String) Method
+# MediaSet.ExportFile(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Exports the media objects in the current media set of a record to individual files on your computer or network. In the record, the media set is referenced in a MediaSet data type field.
@@ -23,7 +23,7 @@ Exports the media objects in the current media set of a record to individual fil
 
 ## Syntax
 ```AL
-[Count := ]  MediaSet.ExportFile(FilenamePrefix: String)
+[Count := ]  MediaSet.ExportFile(FilenamePrefix: Text)
 ```
 ## Parameters
 *MediaSet*  
@@ -31,7 +31,7 @@ Exports the media objects in the current media set of a record to individual fil
 An instance of the [MediaSet](mediaset-data-type.md) data type.  
 
 *FilenamePrefix*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the location and name of the exported media files. Each exported media file is given a name that consists of a prefix that you specify, plus an index number that is automatically assigned. The file name has the format prefix-index.type, for example, Image-1.jpg, Image-2.jpg, and Image-3.jpg. To set the parameter value, use the format: path\\prefix.type.
 -   path is the folder path where you want to store the files.
 -   prefix is the text that you want before the index number.

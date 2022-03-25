@@ -1,9 +1,9 @@
 ---
-title: "XmlElement.GetNamespaceOfPrefix(String, var Text) Method"
+title: "XmlElement.GetNamespaceOfPrefix(Text, var Text) Method"
 description: "Gets the namespace associated with a particular prefix for this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.GetNamespaceOfPrefix(String, var Text) Method
+# XmlElement.GetNamespaceOfPrefix(Text, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the namespace associated with a particular prefix for this element.
@@ -21,7 +21,7 @@ Gets the namespace associated with a particular prefix for this element.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlElement.GetNamespaceOfPrefix(Prefix: String, var Result: Text)
+[Ok := ]  XmlElement.GetNamespaceOfPrefix(Prefix: Text, var Result: Text)
 ```
 ## Parameters
 *XmlElement*  
@@ -29,7 +29,7 @@ Gets the namespace associated with a particular prefix for this element.
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *Prefix*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the namespace prefix to look up.
         
 

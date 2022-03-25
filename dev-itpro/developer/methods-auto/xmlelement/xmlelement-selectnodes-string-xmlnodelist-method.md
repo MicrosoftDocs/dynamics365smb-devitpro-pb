@@ -1,9 +1,9 @@
 ---
-title: "XmlElement.SelectNodes(String, var XmlNodeList) Method"
+title: "XmlElement.SelectNodes(Text, var XmlNodeList) Method"
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.SelectNodes(String, var XmlNodeList) Method
+# XmlElement.SelectNodes(Text, var XmlNodeList) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Selects a list of nodes matching the XPath expression.
@@ -21,7 +21,7 @@ Selects a list of nodes matching the XPath expression.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlElement.SelectNodes(XPath: String, var NodeList: XmlNodeList)
+[Ok := ]  XmlElement.SelectNodes(XPath: Text, var NodeList: XmlNodeList)
 ```
 ## Parameters
 *XmlElement*  
@@ -29,7 +29,7 @@ Selects a list of nodes matching the XPath expression.
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The XPath expression.
         
 

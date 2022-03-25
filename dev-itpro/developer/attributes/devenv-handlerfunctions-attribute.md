@@ -3,12 +3,11 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,12 +30,12 @@ Specifies the handler methods that are used by the test method.
 ## Syntax
 
 ```AL
-[HandlerFunctions(HandlerNames: String)]
+[HandlerFunctions(HandlerNames: Text)]
 ```
 
 ### Arguments
 *HandlerNames*  
-&emsp;Type: [String](../methods-auto/string/string-data-type.md)  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 The names of the handler methods used by the test method.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

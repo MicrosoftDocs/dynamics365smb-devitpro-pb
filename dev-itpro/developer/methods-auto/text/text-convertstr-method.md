@@ -1,9 +1,9 @@
 ---
-title: "Text.ConvertStr(String, String, String) Method"
+title: "Text.ConvertStr(Text, Text, Text) Method"
 description: "Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.ConvertStr(String, String, String) Method
+# Text.ConvertStr(Text, Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string. If the length of the FromCharacters parameter and the ToChars parameter are different, an exception is thrown. If the parameter FromCharacters or the parameter ToChars is empty, the source is returned unmodified. Each element in source is only converted ONCE a double-replacement cannot happen.
@@ -21,29 +21,27 @@ Replaces all chars in source found in FromCharacters with the corresponding char
 
 ## Syntax
 ```AL
-NewString :=   Text.ConvertStr(String: String, FromCharacters: String, ToCharacters: String)
+NewString :=   Text.ConvertStr(String: Text, FromCharacters: Text, ToCharacters: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The string that you want to convert.
         
 
 *FromCharacters*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The characters that you want to replace. This function is case-sensitive.
         
 
 *ToCharacters*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The new characters with which you want to replace the FromCharacters. This function is case-sensitive.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](text-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The input string with the converted characters.
 
 

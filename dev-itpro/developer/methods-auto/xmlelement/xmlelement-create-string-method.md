@@ -1,9 +1,9 @@
 ---
-title: "XmlElement.Create(String) Method"
+title: "XmlElement.Create(Text) Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.Create(String) Method
+# XmlElement.Create(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlElement node.
@@ -21,11 +21,11 @@ Creates an XmlElement node.
 
 ## Syntax
 ```AL
-XmlElement :=   XmlElement.Create(Name: String)
+XmlElement :=   XmlElement.Create(Name: Text)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The fully qualified name of the element to create.  
 
 

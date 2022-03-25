@@ -1,9 +1,9 @@
 ---
-title: "File.UploadIntoStream(String, var InStream) Method"
+title: "File.UploadIntoStream(Text, var InStream) Method"
 description: "Sends a file from the client computer to the corresponding server."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.UploadIntoStream(String, var InStream) Method
+# File.UploadIntoStream(Text, var InStream) Method
 > **Version**: _Available or changed with runtime version 7.0._
 
 Sends a file from the client computer to the corresponding server. The client computer is the computer that is running a browser that accesses the web client.
@@ -21,13 +21,13 @@ Sends a file from the client computer to the corresponding server. The client co
 
 ## Syntax
 ```AL
-[Ok := ]  File.UploadIntoStream(FromFilter: String, var InStream: InStream)
+[Ok := ]  File.UploadIntoStream(FromFilter: Text, var InStream: InStream)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FromFilter*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The type of file that can be uploaded to the server. A user can try to upload any file type but an error occurs if the file is not the specified type.
         
 

@@ -1,9 +1,9 @@
 ---
-title: "XmlDeclaration.Version([String]) Method"
+title: "XmlDeclaration.Version([Text]) Method"
 description: "Gets or sets the version property for this document."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDeclaration.Version([String]) Method
+# XmlDeclaration.Version([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the version property for this document.
@@ -21,7 +21,7 @@ Gets or sets the version property for this document.
 
 ## Syntax
 ```AL
-[Value := ]  XmlDeclaration.Version([NewValue: String])
+[Value := ]  XmlDeclaration.Version([NewValue: Text])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,13 +31,13 @@ Gets or sets the version property for this document.
 An instance of the [XmlDeclaration](xmldeclaration-data-type.md) data type.  
 
 *[Optional] NewValue*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string containing the version property for this document.  
 
 
 ## Return Value
 *[Optional] Value*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The version property for this document.
 
 

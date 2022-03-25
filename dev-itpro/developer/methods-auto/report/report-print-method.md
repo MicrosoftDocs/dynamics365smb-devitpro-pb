@@ -1,20 +1,19 @@
 ---
-title: "Report.Print(Integer, String [, String] [, RecordRef]) Method"
+title: "Report.Print(Integer, Text [, Text] [, RecordRef]) Method"
 description: "Prints a specified report without running the request page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.Print(Integer, String [, String] [, RecordRef]) Method
+# Report.Print(Integer, Text [, Text] [, RecordRef]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Prints a specified report without running the request page. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from a RUNREQUESTPAGE method call.
@@ -22,7 +21,7 @@ Prints a specified report without running the request page. Instead of using the
 
 ## Syntax
 ```AL
- Report.Print(Number: Integer, Parameters: String [, PrinterName: String] [, RecordRef: RecordRef])
+ Report.Print(Number: Integer, Parameters: Text [, PrinterName: Text] [, RecordRef: RecordRef])
 ```
 ## Parameters
 *Number*  
@@ -31,12 +30,12 @@ The ID of the report that you want to print. If the report that you specify does
           
 
 *Parameters*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
         
 
 *[Optional] PrinterName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the printer to use to print the report. The printer must be set up on the client computer. If you do not set this variable, the printer that is set as the default printer is used.
         
 

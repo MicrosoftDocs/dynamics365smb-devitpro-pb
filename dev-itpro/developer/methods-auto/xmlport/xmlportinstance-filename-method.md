@@ -1,9 +1,9 @@
 ---
-title: "Xmlport.Filename([String]) Method"
+title: "Xmlport.Filename([Text]) Method"
 description: "Gets the current value of the FileName Property of an XmlPort and sets this property to a new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Xmlport.Filename([String]) Method
+# Xmlport.Filename([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the current value of the FileName Property of an XmlPort and sets this property to a new value.
@@ -21,7 +21,7 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 
 ## Syntax
 ```AL
-[FileName := ]  Xmlport.Filename([FileName: String])
+[FileName := ]  Xmlport.Filename([FileName: Text])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,13 +31,13 @@ Gets the current value of the FileName Property of an XmlPort and sets this prop
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The new file name.  
 
 
 ## Return Value
 *[Optional] FileName*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The current value of the FileName Property of an XmlPort.
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Record.Find([String]) Method"
+title: "Record.Find([Text]) Method"
 description: "Finds a record in a table that is based on the values stored in keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.Find([String]) Method
+# Record.Find([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Finds a record in a table that is based on the values stored in keys.
@@ -21,7 +21,7 @@ Finds a record in a table that is based on the values stored in keys.
 
 ## Syntax
 ```AL
-[Ok := ]  Record.Find([Which: String])
+[Ok := ]  Record.Find([Which: Text])
 ```
 ## Parameters
 *Record*  
@@ -29,7 +29,7 @@ Finds a record in a table that is based on the values stored in keys.
 An instance of the [Record](record-data-type.md) data type.  
 
 *[Optional] Which*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies how to perform the search. The table is searched until either a record  is found or there are no more records. Each character in this string can be present only one time. You can combine the '=', '\<', and '\>' characters. You can use the following characters:
 -   =  to search for a record that equals the key values (default)
 -  \>  to search for a record that is larger than the key values

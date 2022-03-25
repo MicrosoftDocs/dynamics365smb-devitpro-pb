@@ -1,9 +1,9 @@
 ---
-title: "File.DownloadFromStream(InStream, String, String, String, var Text) Method"
+title: "File.DownloadFromStream(InStream, Text, Text, Text, var Text) Method"
 description: "Sends a file from server computer to the client computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.DownloadFromStream(InStream, String, String, String, var Text) Method
+# File.DownloadFromStream(InStream, Text, Text, Text, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sends a file from server computer to the client computer. The client computer is the computer that is running the Windows client or the computer that is running the browser that accesses the web client.
@@ -21,7 +21,7 @@ Sends a file from server computer to the client computer. The client computer is
 
 ## Syntax
 ```AL
-[Ok := ]  File.DownloadFromStream(InStream: InStream, DialogTitle: String, ToFolder: String, ToFilter: String, var ToFile: Text)
+[Ok := ]  File.DownloadFromStream(InStream: InStream, DialogTitle: Text, ToFolder: Text, ToFilter: Text, var ToFile: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -32,17 +32,17 @@ An InStream that you want to use to send the data in a file on Business Central 
         
 
 *DialogTitle*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The title that you want to display in the dialog box for downloading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
           
 
 *ToFolder*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The default folder in which to save the file to be downloaded. The folder name is displayed in the dialog box for downloading the file. The folder can be changed by the user. This parameter is not supported by the web client. By default, files are saved to the default download location that is configured in the end-user's browser.
           
 
 *ToFilter*  
-&emsp;Type: [String](../text/text-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The type of file that can be downloaded to the client computer. The type is displayed in the dialog box for downloading the file. This parameter is not supported by the web client.
           
 
