@@ -72,6 +72,6 @@ Here is a JSON representation of the setupCloudMigration resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET setupCloudMigration](../api/dynamics_setupcloudmigration_get.md)
-[POST setupCloudMigration](../api/dynamics_setupcloudmigration_create.md)
-[PATCH setupCloudMigration](../api/dynamics_setupcloudmigration_update.md)
+[GET setupCloudMigration](../api/dynamics_setupcloudmigration_get.md)  
+[POST setupCloudMigration](../api/dynamics_setupcloudmigration_create.md)  
+[PATCH setupCloudMigration](../api/dynamics_setupcloudmigration_update.md)  
