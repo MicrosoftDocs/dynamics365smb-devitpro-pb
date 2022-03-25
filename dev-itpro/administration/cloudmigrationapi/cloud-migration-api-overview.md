@@ -44,5 +44,50 @@ In the JSON example above, `productId` can be one of following values:
 - DynamicsBC – use for cloud migration from the same version of [!INCLUDE[prod_short](../../developer/includes/prod_short.md)]
 - DynamicsGP – use if you are setting up a Dynamics GP cloud migration
 
+In the JSON example above, `sqlServerType` can be one of the following values:  
 
-##
+- SQLServer – Use if you are migrating from the database that is hosted on the On-Prem SQL server
+- AzureSQL – If you have uploaded the database to migrate to Azure SQL server
+
+And the `SqlConnectionString` must be the SQL connection string to the database you want to migrate
+
+The above request will return a payload like:
+
+```json
+{ 
+    "id":"{SetupRecordId}",
+   "productId":"{ProductID}",
+   "sqlServerType":"{SqlServerType}",
+   "sqlConnectionString":"{SqlConnectionString}"
+   "runtimeName":"{RuntimeName}",
+   "runtimeKey":"{RuntimeKey}"
+}
+```
+
+If you are migrating from Azure SQL you can skip next step:
+
+If you are migrating from SQLServer, you should take the `runtimeKey` value and install and connect Microsoft Integration Runtime by using this key. Then you need to issue a PATCH request such as the following:
+
+```JSON
+PATCH  https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})
+Authorization: Bearer {token}
+Content-type: application/json
+If-Match: etag
+Body:
+{ 
+   "productId":"{ProductID}",
+   "sqlServerType":"{SqlServerType}",
+   "sqlConnectionString":"{SqlConnectionString}",
+    "runtimeName":"{RuntimeName}"
+}
+```
+
+To complete the setup for both SQL and Azure SQL hosted databases invoke:
+```json
+POST https://api.businesscentral.dynamics.com/v2.0/{aadTenantID}/{environment name}//api/microsoft/cloudMigration/v1.0/companies({companyId})/setupCloudMigration({SetupRecordId})/ Microsoft.NAV.completeSetup
+
+```
+
+
+
+## See also
