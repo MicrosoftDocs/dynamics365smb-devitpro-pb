@@ -37,7 +37,7 @@ PATCH businesscentralPrefix/companies({companyId})/attachments({attachmentId})/a
 **Request**
 Here is an example of the request.
 
-```json
+```
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/attachments(parentId={parentId},id={attachmentId})/attachmentContent
 ```
 
