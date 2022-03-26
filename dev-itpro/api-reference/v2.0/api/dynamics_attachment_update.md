@@ -20,7 +20,7 @@ Update the attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-PATCH businesscentralPrefix/companies({companyId})/attachments({attachmentId})/content
+PATCH businesscentralPrefix/companies({companyId})/attachments({attachmentId})/attachmentContent
 ```
 
 ## Request headers
@@ -38,7 +38,7 @@ PATCH businesscentralPrefix/companies({companyId})/attachments({attachmentId})/c
 Here is an example of the request.
 
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/attachments(parentId={parentId},id={attachmentId})/content
+PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/attachments(parentId={parentId},id={attachmentId})/attachmentContent
 ```
 
 **Request body**
