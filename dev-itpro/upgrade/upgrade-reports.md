@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Upgrading Reports
 
-## Updates to Business Central Report platform (version 20)
+## Updates to Business Central report platform (version 20)
 
 In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.
 
@@ -34,112 +34,112 @@ Customized use of OnAfterHasCustomLayout has to be re-implemented by using the f
 
 Extensions that depend on the legacy Microsoft Word render by using the events `OnMergeDocumentReport` or `OnBeforeMergeDocument` should be updated to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead. The layouts can now the added in the extension by using the `rendering` report AL section and will be stored in the platform layout tables. 
 
-## New Integration Events
+## New integration events 
 
-### Codeunit 44 ReportManagement
+Codeunit **44 ReportManagement** includes new integration events for processing reports and loading report layouts.
 
-Events for processing reports.
+- Events for processing reports
 
-```al
+    ```al
     [IntegrationEvent(false, false)]
     local procedure OnAfterDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     local procedure OnAfterDocumentDownload(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
     begin
     end;
-```
+    ```
 
-Events for loading report layouts
+- Events for loading report layouts
 
-```al
+    ```al
     [IntegrationEvent(false, false)]
     local procedure OnSelectReportLayoutCode(ObjectId: Integer; var LayoutCode: Text; var LayoutType: Option "None",RDLC,Word,Excel,Custom; var IsHandled: Boolean)
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     local procedure OnFetchReportLayoutByCode(ObjectId: Integer; LayoutCode: Text; var TargetStream: OutStream; var IsHandled: Boolean)
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
     begin
     end;
-```
+    ```
 
-## Obsoleted Business Events
+## Obsoleted business events
 
-### Codeunit 44 ReportManagement
+Some events in Codeunit **44 ReportManagement** and Codeunit **9651 "Document Report Mgt."** have been obsoleted.
 
-```al
+- Codeunit 44 ReportManagement
+
+    ```al
     [IntegrationEvent(false, false)]
     [Obsolete('Replaced by platform document merge using OnCustomDocumentMerger.', '20.0')]
     local procedure OnMergeDocumentReport(ObjectType: Option "Report","Page"; ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; FileName: Text; var printDocumentStream: OutStream; var IsHandled: Boolean)
     begin
     end;
-
+    
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'ReportGetCustomRdlc', '', false, false)]
     [Obsolete('This procedure will be replaced with platform functionality. Subscribe to the event FetchReportLayoutByCode instead to retrieve a layout.', '20.0')]
     local procedure ReportGetCustomRdlc(ReportId: Integer; var RdlcText: Text)
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     local procedure OnAfterHasCustomLayout(ObjectType: Option "Report","Page"; ObjectID: Integer; var LayoutType: Option "None",RDLC,Word,Excel,Custom)
     begin
     end;
-```
+    ```
 
-### Codeunit 9651 "Document Report Mgt."
+-  Codeunit 9651 "Document Report Mgt."
 
-```al
+    ```al
     [IntegrationEvent(false, false)]
     [Obsolete('Platform will render Word Document Reports, look for OnAfterDocumentReady.', '20.0')]
     local procedure OnAfterConvertToPdf(var TempBlob: Codeunit "Temp Blob"; ReportID: Integer);
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     [Obsolete('Platform will render Word Document Reports.', '20.0')]
     local procedure OnAfterGetCustomLayoutCode(ReportID: Integer; var CustomLayoutCode: Code[20])
     begin
     end;
-
-
+    
     [IntegrationEvent(false, false)]
     [Obsolete('Platform will render Word Document Reports.', '20.0')]
     local procedure OnBeforeMergeDocument(ReportID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; var InStrXmlData: InStream; PrinterName: Text; OutStream: OutStream; var Handled: Boolean; IsFileNameBlank: Boolean)
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     [Obsolete('Platform will render Word Document Reports.', '20.0')]
     local procedure OnBeforeMergeWordDocument()
     begin
     end;
-
+    
     [IntegrationEvent(false, false)]
     [Obsolete('Platform will render Word Document Reports, look for OnDocumentReady.', '20.0')]
     local procedure OnAfterMergeWordDocument(ReportID: Integer; InStrXmlData: InStream; var TempBlob: Codeunit "Temp Blob")
     begin
     end;
-
-
+    
     [IntegrationEvent(false, false)]
     [Obsolete('Platform will render Word Document Reports.', '20.0')]
     local procedure OnMergeReportLayoutOnSuppressCommit(ReportID: Integer; var IsHandled: Boolean)
     begin
     end;
-```
+    ```
 
 ## Technical upgrade from 19 and earlier
 
@@ -148,7 +148,7 @@ Events for loading report layouts
 - System App must be updated to version 20.x
 - ReportManagement.Codeunit.al (ID=44) must implement the new event subscribers and integration events.
 
-### New code to be added to codeunit 44 Report Management to support the upgraded platform requirements:
+### New code to be added to codeunit 44 Report Management to support the upgraded platform requirements
 
 Add new functionality to support new platform driven events for documents and download, and for managing report layout selection and load from application logic.
 The old event `OnAfterHasCustomLayout` has been replaced with the following events:
