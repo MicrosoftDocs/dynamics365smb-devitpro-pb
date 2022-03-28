@@ -71,5 +71,5 @@ It is possible to specify multiple layouts for a report. For more information, s
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
-[ExcelLayout Property](developer/properties/devenv-excellayout-property.md)  
-[LayoutFile Property](developer/properties/devenv-layoutfile-property.md)  
+[ExcelLayout Property](properties/devenv-excellayout-property.md)  
+[LayoutFile Property](properties/devenv-layoutfile-property.md)  
