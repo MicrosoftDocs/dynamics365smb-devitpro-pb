@@ -3,7 +3,7 @@ title: "Creating an Excel Layout Report"
 description: "Describes the steps involved in creating a report that uses an Excel layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/04/2022
+ms.date: 04/01/2022
 ms.reviewer: na
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -40,7 +40,7 @@ The following example extends the **Contact List** report only by adding a `rend
 
 2. Now, press **Ctrl+Shift+P**, and then choose **AL: Package**. The `MyExcelContactList.xlsx` will be generated, as you can see in the right pane of Visual Studio Code.  
     > [!TIP]  
-    > Another way of generating the data set to build a layout from, is to choose to run a report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option, and you will get the same starting point. Then you can design the layout, save as a new layout, and include in your AL project.
+    > Another way of generating the data set to build a layout on, is to run a report in Business Central and on the request page, then choose the **Microsoft Excel Document (data only)** option, and you will get the same starting point. Then you can design the layout, save as a new layout, and include in your AL project.
 1. Right-click the generated `MyExcelContactList.xlsx` file, and choose **Reveal in File Explorer**. This will open File Explorer.
 1. Choose the `MyExcelContactList.xlsx` file in File Explorer and open it in Excel.  
 Excel now opens and you should see the dataset of the Contact List. **Note** that it is important to not change the dataset in Excel, only the layout.
