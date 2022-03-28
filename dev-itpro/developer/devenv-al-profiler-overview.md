@@ -183,9 +183,10 @@ There are a few server restrictions for sampling profiling to be aware of:
 
 ### Performance profiling in Business Central
 
-In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in Visual Studio Code and further investigated. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
+In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in Visual Studio Code and further investigated. For more information, see [Performance Profiler Overview](../administration/performance-profiler-overview.md).
 
 ## See Also
 
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
-[AL Language Extension Configuration](devenv-al-extension-configuration.md)
+[AL Language Extension Configuration](devenv-al-extension-configuration.md)  
+[Performance Profiler Overview](../administration/performance-profiler-overview.md)
