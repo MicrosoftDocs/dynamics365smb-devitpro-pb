@@ -1,9 +1,9 @@
 ---
-title: "Text.IncStr(String) Method"
+title: "Text.IncStr(Text) Method"
 description: "Increases a positive number or decrease a negative number inside a string by one (1)."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.IncStr(String) Method
+# Text.IncStr(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Increases a positive number or decrease a negative number inside a string by one (1).
@@ -21,19 +21,17 @@ Increases a positive number or decrease a negative number inside a string by one
 
 ## Syntax
 ```AL
-NewString :=   Text.IncStr(String: String)
+NewString :=   Text.IncStr(String: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](text-data-type.md)  
 The string that you want to increase or decrease.  
 
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](text-data-type.md)  
 The incremented string.
 
 

@@ -3,7 +3,7 @@ title: "XmlNameTable Data Type"
 description: "Represents a table of atomized string objects."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,8 +24,8 @@ The following methods are available on instances of the XmlNameTable data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Add(String)](xmlnametable-add-method.md)|Atomizes the specified string and adds it to the XmlNameTable.|
-|[Get(String, var Text)](xmlnametable-get-method.md)|Gets the atomized string with the specified value.|
+|[Add(Text)](xmlnametable-add-method.md)|Atomizes the specified string and adds it to the XmlNameTable.|
+|[Get(Text, var Text)](xmlnametable-get-method.md)|Gets the atomized string with the specified value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

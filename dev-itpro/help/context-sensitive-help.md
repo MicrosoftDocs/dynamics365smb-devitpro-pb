@@ -1,16 +1,18 @@
 ---
-title: "Configure Context-Sensitive Help"
+title: Configure Context-Sensitive Help
 description: Learn about how to add context-sensitive Help to your Business Central solution, both as an app publisher, an administrator, and as a developer.
 author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 04/01/2021
+ms.date: 01/28/2022
 ---
 
 # Configure Context-Sensitive Help
 
 A key pillar of helping users help themselves is to give them access to Help for the particular part of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that they are working in. When you build an app for [!INCLUDE [prod_short](../includes/prod_short.md)] online, we expect you to provide Help for your solution that can be accessed from the *Learn more* links on tooltips. For more information, see [Help users learn more](../user-assistance.md#help-users-learn-more).  
+
+Starting in 2022 release wave 1, version 20, the *Learn more* links open the Help pane. The same mechanism makes sure that your page-level links are available in the Help pane.
 
 The *Learn more* links are generated based on two configuration settings:
 
@@ -124,7 +126,7 @@ You want to replace the values of the fields in the **Relative Path** column wit
 
 Once you have done this mapping, you can apply it to the **Page Documentation** table by using a script that updates the table in the SQL Server database, for example.  
 
-You can find a couple of suggestions for how to go about this in our blog post, [Blog post: Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/).
+You can find a couple of suggestions for how to go about this in our blog post, [Reusing classic object-based Help on your Dynamics 365 Business Central Help Server](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/13/reusing-classic-object-based-help-dynamics-365-business-central-help-server/).
 
 ## See also
 
