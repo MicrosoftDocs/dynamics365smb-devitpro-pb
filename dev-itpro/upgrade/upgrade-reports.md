@@ -14,14 +14,32 @@ author: jswymer
 
 ## Updates to Business Central report platform (version 20)
 
-In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.
+Version 20 introduces a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
 
-### Document report with Microsoft Word layouts
+- An updated Microsoft Word report rendering engine
+- A new custom report render. For more information, see [Developing a Custom Report Render](devenv-report-custom-render.md)
+- Improved layout management using extension layouts
+- New platform-supported layouts and selection tables.
+- New and obsoleted application events in codeunit **44 ReportManagement**.
 
-The new platform natively supports rendering of Microsoft Word reports and if the application have customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by
+These changes have implications on report upgrade from earlier versions, especially regarding reports that use custom Word layouts. 
 
-- Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the Feature Management page.
-- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.
+> [!NOTE]
+> These changes don't affect the upgrade of RDLC report layouts.  
+
+<!--  
+
+In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.-->
+
+## Document report with Microsoft Word layouts
+
+The new platform supports the native rendering of Microsoft Word reports. With this new rendering, some report events in AL are no longer used, like the `OnAfterHasCustomLayout`, `OnMergeDocumentReport`, and `OnBeforeMergeDocument` events. If you have custom code on these events, you'll have to change the code to use new events, like `OnSelectReportLayoutCode`, `OnFetchReportLayoutByCode`, and `OnCustomDocumentMerger`, instead.
+
+<!--
+if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:
+
+- Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
+- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.-->
 
 ### Customization of OnAfterHasCustomLayout event
 
@@ -32,9 +50,23 @@ Customized use of OnAfterHasCustomLayout has to be re-implemented by using the f
 
 ### Customization of `OnMergeDocumentReport` or `OnBeforeMergeDocument`
 
-Extensions that depend on the legacy Microsoft Word render by using the events `OnMergeDocumentReport` or `OnBeforeMergeDocument` should be updated to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead. The layouts can now the added in the extension by using the `rendering` report AL section and will be stored in the platform layout tables. 
+Extensions that depend on the legacy Microsoft Word render by using the events `OnMergeDocumentReport` or `OnBeforeMergeDocument` should be updated to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead. The layouts can now the added in the extension by using the `rendering` report AL section and will be stored in the platform layout tables.
 
-## New integration events 
+### Continue using application rendering of Word reports
+
+There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to keep using the application rendering of reports instead of the new platform rendering:
+
+- Use the **Feature: New Microsoft Word report rendering platform** in the **Feature Management** page.
+
+  The platform rendering is controlled by the **Feature: New Microsoft Word report rendering platform** .  
+
+<!--
+if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:-->
+
+- Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
+- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.
+
+## New events 
 
 Codeunit **44 ReportManagement** includes new integration events for processing reports and loading report layouts.
 
@@ -76,9 +108,9 @@ Codeunit **44 ReportManagement** includes new integration events for processing 
     end;
     ```
 
-## Obsoleted business events
+## Obsoleted events
 
-Some events in Codeunit **44 ReportManagement** and Codeunit **9651 "Document Report Mgt."** have been obsoleted.
+Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Report Mgt."** have been obsoleted.
 
 - Codeunit 44 ReportManagement
 
@@ -307,6 +339,7 @@ local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: 
 begin
 end;
 ```
+
 
 ## See Also  
 
