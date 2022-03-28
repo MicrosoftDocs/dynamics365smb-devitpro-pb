@@ -3,7 +3,7 @@ title: "Text.Contains(Text) Method"
 description: "Returns a value indicating whether a specified substring occurs within this string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Returns a value indicating whether a specified substring occurs within this stri
 ```AL
 Ok :=   Text.Contains(Value: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  

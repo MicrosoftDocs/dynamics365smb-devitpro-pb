@@ -3,7 +3,7 @@ title: "TestField Data Type"
 description: "Represents a testable field on a page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ The following methods are available on instances of the TestField data type.
 |[SetValue(Any)](testfield-setvalue-method.md)|Sets a value for a field on a test page.|
 |[ShowMandatory()](testfield-showmandatory-method.md)|Gets the ShowMandatory state for the field.|
 |[ValidationErrorCount()](testfield-validationerrorcount-method.md)|Gets the number of validation errors that occurred on the test page.|
-|[Value([String])](testfield-value-method.md)|Gets or sets the value of this field.|
+|[Value([Text])](testfield-value-method.md)|Gets or sets the value of this field.|
 |[Visible()](testfield-visible-method.md)|Gets the visible state for the field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

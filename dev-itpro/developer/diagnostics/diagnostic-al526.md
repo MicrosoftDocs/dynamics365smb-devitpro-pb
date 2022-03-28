@@ -3,11 +3,12 @@ title: "Compiler Error AL0526"
 description: "The referenced page '{0}' of type 'API' is only allowed inside pages of PageType 'API'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

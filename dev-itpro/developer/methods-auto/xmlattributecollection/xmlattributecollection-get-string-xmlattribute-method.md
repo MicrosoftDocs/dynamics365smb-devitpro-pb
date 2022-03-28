@@ -1,9 +1,9 @@
 ---
-title: "XmlAttributeCollection.Get(String, var XmlAttribute) Method"
+title: "XmlAttributeCollection.Get(Text, var XmlAttribute) Method"
 description: "Gets the specified attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlAttributeCollection.Get(String, var XmlAttribute) Method
+# XmlAttributeCollection.Get(Text, var XmlAttribute) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the specified attribute.
@@ -21,7 +21,7 @@ Gets the specified attribute.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlAttributeCollection.Get(Name: String, var Result: XmlAttribute)
+[Ok := ]  XmlAttributeCollection.Get(Name: Text, var Result: XmlAttribute)
 ```
 ## Parameters
 *XmlAttributeCollection*  
@@ -29,9 +29,10 @@ Gets the specified attribute.
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The qualified name of the attribute to retrieve.
         
+
 *Result*  
 &emsp;Type: [XmlAttribute](../xmlattribute/xmlattribute-data-type.md)  
 Variable containing the requested XmlAttribute if the operation is successful.  

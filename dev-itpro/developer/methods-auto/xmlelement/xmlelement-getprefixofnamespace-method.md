@@ -1,9 +1,9 @@
 ---
-title: "XmlElement.GetPrefixOfNamespace(String, var Text) Method"
+title: "XmlElement.GetPrefixOfNamespace(Text, var Text) Method"
 description: "Gets the prefix associated with a namespace URI for this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.GetPrefixOfNamespace(String, var Text) Method
+# XmlElement.GetPrefixOfNamespace(Text, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the prefix associated with a namespace URI for this element.
@@ -21,7 +21,7 @@ Gets the prefix associated with a namespace URI for this element.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlElement.GetPrefixOfNamespace(Namespace: String, var Result: Text)
+[Ok := ]  XmlElement.GetPrefixOfNamespace(Namespace: Text, var Result: Text)
 ```
 ## Parameters
 *XmlElement*  
@@ -29,9 +29,10 @@ Gets the prefix associated with a namespace URI for this element.
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *Namespace*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A namespace URI to look up.
         
+
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the namespace prefix.  

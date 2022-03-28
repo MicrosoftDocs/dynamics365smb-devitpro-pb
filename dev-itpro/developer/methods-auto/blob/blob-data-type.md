@@ -3,7 +3,7 @@ title: "Blob Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,9 +26,9 @@ The following methods are available on instances of the Blob data type.
 |-----------|-----------|
 |[CreateInStream(InStream [, TextEncoding])](blob-createinstream-method.md)|Creates an InStream object for a binary large object (BLOB). This enables you to read data from the BLOB.|
 |[CreateOutStream(OutStream [, TextEncoding])](blob-createoutstream-method.md)|Creates an OutStream object for a binary large object (BLOB). This enables you to write data to the BLOB.|
-|[Export(String)](blob-export-method.md)|Exports a binary large object (BLOB) to a file.|
+|[Export(Text)](blob-export-method.md)|Exports a binary large object (BLOB) to a file.|
 |[HasValue()](blob-hasvalue-method.md)|Determines whether a binary large object (BLOB) has a value.|
-|[Import(String)](blob-import-method.md)|Imports a binary large object (BLOB) from a file.|
+|[Import(Text)](blob-import-method.md)|Imports a binary large object (BLOB) from a file.|
 |[Length()](blob-length-method.md)|Returns the number of bytes in the binary large object (BLOB).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

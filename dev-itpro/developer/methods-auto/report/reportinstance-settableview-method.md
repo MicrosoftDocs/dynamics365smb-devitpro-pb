@@ -3,7 +3,7 @@ title: "Report.SetTableView(var Record) Method"
 description: "Applies the table view on the current record as the table view for the page, report, or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 02/07/2022
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -80,6 +80,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[RequestPage](requestpage/requestpage-data-type.md)|Is a page that is run before the report starts to execute. Request pages enable end-users to specify options and filters for a report.|
 |[Session](session/session-data-type.md)|Represents a Microsoft Dynamics Business Central session.|
 |[SessionSettings](sessionsettings/sessionsettings-data-type.md)|Is a complex data type for passing user personalization settings for a client session as an object. The object contains properties that correspond to the fields in the system table **2000000073 User Personalization**, including: App ID, Company, Language ID, Locale ID, Profile ID, Scope, and Time Zone. You can use the AL methods of the SessionSettings data type to get, set, and send the user personalization settings for the current client session.|
+|[Text](text/text-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|
 |[System](system/system-data-type.md)|Is a complex data type.|
 |[Record](record/record-data-type.md)|Is a complex data type.|
 |[TaskScheduler](taskscheduler/taskscheduler-data-type.md)|Is a complex data type for creating and managing tasks in the task scheduler, which runs codeunits at scheduled times.|
@@ -132,6 +133,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|
 |[PermissionObjectType](permissionobjecttype/permissionobjecttype-option.md)|The different types of objects that can have different permissions assigned.|
 |[ReportFormat](reportformat/reportformat-option.md)|Specifies the format of the report.|
+|[ReportLayoutType](reportlayouttype/reportlayouttype-option.md)|Represents the type of a report layout.|
 |[SecurityFilter](securityfilter/securityfilter-option.md)|Specifies how security filters are applied to the record.|
 |[SecurityOperationResult](securityoperationresult/securityoperationresult-option.md)|Represents security audit operation result.|
 |[TableConnectionType](tableconnectiontype/tableconnectiontype-option.md)|Use variables of this data type to specify the type of connection to an external database.|

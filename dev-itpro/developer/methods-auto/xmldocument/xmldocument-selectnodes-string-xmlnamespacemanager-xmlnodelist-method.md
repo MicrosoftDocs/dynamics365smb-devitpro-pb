@@ -1,9 +1,9 @@
 ---
-title: "XmlDocument.SelectNodes(String, XmlNamespaceManager, var XmlNodeList) Method"
+title: "XmlDocument.SelectNodes(Text, XmlNamespaceManager, var XmlNodeList) Method"
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocument.SelectNodes(String, XmlNamespaceManager, var XmlNodeList) Method
+# XmlDocument.SelectNodes(Text, XmlNamespaceManager, var XmlNodeList) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Selects a list of nodes matching the XPath expression.
@@ -21,7 +21,7 @@ Selects a list of nodes matching the XPath expression.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlDocument.SelectNodes(XPath: String, NamespaceManager: XmlNamespaceManager, var NodeList: XmlNodeList)
+[Ok := ]  XmlDocument.SelectNodes(XPath: Text, NamespaceManager: XmlNamespaceManager, var NodeList: XmlNodeList)
 ```
 ## Parameters
 *XmlDocument*  
@@ -29,13 +29,15 @@ Selects a list of nodes matching the XPath expression.
 An instance of the [XmlDocument](xmldocument-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The XPath expression.
         
+
 *NamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](../xmlnamespacemanager/xmlnamespacemanager-data-type.md)  
 An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.
         
+
 *NodeList*  
 &emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)  
 An XmlNodeList containing a collection of nodes matching the XPath expression.  

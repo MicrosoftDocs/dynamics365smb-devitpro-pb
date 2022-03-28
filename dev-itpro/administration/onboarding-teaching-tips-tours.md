@@ -2,9 +2,9 @@
 title: Teaching tips and in-app tours for onboarding users
 description: Learn about the teaching tips that you can apply to your Business Central to help users get started.
 author: sorenfriisalexandersen
-manager: edupont
+ms.reviewer: edupont
 ms.topic: conceptual
-ms.date: 10/04/2021
+ms.date: 03/22/2022
 ms.author: soalex
 ---
 
@@ -28,9 +28,9 @@ Teaching tips can be defined at the page level, the *page teaching tip*, and be 
 
 - Allow users to get on with a task right away without blocking them.
 
-- A teaching tip can be defined for any page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the role center, dialogs, and request pages for reports.
+- A teaching tip can be defined for any page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], except the role centers, dialogs, and request pages for reports.
 
-- After users dismiss a teaching tip and tour, they can at any point hit or hover over the page title. This action will reopen the teaching tip, and the user can retake the tour, for example.
+- After users dismiss a teaching tip and tour, they can choose or hover over the page title. This action will reopen the teaching tip, and the user can retake the tour, for example.
 
 - On a page that is opened from the checklist, the tour is considered an invited tour, and the page teaching tip has a **Go back** button that takes the user back to the checklist.
 
@@ -70,7 +70,7 @@ There are different rules for teaching tips for lists versus cards and documents
 
 - A control teaching tip can describe the relevant timing for when to use a field or action.
 
-  - Example: The **Post** action: when done editing, then post and send.
+  - Example: The **Post** action: When done editing, then post and send.
 
 ## How to write teaching tips for controls
 
@@ -118,6 +118,68 @@ When designing teaching tips for a tour, it's important to understand the order 
     2. Page teaching tip
     3. Control teaching tips
 4. System teaching tips. These teaching tips are for standard features that added are added by the platform and aren't controlled by AL.
+
+## Rich text guidelines for teaching tips
+
+[!INCLUDE [2022_releasewave1](../includes/2022_releasewave1.md)]
+
+2022 release wave 1 adds support for rich text formatting for teaching tips. In this section, we take a look at the rules and guidelines to follow when using rich text in teaching tips, such as bold, italic, or links.  
+
+### Bold
+
+Bolded text can call out the most important points, such as
+
+- Page names, such as **Customer Card**
+
+- Key features, such as **Search**
+
+- Field names, such as **Customer**
+
+- Keyboard shortcuts, such as **Alt+Q**
+
+#### Best practices for use of bolded text
+
+- Use bolded text sparsely to avoid "shouting".
+
+- If a page name or key feature is title cased, it might be a candidate. However, consider if using bold is needed to help understanding the message.
+
+- Consider the difference between a page name such as the `**Posted Sales Invoices**` list (bolded and capitalized page name) as opposed to what the list contains such as `the list of posted invoices` (not capitalized and not bolded).
+
+- If the feature is already mentioned in the title, consider if it's necessary to highlight the word again in the body text. Bolding a word once in a tip is usually enough.
+
+  ![Example of Page Teaching Tip mentioning a page name highlighted with bold text ](../media/onboarding-teaching-tip-page-bold.png)
+
+### Italics
+
+Italic text can be used to bring attention to key terms or field values, such as the following:
+
+- Key term, such as *general ledger*
+
+- Field value, such as *Closed*
+
+![Example of Tour Teaching Tip describing the field value Closed marked with italic ](../media/onboarding-teaching-tip-page-italics.png)
+
+### Links to open pages
+
+Adding links to page teaching tips can be relevant in the following cases:  
+
+- Links can be added to page teaching tips, to help users discover a key related page in [!INCLUDE [prod_short](../includes/prod_short.md)], such as linking to the **Item Templates** page from a teaching tip on the **Items** list page.  
+
+#### Best practices for use of links
+
+- Use links sparsely and use only in page teaching tips. It may be confusing to send users elsewhere.
+
+- Don't use links in tour teaching tips, as it will disrupt the tour experience.
+
+The following illustration shows a page teaching tip with a link to guide users to a related page in [!INCLUDE [prod_short](../includes/prod_short.md)], such as the **Posted Sales Invoices** list, that users might be looking for in the **Sales Invoices** list.
+
+![Example of a Page Teaching Tip with a link to guide users to a related page object, such as the Posted Sales Invoices list, that users might be looking for ](../media/onboarding-teaching-tip-page-link.png)
+
+### Common pitfalls
+
+- When you want to call out page names with bold, make sure only the caption is marked, such as `**Sales Invoice** page` or `**Sales Invoices** list`. In these examples, "page" and "list" don't have and shouldn't have rich text applied.
+
+- Don't apply multiple rich text styles to the same word. Apply one type of formatting only, bold, italic, or a link.
 
 ## Tooltips and control teaching tips are complementary
 
