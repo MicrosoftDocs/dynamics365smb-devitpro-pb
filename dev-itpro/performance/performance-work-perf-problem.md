@@ -19,10 +19,10 @@ What do you do if users complain that "it's slow"? In this section, we describe 
 Before getting started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of the "slow" operations with users. Learning about the users expectations is key when determining when the performance tuning effort has been successful (or if the expectations are unrealistic). 
 
 You also need to measure how the system performs on the given operation before starting to change anything. This task is sometimes called "establishing a baseline." To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
+
 * When you want to ensure that new code doesn't introduce a regression. 
 * In a sandbox environment when, for example, the number of users running the same process increases significantly. 
 * When you want to roll out a new process, or install a new extension. 
-
 
 To solve a performance problem, a common pattern is to do iterations of the following tasks:
 
@@ -75,9 +75,9 @@ Read more about how to use the AL profiler to troubleshoot performance here [AL 
 
 ## Analyzing performance issues using the in-client Performance Profiler 
 
-The in-client Performance Profiler can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly within the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time than using the AL Profiler using the *instrumentation* option. Recording is done in the web client and the collected data is also shown in web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow.
+The in-client **Performance Profiler** page can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly in the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. Recording is done in the web client and the collected data is also shown in the web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow.
 
-Read more about how to use the in-client profiler to troubleshoot performance here [Performance Profiler Overview](../administration/performance-profiler-overview.md)
+Read more about how to use the in-client profiler to troubleshoot performance here [Performance Profiler Overview](../administration/performance-profiler-overview.md).
 
 ## Which tools are good when?
 
