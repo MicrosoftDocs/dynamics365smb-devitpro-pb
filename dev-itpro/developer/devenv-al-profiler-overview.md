@@ -1,9 +1,9 @@
 ---
 title: "AL Profiler Overview"
-description: "Description of how to use the AL profiler to analyze performance in code written for Business Central."
+description: "Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/04/2021
+ms.date: 04/01/2022
 ms.topic: overview
 ms.author: solsen
 ---
@@ -11,7 +11,6 @@ ms.author: solsen
 # AL Profiler Overview
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] and updated with sampling profiling for Business Central 2022 release wave 1.
-
 
 Profiling allows you to collect data about performance and analyze this data with the goal of optimizing a certain area in the code or a certain process. The AL Profiler for the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers options for *instrumentation* profiling and *sampling* profiling.
 
@@ -59,7 +58,7 @@ Looking at the example, if we want to use the snapshot both for debugging and pr
 
 ### To set up a snapshot configuration for sampling profiling
 
-For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.json` configuration file. The `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. And finally, the `profilingType` must be set to `Sampling` as shown in the example below.
+For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.json` configuration file. The `executionContext` property must be set to `Profile`. Debugging is not supported while running sampling profiling. Finally, the `profilingType` must be set to `Sampling` as shown in the example below.
 
 ```json
 "configurations": [ 
@@ -184,7 +183,7 @@ There are a few server restrictions for sampling profiling to be aware of:
 
 ### Performance profiling in Business Central
 
-In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a .alcpuprofile file, which can be downloaded and shared using OneDrive. When receiving such a .alcpuprofile file, it can be opened in Visual Studio Code and further investigated. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
+In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in Visual Studio Code and further investigated. For more information, see [Performance Profiler Overview](/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview).
 
 ## See Also
 
