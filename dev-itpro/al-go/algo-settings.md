@@ -53,7 +53,7 @@ The repository settings are only read from the repository settings file (.github
 | nextMajorSchedule | CRON schedule for when NextMajor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | nextMinorSchedule | CRON schedule for when NextMinor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | currentSchedule | CRON schedule for when Current workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
-| githubRunner | Specifies which github runner will be used for the pipeline, which is the most time consuming task. Currently, you cannot change which runner is used for all the house-keeping tasks. These will always be run on the default github hosted runner: windows-latest. Read [this](SelfHostedGitHubRunner.md) for more information.
+| githubRunner | Specifies which github runner will be used for the pipeline, which is the most time consuming task. Currently, you cannot change which runner is used for all the house-keeping tasks. These will always be run on the default github hosted runner: windows-latest. Read [this](algo-setup-github-runner-performance.md) for more information.
 
 ## Advanced settings
 
@@ -75,7 +75,7 @@ The repository settings are only read from the repository settings file (.github
 | enableUICop | If enableUICop is set to true, the CI/CD workflow will enable the UICop analyzer when building. | false |
 | customCodeCops | CustomCodeCops is an array of paths or URLs to custom Code Cop DLLs you want to enable when building. | [ ] |
 | failOn | Specifies what the pipeline will fail on. Allowed values are none, warning and error | error |
-| rulesetFile | Filename of the custom ruleset file | |
+| rulesetFile | Filename of the custom ruleset file |n/a |
 | keyVaultCertificateUrlSecretName<br />keyVaultCertificatePasswordSecretName<br />keyVaultClientIdSecretName | If you want to enable KeyVault access for your AppSource App, you need to provide 3 secrets as GitHub Secrets or in the Azure KeyVault. The names of those secrets (**NOT the secrets themselves**) should be specified in the settings file with these 3 settings. Default is to not have KeyVault access from your AppSource App. Read [this](algo-enable-keyvault-app-development.md) for more information. | n/a |
 | codeSignCertificateUrlSecretName<br />codeSignCertificatePasswordSecretName | When developing AppSource Apps, your app needs to be code signed and you need to add secrets to GitHub secrets or Azure KeyVault, specifying the secure URL from which your code signing certificate pfx file can be downloaded and the password for this certificate. These settings specify the names (**NOT the secrets themselves**) of the code signing certificate URL and password. Default is to look for secrets called `CodeSignCertificateUrl` and `CodeSignCertificatePassword`. Read [this](algo-setup-cicd-existing-app.md) for more information. | CodeSignCertificateUrl<br />CodeSignCertificatePassword |
 | storageContextSecretName | This setting specifies the name (**NOT the secrets themselves**) of a secret containing a json string with StorageAccountName, ContainerName, BlobName and StorageAccountKey|SasToken. If this secret exists, AL-Go will upload builds to this storage account for every successful build. | StorageContext |
@@ -138,9 +138,9 @@ For experts only, following the description [here](https://github.com/microsoft/
 
 ## See also
 
-[Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](get-started.md)  
+[Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](algo-get-started.md)  
 [Add a Test App to an Existing Project](algo-add-test-app.md)  
-[Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env-md)  
+[Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env.md)  
 [Create a Release of Your Application](algo-create-release-app.md)  
 [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md)  
 [Update AL-Go System Files](algo-update-system-files.md)  
