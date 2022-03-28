@@ -2,7 +2,7 @@
 title: "Developing a Custom Report Render"
 description: Describe the custom report render logic.
 ms.custom: na
-ms.date: 03/15/2022
+ms.date: 04/01/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ This article describes the concept of a custom report render that manages the re
 
 ## History and context
 
-The custom render feature is a substitute for the business events that were used in the `OnDocumentMerge` event provided by the `DocumnentManagement` codeunit for rendering Word documents in the application. By using the custom render logic the report can support multiple layouts and the event code will not have dependencies to standard Word layout processing in platform or application. The layout files that are provided in the extension are imported without any further processing, whereas the Word documents are aligned with the platform requirements for that format.
+The custom render feature is a substitute for the business events that were used in the `OnDocumentMerge` event provided by the `DocumentManagement` codeunit for rendering Word documents in the application. By using the custom render logic the report can support multiple layouts and the event code will not have dependencies to standard Word layout processing in the platform or application. The layout files that are provided in the extension are imported without any further processing, whereas the Word documents are aligned with the platform requirements for that format.
 
 ## Layout declaration for a custom render
 
@@ -44,7 +44,7 @@ report 50000 "Standard Report Layout"
 
 ## Sample AL code
 
-The simplest possible custom document render can be implemented as in the following sample that will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
+The simplest possible custom document render can be implemented as in the following sample, which will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
 
 ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMerger', '', true, true)]
