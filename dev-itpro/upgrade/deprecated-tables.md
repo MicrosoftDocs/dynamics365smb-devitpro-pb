@@ -31,6 +31,8 @@ In the latest version of [!INCLUDE[prod_short](../developer/includes/prod_short.
 
 ## See Also
 
+[Deprecated Features in the Base App](deprecated-features-w1.md)  
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
 [Technical Upgrade](upgrade-technical-upgrade-v15-v16.md)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
 [Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
