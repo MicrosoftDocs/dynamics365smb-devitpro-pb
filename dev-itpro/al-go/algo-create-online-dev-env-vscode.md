@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Create an Online Development Environment from Visual Studio Code
 
-> *The prerequisite for this how to is that you have completed the [Use Azure KeyVault for secrets with AL-Go](algo-use-azure-key-vault-for-secrets.md) instructions.*
+> *The prerequisite for this how to is that you have completed the [Use Azure KeyVault for secrets with AL-Go](algo-use-azure-keyvault-for-secrets.md) instructions.*
 
 ## Steps
 

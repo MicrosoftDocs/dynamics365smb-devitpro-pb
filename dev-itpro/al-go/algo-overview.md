@@ -26,9 +26,9 @@ The template repositories to use as starting point are:
 
 The usage scenarios below take you through how to get started and how to perform the most common tasks.
 
-- [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](get-started.md)  
+- [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](algo-get-started.md)  
 - [Add a Test App to an Existing Project](algo-add-test-app.md)  
-- [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env-md)  
+- [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env.md)  
 - [Create a Release of Your Application](algo-create-release-app.md)  
 - [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md)  
 - [Update AL-Go System Files](algo-update-system-files.md)  
