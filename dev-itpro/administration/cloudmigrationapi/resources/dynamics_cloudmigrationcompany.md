@@ -44,9 +44,9 @@ The response has no content; the response code is 204.
 |name|string|Represents the cloud migration company's name.|
 |replicate|boolean||
 |displayName|string|Specifies the cloud migration company's name. This name will appear on all sales documents for the cloud migration company.|
-|estimatedSize|decimal||
+|estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
 |status|string|Specifies the status of the cloud migration company.|
-|created|boolean||
+|created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 
 ## JSON representation
 

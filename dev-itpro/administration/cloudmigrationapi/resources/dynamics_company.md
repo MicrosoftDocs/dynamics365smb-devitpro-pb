@@ -51,8 +51,8 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |systemCreatedBy|GUID|The ID of the user who created the company.|
 |systemModifiedAt|datetime|The last datetime the company was modified.|
 |systemModifiedBy|GUID|The ID of the user who last modified the company.|
-|estimatedSize|decimal||
-|created|boolean||
+|estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
+|created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 
 
 ## JSON representation

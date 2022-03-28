@@ -79,8 +79,8 @@ The response has no content; the response code is 204.
 |tablesSuccessful|integer||
 |tablesFailed|integer||
 |tablesRemaining|integer||
-|estimatedSize|decimal||
-|created|boolean||
+|estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
+|created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 
 
 ## JSON representation
