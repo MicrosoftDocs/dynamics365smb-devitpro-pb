@@ -79,6 +79,9 @@ The response has no content; the response code is 204.
 |tablesSuccessful|integer||
 |tablesFailed|integer||
 |tablesRemaining|integer||
+|estimatedSize|decimal||
+|created|boolean||
+
 
 ## JSON representation
 

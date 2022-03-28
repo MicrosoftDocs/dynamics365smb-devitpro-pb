@@ -34,6 +34,9 @@ Represents a source product type in [!INCLUDE[prod_short](../../../includes/prod
 |:-------------------|:-------|:---------------|
 |id|string|The unique ID of the source product type. Read-Only.|
 |displayName|string|Specifies the source product type's name. This name will appear on all sales documents for the source product type.|
+|estimatedSize|decimal||
+|created|boolean||
+
 
 ## JSON representation
 

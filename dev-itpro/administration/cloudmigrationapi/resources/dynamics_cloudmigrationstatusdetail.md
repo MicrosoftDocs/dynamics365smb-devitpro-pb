@@ -45,6 +45,9 @@ Represents a cloud migration status detail in [!INCLUDE[prod_short](../../../inc
 |recordsCopied|integer||
 |totalRecords|integer||
 |errors|string||
+|estimatedSize|decimal||
+|created|boolean||
+
 
 ## JSON representation
 

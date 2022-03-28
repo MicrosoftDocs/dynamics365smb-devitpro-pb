@@ -53,6 +53,9 @@ The response has no content; the response code is 204.
 |tableName|string||
 |sourceTableName|string||
 |extensionName|string|The name of the extension.|
+|estimatedSize|decimal||
+|created|boolean||
+
 
 ## JSON representation
 

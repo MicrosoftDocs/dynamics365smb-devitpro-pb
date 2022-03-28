@@ -51,6 +51,9 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |systemCreatedBy|GUID|The ID of the user who created the company.|
 |systemModifiedAt|datetime|The last datetime the company was modified.|
 |systemModifiedBy|GUID|The ID of the user who last modified the company.|
+|estimatedSize|decimal||
+|created|boolean||
+
 
 ## JSON representation
 

@@ -46,6 +46,9 @@ Represents a subscriptions in [!INCLUDE[prod_short](../../../includes/prod_short
 |systemCreatedBy|GUID|The ID of the user who created the company.|
 |systemModifiedAt|datetime|The last datetime the subscriptions was modified.|
 |systemModifiedBy|GUID|The ID of the user who last modified the company.|
+|estimatedSize|decimal||
+|created|boolean||
+
 
 ## JSON representation
 

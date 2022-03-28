@@ -53,6 +53,8 @@ The response has no content; the response code is 204.
 |sqlConnectionString|string||
 |runtimeName|string||
 |runtimeKey|string||
+|estimatedSize|decimal||
+|created|boolean||
 
 ## JSON representation
 
