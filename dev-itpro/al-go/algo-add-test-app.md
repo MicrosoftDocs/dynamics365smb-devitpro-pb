@@ -29,7 +29,7 @@ This time it should be passing and if you investigate the CI/CD workflow, you wi
 
 ## Next step
 
-Now, a next step to take, could be [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env-md). 
+Now, a next step to take, could be [Register a Customer Sandbox Environment for Continuous Deployment using S2S](algo-register-sandbox-env.md). 
 
 ## See also
 
