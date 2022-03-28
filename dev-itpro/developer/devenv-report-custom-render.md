@@ -97,9 +97,9 @@ The simplest possible custom document render can be implemented as in the follow
 
 ## See Also
 
-[Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)
-[OnCustomDocumentMerger Event](devenv-oncustomdocumentmerger-event.md)
-[Events in AL](devenv-events-in-al.md)
-[Publishing Events](devenv-publishing-events.md)
-[Raising Events](devenv-raising-events.md)
-[Subscribing to Events](devenv-subscribing-to-events.md)
+[Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
+[OnCustomDocumentMerger Event](devenv-oncustomdocumentmerger-event.md)  
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
+[Subscribing to Events](devenv-subscribing-to-events.md)  
