@@ -197,6 +197,7 @@
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
+### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 <!-- end migrate -->
 <!-- telemetry -->
 ## Monitor and analyze telemetry
