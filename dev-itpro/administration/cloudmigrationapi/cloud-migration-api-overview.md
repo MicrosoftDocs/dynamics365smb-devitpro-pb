@@ -193,3 +193,5 @@ Authorization: Bearer {token}
 ```
 
 ## See also
+
+[Endpoints for the APIs](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).

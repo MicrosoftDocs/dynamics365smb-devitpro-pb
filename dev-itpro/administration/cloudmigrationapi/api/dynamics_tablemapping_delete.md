@@ -19,7 +19,7 @@ Deletes a table mapping from [!INCLUDE[prod_short](../../../includes/prod_short.
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v1.0/endpoints-apis-for-dynamics.md).
+Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../../api-reference/v2.0/endpoints-apis-for-dynamics.md)..
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
 DELETE businesscentralPrefix/companies({id})/tableMappings({id})
