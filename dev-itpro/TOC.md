@@ -482,7 +482,8 @@
 ### [Page Background Tasks](developer/devenv-page-background-tasks.md)
 ### [API Page Type](developer/devenv-api-pagetype.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
+### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)  
+### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
 ## Reports
 ### [Reports Overview](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
