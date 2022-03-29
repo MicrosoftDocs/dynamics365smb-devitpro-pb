@@ -12,6 +12,8 @@ author: jswymer
 ---
 # Upgrading Reports
 
+This article discusses changes to the report platform introduced in Business Central 2022 release wave 1 (version) and their effect on upgrading from version 19 and earlier.
+
 ## Updates to Business Central report platform (version 20)
 
 Version 20 introduces a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
@@ -35,9 +37,17 @@ In version 20, the reporting platform has been updated with respect to Microsoft
 
 ## Document report with Microsoft Word layouts
 
-The new platform supports the native rendering of Microsoft Word reports. With this new rendering, some report events in AL are no longer used, like the OnAfterHasCustomLayout, OnMergeDocumentReport, and OnBeforeMergeDocument events.
+The new platform supports the native rendering of Microsoft Word reports. With the new rendering, some report events in AL are no longer used, including:
 
-If you have custom code on these events, you'll have to change the code to use the new events, like OnSelectReportLayoutCode, OnFetchReportLayoutByCode, and OnCustomDocumentMerger.
+- OnAfterHasCustomLayout
+- OnMergeDocumentReport
+- OnBeforeMergeDocument
+
+If you have custom code on these events, you'll have to change the code to use the new events, like:
+
+- OnSelectReportLayoutCode
+- OnFetchReportLayoutByCode
+- OnCustomDocumentMerger
 
 <!--
 if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:
@@ -47,14 +57,16 @@ if the application has customizations in this area, it's possible to switch to b
 
 ### Customization of OnAfterHasCustomLayout event
 
-Customized use of OnAfterHasCustomLayout event has to be re-implemented to use the following events:
+Customization on the OnAfterHasCustomLayout event have to be re-implemented to use the following events:
 
 - OnSelectReportLayoutCode
 
-  This event gets the layout code and layout type from the application table 9651 "Report Layout Selection". 
+  This event gets the layout code and layout type from the application table **9651 Report Layout Selection**. 
 
   This event gets the layout code and type that the application has set using the Report Layout Selection application table.
-- `OnFetchReportLayoutByCode` - Will read the layout data from application tables (not needed if the layouts are stored in platform system tables by using extension provided layouts or layouts inserted manually in the `Tenant Report Layout` table).
+- OnFetchReportLayoutByCode
+
+  t- Will read the layout data from application tables (not needed if the layouts are stored in platform system tables by using extension provided layouts or layouts inserted manually in the `Tenant Report Layout` table).
 
 ### Customization of OnMergeDocumentReport or OnBeforeMergeDocument
 
