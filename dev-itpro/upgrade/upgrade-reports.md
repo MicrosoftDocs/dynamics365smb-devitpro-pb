@@ -26,14 +26,15 @@ Version 20 introduces a new report rendering model. Previously, report rendering
     <!--Excel  table 2000000234 "Report Layout List">
 - New and obsoleted application events in codeunit **44 ReportManagement**.
 
+<!--  
+
+In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.-->
+
+
 These changes have implications on report upgrade from earlier versions, especially regarding reports that use custom Word layouts. 
 
 > [!NOTE]
 > These changes don't affect the upgrade of RDLC report layouts.  
-
-<!--  
-
-In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.-->
 
 ## Document report with Microsoft Word layouts
 
@@ -57,7 +58,7 @@ if the application has customizations in this area, it's possible to switch to b
 
 ### Customization of OnAfterHasCustomLayout event
 
-Customization on the OnAfterHasCustomLayout event have to be re-implemented to use the following events:
+Custom code on the OnAfterHasCustomLayout event 's to be reimplemented to use the following events:
 
 - OnSelectReportLayoutCode
 
@@ -74,14 +75,15 @@ Extensions that depend on the legacy Microsoft Word render by using the events `
 
 ### Continue using application rendering of Word reports
 
-There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to keep using the application rendering of reports instead of the new platform rendering:
+There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to switch to application rendering: 
 
 <!--
 if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:-->
 
-- Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
+- Disable the feature named **Feature: New Microsoft Word report rendering platform**.
+ in the **Feature Management** page.
 
-    For more information, see [#enabling-the-microsoft-word-rendering-engine](../developer/devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+    For more information, see [Enabling the Microsoft Word rendering engine](../developer/devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.
 
 ## New events 
