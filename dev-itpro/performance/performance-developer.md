@@ -228,7 +228,7 @@ For more information, see [Using Partial Records](../developer/devenv-partial-re
 
 ### Table extension impact on performance
 
-Table extensions are seperate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Togther with the current inability to define indexes that span base and extension fields, one should avoid splitting ones code into too many table extensions.
+Table extensions are seperate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Together with the current inability to define indexes that span base and extension fields, one should avoid splitting one's code into too many table extensions.
 
 With central tables to the application, such as General Ledger Entry (G/L Entry), one should be extra cautious adding table extensions since these tables are frequently used throughout the application.
 
