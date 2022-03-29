@@ -48,11 +48,11 @@ The response has no content; the response code is 204.
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the setup cloud migration. Non-editable.|
-|productId|string||
-|sqlServerType|string||
-|sqlConnectionString|string||
-|runtimeName|string||
-|runtimeKey|string||
+|productId|string| Specifies the source product for the cloud migration. Available options can be received from sourceProductTypes API. Usually, values provided out of the box are: <br>- DynamicsBCLast – use for cloud migration with upgrade <br>- DynamicsBC – use for cloud migration from the same version of Dynamics Business Central <br>- DynamicsGP – use if you are setting up Dynamics GP cloud migration.|
+|sqlServerType|string|Specifies the SQL Server type. Values can be:<br>- SQLServer – Use if you are migrating from the database that is hosted on the On-Prem SQL server <br>- AzureSQL – If you have uploaded the database to migrate to Azure SQL server.|
+|sqlConnectionString|string|Specifies SQL connection string to the OnPrem database that should be cloud migrated|
+|runtimeName|string|Represents a unique id of the Azure Data Factory pipeline that will be used to move the data. It is returned by the first POST/PATCH request, this value is not needed for AzureSQL database type.|
+|runtimeKey|string|Represents the key that is used to connect the Microsoft Integration Runtime to the Azure Data Factory. It is returned by the first POST/PATCH request, this value is not needed for AzureSQL database type.|
 |estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
 |created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 
