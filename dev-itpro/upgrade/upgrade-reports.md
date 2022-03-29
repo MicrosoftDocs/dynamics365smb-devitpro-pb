@@ -19,7 +19,9 @@ Version 20 introduces a new report rendering model. Previously, report rendering
 - An updated Microsoft Word report rendering engine
 - A new custom report render. For more information, see [Developing a Custom Report Render](devenv-report-custom-render.md)
 - Improved layout management using extension layouts
-- New platform-supported layouts and selection tables.
+- New platform-supported layouts and selection tables
+
+    <!--Excel  table 2000000234 "Report Layout List">
 - New and obsoleted application events in codeunit **44 ReportManagement**.
 
 These changes have implications on report upgrade from earlier versions, especially regarding reports that use custom Word layouts. 
@@ -33,7 +35,9 @@ In version 20, the reporting platform has been updated with respect to Microsoft
 
 ## Document report with Microsoft Word layouts
 
-The new platform supports the native rendering of Microsoft Word reports. With this new rendering, some report events in AL are no longer used, like the `OnAfterHasCustomLayout`, `OnMergeDocumentReport`, and `OnBeforeMergeDocument` events. If you have custom code on these events, you'll have to change the code to use new events, like `OnSelectReportLayoutCode`, `OnFetchReportLayoutByCode`, and `OnCustomDocumentMerger`, instead.
+The new platform supports the native rendering of Microsoft Word reports. With this new rendering, some report events in AL are no longer used, like the OnAfterHasCustomLayout, OnMergeDocumentReport, and OnBeforeMergeDocument events.
+
+If you have custom code on these events, you'll have to change the code to use the new events, like OnSelectReportLayoutCode, OnFetchReportLayoutByCode, and OnCustomDocumentMerger.
 
 <!--
 if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:
@@ -43,12 +47,16 @@ if the application has customizations in this area, it's possible to switch to b
 
 ### Customization of OnAfterHasCustomLayout event
 
-Customized use of OnAfterHasCustomLayout has to be re-implemented by using the following events:
+Customized use of OnAfterHasCustomLayout event has to be re-implemented to use the following events:
 
-- `OnSelectReportLayoutCode` - Will find the layout code and type that the application has set using the Report Layout Selection application table.
+- OnSelectReportLayoutCode
+
+  This event gets the layout code and layout type from the application table 9651 "Report Layout Selection". 
+
+  This event gets the layout code and type that the application has set using the Report Layout Selection application table.
 - `OnFetchReportLayoutByCode` - Will read the layout data from application tables (not needed if the layouts are stored in platform system tables by using extension provided layouts or layouts inserted manually in the `Tenant Report Layout` table).
 
-### Customization of `OnMergeDocumentReport` or `OnBeforeMergeDocument`
+### Customization of OnMergeDocumentReport or OnBeforeMergeDocument
 
 Extensions that depend on the legacy Microsoft Word render by using the events `OnMergeDocumentReport` or `OnBeforeMergeDocument` should be updated to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead. The layouts can now the added in the extension by using the `rendering` report AL section and will be stored in the platform layout tables.
 
