@@ -37,14 +37,14 @@ Represents a cloud migration status detail in [!INCLUDE[prod_short](../../../inc
 
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
-|id|GUID|The unique ID of the cloud migration status detail. Non-editable.|
-|runId|string||
-|companyName|string|The name of the company.|
-|tableName|string||
-|status|string|Specifies the status of the cloud migration status detail.|
-|recordsCopied|integer||
-|totalRecords|integer||
-|errors|string||
+|id|GUID|Specifies the unique ID of the cloud migration status detail. Non-editable.|
+|runId|string|Specifies the unique ID of the runID. You can use this value to filter the details.|
+|companyName|string|Specifies the company name that owns the table that is cloud migrated.|
+|tableName|string|Specifies the name of the table that is cloud migrated.|
+|status|string|Specifies the status of the table. Possible values are: 'Failed, In Progress, Successful, Warning, Not Started'.|
+|recordsCopied|integer|Specifies the number of records that were copied for this table.|
+|totalRecords|integer|Specifies the total number of records in the source table.|
+|errors|string|Specifies any errors that occurred during the replication.|
 |estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
 |created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 

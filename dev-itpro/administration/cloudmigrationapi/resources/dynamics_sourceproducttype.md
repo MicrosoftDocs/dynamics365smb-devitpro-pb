@@ -15,7 +15,7 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a source product type in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents a source product type in [!INCLUDE[prod_short](../../../includes/prod_short.md)] that can be used for cloud migration. The values can be used for setupCloudMigration to indicate from which source product to migrate from.
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -25,8 +25,6 @@ Represents a source product type in [!INCLUDE[prod_short](../../../includes/prod
 | Method | Return Type|Description |
 |:--------------------|:-----------|:-------------------------|
 |[GET sourceProductType](../api/dynamics_sourceproducttype_get.md)|sourceProductType|Gets a source product type object.|
-
-
 
 ## Properties
 
