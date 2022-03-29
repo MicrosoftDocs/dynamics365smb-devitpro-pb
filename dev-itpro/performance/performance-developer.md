@@ -23,7 +23,7 @@ In this article, you can read about ways to tune performance when developing for
 - [Tuning the Development Environment](performance-developer.md#tuning-the-development-environment)  
 - [Using the AL Profiler to analyze performance](../developer/devenv-al-profiler-overview.md)
 
-## Writing efficient pages 
+## Writing efficient pages
 
 There are many patterns that a developer can use to get a page to load faster. Consider the following patterns:
 
@@ -39,9 +39,9 @@ Another example of unexpected recalculation is when using query objects. In cont
 
 ### Pattern - Do less
 
-One way to speed up things is to reduce the work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. Another benefit of a simple page with few UI elements can also be ease of use and navigation.
+One way to speed up things is to reduce the amount of work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. Another benefit of a simple page with few UI elements can also be ease of use and navigation.
 
-Remove calculated fields from lists if they aren't needed, especially on larger tables. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
+Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's Enabled or Visible properties to false is not enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
 Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
@@ -67,7 +67,7 @@ Avoid using standard UI pages to expose as web service endpoints. Many things, s
 
 Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
-- Heavy logic in `OnAfterGetCurrRecord`
+- Heavy logic in `OnAfterGetCurrRecord` or `OnAfterGetRecord`
 - Many SIFT fields
 - FactBoxes
 
@@ -218,7 +218,7 @@ Read more about query objects here:
 
 ### <a name="partialrecords"></a>Pattern - Use partial records when looping over data, in reports, or when table extension fields aren't needed
 
-When writing AL code for which the fields needed on a record are known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
+When writing AL code for which the fields needed on a record or recordref are known, you can use the partial records capability to only load out these fields initially. The remaining fields are still accessible, but they'll be loaded as needed.
 
 Partial records improve performance in two major ways. First, they limit the fields that need to be loaded from the database. Loading more fields leads to more data being read, sent over the connection, and created on the record. Second, partial records limit the number of table extensions that need to be joined.
 
@@ -228,9 +228,13 @@ For more information, see [Using Partial Records](../developer/devenv-partial-re
 
 ### Table extension impact on performance
 
-Table extensions are eager-joined in the data stack when accessing the base table. It's currently not possible to define indexes that span base and extension fields. So avoid splitting your code into too many table extensions. Also, be careful about extending central tables, such as General Ledger entry, because it can severely hurt performance. 
+Table extensions are seperate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Together with the current inability to define indexes that span base and extension fields, one should avoid splitting one's code into too many table extensions.
 
-An alternative when doing data modeling for extending a table with new fields is to use a related table and define a FlowField on the base table. 
+With central tables to the application, such as General Ledger Entry (G/L Entry), one should be extra cautious adding table extensions since these tables are frequently used throughout the application.
+
+The adverse affects of many table extensions can be mitigated with the application of partial records, see [Using Partial Records](../developer/devenv-partial-records.md). However, since the developer many not have ownership of all executed code, and therefore isn't able to apply partial records everywhere, the above recommenddation still stands.
+
+An alternative approach when doing data modeling for extending a table with new fields is to use a related table and define a FlowField on the base table.
 
 Here are the pros and cons of the two data models:
 
