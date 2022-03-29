@@ -22,7 +22,7 @@ If your organization is considering to move to [!INCLUDE [prod_short](../include
 
 ## Enter receivables transactions
 
-This video compares the work process of entering receivables transactions in Dynamics GP and Dynamics 365 Business Central..
+This video compares the work process of entering receivables transactions in Dynamics GP and Dynamics 365 Business Central.
 
 <br><br>  
 
@@ -30,7 +30,7 @@ This video compares the work process of entering receivables transactions in Dyn
 
 ## Pay vendors
 
-This video compares the work process of paying vendors in Dynamics GP and Dynamics 365 Business Central..
+This video compares the work process of paying vendors in Dynamics GP and Dynamics 365 Business Central.
 
 <br><br>  
 
@@ -38,7 +38,7 @@ This video compares the work process of paying vendors in Dynamics GP and Dynami
 
 ## Enter payables transactions
 
-This video compares the work process of entering payables transactions in Dynamics GP and Dynamics 365 Business Central..
+This video compares the work process of entering payables transactions in Dynamics GP and Dynamics 365 Business Central.
 
 <br><br>  
 
@@ -46,7 +46,7 @@ This video compares the work process of entering payables transactions in Dynami
 
 ## Enter customer cash receipts
 
-This video compares the work process of entering customer cash receipts in Dynamics GP and Dynamics 365 Business Central..
+This video compares the work process of entering customer cash receipts in Dynamics GP and Dynamics 365 Business Central.
 
 <br><br>  
 
