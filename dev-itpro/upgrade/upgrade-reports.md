@@ -76,14 +76,12 @@ Extensions that depend on the legacy Microsoft Word render by using the events `
 
 There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to keep using the application rendering of reports instead of the new platform rendering:
 
-- Use the **Feature: New Microsoft Word report rendering platform** in the **Feature Management** page.
-
-  The platform rendering is controlled by the **Feature: New Microsoft Word report rendering platform** .  
-
 <!--
 if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:-->
 
 - Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
+
+    For more information, see [#enabling-the-microsoft-word-rendering-engine](../developer/devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.
 
 ## New events 
