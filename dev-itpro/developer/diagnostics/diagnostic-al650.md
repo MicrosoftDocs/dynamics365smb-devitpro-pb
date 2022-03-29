@@ -3,11 +3,12 @@ title: "Compiler Warning (Future Error) AL0650"
 description: "The text with a length of {0} is longer than the MaxLength of {1} which means that the text will be trimmed."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

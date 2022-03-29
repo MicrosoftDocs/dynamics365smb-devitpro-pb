@@ -1,9 +1,9 @@
 ---
-title: "IsolatedStorage.Delete(String [, DataScope]) Method"
+title: "IsolatedStorage.Delete(Text [, DataScope]) Method"
 description: "Deletes the value with the specified key from the isolated storage."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.Delete(String [, DataScope]) Method
+# IsolatedStorage.Delete(Text [, DataScope]) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Deletes the value with the specified key from the isolated storage.
@@ -21,13 +21,14 @@ Deletes the value with the specified key from the isolated storage.
 
 ## Syntax
 ```AL
-[Ok := ]  IsolatedStorage.Delete(Key: String [, DataScope: DataScope])
+[Ok := ]  IsolatedStorage.Delete(Key: Text [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The key of the value to remove.
         
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope from which to remove the value with the given key. If a value is not passed in, the default value DataScope::Module will be used.  

@@ -42,7 +42,6 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
   * Update statistics and reorganize indexes on all tables on the source database  
   
     This will ensure that the migration runs as fast as possible. For more information, see the documentation for [sp_updatestats (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql) and [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
-  * (**TODO****)
 * At least one user has *SUPER* permissions in the target company in [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
   This is the only user who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access to data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, se the [Business Central permission sets](#business-central-permission-sets) section.  
@@ -54,7 +53,7 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
 
   If you want to add more companies after the first selection of companies, you can add more companies in the **Cloud Migration Management** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Run the tool multiple times](#run-the-tool-multiple-times). But use the [Capacity](tenant-admin-center-capacity.md) section of the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to keep track of how much data you migrate.  
 
-  In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes. For example, customers can buy more environments since [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/support-unlimited-number-production-sandbox-environments).
+  In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes. For example, customers can buy more environments, and they can buy additional storage. For more information, see [Managing Capacity](tenant-admin-center-capacity.md).  
 
   There are no firm limits on the size of the database, the number of daily transactions, or the number of users that can migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
@@ -173,7 +172,7 @@ If the product you selected requires a SQL connection, this page will be present
 
   You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
 
-  For example, `Server=MyServer\BCDEMO;Database=BC170;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 17. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
+  For example, `Server=MyServer\BCDEMO;Database=BC180;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 18. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
 
   The following snippets illustrate a couple of connection strings with different formats:  
 

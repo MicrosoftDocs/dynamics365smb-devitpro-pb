@@ -1,9 +1,9 @@
 ---
-title: "Database.SID([String]) Method"
+title: "Database.SID([Text]) Method"
 description: "Retrieves the security identifier (SID) of a Windows user account."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Database.SID([String]) Method
+# Database.SID([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Retrieves the security identifier (SID) of a Windows user account.
@@ -23,19 +23,19 @@ Retrieves the security identifier (SID) of a Windows user account.
 
 ## Syntax
 ```AL
-SID :=   Database.SID([UserAccount: String])
+SID :=   Database.SID([UserAccount: Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *[Optional] UserAccount*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The Windows user account for which you want to get the SID. You must specify a domain and user name, such as 'cronus\\simon'.  
 
 
 ## Return Value
 *SID*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The SID of the specified Windows user account.
 
 
