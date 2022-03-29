@@ -69,16 +69,16 @@ The response has no content; the response code is 204.
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the cloud migration status. Non-editable.|
-|runId|string||
-|startTime|datetime||
-|endTime|datetime||
-|replicationType|string||
-|status|string|Specifies the status of the cloud migration status.|
-|source|string||
-|details|string||
-|tablesSuccessful|integer||
-|tablesFailed|integer||
-|tablesRemaining|integer||
+|runId|string|Specifies the unique ID of the runID.|
+|startTime|datetime|Specifies the date and time when the operation was started.|
+|endTime|datetime|Specifies the date and time when the operation has ended.|
+|replicationType|string|Specifies the type of the replication. Full is for full sync, Normal is usually representing the delta sync.|
+|status|string|Specifies the status of the cloud migration status. Possible values are: 'Failed, In Progress, Completed,Upgrade Pending, Upgrade in Progress, Upgrade Failed, Data Repair Pending'.|
+|source|string|Specifies the name of the source product.|
+|details|string|Specifies the additional details about this record.|
+|tablesSuccessful|integer|Specifies the number of tables that was successfully replicated.|
+|tablesFailed|integer|Specifies the number of tables that has failed.|
+|tablesRemaining|integer|Specifies the number of tables that is remaining.|
 |estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
 |created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 

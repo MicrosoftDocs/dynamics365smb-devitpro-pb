@@ -42,10 +42,10 @@ The response has no content; the response code is 204.
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the cloud migration company. Non-editable.|
 |name|string|Represents the cloud migration company's name.|
-|replicate|boolean||
+|replicate|boolean|This property decides if the company should be selected for cloud migration in the current batch. You can include or exclude the companies.|
 |displayName|string|Specifies the cloud migration company's name. This name will appear on all sales documents for the cloud migration company.|
 |estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
-|status|string|Specifies the status of the cloud migration company.|
+|status|string|Specifies the status of the company. Possible values are:<br>- “ “ –  initial status or created. Check the created property<br>- “In Progress” – Company creation is in progress <br>- Error – Company creation has failed <br>- "Missing Permission" – User has no permissions to create a company.|
 |created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 
 ## JSON representation
