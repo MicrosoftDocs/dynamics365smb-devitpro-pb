@@ -1,9 +1,9 @@
 ---
-title: "Text.StrSubstNo(String [, Any,...]) Method"
+title: "Text.StrSubstNo(Text [, Any,...]) Method"
 description: "Replaces %1, %2, %3..."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrSubstNo(String [, Any,...]) Method
+# Text.StrSubstNo(Text [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you provide as optional parameters.
@@ -21,15 +21,14 @@ Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you 
 
 ## Syntax
 ```AL
-NewString :=   Text.StrSubstNo(String: String [, Value1: Any,...])
+NewString :=   Text.StrSubstNo(String: Text [, Value1: Any,...])
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](text-data-type.md)  
 A string containing '#' and/or '%' fields.
         
+
 *[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 One or more values (expressions) that you want to insert into String. You can specify up to 10 values.  
@@ -37,7 +36,7 @@ One or more values (expressions) that you want to insert into String. You can sp
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](text-data-type.md)  
 Returns a new string with the provided values inserted into the specified string.
 
 

@@ -3,7 +3,7 @@ title: "JsonArray Data Type"
 description: "Is a container for any well-formed JSON array."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ The following methods are available on instances of the JsonArray data type.
 |[Add(Date)](jsonarray-add-date-method.md)|Adds a new value at the end of the JsonArray.|
 |[Add(Time)](jsonarray-add-time-method.md)|Adds a new value at the end of the JsonArray.|
 |[Add(DateTime)](jsonarray-add-datetime-method.md)|Adds a new value at the end of the JsonArray.|
-|[Add(String)](jsonarray-add-string-method.md)|Adds a new value at the end of the JsonArray.|
+|[Add(Text)](jsonarray-add-string-method.md)|Adds a new value at the end of the JsonArray.|
 |[AsToken()](jsonarray-astoken-method.md)|Converts the value in a JsonArray to a JsonToken data type.|
 |[Clone()](jsonarray-clone-method.md)|Creates a deep-copy of the JsonArray value.|
 |[Count()](jsonarray-count-method.md)|Gets the number of elements in the JsonArray.|
@@ -59,7 +59,7 @@ The following methods are available on instances of the JsonArray data type.
 |[IndexOf(Date)](jsonarray-indexof-date-method.md)|Determines the index of a specific value in the JsonArray.|
 |[IndexOf(Time)](jsonarray-indexof-time-method.md)|Determines the index of a specific value in the JsonArray.|
 |[IndexOf(DateTime)](jsonarray-indexof-datetime-method.md)|Determines the index of a specific value in the JsonArray.|
-|[IndexOf(String)](jsonarray-indexof-string-method.md)|Determines the index of a specific value in the JsonArray.|
+|[IndexOf(Text)](jsonarray-indexof-string-method.md)|Determines the index of a specific value in the JsonArray.|
 |[Insert(Integer, JsonToken)](jsonarray-insert-integer-jsontoken-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
 |[Insert(Integer, JsonArray)](jsonarray-insert-integer-jsonarray-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
 |[Insert(Integer, JsonObject)](jsonarray-insert-integer-jsonobject-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
@@ -75,12 +75,12 @@ The following methods are available on instances of the JsonArray data type.
 |[Insert(Integer, Date)](jsonarray-insert-integer-date-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
 |[Insert(Integer, Time)](jsonarray-insert-integer-time-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
 |[Insert(Integer, DateTime)](jsonarray-insert-integer-datetime-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
-|[Insert(Integer, String)](jsonarray-insert-integer-string-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
+|[Insert(Integer, Text)](jsonarray-insert-integer-string-method.md)|Inserts the value at the given index in the array while shifting all the values to the right by one position.|
 |[Path()](jsonarray-path-method.md)|Retrieves the JSON path of the array relative to the root of its containing tree.|
-|[ReadFrom(String)](jsonarray-readfrom-string-method.md)|Reads the JSON data from the string into a JsonArray variable.|
+|[ReadFrom(Text)](jsonarray-readfrom-string-method.md)|Reads the JSON data from the string into a JsonArray variable.|
 |[ReadFrom(InStream)](jsonarray-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonArray variable.|
 |[RemoveAt(Integer)](jsonarray-removeat-method.md)|Removes the token at the given index.|
-|[SelectToken(String, var JsonToken)](jsonarray-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
+|[SelectToken(Text, var JsonToken)](jsonarray-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
 |[Set(Integer, JsonToken)](jsonarray-set-integer-jsontoken-method.md)|Replaces the value at the given index with a new value.|
 |[Set(Integer, JsonObject)](jsonarray-set-integer-jsonobject-method.md)|Replaces the value at the given index with a new value.|
 |[Set(Integer, JsonArray)](jsonarray-set-integer-jsonarray-method.md)|Replaces the value at the given index with a new value.|
@@ -96,7 +96,7 @@ The following methods are available on instances of the JsonArray data type.
 |[Set(Integer, Date)](jsonarray-set-integer-date-method.md)|Replaces the value at the given index with a new value.|
 |[Set(Integer, Time)](jsonarray-set-integer-time-method.md)|Replaces the value at the given index with a new value.|
 |[Set(Integer, DateTime)](jsonarray-set-integer-datetime-method.md)|Replaces the value at the given index with a new value.|
-|[Set(Integer, String)](jsonarray-set-integer-string-method.md)|Replaces the value at the given index with a new value.|
+|[Set(Integer, Text)](jsonarray-set-integer-string-method.md)|Replaces the value at the given index with a new value.|
 |[WriteTo(var Text)](jsonarray-writeto-text-method.md)|Serializes and writes the JSON data of the JsonArray to a given Text object.|
 |[WriteTo(OutStream)](jsonarray-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonArray to a given OutStream object.|
 

@@ -3,7 +3,7 @@ title: "Text.Trim() Method"
 description: "Returns a new Text in which all leading and trailing white-space characters from the current Text object are removed."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,9 +23,6 @@ Returns a new Text in which all leading and trailing white-space characters from
 ```AL
 Result :=   Text.Trim()
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
-
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  

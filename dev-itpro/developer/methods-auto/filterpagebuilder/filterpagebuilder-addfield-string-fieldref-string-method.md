@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.AddField(String, FieldRef [, String]) Method"
+title: "FilterPageBuilder.AddField(Text, FieldRef [, Text]) Method"
 description: "Adds a table field to the filter control for a table on filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.AddField(String, FieldRef [, String]) Method
+# FilterPageBuilder.AddField(Text, FieldRef [, Text]) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Adds a table field to the filter control for a table on filter page.
@@ -21,7 +21,7 @@ Adds a table field to the filter control for a table on filter page.
 
 ## Syntax
 ```AL
-[Ok := ]  FilterPageBuilder.AddField(Name: String, Field: FieldRef [, Filter: String])
+[Ok := ]  FilterPageBuilder.AddField(Name: Text, Field: FieldRef [, Filter: Text])
 ```
 ## Parameters
 *FilterPageBuilder*  
@@ -29,15 +29,17 @@ Adds a table field to the filter control for a table on filter page.
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
         
+
 *Field*  
 &emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
 The name of the table field to add to the filter control for a table.
         
+
 *[Optional] Filter*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
 
 

@@ -3,7 +3,7 @@ title: "Report.NewPage() Method"
 description: "Forces a page break when printing a report."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,6 @@ Forces a page break when printing a report.
 ```AL
  Report.NewPage()
 ```
-
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
