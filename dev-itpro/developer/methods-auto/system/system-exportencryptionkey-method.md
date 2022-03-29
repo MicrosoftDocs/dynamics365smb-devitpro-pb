@@ -1,9 +1,9 @@
 ---
-title: "System.ExportEncryptionKey(String) Method"
+title: "System.ExportEncryptionKey(Text) Method"
 description: "Returns a password protected temporary filepath containing the encryption key."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ExportEncryptionKey(String) Method
+# System.ExportEncryptionKey(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Returns a password protected temporary filepath containing the encryption key. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant and every tenant will have a different key. Keys can be exported to a file which may be necessary in the case of upgrading or migrating a system from one set of hardware to another. The EXPORTENCRYPTIONKEY method allows an administrator to specify a destination file for the key and specify a password protection for the file.
@@ -23,19 +23,19 @@ Returns a password protected temporary filepath containing the encryption key. W
 
 ## Syntax
 ```AL
-Path :=   System.ExportEncryptionKey(Password: String)
+Path :=   System.ExportEncryptionKey(Password: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Password*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the password for the encryption key file.  
 
 
 ## Return Value
 *Path*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A temporary filepath to where the key is exported.
 
 

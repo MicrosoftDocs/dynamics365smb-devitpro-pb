@@ -3,7 +3,7 @@ title: "Notification Data Type"
 description: "Provides a programmatic way to send non-intrusive information to the user interface (UI) in the Business Central Web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,15 +24,15 @@ The following methods are available on instances of the Notification data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[AddAction(String, Integer, String)](notification-addaction-method.md)|Specifies an action for the notification.|
-|[GetData(String)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SETDATA method call.|
-|[HasData(String)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SETDATA method call.|
+|[AddAction(Text, Integer, Text)](notification-addaction-method.md)|Specifies an action for the notification.|
+|[GetData(Text)](notification-getdata-method.md)|Retrieves data that was passed to a notification instance as specified by a SETDATA method call.|
+|[HasData(Text)](notification-hasdata-method.md)|Checks if data was passed to a notification instance as specified by a SETDATA method call.|
 |[Id([Guid])](notification-id-method.md)|Specifies the identifier for a notification.|
-|[Message([String])](notification-message-method.md)|Specifies the content of the notification.|
+|[Message([Text])](notification-message-method.md)|Specifies the content of the notification.|
 |[Recall()](notification-recall-method.md)|Recall a sent notification.|
 |[Scope([NotificationScope])](notification-scope-method.md)|Specifies the context in which the notification appears in the client.|
 |[Send()](notification-send-method.md)|Sends the notification to the client, where it will display in the UI.|
-|[SetData(String, String)](notification-setdata-method.md)|Specifies a data property value for the notification. The data is specified as text in a key-value pair.|
+|[SetData(Text, Text)](notification-setdata-method.md)|Specifies a data property value for the notification. The data is specified as text in a key-value pair.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

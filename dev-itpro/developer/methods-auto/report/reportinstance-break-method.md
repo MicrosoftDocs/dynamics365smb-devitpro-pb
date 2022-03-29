@@ -3,7 +3,7 @@ title: "Report.Break() Method"
 description: "Exits from a loop or a trigger in a data item trigger of a report or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,6 @@ Exits from a loop or a trigger in a data item trigger of a report or XmlPort.
 ```AL
  Report.Break()
 ```
-
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  

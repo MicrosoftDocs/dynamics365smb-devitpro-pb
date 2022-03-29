@@ -1,5 +1,5 @@
 ---
-title: "Deprecated Features in W1"
+title: Deprecated Features in the Base App
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Deprecated Features in W1
+# Deprecated Features in the Base App
 
 This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -111,6 +111,25 @@ Some features are available only under specific circumstances, or not at all int
 
 ## See Also
 
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
+[Deprecated Features in the Austrian Version](deprecated-features-at.md)  
+[Deprecated Features in the Belgian Version](deprecated-features-be.md)  
+[Deprecated Features in the Canadian Version](deprecated-features-ca.md)  
+[Deprecated Features in the Czech Version](deprecated-features-cz.md)  
+[Deprecated Features in the Dutch Version](deprecated-features-nl.md)  
+[Deprecated Features in the Finnish Version](deprecated-features-fi.md)  
+[Deprecated Features in the German Version](deprecated-features-de.md)  
+[Deprecated Features in the Icelandic Version](deprecated-features-is.md)  
+[Deprecated Features in the Italian Version](deprecated-features-it.md)  
+[Deprecated Features in the Mexican Version](deprecated-features-mx.md)  
+[Deprecated Features in the Norwegian Version](deprecated-features-no.md)  
+[Deprecated Features in the Russian Version](deprecated-features-ru.md)  
+[Deprecated Features in the Swedish Version](deprecated-features-se.md)  
+[Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
+[Deprecated Features in the UK Version](deprecated-features-uk.md)  
+[Deprecated Features in the United States Version](deprecated-features-us.md)  
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Tables](deprecated-tables.md)  
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
 [Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)

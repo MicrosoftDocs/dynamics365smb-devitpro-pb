@@ -3,7 +3,7 @@ title: "OutStream Data Type"
 description: "Is a generic stream object that you can use to write to files and BLOBs."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,9 +45,9 @@ The following methods are available on instances of the OutStream data type.
 |[Write(Option [, Integer])](outstream-write-option-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Record [, Integer])](outstream-write-table-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(RecordId [, Integer])](outstream-write-recordid-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
-|[Write(String [, Integer])](outstream-write-string-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
+|[Write(Text [, Integer])](outstream-write-string-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
 |[Write(Any [, Integer])](outstream-write-joker-integer-method.md)|Writes a specified number of bytes to the stream. Data is written in binary format.|
-|[WriteText([String] [, Integer])](outstream-writetext-method.md)|Writes text to an OutStream object.|
+|[WriteText([Text] [, Integer])](outstream-writetext-method.md)|Writes text to an OutStream object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

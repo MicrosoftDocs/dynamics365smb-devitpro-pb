@@ -41,6 +41,8 @@ If you often need to create sales and purchase lines with similar information, y
 
 ## See Also
 
+[Deprecated Features in the Base App](deprecated-features-w1.md)  
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
 [Upgrading to [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)]](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

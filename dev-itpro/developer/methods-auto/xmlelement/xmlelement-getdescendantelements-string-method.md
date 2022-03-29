@@ -1,9 +1,9 @@
 ---
-title: "XmlElement.GetDescendantElements(String) Method"
+title: "XmlElement.GetDescendantElements(Text) Method"
 description: "Gets a list containing the descendant elements for this element, in document order."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlElement.GetDescendantElements(String) Method
+# XmlElement.GetDescendantElements(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets a list containing the descendant elements for this element, in document order.
@@ -21,7 +21,7 @@ Gets a list containing the descendant elements for this element, in document ord
 
 ## Syntax
 ```AL
-DescendantElements :=   XmlElement.GetDescendantElements(Name: String)
+DescendantElements :=   XmlElement.GetDescendantElements(Name: Text)
 ```
 ## Parameters
 *XmlElement*  
@@ -29,7 +29,7 @@ DescendantElements :=   XmlElement.GetDescendantElements(Name: String)
 An instance of the [XmlElement](xmlelement-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The fully qualified name of the elements to retrieve.  
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Report.SaveAsHtml(String) Method"
+title: "Report.SaveAsHtml(Text) Method"
 description: "Saves a report as an HTML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAsHtml(String) Method
+# Report.SaveAsHtml(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.
@@ -23,7 +23,7 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAsHtml(FileName: String)
+[Ok := ]  Report.SaveAsHtml(FileName: Text)
 ```
 ## Parameters
 *Report*  
@@ -31,7 +31,7 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The folder path and name of the file that you want to save the report as. The path must already exist and the service (login) account that is used by the server instance must have permission to write to the target folder. Otherwise, you will get errors.
           
 

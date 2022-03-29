@@ -23,6 +23,8 @@ This topic lists and describes the local functionality for Denmark that has been
 
 ## See Also
 
+[Deprecated Features in the Base App](deprecated-features-w1.md)  
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  
