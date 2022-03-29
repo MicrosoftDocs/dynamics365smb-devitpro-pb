@@ -18,7 +18,7 @@ ms.author: solsen
 Represents a status record of the cloud migration in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. It is used to start replication, start the data upgrade, disable the cloud migration, and to track the overall status.
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [guideline](../../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
 
 ## Methods
 

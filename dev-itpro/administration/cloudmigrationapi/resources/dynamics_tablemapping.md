@@ -18,7 +18,7 @@ ms.author: solsen
 Represents a table mapping in [!INCLUDE[prod_short](../../../includes/prod_short.md)] that can be used to include custom tables or tables that are not included in the cloud migration out of the box. If you provide a table mapping the source table will be copied to the destination table during cloud migration.
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [guideline](../../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
 
 ## Methods
 

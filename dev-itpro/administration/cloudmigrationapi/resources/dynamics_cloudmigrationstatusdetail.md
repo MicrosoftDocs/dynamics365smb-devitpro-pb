@@ -18,7 +18,7 @@ ms.author: solsen
 Represents a cloud migration status detail in [!INCLUDE[prod_short](../../../includes/prod_short.md)] that is giving more information about the status of the table that is under cloud migration.
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [guideline](../../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
 
 ## Methods
 
