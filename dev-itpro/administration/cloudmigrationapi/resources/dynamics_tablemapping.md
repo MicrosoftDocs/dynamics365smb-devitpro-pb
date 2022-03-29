@@ -15,7 +15,7 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a table mapping in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents a table mapping in [!INCLUDE[prod_short](../../../includes/prod_short.md)] that can be used to include custom tables or tables that are not included in the cloud migration out of the box. If you provide a table mapping the source table will be copied to the destination table during cloud migration.
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -49,10 +49,10 @@ The response has no content; the response code is 204.
 | Property           | Type   |Description     |
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the table mapping. Non-editable.|
-|tableId|integer||
-|tableName|string||
-|sourceTableName|string||
-|extensionName|string|The name of the extension.|
+|tableId|integer|Specifies the destination table ID to be mapped.|
+|tableName|string|Specifies the destination table name.|
+|sourceTableName|string|Specifies the source table name.|
+|extensionName|string|Specifies the extension name that owns the mapped table.|
 |estimatedSize|decimal|Read-Only property representing the approximate size of the On-Prem company. The data migrated will be smaller, since the data will be compressed and not all tables will be included.|
 |created|boolean|Specifies if the company was created. It will not reflect if the setup of the company was correct or not. For this you should check the status property. If the company has been created, however status is different.|
 
