@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords:
-ms.date: 03/29/2022
+ms.date: 03/30/2022
 ms.author: edupont
 
 ---
@@ -149,7 +149,7 @@ When you onboard a prospect, use the configuration packages to set up [!INCLUDE 
 
 You can copy commonly used values from an existing company to a new one, as long as both companies are in the same tenant. For example, if you have a standard list of symptom codes that is common to all your service management implementations, you can copy the codes easily from one company to another. You can do this from the **Configuration Worksheet** page.  
 
-2. Open the configuration worksheet and import existing data about customers, items, vendors, and the general ledger. For more information, see [Migrate Customer Data](admin-migrate-customer-data.md).  
+2. Open the configuration worksheet and import existing data about customers, items, vendors, and the general ledger. For more information, see [Migrate Customer Data].  
 
     Now you have master data in place. Next, you add the opening balances. The following steps describe how to create journal lines for G/L accounts, but the same apply to creating journal lines for customers, vendors, and items.  
 3. Choose the **Create G/L Acct. Journal Lines** action.  
@@ -162,14 +162,14 @@ You can copy commonly used values from an existing company to a new one, as long
 10. Repeat the steps to import and post any other opening balances.  
 
 > [!IMPORTANT]
-> Specifically for opening balances for bank accounts, do not follow the steps in this article to post directly to the G/L accounts that are associated with the relevant bank accounts. For more information, see [Set Up Bank Accounts](bank-how-setup-bank-accounts.md).  
+> Specifically for opening balances for bank accounts, do not follow the steps in this article to post directly to the G/L accounts that are associated with the relevant bank accounts. For more information, see [Set Up Bank Accounts](.  
 
 
 ## Migrate customer data
 
 Now that the customer's production or sandbox is set up, you can migrate their existing data. In many cases, to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, use the built-in migration tools to migrate data from specific product versions.  
 
-Alternatively, you can migrate to [!INCLUDE [prod_short](includes/prod_short.md)] on-premises using the data migration tools of RapidStart Services, and then switch to the cloud.
+Alternatively, you can migrate to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises using the data migration tools of RapidStart Services, and then switch to the cloud.
 
 For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).  
 
