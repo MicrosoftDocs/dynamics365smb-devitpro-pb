@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # Troubleshooting Overview
 
-The following sections help you troubleshoot issues with Business Central so that you can gather information about a given problem, identify the cause of the problem, and eventually implement a sustainable solution that does not introduce new issues. Use the tools provided in the Business Central client to gain insights on trends in application behavior, identify performance issues, database locks, and more. And use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue.
+The following sections help you troubleshoot issues with Business Central so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that does not introduce new issues. Use the tools provided in the Business Central client to gain insights on trends in application behavior, identify performance issues, database locks, and more. And use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue.
 
 ## Troubleshooting in the client
 
