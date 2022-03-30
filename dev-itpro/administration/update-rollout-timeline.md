@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 02/16/2022
+ms.date: 04/01/2022
 ms.author: edupont
 ---
 
@@ -142,14 +142,14 @@ If you didn't explicitly set a date for your environment update in the [!INCLUDE
 
 ## Prepare, test, and learn before a major update
 
-You can prepare yourself, users, and any customizations by trying out the new major version before your production environment is updated. You can do this in different ways as explained in the following sections.  
+You can prepare yourself, users, and any customizations by trying out the new major version before your production environment is updated. The following sections provide recommendations for how to prepare for an update.  
 
 > [!IMPORTANT]
-> We strongly recommend that you test your critical business scenarios before your production environments are updated to new major or minor version.
+> We strongly recommend that you test any critical business scenarios before your production environments are updated to the new major or minor version.
 
 ### Prepare for major updates by enabling select features earlier
 
-Some new features can be enabled ahead of time on sandbox and production environments, giving you time to test and prepare for change. Most times, you can enable features weeks before preview environments for the major update are available.
+Some new features can be switched on ahead of time on sandbox and production environments, giving you time to test and prepare for change. Most times, you can switch on features several weeks before preview environments for the major update are available.
 
 When Microsoft releases features or feature design improvements as part of minor updates, some of these features are optional until the following major update. Administrators can turn these optional features on or off from the **Feature Management** page.
 
