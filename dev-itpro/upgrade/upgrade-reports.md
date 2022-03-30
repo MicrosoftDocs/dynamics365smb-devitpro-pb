@@ -115,7 +115,7 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
     end;
     ```
 
--  Codeunit **9651 "Document Report Mgt."**:
+- Codeunit **9651 "Document Report Mgt."**:
 
     ```al
     [IntegrationEvent(false, false)]
@@ -155,8 +155,7 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
     end;
     ```
 
-
-## <a name="appupgrade"></a>Upgrade of document reports with Word layouts <!-- what is meant by document reports-->
+## <a name="appupgrade"></a>Upgrade document reports with Word layouts <!-- what is meant by document reports-->
 
 <!-- Upgrade document reports that use Word layouts-->
 
@@ -178,20 +177,6 @@ if the application has customizations in this area, it's possible to switch to b
 - Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.-->
 
-### <a name="continue"></a>Continue using application rendering of Word reports
-
-There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to use to application rendering on reports: 
-
-<!--
-if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:-->
-
-- Disable the feature named **Feature: New Microsoft Word report rendering platform**.
- in the **Feature Management** page.
-
-    For more information, see [Enabling the Microsoft Word rendering engine](../developer/devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
-- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report.
-
-  By subscribing this event, the application selects the rendering engine based on the selected report ID and layout name.
 
 ### Customization of OnAfterHasCustomLayout event <!-- do you mean on event subscribers-->
 
@@ -387,6 +372,21 @@ local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: 
 begin
 end;
 ```
+
+## <a name="continue"></a>Continue using application rendering of Word reports
+
+There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to use to application rendering on reports: 
+
+<!--
+if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:-->
+
+- Disable the feature named **Feature: New Microsoft Word report rendering platform**.
+ in the **Feature Management** page.
+
+    For more information, see [Enabling the Microsoft Word rendering engine](../developer/devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+- Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report.
+
+  By subscribing this event, the application selects the rendering engine based on the selected report ID and layout name.
 
 
 ## See Also  
