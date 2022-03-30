@@ -14,6 +14,10 @@ author: jswymer
 
 This article discusses changes to the report platform in Business Central 2022 release wave 1 (version) and their effect on upgrading from version 19 and earlier.
 
+<!--  
+
+In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.-->
+
 ## Report platform updates in version 20
 
 Version 20 introduces a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
@@ -26,9 +30,7 @@ Version 20 introduces a new report rendering model. Previously, report rendering
     <!--Excel and  table 2000000234 "Report Layout List">
 - New and obsoleted application events in codeunit **44 ReportManagement**.
 
-<!--  
-
-In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.-->
+### What the changes mean for upgrade
 
 These changes may have implications on upgrading from earlier versions if your application includes reports that use custom Word layouts.
 
