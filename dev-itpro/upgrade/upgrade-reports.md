@@ -27,7 +27,7 @@ Version 20 introduces a new report rendering model. Previously, report rendering
 - Improved layout management using extension layouts <!-- what does this mean, multilayouts?-->
 - New platform-supported layouts and report selection tables <!-- what does this mean -->
 
-    <!--Excel and  table 2000000234 "Report Layout List">
+    <!--Excel and  table 2000000234 "Report Layout List"-->
 - New and obsoleted application events in codeunit **44 ReportManagement**.
 
 ### What the changes mean for upgrade
