@@ -582,6 +582,8 @@
 ### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
+## Troubleshooting
+### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
 ## AL-Go for GitHub
 ### [AL-Go Overview](al-go/algo-overview.md)
 ### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
