@@ -193,7 +193,7 @@ if the application has customizations in this area, it's possible to switch to b
 
   By subscribing this event, the application selects the rendering engine based on the selected report ID and layout name.
 
-### Customization of OnAfterHasCustomLayout event
+### Customization of OnAfterHasCustomLayout event <!-- do you mean on event subscribers-->
 
 Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented to use the following events instead:
 
@@ -219,21 +219,23 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 - System Application must be updated to version 20.x
 - ReportManagement.Codeunit.al (ID=44) must implement the new event subscribers and integration events.
 
-### New code to be added to codeunit 44 Report Management to support the upgraded platform requirements
+### Add code to codeunit 44 Report Management to support the upgraded platform requirements
 
-Add new functionality to support new platform driven events for documents and download, and for managing report layout selection and load from application logic.
+In codeunit **44 Report Management** of the base application, you add code to support the new platform-driven events for documents and download, and for managing report layout selection and load from application logic.
 
 The old event `OnAfterHasCustomLayout` has been replaced with the following events:
 
 - `SelectedBuiltinLayoutType`
 
-    This event returns the layout type selected for the current report. It's for backward compatibility only and uses the application layout selection table for retrieving the desired built-in layout type.
+  This event returns the layout type selected for the current report. It's for backward compatibility only and uses the application layout selection table for retrieving the desired built-in layout type.
 - `SelectReportLayoutCode`
 
   This event returns the selected layout name and type using the **Custom Report Layout** table and associated logic. Substitute for OnAfterHasCustomLayout.
 - `FetchReportLayoutByCode`
 
-  This event loads the layout stream from application code, given a layout name and report ID. 
+  This event loads the layout stream from application code, given a layout name and report ID.
+
+You'll have to create a new version of the base application.
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
