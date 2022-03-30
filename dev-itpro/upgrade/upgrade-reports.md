@@ -35,7 +35,11 @@ Version 20 introduces a new report rendering model. Previously, report rendering
 These changes may have implications on upgrading from earlier versions if your application includes reports that use custom Word layouts.
 
 - If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use new reports events. See [Upgrade of document reports with Word layouts](#appupgrade).
-- If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** your base application to include new event subscribers and integration events. [Technical upgrade from 19 and earlier](#techupgrade).
+
+  > [!NOTE]
+  > You have the option to continue to use the application rendering on all or specific reports. In this case you won't have to mke any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
+
+- If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of  the application to include new event subscribers and integration events. [Technical upgrade from 19 and earlier](#techupgrade).
 
 > [!NOTE]
 > These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
@@ -174,7 +178,7 @@ if the application has customizations in this area, it's possible to switch to b
 - Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.-->
 
-### Continue using application rendering of Word reports
+### <a name="continue"></a>Continue using application rendering of Word reports
 
 There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to use to application rendering on reports: 
 
