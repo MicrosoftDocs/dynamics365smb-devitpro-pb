@@ -13,9 +13,9 @@ author: SusanneWindfeldPedersen
 
 # Troubleshooting Overview
 
-The following sections help you troubleshoot issues with Business Central. 
+The following sections help you troubleshoot issues with Business Central. Use the tools provided in the Business Central client to gain insights on trends in application behavior, identify performance issues, database locks, and more. 
 
-## Troubleshooting the client
+## Troubleshooting in the client
 
 - Investigate page data, filters, and load times with the [Page Inspector](/business-central/across-inspect-page).
 - See if the events you rely on are fired as expected with the [Event Recorder](devenv-events-discoverability.md).
