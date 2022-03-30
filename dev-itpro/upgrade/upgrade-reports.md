@@ -37,7 +37,7 @@ These changes may have implications on upgrading from earlier versions if your a
 - If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use new reports events. See [Upgrade of document reports with Word layouts](#appupgrade).
 
   > [!NOTE]
-  > You have the option to continue to use the application rendering on all or specific reports. In this case you won't have to mke any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
+  > You have the option to continue to use the application rendering on all or specific reports. In this case you won't have to make any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
 
 - If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of  the application to include new event subscribers and integration events. [Technical upgrade from 19 and earlier](#techupgrade).
 
@@ -219,7 +219,7 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 - System Application must be updated to version 20.x
 - ReportManagement.Codeunit.al (ID=44) must implement the new event subscribers and integration events.
 
-### Add code to codeunit 44 Report Management to support the upgraded platform requirements
+### Add code to codeunit 44 Report Management
 
 In codeunit **44 Report Management** of the base application, you add code to support the new platform-driven events for documents and download, and for managing report layout selection and load from application logic.
 
