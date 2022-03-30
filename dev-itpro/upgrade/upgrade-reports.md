@@ -41,8 +41,7 @@ These changes may have implications on upgrading from earlier versions if your a
 
 - If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of  the application to include new event subscribers and integration events. [Technical upgrade from 19 and earlier](#techupgrade).
 
-> [!NOTE]
-> These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
+These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
 ## New and obsoleted events
 
