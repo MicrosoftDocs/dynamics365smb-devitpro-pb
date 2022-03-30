@@ -156,7 +156,7 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
     ```
 
 
-## <a name="appupgrade"></a>Upgrade of document reports with Word layouts
+## <a name="appupgrade"></a>Upgrade of document reports with Word layouts <!-- what is meant by document reports-->
 
 <!-- Upgrade document reports that use Word layouts-->
 
