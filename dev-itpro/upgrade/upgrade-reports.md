@@ -2,7 +2,7 @@
 title: "Upgrading Reports"
 description: Describes how to upgrade reports  
 ms.custom: na
-ms.date: 10/01/2020
+ms.date: 03/30/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
