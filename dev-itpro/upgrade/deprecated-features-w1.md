@@ -24,6 +24,16 @@ The following feature is marked as `obsolete:pending` in 2022 release wave 1.
 |-----------------------------|-----|
 |Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).<br><br> Currently, we expect to fully remove support for XBRL in 2023 release wave 1.|
 
+### Intercompany Setup page
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We have consolidated settings for setting up intercompany capabilities on a single page, and have added a new feature for automatically accepting intercompany transactions in general journals. The current **Intercompany Setup** page (page 621) is replaced with a new **Intercompany Setup** page (page 653). |
+
+### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In April 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
+
 ## Changes in 2021 release wave 2
 
 ### Standard APIs, Beta version
