@@ -17,15 +17,15 @@ The following sections help you troubleshoot issues with Business Central so tha
 
 ## Troubleshooting in the client
 
-- Investigate page data, filters, and load times with the [Page Inspector](/business-central/across-inspect-page).
+- Investigate page data, filters, and load times with the [Page Inspector](/dynamics365/business-central/across-inspect-page).
 - See if the events you rely on are fired as expected with the [Event Recorder](devenv-events-discoverability.md).
-- Check for unexpected table sizes with [Tables Information](/business-central/admin-view-table-information).
-- Find locks with [Database Locks](/business-central/admin-view-database-locks).
+- Check for unexpected table sizes with [Tables Information](/dynamics365/business-central/admin-view-table-information).
+- Find locks with [Database Locks](/dynamics365/business-central/admin-view-database-locks).
 - Identify performance issues with the [Performance Profiler](../administration/performance-profiler-overview.md).
-- Verify report dataset with [Save Report Dataset to Excel](/business-central/report-analyze-excel).
-- Check personalization issues with [Personalized Pages](/business-central/ui-personalization-user).
-- Check customization issues with [Customized Pages](/business-central/ui-personalization-manage).
-- Verify user permissions with [Effective Permissions](/business-central/ui-define-granular-permissions).
+- Verify report dataset with [Save Report Dataset to Excel](/dynamics365/business-central/report-analyze-excel).
+- Check personalization issues with [Personalized Pages](/dynamics365/business-central/ui-personalization-user).
+- Check customization issues with [Customized Pages](/dynamics365/business-central/ui-personalization-manage).
+- Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions).
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md).
 
 
