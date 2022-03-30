@@ -44,7 +44,7 @@ These changes may have implications on upgrading from earlier versions if your a
 > [!NOTE]
 > These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
-## New and obsoleted events reference
+## New and obsoleted events
 
 This section lists the new and obsoleted events in version 20.
 
