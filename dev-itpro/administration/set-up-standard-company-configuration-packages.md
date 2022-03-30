@@ -45,6 +45,8 @@ Another approach would be to create a package that includes the tables that defi
 
 To see a complete list of setup tables, choose the :::image type="icon" source="../developer/media/search-icon.png" border="false"::: icon, enter **Manual Setup**, and then choose the related link.  
 
+> [!TIP]
+> Optionally, use the configuration worksheet to gather together and categorize the information that you want to use to configure a new company, and arrange tables in a logical way. Formatting in the worksheet is based on a simple hierarchy: *areas* contain *groups*, which in turn contain *tables*. Areas and groups are optional but useful. You can then add the worksheet lines to a new configuration package.  
 
 ## Before you create a configuration package
 
@@ -78,12 +80,20 @@ You can import a configuration package that has been exported from a database th
 1. Create a new company. For more information, see [Create New Companies in Business Central](/dynamics365/business-central/about-new-company) in the business functionality content.  
 2. Set up the new company in the way you need. Fill in all required setup tables.  
 
-    Optionally, use the default configuration package in the Cronus demonstration company to set up the base application. Then, add your own best practices on top.
-3. Open the **Configuration Worksheet** page.  
-4. Add the tables that you want to transfer to another company to the worksheet.  
+    Optionally, use the default configuration package in the Cronus demonstration company to set up the base application. Then, add your own best practices on top.  
 
-    1. Choose the **Get Tables** action. On the **Get Config. Tables** request page, specify the types of tables that you want to add to the configuration, and set the relevant filters. then choose the OK button.  
-    2. Review the information in the **Related Tables** FactBox to see whether there are missing tables. To add related tables, choose the **Get Related Tables** action.  
+    Next, you'll add this setup to a configuration package. You can set up the tables that you want to add to the package in the **Configuration Worksheet** page and then add a configuration package to the lines in that worksheet. Or you can add the tables directly to the package in the **Configuration Package** page. In the following steps, we assume that you prefer to set things up in the worksheet, but you don't have to.
+3. Open the **Configuration Worksheet** page.  
+4. Add a new line of the type **Area**, and then add groups and the tables that you want to transfer to another company to the package. [!INCLUDE [tooltip-inline-tip_md](../includes/tooltip-inline-tip_md.md)]  
+
+    > [!TIP]  
+    > Take a look at the default configuration package for the demonstration company for inspiration for how to set up the configuration.
+
+    1. Choose the **Get Tables** action. On the **Get Config. Tables** request page, specify the types of tables that you want to add to the configuration, and set the relevant filters. Then choose the **OK** button.  
+
+        To exclude the configuration questionnaires, configuration templates, and configuration worksheet tables from the package, select the **Exclude Configuration Tables** check box on the **Config Package Card** page. Otherwise, these tables will be added to the list of package tables automatically when you export the package.  
+
+    2. To add related tables, choose the **Get Related Tables** action.  
 
         > [!NOTE]  
         > Related tables will not be added with the **Get Related Tables** action if either of the following is true:
@@ -94,18 +104,74 @@ You can import a configuration package that has been exported from a database th
         >     Example: A field in the related table has a WHERE clause. The reason for this is that the involved relations information is stored in the **Field** system table, which is not fully accessible to the application.  
         > You must add such types of tables manually.
 
-1. Assign the worksheet lines to the package.  
-1. Create a questionnaire for the most frequently used setup tables.  
-1. Create configuration templates to make it easier to create master data, such as customers or items.  
-1. Export your package as a .rapidstart file.  
+        For each table, you can specify which fields to exclude, and you can modify the default processing order for each field. [!INCLUDE [prod_short](../includes/prod_short.md)] checks if there are related fields that you must configure in the **Config. Package Fields** page.
+    3. Optionally, for each table, modify which fields must be included in the package.
+
+        Select a table for which you want to specify field information, and on the **Actions** tab, in the **Show** group, choose **Fields**.
+
+        - To select just the fields you want to include, choose the **Clear Included** action. To add all fields, choose the **Set Included** action.  
+        - To specify that the field data should not be validated, clear the **Validate Field** check box for the field.  
+5. Assign the worksheet lines to an existing package.  
+
+    1. Select the relevant lines, choose the **Assign Package** action, and then, in the **Configuration Packages** page, choose the relevant package, or create a new one.
+
+        If a table is not already included in the package, it will now be added. The package code field on the worksheet line will be filled in with the code of the package that the table is assigned to.  
+        If you choose an existing package, you can see how many tables are already in the package by reviewing the information in the **No. of Tables** field.
+6. Optionally, create a questionnaire for the most frequently used setup tables so that you can get specific information from your prospects and customers that will help you set up their [!INCLUDE [prod_short](../includes/prod_short.md)].  
+
+    1. On the **Configuration Questionnaire** page, add a new questionnaire, and then choose the **Questions Areas** action.  
+    2. In the **Config. Question Area** page, in the **Table ID** field, choose the ID of the table for which you want to collect information. The **Table Name** field is automatically filled in.  
+    3. Choose the **Update Questions** action. Each field in the table is added to the questionnaire with a question mark following its caption in the **Question** field.
+
+        You can rephrase the question to make it clear that it is a question that should be answered. For example, if a field is called **Name**, you could edit the related question to state *What is the name of the account.* You can also provide guidance in the **Reference** field, including a URL to a page that provides additional information for example.  
+
+        You can also delete any questions that you do not want to include in the questionnaire.  
+
+        > [!NOTE]  
+        > The **Answer Option** field describes the format that the answer to the question must meet, such as *Code* or *Text*.
+        >
+        >  As needed, you can also define default answers in the **Answer** field. These values are used by default for custom setup. However, the person filling in the questionnaire can modify and update the answer.  
+
+    4. Repeat steps 2 and 3 for any additional areas that you want to add to the questionnaire, and then return to the **Configuration Questionnaire** page.
+
+        Optionally, export the questionnaire to Excel. Then, you can use the Excel workbook to get answers from your prospects and customers. There are worksheets for each of the question areas that have been created for the questionnaire.  
+
+        > [!NOTE]  
+        > You may encounter the following error when you run an English version of Excel, but have your regional settings configured for a non-English language: *Old format or invalid type library.* To fix this error, make sure that the language pack for the non-English language is installed.
+7. Optionally, create configuration templates to make it easier to import master data, such as customers, vendors, contacts, or items.  
+
+    Use the built-in configuration templates, or create your own templates in the **Configuration Templates** page.  
+8. Export your package as a .rapidstart file.  
 
 ## Apply the configuration packages
 
-When you onboard a prospect, use the configuration packages to set up [!INCLUDE [prod_short](../includes/prod_short.md)] according to your best practices and their requirements. Apply the configuration package to an empty company in the customer's tenant.
+When you onboard a prospect, use the configuration packages to set up [!INCLUDE [prod_short](../includes/prod_short.md)] according to your best practices and their requirements. Apply the configuration package to an empty company in the customer's tenant. Use the questionnaires to tweak things for individual  customers of yours.  
+
+You can copy commonly used values from an existing company to a new one, as long as both companies are in the same tenant. For example, if you have a standard list of symptom codes that is common to all your service management implementations, you can copy the codes easily from one company to another. You can do this from the **Configuration Worksheet** page.  
+
+2. Open the configuration worksheet and import existing data about customers, items, vendors, and the general ledger. For more information, see [Migrate Customer Data](admin-migrate-customer-data.md).  
+
+    Now you have master data in place. Next, you add the opening balances. The following steps describe how to create journal lines for G/L accounts, but the same apply to creating journal lines for customers, vendors, and items.  
+3. Choose the **Create G/L Acct. Journal Lines** action.  
+4. Fill in the **Options** FastTab as appropriate, and set filters as needed. For example, in the **Journal Template** field, enter a name.  
+5. Choose the **OK** button. The records are now in the journal, but the amounts are empty.  
+6. Export the journal table to Excel and manually enter the posting and balancing account information from the legacy data.
+7. Import and apply the table information into the new company. The journal lines are ready for posting.  
+8. In the configuration worksheet, select the journal line table, and then choose the **Database Data** action.  
+9. Review the information, and then choose the **Post** action.  
+10. Repeat the steps to import and post any other opening balances.  
+
+> [!IMPORTANT]
+> Specifically for opening balances for bank accounts, do not follow the steps in this article to post directly to the G/L accounts that are associated with the relevant bank accounts. For more information, see [Set Up Bank Accounts](bank-how-setup-bank-accounts.md).  
+
 
 ## Migrate customer data
 
-Now that the customer's production or sandbox is set up, you can migrate their existing data. In many cases, to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, use the built-in migration tools to migrate data from specific product versions. For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).  
+Now that the customer's production or sandbox is set up, you can migrate their existing data. In many cases, to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, use the built-in migration tools to migrate data from specific product versions.  
+
+Alternatively, you can migrate to [!INCLUDE [prod_short](includes/prod_short.md)] on-premises using the data migration tools of RapidStart Services, and then switch to the cloud.
+
+For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).  
 
 ## See Also
 
