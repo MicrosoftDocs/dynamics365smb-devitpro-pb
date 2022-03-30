@@ -144,6 +144,9 @@ If you didn't explicitly set a date for your environment update in the [!INCLUDE
 
 You can prepare yourself, users, and any customizations by trying out the new major version before your production environment is updated. You can do this in different ways as explained in the following sections.  
 
+> [!IMPORTANT]
+> We strongly recommend that you test your critical business scenarios before your production environments are updated to new major or minor version.
+
 ### Prepare for major updates by enabling select features earlier
 
 Some new features can be enabled ahead of time on sandbox and production environments, giving you time to test and prepare for change. Most times, you can enable features weeks before preview environments for the major update are available.
