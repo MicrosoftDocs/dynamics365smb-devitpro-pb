@@ -21,7 +21,7 @@ The following sections help you troubleshoot issues with Business Central so tha
 - See if the events you rely on are fired as expected with the [Event Recorder](devenv-events-discoverability.md).
 - Check for unexpected table sizes with [Tables Information](/business-central/admin-view-table-information).
 - Find locks with [Database Locks](/business-central/admin-view-database-locks).
-- Identify performance issues with the [Performance Profiler](../administration/performance-profiler-overview).
+- Identify performance issues with the [Performance Profiler](../administration/performance-profiler-overview.md).
 - Verify report dataset with [Save Report Dataset to Excel](/business-central/report-analyze-excel).
 - Check personalization issues with [Personalized Pages](/business-central/ui-personalization-user).
 - Check customization issues with [Customized Pages](/business-central/ui-personalization-manage).
