@@ -74,6 +74,12 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2022 release wave 1 (version 20.0)
 
+### <a name="flfformat"></a>License files in the flf format [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises (Warning)
+
+The following feature will be **Removed** in a later release.
+
+|Removed | The file format .flf for Business Central license files for on-premises installations will be removed in a later release. Please transition to using the newer .bclicense format instead. |
+
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
 
