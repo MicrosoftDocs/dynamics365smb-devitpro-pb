@@ -1,9 +1,9 @@
 ---
-title: "XmlAttributeCollection.Set(String, String) Method"
+title: "XmlAttributeCollection.Set(Text, Text) Method"
 description: "Sets the value of the specified attribute or creates it if is not part of the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlAttributeCollection.Set(String, String) Method
+# XmlAttributeCollection.Set(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the value of the specified attribute or creates it if is not part of the collection.
@@ -21,7 +21,7 @@ Sets the value of the specified attribute or creates it if is not part of the co
 
 ## Syntax
 ```AL
- XmlAttributeCollection.Set(Name: String, Value: String)
+ XmlAttributeCollection.Set(Name: Text, Value: Text)
 ```
 ## Parameters
 *XmlAttributeCollection*  
@@ -29,11 +29,12 @@ Sets the value of the specified attribute or creates it if is not part of the co
 An instance of the [XmlAttributeCollection](xmlattributecollection-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The fully qualified name of the attribute to set.
         
+
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value to set for the attribute.  
 
 

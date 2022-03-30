@@ -3,7 +3,7 @@ title: "FieldRef.GetEnumValueNameFromOrdinalValue(Integer) Method"
 description: "Gets an Enum value (or Option member) name from the Enum metadata for the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The Enum value's ordinal value to get the Enum value (or Option member) name for
 
 ## Return Value
 *The Enum value name or empty if the ordinal value doesn't exist*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The Enum value name.
 
 

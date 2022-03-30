@@ -1,9 +1,9 @@
 ---
-title: "HttpClient.AddCertificate(String [, String]) Method"
+title: "HttpClient.AddCertificate(Text [, Text]) Method"
 description: "Adds a certificate to the HttpClient class."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient.AddCertificate(String [, String]) Method
+# HttpClient.AddCertificate(Text [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a certificate to the HttpClient class.
@@ -21,7 +21,7 @@ Adds a certificate to the HttpClient class.
 
 ## Syntax
 ```AL
- HttpClient.AddCertificate(Certificate: String [, Password: String])
+ HttpClient.AddCertificate(Certificate: Text [, Password: Text])
 ```
 ## Parameters
 *HttpClient*  
@@ -29,10 +29,11 @@ Adds a certificate to the HttpClient class.
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *Certificate*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The Base64 encoded certificate.  
+
 *[Optional] Password*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The certificate password.  
 
 

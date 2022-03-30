@@ -1,9 +1,9 @@
 ---
-title: "Query.SaveAsXml(Integer, String) Method"
+title: "Query.SaveAsXml(Integer, Text) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Query.SaveAsXml(Integer, String) Method
+# Query.SaveAsXml(Integer, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as an .xml file.
@@ -23,15 +23,16 @@ Saves the resulting data set of a query as an .xml file.
 
 ## Syntax
 ```AL
-[Ok := ]  Query.SaveAsXml(Number: Integer, FileName: String)
+[Ok := ]  Query.SaveAsXml(Number: Integer, FileName: Text)
 ```
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the query object that you want to save as an .xml file. If the query that you specify does not exist, then a run-time error occurs.
         
+
 *FileName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and name of the file that you want to save the query to.  
 
 

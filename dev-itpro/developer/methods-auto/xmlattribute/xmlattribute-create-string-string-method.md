@@ -1,9 +1,9 @@
 ---
-title: "XmlAttribute.Create(String, String) Method"
+title: "XmlAttribute.Create(Text, Text) Method"
 description: "Creates an XmlAttribute node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlAttribute.Create(String, String) Method
+# XmlAttribute.Create(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlAttribute node.
@@ -21,15 +21,16 @@ Creates an XmlAttribute node.
 
 ## Syntax
 ```AL
-XmlAttribute :=   XmlAttribute.Create(Name: String, Value: String)
+XmlAttribute :=   XmlAttribute.Create(Name: Text, Value: Text)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The qualified name of the attribute. If the name is of the form {{namespace}}localName, it will be qualified with the given namespace.
         
+
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value of the attribute.  
 
 

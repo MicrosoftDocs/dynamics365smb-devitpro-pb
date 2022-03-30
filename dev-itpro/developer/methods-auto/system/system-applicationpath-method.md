@@ -3,7 +3,7 @@ title: "System.ApplicationPath() Method"
 description: "Returns the path of the directory where the executable file for the product is installed."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,10 +30,9 @@ String :=   System.ApplicationPath()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 

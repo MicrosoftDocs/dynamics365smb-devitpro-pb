@@ -43,6 +43,8 @@ Shows a list of aged remaining balances for each customer for a given period of 
 
 ## See Also
 
+[Deprecated Features in the Base App](deprecated-features-w1.md)  
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
 [Upgrading [!INCLUDE [prod_short](../developer/includes/prod_short.md)]](upgrading-to-business-central.md)  
 [Upgrading the Application Code](upgrading-the-application-code.md)  
 [Deprecated Fields, and Fields Marked as Obsolete](deprecated-fields.md)  

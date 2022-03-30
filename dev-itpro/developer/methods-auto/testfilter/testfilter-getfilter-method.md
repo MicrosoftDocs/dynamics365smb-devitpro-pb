@@ -3,7 +3,7 @@ title: "TestFilter.GetFilter(TestFilterField) Method"
 description: "Gets the filter that is applied to the specified field in a data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ The field that you want to get the filter from.
 
 ## Return Value
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 
