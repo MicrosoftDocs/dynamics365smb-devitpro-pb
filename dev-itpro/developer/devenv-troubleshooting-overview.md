@@ -27,10 +27,13 @@ The following sections help you troubleshoot issues with Business Central.
 - Check customization issues with [Customized Pages](/business-central/ui-personalization-manage).
 - Verify user permissions with [Effective Permissions](/business-central/ui-define-granular-permissions).
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md).
-- 
-## Troubleshooting in AL 
+
+
+## Troubleshooting in AL
 
 - [Debug AL code](devenv-debugging.md) in sandboxes with customer data.
 - [Capture Snapshots](devenv-snapshot-debugging.md) in production environments and debug offline.
 - Find AL performance issues with the [AL Profiler](devenv-al-profiler-overview.md) in Visual Studio Code.
 - Investigate [Printer and Report Payloads](devenv-reports-troubleshoot-printing.md) when working with reporting.
+- [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md) to help identify data issues.
+- Identifying and working with [Performance Issues](../performance/performance-overview.md).
