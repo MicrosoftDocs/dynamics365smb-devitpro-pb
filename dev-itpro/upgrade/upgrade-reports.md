@@ -145,7 +145,7 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
 
 These report rendering changes may have implications on upgrading from earlier versions if your application includes reports that use custom report layouts, which are stored in the **Custom Report Layout** table of the application.
 
-- If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use new events. See [Upgrade of document reports with Word layouts](#appupgrade).
+- If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use the new events. See [Upgrade of document reports with Word layouts](#appupgrade).
 
   The report rendering changes don't affect the upgrade process for built-in RDLC or Word reports layouts. So if your current Business Central solution doesn't have any custom layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do.
 
