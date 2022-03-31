@@ -225,14 +225,15 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 You'll have to create a new version of the base application using Visual Studio Code. In general, follow the guidelines at [developer/devenv-publish-code-customization](developer/devenv-publish-code-customization.md),but make the following modifications for this scenario:
 
 1. Modify the app.json file to include the following changes:
+
   1. Change the system application dependency to version 20.
   2. Increase the application version.
+
 2. Delete the BusinessChartType.Enum.al file.
 
-    This file is now part of the System Application in version 20.
+  This file is now part of the System Application in version 20.
 3. In the ReportManagement.Codeunit.al file, add the following code:
-
-    
+ 
     ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
     local procedure CustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream)
