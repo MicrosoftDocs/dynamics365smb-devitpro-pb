@@ -25,12 +25,12 @@ In version 20, the reporting platform has been updated with respect to Microsoft
 Version 20 introduces a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
 
 - An updated Microsoft Word report rendering engine
-- A new custom report render. <!--For more information, see [Developing a Custom Report Render](devenv-report-custom-render.md)-->
+- A new custom report render <!--For more information, see [Developing a Custom Report Render](devenv-report-custom-render.md)-->
 - Improved layout management using extension layouts <!-- what does this mean, multilayouts?-->
-- New platform-supported layouts and selection tables <!-- what does this mean -->
+- New platform-supported layouts and layout selection tables <!-- what does this mean -->
 
     <!--Excel and  table 2000000234 "Report Layout List"-->
-- New and obsoleted application events in codeunit **44 ReportManagement**.
+- New and obsoleted application events in codeunit **44 ReportManagement**
 
 ### New and obsoleted events
 
@@ -199,7 +199,7 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 
 By subscribing to `OnCustomDocumentMerger`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
 
-## Technical upgrade from 19 and earlier
+## <a name=techupgrade></a>Technical upgrade from 19 and earlier
 
 This section outlines what's required for custom Word report layouts to work properly after a technical upgrade. 
 
