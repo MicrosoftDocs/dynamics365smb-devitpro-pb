@@ -189,7 +189,7 @@ Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented t
 
 - `OnFetchReportLayoutByCode`
 
-  This event reads the layout data from application tables (not needed if the layouts are stored in platform system tables by using extension provided layouts or layouts inserted manually in the `Tenant Report Layout` table).
+  This event reads the layout data from application tables (not needed if the layouts are stored in platform system tables by using extension provided layouts or layouts inserted manually in the `Tenant Report Layout` table.
 
 ### Customization of OnMergeDocumentReport or OnBeforeMergeDocument
 
