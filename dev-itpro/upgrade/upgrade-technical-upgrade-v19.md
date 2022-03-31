@@ -353,7 +353,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     Replace `<extension version>` with the exact version of the published Application extension.
 
     For more information about the Application extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-3. Install other extensions, including Microsoft and third-party extensions.
+2. Install other extensions, including Microsoft and third-party extensions.
 
     ```powershell
     Install-NAVApp -ServerInstance $NewBcServerInstance -Name $ExtName -Version $ExtVersion
