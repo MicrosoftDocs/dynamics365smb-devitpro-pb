@@ -3716,6 +3716,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2022 Release Wave 1](deployment/system-requirements-business-central-v20.md)
 #### [2021 Release Wave 2](deployment/system-requirements-business-central-v19.md)
 #### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
 #### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
