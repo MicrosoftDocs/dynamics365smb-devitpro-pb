@@ -5,7 +5,7 @@ ms.custom: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 08/01/2021
+ms.date: 03/31/2022
 author: jswymer
 ---
 # System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2022 Release Wave 1
