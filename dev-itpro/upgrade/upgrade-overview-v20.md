@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2022 Release Wave 1
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20) is the fifth major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20) is the sixth major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
 
 ## Upgrade path
 
@@ -39,7 +39,7 @@ When upgrading from version 14, part of the technical upgrade process includes c
 
 ## New and changed features
 
-There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2021 release wave 2](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/).
+There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2022 release wave 1](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/).
 
 To take advantage of these features, you'll have to do an application code upgrade, not just a technical (platform) upgrade. 
 
@@ -47,11 +47,11 @@ To take advantage of these features, you'll have to do an application code upgra
 
 Before you upgrade, review the following articles to get an overview of features deprecated in this release:
 
-- [Deprecated Tables](/dynamics365/business-central/dev-itpro/upgrade/deprecated-tables)
+- [Deprecated Features in W1](deprecated-features-w1.md)
+- [Deprecated Features in the Platform](deprecated-features-platform.md)
+- [Deprecated Tables](deprecated-tables.md)
 
-- [Deprecated Features in W1](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1)
-
-  From this article, use the links in the table of content to view deprecated features specific to local versions
+From these articles, use the links in the table of contents to view more deprecated features, like features specific to local versions.
 
 ## Migrating from on-premises to online
 
