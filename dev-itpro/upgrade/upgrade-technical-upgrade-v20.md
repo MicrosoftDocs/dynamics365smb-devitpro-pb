@@ -294,7 +294,23 @@ In this task, you reinstall the same extensions that were installed on the tenan
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). For example:
 
-1. Install the Application extension.
+1. If your solution uses the System Application, install this first.
+
+    ```powershell 
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "System Application" -Version $OldVersion
+    ```
+
+    Replace `<extension version>` with the exact version of the published System Application.
+
+2. Install the Base Application.
+
+    ```powershell
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Base Application" -Version $OldVersion
+    ```
+
+    Replace `<extension version>` with the exact version of the published System Application.
+
+3. Install the Application extension.
 
     ```powershell
     Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Application" -Version $OldVersion
@@ -303,7 +319,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     Replace `<extension version>` with the exact version of the published Application extension.
 
     For more information about the Application extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-3. Install other extensions, including Microsoft and third-party extensions.
+4. Install other extensions, including Microsoft and third-party extensions.
 
     ```powershell
     Install-NAVApp -ServerInstance $NewBcServerInstance -Name $ExtName -Version $ExtVersion
