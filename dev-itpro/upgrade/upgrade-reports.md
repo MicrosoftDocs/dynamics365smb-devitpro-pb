@@ -147,12 +147,12 @@ These report rendering changes may have implications on upgrading from earlier v
 
 - If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use new events. See [Upgrade of document reports with Word layouts](#appupgrade).
 
+  The report rendering changes don't affect the upgrade process for built-in RDLC or Word reports layouts. So if your current Business Central solution doesn't have any custom layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do.
+
   > [!NOTE]
   > You have the option to continue to use the application rendering on all or specific reports. In this case you won't have to make any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
 
 - If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of  the application to include new event subscribers and integration events. For more information, see [Technical upgrade from 19 and earlier](#techupgrade).
-
-The report rendering changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
 ## <a name="appupgrade"></a>Upgrade reports with custom layouts 
 
@@ -387,7 +387,42 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
         end;
         ```
 
-    4. Build the extension package for the new version.
+    4. In the DesigntimeReportSelection.Codeunit.al file, add the following `var`:
+
+        ```al
+        SelectedCustomLayout: Text[250];
+        ```
+
+        Then, add the following procedure:
+
+        ```al
+        procedure GetSelectedLayout(): Text[250]
+        begin
+            if SelectedCustomLayout = '' then
+                exit(SelectedCustomLayoutCode);
+            exit(SelectedCustomLayout);
+        end;
+        ```
+
+    5. In add, the following `procedure`:
+
+        ```al
+        procedure SelectedBuiltinLayoutType(ReportID: Integer): Integer
+        begin
+            if not Get(ReportID, CompanyName) then
+                exit(0);
+            case Type of
+                Type::"RDLC (built-in)":
+                    exit(1);
+                Type::"Word (built-in)":
+                    exit(2);
+                else
+                    exit(0);
+            end;
+        end;
+        ```
+
+   6. Build the extension package for the new version. 
 
 2. Run the technical upgrade
 
