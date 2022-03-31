@@ -44,7 +44,7 @@ For the latest information, see the app in the App Store or Google Play.
 
 |Specification|Requirement|  
 |------|-----|
-|[!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)] version|3.6 or later|  
+|[!INCLUDE[nav_uni_app](../developer/includes/nav_uni_app_md.md)] version|<ul><li>3.6 or later</li></ul>|  
 |Supported operating systems|<ul><li>Android (tablet and phone): The latest three major versions and their updates.</li><li> iOS (iPad and iPhone): The latest three major versions and their updates.</li></ul>|  
 |Additional hardware|<ul><li>1-GB RAM for Android and Windows.</li></ul>|  
 |Additional information|<ul><li>Device diagonal screen size 7" for tablets.</li><li>Screen resolution 960 × 510 for tablets.</li><li>Device diagonal screen size 4" for phones.</li><li>Screen resolution 854 x 480 for phones.</li></ul>| 
