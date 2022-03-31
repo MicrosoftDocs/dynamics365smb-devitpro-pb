@@ -205,7 +205,7 @@ This section outlines what's required for custom Word report layouts to work pro
 
 ### Requirements
 
-- System Application must be version 20.x
+- System application must be version 20.x
 - Codeunit **44 Report Management** must implement the new event subscribers and integration events.
 
 ### Add code to codeunit 44 Report Management
@@ -237,7 +237,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 
     2. Delete the BusinessChartType.Enum.al file.
     
-        This file is now part of the System Application in version 20.
+        This file is now part of the system application in version 20.
     3. In the ReportManagement.Codeunit.al file, add the following code:
      
         ```al
@@ -396,16 +396,8 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 
 2. Run the technical upgrade
 
-    Follow the instructions for a technical upgrade at [Technical Upgrade to Version 20](upgrade-technical-upgrade-v20.md).
+    Follow the instructions for a technical upgrade at [Technical Upgrade to Version 20](upgrade-technical-upgrade-v20.md#Preparedb). One the last tasks involves upgrading to the new system application and base application versions.
 
-3. Upgrade the System and Base Applications.
-
-    The last task is to upgrade the System Application and Base Application extensions. You upgrade the System Application to version 20, which is available on the installation media (DVD) at C:\DVD\Applications\system application\Source\\Microsoft_System Application.app. You upgrade the Base Application to the new version that you created in step 2.
- 
-    1. Publish version 20 of the System Application. from the DVD
-    1. Synchronize the new versions
-    1. Run data upgrade on the new versions.
- 
 
 ## <a name="continue"></a>Continue using application rendering of Word report layouts
 
