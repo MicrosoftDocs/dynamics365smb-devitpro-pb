@@ -69,9 +69,9 @@ Version 18 introduced the capability to define permissions sets as AL objects, i
 
 For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
 
-## Task 3: Upgrade reports
+## Task 3: Upgrade custom reports
 
-Version 20 introduces platform-rendering of reports. If you're solution includes custom Word report layouts, you may have to modify the base application so that the layouts run correctly after upgrade. Whether you need to complete this task will depend on the customizations.
+Version 20 introduces platform-rendering of reports. If you're solution includes custom report layouts, you may have to modify the base application so that the layouts run correctly after upgrade. Whether you need to complete this task will depend on the customizations.
 
 For more information, see [Upgrading Reports](upgrade-reports.md).
 
