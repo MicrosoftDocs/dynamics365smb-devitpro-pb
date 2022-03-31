@@ -143,7 +143,7 @@ You can import a configuration package that has been exported from a database th
         > You may encounter the following error when you run an English version of Excel, but have your regional settings configured for a non-English language: *Old format or invalid type library.* To fix this error, make sure that the language pack for the non-English language is installed.
 7. Optionally, create configuration templates to make it easier to import master data, such as customers, vendors, contacts, or items.  
 
-    Use the built-in configuration templates, or create your own templates in the **Configuration Templates** page. This is mainly useful if you're going to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises and then switch to the cloud. For more information, see the [Migrate customer data](#migrate-customer-data) section.  
+    Use the built-in configuration templates, or create your own templates in the **Configuration Templates** page. This is mainly useful if you're going to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises and then switch to the cloud. For more information, see [Apply Company Configuration Packages](apply-company-configuration-packages.md).  
 
     You can export the templates as Excel workbooks so that you can work with customer data in Excel.  
 8. Export your package as a .rapidstart file, or export it to Excel.  

@@ -163,8 +163,6 @@
 ## Prepare Business Central
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Recommend apps](administration/recommend-apps.md)
-### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
-### [Apply company configuration packages](administration/apply-company-configuration-packages.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Excel Add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)
@@ -173,7 +171,8 @@
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
 ### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
 ### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
-<!--Potentially add RapidStart here?-->
+### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
+### [Apply company configuration packages](administration/apply-company-configuration-packages.md)
 <!-- onboard customers-->
 ## Onboard your customers
 ### [Trials and sign-ups](deployment/customer-signup.md)
