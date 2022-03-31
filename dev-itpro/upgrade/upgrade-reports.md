@@ -197,18 +197,18 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 
 ## Technical upgrade from 19 and earlier
 
-This section outlines what's required for a technical upgrade 
+This section outlines what's required for custom Word report layouts to work properly after a technical upgrade. 
 
 ### Requirements
 
-- The System Application must be version 20.x
+- System Application must be version 20.x
 - Codeunit **44 Report Management** must implement the new event subscribers and integration events.
 
 ### Add code to codeunit 44 Report Management
 
-You must cangThe ReportManagement.Codeunit.al file the base application, you add code to support the new platform-driven events for documents and download, and for managing report layout selection and load from application logic.
+In the ReportManagement.Codeunit.al file the base application, you add code to support the new platform-driven events for documents and for selecting and loading report layouts from application logic.
 
-The old event `OnAfterHasCustomLayout` has been replaced with the following events:
+The `OnAfterHasCustomLayout` event has been replaced with the following events:
 
 - `SelectedBuiltinLayoutType`
 
@@ -220,158 +220,172 @@ The old event `OnAfterHasCustomLayout` has been replaced with the following even
 
   This event loads the layout stream from application code, given a layout name and report ID.
 
-You'll have to create a new version of the base application.
+#### Guidelines
 
-```al
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
-local procedure CustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream)
-var
-    IsHandled: Boolean;
-begin
-    IsHandled := false;
-    OnCustomDocumentMerger(ObjectID, ReportAction, XmlData, LayoutData, DocumentStream, IsHandled);
-    if (IsHandled) then
-        exit;
-end;
+You'll have to create a new version of the base application using Visual Studio Code. In general, follow the guidelines at [developer/devenv-publish-code-customization](developer/devenv-publish-code-customization.md),but make the following modifications for this scenario:
 
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'OnDocumentReady', '', false, false)]
-local procedure OnDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
-begin
-    OnAfterDocumentReady(ObjectId, ObjectPayload, DocumentStream, TargetStream, Success);
-end;
+1. Modify the app.json file to include the following changes:
+  1. Change the system application dependency to version 20.
+  2. Increase the application version.
+2. Delete the BusinessChartType.Enum.al file.
 
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'OnDocumentDownload', '', false, false)]
-local procedure OnDocumentDownload(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
-begin
-    OnAfterDocumentDownload(ObjectId, ObjectPayload, DocumentStream, Success);
-end;
+    This file is now part of the System Application in version 20.
+3. In the ReportManagement.Codeunit.al file, add the following code:
 
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'SelectedBuiltinLayoutType', '', false, false)]
-local procedure SelectedBuiltinLayoutType(ObjectID: Integer; var LayoutType: Option "None",RDLC,Word,Excel,Custom)
-var
-    ReportLayoutSelection: Record "Report Layout Selection";
-begin
-    LayoutType := ReportLayoutSelection.SelectedBuiltinLayoutType(ObjectID);
-end;
-
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'SelectReportLayoutCode', '', false, false)]
-local procedure SelectReportLayoutCode(ObjectId: Integer; var LayoutCode: Text; var LayoutType: Option "None",RDLC,Word,Excel,Custom; var Success: Boolean)
-var
-    CustomReportLayout: Record "Custom Report Layout";
-    FeatureKey: Record "Feature Key";
-    ReportLayoutSelection: Record "Report Layout Selection";
-    DesignTimeReportSelection: Codeunit "Design-time Report Selection";
-    AppLayoutType: Enum "Custom Report Layout Type";
-    SelectedLayoutName: Text[250];
-    PlatformRenderingInPlatformTxt: Label 'RenderWordReportsInPlatform', Locked = true;
-begin
-    OnSelectReportLayoutCode(ObjectId, LayoutCode, LayoutType, Success);
-    if Success then
-        exit;
-
-    LayoutType := LayoutType::None; // Unknown layout type
-    SelectedLayoutName := DesignTimeReportSelection.GetSelectedLayout();
-
-    // Temporarily selected layout for Design-time report execution or for looping in batch report scenarios?
-    if SelectedLayoutName = '' then
-        // look in the app layout selection table for a selected layout for this report id.
-        if ReportLayoutSelection.Get(ObjectId, CompanyName) and
-            (ReportLayoutSelection.Type = ReportLayoutSelection.Type::"Custom Layout")
-        then
-            SelectedLayoutName := ReportLayoutSelection."Custom Report Layout Code";
-
-    if SelectedLayoutName <> '' then begin
-        // The code field in Custom Report Layout table can have a maximum size of 20 characters.
-        if (StrLen(SelectedLayoutName) <= MaxStrLen(CustomReportLayout."Code")) then
-            if CustomReportLayout.Get(SelectedLayoutName.ToUpper()) then begin
-                LayoutCode := CustomReportLayout.Code;
-                AppLayoutType := CustomReportLayout.Type;
-                case AppLayoutType of
-                    AppLayoutType::RDLC:
-                        LayoutType := LayoutType::RDLC;
-                    AppLayoutType::Word:
-                        LayoutType := LayoutType::Word;
-                    else
-                        // Layout Type extensions
-                        if (FeatureKey.Get(PlatformRenderingInPlatformTxt) and (FeatureKey.Enabled = FeatureKey.Enabled::"All Users")) then
-                            // Platform rendering - The OnCustomDocumentMerger event will handle the rendering logic
-                            LayoutType := LayoutType::Custom
-                        else
-                            // App rendering - The type will be treated like a word file and rendered by the app.
+    
+    ```al
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
+    local procedure CustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream)
+    var
+        IsHandled: Boolean;
+    begin
+        IsHandled := false;
+        OnCustomDocumentMerger(ObjectID, ReportAction, XmlData, LayoutData, DocumentStream, IsHandled);
+        if (IsHandled) then
+            exit;
+    end;
+    
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'OnDocumentReady', '', false, false)]
+    local procedure OnDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
+    begin
+        OnAfterDocumentReady(ObjectId, ObjectPayload, DocumentStream, TargetStream, Success);
+    end;
+    
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'OnDocumentDownload', '', false, false)]
+    local procedure OnDocumentDownload(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
+    begin
+        OnAfterDocumentDownload(ObjectId, ObjectPayload, DocumentStream, Success);
+    end;
+    
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'SelectedBuiltinLayoutType', '', false, false)]
+    local procedure SelectedBuiltinLayoutType(ObjectID: Integer; var LayoutType: Option "None",RDLC,Word,Excel,Custom)
+    var
+        ReportLayoutSelection: Record "Report Layout Selection";
+    begin
+        LayoutType := ReportLayoutSelection.SelectedBuiltinLayoutType(ObjectID);
+    end;
+    
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'SelectReportLayoutCode', '', false, false)]
+    local procedure SelectReportLayoutCode(ObjectId: Integer; var LayoutCode: Text; var LayoutType: Option "None",RDLC,Word,Excel,Custom; var Success: Boolean)
+    var
+        CustomReportLayout: Record "Custom Report Layout";
+        FeatureKey: Record "Feature Key";
+        ReportLayoutSelection: Record "Report Layout Selection";
+        DesignTimeReportSelection: Codeunit "Design-time Report Selection";
+        AppLayoutType: Enum "Custom Report Layout Type";
+        SelectedLayoutName: Text[250];
+        PlatformRenderingInPlatformTxt: Label 'RenderWordReportsInPlatform', Locked = true;
+    begin
+        OnSelectReportLayoutCode(ObjectId, LayoutCode, LayoutType, Success);
+        if Success then
+            exit;
+    
+        LayoutType := LayoutType::None; // Unknown layout type
+        SelectedLayoutName := DesignTimeReportSelection.GetSelectedLayout();
+    
+        // Temporarily selected layout for Design-time report execution or for looping in batch report scenarios?
+        if SelectedLayoutName = '' then
+            // look in the app layout selection table for a selected layout for this report id.
+            if ReportLayoutSelection.Get(ObjectId, CompanyName) and
+                (ReportLayoutSelection.Type = ReportLayoutSelection.Type::"Custom Layout")
+            then
+                SelectedLayoutName := ReportLayoutSelection."Custom Report Layout Code";
+    
+        if SelectedLayoutName <> '' then begin
+            // The code field in Custom Report Layout table can have a maximum size of 20 characters.
+            if (StrLen(SelectedLayoutName) <= MaxStrLen(CustomReportLayout."Code")) then
+                if CustomReportLayout.Get(SelectedLayoutName.ToUpper()) then begin
+                    LayoutCode := CustomReportLayout.Code;
+                    AppLayoutType := CustomReportLayout.Type;
+                    case AppLayoutType of
+                        AppLayoutType::RDLC:
+                            LayoutType := LayoutType::RDLC;
+                        AppLayoutType::Word:
                             LayoutType := LayoutType::Word;
+                        else
+                            // Layout Type extensions
+                            if (FeatureKey.Get(PlatformRenderingInPlatformTxt) and (FeatureKey.Enabled = FeatureKey.Enabled::"All Users")) then
+                                // Platform rendering - The OnCustomDocumentMerger event will handle the rendering logic
+                                LayoutType := LayoutType::Custom
+                            else
+                                // App rendering - The type will be treated like a word file and rendered by the app.
+                                LayoutType := LayoutType::Word;
+                    end;
                 end;
-            end;
-        // A layout code is defined, but not found in application table. The layout type is not known and it's expected that the code refers to a layout in the platform. 
-        // Return the layout code to platform for further processing.
-        LayoutCode := SelectedLayoutName;
-        Success := true;
+            // A layout code is defined, but not found in application table. The layout type is not known and it's expected that the code refers to a layout in the platform. 
+            // Return the layout code to platform for further processing.
+            LayoutCode := SelectedLayoutName;
+            Success := true;
+        end;
     end;
-end;
-
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'FetchReportLayoutByCode', '', false, false)]
-local procedure FetchReportLayoutByCode(ObjectId: Integer; LayoutCode: Text; var TargetStream: OutStream; var Success: Boolean)
-var
-    CustomReportLayout: Record "Custom Report Layout";
-    TempBlobIn: codeunit "Temp Blob";
-    TempInStream: InStream;
-begin
-    OnFetchReportLayoutByCode(ObjectId, LayoutCode, TargetStream, Success);
-    if Success then
-        exit;
-
-    if not CustomReportLayout.Get(LayoutCode) then
-        LayoutCode := '';
-
-    if LayoutCode <> '' then begin
-        CustomReportLayout.GetLayoutBlob(TempBlobIn);
-        TempBlobIn.CreateInStream(TempInStream);
-        CopyStream(TargetStream, TempInStream);
-        Success := true;
+    
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'FetchReportLayoutByCode', '', false, false)]
+    local procedure FetchReportLayoutByCode(ObjectId: Integer; LayoutCode: Text; var TargetStream: OutStream; var Success: Boolean)
+    var
+        CustomReportLayout: Record "Custom Report Layout";
+        TempBlobIn: codeunit "Temp Blob";
+        TempInStream: InStream;
+    begin
+        OnFetchReportLayoutByCode(ObjectId, LayoutCode, TargetStream, Success);
+        if Success then
+            exit;
+    
+        if not CustomReportLayout.Get(LayoutCode) then
+            LayoutCode := '';
+    
+        if LayoutCode <> '' then begin
+            CustomReportLayout.GetLayoutBlob(TempBlobIn);
+            TempBlobIn.CreateInStream(TempInStream);
+            CopyStream(TargetStream, TempInStream);
+            Success := true;
+        end;
     end;
-end;
+    
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'ApplicationReportMergeStrategy', '', false, false)]
+    local procedure ApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean)
+    var
+        IsHandled: Boolean;
+    begin
+        InApplication := false;
+        IsHandled := false;
+        OnApplicationReportMergeStrategy(ObjectId, LayoutCode, InApplication, IsHandled);
+        if IsHandled then
+            exit;
+    end;
+    
+    [IntegrationEvent(false, false)]
+    local procedure OnAfterDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
+    begin
+    end;
+    
+    [IntegrationEvent(false, false)]
+    local procedure OnAfterDocumentDownload(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
+    begin
+    end;
+    
+    [IntegrationEvent(false, false)]
+    local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
+    begin
+    end;
+    
+    [IntegrationEvent(false, false)]
+    local procedure OnSelectReportLayoutCode(ObjectId: Integer; var LayoutCode: Text; var LayoutType: Option "None",RDLC,Word,Excel,Custom; var IsHandled: Boolean)
+    begin
+    end;
+    
+    [IntegrationEvent(false, false)]
+    local procedure OnFetchReportLayoutByCode(ObjectId: Integer; LayoutCode: Text; var TargetStream: OutStream; var IsHandled: Boolean)
+    begin
+    end;
+    
+    [IntegrationEvent(false, false)]
+    local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
+    begin
+    end;
+    ```
 
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'ApplicationReportMergeStrategy', '', false, false)]
-local procedure ApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean)
-var
-    IsHandled: Boolean;
-begin
-    InApplication := false;
-    IsHandled := false;
-    OnApplicationReportMergeStrategy(ObjectId, LayoutCode, InApplication, IsHandled);
-    if IsHandled then
-        exit;
-end;
+4. Build the extension package for the new version.
 
-[IntegrationEvent(false, false)]
-local procedure OnAfterDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
-begin
-end;
-
-[IntegrationEvent(false, false)]
-local procedure OnAfterDocumentDownload(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var Success: Boolean)
-begin
-end;
-
-[IntegrationEvent(false, false)]
-local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
-begin
-end;
-
-[IntegrationEvent(false, false)]
-local procedure OnSelectReportLayoutCode(ObjectId: Integer; var LayoutCode: Text; var LayoutType: Option "None",RDLC,Word,Excel,Custom; var IsHandled: Boolean)
-begin
-end;
-
-[IntegrationEvent(false, false)]
-local procedure OnFetchReportLayoutByCode(ObjectId: Integer; LayoutCode: Text; var TargetStream: OutStream; var IsHandled: Boolean)
-begin
-end;
-
-[IntegrationEvent(false, false)]
-local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
-begin
-end;
-```
 
 ## <a name="continue"></a>Continue using application rendering of Word report layouts
 

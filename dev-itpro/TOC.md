@@ -3833,7 +3833,7 @@
 #### [Overview](upgrade/upgrade-overview-v20.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
 #### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
-<!--#### [Upgrading Reports](upgrade/upgrade-reports.md)-->
+#### [Upgrading Reports](upgrade/upgrade-reports.md)
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v20.md)
 ##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v20.md)
