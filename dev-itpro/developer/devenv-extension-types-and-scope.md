@@ -27,7 +27,7 @@ The definition of a global app is that it fulfills one or more of the following:
 
 Global apps are uniquely defined by their `id` and `version`.
 
-You cannot deploy a Global app with same the `id` and `version`, but different content to multiple environments.
+You cannot deploy a Global app with the same `id` and `version`, but different content to multiple environments.
 
 You can choose to install, uninstall or upgrade Global apps, but you do not control when they are published or unpublished because they might be used by other environments in the service. It is also not possible to force sync a Global app.
 
@@ -95,7 +95,7 @@ DEV extensions are used for development purposes. This includes extensions publi
 You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
 
 > [!NOTE]  
-> The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protetion.md).
+> The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
 
 <!-- allow download property is the only property which is effective from the policy set in the manifest and the rest of properties are set to true 
 Apps published as dev extensions ignore the resource exposure policy settings.-->
