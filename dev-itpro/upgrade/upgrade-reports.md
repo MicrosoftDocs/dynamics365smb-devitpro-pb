@@ -150,9 +150,10 @@ These changes may have implications on upgrading from earlier versions if your a
   > [!NOTE]
   > You have the option to continue to use the application rendering on all or specific reports. In this case you won't have to make any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
 
-- If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of  the application to include new event subscribers and integration events. [Technical upgrade from 19 and earlier](#techupgrade).
+- If you're doing a technical upgrade (platform only), you may have to modify codeunit **44 Report Management** of  the application to include new event subscribers and integration events. For more information, see [Technical upgrade from 19 and earlier](#techupgrade).
 
 These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
+
 ## <a name="appupgrade"></a>Upgrade document reports with Word layouts <!-- what is meant by document reports-->
 
 <!-- Upgrade document reports that use Word layouts-->
