@@ -162,8 +162,9 @@
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
 ### [Enabling new features ahead of time](administration/feature-management.md)
-### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Recommend apps](administration/recommend-apps.md)
+### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
+### [Apply company configuration packages](administration/apply-company-configuration-packages.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Excel Add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)

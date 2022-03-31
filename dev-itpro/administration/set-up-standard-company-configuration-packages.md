@@ -150,7 +150,7 @@ You can import a configuration package that has been exported from a database th
 
 ## See Also
 
-[Set Up Company Configuration Packages](apply-company-configuration-packages.md)  
+[Apply Company Configuration Packages](apply-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  
 [FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
 [Administration of Business Central Online](tenant-administration.md)  

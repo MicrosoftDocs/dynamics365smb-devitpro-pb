@@ -1,5 +1,5 @@
 ---
-title: Apply Configuration Packages
+title: Apply Company Configuration Packages
 description: Streamline your implementation process by using configuration packages with standard settings and to migrate customer data.
 author: edupont04
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.date: 03/31/2022
 ms.author: edupont
 
 ---
-# Apply Configuration Packages
+# Apply Company Configuration Packages
 
 When you onboard a prospect, you can use [configuration packages](set-up-standard-company-configuration-packages.md) to set up [!INCLUDE [prod_short](../includes/prod_short.md)] according to your best practices and their requirements. Apply the relevant configuration packages to an empty company in the customer's tenant. Use the questionnaires to tweak things for individual customers of yours. Optionally, use configuration templates to import existing customer data.  
 
