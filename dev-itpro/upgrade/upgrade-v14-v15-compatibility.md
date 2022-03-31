@@ -33,7 +33,7 @@ The following table lists the Business Central 18 versions and the 19 versions t
 |19.0 to 19.5|20.0|
 |19.6<sup>[\[1\]](#1)</sup>|20.1|
 
-To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
+To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
 
 
 ## Version 18 compatibility
@@ -51,7 +51,7 @@ The following table lists the Business Central 18 versions and the 19 versions t
 |[18.11](https://support.microsoft.com/help/5012306)<sup>[\[1\]](#1)</sup>|19.6|20.0|
 |18.12<sup>[\[1\]](#1)</sup>|19.7|20.1|
 
-To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
+To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
 
 ## Version 17 compatibility
 
@@ -171,7 +171,7 @@ The following table lists the Business Central 14 versions and the 15, 16, 17, 1
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).  
 
-To see the available updates for Business Central 2019 Release Wave 1, see [Released cumulative updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/en-us/help/4501292).
+To see the available updates for Business Central 2019 Release Wave 1, see [Released cumulative updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
 ## See Also
 

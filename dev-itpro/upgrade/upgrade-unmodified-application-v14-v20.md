@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Upgrading Unmodified C/AL Application to Version 20
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2021 release wave 2 (version 20) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2022 release wave 1 (version 20) application and platform.
 
  [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-20-upgrade-unmodified-app.png)](../developer/media/bc14-to-20-upgrade-unmodified-app.png#lightbox)  
 
@@ -73,7 +73,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 20 server instal
 
 1. Download the latest available update for version 20 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+    For more information about compatible updates and versions, see [Business Central Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
   
     The guidelines in this article assume that you're running the latest available update.
 
