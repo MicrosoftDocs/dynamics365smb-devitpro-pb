@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.AddLink(String [, String]) Method"
+title: "RecordRef.AddLink(Text [, Text]) Method"
 description: "Adds a link to a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.AddLink(String [, String]) Method
+# RecordRef.AddLink(Text [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a link to a record in a table.
@@ -21,7 +21,7 @@ Adds a link to a record in a table.
 
 ## Syntax
 ```AL
-[ID := ]  RecordRef.AddLink(URL: String [, Description: String])
+[ID := ]  RecordRef.AddLink(URL: Text [, Description: Text])
 ```
 ## Parameters
 *RecordRef*  
@@ -29,10 +29,11 @@ Adds a link to a record in a table.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *URL*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The link that you want to add to the record.  
+
 *[Optional] Description*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Optional description of the link.  
 
 

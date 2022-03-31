@@ -3,7 +3,7 @@ title: "TestFilter Data Type"
 description: "Represents a test filter on a page."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ The following methods are available on instances of the TestFilter data type.
 |[CurrentKey()](testfilter-currentkey-method.md)|Gets the current key of a data set that is displayed on a test page.|
 |[GetFilter(TestFilterField)](testfilter-getfilter-method.md)|Gets the filter that is applied to the specified field in a data set that is displayed on a test page.|
 |[SetCurrentKey(TestFilterField [, TestFilterField,...])](testfilter-setcurrentkey-method.md)|Sets the specified fields in a data set on a test page as the current key.|
-|[SetFilter(TestFilterField, String)](testfilter-setfilter-method.md)|Applies a filter to the specified field on a test page.|
+|[SetFilter(TestFilterField, Text)](testfilter-setfilter-method.md)|Applies a filter to the specified field on a test page.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

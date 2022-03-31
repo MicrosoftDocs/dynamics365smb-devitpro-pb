@@ -1,9 +1,9 @@
 ---
-title: "InStream.Read(var String [, Integer]) Method"
+title: "InStream.Read(var Text [, Integer]) Method"
 description: "Reads a specified number of bytes from an InStream object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# InStream.Read(var String [, Integer]) Method
+# InStream.Read(var Text [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads a specified number of bytes from an InStream object. Data is read in binary format.
@@ -21,7 +21,7 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 
 ## Syntax
 ```AL
-[Read := ]  InStream.Read(var Variable: String [, Length: Integer])
+[Read := ]  InStream.Read(var Variable: Text [, Length: Integer])
 ```
 ## Parameters
 *InStream*  
@@ -29,8 +29,9 @@ Reads a specified number of bytes from an InStream object. Data is read in binar
 An instance of the [InStream](instream-data-type.md) data type.  
 
 *Variable*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Describes the number of characters to be read. If you do not specify Length, the size of the variable is used. In the case of data types other than string, code, and binary, if you specify a length that differs from the size of the variable, you receive an error message.  
