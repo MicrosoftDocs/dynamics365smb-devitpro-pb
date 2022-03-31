@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Upgrading Reports
 
-[!INCLUDE[2022_releasewave1.md](includes/2022_releasewave1.md)]
+[!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
 This article discusses changes to the report platform in Business Central 2022 release wave 1 (version) and their effect on upgrading from version 19 and earlier.
 
