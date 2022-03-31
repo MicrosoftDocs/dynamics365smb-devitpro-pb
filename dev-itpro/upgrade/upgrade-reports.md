@@ -388,7 +388,6 @@ You'll have to create a new version of the base application using Visual Studio 
 
 4. Build the extension package for the new version.
 
-
 ## <a name="continue"></a>Continue using application rendering of Word report layouts
 
 There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to use to application rendering on reports: 
