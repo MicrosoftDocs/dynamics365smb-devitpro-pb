@@ -10,7 +10,7 @@ ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 02/18/2022
+ms.date: 03/31/2022
 ms.author: edupont
 
 ---
@@ -27,6 +27,11 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
 
 > [!TIP]
 > [!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
+
+If a customer is coming from another product, you can use configuration packages and templates to migrate their data to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, and then use the cloud migration tool to switch to [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Set Up Company Configuration Packages](set-up-standard-company-configuration-packages.md).  
+
+> [!TIP]
+> Customers coming from QuickBooks can use apps from Microsoft to move to [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Changing from a QuickBooks App to Dynamics 365 Business Central](/dynamics365/business-central/across-quickbooks-to-business-edition).  
 
 ## Prerequisites
 
