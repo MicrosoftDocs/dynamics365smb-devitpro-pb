@@ -1,9 +1,9 @@
 ---
-title: "JsonArray.Insert(Integer, String) Method"
+title: "JsonArray.Insert(Integer, Text) Method"
 description: "Inserts the value at the given index in the array while shifting all the values to the right by one position."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonArray.Insert(Integer, String) Method
+# JsonArray.Insert(Integer, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Inserts the value at the given index in the array while shifting all the values to the right by one position.
@@ -21,7 +21,7 @@ Inserts the value at the given index in the array while shifting all the values 
 
 ## Syntax
 ```AL
-[Ok := ]  JsonArray.Insert(Index: Integer, Value: String)
+[Ok := ]  JsonArray.Insert(Index: Integer, Value: Text)
 ```
 ## Parameters
 *JsonArray*  
@@ -31,8 +31,9 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
   
+
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
 
 

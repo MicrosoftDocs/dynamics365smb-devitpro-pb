@@ -28,7 +28,15 @@ On 31 March 2025, technical support for instrumentation key–based global inges
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
-### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API 
+### WS-Federation with Azure Active Directory authentication
+
+The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation. For more information, see [Moving from WS-Federation to OpenID Connect](../administration/authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).|
+
+### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API
 The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
@@ -37,6 +45,7 @@ The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD
 
 
 ### Business Central Server Administration tool (Removal)
+
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
 |Removed or Replaced? |Why?|
@@ -260,5 +269,24 @@ Some features are available only under very specific circumstances, or not at al
 
 ## See Also
 
+[Deprecated Features in the Base App](deprecated-features-w1.md)  
+[Deprecated Features in the Austrian Version](deprecated-features-at.md)  
+[Deprecated Features in the Belgian Version](deprecated-features-be.md)  
+[Deprecated Features in the Canadian Version](deprecated-features-ca.md)  
+[Deprecated Features in the Czech Version](deprecated-features-cz.md)  
+[Deprecated Features in the Dutch Version](deprecated-features-nl.md)  
+[Deprecated Features in the Finnish Version](deprecated-features-fi.md)  
+[Deprecated Features in the German Version](deprecated-features-de.md)  
+[Deprecated Features in the Icelandic Version](deprecated-features-is.md)  
+[Deprecated Features in the Italian Version](deprecated-features-it.md)  
+[Deprecated Features in the Mexican Version](deprecated-features-mx.md)  
+[Deprecated Features in the Norwegian Version](deprecated-features-no.md)  
+[Deprecated Features in the Russian Version](deprecated-features-ru.md)  
+[Deprecated Features in the Swedish Version](deprecated-features-se.md)  
+[Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
+[Deprecated Features in the UK Version](deprecated-features-uk.md)  
+[Deprecated Features in the United States Version](deprecated-features-us.md)  
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Tables](deprecated-tables.md)  
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
 [Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
