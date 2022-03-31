@@ -43,11 +43,11 @@ These changes may have implications on upgrading from earlier versions if your a
 
 These changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
-## New and obsoleted events
+### New and obsoleted events
 
 This section lists the new and obsoleted events in version 20.
 
-### New events
+#### New events
 
 Codeunit **44 ReportManagement** includes new integration events for processing reports and loading report layouts.
 
@@ -89,7 +89,7 @@ Codeunit **44 ReportManagement** includes new integration events for processing 
     end;
     ```
 
-### Obsoleted events
+#### Obsoleted events
 
 Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Report Mgt."** have been obsoleted.
 
@@ -176,7 +176,6 @@ if the application has customizations in this area, it's possible to switch to b
 - Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.-->
 
-
 ### Customization of OnAfterHasCustomLayout event <!-- do you mean on event subscribers-->
 
 Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented to use the following events instead:
@@ -198,14 +197,16 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 
 ## Technical upgrade from 19 and earlier
 
+This section outlines what's required for a technical upgrade 
+
 ### Requirements
 
-- System Application must be updated to version 20.x
-- ReportManagement.Codeunit.al (ID=44) must implement the new event subscribers and integration events.
+- The System Application must be version 20.x
+- Codeunit **44 Report Management** must implement the new event subscribers and integration events.
 
 ### Add code to codeunit 44 Report Management
 
-In codeunit **44 Report Management** of the base application, you add code to support the new platform-driven events for documents and download, and for managing report layout selection and load from application logic.
+You must cangThe ReportManagement.Codeunit.al file the base application, you add code to support the new platform-driven events for documents and download, and for managing report layout selection and load from application logic.
 
 The old event `OnAfterHasCustomLayout` has been replaced with the following events:
 
@@ -372,7 +373,7 @@ begin
 end;
 ```
 
-## <a name="continue"></a>Continue using application rendering of Word reports
+## <a name="continue"></a>Continue using application rendering of Word report layouts
 
 There may be reports that you can't change at this time. In this case, it's possible to keep using the legacy application rendering. There are two ways to use to application rendering on reports: 
 
