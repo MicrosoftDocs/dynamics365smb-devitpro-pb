@@ -25,7 +25,7 @@ Version 20 introduces a new report rendering model. Previously, report rendering
 - An updated Microsoft Word report rendering engine
 - A new custom report render. <!--For more information, see [Developing a Custom Report Render](devenv-report-custom-render.md)-->
 - Improved layout management using extension layouts <!-- what does this mean, multilayouts?-->
-- New platform-supported layouts and report selection tables <!-- what does this mean -->
+- New platform-supported layouts and selection tables <!-- what does this mean -->
 
     <!--Excel and  table 2000000234 "Report Layout List"-->
 - New and obsoleted application events in codeunit **44 ReportManagement**.
@@ -158,7 +158,7 @@ The report rendering changes don't affect the upgrade process for RDLC report la
 
 <!-- Upgrade document reports that use Word layouts-->
 
-The new platform supports the native rendering of Microsoft Word reports. With this new rendering, some report events in AL are no longer used, including:
+The new platform supports the native rendering of Microsoft Word reports. With this new rendering, the following report events in AL are no longer used:
 
 - `OnAfterHasCustomLayout`
 - `OnMergeDocumentReport`
@@ -193,7 +193,9 @@ Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented t
 
 ### Customization of OnMergeDocumentReport or OnBeforeMergeDocument
 
-Extensions that depend on the legacy Microsoft Word render by using the `OnMergeDocumentReport` or `OnBeforeMergeDocument` events must be changed to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead. The layouts can now be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables. 
+Extensions that depend on the legacy Microsoft Word render by using the `OnMergeDocumentReport` or `OnBeforeMergeDocument` events must be changed to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead.
+
+By subscribing to `OnCustomDocumentMerger`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
 
 ## Technical upgrade from 19 and earlier
 
@@ -417,7 +419,6 @@ if the application has customizations in this area, it's possible to switch to b
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report.
 
   By subscribing this event, the application selects the rendering engine based on the selected report ID and layout name.
-
 
 ## See Also  
 
