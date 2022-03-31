@@ -25,11 +25,9 @@ In version 20, the reporting platform has been updated with respect to Microsoft
 Version 20 introduces a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
 
 - An updated Microsoft Word report rendering engine
-- A new custom report render <!--For more information, see [Developing a Custom Report Render](devenv-report-custom-render.md)-->
-- Improved layout management using extension layouts <!-- what does this mean, multilayouts?-->
-- New platform-supported layouts and layout selection tables <!-- what does this mean -->
-
-    <!--Excel and  table 2000000234 "Report Layout List"-->
+- A new custom report render
+- Improved layout management using extension layouts for designing multiple layouts for a single report.
+- New platform-supported layouts and layout selection tables
 - New and obsoleted application events in codeunit **44 ReportManagement**
 
 ### New and obsoleted events
@@ -145,7 +143,7 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
 
 ## What the changes mean for upgrade
 
-These report rendering changes may have implications on upgrading from earlier versions if your application includes reports that use custom Word layouts.
+These report rendering changes may have implications on upgrading from earlier versions if your application includes reports that use custom report layouts, which are stored in the **Custom Report Layout** table of the application.
 
 - If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use new events. See [Upgrade of document reports with Word layouts](#appupgrade).
 
@@ -156,9 +154,7 @@ These report rendering changes may have implications on upgrading from earlier v
 
 The report rendering changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
-## <a name="appupgrade"></a>Upgrade document reports with Word layouts <!-- what is meant by document reports-->
-
-<!-- Upgrade document reports that use Word layouts-->
+## <a name="appupgrade"></a>Upgrade reports with custom layouts 
 
 The new platform supports the native rendering of Microsoft Word reports. With this new rendering, the following report events in AL are no longer used:
 
@@ -178,16 +174,15 @@ if the application has customizations in this area, it's possible to switch to b
 - Disable the application feature key `Feature: New Microsoft Word report rendering platform` in the **Feature Management** page.
 - Use the new business event `OnApplicationReportMergeStrategy` to select application or platform engine support for particular layout in a specific report. By using this event, the application can select rendering engine based on the selected report ID and layout name.-->
 
-### Customization of OnAfterHasCustomLayout event <!-- do you mean on event subscribers-->
+### Customization of OnAfterHasCustomLayout event
 
 Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented to use the following events instead:
 
 <!-- do they need to use both?-->
 - `OnSelectReportLayoutCode`
 
-  <!--This event gets the layout code and layout type from the application table **9651 Report Layout Selection**. -->
 
-  This event gets the layout code and type that the application has set using the Report Layout Selection application table.
+  This event gets the layout code and type that the application has set using the **Report Layout Selection** application table.
 
 - `OnFetchReportLayoutByCode`
 
@@ -201,7 +196,7 @@ By subscribing to `OnCustomDocumentMerger`, the layouts can be added in the exte
 
 ## <a name="techupgrade"></a>Technical upgrade from 19 and earlier
 
-This section outlines what's required for custom Word report layouts to work properly after a technical upgrade. 
+This section outlines what's required for custom report layouts to work properly after a technical upgrade. 
 
 ### Requirements
 
@@ -236,10 +231,10 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
         2. Increase the application version.
 
     2. Delete the BusinessChartType.Enum.al file.
-    
+
         This file is now part of the system application in version 20.
     3. In the ReportManagement.Codeunit.al file, add the following code:
-     
+
         ```al
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
         local procedure CustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream)
@@ -397,7 +392,6 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 2. Run the technical upgrade
 
     Follow the instructions for a technical upgrade at [Technical Upgrade to Version 20](upgrade-technical-upgrade-v20.md#Preparedb). One the last tasks involves upgrading to the new system application and base application versions.
-
 
 ## <a name="continue"></a>Continue using application rendering of Word report layouts
 
