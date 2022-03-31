@@ -3,7 +3,7 @@ title: "Page Data Type"
 description: "Contains a number of simpler elements called controls."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,7 @@ The following methods are available on instances of the Page data type.
 |-----------|-----------|
 |[Activate([Boolean])](page-activate-method.md)|Activates the current page on the client if possible. The data on the page will not be refreshed.|
 |[CancelBackgroundTask(Integer)](page-cancelbackgroundtask-method.md)|Attempt to cancel a page background task.|
-|[Caption([String])](page-caption-method.md)|The caption shown in the title bar. For example, the default value in English (United States) is the same as the name of the page.|
+|[Caption([Text])](page-caption-method.md)|The caption shown in the title bar. For example, the default value in English (United States) is the same as the name of the page.|
 |[Close()](page-close-method.md)|Closes the current page.|
 |[Editable([Boolean])](page-editable-method.md)|Gets or sets the default editability of the page.|
 |[EnqueueBackgroundTask(var Integer, Integer [, var Dictionary of [Text, Text]] [, Integer] [, PageBackgroundTaskErrorLevel])](page-enqueuebackgroundtask-method.md)|Creates and queues a background task that runs the specified codeunit (without a UI) in a read-only child session of the page session. If the task completes successfully, the **OnPageBackgroundTaskCompleted** trigger is invoked. If an error occurs, the **OnPageBackgroundTaskError** trigger is invoked. If the page is closed before the task completes, or the page record ID on the task changed, the task is cancelled.|

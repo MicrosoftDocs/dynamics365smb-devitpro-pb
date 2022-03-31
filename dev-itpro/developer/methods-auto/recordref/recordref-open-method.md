@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.Open(Integer [, Boolean] [, String]) Method"
+title: "RecordRef.Open(Integer [, Boolean] [, Text]) Method"
 description: "Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Open(Integer [, Boolean] [, String]) Method
+# RecordRef.Open(Integer [, Boolean] [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.
@@ -21,7 +21,7 @@ Causes a RecordRef variable to refer to a table, which is identified by its numb
 
 ## Syntax
 ```AL
- RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: String])
+ RecordRef.Open(No: Integer [, Temp: Boolean] [, CompanyName: Text])
 ```
 ## Parameters
 *RecordRef*  
@@ -31,11 +31,13 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 *No*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of the table.  
+
 *[Optional] Temp*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
+
 *[Optional] CompanyName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the company to which you want to change. If you omit this parameter, the current company is used.  
 
 

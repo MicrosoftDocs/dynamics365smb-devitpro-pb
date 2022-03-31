@@ -1,9 +1,9 @@
 ---
-title: "File.Create(String [, TextEncoding]) Method"
+title: "File.Create(Text [, TextEncoding]) Method"
 description: "Creates an Automation object."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/29/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Create(String [, TextEncoding]) Method
+# File.Create(Text [, TextEncoding]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an Automation object.
@@ -23,7 +23,7 @@ Creates an Automation object.
 
 ## Syntax
 ```AL
-[Ok := ]  File.Create(Name: String [, Encoding: TextEncoding])
+[Ok := ]  File.Create(Name: Text [, Encoding: TextEncoding])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -33,8 +33,9 @@ Creates an Automation object.
 An instance of the [File](file-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
+
 *[Optional] Encoding*  
 &emsp;Type: [TextEncoding](../textencoding/textencoding-option.md)  
 The encoding that will be used by the stream. The default encoding is MSDos.  

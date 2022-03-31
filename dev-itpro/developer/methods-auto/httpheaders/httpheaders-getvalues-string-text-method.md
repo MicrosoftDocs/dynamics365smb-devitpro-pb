@@ -1,9 +1,9 @@
 ---
-title: "HttpHeaders.GetValues(String, Array of [Text]) Method"
+title: "HttpHeaders.GetValues(Text, Array of [Text]) Method"
 description: "Gets the values for the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/24/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpHeaders.GetValues(String, Array of [Text]) Method
+# HttpHeaders.GetValues(Text, Array of [Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the values for the specified key.
@@ -21,7 +21,7 @@ Gets the values for the specified key.
 
 ## Syntax
 ```AL
-[Ok := ]  HttpHeaders.GetValues(Key: String, Values: Array of [Text])
+[Ok := ]  HttpHeaders.GetValues(Key: Text, Values: Array of [Text])
 ```
 ## Parameters
 *HttpHeaders*  
@@ -29,9 +29,10 @@ Gets the values for the specified key.
 An instance of the [HttpHeaders](httpheaders-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The specified header.
         
+
 *Values*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The specified header values.  

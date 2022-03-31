@@ -1,9 +1,9 @@
 ---
-title: "System.RoundDateTime(DateTime [, BigInteger] [, String]) Method"
+title: "System.RoundDateTime(DateTime [, BigInteger] [, Text]) Method"
 description: "Rounds a DateTime."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.RoundDateTime(DateTime [, BigInteger] [, String]) Method
+# System.RoundDateTime(DateTime [, BigInteger] [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Rounds a DateTime.
@@ -21,7 +21,7 @@ Rounds a DateTime.
 
 ## Syntax
 ```AL
-NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: String])
+NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigInteger] [, Direction: Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -29,12 +29,14 @@ NewDatetime :=   System.RoundDateTime(Datetime: DateTime [, Precision: BigIntege
 *Datetime*  
 &emsp;Type: [DateTime](../datetime/datetime-data-type.md)  
 The DateTime that you want to round.  
+
 *[Optional] Precision*  
 &emsp;Type: [BigInteger](../biginteger/biginteger-data-type.md)  
 This optional parameter determines the precision used when rounding. The default value is 1000, which rounds to the nearest second. You can only use positive BigIntegers.
         
+
 *[Optional] Direction*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 This optional parameter specifies how to round the DateTime. The default rounding method is '='. You can change the method by using the following options:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
 -   '\>' rounds up

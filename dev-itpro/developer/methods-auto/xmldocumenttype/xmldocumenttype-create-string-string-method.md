@@ -1,9 +1,9 @@
 ---
-title: "XmlDocumentType.Create(String, String) Method"
+title: "XmlDocumentType.Create(Text, Text) Method"
 description: "Creates an XmlDocumentType node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocumentType.Create(String, String) Method
+# XmlDocumentType.Create(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlDocumentType node.
@@ -21,15 +21,16 @@ Creates an XmlDocumentType node.
 
 ## Syntax
 ```AL
-XmlDocumentType :=   XmlDocumentType.Create(Name: String, PublicId: String)
+XmlDocumentType :=   XmlDocumentType.Create(Name: Text, PublicId: Text)
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the qualified name of the DTD, which is the same as the qualified name of the root element of the XML document.
         
+
 *PublicId*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the public identifier of an external public DTD.  
 
 
