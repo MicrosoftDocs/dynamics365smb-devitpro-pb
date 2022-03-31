@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: troubleshooting
 author: blrobl
 ---
+
 # Troubleshooting the Business Central Mobile App On-Premises
 
 This section contains information to help you resolve problems using the [!INCLUDE[nav_web](includes/nav_web_md.md)], the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)], and the [!INCLUDE[nav_phone](includes/nav_phone_md.md)] when working on-premises.

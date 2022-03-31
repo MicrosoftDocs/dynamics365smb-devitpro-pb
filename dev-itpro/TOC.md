@@ -188,6 +188,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
+### [Analyze performance](administration/performance-profiler-overview.md)
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
@@ -196,6 +197,7 @@
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
+### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 <!-- end migrate -->
 <!-- telemetry -->
 ## Monitor and analyze telemetry
@@ -278,6 +280,36 @@
 #### [Delete user permission](administration/api/dynamics_userpermission_delete.md)
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
+## Cloud Migration APIs
+### [Cloud Migration API Overview](administration/cloudmigrationapi/cloud-migration-api-overview.md)
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Cloud migration company](administration/cloudmigrationapi/resources/dynamics_cloudmigrationcompany.md)
+#### [Get cloud migration company](administration/cloudmigrationapi/api/dynamics_cloudmigrationcompany_get.md)
+#### [Update cloud migration company](administration/cloudmigrationapi/api/dynamics_cloudmigrationcompany_update.md)
+### [Cloud migration status](administration/cloudmigrationapi/resources/dynamics_cloudmigrationstatus.md)
+#### [Get cloud migration status](administration/cloudmigrationapi/api/dynamics_cloudmigrationstatus_get.md)
+### [Cloud migration status detail](administration/cloudmigrationapi/resources/dynamics_cloudmigrationstatusdetail.md)
+#### [Get cloud migration status detail](administration/cloudmigrationapi/api/dynamics_cloudmigrationstatusdetail_get.md)
+### [Company](administration/cloudmigrationapi/resources/dynamics_company.md)
+#### [Get company](administration/cloudmigrationapi/api/dynamics_company_get.md)
+### [Setup cloud migration](administration/cloudmigrationapi/resources/dynamics_setupcloudmigration.md)
+#### [Get setup cloud migration](administration/cloudmigrationapi/api/dynamics_setupcloudmigration_get.md)
+#### [Create setup cloud migration](administration/cloudmigrationapi/api/dynamics_setupcloudmigration_create.md)
+#### [Update setup cloud migration](administration/cloudmigrationapi/api/dynamics_setupcloudmigration_update.md)
+### [Source product type](administration/cloudmigrationapi/resources/dynamics_sourceproducttype.md)
+#### [Get source product type](administration/cloudmigrationapi/api/dynamics_sourceproducttype_get.md)
+### [Subscriptions](administration/cloudmigrationapi/resources/dynamics_subscriptions.md)
+#### [Get subscriptions](administration/cloudmigrationapi/api/dynamics_subscriptions_get.md)
+#### [Delete subscriptions](administration/cloudmigrationapi/api/dynamics_subscriptions_delete.md)
+#### [Create subscriptions](administration/cloudmigrationapi/api/dynamics_subscriptions_create.md)
+#### [Update subscriptions](administration/cloudmigrationapi/api/dynamics_subscriptions_update.md)
+### [Table mapping](administration/cloudmigrationapi/resources/dynamics_tablemapping.md)
+#### [Get table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_get.md)
+#### [Delete table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_delete.md)
+#### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
+#### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end admin -->
 <!-- Development-->
@@ -480,7 +512,8 @@
 ### [Page Background Tasks](developer/devenv-page-background-tasks.md)
 ### [API Page Type](developer/devenv-api-pagetype.md)
 ### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
+### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)  
+### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
 ## Reports
 ### [Reports Overview](developer/devenv-reports.md)
 ### [Report Design Overview](developer/devenv-report-design-overview.md)
@@ -579,6 +612,8 @@
 ### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
+## Troubleshooting
+### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
 ## AL-Go for GitHub
 ### [AL-Go Overview](al-go/algo-overview.md)
 ### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
