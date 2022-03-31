@@ -162,11 +162,11 @@ You can choose to use the configuration package approach to migrating customer d
 
 From both the **Configuration Worksheet** page and the **Configuration Package** page, you can import data from Excel or a .rapidstart file. If you prefer to use Excel, the data must be in an Excel workbook that is exported from the **Configuration Packages** page. This way, the Excel workbook complies with the [!INCLUDE [prod_short](../includes/prod_short.md)] data structure. In the **Configuration Package** page, you can map tables and fields if the data structure is different between where the data came from and where it's going. [!INCLUDE[prod_short](../includes/prod_short.md)] treats and handles the mapping based on table relations:  
 
-- If you define a mapping directly for a field in a table, then [!INCLUDE[prod_short](includes/prod_short.md)] uses it.  
+- If you define a mapping directly for a field in a table, then [!INCLUDE[prod_short](../includes/prod_short.md)] uses it.  
 
-- If the field has a relation to another table, [!INCLUDE[prod_short](includes/prod_short.md)] searches for the mapping defined for the primary key field in the related table. The related table, however, must be part of the configuration package.  
+- If the field has a relation to another table, [!INCLUDE[prod_short](../includes/prod_short.md)] searches for the mapping defined for the primary key field in the related table. The related table, however, must be part of the configuration package.  
 
-- If mapping information is defined in both places, for the field directly and for the primary key in the related table, then [!INCLUDE[prod_short](includes/prod_short.md)] will search for the mapping in both places.  
+- If mapping information is defined in both places, for the field directly and for the primary key in the related table, then [!INCLUDE[prod_short](../includes/prod_short.md)] will search for the mapping in both places.  
 
 - If the same mappings are defined directly for a field and in the related table, but have different new values, the mapping that is defined directly for the field takes priority over the mapping that is defined for the table that the field is referencing.  
 
