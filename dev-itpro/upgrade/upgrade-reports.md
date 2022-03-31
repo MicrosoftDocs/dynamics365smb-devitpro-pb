@@ -199,7 +199,7 @@ Extensions that depend on the legacy Microsoft Word render by using the `OnMerge
 
 By subscribing to `OnCustomDocumentMerger`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
 
-## <a name=techupgrade></a>Technical upgrade from 19 and earlier
+## <a name="techupgrade"></a>Technical upgrade from 19 and earlier
 
 This section outlines what's required for custom Word report layouts to work properly after a technical upgrade. 
 
