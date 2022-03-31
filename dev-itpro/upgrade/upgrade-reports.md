@@ -220,7 +220,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 
   This event loads the layout stream from application code, given a layout name and report ID.
 
-#### Guidelines
+#### Task 1: Modify base application
 
 You'll have to create a new version of the base application using Visual Studio Code. In general, follow the guidelines at [Publishing Code-Customized Base Application](../developer/devenv-publish-code-customization.md), but make the following modifications for this scenario:
 
@@ -387,6 +387,14 @@ You'll have to create a new version of the base application using Visual Studio 
     ```
 
 4. Build the extension package for the new version.
+
+#### Task 2: Technical upgrade
+
+Follow the instructions for a technical upgrade at [Technical Upgrade to Version 20](upgrade-technical-upgrade-v20.md).
+
+#### Task 3: Upgrade the System and Base Applications
+
+The last task is to upgrade the System Application and Base Application extensions to the new vetSystem and Base Application extensions 
 
 ## <a name="continue"></a>Continue using application rendering of Word report layouts
 
