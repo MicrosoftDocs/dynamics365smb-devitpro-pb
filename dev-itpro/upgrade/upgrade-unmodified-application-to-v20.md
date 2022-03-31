@@ -251,7 +251,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     For example:
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC190 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
+    Publish-NAVApp -ServerInstance BC200 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 
 5. Publish new versions of 3rd-party extensions. Be sure to include new extensions that contain custom permission sets as AL objects.

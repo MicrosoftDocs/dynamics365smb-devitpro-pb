@@ -33,7 +33,7 @@ Many of the steps in this article use PowerShell cmdlets, which require that you
 
 ```powershell
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC140"
-$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC190"
+$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC200"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
@@ -270,7 +270,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 <!--
 1. Publish version 20 system symbols extension.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\200\AL Development Environment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly

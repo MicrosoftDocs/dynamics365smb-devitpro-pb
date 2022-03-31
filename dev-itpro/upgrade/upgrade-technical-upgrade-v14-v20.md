@@ -57,7 +57,7 @@ Use this process when you have a code customized [!INCLUDE[prod_short](../develo
 
     1. Find the **CodeViewer** folder in the **Add-ins** folder of the version 14 RoleTailored client installation. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins.
 
-    2. Copy the folder to the **Add-ins** folder of the version 20 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins. Replace the existing folder and files, if any. 
+    2. Copy the folder to the **Add-ins** folder of the version 20 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\200\Service\Add-ins. Replace the existing folder and files, if any. 
 
     CodeViewer is no longer used in version 20. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 
