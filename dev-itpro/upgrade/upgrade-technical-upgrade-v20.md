@@ -301,6 +301,7 @@ In this task, you run a data upgrade for new system and base application extensi
     ```powershell
     Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "System Application" -Tenant $TenantId -Version $SystemAppVersion
     ```
+
 2. Run the data upgrade for the base application.
 
     ```powershell
@@ -315,6 +316,24 @@ In this task, you reinstall the same extensions that were installed on the tenan
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). For example:
 
+<!--
+
+1. If your solution uses the System Application, install this first.
+
+    ```powershell 
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "System Application" -Version $OldVersion
+    ```
+
+    Replace `<extension version>` with the exact version of the published System Application.
+
+2. Install the Base Application.
+
+    ```powershell
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Base Application" -Version $OldVersion
+    ```
+
+    Replace `<extension version>` with the exact version of the published System Application.
+-->
 1. Install the Application extension.
 
     ```powershell
