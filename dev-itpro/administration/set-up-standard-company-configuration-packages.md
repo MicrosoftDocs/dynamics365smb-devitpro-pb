@@ -17,14 +17,16 @@ As you grow your business as a reseller of [!INCLUDE [prod_short](../includes/pr
 
 After you have set up a company in [!INCLUDE [prod_short](../includes/prod_short.md)] that suits your needs, you can create a configuration package that contains relevant setup data from this company. You can then use it when you create a new company that is to be configured in the same way.  
 
-To facilitate the import of master data, such as customer and vendor information, you can use *configuration templates*. Configuration templates contain a set of default settings that are automatically assigned to the records imported into [!INCLUDE[prod_short](../includes/prod_short.md)].  
+To facilitate the import of master data, such as customer and vendor information, you can use *configuration templates*. Configuration templates contain a set of default settings that are automatically assigned to the records imported into [!INCLUDE[prod_short](../includes/prod_short.md)]. Configuration templates are an alternative to the cloud migration tools that you ca use to migrate customer data from supported products. For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).
 
 > [!TIP]
-> Use these capabilities to scale your business as a reseller. Most of the relevant pages apply to both [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises. However, some processes rely on access to files on disk and are too complex to use for [!INCLUDE [prod_short](../includes/prod_short.md)] online. For [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, you probably want to use Windows PowerShell to help you deploy. For more information, see [Administration of Business Central On-Premises](administration.md) and [Administration of Business Central Online](tenant-administration.md), respectively.  
+> Use these capabilities to scale your business as a reseller. Most of the relevant pages apply to both [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises. However, some processes rely on access to the underlying database and are too complex to use for [!INCLUDE [prod_short](../includes/prod_short.md)] online. For [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, you probably want to use Windows PowerShell to help you deploy. For more information, see [Administration of Business Central On-Premises](administration.md) and [Administration of Business Central Online](tenant-administration.md), respectively.  
 
 ## Configuration packages
 
-In general, create a configuration package for each functional area. For example, create a package for your manufacturing functionality. That lets you apply and set up new areas in a company as you need them  
+By default, [!INCLUDE [prod_short](../includes/prod_short.md)] online comes with one configuration package for Microsoft's default application, including local functionality. You can copy that and make relevant changes in the copy.  
+
+Many of our reselling partners create a configuration package for each functional area. For example, create a package for the manufacturing functionality and another for sales. That lets you apply and set up new areas in a company as you need them.  
 
 We recommend that you create configuration packages with most of the setup tables already filled in, so that only a few settings must be tweaked for each customer. For example, when you create a new company, the **No. Series** and the **No. Series Line** tables are filled in with a set of number series and starting numbers. The corresponding **No. Series** fields in the setup tables are also filled in automatically. You do not have to do the work of entering number series and other basic setup data. You can also manually change all default data that is used with RapidStart Services by using the *configuration worksheet*.  
 
@@ -141,6 +143,8 @@ You can import a configuration package that has been exported from a database th
 7. Optionally, create configuration templates to make it easier to import master data, such as customers, vendors, contacts, or items.  
 
     Use the built-in configuration templates, or create your own templates in the **Configuration Templates** page. This is mainly useful if you're going to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises and then switch to the cloud. For more information, see the [Migrate customer data](#migrate-customer-data) section.  
+
+    You can export the templates as Excel workbooks so that you can work with customer data in Excel.  
 8. Export your package as a .rapidstart file, or export it to Excel.  
 
 ## Apply the configuration packages
@@ -189,7 +193,7 @@ From both the **Configuration Worksheet** page and the **Configuration Package**
     The **Error Text** field contains the reason for the error. The **Field Caption** field contains the caption of the field that contains the error.  
     4. To correct an error or otherwise make an update, on the **Migration Overview** page, choose the **Migration Record** action, and then, on the **Migration Record** page, correct the record with the error.  
 
-    Now you have master data in place. Next, you add the opening balances. The following steps describe how to create journal lines for G/L accounts, but the same apply to creating journal lines for customers, vendors, and items.  
+    Now, you have master data in place. Next, you add the opening balances. The following steps describe how to create journal lines for G/L accounts, but the same apply to creating journal lines for customers, vendors, and items.  
 4. Choose the **Create G/L Acct. Journal Lines** action.  
 5. Fill in the **Options** FastTab as appropriate, and set filters as needed. For example, in the **Journal Template** field, enter a name.  
 6. Choose the **OK** button. The records are now in the journal, but the amounts are empty.  
@@ -202,9 +206,11 @@ From both the **Configuration Worksheet** page and the **Configuration Package**
 > [!IMPORTANT]
 > Specifically for opening balances for bank accounts, do not follow the steps in this article to post directly to the G/L accounts that are associated with the relevant bank accounts. For more information, see [Set Up Bank Accounts](/dynamics365/business-central/bank-how-setup-bank-accounts).  
 
-
 ## See Also
 
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  
 [FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
-[Administration](administration.md)
+[Administration of Business Central Online](tenant-administration.md)  
+[Administration of Business Central On-Premises](administration.md)
+[Get Started as a Reseller of Business Central Online](get-started-online.md)  
+[Onboarding experiences in Business Central](onboarding-experiences.md)  
