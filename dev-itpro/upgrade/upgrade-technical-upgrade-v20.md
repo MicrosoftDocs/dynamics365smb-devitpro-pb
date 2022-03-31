@@ -309,7 +309,7 @@ In this task, you run a data upgrade for new system and base application extensi
 
 These steps will automatically install the new system application and base application versions on the tenant.
 
-## Task 11: Reinstall extensions (single-tenant only)
+## Task 12: Reinstall extensions (single-tenant only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before, unless you've published new versions.
 
@@ -344,11 +344,11 @@ At line:1 char:1
     + FullyQualifiedErrorId : System.ServiceModel.CommunicationException,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
 -->
 
-## Task 12: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 13: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-## Task 13: Install upgraded permissions sets
+## Task 14: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
