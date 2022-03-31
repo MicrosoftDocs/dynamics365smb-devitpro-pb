@@ -226,12 +226,12 @@ You'll have to create a new version of the base application using Visual Studio 
 
 1. Modify the app.json file to include the following changes:
 
-  1. Change the system application dependency to version 20.
-  2. Increase the application version.
+    1. Change the system application dependency to version 20.
+    2. Increase the application version.
 
 2. Delete the BusinessChartType.Enum.al file.
 
-  This file is now part of the System Application in version 20.
+    This file is now part of the System Application in version 20.
 3. In the ReportManagement.Codeunit.al file, add the following code:
  
     ```al
@@ -284,7 +284,7 @@ You'll have to create a new version of the base application using Visual Studio 
         LayoutType := LayoutType::None; // Unknown layout type
         SelectedLayoutName := DesignTimeReportSelection.GetSelectedLayout();
     
-        // Temporarily selected layout for Design-time report execution or for looping in batch report scenarios?
+        // Temporarily selected layout for design-time report execution or for looping in batch report scenarios
         if SelectedLayoutName = '' then
             // look in the app layout selection table for a selected layout for this report id.
             if ReportLayoutSelection.Get(ObjectId, CompanyName) and
@@ -304,7 +304,7 @@ You'll have to create a new version of the base application using Visual Studio 
                         AppLayoutType::Word:
                             LayoutType := LayoutType::Word;
                         else
-                            // Layout Type extensions
+                            // Layout type extensions
                             if (FeatureKey.Get(PlatformRenderingInPlatformTxt) and (FeatureKey.Enabled = FeatureKey.Enabled::"All Users")) then
                                 // Platform rendering - The OnCustomDocumentMerger event will handle the rendering logic
                                 LayoutType := LayoutType::Custom
@@ -313,7 +313,8 @@ You'll have to create a new version of the base application using Visual Studio 
                                 LayoutType := LayoutType::Word;
                     end;
                 end;
-            // A layout code is defined, but not found in application table. The layout type is not known and it's expected that the code refers to a layout in the platform. 
+            // Layout code is defined  but not found in application table.
+            //The layout type is not known, and it's expected that the code refers to a layout in the platform. 
             // Return the layout code to platform for further processing.
             LayoutCode := SelectedLayoutName;
             Success := true;
