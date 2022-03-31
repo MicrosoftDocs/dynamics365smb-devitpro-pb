@@ -20,7 +20,7 @@ Use this scenario if you have one of the following versions that uses the Micros
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
 
 
- ![Upgrade on unmodified Business Central application.](../developer/media/bc20-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+[![Upgrade on unmodified Business Central application.](../developer/media/bc20-upgrade-unmodified-app.png)](../developer/media/bc20-upgrade-unmodified-app.png#lightbox)  
 
 [!INCLUDE[upgrade_single_vs_multitenant](../developer/includes/upgrade_single_vs_multitenant.md)]
 
@@ -251,7 +251,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     For example:
 
     ```powershell
-    Publish-NAVApp -ServerInstance BC190 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
+    Publish-NAVApp -ServerInstance BC200 -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
 
 5. Publish new versions of 3rd-party extensions. Be sure to include new extensions that contain custom permission sets as AL objects.

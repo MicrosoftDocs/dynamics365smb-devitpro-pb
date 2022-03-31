@@ -12,7 +12,7 @@ author: jswymer
 ---
 # Upgrading to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2022 Release Wave 1
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20) is the fifth major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version 20) is the sixth major release that is fully AL-based. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 2 (version 15) marked the release in which C/AL was replaced by AL. The classic development environment, known as C/SIDE, was deprecated. From an application perspective, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is now extension-based only. The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base application is delivered as an AL extension. Also, application functionality that isn't related to the business logic has been moved into separate modules. These modules are combined into an extension known as the System Application. This change will influence how you do the upgrade compared to earlier releases.
 
 ## Upgrade path
 
@@ -29,7 +29,7 @@ Your current version doesn't have to be the latest update for the version. Howev
 
 When upgrading your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) solution to version 20, the goal is to move towards a full uptake of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] base and system applications, as they are, and migrating code customizations to add-on extensions. There are different upgrade levels that you follow to get to this state, as illustrated in the following figure. We recommend that you refactor to the system application as a minimum.
 
-![Upgrade path on Business Central application.](../developer/media/bc20-upgrade-paths-v1.png "Upgrade paths")
+[![Upgrade path on Business Central application.](../developer/media/bc20-upgrade-paths-v1.png)](../developer/media/bc20-upgrade-paths-v1.png#lightbox)
 
 ### Technical Upgrade
 
@@ -39,7 +39,7 @@ When upgrading from version 14, part of the technical upgrade process includes c
 
 ## New and changed features
 
-There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2021 release wave 2](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/).
+There are several new and changed platform and application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1. These changes affect users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central 2022 release wave 1](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/).
 
 To take advantage of these features, you'll have to do an application code upgrade, not just a technical (platform) upgrade. 
 
@@ -47,11 +47,11 @@ To take advantage of these features, you'll have to do an application code upgra
 
 Before you upgrade, review the following articles to get an overview of features deprecated in this release:
 
-- [Deprecated Tables](/dynamics365/business-central/dev-itpro/upgrade/deprecated-tables)
+- [Deprecated Features in W1](deprecated-features-w1.md)
+- [Deprecated Features in the Platform](deprecated-features-platform.md)
+- [Deprecated Tables](deprecated-tables.md)
 
-- [Deprecated Features in W1](/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-w1)
-
-  From this article, use the links in the table of content to view deprecated features specific to local versions
+From these articles, use the links in the table of contents to view more deprecated features, like features specific to local versions.
 
 ## Migrating from on-premises to online
 

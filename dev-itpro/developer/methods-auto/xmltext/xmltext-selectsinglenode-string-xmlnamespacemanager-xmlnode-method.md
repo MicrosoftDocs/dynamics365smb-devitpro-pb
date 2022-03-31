@@ -1,9 +1,9 @@
 ---
-title: "XmlText.SelectSingleNode(String, XmlNamespaceManager, var XmlNode) Method"
+title: "XmlText.SelectSingleNode(Text, XmlNamespaceManager, var XmlNode) Method"
 description: "Selects the first XmlNode that matches the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlText.SelectSingleNode(String, XmlNamespaceManager, var XmlNode) Method
+# XmlText.SelectSingleNode(Text, XmlNamespaceManager, var XmlNode) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Selects the first XmlNode that matches the XPath expression.
@@ -21,7 +21,7 @@ Selects the first XmlNode that matches the XPath expression.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlText.SelectSingleNode(XPath: String, NamespaceManager: XmlNamespaceManager, var Node: XmlNode)
+[Ok := ]  XmlText.SelectSingleNode(XPath: Text, NamespaceManager: XmlNamespaceManager, var Node: XmlNode)
 ```
 ## Parameters
 *XmlText*  
@@ -29,13 +29,15 @@ Selects the first XmlNode that matches the XPath expression.
 An instance of the [XmlText](xmltext-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The XPath expression.
         
+
 *NamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](../xmlnamespacemanager/xmlnamespacemanager-data-type.md)  
 An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.
         
+
 *Node*  
 &emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)  
 The first XmlNode that matches the XPath query.  

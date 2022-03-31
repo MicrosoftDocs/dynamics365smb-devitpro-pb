@@ -18,7 +18,7 @@ Use this process to upgrade any of the following versions to the [!INCLUDE[prod_
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
 
- ![Upgrade on customized Business Central application.](../developer/media/20-technical-upgrade.png "Upgrade on customize Business Central application")
+[![Upgrade on customized Business Central application.](../developer/media/20-technical-upgrade.png)](../developer/media/20-technical-upgrade.png#lightbox)
 
 ## Before you begin
 
@@ -38,14 +38,14 @@ Many of the steps in this article use PowerShell cmdlets, which require that you
 
 ```powershell
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC180"
-$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC190"
+$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC200"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. For a single-tenant deployment, this is the same as $TenantDatabase." 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
 $OldVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 19.1.24582.0"
 $PartnerLicense = "The file path and name of the partner license"
-$AddinsFolder = 'The file path to the Add-ins folder of version 20 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins'
+$AddinsFolder = 'The file path to the Add-ins folder of version 20 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\200\Service\Add-ins'
 $CustomerLicense = "The file path and name of the customer license"
 ```
 

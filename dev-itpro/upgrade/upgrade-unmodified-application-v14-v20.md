@@ -12,9 +12,9 @@ author: jswymer
 ---
 # Upgrading Unmodified C/AL Application to Version 20
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2021 release wave 2 (version 20) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2022 release wave 1 (version 20) application and platform.
 
- ![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-20-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-20-upgrade-unmodified-app.png)](../developer/media/bc14-to-20-upgrade-unmodified-app.png#lightbox)  
 
 ## General information
  
@@ -33,7 +33,7 @@ Many of the steps in this article use PowerShell cmdlets, which require that you
 
 ```powershell
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC140"
-$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC190"
+$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC200"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
@@ -73,7 +73,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 20 server instal
 
 1. Download the latest available update for version 20 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+    For more information about compatible updates and versions, see [Business Central Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
   
     The guidelines in this article assume that you're running the latest available update.
 
@@ -270,7 +270,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 <!--
 1. Publish version 20 system symbols extension.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\200\AL Development Environment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly

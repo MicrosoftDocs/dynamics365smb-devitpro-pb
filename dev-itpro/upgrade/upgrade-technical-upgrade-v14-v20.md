@@ -14,7 +14,7 @@ author: jswymer
 
 Use this process when you have a code customized [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application (version 14) that you want to upgrade to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 platform (version 20). This process won't upgrade the application to the latest version. You'll convert the entire application from C/AL to an AL base application extension.
 
- ![Upgrade on customized Business Central application.](../developer/media/bc14-to-20-technical-upgrade-unmodified-app.png "Upgrade on customize Business Central application")  
+[![Upgrade on customized Business Central application.](../developer/media/bc14-to-20-technical-upgrade-unmodified-app.png)](../developer/media/bc14-to-20-technical-upgrade-unmodified-app.png#lightbox)  
  
 ## General information
  
@@ -57,7 +57,7 @@ Use this process when you have a code customized [!INCLUDE[prod_short](../develo
 
     1. Find the **CodeViewer** folder in the **Add-ins** folder of the version 14 RoleTailored client installation. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\140\RoleTailored Client\Add-ins.
 
-    2. Copy the folder to the **Add-ins** folder of the version 20 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins. Replace the existing folder and files, if any. 
+    2. Copy the folder to the **Add-ins** folder of the version 20 server installation. By default, the folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\200\Service\Add-ins. Replace the existing folder and files, if any. 
 
     CodeViewer is no longer used in version 20. But it's required because of references that exist in the converted application. If you omit this step, you might get compilation errors later.
 

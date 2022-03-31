@@ -3,7 +3,7 @@ title: "FieldRef Data Type"
 description: "Identifies a field in a table and gives you access to this field."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The following methods are available on instances of the FieldRef data type.
 |[Caption()](fieldref-caption-method.md)|Gets the current caption of a field as a String.|
 |[Class()](fieldref-class-method.md)|Gets the value of the FieldClass Property of the field that is currently selected. This method returns an error if no field is selected.|
 |[EnumValueCount()](fieldref-enumvaluecount-method.md)|Gets the number of Enum values (or Option members) from the Enum metadata for the field that is currently selected.|
-|[FieldError([String])](fieldref-fielderror-string-method.md)|Stops the execution of the code, causing a run-time error, and creates an error message for a field.|
+|[FieldError([Text])](fieldref-fielderror-string-method.md)|Stops the execution of the code, causing a run-time error, and creates an error message for a field.|
 |[FieldError(ErrorInfo)](fieldref-fielderror-errorinfo-method.md)|Stops the execution of the code, causing a run-time error, and creates an error message for a field.|
 |[GetEnumValueCaption(Integer)](fieldref-getenumvaluecaption-method.md)|Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected.|
 |[GetEnumValueCaptionFromOrdinalValue(Integer)](fieldref-getenumvaluecaptionfromordinalvalue-method.md)|Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected.|
@@ -48,7 +48,7 @@ The following methods are available on instances of the FieldRef data type.
 |[OptionString()](fieldref-optionstring-method.md)|The 'OptionString' property has been deprecated and will be removed in the future. Use the 'OptionMembers' property instead.|
 |[Record()](fieldref-record-method.md)|Gets the RecordRef of the field that is currently selected. This method returns an error if no field is selected.|
 |[Relation()](fieldref-relation-method.md)|Finds the table relationship of a given field.|
-|[SetFilter(String [, Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
+|[SetFilter(Text [, Any,...])](fieldref-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[SetRange([Any] [, Any])](fieldref-setrange-method.md)|Sets a simple filter on a field, such as a single range or a single value.|
 |[TestField()](fieldref-testfield--method.md)|Tests that the content of the field is not zero or blank (empty string). If it is, an error message is displayed.|
 |[TestField(ErrorInfo)](fieldref-testfield-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
@@ -68,8 +68,8 @@ The following methods are available on instances of the FieldRef data type.
 |[TestField(Decimal, ErrorInfo)](fieldref-testfield-decimal-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid)](fieldref-testfield-guid-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Guid, ErrorInfo)](fieldref-testfield-guid-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
-|[TestField(String)](fieldref-testfield-string-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
-|[TestField(String, ErrorInfo)](fieldref-testfield-string-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Text)](fieldref-testfield-string-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
+|[TestField(Text, ErrorInfo)](fieldref-testfield-string-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Label)](fieldref-testfield-label-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Label, ErrorInfo)](fieldref-testfield-label-errorinfo-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|
 |[TestField(Text)](fieldref-testfield-text-method.md)|Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.|

@@ -14,7 +14,7 @@ author: jswymer
 
 This article describes how to upgrade a customized version 14 application to a version 20 solution that uses the Microsoft system and base applications.
 
- ![Shows the upgrade of an unmodified Business Central application.](../developer/media/bc14-to-20-cal-upgrade-to-base-app.png "Upgrade on unmodified Business Central application version 20") 
+[![Shows the upgrade of an unmodified Business Central v20 application.](../developer/media/bc14-to-20-cal-upgrade-to-base-app.png)](../developer/media/bc14-to-20-cal-upgrade-to-base-app.png#lightbox) 
 
 ## Overview
 
@@ -231,7 +231,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 9. Create an `.alpackages` folder in the root folder of the project and then copy the version 20 system symbols extension (System.app file) to the folder.
 
-    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
+    The System.app file is located where you installed the AL Development Environment. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\200\AL Development Environment. This package contains the symbols for all the system tables and codeunits.
 
 10. Add the AL files for the tables that you converted earlier to the root folder for the project.
 

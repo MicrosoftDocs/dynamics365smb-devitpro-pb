@@ -246,7 +246,6 @@ The following is CSS code for styling the controls, including padding, backgroun
 }
 ```
 
-<!--
 ## See Also  
- [Development](Development.md)
--->
+
+[Control Add-in Best Practices](devenv-control-addin-bestpractices.md)

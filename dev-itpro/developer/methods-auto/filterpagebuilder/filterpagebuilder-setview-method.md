@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.SetView(String, String) Method"
+title: "FilterPageBuilder.SetView(Text, Text) Method"
 description: "Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.SetView(String, String) Method
+# FilterPageBuilder.SetView(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page. The view contains all fields that have default filters, but does not contain fields without filters.
@@ -21,7 +21,7 @@ Sets the current filter view, which defines the sort order, key, and filters, fo
 
 ## Syntax
 ```AL
-[Ok := ]  FilterPageBuilder.SetView(Name: String, View: String)
+[Ok := ]  FilterPageBuilder.SetView(Name: Text, View: Text)
 ```
 ## Parameters
 *FilterPageBuilder*  
@@ -29,11 +29,12 @@ Sets the current filter view, which defines the sort order, key, and filters, fo
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name that is assigned to the filter control. This value must match the value of the ItemName parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
         
+
 *View*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The filter view to apply. This can be the output of the GetView method invoked on a Record or a RecordRef value.  
 
 

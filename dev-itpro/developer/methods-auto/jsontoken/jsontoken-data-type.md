@@ -3,7 +3,7 @@ title: "JsonToken Data Type"
 description: "Is a container for any well-formed JSON data."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,9 +32,9 @@ The following methods are available on instances of the JsonToken data type.
 |[IsObject()](jsontoken-isobject-method.md)|Indicates whether a JsonToken contains a JSON object.|
 |[IsValue()](jsontoken-isvalue-method.md)|Indicates whether a JsonToken contains a JSON value.|
 |[Path()](jsontoken-path-method.md)|Retrieves the JSON path of the token relative to the root of its containing tree.|
-|[ReadFrom(String)](jsontoken-readfrom-string-method.md)|Reads the JSON data from the string into a JsonToken variable.|
+|[ReadFrom(Text)](jsontoken-readfrom-string-method.md)|Reads the JSON data from the string into a JsonToken variable.|
 |[ReadFrom(InStream)](jsontoken-readfrom-instream-method.md)|Reads the JSON data from the stream into a JsonToken variable.|
-|[SelectToken(String, var JsonToken)](jsontoken-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
+|[SelectToken(Text, var JsonToken)](jsontoken-selecttoken-method.md)|Selects a JsonToken using a JPath expression.|
 |[WriteTo(var Text)](jsontoken-writeto-text-method.md)|Serializes and writes the JSON data of the JsonToken to a given Text object.|
 |[WriteTo(OutStream)](jsontoken-writeto-outstream-method.md)|Serializes and writes the JSON data of the JsonToken to a given OutStream object.|
 
