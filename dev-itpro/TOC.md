@@ -1418,6 +1418,7 @@
 #### [HandlerFunctions Attribute](developer/attributes/devenv-handlerfunctions-attribute.md)
 #### [HyperlinkHandler Attribute](developer/attributes/devenv-hyperlinkhandler-attribute.md)
 #### [InDataSet Attribute](developer/attributes/devenv-indataset-attribute.md)
+#### [InherentPermissions Attribute](developer/attributes/devenv-inherentpermissions-attribute.md)
 #### [IntegrationEvent Attribute](developer/attributes/devenv-integrationevent-attribute.md)
 #### [InternalEvent Attribute](developer/attributes/devenv-internalevent-attribute.md)
 #### [MessageHandler Attribute](developer/attributes/devenv-messagehandler-attribute.md)
