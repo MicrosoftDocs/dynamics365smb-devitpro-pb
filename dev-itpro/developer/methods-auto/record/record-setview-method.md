@@ -1,9 +1,9 @@
 ---
-title: "Record.SetView(String) Method"
+title: "Record.SetView(Text) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Record.SetView(String) Method
+# Record.SetView(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the current sort order, key, and filters on a table.
@@ -21,7 +21,7 @@ Sets the current sort order, key, and filters on a table.
 
 ## Syntax
 ```AL
- Record.SetView(String: String)
+ Record.SetView(String: Text)
 ```
 ## Parameters
 *Record*  
@@ -29,7 +29,7 @@ Sets the current sort order, key, and filters on a table.
 An instance of the [Record](record-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView Property on pages.
           
 

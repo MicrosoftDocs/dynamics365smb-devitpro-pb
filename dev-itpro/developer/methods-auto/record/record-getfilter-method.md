@@ -3,7 +3,7 @@ title: "Record.GetFilter(Any) Method"
 description: "Gets a list of the filters within the current filter group that are applied to a field."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ The input field.
 
 ## Return Value
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 

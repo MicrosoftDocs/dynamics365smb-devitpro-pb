@@ -1,9 +1,9 @@
 ---
-title: "Report.SaveAs(String, ReportFormat, var OutStream [, RecordRef]) Method"
+title: "Report.SaveAs(Text, ReportFormat, var OutStream [, RecordRef]) Method"
 description: "Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAs(String, ReportFormat, var OutStream [, RecordRef]) Method
+# Report.SaveAs(Text, ReportFormat, var OutStream [, RecordRef]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Runs a specific report without a request page and saves the report as a PDF, Excel, Word, or XML file. Instead of using the request page to obtain parameters at runtime, the method gets the parameter values as an input parameter string, typically from the return value of a RUNREQUESTPAGE method call.
@@ -21,7 +21,7 @@ Runs a specific report without a request page and saves the report as a PDF, Exc
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAs(Parameters: String, Format: ReportFormat, var OutStream: OutStream [, RecordRef: RecordRef])
+[Ok := ]  Report.SaveAs(Parameters: Text, Format: ReportFormat, var OutStream: OutStream [, RecordRef: RecordRef])
 ```
 ## Parameters
 *Report*  
@@ -29,17 +29,20 @@ Runs a specific report without a request page and saves the report as a PDF, Exc
 An instance of the [Report](report-data-type.md) data type.  
 
 *Parameters*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string of request page parameters as XML to use to run the report. The parameter string is retrieved from the return value a RUNREQUESTPAGE method call.
           
+
 *Format*  
 &emsp;Type: [ReportFormat](../reportformat/reportformat-option.md)  
 The type of file to save the report as. The following options are supported: Pdf, Excel, Word, and XML.
           
+
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
 The stream to which to write a report.
           
+
 *[Optional] RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  
 The RecordRef that refers to the table in which you want to find a record.

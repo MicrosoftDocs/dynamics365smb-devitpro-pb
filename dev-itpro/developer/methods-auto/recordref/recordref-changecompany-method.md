@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.ChangeCompany([String]) Method"
+title: "RecordRef.ChangeCompany([Text]) Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.ChangeCompany([String]) Method
+# RecordRef.ChangeCompany([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Redirects references to table data from one company to another.
@@ -21,7 +21,7 @@ Redirects references to table data from one company to another.
 
 ## Syntax
 ```AL
-[Ok := ]  RecordRef.ChangeCompany([CompanyName: String])
+[Ok := ]  RecordRef.ChangeCompany([CompanyName: Text])
 ```
 ## Parameters
 *RecordRef*  
@@ -29,7 +29,7 @@ Redirects references to table data from one company to another.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *[Optional] CompanyName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the company to which you want to change. If you omit this parameter, you change back to the current company.  
 
 

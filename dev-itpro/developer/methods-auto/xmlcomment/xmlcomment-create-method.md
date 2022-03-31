@@ -1,9 +1,9 @@
 ---
-title: "XmlComment.Create(String) Method"
+title: "XmlComment.Create(Text) Method"
 description: "Creates an XmlComment node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlComment.Create(String) Method
+# XmlComment.Create(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlComment node.
@@ -21,11 +21,11 @@ Creates an XmlComment node.
 
 ## Syntax
 ```AL
-Comment :=   XmlComment.Create(Value: String)
+Comment :=   XmlComment.Create(Value: Text)
 ```
 ## Parameters
 *Value*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string that contains the contents of the new XmlComment node.  
 
 

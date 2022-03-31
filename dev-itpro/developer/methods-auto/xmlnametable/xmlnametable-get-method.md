@@ -1,9 +1,9 @@
 ---
-title: "XmlNameTable.Get(String, var Text) Method"
+title: "XmlNameTable.Get(Text, var Text) Method"
 description: "Gets the atomized string with the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlNameTable.Get(String, var Text) Method
+# XmlNameTable.Get(Text, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the atomized string with the specified value.
@@ -21,7 +21,7 @@ Gets the atomized string with the specified value.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlNameTable.Get(Key: String, var Result: Text)
+[Ok := ]  XmlNameTable.Get(Key: Text, var Result: Text)
 ```
 ## Parameters
 *XmlNameTable*  
@@ -29,9 +29,10 @@ Gets the atomized string with the specified value.
 An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The string to find.
         
+
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The atomized string object if the string has been atomized.  

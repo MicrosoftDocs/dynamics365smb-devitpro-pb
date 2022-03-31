@@ -73,7 +73,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 19 server instal
 
 1. Download the latest available update for version 19 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
   
     The guidelines in this article assume that you're running the latest available update.
 
