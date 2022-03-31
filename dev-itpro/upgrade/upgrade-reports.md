@@ -404,7 +404,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
         end;
         ```
 
-    5. In add, the following `procedure`:
+    5. In the ReportLayoutSelection.Table.al file, add the following `procedure`:
 
         ```al
         procedure SelectedBuiltinLayoutType(ReportID: Integer): Integer
