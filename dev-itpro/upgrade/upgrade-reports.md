@@ -222,7 +222,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 
 #### Guidelines
 
-You'll have to create a new version of the base application using Visual Studio Code. In general, follow the guidelines at [developer/devenv-publish-code-customization](developer/devenv-publish-code-customization.md),but make the following modifications for this scenario:
+You'll have to create a new version of the base application using Visual Studio Code. In general, follow the guidelines at [Publishing Code-Customized Base Application](../developer/devenv-publish-code-customization.md), but make the following modifications for this scenario:
 
 1. Modify the app.json file to include the following changes:
 
