@@ -63,19 +63,19 @@ $CustomerLicense = "The file path and name of the customer license"
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-<!--
-4. Copy Dynamics Online Connect add-in (upgrade from version 16 or earlier).
-
-    The Dynamics Online Connect add-in was deprecated in version 17. As a result, it's been removed from the DVD and is no longer installed as part of the [!INCLUDE[server](../developer/includes/server.md)]. However, for upgrade, the add-in may still be required for the old System Application. If the [!INCLUDE[server](../developer/includes/server.md)] installation for your current version includes the **Add-ins\Connect** folder, then copy the **Connect** folder to the **Add-ins** folder of the version 20 server installation.
--->
-
 ## Task 2: Upgrade permission sets
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md).
 
-## <a name="Preparedb"></a> Task 3: Prepare databases
+## Task 3: Update base application to support custom Word report layouts
+
+Version 20 introduces platform-rendering of reports. If you're solution includes custom Word report layouts, you may have to modify the base application so that the layouts run correctly after upgrade. Whether you need to complete this task will depend on the customizations.
+
+For more information, see [Upgrading Reports](upgrade-reports.md).
+
+## <a name="Preparedb"></a> Task 4: Prepare databases
 
 In this task, you prepare the application and tenant databases for the upgrade.
 
@@ -123,7 +123,7 @@ In this task, you prepare the application and tenant databases for the upgrade.
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
-## Task 4: Convert application database to version 20
+## Task 5: Convert application database to version 20
 
 This task runs a technical upgrade on the application database. A technical upgrade converts the current database to the version 20.0 platform. This conversion updates the system tables of the database to the new schema (data structure). It also provides the latest platform features and performance enhancements.
 
@@ -152,7 +152,7 @@ This task runs a technical upgrade on the application database. A technical upgr
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 5: Configure version 20 server
+## Task 6: Configure version 20 server
 
 When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for the upgrade and can be reverted after you complete the upgrade.
 
@@ -183,7 +183,7 @@ When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## <a name="UploadLicense"></a> Task 6: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
+## <a name="UploadLicense"></a> Task 7: Import [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license  
 
 If you've gotten a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database. To upload the license, use the [Import-NAVServerLicense cmdlet](/powershell/module/microsoft.dynamics.nav.management/import-navserverlicense):
 
@@ -193,17 +193,7 @@ Import-NAVServerLicense -ServerInstance $NewBcServerInstance -LicenseFile $Partn
 
 For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
-<!--
-## Task 7: Publish new system symbols
-
-Use the Publish-NAVApp cmdlet to publish the new symbols extension package. This package is called **System.app**. If you've installed the **AL Development Environment**, you find the file in the installation folder. By default, the folder path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\180\AL Development Environment.
-
-```powershell
-Publish-NAVApp -ServerInstance <BC18 server instance> -Path "<path to the System.app file>" -PackageType SymbolsOnly
-```
--->
-
-## Task 7: Recompile published extensions
+## Task 8: Recompile published extensions
 
 Compile all published extensions against the new platform.
 
@@ -233,7 +223,7 @@ Compile all published extensions against the new platform.
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## Task 8: Synchronize tenant
+## Task 9: Synchronize tenant
 
 1. (Multitenant only) Mount the tenant to the new Business Central Server instance.
 
@@ -260,35 +250,7 @@ Compile all published extensions against the new platform.
 
     For a single-tenant deployment, you can either set the `$TenantId` to `default` or omit the `-Tenant $TenantId` parameter. For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-<!--
-
-3. If you published new extension versions, like for system application and base application, synchronize the new versions with the tenant. Synchronize the extensions in order of dependency, for example:
-
-    ```powershell  
-    Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "System Application" -Version "<version>" -Tenant $TenantId
-    ```
-
-    ```powershell  
-    Sync-NAVApp -ServerInstance $NewBcServerInstance -Name "Base Application" -Version "<version>" -Tenant $TenantId
-    ```
-
-
-## Task 9: Upgrade new extension versions
-
-In this task, you upgrade the tenant to any new extension versions that you created during **Task 7** to fix compilation errors, like for the system application and base application. Use the [Start-NAVAppDataUgrade cmdlet](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade), for example:
-
-```powershell  
-Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "System Application"-Version "<version>" -Tenant $TenantId
-```
-
-```powershell  
-Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Application"-Version "<version>" -Tenant $TenantId 
-```
-
-This step will install the new versions on the tenant.
-
--->
-## Task 9: Reinstall extensions (single-tenant only)
+## Task 10: Reinstall extensions (single-tenant only)
 
 In this task, you reinstall the same extensions that were installed on the tenant before, unless you've published new versions.
 
@@ -323,11 +285,11 @@ At line:1 char:1
     + FullyQualifiedErrorId : System.ServiceModel.CommunicationException,Microsoft.Dynamics.Nav.Apps.Management.Cmdlets.InstallNavApp
 -->
 
-## Task 10: <a name="JSaddins"></a>Upgrade control add-ins
+## Task 11: <a name="JSaddins"></a>Upgrade control add-ins
 
 [!INCLUDE[upgrade-control-addins](../developer/includes/upgrade-control-addins.md)]
 
-## Task 11: Install upgraded permissions sets
+## Task 12: Install upgraded permissions sets
 
 In this task, you install the custom permission sets that you upgraded earlier in this procedure. The steps depend on whether you've decided to use permission sets as AL objects or as data.
 
@@ -351,6 +313,46 @@ In this task, you install the custom permission sets that you upgraded earlier i
 5. Select **Import Permission Sets**, and follow the instructions to import the XML file.
 
 For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
+
+## Task 13: Upgrade system and base applications for reports
+
+Complete this task only if you created a new version of the base application in Task 3 to support custom Word report layouts. In this task, you'll upgrade the system application to version 20. You find the version 20  and the base application to the version you created in Task 3.
+
+1. Use [Publish-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp)Publish the new version the system application extension, followed by the base application. 
+ 
+    You find the system application extension (Microsoft_System Application.app) in the **Applications\System Application\Source** folder of installation media (DVD).
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $NewBcServerInstance -Path <system application path>
+    ```
+
+    ```powershell
+    Publish-NAVApp -ServerInstance $NewBcServerInstance -Path <base application path>
+    ```
+
+2. Use [Sync-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) to synchronize the system application extension, followed by the base application.
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "System Application" -Version $NewBCVersion
+    ```
+
+    ```powershell
+    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Base Application" -Version <version>
+    ```
+
+   Replace `<version>` with the exact version of the published Base Application.
+
+3. Use the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade) to run the data upgrade for the System Application, followed by the Base Application.
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "System Application" -Version $NewBCVersion
+    ```
+
+    ```powershell
+    Start-NAVAppDataUpgrade -ServerInstance $NewBcServerInstance -Name "Base Application" -Version <version>
+    ```
+
+    This step will automatically install the new system application and base application versions on the tenant.
 
 ## Post-upgrade tasks
 
