@@ -1,8 +1,8 @@
 ---
-title: "Upgrading Unmodified C/AL Application to Version 19"
-description: Describes how to upgrade an unmodified Business Central 14 application to version 19
+title: "Upgrading Unmodified C/AL Application to Version 20"
+description: Describes how to upgrade an unmodified Business Central 14 application to version 20
 ms.custom: na
-ms.date: 07/29/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Upgrading Unmodified C/AL Application to Version 19
+# Upgrading Unmodified C/AL Application to Version 20
 
-Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2021 release wave 2 (version 19) application and platform.
+Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Spring 2019 (version 14) application or earlier that doesn't include any code customization. Your solution might include Microsoft (first party) extensions and customization extensions (3rd-party). With this upgrade, you'll replace the C/AL base application with the new Microsoft System and Base Application extensions. The result will be a fully upgraded Business Central 2022 release wave 1 (version 20) application and platform.
 
- ![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-19-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
+ [![Upgrade on unmodified Business Central application.](../developer/media/bc14-to-20-upgrade-unmodified-app.png)](../developer/media/bc14-to-20-upgrade-unmodified-app.png#lightbox)  
 
 ## General information
  
@@ -33,18 +33,18 @@ Many of the steps in this article use PowerShell cmdlets, which require that you
 
 ```powershell
 $OldBcServerInstance = "The name of the Business Central server instance for your previous version, for example: BC140"
-$NewBcServerInstance = "The name of the Business Central server instance for version 19, for example: BC190"
+$NewBcServerInstance = "The name of the Business Central server instance for version 20, for example: BC200"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
 $TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB. In a single-tenant deployment, this is the same as the $TenantDatabase" 
 $DatabaseServer = "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
-$SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\\Microsoft_System Application.app"
+$SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\Microsoft_System Application.app"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBcVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 19.1.24582.0"
+$NewBcVersion = "The version number for the current System, Base, and Application extensions that you'll reinstall, for example: 20.24582.0"
 $PartnerLicense = "The file path and name of the partner license"
 $CustomerLicense = "The file path and name of the customer license"
-$AddinsFolder = "The file path to the Add-ins folder of version 19 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins."
+$AddinsFolder = "The file path to the Add-ins folder of version 20 server installation, for example, C:\Program Files\Microsoft Dynamics 365 Business Central\200\Service\Add-ins."
 
 ```
 
@@ -52,8 +52,8 @@ $AddinsFolder = "The file path to the Add-ins folder of version 19 server instal
 
 - Upgrade to Business Central Spring 2019 (version 14).
 
-   - If your solution is already on version 14, then no action on this step is required.
-   - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 19. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
+  - If your solution is already on version 14, then no action on this step is required.
+  - If you're upgrading from Business Central Fall 2018 (version 13) or Dynamics NAV, we recommend you upgrade to the latest update for version 14 that has a compatible update for version 20. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
    To download the latest update, go to [Released Cumulative Updates for Microsoft Dynamics 365 Business Central Spring 2019 Update on-premises](https://support.microsoft.com/help/4501292).
 
@@ -69,19 +69,19 @@ $AddinsFolder = "The file path to the Add-ins folder of version 19 server instal
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 -->
 
-## Task 1: Install version 19
+## Task 1: Install version 20
 
-1. Download the latest available update for version 19 that is compatible with your version 14.
+1. Download the latest available update for version 20 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
+    For more information about compatible updates and versions, see [Business Central Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
   
     The guidelines in this article assume that you're running the latest available update.
 
-2. Before you install version 19, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 19 tools.
+2. Before you install version 20, it can be useful to create desktop shortcuts to the version 14.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 20 tools.
 
-3. Install Business Central version 19 components.
+3. Install Business Central version 20 components.
 
-    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 19, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll have to keep version 14 installed to complete some steps in the upgrade process. When you install version 20, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 14.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
@@ -173,12 +173,12 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Stop-NAVServerInstance -ServerInstance $OldBcServerInstance
     ```
 
-## Task 4: Convert the application database to version 19
+## Task 4: Convert the application database to version 20
 
-This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 19 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 20 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
 
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
-2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 19 as an administrator.
+2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 20 as an administrator.
 3. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:
 
     ```powershell
@@ -197,9 +197,9 @@ This task runs a technical upgrade on the application database to convert it fro
 
 [!INCLUDE[convert_azure_sql_db_timeout](../developer/includes/convert_azure_sql_db_timeout.md)]
 
-## Task 5: Configure version 19 server for DestinationAppsForMigration
+## Task 5: Configure version 20 server for DestinationAppsForMigration
 
-When you installed version 19 in **Task 1**, a version 19 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 19.0 upgrade and can be reverted after you complete the upgrade.
+When you installed version 20 in **Task 1**, a version 20 [!INCLUDE[server](../developer/includes/server.md)] instance was created. In this task, you change server configuration settings that are required to complete the upgrade. Some of the changes are only required for version 14 to version 20.0 upgrade and can be reverted after you complete the upgrade.
 
 1. Set the server instance to connect to the application database.
 
@@ -218,7 +218,7 @@ When you installed version 19 in **Task 1**, a version 19 [!INCLUDE[server](../d
     This setting serves the following purposes:
 
     - When you run the data upgrade on a tenant, the server will run the data upgrade for the base and system application extensions. The base and system applications will be automatically installed on the tenant also.
-    - Lets you republish extensions that haven't been built on version 19. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
+    - Lets you republish extensions that haven't been built on version 20. The extensions typically include the third-party extensions that were used in your version 14. When you publish the extensions, the extension manifests are automatically modified with a dependency on the base and system applications.
 
     For more information about this setting, see [DestinationAppsForMigration](upgrade-destinationappsformigration.md).
 
@@ -241,7 +241,7 @@ When you installed version 19 in **Task 1**, a version 19 [!INCLUDE[server](../d
     Restart-NAVServerInstance -ServerInstance $NewBcServerInstance
     ```
 
-## <a name="UploadLicense"></a>Task 6: Import version 19 license
+## <a name="UploadLicense"></a>Task 6: Import version 20 license
 
 If you've gotten a new [!INCLUDE[prod_short](../developer/includes/prod_short.md)] partner license, make sure that it has been uploaded to the database.
 
@@ -268,9 +268,9 @@ Publishing an extension adds the extension to the application database that is m
 The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 that you started in the previous task.
 
 <!--
-1. Publish version 19 system symbols extension.
+1. Publish version 20 system symbols extension.
 
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\AL Development Environment.  
+    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\200\AL Development Environment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly
@@ -316,6 +316,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "C:\W1DVD\Applications\SalesAndInventoryForecast\Source\SalesAndInventoryForecast.app"
     ```
+
    >[!NOTE]
    >
    > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must publish the following extensions to get the local functionality. The below extensions available in the DVD under the **Application** folder in DVD.
@@ -335,7 +336,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 5. Publish 3rd-party extensions.
 
-    Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 19, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
+    Publish 3rd-party extensions that were used on your version 14 solution. If you have new versions of these extensions, built on the Business Central version 20, then publish the new versions. Otherwise, republish the same versions that were previously published in the old deployment.  
 
     ```powershell
     Publish-NAVApp -ServerInstance $NewBcServerInstance -Path "<path to extension>"
@@ -357,7 +358,7 @@ In this task, you'll synchronize the tenant's database schema with any schema ch
 
 If you have a multitenant deployment, do these steps for each tenant.
 
-1. (Multitenant only) Mount the tenant to the version 19 server instance.
+1. (Multitenant only) Mount the tenant to the version 20 server instance.
 
     To mount the tenant, use the [Mount-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant) cmdlet:
 
@@ -410,7 +411,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     For each extension, run the Sync-NAVApp cmdlet:
 
     ```powershell
-    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewBcVersion
+    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewVersion
     ```
 
   >[!NOTE]
@@ -461,7 +462,7 @@ If you have a multitenant deployment, do these steps for each tenant.
         You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
 
         ```powershell
-        Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBcVersion
+        Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewVersion
         ```
     > [!NOTE]
     >
