@@ -60,7 +60,7 @@ The following table provides an overview of some of the shortcut key combination
 |-----------------|-------|
 |**Ctrl+Shift+B**|Compile and build the solution|
 |**Ctrl+F5**|Build and deploy|
-|**Shift+Alt+W**| Publish full dependency tree for active project|
+|**Shift+Alt+W**| Publish full dependency tree for the active project|
 
 ## Debugging in Visual Studio Code
 
