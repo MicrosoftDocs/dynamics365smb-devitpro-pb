@@ -219,9 +219,9 @@ The following table explains the general dimensions of this trace.
 
 ## Task completed
 
-Occurs when the execution of a task's main codeunit or failure codeunit succeeds with no errors. 
+Occurs when the execution of a task's main codeunit or failure codeunit succeeds with no errors.
 
-Note that there is no event emitted for task started. You can infer the timestamp for the task start by subtracting the totalTime from the task completed timestamp. 
+Note that there is no event emitted for task started. You can infer the task-start time by subtracting the totalTime from the task completed timestamp.
 
 ### General dimensions
 
