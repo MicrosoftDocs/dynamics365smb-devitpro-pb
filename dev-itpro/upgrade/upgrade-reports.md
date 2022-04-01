@@ -235,7 +235,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
     1. Modify the app.json file to include the following changes:
 
         1. Change the system application dependency to version 20.
-        2. Increase the application version.
+        2. Increase the application version. The version number has the format `major.minor.build.revision`. You only have increase the `revision` number.
 
     2. Delete the BusinessChartType.Enum.al file.
 
