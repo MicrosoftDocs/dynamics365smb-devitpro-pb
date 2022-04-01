@@ -2,7 +2,7 @@
 title: Business Central compatibility matrix
 description: Provides an overview of the Business Central versions and their compatibility
 ms.custom: na
-ms.date: 02/08/2022
+ms.date: 04/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
