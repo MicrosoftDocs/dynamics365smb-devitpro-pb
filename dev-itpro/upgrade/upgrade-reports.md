@@ -433,7 +433,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
 
 2. Run the technical upgrade
 
-    Follow the instructions for a technical upgrade at [Technical Upgrade to Version 20](upgrade-technical-upgrade-v20.md#Preparedb). One the last tasks involves upgrading to the new system application and base application versions.
+    Follow the instructions for a technical upgrade at [Technical Upgrade to Version 20](upgrade-technical-upgrade-v20.md#Preparedb). One of the tasks involves upgrading to the new system application and base application versions.
 
 ## <a name="continue"></a>Continue using application rendering of Word report layouts
 
