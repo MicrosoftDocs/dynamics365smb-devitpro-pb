@@ -374,6 +374,7 @@ Run the data upgrade on extensions in order of dependency.
 #### Multitenant
 
 On each tenant, run the [Start-NavDataUpgrade](/powershell/module/microsoft.dynamics.nav.management/start-navdataupgrade) cmdlet as follows:
+
     
 ```powershell
 Start-NAVDataUpgrade -ServerInstance $NewBcServerInstance -Tenant $TenantId -FunctionExecutionMode Serial -SkipAppVersionCheck
