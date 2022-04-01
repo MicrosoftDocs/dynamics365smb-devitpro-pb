@@ -2,7 +2,7 @@
 title: Business Central compatibility matrix
 description: Provides an overview of the Business Central versions and their compatibility
 ms.custom: na
-ms.date: 02/08/2022
+ms.date: 04/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ You can upgrade from one major version of [!INCLUDE [prod_short](../includes/pro
 For an overview of the supported paths, see [Supported Upgrade Paths](upgrade-paths.md). For an overview of compatibility across minor versions, see the relevant sections in this article.  
 
 > [!TIP]
-> Some versions are marked with <a name="#1"><sup>1</sup></a>, which means that the compatible upgrade versions for that version aren't available yet. If you are currently operating on this version, you'll have to wait until the next round of updates before you upgrade.
+> Some versions are marked with <a name="1"><sup>#1</sup></a>, which means that the compatible upgrade versions for that version aren't available yet. If you are currently operating on this version, you'll have to wait until the next round of updates before you upgrade.
 
 ## Before choosing the target version
 
@@ -31,7 +31,7 @@ The following table lists the Business Central 18 versions and the 19 versions t
 |Version 19|Version 20|
 |----------|----------|
 |19.0 to 19.5|20.0|
-|19.6<sup>[\[1\]](#1)</sup>|20.1|
+|[19.6](https://support.microsoft.com/help/5013422)<sup>[\[1\]](#1)</sup>|20.1|
 
 To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
 
@@ -48,8 +48,8 @@ The following table lists the Business Central 18 versions and the 19 versions t
 |[18.8](https://support.microsoft.com/help/5009179)|[19.3](https://support.microsoft.com/help/5010207)|20.0|
 |[18.9](https://support.microsoft.com/help/5010206)|[19.4](https://support.microsoft.com/help/5011306)|20.0|
 |[18.10](https://support.microsoft.com/help/5011305)|[19.5](https://support.microsoft.com/help/5012307)|20.0|
-|[18.11](https://support.microsoft.com/help/5012306)<sup>[\[1\]](#1)</sup>|19.6|20.0|
-|18.12<sup>[\[1\]](#1)</sup>|19.7|20.1|
+|[18.11](https://support.microsoft.com/help/5012306)|[19.6](https://support.microsoft.com/help/5013422)|20.0|
+|[18.12](https://support.microsoft.com/help/5013421)<sup>[\[1\]](#1)</sup>|19.7|20.1|
 
 To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 1 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6).
 
@@ -70,10 +70,12 @@ The following table lists the Business Central 17 versions, and the 18 and 19 ve
 |[17.13](https://support.microsoft.com/help/5009177)|[18.9](https://support.microsoft.com/help/5010206)|[19.3](https://support.microsoft.com/help/5010207)|20.0|
 |[17.14](https://support.microsoft.com/help/5010205)|[18.10](https://support.microsoft.com/help/5011305)|[19.4](https://support.microsoft.com/help/5011306)|20.0|
 |[17.15](https://support.microsoft.com/help/5011304)|[18.11](https://support.microsoft.com/help/5012306)|[19.5](https://support.microsoft.com/help/5012307)|20.0|
-|[17.16](https://support.microsoft.com/help/5012305)<sup>[\[1\]](#1)</sup>|18.12|19.6|20.0|
-|17.17<sup>[\[1\]](#1)</sup>|18.13|19.7|20.1|
+|[17.16](https://support.microsoft.com/help/5012305)|[18.12](https://support.microsoft.com/help/5013421)|[19.6](https://support.microsoft.com/help/5013422)|20.0|
+|[17.7](https://support.microsoft.com/help/5013420)<sup>[\[1\]](#1)</sup>|18.13|19.7|20.1|
 
 To see the available updates for Business Central 2020 Release Wave 2, see [Released updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2](https://support.microsoft.com/en-us/help/4583507).
+
+[!INCLUDE [upgrade-17](../includes/upgrade-17.md)]
 
 ## Version 16 compatibility
 
@@ -166,8 +168,8 @@ The following table lists the Business Central 14 versions and the 15, 16, 17, 1
 |[14.31 (cumulative update 30)](https://support.microsoft.com/help/5009176)|None|None|[17.14](https://support.microsoft.com/help/5010205)|[18.9](https://support.microsoft.com/help/5010206)|[19.3](https://support.microsoft.com/help/5010207)|20.0|
 |[14.32 (cumulative update 31)](https://support.microsoft.com/help/5010204)|None|None|[17.15](https://support.microsoft.com/help/5011304)|[18.10](https://support.microsoft.com/help/5011305)|[19.4](https://support.microsoft.com/help/5011306)|20.0|
 |[14.33 (cumulative update 32)](https://support.microsoft.com/help/5011303)|None|None|[17.16](https://support.microsoft.com/help/5012305)|[18.11](https://support.microsoft.com/help/5012306)|[19.5](https://support.microsoft.com/help/5012307)|20.0|
-|[14.34 (cumulative update 33)](https://support.microsoft.com/help/5012304)<sup>[\[1\]](#1)</sup>|None|None|17.17|18.12|19.6|20.0|
-|14.35 (cumulative update 34)<sup>[\[1\]](#1)</sup>|None|None|17.18|18.13|19.7|20.1|
+|[14.34 (cumulative update 33)](https://support.microsoft.com/help/5012304)|None|None|[17.7](https://support.microsoft.com/help/5013420)|[18.12](https://support.microsoft.com/help/5013421)|[19.6](https://support.microsoft.com/help/5013422)|20.0|
+|[14.35 (cumulative update 34)](https://support.microsoft.com/help/5013418)<sup>[\[1\]](#1)</sup>|None|None|17.18|18.13|19.7|20.1|
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).  
 
