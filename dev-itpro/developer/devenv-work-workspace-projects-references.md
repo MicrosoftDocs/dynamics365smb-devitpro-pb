@@ -100,10 +100,10 @@ To control how dependency publishing is performed on the server, the `launch.jso
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
-To remove unnecessary manual work, use the **AL: Publish full dependency tree for active project** command which will traverse a project dependency graph in the workspace and install any required projects if these are not already deployed to the NST server. Find the command by using **Ctrl+Shift+P** or by using the keyboard shortcut **Shift+Alt+W**.
+To remove unnecessary manual work, use the **AL: Publish full dependency tree for active project** command which will traverse a project dependency graph in the workspace and install any required projects if these are not already deployed to the NST server. Find the command by using **Ctrl+Shift+P** or by using the keyboard shortcut **Shift+Alt+W**. This will calculate the correct order in which to compile and publish the dependencies of the current project and publish them using the `launch.json` option selected from the current active project.
 
 > [!NOTE]  
-> This will only traverse project and app references covered by the workspace. If the deployed AL project has dependencies to apps that are not included in the workspace, these will still have to be present or manually deployed in advance.
+> Only project and app references covered by the workspace will be traversed. If the deployed AL project has dependencies to apps that are not included in the workspace, these will still have to be present or manually deployed in advance.
 
 ## Incremental Build setting
 
