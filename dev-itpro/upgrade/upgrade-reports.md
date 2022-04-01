@@ -152,7 +152,7 @@ Basically, the following areas can be impacted:
 
 Use the following information to determine what you need to do for your upgrade scenario:
 
-- If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use the new events. See [Upgrade of document reports with Word layouts](#appupgrade).
+- If you're doing a full upgrade (application and platform), you may have to rewrite custom code to use the new events. See [Upgrade of reports with custom layouts](#appupgrade).
 
   > [!NOTE]
   > You have the option to continue to use the application rendering on all or specific reports that depend on Word layouts. In this case, you won't have to make any code changes at this time. For more information, see [Continue using application rendering of Word reports](#continue).
@@ -161,7 +161,7 @@ Use the following information to determine what you need to do for your upgrade 
 
 The report rendering changes don't affect the upgrade process for RDLC report layouts or built-in Word reports layouts. So if your current Business Central solution doesn't have any custom Word Layouts, then no additional action is required for report upgrade. If it does, read the sections that follow to what you need to do, if anything.
 
-## <a name="appupgrade"></a>Upgrade reports with custom layouts 
+## <a name="appupgrade"></a>Upgrade of reports with custom layouts
 
 The new platform supports the native rendering of Microsoft Word reports. With this new rendering, the following report events in AL are no longer used:
 
