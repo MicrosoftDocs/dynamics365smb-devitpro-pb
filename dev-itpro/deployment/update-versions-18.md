@@ -5,7 +5,7 @@ author: jswymer
 ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 03/04/2022
+ms.date: 04/01/2022
 ---
 
 # Dynamics 365 Business Central On-Premises 2021 Release Wave 1 Updates
@@ -26,6 +26,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5013421](https://support.microsoft.com/help/5013421)|Update 18.12 |April 2022|Application 18.12.38101</br>Platform Build 18.0.38061|
 |[5012306](https://support.microsoft.com/help/5012306)|Update 18.11 |March 2022|Application 18.11.36643</br>Platform Build 18.0.35553|
 |[5011305](https://support.microsoft.com/help/5011305)|Update 18.10 |February 2022|Application 18.10.35462</br>Platform Build 18.0.35424|
 |[5010206](https://support.microsoft.com/help/5010206)|Update 18.9 |January 2022|Application 18.9.34631</br>Platform Build 18.0.34599|
