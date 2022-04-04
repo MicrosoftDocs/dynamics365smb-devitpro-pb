@@ -27,6 +27,9 @@ The default layout can be specified with the [DefaultRenderingLayout Property](p
 
 If the extension is translated, the `Caption` and `Summary` properties are included in the .xliff file and translated as well. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).
 
+> [!TIP]  
+> Reports using the previous property-based layout specification can be converted to use the `rendering` section by using a code action. To use this, ensure code that actions are switched on in your AL extension settings and place the cursor on any of the old layout properties to use the action. Layouts of type RDLC, Word, Excel, and Custom can be specified with the new rendering syntax. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
 ## Layout definition in AL
 
 The following example illustrates how the `EmpReportExt` report extends the `"Employee - List"` list by adding four report layouts as options for printing this report. The report extension only adds the layouts, the dataset remains the same as the existing Employee List report.
