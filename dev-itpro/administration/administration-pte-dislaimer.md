@@ -1,6 +1,6 @@
 ---
 title: Per-tenant Extension (PTE) Disclaimer
-description: 
+description: Per-tenant Extension (PTE) disclaimer
 ms.custom: na
 ms.author: solsen
 ms.suite: na
