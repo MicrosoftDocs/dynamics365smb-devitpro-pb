@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 04/05/2022
 ---
 
 # Per-Tenant Extension (PTE) Disclaimer
