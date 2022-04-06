@@ -32,7 +32,7 @@ Occurs when a use selects either **Yes** or **No** to the question on the error 
 The following table explains the general dimensions included in the trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |message|**User gave feedback on error message: [OK|Not OK]**|
 
 <!-- removed by request |severityLevel|**3**| -->
