@@ -265,19 +265,8 @@ In this task, you'll publish the extensions. As minimum, you publish the new bas
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 20 that you started in the previous task.
 
-<!--
-1. Publish version 20 system symbols extension.
-
-    The symbols extension contains the required platform symbols that the base application depends on. The symbols extension package is called **System.app**. You find it where the **AL Development Environment** is installed. The default path is C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\200\AL Development Environment.  
-
-    ```powershell
-    Publish-NAVApp -ServerInstance  <server instance name> -Path "<path to system.app>" -PackageType SymbolsOnly
-    ```
-
-    [What are symbols?](upgrade-overview-v15.md#Symbols)
--->
 1. Publish the **System Application** extension (Microsoft_System Application.app).
 
     You find the (Microsoft_System Application.app in the **Applications\System Application\Source** folder of installation media (DVD).

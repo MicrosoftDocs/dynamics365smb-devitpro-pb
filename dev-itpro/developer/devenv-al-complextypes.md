@@ -2,7 +2,7 @@
 title: "AL Complex Types"
 description: "Working with complex types in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/04/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,18 +26,12 @@ To illustrate this, the method in the example below, will take a name, and retur
 /// <returns>First customer</returns> 
 
 procedure GetCustomerByName(Name: Text): record Customer;
-
 var
-
     Customer: record Customer;
-
 begin
-
     Customer.SetFilter(Name, '@' + Name + '*');
     Customer.FindFirst();
-
     exit(Customer);
-
 end;
 ```
  
@@ -45,15 +39,10 @@ It is also possible to use a named return value. Internally, the exit-statement 
 
 ```al
 procedure GetCustomerByName(Name: Text) Customer: record Customer; 
-
 begin 
-
    Customer.SetFilter(Name, '@' + Name + '*'); 
-
    Customer.FindFirst(); 
-
 end; 
-
 ```
  
 The method `GetCustomerByName()` returns a Customer record. It can be used as you would expect in the following example.
@@ -81,11 +70,8 @@ This does not only work for user-defined types like records, codeunits, etc., bu
 /// </summary> 
 /// <returns>Bing HttpClient</returns> 
 procedure GetBingClient() Result: HttpClient;
-
 begin
-
     Result.SetBaseAddress('https://www.bing.com');
-
 end;
 
 /// <summary> 
@@ -94,11 +80,8 @@ end;
 /// <returns>The response message</returns> 
 
 procedure GetBingResponse() Response: HttpResponseMessage
-
 begin
-
     GetBingClient().Get('', Response)
-
 end;
 
 /// <summary> 
@@ -106,11 +89,8 @@ end;
 /// </summary> 
 /// <returns>string with html</returns> 
 procedure GetBingHtml() Result: Text;
-
 begin
-
     GetBingResponse().Content().ReadAs(Result);
-
 end;
 ```
 
