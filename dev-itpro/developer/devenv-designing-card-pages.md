@@ -1,6 +1,6 @@
 ---
 title: Designing Card Pages
-description: "Provides and overview of Role Center design"
+description: "Provides and overview of card page design"
 author: jswymer
 ms.custom: na
 ms.date: 04/01/2021

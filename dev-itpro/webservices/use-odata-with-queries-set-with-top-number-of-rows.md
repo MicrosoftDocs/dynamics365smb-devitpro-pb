@@ -16,9 +16,9 @@ To ensure that the OData results include the correct number of entities when you
   
 Typically, the **TopNumberOfRows** property or **TopNumberOfRows** method are used to return a relatively small number of entities, such as the top five, ten, or 100 entities. Therefore, in most cases, the value of the **TopNumberOfRows** property and **TopNumberOfRows** method will be less than the **Max Page Size**, so that you will not have to change the **Max Page Size** setting. 
 
-> [!NOTE]
-> In HTTP requests, It's recommended to use the `odata.maxpagesize` preference instead of the system query options `$top` and `$skip`.
-  
+> [!TIP]
+> In HTTP requests, it can be beneficial to use `odata.maxpagesize` instead of the system query options `$top` and `$skip`. For instance, `odata.maxpagesize` automatically includes `nextlink` in the response, which lets you continuously retrieve a large dataset in limited chunks. 
+
 For information about how to change the **Max Page Size** setting, see [Configuring Business Central Server](../administration/configure-server-instance.md) and [Server-Driven Paging in OData Web Services](Server-Driven-Paging-in-OData-Web-Services.md).
 
 ## See Also

@@ -20,14 +20,16 @@ To create a filter page, you use AL code and the methods that are available for 
   
 ```AL
 var
-    varItem: Record Item;
-    varFilterPageBuilder: FilterPageBuilder;
+    Item: Record Item;
+    Customer: Record Customer;
+    FilterPage: FilterPageBuilder;
+    FilterPageCaption: TextConst ENU = 'Customer and Item Filter Page';
 begin
-    varFilterPageBuilder.AddTable('Customer Table', Database::Customer);
-    varFilterPageBuilder.AddRecord('Item Table', varItem);
-    varFilterPageBuilder.Addfield('Item Table', varItem."No.", '>100');
-    varFilterPageBuilder.PageCaption := 'Customer and Item Filter Page';
-    varFilterPageBuilder.RunModal();
+    FilterPage.AddTable(Customer.TableCaption(), Database::Customer);
+    FilterPage.AddRecord(Item.TableCaption(), Item);
+    FilterPage.Addfield(Item.TableCaption(), Item."No.", '>100');
+    FilterPage.PageCaption := FilterPageCaption;
+    FilterPage.RunModal();
 end;
 ```
   

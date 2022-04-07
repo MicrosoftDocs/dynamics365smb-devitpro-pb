@@ -1419,6 +1419,7 @@
 #### [HandlerFunctions Attribute](developer/attributes/devenv-handlerfunctions-attribute.md)
 #### [HyperlinkHandler Attribute](developer/attributes/devenv-hyperlinkhandler-attribute.md)
 #### [InDataSet Attribute](developer/attributes/devenv-indataset-attribute.md)
+#### [InherentPermissions Attribute](developer/attributes/devenv-inherentpermissions-attribute.md)
 #### [IntegrationEvent Attribute](developer/attributes/devenv-integrationevent-attribute.md)
 #### [InternalEvent Attribute](developer/attributes/devenv-internalevent-attribute.md)
 #### [MessageHandler Attribute](developer/attributes/devenv-messagehandler-attribute.md)
@@ -3717,6 +3718,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2022 Release Wave 1](deployment/system-requirements-business-central-v20.md)
 #### [2021 Release Wave 2](deployment/system-requirements-business-central-v19.md)
 #### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
 #### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
@@ -3829,6 +3831,27 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
+### Business Central 2022 Release Wave 1
+#### [Overview](upgrade/upgrade-overview-v20.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### [Upgrading Reports](upgrade/upgrade-reports.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v20.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v20.md)
+##### [From Versions 17, 18, or 19 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v20.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Data Migration Toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
+##### [From Version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
 ### Business Central 2021 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v19.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
