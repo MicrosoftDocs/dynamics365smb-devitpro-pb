@@ -160,13 +160,13 @@ ROOT OnMergeDocumentReport
 
 ### [RDLC layouts](#tab/rdlc)
 
-The following figure illustrates flow associated with an RDLC report layout type.
+The following figure illustrates the flow associated with an RDLC report layout type.
  
 [![RDLC report layout flow for version 20 and later.](media/rdlc-layout-flow.png)](media/rdlc-layout-flow.png#lightbox)  
 
 ### [Word layouts](#tab/word)
 
-The following figure illustrates with a Word report layout type.
+The following figure illustrates the flow associated with a Word report layout type.
 
 [![Word report layout flow for version 20 and later.](media/word-layout-flow.png)](media/word-layout-flow.png#lightbox)  
   
