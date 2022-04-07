@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
-ms.date: 03/31/2022
+ms.date: 04/07/2022
 ms.author: edupont
 
 ---
@@ -148,12 +148,14 @@ You can import a configuration package that has been exported from a database th
     You can export the templates as Excel workbooks so that you can work with customer data in Excel.  
 8. Export your package as a .rapidstart file, or export it to Excel.  
 
+The next time you're going to set up [!INCLUDE [prod_short](../includes/prod_short.md)] for a new customer, you can apply your configuration packages and get started fast. For more information, see [Apply Company Configuration Packages](apply-company-configuration-packages.md).  
+
 ## See Also
 
 [Apply Company Configuration Packages](apply-company-configuration-packages.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  
 [FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  
 [Administration of Business Central Online](tenant-administration.md)  
-[Administration of Business Central On-Premises](administration.md)
+[Administration of Business Central On-Premises](administration.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Onboarding experiences in Business Central](onboarding-experiences.md)  
