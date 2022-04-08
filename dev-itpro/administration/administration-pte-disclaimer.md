@@ -12,7 +12,7 @@ ms.date: 04/05/2022
 
 # Per-Tenant Extension (PTE) Disclaimer
 
-> The creator of this customized extension is responsible for its licensing. The customized extension is subject to the terms and conditions, privacy policy, support and billing offered by the creator, as applicable, and does not create any liability or obligation for Microsoft. <br>
+> The creator of a customized extension (PTE) is responsible for its licensing. The customized extension is subject to the terms and conditions, privacy policy, support and billing offered by the creator, as applicable, and does not create any liability or obligation for Microsoft. <br>
 >
 > The publisher of the customized extension must maintain compatibility with new releases of Dynamics 365 Business Central. An extension that is not compatible with a new release within 90 days of the release will be removed and the tenant upgraded.
 
