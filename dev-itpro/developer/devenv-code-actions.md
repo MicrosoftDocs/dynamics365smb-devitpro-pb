@@ -22,6 +22,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] these code actions ar
 - Use parenthesis for method call
 - Fix explicit `with` statements
 - Fix implicit with statements
+- Fix old report layout and replace with `rendering` layout section
 
 ## To enable AL Code Actions
 

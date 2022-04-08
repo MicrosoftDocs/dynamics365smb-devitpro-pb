@@ -33,8 +33,8 @@ Represents a line in a journal in [!INCLUDE[prod_short](../../../includes/prod_s
 
 ## Navigation 
 
-| Method                                                    |Description         |
-|:----------------------------------------------------------|:-------------------|
+| Method                                                    |Type        | Description |
+|-----------------------------------------------------------|------------|-------------|
 |[attachments](../resources/dynamics_attachment.md)|paymentTerm   |Attach documents to journalLine. |
 |[account](../resources/dynamics_account.md)|paymentMethod   |Gets the account. |
 

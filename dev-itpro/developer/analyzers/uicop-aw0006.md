@@ -20,6 +20,17 @@ Pages and reports should use the UsageCategory and ApplicationArea properties to
 Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## How to fix this diagnostic?
+
+For a page that should be searchable, set both the [UsageCategory](../properties/devenv-usagecategory-property.md) and [ApplicationArea](../properties/devenv-applicationarea-property.md) properties.
+
+If a page should not be searchable, set the property as follows:
+
+```AL
+UsageCategory = None;
+```
+
 ## See Also  
 [UICop Analyzer](uicop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
