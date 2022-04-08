@@ -24,6 +24,7 @@ The following tables list the Ids of [!INCLUDE[prod_short](../developer/includes
 [!INCLUDE[lifecycle_events](../includes/include-lifecycle-telemetry-event-ids.md)]
 
 ## Runtime events
+
 [!INCLUDE[runtime_events](../includes/include-runtime-telemetry-event-ids.md)]
 
 ## See also
