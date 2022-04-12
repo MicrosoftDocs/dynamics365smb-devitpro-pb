@@ -847,25 +847,6 @@
 #### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
 ## Troubleshooting
 ### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
-
-## AL-Go for GitHub
-### [AL-Go Overview](al-go/algo-overview.md)
-### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
-### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
-### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](al-go/algo-register-sandbox-env.md)
-### [Create a Release of Your Application](al-go/algo-create-release-app.md)
-### [Register a Customer Production Environment for Manual Deployment](al-go/algo-register-cust-prod-env.md)
-### [Update AL-Go System Files](al-go/algo-update-system-files.md)
-### [Use Azure KeyVault for Secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
-### [Create Online Development Environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
-### [Create Online Development Environment from GitHub](al-go/algo-create-online-dev-env-github.md)
-### [Set up CI/CD for an Existing Per-Tenant Extension](al-go/algo-setup-cicd-existing-pte.md)
-### [Set up CI/CD for an Existing AppSource App](al-go/algo-setup-cicd-existing-app.md)
-### [Enable KeyVault Access for Your AppSource App during Development and/or Test](al-go/algo-enable-keyvault-app-development.md)
-### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
-### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
-### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
-### [Branching Strategies](al-go/algo-branching-strategy.md)
 <!--
 ## [App Identity](developer/devenv-app-identity.md)
 ## [Choosing Runtime Version in AL](developer/devenv-choosing-runtime.md)
@@ -1156,6 +1137,24 @@
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 <!-- end Rules and Guidelines -->
+## AL-Go for GitHub
+### [AL-Go Overview](al-go/algo-overview.md)
+### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
+### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
+### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](al-go/algo-register-sandbox-env.md)
+### [Create a Release of Your Application](al-go/algo-create-release-app.md)
+### [Register a Customer Production Environment for Manual Deployment](al-go/algo-register-cust-prod-env.md)
+### [Update AL-Go System Files](al-go/algo-update-system-files.md)
+### [Use Azure KeyVault for Secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
+### [Create Online Development Environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
+### [Create Online Development Environment from GitHub](al-go/algo-create-online-dev-env-github.md)
+### [Set up CI/CD for an Existing Per-Tenant Extension](al-go/algo-setup-cicd-existing-pte.md)
+### [Set up CI/CD for an Existing AppSource App](al-go/algo-setup-cicd-existing-app.md)
+### [Enable KeyVault Access for Your AppSource App during Development and/or Test](al-go/algo-enable-keyvault-app-development.md)
+### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
+### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
+### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
+### [Branching Strategies](al-go/algo-branching-strategy.md)
 <!-- AL programming -->
 ## AL Programming
 ### [AL Development Environment](developer/devenv-reference-overview.md)
