@@ -875,7 +875,7 @@
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
 #### [Checking Customization Issues](/dynamics365/business-central/ui-personalization-manage)
 #### [Verifying User Permissions](/dynamics365/business-central/ui-define-granular-permissions)
-#### [Investigating Mobile App (On-Premises)](devenv-troubleshooting-the-mobile-app.md).
+#### [Investigating Mobile App (On-Premises)](devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
 #### [Debugging AL code](devenv-debugging.md)
 #### [Capturing Snapshots](devenv-snapshot-debugging.md)
