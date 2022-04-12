@@ -828,6 +828,7 @@
 ### Restrictions
 #### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 #### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
+#### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
 ### Telemetry
 #### [Adding custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 #### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
