@@ -20,7 +20,7 @@ The application lifecycle is the cyclical software development process that typi
 
 
 ## See Also
-[Extension Data Migration Overview](developer/devenv-migrate-table-fields.md)
-[Extension Translation Overview](developer/devenv-translations-overview.md)
-[Extension Testing Overview](developer/devenv-testing-application.md)
-[Extension Upgrade Overview](developer/devenv-app-life-cycle.md)
+- [Extension Data Migration Overview](devenv-migrate-table-fields.md)
+- [Extension Translation Overview](devenv-translations-overview.md)
+- [Extension Testing Overview](devenv-testing-application.md)
+- [Extension Upgrade Overview](devenv-app-life-cycle.md)

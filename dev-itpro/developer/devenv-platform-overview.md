@@ -23,11 +23,11 @@ Learning how to start background sessions using the task scheduler and job queue
 Instrumenting your extension using feature telemetry and custom telemetry can help you monitor the extension after it has been deployed to production.
 
 ## See Also
-[Overview of the System Application](developer/devenv-system-application-overview.md)
-[Task Scheduler](developer/devenv-task-scheduler.md)
-[Job Queue](developer/devenv-job-queue.md)
-[Using Azure Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
-[Creating Custom Telemetry Events](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-[Add Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
-[Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
-[Getting started with Microsoft .NET Interoperability from AL (on-premises only)](developer/devenv-get-started-call-dotnet-from-al.md)
+- [Overview of the System Application](devenv-system-application-overview.md)
+- [Task Scheduler](devenv-task-scheduler.md)
+- [Job Queue](devenv-job-queue.md)
+- [Using Azure Key Vaults for Secrets](devenv-app-key-vault-overview.md)
+- [Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md)
+- [Add Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+- [Creating a Printer Extension](devenv-reports-create-printer-extension.md)
+- [Getting started with Microsoft .NET Interoperability from AL (on-premises only)](devenv-get-started-call-dotnet-from-al.md)

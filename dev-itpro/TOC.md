@@ -721,7 +721,7 @@
 #### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
 
 ## AL Platform
-### [Overview](developer/devenv-plaform-overview.md)
+### [Overview](developer/devenv-platform-overview.md)
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
 ### Using the System Application
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
@@ -867,22 +867,22 @@
 ### [Overview](developer/devenv-troubleshooting-overview.md)
 ### Troubleshooting in the client
 #### [Using the Page Inspector](/dynamics365/business-central/across-inspect-page)
-#### [Using the Event Recorder](devenv-events-discoverability.md)
+#### [Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Database Table Information](/dynamics365/business-central/admin-view-table-information)
 #### [Database Locks](/dynamics365/business-central/admin-view-database-locks)
-#### [Using the Performance Profiler](../administration/performance-profiler-overview.md)
+#### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
 #### [Checking Customization Issues](/dynamics365/business-central/ui-personalization-manage)
 #### [Verifying User Permissions](/dynamics365/business-central/ui-define-granular-permissions)
-#### [Investigating Mobile App (On-Premises)](devenv-troubleshooting-the-mobile-app.md)
+#### [Investigating Mobile App (On-Premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
-#### [Debugging AL code](devenv-debugging.md)
-#### [Capturing Snapshots](devenv-snapshot-debugging.md)
-#### [Using the AL Profiler](devenv-al-profiler-overview.md)
-#### [Investigating Printer and Report Payloads](devenv-reports-troubleshoot-printing.md)
-#### [Inspecting and Troubleshooting Pages](devenv-inspecting-pages.md)
-#### [Trounbleshooting Performance Issues](../performance/performance-overview.md)
+#### [Debugging AL code](developer/devenv-debugging.md)
+#### [Capturing Snapshots](developer/devenv-snapshot-debugging.md)
+#### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
+#### [Investigating Printer and Report Payloads](developer/devenv-reports-troubleshoot-printing.md)
+#### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
+#### [Trounbleshooting Performance Issues](performance/performance-overview.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
