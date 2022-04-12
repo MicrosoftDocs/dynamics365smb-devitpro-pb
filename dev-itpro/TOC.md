@@ -519,7 +519,7 @@
 #### [Triggers](developer/triggers-auto/devenv-triggers.md)
 
 ### Error Handling
-#### [Error Handling](developer/devenv-error-handling.md)
+#### [Error Handling](developer/devenv-al-error-handling.md)
 #### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
 #### [Collecting Errors](developer/devenv-error-collection.md)
 #### [Error(String [, Any,...]) Method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
@@ -611,7 +611,7 @@
 ##### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
 ##### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
 ##### [Field Groups](developer/devenv-field-groups.md)
-##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/#devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
+##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
 ##### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
@@ -632,7 +632,7 @@
 ##### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
 ##### [Getting Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
 ##### [Designing for Different Screen Sizes on Tablet and Phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
-##### [Differences and Limitations When Developing Pages for the Mobile App](developer/###devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
+##### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ##### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
 
@@ -1019,7 +1019,7 @@
 ##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
 <!-- reenable when topics have been written
 ##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) -->
-<!-->
+<!--
 ##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
 ### Fields
 #### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
@@ -1133,8 +1133,9 @@
 ### [Test Pages](developer/devenv-testing-pages.md)
 ### [UI Handlers](developer/devenv-creating-handler-methods.md)
 <!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
-### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
-### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
+<!-- ### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
+### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md) -->
+
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
 ## Troubleshooting
@@ -1236,11 +1237,9 @@
 #### [Permissionset Object](developer/devenv-permissionset-object.md)
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 <!-- end AL programming -->
--->
 
 
-
-DO NOT TOUCH
+<!-- DO NOT TOUCH -->
 ## AL Language Reference
 ### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
 #### [Warnings Turning into Errors Overview](developer/diagnostics/diagnostics-with-limit-date-overview.md)
