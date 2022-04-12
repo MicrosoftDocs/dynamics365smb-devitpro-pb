@@ -840,8 +840,6 @@
 #### [Application Security](security/security-application.md)
 #### [Data Security](security/data-security.md)
 #### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
-## Troubleshooting
-### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
 ## Code Deprecation
@@ -862,6 +860,9 @@
 ### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 <!-- end Rules and Guidelines -->
+## Troubleshooting
+### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
+
 ## AL-Go for GitHub
 ### [AL-Go Overview](al-go/algo-overview.md)
 ### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
