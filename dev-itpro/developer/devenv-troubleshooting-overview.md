@@ -40,8 +40,8 @@ The following sections help you troubleshoot issues with Business Central so tha
 
 ## Troubleshooting with telemetry
 Telemetry can be used for troubleshooting things after they happened and it is possible to analyze patterns across sessions.
-- Enable telemetry and query telemetry data in [Azure Application Insights](administration/telemetry-overview.md)
+- Enable telemetry and query telemetry data in [Azure Application Insights](../administration/telemetry-overview.md)
 - Use [Jupyter notebook troubleshooting guides](https://aka.ms/bctelemetrysamples) to troubleshoot known classes of issues.
 - Use [Power BI reports](https://aka.ms/bctelemetrysamples) to analyze errors and performance issues.
-- [Use telemetry to investigate Performance Issues](performance/performance-work-perf-problem.md)
+- [Use telemetry to investigate Performance Issues](../performance/performance-work-perf-problem.md)
 
