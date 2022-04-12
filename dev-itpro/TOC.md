@@ -313,10 +313,11 @@
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end admin -->
-<!-- Development-->
+
+<!-- DEVELOPMENT-->
 # Development
 ## [Development Overview](developer/devenv-dev-overview.md)
-## [Before You Start]()
+## [Before You Start - NEED OVERVIEW]()
 ## Getting Started
 ### [Getting Started with AL](developer/devenv-get-started.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
@@ -350,7 +351,6 @@
 ## Development Environment
 ### Need an overview page 
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
-
 ### Configuring the Development Environment
 #### [JSON Files](developer/devenv-json-files.md)
 #### [The Migration.json File](developer/devenv-migration-json-file.md)
@@ -394,7 +394,6 @@
 #### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
 
-
 ### Working in Sandboxes
 #### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
 #### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
@@ -422,9 +421,10 @@
 ##### [Control Statements](developer/devenv-al-control-statements.md)  
 #### [Access Modifiers](developer/devenv-using-access-modifiers.md)
 #### [Comments](developer/devenv-xml-comments.md)
+
 ### Language Elements
 #### Data Types
-##### Need an overview page
+<!-- ##### Need an overview page -->
 ##### [Overview](developer/methods-auto/library.md)
 ##### Simple types
 ###### Date and Time
@@ -622,7 +622,7 @@
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
 ##### [Page Customization Object](developer/devenv-page-customization-object.md)
-##### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
+##### [Using the Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
 
 #### Control Add-ins
 ##### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
@@ -641,6 +641,7 @@
 #### [Publishing Events](developer/devenv-publishing-events.md)
 #### [Raising Events](developer/devenv-raising-events.md)
 #### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
+#### [Isolated Events](developer/devenv-events-isolated.md)
 #### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Event Example](developer/devenv-events-example.md)
 #### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
