@@ -317,7 +317,6 @@
 <!-- DEVELOPMENT-->
 # Development
 ## [Development Overview](developer/devenv-dev-overview.md)
-## [Before You Start - NEED OVERVIEW]()
 ## Getting Started
 ### [Getting Started with AL](developer/devenv-get-started.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
@@ -327,7 +326,6 @@
 ### [AL Outline View](developer/devenv-al-outline-view.md)
 ### [AL Code Navigation](developer/devenv-al-code-navigation.md)
 ### [AL Code Actions](developer/devenv-code-actions.md)
-### [AL Profiler](developer/devenv-al-profiler-overview.md)
 ### [Object Ranges](developer/devenv-object-ranges.md)
 ### [Differences in the Development Environments](developer/devenv-differences.md)
 <!-- ### [Object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
@@ -349,7 +347,7 @@
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
 ## Development Environment
-### Need an overview page 
+### [Overview](developer/devenv-get-started.md)
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configuring the Development Environment
 #### [JSON Files](developer/devenv-json-files.md)
@@ -723,7 +721,7 @@
 #### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
 
 ## AL Platform
-### Need overview page
+### [Overview](developer/devenv-plaform-overview.md)
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
 ### Using the System Application
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
@@ -737,6 +735,7 @@
 ### Task Scheduler and Job Queue
 #### [Task Scheduler](developer/devenv-task-scheduler.md)
 #### [Job Queue](developer/devenv-job-queue.md)
+
 ### App Key Vaults for Secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
@@ -759,7 +758,9 @@
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
 #### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
+#### [Adding Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Creating Custom Events for Event Log (On-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
+
 
 ### Using .NET (on-premises only)
 #### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
@@ -771,7 +772,7 @@
 ## Application Lifecycle 
 <!-- (deploy, install, testing, upgrade, depreciation, …) -->
 ### Need overview page
-
+#### [Overview](developer/devenv-lifecycle-overview.md)
 ### Migration
 #### [Generating Delta Files](developer/devenv-generating-delta-files.md)
 #### Migrating Tables and Fields Between Extensions
@@ -812,14 +813,16 @@
     
 ### Deprecating code
 #### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-#### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+#### [Best Practices for Deprecation of AL Code](developer/devenv-deprecation-guidelines.md)
 #### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 
 ## Best Practices
+### [Overview](compliance/apptest-bestpracticesforalcode.md)
 ### AL Code
 #### [Rules and Guidelines](compliance/apptest-overview.md)
 #### [Naming Conventions](compliance/apptest-bestpracticesforalcode.md)
 #### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
+#### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
 ### Restrictions
 #### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 #### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
@@ -843,25 +846,50 @@
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
 ## Code Deprecation
-### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+### [Overview](developer/devenv-deprecation-guidelines.md)
+### [Microsoft Timeline for Deprecating AL Code](developer/devenv-deprecation-timeline.md)
 ### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Rules and Guidelines
-### [Rules and Guidelines for AL Code](compliance/apptest-overview.md)
-### [Best Practices for AL](compliance/apptest-bestpracticesforalcode.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
-### [Benefits and Guidelines for using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
+### [Overview](compliance/apptest-overview.md)
+### [AL Best Practices](compliance/apptest-bestpracticesforalcode.md)
+### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
+### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your Extension](compliance/apptest-testingyourextension.md)
 ### [User Scenario Documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
-### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
-### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+### [Walkthrough: Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
+### [Walkthrough: Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 <!-- end Rules and Guidelines -->
 ## Troubleshooting
-### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
+### [Overview](developer/devenv-troubleshooting-overview.md)
+### Troubleshooting in the client
+#### [Using the Page Inspector](/dynamics365/business-central/across-inspect-page)
+#### [Using the Event Recorder](devenv-events-discoverability.md)
+#### [Database Table Information](/dynamics365/business-central/admin-view-table-information)
+#### [Database Locks](/dynamics365/business-central/admin-view-database-locks)
+#### [Using the Performance Profiler](../administration/performance-profiler-overview.md)
+#### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
+#### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
+#### [Checking Customization Issues](/dynamics365/business-central/ui-personalization-manage)
+#### [Verifying User Permissions](/dynamics365/business-central/ui-define-granular-permissions)
+#### [Investigating Mobile App (On-Premises)](devenv-troubleshooting-the-mobile-app.md).
+### Troubleshooting in AL
+#### [Debugging AL code](devenv-debugging.md)
+#### [Capturing Snapshots](devenv-snapshot-debugging.md)
+#### [Using the AL Profiler](devenv-al-profiler-overview.md)
+#### [Investigating Printer and Report Payloads](devenv-reports-troubleshoot-printing.md)
+#### [Inspecting and Troubleshooting Pages](devenv-inspecting-pages.md)
+#### [Trounbleshooting Performance Issues](../performance/performance-overview.md)
+### Troubleshooting with telemetry
+#### [Overview](administration/telemetry-overview.md)
+#### [Available telemetry](administration/telemetry-available-telemetry.md) 
+#### [Enabling Telemetry](administration/telemetry-enable-application-insights.md)
+#### [Using Jupyter notebook troubleshooting guides](https://aka.ms/bctelemetrysamples)
+#### [Using Power BI troubleshooting reports](https://aka.ms/bctelemetrysamples)
+#### [Using telemetry to investigate Performance Issues](performance/performance-work-perf-problem.md)
 
 ## AL-Go for GitHub
 ### [AL-Go Overview](al-go/algo-overview.md)
@@ -883,7 +911,7 @@
 ### [Branching Strategies](al-go/algo-branching-strategy.md)
 <!-- AL programming -->
 ## AL Programming
-### [AL Development Environment](developer/devenv-reference-overview.md)
+### [Overview](developer/devenv-reference-overview.md)
 ### [Programming in AL](developer/devenv-programming-in-al.md)
 ### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
 ### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
@@ -945,8 +973,9 @@
 
 <!-- DO NOT TOUCH - auto-generated sections from here -->
 ## AL Language Reference
-### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
-#### [Warnings Turning into Errors Overview](developer/diagnostics/diagnostics-with-limit-date-overview.md)
+### Compiler Errors, Warnings, and Messages
+#### [Overview](developer/diagnostics/diagnostics-overview.md)
+#### [Warnings Turning into Errors](developer/diagnostics/diagnostics-with-limit-date-overview.md)
 <!-- [//]: # (START>DO_NOT_EDIT_DIAGNOSTICS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -1637,48 +1666,7 @@
 ##### [AL1416](developer/diagnostics/diagnostic-al1416.md)
 ##### [AL1417](developer/diagnostics/diagnostic-al1417.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_DIAGNOSTICS) -->
-### [Method Attributes](developer/attributes/devenv-method-attributes.md)
-<!-- [//]: # (START>DO_NOT_EDIT_ATTRIBUTES)
-[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
-#### [BusinessEvent Attribute](developer/attributes/devenv-businessevent-attribute.md)
-#### [Caption Attribute](developer/attributes/devenv-caption-attribute.md)
-#### [CommitBehavior Attribute](developer/attributes/devenv-commitbehavior-attribute.md)
-#### [ConfirmHandler Attribute](developer/attributes/devenv-confirmhandler-attribute.md)
-#### [ErrorBehavior Attribute](developer/attributes/devenv-errorbehavior-attribute.md)
-#### [EventSubscriber Attribute](developer/attributes/devenv-eventsubscriber-attribute.md)
-#### [FilterPageHandler Attribute](developer/attributes/devenv-filterpagehandler-attribute.md)
-#### [HandlerFunctions Attribute](developer/attributes/devenv-handlerfunctions-attribute.md)
-#### [HyperlinkHandler Attribute](developer/attributes/devenv-hyperlinkhandler-attribute.md)
-#### [InDataSet Attribute](developer/attributes/devenv-indataset-attribute.md)
-#### [InherentPermissions Attribute](developer/attributes/devenv-inherentpermissions-attribute.md)
-#### [IntegrationEvent Attribute](developer/attributes/devenv-integrationevent-attribute.md)
-#### [InternalEvent Attribute](developer/attributes/devenv-internalevent-attribute.md)
-#### [MessageHandler Attribute](developer/attributes/devenv-messagehandler-attribute.md)
-#### [ModalPageHandler Attribute](developer/attributes/devenv-modalpagehandler-attribute.md)
-#### [NonDebuggable Attribute](developer/attributes/devenv-nondebuggable-attribute.md)
-#### [None Attribute](developer/attributes/devenv-none-attribute.md)
-#### [Normal Attribute](developer/attributes/devenv-normal-attribute.md)
-#### [Obsolete Attribute](developer/attributes/devenv-obsolete-attribute.md)
-#### [PageHandler Attribute](developer/attributes/devenv-pagehandler-attribute.md)
-#### [RecallNotificationHandler Attribute](developer/attributes/devenv-recallnotificationhandler-attribute.md)
-#### [ReportHandler Attribute](developer/attributes/devenv-reporthandler-attribute.md)
-#### [RequestPageHandler Attribute](developer/attributes/devenv-requestpagehandler-attribute.md)
-#### [RunOnClient Attribute](developer/attributes/devenv-runonclient-attribute.md)
-#### [Scope Attribute](developer/attributes/devenv-scope-attribute.md)
-#### [SecurityFiltering Attribute](developer/attributes/devenv-securityfiltering-attribute.md)
-#### [SendNotificationHandler Attribute](developer/attributes/devenv-sendnotificationhandler-attribute.md)
-#### [ServiceEnabled Attribute](developer/attributes/devenv-serviceenabled-attribute.md)
-#### [SessionSettingsHandler Attribute](developer/attributes/devenv-sessionsettingshandler-attribute.md)
-#### [StrMenuHandler Attribute](developer/attributes/devenv-strmenuhandler-attribute.md)
-#### [SuppressDispose Attribute](developer/attributes/devenv-suppressdispose-attribute.md)
-#### [Test Attribute](developer/attributes/devenv-test-attribute.md)
-#### [TestPermissions Attribute](developer/attributes/devenv-testpermissions-attribute.md)
-#### [TransactionModel Attribute](developer/attributes/devenv-transactionmodel-attribute.md)
-#### [TryFunction Attribute](developer/attributes/devenv-tryfunction-attribute.md)
-#### [WithEvents Attribute](developer/attributes/devenv-withevents-attribute.md)
-<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
-### Methods
+### Data Types and Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
 #### [Essential AL Methods](developer/devenv-essential-al-methods.md)
@@ -3314,6 +3302,47 @@
 #### [XmlWriteOptions Data Type](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
 ##### [PreserveWhitespace([Boolean]) Method](developer/methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
+### [Method Attributes](developer/attributes/devenv-method-attributes.md)
+<!-- [//]: # (START>DO_NOT_EDIT_ATTRIBUTES)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
+#### [BusinessEvent Attribute](developer/attributes/devenv-businessevent-attribute.md)
+#### [Caption Attribute](developer/attributes/devenv-caption-attribute.md)
+#### [CommitBehavior Attribute](developer/attributes/devenv-commitbehavior-attribute.md)
+#### [ConfirmHandler Attribute](developer/attributes/devenv-confirmhandler-attribute.md)
+#### [ErrorBehavior Attribute](developer/attributes/devenv-errorbehavior-attribute.md)
+#### [EventSubscriber Attribute](developer/attributes/devenv-eventsubscriber-attribute.md)
+#### [FilterPageHandler Attribute](developer/attributes/devenv-filterpagehandler-attribute.md)
+#### [HandlerFunctions Attribute](developer/attributes/devenv-handlerfunctions-attribute.md)
+#### [HyperlinkHandler Attribute](developer/attributes/devenv-hyperlinkhandler-attribute.md)
+#### [InDataSet Attribute](developer/attributes/devenv-indataset-attribute.md)
+#### [InherentPermissions Attribute](developer/attributes/devenv-inherentpermissions-attribute.md)
+#### [IntegrationEvent Attribute](developer/attributes/devenv-integrationevent-attribute.md)
+#### [InternalEvent Attribute](developer/attributes/devenv-internalevent-attribute.md)
+#### [MessageHandler Attribute](developer/attributes/devenv-messagehandler-attribute.md)
+#### [ModalPageHandler Attribute](developer/attributes/devenv-modalpagehandler-attribute.md)
+#### [NonDebuggable Attribute](developer/attributes/devenv-nondebuggable-attribute.md)
+#### [None Attribute](developer/attributes/devenv-none-attribute.md)
+#### [Normal Attribute](developer/attributes/devenv-normal-attribute.md)
+#### [Obsolete Attribute](developer/attributes/devenv-obsolete-attribute.md)
+#### [PageHandler Attribute](developer/attributes/devenv-pagehandler-attribute.md)
+#### [RecallNotificationHandler Attribute](developer/attributes/devenv-recallnotificationhandler-attribute.md)
+#### [ReportHandler Attribute](developer/attributes/devenv-reporthandler-attribute.md)
+#### [RequestPageHandler Attribute](developer/attributes/devenv-requestpagehandler-attribute.md)
+#### [RunOnClient Attribute](developer/attributes/devenv-runonclient-attribute.md)
+#### [Scope Attribute](developer/attributes/devenv-scope-attribute.md)
+#### [SecurityFiltering Attribute](developer/attributes/devenv-securityfiltering-attribute.md)
+#### [SendNotificationHandler Attribute](developer/attributes/devenv-sendnotificationhandler-attribute.md)
+#### [ServiceEnabled Attribute](developer/attributes/devenv-serviceenabled-attribute.md)
+#### [SessionSettingsHandler Attribute](developer/attributes/devenv-sessionsettingshandler-attribute.md)
+#### [StrMenuHandler Attribute](developer/attributes/devenv-strmenuhandler-attribute.md)
+#### [SuppressDispose Attribute](developer/attributes/devenv-suppressdispose-attribute.md)
+#### [Test Attribute](developer/attributes/devenv-test-attribute.md)
+#### [TestPermissions Attribute](developer/attributes/devenv-testpermissions-attribute.md)
+#### [TransactionModel Attribute](developer/attributes/devenv-transactionmodel-attribute.md)
+#### [TryFunction Attribute](developer/attributes/devenv-tryfunction-attribute.md)
+#### [WithEvents Attribute](developer/attributes/devenv-withevents-attribute.md)
+<!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
 ### Properties
 #### [Overview](developer/properties/devenv-properties.md)
 <!-- [//]: # (START>DO_NOT_EDIT_PROPERTIES)
