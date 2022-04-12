@@ -862,10 +862,6 @@
 #### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
-## Code Deprecation
-### [Overview](developer/devenv-deprecation-guidelines.md)
-### [Microsoft Timeline for Deprecating AL Code](developer/devenv-deprecation-timeline.md)
-### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 ## Rules and Guidelines
 ### [Overview](compliance/apptest-overview.md)
 ### [AL Best Practices](compliance/apptest-bestpracticesforalcode.md)
