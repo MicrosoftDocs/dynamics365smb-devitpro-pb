@@ -694,6 +694,69 @@
 #### [Region Directive](developer/directives/devenv-directive-region.md)
 #### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
 
+<!-- AL programming -->
+## AL Programming
+### [Overview](developer/devenv-reference-overview.md)
+### [Programming in AL](developer/devenv-programming-in-al.md)
+### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
+### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
+### [AL Control Statements](developer/devenv-al-control-statements.md)  
+### [AL Complex Types](developer/devenv-al-complextypes.md)
+### [AL Error Handling](developer/devenv-al-error-handling.md)
+### [Working with AL Methods](developer/devenv-al-methods.md)
+### [System-Defined Variables](developer/devenv-system-defined-variables.md)
+### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
+#### [Region Directive](developer/directives/devenv-directive-region.md)
+#### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
+### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
+### [XML Comments in Code](developer/devenv-xml-comments.md)
+### Code Analysis
+#### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
+#### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
+#### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
+#### [AppSourceCop Analyzer Rules](developer/analyzers/appsourcecop.md)
+#### [CodeCop Analyzer Rules](developer/analyzers/codecop.md)
+#### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
+#### [UICop Analyzer Rules](developer/analyzers/uicop.md)
+### [Isolated Storage](developer/devenv-isolated-storage.md)
+### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
+### [Flowfields](developer/devenv-flowfields.md)
+### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
+### Nonclustered Columnstore Indexes (NCCI)
+#### [NCCI Overview](developer/devenv-ncci-overview.md)
+#### [NCCI and SQL Server](developer/devenv-ncci-and-sql-server.md)
+#### [NCCI Tuning and Tracing](developer/devenv-ncci-tuning-and-tracing.md)
+#### [NCCI Performance](developer/devenv-ncci-performance.md)
+#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
+### SumIndexField Technology (SIFT)
+#### [SIFT Overview](developer/devenv-sift-technology.md)
+#### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
+#### [SIFT Tuning and Tracing](developer/devenv-sift-tuning-and-tracing.md)
+#### [SIFT Performance](developer/devenv-sift-performance.md)
+### [Number Sequences](developer/devenv-number-sequences.md)
+### [Extensible Enums](developer/devenv-extensible-enums.md)
+### [Protected Variables](developer/devenv-protected-variables.md)
+### [Working with labels](developer/devenv-using-labels.md)
+### Objects
+#### [Table Object](developer/devenv-table-object.md)
+#### [Table Extension Object](developer/devenv-table-ext-object.md)
+#### [Table Keys](developer/devenv-table-keys.md)
+#### [Enums](developer/devenv-extensible-enums.md)
+#### [Page Object](developer/devenv-page-object.md)
+#### [Page Extension Object](developer/devenv-page-ext-object.md)
+#### [Page Customization Object](developer/devenv-page-customization-object.md)
+#### [Report Object](developer/devenv-report-object.md)
+#### [Profile Object](developer/devenv-profile-object.md)
+#### [Codeunit Object](developer/devenv-codeunit-object.md)
+#### [Query Object](developer/devenv-query-object.md)
+#### [XMLPort Object](developer/devenv-xmlport-object.md)
+#### [Control Add-In Object](developer/devenv-control-addin-object.md)
+#### [Entitlement Object](developer/devenv-entitlement-object.md)
+#### [Permissionset Object](developer/devenv-permissionset-object.md)
+#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
+<!-- end AL programming -->
+
+
 ## Extensibility
 ### Extending the Base Application
 #### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
@@ -769,52 +832,6 @@
 #### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 #### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
-## Application Lifecycle 
-<!-- (deploy, install, testing, upgrade, depreciation, …) -->
-### Need overview page
-#### [Overview](developer/devenv-lifecycle-overview.md)
-### Migration
-#### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-#### Migrating Tables and Fields Between Extensions
-##### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
-##### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-##### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-##### [Migration.json File](developer/devenv-migration-json-file.md)
-
-### Translation
-#### [Translations Overview](developer/devenv-translations-overview.md)
-#### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-
-### Testing 
-#### [Overview](developer/devenv-testing-application.md)
-#### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
-#### [Handler Methods (for tests)](developer/devenv-creating-handler-methods.md) 
-#### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
-#### [Test Pages](developer/devenv-testing-pages.md)
-#### [UI Handlers](developer/devenv-creating-handler-methods.md)
-<!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
-#### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
-#### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
-#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
-
-### Deploying and Installing
-#### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
-#### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
-#### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
-#### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
-#### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
-
-### Updating
-#### [Overview](developer/devenv-app-life-cycle.md)
-#### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
-#### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
-#### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
-#### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
-    
-### Deprecating code
-#### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-#### [Best Practices for Deprecation of AL Code](developer/devenv-deprecation-guidelines.md)
-#### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 
 ## Best Practices
 ### [Overview](compliance/apptest-bestpracticesforalcode.md)
@@ -863,6 +880,74 @@
 ### [Walkthrough: Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Walkthrough: Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 <!-- end Rules and Guidelines -->
+
+
+## Application Lifecycle 
+<!-- (deploy, install, testing, upgrade, depreciation, …) -->
+### [Overview](developer/devenv-lifecycle-overview.md)
+### Migration
+#### [Generating Delta Files](developer/devenv-generating-delta-files.md)
+#### Migrating Tables and Fields Between Extensions
+##### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
+##### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+##### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+##### [Migration.json File](developer/devenv-migration-json-file.md)
+
+### Translation
+#### [Translations Overview](developer/devenv-translations-overview.md)
+#### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
+
+### Testing 
+#### [Overview](developer/devenv-testing-application.md)
+#### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
+#### [Handler Methods (for tests)](developer/devenv-creating-handler-methods.md) 
+#### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
+#### [Test Pages](developer/devenv-testing-pages.md)
+#### [UI Handlers](developer/devenv-creating-handler-methods.md)
+<!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
+#### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
+#### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
+#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
+
+### Deploying and Installing
+#### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
+#### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
+#### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
+#### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
+#### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
+
+### Updating
+#### [Overview](developer/devenv-app-life-cycle.md)
+#### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
+#### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+#### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
+#### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
+    
+### Deprecating code
+#### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
+#### [Best Practices for Deprecation of AL Code](developer/devenv-deprecation-guidelines.md)
+#### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
+
+## AL-Go for GitHub
+### [AL-Go Overview](al-go/algo-overview.md)
+### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
+### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
+### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](al-go/algo-register-sandbox-env.md)
+### [Create a Release of Your Application](al-go/algo-create-release-app.md)
+### [Register a Customer Production Environment for Manual Deployment](al-go/algo-register-cust-prod-env.md)
+### [Update AL-Go System Files](al-go/algo-update-system-files.md)
+### [Use Azure KeyVault for Secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
+### [Create Online Development Environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
+### [Create Online Development Environment from GitHub](al-go/algo-create-online-dev-env-github.md)
+### [Set up CI/CD for an Existing Per-Tenant Extension](al-go/algo-setup-cicd-existing-pte.md)
+### [Set up CI/CD for an Existing AppSource App](al-go/algo-setup-cicd-existing-app.md)
+### [Enable KeyVault Access for Your AppSource App during Development and/or Test](al-go/algo-enable-keyvault-app-development.md)
+### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
+### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
+### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
+### [Branching Strategies](al-go/algo-branching-strategy.md)
+
+
 ## Troubleshooting
 ### [Overview](developer/devenv-troubleshooting-overview.md)
 ### Troubleshooting in the client
@@ -890,86 +975,6 @@
 #### [Using Jupyter notebook troubleshooting guides](https://aka.ms/bctelemetrysamples)
 #### [Using Power BI troubleshooting reports](https://aka.ms/bctelemetrysamples)
 #### [Using telemetry to investigate Performance Issues](performance/performance-work-perf-problem.md)
-
-## AL-Go for GitHub
-### [AL-Go Overview](al-go/algo-overview.md)
-### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
-### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
-### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](al-go/algo-register-sandbox-env.md)
-### [Create a Release of Your Application](al-go/algo-create-release-app.md)
-### [Register a Customer Production Environment for Manual Deployment](al-go/algo-register-cust-prod-env.md)
-### [Update AL-Go System Files](al-go/algo-update-system-files.md)
-### [Use Azure KeyVault for Secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
-### [Create Online Development Environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
-### [Create Online Development Environment from GitHub](al-go/algo-create-online-dev-env-github.md)
-### [Set up CI/CD for an Existing Per-Tenant Extension](al-go/algo-setup-cicd-existing-pte.md)
-### [Set up CI/CD for an Existing AppSource App](al-go/algo-setup-cicd-existing-app.md)
-### [Enable KeyVault Access for Your AppSource App during Development and/or Test](al-go/algo-enable-keyvault-app-development.md)
-### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
-### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
-### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
-### [Branching Strategies](al-go/algo-branching-strategy.md)
-<!-- AL programming -->
-## AL Programming
-### [Overview](developer/devenv-reference-overview.md)
-### [Programming in AL](developer/devenv-programming-in-al.md)
-### [FAQ for Developing in AL](developer/devenv-dev-faq.md)
-### [AL Simple Statements](developer/devenv-al-simple-statements.md)  
-### [AL Control Statements](developer/devenv-al-control-statements.md)  
-### [AL Complex Types](developer/devenv-al-complextypes.md)
-### [AL Error Handling](developer/devenv-al-error-handling.md)
-### [Working with AL Methods](developer/devenv-al-methods.md)
-### [System-Defined Variables](developer/devenv-system-defined-variables.md)
-### [Preprocessor Directives in AL](developer/directives/devenv-directives-in-al.md)
-#### [Region Directive](developer/directives/devenv-directive-region.md)
-#### [Pragma Directive](developer/directives/devenv-directive-pragma.md)
-### [Using Access Modifiers in AL](developer/devenv-using-access-modifiers.md)
-### [XML Comments in Code](developer/devenv-xml-comments.md)
-### Code Analysis
-#### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
-#### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
-#### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
-#### [AppSourceCop Analyzer Rules](developer/analyzers/appsourcecop.md)
-#### [CodeCop Analyzer Rules](developer/analyzers/codecop.md)
-#### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
-#### [UICop Analyzer Rules](developer/analyzers/uicop.md)
-### [Isolated Storage](developer/devenv-isolated-storage.md)
-### [File Handling and Text Encoding](developer/devenv-file-handling-and-text-encoding.md)
-### [Flowfields](developer/devenv-flowfields.md)
-### [FlowFields and FlowFilters](developer/devenv-creating-flowfields-and-flowfilters.md)
-### Nonclustered Columnstore Indexes (NCCI)
-#### [NCCI Overview](developer/devenv-ncci-overview.md)
-#### [NCCI and SQL Server](developer/devenv-ncci-and-sql-server.md)
-#### [NCCI Tuning and Tracing](developer/devenv-ncci-tuning-and-tracing.md)
-#### [NCCI Performance](developer/devenv-ncci-performance.md)
-#### [Migrating from SIFT to NCCI](developer/devenv-migrating-from-sift-to-ncci.md)
-### SumIndexField Technology (SIFT)
-#### [SIFT Overview](developer/devenv-sift-technology.md)
-#### [SIFT and SQL Server](developer/devenv-sift-and-sql-server.md)
-#### [SIFT Tuning and Tracing](developer/devenv-sift-tuning-and-tracing.md)
-#### [SIFT Performance](developer/devenv-sift-performance.md)
-### [Number Sequences](developer/devenv-number-sequences.md)
-### [Extensible Enums](developer/devenv-extensible-enums.md)
-### [Protected Variables](developer/devenv-protected-variables.md)
-### [Working with labels](developer/devenv-using-labels.md)
-### Objects
-#### [Table Object](developer/devenv-table-object.md)
-#### [Table Extension Object](developer/devenv-table-ext-object.md)
-#### [Table Keys](developer/devenv-table-keys.md)
-#### [Enums](developer/devenv-extensible-enums.md)
-#### [Page Object](developer/devenv-page-object.md)
-#### [Page Extension Object](developer/devenv-page-ext-object.md)
-#### [Page Customization Object](developer/devenv-page-customization-object.md)
-#### [Report Object](developer/devenv-report-object.md)
-#### [Profile Object](developer/devenv-profile-object.md)
-#### [Codeunit Object](developer/devenv-codeunit-object.md)
-#### [Query Object](developer/devenv-query-object.md)
-#### [XMLPort Object](developer/devenv-xmlport-object.md)
-#### [Control Add-In Object](developer/devenv-control-addin-object.md)
-#### [Entitlement Object](developer/devenv-entitlement-object.md)
-#### [Permissionset Object](developer/devenv-permissionset-object.md)
-#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
-<!-- end AL programming -->
 
 <!-- DO NOT TOUCH - auto-generated sections from here -->
 ## AL Language Reference

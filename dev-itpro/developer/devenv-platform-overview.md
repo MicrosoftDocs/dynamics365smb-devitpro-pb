@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ---
 # AL platform overview
-This article the different parts of the AL platform that are available for extension developers.
+This article introduces the different parts of the AL platform that are available for extension developers.
 
 ## Overview
 Business Central comes with a rich platform of system modules and capabilities that you can leverage in your extensions. 
