@@ -768,8 +768,6 @@
 #### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 #### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
-
-
 ## Application Lifecycle 
 <!-- (deploy, install, testing, upgrade, depreciation, …) -->
 ### Need overview page
@@ -798,7 +796,6 @@
 #### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
 
-
 ### Deploying and Installing
 #### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
 #### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
@@ -812,10 +809,7 @@
 #### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
 #### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
-
-
-
-
+    
 ### Deprecating code
 #### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
 #### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
@@ -848,276 +842,6 @@
 #### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
 ## Troubleshooting
 ### [Troubleshooting Overview](developer/devenv-troubleshooting-overview.md)
-<!--
-## [App Identity](developer/devenv-app-identity.md)
-## [Choosing Runtime Version in AL](developer/devenv-choosing-runtime.md)
-## Working in Sandboxes
-### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
-### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-### [Working with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
-## Configuring the Development Environment
-### [JSON Files](developer/devenv-json-files.md)
-### [The Migration.json File](developer/devenv-migration-json-file.md)
-### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
-### [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
-### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-### [Optimizing Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
-## Compiling, Publishing, and Debugging
-### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
-### [Debugging in AL](developer/devenv-debugging.md)
-### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
-### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
-### [RAD publishing in AL](developer/devenv-rad-publishing.md)
-### [Signing an App Package File](developer/devenv-sign-extension.md)
-### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
-## Working with Projects and Workspaces
-### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
-### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
-## Converting, Upgrading, and Installing Extensions
-### [The Lifecycle of Apps and Extensions for Business Central](developer/devenv-app-life-cycle.md)
-### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
-### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
-### [Extension Types and Scope](developer/devenv-extension-types-and-scope.md)
-### [Moving Between Extension Scopes](developer/devenv-extension-moving-scope.md)
-### FAQ about apps
-#### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
-#### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
-#### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
-#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
-#### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
-### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
-### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
-### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
-### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
-### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
-### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-## Using the System Application
-### [Overview of the System Application](developer/devenv-system-application-overview.md)
-### Creating New Modules in the System Application
-#### [Module Architecture](developer/devenv-blueprint.md)
-#### [Getting Started with Modules](developer/devenv-getting-started.md)
-#### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
-#### [Create a New Module](developer/devenv-new-module.md)
-#### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
-#### [Change a Module](developer/devenv-change-a-module.md)
-## Extending the Base Application
-### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
-### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
-### [Extending Application Areas](developer/devenv-extending-application-areas.md)
-### Examples
-#### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-#### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-#### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-#### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
-#### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
-#### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
-## Events
-### [Events in AL](developer/devenv-events-in-al.md)
-### [Event Types](developer/devenv-event-types.md)
-### [Publishing Events](developer/devenv-publishing-events.md)
-### [Raising Events](developer/devenv-raising-events.md)
-### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
-### [Isolated Events](developer/devenv-events-isolated.md)
-### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
-### [Event Example](developer/devenv-events-example.md)
-### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
-## [Notifications](developer/devenv-notifications-developing.md)
-## Task Scheduler and Job Queue
-### [Task Scheduler](developer/devenv-task-scheduler.md)
-### [Job Queue](developer/devenv-job-queue.md)
-## App Key Vaults for Secrets
-### [Overview](developer/devenv-app-key-vault-overview.md)
-### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
-### [Setting up App Key Vaults for On-premises](administration/setup-app-key-vault-onprem.md)
-### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
-## Tables
-### [Tables Overview](developer/devenv-tables-overview.md)
-### [Table Object](developer/devenv-table-object.md)
-### [System Fields](developer/devenv-table-system-fields.md)
-### [Table Extension Object](developer/devenv-table-ext-object.md)
-### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
-### [View Table Data](developer/devenv-view-table-data.md)
-### [Temporary Tables](developer/devenv-temporary-tables.md)
-### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
-### [Classifying Data](developer/devenv-classifying-data.md)
-### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
-### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
-### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
-## Reading and Writing data
-### [Data Access](administration/optimize-sql-data-access.md)
-### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
-### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
-### [Table Keys and Performance](administration/optimize-sql-table-keys-and-performance.md)
-### [Bulk Inserts](administration/optimize-sql-bulk-inserts.md)
-### [AL Database Methods](administration/optimize-sql-al-Database-methods-and-performance-on-server.md)
-### [Query Objects](administration/optimize-sql-query-objects-and-performance.md)
-### [Using Read Scale-Out for Better Performance](administration/database-read-scale-out-overview.md)
-### Partial Records
-#### [Using Partial Records](developer/devenv-partial-records.md)
-#### [FAQ](developer/devenv-partial-records-faq.md)
-### Migrating Tables and Fields Between Extensions
-#### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
-#### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-#### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-#### [Migration.json File](developer/devenv-migration-json-file.md)
-## Developing Permission Sets and Entitlements
-### [Permissionset Object](developer/devenv-permissionset-object.md)
-### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
-### [Entitlement Object](developer/devenv-entitlement-object.md)
-### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
-### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
-## Pages
-### [Pages Overview](developer/devenv-pages-overview.md)
-### [Page Object](developer/devenv-page-object.md)
-### [Page Extension Object](developer/devenv-page-ext-object.md)
-### [Adding Pages to Tell Me](developer/devenv-al-menusuite-functionality.md)
-### Role Centers
-#### [Designing Role Centers](developer/devenv-designing-role-centers.md)
-#### [Sample Role Center](developer/devenv-simple-role-center-example.md)
-#### [Adding links to the Navigation menu](developer/devenv-adding-menus-to-navigation-pane.md)
-#### [Adding a checklist to the Role Center](administration/onboarding-checklist.md)
-#### [Headlines](developer/devenv-create-role-center-headline.md)
-#### [Cues and Action Tiles](developer/devenv-cues-action-tiles.md)
-### Designing Pages
-#### [Page Types and Layouts](developer/devenv-page-types-and-layouts.md)
-#### List Pages
-##### [Designing List Pages](developer/devenv-designing-list-pages.md)
-##### [Sample List Page](developer/devenv-simple-list-page-example.md)
-##### [Repeater Controls](developer/devenv-repeater-controls.md)
-##### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
-##### [Views](developer/devenv-views.md)
-##### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
-##### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
-##### [Adding Teaching Tips to List Pages](administration/onboarding-teaching-tips-tours.md)
-#### Card Pages
-##### [Designing Card Pages](developer/devenv-designing-card-pages.md)
-##### [Sample Card Page](developer/devenv-simple-card-page-example.md)
-##### [Adding Teaching Tips to Card Pages](administration/onboarding-teaching-tips-tours.md)
-#### Page Parts
-##### [Parts Overview](developer/devenv-designing-parts.md)
-##### [Designing List Parts](developer/devenv-designing-listparts.md)
-##### [Designing Card Parts](developer/devenv-designing-cardparts.md)
-##### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
-<!-- reenable when topics have been written
-##### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) -->
-<!--
-##### [FactBoxes](developer/devenv-adding-a-factbox-to-page.md)
-### Fields
-#### [Arranging Fields on a FastTab](developer/devenv-arranging-fields-on-fasttab.md)
-#### [Grid Control](developer/devenv-arrange-fields-in-rows-and-columns-using-gridlayout-control.md)
-#### [Fixed Control](developer/devenv-arrange-fields-in-rows-and-columns-using-fixedlayout-control.md)
-#### [Field Groups](developer/devenv-field-groups.md)
-#### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
-#### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### Actions
-#### [Actions in AL](developer/devenv-actions-overview.md)
-#### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
-#### [Promoted Actions](developer/devenv-promoted-actions.md)
-### [Page Background Tasks](developer/devenv-page-background-tasks.md)
-### [API Page Type](developer/devenv-api-pagetype.md)
-### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)  
-### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
-## Reports
-### [Reports Overview](developer/devenv-reports.md)
-### [Report Design Overview](developer/devenv-report-design-overview.md)
-### [Report Object](developer/devenv-report-object.md)
-### [Report Extension Object](developer/devenv-report-ext-object.md)
-### [Report Extension Example](developer/devenv-report-ext-example.md)
-### [Defining a Report Dataset](developer/devenv-report-dataset.md)
-### [Request Pages](developer/devenv-request-pages.md)
-### [Report Triggers and Operations](developer/devenv-report-triggers.md)
-### [Adding Reports to Tell Me](developer/devenv-al-menusuite-functionality.md)
-### [Substituting a Report](developer/devenv-substituting-reports.md)
-### [Testing a Report](developer/devenv-testing-reports.md)
-### Report Layouts
-#### [Creating a Word Layout Report](developer/devenv-howto-report-layout.md)
-#### [Creating an RDL Layout Report](developer/devenv-howto-rdl-report-layout.md)  
-#### [Creating an Excel Layout Report](developer/devenv-howto-excel-report-layout.md)  
-#### [Defining Multiple Report Layouts](developer/devenv-multiple-report-layouts.md)
-#### [Defining a Custom Report Render](developer/devenv-report-custom-render.md)
-### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
-### [Adding Barcodes](developer/devenv-report-add-barcodes.md)
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### Developing Printer Extensions
-#### [Printer Extension Overview](developer/devenv-reports-printing.md)
-#### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
-<!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
-<!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
-<!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
-<!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
-<!--
-## Queries
-### [Queries Overview](developer/devenv-query-overview.md)
-### [Query Object](developer/devenv-query-object.md)
-### [Linking and Joining Data Items](developer/devenv-query-links-joins.md)
-### [Filtering](developer/devenv-query-filters.md)
-### [Aggregating Data](developer/devenv-query-totals-grouping.md)
-### [Retrieving Date Data](developer/devenv-query-retrieve-date-data.md)
-### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
-### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
-### [API Query Type](developer/devenv-api-querytype.md)
-## [Interfaces](developer/devenv-interfaces-in-al.md)
-## XMLports
-### [XMLport Overview](developer/devenv-xmlport-overview.md)
-### [XMLport Object](developer/devenv-xmlport-object.md)
-### [Defining an XMLport Schema](developer/devenv-xmlport-schema.md)  
-### [Using Namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
-### [Request Pages](developer/devenv-request-pages.md)
-## [Customizing for User Roles](developer/devenv-role-customization.md)
-## Profiles
-### [Designing Profiles](developer/devenv-design-profiles.md)
-### [Profile Object](developer/devenv-profile-object.md)
-### [Page Customization Object](developer/devenv-page-customization-object.md)
-### [Using Client to Create Profiles](developer/devenv-design-profiles-using-client.md)
-## Linking to the Web Client and App
-### [Web Client URL](developer/devenv-web-client-urls.md)
-### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
-## Formatting Data
-### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)  
-### [About Dates in Business Central](developer/devenv-about-dates.md)
-## Translations
-### [Translations Overview](developer/devenv-translations-overview.md)
-### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-## Developing for the Business Central Mobile App
-### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
-### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
-### [Getting Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
-### [Designing for Different Screen Sizes on Tablet and Phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
-### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
-### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
-### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
-## Instrumenting for Telemetry
-### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-### [Creating Custom Events for Event Log](developer/devenv-instrument-application-for-telemetry-event-log.md)
-## .NET in AL
-### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
-### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
-### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
-### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
-### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
-### Accessing Device Capabilities
-#### [Implementing Camera in AL](developer/devenv-implement-camera-al.md)
-#### [Implementing Location in AL](developer/devenv-implement-location-al.md)
-<!--### Events
-#### [OnAfterDocumentPrintReady](developer/devenv-onafterdocumentprintready-event.md)
-#### [OnAfterSetupPrinters](developer/devenv-onaftersetupprinters-event.md)-->
-<!-- Testing the application -->
-<!--
-## Testing the Application
-### [Testing the Application Overview](developer/devenv-testing-application.md)
-### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
-### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
-### [Test Pages](developer/devenv-testing-pages.md)
-### [UI Handlers](developer/devenv-creating-handler-methods.md)
-<!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
-<!-- ### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
-### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md) -->
-
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
 ## Code Deprecation
@@ -1218,8 +942,7 @@
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 <!-- end AL programming -->
 
-
-<!-- DO NOT TOUCH -->
+<!-- DO NOT TOUCH - auto-generated sections from here -->
 ## AL Language Reference
 ### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
 #### [Warnings Turning into Errors Overview](developer/diagnostics/diagnostics-with-limit-date-overview.md)
