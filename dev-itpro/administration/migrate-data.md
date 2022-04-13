@@ -168,8 +168,8 @@ If the product you selected requires a SQL connection, this page will be present
 
   Specify *SQL Server* for a locally installed SQL Server instance, or *Azure SQL*.
   
-> [!IMPORTANT]
-> Azure SQL Managed Instance are not supported.  
+  > [!IMPORTANT]
+  > Azure SQL Managed Instance is not supported.  
 
 * **SQL Connection string**
 
