@@ -198,7 +198,7 @@ One common use of the `CalcSums` method is to efficiently calculate totals.
 Try to minimize work done in the `OnAfterGetRecord` trigger code. Common performance coding patterns in this trigger are:
 
 - Avoiding `CalcFields` calls. Defer them until the end.
-- Avoiding calling CurrPage.Update()
+- Avoiding `CurrPage.Update()` calls.
 - Avoiding repeated calculations. Move them outside the loop, if possible. 
 - Avoid changing filters. This pattern requires the server to throw away the result set.
 - Never do any database writes here. With more than one user on the system, this will give database locking issues and even deadlock errors.
