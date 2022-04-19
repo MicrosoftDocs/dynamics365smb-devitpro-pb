@@ -3,7 +3,7 @@ title: "Text.Split(List of [Text]) Method"
 description: "Splits a string into a maximum number of substrings based on a collection of separators."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Splits a string into a maximum number of substrings based on a collection of sep
 ```AL
 Result :=   Text.Split(Separators: List of [Text])
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  

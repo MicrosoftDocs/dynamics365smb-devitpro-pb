@@ -2,7 +2,7 @@
 title: "How to Work with a Performance Problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 12/21/2021
+ms.date: 04/01/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,10 +19,10 @@ What do you do if users complain that "it's slow"? In this section, we describe 
 Before getting started on solving a performance-tuning problem, it often helps to define and quantify "slow" and also negotiate acceptable values for execution time of the "slow" operations with users. Learning about the users expectations is key when determining when the performance tuning effort has been successful (or if the expectations are unrealistic). 
 
 You also need to measure how the system performs on the given operation before starting to change anything. This task is sometimes called "establishing a baseline." To define baselines for performance, and to test whether new code or extensions introduce a performance regression, you can use the [Performance Toolkit](../developer/devenv-performance-toolkit.md) extension. The extension makes it easier to simulate and compare user experiences to your baseline. The following are examples of when the extension can help:  
+
 * When you want to ensure that new code doesn't introduce a regression. 
 * In a sandbox environment when, for example, the number of users running the same process increases significantly. 
 * When you want to roll out a new process, or install a new extension. 
-
 
 To solve a performance problem, a common pattern is to do iterations of the following tasks:
 
@@ -65,11 +65,19 @@ If a specific page takes too long to load, it might be due to extensions that ar
 
 Read more about how to use the page inspector to troubleshoot extension performance here [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
 
-## Analyzing performance issues using the AL profiler
+## Analyzing performance issues using the AL Profiler
 
 With the AL Profiler for the AL Language extension you can capture a performance profile of the code that was executed for a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on execution, using top-down and bottom-up call stack views. 
 
+Before capturing a snapshot with a performance profile, you can choose between using instrumentation or sampling for the profile. Instrumentation captures all method calls with precise timings, but has a higher performance load on the NST, the snapshot will be larger and it can take longer to generate and extract the profile from the snapshot. Sampling captures method calls at predefined, repeated intervals. This has a smaller performance load on the NST, but calls shorter than the sampling interval might not be captured, and timings fall in sample buckets. 
+
 Read more about how to use the AL profiler to troubleshoot performance here [AL Profiler Overview](../developer/devenv-al-profiler-overview.md).
+
+## Analyzing performance issues using the in-client Performance Profiler 
+
+The in-client **Performance Profiler** page can also be used to record a slow scenario that can then be analyzed to see what took a long time. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly in the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. It is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. Recording is done in the web client and the collected data is also shown in the web client using various views. There is also an option to download the generated profile content and view it in Visual Studio Code with the standard AL Profiler editor. From there you can use existing options to access the AL code that was slow.
+
+Read more about how to use the in-client profiler to troubleshoot performance here [Performance Profiler Overview](../administration/performance-profiler-overview.md).
 
 ## Which tools are good when?
 
@@ -80,7 +88,8 @@ In the following, you can read about the pros and cons of the different performa
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Very little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject a lot of data into Azure Application Insights. <br> Data collection must happen live. |
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
-| AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. | 
+| AL profiler | Good to troubleshoot performance of a scenario. <br> Very detailed information on where in the code the time is spend. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. |
+| In-client performance profiler | - Good for troubleshooting a performance scenario in the web client.<br>- No developer required to run the tool.| 
 
 
 ## Example - How to deal with a performance problem in a report from an AppSource extension

@@ -3,7 +3,7 @@ title: "CompanyProperty.DisplayName() Method"
 description: "Gets the current company display name."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,10 +24,9 @@ Gets the current company display name.
 DisplayName :=   CompanyProperty.DisplayName()
 ```
 
-
 ## Return Value
 *DisplayName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The display name of the company as specified in the **Display Name** field in the **Company** table. If no display name is specified, the company name that is stored in the **Name** field is returned. 
 
 

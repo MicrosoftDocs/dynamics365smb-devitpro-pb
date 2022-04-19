@@ -73,7 +73,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 19 server instal
 
 1. Download the latest available update for version 19 that is compatible with your version 14.
 
-    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706).
+    To download the latest update, go to [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
   
     The guidelines in this article assume that you're running the latest available update.
 
@@ -265,7 +265,7 @@ In this task, you'll publish the extensions. As minimum, you publish the new bas
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 19 that you started in the previous task.
 
 <!--
 1. Publish version 19 system symbols extension.
@@ -410,7 +410,7 @@ If you have a multitenant deployment, do these steps for each tenant.
     For each extension, run the Sync-NAVApp cmdlet:
 
     ```powershell
-    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewVersion
+    Sync-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "<extension name>" -Version $NewBcVersion
     ```
 
   >[!NOTE]
@@ -461,7 +461,7 @@ If you have a multitenant deployment, do these steps for each tenant.
         You'll have to install the **Application** extension first, otherwise you can't upgrade Microsoft extensions.
 
         ```powershell
-        Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewVersion
+        Install-NAVApp -ServerInstance $NewBcServerInstance -Tenant $TenantId -Name "Application" -Version $NewBcVersion
         ```
     > [!NOTE]
     >

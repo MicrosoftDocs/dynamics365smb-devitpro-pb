@@ -167,12 +167,15 @@ If the product you selected requires a SQL connection, this page will be present
 * **SQL Connection**
 
   Specify *SQL Server* for a locally installed SQL Server instance, or *Azure SQL*.
+  
+  > [!IMPORTANT]
+  > Azure SQL Managed Instance is not supported.  
 
 * **SQL Connection string**
 
   You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
 
-  For example, `Server=MyServer\BCDEMO;Database=BC170;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 17. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
+  For example, `Server=MyServer\BCDEMO;Database=BC180;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 18. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
 
   The following snippets illustrate a couple of connection strings with different formats:  
 

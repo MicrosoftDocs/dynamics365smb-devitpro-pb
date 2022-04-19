@@ -31,8 +31,8 @@ The following list describes the meaning of each of the numbers in a full versio
 
 - `major` is the major version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
-  - `20` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 update in April 2021 and forward
-  - `19` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 update in October 2020 and forward
+  - `20` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 update in April 2022 and forward
+  - `19` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 update in October 2021 and forward
   - `18` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 update in April 2021 and forward
   - `17` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 update in October 2020 and forward  - `18` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 update in April 2021 and forward
   - `17` is the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 update in October 2020 and forward

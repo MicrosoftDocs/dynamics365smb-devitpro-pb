@@ -3,11 +3,12 @@ title: "IntegrationEvent Attribute"
 description: "Specifies that the method is published as an integration type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/19/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -61,6 +62,8 @@ When you set the *GlobalVarAccess* argument to **true**, event subscriber method
 
 For more information about the different event types, see [Event Types](../devenv-event-types.md).
 
+For more information about isolated events, see [Isolated Events](../devenv-events-isolated.md).
+
 ## Example
 
 This example publishes an integration type event by using the OnAddressLineChanged method. The method takes a single text data type parameter.
@@ -98,4 +101,5 @@ codeunit 50103 MySubscribingCodeunit
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   
 [Subscribing to Events](../devenv-subscribing-to-events.md)   
+[Isolated Events](../devenv-events-isolated.md)  
 [Method Attributes](devenv-method-attributes.md)

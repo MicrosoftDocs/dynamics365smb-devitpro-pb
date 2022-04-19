@@ -1,9 +1,9 @@
 ---
-title: "XmlNamespaceManager.LookupPrefix(String, var Text) Method"
+title: "XmlNamespaceManager.LookupPrefix(Text, var Text) Method"
 description: "Finds the prefix declared for the given namespace URI."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlNamespaceManager.LookupPrefix(String, var Text) Method
+# XmlNamespaceManager.LookupPrefix(Text, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Finds the prefix declared for the given namespace URI.
@@ -21,7 +21,7 @@ Finds the prefix declared for the given namespace URI.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlNamespaceManager.LookupPrefix(Uri: String, var Result: Text)
+[Ok := ]  XmlNamespaceManager.LookupPrefix(Uri: Text, var Result: Text)
 ```
 ## Parameters
 *XmlNamespaceManager*  
@@ -29,9 +29,10 @@ Finds the prefix declared for the given namespace URI.
 An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data type.  
 
 *Uri*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The namespace to resolve for the prefix.
         
+
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The matching prefix. If there is no mapped prefix, the method returns an empty string.  
