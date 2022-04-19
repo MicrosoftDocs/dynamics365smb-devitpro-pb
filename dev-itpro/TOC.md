@@ -924,7 +924,7 @@
 #### [Best Practices for Deprecation of AL Code](developer/devenv-deprecation-guidelines.md)
 #### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
 
-## Devops with AL-Go for GitHub
+## DevOps with AL-Go for GitHub
 ### [AL-Go Overview](al-go/algo-overview.md)
 ### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
 ### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
