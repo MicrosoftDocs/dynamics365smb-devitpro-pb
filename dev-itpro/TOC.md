@@ -407,7 +407,7 @@
 #### [Viewing Table Data](developer/devenv-view-table-data.md)
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 
-## AL Programming Guide
+## AL Language
 ### [A tour of the AL language](developer/devenv-programming-in-al.md)
 ### [FAQ for AL Developers](developer/devenv-dev-faq.md)
 
