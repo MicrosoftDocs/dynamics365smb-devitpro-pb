@@ -2,10 +2,9 @@
 title: Component and System Topology
 description: The Business Central architecture includes of three core components, and various additional tools and components.
 ms.custom: na
-ms.date: 04/26/2021
+ms.date: 04/20/2022
 ms.reviewer: na
 ms.topic: overview
-ms.assetid: 275aad2c-ea2c-4291-8381-82b0b92dc1a0
 author: jswymer
 ---
 # [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Component and System Topology
@@ -54,7 +53,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |Excel Add-in|A component that enables users to export data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Excel.|[Setting up the Excel Add-In](../administration/configuring-excel-addin.md)|
 |Page Testability|A [!INCLUDE[server](../developer/includes/server.md)] component for testing pages.||
 |Automated Data Capture System|A system that tracks the movement of items in a warehouse.|[Use Automated Data Capture Systems (ADCS](/dynamics365/business-central/warehouse-use-automated-data-capture-systems-adcs)<br /><br />[!INCLUDE[2020_releasewave1_deprecated](../includes/2020_releasewave1_deprecated.md)]. The VT100 Plug-in is no longer included on the product installation media.|
-|ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Deploying Microsoft Dynamics NAV Windows client Using ClickOnce](/dynamics-nav/deploying-microsoft-dynamics-nav-using-clickonce) in the Dynamics NAV Developer and IT Pro Help.|
+|ClickOnce Installer Tools|Tools for implementing ClickOnce installation for the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)].|[!INCLUDE[2019_releasewave2_deprecated](../includes/2019_releasewave2_deprecated.md)]<br /><br />[Deploying Dynamics NAV Client Using ClickOnce](deploying-dynamics-nav-client-clickonce.md).|
 |NAS Service|A server component that executes business logic without a user interface or user interaction. NAS services in [!INCLUDE[server](../developer/includes/server.md)] support applications such as Microsoft Outlook Integration and the Job Queue.| Instead of using NAS services, we recommend that you use the Task Scheduler (see [Task Scheduler](../developer/devenv-task-scheduler.md). If you decide to use NAS, and want to read more about its configuration, see [Configuring NAS Services](/dynamics-nav/configuring-nas-services) in the Dev and IT Pro Help for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].|
 
 ## See Also
