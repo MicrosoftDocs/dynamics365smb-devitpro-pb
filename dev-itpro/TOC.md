@@ -830,36 +830,9 @@
 #### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 #### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
 
-## Best Practices
-### [Overview](compliance/apptest-bestpracticesforalcode.md)
-### AL Code
-#### [Rules and Guidelines](compliance/apptest-overview.md)
-#### [Naming Conventions](compliance/apptest-bestpracticesforalcode.md)
-#### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
-#### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
-### Restrictions
-#### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
-#### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
-#### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
-### Telemetry
-#### [Adding custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
-#### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
-### [Code Deprecation](developer/devenv-deprecation-guidelines.md)
-### [Documentation](compliance/apptest-userscenario.md)
-### Testing
-#### [Testing your Extension](compliance/apptest-testingyourextension.md)
-#### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
-#### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-### Performance
-#### [Performance Developer Guide](performance/performance-developer.md)
-#### [Analyzing Performance](performance/performance-work-perf-problem.md)
-### Security
-#### [Application Security](security/security-application.md)
-#### [Data Security](security/data-security.md)
-#### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
-## Rules and Guidelines
+## Rules, Guidelines, and Best Practices
 ### [Overview](compliance/apptest-overview.md)
 ### [AL Best Practices](compliance/apptest-bestpracticesforalcode.md)
 ### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
@@ -872,8 +845,34 @@
 ### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
 ### [Walkthrough: Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Walkthrough: Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+### Best Practices
+#### [Overview](compliance/apptest-bestpracticesforalcode.md)
+#### AL Code
+##### [Rules and Guidelines](compliance/apptest-overview.md)
+##### [Naming Conventions](compliance/apptest-bestpracticesforalcode.md)
+##### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
+##### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
+#### Restrictions
+##### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
+##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
+##### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
+#### Telemetry
+##### [Adding custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
+##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Code Deprecation](developer/devenv-deprecation-guidelines.md)
+#### [Documentation](compliance/apptest-userscenario.md)
+#### Testing
+##### [Testing your Extension](compliance/apptest-testingyourextension.md)
+##### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
+##### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+#### Performance
+##### [Performance Developer Guide](performance/performance-developer.md)
+##### [Analyzing Performance](performance/performance-work-perf-problem.md)
+#### Security
+##### [Application Security](security/security-application.md)
+##### [Data Security](security/data-security.md)
+##### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
-
 
 ## Application Lifecycle 
 <!-- (deploy, install, testing, upgrade, depreciation, …) -->
