@@ -63,17 +63,17 @@ The file structure of a ClickOnce deployment is as follows:
   
 When a user installs the application, they run the deployment manifest, and then ClickOnce will automatically install the application.  
   
-## Prepare Users Computers by Installing .NET Framework 4.6.1
+## Prepare Users Computers by Installing .NET Framework 4.8
 
-The [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] requires .NET Framework 4.6.1. Depending on the version of Windows, .NET 4.6.1 Framework might already be installed. If not, then you have two options:
+The [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] requires Microsoft .NET Framework 4.8. Depending on the version of Windows, .NET Framework might already be installed. If not, then you have two options:
 
-1. Users themselves install .NET 4.6.1 Framework on their computers from the ClickOnce online installation web page.
+1. Users themselves install Microsoft .NET Framework 4.8 Framework on their computers from the ClickOnce online installation web page.
 
-   The ClickOnce online installation web page includes a link to download .NET Framework 4.6.1. However, using this option requires that users have administrative rights on their computers. 
+   The ClickOnce online installation web page includes a link to download .NET Framework. However, using this option requires that users have administrative rights on their computers. 
 
-2. An administrator installs install .NET 4.6.1 Framework on users computers. 
+2. An administrator installs install .NET Framework on users computers. 
 
-   For more information about how to install .NET 4.6.1 Framework, see [Install the .NET Framework for developers](https://go.microsoft.com/fwlink/?LinkId=272382).   
+   For more information about how to install .NET Framework, see [Install the .NET Framework for developers](https://go.microsoft.com/fwlink/?LinkId=272382).   
 
 ### Deploying Using ClickOnce Hosted on a File Share
   
@@ -83,18 +83,16 @@ Follow these steps to host on a file share:
   
 1. Install Manifest Generation and Editing Tool (mage.exe) on your computer.
 
-  The mage.exe is installed with Visual Studio, Windows Software Development Kit (SDK) for Windows 8 or 8.1, and Windows 10 SDK. Microsoft Windows SDK for Windows 7 and the .NET Framework 4. The SDK contains a utility named mage.exe, which is required in several of the following steps.
+  The mage.exe is installed with Visual Studio and Windows Software Development Kit (SDK) for Windows 10 SDK. The SDK contains a utility named mage.exe, which is required in several of the following steps.
   
   The mage.exe utility should be located in the equivalent of the following location:  
   
-  `C:\\Program Files \(x86\)\\Microsoft SDKs\\Windows\\v10.0A\\Bin\\NETFX 4.6.1 Tools`  
+  `C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools`  
   
 2. (Optional) Obtain a code signing certificate. This is a certificate that is issued by a certification authority, and will enable you to sign the application in such a way that end users can see that the application is published by the expected provider and, for example, not by a phisher.  
   
   1. If you do not already have a code signing certificate, you will have to obtain one from one of the certification authorities. For a list of certification authorities, see [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=262163).  
-  
   2. You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](https://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate).  
-  
   3. For information about when it is acceptable to skip this step, see [Security Considerations](#Security).  
   
 3. Install the ClickOnce Installer Tools:
@@ -127,7 +125,7 @@ Follow these steps to host on a file share:
         > Microsoft.Dynamics.Nav.Client.exe and Microsoft.Dynamics.Nav.Client.x86.exe have the same assembly identity name, so you must copy only one of these executables. You can choose either file.  
     4. Move ClientUserSettings.config to that folder.  
   
-         This file typically installs to the equivalent of C:\\Program Data\\Microsoft\\Microsoft Dynamics NAV\\NNN\\, or C:\\Users\\*user name*\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\NNN\\, where NN is the version number such as 90, 100 or 110. The exact location depends on your operating system.  
+         This file typically installs to the equivalent of C:\\Program Data\\Microsoft\\Microsoft Dynamics NAV\\NNN\\, or C:\\Users\\*user name*\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\NNN\\, where NNN is the version number such as 140. The exact location depends on your operating system.  
   
 6. Copy the template files. The ClickOnce Installer Tools installation contains template files that will be useful starting points.  
   
@@ -142,7 +140,7 @@ Follow these steps to host on a file share:
          `mage.exe -Update Microsoft.Dynamics.Nav.Client.exe.manifest -FromDirectory .`  
   
         > [!IMPORTANT]  
-        >  You must specify the fully qualified path to mage.exe, such as `"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\Bin\NETFX 4.6.1 Tools\mage.exe"`.  
+        >  You must specify the fully qualified path to mage.exe, such as `"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\Bin\NETFX 4.8 Tools\mage.exe"`.  
 
         The *FromDirectory* parameter will include all files in all subdirectories found within the specified directory. If no directory is specified, such as in the example, mage.exe uses the current directory and subdirectories. For more information, see [Mage.exe](https://msdn.microsoft.com/library/acz3y3te\(v=vs.110\).aspx) in the MSDN Library.  
   
@@ -164,7 +162,7 @@ Follow these steps to host on a file share:
   
 10. Update the deployment manifest.  
   
-    1. At the command promt, change the directory to ClickOnce *Deployment* folder, for example, *C:\\fileshare\\clickonce\\Deployment*.  
+    1. At the command prompt, change the directory to ClickOnce *Deployment* folder, for example, *C:\\fileshare\\clickonce\\Deployment*.  
   
     2. Run this command to change the link to the application manifest and update its hash value.  
   
