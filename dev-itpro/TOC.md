@@ -874,7 +874,7 @@
 <!-- end Rules and Guidelines -->
 
 ## Extension Lifecycle 
-<!-- (deploy, install, testing, upgrade, depreciation, …) -->
+<!-- (deploy, install, testing, upgrade, deprecation, …) -->
 ### [Overview](developer/devenv-lifecycle-overview.md)
 ### Migration
 #### [Generating Delta Files](developer/devenv-generating-delta-files.md)
