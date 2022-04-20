@@ -97,10 +97,10 @@ Follow these steps to host on a file share:
   3. For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
   
 3. Install the ClickOnce Installer Tools:
-    1. On the [!INCLUDE[navnow](includes/navnow_md.md)] installation media (DVD), run setup.exe.
+    1. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD), run setup.exe.
     2. Choose **Custom** installation option, choose **ClickOnce Installer Tools**, and follow the instructions.
 
-    The files will be installed in [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\ClickOnce Installer Tools.  
+    The files will be installed in C:\\Program Files \(x86\)\\Microsoft Dynamics 365 Business Central\\140\\ClickOnce Installer Tools.  
   
 4. Perform a typical installation of the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] as follows:  
   
@@ -108,7 +108,7 @@ Follow these steps to host on a file share:
 
        If not already installed, you will also need to install the [!INCLUDE[server](../developer/includes/server.md)] and database components that the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] connect to.
 
-       Do not install unnecessary client components, such as the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] and the Excel add-in. These add to the download size, and contain special file types that can create problems for a ClickOnce deployment. For example, the Web.config file installed with the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] can create problems when it is hosted on a web server.
+       Do not install unnecessary client components, such as the [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] and the Excel add-in. These add to the download size, and contain special file types that can create problems for a ClickOnce deployment. For example, the Web.config file installed with the [!INCLUDE[nav_dev_short](../developer/includes/nav_dev_short_md.md)] can create problems when it is hosted on a web server.
   
     2. Install relevant language packs.   
     3. Add additional add-ins, if you have any.  
@@ -120,7 +120,7 @@ Follow these steps to host on a file share:
 
     1. Create a file share, for example, that has the name *\\\\fileshare\\clickonce*.  
     2. Create a folder in the file share, such as *\\\\fileshare\\clickonce\\Deployment\\ApplicationFiles*.  
-    3. Copy all the files from [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\RoleTailored Client to this new folder.  
+    3. Copy all the files from C:\\Program Files \(x86\)\\Microsoft Dynamics 365 Business Central\\140\\RoleTailored Client to this new folder.  
 
         > [!IMPORTANT]  
         > Microsoft.Dynamics.Nav.Client.exe and Microsoft.Dynamics.Nav.Client.x86.exe have the same assembly identity name, so you must copy only one of these executables. You can choose either file.  
@@ -130,7 +130,7 @@ Follow these steps to host on a file share:
   
 6. Copy the template files. The ClickOnce Installer Tools installation contains template files that will be useful starting points.  
   
-    Copy the files in [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\ClickOnce Installer Tools\\TemplateFiles to *\\\\fileshare\\clickonce*.  
+    Copy the files in C:\\Program Files \(x86\)\\Microsoft Dynamics 365 Business Central\\140\\ClickOnce Installer Tools\\TemplateFiles to *\\\\fileshare\\clickonce*.  
   
 7. Update the application manifest. The application manifest lists the files that are part of the installation.  
   
@@ -171,9 +171,9 @@ Follow these steps to host on a file share:
   
     3. Open Microsoft.Dynamics.Nav.Client.application file in a text editor, like Notepad, and do the following:  
   
-      1. In the `<assemblyIdentity>` element, set the `name` parameter. For example, you could add the customer’s name to the name, and if you deploy a test and a production server for the customer, then you could add **production** or **test** to the name. You should never change this value after end users have used it to install the [!INCLUDE[navnow](includes/navnow_md.md)] client. The value will not be shown to end users.  
+      1. In the `<assemblyIdentity>` element, set the `name` parameter. For example, you could add the customer’s name to the name, and if you deploy a test and a production server for the customer, then you could add **production** or **test** to the name. You should never change this value after end users have used it to install the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client. The value will not be shown to end users.  
   
-      2. In the `<description>` element, change the parameters as appropriate. For example, you could change the `asmv2:publisher` parameter to be "Microsoft Corporation and \<your company name>", and change the `asmv2:product` parameter to be "[!INCLUDE[navnowlong](includes/navnowlong_md.md)] for \<customer name>". These are the names that the end user will see.  
+      2. In the `<description>` element, change the parameters as appropriate. For example, you could change the `asmv2:publisher` parameter to be "Microsoft Corporation and \<your company name>", and change the `asmv2:product` parameter to be "[!INCLUDE[prod_short](../developer/includes/prod_short.md)] for \<customer name>". These are the names that the end user will see.  
   
       3. In `<deploymentProvider>` element, change the link of the `codebase` parameter to *\\\\fileshare\\clickonce\\Deployment\\Microsoft.Dynamics.Nav.Client.application*. As you can see, it is now pointing to itself so that it is possible to check for updates.  
   
@@ -242,7 +242,7 @@ If you decide to deploy the [!INCLUDE[nav_windows_short](../developer/includes/n
   
 To help you with this process, you can use the **NAVClientInstallation.html** template web page that was installed as part of the ClickOnce Installer Tools. When you try to open that file, you must select the **Accept** check boxes before you can install the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)]. You can design your own web page, as long as the process for the end user is the same. The end user cannot install the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] until he has accepted the software license terms.  
   
-### Upgrading to a New Version of the [!INCLUDE[navnow](includes/navnow_md.md)] Client
+### Upgrading to a New Version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Client
 
 If you want to push a new version of the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] out to end users, you must do the following:  
   
@@ -250,7 +250,7 @@ If you want to push a new version of the [!INCLUDE[nav_windows_short](../develop
   
 - Run `mage.exe -update` to update the deployment manifest's reference to the application manifest as well as its hash value. Update the deployment manifest's version number. Run `mage.exe -sign` to sign the deployment manifest.  
   
-The upgrade check is based on the deployment manifest’s `version`. This is the version of the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] that will be installed if a user installs [!INCLUDE[navnow](includes/navnow_md.md)] for the first time. The deployment manifest also contains a `minimumRequiredVersion`. If a previously installed [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] has a version that is less than `minimumRequiredVersion`, then the user is forced to upgrade the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)]. This will appear similar to the following.  
+The upgrade check is based on the deployment manifest’s `version`. This is the version of the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] that will be installed if a user installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for the first time. The deployment manifest also contains a `minimumRequiredVersion`. If a previously installed [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] has a version that is less than `minimumRequiredVersion`, then the user is forced to upgrade the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)]. This will appear similar to the following.  
 
 ```xml  
 <assemblyIdentity name="Microsoft Dynamics NAV" version="11.0.0.0" … />  
@@ -287,7 +287,7 @@ Installing any application on the local computer requires that you consider whet
 
 The following are limitations of ClickOnce installed on the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)].  
   
- **Command-line arguments** - ClickOnce installed on the [!INCLUDE[navnow](includes/navnow_md.md)] client cannot be run with custom command-line arguments. For example, this affects the following scenarios:  
+ **Command-line arguments** - ClickOnce installed on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client cannot be run with custom command-line arguments. For example, this affects the following scenarios:  
   
 - An end user cannot specify the Home page.  
 - An end user cannot specify a profile. He can only use his default profile.  
@@ -296,7 +296,7 @@ The following are limitations of ClickOnce installed on the [!INCLUDE[nav_window
 - An end user cannot run in full-screen mode.  
 - An end user cannot disable the navigation pane.
 
-**Hyperlinks** - The protocol handler *dynamicsnav://* is not registered during ClickOnce installation, which means that the [!INCLUDE[navnow](includes/navnow_md.md)] client cannot be activated by choosing a hyperlink. This could impact the following scenarios:  
+**Hyperlinks** - The protocol handler *dynamicsnav://* is not registered during ClickOnce installation, which means that the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client cannot be activated by choosing a hyperlink. This could impact the following scenarios:  
   
 - End users cannot send each other links to specific pages.  
 - An end user cannot use the link on a OneNote page.  
