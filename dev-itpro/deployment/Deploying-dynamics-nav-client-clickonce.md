@@ -125,7 +125,7 @@ Follow these steps to host on a file share:
         > Microsoft.Dynamics.Nav.Client.exe and Microsoft.Dynamics.Nav.Client.x86.exe have the same assembly identity name, so you must copy only one of these executables. You can choose either file.  
     4. Move ClientUserSettings.config to that folder.  
   
-         This file typically installs to the equivalent of C:\\Program Data\\Microsoft\\Microsoft Dynamics NAV\\NNN\\, or C:\\Users\\*user name*\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\NNN\\, where NNN is the version number such as 140. The exact location depends on your operating system.  
+         This file typically installs to the equivalent of C:\\Program Data\\Microsoft\\Microsoft Dynamics NAV\\140\\, or C:\\Users\\*user name*\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\140\\. The exact location depends on your operating system.  
   
 6. Copy the template files. The ClickOnce Installer Tools installation contains template files that will be useful starting points.  
   
@@ -252,8 +252,8 @@ If you want to push a new version of the [!INCLUDE[nav_windows_short](../develop
 The upgrade check is based on the deployment manifest’s `version`. This is the version of the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] that will be installed if a user installs [!INCLUDE[prod_short](../developer/includes/prod_short.md)] for the first time. The deployment manifest also contains a `minimumRequiredVersion`. If a previously installed [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)] has a version that is less than `minimumRequiredVersion`, then the user is forced to upgrade the [!INCLUDE[nav_windows_short](../developer/includes/nav_windows_short.md)]. This will appear similar to the following.  
 
 ```xml  
-<assemblyIdentity name="Microsoft Dynamics NAV" version="11.0.0.0" … />  
-  <deployment install="true" minimumRequiredVersion="11.0.0.0">  
+<assemblyIdentity name="Microsoft Dynamics NAV" version="14.0.0.0" … />  
+  <deployment install="true" minimumRequiredVersion="14.0.0.0">  
     <subscription>  
       <update>  
         <beforeApplicationStartup />  
