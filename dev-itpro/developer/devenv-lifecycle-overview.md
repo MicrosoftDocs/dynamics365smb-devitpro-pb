@@ -10,7 +10,9 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
 ---
+
 # Extension lifecycle
+
 This article the different phases a Business Central extension goes through from initial development until it gets deprovisioned.
 
 ## Overview

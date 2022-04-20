@@ -856,10 +856,10 @@
 ##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ##### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
-##### [Adding custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
+##### [Adding Custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code Deprecation](developer/devenv-deprecation-guidelines.md)
-#### [Documentation](compliance/apptest-userscenario.md)
+#### [User Scenarios](compliance/apptest-userscenario.md)
 #### Testing
 ##### [Testing your Extension](compliance/apptest-testingyourextension.md)
 ##### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
@@ -873,7 +873,7 @@
 ##### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
 
-## Application Lifecycle 
+## Extension Lifecycle 
 <!-- (deploy, install, testing, upgrade, depreciation, …) -->
 ### [Overview](developer/devenv-lifecycle-overview.md)
 ### Migration
