@@ -12,11 +12,11 @@ ms.author: solsen
 
 # AL Platform Overview
 
-This article introduces the different parts of the AL platform that are available for extension developers.
+This section introduces the different parts of the AL platform that are available for extension developers.
 
 ## Overview
 
-Business Central comes with a rich platform of system modules and capabilities that you can leverage in your extensions. Getting familiar with the modules in the Business Central system application might save you a lot of time as it contains implementations of many generic tasks you might need.
+[!INCLUDE[prod_short](includes/prod_short.md)] comes with a rich platform of system modules and capabilities that you can leverage in your extensions. Getting familiar with the modules in the [!INCLUDE[prod_short](includes/prod_short.md)] system application might save you a lot of time as it contains implementations of many generic tasks you might need.
 
 Learning how to start background sessions using the task scheduler and job queues can help you offload work from UI sessions.
 
