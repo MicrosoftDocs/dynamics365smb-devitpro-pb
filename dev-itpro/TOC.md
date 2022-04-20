@@ -834,7 +834,6 @@
 <!-- Rules and Guidelines -->
 ## Rules, Guidelines, and Best Practices
 ### [Overview](compliance/apptest-overview.md)
-### [AL Best Practices](compliance/apptest-bestpracticesforalcode.md)
 ### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
 ### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
