@@ -94,7 +94,7 @@ Follow these steps to host on a file share:
   
   2. You can also create a test certificate and use it for testing. For more information, see [How to: Create Your Own Test Certificate](https://msdn.microsoft.com/library/ff699202.aspx) or [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate).  
   
-  3. For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
+  3. For information about when it is acceptable to skip this step, see [Security Considerations](#Security).  
   
 3. Install the ClickOnce Installer Tools:
     1. On the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD), run setup.exe.
@@ -159,7 +159,7 @@ Follow these steps to host on a file share:
   
      `mage.exe -sign Microsoft.Dynamics.Nav.Client.exe.manifest -certfile PartnerPersonalInformationExchange.pfx`  
   
-     Now the application manifest is signed. If you modify it, you will have to sign it again. For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
+     Now the application manifest is signed. If you modify it, you will have to sign it again. For information about when it is acceptable to skip this step, see [Security Considerations](#Security).  
   
 10. Update the deployment manifest.  
   
@@ -181,7 +181,7 @@ Follow these steps to host on a file share:
   
      `mage.exe -sign Microsoft.Dynamics.Nav.Client.application -certfile PartnerPersonalInformationExchange.pfx.`  
   
-     After the deployment manifest is signed, if you modify it, you will have to sign it again. For information about when it is acceptable to skip this step, see [Security Considerations](Deploying-Microsoft-Dynamics-NAV-Using-ClickOnce.md#Security).  
+     After the deployment manifest is signed, if you modify it, you will have to sign it again. For information about when it is acceptable to skip this step, see [Security Considerations](#Security).  
   
 12. Now you should be done with your ClickOnce deployment, so you can test the ClickOnce deployment. To do this, run the Microsoft.Dynamics.Nav.Client.application in the file share, for example, by choosing *\\\\fileshare\\clickonce\\Deployment\\Microsoft.Dynamics.Nav.Client.application*.  
   
