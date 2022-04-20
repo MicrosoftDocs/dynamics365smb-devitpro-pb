@@ -347,7 +347,6 @@
 #### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
 ## Development Environment
-### [Overview](developer/devenv-get-started.md)
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configuring the Development Environment
 #### [JSON Files](developer/devenv-json-files.md)
