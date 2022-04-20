@@ -755,33 +755,6 @@
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 <!-- end AL programming -->
 
-
-## Extensibility
-### Extending the Base Application
-#### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
-#### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
-#### [Extending Application Areas](developer/devenv-extending-application-areas.md)
-#### Examples
-##### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-##### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-##### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
-##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
-##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
-### Using Events 
-#### [Event Types](developer/devenv-event-types.md)
-#### [Publishing Events](developer/devenv-publishing-events.md)
-#### [Raising Events](developer/devenv-raising-events.md)
-#### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
-#### [Isolated Events](developer/devenv-events-isolated.md)
-#### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
-#### [Event Example](developer/devenv-events-example.md)
-#### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
-#### [Notifications](developer/devenv-notifications-developing.md)
-### Developing Client Add-ins 
-#### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
-#### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
-
 ## AL Platform
 ### [Overview](developer/devenv-platform-overview.md)
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
@@ -831,6 +804,31 @@
 #### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
 #### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
+## Extensibility
+### Extending the Base Application
+#### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
+#### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
+#### [Extending Application Areas](developer/devenv-extending-application-areas.md)
+#### Examples
+##### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
+##### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
+##### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
+##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
+##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
+### Using Events 
+#### [Event Types](developer/devenv-event-types.md)
+#### [Publishing Events](developer/devenv-publishing-events.md)
+#### [Raising Events](developer/devenv-raising-events.md)
+#### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
+#### [Isolated Events](developer/devenv-events-isolated.md)
+#### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
+#### [Event Example](developer/devenv-events-example.md)
+#### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
+#### [Notifications](developer/devenv-notifications-developing.md)
+### Developing Client Add-ins 
+#### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
+#### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
 
 ## Best Practices
 ### [Overview](compliance/apptest-bestpracticesforalcode.md)
