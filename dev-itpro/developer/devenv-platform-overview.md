@@ -20,7 +20,7 @@ This section introduces the different parts of the AL platform that are availabl
 
 Learning how to start background sessions using the task scheduler and job queues can help you offload work from UI sessions. For more information, see [Task Scheduler](devenv-task-scheduler.md).
 
-Instrumenting your extension using feature telemetry and custom telemetry can help you monitor the extension after it has been deployed to production. For more information, see [Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md) and [Add Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry).
+Instrumenting your extension using feature telemetry and custom telemetry can help you monitor the extension after it has been deployed to production. For more information, see [Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md).
 
 ## See Also
 
