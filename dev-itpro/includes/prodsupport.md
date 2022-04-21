@@ -2,7 +2,7 @@
 author: edupont04
 ms.topic: include
 ms.reviewer: edupont
-ms.date: 12/28/2021
+ms.date: 04/20/2022
 ms.author: edupont
 ---
 |Issue type             |Site               |
@@ -10,7 +10,7 @@ ms.author: edupont
 |Submit support request on behalf of your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online customers|Start at the [Business Central administration center](../administration/tenant-admin-center.md) where you can easily submit a support request in the Power Platform admin center|
 |Report bug in a preview or beta version|The [MS Collaborate](/collaborate/) site|
 |Collaboration on the AL language and developer experience|The [AL Developer Preview](https://github.com/microsoft/al) GitHub repo|
-|As an ISV, report an issue in production code, such as a problem with Microsoft's application, upgrade, or telemetry|The [Partner Center](https://partner.microsoft.com/dashboard/home) - choose the **Support** section, start a partner request, search for *Business Central*, and then choose the relevant category for *Product Support > Business Central Development* and submit your support request.|
+|As an ISV, report an issue in production code, such as a problem with Microsoft's application, upgrade, or telemetry|The [Partner Center](https://partner.microsoft.com/dashboard/home).  - choose the **Support** section, start a partner request, search for *Business Central*, and then choose the relevant category for *Product Support > Business Central Development* and submit your support request. If you don't see a **Support** section in the left nav, then toggle the **Workspaces** field in the top panel to switch off workspaces. For more information, see [Getting around Partner Center](/partner-center/get-around-partner-center).|
 |Report bug in supported in-market versions of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises|The [Support for business](https://support.serviceshub.microsoft.com/supportforbusiness/productselection?sapId=93d37907-ad94-d591-22e9-593cfa09dd3f) site|
 
 > [!IMPORTANT]
