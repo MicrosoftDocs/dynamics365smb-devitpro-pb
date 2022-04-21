@@ -63,8 +63,10 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 
 | Date      | Topic |
 |--------------|--------------|
+|May 3, 2022 | Permissions and entitlements |
+|April 26, 2022 | Delegated administration of Business Central (GDAP) |
 |March 8, 2022 | Business Central apps in AppSource|
-|February 22, 2022 |  How to use OAuth, when calling Business Central APIs and web services| 
+|February 22, 2022 |  How to use OAuth, when calling Business Central APIs and web services|
 |February 1, 2022 | How we secure your data in Business Central|
 |January 11, 2022 | Universal Code Initiative |
 |December 14, 2021 | Performance Toolkit and Profiler|
@@ -73,15 +75,6 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |November 9, 2021 |  Improvements to data synchronization to Dataverse and Dynamics 365 Sales|
 |October 12, 2021 | Business Central apps in AppSource |
 |September 14, 2021 | How to use OAuth, when calling Business Central APIs and web services|
-|August 31, 2021 | Cloud Migration |
-|August 17, 2021 | Business Central apps in AppSource |
-|June 29, 2021 | DevOps Processes for Per Tenant Extensions | 
-|June 15, 2021 | Working with Dimensions |
-|June 1, 2021 | Performance Toolkit |
-
-
-**Business Central Localization Apps Office Hours Calls**  
-Join the Business Central Localization Apps Office Hours to learn more about how to deliver localization apps for Business Central online and connect with the Microsoft subject matter experts. The calls typically take place on the first Thursday of every month. Register for the calls here: [aka.ms/BCLocOfficeHours](https://aka.ms/BCLocOfficeHours).
 
  > [!NOTE]  
  > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register prior to the call, you can always find the office hours recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).

@@ -31,7 +31,6 @@ There are three kinds of events that a feature can log through the Feature Telem
 * `LogUsage` should be called when the feature is successfully used by a user. 
 * `LogError` should be called when an error must be explicitly sent to telemetry. For example, after a call to a try function, when `Codeunit.Run` returned false, when sending an http response error message, and so on.
 * `LogUptake` should be called when a user changes the uptake state of a feature. There are four uptake states for features:
-
   * `Undiscovered`  
   * `Discovered`  
   * `Set up`  
@@ -68,7 +67,10 @@ Feature names should be short and easy to identify. For example, Retention polic
 |Dimension  | Description or value  |
 |---------|---------|
 |aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
-|alCategory     | **FeatureTelemetry**        |
+|alCategory     | **FeatureTelemetry**.  |
+|alFeatureName  | The name of the feature being tracked.  |
+|alSubCategory     | Holds one of the values **Uptake**, **Usage**, or **Error**.  |
+|alFeatureUptakeStatus| If alSubCategory holds the value **Uptake**, then the update status can hold one the the following values: **Discovered**, **Set up**, **Undiscovered**, or **Used**.
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppVersionMajor     | The major version of the extension that emitted telemetry. |
 |alCallerAppVersionMinor     | The minor version of the extension that emitted telemetry.        |
@@ -78,9 +80,9 @@ Feature names should be short and easy to identify. For example, Retention polic
 |alTenantLicenseState     | The license state of the tenant.        |
 |alIsAdmin     | Whether the current user is a tenant admin or delegated admin.        |
 |alCountryCode     | The country code of Business Central localization.        |
-|alDataClassification|**SystemMetadata**|
-|alObjectId     | **8713**        |
-|alObjectName     | **System Telemetry Logger**        |
+|alDataClassification|**SystemMetadata**. Fixed and set by the Feature Telemetry codeunit.|
+|alObjectId     | **8713**. The object ID of the Feature Telemetry codeunit.        |
+|alObjectName     | **System Telemetry Logger**. The name of the codeunit used by the Feature Telemetry codeunit. |
 |alUserRole| The profile ID associated with the user in the User Personalization table.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the **component** dimension).|
