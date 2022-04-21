@@ -1,5 +1,5 @@
 ---
-title: "Extension lifecycle overview"
+title: "Extension Development Lifecycle Overview"
 description: Explains the lifecycle of an extension.
 ms.custom: na
 ms.date: 04/12/2022
@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Extension lifecycle
+# Extension Development Lifecycle Overview
 
-This section describes the different phases a Business Central extension goes through from initial development until it gets deprovisioned.
+This section describes the different phases a [!INCLUDE[prod_short](includes/prod_short.md)] extension goes through from initial development until it gets deprovisioned.
 
 ## Overview
 
-The application lifecycle is the cyclical software development process that typically involves these areas: plan and track, develop, build and test, deploy, operate, monitor, and learn from discovery.
+The lifecycle is the cyclical software development process that typically involves these areas: plan and track, develop, build and test, deploy, operate, monitor, and learn from discovery. The following illustration outlines the phases involved.
 
 ![The application lifecycle.](../media/application-lifecycle.png "The application lifecycle") 
 
