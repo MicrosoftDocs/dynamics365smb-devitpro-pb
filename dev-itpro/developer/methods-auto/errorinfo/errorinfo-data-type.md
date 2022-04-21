@@ -47,6 +47,8 @@ The following methods are available on instances of the ErrorInfo data type.
 |[Verbosity([Verbosity])](errorinfo-verbosity-method.md)|Specifies the severity level of the error. This can determine whether the error should be sent to telemetry (which is based on the trace level setting of the server).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
