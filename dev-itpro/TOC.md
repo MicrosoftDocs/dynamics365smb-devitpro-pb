@@ -875,7 +875,7 @@
 
 ## Extension Lifecycle 
 <!-- (deploy, install, testing, upgrade, deprecation, …) -->
-### [Overview](developer/devenv-lifecycle-overview.md)
+### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
 ### Migration
 #### [Generating Delta Files](developer/devenv-generating-delta-files.md)
 #### Migrating Tables and Fields Between Extensions
