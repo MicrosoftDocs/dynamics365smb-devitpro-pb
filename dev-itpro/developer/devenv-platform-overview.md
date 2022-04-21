@@ -1,6 +1,6 @@
 ---
-title: "AL platform overview"
-description: Explains the Business Central platform.
+title: "AL Platform Overview"
+description: Introduces and explains the elements that the Business Central platform consists of.
 ms.custom: na
 ms.date: 04/12/2022
 ms.reviewer: na
@@ -12,7 +12,7 @@ ms.author: solsen
 
 # AL Platform Overview
 
-This section introduces the different parts of the AL platform that are available for extension developers.
+This section introduces the different parts of the AL platform that are available for extension developers who want to extend the business functionality of [!INCLUDE[prod_short](includes/prod_short.md)].
 
 ## Overview
 
