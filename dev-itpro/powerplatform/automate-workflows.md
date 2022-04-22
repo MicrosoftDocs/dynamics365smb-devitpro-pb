@@ -21,22 +21,24 @@ Starting in May 2022, an admin can [switch on a feature](../administration/featu
 ## Manually create workflows in Power Automate
 
 1. In your browser, navigate to [powerautomate.microsoft.com](https://powerautomate.microsoft.com), and then sign in.
-2. Choose the **Create** menu item in the navigation pane.
+2. Choose the **Create** menu item in the navigation pane, and off you go.
 
-  There are three ways to create a flow:
+There are three ways to create a flow:
 
-    - **Start from template**  
-    - **Start from blank**  
-    - **Start from a connector**  
+- **Start from template**  
+- **Start from blank**  
+- **Start from a connector**  
 
-  A template is a predefined flow that has been created for you. To use a template, select it and create a connection for each service the template uses. With the **Start from blank** and **Start from a connector** options, you can create a new flow completely from scratch.  
+A template is a predefined flow that has been created for you. To use a template, select it and create a connection for each service the template uses. With the **Start from blank** and **Start from a connector** options, you can create a new flow completely from scratch.  
 
-  In all three cases, search for the **Microsoft [!INCLUDE[prod_long](../includes/prod_long.md)]** connector, choose the relevant trigger or template, and off you go. Power Automate will prompt you to select an environment and company within your [!INCLUDE[prod_short](../includes/prod_short.md)] tenant, plus any conditions in your data that you want to listen for.
+In all three cases, search for the **Microsoft [!INCLUDE[prod_long](../includes/prod_long.md)]** connector, choose the relevant trigger or template, and off you go. Power Automate will prompt you to select an environment and company within your [!INCLUDE[prod_short](../includes/prod_short.md)] tenant, plus any conditions in your data that you want to listen for.
 
-  > [!NOTE]
-  > The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option that you can choose.  
+> [!NOTE]
+> The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option that you can choose.  
 
 At this point, you've successfully connected to your Business Central[!INCLUDE[prod_short](../includes/prod_short.md)] data and are ready to begin building your flow. For more information, see [Create your first flow](/power-automate/getting-started) in the Power Automate content.
+
+## Predefined triggers and templates from Microsoft
 
 Microsoft provides a number of predefined triggers, including the following:  
 
