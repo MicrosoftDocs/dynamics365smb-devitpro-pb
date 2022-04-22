@@ -1,12 +1,13 @@
 ---
-title: "Performance Toolkit Extension"
-description: Test your extensions for performance regressions during the development process. 
+title: Performance Toolkit Extension
+description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
+ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
 ms.topic: conceptual
 ms.author: bholtorf
 ---
@@ -43,10 +44,15 @@ Before running a simulation with change log on, change the **Tag** field to **Ch
 
 Logging all changes to the sales and purchase line significantly added to the duration, and the added load made the other scenarios a bit slower. <!---this might be a note-->
 
-## Configuring a Suite 
-The settings to configure a suite depend on the environment that you want to simulate. The following procedure provides an example for testing multiple sessions, but the steps also apply to a single run. 
+## Configuring a Suite
+
+The settings to configure a suite depend on the environment that you want to simulate. The following procedure provides an example for testing multiple sessions, but the steps also apply to a single run.  
+
+> [!TIP]
+> To use the Business Central Performance Toolkit, you must have the *BC PERF. TOOLKIT* permission set.  
 
 ### To configure a suite
+
 1. Search for **BCPT Suites**, and then choose the related link.
 2. Choose **New** to open the BCPT Suite page.
 3. In the **Code**, **Description**, and **Tag** fields, provide an identifier, some information about the test, and a tag that you can use to find the results of the suite on the Log Entries page.
@@ -65,24 +71,26 @@ The settings to configure a suite depend on the environment that you want to sim
     4. Optional: If you want to run in Single Run mode, or you want to run one of the sessions without applying settings such as minimum and maximum delays, choose the **Run in Foreground** check box. For more information, see [Running in the Background and Foreground](devenv-performance-toolkit.md#running-in-the-background-and-foreground).
 
 ## Starting the Run from PowerShell
+
 After you have installed the binaries and scripts and configured your suite, you can create the credential object and run the tests from PowerShell by using the following commands 
 
 To create the credential object, run the following command:
-```
+
+```powershell
 $Credential = New-Object PSCredential -ArgumentList <user email>,(ConvertTo-SecureString -String <password> -AsPlainText -Force)
 
 ```
- 
+
 To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] online sandbox, run the following command:
 
-```
+```powershell
 RunBCPTTests.ps1 -Environment PROD -AuthorizationType AAD -Credential $Credential -SandboxName <sandbox name> -ClientId <AAD application ID> -TestRunnerPage 149002 -SuiteCode "TRADE-50U" -BCPTTestRunnerInternalFolderPath <path to Internal folder>
 
 ```
 
 To start tests in a [!INCLUDE[prod_short](includes/prod_short.md)] on-premises database, run the following command:
 
-```
+```powershell
 RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Credential -TestRunnerPage 149002 -SuiteCode "TRADE-50U" -ServiceUrl <webclient address> -BCPTTestRunnerInternalFolderPath <path to Internal folder>
 ```
 

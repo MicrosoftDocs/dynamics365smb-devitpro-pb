@@ -33,6 +33,9 @@ Both for tenant-level and for extension-level telemetry, it is possible to craft
 ## Available telemetry
 In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged as traces. Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations:  
 
+<!--
+|Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](telemetry-webservices-access-key-trace.md)|
+-->
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
 ## <a name="enable"></a> Enabling Application Insights

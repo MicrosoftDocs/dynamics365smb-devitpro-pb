@@ -50,7 +50,7 @@ The custom dimensions that are of particular interest for this operation include
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -126,7 +126,7 @@ The following table explains the general dimensions of the **Failed report gener
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -178,7 +178,7 @@ The following table explains the general dimensions of the **Cancellation report
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -240,7 +240,7 @@ The following table explains the general dimensions of the **Report cancelled bu
 
 |Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|
@@ -285,7 +285,7 @@ The following table explains the CustomDimensions included in report generation 
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |sqlExecutes|Specifies the number of SQL statements that the request executed. ||
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. ||
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. ||
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.||
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).||
@@ -307,7 +307,7 @@ Report cancellation
 
 Dimension|Description or value|
 |---------|-----|-----------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
 |alObjectType|**Report**.|

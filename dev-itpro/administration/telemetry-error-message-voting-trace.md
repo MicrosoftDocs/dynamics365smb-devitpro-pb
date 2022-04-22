@@ -21,7 +21,7 @@ When a user gets an error message while working in the application, the message 
 
 If a user selects either **Yes** or **No**, a signal is emitted and recorded in Application Insights. This information can help partners and developers get insight into error messages that users find hard to understand. They can then follow up with the customer to help out.
 
-This voting feature appears on all error messages that are thrown by calls to the [Error(String)](../developer/methods-auto/dialog/dialog-error-string-joker-method.md) and [Error(ErrorInfo)](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dialog/dialog-error-errorinfo-method) methods.
+This voting feature appears on all error messages that are thrown by calls to the [Error(String)](../developer/methods-auto/dialog/dialog-error-string-joker-method.md) and [Error(ErrorInfo)](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md) methods.
 
 ## <a name="succeeded"></a>User gave feedback on error message
 
@@ -32,7 +32,7 @@ Occurs when a use selects either **Yes** or **No** to the question on the error 
 The following table explains the general dimensions included in the trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |message|**User gave feedback on error message: [OK|Not OK]**|
 
 <!-- removed by request |severityLevel|**3**| -->
@@ -44,7 +44,7 @@ The following table explains the custom dimensions included in the trace.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**CL0002**|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that threw the error.|
 |alObjectName|Specifies the ID of the AL object that threw the error.|
 |alObjectType|Specifies the ID of the AL object that threw the error.|
