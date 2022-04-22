@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -3659,6 +3659,9 @@
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
+<!-- Microsoft Power Automate -->
+## Integrating with Microsoft Power Automate
+### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
