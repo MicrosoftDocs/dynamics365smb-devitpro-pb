@@ -66,7 +66,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 
 |Dimension  | Description or value  |
 |---------|---------|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
 |alCategory     | **FeatureTelemetry**.  |
 |alFeatureName  | The name of the feature being tracked.  |
 |alSubCategory     | Holds one of the values **Uptake**, **Usage**, or **Error**.  |
