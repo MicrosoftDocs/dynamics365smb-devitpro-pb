@@ -79,7 +79,7 @@ This table describes the different dimensions of a **Long Running Operation (SQL
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. |
 |extensionId|Specifies the AppID of the extension.|
 |eventId|**RT0005**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID when using Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |clientType|Specifies the type of client that executed the SQL Statement, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |alObjectId|The type of the AL object that executed the SQL statement.|
 |component|Specifies the [!INCLUDE[server](../developer/includes/server.md)] instance name and the platform version.|

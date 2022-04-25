@@ -32,7 +32,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[cloudMigrationCompanies](dynamics_cloudmigrationcompany.md)|cloudMigrationCompanies |Gets the cloudmigrationcompanies of the company.|
-|[cloudMigrationStatus](dynamics_cloudmigrationstatu.md)|cloudMigrationStatus |Gets the cloudmigrationstatus of the company.|
+|[cloudMigrationStatus](dynamics_cloudmigrationstatus.md)|cloudMigrationStatus |Gets the cloudmigrationstatus of the company.|
 |[cloudMigrationStatusDetails](dynamics_cloudmigrationstatusdetail.md)|cloudMigrationStatusDetails |Gets the cloudmigrationstatusdetails of the company.|
 |[tableMappings](dynamics_tablemapping.md)|tableMappings |Gets the tablemappings of the company.|
 |[setupCloudMigration](dynamics_setupcloudmigration.md)|setupCloudMigration |Gets the setupcloudmigration of the company.|
