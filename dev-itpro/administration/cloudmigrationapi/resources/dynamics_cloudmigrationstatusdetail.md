@@ -31,7 +31,7 @@ Represents a cloud migration status detail in [!INCLUDE[prod_short](../../../inc
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[cloudMigrationStatus](dynamics_cloudmigrationstatu.md)|cloudMigrationStatus |Gets the cloudmigrationstatus of the cloudMigrationStatusDetail.|
+|[cloudMigrationStatus](dynamics_cloudmigrationstatus.md)|cloudMigrationStatus |Gets the cloudmigrationstatus of the cloudMigrationStatusDetail.|
 
 ## Properties
 
@@ -69,4 +69,5 @@ Here is a JSON representation of the cloudMigrationStatusDetail resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
+
 [GET cloudMigrationStatusDetail](../api/dynamics_cloudmigrationstatusdetail_get.md)

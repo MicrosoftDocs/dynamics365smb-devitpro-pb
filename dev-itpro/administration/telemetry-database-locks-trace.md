@@ -48,7 +48,7 @@ Occurs when a database lock has timed out.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock. not shown|
@@ -85,7 +85,7 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock.|

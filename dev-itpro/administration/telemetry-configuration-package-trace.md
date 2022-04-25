@@ -29,7 +29,7 @@ The following table explains custom dimensions that are common to all configurat
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alCategory|**RapidStart**|
 |alDataClassification|**SystemMetadata**|
 |clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md). Added in version 20.0.|
