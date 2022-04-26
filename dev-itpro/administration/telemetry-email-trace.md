@@ -40,7 +40,7 @@ Occurs when an email was successfully sent from the client.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alCategory|**Email**|
 |alConnector|Specifies the email-provider connector used to send the email. Possible values include: <ul><li>Current User</li><li>Microsoft 365</li><li>SMTP</li><li>Other custom connectors installed by extensions.</li></ul> The connector is specified on the email accounts that are set up in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Adding Email Accounts](/dynamics365/business-central/admin-how-setup-email#adding-email-accounts).|
 |alDataClassification|**SystemMetadata**|
@@ -70,7 +70,7 @@ Occurs when an email failed to be sent from the client.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alCategory|**Email**|
 |alConnector|Specifies the email-provider connector used to send the email. Possible values include: <ul><li>Current User</li><li>Microsoft 365</li><li>SMTP</li><li>Other custom connectors installed by extensions.</li></ul> The connector is specified on the email accounts that are set up in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Adding Email Accounts](/dynamics365/business-central/admin-how-setup-email#adding-email-accounts).|
 |alDataClassification|**SystemMetadata**|

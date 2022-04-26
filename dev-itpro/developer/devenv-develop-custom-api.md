@@ -216,7 +216,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
     ```
 
 7. Now, repeat the steps 1-6 for **API Car Brand** page.
-8. You can define a **API Car Model** part in **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate **ReferentialConstraints** property in the metadata as below:  
+8. You can define an **API Car Model** part on the **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate the **ReferentialConstraints** property in the metadata as below:  
 
     ```
     <NavigationProperty Name="carModels" Type="Collection(Microsoft.NAV.carModel)" Partner="carBrand" ContainsTarget="true">
@@ -446,6 +446,7 @@ Which will result in following response:
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
 ## Using an API Query Type
+
 If you need to generate a web service endpoint that joins data between different tables, then consider using an API query object. This type of API cannot be used to display data in the user interface and data can only be read (not updated).
 
 For more information, see [API Query Type](devenv-api-querytype.md)

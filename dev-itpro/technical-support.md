@@ -1,11 +1,11 @@
 ---
-title: Technical Support Overview for Dynamics 365 Business Central
+title: Technical Support Overview
 description: Learn about how to support your Business Central customers, online and on-premises, troubleshoot issues, and when to escalate problems to Microsoft.
 author: edupont04
 ms.reviewer: na
 ms.topic: overview
 ms.author: edupont
-ms.date: 11/02/2021
+ms.date: 04/20/2022
 ---
 # Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
