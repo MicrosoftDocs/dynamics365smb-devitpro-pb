@@ -120,4 +120,4 @@ For more information about feature management, see [Enabling Upcoming Features A
 [Report Extension Object](devenv-report-ext-object.md)  
 [Developing a Custom Report Render](devenv-report-custom-render.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
-[Creating an Excel Layout Report](devevn-howto-excel-report-layout.md)  
+[Creating an Excel Layout Report](devenv-howto-excel-report-layout.md)  

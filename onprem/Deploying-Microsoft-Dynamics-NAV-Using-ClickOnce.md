@@ -1,21 +1,22 @@
 ---
-title: "Deploying Microsoft Dynamics NAV Using ClickOnce"
+title: "Dynamics NAV Client connected to Business Central using ClickOnce"
 ms.custom: na
-ms.date: 10/01/2018
+ms.date: 04/20/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.prod: "dynamics-nav-2018"
-ms.assetid: 0a6f16fb-07fe-4c2f-9986-5633d31d1c60
-caps.latest.revision: 42
-manager: edupont
+ms.topic: conceptual
+ms.service: "dynamics365-business-central"
+ms.search.keywords: NAV Windows client
+author: jswymer
 ---
-# Deploying [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] Using ClickOnce
-This article contains instructions for deploying the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] using the ClickOnce deployment technology. ClickOnce allows you to deploy web applications by choosing a link on a web page. ClickOnce is a component of the Microsoft .NET Framework.  
+# Deploying Dynamics NAV Client connected to Business Central Using ClickOnce
+
+This article contains instructions for deploying the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] using the ClickOnce deployment technology. ClickOnce allows you to deploy web applications by choosing a link on a web page. ClickOnce is a component of the Microsoft .NET Framework.  
   
-## ClickOnce installation from the end-user's perspective  
-As an administrator, you wll provide end users with a link to the ClickOnce deployment source, which can point to a file share or a website. The end user will choose the link to the application to install [!INCLUDE[navnow](includes/navnow_md.md)].
+## ClickOnce installation from the end-user's perspective
+
+As an administrator, you wll provide end users with a link to the ClickOnce deployment source, which can point to a file share or a website. The end user will choose the link to the application to install [!INCLUDE[p](../developer/includes/prod_short.md)].
 
 -   The ClickOnce runtime opens with a confirmation dialog box, which asks whether to install the application and includes an **Install** and **Don't Install** button.  
   
