@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 04/25/2022
+ms.date: 04/26/2022
 ms.author: edupont
 ---
 
@@ -16,6 +16,16 @@ As an admin, you can set up [!INCLUDE[prod_short](../includes/prod_short.md)] on
 > [!NOTE]  
 > Users must have a valid account with [!INCLUDE[prod_short](../includes/prod_short.md)] and with Power Automate.  
 
+With Power Automate, you can create business flows directly in-house and rely on citizen developers​. Use Power Automate to connect to various cloud services, such as the following list:​
+
+- Dataverse  
+- Outlook  
+- Teams  
+- Approvals  
+- Excel  
+- SharePoint  
+- Connectors to third party services  
+
 ## Switch on Power Automate flows to be run inside Business Central
 
 Starting in May 2022, an admin can [switch on a feature](../administration/feature-management.md) to make it possible to run a Power Automate flow from most pages. To connect to Power Automate, Azure Active Directory services must access your [!INCLUDE [prod_short](../includes/prod_short.md)]. Once the admin has connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Power Automate, users will see any flows that the organization has added when they choose the **Automate** action in the relevant pages. They can run the flows without leaving [!INCLUDE [prod_short](../includes/prod_short.md)].  
@@ -25,6 +35,19 @@ As the admin, you can try out the new feature for yourself before you switch it 
 ## Add automated workflows
 
 The [!INCLUDE [prod_short](../includes/prod_short.md)] [connector](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps becomes generally available in May 2022. As the admin, you can add flows that will run as automated workflows, or as manually triggered instant flows. If you're inside [!INCLUDE [prod_short](../includes/prod_short.md)], then choose the **Automation** action, and then choose the **Create flow** action. That sends you to [powerautomate.microsoft.com](https://powerautomate.microsoft.com) in a new browser tab. Alternatively, go directly to [powerautomate.microsoft.com](https://powerautomate.microsoft.com), and then create your flows.  
+
+Starting in April 2022, the updated Business Central connector for Power Automate​ gives you even more power. A flow can:
+
+- Filter to a specific page or table with the [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)) action  ​
+- Pass context or parameters to Power Automate​  
+
+  - Environment name, such as PRODUCTION​  
+  - Company, such as Contoso​  
+  - Table ID, such as the table underlying the current page​  
+  - System ID, such as a specific record ID​  
+  - Page ID, meaning the page that the flow was triggered from  
+  - WebClientURL to open a specific page object
+- Enhance the user experience with additional input  
 
 ### To create workflows in Power Automate
 
@@ -44,7 +67,14 @@ In all three cases, search for the **Microsoft [!INCLUDE[prod_long](../includes/
 > [!NOTE]
 > The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option that you can choose.  
 
-At this point, you've successfully connected to your Business Central[!INCLUDE[prod_short](../includes/prod_short.md)] data and are ready to begin building your flow. For more information, see [Create your first flow](/power-automate/getting-started) in the Power Automate content.
+At this point, you've successfully connected to your Business Central[!INCLUDE[prod_short](../includes/prod_short.md)] data and are ready to begin building your flow. For more information, see [Create your first flow](/power-automate/getting-started) in the Power Automate content.  
+
+> [!TIP]
+> Remember to test your flow before you share it with other users. You can test it from inside Power Automate, and the connection to [!INCLUDE [prod_short](../includes/prod_short.md)] runs the various steps automatically. If the flow fails, you can troubleshoot the issue right there as illustrated in the following screenshot.
+
+:::image type="content" source="../media/automate-workflows-test.png" alt-text="A failed step in a flow":::
+
+Once you're ready, share the new flow with the organization. For more information, see [Share a cloud flow](/power-automate/create-team-flows).  
 
 ## Predefined triggers and templates from Microsoft
 
@@ -91,7 +121,7 @@ The **Find records (V3)** action finds records in the same way as [filter expres
 
 ## Telemetry
 
-We recommend that our partners use the [!INCLUDE [prod_short](../includes/prod_short.md)] Power BI app to keep track of workflows. It shows usage of connectors for tenants that you manage or own​ and uses any app insights​ telemetry that​ you have set up in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
+We recommend that our partners use the [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry app in Power BI to keep track of workflows. It shows usage of connectors for tenants that you manage or own​ and uses any app insights​ telemetry that​ you have set up in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
 Get the app at [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport).  
 
