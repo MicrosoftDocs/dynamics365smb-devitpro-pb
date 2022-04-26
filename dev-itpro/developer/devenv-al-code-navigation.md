@@ -1,6 +1,6 @@
 ---
 title: "AL Code Navigation"
-description: "This topic describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central." 
+description: "This article describes how to use the Go To Definition feature when debugging the AL code in Dynamics 365 Business Central." 
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -17,7 +17,7 @@ When you develop an AL extension, you may want to navigate around the source cod
 
 ## Go To Definition
 
-The **Go to Definition** feature navigates to the source of a type and opens the result in a new tab. You can use the `F12` shortcut key or right-click and select the **Go to Definition** feature from the right-click menu. The **Go to Definition** opens the source in the `.dal` format that contains the base application code. For example, the base application code may contain table metadata and application methods. In the following illustration, the Address type and the HasAddress type open the `Customer.dal` file and locates the reference code of those types by using the Go To Definition feature. 
+The **Go to Definition** feature navigates to the source of a type and opens the result in a new tab. You can use the `F12` shortcut key or right-click and select the **Go to Definition** feature from the right-click menu. The **Go to Definition** opens the source in the `.dal` format that contains the base application code. For example, the base application code may contain table metadata and application methods. In the following illustration, the Address type and the HasAddress type open the `Customer.dal` file and locate the reference code of those types by using the **Go To Definition** feature. 
 
 ![F12.](media/F12.gif "Go to Definition")
 
