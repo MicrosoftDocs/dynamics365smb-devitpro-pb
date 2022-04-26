@@ -40,7 +40,7 @@ To create an application database, for either a single-tenant or multitenant dep
 
 - If you create a new database, the cmdlet will add a database in SQL Server. The database includes the tables and data required for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application database. The cmdlet creates a master data file (MDF) and log data file (LDF). Using the cmdlet, you can set the database name, the collation, and where to store the data files. Other database options are set for you.
 
-- If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application tables and data. You configure a database beforehand, setting options that aren't done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning), and more.
+- If you use the cmdlet with an existing database, the cmdlet modifies the existing database to include [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application tables and data. You configure a database beforehand, setting options that aren't done by the cmdlet, such as options for the data files (MDF/NDF/LDF) and their filegroups, [table partitioning](../administration/optimize-sql-data-access.md), and more.
 
 > [!TIP]
 > Starting in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, the application database will automatically include the platform [symbols](../upgrade/upgrade-overview-v15.md#Symbols).

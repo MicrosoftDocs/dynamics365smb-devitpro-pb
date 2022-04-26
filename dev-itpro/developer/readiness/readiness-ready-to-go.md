@@ -13,24 +13,23 @@ ms.author: solsen
 
 ![ReadyToGo Banner.](../media/readytogo-banner.png)
 
-## Roadmap and what’s new 
+## Roadmap and what’s new
 
 **Overall roadmap**  
-Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/roadmap/business-central/) 
+Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/roadmap/business-central/)
 
 **What’s new in Business Central**  
 Find what’s new and planned [here](/dynamics365/business-central/product-news)
 
 **Release plan landing page**  
-Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](/dynamics365/release-plans/) 
+Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](/dynamics365/release-plans/)
 
 **Minor updates**  
-Find the latest minor update here: [aka.ms/BCLastMinorUpdate](../../whatsnew/whatsnew-update-17-5.md) 
+Find the latest minor update here: [aka.ms/BCLastMinorUpdate](../../whatsnew/whatsnew-update-17-5.md)
 
-
-## Country availability and supported languages 
+## Country availability and supported languages  
 **Supported countries, regions and languages**  
-Find the countries/regions where Business Central is available and which languages are supported: [aka.ms/BCCountries](../../compliance/apptest-countries-and-translations.md)
+Find the countries/regions where Business Central is available and discover which languages are supported: [aka.ms/BCCountries](../../compliance/apptest-countries-and-translations.md)
 
 ## Training and coaching 
 **ISV Development Centers**  
@@ -59,7 +58,7 @@ Use the GitHub forum to post questions about Visual Studio Code and AL Language 
 Join the conversation about Business Central for partners on Yammer: [aka.ms/BCYammer](https://aka.ms/bcyammer)  
 
 **Business Central Office Hours Calls**  
-Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from January 2021 throughout June 2021 below. Register for the live calls at [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours) and find on-demand recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficehoursRecordings).
+Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from below. Register for the live calls at [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours) and find on-demand recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficehoursRecordings).
 
 | Date      | Topic |
 |--------------|--------------|
@@ -77,7 +76,7 @@ Join the Business Central Office Hours to learn more and connect with the Busine
 |September 14, 2021 | How to use OAuth, when calling Business Central APIs and web services|
 
  > [!NOTE]  
- > If you’ve registered for a call, you will receive an email with a link to the on-demand recording approximately one week after the call. If you didn’t register prior to the call, you can always find the office hours recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
+ > You can always find the office hours recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
 
 ## Social
 
@@ -93,7 +92,7 @@ Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.micr
 **Blog for Decision Makers**  
 The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
 
-## Migration  
+## Migration
 **Transitioning GP and NAV customers to Business Central**  
 Discover assets for transitioning Dynamics GP and Dynamics NAV customers to Business Central: [aka.ms/BCMigrations](https://aka.ms/BCmigrations)
 
