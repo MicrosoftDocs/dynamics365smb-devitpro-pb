@@ -74,7 +74,7 @@ When this is set to `true` in the `app.json` file of extension A, the source cod
 
 ### includeSourceInSymbolFile
 
-When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code which is accessed by using the **Downloading Symbols** functionality, contains symbols, source code, and all other resources of extension A. **Go to Definition** to view the code also depends on this property. The default value of `includesourceInSymbolFile` is `false`.
+When this is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code which is accessed by using the **Downloading Symbols** functionality, contains symbols, source code, and all other resources of extension A. When `includeSourceInSymbolFile` is set to `false`, the source isn't available in the symbol files and you can't use **Go to Definition** to view source. You can, however, still extend, get IntelliSense for, and call functionality in extension A by relying on its exposed symbols and signatures. The default value of `includesourceInSymbolFile` is `false`.
 
 ### Example JSON file
 
