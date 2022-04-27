@@ -107,7 +107,7 @@ It is a requirement for enabling overriding the resource policy, that you have a
 > [!IMPORTANT]  
 > Resource exposure policy overrides can be used to dynamically grant users of a given AAD tenant ID access. However, the users performing the action, such as debugging, must be delegated admins on the target environment.
 
-For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md).
+For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md). Note that for [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for AppSource extensions.
 
 
 ### The `BC-ResourceExposurePolicy-Overrides` secret
