@@ -56,8 +56,11 @@ Unless you have specified the `[NonDebuggable]` attribute on methods and variabl
 
 #### When should I set `allowDebugging` to `true`?
 
-The default value of the `allowDebugging` flag is `false`. It is recommended that you only set this flag to `true` if you trust who is extending your extension. If `allowDebugging` is set to `true` anyone who extends your code has access to debug into it. If you want to allow only some to have access to your code, you can override the resource policy. For more information, see [Overriding the resource policy](devenv-security-settings-and-ip-protection.md#overriding-the-resource-policy) in this topic.
+The default value of the `allowDebugging` flag is `false`. If `allowDebugging` is set to `true` anyone who extends your code has access to debug into it.
 
+It's not possible to both allow debugging and **Go to Definition**, and still protect source from being extracted through the debug experience, for example, by using third party Visual Studio Code tools. For AppSource apps it is recommended to limit access to source by setting the `resourceExposurePolicy` flags to `false`, and then rely on the ability to grant yourself and trusted reseller partners individual access, possibly time-limited, through the dynamic override of the resource policy.For more information, see [Overriding the resource policy](devenv-security-settings-and-ip-protection.md#overriding-the-resource-policy) in this article.
+
+For per-tenant extensions, if the customer owns the IP, we recommend to at least allow debugging and include source in symbols to make troubleshooting, extracting IP from the service, and working across resellers easier.
 
 #### When can code be viewed even though the `allowDebugging` flag is set to `false`?
 
