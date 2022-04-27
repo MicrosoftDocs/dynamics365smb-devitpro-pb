@@ -58,7 +58,7 @@ Unless you have specified the `[NonDebuggable]` attribute on methods and variabl
 
 The default value of the `allowDebugging` flag is `false`. If `allowDebugging` is set to `true` anyone who extends your code has access to debug into it.
 
-It's not possible to both allow debugging and **Go to Definition**, and still protect source from being extracted through the debug experience, for example, by using third party Visual Studio Code tools. For AppSource apps it is recommended to limit access to source by setting the `resourceExposurePolicy` flags to `false`, and then rely on the ability to grant yourself and trusted reseller partners individual access, possibly time-limited, through the dynamic override of the resource policy.For more information, see [Overriding the resource policy](devenv-security-settings-and-ip-protection.md#overriding-the-resource-policy) in this article.
+It is, however, not possible to both allow debugging and **Go to Definition**, and still protect source from being extracted through the debug experience, for example, by using third party Visual Studio Code tools. For AppSource apps it is therefore recommended to limit access to source by setting the `resourceExposurePolicy` flags to `false`, and then rely on the ability to grant yourself and trusted reseller partners individual access, possibly time-limited, through the dynamic override of the resource policy. For more information, see [Overriding the resource policy](devenv-security-settings-and-ip-protection.md#overriding-the-resource-policy) in this article.
 
 For per-tenant extensions, if the customer owns the IP, we recommend to at least allow debugging and include source in symbols to make troubleshooting, extracting IP from the service, and working across resellers easier.
 
@@ -67,7 +67,6 @@ For per-tenant extensions, if the customer owns the IP, we recommend to at least
 There are a few cases where code can be debugged into despite the `allowDebugging` flag has been set to `false`. These are:
 
 - Someone will still be able to view your code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource.
-- Custom external tools for AL might get access to the DAL information exposed by the debugger by listening to debugger events triggered by Visual Studio Code.
  
 ### allowDownloadingSource
 
