@@ -1,5 +1,5 @@
 ---
-title: Security Overvire
+title: Security Overview
 description: Get an overview of the articles about security in Business Central, so that you can configure your solution.
 author: jswymer
 
