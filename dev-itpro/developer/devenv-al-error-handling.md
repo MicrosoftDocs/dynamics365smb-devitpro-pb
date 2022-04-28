@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # AL Error Handling
 
-AL has many error handling features that can help you deal with unexpected situations that occur when code is run. This section contains articles about using these methods in AL to handle errors that occur during code execution, while making sure that your application has a consistent user interface. 
+The AL language has many error handling features, which can help you deal with unexpected situations that occur when code is run. This section contains articles about using these methods in AL to handle errors that occur during code execution, while making sure that your application has a consistent user interface. 
 
 The following articles introduce error handling in AL:
 
