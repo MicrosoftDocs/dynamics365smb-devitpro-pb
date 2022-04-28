@@ -136,7 +136,7 @@ To follow the example from above, where a relation between the native table **Ac
 
 To create native-to-virtual table relations a shared key is needed in order to establish a foreign key relationship. In the Account and Sales Order scenario, the Account Number in the Account table must be identical to the Customer Number in the [!INCLUDE[prod_short](../includes/prod_short.md)] Customer table.
 
-To set up synchronization between Microsoft Dataverse and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
+To set up synchronization between Microsoft Dataverse and [!INCLUDE[prod_short](../includes/prod_short.md)], follow the [guide](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection). To get started use the **Dataverse Connection Setup** assisted setup guide in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 A customization to the synchronization is needed, because the customer number is not synced with Dataverse by default. The code in the example below adds the field mapping to the synchronization. In this snippet the synchronization is uni-directional. In this case, [!INCLUDE[prod_short](../includes/prod_short.md)] will be the main, pushing account number to Microsoft Dataverse.
 
