@@ -2,7 +2,7 @@
 title: "Set up the add-ins for Outlook integration with Business Central on-premises"
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 04/22/2022
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,6 +36,9 @@ For more information about what you do with the add-ins, see [Using Business Cen
 The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. For information about [!INCLUDE [prod_short](../includes/prod_short.md)] online, see [Get the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook) in the business functionality content.
 
 For on-premises environments, there are different options for deploying the add-ins. The option that you choose will depend on your organizations security policies, the Business Central environment, and how much control over installing the add-in that you want to give users. For example, you can choose to install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article. 
+
+> [!IMPORTANT]
+> Working with multiple environments? The Business Central add-in for Outlook is designed to work with a single Business Central environment. When the add-in is installed, the name of the environment is included in the add-in's manifest. This configuration means that the add-in will only connect to the environment that it was installed from. To use the add-in with a different environment, you'll open the environment and install the add-in again.
 
 ### Mail server
 
@@ -288,3 +291,4 @@ To deploy both the **Contact Insight** and **Document View** add-ins, users run 
 
 [Deploying Business Central](../deployment/deployment.md)  
 [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[FAQ](/dynamics365/business-central/ui-outlook-addin-faq)  

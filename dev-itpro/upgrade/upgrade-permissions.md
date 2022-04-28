@@ -96,7 +96,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 ## Continue using the permission sets defined as data
 
 > [!NOTE]
-> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](deprecated-features-w1.md#permissions).
+> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](deprecated-features-w1.md).
 
 Your application can use permission sets from various sources, like Microsoft, partners, extensions, and user-defined permission sets. When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database, even after upgrade. If you have customized Microsoft permission sets, you'll probably want to keep them up to date with the latest from Business Central.
 

@@ -30,31 +30,31 @@ Represents a status record of the cloud migration in [!INCLUDE[prod_short](../..
 
 The cloudMigrationStatus resource type offers a bound action called `disableReplication` which disable replications the corresponding cloudMigrationStatus batch.
 This is illustrated in the following example:
-`DISABLEREPLICATION https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatuss({id})/Microsoft.NAV.disableReplication`
+`DISABLEREPLICATION https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatus({id})/Microsoft.NAV.disableReplication`
 
 The response has no content; the response code is 204.
 
 The cloudMigrationStatus resource type offers a bound action called `refreshStatus` which refresh statuss the corresponding cloudMigrationStatus batch.
 This is illustrated in the following example:
-`REFRESHSTATUS https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatuss({id})/Microsoft.NAV.refreshStatus`
+`REFRESHSTATUS https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatus({id})/Microsoft.NAV.refreshStatus`
 
 The response has no content; the response code is 204.
 
 The cloudMigrationStatus resource type offers a bound action called `resetCloudData` which reset cloud datas the corresponding cloudMigrationStatus batch.
 This is illustrated in the following example:
-`RESETCLOUDDATA https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatuss({id})/Microsoft.NAV.resetCloudData`
+`RESETCLOUDDATA https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatus({id})/Microsoft.NAV.resetCloudData`
 
 The response has no content; the response code is 204.
 
 The cloudMigrationStatus resource type offers a bound action called `runDataUpgrade` which run data upgrades the corresponding cloudMigrationStatus batch.
 This is illustrated in the following example:
-`RUNDATAUPGRADE https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatuss({id})/Microsoft.NAV.runDataUpgrade`
+`RUNDATAUPGRADE https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatus({id})/Microsoft.NAV.runDataUpgrade`
 
 The response has no content; the response code is 204.
 
 The cloudMigrationStatus resource type offers a bound action called `runReplication` which run replications the corresponding cloudMigrationStatus batch.
 This is illustrated in the following example:
-`RUNREPLICATION https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatuss({id})/Microsoft.NAV.runReplication`
+`RUNREPLICATION https://<server address>:<server API port>/<server instance name>/api/v1.0/companies({id})/cloudMigrationStatus({id})/Microsoft.NAV.runReplication`
 
 The response has no content; the response code is 204.
 
@@ -106,4 +106,5 @@ Here is a JSON representation of the cloudMigrationStatus resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
+
 [GET cloudMigrationStatus](../api/dynamics_cloudmigrationstatus_get.md)

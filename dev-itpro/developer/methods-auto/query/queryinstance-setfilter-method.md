@@ -67,7 +67,7 @@ Query.Read;
   
  You can have multiple calls to the **SetFilter** method. If **SetFilter** method calls set filters on different columns, then the filters are combined and applied to the dataset. If consecutive **SetFilter** method calls set filters on the same column, then the last **SetFilter** method call is applied to the column.  
   
- In addition to the **SetFilter** method, you can apply filters to a query using the [SetRange Method \(Query\)](../library.md) method, the **FilterGroup** method, and the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
+ In addition to the **SetFilter** method, you can apply filters to a query using the [SetRange Method \(Query\)](../library.md) method, the **FilterGroup** method, and the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataitemtablefilter-property) and [ColumnFilter Property](../../properties/devenv-columnfilter-property.md).  
   
 |If the **SetFilter** method...|then...|  
 |--------------------------------------|-------------|  

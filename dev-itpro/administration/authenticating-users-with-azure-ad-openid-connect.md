@@ -336,25 +336,25 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 1. Set the `ClientServicesCredentialType` key to `AccessControlService`.
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -ServerInstance BC200 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance BC200 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
     ```
 
 2. Set the `AadApplicationId` key to the application (client) ID of the registered application for Business Central in Azure AD.
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -ServerInstance $BCServerInstanceName -KeyName AadApplicationId -KeyValue $AADApplicationId
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadApplicationId -KeyValue $AADApplicationId
     ```
 
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadApplicationId "44444444-cccc-5555-dddd-666666666666"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadApplicationId "44444444-cccc-5555-dddd-666666666666"
     ```
 
 3. Set the `AadAuthorityUri` key.
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<AzureADTenantID>"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<AzureADTenantID>"
     ```
 
     # [Single-tenant](#tab/singletenant)
@@ -364,7 +364,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     For example:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/11111111-aaaa-2222-bbbb-333333333333"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance $BCServerInstanceName -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/11111111-aaaa-2222-bbbb-333333333333"
     ```
 
     # [Multitenant-tenant](#tab/multitenant)

@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # AL Control Statements
 
-AL code consists of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  
+AL code consists of one or more statements, which are executed sequentially in top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
 
@@ -21,7 +21,7 @@ The control structures in AL are divided into the following main groups, as desc
 - [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)  
 
 > [!NOTE]  
-> In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure is not necessary to get the code to compile, but rather to improve readability.
+> In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure isn't necessary to get the code to compile, but rather to improve readability.
 
 ## AL compound statements
 
@@ -36,11 +36,11 @@ begin
 end;  
 ```  
 
-The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end does not cause an error because it is interpreted by the compiler as an empty statement.  
+The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end doesn't cause an error because it's interpreted by the compiler as an empty statement.  
 
 ## Blocks  
 
-The begin-end structure is also called a *block*. Blocks can be very useful to refer to the other control structures in AL.  
+The begin-end structure is also called a *block*. Blocks can be useful to refer to the other control structures in AL.  
 
 When begin follows then, else, or do, it should be on the same line and preceded by one space character.  
 
@@ -105,17 +105,17 @@ If *`<Condition1>`* is false, then nothing is executed. If *`<Condition1>`* and 
 > [!NOTE]  
 > A semicolon in front of an else statement is not allowed.  
 
-Reading several nested if-then-else statements can be very confusing but generally, an else statement belongs to the last if statement that lacks an else statement.  
+Reading several nested if-then-else statements can be confusing but generally, an else statement belongs to the last if statement that lacks an else statement.  
 
 #### Programming conventions  
 
 - If and then should be on the same line. else should be on a separate line.
 
-- If there are many or long expressions, then should be on a new line and be aligned with if.  
+- If there are many or long expressions, then should be on a new line and be aligned with `if`.  
 
-- When you write if expressions with then and else parts, write them so that the then result is more probable than the else one.  
+- When you write if expressions with then and else parts, write them so that the `then` result is more probable than the `else` one.  
 
-- If the last statement in the then part of an if-then-else statement is an exit or an error, do not continue with an else statement.  
+- If the last statement in the `then` part of an `if-then-else` statement is an `exit` or an `error`, don't continue with an `else` statement.  
 
 #### Example  
 
@@ -206,13 +206,13 @@ In this definition, the result of *`<Expression>`* is matched against each value
 
 Case statements are also called multiple option statements and are typically used when you must choose between more than two different actions. The method of the case statement is as follows:  
 
-- The *`<Expression>`* is evaluated, and the first matching value set executes the associated statement, if there is one.  
+- The *`<Expression>`* is evaluated, and the first matching value set executes the associated statement, if there's one.  
 
 - If no value set matches the value of the expression and the optional else part has been omitted, then no action is taken. If the optional else part is used, then the associated statement is executed.  
 
 The data type of the value sets must be the same as the data type of *`<Expression>`* or at least be convertible to the same data type.  
 
-In most cases, the data type of the value sets are converted to the date type of the evaluated expression. The only exception is if the evaluated expression is a Code variable. If the evaluated expression is a Code variable, then the value sets are not converted to the Code data type.  
+In most cases, the data type of the value sets is converted to the date type of the evaluated expression. The only exception is if the evaluated expression is a Code variable. If the evaluated expression is a Code variable, then the value sets aren't converted to the Code data type.  
 
 > [!NOTE]  
 > This type conversion can cause an overflow at run time if the resulting data type cannot hold the values of the datasets.  
@@ -221,7 +221,7 @@ For more information about Code variables, see [Code Data Type](./methods-auto/l
 
 #### Programming conventions
 
-When you use a case statement, indent the value sets by four character spaces. If you have two or more value sets on the same line, then separate them by commas without spaces. The last value set on a line is immediately followed by a colon without a preceding space. The action starts on the line after the value set and is further indented by four character spaces. If there is a begin, then it should be put on a separate line unless it follows else. If a begin follows an else, then it should be on the same line as else.  
+When you use a case statement, indent the value sets by four character spaces. If you've two or more value sets on the same line, then separate them by commas without spaces. The last value set on a line is immediately followed by a colon without a preceding space. The action starts on the line after the value set and is further indented by four character spaces. If there's a begin, then it should be put on a separate line unless it follows else. If a begin follows an else, then it should be on the same line as else.  
 
 If there are more than two alternatives, use a case statement. Otherwise, use an if-then-else statement.  
 
@@ -245,8 +245,9 @@ case Field of
 end;  
 ```  
 
-#### Example  
-The following AL code prints various messages depending on the value of *Number*. If the value of *Number* does not match any of the entries in the case structure, then the else entry is used as the default.  
+#### Example
+
+The following AL code prints various messages depending on the value of *Number*. If the value of *Number* doesn't match any of the entries in the case structure, then the else entry is used as the default.  
  
 
 ```AL 
@@ -260,8 +261,9 @@ else
 end;  
 ```
 
-#### Example  
-The following AL code shows how value sets in a case statement are evaluated if the expression is a Code data type.
+#### Example
+
+The following AL code shows how value sets in a `case` statement are evaluated if the expression is a Code data type.
 
 ```AL 
 MyCode := 'ABC';  
@@ -282,7 +284,7 @@ var
     MyCode : Code[10];
 ```  
 
-The value set 'abc' is not converted because the evaluated expression MyCode is a code variable.  
+The value set 'abc' isn't converted because the evaluated expression MyCode is a code variable.  
 
 ## AL repetitive statements
 
@@ -292,7 +294,7 @@ A repetitive statement is also known as a loop. The following table shows the lo
 |-----------------------|---------------------------------------|  
 |for|Repeats the inner statement until a counter variable equals the maximum or minimum value specified.|  
 |foreach|Repeats the inner statement for each statement in a List, XmlNodeList, XmlAttributeCollection, or JsonArray.|
-|while|Repeats the inner statement as long as the specified condition is **true**. The statement in a loop of this kind is repeated 0 or more times.|  
+|while|Repeats the inner statement as long as the specified condition is **true**. The statement in a loop of this kind is repeated zero or more times.|  
 |repeat|Repeats the inner statements until the specified conditions evaluate to **true**. The statements in a loop of this kind are always executed at least one time.|  
 
 
@@ -312,11 +314,11 @@ for <Control Variable> := <Start Number> downto <End Number> do
 
  The data type of *`<Control Variable>`*, *`<Start Number>`*, and *`<End Number>`* must be Boolean, number, time, or date. 
 
- Use for-to and for-downto statements when you want to execute code a specific number of times. The <*Control Variable*> controls the number of times that the code of the inner statement is executed according to the following:  
+ Use `for-to` and `for-downto` statements when you want to execute code a specific number of times. The <*Control Variable*> controls the number of times that the code of the inner statement is executed according to the following:  
 
-- In a for-to loop statement, the *`<Control Variable>`* value is increased by one after each iteration. The inner *`<Statement>`* is executed repeatedly until the `*<Start Number>`* value is greater than the `*<End Number>*` value.  
+- In a `for-to` loop statement, the *`<Control Variable>`* value is increased by one after each iteration. The inner *`<Statement>`* is executed repeatedly until the `*<Start Number>`* value is greater than the `*<End Number>*` value.  
 
-- In a for-downto loop statement, the *`<Control Variable>`* value is decreased by one after each iteration. The inner *`<Statement>`* is executed repeatedly until the *`<Start Number>`* value is less than the *`<End Number>`* value.  
+- In a `for-downto` loop statement, the *`<Control Variable>`* value is decreased by one after each iteration. The inner *`<Statement>`* is executed repeatedly until the *`<Start Number>`* value is less than the *`<End Number>`* value.  
 
 > [!NOTE]  
 > When the for statement is executed, *`<Start Number>`* and *`<End Number>`* are converted to the same data type as *`<Control Variable>`* if it is required. This type conversion can cause a run-time error.  
@@ -337,14 +339,14 @@ var
     Count : Integer;
 ```  
 
-When this statement is executed, a run-time error occurs because the start and end values are converted to the same data type as the Count control variable. Count has been declared as an integer variable. The end number 100000000000000 is outside the valid range for integers, and an error occurs.  
+When this statement is executed, then a run-time error occurs because the start and end values are converted to the same data type as the Count control variable. Count has been declared as an integer variable. The end number 100000000000000 is outside the valid range for integers, and an error occurs.  
 
 #### Example 2  
  The following example shows how to nest for statements.  
 
  Set the Dimensions property of variable A to 5;7.  
 
- The following for statements could be used to initialize every element in a 5x7 array with the value 23.  
+ The following `for` statements could be used to initialize every element in a 5x7 array with the value 23.  
 
 ```AL  
 for I := 1 to 5 do  
@@ -394,11 +396,11 @@ If *`<Condition>`* is true, then *`<Statement>`* is executed repeatedly until *`
 
 The while do statement can be used when some code should be repeated as long as an expression is true.  
 
-#### Programming conventions  
+#### Programming conventions
 
-When there is only one condition, put while and do on the same line. Put the statements on separate lines and indented by two spaces.  
+When there's only one condition, put `while` and `do` on the same line. Put the statements on separate lines and indented by two spaces.  
 
-When there are multiple conditions, put the conditions on separate lines and indented by two spaces and put do on a separate line that is aligned with while.  
+When there are multiple conditions, put the conditions on separate lines and indented by two spaces and put `do` on a separate line that is aligned with `while`.  
 
 #### Example  
 
@@ -429,7 +431,7 @@ end;
 ```  
 
 #### Example  
-The following AL code increases the variable I until it equals 1000 and displays a message when it is finished.  
+The following AL code increases the variable I until it equals 1000 and displays a message when it's finished.  
 
 ```AL
 while I < 1000 do  
@@ -454,7 +456,7 @@ repeat
 
  *`<Statements>`* is executed repeatedly until *`<Condition>`* is true.  
 
- The repeat until control structure resembles the while control structure. The difference is that because the repeat until statement is executed from left to right, the *`<Statements>`* is always executed at least one time, regardless of what the *`<Condition>`* is evaluated to. This contrasts with the while control structure, which performs the evaluation before the *`<Statement>`* is executed. In the while control structure, if the first evaluation of *`<Condition>`* returns false, then no statements are executed.  
+ The `repeat until` control structure resembles the while control structure. The difference is that because the `repeat until` statement is executed from left to right, the *`<Statements>`* is always executed at least one time, regardless of what the *`<Condition>`* is evaluated to. This contrasts with the `while` control structure, which performs the evaluation before the *`<Statement>`* is executed. In the `while` control structure, if the first evaluation of *`<Condition>`* returns false, then no statements are executed.  
 
 #### Programming conventions  
  Always put repeat on a separate line.  
@@ -501,15 +503,14 @@ The exit statement is used to control the flow of the execution. The following s
 exit([<Value>])  
 ```  
 
- An exit statement is used to interrupt the execution of a AL trigger. The interruption occurs even when the code is executed inside a loop or a similar structure. The exit statement is also used when a local method should return a value.  
+ An exit statement is used to interrupt the execution of an AL trigger. The interruption occurs even when the code is executed inside a loop or a similar structure. The exit statement is also used when a local method should return a value.  
 
  Using exit without a parameter in a local method corresponds to using the parameter value 0. The AL method will return the value 0 or '' (empty string).  
 
- A compile-time error occurs if exit is called by using a return parameter from either of the following:  
+ A compile-time error occurs if exit is called by using a return parameter from either:  
 
-- System-defined triggers.  
-
-- Local methods that do not return a value.  
+- System-defined triggers, or 
+- Local methods that don't return a value.  
 
 #### Example  
  The following example shows the use of the exit statement in a local method. Assume that the if statement is used to detect an error. If the error condition is met, then execution is stopped and the local method returns the error code 1.  
@@ -529,13 +530,13 @@ You use the break statement to terminate the iterative statement in which it app
 break;  
 ```  
 
- You typically use the break statement in the repeating statements such as for, <!--NAV forEACH, -->while, or repeat to stop an iteration or loop when certain conditions are met.  
+ You typically use the `break` statement in the repeating statements such as `for`, `while`, or `repeat` to stop an iteration or loop when certain conditions are met.  
 
 > [!NOTE]  
 > The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it is run.  
 
 ## Example  
- The following AL code increases the variable I by one for each iteration, and terminates the iteration when I equals 10.  
+ The following AL code increases the variable I by one for each iteration, and terminates the iteration when `I` equals 10.  
 
 ```AL
 while Count < 1000 do
