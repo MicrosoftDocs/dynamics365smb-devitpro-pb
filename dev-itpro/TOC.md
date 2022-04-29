@@ -112,7 +112,7 @@
 
 <!-- administration-->
 # Administration
-## [Administration of Business Central Online](administration/tenant-administration.md)
+## [Administration Overview](administration/tenant-administration.md)
 ## Understand Business Central online
 ### [Understanding the Infrastructure ](administration/tenant-environment-topology.md)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
@@ -183,22 +183,6 @@
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
 ### [Recommend apps](administration/recommend-apps.md)
-<!-- support-->
-## Manage technical support
-### [Manage technical support overview](administration/manage-technical-support.md)
-### [Escalate support issues to Microsoft](administration/raise-support-case.md)
-### [Report customer outages](administration/report-outage.md)
-### [Analyze performance](administration/performance-profiler-overview.md)
-<!--migrate to BC online-->
-## Migrate to Business Central Online
-### [Migrate on-premises data](administration/migrate-data.md)
-### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
-### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
-### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
-### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
-<!-- end migrate -->
 <!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
@@ -235,7 +219,14 @@
 #### [Web Service Requests Telemetry (Outgoing)](administration/telemetry-webservices-outgoing-trace.md)
 ### [Telemetry by Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
-## Automation APIs
+<!-- support-->
+## Manage technical support
+### [Manage technical support overview](administration/manage-technical-support.md)
+### [Escalate support issues to Microsoft](administration/raise-support-case.md)
+### [Report customer outages](administration/report-outage.md)
+### [Analyze performance](administration/performance-profiler-overview.md)
+<!-- end support -->
+## Automation API
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -282,7 +273,9 @@
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-## Cloud Migration APIs
+## Admin Center API
+### [Overview](administration/administration-center-api.md)
+## Cloud Migration API
 ### [Cloud Migration API Overview](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -312,6 +305,16 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
+<!--migrate to BC online-->
+## Migrate to Business Central Online
+### [Migrate on-premises data](administration/migrate-data.md)
+### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
+### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
+### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
+### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
+### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
+### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+<!-- end migrate -->
 <!-- end admin -->
 
 <!-- DEVELOPMENT-->
@@ -3864,8 +3867,10 @@
 #### [Overview](webservices/api-overview.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
+#### [Automation API](administration/itpro-introduction-to-automation-apis.md)
+#### [Admin Center API](administration/administration-center-api.md)
+#### [Cloud Migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
-#### [Administration API](administration/itpro-introduction-to-automation-apis.md)
 #### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
