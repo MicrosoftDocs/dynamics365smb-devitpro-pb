@@ -423,7 +423,7 @@
 #### Data Types
 <!-- ##### Need an overview page -->
 ##### [Overview](developer/methods-auto/library.md)
-##### Simple types
+##### Simple Types
 ###### Date and Time
 ####### [Date](developer/methods-auto/date/date-data-type.md)
 ####### [DateTime](developer/methods-auto/datetime/datetime-data-type.md)
@@ -444,14 +444,14 @@
 ###### [Boolean](developer/methods-auto/boolean/boolean-data-type.md)
 ###### [Guid](developer/methods-auto/guid/guid-data-type.md)
 
-##### Complex types
+##### Complex Types
 ###### [Blob](developer/methods-auto/blob/blob-data-type.md)
 ###### [Media](developer/methods-auto/media/media-data-type.md)
 ###### [MediaSet](developer/methods-auto/mediaset/mediaset-data-type.md)
 ###### [Record](developer/methods-auto/record/record-data-type.md)
 ###### [System](developer/methods-auto/system/system-data-type.md)
 
-##### Json and XML types
+##### JSON and XML Types
 ###### [JsonArray Data Type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
 ###### [JsonObject Data Type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
 ###### [JsonToken Data Type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
@@ -472,7 +472,7 @@
 
 ##### [Object types](developer/devenv-reference-overview.md)
 
-##### Other types
+##### Other Types
 ###### [Joker Data Type (Internal)](developer/methods/devenv-joker-datatype.md)
 
 ##### Collections
