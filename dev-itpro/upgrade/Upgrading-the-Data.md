@@ -43,7 +43,7 @@ Before you start the upgrade tasks, make sure you meet the following prerequisit
 
     For more information about upgrading the application code, see [Upgrading the Application Code](Upgrading-the-Application-Code.md).
 
-4. You have the upgrade toolkit FOB files for the version that you are upgrading from. 
+4. You have the upgrade toolkit FOB files that are available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD).
 
     The upgrade toolkit includes upgrade codeunits for handling the data upgrade. The upgrade toolkit can be in the same FOB file as the application code or in a separate FOB file.
 
