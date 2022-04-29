@@ -3810,8 +3810,8 @@
 <!-- end AL -->
 <!-- begin security -->
 # Security, Privacy, Compliance
-## Security and Protection
-### [Security and Protection Overview](security/security-and-protection.md)
+## Security
+### [Security Overview](security/security-and-protection.md)
 ### [Tips for Business Users](security/security-users.md)
 ### [Application](security/security-application.md)
 ### [Online](security/security-online.md)
