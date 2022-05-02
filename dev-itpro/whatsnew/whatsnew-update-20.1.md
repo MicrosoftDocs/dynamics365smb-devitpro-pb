@@ -13,11 +13,10 @@ author: EmmaNielsson
 ---
 
 # Update 20.1 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
-
 Would you like to know what has changed in update 20.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-19-5-for-microsoft-dynamics-365-business-central-on-premises-2021-release-wave-2-application-build-19-5-36700-platform-build-19-0-36625-c9b94708-c269-4b64-a288-1d7c7c50f919).
+Find an overview of hotfixes in this [article](TBD).
 
 ## Localization updates
 
@@ -44,9 +43,5 @@ When you run cloud migration from a previous version of Business Central, one of
 **Upcoming Business Central Office Hours Calls**  
 Make sure to join the office hours call 'Business Central apps in AppSource' on March 8. The call is at 5.00pm - 6.00pm CET / 08.00am -09.00am PST. Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
-**Action needed: Client secret-based service to service authentication deprecation for Microsoft hosted tenants integrating to Dataverse**  
-To ensure no disruptions in integration between Business Central and Dataverse you must upgrade your Business Central connection to Dataverse to certificate-based authentication.  
-The change will happen in March 2022. We strongly recommend you perform steps outlined in [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365/business-central/admin-how-to-set-up-a-dynamics-crm-connection#upgrade-connections-from-business-central-online-to-use-certificate-based-authentication) as soon as possible.
-
-**Join Directions NA on April 3-6, 2022**  
-Directions North America is a Microsoft Dynamics 365 event driven by Partners – for Partners. Attendees will build new business contacts, learn about best practices, and discover valuable tools for execution and success. Attendees can also use the many networking opportunities at the conference to grow and enhance relationships with other partners, ISVs, service providers, and Microsoft. Learn more and register [here](https://www.eventsquid.com/event.cfm?event_id=14536).
+**Watch the Business Central Launch Event recordings**  
+WRITE SOME INFORMATION ABOUT THE LAUNCH EVENT. Read more and register [here](https://aka.ms/BCLE).
