@@ -11,12 +11,14 @@ ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
+
 # Application Validation Service Warning AVS0111
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 A {0} with name '{1}' is found in both {2} and {3}. Object names must be unique per environment. Resolve the conflict in your extension by using a different name and upload the extension again.
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -11,12 +11,14 @@ ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
+
 # Application Validation Service Warning AVS0112
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 A {0} with ID {1} in '{2}' is found in both {3} and {4}. {0} IDs must be unique within the base objects and their extension objects. Resolve the conflict in your extension by using a different ID and upload the extension again.
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
