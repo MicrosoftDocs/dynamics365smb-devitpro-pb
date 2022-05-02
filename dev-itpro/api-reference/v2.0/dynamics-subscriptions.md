@@ -187,6 +187,7 @@ Custom APIs are also webhook-enabled and will be listed in **webhookSupportedRes
 > * The API page has a composite key (for example, if ODataKeyFields consists of several fields or is missing, then the primary key for the source table consists of several fields).
 > * The source table for the API page is a system table ("Table No." > 2000000000).
 > * The API is declared through an API type query, for example, and not through an API type page.
+> * The source table for the API page is Job Queue Entry ("Table No." = 472).
 
 > [!NOTE]  
 > Changes made by users who are not able to schedule job queues will not be notified until another user who is able to schedule job queues makes another change to the same table.
