@@ -11,12 +11,14 @@ ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
+
 # Application Validation Service Error AVS0103
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The extension with Id '{0}' appears multiple times in the submission, while all extensions submitted are expected to have a unique Id.
+The extension with ID '{0}' appears multiple times in the submission, while all extensions submitted are expected to have a unique ID.
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

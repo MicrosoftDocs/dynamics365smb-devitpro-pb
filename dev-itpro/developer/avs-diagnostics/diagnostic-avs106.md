@@ -15,8 +15,9 @@ author: thpeder
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The submission must target at least one existing country/region of Business Central. Verify that at least one country/region is marked as 'Available' at aka.ms/bccountries. For more information, see the Technical Validation FAQ, at https://go.microsoft.com/fwlink/?linkid=2182737.
+The submission must target at least one existing country/region of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify that at least one country/region is marked as 'Available' at [aka.ms/bccountries](https://aka.ms/bccountries). For more information, see the [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

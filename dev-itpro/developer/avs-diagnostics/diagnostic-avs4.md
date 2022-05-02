@@ -11,12 +11,14 @@ ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
+
 # Application Validation Service Error AVS0004
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
 The specified ruleset could not be loaded. Details: {0}
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
