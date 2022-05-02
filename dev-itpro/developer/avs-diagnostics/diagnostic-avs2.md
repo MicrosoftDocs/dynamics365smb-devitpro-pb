@@ -4,7 +4,7 @@ description: "The runtime version '{0}' of the extension is too recent for the r
 ms.author: thpeder
 ms.custom: na
 ms.date: 02/05/2022
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference

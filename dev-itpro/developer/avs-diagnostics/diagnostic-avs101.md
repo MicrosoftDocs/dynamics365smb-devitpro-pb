@@ -1,21 +1,21 @@
 ---
-title: "AVS Error AVS0104"
-description: "The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not allowed in Business Central online."
+title: "AVS Error AVS0101"
+description: "A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found."
 ms.author: thpeder
 ms.custom: na
 ms.date: 02/05/2022
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
-# Application Validation Service Error AVS0104
+# Application Validation Service Error AVS0101
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not allowed in Business Central online.
+A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found.
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  

@@ -4,7 +4,7 @@ description: "A {0} with name '{1}' in '{2}' is found in both {3} and {4}. {0} n
 ms.author: thpeder
 ms.custom: na
 ms.date: 02/05/2022
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference

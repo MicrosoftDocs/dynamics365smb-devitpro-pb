@@ -4,7 +4,7 @@ description: "The submission must target at least one existing country/region of
 ms.author: thpeder
 ms.custom: na
 ms.date: 02/05/2022
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference

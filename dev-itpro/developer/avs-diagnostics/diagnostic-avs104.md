@@ -1,21 +1,21 @@
 ---
-title: "AVS Error AVS0004"
-description: "The specified ruleset could not be loaded. Details: {0}"
+title: "AVS Error AVS0104"
+description: "The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not allowed in Business Central online."
 ms.author: thpeder
 ms.custom: na
 ms.date: 02/05/2022
-ms.reviewer: na
+ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
-# Application Validation Service Error AVS0004
+# Application Validation Service Error AVS0104
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The specified ruleset could not be loaded. Details: {0}
+The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not allowed in Business Central online.
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
