@@ -13,11 +13,11 @@ ms.custom: intro-internal
 
 # Getting Started with AL
 
-To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you will use for coding and debugging.
+To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you'll need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you'll use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
 
-Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
+Go through the following steps to set up a sandbox environment. Having set up a sandbox environment, you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
 > If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
@@ -58,7 +58,7 @@ Use the AL configuration settings to specify general preferences for working wit
 
 ## Telemetry settings
 
-By default, Visual Studio Code is set up with a telemetry system to enable that data and errors are sent to Microsoft. If you do not want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`. 
+By default, Visual Studio Code is set up with a telemetry system to enable that data and errors are sent to Microsoft. If you don't want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`. 
 
 To modify the telemetry setting, press **Ctrl+Shift+P** in Visual Studio Code and choose **User Settings**, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false` like shown below.
  
@@ -79,7 +79,7 @@ To make your extension available to users, the package must be published to a sp
 
 ## Controlling user access to developing and publishing extensions
 
-The access to developing and publishing extensions is controlled on a user or user group basis by the **EXTEND. MGT. - ADMIN** permission set. It is important that the **EXTEND. MGT. - ADMIN** isn't specified for a specific company, but left blank.
+The access to developing and publishing extensions is controlled on a user or user group basis by the **EXTEND. MGT. - ADMIN** permission set. It's important that the **EXTEND. MGT. - ADMIN** isn't specified for a specific company, but left blank.
 
 If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
 
@@ -90,7 +90,7 @@ To prohibit a user from publishing, just remove the user from the **EXTEND. MGT.
 
 ## Next steps
 
-Now that you have the tools and the `HelloWorld` example up and running, you might want to try to create a small sample app in AL. This walkthrough guides you through how to create a simple app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
+Now that you have the tools and the `HelloWorld` example up and running, you might want to try to create a small sample app in AL. This walkthrough guides you through how to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
 
 ## See Also 
 
