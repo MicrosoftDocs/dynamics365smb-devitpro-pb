@@ -31,10 +31,12 @@ Yes. Just make sure you list all library apps as dependencies within the AppSour
 
 ## When I get the latest updated version of my app, why don't I get the updated library/dependency apps that my AppSource app depends on?
 
-Currently, updating of apps does not handle the library/dependency chain. This work is planned for a future release. For now, you need to uninstall and reinstall the library/dependency apps as well.
+Libraries are updated only when the new version of your app requires a higher version than the version currently installed in your environment. If you want your library app to be automatically updated when your AppSource app is updated, you must increase the minimum version required in the manifest (app.json) of your AppSource app. 
+
+Note that you can also uninstall and reinstall the library/dependency app to have it updated.
 
 ## What are the validation requirements for library apps
-Library apps only get validated technically, but don't go through any type of marketing validation. Also, the library apps are expected to be covered by the user scenarios and tests that you submit for the core app. The technical requirements are described [here](devenv-checklist-submission.md).  
+Library apps only get validated technically, but don't go through any type of marketing validation. The technical requirements are described [here](devenv-checklist-submission.md).  
 
 ## See also
 
