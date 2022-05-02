@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # AL Simple Statements
 
-AL simple statements are single-line statements that are executed sequentially and do not alter the flow of execution of code. This article explains some of the simple statements in AL.
+AL simple statements are single-line statements that are executed sequentially and don't alter the flow of execution of code. This article explains some of the simple statements in AL.
 
 ## Assignment statements
 
@@ -22,7 +22,7 @@ Assignment statements assign a value to a variable. The value that you assign to
 You use the ":=" operator for assignment statements.  
 
 ### Example  
-The following example assigns a constant integer value to an integer variable that you have defined.  
+The following example assigns a constant integer value to an integer variable that you've defined.  
 
 ```AL  
 Count := 1;  
@@ -37,7 +37,7 @@ Amount := 2 * Price;
 
 ### Example
 
-The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you have defined.  
+The following example assigns the return value of the [Open Method (File)](methods-auto/file/file-open-method.md) to a Boolean variable that you've defined.  
 
 > [!NOTE]
 > This method is supported only in Business Central on-premises.
@@ -46,7 +46,7 @@ The following example assigns the return value of the [Open Method (File)](metho
 OK := TestFile.Open('C:\temp\simple.xml');  
 ```  
 
-The return value of the `Open` method is optional. If you do not handle the return value in your code, then a run-time error occurs when a method returns **false**. The following example causes a run-time error if the file `C:\temp\simple.xml` cannot be opened.  
+The return value of the `Open` method is optional. If you don't handle the return value in your code, then a run-time error occurs when a method returns **false**. The following example causes a run-time error if the file `C:\temp\simple.xml` can't be opened.  
 
 ```AL  
 TestFile.Open('C:\temp\simple.xml');  
@@ -83,7 +83,7 @@ Counter /= 1;
 Counter := Counter + 1;
 ```
 
-The following examples shows how to use this syntax on variables of the [Text Data Type](methods-auto/text/text-data-type.md).
+The following example shows how to use this syntax on variables of the [Text Data Type](methods-auto/text/text-data-type.md).
 
 ```AL
 String := "Hello ";
@@ -94,11 +94,12 @@ String += "World";
 You use method statements to execute either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
 
 ## AssertError statements
-You use AssertError statements in test methods to test how your application behaves under failing conditions. The AssertError keyword specifies that an error is expected at run time in the statement that follows the AssertError keyword.  
+
+You use AssertError statements in test methods to test how your application behaves under failing conditions. The `AssertError` keyword specifies that an error is expected at run time in the statement that follows the `AssertError` keyword.  
 
 If a simple or compound statement that follows the AssertError keyword causes an error, then execution successfully continues to the next statement in the test method. You can get the error text of the statement by using the [GetLastErrorText method](./methods-auto/library.md).  
 
-If a statement that follows the AssertError keyword does not cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
+If a statement that follows the AssertError keyword doesn't cause an error, then the AssertError statement causes the following error and the test method that is running produces a FAILURE result:  
 
 ```AL
 TestAsserterrorFail: FAILURE
@@ -107,7 +108,7 @@ An error was expected inside an AssertError statement.
 ```  
 
 ### Example
-To create a test method to test the result of a failure of a `CheckDate` method that you have defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
+To create a test method to test the result of a failure of a `CheckDate` method that you've defined, you can use the following code. This example requires that you create a method called `CheckDate` to check whether the date is valid for the customized application.  
 
 ```AL  
 InvalidDate := 19000101D;  
@@ -181,12 +182,14 @@ with CustomerRec do begin
 end;  
 ```  
 
-### Programming conventions  
-Within `with-do` blocks, do not repeat the name of the object by using the member variable or method.  
+### Programming conventions
+
+Within `with-do` blocks, don't repeat the name of the object by using the member variable or method.  
 
 If you nest a `with-do` block within another explicit or implicit `with-do` block, then the `with-do` block that you create within another `with-do` block must always be attached to a variable of the same type as the variable that is attached to the surrounding `with-do` block. Otherwise, it can be difficult to see what variable that a member variable or method refers to. For example, implicit `with-do` blocks occur in table objects and in pages that have been attached to a record.  
 
-#### Example  
+#### Example
+
 The following example demonstrates nested `with-do` blocks. Both `with-do` blocks are attached to a Customer Ledger Entry record variable.  
 
 ```AL  
@@ -200,8 +203,9 @@ with CustLedgEntry do begin
 end;  
 ```  
 
-#### Incorrect example  
-The following example demonstrates incorrect code in which you cannot directly tell which record variable that the MyField field refers to.  
+#### Incorrect example
+
+The following example demonstrates incorrect code in which you can't directly tell which record variable that the MyField field refers to.  
 
 ```AL  
 with CustLedgEntry do begin

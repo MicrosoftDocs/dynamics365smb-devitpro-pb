@@ -14,7 +14,7 @@ ms.date: 04/01/2021
 
 When you build an app or extension to [!INCLUDE[prod_short](includes/prod_short.md)] and get that published to AppSource, it becomes an app like so many others - the app itself can be updated, and the platform that it sits on, [!INCLUDE[prod_short](includes/prod_short.md)] online itself, will also get updated. But what happens after your app gets published?
 
-When your app has passed all of our validations and has gone live to App Source, customers can install your extension and use it for their business. But you are expected to keep it compliant with the service and update it if something changes.  
+When your app has passed all of our validations and has gone live to AppSource, customers can install your extension and use it for their business. But you are expected to keep it compliant with the service and update it if something changes.  
 
 The following sections describe the different upgrade scenarios that we have seen play out as we update [!INCLUDE[prod_short](includes/prod_short.md)]. For more information about your responsibility for keeping your app updated and the resources that are available to you, see [Maintain AppSource Apps and Per-Tenant Extensions](app-maintain.md).  
 
