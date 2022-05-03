@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
-# Application Validation Service Error AVS0002
+# AVS Error AVS0002
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

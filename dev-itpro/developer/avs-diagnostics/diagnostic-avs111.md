@@ -12,7 +12,7 @@ ms.service: "dynamics365-business-central"
 author: thpeder
 ---
 
-# Application Validation Service Warning AVS0111
+# AVS Warning AVS0111
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 

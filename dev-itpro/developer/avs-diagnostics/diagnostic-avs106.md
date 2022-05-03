@@ -11,7 +11,8 @@ ms.topic: reference
 ms.service: "dynamics365-business-central"
 author: thpeder
 ---
-# Application Validation Service Error AVS0106
+
+# AVS Error AVS0106
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
