@@ -1662,6 +1662,31 @@
 ##### [AL1416](developer/diagnostics/diagnostic-al1416.md)
 ##### [AL1417](developer/diagnostics/diagnostic-al1417.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_DIAGNOSTICS) -->
+<!-- AVS section -->
+### Application Validation Service Diagnostics
+#### [Application Validation Service Diagnostics Overview](developer/avs-diagnostics/avs-diagnostics-overview.md)
+#### [AVS Error AVS0001](developer/avs-diagnostics/diagnostic-avs1.md)
+#### [AVS Error AVS0002](developer/avs-diagnostics/diagnostic-avs2.md)
+#### [AVS Error AVS0003](developer/avs-diagnostics/diagnostic-avs3.md)
+#### [AVS Error AVS0004](developer/avs-diagnostics/diagnostic-avs4.md)
+#### [AVS Error AVS0005](developer/avs-diagnostics/diagnostic-avs5.md)
+#### [AVS Error AVS0006](developer/avs-diagnostics/diagnostic-avs6.md)
+#### [AVS Error AVS0007](developer/avs-diagnostics/diagnostic-avs7.md)
+#### [AVS Error AVS0101](developer/avs-diagnostics/diagnostic-avs101.md)
+#### [AVS Error AVS0102](developer/avs-diagnostics/diagnostic-avs102.md)
+#### [AVS Error AVS0103](developer/avs-diagnostics/diagnostic-avs103.md)
+#### [AVS Error AVS0104](developer/avs-diagnostics/diagnostic-avs104.md)
+#### [AVS Error AVS0105](developer/avs-diagnostics/diagnostic-avs105.md)
+#### [AVS Error AVS0106](developer/avs-diagnostics/diagnostic-avs106.md)
+#### [AVS Error AVS0107](developer/avs-diagnostics/diagnostic-avs107.md)
+#### [AVS Error AVS0108](developer/avs-diagnostics/diagnostic-avs108.md)
+#### [AVS Error AVS0109](developer/avs-diagnostics/diagnostic-avs109.md)
+#### [AVS Error AVS0110](developer/avs-diagnostics/diagnostic-avs110.md)
+#### [AVS Error AVS0111](developer/avs-diagnostics/diagnostic-avs111.md)
+#### [AVS Error AVS0112](developer/avs-diagnostics/diagnostic-avs112.md)
+#### [AVS Error AVS0113](developer/avs-diagnostics/diagnostic-avs113.md)
+<!-- end AVS section -->
+
 ### Data Types and Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
