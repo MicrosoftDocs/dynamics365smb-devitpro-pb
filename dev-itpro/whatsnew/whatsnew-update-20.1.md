@@ -22,8 +22,8 @@ Find an overview of hotfixes in this [article](TBD).
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|Norway | Updated SAF-T export | Fixed issue with exporting bank data in SAF-T in accordance with BankAccountStructure |
-| India | Preview Posting on Service Transfer Order | Document Service Transfer Order in the Indian localization now has Preview Posting action to enable review of the different types of entries that will be created when you post the document. |
+|XXX | XXX | XXX |
+| XXX | XXX | XXX |
 
 ## Release Plan  
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
@@ -34,6 +34,15 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**Shopify expected to release later in May**  
+XXXXX
+
+**Changes to the Per-Tenant Extensions Disclaimer**  
+The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
+
+**Newsletter**  
+XXXXX
+
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
 
@@ -41,7 +50,5 @@ Discover what's new and planned for Dynamics 365 Business Central 2022 release w
 When you run cloud migration from a previous version of Business Central, one of the process steps is to run the data upgrade logic to align the migrated data to the format of the current version. We strongly recommend that you perform this step one time after you have completed the migration of all your customer’s data to the online environment. If a planned Business Central major or minor update is applied to this environment, the update will automatically include the upgrade of the data that was migrated by the cloud migration. These planned updates also turn off cloud migration for the environment. To avoid this situation, and to allow you to complete the migration and data upgrade for your environment, we recommend that you postpone any scheduled major and minor updates for the target environment until you have completed cloud migration. You can postpone updates in the Business Central admin center. For more information, see [Managing Updates](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management).  
 
 **Upcoming Business Central Office Hours Calls**  
-Make sure to join the office hours call 'Business Central apps in AppSource' on March 8. The call is at 5.00pm - 6.00pm CET / 08.00am -09.00am PST. Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
+WRITE INFO. Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
-**Watch the Business Central Launch Event recordings**  
-WRITE SOME INFORMATION ABOUT THE LAUNCH EVENT. Read more and register [here](https://aka.ms/BCLE).
