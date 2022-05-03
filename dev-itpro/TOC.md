@@ -214,6 +214,7 @@
 #### [Database Deadlock Telemetry](administration/telemetry-database-deadlocks-trace.md)
 #### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
 #### [Email Telemetry](administration/telemetry-email-trace.md)
+#### [Environment Lifecycle Telemetry](administration/telemetry-environment-lifecycle-trace.md) 
 #### [Error Message Quality Telemetry](administration/telemetry-error-message-voting-trace.md)
 #### [Error Method Telemetry](administration/telemetry-error-method-trace.md) 
 #### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
