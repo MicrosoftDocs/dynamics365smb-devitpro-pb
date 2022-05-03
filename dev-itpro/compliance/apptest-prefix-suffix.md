@@ -46,7 +46,7 @@ If you do not have any affixes registered yet, contact us at [d365val@microsoft.
 - A list of 3 letters affixes in order of preference. You must provide at least 5 suggestions.
 
 > [!NOTE]
-> Affixes are not case-sensitive; "ABC", "abc", and "AbC" are treated as the same affix. Providing both "ABC" and "abc" counts for only one of your suggestions.
+> Affixes are not case-sensitive, which means that for example "ABC", "abc", and "AbC" are treated as the same affix. Providing both "ABC" and "abc" counts as only one of your suggestions.
 
 Note, that you are not required to change any already registered affixes; you can continue using these affixes. The guidelines above only apply to new registrations.
 
