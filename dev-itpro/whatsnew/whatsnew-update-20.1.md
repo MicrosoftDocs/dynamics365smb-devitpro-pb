@@ -18,6 +18,13 @@ Would you like to know what has changed in update 20.1? Below you'll find an ove
 ## Hotfixes
 Find an overview of hotfixes in this [article](TBD).
 
+## Feature changes  
+- X
+- X
+- X
+- X
+- X
+
 ## Localization updates
 
 | Country| Feature  |Description|
@@ -34,14 +41,14 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Shopify expected to release later in May**  
-XXXXX
+**Shopify Connector expected to release later in May**  
+We're expecting to go live with the Shopify Connector later in May. 
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
-**Newsletter**  
-XXXXX
+**Business Central newsletter for partners**  
+Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be available on XXX. 
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
