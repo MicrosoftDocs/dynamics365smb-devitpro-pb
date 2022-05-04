@@ -1,0 +1,1 @@
+Specifies an environment configuration key, such as **ApplicationInsightsKey**.
