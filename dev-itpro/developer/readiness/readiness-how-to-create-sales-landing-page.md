@@ -21,7 +21,7 @@ To inspire you in creating a good landing page for your app, two of our valued p
 
 Have a look at their app landing pages and use them as inspiration to build your own landing page:
 
-- [Industry Built’s Build Food app](https://www.buildfood.cloud/)
+- Industry Built’s Build Food app
 - [LS Retail’s LS Express Start app](https://lsexpress.lsretail.com/)
 
 In the following checklist, we have “broken down” the elements, on their landing pages in order to showcase best practices on design and messaging. More specifically, we are looking into layout and structure elements, content elements, visual elements, anxiety reducing elements and support elements.
