@@ -19,11 +19,14 @@ Would you like to know what has changed in update 20.1? Below you'll find an ove
 Find an overview of hotfixes in this [article](TBD).
 
 ## Feature changes  
-- X
-- X
-- X
-- X
-- X
+- [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
+- Fraud prevention headers for clients in the UK
+- Country/regional expansion in 20 new countries
+- Updating only licensed users from Microsoft 365 runs faster and more efficiently
+- Delegated admin’s job queue entries are run by user
+- [Add action on card and list pages to trigger a chosen flow from Business Central web client](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/action-group-run-chosen-instant-power-automate)
+- [Power Platform and Azure Logic Apps connector for Business Central online no longer in preview](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improvements-power-automate-power-apps-connector)
+
 
 ## Localization updates
 
@@ -68,3 +71,12 @@ Join us for the upcoming office hours call on “Extending Business Central’s 
 
 **A new update to the Business Central mobile app for iOS and Android**  
 There is a new update for the Business Central mobile app (version 3.7) for [iOS](https://go.microsoft.com/fwlink/?LinkId=734847) and [Android](https://go.microsoft.com/fwlink/?LinkId=734849) available in respective app stores. This app – as before – handles Business Central online and on-premises and the update is required for on-premises customers running Business Central 2022 release wave 1.
+
+**The legacy Windows desktop app based on UWP technology only supports legacy on-premises Business Central**  
+Just an update that the Business Central desktop legacy UWP app version 3.6.3101 has been released to the Microsoft Store - and marked as a mandatory update for Windows users.
+
+- From now on users of Windows devices will only be able to use that legacy UWP app to connect to on-premises Business Central installations v19 or below. For v20 and later on-premises - see next point.  
+- On-premises users of Business Central v20 or later will be able to use the PWA app installed from the browser directly (see [aka.ms/BCPWA](https://aka.ms/bcpwa) for more).
+- All online Business Central users regardless of the version can use the new PWA app installed from the browser OR from the Microsoft store (again, see [aka.ms/BCPWA](https://aka.ms/bcpwa) for more).  
+
+It is recommended to switch to the PWA technology as this is where customers can benefit fully from all web client features.
