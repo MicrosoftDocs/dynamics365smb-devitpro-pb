@@ -27,6 +27,8 @@ You can promote any command from the existing actions menus to the ribbon. If th
 
 ## Promoting actions syntax
 
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way you promote actions on a page or page extension has changed. This syntax provides more control over the promoted actions on a page. The legacy syntax is still supported going forward <!-- ?-->, but it is recommended to implement the new syntax.
+
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it is promoted in the UI. You can create groups in the `area(Promoted)` or add `actionref` sections directly. 
 
 An `actionref` inherits the properties of the referenced action. 
@@ -97,6 +99,40 @@ ActionRef syntax
 		○ ObsoleteTag
 
 
+-->
+
+### Extensibility and compatibility
+
+You can implement the `actionref` syntax on a page without breaking any existing page extensions.
+
+<!-- 
+		○ It gives more control to the page over promoted actions but pageextensions can continue using the old syntax
+		
+	- Extending a legacy page syntax by a pageextension with ActionRef syntax is supported (V2 on V1)
+		○ PageExtension has more control over organizing promoted actions 
+		○ In the pageExtension (a virtual ) actionRef is created, the names are formated as <NameOfActions>_Promoted, A pageextension which uses the new syntax have access and control to those promoted actions
+		
+		pageextension 50100 MyExtension extends MyPage
+		{
+		    actions
+		    {
+		        modify(MyAction_Promoted)
+		        {
+		            Visible = false;
+		        }
+		        addfirst(Promoted)
+		        {
+		            actionref(MyPromotedAction; MySecondAction)
+		            {
+		            }
+		        }
+		    }
+		}
+		
+		
+	- If there is no changes in Page and PageExtensions (V1 on V1) those pages continue to work as before but we encourage you to convert your pages 
+	
+	- A developer can unlock all the features and control by converting both a page and pageExtensions that expand that page(V2 on V2)
 -->
 
 ## Promoting actions by category (legacy syntax)
