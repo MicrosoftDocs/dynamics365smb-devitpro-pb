@@ -35,6 +35,8 @@ An `actionref` inherits the properties of the referenced action.
 
 ### Syntax example
 
+This example illustrates a page with the actions promoted area syntax. The `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. This means that the `MyBaseAction` will be available from under the Processing group in the action bar. Furthermore, the `area(Promoted)` defines which actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the Processing group, also is promoted for easy access on the page.
+
 ```al
 page 50105 ActionRefPage
 {
@@ -71,13 +73,10 @@ page 50105 ActionRefPage
 
 ```
 
-
 <!--
 
 	- Only ActionRefs are allowed in this area; Actions cannot be added to the promoted area 
 	- This new promoted area controls all the actions on the "Left Side" of the action bar
-	- There can be groups under the promoted area 
-	- An actionRef can be added directly to the promoted area without any grouping 
 	- Usage of the new promoted area and the old syntax in one page is not allowed. If one adds the promoted area to a page all the legacy promotion properties are disallowed(promoted, promotedOnly and… ) 
 	- Usage of old syntax pages and new actionRef syntax is allowed in a project 
 	
