@@ -41,11 +41,12 @@ There are some components that require other software to run. For example, the d
 
 1. Go to the update page for the release that you want to install:
 
-   - [Business Central 2018](https://support.microsoft.com//help/4470116)
+   <!-- - [Business Central 2018](https://support.microsoft.com//help/4470116)-->
    - [Business Central Spring 2019](https://support.microsoft.com/help/4501292)
    - [Business Central 2019 Release Wave 2](https://support.microsoft.com/help/4528706)
-   - [Business Central 2020 Release Wave 1](https://support.microsoft.com/help/4549687)
    - [Business Central 2020 Release Wave 2](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-2-186fa656-a75c-70f2-1131-adc70e97f280)
+   - [Business Central 2021 Release Wave 1](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6)
+   - [Business Central 2021 Release Wave 2](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.
 3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central \<release\> files**.
