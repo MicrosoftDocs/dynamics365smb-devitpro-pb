@@ -29,8 +29,11 @@ Find an overview of hotfixes in this [article](TBD).
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|XXX | XXX | XXX |
-| XXX | XXX | XXX |
+|Mexico | CFDI Payment Information version 2.0 | Payment receiving will be updated related with the version 2.0. New fields are included to identify whether the payments for the operations covered by the voucher are subject to tax. A new section is included with a summary of the total amounts of the payments made expressed in national currency, as well as the taxes that are transferred. |
+| Spain | Posting Date or Document Date to be used as Operation Date | The user is now able to choose between Posting Date or Document Date, to be used as Operation Date in the XML sent via SII to the Tax Authorities. |
+| Denmark; W1 | Country code in the VAT Registration No. usage for Intrastat reporting | In Denmark companies need to use different VAT Registration No. models in Intrastat and Skat.dk (one with Country Code and another without it). To avoid issues for Stat.dk clients will use only value from VAT Registration No., but for intrastat clients will have additional configuration with the following options: VAT Reg. No., Country Code + VAT No., VAT No. without Country Code. This feature is available on W1. |
+| France | Intrastat FR new requirements for DEB 2022 | For France, Intrastat management implies to separate the declaration data for the statistical reporting and for the fiscal reporting (recapitulative statement of VAT), once for obligation level 1 and once for obligation level 4. |
+| Norway | Add support of the free text for each VAT return line | XXX |
 
 ## Release Plan  
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
@@ -42,20 +45,19 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Shopify Connector expected to release later in May**  
-We're expecting to go live with the Shopify Connector later in May. 
-
+WMicrosoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We're expecting to go live with the Shopify Connector later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector). 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
 **Business Central newsletter for partners**  
-Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be available on XXX. 
+Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be available on XX and will be a summary of relevant information related to Business Central.
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
 
-**Avoid an unexpected data upgrade during cloud migration**  
+**Reminder: Avoid an unexpected data upgrade during cloud migration**  
 When you run cloud migration from a previous version of Business Central, one of the process steps is to run the data upgrade logic to align the migrated data to the format of the current version. We strongly recommend that you perform this step one time after you have completed the migration of all your customer’s data to the online environment. If a planned Business Central major or minor update is applied to this environment, the update will automatically include the upgrade of the data that was migrated by the cloud migration. These planned updates also turn off cloud migration for the environment. To avoid this situation, and to allow you to complete the migration and data upgrade for your environment, we recommend that you postpone any scheduled major and minor updates for the target environment until you have completed cloud migration. You can postpone updates in the Business Central admin center. For more information, see [Managing Updates](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management).  
 
 **Upcoming Business Central Office Hours Calls**  
-WRITE INFO. Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
+Join us for the upcoming office hours call on “Extending Business Central’s Email Capabilities” on May 24. Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
