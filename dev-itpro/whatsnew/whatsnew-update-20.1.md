@@ -33,7 +33,7 @@ Find an overview of hotfixes in this [article](TBD).
 | Spain | Posting Date or Document Date to be used as Operation Date | The user is now able to choose between Posting Date or Document Date, to be used as Operation Date in the XML sent via SII to the Tax Authorities. |
 | Denmark; W1 | Country code in the VAT Registration No. usage for Intrastat reporting | In Denmark companies need to use different VAT Registration No. models in Intrastat and Skat.dk (one with Country Code and another without it). To avoid issues for Stat.dk clients will use only value from VAT Registration No., but for intrastat clients will have additional configuration with the following options: VAT Reg. No., Country Code + VAT No., VAT No. without Country Code. This feature is available on W1. |
 | France | Intrastat FR new requirements for DEB 2022 | For France, Intrastat management implies to separate the declaration data for the statistical reporting and for the fiscal reporting (recapitulative statement of VAT), once for obligation level 1 and once for obligation level 4. |
-| Norway | Add support of the free text for each VAT return line | XXX |
+| Norway | Add support of the free text for each VAT return line | This is an improvement of the existing feature. Previously, Business Central only supported export of a list of the predefined texts in the field "VAT Note Code". Now the user can export the file with added free text for each VAT return line. |
 
 ## Release Plan  
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
@@ -46,11 +46,16 @@ Please note that new customers will automatically get the latest builds of Busin
 
 **Shopify Connector expected to release later in May**  
 WMicrosoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We're expecting to go live with the Shopify Connector later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector). 
+
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
 **Business Central newsletter for partners**  
 Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be available on XX and will be a summary of relevant information related to Business Central.
+
+**Updated documentation and samples related to Power Automate**  
+Documentation related to Power Automate integration and the new “Automate” feature has been updated in may 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
+
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
@@ -61,3 +66,5 @@ When you run cloud migration from a previous version of Business Central, one of
 **Upcoming Business Central Office Hours Calls**  
 Join us for the upcoming office hours call on “Extending Business Central’s Email Capabilities” on May 24. Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
+**A new update to the Business Central mobile app for iOS and Android**  
+There is a new update for the Business Central mobile app (version 3.7) for [iOS](https://go.microsoft.com/fwlink/?LinkId=734847) and [Android](https://go.microsoft.com/fwlink/?LinkId=734849) available in respective app stores. This app – as before – handles Business Central online and on-premises and the update is required for on-premises customers running Business Central 2022 release wave 1.
