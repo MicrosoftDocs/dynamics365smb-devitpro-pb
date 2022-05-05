@@ -92,7 +92,7 @@ PTEs are never uninstalled from a production environment, unless they are preven
 
 DEV extensions are used for development purposes. This includes extensions published from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#launch-json) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
+You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it is specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#Launchjson) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
 
 > [!NOTE]  
 > The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).
@@ -118,7 +118,7 @@ DEV extensions are uninstalled when the sandbox environment is upgraded or reloc
 
 In general, extensions are uniquely defined by their `id`. A specific version of an app is defined by the `id` and `version`, adding `environment` for per-tenant extensions.
 
-- It is not possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we are validating that there is not a Global app app with the same `id`. Currently, the AppSource validation process allows you to upload an app with the same `id` as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
+- It is not possible to deploy a **Global app** and a **PTE** with the same `id`. During the upload of a PTE, we are validating that there is not a Global app with the same `id`. Currently, the AppSource validation process allows you to upload an app with the same `id` as an existing PTE to AppSource, but this means that it won't be possible to update the PTE anymore.
 
 - It is not possible to deploy a **Global app** and a **DEV** extension with the same `id` and `version`. When deploying the DEV version of a Global app from Visual Studio Code to a sandbox environment, for example, for development or troubleshooting, you must make sure that your DEV extension has a different `version` than what is published to AppSource. Similarly, after you are done developing/testing your extension, you should increase the `version` before submitting to AppSource. We also recommend changing the `id` of the app.
 - Due to some current limitations in our service, it is not possible to have an **Global app** and a **PTE** or **DEV** extension with the same `name`, `publisher`, and `version`, even if they have a different `id`.

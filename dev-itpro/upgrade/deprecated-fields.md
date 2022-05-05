@@ -101,7 +101,7 @@ A number of fields have been moved from the base application to an extension.
 
 ### Czech Republic
 
-The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/LocalFunctionality/Czech/ui-extensions-different-disposal-maintenance-types-cz) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
+The functionality for Different types of disposal and maintenance in the Czech version has been moved to the Different types of disposal and maintenance (CZ) extension. For more information, see [Different types of disposal and maintenance (CZ) Extension](/dynamics365/business-central/localfunctionality/czech/fixed-assets) in the [!INCLUDE[d365fin_long](../developer/includes/d365fin_long_md.md)] documentation.
 
 |Old Table ID|Old Table Name|Old Field ID|Old Field Name|New Table ID|New Table Name|New Field ID|New Field Name|
 |--------|--------|--------|--------|--------|--------|--------|--------|
