@@ -46,8 +46,8 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Shopify Connector expected to release later in May**  
-WMicrosoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We're expecting to go live with the Shopify Connector later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector). 
+**Shopify Connector will be published in AppSource later in May**  
+Microsoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We will go live with the Shopify Connector in AppSource later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector). 
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
