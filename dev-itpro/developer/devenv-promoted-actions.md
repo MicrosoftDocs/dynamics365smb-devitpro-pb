@@ -20,14 +20,48 @@ The following table describes where you can use promoted actions.
 |----------------|-------|-----------|-------| 
 |Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|
 
-You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an additional step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md).
+
+<!-- old -->
+You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an additional step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
 
 
+## Promoting actions syntax
+
+To define promoted actions, you specify a `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that represents a promoted action and it has the following syntax:
+
+```al
+actionref(<Name of action ref>, <Name of the target action>)
+```
+<!--
+
+	- Only ActionRefs are allowed in this area; Actions cannot be added to the promoted area 
+	- This new promoted area controls all the actions on the "Left Side" of the action bar
+	- There can be groups under the promoted area 
+	- An actionRef can be added directly to the promoted area without any grouping 
+	- Usage of the new promoted area and the old syntax in one page is not allowed. If one adds the promoted area to a page all the legacy promotion properties are disallowed(promoted, promotedOnly and… ) 
+	- Usage of old syntax pages and new actionRef syntax is allowed in a project 
+	
+
+ActionRef syntax 
+	- A new object type that represents a promoted action 
+		○ ActionRef(<Name of action ref>, <Name of the target action>)
+		
+		
+	
+	- An ActionRef is only allowed in the promoted area 
+	- An ActionRef is a reference to an existing action on the page 
+	- An actionRef always needs an action and inherits properties like caption , ….
+	- An AcrionRef on a testpage can be invoked the same way as an action 
+	- Properties allowed on actionRefs
+		○ Visible : controls the visibility of an actionRef
+		○ ObsoleteState : specifies the obsoletion state
+		○ ObsoleteReason
+		○ ObsoleteTag
 
 
+-->
 
-
-## Promoting actions by category
+## Promoting actions by category (legacy syntax)
 
 > [!NOTE]  
 > The following section describes the former way of defining promoted actions for [!INCLUDE[prod_short](includes/prod_short.md)]. It's recommended to switch to the `ActionRef` syntax for defining promoted actions.
