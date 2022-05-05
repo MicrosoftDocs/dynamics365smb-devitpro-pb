@@ -1,7 +1,8 @@
 ---
 title: "Install Business Central Using Setup"
+description: Learn about installing Business Central using the installation wizard
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
