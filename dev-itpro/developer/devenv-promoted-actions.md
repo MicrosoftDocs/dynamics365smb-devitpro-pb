@@ -27,11 +27,49 @@ You can promote any command from the existing actions menus to the ribbon. If th
 
 ## Promoting actions syntax
 
-To define promoted actions, you specify a `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that represents a promoted action and it has the following syntax:
+To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it is promoted in the UI. You can create groups in the `area(Promoted)` or add `actionref` sections directly. 
+
+An `actionref` inherits the properties of the referenced action. 
+
+### Syntax example
 
 ```al
-actionref(<Name of action ref>, <Name of the target action>)
+page 50105 ActionRefPage
+{
+    actions
+    {
+        area(Promoted)
+        {
+            actionref(MyPromotedActionRef; MyBaseAction)
+            {
+            }
+            group(Group1)
+            {
+                group(Group2)
+                {
+                    actionref(MySecondPromotedActionRef; MyBaseAction)
+                    {
+                    }
+                }
+            }
+        }
+        area(Processing)
+        {
+            action(MyBaseAction)
+            {
+                Visible = true;
+                trigger OnAction()
+                begin
+                    Message('Hello world!');
+                end;
+            }
+        }
+    }
+}
+
 ```
+
+
 <!--
 
 	- Only ActionRefs are allowed in this area; Actions cannot be added to the promoted area 
