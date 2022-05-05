@@ -13,12 +13,15 @@ author: EmmaNielsson
 ---
 
 # Update 20.1 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
+
 Would you like to know what has changed in update 20.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
+
 Find an overview of hotfixes in this [article](TBD).
 
 ## Feature changes  
+
 - [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
 - [Updating only licensed users from Microsoft 365 runs faster and more efficiently](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/updating-only-licensed-users-365-runs-faster-more-efficiently)
 - [Delegated admin’s job queue entries are run by user](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
@@ -38,6 +41,7 @@ Find an overview of hotfixes in this [article](TBD).
 | Norway | Add support of the free text for each VAT return line | This is an improvement of the existing feature. Previously, Business Central only supported export of a list of the predefined texts in the field "VAT Note Code". Now the user can export the file with added free text for each VAT return line. |
 
 ## Release Plan  
+
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
 ## Upgrade to 20.1
@@ -47,7 +51,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Shopify Connector will be published in AppSource later in May**  
-Microsoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We will go live with the Shopify Connector in AppSource later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector). 
+Microsoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We will go live with the Shopify Connector in AppSource later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
@@ -57,7 +61,6 @@ Starting May 11 2022, we're doing bi-monthly newsletter for Business Central par
 
 **Updated documentation and samples related to Power Automate**  
 Documentation related to Power Automate integration and the new “Automate” feature has been updated in may 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
-
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
@@ -78,4 +81,4 @@ Just an update that the Business Central desktop legacy UWP app version 3.6.3101
 - On-premises users of Business Central v20 or later will be able to use the PWA app installed from the browser directly (see [aka.ms/BCPWA](https://aka.ms/bcpwa) for more).
 - All online Business Central users regardless of the version can use the new PWA app installed from the browser OR from the Microsoft store (again, see [aka.ms/BCPWA](https://aka.ms/bcpwa) for more).  
 
-It is recommended to switch to the PWA technology as this is where customers can benefit fully from all web client features.
+It is recommended to switch to the PWA technology as this is where customers can benefit fully from all web client features.  
