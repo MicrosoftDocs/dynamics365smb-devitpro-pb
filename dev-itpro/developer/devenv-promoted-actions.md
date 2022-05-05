@@ -2,7 +2,7 @@
 title: "Promoted Actions"
 description: Promoted actions are actions that are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,6 +11,7 @@ author: SusanneWindfeldPedersen
 --- 
 
 # Promoted Actions
+
 Promoted actions are actions that are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Report tabs, you can choose to hide them on these menus and only show them on the Home tab. 
 
 The following table describes where you can use promoted actions.
@@ -21,7 +22,16 @@ The following table describes where you can use promoted actions.
 
 You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an additional step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md).
 
-## Promote actions by category
+
+
+
+
+
+## Promoting actions by category
+
+> [!NOTE]  
+> The following section describes the former way of defining promoted actions for [!INCLUDE[prod_short](includes/prod_short.md)]. It's recommended to switch to the `ActionRef` syntax for defining promoted actions.
+
 Promoted actions can be grouped. You can add promoted actions by different grouped categories. Typically, promoted actions are displayed in the ribbon of the role center client. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories. 
 
 - New Document
