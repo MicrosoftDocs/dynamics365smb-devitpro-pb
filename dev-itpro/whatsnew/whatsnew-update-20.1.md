@@ -21,10 +21,6 @@ Would you like to know what has changed in update 20.1? Below you'll find an ove
 Find an overview of hotfixes in this [article](TBD).
 
 ## Feature changes  
-
-- [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
-- [Updating only licensed users from Microsoft 365 runs faster and more efficiently](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/updating-only-licensed-users-365-runs-faster-more-efficiently)
-- [Delegated admin’s job queue entries are run by user](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
 - [Add action on card and list pages to trigger a chosen flow from Business Central web client](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/action-group-run-chosen-instant-power-automate)
 - [Power Platform and Azure Logic Apps connector for Business Central online no longer in preview](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improvements-power-automate-power-apps-connector)
 - [Fraud prevention headers for clients in the UK](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/fraud-prevention-headers-clients-uk)
