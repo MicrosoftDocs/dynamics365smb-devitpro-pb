@@ -75,20 +75,14 @@ page 50105 ActionRefPage
 
 <!--
 
-	- Only ActionRefs are allowed in this area; Actions cannot be added to the promoted area 
+	
 	- This new promoted area controls all the actions on the "Left Side" of the action bar
 	- Usage of the new promoted area and the old syntax in one page is not allowed. If one adds the promoted area to a page all the legacy promotion properties are disallowed(promoted, promotedOnly and… ) 
 	- Usage of old syntax pages and new actionRef syntax is allowed in a project 
 	
 
-ActionRef syntax 
-	- A new object type that represents a promoted action 
-		○ ActionRef(<Name of action ref>, <Name of the target action>)
-		
-		
-	
 	- An ActionRef is only allowed in the promoted area 
-	- An ActionRef is a reference to an existing action on the page 
+
 	- An actionRef always needs an action and inherits properties like caption , ….
 	- An AcrionRef on a testpage can be invoked the same way as an action 
 	- Properties allowed on actionRefs
@@ -96,13 +90,11 @@ ActionRef syntax
 		○ ObsoleteState : specifies the obsoletion state
 		○ ObsoleteReason
 		○ ObsoleteTag
-
-
 -->
 
 ### Extensibility and compatibility
 
-You can implement the `actionref` syntax on a page without breaking any existing page extensions.
+You can implement the `actionref` syntax on a page without breaking any existing page extensions. It's also possible to write a page extension with the `actionref` syntax based on a page that uses the legacy action syntax.
 
 <!-- 
 		○ It gives more control to the page over promoted actions but pageextensions can continue using the old syntax
