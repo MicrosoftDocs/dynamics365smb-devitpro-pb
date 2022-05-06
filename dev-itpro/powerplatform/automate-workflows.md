@@ -14,9 +14,9 @@ ms.author: edupont
 As an admin, you can set up [!INCLUDE[prod_short](../includes/prod_short.md)] online so that users can create and run Power Automate flows from inside [!INCLUDE [prod_short](../includes/prod_short.md)].  
 
 > [!NOTE]  
-> Users must have a valid account with [!INCLUDE[prod_short](../includes/prod_short.md)] and with Power Automate.  
+> The relevant users must have a valid account with [!INCLUDE[prod_short](../includes/prod_short.md)] and with Power Automate.  
 
-With Power Automate, you can create business flows directly in-house and rely on citizen developers​. Use Power Automate to connect to various cloud services, such as the following list:​
+With Power Automate, you can create business flows directly in-house and rely on citizen developers​. You can use Power Automate to connect to various cloud services, such as the following list:​
 
 - Dataverse  
 - Outlook  
@@ -28,13 +28,16 @@ With Power Automate, you can create business flows directly in-house and rely on
 
 ## Switch on Power Automate flows to be run inside Business Central
 
-From update 20.1 (May 2022), an admin can [switch on a feature](../administration/feature-management.md) to make it possible to run a Power Automate flow from most pages. To connect to Power Automate, Azure Active Directory services must access your [!INCLUDE [prod_short](../includes/prod_short.md)]. Once the admin has connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Power Automate, users will see any flows that the organization has added when they choose the **Automate** action in the relevant pages. They can run the flows without leaving [!INCLUDE [prod_short](../includes/prod_short.md)].  
+From update 20.1 (May 2022), an admin can [switch on a feature](../administration/feature-management.md) to make it possible to run a Power Automate flow from most pages. To connect to Power Automate, Azure Active Directory services must access your [!INCLUDE [prod_short](../includes/prod_short.md)]. Once the admin has connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Power Automate, users will see any flows that the organization has added when they choose the **Automate** action in the relevant pages. They can run the flows without leaving [!INCLUDE [prod_short](../includes/prod_short.md)]. This way, the users remain within their original work process and are not interrupted by having to switch context.  
 
 As the admin, you can try out the new feature for yourself before you switch it on for everyone in your organization. For more information, see the tip in the [How to enable an optional feature](../administration/feature-management.md#how-to-enable-an-optional-feature) section. Then, when you switch to the new browser tab, open a page such as the **Customers** list, and then choose the **Automate** action. You'll be prompted to authorize Power Automate for access to your Azure Active Directory. The **Azure Active Directory Service Permissions** page runs automatically, and you must choose the *Authorize Azure Services* hyperlink once you've verified that the Azure AD service that has requested access is `https://service.flow.microsoft.com/`. Then, you can run any of the pre-configured workflows, or start adding your own. For more information, see [Use Business Central in an Automated Workflow](/dynamics365/business-central/across-how-use-financials-data-source-flow).<!--check for renamed article-->  
 
+Once the admin has set up the connection as we just described, the relevant users can start using Power Automate flows.  
+
 ## Add automated workflows
 
-The [!INCLUDE [prod_short](../includes/prod_short.md)] [connector](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps becomes generally available in May 2022. As the admin, you can add flows that will run as automated workflows, or as manually triggered instant flows. If you're inside [!INCLUDE [prod_short](../includes/prod_short.md)], then choose the **Automate** action, and then choose the **Create a flow** action. That sends you to [powerautomate.microsoft.com](https://powerautomate.microsoft.com) in a new browser tab.
+The [!INCLUDE [prod_short](../includes/prod_short.md)] [connector](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps becomes generally available in May 2022. As the admin, you can add flows that will run as automated workflows, or as manually triggered instant flows. If you're inside [!INCLUDE [prod_short](../includes/prod_short.md)], then choose the **Automate** action, and then choose the **Create a flow** action. That sends you to [powerautomate.microsoft.com](https://powerautomate.microsoft.com) in a new browser tab.  
+
 Alternatively, go directly to [powerautomate.microsoft.com](https://powerautomate.microsoft.com), and then create your flows.  
 
 Starting in April 2022, the updated Business Central connector for Power Automate​ gives you even more power. A flow can:
@@ -71,7 +74,9 @@ Starting in April 2022, the updated Business Central connector for Power Automat
 
 Once you're ready, share the new flow with the organization. For more information, see [Share a cloud flow](/power-automate/create-team-flows).  
 
-Alternatively, in your browser, navigate to [powerautomate.microsoft.com](https://powerautomate.microsoft.com), and then sign in. In this case, you must choose the **Create** menu item in the navigation pane, and off you go. In this case, there are three ways to create a flow:
+### Create workflows from the Power Automate landing page
+
+You don't have to start from inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Alternatively, in your browser, navigate to [powerautomate.microsoft.com](https://powerautomate.microsoft.com), and then sign in. In this case, you must choose the **Create** menu item in the navigation pane, and off you go. In this case, there are three ways to create a flow:
 
 - **Start from template**  
 - **Start from blank**  
@@ -85,7 +90,6 @@ In all three cases, search for the **Microsoft [!INCLUDE[prod_long](../includes/
 > The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option that you can choose.  
 
 You've successfully connected to your [!INCLUDE[prod_short](../includes/prod_short.md)] data and are ready to begin building your flow. For more information, see [Create your first flow](/power-automate/getting-started) in the Power Automate content.  
-
 
 ## Predefined triggers and templates from Microsoft
 
