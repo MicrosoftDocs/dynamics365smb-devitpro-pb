@@ -20,14 +20,9 @@ The following table describes where you can use promoted actions.
 |----------------|-------|-----------|-------| 
 |Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|
 
-
-<!-- old -->
-You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an extra step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
-
-
 ## Promoting actions syntax
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way that you promote actions on a page or page extension has changed. This syntax provides more control over the promoted actions on a page. The legacy syntax is still supported going forward <!-- ?-->, but it's recommended to implement the new syntax.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way that you promote actions on a page or page extension has changed. The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. The legacy syntax is still supported in releases going forward, but it's recommended to implement the new syntax.
 
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can create groups in the `area(Promoted)` or add `actionref` sections directly. 
 
@@ -130,6 +125,8 @@ You can implement the `actionref` syntax on a page without breaking any existing
 
 > [!NOTE]  
 > The following section describes the former way of defining promoted actions for [!INCLUDE[prod_short](includes/prod_short.md)]. It's recommended to switch to the `ActionRef` syntax for defining promoted actions.
+
+You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an extra step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
 
 Promoted actions can be grouped. You can add promoted actions by different grouped categories. Typically, promoted actions are displayed in the ribbon of the role center client. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories. 
 
