@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 05/05/2022
+ms.date: 05/06/2022
 ms.author: edupont
 ---
 
@@ -118,7 +118,7 @@ Microsoft also provides predefined templates, including the following list:
 - *Request approval for Microsoft [!INCLUDE[prod_long](../includes/prod_long.md)] general journal batch*  
 - *Request approval for Microsoft [!INCLUDE[prod_long](../includes/prod_long.md)] general journal lines*
 
-Power Automate shows a list of services that are used in the flow template and will attempt to connect automatically to those services. If you haven't previously connected to a service, you'll be prompted to sign in to each of the services you need to connect to. A green checkmark will appear next to each service once a connection has been successfully made. Choose the **Continue** action.
+Power Automate shows a list of services that are used in the flow template. The user will be signed in to those services automatically. If Power Automate can't connect to a service, the user will be prompted to sign in to each of the relevant services. A green checkmark will appear next to each service once a connection has been successfully made. Choose the **Continue** action.
 
 Power Automate will prompt you to select an environment and company within your [!INCLUDE[prod_short](../includes/prod_short.md)] tenant. Because each step in the flow is independent of the next, you may be required to define the environment and company multiple times when using a [!INCLUDE[prod_short](../includes/prod_short.md)] Power Automate template.
 
@@ -132,7 +132,7 @@ The **Find records (V3)** action finds records in the same way as [filter expres
 
 ## Telemetry
 
-We recommend that our partners use the [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry app in Power BI to keep track of workflows. It shows usage of connectors for tenants that you manage or own,​ and it uses any app insights​ telemetry that​ you have set up in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
+We recommend that our partners use the [!INCLUDE [prod_short](../includes/prod_short.md)] telemetry app in Power BI to keep track of workflows. It shows usage of connectors for tenants that you manage or own. the app also uses any app insights​ telemetry that​ you have set up in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].  
 
 Get the app at [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport).  
 
