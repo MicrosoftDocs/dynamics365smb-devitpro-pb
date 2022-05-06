@@ -1,9 +1,9 @@
 ---
-title: "Update 20.1 for Microsoft Dynamics 365 Business Central 2022 Release Wave 1"
+title: Update 20.1 for Business Central online
 description: Get an overview of new and changed capabilities in the 20.1 update of Business Central online, which is part of 2022 release wave 1.
-ms.author: a-emniel
+ms.author: edupont
 ms.custom: na
-ms.date: 05/05/2022
+ms.date: 05/06/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,11 +42,11 @@ Find an overview of hotfixes in this [article](TBD).
 
 ## Release Plan  
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for Business Central online in 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 20.1
+## Get the update
 
-Please note that new customers will automatically get the latest builds of Business Central (20.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+New customers will automatically get the latest update of Business Central (20.1). Admins of  existing environments will receive an email notification as soon as the environment has been updated. For more information, see [Major Updates and Minor Updates for Business Central Online](..//administration/update-rollout-timeline.md).  
 
 ## Good to know
 
