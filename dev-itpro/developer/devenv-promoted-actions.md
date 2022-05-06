@@ -22,20 +22,20 @@ The following table describes where you can use promoted actions.
 
 
 <!-- old -->
-You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an additional step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
+You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an extra step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
 
 
 ## Promoting actions syntax
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way you promote actions on a page or page extension has changed. This syntax provides more control over the promoted actions on a page. The legacy syntax is still supported going forward <!-- ?-->, but it is recommended to implement the new syntax.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way that you promote actions on a page or page extension has changed. This syntax provides more control over the promoted actions on a page. The legacy syntax is still supported going forward <!-- ?-->, but it's recommended to implement the new syntax.
 
-To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it is promoted in the UI. You can create groups in the `area(Promoted)` or add `actionref` sections directly. 
+To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can create groups in the `area(Promoted)` or add `actionref` sections directly. 
 
-An `actionref` inherits the properties of the referenced action. 
+An `actionref` inherits the properties of the referenced action.
 
 ### Syntax example
 
-This example illustrates a page with the actions promoted area syntax. The `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. This means that the `MyBaseAction` will be available from under the Processing group in the action bar. Furthermore, the `area(Promoted)` defines which actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the Processing group, also is promoted for easy access on the page.
+This example illustrates a page with the actions promoted area syntax. The `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the Processing group in the action bar. Furthermore, the `area(Promoted)` defines which actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the Processing group, also is promoted for easy access on the page.
 
 ```al
 page 50105 ActionRefPage
@@ -140,7 +140,7 @@ Promoted actions can be grouped. You can add promoted actions by different group
 ![image text.](media/Promoted-Category-V2.png)
 
 
-You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You will typically want to change the captions, especially the Category4 through Category10 captions. See the table below for the default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
+You assign a promoted action to a category by setting the **PromotedCategory** property of the action. By default, these category names correspond to the captions that are displayed for the category on the page in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. You'll typically want to change the captions, especially the Category4 through Category10 captions. See the table below for the default **PromotedCategory** values. To change the default captions, set the **PromotedActionCategories** property. 
 You type the values of the **PromotedActionCategories** where each caption is separated with a comma as shown below: 
 
 ```AL
