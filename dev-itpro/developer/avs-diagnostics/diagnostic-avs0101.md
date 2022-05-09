@@ -20,7 +20,7 @@ A package with publisher '{0}', name '{1}', and a version compatible with '{2}' 
 
 ## How to fix this diagnostic?
 
-Validate that the dependency information are correct and that the dependencies are available for the countries / releases validated.
+Validate that the dependency information is correct and that the dependencies are available for the countries/releases validated.
 
 ## See Also
 
