@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Business Central is teaming up with Shopify to help our c
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
 **Business Central newsletter for partners**  
-Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be available on XX and will be a summary of relevant information related to Business Central.
+Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Updated documentation and samples related to Power Automate**  
 Documentation related to Power Automate integration and the new “Automate” feature has been updated in may 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
