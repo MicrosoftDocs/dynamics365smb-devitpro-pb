@@ -1,7 +1,7 @@
 ---
 author: edupont04
 ms.topic: include
-ms.date: 02/23/2022
+ms.date: 05/09/2022
 ms.author: edupont
 ---
 In the Microsoft Partner Center documentation, you can learn how to [request a reseller relationship with customers](/partner-center/request-a-relationship-with-a-customer), [assign licenses to users](/partner-center/assign-licenses-to-users), and [create new subscriptions](/partner-center/create-a-new-subscription). [!INCLUDE[prod_short](prod_short.md)] is one of the subscriptions that you can create, and there are [!INCLUDE[prod_short](prod_short.md)]-specific license types that you can assign to users.  
@@ -25,7 +25,7 @@ When you establish a reseller relationship with a customer in Partner Center, yo
 
 This way of accessing customer resources is called *delegated administration*, and the partner users are therefore called *delegated administrators* or *delegated admins* in daily shorthand. For more information, see [Delegated Administrator Access to Business Central Online](../../administration/delegated-admin.md).  
 
-Starting in February 2022, you can set up security groups with *granular delegated admin privileges* to better control who has access to which customers with which level of access to the customer's [!INCLUDE [prod_short](prod_short.md)] environment. This way, the delegated admins no longer have to be global admins for the customer's Active Directory. For more information, see [Admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).  
+Since February 2022, you can set up security groups with *granular delegated admin privileges* to better control who has access to which customers with which level of access to the customer's [!INCLUDE [prod_short](prod_short.md)] environment. This way, the delegated admins no longer have to be global admins for the customer's Active Directory. For more information, see the [Delegated Administrator Access to Business Central Online](../../administration/delegated-admin.md) section, and also the [Admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center) article in the Microsoft 365 admin content.  
 
 > [!NOTE]
 > These users cannot provide accounting services for the customers. For this purpose, the customers must use the **External Accountant** license, which is also available via CSP.  
