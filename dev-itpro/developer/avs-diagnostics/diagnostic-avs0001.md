@@ -20,7 +20,7 @@ The 'app.json' could not be found in the specified package.
 
 ## How to fix this diagnostic?
 
-Rebuild the app either from Visual Studio Code or using alc.exe.
+Rebuild the app either from Visual Studio Code or by using the alc.exe tool.
 
 ## See Also
 
