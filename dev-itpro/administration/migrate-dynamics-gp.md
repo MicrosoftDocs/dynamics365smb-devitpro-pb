@@ -75,7 +75,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 3. Vendor master records and outstanding transactions from the Payables module
 
-    In the setup wizard, you can choose to migrate all vendors from Dynamics GP or only active vendors. This allows you to not migrate over vendors that have been marked as inactive. We also have added bringing all addresses from the vendor over into Business Central. All of the addresses on the vendor will be setup as order addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
+    In the setup wizard, you can choose to migrate all vendors from Dynamics GP or only active vendors. This allows you to not migrate over vendors that have been marked as inactive. We also have added bringing all addresses from the vendor over into Business Central. All vendor addresses from the vendor are migrated to Business Central. The vendor's Remit To Address will be the main address for the vendor. All other vendor addresses will be setup as Order addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
 
     We also bring over outstanding Payables transactions. These transactions will be brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central will be for $600 as that is the amount remaining to be paid. We bring over all transaction types from Payables Management.
 
@@ -90,7 +90,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
 6. Checkbook master data.  
 
-    We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../includes/prod_short.md)] as we will bring over transactions that have not been reconciled during the migration process.  
+    In the setup wizard, you can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. We strongly recommend that you reconcile your checkbooks before you run the migration process to [!INCLUDE [prod_short](../includes/prod_short.md)] as we will not bring over transactions that have not been reconciled during the migration process.  
 
 ## Diagnostics run
 
