@@ -20,7 +20,7 @@ The submission must target at least one existing release of [!INCLUDE [prod_shor
 
 ## How to fix this diagnostic?
 
-The app.json has a dependency either from the Application property or the dependency section that sets the requirement higher than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. To learn more see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
+The app.json files has a dependency either from the `application` property or the `dependencies` section that sets the requirement higher than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. To learn more see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
 
 ## See Also
 
