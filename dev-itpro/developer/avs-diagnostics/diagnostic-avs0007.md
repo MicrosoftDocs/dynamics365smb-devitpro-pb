@@ -20,7 +20,7 @@ The release version '{0}' is not supported.
 
 ## How to fix this diagnostic?
 
-In the app.json file of the app you have to specify one of the supported runtime versions from [Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
+In the app.json file of the app you must specify one of the supported runtime versions from [Choosing Runtime Version in AL](../devenv-choosing-runtime.md).
 
 ## See Also
 
