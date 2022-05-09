@@ -20,7 +20,7 @@ The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not 
 
 ## How to fix this diagnostic?
 
-Runtime packages are not allowed. A new non-runtime package must be submitted. For more information about it see [Runtime packages limitations](../devenv-creating-runtime-packages.md#limitations)
+Runtime packages are not allowed. A new non-runtime package must be submitted. For more information, see [Runtime packages limitations](../devenv-creating-runtime-packages.md#limitations).
 
 ## See Also
 
