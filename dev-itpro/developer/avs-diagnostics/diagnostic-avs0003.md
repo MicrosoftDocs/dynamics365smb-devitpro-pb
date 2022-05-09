@@ -20,7 +20,7 @@ The file '{0}' could not be added to the file system because a file with the sam
 
 ## How to fix this diagnostic?
 
-Something went wrong when compiling the app. Contact support for more help.
+Something went wrong when compiling the app. Retry the operation and contact Partner Center support if it fails again.
 
 ## See Also
 

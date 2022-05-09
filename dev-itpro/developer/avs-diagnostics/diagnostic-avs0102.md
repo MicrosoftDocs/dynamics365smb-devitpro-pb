@@ -18,6 +18,10 @@ author: thpeder
 
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded.
 
+## How to fix this diagnostic?
+
+Retry the operation and contact Partner Center support if it fails again.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

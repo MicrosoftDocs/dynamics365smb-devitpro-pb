@@ -18,6 +18,10 @@ author: thpeder
 
 The following extension(s) could not be found. Upload the missing extensions and try again. {0}.
 
+## How to fix this diagnostic?
+
+The app has a dependency on one or more apps that are missing. Make sure all the dependencies of the app is installed and retry the operation again.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

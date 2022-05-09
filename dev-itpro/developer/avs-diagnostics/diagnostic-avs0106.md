@@ -20,5 +20,6 @@ The submission must target at least one existing country/region of [!INCLUDE [pr
 
 ## See Also
 
+[Technical Validation FAQ](../devenv-checklist-submission-faq.md)
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

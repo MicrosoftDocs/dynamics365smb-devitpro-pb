@@ -20,7 +20,7 @@ The specified ruleset could not be loaded. Details: {0}
 
 ## How to fix this diagnostic?
 
-Something went wrong when loading a ruleset, contact support for more help.
+Something went wrong when loading a ruleset, retry the operation and contact Partner Center support if it fails again.
 
 ## See Also
 

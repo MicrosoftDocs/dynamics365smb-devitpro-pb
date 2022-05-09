@@ -18,6 +18,10 @@ author: thpeder
 
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found.
 
+## How to fix this diagnostics?
+
+Validate that the dependency information are correct and that the dependencies are available for the countries / releases validated.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  
