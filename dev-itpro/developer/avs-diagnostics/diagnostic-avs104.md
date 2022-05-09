@@ -18,6 +18,10 @@ author: thpeder
 
 The extension '{0}' by '{1}' (version '{2}') is a runtime package, which is not allowed in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
+## How to fix this diagnostic?
+
+Runtime packages are not allowed. The new non-runtime package must be submitted. For information about it see [Runtime packages limitations](../devenv-creating-runtime-packages.md#limitations)
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

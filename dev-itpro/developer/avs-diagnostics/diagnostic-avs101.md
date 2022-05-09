@@ -18,7 +18,12 @@ author: thpeder
 
 A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found.
 
+## How to fix this diagnostic?
+
+Validate that the dependency information are correct and that the dependencies are available for the countries / releases validated.
+
 ## See Also
 
+[Technical Validation FAQ](../devenv-checklist-submission-faq.md)
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

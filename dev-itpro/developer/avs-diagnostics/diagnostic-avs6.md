@@ -18,7 +18,12 @@ author: thpeder
 
 The runtime version '{0}' is not supported for the release '{1}' because its latest supported runtime version is '{2}'.
 
+## How to fix this diagnostic?
+
+In the app.json file of the app you have to specify the latest support runtime version or lower.
+
 ## See Also
 
+[Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

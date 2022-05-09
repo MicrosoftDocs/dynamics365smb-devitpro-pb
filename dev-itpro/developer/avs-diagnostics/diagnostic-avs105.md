@@ -18,7 +18,12 @@ author: thpeder
 
 The submission must target at least one existing release of [!INCLUDE [prod_short](../includes/prod_short.md)]. Verify the dependencies specified in the `app.json` file of all the apps submitted. For more information about the target release computation, see the examples in the [Technical Validation Checklist](../devenv-checklist-submission.md).
 
+## How to fix this diagnostic?
+
+The app.json has a dependency either from the Application property or the dependency section that sets the requirement higher than the available releases of [!INCLUDE [prod_short](../includes/prod_short.md)]. To learn more see [Technical Validation FAQ](../devenv-checklist-submission-faq.md).
+
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
+[Getting Started with AL](../devenv-get-started.md)
+[Developing Extensions](../devenv-dev-overview.md)

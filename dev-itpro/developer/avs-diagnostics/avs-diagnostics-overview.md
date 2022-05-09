@@ -1,6 +1,6 @@
 ---
 title: "Application Validation Service Diagnostics Overview"
-description: "The application validation services, analyzes apps for scenarios such as upgrading a tenant or uploading a PTE."
+description: "The application validation service diagnostics"
 ms.author: thpeder
 ms.custom: na
 ms.date: 02/05/2022

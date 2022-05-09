@@ -18,6 +18,10 @@ author: thpeder
 
 The file '{0}' could not be added to the file system because a file with the same name already exists.
 
+## How to fix this diagnostic?
+
+Something went wrong when compiling the app. Contact support for more help.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

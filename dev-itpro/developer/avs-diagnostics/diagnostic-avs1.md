@@ -18,6 +18,10 @@ author: thpeder
 
 The 'app.json' could not be found in the specified package.
 
+## How to fix this diagnostic?
+
+Rebuild the app either from VSCode or using alc.exe.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

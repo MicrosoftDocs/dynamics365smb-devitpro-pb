@@ -20,5 +20,6 @@ The extension '{0}' by '{1}' (version '{2}') has already been uploaded to [!INCL
 
 ## See Also
 
+[Technical Validation](../devenv-checklist-submission.md)
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

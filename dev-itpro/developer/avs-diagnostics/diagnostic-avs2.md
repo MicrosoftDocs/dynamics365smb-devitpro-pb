@@ -18,6 +18,12 @@ author: thpeder
 
 The runtime version '{0}' of the extension is too recent for the release of [!INCLUDE [prod_short](../includes/prod_short.md)] being validated. The latest supported runtime version is '{1}'.
 
-## See Also  
+## How to fix this diagnostic?
+
+In the app.json file of the app you have to specify the latest support runtime version or lower.
+
+## See Also
+
+[Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

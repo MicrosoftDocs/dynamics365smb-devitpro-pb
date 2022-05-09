@@ -18,6 +18,10 @@ author: thpeder
 
 The extension with ID '{0}' appears multiple times in the submission, while all extensions submitted are expected to have a unique ID.
 
+## How to fix this diagnostic for App Source submissions?
+
+Make sure you only include your app once in the submission in Partner Center.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  

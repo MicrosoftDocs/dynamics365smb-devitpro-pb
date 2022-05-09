@@ -18,6 +18,10 @@ author: thpeder
 
 The specified ruleset could not be loaded. Details: {0}
 
+## How to fix this diagnostic?
+
+Something went wrong when loading a ruleset, contact support for more help.
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  
