@@ -37,12 +37,16 @@ Environments that have extensions with name collisions can experience issues whe
 > [!IMPORTANT]  
 > The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
 
+
 In order to meet the requirements for the AppSource technical validation, you must have a 3 letters affix registered for your extension publisher and you must use the affix in your extension.
 
 If you do not have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
 - Your MPN ID,
 - The publisher name that you will use in your extensions (in the app.json file),
 - A list of 3 letters affixes in order of preference. You must provide at least 5 suggestions.
+
+> [!NOTE]
+> Affixes are not case-sensitive, which means that for example "ABC", "abc", and "AbC" are treated as the same affix. Providing both "ABC" and "abc" counts as only one of your suggestions.
 
 Note, that you are not required to change any already registered affixes; you can continue using these affixes. The guidelines above only apply to new registrations.
 
