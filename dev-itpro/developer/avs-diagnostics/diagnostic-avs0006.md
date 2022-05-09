@@ -20,7 +20,7 @@ The runtime version '{0}' is not supported for the release '{1}' because its lat
 
 ## How to fix this diagnostic?
 
-In the app.json file of the app you have to specify the latest supported runtime version or lower. For more information see [app.json file](../devenv-json-files.md#appjson) and [Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
+In the app.json file of the app you have to specify the latest supported runtime version or lower. For more information, see [app.json file](../devenv-json-files.md#appjson) and [Choosing Runtime Version in AL](../devenv-choosing-runtime.md).
 
 ## See Also
 
