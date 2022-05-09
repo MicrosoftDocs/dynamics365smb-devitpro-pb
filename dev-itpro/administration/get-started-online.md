@@ -30,9 +30,7 @@ In order to be able to service [!INCLUDE [prod_short](../includes/prod_short.md)
 
 [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
-<!--## Join the Ready to Go program
-
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [Ready to Go](../developer/readiness/readiness-ready-to-go.md).  -->
+For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
 ## Step 2: Go to market
 
