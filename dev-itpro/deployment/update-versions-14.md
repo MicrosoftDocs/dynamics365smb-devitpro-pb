@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2022
+ms.date: 05/09/2022
 
 ---
 
@@ -33,6 +33,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5014488](https://support.microsoft.com/help/5014488)|Cumulative Update 35|May 2022|Application 14.36.48675</br>Platform 14.0.48664|
 |[5013419](https://support.microsoft.com/help/5013419)|Cumulative Update 34|April 2022|Application 14.35.48518</br>Platform 14.0.48501|
 |[5012304](https://support.microsoft.com/help/5012304)|Cumulative Update 33|March 2022|Application 14.33.48304</br>Platform Build 14.0.48395|
 |[5011303](https://support.microsoft.com/help/5011303)|Cumulative Update 32|February 2022|Application 14.33.48304</br>Platform Build 14.0.48295|
