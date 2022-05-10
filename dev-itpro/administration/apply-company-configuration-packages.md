@@ -19,8 +19,6 @@ Start by setting up a company in a sandbox so that users can practice before the
 
 If the customer needs more than one company in [!INCLUDE [prod_short](../includes/prod_short.md)], you can copy commonly used values from an existing company to a new one, as long as both companies are in the same tenant. For example, if you have a standard list of symptom codes that is common to all your service management implementations, you can copy the codes easily from one company to another. You can do this from the **Configuration Worksheet** page.  
 
-## 
-
 ## Migrate customer data
 
 In many cases, to migrate customer data to [!INCLUDE [prod_short](../includes/prod_short.md)] online, use the built-in migration tools to migrate data from specific product versions. For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).  
