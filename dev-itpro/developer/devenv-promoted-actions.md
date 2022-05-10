@@ -1,6 +1,6 @@
 ---
 title: "Promoted Actions"
-description: Promoted actions are actions that are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
+description: Promoted actions are configured to display on the Home tab for accessing quick daily actions in Dynamics 365 Business Central. 
 ms.custom: na
 ms.date: 05/05/2022
 ms.reviewer: na
@@ -22,11 +22,12 @@ The following table describes where you can use promoted actions.
 
 ## Promoting actions syntax
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way that you promote actions on a page or page extension has changed. The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. The legacy syntax is still supported in releases going forward, but it's recommended to implement the new syntax.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way that you promote actions on a page or page extension has changed. The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. <!-- more content here --> The legacy syntax is still supported in releases going forward, but it's recommended to implement the new syntax.
 
-To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)`, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can create groups in the `area(Promoted)` or add `actionref` sections directly. 
+To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action.
 
-An `actionref` inherits the properties of the referenced action.
+<!--
+Pages and page extensions can contain an action group for promoted actions. These groups can contain references to existing actions. It is possible to add to existing groups or add new groups in page extensions. End-users can personalize their experience by promoting actions themselves. The platform and client will stay backwards compatible with existing promoted actions property, but a page or page extension must be consistent in its use. There will be a code action to convert from the old model to the new. -->
 
 ### Syntax example
 
