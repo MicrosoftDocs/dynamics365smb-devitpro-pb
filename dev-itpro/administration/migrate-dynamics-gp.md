@@ -142,6 +142,7 @@ At the end of the migration, you have a completely copy of your Dynamics GP data
 ## See also
 
 [Run the assisted setup guide](migrate-data.md#run-the-assisted-setup-guide)  
+[Compare Work in Dynamics GP to Business Central](migrate-dynamics-gp-videos.md)  
 [Migrating On-Premises Data to Business Central Online](migrate-data.md)  
 [Troubleshooting Cloud Migration](migration-troubleshooting.md)  
 [FAQ about Migrating to Business Central Online from On-Premises Solutions](faq-migrate-data.md)  

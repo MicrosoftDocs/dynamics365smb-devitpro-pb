@@ -71,13 +71,17 @@ The default version of [!INCLUDE [prod_short](../developer/includes/prod_short.m
 
 If your customer wants more tweaks, you can create customizations of profiles and pages in code. For more information, see [Customizing the User Interface for User Roles](../developer/devenv-role-customization.md) in the developer content.  
 
+You can also use [configuration packages](set-up-standard-company-configuration-packages.md) to quickly apply the same settings as usual to new environments.
+
 ### Move the customer from a trial to a paid subscription
 
 If your customer decides to start using [!INCLUDE [prod_short](../includes/prod_short.md)] to run their business, they must switch to a paid subscription. Both the internal admin and the delegated admin can assign licenses to users in the Microsoft 365 admin center. For more information, see [Buy or remove licenses](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide&preserve-view=true) in the Microsoft 365 content.  
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)] using a pre-configured demonstration company that [you have prepared](demo-environment.md) in other ways, they can now sign up for [!INCLUDE [prod_short](../includes/prod_short.md)] using their own work or school account so that you can assign the [!INCLUDE [prod_short](../includes/prod_short.md)] license to their Microsoft 365 tenant.
+If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)] using a pre-configured demonstration company that [you have prepared](demo-environment.md) in other ways, they can now sign up for [!INCLUDE [prod_short](../includes/prod_short.md)] using their own work or school account so that you can assign the [!INCLUDE [prod_short](../includes/prod_short.md)] license to their Microsoft 365 tenant.  
+
+You can help them migrate their data from their legacy system. For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).
 
 ## Step 5: Configure the support experience
 
