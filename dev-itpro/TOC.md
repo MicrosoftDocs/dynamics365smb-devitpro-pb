@@ -50,6 +50,7 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Cloud Solution Provider (Partner Center)](/partner-center/csp-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Connect with customers (Partner Center)](/partner-center/connect-with-your-customers?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Set Up Company Configuration Packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Customize Business Central](/dynamics365/business-central/ui-customizing-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Onboarding Experiences](administration/onboarding-experiences.md)
 ## Frequently asked questions
@@ -162,7 +163,6 @@
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
 ### [Enabling new features ahead of time](administration/feature-management.md)
-### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
 ### [Recommend apps](administration/recommend-apps.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Excel Add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -172,7 +172,8 @@
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
 ### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
 ### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
-<!--Potentially add RapidStart here?-->
+### [Set up standard company configuration packages](administration/set-up-standard-company-configuration-packages.md)
+### [Apply company configuration packages](administration/apply-company-configuration-packages.md)
 <!-- onboard customers-->
 ## Onboard your customers
 ### [Trials and sign-ups](deployment/customer-signup.md)
