@@ -128,7 +128,7 @@ If your submission failed at another stage than "Automated application validatio
 
 ### How do I enable Application Insights telemetry for my submissions?
 
-In order to enable Application Insights signals for your submssions, you must specify the `applicationInsightsKey` property or the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about these properties, see [JSON files](devenv-json-files.md).
+In order to enable Application Insights signals for your submssions, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 ### I do not see any signals in the resource specified for my extension, what do I do next?
 
