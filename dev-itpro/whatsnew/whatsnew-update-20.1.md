@@ -3,7 +3,7 @@ title: Update 20.1 for Business Central online
 description: Get an overview of new and changed capabilities in the 20.1 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: edupont
 ms.custom: na
-ms.date: 05/06/2022
+ms.date: 05/11/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ Would you like to know what has changed in update 20.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](TBD).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-20-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-1-39901-platform-build-20-0-39849-60a0fe56-57b5-41b1-90ee-29694d59ad3b).
 
 ## Feature changes  
 
@@ -48,7 +48,7 @@ New customers will automatically get the latest update of Business Central (20.1
 ## Good to know
 
 **Later in May: General availability of the Shopify Connector**  
-Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central customers create a better online shopping experience. With update 20.1 it will be possible for trial users to try out the Shopify connector, which will be available for Business Central customers later in May 2022, releasing on AppSource and Shopify App Store. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
+Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central customers create a better online shopping experience. With update 20.1 it will be possible for trial users to try out the Shopify connector, which will become available for Business Central customers later in May 2022, releasing on AppSource and Shopify App Store. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
