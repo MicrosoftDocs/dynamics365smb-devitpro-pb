@@ -18,7 +18,7 @@ Would you like to know what has changed in update 20.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](TBD).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-1-39901-platform-build-20-0-39849-60a0fe56-57b5-41b1-90ee-29694d59ad3b).
 
 ## Feature changes  
 
