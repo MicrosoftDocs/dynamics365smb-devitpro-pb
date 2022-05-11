@@ -128,13 +128,14 @@ If your submission failed at another stage than "Automated application validatio
 
 ### How do I enable Application Insights telemetry for my submissions?
 
-In order to enable Application Insights signals for your submssions, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
+To enable Application Insights signals for your submssions, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 ### I do not see any signals in the resource specified for my extension, what do I do next?
 
-Here is a list of steps that you can follow to troubleshoot this issue:
-1. Validate the Application Insights resource queried is the same one as specified in the manifest (app.json) of your extension.
-2. Validate that the time range when executing the query covers the time of the submission.
+Here's a list of steps that you can follow to troubleshoot this issue:
+
+1. Validate that the Application Insights resource queried is the same one as specified in the manifest (app.json) of your extension.
+2. Validate that the time range when running the query covers the time of the submission.
 3. If you are using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it is more reliable. Make sure to use the full connection string from your Azure Application Resource.
 4. If you are using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you are using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. For more information, see [Connection strings](https://docs.microsoft.com/en-us/azure/azure-monitor/app/sdk-connection-string)
 5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. For more information, see [Sampling in Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/sampling). 
