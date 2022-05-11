@@ -22,9 +22,6 @@ Find an overview of hotfixes in this [article](TBD).
 
 ## Feature changes  
 
-- [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
-- [Updating only licensed users from Microsoft 365 runs faster and more efficiently](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/updating-only-licensed-users-365-runs-faster-more-efficiently)
-- [Delegated admin’s job queue entries are run by user](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/delegated-admin-create-job-queue-entries-request-approval-licensed-user)
 - [Add action on card and list pages to trigger a chosen flow from Business Central web client](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/action-group-run-chosen-instant-power-automate)
 - [Power Platform and Azure Logic Apps connector for Business Central online no longer in preview](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improvements-power-automate-power-apps-connector)
 - [Fraud prevention headers for clients in the UK](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/fraud-prevention-headers-clients-uk)
@@ -50,17 +47,17 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Shopify Connector will be published in AppSource later in May**  
-Microsoft Dynamics 365 Business Central is teaming up with Shopify to help our customers create a better online shopping experience. We will go live with the Shopify Connector in AppSource later in May. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
+**Later in May: General availability of the Shopify Connector**  
+Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central customers create a better online shopping experience. With update 20.1 it will be possible for trial users to try out the Shopify connector, which will be available for Business Central customers later in May 2022, releasing on AppSource and Shopify App Store. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
 **Business Central newsletter for partners**  
-Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be available on XX and will be a summary of relevant information related to Business Central.
+Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Updated documentation and samples related to Power Automate**  
-Documentation related to Power Automate integration and the new “Automate” feature has been updated in may 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
+Documentation related to Power Automate integration and the new “Automate” feature has been updated in May 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
