@@ -36,7 +36,6 @@ The following table lists the Business Central 19 versions and the minimum versi
 
 To see the available updates for Business Central 2021 Release Wave 1, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
 
-
 ## Version 18 compatibility
 
 The following table lists the Business Central 18 versions and the minimum version of later releases that are compatible for upgrade.

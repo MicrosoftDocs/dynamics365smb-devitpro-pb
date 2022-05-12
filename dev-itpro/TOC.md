@@ -4116,7 +4116,7 @@
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
 ##### [From Version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v20.md)
 ### Business Central 2021 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v19.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
