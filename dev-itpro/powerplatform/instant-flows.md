@@ -1,5 +1,5 @@
 ---
-title: Set up automated workflows
+title: Switch on Manual Instant Flows
 description: Learn how to give your customers access to flows that they can run from inside Business Central online.
 author: edupont04
 ms.custom: na
