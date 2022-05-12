@@ -73,29 +73,29 @@ If you need help formulating a positioning statement, try the value proposition 
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|
 |Include a headline question |Get your prospects’ attention by asking them a compelling pain-based question that they can relate to. |“Struggling to manage your ingredient inventory and fretting over allergens?” |
-|- | You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more. |-|
-|- | Your questions should be intriguing and customer-centric.|- |
-|-| In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest. |-|
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions. |-|
-|Messaging (Address their pains)| Pain is a strong motivator of action. |-|
-|-|- Identify 1-3 key sources of the client’s most prominent pain early on the page. |-|
-|-|- Call out the fears that are likely to be holding them back. |te-st|
-|-|- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service. |-|
-| Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.|- Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|-|
+| | You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more. |
+| | Your questions should be intriguing and customer-centric.|
+|| In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest. |
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions. |
+|Messaging (Address their pains)| Pain is a strong motivator of action. |
+|-|- Identify 1-3 key sources of the client’s most prominent pain early on the page. |
+|-|- Call out the fears that are likely to be holding them back. |
+|-|- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service. |
+| Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.|- Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|
 
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|
-|**Messaging (Product benefits)** |Paint a clear, visual and desirable picture of what is possible. |-|
+|**Messaging (Product benefits)** |Paint a clear, visual and desirable picture of what is possible. |
 |-|Describe the most significant benefits and rewards that your prospect will realize after purchase. |- For example, “Save time and money (benefits) by having a system that does all the tracking and calculations for you (features).” |
-|-|- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features. |-|
-|-|- Paint a picture of a possible experience the prospect will immediately desire. |-|
-|-|Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply. |- |
-|-|- Choose a particular persona to speak to directly. |- |
-|-|- Engage prospects by speaking directly to them using first person “you” language. |-|
+|-|- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features. |
+|-|- Paint a picture of a possible experience the prospect will immediately desire. |
+|-|Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply. |
+|-|- Choose a particular persona to speak to directly. |
+|-|- Engage prospects by speaking directly to them using first person “you” language. |
 
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|
-|**Messaging (Prove your claims)** |Include specific calls-to-action on your app page.|	“Reduce how long it takes to set up your recipes in the morning from 1 hour to 10 minutes.”|
+|**Messaging (Prove your claims)** |Include specific calls-to-action on your app page.| “Reduce how long it takes to set up your recipes in the morning from 1 hour to 10 minutes.”|
 |-|Don’t make general and abstract claims.|-|
 |-|Use data as often as possible to support your statements.|
 |-|If you make specific claims, support your claims with proof, while Quantifying impacts and gains.|
