@@ -30,6 +30,7 @@ Additionally, we have provided specific recommendations on how to apply these el
 We urge you to review and implement these best practices on your landing page – in so doing you will contribute in providing the Microsoft community of customers with a consistent buying experience across publishers.
 
 ## Layout and structure elements
+
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|
 |Company                                |Include the company logo on the page|<!--	./media/image30.jpg to be fixed -->|
@@ -53,6 +54,7 @@ If you need help formulating a positioning statement, try the value proposition 
 - The text should be written from their perspective, not yours.
 
 **Recommended menu items:**
+
 - How to Buy, Benefits Gained, Why Us, and Contact.
 
 ## The upper-right corner of the page is usually an ideal spot
@@ -62,6 +64,7 @@ If you need help formulating a positioning statement, try the value proposition 
 - Try not to use stock photos of people or objects.
 
 **Engagement**
+
 - Too much text forces the brain to skim, skip, and exit. Text engages the logical, analytical brain, but not the emotional brain.
 - Keep it clean and straightforward in terms of design and layout. Use lots of pictures, graphs, and screen shots to enhance engagement.
 
@@ -100,7 +103,7 @@ If you need help formulating a positioning statement, try the value proposition 
 |-| Abstract concepts such as “more efficiency, more productivity, transform your business” are not emotionally impactful or convincing and do not compel a prospect to act.
 
 Target market - If you support multiple countries or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
-	
+
 | Element    | Description | Example |
 |------------|-------------|---------|
 |**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|
@@ -144,11 +147,12 @@ You want prospects to see how their data/process would look in your system.
 
 | Element          | Description |
 |------------------|-------------|
-|**Videos**	(Tell your story using videos not text)|Include as many videos as possible.|
+|**Videos** (Tell your story using videos not text)|Include as many videos as possible.|
 
 - Videos have a much higher level of engagement and viewing time and convey much more than you can ever say with words.
 
 Include at least one customer testimonial video on your app landing page.
+
 - Your client should speak specifically about the pains they had before and the benefits they gained after, not product features. It should be all about your customers, not you.
 
 Include one product demonstration video.
@@ -183,7 +187,7 @@ Transparency is the key to building trust.
 - Use scarcity to compel action. Offer a 100% money-back guarantee.
 
 We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at https://mbspartner.microsoft.com/BFI/Topic/64
-			
+
 | Element       | Description |
 |---------------|-------------|
 |**Live chat**|Include live chat, with a photo of one of your team members smiling at an appropriate time to increase conversion, such as when a prospect clicks the back button on your pricing page. |
@@ -202,8 +206,7 @@ We recommend providing three offerings, optimized for three different customer s
 Most lead capture forms are way too long, demanding, and intimidating, and have low completion rates.
 
 > [!NOTE]  
-> Nobody has the time or is willing to fill out an annoying form, which is of no value to them, especially if it is purely self-serving from your standpoint.	
-
+> Nobody has the time or is willing to fill out an annoying form, which is of no value to them, especially if it is purely self-serving from your standpoint.
 
 | Element       | Description |
 |---------------|-------------|
