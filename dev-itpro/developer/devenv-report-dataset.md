@@ -84,18 +84,18 @@ dataset
         column(SomeFieldFromAnotherTable; MyQuery.SomeFieldFromAnotherTable)
         {
         }
+        
+            trigger OnPreDataItem()
+            begin
+                MyQuery.Open();
+            end;
+
+            trigger OnAfterGetRecord()
+            begin
+                if not MyQuery.Read() then
+                    CurrReport.Break();
+            end;
     }
-
-    trigger OnPreDataItem()
-    begin
-        MyQuery.Open();
-    end;
-
-    trigger OnAfterGetRecord()
-    begin
-        if not MyQuery.Read() then
-            CurrReport.Break();
-    end;
 }
 
 var 
