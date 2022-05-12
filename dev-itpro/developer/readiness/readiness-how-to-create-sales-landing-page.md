@@ -70,31 +70,31 @@ If you need help formulating a positioning statement, try the value proposition 
 
 ## Content elements: Text and messaging
 
-| Element     | Description | Example |
-|-------------|-------------|---------|
+| Element                                | Description                             | Example |
+|--------------------------------------|------------------|-----------------------------------|
 |Include a headline question |Get your prospects’ attention by asking them a compelling pain-based question that they can relate to. |“Struggling to manage your ingredient inventory and fretting over allergens?” |
-|test | You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more. |test|
-|test | Your questions should be intriguing and customer-centric.|test |
-|test| In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest. |test|
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions. |test|
-|Messaging (Address their pains)| Pain is a strong motivator of action. |test|
-|test|- Identify 1-3 key sources of the client’s most prominent pain early on the page. |test|
-|test|- Call out the fears that are likely to be holding them back. |test|
-|test|- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service. |test|
-| Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.|- Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|test|
+|- | You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more. |-|
+|- | Your questions should be intriguing and customer-centric.|- |
+|-| In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest. |-|
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions. |-|
+|Messaging (Address their pains)| Pain is a strong motivator of action. |-|
+|-|- Identify 1-3 key sources of the client’s most prominent pain early on the page. |-|
+|-|- Call out the fears that are likely to be holding them back. |te-st|
+|-|- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service. |-|
+| Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.|- Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|-|
 
-| Element     | Description | Example |
-|-------------|-------------|---------|
-|**Messaging (Product benefits)** |Paint a clear, visual and desirable picture of what is possible. |test|
+| Element                                | Description                             | Example |
+|--------------------------------------|------------------|-----------------------------------|
+|**Messaging (Product benefits)** |Paint a clear, visual and desirable picture of what is possible. |-|
 |-|Describe the most significant benefits and rewards that your prospect will realize after purchase. |- For example, “Save time and money (benefits) by having a system that does all the tracking and calculations for you (features).” |
-|test|- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features. |test|
-|test|- Paint a picture of a possible experience the prospect will immediately desire. |test|
-|test|Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply. |test |
-|test|- Choose a particular persona to speak to directly. |test |
-|test|- Engage prospects by speaking directly to them using first person “you” language. |test|
+|-|- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features. |-|
+|-|- Paint a picture of a possible experience the prospect will immediately desire. |-|
+|-|Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply. |- |
+|-|- Choose a particular persona to speak to directly. |- |
+|-|- Engage prospects by speaking directly to them using first person “you” language. |-|
 
-| Element     | Description | Example |
-|-------------|-------------|---------|
+| Element                                | Description                             | Example |
+|--------------------------------------|------------------|-----------------------------------|
 |**Messaging (Prove your claims)** |Include specific calls-to-action on your app page.|	“Reduce how long it takes to set up your recipes in the morning from 1 hour to 10 minutes.”|
 |-|Don’t make general and abstract claims.|-|
 |-|Use data as often as possible to support your statements.|
@@ -104,8 +104,8 @@ If you need help formulating a positioning statement, try the value proposition 
 
 Target market - If you support multiple countries or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
 
-| Element    | Description | Example |
-|------------|-------------|---------|
+| Element                                | Description                             | Example |
+|--------------------------------------|------------------|-----------------------------------|
 |**Messaging (Compelling call-to-action)**| Include specific calls-to-action on your app page|
 
 - This can be your free trial; a time-limited special price; a scheduled walk-through demonstration; and so on.
@@ -118,23 +118,23 @@ Button text should use benefit language rather than descriptive language.
 “Click here to start saving money now.”
 - Try not to send prospects away from your page – always have an embedded next step in your call to action that brings them back to your landing page.
 
-| Element       | Description | Example |
-|---------------|-------------|---------|
+| Element                                | Description                             | Example |
+|--------------------------------------|------------------|-----------------------------------|
 |**Messaging (Create a sense of urgency by teaching the prospects)** |Help your prospect gain a sense of urgency to buy by teaching them one thing about how they can be more efficient or profitable now.| Your bakery profitability will decrease over the next five years due to an increase of 3% in the cost of key inputs, such as wheat and sugar. Want to know five key strategies that can help you mitigate this challenge? Click here to find out how to preserve your profit margin|
 
 - Show them how their performance in one key business area is below that of their competitors.
 - For an example you can provide a quick online self-assessment, a top-10 tips blog post, and much more.
 Visual elements
 
-| Element                                         | Description |
-|-------------------------------------------------|-------------|
+| Element                                | Description                             | Example |
+|--------------------------------------|------------------|-----------------------------------|
 |**Pictures (Differentiation comparison images)** | Show them, don’t tell them|Show the before and after state.|
 
 - This is a visual image of how your prospects do things now versus how they will be able to do it in the future.
 - You are not telling them but showing them using a visual.
 
 | Element                              | Description | Example |
-|--------------------------------------|-------------|--------------|
+|--------------------------------------|-------------|---------|
 |**Compelling proof screen shots**     |Visually demonstrate all the claims that you are making. |Quickly and easily view inventory items.|
 
 - Graphic dashboards are the most effective method.
