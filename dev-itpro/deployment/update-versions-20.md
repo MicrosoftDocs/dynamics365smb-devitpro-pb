@@ -31,9 +31,10 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 ## See Also
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
-[Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v15.md)  
+[Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v20.md) 
+[Dynamics 365 Business Central On-Premises 2021 Release Wave 2 Updates](update-versions-19.md)  
+[Dynamics 365 Business Central On-Premises 2021 Release Wave 1 Updates](update-versions-18.md)   
 [Dynamics 365 Business Central On-Premises Spring 2019 Updates](update-versions-14.md)  
-[Dynamics 365 Business Central On-Premises October'18 Updates](update-versions-13.md)  
 [Resources for Help and Support](../help-and-support.md)  
 [System Requirements April '19](system-requirement-business-central.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
