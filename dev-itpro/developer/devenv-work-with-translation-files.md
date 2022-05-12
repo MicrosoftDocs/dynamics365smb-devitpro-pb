@@ -2,7 +2,7 @@
 title: "Working with Translation Files"
 description: "How to work with translations, multilanguage, and XLIFF files in Business Central"
 ms.custom: na
-ms.date: 09/02/2021
+ms.date: 04/06/2022
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
@@ -10,7 +10,10 @@ author: SusanneWindfeldPedersen
 
 # Working with Translation Files
 
-[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations.
+[!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is multi-language enabled, which means that you can display the user interface (UI) in different languages. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] this is done using XLIFF files, which is a standardized format used for computer-based translations.  
+
+> [!TIP]
+> Optionally, use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview) to get translations for your target languages. For more information, see [Translate user interface files](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service).
 
 For an overview of how translations are applied, see [Translations Overview](devenv-translations-overview.md).
 
@@ -173,4 +176,5 @@ For more information about importing and exporting .txt files, see [How to: Add 
 
 [Working with labels](devenv-using-labels.md)  
 [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md)  
-[JSON Files](devenv-json-files.md)
+[JSON Files](devenv-json-files.md)  
+[Translate user interface files using the Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service)  

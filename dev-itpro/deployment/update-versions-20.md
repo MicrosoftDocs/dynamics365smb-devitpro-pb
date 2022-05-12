@@ -1,16 +1,16 @@
 ---
-title: "Updates for the Business Central 2021 Release Wave 2 version"
-description: "Learn about the updates for Dynamics 365 Business Central 2021 Release Wave 2 on-premises deployments."
+title: "Updates for the Business Central 2022 Release Wave 1 versions"
+description: "Learn about the updates for Dynamics 365 Business Central 2022 Release Wave 1 on-premises deployments."
 author: jswymer
 ms.custom: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2022
+ms.date: 05/09/2022
 ---
 
-# Dynamics 365 Business Central On-Premises 2021 Release Wave 2 Updates
+# Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates
 
-This article lists updates released for the Microsoft Dynamics 365 Business Central 2021 release wave 2 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2021 release wave 1 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
+This article lists updates released for the Microsoft Dynamics 365 Business Central 2022 release wave 1 for on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central. If you have customers using Business Central 2022 release wave 1 on-premises, we recommend you apply this update so that your customers are using the latest version of Business Central. If you have customers using Business Central online, check the [Business Central Admin center](../administration/tenant-admin-center.md) to see if the tenants have been updated.  
 
 Each update is intended mainly for solutions that are experiencing the problems described in the Support articles linked to below. However, you're advised to always keep your solution updated with the latest update. If you're in doubt about whether this update addresses your specific problem, or you want to confirm whether any special compatibility, installation, or download issues are associated with a particular update, then contact Customer Support Services. They are ready to help you. For more information, see [https://support.microsoft.com/contactus/](https://support.microsoft.com/contactus/).
 
@@ -20,19 +20,13 @@ You should always install the latest update.
 
 ## Available updates for Business Central 2021 Release Wave 2
 
-The following table lists the updates that have been released for 2021 release wave 2 of Business Central (version 19). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
+The following table lists the updates that have been released for 2022 release wave 1 of Business Central (version 20). The updates include hotfixes that apply to all countries and hotfixes that apply to specific local versions. Check the relevant Support article for a description.
 
 Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, ES, FI, FR, IS, IT, NA, NL, NO, NZ, RU, SE, UK
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
-|[5014490](https://support.microsoft.com/help/5014490) |Update 19.7 |May 2022 |Application Build 19.7.39830</br>Platform Build 19.0.38062 |
-|[5013422](https://support.microsoft.com/help/5013422) |Update 19.6 |April 2022 |Application Build 19.6.38118</br>Platform Build 19.0.38062 |
-|[5012307](https://support.microsoft.com/help/5012307) |Update 19.5 |March 2022 |Application Build 19.5.36700</br>Platform Build 19.0.36625 |
-|[5011306](https://support.microsoft.com/help/5011306) |Update 19.4 |February 2022 |Application Build 19.4.35482</br>Platform Build 19.0.35473|
-|[5010207](https://support.microsoft.com/help/5010207)|Update 19.3 |January 2022 |Application Build 19.3.35002</br>Platform Build 19.0.34941|
-|[5009178](https://support.microsoft.com/help/5009178)|Update 19.2 |December 2021|Application Build 19.2.33504</br>Platform Build 19.0.33475|
-|[5007779](https://support.microsoft.com/help/5007779)|Update 19.1 |November 2021|Application Build 19.1.32186</br>Platform Build 19.0.32155|
+|[5014491](https://support.microsoft.com/help/5014491) |Update 20.1 |May 2022 |Application Build 20.1.39901</br>Platform Build 20.0.39849 |
 
 ## See Also
 
