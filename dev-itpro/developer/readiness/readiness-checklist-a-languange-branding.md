@@ -6,7 +6,7 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.author: a-emniel
+ms. a-emniel
 ---
 
 # Language, Branding, and Microsoft Images
