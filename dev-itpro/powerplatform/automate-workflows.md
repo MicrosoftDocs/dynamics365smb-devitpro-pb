@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/12/2022
 ms.author: edupont
 ---
 
@@ -26,14 +26,6 @@ With Power Automate, you can create business flows directly in-house and rely on
 - SharePoint  
 - Connectors to third party services  
 
-## Switch on Power Automate flows to be run inside Business Central
-
-From update 20.1 (May 2022), an admin can [switch on a feature](../administration/feature-management.md) to make it possible to run a Power Automate flow from most pages. To connect to Power Automate, Azure Active Directory services must access your [!INCLUDE [prod_short](../includes/prod_short.md)]. Once the admin has connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Power Automate, users will see any flows that the organization has added when they choose the **Automate** action in the relevant pages. They can run the flows without leaving [!INCLUDE [prod_short](../includes/prod_short.md)]. This way, the users remain within their original work process and are not interrupted by having to switch context.  
-
-As the admin, you can try out the new feature for yourself before you switch it on for everyone in your organization. For more information, see the tip in the [How to enable an optional feature](../administration/feature-management.md#how-to-enable-an-optional-feature) section. Then, when you switch to the new browser tab, open a page such as the **Customers** list, and then choose the **Automate** action. You'll be prompted to authorize Power Automate for access to your Azure Active Directory. The **Azure Active Directory Service Permissions** page runs automatically, and you must choose the *Authorize Azure Services* hyperlink once you've verified that the Azure AD service that has requested access is `https://service.flow.microsoft.com/`. Then, you can run any of the pre-configured workflows, or start adding your own. For more information, see [Use Business Central in an Automated Workflow](/dynamics365/business-central/across-how-use-financials-data-source-flow).<!--check for renamed article-->  
-
-Once the admin has set up the connection as we just described, the relevant users can start using Power Automate flows.  
-
 ## Add automated workflows
 
 The [!INCLUDE [prod_short](../includes/prod_short.md)] [connector](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps becomes generally available in May 2022. As the admin, you can add flows that will run as automated workflows, or as manually triggered instant flows. If you're inside [!INCLUDE [prod_short](../includes/prod_short.md)], then choose the **Automate** action, and then choose the **Create a flow** action. That sends you to [powerautomate.microsoft.com](https://powerautomate.microsoft.com) in a new browser tab.  
@@ -42,7 +34,7 @@ Alternatively, go directly to [powerautomate.microsoft.com](https://powerautomat
 
 Starting in April 2022, the updated Business Central connector for Power Automate​ gives you even more power. A flow can:
 
-- Filter to a specific page or table with the [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)) action  ​
+<!--- Filter to a specific page or table with the [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)) action COPIED FROM RELEASE PLAN BUT PM SAYS IT'S NOT TRUE---> ​
 - Pass context or parameters to Power Automate​  
 
   - Environment name, such as *PRODUCTION​*  
@@ -142,5 +134,6 @@ Get the app at [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryrepo
 
 ## See also
 
+[Switch on Manual Instant Flows](instant-flows.md)  
 [Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)  
 [Use Business Central in an Automated Workflow](/dynamics365/business-central/across-how-use-financials-data-source-flow)<!--keep an eye out for redirects-->  
