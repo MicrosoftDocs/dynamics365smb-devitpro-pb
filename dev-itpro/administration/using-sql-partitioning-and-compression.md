@@ -83,25 +83,25 @@ The following steps will partition the table on the**Posting Date** field, with 
     GO
     ```
 
-4. In the Transact-SQL Editor, partition table **My Ledger Entry** by using the previously defined partition scheme.
+5. In the Transact-SQL Editor, partition table **My Ledger Entry** by using the previously defined partition scheme.
 
   For illustration purposes, the extension ID in this example is `$11111111-aaaa-2222-bbbb-333333333333`.
 
-    ```tsql
-    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]  
-    DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1]
-    GO
-
-    ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]
-    ADD CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1] PRIMARY KEY CLUSTERED
-    (
-    -- Include all fields that are in the clustered index definition. Don't add or omit any fields.
-    [Entry No_], [Posting Date]
-    )
-    -- Tells SQL Server how the partitioning is done:
-    ON DataHistoryPartitionScheme( [Posting Date] )
-    GO
-    ```
+  ```tsql
+  ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]  
+  DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1]
+  GO
+  
+  ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]
+  ADD CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1] PRIMARY KEY CLUSTERED
+  (
+  -- Include all fields that are in the clustered index definition. Don't add or omit any fields.
+  [Entry No_], [Posting Date]
+  )
+  -- Tells SQL Server how the partitioning is done:
+  ON DataHistoryPartitionScheme( [Posting Date] )
+  GO
+  ```
 
 > [!TIP]
 > SQL Server Management Studio includes the **Create Partition Wizard** to help you create partitioning functions, partitioning schemes, as well as changing a table to be partitioned. For more information, see [Create Partitioned Tables and Indexes](/sql/relational-databases/partitions/create-partitioned-tables-and-indexes).
