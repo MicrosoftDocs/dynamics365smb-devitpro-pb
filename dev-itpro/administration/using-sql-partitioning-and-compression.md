@@ -135,4 +135,5 @@ The name of the default constraint isn't important, as long as it isn't used by 
 
 
 ## See Also
-[Optimizing SQL Server Performance](optimize-sql-server-performance.md)
+[Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
+[Table Keys](../developer/devenv-table-keys.md)  
