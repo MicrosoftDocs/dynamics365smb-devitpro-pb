@@ -112,22 +112,22 @@ Choose the **Buy it now** button and proceed to checkout.
 11. In the **Security code**, enter `111`.
 12. Choose the **Pay now** button.
 
-In **[!INCLUDE[prod_short](../includes/prod_short.md)]**
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do the next steps:
 
-1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Orders**, and choose the related link.
+1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Orders**, and then choose the related link.
 2. Choose the **Sync Orders From Shopify** action.
-3. Click ok.
+3. Choose **OK**.
 
-Imported order is ready for processing.
+The imported order is ready for processing.
 
-1. Select imported order to open **Shopify Order** window.
-2. Notice that new customer and sales order is created.
-3. Explore **Risk** and **Shipping Cost** actions.
-4. Choose the **Sales Order** action to open **Sales Order** window. Sales order is a demand, that if necessary, can be covered with assembly, production, or by purchase with the help of planning engine. It also supports various warehouse handling processes with complete separation of duties.
+1. Select the imported order to open the **Shopify Order** window.
+2. Notice that the new customer and sales order are created.
+3. Explore the **Risk** and **Shipping Cost** actions.
+4. Choose the **Sales Order** action to open the **Sales Order** window. Sales order is a demand, that if necessary, can be covered with assembly, production, or by purchase with the help of the planning engine. It also supports various warehouse handling processes with complete separation of duties.
 5. Choose the **Reopen** action.
-6. Fill *DHL* in the **Agent** field.
-7. Fill *123456789* in the **Package Tracking No.**.
-8. Choose the **Post** action, keep **Ship and Invoice** option, and click **Ok**.
+6. In the **Agent** field, enter `DHL`.
+7. In the **Package Tracking No.**, enter `123456789`.
+8. Choose the **Post** action, keep **Ship and Invoice** option, and then choose the **OK** button.
 
 Now physical and financial data is registered in [!INCLUDE[prod_short](../includes/prod_short.md)]. It’s time to notify Shopify about changes.
 
