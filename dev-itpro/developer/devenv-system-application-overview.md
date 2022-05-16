@@ -24,7 +24,6 @@ The list of modules is growing continuously. The following table lists and descr
 
 |Module|Description|Link to ReadMe|
 |----|----|----|
-|Assisted Setup|Contains all pages that are used by assisted setup guides.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Assisted%20Setup/README.md)|
 |Auto Format|Formats the appearance decimal data types.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Auto%20Format/README.md)|
 |Azure AD Graph|Interface for the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Graph/README.md)|
 |Azure AD Licensing|Access information about the subscribed SKUs and the corresponding service plans.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Licensing/README.md)|
@@ -53,7 +52,6 @@ The list of modules is growing continuously. The following table lists and descr
 |Filter Tokens|Provides helper functions to manage filter texts.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Filter%20Tokens/README.md)|
 |Headlines|Helps with constructing the text for headlines.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Headlines/README.md)|
 |Language|Changes the language for Windows and applications.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Language/README.md)|
-|Manual Setup|Contains functions and events used by manual setup pages.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Manual%20Setup/README.md)|
 |Math|Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Math/README.md)|
 |Object Selection|Look up page for all of the application objects, including objects from installed extensions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Object%20Selection/README.md)|
 |Page Summary Provider|Contains functionality for providing summary data for a given page in Microsoft Teams. |[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Page%20Summary%20Provider/README.md)|
