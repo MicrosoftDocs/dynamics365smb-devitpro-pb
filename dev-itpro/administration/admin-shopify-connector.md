@@ -1,7 +1,7 @@
 ---
 title: Test and training scenarios for integrating with Shopify
 description: In this walkthrough, we take you through various integration scenarios between Shopify and Business Central.
-ms.date: 05/11/2022
+ms.date: 05/16/2022
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.reviewer: solsen
@@ -129,36 +129,30 @@ The imported order is ready for processing.
 7. In the **Package Tracking No.**, enter `123456789`.
 8. Choose the **Post** action, keep **Ship and Invoice** option, and then choose the **OK** button.
 
-Now physical and financial data is registered in [!INCLUDE[prod_short](../includes/prod_short.md)]. It’s time to notify Shopify about changes.
+Now physical and financial data is registered in [!INCLUDE[prod_short](../includes/prod_short.md)]. It’s time to notify Shopify about the changes.
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Sync Shipments to Shopify**, and choose the related link.
-2. Click **Ok**.
+2. Choose **OK**.
 
-In **Shopify Admin**.
+In **Shopify Admin** notice that the order is now marked as *Fulfilled*. You can also review Shipment details and see the Tracking URL there. If you run **Sync Orders From Shopify** again, the order will be archived in both systems.
 
-Notice that the order is now marked as *Fulfilled*. You can also review Shipment details and see Tracking URL there. If you run **Sync Orders From Shopify** again, order will be archived in both systems.
+## Walkthrough: Invite your customers to your new online store
 
-## Walk-through: Invite your customers to your new online store
-
-### Scenario 
+### Scenario
 
 After a successful quick launch of your new online store, you want your current customers to visit it and start placing orders.
 
 ### Steps
 
-In **[!INCLUDE[prod_short](../includes/prod_short.md)]**
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
-2. Select the *DEMO1* Shop for which you want to synchronize customers to open the **Shopify Shop Card** page.
+2. Select the **DEMO1** Shop for which you want to synchronize customers to open the **Shopify Shop Card** page.
 3. Choose the **Sync Customers** action.
 
-In **Shopify Admin**.
+In **Shopify Admin** notice that the customers were imported. Open one of the customers and notice that the first and last names of the customer are coming from the **Contact Name** field of the **Customer Card**. The company name can be found in the default address, linked to the customer. Choose **Send account invite** to invite customer.
 
-Notice that customers were imported.
-Open one of the customers. Notice that the first and last names of the customer are coming from the **Contact Name** field of the **Customer Card**. The company name can be found in the default address, linked to the customer.
-Choose **Send account invite** to invite customer.
-
-## Walk-through: Fine tuning of item management
+## Walkthrough: Fine tuning of item management
 
 ### Scenario 
 
@@ -166,27 +160,26 @@ You'll like to add more flexibility and control to your processes around items m
 
 ### Steps
 
-In **[!INCLUDE[prod_short](../includes/prod_short.md)]**
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
 
 Prepare data.
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Customer Price Group**, and choose the related link.
-2. Add new price group. Fill *SHOPIFY* in the **Code** field.
+2. Add new price group. In the **Code** field, enter `SHOPIFY`.
 3. Close the **Customer Price Group** window.
-
 4. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Items**, and choose the related link.
-5. Select item *1896-S, Athens Desk*.
-6. Choose **Variants** action, and add two variants *PREMIUM, Athens Desk, Premium edition* and *ESSENTIAL, Athens Desk, Essential edition*.
-7. Choose **Extended Text**, create new extended text valid for all language codes. Fill *Shopify* in the **Description** field.
-8. Add following description with HTML tags: `<b>Simple stylish design</b> blends with any ensemble. <i>Available in two editions.</i>`
-9. Choose **Sales Prices**, and add new prices:
+5. Select item **1896-S, Athens Desk**.
+6. Choose the **Variants** action, and then add two variants `PREMIUM, Athens Desk, Premium edition` and `ESSENTIAL, Athens Desk, Essential edition`.
+7. Choose **Extended Text**, create a new extended text valid for all language codes. In the **Description** field, enter `Shopify`. 
+8. Add following description with HTML tags: `<b>Simple stylish design</b> blends with any ensemble. <i>Available in two editions.</i>`.
+9. Choose **Sales Prices**, and add new prices as shown in the following table:
 
-|Line|**Sales Type**|**Sales Code**|Type|Code|Variant Code<br>(add field via personalization)|Unit Price|
-|------|------------|------------|------------|------------|------------|------------|
-|1|Customer Price Group|SHOPIFY|Item|1896-S|ESSENTIAL|700|
-|2|Customer Price Group|SHOPIFY|Item|1896-S|PREMIUM|1000|
+  |Line|**Sales Type**|**Sales Code**|Type|Code|Variant Code<br>(add the field via personalization)|Unit Price|
+  |------|------------|------------|------------|------------|------------|------------|
+  |1|Customer Price Group|SHOPIFY|Item|1896-S|ESSENTIAL|700|
+  |2|Customer Price Group|SHOPIFY|Item|1896-S|PREMIUM|1000|
 
-10. Choose **Sales Discounts**, and add new discount:
+10. Choose **Sales Discounts**, and add a new discount:
 
 * **Sales Type** *Customer Disc. Group*
 * **Sales Code** *RETAIL*
@@ -195,20 +188,20 @@ Prepare data.
 * **Unit of Measure Code** *PCS*
 * **Line Discount %** *10*
 
-11. Choose **Item References** and add lines
+11. Choose **Item References** and the following add lines:
 
-|Line|**Reference Type**|**Reference No.**|Variant Code|
-|------|------------|------------|------------|
-|1|Barcode|77777777|ESSENTIAL|
-|2|Barcode|11111111|PREMIUM|
+  |Line|**Reference Type**|**Reference No.**|Variant Code|
+  |------|------------|------------|------------|
+  |1|Barcode|77777777|ESSENTIAL|
+  |2|Barcode|11111111|PREMIUM|
 
-12. Close **Item Card**.
+12. Close the **Item Card**.
+13. Select the item **1920-S, ANTWERP Conference Table**.
+14. Choose **Adjust Inventory** and in the **New Inventory** field, enter `100` for the locations *EAST* and *WEST*. 
+1. Choose **OK**.
+1. Close the **Item Card**.
 
-13. Select item *1920-S, ANTWERP Conference Table*.
-14. Choose **Adjust Inventory** and fill *100* in the **New Inventory** field for locations *EAST* and *WEST*. Choose Ok.
-15. Close **Item Card**.
-
-Adjust synchronization settings.
+Adjust the synchronization settings.
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
 2. Select the *DEMO1* Shop for which you want to synchronize items to open Shopify Shop Card page.
@@ -216,42 +209,40 @@ Adjust synchronization settings.
 4. Select *RETAIL* in the **Customer Discount Group** field.
 5. Enable the **Sync Item Extended Text** field.
 6. Select *Item No.+ Variant Code* in the **SKU Mapping** field.
-7. Select **Draft** in the **Status for Created Products** field.
-8. Select **Status to Archived** in the **Action for Removed Product** field.
+7. Select *Draft* in the **Status for Created Products** field.
+8. Select *Status to Archived* in the **Action for Removed Product** field.
 
-Execute sync.
+Run the synchronization.
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
 2. Select the *DEMO1* Shop for which you want to synchronize items to open the **Shopify Shop Card** page.
 3. Choose the **Products** action to open **Shopify Products** window.
 4. Choose the **Add Items** action.
-5. Set filter *TABLE* on the **Item Category Code** field.
+5. Set the filter *TABLE* on the **Item Category Code** field.
 6. Choose the **Sync Product Images** action.
 7. Choose the **Sync Inventory** action.
 
-Products are added. Notice status is set to *Draft*, hence items aren't visible in the Shopify online store.
+Products are added. Notice that the status is set to *Draft*, hence items aren't visible in the Shopify online store.
 
-1. Select line with item *1920-S, ANTWERP Conference Table*. Fill *Rectangular meeting table Antwerp, 10 seats, black* in the **SEO Title**.
+1. Select the line with item *1920-S, ANTWERP Conference Table*. In the **SEO Title**, enter `Rectangular meeting table Antwerp, 10 seats, black`.
 2. Select *Active* in the **Status** field.
-3. Select line with item *1906-S, ATHENS, Mobile Pedestal* and choose the **Delete** action.
+3. Select the line with item *1906-S, ATHENS, Mobile Pedestal* and then choose the **Delete** action.
 
-In **Shopify Admin**.
-
-Notice that all products have different statuses.
+In **Shopify Admin** notice that all products have different statuses.
 
 * *ANTWERP Conference Table* is *Active* because we changed status in **Shopify Product** window.
-* *ATHENS Desk* is *Draft* because we configured default status for all added products to be *Draft*.
-* *ATHENS Mobile Pedestal* is *Archived* because we configured shop to automatically assign status *Archived* for deleted products.
+* *ATHENS Desk* is *Draft* because we configured the default status for all added products to be *Draft*.
+* *ATHENS Mobile Pedestal* is *Archived* because we configured the shop to automatically assign status *Archived* for deleted products.
 
 Notice that Inventory for ANTWERP Conference Table is 100, because we configured system to use inventory only from two locations MAIN and EAST. Inventory on other locations (WEST) is ignored.
 
-Open *ANTWERP Conference Table*, notice **Custom Type**, **Vendor**, **Weight**, **Cost per item** fields, and **Search engine listing preview** section.
-Open *Athens Desk*, scroll down to **Variants** section, notice how **SKU** is populated.
-Choose **Edit** to review barcode and prices.
-Change status of *Athens Desk* to *Active* and choose **Preview** action.
+* Open *ANTWERP Conference Table*, notice **Custom Type**, **Vendor**, **Weight**, **Cost per item** fields, and **Search engine listing preview** section.
+* Open *Athens Desk*, scroll down to **Variants** section, and notice how **SKU** is populated.
+* Choose **Edit** to review barcode and prices.
+* Change the status of *Athens Desk* to *Active* and choose **Preview** action.
 
-In **Shopify online store**.
-
-Open product catalog, find *ATHENS Desk*  product. Notice that different options are available. For different options, prices are different. Pay attention to discount information.
+In the **Shopify online store** open the product catalog, find the *ATHENS Desk*  product. Notice that different options are available. For different options, prices are different. Pay attention to discount information.
 
 ## See Also
+
+[Get Started with the Shopify Connector](/dynamics365/business-central/shopify/get-started)
