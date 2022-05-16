@@ -1,5 +1,5 @@
 ---
-title: Test and training scenarios for integrating with Shopify
+title: Training scenarios for integrating with Shopify
 description: In this walkthrough, we take you through various integration scenarios between Shopify and Business Central.
 ms.date: 05/16/2022
 ms.topic: article
@@ -10,7 +10,7 @@ ms.author: andreipa
 ---
 
 
-# Test and Training Scenarios for Integrating with Shopify
+# Training Scenarios for Integrating with Shopify
 
 This section demonstrates common scenarios and walks you through the steps to test or train the users on the workflow of the integrated [!INCLUDE[prod_short](../includes/prod_short.md)] and the Shopify store.
 

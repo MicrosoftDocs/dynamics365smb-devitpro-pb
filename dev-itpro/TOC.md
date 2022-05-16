@@ -3941,6 +3941,9 @@
 ### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+<!-- Shopify -->
+## Integrating with Shopify
+### [Training Scenarios for Integrating with Shopify](administration/admin-shopify-connector.md)
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
