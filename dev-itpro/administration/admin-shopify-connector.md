@@ -1,22 +1,22 @@
 ---
-title: Test and training scenarios
+title: Test and training scenarios for integrating with Shopify
 description: In this walkthrough, we take you through various integration scenarios between Shopify and Business Central.
 ms.date: 05/11/2022
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.reviewer: solsen
-author: edupont04
+author: andreipa
 ms.author: andreipa
 ---
 
 
-# Test and Training Scenarios
+# Test and Training Scenarios for Integrating with Shopify
 
-This section demonstrates common scenarios and walks you through the steps to test or train the users on the workflow of the integrated [!INCLUDE[prod_short](../includes/prod_short.md)] and Shopify store.
+This section demonstrates common scenarios and walks you through the steps to test or train the users on the workflow of the integrated [!INCLUDE[prod_short](../includes/prod_short.md)] and the Shopify store.
 
 ## Preparation
 
-Start by creating an Azure Active Directory tenant and get administration log-in and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically something like *admin@CRMbc123456.onmicrosoft.com*.
+Begin by creating an Azure Active Directory tenant and get the administration login and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically equivalent to *admin@CRMbc123456.onmicrosoft.com*.
 
 Navigate to [Shopify](https://www.shopify.com) and use this administrator account to sign up for a free 14-day trial. For more information on how to create and personalize your online store, see [Shopify Help](https://help.shopify.com/).
 
@@ -25,10 +25,10 @@ In the **Shopify Admin** of the created shop, apply following **Settings**:
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
 * Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
 * Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
-* Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate [Tipping scenario](TBD).
+* Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings. <!-- if you plan to demonstrate [Tipping scenario](TBD). -->
 * Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
-1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
-2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
+  1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
+  2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
 
 * For trial stores, select plan in the [**Plan**](https://www.shopify.com/admin/settings/plan) settings.
 
@@ -37,21 +37,21 @@ In the **Shopify Admin** of the created shop, apply following **Settings**:
 
 Install the **Dynamics 365 Business Central** app in your Shopify online store.
 
-1. Find [Dynamics 365 Business Central](https://apps.shopify.com/dynamics-365-business-central) app on the [Shopify AppStore](https://apps.shopify.com/).
-2. Choose the **Add App** button. Sign in into your Shopify account if prompted.
+1. Locate the [Dynamics 365 Business Central](https://apps.shopify.com/dynamics-365-business-central) app on the [Shopify AppStore](https://apps.shopify.com/).
+2. Choose the **Add App** button, and then sign in into your Shopify account if prompted.
 3. Review privacy and permissions, and then choose the **Install App** button. You can find and open the installed **Dynamics 365 Business Central** app in the Apps section on the sidebar of **Shopify admin**.
 4. Choose **Sign up now** to start the [!INCLUDE[prod_short](../includes/prod_short.md)] trial, and then use the administrator account.
 
 In the created [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
 
-1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
+1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 2. Choose the **New** action.
-3. In the **Code** field, fill *DEMO1*.
-4. In the **Shopify URL** field, fill in the URL to the online shop that you want to connect to.
+3. In the **Code** field, enter `DEMO1`.
+4. In the **Shopify URL** field, enter the URL to the online shop that you want to connect to.
 5. Activate the **Enabled** toggle, review and accept the terms and conditions.
 6. Choose the **Request Access** action.
 
-Configure the Shopify shop as described below:
+Configure the Shopify shop as described below in the next steps:
 
 1. Enable the **Log Enabled** toggle.
 2. Deactivate the **Allow Background Syncs** toggle.
@@ -61,15 +61,15 @@ Configure the Shopify shop as described below:
 6. Enable **Inventory Tracked** toggle.
 7. Select **Deny** in the **Default Inventory Policy**.
 8. Enable the **Auto Create Unknown Customers** toggle.
-9. Fill in the **Customer Template Code** field with appropriate template.
-10. Fill in the **Shipping Cost Account**, the **Tip Account** with revenue account. For example, in the US use *40100*.
+9. Fill in the **Customer Template Code** field with the appropriate template.
+10. Fill in the **Shipping Cost Account**, the **Tip Account** with revenue account. For example, in the US use `40100`.
 11. Enable the **Auto Create Orders** toggle.
 
 Configure location mapping:
 
 1. Choose the **Locations** action to open **Shopify Shop Locations**.
 2. Choose the **Get Shopify Locations** action to import all locations defined in the Shopify.
-3. In the **Location Filter**, enter *''|EAST|MAIN*.
+3. In the **Location Filter**, enter `''|EAST|MAIN`.
 4. Deselect toggle from the **Disabled** field to enable inventory sync for selected Shopify location.
 
 ## Walkthrough: Start selling products online
@@ -80,7 +80,7 @@ Let's say, that you want to try Shopify as an online store without spending much
 
 ### Steps
 
-In **[!INCLUDE[prod_short](../includes/prod_short.md)]**
+In [!INCLUDE[prod_short](../includes/prod_short.md)] go through the following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
 2. Choose the **Add Items** action.
