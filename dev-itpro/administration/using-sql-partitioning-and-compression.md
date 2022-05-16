@@ -87,7 +87,7 @@ The following steps will partition the table on the**Posting Date** field, with 
 
     For illustration purposes, the extension ID in this example is `$11111111-aaaa-2222-bbbb-333333333333`.
     
-    ```tsql
+    ```sql
     ALTER TABLE [dbo].[CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333]  
     DROP CONSTRAINT [CRONUS International Ltd_$My Ledger Entry$11111111-aaaa-2222-bbbb-333333333333$Key1]
     GO
