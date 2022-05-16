@@ -65,12 +65,13 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
-### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
-### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
-### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
-### [Update 19.1](whatsnew/whatsnew-update-19-1.md)
+### [Update 20.1](whatsnew/whatsnew-update-20.1.md)
 ### Updates for earlier major versions
+#### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
+#### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
+#### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
+#### [Update 19.2](whatsnew/whatsnew-update-19-2.md)
+#### [Update 19.1](whatsnew/whatsnew-update-19-1.md)
 #### [Update 18.5](whatsnew/whatsnew-update-18-5.md)
 #### [Update 18.4](whatsnew/whatsnew-update-18-4.md)
 #### [Update 18.3](whatsnew/whatsnew-update-18-3.md)
@@ -3918,6 +3919,10 @@
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 <!-- end CDS -->
+<!-- Microsoft Power Automate -->
+## Integrating with Microsoft Power Automate
+### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
+### [Switch on Manual Instant Flows](powerplatform/instant-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
@@ -3987,13 +3992,14 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
-#### [October 2018 On-Premises Updates](deployment/update-versions-13.md)
-#### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
-#### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
-#### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
-#### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
-#### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
+#### [2022 Release Wave 1 On-Premises Updates](deployment/update-versions-20.md)
 #### [2021 Release Wave 2 On-Premises Updates](deployment/update-versions-19.md)
+#### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
+#### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
+#### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
+#### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
+#### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
+#### [October 2018 On-Premises Updates](deployment/update-versions-13.md)
 ### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
@@ -4110,7 +4116,7 @@
 #### Technical Upgrade
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
 ##### [From Version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v20.md)
 ### Business Central 2021 Release Wave 2
 #### [Overview](upgrade/upgrade-overview-v19.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
