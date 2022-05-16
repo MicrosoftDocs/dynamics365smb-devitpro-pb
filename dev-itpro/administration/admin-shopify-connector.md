@@ -85,8 +85,8 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)] go through the following st
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
 2. Choose the **Add Items** action.
 3. In the the **Shop Code** field, enter *DEMO1*.
-4. Set filter *CHAIR* on the **Item Category Code** field (add filter field if necessary).
-5. Click **ok** and wait until initial synchronization of items and prices is completed.
+4. Set the filter `CHAIR` on the **Item Category Code** field (add filter field if necessary).
+5. Click **OK** and wait until initial synchronization of items and prices is completed.
 6. Choose the **Sync Product Images** action.
 7. Choose the **Sync Inventory** action.
 
@@ -95,22 +95,22 @@ In **Shopify online store**, open the product catalog. Notice:
 * Product titles, images, and prices.
 * Availability indicator (sold out for out-of-stock products).
 
-Choose any product that can be sold, for example *BERLIN Swivel Chair, yellow*. Notice that the description contains item attributes.
+Choose any product that can be sold, for example `BERLIN Swivel Chair, yellow`. Notice that the description contains item attributes.
 
 Choose the **Buy it now** button and proceed to checkout.
 
-1. Fill *cl@contoso.com* (or email where you want to receive order and shipping confirmations) in **Email or mobile phone number**
-2. Fill *Claudia Lawson* in the **First name** and **Last name**.
-3. Fill in local address.
-4. Enable **Save this information for next time** checkbox.
-5. Choose **Continue to shipping** button.
-6. Keep *Standard* shipping method and choose **Continue to payment** button.
-7. Select 10% tip.
-8. Fill *1* in the **Credit Card** field if you use *(for testing) Bogus Gateway*, fill *5555 5555 5555 4444* in the **Credit Card** field if you use *Shopify payments* in test mode.
+1. In the **Email or mobile phone number** field, enter `cl@contoso.com` (or email where you want to receive order and shipping confirmations).
+2. In the **First name** and **Last name**, enter `Claudia Lawson`.
+3. Enter the local address.
+4. Enable the **Save this information for next time** checkbox.
+5. Choose the **Continue to shipping** button.
+6. Keep `Standard` as the shipping method and then choose the **Continue to payment** button.
+7. Select `10%` tip.
+8. In the **Credit Card** field, enter `1` if you use *(for testing) Bogus Gateway*, if you use *Shopify payments* in test mode, enter `5555 5555 5555 4444` in the **Credit Card** field.
 9. Fill in the **Name on card** field.
-10. Fill in the **Expiration date** field with current month/year.
-11. Fill *111* in the **Security code**.
-12. Choose **Pay now** button.
+10. In the **Expiration date** field enter the current month/year.
+11. In the **Security code**, enter `111`.
+12. Choose the **Pay now** button.
 
 In **[!INCLUDE[prod_short](../includes/prod_short.md)]**
 
