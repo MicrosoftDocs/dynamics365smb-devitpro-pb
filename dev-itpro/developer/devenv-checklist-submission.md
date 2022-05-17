@@ -135,7 +135,7 @@ The manual test validation document is run manually and if the document doesn't 
 
 Detailed validation results are automatically logged to the ApplicationInsights storage account specified by instrumentation key in the manifest of the main extension in your submission.
 
-In order to enable partner telemetry in your extension, you must specify the `applicationInsightsKey` property or the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about these properties, see [JSON files](devenv-json-files.md).
+In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
