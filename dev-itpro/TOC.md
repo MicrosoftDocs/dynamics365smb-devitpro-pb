@@ -1665,6 +1665,31 @@
 ##### [AL1416](developer/diagnostics/diagnostic-al1416.md)
 ##### [AL1417](developer/diagnostics/diagnostic-al1417.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_DIAGNOSTICS) -->
+<!-- AVS section -->
+### Application Validation Service Diagnostics
+#### [Application Validation Service Diagnostics Overview](developer/avs-diagnostics/avs-diagnostics-overview.md)
+#### [AVS0001](developer/avs-diagnostics/diagnostic-avs0001.md)
+#### [AVS0002](developer/avs-diagnostics/diagnostic-avs0002.md)
+#### [AVS0003](developer/avs-diagnostics/diagnostic-avs0003.md)
+#### [AVS0004](developer/avs-diagnostics/diagnostic-avs0004.md)
+#### [AVS0005](developer/avs-diagnostics/diagnostic-avs0005.md)
+#### [AVS0006](developer/avs-diagnostics/diagnostic-avs0006.md)
+#### [AVS0007](developer/avs-diagnostics/diagnostic-avs0007.md)
+#### [AVS0101](developer/avs-diagnostics/diagnostic-avs0101.md)
+#### [AVS0102](developer/avs-diagnostics/diagnostic-avs0102.md)
+#### [AVS0103](developer/avs-diagnostics/diagnostic-avs0103.md)
+#### [AVS0104](developer/avs-diagnostics/diagnostic-avs0104.md)
+#### [AVS0105](developer/avs-diagnostics/diagnostic-avs0105.md)
+#### [AVS0106](developer/avs-diagnostics/diagnostic-avs0106.md)
+#### [AVS0107](developer/avs-diagnostics/diagnostic-avs0107.md)
+#### [AVS0108](developer/avs-diagnostics/diagnostic-avs0108.md)
+#### [AVS0109](developer/avs-diagnostics/diagnostic-avs0109.md)
+#### [AVS0110](developer/avs-diagnostics/diagnostic-avs0110.md)
+#### [AVS0111](developer/avs-diagnostics/diagnostic-avs0111.md)
+#### [AVS0112](developer/avs-diagnostics/diagnostic-avs0112.md)
+#### [AVS0113](developer/avs-diagnostics/diagnostic-avs0113.md)
+<!-- end AVS section -->
+
 ### Data Types and Methods
 #### [Methods Overview](developer/methods-auto/library.md)
 #### [Array Methods](developer/methods/devenv-array-methods.md)
