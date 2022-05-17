@@ -18,14 +18,14 @@ This section demonstrates common scenarios and walks you through the steps to te
 
 Begin by creating an Azure Active Directory tenant and get the administration login and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically equivalent to *admin@CRMbc123456.onmicrosoft.com*.
 
-Navigate to [Shopify](https://www.shopify.com) and use this administrator account to sign up for a free 14-day trial. For more information on how to create and personalize your online store, see [Shopify Help](https://help.shopify.com/).
+Navigate to [Shopify](https://www.shopify.com) and use this administrator account to sign up for a free 14-day trial. For more information on how to create and personalize your online store, see [Shopify Help Center](https://help.shopify.com/).
 
 In the **Shopify Admin** of the created shop, apply following **Settings**:
 
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
 * Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
 * Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
-* Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings. <!-- if you plan to demonstrate [Tipping scenario](TBD). -->
+* Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
 * Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
   1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
   2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
@@ -49,7 +49,6 @@ In the created [!INCLUDE[prod_short](../includes/prod_short.md)] account, do fol
 3. In the **Code** field, enter `DEMO1`.
 4. In the **Shopify URL** field, enter the URL to the online shop that you want to connect to.
 5. Activate the **Enabled** toggle, review and accept the terms and conditions.
-6. Choose the **Request Access** action.
 
 Configure the Shopify shop as described below in the next steps:
 
