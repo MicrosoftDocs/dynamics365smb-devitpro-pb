@@ -75,6 +75,8 @@ Occurs when an email failed to be sent from the client.
 |alConnector|Specifies the email-provider connector used to send the email. Possible values include: <ul><li>Current User</li><li>Microsoft 365</li><li>SMTP</li><li>Other custom connectors installed by extensions.</li></ul> The connector is specified on the email accounts that are set up in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Adding Email Accounts](/dynamics365/business-central/admin-how-setup-email#adding-email-accounts).|
 |alDataClassification|**SystemMetadata**|
 |alEmailMessageID|Specifies the GUID assigned to email, like C7A56676-9F3F-4044-90F0-D7F3196AC366.|
+|alErrorCallStack| Specifies the AL callstack when the error occurred. This dimension was added in version 19.0.|
+|alErrorText| Specifies the AL error message. This dimension was added in version 19.0. |
 |alObjectId|**8888**, which is the ID of the system application codeunit that sends emails.|
 |alObjectName|**Email Dispatcher**, which is the name of the system application codeunit that sends the emails.|
 |alObjectType|**CodeUnit**|

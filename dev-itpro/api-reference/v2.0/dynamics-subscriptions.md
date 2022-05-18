@@ -15,8 +15,7 @@ ms.author: solsen
 
 Webhooks is the way to get notified if an entity changes in [!INCLUDE[prod_short](../../includes/prod_short.md)]. For general information about webhooks, see [Push notifications via webhooks](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#15-push-notifications-via-webhooks) in the Microsoft REST API Guidelines.
 
-
-In the following replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](endpoints-apis-for-dynamics.md).
+In the sections that follow, replace the URL prefix for [!INCLUDE[prod_short](../../includes/prod_short.md)] depending on the environment by following the [guideline](endpoints-apis-for-dynamics.md).
 
 > [!IMPORTANT]  
 > With [!INCLUDE[prod_short](../../includes/prod_short.md)] version 19, all webhook notifications sent from [!INCLUDE[prod_short](../../includes/prod_short.md)] will no longer contain the byte order mark (BOM), to align with RCF 7159, section 8.1.    
@@ -48,22 +47,22 @@ Optionally clientState can be provided in the `POST` and `PATCH` requests bodies
 
 ## Renewing the subscription
 
-Subscriptions will expire after 3 days, if not renewed before. Subscriptions are renewed by issuing a [PATCH](api/dynamics_subscriptions_update.md) request to the subscription.
+Subscriptions will expire after three days, if not renewed before. Subscriptions are renewed by issuing a [PATCH](api/dynamics_subscriptions_update.md) request to the subscription.
 
 ```
 PATCH https://{businesscentralPrefix}/api/v2.0/subscriptions({id}) 
 ```
 
-`PATCH` requests a handshake, just like `POST` requests, meaning that a subscription cannot be renewed unless the client returns the `validationToken` in the body.
+`PATCH` requests a handshake, just like `POST` requests, meaning that a subscription can't be renewed unless the client returns the `validationToken` in the body.
 
 Subscription expiration time is listed in `expirationDateTime` property of the [subscription](api/dynamics_subscriptions_get.md).
 
 ## Notifications and change types
 
-Valid subscriptions push the notifications on every entity update. 
+Valid subscriptions push the notifications on every entity update.
 
 Each notification sent to the subscriber (notificationUrl) can contain multiple notifications from different subscriptions.
-Here is a sample notification payload:
+Here's a sample notification payload:
 
 ```json
 {
@@ -120,10 +119,18 @@ Here is a sample notification payload:
 }
 ```
 
-*Created*, *updated*, and *deleted* identifies the state change for the entity. By *collection* [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
+The change type is indicated by the `"changeType"` parameter:
 
-Notifications are not sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds.
+- `created`, `updated`, and `deleted` identify the state change for the entity.
 
+- `collection` means [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
+
+  Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 100 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
+
+<!--
+  > [!IMPORTANT]
+  > Webhook notifications are used to trigger Power Automate flows from Business Central. However, Business Central currently doesn't support `collection` notifications for flows. So if an event changes more than 100 records with in 30 seconds, associated flows won't get triggered.
+-->
 > [!NOTE]  
 > If [!INCLUDE[prod_short](../../includes/prod_short.md)] cannot reach the subscriber, several retries will be attempted over the next 36 hours. The subscriber must respond with following error codes: `408 - Request Timeout`, `429 - Too Many Requests or any error in 500-599 range (5xx)`. If subscriber responds with any other code than listed, no retries will be attempted and the subscription will be deleted.
 
@@ -175,8 +182,7 @@ Content-type: application/json
 - unitsOfMeasure
 - vendors
 
-
-For Document APIs, a notification will be sent for the header if a change is made a to a line. E.g. a notification to a subscription for **salesInvoice** will be sent, if a change is made to a related **salesInvoiceLine**.  
+For Document APIs, a notification will be sent for the header if a change is made to a line. For example, a notification to a subscription for **salesInvoice** will be sent, if a change is made to a related **salesInvoiceLine**.  
 
 Custom APIs are also webhook-enabled and will be listed in **webhookSupportedResources** if [!INCLUDE[prod_short](../../includes/prod_short.md)] is able to send notifications for the entity.
 
@@ -187,13 +193,22 @@ Custom APIs are also webhook-enabled and will be listed in **webhookSupportedRes
 > * The API page has a composite key (for example, if ODataKeyFields consists of several fields or is missing, then the primary key for the source table consists of several fields).
 > * The source table for the API page is a system table ("Table No." > 2000000000).
 > * The API is declared through an API type query, for example, and not through an API type page.
+> * The source table for the API page is Job Queue Entry ("Table No." = 472).
 
 > [!NOTE]  
 > Changes made by users who are not able to schedule job queues will not be notified until another user who is able to schedule job queues makes another change to the same table.
 
 ## Notes for on-premise
 
-By default, a subscription lives for 3 days if it is not renewed. The value is specified in the CustomSettings.config file under the ApiSubscriptionExpiration entry. There is a maximum number of subscriptions specified in the ApiSubscriptionMaxNumberOfSubscriptions in the CustomSettings.config file.
+The [!INCLUDE[server](../../developer/includes/server.md)] includes several configuration settings in the CustomSettings.config file that control the behavior of webhook subscriptions and notifications. For example:
+  
+- The ApiSubscriptionExpiration setting specifies the life time of a subscription. By default, a subscription lives for three days if it isn't renewed.
+- The ApiSubscriptionMaxNumberOfSubscriptions setting specifies the maximum number of subscriptions that can be created per tenant.
+- The ApiSubscriptionDelayTime setting specifies the amount of time (in milliseconds) that the system waits before processing notifications. The ApiSubscriptionMaxNumberOfNotifications setting specifies the maximum number of notifications that can be delivered per NotificationUrl. Using these two settings, you can control what constitutes  a `collection` notification.
+
+## Notes for Power Automate flows
+
+Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 100 records within 30 seconds, the associated flow won't get triggered. The same applies to Business Central on-premises although the limit on the records will depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
 
 ## See also
 

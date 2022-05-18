@@ -1,0 +1,1 @@
+Specifies the date and time (shown in UTC), registered in the Business Central admin center, from which an update can be scheduled. 
