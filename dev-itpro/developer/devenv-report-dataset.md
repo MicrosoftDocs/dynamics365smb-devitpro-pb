@@ -85,16 +85,16 @@ dataset
         {
         }
         
-            trigger OnPreDataItem()
-            begin
-                MyQuery.Open();
-            end;
+        trigger OnPreDataItem()
+        begin
+            MyQuery.Open();
+        end;
 
-            trigger OnAfterGetRecord()
-            begin
-                if not MyQuery.Read() then
-                    CurrReport.Break();
-            end;
+        trigger OnAfterGetRecord()
+        begin
+            if not MyQuery.Read() then
+                CurrReport.Break();
+        end;
     }
 }
 
