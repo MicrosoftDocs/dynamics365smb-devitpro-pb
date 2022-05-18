@@ -41,7 +41,7 @@ The following table shows the syntax that is used to create the date formula.
 |**CW+1W**|Current week plus one week|  
 |**D15**|On the 15th of each month|  
 
-In [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)], weeks begin on Monday and end on Sunday.  
+In [!INCLUDE [prod_short](../../includes/prod_short.md)], weeks begin on Monday and end on Sunday.  
  
 ## Example  
 
