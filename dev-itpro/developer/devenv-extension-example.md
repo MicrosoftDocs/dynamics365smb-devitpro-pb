@@ -10,13 +10,13 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code
+# Building your first sample extension with Extension Objects, Install code, and Upgrade code
 
-This walkthrough will guide you through all the steps that you must follow to create a sample extension in AL. New objects and extension objects will be added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
+This walkthrough will guide you step by step to create a sample extension in AL. New objects and extension objects will be added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
 
 ## About this walkthrough
 
-This walkthrough illustrates the following tasks:
+This walkthrough demonstrates the following tasks:
 
 - Developing a sample extension with a table, a card page, and a list page.
 
@@ -44,7 +44,7 @@ For more information on how to get started with your first extension for [!INCLU
 
 ## Rewards extension overview
 
-The extension enables the ability to assign one of three reward levels to customers: GOLD, SILVER, and BRONZE. Each reward level can be assigned a discount percentage. Different types of objects available within the AL development environment will build the foundation of the user interface, allowing the user to edit the information. If you look for another option to update the layout of a page, you can use the Designer drag-and-drop interface. Additionally, this exercise contains the install code that will create the base for the reward levels. The upgrade code is run to upgrade the extension to a newer version and it will change the BRONZE level to ALUMINUM. Following all the steps of this walkthrough allows you to publish the extension on your tenant and create a possible new feature for your customers.  
+This extension enables the ability to assign one of the three reward levels to customers: GOLD, SILVER, and BRONZE. Each reward level can be assigned a discount percentage. Different types of objects available within the AL development environment will build the foundation of the user interface, allowing the user to edit the information. If you look for another option to update the layout of a page, you can use the Designer drag-and-drop interface. Additionally, this exercise contains the install code that will create the base for the reward levels. The upgrade code is run to upgrade the extension to a newer version and it will change the BRONZE level to SILVER. By following all the steps of this walkthrough, you can publish the extension on your tenant and create a possible new feature for your customers.  
 
 ## Reward table object
 
@@ -135,7 +135,7 @@ page 50101 "Reward Card"
         {
             group(Reward)
             {
-                field("Reward Id";"Reward ID")
+                field("Reward ID";"Reward ID")
                 {
                     // ApplicationArea sets the application area that 
                     // applies to the page field and action controls. 
@@ -254,6 +254,10 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
 After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
+
+> [!Note]
+> You can manage extensions by going to the main settings ![Settings icon.](media/settings_icon_small.png) menu of the [!INCLUDE[prod_short](includes/prod_short.md)]. Go to **Advanced Settings** and then choose **Extensions**.
+
 For more information about Designer, see [Designer](devenv-inclient-designer.md).  
 
 ## Customer table extension object
