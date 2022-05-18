@@ -50,8 +50,8 @@ The `TransferFields` method copies fields based on the field number on the field
 
 The fields must have the *same data type* for the copying to succeed (text and code are convertible, other types are not). There must be room for the actual length of the contents of the field to be copied in the field to which it is to be copied. If any one of these conditions are not fulfilled, a runtime error will occur.
 
-> [!NOTE] 
-> Fields are assigned (akin to `DestinationRecord.Field := SourceRecord.Field`), which will not call the OnValidate function on the destination field.  To assist with Validation when using `TransferFields`, the `TypeHelper` Codeunit has the `TransferFieldsWithValidate` function.
+> [!NOTE]  
+> Fields are assigned, such as `DestinationRecord.Field := SourceRecord.Field`, which will not call the OnValidate trigger on the destination field. To assist with validation when using the `TransferFields` method, the `TypeHelper` codeunit contains a `TransferFieldsWithValidate` method.
 
 ## See Also
 [Record Data Type](record-data-type.md)  
