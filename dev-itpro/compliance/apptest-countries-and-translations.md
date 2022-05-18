@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 02/01/2022
+ms.date: 05/18/2022
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.author: soalex
@@ -16,11 +16,14 @@ This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includ
 > [!NOTE]  
 > In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s). Note, that availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as a cloud service and does not concern availability of partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
+The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you'll see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).  
+
+> [!NOTE]
+> Availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online. It does not apply to partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
 
 ## Countries and regions
 
-|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
+|Country/Region|Localized by|Availability|Environment Country Abbreviation|Azure Region|
 |-----------|---------|------------|-----------|---------|
 |Algeria|Partner|Available|DZ|South Africa North|
 |Angola|Partner|Available|AO|South Africa North|
