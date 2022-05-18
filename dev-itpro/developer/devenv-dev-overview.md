@@ -47,14 +47,14 @@ Using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Stu
 
 Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] let you do the following tasks:
 
-- Create new files for your solution.
-- Assists you with the creation of appropriate settings and configuration files.
-- Provides code snippets to help creating application objects.
-- Gives compiler validation while you code.
-- Provides efficient publishing process. You can publish and see your code running by just pressing Ctrl+F5.
+* Create new files for your solution.
+* Assists you with the creation of appropriate settings and configuration files.
+* Provides code snippets to help creating application objects.
+* Gives compiler validation while you code.
+* Provides efficient publishing process. You can publish and see your code running by just pressing Ctrl+F5.
 
 > [!NOTE]
-> For some users `Ctrl+F5` shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing `Run Without Debugging` from the *Run* drop down in Visual Studio Code.  
+> For some users **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the *Run* drop down in Visual Studio Code.  
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
