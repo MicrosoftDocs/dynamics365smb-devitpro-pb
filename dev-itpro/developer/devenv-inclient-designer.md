@@ -50,17 +50,20 @@ Here is a quick overview of capabilities in **Designer**:
 
 ## Start and stop designing
 
-In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) **Designer** in the top-right corner of any page that you want to make modifications to, and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
+In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) icon and then **Design** in the top-right corner of any page and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut key, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
 
 After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
 If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
 
+> [!Note]
+> You can manage extensions by going to the main settings ![Settings icon.](media/settings_icon_small.png) menu of the [!INCLUDE[prod_short](includes/prod_short.md)]. Go to **Advanced Settings** and then choose **Extensions**.
+
 ![Work with Designer.](media/designer.gif)
 
 ## Drag-and-drop components
 
-In Designer, you design and modify the current page. You can display existing table fields, move fields around, remove fields from the page, hide and move actions, and more. You can make changes to display the information by using drag-and-drop components. 
+In Designer, you design and modify the current page by using drag and drop components. You can display existing table fields, move fields around, remove fields from the page, hide and move actions, and much more.
 
 ## Working with fields
 

@@ -300,7 +300,7 @@ tableextension 50103 "Customer Ext" extends Customer
 ```
 
 > [!NOTE]
-> While running the code, you might get errors and warnings in Visual Studio Code. Those errors and warnings will not affect the output of this example exercises. 
+> While running the code, you might get errors and warnings in Visual Studio Code. Those errors and warnings will not affect the output of this example exercise.
 
 ## Customer card page extension object
 
@@ -372,7 +372,7 @@ Next, you set the [ContextSensitiveHelpPage property](properties/devenv-contexts
     ContextSensitiveHelpPage = 'sales-rewards';
 ```
 
-The following example illustrates the properties for the **Reward List** page after you've specified the context-sensitive Help page.
+The following example shows the properties for the **Reward List** page after you've specified the context-sensitive Help page.
 
 ```AL
 page 50102 "Reward List"
@@ -396,7 +396,7 @@ page 50102 "Reward List"
 ...
 ```
 
-Now, if you run your app, you can see the link to help topic for **Reward List** page by pointing over *Reward ID* and choosing **Learn More**. The URL of your targeted website is present in the Help factbox.
+Now, if you run your app, you can see the link to help topic for **Reward List** page by pointing over *Reward ID* and choosing **Learn More**. The URL of your targeted website is present in the Help section.
 You can specify the same relative link for **Reward Card**, **Reward List**, and the customization of the **Customer** page, or you can specify different targets. For more information, see [Page-level configuration](../help/context-sensitive-help.md#page-level-configuration).  
 
 ### Add tooltips
