@@ -51,7 +51,9 @@ Create the following global text constant variable.
 
 Because this trigger is run before the End Write Transaction, you can also give the user the opportunity to roll back changes to the database by leaving the report with the [Quit Method \(Report, XMLport\)](../../methods-auto/report/reportinstance-quit-method.md).  
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnPostReport (Report Extension) Trigger](../reportextension/devenv-onpostreport-reportextension-trigger.md)
+[OnPostReport (Report Extension) Trigger](../reportextension/devenv-onpostreport-reportextension-trigger.md)  
+[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)  
