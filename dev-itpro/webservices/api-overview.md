@@ -22,15 +22,20 @@ The articles in this section describe the key concepts and techniques for using 
   
 |To|See|  
 |--------|---------|  
-|Enable built-in APIs | [Enabling the APIs for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
-|Explore built-in APIs | [Business Central API (v2.0)](../api-reference/v2.0/index.md) |  
-|Develop a custom API | [Developing a Custom API](../developer/devenv-develop-custom-api.md) |
-|Use APIs to automate tenant administration tasks | [Administration API](../administration/itpro-introduction-to-automation-apis.md) |
+|Enable built-in API | [Enabling the API for Dynamics 365 Business Central](../api-reference/v2.0/enabling-apis-for-dynamics-nav.md)|  
+|Explore the built-in API for reading Business Central data | [Business Central API (v2.0)](../api-reference/v2.0/index.md) |  
+|Develop a custom API for reading Business Central data | [Developing a Custom API](../developer/devenv-develop-custom-api.md) |
+|Use APIs to automate tasks on an environment | [Administration API](../administration/itpro-introduction-to-automation-apis.md) |
+|Use APIs to automate environment administration tasks | [Admin Center API](../administration/administration-center-api.md) |
+|Use APIs to automate environment cloud migration tasks | [Cloud Migration API](../administration/cloudmigrationapi/cloud-migration-api-overview.md) |
 
 ## See Also
 
 [Business Central API (v2.0)](../api-reference/v2.0/index.md)  
-[Business Central API (v1.0)](../api-reference/v1.0/index.md)  
+[Business Central API (v1.0)](../api-reference/v1.0/index.md)
+[Administration API](../administration/itpro-introduction-to-automation-apis.md)
+[Admin Center API](../administration/administration-center-api.md)
+[Cloud Migration API](../administration/cloudmigrationapi/cloud-migration-api-overview.md)
 [Developing a Custom API](../developer/devenv-develop-custom-api.md)  
 [Administration API](../administration/itpro-introduction-to-automation-apis.md)
 [API Page Type](../developer/devenv-api-pagetype.md)  
