@@ -658,7 +658,6 @@
 #### [Overview](developer/devenv-reports.md)
 #### [Report Design Overview](developer/devenv-report-design-overview.md)
 #### [Report Object](developer/devenv-report-object.md)
-#### [Report Extension Object](developer/devenv-report-ext-object.md)
 #### [Report Extension Example](developer/devenv-report-ext-example.md)
 #### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 #### [Request Pages](developer/devenv-request-pages.md)
@@ -822,6 +821,7 @@
 ##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
+##### [Extending Email Capabilities](developer/devenv-extending-email.md)
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
