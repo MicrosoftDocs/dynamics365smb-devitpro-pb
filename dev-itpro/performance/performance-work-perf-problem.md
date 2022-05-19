@@ -113,3 +113,4 @@ This example illustrates how you can use the performance tuning process and tele
 [How Application Configurations Affect Performance](performance-application.md)  
 [Performance Online](performance-online.md)  
 [Performance of On-Premises Installations](performance-onprem.md)  
+[Moving from OnCompanyOpen](../developer/devenv-oncompanyopencompleted.md)  
