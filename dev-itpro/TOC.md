@@ -396,133 +396,6 @@
 #### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
 #### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
-
-### Working in Sandboxes
-#### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
-#### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-#### [Working with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
-
-### Working with apps
-#### [App Identity](developer/devenv-app-identity.md)
-#### [Choosing Runtime Version in AL](developer/devenv-choosing-runtime.md)
-#### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
-#### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
-
-### Other tools
-#### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-#### [Viewing Table Data](developer/devenv-view-table-data.md)
-#### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-
-## AL Language
-### [A tour of the AL language](developer/devenv-programming-in-al.md)
-### [FAQ for AL Developers](developer/devenv-dev-faq.md)
-
-### Program building blocks
-#### [System-Defined Variables](developer/devenv-system-defined-variables.md)
-#### Statements
-##### [Simple Statements](developer/devenv-al-simple-statements.md)  
-##### [Control Statements](developer/devenv-al-control-statements.md)  
-#### [Access Modifiers](developer/devenv-using-access-modifiers.md)
-#### [Comments](developer/devenv-xml-comments.md)
-
-### Language Elements
-#### Data Types
-<!-- ##### Need an overview page -->
-##### [Overview](developer/methods-auto/library.md)
-##### Simple Types
-###### Date and Time
-####### [Date](developer/methods-auto/date/date-data-type.md)
-####### [DateTime](developer/methods-auto/datetime/datetime-data-type.md)
-####### [Duration](developer/methods-auto/duration/duration-data-type.md)
-####### [Time](developer/methods-auto/time/time-data-type.md)
-###### Numbers
-####### [Integer](developer/methods-auto/integer/integer-data-type.md)
-####### [BigInteger](developer/methods-auto/biginteger/biginteger-data-type.md)
-####### [Decimal](developer/methods-auto/decimal/decimal-data-type.md)
-###### Strings
-####### [BigText](developer/methods-auto/bigtext/bigtext-data-type.md)
-####### [Byte](developer/methods-auto/byte/byte-data-type.md)
-####### [Char](developer/methods-auto/char/char-data-type.md)
-####### [Code](developer/methods-auto/code/code-data-type.md)
-####### [Text](developer/methods-auto/text/text-data-type.md)
-####### [TextConst](developer/methods-auto/textconst/textconst-data-type.md)
-####### [TextBuilder](developer/methods-auto/textbuilder/textbuilder-data-type.md)
-###### [Boolean](developer/methods-auto/boolean/boolean-data-type.md)
-###### [Guid](developer/methods-auto/guid/guid-data-type.md)
-
-##### Complex Types
-###### [Blob](developer/methods-auto/blob/blob-data-type.md)
-###### [Media](developer/methods-auto/media/media-data-type.md)
-###### [MediaSet](developer/methods-auto/mediaset/mediaset-data-type.md)
-###### [Record](developer/methods-auto/record/record-data-type.md)
-###### [System](developer/methods-auto/system/system-data-type.md)
-
-##### JSON and XML Types
-###### [JsonArray Data Type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
-###### [JsonObject Data Type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
-###### [JsonToken Data Type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
-###### [JsonValue Data Type](developer/methods-auto/jsonvalue/jsonvalue-data-type.md)
-###### [XmlAttribute Data Type](developer/methods-auto/xmlattribute/xmlattribute-data-type.md)
-###### [XmlAttributeCollection Data Type](developer/methods-auto/xmlattributecollection/xmlattributecollection-data-type.md)
-###### [XmlCData Data Type](developer/methods-auto/xmlcdata/xmlcdata-data-type.md)
-###### [XmlComment Data Type](developer/methods-auto/xmlcomment/xmlcomment-data-type.md)
-###### [XmlDeclaration Data Type](developer/methods-auto/xmldeclaration/xmldeclaration-data-type.md)
-###### [XmlDocument Data Type](developer/methods-auto/xmldocument/xmldocument-data-type.md)
-###### [XmlDocumentType Data Type](developer/methods-auto/xmldocumenttype/xmldocumenttype-data-type.md)
-###### [XmlElement Data Type](developer/methods-auto/xmlelement/xmlelement-data-type.md)
-###### [XmlNamespaceManager Data Type](developer/methods-auto/xmlnamespacemanager/xmlnamespacemanager-data-type.md)
-###### [XmlNameTable Data Type](developer/methods-auto/xmlnametable/xmlnametable-data-type.md)
-###### [XmlNode Data Type](developer/methods-auto/xmlnode/xmlnode-data-type.md)
-###### [XmlNodeList Data Type](developer/methods-auto/xmlnodelist/xmlnodelist-data-type.md)
-###### [XmlText Data Type](developer/methods-auto/xmltext/xmltext-data-type.md)
-
-##### [Object types](developer/devenv-reference-overview.md)
-
-##### Other Types
-###### [Joker Data Type (Internal)](developer/methods/devenv-joker-datatype.md)
-
-##### Collections
-###### [Array](developer/methods/devenv-array-methods.md)
-###### [Dictionary](developer/methods-auto/dictionary/dictionary-data-type.md)
-###### [List](developer/methods-auto/list/list-data-type.md)
-
-##### Enumerations and Options
-###### [Enum](developer/devenv-extensible-enums.md)
-###### [Option](developer/methods-auto/option/option-data-type.md)
-
-#### [Interfaces](developer/devenv-interfaces-in-al.md)
-
-#### [Methods](developer/devenv-al-methods.md)
-##### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
-##### [Method Attributes](developer/attributes/devenv-method-attributes.md)
-##### [Using Data Types in methods](developer/devenv-al-complextypes.md)
-##### [Overloading methods](developer/methods/devenv-overload-method.md)
-##### [Handler Methods (for tests)](developer/devenv-creating-handler-methods.md) 
-
-#### Objects
-##### [Object Properties](developer/properties/devenv-properties.md)
-##### [Table](developer/devenv-table-object.md)
-###### [Table Extension Object](developer/devenv-table-ext-object.md)
-###### [Table Keys](developer/devenv-table-keys.md)
-##### [Page](developer/devenv-page-object.md)
-###### [Page Extension Object](developer/devenv-page-ext-object.md)
-###### [Page Customization Object](developer/devenv-page-customization-object.md)
-##### [Report](developer/devenv-report-object.md)
-##### [Profile](developer/devenv-profile-object.md)
-##### [Codeunit](developer/devenv-codeunit-object.md)
-##### [Query](developer/devenv-query-object.md)
-##### [XMLPort](developer/devenv-xmlport-object.md)
-##### [Control Add-In](developer/devenv-control-addin-object.md)
-##### [Entitlement](developer/devenv-entitlement-object.md)
-##### [Permissionset](developer/devenv-permissionset-object.md)
-###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
-##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
-##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
-
-#### [Triggers](developer/triggers-auto/devenv-triggers.md)
-
-### Error Handling
-#### [Error Handling](developer/devenv-al-error-handling.md)
 #### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
 #### [Collecting Errors](developer/devenv-error-collection.md)
 #### [Error(String [, Any,...]) Method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
@@ -658,7 +531,6 @@
 #### [Overview](developer/devenv-reports.md)
 #### [Report Design Overview](developer/devenv-report-design-overview.md)
 #### [Report Object](developer/devenv-report-object.md)
-#### [Report Extension Object](developer/devenv-report-ext-object.md)
 #### [Report Extension Example](developer/devenv-report-ext-example.md)
 #### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 #### [Request Pages](developer/devenv-request-pages.md)
@@ -822,6 +694,7 @@
 ##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
+##### [Extending Email Capabilities](developer/devenv-extending-email.md)
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
