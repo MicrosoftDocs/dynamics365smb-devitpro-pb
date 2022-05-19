@@ -397,10 +397,10 @@
 #### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
 
-### Working in Sandboxes
-#### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### Work in Sandboxes
+#### [Sandbox Environments for Development](developer/devenv-sandbox-overview.md)
 #### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-#### [Working with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
+#### [Work with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 
 ### Working with apps
 #### [App Identity](developer/devenv-app-identity.md)
