@@ -135,7 +135,7 @@ page 50101 "Reward Card"
         {
             group(Reward)
             {
-                field("Reward ID";"Reward ID")
+                field("Reward Id";"Reward ID")
                 {
                     // ApplicationArea sets the application area that 
                     // applies to the page field and action controls. 

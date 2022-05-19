@@ -3,7 +3,7 @@ title: "Using Designer"
 description: "Description of how Designer works and is integrated with the AL development experience."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 19/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,10 +16,10 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Designer is currently only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are *immediately visible to other users* in the sandbox environment.<br> Designer *cannot be used by multiple users at the same time* in sandboxes.  
+> Currently, the Designer is only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.<br> Designer cannot be used by multiple users at the same time in sandboxes.  
 
 > [!NOTE]  
-> Extensions created using Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you should not rely on using the sandbox environment as a source control for these Designer extensions, but remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
+> Extensions created using Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you should not rely on using the sandbox environment as a source control for these Designer extensions. Remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
 
 ## Designer capabilities
 
@@ -27,7 +27,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 |Features      |Applies to    | 
 |--------------|--------------|
-|Add components    |fields, columns, actions in navigation bar              | 
+|Add components    |fields, columns, parts, actions in navigation bar              | 
 |Move components   |fields, columns, cues, parts, actions, and action groups |
 |Remove components |fields, columns, cues, parts, actions, and action groups |
 |Hide and unhide components|parts|
@@ -41,12 +41,12 @@ Here is a quick overview of capabilities in **Designer**:
 
 ## Important points to note
 
-- Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users.
+- Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.
 - The changes you make in Designer will apply to **all** users.
 - You cannot remove specific fields that are bound to a page and a field must belong to an underlying table.
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they are in.
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
-- In the client, users can change many of these settings for their workspace only by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
+- In the client, users can change many of these settings for their workspace by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
 
 ## Start and stop designing
 
