@@ -3,7 +3,7 @@ title: "Using Designer"
 description: "Description of how Designer works and is integrated with the AL development experience."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 19/05/2022
+ms.date: 05/19/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

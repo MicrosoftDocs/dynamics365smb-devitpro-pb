@@ -3,7 +3,7 @@ author: jswymer
 title: "Building your first sample extension that uses new objects and extension objects"
 description: "Includes code for an example extension, complete with new objects, extension objects, and install and upgrade code."
 ms.custom: na
-ms.date: 19/05/2022
+ms.date: 05/19/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
