@@ -381,6 +381,7 @@
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
+#### [Debugging Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Signing an App Package File](developer/devenv-sign-extension.md)
 #### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
@@ -397,10 +398,10 @@
 #### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
 
-### Working in Sandboxes
-#### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### Work in Sandboxes
+#### [Sandbox Environments for Development](developer/devenv-sandbox-overview.md)
 #### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-#### [Working with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
+#### [Work with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 
 ### Working with apps
 #### [App Identity](developer/devenv-app-identity.md)
@@ -658,7 +659,6 @@
 #### [Overview](developer/devenv-reports.md)
 #### [Report Design Overview](developer/devenv-report-design-overview.md)
 #### [Report Object](developer/devenv-report-object.md)
-#### [Report Extension Object](developer/devenv-report-ext-object.md)
 #### [Report Extension Example](developer/devenv-report-ext-example.md)
 #### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 #### [Request Pages](developer/devenv-request-pages.md)
@@ -822,6 +822,7 @@
 ##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
+##### [Extending Email Capabilities](developer/devenv-extending-email.md)
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
@@ -847,7 +848,7 @@
 ### [User Scenario Documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
-### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
+### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 ### [Walkthrough: Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Walkthrough: Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 ### Best Practices
@@ -860,7 +861,7 @@
 #### Restrictions
 ##### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 ##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
-##### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
+##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
 ##### [Adding Custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)

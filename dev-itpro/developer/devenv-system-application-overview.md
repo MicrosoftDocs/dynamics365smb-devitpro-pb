@@ -25,7 +25,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Module|Description|Link to ReadMe|
 |----|----|----|
 |Auto Format|Formats the appearance decimal data types.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Auto%20Format/README.md)|
-|Azure AD Graph|Interface for the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Graph/README.md)|
+|Azure AD Graph|Interface for the Azure AD Graph API.<br><br> **Note** <br>  Azure Active Directory Graph is being retired, and we recommend that you start using Microsoft Graph instead. To avoid causing issues with apps that use the Azure AD Graph module in [!INCLUDE[prod_short](../developer/includes/prod_short.md)], we haven't changed its name or the names of the objects it contains. For more information about the Azure Active Directory Graph retirement, see [Migrate Azure AD Graph apps to Microsoft Graph](/graph/migrate-azure-ad-graph-overview).|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Graph/README.md)|
 |Azure AD Licensing|Access information about the subscribed SKUs and the corresponding service plans.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Licensing/README.md)|
 |Azure AD Plan|Provides methods for retrieving and managing user plans in Azure Active Directory.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Plan/README.md)|
 |Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md)|
