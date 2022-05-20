@@ -23,7 +23,7 @@ When developing extensions in the AL development environment, you have a wide ra
 
 ## Designer capabilities
 
-Here is a quick overview of capabilities in **Designer**: 
+Here's a quick overview of capabilities in **Designer**: 
 
 |Features      |Applies to    | 
 |--------------|--------------|
@@ -43,7 +43,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 - Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.
 - The changes you make in Designer will apply to **all** users.
-- You cannot remove specific fields that are bound to a page and a field must belong to an underlying table.
+- You can't remove specific fields that are bound to a page and a field must belong to an underlying table.
 - You can only add fields, columns, or tiles to its applicable view from list, tall tiles, and wide tiles views. Some components can't be moved using drag-and-drop and are restricted to the view that they are in.
 - You can only add fields/columns, from a predefined list, which is based on the source table. You can't create new ones.
 - In the client, users can change many of these settings for their workspace by using personalization. For more information, see [Personalizing Your Workspace](/dynamics365/business-central/ui-personalization-user).  
@@ -52,7 +52,7 @@ Here is a quick overview of capabilities in **Designer**:
 
 In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer by choosing ![Settings icon.](media/settings_icon_small.png) icon and then **Design** in the top-right corner of any page and start designing using drag-and-drop components. In Visual Studio Code, you can start Designer by using the **F6** shortcut key, which launches a browser that opens the [!INCLUDE[prod_short](includes/prod_short.md)] client in Designer.
 
-After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
+After you're done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
 If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there. You can find **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon and typing the page name.
 
@@ -87,20 +87,20 @@ Fields on non-list type pages, such as card and document type pages, include Des
 
 ## Setting the Quick Entry on fields
 
-You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press the **Enter** key to navigate through fields on a page. You use Quick Entry to help accelerate keyboard data entry by focusing only those fields a user typically needs to fill in.
+You can use Designer to set the [QuickEntry property](properties/devenv-quickentry-property.md) on a field. The **QuickEntry** property determines whether the field is skipped when users press the **Enter** key to navigate through fields on a page. You use Quick Entry to speed up the data entry by keyboard and to focus only on the frequently used fields.
 
 To set the QuickEntry property from Designer, select the field or column heading, and then choose either **Include in Quick Entry** (sets the **QuickEntry** property to `true`) or **Exclude from Quick Entry** (sets the **QuickEntry** property to `false`).  
 
-For more information about Quick Entry, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
+For more information about QuickEntry property, from a user perspective, see [Accelerating Data Entry Using Quick Entry](/dynamics365/business-central/ui-enter-data#QuickEntry) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
-## Working with the Navigation Menu and Navigation Bar
+## Working with the Navigation menu and Navigation bar
 
 Designer lets you add actions that link to pages and reports in the navigation bar using the bookmark icon ![bookmark icon.](media/ui_bookmark_icon.png "bookmark icon action bar") on the target page or report. The bookmark icon is also available in the Tell Me window.
 
 > [!NOTE]
-> Bookmarking is only available for pages and reports that are discoverable from Tell Me. For more information on how to make pages and reports searchable, see [Adding Pages and Reports to Tell me](devenv-al-menusuite-functionality.md).
+> Bookmarking is only available for pages and reports that are discoverable from Tell Me (search icon on top right). For more information on how to make pages and reports searchable, see [Adding Pages and Reports to Tell me](devenv-al-menusuite-functionality.md).
 
-This allows the user to efficiently create multiple links and build up the set of important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
+This feature allows the user to efficiently create multiple links and group together the important or commonly used links for a specific profile in the Role Center navigation bar. For more information about bookmarking, see [Bookmark a Link to a Page or Report on Your Role Center](/dynamics365/business-central/ui-bookmarks) in the [!INCLUDE[prod_short](includes/prod_short.md)] Application Help.
 
 You can also move actions to reorder them in the navigation bar, or move them into groups or subgroups to design the Navigation Menu.
 
@@ -128,8 +128,8 @@ Actions and actions groups that are already hidden appear dimmed. To change the 
 
 |Option|What it does|
 |------|------------
-|**Remove**|This option is available for the actions that are shown only in a promoted category. Or actions that are shown in both a promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it's originally defined.<br /><br />You cannot remove actions on a Role Center page; you can only hide them.|
-|**Hide**|This option is available for actions or action groups that currently are shown only in an action menu (not in a promoted category). Like **Remove**, choosing **Hide** will make the action or action group disappear from the action bar in the client. However, in Designer, the action or action group appears dimmed.|
+|**Remove**|This option is available for the actions that are shown only in a promoted category. Or actions that are shown in both, promoted category and another action menu.<br /><br /> Choosing **Remove** deletes the action from the selected location so that it no longer appears.<br /><br /> If the action is only shown in the promoted category, it will automatically be shown in the action menu where it's originally defined.<br /><br />You can't remove actions on a Role Center page; you can only hide them.|
+|**Hide**|This option is available for actions or action groups that are currently shown only in an action menu (not in a promoted category). Like **Remove**, choosing **Hide** will make the action or action group disappear from the action bar in the client. However, in Designer, the action or action group appears dimmed.|
 |**Show**|This option appears if the action or action group has been previously hidden (dimmed). Choosing this option will make the action or action group appear in the action bar.|
 
 ### Move actions and action groups
@@ -143,7 +143,7 @@ Designer lets you move actions within the action bar. For example, you can:
 To move an action or action group, drag and drop it to the wanted location, just like with fields and columns.  
 
 - You can move individual actions into the promoted categories, but you can't change the order of the actions in the category.
-- You cannot move an action group into a promoted category.
+- You can't move an action group into a promoted category.
 - To move an action or action group into an empty action group, drag the action or action group to the target group and drop it in the **Drop an action here** box.
 - On Role Center pages, you can't move actions among the different areas that are defined by the `area(creation)`, `area(processing)`, and `area(reporting)` controls.
 
