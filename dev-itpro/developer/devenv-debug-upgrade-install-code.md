@@ -15,7 +15,7 @@ Testing and troubleshooting issues in install and upgrade code is important to e
 
 ## Attach and debug
 
-1. In Visual Studio Code, ensure that you have `launch.json` file with the `request` option set to `attach`. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).  
+1. In Visual Studio Code, ensure that you have a `launch.json` file with the `request` option set to `attach`. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).  
 1. Add one or more breakpoints in the code that you want to debug. For more information, see [Debugging](devenv-debugging.md).  
     > [!NOTE]  
     > If you *do not* increment the version of the app, the install codeunits will be invoked. If you *do* increment the version of the app, or if you set the `forceUpgrade` flag to `true` in the `launch.json` file, the upgrade codeunits will be invoked.
