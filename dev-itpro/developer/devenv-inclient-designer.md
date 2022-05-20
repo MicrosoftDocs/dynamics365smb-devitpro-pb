@@ -16,7 +16,7 @@ ms.author: solsen
 When developing extensions in the AL development environment, you have a wide range of possibilities. Designer in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] complements the development experience in Visual Studio Code. It provides an easy and convenient way to make immediate changes to your design by dragging and dropping the components on the page.  
 
 > [!IMPORTANT]  
-> Currently, the Designer is only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.<br> Designer cannot be used by multiple users at the same time in sandboxes.  
+> Currently, Designer is only available from a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] sandbox.<br> Every time you start designing, you're effectively creating a new extension. Your changes are immediately visible to other users in the sandbox environment.<br> Designer cannot be used by multiple users at the same time in sandboxes.  
 
 > [!NOTE]  
 > Extensions created using Designer are removed when the sandbox environment is updated or relocated within our service. Thus, you should not rely on using the sandbox environment as a source control for these Designer extensions. Remember to frequently download and backup the Designer extension source. For more information, see [Production and Sandbox Environments](../administration/environment-types.md).
@@ -54,10 +54,8 @@ In the [!INCLUDE[prod_short](includes/prod_short.md)] client, you start Designer
 
 After you are done with the changes, choose **Stop Designing**. You can name the extension and download code to save it for the tenant. Once you're done, the extension is automatically installed. If you choose to download the code, the project will be downloaded as a .zip folder<!--, where the `app.json` file has the main extension as a dependency-->. You extract the files and open the folder from Visual Studio Code, where you can deploy it as you would do with any other extension.
 
-If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there.
+If you choose not to download the code at the end, you can still pull the code using the **Alt+F6** shortcut. You can also uninstall the extension from the **Extension Management** page or even download the source from there. You can find **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon and typing the page name.
 
-> [!Note]
-> You can manage extensions by going to the main settings ![Settings icon.](media/settings_icon_small.png) menu of the [!INCLUDE[prod_short](includes/prod_short.md)]. Go to **Advanced Settings** and then choose **Extensions**.
 
 ![Work with Designer.](media/designer.gif)
 
@@ -67,11 +65,11 @@ In Designer, you design and modify the current page by using drag and drop compo
 
 ## Working with fields
 
-To add a field or column to a page, in the banner, choose **More**, and then choose **Field**. A pane to the right appears that lets you add fields. Here you can see all of the table fields that are available for the specific page. The table fields displayed are based on the underlying table or tables. The field can have a status of **Placed**, which means that the field already exists on the page. A status of **Ready** means that the field doesn't already exist on the page. To add a field, drag and drop it to the wanted location. 
+To add a field or column to a page, in the banner, choose **Field**. A pane to the right appears that lets you add fields. Here, you can see all the fields that are available for the specific page. The fields displayed are based on the underlying table or tables. The field can have a status of **Placed**, which means that the field already exists on the page. A status of **Ready** means that the field doesn't exists on the page and can be added. To add a field, drag and drop it to the preferred location.
 
 If you want to remove a field or column, select the arrowhead indicator ![arrowhead indicator left.](media/designer_arrow_left.png) or ![arrowhead indicator down](media/designer_arrow_down.png) on the component, and then choose **Remove**.
 
-You can edit the caption of a FastTab for a group of fields by selecting the caption and start writing. A caption should provide a short and clear description.
+You can edit the caption of a FastTab (FastTabs divide key information in separate groups and are arranged in columns) by selecting the caption and start writing. A caption should provide a short and clear description. For more information, see [Field Arrangement on FastTabs](devenv-arranging-fields-on-fasttab.md)
 
 ## Setting the freeze pane
 
@@ -84,8 +82,8 @@ Fields on non-list type pages, such as card and document type pages, include Des
 |Option|Description|Importance property value|
 |----|----|---|
 |**Show under "Show more"**|Sets the field so that it appears only when the user selects **Show more**. |Additional|
-|**Show always**|Sets the field to always display on the page. The field displays regardless of whether the user selects **Show more** or **Show less**. The field won't show in the FastTab heading if the FastTab is collapsed.|Standard|
-|**Show when collapsed**|Sets the field to always display on the page. The field displays regardless of whether the user selects **Show more** or **Show less**. The fields will also display in the header of the FastTab if the FastTab is collapsed.|Promoted|
+|**Show always**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The field won't show in the FastTab heading if the FastTab is collapsed.|Standard|
+|**Show when collapsed**|Sets the field to always display on the page. The field is displayed regardless the user selects **Show more** or **Show less**. The fields will also display in the header of the FastTab if the FastTab is collapsed.|Promoted|
 
 ## Setting the Quick Entry on fields
 

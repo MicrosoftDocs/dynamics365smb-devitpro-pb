@@ -10,13 +10,13 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Building your first sample extension with Extension Objects, Install code, and Upgrade code
+# Building your first Sample Extension with Extension Objects, Install Code, and Upgrade Code
 
 This walkthrough will guide you step by step to create a sample extension in AL. New objects and extension objects will be added to the base application for a simple reward feature for customers. Every section of this exercise includes code that serves for installing, customizing, or upgrading this sample extension. The final result can be published and installed on your tenants.
 
 ## About this walkthrough
 
-This walkthrough demonstrates the following tasks:
+This walkthrough covers the following tasks:
 
 - Developing a sample extension with a table, a card page, and a list page.
 
@@ -253,10 +253,7 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Drag the **Minimum Purchase** field from the list onto the page in the **Reward group**. 
 - Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
-After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension by opening the **Extension Management** page.  
-
-> [!Note]
-> You can manage extensions by going to the main settings ![Settings icon.](media/settings_icon_small.png) menu of the [!INCLUDE[prod_short](includes/prod_short.md)]. Go to **Advanced Settings** and then choose **Extensions**.
+After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension from the **Extension Management** page. You can find **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon and typing the page name.
 
 For more information about Designer, see [Designer](devenv-inclient-designer.md).  
 
@@ -300,11 +297,11 @@ tableextension 50103 "Customer Ext" extends Customer
 ```
 
 > [!NOTE]
-> While running the code, you might get errors and warnings in Visual Studio Code. Those errors and warnings will not affect the output of this example exercise.
+> While running the code, you might get errors and warnings in Visual Studio Code. Those errors and warnings shouldn't affect the output of this example exercise.
 
 ## Customer card page extension object
 
-A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_long](includes/prod_long.md)]'s core service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the actions section (you'll find *Actions* by extending the three dots icon), the code adds an action *Rewards* to open the **Reward List** page.  
+A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_long](includes/prod_long.md)]'s core service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the related section (you'll find *Related* by extending the three dots icon), the code adds an action *Rewards* to open the **Reward List** page.  
 
 > [!TIP]
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
@@ -529,7 +526,7 @@ You can configure your extension to send this data to a specific Application Ins
 
 ## Conclusion
 
-This walkthrough demonstrated how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
+This walkthrough showed how an extension can be developed. The main AL objects and extension objects were used to make a structure for reward levels, to store, view, and edit them. The Designer was introduced as an alternative to modify visual components of page objects and to customize them directly from the web interface instead of using code. Up to this point, the table and the page objects were empty, so, we added install codeunit which initialized the **Reward** table with a standard number of reward levels when the extension was installed. We also added an upgrade code section in this exercise to create a complete picture of all processes involved when an extension is built. As a result, a user is enabled to assign one of the three reward levels to a customer and to change this scenario by upgrading the version of the extension.
 
 > [!TIP]  
 > To try building a more advanced Customer Rewards sample extension, see [Building an Advanced Sample Extension](devenv-extension-advanced-example.md).
