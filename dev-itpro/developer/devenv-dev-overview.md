@@ -26,7 +26,7 @@ All functionality in [!INCLUDE[prod_short](includes/prod_short.md)] is coded in 
 
 * Table objects define the table schema that holds data.
 * Page objects represent the pages seen in the user interface.
-* Code-units contain code for logical calculations and for the application behavior.
+* Codeunits contain code for logical calculations and for the application behavior.
 
 These objects are stored as code, known as AL code, and are saved in files with the `.al` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality, which allows you to work with multiple AL folders within one workspace. For more information on how to group a set of disparate project folders into one workspace, see [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 
@@ -34,7 +34,7 @@ These objects are stored as code, known as AL code, and are saved in files with 
 > [!NOTE]  
 > A single .al file may contain multiple objects.
 
-There are two extension objects, which are used for building extensions. Table extension objects and page extension objects are used to add or override changes to table or page objects. For example, For example, consider a business that sells organic food, and the business wants to add two extra fields, `Organic` and `Local Produce` in its existing item table. The business will use table extension object to define those extra fields. Now, the table extension has made the newly added fields available for use in the item table. You can store data in these fields and access them by code. You can then use the page extension object to display the fields that you added to the table object.
+Table extension objects and page extension objects are used to add or override changes to table or page objects. For example, consider a business that sells organic food, and the business wants to add two extra fields; `Organic` and `Local Produce` in its existing item table. The business will use a table extension object to define those extra fields. The table extension has made the newly added fields available for use in the item table. You can store data in these fields and access them by code. You can then use the page extension object to display the fields in the UI.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
@@ -49,12 +49,12 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 
 * Create new files for your solution.
 * Assists you with the creation of appropriate settings and configuration files.
-* Provides code snippets to help creating application objects.
+* Provides code snippets to help create application objects.
 * Gives compiler validation while you code.
-* Provides efficient publishing process. You can publish and see your code running by just pressing Ctrl+F5.
+* Provides efficient publishing process. You can publish and see your code running by just pressing **Ctrl+F5**.
 
 > [!NOTE]
-> For some users **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the *Run* drop down in Visual Studio Code.  
+> For some users the **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -63,7 +63,7 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 
 ## Designer
 
-The designer works in the client and allows you to design pages using drag and drop components. The designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Using Designer](devenv-inclient-designer.md).
+Designer works in the client and allows you to design pages using drag and drop components. Designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Using Designer](devenv-inclient-designer.md).
 
 ## Compiling and deploying
 
