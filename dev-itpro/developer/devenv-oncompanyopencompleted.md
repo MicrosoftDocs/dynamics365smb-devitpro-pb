@@ -3,7 +3,7 @@ title: Moving from OnCompanyOpen
 description: Explains why you should use OnAfterLogin instead of OnCompanyOpen.
 author: jswymer
 ms.custom: na
-ms.date: 05/19/2022
+ms.date: 05/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,9 @@ With the now obsolete `OnCompanyOpen` event, a failure in any event subscriber w
 
 ## Move to the OnAfterLogin event
 
-We recommend subscribing to the `OnAfterLogin` event instead of the OnCompanyOpen event, or even the OnCompanyOpenCompleted event, especially when developing for Business Central online. Moving from the OnCompanyOpen event to `OnAfterLogin` is as easy as changing the event subscriber definition. For example, change:
+We recommend subscribing to the `OnAfterLogin` event instead of the OnCompanyOpen event, or even the OnCompanyOpenCompleted event, especially when developing for Business Central online. The `OnAfterLogin` event is published by the [System Initialization](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/System%20Initialization) module in the system application. In general, we recommend that you subscribe to events from the system application rather than directly from the underlying platform.  
+
+Moving from the OnCompanyOpen event to `OnAfterLogin` is as easy as changing the event subscriber definition. For example, change:
 
 ```al
 [EventSubscriber(ObjectType::Codeunit, Codeunit::"Company Triggers", 'OnCompanyOpen', '', false, false)]
@@ -40,7 +42,7 @@ to:
 ```
 
 > [!NOTE]
-> Events that are emitted from within the OnCompanyOpen event will eventually be moved to the OnCompanyOpenCompleted event, or they'll be changed to isolated events.
+> Events that are emitted from within the OnCompanyOpen event will eventually be moved to the the `OnAfterLogin` event or the OnCompanyOpenCompleted event, or they'll be changed to isolated events.
 
 ## See Also
 
