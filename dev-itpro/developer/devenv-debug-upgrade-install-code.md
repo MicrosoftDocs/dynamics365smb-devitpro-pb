@@ -19,8 +19,7 @@ Testing and troubleshooting issues in install and upgrade code is important to e
 1. Add one or more breakpoints in the code that you want to debug. For more information, see [Debugging](devenv-debugging.md).  
     > [!NOTE]  
     > If you *do not* increment the version of the app, the install codeunits will be invoked. If you *do* increment the version of the app, or if you set the `forceUpgrade` flag to `true` in the `launch.json` file, the upgrade codeunits will be invoked.
-1. Select the **AL: Publish extension without building** option in the **Show All Commands** menu by pressing **Ctrl+Shift+P**.  
-1. Now, invoke the **AL: Publish extension without building** command or use **Ctrl+F5** to publish the app file and start the attach session.  
+1. Invoke the **AL: Publish extension without building** option in the **Show All Commands** menu by pressing **Ctrl+Shift+P**, or use **Ctrl+F5** to publish the app file and start the attach session.  
 
 ## See Also
 
