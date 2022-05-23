@@ -34,4 +34,5 @@ end;
 ## See Also  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnPreReport (Report) Trigger](../report/devenv-onprereport-report-trigger.md)
+[OnPreReport (Report) Trigger](../report/devenv-onprereport-report-trigger.md)  
+[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)

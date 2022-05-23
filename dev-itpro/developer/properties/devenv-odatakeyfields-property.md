@@ -28,7 +28,7 @@ Specifies the fields to select when using OData.
 ## Syntax
 
 ```AL
-ODataKeyFields = Id;
+ODataKeyFields = Id, Number;
 ```
   
 ## Dependent Property
