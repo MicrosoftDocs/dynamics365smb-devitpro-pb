@@ -49,12 +49,12 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 
 * Create new files for your solution.
 * Assists you with the creation of appropriate settings and configuration files.
-* Provides code snippets to help creating application objects.
+* Provides code snippets to help create application objects.
 * Gives compiler validation while you code.
-* Provides efficient publishing process. You can publish and see your code running by just pressing Ctrl+F5.
+* Provides efficient publishing process. You can publish and see your code running by just pressing **Ctrl+F5**.
 
 > [!NOTE]
-> For some users **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the *Run* drop down in Visual Studio Code.  
+> For some users the **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** menu in Visual Studio Code.  
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
@@ -63,7 +63,7 @@ Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md
 
 ## Designer
 
-The designer works in the client and allows you to design pages using drag and drop components. The designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Using Designer](devenv-inclient-designer.md).
+Designer works in the client and allows you to design pages using drag and drop components. Designer lets you build extensions in the client itself by rearranging fields, adding fields, and previewing your changes in page design. For more information, see [Using Designer](devenv-inclient-designer.md).
 
 ## Compiling and deploying
 
