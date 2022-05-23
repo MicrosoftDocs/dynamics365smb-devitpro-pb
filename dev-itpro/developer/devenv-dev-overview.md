@@ -26,7 +26,7 @@ All functionality in [!INCLUDE[prod_short](includes/prod_short.md)] is coded in 
 
 * Table objects define the table schema that holds data.
 * Page objects represent the pages seen in the user interface.
-* Code-units contain code for logical calculations and for the application behavior.
+* Codeunits contain code for logical calculations and for the application behavior.
 
 These objects are stored as code, known as AL code, and are saved in files with the `.al` file extension. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality, which allows you to work with multiple AL folders within one workspace. For more information on how to group a set of disparate project folders into one workspace, see [Working with multiple AL project folders within one workspace](devenv-multiroot-workspaces.md).
 
@@ -34,7 +34,7 @@ These objects are stored as code, known as AL code, and are saved in files with 
 > [!NOTE]  
 > A single .al file may contain multiple objects.
 
-There are two extension objects, which are used for building extensions. Table extension objects and page extension objects are used to add or override changes to table or page objects. For example, For example, consider a business that sells organic food, and the business wants to add two extra fields, `Organic` and `Local Produce` in its existing item table. The business will use table extension object to define those extra fields. Now, the table extension has made the newly added fields available for use in the item table. You can store data in these fields and access them by code. You can then use the page extension object to display the fields that you added to the table object.
+Table extension objects and page extension objects are used to add or override changes to table or page objects. For example, consider a business that sells organic food, and the business wants to add two extra fields; `Organic` and `Local Produce` in its existing item table. The business will use a table extension object to define those extra fields. The table extension has made the newly added fields available for use in the item table. You can store data in these fields and access them by code. You can then use the page extension object to display the fields in the UI.
 
 > [!NOTE]  
 > Extension objects can have a name with a maximum length of 30 characters.
