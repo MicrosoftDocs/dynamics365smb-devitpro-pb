@@ -301,7 +301,7 @@ tableextension 50103 "Customer Ext" extends Customer
 
 ## Customer card page extension object
 
-A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_long](includes/prod_long.md)]'s core service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the related section, find **Related** by extending the three dots icon, the code adds an action *Rewards* to open the **Reward List** page.  
+A page extension object can be used to add new functionality to pages that are part of the [!INCLUDE[prod_long](includes/prod_long.md)]'s core service. The following page extension object extends the **Customer Card** page object by adding a field control, **Reward ID**, to the **General group** on the page. The field is added in the layout section, while in the related section, find **Related** by extending the three dots icon, the code adds an action **Rewards** to open the **Reward List** page.  
 
 > [!TIP]  
 > Use the shortcuts `tpageext` to create the basic structure for the page extension object.
