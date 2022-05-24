@@ -42,7 +42,9 @@ ReportFilter := SomeRecord.GetFilters;
   
 Use the ReportFilter text string as the source expression for a control in a section of the report.  
 
-## See Also  
+## See Also
+
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[OnPreReport (Report Extension) Trigger](../reportextension/devenv-onprereport-reportextension-trigger.md)
+[OnPreReport (Report Extension) Trigger](../reportextension/devenv-onprereport-reportextension-trigger.md)  
+[Report Triggers and Runtime Operations](../../devenv-report-triggers.md)

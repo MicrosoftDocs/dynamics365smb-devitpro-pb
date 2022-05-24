@@ -114,7 +114,7 @@
 
 <!-- administration-->
 # Administration
-## [Administration of Business Central Online](administration/tenant-administration.md)
+## [Administration Overview](administration/tenant-administration.md)
 ## Understand Business Central online
 ### [Understanding the Infrastructure ](administration/tenant-environment-topology.md)
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
@@ -185,22 +185,6 @@
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
 ### [Recommend apps](administration/recommend-apps.md)
-<!-- support-->
-## Manage technical support
-### [Manage technical support overview](administration/manage-technical-support.md)
-### [Escalate support issues to Microsoft](administration/raise-support-case.md)
-### [Report customer outages](administration/report-outage.md)
-### [Analyze performance](administration/performance-profiler-overview.md)
-<!--migrate to BC online-->
-## Migrate to Business Central Online
-### [Migrate on-premises data](administration/migrate-data.md)
-### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
-### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
-### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
-### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
-<!-- end migrate -->
 <!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
@@ -238,7 +222,14 @@
 #### [Web Service Requests Telemetry (Outgoing)](administration/telemetry-webservices-outgoing-trace.md)
 ### [Telemetry by Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
-## Automation APIs
+<!-- support-->
+## Manage technical support
+### [Manage technical support overview](administration/manage-technical-support.md)
+### [Escalate support issues to Microsoft](administration/raise-support-case.md)
+### [Report customer outages](administration/report-outage.md)
+### [Analyze performance](administration/performance-profiler-overview.md)
+<!-- end support -->
+## Automation API
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -285,7 +276,9 @@
 #### [Create user permission](administration/api/dynamics_userpermission_create.md)
 #### [Update user permission](administration/api/dynamics_userpermission_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-## Cloud Migration APIs
+## Admin Center API
+### [Overview](administration/administration-center-api.md)
+## Cloud Migration API
 ### [Cloud Migration API Overview](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
@@ -315,6 +308,16 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
+<!--migrate to BC online-->
+## Migrate to Business Central Online
+### [Migrate on-premises data](administration/migrate-data.md)
+### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
+### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
+### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
+### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
+### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
+### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+<!-- end migrate -->
 <!-- end admin -->
 
 <!-- DEVELOPMENT-->
@@ -375,9 +378,10 @@
 ### Compiling, Publishing, and Debugging
 #### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
-#### [AL Profiler](developer/devenv-al-profiler-overview.md)
-#### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
+#### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
+#### [Debugging Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
+#### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Signing an App Package File](developer/devenv-sign-extension.md)
 #### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
@@ -394,10 +398,10 @@
 #### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
 #### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
 
-### Working in Sandboxes
-#### [Choosing Your Development Sandbox Environment](developer/devenv-sandbox-overview.md)
+### Work in Sandboxes
+#### [Sandbox Environments for Development](developer/devenv-sandbox-overview.md)
 #### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-#### [Working with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
+#### [Work with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
 
 ### Working with apps
 #### [App Identity](developer/devenv-app-identity.md)
@@ -655,7 +659,6 @@
 #### [Overview](developer/devenv-reports.md)
 #### [Report Design Overview](developer/devenv-report-design-overview.md)
 #### [Report Object](developer/devenv-report-object.md)
-#### [Report Extension Object](developer/devenv-report-ext-object.md)
 #### [Report Extension Example](developer/devenv-report-ext-example.md)
 #### [Defining a Report Dataset](developer/devenv-report-dataset.md)
 #### [Request Pages](developer/devenv-request-pages.md)
@@ -819,6 +822,7 @@
 ##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
+##### [Extending Email Capabilities](developer/devenv-extending-email.md)
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
@@ -844,7 +848,7 @@
 ### [User Scenario Documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
-### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
+### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 ### [Walkthrough: Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
 ### [Walkthrough: Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
 ### Best Practices
@@ -857,7 +861,7 @@
 #### Restrictions
 ##### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
 ##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
-##### [Moving From OnCompanyOpen to OnCompanyOpenCompleted](developer/devenv-oncompanyopencompleted.md)
+##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
 ##### [Adding Custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
@@ -3892,8 +3896,10 @@
 #### [Overview](webservices/api-overview.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
+#### [Automation API](administration/itpro-introduction-to-automation-apis.md)
+#### [Admin Center API](administration/administration-center-api.md)
+#### [Cloud Migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 #### [Developing a Custom API](developer/devenv-develop-custom-api.md)
-#### [Administration API](administration/itpro-introduction-to-automation-apis.md)
 #### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
