@@ -22,7 +22,7 @@ For an overview of how translations are applied, see [Translations Overview](dev
 To add a new language to the extension that you've built, first, you must enable the generation of XLIFF files. The XLIFF file extension is .xlf. The generated XLIFF file contains the strings that are specified in properties such as **Caption**, **CaptionML**, and **Tooltip**.
 
 > [!NOTE]  
-> To submit an app to the AppSource, you must use XLIFF translation files.
+> To submit an app to AppSource, you must use XLIFF translation files.
 
 In the app.json file of your extension, add the following line:
 
