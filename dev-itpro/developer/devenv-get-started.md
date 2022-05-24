@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with AL"
+title: "Get Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.date: 05/18/2022
