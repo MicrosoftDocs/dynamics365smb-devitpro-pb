@@ -253,7 +253,7 @@ To add the same fields and customize the **Reward Card** page, follow the next s
 - Drag the **Minimum Purchase** field from the list onto the page in the **Reward group**. 
 - Choose the **Reward** in the group caption to enable the value to be edited. Change the caption to **Info** and press **Enter**.
 
-After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension from the **Extension Management** page. You can find the **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/ui-search/search_small.png "Tell me what you want to do") icon and typing the page name.
+After making these adjustments, finish up your design by choosing **Stop Designing**, which allows you to name the extension with an option to download code, and save the extension for the tenant. If you choose not to download the code at the end, you can still pull the changes via the **Alt+F6** key shortcut from Visual Studio Code. You can also uninstall the extension from the **Extension Management** page. You can find the **Extension Management** page by choosing the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon and typing the page name.
 
 For more information about Designer, see [Designer](devenv-inclient-designer.md).  
 
