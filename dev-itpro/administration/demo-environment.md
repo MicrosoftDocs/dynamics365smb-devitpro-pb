@@ -8,11 +8,13 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 03/10/2022
+ms.date: 05/25/2022
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can show prospects as part of pre-sales demonstrations. Depending on your requirements, you have several different options that are described in this article.  
+
+Learn more about [!INCLUDE [prod_short](../includes/prod_short.md)] trials and subscriptions [here](trials-subscriptions.md).  
 
 ## Microsoft 365 demo plus Business Central
 
@@ -48,14 +50,13 @@ If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser,
 
 ## Add a Business Central trial to your prospect's organization
 
-The easiest way to give a prospect a demonstration of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, is to simply ask them to sign up for a trial from the [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/) page. This way, the prospect will be able to explore the default version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on their own or together with you.  
+[!INCLUDE [admin-trial-signup](../includes/admin-trial-signup.md)]
 
 This type of environment can be useful if you want to demonstrate the general user interface, for example, or talk about how they can add capabilities with apps from AppSource.  
 
-> [!NOTE]
-> If you want to show the prospect the full capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you must ask them to change the user experience to Premium in the **Company Information** page. For more information, see [Change Which Features are Displayed](/dynamics365/business-central/ui-experiences) in the business functionality content.
+[!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-If a prospect has signed up for a free trial, and they use [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they are still not sure, they must contact a partner.
+If a prospect has signed up for a free trial, and they use [!INCLUDE [prod_short](../includes/prod_short.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they are still not sure, they must contact a partner.
 
 However, in many cases, you will probably prefer to show prospects more tailored experiences with your own trial as described in the [Microsoft 365 demo plus Business Central](#microsoft-365-demo-plus-business-central) section.
 
@@ -71,7 +72,7 @@ Alternatively, you can create a free trial with a Microsoft 365 demo account fro
 
 ## Use Contoso Coffee demo data for advanced manufacturing
 
-The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. 
+The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. For more information, see [Introduction to Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
 
 ## Add Dynamics 365 Sales Professional
 
@@ -136,6 +137,7 @@ Starting in February 2022, partners can request dedicated licenses to set up add
 ## See also
 
 [Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](test-environment.md)  
+[Trials and Subscriptions](trials-subscriptions.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  

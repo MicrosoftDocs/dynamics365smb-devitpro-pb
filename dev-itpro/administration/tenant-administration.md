@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 02/23/2022
+ms.date: 05/25/2022
 ms.author: edupont
 ---
 
@@ -87,13 +87,9 @@ As a reselling partner, you have delegated administration access to their [!INCL
 
 As a reselling partner, you must be the first line of support for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] customers. Set up your support contact information, and help the internal administrators troubleshoot any issues that users find. For more information, see [Managing Technical Support](manage-technical-support.md).  
 
-## Extending trials
+## Trials
 
-[!INCLUDE [admin-extendtrials](../developer/includes/admin-extendtrials.md)]
-
-### <a name="premiumtrial"></a>The Dynamics 365 Business Central Premium Trial
-
-[!INCLUDE [admin-premiumtrial](../developer/includes/admin-premiumtrial.md)]
+Organizations can sign up for different types of trials, and some trials can be extended. For more information, see [Trials and Subscriptions](trials-subscriptions.md).  
 
 ## <a name="expire"></a>Data and access when a trial or subscription ends
 
@@ -101,24 +97,9 @@ Trials can expire, and so can a paid subscription, such as if the organization d
 
 [!INCLUDE [admin-extendtrials-periods](../developer/includes/admin-extendtrials-periods.md)]
 
-### Removing a subscription
-
-If a customer decides to stop using [!INCLUDE [prod_short](../includes/prod_short.md)], an administrator must remove the subscription in the Microsoft 365 admin center. An email notification is sent to all administrators of the account. Deleting the subscription blocks all users from accessing their [!INCLUDE [prod_short](../includes/prod_short.md)], and deletes all data.  
-
-> [!WARNING]
-> The subscription is deleted immediately and can not be reactivated.
-
-For more information, see [Suspend or cancel a subscription](/partner-center/create-a-new-subscription#suspend-or-cancel-a-subscription?toc=/dynamics365/business-central/dev-itpro/administration&bc=../breadcrumb/toc.yml) in the Partner Center content.  
-
-### When a free trial expires
-
-Most trials are based on people signing up at [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/). These viral trials do not expire, unless the prospect switches to the 30-day trial, and provided that users access [!INCLUDE [prod_short](../includes/prod_short.md)] frequently.  
-
-[!INCLUDE [admin-viral-trial-expiry](../developer/includes/admin-viral-trial-expiry.md)]
-
 ## <a name="infrastructure"></a>Understanding Business Central online infrastructure
 
-If you are migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md). 
+If you are migrating from an on-premises solution, understanding the infrastructure of [!INCLUDE [prod_short](../includes/prod_short.md)] online can help you make good choices for how to set up environments and companies. For more information and an example, see [Understanding the infrastructure of Business Central online](tenant-environment-topology.md).  
 
 ## See Also
 
@@ -131,4 +112,5 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Deliver consulting services as a VAR: aka.ms/BusinessCentralConsultingServices](https://aka.ms/BusinessCentralConsultingServices)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
+[Trials and Subscriptions](trials-subscriptions.md)  
 [Understanding the infrastructure of Business Central online](tenant-environment-topology.md)  
