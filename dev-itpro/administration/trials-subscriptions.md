@@ -82,11 +82,11 @@ Trials can expire, and so can a paid subscription, such as if the organization d
 
 ## Get started with sandboxes
 
-Sandbox environments are a way for you to practice with [!INCLUDE[prod_short](../includes/prod_short.md)]. Think of a sandbox as a non-production environment that you use on top of your production instance of [!INCLUDE[prod_short](../includes/prod_short.md)]. For example, if you want to take the free online training from [Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs), your administrator can [create a sandbox environment](tenant-admin-center-environments.md#create-a-sandbox-environment). This way, you and your colleagues can practice in a safe place rather than in your production environment.  
+Sandbox environments are a way for you to practice with [!INCLUDE[prod_short](../includes/prod_short.md)]. Think of a sandbox as a non-production environment that you use on top of your production instance of [!INCLUDE[prod_short](../includes/prod_short.md)]. For example, if you want to take the free online training from [Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs), your administrator can [create a sandbox environment](tenant-admin-center-environments.md#sandbox-environments). This way, you and your colleagues can practice in a safe place rather than in your production environment.  
 
 If you're a developer, a sandbox lets you safely build and test extensions and develop new functionality to customize the service without affecting the data and settings of your production environment.  
 
-Right now, all customers can use a sandbox, including organizations who have signed up for a trial. For more information about how to get started with a sandbox, see [Sandbox Environments](admin-sandbox-environments.md).  
+Right now, all customers can use a sandbox, including organizations who have signed up for a trial. For more information about how to get started with a sandbox, see [Sandbox Environments for Dynamics 365 Business Central Development](../developer/devenv-sandbox-overview.md).  
 
 > [!NOTE]
 > Sandboxes created this way contain demonstration data for the fictitious CRONUS company. No data is copied or otherwise transferred from the production environment.  
@@ -105,9 +105,5 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Migrate Data](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md)  
 [Country/Regional Availability and Supported Translations](../compliance/apptest-countries-and-translations.md)  
-[Extending trials (as an administrator)](tenant-administration.md#extending-trials)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Preparing Demonstration Environments (as a partner)](demo-environment.md)  
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
