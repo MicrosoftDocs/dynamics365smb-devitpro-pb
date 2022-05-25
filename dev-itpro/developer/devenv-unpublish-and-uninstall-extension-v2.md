@@ -35,9 +35,16 @@ You can't synchronize in clean mode if any version of the extension is installed
 In production, this should primarily be done as a final cleanup step after all versions of an extension have been uninstalled and unpublished for good. During extension development, this can be useful in order to give the developer a "clean" environment when creating database schema related modifications (table extensions, tables). 
 -->
 
+> [!TIP]
+> 
+
 ## Uninstalling extensions
 
-You can uninstall an extension by using the [!INCLUDE[adminshell](includes/adminshell.md)] or from the client.
+You can uninstall an extension by using the [!INCLUDE[adminshell](includes/adminshell.md)] or from the client. You can run the synchronizing in clean mode operation as part of the uninstall operation, instead of doing it after separately.
+
+> [!IMPORTANT]
+> - You can't uninistall an extension if any there are other installed extensions that are dependent on the extension. If you try, you'll get a message stating that there are dependent extensions and asking you to confirm whether you want to uninstall the extension and its dependents.
+> - When you choose to run the synchronizing in clean mode operation when uninstalling, the database schema and data associated with dependent extensions will also be removed.
 
 ### To uninstall an extension by using [!INCLUDE[adminshell](includes/adminshell.md)] 
 
@@ -73,6 +80,8 @@ You can uninstall an extension by using the [!INCLUDE[adminshell](includes/admin
     ```powershell  
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer -Name 'My Extension' -Version 1.0.0.0 | Uninstall-NAVApp
     ```  
+
+    If you want to run synchronizing in clean mode operation, include the `-ClearSchema` parameter.
 
 ### To uninstall an extension by using the client  
 
