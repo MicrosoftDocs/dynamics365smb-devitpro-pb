@@ -35,7 +35,7 @@ In the attach configuration, the `breakOnNext` setting specifies the next client
             "type": "al",
             "request": "attach",
             "server": "https://localhost",
-            "serverInstance": "BC160",
+            "serverInstance": "BC200",
             "authentication": "Windows",
             "breakOnError": true,
             "breakOnRecordWrite": false,
