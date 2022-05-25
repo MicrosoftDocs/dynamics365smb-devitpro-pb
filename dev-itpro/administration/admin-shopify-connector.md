@@ -16,7 +16,7 @@ This section demonstrates common scenarios and walks you through the steps to te
 
 ## Preparation
 
-Begin by creating an Azure Active Directory tenant and get the administration login and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically equivalent to *admin@CRMbc123456.onmicrosoft.com*.
+Begin by creating an Azure Active Directory tenant and get the administration login and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically equivalent to *admin @ CRMbc123456.onmicrosoft.com*.
 
 Navigate to [Shopify](https://www.shopify.com) and use this administrator account to sign up for a free 14-day trial. For more information on how to create and personalize your online store, see [Shopify Help Center](https://help.shopify.com/).
 
