@@ -120,6 +120,7 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Trials and Subscriptions](administration/trials-subscriptions.md)
 ### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
 ### [Version Numbers in Business Central](administration/version-numbers.md)
 ### [Operational Limits](administration/operational-limits-online.md)
