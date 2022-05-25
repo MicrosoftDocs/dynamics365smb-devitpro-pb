@@ -60,8 +60,7 @@ Most trials are based on people signing up at [https://dynamics.microsoft.com/bu
 
 Each time a user signs in during the trial period, a notification in a blue bar at the top displays the time remaining. If an organization decides to subscribe, they must find a [!INCLUDE[prod_short](../includes/prod_short.md)] partner. For more information, see [How do I find a reselling partner?](/dynamics365/business-central/across-faq#findpartner) (business users) and [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md) (partners).  
 
-> [!TIP]
-> [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
+[!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
 For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business.md) and [Business Functionality](/dynamics365/business-central/across-business-functionality.md).  
 
