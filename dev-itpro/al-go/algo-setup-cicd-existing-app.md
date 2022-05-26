@@ -19,7 +19,7 @@ ms.author: solsen
 
 1. Navigate to https://github.com/microsoft/AL-Go-AppSource and choose the **Use this template** button.
 1. Enter `app3` in the **Repository name** field and then choose the **Create repository from template** button.
-1. My current AppSource App is using Azure DevOps, I download the entire source as a .zip file and place it on Dropbox or Azure Blob storage and create a secure download URL to the .zip file.
+1. My current AppSource App is using AL-Go for GitHub and can be found here: https://github.com/businesscentralapps/BingMaps.AppSource. I download the entire source as a .zip file and place it on Dropbox or Azure Blob storage and create a secure download URL to the .zip file.
 1. Back on www.github.com, on the **Actions** tab, select the **Add existing app or test app** workflow and choose **Run workflow**. Paste in the **Secure Download URL** and then choose the **Run Workflow** button.
 1. When the workflow finishes, complete the pull request created.
 1. A CI workflow is kicked off with the pull request, this will fail with the following error: `For AppSource Apps with AppSourceCop enabled, you need to specify AppSourceCopMandatoryAffixes in .AL-Go\settings.json`.

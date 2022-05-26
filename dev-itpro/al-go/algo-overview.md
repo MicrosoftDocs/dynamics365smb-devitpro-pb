@@ -41,9 +41,16 @@ The usage scenarios below take you through how to get started and how to perform
 - [Set up Your Own GitHub Runner to Increase Build Performance](algo-setup-github-runner-performance.md)  
 - [Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)  
 - [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)  
-- [Branching Strategies](algo-branching-strategy.md)  
-- [Settings](algo-settings.md)
+
+To get information about which settings you can use to control the behavior of AL-Go, please read [AL-Go Settings](algo-settings.md)
 
 ## See also
 
 [Developing Extensions in AL](../developer/devenv-dev-overview.md)
+[AL-Go for GitHub](https://freddysblog.com/2022/04/26/al-go-for-github/)
+[Migrating to AL-Go for GitHub](https://freddysblog.com/2022/04/27/migrating-to-al-go-for-github/)
+[Structuring your AL-Go for GitHub repositories](https://freddysblog.com/2022/04/28/structuring-your-github-repositories/)
+[Preview of future AL-Go for GitHub functionality](https://freddysblog.com/2022/05/02/al-go-for-github-preview-bits/)
+[Branching strategies for your AL-Go for GitHub repo](https://freddysblog.com/2022/05/03/branching-strategies-for-your-al-go-for-github-repo/)
+[Deployment strategies and AL-Go for GitHub](https://freddysblog.com/2022/05/06/deployment-strategies-and-al-go-for-github/)
+[Secrets in AL-Go for GitHub](https://freddysblog.com/2022/05/14/secrets-in-al-go-for-github/)

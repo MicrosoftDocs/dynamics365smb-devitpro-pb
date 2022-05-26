@@ -59,9 +59,6 @@ The following table lists the telemetry signals for different workflows:
 |DO0100	|AL-Go workflow ran: NextMinor |
 |DO0101	|AL-Go workflow ran: Current |
 
-## Next steps
-
-Now, you might want to look into [Branching Strategies](algo-branching-strategy.md).
 
 ## See also
 
