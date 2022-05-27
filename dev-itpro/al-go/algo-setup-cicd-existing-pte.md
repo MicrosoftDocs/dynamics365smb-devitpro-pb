@@ -14,7 +14,7 @@ ms.author: solsen
 
 > *The prerequisites for this how to is that you have a GitHub account.*
 
-This how to uses the BingMaps sample app, which can be found on GitHub in the [Business Central BingMaps.PTE repo](https://github.com/BusinessCentralApps/BingMaps.PTE). Copy the following URL (a direct download of the latest released app file from BingMaps sample) to the clipboard: https://businesscentralapps.blob.core.windows.net/bingmaps-pte/latest/bingmaps-pte-apps.zip – you can also download the .zip file and see the content of it.
+This article uses the BingMaps sample app, which can be found on GitHub in the [Business Central BingMaps.PTE repo](https://github.com/BusinessCentralApps/BingMaps.PTE). Copy the following URL (a direct download of the latest released app file from BingMaps sample) to the clipboard: https://businesscentralapps.blob.core.windows.net/bingmaps-pte/latest/bingmaps-pte-apps.zip – you can also download the .zip file and see the content of it.
 
 ## Steps
 
@@ -29,7 +29,7 @@ This how to uses the BingMaps sample app, which can be found on GitHub in the [B
 
 ## Next step
 
-It is also possible to [Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md).
+It's also possible to [Set up CI/CD for an Existing Per-Tenant Extension](algo-setup-cicd-existing-pte.md).
 
 ## See also
 
