@@ -3,7 +3,7 @@ title: "Overview of AL-Go Settings"
 description: "Overview of the settings for AL-Go for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/14/2022
+ms.date: 05/27/2022
 ms.reviewer: 
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -56,7 +56,7 @@ The repository settings are only read from the repository settings file (.github
 | nextMajorSchedule | CRON schedule for when NextMajor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | nextMinorSchedule | CRON schedule for when NextMinor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | currentSchedule | CRON schedule for when Current workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
-| runs-on | Specifies which github runner will be used for all jobs in all workflows (except the Update AL-Go System Files workflow). The default is to use the GitHub hosted runner Windows-latest. You can specify a special GitHub Runner for the build job using the GitHubRunner setting. Read [this](SelfHostedGitHubRunner.md) for more information.
+| runs-on | Specifies which github runner will be used for all jobs in all workflows (except the Update AL-Go System Files workflow). The default is to use the GitHub hosted runner Windows-latest. You can specify a special GitHub Runner for the build job using the GitHubRunner setting. Read [this](algo-setup-github-runner-performance.md) for more information.
 | githubRunner | Specifies which github runner will be used for the pipeline, which is the most time consuming task. Currently, you cannot change which runner is used for all the house-keeping tasks. These will always be run on the default github hosted runner: windows-latest. Read [this](algo-setup-github-runner-performance.md) for more information.
 
 ## Advanced settings
@@ -141,8 +141,8 @@ Settings, which might be relevant to set in the settings file includes
 
 | Setting | Description | Default |
 | :-- | :-- | :-- |
-| baseUrl | The Base Url for the online Business Central Web Client. This should be changed when targetting embed apps. | https://businesscentral.dynamics.com |
-| apiBaseUrl | The Base Url for the online Business Central API endpoint. This should be changed when targetting embed apps. | https://api.businesscentral.dynamics.com |
+| baseUrl | The Base Url for the online Business Central Web Client. This should be changed when targeting embed apps. | https://businesscentral.dynamics.com |
+| apiBaseUrl | The Base Url for the online Business Central API endpoint. This should be changed when targeting embed apps. | https://api.businesscentral.dynamics.com |
 | PartnerTelemetryConnectionString | The Telemetry Connection String for partner telemetry for DevOps telemetry. | |
 | SendExtendedTelemetryToMicrosoft | Set this value to true if you agree to emit extended DevOps telemetry to Microsoft. | false |
 | ObjectIdForInternalUse | BcContainerHelper will use this Object ID for internal purposes. Change if the default Object ID is in use. | 88123 |
@@ -151,7 +151,7 @@ Settings, which might be relevant to set in the settings file includes
 
 ### Your own version of AL-Go for GitHub
 
-For experts only, following the description [here](https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contributing.md) you can setup a local fork of **AL-Go for GitHub** and use that as your templates. You can fetch upstream changes from Microsoft regularly to incorporate these changes into your version and this way have your modified version of AL-Go for GitHub.
+For experts only, following the description [here](https://github.com/microsoft/AL-Go/blob/main/Scenarios/Contributing.md) you can set up a local fork of **AL-Go for GitHub** and use that as your templates. You can fetch upstream changes from Microsoft regularly to incorporate these changes into your version and this way have your modified version of AL-Go for GitHub.
 
 > [!NOTE]  
 > Our goal is to never break repositories, which are using AL-Go for GitHub as their template. We almost certainly will break you if you create local modifications to scripts and pipelines.
