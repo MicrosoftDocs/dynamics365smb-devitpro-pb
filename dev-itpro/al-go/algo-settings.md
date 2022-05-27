@@ -57,7 +57,7 @@ The repository settings are only read from the repository settings file (.github
 | nextMinorSchedule | CRON schedule for when NextMinor workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | currentSchedule | CRON schedule for when Current workflow should run. Default is no scheduled run, only manual trigger. Build your CRON string here: https://crontab.guru |
 | runs-on | Specifies which github runner will be used for all jobs in all workflows (except the Update AL-Go System Files workflow). The default is to use the GitHub hosted runner Windows-latest. You can specify a special GitHub Runner for the build job using the GitHubRunner setting. Read [this](algo-setup-github-runner-performance.md) for more information.
-| githubRunner | Specifies which github runner will be used for the pipeline, which is the most time consuming task. Currently, you can't change which runner is used for all the house-keeping tasks. These will always be run on the default github hosted runner: windows-latest. Read [this](algo-setup-github-runner-performance.md) for more information.
+| githubRunner | Specifies which github runner will be used for the pipeline, which is the most time consuming task. Currently, you can't change which runner is used for all the house-keeping tasks. These will always be run on the default github hosted runner: windows-latest. Read [this](algo-setup-github-runner-performance.md) for more information. |
 
 ## Advanced settings
 
