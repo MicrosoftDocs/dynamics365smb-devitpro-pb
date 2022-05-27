@@ -3,7 +3,7 @@ title: "Overview of AL-Go"
 description: "Overview of how to use AL-Go for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/14/2022
+ms.date: 05/27/2022
 ms.reviewer: 
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -42,15 +42,15 @@ The usage scenarios below take you through how to get started and how to perform
 - [Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)  
 - [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)  
 
-To get information about which settings you can use to control the behavior of AL-Go, please read [AL-Go Settings](algo-settings.md)
+To get information about which settings you can use to control the behavior of AL-Go, see [AL-Go Settings](algo-settings.md)
 
 ## See also
 
-[Developing Extensions in AL](../developer/devenv-dev-overview.md)
-[AL-Go for GitHub](https://freddysblog.com/2022/04/26/al-go-for-github/)
-[Migrating to AL-Go for GitHub](https://freddysblog.com/2022/04/27/migrating-to-al-go-for-github/)
-[Structuring your AL-Go for GitHub repositories](https://freddysblog.com/2022/04/28/structuring-your-github-repositories/)
-[Preview of future AL-Go for GitHub functionality](https://freddysblog.com/2022/05/02/al-go-for-github-preview-bits/)
-[Branching strategies for your AL-Go for GitHub repo](https://freddysblog.com/2022/05/03/branching-strategies-for-your-al-go-for-github-repo/)
-[Deployment strategies and AL-Go for GitHub](https://freddysblog.com/2022/05/06/deployment-strategies-and-al-go-for-github/)
-[Secrets in AL-Go for GitHub](https://freddysblog.com/2022/05/14/secrets-in-al-go-for-github/)
+[Developing Extensions in AL](../developer/devenv-dev-overview.md)  
+[AL-Go for GitHub](https://freddysblog.com/2022/04/26/al-go-for-github/)  
+[Migrating to AL-Go for GitHub](https://freddysblog.com/2022/04/27/migrating-to-al-go-for-github/)  
+[Structuring your AL-Go for GitHub repositories](https://freddysblog.com/2022/04/28/structuring-your-github-repositories/)  
+[Preview of future AL-Go for GitHub functionality](https://freddysblog.com/2022/05/02/al-go-for-github-preview-bits/)  
+[Branching strategies for your AL-Go for GitHub repo](https://freddysblog.com/2022/05/03/branching-strategies-for-your-al-go-for-github-repo/)  
+[Deployment strategies and AL-Go for GitHub](https://freddysblog.com/2022/05/06/deployment-strategies-and-al-go-for-github/)  
+[Secrets in AL-Go for GitHub](https://freddysblog.com/2022/05/14/secrets-in-al-go-for-github/)  
