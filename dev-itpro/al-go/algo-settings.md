@@ -141,9 +141,9 @@ Settings, which might be relevant to set in the settings file includes
 
 | Setting | Description | Default |
 | :-- | :-- | :-- |
-| baseUrl | The Base Url for the online Business Central Web Client. This should be changed when targeting embed apps. | https://businesscentral.dynamics.com |
+| baseUrl | The Base URL for the online Business Central Web Client. This should be changed when targeting embed apps. | https://businesscentral.dynamics.com |
 | apiBaseUrl | The Base Url for the online Business Central API endpoint. This should be changed when targeting embed apps. | https://api.businesscentral.dynamics.com |
-| PartnerTelemetryConnectionString | The Telemetry Connection String for partner telemetry for DevOps telemetry. | |
+| PartnerTelemetryConnectionString | The Telemetry Connection String for partner telemetry for DevOps telemetry. | - |
 | SendExtendedTelemetryToMicrosoft | Set this value to true if you agree to emit extended DevOps telemetry to Microsoft. | false |
 | ObjectIdForInternalUse | BcContainerHelper will use this Object ID for internal purposes. Change if the default Object ID is in use. | 88123 |
 | TreatWarningsAsErrors | A list of AL warning codes, which should be treated as errors | [ ] |
