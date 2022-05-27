@@ -14,13 +14,13 @@ ms.author: solsen
 
 AL-Go for GitHub contains a set of GitHub templates and actions that can be used to set up and maintain professional DevOps processes for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] AL projects.
 
-The goal is that people who have created their GitHub repositories based on the AL-Go templates, can maintain these repositories and stay current just by running a workflow, which updates their repositories. This includes necessary changes to scripts and workflows to cope with new features and functions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The goal is that people who have created their GitHub repositories based on the AL-Go templates, can maintain these repositories and stay current just by running a workflow, which updates their repositories. This maintenance includes necessary changes to scripts and workflows to cope with new features and functions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 The template repositories to use as starting point are:
 
-- For creating a **per-tenant extension**, this is your starting point
+- To create a **per-tenant extension**, here's your starting point
 **[https://github.com/microsoft/AL-Go-PTE](https://github.com/microsoft/AL-Go-PTE)** is the GitHub repository template for per-tenant extensions.
-- For creating an **AppSource app**, this is your starting point
+- To create an **AppSource app**, here's your starting point
 **[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
 

@@ -22,14 +22,14 @@ Getting the refresh token can be done using this command on a machine with `BcCo
 New-BcAuthContext -includeDeviceLogin | ConvertTo-GitHubGoCredentials | Set-Clipboard
 ```
 
-If you do **not** provide an `AdminCenterApiCredentials` secret, the workflow will initiate a device code flow and you can sign in by opening a browser, pasting in this URL `https://aka.ms/devicelogin` using this code and have the workflow continue. In order to get the code, you'll have to inspect the details of the workflow and open the job called Check AdminCenterApiCredentials / Initiate Device Login (open to see code)
+If you do **not** provide an `AdminCenterApiCredentials` secret, the workflow will initiate a device code flow and you can sign in by opening a browser, pasting in this URL `https://aka.ms/devicelogin` using this code and have the workflow continue. In order to get the code, you'll have to inspect the details of the workflow and open the job called Check AdminCenterApiCredentials / Initiate Device sign in (open to see code)
 
 ## Steps
 
 1. On www.github.com, on the **Actions** tab, select the **Create Online Dev. Environment** workflow.
 1. choose **Run workflow** and specify the requested environment name and whether you want to reuse the environment if it already exists and then choose the **Run workflow** button.
-1. When the workflow is complete, inspect the pull request to see the changes in the `launch.json` file. This environment can now be used by a developer, but be aware that two developers cannot share one online environment.
-1. Merge the pull request and now you are ready to do rapid application development (RAD).
+1. When the workflow is complete, inspect the pull request to see the changes in the `launch.json` file. This environment can now be used by a developer, but two developers can't share one online environment.
+1. Merge the pull request and now you're ready to do rapid application development (RAD).
 
 
 ## Next step

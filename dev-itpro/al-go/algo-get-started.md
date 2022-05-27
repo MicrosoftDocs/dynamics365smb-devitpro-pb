@@ -12,7 +12,7 @@ ms.author: solsen
 
 # Create a new per-tenant extension and start developing in Visual Studio Code
 
-The following steps will help you get started by creating a repository on GitHub using the available template. Then you will open the generated repository in Visual Studio Code and run a PowerShell script which will set up a local developer environment for you. 
+The following steps will help you get started by creating a repository on GitHub using the available template. Then you'll open the generated repository in Visual Studio Code and run a PowerShell script, which will set up a local developer environment for you. 
 
 ## Getting the repo ready on GitHub
 
@@ -35,18 +35,18 @@ The script might show a dialog asking for permissions to run Docker commands, se
 1. Once the script is completed, press **Ctrl+Alt+P** and choose **Clear credentials cache**.
 1. Open the `HelloWorld.al` file, modify the string as you want and then press **F5**.  
 Depending on selected authentication method, Visual Studio Code might ask for the credentials that you provided in step 5. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will now start.
-1. Back in Visual Studio Code, you will see that in addition to your changes in the `HelloWorld.al`file, the `launch.json` file was also modified with the information about the local environment. 
+1. Back in Visual Studio Code, you'll see that in addition to your changes in the `HelloWorld.al`file, the `launch.json` file was also modified with the information about the local environment. 
 1. Now, from the Visual Studio Code source control, stage your changes, commit them, and **Sync changes**.
 
 ## Check the workflow on GitHub
 
-1. Go back to the repository on www.github.com, on the **Actions** tab, investigate the workflow that you started by committing and sync'ing your changes in the previous step.
-1. When the build is done, chose the workflow to inspect the build summary.
+1. Go back to the repository on www.github.com, on the **Actions** tab, investigate the workflow that you started by committing and synchronizing your changes in the previous step.
+1. When the build is done, choose the workflow to inspect the build summary.
 1. In the left pane, choose **Build** and inspect the workflow run, expand the **Run Pipeline** section in the build, and the **Compiling apps** subsection.
 
 ## Next step
 
-A next step to take, could be [Add a Test App to an Existing Project](algo-add-test-app.md).
+A next step to take could be [Add a Test App to an Existing Project](algo-add-test-app.md).
 
 ## See also
 
