@@ -3,7 +3,7 @@ title: "Overview of AL-Go"
 description: "Overview of how to use AL-Go for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/14/2022
+ms.date: 05/27/2022
 ms.reviewer: 
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -14,13 +14,13 @@ ms.author: solsen
 
 AL-Go for GitHub contains a set of GitHub templates and actions that can be used to set up and maintain professional DevOps processes for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] AL projects.
 
-The goal is that people who have created their GitHub repositories based on the AL-Go templates, can maintain these repositories and stay current just by running a workflow, which updates their repositories. This includes necessary changes to scripts and workflows to cope with new features and functions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+The goal is that people who have created their GitHub repositories based on the AL-Go templates, can maintain these repositories and stay current just by running a workflow, which updates their repositories. This maintenance includes necessary changes to scripts and workflows to cope with new features and functions in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 The template repositories to use as starting point are:
 
-- For creating a **per-tenant extension**, this is your starting point
+- To create a **per-tenant extension**, here's your starting point
 **[https://github.com/microsoft/AL-Go-PTE](https://github.com/microsoft/AL-Go-PTE)** is the GitHub repository template for per-tenant extensions.
-- For creating an **AppSource app**, this is your starting point
+- To create an **AppSource app**, here's your starting point
 **[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
 
@@ -41,9 +41,16 @@ The usage scenarios below take you through how to get started and how to perform
 - [Set up Your Own GitHub Runner to Increase Build Performance](algo-setup-github-runner-performance.md)  
 - [Introducing a Dependency to Another GitHub Repository](algo-dependency-app-github.md)  
 - [Enabling Telemetry for AL-Go Workflows and Actions](algo-enabling-telemetry.md)  
-- [Branching Strategies](algo-branching-strategy.md)  
-- [Settings](algo-settings.md)
+
+To get information about which settings you can use to control the behavior of AL-Go, see [AL-Go Settings](algo-settings.md)
 
 ## See also
 
-[Developing Extensions in AL](../developer/devenv-dev-overview.md)
+[Developing Extensions in AL](../developer/devenv-dev-overview.md)  
+[AL-Go for GitHub](https://freddysblog.com/2022/04/26/al-go-for-github/)  
+[Migrating to AL-Go for GitHub](https://freddysblog.com/2022/04/27/migrating-to-al-go-for-github/)  
+[Structuring your AL-Go for GitHub repositories](https://freddysblog.com/2022/04/28/structuring-your-github-repositories/)  
+[Preview of future AL-Go for GitHub functionality](https://freddysblog.com/2022/05/02/al-go-for-github-preview-bits/)  
+[Branching strategies for your AL-Go for GitHub repo](https://freddysblog.com/2022/05/03/branching-strategies-for-your-al-go-for-github-repo/)  
+[Deployment strategies and AL-Go for GitHub](https://freddysblog.com/2022/05/06/deployment-strategies-and-al-go-for-github/)  
+[Secrets in AL-Go for GitHub](https://freddysblog.com/2022/05/14/secrets-in-al-go-for-github/)  

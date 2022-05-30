@@ -33,7 +33,7 @@ You can use the API for the following operations:
 
 The App Management API lets you apply modern continuous integration (CI), continuous deployment (CD), and DevOps practices to your work, for example:
 
-- Automate operations by using Microsoft Azure DevOps Services or other available process automation tools.
+- Automate operations by using [AL-Go for GitHub](https://aka.ms/AL-Go) .
 - Organize role-based access control.
 - Manage your apps at scale, in multiple geo locations, supported by advanced and well-controlled build, test, and release flows.
 
