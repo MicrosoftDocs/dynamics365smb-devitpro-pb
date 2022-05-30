@@ -944,7 +944,6 @@
 ### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
 ### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
 ### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
-### [Branching Strategies](al-go/algo-branching-strategy.md)
 
 
 ## Troubleshooting

@@ -112,9 +112,7 @@ Please include app and all library apps in both previousApps and apps and please
 > [!NOTE]  
 > It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
-> You can find resources for how to set up a build pipeline, which performs all these steps here: [https://aka.ms/cicdhol](https://aka.ms/cicdhol) and you can find sample repositories, performing these steps here:
-> - [https://dev.azure.com/businesscentralapps/HelloWorld.AppSource](https://dev.azure.com/businesscentralapps/HelloWorld.AppSource) (for Azure DevOps)
-> - [https://github.com/BusinessCentralApps/HelloWorld.AppSource](https://github.com/BusinessCentralApps/HelloWorld.AppSource) (for GitHub Actions)
+> You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
 ## Manual validation performed by the Business Central validation team
 

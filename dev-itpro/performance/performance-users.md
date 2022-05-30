@@ -2,7 +2,7 @@
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/27/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,12 +19,9 @@ This section describes how you can work with end-users to improve the performanc
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports multiple browsers. Each browser offers a variety of features and capabilities. The browser plays a significant role in the responsiveness and fluidity of the user interface.
 
-- Where possible, avoid older browsers such as Internet Explorer and Edge Legacy. Modern browsers generally offer better performance. See the list of supported and recommended browsers for [Business Central online](/dynamics365/business-central/product-requirements) and [Business Central on-premises](../deployment/system-requirement-business-central-v15.md). 
+- Use one of the supported modern browsers, like [Microsoft Edge](https://www.microsoft.com/edge/), which generally offer better performance. See the list of supported and recommended browsers for [Business Central online](/dynamics365/business-central/product-requirements) and [Business Central on-premises](../deployment/system-requirements-business-central-v20.md).
 
-  <!-- If other legacy applications require you to remain on Internet Explorer, consider using [Edge in Internet Explorer mode](https://www.microsoft.com/edge/business). For more information, see [Microsoft Edge documentation](/deployedge/edge-ie-mode).-->
-  > [!IMPORTANT] 
-  > [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will end support for Internet Explorer and Edge Legacy in April 2021. Consider switching to a modern browser, such as the [new Microsoft Edge](https://www.microsoft.com/edge/), before support ends.
-
+  Avoid older browsers like Internet Explorer and Edge Legacy. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] ended support for these browsers in April 2021.
 - Always keep your browser updated to the latest version, which may include the latest performance enhancements. 
 - Be cautious using development versions of browsers as they can have instabilities that are not present in the stable releases.
 - Some [!INCLUDE[prod_short](../developer/includes/prod_short.md)] performance features and optimizations, such as page caching, are only available for modern browsers.
