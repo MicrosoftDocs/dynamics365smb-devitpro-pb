@@ -6,6 +6,8 @@
 ## [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
 ## [Working with API limits in Dynamics 365 Business Central](dynamics-rate-limits.md)
 ## [Getting a List of Environments](../../webservices/api-get-environments.md)
+## [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)
+## [Using Filtering](../../developer/devenv-connect-apps-filtering.md)
 <!-- ## [OpenAPI Specification](dynamics-open-api.md) -->
 ## [Error Codes](dynamics-error-codes.md)
 <!-- START>DO_NOT_EDIT -->
