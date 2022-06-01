@@ -33,7 +33,10 @@ InitValue = 1;
  
 ## Remarks
 
-This attribute is only important if you create the record in a window or by using the AL methods [Clear Method](../methods-auto/system/system-clear-joker-method.md), or [ClearAll Method](../methods-auto/system/system-clearall-method.md). For example, this attribute is commonly used in Boolean fields when you want either **true** or **false** to be the default.  
+This attribute is only important if you create the record in a window or by using the AL methods [Clear Method](../methods-auto/system/system-clear-joker-method.md), or [ClearAll Method](../methods-auto/system/system-clearall-method.md). For example, this attribute is commonly used in Boolean fields when you want either **true** or **false** to be the default. 
+
+>[!NOTE] 
+>For a new field added in the table, values are initialized by default according to the data type or are initialized by the value given in InitValue property for all new records. If you want to change the InitValue for existing records, you have to specify it in the code and run an upgrade. As, the value you've set in the InitValue property for the new record doesn't set the values for already existing records.
   
 ## See Also
 

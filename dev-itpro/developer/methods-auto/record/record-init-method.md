@@ -34,7 +34,8 @@ An instance of the [Record](record-data-type.md) data type.
 
 ## Remarks  
 
-This method assigns default values to each field in the record, including the SystemId field. The values that are assigned in the record correspond to those defined when the table was created. If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.  
+This method assigns default values to each field in the record, including the SystemId field when a table is created. For any new field added later into the record, values are initialized by default or by using [InitValue Property (Record)](../properties/devenv-initvalue-property.md). If no value was assigned when the table was created, the values are assigned based on the data type, as shown in the following table.
+
   
 |Data type|Default value|  
 |---------|-------------------|  
@@ -58,10 +59,13 @@ This method assigns default values to each field in the record, including the Sy
   
 > [!NOTE]  
 > Primary key and timestamp fields are not initialized.  
-  
+ 
 After the method runs, you can change the values in any or all of the fields before you call the [Insert Method (RecordRef)](../recordref/recordref-insert--method.md) to enter the record in the table. Be sure that the fields that make up the primary key contain values that make the total primary key unique. If the primary key is not unique (such as the record already exists), then the record is rejected.  
   
 The method works in the same way as the [Init Method (RecordRef)](../recordref/recordref-init-method.md).  
+
+> [!NOTE]
+> You don't have to use Init() every time you insert a record, it depends on your use-case. For example, if the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter. In both cases, you can use Init() to make sure that the record aligns with the other data in the table.
 
 ## See Also
 [Record Data Type](record-data-type.md)  
