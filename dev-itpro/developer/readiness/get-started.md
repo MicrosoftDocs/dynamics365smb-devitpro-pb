@@ -152,11 +152,11 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
     Need help with developing your apps? There's a community of [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) specialized in [!INCLUDE [prod_short](../includes/prod_short.md)] ready to engage with you.
 
-### Set up Azure DevOps for your development processes
+### Set up DevOps processes for your project
 
-Optionally, use the CI/CD workshop document at [https://aka.ms/cicdhol](https://aka.ms/cicdhol) if you want to do it yourself. Alternatively, choose between vendors offering tools or services around DevOps.
+It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 
-Talk to one of the [ISV Development Centers](https://partner.microsoft.com/isv-resource-hub/development-centers) for guidance.
+You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
 ## Step 6: Publish your app in the Microsoft commercial marketplace
 

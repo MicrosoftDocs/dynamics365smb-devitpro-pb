@@ -14,7 +14,7 @@ ms.author: solsen
 
 > *The prerequisite for this how to is that you have an AL-Go repository set up using one of the scenarios in this repo.*
 
-When running the CI/CD workflow, the build job is by far the most time-consuming job. By adding your own GitHub Runner, which can cache the generic image, the build image, and also the artifacts, the time for running the build job can become much faster.
+When the CI/CD workflow is run, the build job is by far the most time-consuming job. If you add your own GitHub Runner, which can cache the generic image, the build image, and also the artifacts, the time for running the build job can become much faster.
 
 GitHub runners can be registered for an organization (accessible for all repositories in the organization) or for a single repository.
 
@@ -31,13 +31,13 @@ GitHub runners can be registered for an organization (accessible for all reposit
 1. On the list of **Runners on GitHub**, choose the runner group **Default** and allow public repositories if your repository is public.
 1. Now navigate to your project settings file (.AL-Go/settings.json) and set `gitHubRunner` to self-hosted.
 1. Save and inspect your workflows performance increase on the second run.
-1. Inspect that one of the runners pick up the workflow.
+1. Inspect that one of the runners picks up the workflow.
 1. Clicking the runner reveals that the job is running.
 
 ## Additional information on build performance
 
-1. Running six CI/CD workflows simultaneously, causes one workflow to wait as I only had five runners.
-1. Connecting to the runner VM and looking at utilization indicates that the VM is pretty busy and probably over-allocated when starting 5+ builds at the same time. Every build was ~50% slower than when running only one build.
+1. By running six CI/CD workflows simultaneously, causes one workflow to wait as I only had five runners.
+1. Connecting to the runner VM and looking at utilization indicates that the VM is busy and probably over-allocated when starting 5+ builds at the same time. Every build was ~50% slower than when running only one build.
 1. Decreasing the number of runners to four causes the build performance to be similar to when running just one build.
 1. Turning off real-time protection on the self-hosted runner makes builds go ~25% faster.
 

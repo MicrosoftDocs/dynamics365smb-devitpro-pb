@@ -20,11 +20,11 @@ ms.author: solsen
 1. In the left pane, select the **Create a new test app** workflow, and then choose the **Run workflow** button.
 1. In the dialog, enter values for name, publisher, and ID range. In the **DIRECT COMMIT** field, keep **N** for no and then choose **Run workflow**.
 1. When the workflow has completed, navigate to the **Pull requests** tab, inspect the pull request, and then **Merge** the pull request.
-1. Now, go to the **Actions** tab and you will see that a **Merge pull request** CI workflow has been started.  
+1. Now, go to the **Actions** tab and you'll see that a **Merge pull request** CI workflow has been started.  
 This workflow will at some point fail. If you inspect the build, you can see the details of the error.
 1. To fix the error, open Visual Studio Code, and pull changes from the server by using the sync button, open the `HelloWorld.Test.al` file and fix the test message.
-1. Now, stage, commit, and push the change. On www.github.com, in the **Actions** tab, you will see that your check-in caused another CI workflow to be kicked off.  
-This time it should be passing and if you investigate the CI/CD workflow, you will see that the deploy step has been skipped as no environment existed.
+1. Now, stage, commit, and push the change. On www.github.com, in the **Actions** tab, you'll see that your check-in caused another CI workflow to be kicked off.  
+This time it should be passing and if you investigate the CI/CD workflow, you'll see that the deploy step has been skipped as no environment existed.
 
 
 ## Next step
