@@ -65,7 +65,7 @@ After the method runs, you can change the values in any or all of the fields bef
 The method works in the same way as the [Init Method (RecordRef)](../recordref/recordref-init-method.md).  
 
 > [!NOTE]  
-> You don't have to use the `Init()` method every time you insert a record, it depends on your use case. For example, if the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter. In both cases, you can use the `Init()` method to make sure that the record aligns with the other data in the table.
+> You aren't required to call the Init() method every time you intend to insert a record as, the fields are already populated, either with default values or the values set by the InitValue property. For the use cases, where the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter, you should use the Init() method to make sure that the record aligns with the other data in the table.
 
 ## See Also
 
