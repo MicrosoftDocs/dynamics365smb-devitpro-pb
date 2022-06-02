@@ -3,7 +3,7 @@ title: "Record.Init() Method"
 description: "Initializes a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/02/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,10 +64,11 @@ After the method runs, you can change the values in any or all of the fields bef
   
 The method works in the same way as the [Init Method (RecordRef)](../recordref/recordref-init-method.md).  
 
-> [!NOTE]
-> You don't have to use Init() every time you insert a record, it depends on your use-case. For example, if the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter. In both cases, you can use Init() to make sure that the record aligns with the other data in the table.
+> [!NOTE]  
+> You don't have to use the `Init()` method every time you insert a record, it depends on your use case. For example, if the values need to be refreshed with each iteration in a loop or if they are inserted through a parameter. In both cases, you can use the `Init()` method to make sure that the record aligns with the other data in the table.
 
 ## See Also
+
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
