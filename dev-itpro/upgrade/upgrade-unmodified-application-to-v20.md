@@ -2,7 +2,7 @@
 title: "Upgrading Version 15, 16, 17, or 18 Base Application to Version 20"
 description: Describes how to upgrade an unmodified Business Central 17, 18, or 19 to version 20
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/02/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,12 +13,16 @@ author: jswymer
 
 # Upgrading Microsoft System and Base Application to Version 20
 
-Use this scenario if you have one of the following versions that uses the Microsoft System and Base applications.
+Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that use the Microsoft System and Base applications.
 
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (version 19)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
+- 2021 release wave 2 (version 19)
+- 2021 release wave 1 (version 18)
+- 2020 release wave 2 (version 17)
+- 2020 release wave 1 (version 16)
+- 2019 release wave 2 (version 15)
 
+> [!IMPORTANT]
+> See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 20 is compatible with your current Business Central version.
 
 [![Upgrade on unmodified Business Central application.](../developer/media/bc20-upgrade-unmodified-app.png)](../developer/media/bc20-upgrade-unmodified-app.png#lightbox)  
 
@@ -60,7 +64,7 @@ $AddinsFolder = "The file path to the Add-ins folder of version 20 server instal
 
     For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md).
 
-2. Before you install version 20, it can be useful to create desktop shortcuts to the tools of the current version, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 20 tools.
+2. Before you install version 20, it can be useful to create desktop shortcuts to the tools of the current version, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)] because the Start menu items for these tools will be replaced with the version 20 tools.
 
 3. Install Business Central version 20 components.
 
@@ -271,8 +275,8 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
     ```powershell  
     Repair-NAVApp -ServerInstance $NewBcServerInstance -Name <extension name> -Version <extension name>
     ```
-    
-    For example, to recompile all extensions that are not published by Microsoft, you could run the following command:
+
+    For example, to recompile all extensions that aren't published by Microsoft, you could run the following command:
 
     ```powershell  
     Get-NAVAppInfo -ServerInstance $NewBcServerInstance | Where-Object {$_.Publisher -notlike 'Microsoft'} | Repair-NAVApp
