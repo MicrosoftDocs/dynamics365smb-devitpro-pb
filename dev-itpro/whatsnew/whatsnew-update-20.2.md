@@ -22,20 +22,18 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Feature changes  
 
-- [Add action on card and list pages to trigger a chosen flow from Business Central web client](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/action-group-run-chosen-instant-power-automate)
-- [Power Platform and Azure Logic Apps connector for Business Central online no longer in preview](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improvements-power-automate-power-apps-connector)
-- [Fraud prevention headers for clients in the UK](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/fraud-prevention-headers-clients-uk)
-- [Country/regional expansion in 20 new countries](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/planned-features#country-and-regional)
+- [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
+- [A single tile to go to Business Central]()
+- [Receive notifications in the Microsoft 365 Message center]()
+- [Updating only licensed users from Microsoft 365 runs faster and more efficiently]()
+
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|Mexico | CFDI Payment version 2.0 | Payment receiving will be updated related with the version 2.0. New fields are included to identify whether the payments for the operations covered by the voucher are subject to tax. A new section is included with a summary of the total amounts of the payments made expressed in national currency, as well as the taxes that are transferred. |
-| Spain | Posting Date or Document Date to be used as Operation Date | The user is now able to choose between Posting Date or Document Date, to be used as Operation Date in the XML sent via SII to the Tax Authorities. |
-| Denmark; W1 | Country code in the VAT Registration No. usage for Intrastat reporting | In Denmark companies need to use different VAT Registration No. models in Intrastat and Skat.dk (one with Country Code and another without it). To avoid issues for Stat.dk clients will use only value from VAT Registration No., but for intrastat clients will have additional configuration with the following options: VAT Reg. No., Country Code + VAT No., VAT No. without Country Code. This feature is available on W1. |
-| France | Intrastat FR new requirements for DEB 2022 | For France, Intrastat management implies to separate the declaration data for the statistical reporting and for the fiscal reporting (recapitulative statement of VAT), once for obligation level 1 and once for obligation level 4. |
-| Norway | Add support of the free text for each VAT return line | This is an improvement of the existing feature. Previously, Business Central only supported export of a list of the predefined texts in the field "VAT Note Code". Now the user can export the file with added free text for each VAT return line. |
+|W1 | New field 'Intrastat Partner Type' on Customer and Vendor cards | The Intrastat Partner Type field has replaced the Parter Type field in Intrastat reporting. Partner Type is used in SEPA to define the SEPA Direct Debit Scheme (Core or B2B). Intrastat Partner Type is used for Intrastat reporting only. This way, users can specify different values for the two fields if they need to. More details about setup [here](/dynamics365/business-central/finance-how-setup-report-intrastat). |
+| W1 | Improvement in creating Intrastat file for item with supplementary UOM and without weight | When the line in Intrastat has supplementary unit of measure, weight for the item is not necessary. Now users can create the file even if they don't have weight for the item on Intrastat line if this item uses supplementary unit of measure. |
 
 ## Release Plan  
 
@@ -54,25 +52,8 @@ Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central c
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
 **Business Central newsletter for partners**  
-Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
-
-**Updated documentation and samples related to Power Automate**  
-Documentation related to Power Automate integration and the new “Automate” feature has been updated in May 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
-
-**Discover the features for 2022 release wave 1**  
-Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).
+Starting June 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Upcoming Business Central Office Hours Calls**  
 Join us for the upcoming office hours call on “Introducing Shopify for Business Central” on June 14 and “Onboarding your customers to Business Central” on June 21 (Note: we will have two time slots, an early one and a later one for the two calls). Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
-**A new update to the Business Central mobile app for iOS and Android**  
-There is a new update for the Business Central mobile app (version 3.7) for [iOS](https://go.microsoft.com/fwlink/?LinkId=734847) and [Android](https://go.microsoft.com/fwlink/?LinkId=734849) available in respective app stores. This app – as before – handles Business Central online and on-premises and the update is required for on-premises customers running Business Central 2022 release wave 1.
-
-**The legacy Windows desktop app based on UWP technology only supports legacy on-premises Business Central**  
-Just an update that the Business Central desktop legacy UWP app version 3.6.3101 has been released to the Microsoft Store - and marked as a mandatory update for Windows users.
-
-- From now on users of Windows devices will only be able to use that legacy UWP app to connect to on-premises Business Central installations v19 or below. For v20 and later on-premises - see next point.  
-- On-premises users of Business Central v20 or later will be able to use the PWA app installed from the browser directly (see [aka.ms/BCPWA](https://aka.ms/bcpwa) for more).
-- All online Business Central users regardless of the version can use the new PWA app installed from the browser OR from the Microsoft store (again, see [aka.ms/BCPWA](https://aka.ms/bcpwa) for more).  
-
-It is recommended to switch to the PWA technology as this is where customers can benefit fully from all web client features.  
