@@ -1,9 +1,9 @@
 ---
-title: "How to Unpublish and Uninstall an Extension v2.0"
-description: "Description of the process of upublishing and uinstalling an extension"
+title: "How to Unpublish and Uninstall an Extension"
+description: "Description of the process of upublishing and uninstalling an extension"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,19 +34,28 @@ You can't synchronize in clean mode if any version of the extension is installed
  
 In production, this should primarily be done as a final cleanup step after all versions of an extension have been uninstalled and unpublished for good. During extension development, this can be useful in order to give the developer a "clean" environment when creating database schema related modifications (table extensions, tables). 
 -->
+
+> [!TIP]
+> 
+
 ## Uninstalling extensions
-You can uninstall an extension by using the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)] or from the client. 
 
-### To uninstall an extension by using [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)] 
+You can uninstall an extension by using the [!INCLUDE[adminshell](includes/adminshell.md)] or from the client. You can run the synchronizing in clean mode operation as part of the uninstall operation, instead of doing it after separately.
 
-1. Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
+> [!IMPORTANT]
+> - You can't uninistall an extension if any there are other installed extensions that are dependent on the extension. If you try, you'll get a message stating that there are dependent extensions and asking you to confirm whether you want to uninstall the extension and its dependents.
+> - When you choose to run the synchronizing in clean mode operation when uninstalling, the database schema and data associated with dependent extensions will also be removed.
+
+### To uninstall an extension by using [!INCLUDE[adminshell](includes/adminshell.md)] 
+
+1. Start the [!INCLUDE[adminshell](includes/adminshell.md)]. 
 
     For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview).
 2. To get a list of the extensions that are currently installed on a tenant, run the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) with the `Tenant` parameter set.
 
     This cmdlet is useful when you uninstall the extension because you must provide information about the extension, like its name and version. 
 
-    ```
+    ```powershell
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer -Tenant TenantID
     ```
 
@@ -56,43 +65,46 @@ You can uninstall an extension by using the [!INCLUDE[nav_shell_md](includes/nav
 
     The following example uninstalls an extension by using its extension package file path `.\MyExtension.app`. 
 
-    ```  
+    ```powershell  
     Uninstall-NAVApp -ServerInstance YourDynamicsNAVServer -Path '.\MyExtension.app'  
     ``` 
 
     The following example uninstalls an extension by using its name `My Extension` and version (in this case `1.0.0.0`):
 
-    ```  
+    ```powershell  
     Uninstall-NAVApp -ServerInstance YourDynamicsNAVServer -Name "My Extension" -Version 1.0.0.0
     ```  
 
     The following example combines the Get-NAVAppInfo and Uninstall-NAVApp cmdlets into a single command:
 
-    ```  
+    ```powershell  
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer -Name 'My Extension' -Version 1.0.0.0 | Uninstall-NAVApp
     ```  
 
+    If you want to run synchronizing in clean mode operation, include the `-ClearSchema` parameter.
+
 ### To uninstall an extension by using the client  
 
-1.  In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
+1. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
 
     In the **Extension Management** window, you can view the extensions that are installed on the tenant 
-2.  Choose an extension, and choose the **Uninstall** action.
+2. Choose an extension, and choose the **Uninstall** action.
 
+For more information, see [Uninstall an Extension](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension) in the business functionality help.
 
 ## Unpublishing extensions
-You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance by using the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)].
 
+You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_server_md.md)] instance by using the [!INCLUDE[adminshell](includes/adminshell.md)].
 
-1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
+1. Start the [!INCLUDE[adminshell](includes/adminshell.md)]. 
 
     For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview).
 
 2. To get a list of the extensions that are currently published on a tenant, run the [Get-NAVAppInfo cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/get-navappinfo) without the `Tenant` parameter.
-    
+
     This is useful because a server instance can have several published extensions. Unpublishing an extension requires that you provide specific information about the extension, like the name or version. 
 
-    ```
+    ```powershell
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer
     ```
 
@@ -100,41 +112,42 @@ You unpublish an extension on a [!INCLUDE[d365fin_server_md](includes/d365fin_se
 
     The following example unpublishes an extension by using its extension package file path `.\MyExtension.app`. 
 
-    ```  
+    ```powershell  
     Unpublish-NAVApp -ServerInstance YourDynamicsNAVServer -Path '.\MyExtension.app'  
     ``` 
     
     The following example unpublishes an extension by using its name `My Extension` and version (in this case `1.0.0.0`):
 
-    ```  
+    ```powershell  
     Unpublish-NAVApp -ServerInstance YourDynamicsNAVServer -Name "My Extension" -Version 1.0.0.0
     ```  
 
     The following example combines the Get-NAVAppInfo and Unpublish-NAVApp cmdlets into a single command:
 
-    ```  
+    ```powershell  
     Get-NAVAppInfo -ServerInstance YourDynamicsNAVServer -Name 'My Extension' -Version 1.0.0.0 | Unpublish-NAVApp
     ```
+
 ### To unpublish an extension by using the client  
 
-
-1.  In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
+1. In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], use search to open the **Extension Management** page.
 
     In the **Extension Management** window, you can view the extensions that are installed on the tenant. 
-2.  Choose an extension where **Published As** is *not set to* **Global**, and choose the **Unpublish** action.
+2. Choose an extension where **Published As** is *not set to* **Global**, and choose the **Unpublish** action.
 
 ## Synchronizing (clean mode) an extension after uninstallation
 
-1.  Start the [!INCLUDE[nav_shell_md](includes/nav_shell_md.md)]. 
+1. Start the [!INCLUDE[adminshell](includes/adminshell.md)]. 
 
     For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview).
-2. Run the [Sync-NAVAPP](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet with the `-Mode`parameter set to `Clean`.
+2.Run the [Sync-NAVAPP](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp) cmdlet with the `-Mode`parameter set to `Clean`.
 
-    ```
+    ```powershell
     Sync-NAVApp -ServerInstance YourDynamicsNAVServer -Tenant 'TenantID' -Name 'My Extension' -Mode Clean
     ```
 
-## See Also  
+## See Also
+
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Analyzing Extension Lifecycle Telemetry](../administration/telemetry-extension-lifecycle-trace.md)  

@@ -120,6 +120,7 @@
 ### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
 ### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
+### [Trials and Subscriptions](administration/trials-subscriptions.md)
 ### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
 ### [Version Numbers in Business Central](administration/version-numbers.md)
 ### [Operational Limits](administration/operational-limits-online.md)
@@ -943,7 +944,6 @@
 ### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
 ### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
 ### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
-### [Branching Strategies](al-go/algo-branching-strategy.md)
 
 
 ## Troubleshooting
@@ -4138,7 +4138,7 @@
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v20.md)
 ##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v20.md)
-##### [From Versions 17, 18, or 19 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v20.md)
+##### [From Version 15 and Later](upgrade/upgrade-unmodified-application-to-v20.md)
 ##### Related Articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
 ###### Migrating Tables and Fields Between Extensions
@@ -4158,7 +4158,7 @@
 #### Application and Data
 ##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v19.md)
 ##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v19.md)
-##### [From Versions 16, 17, or 18 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v19.md)
+##### [From Versions 15 and Later](upgrade/upgrade-unmodified-application-to-v19.md)
 ##### Related Articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
 ###### Migrating Tables and Fields Between Extensions

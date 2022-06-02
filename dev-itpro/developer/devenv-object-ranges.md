@@ -7,12 +7,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 05/23/2022
 ---
 
 # Object Ranges in [!INCLUDE[prod_short](includes/prod_short.md)]
 
-When you develop an app for [!INCLUDE [prod_short](includes/prod_short.md)] online, you must request an object range in terms of licensing. Developing for [!INCLUDE[prod_short](includes/prod_short.md)] is done using Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)].  
+When you develop an app for [!INCLUDE [prod_short](includes/prod_short.md)] online, you must request an object range in terms of licensing. Development for [!INCLUDE[prod_short](includes/prod_short.md)] is done using Visual Studio Code with the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)].  
 
 [!INCLUDE [object-ranges](includes/object-ranges.md)]
 
@@ -26,13 +26,13 @@ This range is assigned to [!INCLUDE[prod_short](includes/prod_short.md)] base ap
 
 ## 50,000-99,999
 
-This range is for customizations, and for test purposes. For [!INCLUDE [prod_short](includes/prod_short.md)] online, a partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop this either by using a sandbox tenant or by obtaining a Docker image. Once the development is done, the extension can be deployed to the individual tenant.
+This range is for customizations, and for test purposes. For [!INCLUDE [prod_short](includes/prod_short.md)] online, a partner can develop an extension tailored to the individual tenant to fit the needs. The partner will develop the extension either by using a sandbox tenant or by obtaining a Docker image. Once the development is done, the extension can be deployed to the individual tenant.
 
-Also, use this range as part of training and similar, such as if you are using a sandbox tenant or a build of [!INCLUDE[prod_short](includes/prod_short.md)] on Docker.
+Also, use this range as part of training and similar, such as if you're using a sandbox tenant or a build of [!INCLUDE[prod_short](includes/prod_short.md)] on Docker.
 
 ## 100,000-999,999
 
-The objects in this range are mainly designed when the Microsoft team localizes [!INCLUDE[prod_short](includes/prod_short.md)] for a specific country or region. These objects cannot be used by partners.
+The objects in this range are designed when the Microsoft team localizes [!INCLUDE[prod_short](includes/prod_short.md)] for a specific country or region. These objects can't be used by partners.
 
 ## 1,000,000-69,999,999
 
