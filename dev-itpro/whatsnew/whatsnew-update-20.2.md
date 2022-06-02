@@ -3,7 +3,7 @@ title: "Update 20.2 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 20.2 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: a-emniel
 ms.custom: na
-ms.date: 05/31/2022
+ms.date: 06/02/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,10 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 ## Feature changes  
 
 - [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
-- [A single tile to go to Business Central]()
-- [Receive notifications in the Microsoft 365 Message center]()
-- [Updating only licensed users from Microsoft 365 runs faster and more efficiently]()
-
+- [A single tile to go to Business Central](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/single-tile-go-business-central)
+- [Receive notifications in the Microsoft 365 Message center](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/receive-notifications-365-message-center)
+- [Updating only licensed users from Microsoft 365 runs faster and more efficiently](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/updating-only-licensed-users-365-runs-faster-more-efficiently)
+- - 
 
 ## Localization updates
 
@@ -46,7 +46,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **General availability of the Shopify Connector**  
-Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central customers create a better online shopping experience. With update 20.1 it will be possible for trial users to try out the Shopify connector, which will be available for Business Central customers later in May 2022, releasing on AppSource and Shopify App Store. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
+Last October, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for the online version of Business Central at no extra cost. Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
@@ -57,3 +57,5 @@ Starting June 2022, we're doing bi-monthly newsletter for Business Central partn
 **Upcoming Business Central Office Hours Calls**  
 Join us for the upcoming office hours call on “Introducing Shopify for Business Central” on June 14 and “Onboarding your customers to Business Central” on June 21 (Note: we will have two time slots, an early one and a later one for the two calls). Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
+**Business Central Launch Event**  
+If you haven't watched them yet, remember that you still have access to a keynote and 20+ sessions about what's new in Business Central 2022 release wave 1. You'll hear from product leaders as they share with you the latest innovations and capabilities to help you confidently move to the cloud and unlock the insights needed to adapt faster, work smarter, and perform better. Whether you are a business professional, developer, or consultant at a Business Central partner, get ready to up level your game and drive business transformation. Register on [aka.ms/BCLE](https://aka.ms/BCLE)
