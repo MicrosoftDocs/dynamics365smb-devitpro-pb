@@ -33,7 +33,7 @@ For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/i
 > [!TIP]
 > Always include the domain or the Azure Active Directory ID of the customer in the URL when you log in as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
 
-[!CAUTION]
+> [!CAUTION]
 > [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 ## Managing delegated permissions as a partner

@@ -28,7 +28,7 @@ In order to be able to service [!INCLUDE [prod_short](../includes/prod_short.md)
 
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
-[!CAUTION]
+> [!CAUTION]
 > [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
