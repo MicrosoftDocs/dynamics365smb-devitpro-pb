@@ -23,7 +23,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 ## Feature changes  
 
 - [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
-- [A single tile to go to Business Central](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/single-tile-go-business-central)
 - [Receive notifications in the Microsoft 365 Message center](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/receive-notifications-365-message-center)
 - [Updating only licensed users from Microsoft 365 runs faster and more efficiently](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/updating-only-licensed-users-365-runs-faster-more-efficiently)
 - Extensible calculation and posting currency exchange rate differences in banking transactions  
@@ -48,6 +47,9 @@ Please note that new customers will automatically get the latest builds of Busin
 
 **General availability of the Shopify Connector**  
 Last October, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for the online version of Business Central at no extra cost. Existing customers that have been upgraded to 20.1 automatically get the Shopify extension installed. If they do not need the app, it can be uninstalled by following [this guidance](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension). Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
+
+**A single tile to go to Business Central**  
+We're simplifying access to Business Central online by transitioning to a single app tile starting in June 2022. Learn more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/single-tile-go-business-central).
 
 **Action required by July 2022 for Excel Add-in**  
 Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Azure Active Directory (Azure AD) configuration so that users can continue using the add-in. This impacts all Business Central on premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
