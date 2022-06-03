@@ -37,7 +37,7 @@ finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)",
 > [!TIP]  
 > The finsql.exe includes several parameters that you can set to suit your environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 
 
-This is a lengthy operation. When you run the command, the console returns to an empty command prompt, and doesn't display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
+This is a lengthy operation. When you run the command, the console returns to an empty command prompt, and doesn't display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols won't be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
     
 When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred.
 

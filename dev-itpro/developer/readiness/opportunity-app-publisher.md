@@ -25,14 +25,14 @@ In November 2020, Microsoft AppSource had more than 3 million monthly active use
 
 ## Go-to Market scenarios
 
-As an AppSource publisher, you can focus on the following two scenarios with [!INCLUDE[prod_short](includes/prod_short.md)] and Microsoft AppSource:  
+As an AppSource publisher, you can focus on the following two scenarios with [!INCLUDE[prod_short](../includes/prod_short.md)] and Microsoft AppSource:  
 
 - Connect
 - Add-on
 
 ### Connect
 
-Connect your existing online service with the [!INCLUDE[prod_short](includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on AppSource:  
+Connect your existing online service with the [!INCLUDE[prod_short](../includes/prod_short.md)] through a powerful API. Following are some examples of existing connect apps that you can find on AppSource:  
 
 - [Square payments](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.squareinc1581374005853%7CAID.square-payments%7CPAPPID.313d5c68-0d92-4f43-b470-ab5857ecf9c6), which allows you take payments with a Square terminal.  
 
@@ -44,11 +44,11 @@ Learn more about the API to build connect apps: [Getting Started Developing Conn
 
 ### Add-on
 
-You can extend the default capabilities in [!INCLUDE[prod_short](includes/prod_short.md)] to add extra productivity features or industry functionality to fit the needs of your customer base. The possibilities are plentiful.  
+You can extend the default capabilities in [!INCLUDE[prod_short](../includes/prod_short.md)] to add extra productivity features or industry functionality to fit the needs of your customer base. The possibilities are plentiful.  
 
-In countries, where [!INCLUDE[prod_short](includes/prod_short.md)] isn't localized by Microsoft, you can extend [!INCLUDE[prod_short](includes/prod_short.md)] based on local requirements to respond to the regulatory or competitive needs of that market.  
+In countries, where [!INCLUDE[prod_short](../includes/prod_short.md)] isn't localized by Microsoft, you can extend [!INCLUDE[prod_short](../includes/prod_short.md)] based on local requirements to respond to the regulatory or competitive needs of that market.  
 
-Here are a few examples of some apps that extend [!INCLUDE[prod_short](includes/prod_short.md)]:
+Here are a few examples of some apps that extend [!INCLUDE[prod_short](../includes/prod_short.md)]:
 
 - [E-Ship and E-Receive from Lanham Associates](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.lanhamassociates%7CAID.e-ship_and_e-receive%7CPAPPID.f8750ab4-1d72-455d-b773-5b487a0ac106?tab=Overview), which extends warehouse management with barcoding and labeling, scanning functionality, and interfaces with carriers and weigh scales.
 
