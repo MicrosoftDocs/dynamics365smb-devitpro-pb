@@ -1,8 +1,8 @@
 ---
-title: "Getting Started with C/SIDE and AL Side-By-Side for On-Premises"
+title: "Get Started with C/SIDE and AL Side-By-Side for On-Premises"
 description: "Description of how to get started with the new development environment along with C/SIDE."
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 06/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,8 +11,8 @@ ms.author: solsen
 ms.custom: intro-internal
 ---
 
-# Getting Started with C/SIDE and AL for On-Premises
-To get started with a mixed development environment of C/SIDE and AL, you must follow the steps below. 
+# Get Started with C/SIDE and AL for On-Premises
+To get started with a mixed development environment of C/SIDE and AL, you must follow the steps below.
 
 ## Steps to install Business Central on-premises with C/SIDE and AL development environment
 

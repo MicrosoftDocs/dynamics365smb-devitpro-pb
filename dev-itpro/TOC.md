@@ -350,9 +350,9 @@
 #### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
 ### Getting Started with AL for On-Premises
-#### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
-#### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
+#### [Get Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
+#### [Run C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
+#### [Create Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
 ## Development Environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configuring the Development Environment

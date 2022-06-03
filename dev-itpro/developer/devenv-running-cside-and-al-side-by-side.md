@@ -3,7 +3,7 @@ title: "Running C/SIDE and AL Side-by-Side"
 description: "Description of how you can run both development environments side-by-side."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/13/2021
+ms.date: 06/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Running C/SIDE and AL Side-by-Side
-[!INCLUDE[prod_short](../includes/prod_short.md)] on-premises supports development using both C/SIDE and AL, as well as Designer side-by-side. When new objects are added or changed in C/SIDE these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
+# Run C/SIDE and AL Side-by-Side
+[!INCLUDE[prod_short](../includes/prod_short.md)] on-premises supports development using C/SIDE, AL, and Designer side-by-side. When new objects are added or changed in C/SIDE, these changes must be reflected in the symbol download in Visual Studio Code using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To enable this reflection, a command and argument called `generatesymbolreference` has been added to finsql.exe and you can run it as illustrated below. 
 
-## Get started generating symbols and compiling all objects
+## Generate symbols and compile all objects
 
-Open a command prompt **Run as administrator** and change to the directory where the finsql.exe file has been installed as part of Dynamics NAV Development Environment.
+Open a command prompt, **Run as administrator** and change to the directory where the finsql.exe file has been installed as part of Dynamics NAV Development Environment.
 
 Use the `generatesymbolreference` command specified with the database and server name to add symbol references to the **Object Metadata** table for the specified database. 
 
@@ -35,9 +35,9 @@ finsql.exe Command=generatesymbolreference, Database="Demo Database NAV (11-0)",
 <br>
 
 > [!TIP]  
-> The finsql.exe includes several parameters that you can set to suit you environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 
+> The finsql.exe includes several parameters that you can set to suit your environment. For more information, see [Using the Development Environment from the Command Prompt](../cside/cside-command-prompt.md). 
 
-This is a lengthy operation. When you run the command, the console returns to an empty command prompt, and does not display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
+This is a lengthy operation. When you run the command, the console returns to an empty command prompt, and doesn't display or provide any indication about the status of the run. However, the finsql.exe may still be running in the background. It can take several minutes for the run to complete, and the symbols will not be generated until such time. You can see whether the finsql.exe is still running by using Task Manager and looking on the **Details** tab for **finsql.exe**.
     
 When the process ends, a file named **navcommandresult.txt** is saved to the [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] installation folder. If the command succeeded, the file will contain text like `[0] [06/12/17 14:36:17] The command completed successfully in '177' seconds.` If the command failed, another file named **naverrorlog.txt** will be generated. This file contains details about the error(s) that occurred.
 
@@ -60,10 +60,11 @@ To update the symbols for a set of objects from the UI, start C/SIDE with the `g
 finsql.exe generatesymbolreference=yes
 ```
 
-This flag is also a part of the `Compile-NavApplicationObject` PowerShell command and you can use it to compile and generate symbols on a filtered set of application objects through PowerShell. This alternative should be considered if you do not work with the UI in C/SIDE. For more information about it, see [Compile-NavApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-ps).
+This flag is also a part of the `Compile-NavApplicationObject` PowerShell command and you can use it to compile and generate symbols on a filtered set of application objects through PowerShell. This alternative should be considered if you don't work with the UI in C/SIDE. For more information about it, see [Compile-NavApplicationObject](/powershell/module/microsoft.dynamics.nav.ide/compile-navapplicationobject?view=businesscentral-ps).
 
 
-## Business Central on-premises server setting
+## [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises server setting
+
 In addition to the symbol generation setting you have chosen above, you must enable the [!INCLUDE[prod_short](../includes/prod_short.md)] on-premises server setting. 
 
 1. Go to **[!INCLUDE[prod_short](../includes/prod_short.md)] Administration**.
@@ -71,7 +72,7 @@ In addition to the symbol generation setting you have chosen above, you must ena
 3. Choose the **Edit** button, and then select the **Enable loading application symbols at server startup** checkbox.
 
 > [!IMPORTANT]  
-> This setting must be enabled to allow any symbol generation. If the setting is not enabled, the `generatesymbolreference` setting does not have any effect.
+> This setting must be enabled to allow any symbol generation. If the setting is not enabled, the `generatesymbolreference` setting doesn't have any effect.
 
 ## See Also
 [Developing Extensions](devenv-dev-overview.md)  
