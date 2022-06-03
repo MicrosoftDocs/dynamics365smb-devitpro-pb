@@ -74,7 +74,7 @@ If you need help formulating a positioning statement, try the value proposition 
 |-|You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more.|-|
 |-| Your questions should be intriguing and customer-centric.|-|
 |-|In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest.|-|
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.|
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions.|-|
 |Messaging (Address their pains)|Pain is a strong motivator of action. |-| 
 |-|- Identify 1-3 key sources of the client’s most prominent pain early on the page.|-|
 |-|- Call out the fears that are likely to be holding them back.|-|
@@ -89,7 +89,7 @@ If you need help formulating a positioning statement, try the value proposition 
 |-|Describe the most significant benefits and rewards that your prospect will realize after purchase.|- For example, “Save time and money (benefits) by having a system that does all the tracking and calculations for you (features).”|
 |-|- Don’t only list features and app functionality, start with the benefit first, then you can follow with the features.|-|
 |-|- Paint a picture of a possible experience the prospect will immediately desire.|-|
-|-| Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply.|
+|-| Clearly articulate a compelling desired outcome |- If possible, use industry-specific language and vocabulary to resonate with your prospect deeply.|-|
 |-|- Choose a particular persona to speak to directly.|-|
 |-|- Engage prospects by speaking directly to them using first person “you” language.|-|
 
@@ -127,9 +127,9 @@ Button text should use benefit language rather than descriptive language.
 - For an example you can provide a quick online self-assessment, a top-10 tips blog post, and much more.
 Visual elements
 
-| Element   | Description | Example |
-|-----------|-------------|---|
-|**Pictures (Differentiation comparison images)**| Show them, don’t tell them.|Show the before and after state.|
+| Element   | Description |
+|-----------|-------------|
+|**Pictures (Differentiation comparison images)**| Show them, don’t tell them|Show the before and after state.|
 
 - This is a visual image of how your prospects do things now versus how they will be able to do it in the future.
 - You are not telling them but showing them using a visual.
