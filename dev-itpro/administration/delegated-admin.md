@@ -33,21 +33,22 @@ For certain tasks, you can access the [!INCLUDE [prodadmincenter](../developer/i
 > [!TIP]
 > Always include the domain or the Azure Active Directory ID of the customer in the URL when you log in as a *delegated admin*, such as in `https://businesscentral.dynamics.com/contoso.com/admin`. This way, you always know exactly which customer you are trying to access.
 
-[!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
+[!CAUTION]
+> [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 ## Managing delegated permissions as a partner
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 
-At the partner company, we encourage you to keep track of which user names your technicians and consultants have in your customers' Business Central tenants. For example, you have a consultant who is an admin with GDAP in your partner company's 5 customers' Business Central. Your consultant can see which customers they have GDAP access to in the **Granular administration** list in the **Administer** page in Partner Center. But as an organization, you can also maintain a list of names and IDs. 
+At the partner company, we encourage you to keep track of which user names your technicians and consultants have in your customers' Business Central tenants. For example, you have a consultant who is an admin with GDAP in your partner company's five customers' Business Central. Your consultant can see which customers they have GDAP access to in the **Granular administration** list in the **Administer** page in Partner Center. But as an organization, you can also maintain a list of names and IDs. 
 
-If a customer removes delegated permissions from you, you can still manage their subscription from the Partner Center, such as adding or removing licenses for their subscription, but you will no longer be able to log into and manage their Business Central environment, Azure AD, and other services. You will also not be able to manage their users (add/remove/assign licenses) from the **Customer** page in the Partner Center.  
+If a customer removes delegated permissions from you, you can still manage their subscription from the Partner Center, such as adding or removing licenses for their subscription, but you'll no longer be able to log into and manage their Business Central environment, Azure AD, and other services. You'll also not be able to manage their users (add/remove/assign licenses) from the **Customer** page in the Partner Center.  
 
 ### Restricted access to Business Central as delegated administrator
 
-When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. However, because you are not registered as a regular user, there are certain tasks that you cannot do.
+When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. However, because you aren't registered as a regular user, there are certain tasks that you can't do.
 
-The following tasks are *not* available to the delegated administrator:
+The following tasks aren't* available to the delegated administrator:
 
 - Run scheduled tasks in the job queue.  
 
@@ -73,14 +74,14 @@ The following tasks are *not* available to the delegated administrator:
 
 ## Managing delegated permissions as an internal administrator
 
-As a Microsoft customer organization, you can have multiple partners registered as your resellers. It is not unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], for example. However, as soon as the delegated administration right is granted in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center), you cannot restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
+As a Microsoft customer organization, you can have multiple partners registered as your resellers. It isn't unusual for a single organization to use one partner as the delegated admin for their Microsoft 365 subscription and another for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], for example. However, as soon as the delegated administration right is granted in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center), you can't restrict partner access to a specific service only. The delegated admin access applies to all Microsoft services that your organization subscribes to.  
 
 > [!TIP]
 > If the partner has requested access to your tenant using *granular delegated admin privileges*, then you can see the relevant users in the **Users** list in [!INCLUDE [prod_short](../includes/prod_short.md)], and you can see them in the **Sign in** log in your Microsoft 365 admin center. With granular delegated admin privileges, the partner typically does not have global admin access to your tenant but only access to Dynamics 365. You will not be able to see the name of the partner user, but you can see an ID and the name of their company.
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 
-If you do not need delegated admin help continuously, you can restrict access for the partner users into your environment. There are two approaches that you can use to restrict delegated admin access to a Business Center environment:  
+If you don't need delegated admin help continuously, you can restrict access for the partner users into your environment. There are two approaches that you can use to restrict delegated admin access to a Business Center environment:  
 
 - Disable a specific delegated admin user within the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. For more information, see [How to remove a user's access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system).  
 - Revoke delegated administration rights from all partner users at once in the Microsoft 365 admin center, without breaking the reseller relationship with the partner.  
@@ -92,7 +93,7 @@ If you then want to allow access to your environment again, you can ask the part
 For more information, see [Customers delegate administration privileges to partners](/partner-center/customers_revoke_admin_privileges) in the Partner Center content.
 
 > [!NOTE]
-> If you invite a partner user to your Microsoft 365 tenant as a guest user, they cannot access [!INCLUDE [prod_short](../includes/prod_short.md)]. But if they also have granular delegated admin privileges, they can access your [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and manage your environments there. We recommend that you do not invite partner users to your tenant as guests but ask them to set up granular delegated admin privileges to your tenant, using the *Dynamics 365 administrator* role.
+> [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 ## See also
 

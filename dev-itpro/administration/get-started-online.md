@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/28/2021
+ms.date: 06/03/2022
 ms.author: edupont
 ms.custom: intro-internal
 ---
@@ -28,7 +28,8 @@ In order to be able to service [!INCLUDE [prod_short](../includes/prod_short.md)
 
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
-[!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
+[!CAUTION]
+> [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
