@@ -69,7 +69,7 @@ In addition to the symbol generation setting you have chosen above, you must ena
 
 1. Go to **[!INCLUDE[prod_short](../includes/prod_short.md)] Administration**.
 2. Scroll to the **Development** tab and expand the tab.
-3. Choose the **Edit** button, and then select the **Enable loading application symbols at server startup** checkbox.
+3. Choose the **Edit** button, and then choose the **Enable loading application symbols at server startup** checkbox.
 
 > [!IMPORTANT]  
 > This setting must be enabled to allow any symbol generation. If the setting is not enabled, the `generatesymbolreference` setting doesn't have any effect.

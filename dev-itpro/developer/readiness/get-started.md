@@ -11,7 +11,7 @@ ms.custom: intro-internal
 
 # Get Started with Building Apps
 
-[!INCLUDE [prod_long](../includes/prod_long.md)] is a business management solution that helps companies connect their services and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you've the convenience to quickly tailor, extend, and build applications so that they fit your specific needs with little to no code development.
+[!INCLUDE [prod_long](../includes/prod_long.md)] is a business management solution that helps companies connect their services and operations to streamline business processes, improve customer interactions and make better decisions. With this modern business platform, you have the convenience to quickly tailor, extend, and build applications so that they fit your specific needs with little to no code development.
 
 Build a business app for a specific industry, process, or department such as HR, finance, marketing or operations. Then, publish your app to [the Microsoft commercial marketplace](https://appsource.microsoft.com/partners), where customers can find your app, try it and get in touch with you. For more information, see [What is the Microsoft commercial marketplace?](/azure/marketplace/overview).  
 
@@ -37,7 +37,7 @@ For more information, see [Partner Center Account](/partner-center/partner-cente
 
 To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer and have a unique development license file with a specific object range.
 
-To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must first have access to PartnerSource Business Center (PSBC). You've access to PSBC if you've one of the following agreements:
+To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
 
 - [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
 
@@ -92,7 +92,7 @@ You must have the following prerequisites to register on Microsoft Collaborate:
 - Azure Active Directory (Azure AD).
 
   > [!NOTE]
-  > If you've Microsoft 365, then your company most likely has Azure AD.
+  > If you have Microsoft 365, then your company most likely has Azure AD.
 
 - Azure AD Global Administrator permission
 
@@ -111,15 +111,15 @@ To add coworkers:
 
 1. Sign in to Microsoft Collaborate with your Global Administrator account at [aka.ms/Collaborate](https://aka.ms/Collaborate).
 
-2. Choose the settings :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon."::: icon in the top-right corner of the page,  select on account settings, and choose **user management**.
+2. Choose the settings :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon."::: icon in the top-right corner of the page,  got to on account settings, and choose **user management**.
 
-3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for the user(s) that you want to add to Collaborate. To add them, you need to select them from the menu, and then select the grey **ADD SELECTED** button.
+3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for the user(s) that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button.
 
-4. You've successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
+4. You have successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 ### Step 4 B: Getting access to the available builds and engagements
 
-Once you've successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
+Once you have successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
 
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|

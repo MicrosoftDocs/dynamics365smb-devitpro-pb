@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/27/2022
+ms.date: 06/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
