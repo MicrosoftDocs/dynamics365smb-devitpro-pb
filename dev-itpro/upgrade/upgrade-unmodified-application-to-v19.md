@@ -13,11 +13,15 @@ author: jswymer
 
 # Upgrading Microsoft System and Base Application to Version 19
 
-Use this scenario if you have one of the following versions that uses the Microsoft System and Base applications.
+Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that uses the Microsoft System and Base applications.
 
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
+- 2021 release wave 1 (version 18)
+- 2020 release wave 2 (version 17)
+- 2020 release wave 1 (version 16)
+- 2019 release wave 2 (version 15)
+
+> [!IMPORTANT]
+> See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 19 is compatible with your current Business Central version.
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc19-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 

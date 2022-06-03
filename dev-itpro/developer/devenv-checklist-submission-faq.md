@@ -95,10 +95,7 @@ If you receive an error with the diagnostic code `AVS0107` and a message similar
 
 At this stage, your extensions are validated to assess whether they meet the requirements specified in the [Technical Validation Checklist](devenv-checklist-submission.md).
 
-If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started.
-
-> [!NOTE]
-> A lot of information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. For more information, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+If this stage failed with an error message similar to `The validation of the submission failed for X out of Y tasks`, you must investigate what has caused the error. If you are using Azure Application Insights, information about the validation results are logged in Azure Application Insights. You can also use this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328) in order to get started. If you are experiencing issues with Azure Application Insights, refer to the dedicated section below.
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
 
@@ -126,6 +123,29 @@ If this stage failed with the following error message `Automated upload to Busin
 ### My app failed at another stage, what do I do next?
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
+
+## Questions about Azure Application Insights usage during AppSource submissions
+
+### How do I enable Application Insights telemetry for my submissions?
+
+To enable Application Insights signals for your submssions, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
+
+### I do not see any signals in the resource specified for my extension, what do I do next?
+
+Here's a list of steps that you can follow to troubleshoot this issue:
+
+1. Validate that the Application Insights resource queried is the same one as specified in the manifest (app.json) of your extension.
+2. Validate that the time range when running the query covers the time of the submission.
+3. If you are using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it is more reliable. Make sure to use the full connection string from your Azure Application Resource.
+4. If you are using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you are using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. For more information, see [Connection strings](/azure/azure-monitor/app/sdk-connection-string)
+5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. For more information, see [Sampling in Application Insights](/azure/azure-monitor/app/sampling). 
+
+### I can see some signals in Application Insights, but I cannot find why my submission failed, what do I do next?
+
+A lot of information is provided in the custom dimensions of the signals. The validation errors can generally be found for the signals with eventId `LC0034`. For more information about the signals emitted during the technical validation of AppSource submission, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+
+> [!NOTE]
+> Instead of writing your own queries, we recommend using the executable Azure Data Studio [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). This guide contains queries that will process the signals for your submission and extract the important information.
 
 ## Questions about developing and maintaining AppSource apps
 

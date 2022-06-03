@@ -45,11 +45,11 @@ Any result set that is returned from a call to the Find methods discussed in the
   
 The following code shows how records are most efficiently retrieved. **FindSet** is the most efficient method to use because this example reads all records.  
   
-```  
-if FindSet then  
-  repeat  
-    // Insert statements to repeat.  
-  until Next = 0;  
+```AL  
+if FindSet() then  
+    repeat  
+        // Insert statements to repeat.  
+    until Next() = 0;  
 ```  
   
 ## <a name="calc"></a>CalcFields, CalcSums, and Count  
@@ -70,52 +70,55 @@ In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], SIFT indexes can b
 
 It is a common task to retrieve data and request calculation of associated FlowFields. The following example traverses customer records, calculates the balance, and marks the customer as blocked if the customer exceeds the maximum credit limit. **Note:** the Customer record and associated fields are *imaginary* in the following examples.  
   
-```  
-if Customer.FindSet() then repeat  
-  Customer.CalcFields(Customer.Balance)  
-  if (Customer.Balance > MaxCreditLimit) then begin  
-    Customer.Blocked := true;   
-    Customer.Modify();  
-  end  
-  else if (Customer.Balance > LargeCredit) then begin 
-    Customer.Caution := true;  
-    Customer.Modify();   
-  end;   
-until Customer.Next = 0;  
+```AL  
+if Customer.FindSet() then 
+    repeat  
+        Customer.CalcFields(Balance);  
+        if Customer.Balance > MaxCreditLimit then begin  
+            Customer.Blocked := true;   
+            Customer.Modify();  
+        end else 
+            if Customer.Balance > LargeCredit then begin 
+                Customer.Caution := true;  
+                Customer.Modify();   
+            end;   
+    until Customer.Next() = 0;  
 ```  
   
 In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], you can do this much faster. First, we set a filter on the customer. This could also be done in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2009, but behind the scenes the same code as mentioned earlier would be executed. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], setting a filter on a record is translated into a single SQL statement.  
   
-```  
-Customer.SetFilter(Customer.Balance,’>%1’, LargeCredit);   
-if Customer.FindSet() then repeat  
-  Customer.CalcFields(Customer.Balance)  
-  if (Customer.Balance > MaxCreditLimit) then begin   
-    Customer.Blocked := true;   
-    Customer.Modify();   
-  end   
-  else if (Customer.Balance > LargeCredit) then begin   
-    Customer.Caution := true;   
-    Customer.Modify();   
-  end;   
-until Customer.Next = 0;   
+```AL  
+Customer.SetFilter(Balance, '>%1' , LargeCredit);   
+if Customer.FindSet() then 
+    repeat  
+        Customer.CalcFields(Balance);  
+        if Customer.Balance > MaxCreditLimit then begin   
+            Customer.Blocked := true;   
+            Customer.Modify();   
+        end else 
+            if Customer.Balance > LargeCredit then begin   
+                Customer.Caution := true;   
+                Customer.Modify();   
+            end;   
+    until Customer.Next() = 0;   
 ```  
   
 In the previous example, an extra call to CalcFields still must be issued for the code to be able to check the value of Customer.Balance. In [!INCLUDE[prod_long](../developer/includes/prod_long.md)], you can optimize this further by using the new **SetAutoCalcFields** method.  
   
-```  
-Customer.SetFilter(Customer.Balance,’>%1’, LargeCredit);   
-Customer.SetAutoCalcFields(Customer.Balance)   
-if Customer.FindSet() then repeat   
-  if (Customer.Balance > MaxCreditLimit) then begin   
-    Customer.Blocked := true;   
-    Customer.Modify();   
-  end   
-  else if (Customer.Balance > LargeCredit) then begin   
-    Customer.Caution := true;   
-    Customer.Modify();   
-  end;   
-until Customer.Next = 0;  
+```AL  
+Customer.SetFilter(Balance, '>%1', LargeCredit);   
+Customer.SetAutoCalcFields(Balance)   
+if Customer.FindSet() then 
+    repeat   
+        if Customer.Balance > MaxCreditLimit then begin   
+            Customer.Blocked := true;   
+            Customer.Modify();   
+        end else 
+            if Customer.Balance > LargeCredit then begin   
+                Customer.Caution := true;   
+                Customer.Modify();   
+            end;   
+    until Customer.Next() = 0;  
 ```  
   
 ## Insert, Modify, Delete, and LockTable
@@ -126,40 +129,40 @@ Cloning a record before a **Modify** or **Delete** operation issues an extra SQL
 
 The following code samples will lead to a bad performance, since they will issue an extra SQL statement per record in the table.
 
-```
-if (MyTable.FindSet()) then
-    repeat begin
+```AL
+if MyTable.FindSet() then
+    repeat
         MyTableCopy.Copy(MyTable);
         // ...
         MyTableCopy.Modify(); // or .Delete();
-    end until MyTable.Next() = 0;
+    until MyTable.Next() = 0;
 ```
 
-```
-if (MyTable.FindSet()) then
-    repeat begin
+```AL
+if MyTable.FindSet() then
+    repeat
         RecRef.GetTable(MyTable);
         // ...
         RecRef.Modify(); // or .Delete();
-    end until MyTable.Next() = 0;
+    until MyTable.Next() = 0;
 ```
 
 Instead, you should do the following, which only requires an extra SQL statement:
 
-```
+```AL
 RecRef.Open(Database::"My Table");
-if (RecRef.FindSet()) then
-    repeat begin
+if RecRef.FindSet() then
+    repeat
         // ...
         RecRef.Modify(); // or .Delete();
-    end until RecRef.Next() = 0;
+    until RecRef.Next() = 0;
 ```
 
-```
-if (MyTable.FindSet()) then
-  repeat begin
-      MyTable.Modify(); // or .Delete();
-  end until MyTable.Next() = 0;
+```AL
+if MyTable.FindSet() then
+    repeat
+        MyTable.Modify(); // or .Delete();
+    until MyTable.Next() = 0;
 ```
 
 The **LockTable** method does not require any separate SQL statements. It will cause any subsequent reading from any tables to be done with an update lock. For more information, see [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md). 
