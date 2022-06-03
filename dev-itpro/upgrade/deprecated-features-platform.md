@@ -26,6 +26,15 @@ On 31 March 2025, technical support for instrumentation key–based global inges
 |Removed | Support for using an instrumentation key to setup telemetry for Business Central environments or apps will be removed in the 2023 release wave 1 (version 22.0). Please use the Azure Applications Insights connection string instead. |
 
 
+### Running the Business Central web server on a different machine than the Business Central server
+
+The following configuration option will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Support for running the Business Central web server on a different machine than the Business Central server is no longer a supported configuration. This capability was sometimes needed for a deployment using the Business Central Windows client. |
+
+
 ## Changes in 2022 release wave 2 (version 21.0)
 
 ### WS-Federation with Azure Active Directory authentication
