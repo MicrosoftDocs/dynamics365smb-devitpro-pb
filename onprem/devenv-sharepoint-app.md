@@ -32,9 +32,9 @@ For example, with the deployment scenario that is discussed in this guide, you w
 
 #### To register an app using the appregnew.aspx  
 
-1.  Go to the appregnew.aspx page for your subscription, such as `https://MyTenant.sharepoint.com/_layouts/15/appregnew.aspx`, where `https://MyTenant.sharhepoint.com` is the URL of your SharePoint site.  
+1. Go to the appregnew.aspx page for your subscription, such as `https://MyTenant.sharepoint.com/_layouts/15/appregnew.aspx`, where `https://MyTenant.sharhepoint.com` is the URL of your SharePoint site.  
 
-2.  Fill out the fields as described in the following table.  
+2. Fill out the fields as described in the following table.  
 
     |[!INCLUDE[bp_tablefield](includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
     |---------------------------------|---------------------------------------|  
@@ -44,7 +44,7 @@ For example, with the deployment scenario that is discussed in this guide, you w
     |**App Domain**|The host name for your [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], such as *www.solutions.com*. If you have deployed the [!INCLUDE[nav_web](includes/nav_web_md.md)] on a local machine, you can also enter the machine name.|  
     |**Redirect URI**|The URI for signing in to your [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], such as **https://www.solutions.com/DynamicsNAV** or **https://MyComputer/DynamicsNAV**.|  
 
-3.  Choose the **Create** button to register the app.  
+3. Choose the **Create** button to register the app.  
 
 ## Developing the App in Visual Studio  
 With Visual Studio and the Microsoft Office Developer Tools, you can create an app for SharePoint. This topic provides the general instructions for creating a provider-hosted app. For more information, see [How to: Create a basic provider-hosted app](https://go.microsoft.com/fwlink/?LinkId=308938) and [Build apps for SharePoint](https://go.microsoft.com/fwlink/?LinkId=308937) in the MSDN Library.  
@@ -54,38 +54,42 @@ You create an app for SharePoint using the **App for SharePoint** project templa
 
 ##### To create a provider-hosted app in Visual Studio  
 
-1.  In Visual Studio, create a new C# project that uses the **App for SharePoint 2013** project template.  
+1. In Visual Studio, create a new C# project that uses the **SharePoint Add-in** template.  
 
-2.  When you create the project, specify the name and location of the SharePoint site as described in the following table.  
+2. When you create the project, specify the name and location of the SharePoint site as described in the following table.  
 
     |[!INCLUDE[bp_tablefield](includes/bp_tablefield_md.md)]|[!INCLUDE[bp_tabledescription](includes/bp_tabledescription_md.md)]|  
     |---------------------------------|---------------------------------------|  
-    |**What is the name of your app for SharePoint?**|Specify a name, such as **NAVSharePointApp**.<br /><br /> The name that you specify here is not the name that displays to users of the SharePoint site.|  
+    |**Name**|Specify a name, such as **BCSharePointApp**.<br /><br /> The name that you specify here is not the name that displays to users of the SharePoint site.| 
+    |**location**|Specify the folder in which you want to save the project files.| 
     |**What SharePoint site do you want to use for debugging your app?**|Specify the developer site that is part of your Office 365 plan. For example, if your Office 365 plan is *Solutions.onmicrosoft.com*, your developer site can be *Solution.sharepoint.com*. **Note:**  This must be a developer site in order for Visual Studio’s F5 deployment to work. F5 depends on the side-loading feature in SharePoint, which is only available on developer sites.|  
     |**How do you want to host your app for SharePoint?**|Choose **Provider-Hosted**.|  
+    |**Which type of web application do you want to create?**|**ASP .NET Web Forms Application or **ASP .NET MVC Web Application|
+    |**How do you want your add-in to authenticate?**|**Use Windows Azure Access Control (for Shaepoint cloud add-ins) or **Use a certificate (for SharePoint on-premises add-uns using high-trust)|
 
-3.  When you are done, a new solution is created in Visual Studio, which you can see in **Solution Explorer.** The solution contains two projects: a SharePoint App project called *\<project name>* and an ASP .NET Web project called *\<project name>*Web, where *\<project name>* is the project name that you specified when you created the project.  
+3. When you are done, a new solution is created in Visual Studio, which you can see in **Solution Explorer.** The solution contains two projects: a SharePoint App project called *\<project name>* and an ASP .NET Web project called *\<project name>*Web, where *\<project name>* is the project name that you specified when you created the project.  
 
-    1.  The SharePoint App project will be used to generate the app package that you will upload to SharePoint. The project contains the following files:  
+    1. The SharePoint App project will be used to generate the app package that you will upload to SharePoint. The project contains the following files:  
 
-        -   AppIcon.png  
+        - AppIcon.png  
 
-             You can replace this file to use an image that is more relevant for your app.  
+          You can replace this file to use an image that is more relevant for your app.  
 
-        -   AppManifest.xml  
+        - AppManifest.xml  
 
-             The app manifest describes the app.  
+          The app manifest describes the app.  
 
-    2.  The ASP .NET Web project will not be used because it is not required to build an app that uses [!INCLUDE[navnow](includes/navnow_md.md)] data. Therefore, you can delete this project.  
+    2. The ASP .NET Web project will not be used because it is not required to build an app that uses [!INCLUDE[prodshort](includes/prodshort.md)] data. Therefore, you can delete this project.  
 
-### Modify the App Manifest  
-After you create the app, you modify settings in the app manifest for the app, which includes setting the app ID and start page URL. The start page URL specifies the URL of the Microsoft Dynamics NAV Web client but it is also used in multitenant [!INCLUDE[nav_server](includes/nav_server_md.md)] deployments to specify whether the app can be used by a specific tenant only or by all tenants that are mounted against a Microsoft Dynamics NAV Server instance.  
+### Modify the App Manifest
+
+After you create the app, you modify settings in the app manifest for the app, which includes setting the app ID and start page URL. The start page URL specifies the URL of the [!INCLUDE[prodshort](includes/prodshort.md)] Web client but it is also used in multitenant [!INCLUDE[server](includes/server.md)] deployments to specify whether the app can be used by a specific tenant only or by all tenants that are mounted against a Microsoft Dynamics NAV Server instance.  
 
 ##### To modify the appmanifest.xml  
 
-1.  In Visual Studio, open the AppManifext.xml file to view the code.  
+1. In Visual Studio, open the AppManifest.xml file to view the code.  
 
-2.  To set up the app, set the `StartPage` element and `RemoteWebApplication` element as described in the following table.  
+2. To set up the app, set the `StartPage` element and `RemoteWebApplication` element as described in the following table.  
 
     |Element|Description|  
     |-------------|-----------------|  
@@ -115,7 +119,8 @@ After you create the app, you modify settings in the app manifest for the app, w
 
      We recommend that you do not set up permissions that your app for SharePoint will request from the user at installation time.  
 
-### Adding Web Parts to the App  
+### Adding Web Parts to the App
+  
 Optionally, you can add client web parts to the project and configure them to show specific [!INCLUDE[navnow](includes/navnow_md.md)] pages in [!INCLUDE[nav_web](includes/nav_web_md.md)]. This means that the [!INCLUDE[navnow](includes/navnow_md.md)] pages will display inside the SharePoint pages. When you create a client web part, you can specify URLs that display a page without displaying the ribbon or UI parts. As a result, the page will appear to be just another app part on the SharePoint site, but it is the [!INCLUDE[nav_web](includes/nav_web_md.md)]. For more information, see [Embedding Microsoft Dynamics NAV Web Client Pages in Other Websites](Embedding-Microsoft-Dynamics-NAV-Web-Client-Pages-in-Other-Websites.md)  
 
 To add web parts to the app, add an item of type **Client Web Part \(Host Web\)** to the project in Visual Studio. Specify that it must use an existing web page, and then specify use a URL such as **https://www.solutions.com/DynamicsNAV/?mode=View&isembedded=1&page=9301&shownavigation=0&showribbon=0&showuiparts=0&pagesize=7&SPHostUrl={HostUrl}**.  
@@ -167,11 +172,12 @@ The following code illustrates how to change the Elements.xml file to include pr
 
 ```  
 
-## Installing the App on your SharePoint Site  
+## Installing the App on your SharePoint Site
+  
 When you have created app in Visual Studio, you can press F5, and Visual Studio will deploy the app to SharePoint and install it on the SharePoint site that you chose for the project.  
 
 > [!IMPORTANT]  
->  In this scenario, you must use a developer subscription of SharePoint Online. Visual Studio makes use of the SharePoint side-loading feature for uploading and installing the app, and this feature is only available in developer subscriptions.  
+> In this scenario, you must use a developer subscription of SharePoint Online. Visual Studio makes use of the SharePoint side-loading feature for uploading and installing the app, and this feature is only available in developer subscriptions.  
 
 You must sign in to \<site name>.sharepoint.com as the administrator for the site. For example, the URL for the team site for an Office 365 developer site is https://*\<site name>*.sharepoint.com/\_layouts/15/start.aspx\#/SitePages/DevHome.aspx. The .app file that was built by Visual Studio is added to the Apps in Testing section. When you choose the app, you are directed to the [!INCLUDE[nav_web](includes/nav_web_md.md)], and you are signed in automatically.  
 
