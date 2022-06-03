@@ -669,7 +669,7 @@ Data is returned for the following operation types:
 |Type|Description|More information|
 |----|---|---|
 |Copy<sup>3</sup>|An environment was created from a copy of another environment.|[Copy a Production or Sandbox Environment in the Admin Center](tenant-admin-center-environments-copy.md)<br><br>[Copy Endpoint](#copy-environment)|
-|Create<sup>3</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)||
+|Create<sup>3</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)|
 |Delete<sup>2</sup>|An environment was deleted.|[Delete Environment in Admin Center](tenant-admin-center-environments.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
 |EnvironmentAppHotfix<sup>1</sup>|App was hotfixed by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
 |EnvironmentAppUpdate<sup>1</sup> |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api_app_management.md#update-an-app)|
