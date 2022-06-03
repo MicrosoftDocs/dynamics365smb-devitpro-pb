@@ -667,7 +667,7 @@ GET /admin/v2.11/applications/{applicationType}/environments/{environmentName}/o
 Data is returned for the following operation types:
 
 |Type|Description|More information|
-|----|-----------|----------------|
+|----|---|---|
 |Copy<sup>3</sup>|An environment was created from a copy of another environment.|[Copy a Production or Sandbox Environment in the Admin Center](tenant-admin-center-environments-copy.md)<br><br>[Copy Endpoint](#copy-environment)|
 |Create<sup>3</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)||
 |Delete<sup>2</sup>|An environment was deleted.|[Delete Environment in Admin Center](tenant-admin-center-environments.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
