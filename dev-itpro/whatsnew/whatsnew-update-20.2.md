@@ -25,8 +25,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
 - [Receive notifications in the Microsoft 365 Message center](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/receive-notifications-365-message-center)
 - [Updating only licensed users from Microsoft 365 runs faster and more efficiently](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/updating-only-licensed-users-365-runs-faster-more-efficiently)
-- Extensible calculation and posting currency exchange rate differences in banking transactions  
-- Provide developers/partners with insights on extension dependency on specific events
+
 
 ## Localization updates
 
