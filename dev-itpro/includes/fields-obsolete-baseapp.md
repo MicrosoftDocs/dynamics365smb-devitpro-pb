@@ -7,8 +7,8 @@ ms.author: edupont
 ---
 A number of fields that are related to pictures are no longer in use, because the pictures are now stored in Image fields that are of type *Media*. The fields are marked as `ObsoleteState = Pending;`.  
 
-|Table ID|Field ID|Comments|
-|--------|--------|--------|
+|Table ID|Name|Field ID|Type|Comments|
+|---|---|---|---|---|
 |18|Customer|89|Picture|Will be removed in a later release.|
 |23|Vendor|89|Picture|Will be removed in a later release.|
 |130|Incoming Document|20|URL2|Will be removed in a later release.|
@@ -25,16 +25,16 @@ For more information about Media Data Type, see [Media Data Type](../developer/m
 
 A field that is related to VAT Registration Number validation is no longer in use, because the feature was replaced EU VAT Registration No. Validation Service Setup [!INCLUDE[prod_short](prod_short.md)]. The field is marked as `ObsoleteState = Pending;`.  
 
-|Table ID|Field ID|Comments|
-|--------|--------|--------|
+|Table ID|Name|Field ID|Type|Comments|
+|---|---|---|---|---|
 |98|General Ledger Setup|161|VAT Reg. No. Validation URL|Will be removed in a later release.|
 
 For more information about validation of VAT Registration Numbers, see [Setting Up Calculations and Posting Methods for Value-Added Tax ](/dynamics365/business-central/finance-setup-vat#to-verify-vat-registration-numbers) documentation.
 
 A flow field that was used to calculate Balance in My Account page is no longer in use in [!INCLUDE[prod_short](prod_short.md)] and has been replaced with Account Balance field to improve performance. The field is marked as `ObsoleteState = Pending;`. 
 
-|Table ID|Field ID|Comments|
-|--------|--------|--------|
+|Table ID|Name|Field ID|Type|Comments|
+|---|---|---|---|---|
 |9153|My Account|4|Balance|Will be removed in a later release.|
 
 A number of fields that are related to product groups are no longer in use, because the feature was replaced by item categories in [!INCLUDE[nav2017](../developer/includes/nav2017.md)]. The fields are marked as `ObsoleteState = Pending;`.  
