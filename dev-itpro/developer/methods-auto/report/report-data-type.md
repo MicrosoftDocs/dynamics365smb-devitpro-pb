@@ -3,7 +3,7 @@ title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 06/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,8 +39,7 @@ The following methods are available on the Report data type.
 |[SaveAsPdf(Integer, Text [, var Record])](report-saveaspdf-method.md)|Saves a report as a .pdf file.|
 |[SaveAsWord(Integer, Text [, var Record])](report-saveasword-method.md)|Saves a report on the computer that is running the server as a Microsoft Word (.doc) document.|
 |[SaveAsXml(Integer, Text [, var Record])](report-saveasxml-method.md)|Saves the resulting data set of a query as an .xml file. The following code shows the syntax of the SAVEASXML function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
-|[ValidateAndPrepareLayout(Integer, InStream, var InStream, ReportLayoutType)](report-validateandpreparelayout-method.md)|Validates if the provided report layout is compatible with the specified report and performs the required modifications
-	so that it can be used for rendering.|
+|[ValidateAndPrepareLayout(Integer, InStream, var InStream, ReportLayoutType)](report-validateandpreparelayout-method.md)|Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering.|
 |[WordLayout(Integer, InStream)](report-wordlayout-method.md)|Gets the Word report layout that is used on a report and returns it as a data stream.|
 |[WordXmlPart(Integer [, Boolean])](report-wordxmlpart-method.md)|Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts. The method has an instance call and a static call. The following code shows the syntax of the WORDXMLPART function. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.|
 
@@ -81,10 +80,7 @@ The following methods are available on instances of the Report data type.
 |[Skip()](reportinstance-skip-method.md)|Skips the current iteration of the current report or XmlPort.|
 |[TotalsCausedBy()](reportinstance-totalscausedby-method.md)|Determines which field caused a group total to be calculated. This determines which field changed contents and thereby concluded a group.|
 |[UseRequestPage([Boolean])](reportinstance-userequestpage-method.md)|Gets or sets whether a request page is presented to the user.|
-|[ValidateAndPrepareLayout(InStream, var InStream, ReportLayoutType)](reportinstance-validateandpreparelayout-method.md)|
-		Validates if the provided report layout is compatible with the specified report and performs the required modifications
-		so that it can be used for rendering.
-	|
+|[ValidateAndPrepareLayout(InStream, var InStream, ReportLayoutType)](reportinstance-validateandpreparelayout-method.md)|Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering.|
 |[WordLayout(var InStream)](reportinstance-wordlayout-method.md)|Gets the Word report layout that is used on a report and returns it as a data stream.|
 |[WordXmlPart([Boolean])](reportinstance-wordxmlpart-method.md)|Gets the report data structure as structured XML that is compatible with Microsoft Word custom XML parts.|
 
