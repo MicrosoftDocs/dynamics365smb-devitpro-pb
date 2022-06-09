@@ -2,7 +2,7 @@
 title: Setting up App Key Vaults for Business Central
 description: Describes how to use an Azure Key vault with Business Central extensions for online.
 ms.custom: na
-ms.date: 02/09/2022
+ms.date: 04/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -95,6 +95,7 @@ Provide the following information in the email:
 
 - Your AAD tenant ID. Obtain this information from the Azure portal by going to the Azure Active Directory Overview page.
 - Your AppSource extensions, including names and App IDs, that should be enabled to read secrets from your key vaults. **Note: It is important that all your AppSource extensions that need access to a key vault are included, as it is not enough to just set the key vault property in your `app.json` manifest files.**
+- Confirmation that the app is already published on AppSource.
 - Optionally, a screenshot from the Azure portal showing the key vault and its access policies. The screenshot can help Microsoft catch configuration mistakes early in the process.
 
 

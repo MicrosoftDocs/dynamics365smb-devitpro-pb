@@ -69,7 +69,7 @@ specifying the container and the password that you want to use for the new users
 
 Internally, the `Setup-BCContainerTestUsers` downloads an app which exposes an API, publishes and installs the app, and then invokes the `CreateTestUsers` API with the password needed. After this, the app is uninstalled and unpublished.
 
-If you want to see code behind the app, it is available [here](https://dev.azure.com/businesscentralapps/CreateTestUsers).
+If you want to see code behind the app, it is available [here](https://github.com/businesscentralapps/createtestusers).
 
 ### Docker run
 If you are using Docker run to run your containers, you have a little more work to do.
@@ -91,7 +91,7 @@ Get-NavServerUser -serverInstance $ServerInstance -tenant default |? LicenseType
 This will assign the Premium plan to the admin user in the database.
 
 > [!TIP]  
-> To set up test users, you can clone the [createtestusers](https://dev.azure.com/businesscentralapps/CreateTestUsers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
+> To set up test users, you can clone the [createtestusers](https://github.com/businesscentralapps/createtestusers) repository and modify the code to create the users on the `oninstall` trigger with the password that you want.
 
 ## See Also
 

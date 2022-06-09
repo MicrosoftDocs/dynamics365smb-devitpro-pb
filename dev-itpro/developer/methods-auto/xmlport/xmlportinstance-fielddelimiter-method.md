@@ -1,9 +1,9 @@
 ---
-title: "Xmlport.FieldDelimiter([String]) Method"
+title: "Xmlport.FieldDelimiter([Text]) Method"
 description: "Gets and sets the FiledDelimiter used when running, importing or exporting the XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Xmlport.FieldDelimiter([String]) Method
+# Xmlport.FieldDelimiter([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets and sets the FiledDelimiter used when running, importing or exporting the XmlPort.
@@ -21,7 +21,7 @@ Gets and sets the FiledDelimiter used when running, importing or exporting the X
 
 ## Syntax
 ```AL
-[Delimiter := ]  Xmlport.FieldDelimiter([Delimiter: String])
+[Delimiter := ]  Xmlport.FieldDelimiter([Delimiter: Text])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,13 +31,13 @@ Gets and sets the FiledDelimiter used when running, importing or exporting the X
 An instance of the [Xmlport](xmlport-data-type.md) data type.  
 
 *[Optional] Delimiter*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The new value of the FieldDelimiter.  
 
 
 ## Return Value
 *[Optional] Delimiter*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The FieldDelimiter used when running, importing or exporting the XmlPort.
 
 

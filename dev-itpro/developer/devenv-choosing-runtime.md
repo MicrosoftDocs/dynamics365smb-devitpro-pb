@@ -37,6 +37,7 @@ The available options for setting the `runtime` in AL are:
 |`7.1`          |Business Central 2021 release wave 1 update 18.1|
 |`7.2`          |Business Central 2021 release wave 1 update 18.2|
 |`8.0`          |Business Central 2021 release wave 2|
+|`9.0`          |Business Central 2022 release wave 1|
 
 ## Setting the runtime version
 

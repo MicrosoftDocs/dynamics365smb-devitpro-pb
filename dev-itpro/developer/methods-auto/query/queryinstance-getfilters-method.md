@@ -3,7 +3,7 @@ title: "Query.GetFilters() Method"
 description: "Returns the filters that are applied to all columns in the query."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ Filter :=   Query.GetFilters()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Query*  
 &emsp;Type: [Query](query-data-type.md)  
@@ -33,14 +32,14 @@ An instance of the [Query](query-data-type.md) data type.
 
 ## Return Value
 *Filter*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 All filters of the query
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **GetFilterS** method returns the filters that are currently set for all data columns and filter rows by the [SetFilter Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SetRange Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md)method, and the [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GetFilter** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) or global filters that are set by the **FilterGroup** method.  
+ The **GetFilterS** method returns the filters that are currently set for all data columns and filter rows by the [SetFilter Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SetRange Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md)method, and the [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GetFilter** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataitemtablefilter-property) or global filters that are set by the **FilterGroup** method.  
 
 <!-- Links For more information, see [Understanding Query Filters](Understanding-Query-Filters.md) and [How to: Set Up Filter Rows in Query Designer](How-to-Set-Up-Filter-Rows-in-Query-Designer.md). -->  
   

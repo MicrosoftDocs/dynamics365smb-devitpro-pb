@@ -3,11 +3,12 @@ title: "BusinessEvent Attribute"
 description: "Specifies that the method is published as a business type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/19/2021
+ms.date: 05/18/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -42,8 +43,6 @@ Specifies if event subscribers should be invoked in an isolated transaction.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-**True** exposes the global methods in the object that contains the event publisher function to event subscriber functions; **false** does not. The default value is **false**.
-
 ## Snippet support
 Typing the shortcut `teventbus` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.
 
@@ -71,6 +70,8 @@ codeunit 50101 MySubscribingCodeunit
 }
 ```
 
+For more information about isolated events, see [Isolated Events](../devenv-events-isolated.md).
+
 ## Example
 This example publishes a business type event by using the `OnAddressLineChanged` method. The method takes a single text data type parameter. The IncludeSender argument is set to **false**.
 
@@ -87,4 +88,5 @@ end;
 [Publishing Events](../devenv-publishing-events.md)   
 [Raising Events](../devenv-raising-events.md)   
 [Subscribing to Events](../devenv-subscribing-to-events.md)   
+[Isolated Events](../devenv-events-isolated.md)  
 [Method Attributes](devenv-method-attributes.md)

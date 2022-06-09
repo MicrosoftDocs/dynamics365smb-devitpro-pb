@@ -1,9 +1,9 @@
 ---
-title: "Session.StopSession(Integer [, String]) Method"
+title: "Session.StopSession(Integer [, Text]) Method"
 description: "Stops a session."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.StopSession(Integer [, String]) Method
+# Session.StopSession(Integer [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Stops a session.
@@ -21,7 +21,7 @@ Stops a session.
 
 ## Syntax
 ```AL
-[Ok := ]  Session.StopSession(SessionId: Integer [, Comment: String])
+[Ok := ]  Session.StopSession(SessionId: Integer [, Comment: Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -36,8 +36,9 @@ The ID of the session that you want to stop.The session can be any of the follow
 -   OData web services client session
 -   Background session
           
+
 *[Optional] Comment*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 An optional comment about the session event. The comment is stored in Table 2000000111, the Session Event table.
           
 

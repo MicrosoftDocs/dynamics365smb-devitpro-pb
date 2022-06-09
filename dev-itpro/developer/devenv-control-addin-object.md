@@ -82,7 +82,10 @@ Designing control add-ins that provide the best possible experience can require 
   - Reference the font files from some other source such as a public or private CDN.
   - Base64 encode the fonts and include the encoded fonts in the CSS file.
 
+For more information about writing efficient code for contron add-ins, see [Control Add-In Best Practices](devenv-control-addin-bestpractices.md).
+
 ## Control add-in syntax example
+
 The following control add-in syntax shows how to implement small customizations of the layout and functionality of a page.
 
 ```
@@ -178,10 +181,12 @@ $.ajax({
 });
 ```
 
-## See Also  
+## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [Asynchronous Considerations for Control Add-ins](devenv-control-addin-asynchronous-considerations.md)  
+[Control Add-In Best Practices](devenv-control-addin-bestpractices.md)  
 [InvokeExtensibility Method](methods/devenv-invokeextensibility-method.md)  
 [GetImageResource Method](methods/devenv-getimageresource-method.md)  
 [GetEnvironment Method](methods/devenv-getenvironment-method.md)  

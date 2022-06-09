@@ -10,7 +10,7 @@ ms.workload: na
 ms.reviewer: edupont
 ms. search.keywords: cloud, edge
 ms.search.form: 2502, 4003
-ms.date: 02/18/2022
+ms.date: 06/08/2022
 ms.author: edupont
 
 ---
@@ -28,6 +28,11 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
 > [!TIP]
 > [!INCLUDE [bc-cloud-nav](../includes/bc-cloud-nav.md)]
 
+If a customer is coming from another product, you can use configuration packages and templates to migrate their data to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, and then use the cloud migration tool to switch to [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Set Up Company Configuration Packages](set-up-standard-company-configuration-packages.md).  
+
+> [!TIP]
+> Customers coming from QuickBooks can use apps from Microsoft to move to [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Changing from a QuickBooks App to Dynamics 365 Business Central](/dynamics365/business-central/across-quickbooks-to-business-edition).  
+
 ## Prerequisites
 
 * The customer must have a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant  
@@ -42,7 +47,6 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
   * Update statistics and reorganize indexes on all tables on the source database  
   
     This will ensure that the migration runs as fast as possible. For more information, see the documentation for [sp_updatestats (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-updatestats-transact-sql) and [Resolve index fragmentation by reorganizing or rebuilding indexes](/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
-  * (**TODO****)
 * At least one user has *SUPER* permissions in the target company in [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
   This is the only user who can make changes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. All users that do not have *SUPER* permissions will be automatically reassigned to the intelligent cloud user group. This will limit them to read-only access to data in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, se the [Business Central permission sets](#business-central-permission-sets) section.  
@@ -50,11 +54,11 @@ If you're not already familiar with [!INCLUDE [prod_short](../includes/prod_shor
 
   [!INCLUDE [migrate-limits](../developer/includes/migrate-limits.md)]
 
-  You can specify which companies to include in the migration in the assisted setup wizard, and you can view the migration status of each company in the **Cloud Migration Management** page.  
+  You can specify which companies to include in the migration in the assisted setup guide, and you can view the migration status of each company in the **Cloud Migration Management** page.  
 
   If you want to add more companies after the first selection of companies, you can add more companies in the **Cloud Migration Management** page in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online. For more information, see [Run the tool multiple times](#run-the-tool-multiple-times). But use the [Capacity](tenant-admin-center-capacity.md) section of the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] to keep track of how much data you migrate.  
 
-  In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes. For example, customers can buy more environments since [2020 release wave 2](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/support-unlimited-number-production-sandbox-environments).
+  In certain cases, the customer wants to migrate very large amounts of data. In those cases, you must first run the assisted setup once to create a pipeline, and then contact Support to increase the limitations on [!INCLUDE [prod_short](../includes/prod_short.md)] online. For more information, see [Escalating support issues to Microsoft](manage-technical-support.md#escalating-support-issues-to-microsoft). We are continually working on improving and optimizing the migration tool for larger database sizes. For example, customers can buy more environments, and they can buy additional storage. For more information, see [Managing Capacity](tenant-admin-center-capacity.md).  
 
   There are no firm limits on the size of the database, the number of daily transactions, or the number of users that can migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
 
@@ -122,7 +126,7 @@ The main steps in a migration process are:
     * For Dynamics GP, you can use the migration process to move historical data to Azure Data Lake  
     * For Dynamics NAV, upgrade to [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises first, and then migrate  
 
-3. Migrate data, using the **Cloud Migration Setup** assisted setup wizard in [!INCLUDE [prod_short](../includes/prod_short.md)] online  
+3. Migrate data, using the **Cloud Migration Setup** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online  
 4. Test the result of the migration  
 5. Set up users, permissions, and other configurations in [!INCLUDE [prod_short](../includes/prod_short.md)] online  
 6. Stop using the on-premises solution, switch off the migration, and tell users to start using [!INCLUDE [prod_short](../includes/prod_short.md)] online for daily business  
@@ -143,7 +147,7 @@ The initial data migration time can vary depending on factors such as the amount
 
 ## Run the assisted setup guide
 
-To migrate data, in the target company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, run the **Cloud Migration Setup** assisted setup wizard.  
+To migrate data, in the target company in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, run the **Cloud Migration Setup** assisted setup guide.  
 
 > [!IMPORTANT]
 > You must be signed in as an administrator of the Microsoft 365 tenant as well as [!INCLUDE [prod_short](../includes/prod_short.md)] online.  
@@ -168,12 +172,15 @@ If the product you selected requires a SQL connection, this page will be present
 * **SQL Connection**
 
   Specify *SQL Server* for a locally installed SQL Server instance, or *Azure SQL*.
+  
+  > [!IMPORTANT]
+  > Azure SQL Managed Instance is not supported.  
 
 * **SQL Connection string**
 
   You must specify the connection string to your SQL Server, including the name of the server that SQL Server is running on, and the name of the instance, the database, and the relevant user account.  
 
-  For example, `Server=MyServer\BCDEMO;Database=BC170;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 17. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
+  For example, `Server=MyServer\BCDEMO;Database=BC180;UID=MySQLAccount;PWD=MyPassWord;`, if you're migrating from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, version 18. For more information, see [the SQL Server blog](/archive/blogs/sqlforum/faq-how-do-i-find-the-correct-server-or-data-source-value-for-an-sql-server-instance-in-a-connection-string).  
 
   The following snippets illustrate a couple of connection strings with different formats:  
 
@@ -205,7 +212,7 @@ The following table describes the actions that you can run from the page:
 
 |Action   |Description|
 |---------|---------|
-|Manage Schedule     |Opens a page where you can set the migration schedule without having to run the assisted setup wizard again.|
+|Manage Schedule     |Opens a page where you can set the migration schedule without having to run the assisted setup guide again.|
 |Run Migration Now    |Choose this action to start the data migration manually. A manual run can be helpful if you received errors in the scheduled data migration, you corrected the errors, and you now want to push updated data to the cloud outside of a normally scheduled run. The migration can also be used for subsequent runs after the initial migration. On subsequent runs, the migration tool will only migrate changes that have happened since the previous migration was run. Change tracking is used to identify what data should be moved in those subsequent runs. However, the migration tool cannot run if the target environment is being upgraded. In that case, you must disable cloud migration, upgrade, and then set up cloud migration again.|
 |Run Data Upgrade Now|Choose this action to upgrade data, such as if you're migrating data from an earlier version to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)].|
 |Refresh Status      |If a migration run is in progress, you can choose to refresh status to update the page. If the run is complete, the status will update using the refresh status action without having to close the window and reopen it.|
@@ -215,13 +222,13 @@ The following table describes the actions that you can run from the page:
 |Disable Cloud Migration    |Opens a guide that helps you through a checklist of instructions to disable the cloud migration configuration. Use the guide when you have migrated the data that you want to migrate, or when you want to upgrade the target environment. Once the steps in this process are complete, you can use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your primary solution, or you can upgrade the environment.|
 |Check for Update           |If there have been changes to the migration service, we will publish the new service. This action will check to see if a new service has been published. The check will display the version of the service you are currently running and then also display the latest service published. Then, you can choose to update your solution. We recommend that you update the solution if a newer version has been published.|
 |Select Companies to Migrate|If your database contains more than one company, use this action to specify which company or companies to schedule a migration run for. For example, you're migrating a very large database with multiple companies, so you break down the migration in several runs by including one or a few companies in each migration run. You can see the estimated size of each company|
-|Define User Mappings       |This option is available when you log in to a particular company that has been migrated. This action  should be done in one of the companies you have migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Microsoft 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. It is not a required step, but if you use some of the processes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that work with the user name, such as time sheets, you may want to map users. Time sheets are visible based on the user name you are logged in as in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].|
+|Define User Mappings       |This option is available when you log in to a particular company that has been migrated. This action  should be done in one of the companies you have migrated. This action gives you a list of the users that were in your on-premises environment, and then gives you a list of your Microsoft 365 users, so that you can map the two together. This process renames the **Name** field on the **User Card** to match the user name in your on-premises solution. It is not a required step, but if you use some of the processes in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] that work with the user name, such as time sheets, you may want to map users. Time sheets are visible based on the user name you are logged in as in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. Map users only once for each migration. If you run the mapping twice or more, you might run into conflicts. |
 |Setup Checklist      |When you are ready to use your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant as your main system, the tables that were not migrated must be set up or defined as needed. The checklist page shows recommended steps to complete your migration to the cloud.|
 |Azure Data Lake|This option is available if the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant is connected to Dynamics GP. For more information, see [Migrate Dynamics GP to Azure Data Lake](migrate-dynamics-gp.md#lake).|
 
 ## Run the tool multiple times
 
-There are some scenarios where it will be necessary for you to run the cloud migration setup wizard more than once.  
+There are some scenarios where it will be necessary for you to run the cloud migration setup guide more than once.  
 
 > [!TIP]
 > We recommend that you take a backup of the target environment so that you can easily restore the environment to a specific state and time, should you want to.
@@ -230,7 +237,7 @@ The  following list highlights a few examples:
 
 * Multiple companies in [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises
 
-  One example is if you want to add additional companies to the migration, or if you want to change the companies to migrate, run the assisted setup wizard again. Alternatively, choose the additional companies in the **Cloud Migration Management** page.  
+  One example is if you want to add additional companies to the migration, or if you want to change the companies to migrate, run the assisted setup guide again. Alternatively, choose the additional companies in the **Cloud Migration Management** page.  
 
 * Add tenants to an existing runtime service  
 
@@ -242,6 +249,9 @@ Complete the steps in the wizard to update the runtime service. If the change wa
 
 > [!TIP]
 > If you are using [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the same setup guide is also available in your on-premises solution. You will automatically be redirected to your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online to continue the configuration process.
+
+> [!CAUTION]
+> If you have mapped users in the first run of the cloud migration setup guide, then do not choose the **Define User Mappings** action again in subsequent runs.
 
 ## Business Central permission sets
 

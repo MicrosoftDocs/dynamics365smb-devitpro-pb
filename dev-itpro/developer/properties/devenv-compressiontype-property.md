@@ -3,11 +3,12 @@ title: "CompressionType Property"
 description: "Specifies the compression type used."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -45,7 +46,7 @@ CompressionType = None|Page|Row|Unspecified;
 
 With `None`, `Page`, and `Row`, the [!INCLUDE[prod_short](../includes/prod_short.md)] table synchronization process will make changes to table in SQL Server, overwriting the current compression setting in SQL Server, if any. `Unspecified` lets you control data compression directly on SQL Server or by specifying a database default compression level using the [Set-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navtenant) with the `-Compression` parameter set.
 
-For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#Compression).
+For information about compression types, see [Data Compression](../../administration/optimize-sql-data-access.md#readwrite).
 
 ## Example
 

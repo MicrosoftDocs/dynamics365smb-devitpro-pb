@@ -3,11 +3,12 @@ title: "Compiler Error AL0477"
 description: "The trigger '{0}' can only be used if the property '{1}' of '{2}' is set to '{3}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

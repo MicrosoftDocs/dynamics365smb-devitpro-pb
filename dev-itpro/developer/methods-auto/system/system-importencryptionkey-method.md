@@ -1,9 +1,9 @@
 ---
-title: "System.ImportEncryptionKey(String, String) Method"
+title: "System.ImportEncryptionKey(Text, Text) Method"
 description: "Points to a password protected file that contains the key on the current server."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ImportEncryptionKey(String, String) Method
+# System.ImportEncryptionKey(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Points to a password protected file that contains the key on the current server. When encrypting or decrypting data in Dynamics 365 Business Central, an encryption key is used. A single key is used per tenant, and every tenant will have a different key. Keys can be created or imported if one exists already, as may be the case if upgrading or migrating a system from one set of hardware to another. The IMPORTENCRYPTIONKEY method allows an administrator to specify a file (password protected) which contains a key and imports it to the current Dynamics 365 Business Central service.
@@ -23,16 +23,17 @@ Points to a password protected file that contains the key on the current server.
 
 ## Syntax
 ```AL
-[Ok := ]  System.ImportEncryptionKey(Path: String, Password: String)
+[Ok := ]  System.ImportEncryptionKey(Path: Text, Password: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Path*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the file that contains the encryption key.  
+
 *Password*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the password the protects the file.  
 
 

@@ -65,8 +65,6 @@ Content-type: application/json
     "discountAppliedBeforeTax": false,
     "amountExcludingTax": 0,
     "taxCode": "FURNITURE",
-    "taxPercent": 6.00006,
-    "totalTaxAmount": 0,
     "amountIncludingTax": 0,
     "invoiceDiscountAllocation": 0,
     "netAmount": 3122.8,

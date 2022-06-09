@@ -1,0 +1,1 @@
+A boolean that specifies whether preview versions are allowed.

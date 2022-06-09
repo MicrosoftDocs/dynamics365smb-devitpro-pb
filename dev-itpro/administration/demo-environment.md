@@ -8,11 +8,13 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 02/08/2022
+ms.date: 05/25/2022
 ---
 # Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can show prospects as part of pre-sales demonstrations. Depending on your requirements, you have several different options that are described in this article.  
+
+Learn more about [!INCLUDE [prod_short](../includes/prod_short.md)] trials and subscriptions [here](trials-subscriptions.md).  
 
 ## Microsoft 365 demo plus Business Central
 
@@ -27,9 +29,11 @@ Such Microsoft demo accounts give you environments that you can use for demos an
 > [!IMPORTANT]
 > Environments that are based on Microsoft 365 demo accounts are intended for demonstration and training purposes. If a prospect uses such an environment to help run their business, then they risk losing their company data when the demo environment or the Microsoft 365 demo account expires. If a prospect wants to use [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to help run their business, they should sign up for a trial using their own email account. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)].
 
-For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) with a Microsoft 365 demo account, you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], that experience will expire after 30 days. At that point, you can [extend the trial](/dynamics365/business-central/admin-extend-trial), or you can return to the CRONUS demonstration experience, which will still be available until your Microsoft 365 demo account expires.
+For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics365/Signup/BusinessCentral) with a Microsoft 365 demo account, you can keep that environment for up to a year. However, if you switch to the actual trial experience in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], that experience will expire after 30 days. At that point, you can [extend the trial](/dynamics365/business-central/admin-extend-trial), or you can return to the CRONUS demonstration experience, which will still be available until your Microsoft 365 demo account expires.  
 
 ### Customize the demo environment
+
+Starting in 2022, you can add the **Contoso Coffee Demo Data** app to your demo company to showcase advanced supply chain functionality. For more information, see [Scenarios for Contoso Coffeee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
 
 [!INCLUDE [admin-m365admin](../developer/includes/admin-m365admin.md)]
 
@@ -46,14 +50,13 @@ If you demo in the new [Microsoft Edge](https://www.microsoft.com/edge) browser,
 
 ## Add a Business Central trial to your prospect's organization
 
-The easiest way to give a prospect a demonstration of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online, is to simply ask them to sign up for a trial from the [https://dynamics.microsoft.com/business-central/](https://dynamics.microsoft.com/business-central/) page. This way, the prospect will be able to explore the default version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on their own or together with you.  
+[!INCLUDE [admin-trial-signup](../includes/admin-trial-signup.md)]
 
 This type of environment can be useful if you want to demonstrate the general user interface, for example, or talk about how they can add capabilities with apps from AppSource.  
 
-> [!NOTE]
-> If you want to show the prospect the full capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you must ask them to change the user experience to Premium in the **Company Information** page. For more information, see [Change Which Features are Displayed](/dynamics365/business-central/ui-experiences) in the business functionality content.
+[!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-If a prospect has signed up for a free trial, and they use [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they are still not sure, they must contact a partner.
+If a prospect has signed up for a free trial, and they use [!INCLUDE [prod_short](../includes/prod_short.md)] to help run their business, then they must decide whether to subscribe within the first 60 days. If they extend their trial once, and they are still not sure, they must contact a partner.
 
 However, in many cases, you will probably prefer to show prospects more tailored experiences with your own trial as described in the [Microsoft 365 demo plus Business Central](#microsoft-365-demo-plus-business-central) section.
 
@@ -66,6 +69,10 @@ Instead, you might want to set up a dedicated environment with [[!INCLUDE [prod_
 Alternatively, you can create a free trial with a Microsoft 365 demo account from [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com), and then create a dedicated environment in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] that you then apply your solution to, such as by deploying your app straight from Visual Studio Code, or any other configuration changes that you want to make. For inspiration for how to get started, see [Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](test-environment.md).  -->
 
 [!INCLUDE [admin-viral-trial-expiry](../developer/includes/admin-viral-trial-expiry.md)]
+
+## Use Contoso Coffee demo data for advanced manufacturing
+
+The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. For more information, see [Introduction to Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
 
 ## Add Dynamics 365 Sales Professional
 
@@ -130,6 +137,7 @@ Starting in February 2022, partners can request dedicated licenses to set up add
 ## See also
 
 [Preparing Test Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](test-environment.md)  
+[Trials and Subscriptions](trials-subscriptions.md)  
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Administration of Business Central Online](tenant-administration.md)  

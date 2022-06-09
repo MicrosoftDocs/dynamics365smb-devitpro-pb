@@ -1,0 +1,1 @@
+Specifies where the operation was initiated from, such as **TenantAdminCenter**.

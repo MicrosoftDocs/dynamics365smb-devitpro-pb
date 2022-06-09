@@ -1,9 +1,9 @@
 ---
-title: "System.ExportObjects(String, var Record [, Integer]) Method"
+title: "System.ExportObjects(Text, var Record [, Integer]) Method"
 description: "Exports application objects to a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ExportObjects(String, var Record [, Integer]) Method
+# System.ExportObjects(Text, var Record [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0 until version 1.0 where it was deprecated._
 
 Exports application objects to a file.
@@ -23,19 +23,21 @@ Exports application objects to a file.
 
 ## Syntax
 ```AL
- System.ExportObjects(FileName: String, var ObjectRecord: Record [, Format: Integer])
+ System.ExportObjects(FileName: Text, var ObjectRecord: Record [, Format: Integer])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FileName*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path of the file to export to.
         
+
 *ObjectRecord*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record to the Object table.
         
+
 *[Optional] Format*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The format to use when exporting.  

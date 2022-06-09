@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 03/22/2022
 ms.author: jswymer
 ---
 # Analyzing Page View Telemetry
@@ -45,10 +45,14 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the page object that was opened.|
 |alObjectName|Specifies the name of the page object that was opened.|
 |alObjectType|**Page**|
+|appId|Specifies the ID of the extension that the page belongs to.|
+|appName|Specifies the name of the extension that the page belongs to.|
+|appPublisher| Specifies the publisher of the extension that the page belongs to. |
+|appVersion|Specifies the version of the extension that the page belongs to.|
 |clientType|Specifies the type of client that opened the page such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
 |companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used when the page opened. |
 |component|**Dynamics 365 Business Central Server**.|

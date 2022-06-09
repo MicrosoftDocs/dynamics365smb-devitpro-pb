@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 09/30/2021
+ms.date: 05/25/2022
 ---
 
 # Trials and Sign-ups for Business Central Online
@@ -18,7 +18,7 @@ As a reselling partner, you can invite customers and prospects to sign up for an
 
 This means that you can show prospects a preview of what you are offering based on trials of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and other Dynamics 365 apps.  
 
-[!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]: Adjust the onboarding checklist to fit your solution. For more information, see [Onboarding experiences in Business Central](../administration/onboarding-experiences.md).
+Adjust the onboarding checklist to fit your solution, and provide in-app tours for key experiences. For more information, see [Onboarding experiences in Business Central](../administration/onboarding-experiences.md).
 
 ## Prospects and trials
 
@@ -26,13 +26,7 @@ Prospects can contact you if they have signed up for the [!INCLUDE [prod_short](
 
 Alternatively, you can create a more tailored trial environment based on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content pack on the [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) site. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
 
-Some types of trials can be extended beyond 30 days. The following table outlines the types of trials that you can offer prospects:
-
-|Scenario |Trial period  |Can be extended  | Can be used for production|
-|---------|--------------|-----------------|---------------------------|
-|Prospect signs up for the [free trial](/dynamics365/business-central/across-preview) with their work or school email account, and then switches to My Company for a 30 day trial.</br></br>Their trial is based on the **Dynamics 365 Business Central for IWs** license.|30 days         | Yes </br></br>Once through the in-product notification + once by the partner |  Yes       |
-|Partner assigns the **Dynamics 365 Business Central Premium Trial** license to an existing client in Partner Center so that they can try out the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] full experience in My Company|30 days         | No </br></br>The partner can assign a new **Dynamics 365 Business Central Premium Trial** license for a second 30 days trial |  Yes       |
-|Partner creates a test customer and assigns the **Dynamics 365 Business Central Premium Trial** license to that in Partner Center. Then they invite a client or prospect to that trial. |30 days         | No </br></br>The partner can assign a new **Dynamics 365 Business Central Premium Trial** license for a second 30 days trial  |  Yes       |
+[!INCLUDE [admin-trial-types](../includes/admin-trial-types.md)]
 
 At any point during their trial experience, when they are ready, you can convert their trial to a paid subscription using the Partner Center dashboard. For more information, see [Converting trials to paid subscriptions](/partner-center/offer-your-customers-trials-of-microsoft-products#converting-trials-to-paid-subscriptions) in the Partner Center content.  
 

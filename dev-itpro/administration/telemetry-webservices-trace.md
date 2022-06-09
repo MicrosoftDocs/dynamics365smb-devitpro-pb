@@ -48,7 +48,7 @@ The following table explains the custom dimensions included in a **Web Services 
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the AL object that was run by request.<sup>[\[1\]](#1)</sup>|
 |alObjectName|Specifies the name of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|
 |alObjectType|Specifies the type of the AL object that was run by the request.<sup>[\[1\]](#1)</sup>|

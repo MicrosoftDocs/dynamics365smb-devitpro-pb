@@ -3,11 +3,12 @@ title: "OptionCaptionML Property"
 description: "Sets the strings that are displayed to the user for selecting an option."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
+ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -61,7 +62,7 @@ The following examples demonstrate the relationship between the [OptionMembers P
   
 2. An OptionCaptionML property is added to the database field containing DAN = 'valg1,valg2,valg3', ENG = 'choice1,choice2,choice3'.  
   
-     **Result** If a user selects DAN as the language, valg1, valg2, valg3 will be the available choices on the page. If a user selects ENG, choice1, choice2, choice3 will be available. For more information about what happens when the selected language is not available, see [Multilanguage Development](/dynamics365/business-central/dev-itpro/developer/properties/devenv-work-with-translation-files).  
+     **Result** If a user selects DAN as the language, valg1, valg2, valg3 will be the available choices on the page. If a user selects ENG, choice1, choice2, choice3 will be available. For more information about what happens when the selected language is not available, see [Working with Translation Files](../devenv-work-with-translation-files.md).  
   
 3. An OptionCaptionML property is added to the text box containing DAN = 'valg nummer 1,valg nummer 2,valg nummer 3'.  
   

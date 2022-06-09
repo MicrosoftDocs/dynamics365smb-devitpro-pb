@@ -1,8 +1,8 @@
 ---
-title: "Getting Started with AL"
+title: "Get Started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
-ms.date: 04/01/2021
+ms.date: 05/18/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,29 +11,32 @@ ms.author: solsen
 ms.custom: intro-internal
 ---
 
-# Getting Started with AL
+# Get Started with AL
 
-To get started writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you will need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you will use for coding and debugging.
+To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you'll need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you'll use for coding and debugging.
 
 ## Steps to set up a sandbox environment and Visual Studio Code
 
-Go through the following steps to set up a sandbox environment. With this you get sample code that compiles and runs with just a few commands. 
+Go through the following steps to set up a sandbox environment. Having set up a sandbox environment, you get sample code that compiles and runs with just a few commands. 
 
 > [!NOTE]  
 > If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 > [!IMPORTANT]  
-> It is not supported to publish, from Visual Studio Code, an extension with the same identifiers as an extension published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
+> It is not supported to publish an extension from Visual Studio Code with the same identifiers as an extension which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
 
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
-3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al). 
+3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 4) Press **Ctrl+Shift+P** to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
-5) Press **Alt+A, Alt+L** to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
+5) Press **Alt+A**, and right after, **Alt+L** to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
     > [!NOTE]  
     > If you want to change your configuration at a later point in time, you can choose the **Add Configuration** button on the bottom right side, and then choose one of the available options.  
 6) Enter the credentials that you provided for the sign-up.
 7) Press **Ctrl+F5** to deploy and run the extension on your online sandbox tenant.  
+
+> [!NOTE]  
+> For some users the **Ctrl+F5** shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
 
 You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press **Ctrl+F5** to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
 
@@ -41,12 +44,11 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 
 + Use **Ctrl+Space** to activate IntelliSense at any place in the code, which will help you identify possible options.
 + Always use the `.al` extension on new files.
-+ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by starting typing `t` and pick from the list.
++ Use the built-in [snippets for code](devenv-syntax.md#ExamplesOfSnippets) by typing `t` and choose the desired snippet from the list.
 + Create objects within the right object ranges, see [Object Ranges in Dynamics 365 Business Central](devenv-object-ranges.md).
 + Build and get inspired by our sample library on [GitHub](https://github.com/Microsoft/bctech).
 + Use **Ctrl+Shift+P** and select **AL: Clear credentials cache** to clear the credentials cache if you want to deploy against a different environment.
 + Use **F2** to rename objects, types etc. For more information, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md#editing-in-visual-studio-code).
-
 
 ## JSON file settings
 
@@ -58,7 +60,7 @@ Use the AL configuration settings to specify general preferences for working wit
 
 ## Telemetry settings
 
-By default, Visual Studio Code is set up with a telemetry system to enable that data and errors are sent to Microsoft. If you do not want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`. 
+By default, Visual Studio Code is set up with a telemetry system to make sure that data and errors are sent to Microsoft. If you don't want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`.
 
 To modify the telemetry setting, press **Ctrl+Shift+P** in Visual Studio Code and choose **User Settings**, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false` like shown below.
  
@@ -77,11 +79,11 @@ The symbol file contains metadata of the application. This is what your extensio
 
 To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
 
-## Controlling user access to developing and publishing extensions
+## Controlling user access to develop and publish extensions
 
-The access to developing and publishing extensions is controlled on a user or user group basis by the **EXTEND. MGT. - ADMIN** permission set. It is important that the **EXTEND. MGT. - ADMIN** isn't specified for a specific company, but left blank.
+The access to develop and publish extensions is controlled on a user or user group basis by the **EXTEND. MGT. - ADMIN** permission set. It's important that the **EXTEND. MGT. - ADMIN** isn't specified for a specific company, but left blank.
 
-If you add new permission sets and want to control the access to developing and publishing extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
+If you add new permission sets and want to control the access to develop and publish extensions, you must include indirect read and write permissions to the **Published Application** table (read – for downloading symbols, write – for publishing the app) in the permission set.
 
 To prohibit a user from publishing, just remove the user from the **EXTEND. MGT. - ADMIN** permission set.
 
@@ -90,9 +92,9 @@ To prohibit a user from publishing, just remove the user from the **EXTEND. MGT.
 
 ## Next steps
 
-Now that you have the tools and the `HelloWorld` example up and running, you might want to try to create a small sample app in AL. This walkthrough guides you through how to create a simple app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
+Now that you have the tools and the `HelloWorld` example up and running, you might want to create a small sample app in AL. This walkthrough guides you to create an app adding objects, code, and publishing the app to your tenant. For more information, see [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](devenv-extension-example.md).
 
-## See Also 
+## See Also
 
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  

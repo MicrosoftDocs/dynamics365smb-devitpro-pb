@@ -1,9 +1,9 @@
 ---
-title: "NumberSequence.Current(String [, Boolean]) Method"
+title: "NumberSequence.Current(Text [, Boolean]) Method"
 description: "Gets the current value from the number sequence, without doing any increment."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# NumberSequence.Current(String [, Boolean]) Method
+# NumberSequence.Current(Text [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 4.0._
 
 Gets the current value from the number sequence, without doing any increment. The value is retrieved out of transaction. The value will not be returned on transaction rollback.
@@ -21,12 +21,13 @@ Gets the current value from the number sequence, without doing any increment. Th
 
 ## Syntax
 ```AL
-Current :=   NumberSequence.Current(Name: String [, CompanySpecific: Boolean])
+Current :=   NumberSequence.Current(Name: Text [, CompanySpecific: Boolean])
 ```
 ## Parameters
 *Name*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name of the number sequence.  
+
 *[Optional] CompanySpecific*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies if the number sequence is company-specific. Default is true.  

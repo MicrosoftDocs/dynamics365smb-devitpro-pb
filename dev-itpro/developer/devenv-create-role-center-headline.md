@@ -1,5 +1,6 @@
 ---
 title: "Create a Role Center Headline"
+description: You can provide information and insights as headlines on Role Centers.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -11,7 +12,7 @@ author: jswymer
 
 # Creating a Role Center Headline
 
-You can set up a Role Center to display a series of headlines, where headlines appear one at a time for a predefined period of time before displaying the next.
+You can set up a Role Center to display a series of headline texts that appear one by one for a predefined period of time.
 
 ![Headline part.](media/headlineApril19.png "Headline part on a Role Center")
 
@@ -26,6 +27,9 @@ The headlines can provide users with up-to-date information and insight into the
 
 > [!IMPORTANT]
 > Headlines will only appear in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)]; they will not be shown on other client types.
+
+> [!Note]
+> Headlines can display numbers and letters only. For example, headlines cannot display images.
 
 ## Design concept
 

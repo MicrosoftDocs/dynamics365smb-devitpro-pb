@@ -85,8 +85,8 @@ First of all, make sure that you avoid common pitfalls in your SQL Server setup:
 
 These articles describe how you can use SQL Server table partitioning and data compression to get faster data retrieval:
 
-- [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning)  
-- [Using SQL Server data compression](../administration/optimize-sql-data-access.md#Compression)  
+- [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md)  
+- [Using SQL Server data compression](../administration/optimize-sql-data-access.md)  
 
 #### SQL Server vs. Azure SQL database
 

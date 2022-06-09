@@ -1,9 +1,9 @@
 ---
-title: "JsonObject.Contains(String) Method"
+title: "JsonObject.Contains(Text) Method"
 description: "Verifies if a JsonObject contains a property with a given key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Contains(String) Method
+# JsonObject.Contains(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Verifies if a JsonObject contains a property with a given key.
@@ -21,7 +21,7 @@ Verifies if a JsonObject contains a property with a given key.
 
 ## Syntax
 ```AL
-Ok :=   JsonObject.Contains(Key: String)
+Ok :=   JsonObject.Contains(Key: Text)
 ```
 ## Parameters
 *JsonObject*  
@@ -29,7 +29,7 @@ Ok :=   JsonObject.Contains(Key: String)
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
 
 

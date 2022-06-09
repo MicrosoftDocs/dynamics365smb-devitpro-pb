@@ -1,9 +1,9 @@
 ---
-title: "Update 20.1 for Microsoft Dynamics 365 Business Central 2022 Release Wave 1"
+title: Update 20.1 for Business Central online
 description: Get an overview of new and changed capabilities in the 20.1 update of Business Central online, which is part of 2022 release wave 1.
-ms.author: a-emniel
+ms.author: edupont
 ms.custom: na
-ms.date: 05/05/2022
+ms.date: 05/12/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,7 +18,7 @@ Would you like to know what has changed in update 20.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-1-39901-platform-build-20-0-39849-60a0fe56-57b5-41b1-90ee-29694d59ad3b).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-20-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-1-39901-platform-build-20-0-39849-60a0fe56-57b5-41b1-90ee-29694d59ad3b).
 
 ## Feature changes  
 
@@ -39,25 +39,25 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Release Plan  
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for Business Central online in 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 20.1
+## Get the update
 
-Please note that new customers will automatically get the latest builds of Business Central (20.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+New customers will automatically get the latest update of Business Central (20.1). Admins of  existing environments will receive an email notification as soon as the environment has been updated. For more information, see [Major Updates and Minor Updates for Business Central Online](..//administration/update-rollout-timeline.md).  
 
 ## Good to know
 
-**Later in May: General availability of the Shopify Connector**  
-Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central customers create a better online shopping experience. With update 20.1 it will be possible for trial users to try out the Shopify connector, which will be available for Business Central customers later in May 2022, releasing on AppSource and Shopify App Store. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
+**Shopify Connector**  
+Microsoft is teaming up with Shopify to help our Dynamics 365 Business Central customers create a better online shopping experience. With update 20.1, the Shopify Connector is available for new customers and for trial users to try it out. For existing customers, the Shopify connector will become available later in May, releasing on AppSource and Shopify App Store. Read more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/shopify-connector).
 
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
-**Business Central newsletter for partners**  
-Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
+<!--**Business Central newsletter for partners**  
+Starting May 11 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).-->
 
 **Updated documentation and samples related to Power Automate**  
-Documentation related to Power Automate integration and the new “Automate” feature has been updated in May 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
+Documentation related to Power Automate integration and the new **Automate** feature has been updated in May 2022 and is available at [aka.ms/BCAutomate](https://aka.ms/bcautomate). There are also some sample flows published in our github repository – find it under [aka.ms/BCTech](https://aka.ms/bctech). We also recommend watching the What’s new in Business Central and Power Platform session at he Business Central Virtual Launch Event. Find it on [aka.ms/BCLE](https://aka.ms/bcle).
 
 **Discover the features for 2022 release wave 1**  
 Discover what's new and planned for Dynamics 365 Business Central 2022 release wave 1. You can find the list of features here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan).

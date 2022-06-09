@@ -59,7 +59,7 @@ The following table explains other custom dimensions that are common to all task
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company in which the task was run.|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -219,7 +219,9 @@ The following table explains the general dimensions of this trace.
 
 ## Task completed
 
-Occurs when the execution of a task's main codunit or failure codeunit succeeds with no errors. 
+Occurs when the execution of a task's main codeunit or failure codeunit succeeds with no errors.
+
+Note that there is no event emitted for task started. You can infer the task-start time by subtracting the totalTime from the task completed timestamp.
 
 ### General dimensions
 

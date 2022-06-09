@@ -1,9 +1,9 @@
 ---
-title: "JsonObject.ReadFrom(String) Method"
+title: "JsonObject.ReadFrom(Text) Method"
 description: "Reads the JSON data from the string into a JsonObject variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.ReadFrom(String) Method
+# JsonObject.ReadFrom(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads the JSON data from the string into a JsonObject variable.
@@ -21,7 +21,7 @@ Reads the JSON data from the string into a JsonObject variable.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonObject.ReadFrom(String: String)
+[Ok := ]  JsonObject.ReadFrom(String: Text)
 ```
 ## Parameters
 *JsonObject*  
@@ -29,7 +29,7 @@ Reads the JSON data from the string into a JsonObject variable.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The String object from which the JSON data will be read.  
 
 
