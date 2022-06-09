@@ -3,7 +3,7 @@ title: "SaveValues Property"
 description: "Sets whether user-specific control values are saved for this page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,15 +32,18 @@ Sets whether user-specific control values are saved for this page.
   
 ## Remarks  
 
-This information is saved in the `Page Data Personalization` table.  
+The **SaveValues** property enables the *Saved Settings* feature on the request page, which saves a predefined group of options for a page or request page. When this property is enabled, filters that users set on the request page will be stored in the database, in the `Page Data Personalization` table. As a result, the filters are still set the next time request page is opened.
 
-The **SaveValues** property enables the *Saved Settings* feature, that is, to save a predefined group of options for a page or request page. Filters are only saved for request pages. You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings).
+Filters are only saved when the request page is closed after the user selects either **Print** or an action from the **Send To** menu. The filters aren't saved when the request page closes after the user selects **Preview** or **Cancel**.
+
+You can later use the saved settings to consistently generate the same reports, XMLports, or batch jobs. For more information about users work with saved settings, see [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings) in the business functionality help.
 
 > [!NOTE]
-> When the [AllowScheduling Property](devenv-allowscheduling-property.md) is set to **false**, it cancels the effect of the **SaveValues** property in a request page, since the report won't support multiple views. 
-  
+> Together with the [AllowScheduling Property](devenv-allowscheduling-property.md), this property also determines whether the report supports multiple previews. When both the **AllowScheduling** and **SaveValues** properties are set to **true**, users can preview the report from the request page as many times as the like, without having the request page close. This capability lets users change filters, see what the generated report will look like, and then try again. If either property is set to **false**, the report won't support multiple previews and the request page closes once the user previews the report. In this case, the request page includes a **Preview and Close** button instead of **Preview**.
+
 ## See Also
 
+[Request Pages](../devenv-request-pages.md)  
 [Properties](devenv-properties.md)  
 [Manage Saved Settings for Reports and Batch jobs](/dynamics365/business-central/reports-saving-reusing-settings)  
 [Using Saved Settings](/dynamics365/business-central/ui-work-report#SavedSettings)  
