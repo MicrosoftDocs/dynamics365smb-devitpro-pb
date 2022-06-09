@@ -8,7 +8,7 @@ ms.author: soalex
 ms.reviewer: edupont
 ---
 
-# Get Users Started with the Checklist
+# Pivoting experiences with a signupContext
 
 When the user hits **Get started** on their Home page, a checklist is revealed inside the banner. The checklist provides users with an overview of their onboarding activities, while allowing them to learn and explore at their own pace. The checklist serves as a platform for surfacing page tours, guiding users in the product interface, and teaching users how to use the app in context. The checklist provides a sense of progression, nudging users to complete onboarding activities. Users can navigate between the tasks of the checklist at their own pace. Checklist tasks can point to pages or objects in [!INCLUDE [prod_short](../includes/prod_short.md)] or point to external URLs. Read more about the checklist content in the [Prerequisites for creating checklist items](#prerequisites-for-creating-checklist-items) section.
 
