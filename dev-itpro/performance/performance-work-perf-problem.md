@@ -2,7 +2,7 @@
 title: "How to Work with a Performance Problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 04/01/2022
+ms.date: 06/02/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,6 +58,12 @@ If you want to capture all SQL queries for a short period of time for a given se
 Read more about additional logging in the [Troubleshooting](/dynamics365/business-central/product-help-and-support#troubleshooting) section of the Resources for Help and Support article in the business functionality docs.
 
 With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, you can also change the default threshold that defines long running queries. For more information, see [Analyzing Long Running Operation (SQL Query) Telemetry](../administration/telemetry-long-running-sql-query-trace.md).
+
+## Analyzing performance issues using database missing indexes
+
+If you notice that the information retrieval from your database is slow, you can index columns that are frequently used by the application. You can see the list of potential columns that can be indexed and other useful information about them on **Database Missing Indexes**. This information will help you to optimize the performance of your database and application.
+
+For more information about missing indexes and how they help you in achieving performance objectives, see [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md).
 
 ## Analyzing performance issues using the page inspector
 

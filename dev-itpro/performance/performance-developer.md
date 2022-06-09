@@ -2,7 +2,7 @@
 title: "Performance Article For Developers"
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -270,6 +270,7 @@ These articles on indexing are worth knowing as an AL developer:
 - [About Table Keys](../developer/devenv-table-keys.md) 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
+- [Missing Indexes](../administration/database-missing-indexes.md)
 
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
@@ -432,4 +433,6 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
 [Performance tips for business users](performance-users.md)  
+[Database Missing Indexes](../administration/database-missing-indexes.md)  
 [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
+
