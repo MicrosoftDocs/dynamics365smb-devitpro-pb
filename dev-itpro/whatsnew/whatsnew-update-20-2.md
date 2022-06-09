@@ -1,9 +1,9 @@
 ---
 title: "Update 20.2 for Microsoft Dynamics 365 Business Central 2022 Release Wave 1"
 description: Get an overview of new and changed capabilities in the 20.2 update of Business Central online, which is part of 2022 release wave 1.
-ms.author: a-emniel
+ms.author: edupont
 ms.custom: na
-ms.date: 06/02/2022
+ms.date: 06/09/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,7 +29,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|W1 | New field 'Intrastat Partner Type' on Customer and Vendor cards | The Intrastat Partner Type field has replaced the Parter Type field in Intrastat reporting. Partner Type is used in SEPA to define the SEPA Direct Debit Scheme (Core or B2B). Intrastat Partner Type is used for Intrastat reporting only. This way, users can specify different values for the two fields if they need to. More details about setup [here](/dynamics365/business-central/finance-how-setup-report-intrastat). |
+|W1 | New field, **Intrastat Partner Type**, on customer and vendor cards | The Intrastat Partner Type field has replaced the Parter Type field in Intrastat reporting. Partner Type is used in SEPA to define the SEPA Direct Debit Scheme (Core or B2B). Intrastat Partner Type is used for Intrastat reporting only. This way, users can specify different values for the two fields if they need to. More details about setup [here](/dynamics365/business-central/finance-how-setup-report-intrastat). |
 | W1 | Improvement in creating Intrastat file for item with supplementary UOM and without weight | When the line in Intrastat has supplementary unit of measure, weight for the item is not necessary. Now users can create the file even if they don't have weight for the item on Intrastat line if this item uses supplementary unit of measure. |
 
 ## Release Plan  
