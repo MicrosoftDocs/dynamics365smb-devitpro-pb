@@ -18,12 +18,11 @@ Would you like to know what has changed in update 20.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-1-39901-platform-build-20-0-39849-60a0fe56-57b5-41b1-90ee-29694d59ad3b).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-2-41423-platform-build-20-0-41354-7e726f77-5ab9-4221-ab45-a8cb7e2b28df).
 
 ## Feature changes  
 
 - [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
-- [Receive notifications in the Microsoft 365 Message center](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/receive-notifications-365-message-center)
 
 
 ## Localization updates
