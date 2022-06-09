@@ -185,7 +185,7 @@
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
-### [Pivot the user experience with a signupContext](administration/onboarding-signupcontext.md)
+### [Pivot onboarding based on sign-up context](administration/onboarding-signupcontext.md)
 ### [Recommend apps](administration/recommend-apps.md)
 <!-- telemetry -->
 ## Monitor and analyze telemetry
