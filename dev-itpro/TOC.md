@@ -954,6 +954,7 @@
 #### [Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Database Table Information](/dynamics365/business-central/admin-view-table-information)
 #### [Database Locks](/dynamics365/business-central/admin-view-database-locks)
+#### [Missing Indexes](administration/database-missing-indexes.md)
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
