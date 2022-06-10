@@ -2,7 +2,7 @@
 title: "Upgrading Reports"
 description: Describes how to upgrade reports  
 ms.custom: na
-ms.date: 03/30/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -89,7 +89,7 @@ Some events in codeunit **44 ReportManagement** and codeunit **9651 "Document Re
 
     ```al
     [IntegrationEvent(false, false)]
-    [Obsolete('Replaced by platform document merge using OnCustomDocumentMerger.', '20.0')]
+    [Obsolete('Replaced by platform document merge using OnCustomDocumentMergerEx.', '20.0')]
     local procedure OnMergeDocumentReport(ObjectType: Option "Report","Page"; ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; FileName: Text; var printDocumentStream: OutStream; var IsHandled: Boolean)
     begin
     end;
