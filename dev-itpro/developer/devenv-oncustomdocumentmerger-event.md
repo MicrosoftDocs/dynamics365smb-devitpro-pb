@@ -17,7 +17,7 @@ This article describes the syntax of the OnCustomDocumentMerger event which will
 
 ## Remarks  
 
-This event have been superseeded by a new event that also passes the report json payload in the parameter list. See [OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerex-event.md) for mere information.
+This event has been superseeded by a new event that also passes the report JSON payload in the parameter list. For more information, see [OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerex-event.md).
 
 ## Usage
 
