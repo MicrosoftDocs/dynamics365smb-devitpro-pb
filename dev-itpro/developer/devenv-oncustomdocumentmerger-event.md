@@ -15,6 +15,10 @@ author: jswymer
 
 This article describes the syntax of the OnCustomDocumentMerger event which will enable use of custom renders given a dataset and a layout. The layout must be specified as a Custom Layout in the rendering section within the report definition.
 
+## Remarks  
+
+This event have been superseeded by a new event that also passes the report json payload in the parameter list. See [OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerex-event.md) for mere information.
+
 ## Usage
 
 Use the OnCustomDocumentMerger event to specify what happens when the user has specified a custom report layout type that is to be rendered into an artifact in application code. For more information about subscribing to this event, see [Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md).

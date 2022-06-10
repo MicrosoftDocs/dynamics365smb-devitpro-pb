@@ -52,7 +52,7 @@ Codeunit **44 ReportManagement** includes new integration events for processing 
     end;
     
     [IntegrationEvent(false, false)]
-    local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
+    local procedure OnCustomDocumentMergerEx(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; ObjectPayload: JsonObject; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream; var IsHandled: Boolean)
     begin
     end;
     ```
@@ -72,6 +72,11 @@ Codeunit **44 ReportManagement** includes new integration events for processing 
     
     [IntegrationEvent(false, false)]
     local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnWordDocumentMergerAppMode(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
     begin
     end;
     ```
@@ -173,7 +178,7 @@ If you have custom code that subscribes to these events, you'll have to change t
 
 - `OnSelectReportLayoutCode`
 - `OnFetchReportLayoutByCode`
-- `OnCustomDocumentMerger`
+- `OnCustomDocumentMergerEx`
 
 <!--
 if the application has customizations in this area, it's possible to switch to backward compatibility mode (calling the application render logic as in previous versions) by:
@@ -197,9 +202,9 @@ Custom code that uses the `OnAfterHasCustomLayout` event must be reimplemented t
 
 ### Customization of OnMergeDocumentReport or OnBeforeMergeDocument
 
-Extensions that depend on the legacy Microsoft Word render by using the `OnMergeDocumentReport` or `OnBeforeMergeDocument` events must be changed to use the new custom report render type and subscribe to `OnCustomDocumentMerger` instead.
+Extensions that depend on the legacy Microsoft Word render by using the `OnMergeDocumentReport` or `OnBeforeMergeDocument` events must be changed to use the new custom report render type and subscribe to `OnCustomDocumentMergerEx` instead.
 
-By subscribing to `OnCustomDocumentMerger`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
+By subscribing to `OnCustomDocumentMergerEx`, the layouts can be added in the extension by using the `rendering` section in AL code of the report. The layout will then be stored in the platform layout tables.
 
 ## <a name="techupgrade"></a>Technical upgrade from 19 and earlier
 
@@ -243,15 +248,12 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
     3. In the ReportManagement.Codeunit.al file, add the following code:
 
         ```al
-        [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMerger', '', false, false)]
-        local procedure CustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream)
-        var
-            IsHandled: Boolean;
+        [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'CustomDocumentMergerEx', '', false, false)]
+        local procedure CustomDocumentMergerEx(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; ObjectPayload: JsonObject; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream; var Success: Boolean)
         begin
-            IsHandled := false;
-            OnCustomDocumentMerger(ObjectID, ReportAction, XmlData, LayoutData, DocumentStream, IsHandled);
-            if (IsHandled) then
+            if (Success) then
                 exit;
+            OnCustomDocumentMergerEx(ObjectID, ReportAction, ObjectPayload, XmlData, LayoutData, DocumentStream, Success);
         end;
         
         [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'OnDocumentReady', '', false, false)]
@@ -314,7 +316,7 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
                             else
                                 // Layout type extensions
                                 if (FeatureKey.Get(PlatformRenderingInPlatformTxt) and (FeatureKey.Enabled = FeatureKey.Enabled::"All Users")) then
-                                    // Platform rendering - The OnCustomDocumentMerger event will handle the rendering logic
+                                    // Platform rendering - The OnCustomDocumentMergerEx event will handle the rendering logic
                                     LayoutType := LayoutType::Custom
                                 else
                                     // App rendering - The type will be treated like a word file and rendered by the app.
@@ -362,7 +364,18 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
             if IsHandled then
                 exit;
         end;
-        
+
+        [EventSubscriber(ObjectType::Codeunit, Codeunit::"Reporting Triggers", 'WordDocumentMergerAppMode', '', false, false)]
+        local procedure WordDocumentMergerAppMode(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean)
+        var
+            IsHandled: Boolean;
+        begin
+            if InApplication = true then // Handled in another subscriber
+                exit;
+            IsHandled := false;
+            OnWordDocumentMergerAppMode(ObjectId, LayoutCode, InApplication, IsHandled);
+        end;
+
         [IntegrationEvent(false, false)]
         local procedure OnAfterDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
         begin
@@ -374,10 +387,10 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
         end;
         
         [IntegrationEvent(false, false)]
-        local procedure OnCustomDocumentMerger(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; XmlData: InStream; LayoutData: InStream; var printDocumentStream: OutStream; var IsHandled: Boolean)
+        local procedure OnCustomDocumentMergerEx(ObjectID: Integer; ReportAction: Option SaveAsPdf,SaveAsWord,SaveAsExcel,Preview,Print,SaveAsHtml; ObjectPayload: JsonObject; XmlData: InStream; LayoutData: InStream; var DocumentStream: OutStream; var IsHandled: Boolean)
         begin
         end;
-        
+
         [IntegrationEvent(false, false)]
         local procedure OnSelectReportLayoutCode(ObjectId: Integer; var LayoutCode: Text; var LayoutType: Option "None",RDLC,Word,Excel,Custom; var IsHandled: Boolean)
         begin
@@ -390,6 +403,20 @@ The `OnAfterHasCustomLayout` event has been replaced with the following events:
         
         [IntegrationEvent(false, false)]
         local procedure OnApplicationReportMergeStrategy(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
+        begin
+        end;
+
+        /// <summary>
+        /// Select between platform or application report rendering for Word reports only. 
+        /// If this trigger return InApplication = true, then run the report and layout in the legacy OnMergeDocumentReport event.
+        /// </summary>
+        /// <param name="ObjectId">The object id.</param>
+        /// <param name="LayoutCode">The report layout code if an application override has been set for the current run.</param>
+        /// <param name="InApplication">True if the applicaction should render the report.</param>
+        /// <param name="IsHandled">Will be set to true if the subscriber handled the action.</param>
+        /// <remarks>This event is for backward compatibility only and will be depricated.</remarks>
+        [IntegrationEvent(false, false)]
+        local procedure OnWordDocumentMergerAppMode(ObjectId: Integer; LayoutCode: Text; var InApplication: boolean; var IsHandled: Boolean)
         begin
         end;
         ```
@@ -454,4 +481,4 @@ if the application has customizations in this area, it's possible to switch to b
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
-[Custom Report Render Event](../developer/devenv-oncustomdocumentmerger-event.md)
+[Custom Report Render Event](../developer/devenv-oncustomdocumentmergerex-event.md)
