@@ -1,6 +1,6 @@
 ---
 title: "Data Transfer"
-description: "Learn about the DataTransfer objet type and how to use it to move data between tables."
+description: "Learn about the DataTransfer object type and how to use it to move data between tables."
 author: jswymer
 
 ms.custom: na
@@ -10,7 +10,7 @@ ms.author: jswymer
 ms.date: 06/10/2022
 ---
 
-# Transferring Data for Upgrade
+# Transferring Data as Part of Upgrade
 
 The DataTransfer object is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, as the record API does, it produces SQL code that operates on sets and allows for far more performant execution. Since it operates in bulk and not on a row-by-row basis, no row based events or triggers will be executed, f.e. when calling CopyFields none of the following events will be called: OnBeforeModify, OnModify, or OnAfterModify, and when calling CopyRows none of the following events will be called: OnBeforeInsert, OnInsert, or OnAfterInsert.
 
@@ -29,7 +29,7 @@ Calling CopyFields on the DataTransfer object will copy selected fields in the s
 
 An example scenario is obsoleting a field and moving its data into another table can be  achieved most performantlty using DataTransfer.
 
-As an example consider that we want to obsolete the field "A3" in the table "Source" and therefore want to move its values into the field "B3" on table "Destination". A further restriction is that it should only be done for rows where the field "A2" is equal to 'A'.
+As an example, consider that we want to obsolete the field "A3" in the table "Source" and therefore want to move its values into the field "B3" on table "Destination". A further restriction is that it should only be done for rows where the field "A2" is equal to 'A'.
 The code to accomplish this can be found in [listing 1](#listing-1-using-datatransfer-to-transfer-the-values-of-fields-with-field-number-2-and-3-from-the-source-table-to-the-destination-table) with the input and output specified in [table 1](#table-1-example-data-for-source-and-destination-followed-by-the-result-after-executing-the-code-in).
 
 ```AL
@@ -85,9 +85,9 @@ end;
 
 ### Performance
 
-The same scenario could also be coded using the record API, by first looping over all rows in the table "Source" with a filter on field "A2", then for each match calling Get on the destionation record, setting the fields, and calling Modify.
+The same scenario could also be coded using the record API, by first looping over all rows in the table "Source" with a filter on field "A2", then for each match calling Get on the destination record, setting the fields, and calling Modify.
 
-The record based solution executes three SQL operations per-row, while the DataTransfer does max two SQL queries all-in-all. Measuring execution timings for both DataTransfer and Record API based solutions, they show a ~200x performance improvement for DataTransfer. These gains will significantly better if the destionation table has Modify triggers or if the execution environment has significant latency to SQL.
+The record based solution executes three SQL operations per-row, while the DataTransfer does max two SQL queries all-in-all. Measuring execution timings for both DataTransfer and Record API based solutions, they show a ~200x performance improvement for DataTransfer. These gains will significantly better if the destination table has Modify triggers or if the execution environment has significant latency to SQL.
 
 ### Uniqueness in the source table
 
