@@ -2,7 +2,7 @@
 title: "OnCustomDocumentMergerEx Event"
 description: Describe the OnCustomDocumentMergerEx Event in Business Central.
 ms.custom: na
-ms.date: 01/26/2022
+ms.date: 06/10/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: jswymer
 
 # OnCustomDocumentMergerEx Event
 
-This article describes the syntax of the OnCustomDocumentMergerEx event which will enable use of custom renders given a dataset and a layout. The layout must be specified as a Custom Layout in the rendering section within the report definition.
+This article describes the syntax of the OnCustomDocumentMergerEx event, which will enable use of custom renders given a dataset and a layout. The layout must be specified as a Custom Layout in the rendering section within the report definition.
 
 ## Usage
 
@@ -89,9 +89,9 @@ Specifies whether the extension handled the merge action successfully.
 > - Download to the client
 > - Print or preview
 
-## Sample Code
+## Sample code
 
-The simplest possible custom document render can can be implemented like the following sample that will use the existing application logic to render Xml datasets into Microsoft Word or Pdf documents using a given template (Word template).
+The simplest possible custom document render can be implemented as shown in the following sample, which will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
 
 ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMergerEx', '', true, true)]
@@ -227,7 +227,7 @@ Specifies the ID of the user who invoked the print action.
 
 *invokeddatetime*
 
-Specifies the date and time that the print action was invoked, for example, 2019-10-22T22:25:54.338+02:00. The value is the date and time on the client machine.  
+Specifies the date and time that the print action was invoked. For example, 2019-10-22T22:25:54.338+02:00. The value is the date and time on the client machine.  
 
 *companyname*
 
@@ -289,11 +289,11 @@ Specifies a mime type that identifies the custom layout type.
 
 ## See Also
 
-[Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)
-[Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md)
-[Developing Printer Extensions Overview](devenv-reports-printing.md)
-[Creating a Printer Extension](devenv-reports-create-printer-extension.md)
-[Events in AL](devenv-events-in-al.md)
-[Publishing Events](devenv-publishing-events.md)
-[Raising Events](devenv-raising-events.md)
-[Subscribing to Events](devenv-subscribing-to-events.md)
+[Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)  
+[Developing Report Custom Render Extensions Overview](devenv-report-custom-render.md)  
+[Developing Printer Extensions Overview](devenv-reports-printing.md)  
+[Creating a Printer Extension](devenv-reports-create-printer-extension.md)  
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
+[Subscribing to Events](devenv-subscribing-to-events.md)  
