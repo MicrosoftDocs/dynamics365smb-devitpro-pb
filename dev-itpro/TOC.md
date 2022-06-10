@@ -65,7 +65,8 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 20.1](whatsnew/whatsnew-update-20.1.md)
+### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
+### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 ### Updates for earlier major versions
 #### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 #### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
@@ -953,6 +954,7 @@
 #### [Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Database Table Information](/dynamics365/business-central/admin-view-table-information)
 #### [Database Locks](/dynamics365/business-central/admin-view-database-locks)
+#### [Missing Indexes](administration/database-missing-indexes.md)
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)

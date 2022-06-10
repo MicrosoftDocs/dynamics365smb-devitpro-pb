@@ -2,7 +2,7 @@
 title: "Table Keys"
 description: Learn about table keys in Business Central
 ms.custom: na
-ms.date: 11/30/2021
+ms.date: 06/02/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,6 +50,9 @@ When you define a secondary key and mark it as [enabled](properties/devenv-enabl
 A secondary key can be disabled so that it doesn't occupy database space or use time during updates to maintain its index. Disabled keys can be re-enabled, although this operation can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
 
 The fields that make up the secondary keys don't always contain unique data. SQL Server doesn't reject records with duplicate data in secondary key fields. So if two or more records contain identical information in the secondary key, SQL Server uses the table's primary key to resolve this conflict.
+
+>[!TIP]
+>You can see a list of potential columns that can be indexed and other useful information about them in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on **Database Missing Indexes**. For more information on missing indexes, see [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md)
 
 ### Unique secondary keys
 
