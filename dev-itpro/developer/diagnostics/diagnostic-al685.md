@@ -3,12 +3,11 @@ title: "Compiler Warning (Future Error) AL0685"
 description: "The length '{0}' of the calculation formula's target field '{1}' is greater than the length '{2}' of the source flow field '{3}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

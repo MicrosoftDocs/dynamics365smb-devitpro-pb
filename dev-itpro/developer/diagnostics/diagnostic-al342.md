@@ -3,12 +3,11 @@ title: "Compiler Error AL0342"
 description: "You cannot combine two DataItems at the same level because unions are not supported."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

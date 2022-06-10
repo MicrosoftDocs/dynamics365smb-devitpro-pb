@@ -3,12 +3,11 @@ title: "Compiler Error AL1042"
 description: "The id '{0}' for the package with publisher '{1}', name '{2}', and version '{3}' specified in the project manifest does not match the id '{4}' of the package with the same name, publisher, and version found in the package cache folder."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
