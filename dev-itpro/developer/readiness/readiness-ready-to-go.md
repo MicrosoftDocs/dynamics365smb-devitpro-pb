@@ -1,102 +1,91 @@
 ---
-title: "Ready to Go"
+title: BC All resources
 description: "Ready to Go contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
-author: SusanneWindfeldPedersen
+author: a-emniel
 ms.custom: na
-ms.date: 07/01/2021
+ms.date: 10/06/2022
 ms.reviewer: na
 ms.topic: conceptual
-ms.author: solsen
+ms.author: a-emniel
 ---
 
-# "Ready to Go" Resources
+# Welcome to BC All
 
-![ReadyToGo Banner.](../media/readytogo-banner.png)
+Are you a Microsoft partner working with Business Central? And are you struggling to find the relevant resources? Find them all in this article.
 
-## Roadmap and what’s new
+## What’s new 
+- Business Central release plan: https://aka.ms/BCReleasePlan 
+- Major updates: https://aka.ms/BCUpdates 
+- Minor updates: https://aka.ms/BCLastMinorUpdate 
+- Preview for next major update: https://aka.ms/BCMajorUpdates
+- Watch the what’s new launch event sessions: https://aka.ms/BCLE 
+- Join the office hours calls: https://aka.ms/BCOfficeHours 
+- Find on-demand recordings of office hours calls here: https://aka.ms/BCOfficeHoursRecordings
+- Get the latest preview version and give feedback: https://aka.ms/Collaborate
+- Missing a feature? Post or vote for ideas on: https://aka.ms/BCIdeas 
 
-**Overall roadmap**  
-Find the overall roadmap for Business Central [here](https://dynamics.microsoft.com/roadmap/business-central/)
+## Social and blogs
+- Stay tuned about what’s going on in the #MSDyn365BC community: https://twitter.com/MSDYN365BC (Use #BCALHelp on Twitter for quick hints on how to do things) 
+- Be a part of the community for Business Central: https://community.dynamics.com/business 
+- Engage with us on LinkedIn: TBA
+- Blog for IT Professionals: https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/
+- Blog for decision makers: https://cloudblogs.microsoft.com/dynamics365/bdm
 
-**What’s new in Business Central**  
-Find what’s new and planned [here](/dynamics365/business-central/product-news)
+## Partner readiness and programs
+- Get started as a partner (reselling Business Central): https://aka.ms/BCReseller
+- Essential partner resources (marketing material): https://aka.ms/BCPartnerPortal  
+- Browse all Business Central learning courses: https://aka.ms/BCLearn 
+- Supported countries, regions, and languages: https://aka.ms/BCCountries 
+- Join the conversation on Yammer for partners: https://aka.ms/BCYammer  
+- Online or in-person training and coaching for Business Central. Contact an ISV Development Center: https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center  
+- The Universal Code Initiative: https://aka.ms/BCUniversalCode 
 
-**Release plan landing page**  
-Find out what's new in Microsoft Dynamics 365 applications and Microsoft Power Platform [here](/dynamics365/release-plans/)
+## Go to market 
+- Business Central homepage: https://dynamics.microsoft.com/business-central/overview/  
+- Try Business Central for free (30-day trial): https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409
+- Business Central customer stories: https://aka.ms/BCCustomerStories 
+- Discover useful resources for partners on https://aka.ms/BCPartnerPortal 
 
-**Minor updates**  
-Find the latest minor update here: [aka.ms/BCLastMinorUpdate](../../whatsnew/whatsnew-update-17-5.md)
+## Customer onboarding and resources 
+- Discover all Business Central apps on AppSource: https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central (INDSÆT AKA LINK)
+- Get started with reporting: https://aka.ms/BCReporting
+- Business Central and Power BI: http://aka.ms/BCPI 
+- Productivity tips: https://aka.ms/BCProductivity 
+- Keyboard shortcuts: https://aka.ms/BCKeys 
 
-## Country availability and supported languages  
-**Supported countries, regions and languages**  
-Find the countries/regions where Business Central is available and discover which languages are supported: [aka.ms/BCCountries](../../compliance/apptest-countries-and-translations.md)
+## Migrating from on-premises to cloud (online) 
+- Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, Business Central on-premises customers to Business Central online: https://aka.ms/BCMigrations  
+- Use migration tooling: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/migrate-data 
 
-## Training and coaching 
-**ISV Development Centers**  
-Online or in-person coaching for Business Central. Get in touch with an ISV Development Center [here](https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center)  
+## Getting support 
+- Managing technical support for customers: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/manage-technical-support 
 
-**Microsoft Learn page**  
-Browse all Business Central training videos and courses on Microsoft Learn: [aka.ms/BCLearn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-comms)
+## Developing for Business Central in general 
+- Get started with developing apps: https://aka.ms/BCPublisher
+- Business Central technology samples: https://aka.ms/BCTech
+- Maintain your app(s): https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/app-maintain 
+- INDSÆT TO GITHUB LINKS (DAG 2 DIRECTIONS)
+- Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues 
+- Ask your questions related to app development in the App Development group on Yammer: https://aka.ms/BCYammer 
 
-## Events
+## Developing apps for AppSource
+- AppSource marketing checklist: https://aka.ms/AppSourceGo
+- AppSource technical checklist: https://aka.ms/CheckBeforeYouSubmit 
+- AppSource technical FAQ: https://aka.ms/TechValidationFAQ 
+- Setup DevOps for your AppSource apps: https://aka.ms/AL-Go-AppSource 
+- Ask your question related to AppSource in the AppSource group on Yammer: https://aka.ms/BCYammer 
+- Development of a localization app: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/readiness/readiness-develop-localization 
 
-**Microsoft hosted events**  
-Discover the latest Business Central Launch Event here: [aka.ms/MSDyn365BCLaunchEvent](https://aka.ms/MSDyn365BCLaunchEvent)  
+## Developing customer specific solutions
+- Setup DevOps for your customer projects: https://aka.ms/AL-Go-PTE
+- INDSÆT NOGET MERE
 
-**Global community hosted events**  
-- [Directions North America](https://www.directionsna.com)
-- [Directions EMEA](https://directions4partners.com)
-- [Directions ASIA](https://directions4partners.com)
-- [TechDays](https://navtechdays.com)
+## Telemetry and performance 
+- App performance documentation: https://aka.ms/BCPerformance
+- AppInsights Telemetry documentation: https://aka.ms/BCTelemetry 
+- AppInsights Telemetry samples: https://aka.ms/BCTelemetrySamples 
 
-## Engagement
-
-**GitHub**  
-Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues/) 
-
-**Yammer**  
-Join the conversation about Business Central for partners on Yammer: [aka.ms/BCYammer](https://aka.ms/bcyammer)  
-
-**Business Central Office Hours Calls**  
-Join the Business Central Office Hours to learn more and connect with the Business Central engineering team. Find the full list of office hours calls from below. Register for the live calls at [aka.ms/BCOfficeHours](https://aka.ms/BCOfficehours) and find on-demand recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficehoursRecordings).
-
-| Date      | Topic |
-|--------------|--------------|
-|May 3, 2022 | Permissions and entitlements |
-|April 26, 2022 | Delegated administration of Business Central (GDAP) |
-|March 8, 2022 | Business Central apps in AppSource|
-|February 22, 2022 |  How to use OAuth, when calling Business Central APIs and web services|
-|February 1, 2022 | How we secure your data in Business Central|
-|January 11, 2022 | Universal Code Initiative |
-|December 14, 2021 | Performance Toolkit and Profiler|
-|December 7, 2021 | Using telemetry to improve your partner practices and processes |
-|November 30, 2021 | Can Business Central Online (SaaS) handle large customers?|
-|November 9, 2021 |  Improvements to data synchronization to Dataverse and Dynamics 365 Sales|
-|October 12, 2021 | Business Central apps in AppSource |
-|September 14, 2021 | How to use OAuth, when calling Business Central APIs and web services|
-
- > [!NOTE]  
- > You can always find the office hours recordings here: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).
-
-## Social
-
-**Twitter**  
-Follow us on Twitter to stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://www.twitter.com/MSDYN365BC) 
-
-**YouTube**  
-Subscribe to the Microsoft Dynamics 365 channel on YouTube [here](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) 
-
-**Blog for IT Professionals**  
-Business Central on the Dynamics 365 blog for IT Professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
- 
-**Blog for Decision Makers**  
-The Dynamics 365 blog for Business Decision Makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm/)
-
-## Migration
-**Transitioning GP and NAV customers to Business Central**  
-Discover assets for transitioning Dynamics GP and Dynamics NAV customers to Business Central: [aka.ms/BCMigrations](https://aka.ms/BCmigrations)
-
-### See Also
-
-Get started with developing apps: [aka.ms/BCPublisher](./get-started.md)  
-Get started with reselling apps: [aka.ms/BCReseller](../../administration/get-started-online.md)
+## Events 
+- Directions NA: https://directionsna.com  
+- Directions EMEA https://directions4partners.com  
+- Directions ASIA: https://directions4partners.com
