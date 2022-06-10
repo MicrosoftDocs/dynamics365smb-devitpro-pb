@@ -54,8 +54,8 @@ Starting in July 2022, Microsoft will roll out an update to the Excel add-in tha
 **Changes to the Per-Tenant Extensions Disclaimer**  
 The disclaimer for per-tenant extensions has changed. Find the new Business Central PTE disclaimer [here](https://go.microsoft.com/fwlink/?linkid=2193002&clcid=0x409).
 
-**Business Central newsletter for partners**  
-Starting June 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
+<!--**Business Central newsletter for partners**  
+Starting June 2022, we're doing bi-monthly newsletter for Business Central partners. The newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).-->
 
 **Upcoming Business Central Office Hours Calls**  
 Join us for the upcoming office hours call on “Introducing Shopify for Business Central” on June 14 and “Onboarding your customers to Business Central” on June 21 (Note: we will have two time slots, an early one and a later one for the two calls). Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  

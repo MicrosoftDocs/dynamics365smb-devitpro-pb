@@ -3,12 +3,11 @@ title: "Compiler Error AL0430"
 description: "The parameter '{0}' has a type which is not serializable and therefore cannot be used in the given context."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
