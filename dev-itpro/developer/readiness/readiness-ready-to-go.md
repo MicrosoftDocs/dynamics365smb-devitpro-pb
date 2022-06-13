@@ -11,18 +11,18 @@ ms.author: a-emniel
 
 # Welcome to BC All
 
-Are you a Microsoft partner working with Business Central? And are you struggling to find the relevant resources? Find them in this article.
+Are you a Microsoft partner working with Business Central and looking for relevant information? Find it all in this article.
 
 ## What’s new 
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
-- Preview for next major update: [aka.ms/BCMajorUpdates]https://aka.ms/BCMajorUpdates
-- Watch the what’s new launch event sessions: https://aka.ms/BCLE 
+- Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
+- Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: https://aka.ms/BCOfficeHours 
-- Find on-demand recordings of office hours calls: https://aka.ms/BCOfficeHoursRecordings
-- Get the latest preview version and give feedback: https://aka.ms/Collaborate
-- Missing a feature? Post or vote for ideas on: https://aka.ms/BCIdeas 
+- Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
+- Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate)
+- Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
 
 ## Social and blogs
 - Stay tuned about what’s going on in the #MSDyn365BC community: https://twitter.com/MSDYN365BC (Use #BCALHelp on Twitter for quick hints on how to do things) 
@@ -84,5 +84,4 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 
 ## Events 
 - Directions NA: https://directionsna.com  
-- Directions EMEA https://directions4partners.com  
-- Directions ASIA: https://directions4partners.com
+- Directions EMEA and Directions Asia https://directions4partners.com 
