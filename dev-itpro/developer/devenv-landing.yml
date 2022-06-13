@@ -19,7 +19,7 @@ landingContent:
             url: devenv-dev-overview.md
           - text: Get started with AL
             url: devenv-get-started.md
-          - text: Learn AL | Tutorials, courses, videos, and more 
+          - text: Learn AL through learning paths and modules
             url: https://docs.microsoft.com/en-us/users/baglearn-5620/collections/d82ki43w52m1m4
       - linkListType: video
         links:
