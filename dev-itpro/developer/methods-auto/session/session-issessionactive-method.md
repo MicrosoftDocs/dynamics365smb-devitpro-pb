@@ -48,5 +48,5 @@ Use this method to test if a session has completed or is still active, for examp
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

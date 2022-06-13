@@ -33,5 +33,5 @@ List of enum value names :=   Enum.Names()
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Enum Data Type](enum-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -158,4 +158,4 @@ From the [!INCLUDE[prod_short](includes/prod_short.md)] web client, you can open
 ## See Also
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md) 
+[Get Started with AL](devenv-get-started.md) 

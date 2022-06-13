@@ -30,5 +30,5 @@ To enable a custom report layout, the MimeType property must be set. The [Type (
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -42,5 +42,5 @@ The collection of substrings from the original string based on the collection of
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

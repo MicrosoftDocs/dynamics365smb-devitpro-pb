@@ -88,5 +88,5 @@ The following methods are available on instances of the Report data type.
 
 ## See Also  
 [Report Object](../../devenv-report-object.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

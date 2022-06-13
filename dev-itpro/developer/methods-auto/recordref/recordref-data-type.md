@@ -111,5 +111,5 @@ The RecordRef object can refer to any table in the database. Use the [Open metho
 If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

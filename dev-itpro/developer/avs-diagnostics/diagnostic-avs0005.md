@@ -24,5 +24,5 @@ Validate that the dependency information is correct and that the dependencies ar
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

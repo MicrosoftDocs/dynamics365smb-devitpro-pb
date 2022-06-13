@@ -161,5 +161,5 @@ Accessing Designer is controlled on a user or user group basis by the **D365 EXT
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)

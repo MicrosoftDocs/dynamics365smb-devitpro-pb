@@ -49,5 +49,5 @@ The following is an example of the output of the previous code:
 ## See Also
 
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

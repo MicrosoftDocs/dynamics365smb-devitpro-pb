@@ -116,5 +116,5 @@ Related to `UnknownValueImplementation` is the `DefaultImplementation` property,
 ## See Also
 
 [DefaultImplementation Property](devenv-defaultimplementation-property.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

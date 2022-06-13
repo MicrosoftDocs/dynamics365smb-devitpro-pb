@@ -26,5 +26,5 @@ For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS01
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

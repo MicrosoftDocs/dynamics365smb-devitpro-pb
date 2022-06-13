@@ -48,6 +48,6 @@ You use test methods that include AL code that tests the business logic in the a
 For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md)

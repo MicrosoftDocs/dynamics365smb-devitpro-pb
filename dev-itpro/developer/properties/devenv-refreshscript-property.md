@@ -28,5 +28,5 @@ Specifies the script which is invoked when the control add-in is refreshed.
 
 ## See Also 
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -69,5 +69,5 @@ The code sets the work date to January 1, 2018, and returns the new date in a me
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

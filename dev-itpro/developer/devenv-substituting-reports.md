@@ -74,4 +74,4 @@ For more information about raising events, see [Raising Events](devenv-raising-e
 [Subscribing to Events](devenv-subscribing-to-events.md)   
 [Events in AL](devenv-events-in-al.md)  
 [GetSubstituteReport Method](methods-auto/report/report-getsubstitutereportid-method.md)   
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  

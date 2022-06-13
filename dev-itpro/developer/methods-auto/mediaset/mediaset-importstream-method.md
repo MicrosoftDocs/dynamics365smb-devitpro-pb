@@ -109,5 +109,5 @@ end;
 If you run system table **2000000181 Tenant Media**, you should see the new images in the list.
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

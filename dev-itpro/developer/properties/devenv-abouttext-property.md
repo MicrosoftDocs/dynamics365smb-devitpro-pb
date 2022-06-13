@@ -75,7 +75,7 @@ AboutText = '**Sales Orders** can be sorted *Ascending* or *Descending*. Use the
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [AboutTitle property](devenv-abouttitle-property.md)  
 [AboutTextMl property](devenv-abouttextml-property.md)

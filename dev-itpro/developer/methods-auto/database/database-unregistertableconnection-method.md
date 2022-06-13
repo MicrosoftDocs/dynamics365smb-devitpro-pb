@@ -40,5 +40,5 @@ Specifies the name of the connection in your code, or the name of the primary ke
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

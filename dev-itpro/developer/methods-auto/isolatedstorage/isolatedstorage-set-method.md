@@ -52,5 +52,5 @@ The **Set** method initiates a write transaction, which means that it cannot be 
 
 ## See Also
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

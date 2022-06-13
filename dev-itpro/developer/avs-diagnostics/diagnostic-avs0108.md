@@ -24,5 +24,5 @@ The app has a dependency on one or more apps that are missing. Make sure all the
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
