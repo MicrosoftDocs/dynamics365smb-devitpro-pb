@@ -27,7 +27,6 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 ## Social and blogs
 - Stay tuned about what’s going on in the #MSDyn365BC community: https://twitter.com/MSDYN365BC (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Be a part of the community for Business Central: https://community.dynamics.com/business 
-- Engage with us on LinkedIn: TBA
 - Blog for IT Professionals: https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/
 - Blog for decision makers: https://cloudblogs.microsoft.com/dynamics365/bdm
 
