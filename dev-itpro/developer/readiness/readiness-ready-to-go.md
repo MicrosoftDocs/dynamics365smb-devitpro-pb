@@ -14,10 +14,10 @@ ms.author: a-emniel
 Are you a Microsoft partner working with Business Central? And are you struggling to find the relevant resources? Find them in this article.
 
 ## What’s new 
-- Business Central release plan: https://aka.ms/BCReleasePlan 
-- Major updates: https://aka.ms/BCUpdates 
-- Minor updates: https://aka.ms/BCLastMinorUpdate 
-- Preview for next major update: https://aka.ms/BCMajorUpdates
+- Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
+- Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
+- Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
+- Preview for next major update: [aka.ms/BCMajorUpdates]https://aka.ms/BCMajorUpdates
 - Watch the what’s new launch event sessions: https://aka.ms/BCLE 
 - Join the office hours calls: https://aka.ms/BCOfficeHours 
 - Find on-demand recordings of office hours calls: https://aka.ms/BCOfficeHoursRecordings
