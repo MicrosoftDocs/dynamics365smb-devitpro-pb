@@ -56,5 +56,5 @@ You must use the [Format Method](../system/system-format-joker-integer-string-me
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

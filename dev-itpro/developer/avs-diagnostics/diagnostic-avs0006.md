@@ -24,5 +24,5 @@ In the app.json file of the app you have to specify the latest supported runtime
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

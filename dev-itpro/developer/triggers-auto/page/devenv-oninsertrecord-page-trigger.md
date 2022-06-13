@@ -48,7 +48,7 @@ This return value indicates whether the new record is to be inserted after the l
 If an error occurs in the trigger code, the action is canceled, but the page is not closed. The user cannot enter any new data and an error is shown in the message bar.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnInsertRecord (Request Page) Trigger](../requestpage/devenv-oninsertrecord-requestpage-trigger.md)  
 [OnInsertRecord (Request Page Extension) Trigger](../requestpageextension/devenv-oninsertrecord-requestpageextension-trigger.md)  

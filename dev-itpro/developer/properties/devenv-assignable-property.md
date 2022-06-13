@@ -39,7 +39,7 @@ Assignable permission sets are permissions that an admin can assign to users in 
 
 ## See Also  
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  
 [PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  

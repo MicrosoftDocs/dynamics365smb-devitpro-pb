@@ -67,6 +67,6 @@ The message window displays the following:
   
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [About Dates in Business Central](../../devenv-about-dates.md)  

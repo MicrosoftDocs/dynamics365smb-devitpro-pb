@@ -42,5 +42,5 @@ Using this property can improve query performance. For more information, see [Ta
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

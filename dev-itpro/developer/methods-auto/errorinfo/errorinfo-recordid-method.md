@@ -46,5 +46,5 @@ The current record ID of the ErrorInfo.
 
 [Collecting Errors](../../devenv-error-collection.md)  
 [ErrorInfo Data Type](errorinfo-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

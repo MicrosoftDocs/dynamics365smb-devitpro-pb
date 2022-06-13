@@ -230,4 +230,4 @@ To complete the example, follow these steps:
 ## See Also
 [Notification Data Type](./methods-auto/library.md)   
 [Developing Extensions](devenv-dev-overview.md)   
-[Getting Started with AL](devenv-get-started.md)
+[Get Started with AL](devenv-get-started.md)

@@ -41,5 +41,5 @@ Specifies that the method is a Normal method.
 You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

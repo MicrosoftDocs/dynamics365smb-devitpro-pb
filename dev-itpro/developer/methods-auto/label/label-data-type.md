@@ -48,5 +48,5 @@ For information about naming, see [CodeCop Rule AA0074](../../analyzers/codecop-
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

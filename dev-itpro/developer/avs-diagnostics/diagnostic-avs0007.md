@@ -24,5 +24,5 @@ In the app.json file of the app you must specify one of the supported runtime ve
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

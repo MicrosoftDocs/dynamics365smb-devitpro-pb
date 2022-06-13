@@ -43,6 +43,6 @@ For more information about designing teaching tips and tours, see [Teaching tips
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [AboutTextMl Property](devenv-abouttextml-property.md)  

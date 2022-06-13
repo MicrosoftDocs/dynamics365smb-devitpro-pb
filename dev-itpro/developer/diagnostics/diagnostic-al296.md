@@ -24,5 +24,5 @@ The application object or method '{0}' has scope '{1}' and cannot be used for '{
 For more information, see [Compilation Scope Overview](../devenv-compilation-scope-overview.md).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

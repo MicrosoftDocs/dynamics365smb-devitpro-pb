@@ -24,5 +24,5 @@ Something went wrong when compiling the app. Retry the operation and contact Par
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

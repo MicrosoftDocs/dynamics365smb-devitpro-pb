@@ -43,7 +43,7 @@ This trigger is initiated by a user action, such as when the user chooses the **
 You can write to the database from this trigger.
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnClosePage (Request Page) Trigger](../requestpage/devenv-onclosepage-requestpage-trigger.md)  
 [OnClosePage (Request Page Extension) Trigger](../requestpageextension/devenv-onclosepage-requestpageextension-trigger.md)  
