@@ -1,0 +1,150 @@
+### YamlMime:Landing
+
+title: Developing Business Central Apps with AL
+summary: Learn how to write any application using the AL programming language on the Dynamics 365 Business Central platform.
+
+metadata:
+  title: AL for Business Central developer documentation
+  description: Learn programming in AL, from beginner developers, developers new to AL, and experienced AL Business Central developers
+  ms.topic: landing-page # Required
+  ms.date: 06/13/2022
+
+landingContent:
+# Card
+  - title: Learn to program in AL
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Before you Start
+            url: devenv-dev-overview.md
+          - text: Getting Started with AL
+            url: devenv-get-started.md
+          - text: Learn AL | Tutorials, courses, videos, and more 
+            url: https://docs.microsoft.com/en-us/users/baglearn-5620/collections/d82ki43w52m1m4
+      - linkListType: video
+        links:
+          - text: AL Hacks and Insights
+            url: https://www.youtube.com/c/ErikHougaard
+      - linkListType: tutorial
+        links:
+          - text: Build Your First Extension
+            url: devenv-extension-example.md 
+      - linkListType: reference
+        links:
+          - text: Frequently Asked Questions (FAQ)
+            url: devenv-dev-faq.md
+          - text: AL on StackOverflow
+            url: https://stackoverflow.com/questions/tagged/dynamics-al
+          - text: AL on Discord
+            url: https://t.co/XubV3r9gYp
+          - text: AL on Twitter
+            url: https://twitter.com/search?q=%23bcalhelp&src=typed_query
+
+  - title: AL fundamentals
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: A tour of the AL language
+            url: devenv-programming-in-al.md
+          - text: Inside an AL codeunit
+            url: devenv-codeunit-object.md
+      - linkListType: concept
+        links:
+          - text: Type system
+            url: methods-auto/library.md
+          - text: Tables and Data
+            url: devenv-tables-overview.md
+          - text: Pages and user interfaces
+            url: devenv-role-customization.md            
+          - text: Reports
+            url: devenv-reports.md
+          - text: Error Handling
+            url: devenv-handling-errors-using-try-methods.md
+          - text: Testing
+            url: devenv-testing-application.md
+          - text: Coding style
+            url: ../compliance/apptest-bestpracticesforalcode.md
+      - linkListType: tutorial
+        links:
+          - text: Creating a table
+            url: devenv-table-object.md#table-example            
+          - text: Creating a report
+            url: devenv-walktrough-designing-reports-multiple-tables.md
+          - text: Extending a report
+            url: devenv-report-ext-example.md
+          - text: Testing an application.
+            url: devenv-test-application-example-purchase-invoice-discounts.md
+  - title: Key concepts
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Programming concepts
+            url: devenv-system-defined-variables.md
+      - linkListType: concept
+        links:
+          - text: Data types
+            url: methods-auto/library.md
+          - text: Interfaces
+            url: devenv-interfaces-in-al.md
+          - text: Objects
+            url: properties/devenv-properties.md
+          - text: Methods
+            url: devenv-al-methods.md
+          - text: Triggers
+            url: triggers-auto/devenv-triggers.md
+          - text: Events
+            url: devenv-events-in-al.md
+          - text: Attributes
+            url: attributes/devenv-method-attributes.md
+      - linkListType: tutorial
+        links:
+          - text: Your first interface
+            url: devenv-interfaces-in-al.md#interface-example
+          - text: Introduction to events
+            url: devenv-events-example.md
+          - text: Implementing workflow events
+            url: devenv-walkthrough-workflow-events-responses.md            
+  - title: What's new
+    linkLists:
+      - linkListType: whats-new
+        links: 
+          - text: What's new in 2022 release wave 1 (upcoming)
+            url: https://docs.microsoft.com/en-us/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/development
+          - text: What's new in 2021 release wave 2 (latest release)
+            url: https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/development
+          - text: What's new in 2021 release wave 1
+            url: https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/modern-development-tools
+      - linkListType: reference
+        links:
+          - text: AL language changelog"
+            url: https://marketplace.visualstudio.com/items/ms-dynamics-smb.al/changelog
+          - text: Known issues and bugs"
+            url: https://github.com/microsoft/al/issues
+          - text: AL bugs and feature requests
+            url: https://github.com/microsoft/AL#bugs-and-feature-requests
+            
+  - title: AL language reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Diagnostics
+            url: diagnostics/diagnostic-al100.md
+          - text: C# keywords
+            url: language-reference/keywords/index.md
+          - text: C# operators
+            url: language-reference/operators/index.md
+          - text: Configure language version
+            url: language-reference/configure-language-version.md
+          - text: C# language specification
+            url: ../../_csharpstandard/standard/README.md
+
+  - title: Stay in touch
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: GitHub
+            url: https://github.com/microsoft/AL
+          - text: YouTube
+            url: https://www.youtube.com/playlist?list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4
+          - text: Twitter
+            url: https://twitter.com/MsDyn365BC
