@@ -11,7 +11,7 @@ ms.author: a-emniel
 
 # Welcome to BC All
 
-Are you a Microsoft partner working with Business Central? And are you struggling to find the relevant resources? Find them all in this article.
+Are you a Microsoft partner working with Business Central? And are you struggling to find the relevant resources? Find them in this article.
 
 ## What’s new 
 - Business Central release plan: https://aka.ms/BCReleasePlan 
@@ -46,7 +46,7 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 - Discover useful resources for partners on https://aka.ms/BCPartnerPortal 
 
 ## Customer onboarding and resources 
-- Discover all Business Central apps on AppSource: https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central (INDSÆT AKA LINK)
+- Discover all Business Central apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
 - Get started with reporting: https://aka.ms/BCReporting
 - Business Central and Power BI: http://aka.ms/BCPI 
 - Productivity tips: https://aka.ms/BCProductivity 
@@ -63,7 +63,6 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 - Get started with developing apps: https://aka.ms/BCPublisher
 - Business Central technology samples: https://aka.ms/BCTech
 - Maintain your app(s): https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/app-maintain 
-- INDSÆT TO GITHUB LINKS (DAG 2 DIRECTIONS)
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: https://github.com/microsoft/al/issues 
 - Ask your questions related to app development in the App Development group on Yammer: https://aka.ms/BCYammer 
 
