@@ -123,20 +123,16 @@ landingContent:
           - text: AL bugs and feature requests
             url: https://github.com/microsoft/AL#bugs-and-feature-requests
             
-  - title: AL language reference
+  - title: Other AL language reference
     linkLists:
       - linkListType: reference
         links:
           - text: Diagnostics
             url: diagnostics/diagnostic-al100.md
-          - text: C# keywords
-            url: language-reference/keywords/index.md
-          - text: C# operators
-            url: language-reference/operators/index.md
-          - text: Configure language version
-            url: language-reference/configure-language-version.md
-          - text: C# language specification
-            url: ../../_csharpstandard/standard/README.md
+          - text: AL simple statements
+            url: devenv-al-simple-statements.md
+          - text: AL control statements
+            url: devenv-al-control-statements.md
 
   - title: Stay in touch
     linkLists:
