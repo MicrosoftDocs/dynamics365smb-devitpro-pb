@@ -74,7 +74,7 @@ Global events are predefined system events that are automatically raised by vari
 |||[OnAfterDocumentReady](devenv-onafterdocumentready-event.md)|
 |||[OnAfterDocumentDownload](devenv-onafterdocumentready-event.md)|
 |||[OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md)|
-|||[OnCustomDocumentMerger](devenv-oncustomdocumentmerger-event.md)|
+|||[OnCustomDocumentMergerex](devenv-oncustomdocumentmergerex-event.md)|
 |||OnAfterSubstituteReport|
 |45|AutoFormatManagement|OnAfterAutoFormatTranslate|
 |49|GlobalTriggerManagement|OnAfterGetGlobalTableTriggerMask|
