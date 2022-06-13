@@ -20,7 +20,7 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 - Preview for next major update: https://aka.ms/BCMajorUpdates
 - Watch the what’s new launch event sessions: https://aka.ms/BCLE 
 - Join the office hours calls: https://aka.ms/BCOfficeHours 
-- Find on-demand recordings of office hours calls here: https://aka.ms/BCOfficeHoursRecordings
+- Find on-demand recordings of office hours calls: https://aka.ms/BCOfficeHoursRecordings
 - Get the latest preview version and give feedback: https://aka.ms/Collaborate
 - Missing a feature? Post or vote for ideas on: https://aka.ms/BCIdeas 
 
@@ -55,7 +55,7 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 
 ## Migrating from on-premises to cloud (online) 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, Business Central on-premises customers to Business Central online: https://aka.ms/BCMigrations  
-- Use migration tooling: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/migrate-data 
+- Use migration tooling: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/migrate-data 
 
 ## Getting support 
 - Managing technical support for customers: https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/manage-technical-support 
