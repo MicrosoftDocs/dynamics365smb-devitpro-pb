@@ -5,7 +5,7 @@ summary: Learn how to write any application using the AL programming language on
 
 metadata:
   title: AL for Business Central developer documentation
-  description: Learn programming in AL, from beginner developers, developers new to AL, and experienced AL Business Central developers
+  description: AL for Business Central developer documentation
   ms.topic: landing-page # Required
   ms.date: 06/13/2022
 
@@ -15,23 +15,23 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Before you Start
+          - text: Before you start
             url: devenv-dev-overview.md
-          - text: Getting Started with AL
+          - text: Get started with AL
             url: devenv-get-started.md
           - text: Learn AL | Tutorials, courses, videos, and more 
             url: https://docs.microsoft.com/en-us/users/baglearn-5620/collections/d82ki43w52m1m4
       - linkListType: video
         links:
-          - text: AL Hacks and Insights
+          - text: AL hacks and insights
             url: https://www.youtube.com/c/ErikHougaard
       - linkListType: tutorial
         links:
-          - text: Build Your First Extension
+          - text: Build your first extension
             url: devenv-extension-example.md 
       - linkListType: reference
         links:
-          - text: Frequently Asked Questions (FAQ)
+          - text: Frequently asked questions (FAQ)
             url: devenv-dev-faq.md
           - text: AL on StackOverflow
             url: https://stackoverflow.com/questions/tagged/dynamics-al
@@ -52,13 +52,13 @@ landingContent:
         links:
           - text: Type system
             url: methods-auto/library.md
-          - text: Tables and Data
+          - text: Tables and data
             url: devenv-tables-overview.md
           - text: Pages and user interfaces
             url: devenv-role-customization.md            
           - text: Reports
             url: devenv-reports.md
-          - text: Error Handling
+          - text: Error handling
             url: devenv-handling-errors-using-try-methods.md
           - text: Testing
             url: devenv-testing-application.md
@@ -72,7 +72,7 @@ landingContent:
             url: devenv-walktrough-designing-reports-multiple-tables.md
           - text: Extending a report
             url: devenv-report-ext-example.md
-          - text: Testing an application.
+          - text: Testing an application
             url: devenv-test-application-example-purchase-invoice-discounts.md
   - title: Key concepts
     linkLists:
@@ -116,9 +116,9 @@ landingContent:
             url: https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/modern-development-tools
       - linkListType: reference
         links:
-          - text: AL language changelog"
+          - text: AL language changelog
             url: https://marketplace.visualstudio.com/items/ms-dynamics-smb.al/changelog
-          - text: Known issues and bugs"
+          - text: Known issues and bugs
             url: https://github.com/microsoft/al/issues
           - text: AL bugs and feature requests
             url: https://github.com/microsoft/AL#bugs-and-feature-requests
