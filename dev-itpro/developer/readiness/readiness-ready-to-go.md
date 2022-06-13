@@ -11,7 +11,7 @@ ms.author: a-emniel
 
 # Welcome to Business Central | Resources for Partners
 
-Are you a Microsoft partner working with Business Central and looking for relevant resources? Find it all in this article.
+Are you a Microsoft partner working with Business Central and looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll]https://aka.ms/BCAll.
 
 ## What’s new 
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
