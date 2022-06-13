@@ -325,8 +325,8 @@
 <!-- DEVELOPMENT-->
 # Development
 ## [Development Overview](developer/devenv-dev-overview.md)
-## Getting Started
-### [Getting Started with AL](developer/devenv-get-started.md)
+## Get Started
+### [Get Started with AL](developer/devenv-get-started.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
@@ -350,7 +350,7 @@
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
-### Getting Started with AL for On-Premises
+### Get Started with AL for On-Premises
 #### [Get Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
 #### [Run C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
 #### [Create Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
@@ -636,7 +636,7 @@
 #### Developing for the Business Central Mobile App
 ##### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
 ##### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
-##### [Getting Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
+##### [Get Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
 ##### [Designing for Different Screen Sizes on Tablet and Phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
 ##### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ##### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
@@ -770,7 +770,7 @@
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
 #### Creating New Modules in the System Application
 ##### [Module Architecture](developer/devenv-blueprint.md)
-##### [Getting Started with Modules](developer/devenv-getting-started.md)
+##### [Get Started with Modules](developer/devenv-getting-started.md)
 ##### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
 ##### [Create a New Module](developer/devenv-new-module.md)
 ##### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
@@ -806,7 +806,7 @@
 
 
 ### Using .NET (on-premises only)
-#### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+#### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 #### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 #### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 #### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
