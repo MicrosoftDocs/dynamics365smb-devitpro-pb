@@ -78,7 +78,6 @@ Are you a Microsoft partner working with Business Central? And are you strugglin
 
 ## Developing customer specific solutions
 - Setup DevOps for your customer projects: https://aka.ms/AL-Go-PTE
-- INDSÆT NOGET MERE
 
 ## Telemetry and performance 
 - App performance documentation: https://aka.ms/BCPerformance
