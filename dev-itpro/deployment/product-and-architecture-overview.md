@@ -35,7 +35,7 @@ Every deployment must include the core components: Web server, Server, and SQL D
 
 |Component|Description| More Information   |
 |---------|-----------|---|
-|AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions. |[Getting Started with C/SIDE and AL for On-Premises](../developer/devenv-get-started-al-for-onprem.md).|
+|AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions. |[Get Started with C/SIDE and AL for On-Premises](../developer/devenv-get-started-al-for-onprem.md).|
 |[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.|[Business Central Server Administration Tool](../administration/administration-tool.md)|
 |[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows PowerShell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.|[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
 
