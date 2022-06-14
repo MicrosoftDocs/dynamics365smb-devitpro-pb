@@ -47,5 +47,5 @@ The namespace URI associated with the given prefix for this element.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlElement Data Type](xmlelement-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

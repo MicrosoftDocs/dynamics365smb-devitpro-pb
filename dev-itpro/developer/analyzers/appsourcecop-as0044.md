@@ -22,5 +22,5 @@ Destructive field properties that have been published must not be modified.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

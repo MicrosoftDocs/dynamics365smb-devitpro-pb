@@ -42,7 +42,7 @@ end;
 The action is canceled but the page is not closed if an error occurs in the trigger code. You can use this trigger to write to the database.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnDeleteRecord (Page) Trigger](../page/devenv-ondeleterecord-page-trigger.md)  
 [OnDeleteRecord (Request Page) Trigger](../requestpage/devenv-ondeleterecord-requestpage-trigger.md)  

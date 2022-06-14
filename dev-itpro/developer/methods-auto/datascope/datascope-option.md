@@ -31,6 +31,6 @@ Identifies the scope of stored data in the isolated storage.
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Isolated Storage](../../devenv-isolated-storage.md)

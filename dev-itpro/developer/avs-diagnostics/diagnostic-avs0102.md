@@ -24,5 +24,5 @@ Retry the operation and contact Partner Center support if it fails again.
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

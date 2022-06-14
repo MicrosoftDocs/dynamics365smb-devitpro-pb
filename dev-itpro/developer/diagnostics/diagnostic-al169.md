@@ -38,5 +38,5 @@ Setting the ObsoleteState to Removed for an enum will throw the following error:
 `The option value ``Removed`` is not valid`
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

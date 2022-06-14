@@ -37,5 +37,5 @@ The qualified name of the attribute to remove.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlAttributeCollection Data Type](xmlattributecollection-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

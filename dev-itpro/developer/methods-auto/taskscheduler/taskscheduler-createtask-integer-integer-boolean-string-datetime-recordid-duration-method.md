@@ -72,6 +72,6 @@ Scheduled tasks are recorded in table **2000000175 Scheduled Task**.  For more i
 
 ## See Also
 [TaskScheduler Data Type](taskscheduler-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Configuring Business Central Server - Default Task Scheduler Session Timeout](../../../administration/configure-server-instance.md#Task)

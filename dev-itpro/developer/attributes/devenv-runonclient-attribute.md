@@ -49,5 +49,5 @@ The **RunOnClient** property is part of .NET interoperability in [!INCLUDE[d365f
 For an example on how to use the **RunOnClient** attribute, see [Implementing the Camera in AL](../devenv-implement-camera-al.md#example).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

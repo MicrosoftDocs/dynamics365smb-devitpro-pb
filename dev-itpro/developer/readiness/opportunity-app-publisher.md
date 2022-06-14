@@ -58,7 +58,7 @@ Here are a few examples of some apps that extend [!INCLUDE[prod_short](../includ
 
 - [SwissSalary 365](https://appsource.microsoft.com/product/dynamics-365-business-central/PUBID.swisssalary%7CAID.swisssalary%7CPAPPID.ca3d5715-ac87-48ff-ace2-fc1605e50a69), which is a certified and flexible payroll app that's intuitive and easy to use for the Swiss market.
 
-Learn more on how to build your app: [Getting Started with AL](../devenv-get-started.md)
+Learn more on how to build your app: [Get Started with AL](../devenv-get-started.md)
 
 ## Consultancy services
 

@@ -468,5 +468,5 @@ You have now enabled a new workflow scenario by implementing the required workfl
 [Table Extension Object](devenv-table-ext-object.md)  
 [Codeunit Object](devenv-codeunit-object.md)  
 [Table Object](devenv-table-object.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Development and Administration for Dynamics 365 Business Central](../index.md)

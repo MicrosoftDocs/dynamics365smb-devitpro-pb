@@ -37,5 +37,5 @@ The following methods are available on instances of the Notification data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Notifications](../../devenv-notifications-developing.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -189,7 +189,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 20 DVD.
 
-   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+   For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 

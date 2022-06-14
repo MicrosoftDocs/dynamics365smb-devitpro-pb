@@ -36,6 +36,6 @@ end;
 This trigger is only used to import data. It gives you access to the values in the imported record and is typically used to manipulate data that is being imported.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterAssignField (Xml Port Field Attribute) Trigger](../xmlportfieldattribute/devenv-onafterassignfield-xmlportfieldattribute-trigger.md)

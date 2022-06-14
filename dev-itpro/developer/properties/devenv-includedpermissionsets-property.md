@@ -33,7 +33,7 @@ Sets the lists of other permission sets that are included in this permission set
 IncludedPermissionSets = BASIC;
 ```
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  
 [PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  
