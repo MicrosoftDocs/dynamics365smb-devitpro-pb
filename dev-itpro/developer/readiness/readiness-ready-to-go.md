@@ -1,6 +1,6 @@
 ---
 title: Resources for partners
-description: "Ready to Go contains a set of resources, services and tools to support Microsoft Dynamics 365 Business Central."
+description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
 author: a-emniel
 ms.custom: na
 ms.date: 06/14/2022
