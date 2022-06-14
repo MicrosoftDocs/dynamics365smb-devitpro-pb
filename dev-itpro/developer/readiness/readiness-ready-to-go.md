@@ -85,3 +85,4 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Events 
 - Directions NA: [directionsna.com](https://directionsna.com)  
 - Directions EMEA and Directions Asia [directions4partners.com](https://directions4partners.com)
+- Business Central TechDays: [bctechdays.com](https://bctechdays.com)
