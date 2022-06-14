@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 06/14/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[HttpContent](httpcontent/httpcontent-data-type.md)|Represents an HTTP entity body and content headers.|
 |[HttpHeaders](httpheaders/httpheaders-data-type.md)|Is a collection of headers and their values.|
 |[HttpRequestMessage](httprequestmessage/httprequestmessage-data-type.md)|Represents an HTTP request message.|
-|[HttpResponseMessage](httpresponsemessage/httpresponsemessage-data-type.md)|Represents a HTTP response message including the status code and data.|
+|[HttpResponseMessage](httpresponsemessage/httpresponsemessage-data-type.md)|Represents an HTTP response message including the status code and data.|
 |[InStream](instream/instream-data-type.md)|Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.<br/>  |
 |[Integer](integer/integer-data-type.md)|Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.|
 |[IsolatedStorage](isolatedstorage/isolatedstorage-data-type.md)|Provides data isolation for extensions.|
