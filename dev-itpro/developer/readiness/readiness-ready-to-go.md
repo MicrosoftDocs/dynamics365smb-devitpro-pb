@@ -58,7 +58,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Migrating from on-premises to cloud (online) 
 
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, Business Central on-premises customers to Business Central online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
-- Use migration tooling: [docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/migrate-data](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/migrate-data) 
+- Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 
 ## Getting support
 
