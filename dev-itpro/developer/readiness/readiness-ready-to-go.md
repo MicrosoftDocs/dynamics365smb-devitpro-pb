@@ -43,10 +43,11 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Business Central homepage: [dynamics.microsoft.com/business-central/overview/](https://dynamics.microsoft.com/business-central/overview/)  
 - Try Business Central for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - Business Central customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
-- Discover useful resources for partners on [aka.ms/BCPartnerPortal]https://aka.ms/BCPartnerPortal 
+- Discover useful resources for partners on [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal) 
 
 ## Customer onboarding and resources 
 - Discover all Business Central apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
+- Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/BCOnboarding)
 - Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
 - Business Central and Power BI: [aka.ms/BCPI](http://aka.ms/BCPI) 
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
