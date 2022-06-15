@@ -977,7 +977,8 @@
 #### [Using telemetry to investigate Performance Issues](performance/performance-work-perf-problem.md)
 
 ## AL Language Reference
-[AL Language Reference](./developer/TOC.md)
+[AL Language Reference](developer/TOC.md)
+
 <!-- end AL -->
 <!-- begin security -->
 
