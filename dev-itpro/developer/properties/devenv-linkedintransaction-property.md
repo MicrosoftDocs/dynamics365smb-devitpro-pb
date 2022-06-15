@@ -3,12 +3,11 @@ title: "LinkedInTransaction Property"
 description: "Gets and sets data from linked server data sources, such as Microsoft Office Excel, Access, or another SQL Server."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

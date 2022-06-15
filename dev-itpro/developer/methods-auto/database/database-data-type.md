@@ -3,7 +3,7 @@ title: "Database Data Type"
 description: "Provides access to common database functionality."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,9 @@ The following methods are available on the Database data type.
 |[GetDefaultTableConnection(TableConnectionType)](database-getdefaulttableconnection-method.md)|Gets the default table connection based on the specified connection type. You must already have registered a table connection of this type.|
 |[HasTableConnection(TableConnectionType, Text)](database-hastableconnection-method.md)|Verifies if a connection to an external database exists based on the specified name.|
 |[ImportData(Boolean, var Text [, Boolean] [, Boolean] [, Record])](database-importdata-method.md)|Imports data from a file that has been exported from a database.|
+|[LastUsedRowVersion()](database-lastusedrowversion-method.md)|Gets the last used RowVersion from the database.|
 |[LockTimeout([Boolean])](database-locktimeout-method.md)|Determines whether the lock time-out setting is set to On. You can also use this method to override the default setting.|
+|[MinimumActiveRowVersion()](database-minimumactiverowversion-method.md)|Returns the lowest active RowVersion in the database. This is the lowest RowVersion for an uncomitted row, meaning rows with a lower timestamp than this value are guaranteed to be comitted. If there are no active transactions, this value is equal to LastUsedRowVersion + 1.|
 |[RegisterTableConnection(TableConnectionType, Text, Text)](database-registertableconnection-method.md)|Registers a table connection to an external database.|
 |[SelectLatestVersion()](database-selectlatestversion-method.md)|Forces the latest version of the database to be used.|
 |[SerialNumber()](database-serialnumber-method.md)|Gets a string that contains the serial number of the license file for your system.|

@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 06/14/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[Codeunit](codeunit/codeunit-data-type.md)|Is a container for AL code that you can use from other application objects.|
 |[CompanyProperty](companyproperty/companyproperty-data-type.md)|Provides language support for company properties.|
 |[Database](database/database-data-type.md)|Provides access to common database functionality.|
+|[DataTransfer](datatransfer/datatransfer-data-type.md)|A structure building bulk transfer of data between tables.|
 |[Date](date/date-data-type.md)|Denotes a date ranging from January 1, 1753 to December 31, 9999.|
 |[DateFormula](dateformula/dateformula-data-type.md)|Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date). The DateFormula data type is used to provide multilanguage capabilities to the CALCDATE Method (Date).|
 |[DateTime](datetime/datetime-data-type.md)|Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999. An undefined or blank DateTime is specified by 0DT.|
@@ -48,7 +49,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[HttpContent](httpcontent/httpcontent-data-type.md)|Represents an HTTP entity body and content headers.|
 |[HttpHeaders](httpheaders/httpheaders-data-type.md)|Is a collection of headers and their values.|
 |[HttpRequestMessage](httprequestmessage/httprequestmessage-data-type.md)|Represents an HTTP request message.|
-|[HttpResponseMessage](httpresponsemessage/httpresponsemessage-data-type.md)|Represents an HTTP response message including the status code and data.|
+|[HttpResponseMessage](httpresponsemessage/httpresponsemessage-data-type.md)|Represents a HTTP response message including the status code and data.|
 |[InStream](instream/instream-data-type.md)|Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.<br/>  |
 |[Integer](integer/integer-data-type.md)|Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.|
 |[IsolatedStorage](isolatedstorage/isolatedstorage-data-type.md)|Provides data isolation for extensions.|
@@ -128,6 +129,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[ExecutionMode](executionmode/executionmode-option.md)|The execution mode of the current session.|
 |[FieldClass](fieldclass/fieldclass-option.md)|Represents the type of a field class.|
 |[FieldType](fieldtype/fieldtype-option.md)|Represents the type of a table field.|
+|[InherentPermissionsScope](inherentpermissionsscope/inherentpermissionsscope-option.md)|The different types of scope that the InherentPermissions attribute can apply to.|
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|

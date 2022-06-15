@@ -1,14 +1,13 @@
 ---
 title: "ToolTip Property"
-description: "Sets whether tooltips are provided for the given control, such as a field or action."
+description: "Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -17,7 +16,9 @@ author: SusanneWindfeldPedersen
 # ToolTip Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets whether tooltips are provided for the given control, such as a field or action. The tooltip value is taken from the ToolTipML Property if this property is set.
+Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button.
+	
+In the client, tooltips appear when you point to the caption of the control.
 
 ## Applies to
 -   Page Label
