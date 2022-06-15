@@ -1,9 +1,9 @@
 ---
 title: "HttpResponseMessage Data Type"
-description: "Represents a HTTP response message including the status code and data."
+description: "Represents an HTTP response message including the status code and data."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 06/14/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # HttpResponseMessage Data Type
 > **Version**: _Available or changed with runtime version 1.0._
 
-Represents a HTTP response message including the status code and data.
+Represents an HTTP response message including the status code and data.
 
 
 
