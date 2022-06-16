@@ -19,8 +19,7 @@ author: SusanneWindfeldPedersen
 > **Version**: _Available or changed with runtime version 9.0._
 
 
-		Validates if the provided report layout is compatible with the specified report and performs the required modifications
-		so that it can be used for rendering.
+Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering.
 	
 
 
