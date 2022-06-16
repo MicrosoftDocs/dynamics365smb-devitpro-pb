@@ -976,7 +976,7 @@
 #### [Using Power BI troubleshooting reports](https://aka.ms/bctelemetrysamples)
 #### [Using telemetry to investigate Performance Issues](performance/performance-work-perf-problem.md)
 
-## [AL Language Reference](developer/library.md)
+## [AL Language Reference](developer/devenv-al-reference-overview.md)
 <!-- end AL -->
 <!-- begin security -->
 
