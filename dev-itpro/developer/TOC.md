@@ -1,8 +1,8 @@
 <!-- DO NOT TOUCH - auto-generated sections from here -->
 # AL Language Reference
 ## Compiler Errors, Warnings, and Messages
-### [Overview](developer/diagnostics/diagnostics-overview.md)
-### [Warnings Turning into Errors](developer/diagnostics/diagnostics-with-limit-date-overview.md)
+### [Overview](diagnostics/diagnostics-overview.md)
+### [Warnings Turning into Errors](diagnostics/diagnostics-with-limit-date-overview.md)
 <!-- [//]: # (START>DO_NOT_EDIT_DIAGNOSTICS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -712,40 +712,40 @@
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_DIAGNOSTICS) -->
 <!-- AVS section -->
 ## Application Validation Service Diagnostics
-### [Application Validation Service Diagnostics Overview](developer/avs-diagnostics/avs-diagnostics-overview.md)
-### [AVS0001](developer/avs-diagnostics/diagnostic-avs0001.md)
-### [AVS0002](developer/avs-diagnostics/diagnostic-avs0002.md)
-### [AVS0003](developer/avs-diagnostics/diagnostic-avs0003.md)
-### [AVS0004](developer/avs-diagnostics/diagnostic-avs0004.md)
-### [AVS0005](developer/avs-diagnostics/diagnostic-avs0005.md)
-### [AVS0006](developer/avs-diagnostics/diagnostic-avs0006.md)
-### [AVS0007](developer/avs-diagnostics/diagnostic-avs0007.md)
-### [AVS0101](developer/avs-diagnostics/diagnostic-avs0101.md)
-### [AVS0102](developer/avs-diagnostics/diagnostic-avs0102.md)
-### [AVS0103](developer/avs-diagnostics/diagnostic-avs0103.md)
-### [AVS0104](developer/avs-diagnostics/diagnostic-avs0104.md)
-### [AVS0105](developer/avs-diagnostics/diagnostic-avs0105.md)
-### [AVS0106](developer/avs-diagnostics/diagnostic-avs0106.md)
-### [AVS0107](developer/avs-diagnostics/diagnostic-avs0107.md)
-### [AVS0108](developer/avs-diagnostics/diagnostic-avs0108.md)
-### [AVS0109](developer/avs-diagnostics/diagnostic-avs0109.md)
-### [AVS0110](developer/avs-diagnostics/diagnostic-avs0110.md)
-### [AVS0111](developer/avs-diagnostics/diagnostic-avs0111.md)
-### [AVS0112](developer/avs-diagnostics/diagnostic-avs0112.md)
-### [AVS0113](developer/avs-diagnostics/diagnostic-avs0113.md)
+### [Application Validation Service Diagnostics Overview](avs-diagnostics/avs-diagnostics-overview.md)
+### [AVS0001](avs-diagnostics/diagnostic-avs0001.md)
+### [AVS0002](avs-diagnostics/diagnostic-avs0002.md)
+### [AVS0003](avs-diagnostics/diagnostic-avs0003.md)
+### [AVS0004](avs-diagnostics/diagnostic-avs0004.md)
+### [AVS0005](avs-diagnostics/diagnostic-avs0005.md)
+### [AVS0006](avs-diagnostics/diagnostic-avs0006.md)
+### [AVS0007](avs-diagnostics/diagnostic-avs0007.md)
+### [AVS0101](avs-diagnostics/diagnostic-avs0101.md)
+### [AVS0102](avs-diagnostics/diagnostic-avs0102.md)
+### [AVS0103](avs-diagnostics/diagnostic-avs0103.md)
+### [AVS0104](avs-diagnostics/diagnostic-avs0104.md)
+### [AVS0105](avs-diagnostics/diagnostic-avs0105.md)
+### [AVS0106](avs-diagnostics/diagnostic-avs0106.md)
+### [AVS0107](avs-diagnostics/diagnostic-avs0107.md)
+### [AVS0108](avs-diagnostics/diagnostic-avs0108.md)
+### [AVS0109](avs-diagnostics/diagnostic-avs0109.md)
+### [AVS0110](avs-diagnostics/diagnostic-avs0110.md)
+### [AVS0111](avs-diagnostics/diagnostic-avs0111.md)
+### [AVS0112](avs-diagnostics/diagnostic-avs0112.md)
+### [AVS0113](avs-diagnostics/diagnostic-avs0113.md)
 <!-- end AVS section -->
 ## Data Types and Methods
-### [Methods Overview](developer/methods-auto/library.md)
-### [Array Methods](developer/methods/devenv-array-methods.md)
-### [Essential AL Methods](developer/devenv-essential-al-methods.md)
-### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
-### [Creating Handler Methods](developer/devenv-creating-handler-methods.md)
-### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
-### [Collecting Errors](developer/devenv-error-collection.md)
-### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
-### [Test Codeunits and Text Methods](developer/devenv-test-codeunits-and-test-methods.md)
-### [Procedure Overload](developer/methods/devenv-overload-method.md)
-### [Joker Data Type (Internal)](developer/methods/devenv-joker-datatype.md)
+### [Methods Overview](methods-auto/library.md)
+### [Array Methods](methods/devenv-array-methods.md)
+### [Essential AL Methods](devenv-essential-al-methods.md)
+### [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)
+### [Creating Handler Methods](devenv-creating-handler-methods.md)
+### [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)
+### [Collecting Errors](devenv-error-collection.md)
+### [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)
+### [Test Codeunits and Text Methods](devenv-test-codeunits-and-test-methods.md)
+### [Procedure Overload](methods/devenv-overload-method.md)
+### [Joker Data Type (Internal)](methods/devenv-joker-datatype.md)
 ### Option Types
 <!-- [//]: # (START>DO_NOT_EDIT_METHODS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
@@ -2381,7 +2381,7 @@
 ### [XmlWriteOptions Data Type](methods-auto/xmlwriteoptions/xmlwriteoptions-data-type.md)
 #### [PreserveWhitespace([Boolean]) Method](methods-auto/xmlwriteoptions/xmlwriteoptions-preservewhitespace-method.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_METHODS) -->
-## [Method Attributes](developer/attributes/devenv-method-attributes.md)
+## [Method Attributes](attributes/devenv-method-attributes.md)
 <!-- [//]: # (START>DO_NOT_EDIT_ATTRIBUTES)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -2423,7 +2423,7 @@
 ### [WithEvents Attribute](attributes/devenv-withevents-attribute.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
 ## Properties
-### [Overview](developer/properties/devenv-properties.md)
+### [Overview](properties/devenv-properties.md)
 <!-- [//]: # (START>DO_NOT_EDIT_PROPERTIES)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
@@ -2711,7 +2711,7 @@
 ### [XmlVersionNo Property](properties/devenv-xmlversionno-property.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_PROPERTIES) -->
 ## Triggers
-### [Overview](developer/triggers-auto/devenv-triggers.md)
+### [Overview](triggers-auto/devenv-triggers.md)
 ### Trigger Events
 <!-- [//]: # (START>DO_NOT_EDIT_TRIGGERS)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
