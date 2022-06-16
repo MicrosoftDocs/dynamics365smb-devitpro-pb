@@ -834,14 +834,6 @@
 #### [UnregisterTableConnection(TableConnectionType, Text) Method](methods-auto/database/database-unregistertableconnection-method.md)
 #### [UserId() Method](methods-auto/database/database-userid-method.md)
 #### [UserSecurityId() Method](methods-auto/database/database-usersecurityid-method.md)
-### [DataTransfer Data Type](methods-auto/datatransfer/datatransfer-data-type.md)
-#### [AddConstantValue(Integer, Any) Method](methods-auto/datatransfer/datatransfer-addconstantvalue-method.md)
-#### [AddFields(Integer, Integer) Method](methods-auto/datatransfer/datatransfer-addfields-method.md)
-#### [AddJoin(Integer, Integer) Method](methods-auto/datatransfer/datatransfer-addjoin-method.md)
-#### [AddSourceFilter(Integer, Text [, Any,...]) Method](methods-auto/datatransfer/datatransfer-addsourcefilter-method.md)
-#### [CopyFields() Method](methods-auto/datatransfer/datatransfer-copyfields-method.md)
-#### [CopyRows() Method](methods-auto/datatransfer/datatransfer-copyrows-method.md)
-#### [SetTables(Integer, Integer) Method](methods-auto/datatransfer/datatransfer-settables-method.md)
 ### [Date Data Type](methods-auto/date/date-data-type.md)
 ### [DateFormula Data Type](methods-auto/dateformula/dateformula-data-type.md)
 ### [DateTime Data Type](methods-auto/datetime/datetime-data-type.md)
@@ -2891,4 +2883,3 @@
 ### Query Triggers
 #### [OnBeforeOpen Trigger](triggers-auto/query/devenv-onbeforeopen-query-trigger.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_TRIGGERS) -->
-) -->
