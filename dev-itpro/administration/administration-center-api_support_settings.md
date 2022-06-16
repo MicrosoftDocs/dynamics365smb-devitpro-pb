@@ -20,7 +20,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.11/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.13/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route Parameters
@@ -59,7 +59,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.11/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.13/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route Parameters
