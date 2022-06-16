@@ -74,6 +74,6 @@ The first line sets up a filter for the Date Filter field in the Customer record
 
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [AL Database Methods and Performance on SQL Server](../../../administration/optimize-sql-al-Database-methods-and-performance-on-server.md)

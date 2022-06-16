@@ -32,7 +32,7 @@ This walkthrough requires the following:
 
 - [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
   - The CRONUS International Ltd. demonstration data.
-  - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+  - Visual Studio Code with the AL Language extension installed. For more information, see [Get Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
 ## Creating source tables for the API
 
@@ -452,7 +452,7 @@ If you need to generate a web service endpoint that joins data between different
 For more information, see [API Query Type](devenv-api-querytype.md)
 
 ## See Also
-[Getting Started with AL](../developer/devenv-get-started.md)  
+[Get Started with AL](../developer/devenv-get-started.md)  
 [API Page Type](devenv-api-pagetype.md)   
 [API Query Type](devenv-api-querytype.md)   
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  

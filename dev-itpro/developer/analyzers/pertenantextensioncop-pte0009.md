@@ -59,5 +59,5 @@ The following manifest does not specifies the properties `helpBaseUrl` and `supp
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

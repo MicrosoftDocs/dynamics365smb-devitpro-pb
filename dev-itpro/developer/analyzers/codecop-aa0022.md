@@ -22,5 +22,5 @@ An IF followed by two or more ELSE IF should be replaced with a CASE.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

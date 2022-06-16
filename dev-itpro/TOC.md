@@ -1,4 +1,4 @@
-﻿# [Development and administration](index.md)
+# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -65,7 +65,8 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 20.1](whatsnew/whatsnew-update-20.1.md)
+### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
+### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 ### Updates for earlier major versions
 #### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 #### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
@@ -324,8 +325,8 @@
 <!-- DEVELOPMENT-->
 # Development
 ## [Development Overview](developer/devenv-dev-overview.md)
-## Getting Started
-### [Getting Started with AL](developer/devenv-get-started.md)
+## Get Started
+### [Get Started with AL](developer/devenv-get-started.md)
 ### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
@@ -349,10 +350,10 @@
 #### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
-### Getting Started with AL for On-Premises
-#### [Getting Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Running C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
-#### [Creating Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
+### Get Started with AL for On-Premises
+#### [Get Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
+#### [Run C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
+#### [Create Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
 ## Development Environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configuring the Development Environment
@@ -635,7 +636,7 @@
 #### Developing for the Business Central Mobile App
 ##### [Introducing the Business Central Mobile App](developer/devenv-introducing-business-central-mobile-app.md)  
 ##### [Deciding on Your Tablet and Phone Strategy](developer/devenv-deciding-on-tablet-and-phone-strategy.md)  
-##### [Getting Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
+##### [Get Started Developing for the Business Central Mobile App](developer/devenv-getting-started-developing-business-central-mobile-app.md)  
 ##### [Designing for Different Screen Sizes on Tablet and Phone](developer/devenv-designing-different-screen-sizes-tablet-and-phone.md)  
 ##### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ##### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
@@ -769,7 +770,7 @@
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
 #### Creating New Modules in the System Application
 ##### [Module Architecture](developer/devenv-blueprint.md)
-##### [Getting Started with Modules](developer/devenv-getting-started.md)
+##### [Get Started with Modules](developer/devenv-getting-started.md)
 ##### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
 ##### [Create a New Module](developer/devenv-new-module.md)
 ##### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
@@ -805,7 +806,7 @@
 
 
 ### Using .NET (on-premises only)
-#### [Getting started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
+#### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 #### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
 #### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
 #### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
@@ -953,6 +954,7 @@
 #### [Using the Event Recorder](developer/devenv-events-discoverability.md)
 #### [Database Table Information](/dynamics365/business-central/admin-view-table-information)
 #### [Database Locks](/dynamics365/business-central/admin-view-database-locks)
+#### [Missing Indexes](administration/database-missing-indexes.md)
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
@@ -1220,6 +1222,7 @@
 ##### [AL0360](developer/diagnostics/diagnostic-al360.md)
 ##### [AL0361](developer/diagnostics/diagnostic-al361.md)
 ##### [AL0362](developer/diagnostics/diagnostic-al362.md)
+##### [AL0363](developer/diagnostics/diagnostic-al363.md)
 ##### [AL0364](developer/diagnostics/diagnostic-al364.md)
 ##### [AL0365](developer/diagnostics/diagnostic-al365.md)
 ##### [AL0366](developer/diagnostics/diagnostic-al366.md)
@@ -1460,6 +1463,12 @@
 ##### [AL0716](developer/diagnostics/diagnostic-al716.md)
 ##### [AL0718](developer/diagnostics/diagnostic-al718.md)
 ##### [AL0720](developer/diagnostics/diagnostic-al720.md)
+##### [AL0721](developer/diagnostics/diagnostic-al721.md)
+##### [AL0722](developer/diagnostics/diagnostic-al722.md)
+##### [AL0723](developer/diagnostics/diagnostic-al723.md)
+##### [AL0724](developer/diagnostics/diagnostic-al724.md)
+##### [AL0725](developer/diagnostics/diagnostic-al725.md)
+##### [AL0730](developer/diagnostics/diagnostic-al730.md)
 ##### [AL0999](developer/diagnostics/diagnostic-al999.md)
 ##### [AL1001](developer/diagnostics/diagnostic-al1001.md)
 ##### [AL1002](developer/diagnostics/diagnostic-al1002.md)
@@ -1519,6 +1528,7 @@
 ##### [AL1073](developer/diagnostics/diagnostic-al1073.md)
 ##### [AL1074](developer/diagnostics/diagnostic-al1074.md)
 ##### [AL1075](developer/diagnostics/diagnostic-al1075.md)
+##### [AL1077](developer/diagnostics/diagnostic-al1077.md)
 ##### [AL1130](developer/diagnostics/diagnostic-al1130.md)
 ##### [AL1150](developer/diagnostics/diagnostic-al1150.md)
 ##### [AL1151](developer/diagnostics/diagnostic-al1151.md)
@@ -1564,7 +1574,10 @@
 ##### [AL0659](developer/diagnostics/diagnostic-al659.md)
 ##### [AL0679](developer/diagnostics/diagnostic-al679.md)
 ##### [AL0684](developer/diagnostics/diagnostic-al684.md)
+##### [AL0700](developer/diagnostics/diagnostic-al700.md)
+##### [AL0702](developer/diagnostics/diagnostic-al702.md)
 ##### [AL0717](developer/diagnostics/diagnostic-al717.md)
+##### [AL0726](developer/diagnostics/diagnostic-al726.md)
 ##### [AL1000](developer/diagnostics/diagnostic-al1000.md)
 ##### [AL1003](developer/diagnostics/diagnostic-al1003.md)
 ##### [AL1004](developer/diagnostics/diagnostic-al1004.md)
@@ -1637,6 +1650,9 @@
 ##### [AL0697](developer/diagnostics/diagnostic-al697.md)
 ##### [AL0711](developer/diagnostics/diagnostic-al711.md)
 ##### [AL0715](developer/diagnostics/diagnostic-al715.md)
+##### [AL0727](developer/diagnostics/diagnostic-al727.md)
+##### [AL0728](developer/diagnostics/diagnostic-al728.md)
+##### [AL0729](developer/diagnostics/diagnostic-al729.md)
 #### Hidden messages
 ##### [AL0605](developer/diagnostics/diagnostic-al605.md)
 ##### [AL0607](developer/diagnostics/diagnostic-al607.md)
@@ -1664,6 +1680,9 @@
 ##### [AL1415](developer/diagnostics/diagnostic-al1415.md)
 ##### [AL1418](developer/diagnostics/diagnostic-al1418.md)
 ##### [AL1419](developer/diagnostics/diagnostic-al1419.md)
+##### [AL1420](developer/diagnostics/diagnostic-al1420.md)
+##### [AL1421](developer/diagnostics/diagnostic-al1421.md)
+##### [AL1422](developer/diagnostics/diagnostic-al1422.md)
 #### Designer Customization Information messages
 ##### [AL1414](developer/diagnostics/diagnostic-al1414.md)
 ##### [AL1416](developer/diagnostics/diagnostic-al1416.md)

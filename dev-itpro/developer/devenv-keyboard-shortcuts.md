@@ -93,5 +93,5 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)

@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 03/01/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -84,7 +84,7 @@ author: SusanneWindfeldPedersen
 |[AL0164](diagnostic-al164.md)|The trigger '{0}' is already defined.|Error|
 |[AL0165](diagnostic-al165.md)|Triggers cannot be called directly.|Error|
 |[AL0166](diagnostic-al166.md)|Argument {0}: must be a member.|Error|
-|[AL0167](diagnostic-al167.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of :'{2}'.|Error|
+|[AL0167](diagnostic-al167.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of: '{2}'.|Error|
 |[AL0168](diagnostic-al168.md)|The property '{0}' can only be set if the property '{1}' is set.|Error|
 |[AL0169](diagnostic-al169.md)|The option value '{0}' is not valid.|Error|
 |[AL0170](diagnostic-al170.md)|An '=' is expected for property {0}.|Error|
@@ -262,6 +262,7 @@ author: SusanneWindfeldPedersen
 |[AL0360](diagnostic-al360.md)|Text literal was not properly terminated. Use the character ' to terminate the literal.|Error|
 |[AL0361](diagnostic-al361.md)|Identifier was not properly terminated. Use the character " to terminate the identifier.|Error|
 |[AL0362](diagnostic-al362.md)|The path must be relative to the project root.|Error|
+|[AL0363](diagnostic-al363.md)|The directory separator used in this property value is not compatible with the current operating system.|Error|
 |[AL0364](diagnostic-al364.md)|Option members must be accessed with ::.|Error|
 |[AL0365](diagnostic-al365.md)|The property '{0}' cannot be set if the property '{1}' is set to '{2}'.|Error|
 |[AL0366](diagnostic-al366.md)|A table has to have at least one Normal field.|Error|
@@ -579,6 +580,8 @@ author: SusanneWindfeldPedersen
 |[AL0696](diagnostic-al696.md)|Argument {0}: The argument should be a valid Field type.|Error|
 |[AL0697](diagnostic-al697.md)|Argument {0}: The argument should be a valid Field type.|Warning (Future Error)|
 |[AL0698](diagnostic-al698.md)|Type {0} cannot be used in a 'case' statement.|Error|
+|[AL0700](diagnostic-al700.md)|Dependency '{0}' should be referenced in the property '{1}' rather than as an explicit dependency.|Warning|
+|[AL0702](diagnostic-al702.md)|Dependency '{0}' is referenced in the property '{1}' and as an explicit dependency. Remove the explicit dependency.|Warning|
 |[AL0704](diagnostic-al704.md)|A layout must be specified through the 'ExcelLayout' property when the default layout type for a report is 'Excel'.|Error|
 |[AL0705](diagnostic-al705.md)|Another layout with name '{0}' already exists.|Error|
 |[AL0706](diagnostic-al706.md)|The property '{0}' cannot be used while also specifying the rendering section.|Error|
@@ -594,8 +597,18 @@ author: SusanneWindfeldPedersen
 |[AL0716](diagnostic-al716.md)|The {0} name '{1}' is reserved for future AL language features.|Error|
 |[AL0717](diagnostic-al717.md)|The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'.|Warning|
 |[AL0718](diagnostic-al718.md)|Report layouts must have a name.|Error|
-|[AL0719](diagnostic-al719.md)|Argument {0}: The argument should be a valid Field type. Argument of type Joker or Variant might have underlying type that is not valid Field type.|Information|
+|[AL0719](diagnostic-al719.md)|Argument {0}: The argument should be a valid Field type. An argument of type Joker or Variant might have an underlying type that is not a valid Field type.|Information|
 |[AL0720](diagnostic-al720.md)|An application object '{0} {1}' could not be found in the extension.|Error|
+|[AL0721](diagnostic-al721.md)|Reports that use the rendering syntax must also define the DefaultRenderingLayout property.|Error|
+|[AL0722](diagnostic-al722.md)|The property '{0}' is not allowed for pages using the ActionRef syntax.|Error|
+|[AL0723](diagnostic-al723.md)|The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can only target Actions.|Error|
+|[AL0724](diagnostic-al724.md)|An area of type '{0}' is not valid on pages of type '{1}'.|Error|
+|[AL0725](diagnostic-al725.md)|The action type '{0}' is not allowed in area '{1}'.|Error|
+|[AL0726](diagnostic-al726.md)|The action ref '{0}' is not found in target '{1}'.|Warning|
+|[AL0727](diagnostic-al727.md)|The property '{0}' can only be set if the property '{1}' is set.|Warning (Future Error)|
+|[AL0728](diagnostic-al728.md)|The property '{0}' can only be set if the property '{1}' is set to '{2}'.|Warning (Future Error)|
+|[AL0729](diagnostic-al729.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of: '{2}'.|Warning (Future Error)|
+|[AL0730](diagnostic-al730.md)|The field '{0}' cannot be used in a sum index.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -671,6 +684,7 @@ author: SusanneWindfeldPedersen
 |[AL1074](diagnostic-al1074.md)|Both 'applicationInsightsKey' and 'applicationInsightsConnectionString' are added. You should use the 'applicationInsightsConnectionString' property and remove the 'applicationInsightsKey' property.|Error|
 |[AL1075](diagnostic-al1075.md)|Both 'ShowMyCode' and 'ResourceExposurePolicy' properties are added. You should use the 'ResourceExposurePolicy' property and remove the 'ShowMyCode' property.|Error|
 |[AL1076](diagnostic-al1076.md)|A package that satisfies the dependency on app with ID {0} with name '{1}' and publisher '{2}' was found, but the name or publisher has changed. New name '{3}' and new publisher '{4}'. Consider updating the dependency reference to the new name/publisher.|Information|
+|[AL1077](diagnostic-al1077.md)|An error was encountered when trying to load the workspace: {0}.|Error|
 |[AL1100](diagnostic-al1100.md)|File name '{0}' is empty, contains invalid characters, has a drive specification without an absolute path, or is too long.|Fatal Error|
 |[AL1101](diagnostic-al1101.md)|Target must specify one of: 'internal', 'solution', 'extension'.|Fatal Error|
 |[AL1130](diagnostic-al1130.md)|The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:ss[.fffffff]'.|Error|
@@ -696,8 +710,11 @@ author: SusanneWindfeldPedersen
 |[AL1417](diagnostic-al1417.md)|The {0} '{1}' cannot be added relatively to '{2}' because '{2}' is missing. '{1}' is added at a default location instead.|Designer Customization Information|
 |[AL1418](diagnostic-al1418.md)|A DataItem with name '{0}' could not be found in the target {1}.|Designer Customization Warning|
 |[AL1419](diagnostic-al1419.md)|A DataItem or Column with name '{0}' could not be found in the target {1}.|Designer Customization Warning|
+|[AL1420](diagnostic-al1420.md)|The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can only target Actions. Ignoring the ActionRef.|Designer Customization Warning|
+|[AL1421](diagnostic-al1421.md)|The {0} '{1}' is using the '{2}' property. This will be automatically converted to the new syntax when customizing the related page in the webclient.|Designer Customization Warning|
+|[AL1422](diagnostic-al1422.md)|The target action '{0}' cannot be resolved in page '{1}'. Ignoring the ActionRef.|Designer Customization Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

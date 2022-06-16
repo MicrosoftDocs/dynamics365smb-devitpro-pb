@@ -34,5 +34,5 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -36,5 +36,5 @@ The ID that is assigned to the user by the application. This is the value of the
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

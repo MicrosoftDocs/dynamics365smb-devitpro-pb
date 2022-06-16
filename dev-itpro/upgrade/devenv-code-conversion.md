@@ -197,7 +197,7 @@ To build your base application, you'll create a new application database on the 
 
 In this task, you'll create an AL project in Visual Studio code that you'll use for building your custom base application extension based on your converted C/AL application.
 
-1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 18, 19, or 20 as outlined in [Getting Started with AL](../developer/devenv-get-started.md).
+1. If you haven't already, install Visual Studio Code and the latest AL Language extension for version 18, 19, or 20 as outlined in [Get Started with AL](../developer/devenv-get-started.md).
 
 2. Configure Visual Studio Code for optimal performance with AL projects.
 

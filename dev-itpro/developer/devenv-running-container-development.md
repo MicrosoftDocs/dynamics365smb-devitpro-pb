@@ -95,7 +95,7 @@ The `BCContainerHelper` will create a folder on the C:\ drive called *bcartifact
 The `BCContainerHelper` module also allows you to add the `-includeCSide` switch (For Business Central versions 14 or earlier) in order to add the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Windows client and C/SIDE to the desktop and export all objects to a folder underneath C:\ProgramData\BCContainerHelper\Extensions for the object handling functions from the module to work.
 
 ## See Also
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  

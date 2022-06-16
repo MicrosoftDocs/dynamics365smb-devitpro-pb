@@ -1,10 +1,9 @@
 ---
 title: "Report.ValidateAndPrepareLayout(Integer, InStream, var InStream, ReportLayoutType) Method"
-description: "Validates if the provided report layout is compatible with the specified report and performs the required modifications
-	so that it can be used for rendering."
+description: "Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/17/2022
+ms.date: 06/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,8 +16,7 @@ author: SusanneWindfeldPedersen
 # Report.ValidateAndPrepareLayout(Integer, InStream, var InStream, ReportLayoutType) Method
 > **Version**: _Available or changed with runtime version 9.0._
 
-Validates if the provided report layout is compatible with the specified report and performs the required modifications
-	so that it can be used for rendering.
+Validates if the provided report layout is compatible with the specified report and performs the required modifications so that it can be used for rendering.
 
 
 ## Syntax
@@ -54,5 +52,5 @@ The type of the layout.
 ## See Also
 
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

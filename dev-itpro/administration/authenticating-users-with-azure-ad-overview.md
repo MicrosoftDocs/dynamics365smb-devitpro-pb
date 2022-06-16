@@ -59,8 +59,8 @@ The complete setup for OpenID Connect isn't much different than it is for WS-Fed
     2. Configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] to include the `AadApplicationId` and `AadAuthorityUri` parameters. Set `AadApplicationId` to the application ID assigned to the registered application in Azure AD. Set `AadAuthorityUri` to `"https://login.microsoftonline.com/<Azure_AD_Tenant_ID>`.
 
         ```powershell 
-        Set-NAVWebServerConfiguration -KeyName AadApplicationId -KeyValue "<Azure_AD_Application_ID>"
-        Set-NAVWebServerConfiguration -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<Azure_AD_Tenant_ID>"
+        Set-NAVWebServerInstanceConfiguration -KeyName AadApplicationId -KeyValue "<Azure_AD_Application_ID>"
+        Set-NAVWebServerInstanceConfiguration -KeyName AadAuthorityUri -KeyValue "https://login.microsoftonline.com/<Azure_AD_Tenant_ID>"
         ```
 
 For the complete setup with more details, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
@@ -72,7 +72,7 @@ Whether setting up a new version 20 deployment or upgrading a version 19 or earl
 For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
 
 ```powershell
-Set-NAVWebServerConfiguration -KeyName UseLegacyAcsAuthentication -KeyValue "true"
+Set-NAVWebServerInstanceConfiguration -KeyName UseLegacyAcsAuthentication -KeyValue "true"
 ```
 
 For the complete setup, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).

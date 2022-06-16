@@ -31,5 +31,5 @@ The validation of the length of table fields was previously done with [AS0004](a
 ## See Also
 
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

@@ -103,6 +103,6 @@ The `InitValue` property of type `Duration` isn't allowed in the AL Language dev
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)   
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 

@@ -48,6 +48,6 @@ The [Text Data Type](..\text\text-data-type.md) is a value type, such that every
 The **TextBuilder** data type is a reference type, which holds a pointer elsewhere in memory. For performance reasons, we recommend you to use it when you want to modify a string without creating a new object. For example, using **TextBuilder** data type can boost performance when concatenating many strings together in a loop.
 
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Text Data Type](..\text\text-data-type.md) 
