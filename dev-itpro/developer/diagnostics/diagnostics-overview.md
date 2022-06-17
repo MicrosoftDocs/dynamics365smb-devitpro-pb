@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 06/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -600,11 +600,10 @@ author: SusanneWindfeldPedersen
 |[AL0719](diagnostic-al719.md)|Argument {0}: The argument should be a valid Field type. An argument of type Joker or Variant might have an underlying type that is not a valid Field type.|Information|
 |[AL0720](diagnostic-al720.md)|An application object '{0} {1}' could not be found in the extension.|Error|
 |[AL0721](diagnostic-al721.md)|Reports that use the rendering syntax must also define the DefaultRenderingLayout property.|Error|
-|[AL0722](diagnostic-al722.md)|The property '{0}' is not allowed for pages using the ActionRef syntax.|Error|
+|[AL0722](diagnostic-al722.md)|The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax.|Error|
 |[AL0723](diagnostic-al723.md)|The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can only target Actions.|Error|
 |[AL0724](diagnostic-al724.md)|An area of type '{0}' is not valid on pages of type '{1}'.|Error|
 |[AL0725](diagnostic-al725.md)|The action type '{0}' is not allowed in area '{1}'.|Error|
-|[AL0726](diagnostic-al726.md)|The action ref '{0}' is not found in target '{1}'.|Warning|
 |[AL0727](diagnostic-al727.md)|The property '{0}' can only be set if the property '{1}' is set.|Warning (Future Error)|
 |[AL0728](diagnostic-al728.md)|The property '{0}' can only be set if the property '{1}' is set to '{2}'.|Warning (Future Error)|
 |[AL0729](diagnostic-al729.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of: '{2}'.|Warning (Future Error)|

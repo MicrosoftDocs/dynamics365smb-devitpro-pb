@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL0722"
-description: "The property '{0}' is not allowed for pages using the ActionRef syntax."
+description: "The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 06/17/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,10 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The property '{0}' is not allowed for pages using the ActionRef syntax.
+The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax.
+
+## Description
+0 - the property; 1 - the containing element type; 2 - the containing element name; 3 - the containing object type; 4 - the containing object name  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
