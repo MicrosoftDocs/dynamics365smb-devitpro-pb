@@ -3,7 +3,7 @@ title: "UICop Analyzer"
 description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/02/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,8 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0010](uicop-aw0010.md)|A Repeater control used on a List page must be defined at the beginning of the area(Content) section.|WebClient|Warning|
 |[AW0011](uicop-aw0011.md)|Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.|WebClient|Info|
 |[AW0012](uicop-aw0012.md)|The Web client does not support properties for teaching tips in certain contexts.|WebClient|Warning|
+|[AW0013](uicop-aw0013.md)|Groups containing promoted actions should not be hidden.|WebClient|Warning|
+|[AW0014](uicop-aw0014.md)|Groups containing ActionRef targets should not be hidden.|WebClient|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
