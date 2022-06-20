@@ -10,7 +10,7 @@
       tocHref: /dynamics365/business-central/dev-itpro
       topicHref: /dynamics365/business-central/dev-itpro/index
     - name: Developer
-      tocHref: /dynamics365/business-central/dev-itpro/developer/index
+      tocHref: /dynamics365/business-central/dev-itpro/developer
       topicHref: /dynamics365/business-central/dev-itpro/developer/index
       items:
       - name: Dynamics 365 Business Central API
