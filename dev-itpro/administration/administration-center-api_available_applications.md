@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 06/14/2022
 ---
 
 # Available Applications
@@ -20,7 +20,7 @@ The API endpoints here should be utilized to determine what values can be used f
 Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
 
 ```
-GET /admin/v2.11/applications/
+GET /admin/v2.13/applications/
 ```
 
 ### Response
@@ -47,7 +47,7 @@ GET /admin/v2.11/applications/
 Gets a list of the currently available Versions that an environment can be created on within a logical ring group.
 
 ```
-GET /admin/v2.11/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
+GET /admin/v2.13/applications/{applicationFamily}/Countries/{countryCode}/Rings/{ringName}
 ```
 
 ### Route Parameters
