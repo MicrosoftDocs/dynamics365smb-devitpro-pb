@@ -16,6 +16,12 @@ This section demonstrates common scenarios and walks you through the steps to te
 
 ## Preparation
 
+You have two options to create shopify account:
+- Trial
+- Development stores if you do recurring demos and trainings
+
+### [Trial](#tab/trial)
+
 Begin by creating an Azure Active Directory tenant and get the administration login and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically equivalent to *admin @ CRMbc123456.onmicrosoft.com*.
 
 Navigate to [Shopify](https://www.shopify.com) and use this administrator account to sign up for a free 14-day trial. For more information on how to create and personalize your online store, see [Shopify Help Center](https://help.shopify.com/).
@@ -30,7 +36,7 @@ In the **Shopify Admin** of the created shop, apply following **Settings**:
   1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
   2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
 
-* For trial stores, select plan in the [**Plan**](https://www.shopify.com/admin/settings/plan) settings.
+* Select plan in the [**Plan**](https://www.shopify.com/admin/settings/plan) settings to be able test checkout process.
 
 > [!Important]  
 > To avoid payments, remember to cancel your Shopify trial.
@@ -42,7 +48,27 @@ Install the **Dynamics 365 Business Central** app in your Shopify online store.
 3. Review privacy and permissions, and then choose the **Install App** button. You can find and open the installed **Dynamics 365 Business Central** app in the Apps section on the sidebar of **Shopify admin**.
 4. Choose **Sign up now** to start the [!INCLUDE[prod_short](../includes/prod_short.md)] trial, and then use the administrator account.
 
-In the created [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
+### [Development store](#tab/dev-store)
+
+Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about).
+Once completed, you can use **Partner Dashboard** to create development store. For more infomrations, see [Creating development stores](https://help.shopify.com/partners/dashboard/managing-stores/development-stores).
+
+After creation of store, in the **Shopify Admin** of the created shop, apply following **Settings**:
+
+* Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
+* Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
+* Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
+* Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
+* Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
+  1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
+  2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
+
+As partner, you probably already have [!INCLUDE[prod_short](../includes/prod_short.md)] an account for demos. If not, please create. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md)
+
+---
+
+
+In the [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 2. Choose the **New** action.
