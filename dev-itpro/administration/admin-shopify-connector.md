@@ -174,7 +174,7 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
 2. Select the **DEMO1** Shop for which you want to synchronize customers to open the **Shopify Shop Card** page.
 3. Choose the **Sync Customers** action.
 
-In **Shopify Admin** notice that the customers were imported. Open one of the customers and notice that the first and last names of the customer are coming from the **Contact Name** field of the **Customer Card**. The company name can be found in the default address, linked to the customer. Choose **Send account invite** to invite customer.
+In **Shopify Admin** notice that the customers were imported. Open one of the customers and notice that the first and last names of the customer are coming from the **Contact Name** field of the **Customer Card**. The company name can be found in the default address, linked to the customer. Choose **Send account invite** to invite the customer.
 
 ## Walkthrough: Fine tuning of item management
 
@@ -271,14 +271,16 @@ In the **Shopify online store** open the product catalog, find the *ATHENS Desk*
 
 ### Scenario 
 
-You already have successful online store and would like to start using [!INCLUDE[prod_short](../includes/prod_short.md)] as business management software. You would like to import as much data from Shopify as possbile. 
+You already have a successful online store and would like to start using [!INCLUDE[prod_short](../includes/prod_short.md)] as business management software. You would like to import as much data from Shopify as possible. 
 
 ### Steps
 
-This is continuation of [Walkthrough: Start selling products online](admin-shopify-connector.md#walkthrough-start-selling-products-online). You can also try with your own data, for example your Shopify store or sandbox.
+This is a continuation of [Walkthrough: Start selling products online](admin-shopify-connector.md#walkthrough-start-selling-products-online). You can also try with your own data, for example your Shopify store or sandbox.
+
 In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
 
-Prepare data.
+#### Prepare data
+
 1. Switch to a free 30-day trial without sample data. For more information, see [Add your own data to an empty trial](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions.md#add-your-own-data-to-an-empty-trial-company).
 2. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 3. Choose the **New** action.
@@ -300,7 +302,7 @@ Configure the Shopify shop as described below in the next steps:
 16. Fill in the **Shipping Cost Account**, the **Tip Account** with revenue account. For example, in the US use `40100`.
 17. Enable the **Auto Create Orders** toggle.
 
-Run the synchronization.
+#### Run the synchronization
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
 2. Select the *DEMO2* Shop for which you want to synchronize data to open the **Shopify Shop Card** page.
@@ -308,7 +310,8 @@ Run the synchronization.
 4. Choose the **Sync Product Images** action.
 5. Choose the **Sync Customers** action.
 
-Results:
+### Results
+
 * Shopify Products are imported. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
 * Items with images are created. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Item**, and choose the related link.
 * Shopify Customers are imported. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Customers**, and choose the related link.
