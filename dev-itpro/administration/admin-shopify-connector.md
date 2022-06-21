@@ -108,9 +108,9 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)] go through the following st
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
 2. Choose the **Add Items** action.
-3. In the the **Shop Code** field, enter *DEMO1*.
+3. In the **Shop Code** field, enter *DEMO1*.
 4. Set the filter `CHAIR` on the **Item Category Code** field (add filter field if necessary).
-5. Click **OK** and wait until initial synchronization of items and prices is completed.
+5. Select **OK** and wait until initial synchronization of items and prices is completed.
 6. Choose the **Sync Product Images** action.
 7. Choose the **Sync Inventory** action.
 
@@ -132,7 +132,7 @@ Choose the **Buy it now** button and proceed to checkout.
 7. Select `10%` tip.
 8. In the **Credit Card** field, enter `1` if you use *(for testing) Bogus Gateway*, if you use *Shopify payments* in test mode, enter `5555 5555 5555 4444` in the **Credit Card** field.
 9. Fill in the **Name on card** field.
-10. In the **Expiration date** field enter the current month/year.
+10. In the **Expiration date** field, enter the current month/year.
 11. In the **Security code**, enter `111`.
 12. Choose the **Pay now** button.
 
@@ -312,10 +312,10 @@ Configure the Shopify shop as described below in the next steps:
 
 ### Results
 
-* Shopify Products are imported. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
-* Items with images are created. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Item**, and choose the related link.
-* Shopify Customers are imported. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Customers**, and choose the related link.
-* Customers are created. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Customers**, and choose the related link.
+* Shopify Products are imported. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
+* Items with images are created. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Item**, and choose the related link.
+* Shopify Customers are imported. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Customers**, and choose the related link.
+* Customers are created. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Customers**, and choose the related link.
 
 
 ## See Also
