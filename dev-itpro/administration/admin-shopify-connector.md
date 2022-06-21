@@ -1,7 +1,7 @@
 ---
 title: Training scenarios for integrating with Shopify
 description: Various integration scenarios for demonstrating workflow between Shopify and Business Central.
-ms.date: 05/16/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.reviewer: solsen
@@ -52,9 +52,9 @@ Install the **Dynamics 365 Business Central** app in your Shopify online store.
 ### [Development store](#tab/dev-store)
 
 Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about).
-Once completed, you can use **Partner Dashboard** to create development store. For more infomrations, see [Creating development stores](https://help.shopify.com/partners/dashboard/managing-stores/development-stores).
+Once it's completed, you can use **Partner Dashboard** to create the development store. For more information, see [Creating development stores](https://help.shopify.com/partners/dashboard/managing-stores/development-stores).
 
-After creation of store, in the **Shopify Admin** of the created shop, apply following **Settings**:
+After creation of the store, in the **Shopify Admin** of the created shop, apply following **Settings**:
 
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
 * Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
@@ -64,9 +64,7 @@ After creation of store, in the **Shopify Admin** of the created shop, apply fol
   1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
   2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
 
-As partner, you probably already have [!INCLUDE[prod_short](../includes/prod_short.md)] an account for demos. If not, please create. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md)
-
----
+As a partner, you probably already have a [!INCLUDE[prod_short](../includes/prod_short.md)] account for demos. If not, you should create one. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md).
 
 
 In the [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
