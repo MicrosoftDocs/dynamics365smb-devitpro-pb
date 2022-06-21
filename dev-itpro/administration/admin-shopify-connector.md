@@ -268,6 +268,54 @@ Notice that Inventory for ANTWERP Conference Table is 100, because we configured
 
 In the **Shopify online store** open the product catalog, find the *ATHENS Desk*  product. Notice that different options are available. For different options, prices are different. Pay attention to discount information.
 
+## Walkthrough: Import items from Shopify
+
+### Scenario 
+
+You already have successful online store and would like to start using [!INCLUDE[prod_short](../includes/prod_short.md)] as business management software. You would like to import as much data from Shopify as possbile. 
+
+### Steps
+
+This is continuation of [Walkthrough: Start selling products online](admin-shopify-connector.md#walkthrough-start-selling-products-online). You can also try with your own data, for example your Shopify store or sandbox.
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
+
+Prepare data.
+1. Switch to a free 30-day trial without sample data. For more information, see [Add your own data to an empty trial](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions.md#add-your-own-data-to-an-empty-trial-company).
+2. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
+3. Choose the **New** action.
+4. In the **Code** field, enter `DEMO2`.
+5. In the **Shopify URL** field, enter the URL to the online shop that you want to connect to.
+6. Activate the **Enabled** toggle, review and accept the terms and conditions.
+
+Configure the Shopify shop as described below in the next steps:
+
+7. Enable the **Log Enabled** toggle.
+8. Deactivate the **Allow Background Syncs** toggle.
+9. Select **From Shopify** in the **Sync Item** field.
+5. Enable the **Auto Create Unknown Items** toggle.
+11. Fill in the **Item Template Code** field with the appropriate template.
+12. Select **From Shopify** in the **Sync Item Images** field.
+13. Select **All Customers** in the **Customer Import from Shopify**.
+14. Enable the **Auto Create Unknown Customers** toggle.
+15. Fill in the **Customer Template Code** field with the appropriate template.
+16. Fill in the **Shipping Cost Account**, the **Tip Account** with revenue account. For example, in the US use `40100`.
+17. Enable the **Auto Create Orders** toggle.
+
+Run the synchronization.
+
+1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
+2. Select the *DEMO2* Shop for which you want to synchronize data to open the **Shopify Shop Card** page.
+3. Choose the **Sync Products** action.
+4. Choose the **Sync Product Images** action.
+5. Choose the **Sync Customers** action.
+
+Results:
+* Shopify Products are imported. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
+* Items with images are created. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Item**, and choose the related link.
+* Shopify Customers are imported. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Customers**, and choose the related link.
+* Customers are created. To verify go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Customers**, and choose the related link.
+
+
 ## See Also
 
 [Get Started with the Shopify Connector](/dynamics365/business-central/shopify/get-started)
