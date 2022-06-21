@@ -600,7 +600,6 @@
 #### [AL0700](diagnostics/diagnostic-al700.md)
 #### [AL0702](diagnostics/diagnostic-al702.md)
 #### [AL0717](diagnostics/diagnostic-al717.md)
-#### [AL0726](diagnostics/diagnostic-al726.md)
 #### [AL1000](diagnostics/diagnostic-al1000.md)
 #### [AL1003](diagnostics/diagnostic-al1003.md)
 #### [AL1004](diagnostics/diagnostic-al1004.md)
@@ -2884,3 +2883,4 @@
 ### Query Triggers
 #### [OnBeforeOpen Trigger](triggers-auto/query/devenv-onbeforeopen-query-trigger.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_TRIGGERS) -->
+) -->
