@@ -2883,4 +2883,3 @@
 ### Query Triggers
 #### [OnBeforeOpen Trigger](triggers-auto/query/devenv-onbeforeopen-query-trigger.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_TRIGGERS) -->
-) -->
