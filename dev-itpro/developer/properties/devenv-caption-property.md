@@ -3,12 +3,11 @@ title: "Caption Property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/04/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -31,8 +30,8 @@ Sets the string that is used to identify a control or other object in the user i
 -   Page Part
 -   Page System Part
 -   Page Action
--   Page Action Group
 -   Page Action Separator
+-   Page Action Group
 -   Xml Port
 -   Report
 -   Query
