@@ -16,9 +16,10 @@ This section demonstrates common scenarios and walks you through the steps to te
 
 ## Preparation
 
-You have two options to create shopify account:
+You have the following two options for creating a Shopify account:
+
 - Trial
-- Development stores if you do recurring demos and trainings
+- Development stores, if you do recurring demos and trainings
 
 ### [Trial](#tab/trial)
 
