@@ -23,7 +23,7 @@ Buffer IO, and so on. For more information about these objects, see [SQL Server,
 
 [!INCLUDE[include_note_database_wait_statistics_md](../includes/include-note-database-wait-statistics.md)]
 
-You can also emit this data to telemetry and can analyze it in Application Insights. To do this, choose the **Emit telemetry** icon from the tab. To set the telemetry signal for the application you can see, [Monitoring and Analyzing Telemetry](telemetry-overview.md). To know more about which information you'll get in Application Insights and how to analyze it, see [Analyzing Database Wait Statistics Telemetry](telemetry-database-wait-statistics-trace.md).
+You can also emit this data to telemetry and can analyze it in Application Insights. To do this, choose the **Emit telemetry** icon from the tab. To set the telemetry signal for the application, see [Monitoring and Analyzing Telemetry](telemetry-overview.md). To know more about which information you'll get in Application Insights and how to analyze it, see [Analyzing Database Wait Statistics Telemetry](telemetry-database-wait-statistics-trace.md).
 
 
 ## See Also
