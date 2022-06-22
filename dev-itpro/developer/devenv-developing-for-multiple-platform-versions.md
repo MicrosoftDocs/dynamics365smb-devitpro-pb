@@ -2,7 +2,7 @@
 title: "Developing for Multiple Platform Versions"
 description: "The AL language extension is compatible with multiple platform versions for developing solutions in marketplace." 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/22/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,15 +12,15 @@ caps.latest.revision: 24
 author: SusanneWindfeldPedersen
 ---
 
-# Developing for Multiple Platform Versions   
+# Development for Multiple Platform Versions   
 
 The AL language extension is compatible with multiple platform versions. You can install the AL Language extension from the Visual Studio Code marketplace and use it to develop solutions for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)].
 
-## Defining the platform version
-To set the platform version, add the **runtime** property in the `app.json` file. This attribute defines the platform version that the extension is targeting. Depending on the platform version, some features become available, while some features are not supported. For example, OData-bound actions can only be used when the platform version is 2.0 or higher. 
+## Define the platform version
+To set the platform version, add the **runtime** property in the `app.json` file. This attribute defines the platform version that the extension is targeting. Depending on the platform version, some features become available, while some features aren't supported. For example, OData-bound actions can only be used when the platform version is 2.0 or higher. 
 
 > [!NOTE]  
-> The AL Language extension is not compatible with [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] version backwards. For [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
+> The AL Language extension isn't compatible with [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] version backwards. For [!INCLUDE[nav_2018_short_md](includes/nav_2018_short_md.md)] development, the traditional method should be used. You must install the Visual Studio Code extension from the `ALLanguage.vsix` file shipped on the DVD. 
 
 ## Version compatibility
 
