@@ -3,12 +3,11 @@ title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -32,7 +31,7 @@ Specifies the permissions assigned to the scope of the method.
 ## Syntax
 
 ```AL
-[InherentPermissions(PermissionObjectType: PermissionObjectType, ObjectId: Integer, Permissions: Text)]
+[InherentPermissions(PermissionObjectType: PermissionObjectType, ObjectId: Integer, Permissions: Text [, InherentPermissionsScope: InherentPermissionsScope])]
 ```
 
 ### Arguments
@@ -47,6 +46,10 @@ Specifies the ID of the object that permissions are assigned to. You can specify
 *Permissions*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 Specifies the permission values. You can specify the permissions using the syntax '<permission value>'.  
+
+*[Optional] InherentPermissionsScope*  
+&emsp;Type: [InherentPermissionsScope](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md)  
+Specifies the scope of the permissions that are assigned (Entitlements, Permissions or Both).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
