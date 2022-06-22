@@ -362,11 +362,11 @@
 #### [The Migration.json File](developer/devenv-migration-json-file.md)
 #### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
-#### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-#### [Optimizing Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
+#### [Development for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
+#### [Optimize Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
 ### Configure Projects and Workspaces
-#### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
-#### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
+#### [Work with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
+#### [Work with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 
 ### Code Analysis
 #### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
