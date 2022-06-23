@@ -31,7 +31,7 @@ Notifications are sent to all email addresses that are listed in the **Notificat
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
 
 > [!NOTE]
-> In June 2022, we start moving this type of notification to the Microsoft 365 Message center. For a while, notifications will be sent both from the Microsoft 365 Message center and the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. In August 2022, we expect to remove the **Notification recipients** list from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], and that will mean that you will no longer receive those notification emails.  
+> In August 2022, we start moving this type of notification to the Microsoft 365 Message center. For a while, notifications will be sent both from the Microsoft 365 Message center and the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. Over time, emails sent to notification recipients set up in [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] will be a subset of messages posted in Message Center, and eventually emails sent to notification recipients will be deprecated.  
 >
 > Already now, we warmly recommend that you make sure that the relevant people [sign up to receive email notifications from the Message center](/microsoft-365/admin/manage/message-center#preferences). For more information, see the article [Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 admin content.
 
