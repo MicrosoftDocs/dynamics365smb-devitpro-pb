@@ -53,7 +53,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
 - Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
-- Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](http://aka.ms/bconboarding)
+- Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPI](https://aka.ms/BCPI) 
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys) 
