@@ -1,6 +1,6 @@
 <!-- DO NOT TOUCH - auto-generated sections from here -->
 # AL Language Reference
-## [AL Language Reference Overview](devenv-al-reference-overview.md)
+## [AL Language Reference Overview](index.md)
 ## Compiler Errors, Warnings, and Messages
 ### [Overview](diagnostics/diagnostics-overview.md)
 ### [Warnings Turning into Errors](diagnostics/diagnostics-with-limit-date-overview.md)
