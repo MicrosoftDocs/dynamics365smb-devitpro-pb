@@ -46,13 +46,11 @@ The **Rename company** and **Copy company** operations aren't intended to run wh
 
 If you must do a **Rename/Copy company** operation, it's highly recommended to do it outside working hours. Turn off scheduled jobs to avoid locking issues.
 
-The **Copy Company** operation also has a number of long term effects including the following:
+The **Copy Company** operation also has many long term effects including the following:
 
 - Increased database size
 - Upgrade operations take longer
-- Larger .bacpac files when requesting backups from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]
-
-    This also means that export/import operations involving .bacpac files take longer
+- Larger .bacpac files when requesting backups from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], which also means that export/import operations involving .bacpac files take longer.
 
 > [!NOTE]
 > For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, the **Rename company** operation is no longer supported. Instead, you can change a company's display name.
@@ -84,10 +82,10 @@ These areas of the application are known to cause a performance impact and requi
 - [Change log](/dynamics365/business-central/across-log-changes)  
 
 ## If processing of Sales Order lines is slow
-If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change this to **false**.
+If you experience that processing of Sales Order lines that contain bill-of-materials (BOMs) is slow, then check if _Stockout Warning_ on the page  _Sales & Receivables Setup_, is set to **true**. If that is the case, then change the value to **false**.
 
 Why? 
-_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that have not yet been posted. Stockout Warning can still be used on items; this can be done by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
+_Stockout Warning_ specifies if a warning should be displayed if a user enters a quantity on a sales document that brings the item’s inventory below zero. The calculation includes all sales document lines that havnn't yet been posted. Stockout Warning can still be used on items; by setting the individual Item’s _Stockout Warning_ to **true** on the Item Card. 
 
 ## Manage the database access intent on reports, API pages, and queries
 
@@ -99,7 +97,7 @@ A drawback of reading from a replica is that it introduces a slight delay compar
 
 ## Number of companies
 
-Having many companies can cause administrative tasks, like upgrades, point-in-time restores, and database exports, to take a very long time and potentially hit timeout values. If you have more than 50 companies, we recommend that you test these operations and typical usage scenarios extensively. Delete companies that are no longer needed.
+Having many companies can cause administrative tasks, like upgrades, point-in-time restores, and database exports, to take a long time and potentially hit timeout values. If you have more than 50 companies, we recommend that you test these operations and typical usage scenarios extensively. Delete companies that are no longer needed.
 
 ## Don't do these things
 
