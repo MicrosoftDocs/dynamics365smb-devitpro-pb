@@ -369,7 +369,7 @@
 #### [Work with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 
 ### Code Analysis
-#### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
+#### [The Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
@@ -378,7 +378,7 @@
 #### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
 
-### Compiling, Publishing, and Debugging
+### Compile, Publish, and Debug
 #### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
