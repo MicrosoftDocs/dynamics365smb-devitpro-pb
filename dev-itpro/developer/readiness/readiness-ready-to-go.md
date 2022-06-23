@@ -47,12 +47,13 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://dynamics.microsoft.com/business-central/overview/)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
-- Discover useful resources for partners on [aka.ms/BCPartnerPortal]https://aka.ms/BCPartnerPortal 
+- Discover useful resources for partners on [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 
 ## Customer onboarding and resources 
 
 - Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
 - Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
+- Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](http://aka.ms/bconboarding)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPI](https://aka.ms/BCPI) 
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys) 
