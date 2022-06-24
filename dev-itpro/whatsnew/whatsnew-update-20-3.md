@@ -22,8 +22,7 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
 
-- [Release and reopen multiple documents](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/release-reopen-multiple-documents)
-
+- 
 
 ## Localization updates
 
