@@ -4,7 +4,7 @@ description: "Developing a custom API in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -270,13 +270,14 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
                     {
                         Caption = 'Country';
                     }
-                    part(carModels; "API Car Model")
-                    {
-                        Caption = 'Car Models';
-                        EntityName = 'carModel';
-                        EntitySetName = 'carModels';
-                        SubPageLink = "Brand Id" = Field(SystemId);
-                    }
+                }
+
+                part(carModels; "API Car Model")
+                {
+                    Caption = 'Car Models';
+                    EntityName = 'carModel';
+                    EntitySetName = 'carModels';
+                    SubPageLink = "Brand Id" = Field(SystemId);
                 }
             }
         }
