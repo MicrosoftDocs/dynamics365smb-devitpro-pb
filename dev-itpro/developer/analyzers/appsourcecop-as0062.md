@@ -124,6 +124,9 @@ page 50100 MyPage
 }
 ```
 
+> [!NOTE]
+> This inheritance does not apply to members defined in extension objects like page extensions or report extensions.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
 [Get Started with AL](../devenv-get-started.md)  
