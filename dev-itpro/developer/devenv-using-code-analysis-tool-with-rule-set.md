@@ -84,7 +84,8 @@ To trigger a new compilation manually, use the **Ctrl+Shift+B** shortcut to buil
 Changing the contents of the ruleset file won't be detected by the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. To see the effects of changing the ruleset file, you can try any of the following steps:
 
 - Reload the window.
-- In the project settings, change the **Rule Set Path** setting to a non-valid path and save it. Then change it back and save again.
+- In the project settings, change the **Rule Set Path** setting to an invalid path and save it. Then change it back and save again.
+
 <!-- - In the project settings file, make changes to one of the settings, such as **al.ruleSetPath**, and save it. You can then undo the changes. -->
 
 ## See also

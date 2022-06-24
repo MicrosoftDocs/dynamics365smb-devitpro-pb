@@ -10,6 +10,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
+
 # Develop for Multiple Platform Versions   
 
 The AL language extension is compatible with multiple platform versions. You can install the AL Language extension from the Visual Studio Code marketplace and use it to develop solutions for [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)].

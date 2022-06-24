@@ -41,6 +41,7 @@ A **Rule** is a complex JSON object that defines how you can process a specific 
 |Setting|Mandatory|Type|Value|
 |-------|---------|-----|-----|
 |id|Yes|String|The string that uniquely identifies a diagnostic.|
+
 |action|Yes|Error&nbsp;&#124;&nbsp;Warning&nbsp;&#124;&nbsp;Info&nbsp;&#124;&nbsp;Hidden&nbsp;&#124;&nbsp;None|The action to apply if the diagnostic is emitted. There can't be two rules with the same `id` and different actions in the same rule file.|
 
 ## Examples
