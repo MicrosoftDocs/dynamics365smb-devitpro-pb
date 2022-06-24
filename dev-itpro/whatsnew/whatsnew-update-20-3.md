@@ -14,11 +14,11 @@ author: EmmaNielsson
 
 # Update 20.3 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
 
-Would you like to know what has changed in update 20.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 20.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article]().
+Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
 
