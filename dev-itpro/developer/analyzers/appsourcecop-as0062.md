@@ -58,6 +58,8 @@ The field `MyField` and the action `MyAction` are not valid because they do not 
 
 ## Code example not triggering the rule
 
+### ApplicationArea property set on each members
+
 ```AL
 page 50100 MyPage
 {
@@ -86,6 +88,41 @@ page 50100 MyPage
 ```
 
 The field `MyField` and the action `MyAction` are valid because they have the `ApplicationArea` property set.
+
+### ApplicationArea property set on the object
+
+From runtime version 10.0, field, part, and action controls without ApplicationArea inherit the ApplicationArea defined on the page/report level.
+
+The following code will then not trigger this analyzer diagnostic.
+
+```AL
+page 50100 MyPage
+{
+    ApplicationArea = All;
+
+    layout
+    {
+        area(Content)
+        {
+            field(MyField; 150)
+            {
+                // ApplicationArea is inherited from the page.
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(MyAction) 
+            {
+                // ApplicationArea is inherited from the page.
+            }
+        }
+    }
+}
+```
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
