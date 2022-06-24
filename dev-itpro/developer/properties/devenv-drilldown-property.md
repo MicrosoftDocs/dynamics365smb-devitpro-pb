@@ -30,7 +30,7 @@ Sets a drill-down for a field on a page.
 ## Syntax
 
 ```AL
-DrillDrown = true;
+DrillDown = true;
 ```
   
 ## Remarks  
