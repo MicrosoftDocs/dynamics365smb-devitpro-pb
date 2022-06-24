@@ -3,7 +3,7 @@ title: "List Data Type"
 description: "Represents a strongly typed list of ordered objects that can be accessed by index."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -49,7 +49,38 @@ The following methods are available on instances of the List data type.
 
 The List can only be used with simple types i.e. you can have a List of [Integer] but cannot have a List of [Blob]. Similarly, the List data type does not support holding instantiated records. For this purpose, use temporary tables.
 
-Lists are 1-based indexed, that is, the indexing of a List begins with 1. A copy of a list is a shallow copy.
+Lists are 1-based indexed, that is, the indexing of a List begins with 1.
+
+A List is a reference type, so assigning an instance of a list to another variable or passing as a method parameter by value (for example without var), creates a second variable that reads/writes the same list. *It does not create a new list*.
+
+To create a new list that contains the same values as the original list, you can do the following to perform a *shallow copy*:
+
+```al
+trigger OnRun()
+    var
+        l1: List of [Integer];
+        l2: List of [Integer];
+    begin
+        l2 := l1.GetRange(1, l1.Count);
+    end;
+```
+
+A shallow copy does not copy the elements within the list, only the list itself, so if the elements within the list are reference types as well, for example a list of lists, they will still be the same lists as in the original list.
+
+To perform a *deep copy*, meaning to copy reference types within reference types, you will need to apply the same approach to the elements of the list:
+
+```al
+trigger OnRun()
+    var
+        innerlist: List of [Integer];
+        l1: List of [List of [Integer]];
+        l2: List of [List of [Integer]];
+    begin
+        foreach innerlist in l1 do begin
+            l2.Add(innerlist.GetRange(1, innerlist.Count));
+        end;
+    end;
+```
 
 
 > [!WARNING]  
