@@ -37,5 +37,5 @@ The current path for a given node.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Xmlport Data Type](xmlport-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

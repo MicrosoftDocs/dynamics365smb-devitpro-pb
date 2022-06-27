@@ -55,5 +55,5 @@ The RecordRef that refers to the table in which you want to find a record.
  For a simple example that illustrates how to use the Print method, see example in the [RunRequestPage Method](../../methods-auto/report/report-runrequestpage-method.md) method topic.  
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

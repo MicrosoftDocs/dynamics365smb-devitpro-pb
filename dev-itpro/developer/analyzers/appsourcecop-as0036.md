@@ -234,5 +234,5 @@ In version 1.0, `MyField` was accessible to table extensions extending `MyTable`
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

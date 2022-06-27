@@ -2,7 +2,7 @@
 title: "Attach and Debug Next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/19/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. Then debugging starts when the code that the breakpoint is set on is hit, which is useful for debugging Web API sessions. 
+If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. Then debugging starts when the code that the breakpoint is set on is hit. 
 
 > [!NOTE]  
 > To use the attach functionality, you must make sure that your app is published with **Ctrl+F5** first, or with **Alt+Ctrl+F5** for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with **F5**. To debug using attach, you must make sure to debug on a *new* session. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing **F5** (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
@@ -35,7 +35,7 @@ In the attach configuration, the `breakOnNext` setting specifies the next client
             "type": "al",
             "request": "attach",
             "server": "https://localhost",
-            "serverInstance": "BC160",
+            "serverInstance": "BC200",
             "authentication": "Windows",
             "breakOnError": true,
             "breakOnRecordWrite": false,

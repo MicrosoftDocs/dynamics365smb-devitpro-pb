@@ -3,12 +3,11 @@ title: "BusinessEvent Attribute"
 description: "Specifies that the method is published as a business type event."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -42,8 +41,6 @@ Specifies that the firing instance of the object is available as a parameter to 
 Specifies if event subscribers should be invoked in an isolated transaction.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-**True** exposes the global methods in the object that contains the event publisher function to event subscriber functions; **false** does not. The default value is **false**.
 
 ## Snippet support
 Typing the shortcut `teventbus` will create the basic BusinessEvent attribute syntax when using the [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)] in Visual Studio Code.

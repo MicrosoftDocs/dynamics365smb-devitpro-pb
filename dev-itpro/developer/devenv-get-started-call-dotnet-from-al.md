@@ -107,7 +107,7 @@ When publishing, the server re-compiles your code and tries to resolve all the r
 The server will search the global assembly cache (GAC), the **Add-ins** folder, and the **Add-in** table. You must manually install any custom assembly in one of these locations.
 
 ## See Also
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)        
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)     
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)  

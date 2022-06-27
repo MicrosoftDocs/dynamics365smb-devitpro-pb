@@ -67,11 +67,11 @@ If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 
 Follow the steps outlined below.
 
-1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
+1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview).
 2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
 3. Sign in as the tenant admin. 
 4. Run the `Get-AzureADPolicy` command. 
-5. For each `Id` that is the result of above command, run `    Remove-AzureADPolicy -Id {Guid}`. 
+5. For each `Id` that is the result of above command, run `Remove-AzureADPolicy -Id {Guid}`. 
 6. Set the token lifetime to 10 minutes by running the following command: `New-AzureADPolicy -Definition @('{"TokenLifetimePolicy":{"Version":1, "AccessTokenLifetime":"0.00:10:00"}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault $true -Type "TokenLifetimePolicy"`.
 
 For reference, see the prerequisites section in the following article: [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes#prerequisites).

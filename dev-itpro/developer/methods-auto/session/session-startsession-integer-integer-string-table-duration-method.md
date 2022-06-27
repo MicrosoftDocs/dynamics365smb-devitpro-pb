@@ -64,6 +64,6 @@ For information about how dialog boxes are handled in a background session, see 
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)

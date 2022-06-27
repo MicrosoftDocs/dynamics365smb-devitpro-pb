@@ -39,6 +39,6 @@ For more information, see:
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [CodeCop AA0161](codecop-aa0161.md)

@@ -116,7 +116,7 @@ New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2
 
 ## Assign a telemetry ID to users
 
-To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain traces, but not all. Specifically, it's used only in traces that the Business Central service/server emits in the context of a user session. So, for example, traces that the Business Central Web server emits won't include this ID.
+To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain traces, but not all. Specifically, it's used only in telemetry that the Business Central service/server emits in the context of a user session. So, for example, telemetry that the Business Central Web server emits won't include this ID.
 
 To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
 
@@ -131,7 +131,7 @@ To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID**
    - To clear the telemetry ID, choose **Set field to null GUID** > **OK**.
 
 > [!NOTE]
-> We recommend that you assign a telemetry ID to all users to make it possible to troubleshoot situations that happened in the past using telemetry.
+> We recommend that a telemetry ID is assigned to all users to make it possible to troubleshoot situations that happened in the past using telemetry.
 
 ## Cleaning up settings
 

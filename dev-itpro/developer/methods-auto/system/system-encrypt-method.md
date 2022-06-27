@@ -60,5 +60,5 @@ This code example takes the string value **ABC123** and outputs the encrypted va
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -84,5 +84,5 @@ The `Error` method causes execution of AL code to stop. [Message Method](../../m
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

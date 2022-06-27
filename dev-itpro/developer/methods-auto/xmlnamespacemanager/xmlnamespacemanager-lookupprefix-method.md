@@ -47,5 +47,5 @@ The matching prefix. If there is no mapped prefix, the method returns an empty s
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlNamespaceManager Data Type](xmlnamespacemanager-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

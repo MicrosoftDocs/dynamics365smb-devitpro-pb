@@ -15,7 +15,7 @@ ms.author: jswymer
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-Authorization telemetry provides information about the authorization of users when they try to sign in to Business Central. This telemetry data can help you identify problems a user might experience when signing in. 
+Authorization telemetry provides information about the authorization of users (or services) when trying to sign in to Business Central. This telemetry data can help you identify problems a user (or a service) might experience when signing in. 
 
 Authorization signals are emitted in two stages of sign-in. The first stage is the initial authorization, before the CompanyOpen trigger is run. In this stage, the system verifies that the user account is enabled in the tenant and has the correct entitlements. The telemetry data includes:
 

@@ -28,9 +28,12 @@ Lambda operators are not supported by [!INCLUDE[prod_short](../developer/include
 ## UI pages
 If you use Web services that are based on UI pages, you must expect the same behavior from the Web service as from the UI page. If you want to have full control and separation of concern it is recommended to use the Business Central APIs instead.
 
-## Deep patching
+## Deep insert and patching
 
-[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports deep insert, but not deep patching. Multiple requests will need to be issued when patching nested entities. 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports deep insert on API page types. It's not supported on pages exposed as ODataV4 web services. Although ODataV4 web services might work in some cases, it's not a recommended.
 
-## See Also  
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't support deep patching. Multiple requests will need to be issued when patching nested entities.
+
+## See Also
+
 [OData Web Services overview](odata-web-services.md)

@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 01/26/2022
+ms.date: 05/25/2022
 ms.author: jswymer
 ---
 
@@ -49,19 +49,23 @@ You can create environments of different types. Choose the type of environment b
 
 ## Create a new environment
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. In this case, you can delete the original production environment and then create a new production environment.  
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] provides an easy method for creating environments for the tenant. For example, you've been using a production environment for training purposes, and you've decided to start using [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to run the business. You can, in this case, delete the original production environment and then create a new production environment.  
 
 [!INCLUDE [admin-env-quota](../developer/includes/admin-env-quota.md)]
 
 You can create new environments that are either production environments or sandboxes. You can also copy an existing environment. For more information, see [Copy a Production or Sandbox Environment](tenant-admin-center-environments-copy.md).  
 
-### To create a new environment that is not a copy of an existing environment
+### To create a new environment that isn't a copy of an existing environment
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
 2. In the **Create Environment** pane, Specify a name for the new environment.
 3. In the **Environment Type** list, choose **Production** or **Sandbox**.
 4. In the **Application family** field, specify the type of solution that this environment is based on if it isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
 5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
+
+   > [!NOTE]
+   > The new environment will be created with a default update window that guarantees future updates won't run between 8:00 PM and 6:00 AM local time for the environment country. This update window can be changed after the environment has been created. For more information, see [Managing Updates in the Business Central Admin Center](tenant-admin-center-update-management.md#set-the-update-window-for-each-environment).
+
 6. In the **Version** list, specify the relevant application version for the new environment if more than one version is available.  
 7. Choose the **Create** action.  
 
@@ -116,7 +120,7 @@ Before you can assign an Azure AD group to an environment, the group must be cre
 
 ## Delete an environment
 
-You can delete environments in the admin center, such as when a sandbox environment is not longer needed.  
+You can delete environments in the admin center, such as when a sandbox environment isn't longer needed.  
 
 > [!IMPORTANT]
 > Make sure no user is using the environment before you delete it.

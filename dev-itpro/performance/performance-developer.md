@@ -2,7 +2,7 @@
 title: "Performance Article For Developers"
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -41,7 +41,7 @@ Another example of unexpected recalculation is when using query objects. In cont
 
 One way to speed up things is to reduce the amount of work that the system must do. For example, to reduce slowness of role centers, consider how many page parts are needed for the user. Another benefit of a simple page with few UI elements can also be ease of use and navigation.
 
-Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's Enabled or Visible properties to false is not enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
+Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's Enabled or Visible properties to false isn't enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
 Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
@@ -52,7 +52,8 @@ To get to a responsive UI fast, consider using Page Background Tasks for calcula
 For more information about Page Background Tasks, see [Page Background Tasks](../developer/devenv-page-background-tasks.md).
 
 ### Making Edit-in-Excel faster
-The **Edit in Excel** feature uses UI pages exposed through OData. This means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating fact boxes, avoid calculation, and avoid defaulting logic.
+
+The **Edit in Excel** feature uses UI pages exposed through OData, which means that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server to Excel. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating fact boxes, avoid calculation, and avoid defaulting logic.
 
 ## Writing efficient Web Services
 
@@ -63,7 +64,7 @@ The **Edit in Excel** feature uses UI pages exposed through OData. This means th
 ### Endpoint performance
 
 #### Anti-patterns (don't do this)
-Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, are not returned in web service results, but will use resources to prepare.
+Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but will use resources to prepare.
 
 Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
@@ -77,19 +78,19 @@ Don't use temp tables as a source if you have many records. Temp tables that are
 
 Don't insert child records belonging to same parent in parallel. This condition causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
 
-Do not use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 #### Performance patterns (do this)
 - Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
 - If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
 
-- The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It is possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+- The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 - If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set `DataAccessIntent = ReadOnly`. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
 ### OData Performance patterns
-When calling OData web services, there are a number of strategies that you can use to speed up your queries
+When calling OData web services, there are many strategies that you can use to speed up your queries
 - Limiting the set ($filter or $top) if you're using an expensive $expand statement
 - Using OData transaction $batch
 - Using Data Access Intent Read-only with OData
@@ -97,7 +98,7 @@ When calling OData web services, there are a number of strategies that you can u
 For more details about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
 
 ### How to handle large volumes of web service calls
-When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it is important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
+When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it's important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
 
 Make sure that your external application can handle the two HTTP status codes *429 (Too Many Requests)* and *504 (Gateway Timeout)*.
 
@@ -151,7 +152,7 @@ Knowledge about different AL performance patterns can greatly improve the perfor
 
 AL comes with built-in data structures that have been optimized for performance and server resource consumption. Make sure that you're familiar with them to make your AL code as efficient as possible.  
 
-When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, please use a `TextBuilder` data type instead of `BigText` when possible. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
+When working with strings, make sure to use the `TextBuilder` data type and not repeated use of the `+=` operator on a `Text` variable. General guidance is to use a `Text` data type if you concatenate fewer than five strings (here the internal allocation of a `TextBuilder` and the final `ToText` invocation is more expensive). If you need to concatenate five strings or more or concatenate strings in a loop, then `TextBuilder` is faster. Also, use a `TextBuilder` data type instead of `BigText` when possible. For more information, see [TextBuilder Data Type](../developer/methods-auto/textbuilder/textbuilder-data-type.md). 
 
 If you need a key-value data structure that is optimized for fast lookups, use a `Dictionary` data type. For more information, see [Dictionary Data Type](../developer/methods-auto/dictionary/dictionary-data-type.md).
 
@@ -229,11 +230,11 @@ For more information, see [Using Partial Records](../developer/devenv-partial-re
 
 ### Table extension impact on performance
 
-Table extensions are seperate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Together with the current inability to define indexes that span base and extension fields, one should avoid splitting one's code into too many table extensions.
+Table extensions are separate tables in the database and therefore need to be joined together in the data stack when accessed via a record. With tables extensions being stored individually, the amount of joins necessary grows with the number of table extensions extending a table. Together with the current inability to define indexes that span base and extension fields, one should avoid splitting one's code into too many table extensions.
 
 With central tables to the application, such as General Ledger Entry (G/L Entry), one should be extra cautious adding table extensions since these tables are frequently used throughout the application.
 
-The adverse affects of many table extensions can be mitigated with the application of partial records, see [Using Partial Records](../developer/devenv-partial-records.md). However, since the developer many not have ownership of all executed code, and therefore isn't able to apply partial records everywhere, the above recommenddation still stands.
+The adverse affects of many table extensions can be mitigated with the application of partial records, see [Using Partial Records](../developer/devenv-partial-records.md). However, since the developer may not have ownership of all executed code, and therefore isn't able to apply partial records everywhere, the above recommendation still stands.
 
 An alternative approach when doing data modeling for extending a table with new fields is to use a related table and define a FlowField on the base table.
 
@@ -270,6 +271,7 @@ These articles on indexing are worth knowing as an AL developer:
 - [About Table Keys](../developer/devenv-table-keys.md) 
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
+- [Missing Indexes](../administration/database-missing-indexes.md)
 
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
@@ -327,16 +329,20 @@ Read more here:
 - [Telemetry on Long Running SQL Queries](../administration/monitor-long-running-sql-queries-event-log.md)
 
 ### How to reduce database locking
-Sometimes, performance issues are not due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it is customary to take a database lock on it to ensure that other processes do not change the data at the same time. 
+Sometimes, performance issues aren't due to resource starvation, but due to processes waiting for other processes to release locks on shared objects. When AL code needs to update data, it's customary to take a database lock on it to ensure that other processes don't change the data at the same time. 
 
-When using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it is good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked.
+Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
-Read more here:
-- [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
+Some tips for avoiding locking:
+-	Read setup information before starting write transactions
+-	If possible, limit the time you hold locks
+-	If possible, limit transaction size (divide into smaller operations that can be committed)
+-	Make sure you have indexes on ranges you update
+-	Locking is much less of an issue if you have a logical separation across companies
 
 #### Database locking caused by web service calls
 
-Do not insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData `$batch`, which will make sure calls get run one after another.
+Don't insert child records belonging to the same parent record in parallel. This condition causes locks on both the parent table and the integration record table because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use OData `$batch`, which will make sure calls get run one after another.
 
 #### Non-blocking number sequences
 If you need a fast, non-blocking number sequence that can be used from AL, refer to the number sequence object type. Use a number sequence object if you: 
@@ -428,4 +434,6 @@ The following articles explain what you can do as a developer to tune your devel
 [Performance of On-Premises Installations](performance-onprem.md)  
 [How to Work with a Performance Problem](performance-work-perf-problem.md)  
 [Performance tips for business users](performance-users.md)  
+[Database Missing Indexes](../administration/database-missing-indexes.md)  
 [AL Database Methods and Performance on SQL Server](../administration/optimize-sql-al-database-methods-and-performance-on-server.md)
+

@@ -22,5 +22,5 @@ Use a text constant for passing user messages and errors without concatenations.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
