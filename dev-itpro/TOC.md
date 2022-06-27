@@ -357,19 +357,19 @@
 #### [Create Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
 ## Development Environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
-### Configuring the Development Environment
+### Configure the Development Environment
 #### [JSON Files](developer/devenv-json-files.md)
 #### [The Migration.json File](developer/devenv-migration-json-file.md)
 #### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
-#### [Developing for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-#### [Optimizing Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
-### Configuring Projects and Workspaces
-#### [Working with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
-#### [Working with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
+#### [Develop for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
+#### [Optimize Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
+### Configure Projects and Workspaces
+#### [Work with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
+#### [Work with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
 
 ### Code Analysis
-#### [Using the Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
+#### [The Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
@@ -378,7 +378,7 @@
 #### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
 
-### Compiling, Publishing, and Debugging
+### Compile, Publish, and Debug
 #### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
