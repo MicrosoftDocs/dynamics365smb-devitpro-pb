@@ -1,3 +1,4 @@
+
 ---
 title:  "Upgrading Customized C/AL Application to Microsoft Base Application for version 20" 
 description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 20
@@ -521,7 +522,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 13: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions that you created in **Task 4**.
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in **Task 3**, not the empty versions that you created in **Task 4**.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 
