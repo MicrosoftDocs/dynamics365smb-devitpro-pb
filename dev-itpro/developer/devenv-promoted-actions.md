@@ -33,7 +33,7 @@ Pages and page extensions can contain an action group for promoted actions. Thes
 
 ### Syntax example
 
-This example illustrates a page with the actions promoted area syntax. The `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the Processing group in the action bar. Furthermore, the `area(Promoted)` defines which actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the Processing group, also is promoted for easy access on the page.
+This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar. Furthermore, the `area(Promoted)` defines which actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the Processing group, also is promoted for easy access on the page.
 
 ```al
 page 50105 ActionRefPage
@@ -92,7 +92,12 @@ page 50105 ActionRefPage
 
 ### Extensibility and compatibility
 
-You can implement the `actionref` syntax on a page without breaking any existing page extensions. It's also possible to write a page extension with the `actionref` syntax based on a page that uses the legacy action syntax.
+Switching over to use the new promoted actions syntax can be done gradually as legacy and new syntax will co-exist for a while. As you refactor the code, there are a couple of things to be aware of in that process:
+
+- Using the legacy and new syntax for promoted actions on the same page or page extension is not allowed.
+- You can implement the `actionref` syntax on a page without breaking any existing page extensions. 
+- It's possible to write a page extension with the `actionref` syntax based on a page that uses the legacy action syntax.
+
 
 <!-- 
 		○ It gives more control to the page over promoted actions but pageextensions can continue using the old syntax
