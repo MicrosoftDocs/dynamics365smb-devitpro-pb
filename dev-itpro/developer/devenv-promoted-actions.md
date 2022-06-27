@@ -12,17 +12,19 @@ author: SusanneWindfeldPedersen
 
 # Promoted Actions
 
-You can promote actions that are used more often than others and thereby ensure quick access to them. This kind of actions are called promoted actions. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
+You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions are called *promoted actions*. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
 
-The following table describes where you can use promoted actions.
-
-|Action type|Used on|Description|Example|  
-|----------------|-------|-----------|-------| 
-|Promoted Actions|List, card, Role Center pages, and task pages|Provide quick access to common tasks that appear under the Home tab.|Post and print a sales order|
+Promoted actions can be used on list, card, task, and Role Center pages to provide quick access to common tasks that appear under the Home tab. 
 
 ## Promoting actions syntax
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 1, the way that you promote actions on a page or page extension has changed. The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. <!-- more content here --> The legacy syntax is still supported in releases going forward, but it's recommended to implement the new syntax.
+[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action.
+
+<!-- The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. <!-- more content here --> 
+
+The legacy syntax for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
 
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action.
 
