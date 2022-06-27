@@ -92,7 +92,7 @@ page 50105 ActionRefPage
 
 ### Extensibility and compatibility
 
-Switching over to use the new promoted actions syntax can be done gradually as legacy and new syntax will co-exist for a while. As you refactor the code, there are a couple of things to be aware of in that process:
+Switching over to use the new promoted actions syntax can be done gradually as legacy and new syntax will co-exist for a while. We do, however, encourage you to switch over as soon as you can. As you refactor the code, there are a couple of things to be aware of in that process:
 
 - It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension.
 - Across a project you can mix legacy and new syntax and:
