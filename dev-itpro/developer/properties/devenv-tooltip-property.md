@@ -70,6 +70,17 @@ field("Reward ID";"Reward ID")
 }
 ```
 
+Or, with parameters:
+
+
+```AL
+field("Reward ID";"Reward ID")
+{
+    ApplicationArea = All;
+    ToolTip = 'Specifies the level of reward that the customer has at this point.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
+}
+```
+
 ## See Also
 
 [User Assistance Model](../../user-assistance.md)  

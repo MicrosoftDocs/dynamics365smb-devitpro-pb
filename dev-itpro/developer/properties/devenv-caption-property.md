@@ -67,6 +67,8 @@ Sets the maximum length of the specific Caption.
 Caption = 'Name';
 ```
 
+Or, with parameters:
+
 ```AL
 Caption = 'Name', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
 ```
