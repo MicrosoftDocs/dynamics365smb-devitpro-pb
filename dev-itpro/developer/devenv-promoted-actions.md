@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # Promoted Actions
 
-Promoted actions are actions that are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. Although the actions are set up on the Actions, Navigate, or Report tabs, you can choose to hide them on these menus and only show them on the Home tab. 
+You can promote actions that are used more often than others and thereby ensure quick access to them. This kind of actions are called promoted actions. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
 
 The following table describes where you can use promoted actions.
 
