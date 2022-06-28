@@ -28,8 +28,8 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|W1 | New field, **Intrastat Partner Type**, on customer and vendor cards | The Intrastat Partner Type field has replaced the Parter Type field in Intrastat reporting. Partner Type is used in SEPA to define the SEPA Direct Debit Scheme (Core or B2B). Intrastat Partner Type is used for Intrastat reporting only. This way, users can specify different values for the two fields if they need to. More details about setup [here](/dynamics365/business-central/finance-how-setup-report-intrastat). |
-| W1 | Improvement in creating Intrastat file for item with supplementary UOM and without weight | When the line in Intrastat has supplementary unit of measure, weight for the item is not necessary. Now users can create the file even if they don't have weight for the item on Intrastat line if this item uses supplementary unit of measure. |
+|W1 | Extended text functionality for VAT clauses | In some situations and countries, VAT Clauses can take more than allowed number of characters. Because of that Extended Texts logic is implemented in the VAT Clauses and this extended text can be showed on the sales invoice. |
+| Germany | Enhancements to Business Data Export file (GDPdU / GoDB) | Export file will use table and field names instead of captions. Also table and field names will not be limited to 20 characters and it will show full name, with blanks, dots, etc.|
 
 ## Release Plan  
 
@@ -50,14 +50,14 @@ Starting in July 2022, Microsoft will roll out an update to the Excel add-in tha
 **Business Central newsletter for partners**  
 Starting June 2022, we're doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
-**Business Central all**  
-XXXX
+**Discover resources on aka.ms/BCAll**  
+Are you looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 **Upcoming Business Central Office Hours Calls**  
 The Business Central office hours calls will be OOF in July. For August and September, we will be hosting the following calls, which you can register for today:
 
-- **August, 23:** Excel Layout and reporting
-- **August, 30:** You know it, so share it in Microsoft Docs for Dynamics 365 Business Central 
+- **August 23:** Excel Layout and reporting
+- **August 30:** You know it, so share it in Microsoft Docs for Dynamics 365 Business Central 
 - **September 6:** Power Automate and Power Platform integrations
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
