@@ -43,7 +43,7 @@ In order to meet the requirements for the AppSource technical validation, you mu
 If you do not have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
 - Your MPN ID,
 - The publisher name that you will use in your extensions (in the app.json file),
-- You must provide at least 5 affix suggestions. Each affix must be exactly 3 characters which are allowed in AL object names.
+- You must provide at least 5 affix suggestions. Each affix must be exactly 3 characters.
 
 > [!NOTE]
 > Affixes are not case-sensitive, which means that for example "ABC", "abc", and "AbC" are treated as the same affix. Providing both "ABC" and "abc" counts as only one of your suggestions.
