@@ -106,7 +106,7 @@ It's a requirement to enable overriding the resource policy, that you have a key
 > Remember to register *all* apps that should access your key vaults, it's not enough to just add the key vault setting to your `app.json` manifest files.
 
 > [!IMPORTANT]  
-> Resource exposure policy overrides can be used to dynamically grant users of a given AAD tenant ID access. However, the users performing the action, such as debugging, must be delegated admins on the target environment. In addition, you must specify the `tenant` property in the `launch.json` file. The `tenant` property must be set to the tenant ID. For more information, see [JSON Files](devenv-json-files.md#publish-to-cloud-settings).
+> Resource exposure policy overrides can be used to dynamically grant users of a given AAD tenant ID access. However, the users performing the action, such as debugging, must be delegated admins on the target environment. In addition, you must specify the `tenant` property in the `launch.json` file. The `tenant` property must be set to the target tenant ID. For more information, see [JSON Files](devenv-json-files.md#publish-to-cloud-settings).
 
 For more information, see [Using Key Vault Secrets in Business Central Extensions](devenv-app-key-vault-overview.md) and [Setting up App Key Vaults for Business Central Online](../administration/setup-app-key-vault.md). For [!INCLUDE[prod_short](includes/prod_short.md)] online, the app key vault feature is only supported for AppSource extensions.
 
