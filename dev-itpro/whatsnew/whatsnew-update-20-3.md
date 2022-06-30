@@ -3,7 +3,7 @@ title: "Update 20.3 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 20.3 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: edupont
 ms.custom: na
-ms.date: 06/24/2022
+ms.date: 06/29/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,7 @@ During July 2022, we are rolling out a change to online customers where a single
 On Wednesday 29th June 2022, Microsoft began rolling out a fix for all Business Central online customers that addresses UI glitches introduced by a recent Chromium browser update. The fix will also be included in cumulative updates for supported versions of Business Central on premises. Learn how on premises customers can fix or work around the issue [here](https://go.microsoft.com/fwlink/?linkid=2201014).
 
 **General availability of the Shopify Connector**  
-Last October, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for the online version of Business Central at no extra cost. Existing customers that have been upgraded to 20.1 or later versions, automatically get the Shopify extension installed. If they do not need the app, it can be uninstalled by following [this guidance](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension). Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
+In October 2021, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for Business Central online at no extra cost. Existing customers that have been upgraded to 20.1 or later automatically get the Shopify extension installed. If they do not need the app, it can be uninstalled by following [this guidance](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension). Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
 
 **Action required by July 2022 for Excel Add-in**  
 Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Azure Active Directory (Azure AD) configuration so that users can continue using the add-in. This impacts all Business Central on premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
@@ -59,11 +59,11 @@ Starting June 2022, we're doing quarterly newsletters for Business Central partn
 Are you looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 **Upcoming Business Central Office Hours Calls**  
-The Business Central office hours calls will be OOF in July. For August and September, we will be hosting the following calls, which you can register for today:
+The Business Central office hours calls will be unavailable in July. For August and September, we will be hosting the following calls, which you can register for today:
 
-- **August 23:** Excel Layout and reporting
-- **August 30:** You know it, so share it in Microsoft Docs for Dynamics 365 Business Central 
-- **September 6:** Power Automate and Power Platform integrations
+- **August 23:** Excel Layout and reporting  
+- **August 30:** You know it, so share it in the docs for Dynamics 365 Business Central  
+- **September 6:** Power Automate and Power Platform integrations  
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
