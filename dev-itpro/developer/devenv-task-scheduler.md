@@ -29,7 +29,7 @@ In AL code, you create and manage the tasks by using the AL methods that are ava
 |TaskExists|Checks whether a specific task exists.|[TaskScheduler.TaskExists(Guid) Method](methods-auto/taskscheduler/taskscheduler-taskexists-method.md)|  
 |CancelTask|Cancels a scheduled task.|[TaskScheduler.CancelTask(Guid) Method](methods-auto/taskscheduler/taskscheduler-canceltask-method.md)|  
 
-To set up a task, create codeunits that contain the logic that you want to run at a scheduled time. Once you have the codeunits, add code to the application that calls the CREATETASK method to schedule a task. The CREATETASK method can also specify the earliest date to run the task.  
+To set up a task, create codeunits that contain the logic that you want to run at a scheduled time. Once you have the codeunits, add code to the application that calls the CreateTask method to schedule a task. The CreateTask method can also specify the earliest date to run the task.  
 
 ## How task scheduler works
 
@@ -76,7 +76,7 @@ The following diagram illustrates the flow in detail.
 
 ### <a name="retrycycle"></a>Retry intervals
 
-When a task's main codeunit or failure codeunit enters the retry flow, it will be rerun at approximately the following intervals as long as the error persists. The number of retires and the intervals are different for Business Central online and on-premises.
+When a task's main codeunit or failure codeunit enters the retry flow, it will be rerun at approximately the following intervals as long as the error persists. The number of retires and the intervals are different for [!INCLUDE[prod_short](includes/prod_short.md)] online and on-premises.
 
 **Online**
 
@@ -130,13 +130,14 @@ Because failure codeunits are designed for error situations, expect for a select
 
 ## About task sessions and permissions
 
-The task runs in a background session, which means that there's no user interface. The behavior is similar to that of the STARTSESSION method, where any dialog boxes that would normally appear are suppressed. For more information about specific dialog boxes, see [StartSession](methods-auto/session/session-startsession-integer-integer-string-table-duration-method.md) method.  
+The task runs in a background session, which means that there's no user interface. The behavior is similar to that of the StartSession method, where any dialog boxes that would normally appear are suppressed. For more information about specific dialog boxes, see [StartSession](methods-auto/session/session-startsession-integer-integer-string-table-duration-method.md) method.  
 
 The session runs by using the same user/credentials that are used when calling AL code. The user must have appropriate permissions to the codeunit and any other objects that are associated with the operation of the codeunit.
 
->[!NOTE]
-> The *device users* and *delegated admins* can't schedule the tasks. To know the restrictions for device users, see [Device licenses](../deployment/licensing.md#device-licenses). <br>
-Delegated admins can test the job queues by making a copy of the job and running it once in the foreground but not as a recurrent or scheduled task. To know more about limitations for delegated admins, see [Restricted access to Business Central as delegated administrators](../administration/delegated-admin.md#restricted-access-to-business-central-as-delegated-administrator)
+> [!NOTE]  
+> The *device users* and *delegated admins* can't schedule the tasks. To know the restrictions for device users, see [Device licenses](../deployment/licensing.md#device-licenses).
+>
+> Delegated admins can test the job queues by making a copy of the job and running it once in the foreground but not as a recurrent or scheduled task. To know more about limitations for delegated admins, see [Restricted access to Business Central as delegated administrators](../administration/delegated-admin.md#restricted-access-to-business-central-as-delegated-administrator).
 
 ## Monitor and troubleshoot
 
