@@ -47,8 +47,14 @@ Any valid string. If [RequestFilterHeadingML Property](devenv-requestfilterheadi
 
 ```AL
 RequestFilterHeading = 'Entry';
-``` 
-  
+```
+
+Or, with parameters:
+
+```AL
+RequestFilterHeading = 'Entry', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
+```
+   
 ## See Also
 
 [Request Pages](../devenv-request-pages.md)  
