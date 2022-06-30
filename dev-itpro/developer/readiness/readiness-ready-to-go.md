@@ -3,7 +3,7 @@ title: Resources for partners
 description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
 author: a-emniel
 ms.custom: na
-ms.date: 06/14/2022
+ms.date: 06/24/2022
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -97,4 +97,5 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Events
 
 - Directions NA: [directions.com](https://directionsna.com)  
-- Directions EMEA and Directions Asia [directions4partners.com](https://directions4partners.com)
+- Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
+- Business Central TechDays: [bctechdays.com](https://bctechdays.com)

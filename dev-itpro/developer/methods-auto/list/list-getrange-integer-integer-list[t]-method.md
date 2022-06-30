@@ -3,7 +3,7 @@ title: "List.GetRange(Integer, Integer, var List of [T]) Method"
 description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,7 +48,13 @@ A shallow copy of a range of elements in the source List.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For examples on *shallow copy* versus *deep copy*, see [List Data Type](list-data-type.md).
+
 ## See Also
+
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
