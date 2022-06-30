@@ -31,7 +31,7 @@ Descriptive text for the OptionCaption, for example, with regards to translation
 
 *MaxLength*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-Sets the maximum length of the specific OptionCaption.
+Sets the maximum length of the specific OptionCaption property value.
 
 ## Syntax
 
@@ -43,11 +43,13 @@ field(1300; "Payment Prediction"; Option)
 }
 ```
 
+Or, with parameters:
+
 ```AL
 field(1301; "Prediction Confidence"; Option)
 {
     OptionMembers = " ",Low,Medium,High;
-    OptionCaption = ' ,Low,Medium,High';
+    OptionCaption = ' ,Low,Medium,High', Locked = true, Comment = 'Do not translate, MaxLength = 100;
 }
 ```
 

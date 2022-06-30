@@ -3,7 +3,7 @@ title: "Record.AddLoadFields([Any,...]) Method"
 description: "Specifies fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/27/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,7 @@ The following example code shows how to use the AddLoadFields method to add a fi
 ```al
 trigger OnPreDataItem()
 begin
-    CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code");
+    CurrencyDataItem.AddLoadFields("ISO Numeric Code");
 end;
 
 trigger OnAfterGetRecord()

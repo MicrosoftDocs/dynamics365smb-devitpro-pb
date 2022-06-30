@@ -53,6 +53,12 @@ Specify the multiplicity of the part.
         
 ```
 
-## See Also  
+## Remarks
+
+This property is used on page parts on API pages. For more information, see [API Page Type](../devenv-api-pagetype.md). By default multiplicity for parts is defined as 1:N. For more in-depth examples and information, see [Developing a Custom API](../devenv-develop-custom-api.md).
+
+
+## See Also
+
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -49,6 +49,12 @@ The following example illustrates how you can apply instructional text in an app
 InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.';
 ```
 
+Or, with the parameters:
+
+```AL
+InstructionalText = 'Add an entity from your list of contacts. The entity can be a person or a company.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
+```
+
 ## See also
 
 [Configuring the Help Experience](../../deployment/configure-help.md)  

@@ -30,7 +30,7 @@ Sets a drill-down for a field on a page.
 ## Syntax
 
 ```AL
-DrillDrown = true;
+DrillDown = true;
 ```
   
 ## Remarks  
@@ -39,5 +39,5 @@ Drill-downs are a system-wide feature of [FlowFields](../devenv-flowfields.md) t
   
 ## See Also  
 
-[Pages Overview](../devenv-pages-overview.md)   
+[Pages Overview](../devenv-pages-overview.md)  
 [Page Properties](./devenv-properties.md)

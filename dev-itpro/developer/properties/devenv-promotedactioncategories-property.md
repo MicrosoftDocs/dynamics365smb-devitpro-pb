@@ -1,6 +1,6 @@
 ---
 title: "PromotedActionCategories Property"
-description: "Sets a category for a promoted action."
+description: "Sets a category for a promoted action on a page."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/15/2022
@@ -36,14 +36,20 @@ Descriptive text for the PromotedActionCategories, for example, with regards to 
 
 *MaxLength*  
 &emsp;Type: [Integer](../methods-auto/integer/integer-data-type.md)  
-Sets the maximum length of the specific PromotedActionCategories.
+Sets the maximum length of the specific PromotedActionCategories property value.
 
 ## Syntax
 
 ```AL
 PromotedActionCategories = 'New caption,Process caption,Report caption,Category4 caption';
 ```
- 
+
+Or, with parameters:
+
+```AL
+PromotedActionCategories = 'New caption,Process caption,Report caption,Category4 caption', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
+```
+
 ## Remarks  
 
 Promoted actions appear in the action bar on a page. You promote an action by setting the [Promoted Property](devenv-promoted-property.md) to **true**. You use the  [PromotedCategory Property](devenv-promotedcategory-property.md) to set the category of an action, which allows you to group similar actions under a common caption. You can choose between 20 categories: New, Process, Report, and Category4 through Category20.
