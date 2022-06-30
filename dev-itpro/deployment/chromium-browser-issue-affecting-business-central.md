@@ -23,7 +23,7 @@ Users impacted by this issue will experience misplaced UI elements in the Busine
 
 Users accessing Business Central in any of the following ways may experience this issue:
 
-|-  | **Business Central 2021 wave 2 (version 18) or newer** | **Business Central 2019 (version 14)** | **Dynamics NAV 2018 (version 11) and earlier** |
+|Method of access | **Business Central 2021 wave 2 (version 18) or newer** | **Business Central 2019 (version 14)** | **Dynamics NAV 2018 (version 11) and earlier** |
 |--|--|--|--|
 | Microsoft Edge or Google Chrome browser | **Impacted** | Not impacted | Not impacted |
 | Desktop app based on PWA technology, including the new Business Central app on the Microsoft Store | **Impacted** | Not impacted | Not impacted |
@@ -43,7 +43,7 @@ The following steps help all users in your organization work around the issue an
 
 ### Business Central version 13 and later
 
-1. On your Web server, open the desktopPreview.css file in a text editor such as Notepad. The file is in your Web server instance folder, such as C:\\inetpub\\wwwroot\\&lt;InstanceName&gt;\\wwwroot\\Resources where &lt;InstanceName&gt; is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
+1. On your Web server, open the desktopPreview.css file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where `InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
 
 2. Paste the following lines at the very end of the file, and then save your changes:
 
