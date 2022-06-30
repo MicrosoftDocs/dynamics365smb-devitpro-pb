@@ -68,6 +68,9 @@ To record the AL execution, the server will now wait for a connection to happen 
 > [!TIP]  
 > If you are having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
 
+> [!TIP]  
+> To do snapshot debugging of Service to Service (S2S) web service calls set the `WebServiceClient` for the `breakOnNext` configuration parameter and use table explorer to find the `userId` of the user record mapped to the S2S Azure AD Authentication Application. When snapshot session is initialize trigger the session either from the integration (service or device) or manually invoke a web service call.
+
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
 ![Snapshot Debugger Counter.](media/snapshotdebugger.png)
