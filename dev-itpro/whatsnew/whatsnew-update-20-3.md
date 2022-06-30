@@ -20,6 +20,8 @@ Would you like to know what has changed in update 20.3? Below you'll find an ove
 
 Find an overview of hotfixes in this [article](INSERT LINK).
 
+## Feature changes  
+- [Improved settings for managing updates](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improved-settings-managing-updates) (read more [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management))
 
 ## Localization updates
 
