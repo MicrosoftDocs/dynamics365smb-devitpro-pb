@@ -11,9 +11,9 @@ ms.date: 06/30/2022
 
 # Chromium browser issue affecting Business Central
 
-After the June 2022 wave of browser updates to Chromium-based browsers such as Google Chrome and Microsoft Edge, customers have experienced glitches in the Business Central user interface. While the teams behind the Chromium-based browsers work to address the root cause, Microsoft has prepared a fix to all Business Central customers. For Business Central online customers, the fix is already rolling out, starting June 29. This article describes how on-premises customers can identify the issue and plan their approach to fixing or working around the problem.
+After the June 2022 wave of browser updates to Chromium-based browsers such as Google Chrome and Microsoft Edge, customers have experienced glitches in the Business Central user interface. While the teams behind the Chromium-based browsers work to address the root cause, Microsoft has prepared a fix to supported versions of Business Central. For Business Central online customers, the fix is already rolling out, starting June 29. This article describes how on-premises customers can identify the issue and plan their approach to fixing or working around the problem.
 
-## How this affects your organization
+## How this issue affects your organization
 
 Users impacted by this issue will experience misplaced UI elements in the Business Central user interface, such as the on/off switch control (for Boolean fields) or assist-edit control (on any field) being relocated to the upper corners of a page as illustrated in the following image. The misplaced controls may overlap each other, creating difficulties in identifying and activating the right one.
 
@@ -28,7 +28,7 @@ Users accessing Business Central in any of the following ways may experience thi
 | Microsoft Edge or Google Chrome browser | **Impacted** | Not impacted | Not impacted |
 | Desktop app based on PWA technology, including the new Business Central app on the Microsoft Store | **Impacted** | Not impacted | Not impacted |
 | Business Central embedded in other applications | **Impacted** | Not impacted | Not impacted |
-| Mobile app for Android | **Impacted** | **Impacted** | **Impacted** |**Impacted** |
+| Mobile app for Android | **Impacted** | **Impacted** | **Impacted** |
 
 > [!NOTE]
 > The issue has been confirmed on supported version of Business Central, but most likely applies to other versions
@@ -87,7 +87,7 @@ The following steps help all users in your organization work around the issue an
 
 ## What business users can do to work around the issue
 
-1. If you access Business Central in your browser, consider temporarily switching to another supported browser that is unaffected by this issue, such as Mozilla FireFox. See [the list of supported Web clients here](system-requirements-business-central-v20.md#WebClient)
+If you access Business Central in your browser, consider temporarily switching to another supported browser that is unaffected by this issue, such as Mozilla FireFox. See [the list of supported Web clients here](system-requirements-business-central-v20.md#WebClient)
 
 ## See also
 
