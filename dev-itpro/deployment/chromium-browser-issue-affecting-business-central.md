@@ -43,21 +43,18 @@ The following steps help all users in your organization work around the issue an
 
 ### Business Central version 13 and later
 
-1. On your Web server, open the desktopPreview.css file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where `InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
+1. On your Web server, open the `desktopPreview.css` file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where `InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
 
 2. Paste the following lines at the very end of the file, and then save your changes:
 
     ```css
     .ms-nav-edit-control-container,
-    
     .booleancontrol-toggle-switch-container .edit-container .input-wrapper {
-    
-    transform: translateZ(0);
-    
+        transform: translateZ(0);
     }
     ```
 
-3. Repeat steps 1 and 2 for the tablet.css and phone.css files that are in the same folder.
+3. Repeat steps 1 and 2 for the `tablet.css` and `phone.css` files that are in the same folder.
 
 4. If your deployment has multiple Web server instances, repeat steps for 1 to 3 for each instance.
 
@@ -66,19 +63,17 @@ The following steps help all users in your organization work around the issue an
 
 ### Business Central versions 11 and 12
 
-1. On your Web server, open the desktop.css file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where`InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
+1. On your Web server, open the `desktop.css` file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where`InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
 
 2. Paste the following lines at the very end of the file, and then save your changes:
 
     ```css
     .ms-nav-edit-control-container {
-    
-    transform: translateZ(0);
-    
+        transform: translateZ(0);
     }
     ```
 
-3. Repeat steps 1 and 2 for the tablet.css and phone.css files that are in the same folder.
+3. Repeat steps 1 and 2 for the `tablet.css` and `phone.css` files that are in the same folder.
 
 4. If your deployment has multiple Web server instances, repeat steps for 1 to 3 for each instance.
 
