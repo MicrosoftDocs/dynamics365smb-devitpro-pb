@@ -66,7 +66,7 @@ The following steps help all users in your organization work around the issue an
 
 ### Business Central versions 11 and 12
 
-1. On your Web server, open the desktop.css file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where`InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
+1. On your Web server, open the desktop.css file in a text editor such as Notepad. The file is in your Web server instance folder, such as `C:\inetpub\wwwroot\InstanceName\wwwroot\Resources` where `InstanceName` is the identifier for your web server instance. The actual path depends on how you have configured IIS and the Business Central Web server.
 
 2. Paste the following lines at the very end of the file, and then save your changes:
 
