@@ -21,8 +21,7 @@ Would you like to know what has changed in update 20.3? Below you'll find an ove
 Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
-
-- 
+- [Improved settings for managing updates](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improved-settings-managing-updates) (read more [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management))
 
 ## Localization updates
 
@@ -41,8 +40,14 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**A single tile to go to Business Central**  
+During July 2022, we are rolling out a change to online customers where a single Business Central tile in the App Launcher will be used to access both production and sandbox environments. Learn more [here](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/single-tile-go-business-central).
+
+**UI glitches introduced by recent browser updates**  
+On Wednesday 29th June 2022, Microsoft began rolling out a fix for all Business Central online customers that addresses UI glitches introduced by a recent Chromium browser update. The fix will also be included in cumulative updates for supported versions of Business Central on premises. Learn how on premises customers can fix or work around the issue [here](https://go.microsoft.com/fwlink/?linkid=2201014).
+
 **General availability of the Shopify Connector**  
-Last October, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for the online version of Business Central at no extra cost. Existing customers that have been upgraded to 20.1 automatically get the Shopify extension installed. If they do not need the app, it can be uninstalled by following [this guidance](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension). Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
+Last October, we announced a new partnership with Shopify to help our customers create a better shopping experience. The partnership was designed to better connect the easy-to-use commerce and merchant experience of Shopify with the comprehensive business management capabilities of Microsoft Dynamics 365 Business Central. The Shopify connector is now available for the online version of Business Central at no extra cost. Existing customers that have been upgraded to 20.1 or later versions, automatically get the Shopify extension installed. If they do not need the app, it can be uninstalled by following [this guidance](/dynamics365/business-central/ui-extensions-install-uninstall#uninstall-an-extension). Read the [blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/05/26/dynamics-365-business-central-now-includes-a-shopify-connector/), the [FAQ](/dynamics365/business-central/shopify/shopify-faq), watch the [on-demand session](https://aka.ms/BCShopifySession), learn how to [get started](/dynamics365/business-central/shopify/get-started) and view the listing on [Shopify App Store](https://apps.shopify.com/dynamics-365-business-central?surface_detail=global-erp-partners&surface_inter_position=1&surface_intra_position=1&surface_type=collection).
 
 **Action required by July 2022 for Excel Add-in**  
 Starting in July 2022, Microsoft will roll out an update to the Excel add-in that further secures the connection to Business Central. The update requires that you modify your organization's Azure Active Directory (Azure AD) configuration so that users can continue using the add-in. This impacts all Business Central on premises deployments that use the Excel add-in. Learn more [here](/dynamics365/business-central/dev-itpro/administration/update-excel-addin-configuration).
