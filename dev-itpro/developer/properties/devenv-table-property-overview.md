@@ -1,6 +1,6 @@
 ---
-title: "Page, Page Fields, and Page Extension Properties"
-description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
+title: "Table, Table Fields, and Table Extension Properties"
+description: "This topic lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/01/2022
@@ -14,48 +14,24 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
-# page, page Fields, and page Extension Properties
+# table, table Fields, and table Extension Properties
 
 
-This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md).
+This topic lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md).
 
 ## Object Properties
 
-The following properties all apply to the page object, only some of these properties can be set for a page extension object as specified below. This list is sorted alphabetically by property name. For page properties sorted by method on a page, see [page properties](devenv-properties.md).
+The following properties all apply to the table object, only some of these properties can be set for a table extension object as specified below. This list is sorted alphabetically by property name. For table properties sorted by method on a table, see [table properties](devenv-properties.md).
 
 |**Property Name**|**Extensible**|**Applies to**|
 |-----------|------------|----------|
-|AboutText| True| -Page
-<br />  -Page Action
-<br />  -Page Action Group
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page Group
-<br />  -Request Page
-<br /> |
-|AboutTextML| True| -Page
-<br />  -Page Action
-<br />  -Page Action Group
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page Group
-<br />  -Request Page
-<br /> |
-|AboutTitle| True| -Page
-<br />  -Page Action
-<br />  -Page Action Group
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page Group
-<br />  -Request Page
-<br /> |
-|AboutTitleML| True| -Page
-<br />  -Page Action
-<br />  -Page Action Group
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page Group
-<br />  -Request Page
+|Access| | -Codeunit
+<br />  -Query
+<br />  -Table
+<br />  -Table Field
+<br />  -Enum Type
+<br />  -Interface
+<br />  -Permission Set
 <br /> |
 |AccessByPermission| | -Table Field
 <br />  -Page Field
@@ -66,33 +42,6 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Page
 <br />  -Report
 <br /> |
-|AdditionalSearchTerms| True| -Page
-<br />  -Report
-<br /> |
-|AdditionalSearchTermsML| True| -Page
-<br />  -Report
-<br /> |
-|APIGroup| | -Page
-<br />  -Query
-<br /> |
-|APIPublisher| | -Page
-<br />  -Query
-<br /> |
-|APIVersion| | -Page
-<br />  -Query
-<br /> |
-|ApplicationArea| True| -Page Label
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Page Action
-<br />  -Page User Control
-<br />  -Page
-<br />  -Report
-<br /> |
-|AssistEdit| True| -Page Field
-<br /> |
 |AutoFormatExpression| | -Table Field
 <br />  -Page Field
 <br />  -Report Column
@@ -101,14 +50,24 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Page Field
 <br />  -Report Column
 <br /> |
-|AutoSplitKey| | -Page
-<br />  -Request Page
+|AutoIncrement| | -Table Field
+<br /> |
+|AutoReplace| | -Xml Port Table Element
+<br /> |
+|AutoSave| | -Xml Port Table Element
+<br /> |
+|AutoUpdate| | -Xml Port Table Element
 <br /> |
 |BlankNumbers| | -Table Field
 <br />  -Page Field
 <br /> |
 |BlankZero| True| -Table Field
 <br />  -Page Field
+<br /> |
+|CalcFields| | -Xml Port Table Element
+<br />  -Report Data Item
+<br /> |
+|CalcFormula| | -Table Field
 <br /> |
 |Caption| True| -Table
 <br />  -Table Field
@@ -166,35 +125,28 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Enum Type
 <br />  -Permission Set
 <br /> |
-|CardPageId| | -Page
-<br />  -Request Page
-<br /> |
-|ChangeTrackingAllowed| | -Page
-<br /> |
 |CharAllowed| | -Table Field
 <br />  -Page Field
 <br /> |
 |ClosingDates| True| -Table Field
 <br />  -Page Field
 <br /> |
-|ColumnSpan| | -Page Label
-<br />  -Page Field
+|Clustered| | -Table Key
 <br /> |
-|ContextSensitiveHelpPage| True| -Page
-<br />  -Request Page
+|ColumnStoreIndex| | -Table
 <br /> |
-|CuegroupLayout| | -Page Group
+|Compressed| | -Table Field
 <br /> |
-|DataAccessIntent| | -Page
-<br />  -Report
-<br />  -Query
-<br /> |
-|DataCaptionExpression| True| -Page
-<br />  -Request Page
+|CompressionType| | -Table
 <br /> |
 |DataCaptionFields| True| -Table
 <br />  -Page
 <br />  -Request Page
+<br /> |
+|DataClassification| | -Table
+<br />  -Table Field
+<br /> |
+|DataPerCompany| | -Table
 <br /> |
 |DateFormula| | -Table Field
 <br />  -Page Field
@@ -202,11 +154,6 @@ The following properties all apply to the page object, only some of these proper
 |DecimalPlaces| | -Table Field
 <br />  -Page Field
 <br />  -Report Column
-<br /> |
-|DelayedInsert| | -Page
-<br /> |
-|DeleteAllowed| | -Page
-<br />  -Request Page
 <br /> |
 |Description| True| -Codeunit
 <br />  -Table Field
@@ -239,8 +186,6 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Xml Port Text Attribute
 <br />  -Profile
 <br /> |
-|DrillDown| | -Page Field
-<br /> |
 |DrillDownPageId| True| -Table
 <br />  -Page Field
 <br /> |
@@ -254,8 +199,6 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Page Chart Part
 <br />  -Page Part
 <br /> |
-|Ellipsis| | -Page Action
-<br /> |
 |Enabled| | -Table Field
 <br />  -Table Key
 <br />  -Page Label
@@ -268,30 +211,6 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Page Action Group
 <br />  -Profile
 <br /> |
-|EntityCaption| | -Page
-<br />  -Query
-<br /> |
-|EntityCaptionML| | -Page
-<br />  -Query
-<br /> |
-|EntityName| | -Page
-<br />  -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Query
-<br /> |
-|EntitySetCaption| | -Page
-<br />  -Query
-<br /> |
-|EntitySetCaptionML| | -Page
-<br />  -Query
-<br /> |
-|EntitySetName| | -Page
-<br />  -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Query
-<br /> |
 |ExtendedDatatype| | -Table Field
 <br />  -Page Field
 <br /> |
@@ -300,72 +219,57 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Table
 <br />  -Page
 <br /> |
-|Filters| | -Page View
+|ExternalAccess| | -Table Field
 <br /> |
-|FreezeColumn| True| -Page Group
+|ExternalName| | -Table
+<br />  -Table Field
 <br /> |
-|Gesture| | -Page Action
+|ExternalSchema| | -Table
 <br /> |
-|GridLayout| | -Page Group
+|ExternalType| | -Table Field
 <br /> |
-|HelpLink| | -Page
-<br />  -Request Page
+|FieldClass| | -Table Field
 <br /> |
-|HideValue| True| -Page Label
-<br />  -Page Field
+|IncludedFields| | -Table Key
 <br /> |
-|Image| | -Page Field
-<br />  -Page Action
-<br />  -Page Action Group
+|InitValue| | -Table Field
 <br /> |
-|Importance| True| -Page Label
-<br />  -Page Field
+|LinkedInTransaction| | -Table
 <br /> |
-|IndentationColumn| True| -Page Group
+|LinkedObject| | -Table
 <br /> |
-|IndentationControls| True| -Page Group
+|LinkFields| | -Xml Port Table Element
 <br /> |
-|InFooterBar| True| -Page Action
+|LinkTable| | -Xml Port Table Element
 <br /> |
-|InsertAllowed| | -Page
-<br />  -Request Page
-<br /> |
-|InstructionalText| True| -Page
-<br />  -Request Page
-<br />  -Page Group
-<br /> |
-|InstructionalTextML| True| -Page
-<br />  -Request Page
-<br />  -Page Group
-<br /> |
-|IsHeader| | -Page Action Separator
-<br /> |
-|LinksAllowed| | -Page
-<br />  -Request Page
-<br /> |
-|Lookup| | -Page Field
+|LinkTableForceInsert| | -Xml Port Table Element
 <br /> |
 |LookupPageId| True| -Table
 <br />  -Page Field
 <br /> |
+|MaintainSiftIndex| | -Table Key
+<br /> |
+|MaintainSqlIndex| | -Table Key
+<br /> |
+|MaxOccurs| | -Xml Port Text Element
+<br />  -Xml Port Table Element
+<br />  -Xml Port Field Element
+<br /> |
 |MaxValue| | -Table Field
 <br />  -Page Field
+<br /> |
+|MinOccurs| | -Xml Port Text Element
+<br />  -Xml Port Field Element
+<br />  -Xml Port Table Element
 <br /> |
 |MinValue| | -Table Field
 <br />  -Page Field
 <br /> |
-|ModifyAllowed| | -Page
-<br />  -Request Page
-<br /> |
-|MultiLine| | -Page Label
-<br />  -Page Field
-<br /> |
-|MultipleNewLines| | -Page
-<br />  -Request Page
-<br /> |
-|Multiplicity| | -Page Part
-<br /> |
-|NavigationPageId| | -Page Field
+|NamespacePrefix| | -Xml Port Text Element
+<br />  -Xml Port Field Element
+<br />  -Xml Port Table Element
+<br />  -Xml Port Field Attribute
+<br />  -Xml Port Text Attribute
 <br /> |
 |NotBlank| | -Table Field
 <br />  -Page Field
@@ -475,10 +379,6 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Permission Set
 <br />  -Field Group
 <br /> |
-|ODataEDMType| True| -Page Field
-<br /> |
-|ODataKeyFields| | -Page
-<br /> |
 |OptionCaption| True| -Table Field
 <br />  -Page Field
 <br />  -Report Column
@@ -487,10 +387,12 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Page Field
 <br />  -Report Column
 <br /> |
-|OrderBy| | -Page View
-<br />  -Query
+|OptionMembers| | -Table Field
+<br />  -Report Column
 <br /> |
-|PageType| | -Page
+|OptionOrdinalValues| | -Table Field
+<br /> |
+|PasteIsValid| | -Table
 <br /> |
 |Permissions| | -Codeunit
 <br />  -Table
@@ -502,150 +404,71 @@ The following properties all apply to the page object, only some of these proper
 <br />  -Permission Set
 <br />  -Permission Set Extension
 <br /> |
-|PopulateAllFields| | -Page
-<br />  -Request Page
+|ReplicateData| | -Table
 <br /> |
-|Promoted| True| -Page Action
-<br />  -Profile
+|RequestFilterFields| | -Xml Port Table Element
+<br />  -Report Data Item
 <br /> |
-|PromotedActionCategories| True| -Page
+|RequestFilterHeading| | -Xml Port Table Element
+<br />  -Report Data Item
 <br /> |
-|PromotedActionCategoriesML| True| -Page
-<br /> |
-|PromotedCategory| True| -Page Action
-<br /> |
-|PromotedIsBig| True| -Page Action
-<br /> |
-|PromotedOnly| True| -Page Action
-<br /> |
-|Provider| | -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br /> |
-|QueryCategory| | -Page
-<br />  -Query
-<br /> |
-|QuickEntry| True| -Page Field
-<br /> |
-|RefreshOnActivate| | -Page
-<br /> |
-|RowSpan| | -Page Label
-<br />  -Page Field
-<br /> |
-|RunObject| | -Page Action
-<br /> |
-|RunPageLink| | -Page Action
-<br /> |
-|RunPageMode| | -Page Action
-<br /> |
-|RunPageOnRec| | -Page Action
-<br /> |
-|RunPageView| | -Page Action
-<br /> |
-|SaveValues| | -Page
-<br />  -Request Page
+|RequestFilterHeadingML| | -Xml Port Table Element
+<br />  -Report Data Item
 <br /> |
 |Scope| | -Table
 <br />  -Page Action
 <br /> |
-|SharedLayout| | -Page View
-<br /> |
-|ShortcutKey| True| -Page Action
-<br /> |
-|ShowAs| True| -Page Action Group
-<br /> |
-|ShowAsTree| | -Page Group
-<br /> |
-|ShowCaption| True| -Page Label
-<br />  -Page Field
-<br />  -Page Group
-<br /> |
-|ShowFilter| | -Page
-<br />  -Request Page
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Page Part
-<br /> |
-|ShowMandatory| True| -Page Field
-<br /> |
 |SignDisplacement| | -Table Field
 <br />  -Page Field
-<br /> |
-|SourceTable| | -Page
-<br />  -Request Page
-<br /> |
-|SourceTableTemporary| | -Page
-<br />  -Request Page
 <br /> |
 |SourceTableView| | -Page
 <br />  -Request Page
 <br />  -Xml Port Table Element
 <br /> |
-|Style| True| -Page Label
-<br />  -Page Field
+|SqlDataType| | -Table Field
 <br /> |
-|StyleExpr| True| -Page Label
-<br />  -Page Field
+|SqlIndex| | -Table Key
 <br /> |
-|SubPageLink| | -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
+|SqlTimestamp| | -Table Field
 <br /> |
-|SubPageView| | -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
+|Subtype| | -Codeunit
+<br />  -Table Field
+<br /> |
+|SumIndexFields| | -Table Key
 <br /> |
 |TableRelation| True| -Table Field
 <br />  -Page Field
 <br /> |
-|Title| | -Page Field
+|TableType| | -Table
 <br /> |
-|ToolTip| True| -Page Label
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Page Action Area
-<br />  -Page Action
-<br />  -Page Action Group
+|TestTableRelation| | -Table Field
 <br /> |
-|ToolTipML| True| -Page Label
-<br />  -Page Field
-<br />  -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Page Action Area
-<br />  -Page Action
-<br />  -Page Action Group
+|Unbound| | -Xml Port Text Element
+<br />  -Xml Port Field Element
+<br />  -Xml Port Table Element
+<br />  -Xml Port Field Attribute
+<br />  -Xml Port Text Attribute
 <br /> |
-|TreeInitialState| True| -Page Group
+|Unique| | -Table Key
 <br /> |
-|UpdatePropagation| | -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
+|UseTemporary| | -Xml Port Table Element
+<br />  -Report Data Item
 <br /> |
-|UsageCategory| | -Page
-<br />  -Report
+|ValidateTableRelation| | -Table Field
 <br /> |
 |ValuesAllowed| | -Table Field
 <br />  -Page Field
-<br /> |
-|Visible| True| -Page Label
-<br />  -Page Field
-<br />  -Page Group
-<br />  -Page Part
-<br />  -Page System Part
-<br />  -Page Chart Part
-<br />  -Page Action
-<br />  -Page Action Group
-<br />  -Page Action Ref
-<br />  -Page View
-<br />  -Page User Control
 <br /> |
 |Width| True| -Table Field
 <br />  -Page Field
 <br />  -Page Label
 <br />  -Xml Port Text Element
+<br />  -Xml Port Field Element
+<br />  -Xml Port Table Element
+<br />  -Xml Port Field Attribute
+<br />  -Xml Port Text Attribute
+<br /> |
+|XmlName| | -Xml Port Text Element
 <br />  -Xml Port Field Element
 <br />  -Xml Port Table Element
 <br />  -Xml Port Field Attribute
