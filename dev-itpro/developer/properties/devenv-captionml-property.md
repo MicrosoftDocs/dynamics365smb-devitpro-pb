@@ -1,9 +1,9 @@
 ---
 title: "CaptionML Property"
-description: "Sets the text string that displays with the object, control, or other element in user interface for the current language."
+description: "Sets the string string that displays with the object, control, or other element in user interface for the current language."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # CaptionML Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the text string that displays with the object, control, or other element in user interface for the current language.
+Sets the string string that displays with the object, control, or other element in user interface for the current language.
 
 ## Applies to
 -   Table
@@ -30,8 +30,8 @@ Sets the text string that displays with the object, control, or other element in
 -   Page Part
 -   Page System Part
 -   Page Action
--   Page Action Group
 -   Page Action Separator
+-   Page Action Group
 -   Xml Port
 -   Report
 -   Query
@@ -40,6 +40,7 @@ Sets the text string that displays with the object, control, or other element in
 -   Report Column
 -   Enum Value
 -   Page View
+-   Report Layout
 -   Profile
 -   Enum Type
 -   Permission Set

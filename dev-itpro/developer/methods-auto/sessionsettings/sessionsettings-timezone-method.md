@@ -1,9 +1,9 @@
 ---
-title: "SessionSettings.TimeZone([String]) Method"
+title: "SessionSettings.TimeZone([Text]) Method"
 description: "Gets or sets the time zone property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# SessionSettings.TimeZone([String]) Method
+# SessionSettings.TimeZone([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets or sets the time zone property in a SessionSettings object.
@@ -21,7 +21,7 @@ Gets or sets the time zone property in a SessionSettings object.
 
 ## Syntax
 ```AL
-[TimeZone := ]  SessionSettings.TimeZone([NewTimeZone: String])
+[TimeZone := ]  SessionSettings.TimeZone([NewTimeZone: Text])
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
@@ -31,13 +31,13 @@ Gets or sets the time zone property in a SessionSettings object.
 An instance of the [SessionSettings](sessionsettings-data-type.md) data type.  
 
 *[Optional] NewTimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the time zone property in the SessionsSettings object. The value must be a valid Windows time zone name, such as **UTC** or **Pacific Standard Time**.  
 
 
 ## Return Value
 *[Optional] TimeZone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The time zone set in the SessionSettings object.
       
 
@@ -66,6 +66,6 @@ end;
 ## See Also
 
 [SessionSettings Data Type](sessionsettings-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)  
+[Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)

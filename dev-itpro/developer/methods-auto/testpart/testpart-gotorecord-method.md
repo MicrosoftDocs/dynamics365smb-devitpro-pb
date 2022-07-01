@@ -42,5 +42,5 @@ The record to find.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestPart Data Type](testpart-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

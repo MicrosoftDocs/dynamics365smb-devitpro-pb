@@ -3,7 +3,7 @@ title: "Compiler Error AL0302"
 description: "Cannot use '{0}' in {1} '{2}' before it is declared."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ Cannot use an element before it is declared.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

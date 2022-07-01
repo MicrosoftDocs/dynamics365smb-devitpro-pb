@@ -3,7 +3,7 @@ title: "RequestPage Data Type"
 description: "Is a page that is run before the report starts to execute."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ The following methods are available on instances of the RequestPage data type.
 |Method name|Description|
 |-----------|-----------|
 |[Activate([Boolean])](requestpage-activate-method.md)|Activates the current page on the client if possible. The data on the page will not be refreshed.|
-|[Caption([String])](requestpage-caption-method.md)|Shows the caption in the title bar. For example, the default value in English (United States) is the same as the name of the page.|
+|[Caption([Text])](requestpage-caption-method.md)|Shows the caption in the title bar. For example, the default value in English (United States) is the same as the name of the page.|
 |[Close()](requestpage-close-method.md)|Closes the current page.|
 |[Editable([Boolean])](requestpage-editable-method.md)|Gets or sets the default editability of the page.|
 |[LookupMode([Boolean])](requestpage-lookupmode-method.md)|Gets or sets the default lookup mode for the page.|
@@ -36,5 +36,5 @@ The following methods are available on instances of the RequestPage data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

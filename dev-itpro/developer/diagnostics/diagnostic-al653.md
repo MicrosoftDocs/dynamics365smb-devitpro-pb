@@ -3,7 +3,7 @@ title: "Compiler Error AL0653"
 description: "Ids are not supported as object reference."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,5 +21,5 @@ Ids are not supported as object reference.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

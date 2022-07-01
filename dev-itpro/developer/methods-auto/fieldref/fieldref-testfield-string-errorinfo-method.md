@@ -1,9 +1,9 @@
 ---
-title: "FieldRef.TestField(String, ErrorInfo) Method"
+title: "FieldRef.TestField(Text, ErrorInfo) Method"
 description: "Determines whether the contents of a field matches a given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FieldRef.TestField(String, ErrorInfo) Method
+# FieldRef.TestField(Text, ErrorInfo) Method
 > **Version**: _Available or changed with runtime version 8.1._
 
 Determines whether the contents of a field matches a given value. If the contents differ from the given value, an error message is displayed.
@@ -21,7 +21,7 @@ Determines whether the contents of a field matches a given value. If the content
 
 ## Syntax
 ```AL
- FieldRef.TestField(Value: String, ErrorInfo: ErrorInfo)
+ FieldRef.TestField(Value: Text, ErrorInfo: ErrorInfo)
 ```
 ## Parameters
 *FieldRef*  
@@ -29,7 +29,7 @@ Determines whether the contents of a field matches a given value. If the content
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value that you want to compare with the contents of the field referred to by FieldRef. The data type of Value must match the type of the field. If you include Value and the contents of the field do not match, an error message is displayed. If you omit Value and the content of the field is zero or blank (empty string), an error message is displayed.  
 
 *ErrorInfo*  
@@ -41,5 +41,5 @@ Additional information to include in the error if the test fails.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

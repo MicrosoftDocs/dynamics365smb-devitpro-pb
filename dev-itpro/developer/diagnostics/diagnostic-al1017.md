@@ -3,7 +3,7 @@ title: "Compiler Error AL1017"
 description: "The manifest file is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,5 +21,5 @@ The manifest file is not valid. {0}.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,7 +2,7 @@
 title: "Set up the add-ins for Outlook integration with Business Central on-premises"
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: na
-ms.date: 08/31/2021
+ms.date: 04/22/2022
 ms.reviewer: edupont
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,6 +36,9 @@ For more information about what you do with the add-ins, see [Using Business Cen
 The processes for deploying the add-ins are different for [!INCLUDE [prod_short](../includes/prod_short.md)] online and on-premises, though the add-ins are the same. This article describes how to get the add-ins for [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises. For information about [!INCLUDE [prod_short](../includes/prod_short.md)] online, see [Get the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook) in the business functionality content.
 
 For on-premises environments, there are different options for deploying the add-ins. The option that you choose will depend on your organizations security policies, the Business Central environment, and how much control over installing the add-in that you want to give users. For example, you can choose to install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article. 
+
+> [!IMPORTANT]
+> Working with multiple environments? The Business Central add-in for Outlook is designed to work with a single Business Central environment. When the add-in is installed, the name of the environment is included in the add-in's manifest. This configuration means that the add-in will only connect to the environment that it was installed from. To use the add-in with a different environment, you'll open the environment and install the add-in again.
 
 ### Mail server
 
@@ -102,7 +105,11 @@ You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)]
 
 1. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Client Services** section, set the **Exchange Auth. Metadata Location** setting to the URL for the Exchange authentication metadata document of the authority that is allowed to sign the Exchange identity token.
 
-    If you're using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the Set-NAVServerConfiguration cmdlet and set the `ExchangeAuthenticationMetadataLocation` key.
+    If you're using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], run the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration) and set the `ExchangeAuthenticationMetadataLocation` key.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname ExchangeAuthenticationMetadataLocation -Keyvalue <metadata document URL>
+    ```
 
     This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, the value includes the URL of the Exchange mail server. The field accepts a wild-card URL. So for example, if the URL of the Exchange mail server is `https://mail.cronus.com`, then you can set the field to `https://mail.cronus.com*`. The default value is `https://outlook.office365.com/`.
 
@@ -111,35 +118,30 @@ You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)]
    The base URL the public URL that can be used by Outlook clients to access [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. The base URL is the root portion of all URLs that are used to access pages in the web client. It must have the format `https://[hostname:port]/[instance]`, such as `https://MyNavWebServer:443/BC130`.
 
    With the Set-NAVServerConfiguration cmdlet, set the `PublicWebBaseUrl` key.
+
+    ```powershell
+    Set-NavServerConfiguration -ServerInstance <BC server instance> -Keyname PublicWebBaseUrl -Keyvalue <web client URL>
+    ```
+
 3. Set the **Valid Audiences** setting for Azure AD to include the host name of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)], which is the web client base URL *without* the port number and server instance, like `https://MyNavWebServer`.
+
+   If you have a multitenant deployment that uses different host names for tenants, like `https://tenant1.cronusinternational.com`, you'll also have to register each host name as a valid audience. There are two ways you can do this:
+
+   - On the server-level, add each host name to **Valid Audiences** setting of the [!INCLUDE[server](../developer/includes/server.md)] instance.
+  
+   - On the tenant-level, add the host names to the **Valid Audiences** setting when you mount the tenant, by using either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant).
+
+    ```powershell
+    Mount-NavTenant -ServerInstance <BC server instance> -Tenant <tenant_ID> Mount-NAVTenant BC -Id 'Test' -DatabaseName <database name> -ValidAudiences <host names>  
+    ```
+
+   > [!NOTE]
+   > If there's more than one host name, separate each host name with a semi-colon. You can specify the host names on the server-level, tenant-level, or a combination of both.  
 
 ## <a name="centralized-deployment"></a>Centralized Deployment
 
 Centralized Deployment is a feature in Microsoft 365 admin center and Exchange admin center that lets you automatically install add-ins in users' Office apps, like Outlook. It's the recommended way for admins to deploy for Office add-ins to users and groups within your organization. For more information about Centralized Deployment, see [Centralized Deployment FAQ](/microsoft-365/admin/manage/centralized-deployment-faq).
 
-<!--
-### Prerequisites
-
-- Microsoft 365 or Exchange Server
-- Users are assigned a Microsoft 365 license.
-- Your Microsoft 365 account or Exchange account has the Global Administrator or Exchange Administrator role.
-- Centralized Deployment works for your organization. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
-
-### Set up the Business Central environment
-
-1. Set up Azure Active Directory (Azure AD) authentication.
-
-    For more information, see [Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
-2. Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
-
-    For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
-
-3. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
-
-    For more information, see [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
-
-### Deploy the add-in
--->
 1. Verify that Centralized Deployment works for your organization.
 
    For more information, see [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
@@ -161,7 +163,7 @@ Centralized Deployment is a feature in Microsoft 365 admin center and Exchange a
 
 9. Upload the add-in files as custom add-ins in the admin center you're working with:
 
-    - For Microsoft 365 admin center, follow the steps at [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-in).
+    - For Microsoft 365 admin center, follow the steps at [Deploy add-ins in the admin center](/microsoft-365/admin/manage/centralized-deployment-faq?view=o365-worldwide#how-do-you-target-add-in-user-assignments-with-centralized-deployment-&preserve-view=true).
     - For Exchange admin center, follow the steps at [Install or remove add-ins for Outlook for your Exchange organization](/exchange/install-or-remove-outlook-add-ins-2013-help).
     <!--Go to the **Settings** > **Add-ins** page. If you don't see the **Add-in** Page, go to the **Settings** > **Integrated apps** > **Add-ins** page.-->
 
@@ -177,30 +179,8 @@ After you finish, you can always change the deployment in admin center, like ass
 With this deployment option, users install the Business Central add-in for Outlook for themselves only. This deployment option uses a registered application in Azure Active directory with Exchange web service permission, so users don't have to upload the add-ins manually in Outlook. When using the add-in, users don't have to sign in the Business Central because authentication against the Exchange or Microsoft 365 is done using an authentication token.
 
 If you've prepared for deployment as described earlier, then as an admin, the only remaining task is to set up an application registration in Azure AD. Then, users can start to install the add-in in Outlook.
-<!--
-### Prerequisites
-
-- Microsoft 365 with Exchange Online or Exchange Server
-- Users are assigned a Microsoft 365 license.-->
 
 ### Register an application in Azure Active Directory
-
-<!--
-### Set up the Business Central environment
-
-1. Set up Azure Active Directory (Azure AD) authentication.
-
-    For more information, see [Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
-2. Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
-
-    For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
-
-3. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
-
-    For more information, see [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
-4. Create an application registration for Business Central in Microsoft Azure and register it in Business Center.
-
-    Register an application that has delagated Exchange web service (EWS) permission. You can modify an existing application or create a new one. For more information, see [Registering [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises in Azure AD for Integrating with Other Services](/dynamics365/business-central/dev-itpro/administration/register-app-azure).-->
 
 In the Azure portal, add an application registration for Business Central in your Azure AD tenant. Give the registered app delegated permission to Exchange web service (EWS). After you've added the registered app in Azure AD, set up Business Central to use it by using the **Set up your Azure Active Directory accounts** assisted setup.
 
@@ -214,77 +194,14 @@ After you complete the Business Central setup, users deploy the add-in by using 
 
 With this deployment option, users install the Business Central add-in for Outlook for themselves only. Unlike the individual acquisition (automated) deployment option, users will have to download the add-in files from Business Central, then manually add them in Outlook. If you've prepared your deployment as described earlier, the only step remaining is for users to get the add-in.  
 
-<!--
-### Prerequisites
-
-- Microsoft 365 with Exchange Online or Exchange Server
-- Users are assigned a Microsoft 365 license.
-
-### Set up the Business Central environment
-
-1. Set up Azure Active Directory (Azure AD) authentication or NavUserPassword.
-
-    For more information, see [Authenticating Business Central Users with Azure Active Directory](authenticating-users-with-azure-active-directory.md).
-2. Configure [!INCLUDE[webserver](../developer/includes/webserver.md)] to use SSL (https).
-
-    For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/configure-ssl-web-client-connection.md).
-
-3. Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins.
-
-    For more information, see [Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins](#server)
--->
 ### Get the add-in (users)
 
 After you complete the Business Central setup, users deploy the add-in by using **Get Outlook Add-in** assisted setup in Business Central. For more information, see [Install the Business Central Add-in for Outlook](/dynamics365/business-central/admin-outlook#onprem).
-
-<!--
-## <a name="server"></a>Configure the [!INCLUDE[server](../developer/includes/server.md)] instance to work with the Office Add-ins
-
-You can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the **Set-NAVServerConfiguration** cmdlet in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
-
-1. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], in the **Client Services** section, set the **Exchange Auth. Metadata Location** setting to the URL for the Exchange authentication metadata document of the authority that is allowed to sign the Exchange identity token.
-
-    Alternatively, with the Set-NAVServerConfiguration cmdlet, set the ```ExchangeAuthenticationMetadataLocation``` key.
-
-    This setting is used to confirm the identity of the signing authority when using Exchange authentication. In part, this includes the URL of the Exchange mail server. The field accepts a wild card URL. So for example, if the URL of the Exchange mail server is ```https://mail.cronus.com```, then you can set this to ```https://mail.cronus.com*```. The default value is ```https://outlook.office365.com/```.
-
-2. Set the **Web Client Base URL** setting to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
-
- This is the root portion of all URLs that are used to access pages in the web client. This must have the format `https://[hostname:port]/[instance]`, such as such as `https://MyNavWebServer:443/BC130`.
-
- With the **Set-NAVServerConfiguration** cmdlet, set the ```PublicWebBaseUrl``` key.-->
-
-<!--
-## Organization deployment as an Exchange administrator
-
-With an Exchange Server or Exchange Online administrator account, you can deploy the add-ins for the entire organization. There are two ways to deploy the add-ins:
-
-- Run the **Outlook for Business Central** assisted setup in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and choose the **My Organization** option. This method deploys both the Contact Insights and Document View add-ins.
-- Use the **Office Add-ins Management** page. The **Office Add-ins Management** page lets deploy  the Contact Insights and Document View add-ins individually.
-
-Both methods will lead you through the deployment. The information that you must provide depends on whether you are using Exchange Online (or Microsoft 365) or Exchange Server, and the user authentication method that is used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
-
-- For Exchange Online or Microsoft 365
-
-    If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for NavUserPassword authentication, you must provide an email address and password for an Exchange administrator account. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Azure AD authentication, you are not prompted for these credentials because authentication against the Exchange or Exchange Online is done using an authentication token.
-
-- For Exchange Server
-
-  Exchange Web Services (EWS) and Autodiscover will try to find the local Exchange Server:
-
-  - If EWS is not set up, you will receive an error message.
-  - If Autodiscover cannot find the Exchange Server, you are prompted for an Exchange administrator email and password, and the local Exchange PowerShell endpoint. The Exchange PowerShell endpoint is a URI that has the format ```https://<ExchangeMailboxServer>/PowerShell```.  ```<ExchangeMailboxServer>``` is the fully qualified domain name of the Exchange Server, such as ```https://mail.cronus.com/PowerShell```.  -->
-
-<!--
-### Individual user deployment
-
-To deploy both the **Contact Insight** and **Document View** add-ins, users run the **Outlook for Business Central** assisted setup in their [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and choose the **My Mailbox** option. Depending on the user authentication method used by [!INCLUDE[prod_short](../developer/includes/prod_short.md)], users will have to provide their email address and password:
-
-- If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for NavUserPassword or Access Control Service authentication, users must provide their Exchange email address and password.
-- If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Azure AD authentication, users are not prompted for their email credentials because authentication against the Exchange or Exchange Online is done using an authentication token.
--->
 
 ## See Also  
 
 [Deploying Business Central](../deployment/deployment.md)  
 [Using Business Central as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook?toc=/dynamics365/business-central/dev-itpro/toc.json)  
+[Mount or Dismount a Tenant](mount-dismount-tenant.md)  
+[Configuring Business Central Web Server to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md)  
+[FAQ](/dynamics365/business-central/ui-outlook-addin-faq)  

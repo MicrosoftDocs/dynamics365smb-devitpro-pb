@@ -1,9 +1,9 @@
 ---
-title: "XmlDeclaration.Create(String, String, String) Method"
+title: "XmlDeclaration.Create(Text, Text, Text) Method"
 description: "Creates an XmlDeclaration node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDeclaration.Create(String, String, String) Method
+# XmlDeclaration.Create(Text, Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlDeclaration node.
@@ -21,19 +21,21 @@ Creates an XmlDeclaration node.
 
 ## Syntax
 ```AL
-XmlDeclaration :=   XmlDeclaration.Create(Version: String, Encoding: String, Standalone: String)
+XmlDeclaration :=   XmlDeclaration.Create(Version: Text, Encoding: Text, Standalone: Text)
 ```
 ## Parameters
 *Version*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The version of the XML, usually "1.0".
         
+
 *Encoding*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The encoding for the XML document.
         
+
 *Standalone*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string containing "yes" or "no" that specifies whether the XML is standalone or requires external entities to be resolved.  
 
 
@@ -46,5 +48,5 @@ The created XmlDeclaration node.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDeclaration Data Type](xmldeclaration-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

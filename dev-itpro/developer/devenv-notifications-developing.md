@@ -1,5 +1,6 @@
 ---
 title: "Notifications"
+description: Learn how you can generate notifications that will show to the user.
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
@@ -229,4 +230,4 @@ To complete the example, follow these steps:
 ## See Also
 [Notification Data Type](./methods-auto/library.md)   
 [Developing Extensions](devenv-dev-overview.md)   
-[Getting Started with AL](devenv-get-started.md)
+[Get Started with AL](devenv-get-started.md)

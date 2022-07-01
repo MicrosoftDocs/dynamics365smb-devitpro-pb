@@ -50,6 +50,6 @@ This trigger is executed in place of the default next record behavior.
 If an error occurs in the trigger code, the page is closed.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnNextRecord (Page) Trigger](../page/devenv-onnextrecord-page-trigger.md)

@@ -111,5 +111,5 @@ The field `Cust. Rep.` was renamed to `Alt. Name`. It is not allowed to change t
 ## See Also
 
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

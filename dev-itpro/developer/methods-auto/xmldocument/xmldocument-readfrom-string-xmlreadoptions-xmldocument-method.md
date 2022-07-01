@@ -1,9 +1,9 @@
 ---
-title: "XmlDocument.ReadFrom(String, XmlReadOptions, var XmlDocument) Method"
+title: "XmlDocument.ReadFrom(Text, XmlReadOptions, var XmlDocument) Method"
 description: "Reads and parses the XML document from the given data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlDocument.ReadFrom(String, XmlReadOptions, var XmlDocument) Method
+# XmlDocument.ReadFrom(Text, XmlReadOptions, var XmlDocument) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads and parses the XML document from the given data source.
@@ -21,17 +21,19 @@ Reads and parses the XML document from the given data source.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlDocument.ReadFrom(Text: String, ReadOptions: XmlReadOptions, var Result: XmlDocument)
+[Ok := ]  XmlDocument.ReadFrom(Text: Text, ReadOptions: XmlReadOptions, var Result: XmlDocument)
 ```
 ## Parameters
 *Text*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A string containing an XML document.
         
+
 *ReadOptions*  
 &emsp;Type: [XmlReadOptions](../xmlreadoptions/xmlreadoptions-data-type.md)  
 Specifies options for customizing how the document is parsed.
         
+
 *Result*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  
 The XmlDocument parsed from the given data source.  
@@ -46,5 +48,5 @@ The XmlDocument parsed from the given data source.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDocument Data Type](xmldocument-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -96,7 +96,7 @@ If you've customized Microsoft permission sets, it's important to know what you'
 ## Continue using the permission sets defined as data
 
 > [!NOTE]
-> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](deprecated-features-w1.md#permissions).
+> The capability to use permission sets defined as data has been deprecated and will be removed in an upcoming release. For more information, see [Deprecated Features in W1](deprecated-features-w1.md).
 
 Your application can use permission sets from various sources, like Microsoft, partners, extensions, and user-defined permission sets. When you upgrade, the existing permission sets and permissions stored as data aren't affected during upgrade. They'll exist as before in the database, even after upgrade. If you have customized Microsoft permission sets, you'll probably want to keep them up to date with the latest from Business Central.
 
@@ -109,8 +109,8 @@ Your application can use permission sets from various sources, like Microsoft, p
 
     For more information, see [To export and import a permission set](/dynamics365/business-central/ui-define-granular-permissions#to-export-and-import-a-permission-set).
 
-2. Install version 18 or 19 with the demonstration database.
-3. From the version 18 or 19 client, open the **Permissions Sets** page, and export the **System** permission sets to a file.
+2. Install the new Business Central version that you're upgrading to with the demonstration database.
+3. From the client client, open the **Permissions Sets** page, and export the **System** permission sets to a file.
 4. Using a file comparison tool, compare the to XML files and merge the necessary changes into a single XML file.
 
     Now you have upgraded permissions as XML.
@@ -119,11 +119,11 @@ Your application can use permission sets from various sources, like Microsoft, p
     > [!IMPORTANT]
     > If you have a multitenant deployment, make sure the tenants are allowed to write to application database.
 
-6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](../developer/includes/server.md)] instance (version 18 or 19) to `false`.
+6. If not already done during upgrade, set the `UsePermissionSetsFromExtensions` parameter of [!INCLUDE [server](../developer/includes/server.md)] instance for the new version to `false`.
 
     > [!NOTE]
     >  Restart the [!INCLUDE [server](../developer/includes/server.md)] instance.
-7. From the version 18 or 19 client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
+7. From the client, open the **Permissions Sets** page, and import the permission sets from the newly created XML file.
 
 ## See Also  
 

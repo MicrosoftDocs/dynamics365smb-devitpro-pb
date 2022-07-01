@@ -186,7 +186,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 18 DVD.
 
-   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+   For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
@@ -295,6 +295,9 @@ You'll create two versions of this extension. The first version contains the tab
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 4. (Single-tenant only) Uninstall all extensions from the tenants.
 
     To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.  For example, you can uninstall all extensions with a single command:
@@ -530,7 +533,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 13: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in **Task 1**, not the empty versions that you created in **Task 4**.
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in **Task 3**, not the empty versions that you created in **Task 4**.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 

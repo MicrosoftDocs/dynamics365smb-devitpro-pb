@@ -3,7 +3,7 @@ title: "Report.GetSubstituteReportId(Integer) Method"
 description: "Gets the ID of the report that will be run by the platform after considering any substitutions made by extensions."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,5 +39,5 @@ The ID of the report that will be run by the platform after considering any subs
 ## See Also
 [Substituting Reports](../../devenv-substituting-reports.md)  
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

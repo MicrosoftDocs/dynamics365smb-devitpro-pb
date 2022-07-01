@@ -3,7 +3,7 @@ title: "XmlComment Data Type"
 description: "Represents an XML comment."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ The following methods are available on the XmlComment data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Create(String)](xmlcomment-create-method.md)|Creates an XmlComment node.|
+|[Create(Text)](xmlcomment-create-method.md)|Creates an XmlComment node.|
 
 The following methods are available on instances of the XmlComment data type.
 
@@ -37,11 +37,11 @@ The following methods are available on instances of the XmlComment data type.
 |[GetParent(var XmlElement)](xmlcomment-getparent-method.md)|Gets the parent XmlElement of this node.|
 |[Remove()](xmlcomment-remove-method.md)|Removes this node from its parent element.|
 |[ReplaceWith(Any,...)](xmlcomment-replacewith-method.md)|Replaces this node with the specified content.|
-|[SelectNodes(String, var XmlNodeList)](xmlcomment-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectNodes(String, XmlNamespaceManager, var XmlNodeList)](xmlcomment-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectSingleNode(String, var XmlNode)](xmlcomment-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[SelectSingleNode(String, XmlNamespaceManager, var XmlNode)](xmlcomment-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[Value([String])](xmlcomment-value-method.md)|Gets or sets the string value of this comment.|
+|[SelectNodes(Text, var XmlNodeList)](xmlcomment-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectNodes(Text, XmlNamespaceManager, var XmlNodeList)](xmlcomment-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectSingleNode(Text, var XmlNode)](xmlcomment-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectSingleNode(Text, XmlNamespaceManager, var XmlNode)](xmlcomment-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[Value([Text])](xmlcomment-value-method.md)|Gets or sets the string value of this comment.|
 |[WriteTo(OutStream)](xmlcomment-writeto-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(XmlWriteOptions, OutStream)](xmlcomment-writeto-xmlwriteoptions-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(var Text)](xmlcomment-writeto-text-method.md)|Serializes and saves the current node to the given variable.|
@@ -49,5 +49,5 @@ The following methods are available on instances of the XmlComment data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -3,7 +3,7 @@ title: "AboutTitle Property"
 description: "Sets the large-font title that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,6 +58,6 @@ AboutTitle = 'About sales invoices';
 
 ## See Also  
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [AboutText Property](devenv-abouttext-property.md)

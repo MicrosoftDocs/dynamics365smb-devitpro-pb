@@ -66,6 +66,9 @@ Use this scenario if you have a [!INCLUDE[prod_short](../developer/includes/prod
 1. Make backup of the databases.
 
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 3. Uninstall all extensions from the old tenants.
 
     In this step, you uninstall any extensions that are currently installed on the database.
@@ -235,7 +238,7 @@ In this task, you'll publish the platform symbols and extensions. As minimum, yo
 
 Publishing an extension adds the extension to the application database that is mounted on the server instance. Once published, it's available for installing on tenants. This task updates internal tables, compiles the components of the extension behind-the-scenes, and builds the necessary metadata objects that are used at runtime.
 
-The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 that you started in the previous task.
+The steps in this task continue to use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 16 that you started in the previous task.
 
 1. Publish version 16 system symbols extension.
 

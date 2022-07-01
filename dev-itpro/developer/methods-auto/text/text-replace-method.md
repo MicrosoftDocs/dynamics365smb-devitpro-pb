@@ -3,7 +3,7 @@ title: "Text.Replace(Text, Text) Method"
 description: "Returns a new Text in which all occurrences of a specified string in the current instance are replaced with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Returns a new Text in which all occurrences of a specified string in the current
 ```AL
 Result :=   Text.Replace(OldValue: Text, NewValue: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -34,6 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 &emsp;Type: [Text](text-data-type.md)  
 The string to replace all occurrences of OldValue.
         
+
 *NewValue*  
 &emsp;Type: [Text](text-data-type.md)  
 The string to be replaced.  
@@ -48,5 +47,5 @@ The end result Text.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

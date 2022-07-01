@@ -16,6 +16,9 @@ ms.author: solsen
 
 Retrieve the properties and relationships of a journal line object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
+> [!NOTE]  
+> Get journalLines will only return lines where documentType is not specified and where accountType is either of type `"G/L Account"` or `"Bank Account"`.
+
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 

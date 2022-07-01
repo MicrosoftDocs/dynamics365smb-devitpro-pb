@@ -1,9 +1,9 @@
 ---
-title: "Session.StartSession(var Integer, Integer, String, var Record, Duration) Method"
+title: "Session.StartSession(var Integer, Integer, Text, var Record, Duration) Method"
 description: "Starts a session without a UI and runs the specified codeunit."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/10/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.StartSession(var Integer, Integer, String, var Record, Duration) Method
+# Session.StartSession(var Integer, Integer, Text, var Record, Duration) Method
 > **Version**: _Available or changed with runtime version 7.0._
 
 Starts a session without a UI and runs the specified codeunit.
@@ -21,7 +21,7 @@ Starts a session without a UI and runs the specified codeunit.
 
 ## Syntax
 ```AL
-[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Company: String, var Record: Record, Timeout: Duration)
+[Ok := ]  Session.StartSession(var SessionId: Integer, CodeunitId: Integer, Company: Text, var Record: Record, Timeout: Duration)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -29,15 +29,19 @@ Starts a session without a UI and runs the specified codeunit.
 *SessionId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the new session that is started. The ID is assigned to the SessionID variable after the session is started successfully. This parameter is passed by reference to the method.  
+
 *CodeunitId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the codeunit to run when the session is started.  
+
 *Company*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The company in which to start the session. By default, the session is started in the same company as the calling session.  
+
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 A record that is passed to the OnRun trigger of the codeunit that runs when the session is started. This parameter is optional.  
+
 *Timeout*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
 Specifies the timeout of the created session. If not specified a default timeout will be used; for OnPrem, the default timeout is set on the server, for SaaS the current default timeout is 12 hours, and may change in the future.  
@@ -60,6 +64,6 @@ For information about how dialog boxes are handled in a background session, see 
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
-[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)  
+[Configuring Business Central Server - Default StartSession Timeout](../../../administration/configure-server-instance.md#General)

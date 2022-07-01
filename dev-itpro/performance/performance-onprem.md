@@ -12,7 +12,7 @@ author: KennieNP
 
 # Performance of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-Premises Installations
 
-In this section, we highlight a number of resources that might be useful when doing performance investigations and tuning of on-premises installations. On-premises, in this context, means deployment to any environment that isn't the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. Running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on Azure resources is also considered on-premises.
+In this section, we highlight many resources that might be useful when doing performance investigations and tuning of on-premises installations. On-premises, in this context, means deployment to any environment that isn't the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service. Running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on Azure resources is also considered on-premises.
 
 Content is ordered into the following groups:
 
@@ -59,7 +59,7 @@ You can adjust the following [!INCLUDE[server](../developer/includes/server.md)]
 |EnableCloudReplicationMaintenance|Specifies whether to keep the cloud replication status in the database up to date. When enabled, synchronize operations on tenants and extensions will update records in the **Intelligent Cloud Status** table, and set change tracking on tables that are configured to [replicate data](../developer/properties/devenv-replicatedata-property.md).<br /><br />Enabling this setting isn't required for migrating most on-premises solutions to the cloud, and you'll improve synchronization and upgrade performance by disabling it.|[Configuring Business Central Server - EnableCloudReplicationMaintenance](../administration/configure-server-instance.md#Compatibility)|
 |EnableProfileCacheSynchronization|	Specifies whether profile cache synchronization across multiple server instances is enabled. However, enabling this setting may lower the tenant performance.|[Configuring Business Central Server - EnableProfileCacheSynchronization](../administration/configure-server-instance.md#profilecache)|
 | SqlBulkImportBatchSize | Specifies how many SQL memory chunks that a data import must be distributed across. Lowering the value increases the number of network transfers and decreases performance. But it also lowers the amount of memory that the server instance consumes.  | [Database Settings](../administration/configure-server-instance.md#Database) |
-|SessionEventTableRetainInterval<br /><br />  NonInteractiveSessionsLogRetainInterval<br /><br /> SessionEventTablePurgeLookupPeriod|The system table **2000000111 Session Event** stores information about sessions between [!INCLUDE[server](../developer/includes/server.md)] instances and clients. Entries are recorded for various events, like when a user signs in or out of the client, or when a web service request starts or stops.<br /><br />It's a good idea to limit the number of entries in this table because performance can be adversely affected as the table size grows. Under normal conditions, you shouldn't experience any problems. But there might be situations or periods, typically dealing with web service calls, during which a high number of session events occur. <br /><br />These three settings enable you to control the table size by specifying how long to keep entries in the table before they are automatically deleted.|[Configuring Business Central Server - Session Event Table](../administration/configure-server-instance.md#session)|
+|SessionEventTableRetainInterval<br /><br />  NonInteractiveSessionsLogRetainInterval<br /><br /> SessionEventTablePurgeLookupPeriod|The system table **2000000111 Session Event** stores information about sessions between [!INCLUDE[server](../developer/includes/server.md)] instances and clients. Entries are recorded for various events, for example, when a user signs in or out of the client, or when a web service request starts or stops.<br /><br />It's a good idea to limit the number of entries in this table because performance can be adversely affected as the table size grows. Under normal conditions, you shouldn't experience any problems. But there might be situations or periods, typically dealing with web service calls, during which a high number of session events occur. <br /><br />These three settings enable you to control the table size by specifying how long to keep entries in the table before they're automatically deleted.|[Configuring Business Central Server - Session Event Table](../administration/configure-server-instance.md#session)|
 
 #### Web service limits 
 
@@ -85,8 +85,8 @@ First of all, make sure that you avoid common pitfalls in your SQL Server setup:
 
 These articles describe how you can use SQL Server table partitioning and data compression to get faster data retrieval:
 
-- [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md#TablePartitioning)  
-- [Using SQL Server data compression](../administration/optimize-sql-data-access.md#Compression)  
+- [Using SQL Server table partitioning](../administration/optimize-sql-data-access.md)  
+- [Using SQL Server data compression](../administration/optimize-sql-data-access.md)  
 
 #### SQL Server vs. Azure SQL database
 

@@ -3,7 +3,7 @@ title: "Report.Skip() Method"
 description: "Skips the current iteration of the current report or XmlPort."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,6 @@ Skips the current iteration of the current report or XmlPort.
 ```AL
  Report.Skip()
 ```
-
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
@@ -54,5 +53,5 @@ end;
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

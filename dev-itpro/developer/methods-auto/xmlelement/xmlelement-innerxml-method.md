@@ -3,7 +3,7 @@ title: "XmlElement.InnerXml() Method"
 description: "Gets the markup representing only the child nodes of this node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ Value :=   XmlElement.InnerXml()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *XmlElement*  
 &emsp;Type: [XmlElement](xmlelement-data-type.md)  
@@ -33,12 +32,12 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 ## Return Value
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The markup representing only the child nodes of this node.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlElement Data Type](xmlelement-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

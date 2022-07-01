@@ -3,7 +3,7 @@ title: "HttpRequestMessage.GetRequestUri() Method"
 description: "Gets the URI used for the HTTP request."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ RequestUri :=   HttpRequestMessage.GetRequestUri()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *HttpRequestMessage*  
 &emsp;Type: [HttpRequestMessage](httprequestmessage-data-type.md)  
@@ -33,12 +32,12 @@ An instance of the [HttpRequestMessage](httprequestmessage-data-type.md) data ty
 
 ## Return Value
 *RequestUri*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The URI used for the HTTP request.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpRequestMessage Data Type](httprequestmessage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

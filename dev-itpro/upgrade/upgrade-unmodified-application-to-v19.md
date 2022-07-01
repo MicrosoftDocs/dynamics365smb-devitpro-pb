@@ -13,11 +13,15 @@ author: jswymer
 
 # Upgrading Microsoft System and Base Application to Version 19
 
-Use this scenario if you have one of the following versions that uses the Microsoft System and Base applications.
+Use this scenario if you have one of the following [!INCLUDE[prod_short](../developer/includes/prod_short.md)] versions that uses the Microsoft System and Base applications.
 
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (version 18)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 (version 17)
-- [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 1 (version 16)
+- 2021 release wave 1 (version 18)
+- 2020 release wave 2 (version 17)
+- 2020 release wave 1 (version 16)
+- 2019 release wave 2 (version 15)
+
+> [!IMPORTANT]
+> See [Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md) to determine which update of version 19 is compatible with your current Business Central version.
 
  ![Upgrade on unmodified Business Central application.](../developer/media/bc19-upgrade-unmodified-app.png "Upgrade on unmodified Business Central application") 
 
@@ -108,6 +112,8 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for your current version as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
 4. (Single-tenant only) Uninstall all extensions from the old tenants.
 

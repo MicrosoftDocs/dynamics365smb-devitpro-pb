@@ -3,7 +3,7 @@ title: "HttpRequestMessage Data Type"
 description: "Represents an HTTP request message."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,8 +27,8 @@ The following methods are available on instances of the HttpRequestMessage data 
 |[Content([HttpContent])](httprequestmessage-content-method.md)|Gets or sets the contents of the HTTP message.|
 |[GetHeaders(var HttpHeaders)](httprequestmessage-getheaders-method.md)|Gets a reference to the collection of HTTP request headers.|
 |[GetRequestUri()](httprequestmessage-getrequesturi-method.md)|Gets the URI used for the HTTP request.|
-|[Method([String])](httprequestmessage-method-method.md)|Gets or sets the method type as defined in the HTTP standard.|
-|[SetRequestUri(String)](httprequestmessage-setrequesturi-method.md)|Sets the URI used for the HTTP request.|
+|[Method([Text])](httprequestmessage-method-method.md)|Gets or sets the method type as defined in the HTTP standard.|
+|[SetRequestUri(Text)](httprequestmessage-setrequesturi-method.md)|Sets the URI used for the HTTP request.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -36,5 +36,5 @@ The following methods are available on instances of the HttpRequestMessage data 
 > For performance reasons all HTTP, JSON, TextBuilder, and XML types are reference types, not value types. Reference types holds a pointer to the data elsewhere in memory, whereas value types store its own data. 
 
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

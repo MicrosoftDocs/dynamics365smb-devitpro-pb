@@ -3,7 +3,7 @@ title: "Compiler Error AL0287"
 description: "The event '{0}' can't contain local variables."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ An event can't contain local variables.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

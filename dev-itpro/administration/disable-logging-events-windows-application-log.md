@@ -1,5 +1,6 @@
 ---
-title: "How to: Disable Logging Events to the Windows Application Log"
+title: "Disable Logging Events to the Windows Application Log"
+description: For Business Central on-premises, you can configure the event logs. 
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

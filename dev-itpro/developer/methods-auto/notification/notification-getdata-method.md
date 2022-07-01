@@ -1,9 +1,9 @@
 ---
-title: "Notification.GetData(String) Method"
+title: "Notification.GetData(Text) Method"
 description: "Retrieves data that was passed to a notification instance as specified by a SETDATA method call."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Notification.GetData(String) Method
+# Notification.GetData(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Retrieves data that was passed to a notification instance as specified by a SETDATA method call.
@@ -21,7 +21,7 @@ Retrieves data that was passed to a notification instance as specified by a SETD
 
 ## Syntax
 ```AL
-Value :=   Notification.GetData(Name: String)
+Value :=   Notification.GetData(Name: Text)
 ```
 ## Parameters
 *Notification*  
@@ -29,13 +29,13 @@ Value :=   Notification.GetData(Name: String)
 An instance of the [Notification](notification-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the data item that is specified by the SETDATA method call.  
 
 
 ## Return Value
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The data retrieved
 
 
@@ -67,5 +67,5 @@ MyNotification.GetData('ID');
 
 ## See Also
 [Notification Data Type](notification-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

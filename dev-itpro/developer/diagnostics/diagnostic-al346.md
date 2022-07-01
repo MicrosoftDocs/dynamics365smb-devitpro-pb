@@ -3,7 +3,7 @@ title: "Compiler Error AL0346"
 description: "The methods '{0}' can only be used on Columns that have a Date or DateTime type."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ The **Method** property can only have the property values Day, Month and Year wh
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

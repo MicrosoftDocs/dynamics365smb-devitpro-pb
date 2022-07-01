@@ -54,12 +54,13 @@ The following table provides an overview of some of the shortcut key combination
 |**F8**|Move to the next error or warning|
 |**Shift+F8**|Move to the previous error or warning|
 
-## Compile in Visual Studio Code
+## Compile and publish in Visual Studio Code
 
 |Keyboard Shortcut| Action|
 |-----------------|-------|
 |**Ctrl+Shift+B**|Compile and build the solution|
 |**Ctrl+F5**|Build and deploy|
+|**Shift+Alt+W**| Publish full dependency tree for the active project|
 
 ## Debugging in Visual Studio Code
 
@@ -87,8 +88,10 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 |- (minus) | Collapse all nodes.|
 |* (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
+
+
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)

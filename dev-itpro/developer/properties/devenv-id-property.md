@@ -3,7 +3,7 @@ title: "Id Property"
 description: "The ID of the service plan, role, etc."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,7 @@ The ID of the service plan, role, etc. as determined by the type.
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Type Property](devenv-type-property.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  

@@ -3,7 +3,7 @@ title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/03/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,12 +24,12 @@ The following methods are available on instances of the RecordRef data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[AddLink(String [, String])](recordref-addlink-method.md)|Adds a link to a record in a table.|
+|[AddLink(Text [, Text])](recordref-addlink-method.md)|Adds a link to a record in a table.|
 |[AddLoadFields([Integer,...])](recordref-addloadfields-method.md)|Specifies additional fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.|
 |[AreFieldsLoaded(Integer,...)](recordref-arefieldsloaded-method.md)|Checks whether the specified fields are all initially loaded.|
 |[Ascending([Boolean])](recordref-ascending-method.md)|Changes or checks the order in which a search through the table that is referred to by RecordRef will be performed.|
 |[Caption()](recordref-caption-method.md)|Gets the caption of the table that is currently selected. Returns an error if no table is selected.|
-|[ChangeCompany([String])](recordref-changecompany-method.md)|Redirects references to table data from one company to another.|
+|[ChangeCompany([Text])](recordref-changecompany-method.md)|Redirects references to table data from one company to another.|
 |[ClearMarks()](recordref-clearmarks-method.md)|Removes all the marks from a record.|
 |[Close()](recordref-close-method.md)|Closes the current page or table.|
 |[Copy(var Record [, Boolean])](recordref-copy-table-boolean-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
@@ -52,7 +52,7 @@ The following methods are available on instances of the RecordRef data type.
 |[FieldExist(Integer)](recordref-fieldexist-method.md)|Determines if the field that has the number FieldNo exists in the table that is referred to by the RecordRef. Returns an error if no table is currently selected.|
 |[FieldIndex(Integer)](recordref-fieldindex-method.md)|Gets the FieldRef of the field that has the specified index in the table that is referred to by the RecordRef.|
 |[FilterGroup([Integer])](recordref-filtergroup-method.md)|Changes the filter group that is being applied to the table. You can also use this method to return the number of the current filtergroup. You cannot return the number of the filtergroup and set a new filtergroup at the same time.|
-|[Find([String])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
+|[Find([Text])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
@@ -81,7 +81,7 @@ The following methods are available on instances of the RecordRef data type.
 |[Name()](recordref-name-method.md)|Identifies the name of the table|
 |[Next([Integer])](recordref-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[Number()](recordref-number-method.md)|Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.|
-|[Open(Integer [, Boolean] [, String])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
+|[Open(Integer [, Boolean] [, Text])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[ReadConsistency()](recordref-readconsistency-method.md)|Gets a value indicating whether read consistency is enabled.|
 |[ReadPermission()](recordref-readpermission-method.md)|Determines if you can read from a table.|
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
@@ -91,10 +91,10 @@ The following methods are available on instances of the RecordRef data type.
 |[SecurityFiltering([SecurityFilter])](recordref-securityfiltering-method.md)|Gets or sets how security filters are applied to the RecordRef.|
 |[SetLoadFields([Integer,...])](recordref-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
 |[SetPermissionFilter()](recordref-setpermissionfilter-method.md)|Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter.|
-|[SetPosition(String)](recordref-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.|
+|[SetPosition(Text)](recordref-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.|
 |[SetRecFilter()](recordref-setrecfilter-method.md)|Sets a filter on a record that is referred to by a RecordRef.|
 |[SetTable(Record)](recordref-settable-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
-|[SetView(String)](recordref-setview-method.md)|Sets the current sort order, key, and filters on a table.|
+|[SetView(Text)](recordref-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[SystemCreatedAtNo()](recordref-systemcreatedatno-method.md)|Gets the field number that is used by the SystemCreatedAt field. The SystemCreatedAt field is a system field that the platform adds to all table objects.|
 |[SystemCreatedByNo()](recordref-systemcreatedbyno-method.md)|Gets the field number that is used by the SystemCreatedBy field. The SystemCreatedBy field is a system field that the platform adds to all table objects.|
 |[SystemIdNo()](recordref-systemidno-method.md)|Gets the field number that is used by the SystemId field. The SystemId field is a system field that the platform adds to all table objects.|
@@ -111,5 +111,5 @@ The RecordRef object can refer to any table in the database. Use the [Open metho
 If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

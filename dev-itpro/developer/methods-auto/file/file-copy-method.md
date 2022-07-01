@@ -1,9 +1,9 @@
 ---
-title: "File.Copy(String, String) Method"
+title: "File.Copy(Text, Text) Method"
 description: "Copies a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Copy(String, String) Method
+# File.Copy(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Copies a file.
@@ -23,20 +23,21 @@ Copies a file.
 
 ## Syntax
 ```AL
-[Ok := ]  File.Copy(FromName: String, ToName: String)
+[Ok := ]  File.Copy(FromName: Text, ToName: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *FromName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the file that you want to make a copy of, including its path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.
 -   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
           
+
 *ToName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name that you want to assign to the copy that includes its path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.
@@ -79,5 +80,5 @@ end;
 
 ## See Also
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

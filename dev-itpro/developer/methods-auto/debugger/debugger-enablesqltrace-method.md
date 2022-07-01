@@ -50,5 +50,5 @@ You can also enable and disable SQL tracing by using the **Start Full SQL Tracin
 
 ## See Also
 [Debugger Data Type](debugger-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

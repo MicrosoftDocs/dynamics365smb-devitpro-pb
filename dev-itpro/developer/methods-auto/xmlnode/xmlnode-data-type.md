@@ -3,7 +3,7 @@ title: "XmlNode Data Type"
 description: "Represents a XML node which can either be for instance an XML attribute, an XML element or a XML document."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,10 +48,10 @@ The following methods are available on instances of the XmlNode data type.
 |[IsXmlText()](xmlnode-isxmltext-method.md)|Gets a value indicating whether this node is an XmlText.|
 |[Remove()](xmlnode-remove-method.md)|Removes this node from its parent element.|
 |[ReplaceWith(Any,...)](xmlnode-replacewith-method.md)|Replaces this node with the specified content.|
-|[SelectNodes(String, var XmlNodeList)](xmlnode-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectNodes(String, XmlNamespaceManager, var XmlNodeList)](xmlnode-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectSingleNode(String, var XmlNode)](xmlnode-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[SelectSingleNode(String, XmlNamespaceManager, var XmlNode)](xmlnode-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectNodes(Text, var XmlNodeList)](xmlnode-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectNodes(Text, XmlNamespaceManager, var XmlNodeList)](xmlnode-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectSingleNode(Text, var XmlNode)](xmlnode-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectSingleNode(Text, XmlNamespaceManager, var XmlNode)](xmlnode-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
 |[WriteTo(OutStream)](xmlnode-writeto-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(XmlWriteOptions, OutStream)](xmlnode-writeto-xmlwriteoptions-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(var Text)](xmlnode-writeto-text-method.md)|Serializes and saves the current node to the given variable.|
@@ -59,5 +59,5 @@ The following methods are available on instances of the XmlNode data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

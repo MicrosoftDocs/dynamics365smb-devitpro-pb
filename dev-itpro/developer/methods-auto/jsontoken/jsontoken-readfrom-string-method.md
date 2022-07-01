@@ -1,9 +1,9 @@
 ---
-title: "JsonToken.ReadFrom(String) Method"
+title: "JsonToken.ReadFrom(Text) Method"
 description: "Reads the JSON data from the string into a JsonToken variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonToken.ReadFrom(String) Method
+# JsonToken.ReadFrom(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Reads the JSON data from the string into a JsonToken variable.
@@ -21,7 +21,7 @@ Reads the JSON data from the string into a JsonToken variable.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonToken.ReadFrom(String: String)
+[Ok := ]  JsonToken.ReadFrom(String: Text)
 ```
 ## Parameters
 *JsonToken*  
@@ -29,7 +29,7 @@ Reads the JSON data from the string into a JsonToken variable.
 An instance of the [JsonToken](jsontoken-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The String object from which the JSON data will be read.  
 
 
@@ -60,5 +60,5 @@ end;
 ```
 ## See Also
 [JsonToken Data Type](jsontoken-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -40,5 +40,5 @@ The version of the specified application's metadata.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [ModuleInfo Data Type](moduleinfo-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

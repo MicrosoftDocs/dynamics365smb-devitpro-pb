@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0639"
 description: "'Variant' is not a valid column type for column '{0}' in report '{1}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/13/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,12 +20,12 @@ author: SusanneWindfeldPedersen
 'Variant' is not a valid column type for column '{0}' in report '{1}'.
 
 > [!IMPORTANT]
-> This warning will become an error in Spring 2021.  
+> This warning will become an error with Business Central 2021 release wave 1.  
 
 ## Description
 A report column must not be of the type 'Variant'.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

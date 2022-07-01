@@ -3,7 +3,7 @@ title: "Caption Property"
 description: "Sets the string that is used to identify a control or other object in the user interface."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ Sets the string that is used to identify a control or other object in the user i
 -   Page Part
 -   Page System Part
 -   Page Action
--   Page Action Group
 -   Page Action Separator
+-   Page Action Group
 -   Xml Port
 -   Report
 -   Query
@@ -40,6 +40,7 @@ Sets the string that is used to identify a control or other object in the user i
 -   Report Column
 -   Enum Value
 -   Page View
+-   Report Layout
 -   Profile
 -   Enum Type
 -   Permission Set
@@ -65,6 +66,8 @@ Sets the maximum length of the specific Caption.
 ```AL
 Caption = 'Name';
 ```
+
+Or, with parameters:
 
 ```AL
 Caption = 'Name', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;

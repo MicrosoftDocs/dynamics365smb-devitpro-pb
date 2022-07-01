@@ -1,9 +1,9 @@
 ---
-title: "IsolatedStorage.SetEncrypted(String, String [, DataScope]) Method"
+title: "IsolatedStorage.SetEncrypted(Text, Text [, DataScope]) Method"
 description: "Encrypts and sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.SetEncrypted(String, String [, DataScope]) Method
+# IsolatedStorage.SetEncrypted(Text, Text [, DataScope]) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Encrypts and sets the value associated with the specified key. The input string cannot exceed a length of 215 plain characters; be aware that special characters take up more space.
@@ -21,15 +21,17 @@ Encrypts and sets the value associated with the specified key. The input string 
 
 ## Syntax
 ```AL
-[Ok := ]  IsolatedStorage.SetEncrypted(Key: String, Value: String [, DataScope: DataScope])
+[Ok := ]  IsolatedStorage.SetEncrypted(Key: Text, Value: Text [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The key of the value to set.  
+
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value that will be associated with the specified key.  
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the stored data. If a value is not passed in, the default value DataScope::Module will be used.  
@@ -44,5 +46,5 @@ The scope of the stored data. If a value is not passed in, the default value Dat
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

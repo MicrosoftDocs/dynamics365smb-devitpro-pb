@@ -1,15 +1,13 @@
 ---
     title: India Data migration Toolkit Overview
     description: Specifies India Data Migration Toolkit Overview
-
     author: v-debapd
-
-        ms.topic: overview
+    ms.topic: overview
     ms.devlang: na
     ms.tgt_pltfrm: na
     ms.workload: na
     ms.search.keywords: India, local, IN, English
-    ms.date: 09/01/2021
+    ms.date: 02/18/2022
     ms.author: v-debapd
 
 ---
@@ -38,7 +36,7 @@ For data migration from Business Central April 2019 release to Business Central 
 
 For data migration from customized, Business Central April 2019 release to Business Central 2021 release wave 2 On-Prem, see information,  [Data Migration from Customized Business Central April 2019 release to Business Central 2021 release wave 2 On-Prem](../upgrade/upgrade-to-microsoft-base-app-v19.md)
 
-For data migration from Business Central 2021 release wave 2 On-Prem to Cloud, see information, [Data Migration from Business Central 2021 release wave 2 On-Prem to Cloud](../administration/migration-tool.md)
+For data migration from Business Central 2021 release wave 2 On-Prem to Cloud, see information, [Migrate On-Premises Data to Business Central Online](../administration/migrate-data.md)
 
 For list of deprecated India (IN) localization tables in Business Central 2021 release wave 2, see information, [List of deprecated India (IN) localization tables](../upgrade/india-data-migration-list-of-deprecated-tables.md)
 

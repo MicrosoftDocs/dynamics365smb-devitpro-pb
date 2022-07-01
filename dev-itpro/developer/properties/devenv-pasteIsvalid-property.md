@@ -3,7 +3,7 @@ title: "PasteIsValid Property"
 description: "Sets whether inserting records into this table using the paste command is enabled."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

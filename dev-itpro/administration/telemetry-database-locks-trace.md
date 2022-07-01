@@ -27,6 +27,8 @@ Two types of trace events are emitted to Application Insights:
 
 - The **Database lock timed out** event then triggers one or more **Database lock snapshot** events. **Database lock snapshot** events provide details about SQL sessions that hold database locks at the time of lock timeout, including the session that caused the lock timeout. These events include specific details about the SQL lock request on the database, like the type, status, mode, and the table.
 
+> [!NOTE]
+> In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
 
 > [!TIP]
 > When analyzing database lock timeout telemetry, it's useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/RawData/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
@@ -46,7 +48,7 @@ Occurs when a database lock has timed out.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock. not shown|
@@ -83,7 +85,7 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alExecutingMethodScope|Specifies the AL action that is running the transaction that caused the lock.|
 |alObjectId|Specifies the ID of the running AL object that requested the lock. |
 |alObjectName|Specifies the name of the running AL object that requested the lock.|

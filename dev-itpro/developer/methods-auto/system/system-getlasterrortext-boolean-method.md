@@ -3,7 +3,7 @@ title: "System.GetLastErrorText(Boolean) Method"
 description: "Gets the last error that occurred in the debugger."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,7 +33,7 @@ Exclude sensitive data, such as primary key values, from the error message.
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 
@@ -47,5 +47,5 @@ The result of the [GetLastErrorCode Method](../../methods-auto/system/system-get
 
 ## See Also
 [System Data Type](system-data-type.md)
-[Getting Started with AL](../../devenv-get-started.md)
-[Developing Extensions](../../devenv-dev-overview.md)  
+[Get Started with AL](../../devenv-get-started.md)
+[Developing Extensions](../../devenv-dev-overview.md)

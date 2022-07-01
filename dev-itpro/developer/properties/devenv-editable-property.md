@@ -3,7 +3,7 @@ title: "Editable Property"
 description: "Sets a value that indicates whether a field, page, or control can be edited through the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/10/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -64,10 +64,10 @@ Editable = "Balance Due (LCY)" > "Credit Limit (LCY)"
 > Do not use `CurrPage.Editable` to prevent users from deleting entries. We recommend that you use permissions to control which users can delete data.  
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable and the [InDataSet Attribute](../methods/devenv-indataset-attribute.md) must be defined on the variable.   
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable and the [InDataSet Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute) must be defined on the variable.   
 
 ## See Also
 
 [Properties](devenv-properties.md)   
 [Page Properties](./devenv-properties.md)  
-[InDataSet Property](../methods/devenv-indataset-attribute.md)
+[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)

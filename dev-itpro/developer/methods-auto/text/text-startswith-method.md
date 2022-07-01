@@ -3,7 +3,7 @@ title: "Text.StartsWith(Text) Method"
 description: "Determines whether the beginning of this instance matches a specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Determines whether the beginning of this instance matches a specified string.
 ```AL
 Ok :=   Text.StartsWith(Value: Text)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -44,5 +42,5 @@ The string to compare.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

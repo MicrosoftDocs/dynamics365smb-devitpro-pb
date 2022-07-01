@@ -23,7 +23,7 @@ By specifying HTTP header `Data-Access-Intent: ReadOnly` for GET requests you ca
 
 Use OData transaction `$batch` requests where relevant. They can reduce the number of requests the client needs to do when errors occur. 
 
-For more information, see [Using OData transactional $batch requests](webservices/use-odata-batch.md).
+For more information, see [Using OData transactional $batch requests](/dynamics365/business-central/dev-itpro/webservices/use-odata-batch).
 
 ## Limiting the set (`$filter` or `$top`) if you're using an expensive `$expand` statement
 

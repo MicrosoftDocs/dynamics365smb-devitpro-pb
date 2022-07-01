@@ -201,7 +201,7 @@ In SQL SELECT statements, the Count method corresponds to a COUNT\(\*\) or COUNT
   
 ##  <a name="SQL"></a> Creating queries with aggregates in SQL  
 
-If you're familiar with SQL, then it's helpful to know how the aggregate methods in [!INCLUDE[prod_short](includes/prod_short.md)] relate to SQL statements. To specify an aggregate method in an SQL statement, you add the method to the SELECT statement and then add a GROUP BY clause. To group results on columns, you add the GROUPED BY statement.  
+If you're familiar with SQL, then it's helpful to know how the aggregate methods in [!INCLUDE[prod_short](includes/prod_short.md)] relate to SQL statements. To specify an aggregate method in an SQL statement, you add the method to the SELECT statement and then add a GROUP BY clause.
   
 The following example shows how to use an SQL statement to create an inner join of the Customer table and Sales Line table, and a sum of items for each customer. The result is grouped by the **No.** and **Name** columns.  
   

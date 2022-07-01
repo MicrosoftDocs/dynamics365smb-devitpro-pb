@@ -1,9 +1,9 @@
 ---
-title: "JsonValue.SetValue(String) Method"
+title: "JsonValue.SetValue(Text) Method"
 description: "Set the contents of the JsonValue variable to the JSON representation of the given value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonValue.SetValue(String) Method
+# JsonValue.SetValue(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Set the contents of the JsonValue variable to the JSON representation of the given value.
@@ -21,7 +21,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 
 ## Syntax
 ```AL
- JsonValue.SetValue(Value: String)
+ JsonValue.SetValue(Value: Text)
 ```
 ## Parameters
 *JsonValue*  
@@ -29,7 +29,7 @@ Set the contents of the JsonValue variable to the JSON representation of the giv
 An instance of the [JsonValue](jsonvalue-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
 
 
@@ -41,5 +41,5 @@ The JsonValue will be disconnected from its current JSON tree and the data conta
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

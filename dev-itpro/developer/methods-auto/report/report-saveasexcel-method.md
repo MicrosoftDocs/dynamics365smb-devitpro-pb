@@ -1,9 +1,9 @@
 ---
-title: "Report.SaveAsExcel(Integer, String [, var Record]) Method"
+title: "Report.SaveAsExcel(Integer, Text [, var Record]) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAsExcel(Integer, String [, var Record]) Method
+# Report.SaveAsExcel(Integer, Text [, var Record]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report on the computer that is running the server as a Microsoft Excel (.xls) workbook.
@@ -23,17 +23,19 @@ Saves a report on the computer that is running the server as a Microsoft Excel (
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAsExcel(Number: Integer, FileName: String [, var Record: Record])
+[Ok := ]  Report.SaveAsExcel(Number: Integer, FileName: Text [, var Record: Record])
 ```
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
           
+
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and the name of the file that you want to save the report as. The path must exist, the file must not be used, and the server process must have permission to write to the file. Otherwise, you will get errors.
         
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  
@@ -109,5 +111,5 @@ end;
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

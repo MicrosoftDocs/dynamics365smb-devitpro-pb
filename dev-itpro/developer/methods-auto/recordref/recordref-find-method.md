@@ -1,9 +1,9 @@
 ---
-title: "RecordRef.Find([String]) Method"
+title: "RecordRef.Find([Text]) Method"
 description: "Finds a record in a table based on the values stored in the key fields."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# RecordRef.Find([String]) Method
+# RecordRef.Find([Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Finds a record in a table based on the values stored in the key fields.
@@ -21,7 +21,7 @@ Finds a record in a table based on the values stored in the key fields.
 
 ## Syntax
 ```AL
-[Ok := ]  RecordRef.Find([Which: String])
+[Ok := ]  RecordRef.Find([Which: Text])
 ```
 ## Parameters
 *RecordRef*  
@@ -29,7 +29,7 @@ Finds a record in a table based on the values stored in the key fields.
 An instance of the [RecordRef](recordref-data-type.md) data type.  
 
 *[Optional] Which*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies how to perform the search. The table will be searched until the record is found or there are no more records. Each character in the string can be present only one time. You can use the following characters:
 -   =  search for a record that equals the key values (default)
 -   \>  search for a record that is larger than the key values
@@ -78,5 +78,5 @@ end;
 
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

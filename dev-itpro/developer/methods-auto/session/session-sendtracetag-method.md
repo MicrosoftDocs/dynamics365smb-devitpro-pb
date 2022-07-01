@@ -1,9 +1,9 @@
 ---
-title: "Session.SendTraceTag(String, String, Verbosity, String [, DataClassification]) Method"
+title: "Session.SendTraceTag(Text, Text, Verbosity, Text [, DataClassification]) Method"
 description: "Send a trace tag to the telemetry service."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Session.SendTraceTag(String, String, Verbosity, String [, DataClassification]) Method
+# Session.SendTraceTag(Text, Text, Verbosity, Text [, DataClassification]) Method
 > **Version**: _Available or changed with runtime version 1.0 until version 6.0 where it was deprecated for the following reason: "Use LogMessage instead."_
 
 Send a trace tag to the telemetry service.
@@ -23,27 +23,31 @@ Send a trace tag to the telemetry service.
 
 ## Syntax
 ```AL
- Session.SendTraceTag(Tag: String, Category: String, Verbosity: Verbosity, Message: String [, DataClassification: DataClassification])
+ Session.SendTraceTag(Tag: Text, Category: Text, Verbosity: Verbosity, Message: Text [, DataClassification: DataClassification])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Tag*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The tag.
         
+
 *Category*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The category.
         
+
 *Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
 The verbosity.
         
+
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The message.
         
+
 *[Optional] DataClassification*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
 Classification of data in message.   
@@ -91,5 +95,5 @@ The events emitted by this code will have the events IDs (listed in the order th
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

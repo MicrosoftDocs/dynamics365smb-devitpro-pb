@@ -2,7 +2,7 @@
 title: "Attach and Debug Next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 05/19/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
-If you do not want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. Then debugging starts when the code that the breakpoint is set on is hit. This is particularly useful for debugging Web API sessions. 
+If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. Then debugging starts when the code that the breakpoint is set on is hit. 
 
 > [!NOTE]  
 > To use the attach functionality, you must make sure that your app is published with **Ctrl+F5** first, or with **Alt+Ctrl+F5** for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with **F5**. To debug using attach, you must make sure to debug on a *new* session. Creating a new server session from the client can be achieved for example by launching a new client session. Pressing **F5** (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
@@ -35,7 +35,7 @@ In the attach configuration, the `breakOnNext` setting specifies the next client
             "type": "al",
             "request": "attach",
             "server": "https://localhost",
-            "serverInstance": "BC160",
+            "serverInstance": "BC200",
             "authentication": "Windows",
             "breakOnError": true,
             "breakOnRecordWrite": false,
@@ -65,7 +65,7 @@ The `launch.json` file is now populated with the correct attach configuration se
 3. Set `breakOnNext` to specify the client type on which to break.
 4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
-5. It is important to make sure to publish your app by pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Your app *will not be* published if you only press **F5**.  
+5. It's important to make sure to publish your app by pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Your app *won't be* published if you only press **F5**.  
     > [!IMPORTANT]  
     > If you modify the app code during the debugging session, make sure to re-publish the app using **Ctrl+F5**.
 6. After publishing the app, press **F5** to start a debugging session.  

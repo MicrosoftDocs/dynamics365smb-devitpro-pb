@@ -41,7 +41,7 @@ If the partner cannot find a solution, they can request support from Microsoft. 
 
 ### Extend trials
 
-Another task for a delegated admin is to help with extending trials. For more information, see [Extending trials](tenant-administration.md#extending-trials).  
+Another task for a delegated admin is to help with extending trials. For more information, see [Business Central Trials and Subscriptions](trials-subscriptions.md).  
 
 ### Cleaning up settings
 

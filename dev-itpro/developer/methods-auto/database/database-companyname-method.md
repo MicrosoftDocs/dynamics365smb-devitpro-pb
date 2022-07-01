@@ -3,7 +3,7 @@ title: "Database.CompanyName() Method"
 description: "Gets the current company name."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,10 +28,9 @@ Name :=   Database.CompanyName()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the company, or an empty string if no company has been selected.
 
 
@@ -52,5 +51,5 @@ end;
 ## See Also
 
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

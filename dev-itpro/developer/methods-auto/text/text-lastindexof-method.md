@@ -3,7 +3,7 @@ title: "Text.LastIndexOf(Text [, Integer]) Method"
 description: "Reports the one-based index position of the last occurrence of a specified string in this instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Reports the one-based index position of the last occurrence of a specified strin
 ```AL
 Index :=   Text.LastIndexOf(Value: Text [, StartIndex: Integer])
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -34,6 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 &emsp;Type: [Text](text-data-type.md)  
 The string to seek.
         
+
 *[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The search starting position. The search proceeds from startIndex toward the beginning of this instance.  
@@ -48,5 +47,5 @@ The one-based index of the last occurrence of the specified string in this insta
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

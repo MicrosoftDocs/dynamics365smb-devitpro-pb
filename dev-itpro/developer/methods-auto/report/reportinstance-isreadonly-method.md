@@ -3,7 +3,7 @@ title: "Report.IsReadOnly() Method"
 description: "Gets if the current report's data access intent is readonly."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ DataAccessIntent :=   Report.IsReadOnly()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
@@ -40,5 +39,5 @@ A value specifying the readonly data access intent.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)
-[Getting Started with AL](../../devenv-get-started.md)
+[Get Started with AL](../../devenv-get-started.md)
 [Developing Extensions](../../devenv-dev-overview.md)  

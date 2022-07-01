@@ -1,0 +1,1 @@
+Specifies the publisher of the extension/app.

@@ -3,7 +3,7 @@ title: "System.GetLastErrorCallStack() Method"
 description: "Gets the call stack from where the last error occurred."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,10 +28,9 @@ String :=   System.GetLastErrorCallStack()
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 
-
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 
@@ -72,5 +71,5 @@ When you run codeunit 50002, the message window displays the following:
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

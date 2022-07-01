@@ -1,9 +1,9 @@
 ---
-title: "BigText.AddText(String [, Integer]) Method"
+title: "BigText.AddText(Text [, Integer]) Method"
 description: "Adds a text string to a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BigText.AddText(String [, Integer]) Method
+# BigText.AddText(Text [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a text string to a BigText variable.
@@ -21,7 +21,7 @@ Adds a text string to a BigText variable.
 
 ## Syntax
 ```AL
- BigText.AddText(String: String [, Position: Integer])
+ BigText.AddText(String: Text [, Position: Integer])
 ```
 ## Parameters
 *BigText*  
@@ -29,9 +29,10 @@ Adds a text string to a BigText variable.
 An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The string that will be added to the BigText variable. If this parameter is empty, then the BigText variable is not modified.
         
+
 *[Optional] Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This is an optional parameter that defines the position in the BigText variable where the string is inserted. If this parameter is omitted, then the string is added at the end of the BigText variable. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then the string is added at the end of the BigText variable.  
@@ -103,5 +104,5 @@ MyBigText.AddText('ZZZ', 0); // Returns an error.
 ## See Also
 
 [BigText Data Type](bigtext-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

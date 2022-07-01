@@ -3,7 +3,7 @@ title: "TestField.Caption() Method"
 description: "Gets the current caption of the field as a String."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ Result :=   TestField.Caption()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *TestField*  
 &emsp;Type: [TestField](testfield-data-type.md)  
@@ -33,7 +32,7 @@ An instance of the [TestField](testfield-data-type.md) data type.
 
 ## Return Value
 *Result*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The current caption of the field as a String.
 
 
@@ -70,5 +69,5 @@ end;
 
 ## See Also
 [TestField Data Type](testfield-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

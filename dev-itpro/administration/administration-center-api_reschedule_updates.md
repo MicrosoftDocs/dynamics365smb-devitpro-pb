@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 06/14/2022
 ---
 
 # Reschedule Updates
@@ -20,7 +20,7 @@ Allows for the management of scheduled updates such as rescheduling the update t
 Get information about updates that have already been scheduled for a specific environment.
 
 ```
-GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/upgrade
+GET /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 ### Route Parameters
@@ -64,7 +64,7 @@ Reschedule an update, if able.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/upgrade
+PUT /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/upgrade
 ```
 
 ### Route Parameters
@@ -99,6 +99,6 @@ PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 
 ## See Also
 
-[The Business Central Administration Center API](administration-center-api)  
+[The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
 [Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 

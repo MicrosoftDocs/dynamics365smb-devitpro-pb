@@ -3,7 +3,7 @@ title: "Record.GetView([Boolean]) Method"
 description: "Gets a string that describes the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/12/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,12 +35,12 @@ Indicates whether a reference to the field caption or the field number should be
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

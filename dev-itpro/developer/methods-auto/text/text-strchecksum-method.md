@@ -1,9 +1,9 @@
 ---
-title: "Text.StrCheckSum(String [, String] [, Integer]) Method"
+title: "Text.StrCheckSum(Text [, Text] [, Integer]) Method"
 description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.StrCheckSum(String [, String] [, Integer]) Method
+# Text.StrCheckSum(Text [, Text] [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Calculates a checksum for a string that contains a number. If the source is empty, 0 is returned. Each char in the source and in the weight must be a numeric character 0-9, otherwise an exception is thrown. If the WeightString parameter is shorter then the source, it is padded with '1' up until the length of source. If the WeightString parameter is longer than the source, an exception is thrown.
@@ -21,19 +21,19 @@ Calculates a checksum for a string that contains a number. If the source is empt
 
 ## Syntax
 ```AL
-CheckNumber :=   Text.StrCheckSum(String: String [, WeightString: String] [, Modulus: Integer])
+CheckNumber :=   Text.StrCheckSum(String: Text [, WeightString: Text] [, Modulus: Integer])
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 This string contains the number for which you want to calculate a checksum. You can only enter the numeric characters 0-9 in this string. If you enter anything else, a run-time error will occur. If String is empty, 0 is returned.
         
+
 *[Optional] WeightString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.
         
+
 *[Optional] Modulus*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number that you want to use in the checksum formula. The default value is 10.  
@@ -120,5 +120,5 @@ end;
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

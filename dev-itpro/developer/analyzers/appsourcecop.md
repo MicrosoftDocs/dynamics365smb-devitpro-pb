@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/17/2022
+ms.date: 03/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -87,8 +87,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0074](appsourcecop-as0074.md)|The Obsolete Tag must be the same across branches.|Design|Hidden|
 |[AS0075](appsourcecop-as0075.md)|Obsolete Reason must be set.|Design|Warning|
 |[AS0076](appsourcecop-as0076.md)|Obsolete Tag format.|Design|Hidden|
-|[AS0077](appsourcecop-as0077.md)|Adding a var modifier in events is not allowed|Upgrade|Warning|
-|[AS0078](appsourcecop-as0078.md)|Adding or removing a var modifier in external procedures is not allowed|Upgrade|Warning|
+|[AS0077](appsourcecop-as0077.md)|Adding a var modifier in events is not allowed|Upgrade|Error|
+|[AS0078](appsourcecop-as0078.md)|Adding or removing a var modifier in external procedures is not allowed|Upgrade|Error|
 |[AS0079](appsourcecop-as0079.md)|An affix is required for procedures defined in extension objects.|Extensibility|Warning|
 |[AS0080](appsourcecop-as0080.md)|Fields must not decrease in length|Upgrade|Error|
 |[AS0081](appsourcecop-as0081.md)|InternalsVisibleTo should not be used as a security feature.|Extensibility|Warning|
@@ -111,7 +111,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0098](appsourcecop-as0098.md)|An affix is needed.|Extensibility|Warning|
 |[AS0099](appsourcecop-as0099.md)|The member ID should be within the allowed range|Extensibility|Info|
 |[AS0100](appsourcecop-as0100.md)|The 'application' property in the app.json file must be specified.|Extensibility|Error|
-|[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Warning|
+|[AS0101](appsourcecop-as0101.md)|The 'Isolated' argument cannot be changed, added, or removed.|Upgrade|Error|
+|[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Error|
+|[AS0103](appsourcecop-as0103.md)|Table definitions must have a matching permission set.|Configuration|Warning|
+|[AS0104](appsourcecop-as0104.md)|The extension name is not valid.|Extensibility|Error|
+|[AS0105](appsourcecop-as0105.md)|Object pending obsoletion contains an expired ObsoleteTag.|Design|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -138,8 +142,9 @@ The following table describes the settings in the `AppSourceCop.json` file:
 |obsoleteTagVersion|No|Specifies the next Major.Minor version of the extension in the current branch in order to validate the ObsoleteTag values with AS0072. This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
 |obsoleteTagPattern|No|The Obsolete tag pattern used by AS0076. This should be a valid regular expression. By default, the pattern '(\\d+)\\.(\\d+)' is used.|
 |obsoleteTagPatternDescription|No|A human-readable description for the ObsoleteTagPattern regular expression. This is used in diagnostics reported by AS0076. By default, 'Major.Minor' is used.|
-|obsoleteTagAllowedVersions|No|A comma-separated list of Major.Minor versions that will be allowed as ObsoleteTag values by AS0072. This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
+|obsoleteTagAllowedVersions|No|A comma-separated list of Major.Minor versions that will be allowed as ObsoleteTag values by [AS0072](appsourcecop-as0072.md). This is only relevant when the default obsoleteTagPattern '(\\d+)\\.(\\d+)' is used.|
 |baselinePackageCachePath|No|The path to the folder containing the baseline and its dependencies with which you want to compare the current package for breaking changes. By default, the package cache path for the current project is used (see 'al.packageCachePath' setting).|
+|obsoleteTagMinAllowedMajorMinor|No|The minimum version of ObsoleteTag (Major.Minor) allowed during compilation. Referencing an obsolete pending object with an obsolete tag lower than the specified version will trigger the rule [AS0105](appsourcecop-as0105.md). Note that enabling this setting has a performance impact.|
 
 The `name`, `publisher`, `version` properties are used for specifying a previous version of the current package. This package must be located in the baseline package cache folder of your extension. This cache can be specified using the `baselinePackageCachePath` property. If this property is not specified, the dependency package cache path of the extension will be used instead. The `al.packageCachePath` setting allows you to specify the path to the folder that will act as the cache for the dependencies symbol files used by your project. AppSourceCop will compare the previous version of your extension with its current version and will report any breaking changes introduced by the current package.
 

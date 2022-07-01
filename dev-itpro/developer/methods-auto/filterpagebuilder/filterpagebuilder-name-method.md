@@ -3,7 +3,7 @@ title: "FilterPageBuilder.Name(Integer) Method"
 description: "Gets the name of a table filter control that is included on a filter page based on an index number that is assigned to the filter control."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ The index of a filter control. The value must be in the range 1 to N, where N is
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the filter control.
 
 
@@ -69,5 +69,5 @@ The name of the filter control.
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

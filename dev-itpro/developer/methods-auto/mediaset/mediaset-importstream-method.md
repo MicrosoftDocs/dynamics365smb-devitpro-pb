@@ -1,9 +1,9 @@
 ---
-title: "MediaSet.ImportStream(InStream, String [, String]) Method"
+title: "MediaSet.ImportStream(InStream, Text [, Text]) Method"
 description: "Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# MediaSet.ImportStream(InStream, String [, String]) Method
+# MediaSet.ImportStream(InStream, Text [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a media file, such as a JPEG image, from an InStream object to the MediaSet of record for displaying in the client. The media is imported to the database and included in a MediaSet for the record.
@@ -21,7 +21,7 @@ Adds a media file, such as a JPEG image, from an InStream object to the MediaSet
 
 ## Syntax
 ```AL
-[ID := ]  MediaSet.ImportStream(Stream: InStream, Description: String [, MimeType: String])
+[ID := ]  MediaSet.ImportStream(Stream: InStream, Description: Text [, MimeType: Text])
 ```
 ## Parameters
 *MediaSet*  
@@ -32,12 +32,14 @@ An instance of the [MediaSet](mediaset-data-type.md) data type.
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
 Specifies the InStream object that contains the media that you want to use on the record.
         
+
 *Description*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies text that can be used in the client to describe the media files.
         
+
 *[Optional] MimeType*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.
           
 
@@ -107,5 +109,5 @@ end;
 If you run system table **2000000181 Tenant Media**, you should see the new images in the list.
 ## See Also
 [MediaSet Data Type](mediaset-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

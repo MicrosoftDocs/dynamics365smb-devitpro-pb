@@ -1,9 +1,9 @@
 ---
-title: "Text.InsStr(String, String, Integer) Method"
+title: "Text.InsStr(Text, Text, Integer) Method"
 description: "Inserts a substring into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Text.InsStr(String, String, Integer) Method
+# Text.InsStr(Text, Text, Integer) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Inserts a substring into a string.
@@ -21,19 +21,19 @@ Inserts a substring into a string.
 
 ## Syntax
 ```AL
-NewString :=   Text.InsStr(String: String, SubString: String, Position: Integer)
+NewString :=   Text.InsStr(String: Text, SubString: Text, Position: Integer)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The string into which you want to insert a substring.
         
+
 *SubString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The substring that you want to insert into String.
         
+
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies where to insert SubString. Position must be greater than or equal to 1. If Position is greater than the length of String, then the result is concatenated and copied to NewString.  
@@ -41,7 +41,7 @@ Specifies where to insert SubString. Position must be greater than or equal to 1
 
 ## Return Value
 *NewString*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](text-data-type.md)  
 The input string including the specified substring
 
 
@@ -88,5 +88,5 @@ end;
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.author: a-emniel
 ---
 
 # Offer Name and Offer Summary
@@ -24,7 +23,8 @@ When creating a name for your offer, you can use the following two naming struct
 
     *Example: QR Generator*  
 
-
+> [!NOTE]  
+> The name of your app can not exceed 50 characters.
 
 **How to create a strong app name for your offer**:
 

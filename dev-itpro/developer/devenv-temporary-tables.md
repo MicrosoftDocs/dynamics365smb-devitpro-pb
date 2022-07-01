@@ -108,7 +108,7 @@ For XMLPorts, if the data that you're importing has a different structure than t
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Table Object](devenv-table-object.md)  
 [Temporary Property](./properties/devenv-properties.md)  
 [UseTemporary Property (Report)](properties/devenv-usetemporary-report-property.md)  

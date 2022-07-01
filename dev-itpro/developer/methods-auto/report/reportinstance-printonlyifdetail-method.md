@@ -3,7 +3,7 @@ title: "Report.PrintOnlyIfDetail([Boolean]) Method"
 description: "Gets or sets the current settings of the PrintOnlyIfDetail property."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -70,5 +70,5 @@ IsPrintOnlyIfDetail := Report111.PrintONLYifDETAIL(true);
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

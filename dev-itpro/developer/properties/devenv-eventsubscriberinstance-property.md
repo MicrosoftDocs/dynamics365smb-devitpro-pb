@@ -3,7 +3,7 @@ title: "EventSubscriberInstance Property"
 description: "Specifies how event subscriber functions in a codeunit are bound to the codeunit instance and the events that they subscribe to."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -1,9 +1,9 @@
 ---
-title: "System.CalcDate(String [, Date]) Method"
+title: "System.CalcDate(Text [, Date]) Method"
 description: "Calculates a new date that is based on a date expression and a reference date."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.CalcDate(String [, Date]) Method
+# System.CalcDate(Text [, Date]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Calculates a new date that is based on a date expression and a reference date.
@@ -21,13 +21,13 @@ Calculates a new date that is based on a date expression and a reference date.
 
 ## Syntax
 ```AL
-NewDate :=   System.CalcDate(DateExpression: String [, Date: Date])
+NewDate :=   System.CalcDate(DateExpression: Text [, Date: Date])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *DateExpression*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The date expression can be any length. The string is interpreted from left to right with one subexpression at a time. The following rules describe the valid syntax of date expressions:
 -   DateExpression = [\<Subexpression\>][\<Subexpression\>][\<Subexpression\>]
 -   \<Subexpression\> = [\<Sign\>] \<Term\>-   \<Sign\> = + | -
@@ -41,6 +41,7 @@ These production rules show that date expressions consist of zero, one, two, or 
 -   CW (current week; corresponds to \<Prefix\>\<Unit\>)
 The internal calendar starts on Monday and ends on Sunday. This means that Monday is weekday 1 and Sunday is weekday 7. A run-time error occurs if the syntax of DateExpression is incorrect.
           
+
 *[Optional] Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 Use this optional parameter to define a reference date. The default is the current system date. If you omit this optional value, the current system date is used.  
@@ -126,5 +127,5 @@ The message window displays the following text:
  
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

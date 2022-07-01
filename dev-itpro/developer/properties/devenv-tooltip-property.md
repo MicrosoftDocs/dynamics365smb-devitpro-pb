@@ -1,9 +1,9 @@
 ---
 title: "ToolTip Property"
-description: "Sets whether tooltips are provided for the given control, such as a field or action."
+description: "Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,9 @@ author: SusanneWindfeldPedersen
 # ToolTip Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets whether tooltips are provided for the given control, such as a field or action. The tooltip value is taken from the ToolTipML Property if this property is set.
+Sets the string used for the tooltip of an action, a field, a FactBox, or an activity button.
+	
+In the client, tooltips appear when you point to the caption of the control.
 
 ## Applies to
 -   Page Label
@@ -56,7 +58,7 @@ Sets the maximum length of the specific ToolTip.
 
 ## Remarks
 
-The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages.  
+The default is an empty string, which means there will be no tooltip. According to the user assistance model for [!INCLUDE[prod_short](../includes/prod_short.md)], apps are expected to apply tooltips to controls on pages. Tooltips can be up to 1024 characters long, exceeding this does not throw an error, but the rest of the tooltip is truncated `...`. The best practice is to not exceed 200 characters. For more information, see [Guidelines for tooltip text](../../user-assistance.md#guidelines-for-tooltip-text).
 
 The following example illustrates how you can apply tooltips in an app:  
 
@@ -65,6 +67,17 @@ field("Reward ID";"Reward ID")
 {
     ApplicationArea = All;
     ToolTip = 'Specifies the level of reward that the customer has at this point.';
+}
+```
+
+Or, with parameters:
+
+
+```AL
+field("Reward ID";"Reward ID")
+{
+    ApplicationArea = All;
+    ToolTip = 'Specifies the level of reward that the customer has at this point.', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 100;
 }
 ```
 

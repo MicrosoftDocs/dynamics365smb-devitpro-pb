@@ -1,9 +1,9 @@
 ---
-title: "XmlProcessingInstruction.SetTarget(String) Method"
+title: "XmlProcessingInstruction.SetTarget(Text) Method"
 description: "Sets the target of the processing instruction."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlProcessingInstruction.SetTarget(String) Method
+# XmlProcessingInstruction.SetTarget(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the target of the processing instruction.
@@ -21,7 +21,7 @@ Sets the target of the processing instruction.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlProcessingInstruction.SetTarget(Value: String)
+[Ok := ]  XmlProcessingInstruction.SetTarget(Value: Text)
 ```
 ## Parameters
 *XmlProcessingInstruction*  
@@ -29,7 +29,7 @@ Sets the target of the processing instruction.
 An instance of the [XmlProcessingInstruction](xmlprocessinginstruction-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The new target of the processing instruction.  
 
 
@@ -42,5 +42,5 @@ The new target of the processing instruction.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlProcessingInstruction Data Type](xmlprocessinginstruction-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

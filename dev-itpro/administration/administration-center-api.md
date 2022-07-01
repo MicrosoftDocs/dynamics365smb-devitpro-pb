@@ -1,6 +1,6 @@
 ---
-title: Business Central Administration Center API | Microsoft Docs
-description: Learn about the Business Central administration center API.
+title: Business Central Administration Center API 
+description: Get introduced to the Business Central administration center API.
 author: jswymer
 ms.topic: conceptual
 ms.devlang: na
@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 06/14/2022
 ---
 
 # The Business Central Admin Center API

@@ -3,7 +3,7 @@ title: "Query.GetFilter(Any) Method"
 description: "Returns the filters that are set on the field of a specified column in the query."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,14 +35,14 @@ The name of the column in the query. A column name is defined by the Name Proper
 
 ## Return Value
 *Filter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The filters of the column.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The **GetFilter** method returns the filters that are currently set for a data column or filter row by the [SetFilter Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SetRange Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md) method, and the column's [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GetFilter** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/methods-auto/query/devenv-dataitemtablefilter-property) or global filters that are set by the **FilterGroup** method.  
+ The **GetFilter** method returns the filters that are currently set for a data column or filter row by the [SetFilter Method \(Query\)](../../methods-auto/query/queryinstance-setfilter-method.md) method, [SetRange Method \(Query\)](../../methods-auto/query/queryinstance-setrange-method.md) method, and the column's [ColumnFilter Property](../../properties/devenv-columnfilter-property.md). The **GetFilter** method does not return filters that are set on a column's source field by the [DataItemTableFilter Property](/dynamics365/business-central/dev-itpro/developer/properties/devenv-dataitemtablefilter-property) or global filters that are set by the **FilterGroup** method.  
 
   
  You can call the **GetFilter** method multiple times and at any point in the code. If you call the **GetFilter** method before the **SetFilter** or **SetRange** method, then the **GetFilter** method returns only filters on the column that are set by the column's ColumnFilter property.  
@@ -101,5 +101,5 @@ end;
 
 ## See Also
 [Query Data Type](query-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

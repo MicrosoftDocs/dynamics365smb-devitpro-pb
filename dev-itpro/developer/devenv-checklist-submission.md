@@ -112,9 +112,7 @@ Please include app and all library apps in both previousApps and apps and please
 > [!NOTE]  
 > It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
-> You can find resources for how to set up a build pipeline, which performs all these steps here: [https://aka.ms/cicdhol](https://aka.ms/cicdhol) and you can find sample repositories, performing these steps here:
-> - [https://dev.azure.com/businesscentralapps/HelloWorld.AppSource](https://dev.azure.com/businesscentralapps/HelloWorld.AppSource) (for Azure DevOps)
-> - [https://github.com/BusinessCentralApps/HelloWorld.AppSource](https://github.com/BusinessCentralApps/HelloWorld.AppSource) (for GitHub Actions)
+> You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
 ## Manual validation performed by the Business Central validation team
 
@@ -135,7 +133,7 @@ The manual test validation document is run manually and if the document doesn't 
 
 Detailed validation results are automatically logged to the ApplicationInsights storage account specified by instrumentation key in the manifest of the main extension in your submission.
 
-In order to enable partner telemetry in your extension, you must specify the `applicationInsightsKey` property or the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about these properties, see [JSON files](devenv-json-files.md).
+In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
@@ -167,7 +165,7 @@ If your extension's manifest is defined as follows, the minimum release where yo
 
 The minimum release of the extension is then 18.0.
 
-Note that for AppSource extensions, it is now required to use the `application` property instead of explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](analyzers/appsourcecop-as0085-applicationdependencymustbeused.md).
+Note that for AppSource extensions, it is now required to use the `application` property instead of explicit dependencies on the `Base Application` and `System Application`. For more information, see [The Microsoft_Application.app File](devenv-application-app-file.md) and [AS0085](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop).
 
 <!-- ### How to specify a maximum release for your extension?
 
@@ -202,4 +200,4 @@ In this case, you can create a version 1.0.0.1 of your extension and submit it w
 -->
 
 ## See Also
-[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)  
+[Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)

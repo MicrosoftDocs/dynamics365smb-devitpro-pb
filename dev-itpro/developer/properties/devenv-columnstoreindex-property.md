@@ -3,7 +3,7 @@ title: "ColumnStoreIndex Property"
 description: "Sets the fields that are added to the ColumnStore index inside SQL Server."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/08/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,6 @@ Using a nonclustered columnstore index can improve the performance for analytica
 For more information, see [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Table Keys](../devenv-table-keys.md)  

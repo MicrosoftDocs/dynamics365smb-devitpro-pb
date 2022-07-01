@@ -3,7 +3,7 @@ title: "ErrorInfo.Callstack() Method"
 description: "Specifies a callstack where the ErrorInfo was collected."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/24/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ Callstack :=   ErrorInfo.Callstack()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *ErrorInfo*  
 &emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
@@ -33,7 +32,7 @@ An instance of the [ErrorInfo](errorinfo-data-type.md) data type.
 
 ## Return Value
 *Callstack*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The callstack where the ErrorInfo was collected.
 
 
@@ -41,6 +40,6 @@ The callstack where the ErrorInfo was collected.
 ## See Also
 
 [Collecting Errors](../../devenv-error-collection.md)  
-[ErrorInfo Data Type](errorinfo-data-type.md)
-[Getting Started with AL](../../devenv-get-started.md)
+[ErrorInfo Data Type](errorinfo-data-type.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

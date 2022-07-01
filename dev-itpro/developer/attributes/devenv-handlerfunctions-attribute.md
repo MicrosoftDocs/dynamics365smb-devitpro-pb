@@ -3,7 +3,7 @@ title: "HandlerFunctions Attribute"
 description: "Specifies the handler methods that are used by the test method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,12 +30,12 @@ Specifies the handler methods that are used by the test method.
 ## Syntax
 
 ```AL
-[HandlerFunctions(HandlerNames: String)]
+[HandlerFunctions(HandlerNames: Text)]
 ```
 
 ### Arguments
 *HandlerNames*  
-&emsp;Type: [String](../methods-auto/string/string-data-type.md)  
+&emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
 The names of the handler methods used by the test method.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -70,5 +70,5 @@ end
 ```
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

@@ -1,9 +1,9 @@
 ---
-title: "Report.SaveAsXml(String) Method"
+title: "Report.SaveAsXml(Text) Method"
 description: "Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SAVEASXML method."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAsXml(String) Method
+# Report.SaveAsXml(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SAVEASXML method. The first line of code is the syntax for an instance method call. The second line of code is the syntax for a static method call.
@@ -23,7 +23,7 @@ Saves the resulting data set of a query as an .xml file.The following code shows
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAsXml(FileName: String)
+[Ok := ]  Report.SaveAsXml(FileName: Text)
 ```
 ## Parameters
 *Report*  
@@ -31,7 +31,7 @@ Saves the resulting data set of a query as an .xml file.The following code shows
 An instance of the [Report](report-data-type.md) data type.  
 
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path and name of the file that you want to save the query to.
           
 
@@ -109,5 +109,5 @@ end;
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

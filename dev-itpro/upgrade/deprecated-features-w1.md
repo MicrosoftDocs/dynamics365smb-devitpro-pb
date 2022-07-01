@@ -1,5 +1,5 @@
 ---
-title: "Deprecated Features in W1"
+title: Deprecated Features in the Base App
 description: describes the features that have been moved, removed, or replaced in the W1 version 
 author: bholtorf
 ms.custom: na
@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Deprecated Features in W1
+# Deprecated Features in the Base App
 
 This article describes the features that have been moved, removed, or replaced in the W1 version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -23,6 +23,16 @@ The following feature is marked as `obsolete:pending` in 2022 release wave 1.
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).<br><br> Currently, we expect to fully remove support for XBRL in 2023 release wave 1.|
+
+### Intercompany Setup page
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We have consolidated settings for setting up intercompany capabilities on a single page, and have added a new feature for automatically accepting intercompany transactions in general journals. The current **Intercompany Setup** page (page 621) is replaced with a new **Intercompany Setup** page (page 653). |
+
+### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In April 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
 
 ## Changes in 2021 release wave 2
 
@@ -40,7 +50,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Moved, Removed, or Replaced? |Why?|
 |---------|---------|
-|Removed | The ability to use client secret Service-to-Service authentication to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse will be removed for online tenants hosted by Microsoft in March 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in client secret Service-to-Service authentication 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](https://go.microsoft.com/fwlink/?linkid=2167233). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
+|Removed | The ability to use client secret Service-to-Service authentication to connect [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with Dataverse will be removed for online tenants hosted by Microsoft in March 2022. To further strengthen security, we introduced the ability to use certificate-based authentication in client secret Service-to-Service authentication 2021 release wave 1 (version 18 and later). Existing users can easily switch to certificate-based authentication. For more information, see [Upgrade Connections from Business Central Online to Use Certificate-Based Authentication](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/upgrade-certificate-based-service-to-service-authentication-dataverse-dynamics-365-integration). On-premises customers, and online tenants that are hosted by ISVs, can continue using client secret authentication for their connections to Dataverse.|
 
 ### Legacy Outlook add-in for synchronizing data
 
@@ -111,6 +121,25 @@ Some features are available only under specific circumstances, or not at all int
 
 ## See Also
 
+[Deprecated Features in the Platform - Clients, Server, and Database](deprecated-features-platform.md)  
+[Deprecated Features in the Austrian Version](deprecated-features-at.md)  
+[Deprecated Features in the Belgian Version](deprecated-features-be.md)  
+[Deprecated Features in the Canadian Version](deprecated-features-ca.md)  
+[Deprecated Features in the Czech Version](deprecated-features-cz.md)  
+[Deprecated Features in the Dutch Version](deprecated-features-nl.md)  
+[Deprecated Features in the Finnish Version](deprecated-features-fi.md)  
+[Deprecated Features in the German Version](deprecated-features-de.md)  
+[Deprecated Features in the Icelandic Version](deprecated-features-is.md)  
+[Deprecated Features in the Italian Version](deprecated-features-it.md)  
+[Deprecated Features in the Mexican Version](deprecated-features-mx.md)  
+[Deprecated Features in the Norwegian Version](deprecated-features-no.md)  
+[Deprecated Features in the Russian Version](deprecated-features-ru.md)  
+[Deprecated Features in the Swedish Version](deprecated-features-se.md)  
+[Deprecated Features in the Swiss Version](deprecated-features-ch.md)  
+[Deprecated Features in the UK Version](deprecated-features-uk.md)  
+[Deprecated Features in the United States Version](deprecated-features-us.md)  
+[Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](deprecated-fields.md)
+[Deprecated Tables](deprecated-tables.md)  
 [AlAppExtensions repository](https://github.com/microsoft/ALAppExtensions)  
 [Best Practices for Deprecation of Code in the Base App](../developer/devenv-deprecation-guidelines.md)  
-[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)  
+[Microsoft Timeline for Deprecating Code in Business Central](../developer/devenv-deprecation-timeline.md)

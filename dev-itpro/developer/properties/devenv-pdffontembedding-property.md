@@ -3,7 +3,7 @@ title: "PdfFontEmbedding Property"
 description: "Specifies whether fonts are embedded in PDF files that are generated for reports."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,5 +33,5 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

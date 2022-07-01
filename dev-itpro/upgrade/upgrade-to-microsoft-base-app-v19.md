@@ -189,7 +189,7 @@ You'll create two versions of this extension. The first version contains the tab
 
 5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 19 DVD.
 
-   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+   For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
@@ -272,11 +272,11 @@ You'll create two versions of this extension. The first version contains the tab
 
     |Table|File|Modifications|
     |-----|----|-------------|
-    |table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al|Remove `TableRelation =` lines. |
-    |table 265 "Document Entry"| DocumentEntry.Table.al||
-    |table 338 "Entry Summary" |EntrySummary.Table.al|Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`|
-    |table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al||
-    |table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al ||
+    |table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al|Remove any `TableRelation =` lines. |
+    |table 265 "Document Entry"| DocumentEntry.Table.al|Remove any `TableRelation =` lines. |
+    |table 338 "Entry Summary" |EntrySummary.Table.al|Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`<br /><br />Remove any `TableRelation =` lines. |
+    |table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al|Remove any `TableRelation =` lines. |
+    |table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al |Remove any `TableRelation =` lines. |
 
     Starting in version 18, these tables have been changed to temporary tables. For now, you'll have to include these objects in the table migration extension; otherwise you'll have problems syncing the extension later.
 4. Increase the `version` in the app.json file.
@@ -326,6 +326,9 @@ $AddinsFolder = "C:\Program Files\Microsoft Dynamics 365 Business Central\190\Se
 
     Instead of disabling encryption, you can export the current encryption key, which you'll then import after upgrade. However, we recommend disabling encryption before upgrading.
 3. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 14 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+   
 4. (Single-tenant only) Uninstall all extensions from the tenants.
 
     To uninstall an extension, you use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet.  For example, you can uninstall all extensions with a single command:
@@ -449,7 +452,7 @@ In this task, you'll publish the extensions configured as DestinationAppsForMigr
     - **Base Application** extension
     - Customization extensions (if any).
 
-    This step publishes the extensions you created in Task 3. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
+    This step publishes the extensions you created in Task 4. Publish the extensions using the Publish-NAVApp, like in the previous steps. Except if the extensions aren't signed, use the `-SkipVerification` switch parameter.
 
 3. Restart the server instance.
 
@@ -543,7 +546,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 13: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions that you created in **Task 4**.
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in **Task 3**, not the empty versions that you created in **Task 4**.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 
@@ -664,23 +667,24 @@ Run the data upgrade on the extensions in the following order:
 3. Install the Microsoft Application extension
 4. Upgrade customization extensions, Microsoft, and third-party extensions.
 
-  > [!NOTE]
-  >
-  > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
-  >
-  > - Install the QR Generator.
-  > - Upgrade the Tax Engine extension.
-  > - Upgrade the India Tax Base extension.
-  > - Upgrade the India GST extension.
-  > - Upgrade the India Gate Entry extension.
-  > - Upgrade the India TCS extension.
-  > - Upgrade the India TDS extension.
-  > - Upgrade the India Voucher Interface extension.
-  > - Upgrade the Fixed Asset Depreciation for India extension.
-  > - Install the India Reports extension.
-  > - Upgrade the India Data Migration.
+   > [!NOTE]
+   >
+   > If you are upgrading from an India (IN) version of Dynamics NAV 2016, you must upgrade and install the India extensions.
+   >
+   > - Install the QR Generator.
+   > - Upgrade the Tax Engine extension.
+   > - Upgrade the India Tax Base extension.
+   > - Upgrade the India GST extension.
+   > - Upgrade the India Gate Entry extension.
+   > - Upgrade the India TCS extension.
+   > - Upgrade the India TDS extension.
+   > - Upgrade the India Voucher Interface extension.
+   > - Upgrade the Fixed Asset Depreciation for India extension.
+   > - Install the India Reports extension.
+   > - Upgrade the India Data Migration.
 
    For customization extensions, only do this step for those extensions that have an empty version currently installed on the tenant (see **Task 10**). If you have a customization extension for which you didn't create and publish an empty version, complete the next step to install these extensions.
+
 5. Install remaining customization extensions for which you didn't create and publish an empty version.
 
 ## Task 18: Upgrade control add-ins

@@ -3,7 +3,7 @@ title: "XmlAttribute Data Type"
 description: "Represents an XML attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +24,9 @@ The following methods are available on the XmlAttribute data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Create(String, String)](xmlattribute-create-string-string-method.md)|Creates an XmlAttribute node.|
-|[Create(String, String, String)](xmlattribute-create-string-string-string-method.md)|Creates an XmlAttribute node.|
-|[CreateNamespaceDeclaration(String, String)](xmlattribute-createnamespacedeclaration-method.md)|Creates an attribute that represents a namespace declaration.|
+|[Create(Text, Text)](xmlattribute-create-string-string-method.md)|Creates an XmlAttribute node.|
+|[Create(Text, Text, Text)](xmlattribute-create-string-string-string-method.md)|Creates an XmlAttribute node.|
+|[CreateNamespaceDeclaration(Text, Text)](xmlattribute-createnamespacedeclaration-method.md)|Creates an attribute that represents a namespace declaration.|
 
 The following methods are available on instances of the XmlAttribute data type.
 
@@ -44,11 +44,11 @@ The following methods are available on instances of the XmlAttribute data type.
 |[NamespaceUri()](xmlattribute-namespaceuri-method.md)|Gets the namespace URI of the attribute.|
 |[Remove()](xmlattribute-remove-method.md)|Removes this node from its parent element.|
 |[ReplaceWith(Any,...)](xmlattribute-replacewith-method.md)|Replaces this node with the specified content.|
-|[SelectNodes(String, var XmlNodeList)](xmlattribute-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectNodes(String, XmlNamespaceManager, var XmlNodeList)](xmlattribute-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectSingleNode(String, var XmlNode)](xmlattribute-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[SelectSingleNode(String, XmlNamespaceManager, var XmlNode)](xmlattribute-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[Value([String])](xmlattribute-value-method.md)|Gets or sets the value of the attribute.|
+|[SelectNodes(Text, var XmlNodeList)](xmlattribute-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectNodes(Text, XmlNamespaceManager, var XmlNodeList)](xmlattribute-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectSingleNode(Text, var XmlNode)](xmlattribute-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectSingleNode(Text, XmlNamespaceManager, var XmlNode)](xmlattribute-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[Value([Text])](xmlattribute-value-method.md)|Gets or sets the value of the attribute.|
 |[WriteTo(OutStream)](xmlattribute-writeto-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(XmlWriteOptions, OutStream)](xmlattribute-writeto-xmlwriteoptions-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(var Text)](xmlattribute-writeto-text-method.md)|Serializes and saves the current node to the given variable.|
@@ -56,5 +56,5 @@ The following methods are available on instances of the XmlAttribute data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

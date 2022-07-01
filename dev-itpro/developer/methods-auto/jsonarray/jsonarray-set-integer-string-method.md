@@ -1,9 +1,9 @@
 ---
-title: "JsonArray.Set(Integer, String) Method"
+title: "JsonArray.Set(Integer, Text) Method"
 description: "Replaces the value at the given index with a new value."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonArray.Set(Integer, String) Method
+# JsonArray.Set(Integer, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Replaces the value at the given index with a new value.
@@ -21,7 +21,7 @@ Replaces the value at the given index with a new value.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonArray.Set(Index: Integer, Result: String)
+[Ok := ]  JsonArray.Set(Index: Integer, Result: Text)
 ```
 ## Parameters
 *JsonArray*  
@@ -31,8 +31,9 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
   
+
 *Result*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
 
 
@@ -45,5 +46,5 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

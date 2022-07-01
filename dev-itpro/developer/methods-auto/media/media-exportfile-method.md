@@ -1,9 +1,9 @@
 ---
-title: "Media.ExportFile(String) Method"
+title: "Media.ExportFile(Text) Method"
 description: "Exports the media object (such as an image) that is currently used on record to a file on your computer or network."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Media.ExportFile(String) Method
+# Media.ExportFile(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Exports the media object (such as an image) that is currently used on record to a file on your computer or network. On the record, the media object is referenced in a Media data type field.
@@ -23,7 +23,7 @@ Exports the media object (such as an image) that is currently used on record to 
 
 ## Syntax
 ```AL
-[Result := ]  Media.ExportFile(Filename: String)
+[Result := ]  Media.ExportFile(Filename: Text)
 ```
 ## Parameters
 *Media*  
@@ -31,7 +31,7 @@ Exports the media object (such as an image) that is currently used on record to 
 An instance of the [Media](media-data-type.md) data type.  
 
 *Filename*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the full path and name of the file to create for the exported media.  
 
 
@@ -76,5 +76,5 @@ end;
 
 ## See Also
 [Media Data Type](media-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

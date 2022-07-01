@@ -1,9 +1,9 @@
 ---
-title: "File.Write(String) Method"
+title: "File.Write(Text) Method"
 description: "Writes to an MS-DOS encoded file or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Write(String) Method
+# File.Write(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Writes to an MS-DOS encoded file or binary file.
@@ -23,7 +23,7 @@ Writes to an MS-DOS encoded file or binary file.
 
 ## Syntax
 ```AL
- File.Write(Value: String)
+ File.Write(Value: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -33,7 +33,7 @@ Writes to an MS-DOS encoded file or binary file.
 An instance of the [File](file-data-type.md) data type.  
 
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The data that you want to write to the file.  
 
 
@@ -77,5 +77,5 @@ end;
 
 ## See Also
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

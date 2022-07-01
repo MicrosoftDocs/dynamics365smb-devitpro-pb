@@ -60,7 +60,7 @@ Typically this situation is the result of the production environment being copie
 In some cases, a customer's production environment that includes a per-tenant extension cannot be upgraded automatically by Microsoft. In those cases Microsoft contacts the reselling partner and provides guidance for how to update the extension. However, if the extension remains impossible to upgrade, Microsoft will wait for 90 days and then uninstall the extension and force-upgrade the tenant.  
 
 ## See Also
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [FAQ for Developing in AL](devenv-dev-faq.md)  
 [Using Designer](devenv-inclient-designer.md)  

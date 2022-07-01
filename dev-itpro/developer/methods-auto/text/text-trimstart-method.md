@@ -3,7 +3,7 @@ title: "Text.TrimStart([Text]) Method"
 description: "Removes all leading occurrences of a set of characters specified in an array from the current Text object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Removes all leading occurrences of a set of characters specified in an array fro
 ```AL
 Result :=   Text.TrimStart([Chars: Text])
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -44,5 +42,5 @@ A copy of this string without all leading occurrences of the characters specifie
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

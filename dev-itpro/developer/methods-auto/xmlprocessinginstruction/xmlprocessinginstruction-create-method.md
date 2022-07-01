@@ -1,9 +1,9 @@
 ---
-title: "XmlProcessingInstruction.Create(String, String) Method"
+title: "XmlProcessingInstruction.Create(Text, Text) Method"
 description: "Creates an XmlProcessingInstruction node."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlProcessingInstruction.Create(String, String) Method
+# XmlProcessingInstruction.Create(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates an XmlProcessingInstruction node.
@@ -21,15 +21,16 @@ Creates an XmlProcessingInstruction node.
 
 ## Syntax
 ```AL
-XmlProcessingInstruction :=   XmlProcessingInstruction.Create(Target: String, Data: String)
+XmlProcessingInstruction :=   XmlProcessingInstruction.Create(Target: Text, Data: Text)
 ```
 ## Parameters
 *Target*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The target of the processing instruction.
         
+
 *Data*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The content of the processing instruction, excluding the target.  
 
 
@@ -42,5 +43,5 @@ The created XmlProcessingInstruction node.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlProcessingInstruction Data Type](xmlprocessinginstruction-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -1,9 +1,9 @@
 ---
-title: "XmlCData.SelectNodes(String, var XmlNodeList) Method"
+title: "XmlCData.SelectNodes(Text, var XmlNodeList) Method"
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# XmlCData.SelectNodes(String, var XmlNodeList) Method
+# XmlCData.SelectNodes(Text, var XmlNodeList) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Selects a list of nodes matching the XPath expression.
@@ -21,7 +21,7 @@ Selects a list of nodes matching the XPath expression.
 
 ## Syntax
 ```AL
-[Ok := ]  XmlCData.SelectNodes(XPath: String, var NodeList: XmlNodeList)
+[Ok := ]  XmlCData.SelectNodes(XPath: Text, var NodeList: XmlNodeList)
 ```
 ## Parameters
 *XmlCData*  
@@ -29,9 +29,10 @@ Selects a list of nodes matching the XPath expression.
 An instance of the [XmlCData](xmlcdata-data-type.md) data type.  
 
 *XPath*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The XPath expression.
         
+
 *NodeList*  
 &emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)  
 An XmlNodeList containing a collection of nodes matching the XPath expression.  
@@ -46,5 +47,5 @@ An XmlNodeList containing a collection of nodes matching the XPath expression.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlCData Data Type](xmlcdata-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -3,7 +3,7 @@ title: "Compiler Error AL0171"
 description: "The property value '{0}' on property '{1}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ The specified property value is not valid. For more information, refer to the pr
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

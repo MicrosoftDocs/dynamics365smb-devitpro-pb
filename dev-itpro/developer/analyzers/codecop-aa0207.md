@@ -48,5 +48,5 @@ Make the method local by adding the keyword `local`.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

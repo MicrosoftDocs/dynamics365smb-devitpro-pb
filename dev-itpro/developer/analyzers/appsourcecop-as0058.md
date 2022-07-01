@@ -34,11 +34,11 @@ For more information about the usage of AssertError, see:
 Error handling in production code must be done using Try Methods.
 
 For more information, see:
-- [TryFunction attribute](../methods/devenv-tryfunction-attribute.md)
+- [TryFunction attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute)
 - [Handling Errors by Using Try Methods](../devenv-handling-errors-using-try-methods.md)
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [CodeCop AA0161](codecop-aa0161.md)

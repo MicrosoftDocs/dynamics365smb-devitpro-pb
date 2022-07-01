@@ -3,7 +3,7 @@ title: "Text.MaxStrLen(Variant) Method"
 description: "Gets the maximum defined length of a variant variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,8 +23,6 @@ Gets the maximum defined length of a variant variable.
 ```AL
 MaxLength :=   Text.MaxStrLen(Variant: Variant)
 ```
-> [!NOTE]
-> This method can be invoked without specifying the data type name.
 ## Parameters
 *Variant*  
 &emsp;Type: [Variant](../variant/variant-data-type.md)  
@@ -70,5 +68,5 @@ end;
 ## See Also
 
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

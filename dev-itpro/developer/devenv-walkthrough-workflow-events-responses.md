@@ -92,7 +92,7 @@ codeunit 50101 MyWorkflowEvents
 
 1. Create another method in the codeunit. Name it to reflect that it is used to add the workflow event to the library, such as `AddMyWorkflowEventsToLibrary`.  
 
-    This method will subscribe to the `OnAddWorkflowEventsToLibrary` method in the `Workflow Event Handling` codeunit in the base application, so you must set the [EventSubscriber](methods/devenv-eventsubscriber-attribute.md) attribute, and you must add code that handles the event.
+    This method will subscribe to the `OnAddWorkflowEventsToLibrary` method in the `Workflow Event Handling` codeunit in the base application, so you must set the [EventSubscriber](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-eventsubscriber-attribute) attribute, and you must add code that handles the event.
 
 The following code illustrates the new method in the `MyWorkflowEvents` codeunit:
 
@@ -468,5 +468,5 @@ You have now enabled a new workflow scenario by implementing the required workfl
 [Table Extension Object](devenv-table-ext-object.md)  
 [Codeunit Object](devenv-codeunit-object.md)  
 [Table Object](devenv-table-object.md)  
-[Getting Started with AL](devenv-get-started.md)  
-[Development and Administration for Dynamics 365 Business Central](../index.md)  
+[Get Started with AL](devenv-get-started.md)  
+[Development and Administration for Dynamics 365 Business Central](../index.md)

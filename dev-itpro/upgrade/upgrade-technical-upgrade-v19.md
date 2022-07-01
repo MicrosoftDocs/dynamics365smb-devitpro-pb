@@ -145,7 +145,9 @@ In this task, you prepare the application and tenant databases for the upgrade.
 
 3. (Single-tenant only) Uninstall all extensions from the old tenants.
 
-    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for the previous version, like 18, as an administrator. Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
+    Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for the previous version, like 18, as an administrator. [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
+    
+    Use the [Uninstall-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp) cmdlet to uninstall an extension. For example, together with the Get-NAVAppInfo cmdlet, you can uninstall all extensions with a single command:
 
     ```powershell 
     Get-NAVAppInfo -ServerInstance $OldBcServerInstance  | % { Uninstall-NAVApp -ServerInstance $OldBcServerInstance -Name $_.Name -Version $_.Version }
@@ -183,6 +185,8 @@ This task runs a technical upgrade on the application database. A technical upgr
 > The conversion does not modify the application objects, but it will remove any modifications that you have made to system tables. After the conversion you will no longer be able to use it with current version.
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 19.0 as an administrator.
+
+   [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
 
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the conversion. In a multitenant deployment, run this cmdlet against the application database.
 
@@ -340,7 +344,22 @@ In this task, you reinstall the same extensions that were installed on the tenan
 
 To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp). For example:
 
-1. Install the Application extension.
+1. If your solution uses the System Application, install this first.
+
+    ```powershell 
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "System Application" -Version $OldVersion
+    ```
+
+    Replace `<extension version>` with the exact version of the published System Application.
+
+2. Install the Base Application.
+
+    ```powershell
+    Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Base Application" -Version $OldVersion
+    ```
+
+    Replace `<extension version>` with the exact version of the published System Application.
+3. Install the Application extension.
 
     ```powershell
     Install-NAVApp -ServerInstance $NewBcServerInstance -Name "Application" -Version $OldVersion
@@ -349,7 +368,7 @@ To install an extension, you use the [Install-NAVApp cmdlet](/powershell/module/
     Replace `<extension version>` with the exact version of the published Application extension.
 
     For more information about the Application extension, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
-3. Install other extensions, including Microsoft and third-party extensions.
+4. Install other extensions, including Microsoft and third-party extensions.
 
     ```powershell
     Install-NAVApp -ServerInstance $NewBcServerInstance -Name $ExtName -Version $ExtVersion

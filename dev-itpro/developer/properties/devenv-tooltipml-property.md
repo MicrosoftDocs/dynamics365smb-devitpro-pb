@@ -1,9 +1,9 @@
 ---
 title: "ToolTipML Property"
-description: "Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button."
+description: "Sets the multilanguage string used for the tooltip of an action, a field, a FactBox, or an activity button."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,9 @@ author: SusanneWindfeldPedersen
 # ToolTipML Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the text used for the tooltip of an action, a field, a FactBox, or an activity button. In the client, tooltips appear when you point to caption of the control.
+Sets the multilanguage string used for the tooltip of an action, a field, a FactBox, or an activity button.
+	
+In the client, tooltips appear when you point to the caption of the control.
 
 ## Applies to
 -   Page Label

@@ -1,9 +1,9 @@
 ---
-title: "System.ImportStreamWithUrlAccess(InStream, String [, Integer]) Method"
+title: "System.ImportStreamWithUrlAccess(InStream, Text [, Integer]) Method"
 description: "Imports an object into a media container to be used in a temporary URL with a default expiration time."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.ImportStreamWithUrlAccess(InStream, String [, Integer]) Method
+# System.ImportStreamWithUrlAccess(InStream, Text [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Imports an object into a media container to be used in a temporary URL with a default expiration time.
@@ -23,7 +23,7 @@ Imports an object into a media container to be used in a temporary URL with a de
 
 ## Syntax
 ```AL
-ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: String [, MinutesToExpire: Integer])
+ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: Text [, MinutesToExpire: Integer])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -32,10 +32,12 @@ ID :=   System.ImportStreamWithUrlAccess(InStream: InStream, Filename: String [,
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
 Input stream that contains the object to store as a media object.
         
+
 *Filename*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 File name to associate with the created media object.
         
+
 *[Optional] MinutesToExpire*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Number of minutes after which the object will expire.  
@@ -50,5 +52,5 @@ The ID of the media container, if the import is successful.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

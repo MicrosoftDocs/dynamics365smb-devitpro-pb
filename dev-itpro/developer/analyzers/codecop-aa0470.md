@@ -37,5 +37,5 @@ MissingNodeErr: Label 'Cannot find an XML node that matches %1 or %2.', Comment 
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

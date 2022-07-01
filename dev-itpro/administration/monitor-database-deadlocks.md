@@ -1,5 +1,6 @@
 ---
 title: "Monitoring SQL Database Deadlocks"
+description: Read about how you can configure Business Central on-premises to log deadlocks that occur in the SQL database.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -17,6 +18,7 @@ Deadlocks can prevent users from completing tasks in the [!INCLUDE[prod_short](.
 For general information about deadlocks, see [Detecting and Ending Deadlocks](/previous-versions/sql/sql-server-2008-r2/ms178104(v=sql.105)).
 
 ## Setting Up Deadlock Logging
+
 Setting up deadlock logging requires you to configure the SQL Server instance and the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 **Note:**  If you installed the [!INCLUDE[server](../developer/includes/server.md)] and database components by using the **Install Demo** option in the [!INCLUDE[nav_setup](../developer/includes/nav_setup_md.md)], then deadlock logging is set up by default.   
@@ -42,7 +44,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
 
     The event_file target writes event session output from a buffer to a disk file that you specify. There are two ways to do this:
     - From Object Explorer, open the session's **Properties**, and then on the **Data Storage** page, add an **event_file** type target.  
-    - Using a query, run the [ALTER EVENT SESSION](/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017) transact-sql statement. For example:
+    - Using a query, run the [ALTER EVENT SESSION](/sql/t-sql/statements/alter-event-session-transact-sql?view=sql-server-2017&preserve-view=true) transact-sql statement. For example:
       ```
       ALTER EVENT SESSION [Demo Database BC_deadlock_monitor]
           ON SERVER
@@ -53,7 +55,7 @@ By default, SQL Server uses an in-memory data structure called a *ring_buffer ta
       ```
     Replace `C:\logging\mydeadlocks.xel` with the path and file name that you want to store the data.
    
-    For more information see [Alter an Extended Events Session](/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017) and [Targets for Extended Events in SQL Server](/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target).
+    For more information see [Alter an Extended Events Session](/sql/relational-databases/extended-events/alter-an-extended-events-session?view=sql-server-2017&preserve-view=true) and [Targets for Extended Events in SQL Server](/sql/relational-databases/extended-events/targets-for-extended-events-in-sql-server?view=sql-server-2017#eventfile-target&preserve-view=true).
     
 2. In the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database, create a view that has the name `deadlock_report_event_file_view` and uses the new event_file target.  
 
@@ -131,6 +133,7 @@ Deadlock event log entries have the event ID 705 and task category 33 (Telemetry
 **Note:**  The system cannot record information about AL code that was executed on a different  [!INCLUDE[server](../developer/includes/server.md)]. Therefore, the three attributes *AL ObjectType*, *AL ObjectNumber* and *AL ScopeName* might be empty in a given event log entry.
 
 ### View a graphical representation of the deadlock event
+
 To view a graphical representation of the deadlock, perform the following steps:
 1.  Open the deadlock event in Event Viewer.
 2.  On the General tab, go to the SQL Server deadlock xml report section, and then copy the text in the deadlock tag (including the start and end tag) to a text editor such as Notepad or Visual Studio Code.
@@ -138,6 +141,7 @@ To view a graphical representation of the deadlock, perform the following steps:
 4.  Open the file in SQL Server Management Studio.
 
 ### Filter on deadlock events
+
 All deadlock events have the trace tag **00000DI**. If you only want to see deadlocks events in the log, you can use this tag in an XML path filter on the log, as shown in the following example:
 
 ```
@@ -149,8 +153,18 @@ All deadlock events have the trace tag **00000DI**. If you only want to see dead
   </Query>
 </QueryList>
 ```
+
 For more information about XML filtering, see [Advanced XML filtering in the Windows Event Viewer](/archive/blogs/askds/advanced-xml-filtering-in-the-windows-event-viewer).
-##  See Also
+
+## Monitor using Application Insights
+
+If you're deployment is enabled for it, you can also view data about deadlocks in an Application Insights resource in Azure. For more information, see:
+
+- [Enabling Application Insights for Tenant Telemetry](telemetry-enable-application-insights.md)
+- [Analyzing Database Deadlock Trace Telemetry](telemetry-database-deadlocks-trace.md)
+
+## See Also
+
 [Monitoring Business Central Server Events](monitor-server-events.md)  
 [Monitoring SQL Database Locks](monitor-database-locks.md)  
 [Monitoring Business Central Server](monitor-server.md)  

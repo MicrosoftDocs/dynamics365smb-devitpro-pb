@@ -40,5 +40,5 @@ A value that indicates if the HTTP response was successful. **true** if StatusCo
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

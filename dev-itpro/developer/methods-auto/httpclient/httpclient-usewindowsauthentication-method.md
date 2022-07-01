@@ -1,9 +1,9 @@
 ---
-title: "HttpClient.UseWindowsAuthentication(String, String [, String]) Method"
+title: "HttpClient.UseWindowsAuthentication(Text, Text [, Text]) Method"
 description: "Sets the HttpClient credentials to use the specified network credentials for Windows authentication."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient.UseWindowsAuthentication(String, String [, String]) Method
+# HttpClient.UseWindowsAuthentication(Text, Text [, Text]) Method
 > **Version**: _Available or changed with runtime version 3.0._
 
 Sets the HttpClient credentials to use the specified network credentials for Windows authentication. If this method is invoked after any HTTP request has started; a runtime error occurs.
@@ -23,7 +23,7 @@ Sets the HttpClient credentials to use the specified network credentials for Win
 
 ## Syntax
 ```AL
-[Result := ]  HttpClient.UseWindowsAuthentication(UserName: String, Password: String [, Domain: String])
+[Result := ]  HttpClient.UseWindowsAuthentication(UserName: Text, Password: Text [, Domain: Text])
 ```
 ## Parameters
 *HttpClient*  
@@ -31,13 +31,15 @@ Sets the HttpClient credentials to use the specified network credentials for Win
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *UserName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The Windows user name.  
+
 *Password*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The password.  
+
 *[Optional] Domain*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The user's domain.  
 
 
@@ -50,5 +52,5 @@ The user's domain.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

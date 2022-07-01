@@ -3,7 +3,7 @@ title: "XmlCData Data Type"
 description: "Represents a CData section."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,7 @@ The following methods are available on the XmlCData data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[Create(String)](xmlcdata-create-method.md)|Creates an XmlCData node.|
+|[Create(Text)](xmlcdata-create-method.md)|Creates an XmlCData node.|
 
 The following methods are available on instances of the XmlCData data type.
 
@@ -37,11 +37,11 @@ The following methods are available on instances of the XmlCData data type.
 |[GetParent(var XmlElement)](xmlcdata-getparent-method.md)|Gets the parent XmlElement of this node.|
 |[Remove()](xmlcdata-remove-method.md)|Removes this node from its parent element.|
 |[ReplaceWith(Any,...)](xmlcdata-replacewith-method.md)|Replaces this node with the specified content.|
-|[SelectNodes(String, var XmlNodeList)](xmlcdata-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectNodes(String, XmlNamespaceManager, var XmlNodeList)](xmlcdata-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectSingleNode(String, var XmlNode)](xmlcdata-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[SelectSingleNode(String, XmlNamespaceManager, var XmlNode)](xmlcdata-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[Value([String])](xmlcdata-value-method.md)|Gets or sets the value of this node.|
+|[SelectNodes(Text, var XmlNodeList)](xmlcdata-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectNodes(Text, XmlNamespaceManager, var XmlNodeList)](xmlcdata-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectSingleNode(Text, var XmlNode)](xmlcdata-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectSingleNode(Text, XmlNamespaceManager, var XmlNode)](xmlcdata-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[Value([Text])](xmlcdata-value-method.md)|Gets or sets the value of this node.|
 |[WriteTo(OutStream)](xmlcdata-writeto-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(XmlWriteOptions, OutStream)](xmlcdata-writeto-xmlwriteoptions-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(var Text)](xmlcdata-writeto-text-method.md)|Serializes and saves the current node to the given variable.|
@@ -49,5 +49,5 @@ The following methods are available on instances of the XmlCData data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -3,7 +3,7 @@ title: "RecordRef.GetView([Boolean]) Method"
 description: "Returns a string that describes the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,7 +35,7 @@ If this parameter is true (default) or omitted, the returned string contains ref
 
 ## Return Value
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The string format is the same as the SourceTableView property on pages.
 
 
@@ -64,5 +64,5 @@ end;
 
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

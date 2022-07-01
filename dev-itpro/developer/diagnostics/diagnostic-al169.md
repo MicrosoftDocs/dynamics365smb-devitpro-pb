@@ -3,7 +3,7 @@ title: "Compiler Error AL0169"
 description: "The option value '{0}' is not valid."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,5 +38,5 @@ Setting the ObsoleteState to Removed for an enum will throw the following error:
 `The option value ``Removed`` is not valid`
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

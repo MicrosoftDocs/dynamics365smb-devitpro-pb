@@ -32,5 +32,5 @@ Follow the steps below to update a tenant to the latest version of any AppSource
 ## See Also  
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

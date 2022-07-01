@@ -3,7 +3,7 @@ title: "Database.GetDefaultTableConnection(TableConnectionType) Method"
 description: "Gets the default table connection based on the specified connection type."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,12 +33,12 @@ The type of table connection as defined in the TableType property.
 
 ## Return Value
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Database Data Type](database-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

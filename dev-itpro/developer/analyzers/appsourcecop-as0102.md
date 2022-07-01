@@ -1,9 +1,9 @@
 ---
-title: "AppSourceCop Warning AS0102"
+title: "AppSourceCop Error AS0102"
 description: "It is not allowed to add a return value to a publicly exposed procedure, because it might break dependent extensions at runtime."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/17/2022
+ms.date: 01/19/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# AppSourceCop Warning AS0102
+# AppSourceCop Error AS0102
 Cannot add a return value to a procedure
 
 ## Description
@@ -26,7 +26,7 @@ It is not allowed to add a return value to a publicly exposed procedure, because
 This rules validates that a return value has not been added to a publicly exposed procedures. Other changes on the return types of procedures are validated by [AS0023](appsourcecop-as0023.md).
 
 > [!NOTE]  
-> This rule also covers the cases related to the [TryFunction](../methods/devenv-tryfunction-attribute.md) attribute which implicitly defines a Boolean return type. 
+> This rule also covers the cases related to the [TryFunction](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute) attribute which implicitly defines a Boolean return type. 
 
 ## How to fix this diagnostic?
 
@@ -135,5 +135,5 @@ In version 2.0, the procedure is now explicitly returning a Boolean. The return 
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

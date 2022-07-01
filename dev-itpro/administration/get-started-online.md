@@ -30,15 +30,15 @@ In order to be able to service [!INCLUDE [prod_short](../includes/prod_short.md)
 
 [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
-<!--## Join the Ready to Go program
-
-The "Ready to Go" program is designed to support you in the journey of bringing offerings to market. The program contains learning, coaching, and tooling. For more information, see [Ready to Go](../developer/readiness/readiness-ready-to-go.md).  -->
+For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
 ## Step 2: Go to market
 
 When you become a Microsoft Partner Network member, you gain access to membership benefits that can help you build and grow your business. For more information, see [Explore your Go-To-Market with Microsoft offers](/partner-center/mpn-learn-about-go-to-market-benefits) in the Partner Center docs.  
 
 As a Dynamics 365 reseller, you benefit from Microsoft's investments in an always up-to-date modern platform, you can bundle recognized apps from the Microsoft commercial marketplace into an offering that fits the needs of your customers, reach more customers by using Microsoft's commercial marketplace to promote your packaged consulting service offerings or customization services, and streamline your own processes and build tools with Power BI, Power Automate, and Power Apps connected to [!INCLUDE[prod_short](../includes/prod_short.md)].  
+
+The [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central) landing site has plenty of material to help you build a practice, go to market, drive readiness, and keep track of upcoming events (requires a partner account).  
 
 ### Marketing assets
 
@@ -71,13 +71,17 @@ The default version of [!INCLUDE [prod_short](../developer/includes/prod_short.m
 
 If your customer wants more tweaks, you can create customizations of profiles and pages in code. For more information, see [Customizing the User Interface for User Roles](../developer/devenv-role-customization.md) in the developer content.  
 
+You can also use [configuration packages](set-up-standard-company-configuration-packages.md) to quickly apply the same settings as usual to new environments.
+
 ### Move the customer from a trial to a paid subscription
 
 If your customer decides to start using [!INCLUDE [prod_short](../includes/prod_short.md)] to run their business, they must switch to a paid subscription. Both the internal admin and the delegated admin can assign licenses to users in the Microsoft 365 admin center. For more information, see [Buy or remove licenses](/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide&preserve-view=true) in the Microsoft 365 content.  
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)] using a pre-configured demonstration company that [you have prepared](demo-environment.md) in other ways, they can now sign up for [!INCLUDE [prod_short](../includes/prod_short.md)] using their own work or school account so that you can assign the [!INCLUDE [prod_short](../includes/prod_short.md)] license to their Microsoft 365 tenant.
+If the customer has tried out [!INCLUDE [prod_short](../includes/prod_short.md)] using a pre-configured demonstration company that [you have prepared](demo-environment.md) in other ways, they can now sign up for [!INCLUDE [prod_short](../includes/prod_short.md)] using their own work or school account so that you can assign the [!INCLUDE [prod_short](../includes/prod_short.md)] license to their Microsoft 365 tenant.  
+
+You can help them migrate their data from their legacy system. For more information, see [Migrate On-Premises Data to Business Central Online](migrate-data.md).
 
 ## Step 5: Configure the support experience
 
@@ -100,3 +104,4 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
+[Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  

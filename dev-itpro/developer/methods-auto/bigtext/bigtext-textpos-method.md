@@ -1,9 +1,9 @@
 ---
-title: "BigText.TextPos(String) Method"
+title: "BigText.TextPos(Text) Method"
 description: "Gets the position at which a specific string first occurs in this BigText instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# BigText.TextPos(String) Method
+# BigText.TextPos(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the position at which a specific string first occurs in this BigText instance.
@@ -21,7 +21,7 @@ Gets the position at which a specific string first occurs in this BigText instan
 
 ## Syntax
 ```AL
-Position :=   BigText.TextPos(String: String)
+Position :=   BigText.TextPos(String: Text)
 ```
 ## Parameters
 *BigText*  
@@ -29,7 +29,7 @@ Position :=   BigText.TextPos(String: String)
 An instance of the [BigText](bigtext-data-type.md) data type.  
 
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The text string to search for in the BigText variable. If this parameter is empty, then 0 is returned.
         
 
@@ -90,5 +90,5 @@ Message(Text000, VarPosition);
 ## See Also
 
 [BigText Data Type](bigtext-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

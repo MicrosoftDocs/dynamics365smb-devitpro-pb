@@ -6,7 +6,7 @@ ms.author: jswymer
 ---
 After you upgrade your application, we recommend changing the value of application build number that's stored in the database and shown on the Help and Support page to match the new current version. This version isn't updated automatically when you upgrade. If you want the version to reflect the version of the update or your own version, you change it manually. This task serves two purposes. It ensures that personalization works as expected after upgrade. It's also useful for support purposes and answering a common question about the application version.
 
-You get the number from the [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/help/4528706). For an explanation of the number, see [Version numbers in Business Central](../../administration/version-numbers.md).
+For more information about version numbers, see [Version numbers in Business Central](../../administration/version-numbers.md).
 
 ### Change the application version in the database
 

@@ -1,9 +1,9 @@
 ---
-title: "ErrorInfo.Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method"
+title: "ErrorInfo.Create(Text [, Boolean] [, var Record] [, Integer] [, Integer] [, Text] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method"
 description: "Creates a new ErrorInfo object."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/25/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ErrorInfo.Create(String [, Boolean] [, var Record] [, Integer] [, Integer] [, String] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method
+# ErrorInfo.Create(Text [, Boolean] [, var Record] [, Integer] [, Integer] [, Text] [, Verbosity] [, DataClassification] [, Dictionary of [Text, Text]]) Method
 > **Version**: _Available or changed with runtime version 8.0._
 
 Creates a new ErrorInfo object.
@@ -21,11 +21,11 @@ Creates a new ErrorInfo object.
 
 ## Syntax
 ```AL
-Error :=   ErrorInfo.Create(Message: String [, Collectible: Boolean] [, var Record: Record] [, FieldNo: Integer] [, PageNo: Integer] [, ControlName: String] [, Verbosity: Verbosity] [, DataClassification: DataClassification] [, CustomDimensions: Dictionary of [Text, Text]])
+Error :=   ErrorInfo.Create(Message: Text [, Collectible: Boolean] [, var Record: Record] [, FieldNo: Integer] [, PageNo: Integer] [, ControlName: Text] [, Verbosity: Verbosity] [, DataClassification: DataClassification] [, CustomDimensions: Dictionary of [Text, Text]])
 ```
 ## Parameters
 *Message*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The error message.  
 
 *[Optional] Collectible*  
@@ -45,7 +45,7 @@ A field number that the error relates to. This parameter is optional.
 A page that the error relates to. This parameter is optional.  
 
 *[Optional] ControlName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A control name that the error relates to. This parameter is optional.  
 
 *[Optional] Verbosity*  
@@ -70,5 +70,5 @@ The created ErrorInfo.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [ErrorInfo Data Type](errorinfo-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)
-[Developing Extensions](../devenv-dev-overview.md)
+[Get Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

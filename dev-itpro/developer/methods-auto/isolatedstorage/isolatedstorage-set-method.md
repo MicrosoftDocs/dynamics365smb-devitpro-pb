@@ -1,9 +1,9 @@
 ---
-title: "IsolatedStorage.Set(String, String [, DataScope]) Method"
+title: "IsolatedStorage.Set(Text, Text [, DataScope]) Method"
 description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# IsolatedStorage.Set(String, String [, DataScope]) Method
+# IsolatedStorage.Set(Text, Text [, DataScope]) Method
 > **Version**: _Available or changed with runtime version 2.0._
 
 Sets the value associated with the specified key.
@@ -21,17 +21,19 @@ Sets the value associated with the specified key.
 
 ## Syntax
 ```AL
-[Ok := ]  IsolatedStorage.Set(Key: String, Value: String [, DataScope: DataScope])
+[Ok := ]  IsolatedStorage.Set(Key: Text, Value: Text [, DataScope: DataScope])
 ```
 ## Parameters
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The key of the value to set.
         
+
 *Value*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The value that will be associated with the specified key.
         
+
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  
 The scope of the stored data. If a value is not passed in, the default value DataScope::Module will be used.  
@@ -50,5 +52,5 @@ The **Set** method initiates a write transaction, which means that it cannot be 
 
 ## See Also
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -1,9 +1,9 @@
 ---
-title: "Report.SaveAsHtml(Integer, String [, var Record]) Method"
+title: "Report.SaveAsHtml(Integer, Text [, var Record]) Method"
 description: "Saves a report as an HTML file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Report.SaveAsHtml(Integer, String [, var Record]) Method
+# Report.SaveAsHtml(Integer, Text [, var Record]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Saves a report as an HTML file. The file is saved on the computer where the server instance is running, and then downloaded to the client when ready. \> This method is only supported when a report uses a Word report layout when it is run.
@@ -23,17 +23,19 @@ Saves a report as an HTML file. The file is saved on the computer where the serv
 
 ## Syntax
 ```AL
-[Ok := ]  Report.SaveAsHtml(Number: Integer, FileName: String [, var Record: Record])
+[Ok := ]  Report.SaveAsHtml(Number: Integer, FileName: Text [, var Record: Record])
 ```
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The ID of the report object that you want to run.
         
+
 *FileName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The folder path and name of the file that you want to save the report as. The path must already exist and the service (login) account that is used by the server instance must have permission to write to the target folder. Otherwise, you will get errors.
           
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies which record to use in the report. Any filters that have been applied to the record that you specify will be used.  
@@ -59,5 +61,5 @@ Specifies which record to use in the report. Any filters that have been applied 
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

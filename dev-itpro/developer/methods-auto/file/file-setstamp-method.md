@@ -1,9 +1,9 @@
 ---
-title: "File.SetStamp(String, Date [, Time]) Method"
+title: "File.SetStamp(Text, Date [, Time]) Method"
 description: "Sets a timestamp for a file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.SetStamp(String, Date [, Time]) Method
+# File.SetStamp(Text, Date [, Time]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets a timestamp for a file.
@@ -23,22 +23,24 @@ Sets a timestamp for a file.
 
 ## Syntax
 ```AL
-[Ok := ]  File.SetStamp(Name: String, Date: Date [, Time: Time])
+[Ok := ]  File.SetStamp(Name: Text, Date: Date [, Time: Time])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the file, including its path. When you enter the path, keep in mind these shortcuts:
 -   You can omit the drive designation, if the file is located on the current drive.
 -   You can omit the full path, if the file is located in the current directory.
 -   You can enter only the subdirectory name, if the file is located in a subdirectory of the current directory.
       
+
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 The date that you want stamped on the file.
         
+
 *[Optional] Time*  
 &emsp;Type: [Time](../time/time-data-type.md)  
 The time that you want stamped on the file.  
@@ -73,5 +75,5 @@ end;
   
 ## See Also
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

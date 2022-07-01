@@ -3,7 +3,7 @@ title: "NavApp.GetArchiveVersion() Method"
 description: "Returns the version of the extension that the specified table is part of."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,15 +24,14 @@ Returns the version of the extension that the specified table is part of.
 Version :=   NavApp.GetArchiveVersion()
 ```
 
-
 ## Return Value
 *Version*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The version
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [NavApp Data Type](navapp-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

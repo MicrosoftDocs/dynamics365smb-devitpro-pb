@@ -3,7 +3,7 @@ title: "Multiplicity Property"
 description: "Specify the multiplicity of the part."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,6 +53,12 @@ Specify the multiplicity of the part.
         
 ```
 
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+## Remarks
+
+This property is used on page parts on API pages. For more information, see [API Page Type](../devenv-api-pagetype.md). By default multiplicity for parts is defined as 1:N. For more in-depth examples and information, see [Developing a Custom API](../devenv-develop-custom-api.md).
+
+
+## See Also
+
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

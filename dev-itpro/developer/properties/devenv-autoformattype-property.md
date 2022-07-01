@@ -3,7 +3,7 @@ title: "AutoFormatType Property"
 description: "Sets a value that determines how data is formatted, together with the AL expression in the AutoFormatExpression Property."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

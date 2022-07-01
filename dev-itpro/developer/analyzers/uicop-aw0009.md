@@ -22,5 +22,5 @@ Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [UICop Analyzer](uicop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

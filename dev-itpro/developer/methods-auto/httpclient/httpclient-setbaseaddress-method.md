@@ -1,9 +1,9 @@
 ---
-title: "HttpClient.SetBaseAddress(String) Method"
+title: "HttpClient.SetBaseAddress(Text) Method"
 description: "Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# HttpClient.SetBaseAddress(String) Method
+# HttpClient.SetBaseAddress(Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.
@@ -21,7 +21,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 
 ## Syntax
 ```AL
-[Ok := ]  HttpClient.SetBaseAddress(NewBaseAddress: String)
+[Ok := ]  HttpClient.SetBaseAddress(NewBaseAddress: Text)
 ```
 ## Parameters
 *HttpClient*  
@@ -29,7 +29,7 @@ Sets the base address of Uniform Resource Identifier (URI) of the Internet resou
 An instance of the [HttpClient](httpclient-data-type.md) data type.  
 
 *NewBaseAddress*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The base address of the Uniform Resource Identifier (URI) of the Internet resource used when sending requests.  
 
 
@@ -42,5 +42,5 @@ The base address of the Uniform Resource Identifier (URI) of the Internet resour
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

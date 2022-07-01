@@ -12,7 +12,7 @@ ms.author: jswymer
 ---
 # Analyzing Extension Lifecycle Trace Telemetry
 
-**INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3. For extension telemetry, this signal was introduced in 2020 release wave 2, version 17.1
+**INTRODUCED IN:** Business Central 2020 release wave 1, version 16.3. Extension-level support introduced in 2020 release wave 2, version 17.1.
 
 Extension lifecycle telemetry gathers data about the success or failure of the following extension-related operations:
 
@@ -26,18 +26,29 @@ Extension lifecycle telemetry gathers data about the success or failure of the f
 
 Failed operations result in a trace log entry that includes a reason for the failure.
 
-Data is gathered when the operations are done using:
+Traces are recorded for operations started initiated from any of the following components, depending whether you have Business Central online or on-premises:
 
-- [Extension Management page](/dynamics365/business-central/ui-extensions) in the client.
-- [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central administration center.
-- [Extension management PowerShell cmdlets](/powershell/module/microsoft.dynamics.nav.apps.management) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
+|Component|Online|On-premises|
+|---------|------|-----------|
+|[Extension Management page](/dynamics365/business-central/ui-extensions) in the Business Central client.|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)|
+|[Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central admin center.|![check mark for feature.](../developer/media/check.png)||
+|[App Management API](administration-center-api_app_management.md) of the Business Central admin center.|![check mark for feature.](../developer/media/check.png)||
+|[Extension management PowerShell cmdlets](/powershell/module/microsoft.dynamics.nav.apps.management) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]||![check mark for feature.](../developer/media/check.png)|
+|Business Central control plane, which is the online service managed by Microsoft.|![check mark for feature.](../developer/media/check.png)||
 
-## Behavior overview
+<!--
+- [Extension Management page](/dynamics365/business-central/ui-extensions) in the Business Central client.
+- [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central admin center.
+- [App Management](administration-center-api_app_management.md) of the Business Central admin center API.
+- [Extension management PowerShell cmdlets](/powershell/module/microsoft.dynamics.nav.apps.management) from the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] (on-premises).
+- ->
+
+<!--## Behavior overview
 
 - Compiling, publishing, and unpublishing extensions
 
     Data for these operations is only recorded for extensions that are published in the tenant scope.
-    
+
     - For on-premises, it includes extensions that are published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-Scope Tenant` parameter.
     
     - For online, it includes per-tenant extensions uploaded from the **Extension Management** page in the client. It doesn't include Microsoft extensions or [AppSource extensions](https://appsource.microsoft.com/en-US/marketplace?product=dynamics-365-business-central).
@@ -58,15 +69,18 @@ Data is gathered when the operations are done using:
 
     - For on-premises, data for this operation is recorded when an extension is upgraded by using the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade).
 
-    - For online, data is recorded when an extension is updated from the [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central administration center.
+    - For online, data is recorded when an extension is updated from the [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central administration center.-->
 
--  For some operations, you might experience that certain custom dimensions aren't available.
+> [!NOTE]
+> For some operations, you might experience that certain custom dimensions aren't available. The reason is that custom dimensions are added to the signal gradually, as the information is retrieved. If the operation fails before the custom dimension is retrieved, it isn't included in the result. For example, if you try to uninstall an extension using the Ininstall-NAVApp cmdlet, and the specified extension name is wrong, the operation fails. In this case, the `extensionid` and `extensionVersion` will be excluded from the results.  
 
-    The reason is that custom dimensions are added to the signal gradually, as the information is retrieved. If the operation fails before the custom dimension is retrieved, it isn't included in the result. 
+## ENVIRONMENT/SERVER TRACES
 
-    For example, if you try to uninstall an extension using the Ininstall-NAVApp cmdlet, and the specified extension name is wrong, the operation fails. In this case, the `extensionid` and `extensionVersion` will be excluded from the results.  
+The traces in this section are recorded for extensions that are published to the environment/server in the tenant scope only.
 
-## ENVIRONMENT/SERVER-SIDE OPERATIONS
+- For on-premises, it includes extensions that are published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) with the `-Scope Tenant` parameter.
+
+- For online, it includes per-tenant extensions uploaded from the **Extension Management** page in the client. It doesn't include Microsoft extensions or [AppSource extensions](https://appsource.microsoft.com/en-US/marketplace?product=dynamics-365-business-central).
 
 ## <a name="compiledsuccess"></a>Extension compiled successfully
 
@@ -104,7 +118,7 @@ The following table explains custom dimensions that are common to all traces.
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies that Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |component|**Dynamics 365 Business Central Server**.|
 |environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
@@ -146,6 +160,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
+
 ## <a name="publishedsuccess"></a>Extension published successfully
 
 Occurs when an extension published successfully on the service. <!--For on-premises, an extension is published by running the [Publish-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/publish-navapp) . For online, an extension is published when it's uploaded from the **Extension Management** page in the client.-->
@@ -281,11 +296,31 @@ Occurs when an extension fails to unpublish on the service.
 <!--
 ### Example
 
-{"extensionName":"pbt","AadTenantId":"common","sqlRowsRead":"0","Extension name":"pbt","DeveloperMode":"true","Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","Environment type":"Production","component":"Dynamics 365 Business Central Server","environmentType":"Production","extensionVersion":"1.0.0.6","sqlExecutes":"2","extensionPublishedAs":"Tenant","componentVersion":"16.0.13877.0","Component version":"16.0.13877.0","clientType":"Background","result":"Failure","aadTenantId":"common","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","totalTime":"00:00:00.0030022","extensionIsRad":"False","serverExecutionTime":"00:00:00.0030022","failureReason":"This extension cannot be published into the tenant scope because it is currently or was previously published into the global scope and at least one globally published application 'pbt by Me' has a dependency on it. \r\nAn unpublished global scoped extension can only be published to the tenant scope if there are no published applications to the global scope that depend on this application. \r\nAn application published into the global scope cannot have dependencies on applications published into the tenant scope.","Extension App Id":"0b6c8443-c488-4967-b53d-f53ac52b6180","extensionId":"0b6c8443-c488-4967-b53d-f53ac52b6180","extensionScope":"Tenant","Extension version":"1.0.0.6","eventId":"LC0015","telemetrySchemaVersion":"0.1","extensionPublisher":"Me"}
+{"extensionName":"pbt","AadTenantId":"common","sqlRowsRead":"0","Extension name":"pbt","DeveloperMode":"true","Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","Environment type":"Production","component":"Dynamics 365 Business Central Server","environmentType":"Production","extensionVersion":"1.0.0.6","sqlExecutes":"2","extensionPublishedAs":"Tenant","componentVersion":"16.0.13877.0","Component version":"16.0.13877.0","clientType":"Background","result":"Failure","aadTenantId":"common","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","totalTime":"00:00:00.0030022","extensionIsRad":"False","serverExecutionTime":"00:00:00.0030022","failureReason":"This extension cannot be published into the tenant scope because it's currently or was previously published into the global scope and at least one globally published application 'pbt by Me' has a dependency on it. \r\nAn unpublished global scoped extension can only be published to the tenant scope if there are no published applications to the global scope that depend on this application. \r\nAn application published into the global scope cannot have dependencies on applications published into the tenant scope.","Extension App Id":"0b6c8443-c488-4967-b53d-f53ac52b6180","extensionId":"0b6c8443-c488-4967-b53d-f53ac52b6180","extensionScope":"Tenant","Extension version":"1.0.0.6","eventId":"LC0015","telemetrySchemaVersion":"0.1","extensionPublisher":"Me"}
 
 -->
 
-## TENANT OPERATIONS
+## TENANT TRACES
+
+The traces in this section are recorded for synchronizing, installing and updating extensions on a tenant.
+
+- Synchronizing extensions
+
+    - For on-premises, data for this operation is recorded when an extension is synchronized by using the [Sync-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).
+
+    - For online, data is recorded when an extension is installed from the **Extension Management** page in the client. Or, when upgraded from the [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central administration center.
+
+- Installing and uninstalling extensions
+
+    - For on-premises, data for these operations is recorded when an extension is installed or uninstalled by using the [Install-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/install-navapp) or [Uninstall-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/uninstall-navapp). Or, when an extension is installed or uninstalled from the **Extension Management** page in the client.
+
+    - For online, data for these operations is recorded when an extension is installed or uninstalled from the **Extension Management** page in the client.
+
+- Updating an extension
+
+    - For on-premises, data for this operation is recorded when an extension is upgraded by using the [Start-NAVAppDataUpgrade cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/start-navappdataupgrade).
+
+    - For online, data is recorded when an extension is updated from the [Manage Apps page](tenant-admin-center-manage-apps.md) in the Business Central administration center.
 
 ## <a name="syncedsuccess"></a>Extension synchronized successfully
 
@@ -308,7 +343,7 @@ Occurs when an extension synchronizes successfully on the tenant.
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
-| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it is intended for use during development. It lets you to sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). It is typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
+| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). it's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
 | result|**Success**|
 | serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
@@ -343,7 +378,7 @@ Occurs when an extension fails to synchronize on the tenant.
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
 | extensionPublisher|Specifies the extension's publisher.|
 | extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
-| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it is intended for use during development. It lets you to sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). It is typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
+| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). it's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
 | extensionVersion|Specifies the version of the extension was synchronized.|
 | failureReason|Specifies the error that occurred when synchronizing the extension.|
 | result|**Failure**|
@@ -540,7 +575,7 @@ Occurs when an extension failed to uninstall on a tenant.
 <!--
 ### Example
 
-{"Component":"Dynamics 365 Business Central Server","componentVersion":"16.0.13877.0","Component version":"16.0.13877.0","eventId":"LC0017","serverExecutionTime":"00:00:00.0035521","failureReason":"Cannot find the extension 'pbt' because it is not published.","Extension App Id":"pbt","DeveloperMode":"true","telemetrySchemaVersion":"0.1","Extension version":"1.0.0.7","Telemetry schema version":"0.1","environmentType":"Production","extensionVersion":"1.0.0.7","sqlExecutes":"3","extensionId":"pbt","sqlRowsRead":"0","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Environment type":"Production","result":"Failure","aadTenantId":"common","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","totalTime":"00:00:00.0035521"}
+{"Component":"Dynamics 365 Business Central Server","componentVersion":"16.0.13877.0","Component version":"16.0.13877.0","eventId":"LC0017","serverExecutionTime":"00:00:00.0035521","failureReason":"Cannot find the extension 'pbt' because it's not published.","Extension App Id":"pbt","DeveloperMode":"true","telemetrySchemaVersion":"0.1","Extension version":"1.0.0.7","Telemetry schema version":"0.1","environmentType":"Production","extensionVersion":"1.0.0.7","sqlExecutes":"3","extensionId":"pbt","sqlRowsRead":"0","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Environment type":"Production","result":"Failure","aadTenantId":"common","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","totalTime":"00:00:00.0035521"}
 
 -->
 
@@ -588,6 +623,7 @@ Occurs when an extension failed to update on the service. <!--The update operati
 
 > [!NOTE]
 > Data is also recorded for any upgrade code that was run. For more information, see [Analyzing Extension Update Trace Telemetry](telemetry-extension-update-trace.md).
+
 ### General dimensions
 
 |Dimension|Description or value|
@@ -619,6 +655,502 @@ Occurs when an extension failed to update on the service. <!--The update operati
 ### Example
 
 {"result":"Failure","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:00.0063533","Extension version":"1.0.0.5","Component version":"16.0.13877.0","componentVersion":"16.0.13877.0","extensionCulture":"en-US","Environment type":"Production","extensionVersion":"1.0.0.5","environmentType":"Production","Extension name":"pbt","deprecatedKeys":"Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, AadTenantId, Environment name, Environment type","extensionName":"pbt","failureReason":"Cannot upgrade the extension 'pbt by Me 1.0.0.5' because its version must be newer than the current version. The current version is '1.0.0.6'","DeveloperMode":"true","aadTenantId":"common","sqlExecutes":"7","AadTenantId":"common","sqlRowsRead":"32","component":"Dynamics 365 Business Central Server","totalTime":"00:00:00.0063533","Component":"Dynamics 365 Business Central Server","eventId":"LC0023"}
+-->
+
+## CONTROL PLANE TRACES
+
+[!INCLUDE[component](../developer/includes/online_only.md)]
+
+The traces in this section are emitted by the Business Central control plane service during the installation or update operation of an extension/app. Theses traces compliment the tenant traces described above and help you identify the origin or cause of the extension's installation or update. The traces are recorded when:
+
+- The extension is explicitly installed or updated
+- The extension is installed or updated because an extension that's dependant on it was installed or updated.
+- A hotfix is applied to the extension by Microsoft or ISV embed partner.
+
+The following table illustrates the traces you can expect to see with the installation or update of an extension, in the order that they'll occur. The trace messages have been simplified for illustration purposes.
+
+|Extension install lifecycle|Extension update lifecycle|Trace source|
+|---------------------------|--------------------------|------------|
+|Environment app version install scheduled|Environment app version update scheduled|Control plane|
+|Environment app version install started|Environment app version update started|Control plane|
+|Environment app version install/update requires dependency app| Environment app version install/update requires dependency app|Control plane|
+|Extension synchronized: version|Extension synchronized: version|Tenant |
+|Extension installed: version|Extension updated: version|Tenant |
+|Environment app version installed|Environment app version updated|Control plane|
+
+## <a name="app-install-scheduled"></a>Environment app version installation scheduled for environment
+
+Occurs when scheduling the installation of a new extension/app has completed successfully.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName}, version {extensionDestinationVersion} installation scheduled for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0161**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0161","extensionPublisher":"Bgasio publisher","extensionName":"Bgasio Test App 1","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","environmentName":"Production-copied","environmentVersion":"19.3.34541.36466","useEnvironmentUpdateWindow":"False","applicationFamily":"BusinessCentral","runAfterDateUtc":"2022-03-10T14:29:43.7255256Z","extensionDestinationVersion":"1.0.3.0","allowDependencyUpdate":"True","allowPreviewVersion":"False"}
+
+-->
+
+## <a name="app-install-schedule-failed"></a>Environment app version installation scheduling failed for environment
+
+Occurs when scheduling the installation of a new extension/app has failed. 
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName}, version {extensionDestinationVersion} installation scheduling failed for environment: {environmentName}**|
+|severityLevel|**3**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0162**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0162","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","extensionScope":"Global","environmentName":"Production-copied","countryCode":"US","useEnvironmentUpdateWindow":"False","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","runAfterDateUtc":"2022-03-10T16:13:14.6046369Z","failureReason":"Validation failed with errors: \r\nApp Id: d3654b00-28c5-434b-bbf8-82f2231cd420, Name: Bgasio Test App 1, Publisher: Bgasio publisher, Version: 1.0.3.0, IncompatibleFromVersion: , Scope: Global, Availability: Available requires the following apps to be installed or updated as dependencies, please either allow automatic dependency installation/update or do the operation manually:\r\nInstall, AppId: d3654b00-28c5-434b-bbf8-82f2231cd422, Name: Bgasio Test App 2, Publisher: Bgasio publisher, Version: 1.0.6.0\r\n-App ID: 'd3654b00-28c5-434b-bbf8-82f2231cd420'\r\n-Country Code: 'US'\r\n-Target App Version: '1.0.3.0'\r\n-Allow App Dependency Auto Install/Update: 'False'","extensionDestinationVersion":"1.0.3.0","allowDependencyUpdate":"False","allowPreviewVersion":"False"}
+-->
+
+## <a name="app-install-latest"></a>Environment app version installation started for environment
+
+Occurs when installing a new extension/app has started.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName}, version {extensionDestinationVersion} installation started for environment: {environmentName}**|
+|severityLevel|**1** |
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0163**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0163","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd430","environmentName":"Production-pt","extensionScope":"Tenant","extensionDestinationVersion":"latest compatible","environmentVersion":"19.3.34541.35569","allowDependencyUpdate":"True","runAfterDateUtc":"2022-03-21T10:16:34.9925527Z","applicationFamily":"BusinessCentral","useEnvironmentUpdateWindow":"False","allowPreviewVersion":"False"}
+-->
+
+## <a name="app-install-latest-succeeded"></a>Environment app version installation succeeded for environment
+
+Occurs when installing a new extension/app has completed successfully.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName}, version {extensionVersion} installation succeeded for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0164**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0164","totalTime":"00:00:02.6719067","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd430","environmentName":"Production-pt","extensionScope":"Tenant","extensionDestinationVersion":"latest compatible","environmentVersion":"19.3.34541.35569","allowDependencyUpdate":"True","runAfterDateUtc":"2022-03-21T10:16:34.9925527Z","applicationFamily":"BusinessCentral","useEnvironmentUpdateWindow":"False","allowPreviewVersion":"False"}
+
+-->
+
+## <a name="app-install-failed"></a>Environment app version installation failed for environment
+
+Occurs when installing a new extension/app has failed.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName}, version {extensionDestinationVersion} installation failed for environment: {environmentName}**|
+|severityLevel|**1**<!--question: shoulf be 3?-->|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependentsUninstall|[!INCLUDE[allowDependentsUninstall](../includes/include-telemetry-dimension-allow-dependents-uninstall)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0165**|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+
+<!--
+{"telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0165","extensionName":"Bgasio Test App 1","extensionPublisher":"Bgasio publisher","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","environmentName":"Production-renamed","countryCode":"US","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","useEnvironmentUpdateWindow":"False","runAfterDateUtc":"2022-03-09T16:29:50.7423987Z","extensionSourceVersion":"1.0.3.1","deleteData":"True","allowDependentsUninstall":"False"}
+-->
+
+## <a name="app-dependency-app"></a>Environment app version installation/update requires automatically installing a new dependency app for environment
+
+Occurs when the extension/app that's being installed or updated has a dependency on another extension/app that must be installed first.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName}, version {extensionDestinationVersion} installation/update requires automatically installing a new dependency app {dependencyExtensionName}, version {dependencyExtensionDestinationVersion} for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|dependencyExtensionDestinationVersion|Specifies the version of the dependency extension. |
+|dependencyExtensionId|Specifies the ID of the dependency extension/app.|
+|dependencyExtensionName|Specifies the name of the dependency extension/app.|
+|dependencyExtensionPublisher|Specifies the publisher of the dependency extension/app.|
+|dependencyExtensionScope|Specifies whether the dependency extension/app is published to one of the following scopes: <br />**Global** - the extension can be installed on all tenants connected the service instance. <br />**Tenant** - the extension can only be installed on the tenant to which it was published.|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0166**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+
+
+<!--
+{"telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","extensionPublisher":"Bgasio publisher","eventId":"LC0166","extensionName":"Bgasio Test App 1","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","extensionScope":"Global","environmentName":"Production-copied","countryCode":"US","useEnvironmentUpdateWindow":"False","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","extensionDestinationVersion":"1.0.3.0","allowDependencyUpdate":"False","allowPreviewVersion":"False","dependencyExtensionPublisher":"Bgasio publisher","dependencyExtensionName":"Bgasio Test App 2","dependencyExtensionDestinationVersion":"1.0.6.0","dependencyExtensionId":"d3654b00-28c5-434b-bbf8-82f2231cd422","dependencyExtensionScope":"Global"}
+-->
+
+## <a name="app-update-scheduled"></a>Environment app update to version scheduled for environment
+
+Occurs when scheduling the update of an existing extension/app to another version has succeeded.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName} update to version {extensionDestinationVersion} scheduled for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0167**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0167","extensionPublisher":"Bgasio publisher","extensionName":"Bgasio Test App 1","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","environmentName":"Production-copied","extensionScope":"Global","useEnvironmentUpdateWindow":"False","extensionDestinationVersion":"1.0.3.1","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","allowDependencyUpdate":"True","allowPreviewVersion":"False","runAfterDateUtc":"2022-03-10T16:14:47.5673701Z","extensionSourceVersion":"1.0.3.0"}
+
+-->
+## <a name="app-update-schedule-failed"></a>Environment app update to version scheduling failed for environment
+
+Occurs when scheduling the update of an existing extension/app to another version has failed.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionId} update to version {extensionDestinationVersion} scheduling failed for environment: {environmentName}**|
+|severityLevel|**3**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0168**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0168","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","failureReason":"Validation failed with errors: \r\nApp Id: d3654b00-28c5-434b-bbf8-82f2231cd420, Name: Bgasio Test App 1, Publisher: Bgasio publisher, Version: 1.0.3.1, IncompatibleFromVersion: , Scope: Global, Availability: Available requires the following apps to be installed or updated as dependencies, please either allow automatic dependency installation/update or do the operation manually:\r\nInstall, AppId: 967b4a3e-3148-421f-bc18-001402305402, Name: Vertex Tax Links 2 GLOBAL, Publisher: Default publisher, Version: 2.0.5.7\r\n-App ID: 'd3654b00-28c5-434b-bbf8-82f2231cd420'\r\n-Country Code: 'US'\r\n-Target App Version: '1.0.3.1'\r\n-Allow App Dependency Auto Install/Update: 'False'","environmentName":"Production-copied","extensionScope":"Global","useEnvironmentUpdateWindow":"False","extensionDestinationVersion":"1.0.3.1","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","allowDependencyUpdate":"False","allowPreviewVersion":"False","runAfterDateUtc":"2022-03-10T16:14:41.4562490Z"}
+-->
+
+## <a name="app-update-latest-started"></a>Environment app update to version started for environment
+
+Occurs when updating of an existing extension/app to another version has started.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionId} update to version {extensionDestinationVersion} started for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0169**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0169","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd430","extensionScope":"Tenant","environmentName":"Production-pt","extensionSourceVersion":"2.0.5.16","extensionDestinationVersion":"latest compatible","environmentVersion":"19.3.34541.35569","allowDependencyUpdate":"True","runAfterDateUtc":"2022-03-21T10:17:51.9124591Z","applicationFamily":"BusinessCentral","useEnvironmentUpdateWindow":"False","allowPreviewVersion":"False"}
+-->
+
+## <a name="app-update-latest-succeeded"></a>Environment app update to version succeeded for environment
+
+Occurs when updating of an existing extension/app to another version has completed successfully.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionId} update to version {extensionDestinationVersion} succeeded for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0170**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0170","totalTime":"00:00:05.5550331","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd430","extensionScope":"Tenant","environmentName":"Production-pt","extensionSourceVersion":"2.0.5.16","extensionDestinationVersion":"latest compatible","environmentVersion":"19.3.34541.35569","allowDependencyUpdate":"True","runAfterDateUtc":"2022-03-21T10:17:51.9124591Z","applicationFamily":"BusinessCentral","useEnvironmentUpdateWindow":"False","allowPreviewVersion":"False"}
+-->
+
+## <a name="app-update-latest-failed"></a>Environment app update to version failed for environment
+
+Occurs when updating an existing extension/app to another version has failed.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionId} update to version {extensionDestinationVersion} failed for environment: {environmentName}**|
+|severityLevel|**3**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0171**|
+|extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"countryCode":"US","telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0171","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd430","totalTime":"00:00:14.2345806","failureReason":"App d3654b00-28c5-434b-bbf8-82f2231cd430 failed to install/update, errors encountered:\r\nCould not upgrade the NAV extension 'PTE with new environment cleanup by Default publisher 2.0.5.16' due to the following error: 'Table CleanupData :: The field 'Data' has changed the length of the data type from '50' to '500'. Changing the length of the data type on fields is not allowed.'.","extensionScope":"Tenant","environmentName":"Production-pt","environmentVersion":"19.3.34541.35569","applicationFamily":"BusinessCentral","extensionSourceVersion":"2.0.5.15","extensionDestinationVersion":"latest compatible","allowDependencyUpdate":"True","runAfterDateUtc":"2022-03-21T10:14:10.6886778Z","useEnvironmentUpdateWindow":"False","allowPreviewVersion":"False"}
+
+-->
+## <a name="app-uninstall-scheduled"></a>Environment app uninstall scheduled for environment
+
+Occurs when scheduling the uninstallation of an extension/app has completed successfully.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionName} uninstall scheduled for environment: {environmentName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependencyUpdate|[!INCLUDE[allowDependencyUpdate](../includes/include-telemetry-dimension-allow-dependency-update.md)]|
+|allowPreviewVersion|[!INCLUDE[allowPreviewVersion](../includes/include-telemetry-dimension-allow-preview-version.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0173**|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
+|extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
+|extensionSourceVersion|[!INCLUDE[extensionSourceVersion](../includes/include-telemetry-dimension-extension-source-version.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","extensionPublisher":"Bgasio publisher","eventId":"LC0173","extensionName":"Bgasio Test App 2","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd422","environmentName":"Production-copied","countryCode":"US","useEnvironmentUpdateWindow":"False","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","runAfterDateUtc":"2022-03-10T16:12:10.7226989Z","allowDependentsUninstall":"True","extensionSourceVersion":"1.0.6.0","deleteData":"True"}
+-->
+
+## <a name="app-uninstall-schedule-failed"></a>Environment app uninstall scheduling failed for environment
+
+Occurs when scheduling the uninstallation of an extension/app has failed.
+
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment app {extensionId} uninstall scheduling failed for environment: {environmentName}**|
+|severityLevel|**3**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|allowDependentsUninstall|[!INCLUDE[allowDependentsUninstall](../includes/include-telemetry-dimension-allow-dependents-uninstall)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
+|deleteData|[!INCLUDE[deleteData](../includes/include-telemetry-dimension-delete-data.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0174**|
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]||
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
+|useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
+|[See common custom dimensions](#other)|-|
+
+<!--
+{"telemetrySchemaVersion":"0.1","environmentType":"Production","aadTenantId":"1633d4a2-6d53-4254-868f-b8d70eefed7a","component":"Dynamics 365 Business Central Control Plane","eventId":"LC0174","extensionId":"d3654b00-28c5-434b-bbf8-82f2231cd420","environmentName":"Production-copied","countryCode":"US","useEnvironmentUpdateWindow":"False","environmentVersion":"19.3.34541.36466","applicationFamily":"BusinessCentral","runAfterDateUtc":"2022-03-10T16:12:32.8184873Z","allowDependentsUninstall":"True","deleteData":"True","failureReason":"Validation failed with errors: \r\nApp to uninstall is not installed.\r\n-App ID: 'd3654b00-28c5-434b-bbf8-82f2231cd420'\r\n-Environment: 'Production-copied'"}
+
 -->
 
 ## See also

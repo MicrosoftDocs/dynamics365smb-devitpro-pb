@@ -4,7 +4,7 @@ description: "Developing a custom API in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ This walkthrough requires the following:
 
 - [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
   - The CRONUS International Ltd. demonstration data.
-  - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+  - Visual Studio Code with the AL Language extension installed. For more information, see [Get Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
 ## Creating source tables for the API
 
@@ -216,7 +216,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
     ```
 
 7. Now, repeat the steps 1-6 for **API Car Brand** page.
-8. You can define a **API Car Model** part in **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate **ReferentialConstraints** property in the metadata as below:  
+8. You can define an **API Car Model** part on the **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate the **ReferentialConstraints** property in the metadata as below:  
 
     ```
     <NavigationProperty Name="carModels" Type="Collection(Microsoft.NAV.carModel)" Partner="carBrand" ContainsTarget="true">
@@ -270,13 +270,14 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
                     {
                         Caption = 'Country';
                     }
-                    part(carModels; "API Car Model")
-                    {
-                        Caption = 'Car Models';
-                        EntityName = 'carModel';
-                        EntitySetName = 'carModels';
-                        SubPageLink = "Brand Id" = Field(SystemId);
-                    }
+                }
+
+                part(carModels; "API Car Model")
+                {
+                    Caption = 'Car Models';
+                    EntityName = 'carModel';
+                    EntitySetName = 'carModels';
+                    SubPageLink = "Brand Id" = Field(SystemId);
                 }
             }
         }
@@ -446,12 +447,13 @@ Which will result in following response:
     - All these localizations can be retrieved through `https://api.businesscentral.dynamics.com/v2.0/<environmentName>/api/<API publisher>/<API group>/<API version>/entityDefinitions`
 
 ## Using an API Query Type
+
 If you need to generate a web service endpoint that joins data between different tables, then consider using an API query object. This type of API cannot be used to display data in the user interface and data can only be read (not updated).
 
 For more information, see [API Query Type](devenv-api-querytype.md)
 
 ## See Also
-[Getting Started with AL](../developer/devenv-get-started.md)  
+[Get Started with AL](../developer/devenv-get-started.md)  
 [API Page Type](devenv-api-pagetype.md)   
 [API Query Type](devenv-api-querytype.md)   
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  

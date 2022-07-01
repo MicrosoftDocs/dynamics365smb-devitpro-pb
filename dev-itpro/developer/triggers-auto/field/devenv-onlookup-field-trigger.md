@@ -60,7 +60,7 @@ When using this trigger, follow this approach:
 > The lookup for a non-editable field is not rendered. You can use the [OnDrillDown Trigger](../pagefield/devenv-ondrilldown-pagefield-trigger.md) instead.
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Page Field) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md)  
 [OnLookup (Page Field Extension) Trigger](../pagefieldextension/devenv-onlookup-pagefieldextension-trigger.md)

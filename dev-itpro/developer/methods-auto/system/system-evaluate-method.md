@@ -1,9 +1,9 @@
 ---
-title: "System.Evaluate(var Any, String [, Integer]) Method"
+title: "System.Evaluate(var Any, Text [, Integer]) Method"
 description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Evaluate(var Any, String [, Integer]) Method
+# System.Evaluate(var Any, Text [, Integer]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Evaluates a string representation of a value into its typical representation. The result is assigned to a variable.
@@ -21,7 +21,7 @@ Evaluates a string representation of a value into its typical representation. Th
 
 ## Syntax
 ```AL
-[Ok := ]  System.Evaluate(var Variable: Any, String: String [, Number: Integer])
+[Ok := ]  System.Evaluate(var Variable: Any, String: Text [, Number: Integer])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -30,10 +30,12 @@ Evaluates a string representation of a value into its typical representation. Th
 &emsp;Type: [Any](../any/any-data-type.md)  
 The value of the string is assigned to the variable.
         
+
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
  A string that contains a value of any simple AL data type.
         
+
 *[Optional] Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 This optional value can be used when exporting data with an XmlPort. The only valid values are 9 and 10. 9 indicates that the data must be converted from XML format to C/SIDE format. 10 indicates that the data must be converted from bookmark.  
@@ -106,5 +108,5 @@ You can include decimal values in the string that you evaluate as a duration, ex
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

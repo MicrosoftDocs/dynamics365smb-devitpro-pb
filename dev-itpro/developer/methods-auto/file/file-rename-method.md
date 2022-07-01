@@ -1,9 +1,9 @@
 ---
-title: "File.Rename(String, String) Method"
+title: "File.Rename(Text, Text) Method"
 description: "Renames an ASCII or binary file."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Rename(String, String) Method
+# File.Rename(Text, Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Renames an ASCII or binary file.
@@ -23,20 +23,21 @@ Renames an ASCII or binary file.
 
 ## Syntax
 ```AL
-[Ok := ]  File.Rename(OldName: String, NewName: String)
+[Ok := ]  File.Rename(OldName: Text, NewName: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *OldName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The current name of the file that you want to change, including its path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation, if the file is located on the current drive.
 -   You can omit the full path, if the file is located in the current directory.
 -   You can enter only the subdirectory name, if the file is located in a subdirectory of the current directory.
           
+
 *NewName*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The new name that you want to assign to the file, including its path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation, if the file is located on the current drive.
 -   You can omit the full path, if the file is located in the current directory.
@@ -74,5 +75,5 @@ end;
 ## See Also
 
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

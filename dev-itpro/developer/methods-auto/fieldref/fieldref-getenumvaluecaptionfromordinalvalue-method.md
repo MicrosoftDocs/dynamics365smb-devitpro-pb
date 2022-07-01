@@ -3,7 +3,7 @@ title: "FieldRef.GetEnumValueCaptionFromOrdinalValue(Integer) Method"
 description: "Gets an Enum value (or Option member) caption for the from the Enum metadata for the field that is currently selected."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,12 +35,12 @@ The Enum value's ordinal value to get the Enum value (or Option member) caption 
 
 ## Return Value
 *The Enum value caption*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The Enum value caption.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

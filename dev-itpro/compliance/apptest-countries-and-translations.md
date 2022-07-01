@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 02/01/2022
+ms.date: 05/18/2022
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.author: soalex
@@ -16,35 +16,38 @@ This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includ
 > [!NOTE]  
 > In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability, and states whether the localization is provided by Microsoft or partner(s). Note, that availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] as a cloud service and does not concern availability of partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
+The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you'll see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).  
+
+> [!NOTE]
+> Availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online. It does not apply to partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
 
 ## Countries and regions
 
-|Country/Region|Localized by|Availability|Environment Country in Tenant Admin Center|Azure Region|
+|Country/Region|Localized by|Availability|Environment Country Abbreviation|Azure Region|
 |-----------|---------|------------|-----------|---------|
 |Algeria|Partner|Available|DZ|South Africa North|
-|Angola|Partner|Planned, 2022 release wave 1|AO|South Africa North|
+|Angola|Partner|Available|AO|South Africa North|
 |Argentina|Partner|Available|AR|Brazil South|
 |Australia|Microsoft|Available|AU|Australia East|
 |Austria|Microsoft|Available|AT|West Europe, Netherlands|
-|Bahrain|Partner|Planned, 2022 release wave 1|BH|UAE North|
+|Bahrain|Partner|Available|BH|UAE North|
 |Bangladesh|Partner|Available|BD|Southeast Asia, Singapore|
 |Belgium|Microsoft|Available|BE|West Europe, Netherlands|
-|Bosnia and Herzegovina|Partner|Planned, 2022 release wave 1|BA|West Europe, Netherlands|
-|Botswana|Partner|Planned, 2022 release wave 1|BW|South Africa North|
+|Bosnia and Herzegovina|Partner|Available|BA|West Europe, Netherlands|
+|Botswana|Partner|Available|BW|South Africa North|
 |Bulgaria|Partner|Available|BG|West Europe, Netherlands|
 |Brazil|Partner|Available|BR|Brazil South|
 |Canada|Microsoft|Available|CA|Canada Central|
 |Chile|Partner|Available|CL|Brazil South|
 |Colombia|Partner|Available|CO|Brazil South|
-|Costa Rica|Partner|Planned, 2022 release wave 1|CR|Brazil South|
+|Costa Rica|Partner|Available|CR|Brazil South|
 |Croatia|Partner|Available|HR|West Europe, Netherlands|
-|Cyprus|Partner|Planned, 2022 release wave 1|CY|West Europe, Netherlands|
+|Cyprus|Partner|Available|CY|West Europe, Netherlands|
 |Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
 |Denmark|Microsoft|Available|DK|North Europe, Ireland|
-|Dominican Republic|Partner|Planned, 2022 release wave 1|DO|Brazil South|
-|Ecuador|Partner|Planned, 2022 release wave 1|EC|Brazil South|
-|El Salvador|Partner|Planned, 2022 release wave 1|SV|Brazil South|
+|Dominican Republic|Partner|Available|DO|Brazil South|
+|Ecuador|Partner|Available|EC|Brazil South|
+|El Salvador|Partner|Available|SV|Brazil South|
 |Egypt|Partner|Available|EG|South Africa North|
 |Estonia|Partner|Available|EE|North Europe, Ireland|
 |Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
@@ -53,8 +56,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Germany|Microsoft|Available|DE|Germany West Central|
 |Greece|Partner|Available|GR|West Europe, Netherlands|
 |Greenland (Denmark)|Microsoft|Available|DK|West Europe, Netherlands|
-|Guatemala|Partner|Planned, 2022 release wave 1|GT|Brazil South|
-|Honduras|Partner|Planned, 2022 release wave 1|HN|Brazil South|
+|Guatemala|Partner|Available|GT|Brazil South|
+|Honduras|Partner|Available|HN|Brazil South|
 |Hong Kong SAR|Partner|Available|HK|Southeast Asia, Singapore|
 |Hungary|Partner|Available|HU|West Europe, Netherlands|
 |Iceland|Microsoft|Available|IS|North Europe, Ireland|
@@ -62,7 +65,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
 |India|Microsoft|Available|IN|Central India|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
-|Jamaica|Partner|Planned, 2022 release wave 1|JM|South Central US|
+|Jamaica|Partner|Available|JM|South Central US|
 |Japan|Partner|Available|JP|Japan East, Japan|
 |Kenya|Partner|Available|KE|South Africa North|
 |Latvia|Partner|Available|LV|North Europe, Ireland|
@@ -70,19 +73,18 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Lithuania|Partner|Available|LT|North Europe, Ireland|
 |Luxembourg|Partner|Available|LU|West Europe, Netherlands|
 |Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
-|Maldives|Partner|Planned, 2022 release wave 1|MV|Southeast Asia, Singapore|
+|Maldives|Partner|Available|MV|Southeast Asia, Singapore|
 |Malta|Partner|Available|MT|West Europe, Netherlands|
-|Mauritius|Partner|Planned, 2022 release wave 1|MU|South Africa North|
+|Mauritius|Partner|Available|MU|South Africa North|
 |Mexico|Microsoft|Available|MX|South Central US|
 |Morocco|Partner|Available|MA|South Africa North|
-|Myanmar|Partner|Planned|MM|Southeast Asia, Singapore|
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
-|Nicaragua|Partner|Planned, 2022 release wave 1|NI|Brazil South|
+|Nicaragua|Partner|Available|NI|Brazil South|
 |Nigeria|Partner|Available|NG|South Africa North|
 |Norway|Microsoft|Available|NO|Norway East|
-|Panama|Partner|Planned, 2022 release wave 1|PA|Brazil South|
-|Paraguay|Partner|Planned, 2022 release wave 1|PY|Brazil South|
+|Panama|Partner|Available|PA|Brazil South|
+|Paraguay|Partner|Available|PY|Brazil South|
 |Peru|Partner|Available|PE|Brazil South|
 |Philippines|Partner|Available|PH|Southeast Asia, Singapore|
 |Poland|Partner|Available|PL|West Europe, Netherlands|
@@ -104,16 +106,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Switzerland|Microsoft|Available|CH|Switzerland North|
 |Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
-|Trinidad and Tobago|Partner|Planned, 2022 release wave 1|TT|Brazil South|
+|Trinidad and Tobago|Partner|Available|TT|Brazil South|
 |Tunisia|Partner|Available|TN|South Africa North|
 |Turkey|Partner|Available|TR|West Europe, Netherlands|
 |Ukraine|Partner|Available|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
 |United States|Microsoft|Available|US|East US|
-|Uruguay|Partner|Planned, 2022 release wave 1|UY|Brazil South|
+|Uruguay|Partner|Available|UY|Brazil South|
 |Vietnam|Partner|Available|VN|Southeast Asia, Singapore|
-|Zimbabwe|Partner|Planned, 2022 release wave 1|ZW|South Africa North|
+|Zimbabwe|Partner|Available|ZW|South Africa North|
 
 For an overview of where [!INCLUDE [prod_short](../includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 

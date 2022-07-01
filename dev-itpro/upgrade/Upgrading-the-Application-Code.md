@@ -401,7 +401,7 @@ For information about importing objects, see [Importing Objects](../cside/cside-
     >|Name|Extension package|
     >|----|---------|
     >|India Tax Base| IndiaTaxBase.app|
-    >|India Tax Engine| IndiaTaxEngine.app||
+    >|India Tax Engine| IndiaTaxEngine.app|
     >|India Tax GST| IndiaTaxGST.app|
     >|India Upgrade Tables| IndiaUpgradeTables.app|
     >|India TCS| IndiaUPGTCS.app|

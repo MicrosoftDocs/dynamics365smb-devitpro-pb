@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Dynamics 365 Business Central Administration Center Tool"
+description: Read about the MMC snap-in for creating and managing Business Central Server instances for on-premises deployments.
 author: jswymer
 ms.custom: na
 ms.reviewer: na

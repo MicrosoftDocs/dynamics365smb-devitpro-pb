@@ -3,7 +3,7 @@ title: "XmlDocument Data Type"
 description: "Represents an XML document."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,8 @@ The following methods are available on the XmlDocument data type.
 |-----------|-----------|
 |[Create()](xmldocument-create--method.md)|Creates an XmlDocument.|
 |[Create(Any,...)](xmldocument-create-joker-method.md)|Creates an XmlDocument.|
-|[ReadFrom(String, var XmlDocument)](xmldocument-readfrom-string-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
-|[ReadFrom(String, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-string-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
+|[ReadFrom(Text, var XmlDocument)](xmldocument-readfrom-string-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
+|[ReadFrom(Text, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-string-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 |[ReadFrom(InStream, var XmlDocument)](xmldocument-readfrom-instream-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 |[ReadFrom(InStream, XmlReadOptions, var XmlDocument)](xmldocument-readfrom-instream-xmlreadoptions-xmldocument-method.md)|Reads and parses the XML document from the given data source.|
 
@@ -41,13 +41,13 @@ The following methods are available on instances of the XmlDocument data type.
 |[AddFirst(Any,...)](xmldocument-addfirst-method.md)|Adds the specified content at the start of the child list of this document.|
 |[AsXmlNode()](xmldocument-asxmlnode-method.md)|Converts the node to an XmlNode.|
 |[GetChildElements()](xmldocument-getchildelements--method.md)|Gets a list containing the child elements for this document, in document order.|
-|[GetChildElements(String)](xmldocument-getchildelements-string-method.md)|Gets a list containing the child elements for this document, in document order.|
-|[GetChildElements(String, String)](xmldocument-getchildelements-string-string-method.md)|Gets a list containing the child elements for this document, in document order.|
+|[GetChildElements(Text)](xmldocument-getchildelements-string-method.md)|Gets a list containing the child elements for this document, in document order.|
+|[GetChildElements(Text, Text)](xmldocument-getchildelements-string-string-method.md)|Gets a list containing the child elements for this document, in document order.|
 |[GetChildNodes()](xmldocument-getchildnodes-method.md)|Gets a list containing the child elements for this document, in document order.|
 |[GetDeclaration(var XmlDeclaration)](xmldocument-getdeclaration-method.md)|Gets the XML declaration for this document.|
 |[GetDescendantElements()](xmldocument-getdescendantelements--method.md)|Gets a list containing the descendant elements for this document, in document order.|
-|[GetDescendantElements(String)](xmldocument-getdescendantelements-string-method.md)|Gets a list containing the descendant elements for this document, in document order.|
-|[GetDescendantElements(String, String)](xmldocument-getdescendantelements-string-string-method.md)|Gets a list containing the descendant elements for this document, in document order.|
+|[GetDescendantElements(Text)](xmldocument-getdescendantelements-string-method.md)|Gets a list containing the descendant elements for this document, in document order.|
+|[GetDescendantElements(Text, Text)](xmldocument-getdescendantelements-string-string-method.md)|Gets a list containing the descendant elements for this document, in document order.|
 |[GetDescendantNodes()](xmldocument-getdescendantnodes-method.md)|Gets a list containing the descendant nodes for this document, in document order.|
 |[GetDocument(var XmlDocument)](xmldocument-getdocument-method.md)|Gets the XmlDocument for this node.|
 |[GetDocumentType(var XmlDocumentType)](xmldocument-getdocumenttype-method.md)|Gets the Document Type Definition (DTD) for this document.|
@@ -58,10 +58,10 @@ The following methods are available on instances of the XmlDocument data type.
 |[RemoveNodes()](xmldocument-removenodes-method.md)|Removes the child nodes from this document.|
 |[ReplaceNodes(Any,...)](xmldocument-replacenodes-method.md)|Replaces the children nodes of this document with the specified content.|
 |[ReplaceWith(Any,...)](xmldocument-replacewith-method.md)|Replaces this node with the specified content.|
-|[SelectNodes(String, var XmlNodeList)](xmldocument-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectNodes(String, XmlNamespaceManager, var XmlNodeList)](xmldocument-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
-|[SelectSingleNode(String, var XmlNode)](xmldocument-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
-|[SelectSingleNode(String, XmlNamespaceManager, var XmlNode)](xmldocument-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectNodes(Text, var XmlNodeList)](xmldocument-selectnodes-string-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectNodes(Text, XmlNamespaceManager, var XmlNodeList)](xmldocument-selectnodes-string-xmlnamespacemanager-xmlnodelist-method.md)|Selects a list of nodes matching the XPath expression.|
+|[SelectSingleNode(Text, var XmlNode)](xmldocument-selectsinglenode-string-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
+|[SelectSingleNode(Text, XmlNamespaceManager, var XmlNode)](xmldocument-selectsinglenode-string-xmlnamespacemanager-xmlnode-method.md)|Selects the first XmlNode that matches the XPath expression.|
 |[SetDeclaration(XmlDeclaration)](xmldocument-setdeclaration-method.md)|Sets the XML declaration for this document.|
 |[WriteTo(OutStream)](xmldocument-writeto-outstream-method.md)|Serializes and saves the current node to the given variable.|
 |[WriteTo(XmlWriteOptions, OutStream)](xmldocument-writeto-xmlwriteoptions-outstream-method.md)|Serializes and saves the current node to the given variable.|
@@ -70,5 +70,5 @@ The following methods are available on instances of the XmlDocument data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

@@ -3,7 +3,7 @@ title: "Report.TotalsCausedBy() Method"
 description: "Determines which field caused a group total to be calculated."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,7 +23,6 @@ Determines which field caused a group total to be calculated. This determines wh
 ```AL
 FieldNo :=   Report.TotalsCausedBy()
 ```
-
 ## Parameters
 *Report*  
 &emsp;Type: [Report](report-data-type.md)  
@@ -38,5 +37,5 @@ The number of the field that caused the group to end and a group total to be cal
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

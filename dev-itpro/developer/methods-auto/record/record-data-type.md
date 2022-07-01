@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,13 +24,13 @@ The following methods are available on instances of the Record data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[AddLink(String [, String])](record-addlink-method.md)|Adds a link to a record.|
+|[AddLink(Text [, Text])](record-addlink-method.md)|Adds a link to a record.|
 |[AddLoadFields([Any,...])](record-addloadfields-method.md)|Specifies fields to be initially loaded when the record is retrieved from its data source. Subsequent calls to AddLoadFields will not overwrite fields already selected for the initial load.|
 |[AreFieldsLoaded(Any,...)](record-arefieldsloaded-method.md)|Checks whether the specified fields are all initially loaded.|
 |[Ascending([Boolean])](record-ascending-method.md)|Gets or sets the order in which the system searches through a table.|
 |[CalcFields(Any [, Any,...])](record-calcfields-method.md)|Calculates the FlowFields in a record. You specify which fields to calculate by using parameters.|
 |[CalcSums(Any [, Any,...])](record-calcsums-method.md)|Calculates the total of a column in a table. You specify which fields to calculate by using parameters.|
-|[ChangeCompany([String])](record-changecompany-method.md)|Redirects references to table data from one company to another.|
+|[ChangeCompany([Text])](record-changecompany-method.md)|Redirects references to table data from one company to another.|
 |[ClearMarks()](record-clearmarks-method.md)|Removes all the marks from a record.|
 |[Consistent(Boolean)](record-consistent-method.md)|Marks a table as being consistent or inconsistent.|
 |[Copy(Record [, Boolean])](record-copy-method.md)|Copies a specified record's filters, views, automatically calculated FlowFields, marks, fields, and keys that are associated with the record from a table or creates a reference to a record.|
@@ -48,12 +48,12 @@ The following methods are available on instances of the Record data type.
 |[DeleteLinks()](record-deletelinks-method.md)|Deletes all of the links that have been added to a record.|
 |[FieldActive(Any)](record-fieldactive-method.md)|Checks whether a field is enabled.|
 |[FieldCaption(Any)](record-fieldcaption-method.md)|Gets the current caption of the specified field as a string.|
-|[FieldError(Any [, String])](record-fielderror-joker-string-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
+|[FieldError(Any [, Text])](record-fielderror-joker-string-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
 |[FieldError(Any, ErrorInfo)](record-fielderror-joker-errorinfo-method.md)|Stops the execution of the code causing a run-time error, and creates an error message for a field.|
 |[FieldName(Any)](record-fieldname-method.md)|Gets the name of a field as a string.|
 |[FieldNo(Any)](record-fieldno-method.md)|Gets the number assigned to a field in the table description.|
 |[FilterGroup([Integer])](record-filtergroup-method.md)|Gets or sets the filter group that is applied to a table.|
-|[Find([String])](record-find-method.md)|Finds a record in a table that is based on the values stored in keys.|
+|[Find([Text])](record-find-method.md)|Finds a record in a table that is based on the values stored in keys.|
 |[FindFirst()](record-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](record-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
 |[FindSet([Boolean] [, Boolean])](record-findset-method.md)|Finds a set of records in a table based on the current key and filter.|
@@ -92,13 +92,13 @@ The following methods are available on instances of the Record data type.
 |[SetAscending(Any, Boolean)](record-setascending-method.md)|Sets the sort order for the records returned. Use this method after you have set the keys to sort after, using SETCURRENTKEY. The default sort order is ascending. You can use SETASCENDING to change the sort order to descending for a specific field, while the other fields in the specified key are sorted in ascending order.|
 |[SetAutoCalcFields([Any,...])](record-setautocalcfields-method.md)|Sets the FlowFields that you specify to be automatically calculated when the record is retrieved from the database.|
 |[SetCurrentKey(Any [, Any,...])](record-setcurrentkey-method.md)|Selects a key for a table.|
-|[SetFilter(Any, String [, Any,...])](record-setfilter-method.md)|Assigns a filter to a field that you specify.|
+|[SetFilter(Any, Text [, Any,...])](record-setfilter-method.md)|Assigns a filter to a field that you specify.|
 |[SetLoadFields([Any,...])](record-setloadfields-method.md)|Sets the fields to be initially loaded when the record is retrieved from its data source. This will overwrite fields previously selected for initial load.|
 |[SetPermissionFilter()](record-setpermissionfilter-method.md)|Applies the user's security filter.|
-|[SetPosition(String)](record-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the supplied string. The remaining fields are not changed.|
+|[SetPosition(Text)](record-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the supplied string. The remaining fields are not changed.|
 |[SetRange(Any [, Any] [, Any])](record-setrange-method.md)|Sets a simple filter, such as a single range or a single value, on a field.|
 |[SetRecFilter()](record-setrecfilter-method.md)|Sets the values in the current key of the current record as a record filter.|
-|[SetView(String)](record-setview-method.md)|Sets the current sort order, key, and filters on a table.|
+|[SetView(Text)](record-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[TableCaption()](record-tablecaption-method.md)|Gets the current caption of a table as a string.|
 |[TableName()](record-tablename-method.md)|Gets the name of a table.|
 |[TestField(Any)](record-testfield-joker-method.md)|Tests that the content of the field is not zero or blank (empty string).|
@@ -121,8 +121,8 @@ The following methods are available on instances of the Record data type.
 |[TestField(Any, TextConst, ErrorInfo)](record-testfield-joker-textconst-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code)](record-testfield-joker-code-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Code, ErrorInfo)](record-testfield-joker-code-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, String)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
-|[TestField(Any, String, ErrorInfo)](record-testfield-joker-string-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Text)](record-testfield-joker-string-method.md)|Tests whether the contents of a field match a given value.|
+|[TestField(Any, Text, ErrorInfo)](record-testfield-joker-string-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum)](record-testfield-joker-anyenum-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Enum, ErrorInfo)](record-testfield-joker-anyenum-errorinfo-method.md)|Tests whether the contents of a field match a given value.|
 |[TestField(Any, Any)](record-testfield-joker-joker-method.md)|Tests whether the contents of a field match a given value.|
@@ -134,5 +134,5 @@ The following methods are available on instances of the Record data type.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

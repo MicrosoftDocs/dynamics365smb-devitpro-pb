@@ -17,13 +17,13 @@ This article covers two deployment scenarios:
 
   You install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] and [!INCLUDE[server](../developer/includes/server.md)] one a computer separate from the SQL Server database components.  
 
-  ![Installation on two computers.](../media/two-computer-topology-1.png "Installation on two computers")  
+  ![Installation on two computers with server and web server on one computer and the  database on another.](../media/two-computer-topology-1.png "Installation on two computers with server and web server on one computer and the  database on another")  
 
 - Scenario 2
 
   You install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] on a computer separate than [!INCLUDE[server](../developer/includes/server.md)] and the SQL Server database components.  
 
-  ![Installation on two computers.](../media/two-computer-topology-2.png "Installation on two computers")  
+  ![Installation on two computers with server and database on one computer and the  web server on another.](../media/two-computer-topology-2.png "Installation on two computers with server and database on one computer and the  web server on another")  
 
 <!--
 > [!TIP]  

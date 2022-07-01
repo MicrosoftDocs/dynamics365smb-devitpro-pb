@@ -29,7 +29,7 @@ Stops the execution of the code, causing a run-time error, and creates an error 
 An instance of the [FieldRef](fieldref-data-type.md) data type.  
 
 *[Optional] Text*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [String](/dynamics365/business-central/dev-itpro/developer/methods-auto/text/text-data-type)  
 Use this optional parameter to include the text of the error message. If this parameter is not present, default text will be used.  
 
 
@@ -84,5 +84,5 @@ For more information, see [Progress Windows, Message, Error, and Confirm Methods
  
 ## See Also
 [FieldRef Data Type](fieldref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

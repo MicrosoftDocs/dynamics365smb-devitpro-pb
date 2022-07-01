@@ -3,7 +3,7 @@ title: "Report.CreateTotals(Array of [Decimal]) Method"
 description: "Maintains totals for a variable in AL."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,5 +54,5 @@ CurrReport.CreateTOTALS(Amount, Quantity);
 
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

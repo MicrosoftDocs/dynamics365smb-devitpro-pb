@@ -3,7 +3,7 @@ title: "Compiler Designer Customization Information AL1416"
 description: "The {0} '{1}' cannot be moved relatively to '{2}' because '{2}' is missing."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ An element (action, control or view) cannot be moved relative to an anchor (acti
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

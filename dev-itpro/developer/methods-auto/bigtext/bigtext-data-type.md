@@ -3,7 +3,7 @@ title: "BigText Data Type"
 description: "Handles large text documents."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,13 +24,13 @@ The following methods are available on instances of the BigText data type.
 
 |Method name|Description|
 |-----------|-----------|
-|[AddText(String [, Integer])](bigtext-addtext-string-integer-method.md)|Adds a text string to a BigText variable.|
+|[AddText(Text [, Integer])](bigtext-addtext-string-integer-method.md)|Adds a text string to a BigText variable.|
 |[AddText(BigText [, Integer])](bigtext-addtext-bigtext-integer-method.md)|Adds a text string to a BigText variable.|
 |[GetSubText(var Text, Integer [, Integer])](bigtext-getsubtext-text-integer-integer-method.md)|Gets part of a BigText variable.|
 |[GetSubText(var BigText, Integer [, Integer])](bigtext-getsubtext-bigtext-integer-integer-method.md)|Gets part of a BigText variable.|
 |[Length()](bigtext-length-method.md)|Retrieves the length of the text stored in this BigText instance.|
 |[Read(InStream)](bigtext-read-method.md)|Streams a BigText object that is stored as a BLOB in a table to a BigText variable.|
-|[TextPos(String)](bigtext-textpos-method.md)|Gets the position at which a specific string first occurs in this BigText instance.|
+|[TextPos(Text)](bigtext-textpos-method.md)|Gets the position at which a specific string first occurs in this BigText instance.|
 |[Write(OutStream)](bigtext-write-method.md)|Streams a BigText object to a BLOB field in a table.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
@@ -41,5 +41,5 @@ This data type cannot be shown in a message window or be seen in the Debugger. T
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

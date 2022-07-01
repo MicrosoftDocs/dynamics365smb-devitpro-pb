@@ -3,7 +3,7 @@ title: "TestRequestPage Data Type"
 description: "Stores test request pages."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,14 +43,14 @@ The following methods are available on instances of the TestRequestPage data typ
 |[Preview()](testrequestpage-preview-method.md)|Gets a TestAction representing an action on the Page under Test.|
 |[Previous()](testrequestpage-previous-method.md)|Sets the current row of the test page as the previous row in the data set.|
 |[Print()](testrequestpage-print-method.md)|Gets a the Print representing an action on the Page under Test.|
-|[SaveAsExcel(String)](testrequestpage-saveasexcel-method.md)|Saves a report as a Microsoft Excel (.xls) file.|
-|[SaveAsPdf(String)](testrequestpage-saveaspdf-method.md)|Saves a report as an Adobe Acrobat (.pdf) file.|
-|[SaveAsWord(String)](testrequestpage-saveasword-method.md)|Saves a report as a Microsoft Word (.doc) file.|
-|[SaveAsXml(String, String)](testrequestpage-saveasxml-method.md)|Saves a report data set and the labels on a report as two XML (.xml) files.|
+|[SaveAsExcel(Text)](testrequestpage-saveasexcel-method.md)|Saves a report as a Microsoft Excel (.xls) file.|
+|[SaveAsPdf(Text)](testrequestpage-saveaspdf-method.md)|Saves a report as an Adobe Acrobat (.pdf) file.|
+|[SaveAsWord(Text)](testrequestpage-saveasword-method.md)|Saves a report as a Microsoft Word (.doc) file.|
+|[SaveAsXml(Text, Text)](testrequestpage-saveasxml-method.md)|Saves a report data set and the labels on a report as two XML (.xml) files.|
 |[Schedule()](testrequestpage-schedule-method.md)|Gets a TestAction representing an action on the Page under Test.|
 |[ValidationErrorCount()](testrequestpage-validationerrorcount-method.md)|Gets the number of validation errors that occurred on the test page.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

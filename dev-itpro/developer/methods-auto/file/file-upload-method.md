@@ -1,9 +1,9 @@
 ---
-title: "File.Upload(String, String, String, String, var Text) Method"
+title: "File.Upload(Text, Text, Text, Text, var Text) Method"
 description: "Sends a file from the client computer to the server computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# File.Upload(String, String, String, String, var Text) Method
+# File.Upload(Text, Text, Text, Text, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Sends a file from the client computer to the server computer. The client computer is the computer that is running the Windows client or the computer that is running a browser that accesses the web client.
@@ -23,27 +23,31 @@ Sends a file from the client computer to the server computer. The client compute
 
 ## Syntax
 ```AL
-[Ok := ]  File.Upload(DialogTitle: String, FromFolder: String, FromFilter: String, FromFile: String, var ToFile: Text)
+[Ok := ]  File.Upload(DialogTitle: Text, FromFolder: Text, FromFilter: Text, FromFile: Text, var ToFile: Text)
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *DialogTitle*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The title that you want to display in the dialog box for uploading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
           
+
 *FromFolder*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The name of the folder that is displayed in the dialog box. This is the default value, and the user can change it. This parameter is not supported by the web client. The browser uses the folder that was last accessed.
           
+
 *FromFilter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The type of file that can be uploaded to the server. In the Windows client, the type is displayed in the upload dialog box, so that the user can only select files of the specified type. For the web client, a user can try to upload any file type but an error occurs if the file is not the specified type.
         
+
 *FromFile*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The default file that you want to upload to the service. The name displays in the dialog box for uploading the file. The user can change the file. This parameter is not supported by the web client.
           
+
 *ToFile*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The path and file name to give the uploaded file. If you do not provide a path, or you upload the file that uses web client, then the file is uploaded to the following folder on the computer that is running the server: \\ProgramData\\Microsoft\\Microsoft Dynamics NAV\\110\\Server\\MicrosoftDynamicsNAVServer$DynamicsNAV110\\users\\ServiceAccount
@@ -86,5 +90,5 @@ Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);
 ## See Also
 
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

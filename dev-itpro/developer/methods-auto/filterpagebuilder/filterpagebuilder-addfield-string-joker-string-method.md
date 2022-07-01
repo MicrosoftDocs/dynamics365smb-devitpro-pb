@@ -1,9 +1,9 @@
 ---
-title: "FilterPageBuilder.AddField(String, Any [, String]) Method"
+title: "FilterPageBuilder.AddField(Text, Any [, Text]) Method"
 description: "Adds a table field to the filter control for a table on filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# FilterPageBuilder.AddField(String, Any [, String]) Method
+# FilterPageBuilder.AddField(Text, Any [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a table field to the filter control for a table on filter page.
@@ -21,7 +21,7 @@ Adds a table field to the filter control for a table on filter page.
 
 ## Syntax
 ```AL
-[Ok := ]  FilterPageBuilder.AddField(Name: String, Field: Any [, Filter: String])
+[Ok := ]  FilterPageBuilder.AddField(Name: Text, Field: Any [, Filter: Text])
 ```
 ## Parameters
 *FilterPageBuilder*  
@@ -29,14 +29,16 @@ Adds a table field to the filter control for a table on filter page.
 An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type.  
 
 *Name*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
+
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The name of the table field to add to the filter control for a table.
         
+
 *[Optional] Filter*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 A default filter on the field that is specified by the Field parameter.  
 
 
@@ -75,5 +77,5 @@ end;
 ## See Also
 [FilterPageBuilder Data Type](filterpagebuilder-data-type.md)  
 [Creating Filter Pages for Tables](../../devenv-filter-pages-for-filtering-tables.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

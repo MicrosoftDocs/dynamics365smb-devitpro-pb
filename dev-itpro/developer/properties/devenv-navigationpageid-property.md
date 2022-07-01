@@ -3,7 +3,7 @@ title: "NavigationPageId Property"
 description: "Specifies which page the TableRelation should navigate to."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,5 +24,5 @@ Specifies which page the TableRelation should navigate to.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

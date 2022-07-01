@@ -22,9 +22,9 @@ An argument in an event attribute cannot be changed to false. This is not allowe
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-This rule verifies that events that are available from other extensions such as [Business](../methods/devenv-business-attribute.md) type events or [Integration](../methods/devenv-integration-attribute.md) type events do not stop exposing their sender or their global variables.
+This rule verifies that events that are available from other extensions such as [Business](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-businessevent-attribute) type events or [Integration](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-integrationevent-attribute) type events do not stop exposing their sender or their global variables.
 
-This does not apply to [Internal](../methods/devenv-internal-attribute.md) type events as they are not exposed to dependent extensions.
+This does not apply to [Internal](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-internalevent-attribute) type events as they are not exposed to dependent extensions.
 
 ## Code examples triggering the rule
 
@@ -168,5 +168,5 @@ In the newer version of the extension, the sender becomes exposed through the bu
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)

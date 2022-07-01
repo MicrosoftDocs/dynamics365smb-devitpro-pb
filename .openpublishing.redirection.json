@@ -5157,7 +5157,7 @@
    },
    {
     "source_path": "dev-itpro/administration/about-intelligent-edge.md",
-    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migration-tool",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migrate-data#run-the-assisted-setup-guide",
     "redirect_document_id": false
    },
    {
@@ -7303,7 +7303,29 @@
     "source_path": "dev-itpro/developer/readiness/readiness-technical-validation-faq.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission-faq",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-management.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migrate-data#manage-the-migration",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/migration-tool.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/administration/migrate-data#run-the-assisted-setup-guide",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/al-go/algo-branching-strategy.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/al-go/algo-overview",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/whatsnew/whatsnew-update-20.1.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-20-1",
+    "redirect_document_id": false
    }
+
+   
   ] 
 }
 

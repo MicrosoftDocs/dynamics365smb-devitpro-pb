@@ -1,9 +1,9 @@
 ---
-title: "Dialog.Confirm(String [, Boolean] [, Any,...]) Method"
+title: "Dialog.Confirm(Text [, Boolean] [, Any,...]) Method"
 description: "Creates a dialog box that prompts the user for a yes or no answer."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Dialog.Confirm(String [, Boolean] [, Any,...]) Method
+# Dialog.Confirm(Text [, Boolean] [, Any,...]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Creates a dialog box that prompts the user for a yes or no answer. The dialog box is centered on the screen.
@@ -21,18 +21,20 @@ Creates a dialog box that prompts the user for a yes or no answer. The dialog bo
 
 ## Syntax
 ```AL
-Ok :=   Dialog.Confirm(String: String [, Default: Boolean] [, Value1: Any,...])
+Ok :=   Dialog.Confirm(String: Text [, Default: Boolean] [, Value1: Any,...])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the string that is displayed in the dialog box. Use a backslash (\\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
         
+
 *[Optional] Default*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Specifies the default button. If you do not specify a default button, then No is used as the default button.  
+
 *[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
@@ -82,5 +84,5 @@ If you select the default **true** value, then the second dialog box is shown:
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

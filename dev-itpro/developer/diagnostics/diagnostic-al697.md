@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0697"
 description: "Argument {0}: The argument should be a valid Field type."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/13/2021
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,10 +19,7 @@ author: SusanneWindfeldPedersen
 
 Argument {0}: The argument should be a valid Field type.
 
-> [!IMPORTANT]
-> This warning will become an error in Fall 2022.  
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

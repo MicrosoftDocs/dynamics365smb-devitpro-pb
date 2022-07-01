@@ -1,9 +1,9 @@
 ---
-title: "System.Round(Decimal [, Decimal] [, String]) Method"
+title: "System.Round(Decimal [, Decimal] [, Text]) Method"
 description: "Rounds the value of a numeric variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# System.Round(Decimal [, Decimal] [, String]) Method
+# System.Round(Decimal [, Decimal] [, Text]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Rounds the value of a numeric variable.
@@ -21,7 +21,7 @@ Rounds the value of a numeric variable.
 
 ## Syntax
 ```AL
-NewNumber :=   System.Round(Number: Decimal [, Precision: Decimal] [, Direction: String])
+NewNumber :=   System.Round(Number: Decimal [, Precision: Decimal] [, Direction: Text])
 ```
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
@@ -29,14 +29,16 @@ NewNumber :=   System.Round(Number: Decimal [, Precision: Decimal] [, Direction:
 *Number*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 The number that you want to round.  
+
 *[Optional] Precision*  
 &emsp;Type: [Decimal](../decimal/decimal-data-type.md)  
 This optional parameter determines the precision used when rounding. If you do not specify a Precision parameter, then the following steps are used to specify the precision:
 1.  The method ReadRounding in Codeunit 45, ReadRounding, is called. ReadRounding returns a decimal value that is the precision. By default, the ReadRounding method returns the Amount Rounding Precision field from the GLSetup table.
 2.  If you have customized Codeunit 45 and it does not implement the ReadRounding method, then the precision is specified as 2 digits after the decimal.
           
+
 *[Optional] Direction*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 This optional parameter specifies how to round the Number parameter. The default rounding method is '='. The following are the options for rounding:
 -   '=' rounds up or down to the nearest value (default). Values of 5 or greater are rounded up. Values less than 5 are rounded down.
 -   '\>' rounds up
@@ -99,5 +101,5 @@ When you round up \('>'\) a negative number, such as -1234.56789, it is rounded 
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

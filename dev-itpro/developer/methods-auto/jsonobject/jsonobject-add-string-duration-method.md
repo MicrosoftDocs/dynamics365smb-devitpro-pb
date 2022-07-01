@@ -1,9 +1,9 @@
 ---
-title: "JsonObject.Add(String, Duration) Method"
+title: "JsonObject.Add(Text, Duration) Method"
 description: "Adds a new property to a JsonObject."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# JsonObject.Add(String, Duration) Method
+# JsonObject.Add(Text, Duration) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Adds a new property to a JsonObject.
@@ -21,7 +21,7 @@ Adds a new property to a JsonObject.
 
 ## Syntax
 ```AL
-[Ok := ]  JsonObject.Add(Key: String, Value: Duration)
+[Ok := ]  JsonObject.Add(Key: Text, Value: Duration)
 ```
 ## Parameters
 *JsonObject*  
@@ -29,8 +29,9 @@ Adds a new property to a JsonObject.
 An instance of the [JsonObject](jsonobject-data-type.md) data type.  
 
 *Key*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
   
+
 *Value*  
 &emsp;Type: [Duration](../duration/duration-data-type.md)  
   
@@ -49,5 +50,5 @@ The operation will fail if the object already contains a property with the given
 
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

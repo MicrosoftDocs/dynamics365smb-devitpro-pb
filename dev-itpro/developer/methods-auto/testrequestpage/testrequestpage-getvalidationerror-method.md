@@ -3,7 +3,7 @@ title: "TestRequestPage.GetValidationError([Integer]) Method"
 description: "Gets the validation error that occurred on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,12 +35,12 @@ The index of the validation error that occurred on the test page.
 
 ## Return Value
 *Error*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The validation error that occured at the specified index.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestRequestPage Data Type](testrequestpage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -3,7 +3,7 @@ title: "ReportHandler Attribute"
 description: "Specifies that the method is a ReportHandler method, which handles specific reports."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

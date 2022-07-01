@@ -3,7 +3,7 @@ title: "JsonObject.Path() Method"
 description: "Retrieves the JSON path of the object relative to the root of its containing tree."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,6 @@ Path :=   JsonObject.Path()
 ```
 > [!NOTE]
 > This method can be invoked using property access syntax.
-
 ## Parameters
 *JsonObject*  
 &emsp;Type: [JsonObject](jsonobject-data-type.md)  
@@ -33,12 +32,12 @@ An instance of the [JsonObject](jsonobject-data-type.md) data type.
 
 ## Return Value
 *Path*  
-&emsp;Type: [String](../string/string-data-type.md)  
+&emsp;Type: [Text](../text/text-data-type.md)  
 The path of the object relative to its containing JSON tree. If the object is the root of the JSON tree, the path will be empty.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

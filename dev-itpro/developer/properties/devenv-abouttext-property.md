@@ -3,7 +3,7 @@ title: "AboutText Property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/13/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,7 +31,7 @@ Sets the body of text that appears in a teaching tip in the UI.
 
 ## Property Value
 
-Accepts a plain text value. Markdown or any similar formatting are treated as literals.
+Accepts a text value and supports a rich text value such as `**bold**` and `*italic*`.
 
 ## Remarks
 
@@ -58,7 +58,10 @@ For more information about designing teaching tips and tours, see [Teaching tips
 
 ```al
 AboutText = 'Sales invoices appear in this list until they are finalized and posted. After an invoice is posted, find it again in the Posted Sales Invoices list.';
+```
 
+```al
+AboutText = '**Sales Orders** can be sorted *Ascending* or *Descending*. Use the **Filter** function to enter a specific value set.';
 ```
 
 ## Extending page objects
@@ -71,7 +74,7 @@ AboutText = 'Sales invoices appear in this list until they are finalized and pos
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [AboutTitle property](devenv-abouttitle-property.md)  
 [AboutTextMl property](devenv-abouttextml-property.md)

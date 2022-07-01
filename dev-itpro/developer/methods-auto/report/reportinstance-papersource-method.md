@@ -3,7 +3,7 @@ title: "Report.PaperSource(Integer [, Integer]) Method"
 description: "Gets or sets the paper source used for the current page or a specified page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,7 @@ An instance of the [Report](report-data-type.md) data type.
 *PaperBinNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The tray number.  
+
 *[Optional] PhysicalPage*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The page number.  
@@ -40,5 +41,5 @@ The page number.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
