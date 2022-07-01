@@ -2416,6 +2416,9 @@
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ATTRIBUTES) -->
 ## Properties
 ### [Overview](properties/devenv-properties.md)
+### [Table and Table Extension Properties](properties/devenv-table-property-overview.md)
+### [Page and Page Extension Properties](properties/devenv-page-property-overview.md)
+### [Report and Report Extension Properties](properties/devenv-report-property-overview.md)
 <!-- [//]: # (START>DO_NOT_EDIT_PROPERTIES)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.) -->
