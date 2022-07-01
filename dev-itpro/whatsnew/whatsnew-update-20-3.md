@@ -22,6 +22,7 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
 - [Improved settings for managing updates](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improved-settings-managing-updates) (read more [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management))
+- [New AppSourceCop allowing you to run validation to determine any code hit by obsoleted objects for a given future version](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0105)
 
 ## Localization updates
 
