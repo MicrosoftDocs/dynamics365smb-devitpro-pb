@@ -1,0 +1,1 @@
+**DEPRECATED WITH** The tool is no longer shipped with Business Central 2022 Release Wave 2.

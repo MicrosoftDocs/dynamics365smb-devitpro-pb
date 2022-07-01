@@ -1,1 +1,0 @@
-**DEPRECATED WITH** Business Central 2022 Release Wave 2.

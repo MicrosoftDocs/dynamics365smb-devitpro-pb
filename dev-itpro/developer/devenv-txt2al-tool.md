@@ -4,14 +4,14 @@ description: "Description of the converter tool."
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 07/01/2022
 ms.topic: conceptual
 ms.author: solsen
 ---
 
 # The Txt2Al Conversion Tool
 
-[!INCLUDE[2022_releasewave2_deprecated](../includes/2022_releasewave2_deprecated.md)]
+[!INCLUDE[2022_releasewave2_deprecatedtool](../includes/2022_releasewave2_deprecatedtool.md)]
 
 The Txt2Al conversion tool allows you to take C/AL objects, which were created in [!INCLUDE[navnow_md](includes/navnow_md.md)] or [!INCLUDE[prod_short](includes/prod_short.md)] Spring 2019 (version 14), and convert them into the new .al format. The .al format is used when developing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. Converting the objects consists of following two steps:
 
