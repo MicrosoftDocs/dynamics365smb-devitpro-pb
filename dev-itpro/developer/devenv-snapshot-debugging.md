@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/23/2021
+ms.date: 07/01/2022
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -69,7 +69,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 > If you are having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
 
 > [!TIP]  
-> To do snapshot debugging of Service to Service (S2S) web service calls set the `WebServiceClient` for the `breakOnNext` configuration parameter and use table explorer to find the `userId` of the user record mapped to the S2S Azure AD Authentication Application. When the snapshot session is initialized, trigger the session either from the integration (service or device) or manually by invoking a web service call using tools like Postman or Fiddler. For information about creating S2S refer to [Using Service to Service Authentication](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication), [Client credentials grant flow]([https://docs.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), [Postman HowTo](https://blog.postman.com/pkce-oauth-how-to/)
+> To do snapshot debugging of Service to Service (S2S) web service calls set the `breakOnNext` configuration parameter to `WebServiceClient` in the `launch.json` file and use table explorer to find the `userId` of the user record mapped to the S2S Azure AD Authentication Application. When the snapshot session is initialized, trigger the session either from the integration (service or device) or manually by invoking a web service call using tools like Postman or Fiddler. For information about creating S2S refer to [Using Service to Service Authentication](../administration/automation-apis-using-s2s-authentication.md), [Client Credentials Grant Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), [App-only Authentication](/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps), and [Postman HowTo](https://blog.postman.com/pkce-oauth-how-to/).
 
 Once a snapshot debugging session is initialized the snapshot debugging session counter on the status bar will be updated and look like this:
 
