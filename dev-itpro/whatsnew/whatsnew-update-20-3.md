@@ -71,3 +71,4 @@ Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.m
 
 **Business Central Launch Event**  
 If you haven't watched them yet, remember that you still have access to a keynote and 20+ sessions about what's new in Business Central 2022 release wave 1. You'll hear from product leaders as they share with you the latest innovations and capabilities to help you confidently move to the cloud and unlock the insights needed to adapt faster, work smarter, and perform better. Whether you are a business professional, developer, or consultant at a Business Central partner, get ready to up level your game and drive business transformation. Register on [aka.ms/BCLE](https://aka.ms/BCLE)
+
