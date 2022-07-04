@@ -103,7 +103,6 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0090](appsourcecop-as0090.md)|Objects that can be referenced and which have been published must not be renamed.|Upgrade|Error|
 |[AS0091](appsourcecop-as0091.md)|One or more dependencies of the previous version of the extension could not be found.|Upgrade|Error|
 |[AS0092](appsourcecop-as0092.md)|The app.json file must specify an Azure Application Insights resource.|Configuration|Warning|
-|[AS0093](appsourcecop-as0093.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[AS0094](appsourcecop-as0094.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
 |[AS0095](appsourcecop-as0095.md)|The access modifier of a table field cannot be changed to a value that provides less access.|Configuration|Error|
 |[AS0096](appsourcecop-as0096.md)|The name of an extension cannot be changed.|Configuration|Error|
