@@ -5,13 +5,13 @@ ms.topic: article
 ms.service: dynamics365-business-central
 author: edupont04
 ms.author: mikebc
-ms.date: 06/30/2022
+ms.date: 07/04/2022
 
 ---
 
 # Chromium browser issue affecting Business Central
 
-After the June 2022 wave of browser updates to Chromium-based browsers such as Google Chrome and Microsoft Edge, customers have experienced glitches in the Business Central user interface. While the teams behind the Chromium-based browsers work to address the root cause, Microsoft has prepared a fix to supported versions of Business Central. For Business Central online customers, the fix is already rolling out, starting June 29. This article describes how on-premises customers can identify the issue and plan their approach to fixing or working around the problem.
+After the June 2022 wave of browser updates to Chromium-based browsers such as Google Chrome and Microsoft Edge, customers have experienced glitches in the Business Central user interface. While the teams behind the Chromium-based browsers work to address the root cause, Microsoft has prepared a fix to supported versions of Business Central. For Business Central online customers, the fix was applied to all Business Central deployments across all relevant regions between June 29 and July 4. The July cumulative updates for Business Central on-premises contain the same fix. This article describes how on-premises customers can identify the issue and plan their approach to fixing or working around the problem before their deployments are updated with the relevant July cumulative update.  
 
 ## How this issue affects your organization
 
@@ -35,7 +35,15 @@ Users accessing Business Central in any of the following ways may experience thi
 
 ## How to fix the issue for Business Central on-premises
 
-The fix to the web server will be included in the July or August cumulative updates that administrators can deploy to Business Central on-premises solutions. This section will be updated with a specific list of cumulative updates that contain the fix, as soon as those are made generally available.
+The fix to the web server will be included in the July 2022 cumulative updates that administrators can deploy to Business Central on-premises solutions. The following table will be updated with links to the cumulative updates that contain the fix as soon as those are made generally available.  
+
+| Version                           | Link    |
+|-----------------------------------|---------|
+| 2022 release wave 1, version 20.x | Pending |
+| 2021 release wave 2, version 19.x | Pending |
+| 2021 release wave 1, version 18.x | Pending |
+| Spring 2019 Update, version 14.x  | Pending |
+| Dynamics NAV 2018                 | Pending |
 
 ## What administrators can do to work around the issue
 
