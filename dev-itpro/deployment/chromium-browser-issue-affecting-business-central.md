@@ -96,3 +96,4 @@ If you access Business Central in your browser, consider temporarily switching t
 
 [System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2022 Release Wave 1](system-requirements-business-central-v20.md)  
 [Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases](../upgrade/upgrade-paths.md)  
+[Software Lifecycle Policy and Dynamics 365 Business Central On-Premises Updates](../terms/lifecycle-policy-on-premises.md)  
