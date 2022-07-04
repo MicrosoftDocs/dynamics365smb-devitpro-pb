@@ -3,7 +3,7 @@ title: "Update 20.3 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 20.3 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: edupont
 ms.custom: na
-ms.date: 06/29/2022
+ms.date: 07/04/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,8 +20,10 @@ Would you like to know what has changed in update 20.3? Below you'll find an ove
 
 Find an overview of hotfixes in this [article](INSERT LINK).
 
-## Feature changes  
+## Feature changes
+
 - [Improved settings for managing updates](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improved-settings-managing-updates) (read more [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management))
+- [New AppSourceCop allowing you to run validation to determine any code hit by obsoleted objects for a given future version](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0105)
 
 ## Localization updates
 
@@ -32,7 +34,7 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Release Plan  
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (releases from April 2022 through September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
 ## Upgrade to 20.3
 
