@@ -31,7 +31,7 @@ Users accessing Business Central in any of the following ways may experience thi
 | Mobile app for Android | **Impacted** | **Impacted** | **Impacted** |
 
 > [!NOTE]
-> The issue has been confirmed on supported version of Business Central, but most likely applies to other versions
+> The issue has been confirmed on the supported versions of Business Central, but most likely also applies to other versions.
 
 ## How to fix the issue for Business Central on-premises
 
