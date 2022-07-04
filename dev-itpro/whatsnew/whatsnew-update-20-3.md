@@ -13,4 +13,3 @@ author: EmmaNielsson
 ---
 
 # Update 20.3 for Microsoft Dynamics 365 Business Central online 2022 release wave 1
-
