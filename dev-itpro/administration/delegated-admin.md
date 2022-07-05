@@ -48,7 +48,7 @@ If a customer removes delegated permissions from you, you can still manage their
 
 When you sign in to your customers' [!INCLUDE [prod_short](../developer/includes/prod_short.md)] as the *delegated administrator* from the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], you have access to all areas of their [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. However, because you aren't registered as a regular user, there are certain tasks that you can't do.
 
-The following tasks aren't* available to the delegated administrator:
+The following tasks aren't available to the delegated administrator:
 
 - Run scheduled tasks in the job queue.  
 
