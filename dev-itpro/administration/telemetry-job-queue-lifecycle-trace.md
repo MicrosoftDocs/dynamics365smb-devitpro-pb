@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/04/2022
+ms.date: 07/05/2022
 ms.author: jswymer
 ---
 
@@ -56,7 +56,7 @@ Information if the job queue entry fails to be sent to the queue.
 |Dimension|Description or value|
 |---------|-----|
 |message|**Job queue entry not enqueued: {alJobQueueId}**|
-|severityLevel|**1**|
+|severityLevel|**2**|
 
 #### Custom dimensions
 
@@ -148,7 +148,7 @@ Occurs when a job queue entry finishes running.
 
 |Dimension|Description or value|
 |---------|-----|
-|eventId|**AL000082C**|
+|eventId|**AL0000E26**|
 |[See common custom dimensions](#other)||
 
 <!--
@@ -165,7 +165,7 @@ Occurs when a job queue entry fails to run.
 |Dimension|Description or value|
 |---------|-----|
 |message|**Job queue entry errored: {alJobQueueId}**|
-|severityLevel|**1**|
+|severityLevel|**2**|
 
 ### Custom dimensions
 
@@ -202,12 +202,8 @@ The following table explains custom dimensions that are common to all job queue 
 |extensionVersion|Specifies the version of the extension that contains the object run by the job queue entry.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-
 <!--
 {"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19353.19391","Environment type":"Production","componentVersion":"17.0.19353.19391","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","AadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E24","alObjectId":"1351","extensionPublisher":"Microsoft","alObjectType":"CodeUnit","alObjectName":"Telemetry Subscribers","Extension version":"17.2.19367.19396","extensionVersion":"17.2.19367.19396","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Extension name":"Base Application","extensionName":"Base Application","alJobQueueObjectType":"Codeunit","alDataClassification":"SystemMetadata","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","alJobQueueObjectId":"5339","alJobQueueStatus":"On Hold with Inactivity Timeout","alJobQueueId":"fe2b938c-60a9-45b7-b5e1-28afab72f336","alCategory":"AL JobQueueEntries","alJobQueueIsRecurring":"Yes"}
-
-
-
 -->
 
 ## Event IDs
@@ -219,10 +215,8 @@ The following table describes the event IDs that are currently emitted.
 |Enqueued |AL0000FNY | Occurs when a job queue entry fails to enqueue and this happens if no task scheduler is created behind it.|
 |Enqueued|AL0000E24  |Occurs when a job queue entry successfully enqueues and will after the specified alJobQueueEarliestStartDateTime.|
 |Started |AL0000E25 |Occurs right before the `Job Queue Start codeunit` is triggered and that codeunit will run the specified `Object ID to run`.|
-|Finished     |AL000082C| Occurs right after the `Job Queue start codeunit` is finished.|
 |Finished successfully   |AL0000E26 |Occurs at the very end of the job queue run.|
 |Error|AL0000HE7|Occurs when a job queue errors, and this is the first thing that is triggered before the updating of records.|
-
 
 ## See also
 
