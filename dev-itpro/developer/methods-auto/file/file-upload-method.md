@@ -90,5 +90,5 @@ Upload('Upload file','C:\','Text file (*.txt)|*.txt','Test.txt',varTest);
 ## See Also
 
 [File Data Type](file-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

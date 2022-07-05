@@ -70,5 +70,5 @@ The Azure Application Insights resource specified in the manifest of the extensi
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

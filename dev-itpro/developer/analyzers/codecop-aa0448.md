@@ -62,5 +62,5 @@ The Open(Dialog) method is not checked and is an exception from this rule.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

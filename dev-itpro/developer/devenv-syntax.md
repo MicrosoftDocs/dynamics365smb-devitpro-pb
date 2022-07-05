@@ -56,5 +56,5 @@ The following is a non-comprehensive list of the snippets that you can use in th
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)   
+[Get Started with AL](devenv-get-started.md)   
 [Developing Extensions in AL](devenv-dev-overview.md)

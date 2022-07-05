@@ -40,5 +40,5 @@ The number of elements in the JsonArray.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

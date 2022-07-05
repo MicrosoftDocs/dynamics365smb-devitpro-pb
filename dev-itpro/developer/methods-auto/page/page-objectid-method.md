@@ -54,5 +54,5 @@ CurrPage is a system-defined variable. For more information, see [System-Defined
 
 ## See Also
 [Page Data Type](page-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

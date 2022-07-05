@@ -43,7 +43,7 @@ Use this optional parameter to include the text of the error message. If you do 
 
 ## Remarks  
 
-Like a run-time error, this method causes the system to automatically end any transaction.  
+Like a runtime error, this method causes the system to automatically end any transaction.  
   
 ## Programming guidelines
 
@@ -112,5 +112,5 @@ The following message is displayed:
 ## See Also
 
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

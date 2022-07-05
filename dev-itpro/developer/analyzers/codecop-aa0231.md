@@ -73,5 +73,5 @@ Use the ability of the [Error](../methods-auto/dialog/dialog-error-errorinfo-met
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

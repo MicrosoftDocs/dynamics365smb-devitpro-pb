@@ -42,5 +42,5 @@ If set to **true**, the data on the page will be refreshed.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Page Data Type](page-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

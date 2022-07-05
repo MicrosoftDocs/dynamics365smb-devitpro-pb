@@ -1,9 +1,9 @@
 ---
 title: "WebServiceActionContext.AddEntityKey(Integer, Any) Method"
-description: "Add a new fieldId and value pair to the collection of entity keys."
+description: "Add a new fieldId, value pair to the collection of entity keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,7 @@ An instance of the [WebServiceActionContext](webserviceactioncontext-data-type.m
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The field ID of the entity key.
         
+
 *FieldValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
 The value for the field in the entity key.  
@@ -56,5 +57,5 @@ For a complete code example, see [Creating and Interacting with an OData V4 Boun
 ## See Also
 [WebServiceActionContext Data Type](webserviceactioncontext-data-type.md)  
 [Creating and Interacting with an OData V4 Bound Action](../../devenv-creating-and-interacting-with-odatav4-bound-action.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

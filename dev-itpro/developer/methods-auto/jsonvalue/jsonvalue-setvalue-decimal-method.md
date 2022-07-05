@@ -43,5 +43,5 @@ An instance of the [JsonValue](jsonvalue-data-type.md) data type.
 
 ## See Also
 [JsonValue Data Type](jsonvalue-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

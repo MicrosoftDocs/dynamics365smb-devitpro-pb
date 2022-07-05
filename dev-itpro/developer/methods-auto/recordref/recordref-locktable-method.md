@@ -99,5 +99,5 @@ If a data update depends on a prior read operation and there is a long time betw
 ## See Also
 
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -20,5 +20,5 @@ The per-tenant extension (or one of its dependencies) cannot be deployed as it h
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

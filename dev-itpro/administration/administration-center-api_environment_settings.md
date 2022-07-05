@@ -8,17 +8,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 06/14/2022
 ---
 # Environment Settings
 
-Allows you to manage environment-specific settings such as the environment's AppInsights key or the update window. That is, the timeframe is considered 'ok' for updates (and downtime as a result) to occur.
+Allows you to manage environment-specific settings such as the AppInsights key or the update window. 
 
 ## Get Update Settings
+
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -28,16 +29,21 @@ GET /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 `environmentName` - Name of the targeted environment
 
 ### Response
+
 Returns the environment's update settings, or "null" if none exist
+
 ```
 {
-  "preferredStartTimeUtc": datetime, // Specifies the start of an environment's update window. 
-  "preferredEndTimeUtc": datetime, // Specifies the end of environment's update window.
+  "preferredStartTime": string, // Start of environment update window in 24h format (HH:mm). Supported by API version 2.13 and later only. 
+  "preferredEndTime": string, // End of environment update window in 24h format (HH:mm). Supported by API version 2.13 and later only.  
+  "timeZoneId": string, // Windows time zone identifier. Supported by API version 2.13 and later only.  
+  "preferredStartTimeUtc": datetime, // Start of an environment's update window, expressed as an UTC timestamp
+  "preferredEndTimeUtc": datetime // End of an environment's update window, expressed as an UTC timestamp
 }
 ```
 
 > [!NOTE]  
-> The `date` components of the values are ignored, only the time components are used.
+> The UTC values identify the current or next immediate occurrence of the update window. For instance, when the request is issued, if the current time is within the update window defined for the environment, then `preferredStartTimeUtc` will identify an instant in the past, and `preferredEndTimeUtc` will identify an instant in the future. Otherwise, both the start and end times will identify instants in the future. For a static, deterministic set of values that uniquely identify the definition of the update window for a given environment, refer to the `preferredStartTime`, `preferredEndTime`, and `timeZoneId` values.
 
 ### Expected Error Codes
 
@@ -45,13 +51,42 @@ Returns the environment's update settings, or "null" if none exist
 
    - target: {applicationFamily}/{environmentName}
 
+## Get Time Zones for Update Settings
+
+**INTRODUCED IN:** API version 2.13
+
+Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
+
+```
+GET /admin/v2.13/applications/settings/timezones
+```
+ 
+### Response
+ 
+Returns a wrapped array of time zones.
+
+```
+{
+  "value":
+    [
+      {
+        "id": string, // Time zone identifier (for example, "Romance Standard Time")
+        "displayName": string, // Display name of the time zone (for example, "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris")
+        "currentUtcOffset": string, // Offset from UTC, expressed as a time span with +/-HH:mm format (for example, "+01:00", "-09:00")
+        "supportsDaylightSavingTime": boolean, // Indicates whether the time zone supports daylight saving time rules
+        "isCurrentlyDaylightSavingTime": boolean, // Indicates whether daylight saving time is in effect for the given time zone, at the instant the request is issued
+      }
+    ]
+}
+```
+
 ## Put Update Settings
 
 Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -61,6 +96,30 @@ PUT /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}
 `environmentName` - Name of the targeted environment
 
 ### Body
+
+With API version 2.13 and later, there are two different parameter sets for defining the update window: the *wall-time + timezone* parameter set and the *UTC* parameter set. Consumers can provide either parameter set, but not both. Earlier API versions only support the UTC parameter set.
+
+- The wall-time + timezone parameter set identifies the clock time (or "real time")&mdash;expressed in 24-hour format, like "22:00" for 10:00 PM or "07:30" for 7:30 AM&mdash;for a given time zone. The time zone ID must be a valid [Windows time zone identifier](/windows-hardware/manufacture/desktop/default-time-zones), for example, "Romance Standard Time" or "Pacific Standard Time".
+- The UTC parameter set identifies the start and end times in Coordinated Universal Time.
+
+> [!NOTE]
+> If the UTC parameter set is used when modifying the update window settings and the country of the environment supports multiple time zones, the time zone shown on the Environment Details page in the admin center will be reset to the default time zone for the country, which may not always be desirable. We recommend to use the new parameter set when consuming API v2.13 and later.
+
+Example with wall-time + timezone parameter set (supported only by API v2.13 and later):
+
+```
+{
+
+  "preferredStartTime": string, // Start of environment update window,
+
+  "preferredEndTime": string, // End of environment update window
+
+  "timeZoneId": string // Windows time zone identifier
+
+}
+```
+
+Example with UTC parameter set:
 
 ```
 {
@@ -94,6 +153,9 @@ Returns the updated settings
 
 `requestBodyRequired` - the request body must be provided
 
+`ScheduledUpgradeConstraintViolation` - the update window conflicts with the current update date that's set for the environment. Either the update would occur outside the allowed update date range or, if the update date is today, the update window is in the past. Adjust the update window or change the update date.
+
+
 ## Put AppInsights key
 
 Sets the key an environment uses for Azure AppInsights.
@@ -103,7 +165,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.11/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters

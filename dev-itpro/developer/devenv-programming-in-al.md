@@ -73,4 +73,4 @@ Reusing code makes developing applications both faster and easier. More importan
 [Methods](devenv-al-methods.md)  
 [System-Defined Variables](devenv-system-defined-variables.md)  
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)
+[Get Started with AL](devenv-get-started.md)

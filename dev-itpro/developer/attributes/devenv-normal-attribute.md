@@ -3,12 +3,11 @@ title: "Normal Attribute"
 description: "Specifies that the method is a Normal method."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -41,5 +40,5 @@ Specifies that the method is a Normal method.
 You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

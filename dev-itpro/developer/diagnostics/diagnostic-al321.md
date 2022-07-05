@@ -3,12 +3,11 @@ title: "Compiler Error AL0321"
 description: "Variable {0} cannot be included in the data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -25,5 +24,5 @@ Only variables of the type BigInteger,Boolean, Char, Decimal, Integer, Option, E
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
