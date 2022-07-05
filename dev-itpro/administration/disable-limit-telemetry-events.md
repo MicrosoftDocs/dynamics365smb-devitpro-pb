@@ -13,7 +13,11 @@ author: jswymer
 The application and platform can emit many telemetry trace events, which can be collected using various event trace tools. For example, telemetry trace events are recorded in the [!INCLUDE[server](../developer/includes/server.md)] channel logs, which you can see in Event Viewer, under **Applications and Services Logs** > **Microsoft** > **DynamicsNAV** > **Common** > **Admin**. 
 
 The number of events can place a large demand on the logging resources on the computer running the [!INCLUDE[server](../developer/includes/server.md)] instance. To help alleviate this demand, the [!INCLUDE[server](../developer/includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of customer telemetry trace events that are emitted from the application, or even turn off telemetry events altogether. Custom telemetry trace events have IDs from  700-712. 
-  
+
+>[!NOTE]
+>Logging of events from external proxies uses the configuration setting **Diagnostic Trace Level for External Proxies** ('ExternalTraceLevel') 
+
+
 To configure the **Diagnostic Trace Level** setting, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)], modify the [!INCLUDE[server](../developer/includes/server.md)] instance configuration file \(CustomSettings.config\) directly, or use the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/Set-NAVServerConfiguration) of the [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 >[!TIP]
