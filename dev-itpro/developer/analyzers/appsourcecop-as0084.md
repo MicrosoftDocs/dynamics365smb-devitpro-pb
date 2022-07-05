@@ -40,7 +40,7 @@ If you are not targeting the AppSource marketplace, you can suppress this rule u
 
 ## Code example triggering the rule
 
-### The ID range is outside the rnage allowed for AppSource applications
+### The ID range is outside the range allowed for AppSource applications
 
 The `app.json` file of the extension:
 ```json
