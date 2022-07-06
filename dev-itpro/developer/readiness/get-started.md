@@ -55,7 +55,7 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 ### Requesting an object range
 
-When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds a certain number of objects for your solution. To avoid overlap between objects used in different solutions, each partner is assigned a number of objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
+When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds some objects for your solution. To avoid overlap between objects used in different solutions, each partner is assigned many objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
 
 Depending on where you'll deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges.  
 
@@ -119,7 +119,7 @@ To add coworkers:
 
 ### Step 4 B: Getting access to the available builds and engagements
 
-Once you have successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
+Once you have successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
 
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|
@@ -154,9 +154,9 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 ### Set up DevOps processes for your project
 
-It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
+It's recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 
-You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
+You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for GitHub: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
 ## Step 6: Publish your app in the Microsoft commercial marketplace
 

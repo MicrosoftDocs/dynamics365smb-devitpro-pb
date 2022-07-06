@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 ## Building a landing page that drives a successful buying transaction
 
-Microsoft will drive qualified traffic to AppSource. Though, once a prospect becomes aware of your app, it will be your job to guide them through to a successful buying transaction. Deliberately mapping and architecting the buying journey is critical to ensure a high level of engagement and conversion. Only presenting your app’s features and functionality, or just providing a free trial, will not ensure prospects will become buyers. For this you need to have a good landing page that is built to help you capture attention, accelerate your customer acquisition process, and drive buying behavior. The recommendations on this page will help you do so.
+Microsoft will drive qualified traffic to AppSource. Though, once a prospect becomes aware of your app, it will be your job to guide them through to a successful buying transaction. Deliberately mapping and architecting the buying journey is critical to ensure a high level of engagement and conversion. Only presenting your app’s features and functionality, or just providing a free trial, won't ensure prospects will become buyers. For this you need to have a good landing page that is built to help you capture attention, accelerate your customer acquisition process, and drive buying behavior. The recommendations on this page will help you do so.
 
 ## Examples of how other partners have implemented our best practices
 
@@ -23,11 +23,11 @@ Have a look at their app landing pages and use them as inspiration to build your
 - Industry Built’s Build Food app
 - [LS Retail’s LS Express Start app](https://lsexpress.lsretail.com/)
 
-In the following checklist, we have “broken down” the elements, on their landing pages in order to showcase best practices on design and messaging. More specifically, we are looking into layout and structure elements, content elements, visual elements, anxiety reducing elements and support elements.
+In the following checklist, we have “broken down” the elements, on their landing pages in order to showcase best practices on design and messaging. More specifically, we're looking into layout and structure elements, content elements, visual elements, anxiety reducing elements and support elements.
 
 Additionally, we have provided specific recommendations on how to apply these elements to help you increase conversion and maximize the effectiveness of your product’s sales landing page.
 
-We urge you to review and implement these best practices on your landing page – in so doing you will contribute in providing the Microsoft community of customers with a consistent buying experience across publishers.
+We urge you to review and implement these best practices on your landing page – in so doing you'll contribute in providing the Microsoft community of customers with a consistent buying experience across publishers.
 
 ## Layout and structure elements
 
@@ -38,7 +38,7 @@ We urge you to review and implement these best practices on your landing page �
 |                                        |                                        |<!--  to be fixed ./media/image32.jpg -->|
 |                                        |                                        |<!-- to be fixed ./media/image33.jpg -->|
 |Top menu choices                        |Use clean, straightforward and descriptive menu options.|<!--/media/image34.jpg to be fixed -->|
-|Search box                              | Include a search box so visitors can quickly find what they are looking for.|<!-- to be fixed ./media/image37.jpg -->|
+|Search box                              | Include a search box so visitors can quickly find what they're looking for.|<!-- to be fixed ./media/image37.jpg -->|
 |Emotional tribal anchor photos          | Visuals create an emotional Add-onion. The brain skims over non-emotional photos.| <!-- to be fixed ./media/image38.jpg -->|
 |Visual                                    | Make your page easy to scan, with lots of strong visual imagery.|<!-- ./media/image39.jpg to be fixed -->|
 
@@ -47,10 +47,10 @@ We urge you to review and implement these best practices on your landing page �
 - The upper-left corner of the landing page is the most valuable section of the entire landing page.
 - Place your company logo in this location.
 
-If you need help formulating a positioning statement, try the value proposition generator located at [here](https://neuralimpact.ca/valueproposition/).
+If you need help with formulating a positioning statement, try the value proposition generator located at [here](https://neuralimpact.ca/valueproposition/).
 
-- There should ideally be 5 or fewer choices; do not include more than 7 options.
-- The menu text should state what the prospect gains if they click on the menu item
+- There should ideally be 5 or fewer choices; don't include more than seven options.
+- The menu text should state what the prospect gains if they select on the menu item
 - The text should be written from their perspective, not yours.
 
 **Recommended menu items:**
@@ -66,7 +66,7 @@ If you need help formulating a positioning statement, try the value proposition 
 **Engagement**
 
 - Too much text forces the brain to skim, skip, and exit. Text engages the logical, analytical brain, but not the emotional brain.
-- Keep it clean and straightforward in terms of design and layout. Use lots of pictures, graphs, and screen shots to enhance engagement.
+- Keep it clean and straightforward in terms of design and layout. Use lots of pictures, graphs, and screenshots to enhance engagement.
 
 ## Content elements: Text and messaging
 
@@ -76,12 +76,12 @@ If you need help formulating a positioning statement, try the value proposition 
 | | You want the prospect to mentally say “YES” as often as possible and to peak their curiosity enough to read more. |
 | | Your questions should be intriguing and customer-centric.|
 || In general, 8 out of 10 people will read headline copy, but only 2 out of 10 will read the rest. |
-|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it is easy to use and helps users make better business decisions. |
+|Microsoft Dynamics 365 product description|Somewhere on the landing page, make sure you include the standard Microsoft Dynamics 365 Business Central product description provided by Microsoft *This is a requirement because your product is adding value to and building on this foundational solution.*|*Insert this paragraph:* Microsoft Dynamics 365 Business Central is a comprehensive business management solution for small and medium-size businesses (SMBs) that have outgrown their basic accounting software. From day one, this new application makes ordering, selling, invoicing, and reporting easier and faster. Dynamics 365 Business Central is deeply integrated with Microsoft 365 and includes built-in intelligence, so it's easy to use and helps users make better business decisions. |
 |Messaging (Address their pains)| Pain is a strong motivator of action. |
 |-|- Identify 1-3 key sources of the client’s most prominent pain early on the page. |
 |-|- Call out the fears that are likely to be holding them back. |
 |-|- Your landing page text and messaging should predominantly focus on the pain the prospect is experiencing, and NOT the features of your product or service. |
-| Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.|- Describe the business challenges they are facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|
+| Clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.|- Describe the business challenges they're facing now and the ways their revenue growth, margins, productivity and so on, are being negatively impacted by not taking action now.|
 
 | Element                                | Description                             | Example |
 |--------------------------------------|------------------|-----------------------------------|
@@ -100,7 +100,7 @@ If you need help formulating a positioning statement, try the value proposition 
 |-|Use data as often as possible to support your statements.|
 |-|If you make specific claims, support your claims with proof, while Quantifying impacts and gains.|
 |-| The more specific and concrete your promise of value is, the better.|
-|-| Abstract concepts such as “more efficiency, more productivity, transform your business” are not emotionally impactful or convincing and do not compel a prospect to act.
+|-| Abstract concepts such as “more efficiency, more productivity, transform your business” aren't emotionally impactful or convincing and don't compel a prospect to act.
 
 Target market - If you support multiple countries or languages, this is a key selling feature. • Find a way to show this visually. <!--	./media/image49.jpg -->
 
@@ -130,16 +130,16 @@ Visual elements
 |--------------------------------------|------------------|-----------------------------------|
 |**Pictures (Differentiation comparison images)** | Show them, don’t tell them|Show the before and after state.|
 
-- This is a visual image of how your prospects do things now versus how they will be able to do it in the future.
-- You are not telling them but showing them using a visual.
+- This is a visual image of how your prospects do things now versus how they'll be able to do it in the future.
+- You aren't telling them but showing them using a visual.
 
 | Element                              | Description | Example |
 |--------------------------------------|-------------|---------|
-|**Compelling proof screen shots**     |Visually demonstrate all the claims that you are making. |Quickly and easily view inventory items.|
+|**Compelling proof screenshots**     |Visually demonstrate all the claims that you're making. |Quickly and easily view inventory items.|
 
 - Graphic dashboards are the most effective method.
 - Zoom in on the main benefit-related features.
-- Make sure it is readable, and the benefit is obvious.
+- Make sure it's readable, and the benefit is obvious.
 - Include a caption.
 - Data should be industry specific so that it resonates with the viewer.
 
@@ -177,20 +177,20 @@ Your testimonials should answer the following questions:
 
 | Element         | Description | Example |
 |-----------------|-------------|---------|
-|**Reduce risk**|Prospects are afraid of being scammed and taken advantage of on the internet. They are naturally cautious and highly suspect.|Source: Microsoft.com|
+|**Reduce risk**|Prospects are afraid of being scammed and taken advantage of on the internet. They're naturally cautious and highly suspect.|Source: Microsoft.com|
 
 - You want to convert prospects to buyers.
 - Make it easy for them to buy, while reducing their anxiety.
 Transparency is the key to building trust.
 - Make sure that you include a link to a BUY NOW page, which includes full pricing details.
-- Give them a compelling offer they cannot refuse. Offer a time-limited trial or special pricing discount if they buy in 30 days.
+- Give them a compelling offer they can't refuse. Offer a time-limited trial or special pricing discount if they buy in 30 days.
 - Use scarcity to compel action. Offer a 100% money-back guarantee.
 
 We recommend providing three offerings, optimized for three different customer segments. For more recommendations on pricing, see the pricing guide located at https://mbspartner.microsoft.com/BFI/Topic/64
 
 | Element       | Description |
 |---------------|-------------|
-|**Live chat**|Include live chat, with a photo of one of your team members smiling at an appropriate time to increase conversion, such as when a prospect clicks the back button on your pricing page. |
+|**Live chat**|Include live chat, with a photo of one of your team members smiling at an appropriate time to increase conversion, such as when a prospect selects the back button on your pricing page. |
 
 - Include their name if possible to build trust.
 
@@ -201,7 +201,7 @@ We recommend providing three offerings, optimized for three different customer s
 |**SHORT lead capture form**|Include a lead capture form on your page.|
 
 - Only ask for their name and email address, you can get the rest later.
-- Your forms should not have more than 4 or 5 fields to fill out. You have not yet earned the right or enough trust to ask for too much information at this point.
+- Your forms shouldn't have more than four or five fields to fill out. You haven't yet earned the right or enough trust to ask for too much information at this point.
 
 Most lead capture forms are way too long, demanding, and intimidating, and have low completion rates.
 
@@ -223,4 +223,4 @@ Most lead capture forms are way too long, demanding, and intimidating, and have 
 
 | Element        | Description |
 |----------------|-------------|
-|**Close them! Add a get started button**|Include a very specific call-to-action button with the option to buy or try.|
+|**Close them! Add a get started button**|Include a specific call-to-action button with the option to buy or try.|

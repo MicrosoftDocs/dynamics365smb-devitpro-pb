@@ -29,9 +29,9 @@ When creating a name for your offer, you can use the following two naming struct
 **How to create a strong app name for your offer**:
 
 *Do’s*
-- Ideally, your app name should communicate the core value of the offer and it should not be tied to a specific product 
+- Ideally, your app name should communicate the core value of the offer and it shouldn't be tied to a specific product 
 - Benefit-based names are always more effective than descriptive names. 
-- Use industry specific vocabulary or benefit-based references in your product name if possible. This will increase relevance and conversion rates.
+- Use industry specific vocabulary or benefit-based references in your product name if possible, which will increase relevance and conversion rates.
 
 *Don't*
 - Don't use special characters such as #, /, % etc. 
@@ -50,13 +50,13 @@ When creating a name for your offer, you can use the following two naming struct
 
 
 ## Offer Summary
- The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Therefore; make sure that it is clear and concise.
+ The summary is the first paragraph that the prospect reads, as it will appear on your app's search page. Therefore; make sure that it's clear and concise.
 
 **How to create a good and concise summary?** 
 - The summary should be max. 25 words or 100 characters including spaces.
 - The summary should summarize the value proposition of your offer in one short and concise sentence.
 - The value proposition is a statement of the unique benefits your product delivers to the customer. 
-- The summary can be in any one language (you can choose any language to write your summary in, but do not mix languages) 
+- The summary can be in any one language (you can choose any language to write your summary in, but don't mix languages) 
 
 
-If you need help formulating a positioning statement, try the value proposition generator located [here](https://neuralimpact.ca/valueproposition).
+If you need help with formulating a positioning statement, try the value proposition generator located [here](https://neuralimpact.ca/valueproposition).
