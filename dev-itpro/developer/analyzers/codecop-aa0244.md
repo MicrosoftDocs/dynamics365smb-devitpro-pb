@@ -17,7 +17,35 @@ author: SusanneWindfeldPedersen
 Do not use identical names for parameters and global variables.
 
 ## Description
-Do not use identical names for parameters and global variables.
+Do not use identical names for parameters and global variables. This CodeCop rule is similar to [#AA0198](./codecop-aa0198.md) but it applies to method parameters.
+
+The rule warns when method's parameters names collide with global variable names but with the following specifics for Event declaration.
+
+AA0244 does not warn on Events with the exception of Integration Events that have GlobalVarAccess set to true. 
+## No warning
+```AL
+codeunit 50100 MyCodeunit
+{
+    // GlobalVarAccess = false hence we don't warn
+    [IntegrationEvent(true, false)]
+    local procedure MyNewEvent(EventParamA: Integer)
+    begin
+    end;
+}
+```
+## Warning
+```AL
+codeunit 50100 MyCodeunit
+{
+    // GlobalVarAccess = true hence we warn
+    [IntegrationEvent(true, true)]
+    local procedure MyNewEvent(EventParamA: Integer)
+    begin
+    end;
+}
+```
+
+Note: AA0244 warns on EventSubscribers and even if the subscribers dont't have control over the names of the parameters they have control over the global variables living in the Codeunit.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
