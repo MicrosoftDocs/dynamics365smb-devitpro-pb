@@ -45,6 +45,8 @@ The duration in milliseconds to wait before the request times out.
 
 ## Remarks
 
+If you do not set a duration, then a default value is used. The default value is currently 100000 ms (100 seconds).
+
 The *SetTimeout* duration is limited by the **NavHttpClientMaxTimeout** parameter that is configured for [!INCLUDE[server](../../includes/server.md)] instance. If you set the duration to a value that is greater than the value of the  **NavHttpClientMaxTimeout** parameter, a 'NavNclHttpClientTimeoutTooLargeException' error is thrown. The default value of the **NavHttpClientMaxTimeout** parameter is 00:05:00. To change the **NavHttpClientMaxTimeout** parameter, see [Configuring Business Central Server](../../../administration/configure-server-instance.md#Development).
 
 ## See Also
