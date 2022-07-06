@@ -50,12 +50,11 @@ page 50100 MyPage
 }
 ```
 
-Promoted actions are currently rendered on the promoted section of the command bar based on the Visible property set on the action, without considering their actual visibility in the default section of the command bar. 
 
-`MyPromotedAction` doesn't have the visible property set, so it is visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` is not visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
+`MyPromotedAction` doesn't have the visible property set, so it's visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` is not visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
 
-> [!NOTE]
-> A similar behaviour can be achieved by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`.
+> [!NOTE]  
+> A similar behavior can be achieved by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`.
 
 ## How to fix this diagnostic?
 
@@ -86,7 +85,7 @@ page 50100 MyPage
 }
 ```
 
-There is no impact on the promoted section of the command bar because promoted actions remain visible. However, promoted actions and non-promoted actions become visible in the default section of the command bar.  
+There's no impact on the promoted section of the command bar as promoted actions remain visible. However, promoted actions and non-promoted actions become visible in the default section of the command bar.  
 
 Use this approach if you want the group and its actions to be visible.
 
@@ -117,7 +116,7 @@ page 50100 MyPage
 }
 ```
 
-There is no impact on the promoted section of the command bar because promoted actions remain visible. There is also no impact on the default section of the command bar since promoted actions are promoted only and non-promoted actions remain hidden.  
+There's no impact on the promoted section of the command bar as promoted actions remain visible. There's also no impact on the default section of the command bar since promoted actions are promoted only and non-promoted actions remain hidden.  
 
 Use this approach if you want to keep the current behaviour.
 
@@ -147,7 +146,7 @@ page 50100 MyPage
 }
 ```
 
-There is no impact on the default section of the command bar because all actions remain hidden by the group. However, the promoted actions do not appear on the promoted section of the command bar anymore.  
+There's no impact on the default section of the command bar since all actions remain hidden by the group. However, the promoted actions do not appear in the promoted section of the command bar anymore.  
 
 Use this approach if you didn't expect `MyPromotedAction` to appear in the promoted section of the command bar and you want to hide it completely. 
 
