@@ -50,6 +50,7 @@ page 50100 MyPage
 }
 ```
 
+Promoted actions are currently rendered on the promoted section of the command bar based on the Visible property set on the action, without considering their actual visibility in the default section of the command bar.
 
 `MyPromotedAction` doesn't have the visible property set, so it's visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` is not visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
 
