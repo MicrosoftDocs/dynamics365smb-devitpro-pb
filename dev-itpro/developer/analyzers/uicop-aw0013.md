@@ -50,9 +50,9 @@ page 50100 MyPage
 }
 ```
 
-Promoted actions are currently rendered on the promoted side of the action bar based on the Visible property set on the action without considering their actual visibility on the right side of the action bar. 
+Promoted actions are currently rendered on the promoted section of the command bar based on the Visible property set on the action, without considering their actual visibility in the default section of the command bar. 
 
-`MyPromotedAction` doesn't have the visible property set, so it is visible by default and the promoted action will be rendered on the promoted side of the action bar. However, since `MyGroup` is not visible, `MyPromotedAction` will not be visible on the left side of the action bar.
+`MyPromotedAction` doesn't have the visible property set, so it is visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` is not visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
 
 > [!NOTE]
 > A similar behaviour can be achieved by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`.
@@ -86,9 +86,9 @@ page 50100 MyPage
 }
 ```
 
-There is no impact on the promoted side of the action as promoted actions remain visible. However, promoted actions and non promoted actions become visible on the right side of the action bar.  
+There is no impact on the promoted section of the command bar because promoted actions remain visible. However, promoted actions and non-promoted actions become visible in the default section of the command bar.  
 
-You should then use this approach if you want the group and its actions to be visible.
+Use this approach if you want the group and its actions to be visible.
 
 ### 2. Make the action group visible and adjust the properties of actions
 
@@ -117,9 +117,9 @@ page 50100 MyPage
 }
 ```
 
-There is no impact on the promoted side of the action as promoted actions remain visible. There is also no impact on the right side since promoted actions are promoted only and non promoted actions remain hidden.  
+There is no impact on the promoted section of the command bar because promoted actions remain visible. There is also no impact on the default section of the command bar since promoted actions are promoted only and non-promoted actions remain hidden.  
 
-You should then use this approach if you want to keep the current behaviour.
+Use this approach if you want to keep the current behaviour.
 
 ### 3. Demote the actions in the group
 
@@ -147,9 +147,9 @@ page 50100 MyPage
 }
 ```
 
-There is no impact on the right side of the action bar since all actions remain hidden by the group. However, the promoted actions do not appear on the promoted side of the action bar anymore.  
+There is no impact on the default section of the command bar because all actions remain hidden by the group. However, the promoted actions do not appear on the promoted section of the command bar anymore.  
 
-You should then use this approach if you didn't expect `MyPromotedAction` to appear on the promoted side of the action bar and wants to hide it completely. 
+Use this approach if you didn't expect `MyPromotedAction` to appear in the promoted section of the command bar and you want to hide it completely. 
 
 ## See Also  
 [UICop Analyzer](uicop.md)  
