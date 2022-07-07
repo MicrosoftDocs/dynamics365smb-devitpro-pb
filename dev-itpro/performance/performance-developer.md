@@ -111,6 +111,8 @@ Make sure that your external application can handle the two HTTP status codes *4
 
 - Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
 
+One common pattern is to implement a queue in your external application so that you can flatten spikes of traffic. If a requests gets a HTTP status code *429 (Too Many Requests)*, then put it back in the queue and apply one of the retry strategies described above.
+
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
 
 The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
