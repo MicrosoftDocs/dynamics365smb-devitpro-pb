@@ -66,8 +66,9 @@ After creation of the store, in the **Shopify Admin** of the created shop, apply
 
 As a partner, you probably already have a [!INCLUDE[prod_short](../includes/prod_short.md)] account for demos. If not, you should create one. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md).
 
+---
 
-In the [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
+### In the [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 2. Choose the **New** action.
