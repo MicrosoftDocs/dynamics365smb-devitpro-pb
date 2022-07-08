@@ -68,7 +68,9 @@ As a partner, you probably already have a [!INCLUDE[prod_short](../includes/prod
 
 ---
 
-### In the [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
+### Connect Business Central to the Shopify shop
+
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 2. Choose the **New** action.
