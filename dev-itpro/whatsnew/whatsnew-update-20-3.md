@@ -18,7 +18,7 @@ Would you like to know what has changed in update 20.3? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](INSERT LINK).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5016304).
 
 ## Feature changes
 
