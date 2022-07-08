@@ -2,7 +2,7 @@
 title: Business Central compatibility matrix
 description: Provides an overview of the Business Central versions and their compatibility
 ms.custom: na
-ms.date: 07/01/2022
+ms.date: 07/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -76,7 +76,7 @@ The following table lists the Business Central 17 versions and the minimum versi
 |[17.14](https://support.microsoft.com/help/5010205)|[18.10](https://support.microsoft.com/help/5011305)|[19.4](https://support.microsoft.com/help/5011306)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|
 |[17.15](https://support.microsoft.com/help/5011304)|[18.11](https://support.microsoft.com/help/5012306)|[19.5](https://support.microsoft.com/help/5012307)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|
 |[17.16](https://support.microsoft.com/help/5012305)|[18.12](https://support.microsoft.com/help/5013421)|[19.6](https://support.microsoft.com/help/5013422)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|
-|[17.7](https://support.microsoft.com/help/5013420)<sup>[\[1\]](#1)</sup>|18.13|19.7|20.1|
+|[17.7](https://support.microsoft.com/help/5013420)<sup>[\[1\]](#1)</sup>|[18.13](https://support.microsoft.com/help/5014489)|[19.7](https://support.microsoft.com/help/5014490|20.1|
 
 To see the available updates for Business Central 2020 Release Wave 2, see [Released updates for Microsoft Dynamics 365 Business Central 2020 Release Wave 2](https://support.microsoft.com/en-us/help/4583507).
 
