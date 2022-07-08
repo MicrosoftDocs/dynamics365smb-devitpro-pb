@@ -3,7 +3,7 @@ title: "Update 20.3 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 20.3 update of Business Central online, which is part of 2022 release wave 1.
 ms.author: edupont
 ms.custom: na
-ms.date: 07/04/2022
+ms.date: 07/08/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,6 +24,7 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 
 - [Improved settings for managing updates](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/improved-settings-managing-updates) (read more [here](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-update-management))
 - [New AppSourceCop allowing you to run validation to determine any code hit by obsoleted objects for a given future version](/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop-as0105)
+- As continuation for [Support inventory pick and warehouse pick operations for jobs](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/support-inventory-pick-warehouse-pick-operations-jobs), we introduce  a **To-Job Bin Code** field on the **Location Card** page to support warehouse pick scenarios. You can also use it in inventory picks if you prefer a specific bin to be set on a job planning line.
 
 ## Localization updates
 
@@ -69,6 +70,6 @@ The Business Central office hours calls will be unavailable in July. For August 
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
 
-**Business Central Launch Event**  
-If you haven't watched them yet, remember that you still have access to a keynote and 20+ sessions about what's new in Business Central 2022 release wave 1. You'll hear from product leaders as they share with you the latest innovations and capabilities to help you confidently move to the cloud and unlock the insights needed to adapt faster, work smarter, and perform better. Whether you are a business professional, developer, or consultant at a Business Central partner, get ready to up level your game and drive business transformation. Register on [aka.ms/BCLE](https://aka.ms/BCLE)
+<!--**Business Central Launch Event**  
+If you haven't watched them yet, remember that you still have access to a keynote and 20+ sessions about what's new in Business Central 2022 release wave 1. You'll hear from product leaders as they share with you the latest innovations and capabilities to help you confidently move to the cloud and unlock the insights needed to adapt faster, work smarter, and perform better. Whether you are a business professional, developer, or consultant at a Business Central partner, get ready to up level your game and drive business transformation. Register on [aka.ms/BCLE](https://aka.ms/BCLE)-->
 
