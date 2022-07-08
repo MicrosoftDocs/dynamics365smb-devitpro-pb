@@ -35,9 +35,9 @@ For more information, see [Partner Center Account](/partner-center/partner-cente
 
 ### PartnerSource Business Center (PSBC) account
 
-To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer and have a unique development license file with a specific object range.
+To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer. You must also have a unique development license file with a specific object range.  
 
-To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
+To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must have access to PartnerSource Business Center (PSBC). Either of the following agreements gives you access to PSBC, which is a first step towards getting a development license:
 
 - [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
 
