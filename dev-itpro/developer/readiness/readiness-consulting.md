@@ -19,7 +19,7 @@ To help business users get started quickly, Microsoft has added a catalog of con
 
 Business users are looking for experienced partners to help them get started with confidence by offering quality consulting services designed to deliver predictable outcomes. Implementation partners therefore play a vital role in helping customers to both assess their needs and evaluate and deploy the right solutions that can help them meet their business goals. 
 For this reason, AppSource supports the listing of consulting services offerings from System Integrator (SI) partners of Microsoft – the goal being to enable business users to connect swiftly with the expert services they need.  
-AppSource consulting services offerings are customer-specific engagements that have a defined outcome, are fixed in scope and duration, and have a fixed price or are free. Business users can easily request to be contacted by partners in a friction-free manner. Partners receive a notification in their CRM system and aim to respond to users within 48hrs after being contacted. 
+AppSource consulting services offerings are customer-specific engagements that have a defined outcome, are fixed in scope and duration, and have a fixed price or are free. Business users can easily request to be contacted by partners in a friction-free manner. Partners receive a notification in their CRM system and aim to respond to users within 48 hrs after being contacted. 
 
 ## How can I, as a user, find the consulting services that my business requires?
 
@@ -36,10 +36,10 @@ Microsoft’s catalog of consulting services offerings for solutions is based on
 To help deliver repeatable and predictable outcomes, partners and consulting services offerings need to meet the following requirements to be listed on AppSource:
 
 - Microsoft partners must have proven expertise and competency in delivering quality solutions for the products their consulting services offering is based on. 
-- Services offered are customer-specific engagements that are conducted on-site, are fixed in scope, many are fixed price or free, have a fixed duration, and a clearly defined outcome. 
+- The services offered are customer-specific engagements that are conducted on-site, are fixed in scope, many are fixed price or free, have a fixed duration, and a clearly defined outcome. 
 - The types of engagements are standardized to help drive consistency and predictable outcomes. The engagements categories are: briefings, assessments, workshops, proof of concepts, and implementations. 
 
-If you are interested in listing consulting services on AppSource, you can find more information on requirements and how to get started [here](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf). 
+If you're interested in listing consulting services on AppSource, you can find more information on requirements and how to get started [here](https://smp-cdn-prod.azureedge.net/documents/Microsoft%20AppSource%20Partner%20Listing%20Guidelines.pdf). 
 
 ## Where do I learn more?
 
