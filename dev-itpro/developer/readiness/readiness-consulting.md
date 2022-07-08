@@ -1,6 +1,6 @@
 ---
 title: "Consulting"
-description: ""
+description: "Experienced partners can help users get started with confidence by offering quality consulting services designed to deliver predictable outcomes."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021

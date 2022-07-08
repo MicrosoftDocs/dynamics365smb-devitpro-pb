@@ -1,6 +1,6 @@
 ---
 title: "Customizing Tenants"
-description: ""
+description: "Read about how to to build fully custom functionality or adapt what is already available out-of-the box."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.date: 04/01/2021
