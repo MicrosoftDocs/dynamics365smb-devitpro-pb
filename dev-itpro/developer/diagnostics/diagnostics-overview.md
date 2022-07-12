@@ -1,6 +1,6 @@
 ---
 title: "AL Diagnostics"
-description: ""
+description: "Get an overview of all the warning diagnostics."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2022
