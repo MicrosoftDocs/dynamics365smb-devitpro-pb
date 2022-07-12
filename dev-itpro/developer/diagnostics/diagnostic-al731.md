@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0726"
-description: "An identifier, a literal, or an option access is expected as the value of a filter expression."
+title: "Compiler Warning (Future Error) AL0731"
+description: "The name '{0}' does not exist in the current context."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2022
@@ -13,13 +13,19 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0726
+# Compiler Warning (Future Error) AL0731
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An identifier, a literal, or an option access is expected as the value of a filter expression.
+The name '{0}' does not exist in the current context.
+
+> [!IMPORTANT]
+> This warning will become an error with Business Central 2023 release wave 2.  
+
+## Description
+The referenced name does not exist in the current context.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
