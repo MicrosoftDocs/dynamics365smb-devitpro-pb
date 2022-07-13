@@ -41,7 +41,7 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 ## <a name="enable"></a> Enabling Application Insights
 To send telemetry data to Application Insights, you must have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to it. For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
 
-> [!NOTE]
+> [!NOTE\]
 > For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## <a name="ingest"></a> Controlling data ingestion
@@ -68,9 +68,9 @@ As a simple example, follow these steps:
     | sort by timestamp desc 
     ```
 
-### <a name="customdimensions"></a>About Custom Dimensions
+### <a name="customdimensions"></a>About custom dimensions
 
-Each trace has a `customDimensions` column that includes a set of dimensions containing metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. When logging an event where a dimension's value exceeds 8000 characters, the BC server will add additional overflow dimension keys to the event to contain the excess characters. There can be up to two additional overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. For example, if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+Each trace has a `customDimensions` column that includes a set of dimensions containing metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. When logging an event where a dimension's value exceeds 8000 characters, the Business Central server will add additional overflow dimension keys to the event to contain the excess characters. There can be up to two additional overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. For example, if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
 
 > [!NOTE]
 > The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
