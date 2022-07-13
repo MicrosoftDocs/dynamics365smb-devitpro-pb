@@ -3,7 +3,7 @@ title: "Deprecated features in client, server, database"
 description: Describes the features that have been removed or replaced in the platform components of Business Central. 
 author: bholtorf
 ms.custom: na
-ms.date: 01/28/2022
+ms.date: 07/13/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -82,6 +82,12 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 --->
 
 ## Changes in 2022 release wave 1 (version 20.0)
+
+### <a name="flfformat"></a>License files in the .flf format [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises (Warning)
+
+The following feature will be **Removed** in a later release.
+
+|Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
 
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
