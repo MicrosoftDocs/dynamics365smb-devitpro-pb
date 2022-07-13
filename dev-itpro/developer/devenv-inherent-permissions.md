@@ -1,6 +1,6 @@
 ---
 title: "Inherent Permissions"
-description: "Description of the inherent permissions and InherentPermissions attribute in AL for Business Central    ."
+description: "Description of how inherent permissions work and the InherentPermissions attribute in AL for Business Central."
 author: Javariya
 ms.custom: na
 ms.date: 07/12/2022
@@ -13,15 +13,15 @@ ms.author: a-jaaamir
 
 # Inherent Permissions
 
-The inherent permissions let the developers grant permissions to a method or event while the code executes. As soon as the code execution is completed, the permissions are revoked.  Inherent permissions simplify the overall management and maintenance work of permission sets. This feature gives the convenience to a specific AL method or event to get the elevated permissions to finish the task at hand without getting the permission errors. It also helps in tightening the overall security by limiting the permissions given directly to the users for long term, it gives the permissions to the code process instead.
+The inherent permissions let the developers grant permissions to a method or event while the code executes. As soon as the code execution is completed, the permissions are revoked. Inherent permissions simplify the overall management and maintenance work of permission sets. This feature gives the convenience to a specific AL method or event to get the elevated permissions to finish the task at hand without getting the permission errors. It also helps in tightening the overall security by limiting the permissions given directly to the users for long term, it gives the permissions to the code process instead.
 
 For example, a sales person wants to make a report that needs to have some critical pieces of information. Behind the scenes, a method will run a query to fetch that information from a table, which holds the sensitive data. Thus, instead of managing the permissions for that sales person, a developer can add the permission in this specific code path. This method will be granted permissions for the given object, in this case, the table. Now, whenever an authorized person does the action that executes this method, it has the needed permissions to complete the request.
 
 >[!NOTE]
-> For now, the `InherentPermissions` attribute is available for on premises version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] only. It'll be added to the cloud version in due time. 
+> For now, the `InherentPermissions` attribute is available for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises only. It'll be added to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  online in a later version. 
 
 >[!TIP]
-> It's better to use Inherent permissions for small dedicated procedures or system tasks which don't risk the data exposure to the users. 
+> It's better to use inherent permissions for small dedicated procedures or system tasks that don't risk exposure of data to the users. 
 
 ## Syntax
 
