@@ -1,5 +1,5 @@
 ---
-title: Monitoring and Analyzing Telemetry with Power BI
+title: Analyze and Monitor Telemetry with Power BI
 description: Learn how to install, configure, and use the Power BI app on Business Central telemetry data.
 author: jswymer
 ms.topic: overview
@@ -12,7 +12,8 @@ ms.author: jswymer
 ---
 
 
-# Analyzing Telemetry with Power BI
+# Analyze Telemetry with Power BI
+
 To make it very simple to analyze Dynamics 365 Business Central telemetry, we have developed a Power BI app available from Microsoft Appsource. The app is free and open source but requires Power BI pro licenses to use.
 
 The app consists of four reports: 
@@ -29,32 +30,40 @@ Once installed, the app shows sample data in the reports. This enables you to de
 ## Connecting to Azure Application Insights
 To connect the app to an Azure Application Insights resource, you need one thing: the Application Insights _Application id_ (you can get it from the _API Access menu_ in the Application Insights page on Azure).
 
-NB! If you get a "The OAuth authentication method isn't supported for this data source" error, check if the application id is correct; that's usually the root cause for that error.
+> [!NOTE]  
+> If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
 
 ## Configuring the app
+
 The app only has two required parameters needed for configuration:
+
 - Application Insights Application id (controls where data is stored)
 - Lookback period (the number of days back in time you want to show)
 
-Apart from required parameters, you can also control the following
-- AAD Tenant mapping (define which customer names correspond to which AAD tenant ids).
+Apart from required parameters, you can also control the following:
+
+- Azure Active Directory (Azure AD) tenant mapping (define which customer names correspond to which Azure AD tenant IDs).
 - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
 - The app refresh rate (the default is every night around midnight); this option is hidden under Advanced.
 
 ## Changing parameters after initial configuration
+
 Once you've completed the setup of the app, you can change parameters by going to the Power BI portal, opening the workspace for the installed app, going to settings, and then choosing Parameters.
 
 ## Sharing the app with coworkers and others
+
 Once installed, it is possible to share the app with coworkers and others (such as customers).
 
 Do this:
+
 - Share the Power BI workspace with the person. This will make the app appear under Workspaces in their Power BI portal.
 - Provide the URL to the person and ask them to open it in a browser. This will make the app appear under Apps in their Power BI portal.
 
-Read more here: [Share Power BI reports and dashboards with coworkers and others](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards)
+For more information, see [Share Power BI reports and dashboards with coworkers and others](/power-bi/collaborate-share/service-share-dashboards)
 
 
 ## Using the app
+
 Once installed and configured, how can you use the different reports in the app? We identified four different personas as described in this table:
 
 | Persona | Description |
