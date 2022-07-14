@@ -45,7 +45,7 @@ To send telemetry data to Application Insights, you must have an Application Ins
 > For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## <a name="ingest"></a> Controlling data ingestion
-Azure Application Insights supports overriding the standard data ingestion endpoint provided in the connection string (available from the Azure Application Insights portal). This means that you can send telemetry data to your own component for post-processing such as filtering or enrichment before ingesting data into your data source of choice (i.e., an Azure SQL database, a datalake, Azure Log Analytics, Azure Application Insights, or a third-party data store).
+Azure Application Insights supports overriding the standard data ingestion endpoint provided in the connection string (available from the Azure Application Insights portal). This means that you can send telemetry data to your own component for post-processing such as filtering or enrichment before ingesting data into your data source of choice (such as an Azure SQL database, a datalake, Azure Log Analytics, Azure Application Insights, or a third-party data store).
 
 You can override the ingestion endpoint by using the IngestionEndpoint key in the Azure Application Insights connection string.
 
