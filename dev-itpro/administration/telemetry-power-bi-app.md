@@ -1,5 +1,5 @@
 ---
-title: Monitoring and Analyzing Telemetry
+title: Monitoring and Analyzing Telemetry with Power BI
 description: Learn how to install, configure, and use the Power BI app on Business Central telemetry data.
 author: jswymer
 ms.topic: overview
@@ -21,17 +21,17 @@ The app consists of four reports:
 - Performance 
 - Administration
 
-# Getting the report
+## Getting the report
 Use this link to install/update the app: https://aka.ms/bctelemetryreport
 
 Once installed, the app shows sample data in the reports. This enables you to demo it to prospective customers without having to show data from existing customers.
 
-# Connecting to Azure Application Insights
+## Connecting to Azure Application Insights
 To connect the app to an Azure Application Insights resource, you need one thing: the Application Insights _Application id_ (you can get it from the _API Access menu_ in the Application Insights page on Azure).
 
 NB! If you get a "The OAuth authentication method isn't supported for this data source" error, check if the application id is correct; that's usually the root cause for that error.
 
-# Configuring the app
+## Configuring the app
 The app only has two required parameters needed for configuration:
 - Application Insights Application id (controls where data is stored)
 - Lookback period (the number of days back in time you want to show)
@@ -44,7 +44,7 @@ Apart from required parameters, you can also control the following
 ## Changing parameters after initial configuration
 Once you've completed the setup of the app, you can change parameters by going to the Power BI portal, opening the workspace for the installed app, going to settings, and then choosing Parameters.
 
-# Sharing the app with coworkers and others
+## Sharing the app with coworkers and others
 Once installed, it is possible to share the app with coworkers and others (such as customers).
 
 Do this:
@@ -54,7 +54,7 @@ Do this:
 Read more here: [Share Power BI reports and dashboards with coworkers and others](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards)
 
 
-# Using the app
+## Using the app
 Once installed and configured, how can you use the different reports in the app? We identified four different personas as described in this table:
 
 | Persona | Description |
