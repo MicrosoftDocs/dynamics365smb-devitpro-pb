@@ -194,7 +194,6 @@
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
-### [Use Power BI to analyze telemetry](administration/telemetry-power-bi-app.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
