@@ -30,7 +30,7 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView Property on pages.
+A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView property on pages.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
