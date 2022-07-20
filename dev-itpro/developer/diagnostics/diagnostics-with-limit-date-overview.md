@@ -1,6 +1,6 @@
 ---
 title: "Warnings Turning into Errors Overview"
-description: ""
+description: "Get an overview of all the warning diagnostics which will turn or have turned into an error in the specified Business Central release."
 ms.author: solsen
 ms.custom: na
 ms.date: 07/07/2022
