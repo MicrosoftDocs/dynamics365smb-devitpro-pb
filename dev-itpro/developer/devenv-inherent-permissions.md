@@ -13,15 +13,15 @@ ms.author: a-jaaamir
 
 # Inherent Permissions
 
-The inherent permissions let the developers grant permissions to a method or event while the code executes. As soon as the code execution is completed, the permissions are revoked. Inherent permissions simplify the overall management and maintenance work of permission sets. This feature gives the convenience to a specific AL method or event to get the elevated permissions to finish the task at hand without getting the permission errors. It also helps in tightening the overall security by limiting the permissions given directly to the users for long term, it gives the permissions to the code process instead.
+Inherent permissions enable developers to grant permissions to a method or event while the code executes. As soon as the code execution is completed, permissions are revoked. Inherent permissions simplify the overall management and maintenance work of permission sets. It enables a specific AL method or event to obtain elevated permissions to finish a task without getting permission errors. And it helps tighten overall security by limiting long-term user permissions and giving permissions to the code process instead.
 
-For example, a sales person wants to make a report that needs to have some critical pieces of information. Behind the scenes, a method will run a query to fetch that information from a table, which holds the sensitive data. Thus, instead of managing the permissions for that sales person, a developer can add the permission in this specific code path. This method will be granted permissions for the given object, in this case, the table. Now, whenever an authorized person does the action that executes this method, it has the needed permissions to complete the request.
+For example, a salesperson wants to make a report using some critical pieces of information. Behind the scenes, a query runs to fetch the information from the table holding the sensitive data. So instead of managing permissions for that salesperson, a developer can add the permission into this specific code path. This method will be granted permissions for the given object, which in this case is the table. Now, whenever an authorized person does the action that executes this method, it has the needed permissions to complete the request.
 
 >[!NOTE]
-> For now, the `InherentPermissions` attribute is available for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises only. It'll be added to [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  online in a later version. 
+> For now, the `InherentPermissions` attribute is available for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises only. It'll be added to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online in a later version. 
 
 >[!TIP]
-> It's better to use inherent permissions for small dedicated procedures or system tasks that don't risk exposure of data to the users. 
+> It's better to use the inherent permissions attribute for small dedicated procedures or system tasks that don't risk data exposure to users. 
 
 ## Syntax
 
@@ -29,11 +29,11 @@ For example, a sales person wants to make a report that needs to have some criti
 [InherentPermissions(PermissionObjectType: PermissionObjectType, ObjectId: Integer, Permissions: Text [, InherentPermissionsScope: InherentPermissionsScope])]
 ```
 
-To know details about the syntax of `InherentPermissions` attribute, see [InherentPermissions Attribute](../developer/attributes/devenv-inherentpermissions-attribute.md).
+To see details about the syntax of the `InherentPermissions` attribute, see [InherentPermissions Attribute](../developer/attributes/devenv-inherentpermissions-attribute.md).
 
 ## Example
 
-Lets look at the code example for `InherentPermissions` attribute. 
+Let's look at a code example for the `InherentPermissions` attribute. 
 
 ```AL
 [InherentPermissions
@@ -43,10 +43,10 @@ Procedure GetCustomersLocation(): CustomerLocation
 
 ```
 
-Referring to the example explained above, lets say that the report needs to show which location has more sales for the quarter. As it's not ideal to grant access to all the data belonging to customers, we granted a *read* permission to the method instead. It will only fetch the customer's location and leave the rest of the details private, for example, name, address, or email.
+Referring to the example explained above, let's say the report needs to show which location has more sales for the quarter. As it's not ideal to grant access to all data belonging to customers, *read* permission is granted to the method instead. It will only fetch the customer's location and leave other details (such as name, address, and so on) private.
 
 >[!NOTE]
-> It's optional to specify the `InherentPermissionsScope`. To read about different types of scope, see [InherentPermissionsScope System Option](../developer/methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md)
+> Specifying `InherentPermissionsScope` is optional. To read about different types of scope, see [InherentPermissionsScope System Option](../developer/methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
 ## See also
 
