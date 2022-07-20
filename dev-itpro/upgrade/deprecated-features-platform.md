@@ -3,7 +3,7 @@ title: "Deprecated features in client, server, database"
 description: Describes the features that have been removed or replaced in the platform components of Business Central. 
 author: bholtorf
 ms.custom: na
-ms.date: 01/28/2022
+ms.date: 07/13/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ On 31 March 2025, technical support for instrumentation key–based global inges
 |---------|---------|
 |Removed | Support for using an instrumentation key to setup telemetry for Business Central environments or apps will be removed in the 2023 release wave 1 (version 22.0). Please use the Azure Applications Insights connection string instead. |
 
-
+<!-- removed from deprecated list for now
 ### Running the Business Central web server on a different machine than the Business Central server
 
 The following configuration option will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
@@ -34,7 +34,7 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 |---------|---------|
 |Removed | Support for running the Business Central web server on a different machine than the Business Central server is no longer a supported configuration. This capability was sometimes needed for a deployment using the Business Central Windows client. |
 
-
+-->
 ## Changes in 2022 release wave 2 (version 21.0)
 
 ### WS-Federation with Azure Active Directory authentication
@@ -82,6 +82,12 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 --->
 
 ## Changes in 2022 release wave 1 (version 20.0)
+
+### <a name="flfformat"></a>License files in the .flf format [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises (Warning)
+
+The following feature will be **Removed** in a later release.
+
+|Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
 
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online

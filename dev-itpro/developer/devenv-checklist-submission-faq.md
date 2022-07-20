@@ -77,7 +77,7 @@ We do not run a manual validation of the apps anymore. Instead, we rely on you t
 
 ### When are my apps ready to be installed in my Business Central environment?
 
-Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation in Business Central.
+Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 Business Central currently does not support installing offers at the "Preview creation" step.
 
@@ -85,7 +85,10 @@ Business Central currently does not support installing offers at the "Preview cr
 
 You are not required to always include the dependencies of your extension as part of your submission.
 
-You are only required to include the dependencies for your extension as part of your submission if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in Business Central for the targeted countries/regions.
+You are only required to include the dependencies for your extension as part of your submission if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE[prod_short](../includes/prod_short.md)] for the targeted countries/regions.
+
+> [!NOTE]  
+> If you include the dependencies of your extension as part of the submission, these dependency versions will be used during the validation, even if there are higher versions already available in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 If you did not include the dependencies for your app and they are not available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 

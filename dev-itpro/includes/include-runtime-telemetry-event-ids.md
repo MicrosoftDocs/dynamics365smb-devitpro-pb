@@ -23,6 +23,8 @@
 | RT0021 | Web service key request| [Authentication with Web Service Key failed: {endpoint}](../administration/telemetry-webservices-access-key-trace.md#failed) |
 |RT0023|Troubleshooting|[Verbose telemetry enabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#enabled)|
 |RT0024|Troubleshooting|[Verbose telemetry disabled for session: {sessionId}](../administration/telemetry-verbose-logging-trace.md#enabled)|
+| RT0025 | Performance | [Database wait statistics snapshot taken: {snapshotId}](../administration/telemetry-database-wait-statistics-trace.md#waitstatstaken) | 
+| RT0026 | Performance | [Database wait statistics snapshot entry: {databaseWaitStatisticsCategory}](../administration/telemetry-database-wait-statistics-trace.md#waitstatsentry) | 
 | RT0028 | Performance | [Database deadlock occurred](../administration/telemetry-database-deadlocks-trace.md#database-deadlock-occurred) |
 | RT0030 | Error method call| [Error dialog displayed: {errorMessage}](../administration/telemetry-error-method-trace.md) | 
 

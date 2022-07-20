@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 06/14/2022
 ---
 
 # Notifications (API)
@@ -20,7 +20,7 @@ Notifications are sent to the recipient email addresses set up for the tenant. F
 Returns a list of notification recipients.
 
 ```
-GET /admin/v2.11/settings/notification/recipients
+GET /admin/v2.13/settings/notification/recipients
 ```
 
 ### Response
@@ -50,7 +50,7 @@ Create a new notification recipient.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.11/settings/notification/recipients
+PUT /admin/v2.13/settings/notification/recipients
 ```
 
 ### Body
@@ -90,7 +90,7 @@ Returns the newly created recipient.
 Deletes an existing notification recipient.
 
 ```
-DELETE /admin/v2.11/settings/notification/recipients/{id}
+DELETE /admin/v2.13/settings/notification/recipients/{id}
 ```
 
 ### Route Parameters
@@ -110,7 +110,7 @@ DELETE /admin/v2.11/settings/notification/recipients/{id}
 Returns the full set of notification settings including the list of recipients.
 
 ```
-GET /admin/v2.11/settings/notification
+GET /admin/v2.13/settings/notification
 ```
 
 ### Response

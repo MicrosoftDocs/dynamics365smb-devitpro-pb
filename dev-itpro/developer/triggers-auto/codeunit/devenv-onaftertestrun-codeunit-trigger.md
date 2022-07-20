@@ -108,7 +108,7 @@ log.Insert(true);
 The GetLastErrorText returns the text that was contained in the last error message.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [SubType Property (Codeunit)](../../properties/devenv-subtype-codeunit-property.md)  
 [OnBeforeTestRun Trigger](devenv-onbeforetestrun-codeunit-trigger.md)  

@@ -44,7 +44,7 @@ If an error occurs in the trigger code, the action is canceled, but the page is 
 You can write to the database using this trigger.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)   
 [OnModifyRecord (Page) Trigger](../page/devenv-onmodifyrecord-page-trigger.md)  
 [OnModifyRecord (Request Page) Trigger](../requestpage/devenv-onmodifyrecord-requestpage-trigger.md)  

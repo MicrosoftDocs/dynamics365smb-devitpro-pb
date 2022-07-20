@@ -1,7 +1,7 @@
 ---
 title: Training scenarios for integrating with Shopify
 description: Various integration scenarios for demonstrating workflow between Shopify and Business Central.
-ms.date: 05/16/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.service: dynamics365-business-central
 ms.reviewer: solsen
@@ -15,6 +15,13 @@ ms.author: andreipa
 This section demonstrates common scenarios and walks you through the steps to test or train the users on the workflow of the integrated [!INCLUDE[prod_short](../includes/prod_short.md)] and the Shopify store.
 
 ## Preparation
+
+You have the following two options for creating a Shopify account:
+
+- Trial
+- Development stores, if you do recurring demos and trainings
+
+### [Trial](#tab/trial)
 
 Begin by creating an Azure Active Directory tenant and get the administration login and password. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md), steps 1-6. You can stop once you get the administrator account that you got as part of your demo account, typically equivalent to *admin @ CRMbc123456.onmicrosoft.com*.
 
@@ -30,7 +37,7 @@ In the **Shopify Admin** of the created shop, apply following **Settings**:
   1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
   2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
 
-* For trial stores, select plan in the [**Plan**](https://www.shopify.com/admin/settings/plan) settings.
+* Select plan in the [**Plan**](https://www.shopify.com/admin/settings/plan) settings to be able test checkout process.
 
 > [!Important]  
 > To avoid payments, remember to cancel your Shopify trial.
@@ -42,7 +49,28 @@ Install the **Dynamics 365 Business Central** app in your Shopify online store.
 3. Review privacy and permissions, and then choose the **Install App** button. You can find and open the installed **Dynamics 365 Business Central** app in the Apps section on the sidebar of **Shopify admin**.
 4. Choose **Sign up now** to start the [!INCLUDE[prod_short](../includes/prod_short.md)] trial, and then use the administrator account.
 
-In the created [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
+### [Development store](#tab/dev-store)
+
+Begin by joining the [Shopify Partner Program](https://help.shopify.com/partners/about).
+Once it's completed, you can use **Partner Dashboard** to create the development store. For more information, see [Creating development stores](https://help.shopify.com/partners/dashboard/managing-stores/development-stores).
+
+After creation of the store, in the **Shopify Admin** of the created shop, apply following **Settings**:
+
+* Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
+* Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
+* Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
+* Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
+* Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
+  1. *(for testing) Bogus Gateway*. For more information, see [Activate Bogus Gateway for testing](https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction).
+  2. *Shopify payments* in test mode. For more information, see [Testing Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments).
+
+As a partner, you probably already have a [!INCLUDE[prod_short](../includes/prod_short.md)] account for demos. If not, you should create one. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md).
+
+---
+
+### Connect Business Central to the Shopify shop
+
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 2. Choose the **New** action.
@@ -83,9 +111,9 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)] go through the following st
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
 2. Choose the **Add Items** action.
-3. In the the **Shop Code** field, enter *DEMO1*.
+3. In the **Shop Code** field, enter *DEMO1*.
 4. Set the filter `CHAIR` on the **Item Category Code** field (add filter field if necessary).
-5. Click **OK** and wait until initial synchronization of items and prices is completed.
+5. Select **OK** and wait until initial synchronization of items and prices is completed.
 6. Choose the **Sync Product Images** action.
 7. Choose the **Sync Inventory** action.
 
@@ -107,7 +135,7 @@ Choose the **Buy it now** button and proceed to checkout.
 7. Select `10%` tip.
 8. In the **Credit Card** field, enter `1` if you use *(for testing) Bogus Gateway*, if you use *Shopify payments* in test mode, enter `5555 5555 5555 4444` in the **Credit Card** field.
 9. Fill in the **Name on card** field.
-10. In the **Expiration date** field enter the current month/year.
+10. In the **Expiration date** field, enter the current month/year.
 11. In the **Security code**, enter `111`.
 12. Choose the **Pay now** button.
 
@@ -149,7 +177,7 @@ In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
 2. Select the **DEMO1** Shop for which you want to synchronize customers to open the **Shopify Shop Card** page.
 3. Choose the **Sync Customers** action.
 
-In **Shopify Admin** notice that the customers were imported. Open one of the customers and notice that the first and last names of the customer are coming from the **Contact Name** field of the **Customer Card**. The company name can be found in the default address, linked to the customer. Choose **Send account invite** to invite customer.
+In **Shopify Admin** notice that the customers were imported. Open one of the customers and notice that the first and last names of the customer are coming from the **Contact Name** field of the **Customer Card**. The company name can be found in the default address, linked to the customer. Choose **Send account invite** to invite the customer.
 
 ## Walkthrough: Fine tuning of item management
 
@@ -241,6 +269,57 @@ Notice that Inventory for ANTWERP Conference Table is 100, because we configured
 * Change the status of *Athens Desk* to *Active* and choose **Preview** action.
 
 In the **Shopify online store** open the product catalog, find the *ATHENS Desk*  product. Notice that different options are available. For different options, prices are different. Pay attention to discount information.
+
+## Walkthrough: Import items from Shopify
+
+### Scenario 
+
+You already have a successful online store and would like to start using [!INCLUDE[prod_short](../includes/prod_short.md)] as business management software. You would like to import as much data from Shopify as possible. 
+
+### Steps
+
+This is a continuation of [Walkthrough: Start selling products online](admin-shopify-connector.md#walkthrough-start-selling-products-online). You can also try with your own data, for example your Shopify store or sandbox.
+
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do the following steps:
+
+#### Prepare data
+
+1. Switch to a free 30-day trial without sample data. For more information, see [Add your own data to an empty trial](/dynamics365/business-central/dev-itpro/administration/trials-subscriptions.md#add-your-own-data-to-an-empty-trial-company).
+2. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
+3. Choose the **New** action.
+4. In the **Code** field, enter `DEMO2`.
+5. In the **Shopify URL** field, enter the URL to the online shop that you want to connect to.
+6. Activate the **Enabled** toggle, review and accept the terms and conditions.
+
+Configure the Shopify shop as described below in the next steps:
+
+7. Enable the **Log Enabled** toggle.
+8. Deactivate the **Allow Background Syncs** toggle.
+9. Select **From Shopify** in the **Sync Item** field.
+5. Enable the **Auto Create Unknown Items** toggle.
+11. Fill in the **Item Template Code** field with the appropriate template.
+12. Select **From Shopify** in the **Sync Item Images** field.
+13. Select **All Customers** in the **Customer Import from Shopify**.
+14. Enable the **Auto Create Unknown Customers** toggle.
+15. Fill in the **Customer Template Code** field with the appropriate template.
+16. Fill in the **Shipping Cost Account**, the **Tip Account** with revenue account. For example, in the US use `40100`.
+17. Enable the **Auto Create Orders** toggle.
+
+#### Run the synchronization
+
+1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and choose the related link.
+2. Select the *DEMO2* Shop for which you want to synchronize data to open the **Shopify Shop Card** page.
+3. Choose the **Sync Products** action.
+4. Choose the **Sync Product Images** action.
+5. Choose the **Sync Customers** action.
+
+### Results
+
+* Shopify Products are imported. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Products**, and choose the related link.
+* Items with images are created. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Item**, and choose the related link.
+* Shopify Customers are imported. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Customers**, and choose the related link.
+* Customers are created. To verify, go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Customers**, and choose the related link.
+
 
 ## See Also
 

@@ -3,7 +3,7 @@ title: "Enum.Names() Method"
 description: "Gets the value names"
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,5 +33,5 @@ List of enum value names :=   Enum.Names()
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Enum Data Type](enum-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

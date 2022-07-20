@@ -3,12 +3,11 @@ title: "Compiler Warning (Future Error) AL0273"
 description: "The name '{0}' is an Area type."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/01/2022
+ms.date: 06/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -25,5 +24,5 @@ Reusing the Area type as the name of a control, action, or variable might lead t
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

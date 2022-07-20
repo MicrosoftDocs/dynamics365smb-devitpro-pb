@@ -44,7 +44,7 @@ The following table outlines recommended content for you to get started:
 |------|-------------|
 |[Developer learning paths on Microsoft Learn](/learn/browse/?WT.mc_id=dyn365bc_landingpage-docs&resource_type=learning%20path&products=dynamics-business-central&roles=developer)| Provides links to role-specific training. |
 |[Development in AL](developer/devenv-dev-overview.md)|Get an understanding of the basics and terms you will encounter while working in Visual Studio Code with the AL extension.|
-|[Getting Started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
+|[Get Started with AL](developer/devenv-get-started.md)|Learn how to set up a development environment.|
 |[The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)|Learn about the business opportunity for building your app on top of [!INCLUDE [prod_short](developer/includes/prod_short.md)].|
 |[Get Started with Building Apps](developer/readiness/get-started.md)|Learn how to get started as a partner.|
 

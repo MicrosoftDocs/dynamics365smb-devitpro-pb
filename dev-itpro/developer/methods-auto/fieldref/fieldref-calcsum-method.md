@@ -85,7 +85,7 @@ The second message window displays the following:
 ## See Also
 
 [FieldRef Data Type](fieldref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [CalcSum Method (Record)](../record/record-CalcSums-method.md)  
 [AL Database Methods and Performance on SQL Server](../../../administration/optimize-sql-al-Database-methods-and-performance-on-server.md)

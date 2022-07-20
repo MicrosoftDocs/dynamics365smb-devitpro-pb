@@ -36,7 +36,7 @@ end;
  This trigger is only used to export data. It is typically used to manipulate the fields that are being exported from the table and to calculate the variables that depend on the record.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterGetRecord (Page) Trigger](../page/devenv-onaftergetrecord-page-trigger.md)  
 [OnAfterGetRecord (Request Page) Trigger](../requestpage/devenv-onaftergetrecord-requestpage-trigger.md)  

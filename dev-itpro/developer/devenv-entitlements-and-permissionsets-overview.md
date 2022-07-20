@@ -97,7 +97,7 @@ Permission sets and permissions [included with apps in XML format](devenv-export
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Entitlement Object](devenv-entitlement-object.md)  
 [PermissionSet Object](devenv-permissionset-object.md)  
 [PermissionSet Extension Object](devenv-permissionset-ext-object.md)  

@@ -1,9 +1,9 @@
 ---
-title: "Working with multiple AL project folders within one workspace"
+title: "Work with multiple AL project folders within one workspace"
 description: "Handling solutions in the AL language that contain multiple projects."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,21 +11,21 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Working with multiple AL project folders within one workspace
-Visual Studio Code offers the multi-root workspace feature which enables grouping different project folders into one workspace. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality and allows you to work with multiple AL folders including roots and projects within one workspace. 
+# Work with multiple AL project folders within one workspace
+Visual Studio Code offers the multi-root workspace feature, which enables grouping different project folders into one workspace. The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] also supports the multi-root functionality and allows you to work with multiple AL folders including roots and projects within one workspace. 
 
-## Working with multiple project folders 
+## Work with multiple project folders 
 Go through the following steps to work simultaneously on several related projects.  
 
-1) On the **File** tab of Visual Studio Code, select **Add Folder to Workspace...** .  
+1) On the **File** tab of Visual Studio Code, choose **Add Folder to Workspace...** .  
 2) Save the workspace file if you plan to open it again.  
 This will create a `code-workspace` file that contains an array of folders with either absolute or relative paths. If you want to share your workspace files, choose the relative paths.  
 3) Modify the settings of your files in the **Settings** editor. You can change your user settings, global workspace settings, or individual folder settings. 
 
 For more information about multi-root workspaces in Visual Studio Code, see [Multi-root Workspaces](https://code.visualstudio.com/docs/editor/multi-root-workspaces).
 
-## Grouping a set of disparate project folders into one workspace
-It is not mandatory to use only AL-based roots. Different kinds of projects can be mixed, and each AL project will have its configuration values for the following settings: 
+## Group a set of disparate project folders into one workspace
+It isn't mandatory to use only AL-based roots. Different kinds of projects can be mixed, and each AL project will have its configuration values for the following settings: 
 
 - `al.packageCachePath`  
 - `al.enableCodeAnalysis`

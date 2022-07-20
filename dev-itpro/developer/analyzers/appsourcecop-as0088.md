@@ -65,5 +65,5 @@ In version 3.0 of the extension, codeunit 50120 has been deleted. This is okay, 
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

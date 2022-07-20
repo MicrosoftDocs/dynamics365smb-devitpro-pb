@@ -255,7 +255,7 @@ pageextension 50101 TeamMemberRCPwrBiExt extends "Team Member Role Center"
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Adding a FactBox to a Page](devenv-adding-a-factbox-to-page.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [Publishing and Installing an Extension](devenv-how-publish-and-install-an-extension-v2.md)  

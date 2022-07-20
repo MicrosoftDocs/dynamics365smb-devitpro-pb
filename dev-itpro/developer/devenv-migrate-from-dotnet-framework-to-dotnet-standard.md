@@ -66,7 +66,7 @@ When the command finished, you have a DGML file that can be opened in Visual Stu
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)  
 [Subscribing to Events in a .NET Framework Type](devenv-dotnet-subscribe-to-events.md)  
 [Serializing .NET Framework Types](devenv-dotnet-serializing-dotnetframework-types.md)  
