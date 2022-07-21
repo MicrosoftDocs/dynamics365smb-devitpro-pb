@@ -41,7 +41,7 @@ In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/inclu
 ## <a name="enable"></a> Enabling Application Insights
 To send telemetry data to Application Insights, you must have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to it. For more information, see [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
 
-> [!NOTE\]
+> [!NOTE]
 > For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## <a name="ingest"></a> Controlling data ingestion
