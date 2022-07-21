@@ -65,7 +65,7 @@ var
     Text000: Label 'Do you want to leave without saving?';
     Text001: Label 'lws';
     Text002: Label 'LWS';
-    Text003: Label 'The original sentence is \\: %1';
+    Text003: Label 'The original sentence is\\: %1';
     Text004: Label 'The sentence is converted to:\\ %1';
 begin
     OriginalString := Text000;  
