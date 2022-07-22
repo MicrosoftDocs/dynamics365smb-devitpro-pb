@@ -72,7 +72,8 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |Setting|Description|
     |-------|-----------|
     |Name|Specify a unique name for your application. |
-    |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
+    |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.| 
+    |Redirect URI|Set the redirect URI to <strong>https://businesscentral.dynamics.com/OAuthLanding.htm</strong>
 
 
     When completed, an **Overview** displays in the portal for the new application.
