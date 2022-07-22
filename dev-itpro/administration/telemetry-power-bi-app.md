@@ -23,12 +23,14 @@ The app consists of four reports:
 - Administration
 
 ## Getting the report
+
 Use this link to install/update the app: https://aka.ms/bctelemetryreport
 
 Once installed, the app shows sample data in the reports. This enables you to demo it to prospective customers without having to show data from existing customers.
 
 ## Connecting to Azure Application Insights
-To connect the app to an Azure Application Insights resource, you need one thing: the Application Insights _Application id_ (you can get it from the _API Access menu_ in the Application Insights page on Azure).
+
+To connect the app to an Azure Application Insights resource, you need one thing: the Application Insights _Application id_. You can get the ID in the [Azure portal](https://portal.azure.com), from the **API Access** menu in the Application Insights page.
 
 > [!NOTE]  
 > If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
@@ -37,7 +39,7 @@ To connect the app to an Azure Application Insights resource, you need one thing
 
 The app only has two required parameters needed for configuration:
 
-- Application Insights Application id (controls where data is stored)
+- Application Insights Application ID (controls where data is stored)
 - Lookback period (the number of days back in time you want to show)
 
 Apart from required parameters, you can also control the following:
@@ -61,17 +63,16 @@ Do this:
 
 For more information, see [Share Power BI reports and dashboards with coworkers and others](/power-bi/collaborate-share/service-share-dashboards)
 
-
 ## Use the app
 
 Once installed and configured, how can you use the different reports in the app? We identified four different personas as described in this table:
 
 | Persona | Description |
-| ------- | ----------- | 
-| Account Manager | Person making sales to new and existing customers. | 
+| ------- | ----------- |
+| Account Manager | Person making sales to new and existing customers. |
 | Product Owner | Person responsible for an extension/app. |
 | Project manager | Person responsible for the implementation of a Business Central environment for a customer. |
-| Supporter | Person performing triage, investigation, and mitigation of customer issues. | 
+| Supporter | Person performing triage, investigation, and mitigation of customer issues. |
 
 
 In the table below you will find examples of scenarios for each persona where the app might be of help.
