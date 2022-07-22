@@ -30,7 +30,7 @@ Once installed, the app shows sample data in the reports. This enables you to de
 
 ## Connecting to Azure Application Insights
 
-To connect the app to an Azure Application Insights resource, you need one thing: the Application Insights _Application id_. You can get the ID in the [Azure portal](https://portal.azure.com),  from the **API Access** menu in the Application Insights page..
+To connect the app to an Azure Application Insights resource, you need one thing: the Application Insights _Application id_. You can get the ID in the [Azure portal](https://portal.azure.com), from the **API Access** menu in the Application Insights page.
 
 > [!NOTE]  
 > If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
