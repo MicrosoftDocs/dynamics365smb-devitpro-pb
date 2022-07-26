@@ -521,9 +521,10 @@
 ##### [XMLPort](developer/devenv-xmlport-object.md)
 ##### [Control Add-In](developer/devenv-control-addin-object.md)
 ##### [Entitlement](developer/devenv-entitlement-object.md)
-##### [Permissionset](developer/devenv-permissionset-object.md)
-##### [Inherent Permissions](developer/devenv-inherent-permissions.md)
+##### Permission Set
+###### [Permissionset](developer/devenv-permissionset-object.md)
 ###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
+###### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 ##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
 ##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
 
@@ -688,6 +689,7 @@
 #### [Permissionset Object](developer/devenv-permissionset-object.md)
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 #### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+#### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 #### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
 #### [Entitlement Object](developer/devenv-entitlement-object.md)
 
