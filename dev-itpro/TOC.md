@@ -522,6 +522,7 @@
 ##### [Control Add-In](developer/devenv-control-addin-object.md)
 ##### [Entitlement](developer/devenv-entitlement-object.md)
 ##### [Permissionset](developer/devenv-permissionset-object.md)
+##### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 ###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
 ##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
 ##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
