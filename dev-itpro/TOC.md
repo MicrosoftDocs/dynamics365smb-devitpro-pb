@@ -222,6 +222,7 @@
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
+#### [User Checklist Telemetry](administration/telemetry-user-checklist-trace.md)
 #### [Verbose Logging Enabled/Disabled Telemetry](administration/telemetry-verbose-logging-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Web Service Requests Telemetry (Incoming)](administration/telemetry-webservices-trace.md)
