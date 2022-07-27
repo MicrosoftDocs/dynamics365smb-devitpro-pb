@@ -126,3 +126,7 @@ It is crucial for you to keep contact details correctly up to date. We advise yo
 [Technical Support for Business Central online](../technical-support.md)  
 [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
 [Major Updates and Minor Updates for Business Central Online](../administration/update-rollout-timeline.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

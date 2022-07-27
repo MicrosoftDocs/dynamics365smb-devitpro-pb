@@ -26,3 +26,7 @@ This article provides an overview of the process for deploying an Embed App to t
 [Embed App Overview](../deployment/embed-app-overview.md)  
 [Qualification and Onboarding](../deployment/embed-app-qualifications-onboarding.md)  
 [Managing Embed Apps in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

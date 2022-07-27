@@ -203,4 +203,8 @@ For more information, see [Preparing Demonstration Environments](administration/
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 [User Assistance Model](user-assistance.md)  
 <!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
-[The Business Central Administration Center](administration/tenant-admin-center.md)
+[The Business Central Administration Center](administration/tenant-admin-center.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

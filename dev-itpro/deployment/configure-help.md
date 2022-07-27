@@ -165,3 +165,7 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

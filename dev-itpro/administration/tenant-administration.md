@@ -114,3 +114,7 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Trials and Subscriptions](trials-subscriptions.md)  
 [Understanding the infrastructure of Business Central online](tenant-environment-topology.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

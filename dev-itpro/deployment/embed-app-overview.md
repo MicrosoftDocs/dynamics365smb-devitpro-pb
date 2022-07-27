@@ -111,3 +111,7 @@ Any existing deployments, running on platform versions that are older than 3 upd
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](../administration/Administration.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

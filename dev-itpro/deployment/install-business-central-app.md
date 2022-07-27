@@ -80,3 +80,7 @@ To install a working [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 [Components](product-and-architecture-overview.md)  
 [Deployment](deployment.md)  
 [Web Client URL](../developer/devenv-web-client-urls.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

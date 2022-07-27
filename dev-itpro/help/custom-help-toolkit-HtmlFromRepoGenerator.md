@@ -114,3 +114,7 @@ For more information, see [Introduction to DocFX Template System](https://dotnet
 ## See also
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

@@ -83,3 +83,7 @@ If you do not yet have a website that you publish content to, then there are sev
 [User Assistance Model](../user-assistance.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](../deployment/system-requirement-business-central.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

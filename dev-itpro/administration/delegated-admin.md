@@ -100,3 +100,7 @@ For more information, see [Customers delegate administration privileges to partn
 [Administration of Business Central Online](tenant-administration.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Exporting Databases](tenant-admin-center-database-export.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

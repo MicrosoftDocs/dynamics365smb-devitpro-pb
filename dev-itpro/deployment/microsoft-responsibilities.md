@@ -32,3 +32,7 @@ Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/pr
 [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](../developer/app-maintain.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Technical Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../technical-support.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

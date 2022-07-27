@@ -54,3 +54,7 @@ For example, the **No** field from the **Customer** table appears in several pag
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

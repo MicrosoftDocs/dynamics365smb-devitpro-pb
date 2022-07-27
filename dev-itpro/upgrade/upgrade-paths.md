@@ -92,3 +92,7 @@ The following sections provide the supported upgrade paths to the different [!IN
 [Upgrading to Business Central 2020 Release Wave 1](upgrade-overview-v16.md)  
 [Migrate to Business Central Online from Business Central On-premises](../administration/migrate-business-central-on-premises.md)  
 [Migrating On-Premises Data to Business Central Online](../administration/migrate-data.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

@@ -72,3 +72,7 @@ For more information, see:
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)
 [Business Central Components](Product-and-Architecture-Overview.md)  
 [System Requirements](system-requirement-business-central.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

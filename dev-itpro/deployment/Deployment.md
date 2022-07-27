@@ -75,4 +75,8 @@ Part of your configuration is to specify where to look up the Help for the solut
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Product and Architecture Overview](product-and-architecture-overview.md)  
 [System Requirements 2019 release wave 2](system-requirement-business-central-v15.md)  
-[System Requirements April '19](system-requirement-business-central.md)
+[System Requirements April '19](system-requirement-business-central.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

@@ -106,3 +106,7 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Country/Regional Availability and Supported Translations](../compliance/apptest-countries-and-translations.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Preparing Demonstration Environments (as a partner)](demo-environment.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

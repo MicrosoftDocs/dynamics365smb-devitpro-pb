@@ -46,3 +46,7 @@ In the example, the `D:\BC\de` folder contains HTML files with the locale *de-de
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

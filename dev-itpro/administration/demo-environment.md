@@ -144,3 +144,7 @@ Starting in February 2022, partners can request dedicated licenses to set up add
 [Data and access when a trial or subscription ends](tenant-administration.md#expire)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
+
+## Survey
+
+Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
