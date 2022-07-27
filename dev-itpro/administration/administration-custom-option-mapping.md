@@ -14,7 +14,7 @@ ms.date: 04/01/2021
 This walkthrough describes how to customize option mappings in an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through the steps to integrate industry groups in [!INCLUDE[prod_short](../includes/prod_short.md)] with industry codes in the Account table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
 > [!TIP]
-> Sample code for this integration is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/DataverseCustomOptionMapping) repository.
+> Sample code for this integration is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples) repository.
 
 ## About this walkthrough
 
