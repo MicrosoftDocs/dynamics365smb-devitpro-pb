@@ -148,7 +148,7 @@ The following table describes the settings that are available in the navsettings
 
 |Setting/KeyName|Description|  
 |-------------|-----------------|  
-|BaseHelpUrl|Specifies the link to the online Help library that the deployment uses, such as *https://mysite.com/{0}/mylibrary/*.<br /><br /> Default value: none<br /><br />For more information, see [Configuring the Help Experience](../deployment/configure-help.md). |
+|BaseHelpUrl|Specifies the link to the online Help library that the deployment uses, such as *`https://mysite.com/{0}/mylibrary/`*.<br /><br /> Default value: none<br /><br />For more information, see [Configuring the Help Experience](../deployment/configure-help.md). |
 |BlogLink|Specifies the target of the **blog** link on the **Help & Support** page. Use this link to give users access to your end-user blog. <br /><br />Value: a valid URL<br />Default value: https://go.microsoft.com/fwlink/?linkid=2076643|
 |ComingSoonLink|Specifies the target of **coming soon** link on the **Help & Support** page. Use this link to give users access to information about your roadmap or any upcoming features and fixes.<br /><br />Value: A valid URL.<br /> Default value: [https://go.microsoft.com/fwlink/?linkid=2047422](/dynamics365/release-plans/)|
 |CommunityLink|Specifies the URL to a community or resource for sharing information. <br /><br />Value: a valid URL <br />Default value: https://go.microsoft.com/fwlink/?LinkId=287089|
