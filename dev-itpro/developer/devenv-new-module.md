@@ -18,7 +18,7 @@ This topic provides an overview of how to create a new module in the System Appl
 ## Requirements
 
 1. Familiarity with development in AL. For more information, see [AL Development](./devenv-get-started.md).  
-2. Your development environment is ready.
+2. Your development environment is ready. For more information, see [Set Up an Environment for Developing a Module](devenv-new-module.md).
 > [!NOTE]
 > Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
