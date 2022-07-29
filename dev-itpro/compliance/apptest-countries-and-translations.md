@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 05/18/2022
+ms.date: 07/29/2022
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.author: soalex
