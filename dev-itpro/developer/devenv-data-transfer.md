@@ -47,7 +47,7 @@ begin
 end;
 ```
 
-#### Listing 1: Using DataTransfer to transfer the values of fields with field number 2 and 3 from the Source table to the Destination table.
+#### Listing 1: Using DataTransfer to transfer the values of fields with field number 2 and 3 from the Source table to the Destination table
 
 <table>
 <tr><th>Before Table Source</th><th>Before Table Destination </th> <th>Resulting Destination Table</th></tr>
