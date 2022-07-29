@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/01/2022
+ms.date: 07/29/2022
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -14,22 +14,22 @@ ms.author: solsen
 > [!NOTE]  
 > With [!INCLUDE[prod_short](includes/prod_short.md)] 17.2 - Snapshot Debugging is available in production cloud environments.
 
-Snapshot debugging allows recording AL code that runs on the server, and once it has run, debug the recorded *snapshot* in Visual Studio Code. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). One of the advantages of snapshot debugging is that it provides the ability to inspect code execution and variables in the production environment in a cloud service, on a specified user session.
+With snapshot debugging, you can record AL code that runs on the server, and when it has completed, debug the recorded *snapshot* in Visual Studio Code. Snapshot debugging provides the ability to inspect code execution and variables in the production environment on a cloud service for a specified user session. To create and download a snapshot file that exists on the server on behalf of an end-user, the user must be part of the **D365 Snapshot Debug** permission set. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
-Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set when creating a snapshot, they do not, however, stop execution of code like when using regular debugging. Snappoints instruct execution to log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
+Snapshot debugging introduces the concept of *snappoints*. A snappoint is a breakpoint in Visual Studio Code that is set while creating a snapshot but they don't stop execution of code like regular debugging. Snappoints log the state at the breakpoint for later offline inspection. Snapshot debugging will record AL code as it runs on the server, but will only collect variable information on: 
 
 - Snappoints  
 - AL exceptions
 
 > [!NOTE]  
-> With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it is possible to snapshot debug event subscribers triggered from built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built-in-codeunit-triggers).
+> With [!INCLUDE[prod_short](includes/prod_short.md)] version 18.1, it's possible to snapshot the debug event subscribers triggered by built-in codeunit triggers if a snappoint is placed in an AL file on the stack trace that leads to the built-in method. For more information, see [Snapshot debugging built-in methods](devenv-snapshot-debugging.md#snapshot-debugging-built-in-codeunit-triggers).
 
 > [!IMPORTANT]  
-> To enable snapshot debugging it is very important that the symbols on the tenant match the symbols on the server. This is not automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
+> To enable snapshot debugging, it's very important that the symbols on the tenant match the symbols on the server. This isn't automatically detected, and must be manually checked. In this release, you can ensure this by copying the specific sandbox and download symbols from that copy. Furthermore, any code that snappoints are set in, must have been deployed, otherwise debugging will not work. For more information, see the section [Downloading symbols on the snapshot debugger endpoint](devenv-snapshot-debugging.md#downloading-symbols-on-the-snapshot-debugger-endpoint).
 
 ## Snapshot debugging keyboard shortcuts
 
-In the following sections you can read more about how to initialize, view the status, and finalize a snapshot debugging session. For these actions, the following keyboard shortcuts are useful to familiarize yourself with. For additional keyboard shortcuts, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md).
+In the following sections, you can read more about how to initialize, view the status, and finalize a snapshot debugging session. It's useful to familiarize yourself with the following keyboard shortcuts. For additional keyboard shortcuts, see [Keyboard Shortcuts](devenv-keyboard-shortcuts.md).
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
@@ -37,7 +37,7 @@ In the following sections you can read more about how to initialize, view the st
 |**Shift+F7**|List all available snapshots|
 |**Alt+F7**|Finish a snapshot debugging session|
 
-## Initializing a snapshot debugging session
+## Initialize a snapshot debugging session
 
 From Visual Studio Code, you start a snapshot by creating a snapshot configuration file. There are two template configurations for a snapshot, which are accessed by selecting **Add Configuration** in Visual Studio Code.
 
