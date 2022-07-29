@@ -19,13 +19,15 @@ The DataTransfer object is an AL data type that supports the bulk transferring o
 
 ## Usage
 
-It uses a builder style pattern where the developer first selects the source and destination tables with SetTables, followed by which fields to transfer or set to a constant value via the AddFieldsValue or AddConstantValue, and the rows to transfer is filter via AddSourceFilter.
+DataTransfer uses a builder style pattern where the developer:
+
+1. Selects the source and destination tables with [SetTables, followed by which fields to transfer or set to a constant value via the AddFieldsValue or AddConstantValue, and the rows to transfer is filter via AddSourceFilter.
 
 After specifying the fields, constant, and filters either CopyFields or CopyRows are called to execute the built query.
 
 ## CopyFields
 
-Calling CopyFields on the DataTransfer object will copy selected fields in the source table and copy them to the destination table. Unless one is copying with the same source and destination table specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
+Calling CopyFields on the DataTransfer object will copy selected fields in the source table and copy them to the destination table. Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
 
 An example scenario is obsoleting a field and moving its data into another table can be  achieved most performantlty using DataTransfer.
 
