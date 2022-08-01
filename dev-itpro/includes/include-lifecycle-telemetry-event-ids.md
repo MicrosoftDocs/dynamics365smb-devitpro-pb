@@ -12,6 +12,7 @@
 |AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#deletesuccessful)|
 | AL0000EJ9 | Extension Lifecycle | [Upgrade tag searched for: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-searched-for) |
 | AL0000EJA | Extension Lifecycle | [Upgrade tag set: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-set) |
+| AL0000EIQ | User Checklist Lifecycle | [User checklist status updated: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
 | LC0001 | Company Lifecycle | [Company created: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-failed) |
