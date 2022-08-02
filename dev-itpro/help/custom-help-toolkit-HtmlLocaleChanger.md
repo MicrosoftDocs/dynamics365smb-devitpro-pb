@@ -46,3 +46,5 @@ In the example, the `D:\BC\de` folder contains HTML files with the locale *de-de
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

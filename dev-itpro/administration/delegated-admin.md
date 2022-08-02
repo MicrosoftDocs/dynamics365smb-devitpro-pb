@@ -100,3 +100,5 @@ For more information, see [Customers delegate administration privileges to partn
 [Administration of Business Central Online](tenant-administration.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Exporting Databases](tenant-admin-center-database-export.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

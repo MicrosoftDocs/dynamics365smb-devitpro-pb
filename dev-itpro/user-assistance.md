@@ -178,3 +178,5 @@ At Microsoft, we are in process of simplifying and unifying our style guides. To
 [Microsoft Writing Style Guide](/style-guide/welcome/)  
 [Onboarding experiences in Business Central](administration/onboarding-experiences.md)  
 [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)  
+
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

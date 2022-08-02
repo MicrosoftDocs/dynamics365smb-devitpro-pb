@@ -61,3 +61,5 @@ Every deployment must include the core components: Web server, Server, and SQL D
 [Deployment](Deployment.md)  
 [Installing Business Central Using Setup](install-using-setup.md)  
 [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]
