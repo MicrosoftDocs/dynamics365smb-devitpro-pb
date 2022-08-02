@@ -24,13 +24,6 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 - [
 - 
 
-## Localization updates
-
-| Country| Feature  |Description|
-|-------------|--------------|--------------|
-|W1 | Extended text functionality for VAT clauses | In some situations and countries, VAT Clauses can take more than allowed number of characters. Because of that Extended Texts logic is implemented in the VAT Clauses and this extended text can be showed on the sales invoice. |
-| Germany | Enhancements to Business Data Export file (GDPdU / GoDB) | Export file will use table and field names instead of captions. Also table and field names will not be limited to 20 characters and it will show full name, with blanks, dots, etc.|
-
 ## Release Plan  
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
