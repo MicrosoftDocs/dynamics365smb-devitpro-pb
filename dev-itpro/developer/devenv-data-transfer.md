@@ -32,16 +32,18 @@ Because DataTransfer operates in bulk and not on a row-by-row basis, no row base
 
 Calling CopyFields on the DataTransfer object will copy selected fields in the source table and copy them to the destination table. Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
 
-A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, **Source** and **Destination**, as illustrated with sample data below. You eventually want to obsolete field **S3** in the table **Source**. But before doing, you want to copy some values of **S3** into the field **D3** in table **Destination**. Specifically, you only want to copy field **D3** in rows where field **D2** is equal to *A*. 
+### Example 1
+
+A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, **Source** and **Destination**, as illustrated with sample data below. You're planning on  obsoleting field **S3** in the table **Source**. But before you do, you want to copy some values of **S3** into the field **D3** of the **Destination** table. Specifically, you only want to copy field **S3** in rows where field **S2** is equal to *A*.
 
 <table>
-<tr><th>**Source** table</th><th>**Destination** table (before copy)</th> <th>**Destination** table (after copy)</th></tr>
+<tr><th>Source table</th><th>Destination table (before copy)</th> <th>Destination table (after copy)</th></tr>
 <tr><td>
 
 | PK | S1 | S2 | S3 |
 |----|----|----|----|
-| 1  | A  | A  | 42 |
-| 2  | B  | A  | 43 |
+| 1  | A  | *A*  | 42 |
+| 2  | B  | *A*  | 43 |
 | 3  | C  | B  | 44 |
 | 4  | D  | B  | 45 |
 
@@ -105,26 +107,12 @@ Calling CopyRows on the DataTransfer object inserts a row in the destination tab
 
 If the code tries to copy a row from the source table that has the same primary key as an existing row in the destination table, a runtime error will be thrown.
 
-To help explain CopyRows, consider an example using sample tables **Source** and **Destination** again. In this code example, you'll copy the **PK** and **S3** fields for all rows where **S2** equals *A* and add them as new rows in table **Destination**.  
+### Example 2
 
-```AL
-local procedure InsertTheRows()
-var
-    dt: DataTransfer;
-    dest : Record Destination;
-    src: Record Source;
-begin
-    dt.SetTables(Database::Source, Database::Destination);
-    dt.AddFieldValue(src.FieldNo("PK"), dest.FieldNo("PK"));
-    dt.AddFieldValue(src.FieldNo("S3"), dest.FieldNo("D3"));
-    dt.AddConstantValue('X', dest.FieldNo(D2));
-    dt.AddSourceFilter(src.FieldNo("S2"), '=%1', 'A');
-    dt.CopyRows();
-end;
-```
+To help explain CopyRows, consider an example using sample tables **Source** and **Destination** again. 
 
 <table>
-<tr><th>**Source** table</th><th>**Destination** table (before copy)</th> <th>**Destination** table (after copy)</th></tr>
+<tr><th>Source table</th><th>Destination table (before copy)</th> <th>Destination table (after copy)</th></tr>
 <tr><td>
 
 | PK | S1 | S2 | S3 |
@@ -151,6 +139,24 @@ end;
 </td>
 </tr>
 </table>
+
+In this code example, you copy the **PK** and **S3** fields for all rows where **S2** equals *A* and add them as new rows in table **Destination**. You use AddConstantValue to give the field **D2** the value *X* in the inserted rows.
+
+```AL
+local procedure InsertTheRows()
+var
+    dt: DataTransfer;
+    dest : Record Destination;
+    src: Record Source;
+begin
+    dt.SetTables(Database::Source, Database::Destination);
+    dt.AddFieldValue(src.FieldNo("PK"), dest.FieldNo("PK"));
+    dt.AddFieldValue(src.FieldNo("S3"), dest.FieldNo("D3"));
+    dt.AddConstantValue('X', dest.FieldNo(D2));
+    dt.AddSourceFilter(src.FieldNo("S2"), '=%1', 'A');
+    dt.CopyRows();
+end;
+```
 
 ### Performance
 
