@@ -21,8 +21,8 @@ Would you like to know what has changed in update 20.4? Below you'll find an ove
 Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
-- [
-- 
+- Current User support for Email - SMTP Connector 
+- Shopify prospects get a great first-run experience 
 
 ## Release Plan  
 
@@ -33,6 +33,10 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 Please note that new customers will automatically get the latest builds of Business Central (20.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
+
+**Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
+In October 2022, the new release will go live. You can already discover what's new and planned here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
+
 
 **Business Central newsletter for partners**  
 Starting June 2022, we're doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
