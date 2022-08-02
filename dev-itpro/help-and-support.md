@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.author: edupont
-ms.date: 10/01/2021
+ms.date: 08/02/2022
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
@@ -205,6 +205,4 @@ For more information, see [Preparing Demonstration Environments](administration/
 <!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
 [The Business Central Administration Center](administration/tenant-admin-center.md)  
 
-## Help us understand
-
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

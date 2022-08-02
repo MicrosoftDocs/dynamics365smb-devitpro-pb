@@ -145,6 +145,4 @@ Starting in February 2022, partners can request dedicated licenses to set up add
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
 [Offer your customers trials of Microsoft products](/partner-center/offer-your-customers-trials-of-microsoft-products)  
 
-## Help us understand
-
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

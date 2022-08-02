@@ -127,6 +127,4 @@ It is crucial for you to keep contact details correctly up to date. We advise yo
 [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
 [Major Updates and Minor Updates for Business Central Online](../administration/update-rollout-timeline.md)  
 
-## Help us understand
-
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

@@ -107,6 +107,4 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Preparing Demonstration Environments (as a partner)](demo-environment.md)  
 
-## Help us understand
-
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

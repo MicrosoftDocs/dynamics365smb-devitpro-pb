@@ -33,6 +33,4 @@ Microsoft responsibilities in the [!INCLUDE[prod_short](../developer/includes/pr
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Technical Support for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../technical-support.md)  
 
-## Help us understand
-
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

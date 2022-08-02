@@ -107,6 +107,4 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
 
-## Help us understand
-
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

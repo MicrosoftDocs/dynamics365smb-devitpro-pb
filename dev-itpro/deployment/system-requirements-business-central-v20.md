@@ -5,7 +5,7 @@ ms.custom: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 03/31/2022
+ms.date: 08/02/2022
 author: jswymer
 ---
 # System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] 2022 Release Wave 1
@@ -173,6 +173,5 @@ The following table shows the minimum system requirements for [!INCLUDE[prod_sho
 [Product and Architecture Overview](product-and-architecture-overview.md)  
 [Deployment](Deployment.md)  
 
-## Help us understand
 
-We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]
