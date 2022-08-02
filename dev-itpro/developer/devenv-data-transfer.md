@@ -35,7 +35,7 @@ Calling CopyFields on the DataTransfer object will copy selected fields in the s
 A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, **Source** and **Destination**, as illustrated with sample data below. You eventually want to obsolete field **S3** in the table **Source**. But before doing, you want to copy some values of **S3** into the field **D3** in table **Destination**. Specifically, you only want to copy field **D3** in rows where field **D2** is equal to *A*. 
 
 <table>
-<tr><th>Source table</th><th>Destination table (before copy)</th> <th>Destination table (after copy)</th></tr>
+<tr><th>**Source** table</th><th>**Destination** table (before copy)</th> <th>**Destination** table (after copy)</th></tr>
 <tr><td>
 
 | PK | S1 | S2 | S3 |
@@ -86,7 +86,7 @@ end;
 
 The same scenario could also be coded using the record API, by first looping over all rows in the table **Source** with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
 
-The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measuring execution times for DataTransfer and record API solutions has shown approximately 200 times ~200x performance improvement for DataTransfer. These gains will be even greater if the destination table has Modify triggers or if the execution environment has significant latency to SQL.
+The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measurements for DataTransfer and record API solutions have shown an ~200x  performance improvement for DataTransfer. These gains will be even greater if the destination table has modify triggers or if the environment has significant latency to SQL.
 
 ### Uniqueness in the source table
 
@@ -103,7 +103,9 @@ The join condition can be specified on arbitrary fields, which leaves the possib
 
 Calling CopyRows on the DataTransfer object inserts a row in the destination table for each matching row in the specified source table. Fields in the inserted row are populated with values specified by calling AddFieldValue or AddConstantField. Fields not specified by AddFieldValue or AddConstantField are populated with the field's [InitValue](properties/devenv-initvalue-property.md), if any, or the field type's default value.
 
-If one tries to copy a row from the source table where a row with same primary key exists in the destination table a runtime error will be thrown.  
+If the code tries to copy a row from the source table that has the same primary key as an existing row in the destination table, a runtime error will be thrown.
+
+To help explain CopyRows, consider an example using sample tables **Source** and **Destination** again. In this code example, you'll copy the **PK** and **S3** fields for all rows where **S2** equals *A* and add them as new rows in table **Destination**.  
 
 ```AL
 local procedure InsertTheRows()
@@ -122,7 +124,7 @@ end;
 ```
 
 <table>
-<tr><th>Table Source</th><th>Table Destination </th> <th>Resulting Destination Table</th></tr>
+<tr><th>**Source** table</th><th>**Destination** table (before copy)</th> <th>**Destination** table (after copy)</th></tr>
 <tr><td>
 
 | PK | S1 | S2 | S3 |
@@ -152,7 +154,7 @@ end;
 
 ### Performance
 
-As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements show an ~50x performance improvement over the comparable record API based solution.
+As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements have shown an ~50x performance improvement with a DataTransfer solution compared with a record API solution.
 
 ## See Also
 
