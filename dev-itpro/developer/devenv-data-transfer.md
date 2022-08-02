@@ -23,7 +23,7 @@ DataTransfer uses a builder style pattern, where you:
 
 1. Specify the source and destination tables by calling the SetTables.
 2. Specify which fields to transfer or set to a constant value by calling the AddFieldValue or AddConstantValue, respectively.
-3. Specify the rows to transfer is filter by calling AddSourceFilter.
+3. Specify the rows to transfer by calling AddSourceFilter.
 4. Execute the query for transferring data by calling CopyFields or CopyRows.
 
 Because DataTransfer operates in bulk and not on a row-by-row basis, no row based events or triggers will be executed. For example, when calling CopyFields, none of the following events will be called: OnBeforeModify, OnModify, or OnAfterModify. Or, when calling CopyRows, none of the following events will be called: OnBeforeInsert, OnInsert, or OnAfterInsert.
