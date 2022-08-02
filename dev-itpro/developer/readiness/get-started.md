@@ -172,4 +172,4 @@ Before you submit, we recommend that you review the [technical validation checkl
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
 [Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
 
-[!INCLUDE [footer-banner](includes/footer-banner.md)]
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]
