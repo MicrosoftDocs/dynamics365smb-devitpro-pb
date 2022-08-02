@@ -30,11 +30,11 @@ Because DataTransfer operates in bulk and not on a row-by-row basis, no row base
 
 ## CopyFields
 
-Calling CopyFields on the DataTransfer object will copy selected fields in the source table and copy them to the destination table. Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
+Calling CopyFields on the DataTransfer object will copy selected fields from one table (the source) to another table (the destination). Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
 
 ### Example 1
 
-A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, **Source** and **Destination**, as illustrated with sample data below. You're planning on  obsoleting field **S3** in the table **Source**. But before you do, you want to copy some values of **S3** into the field **D3** of the **Destination** table. Specifically, you only want to copy field **S3** in rows where field **S2** is equal to *A*.
+A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, **Source** and **Destination**, as illustrated with sample data below. You're planning on  obsoleting field **S3** in the **Source** table. But before you do, you want to copy some values of **S3** into the field **D3** of the **Destination** table. Specifically, you only want to copy field **S3** in rows where field **S2** is equal to *A*.
 
 <table>
 <tr><th>Source table</th><th>Destination table (before copy)</th> <th>Destination table (after copy)</th></tr>
