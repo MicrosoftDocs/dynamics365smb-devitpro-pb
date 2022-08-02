@@ -159,4 +159,4 @@ These features have enabled the [!INCLUDE [prod_short](includes/prod_short.md)] 
 [Azure reliability](https://azure.microsoft.com/features/reliability/)  
 [Microsoft Service Trust](https://servicetrust.microsoft.com/)  
 
-[!INCLUDE [footer-banner](../includes/footer-banner.md)]
+[!INCLUDE [footer-banner](includes/footer-banner.md)]
