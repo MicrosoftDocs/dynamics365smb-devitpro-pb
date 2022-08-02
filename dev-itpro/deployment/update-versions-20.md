@@ -45,6 +45,6 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Microsoft Dynamics 365 Business Central on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)  
 [Dynamics NAV developer and IT Pro content](/dynamics-nav/index)
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

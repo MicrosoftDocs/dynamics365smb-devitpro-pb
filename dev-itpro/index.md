@@ -85,6 +85,6 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 [Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
 [Dynamics 365 Product Licensing](https://www.microsoft.com/Licensing/product-licensing/dynamics365)  
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

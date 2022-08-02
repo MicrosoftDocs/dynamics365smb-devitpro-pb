@@ -192,6 +192,6 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 [Administration of Business Central Online](tenant-administration.md)  
 [Administration of Business Central On-Premises](Administration.md)  
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

@@ -172,6 +172,6 @@ Before you submit, we recommend that you review the [technical validation checkl
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
 [Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: overview
 ms.author: edupont
-ms.date: 04/20/2022
+ms.date: 08/02/2022
 ---
 # Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
@@ -95,6 +95,6 @@ On occasion, as a partner, you will run into questions that are not directly rel
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Providing support to your customers (Microsoft Partner Center)](/partner-center/customer-support)  
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

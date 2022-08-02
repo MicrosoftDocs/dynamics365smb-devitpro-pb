@@ -27,6 +27,6 @@ This article provides an overview of the process for deploying an Embed App to t
 [Qualification and Onboarding](../deployment/embed-app-qualifications-onboarding.md)  
 [Managing Embed Apps in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)  
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  

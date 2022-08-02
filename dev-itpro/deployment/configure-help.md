@@ -166,6 +166,6 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 
-## Survey
+## Help us understand
 
-Help us understand if you use Microsoft's custom Help toolkit. Take the survey in English here: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
+We want to learn more about how people use Microsoft's [custom Help toolkit](https://github.com/microsoft/dynamics365smb-custom-help). Take the survey (in English) and help us understand: [https://forms.office.com/r/A4cUJgjkD1](https://forms.office.com/r/A4cUJgjkD1).  
