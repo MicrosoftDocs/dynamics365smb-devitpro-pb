@@ -165,3 +165,5 @@ If you want to customize or extend the Microsoft Help, you can fork our public r
 [Working with Dynamics NAV Help Server](/dynamics-nav/microsoft-dynamics-nav-help-server)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

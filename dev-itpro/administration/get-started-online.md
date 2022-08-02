@@ -106,3 +106,5 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]
