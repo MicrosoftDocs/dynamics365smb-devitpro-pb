@@ -12,7 +12,7 @@ ms.date: 07/29/2022
 
 # Transferring Data as Part of Upgrade
 
-The DataTransfer object is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, as the record API does, it produces SQL code that operates on sets and allows for far more performant execution.
+The DataTransfer object is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, it produces SQL code that operates on sets. This behavior allows for far more performant execution.
 
 > [!IMPORTANT]
 > DataTransfer object can only be used in upgrade code and it will throw an runtime error if used outside of upgrade codeunits.  
@@ -32,10 +32,10 @@ Because DataTransfer operates in bulk and not on a row-by-row basis, no row base
 
 Calling CopyFields on the DataTransfer object will copy selected fields in the source table and copy them to the destination table. Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
 
-A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, table **Source** and table **Destination**, as illustrated with sample data below. You eventually want to obsolete field **S3** in the table **Source**. But before doing, you want to copy some values of **S3** into the field **D3** in table **Destination**. Specifically, you only want to copy field **D3** in rows where field **D2** is equal to *A*. 
+A typical scenario is obsoleting a field and moving its data into another table. For example, suppose you have two tables, **Source** and **Destination**, as illustrated with sample data below. You eventually want to obsolete field **S3** in the table **Source**. But before doing, you want to copy some values of **S3** into the field **D3** in table **Destination**. Specifically, you only want to copy field **D3** in rows where field **D2** is equal to *A*. 
 
 <table>
-<tr><th>Table Source </th><th>Table Destination (before copy)</th> <th>Table Destination (after copy)</th></tr>
+<tr><th>Source table</th><th>Destination table (before copy)</th> <th>Destination table (after copy)</th></tr>
 <tr><td>
 
 | PK | S1 | S2 | S3 |
@@ -86,7 +86,7 @@ end;
 
 The same scenario could also be coded using the record API, by first looping over all rows in the table **Source** with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
 
-The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries all-in-all. Measuring execution timings for both DataTransfer and Record API based solutions, they show a ~200x performance improvement for DataTransfer. These gains will be even better if the destination table has Modify triggers or if the execution environment has significant latency to SQL.
+The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measuring execution times for DataTransfer and record API solutions has shown approximately 200 times ~200x performance improvement for DataTransfer. These gains will be even greater if the destination table has Modify triggers or if the execution environment has significant latency to SQL.
 
 ### Uniqueness in the source table
 
@@ -101,7 +101,7 @@ The join condition can be specified on arbitrary fields, which leaves the possib
 
 ## CopyRows
 
-Calling CopyRows on the DataTransfer object will insert a row in the destination table for each matching row in the specified source table. The row will be inserted with the fields and constant values specified by calling AddFieldValue or AddConstantField. The remaining fields, which aren't populated from the source table or a constant, will be inserted with field's [InitValue](properties/devenv-initvalue-property.md) or the default value of the field's type, if no InitValue is specified.
+Calling CopyRows on the DataTransfer object inserts a row in the destination table for each matching row in the specified source table. Fields in the inserted row are populated with values specified by calling AddFieldValue or AddConstantField. Fields not specified by AddFieldValue or AddConstantField are populated with the field's [InitValue](properties/devenv-initvalue-property.md), if any, or the field type's default value.
 
 If one tries to copy a row from the source table where a row with same primary key exists in the destination table a runtime error will be thrown.  
 
@@ -115,13 +115,14 @@ begin
     dt.SetTables(Database::Source, Database::Destination);
     dt.AddFieldValue(src.FieldNo("PK"), dest.FieldNo("PK"));
     dt.AddFieldValue(src.FieldNo("S3"), dest.FieldNo("D3"));
+    dt.AddConstantValue('X', dest.FieldNo(D2));
     dt.AddSourceFilter(src.FieldNo("S2"), '=%1', 'A');
     dt.CopyRows();
 end;
 ```
 
 <table>
-<tr><th>Before Table Source</th><th>Before Table Destination </th> <th>Resulting Destination Table</th></tr>
+<tr><th>Table Source</th><th>Table Destination </th> <th>Resulting Destination Table</th></tr>
 <tr><td>
 
 | PK | S1 | S2 | S3 |
@@ -142,8 +143,8 @@ end;
 | PK | D1 | D2 | D3 |
 |----|----|----|----|
 | 1  | A  | A  | 99 |
-| 2  |   |   | 43 |
-| 3  |   |   | 44 |
+| 2  |   |  X | 43 |
+| 3  |   |  X | 44 |
 
 </td>
 </tr>
@@ -151,7 +152,7 @@ end;
 
 ### Performance
 
-As with CopyFields, CopyRows is a bulk operation so it allows for performant execution doing only a single SQL statement for the entire operation instead of doing multiple per-row operations. Measurements show an ~50x performance improvement over the comparable record API based solution.
+As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements show an ~50x performance improvement over the comparable record API based solution.
 
 ## See Also
 
