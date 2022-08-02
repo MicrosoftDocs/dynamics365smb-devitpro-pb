@@ -86,7 +86,7 @@ end;
 
 ### Performance
 
-The same scenario could also be coded using the record API, by first looping over all rows in the table **Source** with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
+The same scenario could also be coded using the record API, by first looping over all rows in the **Source**table with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
 
 The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measurements for DataTransfer and record API solutions have shown an ~200x  performance improvement for DataTransfer. These gains will be even greater if the destination table has modify triggers or if the environment has significant latency to SQL.
 
@@ -140,7 +140,7 @@ To help explain CopyRows, consider an example using sample tables **Source** and
 </tr>
 </table>
 
-In this code example, you copy the **PK** and **S3** fields for all rows where **S2** equals *A* and add them as new rows in table **Destination**. You use AddConstantValue to give the field **D2** the value *X* in the inserted rows.
+In this code example, you copy the **PK** and **S3** fields for all rows where **S2** equals *A* and add them as new rows in the **Destination** table. You use AddConstantValue method to give the field **D2** the value *X* in the inserted rows.
 
 ```AL
 local procedure InsertTheRows()
