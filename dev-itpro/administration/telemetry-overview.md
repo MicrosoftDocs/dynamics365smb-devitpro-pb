@@ -33,7 +33,9 @@ Both for tenant-level and extension-level telemetry, it is possible to craft cus
 using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md). Learn more about AL at [Programming in AL](../developer/devenv-programming-in-al.md).
 
 ## Available telemetry
-In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged as traces.
+In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged as traces.  Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations:  
+
+[!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
 ## <a name="enable"></a> Enable Application Insights
 To send telemetry data to Application Insights, you must have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to it. Learn more at [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
