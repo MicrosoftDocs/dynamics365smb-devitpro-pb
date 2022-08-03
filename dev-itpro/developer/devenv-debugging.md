@@ -115,7 +115,7 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 
 ### View locks held
 
-The Locks part of the database statistics shows an overview of the SQL locks held by the debugged session. The insight can be used to understand the locks aquired while stepping through AL code. The access mode of the lock is also provided which allows advanced developers to establish concurrency compatiblity with other operations.
+The Locks part of the database statistics shows an overview of the SQL locks held by the debugged session. The insight can be used to understand the locks acquired while stepping through AL code. The access mode of the lock is also provided, which allows advanced developers to establish concurrency compatiblity with other operations.
 
 ### View SQL statement statistics
 
