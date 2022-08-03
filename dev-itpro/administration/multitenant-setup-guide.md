@@ -48,7 +48,7 @@ The application database includes tables that store information about the applic
 To set up the [!INCLUDE[server](../developer/includes/server.md)] instance for multitenancy, make the following changes to the server instance configuration:
 
 1. Enable the **Multitenant** setting.
-2. Set the server instance to connect to the application database by changing these settings: **DatabaseServer**, **DatabaseServer**, and **DatabaseServer**.
+2. Set the server instance to connect to the application database by changing these settings: **DatabaseServer**, **DatabaseInstance**, and **DatabaseName**.
 
 For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#multitenant) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
 

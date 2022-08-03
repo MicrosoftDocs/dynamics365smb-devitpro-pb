@@ -200,3 +200,5 @@ These updates do not add or remove functionality, and they are transparent to bu
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
 [Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

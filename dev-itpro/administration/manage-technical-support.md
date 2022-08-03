@@ -179,7 +179,7 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 
 <!-- TODO: How to manage your customers' support issues -->
 
-## See Also
+## See also
 
 [How to check service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide&preserve-view=true#how-to-check-service-health)  
 [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md)  
@@ -191,3 +191,5 @@ Both internal and delegated administrators can access [!INCLUDE [prodadmincenter
 [Administration as a partner](tenant-administration.md#administration-as-a-partner)  
 [Administration of Business Central Online](tenant-administration.md)  
 [Administration of Business Central On-Premises](Administration.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

@@ -156,7 +156,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 ## Task 4: Convert application database to version 18
 
-This task runs a technical upgrade on the application database to convert it to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database to convert it to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The co
 
 1. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18 as an administrator.
 2. Run the Invoke-NAVApplicationDatabaseConversion cmdlet to start the conversion:

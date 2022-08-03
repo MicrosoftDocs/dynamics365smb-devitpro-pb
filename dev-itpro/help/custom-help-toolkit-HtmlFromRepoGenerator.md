@@ -114,3 +114,5 @@ For more information, see [Introduction to DocFX Template System](https://dotnet
 ## See also
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]
