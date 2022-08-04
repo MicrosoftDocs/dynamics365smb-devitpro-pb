@@ -221,6 +221,7 @@
 #### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
+#### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [User Checklist Telemetry](administration/telemetry-user-checklist-trace.md)
