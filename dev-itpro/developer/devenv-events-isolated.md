@@ -25,7 +25,7 @@ Isolated events are implemented by separating each event subscriber into its own
 :::image-end:::
 
 > [!NOTE]  
->   Read-only transactions are allowed to call isolated events directly, but **write transactions should explicitly be committed before invoking an isolated event. Otherwise, the isolated event will be invoked like an normal event, that is, errors inside an event subscriber will cause the entire operation to fail**.
+> Read-only transactions are allowed to call isolated events directly, but **write transactions should explicitly be committed before invoking an isolated event. Otherwise, the isolated event will be invoked like an normal event, that is, errors inside an event subscriber will cause the entire operation to fail**.
 
 ### Rollback
 
