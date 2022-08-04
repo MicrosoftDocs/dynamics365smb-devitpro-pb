@@ -106,3 +106,5 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Country/Regional Availability and Supported Translations](../compliance/apptest-countries-and-translations.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Preparing Demonstration Environments (as a partner)](demo-environment.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

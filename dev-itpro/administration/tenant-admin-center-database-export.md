@@ -99,6 +99,9 @@ This means that if you want to export the data in order to change the customer's
 
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 
+> [!NOTE]
+> If you are getting an error saying your file contains corrupted data when importing the bacpac file please ensure you are using the .NET Core version of [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage-download).
+
 ## Restoring the exported data to Business Central online
 
 If you decide at some point that you want to restore the exported data to a new environment in [!INCLUDE [prod_short](../includes/prod_short.md)] online, then you must go through the same steps as you went through to migrate from on-premises to [!INCLUDE [prod_short](../includes/prod_short.md)] online. This way, you can prepare the database so that it's ready to migrate to the latest version of [!INCLUDE [prod_short](../includes/prod_short.md)]. For example, you could choose to replicate the data to a sandbox environment for further testing and training. For more information, see [Migrating On-Premises Data to Business Central Online](migrate-data.md).  

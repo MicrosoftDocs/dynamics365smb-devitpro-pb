@@ -1,9 +1,9 @@
 ---
 title: "AL Diagnostics"
-description: ""
+description: "Get an overview of all the warning diagnostics."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/17/2022
+ms.date: 07/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -604,10 +604,12 @@ author: SusanneWindfeldPedersen
 |[AL0723](diagnostic-al723.md)|The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can only target Actions.|Error|
 |[AL0724](diagnostic-al724.md)|An area of type '{0}' is not valid on pages of type '{1}'.|Error|
 |[AL0725](diagnostic-al725.md)|The action type '{0}' is not allowed in area '{1}'.|Error|
+|[AL0726](diagnostic-al726.md)|An identifier, a literal, or an option access is expected as the value of a filter expression.|Error|
 |[AL0727](diagnostic-al727.md)|The property '{0}' can only be set if the property '{1}' is set.|Warning (Future Error)|
 |[AL0728](diagnostic-al728.md)|The property '{0}' can only be set if the property '{1}' is set to '{2}'.|Warning (Future Error)|
 |[AL0729](diagnostic-al729.md)|The property '{0}' can only be set if the property '{1}' is set with any of the values of: '{2}'.|Warning (Future Error)|
 |[AL0730](diagnostic-al730.md)|The field '{0}' cannot be used in a sum index.|Error|
+|[AL0731](diagnostic-al731.md)|The name '{0}' does not exist in the current context.|Warning (Future Error)|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

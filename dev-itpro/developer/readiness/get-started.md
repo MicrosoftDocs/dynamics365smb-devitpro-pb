@@ -5,7 +5,7 @@ author: a-emniel
 ms.topic: conceptual
 ms.reviewer: edupont
 ms.author: kurtju
-ms.date: 06/01/2022
+ms.date: 08/02/2022
 ms.custom: intro-internal
 ---
 
@@ -35,9 +35,9 @@ For more information, see [Partner Center Account](/partner-center/partner-cente
 
 ### PartnerSource Business Center (PSBC) account
 
-To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer and have a unique development license file with a specific object range.
+To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer. You must also have a unique development license file with a specific object range.  
 
-To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
+To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must have access to PartnerSource Business Center (PSBC). Either of the following agreements gives you access to PSBC, which is a first step towards getting a development license:
 
 - [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
 
@@ -170,4 +170,6 @@ Before you submit, we recommend that you review the [technical validation checkl
 [The Lifecycle of Apps and Extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
-[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)
+[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
+
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]

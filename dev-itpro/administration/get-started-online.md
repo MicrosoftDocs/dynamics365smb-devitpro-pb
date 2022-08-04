@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 12/28/2021
+ms.date: 06/03/2022
 ms.author: edupont
 ms.custom: intro-internal
 ---
@@ -28,7 +28,8 @@ In order to be able to service [!INCLUDE [prod_short](../includes/prod_short.md)
 
 [!INCLUDE [csp-admin-users](../developer/includes/csp-admin-users.md)]
 
-[!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
+> [!CAUTION]
+> [!INCLUDE [admin-partneruser](../developer/includes/admin-partneruser.md)]
 
 For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md).  
 
@@ -105,3 +106,5 @@ For more information, see [Administration of Business Central Online](tenant-adm
 [Licensing in Dynamics 365 Business Central](../deployment/licensing.md)  
 [Learn how to partner with indirect providers in the Cloud Solution Provider program](/partner-center/indirect-reseller-tasks-in-partner-center)  
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

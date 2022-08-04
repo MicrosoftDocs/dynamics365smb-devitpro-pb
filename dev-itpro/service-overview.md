@@ -158,3 +158,5 @@ These features have enabled the [!INCLUDE [prod_short](includes/prod_short.md)] 
 [Azure global infrastructure](https://azure.microsoft.com/global-infrastructure)  
 [Azure reliability](https://azure.microsoft.com/features/reliability/)  
 [Microsoft Service Trust](https://servicetrust.microsoft.com/)  
+
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

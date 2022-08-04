@@ -230,7 +230,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "44444444-cccc-5555-dddd-666666666666"
+        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666"
         ```
 
     2. Set the `ClientServicesFederationMetadataLocation` parameter.

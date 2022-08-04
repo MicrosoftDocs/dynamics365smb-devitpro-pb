@@ -1,4 +1,4 @@
-# [Development and administration](index.md)
+﻿# [Development and administration](index.md)
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
@@ -65,6 +65,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
 ### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
 ### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 ### Updates for earlier major versions
@@ -186,12 +187,14 @@
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
+### [Pivot onboarding based on sign-up context](administration/onboarding-signupcontext.md)
 ### [Recommend apps](administration/recommend-apps.md)
 <!-- telemetry -->
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
 ### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
+### [Use Power BI to analyze telemetry](administration/telemetry-power-bi-app.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
@@ -215,10 +218,13 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
+#### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
+#### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
+#### [User Checklist Telemetry](administration/telemetry-user-checklist-trace.md)
 #### [Verbose Logging Enabled/Disabled Telemetry](administration/telemetry-verbose-logging-trace.md)
 #### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Web Service Requests Telemetry (Incoming)](administration/telemetry-webservices-trace.md)
@@ -518,8 +524,10 @@
 ##### [XMLPort](developer/devenv-xmlport-object.md)
 ##### [Control Add-In](developer/devenv-control-addin-object.md)
 ##### [Entitlement](developer/devenv-entitlement-object.md)
-##### [Permissionset](developer/devenv-permissionset-object.md)
+##### Permission Set
+###### [Permissionset](developer/devenv-permissionset-object.md)
 ###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
+###### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 ##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
 ##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
 
@@ -684,6 +692,7 @@
 #### [Permissionset Object](developer/devenv-permissionset-object.md)
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 #### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+#### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 #### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
 #### [Entitlement Object](developer/devenv-entitlement-object.md)
 

@@ -5,7 +5,7 @@ ms.topic: article
 ms.service: dynamics365-business-central
 author: edupont04
 ms.author: mikebc
-ms.date: 07/04/2022
+ms.date: 07/12/2022
 
 ---
 
@@ -35,15 +35,15 @@ Users accessing Business Central in any of the following ways may experience thi
 
 ## How to fix the issue for Business Central on-premises
 
-The fix to the web server will be included in the July 2022 cumulative updates that administrators can deploy to Business Central on-premises solutions. The following table will be updated with links to the cumulative updates that contain the fix as soon as those are made generally available.  
+The fix to the web server will be included in the July 2022 cumulative updates that administrators can deploy to Business Central on-premises solutions. The following table provides links to the cumulative updates that contain the fix.  
 
 | Version                           | Link    |
 |-----------------------------------|---------|
-| 2022 release wave 1, version 20.x | Pending |
-| 2021 release wave 2, version 19.x | Pending |
-| 2021 release wave 1, version 18.x | Pending |
-| Spring 2019 Update, version 14.x  | Pending |
-| Dynamics NAV 2018                 | Pending |
+| 2022 release wave 1, version 20.3 | [https://support.microsoft.com/help/5016304](https://support.microsoft.com/help/5016304) |
+| 2021 release wave 2, version 19.9 | [https://support.microsoft.com/help/5016303](https://support.microsoft.com/help/5016303) |
+| 2021 release wave 1, version 18.15 | [https://support.microsoft.com/help/5015473](https://support.microsoft.com/help/5015473) |
+| Spring 2019 Update, version 14.38  | [https://support.microsoft.com/help/5016301](https://support.microsoft.com/help/5016301) |
+| Dynamics NAV 2018                 | [https://support.microsoft.com/help/5016300](https://support.microsoft.com/help/5016300) |
 
 ## What administrators can do to work around the issue
 
