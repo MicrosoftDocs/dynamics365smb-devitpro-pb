@@ -27,4 +27,6 @@
 | RT0026 | Performance | [Database wait statistics snapshot entry: {databaseWaitStatisticsCategory}](../administration/telemetry-database-wait-statistics-trace.md#waitstatsentry) | 
 | RT0028 | Performance | [Database deadlock occurred](../administration/telemetry-database-deadlocks-trace.md#database-deadlock-occurred) |
 | RT0030 | Error method call| [Error dialog displayed: {errorMessage}](../administration/telemetry-error-method-trace.md) | 
+| RT0031 | Permission error| [Permission error shown](../administration/telemetry-permission-error-trace.md) | 
+
 
