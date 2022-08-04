@@ -3,7 +3,7 @@ title: "ObsoleteTag Property"
 description: "Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Specifies a free-form text to support tracking of where and when the object was 
 
 ## Applies to
 -   Page Action Ref
+-   Page Custom Action
 -   Table Field
 -   Table
 -   Table Key
