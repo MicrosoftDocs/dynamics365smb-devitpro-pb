@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
 - Current User support for Email - SMTP Connector 
-- Shopify prospects get a great first-run experience 
+- [Shopify prospects get a great first-run experience](/dynamics365/business-central/dev-itpro/administration/onboarding-signupcontext) 
 
 ## Release Plan  
 
