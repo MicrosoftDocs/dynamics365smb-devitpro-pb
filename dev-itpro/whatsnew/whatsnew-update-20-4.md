@@ -35,7 +35,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
-In October 2022, the new release will go live. You can already discover what's new and planned here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
+In October 2022, the new release will go live. You can already discover what's new and planned in the release plan here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
 
 
 **Business Central newsletter for partners**  
