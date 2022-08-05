@@ -96,8 +96,8 @@ Switching over to use the new promoted actions syntax can be done gradually as l
 
 - It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension.
 - Across a project you can mix legacy and new syntax and:
-    - You can implement the `actionref` syntax on a page without breaking any existing page extensions. 
-    - You can also write a page extension with the new `actionref` syntax based on a page that uses the legacy syntax.
+  - You can implement the the new `actionref` syntax on a page without breaking any existing page extensions. 
+  - You can write a page extension with the new `actionref` syntax based on a page that uses the legacy syntax.
 
 
 <!-- 
