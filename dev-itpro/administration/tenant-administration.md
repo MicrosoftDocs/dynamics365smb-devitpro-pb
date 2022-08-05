@@ -114,3 +114,5 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Trials and Subscriptions](trials-subscriptions.md)  
 [Understanding the infrastructure of Business Central online](tenant-environment-topology.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

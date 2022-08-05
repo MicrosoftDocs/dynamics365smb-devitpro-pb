@@ -7,7 +7,10 @@ ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
 ---
+
 # Privacy policy and license agreement
+
+
 ## Privacy policy
 | Item | Description |
 |-------------|--------------|
