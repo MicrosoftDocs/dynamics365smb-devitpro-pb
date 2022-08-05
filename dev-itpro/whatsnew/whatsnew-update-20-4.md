@@ -21,7 +21,7 @@ Would you like to know what has changed in update 20.4? Below you'll find an ove
 Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
-- Current User support for Email - SMTP Connector 
+- [Current user support for Email - SMTP Connector](/dynamics365/business-central/admin-how-setup-email#using-smtp)
 - [Shopify prospects get a great first-run experience](/dynamics365/business-central/dev-itpro/administration/onboarding-signupcontext) 
 
 ## Release Plan  
