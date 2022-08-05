@@ -21,22 +21,19 @@ Would you like to know what has changed in update 20.4? Below you'll find an ove
 Find an overview of hotfixes in this [article](INSERT LINK).
 
 ## Feature changes  
-- [Current user support for Email - SMTP Connector](/dynamics365/business-central/admin-how-setup-email#using-smtp)
+- [Current user support for the SMTP email connector](/dynamics365/business-central/admin-how-setup-email#using-smtp)
 - [Shopify prospects get a great first-run experience](/dynamics365/business-central/dev-itpro/administration/onboarding-signupcontext) 
 
 ## Release Plan  
-
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 20.4
-
+## Upgrade to 20.4  
 Please note that new customers will automatically get the latest builds of Business Central (20.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
 **Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
 In October 2022, the new release will go live. You can already discover what's new and planned in the release plan here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
-
 
 **Business Central newsletter for partners**  
 Starting June 2022, we're doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
@@ -51,4 +48,4 @@ The B For August and September, we will be hosting the following calls, which yo
 - **August 30:** You know it, so share it in Microsoft Docs for Dynamics 365 Business Central 
 - **September 6:** Power Automate and Power Platform integrations
 
-Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings).  
+Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
