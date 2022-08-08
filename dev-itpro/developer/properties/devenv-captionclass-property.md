@@ -36,10 +36,13 @@ The `CaptionClass` property must be expressed in the format `'<Caption Area>, <C
 
 ## Remarks
 
-When you set the **CaptionClass property** on a field, users can configure the caption of a text box that is connected to a label or the caption of a check box without having to modify the code. The `Caption Class` in the system application layer then translates the `CaptionClass` property into actual captions that will be displayed in the UI. For example, if `CaptionClass = '3, My awesome caption';` the resulting caption in the UI will be **My awesome caption**.
+When you set the **CaptionClass property** on a field, users can configure the caption of a text box or the caption of a check box without having to modify the code. The `Caption Class` (codeunit 42) in the system application layer then translates the `CaptionClass` property into actual captions that will be displayed in the UI. For example, if `CaptionClass = '3, My awesome caption';` the resulting caption in the UI will be **My awesome caption**.
 
 > [!NOTE]
-> `<Caption Area>` is the location of the caption you want to use. The `<Caption Area>` can be '50000', '50140', and so on. Or, it can be a code from among 1, 2, and 3, where 1 is for Dimension Area, 2 is for VAT and 3 returns the `<Caption Expression>` string. In the above example, "3" returns the `<Caption Expression>` that is **My awesome caption**.
+> `<Caption Area>` is the location of the caption you want to use. The `<Caption Area>` can be '50000', '50140', and so on. Or, it can be a code from among 1, 2, and 3, which are handled by the base application layer and have a special meaning.
+> - 1 is for using a Dimension as caption. 
+> - 2 is for captions of fields that can include or not VAT. For example, if `CaptionClass = '2,0,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Excl. VAT**. If `CaptionClass = '2,1,Invoice Amount';`  the resulting caption in the UI will be **Invoice Amount Incl. VAT**.
+> - 3 returns the `<Caption Expression>` string. In the example in the above section, "3" returns the `<Caption Expression>` that is **My awesome caption**.
 
 > [!IMPORTANT]  
 > If you omit the pattern of `'<Caption Area>, <Caption Expression>'`, the caption becomes the value of whatever string has been given to the `CaptionClass` property. This means that you can use an expression such as `CaptionClass = ItemRec.Fieldcaption("Location Code");` as long as the returned data type is Text.

@@ -5,7 +5,7 @@ author: a-emniel
 ms.topic: conceptual
 ms.reviewer: edupont
 ms.author: kurtju
-ms.date: 06/01/2022
+ms.date: 08/02/2022
 ms.custom: intro-internal
 ---
 
@@ -170,4 +170,6 @@ Before you submit, we recommend that you review the [technical validation checkl
 [The Lifecycle of Apps and Extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
-[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)
+[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
+
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.author: edupont
-ms.date: 10/01/2021
+ms.date: 08/02/2022
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
@@ -203,4 +203,6 @@ For more information, see [Preparing Demonstration Environments](administration/
 [Migrate Legacy Help](upgrade/migrate-help.md)  
 [User Assistance Model](user-assistance.md)  
 <!--[The "Ready to Go" Program](developer/readiness/readiness-ready-to-go.md)  -->
-[The Business Central Administration Center](administration/tenant-admin-center.md)
+[The Business Central Administration Center](administration/tenant-admin-center.md)  
+
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

@@ -65,6 +65,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
 ### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
 ### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
 ### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
@@ -218,8 +219,10 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
+#### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
+#### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [User Checklist Telemetry](administration/telemetry-user-checklist-trace.md)

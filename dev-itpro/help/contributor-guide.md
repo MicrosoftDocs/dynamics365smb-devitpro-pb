@@ -333,4 +333,6 @@ To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by usin
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
-[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)
+[Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]
