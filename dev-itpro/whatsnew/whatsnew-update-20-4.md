@@ -45,7 +45,7 @@ Starting June 2022, we're doing quarterly newsletters for Business Central partn
 Are you looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 **Upcoming Business Central Office Hours Calls**  
-The B For August and September, we will be hosting the following calls, which you can register for today:
+For August and September, we will be hosting the following calls, which you can register for today:
 
 - **August 23:** Excel Layout and reporting
 - **August 30:** You know it, so share it in Microsoft Docs for Dynamics 365 Business Central 
