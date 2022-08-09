@@ -30,12 +30,20 @@ An instance of the [Record](record-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView Property on pages.
-          
-
-
+A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView property on pages.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks  
+The value of the *String* parameter can be returned by the [GetView Method \(Record\)](record-getview-method.md) with the UseNames parameter explicitly set to *false*.
+
+If the SetView method is executed with an empty string, all the filters are removed and the primary key is used.
+
+If no table is selected, the SetView method fails.
+
+This method works the same as the [SetView Method \(RecordRef\)](../recordref/recordref-setview-method.md).           
+
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

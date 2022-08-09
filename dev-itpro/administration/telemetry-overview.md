@@ -46,7 +46,7 @@ To send telemetry data to Application Insights, you must have an Application Ins
 ## <a name="ingest"></a> Control telemetry cost
 Azure Application Insights is billed based on the volume of telemetry data your application sends (data ingestion) and how long time you want data to be available (data retention). 
 
-Check the Azure Application Insights documentation for up-to-date information on pricing: [https://azure.microsoft.com/en-us/pricing/details/monitor/](https://azure.microsoft.com/en-us/pricing/details/monitor/).
+Check the Azure Application Insights documentation for up-to-date information on pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/).
 
 ### Control data ingestion cost
 To reduce data ingestion cost, you can:
@@ -65,7 +65,7 @@ You can override the ingestion endpoint by using the IngestionEndpoint key in th
 ### Reducing data retention cost
 To reduce data retention cost, you can 
 - use the default retention for Application Insights resources (currently 90 days). Different retention periods can be selected for each Application Insights resource. The full set of available retention periods is 30, 60, 90, 120, 180, 270, 365, 550, or 730 days.
-- purge data from your Application Insights resource using a set of user-defined filters. See https://docs.microsoft.com/en-us/rest/api/application-insights/components/purge#examples for examples. 
+- purge data from your Application Insights resource using a set of user-defined filters. See [Components - Purge](/rest/api/application-insights/components/purge#examples) for examples.
 
 ## <a name="viewing"></a>Viewing telemetry data in Application Insights
 
