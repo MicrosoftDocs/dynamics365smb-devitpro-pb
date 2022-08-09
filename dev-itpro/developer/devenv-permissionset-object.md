@@ -3,7 +3,7 @@ title: "Permission Set Object"
 description: "Description of the permission set object in AL for Business Central    ."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

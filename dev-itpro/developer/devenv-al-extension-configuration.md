@@ -3,7 +3,7 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/22/2022
+ms.date: 08/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
