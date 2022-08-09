@@ -31,6 +31,10 @@ Typing the shortcut `tpermissionset` will create the basic layout for a permissi
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
+## Generate permission set for an object
+
+When adding new AL objects, it's easy to forget to update the permissions. With the `al.generatePermissionSetForExtensionObjects` command, you can generate or update a permission file for the active project in Visual Studio Code. Choose to create a new permission file or select an existing file to make updates to. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
 ## Permission set example
 
 The following example illustrates a permission set `Sales Person` with permissions given to data in tables, each with different level of access. The [Assignable property](properties/devenv-assignable-property.md) is set to `true` which allows the permission set to be assigned to a user. The [Permissions property](properties/devenv-permissions-property.md) is set to the list of objects to give permissions to. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. 
