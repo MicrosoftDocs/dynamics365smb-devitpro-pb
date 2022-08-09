@@ -43,6 +43,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
 |Enable Fast IntelliSense Completion | Autocomplete in IntelliSense using autocomplete characters such as period or parentheses. Syntax is `al.enableFastIntelliSenseCompletion`. Default value is switched off. |
+|Generate PermissionSet for Extension Objects | Generate a permission set as an AL object. Syntax is `al.generatePermissionSetForExtensionObjects`. When invoking the command, the developer can choose to create a new permission file or select an existing file to update.|
 
 ## See Also
 
