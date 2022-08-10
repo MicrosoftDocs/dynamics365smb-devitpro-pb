@@ -3,7 +3,7 @@ title: "Resource Exposure Policy Setting"
 description: Explains how to set the resource exposure policy for allowing download or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 06/22/2022
+ms.date: 08/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,6 +32,12 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 > [!NOTE]  
 > The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it is generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above.
+
+### applicableToDevExtension
+
+[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+With the `applicableToDevExtension` flag, you can specify if all resource exposure policies specified for the extension also apply to developer extensions, by setting the value to `true`.
 
 ### allowDebugging
 
