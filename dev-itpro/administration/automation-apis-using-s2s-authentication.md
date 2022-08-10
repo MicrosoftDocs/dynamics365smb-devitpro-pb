@@ -3,7 +3,7 @@ title: "Using Service to Service Authentication"
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: henrikwh
 ms.custom: na
-ms.date: 06/29/2021
+ms.date: 08/10/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
