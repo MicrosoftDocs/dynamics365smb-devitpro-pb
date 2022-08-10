@@ -33,8 +33,14 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | Support for running the Business Central web server on a different machine than the Business Central server is no longer a supported configuration. This capability was sometimes needed for a deployment using the Business Central Windows client. |
-
 -->
+
+### <a name="flfformat"></a>License files in the .flf format [!INCLUDE[prod_short](../developer/includes/prod_short.md)] On-premises (Removal)
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
+
+|Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
+
 ## Changes in 2022 release wave 2 (version 21.0)
 
 ### WS-Federation with Azure Active Directory authentication
