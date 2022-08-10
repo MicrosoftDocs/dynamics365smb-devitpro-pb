@@ -37,7 +37,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With the `applicableToDevExtension` flag, you can specify if all resource exposure policies specified for the extension also apply to developer extensions, by setting the value to `true`.
+With the `applicableToDevExtension` flag, you can specify if all resource exposure policies specified for the extension also apply to *developer extensions*, by setting the value to `true`.
 
 ### allowDebugging
 
@@ -57,7 +57,7 @@ If you want to allow debugging into your extension to view the source code, the 
 
 #### The [NonDebuggable] attribute
 
-Unless, you've specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables with the `[NonDebuggable]` attribute, these will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+Unless, you've specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables with the `[NonDebuggable]` attribute, these methods and variables will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 
 #### When should I set `allowDebugging` to `true`?
@@ -78,7 +78,7 @@ When this flag is set to `true` in the `app.json` file of extension A, the sourc
 
 ### includeSourceInSymbolFile
 
-When this flag is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code, which is accessed by using the **Downloading Symbols** functionality, contains symbols, source code, and all other resources of extension A. When `includeSourceInSymbolFile` is set to `false`, the source isn't available in the symbol files and you can't use **Go to Definition** to view source. You can, however, still extend, get IntelliSense for, and call functionality in extension A by relying on its exposed symbols and signatures. The default value of `includesourceInSymbolFile` is `false`.
+When this flag is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code, which is accessed by using the **Downloading Symbols** functionality, contains symbols, source code, and all other resources of extension A. When `includeSourceInSymbolFile` is set to `false`, the source isn't available in the symbol files, and you can't use **Go to Definition** to view source. You can, however, still extend, get IntelliSense for, and call functionality in extension A by relying on its exposed symbols and signatures. The default value of `includesourceInSymbolFile` is `false`.
 
 ### Example JSON file
 
@@ -119,7 +119,7 @@ For more information, see [Using Key Vault Secrets in Business Central Extension
 
 ### The `BC-ResourceExposurePolicy-Overrides` secret
 
-Once the key vault is set up, the policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault. The value of the secret is a .json file with the structure as shown in the example below. Because, the json secret value in this case spans multiple lines, you must use Azure PowerShell instead of the Azure portal to define the json secret value. To enable one or more of the properties for use by an Azure AD tenant, you must add the tenant ID to enable that property for the users of the tenant. This enables a temporary access to the source code, for example, for debugging purposes. 
+Once the key vault is set up, the policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault. The value of the secret is a .json file with the structure as shown in the example below. Because the json secret value in this case spans multiple lines, you must use Azure PowerShell instead of the Azure portal to define the json secret value. To enable one or more of the properties for use by an Azure AD tenant, you must add the tenant ID to enable that property for the users of the tenant. Doing so enables a temporary access to the source code, for example, for debugging purposes. 
 
 
 ```powershell
