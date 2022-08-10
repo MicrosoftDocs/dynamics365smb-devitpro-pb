@@ -73,7 +73,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
-
+    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC200/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC200/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC190/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
@@ -94,16 +94,20 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
     2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
-    3. Select **Application permissions**, select **API.ReadWrite.All** or **Automation.ReadWrite.All**, then select **Add permissions**.
+    3. Select **Application permissions**, select **API.ReadWrite.All** and **Automation.ReadWrite.All**, then select **Add permissions**.
 
-    When completed, the **API permissions** page will include one of the following entries:
+        The **API permissions** page will include one of the following entries:
 
-    |API / Permission name|Type|Description|
-    |---------------------|----|-----------|
-    |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
-    |Dynamics 365 Business Central / API.ReadWrite.All|Application|Access to APIs and webservices|
+        |API / Permission name|Type|Description|
+        |---------------------|----|-----------|
+        |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
+        |Dynamics 365 Business Central / API.ReadWrite.All|Application|Access to APIs and webservices|
 
-    For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
+        For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
+
+    4. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**.
+
+        This step isn't required if you'll be granting consent from the Business Central web client in task 2.
 
 ## Task 2: Set up the Azure AD application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
@@ -133,7 +137,9 @@ Complete these steps to set up the Azure AD application for service-to-service a
    >
    > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
-7. Select **Grant Consent** in [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)] and follow the wizard to the complete the setup. Consent can also be granted from the Azure portal.
+7. (optional) Select **Grant Consent** and follow the wizard. 
+
+    This step will grant consent to the API. This step is only required if you haven't granted consent from the Azure portal in task 1. You can only complete this step if you've configured a redirect URL in the registered Azure AD app.
 
    > [!TIP]
    > Pre-consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
@@ -142,7 +148,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-For the majority of cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
+For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
 
 > [!IMPORTANT]
 > When getting access tokens, it's important to keep security in mind. For example, ensure that you don't expose the tokens. You can do that in two ways:
