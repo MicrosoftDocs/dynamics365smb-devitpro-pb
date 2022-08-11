@@ -318,6 +318,46 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
+## Finance Reports API
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Accounting period](resources/dynamics_accountingperiod.md)
+#### [Get accounting period](api/dynamics_accountingperiod_get.md)
+### [Business unit](resources/dynamics_businessunit.md)
+#### [Get business unit](api/dynamics_businessunit_get.md)
+### [Company](resources/dynamics_company.md)
+#### [Get company](api/dynamics_company_get.md)
+### [Customer](resources/dynamics_customer.md)
+#### [Get customer](api/dynamics_customer_get.md)
+### [Customer ledger entry](resources/dynamics_customerledgerentry.md)
+#### [Get customer ledger entry](api/dynamics_customerledgerentry_get.md)
+### [Detailed customer ledger entry](resources/dynamics_detailedcustomerledgerentry.md)
+#### [Get detailed customer ledger entry](api/dynamics_detailedcustomerledgerentry_get.md)
+### [Detailed vendor ledger entry](resources/dynamics_detailedvendorledgerentry.md)
+#### [Get detailed vendor ledger entry](api/dynamics_detailedvendorledgerentry_get.md)
+### [Dimension set entry](resources/dynamics_dimensionsetentry.md)
+#### [Get dimension set entry](api/dynamics_dimensionsetentry_get.md)
+### [Dimension value](resources/dynamics_dimensionvalue.md)
+#### [Get dimension value](api/dynamics_dimensionvalue_get.md)
+### [General budget entry](resources/dynamics_generalbudgetentry.md)
+#### [Get general budget entry](api/dynamics_generalbudgetentry_get.md)
+### [General ledger account](resources/dynamics_generalledgeraccount.md)
+#### [Get general ledger account](api/dynamics_generalledgeraccount_get.md)
+### [General ledger budgets](resources/dynamics_generalledgerbudgets.md)
+#### [Get general ledger budgets](api/dynamics_generalledgerbudgets_get.md)
+### [General ledger entry](resources/dynamics_generalledgerentry.md)
+#### [Get general ledger entry](api/dynamics_generalledgerentry_get.md)
+### [Subscriptions](resources/dynamics_subscriptions.md)
+#### [Get subscriptions](api/dynamics_subscriptions_get.md)
+#### [Delete subscriptions](api/dynamics_subscriptions_delete.md)
+#### [Create subscriptions](api/dynamics_subscriptions_create.md)
+#### [Update subscriptions](api/dynamics_subscriptions_update.md)
+### [Vendor](resources/dynamics_vendor.md)
+#### [Get vendor](api/dynamics_vendor_get.md)
+### [Vendor ledger entry](resources/dynamics_vendorledgerentry.md)
+#### [Get vendor ledger entry](api/dynamics_vendorledgerentry_get.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
+
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
