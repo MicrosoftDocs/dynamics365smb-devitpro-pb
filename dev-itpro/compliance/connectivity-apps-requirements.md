@@ -40,7 +40,8 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 
 * Sales volume requirements
 
-    Sales volume requirements ensure the app provider is constantly serving a critical mass of customers per listed country, and is continuously growing its customer base. The concrete sales volume requirements may change over time and for various markets, and are made available to the applicant when they apply for their app to become a connectivity app.
+    Sales volume requirements ensure the app provider is constantly serving a critical mass of customers per listed country, and is continuously growing its customer base. The concrete sales volume requirements may change over time and for various markets. 
+    Currently, an app is eligible for review to be included as a Connectivity App if it has 10 paying customers in the primary country and the ISV commits to 25 paying customers in the country after a 6 months ramp-up period. The 6 months ramp-up period starts with the release of the [!INCLUDE [prod_short](../includes/prod_short.md)] update that includes the app in the listing of Connectivity Apps.
 
 * Providing best-in-class experiences
 
