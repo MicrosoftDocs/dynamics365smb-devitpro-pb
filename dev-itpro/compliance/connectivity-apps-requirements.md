@@ -1,7 +1,7 @@
 ---
 title: Requirements for connectivity apps
 description: Learn about connectivity apps, what they can do to increase business productivity, and how to get your app listed as a connectivity app.
-ms.date: 08/03/2022
+ms.date: 08/11/2022
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
@@ -41,7 +41,7 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 * Sales volume requirements
 
     Sales volume requirements ensure the app provider is constantly serving a critical mass of customers per listed country, and is continuously growing its customer base. The concrete sales volume requirements may change over time and for various markets. 
-    Currently, an app is eligible for review to be included as a Connectivity App if it has 10 paying customers in the primary country and the ISV commits to 25 paying customers in the country after a 6 months ramp-up period. The 6 months ramp-up period starts with the release of the [!INCLUDE [prod_short](../includes/prod_short.md)] update that includes the app in the listing of Connectivity Apps.
+    Currently, an app is eligible for review to be included as a connectivity app if it has 10 paying customers in it's primary country, and the ISV commits to 25 paying customers in the country after a six months ramp-up period. The six months ramp-up period starts at the date when the [!INCLUDE [prod_short](../includes/prod_short.md)] update that includes the app in the listing of connectivity apps is generally available.
 
 * Providing best-in-class experiences
 
