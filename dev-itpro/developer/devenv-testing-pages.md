@@ -1,7 +1,7 @@
 ---
 title: "Testing Pages"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,14 +50,14 @@ You can create and open a test page in the following ways:
  
  For more information about the AL methods that you use on a test page, see [TestPage Data Type](methods-auto/testpage/testpage-data-type.md).  
 
-## Accessing Fields on Test Pages
+## Access fields on test pages
 
-You access the fields on a test page by using the dot notation. For example, if you have a test page variable named `CustomerCard` that represents the `Customer Card` page, then to access the `Name` field on the test page, you write `CustomerCard.Name` in your code.  
+You can access the fields on a test page by using the dot notation. For example, if you have a test page variable named `CustomerCard` that represents the `Customer Card` page, then to access the `Name` field on the test page, you'll write `CustomerCard.Name` in your code.  
   
 These fields are instances of the [TestField Data Type](methods-auto/testfield/testfield-data-type.md), so you can use the corresponding AL methods to work with them. For example, if you have a test page variable named `CustomerCard` that represents the `Customer Card` page, then to assign the value of the `No.` field to a variable named `CustNo`, you write `CustNo := CustomerCard."No.".Value` in your code. To write a value in the `Address` field of a `Customer Card` page, you write `CustomerCard.Address.Value := '<address>'` in your code.  
  
   
-## Accessing Page Parts and Subpages
+## Access page parts and subpages
 
 You access page parts and subpages on a test page by using the dot notation. 
  
@@ -71,23 +71,23 @@ if CustomerCard."No.".Value <> CustomerCard."Sales Hist. Sell-to FactBox"."No.".
   
 ```  
 
-## Filtering Data on Test Pages
+## Filtering data on test pages
 
-To filter the data that can be accessed on a test page, you use AL methods correspoding to the [TestFilter Data Type](methods-auto/testfilter/testfilter-data-type.md) instances. For example, to filter the customers on the `Customer List` page based on a range of values in the `No.` field, you can write the following code.  
+To filter the data that can be accessed on a test page, you use AL methods corresponding to the [TestFilter Data Type](methods-auto/testfilter/testfilter-data-type.md) instances. For example, to filter the customers on the `Customer List` page based on a range of values in the `No.` field, you can write the following code.  
   
 ```AL
 CustomerList.Filter.SetFilter("No.", '20000..30000');  
 ```  
   
-## Invoking Actions on Test Pages
+## Invoking actions on test pages
 
-Any action that is available on a page is also available on the test page that mimics that page. You access page actions by using the dot notation and the [Invoke Method](methods-auto/testaction/testaction-invoke-method.md). 
+Any action that is available on a page is also available on the test page that mimics the original page. You access page actions by using the dot notation and the [Invoke Method](methods-auto/testaction/testaction-invoke-method.md). 
 
 These are instances of the [TestAction Data Type](methods-auto/testaction/testaction-data-type.md), so you can use the corresponding AL methods to work with them. To access built-in actions, such as Yes, No, OK, or Cancel you can also call the [Yes Method](methods-auto/testpage/testpage-yes-method.md), [No Method](methods-auto/testpage/testpage-no-method.md), [Ok Method](methods-auto/testpage/testpage-ok-method.md) and [Cancel Method](methods-auto/testpage/testpage-ok-method.md) respectively, directly in the test page.
   
-## Navigating Among Records
+## Navigate among records
 
-To simulate moving to different items on a list page or moving to different records on a card page, you use one of the following navigation methods:  
+To simulate moving to different items on a list page or to different records on a card page, you can use one of the following navigation methods:  
   
 -   [Next Method \(TestPage\)](methods-auto/testpage/testpage-next-method.md)  
   
