@@ -13,7 +13,7 @@ ms.author: solsen
 
 <!-- NOTE: This article is an auto-generated stub from the metadata file. -->
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
-# Get customerLedgerEntries
+# Get customerLedgerEntries (Beta)
 
 Retrieves the properties and relationships of a customer ledger entry object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 

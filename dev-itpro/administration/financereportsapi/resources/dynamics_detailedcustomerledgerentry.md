@@ -11,7 +11,7 @@ ms.date: 08/11/2022
 ms.author: solsen
 ---
 
-# detailedCustomerLedgerEntry resource type
+# detailedCustomerLedgerEntry resource type (Beta)
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
