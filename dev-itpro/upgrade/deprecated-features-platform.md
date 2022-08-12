@@ -39,6 +39,8 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
+|Removed or Replaced? |Why?|
+|---------|---------|
 |Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
 
 ## Changes in 2022 release wave 2 (version 21.0)
@@ -93,6 +95,8 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 The following feature will be **Removed** in a later release.
 
+|Removed or Replaced? |Why?|
+|---------|---------|
 |Removed | Support for the file format .flf for Business Central license files for on-premises deployments will be removed in a later release. Please transition to using the newer .bclicense format instead. |
 
 
