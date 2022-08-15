@@ -115,7 +115,7 @@ RunBCPTTests.ps1 -Environment OnPrem -AuthorizationType Windows -Credential $Cre
 
 ## Analyze results
 
-When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results).
+When a run has completed, you can view the results on the lines on the **BCPT Suite Lines** FastTab. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyze-the-results).
 
 ## Troubleshoot log entries
 
@@ -151,7 +151,7 @@ The following steps provide an example of how to run a PRT in Single Run mode.
 9. To set your baseline after the run completes, in the **Base Version** field, enter **1**.
 
 > [!TIP]
-> If you run the test again you'll have delta values in the test case line. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyzing-the-results). You can reset the baseline to any version, and run as many test as needed.
+> If you run the test again you'll have delta values in the test case line. For more information, see [Analyzing the Results](devenv-performance-toolkit.md#analyze-the-results). You can reset the baseline to any version, and run as many test as needed.
 
 ### Analyze the results
 
