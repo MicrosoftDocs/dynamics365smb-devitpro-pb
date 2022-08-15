@@ -880,6 +880,7 @@
 ##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code Deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User Scenarios](compliance/apptest-userscenario.md)
+#### [Requirements for Connectivity Apps](compliance/connectivity-apps-requirements.md)
 #### Testing
 ##### [Testing your Extension](compliance/apptest-testingyourextension.md)
 ##### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
