@@ -3,7 +3,7 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/09/2022
+ms.date: 08/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
-|Enable Fast IntelliSense Completion | Autocomplete in IntelliSense using autocomplete characters such as period or parentheses. Syntax is `al.enableFastIntelliSenseCompletion`. Default value is switched off. |
+|Enable Fast IntelliSense Completion | Autocomplete in IntelliSense using autocomplete characters such as period and parentheses. Syntax is `al.enableFastIntelliSenseCompletion`. The list of characters that can be used is: period, comma, colon, semicolon, brackets, and single and double quotes. Default value is switched off. |
 |Generate PermissionSet for Extension Objects | Generate a permission set as an AL object. Syntax is `al.generatePermissionSetForExtensionObjects`. When invoking the command, the developer can choose to create a new permission file or select an existing file to update.|
 
 ## See Also
