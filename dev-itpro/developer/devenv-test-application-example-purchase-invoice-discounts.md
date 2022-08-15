@@ -1,7 +1,7 @@
 ---
 title: "Application Testing Example: Testing Purchase Invoice Discounts"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/12/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,12 +10,15 @@ author: blrobl
 ---
 
 # Application Testing Example: Testing Purchase Invoice Discounts
+
 Before you release a customized [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] application to a production environment, you must test the application. This walkthrough demonstrates how to use the test codeunits and test libraries to test an application.  
   
 ## About this example  
+
 You have modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. You want to test the functionality of the customized codeunit before you offer the customized application for sale. You create a new test codeunit with new test methods to test the Purch-Calc.Discount codeunit. During development, You use the application test libraries to help write a test with fewer lines of code.  
   
-## Prerequisites  
+## Prerequisites 
+ 
 To complete this example, you will need:  
   
 - [!INCLUDE[d365_bus_central](includes/d365_bus_central_md.md)] with a developer license.  
@@ -53,7 +56,7 @@ Tne next task is to create a helper method that generates data for the test. The
 -  The code in the helper method prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper method is not specific to the test itself, you can reuse it for similar tests. For example, you can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
   
 > [!NOTE]  
->  This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  
+> This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  
 
 ## Code
 
@@ -132,4 +135,5 @@ codeunit 50111 "ERM Vendor Discount"
 ```
 
 ## See Also  
+
  [Testing the Application](devenv-Testing-Application.md)
