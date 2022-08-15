@@ -2,7 +2,7 @@
 title: "Deprecating Explicit and Implicit With Statements"
 description: "Rationale and description of why explicit and implicit with statements are deprecated in AL"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/15/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,6 +13,9 @@ author: esbenk
 # Deprecating Explicit and Implicit With Statements
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
+
+> [!NOTE]  
+> With [!INCLUDE[prod_short](../includes/prod_short.md)] 2022 release wave 2, the **AL:Go!** template for creating new AL projects in Visual Studio Code, now enables explicit `with` statements by default, by adding the `NoImplicitWith` option to the `features` property in the generated app.json file.
 
 The extensibility model and the AL programming language is a successor to the C/AL language. And the `with` statement has up until now been supported in AL. While using the `with` statement might make code harder to read, it can also prevent code in [!INCLUDE[prod_short](includes/prod_short.md)] online from being upgraded without changes to the code or even worse - upgraded, but with changed behavior. We distinguish between two types of with statements; the explicit type of `with` using the keyword, and the implicit with which is not expressed directly in code. The next sections describe these one by one.
 
