@@ -30,7 +30,7 @@ There are some limitations to be aware of:
 To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
 
 > [!TIP]  
-> To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You need to define the application family for your Embed app during onboarding. 
+> To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You must define the application family for your Embed app during onboarding. 
 
 ## Breakpoints
   
@@ -85,7 +85,7 @@ If you don't want to publish and invoke the functionality to debug it, you can a
 |**Ctrl+F5**      |Start without debugging|
 |**Shift+F5**     |Stop debugging|
 |**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing. That breakpoint won't be hit, or if it's hit, it won't be the new code that it breaks. If it breaks, it will break on the line that the server thinks is the breakpoint, based on the last published code.|
-|**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
+|**Alt+F5**       |Start RAD with debugging. For more information, see [Work with Rapid Application Development](devenv-rad-publishing.md).|
 |**F10**          |Step over|
 |**F11**          |Step into|
 |**Shift+F11**    |Step out|

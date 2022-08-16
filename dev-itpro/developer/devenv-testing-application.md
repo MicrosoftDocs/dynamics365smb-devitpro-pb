@@ -78,7 +78,7 @@ For each page and report that you want to handle, you need to create a specific 
 
 If you run a test codeunit from a test runner codeunit, then any unhandled UI in the test methods of the test codeunit causes a failure of the test. If you don't run the test codeunit from a test runner codeunit, then any unhandled UI is displayed as it typically would. 
 
-For more information, see [Creating Handler Methods](devenv-creating-handler-methods.md). 
+For more information, see [Create Handler Methods](devenv-creating-handler-methods.md). 
 
 ## ASSERTERROR Keyword
 
@@ -152,7 +152,7 @@ We recommend the following best practices for designing your application tests:
  <!--[Application Test Automation](Application-Test-Automation.md)   -->
 [Testing Pages](devenv-Testing-Pages.md)   
 <!--[Testing with Permission Sets](devenv-testing-with-permission-sets.md) -->    
-[Creating Handler Methods](devenv-creating-handler-methods.md)      
+[Create Handler Methods](devenv-creating-handler-methods.md)      
 [Test Codeunits and Test Methods](devenv-test-codeunits-and-test-methods.md)   
 [Application Testing Example: Testing Purchase Invoice Discounts](devenv-test-application-example-purchase-invoice-discounts.md)     
 [Random Test Data](devenv-Random-Test-Data.md)    

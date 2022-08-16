@@ -1,5 +1,5 @@
 ---
-title: "Working with Rapid Application Development"
+title: "Work with Rapid Application Development"
 description: "Describes what Rapid Application Development is and how you publish using RAD."
 author: SusanneWindfeldPedersen
 ms.custom: na
