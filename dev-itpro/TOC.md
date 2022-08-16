@@ -393,7 +393,7 @@
 #### [Debug Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
-#### [Signing an App Package File](developer/devenv-sign-extension.md)
+#### [Sign an App Package File](developer/devenv-sign-extension.md)
 #### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing

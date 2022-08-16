@@ -1,5 +1,5 @@
 ---
-title: "Signing an APP Package File"
+title: "Sign an APP Package File"
 description: "How do you sign an extension developed in the AL language."
 author: SusanneWindfeldPedersen
 ms.custom: na

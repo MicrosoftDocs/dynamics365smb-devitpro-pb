@@ -735,4 +735,4 @@ For more information, see [To export and import a permission set](/dynamics365/b
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Signing an APP Package File](../developer/devenv-sign-extension.md)  
+[Sign an APP Package File](../developer/devenv-sign-extension.md)  
