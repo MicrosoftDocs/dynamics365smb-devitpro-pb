@@ -390,7 +390,7 @@
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 #### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
-#### [Debugging Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
+#### [Debug Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
 #### [Signing an App Package File](developer/devenv-sign-extension.md)

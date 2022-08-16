@@ -1,5 +1,5 @@
 ---
-title: "Debugging Upgrade and Install Code"
+title: "Debug Upgrade and Install Code"
 description: "Overview of debugging upgrade and install codeunits in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
