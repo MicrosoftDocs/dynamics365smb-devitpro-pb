@@ -1,5 +1,5 @@
 ---
-title: "Using Azure AD authentication for Business Central on-premises installations"
+title: "Use Azure AD authentication for Business Central on-premises installations"
 description: Using Azure AD as authentication on on-premises installations and containers for Business Central for debugging and other purposes
 ms.custom: na
 ms.date: 08/08/2022
