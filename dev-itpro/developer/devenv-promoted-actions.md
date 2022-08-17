@@ -24,7 +24,8 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the wa
 
 <!-- The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. <!-- more content here --> 
 
-The legacy syntax for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
+> [!NOTE]  
+> The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
 
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action.
 
