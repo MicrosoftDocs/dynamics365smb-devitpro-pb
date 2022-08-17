@@ -29,6 +29,53 @@ Specifies how an action group should be rendered
 |**SplitButton**|Specifies that an action group should be rendered as a split button.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The first `actionref` defined in the `group` is the default action.
+
+## Example
+
+```al
+page 50105 ActionRefPage
+{
+    actions
+    {
+        area(Promoted)
+        {
+            actionref(MyPromotedActionRef; MyBaseAction)
+            {
+            }
+
+            group(Group1)
+            {
+                group(Group2)
+                {
+                    ShowAs = SplitButton; 
+                    actionref(MySecondPromotedActionRef; MyBaseAction)
+                    {
+                    }
+                }
+            }
+        }
+        area(Processing)
+        {
+            action(MyBaseAction)
+            {
+                Visible = true;
+                trigger OnAction()
+                begin
+                    Message('Hello world!');
+                end;
+            }
+        }
+    }
+}
+```
+
+
+
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
