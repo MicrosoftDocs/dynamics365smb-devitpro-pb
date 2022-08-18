@@ -39,7 +39,9 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 
 The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
-|Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. The format reamins suppported in older versions. Please transition to using the newer .bclicense format instead. |
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. The format remains supported in older versions. Please transition to using the newer .bclicense format instead. |
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
