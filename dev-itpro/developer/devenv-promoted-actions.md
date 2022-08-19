@@ -22,19 +22,16 @@ Promoted actions can be used on list, card, task, and Role Center pages to provi
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action.
 
-The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for moving actions on a page. 
+The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions themselves.
 
 > [!NOTE]  
 > The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
 
-To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action.
-
-<!--
-Pages and page extensions can contain an action group for promoted actions. These groups can contain references to existing actions. It is possible to add to existing groups or add new groups in page extensions. End-users can personalize their experience by promoting actions themselves. The platform and client will stay backwards compatible with existing promoted actions property, but a page or page extension must be consistent in its use. There will be a code action to convert from the old model to the new. -->
+To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
 
 ### Syntax example
 
-This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar. Furthermore, the `area(Promoted)` defines which actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the Processing group, also is promoted for easy access on the page.
+This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it is added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.
 
 ```al
 page 50105 ActionRefPage
@@ -48,11 +45,8 @@ page 50105 ActionRefPage
             }
             group(Group1)
             {
-                group(Group2)
+                actionref(MySecondPromotedActionRef; MyBaseAction)
                 {
-                    actionref(MySecondPromotedActionRef; MyBaseAction)
-                    {
-                    }
                 }
             }
         }
@@ -95,7 +89,7 @@ page 50105 ActionRefPage
 
 Switching over to use the new promoted actions syntax can be done gradually as legacy and new syntax will co-exist for a while. We do, however, encourage you to switch over as soon as you can. As you refactor the code, there are a couple of things to be aware of in that process:
 
-- It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension.
+- It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension. This means that if you add `actionref` syntax to your code, the `Promoted` properties (`Promoted`, `PromotedOnly`, `PromotedActionCategories`, and `PromotedCategory`) will not be allowed.
 - Across a project you can mix legacy and new syntax and:
   - You can implement the the new `actionref` syntax on a page without breaking any existing page extensions. 
   - You can write a page extension with the new `actionref` syntax based on a page that uses the legacy syntax.
