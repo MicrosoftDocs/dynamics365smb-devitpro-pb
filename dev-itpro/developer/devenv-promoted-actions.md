@@ -22,7 +22,7 @@ Promoted actions can be used on list, card, task, and Role Center pages to provi
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action.
 
-<!-- The new syntax provides more control over the promoted actions on a page, because they are defined in one section of the page. <!-- more content here --> 
+The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for moving actions on a page. 
 
 > [!NOTE]  
 > The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
