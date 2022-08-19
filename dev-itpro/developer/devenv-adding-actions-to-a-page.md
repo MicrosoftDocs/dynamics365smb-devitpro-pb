@@ -4,7 +4,7 @@ description: Create and display actions in the ribbon of all pages and group the
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 08/19/2022
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -17,6 +17,9 @@ This topic shows how to create new actions, how to add actions to a page, and ho
 - Actions  
 - Navigate
 - Report
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
 Before putting an action on a page you should think about the business processes that the action supports. For example, on page 42, the Sales Orders list page, the Actions button contains actions for all tasks related to processing sales orders. Creating these actions can make it easier for the order processor to perform their daily tasks, such as posting sales orders and creating new customer orders.  
 
@@ -46,8 +49,6 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar.
 
 1. Actions menu: The `area(Processing)` action area is used to display the action in the Actions menu. This action uses the **Promoted** and **PromotedCategory** properties in order to display the action in the promoted actions menu called **Process**.  
-    > [!NOTE]  
-    > With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 1. New Document group: The `area(Creation)` action area is used to display the action in the **New document** group in the Actions menu. Also, this action uses the **Image** property to display a form icon instead of a default icon.
 1. Navigate menu: The `area(Navigation)` action area is used to display the action in the Navigate tab. This action and other actions in this example uses the **RunObject** property to assign a page to the action.
 1. Report menu: The `area(Reporting)` action area is used to display this action in the Report menu, and also a Group control is added as a submenu to this menu. It sets the **Caption** property to make the action group visible in the Reports menu.
