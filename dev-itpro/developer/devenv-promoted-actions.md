@@ -91,44 +91,13 @@ Switching over to use the new promoted actions syntax can be done gradually as l
 
 - It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension. This means that if you add `actionref` syntax to your code, the `Promoted` properties (`Promoted`, `PromotedOnly`, `PromotedActionCategories`, and `PromotedCategory`) will not be allowed.
 - Across a project you can mix legacy and new syntax and:
-  - You can implement the the new `actionref` syntax on a page without breaking any existing page extensions. 
+  - You can implement the new `actionref` syntax on a page without breaking any existing page extensions. 
   - You can write a page extension with the new `actionref` syntax based on a page that uses the legacy syntax.
-
-
-<!-- 
-		○ It gives more control to the page over promoted actions but pageextensions can continue using the old syntax
-		
-	- Extending a legacy page syntax by a pageextension with ActionRef syntax is supported (V2 on V1)
-		○ PageExtension has more control over organizing promoted actions 
-		○ In the pageExtension (a virtual ) actionRef is created, the names are formated as <NameOfActions>_Promoted, A pageextension which uses the new syntax have access and control to those promoted actions
-		
-		pageextension 50100 MyExtension extends MyPage
-		{
-		    actions
-		    {
-		        modify(MyAction_Promoted)
-		        {
-		            Visible = false;
-		        }
-		        addfirst(Promoted)
-		        {
-		            actionref(MyPromotedAction; MySecondAction)
-		            {
-		            }
-		        }
-		    }
-		}
-		
-		
-	- If there is no changes in Page and PageExtensions (V1 on V1) those pages continue to work as before but we encourage you to convert your pages 
-	
-	- A developer can unlock all the features and control by converting both a page and pageExtensions that expand that page(V2 on V2)
--->
 
 ## Promoting actions by category (legacy syntax)
 
 > [!NOTE]  
-> The following section describes the former way of defining promoted actions for [!INCLUDE[prod_short](includes/prod_short.md)]. It's recommended to switch to the `ActionRef` syntax for defining promoted actions.
+> The following section describes the former way of defining promoted actions for [!INCLUDE[prod_short](includes/prod_short.md)]. It's recommended to switch to the `actionref` syntax for defining promoted actions.
 
 You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an extra step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
 
@@ -269,6 +238,7 @@ page 50103 Customers
 For more examples of how to use actions, see [Page Object](devenv-page-object.md) and [Page Extension Object](devenv-page-ext-object.md).
 
 ## See Also
+
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
 [AL Development Environment](devenv-reference-overview.md)  
