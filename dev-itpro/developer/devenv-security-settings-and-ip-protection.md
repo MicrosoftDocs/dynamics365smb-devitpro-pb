@@ -31,7 +31,11 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it is generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it is generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
+
+> [!IMPORTANT]  
+> The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
+
 
 ### applicableToDevExtension
 
@@ -42,9 +46,6 @@ With the `applicableToDevExtension` flag, you can specify if all resource exposu
 ### allowDebugging
 
 To allow debugging into your extension, you must set the `allowDebugging` flag when the extension is taken as a dependency, otherwise debugging isn't allowed. The default value of `allowDebugging` is `false`. 
-
-> [!NOTE]  
-> The **AL: Go!** template sets `allowDebugging` to `true`.
 
 If you want to allow debugging into your extension to view the source code, the `allowDebugging` property in the `app.json` file must be set to `true`. For example, if someone develops an extension A and another person develops an extension B, where B depends on A, then debugging B will only step into the code for A, if a method from A is called and if the `allowDebugging` flag is set to `true` in the `app.json` file for extension A as shown in the example below. By adding this setting, you *enable debugging* into an extension to view the source code and variables when that extension is set as a dependency.
 
