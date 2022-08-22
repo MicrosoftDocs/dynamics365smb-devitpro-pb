@@ -18,6 +18,15 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2023 release wave 1 (version 22.0)
 
+### .NET add-ins not using .NET Standard (Removal)
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. |
+
+
+
 ### Business Central Telemetry: using an instrumentation key (Removal)
 On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
@@ -39,7 +48,9 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 
 The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
-|Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. The format reamins suppported in older versions. Please transition to using the newer .bclicense format instead. |
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. The format remains supported in older versions. Please transition to using the newer .bclicense format instead. |
 
 ## Changes in 2022 release wave 2 (version 21.0)
 
@@ -66,14 +77,6 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in the 2022 release wave 2 (version 21.0). Please use the [Windows PowerShell cmdlets](/powershell/business-central/overview) that we make available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
-
-### .NET add-ins not using .NET Standard (Removal)
-The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
-
-|Removed or Replaced? |Why?|
-|---------|---------|
-|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2. |
-
 
 
 <!---
