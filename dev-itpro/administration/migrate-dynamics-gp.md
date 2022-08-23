@@ -93,7 +93,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 5. Inventory items
 
-    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Location information as well as the quantity on hand for each time is migrated.  If serial or lot information is tracked on an item that information is also migrated.  
+    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Location information as well as the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
 
     <!--In the setup wizard, you can choose to migration posting accounts on item classes. If you choose this field, posting accounts that are defined on *item classes* in Dynamics GP will be migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating.-->
 
