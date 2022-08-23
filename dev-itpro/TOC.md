@@ -390,10 +390,10 @@
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 #### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
-#### [Debugging Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
+#### [Debug Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
-#### [Signing an App Package File](developer/devenv-sign-extension.md)
+#### [Sign an App Package File](developer/devenv-sign-extension.md)
 #### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
@@ -689,7 +689,7 @@
 #### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 
 ### Handling Security
-#### Permission Sets and Entitlements
+#### [Permission Sets and Entitlements Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset Object](developer/devenv-permissionset-object.md)
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 #### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
