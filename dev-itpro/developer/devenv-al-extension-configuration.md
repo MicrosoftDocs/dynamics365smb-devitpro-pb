@@ -3,7 +3,7 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/15/2022
+ms.date: 08/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,6 +38,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Package Cache Path|Sets the directory path where reference symbol packages are located.|
 |Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
+|Snapshot Debugger Lines Hit Decoration | Specifies the decoration values for a line that is hit by the snapshot debugger. Syntax is `al.snapshotDebuggerLinesHitDecoration`.|
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
