@@ -93,7 +93,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 5. Inventory items
 
-    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Currently, the data migration brings in the quantity on hand for the items at the time of migration. This quantity is brought into the blank location.
+    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Location information as well as the quantity on hand for each time is migrated.  If serial or lot information is tracked on an item that information is also migrated.  
 
     <!--In the setup wizard, you can choose to migration posting accounts on item classes. If you choose this field, posting accounts that are defined on *item classes* in Dynamics GP will be migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating.-->
 
@@ -103,7 +103,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 7. Checkbook master data.  
 
-    In the setup wizard, you can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.
+    In the setup wizard, you can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any cash receipt that has been posted should also be deposited in GP before migrating, as undeposited receipts will not migrate. 
 
 ## Diagnostics run
 
