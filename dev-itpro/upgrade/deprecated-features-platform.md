@@ -95,7 +95,8 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 ### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (Warning)
 
 The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
-
+|Removed or Replaced? |Why?|
+|---------|---------|
 |Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. It will remain supported in older versions. Please transition to using the newer .bclicense format instead. |
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
