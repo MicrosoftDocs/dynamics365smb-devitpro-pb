@@ -66,7 +66,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |India|Microsoft|Available|IN|Central India|
 |Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
 |Ireland|Partner|Available|IE|North Europe, Ireland|
-|Israel|Partner|November 2022|IL|UAE North|
+|Israel (no RTL; English only)|Partner|November 2022|IL|UAE North|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
 |Jamaica|Partner|Available|JM|South Central US|
 |Japan|Partner|Available|JP|Japan East, Japan|
@@ -82,7 +82,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malta|Partner|Available|MT|West Europe, Netherlands|
 |Mauritius|Partner|Available|MU|South Africa North|
 |Mexico|Microsoft|Available|MX|South Central US|
-|Monaco|Partner|November 2022|MC|France Central|
+|Monaco (France)|Partner|November 2022|MC|France Central|
 |Mongolia|Partner|November 2022|MN|Southeast Asia|
 |Montenegro|Partner|November 2022|ME|West Europe|
 |Morocco|Partner|Available|MA|South Africa North|
