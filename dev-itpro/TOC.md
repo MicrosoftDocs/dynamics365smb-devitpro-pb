@@ -65,6 +65,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
 ### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
 ### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
 ### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
@@ -218,8 +219,10 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
+#### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
+#### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
 #### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
 #### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
 #### [User Checklist Telemetry](administration/telemetry-user-checklist-trace.md)
@@ -387,10 +390,10 @@
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 #### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
-#### [Debugging Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
+#### [Debug Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
-#### [Signing an App Package File](developer/devenv-sign-extension.md)
+#### [Sign an App Package File](developer/devenv-sign-extension.md)
 #### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
@@ -686,7 +689,7 @@
 #### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 
 ### Handling Security
-#### Permission Sets and Entitlements
+#### [Permission Sets and Entitlements Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset Object](developer/devenv-permissionset-object.md)
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 #### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
@@ -877,6 +880,7 @@
 ##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code Deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User Scenarios](compliance/apptest-userscenario.md)
+#### [Requirements for Connectivity Apps](compliance/connectivity-apps-requirements.md)
 #### Testing
 ##### [Testing your Extension](compliance/apptest-testingyourextension.md)
 ##### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)

@@ -188,6 +188,9 @@ If the product you selected requires a SQL connection, this page will be present
 
     `Server={Server Name\Instance Name};Database={Database Name};User Id={SQL Server Authenticated UserName};Password={SQL Server Authenticated Password};`  
 
+  >[!IMPORTANT]
+  >In the second connection string format, don't forget to add the **space** in *User Id* parameter as it's mandatory and can throw an error if it's missing.
+
   The SQL connection string is passed to Azure Data Factory (ADF), where it is encrypted and delivered to your Self-Hosted Integration Runtime and used to communicate with your SQL Server instance during the data migration process.  
 
 * **Integration runtime name**

@@ -3,7 +3,7 @@ title: Designing Role Centers
 description: "Provides and overview of Role Center design"
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/11/2021
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ The strength of [!INCLUDE[d365fin_md](includes/d365fin_md.md)] is its role-tailo
 
 The Role Center is the user's entry point and home page for [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can develop several different Role Centers, where each Role Center is customized to the profile of the intended users. For example, you could have Role Centers that target the different levels within an organization, such business owners, department leads, and information workers. 
 
-Role Centers are based on a user-centric design model. You should design a Role Center to give users quick access to the information that is most important to them in their daily work - displaying information that is pertinent to their role in the company and enabling them to easily navigate to relevant pages for viewing data and doing tasks.
+Role Centers are based on a user-centric design model. You should design a Role Center to give users quick access to the information that is most important to them in their daily work. Like, displaying information that is pertinent to their role in the company and enabling them to easily navigate to relevant pages for viewing data and doing tasks.
 
 ## Role Center structure
 
@@ -37,7 +37,7 @@ The navigation and actions area appears at the top of the Role Center page, and 
 |----|-------|-----------|----------------|
 |1|Navigation menus|The top-level navigation consists of one or more root menu items that expand to display links to other pages. The links can be grouped into submenus, enabling you to create a logical hierarchy. The pages targeted by the links will open in the content area of the Role Center. <br /><br />You define this area with an `area(Sections)` control in the page code.|The top-level navigation should provide access to relevant entity lists for the role's areas of business. For example, typical root items for a business manager could be finance, sales, and purchasing. You should place the root items in order of importance, starting from the left.|
 |2|Navigation bar|The second-level navigation displays a flat list of links to other pages. The pages targeted by the links will open in the content area of the Role Center.<br /><br />You define this area with an `area(embedding)` control in the page code.|You should use these items to link to users' most useful entity lists in their business process. For example, with a business manager, these could be links to customers, sales orders, and bank accounts. You should place items in the order that reflects the business process sequence. Try to limit the number of second-level items, and consider placing items in the top-level navigation instead, if the number gets too large. |
-|3|Action bar|The actions bar provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using the three different `area()` controls that are described in the next section. |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities, such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
+|3|Action bar|The actions bar provides links to pages, reports, and codeunits. The links can be displayed on the root-level or grouped in a submenu. The objects targeted by these links will open in a separate window in front of the Role Center page.<br /><br />You can define the actions by using the three different `area()` controls that are described in the next section. |The action area is designed for running the most important or most often used tasks and operations required by users. Actions will typically target card type pages that enable users to create new entities. Such as customers, invoices, and sales orders, or run reports. Place the most important action at the root-level, and group closely related actions in a submenu.|
 
 **Action bar area controls**
 
@@ -54,12 +54,12 @@ For more information about navigation, see [Adding to Navigation](devenv-adding-
 ### Behavioral points of interest
 
 - The order of the `area()` controls in the page code isn't important. However, the order of the individual actions and groups is important because they'll appear in the order in which they appear in page code.  
-- In page code, if the first part in the content area is a Headline part, the actions area in the client will be automatically positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. If the first part isn't a Headline, the actions area will appear directly after the navigation area, and extend the width of the workspace. 
+- In page code, if the first part in the content area is a Headline part, the actions area in the client will be automatically positioned. It will be positioned either to the right of the Headline part or after the Headline part, depending on the browser window size. If the first part isn't a Headline, the actions area will appear directly after the navigation area, and extend the width of the workspace. 
 - If a welcome banner is displayed on the Role Center, the banner hides the action bar.
 
 ## Content area
 
-The content area consists of one or more parts that display content from other pages. Unlike the navigation and actions area that is completely defined in the Role Center page code, the content area consists of self-contained, independent page part objects that can be used across Role Centers and in other pages. You define the content area by adding a `layout` control in the page code, and then a `part` control for each individual part to display.  
+The content area consists of one or more parts that display content from other pages. Unlike the navigation and actions area that is defined in the Role Center page code, the content area consists of self-contained, independent page part objects that can be used across Role Centers and in other pages. You define the content area by adding a `layout` control in the page code, and then a `part` control for each individual part to display.  
 
 The following table describes some of the most common parts for Role Centers, as illustrated in the previous figure.
 
@@ -75,19 +75,19 @@ The following table describes some of the most common parts for Role Centers, as
 
 ### Behavioral points of interest
 
-- In general, the parts will appear in the client according to the order in which they're defined in the Role Center page code and will automatically rearrange horizontally and vertically to fill the available workspace.
-- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they are placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they are defined in the page code.  
+- In general, the parts will appear in the client according to the order in which they're defined in the Role Center page code. They'll automatically rearrange horizontally and vertically to fill the available workspace.
+- However, in the [!INCLUDE[d365fin_web_md](includes/d365fin_web_md.md)], page parts that contain cues are automatically grouped under a common **Activities** section, no matter where they're placed in the code. All other page parts are grouped under the **Business Assistance** section. Within **Activities** and **Business Assistance** sections, the parts will arrange according to the order in which they're defined in the page code.  
 - If a welcome banner is displayed on the Role Center, the banner hides the headline part.
 
 ## Development tips for overall page design
 
-- Do not apply grouping to parts in the content area because it prevents parts from flowing to fill the available space. This gives the best experience to users with different screen resolutions or those on mobile devices.
+- Don't apply grouping to parts in the content area because it prevents parts from flowing to fill the available space. This gives the best experience to users with different screen resolutions or those on mobile devices.
 - To achieve the best readability and discoverability, place Headlines first, followed by cues, and then the remaining parts.
 - You can't add custom logic directly to a Role Center page code. Code is limited to defining navigation, actions, and parts. All other code is ignored.
 - Role Centers can be highly specialized, in the fact that the navigation, actions, and content are optional. For example, you could have a single part that fills the entire workspace.
  
 ## Designing a checklist to onboard new users 
-Since the Role Center is a user's entry point and home page to [!INCLUDE[prod_short](includes/prod_short.md)], it is also the ideal space to guide new users towards learning activities and finalizing setup of their company. The onboarding framework includes the ability to display a welcome banner and checklist on a Role Center home page. Unlike all other content described in this article, the welcome banner and checklist require a separate process and are not implemented directly on the Role Center page object or page parts. [Learn how to get users started with the checklist](../administration/onboarding-checklist.md).
+Since the Role Center is a user's entry point and home page to [!INCLUDE[prod_short](includes/prod_short.md)], it's also the ideal space to guide new users towards learning activities and finalizing setup of their company. The onboarding framework includes the ability to display a welcome banner and checklist on a Role Center home page. Unlike all other content described in this article, the welcome banner and checklist require a separate process and aren't implemented directly on the Role Center page object or page parts. [Learn how to get users started with the checklist](../administration/onboarding-checklist.md).
  
 ## Design for all display targets
 
@@ -96,7 +96,7 @@ Since the Role Center is a user's entry point and home page to [!INCLUDE[prod_sh
 - Some limitations on mobile devices include:
   - On tablets, there's a limit on the number of cues that can be displayed.
   - On phones, there's a limit on the number of parts in the content area that can be displayed.
-  - Role Center pages cannot be displayed when they are embedded in Outlook or SharePoint.
+  - Role Center pages can't be displayed when they're embedded in Outlook or SharePoint.
 
 ## Performance considerations
 
@@ -115,7 +115,11 @@ Here are some practical tips to help you make the most of this optimization:
 
 ## Using the Role Center in the client
 
-To use or test the new Role Center in the client, you must first associate the Role Center page with a profile. Profiles define user roles and each profile is associated with a single Role Center page. Create a new [profile object](devenv-profile-object.md) that references your page. Then, go to **My Settings** and select the new profile.
+To use or test the new Role Center in the client, you must first associate the Role Center page with a profile. Profiles define user roles and each profile is associated with a single Role Center page. Create a new [profile object](devenv-profile-object.md) that references your page. Then, go to **My Settings** and select the new profile. </br>
+To let the users use their associated Role Center, you might need to adjust settings for a profile. To manage settings and profiles, see [Define user settings for a profile](/dynamics365/business-central/admin-users-profiles-roles#to-define-user-settings-for-a-profile). 
+
+> [!IMPORTANT]
+> Even if you've assigned a role to the user, you can experience a *permission* issue with an error "You don't have permission to use the Role Center *role center name*". To resolve it, make sure the user has all the required permissions and permission sets. For example, a user has the specific PAGE or TABLE added in the permission set to view it. For more information, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions)
 
 ### Customizing a Role Center from the client
 
