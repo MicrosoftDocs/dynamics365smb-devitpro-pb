@@ -19,7 +19,7 @@ Retrieve the properties and relationships of an aged accounts payable report obj
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/agedAccountsPayables
+GET businesscentralPrefix/companies({id})/agedAccountsPayables({id})
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and an **agedAcc
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/agedAccountsPayables
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/agedAccountsPayables({id})
 ```
 
 **Response**
