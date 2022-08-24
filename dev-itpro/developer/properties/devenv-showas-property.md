@@ -30,9 +30,15 @@ Specifies how an action group should be rendered
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Syntax
+
+```al
+ShowAs = SplitButton; 
+```
+
 ## Remarks
 
-The first `actionref` defined in the `group` is the default action.
+If the `ShowAs` property is set to `SplitButton`, then the first `actionref` defined in the `group` is the default action.
 
 ## Example
 
