@@ -19,15 +19,15 @@ This article describes the features that are up for removal or that have been re
 ## Changes in 2023 release wave 1 (version 22.0)
 
 ### .NET add-ins not using .NET Standard (Removal)
+
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. |
 
-
-
 ### Business Central Telemetry: using an instrumentation key (Removal)
+
 On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
 |Removed or Replaced? |Why?|
@@ -63,6 +63,7 @@ The following feature will be **Replaced** with [!INCLUDE[prod_short](../develop
 |Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation. For more information, see [Moving from WS-Federation to OpenID Connect](../administration/authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).|
 
 ### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API
+
 The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
@@ -94,8 +95,10 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (Warning)
 
-The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
+The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.  
 
+|Removed or Replaced? |Why?|
+|---------|---------|
 |Removed | Importing license files in the .flf format will be unsupported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. It will remain supported in older versions. Please transition to using the newer .bclicense format instead. |
 
 ### <a name="accesskeys"></a>Web Service Access Keys (Basic Auth) for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Online
