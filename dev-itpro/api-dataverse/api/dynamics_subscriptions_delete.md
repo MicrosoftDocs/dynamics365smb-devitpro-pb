@@ -15,11 +15,11 @@ ms.author: solsen
 <!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete subscriptions
 
-Deletes a subscriptions from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Deletes a subscriptions from [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 ## HTTP request
 
-Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v10.00/endpoints-apis-for-dynamics.md).
+Replaces the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../v10.00/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
 DELETE businesscentralPrefix/companies({id})/subscriptions({id})

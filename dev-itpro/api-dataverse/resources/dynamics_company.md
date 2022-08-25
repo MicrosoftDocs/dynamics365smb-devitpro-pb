@@ -15,10 +15,10 @@ ms.author: solsen
 
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents a company in [!INCLUDE [prod_short](../../includes/prod_short.md)].
 
 > [!NOTE]
-> For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
+> For information about enabling APIs for [!INCLUDE [prod_short](../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
 
 ## Methods
 
