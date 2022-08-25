@@ -1102,6 +1102,20 @@
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
+### Dataverse API
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+#### [Company](api-dataverse/resources/dynamics_company.md)
+##### [Get company](api-dataverse/api/dynamics_company_get.md)
+#### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
+##### [Get dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_get.md)
+##### [Create dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_create.md)
+#### [Subscriptions](api-dataverse/resources/dynamics_subscriptions.md)
+##### [Get subscriptions](api-dataverse/api/dynamics_subscriptions_get.md)
+##### [Delete subscriptions](api-dataverse/api/dynamics_subscriptions_delete.md)
+##### [Create subscriptions](api-dataverse/api/dynamics_subscriptions_create.md)
+##### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
