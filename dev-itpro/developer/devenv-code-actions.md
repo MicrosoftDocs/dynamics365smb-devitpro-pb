@@ -4,7 +4,7 @@ description: "Code Actions"
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/23/2022
+ms.date: 08/26/2022
 ms.topic: conceptual
 ms.author: solsen
 ---
@@ -23,7 +23,9 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 - Fix explicit `with` statements
 - Fix implicit with statements
 - Fix old report layout and replace with `rendering` layout section
-- Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar.
+- Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar.  
+  > [!NOTE]  
+  > This is primarily focused on DEV extensions, since conversion to new `actionRef` syntax is done automatically on In-client customizations, User Personalizations, and Profile Configurations.
 
 ## To enable AL Code Actions
 
