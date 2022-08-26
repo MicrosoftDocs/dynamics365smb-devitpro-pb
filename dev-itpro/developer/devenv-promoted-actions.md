@@ -22,10 +22,13 @@ Promoted actions can be used on list, card, task, and Role Center pages to provi
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action.
 
-The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions themselves.
-
 > [!NOTE]  
 > The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
+
+The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions themselves. 
+
+> [!NOTE]  
+> To enable personalization of the promoted area of the actionbar, you must use the `actionref` syntax described below.
 
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
 
