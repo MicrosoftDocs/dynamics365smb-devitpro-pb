@@ -32,7 +32,7 @@ Please note that new customers will automatically get the latest builds of Busin
 In October 2022, the new release will go live. You can already discover what's new and planned in the release plan here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
 
 **Business Central newsletter for partners**  
-Starting June 2022, we're doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
+Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Discover resources on aka.ms/BCAll**  
 Are you looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
