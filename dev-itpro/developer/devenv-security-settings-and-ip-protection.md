@@ -24,10 +24,10 @@ The extension development package provides a pre-configured setting for protecti
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 2, the `ShowMyCode` setting has been replaced by the `resourceExposurePolicy` setting which offers a richer access control. The `ShowMyCode` will be deprecated in a future release and can't be used together with the `resourceExposurePolicy` setting. If `ShowMyCode` is set, default values for `resourceExposurePolicy` will be applied (`false`).
 
-When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you're building. In the `app.json` file, you can specify a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `applicableToDevExtension`, `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties defines the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false`, which means that by default, no dependent extension can debug or download the source code of your extension. The syntax of the `resourceExposurePolicy` setting is as follows:
+When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you're building. In the `app.json` file, you can specify a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `applyToDevExtension`, `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties defines the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false`, which means that by default, no dependent extension can debug or download the source code of your extension. The syntax of the `resourceExposurePolicy` setting is as follows:
 
 ```al
-`"resourceExposurePolicy": {"applicableToDevExtension": <boolean>, "allowDebugging": <boolean>, "allowDownloadingSource": <boolean>, "includeSourceInSymbolFile": <boolean>}`
+`"resourceExposurePolicy": {"applyToDevExtension": <boolean>, "allowDebugging": <boolean>, "allowDownloadingSource": <boolean>, "includeSourceInSymbolFile": <boolean>}`
 ```
 
 > [!NOTE]  
@@ -37,11 +37,11 @@ When you start a new project, an `app.json` file is generated automatically, whi
 > The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
 
 
-### applicableToDevExtension
+### applyToDevExtension
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With the `applicableToDevExtension` flag, you can specify if all resource exposure policies specified for the extension also apply to *developer extensions*, by setting the value to `true`.
+With the `applyToDevExtension` flag, you can specify if all resource exposure policies specified for the extension also apply to *developer extensions*, by setting the value to `true`.
 
 ### allowDebugging
 
