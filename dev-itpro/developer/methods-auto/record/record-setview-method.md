@@ -41,7 +41,7 @@ If the SetView method is executed with an empty string, all the filters are remo
 
 If no table is selected, the SetView method fails.
 
-This method works the same as the [SetView Method \(RecordRef\)](../record/recordref-setview-method.md).           
+This method works the same as the [SetView Method \(RecordRef\)](../recordref/recordref-setview-method.md).           
 
 
 ## See Also
