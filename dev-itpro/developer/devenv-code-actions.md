@@ -27,8 +27,9 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 
 ## Code actions for promoted actions
 
-Use the code action to convert *legacy* syntax for promoted actions to the `actionref` syntax, which is introduced with [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2. In-client customizations, user personalization, and profile configurations are automatically converted into the new syntax, so this is primarily applicable to DEV extensions.
+Use the code action to convert *legacy* syntax for promoted actions to the `actionref` syntax, which is introduced with [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2. In-client customizations, user personalization, and profile configurations are automatically converted into the new syntax, so this is primarily applicable to DEV extensions. The code action can apply to a single instance or a broader scope of code. 
 
+:::image type="content" source="media/codeaction_actionref.png" alt-text="Options for applying code action on actionref syntax":::
 
   > [!NOTE]  
   > For Designer extensions, use **F6** to open **Designer**, see where the legacy syntax is used, and by choosing the Lock symbol and use **Unlock page** to automatically convert the legacy syntax for the running code. Pressing **Alt+F6** will show the converted code in Visual Studio Code.
