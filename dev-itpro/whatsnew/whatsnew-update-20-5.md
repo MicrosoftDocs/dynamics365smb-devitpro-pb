@@ -35,7 +35,7 @@ In October 2022, the new release will go live. You can already discover what's n
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Discover resources on aka.ms/BCAll**  
-Are you looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
+Are you looking for relevant resources? Find it all in this article [aka.ms/BCAll](https://aka.ms/BCAll) and remember to bookmark it!
 
 **Upcoming Business Central Office Hours Calls**  
 In September and October, we will be hosting the following calls, which you can already register for today:
