@@ -23,7 +23,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 ## Release Plan  
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 20.5 
+## Upgrade to 20.5   
 Please note that new customers will automatically get the latest builds of Business Central (20.5). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
@@ -39,7 +39,6 @@ Are you looking for relevant resources? Find it all in this article and remember
 
 **Upcoming Business Central Office Hours Calls**  
 In September and October, we will be hosting the following calls, which you can already register for today:
- 
 - **September 6:** Power Automate and Power Platform integrations
 - **September 20:** How we secure your data in Business Central
 - **October 4:** Get data-driven with Telemetry
