@@ -19,11 +19,11 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 - Spell check code action
 - Interface implementer
 - Make method local
-- Use parenthesis for method call
+- Use parenthesis for method call fix for instance, document, project, or workspace.
 - Fix explicit `with` statements
 - Fix implicit with statements
 - Fix old report layout and replace with `rendering` layout section
-- Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. For more information, see [Code action for actions](devenv-code-actions.md#code-action-for-promoted-actions).
+- Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-action-for-promoted-actions).
 
 ## Code actions for promoted actions
 

@@ -16,7 +16,7 @@ You can promote actions that are used more often than others and thereby ensure 
 
 Promoted actions can be used on list, card, task, and Role Center pages to provide quick access to common tasks that appear under the Home tab. 
 
-## Promoted actions syntax
+## Promoted actions using actionref syntax
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
