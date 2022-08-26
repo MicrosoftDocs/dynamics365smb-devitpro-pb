@@ -27,7 +27,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 
 ## Code actions for promoted actions
 
-Use the code action to convert *legacy* syntax for promoted actions to the `actionref` syntax, which is introduced with [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2. In-client customizations, user personalization, and profile configurations are automatically converted into the new syntax, so this is primarily applicable to DEV extensions. The code action can apply to a single instance or a broader scope of code. 
+Use the code action to convert *legacy* syntax for promoted actions to the `actionref` syntax, which is introduced with [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2. In-client customizations, user personalization, and profile configurations are automatically converted into the new syntax, so this is primarily applicable to DEV extensions. The code action can apply to a single instance, the document, the project, or the workspace.
 
 :::image type="content" source="media/codeaction_actionref.png" alt-text="Options for applying code action on actionref syntax":::
 
