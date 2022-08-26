@@ -25,7 +25,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 - Fix old report layout and replace with `rendering` layout section
 - Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar.  
   > [!NOTE]  
-  > This is primarily focused on DEV extensions, since conversion to new `actionRef` syntax is done automatically on In-client customizations, User Personalizations, and Profile Configurations.
+  > This is primarily applicable for DEV extensions, since conversion to new `actionRef` syntax is done automatically on In-client customizations, User Personalizations, and Profile Configurations.
 
 ## To enable AL Code Actions
 
