@@ -3,7 +3,7 @@ title: "Deprecated features in client, server, database"
 description: Describes the features that have been removed or replaced in the platform components of Business Central. 
 author: bholtorf
 ms.custom: na
-ms.date: 07/13/2022
+ms.date: 08/29/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
