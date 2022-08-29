@@ -28,6 +28,15 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**Important: Take action before October 31 to retain your delegated admin access to your customers**  
+With [this Partner Center announcement](/partner-center/announcements/2022-february#6) earlier this year, Microsoft introduced the [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) feature. GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
+
+The Partner Center team has now announced the timeline by which you need to migrate your customer relationship to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan, as well as about the tools Microsoft provides to facilitate this process.
+
+To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
+
+You can watch the GDAP Office Hours recording for Business Central [here](https://www.microsoft.com/en-us/videoplayer/embed/RE4VIqN).
+
 **Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
 In October 2022, the new release will go live. You can already discover what's new and planned in the release plan here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
 
