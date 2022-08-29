@@ -51,7 +51,7 @@ Be aware of:
 - Mobile clients don't support split buttons and if the `ShowAs` property is set to `SplitButton`, it will be ignored.
 - Any tooltip, caption, or image property set on a group, isn't rendered, if the group is defined as a split button. It's still a best practice to set these properties, because they're used, if the group is rendered as a regular group, for example, on mobile clients.
 - A split button can be nested inside another split button.
-- For personalization from the UI, it's possible to drop an action into a split button and the action will then become the primary action, if the action is enabled and visible. It's also possible to re-order the child actions and it'll dynamically update the primary action as necessary.
+- For personalization from the UI, it's possible to drop an action into a split button and the action will then become the primary action, if the action is enabled and visible. During personalization it's also possible to re-order the child actions, which will dynamically update the primary action as necessary.
 
 
 ## Example
