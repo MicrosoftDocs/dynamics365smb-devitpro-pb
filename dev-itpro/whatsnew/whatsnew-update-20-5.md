@@ -38,13 +38,12 @@ To manage Dynamics 365 Business Central customers via GDAP we recommend requesti
 You can watch the GDAP Office Hours recording for Business Central [here](https://www.microsoft.com/en-us/videoplayer/embed/RE4VIqN).
 
 **Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
-In October 2022, the new release will go live. You can already discover what's new and planned in the release plan here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
+The preview of Dynamics 365 Business Central 2022 release wave 2 will go live on August 31. Use Microsoft Collaborate to submit your feedback or to report any potential issues that you discover in the preview. Discover how to do so here: [aka.ms/BCPreview](https://aka.ms/BCPreview). In addition, we have created a new subgroup on Yammer called [Public Preview 2022 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=118080200704&view=all), which can be used to share feedback directly with the Microsoft product team or ask questions related to the preview. 
+
+On October 1, 2022, the release will go live. You can discover what's new and planned here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
 
 **Business Central newsletter for partners**  
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
-
-**Discover resources on aka.ms/BCAll**  
-Are you looking for relevant resources? Find it all in this article [aka.ms/BCAll](https://aka.ms/BCAll) and remember to bookmark it!
 
 **Upcoming Business Central Office Hours Calls**  
 In September and October, we will be hosting the following calls, which you can already register for today:
@@ -53,3 +52,6 @@ In September and October, we will be hosting the following calls, which you can 
 - **October 4:** Get data-driven with Telemetry
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
+
+**Discover resources on aka.ms/BCAll**  
+Are you looking for relevant resources? Find it all in this article [aka.ms/BCAll](https://aka.ms/BCAll) and remember to bookmark it!
