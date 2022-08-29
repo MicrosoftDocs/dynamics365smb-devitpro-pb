@@ -3,7 +3,7 @@ title: "ShowAs Property"
 description: "Specifies how an action group should be rendered"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/29/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,12 +30,21 @@ Specifies how an action group should be rendered
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+
+## Syntax
+
+```al
+ShowAs = SplitButton; 
+```
+
 ## Remarks
 
-By specifying that the group should be rendered as **SplitButton**, the group is rendered as a combination of a button and a menu. This type of control gives you quick one-click reach to the first action [Visible](devenv-visible-property.md) and [Enabled](devenv-enabled-property.md) in a menu via the left button part and access to other related actions via the right dropdown part.
+By specifying that the group should be rendered as **SplitButton**, the group is rendered as a combination of a button and a menu. 
+This type of control gives you a fast one-click access to the first action [Visible](devenv-visible-property.md) and [Enabled](devenv-enabled-property.md) in a menu via the left button part and access to other related actions via the right dropdown part.
 
 > [!NOTE]  
-> Re-ordering the actions in a split-button group from a page extension or page customization can change the action used for the split-button.
+> Re-ordering the actions in a split button group from a page extension or page customization can change the action used for the split button.
+
 
 ## Example
 
@@ -52,6 +61,7 @@ group(MyGroup)
 ```
 
 The group `MyGroup` will be rendered as split button which gives you a one-click access to the action `MyAction`.
+
 
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
