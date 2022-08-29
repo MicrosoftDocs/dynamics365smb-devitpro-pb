@@ -45,6 +45,10 @@ This type of control gives you a fast one-click access to the first action [Visi
 > [!NOTE]  
 > Re-ordering the actions in a split button group from a page extension or page customization can change the action used for the split button.
 
+Be aware of:
+
+- Split buttons are supported everywhere on the desktop client except on sub form action bars or in context menus. When the feature key **ModernActionBar** is turned off, then it is not supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group. <!-- makes sense? -->
+- Mobile clients do not support split buttons and if the `ShowAs` property is set to `SplitButton`, it will be ignored.
 
 ## Example
 
