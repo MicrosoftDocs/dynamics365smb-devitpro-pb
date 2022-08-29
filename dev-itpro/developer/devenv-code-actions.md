@@ -23,6 +23,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 - Fix explicit `with` statements
 - Fix implicit with statements
 - Fix old report layout and replace with `rendering` layout section
+- Fix for [AW0013](analyzers\uicop-aw0013.md)
 
 ## To enable AL Code Actions
 

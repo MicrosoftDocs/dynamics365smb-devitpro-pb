@@ -50,9 +50,12 @@ page 50110 PageName
 
 This feature allows you to make a copy of an action and place it on the on the action bar where it is easier to find. 
 
-For the Promoted property to have an effect, you must also set the [PromotedCategory property](devenv-promotedcategory-property.md).
+In order to specify where the promoted action should be placed, you must also set the [PromotedCategory property](devenv-promotedcategory-property.md).
 
 For more information about promoting actions, see [Promoted Actions](../devenv-promoted-actions.md).
+
+> [!NOTE]  
+> The Promoted property only has an effect on actions defined in pages of type Card, Document, List, ListPlus and Worksheet. The Promoted property has also no effect on actions defined in cuegroups.
 
 For more information about the Promoted property used together with the Scope property, see [Scope property](devenv-scope-action-property.md).
 
