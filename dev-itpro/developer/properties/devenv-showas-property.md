@@ -47,8 +47,9 @@ This type of control gives you a fast one-click access to the first action [Visi
 
 Be aware of:
 
-- Split buttons are supported everywhere on the desktop client except on sub form action bars or in context menus. When the feature key **ModernActionBar** is turned off, then it is not supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group. <!-- makes sense? -->
-- Mobile clients do not support split buttons and if the `ShowAs` property is set to `SplitButton`, it will be ignored.
+- Split buttons are supported everywhere on the desktop client except on sub form action bars or in context menus. When the feature key **ModernActionBar** is turned off, then it isn't supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group. <!-- makes sense? -->
+- Mobile clients don't support split buttons and if the `ShowAs` property is set to `SplitButton`, it will be ignored.
+- Any tooltip, caption, or image property set on a group, isn't rendered, if the group is defined as a split button. It's still a best practice to set these properties, because they're used, if the group is rendered as a regular group, for example, on mobile clients.
 
 ## Example
 
@@ -64,9 +65,9 @@ group(MyGroup)
 
 ```
 
-The group `MyGroup` will be rendered as split button which gives you a one-click access to the action `MyAction`.
+The group `MyGroup` will be rendered as split button, which gives you a one-click access to the action `MyAction`.
 
+## See Also
 
-## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
