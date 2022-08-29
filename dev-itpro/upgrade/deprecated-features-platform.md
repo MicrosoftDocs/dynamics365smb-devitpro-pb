@@ -80,6 +80,15 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in the 2022 release wave 2 (version 21.0). Please use the [Windows PowerShell cmdlets](/powershell/business-central/overview) that we make available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
 
+### Duplicated actions and action groups no longer rendered in non-promoted section
+
+The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+
+|Removed or Replaced? |Why?|
+|---------|---------|------|
+|Removed  | When an action or all actions in an action group are promoted and shown in the promoted section of the action bar, the action or action group is no longer duplicated in the non-promoted section. The duplication is removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 and the new syntax for promoted actions. For more information, see [Promoted Actions](../developer/devenv-promoted-actions.md).|      |
+
+
 <!---
 These changes are not confirmed yet
 
