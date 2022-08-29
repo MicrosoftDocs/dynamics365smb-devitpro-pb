@@ -104,7 +104,7 @@ The Report menu is displayed after the Navigate menu in the action bar. The Repo
 
 ## Promoted Actions
 
-Promoted actions are actions that are set up on the Actions, Navigate, or Reports menus in the action bar, but are also configured to display in custom menus in the action bar. Although the actions are set up on the Actions, Navigate, or Report menus, you can choose to hide them on these menus and only show them in custom menus . For more information on how to add promoted actions, promoted categories and example, see [Promoted Actions](devenv-promoted-actions.md). 
+Promoted actions are actions that are set up on the Actions, Navigate, or Reports menus in the action bar, but are also configured to display in custom menus in the action bar. Although the actions are set up on the Actions, Navigate, or Report menus, you can choose to hide them on these menus and only show them in custom menus. For more information on how to add promoted actions, promoted categories and example, see [Promoted Actions](devenv-promoted-actions.md). 
 
 <!-- 
 ### Home menu 
@@ -126,6 +126,7 @@ customaction(MyFlowAction)
 }
 ```
 
+For a `customaction` the [CustomActionType Property](properties/devenv-customactiontype-property.md) must be set to `Flow`. The [FlowId Property](properties/devenv-flowid-property.md) and the [FlowEnvironmentId Property](properties/devenv-flowenvironmentid-property.md) must specify the IDs of the flow and the environment of the flow.
 
 ## Grouping Actions in Sub-Menus
 
