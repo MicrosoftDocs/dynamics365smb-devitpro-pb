@@ -49,7 +49,7 @@ If successful, this method returns ```201 Created``` response code and a **subsc
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v10.00/companies({id})/subscriptions({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
 Content-type: application/json
 {
     "subscriptionId" : "",

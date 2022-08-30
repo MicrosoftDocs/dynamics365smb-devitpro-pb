@@ -46,7 +46,7 @@ If successful, this method returns a ```200 OK``` response code and a **subscrip
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
 ```json
-GET https://{businesscentralPrefix}/api/v10.00/companies({id})/subscriptions({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 **Response**
