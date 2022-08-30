@@ -38,7 +38,7 @@ Split buttons can help organize the actions that you are promoting. A split butt
 
 ### Syntax example
 
-This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it is added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.
+This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it is added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s 
 
 ```al
 page 50105 ActionRefPage
@@ -53,6 +53,19 @@ page 50105 ActionRefPage
             group(Group1)
             {
                 actionref(MySecondPromotedActionRef; MyBaseAction)
+                {
+                }
+            }
+
+            group(Group2)
+            {
+                ShowAs = SplitButton;
+
+                actionref(MySplitButtonPromotedActionRef; MyBaseAction)
+                {
+                }
+                
+                actionref(MyOtherSplitButtonPromotedActionRef; MyBaseAction)
                 {
                 }
             }
@@ -73,17 +86,6 @@ page 50105 ActionRefPage
 
 ```
 
-<!--
-
-	- An actionRef always needs an action and inherits properties like caption , ….
-	- An AcrionRef on a testpage can be invoked the same way as an action 
-	- Properties allowed on actionRefs
-		○ Visible : controls the visibility of an actionRef
-		○ ObsoleteState : specifies the obsoletion state
-		○ ObsoleteReason
-		○ ObsoleteTag
--->
-
 ### Extensibility and compatibility
 
 Switching over to use the new promoted actions syntax can be done gradually as legacy and new syntax will co-exist for a while. We do, however, encourage you to switch over as soon as you can. As you refactor the code, there are a couple of things to be aware of in that process:
@@ -92,6 +94,8 @@ Switching over to use the new promoted actions syntax can be done gradually as l
 - Across a project you can mix legacy and new syntax and:
   - You can implement the new `actionref` syntax on a page without breaking any existing page extensions. 
   - You can write a page extension with the new `actionref` syntax based on a page that uses the legacy syntax.
+
+A code action for converting pages using legacy syntax is available with [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2. The code action can be applied to a narrow or broader scope of code. For more information, see [AL Code Actions](devenv-code-actions.md).
 
 ## Promoting actions by category (legacy syntax)
 
