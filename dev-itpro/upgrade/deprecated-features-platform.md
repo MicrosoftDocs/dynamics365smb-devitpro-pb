@@ -85,8 +85,8 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
 |Removed or Replaced? |Why?|
-|---------|---------|------|
-|Removed  | When an action or all actions in an action group are promoted and shown in the promoted section of the action bar, the action or action group is no longer duplicated in the non-promoted section. The duplication is removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 and the new syntax for promoted actions. For more information, see [Promoted Actions](../developer/devenv-promoted-actions.md).|      |
+|---------|---------|
+|Removed  | When an action or all actions in an action group are promoted and shown in the promoted section of the action bar, the action or action group is no longer duplicated in the non-promoted section. The duplication is removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 and the new syntax for promoted actions. For more information, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
 
 
 <!---
