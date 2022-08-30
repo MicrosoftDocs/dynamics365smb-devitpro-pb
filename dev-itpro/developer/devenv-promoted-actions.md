@@ -16,7 +16,7 @@ You can promote actions that are used more often than others and thereby ensure 
 
 Promoted actions can be used on list, card, task, and Role Center pages to provide quick access to common tasks that appear under the Home tab. 
 
-## Promoted actions using actionref syntax
+## Promoted actions using the actionref syntax
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
@@ -30,7 +30,11 @@ The new syntax provides more visibility in code, because the promoted actions ar
 > [!NOTE]  
 > To enable personalization of the promoted area of the action bar, you must use the `actionref` syntax described below.
 
-To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
+To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. An `actionref` can only be defined in the `area(Promoted)` section. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
+
+### Split buttons for actions
+
+Split buttons can help organize the actions that you are promoting. A split button can be defined for a page action group, which renders as a combination of a button and a menu. Use the `ShowAs` property to specify that a certain page action group should render as a split button. For more information, see [ShowAs Property](properties/devenv-showas-property.md).
 
 ### Syntax example
 
@@ -70,14 +74,6 @@ page 50105 ActionRefPage
 ```
 
 <!--
-
-	
-	- This new promoted area controls all the actions on the "Left Side" of the action bar
-	- Usage of the new promoted area and the old syntax in one page is not allowed. If one adds the promoted area to a page all the legacy promotion properties are disallowed(promoted, promotedOnly and… ) 
-	- Usage of old syntax pages and new actionRef syntax is allowed in a project 
-	
-
-	- An ActionRef is only allowed in the promoted area 
 
 	- An actionRef always needs an action and inherits properties like caption , ….
 	- An AcrionRef on a testpage can be invoked the same way as an action 
