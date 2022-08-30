@@ -80,7 +80,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in the 2022 release wave 2 (version 21.0). Please use the [Windows PowerShell cmdlets](/powershell/business-central/overview) that we make available in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
 
-### Duplicated actions and action groups no longer rendered in non-promoted section
+### Behavior of groups of promoted actions
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
