@@ -3,7 +3,7 @@ title: "Using Service to Service Authentication"
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: henrikwh
 ms.custom: na
-ms.date: 08/10/2022
+ms.date: 08/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,9 +47,12 @@ Two main scenarios are enabled with S2S authentication:
 
     S2S authentication enables both external user and non-interactive user access to Business Central online. Refer to [license guide](https://www.microsoft.com/licensing/product-licensing/dynamics365) for scenarios and usage. An application token with the `API.ReadWrite.All` scope is needed for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs and web services.  
 
-## Setup service-to-service authentication
+> [!IMPORTANT]
+> When you use S2S authentication, then you cannot use the integration session to create scheduled tasks.  Job queue entries require a user ID in order to run, but S2S sessions do not include any user context.
 
-To enable service-to-service authentication, you'll have to do two things:
+## Set up service-to-service authentication
+
+To set up service-to-service authentication, you'll have to do two things:
 
 - Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -73,7 +76,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
-    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC200/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC200/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC190/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
+    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC210/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC210/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC210/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
@@ -170,7 +173,6 @@ For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 
 > You can also see this sample in the [BCTech Github repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
 
 The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
-
 
 ```http
 @tenantId = <tenant id>
