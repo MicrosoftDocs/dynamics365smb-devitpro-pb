@@ -3,7 +3,7 @@ title: "Report Object"
 description: "The report object in AL for Business Central allows to create a new report."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/31/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,15 +15,16 @@ ms.author: solsen
 
 Reports are used to print or display information from a database. You can use a report to structure and summarize information, and to print documents, such as sales quotes and invoices.
 
-Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it is viewed and printed. 
+Creating a report consists of two primary tasks; the first task is to create the underlying data model and the next is to define the visual layout that displays the data. The report object defines the underlying data model and specifies which database tables and fields to pull data from. When the report is run, that data is displayed in a specified layout; the visual layout, which determines the content and format of a report when it's viewed and printed. 
 
 For more information about defining database tables and fields, see [Defining a Report Dataset](devenv-report-dataset.md). For more information about the Report data type, see [Report Data Type](methods-auto/report/report-data-type.md).
 
 You build the layout of a report by arranging data items and columns, and specifying the general format, such as text font and size. There are three types of report layouts; client report definition, also called RDL layouts, Word layouts, and Excel layouts. RDL layouts are defined in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder. Word layouts are created using Word. Word layouts are based on a Word document that includes a custom XML part representing the report dataset. Excel layouts are created in Excel based on the report dataset, utilizing the Excel capabilities such as sliders, diagrams, charts, pivot tables, and PowerQuery. One report can contain multiple report layout definitions. For more information, see [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md).
 
-If you want to modify an existing report, for example, add new columns, add to the request page, or simply add a new layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
+If you want to modify an existing report, for example, add new columns, add to the request page, or add a new layout, you can create a report extension instead. For more information, see [Report Extension Object](devenv-report-ext-object.md).
 
 [!INCLUDE[intelli_shortcut](includes/query_as_a_report_datasource.md)]
+
 
 ## Snippet support
 
@@ -224,10 +225,15 @@ report 50103 "Customer List"
 
 [!INCLUDE [send-report-excel](includes/send-report-excel.md)]
 
+## Schedule reports
+
+It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](dynamics365/business-central/ui-work-report#ScheduleReport).
+
 ## See Also
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Request Pages](devenv-request-pages.md)  
+[Report Properties](../developer/properties/devenv-report-properties.md)  
 [Creating an RDL Layout Report](devenv-howto-rdl-report-layout.md)  
 [Creating a Word Layout Report](devenv-howto-report-layout.md)  
 [Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
