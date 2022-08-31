@@ -229,7 +229,7 @@ report 50103 "Customer List"
 
 It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](dynamics365/business-central/ui-work-report#ScheduleReport).
 
-## See Also
+## See also
 
 [Report Extension Object](devenv-report-ext-object.md)  
 [Request Pages](devenv-request-pages.md)  
