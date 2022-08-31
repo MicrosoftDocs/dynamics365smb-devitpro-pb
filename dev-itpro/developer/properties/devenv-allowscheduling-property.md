@@ -3,7 +3,7 @@ title: "AllowScheduling Property"
 description: "Sets whether a report can be scheduled to run in the background."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/31/2022
+ms.date: 08/31/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

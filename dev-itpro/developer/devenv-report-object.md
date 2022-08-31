@@ -3,7 +3,7 @@ title: "Report Object"
 description: "The report object in AL for Business Central allows to create a new report."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/31/2022
+ms.date: 08/31/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -227,7 +227,7 @@ report 50103 "Customer List"
 
 ## Schedule reports
 
-It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](dynamics365/business-central/ui-work-report#ScheduleReport).
+It's possible to schedule a report to run at your desired date and time by using **AllowScheduling** property. By setting the property to *true*, you'll get the **Schedule** action button to set the date and time for your report. To learn more about scheduling a report, see [AllowScheduling Property](../developer/properties/devenv-allowscheduling-property.md) and [Schedule a report](/dynamics365/business-central/ui-work-report#ScheduleReport).
 
 ## See also
 
