@@ -30,7 +30,7 @@ Navigate to [Shopify](https://www.shopify.com) and use this administrator accoun
 In the **Shopify Admin** of the created shop, apply following **Settings**:
 
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
-* Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
+* Consider enabling the *Show login link in storefront and checkout* in the **Customer account settings** section of the checkout settings.
 * Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
 * Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
 * Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
@@ -57,7 +57,7 @@ Once it's completed, you can use **Partner Dashboard** to create the development
 After creation of the store, in the **Shopify Admin** of the created shop, apply following **Settings**:
 
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
-* Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
+* Consider enabling the *Show login link in storefront and checkout* in the **Customer account settings** section of the checkout settings.
 * Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
 * Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
 * Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
@@ -66,8 +66,11 @@ After creation of the store, in the **Shopify Admin** of the created shop, apply
 
 As a partner, you probably already have a [!INCLUDE[prod_short](../includes/prod_short.md)] account for demos. If not, you should create one. For more information, see [Preparing demonstrations of [!INCLUDE[prod_short](../includes/prod_short.md)]](/dynamics365/business-central/dev-itpro/administration/demo-environment.md).
 
+---
 
-In the [!INCLUDE[prod_short](../includes/prod_short.md)] account, do following steps:
+### Connect Business Central to the Shopify shop
+
+In [!INCLUDE[prod_short](../includes/prod_short.md)], do following steps:
 
 1. Go to the search ![Lightbulb that opens the Tell Me feature.](../media/search_small.png "Tell me what you want to do") icon, enter **Shopify Shop**, and then choose the related link.
 2. Choose the **New** action.

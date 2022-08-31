@@ -80,7 +80,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
 - AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)
 - AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ) 
-- Setup DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
+- Set up DevOps for your AppSource apps: [aka.ms/AL-Go-AppSource](https://aka.ms/AL-Go-AppSource)
 - Ask your question related to AppSource in the AppSource group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 - Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
 

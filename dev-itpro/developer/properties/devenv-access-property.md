@@ -45,7 +45,7 @@ For table fields there are two additional settings for **Access** and you have t
 |-------------------|-----------------------|
 |Local              |The field can be accessed only by code in the same table or table extension where the field is defined.|
 |Protected          |The field can be accessed only by code in the same table or table extensions of that table.|
-|Public|The object can be accessed by any other code in the same module and in other modules that references it.|
+|Public|The object can be accessed by any other code in the same module and in other modules that references it. It is the default value.|
 |Internal|The object can be accessed only by code in the same module, but not from another module.|
 
 ## Syntax

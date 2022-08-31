@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: overview
 ms.author: edupont
-ms.date: 04/20/2022
+ms.date: 08/02/2022
 ---
 # Technical Support for [!INCLUDE[prod_long](developer/includes/prod_long.md)]
 
@@ -94,3 +94,6 @@ On occasion, as a partner, you will run into questions that are not directly rel
 [Administration of Business Central On-Premises](administration/Administration.md)  
 [Provide technical support (Microsoft Partner Center)](/partner-center/provide-technical-support)  
 [Providing support to your customers (Microsoft Partner Center)](/partner-center/customer-support)  
+
+ 
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

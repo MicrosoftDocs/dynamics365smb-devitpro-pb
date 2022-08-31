@@ -12,8 +12,6 @@ ms.topic: conceptual
 
 | Item| Description |
 |-------------|--------------|
-|Categories | Select up to 2 categories and 4 sub-categories. Your category selection is used to curate your offer in the marketplace. The offer description should reflect how your selected categories apply to your offer. |
-Industries | Select up to 2 industries and 2 sub-industries for each industry. These are used to categorize your offer in the marketplace. Your offer description should show how your offer supports the selected industries. Note: If your offer is not specific to an industry, do not select one.|
-App version| Enter the latest version number of your offer *Example:* *2.0.22794.0*. 
-
-
+|Categories | Select up to two categories and four subcategories. Your category selection is used to curate your offer in the marketplace. The offer description should reflect how your selected categories apply to your offer. |
+Industries | Select up to two industries and two subindustries for each industry. These are used to categorize your offer in the marketplace. Your offer description should show how your offer supports the selected industries. Note: If your offer isn't specific to an industry, don't select one.|
+App version| Enter the latest version number of your offer *Example:* *2.0.22794.0*. |
