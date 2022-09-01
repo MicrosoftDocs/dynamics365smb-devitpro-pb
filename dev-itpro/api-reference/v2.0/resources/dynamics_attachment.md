@@ -77,7 +77,8 @@ Here is a JSON representation of the attachment resource.
 
 
 ## See Also
-[GET attachment](../api/dynamics_attachment_Get.md)
-[DELETE attachment](../api/dynamics_attachment_Delete.md)
-[POST attachment](../api/dynamics_attachment_Create.md)
+
+[GET attachment](../api/dynamics_attachment_Get.md)  
+[DELETE attachment](../api/dynamics_attachment_Delete.md)  
+[POST attachment](../api/dynamics_attachment_Create.md)  
 [PATCH attachment](../api/dynamics_attachment_Update.md)
