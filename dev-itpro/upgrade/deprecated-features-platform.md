@@ -86,7 +86,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed  | When a group contains actions where all of the actions are promoted, then the group is no longer rendered on the right-hand side; the non-promoted section. Since those actions are promoted, they are available somewhere on the left hand side. The duplication is removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 and the new syntax for promoted actions. For more information, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
+|Removed  | When a group contains actions where all of the actions are promoted, then the group is no longer rendered on the right-hand side; the non-promoted section. Because those actions are promoted, they are available in the promoted section. The duplication is removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 and the new syntax for promoted actions. For more information, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
 
 
 <!---
