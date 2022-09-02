@@ -33,6 +33,7 @@ The following object members are validated by AS0098:
 - Enum Values defined in Enum Extension objects
 - Data Items defined in Report Extension objects
 - Columns defined in Report Extension objects
+- Labels defined in Report Extension objects
 
 Other AL objects and object members are validated by [AS0011](appsourcecop-as0011.md).
 
