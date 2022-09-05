@@ -22,7 +22,9 @@ Promoted actions can be used on list, card, task, and Role Center pages to provi
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action.
 
-The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions themselves. 
+In [!INCLUDE [prod_short](includes/prod_short.md)] the new action bar is enabled when the feature flag **Modern Action Bar** on the **Feature Management** page is set to *Enabled*. The flag can be switched off to simulate legacy behavior, but the promoted action code in the base application uses the `actionref` syntax.
+
+The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions. 
 
 > [!NOTE]  
 > To enable personalization of the promoted area of the action bar, you must use the `actionref` syntax described below.
