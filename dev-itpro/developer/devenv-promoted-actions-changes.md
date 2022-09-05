@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we introduce a new syntax for defining promoted actions. The changes include a different behavior on the UI. The article lists the behavioral changes.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we introduce a new syntax for defining promoted actions. The new syntax groups the promoted actions in a separate section, so that the code is easier to scan. And on the UI, this new syntax improves the personalization experience, by adding options for promoting actions. 
 
 ## Breaking changes <!-- ?? -->
 
@@ -23,6 +23,45 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we int
 |During personalization, if you hide a base action, all `actionref`s will also be hidden. | During personalization, if you clicked "Remove" on a base action, it would disappear, which was equivalent to making the action set to `PromotedOnly = true`; it would only show up in the promoted section. |
 |If base actions are inside a hidden group, then the `actionref`s will be also hidden, even if the base actions themselves are visible. |Promoted actions had an implicit copy of the `Visible` property of the base actions, which made them unrelated to the parents of the base actions. Due to this behavior, this was not an issue in v20.<br>**Note:** This behavior is maintained when the feature flag **Modern Action Bar** on the **Feature Management** page is set to *Disabled*.  |
 ||||
+
+
+
+
+```al
+...
+area(Promoted)
+        {
+            // Not rendered as a split button when the feature flag is OFF
+            group(Category_New) // This is a promoted action category.
+            {
+                Caption = 'New';
+                ShowAs = SplitButton;
+
+                actionref(TestAction1_Promoted; TestAction1)
+                {
+                }
+
+                actionref(TestAction2_Promoted; TestAction2)
+                {
+                }
+            }
+
+            // Rendered as a split button (whether feature flag is ON or OFF)
+            group(Test)
+            {
+                ShowAs = SplitButton;
+
+                actionref(TestAction1_Promoted2; TestAction1)
+                {
+                }
+
+                actionref(TestAction2_Promoted2; TestAction2)
+                {
+                }
+            }
+        }
+```
+
 
 
 ## 
