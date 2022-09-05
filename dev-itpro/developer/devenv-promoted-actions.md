@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # Promoted Actions
 
-You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions are called *promoted actions*. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
+You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
 
 Promoted actions can be used on list, card, task, and Role Center pages to provide quick access to common tasks that appear under the Home tab. 
 
@@ -20,11 +20,9 @@ Promoted actions can be used on list, card, task, and Role Center pages to provi
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action.
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the code for a page and it contains a reference to the action. The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions. 
 
 In [!INCLUDE [prod_short](includes/prod_short.md)] the new action bar is enabled when the feature flag **Modern Action Bar** on the **Feature Management** page is set to *Enabled*. The flag can be switched off to simulate legacy behavior, but the promoted action code in the base application uses the `actionref` syntax.
-
-The new syntax provides more visibility in code, because the promoted actions are grouped in a separate section. And to the end user, the personalization experience is improved, adding options for promoting actions. 
 
 > [!NOTE]  
 > To enable personalization of the promoted area of the action bar, you must use the `actionref` syntax described below.
@@ -36,11 +34,11 @@ To define promoted actions, you specify an `area(Promoted)` in the `actions` sec
 
 ### Split buttons for actions
 
-Split buttons can help organize the actions that you are promoting. A split button can be defined for a page action group, which renders as a combination of a button and a menu. Use the `ShowAs` property to specify that a certain page action group should render as a split button. For more information, see [ShowAs Property](properties/devenv-showas-property.md).
+Split buttons can help organize the actions that you're promoting. A split button can be defined for a page action group, which renders as a combination of a button and a menu. Use the `ShowAs` property to specify that a certain page action group should render as a split button. For more information, see [ShowAs Property](properties/devenv-showas-property.md).
 
 ### Syntax example
 
-This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it is added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s 
+This example illustrates a page with the promoted area syntax. In the example the `area(Processing)` section defines the `MyBaseAction` action for the page, which triggers a `Hello world` message. The `MyBaseAction` will be available from under the **Processing** group in the action bar and it will be promoted because it's added to the `area(Promoted)` section, which defines the actions to promote. The example illustrates that you can group your `actionref` sections, or specify them ungrouped. The `actionref(MyPromotedActionRef; MyBaseAction)` promotes the defined `MyBaseAction` so that it, in addition to being placed in the **Processing** group, also is promoted for easy access on the page.<!--?? check with deprecation and new behavior -->. Also, the example illustrates using a split button for `Group2` where two `actionref`s 
 
 ```al
 page 50105 ActionRefPage
@@ -92,7 +90,7 @@ page 50105 ActionRefPage
 
 Switching over to use the new promoted actions syntax can be done gradually as legacy and new syntax will co-exist for a while. We do, however, encourage you to switch over as soon as you can. As you refactor the code, there are a couple of things to be aware of in that process:
 
-- It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension. This means that if you add `actionref` syntax to your code, the `Promoted` properties (`Promoted`, `PromotedOnly`, `PromotedActionCategories`, and `PromotedCategory`) will not be allowed.
+- It's not allowed to use both legacy and new syntax for promoted actions on the *same* page or page extension. This means that if you add `actionref` syntax to your code, the `Promoted` properties (`Promoted`, `PromotedOnly`, `PromotedActionCategories`, and `PromotedCategory`) won't be allowed.
 - Across a project you can mix legacy and new syntax and:
   - You can implement the new `actionref` syntax on a page without breaking any existing page extensions. 
   - You can write a page extension with the new `actionref` syntax based on a page that uses the legacy syntax.
