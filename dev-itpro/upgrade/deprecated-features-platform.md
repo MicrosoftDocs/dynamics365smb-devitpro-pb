@@ -86,8 +86,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed  | When a group contains actions where all of the actions are promoted, then the group is no longer rendered on the right-hand side; the non-promoted section. Because those actions are promoted, they are available in the promoted section. The duplication is removed with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2 and the new syntax for promoted actions. For more information, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
-
+|Removed  | When the **Modern Action Bar** on the **Feature Management** page is set to *Enabled*, promoted actions, which are defined inside a group whose visibility is set to `false` will no longer be visible on the promoted side of the action bar. A dedicated code analysis rule in the UICop analyzer (AW0013) helps detect this pattern in your apps. For more information, see [UICop Warning AW0013](../developer/analyzers/uicop-aw0013.md). For more information about the `actionref` syntax, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
 
 <!---
 These changes are not confirmed yet
