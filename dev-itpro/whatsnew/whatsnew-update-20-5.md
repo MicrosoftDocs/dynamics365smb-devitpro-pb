@@ -16,7 +16,7 @@ Would you like to know what has changed in update 20.5? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-4-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-4-44365-platform-build-20-0-44359-43dabc8f-db8d-43d0-a44c-a2242813f42d).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-5-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-5-45889-platform-build-20-0-45882-87b5b25f-b81f-43b7-950b-702cb8c33d11).
 
 ## Release Plan
 
