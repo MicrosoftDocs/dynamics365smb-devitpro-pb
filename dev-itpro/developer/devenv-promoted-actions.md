@@ -25,16 +25,13 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the wa
 In [!INCLUDE [prod_short](includes/prod_short.md)] the new action bar is enabled when the feature flag **Modern Action Bar** on the **Feature Management** page is set to *Enabled*. The flag can be switched off to simulate legacy behavior, but the promoted action code in the base application uses the `actionref` syntax.
 
 > [!NOTE]  
-> To enable personalization of the promoted area of the action bar, you must use the `actionref` syntax described below.
-
-> [!NOTE]  
 > The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
 
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. An `actionref` can only be defined in the `area(Promoted)` section. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
 
 ### Split buttons for actions
 
-Split buttons can help organize the actions that you're promoting. A split button can be defined for a page action group, which renders as a combination of a button and a menu. Use the `ShowAs` property to specify that a certain page action group should render as a split button. For more information, see [ShowAs Property](properties/devenv-showas-property.md).
+As part of the new programming model for promoted actions, you can combine multiple actions into a split button to help organize the actions that you're promoting, thereby reducing clutter and improving coherence and closeness of related actions. A split button can be defined for a page action group, which renders as a combination of a button and a menu. Use the `ShowAs` property to specify that a certain page action group should render as a split button. For more information, see [ShowAs Property](properties/devenv-showas-property.md).
 
 ### Syntax example
 
