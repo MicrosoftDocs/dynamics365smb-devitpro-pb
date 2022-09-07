@@ -3,7 +3,7 @@ title: "Report, Report Fields, and Report Extension Properties"
 description: "This topic lists properties that apply to the [report object](../devenv-report-object.md), report fields, and [report extension object](../devenv-report-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 09/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,6 +50,7 @@ The following properties all apply to the Report object, only some of these prop
 |[ExecutionTimeout Property](devenv-executiontimeout-property.md)| | -Report <br /> |
 |[Extensible Property](devenv-extensible-property.md)| | -Report <br />  -Enum Type <br />  -Table <br />  -Page <br /> |
 |[IncludeCaption Property](devenv-includecaption-property.md)| | -Report Column <br /> |
+|[InherentEntitlements Property](devenv-inherententitlements-property.md)| | -Table <br />  -Report <br />  -Codeunit <br />  -Xml Port <br />  -Page <br />  -Query <br /> |
 |[LayoutFile Property](devenv-layoutfile-property.md)| | -Report Layout <br /> |
 |[MaximumDatasetSize Property](devenv-maximumdatasetsize-property.md)| | -Report <br /> |
 |[MaximumDocumentCount Property](devenv-maximumdocumentcount-property.md)| | -Report <br /> |

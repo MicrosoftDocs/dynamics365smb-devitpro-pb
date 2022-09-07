@@ -3,7 +3,7 @@ title: "Page, Page Fields, and Page Extension Properties"
 description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 09/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -86,6 +86,7 @@ The following properties all apply to the Page object, only some of these proper
 |[IndentationColumn Property](devenv-indentationcolumn-property.md)| True| -Page Group <br /> |
 |[IndentationControls Property](devenv-indentationcontrols-property.md)| True| -Page Group <br /> |
 |[InFooterBar Property](devenv-infooterbar-property.md)| True| -Page Action <br /> |
+|[InherentEntitlements Property](devenv-inherententitlements-property.md)| | -Table <br />  -Report <br />  -Codeunit <br />  -Xml Port <br />  -Page <br />  -Query <br /> |
 |[InsertAllowed Property](devenv-insertallowed-property.md)| | -Page <br />  -Request Page <br /> |
 |[InstructionalText Property](devenv-instructionaltext-property.md)| True| -Page <br />  -Request Page <br />  -Page Group <br /> |
 |[InstructionalTextML Property](devenv-instructionaltextml-property.md)| True| -Page <br />  -Request Page <br />  -Page Group <br /> |

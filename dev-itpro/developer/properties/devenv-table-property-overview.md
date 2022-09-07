@@ -3,7 +3,7 @@ title: "Table, Table Fields, and Table Extension Properties"
 description: "This topic lists properties that apply to the [table object](../devenv-table-object.md), table fields, and [table extension object](../devenv-table-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 09/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -62,6 +62,7 @@ The following properties all apply to the Table object, only some of these prope
 |[ExternalType Property](devenv-externaltype-property.md)| | -Table Field <br /> |
 |[FieldClass Property](devenv-fieldclass-property.md)| | -Table Field <br /> |
 |[IncludedFields Property](devenv-includedfields-property.md)| | -Table Key <br /> |
+|[InherentEntitlements Property](devenv-inherententitlements-property.md)| | -Table <br />  -Report <br />  -Codeunit <br />  -Xml Port <br />  -Page <br />  -Query <br /> |
 |[InitValue Property](devenv-initvalue-property.md)| | -Table Field <br /> |
 |[LinkedInTransaction Property](devenv-linkedintransaction-property.md)| | -Table <br /> |
 |[LinkedObject Property](devenv-linkedobject-property.md)| | -Table <br /> |
