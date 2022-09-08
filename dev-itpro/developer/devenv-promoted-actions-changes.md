@@ -27,44 +27,6 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we int
 |If a hidden group contains actions with dynamic visibility and the visibility evaluates to `true` without the parent, then the actions will be ghosted during design mode even if the visibility has never been modified.| Actions with dynamic visibility were initially visible. Then, if the parent was hidden and because their visibility was never modified, they would disappear from the page.|
 
 
-<!--
-```al
-...
-area(Promoted)
-        {
-            // Not rendered as a split button when the feature flag is OFF
-            group(Category_New) // This is a promoted action category.
-            {
-                Caption = 'New';
-                ShowAs = SplitButton;
-
-                actionref(TestAction1_Promoted; TestAction1)
-                {
-                }
-
-                actionref(TestAction2_Promoted; TestAction2)
-                {
-                }
-            }
-
-            // Rendered as a split button (whether feature flag is ON or OFF)
-            group(Test)
-            {
-                ShowAs = SplitButton;
-
-                actionref(TestAction1_Promoted2; TestAction1)
-                {
-                }
-
-                actionref(TestAction2_Promoted2; TestAction2)
-                {
-                }
-            }
-        }
-```
-
--->
-
-## 
-
 ## See also
+
+[]()

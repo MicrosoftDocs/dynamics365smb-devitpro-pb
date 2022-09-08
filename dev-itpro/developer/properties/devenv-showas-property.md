@@ -70,6 +70,46 @@ group(MyGroup)
 
 The group `MyGroup` will be rendered as split button, which gives you a one-click access to the action `MyAction`.
 
+## Example 2
+
+The following example illustrates split button behavior if you use a promoted action category with the `ShowAs` property.
+
+```al
+...
+area(Promoted)
+        {
+            // Not rendered as a split button when the feature flag is OFF
+            group(Category_New) // This is a promoted action category
+            {
+                Caption = 'New';
+                ShowAs = SplitButton;
+
+                actionref(TestAction1_Promoted; TestAction1)
+                {
+                }
+
+                actionref(TestAction2_Promoted; TestAction2)
+                {
+                }
+            }
+
+            // Rendered as a split button (whether feature flag is ON or OFF)
+            group(Test)
+            {
+                ShowAs = SplitButton;
+
+                actionref(TestAction1_Promoted2; TestAction1)
+                {
+                }
+
+                actionref(TestAction2_Promoted2; TestAction2)
+                {
+                }
+            }
+        }
+```
+
+
 ## See Also
 
 [Getting Started with AL](../devenv-get-started.md)  
