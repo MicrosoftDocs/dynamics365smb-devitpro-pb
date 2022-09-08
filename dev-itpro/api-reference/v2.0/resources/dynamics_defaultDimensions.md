@@ -69,8 +69,8 @@ Here is a JSON representation of the defaultDimensions resource.
 ```
 ## See also
 
-[GET defaultDimensions](../api/dynamics_defaultDimension_Get.md)
-[DELETE defaultDimensions](../api/dynamics_defaultDimension_Delete.md)
-[POST defaultDimensions](../api/dynamics_defaultDimension_Create.md)
+[GET defaultDimensions](../api/dynamics_defaultDimension_Get.md)  
+[DELETE defaultDimensions](../api/dynamics_defaultDimension_Delete.md)  
+[POST defaultDimensions](../api/dynamics_defaultDimension_Create.md)  
 [PATCH defaultDimensions](../api/dynamics_defaultDimension_Update.md)
 
