@@ -837,6 +837,8 @@
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ##### [Extending Email Capabilities](developer/devenv-extending-email.md)
+##### [Extending G/L Entry Aggregations When Posting Invoices](developer/devenv-invoice-posting-example.md)
+
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
