@@ -65,6 +65,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 ### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
 ### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
 ### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
@@ -836,6 +837,8 @@
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ##### [Extending Email Capabilities](developer/devenv-extending-email.md)
+##### [Extending G/L Entry Aggregations When Posting Invoices](developer/devenv-invoice-posting-example.md)
+
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
@@ -1106,7 +1109,8 @@
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
 ### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
-### [Switch on Manual Instant Flows](powerplatform/instant-flows.md)
+### [Instant Flows](powerplatform/instant-flows.md)
+### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)

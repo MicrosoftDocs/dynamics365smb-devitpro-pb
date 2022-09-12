@@ -93,7 +93,7 @@ Here is a JSON representation of the dimensionSetLine resource.
 
 
 ## See Also
-[GET dimensionSetLine](../api/dynamics_dimensionSetLine_Get.md)
-[DELETE dimensionSetLine](../api/dynamics_dimensionSetLine_Delete.md)
-[POST dimensionSetLine](../api/dynamics_dimensionSetLine_Create.md)
+[GET dimensionSetLine](../api/dynamics_dimensionSetLine_Get.md)  
+[DELETE dimensionSetLine](../api/dynamics_dimensionSetLine_Delete.md)  
+[POST dimensionSetLine](../api/dynamics_dimensionSetLine_Create.md)  
 [PATCH dimensionSetLine](../api/dynamics_dimensionSetLine_Update.md)

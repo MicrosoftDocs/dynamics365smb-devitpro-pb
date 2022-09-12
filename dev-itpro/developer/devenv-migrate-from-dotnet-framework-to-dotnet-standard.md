@@ -3,7 +3,7 @@ title: "Migrating from .NET Framework to .NET Standard"
 description: "Description of the process of migrating DLLs used from AL from .NET Framework to .NET Standard"
 author: kennienp
 ms.custom: na
-ms.date: 12/08/2021
+ms.date: 09/01/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +37,9 @@ With the [!INCLUDE [prod_long](../includes/prod_long.md)] server running .NET St
 ## Using the Visual Studio .NET Portability Analyzer extension
 
 The .NET Portability Analyzer extension from the Visual Studio Marketplace is a tool you can use to check for compatibility to .NET Standard. It analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable to a specified .NET platform.
+
+> [!NOTE]  
+> The Visual Studio .NET Portability Analyzer extension is currently only available for Visual Studio 2019.
 
 When installed, the tool must be configured to define the type of portability analysis needed, such as the target .NET versions that you want to be compatible with. To do that, complete the following steps:
 

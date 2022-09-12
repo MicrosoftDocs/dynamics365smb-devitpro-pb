@@ -88,7 +88,7 @@ Here is a JSON representation of the customerPayment resource.
 
 
 ## See Also
-[GET customerPayment](../api/dynamics_customerPayment_Get.md)
-[DELETE customerPayment](../api/dynamics_customerPayment_Delete.md)
-[POST customerPayment](../api/dynamics_customerPayment_Create.md)
+[GET customerPayment](../api/dynamics_customerPayment_Get.md)  
+[DELETE customerPayment](../api/dynamics_customerPayment_Delete.md)  
+[POST customerPayment](../api/dynamics_customerPayment_Create.md)  
 [PATCH customerPayment](../api/dynamics_customerPayment_Update.md)
