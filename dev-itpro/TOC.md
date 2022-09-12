@@ -634,7 +634,7 @@
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
-##### [Promoted Action Changes](developer/devenv-promoted-actions-changes.md)
+##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
 
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
