@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # Actions Overview
 
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page, referred to as the action bar. In this topic, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page, referred to as the action bar. In this article, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
 The actions can be displayed in different menus on the action bar.
 
@@ -36,8 +36,6 @@ The following actions are related to the Role Center page.
 
 For more information about actions used on the role center page, see [Designing Role Centers](devenv-designing-role-centers.md).
  
-> [!TIP]  
-> If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#pages) topic.
 
 ## Types of Actions
 
@@ -45,12 +43,13 @@ Each page has a different set of actions depending on the page type, and the pro
   
 Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
   
-Example: The Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer.  
+For example, the Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer. 
+ 
 Pages can have the following actions as described in each section below.  
   
 ## Actions menu
 
-The Actions menu is a displayed in the action bar on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the `processing` action area. They are regular daily tasks. Therefore, they must be on the Actions menu. For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
+The Actions menu is a displayed in the action bar on all page types, and contains relevant tasks for the current page. Typically, you add processing tasks and creation tasks in the Actions menu. To add processing actions such as posting a sale order, you must use the `processing` action area. They're regular daily tasks. Therefore, they must be on the Actions menu. For examples on how to add actions to the Actions menu, see [Adding Actions to a Page](devenv-adding-actions-to-a-page.md). 
 
 Some examples from the Customer page are as follows:
   
@@ -74,7 +73,7 @@ You can add actions to the Actions menu, group actions together under action sub
 
 The New Document menu is often displayed both as a top-level menu in the actions bar and as a sub menu in the Actions menu. You can use this menu to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a separate menu called **New document** in the Actions menu. To add to the New document menu, you must use the `creation` action area.
   
-Example: On the Customers page, if the order processor wants to create a new invoice, she can open the new page directly from the Actions menu. This is useful as she creates new sales invoices daily. 
+For example, on the Customers page, if the order processor wants to create a new invoice, the order processor can open the new page directly from the Actions menu, which is useful when creating new sales invoices daily. 
 
 
 <!-- ### Home Items  
@@ -91,7 +90,7 @@ The Navigate menu is displayed after the Actions menu in the action bar. Rather 
   
 ## Report menu
 
-The Report menu is displayed after the Navigate menu in the action bar. The Reports menu lists the reports most relevant to a page. If a user does not require a Report menu, then the menu is hidden. Sometimes it is relevant to promote the most important reports to the top-level in the action bar to save the user from too many clicks. To create an action in the Report menu, you must use the `reporting` action area. 
+The Report menu is displayed after the Navigate menu in the action bar. The Reports menu lists the reports most relevant to a page. If a user doesn't require a Report menu, then the menu is hidden. Sometimes it's relevant to promote the most important reports to the top-level in the action bar to save the user from too many clicks. To create an action in the Report menu, you must use the `reporting` action area. 
 
  <!--
 ### Activity Buttons  
@@ -117,7 +116,7 @@ The Home menu is always displayed first so promoted actions provide quick access
 
 ## Grouping Actions in Sub-Menus
 
-Within the different areas, you can create sub-menus to a group of actions and improve navigation. You create a sub-menu by adding a `group()` control, as shown in the following example:  
+Within the different areas, you can create submenus to a group of actions and improve navigation. You create a submenu by adding a `group()` control, as shown in the following example:  
 
 ```AL
 actions
@@ -129,18 +128,18 @@ actions
             RunObject = report "Report1";
         }
 
-        // Adds a sub-menu called "Group1" to the Report menu. 
+        // Adds a submenu called "Group1" to the Report menu. 
         group(Group1)
         {
-            // Adds the action "Report 2" to the My Label sub-menu. 
+            // Adds the action "Report 2" to the My Label submenu. 
             action(Action2)
             {
                 RunObject = report "Report2";
             }
-            // Adds a sub-menu called "Group2" to the Group1 sub-menu. 
+            // Adds a submenu called "Group2" to the Group1 submenu. 
             group(Group2)
             {
-                // Adds the action "Report 3" to the Group1 sub-menu. 
+                // Adds the action "Report 3" to the Group1 submenu. 
                 action(Action3)
                 {
                     RunObject = report "Report3";
@@ -150,21 +149,23 @@ actions
     }
 }
 ```
+
 > [!NOTE]
-> Prior to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2019 Wave 2, in the client, sub-menus were automatically placed before single actions on the same level. This means, for example, group **Group2** appears before the action **Report 2**.  
+> Prior to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2019 Wave 2, in the client, submenus were automatically placed before single actions on the same level. This means, for example, group **Group2** appears before the action **Report 2**.  
 
 ## Actions at runtime  
- An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
+ 
+An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  
   
-- If the page is empty and no longer shows any records, the page is re-initialized with default values.  
+- If the page is empty and no longer shows any records, the page is reinitialized with default values.  
   
-- If the page does show records, and the current state is within the page filters boundary, the **OnAfterGetRecord** trigger is executed on the page.  
+- If the page does show records, and the current state is within the page filters boundary, the **OnAfterGetRecord** trigger is run on the page.  
   
-- If the current record that the page showed is now outside the filter but there are other records within the filter, the **OnFindRecord** trigger is called and the **OnAfterGetRecord** trigger is run on the next record with the given filters.  
+- If the current record that the page showed is now outside the filter but there are other records within the filter, the **OnFindRecord** trigger is called, and the **OnAfterGetRecord** trigger is run on the next record with the given filters.  
   
- The logic runs in the transaction that the action triggered. This can cause the application code to result in users locking the whole table when they thought they were only modifying one record.  
+The logic runs in the transaction that the action triggered. This can cause the application code to result in users locking the whole table when they thought they were only modifying one record.  
   
- To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers-auto/action/devenv-onaction-action-trigger.md) trigger on an action on a page.  
+To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers-auto/action/devenv-onaction-action-trigger.md) trigger on an action on a page.  
   
 ```AL
 if confirm('Are you sure you want to call this codeunit?', true) then begin
@@ -173,7 +174,9 @@ if confirm('Are you sure you want to call this codeunit?', true) then begin
 end;         
 ```  
 
-## See Also  
+## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
+[Promoted Actions](devenv-promoted-actions.md)
