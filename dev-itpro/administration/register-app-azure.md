@@ -48,7 +48,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |Setting|Description|
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
-        |Supported account types| Select <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong> |
+        |Supported account types| Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] does not require the organization to be multitenant, not even if this field is set to multitenant. |
         |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC200/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC200/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC200/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
@@ -75,7 +75,7 @@ The first task is to use Azure portal to register an application for Business Ce
     |[Open in OneDrive](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
     |||User.ReadWrite.All|Delegated|Read and write user profiles|
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
-    |||Workspace.Read.All|Delegated|View all workspaces. Required for viewing shared Power Bi workspaces in Business Central.|
+    |||Workspace.Read.All|Delegated|View all workspaces. Required for viewing shared Power BI workspaces in Business Central.|
     |[Universal Print integration](/dynamics365/business-central/ui-specify-printer-selection-reports#set-up-universal-print)|Microsoft Graph |PrinterShare.ReadBasic.All|Delegated|Read basic information about printer shares. Required for using Universal Print printers.|
     |||PrintJob.Create|Delegated|Create print jobs. Required for using Universal Print printers|
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
