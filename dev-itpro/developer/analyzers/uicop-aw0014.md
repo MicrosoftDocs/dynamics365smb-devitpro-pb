@@ -1,6 +1,6 @@
 ---
 title: "UICop Warning AW0014"
-description: "ActionRefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar, but this behavior might change and these action refs might be hidden in the future."
+description: "Learn how to fix ActionRefs whose target actions are defined in a hidden group but are still rendered on the promoted section of the command bar."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/15/2022
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Groups containing ActionRef targets should not be hidden.
 
 ## Description
-Actionrefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar, but this behavior might change and these actionrefs might be hidden in the future. If you want to see these actions in the default section of the command bar, remove the Visible property on the group. If you do not want to see these actions on the promoted section of the command bar, remove the actionrefs.
+Actionrefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar. However, this behavior might change and these actionrefs might be hidden in the future. If you want to see these actions in the default section of the command bar, remove the Visible property on the group. If you don't want to see these actions on the promoted section of the command bar, remove the actionrefs.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -51,18 +51,18 @@ page 50100 MyPage
 }
 ```
 
-The visibility of actionrefs depend on the visibility of their target actions. If the target action's Visible property is set to false, then the actionref is hidden too.
+The visibility of actionrefs depends on the visibility of their target actions. If the target action's Visible property is set to false, then the actionref is hidden too.
 
-However, actionrefs actions are currently rendered on the promoted section of the command bar based on the Visible property set on the action and on the actionref, without considering the actual visibility of their target action in the default section of the command bar.
+However, actionrefs actions are currently rendered on the promoted section of the command bar based on the Visible property set on the action and the actionref, without considering the actual visibility of their target action in the default section of the command bar.
 
-`MyPromotedAction` doesn't have the visible property set, so it's visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` is not visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
+`MyPromotedAction` doesn't have the visible property set, so it's visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` isn't visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
 
 > [!NOTE]  
-> A similar behavior can be achieved by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`.
+> You can achieve a similar behavior by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`.
 
 ## How to fix this diagnostic?
 
-There are three ways to fix this diagnostic depending on what you want to achieve:
+There are three ways to fix this diagnostic depending on what you want to achieve: <!--Note from the editor: The bullet points below highligh 2 ways to fix the diagnostic. Do we need to add another point?-->
 
 ### 1. Make the action group visible
 
@@ -116,7 +116,7 @@ page 50100 MyPage
 }
 ```
 
-There's no impact on the default section of the command bar since all actions remain hidden by the group. However, the actionref does not appear in the promoted section of the command bar anymore. Use this approach if you didn't expect `MyPromotedAction` to appear in the promoted section of the command bar and you want to hide it completely. 
+There's no impact on the default section of the command bar since all actions remain hidden by the group. However, the actionref no longer appears in the promoted section of the command bar. Use this approach if you didn't expect `MyPromotedAction` to appear in the promoted section of the command bar and you want to hide it completely. 
 
 Remark, in order to be compliant with the breaking change validation from the [AppSourceCop](appsourcecop.md), the following change is recommended:
 
