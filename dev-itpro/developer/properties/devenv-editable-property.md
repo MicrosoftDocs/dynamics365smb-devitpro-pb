@@ -64,7 +64,7 @@ Editable = "Balance Due (LCY)" > "Credit Limit (LCY)"
 > Do not use `CurrPage.Editable` to prevent users from deleting entries. We recommend that you use permissions to control which users can delete data.  
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable and the [InDataSet Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute) must be defined on the variable.   
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Editable** property, it must be set as a global page variable and the [InDataSet Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute) must be defined on the variable. Also, note that the dynamic Boolean variables and the Booleans set by the InDataSet attribute aren't supported in tables. 
 
 ## See Also
 
