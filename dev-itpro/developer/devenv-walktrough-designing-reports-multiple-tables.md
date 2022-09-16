@@ -11,7 +11,7 @@ author: SusanneWindfeldPedersen
 
 # Walkthrough: Designing a Report from Multiple Tables
 
-A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You can design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for a RDL layout, in Microsoft Word for a Word layout, and in Microsoft Excel for an Excel layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
+A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You define the dataset for reports directly in AL code. You can design the layout in Visual Studio Report Designer or Microsoft SQL Server Reporting Services Report Builder for an RDL layout, in Microsoft Word for a Word layout, and in Microsoft Excel for an Excel layout. After you design a report, you can make it available to applications that are running on the [!INCLUDE[webclient](includes/webclient.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  
 
 ## About This Walkthrough
 
@@ -57,26 +57,26 @@ The following illustration shows an example of the second page of the report.
 
 Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
-He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he will use an RDL layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file he will use for the layout.
+He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he'll use an RDL layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file he'll use for the layout.
 
 Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report object. 
 
 ### Adding Data Items and columns
  
-The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, he will add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
+The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, he'll add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
 
-The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for additional tables and fields.
+The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for more tables and fields.
 
 ### Defining Properties for the Data Items
 
-Once Viktor has specified the dataitem and column elements he will define the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) in each data item to sort the table view based on a specific field. 
+Once, Viktor has specified the data item and column elements he'll define the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) in each data item to sort the table view based on a specific field. 
 
 He also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to automatically include a specific field on the filter tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
 
 <!-- >[!NOTE]
 > Request pages for XMLports are not supported by the Business Central Web client in versions prior to Dynamics 365 Business Central 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the Dynamics NAV Client connected to Business Central. -->
 
-Now, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-dataitemlink-reports-property.md) to set a link between one or more fields of the dataitem tables. Links determine which records to include in the dataset based on the values of a common field between dataitems. This property must be set on the lower dataitem of the report object.
+Now, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-dataitemlink-reports-property.md) to set a link between one or more fields of the data item tables. Links determine which records to include in the dataset based on the values of a common field between data items. This property must be set on the lower data item of the report object.
 
 For each of the `column` controls he adds the [IncludeCaption Property](properties/devenv-includecaption-property.md) and sets it to **True**. This property specifies to include the caption of the fields in the dataset of a report.
 
@@ -325,26 +325,27 @@ report 50101 "Report for Multiple Tables"
 }
 ```  
 
-## Designing the Visual RDL Layout for the Report  
-Next, Viktor will design an RDL layout for the report by using Visual Studio Report Designer. He will set properties for the report and the report elements, format the report, and then add the data to the report.  
+## Designing the visual RDL layout for the report
 
-#### To design the RDL layout for the report  
+Next, Viktor will design an RDL layout for the report by using Visual Studio Report Designer. He'll set properties for the report and the report elements, format the report, and then add the data to the report.  
 
-1.  Build the extension (Ctrl+Shift+B) to generate the `MyRDLReport.rdl` file, and then open the file with Visual Studio 2019.
+#### To design the RDL layout for the report
 
-2.  Right-click anywhere outside the report (in the shaded area) and then choose **Add Page Header**.  
+1. Build the extension (Ctrl+Shift+B) to generate the `MyRDLReport.rdl` file, and then open the file with Visual Studio 2019.
 
-3.  Right-click anywhere outside the report (in the shaded area), and then choose **Report Properties**.  
+2. Right-click anywhere outside the report (in the shaded area) and then choose **Add Page Header**.  
 
-4.  In the **Report Properties** window, choose the **Page Setup** tab. In the **Paper size** section, under **Orientation**, choose **Landscape**, and then choose the **OK** button.  
+3. Right-click anywhere outside the report (in the shaded area), and then choose **Report Properties**.  
 
-5.  On the **View** menu, choose **Toolbox**. Select the **List** control, and then choose the body of the report to add the **List** control to the report. This control will contain and group all the data.  
+4. In the **Report Properties** window, choose the **Page Setup** tab. In the **Paper size** section, under **Orientation**, choose **Landscape**, and then choose the **OK** button.  
 
-6.  Move the **List control** to the top of the report body and resize it to cover the whole report body.  
+5. On the **View** menu, choose **Toolbox**. Select the **List** control, and then choose the body of the report to add the **List** control to the report. This control will contain and group all the data.  
 
-7.  Right-click the middle of the **List** controls, and then click on the box to open the **Rectangle Properties**.  
+6. Move the **List control** to the top of the report body and resize it to cover the whole report body.  
 
-8.  In the **Rectangle Properties** window, choose the **Fill** tab, in the **Fill Color** list color pallet, select **Cornflower Blue** from the color pallet, and then choose the **OK** button. You can choose any color.  
+7. Right-click the middle of the **List** controls, and then select on the box to open the **Rectangle Properties**.  
+
+8. In the **Rectangle Properties** window, choose the **Fill** tab, in the **Fill Color** list color pallet, select **Cornflower Blue** from the color pallet, and then choose the **OK** button. You can choose any color.  
 
     > [!NOTE]  
     >  Changing the color of report elements helps you identify elements on the report preview. You can set different color properties for table header, detail rows, text boxes, and so on.  
@@ -353,13 +354,13 @@ Next, Viktor will design an RDL layout for the report by using Visual Studio Rep
 
 #### To set the list control properties  
 
-1.  Select the **List** control, right-click the shaded border to the left of the **List** control, and then choose **Tablix Properties**.  
+1. Select the **List** control, right-click the shaded border to the left of the **List** control, and then choose **Tablix Properties**.  
 
-2.  In the **Tablix Properties** window, on the **General** tab, under **Dataset name**, select **DataSet\_Result** from the drop-down list, and then choose the **OK** button.  
+2. In the **Tablix Properties** window, on the **General** tab, under **Dataset name**, select **DataSet\_Result** from the drop-down list, and then choose the **OK** button.  
 
-3.  Select the **List** control, right-click the shaded border to the left of the list control, choose **Row Group**, and then **Group Properties**.  
+3. Select the **List** control, right-click the shaded border to the left of the list control, choose **Row Group**, and then **Group Properties**.  
 
-4.  In the **Group Properties** window, on the **General** tab, under **Group expressions:**, choose the **Add** button, and then select **\[No\_Customer\]** from the **Group on:** drop-down list. This groups all the data in the List control by customer number.  
+4. In the **Group Properties** window, on the **General** tab, under **Group expressions:**, choose the **Add** button, and then select **\[No\_Customer\]** from the **Group on:** drop-down list. This groups all the data in the List control by customer number.  
 
 5.  On the **Page Breaks** tab, select **Between each instance of a group**, and then choose the **OK** button.  
 
@@ -373,7 +374,7 @@ Viktor is now ready to add the customer data. The table will display one custome
 
      ![The list control on the report.](media/MicrosoftDynamicsNAV_ListControl.jpg "MicrosoftDynamicsNAV\_ListControl")  
 
-     Note that the table contains two table rows, a header row (first row), and a data row (second row). The three parallel lines in the left border of the second row identify the data row.  
+     The table contains two table rows, a header row (first row), and a data row (second row). The three parallel lines in the left border of the second row identify the data row.  
 
 2.  Select any table row, right-click the shaded border, and then choose **Tablix Properties** to open the **Tablix Properties** window.  
 
@@ -431,7 +432,7 @@ Viktor is now ready to add the customer data. The table will display one custome
     > [!NOTE]  
     > It is a good practice to build the project periodically during the report design to make sure that there are no build errors.  
 
-     Viktor will run the report and preview what he has done to this point.  
+     Viktor will run the report and preview what he's done to this point.  
 
 17. Go back to your project in Visual Studio Code and Reload the Window.
 
@@ -456,7 +457,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
 4.  Select the table data row, choose **Insert Row** and then choose **Outside Group – Below**. This adds another data row to the table. You now have one header row and two data rows.  
 
-5.  Delete the first row \(header row\) in the table and then insert columns in the table so that the total number of columns is eleven.  
+5.  Delete the first row \(header row\) in the table and then insert columns in the table so that the total number of columns is 11.  
 
 6.  Choose the first data row, right-click the shaded border to the left, choose **Add Group**, and then choose **Parent Group**.  
 
@@ -466,7 +467,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
 9. Right-click the cell in the row1, column 2, and then choose **Expression** to open the **Expression** window.  
 
-10. In the **Category** column, select **Parameters** and then in the **Values** column double-click **EntryNo\_CustLedgerEntryCaption**. Note that the **Set expression for: Value** box contains the following value: `=Parameters!EntryNo_CustLedgerEntryCaption.Value`  
+10. In the **Category** column, select **Parameters** and then in the **Values** column double-click **EntryNo\_CustLedgerEntryCaption**. The **Set expression for: Value** box contains the following value: `=Parameters!EntryNo_CustLedgerEntryCaption.Value`  
 
 11. Modify the expression to the following value: `=First(Parameters!EntryNo_CustLedgerEntryCaption.Value)`.  
 
@@ -479,7 +480,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
     |5|DocumentType\_CustLedgerEntryCaption|  
     |6|DocumentNo\_CustLedgerEntryCaption|  
     |7|Description\_CustLedgerEntryCaption|  
-    |8|Skip this cell. You will use this cell later.|  
+    |8|Skip this cell. You'll use this cell later.|  
     |9|CurrencyCode\_CustLedgerEntryCaption|  
     |10|Amount\_CustLedgerEntryCaption|  
     |11|OriginalAmtLCY\_CustLedgerEntryCaption|  
@@ -491,11 +492,11 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
 15. Right-click the cell in the row2, column 2, and then choose **Expression** to open the **Expression** window.  
 
-16. In the **Category** column, select **Fields \(DataSet\_Result\)**, in the **Values** column, double-click **EntryNo\_CustLedgerEntry**, and then choose the **OK** button. Note that the **Set expression for: Value** box contains the following value: `=Fields!EntryNo_CustLedgerEntry.Value`  
+16. In the **Category** column, select **Fields \(DataSet\_Result\)**, in the **Values** column, double-click **EntryNo\_CustLedgerEntry**, and then choose the **OK** button. The **Set expression for: Value** box contains the following value: `=Fields!EntryNo_CustLedgerEntry.Value`  
 
 17. Repeat steps 15 and 16 for row 3 to add fields from the ledger entry dataset. Put the fields under the corresponding captions.  
 
-18. Select the row that you just filled and set the **BackgroundColor** property to **Silver**.  
+18. Select the row that you filled in and set the **BackgroundColor** property to **Silver**.  
 
 19. Build the project, inspect the **Output** pane, and make sure that there are no build errors.  
 
@@ -520,13 +521,13 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
 23. Right-click the column header that contains the **Customer No.** field, choose **Insert Column**, and then choose **Right**.  
 
-24. Select the cell that contains the **Customer No.** caption and the empty cell that you just created, and then choose **Merge Cells** to merge the two cells.  
+24. Select the cell that contains the **Customer No.** caption and the empty cell that you created, and then choose **Merge Cells** to merge the two cells.  
 
 25. Repeat step 24 to merge the cell that contains the value of the **Customer No.** field and the empty cell that you created.  
 
-26. Assign the expression from the **EntryType** caption and field cells of the Detailed Cust. Ledg. Entry to the empty cell that you created to the right. You may have to have to cut the expressions and paste them into the empty cells.  
+26. Assign the expression from the **EntryType** caption and field cells of the Detailed Cust. Ledg. Entry to the empty cell that you created to the right. You may have to cut the expressions and paste them into the empty cells.  
 
-27. Repeat 26 to move the **EntryNo** caption and field one cell to the right. This makes sure that the EntryNo and the EntryType data is located directly under the CustomerNo cell.  
+27. Repeat 26 to move the **EntryNo** caption and field 1 cell to the right. This makes sure that the EntryNo and the EntryType data are located directly under the CustomerNo cell.  
 
      The following illustration shows EntryNo and the EntryType cells directly under the CustomerNo cell  
 
@@ -536,7 +537,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
 29. Select the third row and set the **BackgroundColor** property to **Yellow** and then set the **BackgroundColor** property of the fourth row to **Khaki**.  
 
-     Viktor will now hide all empty cells and add the totals to the footer row. To hide empty cells Viktor will add a filter that selects rows that have \[EntryNo\] value that are greater than zero.  
+     Viktor will now hide all empty cells and add the totals to the footer row. To hide empty cells Viktor will add a filter that selects rows that have \[EntryNo\] value that is greater than zero.  
 
 #### To hide empty cells and add totals  
 
@@ -550,7 +551,7 @@ Viktor will now add the data for the customer ledger entries and detailed ledger
 
 4.  In the **Group Properties** window, under the **Filters** tab, verify that the **Expression** box contains \[EntryNo\_CustLedgerEntry\].  
 
-     Viktor will now add the total of the amount field to the footer row of the table, format the cells and hide the total cell if customer ledger entry is not available.  
+     Viktor will now add the total of the amount field to the footer row of the table, format the cells and hide the total cell if customer ledger entry isn't available.  
 
 5.  In the last row of the table, right-click the empty cell under the **Amount \(LCY\)** field, and then choose **Expression**.  
 
@@ -615,7 +616,7 @@ The next step is to add the data from the **Sales Header** table.
 
 17. Modify the expression to the following value: `=First(Parameters!DocumentType_SalesHeaderCaption.Value)` and then choose the **OK** button. 
 
-18. Right-click the cell that is under the caption that you just created, choose **Expression**. In the **Category** column, select **Fields \(DataSet\_Result\)**, and then in the **Values** column double-click **DocumentType\_SalesHeader**. Choose the **OK** button. Verify that the **Set expression for: Value** box contains the following value: `=Fields!DocumentType_SalesHeader.Value`  
+18. Right-click the cell that is under the caption that you created, choose **Expression**. In the **Category** column, select **Fields \(DataSet\_Result\)**, and then in the **Values** column double-click **DocumentType\_SalesHeader**. Choose the **OK** button. Verify that the **Set expression for: Value** box contains the following value: `=Fields!DocumentType_SalesHeader.Value`  
 
 19. Repeat steps 15 through 18 and add the following captions and the corresponding fields.  
 
@@ -644,19 +645,19 @@ The next step is to add the data from the **Sales Header** table.
 
 ## Building and Running the Report  
 
-Viktor will run the report to view how it looks like. For this, do the following:
+Viktor will run the report to view how it looks like. For this, do the following steps:
 
 1.  Make sure that the `"startupObjectId"` is set to the **Id** of the report object and the `"startupObjectType"` to `Report` in the `launch.json` file.
 
 2. Press the `F5` key to compile and run the report in Dynamics 365 Business Central.
 
-3.  If you have not disabled the [UseRequestPage Property](properties/devenv-userequestpage-property.md) you will be shown a request page in the Web Client.
+3.  If you haven't switched off the [UseRequestPage Property](properties/devenv-userequestpage-property.md) you'll be shown a request page in the Web Client.
 
      The following illustration shows an example of the request page that is displayed when the report is run.  
 
      ![Request page.](media/request_page_report.PNG?style=centerme "request\_page\_report" )  
 
-     If you choose the **Preview** button on the request page, the report will be displayed with the RLD layout just created.
+     If you choose the **Preview** button on the request page, the report will be displayed with the RLD layout created.
 
 Viktor can now add advanced features to the report. He can add features such as displaying the company name and logo on every page on the report. He might also want to add features that enable users to apply filters on the request page.  
 
