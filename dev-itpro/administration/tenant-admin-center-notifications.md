@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 08/01/2022
+ms.date: 09/16/2022
 ms.author: edupont
 
 ---
@@ -87,14 +87,15 @@ This Logic App runs a query that returns any failed environment updates ever num
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
 
 ##### Action available updates from an Adaptive Card in Teams
-This Logic App queries Application Insights regularly to get any new updates made available to environments for which AppInsights has been set up and posts an Adaptive Card to Teams from which the update can be started immediately or rescheduled, all without having to navigate to the Admin Center.
+
+This Logic App queries Application Insights regularly to get any new updates made available to environments for which AppInsights has been set up and posts an Adaptive Card to Teams from which the update can be started immediately or rescheduled, all without having to navigate to the admin center.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
 
 
 #### Reporting
 
-To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report which shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md) or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
+To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report which shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
 
 > [!NOTE]
 > The Power BI reports and dataset that make up this app are available on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/PowerBI/Reports/AppSource/enrironment-app-pbix). You can customize those resources for your own needs and publish from Power BI desktop.
