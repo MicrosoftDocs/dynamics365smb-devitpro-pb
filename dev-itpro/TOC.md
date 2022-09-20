@@ -1106,6 +1106,7 @@
 ### Dataverse API
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+#### [Business Central Dataverse API](api-dataverse/dynamics-dataverse-api.md)  
 #### [Company](api-dataverse/resources/dynamics_company.md)
 ##### [Get company](api-dataverse/api/dynamics_company_get.md)
 #### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
