@@ -66,3 +66,4 @@ HTTP/1.1 204 No Content
 [GET subscriptions](dynamics_subscriptions_get.md)  
 [POST subscriptions](dynamics_subscriptions_create.md)  
 [PATCH subscriptions](dynamics_subscriptions_update.md)  
+[Business Central Dataverse API](../dynamics-dataverse-api.md)  

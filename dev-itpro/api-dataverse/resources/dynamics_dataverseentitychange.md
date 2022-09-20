@@ -51,4 +51,5 @@ Here is a JSON representation of the dataverseEntityChange resource.
 
 ## See Also
 [GET dataverseEntityChange](../api/dynamics_dataverseentitychange_get.md)
-[POST dataverseEntityChange](../api/dynamics_dataverseentitychange_create.md)
+[POST dataverseEntityChange](../api/dynamics_dataverseentitychange_create.md)  
+[Business Central Dataverse API](../dynamics-dataverse-api.md)  

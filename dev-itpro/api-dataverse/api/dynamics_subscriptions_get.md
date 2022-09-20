@@ -78,3 +78,4 @@ Here is an example of the response.
 [DELETE subscriptions](dynamics_subscriptions_delete.md)  
 [POST subscriptions](dynamics_subscriptions_create.md)  
 [PATCH subscriptions](dynamics_subscriptions_update.md)  
+[Business Central Dataverse API](../dynamics-dataverse-api.md)  

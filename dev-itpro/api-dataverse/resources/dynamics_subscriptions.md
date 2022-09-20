@@ -75,4 +75,5 @@ Here is a JSON representation of the subscriptions resource.
 [GET subscriptions](../api/dynamics_subscriptions_get.md)
 [DELETE subscriptions](../api/dynamics_subscriptions_delete.md)
 [POST subscriptions](../api/dynamics_subscriptions_create.md)
-[PATCH subscriptions](../api/dynamics_subscriptions_update.md)
+[PATCH subscriptions](../api/dynamics_subscriptions_update.md)  
+[Business Central Dataverse API](../dynamics-dataverse-api.md)  

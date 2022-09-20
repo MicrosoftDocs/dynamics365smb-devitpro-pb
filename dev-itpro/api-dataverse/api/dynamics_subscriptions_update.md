@@ -87,3 +87,4 @@ Content-type: application/json
 [GET subscriptions](dynamics_subscriptions_get.md)  
 [DELETE subscriptions](dynamics_subscriptions_delete.md)  
 [POST subscriptions](dynamics_subscriptions_create.md)  
+[Business Central Dataverse API](../dynamics-dataverse-api.md)  
