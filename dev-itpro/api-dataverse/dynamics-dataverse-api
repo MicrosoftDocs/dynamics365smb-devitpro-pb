@@ -1,0 +1,45 @@
+---
+title: Business Central Dataverse API
+description: Dataverse API for integration with Dynamics 365 Business Central
+author: SusanneWindfeldPedersen
+ms.service: "dynamics365-business-central"
+ms.topic: reference
+ms.devlang: na
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 09/20/2022
+ms.author: solsen
+---
+
+# Business Central Dataverse API
+
+The Dataverse API is most commonly used from a Power Automate flow, using the following trigger [Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger).
+
+The Dataverse API for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is used to notify [!INCLUDE [prod_short](../developer/includes/prod_short.md)] that a change on a Dataverse entity happened. Only use this API if the Dataverse synchronization is enabled.
+The `entityName` is the name of the Dataverse entity for which the change happened. When you insert a row with a POST request, a corresponding job queue entry that does the entity synchronization (in this example it is the account entity), will be rescheduled to run now.
+
+## Examples
+
+We use this API to call Business Central via BC Connector, and it is described here: https://learn.microsoft.com/en-us/dynamics365/business-central/admin-power-automate-flow-dataverse
+
+Example of a post request
+
+POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/dataverse/v1.0/dataverseEntityChanges
+Content-type: application/json
+
+{
+    "entityName": "account"
+}
+
+
+Example of a get request with a response (truncated, because this table can have many rows).
+GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/dataverse/v1.0/dataverseEntityChanges
+
+{
+    "id": "3496bbf8-fcae-4e48-a4f8-cb17c27de0b3",
+    "entityName": "account"
+}
+
+
+
+## See also
