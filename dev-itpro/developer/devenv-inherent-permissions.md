@@ -47,7 +47,7 @@ Referring to the example explained above, let's say the report needs to show whi
 
 ## Inherent Entitlements
 
-As the inherent permissions let developers assign permissions to their methods and events, the inherent entitlements grant more flexibility to developers for placing permissions in the context of their objects. Developers can define inherent entitlements for their objects like codeunit, table, page and, so on. In this way, the developers equip all users to have enough access that they can carry out essential tasks without any halt and regardless of what their present license or entitlement grant them. To learn more about inherent entitlements, see [InherentEntitlements Property](../developer/properties/devenv-inherententitlements-property.md).
+As the inherent permissions let developers assign permissions to their methods and events, the inherent entitlements grant more flexibility to developers for placing permissions in the context of their objects. Developers can define inherent entitlements for their objects like codeunit, table, page and, so on. In this way, the developers equip all users to have enough access that they can carry out essential tasks without any halt. And regardless of what access their present license or entitlement grant them. To learn more about inherent entitlements, see [InherentEntitlements Property](../developer/properties/devenv-inherententitlements-property.md).
 
 >[!NOTE]
 > Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../developer/methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
