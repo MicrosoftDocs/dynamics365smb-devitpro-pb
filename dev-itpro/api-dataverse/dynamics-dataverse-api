@@ -20,26 +20,31 @@ The `entityName` is the name of the Dataverse entity for which the change happen
 
 ## Examples
 
-We use this API to call Business Central via BC Connector, and it is described here: https://learn.microsoft.com/en-us/dynamics365/business-central/admin-power-automate-flow-dataverse
+The following is an example of a POST request:
 
-Example of a post request
-
+```
 POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/dataverse/v1.0/dataverseEntityChanges
 Content-type: application/json
 
 {
     "entityName": "account"
 }
+```
 
+The following is an example of a GET request with a response. The response is truncated, because this table can have many rows.
 
-Example of a get request with a response (truncated, because this table can have many rows).
+```
 GET https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/microsoft/dataverse/v1.0/dataverseEntityChanges
 
 {
     "id": "3496bbf8-fcae-4e48-a4f8-cb17c27de0b3",
     "entityName": "account"
 }
-
-
+```
 
 ## See also
+
+[company resource type](resources/dynamics_company.md)  
+[dataverseEntityChange resource type](resources/dynamics_dataverseentitychange.md)  
+[subscriptions resource type](resources/dynamics_subscriptions.md)  
+[Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger)
