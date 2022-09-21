@@ -86,6 +86,13 @@ This Logic App runs a query that returns any failed environment updates ever num
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FActionFailedEnvironmentUpdate.json)
 
+##### Post adaptive card in Teams channel for each available environment update
+
+This Logic App runs a query that returns any failed environment updates ever number of hours (specified in deployment). Customize the Logic App after deploying to action the failed update, for example by opening a case in Dynamics 365 Customer Service using the Dataverse connector.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FActionFailedEnvironmentUpdate.json)
+
+
 #### Reporting
 
 To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report which shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md) or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
