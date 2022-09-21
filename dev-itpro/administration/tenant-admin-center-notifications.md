@@ -90,7 +90,7 @@ This Logic App runs a query that returns any failed environment updates ever num
 
 This Logic App runs a query that returns any failed environment updates ever number of hours (specified in deployment). Customize the Logic App after deploying to action the failed update, for example by opening a case in Dynamics 365 Customer Service using the Dataverse connector.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FActionFailedEnvironmentUpdate.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpitylend%2FBCTech%2Fprivate%2Fpitylend%2Fs2s-bcle%2Fsamples%2FAppInsights%2FAlerts%2FS2SAppsEnvironmentUpgradeAdaptiveCard.json)
 
 
 #### Reporting
