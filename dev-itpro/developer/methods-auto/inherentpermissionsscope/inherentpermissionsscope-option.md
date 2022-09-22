@@ -29,7 +29,7 @@ The different types of scope that the InherentPermissions attribute can apply to
 
 ## Remarks
 
-*InherentPermissionScope* is a parameter used with InherentPermissions attribute, which can override the entitlements. It's an optional method and the default value for InherentPermissionScope is *Both* that includes permissions and entitlements. To learn more about syntax and usage of InherentPermission attribute, see [InherentPermissions Attribute](../../attributes/devenv-inherentpermissions-attribute.md). 
+*InherentPermissionScope* is used as a parameter with InherentPermissions attribute, which can override the entitlements. It's an optional method and the default value for InherentPermissionScope is *Both* that includes permissions and entitlements. To learn more about syntax and usage of InherentPermission attribute, see [InherentPermissions Attribute](../../attributes/devenv-inherentpermissions-attribute.md). 
 
 ## Example 
  
