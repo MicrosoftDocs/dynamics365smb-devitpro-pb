@@ -12,12 +12,12 @@ author: mikebc
 
 # Security Tips for Business Users
 
-This article describes how you can work with end users and configure their devices to improve security.
+This article describes how you can work with users<!--note from editor: Not "end user," via MWSG.--> and configure their devices to improve security.
 
 > [IMPORTANT]
 > Use this article together with industry standard security practices for securing users and their access to company data.
 
-## Kiosks and shared devices<!--note from editor: SELF: don't want to title-case this.-->
+## Kiosks and shared devices
 
 Customers using kiosks, where multiple users sign in to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] with their own identity from a single terminal, should apply additional security practices for an appropriate level of isolation between users:
 

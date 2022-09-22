@@ -1,5 +1,5 @@
 ---
-title: "Security in Business Central on-premises"
+title: "Security in Business Central (on-premises)"
 description: "Learn about the main aspects of security in your on-premises deployment of Dynamics 365 Business Central."
 author: jswymer
 
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/01/2021
 ---
-# Business Central On-Premises Security
+# Business Central (On-Premises) Security
 
 This section helps you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] hosted on-premises. In the links below you'll find information, hardening guidance, and recommended best practices that address<!--note from editor: Suggested.--> client, database, server, and network security.  
 
@@ -23,7 +23,7 @@ For more information, see [Authentication and Credential Types](../administratio
 
 ## Server Security
 
-[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting, and more. The following articles<!--note from editor: In other places, these seem to be called "sections."--> explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
+[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting, and more. The following articles<!--note from editor: In other places, these seem to be called "sections." I think?--> explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
 
 [Hardening [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Security](enhancing-server-instance-security.md)  
 

@@ -20,7 +20,7 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises)<!--note from editor: Via Cloud Style Guide.--> supports several authentication methods, such as Windows and Azure Active Directory (Azure AD). Business Central Online uses Azure AD only.  For more information, see the following articles:
+Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises)<!--note from editor: Via Cloud Style Guide.--> supports several authentication methods, such as Windows and Azure Active Directory (Azure AD). Business Central online deployments<!--note from editor: Suggested, but perhaps not optimal. "Business Central" is the online product, not "Business Central Online." I see other articles use "Business Central online...", which has the advantage of being parallel with "(on-premises)" but somehow doesn't sound right to me.--> use Azure AD only. For more information, see the following articles:
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 
@@ -61,7 +61,8 @@ After<!--note from editor: Via MWSG.--> a user is authenticated, authorization d
 [Security Auditing](security-auditing.md)
 
 [Data Classification](/dynamics365/business-central/admin-classifying-data-sensitivity)
-  
+
+<!--note from editor: Why is the following H2 not sentence case, as they often are in other files?-->
 ## Data Encryption
 
 You can encrypt data on the Business Central server by generating new encryption keys&mdash;or importing existing ones&mdash;that you enable on the Business Central server instance that connects to the database. For more information, see [Encrypting Data in Dynamics 365 Business Central](../developer/devenv-encrypting-data.md).
@@ -70,7 +71,7 @@ You can encrypt data on the Business Central server by generating new encryption
 
 ## Security Development Lifecycle
 
-The Microsoft<!--note from editor: Edited to echo the wording on the target page.--> Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
+The Microsoft<!--note from editor: Edited to echo the wording on the target page. Also to avoid possessive.--> Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
 
 ## See Also  
 
