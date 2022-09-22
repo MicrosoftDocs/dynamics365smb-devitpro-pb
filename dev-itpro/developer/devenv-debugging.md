@@ -16,7 +16,7 @@ ms.author: solsen
 An alternative to classic debugging, is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 > [!IMPORTANT]  
-> To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
+> To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This step requires a server restart.
 
 > [!IMPORTANT]  
 > To use the development environment and debugger, you must make sure that port `7049` is available.
@@ -24,7 +24,7 @@ An alternative to classic debugging, is snapshot debugging, which allows you to 
 There are some limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `allowDebugging` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
-- The debugger launches a new client instance each time you press **F5**. If you close the debugging session, and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
+- The debugger launches a new client instance each time you press **F5**. If you close the debugging session and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session isn't supported.
 
 To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
@@ -38,10 +38,10 @@ The basic concept in debugging is the *breakpoint*, which is a mark that you set
  
 Set breakpoints on the external code that isn't part of your original project. You can step into the base application code by using the **Go to Definition** feature, and set breakpoints on the referenced code, which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do as follows: 
 
-- Use **Go to Definition** which opens the "external file" and then a breakpoint can be set.  
+- Use **Go to Definition**, which opens the "external file", and then a breakpoint can be set.  
 - By using the debugger, you can step into the code, and then set a breakpoint.
 
-In the following video illustration, the `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file, which is referenced from your AL project to stop execution at the marked point. 
+The following video illustrates that `Customer.dal` is an external file. A breakpoint is set in the `Customer.dal` file, which is referenced from your AL project to stop execution at the marked point. 
 
 ![Debugger.](media/DebuggingAL.gif)
 
@@ -71,7 +71,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables that contain values that are larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
+Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
 
 ## Attach and Debug Next
 
@@ -98,7 +98,7 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 
 ## <a name="DebugSQL"></a>Debugging SQL behavior
 
-Traditionally, debugging AL has been about examining behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine the effect that your AL code has on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [JSON Files](devenv-json-files.md#Launchjson).
+Traditionally, debugging AL has been about examining the behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine your AL code's effect on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [JSON Files](devenv-json-files.md#Launchjson).
 
 ### View database statistics
 
@@ -137,7 +137,7 @@ The number of SQL statements tracked by the debugger can be configured in the [!
 
 The ability to debug certain methods and/or variables can be restricted. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
-## Authenticating with Azure AD on Business Central on-premises
+## Authenticate with Azure AD on Business Central on-premises
 
 You can use Azure AD as the authentication mechanism for Business Central on-premises or containers. For more information, see [Azure AD authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
