@@ -13,17 +13,17 @@ ms.date: 04/01/2021
 ---
 # Business Central On-Premises Security
 
-This section helps you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] hosted on-premises. In the links below you will find information, hardening guidance and recommended best practices addressing client, database, server and network security.  
+This section helps you understand and improve the security of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] hosted on-premises. In the links below you'll find information, hardening guidance, and recommended best practices that address<!--note from editor: Suggested.--> client, database, server, and network security.  
 
 ## Authentication
 
-Before users can sign-in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server-tiers of Business Central.
+Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central supports several authentication methods. You configure the authentication method on the server tiers of Business Central.
 
 For more information, see [Authentication and Credential Types](../administration/users-credential-types.md).
 
 ## Server Security
 
-[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting and more. The following articles explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
+[!INCLUDE[server](../developer/includes/server.md)] handles communication between clients and databases, controlling authentication, event logging, scheduled tasks, reporting, and more. The following articles<!--note from editor: In other places, these seem to be called "sections."--> explain how to improve the security of [!INCLUDE[server](../developer/includes/server.md)] instances.
 
 [Hardening [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Server Security](enhancing-server-instance-security.md)  
 
@@ -33,7 +33,7 @@ For more information, see [Authentication and Credential Types](../administratio
 
 ## Client Security
 
-The following articles explain how to improve the security of connections from the clients to the [!INCLUDE[server](../developer/includes/server.md)].  
+The following articles explain how to improve the security of connections from the clients to [!INCLUDE[server](../developer/includes/server.md)].  
 
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
@@ -43,7 +43,7 @@ The following articles explain how to improve the security of connections from t
 
 The articles in this section explain how to improve database security in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-The following articles discuss configurations that you can perform on the Business Central Server:
+The following articles discuss configurations that you can perform on the Business Central server instance<!--note from editor: Or should it be "...on Business Central Server"?-->:
 
 [Configuring the Database](../administration/configure-sql-server-authentication.md)
 
@@ -68,7 +68,7 @@ The following are general articles about SQL Server security that can also help 
 
 ## Network Security
 
-The following articles explain to secure client, web service, and PowerBI connections over a wide area network using HTTPS and security certificates. 
+The following articles explain how to secure client, web service, and Power BI connections over a wide area network by using HTTPS and security certificates. 
 
 [Configuring SSL to Secure the Client Connections](../deployment/configure-ssl-web-client-connection.md)
 
