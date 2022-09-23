@@ -114,7 +114,7 @@ If you want to create alerts in Azure Application Insights, then do as follows:
  2. Click "Alerts" in the navigation pane on the left
  3. Add a KQL alerting condition query in the condition for a custom log search 
 
-Please read more in the documentation for Azure Application Insights here: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-unified-log
+Please read more in the documentation for Azure Application Insights here: https://docs.microsoft.com/azure/azure-monitor/platform/alerts-unified-log
 
 ### How to create alerts using Azure Logic Apps and Power Automate
 Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights that you can use to set up custom notifications or to automate certain actions triggered by an environment lifecycle event.
