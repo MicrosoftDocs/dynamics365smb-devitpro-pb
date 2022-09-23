@@ -27,6 +27,10 @@ In [!INCLUDE [prod_short](includes/prod_short.md)] the new action bar is enabled
 > [!NOTE]  
 > The [legacy syntax](devenv-promoted-actions.md#promoting-actions-by-category-legacy-syntax) for defining promoted actions is still supported in releases going forward, but it's recommended to implement the new syntax.
 
+> [!NOTE]  
+> Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](analyzers/uicop-aw0013.md).
+
+
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. An `actionref` can only be defined in the `area(Promoted)` section. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
 
 For more information about behavioral changes introduced with the new action bar, see [Promoted Actions Changes](devenv-promoted-actions-behavioral-changes.md).

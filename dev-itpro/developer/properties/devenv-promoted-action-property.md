@@ -19,7 +19,7 @@ Sets the value that indicates whether the selected action is promoted, which mea
 > With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
 > [!NOTE]  
-> Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](dev-itpro/developer/analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](dev-itpro/developer/analyzers/uicop-aw0013.md).
+> Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](../analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](../analyzers/uicop-aw0013.md).
 
   
 ## Applies to  
