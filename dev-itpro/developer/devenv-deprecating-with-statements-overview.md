@@ -52,7 +52,7 @@ The `DoStuff()` procedure processes work on the Customer record and calls a loca
 
 ## Symbol lookup
 
-Considering the above code sample again, what would happen to that code if `IsDirty` was added to the base application between two releases? To understand that we need to take a look at how compilers turn syntax into symbols. When the AL compiler meets the `IsDirty` call it must bind the syntax name to a procedure symbol.
+If we take another look at the above code sample again, what would happen to that code if `IsDirty` was added to the base application between two releases? To understand that we need to take a look at how compilers turn syntax into symbols. When the AL compiler meets the `IsDirty` call it must bind the syntax name to a procedure symbol.
 
 When the AL compiler searches for the symbol `IsDirty()` in the sample above it will search in following order:
 
