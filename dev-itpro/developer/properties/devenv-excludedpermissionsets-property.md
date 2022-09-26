@@ -22,6 +22,15 @@ Sets the lists of other permission sets that are excluded in this permission set
 -   Permission Set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+
+## Syntax
+
+```al
+ExcludedPermissionSets = BASIC;
+```
+
+## See Also
+
+[PermissionSet Object](../devenv-permissionset-object.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
