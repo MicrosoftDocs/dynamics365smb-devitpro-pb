@@ -29,7 +29,7 @@ Removing an action which has been published is not allowed because it will break
 > Renaming an action will also trigger this error. AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.
 
 > [!NOTE]  
-> From Business Central 2022 Wave 2 (version 21), removing the [Promoted](../properties/devenv-promoted-property.md) property on an action is also considered a breaking change, since the AL compiler automatically synthesizes an action reference for each promoted action.
+> From Business Central 2022 release wave 2 (version 21), removing the [Promoted](../properties/devenv-promoted-property.md) property on an action is also considered a breaking change, since the AL compiler automatically synthesizes an action reference for each promoted action.
 
 ## How to fix this diagnostic?
 
