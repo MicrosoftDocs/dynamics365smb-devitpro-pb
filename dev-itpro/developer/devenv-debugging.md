@@ -36,7 +36,7 @@ To control table data synchronization between each debugging session, see [Retai
   
 The basic concept in debugging is the *breakpoint*, which is a mark that you set on a statement. When the program flow reaches the breakpoint, the debugger stops execution until you instruct it to continue. Without any breakpoints, the code runs without interruption when the debugger is active. You can set a breakpoint by using the **Debug Menu** in Visual Studio Code. For more information, see [Debugging Shortcuts](#debugging-shortcuts). 
  
-Set breakpoints on the external code that isn't part of your original project. You can step into the base application code by using the **Go to Definition** feature, and set breakpoints on the referenced code, which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do as follows: 
+Set breakpoints on the external code that isn't part of your original project. You can step into the base application code by using the **Go to Definition** feature and set breakpoints on the referenced code, which is generally a `.dal` file. To set a breakpoint on the external code or base application code, you do as follows: 
 
 - Use **Go to Definition**, which opens the "external file", and then a breakpoint can be set.  
 - By using the debugger, you can step into the code, and then set a breakpoint.
@@ -49,12 +49,12 @@ For more information about **Go to Definition**, see [AL Code Navigation](devenv
 
 ## Break on errors
 
-Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors.
+Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, it stops execution on both errors that are handled in code and unhandled errors.
 
-The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
+The default value of the `breakOnError` property is **true**, which means the debugger stops the execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
-> If the debugging session takes longer, you can refresh the session by pressing the **Ctrl+Shift+P** keys, and select **Reload Window**.
+> If the debugging session takes longer, you can refresh the session by pressing the **Ctrl+Shift+P** keys and selecting **Reload Window**.
 
 ## Break on record changes
 
@@ -71,7 +71,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
+Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
 
 ## Attach and Debug Next
 
@@ -84,7 +84,7 @@ If you don't want to publish and invoke functionality to debug it, you can inste
 |**F5**           |Start debugging|
 |**Ctrl+F5**      |Start without debugging|
 |**Shift+F5**     |Stop debugging|
-|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint won't be hit, or if it's hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed but unpublished code may trigger false existing breakpoints. For example, if you modify the method "foo", add two lines, put a breakpoint on the second line, and then start debugging without publishing, that breakpoint won't be hit, or if it's hit isn't your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
 |**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
 |**F10**          |Step over|
 |**F11**          |Step into|
@@ -131,7 +131,7 @@ The database insights also let you peek into the most recent and the latest long
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]  
-> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## NonDebuggable attribute
 
