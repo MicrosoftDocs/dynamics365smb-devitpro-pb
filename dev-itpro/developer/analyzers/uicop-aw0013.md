@@ -23,9 +23,9 @@ From Business Central 2022 Wave 2, promoted actions defined in a hidden group ar
 
 ## Remarks
 
-For Business Central 2022 Wave 1 (version 20) and earlier, promoted actions defined in a hidden group were rendered on the promoted side of the action bar, but hidden in non-promoted side of the action bar.
+For Business Central 2022 release wave 1 (version 20) and earlier, promoted actions defined in a hidden group were rendered on the promoted side of the action bar, but hidden in non-promoted side of the action bar.
 
-From Business Central 2022 Wave 2 (version 21), promoted actions defined in a hidden group are rendered on the promoted side of the action bar only if the 'Modern Action Bar' feature is disabled for the environment.
+From Business Central 2022 release wave 2 (version 21), promoted actions defined in a hidden group are rendered on the promoted side of the action bar only if the 'Modern Action Bar' feature is disabled for the environment.
 
 ## Code example triggering the rule
 
@@ -61,7 +61,7 @@ Promoted actions are currently rendered on the promoted section of the command b
 `MyPromotedAction` doesn't have the visible property set, so it's visible by default and the promoted action will be rendered in the promoted section of the command bar. However, since `MyGroup` is not visible, `MyPromotedAction` will also not be visible in the default section of the command bar.
 
 > [!NOTE]  
-> For versions of Business Central before 2022 Wave 2 (version 21), a similar behavior could be achieved by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`. From version 21, the platform handles the duplicity of promoted actions.
+> For versions of Business Central before 2022 release wave 2 (version 21), a similar behavior could be achieved by using the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property on `MyPromotedAction`. From version 21, the platform handles the duplicity of promoted actions.
 
 ## How to fix this diagnostic?
 
@@ -128,7 +128,7 @@ There's no impact on the promoted section of the command bar as promoted actions
 Use this approach if you want to keep the current behaviour.
 
 > [!IMPORTANT]
-> The behavior of the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property changes with Business Central 2022 Wave 2 since the platform handles the duplicity of promoted actions.
+> The behavior of the [PromotedOnly](..\properties\devenv-promotedonly-property.md) property changes with Business Central 2022 release wave 2 since the platform handles the duplicity of promoted actions.
 
 ### 3. Demote the actions in the group
 
