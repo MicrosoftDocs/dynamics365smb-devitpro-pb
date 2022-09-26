@@ -47,7 +47,7 @@ You can only use the Time method to retrieve the time from the operating system.
 
 ```al
 var
-    Text000: Label 'The current system time is %1.";
+    Text000: Label 'The current system time is %1.';
 begin
     Message(Text000, Time);  
 end;
