@@ -606,7 +606,9 @@
 ###### [Sample List Page](developer/devenv-simple-list-page-example.md)
 ###### [Repeater Controls](developer/devenv-repeater-controls.md)
 ###### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
-###### [Views](developer/devenv-views.md)
+###### Views
+####### [Designing Views](developer/devenv-views.md)  
+####### [Migrating from Legacy to Modern Views](developer/devenv-views-legacy.md)  
 ###### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 ###### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
 ###### [Adding Teaching Tips to List Pages](administration/onboarding-teaching-tips-tours.md)
