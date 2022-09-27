@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 06/21/2022
+ms.date: 08/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[Codeunit](codeunit/codeunit-data-type.md)|Is a container for AL code that you can use from other application objects.|
 |[CompanyProperty](companyproperty/companyproperty-data-type.md)|Provides language support for company properties.|
 |[Database](database/database-data-type.md)|Provides access to common database functionality.|
+|[DataTransfer](datatransfer/datatransfer-data-type.md)|A structure building bulk transfer of data between tables.|
 |[Date](date/date-data-type.md)|Denotes a date ranging from January 1, 1753 to December 31, 9999.|
 |[DateFormula](dateformula/dateformula-data-type.md)|Represents a date formula that has the same capabilities as an ordinary input string for the CALCDATE Method (Date). The DateFormula data type is used to provide multilanguage capabilities to the CALCDATE Method (Date).|
 |[DateTime](datetime/datetime-data-type.md)|Denotes a date and time ranging from January 1, 1753, 00:00:00.000 to December 31, 9999, 23:59:59.999. An undefined or blank DateTime is specified by 0DT.|

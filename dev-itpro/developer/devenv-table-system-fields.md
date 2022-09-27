@@ -54,6 +54,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
     myRec.OPEN(DATABASE::MyTable);
     SystemIdFieldNo := myRec.SystemIdNo();
     ```
+
 - The [TableRelation](properties/devenv-tablerelation-property.md) lets you use the **SystemId** field to set up table relationships:
 
     ```AL
@@ -162,35 +163,49 @@ procedure GetUserNameFromSecurityId(userSecurityID: Guid): Code[50]
 
 ## <a name="timestamp"></a> Timestamp field
 
-The **timestamp** field contains row version numbers for records, as maintained in SQL Server. The **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. However, you can't write to the **timestamp** field.  
-  
+The **timestamp** field contains [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) numbers for records, as maintained in SQL Server. In SQL server, **timestamp** is a synonym for the **rowversion** data type. The value of the **timestamp** field is an automatically generated, unique binary number. The **timestamp** is a mechanism  for version-stamping table rows.
+
 A typical use of the **timestamp** field is for synchronizing data changes in tables. It lets you identify records that have changed since the last synchronization. For example, you can read all the records in a table, then store the highest **timestamp** value. Later, you can query and retrieve records that have a higher **timestamp** value than the stored value.  
-  
-#### Expose the timestamp field  
- 
+
+#### In AL
+
+In AL code, the **timestamp** is accessible through the `SystemRowVersion` field. However, you can't write to the field.
+
+The following methods are also available on the [Database](methods-auto/database/database-data-type.md) data type:
+
+|Method|Description|
+|------|-----------|
+|[LastUsedRowVersion](methods-auto/recordref/database-lastusedrowversion-method.md)|Gets the last used rowversion from the database. This method does the same as the [@@DBTS (Transact-SQL) function](/sql/t-sql/functions/dbts-transact-sql).|
+|[MinimumActiveRowVersion](methods-auto/recordref/database-minimumactiverowversion-method.md)|Gets the lowest active rowversion in the database. This method returns the lowest rowversion of any uncommitted rows. Rows that have a lower timestamp than this returned value are guaranteed to be committed. If there are no active transactions, the value is equal to LastUsedRowVersion + 1. This method does the same as the [MIN_ACTIVE_ROWVERSION (Transact-SQL) function](/sql/t-sql/functions/min-active-rowversion-transact-sql).|
+
+#### Expose the timestamp field in Business Central version 20 and earlier
+
+In versions of Business Central earlier than version 21, the **timestamp** field is hidden. But, you can expose it by using [SqlTimestamp Property](properties/devenv-sqltimestamp-property.md). You're then able to write code against it, add filters, and so on, similar to any other field in a table. 
+
 1. Add a field that has the data type `BigInteger`.
   
      Specify a name for the field, such as `Record Time Stamp`. You can specify any valid name for field, but you can't use `timestamp` because it's a reserved name.  
   
-2.  Set the `SqlTimestamp` property to `true`.
+2. Set the `SqlTimestamp` property to `true`.
 
     For example:
 
-    ```
+    ```al
     field(3; "Record Time Stamp"; BigInteger)
     {
         SqlTimestamp = true;
     }
+    ```
 
 Alternatively, you can use a [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variable to access the timestamp value of a record, as follows:
 
-1.    Create a [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) variable that references the record in a table for which you want to retrieve its timestamp.
+1. Create a [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) variable that references the record in a table for which you want to retrieve its timestamp.
 
-2.    Use the [Field Method](methods-auto/recordref/recordref-field-method.md) on the **RecordRef** variable to get the **FieldRef** for the field that has the number 0. This field contains the timestamp value.
+2. Use the [Field Method](methods-auto/recordref/recordref-field-method.md) on the **RecordRef** variable to get the **FieldRef** for the field that has the number 0. This field contains the timestamp value.
 
 The following example shows how to retrieve the timestamp value for the first record in the `Customer` table. **RecordRef** and **FieldRef** are [RecordRef Data Type](methods-auto/recordref/recordref-data-type.md) and [FieldRef Data Type](methods-auto/fieldref/fieldref-data-type.md) variables, respectively.
 
-```
+```al
 RecordRef.Open(DATABASE::Customer);
 RecordRef.FindFirst();
 FieldRef := RecordRef.Field(0);
