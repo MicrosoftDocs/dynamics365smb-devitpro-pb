@@ -3,7 +3,7 @@ title: "Record.SetView(Text) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 08/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,10 @@ An instance of the [Record](record-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView property on pages.
+A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView Property on pages.
+          
+
+
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -41,7 +44,7 @@ If the SetView method is executed with an empty string, all the filters are remo
 
 If no table is selected, the SetView method fails.
 
-This method works the same as the [SetView Method \(RecordRef\)](../record/recordref-setview-method.md).           
+This method works the same as the [SetView Method \(RecordRef\)](../recordref/recordref-setview-method.md).           
 
 
 ## See Also

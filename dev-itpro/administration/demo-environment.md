@@ -1,16 +1,15 @@
 ---
-title: Preparing demonstrations of Business Central
+title: Prepare demonstrations of Business Central
 description: Get an overview of your options for setting up demos of Dynamics 365 Business Central online that will help you turn your prospects into customers.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
+ms.search.form: 2500, 2502, 20350
 ms.author: edupont
-ms.date: 05/25/2022
+ms.date: 09/22/2022
 ---
-# Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Prepare Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
 As a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] reselling partner, you might want to have an environment that you can show prospects as part of pre-sales demonstrations. Depending on your requirements, you have several different options that are described in this article.  
 
@@ -33,7 +32,7 @@ For example, if you sign up for a [trial](https://trials.dynamics.com/Dynamics36
 
 ### Customize the demo environment
 
-Starting in 2022, you can add the **Contoso Coffee Demo Data** app to your demo company to showcase advanced supply chain functionality. For more information, see [Scenarios for Contoso Coffeee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
+Since 2022 release wave 1, you can add the **Contoso Coffee Demo Data** app to your demo company to showcase advanced supply chain functionality. Learn more [here](#use-contoso-coffee-demo-data-for-advanced-manufacturing). 2022 release wave 2 adds connectivity apps that you can learn more about [here](#connectivity-apps).  
 
 [!INCLUDE [admin-m365admin](../developer/includes/admin-m365admin.md)]
 
@@ -70,9 +69,15 @@ Alternatively, you can create a free trial with a Microsoft 365 demo account fro
 
 [!INCLUDE [admin-viral-trial-expiry](../developer/includes/admin-viral-trial-expiry.md)]
 
+## Connectivity apps
+
+[!INCLUDE [admin-connectapps-demo](../includes/admin-connectapps-demo.md)]
+
+[!INCLUDE [admin-connectapps-isv](../includes/admin-connectapps-isv.md)]
+
 ## Use Contoso Coffee demo data for advanced manufacturing
 
-The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. For more information, see [Introduction to Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
+The Contoso Coffee Demo Data app for [!INCLUDE [prod_short](../includes/prod_short.md)] includes demo data that you can add to a trial company or a sandbox environment to showcase or learn advanced manufacturing capabilities. For more information, see [Introduction to Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) and [Scenarios for Contoso Coffee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro) in the business functionality content.  
 
 ## Add Dynamics 365 Sales Professional
 
