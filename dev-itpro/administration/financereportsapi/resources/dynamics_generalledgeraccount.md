@@ -31,7 +31,7 @@ Represents a general ledger account in [!INCLUDE[prod_short](../../../includes/p
 
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
-|[generalLedgerBudgets](dynamics_generalledgerbudget.md)|generalLedgerBudgets |Gets the generalledgerbudgets of the generalLedgerAccount.|
+|[generalLedgerBudgets](dynamics_generalledgerbudgets.md)|generalLedgerBudgets |Gets the generalledgerbudgets of the generalLedgerAccount.|
 |[businessUnit](dynamics_businessunit.md)|businessUnit |Gets the businessunit of the generalLedgerAccount.|
 
 ## Properties
