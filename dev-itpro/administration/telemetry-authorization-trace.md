@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 09/12/2022
 ms.author: jswymer
 ---
 
@@ -31,7 +31,7 @@ The next stage occurs after a successful authorization attempt, when trying to o
 
 ## Authorization Succeeded (Pre Open Company)
 
-Occurs when a user has been successfully authorized.
+Occurs when a user has been successfully authorized. This data is not emitted for on-premises environments.
 
 ### General dimensions
 
@@ -75,7 +75,7 @@ Occurs when a user has been successfully authorized.
 
 ## Authorization Failed (Pre Open Company)
 
-Occurs when a user sign-in has failed authorization.
+Occurs when a user sign-in has failed authorization. This data is not emitted for on-premises environments.
 
 ### General dimensions
 
@@ -143,14 +143,14 @@ In Azure Active Directory (Azure AD), you can create security that include users
 
 ## Authorization Succeeded (Open Company)
 
-Occurs when the company has opened successfully.
+Occurs when the company has opened successfully. This data is emitted both for online and on-premises environments.
 
 ### General dimensions
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------------|
 |message|Version 16.1 and later:<br />**Authorization Succeeded (Open Company)**<br /><br />Before version 16.1:<br />**Authorization steps in the open company trigger succeeded.**|
-|operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Name|**Authorization Succeeded (Open Company)**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future  versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
 |severityLevel|**1**|
 
 <!--
@@ -185,7 +185,7 @@ Occurs when the company has opened successfully.
 
 ## Authorization Failed (Open Company)
 
-Occurs when a company has failed to open.  
+Occurs when a company has failed to open. This data is emitted both for online and on-premises environments. 
 
 ### General dimensions
 

@@ -1,30 +1,42 @@
 ---
-title: Switch on Manual Instant Flows
-description: Learn how to give your customers access to flows that they can run from inside Business Central online.
+title: Manually Switch on Instant Flows
+description: Learn how users can run instant flows from inside Business Central online due to the integration with Power Automate.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 05/12/2022
+ms.date: 09/04/2022
 ms.author: edupont
 ---
 
-# Switch on Manual Instant Flows
+# Manually Switch on Instant Flows
 
-As an admin, you can set up [!INCLUDE[prod_short](../includes/prod_short.md)] online so that users can create and run Power Automate flows from inside [!INCLUDE [prod_short](../includes/prod_short.md)].  
+Unlike the *automated workflows* that have automatic triggers, you trigger the *instant flows* manually on the relevant page inside [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 > [!NOTE]  
-> The relevant users must have a valid account with [!INCLUDE[prod_short](../includes/prod_short.md)] and with Power Automate.  
+> To use Power Automate with [!INCLUDE[prod_short](../includes/prod_short.md)], you must have a valid account.  
 
-## Switch on Power Automate flows to be run inside Business Central
+Once you've connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Power Automate, you can see all instant flows that you or other users in the organization (if they have shared their flows with you) have created as action buttons when you choose the **Automate** action on the relevant pages. You can run the flows without leaving [!INCLUDE [prod_short](../includes/prod_short.md)]. This way, you remain within your original work process and aren't interrupted by having to switch the context.  
 
-From update 20.1 (May 2022), an admin can [switch on a feature](../administration/feature-management.md) to make it possible to run a Power Automate flow from most pages. To connect to Power Automate, Azure Active Directory services must access your [!INCLUDE [prod_short](../includes/prod_short.md)]. Once the admin has connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Power Automate, users will see any flows that the organization has added when they choose the **Automate** action in the relevant pages. They can run the flows without leaving [!INCLUDE [prod_short](../includes/prod_short.md)]. This way, the users remain within their original work process and are not interrupted by having to switch context.  
+> [!NOTE]
+> You can try out the new feature for yourself before you switch it on for everyone in your organization. Learn more from the tip in the [How to enable an optional feature](../administration/feature-management.md#how-to-enable-an-optional-feature) section. 
 
-As the admin, you can try out the new feature for yourself before you switch it on for everyone in your organization. For more information, see the tip in the [How to enable an optional feature](../administration/feature-management.md#how-to-enable-an-optional-feature) section. Then, when you switch to the new browser tab, open a page such as the **Customers** list, and then choose the **Automate** action. You'll be prompted to authorize Power Automate for access to your Azure Active Directory. The **Azure Active Directory Service Permissions** page runs automatically, and you must choose the *Authorize Azure Services* hyperlink once you've verified that the Azure AD service that has requested access is `https://service.flow.microsoft.com/`. Then, you can run any of the pre-configured workflows, or start adding your own. For more information, see [Use Business Central in Power Automate Flows](/dynamics365/business-central/across-how-use-financials-data-source-flow).<!--check for renamed article-->  
+On some pages, the **Automate** action is hidden in *more options* **...** icon on navigation pane. To run the manual flow, choose the **Automate** action and you'll see the instant flow you created in the menu as an action button below the *Power Automate* menu item. Then choose the relevant flow link to trigger the workflow. The connection to Power Automate is already set up for you.
+To complete an instant flow, you must perform the following tasks:
 
-Once the admin has set up the connection as we just described, the relevant users can start using Power Automate flows.  
+- Pass context or parameters to Power Automate​  
+  - Environment name, such as *PRODUCTION​*  
+  - Company, such as *Contoso​*  
+  - Table ID, such as the table underlying the current page​  
+  - System ID, such as a specific record ID​  
+  - Page ID, meaning the page that the flow was triggered from  
+  - WebClientURL to open a specific page object
+- Specify the type of input to add from the options given by the flow.
+
+Most flows require you to fill in a field or two before you choose the **Run flow** action.
 
 ## See also
 
-[Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)  
+[Manage Power Automate Flows](manage-power-automate-flows.md)  
+[Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)   
 [Use Business Central in an Automated Workflow](/dynamics365/business-central/across-how-use-financials-data-source-flow)<!--keep an eye out for redirects-->  

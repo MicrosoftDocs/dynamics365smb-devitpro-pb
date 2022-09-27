@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL0553"
-description: "You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization."
+description: "You cannot add actions of type '{0}' in the action area '{1}' from a page customization."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-You can only specify Move and Modify actions in the '{0}' area of the actions section of a page customization.
+You cannot add actions of type '{0}' in the action area '{1}' from a page customization. You can only add actions of type '{2}'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

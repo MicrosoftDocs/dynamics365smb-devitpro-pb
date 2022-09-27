@@ -3,7 +3,7 @@ title: "ApplicationArea Property"
 description: "Sets the application areas that apply to the control."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/22/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,6 +25,7 @@ Sets the application areas that apply to the control. Standard values are All, B
 -   Page System Part
 -   Page Chart Part
 -   Page Action
+-   Page Custom Action
 -   Page User Control
 -   Page
 -   Report
@@ -32,7 +33,8 @@ Sets the application areas that apply to the control. Standard values are All, B
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Property Values  
+## Property Values
+
 A text string that contains a comma-separated list of application area tags.  
   
 An application area tag must have the format *name*, where *name* is the application area. The *name* can be any combination of letters (Aa-Zz) and numbers (0-9) without spaces. For example, to specify the **Basic** and **Fixed Assets** application areas, set the property to **Basic, FixedAssets**.  
@@ -40,11 +42,20 @@ An application area tag must have the format *name*, where *name* is the applica
 If the control applies to all application areas, you can set the property to **All**. This means that the control will always appear in the user interface.  
  
 ## Syntax
+
 ```AL
 ApplicationArea = Basic, Suite;
 ```
 
-## Remarks  
+## Remarks
+
+[!INCLUDE [2022_releasewave2](../../includes/2022_releasewave2.md)]
+
+With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the `ApplicationArea` property set on fields defaults to the page value. The property inheritance means that page controls without the `ApplicationArea` property explicitly set, inherit the `ApplicationArea` *defined on the parent page* or *report if it's a request page*. The `ApplicationArea` property can be used without setting the `UsageCategory` property on pages to provide a default fallback for controls, without forcing search visibility.
+
+> [!NOTE]  
+> The `ApplicationArea` property inheritance has *no impact on page or report extensions*. On these extensions values must still be set explicitly.
+
 Application areas represent a feature in the system that offers developers, administrators, and users the ability to define differentiated user experiences. They are mapped to controls to show or hide them on page objects to enable more or fewer business scenarios.
 
 The **ApplicationArea** property is used together with the [ApplicationArea method](../methods-auto/session/session-applicationarea-method.md) to hide user interface elements.  
