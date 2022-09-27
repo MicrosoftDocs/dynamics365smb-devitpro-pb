@@ -175,8 +175,8 @@ The following methods are also available on the [Database](methods-auto/database
 
 |Method|Description|
 |------|-----------|
-|[LastUsedRowVersion](methods-auto/recordref/database-lastusedrowversion-method.md)|Gets the last used rowversion from the database. This method does the same as the [@@DBTS (Transact-SQL) function](/sql/t-sql/functions/dbts-transact-sql).|
-|[MinimumActiveRowVersion](methods-auto/recordref/database-minimumactiverowversion-method.md)|Gets the lowest active rowversion in the database. This method returns the lowest rowversion of any uncommitted rows. Rows that have a lower timestamp than this returned value are guaranteed to be committed. If there are no active transactions, the value is equal to LastUsedRowVersion + 1. This method does the same as the [MIN_ACTIVE_ROWVERSION (Transact-SQL) function](/sql/t-sql/functions/min-active-rowversion-transact-sql).|
+|[LastUsedRowVersion](methods-auto/database/database-lastusedrowversion-method.md)|Gets the last used rowversion from the database. This method does the same as the [@@DBTS (Transact-SQL) function](/sql/t-sql/functions/dbts-transact-sql).|
+|[MinimumActiveRowVersion](methods-auto/database/database-minimumactiverowversion-method.md)|Gets the lowest active rowversion in the database. This method returns the lowest rowversion of any uncommitted rows. Rows that have a lower timestamp than this returned value are guaranteed to be committed. If there are no active transactions, the value is equal to LastUsedRowVersion + 1. This method does the same as the [MIN_ACTIVE_ROWVERSION (Transact-SQL) function](/sql/t-sql/functions/min-active-rowversion-transact-sql).|
 
 #### Expose the timestamp field in Business Central version 20 and earlier
 
