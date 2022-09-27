@@ -2,7 +2,7 @@
 title: "Table Keys"
 description: Learn about table keys in Business Central
 ms.custom: na
-ms.date: 06/02/2022
+ms.date: 07/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -323,6 +323,13 @@ Don't add additional clustered keys. // still true
 Don't add keys that are fields of the base table. // still true
 
 -->
+
+## Identifying keys in code
+
+[!INCLUDE[2022_releasewave2](../includes/2022_releasewave2.md)]
+
+When you invoke IntelliSense for table fields, the primary key members are marked with a `(PKx)` in the IntelliSense list, where `x` is a sequential number, which indicates the order of the field in the key. This allows you to identify the table fields that make up the primary key and the sequency of these fields in the key.
+
 ## See Also
 [Key Properties](properties/devenv-key-properties.md)
 [Tables Overview](devenv-tables-overview.md)  

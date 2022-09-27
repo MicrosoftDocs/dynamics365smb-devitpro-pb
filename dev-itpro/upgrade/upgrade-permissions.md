@@ -14,7 +14,7 @@ author: jswymer
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1 (v18) introduced a new model for permissions. In previous versions, permission sets and permissions are defined only as data, which means they're stored in the tables of the application and tenant databases. Permission sets and permissions can now be defined in AL code. They're created by using the `permissionset` and `permissionsetextension` objects in AL code, then packaged in extensions. See [Entitlements and Permissions](../developer/devenv-entitlements-and-permissionsets-overview.md) to learn more.
 
-This change has implications on upgrade from versions earlier than version 18. Or, if you're upgrading a version 18 that still uses the legacy databased permission sets, and you want upgrade permission sets that are based on Microsoft permission sets to the latest changes. These implications are discussed in this article.
+This change has implications on upgrade from versions earlier than version 18. Or, if you're upgrading a version 18 that still uses the legacy databased permission sets, and you upgrade permission sets that are based on Microsoft permission sets to the latest changes. These implications are discussed in this article.
 
 ## Overview
 
