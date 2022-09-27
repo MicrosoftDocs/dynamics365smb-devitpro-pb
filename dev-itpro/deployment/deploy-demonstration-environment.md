@@ -48,7 +48,7 @@ This scenario uses the default setting of [!INCLUDE[prodsetup](../developer/incl
 
     -   Service instance: [!INCLUDE[serverinstance](../developer/includes/serverinstance.md)]  
 
-    -   Client service port: 7046  
+    -   Client service port: 7085 (7046 in version 20 and earlier)  
 
     -   SOAP web services port: 7047  
 

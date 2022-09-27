@@ -319,6 +319,46 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
+## Finance Reports API
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
+#### [Get accounting period](administration/financereportsapi/api/dynamics_accountingperiod_get.md)
+### [Business unit](administration/financereportsapi/resources/dynamics_businessunit.md)
+#### [Get business unit](administration/financereportsapi/api/dynamics_businessunit_get.md)
+### [Company](administration/financereportsapi/resources/dynamics_company.md)
+#### [Get company](administration/financereportsapi/api/dynamics_company_get.md)
+### [Customer](administration/financereportsapi/resources/dynamics_customer.md)
+#### [Get customer](administration/financereportsapi/api/dynamics_customer_get.md)
+### [Customer ledger entry](administration/financereportsapi/resources/dynamics_customerledgerentry.md)
+#### [Get customer ledger entry](administration/financereportsapi/api/dynamics_customerledgerentry_get.md)
+### [Detailed customer ledger entry](administration/financereportsapi/resources/dynamics_detailedcustomerledgerentry.md)
+#### [Get detailed customer ledger entry](administration/financereportsapi/api/dynamics_detailedcustomerledgerentry_get.md)
+### [Detailed vendor ledger entry](administration/financereportsapi/resources/dynamics_detailedvendorledgerentry.md)
+#### [Get detailed vendor ledger entry](administration/financereportsapi/api/dynamics_detailedvendorledgerentry_get.md)
+### [Dimension set entry](administration/financereportsapi/resources/dynamics_dimensionsetentry.md)
+#### [Get dimension set entry](administration/financereportsapi/api/dynamics_dimensionsetentry_get.md)
+### [Dimension value](administration/financereportsapi/resources/dynamics_dimensionvalue.md)
+#### [Get dimension value](administration/financereportsapi/api/dynamics_dimensionvalue_get.md)
+### [General budget entry](administration/financereportsapi/resources/dynamics_generalbudgetentry.md)
+#### [Get general budget entry](administration/financereportsapi/api/dynamics_generalbudgetentry_get.md)
+### [General ledger account](administration/financereportsapi/resources/dynamics_generalledgeraccount.md)
+#### [Get general ledger account](administration/financereportsapi/api/dynamics_generalledgeraccount_get.md)
+### [General ledger budgets](administration/financereportsapi/resources/dynamics_generalledgerbudgets.md)
+#### [Get general ledger budgets](administration/financereportsapi/api/dynamics_generalledgerbudgets_get.md)
+### [General ledger entry](administration/financereportsapi/resources/dynamics_generalledgerentry.md)
+#### [Get general ledger entry](administration/financereportsapi/api/dynamics_generalledgerentry_get.md)
+### [Subscriptions](administration/financereportsapi/resources/dynamics_subscriptions.md)
+#### [Get subscriptions](administration/financereportsapi/api/dynamics_subscriptions_get.md)
+#### [Delete subscriptions](administration/financereportsapi/api/dynamics_subscriptions_delete.md)
+#### [Create subscriptions](administration/financereportsapi/api/dynamics_subscriptions_create.md)
+#### [Update subscriptions](administration/financereportsapi/api/dynamics_subscriptions_update.md)
+### [Vendor](administration/financereportsapi/resources/dynamics_vendor.md)
+#### [Get vendor](administration/financereportsapi/api/dynamics_vendor_get.md)
+### [Vendor ledger entry](administration/financereportsapi/resources/dynamics_vendorledgerentry.md)
+#### [Get vendor ledger entry](administration/financereportsapi/api/dynamics_vendorledgerentry_get.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
+
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
@@ -606,7 +646,9 @@
 ###### [Sample List Page](developer/devenv-simple-list-page-example.md)
 ###### [Repeater Controls](developer/devenv-repeater-controls.md)
 ###### [Displaying Data as Tiles](developer/devenv-lists-as-tiles.md)
-###### [Views](developer/devenv-views.md)
+###### Views
+####### [Designing Views](developer/devenv-views.md)  
+####### [Migrating from Legacy to Modern Views](developer/devenv-views-legacy.md)  
 ###### [Adding Filter Tokens](developer/devenv-adding-filter-tokens.md)
 ###### [Designing Indented Lists](developer/devenv-indented-hierarchy-lists.md)
 ###### [Adding Teaching Tips to List Pages](administration/onboarding-teaching-tips-tours.md)
@@ -1096,7 +1138,7 @@
 ## Connect Apps
 ### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
-### [Using Filtering](developer/devenv-connect-apps-filtering.md)
+### [Using Filters with API calls](developer/devenv-connect-apps-filtering.md)
 ### [Developing a Custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
@@ -1104,6 +1146,21 @@
 ### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
+### Dataverse API
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+#### [Business Central Dataverse API](api-dataverse/dynamics-dataverse-api.md)  
+#### [Company](api-dataverse/resources/dynamics_company.md)
+##### [Get company](api-dataverse/api/dynamics_company_get.md)
+#### [Dataverse entity change](api-dataverse/resources/dynamics_dataverseentitychange.md)
+##### [Get dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_get.md)
+##### [Create dataverse entity change](api-dataverse/api/dynamics_dataverseentitychange_create.md)
+#### [Subscriptions](api-dataverse/resources/dynamics_subscriptions.md)
+##### [Get subscriptions](api-dataverse/api/dynamics_subscriptions_get.md)
+##### [Delete subscriptions](api-dataverse/api/dynamics_subscriptions_delete.md)
+##### [Create subscriptions](api-dataverse/api/dynamics_subscriptions_create.md)
+##### [Update subscriptions](api-dataverse/api/dynamics_subscriptions_update.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
@@ -1172,6 +1229,7 @@
 ### [Deployment Overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2022 Release Wave 2](deployment/system-requirements-business-central-v21.md)
 #### [2022 Release Wave 1](deployment/system-requirements-business-central-v20.md)
 #### [2021 Release Wave 2](deployment/system-requirements-business-central-v19.md)
 #### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
@@ -1209,6 +1267,7 @@
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
 #### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
 #### [Configure Business Central Web Server to Accept Host Names](administration/configure-web-server-to-accept-host-names-for-tenants.md)
+#### [Configuring Delegation](deployment/configure-delegation-web-server.md)
 ### Multitenant Deployment
 #### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
 #### [Setup Guide](administration/multitenant-setup-guide.md)
@@ -1219,6 +1278,7 @@
 #### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
 #### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
 #### [Creating Application and Tenant Databases](deployment/devenv-create-databases.md)
+#### [Configuring and Troubleshooting Connections](administration/troubleshooting-sql-server-connection-problems.md)
 #### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
 #### [Reducing Database Size](administration/database-reduce-data.md)
 ### Business Central Mobile App
@@ -1231,6 +1291,7 @@
 ## Administration
 ### [Administration of Business Central On-Premises](administration/administration.md)
 ### [Server Administration Tool](administration/administration-tool.md)
+### [Administration Shell](administration/administration-shell.md)
 ### Windows PowerShell Cmdlets
 #### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
 #### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
@@ -1286,6 +1347,29 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
+### Business Central 2022 Release Wave 2
+#### [Overview](upgrade/upgrade-overview-v21.md)
+#### [Before You Upgrade](upgrade/upgrade-considerations-v21.md)
+#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
+#### [Upgrading Reports](upgrade/upgrade-reports.md)
+#### Application and Data
+##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v21.md)
+##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v21.md)
+##### [From Version 15 and Later](upgrade/upgrade-unmodified-application-to-v21.md)
+##### Related Articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Data Migration Toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### Technical Upgrade
+##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
+##### [From Version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
+##### [From Version 20](upgrade/upgrade-technical-upgrade-v21.md)
+#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v21.md)
 ### Business Central 2022 Release Wave 1
 #### [Overview](upgrade/upgrade-overview-v20.md)
 #### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
@@ -1345,68 +1429,68 @@
 ##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
 ##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
 #### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v18.md)
-<!-- upgrade previous versions-->
-### Business Central 2020 Release Wave 2
-#### [Overview](upgrade/upgrade-overview-v17.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### Application and Data
-##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v17.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v17.md)
-##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
-##### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating Tables and Fields Between Extensions
-###### [Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-#### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
-##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
-##### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
-### Business Central 2020 Release Wave 1
-#### [Upgrade Overview](upgrade/upgrade-overview-v16.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### Application and Data
+### Earlier Versions
+#### Business Central 2020 Release Wave 2
+##### [Overview](upgrade/upgrade-overview-v17.md)
+##### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### Application and Data
+###### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v17.md)
+###### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v17.md)
+###### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
+###### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+##### Technical Upgrade
+###### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
+###### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
+###### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
+##### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
+#### Business Central 2020 Release Wave 1
+##### [Upgrade Overview](upgrade/upgrade-overview-v16.md)
+##### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### Application and Data
 <!--##### [Overiew](upgrade/upgrade-application-code-upgrade-v16.md)-->
 <!--##### [Unmodified Application](upgrade/upgrade-unmodified-application.md)-->
-##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v16.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app.md)
-##### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v16.md)
-##### [Convert to AL](upgrade/devenv-code-conversion.md)
-##### Migrating Tables and Fields Between Extensions
-###### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
-###### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-###### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v16.md)
+###### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app.md)
+###### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v16.md)
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating Tables and Fields Between Extensions
+####### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 <!--#### Data Upgrade
 ##### [Data Upgrade](upgrade/upgrade-data.md)-->
-##### [DestinationAppsForMigration](upgrade/upgrade-destinationappsformigration.md)
-#### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v16.md)
-##### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v16.md)
-### Business Central 2019 Release Wave 2
-#### [Upgrade Overview](upgrade/upgrade-overview-v15.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
-#### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v15.md)
-### Business Central Spring 2019
-#### [Upgrade Overview](upgrade/upgrading-to-business-central-on-premises.md)
-#### [Before You Upgrade](upgrade/Upgrade-Considerations.md)
-#### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
-#### Technical Upgrade
-##### [Technical Upgrade](upgrade/Converting-a-Database.md)
-##### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
-#### Application and Data Upgrade
-##### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
-#### Upgrading the Data: Single-Tenant Mode
-##### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
-##### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
-#### Upgrading the Data: Multitenant Mode
-##### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
-##### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update.md)
+###### [DestinationAppsForMigration](upgrade/upgrade-destinationappsformigration.md)
+##### Technical Upgrade
+###### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v16.md)
+###### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
+##### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v16.md)
+#### Business Central 2019 Release Wave 2
+##### [Upgrade Overview](upgrade/upgrade-overview-v15.md)
+##### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
+##### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
+##### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v15.md)
+#### Business Central Spring 2019
+##### [Upgrade Overview](upgrade/upgrading-to-business-central-on-premises.md)
+##### [Before You Upgrade](upgrade/Upgrade-Considerations.md)
+##### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
+##### Technical Upgrade
+###### [Technical Upgrade](upgrade/Converting-a-Database.md)
+###### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
+##### Application and Data Upgrade
+###### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
+##### Upgrading the Data: Single-Tenant Mode
+###### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
+###### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
+##### Upgrading the Data: Multitenant Mode
+###### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
+###### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
+##### [Installing a Minor Update](upgrade/upgrading-cumulative-update.md)
 ### [Some Known Issues](upgrade/known-issues.md)
 ## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 

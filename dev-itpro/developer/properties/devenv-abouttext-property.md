@@ -3,7 +3,7 @@ title: "AboutText Property"
 description: "Sets the body of text that appears in a teaching tip in the UI."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,11 +14,12 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AboutText Property
-> **Version**: _Available or changed with runtime version 7.0._
+> **Version**: _Available or changed with runtime version 10.0._
 
 Sets the body of text that appears in a teaching tip in the UI.
 
 ## Applies to
+-   Page Custom Action
 -   Page
 -   Page Action
 -   Page Action Group

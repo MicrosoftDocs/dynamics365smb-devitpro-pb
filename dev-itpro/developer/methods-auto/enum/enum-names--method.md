@@ -3,7 +3,7 @@ title: "Enum.Names() Method"
 description: "Gets the value names"
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
