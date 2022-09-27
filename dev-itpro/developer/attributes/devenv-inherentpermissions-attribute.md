@@ -53,7 +53,7 @@ Specifies the ID of the object that permissions are assigned to. You can specify
 
 *Permissions*  
 &emsp;Type: [Text](../methods-auto/text/text-data-type.md)  
-Specifies the permission values. You can specify the permissions using the syntax '<permission value>'.  
+Specifies the permission values. You can specify the permissions using the syntax `<permission value>`.  
 
 *[Optional] InherentPermissionsScope*  
 &emsp;Type: [InherentPermissionsScope](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md)  
