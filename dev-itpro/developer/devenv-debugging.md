@@ -102,7 +102,7 @@ Traditionally, debugging AL has been about examining behavior of the language ru
 
 ### View database statistics
 
-In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prod_short](includes/prod_short.md)] database, the total number of SQL statements executed, the total number of rows read, and the insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
+In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** node to get insights such as the current network latency between the [!INCLUDE[server](includes/server.md)] and the [!INCLUDE[prod_short](includes/prod_short.md)] database, the total number of SQL statements executed, the total number of rows read, and locks held, as well as insights into the most recent SQL statements executed by the server. The following insights are part of the database statistics:
 
 |Insight | Description  |
 |-------|-------|
@@ -112,6 +112,10 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 
 > [!TIP]
 > You can also get database insights from the AL runtime by using the [SqlStatementsExecuted()](methods-auto/sessioninformation/sessioninformation-sqlstatementsexecuted-method.md) and [SqlRowsRead()](methods-auto/sessioninformation/sessioninformation-sqlrowsread-method.md) methods.
+
+### View locks held
+
+The Locks part of the database statistics shows an overview of the SQL locks held by the debugged session. The insight can be used to understand the locks acquired while stepping through AL code. The access mode of the lock is also provided, which allows advanced developers to establish concurrency compatiblity with other operations.
 
 ### View SQL statement statistics
 
