@@ -66,7 +66,7 @@ There are some components that require other software to run. For example, the d
     |Port | Description|Default|
     |--------|------------|-------|
     | Management services| The listening TCP port for the Business Central Server Administration tool.|7045|
-    | Client services| The listening HTTP port for client services.|7085<br><br>7046 (v20 and earlier)|
+    | Client services| The listening HTTP port for client services.|7085 (7046 in version 20 and earlier)|
     | SOAP services| The listening HTTP port for SOAP web services.|7047|
     | OData service|The listening HTTP port for OData web services.|7048|
     | Developer services|The listening HTTP port for Microsoft Dynamics NAV Developer web services|7049|
