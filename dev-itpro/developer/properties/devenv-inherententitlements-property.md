@@ -49,8 +49,7 @@ table 50145 NewItem
 {
     DataClassification = ToBeClassified;
     InherentEntitlements = RI;
-    InherentPermissions = RI;
-
+   
     fields
     {
         
