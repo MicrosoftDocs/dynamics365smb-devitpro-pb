@@ -1,0 +1,1 @@
+**APPLIES TO:** Business Central 2022 release wave 1 (version 20) and earlier.

@@ -13,7 +13,7 @@ ms.author: kepontop
 
 # Migrating from .NET Framework to .NET Standard
 
-Starting from 2022 release wave 2, the [!INCLUDE [prod_long](../includes/prod_long.md)] server is running on .NET Standard and if you are using on-premises .NET add-ins that targets .NET Framework, you need to convert them to use .NET Standard, because add-ins compiled with .NET Framework will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 1.
+Starting from 2022 release wave 2, the [!INCLUDE [prod_long](../includes/prod_long.md)] server is running on .NET Standard and if you are using on-premises .NET add-ins that targets .NET Framework, you need to convert them to use .NET Standard, because add-ins compiled with .NET Framework will stop working in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2.
 
 ## What is the difference between .NET Framework, .NET Standard, and .NET Core?
 
