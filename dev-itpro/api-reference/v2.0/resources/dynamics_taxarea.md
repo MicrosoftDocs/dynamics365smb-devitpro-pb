@@ -61,7 +61,7 @@ Here is a JSON representation of the taxArea resource.
 
 
 ## See Also
-[GET taxArea](../api/dynamics_taxArea_Get.md)
-[DELETE taxArea](../api/dynamics_taxArea_Delete.md)
-[POST taxArea](../api/dynamics_taxArea_Create.md)
+[GET taxArea](../api/dynamics_taxArea_Get.md)  
+[DELETE taxArea](../api/dynamics_taxArea_Delete.md)  
+[POST taxArea](../api/dynamics_taxArea_Create.md)  
 [PATCH taxArea](../api/dynamics_taxArea_Update.md)

@@ -30,7 +30,7 @@ Navigate to [Shopify](https://www.shopify.com) and use this administrator accoun
 In the **Shopify Admin** of the created shop, apply following **Settings**:
 
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
-* Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
+* Consider enabling the *Show login link in storefront and checkout* in the **Customer account settings** section of the checkout settings.
 * Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
 * Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
 * Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
@@ -57,7 +57,7 @@ Once it's completed, you can use **Partner Dashboard** to create the development
 After creation of the store, in the **Shopify Admin** of the created shop, apply following **Settings**:
 
 * Deactivate **Automatically archive the order** in the **Order Processing** section of the [**Checkout**](https://www.shopify.com/admin/settings/checkout) settings in your **Shopify admin**.
-* Consider selecting the *Accounts are optional* option in the **Customer accounts** section of the checkout settings.
+* Consider enabling the *Show login link in storefront and checkout* in the **Customer account settings** section of the checkout settings.
 * Consider selecting the *Company name - Optional* option in the **Customer information** section of the checkout settings.
 * Enable the **Show tipping options at checkout** option in the **Tipping** section of the checkout settings, if you plan to demonstrate tipping.
 * Activate test payments. You have two options. Start by navigating to [**Payments**](https://www.shopify.com/admin/settings/payments) settings:  
