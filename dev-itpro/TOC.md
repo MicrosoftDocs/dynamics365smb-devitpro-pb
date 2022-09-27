@@ -319,6 +319,46 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
+## Finance Reports API
+<!-- START>DO_NOT_EDIT -->
+<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
+### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
+#### [Get accounting period](administration/financereportsapi/api/dynamics_accountingperiod_get.md)
+### [Business unit](administration/financereportsapi/resources/dynamics_businessunit.md)
+#### [Get business unit](administration/financereportsapi/api/dynamics_businessunit_get.md)
+### [Company](administration/financereportsapi/resources/dynamics_company.md)
+#### [Get company](administration/financereportsapi/api/dynamics_company_get.md)
+### [Customer](administration/financereportsapi/resources/dynamics_customer.md)
+#### [Get customer](administration/financereportsapi/api/dynamics_customer_get.md)
+### [Customer ledger entry](administration/financereportsapi/resources/dynamics_customerledgerentry.md)
+#### [Get customer ledger entry](administration/financereportsapi/api/dynamics_customerledgerentry_get.md)
+### [Detailed customer ledger entry](administration/financereportsapi/resources/dynamics_detailedcustomerledgerentry.md)
+#### [Get detailed customer ledger entry](administration/financereportsapi/api/dynamics_detailedcustomerledgerentry_get.md)
+### [Detailed vendor ledger entry](administration/financereportsapi/resources/dynamics_detailedvendorledgerentry.md)
+#### [Get detailed vendor ledger entry](administration/financereportsapi/api/dynamics_detailedvendorledgerentry_get.md)
+### [Dimension set entry](administration/financereportsapi/resources/dynamics_dimensionsetentry.md)
+#### [Get dimension set entry](administration/financereportsapi/api/dynamics_dimensionsetentry_get.md)
+### [Dimension value](administration/financereportsapi/resources/dynamics_dimensionvalue.md)
+#### [Get dimension value](administration/financereportsapi/api/dynamics_dimensionvalue_get.md)
+### [General budget entry](administration/financereportsapi/resources/dynamics_generalbudgetentry.md)
+#### [Get general budget entry](administration/financereportsapi/api/dynamics_generalbudgetentry_get.md)
+### [General ledger account](administration/financereportsapi/resources/dynamics_generalledgeraccount.md)
+#### [Get general ledger account](administration/financereportsapi/api/dynamics_generalledgeraccount_get.md)
+### [General ledger budgets](administration/financereportsapi/resources/dynamics_generalledgerbudgets.md)
+#### [Get general ledger budgets](administration/financereportsapi/api/dynamics_generalledgerbudgets_get.md)
+### [General ledger entry](administration/financereportsapi/resources/dynamics_generalledgerentry.md)
+#### [Get general ledger entry](administration/financereportsapi/api/dynamics_generalledgerentry_get.md)
+### [Subscriptions](administration/financereportsapi/resources/dynamics_subscriptions.md)
+#### [Get subscriptions](administration/financereportsapi/api/dynamics_subscriptions_get.md)
+#### [Delete subscriptions](administration/financereportsapi/api/dynamics_subscriptions_delete.md)
+#### [Create subscriptions](administration/financereportsapi/api/dynamics_subscriptions_create.md)
+#### [Update subscriptions](administration/financereportsapi/api/dynamics_subscriptions_update.md)
+### [Vendor](administration/financereportsapi/resources/dynamics_vendor.md)
+#### [Get vendor](administration/financereportsapi/api/dynamics_vendor_get.md)
+### [Vendor ledger entry](administration/financereportsapi/resources/dynamics_vendorledgerentry.md)
+#### [Get vendor ledger entry](administration/financereportsapi/api/dynamics_vendorledgerentry_get.md)
+<!-- IMPORTANT: END>DO_NOT_EDIT -->
+
 <!--migrate to BC online-->
 ## Migrate to Business Central Online
 ### [Migrate on-premises data](administration/migrate-data.md)
