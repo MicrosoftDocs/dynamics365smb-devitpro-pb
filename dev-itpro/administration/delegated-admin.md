@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/30/2022
+ms.date: 08/03/2022
 ms.author: edupont
 ---
 
@@ -55,10 +55,6 @@ The following tasks aren't available to the delegated administrator:
     However, starting with 2021 release wave 1 (version 18), delegated administrators can test that the job queue can run without issues, before asking the customer to start it, by using **Run once (foreground)** action on the Job Queue Entry card. This will create a temporary non-recurrent copy of this job and will run it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
 
 - Trigger a web hook or any other application action that relies on the job queue functionality, except by using the **Run once (foreground)** action.
-
-- Use the **Edit in Excel** action or interact with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] data in Excel using the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] add-in for Excel.
-
-    You can still use the **Open in Excel** action to view data in Excel.
 
 - Use the **Invite External Accountant** assisted setup guide
 

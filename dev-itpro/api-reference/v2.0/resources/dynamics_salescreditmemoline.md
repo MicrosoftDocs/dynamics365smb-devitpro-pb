@@ -113,7 +113,7 @@ Here is a JSON representation of the salesCreditMemoLine resource.
 
 
 ## See Also
-[GET salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Get.md)
-[DELETE salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Delete.md)
-[POST salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Create.md)
+[GET salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Get.md)  
+[DELETE salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Delete.md)  
+[POST salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Create.md)  
 [PATCH salesCreditMemoLine](../api/dynamics_salesCreditMemoLine_Update.md)
