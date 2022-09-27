@@ -3,7 +3,7 @@ title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,8 +19,6 @@ author: SusanneWindfeldPedersen
 
 Specifies the permissions assigned to the scope of the method. 
 
-> [!NOTE]
-> This attribute is supported only in Business Central on-premises.
 
 ## Applies To
 
