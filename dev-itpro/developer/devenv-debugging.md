@@ -123,7 +123,6 @@ The database insights also let you peek into the most recent and the latest long
 
 | Insight    | Description      |
 |-------|-------|
-
 |Statement | The SQL statement that the AL server sent to the [!INCLUDE[prod_short](includes/prod_short.md)] database. For further analysis, you can copy the SQL statement into other database tools, such as SQL Server Management Studio.| 
 |Execution time (UTC) | The timestamp (in UTC) of when the SQL statement was executed. You can use this to infer whether the SQL statement was part of the AL code between the current and last breakpoint (if set).
 |Duration (ms) | The duration in milliseconds of the total execution time of the SQL statement measured inside the [!INCLUDE[server](includes/server.md)]. You can use Duration (ms) to analyze whether you're missing indexes ([!INCLUDE[prod_short](includes/prod_short.md)] keys), or to experiment with database partitioning and/or compression performance.|
@@ -132,7 +131,6 @@ The database insights also let you peek into the most recent and the latest long
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]  
-
 > For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics. These statistics are gathered and then displayed in the debugger, like whether long running SQL statements or SQL statements are shown. Check the server configuration if you don't see the insights that you expect in the debugger. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## NonDebuggable attribute
