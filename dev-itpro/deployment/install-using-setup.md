@@ -45,11 +45,10 @@ There are some components that require other software to run. For example, the d
    <!-- - [Business Central 2018](https://support.microsoft.com//help/4470116)-->
   <!-- - [Business Central 2019 Release Wave 2](https://support.microsoft.com/help/4528706)-->
 
-   - [Business Central Spring 2019](https://support.microsoft.com/help/4501292)
-   - [Business Central 2020 Release Wave 2](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2020-release-wave-2-186fa656-a75c-70f2-1131-adc70e97f280)
-   - [Business Central 2021 Release Wave 1](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6)
-   - [Business Central 2021 Release Wave 2](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84)
-   - [Business Central 2022 Release Wave 1](https://www.microsoft.com/en-us/download/details.aspx?id=104062)
+   - [Business Central Spring 2019 (v14)](https://support.microsoft.com/help/4501292)
+   - [Business Central 2021 Release Wave 1 (v18)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-1-cba50f7c-8950-4795-bc86-53fb39e675d6)
+   - [Business Central 2021 Release Wave 2 (v19)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84)
+   - [Business Central 2022 Release Wave 1 (v20)](https://support.microsoft.com/en-us/topic/released-updates-for-microsoft-dynamics-365-business-central-2022-release-wave-1-25be7a74-9771-4f0a-b9bd-ee1aac5a227d)
 
 2. In the **Cumulative Updates** table, select the link in the **Knowledge Base ID** column for the update you want.
 3. In the **Resolution** section, select the link under  **How to obtain the Microsoft Dynamics 365 Business Central \<release\> files**.
@@ -67,7 +66,7 @@ There are some components that require other software to run. For example, the d
     |Port | Description|Default|
     |--------|------------|-------|
     | Management services| The listening TCP port for the Business Central Server Administration tool.|7045|
-    | Client services| The listening HTTP port for client services.|7046|
+    | Client services| The listening HTTP port for client services.|7085<br><br>7046 (v20 and earlier)|
     | SOAP services| The listening HTTP port for SOAP web services.|7047|
     | OData service|The listening HTTP port for OData web services.|7048|
     | Developer services|The listening HTTP port for Microsoft Dynamics NAV Developer web services|7049|
@@ -82,10 +81,12 @@ There are some components that require other software to run. For example, the d
 1. In the installation media (DVD) folder, double-click the setup.exe.
 2. Follow Setup until you get to the **[!INCLUDE[prod_long](../developer/includes/prod_long.md)]** page.
 
-    ![Business Central Setup.](../media/setup.png "Business Central Setup")
+    <!--![Business Central Setup.](../media/setup.png "Business Central Setup")-->
 
     - Choose **Get a free online trial to sign up**  if you interested in hearing about and trying the cloud experience.
     - Choose **Get the Business Central app from the Microsoft Store** to download a companion app that mimics that Web client but has the same look-and-feel as the mobile apps. For more information, see [Installing the Microsoft Dynamics 365 Business Central App](install-business-central-app.md).
+
+        > **APPLIES TO:** Business Central 2021 release wave 2 (v19) and earlier only.
     - Choose **Advance installation options** to install a demonstration environment or individual components. Then, follow the on-screen instructions to complete the installation.
 
 ## <a name="sqlclient"></a>Install prerequisites for [!INCLUDE[nav_dev_long](../developer/includes/nav_dev_long_md.md)] (Business Central 2019 only)

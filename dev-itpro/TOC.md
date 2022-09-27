@@ -1230,6 +1230,7 @@
 ## Administration
 ### [Administration of Business Central On-Premises](administration/administration.md)
 ### [Server Administration Tool](administration/administration-tool.md)
+### [Administration Shell](administration/administration-shell.md)
 ### Windows PowerShell Cmdlets
 #### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
 #### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
