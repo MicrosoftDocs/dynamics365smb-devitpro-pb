@@ -1,5 +1,6 @@
 ---
-title: "Using Filtering with APIs"
+title: "Using Filters with API calls"
+description: Learn how to use filters with APIs.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
