@@ -11,7 +11,7 @@ ms.author: kurtju
 
 # The SMB Opportunity for App Publishers
 
-Our mission is to empower every individual and every organization on the planet to achieve more. Particularly, focusing on those 78 million small and mid-sized businesses (SMB) worldwide that passionately want more resiliency in their tech intensity and their capability of transforming products and services to face the challenges in the marketplace. To embrace the constant change and grow, every organization must have a business application that breaks down the silos of data, processes, and workflow in their operations. This enables employees to respond to daily challenges and opportunities with agility. Market research shows that the business applications opportunity for software companies in the SMB space is predicted to be 51 billion dollars by 2025. As a developer, you want to make sure you bet on the winning platform. The BizApps market growth in this area is 17%; however [!INCLUDE[prod_short](../includes/d365fin_md.md)] platform growth is increasing at 47%!  
+Our mission is to empower every individual and every organization on the planet to achieve more. Particularly, focusing on those 78 million small and mid-sized businesses (SMB) worldwide that passionately want more resiliency in their tech intensity and their capability of transforming products and services to face the challenges in the marketplace. To embrace the constant change and grow, every organization must have a business application that breaks down the silos of data, processes, and workflow in their operations. This insight enables employees to respond to daily challenges and opportunities with agility. Market research shows that the business applications opportunity for software companies in the SMB space is predicted to be 51 billion dollars by 2025. As a developer, you want to make sure you bet on the winning platform. The BizApps market growth in this area is 17%; however [!INCLUDE[prod_short](../includes/d365fin_md.md)] platform growth is increasing at 47%!  
 
 ## [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]
 
@@ -19,7 +19,7 @@ Our mission is to empower every individual and every organization on the planet 
 
 ## Microsoft AppSource
 
-[Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try and get business solutions apps. It's the launch pad for your joint go-to-market activities with Microsoft and a medium for business growth. By using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
+[Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try to get business solutions apps. It's the launch pad for your joint go-to-market activities with Microsoft and a medium for business growth. By using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
 
 In November 2020, Microsoft AppSource had more than 3 million monthly active users and +20,000 apps. Specifically, for [!INCLUDE[prod_short](../includes/prod_short.md)], there are more than 1500 apps available and the number is growing fast.  
 

@@ -47,13 +47,24 @@ Delete the **[!INCLUDE[prodslong](../developer/includes/prod_long.md)]** folder 
 
 The **ProgramData** is folder is typically hidden, so you might have to change the folder options for your system drive to show hidden files, folders, and drives.
 
-### Enabling the account to log in as a service
+### Enabling the account to log on as a service
 
-Depending on various factors, the account may already have this ability to log in as a service. For example, if you have already installed SQL Server and configured it to run under the same account, SQL Server will have modified the account to log in as a service.
+Depending on various factors, the account may already have this ability to log in as a service. For example, if you have already installed SQL Server and configured it to run under the same account, SQL Server will have modified the account to log in as a service. When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md)] instances may not be able to start. 
 
-When this permission is lacking, [!INCLUDE[server](../developer/includes/server.md)] instances may not be able to start. 
+You enable log on as a service using the Local Security Policy console on the computer running SQL server.
 
-For instructions for enabling an account to log in as a service, see [Manage User Accounts in Windows Server](/windows-server-essentials/manage/manage-user-accounts-in-windows-server-essentials).  
+1. To open the Local Security Policy console, do one of the following steps:
+
+    - In the search box on the **Start** screen, type secpol.msc, and then press ENTER.
+    - From Server Manger or Control panel, open **Administrative Tools**
+2. Expand Local Policy and select **User Rights Assignment**
+3. Right-click **Log on as a service** and select **Properties**.
+4. Select **Add User or Group**, then locate and add the user account that you're using as the Business Central service account.
+
+For more information, see [Configure security policy settings](/windows/security/threat-protection/security-policy-settings/how-to-configure-security-policy-settings). 
+
+ 
+<!-- For instructions for enabling an account to log in as a service, see [Manage User Accounts in Windows Server](/windows-server-essentials/manage/manage-user-accounts-in-windows-server-essentials).  -->
 
 ### Enabling the account to register an SPN on itself  
 

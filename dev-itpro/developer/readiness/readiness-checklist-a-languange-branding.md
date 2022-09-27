@@ -19,7 +19,7 @@ Your app can be in any language; if not in English, a document with English tran
 |Summary:| Can be in any one language (not more because of length constraints).|
 |Description:| Can be in multiple languages (max 3) but must be the same content for each language.|
 |Screenshots:| Can be in any language.|
-|Videos:|Can be in any language. If the audio is not in English, English captioning is required.|
+|Videos:|Can be in any language. If the audio isn't in English, English captioning is required.|
 |Documents:| Can be in any language.|
 |Keywords:| Can be in any language.|
 |Support / Help:|Can be in any language.|
@@ -34,7 +34,7 @@ Your app can be in any language; if not in English, a document with English tran
 
 ## Branding requirements 
 
- Be consistent with branding throughout your communications. All references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding i.e. either **Microsoft Dynamics 365 Business Central**, **Dynamics 365 Business Central**, or **Business Central**. 
+ Be consistent with branding throughout your communications. All references (spoken and written in videos, docs, app landing page, screenshots, title bars etc.) must refer to the correct branding that is, either **Microsoft Dynamics 365 Business Central**, **Dynamics 365 Business Central**, or **Business Central**. 
 
 
 Make sure to make the right reference throughout your content:

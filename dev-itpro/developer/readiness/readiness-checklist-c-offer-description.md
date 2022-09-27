@@ -15,7 +15,7 @@ ms.topic: conceptual
 > The description can be in multiple languages (max 3) but must be the same content for each language. If English is not one of the languages chosen, an English document must be added to the document section. 
 
 ## How to structure the paragraphs in your description?
-Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. To do so, your description should ideally consist of 6 paragraphs (in the following order):
+Describe WHY customers would need your product and the value they get from using it instead of just writing WHAT your product does. To do so, your description should ideally consist of six paragraphs (in the following order):
 - Introduction paragraph
 - Pain based paragraph
 - Benefit based paragraph
@@ -23,11 +23,12 @@ Describe WHY customers would need your product and the value they get from using
 - Closing Call to action paragraph
 - Supported editions, countries, and languages paragraph
 
-By including all of these paragraphs you will provide prospects with a compelling offer that explains them WHY they need to start using it.
+By including all of these paragraphs, you'll provide prospects with a compelling offer that explains them WHY they need to start using it.
 
 How to format your description in Partner Center? The right formatting enables prospects to get a quick overview of the value that your offer can give them. Making the description compelling and nice to look at is therefore of key importance. 
 
-When formatting the description of your offer please consider the following:
+When formatting the description of your offer, consider the following guidelines:
+
 - The description can max. be 3000 characters incl. spaces
 - Use the Rich Text Editor when formatting your description to create structured sections that are easy to get an overview of. 
 - Structure your description as small "easily readable" sections with headlines
@@ -38,29 +39,29 @@ When formatting the description of your offer please consider the following:
 
 | Paragraph| Description |
 |-------------|--------------|
-|Introduction paragraph | To capture (and keep) the interest of the prospects you need to create interest and positive mental acknowledgement from the start. This can be achieved by asking relevant provocative questions that prospects either do not know the answer to or can relate to in the introduction paragraph |
-
+|Introduction paragraph | To capture (and keep) the interest of the prospects, you need to create interest and positive mental acknowledgment from the start. This can be achieved by asking relevant provocative questions that prospects either don't know the answer to or can relate to in the introduction paragraph |
 
 How to structure the content in this paragraph?
+
 - Make a section where you ask provocative questions. 
-- Speak to a core pain they are likely experiencing that has a negative measurable impact
+- Speak to a core pain they're likely experiencing that has a negative measurable effect
 - The question should stimulate a strong emotional response.
 
 
 > [!TIP]  
-> *Example: Do you have the right stock on your shelves? Are stock outs costing you customers? And are your procurement decisions relying on basic spreadsheets?*
+> *Example: Do you have the right stock on your shelves? Are stock outs costing your customers? And are your procurement decisions relying on basic spreadsheets?*
 
 
 | Paragraph| Description |
 |-------------|--------------|
-|Pain paragraph | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a "pain-based" paragraph that call out the fears that they are facing. |
-
+|Pain paragraph | Pain is the most compelling motivator of driving prospects to take action. Therefore, it is of the upmost importance that you communicate WHY your prospects need your product through a "pain-based" paragraph that calls out the fears that they're facing. |
 
 How to structure the content in this paragraph?
+
 - Use this paragraph to clearly demonstrate to your prospects that you genuinely understand their industry and unique business problems.
-- Describe the business challenges they are facing now (pain) and the ways their revenue growth, margins, productivity (desire), and so on are being negatively impacted by not taking action now.
+- Describe the business challenges they're facing now (pain) and the ways their revenue growth, margins, productivity (desire), and so on, are being negatively impacted by not taking action now.
 - Most importantly, call out the fears that are likely holding them back.
-- Remind them of the cost (higher risk, lower margins, lost sales) they are experiencing by putting off a decision. In so doing you have a bigger likelihood of getting the messages through to them and enticing them to take action.
+- Remind them of the cost (higher risk, lower margins, lost sales) they're experiencing by putting off a decision. In so doing, you have a bigger likelihood of getting the messages through to them and enticing them to take action.
 
 > [!TIP]  
 > *Example: Managing inventory is a delicate balancing act. Carry too little and you
@@ -72,12 +73,14 @@ lose orders (and customers). Carry too much and you tie up much needed working c
 
 
 How to structure the content in this paragraph?
-- Tell them what they will gain by using your offer 
-- You do not need to tell them how you do it, just what they will gain.
-- When describing the potential value in specific, measurable business terms, you will appeal to both their desire and greed.
 
-Quantify impacts and gains. 
-- The more specific and concrete your promise of value is, the better. Abstract concepts such as "more efficiency, more productivity, transform your business" are not emotionally impactful or convincing, and they do not compel a prospect to act. Paint a picture of a possible experience that the prospect will immediately desire.
+- Tell them what they'll gain by using your offer 
+- You don't need to tell them how you do it, just what they'll gain.
+- When describing the potential value in specific, measurable business terms, you'll appeal to both their desire and greed.
+
+Quantify impacts and gains.
+
+- The more specific and concrete your promise of value is, the better. Abstract concepts such as "more efficiency, more productivity, transform your business" aren't emotionally impactful or convincing, and they don't compel a prospect to act. Paint a picture of a possible experience that the prospect will immediately desire.
 - Avoid the temptation of simply listing features and app functionality.
 - If you make strong claims in the benefit paragraph, make sure you support them with proof.
 
@@ -117,7 +120,7 @@ Choose the type of Call to action that you want to include:
 
 | Paragraph| Description |
 |-------------|--------------|
-|Supported Editions | Insert a section in the bottom of your description that clearly states which edition(s) your offer supports (Essentials or Premium edition). |
+|Supported Editions | Insert a section in the bottom of your description that clearly states, which edition(s) your offer supports (Essentials or Premium edition). |
 
 **How to structure the content in this paragraph?**
 - Create a header 4 (it automatically becomes bold)
@@ -142,9 +145,10 @@ This app supports both the Essential and Premium editions of Microsoft Dynamics 
 **Scenario 1: Your offer supports specific countries**:
 
 
-Please list the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](../../compliance/apptest-countries-and-translations.md). 
+List the specific countries your offer supports. You can find the list of supported Countries for Microsoft Dynamics 365 Business Central here: ["Country/regional availability and supported languages"](../../compliance/apptest-countries-and-translations.md). 
 
 How to structure the content in this paragraph?
+
 - Create a header 4 (it will automatically become bold)
 - Call the header "Supported countries".
 - Include a sentence that lists the countries that your app is available in.
@@ -153,13 +157,14 @@ How to structure the content in this paragraph?
 
  **Supported Countries**: 
   
-  Australia, Austria, Belgium, Canada, Denmark, Finland, France,Germany, Iceland, Italy, Mexico,Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States 
+  Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Iceland, Italy, Mexico, Netherlands, New Zealand, Spain, Sweden, Switzerland, United Kingdom and United States 
 
  **Scenario 2: Your offer supports all countries**: 
 
-Please  state that you support all countries where Microsoft Dynamics 365 Business Central is available. By doing this, you do not need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
+State that you support all countries where Microsoft Dynamics 365 Business Central is available. By doing this, you don't need to update the store listing for every expansion. Remember to test your app on every country you intend to support, as each country’s base code is slightly different from one another. 
 
 How to structure the content in this paragraph?
+
 - Create a header 4 (it will automatically become bold)
 - Call the header "Supported countries".
 - Include a sentence that states your offer supports all countries where Business Central is available

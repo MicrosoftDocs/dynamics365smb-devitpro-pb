@@ -63,7 +63,7 @@ Here is a JSON representation of the unitOfMeasure resource.
 
 
 ## See Also
-[GET unitOfMeasure](../api/dynamics_unitOfMeasure_Get.md)
-[DELETE unitOfMeasure](../api/dynamics_unitOfMeasure_Delete.md)
-[POST unitOfMeasure](../api/dynamics_unitOfMeasure_Create.md)
+[GET unitOfMeasure](../api/dynamics_unitOfMeasure_Get.md)  
+[DELETE unitOfMeasure](../api/dynamics_unitOfMeasure_Delete.md)  
+[POST unitOfMeasure](../api/dynamics_unitOfMeasure_Create.md)  
 [PATCH unitOfMeasure](../api/dynamics_unitOfMeasure_Update.md)

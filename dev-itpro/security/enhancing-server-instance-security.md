@@ -26,10 +26,10 @@ The default configuration is for the service to log on using the NT Authority\\N
   
 ## Limiting port access
   
- The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup program opens a port in the firewall on the computer where you install [!INCLUDE[server](../developer/includes/server.md)]. By default, this is port 7046. To improve security, you can consider limiting access to this port to a specific subnet. One way is to use `netsh`, which is a command-line tool for configuring and monitoring Windows-based computers at a command prompt. The specific version of this command that you would use is `netsh firewall set portopening`. For example, the following command limits access to port 7046 to the specified addresses and subnets:  
+ The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Setup program opens a port in the firewall on the computer where you install [!INCLUDE[server](../developer/includes/server.md)]. By default, this is port 7085 (7046 in version 20 and earlier). To improve security, you can consider limiting access to this port to a specific subnet. One way is to use `netsh`, which is a command-line tool for configuring and monitoring Windows-based computers at a command prompt. The specific version of this command that you would use is `netsh firewall set portopening`. For example, the following command limits access to port 7085 to the specified addresses and subnets:  
   
 ```  
-netsh firewall set portopening protocol=TCP port=7046 scope=subnet addresses=LocalSubnet  
+netsh firewall set portopening protocol=TCP port=7085 scope=subnet addresses=LocalSubnet  
 ```  
 
 ## <a name="data-encryption"></a>Data Encryption Between [!INCLUDE[server](../developer/includes/server.md)] and SQL Server  

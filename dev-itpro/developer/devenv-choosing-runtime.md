@@ -3,7 +3,7 @@ title: "Choosing Runtime Version in AL"
 description: "How to choose runtime in AL for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 09/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,23 +21,24 @@ The runtime version specified in the `app.json` file determines which runtime th
 
 The available options for setting the `runtime` in AL are:
 
-|Runtime version|Shipped with                       |
-|---------------|-----------------------------------|
-|`1.0`          |Business Central April 2018 Release|
-|`2.0`          |Business Central Fall '18 Release  |
-|`3.0`          |Business Central Spring '19 Release|
-|`4.0`          |Business Central 2019 release wave 2|
-|`5.0`          |Business Central 2020 release wave 1|
-|`6.0`          |Business Central 2020 release wave 2|
-|`6.1`          |Business Central 2020 release wave 2 update 17.1|
-|`6.2`          |Business Central 2020 release wave 2 update 17.2|
-|`6.3`          |Business Central 2020 release wave 2 update 17.3|
-|`6.4`          |Business Central 2020 release wave 2 update 17.4|
-|`7.0`          |Business Central 2021 release wave 1|
-|`7.1`          |Business Central 2021 release wave 1 update 18.1|
-|`7.2`          |Business Central 2021 release wave 1 update 18.2|
-|`8.0`          |Business Central 2021 release wave 2|
-|`9.0`          |Business Central 2022 release wave 1|
+|Runtime version|Shipped with                       |Internal version|
+|---------------|-----------------------------------|----------------|  
+|`1.0`          |Business Central April 2018 Release|12.0|
+|`2.0`          |Business Central Fall '18 Release  |13.0|
+|`3.0`          |Business Central Spring '19 Release|14.0|
+|`4.0`          |Business Central 2019 release wave 2|15.0|
+|`5.0`          |Business Central 2020 release wave 1|16.0|
+|`6.0`          |Business Central 2020 release wave 2|17.0|
+|`6.1`          |Business Central 2020 release wave 2 update 1|17.1|
+|`6.2`          |Business Central 2020 release wave 2 update 2|17.2|
+|`6.3`          |Business Central 2020 release wave 2 update 3|17.3|
+|`6.4`          |Business Central 2020 release wave 2 update 4|17.4|
+|`7.0`          |Business Central 2021 release wave 1|18.0|
+|`7.1`          |Business Central 2021 release wave 1 update 1|18.1|
+|`7.2`          |Business Central 2021 release wave 1 update 2|18.2|
+|`8.0`          |Business Central 2021 release wave 2|19.0|
+|`9.0`          |Business Central 2022 release wave 1|20.0|
+|`10.0`         |Business Central 2022 release wave 2|21.0|
 
 ## Setting the runtime version
 

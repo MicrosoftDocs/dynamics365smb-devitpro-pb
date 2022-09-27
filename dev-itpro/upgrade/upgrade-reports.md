@@ -2,7 +2,7 @@
 title: "Upgrading Reports"
 description: Describes how to upgrade reports  
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 08/31/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,15 +14,15 @@ author: jswymer
 
 [!INCLUDE[2022_releasewave1.md](../includes/2022_releasewave1.md)]
 
-This article discusses changes to the report platform in Business Central 2022 release wave 1 (version) and their effect on upgrading from version 19 and earlier.
+This article discusses changes to the report platform done in Business Central 2022 release wave 1 (version) and their effect on upgrading from version 19 and earlier to the later releases.
 
 <!--  
 
 In version 20, the reporting platform has been updated with respect to Microsoft Word render engine, custom render support, improved layout management using extension layouts, and new platform supported layout and selection tables. This also have an impact on the application events in codeunit **44 ReportManagement**.-->
 
-## Report platform changes in version 20
+## Report platform changes
 
-Version 20 introduces a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
+Version 20 introduced a new report rendering model. Previously, report rendering was done by the application. Now, by default, report rendering is done by the platform. In support of this new model, various changes have been made, including:
 
 - An updated Microsoft Word report rendering engine
 - A new custom report render

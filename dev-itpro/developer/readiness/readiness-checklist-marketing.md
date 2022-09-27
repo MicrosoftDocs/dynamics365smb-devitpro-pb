@@ -10,20 +10,19 @@ ms.topic: reference
 
 # Marketing Validation Checklist
 
-The storefront details on AppSource is the first impression that prospects get regarding your offer. First impressions last, so make sure to invest some time
-in developing the content on the storefront, so it gives a good impression from the beginning. Failing to do so will jeopardize the hard work you put in, when
-developing your offer, likely leaving the prospect confused or looking elsewhere. Accordingly, we recommend you put in the time, effort and due diligence when developing this content.
+The storefront details on AppSource are the first impression that prospects get regarding your offer. First impressions last, so make sure to invest some time in developing the content on the storefront, so it gives a good impression from the beginning. Failing to do so will jeopardize the hard work you put in, when developing your offer, likely leaving the prospect confused or looking elsewhere. Accordingly, we recommend you put in the time, effort and due diligence when developing this content.
 
 You use Partner Center to submit your offer to AppSource. In the following, you can find information on all the marketing-related items that you need to fill out in Partner Center prior to submitting your app to AppSource. Follow this marketing validation checklist and get your app passed on the first submission. 
 
 ## What do I need to know before I begin?
-You need to have the following three items in mind, when you are creating your storefront and marketing material. 
+
+You need to have the following three items in mind, when you're creating your storefront and marketing material. 
 
 |Item | Requirement | Details | 
 |-----------|--------------|--------------|
 |Branding|Make sure to read the branding guidelines carefully before you start referencing the product name. | [Read more](readiness-checklist-a-languange-branding.md#branding-requirements) |
 |Language| Discover what to consider for each storefront detail when it comes to language. | [Read more](readiness-checklist-a-languange-branding.md#language-requirements)|
-|Microsoft images| Make sure not to use any Microsoft images (e.g., Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#microsoft-images)|
+|Microsoft images| Make sure not to use any Microsoft images (for example, the Business Central icon or Dynamics 365 logo). | [Read more](readiness-checklist-a-languange-branding.md#microsoft-images)|
 
 
 ## How do I fill out the marketing section in Partner Center?
@@ -61,8 +60,8 @@ The following section walks you through the marketing-related components, that i
 |Support link | The link to your offer’s support page.  | [Read more](readiness-checklist-h-help-support.md#support-link)|
 |Supporting documents |Add supporting sales and marketing assets such as white papers, brochures, checklists, or PowerPoint presentations. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#supporting-documents) |
 |Logos|Upload a large size logo file with dimensions between 216 pixels x 216 pixels and 350 pixels x 350 pixels. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#offer-logo)|
-| Screenshots | Provide a minimum of 3 screenshots that showcase your offer. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#screenshots)|
-|Videos (optional)| Add up to 4 videos that demonstrate your offer. These should be hosted on an external video service.  | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#videos)|
+| Screenshots | Provide a minimum of three screenshots that showcase your offer. | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#screenshots)|
+|Videos (optional)| Add up to four videos that demonstrate your offer. These should be hosted on an external video service.  | [Read more](readiness-checklist-g-marketingartifacts-logo-video-docs-screenshots.md#videos)|
 
 
 ### Availability 

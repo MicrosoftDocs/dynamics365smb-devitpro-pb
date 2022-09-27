@@ -72,9 +72,9 @@ The response has no content; the response code is 204.
 |buyFromAddressLine1|string|Buy from address line 1.|
 |buyFromAddressLine2|string|Buy from address line 2.|
 |buyFromCity|string|Buy from city.|
-|buyFromCountry|string|Buy from state.|
+|buyFromCountry|string|Buy from country.|
 |buyFromState|string|Buy from state.|
-|buyFromPostCode|string|Buy from country.|
+|buyFromPostCode|string|Buy from post code.|
 |shipToAddressLine1|string|Ship to address line 1.|
 |shipToAddressLine2|string|Ship to address line 2.|
 |shipToCity|string|Ship to city.|
@@ -159,7 +159,7 @@ Here is a JSON representation of the purchaseInvoice resource.
 
 
 ## See Also
-[GET purchaseInvoice](../api/dynamics_purchaseInvoice_Get.md)
-[DELETE purchaseInvoice](../api/dynamics_purchaseInvoice_Delete.md)
-[POST purchaseInvoice](../api/dynamics_purchaseInvoice_Create.md)
+[GET purchaseInvoice](../api/dynamics_purchaseInvoice_Get.md)  
+[DELETE purchaseInvoice](../api/dynamics_purchaseInvoice_Delete.md)  
+[POST purchaseInvoice](../api/dynamics_purchaseInvoice_Create.md)  
 [PATCH purchaseInvoice](../api/dynamics_purchaseInvoice_Update.md)
