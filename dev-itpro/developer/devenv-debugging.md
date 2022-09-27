@@ -3,7 +3,7 @@ title: "Debugging"
 description: "Overview of debugging in AL"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/28/2022
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -11,9 +11,9 @@ ms.author: solsen
 
 # Debugging
 
-The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code to verify that your application can run as expected. You start a debugging session by pressing **F5**. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
+The process of finding and correcting errors is called *debugging*. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You start a debugging session by pressing **F5**. For more information about debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
 
-An alternative to classic debugging, is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
+An alternative to classic debugging is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
 > [!IMPORTANT]  
 > To enable debugging in versions before [!INCLUDE[prod_short](../includes/prod_short.md)] April 2019, the `NetFx40_LegacySecurityPolicy` setting in the Microsoft.Dynamics.Nav.Server.exe.config file must be set to **false**. This requires a server restart.
@@ -30,7 +30,7 @@ There are some limitations to be aware of:
 To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  
 
 > [!TIP]  
-> To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You define the application family for your Embed app during onboarding. 
+> To be able to debug an online environment with an Embed app published in it, make sure to specify the `applicationFamily` parameter in your launch.json file. You must define the application family for your Embed app during onboarding. 
 
 ## Breakpoints
   
@@ -49,9 +49,9 @@ For more information about **Go to Definition**, see [AL Code Navigation](devenv
 
 ## Break on errors
 
-Specify if the debugger breaks on the next error by using the `breakOnError` property. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors.
+Specify if the debugger breaks on the next error by using the `breakOnError` property in the `launch.json` file. If the debugger is set to `breakOnError`, then it stops execution both on errors that are handled in code and on unhandled errors.
 
-The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
+The default value of the `breakOnError` property is **true**, which means the debugger stops execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false**. 
 
 > [!TIP]  
 > If the debugging session takes longer, you can refresh the session by pressing the **Ctrl+Shift+P** keys, and select **Reload Window**.
@@ -71,11 +71,11 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables that contain values that are larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
+Variables that contain values that are larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. In order to inspect a large size variable value, use the **DEBUG CONSOLE** and write the name, or qualified name of a variable to inspect at the prompt and then press **Enter**.
 
 ## Attach and Debug Next
 
-If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server and await a process to trigger the breakpoint you have set. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
+If you don't want to publish and invoke the functionality to debug it, you can attach a session to a specified server and await a process to trigger the breakpoint you have set. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).
 
 ## Debugging shortcuts
 
@@ -84,8 +84,8 @@ If you don't want to publish and invoke functionality to debug it, you can inste
 |**F5**           |Start debugging|
 |**Ctrl+F5**      |Start without debugging|
 |**Shift+F5**     |Stop debugging|
-|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing, that breakpoint won't be hit, or if it's hit is not your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
-|**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
+|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed, but not published code may trigger false existing breakpoints. For example, if you modify method "foo", add two lines and put a breakpoint on the second line and then start debugging without publishing. That breakpoint won't be hit, or if it's hit, it won't be the new code that it breaks. If it breaks, it will break on the line that the server thinks is the breakpoint, based on the last published code.|
+|**Alt+F5**       |Start RAD with debugging. For more information, see [Work with Rapid Application Development](devenv-rad-publishing.md).|
 |**F10**          |Step over|
 |**F11**          |Step into|
 |**Shift+F11**    |Step out|
@@ -106,7 +106,7 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 
 |Insight | Description  |
 |-------|-------|
-|Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database and measure how long time it takes. The value is in milliseconds.| 
+|Current SQL latency (ms) | When the debugger hits a breakpoint, the [!INCLUDE[server](includes/server.md)] will send a short SQL statement to the database, and measures the time it takes. The value is in milliseconds.| 
 |Number of SQL Executes | This number shows the total number of SQL statements executed in the debugging session since the debugger was started.|
 |Number of SQL Rows Read | This number shows the total number of rows read from the [!INCLUDE[prod_short](includes/prod_short.md)] database in the debugging session since the debugger was started.|
 
@@ -119,11 +119,11 @@ The Locks part of the database statistics shows an overview of the SQL locks hel
 
 ### View SQL statement statistics
 
-The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list the statements, expand either the **\<Last Executed SQL Statements\>** or **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
+The database insights also let you peek into the most recent and the latest long running SQL statements executed by the server. To view a list of the statements, expand either the **\<Last Executed SQL Statements\>** or **\<Last Long Running SQL Statements\>** node. The following insights are part of the SQL statement statistics:
 
 | Insight    | Description      |
 |-------|-------|
-|Statement | The SQL statement that the AL server sent to the [!INCLUDE[prod_short](includes/prod_short.md)] database. You can copy this into other database tools, such as SQL Server Management Studio, for further analysis.| 
+|Statement | The SQL statement that the AL server sent to the [!INCLUDE[prod_short](includes/prod_short.md)] database. You can copy this statement into other database tools, such as SQL Server Management Studio, for further analysis.| 
 |Execution time (UTC) | The timestamp (in UTC) of when the SQL statement was executed. You can use this to infer whether the SQL statement was part of the AL code between current and last breakpoint (if set).
 |Duration (ms) | The duration in milliseconds of the total execution time of the SQL statement measured inside the [!INCLUDE[server](includes/server.md)]. You can use Duration (ms) to analyze whether you're missing indexes ([!INCLUDE[prod_short](includes/prod_short.md)] keys), or to experiment with performance of database partitioning and/or compression.|
 |Approx. Rows Read | This number shows the approximate number of rows read from the [!INCLUDE[prod_short](includes/prod_short.md)] database by the SQL statement. You can use this insight to analyze whether you're missing filters.|
@@ -131,7 +131,7 @@ The database insights also let you peek into the most recent and the latest long
 The number of SQL statements tracked by the debugger can be configured in the [!INCLUDE[server](includes/server.md)]. The default value is 10.
 
 > [!NOTE]  
-> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics that are gathered and then displayed in debugger, like whether long running SQL statements or SQL statements are shown. If you are not seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the [!INCLUDE[server](includes/server.md)] instance has several configuration settings that control the SQL statistics which are gathered and then displayed in a debugger, like whether long running SQL statements or SQL statements are shown. If you aren't seeing the insights that you expect to see in debugger, check the server configuration. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#Development).
 
 ## NonDebuggable attribute
 
@@ -139,7 +139,7 @@ The ability to debug certain methods and/or variables can be restricted. For mor
 
 ## Authenticating with Azure AD on Business Central on-premises
 
-You can use Azure AD as the authentication mechanism for Business Central on-premises or containers. For more information, see [Azure AD authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
+You can use Azure AD as the authentication mechanism for [!INCLUDE[prod_short](includes/prod_short.md)] on-premises or containers. For more information, see [Azure AD authentication for Business Central on-premises](devenv-aad-auth-onprem.md).
 
 ## See Also
 

@@ -156,7 +156,7 @@ Occurs when a job queue entry finishes running.
 
 -->
 
-## Job queue entry fails with error
+## Job queue entry failed with error
 
 Occurs when a job queue entry fails to run.
 
@@ -188,6 +188,7 @@ The following table explains custom dimensions that are common to all job queue 
 |alJobQueueIsRecurring|Specifies if the job queue is recurring. **True** indicates it's recurring. **False** indicates it's not recurring.|
 |alJobQueueObjectId|Specifies the ID of the object that the job queue entry runs.|
 |alJobQueueObjectType|Specifies the type of the object that the job queue entry runs, for example **Report** or **Codeunit**.|
+|alJobQueueStackTrace|Specifies the AL stack trace of the job queue entry. This dimension was introduced in version 20.5. |
 |alJobQueueStatus|**Ready** indicates it's a non-recurring job queue entry or the first run of a recurring job queue entry that's ready to run. **In Process** indicates it's being run. **Error** indicates it encountered an error while running. **On Hold** indicates it's being queued. **Finished** indicates it's finished without error. **On Hold with Inactivity Timeout** indicates it's a recurring job query entry that's ready to run.|
 |alObjectId|**1351**, which is the ID of the system application codeunit that subscribes to the telemetry events.|
 |alObjectName|**Telemetry Subscribers**, which is the name of the system application codeunit that subscribes to the telemetry events.|
