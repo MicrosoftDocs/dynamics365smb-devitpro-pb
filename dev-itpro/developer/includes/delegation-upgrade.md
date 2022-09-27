@@ -1,0 +1,1 @@
+> **IMPORTANT** If you have a two- or three-tiered deployment and the [!INCLUDE[webserver](webserver.md)] and [!INCLUDE[server](server.md)] are on different computers, reconfigure delegation according to [Configuring Delegation for Business Central Web Server](../../deployment/configure-delegation-web-server.md).
