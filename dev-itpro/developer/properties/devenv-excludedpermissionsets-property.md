@@ -23,6 +23,9 @@ Sets the lists of other permission sets that are excluded in this permission set
 
 ## Syntax
 
+```al
+ExcludedPermissionSets = BASIC;
+```
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
