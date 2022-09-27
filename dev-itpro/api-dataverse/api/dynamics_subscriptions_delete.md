@@ -20,11 +20,11 @@ Deletes a subscriptions from [!INCLUDE [prod_short](../../includes/prod_short.md
 ## HTTP request
 
 Replaces the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
 DELETE businesscentralPrefix/companies({id})/subscriptions({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -46,11 +46,11 @@ If successful, this method returns ```204 No Content``` response code and delete
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.

@@ -20,11 +20,11 @@ Updates the properties of a subscriptions object for [!INCLUDE [prod_short](../.
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE [prod_short](../../includes/prod_short.md)] depending on environment following the [guideline](../../api-reference/v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one-->
+
 ```
 PATCH businesscentralPrefix/companies({id})/subscriptions({id})
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## Request headers
 
 |Header|Value|
@@ -46,7 +46,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values) -->
+
 ```json
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/subscriptions({id})
 Content-type: application/json
@@ -55,12 +55,11 @@ Content-type: application/json
     "notificationUrl" :
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.
 
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -79,7 +78,7 @@ Content-type: application/json
     "systemModifiedBy" :
 }
 ```
-<!-- END>EDIT_IS_REQUIRED-->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
