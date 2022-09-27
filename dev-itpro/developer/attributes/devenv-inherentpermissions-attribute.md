@@ -3,7 +3,7 @@ title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 09/27/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,7 @@ Specifies the permissions assigned to the scope of the method.
 
 - Method
 - Event
+- Object
 
 
 ## Syntax
@@ -33,6 +34,15 @@ Specifies the permissions assigned to the scope of the method.
 ```AL
 [InherentPermissions(PermissionObjectType: PermissionObjectType, ObjectId: Integer, Permissions: Text [, InherentPermissionsScope: InherentPermissionsScope])]
 ```
+
+## Example 
+
+```AL
+[InherentPermissions (PermissionObjectType:Table, Database:"Customers", 'r’, InherentPermissionsScope:Both)]
+```
+
+>[!NOTE]
+> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../developer/methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
 ### Arguments
 *PermissionObjectType*  
