@@ -58,7 +58,9 @@ On the computer running the [!INCLUDE[server](../developer/includes/server.md)] 
  You configure the [!INCLUDE[server](../developer/includes/server.md)] instance with the login credentials \(user name and password\) of the user account in the [!INCLUDE[!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in SQL Server that you want to use for authentication. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
   
 ### Configure SQL Authentication on a server instance using [!INCLUDE[admintool](../developer/includes/admintool.md)]  
-  
+
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
+
 1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
    
 2.  In the console tree, which is the left pane, expand the node for the computer that contains the [!INCLUDE[server](../developer/includes/server.md)] instance, and then select the [!INCLUDE[server](../developer/includes/server.md)] instance.   
@@ -101,6 +103,8 @@ This section describes how to configure a [!INCLUDE[!INCLUDE[prod_short](../deve
 To configure a SQL Server Authentication on a [!INCLUDE[server](../developer/includes/server.md)] instance, you set up the server instance with the login credentials \(user name and password\) for the user accounts for the application and tenant databases in SQL Server. You can do this using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].  
   
 ### Configure SQL Authentication using [!INCLUDE[admintool](../developer/includes/admintool.md)]  
+
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
   
 1.  Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
   
