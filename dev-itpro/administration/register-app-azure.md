@@ -72,7 +72,7 @@ The first task is to use Azure portal to register an application for Business Ce
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
     |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
-    |[Open in OneDrive](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
+    |[OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
     |||User.ReadWrite.All|Delegated|Read and write user profiles|
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
     |||Workspace.Read.All|Delegated|View all workspaces. Required for viewing shared Power BI workspaces in Business Central.|
@@ -87,7 +87,7 @@ The first task is to use Azure portal to register an application for Business Ce
 After you create the application registration, the next task is to configure the Business Central tenant to use it. You'll need the following information about the application registration: redirect URL, application (client) ID, and client secret.
 
 > [!NOTE]
-> This task isn't required when setting up Open in OneDrive. Instead, see [Configuring Business Central On-Premises for OneDrive](/dynamics365/business-central/admin-onedrive-integration#to-set-up-the-connection-in--on-premises) in the business functionality help.
+> Don't complete this task for configuring OneDrive integration with Business Central 2022 release wave 1 (version 20) and earlier. Instead, see [Configuring Business Central On-Premises for OneDrive](/dynamics365/business-central/admin-onedrive-integration#set-up-the-connection-in--version-19-and-20) in the business functionality help.
 
 1. In the top-right corner, choose the ![Tell me.](../developer/media/search-icon.png "Tell me what you want to do") icon, enter **Assisted Setup**, and then choose the related link.
 2. Select **Set up your Azure Active Directory accounts**, then **Next**.
