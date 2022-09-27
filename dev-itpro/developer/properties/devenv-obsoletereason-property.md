@@ -3,7 +3,7 @@ title: "ObsoleteReason Property"
 description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 
 ## Applies to
 -   Page Action Ref
+-   Page Custom Action
 -   Table Field
 -   Table
 -   Table Key

@@ -25,6 +25,7 @@ Sets the application areas that apply to the control. Standard values are All, B
 -   Page System Part
 -   Page Chart Part
 -   Page Action
+-   Page Custom Action
 -   Page User Control
 -   Page
 -   Report
