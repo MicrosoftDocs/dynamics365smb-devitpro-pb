@@ -950,7 +950,7 @@
 ### [Array Methods](methods/devenv-array-methods.md)
 ### [Essential AL Methods](devenv-essential-al-methods.md)
 ### [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)
-### [Creating Handler Methods](devenv-creating-handler-methods.md)
+### [Create Handler Methods](devenv-creating-handler-methods.md)
 ### [Handling Errors using Try Methods](devenv-handling-errors-using-try-methods.md)
 ### [Collecting Errors](devenv-error-collection.md)
 ### [Progress Windows, Message, Error, and Confirm Methods](devenv-progress-windows-message-error-and-confirm-methods.md)

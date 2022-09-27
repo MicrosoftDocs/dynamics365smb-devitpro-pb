@@ -65,6 +65,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 ### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
 ### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
 ### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
@@ -430,10 +431,10 @@
 #### [Debugging in AL](developer/devenv-debugging.md)
 #### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
 #### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
-#### [Debugging Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
+#### [Debug Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
-#### [Signing an App Package File](developer/devenv-sign-extension.md)
+#### [Sign an App Package File](developer/devenv-sign-extension.md)
 #### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
@@ -729,7 +730,7 @@
 #### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 
 ### Handling Security
-#### Permission Sets and Entitlements
+#### [Permission Sets and Entitlements Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
 #### [Permissionset Object](developer/devenv-permissionset-object.md)
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 #### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
@@ -876,6 +877,8 @@
 ##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
 ##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
 ##### [Extending Email Capabilities](developer/devenv-extending-email.md)
+##### [Extending G/L Entry Aggregations When Posting Invoices](developer/devenv-invoice-posting-example.md)
+
 ### Using Events 
 #### [Event Types](developer/devenv-event-types.md)
 #### [Publishing Events](developer/devenv-publishing-events.md)
@@ -1109,8 +1112,6 @@
 #### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
 #### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
 #### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Walkthrough: Creating and Interacting With an OData V4 Bound Action](/dynamics365/business-central/dev-itpro/developer/devenv-creating-and-interacting-with-odatav4-bound-action)
-#### [Creating and Interacting with an OData V4 Unbound Action](developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)
 #### [Known OData Limitations](webservices/odata-known-limitations.md)
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
@@ -1146,7 +1147,8 @@
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
 ### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
-### [Switch on Manual Instant Flows](powerplatform/instant-flows.md)
+### [Instant Flows](powerplatform/instant-flows.md)
+### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
