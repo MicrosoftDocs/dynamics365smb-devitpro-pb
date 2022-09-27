@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0553"
-description: "You cannot add actions of type '{0}' in the action area '{1}' from a page customization."
+title: "Compiler Error AL0742"
+description: "The property '{0}' is not valid for the cue action '{1}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/04/2022
@@ -13,13 +13,13 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0553
+# Compiler Error AL0742
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-You cannot add actions of type '{0}' in the action area '{1}' from a page customization. You can only add actions of type '{2}'.
+The property '{0}' is not valid for the cue action '{1}'.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
