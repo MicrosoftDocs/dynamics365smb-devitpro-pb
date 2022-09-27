@@ -36,8 +36,11 @@ The following actions are related to the Role Center page.
 
 For more information about actions used on the role center page, see [Designing Role Centers](devenv-designing-role-centers.md).
  
-
 ## Types of Actions
+
+=======
+> [!TIP]  
+> If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#pages) topic.
 
 Each page has a different set of actions depending on the page type, and the processes that the page supports. In order to create the appropriate set of actions for a particular page, you should have a good understanding of your customer's business processes.  
   
@@ -74,7 +77,6 @@ You can add actions to the Actions menu, group actions together under action sub
 The New Document menu is often displayed both as a top-level menu in the actions bar and as a sub menu in the Actions menu. You can use this menu to open new documents within [!INCLUDE[d365fin_md](includes/d365fin_md.md)]. You can add an action to create a new document such as creating a new sales invoice. This action displays in a separate menu called **New document** in the Actions menu. To add to the New document menu, you must use the `creation` action area.
   
 For example, on the Customers page, if the order processor wants to create a new invoice, the order processor can open the new page directly from the Actions menu, which is useful when creating new sales invoices daily. 
-
 
 <!-- ### Home Items  
  Home Items are actions that appear under the Home button, on the Role Center navigation pane. This navigation has a tree structure, and each node in the tree links to a list page.  
@@ -114,7 +116,24 @@ Promoted actions are actions that are set up on the Actions, Navigate, or Report
 The Home menu is always displayed first so promoted actions provide quick access to common tasks, because users do not have to browse through a menu to access them. You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. For more information, see [Promoted Property](properties/devenv-promoted-property.md).
 -->
 
-## Grouping Actions in Sub-Menus
+## Run Power Automate flows from page actions
+
+[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
+
+```al
+customaction(MyFlowAction)
+{
+    CustomActionType = Flow;
+    FlowId = '<the-GUID-identifying-the-Power-Automate-Flow>';
+    FlowEnvironmentId = '<the-GUID-identifying-the-Power-Automate-environment>';
+}
+```
+
+For a `customaction`, the [CustomActionType Property](properties/devenv-customactiontype-property.md) must be set to `Flow`. The [FlowId Property](properties/devenv-flowid-property.md) and the [FlowEnvironmentId Property](properties/devenv-flowenvironmentid-property.md) must specify the IDs of the flow and the environment of the flow. These properties make up the target flow identity, allowing the client to trigger the flow when the custom action is invoked.
+
+## Grouping Actions in Submenus
 
 Within the different areas, you can create submenus to a group of actions and improve navigation. You create a submenu by adding a `group()` control, as shown in the following example:  
 
@@ -163,6 +182,7 @@ An action can trigger code to run, such as posting a document or otherwise modif
   
 - If the current record that the page showed is now outside the filter but there are other records within the filter, the **OnFindRecord** trigger is called, and the **OnAfterGetRecord** trigger is run on the next record with the given filters.  
   
+
 The logic runs in the transaction that the action triggered. This can cause the application code to result in users locking the whole table when they thought they were only modifying one record.  
   
 To avoid users accidentally locking tables, you can use the [SetSelectionFilter](methods-auto/page/page-setselectionfilter-method.md) method before your code passes the record variable to the processing codeunit, for example. The following code example illustrates the code on the [OnAction](triggers-auto/action/devenv-onaction-action-trigger.md) trigger on an action on a page.  
