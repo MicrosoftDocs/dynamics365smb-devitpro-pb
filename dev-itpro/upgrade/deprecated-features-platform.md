@@ -16,6 +16,14 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2023 release wave 2 (version 23.0)
+
+### <a name="views"></a>Legacy views on list pages (Removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 23, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
+
 ## Changes in 2023 release wave 1 (version 22.0)
 
 ### WS-Federation with Azure Active Directory authentication
@@ -107,7 +115,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed (online only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. OAuth2 will be the authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).  For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services. |
+|Removed (online only)| The capability to access web services in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] using Web Service Access Key (Basic Auth) is deprecated for SaaS. Any integrations/solutions that connect to Business Central online using Web Service Access Key (Basic Auth) **will stop working after October 1, 2022**. OAuth2 will be the only authentication option for SaaS. OAuth samples are published in the [BCTech repo](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess). For more information, see [Using OAuth to Authorize Business Central Web Services (OData and SOAP)](../webservices/authenticate-web-services-using-oauth.md).  For on-premises, Web Service Access Key (Basic Auth) will remain an option for the time being. This change has no impact on how [!INCLUDE[prod_short](../developer/includes/prod_short.md)] connects to external services. |
 
 ### <a name="permissions"></a>Permissions defined as data
 

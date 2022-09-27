@@ -1,7 +1,7 @@
 ---
 author: jswymer
 ms.topic: include
-ms.date: 10/01/2021
+ms.date: 09/01/2022
 ms.author: jswymer
 ---
 After you upgrade your application, we recommend changing the value of application build number that's stored in the database and shown on the Help and Support page to match the new current version. This version isn't updated automatically when you upgrade. If you want the version to reflect the version of the update or your own version, you change it manually. This task serves two purposes. It ensures that personalization works as expected after upgrade. It's also useful for support purposes and answering a common question about the application version.
@@ -19,7 +19,7 @@ For more information about version numbers, see [Version numbers in Business Cen
     For example:
 
     ```powershell
-    Set-NAVApplication -ServerInstance BC190 -ApplicationVersion 19.0.38071.0 -Force
+    Set-NAVApplication -ServerInstance BC210 -ApplicationVersion 21.0.38071.0 -Force
     ```
 
 2. Run the [Sync-NAVTenant](/powershell/module/microsoft.dynamics.nav.management/sync-navtenant) cmdlet to synchronize the tenant with the application database.

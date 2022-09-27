@@ -119,7 +119,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
 |Trinidad and Tobago|Partner|Available|TT|Brazil South|
 |Tunisia|Partner|Available|TN|South Africa North|
-|Turkey|Partner|Available|TR|West Europe, Netherlands|
+|Türkiye|Partner|Available|TR|West Europe, Netherlands|
 |Ukraine|Partner|Available|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|
