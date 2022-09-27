@@ -101,6 +101,10 @@ The following diagram illustrates the interaction between the system and base ap
 
 The following example extends the **Posted Sales Invoice** page of the base application to include an actions to open and share a PDF version of a sales invoice in OneDrive.
 
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](../devenv-promoted-actions.md).
+
+
 ```al
 pageextension 50100 PostedSalesInvExt extends "Posted Sales Invoice"
 {
