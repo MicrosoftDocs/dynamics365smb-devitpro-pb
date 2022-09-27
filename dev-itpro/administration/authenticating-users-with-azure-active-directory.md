@@ -170,6 +170,8 @@ You can configure the [!INCLUDE[server](../developer/includes/server.md)] by usi
 
 # [Administration Tool](#tab/admintool)
 
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
+
 1. Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 
 2. In the **General** tab, set the **Credential Type** to **AccessControlService**.
