@@ -19,8 +19,6 @@ author: SusanneWindfeldPedersen
 
 Specifies the permissions assigned to the scope of the method. 
 
-> [!NOTE]
-> This attribute is supported only in Business Central on-premises.
 
 ## Applies To
 

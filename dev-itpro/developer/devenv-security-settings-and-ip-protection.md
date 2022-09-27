@@ -24,21 +24,28 @@ The extension development package provides a pre-configured setting for protecti
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2021 release wave 2, the `ShowMyCode` setting has been replaced by the `resourceExposurePolicy` setting which offers a richer access control. The `ShowMyCode` will be deprecated in a future release and can't be used together with the `resourceExposurePolicy` setting. If `ShowMyCode` is set, default values for `resourceExposurePolicy` will be applied (`false`).
 
-When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you're building. In the `app.json` file, you can specify a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties defines the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false`, which means that by default, no dependent extension can debug or download the source code of your extension. The syntax of the `resourceExposurePolicy` setting is as follows:
+When you start a new project, an `app.json` file is generated automatically, which contains the information about the extension that you're building. In the `app.json` file, you can specify a setting called `resourceExposurePolicy` that defines the accessibility of the resources and source code during different operations. `resourceExposurePolicy` specifies the following list of options: `applyToDevExtension`, `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile`. Each of these properties defines the specific areas in which the source code of an extension can be accessed. All of the options are by default set to `false`, which means that by default, no dependent extension can debug or download the source code of your extension. The syntax of the `resourceExposurePolicy` setting is as follows:
 
 ```al
-`"resourceExposurePolicy": {"allowDebugging": <boolean>, "allowDownloadingSource": <boolean>, "includeSourceInSymbolFile": <boolean>}`
+`"resourceExposurePolicy": {"applyToDevExtension": <boolean>, "allowDebugging": <boolean>, "allowDownloadingSource": <boolean>, "includeSourceInSymbolFile": <boolean>}`
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it is generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it is generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
+
+> [!IMPORTANT]  
+> The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
+
+
+### applyToDevExtension
+
+[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+With the `applyToDevExtension` flag, you can specify if all resource exposure policies specified for the extension also apply to *developer extensions*, by setting the value to `true`.
 
 ### allowDebugging
 
 To allow debugging into your extension, you must set the `allowDebugging` flag when the extension is taken as a dependency, otherwise debugging isn't allowed. The default value of `allowDebugging` is `false`. 
-
-> [!NOTE]  
-> The **AL: Go!** template sets `allowDebugging` to `true`.
 
 If you want to allow debugging into your extension to view the source code, the `allowDebugging` property in the `app.json` file must be set to `true`. For example, if someone develops an extension A and another person develops an extension B, where B depends on A, then debugging B will only step into the code for A, if a method from A is called and if the `allowDebugging` flag is set to `true` in the `app.json` file for extension A as shown in the example below. By adding this setting, you *enable debugging* into an extension to view the source code and variables when that extension is set as a dependency.
 
@@ -51,7 +58,7 @@ If you want to allow debugging into your extension to view the source code, the 
 
 #### The [NonDebuggable] attribute
 
-Unless, you've specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables with the `[NonDebuggable]` attribute, these will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
+Unless, you've specified the `[NonDebuggable]` attribute on methods and variables, setting the `allowDebugging` to `true` will allow stepping into this code. If you, however, have marked the methods and variables with the `[NonDebuggable]` attribute, these methods and variables will remain non-debuggable. For more information, see [NonDebuggable Attribute](attributes/devenv-nondebuggable-attribute.md).
 
 
 #### When should I set `allowDebugging` to `true`?
@@ -72,7 +79,7 @@ When this flag is set to `true` in the `app.json` file of extension A, the sourc
 
 ### includeSourceInSymbolFile
 
-When this flag is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code, which is accessed by using the **Downloading Symbols** functionality, contains symbols, source code, and all other resources of extension A. When `includeSourceInSymbolFile` is set to `false`, the source isn't available in the symbol files and you can't use **Go to Definition** to view source. You can, however, still extend, get IntelliSense for, and call functionality in extension A by relying on its exposed symbols and signatures. The default value of `includesourceInSymbolFile` is `false`.
+When this flag is set to `true` in the `app.json` file of extension A, the downloaded symbol file in Visual Studio Code, which is accessed by using the **Downloading Symbols** functionality, contains symbols, source code, and all other resources of extension A. When `includeSourceInSymbolFile` is set to `false`, the source isn't available in the symbol files, and you can't use **Go to Definition** to view source. You can, however, still extend, get IntelliSense for, and call functionality in extension A by relying on its exposed symbols and signatures. The default value of `includesourceInSymbolFile` is `false`.
 
 ### Example JSON file
 
@@ -113,7 +120,7 @@ For more information, see [Using Key Vault Secrets in Business Central Extension
 
 ### The `BC-ResourceExposurePolicy-Overrides` secret
 
-Once the key vault is set up, the policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault. The value of the secret is a .json file with the structure as shown in the example below. Because, the json secret value in this case spans multiple lines, you must use Azure PowerShell instead of the Azure portal to define the json secret value. To enable one or more of the properties for use by an Azure AD tenant, you must add the tenant ID to enable that property for the users of the tenant. This enables a temporary access to the source code, for example, for debugging purposes. 
+Once the key vault is set up, the policy of an extension can be overridden by using settings in your extension's key vault. A secret named `BC-ResourceExposurePolicy-Overrides` must be added to the key vault. The value of the secret is a .json file with the structure as shown in the example below. Because the json secret value in this case spans multiple lines, you must use Azure PowerShell instead of the Azure portal to define the json secret value. To enable one or more of the properties for use by an Azure AD tenant, you must add the tenant ID to enable that property for the users of the tenant. Doing so enables a temporary access to the source code, for example, for debugging purposes. 
 
 
 ```powershell

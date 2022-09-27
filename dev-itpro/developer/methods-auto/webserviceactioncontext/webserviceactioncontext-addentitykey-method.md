@@ -1,9 +1,9 @@
 ---
 title: "WebServiceActionContext.AddEntityKey(Integer, Any) Method"
-description: "Add a new fieldId, value pair to the collection of entity keys."
+description: "Add a new \<fieldId, value\> pair to the collection of entity keys."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/11/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

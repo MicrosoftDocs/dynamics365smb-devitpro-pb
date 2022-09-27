@@ -4,7 +4,7 @@ description: Learn how to use filter expressions in OData URIs to limit the resu
 author: jswymer
 ms.author: jswymer
 ms.custom: na
-ms.date: 09/14/2022
+ms.date: 09/27/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,6 +50,10 @@ https://localhost:7048/BC130/OData/Company('CRONUS International Ltd.')/Customer
 |round|`$filter=round(FDecimal) eq 1`||  
 |floor|`$filter=floor(FDecimal) eq 0`||  
 |ceiling|`$filter=ceiling(FDecimal) eq 1`||  
+
+
+>[!Note]
+> There is a special filter, `journals.templateDisplayName` which returns default journals if a user hasn't defined the filter criteria.
 
 > [!NOTE]  
 > You can learn more about setting the filters that are specific to AL language by checking out [Enter criteria in Filters](../developer/devenv-entering-criteria-in-filters.md) article.

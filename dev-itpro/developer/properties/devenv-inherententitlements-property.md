@@ -28,6 +28,7 @@ Specifies the entitlement permissions that are inherently assigned to the given 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+
 ## Remarks
 
 The inherent entitlements permission values that are *Read*, *Insert*, *Modify*, *Delete* and, *Execute* are set according to the object type. For example, a Report object can have an execute 'X' permission but the same permission is invalid for data in a Table object.
@@ -67,3 +68,4 @@ table 50145 NewItem
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Inherent Permissions](../devenv-inherent-permissions.md)  
+
