@@ -36,7 +36,7 @@ The following actions are related to the Role Center page.
 For more information about actions used on the role center page, see [Designing Role Centers](devenv-designing-role-centers.md).
  
 > [!TIP]  
-> If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#Pages) topic.
+> If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#pages) topic.
 
 ## Types of Actions
 
