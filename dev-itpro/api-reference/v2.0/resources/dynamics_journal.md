@@ -76,7 +76,7 @@ Here is a JSON representation of the journal resource.
 
 
 ## See Also
-[GET journal](../api/dynamics_journal_Get.md)
-[DELETE journal](../api/dynamics_journal_Delete.md)
-[POST journal](../api/dynamics_journal_Create.md)
+[GET journal](../api/dynamics_journal_Get.md)  
+[DELETE journal](../api/dynamics_journal_Delete.md)  
+[POST journal](../api/dynamics_journal_Create.md)  
 [PATCH journal](../api/dynamics_journal_Update.md)
