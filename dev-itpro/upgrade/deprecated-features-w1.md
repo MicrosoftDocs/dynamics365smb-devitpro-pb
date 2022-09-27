@@ -16,20 +16,38 @@ This article describes the features that have been moved, removed, or replaced i
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2022 release wave 2
+
+### Permissions and Permission Set Objects
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | In the latest enhancements to composing permissions, the following legacy objects are marked as `obsolete:pending` and replaced with new ones:<br><br>* The Log Table Permissions code unit is replaced by the Log Table Data Permissions codeunit.<br><br>* The Permissions page is replaced by the Expanded Permissions page.<br><br>* The Tenant Permissions page is replaced by the Permission Set page.<br><br>For information about other objects and methods that are being obsoleted, refer to the obsolete reasons in permission management.|
+
+### Microsoft SharePoint Connection Setup
+
+|Moved, Removed, or Replaced? |    Why?|
+|-----------------------------|-----|
+|Replaced | The SharePoint connection setup feature used for OneDrive integration is obsolete and will be removed in 2023 release wave 2 (version 23). In its place, version 21 offers a new guided setup to configure OneDrive integration for system and application features. Learn more about the new setup at [Managing OneDrive Integration with Business Central](/dynamics365/business-central/admin-onedrive-integration)<br><br>The deprecation means that the  **Microsoft SharePoint Connection Setup** page (9551 Document Service Config) is marked as `obsolete:pending`. However, the platform APIs (in codeunit 9510 Document Service Management) and the document service table that make the legacy functionality possible aren't being deprecated. So any partner solutions that use the APIs directly are unaffected by this change.<br><br>Existing customers who are upgrading to version 21, and eventually version 22, can continue to use the legacy SharePoint/Onedrive integration. But we highly recommend that you transition them to the newer OneDrive integration because it's the path going forward. Switching to the newer OneDrive integration setup is a one-way operation, meaning you can't revert to the legacy setup after you've made the switch.<br><br> We aspire to resume work on SharePoint integration at a later date.|
+
 ## Changes in 2022 release wave 1
+
 The following feature is marked as `obsolete:pending` in 2022 release wave 1.
 
 ### XBRL reporting
+
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Removed | Over the years, XBRL has become more than just tagging your financial statement. It's seen improvements in the level of reporting detail, schemas are more flexible in their design, and ESAF has added customization capabilities. This development has meant that the XBRL implementations in the countries we support are diverse, and often complex. For example, taxonomies with hundreds of schema and linkbase files have become the norm. This complexity has made XBRL reporting a task that is better managed by either dedicated software or by service providers. <br><br> We recommend that you use these service providers. Alternatively, if you have the resources in-house, acquire a dedicated XBRL reporting tool. The XBRL org provides a list of tools and services. For more information, see [Tools and Services](https://www.xbrl.org/the-standard/how/tools-and-services/).<br><br> Currently, we expect to fully remove support for XBRL in 2023 release wave 1.|
 
 ### Intercompany Setup page
+
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced | We have consolidated settings for setting up intercompany capabilities on a single page, and have added a new feature for automatically accepting intercompany transactions in general journals. The current **Intercompany Setup** page (page 621) is replaced with a new **Intercompany Setup** page (page 653). |
 
 ### Bank Reconciliation Worksheet and Deposits in North American versions (US, CA, MX)
+
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
 |Replaced | We're standardizing the features for reconciling bank accounts and making cash deposits, so that more country versions can benefit from them. For more information, see [Standardizing the bank reconciliation process in North American versions](/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/standardizing-bank-reconciliation-process-north-american-versions). The current features will still allow you to view posted bank reconciliations done through the Bank Rec. Worksheet page, and posted deposits done through the Deposits features, but you can't use these features to create new entries. In April 2023, you must use the Bank Reconciliation page for bank reconciliations. The Bank Rec. Worksheet page won't be available.|
