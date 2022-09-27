@@ -825,4 +825,4 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Signing an APP Package File](../developer/devenv-sign-extension.md)  
+[Sign an APP Package File](../developer/devenv-sign-extension.md)  

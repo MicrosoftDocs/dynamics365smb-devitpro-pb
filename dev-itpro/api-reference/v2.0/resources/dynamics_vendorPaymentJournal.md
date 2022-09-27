@@ -69,7 +69,7 @@ Here is a JSON representation of the vendorPaymentJournal resource.
 
 
 ## See Also
-[GET vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Get.md)
-[DELETE vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Delete.md)
-[POST vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Create.md)
+[GET vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Get.md)  
+[DELETE vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Delete.md)  
+[POST vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Create.md)  
 [PATCH vendorPaymentJournal](../api/dynamics_vendorPaymentJournal_Update.md)
