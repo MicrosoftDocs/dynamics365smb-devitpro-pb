@@ -3,6 +3,7 @@
 |AppSource Submission Validation|Provides information about validation when an extension is submitted to AppSource.|![check mark for feature.](../developer/media/check.png)||![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-appsource-submission-validation-trace.md)|
 |App key vault secrets |Provides information about the retrieval of secrets from Azure Key Vaults by extensions.|![check mark for feature.](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)<sup>[\[1\]](#1)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-extension-key-vault-trace.md) |
 |Authorization|Provides information about user sign-in attempts. Information includes success or failure indication, reason for failure, user type, and more.|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)||[See...](../administration/telemetry-authorization-trace.md) |
+|Azure Function Integration<sup>[\[6\]](#6)</sup>|Provides information about requests to Azure Functions from Business Central|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-azure-function-integration-trace.md) |
 |Company lifecycle|Provides information about creating, copying, and deleting of companies.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-company-lifecycle-trace.md) |
 |Configuration package lifecycle|Provides information about operations done on configuration packages, including exporting, importing, applying, and deleting. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-configuration-package-trace.md)|
 |Database deadlocks<sup>[\[5\]](#5)</sup>|Provides information about database deadlocks that occur. |![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-database-deadlocks-trace.md)|
@@ -42,3 +43,5 @@
 <sup>4</sup><a name="4"></a>Introduced in Business Central 2021 release wave 1, version 18.
 
 <sup>5</sup><a name="5"></a>Introduced in Business Central 2022 release wave 1, version 20.
+
+<sup>6</sup><a name="6"></a>Introduced in Business Central 2022 release wave 2, version 21.
