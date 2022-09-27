@@ -339,7 +339,7 @@ var
     Count : Integer;
 ```  
 
-When this statement is executed, then a run-time error occurs because the start and end values are converted to the same data type as the Count control variable. Count has been declared as an integer variable. The end number 100000000000000 is outside the valid range for integers, and an error occurs.  
+When this statement is executed, then a run-time error occurs because the start, and end values are converted to the same data type as the Count control variable. Count has been declared as an integer variable. The end number 100000000000000 is outside the valid range for integers, and an error occurs.  
 
 #### Example 2  
  The following example shows how to nest for statements.  
@@ -400,7 +400,7 @@ The while do statement can be used when some code should be repeated as long as 
 
 When there's only one condition, put `while` and `do` on the same line. Put the statements on separate lines and indented by two spaces.  
 
-When there are multiple conditions, put the conditions on separate lines and indented by two spaces and put `do` on a separate line that is aligned with `while`.  
+When there are multiple conditions, put the conditions on separate lines, and indented by two spaces and put `do` on a separate line that is aligned with `while`.  
 
 #### Example  
 
