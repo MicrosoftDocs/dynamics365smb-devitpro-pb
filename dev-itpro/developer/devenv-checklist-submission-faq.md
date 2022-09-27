@@ -160,7 +160,7 @@ It means that your license doesn't allow you to publish that application. A reco
 
 ## Questions about code-signing validation
 
-This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Signing an APP Package File](devenv-sign-extension.md).
+This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Sign an APP Package File](devenv-sign-extension.md).
 
 ### Can I use a self-signed certificate to sign my apps targeting AppSource?
 
