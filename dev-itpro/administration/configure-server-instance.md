@@ -242,7 +242,11 @@ The following table describes fields on the **Management Services** tab in the [
 |-------|--------|-------------------------------------------------------------------|  
 |Enable Management Services|ManagementServicesEnabled|Specifies whether [!INCLUDE[admintool](../developer/includes/admintool.md)] is enabled for this server instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No|  
 |Idle Client Timeout|ManagementServicesIdleClientTimeout|Specifies the amount of time a PowerShell command, like Invoke-NAVCodeunit, can run before the session times out and closes.<br /><br />The value has the format hh:mm:ss.<br />Default: 10:00:00<br />Dynamically Updatable: No|
-|Port|ManagementServicesPort|The listening TCP port for the [!INCLUDE[admintool](../developer/includes/admintool.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically Updatable: No|  
+|Port|ManagementServicesPort|The listening TCP port for the [!INCLUDE[admintool](../developer/includes/admintool.md)] and [!INCLUDE[adminshell](../developer/includes/adminshell.md)].<br /><br /> Valid range: 1 - 65535<br /> Default: 7045<br />Dynamically Updatable: No| 
+|*not avialable*|ManagementApiServicesEnabled|Specifies whether the management API services used by the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] is enabled for this server instance.<br /><br /> Default: Enabled<br />Dynamically Updatable: No<br /><br />**INTRODUCED IN:** Version 21. In version 21, enabling management API services is only required for the [Invoke-NAVSanitizeField](/powershell/module/microsoft.dynamics.nav.management/invoke-navsanitizefield) cmldet. In future releases, management API services will be used for more cmdlets. |  
+|*not avialable*|ManagementApiServicesPort|Specifies the listening TCP port for the management API services used by the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]<br /><br /> Default: 7086<br />Dynamically Updatable: No<br /><br />**INTRODUCED IN:** Version 21|  
+|*not avialable*|ManagementApiServicesSSLEnabled|Specifies whether SSL (HTTPS) is enabled for the management API services port. <br /><br />Default: Not enabled<br />Dynamically Updatable: No<br /><br />**INTRODUCED IN:** Version 21|
+
 
 ## Azure Key Vault Client Identity Tab Settings
 
