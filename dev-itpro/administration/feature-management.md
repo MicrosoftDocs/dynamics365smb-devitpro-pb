@@ -39,11 +39,14 @@ Learn about [new features available in the last minor update in a release wave](
 
 ## How to enable an optional feature
 
-1. Sign in to your environment and navigate to the **Feature Management** page, or use this link: [https://businesscentral.dynamics.com/?page=2610](https://businesscentral.dynamics.com/?page=2610).
-2. If the page isn't editable, choose **Edit List** from the action menu.
-3. For any row in the list, set the **Enabled for** field to *All users*.
+> [!NOTE]
+> Features might require that one or more other features are also enabled, and perhaps even first. If the feature you want to turn on depends on other features, [!INCLUDE[prod_short](../includes/prod_short.md)] will let you know. The prerequisite features are indented beneath the feature you want to turn on. Information about prerequisites is also available in the **Dependent Features** FactBox.
 
-As soon as you enable the feature, any user that signs in to that environment experiences the change. You won't necessarily experience the change yourself until you sign out and sign in again, or start a new session.
+1. Sign in to your environment and navigate to the **Feature Management** page, or use this link: [https://businesscentral.dynamics.com/?page=2610](https://businesscentral.dynamics.com/?page=2610).
+2. If the page isn't editable, choose the **Edit List** action.
+3. For the feature you want to turn on, in the **Enabled for** field, choose **All users**.
+
+As soon as you enable the feature, any user who signs in to that environment experiences the change. You won't necessarily experience the change yourself until you sign out and sign in again, or start a new session.
 
 > [!TIP]
 > Try out the feature for yourself without enabling it for all users by choosing the **Try it out** link. This will open a new browser tab with the feature enabled for that session. Any new sessions in your browser will also have the feature temporarily turned on. To stop trying the feature, close your browser window or sign out.  
