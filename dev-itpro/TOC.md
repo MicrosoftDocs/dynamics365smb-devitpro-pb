@@ -466,7 +466,7 @@
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 
 ## AL Language
-### [A tour of the AL language](developer/devenv-programming-in-al.md)
+### [A Tour of the AL language](developer/devenv-programming-in-al.md)
 ### [FAQ for AL Developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks
