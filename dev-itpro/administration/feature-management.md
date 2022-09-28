@@ -74,6 +74,10 @@ Most users, by default, won't have permission to enable upcoming features themse
 
 ## FAQ about Feature Management
 
+### Why do I have to enable another feature before I can get the feature I want?
+
+Some features are built to work together with one or more other features. That means that a feature might need functionality that another feature provides, so you must enable the other features first. When that's the case, the dependent features are indented under the primary feature in the list.  
+
 ### There are no features listed as optional. Did I do something wrong?
 
 There may be periods where no optional features have been made available, which is perfectly normal. There will likely be few or no features listed in the **Feature Management** page immediately after a major update.
