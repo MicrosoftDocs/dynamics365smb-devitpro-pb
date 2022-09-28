@@ -100,7 +100,7 @@ This means that if you want to export the data in order to change the customer's
 For more information, see [Quickstart: Import a BACPAC file to a database in Azure SQL Database](/azure/sql-database/sql-database-import), [Migrating to Single-Tenancy From Multitenancy](../deployment/Merging-an-Application-Database-with-a-Tenant-Database.md), and [When to choose on-premises deployment](../deployment/Deployment.md#when-to-choose-on-premises-deployment).  
 
 > [!NOTE]
-> If you are getting an error saying your file contains corrupted data when importing the bacpac file please ensure you are using the .NET Core version of [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage-download).
+> If you are getting an error saying your file contains corrupted data when importing the bacpac file please ensure you are using the .NET Core version of [SqlPackage.exe](https://learn.microsoft.com/sql/tools/sqlpackage/sqlpackage-download).
 
 ## Restoring the exported data to Business Central online
 
