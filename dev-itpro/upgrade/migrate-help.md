@@ -83,3 +83,5 @@ If you do not yet have a website that you publish content to, then there are sev
 [User Assistance Model](../user-assistance.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](../deployment/system-requirement-business-central.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

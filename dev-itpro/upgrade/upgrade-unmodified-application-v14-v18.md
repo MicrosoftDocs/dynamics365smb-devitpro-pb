@@ -173,7 +173,7 @@ For more information, see [Upgrading Permissions Sets and Permissions](upgrade-p
 
 ## Task 4: Convert the application database to version 18
 
-This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements.
+This task runs a technical upgrade on the application database to convert it from the version 14 platform to the version 18 platform. The conversion updates the system tables of the database to the new schema (data structure). It provides the latest platform features and performance enhancements. The conversion adds the system symbols for the version to the database, so you don't have to manually publish the Systems extension, as you had to do with early releases.
 
 [!INCLUDE[convert_azure_sql_db](../developer/includes/convert_azure_sql_db.md)]
 2. Start [!INCLUDE[adminshell](../developer/includes/adminshell.md)] for version 18 as an administrator.

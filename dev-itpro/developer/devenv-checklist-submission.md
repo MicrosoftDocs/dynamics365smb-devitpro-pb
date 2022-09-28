@@ -28,7 +28,7 @@ If you do not meet these mandatory requirements, your extension will fail valida
 |Coding of `Date` must follow a specific format (**no longer region-specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
 |Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Simply include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
-|The .app file must be digitally signed.|[Signing an APP Package File](devenv-sign-extension.md)|
+|The .app file must be digitally signed.|[Sign an APP Package File](devenv-sign-extension.md)|
 |Set the application areas that apply to your controls. Failure to do so will result in the control not appearing in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].|[Application Area guidance](properties/devenv-applicationarea-property.md)|
 |Permission set(s) must be created by your extension and when marked, should give the user all setup and usage abilities. A user must not be required to have SUPER permissions for setup and usage of your extension.|[Exporting Permission Sets](devenv-export-permission-sets.md)<br>[Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)|
 |Before submitting for validation, ensure that you can publish/sync/install/uninstall/reinstall your extension. **This must be done in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] environment**.|[How to publish your app](devenv-how-publish-and-install-an-extension-v2.md)|
@@ -113,21 +113,6 @@ Please include app and all library apps in both previousApps and apps and please
 > It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 >
 > You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
-
-## Manual validation performed by the Business Central validation team
-
-The primary responsibility of the manual validation is to ensure that the apps are working as described.
-
-Manual validation is not done on all submissions. They will be done as sample tests.
-
-For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. RapidStart packages needed for the manual test are installed.
-
-The manual test validation document is run manually and if the document doesn't match the app functionality the submission is rejected.
-
-> [!Important]  
-> It is recommended that all partners are performing the manual validation as the last check before submitting for validation.
->
-> This can be done either in online sandbox environments or in sandbox Docker containers.
 
 ## How to get more information on the technical validation failures?
 

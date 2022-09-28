@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 06/30/2022
+ms.date: 08/03/2022
 ms.author: edupont
 ---
 
@@ -56,10 +56,6 @@ The following tasks aren't available to the delegated administrator:
 
 - Trigger a web hook or any other application action that relies on the job queue functionality, except by using the **Run once (foreground)** action.
 
-- Use the **Edit in Excel** action or interact with [!INCLUDE [prod_short](../developer/includes/prod_short.md)] data in Excel using the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] add-in for Excel.
-
-    You can still use the **Open in Excel** action to view data in Excel.
-
 - Use the **Invite External Accountant** assisted setup guide
 
     Instead, you can add the external user in the Azure portal and assign this user the **External Accountant** license.
@@ -100,3 +96,5 @@ For more information, see [Customers delegate administration privileges to partn
 [Administration of Business Central Online](tenant-administration.md)  
 [Get Started as a Reseller of Business Central Online](get-started-online.md)  
 [Exporting Databases](tenant-admin-center-database-export.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

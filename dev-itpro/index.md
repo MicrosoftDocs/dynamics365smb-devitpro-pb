@@ -72,7 +72,7 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 
 [!INCLUDE [ua-rss](includes/ua-rss.md)]
 
-## See Also
+## See also
 
 [[!INCLUDE[prod_long](includes/prod_long.md)] Business Functionality Help](/dynamics365/business-central/index)  
 [Dynamics 365 Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)  
@@ -84,3 +84,5 @@ If you are completely new to [!INCLUDE [prod_short](includes/prod_short.md)], we
 [Dynamics 365 Business Central Partner Portal](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-business-central)  
 [Dynamics NAV Developer and ITPro Content](/dynamics-nav/index)  
 [Dynamics 365 Product Licensing](https://www.microsoft.com/Licensing/product-licensing/dynamics365)  
+
+[!INCLUDE [footer-banner](includes/footer-banner.md)]

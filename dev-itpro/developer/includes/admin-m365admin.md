@@ -2,7 +2,7 @@
 author: edupont04
 ms.topic: include
 ms.reviewer: edupont
-ms.date: 04/01/2021
+ms.date: 09/22/2022
 ms.author: mikebc
 ---
 Because you are logged in as the global administrator of the demonstration tenant, you can access the Microsoft 365 administration center. The following list illustrates the types of work that your demo account can do:
@@ -27,6 +27,6 @@ Your administrator account also gives you access to the [!INCLUDE [prod_short](p
 
 * Try out new functionality in preview environments that are available about two months before a major update. For more information, see [Prepare for major updates with preview environments](../../administration/preview-environments.md).  
 
-With your administrator account, you can install apps from AppSource, and you can set up integrations between [!INCLUDE [prod_short](prod_short.md)] and other services. For example, you can add the [!INCLUDE [prod_short](prod_short.md)] app for Microsoft Teams, and you can run the **Set up your Business Inbox in Outlook** assisted setup guide on behalf of the organization. For more information, see [Using [!INCLUDE [prod_short](prod_short.md)] as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook). You can also add [Dynamics 365 Customer Service](/dynamics365/customer-service/index), [Dynamics 365 Sales](/dynamics365/sales-enterprise/overview), [Power Automate](/power-automate/), [Power Apps](/powerapps/), and many more.  
+With your administrator account, you can install apps from AppSource, and you can set up integrations between [!INCLUDE [prod_short](prod_short.md)] and other services. For example, you can add the [!INCLUDE [prod_short](prod_short.md)] app for Microsoft Teams, and you can run the **Set up your Business Inbox in Outlook** assisted setup guide on behalf of the organization as described in the [Use [!INCLUDE [prod_short](prod_short.md)] as your Business Inbox in Outlook](/dynamics365/business-central/admin-outlook) article. You can also add [Dynamics 365 Customer Service](/dynamics365/customer-service/index), [Dynamics 365 Sales](/dynamics365/sales-enterprise/overview), [Power Automate](/power-automate/), [Power Apps](/powerapps/), and many more.  
 
 Some content packs provide additional demonstration data for non-administrator accounts, such as example channels and conversations in Microsoft Teams that can reduce the time needed to customize the experience for a demo. You can log in with the demo user account, often called `meganb@M365B123456.onmicrosoft.com`, or something similar, for the non-administrator experience.  
