@@ -114,21 +114,6 @@ Please include app and all library apps in both previousApps and apps and please
 >
 > You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
-## Manual validation performed by the Business Central validation team
-
-The primary responsibility of the manual validation is to ensure that the apps are working as described.
-
-Manual validation is not done on all submissions. They will be done as sample tests.
-
-For manual validation, we spin up a container with the right artifacts (same as used during technical validation) and the necessary apps are installed. RapidStart packages needed for the manual test are installed.
-
-The manual test validation document is run manually and if the document doesn't match the app functionality the submission is rejected.
-
-> [!Important]  
-> It is recommended that all partners are performing the manual validation as the last check before submitting for validation.
->
-> This can be done either in online sandbox environments or in sandbox Docker containers.
-
 ## How to get more information on the technical validation failures?
 
 Detailed validation results are automatically logged to the ApplicationInsights storage account specified by instrumentation key in the manifest of the main extension in your submission.
