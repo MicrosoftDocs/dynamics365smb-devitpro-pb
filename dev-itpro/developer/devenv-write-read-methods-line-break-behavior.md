@@ -19,7 +19,7 @@ When writing to and reading from a stream object using the Write, WriteText, Rea
 - `Read` Reads until a 0 byte or the specified length of the string.
 - `ReadText` Reads the until a zero byte, an end-of-line, the specified number of bytes, or the maximum length.  
 
-To help understand this, consider the following code examples. These example assume that a BLOB field called `MyBlobField` exists in a table called `MyBlobTable`.
+To help understand this, consider the following code example. This example assumes that a BLOB field called `MyBlobField` exists in a table called `MyBlobTable`.
 
 ```AL
 var
