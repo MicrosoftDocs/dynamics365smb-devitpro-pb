@@ -53,8 +53,8 @@ begin
     CRLF[1] := 13;
     CRLF[2] := 10;
     MyRecord.MyBlobField.CreateOutStream(MyOutStream);
-    MyOutStream.WRITE('A' + CRLF + 'B');
-    MyOutStream.WRITE('C');
+    MyOutStream.Write('A' + CRLF + 'B');
+    MyOutStream.Write('C');
 
     MyRecord.MyBlobField.CreateInStream(MyInStream);
     MyInStream.ReadText(Result); // Reads A
