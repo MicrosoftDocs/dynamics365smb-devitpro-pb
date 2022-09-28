@@ -39,6 +39,17 @@ The destination table field.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+[!INCLUDE[data-transfer](../../../developer/includes/data-transfer.md)]
+
+Use this method to set a constant value for a field when copying data in rows or fields of table to another table. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
+
+## Example
+
+[!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]
+
 ## See Also
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
