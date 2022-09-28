@@ -3,7 +3,7 @@ title: "AccessByPermission Property"
 description: "Sets a value for a table field or UI element that determines the permission mask for an object that a user must have to see and access the related page fields or UI element in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,7 @@ All types of UI elements will be removed if they relate to an object to which th
 -   Page System Part
 -   Page Chart Part
 -   Page Action
+-   Page Custom Action
 -   Page
 -   Report
 

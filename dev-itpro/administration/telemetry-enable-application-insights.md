@@ -75,7 +75,7 @@ For [!INCLUDE [prod_short](../includes/prod_short.md)] online:
 For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, set the **Application Insights Connection String** or **Application Insights Instrumentation Key** setting of the server instance.
 
 ```powershell
-Set-NAVServerConfiguration -ServerInstance BC200 -Tenant tenant1 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
 
