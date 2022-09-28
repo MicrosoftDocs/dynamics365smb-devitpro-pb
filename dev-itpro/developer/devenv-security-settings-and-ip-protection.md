@@ -3,7 +3,7 @@ title: "Resource Exposure Policy Setting"
 description: Explains how to set the resource exposure policy for allowing download or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/24/2022
+ms.date: 10/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Resource Exposure Policy Setting
 
-[!INCLUDE[2021_releasewave2_changed](../includes/2021_releasewave2_changed.md)]
+[!INCLUDE[2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
 
 When you develop an extension, your code is protected against downloading or debugging by default. Read below about adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
