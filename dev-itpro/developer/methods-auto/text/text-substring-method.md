@@ -47,5 +47,5 @@ The substring extracted from this instance.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

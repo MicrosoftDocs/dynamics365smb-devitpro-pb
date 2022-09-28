@@ -54,7 +54,7 @@ page 50110 SalesInvoiceCopy
 
     trigger OnOpenPage()
     begin
-        SetRange("Document Type", "Document Type"::Invoice);
+        rec.SetRange("Document Type", rec."Document Type"::Invoice);
     end;
 
     [ServiceEnabled]
@@ -69,7 +69,7 @@ page 50110 SalesInvoiceCopy
         SalesSetup.Get;
         CopyDocMgt.SetProperties(true, false, false, false, false, SalesSetup."Exact Cost Reversing Mandatory", false);
 
-        FromSalesHeader.Get("Document Type", "No.");
+        FromSalesHeader.Get(rec."Document Type", rec."No.");
         ToSalesHeader."Document Type" := FromSalesHeader."Document Type";
         ToSalesHeader.Insert(true);
 

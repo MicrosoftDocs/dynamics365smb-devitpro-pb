@@ -27,5 +27,5 @@ This rule verifies that the extension name specified in the [app.json](../devenv
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

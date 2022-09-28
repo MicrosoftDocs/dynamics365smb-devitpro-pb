@@ -38,5 +38,5 @@ An XmlNode value that references the current XmlDeclaration.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDeclaration Data Type](xmldeclaration-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

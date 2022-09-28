@@ -356,7 +356,7 @@ This sample app is relatively straightforward, but we want users of your app to 
 
 At an app level, you can specify where the Help for your functionality is published in the app.json file. Then, for each page in your app, you specify a relevant Help file on your targeted website for that particular page. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
-Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *https://mysite.com/documentation*.  
+Open the app.json file, and then change the value of the `contextSensitiveHelpUrl` property to point at the right location on your website. In this example, you publish Help for your app at *`https://mysite.com/documentation`*.  
 
 ```json
 "contextSensitiveHelpUrl": "https://mysite.com/documentation/",
@@ -534,7 +534,7 @@ This walkthrough showed how an extension can be developed. The main AL objects a
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md)  
 [Converting Extensions V1 to Extensions V2](devenv-upgrade-v1-to-v2-overview.md)  
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  

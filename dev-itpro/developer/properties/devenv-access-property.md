@@ -3,12 +3,11 @@ title: "Access Property"
 description: "Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -46,7 +45,7 @@ For table fields there are two additional settings for **Access** and you have t
 |-------------------|-----------------------|
 |Local              |The field can be accessed only by code in the same table or table extension where the field is defined.|
 |Protected          |The field can be accessed only by code in the same table or table extensions of that table.|
-|Public|The object can be accessed by any other code in the same module and in other modules that references it.|
+|Public|The object can be accessed by any other code in the same module and in other modules that references it. It is the default value.|
 |Internal|The object can be accessed only by code in the same module, but not from another module.|
 
 ## Syntax

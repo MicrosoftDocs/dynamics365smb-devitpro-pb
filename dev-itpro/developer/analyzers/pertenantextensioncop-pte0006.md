@@ -37,5 +37,5 @@ You must remove the references to the encryption key methods from your AL code.
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

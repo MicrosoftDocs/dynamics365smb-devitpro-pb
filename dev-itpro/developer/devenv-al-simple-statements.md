@@ -2,7 +2,7 @@
 title: "AL Simple Statements"
 description: "Describes the simple statements in AL for Business Central with examples"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # AL Simple Statements
 
-AL simple statements are single-line statements that are executed sequentially and don't alter the flow of execution of code. This article explains some of the simple statements in AL.
+AL simple statements are single-line statements that are executed sequentially and don't alter the flow of code execution. This article explains some of the simple statements in AL.
 
 ## Assignment statements
 
@@ -22,7 +22,7 @@ Assignment statements assign a value to a variable. The value that you assign to
 You use the ":=" operator for assignment statements.  
 
 ### Example  
-The following example assigns a constant integer value to an integer variable that you've defined.  
+The following example assigns a constant integer value to a variable that you've defined.  
 
 ```AL  
 Count := 1;  
@@ -91,7 +91,7 @@ String += "World";
 ```
 
 ## Method statements
-You use method statements to execute either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
+You use method statements to run either built-in system methods or user-defined (custom) methods. Method calls may include parameters, which are passed to the method. For more information, see [Calling Methods](devenv-al-methods.md#Callmethod). 
 
 ## AssertError statements
 

@@ -179,7 +179,7 @@ You'll create two versions of this extension. The first version contains the tab
     > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. For more information, see [Prerequisites](#prereqs).
 5. Make sure you've installed the latest AL Extension for Visual Studio Code from the version 17 DVD.
 
-   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+   For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
@@ -699,4 +699,4 @@ Don't stop the [!INCLUDE[server](../developer/includes/server.md)] instance unti
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Signing an APP Package File](../developer/devenv-sign-extension.md)  
+[Sign an APP Package File](../developer/devenv-sign-extension.md)  

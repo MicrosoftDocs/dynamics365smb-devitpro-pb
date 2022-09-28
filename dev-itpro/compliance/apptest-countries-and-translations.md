@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 05/18/2022
+ms.date: 07/29/2022
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.author: soalex
@@ -25,6 +25,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 |Country/Region|Localized by|Availability|Environment Country Abbreviation|Azure Region|
 |-----------|---------|------------|-----------|---------|
+|Albania|Partner|November 2022|AL|West Europe|
 |Algeria|Partner|Available|DZ|South Africa North|
 |Angola|Partner|Available|AO|South Africa North|
 |Argentina|Partner|Available|AR|Brazil South|
@@ -53,6 +54,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
 |Finland|Microsoft|Available|FI|North Europe, Ireland|
 |France|Microsoft|Available|FR|France Central|
+|Georgia|Partner|November 2022|GE|West Europe|
 |Germany|Microsoft|Available|DE|Germany West Central|
 |Greece|Partner|Available|GR|West Europe, Netherlands|
 |Greenland (Denmark)|Microsoft|Available|DK|West Europe, Netherlands|
@@ -61,13 +63,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Hong Kong SAR|Partner|Available|HK|Southeast Asia, Singapore|
 |Hungary|Partner|Available|HU|West Europe, Netherlands|
 |Iceland|Microsoft|Available|IS|North Europe, Ireland|
-|Ireland|Partner|Available|IE|North Europe, Ireland|
-|Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
 |India|Microsoft|Available|IN|Central India|
+|Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
+|Ireland|Partner|Available|IE|North Europe, Ireland|
+|Israel (no RTL; English only)|Partner|November 2022|IL|UAE North|
 |Italy|Microsoft|Available|IT|West Europe, Netherlands|
 |Jamaica|Partner|Available|JM|South Central US|
 |Japan|Partner|Available|JP|Japan East, Japan|
+|Jordan|Partner|November 2022|JO|UAE North|
 |Kenya|Partner|Available|KE|South Africa North|
+|Kuwait|Partner|November 2022|KW|UAE North|
 |Latvia|Partner|Available|LV|North Europe, Ireland|
 |Lebanon|Partner|Available|LB|UAE North|
 |Lithuania|Partner|Available|LT|North Europe, Ireland|
@@ -77,12 +82,18 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malta|Partner|Available|MT|West Europe, Netherlands|
 |Mauritius|Partner|Available|MU|South Africa North|
 |Mexico|Microsoft|Available|MX|South Central US|
+|Monaco (France)|Partner|November 2022|MC|France Central|
+|Mongolia|Partner|November 2022|MN|Southeast Asia|
+|Montenegro|Partner|November 2022|ME|West Europe|
 |Morocco|Partner|Available|MA|South Africa North|
 |Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
 |New Zealand|Microsoft|Available|NZ|Australia East|
 |Nicaragua|Partner|Available|NI|Brazil South|
 |Nigeria|Partner|Available|NG|South Africa North|
+|North Macedonia|Partner|November 2022|MK|West Europe|
 |Norway|Microsoft|Available|NO|Norway East|
+|Oman|Partner|November 2022|OM|UAE North|
+|Pakistan|Partner|November 2022|PK|Central India|
 |Panama|Partner|Available|PA|Brazil South|
 |Paraguay|Partner|Available|PY|Brazil South|
 |Peru|Partner|Available|PE|Brazil South|
@@ -108,7 +119,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Thailand|Partner|Available|TH|Southeast Asia, Singapore|
 |Trinidad and Tobago|Partner|Available|TT|Brazil South|
 |Tunisia|Partner|Available|TN|South Africa North|
-|Turkey|Partner|Available|TR|West Europe, Netherlands|
+|Türkiye|Partner|Available|TR|West Europe, Netherlands|
 |Ukraine|Partner|Available|UA|West Europe, Netherlands|
 |United Arab Emirates|Partner|Available|AE|UAE North|
 |United Kingdom|Microsoft|Available|GB|UK West|

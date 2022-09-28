@@ -48,5 +48,5 @@ The name of the imported file.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Blob Data Type](blob-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -3,12 +3,11 @@ title: "RequestFilterHeading Property"
 description: "Sets a caption for the request page tab that is related to this data item."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -48,8 +47,14 @@ Any valid string. If [RequestFilterHeadingML Property](devenv-requestfilterheadi
 
 ```AL
 RequestFilterHeading = 'Entry';
-``` 
-  
+```
+
+Or, with parameters:
+
+```AL
+RequestFilterHeading = 'Entry', Locked = true, Comment = 'Keep like this, do not translate.', MaxLength = 20;
+```
+   
 ## See Also
 
 [Request Pages](../devenv-request-pages.md)  

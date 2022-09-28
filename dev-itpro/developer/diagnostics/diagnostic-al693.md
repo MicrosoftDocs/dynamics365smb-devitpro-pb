@@ -21,5 +21,5 @@ The field '{0}' which is part of the primary key of table '{1}' cannot be obsole
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

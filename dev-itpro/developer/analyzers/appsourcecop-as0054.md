@@ -42,6 +42,6 @@ In order to register your affixes, see [Benefits and Guidelines for using a Pref
 ## See Also  
 
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)
 [Benefits and Guidelines for using a Prefix or Suffix](../../compliance/apptest-prefix-suffix.md)

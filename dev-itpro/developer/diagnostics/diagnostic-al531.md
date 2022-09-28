@@ -21,5 +21,5 @@ The page '{1}' of type 'API' and its subpage '{2}' of type 'API' in the control 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

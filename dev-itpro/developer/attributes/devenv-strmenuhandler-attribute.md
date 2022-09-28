@@ -3,12 +3,11 @@ title: "StrMenuHandler Attribute"
 description: "Specifies that the method is a StrMenuHandler method, which handles StrMenu statements."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -74,7 +73,7 @@ The list of the different option values.
 
 The **StrMenuHandler** method is called when a StrMenu method is invoked in code.
 
-You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information about handler methods, see [Creating Handler Methods](../devenv-creating-handler-methods.md).
+You use handler methods to automate tests by handling instances when user interaction is required by the code that is being tested by the test method. In these instances, the handler method is run instead of the requested user interface. The handler method should simulate the user interaction for the test case, such as validating messages, making selections, or entering values. You declare a handler type attribute on the method. For more information about handler methods, see [Create Handler Methods](../devenv-creating-handler-methods.md).
 
 ## See Also
 

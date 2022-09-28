@@ -1,0 +1,1 @@
+Whether the current company is an evaluation company.

@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
-ms.date: 12/10/2021
+ms.date: 05/31/2022
 ms.author: edupont
 ---
 
@@ -16,24 +16,25 @@ ms.author: edupont
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environments are updated according to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [roadmap](https://dynamics.microsoft.com/roadmap/business-central/) with two major updates in April and October each year, and monthly, minor updates. For more information, see [Major Updates and Minor Updates for Business Central Online](update-rollout-timeline.md) and the [Dynamics 365 Release Plans](/dynamics365/release-plans/).
 
-Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you can use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify certain parameters of the timing of updates for each environment, and you can specify the people who must receive [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates and Minor Updates](update-rollout-timeline.md).  
+Updates of the base application and platform are managed by Microsoft. As an internal administrator or as a partner, you use the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] to specify the timing of updates for each environment and who receives [notifications of when an update is available](#notify). You can also help prepare your solution and your users by creating preview environments so that you can get acquainted with new functionality in the product. For more information, see [Major Updates and Minor Updates](update-rollout-timeline.md).  
 
 ## Set the update window for each environment
 
-The update window for an environment defines a window of time during the day in which the environment can be updated. When an update is rolling out to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, regardless of whether it's the monthly update or a major update, the update will be applied to an environment within the time frame that the update window defines. This helps to ensure that updates are applied outside of the normal business hours of the organization, for example.
+The update window for an environment defines the hours during the day for the selected time zone in which the environment can be updated. When an update is rolling out&mdash;monthly or major update&mdash;it will be applied to an environment within the time frame that the update window defines.
 
-The update window must be a minimum of six hours.
+This window helps ensure updates are applied outside of the normal business hours of the organization. Every environment has a default update window that's between 8:00 PM and 6:00 AM local time for the environment's country. In countries that have multiple time zones, the system sets a time zone that's close to the geographic center of the country as default.
 
+<!--
+ The default time zone is set based on the environment localization and may differ from the administrator's time zone in countries that span multiple time zones.
+-->
 > [!NOTE]
-> Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
+> Desktop users who are signed in during the update will receive an alert in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] before the update starts.
 
-To set the update window for an environment:
+To change the update window for an environment:
 
 1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **Name** of the relevant environment to open the environment details.
 2. Choose the **Update Settings** action, and then choose the **Set update window** action.
-3. In the **Set update window** pane, specify the start time and the end time for the update window for the environment.
-   > [!NOTE]
-   > The update window must be a minimum of six hours.
+3. In the **Set update window** pane, specify the time zone, start time, and end time, for the update window for the environment. The update window must be a minimum of six hours.
 4. Choose **Save**.
 
 This timeslot now becomes the default window when updates will be applied to this environment.
@@ -52,14 +53,11 @@ To schedule an update date:
 2. Choose the **Update Settings** action, and then choose the **Set update date** action.
 3. In the **Schedule Environment Update** pane, specify the update date.
     > [!NOTE]
-    > The specified date must be within a given date range that is shown in the pane.
+    > You can choose to ignore the environment's update window when scheduling a specific update by switching **Allow the update to run outside the update window** to **Yes**. If an update is scheduled for the same day, this option lets it start immediately, and it lets large upgrades run for longer than 24 hours if required.
 
 4. Choose **Schedule Update**.
 
-If an administrator has chosen the **Set update date** action but not set a date, then the update is applied automatically within a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date does not prevent the environment from being updated.
-
-> [!TIP]
-> Starting with 2021 release wave 1, you can also schedule update dates for minor updates.
+If an administrator hasn't picked a date for an update, then the update is applied automatically within a default date range. The default date range is communicated in advance to tenant administrators through administrative notifications. You can then choose to override that with a custom date by following the steps that are provided above. Not selecting an update date doesn't prevent the environment from being updated.
 
 ## <a name="notify"></a>Get notified of updates
 
@@ -68,11 +66,11 @@ For updates that tenant administrators can schedule, a notification is sent to a
 > [!IMPORTANT]
 > [!INCLUDE [admin-notifications](../includes/admin-notifications.md)]
 
-For versions earlier than 2021 release wave 1, admins cannot schedule the monthly minor updates. Until such environments are updated to version 18.0 and later, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.  
+For versions earlier than 2021 release wave 1, admins can't schedule the monthly minor updates. Until such environments are updated to version 18.0 and later, the update is applied to tenant environments as it becomes available. No notifications are sent to tenant administrators prior to the update. Notifications are sent only after the update is applied.  
 
-## Environments that cannot get updated
+## Environments that can't get updated
 
-Sometimes an environment cannot get the new update. For example, a per-tenant extension might conflict with the changes in the new version of the base application.  
+Sometimes an environment can't get the new update. For example, a per-tenant extension might conflict with the changes in the new version of the base application.  
 
 [!INCLUDE [admin-update-pte](../includes/admin-update-pte.md)]
 

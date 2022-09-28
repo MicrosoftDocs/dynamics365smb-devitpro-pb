@@ -3,7 +3,7 @@ title: "Record.AddLoadFields([Any,...]) Method"
 description: "Specifies fields to be initially loaded when the record is retrieved from its data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 06/27/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The FieldNo's of the fields to be loaded.
 ## Remarks
 It is not necessary to include the following fields, because they are always selected for loading: Primary key, SystemId, and data audit fields (SystemCreatedAt, SystemCreatedBy, SystemModifiedAt, SystemModifiedBy).  
 
-Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields to specify depends on the state of the record and table or table extension definition. For example, fields that are filtered upon are always loaded, fields that are referred to in calcformulas in the current table or table extension definition, and so on.
+Depending on the runtime version, the runtime may require extra fields to be selected for loading. Which extra fields to specify depends on the state of the record and table or table extension definition. For example, fields that are filtered upon are always loaded.
 
 This method is part of the partial records capability for improving performance. For more information, see [Using Partial Records](../../devenv-partial-records.md).
 
@@ -55,7 +55,7 @@ The following example code shows how to use the AddLoadFields method to add a fi
 ```al
 trigger OnPreDataItem()
 begin
-    CurrencyDataItem.AddLoadFields(CurrencyDataItem."ISO Numeric Code");
+    CurrencyDataItem.AddLoadFields("ISO Numeric Code");
 end;
 
 trigger OnAfterGetRecord()
@@ -69,5 +69,5 @@ end;
 
 [Using Partial Records](../../devenv-partial-records.md)  
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

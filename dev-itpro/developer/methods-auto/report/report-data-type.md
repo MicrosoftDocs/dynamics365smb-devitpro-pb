@@ -3,7 +3,7 @@ title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/08/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -88,5 +88,5 @@ The following methods are available on instances of the Report data type.
 
 ## See Also  
 [Report Object](../../devenv-report-object.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

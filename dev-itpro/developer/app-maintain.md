@@ -3,7 +3,7 @@ title: "Maintain AppSource apps and per-tenant extensions"
 description: "Learn about resources available to you as the publisher of an app or per-tenant extension for keeping your code in compliance with the base product."
 author: edupont04
 ms.custom: na
-ms.date: 01/31/2022
+ms.date: 08/15/2022
 ms.topic: conceptual
 ms.author: edupont
 ---
@@ -30,7 +30,9 @@ To help app publishers keep up with their update responsibilities, Microsoft pro
 
 - Access to pre-release bits
 
-    Business Central partners have access to the next major, next minor, and daily pre-release bits in Docker. These bits can be used to test apps against upcoming updates.  
+    Business Central partners have access to the next major, next minor, and daily pre-release bits in Docker through [Microsoft Collaborate](https://aka.ms/collaborate). To get access to Collaborate, follow steps 1 and 4 in the [https://aka.ms/bcpublisher](readiness/get-started.md) article. Use the pre-release bits to test apps against upcoming updates.  
+
+    Learn about [the update lifecycle for apps and extensions](devenv-app-life-cycle.md) and [automated extension validation](devenv-customization-update-lifecycle.md#automated-extension-validation). Use the [AppSourceCop analyzer rules](analyzers/appsourcecop.md) to keep your code compliant. Get agile with [AL Go for GitHub](../al-go/algo-overview.md) and stay on top of changes that way.  
 
 - Information about what will be deprecated
 
@@ -61,7 +63,7 @@ We advise these terms include topics like intellectual property rights, upgrade 
 Publishers have several tools available for them to keep their code in good shape. Not least, a Public Preview release is made available approximately one month before the announced release date for a major release. In that Public Preview release time frame, [!INCLUDE [prod_short](includes/prod_short.md)] will automatically test and notify publishers of existing apps and PTEs running in production on technical incompatibility with the upcoming release.  
 
 > [!IMPORTANT]
-> Microsoft tests code based on technical compatibility. As the publisher, you are still responsible for all functional and logical validation.
+> Microsoft tests code based on technical compatibility. As the publisher, you are still responsible for all functional and logical validation. For more information, see [The Lifecycle of Apps and Extensions for Business Central](devenv-app-life-cycle.md).
 
 > [!NOTE]  
 > If an app has been published through AppSource, it should not be tested, installed, or in other ways treated as a PTE since this will create conflicts.
@@ -126,3 +128,5 @@ It is crucial for you to keep contact details correctly up to date. We advise yo
 [Technical Support for Business Central online](../technical-support.md)  
 [Sending Extension Telemetry to Azure Application Insights](devenv-application-insights-for-extensions.md)  
 [Major Updates and Minor Updates for Business Central Online](../administration/update-rollout-timeline.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

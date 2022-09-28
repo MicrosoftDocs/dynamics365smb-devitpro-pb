@@ -48,6 +48,6 @@ With the API for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] you ha
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Data Types and Methods in AL](methods-auto/library.md)

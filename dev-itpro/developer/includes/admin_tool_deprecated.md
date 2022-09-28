@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Starting in Business Central 2022 release wave 2 (v21), the [!INCLUDE [admintool](admintool.md)] is no longer available. Use the [[!INCLUDE [adminshell](adminshell.md)]](../../administration/administration-shell.md) instead. 

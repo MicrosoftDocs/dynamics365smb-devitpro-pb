@@ -90,6 +90,6 @@ In version 2.0, the extension has been renamed from `Extension Name` to `New Ext
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [App Identity](../devenv-app-identity.md)  

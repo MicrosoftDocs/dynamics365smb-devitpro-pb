@@ -56,7 +56,7 @@ begin
     FileTest.Open('c:\MyFolder\MyText.txt');  
     FileTest.CreateInStream(StreamInTest);  
     while not StreamInTest.EOS do begin 
-      StreamInTest.ReadTet(Buffer);  
+      StreamInTest.ReadText(Buffer);  
       //Do some processing  
       Message('Stream is still processing')  
     end;  
@@ -67,5 +67,5 @@ end;
 
 ## See Also
 [InStream Data Type](instream-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

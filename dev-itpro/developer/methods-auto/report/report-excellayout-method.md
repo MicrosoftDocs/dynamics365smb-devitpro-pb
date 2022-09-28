@@ -44,5 +44,5 @@ The variable in which to return the Excel layout.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Report Data Type](report-data-type.md)  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)
+[Get Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)

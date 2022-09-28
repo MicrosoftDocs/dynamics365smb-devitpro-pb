@@ -189,7 +189,7 @@ To complete the example, follow these steps:
                 //Add a data property for the customer number
                 CreditBalanceNotification.SetData('CustNumber', Customer."No.");
                 //Add an action that calls the ActionHandler codeunit, which you define in the next step.
-                CreditBalanceNotification.AddAction('Text004', Codeunit::"ActionHandler", 'OpenCustomer');
+                CreditBalanceNotification.AddAction(Text004, Codeunit::"ActionHandler", 'OpenCustomer');
                 //Send the notification to the client.
                 CreditBalanceNotification.Send();
             end;
@@ -230,4 +230,4 @@ To complete the example, follow these steps:
 ## See Also
 [Notification Data Type](./methods-auto/library.md)   
 [Developing Extensions](devenv-dev-overview.md)   
-[Getting Started with AL](devenv-get-started.md)
+[Get Started with AL](devenv-get-started.md)

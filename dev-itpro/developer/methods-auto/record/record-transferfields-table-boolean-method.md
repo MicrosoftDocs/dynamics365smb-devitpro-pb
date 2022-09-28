@@ -55,5 +55,5 @@ The fields must have the *same data type* for the copying to succeed (text and c
 
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

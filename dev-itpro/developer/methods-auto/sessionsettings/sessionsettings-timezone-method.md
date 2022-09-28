@@ -66,6 +66,6 @@ end;
 ## See Also
 
 [SessionSettings Data Type](sessionsettings-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Managing Time Zones with Web Services](../../../webservices/Managing-Time-Zones-with-Web-Services.md)

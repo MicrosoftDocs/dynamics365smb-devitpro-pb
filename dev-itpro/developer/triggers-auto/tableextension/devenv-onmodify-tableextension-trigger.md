@@ -38,6 +38,6 @@ end;
  We recommend that you do not include code that can stop the user from recording a change in the **OnModify** trigger on a table. For example, do not include code for displaying error messages. If a user has previously changed the contents of some fields in a record, then these changes must always be accepted by the system.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnModify (Table) Trigger](../table/devenv-onmodify-table-trigger.md)

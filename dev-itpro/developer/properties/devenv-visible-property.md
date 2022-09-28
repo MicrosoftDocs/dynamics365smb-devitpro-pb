@@ -3,12 +3,11 @@ title: "Visible Property"
 description: "Sets whether to display the page or control."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -28,6 +27,8 @@ Sets whether to display the page or control.
 -   Page Chart Part
 -   Page Action
 -   Page Action Group
+-   Page Action Ref
+-   Page Custom Action
 -   Page View
 -   Page User Control
 

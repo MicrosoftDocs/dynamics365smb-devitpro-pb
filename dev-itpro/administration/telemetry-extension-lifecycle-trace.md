@@ -178,7 +178,7 @@ Occurs when an extension published successfully on the service. <!--For on-premi
 |---------|-----|
 |eventId|**LC0014**|
 | extensionId|Specifies the ID of the extension that was published.|
-| extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Working with Rapid Application Development](../developer/devenv-rad-publishing.md).|
+| extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
 | extensionId|Specifies the ID of the extension that published.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
@@ -214,7 +214,7 @@ Occurs when an extension failed publish on the service. <!--For on-premises, an 
 |---------|-----|
 |eventId|**LC0015**|
 | extensionId|Specifies the ID of the extension that was published.|
-| extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing only is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Working with Rapid Application Development](../developer/devenv-rad-publishing.md).|
+| extensionIsRad|Specifies whether the extension that was RAD published. **True** indicates the extension was RAD published. **False** indicates normal publishing. <br /><br />RAD (Rapid Application Development) publishing is done from the AL development environment. RAD publishing only is a partial publishing operation that only publishes objects application objects that have changed during development. For more information, see [Work with Rapid Application Development](../developer/devenv-rad-publishing.md).|
 | extensionName|Specifies the name of the extension that published.|
 | extensionId|Specifies the ID of the extension that published.|
 | extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|

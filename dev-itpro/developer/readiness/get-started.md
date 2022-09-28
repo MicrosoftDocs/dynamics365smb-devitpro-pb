@@ -5,7 +5,7 @@ author: a-emniel
 ms.topic: conceptual
 ms.reviewer: edupont
 ms.author: kurtju
-ms.date: 06/01/2022
+ms.date: 08/02/2022
 ms.custom: intro-internal
 ---
 
@@ -35,9 +35,9 @@ For more information, see [Partner Center Account](/partner-center/partner-cente
 
 ### PartnerSource Business Center (PSBC) account
 
-To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer and have a unique development license file with a specific object range.
+To develop apps for [!INCLUDE [prod_short](../includes/prod_short.md)], you're required to be known as a [!INCLUDE [prod_short](../includes/prod_short.md)] developer. You must also have a unique development license file with a specific object range.  
 
-To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must first have access to PartnerSource Business Center (PSBC). You have access to PSBC if you have one of the following agreements:
+To obtain an object range for developing a [!INCLUDE [prod_short](../includes/prod_short.md)] app, you must have access to PartnerSource Business Center (PSBC). Either of the following agreements gives you access to PSBC, which is a first step towards getting a development license:
 
 - [An active Partner Registration Agreement](https://businesscenter.mbs.microsoft.com/#contentdetail/MSDpartneragreem) (PRA)
 
@@ -55,7 +55,7 @@ The relevant contract can be requested through your local Regional Operations Ce
 
 ### Requesting an object range
 
-When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds a certain number of objects for your solution. To avoid overlap between objects used in different solutions, each partner is assigned a number of objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
+When you develop an app for [!INCLUDE [prod_short](../includes/prod_short.md)], you must request access to an object range that holds some objects for your solution. To avoid overlap between objects used in different solutions, each partner is assigned many objects in a unique object range. For example, a partner is assigned the object range 70,001,000 – 70,001,999. The object range gives them 1000 numbered objects that they can use to develop [!INCLUDE [prod_short](../includes/prod_short.md)] solutions.
 
 Depending on where you'll deploy your [!INCLUDE [prod_short](../includes/prod_short.md)] solution, online or on-premises, you can use different licensing methods and object ranges.  
 
@@ -119,7 +119,7 @@ To add coworkers:
 
 ### Step 4 B: Getting access to the available builds and engagements
 
-Once you have successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
+Once you have successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
 
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|
@@ -154,9 +154,9 @@ Find below some guiding resources on how to develop your apps for [!INCLUDE [pro
 
 ### Set up DevOps processes for your project
 
-It is recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
+It's recommended that all partners set up DevOps processes to ensure that this validation process happens automatically and regularly.
 
-You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for Github: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
+You can find resources for how to set up full plug-and-play DevOps processes using AL-Go for GitHub: [https://aka.ms/AL-Go](https://aka.ms/AL-Go).
 
 ## Step 6: Publish your app in the Microsoft commercial marketplace
 
@@ -170,4 +170,6 @@ Before you submit, we recommend that you review the [technical validation checkl
 [The Lifecycle of Apps and Extensions for [!INCLUDE [prod_short](../includes/prod_short.md)]](../devenv-app-life-cycle.md)  
 [Update Lifecycle for AppSource Apps FAQ](../devenv-update-app-life-cycle-faq.md)  
 [Maintain AppSource Apps and Per-Tenant Extensions in [!INCLUDE [prod_short](../includes/prod_short.md)] Online](../app-maintain.md)  
-[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)
+[Microsoft Responsibilities for Apps on [!INCLUDE [prod_short](../includes/prod_short.md)] online](../../deployment/microsoft-responsibilities.md)  
+
+[!INCLUDE [footer-banner](../../includes/footer-banner.md)]
