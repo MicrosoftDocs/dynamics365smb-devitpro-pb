@@ -39,6 +39,19 @@ The destination table field.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+[!INCLUDE[data-transfer](../../../developer/includes/data-transfer.md)]
+
+Use this method to create a join condition between tables when copying fields from one table to the other. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
+
+This method isn't needed when copying withing the same table.
+
+## Example
+
+[!INCLUDE[data-transfer-example-copy-fields](../../../developer/includes/data-transfer-example-copy-fields.md)]
+
 ## See Also
 [DataTransfer Data Type](datatransfer-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

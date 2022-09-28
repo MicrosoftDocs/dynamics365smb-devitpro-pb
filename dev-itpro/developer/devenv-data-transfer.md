@@ -10,25 +10,75 @@ ms.author: jswymer
 ms.date: 07/29/2022
 ---
 
-# Transferring Data as Part of Upgrade
+# Transferring Data Between Tables using DataTransfer
 
-The DataTransfer object is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, it produces SQL code that operates on sets. This behavior allows for far more performant execution.
+[DataTransfer](methods-auto/datatransfer/datatransfer-data-type.md) is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, DataTransfer produces SQL code that operates on sets. This behavior improves the performance when moving data during upgrade. 
 
-> [!IMPORTANT]
-> DataTransfer object can only be used in upgrade code and it will throw an runtime error if used outside of upgrade codeunits.  
+For comparison, the following code illustrates how to copy rows using the record API:
+
+```AL
+local procedure CopyRows()
+var
+  from: Record FromTable;
+  to: Record ToTable;
+begin
+  if from.Find() then
+  repeat
+    to.SmallCodeField := from.SmallCodeField;
+    to.IntField := from.IntField;
+    to.id  := from.id;
+    to.Insert();
+  until (from.Next() = 0)
+end;
+```
+
+The same can be done using DataTransfer:
+
+```al
+local procedure CopyRows()
+var
+  dt : DataTransfer;
+  to : Record ToTable;
+begin
+  dt.SetTables(Database::FromTable, Database::ToTable);
+  dt.AddFieldValue(2, to.FieldNo("SmallCodeField"));
+  dt.AddFieldValue(3, to.FieldNo("IntField"));
+  dt.AddFieldValue(1, to.FieldNo("id"));
+  dt.CopyRows();
+end;
+```
 
 ## Usage and behavior
 
-DataTransfer uses a builder style pattern, where you:
+The DataTransfer object can be used for essentially two operations: 
 
-1. Specify the source and destination tables by calling the SetTables.
-2. Specify which fields to transfer or set to a constant value by calling the AddFieldValue or AddConstantValue, respectively.
-3. Specify the rows to transfer by calling AddSourceFilter.
-4. Execute the query for transferring data by calling CopyFields or CopyRows.
+- Copy data from one or more fields in a table to fields another table. A typical scenario is when you've made a field obsolete.
+- Copy data from entire rows in a table to rows in another table. A typical scenario is when you've made a table obsolete.
 
-Because DataTransfer operates in bulk and not on a row-by-row basis, no row based events or triggers will be executed. For example, when calling CopyFields, none of the following events will be called: OnBeforeModify, OnModify, or OnAfterModify. Or, when calling CopyRows, none of the following events will be called: OnBeforeInsert, OnInsert, or OnAfterInsert.
+> [!IMPORTANT]
+> The DataTransfer object can only be used in upgrade code and it will throw an runtime error if used outside of upgrade codeunits.  
 
-## CopyFields
+The DataTransfer object can't be used on the following tables:
+
+- Non-SQL tables
+- System tables
+- Virtual tables
+- Audited tables as the destination 
+- Obsoleted tables as the destination
+
+## Design guideline
+
+DataTransfer uses a builder design pattern that, in general, requires that you complete the following steps:
+
+1. Specify the source and destination tables by calling the [SetTables](methods-auto/datatransfer/datatransfer-settables-method.md).
+2. Specify which fields to transfer or constant values by calling the [AddFieldValue](methods-auto/datatransfer/datatransfer-addfieldvalue-method.md). Or you can set a constant value for fields in the destination using [AddConstantValue](methods-auto/datatransfer/datatransfer-addconstantvalue-method.md), respectively.
+3. Define the relationship between the source and destination tables by calling [AddJoin](methods-auto/datatransfer/datatransfer-addjoin-method.md). In most cases, this method is required for copying fields.
+4. Add constraints on the data to transfer by calling [AddSourceFilter](methods-auto/datatransfer/datatransfer-addsourcefilter-method.md).
+5. Invoke the query for transferring data by calling [CopyFields](methods-auto/datatransfer/datatransfer-copyfields-method.md) or [CopyRows](methods-auto/datatransfer/datatransfer-copyrows-method.md).
+
+Because DataTransfer operates in bulk and not on a row-by-row basis, row based events or triggers won't be executed. For example, when calling CopyFields, none of the following events will be called: OnBeforeModify, OnModify, or OnAfterModify. Or, when calling CopyRows, none of the following events will be called: OnBeforeInsert, OnInsert, or OnAfterInsert.
+
+## Copy fields
 
 Calling CopyFields on the DataTransfer object will copy selected fields from one table (the source) to another table (the destination). Unless you're copying with the same source and destination table, specifying a join condition is necessary. The join condition specifies how to match rows from the source with rows from the destination table.
 
@@ -86,9 +136,9 @@ end;
 
 ### Performance
 
-The same scenario could also be coded using the record API, by first looping over all rows in the **Source**table with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
+The same scenario could also be coded using the record API, by first looping over all rows in the **Source** table with a filter on field **S2**, then for each match, calling Get on the destination record, setting the fields, and calling Modify.
 
-The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measurements for DataTransfer and record API solutions have shown an ~200x  performance improvement for DataTransfer. These gains will be even greater if the destination table has modify triggers or if the environment has significant latency to SQL.
+The record-based solution executes three SQL operations per-row, while the DataTransfer does a maximum of two SQL queries altogether. Measurements for DataTransfer and record API solutions have shown an ~200x  performance improvement for DataTransfer. Gains are even greater if the destination table has modify triggers or if the environment has significant latency to SQL.
 
 ### Uniqueness in the source table
 
@@ -101,9 +151,9 @@ The join condition can be specified on arbitrary fields, which leaves the possib
 | 3  | C  | B  | 44 |
 | 4  | D  | B  | 45 |
 
-## CopyRows
+## Copy rows
 
-Calling CopyRows on the DataTransfer object inserts a row in the destination table for each matching row in the specified source table. Fields in the inserted row are populated with values specified by calling AddFieldValue or AddConstantField. Fields not specified by AddFieldValue or AddConstantField are populated with the field's [InitValue](properties/devenv-initvalue-property.md), if any, or the field type's default value.
+Calling CopyRows on the DataTransfer object inserts a row in the destination table for each matching row in the source table. Fields in the inserted row are populated with values specified by calling AddFieldValue or AddConstantField. Fields not specified by AddFieldValue or AddConstantField are populated with the field's [InitValue](properties/devenv-initvalue-property.md) or the field's default value.
 
 If the code tries to copy a row from the source table that has the same primary key as an existing row in the destination table, a runtime error will be thrown.
 
@@ -143,11 +193,11 @@ To help explain CopyRows, consider an example using sample tables **Source** and
 In this code example, you copy the **PK** and **S3** fields for all rows where **S2** equals *A* and add them as new rows in the **Destination** table. You use AddConstantValue method to give the field **D2** the value *X* in the inserted rows.
 
 ```AL
-local procedure InsertTheRows()
+local procedure CopyRows()
 var
     dt: DataTransfer;
-    dest : Record Destination;
     src: Record Source;
+    dest : Record Destination;
 begin
     dt.SetTables(Database::Source, Database::Destination);
     dt.AddFieldValue(src.FieldNo("PK"), dest.FieldNo("PK"));
@@ -158,7 +208,7 @@ begin
 end;
 ```
 
-### Performance
+### Performance 
 
 As with CopyFields, CopyRows is a bulk operation. It provides performant execution by doing only a single SQL statement for the entire operation, instead of doing multiple per-row operations. Measurements have shown an ~50x performance improvement with a DataTransfer solution compared with a record API solution.
 
