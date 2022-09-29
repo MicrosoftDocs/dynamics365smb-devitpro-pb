@@ -569,7 +569,6 @@
 ##### Permission Set
 ###### [Permissionset](developer/devenv-permissionset-object.md)
 ###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
-###### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 ##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
 ##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
 
@@ -678,7 +677,6 @@
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
 ##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
-
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
@@ -696,6 +694,15 @@
 ##### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ##### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
+
+### Permissions and Permission Sets
+#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+#### [Composing Permission Sets](developer/devenv-permissionset-composing.md)
+#### [Permissionset Object](developer/devenv-permissionset-object.md)
+#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
+#### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+#### [Inherent Permissions](developer/devenv-inherent-permissions.md)
+#### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event Types](developer/devenv-event-types.md)
