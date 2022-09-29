@@ -3,7 +3,7 @@ title: "Snapshot Debugging"
 description: "Overview of how snapshot debugging allows recording running AL code for Business Central"
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 07/29/2022
+ms.date: 08/24/2022
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -127,7 +127,12 @@ There are two user actions that will start snapshot debugging:
 
 Once a snapshot debugging session starts in Visual Studio Code, code execution will stop at the first snappoint. AL exceptions will be treated as snappoints, with the only difference that they can't be removed by the user actions. Other snappoints are regular breakpoints that can be removed or readded by the user actions. If no snappoints are specified in the first recorded methods; the first line is the entry breakpoint. 
 
-The user can set breakpoints and continue execution to these breakpoints for testing because a snappoint is what carries the real information, so a line can be hit.
+The user can set breakpoints and continue execution to these breakpoints for testing because a snappoint is what carries the real information, so a line can be hit. 
+
+[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+During snapshot debugging playback, the left-side code editor gutter contains a vertical visual bar to indicate which code was executed in the snapshot capture. The color of the gutter bar can be controlled using the new *al.snapshotDebuggerLinesHitDecoration* in the settings.json file. For more information, see [JSON Files](devenv-json-files.md).
+
 
 ## Snapshot debugging the built-in codeunit triggers
 

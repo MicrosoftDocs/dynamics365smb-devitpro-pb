@@ -1,0 +1,1 @@
+The license state of the tenant.

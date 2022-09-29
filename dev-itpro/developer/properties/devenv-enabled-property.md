@@ -3,7 +3,7 @@ title: "Enabled Property"
 description: "Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,6 +29,7 @@ Sets a value that indicates whether a field or key is enabled or disabled, or wh
 -   Page Chart Part
 -   Page Action
 -   Page Action Group
+-   Page Custom Action
 -   Profile
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

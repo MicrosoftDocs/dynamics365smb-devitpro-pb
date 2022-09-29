@@ -3,7 +3,7 @@ title: "Permission Set Object"
 description: "Description of the permission set object in AL for Business Central    ."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,6 +30,12 @@ If a permission set is extended through AL, that extension will make additive ch
 Typing the shortcut `tpermissionset` will create the basic layout for a permission set object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
+
+## Generate permission set for an object
+
+[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+When adding new AL objects, it's easy to forget to update the permissions. With the `al.generatePermissionSetForExtensionObjects` command, you can generate or update a permission file for the active project in Visual Studio Code. Choose to create a new permission file or select an existing file to make updates to. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 ## Permission set example
 
