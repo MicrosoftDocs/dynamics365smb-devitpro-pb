@@ -20,7 +20,7 @@ There are different approaches to creating permission sets.
 
 ### Fundamental permission sets
 
-One approach is to create a kind of self-contained permissions set that includes all the permissions you want to grant to specific data and objects. These permissions are defined explicitly in the [Permissions property](properties/devenv-permissions-property.md) of the permission set or permission set extension object. This approach creates a structure considered to be flat structure.
+One approach is to create a kind of self-contained permission set that includes all the permissions you want to grant to specific data and objects. These permissions are defined explicitly in the [Permissions property](properties/devenv-permissions-property.md) of the permission set or permission set extension object. This approach creates a structure considered to be flat structure.
 
 ![Shows a flat-structured permission set.](media/permission-compose-flat-v2.png)
 
@@ -28,7 +28,7 @@ The disadvantage with this approach by itself is that if you have to change a pe
 
 ### Composite permission sets
 
-Another approach is to use the [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) and [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to create permissions sets that are composed of the other permission sets. Any changes made to the included or excluded permission sets are automatically propagated to the permission sets that use them. In this manner, you create permission sets that have hierarchical structure, as illustrated in the following figure. Looking at the figure, permission set 5 is composed from all permission sets, minus the permissions in permission set 3.
+Another approach is to use the [IncludedPermissionSets property](properties/devenv-includedpermissionsets-property.md) and [ExludedPermissionSets property](properties/devenv-excludedpermissionsets-property.md) to create permission sets that are composed of the other permission sets. Any changes made to the included or excluded permission sets are automatically propagated to the permission sets that use them. In this manner, you create permission sets that have hierarchical structure, as illustrated in the following figure. Looking at the figure, permission set 5 is composed from all permission sets, minus the permissions in permission set 3.
 
 ![Shows the hierarchy of a permission set that includes several other permission sets.](media/permission-sets-hierarchy-v2.png)
 
@@ -36,9 +36,9 @@ Composite permission sets are easier to maintain and keep up-to-date compared to
 
 ### Bringing approaches together
 
-Ultimately, you'll use a combination of these approaches to meet your permission requirements. Many of the default permissions sets from Microsoft follow this approach. The following figure illustrates how different permission sets (in this case, standard Dynamics 365 permissions sets) can be used to compose two custom permission sets (EMPLOYEE and HR). The permission sets have been simplified for illustration purposes.
+Ultimately, you'll use a combination of these approaches to meet your permission requirements. Many of the default permission sets from Microsoft follow this approach. The following figure illustrates how different permission sets (in this case, standard Dynamics 365 permission sets) can be used to compose two custom permission sets (EMPLOYEE and HR). The permission sets have been simplified for illustration purposes.
 
-![Shows an example of two custom permissions sets based on standard D365 permission sets.](media/composed-permission-sets-v3.png)
+![Shows an example of two custom permission sets based on standard D365 permission sets.](media/composed-permission-sets-v3.png)
 
 ## Include permission sets
 
@@ -92,7 +92,7 @@ codeunit AccSchedManagement= X;
 
 ## Exclude permission sets
 
-With the `ExludedPermissionSets` property, you can remove permissions that are defined in other permission sets from your permission set. The `ExcludePermissionSets` property isn't supported on permission set extension objects. 
+With the `ExludedPermissionSets` property, you can remove permissions that are defined in other permission sets from your permission set. The `ExcludePermissionSets` property isn't supported on permission set extension objects.
 
 The following code example illustrates how to use the `ExcludePermissionSets` property. 
 
@@ -129,10 +129,10 @@ Composing permission sets supports security filters. Excluding permission sets c
 This section explains points that can help you get the resultant permissions that you want.
 
 - Permissions are determined by working up the hierarchy, adding or removing permissions at each level.
-- Exclude permissions take precedence over included permissions when applied on the same level. If an excluded permission set and included permission set define the same permissions, the excluded permission set permissions will be used, overriding the included permissions set permissions.
+- Exclude permissions take precedence over included permissions when applied on the same level. If an excluded permission set and included permission set define the same permissions, the excluded permission set permissions will be used, overriding the included permission set permissions.
 - Direct permissions will override indirect permissions.
 
-The following table shows how the permissions are determined on a single object when included and excluded permissions sets are used:
+The following table shows how the permissions are determined on a single object when included and excluded permission sets are used:
 
 |Permission Set A|Permission Set B|Result|
 |----------------|----------------|------|
