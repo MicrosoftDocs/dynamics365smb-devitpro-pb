@@ -71,7 +71,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name or qualified name of a variable to inspect at the prompt and then press **Enter**.
+Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name, or qualified name of a variable to inspect at the prompt and then press **Enter**.
 
 ## Attach and Debug Next
 
@@ -115,7 +115,7 @@ In the **VARIABLES** pane in debugger, expand the **\<Database statistics\>** no
 
 ### View locks held
 
-The Locks part of the database statistics shows an overview of the SQL locks held by the debugged session. The insight can be used to understand the locks acquired while stepping through AL code. The access mode of the lock is also provided, which allows advanced developers to establish concurrency compatiblity with other operations.
+The Locks part of the database statistics shows an overview of the SQL locks held by the debugged session. The insight can be used to understand the locks acquired while stepping through AL code. The access mode of the lock is also provided, which allows advanced developers to establish concurrency compatablity with other operations.
 
 ### View SQL statement statistics
 
