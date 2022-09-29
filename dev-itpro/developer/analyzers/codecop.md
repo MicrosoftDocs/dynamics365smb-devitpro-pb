@@ -87,7 +87,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0235](codecop-aa0235.md)|When using 'OnInstallPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
-|[AA0241](codecop-aa0241.md)|Use all lowercase letters for reserved language keywords.|Readability|Warning|
+|[AA0241](codecop-aa0241.md)|Use all lowercase letters for reserved language keywords.|Readability|Hidden|
 |[AA0242](codecop-aa0242.md)|Limit JIT loads by selecting all fields for load.|Design|Warning|
 |[AA0243](codecop-aa0243.md)|Running an upgrade codeunit is not allowed.|Design|Warning|
 |[AA0244](codecop-aa0244.md)|Do not use identical names for parameters and global variables.|Design|Warning|
