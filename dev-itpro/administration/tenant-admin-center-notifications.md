@@ -89,7 +89,7 @@ This Logic App runs a query that returns any failed environment updates ever num
 ##### Post adaptive card in Teams channel for each available environment update
 
 This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a given Microsoft Teams channel for every environment that has an update available. Based on the user choice, the Logic App will call Business Central Admin Center API using an authorized S2S AAD app (configuration details specified in the deployment). The adaptive card gives the user four choices:
-- Schedule the update as soon as possible (“Run Now”), ignoring update window settings for the environment.
+- Schedule the update as soon as possible ("Run Now"), and allowing update to start outside of the update window for the environment.
 - Reschedule the update for a given day.
 - Ignore information about the update and close the card.
 - Open Admin Center UI.
