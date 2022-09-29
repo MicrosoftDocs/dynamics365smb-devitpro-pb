@@ -12,7 +12,7 @@ author: jswymer
 
 # Application Security in Business Central
 
-This section helps you understand and improve the security of your Business Central application regardless of where it's hosted. In the articles<!--note from editor: I don't understand why the sections of this article are called "articles," but the articles are called "sections."--> listed below, you'll find guidance and recommended practices related to authentication, authorization, and auditing, in addition to<!--note from editor: Via Microsoft Writing Style Guide.--> data encryption and secure development practices that can be applied to any Business Central environment.
+This section helps you understand and improve the security of your Business Central application regardless of where it's hosted. In the sections listed below, you'll find guidance and recommended practices related to authentication, authorization, and auditing, in addition to data encryption and secure development practices that can be applied to any Business Central environment.
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses a layered approach to application security, as outlined in the following diagram.
 
@@ -20,7 +20,7 @@ This section helps you understand and improve the security of your Business Cent
 
 ## Authentication
 
-Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises)<!--note from editor: Via Cloud Style Guide.--> supports several authentication methods, such as Windows and Azure Active Directory (Azure AD). Business Central online deployments<!--note from editor: Suggested, but perhaps not optimal. "Business Central" is the online product, not "Business Central Online." I see other articles use "Business Central online...", which has the advantage of being parallel with "(on-premises)" but somehow doesn't sound right to me.--> use Azure AD only. For more information, see the following articles:
+Before users can sign in to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application, they must be authenticated as a valid user in the system. Business Central (on-premises) supports several authentication methods, such as Windows and Azure Active Directory (Azure AD). Business Central online deployments use Azure AD only. For more information, see the following articles:
 
 [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions)
 
@@ -34,7 +34,7 @@ The authentication method configured for Business Central Server is also used to
 
 ## Authorization
 
-After<!--note from editor: Via MWSG.--> a user is authenticated, authorization determines which areas the user can access, such as the pages and reports they can open and the permissions they have on associated data. For more information, see the following articles:
+After a user is authenticated, authorization determines which areas the user can access, such as the pages and reports they can open and the permissions they have on associated data. For more information, see the following articles:
 
 [User Permissions in the Application](user-security.md#user-permissions-in-the-application)
 
@@ -62,16 +62,15 @@ After<!--note from editor: Via MWSG.--> a user is authenticated, authorization d
 
 [Data Classification](/dynamics365/business-central/admin-classifying-data-sensitivity)
 
-<!--note from editor: Why is the following H2 not sentence case, as they often are in other files?-->
-## Data Encryption
+## Data encryption
 
 You can encrypt data on the Business Central server by generating new encryption keys&mdash;or importing existing ones&mdash;that you enable on the Business Central server instance that connects to the database. For more information, see [Encrypting Data in Dynamics 365 Business Central](../developer/devenv-encrypting-data.md).
 
 <!-- [Data encryption](/dynamics365/business-central/admin-manage-data-encryption)-->  
 
-## Security Development Lifecycle
+## Security development lifecycle
 
-The Microsoft<!--note from editor: Edited to echo the wording on the target page. Also to avoid possessive.--> Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
+The Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. For more information, see [Security Development Lifecycle](https://www.microsoft.com/sdl).  
 
 ## See Also  
 
