@@ -13,9 +13,8 @@ ms.date: 04/01/2021
 ---
 
 # Business Central Security 
-<!--note from editor: Please see editor's note in security-application.md-->
-This section helps you understand and improve the security of your Dynamics 365 Business Central tenant. In the links below you'll find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You'll also find information on Business Central certifications and regulatory compliance.<!--note from editor: Via MWSG, no possessive with product names.-->
 
+This section helps you understand and improve the security of your Dynamics 365 Business Central tenant. In the links below you'll find information, guidance, and recommended practices related to authentication, data encryption, and safely integrating with other services. You'll also find information on Business Central certifications and regulatory compliance.
 
 ## Authentication
  
@@ -23,8 +22,7 @@ Business Central uses Azure Active Directory (Azure AD) as the authentication me
 
 ## Data isolation and encryption
 
-Data belonging to a single tenant is stored in an isolated database and is never mixed with data from other tenants. This ensures complete isolation of data in day-to-day use and in backup/restore scenarios.
-Furthermore, Business Central uses encryption to help protect tenant data in the following ways:
+Data belonging to a single tenant is stored in an isolated database and is never mixed with data from other tenants. This ensures complete isolation of data in day-to-day use and in backup/restore scenarios. Furthermore, Business Central uses encryption to help protect tenant data in the following ways:
 
 - Data at rest is encrypted by using Transparent Data Encryption (TDE) and backup encryption.
 - Data backups are always encrypted.
