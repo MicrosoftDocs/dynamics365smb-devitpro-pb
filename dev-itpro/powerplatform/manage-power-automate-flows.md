@@ -5,8 +5,8 @@ author: javariya
 ms.custom: na
 ms.reviewer: na
 ms.topic: 
-ms.date: 08/30/2022
-ms.author: a-jaaamir
+ms.date: 10/01/2022
+ms.author: solsen
 ---
 
 # Manage Power Automate Flows 
