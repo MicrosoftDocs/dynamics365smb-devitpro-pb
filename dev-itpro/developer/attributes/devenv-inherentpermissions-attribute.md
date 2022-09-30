@@ -40,7 +40,7 @@ Specifies the permissions assigned to the scope of the method.
 ```
 
 >[!NOTE]
-> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../developer/methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
+> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
 ### Arguments
 *PermissionObjectType*  
