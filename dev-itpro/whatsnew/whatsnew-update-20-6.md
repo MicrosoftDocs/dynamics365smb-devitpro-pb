@@ -35,7 +35,7 @@ Dynamics 365 Business Central 2022 release wave 2 will be released on October 3,
 
 The Business Central Launch Event will take place from October 10-12, 2022. During the three days, you’ll be able to watch sessions, ask questions and participate in live Q&As. After October 12, all sessions will be available on-demand until January 2023.
 
-**Register now**: [aka.ms/BCLE](aka.ms/BCLE)
+**Register now**: [aka.ms/BCLE](https://aka.ms/BCLE)
 
 **Important: Take action before October 31 to retain your delegated admin access to your customers**  
 With [this Partner Center announcement](/partner-center/announcements/2022-february#6) earlier this year, Microsoft introduced the [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) feature. GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
