@@ -3,7 +3,7 @@
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+### [Business Central on Microsoft Training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Scenarios for Contoso Coffeee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -65,6 +65,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 ### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 ### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
 ### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
