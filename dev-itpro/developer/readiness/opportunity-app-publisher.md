@@ -17,7 +17,7 @@ Our mission is to empower every individual and every organization on the planet 
 
 [Dynamics 365 Business Central](https://dynamics.microsoft.com/business-central/partners/) is an all-in-one business management solution that connects operations for SMBs. It ensures business continuity with a cloud solution that connects sales, service, finance, and operations to help teams adapt faster and deliver result. [!INCLUDE[prod_short](../includes/prod_short.md)] provides app publishers with a modern business platform that can easily connect to, extend and build on—with little to no code required.  
 
-## Microsoft AppSource
+## The Microsoft commercial marketplace
 
 [Microsoft AppSource](https://appsource.microsoft.com/) is part of Microsoft's commercial marketplace where customers can find, try to get business solutions apps. It's the launch pad for your joint go-to-market activities with Microsoft and a medium for business growth. By using launch promotion, demand generation, and joint sales and marketing, your offer portfolio on AppSource can be the centerpiece of your cloud business engine.  
 

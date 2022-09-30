@@ -3,7 +3,7 @@ title: "Visible Property"
 description: "Sets whether to display the page or control."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,7 @@ Sets whether to display the page or control.
 -   Page Action
 -   Page Action Group
 -   Page Action Ref
+-   Page Custom Action
 -   Page View
 -   Page User Control
 
