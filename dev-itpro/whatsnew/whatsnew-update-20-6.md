@@ -28,6 +28,13 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**Join us for the Business Central Launch Event on October 10-12, 2022**  
+Dynamics 365 Business Central 2022 release wave 2 will be released on October 3, after which new customers will be able to sign up for version 21 of Business Central. To learn all about what's new in the latest release, we're again bringing the latest innovations for Business Central to you via an all-access digital experience. 
+
+The Business Central Launch Event will take place from October 10-12, 2022. During the three days, you’ll be able to watch sessions, ask questions and participate in live Q&As. After October 12, all sessions will be available on-demand until January 2023.
+
+**Register now**: [aka.ms/BCLE](aka.ms/BCLE)
+
 **Important: Take action before October 31 to retain your delegated admin access to your customers**  
 With [this Partner Center announcement](/partner-center/announcements/2022-february#6) earlier this year, Microsoft introduced the [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) feature. GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
 
@@ -36,11 +43,6 @@ The Partner Center team has now announced the timeline by which you need to migr
 To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
 
 You can watch the GDAP Office Hours recording for Business Central [here](https://www.microsoft.com/en-us/videoplayer/embed/RE4VIqN).
-
-**Plan and prepare for Dynamics 365 Business Central 2022 release wave 2**  
-The preview of Dynamics 365 Business Central 2022 release wave 2 will go live on August 31. Use Microsoft Collaborate to submit your feedback or to report any potential issues that you discover in the preview. Discover how to do so here: [aka.ms/BCPreview](https://aka.ms/BCPreview). In addition, we have created a new subgroup on Yammer called [Public Preview 2022 release wave 2](https://www.yammer.com/dynamicsnavdev/#/threads/inGroup?type=in_group&feedId=118080200704&view=all), which can be used to share feedback directly with the Microsoft product team or ask questions related to the preview. 
-
-On October 1, 2022, the release will go live. You can discover what's new and planned here: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan)
 
 **Business Central newsletter for partners**  
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
