@@ -27,8 +27,13 @@ Sets the lists of other permission sets that are excluded in this permission set
 ExcludedPermissionSets = BASIC;
 ```
 
-[//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
+[//]: # (END>DO_NOT_EDIT)
+
+## Remarks
+
+You can also include permission sets by using the [IncludedPermissionSets](devenv-includedpermissionsets-property.md). For more information, see [Composing Permission Sets](../devenv-permissionset-composing.md).
+
+## See Also
 
 [PermissionSet Object](../devenv-permissionset-object.md)  
 [Getting Started with AL](../devenv-get-started.md)  

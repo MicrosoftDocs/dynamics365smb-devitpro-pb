@@ -15,7 +15,7 @@ ms.topic: article
 
 ## Get started with development and administration documentation
 
-The content in this section of the Docs.microsoft.com site is intended for people who are [!INCLUDE [prod_short](developer/includes/prod_short.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prod_short](developer/includes/prod_short.md)] development or administration. If you are a functional consultant or user of [!INCLUDE [prod_short](developer/includes/prod_short.md)], check out the [Business Functionality Help](/dynamics365/business-central/index) instead.  
+The content in this section of the learn.microsoft.com site is intended for people who are [!INCLUDE [prod_short](developer/includes/prod_short.md)] resellers, administrators, or developers, and people who want to get started with [!INCLUDE [prod_short](developer/includes/prod_short.md)] development or administration. If you are a functional consultant or user of [!INCLUDE [prod_short](developer/includes/prod_short.md)], check out the [Business Functionality Help](/dynamics365/business-central/index) instead.  
 
 ## Resources for an administrator
 

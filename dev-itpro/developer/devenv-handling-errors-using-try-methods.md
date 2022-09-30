@@ -2,7 +2,7 @@
 title: "Handling Errors by Using Try Methods"
 description: Try methods in AL enable you to handle errors that occur in the application during code execution.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/28/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,29 +12,29 @@ author: SusanneWindfeldPedersen
 
 # Handling Errors using Try Methods
 
-Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those thrown by the system.  
+Try methods in AL enable you to handle errors that occur in the application during code execution. For example, with try methods, you can provide more user-friendly error messages to the end user than those that are thrown by the system.  
 
 > [!NOTE]
 > Try Methods are available from runtime version 2.0.
 
 ## Behavior and usage
 
-The main purpose of try methods is to catch errors/exceptions that are thrown by [!INCLUDE[prod_short](includes/prod_short.md)] or exceptions that are thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional Codeunit.Run method call, except try method calls do not require that write transactions are committed to the database, and changes to the database that are made with a try method are not rolled back.
+The main purpose of try methods is to catch errors/exceptions that are thrown by [!INCLUDE[prod_short](includes/prod_short.md)] or exceptions that are thrown during .NET Framework interoperability operations. Try methods catch errors similar to a conditional Codeunit. Except for the try method, the Run method call doesn't require that write transactions are committed to the database, and changes to the database that are made with a try method aren't rolled back.
 
 ### <a name="DbWriteTransactions"></a>Database write transactions in try methods
 
-Because changes made to the database by a try method are not rolled back, you should not include database write transactions within a try method. By default, the [!INCLUDE[server](includes/server.md)] configuration prevents you from doing this. If a try method contains a database write transaction, a runtime error occurs.
+Because changes made to the database by a try method aren't rolled back, you shouldn't include database write transactions within a try method. By default, the [!INCLUDE[server](includes/server.md)] configuration prevents you from doing this. If a try method contains a database write transaction, a runtime error occurs.
 
 ### Handling errors with a return value
 
-A method that is designated as a try method has a Boolean return value (**true** or **false**), and has the construction `OK:= MyTrymethod`. A try method cannot have a user-defined return value.
+A method that is designated as a try method has a Boolean return value (**true** or **false**), and has the construction `OK:= MyTrymethod`. A try method can't have a user-defined return value.
 
-- If a try method call does not use the return value, the try method operates like an ordinary method and errors are exposed as usual.  
+- If a try method call doesn't use the return value, the try method operates like an ordinary method, and errors are exposed as usual.  
 
 - If a try method call uses the return value in an `OK:=` statement or a conditional statement such as `if-then`, errors are caught. The try method returns `true` if no error occurs; `false` if an error occurs. 
 
 > [!NOTE]  
-> The return value is not accessible within the try method itself.  
+> The return value isn't accessible within the try method itself.  
 
 ### Getting details about errors
 
@@ -46,7 +46,7 @@ You can use the [GetLastErrorText method](methods-auto/system/system-getlasterro
 
 ## Creating a try method
 
-To create a try method, add a method in the AL code of an object such as a codeunit as usual, and then set the [TryFunction Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute). 
+To create a try method, add a method in the AL code of an object such as a codeunit, and then set the [TryFunction Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-tryfunction-attribute). 
 
 <!-- A try method has the following restrictions:  
 

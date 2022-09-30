@@ -36,7 +36,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[generalLedgerAccounts](dynamics_generalledgeraccount.md)|generalLedgerAccounts |Gets the generalledgeraccounts of the company.|
 |[dimensionValues](dynamics_dimensionvalue.md)|dimensionValues |Gets the dimensionvalues of the company.|
 |[dimensionSetEntries](dynamics_dimensionsetentry.md)|dimensionSetEntries |Gets the dimensionsetentries of the company.|
-|[generalLedgerBudgets](dynamics_generalledgerbudget.md)|generalLedgerBudgets |Gets the generalledgerbudgets of the company.|
+|[generalLedgerBudgets](dynamics_generalledgerbudgets.md)|generalLedgerBudgets |Gets the generalledgerbudgets of the company.|
 |[customers](dynamics_customer.md)|customers |Gets the customers of the company.|
 |[vendors](dynamics_vendor.md)|vendors |Gets the vendors of the company.|
 |[generalLedgerEntries](dynamics_generalledgerentry.md)|generalLedgerEntries |Gets the generalledgerentries of the company.|

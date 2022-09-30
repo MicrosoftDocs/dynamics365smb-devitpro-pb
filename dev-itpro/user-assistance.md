@@ -66,7 +66,7 @@ The Help pane shows up to four types of links:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
-If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.  
+If the automatically generated links do not answer the user's question, then the user can use the *Search* field to search Microsoft's content, both documentation and e-learning material. Currently, search in the [!INCLUDE [prod_short](includes/prod_short.md)] Help pane cannot access sites other than the *learn.microsoft.com* site, including Microsoft Learn.  
 
 ## Help users get unblocked
 
@@ -113,11 +113,11 @@ The partner-provided links are based on the mechanism for adding links through a
 
 The following screenshot illustrates the Help pane when it is opened from the **Purchase Invoice** page.
 
-:::image type="content" source="media/ua_help_pane.png" alt-text="Help pane with tooltip text, page metadata link, and links to Docs.microsoft.com.":::
+:::image type="content" source="media/ua_help_pane.png" alt-text="Help pane with tooltip text, page metadata link, and links to learn.microsoft.com.":::
 
 In this case, the **Purchase Invoice** page has not been extended by any apps. If two apps had extended the page, their page-level and app-level configuration would be used to add links on a card after the *Related articles from Microsoft Docs* card.  
 
-The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
 
 There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
 
@@ -128,7 +128,7 @@ For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)
 
 ### Feedback and contributions
 
-On docs.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
+On learn.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
 
 We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. Also, we cannot address issues or questions about the product.  
 
