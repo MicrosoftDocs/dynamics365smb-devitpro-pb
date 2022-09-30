@@ -2,7 +2,7 @@
 title: "Actions Overview"
 description: Displaying actions on the action bar for pages in Business Central.
 ms.custom: na
-ms.date: 09/12/2022
+ms.date: 10/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,6 @@ For more information about actions used on the role center page, see [Designing 
  
 ## Types of Actions
 
-=======
 > [!TIP]  
 > If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#pages) topic.
 
@@ -47,7 +46,11 @@ Each page has a different set of actions depending on the page type, and the pro
 Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
   
 For example, the Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer. 
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
  
+
 Pages can have the following actions as described in each section below.  
   
 ## Actions menu

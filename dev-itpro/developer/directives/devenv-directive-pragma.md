@@ -16,7 +16,7 @@ ms.author: solsen
 
 ## Pragma
 
-The `#pragma` directive gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has a number of actions that can be used with the pragma instructions below, these are `disable`, `restore`, and `enable`.
+The `#pragma` directive gives the compiler special instructions for the compilation of the file in which it appears. The `#pragma` directive has many actions that can be used with the pragma instructions below, which are `disable`, `restore`, and `enable`.
 
 AL supports the following pragma instructions:
 
