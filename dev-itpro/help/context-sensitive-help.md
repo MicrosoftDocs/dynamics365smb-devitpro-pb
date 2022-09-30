@@ -28,7 +28,7 @@ Specify where the Help for your functionality is published in the *contextSensit
 
 ```
 
-In this example, when the user is using your app's functionality, the *contextSensitiveHelpUrl* property specifies that the links to Help will go to the *mysite.com* site. When the user is using functionality from the base application, then the Help calls will go to the *docs.microsoft.com* site.  
+In this example, when the user is using your app's functionality, the *contextSensitiveHelpUrl* property specifies that the links to Help will go to the *mysite.com* site. When the user is using functionality from the base application, then the Help calls will go to the *learn.microsoft.com* site.  
 
 If your app only supports a limited number of locales, you can specify that as well as shown in the following example:
 
@@ -44,7 +44,7 @@ The *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the
 > [!TIP]
 > For tips and tricks for how to deploy content to your own website, see the [Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/configure-help.md) and the [Custom Help Toolkit](custom-help-toolkit.md) articles.
 
-Help calls for Microsoft objects will continue to go to the *docs.microsoft.com* site.  
+Help calls for Microsoft objects will continue to go to the *learn.microsoft.com* site.  
 
 ### Localization apps
 
@@ -57,7 +57,7 @@ Specifically for localization apps that translate [!INCLUDE [prod_short](../deve
   ],
 ```
 
-The *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in Catalan. If the user switches the application language to English (US), then the Help calls will go to the *docs.microsoft.com* site.  
+The *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in Catalan. If the user switches the application language to English (US), then the Help calls will go to the *learn.microsoft.com* site.  
 
 ## Page-level configuration
 
@@ -75,7 +75,7 @@ page 50101 "Reward Card"
 
 In this example, the app contains a page object that is mapped to the *sales-rewards* Help file on the website that the app.json specifies. As a result, the *Learn more* link in the tooltips for this page will go to the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
-Similarly, the following code example shows a page extension object that sets the *ContextSensitiveHelpPage* property so that the *Learn more* link in tooltips for the fields that this page extension adds to the Customer Card will go to the `https://mysite.com/documentation/sales-rewards` rather than the default location at docs.microsoft.com:
+Similarly, the following code example shows a page extension object that sets the *ContextSensitiveHelpPage* property so that the *Learn more* link in tooltips for the fields that this page extension adds to the Customer Card will go to the `https://mysite.com/documentation/sales-rewards` rather than the default location at learn.microsoft.com:
 
 ```AL
 pageextension 50104 "Customer Card Ext" extends "Customer Card"
