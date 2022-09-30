@@ -31,7 +31,7 @@ Specifies the entitlement permissions that are inherently assigned to the given 
 
 ## Remarks
 
-The inherent entitlements permission values that are *Read*, *Insert*, *Modify*, *Delete* and, *Execute* are set according to the object type. For example, a Report object can have an execute 'X' permission but the same permission is invalid for data in a Table object.
+The inherent entitlements permission values that are *Read*, *Insert*, *Modify*, *Delete*, and *Execute* are set according to the object type. For example, a Report object can have an execute 'X' permission, but the same permission is not valid for data in a Table object.
 
 ## Syntax 
 
