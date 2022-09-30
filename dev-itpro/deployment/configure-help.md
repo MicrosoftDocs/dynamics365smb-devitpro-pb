@@ -11,7 +11,7 @@ ms.author: edupont
 
 # Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the Ctrl+F1 keyboard shortcut.
+The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the Ctrl+F1 keyboard shortcut.
 
 But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
@@ -38,7 +38,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > The legacy Dynamics NAV Help Server component was deprecated and removed in 2021 release wave 1 (version 18). We recommend that you invest in a different type of website. For more information, see the [deprecation notice](../upgrade/deprecated-features-platform.md#the-help-server-component) and the [Custom Help Toolkit](../help/custom-help-toolkit.md) section.
 
 > [!TIP]
-> The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 19.4, you could have taken a snapshot of the content in GitHub before version 20.0 became available.
 
@@ -104,11 +104,11 @@ Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no f
 You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure), which supports the custom Help toolkit for Dynamics 365 Finance and Operations apps. That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 
 > [!IMPORTANT]
-> Currently, search in the [!INCLUDE [prod_short](../includes/prod_short.md)] Help pane cannot access sites other than the *docs.microsoft.com* site, including Microsoft Learn.
+> Currently, search in the [!INCLUDE [prod_short](../includes/prod_short.md)] Help pane cannot access sites other than the *learn.microsoft.com* site, including Microsoft Learn.
 >
 > However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
-In versions older than 2022 release wave 1, the in-product search includes searching content on the [Docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
+In versions older than 2022 release wave 1, the in-product search includes searching content on the [learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
 
 ### Optional: Get Microsoft's content
 
@@ -122,7 +122,7 @@ If you deploy a solution that customizes Microsoft's default application, then y
 Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only. For other languages, pull files based on a commit before the next major version.  
 
 > [!TIP]
-> The content on the [docs.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
+> The content on the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
@@ -142,7 +142,7 @@ Alternatively, use any tool or script that you prefer. If you want to create you
 >
 > The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool in the custom help toolkit can do this for you automatically.
 
-We suggest that your website clearly indicates what is under Microsoft's copyright and what is under your own copyright. You are still welcome to make any relevant customizations of Microsoft's content, and to deploy this customized content to your own website. But to help users clearly identify whether a given search result applies to their [!INCLUDE [prod_short](../includes/prod_short.md)] experience or not, do not apply a title suffix such as *Microsoft Docs*. We also discourage reproduction of the visual styling of the *docs.microsoft.com* site for the same reason.
+We suggest that your website clearly indicates what is under Microsoft's copyright and what is under your own copyright. You are still welcome to make any relevant customizations of Microsoft's content, and to deploy this customized content to your own website. But to help users clearly identify whether a given search result applies to their [!INCLUDE [prod_short](../includes/prod_short.md)] experience or not, do not apply a title suffix such as *Microsoft Docs*. We also discourage reproduction of the visual styling of the *learn.microsoft.com* site for the same reason.
 
 ## Fork the Microsoft repos, and customize or extend the content
 

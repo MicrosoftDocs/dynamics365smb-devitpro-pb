@@ -3,7 +3,7 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/22/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -101,6 +101,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
+|Max body size| The maximum request body size. |  350 megabytes|
 |Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
 |Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
