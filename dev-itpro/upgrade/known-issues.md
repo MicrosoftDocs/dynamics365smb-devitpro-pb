@@ -425,6 +425,31 @@ When you try to use the **Tenant** node in the [!INCLUDE[admintool](../developer
 
 Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. This error is fixed in later updates.
 
+
+## Sync-NAVApp error: Parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong
+
+<!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/374610-->
+
+> Applies to: Upgrade from 14.X 
+
+### Problem
+
+You get the following error when running Sync-NAVApp cmdlet on the base application:
+
+```powershell
+Sync-NAVApp : The following SQL error was unexpected:
+
+Either the parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong.
+
+Either the parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong.
+
+Caution: Changing any part of an object name could break scripts and stored procedures.
+```
+
+### Workaround
+
+This occurs when a key fails to get renamed. To fix the problem, identify the key that fails to get renamed, for example, by using the event log or SQL profiler. Then, disable the key by using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].
+
 ## See Also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  

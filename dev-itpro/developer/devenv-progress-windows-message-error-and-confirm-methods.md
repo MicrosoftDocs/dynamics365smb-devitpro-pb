@@ -2,7 +2,7 @@
 title: "Progress Windows, Message, Error, and Confirm Methods"
 description: "Using specialized methods in AL for Business Central to display messages and gather input from the user."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/28/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ You can use several specialized methods to display messages and gather input. We
 
 - To let the user confirm a choice before the program continues running.  
 
-You can also use the StrMenu method to create pages that present options to the user. It is much faster to use this method than to design a page which only presents a limited set of options to the user. For more information about the StrMenu method, see [StrMenu Method](methods-auto/dialog/dialog-StrMenu-Method.md).  
+You can also use the StrMenu method to create pages that present options to the user. It's much faster to use this method than to design a page, which only presents a limited set of options to the user. For more information about the StrMenu method, see [StrMenu Method](methods-auto/dialog/dialog-StrMenu-Method.md).  
 
 ## Best practices for user messages  
 
@@ -28,21 +28,21 @@ We recommend the following guidelines for writing messages for end users:
 
 - Write messages correctly according to the grammatical rules for your language.  
 
-- Do not use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [Open Method)](methods-auto/dialog/dialog-Open-Method.md). You must use backslashes for the message to be aligned correctly.  
+- Don't use backslashes to indicate line breaks in a message. Line formatting is completed automatically. The only exception is in the [Open Method)](methods-auto/dialog/dialog-Open-Method.md). You must use backslashes for the message to be aligned correctly.  
 
-- Use the [FieldCaption Method)](methods-auto/record/record-FieldCaption-Method.md) and [TableCaption Method)](methods-auto/record/record-TableCaption-Method.md) whenever possible to return names of fields and tables as strings so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [Open Method)](methods-auto/dialog/dialog-Open-Method.md). In this method, you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FieldCaption method, then type the field name without any single or double quotation marks.  
+- Use the [FieldCaption Method)](methods-auto/record/record-FieldCaption-Method.md) and [TableCaption Method)](methods-auto/record/record-TableCaption-Method.md) whenever possible to return names of fields and tables as strings. It's so that the user can always recognize a term that indicates a field or table name. The only exception to this is in [Open Method)](methods-auto/dialog/dialog-Open-Method.md) where you can use the field name directly. Otherwise, it can be difficult to align correctly. If you refer to a field name without using the FieldCaption method, then type the field name without any single or double quotation marks.  
 
-- Try to write all messages on only one line. If you want to use more than one line, then start each new line after a period instead of in the middle of a sentence.  
+- Try to write all messages on only one line. If you want to use more than one line, then start a new line after a period instead of in the middle of a sentence.  
 
-- Do not enter the text directly in the AL code. Instead, enter it as a label so that the message can be translated.  
+- Don't enter the text directly in the AL code. Instead, enter it as a label so that the message can be translated.  
 
 ## Creating a window to indicate progress  
 
-If you have an application that performs some processing that can take a long time to complete, then you should consider displaying a window that informs the user of the progress that is being made. It is always a good idea to inform the user that processes are still running.  
+If you have an application whose processing can take a long time to complete, then you should consider displaying a window that informs the user of the progress that is being made. It's always a good idea to inform the user that processes are still running.  
 
-A **Cancel** button is automatically added to every dialog window and gives the user the opportunity to stop the processing.  
+A **Cancel** button is automatically added to every dialog window and gives user the opportunity to stop the processing.  
 
-In some applications, you may want to create a window in which each field is updated when the program is running. For example, the fields in the window display the count of the number of postings made. In another application, you may want to display information about the record that is currently being processed. For example, the field in the window displays the number of the account that is currently being processed.  
+In some applications, you may want to create a window in which each field is updated when the program is running. For example, the fields in the window, display the count of the postings made. In another application, you may want to display information about the record that is currently being processed. For example, the field in the window, displays the number of the account that is currently being processed.  
 
 To create this kind of progress window, you use the Dialog data type.  
 
@@ -56,7 +56,7 @@ The `Message` method has the following syntax.
 message(String [, Value1, ...]);  
 ```  
 
-The `Message` method runs asynchronously, which means that the message is not run until the method from which it was called ends or another method requests user input. The method is useful for notifying the user that some processing has been successfully completed.  
+The `Message` method runs asynchronously, which means that the message isn't run until the method from which it was called ends or another method requests user input. The method is useful for notifying the user that some processing has been successfully completed.  
 
 For an example of the `Message` method, see codeunit 83 in the [!INCLUDE[demolong](includes/demolong_md.md)]. The code in the OnRun trigger converts a quote into a sales order and then displays a message. The message is generated by the following code.  
 
@@ -68,11 +68,11 @@ message(Text001,"No.",SalesHeader2."No.");
 ```  
 
 > [!NOTE]  
-> Unlike the progress window, the `Message` method does not require that you first declare a variable of type Dialog. The `Message` method creates a window of its own.  
+> Unlike the progress window, the `Message` method doesn't require that you first declare a variable of the type Dialog. The `Message` method creates a window of its own.  
 
 ## Error method  
 
-The [Error Method)](methods-auto/dialog/dialog-error-errorinfo-method.md) is very similar to the `Message` method except that when the user has acknowledged the message from an `Error` method, execution ends. The `Error` method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
+The [Error Method)](methods-auto/dialog/dialog-error-errorinfo-method.md) is similar to the `Message` method except that when the user has acknowledged the message from an `Error` method, execution ends. The `Error` method is also similar to the FieldError method. For more information, see [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate Methods](devenv-CALCFIELDS-CALCSUMS-FIELDError-FIELDNAME-INIT-TESTFIELD-and-VALIDATE-Methods.md).  
 
 The `Error` method has the following syntax.  
 
