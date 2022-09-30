@@ -377,7 +377,7 @@
 ## [Development Overview](developer/devenv-dev-overview.md)
 ## Get Started
 ### [Get Started with AL](developer/devenv-get-started.md)
-### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
+### [Building Your First Sample Extension with Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [AL Formatter](developer/devenv-al-formatter.md)
@@ -467,7 +467,7 @@
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 
 ## AL Language
-### [A tour of the AL language](developer/devenv-programming-in-al.md)
+### [A Tour of the AL language](developer/devenv-programming-in-al.md)
 ### [FAQ for AL Developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks

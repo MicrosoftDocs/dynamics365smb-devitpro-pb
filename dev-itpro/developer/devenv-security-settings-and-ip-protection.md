@@ -3,7 +3,7 @@ title: "Resource Exposure Policy Setting"
 description: Explains how to set the resource exposure policy for allowing download or debugging into extension to see the source code.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/24/2022
+ms.date: 10/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Resource Exposure Policy Setting
 
-[!INCLUDE[2021_releasewave2_changed](../includes/2021_releasewave2_changed.md)]
+[!INCLUDE[2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
 
 When you develop an extension, your code is protected against downloading or debugging by default. Read below about adding Intellectual Property (IP) protection against downloading or debugging into an extension to see the source code in the extensions.
 
@@ -31,7 +31,7 @@ When you start a new project, an `app.json` file is generated automatically, whi
 ```
 
 > [!NOTE]  
-> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it is generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
+> The `resourceExposurePolicy` setting isn't visible in the `app.json` file when it's generated. If you want to change the default value from `false`, you must add the setting as shown in the syntax example above. You can always override this for your AppSource aåå or per-tenant extension by changing the setting.
 
 > [!IMPORTANT]  
 > The **AL: Go!** template sets the `allowDebugging`, `allowDownloadingSource`, and `includeSourceInSymbolFile` options in the `resourceExposurePolicy` setting to `true`. 
@@ -71,7 +71,7 @@ For per-tenant extensions, if the customer owns the IP and approves of exposing 
 
 #### When can code be viewed even though the `allowDebugging` flag is set to `false`?
 
-Someone will still be able to view your code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource.
+Someone will still be able to view your code if an extension is deployed through Visual Studio Code as a **DEV extension**, as opposed to deployed using a cmdlet, by using the **Extension Management** page in [!INCLUDE [prod_short](includes/prod_short.md)] or via AppSource. Use the `applyToDevExtension` setting to specify if all resource exposure policies should also apply to your **DEV extension**.
  
 ### allowDownloadingSource
 
