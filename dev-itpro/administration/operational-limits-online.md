@@ -97,6 +97,15 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 | Max execution timeout | The maximum execution time that it can take to generate a query. If exceeded, the query will be canceled.|30 minutes|
 | Max rows | The maximum number of rows that can be processed in a query. If exceeded, the query will be canceled.|1,000,000|
 
+## Company limit (per environment)
+
+|Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
+|---------|--------------------------------------------------------------------------------|------|
+| Max companies | The maximum number of companies that can be contained in one environment.|300|
+
+> [!TIP]  
+> This company limit will take effect in 2023 wave 1 release. If you already have more than 300 companies in one environment, please distribute them across more environments to avoid exceeding the limit per environment.
+
 ##  <a name="ODataServices"></a> OData request limits (per environment)
   
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
