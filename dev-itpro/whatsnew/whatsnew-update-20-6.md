@@ -18,7 +18,7 @@ Would you like to know what has changed in update 20.6? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](XX).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-20-6-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-1-application-build-20-6-47024-platform-build-20-0-46998-6476acf3-9b2b-4afb-84f2-ca7cd29e75aa).
 
 ## Release Plan  
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 1 (release from April 2022 through  September 2022), find the link to the release plan [here](/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/planned-features).
