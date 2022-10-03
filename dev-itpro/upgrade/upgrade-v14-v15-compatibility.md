@@ -30,7 +30,7 @@ The following table lists the Business Central 19 versions and the minimum versi
 
 |Version 20|Version 21|
 ----------|----------|
-|20.0 to 20.5|21.0 *coming soon*|
+|20.0 to 20.5|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |
 |[20.6](https://support.microsoft.com/help/5019241)<sup>[\[1\]](#1)</sup>|21.1|
 
 ## Version 19 compatibility
@@ -39,7 +39,7 @@ The following table lists the Business Central 19 versions and the minimum versi
 
 |Version 19|Version 20|Version 21|
 |----------|----------|----------|
-|19.0 to 19.5|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
+|19.0 to 19.5|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |
 |[19.6](https://support.microsoft.com/help/5013422)|[20.1](https://support.microsoft.com/help/5014491)|21.0|
 |[19.7](https://support.microsoft.com/help/5014490)|[20.2](https://support.microsoft.com/help/5015475)|21.0|
 |[19.8](https://support.microsoft.com/help/5015474)|[20.3](https://support.microsoft.com/help/5016304) |21.0|
@@ -57,7 +57,7 @@ The following table lists the Business Central 18 versions and the minimum versi
 |Version 18|Version 19|Version 20|Version 21|
 |----------|----------|----------|----------|
 |18.0 to 18.5|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
-|[18.6](https://support.microsoft.com/help/5007026)|[19.1](https://support.microsoft.com/help/5007779)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
+|[18.6](https://support.microsoft.com/help/5007026)|[19.1](https://support.microsoft.com/help/5007779)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |
 |[18.7](https://support.microsoft.com/help/5007778)|[19.2](https://support.microsoft.com/help/5009178)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
 |[18.8](https://support.microsoft.com/help/5009179)|[19.3](https://support.microsoft.com/help/5010207)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
 |[18.9](https://support.microsoft.com/help/5010206)|[19.4](https://support.microsoft.com/help/5011306)|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
@@ -158,7 +158,7 @@ The following table lists the Business Central 14 versions and the minimum versi
 
 |Version 14|Version 15|Version 16|Version 17|Version 18|Version 19|Version 20|Version 21|
 |----------|----------|----------|----------|----------|----------|----------|----------|
-|[14.0 (GA and cumulative update 01)](https://support.microsoft.com/help/4501146)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
+|[14.0 (GA and cumulative update 01)](https://support.microsoft.com/help/4501146)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |
 |[14.3 (cumulative update 02)](https://support.microsoft.com/help/4514872)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
 |[14.4 (cumulative update 03)](https://support.microsoft.com/help/4515445)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
 |[14.5 (cumulative update 04)](https://support.microsoft.com/help/4518535)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|
