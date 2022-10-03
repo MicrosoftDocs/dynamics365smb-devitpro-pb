@@ -11,6 +11,8 @@ ms.author: solsen
 
 # AL Code Actions
 
+[!INCLUDE [2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
+
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] can help users to fix issues in the code. **Code Actions** is a Visual Studio Code feature that provides the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user chooses the light bulb (or presses **Ctrl+.**), a list of available code actions is presented. A code action can be applied to a single instance or a broader scope depending on the type of action.
 
 In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions are available in the current version:
