@@ -8,10 +8,13 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2021
+ms.date: 08/31/2022
 ---
 
 # [!INCLUDE[admintool](../developer/includes/admintool.md)]
+
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
+
 The [!INCLUDE[admintool](../developer/includes/admintool.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[server](../developer/includes/server.md)] instances. 
 
 > [!TIP]

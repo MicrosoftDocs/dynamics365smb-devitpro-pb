@@ -36,6 +36,9 @@ PromotedIsBig = true;
 
 ## Remarks
 
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](../devenv-promoted-actions.md).
+
 If there is more than one action that has the PromotedIsBig property set to **true**, then the actions will appear before other actions, in the order that they are defined in AL.
 
 For more information about promoting actions, see [Promoted Actions](../devenv-promoted-actions.md).

@@ -66,7 +66,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0211](codecop-aa0211.md)|Avoids a runtime error from using CalcFields on a field that is not a FlowField or a field of type Blob.|Design|Warning|
 |[AA0213](codecop-aa0213.md)|Obsoleted object must have a state 'Pending' or 'Removed' and a justification specifying why this field is being obsoleted.|Design|Warning|
 |[AA0214](codecop-aa0214.md)|The local record should be modified before saving to the database.|Design|Warning|
-|[AA0215](codecop-aa0215.md)|Follow [the style guide](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.|Readability|Warning|
+|[AA0215](codecop-aa0215.md)|Follow [the style guide](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/compliance/apptest-bestpracticesforalcode#file-naming) about the best practices for naming.|Readability|Warning|
 |[AA0216](codecop-aa0216.md)|Use a text constant for passing user messages and errors without concatenations.|Localizability|Warning|
 |[AA0217](codecop-aa0217.md)|Use a text constant or label for format string in StrSubstNo.|Localizability|Warning|
 |[AA0218](codecop-aa0218.md)|You must write a tooltip in the Tooltip property for all controls of type Action and Field that exist on page objects.|Localizability|Warning|
@@ -87,7 +87,7 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0235](codecop-aa0235.md)|When using 'OnInstallPerCompany' you should also add 'Company-Initialize'::'OnCompanyInitialize' event subscriber.|Design|Info|
 |[AA0237](codecop-aa0237.md)|The name of non-temporary variables must not be prefixed with Temp.|Readability|Warning|
 |[AA0240](codecop-aa0240.md)|Email and Phone No must not be present in any part of the source code.|Design|Warning|
-|[AA0241](codecop-aa0241.md)|Use all lowercase letters for reserved language keywords.|Readability|Warning|
+|[AA0241](codecop-aa0241.md)|Use all lowercase letters for reserved language keywords.|Readability|Hidden|
 |[AA0242](codecop-aa0242.md)|Limit JIT loads by selecting all fields for load.|Design|Warning|
 |[AA0243](codecop-aa0243.md)|Running an upgrade codeunit is not allowed.|Design|Warning|
 |[AA0244](codecop-aa0244.md)|Do not use identical names for parameters and global variables.|Design|Warning|
