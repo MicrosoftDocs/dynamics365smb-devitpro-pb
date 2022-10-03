@@ -7,7 +7,7 @@ ms.date: 09/30/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: conceptual article
+ms.topic: conceptual
 ms.author: a-jaaamir
 ---
 
