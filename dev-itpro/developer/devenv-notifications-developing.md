@@ -54,7 +54,7 @@ The scope determines where the notification is broadcast in the client. There ar
 
 * A *LocalScope* notification appears in context of the user's current task, that is, on the page the user is currently working on. *LocalScope* is the default.
 
-* A *GlobalScope* notification is not directly related to the current task, and will appear regardless of which the page the user is viewing.
+* A *GlobalScope* notification is not directly related to the current task, and will appear regardless of which page the user is viewing.
   > [!NOTE]  
   > *GlobalScope* is currently not supported. This will be implemented in a future release.
 
