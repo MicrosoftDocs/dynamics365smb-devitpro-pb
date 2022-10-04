@@ -221,6 +221,7 @@
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
+#### [Profile Configuration Telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
