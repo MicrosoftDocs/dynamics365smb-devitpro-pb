@@ -11,7 +11,7 @@ ms.author: edupont
 
 # Manually Switch on Instant Flows
 
-Unlike the *automated workflows* that have automatic triggers, you trigger the *instant flows* manually on the relevant page inside [!INCLUDE[prod_short](../includes/prod_short.md)].
+Unlike *automated workflows* that have automatic triggers, you trigger *instant flows* manually on the relevant page inside [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 > [!NOTE]  
 > To use Power Automate with [!INCLUDE[prod_short](../includes/prod_short.md)], you must have a valid account.  
@@ -21,8 +21,9 @@ Once you've connected [!INCLUDE [prod_short](../includes/prod_short.md)] with Po
 > [!NOTE]
 > You can try out the new feature for yourself before you switch it on for everyone in your organization. Learn more from the tip in the [How to enable an optional feature](../administration/feature-management.md#how-to-enable-an-optional-feature) section. 
 
-On some pages, the **Automate** action is hidden in *more options* **...** icon on navigation pane. To run the manual flow, choose the **Automate** action and you'll see the instant flow you created in the menu as an action button below the *Power Automate* menu item. Then choose the relevant flow link to trigger the workflow. The connection to Power Automate is already set up for you.
-To complete an instant flow, you must perform the following tasks:
+On some pages, the **Automate** action is hidden in *more options* **...** icon on navigation pane. To run the manual flow, choose the **Automate** action and you'll see the instant flow you created in the menu as an action button below the *Power Automate* menu item. Then choose the relevant flow link to trigger the workflow.
+
+The connection between [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate allows instant flows to:
 
 - Pass context or parameters to Power Automate​  
   - Environment name, such as *PRODUCTION​*  
