@@ -156,9 +156,9 @@ Returns the updated settings
 `ScheduledUpgradeConstraintViolation` - the update window conflicts with the current update date that's set for the environment. Either the update would occur outside the allowed update date range or, if the update date is today, the update window is in the past. Adjust the update window or change the update date.
 
 
-## Put AppInsights key
+## Put AppInsights Connection String
 
-Sets the key an environment uses for Azure AppInsights.
+Sets the connection string an environment uses for Azure AppInsights.
 
 > [!IMPORTANT]
 > This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
