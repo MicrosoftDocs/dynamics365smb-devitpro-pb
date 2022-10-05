@@ -27,6 +27,14 @@ Environment lifecycle telemetry gathers data about the success or failure of the
 - Delete an environment
 - Rename an environment
 
+Telemetry is also gathered on the following data update events:
+
+- Data upgrade started
+- Data upgrade succeeded
+- Data upgrade failed
+- Data upgrade recovery succeeded
+- Data upgrade recovery failed
+
 Failed operations result in a trace log entry that includes a reason for the failure.
 
 ### Custom dimensions available in all events
