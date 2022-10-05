@@ -39,7 +39,7 @@ Failed operations result in a trace log entry that includes a reason for the fai
 
 ### Custom dimensions available in all events
 
-The following dimensions are available in all events described below and is not included in the individual event documentation:
+The following dimensions are available in all events described below and aren't included in the individual event documentation:
 
 |Dimension|Description or value|
 |---------|-----|
@@ -108,7 +108,7 @@ Occurs when the environment is scheduled to be updated.
 
 ## Environment update missed
 
-Occurs when the environment was scheduled to be updated, but it was not possible to start the update in the update window defined in the admin center.
+Occurs when the environment was scheduled to be updated, but it wasn't possible to start the update in the update window defined in the admin center.
 
 <!-- 
 EnvironmentUpdateMissed = "LC0102";
