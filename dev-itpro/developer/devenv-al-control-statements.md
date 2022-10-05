@@ -2,7 +2,7 @@
 title: "AL Control Statements"
 description: "Compound, conditional, and repetitive control statements in AL for Business Central"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/22/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,7 +12,7 @@ author: SusanneWindfeldPedersen
 
 # AL Control Statements
 
-AL code consists of one or more statements, which are executed sequentially in top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
+AL code consists of one or more statements, which are executed sequentially in a top-down order. However, you'll often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do so, you use control structures.  
 
 The control structures in AL are divided into the following main groups, as described in this article:  
 
@@ -21,11 +21,11 @@ The control structures in AL are divided into the following main groups, as desc
 - [AL Repetitive Statements](devenv-al-control-statements.md#al-repetitive-statements)  
 
 > [!NOTE]  
-> In the following sections conventions for how to structure and align AL code are presented to introduce best practices. In many cases the structure isn't necessary to get the code to compile, but rather to improve readability.
+> In the following sections, conventions for how to structure and align AL code are presented to introduce best practices. In many cases, the structure isn't necessary to get the code to compile, but rather to improve readability.
 
 ## AL compound statements
 
-In some cases, the AL syntax only lets you use a single statement. However, if you have to execute more than one simple statement, the statements can be written as a compound statement by enclosing the statements between the `begin` and `end` keywords.  
+In some cases, the AL syntax only lets you use a single statement. However, if you have to run more than one simple statements, the statements can be written as a compound statement by enclosing the them between the `begin` and `end` keywords.  
 
 ```AL
 begin  
@@ -36,13 +36,13 @@ begin
 end;  
 ```  
 
-The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not, as in other programming languages, as a terminator symbol for a statement. Nevertheless, an extra semicolon before an end doesn't cause an error because it's interpreted by the compiler as an empty statement.  
+The individual statements are separated by a semicolon. In AL, a semicolon is used to separate statements and not to terminate them, as in other programming languages. Nevertheless, an extra semicolon before an end doesn't cause an error because it's interpreted by the compiler as an empty statement.  
 
 ## Blocks  
 
 The begin-end structure is also called a *block*. Blocks can be useful to refer to the other control structures in AL.  
 
-When begin follows then, else, or do, it should be on the same line and preceded by one space character.  
+When begin follows, then, else, or do should be on the same line and preceded by one space character.  
 
 ### Example  
 
@@ -75,7 +75,7 @@ You use conditional statements to specify a condition and one or more commands t
 - if-then-else, where there are two choices  
 - case, where there are more than two choices  
 
-### If-then else statements
+### If-then-else statements
 
 if-then-else statements have the following syntax.  
 
@@ -109,11 +109,11 @@ Reading several nested if-then-else statements can be confusing but generally, a
 
 #### Programming conventions  
 
-- If and then should be on the same line. else should be on a separate line.
+- `if` and `then` should be on the same line, `else` should be on a separate line.
 
-- If there are many or long expressions, then should be on a new line and be aligned with `if`.  
+- If there are many or long expressions, `then` should be on a new line and be aligned with `if`.  
 
-- When you write if expressions with then and else parts, write them so that the `then` result is more probable than the `else` one.  
+- When you write `if` expressions with `then` and `else` parts, write them so that the `then` result is more probable than the `else` one.  
 
 - If the last statement in the `then` part of an `if-then-else` statement is an `exit` or an `error`, don't continue with an `else` statement.  
 
@@ -202,7 +202,7 @@ end;
 In this definition, the result of *`<Expression>`* is matched against each value set and *`<Value set>`* must be an expression or a range.  
 
 > [!NOTE]
-> *`<Expression>`* cannot be an application object variable, since application objects do not have a comparator.
+> *`<Expression>`* cannot be an application object variable, since application objects don't have a comparator.
 
 Case statements are also called multiple option statements and are typically used when you must choose between more than two different actions. The method of the case statement is as follows:  
 
@@ -212,7 +212,7 @@ Case statements are also called multiple option statements and are typically use
 
 The data type of the value sets must be the same as the data type of *`<Expression>`* or at least be convertible to the same data type.  
 
-In most cases, the data type of the value sets is converted to the date type of the evaluated expression. The only exception is if the evaluated expression is a Code variable. If the evaluated expression is a Code variable, then the value sets aren't converted to the Code data type.  
+In most cases, the data type of the value sets is converted to the data type of the evaluated expression. The only exception is if the evaluated expression is a Code variable. If the evaluated expression is a Code variable, then the value sets aren't converted to the Code data type.  
 
 > [!NOTE]  
 > This type conversion can cause an overflow at run time if the resulting data type cannot hold the values of the datasets.  
@@ -314,14 +314,14 @@ for <Control Variable> := <Start Number> downto <End Number> do
 
  The data type of *`<Control Variable>`*, *`<Start Number>`*, and *`<End Number>`* must be Boolean, number, time, or date. 
 
- Use `for-to` and `for-downto` statements when you want to execute code a specific number of times. The <*Control Variable*> controls the number of times that the code of the inner statement is executed according to the following:  
+ Use `for-to` and `for-downto` statements when you want to execute code for a specific number of times. The <*Control Variable*> controls the number of times that the code of the inner statement is executed according to the following:  
 
 - In a `for-to` loop statement, the *`<Control Variable>`* value is increased by one after each iteration. The inner *`<Statement>`* is executed repeatedly until the `*<Start Number>`* value is greater than the `*<End Number>*` value.  
 
 - In a `for-downto` loop statement, the *`<Control Variable>`* value is decreased by one after each iteration. The inner *`<Statement>`* is executed repeatedly until the *`<Start Number>`* value is less than the *`<End Number>`* value.  
 
 > [!NOTE]  
-> When the for statement is executed, *`<Start Number>`* and *`<End Number>`* are converted to the same data type as *`<Control Variable>`* if it is required. This type conversion can cause a run-time error.  
+> When the for statement is executed, *`<Start Number>`* and *`<End Number>`* are converted to the same data type as *`<Control Variable>`* if it's required. This type conversion can cause a run-time error.  
 
 > [!NOTE]  
 > If the value of the *`<Control Variable>`* is changed inside the for loop, then the behavior is not predictable. Furthermore, the value of the *`<Control Variable>`* is undefined outside the scope of the for loop.  
@@ -339,7 +339,7 @@ var
     Count : Integer;
 ```  
 
-When this statement is executed, then a run-time error occurs because the start and end values are converted to the same data type as the Count control variable. Count has been declared as an integer variable. The end number 100000000000000 is outside the valid range for integers, and an error occurs.  
+When this statement is executed, then a run-time error occurs because the start, and end values are converted to the same data type as the Count control variable. Count has been declared as an integer variable. The end number 100000000000000 is outside the valid range for integers, and an error occurs.  
 
 #### Example 2  
  The following example shows how to nest for statements.  
@@ -400,7 +400,7 @@ The while do statement can be used when some code should be repeated as long as 
 
 When there's only one condition, put `while` and `do` on the same line. Put the statements on separate lines and indented by two spaces.  
 
-When there are multiple conditions, put the conditions on separate lines and indented by two spaces and put `do` on a separate line that is aligned with `while`.  
+When there are multiple conditions, put the conditions on separate lines, and indented by two spaces and put `do` on a separate line that is aligned with `while`.  
 
 #### Example  
 
@@ -533,7 +533,7 @@ break;
  You typically use the `break` statement in the repeating statements such as `for`, `while`, or `repeat` to stop an iteration or loop when certain conditions are met.  
 
 > [!NOTE]  
-> The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it is run.  
+> The break statement is different than the [Break Method \(Report, XMLport\)](./methods-auto/library.md). Although both stop an iteration or loop, the break method will also terminate the trigger in which it's run.  
 
 ## Example  
  The following AL code increases the variable I by one for each iteration, and terminates the iteration when `I` equals 10.  

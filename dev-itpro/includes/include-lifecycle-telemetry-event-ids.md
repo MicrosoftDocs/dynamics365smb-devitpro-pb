@@ -57,6 +57,16 @@
 | LC0043 | Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} completed.](../administration/telemetry-task-scheduler-trace.md#task-completed) |
 | LC0044 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} canceled.](../administration/telemetry-task-scheduler-trace.md#task-canceled) |
 | LC0045 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} failed.](../administration/telemetry-task-scheduler-trace.md#task-failed) |
+| LC0046 | Profile Configuration Lifecycle | [Profile import succeeded: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-success) |
+| LC0047 | Profile Configuration Lifecycle | [Profile import failed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-failed) |
+| LC0048 | Profile Configuration Lifecycle | [Profiles exported successfully](../administration/telemetry-profile-configuration-lifecycle-trace.md#export-success) |
+| LC0049 | Profile Configuration Lifecycle | [Profiles failed to be exported](../administration/telemetry-profile-configuration-lifecycle-trace.md#export-failed) |
+| LC0050 | Profile Configuration Lifecycle | [Profile copy succeeded: {ProfileId} to {NewProfileId} from app/extension {ProfileAppId} to app/extension {NewProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#copy-success) |
+| LC0051 | Profile Configuration Lifecycle | [Profile copy failed: {ProfileId} to {NewProfileId} from app/extension {ProfileAppId} to app/extension {NewProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#copy-failed) |
+| LC0052 | Profile Configuration Lifecycle | [Profile created successfully:  {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#create-success) |
+| LC0053 | Profile Configuration Lifecycle | [Profile removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#removed) |
+| LC0054 | Profile Configuration Lifecycle | [Profile page customization removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-removed) |
+| LC0055 | Profile Configuration Lifecycle | [Profile page customization converted: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-converted) |
 | LC0100 | Environment | [Environment update available for scheduling: {environmentName} to version {destinationVersion}.](../administration/telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) |
 | LC0101 | Environment | [Environment update scheduled: {environmentName} to version {destinationVersion}, update on or after date: {registeredForUpdateOnOrAfterDateUtc}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-scheduled) |
 | LC0102 | Environment | [Environment update missed: {environmentName} to version {destinationVersion}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-missed) |

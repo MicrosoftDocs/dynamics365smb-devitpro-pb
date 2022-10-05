@@ -33,6 +33,8 @@ The following methods are available on instances of the DataTransfer data type.
 |[SetTables(Integer, Integer)](datatransfer-settables-method.md)|Sets the source and destination tables for the data transfer.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+
+## See Also
+
+[Getting Started with AL](../../devenv-get-started.md)  
+[Developing Extensions](../../devenv-dev-overview.md)  

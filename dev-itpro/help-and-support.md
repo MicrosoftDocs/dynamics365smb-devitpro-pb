@@ -16,13 +16,13 @@ This page outlines the resources available to you.
 
 ## Product Help
 
-The functionality in the default version of [!INCLUDE[prod_short](includes/prod_short.md)] is described on the Docs.microsoft.com site as described in the following table.  
+The functionality in the default version of [!INCLUDE[prod_short](includes/prod_short.md)] is described on the learn.microsoft.com site as described in the following table.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business functionality docs|[docs.microsoft.com/dynamics365/business-central](/dynamics365/business-central/) |Use this library to learn about business functionality. |
-> |Development and administration docs|[docs.microsoft.com/dynamics365/business-central/dev-itpro/](./index.md)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prod_short](includes/prod_short.md)].|
+> |Business functionality docs|[learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/) |Use this library to learn about business functionality. |
+> |Development and administration docs|[learn.microsoft.com/dynamics365/business-central/dev-itpro/](./index.md)|Use this content to learn how to extend, customize, and administrate [!INCLUDE[prod_short](includes/prod_short.md)].|
 
 ### AL developer documentation
 
@@ -51,7 +51,7 @@ The reference documentation of the AL language publishes under the [AL Programmi
 
 ### Product versions and Help versions
 
-In general, the [!INCLUDE [prod_short](developer/includes/prod_short.md)] content on the docs.microsoft.com site reflects the latest version of [!INCLUDE [prod_short](developer/includes/prod_short.md)] online with limited support for earlier versions.  
+In general, the [!INCLUDE [prod_short](developer/includes/prod_short.md)] content on the learn.microsoft.com site reflects the latest version of [!INCLUDE [prod_short](developer/includes/prod_short.md)] online with limited support for earlier versions.  
 
 If you support [!INCLUDE [prod_short](developer/includes/prod_short.md)] on-premises, your solution might be one or two versions older than the latest version. This means that the content in the [business functionality documentation](/dynamics365/business-central/) might describe functionality that your users do not have access to. For a better experience, we recommend that you take a copy of our content at the time when that reflected the version that your on-premises solution is based on and deploy that to your own website.  
 
@@ -109,18 +109,18 @@ You can learn about current and coming capabilities through a number of differen
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Release plans |[docs.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
-> |Business functionality|[docs.microsoft.com/dynamics365/business-central/across-business-functionality](/dynamics365/business-central/across-business-functionality) |Use this content to learn about business functionality in the default version of [!INCLUDE [prod_short](developer/includes/prod_short.md)]. |
-> |Development in the AL language|[docs.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-dev-overview.md)|Use this content to learn how to extend and customize Business Central using the native AL language.|
-> |Administrative tasks|[docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/](administration/tenant-administration.md)|Use this content to learn how to administer Business Central online.|
-> |Development in the AL language|[docs.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-programming-in-al.md)|Use this content to learn how to extend and customize Business Central.|
-> |Security in Business Central|[docs.microsoft.com/dynamics365/business-central/dev-itpro/security/](security/security-and-protection.md)|Use this content to help you understand and improve the security of Business Central.|
-> |Compliance|[docs.microsoft.com/dynamics365/business-central/compliance/compliance-overview](/dynamics365/business-central/compliance/compliance-overview)|Use this content to learn about compliance in relation to Business Central.|
-> |Performance|[docs.microsoft.com/dynamics365/business-central/dev-itpro/performance](performance/performance-overview.md)|Use this content to learn how to extend and customize Business Central.|
-> |Integrating with Business Central using web services|[docs.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
-> |Migrate to Business Central online|[docs.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
-> |Features not implemented in on-premises deployments|[docs.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
-> |The Business Central learning catalog|[docs.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
+> |Release plans |[learn.microsoft.com/dynamics365/release-plans/](/dynamics365/release-plans/#pivot=dyn365-relplan&panel=dyn365relplan) |Get an overview of upcoming and recently released capabilities in Business Central and other Dynamics 365 apps.|
+> |Business functionality|[learn.microsoft.com/dynamics365/business-central/across-business-functionality](/dynamics365/business-central/across-business-functionality) |Use this content to learn about business functionality in the default version of [!INCLUDE [prod_short](developer/includes/prod_short.md)]. |
+> |Development in the AL language|[learn.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-dev-overview.md)|Use this content to learn how to extend and customize Business Central using the native AL language.|
+> |Administrative tasks|[learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/](administration/tenant-administration.md)|Use this content to learn how to administer Business Central online.|
+> |Development in the AL language|[learn.microsoft.com/dynamics365/business-central/dev-itpro/developer](developer/devenv-programming-in-al.md)|Use this content to learn how to extend and customize Business Central.|
+> |Security in Business Central|[learn.microsoft.com/dynamics365/business-central/dev-itpro/security/](security/security-and-protection.md)|Use this content to help you understand and improve the security of Business Central.|
+> |Compliance|[learn.microsoft.com/dynamics365/business-central/compliance/compliance-overview](/dynamics365/business-central/compliance/compliance-overview)|Use this content to learn about compliance in relation to Business Central.|
+> |Performance|[learn.microsoft.com/dynamics365/business-central/dev-itpro/performance](performance/performance-overview.md)|Use this content to learn how to extend and customize Business Central.|
+> |Integrating with Business Central using web services|[learn.microsoft.com/dynamics365/business-central/dev-itpro/webservices/](webservices/web-services.md)|Use this content to learn how to integrate Business Central with other products by using web services.|
+> |Migrate to Business Central online|[learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/upgrading-to-business-central-online](upgrade/upgrading-to-business-central-online.md)|Use this content to learn how you can move an on-premises solution to Business Central online.|
+> |Features not implemented in on-premises deployments|[learn.microsoft.com/dynamics365/business-central/dev-itpro/features-not-implemented-on-premises](features-not-implemented-on-premises.md)|Use this content to learn which capabilities in Business Central online are not available in Business Central on-premises deployments.|
+> |The Business Central learning catalog|[learn.microsoft.com/dynamics365/business-central/readiness/readiness-learning-catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)|Get an overview of role-specific training material from Microsoft.|
 > |Free eLearning|[/learn/dynamics365/business-central](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)|Free [!INCLUDE [prod_short](developer/includes/prod_short.md)] collections and learning paths on Microsoft Learn|
 
 ### <a name="ideas"></a>Share an idea about a new feature you'd like to have

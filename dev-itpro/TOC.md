@@ -3,7 +3,7 @@
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+### [Business Central on Microsoft Training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Scenarios for Contoso Coffeee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -221,6 +221,7 @@
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
+#### [Profile Configuration Telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
@@ -376,7 +377,7 @@
 ## [Development Overview](developer/devenv-dev-overview.md)
 ## Get Started
 ### [Get Started with AL](developer/devenv-get-started.md)
-### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
+### [Building Your First Sample Extension with Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [AL Formatter](developer/devenv-al-formatter.md)
@@ -466,7 +467,7 @@
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 
 ## AL Language
-### [A tour of the AL language](developer/devenv-programming-in-al.md)
+### [A Tour of the AL language](developer/devenv-programming-in-al.md)
 ### [FAQ for AL Developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks
@@ -569,7 +570,6 @@
 ##### Permission Set
 ###### [Permissionset](developer/devenv-permissionset-object.md)
 ###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
-###### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 ##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
 ##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
 
@@ -618,6 +618,7 @@
 ###### [Retrieving Date Data](developer/devenv-query-retrieve-date-data.md)
 ###### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ###### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
+#### [Tranferring Data](developer/devenv-data-transfer.md)
 #### Importing and Exporting data
 ##### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ##### [XMLport Object](developer/devenv-xmlport-object.md)
@@ -676,7 +677,7 @@
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
-
+##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
@@ -694,6 +695,15 @@
 ##### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ##### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
+
+### Permissions and Permission Sets
+#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+#### [Composing Permission Sets](developer/devenv-permissionset-composing.md)
+#### [Permissionset Object](developer/devenv-permissionset-object.md)
+#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
+#### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+#### [Inherent Permissions](developer/devenv-inherent-permissions.md)
+#### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event Types](developer/devenv-event-types.md)

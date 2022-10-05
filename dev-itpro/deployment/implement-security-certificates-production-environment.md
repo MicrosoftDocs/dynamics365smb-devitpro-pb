@@ -167,20 +167,10 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
     This following command is only required for version 21 and later:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration - -WebServerInstance <web server instance> -KeyName ServerHttps -KeyValue true
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName ServerHttps -KeyValue true
     ```
 
     Substitute `<web server instance>` with name of your web server instance, like `BC210`.
-
-3. Run the following commands to secure SOAP and OData web services:
-
-    ```powershell
-    Set-NAVServerConfiguration -ServerInstance <BC server instance> -KeyName SOAPServicesSSLEnabled -KeyValue true
-    ```
-
-    ```powershell
-    Set-NAVServerConfiguration -ServerInstance <BC server instance> -KeyName ODataServicesSSLEnabled -KeyValue true
-    ```
 
 #### Manually changing the navsettings.json
 
@@ -192,7 +182,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
     |---------|---------------|-----------------|  
     |ClientServicesCredentialType|`Windows`, `NavUserPassword`, `Username`, or `AccessControlService`|The default value is `Windows`. When you change it to `NavUserPassword`, `Username`, or `AccessControlService`, client users who connect to the server are prompted for user name and password credentials.|  
     |DnsIdentity|The subject name of the service certificate|The default value is \<identity>. Replace this with the subject name or common name \(CN\) of the certificate that is used on the computer that is running [!INCLUDE[server](../developer/includes/server.md)].|
-    |DnsIdentity|`true`|The default value is `false*`. This key is only available in version 21 and later, so it doesn't need to be set in earlier versions.|   
+    |ServerHttps|`true`|The default value is `false`. This key is only available in version 21 and later, so it doesn't need to be set in earlier versions.|   
 
 3. Save the navsettings.json configuration file.  
   
