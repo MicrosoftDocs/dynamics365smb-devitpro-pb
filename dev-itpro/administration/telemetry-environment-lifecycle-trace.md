@@ -2,13 +2,11 @@
 title:  Environment Lifecycle Trace Telemetry | Microsoft Docs
 description: Learn about the environment lifecycle telemetry in Business Central  
 author: KennieNP
-ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/08/2022
 ms.author: kepontop
+ms.reviewer: solsen
+ms.topic: conceptual
+ms.date: 10/04/2022
+ms.custom: bap-template
 ---
 # Analyzing Environment Lifecycle Trace Telemetry
 
