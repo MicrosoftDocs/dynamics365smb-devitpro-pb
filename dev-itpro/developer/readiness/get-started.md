@@ -115,11 +115,11 @@ To add coworkers:
 
 3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for the user(s) that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button.
 
-4. You have successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
+4. You've successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 
 ### Step 4 B: Getting access to the available builds and engagements
 
-Once you have successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
+Once you've successfully registered on Microsoft Collaborate, Microsoft must assign you to the right programs, and engagements before you can see the preview bits. Contact [Dyn365BEP@microsoft.com](mailto:Dyn365BEP@microsoft.com) and provide them with information about the relevant users. the following table illustrates the type of information that you must submit:
 
 | **Publisher Display Name** | **MPN ID** | **First Name** | **Last Name** | **Work account Email** |
 |--|--|--|--|--|

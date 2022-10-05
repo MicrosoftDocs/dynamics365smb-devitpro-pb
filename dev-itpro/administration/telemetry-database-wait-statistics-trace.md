@@ -87,5 +87,5 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/performance/performance-developer](../performance/performance-developer.md)  
+[Performance for Developers](../performance/performance-developer.md)  
 [How to work with a performance problem](../performance/performance-work-perf-problem.md)  

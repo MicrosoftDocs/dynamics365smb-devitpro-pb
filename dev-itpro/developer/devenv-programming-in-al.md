@@ -1,7 +1,7 @@
 ---
 title: "Programming in AL"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,9 +10,9 @@ author: SusanneWindfeldPedersen
 ---
 
 # Programming in AL
-AL is the programming language that is used for manipulating data (such as retrieving, inserting, and modifying records) in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database, and controlling the execution of the various application objects, such as pages, reports, or codeunits.
+AL is the programming language that is used for manipulating data such as retrieving, inserting, and modifying records in a [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] database. It controls the execution of the various application objects, such as pages, reports, or codeunits.
 
-With AL, you can create business rules to ensure that the data which is stored in the database is meaningful and consistent with the way customers do business. Through AL programming, you can:
+With AL, you can create business rules to ensure that the data, which is stored in the database is meaningful and consistent with the way customers do business. Through AL programming, you can:
 - Add new data or transfer data from one table to another, for example, from a journal table to a ledger table.
 - Combine data from multiple tables into one report or display it on one page.
 
@@ -28,7 +28,7 @@ Almost every object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 
 - XMLports  
 - Queries  
 
-You can initiate the execution of your AL code from the following:  
+You can initiate the execution of your AL code from the following ways:  
 
 - Actions  
 - Any object that has an instantiation of the object that contains AL code. An example of an instantiation is a variable declaration.  
@@ -60,12 +60,12 @@ The `protected` keyword can be used to make variables accessible between tables 
 
 We recommend the following guidelines for AL code:  
 
-- In general, write the code in codeunits instead of on the object on which it operates. This promotes a clean design and provides the ability to reuse code. It also helps enforce security. For example, typically users do not have direct access to tables that contain sensitive data, such as the **General Ledger Entry** table, nor do they have permission to modify objects. If you put the code that operates on the general ledger in a codeunit, give the codeunit access to the table, and give the user permission to run the codeunit, then you will not compromise the security of the table and the user will be able to access the table.  
+- In general, write the code in codeunits instead of on the object on which it operates. This promotes a clean design and provides the ability to reuse code. It also helps enforce security. For example, typically users don't have direct access to tables that contain sensitive data, such as the **General Ledger Entry** table, nor do they have permission to modify objects. If you put the code that operates on the general ledger in a codeunit, give the codeunit access to the table, and give the user permission to run that codeunit. This way, security of the table won't be compromised and the user will be able to access the table.  
 
 - If you must put code on an object instead of in a codeunit, then put the code as close as possible to the object on which it operates. For example, put code that modifies records in the triggers of the table fields.  
 
 ## Reusing code  
-Reusing code makes developing applications both faster and easier. More importantly, if you organize your AL code as suggested, your applications will be less prone to errors. By centralizing the code, you will not unintentionally create inconsistencies by performing the same calculation in many places, for example, in several triggers that have the same table field as their source expression. If you have to change the code, you could either forget about some of these triggers or make a mistake when you modify one of them.
+Reusing code makes developing applications both faster and easier. More importantly, if you organize your AL code as suggested, your applications will be less prone to errors. By centralizing the code, you won't unintentionally create inconsistencies by performing the same calculation in many places, for example, in several triggers that have the same table field as their source expression. If you have to change the code, you could either forget about some of these triggers or make a mistake when you modify one of them.
 
 ## See Also
 [Simple Statements](devenv-al-simple-statements.md)  

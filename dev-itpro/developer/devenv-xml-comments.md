@@ -3,7 +3,7 @@ title: "XML Comments in Code"
 description: "Adding documentation to AL code by including XML elements in special syntax."
 ms.custom: na
 ms.author: solsen
-ms.date: 04/01/2021
+ms.date: 09/27/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,15 +15,15 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[2020_releasewave2](../includes/2020_releasewave2.md)]
 
-In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation to your code by including XML elements in special comment fields directly in the source code before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type that it annotates, for example a codeunit, table, or interface, or a member such as a field or method. The syntax for adding XML comments in your code is triple slashes `///` followed by one of the supported XML tags. There is IntelliSense support for writing documentation comments. Most importantly providing a template documentation comment when writing the third slash in the triple slash.
+In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you can add documentation directly in your source code by including XML elements in special comment fields before the block of code that the comment refers to. The documentation comment must immediately precede a user-defined type that it annotates, for example a codeunit, table, interface, or a member such as a field or method. The syntax for adding XML comments in your code is triple slashes `///` followed by one of the supported XML tags. There's IntelliSense support for writing documentation comments that also provides a template comment on entering the third slash in the triple slash.
 
-Documentation comments are visible when hovering over source symbols, in completion lists, and in signature help. By adding XML comments in code, you can improve readability, add useful information about the implementation, and help others take over code that you wrote. With XML comments you also enable IntelliSense in Visual Studio Code on the AL objects that you add in your code as a help to other developers, working with or extending your code. This means that when you have built an extension and someone extends this code, they will get inline documentation when they call the given object.
+Documentation comments are visible when you hover over source symbols, in completion lists, and in signature help. By adding XML comments in code, you can improve readability, add useful information about the implementation, and help others take over code that you wrote. With XML comments, you also enable IntelliSense in Visual Studio Code on the AL objects that you add in the code as a help to other developers, working with or extending your code. When your code is documented using XML comments, it means that when you've built an extension and someone extends this code, they'll get inline documentation when they call the given object.
 
 > [!NOTE]  
 > Integration with documentation generator tools like DocFx and SandCastle is currently not supported.
 
 > [!NOTE]  
-> If you have the `allowDownloadingSource` setting in the app.json file set to `false` and you then download an app package; the app package will not contain any XML comments.
+> If you have the `allowDownloadingSource` setting in the app.json file set to `false` and you then download an app package; the app package won't contain any XML comments.
 
 ## Supported XML tags
 
@@ -91,7 +91,7 @@ codeunit 8901 "Email"
 
 ## Special symbols
 
-For special symbols, such as angle brackets, to appear in text of a documentation comment, use the HTML encoding of `<` and `>` which is `&lt;` and `&gt;` respectively. The following example illustrates how.
+For special symbols, such as angle brackets, to appear in text of a documentation comment, use the HTML encoding of `<` and `>`, which is `&lt;` and `&gt;` respectively. The following example illustrates how.
 
 ```xml
 /// <summary>
@@ -101,13 +101,13 @@ For special symbols, such as angle brackets, to appear in text of a documentatio
 
 ## Writing tips
 
-Code comments improve the readability of the code that you have developed and they are very useful for anyone modifying or maintaining that code. Furthermore, code comments form the basis of auto-generated documentation. Great code comments must do the following:
+Code comments improve the readability of the code that you've developed and they're useful for anyone modifying or maintaining that code. Furthermore, code comments form the basis of auto-generated documentation. Great code comments must do the following:
 
 1. Never state the obvious.
 2. Write a meaningful comment, use precise wording to describe *why*.
 3. Imagine yourself in the shoes of the developer using this piece of code, what would you want to know?
 4. For properties and methods, use active wording such as *Sets...*, *Gets...*, and *Specifies...*, and then explain what it does.
-5. List all pre-conditions for your parameters (cannot be null, must be within a certain range, and so on).
+5. List all pre-conditions for your parameters (can't be null, must be within a certain range, and so on).
 6. List any post-conditions that could influence how callers deal with return values.
 7. List any exceptions the method may throw (and under what circumstances).
 8. If similar methods exist, explain the differences between them.
@@ -119,7 +119,7 @@ Code comments improve the readability of the code that you have developed and th
 
 For more examples, see [https://stackoverflow.com/questions/3143324/what-are-best-practices-for-documenting-c-sharp-code-with-xml-comments](https://stackoverflow.com/questions/3143324/what-are-best-practices-for-documenting-c-sharp-code-with-xml-comments).
 
-## See Also  
+## See also  
 
 [AL Development Environment](devenv-reference-overview.md)  
 [Developing Extensions in AL](devenv-dev-overview.md)  

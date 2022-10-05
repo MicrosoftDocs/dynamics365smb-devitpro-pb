@@ -26,12 +26,11 @@ Power Automate is a no code/low code solution for creating business flows direct
 - SharePoint  
 - Connectors to partner services  
 
-
 ## Add automated workflows
 
 With the [!INCLUDE [prod_short](../includes/prod_short.md)] connector for Power Automate, you can add automated and manually triggered instant flows. Or you can directly go to [powerautomate.microsoft.com](https://powerautomate.microsoft.com) and create flows.
 
-The connector​ seamlessly connects data and gives you the option to include **Dynamic content** when you create any type of flow. To complete an instant flow with the [!INCLUDE [prod_short](../includes/prod_short.md)] connector, you must perform the following tasks:
+The connector​ seamlessly connects data and gives you the option to include **Dynamic content** when you create any type of flow. For example, instant flows can:
 
 <!--- Filter to a specific page or table with the [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)) action COPIED FROM RELEASE PLAN BUT PM SAYS IT'S NOT TRUE---> ​
 - Pass context or parameters to Power Automate​  
@@ -126,7 +125,7 @@ Learn more in the [Power Automate Documentation](/power-automate/getting-started
 
 ## Use the connector for other scenarios
 
-The [connectors](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps also support other scenarios. For example, use the [Find records (V3)] (/connectors/dynamicssmbsaas/#find-records-(v3)) action to create or edit table data for document headers or lines. You can also build a Power App that creates and posts time sheets, or a Power Automate flow that posts journal lines.  
+The [connectors](/connectors/dynamicssmbsaas/) for Power Platform and Azure Logic Apps also support other scenarios. For example, use the [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)) action to create or edit table data for document headers or lines. You can also build a Power App that creates and posts time sheets, or a Power Automate flow that posts journal lines.  
 
 The **Find records (V3)** action finds records in the same way as [filter expressions in OData URIs](../webservices/use-filter-expressions-in-odata-uris.md). But it does so behind the scenes, so all you have to do is add the action as a step in your flow. Learn more at [Find records (V3)](/connectors/dynamicssmbsaas/#find-records-(v3)).  
 

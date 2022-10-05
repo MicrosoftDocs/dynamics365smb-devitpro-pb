@@ -98,6 +98,12 @@ Once the app is installed, you can use the **Dynamics 365 Business Central Usage
 
 > [!NOTE]
 > Once you connect to an Application Insights resource, You can't change the app back to show the sample data. If you want to see the sample data, install the app again.
+
+
+> [!NOTE]
+> If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
+
+
 <!-- go back to demo data app id 6bbe3987-39f9-4fc4-ac1e-624bcbdfd6af -->
 
 ## Share the app with coworkers and others
