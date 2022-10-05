@@ -2000,6 +2000,167 @@ Message => Invariant($"Environment app '{this.AppOperation.GetAppDisplayName()}'
 |totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 
+## Environment data upgrade operation started
+
+Occurs when a data upgrade operation on an environment is started.
+
+<!-- 
+EnvironmentRestoreToNewEnvironmentSucceeded = "LC0126";
+PartnerDiagnosticsBlockEnvironmentInfo
+[PartnerTelemetryKey("pointInTimeUtc")]
+PartnerDiagnosticsBlockDestinationEnvironmentInfo
+PartnerDiagnosticsBlockOperationSuccessInfo
+Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
+-->
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment data upgrade operation started: {environmentName}**|
+
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0175**|
+
+## Environment data upgrade operation completed successfully
+
+Occurs when a data upgrade operation on an environment has compeleted successfully.
+
+<!-- 
+EnvironmentRestoreToNewEnvironmentSucceeded = "LC0126";
+PartnerDiagnosticsBlockEnvironmentInfo
+[PartnerTelemetryKey("pointInTimeUtc")]
+PartnerDiagnosticsBlockDestinationEnvironmentInfo
+PartnerDiagnosticsBlockOperationSuccessInfo
+Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
+-->
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment data upgrade operation completed successfully: {environmentName}**|
+
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0176**|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+## Environment data upgrade operation failed
+
+Occurs when a data upgrade operation on an environment has failed.
+
+<!-- 
+EnvironmentRestoreToNewEnvironmentSucceeded = "LC0126";
+PartnerDiagnosticsBlockEnvironmentInfo
+[PartnerTelemetryKey("pointInTimeUtc")]
+PartnerDiagnosticsBlockDestinationEnvironmentInfo
+PartnerDiagnosticsBlockOperationSuccessInfo
+Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
+-->
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Environment data upgrade operation failed: {environmentName}**|
+
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0177**|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+## Recovery from a failed data upgrade operation has completed successfully
+
+Occurs when recovery operation that's run after a failed data upgrade operation has completed successfully.
+
+<!-- 
+EnvironmentRestoreToNewEnvironmentSucceeded = "LC0126";
+PartnerDiagnosticsBlockEnvironmentInfo
+[PartnerTelemetryKey("pointInTimeUtc")]
+PartnerDiagnosticsBlockDestinationEnvironmentInfo
+PartnerDiagnosticsBlockOperationSuccessInfo
+Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
+-->
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Recovery from a failed data upgrade operation has completed successfully: {environmentName}**|
+
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0178**|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
+## Recovery from a failed data upgrade operation has failed
+
+Occurs when recovery operation that's run after a failed data upgrade operation has also failed.
+
+<!-- 
+EnvironmentRestoreToNewEnvironmentSucceeded = "LC0126";
+PartnerDiagnosticsBlockEnvironmentInfo
+[PartnerTelemetryKey("pointInTimeUtc")]
+PartnerDiagnosticsBlockDestinationEnvironmentInfo
+PartnerDiagnosticsBlockOperationSuccessInfo
+Message => Invariant($"Environment PIT restored successfully: {this.EnvironmentInfo.EnvironmentName} to {this.DestinationEnvironmentInfo.DestinationEnvironmentName}");
+-->
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Recovery from a failed data upgrade operation has failed: {environmentName}**|
+
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
+|environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
+|eventId|**LC0179**|
+|failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
+|totalTime|[!INCLUDE[totalTime](../includes/include-telemetry-dimension-total-time.md)]|
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
