@@ -51,7 +51,7 @@ The **SystemId** field is exposed in the platform code and for AL code, allowing
 - The [SystemIdNo()](methods-auto/recordref/recordref-systemidno-method.md) gets the field number used by the **SystemId** field in the table:
 
     ```AL
-    myRec.OPEN(DATABASE::MyTable);
+    myRec.Open(DATABASE::MyTable);
     SystemIdFieldNo := myRec.SystemIdNo();
     ```
 
@@ -152,11 +152,11 @@ There are a couple points of interest you should know:
 If you want to translate a user security ID GUID to the corresponding user name, the following AL code might be useful:
 
 ```al
-procedure GetUserNameFromSecurityId(userSecurityID: Guid): Code[50]
+procedure GetUserNameFromSecurityId(UserSecurityID: Guid): Code[50]
     var
         User: Record User;
     begin
-        User.Get(secID);
+        User.Get(UserSecurityID);
         exit(User."User Name");
     end;
 ```  
