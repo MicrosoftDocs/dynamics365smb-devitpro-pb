@@ -15,7 +15,7 @@ Because the [!INCLUDE[server](../developer/includes/server.md)] events are alway
 > [!IMPORTANT]  
 > If you are using System Center Operations Manager to monitor [!INCLUDE[server](../developer/includes/server.md)] do not disable logging to the Windows Application log. If you do, monitoring will not work.  
   
-To disable logging to the Windows Applications Log, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the [!INCLUDE[server](../developer/includes/server.md)]onfiguration file \(CustomSettings.config\).  
+To disable logging to the Windows Applications Log, you can use the [!INCLUDE[admintool](../developer/includes/admintool.md)] or modify the [!INCLUDE[server](../developer/includes/server.md)] configuration file \(CustomSettings.config\).  
   
 ## To configure custom telemetry logging to the Windows Application log by using the [!INCLUDE[admintool](../developer/includes/admintool.md)]  
   
@@ -39,14 +39,15 @@ To disable logging to the Windows Applications Log, you can use the [!INCLUDE[ad
   
 ## To disable logging to the Windows Application log by modifying the CustomSettings.config file  
   
-1.  Open the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)]n a text editor, such as Notepad.  
+1. Open the CustomSettings.config file for the [!INCLUDE[server](../developer/includes/server.md)]n a text editor, such as Notepad.  
   
      By default, the file is located in the [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service folder or [!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\\Service\\Instances\\\<instancename> folder \(for multitenant installations\).  
   
-2.  Set the **EnableApplicationChannelLog** setting to **false**.  
+2. Set the **EnableApplicationChannelLog** setting to **false**.  
   
-3.  Save the file, and then restart the [!INCLUDE[server](../developer/includes/server.md)] 
+3. Save the file, and then restart the [!INCLUDE[server](../developer/includes/server.md)] 
   
-## See Also  
- [Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)   
- [Monitoring Business Central Server Events](monitor-server-events.md) 
+## See Also
+
+[Monitoring Business Central Server Events Using Event Viewer](monitor-server-events-windows-event-log.md)  
+[Monitoring Business Central Server Events](monitor-server-events.md) 
