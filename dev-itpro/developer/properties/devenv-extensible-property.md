@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Extensible Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-Sets whether the report can be extended.
+Sets whether the object can be extended.
 
 ## Applies to
 -   Report
