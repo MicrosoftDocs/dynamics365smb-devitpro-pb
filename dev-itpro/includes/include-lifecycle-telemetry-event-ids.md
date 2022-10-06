@@ -138,3 +138,8 @@
 |LC0171| Extension Lifecycle| [Environment app {extensionId} update to version {extensionDestinationVersion} failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-update-latest-failed) |
 |LC0173| Extension Lifecycle| [Environment app {extensionName} uninstall scheduled for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-uninstall-scheduled) |
 |LC0174| Extension Lifecycle| [Environment app {extensionId} uninstall scheduling failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-uninstall-schedule-failed) |
+|LC0175| Environment| [Environment data upgrade operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-started) |
+|LC0176| Environment| [Environment data upgrade operation completed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-completed-successfully) |
+|LC0177| Environment| [Environment data upgrade operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-failed) |
+|LC0178| Environment| [Recovery from a failed data upgrade operation has completed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#recovery-from-a-failed-data-upgrade-operation-has-completed-successfully) |
+|LC0179| Environment| [Recovery from a failed data upgrade operation has failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#recovery-from-a-failed-data-upgrade-operation-has-failed) |
