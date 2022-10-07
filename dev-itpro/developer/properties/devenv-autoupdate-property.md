@@ -25,7 +25,7 @@ Sets whether a record in the database with the same primary key as the record in
 
 
 ## Property Value  
- **True** if the records are updated; otherwise, **false**. The default value is **true**.  
+ **True** if the records are updated; otherwise, **false**. The default value is **false**.  
 
 ## Syntax
 ```AL
