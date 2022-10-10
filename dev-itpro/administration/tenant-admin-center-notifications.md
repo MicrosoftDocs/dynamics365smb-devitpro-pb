@@ -82,7 +82,6 @@ This Logic App queries Application Insights regularly to get any new updates mad
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
 
-
 ##### Post adaptive card in Teams channel for each available environment update
 
 This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a given Microsoft Teams channel for every environment that has an update available. Based on the user choice, the Logic App will call Business Central Admin Center API using an authorized S2S AAD app (configuration details specified in the deployment). The adaptive card gives the user four choices:
@@ -91,7 +90,7 @@ This Logic App queries Application Insights every number of minutes (specified i
 - Ignore information about the update and close the card.
 - Open Admin Center UI.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpitylend%2FBCTech%2Fprivate%2Fpitylend%2Fs2s-bcle%2Fsamples%2FAppInsights%2FAlerts%2FS2SAppsEnvironmentUpgradeAdaptiveCard.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
 
 
 #### Reporting
