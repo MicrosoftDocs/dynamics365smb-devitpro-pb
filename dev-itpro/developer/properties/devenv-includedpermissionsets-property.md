@@ -24,15 +24,19 @@ Sets the lists of other permission sets that are included in this permission set
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
-## See Also
-
 ## Syntax
 
 ```al
 IncludedPermissionSets = BASIC;
 ```
 
-[Get Started with AL](../devenv-get-started.md)  
-[Developing Extensions](../devenv-dev-overview.md)  
+## Remarks
+
+You can also exclude permission sets by using the [ExcludedPermissionSets](devenv-excludedpermissionsets-property.md). For more information, see [Composing Permission Sets](../devenv-permissionset-composing.md).
+
+## See Also
+
 [PermissionSet Object](../devenv-permissionset-object.md)  
 [PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  
+[Get Started with AL](../devenv-get-started.md)  
+[Developing Extensions](../devenv-dev-overview.md)  

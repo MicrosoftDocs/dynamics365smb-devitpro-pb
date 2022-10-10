@@ -68,7 +68,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 
     Contains three MarkDown files that you can use as templates for your content. The templates define required metadata and a recommended structure of the content.
 
-The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the docs.microsoft.com site and by GitHub. They are not relevant for the purpose of extending or customizing the content.
+The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the learn.microsoft.com site and by GitHub. They are not relevant for the purpose of extending or customizing the content.
 
 > [!TIP]
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
@@ -140,7 +140,7 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
         Atom has spell check and is good for managing many files
 
-Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the Docs.microsoft.com site where the Business Central team publishes their docs.
+Internally at Microsoft, some authors use Code, others use Atom, and for light-weight work, we tend to just edit the content in the browser. You can find more guidance for how to get started with MarkDown in the [Docs Contributor Guide](/contribute/). This guide is published by the team that built the learn.microsoft.com site where the Business Central team publishes their docs.
 
 ## Get the content without a GitHub account
 
@@ -185,7 +185,7 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
 
     For more information, see the [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
 
-    The docfx.json files in the Microsoft repos have additional settings for the docs.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
+    The docfx.json files in the Microsoft repos have additional settings for the learn.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
 
     For example, in the globalMetadata section, set the ROBOTS property. [!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
@@ -212,11 +212,11 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
 The files are generated as .html files and stored in the output location that is specified in the docfx.json file.
 
 > [!IMPORTANT]
-> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://docs.microsoft.com]() site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
+> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://learn.microsoft.com]() site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
-The table of contents on the docs.microsoft.com site is currently a MarkDown file, TOC.md, but we are planning to convert it to a YAML file in order to be more compliant with the docs.microsoft.com site. Once we have converted the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format.  
+The table of contents on the learn.microsoft.com site is currently a MarkDown file, TOC.md, but we are planning to convert it to a YAML file in order to be more compliant with the learn.microsoft.com site. Once we have converted the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format.  
 
-The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the docs.microsoft.com site but have been deprecated later. As part of standard website practices, the docs.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
+The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the learn.microsoft.com site but have been deprecated later. As part of standard website practices, the learn.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
 
 For inspiration for how to build your own help website, see [How-to: Customize DFM Engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html) in the DocFx user manual and the [Azure App Service](/azure/app-service/) documentation.
 
@@ -230,7 +230,7 @@ Alternatively, you can add a post-processing step to the script that you use to 
 
 ## Known issues with Microsoft's content
 
-Microsoft's content in the various GitHub repos is optimized for the docs.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
+Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
 
 ### Docs are not available for a specific version
 
@@ -238,9 +238,9 @@ Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prod_sh
 
 ### Broken links
 
-If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the docs.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, you will not have the same redirection.  
+If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the learn.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, you will not have the same redirection.  
 
-We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the docs.microsoft.com site to manage redirection when a file is deprecated. For example, if you get an error that *"finance-how-to-set-up-sepa-direct-debit.md does not exist"*, then you can see in the `.openpublishing.redirection.json` file that the article has been deprecated and replaced by *finance-collect-payments-with-sepa-direct-debit.md*. You can replace the link in the file that is looking for *finance-how-to-set-up-sepa-direct-debit.md* to link to *finance-collect-payments-with-sepa-direct-debit.md* instead.  
+We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the learn.microsoft.com site to manage redirection when a file is deprecated. For example, if you get an error that *"finance-how-to-set-up-sepa-direct-debit.md does not exist"*, then you can see in the `.openpublishing.redirection.json` file that the article has been deprecated and replaced by *finance-collect-payments-with-sepa-direct-debit.md*. You can replace the link in the file that is looking for *finance-how-to-set-up-sepa-direct-debit.md* to link to *finance-collect-payments-with-sepa-direct-debit.md* instead.  
 
 > [!TIP]
 > Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool to manage this for you.
@@ -270,12 +270,12 @@ We have two public GitHub repos that you can contribute to:
 
 - [MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
 
-    This repo contains a copy of the source files for the business functionality content that publishes at `https://docs.microsoft.com/en-us/dynamics365/business-central`  
+    This repo contains a copy of the source files for the business functionality content that publishes at `https://learn.microsoft.com/en-us/dynamics365/business-central`  
 
     > [!NOTE]
     > Microsoft does not accept pull requests to the the translation repos, such as *dynamics365smb-docs-pr.da-dk*, *dynamics365smb-docs-pr.de-de*, or *dynamics365smb-docs-pr.it-it* repo. If you have feedback about translations, please report a GitHub issue in the relevant repo.
 - [MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)  
-    This repo contains a copy of the source files for the developer and admin content that publishes at `https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro`  
+    This repo contains a copy of the source files for the developer and admin content that publishes at `https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro`  
 
 For example, you might have a new article that you think would be beneficial, or you might have a correction to an existing article. If you would like to contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content on the Microsoft Docs website, you create a *pull request* from your repo to the target repo. The Microsoft team will then review the request and include the changes as appropriate.
 

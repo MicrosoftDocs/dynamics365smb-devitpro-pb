@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 08/01/2022
+ms.date: 09/16/2022
 ms.author: edupont
 
 ---
@@ -46,7 +46,7 @@ If you're a delegated admin, you might not be able to sign up yourself. In those
 
 [!INCLUDE [admin-service-health](../includes/admin-service-health.md)]
 
-### Application Insights
+### Telemetry in Application Insights
 
 Application Insights telemetry includes the most complete list of Environment Lifecycle events, and can better be used for automation and reporting purposes than the other communication channels.
 
@@ -56,35 +56,32 @@ Learn more about Environment Lifecycle trace telemetry [here](telemetry-environm
 
 Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights that you can use to set up custom notifications or to automate certain actions triggered by an environment lifecycle event.
 
-> [!NOTE]
-> Samples of custom notifications and automations are shared by Microsoft and third parties on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your Application Insights Alerts and Automations with the community on GitHub.
+Learn more about alerts on telemetry events [here](telemetry-overview.md).
 
-The samples below can help getting started with customization and automation using Application Insights.
-
-> [!IMPORTANT]
-> Deploying a Logic App to Azure also creates the API Connection Resources necessary to authenticate certain actions in the Logic Apps.
->
-> After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the Application Insights Resource in the Azure Portal.
->
-> If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
-
-##### Grouped notification for available updates
+##### Example: Grouped notification for available updates
 
 This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this to replace the many email notifications they would receive for each individual enviroment when set up as notification recipient.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAvailableUpdatesNotification.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FAvailableUpdatesNotification.json)
 
-##### Notification for deleted environment
+##### Example: Notification for deleted environment
 
 This Logic App queries Application Insights every number of minutes (specified in deployment) and notifies a user (also specified in deployment) of any deleted environments in Microsoft Teams. The action that sends the notification in Teams can be updated to notify a Channel or Group Chat instead.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FDeletedEnvironmentNotification.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FDeletedEnvironmentNotification.json)
 
-##### Action each failed environment update
+##### Example: Take action on failed environment updates
 
 This Logic App runs a query that returns any failed environment updates ever number of hours (specified in deployment). Customize the Logic App after deploying to action the failed update, for example by opening a case in Dynamics 365 Customer Service using the Dataverse connector.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FActionFailedEnvironmentUpdate.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
+
+##### Action available updates from an Adaptive Card in Teams
+
+This Logic App queries Application Insights regularly to get any new updates made available to environments for which AppInsights has been set up and posts an Adaptive Card to Teams from which the update can be started immediately or rescheduled, all without having to navigate to the admin center.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
+
 
 ##### Post adaptive card in Teams channel for each available environment update
 
@@ -99,7 +96,7 @@ This Logic App queries Application Insights every number of minutes (specified i
 
 #### Reporting
 
-To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report which shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md) or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
+To help you analyze Business Central telemetry, find the [Power BI app](https://aka.ms/bctelemetryreport) in Microsoft AppSource. This app includes an Administration report which shows an inventory of environments including various environment operations details built with the environment lifecycle telemetry in Application Insights. Learn more [here](telemetry-power-bi-app.md), or get it immediately from [Microsoft AppSource](https://aka.ms/bctelemetryreport).
 
 > [!NOTE]
 > The Power BI reports and dataset that make up this app are available on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/PowerBI/Reports/AppSource/enrironment-app-pbix). You can customize those resources for your own needs and publish from Power BI desktop.

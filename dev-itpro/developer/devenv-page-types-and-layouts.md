@@ -31,9 +31,9 @@ The following table provides an overview of the page types supported in [!INCLUD
 |`ListPlus`|Statistics, details, and related data management.|Single entity|Titled entity with at least one `ListPart`. Can have fields above or below the part(s).|
 |`List`|Entity overviews and navigation, and inline editing of simple entities. [List page example](devenv-simple-list-page-example.md)  |Collection of entities/entries|A single list with a caption. May have field groups and subpages above and below the list's `Repeater`.|
 |`Worksheet`|Line-based data entry tasks (such as journals) and inquiries.|Collection of entities|A single list or table with a caption. May have field groups and subpages above and below the worksheet's `Repeater`.|
-|`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
-|`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields, a list, and parts.|
-|`NavigatePage`|Multi-step dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields, a list, and parts.|
+|`StandardDialog`|Routine dialog that starts or progresses a task.|Single or collection|A cancelable dialog with an instruction to the user. Can have one or more groups of fields and parts.|
+|`ConfirmationDialog`|Confirmative or exceptional dialog, such as warnings.|Single or collection|A Yes/No dialog with an instruction to the user. Can have one or more groups of fields and parts.|
+|`NavigatePage`|Multi-step dialog (also known as a "Wizard").|Single or collection|Can have one or more groups of fields and parts.|
 |`CardPart`|A page that is embedded in another page, such as in a FactBox.|Single entity|Single group of fields representing fields in a FastTab.|
 |`ListPart`|A page that is embedded in another page, such as in a FactBox.|Collection of entities/entries|Single `Repeater` representing columns in a list or table. Can have fields above or below the repeater.|
 |`HeadlinePart`|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|Single entity|Single group of fields representing headlines.|

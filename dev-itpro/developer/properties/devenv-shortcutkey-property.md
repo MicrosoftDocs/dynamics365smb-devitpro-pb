@@ -3,7 +3,7 @@ title: "ShortcutKey Property"
 description: "Sets a shortcut key for selecting a menu item."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 08/04/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ Sets a shortcut key for selecting a menu item.
 
 ## Applies to
 -   Page Action
+-   Page Custom Action
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
