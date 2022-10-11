@@ -40,7 +40,7 @@ This article describes how to set up sending telemetry data to Azure Application
 
     - For [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2 (v17) or earlier, copy the **Instrumentation Key**.
 
-    - For later versions, copy the **Connection String**.
+    - For later versions, copy the **Connection String**. The maximum supported length for the connection string is 2,048 characters.
 
         > [!NOTE]
         > For these versions, you can use either the instrumentation key or the connection string. However, for reliability, we recommend that you use the connection string. 
