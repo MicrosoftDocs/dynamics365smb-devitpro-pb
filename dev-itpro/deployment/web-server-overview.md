@@ -1,13 +1,11 @@
 ---
 title: Deploy the Web Server Components
 description: Understand the network architecture, users, security, deployment phases for installing and configuring the Business Central Web Server Components.
-ms.custom: na
-ms.date: 04/01/2021
+ms.date: 10/11/2021
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: overview
 author: jswymer
+ms.custom: bap-template 
 ---
 # [!INCLUDE[webserver](../developer/includes/webserver.md)] Overview
 
@@ -49,7 +47,11 @@ Setup is the quickest way to get a web server instance up and running, and is ty
 
 For information about how to install the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], see [Install Business Central Using Setup](install-using-setup.md).
 
+> [!NOTE]
+> [!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
+
 ### Using [!INCLUDE[webserver](../developer/includes/webserver.md)] PowerShell cmdlets
+
 There are several PowerShell cmdlets that enable you to create, configure, and remove [!INCLUDE[webserver](../developer/includes/webserver.md)] instances from a command line interface. To create a web server instance, you use the [New-NAVWebServerInstance](/powershell/module/microsoft.dynamics.nav.management/new-navwebserverinstance) cmdlet, which has the following advantages over Setup:
 
 -   You can create multiple web server instances.
@@ -62,7 +64,7 @@ There are several PowerShell cmdlets that enable you to create, configure, and r
 
 For information about how to create a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance by using the New-NAVWebServerInstance cmdlet, see [Creating and Managing [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell](../deployment/configure-multiple-web-server-instances.md).
 
-## Deployment Phases  
+## Deployment Phases 
  Typically, you will deploy the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in phases, which can influence the network topology and security settings that you deploy. For example, in the development phase, you develop, test, and fine-tune the application. In this phase, you might consider deploying the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in a single-computer scenario. When you move to the production phase, you deploy the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] in the full network infrastructure.  
 
 ## Security  
