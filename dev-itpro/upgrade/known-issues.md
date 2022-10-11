@@ -18,6 +18,28 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
 
+## Web server components fatal error during installation on Azure virtual machine (VM) 
+
+<!-- hhttps://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/445272/-->
+
+> Applies to: Version 20 and 21 
+
+### Problem
+
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] using setup.exe on a Azure VM running Windows Server 2022, the following error occurs:
+
+**Web Server Components**
+
+**Fatal error during installation**
+
+### Possible cause
+
+This error will typcially occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they already exist, so a conflict occurs. 
+
+### Workaround
+
+Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, then run set.exe again.
+
 ## Users can't sign in to the web client after upgrade to 19.0
 
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/413768-->
