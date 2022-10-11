@@ -1,16 +1,12 @@
 ---
 title: "Install Business Central Using Setup"
 description: Learn about installing Business Central using the installation wizard
-ms.custom: na
-ms.date: 05/05/2022
+ms.date: 10/11/2022
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.assetid: e4bd0a48-9e21-44e3-8a5d-858f02af5206
-caps.latest.revision: 24
 ms.author: jswymer
 author: jswymer
+ms.custom: bap-template 
 ---
 
 # Installing Business Central Using Setup

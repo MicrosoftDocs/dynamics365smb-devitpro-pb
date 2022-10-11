@@ -1,17 +1,15 @@
 ---
-title: Known Issues with On-premises
+title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.custom: na
-ms.date: 10/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/11/2022
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.custom: bap-template 
 ---
 
-# Some Known Issues in [!INCLUDE[prod long](../developer/includes/prod_long.md)] On-premises
+# Some Known Issues in Business Central On-premises
 
 This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
@@ -26,7 +24,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] using setup.exe on a Azure VM running Windows Server 2022, the following error occurs:
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server 2022, the following error occurs:
 
 **Web Server Components**
 
@@ -34,7 +32,7 @@ When you try to install the [!INCLUDE[webserver](../developer/includes/webserver
 
 ### Possible cause
 
-This error will typcially occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they already exist, so a conflict occurs. 
+This error will typically occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
 
 ### Workaround
 
@@ -92,7 +90,7 @@ So if there are records in these tables, or the application includes custom code
 
 ### Workaround 
 
-Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code thats stores the non-temporary records in these base application tables to use other tables.
+Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the non-temporary records in these base application tables to use other tables.
 
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
@@ -168,7 +166,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 ### Problem
 
-When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a very heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
 
 ### Workaround
 
