@@ -24,7 +24,7 @@ This article describes some known issues in [!INCLUDE[prod short](../developer/i
 
 ### Problem
 
-When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server 2022, the following error occurs:
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server, the following error occurs:
 
 **Web Server Components**
 
