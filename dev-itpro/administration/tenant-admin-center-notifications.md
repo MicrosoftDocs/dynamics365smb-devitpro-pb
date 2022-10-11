@@ -76,13 +76,14 @@ This Logic App runs a query that returns any failed environment updates ever num
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FActionFailedEnvironmentUpdate.json)
 
-##### Example: Post adaptive card in Teams channel for each available environment update
+##### Example: Post adaptive cards in Teams for each available environment update
 
-This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a given Microsoft Teams channel for every environment that has an update available. Based on the user choice, the Logic App will call Business Central Admin Center API using an authorized S2S AAD app (configuration details specified in the deployment). The adaptive card gives the user four choices:
-- Schedule the update as soon as possible ("Run Now"), and allowing update to start outside of the update window for the environment.
-- Reschedule the update for a given day.
-- Ignore information about the update and close the card.
-- Open Admin Center UI.
+This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts an adaptive card to a specified Microsoft Teams channel for each environment that has an update available. Based on the user's choice, the Logic App will call the Business Central admin center API using an authorized service-to-service Azure Active Directory app (configuration details specified in the deployment). The adaptive card gives the user four choices:  
+
+- Schedule the update as soon as possible ("Run Now"), and allow the update to start outside of the update window for the environment  
+- Reschedule the update to a specified other day  
+- Ignore information about the update and close the card  
+- Open the admin center  
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
 
