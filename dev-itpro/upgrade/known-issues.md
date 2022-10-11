@@ -36,7 +36,7 @@ This error will typically occur on a VM where the [!INCLUDE[webserver](../develo
 
 ### Workaround
 
-Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, then run set.exe again.
+Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, then run setup.exe again.
 
 ## Users can't sign in to the web client after upgrade to 19.0
 
