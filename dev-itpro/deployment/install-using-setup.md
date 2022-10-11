@@ -148,14 +148,12 @@ You edit the file using an XML editor or text editor. Setup configuration files 
 |Component|For each component, there are three separate values, all displayed on a single line:<br /><br /> -   **ShowOptionNode**<br />     Specifies whether the component should be displayed in Setup. For silent installs, this parameter isn't relevant.<br />-   **State**<br />     There are two possible values: **Local**, indicates that the component is included in the install. **Absent** indicates that the component isn't included.<br />-   **Id**<br />     Identifies the component<br /><br /> You can change value for **State** or **ShowOptionNode**, but not for **Id**. Also, you can't add or remove a component.|  
 |Parameter|These settings contain configuration information for components. As with Components, you can modify a parameter's **Value**, but not its **Id**. |  
 
-  
 #### Load a Setup configuration file
   
 The option to load a Setup configuration file is on the **Choose an installation option** page in Setup.
 
 > [!NOTE] 
 > If you are using a Setup configuration file that was created from an earlier version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[navnow_md.md](../developer/includes/navnow_md.md)], be aware that there might be some elements that are no longer supported because the feature has been deprecated. For example, the elements that have the following IDs are no longer supported as og 2019 release wave 2: "RoleTailoredClient", "ExcelAddin, "ClassicClient", "ClickOnceInstallerTools", "STOutlookIntegration", "PublicWinBaseUrl", and "ACSUri".
-
 
 1. On the **Choose an installation option** page, choose **Load Configuration**.  
   
@@ -171,6 +169,10 @@ The option to load a Setup configuration file is on the **Choose an installation
 3. Modify the list of components to install or choose **Next** to continue to the **Specify parameters** page.   
   
 4. Configure these settings or choose **Apply** to accept these values and continue.
+
+## Troubleshooting
+
+[!INCLUDE[upgrade_known_issues](../developer/includes/upgrade_known_issues.md)]
 
 ## See Also
 
