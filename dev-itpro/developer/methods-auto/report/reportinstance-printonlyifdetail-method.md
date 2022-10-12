@@ -3,7 +3,7 @@ title: "Report.PrintOnlyIfDetail([Boolean]) Method"
 description: "Gets or sets the current settings of the PrintOnlyIfDetail property."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 10/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 Gets or sets the current settings of the PrintOnlyIfDetail property.
 
 > [!NOTE]
-> This method is supported only in Business Central on-premises.
+> From runtime version 10.1 and onward, this method is supported in Business Central online.
 
 ## Syntax
 ```AL
