@@ -217,7 +217,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
 
     ```json
     "al.assemblyProbingPaths": [
-    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\200",
+    "C:\\Program Files\\Microsoft Dynamics 365 Business Central\\200\\Service",
     "C:\\Program Files (x86)\\Microsoft Dynamics 365 Business Central\\200\\RoleTailored Client",
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.8",
     "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\WindowsPowerShell"
