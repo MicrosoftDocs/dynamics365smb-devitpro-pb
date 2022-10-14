@@ -19,7 +19,7 @@ Allows you to manage environment-specific settings such as the AppInsights key o
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -58,7 +58,7 @@ Returns the environment's update settings, or "null" if none exist
 Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
 
 ```
-GET /admin/v2.13/applications/settings/timezones
+GET /admin/v2.15/applications/settings/timezones
 ```
  
 ### Response
@@ -86,7 +86,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -165,7 +165,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
@@ -199,7 +199,7 @@ POST /admin/v2.13/applications/{applicationFamily}/environments/{environmentName
 Gets the Azure AD group currently assigned to an environment.
 
 ```
-GET /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -238,7 +238,7 @@ Assigns an Azure AD group to an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -266,7 +266,7 @@ Returns 200 if successful, or 404 if the group doesn't exist in Azure AD.
 Clears an Azure AD group that is currently assigned to an environment.
 
 ```
-DELETE /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+DELETE /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters

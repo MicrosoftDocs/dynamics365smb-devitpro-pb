@@ -151,6 +151,7 @@
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App Management](administration/administration-center-api_app_management.md)
+#### [Authorized Azure AD Apps](administration/administration-center-api_authorizedaadapps.md)
 #### [Available Applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment Database Export](administration/administration-center-api_environment_database_export.md)
