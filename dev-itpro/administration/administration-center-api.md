@@ -60,6 +60,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
 
   > [!NOTE]
   > Copy the **Application (client) ID** of the registered app. You'll need this later. You can get this value from the **Overview** page.
+
 4. Grant the registered application **AdminCenter.ReadWrite.All** permission to the **Dynamics 365 [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]** API as follows:
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
@@ -68,6 +69,7 @@ The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API su
   
     > [!NOTE]
     > If you intent to use the same AAD App with the Automation API and Business Central Web Services you can also grant **API.ReadWrite.All** and **Automation.ReadWrite.All** permissions. Learn more [here](automation-apis-using-s2s-authentication.md).
+
 5. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**. This step isn't required if you'll be granting consent from the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]. It is possible to grant consent from this page only for your own current tenant. This means that single-tenant apps are fine, for multi-tenant apps and different tenants, you grant consent from the Azure AD portal or from the new TAC UI.
 6. Go to the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] and navigate to the 'Authorized AAD Apps' page. Paste the **Application (client) ID** of your app in the form to authorize an app.
 7. If not already completed in step 5 you can grant consent for your app from the 'Authorized AAD Apps' page in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)].  
