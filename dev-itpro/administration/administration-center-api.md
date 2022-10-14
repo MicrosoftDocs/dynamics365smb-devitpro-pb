@@ -28,6 +28,10 @@ For more information about administrative capabilities, see [The Business Centra
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
 
 ## Authenticate using service-to-service AAD Apps ([Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow))
+
+> [!IMPORTANT]  
+> This authentication type is supported from version 20.0 an onwards
+
 The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API supports authentication using AAD Apps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
