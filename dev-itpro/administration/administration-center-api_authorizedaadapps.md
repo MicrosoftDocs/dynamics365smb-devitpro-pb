@@ -1,6 +1,6 @@
 ---
 title: Business Central Admin Center API - Authorized AAD Apps
-description: Learn about the Business Central administration center API for authorizing AAD Apps.
+description: Learn about the Business Central administration center API for authorizing Azure AD Apps.
 author: jobulsin
 ms.topic: conceptual
 ms.devlang: na
@@ -11,13 +11,13 @@ ms.search.keywords: administration, tenant, admin, environment, telemetry
 ms.date: 10/12/2022
 ---
 
-# Authorized AAD Apps 
+# Authorized Azure AD Apps 
 
 Authorized Apps are Azure Active Directory Apps authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API.
 
-## Get Authorized AAD Apps
+## Get Authorized Azure AD Apps
 
-Returns the AAD apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified AAD Tenant.
+Returns the Azure AD apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant.
 
 ```
 GET /admin/v2.15/authorizedAadApps
@@ -38,9 +38,9 @@ GET /admin/v2.15/authorizedAadApps
 ]
 ```
 
-## Authorize AAD App
+## Authorize Azure AD App
 
-Authorizes an AAD app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified AAD Tenant. This does not grant admin consent or assign permission sets in environments to the AAD app.
+Authorizes an Azure AD app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant. This does not grant admin consent or assign permission sets in environments to the Azure AD app.
 
 ```
 PUT /admin/v2.15/authorizedAadApps/<appClientId>
@@ -53,9 +53,9 @@ PUT /admin/v2.15/authorizedAadApps/<appClientId>
     "isAdminConsentGranted": false
 }
 ```
-## Remove AAD App
+## Remove Azure AD App
 
-Removes an AAD app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified AAD Tenant. This does not revoke admin consent in AAD nor remove permission sets assigned to the AAD app in environments.
+Removes an Azure AD app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant. This does not revoke admin consent in Azure AD nor remove permission sets assigned to the Azure AD app in environments.
 
 ```
 DELETE /admin/v2.15/authorizedAadApps/<appClientId>
