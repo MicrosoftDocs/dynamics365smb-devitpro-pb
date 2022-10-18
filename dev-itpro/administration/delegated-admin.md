@@ -80,6 +80,8 @@ As a Microsoft customer organization, you can have multiple partners registered 
 
 [!INCLUDE [admin-gdap-user](../includes/admin-gdap-user.md)]
 
+[!INCLUDE [admin-conditional-access-policies](../includes/admin-conditional-access-policies.md)]
+
 If you don't need delegated admin help continuously, you can restrict access for the partner users into your environment. There are two approaches that you can use to restrict delegated admin access to a Business Center environment:  
 
 - Disable a specific delegated admin user within the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment. For more information, see [How to remove a user's access](/dynamics365/business-central/ui-how-users-permissions#to-remove-a-users-access-to-the-system).  
