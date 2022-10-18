@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
-ms.date: 08/03/2022
+ms.date: 10/18/2022
 ms.author: edupont
 ---
 
@@ -52,7 +52,7 @@ The following tasks aren't available to the delegated administrator:
 
 - Run scheduled tasks in the job queue.  
 
-    However, starting with 2021 release wave 1 (version 18), delegated administrators can test that the job queue can run without issues, before asking the customer to start it, by using **Run once (foreground)** action on the Job Queue Entry card. This will create a temporary non-recurrent copy of this job and will run it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
+    However, <!--starting with 2021 release wave 1 (version 18),--> delegated administrators can test that the job queue can run without issues, before asking their customer to start it, by using the **Run once (foreground)** action on the **Job Queue Entry** card. This action creates a temporary non-recurrent copy of this job and runs it once in the foreground. You can then call it as many times as you need before you hand it over to your customer so that they can start it as a recurrent job. After the job queue completes, it will be put in the on-hold status and can't be rescheduled.  
 
 - Trigger a web hook or any other application action that relies on the job queue functionality, except by using the **Run once (foreground)** action.
 
@@ -60,13 +60,16 @@ The following tasks aren't available to the delegated administrator:
 
     Instead, you can add the external user in the Azure portal and assign this user the **External Accountant** license.
 
-- Use the **Cloud Migration Setup** assisted setup guide to migrate data from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
+<!--- Use the **Cloud Migration Setup** assisted setup guide to migrate data from [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
-    Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.
+    Instead, a licensed user who is assigned the SUPER permission set in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] can run the assisted setup guide.-->
 
 - Access a web service by using a Web Service Access key.
 
-    Usage of Web Service Access key is deprecated in 2022 release wave 1. Find out more [here](../upgrade/deprecated-features-platform.md#accesskeys).
+    Usage of Web Service Access key was deprecated in 2022 release wave 1. Find out more [here](../upgrade/deprecated-features-platform.md#accesskeys).
+
+> [!NOTE]
+> [!INCLUDE [admin-conditional-access-policies](../includes/admin-conditional-access-policies.md)]
 
 ## Managing delegated permissions as an internal administrator
 
