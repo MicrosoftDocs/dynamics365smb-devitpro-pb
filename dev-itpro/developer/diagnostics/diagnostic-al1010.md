@@ -1,9 +1,9 @@
 ---
 title: "Compiler Error AL1010"
-description: "Command-line syntax error: Missing ':<number>' for '{0}' option."
+description: "Command-line syntax error: Missing `:<number>` for '{0}' option."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 10/18/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Command-line syntax error: Missing ':<number>' for '{0}' option.
+Command-line syntax error: Missing `:<number>` for '{0}' option.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
