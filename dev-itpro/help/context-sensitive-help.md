@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 01/28/2022
+ms.date: 10/24/2022
 ---
 
 # Configure Context-Sensitive Help
@@ -57,7 +57,11 @@ Specifically for localization apps that translate [!INCLUDE [prod_short](../deve
   ],
 ```
 
-The *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in Catalan. If the user switches the application language to English (US), then the Help calls will go to the *learn.microsoft.com* site.  
+The `helpBaseUrl` property represents the URL that will be used to overwrite the default Microsoft help link, which is `(/{0}/dynamics365/business-central)`. The value of the property must contain a placeholder for the user's locale culture, `{0}`.  
+
+The `supportedLocales` property specifies the list of locales that are supported by the URL specified in the `helpBaseUrl` property and used in the translation app. If the user's current locale is among the `supportedLocales` of the extension, the user will be re-directed to the help base URL that you specified.  
+
+In this example, the *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in Catalan. If the user switches the application language to English (US), then the Help calls will go to the *learn.microsoft.com* site.  
 
 ## Page-level configuration
 
