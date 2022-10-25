@@ -1,14 +1,13 @@
 ---
 title: "Using Designer"
 description: "Description of how Designer works and is integrated with the AL development experience."
-author: SusanneWindfeldPedersen
-ms.custom: na
-ms.date: 05/19/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.author: solsen
+ms.date: 10/14/2022
+ms.custom: bap-template
 ---
 
 # Using Designer
@@ -106,7 +105,7 @@ You can also move actions to reorder them in the navigation bar, or move them in
 
 ## Hiding and showing Parts
 
-Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will be grayed out and will disappear from the page when you quit Designer mode. Similarly, you can select **Show** on a grayed part control to make it visible again to the user. 
+Designer lets you hide and unhide part controls in a page directly from the client. When you select the **Hide** option on a part, it will be grayed-out and disappear from the page when you quit Designer mode. Similarly, you can select **Show** on a grayed part control to make it visible again to the user. 
 
 The extension generated when the user hides or shows a part overrides the [Visible Property](properties/devenv-visible-property.md) in code. For more information on how the **Visible Property** affects the visibility of a control, see [UI Customization and Visibility of Controls](properties/devenv-visible-property.md#ui-customization-and-visibility-of-controls).
 
@@ -161,6 +160,16 @@ Accessing Designer is controlled on a user or user group basis by the **EXTEND. 
 > [!NOTE]
 > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
+## Other things to know
+
+- **Power Automate** item in action bar
+
+  - You can't hide or move the **Automate** item or the **Power Automate** subitem and its actions **Create a flow** or **Manage Flows**.
+  - You can move flows included under the **Automate** item, but you can't hide them. Moving the flow makes a copy of the flow to the destination, it won't remove it from the **Automate** item. Your flow in Power Automate isn't duplicated.
+    - If the action is moved to the repository area of the action bar (right side of |), a new `action` is created at the drop location.
+    - If the action is moved to the promoted area (left side of |) a new `actionref` is created at the drop location. This `actionref` points to a new base action that's appended to the **Actions** menu (`Processing` action area).
+   > [!TIP]
+   > You can hide the **Automation** item from users, but not using designer. Learn more at [Set Up Power Automate Integration](../powerplatform/power-automate-setup.md).
 
 ## See Also
 

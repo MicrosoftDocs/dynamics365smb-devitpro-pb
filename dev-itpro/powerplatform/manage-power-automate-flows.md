@@ -56,6 +56,6 @@ You'll see two more menu items on the **Manage Power Automate** flows page: **Pr
 
 ## See also
 
-[Set up Automated Workflows](instant-flows.md)  
-[Switch on Manual Instant Flows](instant-flows.md)  
+[Set up Automated Flows](automate-workflows.md)  
+[Set up Instant Flows](instant-flows.md)  
 [Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)  
