@@ -67,6 +67,7 @@
 | LC0053 | Profile Configuration Lifecycle | [Profile removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#removed) |
 | LC0054 | Profile Configuration Lifecycle | [Profile page customization removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-removed) |
 | LC0055 | Profile Configuration Lifecycle | [Profile page customization converted: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-converted) |
+|LC0056|Extension Lifecycle |[Extension is already synchronized: {extensionName}](../administration/telemetry-extension-lifecycle-trace.md#alreadySynced)|
 | LC0100 | Environment | [Environment update available for scheduling: {environmentName} to version {destinationVersion}.](../administration/telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) |
 | LC0101 | Environment | [Environment update scheduled: {environmentName} to version {destinationVersion}, update on or after date: {registeredForUpdateOnOrAfterDateUtc}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-scheduled) |
 | LC0102 | Environment | [Environment update missed: {environmentName} to version {destinationVersion}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-missed) |
