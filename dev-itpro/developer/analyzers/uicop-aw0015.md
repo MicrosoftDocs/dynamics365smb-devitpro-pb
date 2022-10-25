@@ -1,6 +1,6 @@
 ---
-title: "CodeCop Warning AA0194"
-description: "Remember to specify either the 'OnAction' trigger, the 'RunObject' property, or the 'FlowId' property on an action."
+title: "UICop Warning AW0015"
+description: "Actions with scope repeater must be promoted in order to appear on the repeater control."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2022
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Warning AA0194
-Only write actions that have an effect.
+# UICop Warning AW0015
+Actions with scope repeater must be promoted.
 
 ## Description
-Remember to specify either the 'OnAction' trigger, the 'RunObject' property, or the 'FlowId' property on an action.
+Actions with scope repeater must be promoted in order to appear on the repeater control.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[CodeCop Analyzer](codecop.md)  
-[Get Started with AL](../devenv-get-started.md)  
+[UICop Analyzer](uicop.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
