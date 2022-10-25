@@ -663,6 +663,7 @@
 ###### [Designing List Parts](developer/devenv-designing-listparts.md)
 ###### [Designing Card Parts](developer/devenv-designing-cardparts.md)
 ###### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+###### [Designing Power BI Report Parts](developer/devenv-power-bi-report-parts.md)
 <!-- reenable when topics have been written
 ####### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) 
 -->
@@ -905,6 +906,8 @@
 ### Developing Client Add-ins 
 #### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 #### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
+
+### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
@@ -1174,12 +1177,14 @@
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
-### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
-### [Instant Flows](powerplatform/instant-flows.md)
+### [Power Automate Integration Overview](powerplatform/power-automate-overview.md)
+### [Set Up Power Automate Integration](powerplatform/power-automate-setup.md)
+### [Set Up Automated Flows](powerplatform/automate-workflows.md)
+### [Set Up Instant Flows](powerplatform/instant-flows.md)
 ### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
+### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
 <!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
