@@ -23,6 +23,10 @@ Sends a file from the client computer to the corresponding server. The client co
 ```AL
 [Ok := ]  File.UploadIntoStream(DialogTitle: Text, FromFolder: Text, FromFilter: Text, var FromFile: Text, var InStream: InStream)
 ```
+
+> [!IMPORTANT]  
+> This method is deprecated from runtime 7.0. Use [File.UploadIntoStream Method](file-uploadintostream-string-instream-method.md) instead.
+
 > [!NOTE]
 > This method can be invoked without specifying the data type name.
 ## Parameters
@@ -56,12 +60,7 @@ The default file to upload to the service. The name displays in the dialog box f
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if the operation was successful; otherwise **false**.   If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
-
-> [!IMPORTANT]  
-> This method is deprecated from runtime 7.0. Use [File.UploadIntoStream Method](file-uploadintostream-string-instream-method.md) instead.
-
 
 ## See Also
 [File Data Type](file-data-type.md)
