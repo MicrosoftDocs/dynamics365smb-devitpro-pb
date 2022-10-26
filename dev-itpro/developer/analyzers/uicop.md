@@ -3,7 +3,7 @@ title: "UICop Analyzer"
 description: "UICop is an analyzer that enforces rules that must be respected by extensions meant to customize the Web Client."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2022
+ms.date: 10/26/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -27,7 +27,7 @@ UICop is an analyzer that enforces rules that must be respected by extensions me
 |[AW0005](uicop-aw0005.md)|Actions should use the Image property.|WebClient|Info|
 |[AW0006](uicop-aw0006.md)|Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable.|WebClient|Info|
 |[AW0007](uicop-aw0007.md)|The Web client does not support displaying Repeater controls that contain FlowFilter fields.|WebClient|Error|
-|[AW0008](uicop-aw0008.md)|The Web client does not support displaying Repeater controls in pages of type Card, Document, and ListPlus.|WebClient|Warning|
+|[AW0008](uicop-aw0008.md)|The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet.|WebClient|Warning|
 |[AW0009](uicop-aw0009.md)|Using a Blob with subtype Bitmap on a page field is deprecated. Instead use the Media/MediaSet data types.|WebClient|Warning|
 |[AW0010](uicop-aw0010.md)|A Repeater control used on a List page must be defined at the beginning of the area(Content) section.|WebClient|Warning|
 |[AW0011](uicop-aw0011.md)|Add PromotedOnly="true" to some or all promoted actions to avoid identical actions from appearing in both the promoted and default sections of the command bar.|WebClient|Info|
