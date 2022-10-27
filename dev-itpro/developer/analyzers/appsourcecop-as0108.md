@@ -1,6 +1,6 @@
 ---
-title: "CodeCop Warning AA0194"
-description: "Remember to specify either the 'OnAction' trigger, the 'RunObject' property, or the 'FlowId' property on an action."
+title: "AppSourceCop Error AS0108"
+description: "The type of a variable that belongs to the public API cannot be changed, because it will break dependent extensions."
 ms.author: solsen
 ms.custom: na
 ms.date: 10/25/2022
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Warning AA0194
-Only write actions that have an effect.
+# AppSourceCop Error AS0108
+The type of a variable belonging to the public API cannot be changed.
 
 ## Description
-Remember to specify either the 'OnAction' trigger, the 'RunObject' property, or the 'FlowId' property on an action.
+The type of a variable that belongs to the public API cannot be changed, because it will break dependent extensions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[CodeCop Analyzer](codecop.md)  
-[Get Started with AL](../devenv-get-started.md)  
+[AppSourceCop Analyzer](appsourcecop.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

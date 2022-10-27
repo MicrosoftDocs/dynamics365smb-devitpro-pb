@@ -1,9 +1,9 @@
 ---
-title: "UICop Warning AW0008"
-description: "The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet."
+title: "UICop Warning AW0015"
+description: "Actions with scope repeater must be promoted in order to appear on the repeater control."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/26/2022
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# UICop Warning AW0008
-The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet.
+# UICop Warning AW0015
+Actions with scope repeater must be promoted.
 
 ## Description
-The Web client only supports displaying Repeater controls in pages of type List, ListPart, and Worksheet.
+Actions with scope repeater must be promoted in order to appear on the repeater control.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [UICop Analyzer](uicop.md)  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
