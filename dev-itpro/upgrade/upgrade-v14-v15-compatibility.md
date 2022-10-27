@@ -26,7 +26,7 @@ Before you choose the target version for your upgrade, read the [Some Known Issu
 
 ## Version 20 compatibility
 
-The following table lists the Business Central 19 versions and the minimum version of later releases that are compatible for upgrade.
+The following table lists the Business Central 20 versions and the minimum version of later releases that are compatible for upgrade.
 
 |Version 20|Version 21|
 ----------|----------|
