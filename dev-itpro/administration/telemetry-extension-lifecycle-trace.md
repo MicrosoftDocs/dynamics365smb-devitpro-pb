@@ -388,6 +388,39 @@ Occurs when an extension fails to synchronize on the tenant.
 | totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
 |[See common custom dimensions](#other)||
 
+
+## <a name="alreadySynced"></a>Extension is already synchronized
+
+Occurs when an extension was already synchronized on the tenant. Added in version 21.1.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Extension is already synchronized: {extensionName}**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+| eventId|**LC0056**|
+| extensionId|Specifies the ID of the extension that failed to synchronize.|
+| extensionName|Specifies the name of the extension that failed to synchronize.|
+| extensionPublishedAs|Specifies whether the extension was published as one of the following options:<ul><li>**Dev** - published from the AL development environment.</li><li>**Global** - published to the global scope.</li><li>**Tenant** - published to the tenant scope.</li></ul>|
+| extensionPublisher|Specifies the extension's publisher.|
+| extensionScope|Specifies whether the extension was published to one of the following scopes:<ul><li>**Global** - the extension can be installed on all tenants connected the service instance. </li><li>**Tenant** - the extension can only be installed on the tenant to which it was published.</li></ul>|
+| extensionSynchronizationMode|Specifies whether the extension was synchronized in one of the following modes:<ul><li>**Add** -  The database schema defined by the objects in the extension are added to the database schema of the tenant database. This mode is typically used mode after you publish an extension for the first time.</li><li>**Clean** - The database schema defined by all versions of the extension will be removed from the database and all data is lost. This mode is typically used when an extension will no longer be used and all versions unpublished. </li><li>**Development** - This mode is acts similar to Add, except it's intended for use during development. It lets you sync the same version of an extension that is already published. However, to run this mode, only one version the App can be currently published.</li><li>**ForceSync** - This mode like **Add** except it supports destructive schema changes (like removing fields, renaming them, changing their datatypes, and more). it's typically used during development, and is the mode used when an extension is published and installed from the AL development environment.</li></ul> For more information about the modes, see [Sync-NAVApp cmdlet -Mode](/powershell/module/microsoft.dynamics.nav.apps.management/sync-navapp).|
+| extensionVersion|Specifies the version of the extension was synchronized.|
+| failureReason|Specifies the error that occurred when synchronizing the extension.|
+| result|**Failure**|
+| serverExecutionTime|Specifies the amount of time it took the server to complete the request. The time has the format hh:mm:ss.sssssss.|
+| sqlExecutes|Specifies the number of SQL statements that the request executed. |
+| sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+| totalTime|Specifies the amount of time it took to process the request. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
+
+
 ## <a name="installedsuccess"></a>Extension installed successfully
 
 Occurs when an extension installs successfully on a tenant.
@@ -704,7 +737,7 @@ Occurs when scheduling the installation of a new extension/app has completed suc
 |extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
-|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 |[See common custom dimensions](#other)|-|
@@ -740,7 +773,7 @@ Occurs when scheduling the installation of a new extension/app has failed.
 |extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
-|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
@@ -777,7 +810,7 @@ Occurs when installing a new extension/app has started.
 |extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
-|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
@@ -813,7 +846,7 @@ Occurs when installing a new extension/app has completed successfully.
 |extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
-|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |
@@ -841,7 +874,7 @@ Occurs when installing a new extension/app has failed.
 
 |Dimension|Description or value|
 |---------|-----|
-|allowDependentsUninstall|[!INCLUDE[allowDependentsUninstall](../includes/include-telemetry-dimension-allow-dependents-uninstall)]|
+|allowDependentsUninstall|[!INCLUDE[allowDependentsUninstall](../includes/include-telemetry-dimension-allow-dependents-uninstall.md)]|
 |applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
 |countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
 |environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
@@ -892,7 +925,7 @@ Occurs when the extension/app that's being installed or updated has a dependency
 |extensionDestinationVersion|[!INCLUDE[extensionDestinationVersion](../includes/include-telemetry-dimension-extension-destination-version.md)]|
 |extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |extensionName|[!INCLUDE[extensionName](../includes/include-telemetry-dimension-extension-name.md)]|
-|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]||
+|extensionPublisher|[!INCLUDE[extensionPublisher](../includes/include-telemetry-dimension-extension-publisher.md)]|
 |extensionScope|[!INCLUDE[extensionScope](../includes/include-telemetry-dimension-extension-scope.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|
 |[See common custom dimensions](#other)|-|
@@ -1134,7 +1167,7 @@ Occurs when scheduling the uninstallation of an extension/app has failed.
 
 |Dimension|Description or value|
 |---------|-----|
-|allowDependentsUninstall|[!INCLUDE[allowDependentsUninstall](../includes/include-telemetry-dimension-allow-dependents-uninstall)]|
+|allowDependentsUninstall|[!INCLUDE[allowDependentsUninstall](../includes/include-telemetry-dimension-allow-dependents-uninstall.md)]|
 |applicationFamily|[!INCLUDE[applicationFamily](../includes/include-telemetry-dimension-application-family.md)]|
 |countryCode|[!INCLUDE[countryCode](../includes/include-telemetry-dimension-country-code.md)]|
 |deleteData|[!INCLUDE[deleteData](../includes/include-telemetry-dimension-delete-data.md)]|
@@ -1142,7 +1175,7 @@ Occurs when scheduling the uninstallation of an extension/app has failed.
 |environmentType|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |environmentVersion|[!INCLUDE[environmentVersion](../includes/include-telemetry-dimension-environment-version.md)]|
 |eventId|**LC0174**|
-|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]||
+|extensionId|[!INCLUDE[extensionId](../includes/include-telemetry-dimension-extension-id.md)]|
 |failureReason|[!INCLUDE[failureReason](../includes/include-telemetry-dimension-failure-reason.md)]|
 |runAfterDateUtc|[!INCLUDE[runAfterDateUtc](../includes/include-telemetry-dimension-run-after-date.md)]|
 |useEnvironmentUpdateWindow|[!INCLUDE[useEnvironmentUpdateWindow](../includes/include-telemetry-dimension-use-environment-update-window.md)]|

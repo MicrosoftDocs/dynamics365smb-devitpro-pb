@@ -3,7 +3,7 @@ title: "InherentPermissions Attribute"
 description: "Specifies the permissions assigned to the scope of the method."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/27/2022
+ms.date: 10/18/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,7 +24,6 @@ Specifies the permissions assigned to the scope of the method.
 
 - Method
 - Event
-- Object
 
 
 ## Syntax
@@ -32,15 +31,6 @@ Specifies the permissions assigned to the scope of the method.
 ```AL
 [InherentPermissions(PermissionObjectType: PermissionObjectType, ObjectId: Integer, Permissions: Text [, InherentPermissionsScope: InherentPermissionsScope])]
 ```
-
-## Example 
-
-```AL
-[InherentPermissions (PermissionObjectType:Table, Database:"Customers", 'r’, InherentPermissionsScope:Both)]
-```
-
->[!NOTE]
-> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
 ### Arguments
 *PermissionObjectType*  
@@ -60,6 +50,16 @@ Specifies the permission values. You can specify the permissions using the synta
 Specifies the scope of the permissions that are assigned (Entitlements, Permissions or Both).  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example 
+
+```AL
+[InherentPermissions (PermissionObjectType:Table, Database:"Customers", 'r’, InherentPermissionsScope:Both)]
+```
+
+>[!NOTE]
+> Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
+
 ## See Also  
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
