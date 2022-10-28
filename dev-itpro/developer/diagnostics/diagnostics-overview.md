@@ -633,7 +633,7 @@ author: SusanneWindfeldPedersen
 |[AL1007](diagnostic-al1007.md)|Missing file specification for '{0}' option.|Error|
 |[AL1008](diagnostic-al1008.md)|Command-line syntax error: Missing '{0}' for '{1}' option.|Error|
 |[AL1009](diagnostic-al1009.md)|Unrecognized option: '{0}'.|Error|
-|[AL1010](diagnostic-al1010.md)|Command-line syntax error: Missing ':<number>' for '{0}' option.|Error|
+|[AL1010](diagnostic-al1010.md)|Command-line syntax error: Missing `:<number>` for '{0}' option.|Error|
 |[AL1011](diagnostic-al1011.md)|Source file '{0}' specified multiple times.|Warning|
 |[AL1012](diagnostic-al1012.md)|Could not write to output file '{0}' -- '{1}'.|Error|
 |[AL1013](diagnostic-al1013.md)|'{0}' is a binary file instead of a text file.|Error|

@@ -15,7 +15,7 @@ You can either create new flows or manage the existing Power Automate flows from
 
 | Flows | Description |
 | ----------- | ----------- |
-| Cloud flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](/powerplatform/instant-flows.md) or [Automated](/powerplatform/automate-workflows.md).  |
+| Cloud flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
 | Desktop flows | This shows a list of flows you've created for your desktop environment using Power Automate. If you haven't created any, you can create one by choosing **+ New desktop flow**. Learn more at [Desktop Flows](/power-automate/desktop-flows/create-flow). |
 | Shared with me | This is a list of flows shared with you by other users in your organization. |
 
