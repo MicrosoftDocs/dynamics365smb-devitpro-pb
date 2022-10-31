@@ -28,12 +28,8 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Watch the Business Central Launch Event recordings**  
-Dynamics 365 Business Central 2022 release wave 2 will be released on October 3, after which new customers will be able to sign up for version 21 of Business Central. To learn all about what's new in the latest release, we're again bringing the latest innovations for Business Central to you via an all-access digital experience. 
-
-The Business Central Launch Event will take place from October 10-12, 2022. During the three days, you’ll be able to watch sessions, ask questions and participate in live Q&As. After October 12, all sessions will be available on-demand until January 2023.
-
-**Register now**: [aka.ms/BCLE](https://aka.ms/BCLE)
+**You can still watch the Business Central Launch Event recordings**  
+We have 15+ what's new sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. 
 
 **Business Central newsletter for partners**  
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
