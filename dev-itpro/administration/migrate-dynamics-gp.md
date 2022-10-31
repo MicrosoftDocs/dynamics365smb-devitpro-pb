@@ -26,6 +26,12 @@ The end-to-end process is described [here](migrate-data.md). In this article, we
 
 ## Dynamics GP data
 
+With the release of Business Central 21.1 a new GP Company Migration Configuration page has been added.  This new page will allow you to select the data you want migrated from GP to Business Central.  The page will automatically open once you complete the Cloud Migration Setup wizard and can also be opened from the Cloud Migration Management page.  
+
+New options such as selecting what modules you want to migrate as well as if you only want to migrate master data for specific modules are available.  You can select the options at a global level, applying the options to all companies selected to migrate or you can tweak options at a company level in the Per Company fast tab.  
+ 
+If you select to only migrate master data, records such as Accounts, Customer, Vendors and Items will migrate, however no transactional information from GP will be migrated for the selected module.    
+
 When you migrate from Dynamics GP, the following information is migrated from Dynamics GP to Business Central online:
 
 1. Fiscal periods
@@ -69,21 +75,21 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
     The data migration generates dimensions on that account based on the different segments. User will see a *Department* dimension with the values *000*, *100*, and *200*, respectively. A second dimension, *Division*, will show the values *00*, *01*, and *02*, respectively.
 
-      Account summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. In the setup wizard, you can select the oldest historical year you want migrated to Business Central. For example, if 2019, 2020, and 2021 are historical years in Dynamics GP, you could select that the oldest historical year you want migrated is 2020. Summary transactions for 2019 would not be migrated to Business Central.
+      Account summary transactions are generated and posted for open and history years that were set up in Dynamics GP. The summary amounts are created based on the fiscal periods set up in Dynamics GP. You can select the oldest historical year you want migrated to Business Central. For example, if 2019, 2020, and 2021 are historical years in Dynamics GP, you could select that the oldest historical year you want migrated is 2020. Summary transactions for 2019 would not be migrated to Business Central.
 
 3. Customer master records and outstanding transactions from the Receivables module
 
-    In the setup wizard, you can choose to migrate all customers from Dynamics GP or only active customers. This allows you to not migrate over customers that have been marked as inactive. We also have added bringing all addresses from the customer over into Business Central. All of the addresses on the customer will be setup as shipping addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
+    You can choose to migrate all customers from Dynamics GP or only active customers. This allows you to not migrate over customers that have been marked as inactive. We also have added bringing all addresses from the customer over into Business Central. All of the addresses on the customer will be setup as shipping addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
 
-    In the setup wizard, you can also choose to migration posting accounts on customer classes. If ou choose this field, posting accounts defined on *customer classes* in Dynamics GP will be migrated to Business Central as *customer posting groups*. If a customer is assigned to a customer class in Dynamics GP, the customer will be assigned to the corresponding customer posting group after migrating.
+    You can also choose to migration posting accounts on customer classes. If ou choose this field, posting accounts defined on *customer classes* in Dynamics GP will be migrated to Business Central as *customer posting groups*. If a customer is assigned to a customer class in Dynamics GP, the customer will be assigned to the corresponding customer posting group after migrating.
 
     We also bring over outstanding receivables transactions. These transactions will be brought in with the amount remaining in Dynamics GP. For example, if an invoice for $1000 was entered into Dynamics GP, and it has been partially paid and has a remaining balance of $400, the new invoice created in Business Central will be for $600 as that is the amount remaining to be paid. We bring over all transaction types from Receivables Management.
 
 4. Vendor master records and outstanding transactions from the Payables module
 
-    In the setup wizard, you can choose to migrate all vendors from Dynamics GP or only active vendors. This allows you to not migrate over vendors that have been marked as inactive. We also have added bringing all addresses from the vendor over into Business Central. All vendor addresses from the vendor are migrated to Business Central. The vendor's Remit To Address will be the main address for the vendor. All other vendor addresses will be setup as Order addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
+   You can choose to migrate all vendors from Dynamics GP or only active vendors. This allows you to not migrate over vendors that have been marked as inactive. We also have added bringing all addresses from the vendor over into Business Central. All vendor addresses from the vendor are migrated to Business Central. The vendor's Primary address will migrate to their Main address and the Remit To address will be migrated to the Vendor's Remit To address.  All other vendor addresses will be setup as Order addresses in Business Central. That will allow the end user to choose the address needed when entering transactions after the migration.  
 
-    In the setup wizard, you can also choose to migrate posting accounts on vendor classes. If you choose this field, posting accounts defined on *vendor classes* in Dynamics GP will be migrated to Business Central as *vendor posting groups*. If a vendor is assigned to a vendor class in Dynamics GP, the vendor will be assigned to the corresponding vendor posting group after migrating.
+    You can also choose to migrate posting accounts on vendor classes. If you choose this field, posting accounts defined on *vendor classes* in Dynamics GP will be migrated to Business Central as *vendor posting groups*. If a vendor is assigned to a vendor class in Dynamics GP, the vendor will be assigned to the corresponding vendor posting group after migrating.
 
     Vendor EFT Bank information will be migrated to Business Central as Vendor Bank Accounts.  If a Vendor's Remit to address contains EFT Bank information in Dynamics GP, it will be migrated over as the Preferred Bank Account Code on a vendor in Business Central.
 
@@ -93,9 +99,9 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 5. Inventory items
 
-    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Location information as well as the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
+    Inventory is imported with the cost valuation method that is set in GP at the time the migration is run. Location information as well as the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
 
-    In the setup wizard, you can choose to migration posting accounts on item classes. If you choose this field, posting accounts that are defined on *item classes* in Dynamics GP will be migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating.
+    You can choose to migration posting accounts on item classes. If you choose this field, posting accounts that are defined on *item classes* in Dynamics GP will be migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating.  You can also choose to migrate all inventory items from Dynamics GP or choose to not migrate inactive or discontinued items.
 
 6. Historical data from Receivables, Payables, Sales Order Processing, Purchase Order Processing, and Inventory
 
@@ -103,7 +109,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 7. Checkbook master data.  
 
-    In the setup wizard, you can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any cash receipt that has been posted should also be deposited in GP before migrating, as undeposited receipts will not migrate. 
+    You can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any cash receipt that has been posted should also be deposited in GP before migrating, as undeposited receipts will not migrate. 
 
 ## Diagnostics run
 
