@@ -26,7 +26,7 @@ The end-to-end process is described [here](migrate-data.md). In this article, we
 
 ## Dynamics GP data
 
-With the release of Business Central 21.1 a new GP Company Migration Configuration page has been added.  This new page will allow you to select the data you want migrated from GP to Business Central.  The page will automatically open once you complete the Cloud Migration Setup wizard and can also be opened from the Cloud Migration Management page.  
+Business Central update 21.1  adds a new page, **GP Company Migration Configuration**. Use this new page to select the data you want migrated from Dynamics GP to Business Central. The page will automatically open after you complete the **Cloud Migration Setup** wizard, but you can also open it from the **Cloud Migration Management** page.  
 
 New options such as selecting what modules you want to migrate as well as if you only want to migrate master data for specific modules are available.  You can select the options at a global level, applying the options to all companies selected to migrate or you can tweak options at a company level in the Per Company fast tab.  
  
