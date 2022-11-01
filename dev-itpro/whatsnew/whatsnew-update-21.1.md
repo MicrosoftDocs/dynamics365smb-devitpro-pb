@@ -53,7 +53,7 @@ We have 15+ what's new sessions and recorded Q&As available throughout January 2
 **Business Central at Ignite**  
 At the Microsoft Ignite event on October 12, we unveiled new and exciting collaboration features for SMBs that usher in a new era for collaborative applications. Check out the announcements in the [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2022-book-of-news/#a-312-microsoft-teams-customers-to-receive-access-to-business-central-data-at-no-extra-cost) and [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/10/12/live-from-microsoft-ignite-2022-introducing-new-ai-automation-and-collaboration-capabilities-for-dynamics-365/) to learn how our customers can leverage 2022 release wave 2 to work smarter, increase team performance, and quickly adapt their digital collaborative spaces to make data-driven decisions.
 
-**XXXX**  
+**Important: Take action before March 1 to retain your delegated admin access to your customers**  
 Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](https://learn.microsoft.com/en-us/partner-center/announcements/2022-october#17).
 
 
