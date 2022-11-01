@@ -18,6 +18,25 @@ Would you like to know what has changed in update 21.1? Below you'll find an ove
 
 Find an overview of hotfixes in this [article]().
 
+## Feature changes
+
+- [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+-  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
+- [SharePoint Connector]
+- [Support multiline texts in mail merge]
+- [Importing users to respect the users and the groups that have access]
+- [Auto-Save as you work: due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management. Learn about auto-save in the release plan.
+
+
+## Localization updates
+- [11 more countries are added to bring Business Central to availability in more than half of all countries and regions globally](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
+- [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
+- Implement 1096 Form
+- Vendor Name as a column in Payment Journal
+- Services Declarations
+
+
+
 ## Release Plan
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 2 (release from October 2022 through  March 2022), find the link to the release plan [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features).
@@ -30,6 +49,13 @@ Please note that new customers will automatically get the latest builds of Busin
 
 **You can still watch the Business Central Launch Event recordings**  
 We have 15+ what's new sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. 
+
+**Business Central at Ignite**  
+At the Microsoft Ignite event on October 12, we unveiled new and exciting collaboration features for SMBs that usher in a new era for collaborative applications. Check out the announcements in the [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2022-book-of-news/#a-312-microsoft-teams-customers-to-receive-access-to-business-central-data-at-no-extra-cost) and [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/10/12/live-from-microsoft-ignite-2022-introducing-new-ai-automation-and-collaboration-capabilities-for-dynamics-365/) to learn how our customers can leverage 2022 release wave 2 to work smarter, increase team performance, and quickly adapt their digital collaborative spaces to make data-driven decisions.
+
+**XXXX**  
+Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](https://learn.microsoft.com/en-us/partner-center/announcements/2022-october#17).
+
 
 **Business Central newsletter for partners**  
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
