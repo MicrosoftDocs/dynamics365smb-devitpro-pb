@@ -22,18 +22,22 @@ Find an overview of hotfixes in this [article]().
 
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 -  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
-- [SharePoint Connector]
-- [Support multiline texts in mail merge]
-- [Importing users to respect the users and the groups that have access]
-- [Auto-Save as you work: due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management. Learn about auto-save in the release plan.
+- [SharePoint Connector]()
+- [Support multiline texts in mail merge]()
+- [Importing users to respect the users and the groups that have access]()
+- [Auto-Save as you work: due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
+- [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
+- [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
 
 
 ## Localization updates
-- [11 more countries are added to bring Business Central to availability in more than half of all countries and regions globally](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
-- [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
-- Implement 1096 Form
-- Vendor Name as a column in Payment Journal
-- Services Declarations
+
+| Country| Feature  |Description|
+|-------------|--------------|--------------|
+|United States | IRS 1096 Form | Form 1096 is used to transmit paper forms 1097, 1098, 1099, 3921, 3922, 5498, and W-2G to the IRS. Business Central users can now run the Form 1096 report and send it to the IRS if this is required for them. Because Business Central reports only Form 1099, the new Form 1096 is related only to any already transmitted 1099 paper forms. |
+| Belgium | Vendor Name as a column in EB Payment Journal | Vendor Name now exists in Belgium local EB Payment Journal, the same as in W1 Payment Journal feature.|
+| W1 | Services Declarations [BE] F01DGS Declaration | Belgian authorities require reporting for exporting services to the other EU countries and this includes the F01DGS form for Belgium. Even primarily required for Belgium market, this feature is available as an extension and can be used in all countries. Reporting is configurable, so it won't have a hard-coded format for export. It works with the Items (Type=Service), Resources, and Item Charges as services in both purchase and sales documents.|
+
 
 
 
