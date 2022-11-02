@@ -56,6 +56,12 @@ At the Microsoft Ignite event on October 12, we unveiled new and exciting collab
 **Important: Take action before March 1 to retain your delegated admin access to your customers**  
 Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](https://learn.microsoft.com/en-us/partner-center/announcements/2022-october#17).
 
+**New versions of the Business Central mobile app for Android and iOS**  
+New, updated 3.8.xxxx versions of the Business Central mobile app for Android and iOS have been released featuring support for additional Business Central localization, some minor improvements an fixes and newest requirements from mobile OS releases. Please note the required minimum supported versions of both iOS/iPadOS and Android (currently Android 10 is required for Business Central mobile app). Please keep your mobile app updated by downloading the update. Links: 
+- iOS/iPadOS on App Store: https://go.microsoft.com/fwlink/?LinkId=734847
+- Android on Play Store: https://go.microsoft.com/fwlink/?LinkId=734849
+
+
 
 **Business Central newsletter for partners**  
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
