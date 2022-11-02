@@ -22,9 +22,9 @@ Find an overview of hotfixes in this [article]().
 
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 -  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
-- [Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint]
-- [Support multiline texts in mail merge]
-- [Importing users to respect the users and the groups that have access]
+- Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint (link coming soon)
+- Use multiline text fields with Word mail merge (link coming soon)
+- Sync users based on environments security group (link coming soon)
 - [Auto-Save as you work: due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
 - [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
 - [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
