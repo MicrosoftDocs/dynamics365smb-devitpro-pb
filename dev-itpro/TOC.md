@@ -67,12 +67,12 @@
 ## What's new or changed
 ### [Update 21.1](whatsnew/whatsnew-update-21-1.md)
 ### Updates for earlier major versions
-### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
-### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
-### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
-### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
-### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
-### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
+#### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
+#### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
+#### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
+#### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
+#### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
+#### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 #### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 #### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
 #### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
