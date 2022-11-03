@@ -22,12 +22,12 @@ Find an overview of hotfixes in this [article]().
 
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 -  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
+- [Auto-Save as you work:](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work) due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management
+- [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
+- [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
 - Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint (link coming soon)
 - Use multiline text fields with Word mail merge (link coming soon)
 - Sync users based on environments security group (link coming soon)
-- [Auto-Save as you work: due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work)
-- [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
-- [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
 
 
 ## Localization updates
@@ -52,7 +52,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **You can still watch the Business Central Launch Event recordings**  
-We have 15+ what's new sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. 
+We have 15+ what's new sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo-TeamsNew) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo-M365License). 
 
 **Business Central at Ignite**  
 At the Microsoft Ignite event on October 12, we unveiled new and exciting collaboration features for SMBs that usher in a new era for collaborative applications. Check out the announcements in the [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2022-book-of-news/#a-312-microsoft-teams-customers-to-receive-access-to-business-central-data-at-no-extra-cost) and [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/10/12/live-from-microsoft-ignite-2022-introducing-new-ai-automation-and-collaboration-capabilities-for-dynamics-365/) to learn how our customers can leverage 2022 release wave 2 to work smarter, increase team performance, and quickly adapt their digital collaborative spaces to make data-driven decisions.
@@ -71,11 +71,11 @@ New, updated 3.8.xxxx versions of the Business Central mobile app for Android an
 Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Upcoming Business Central Office Hours Calls**  
-In September and October, we will be hosting the following calls, which you can already register for today:
+In November, we will be hosting the following calls, which you can already register for today:
 
 - **November 1:** Performance
 - **November 15:** Non-deductible and partly deductible VAT 
-- 
+- **November 22:** Access Business Central using your Microsoft 365 license
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
