@@ -44,6 +44,6 @@ Depending on your solution, you are expected to deploy Help to a website that ca
 [Configure Context-Sensitive Help](context-sensitive-help.md)  
 [User Assistance Model](../user-assistance.md)  
 [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md)  
-[Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md)  
+[Extend and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

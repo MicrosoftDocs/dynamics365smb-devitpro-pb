@@ -79,7 +79,7 @@ If you do not yet have a website that you publish content to, then there are sev
 ## See Also
 
 [Configuring the Help Experience](../deployment/configure-help.md)  
-[Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md)  
+[Extend and Collaborate on the Help](../help/contributor-guide.md)  
 [User Assistance Model](../user-assistance.md)  
 [Development of a Localization Solution](../developer/readiness/readiness-develop-localization.md)  
 [System Requirements](../deployment/system-requirement-business-central.md)  

@@ -1,17 +1,17 @@
 ---
-title: Extend, customize, collaborate on the Help
+title: Extend and collaborate on the Help
 description: Tips and tricks for working with the GitHub repos and MarkDown files for Dynamics 365 Business Central.
 author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 02/01/2022
+ms.date: 11/03/2022
 ms.author: edupont
 ---
 
-# Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
+# Extend and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]
 
-The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files. You can also find guidance in the [Docs Contributor Guide](/contribute/).  
+The source files for the Help for the base application are available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files. You can also find guidance in the [Learn Contributor Guide](/contribute/).  
 
 > [!TIP]
 > If you want to get Microsoft's content and deploy it to your own website with or without customizations, the custom Help toolkit can help you. But you do not have to use the toolkit. That depends on the nature of your solution. For more information, see see [Custom Help Toolkit](custom-help-toolkit.md).
@@ -24,10 +24,7 @@ You can use the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGen
 
 When Microsoft publishes an update to the content, the *main* branch in the corresponding public GitHub repo is updated. The source repo is updated at least weekly; however, the related language-specific repos are updated less frequently, based on when new translations are made available. You can use the [Custom Help Toolkit](custom-help-toolkit.md) to get the current version of Microsoft's content and prepare HTML files for customization.  
 
-Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
-
-> [!IMPORTANT]
-> In April 2021, the default branches in the public repos have been renamed from *live* to *main* . If you have any scripts that rely on the *live* branch, please update them to rely on *main* instead.
+<!--Alternatively, if you customize the Microsoft content based on MarkDown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub. --> 
 
 > [!TIP]
 > You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a website, for example. You do not even have to get a GitHub account, as shown in the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, in many scenarios, you might want to join us in GitHub for closer collaboration and easy of extensibility.
@@ -158,7 +155,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 ## Build HTML files
 
-For publishing to your own website, you can use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] to clone a repo and generate the corresponding HTML files.  
+For publishing to your own website, you can use any tool. The [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool that is part of the custom Help toolkit for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] will clone a repo and generate the corresponding HTML files, but you can use any third-party tool.  
 
 Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
 
@@ -212,9 +209,7 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
 The files are generated as .html files and stored in the output location that is specified in the docfx.json file.
 
 > [!IMPORTANT]
-> Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://learn.microsoft.com]() site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
-
-The table of contents on the learn.microsoft.com site is currently a MarkDown file, TOC.md, but we are planning to convert it to a YAML file in order to be more compliant with the learn.microsoft.com site. Once we have converted the TOC.md file to TOC.yml, you will still be able to use DocFx.exe to build HTML files, but you will have to port your customizations of the TOC.md file to the new YAML format.  
+> [DocFx](https://dotnet.github.io/docfx/) is no longer used internally in Microsoft and does not support YAML and other changes that we're making to our content. Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://learn.microsoft.com](https://learn.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
 The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the learn.microsoft.com site but have been deprecated later. As part of standard website practices, the learn.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
 
@@ -230,7 +225,7 @@ Alternatively, you can add a post-processing step to the script that you use to 
 
 ## Known issues with Microsoft's content
 
-Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
+Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It is not intended to be customized directly but to be supplemented by articles on your local website. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
 
 ### Docs are not available for a specific version
 
@@ -247,7 +242,7 @@ We run periodic tests to catch these errors, but if you do see an error that is 
 
 ### ToC.xml for Help Server is different from the TOC.md file
 
-Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, [it will be deprecated in 2021 release wave 1](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-). As a result, it contains links that are broken as described in the previous section.  
+Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, [it was deprecated in 2021 release wave 1](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-). As a result, it contains links that are broken as described in the previous section.  
 
 ### Translated content is not available
 

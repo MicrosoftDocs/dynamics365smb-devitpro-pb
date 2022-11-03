@@ -133,7 +133,7 @@ Let's take an example: In January 2022, you were deploying version 19.2 on-premi
 * [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be)  
 
 > [!TIP]
-> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. Starting with 2021 release wave 1, the tool can get content based on the release-specific packages in GitHub. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md) and [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).
+> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. Starting with 2021 release wave 1, the tool can get content based on the release-specific packages in GitHub. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md) and [Extend and Collaborate on the Help](../help/contributor-guide.md).
 
 Alternatively, use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
 
@@ -146,7 +146,7 @@ We suggest that your website clearly indicates what is under Microsoft's copyrig
 
 ## Fork the Microsoft repos, and customize or extend the content
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the repos that contain translations. For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the repos that contain translations. For more information, see [Extend and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
 [!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
 
