@@ -12,6 +12,40 @@ ms.custom: na
 
 # Promoting Actions Guidance
 
+## Which actions should be promoted in a page? 
 
+To promote an action in a page, place an actionref for it in the Promoted area in the page object. The recommendation is to only promote actions that are frequently used by the users of the page as well as actions that are an expected part of a common action group on the page. 
+
+Avoid promoting actions that have little or no tracked usage. Give prominence via promotion only to actions that you expect many users need for their work. When there is only a few users that need a certain action, it is usually better to let them personalize that action to a prominent place they prefer rather than promoting the action for everyone which will distract the many users who don’t need it. 
+
+You can configure and new define user roles (profiles) when you want to coordinate promoted actions across pages to suit a certain set of users needing a certain set of actions. 
+
+<Profile config Docs link> 
+
+## Promote actions dependent on page type 
+
+For a business entity, for example Customer, there is no virtue in promoting the exact same set of actions on the customer list and the customer card page, even when the same set of actions is available on both pages. On the contrary, doing so may not align with the patterns of use and it risks cluttering the action bar with actions that too few users need. 
+
+Instead, on list pages, use action promotion to give priority to: 
+
+Actions that allow users to process multiple selected rows at a time 
+
+Actions that give access to additional details about the chosen record 
+
+Actions that users find relevant even as they might not see all fields about the record 
+
+Actions that users are most likely to use after creating or updating a record using the card page need only be promoted in the card page, and not in the list. For example, it is more useful to promote the action “Request Approval” in card and document pages than in list pages, since most users will check or update information in the card or document before requesting approval of it. 
+
+## How should promoted actions be organized? 
+
+Once you’ve decided on the set of actions to promote in a page, it is time to organize the chosen set into a proper sequence and grouping. This must be done in a way where users easily discover the actions they need when they need them. 
+
+Before starting to create new groups for actions in a page, consider the total set of promoted actions in the page. If there are five or less promoted actions, it is often preferable to avoid creating new groups, and instead keep the actions together, and not in separate groups. 
+
+<NOTE>If a page only has actions promoted to the Process/Home group, then the Business Central webclient will show the actions as if there were not placed in group. This is known as unpacking of the Home/Process group.</NOTE> 
+
+Within each group of actions, choose a sequence of actions that respect their relative importance. Start with actions that a user is likely to use first, or often, when opening a page. Common action groups are the exception to this recommendation, as they must instead have a consistent sequence of actions across the pages where they appear. 
+
+Use subgroups within a group when the total number of actions in a group is more then 7. 
 
 ## See also

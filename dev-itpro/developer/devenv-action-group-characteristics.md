@@ -12,7 +12,7 @@ ms.custom: na
 
 # Common Action Group Characteristics
 
-[!INCLUDE [prod_short](includes/prod_short.md)]  defines the following common action groups as part of the standard application functionality. The list is not exhaustive, but shows the most common action groups, their typical use, and the recommended use of the split button capability.  
+[!INCLUDE [prod_short](includes/prod_short.md)] defines the following common action groups as part of the standard application functionality. The list is not exhaustive, but shows the most common action groups, their typical use, and the recommended use of the split button capability.  
 
 
 | Common action group | Characteristics | Show as Split Button  |
