@@ -73,7 +73,6 @@ Yay! We're now doing quarterly newsletters for Business Central partners. Each n
 **Upcoming Business Central Office Hours Calls**  
 In November, we will be hosting the following calls, which you can already register for today:
 
-- **November 1:** Performance
 - **November 15:** Non-deductible and partly deductible VAT 
 - **November 22:** Access Business Central using your Microsoft 365 license
 
