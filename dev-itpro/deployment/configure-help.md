@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 03/07/2022
+ms.date: 11/03/2022
 ms.author: edupont
 ---
 
@@ -40,7 +40,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > [!TIP]
 > The content on the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
-> We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 19.4, you could have taken a snapshot of the content in GitHub before version 20.0 became available.
+> If, for some reason, you need a copy of Microsoft's content, then get it close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 19.4, you could have taken a snapshot of the content in GitHub before version 20.0 became available.
 
 [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
@@ -108,7 +108,7 @@ You can see an example of how to deploy content to an Azure web app in the artic
 >
 > However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
-In versions older than 2022 release wave 1, the in-product search includes searching content on the [learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
+In versions older than 2022 release wave 1, the in-product search includes searching content on the [learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1 and later, this search is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
 
 ### Optional: Get Microsoft's content
 
