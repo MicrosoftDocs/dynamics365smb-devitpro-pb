@@ -2,12 +2,12 @@
 title: "Action Bar Guidelines"
 description: "Guidelines for organizing actions in the action bar for Dynamics 365 Business Central"
 author: jacobwj
-ms.custom: na
-ms.date: 11/03/2022
-ms.reviewer: 
-ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 ms.author: solsen
+ms.reviewer: 
+ms.service: "dynamics365-business-central"
+ms.topic: conceptual
+ms.date: 11/03/2022
+ms.custom: na
 ---
 
 # Action Bar Guidelines
@@ -70,3 +70,5 @@ Don't use split buttons for action groups with actions that the user isn't perce
 
 
 ## See also
+
+[Common Action Group Characteristics](devenv-action-group-characteristics.md)
