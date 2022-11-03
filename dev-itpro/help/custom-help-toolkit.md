@@ -5,7 +5,7 @@ author: edupont04
 
 ms.topic: conceptual
 ms.reviewer: jowilco
-ms.date: 02/01/2022
+ms.date: 11/03/2022
 ms.author: edupont
 ---
 
@@ -37,7 +37,10 @@ The toolkit is available at [https://github.com/microsoft/dynamics365smb-custom-
 
 ## Custom Help
 
-Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience](../deployment/configure-help.md). The toolkit is especially useful if you customize Microsoft's content the same way that you customize Microsoft's code, and if you deploy a customer-specific solution that is based on Microsoft's base application. [!INCLUDE [ua-toolkit-online](../includes/ua-toolkit-online.md)]
+Depending on your solution, you are expected to deploy Help to a website that can be accessed by users of your solution to supplement or replace Microsoft's content. For more information, see [User Assistance Model](../user-assistance.md) and [Configuring the Help Experience](../deployment/configure-help.md). The toolkit is especially useful if you deploy a customer-specific solution that is based on Microsoft's base application. [!INCLUDE [ua-toolkit-online](../includes/ua-toolkit-online.md)]
+
+> [!TIP]
+> Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. We encourage you to supplement our content with solution-specific content as opposed to attempting to customize our content to fit your needs. But we acknowledge that there are situations when customizations are required, and the toolkit's tools can help you achieve that.
 
 ## See also
 
