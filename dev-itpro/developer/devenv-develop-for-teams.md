@@ -1,5 +1,5 @@
 ---
-title: "Developing Pages and Tables for Microsoft Teams Integration"
+title: "Developing for Microsoft Teams Integration"
 description: Provides an introduction to developing pages for Microsoft Teams integration
 ms.custom: na
 ms.date: 04/01/2021
@@ -9,11 +9,11 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
 ---
-# Developing Pages and Tables for Microsoft Teams Integration
+# Developing for Microsoft Teams Integration
 
 [!INCLUDE [online_only](includes/online_only.md)]
 
-[Microsoft Teams](https://www.microsoft.com/microsoft-365/microsoft-teams) is a Microsoft 365 product that lets you connect with others, collaborate seamlessly and simplify work. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Teams to your business data in [!INCLUDE [prod_short](includes/prod_short.md)] so users can quickly share details across team members and respond faster to inquiries. In this article, you'll learn how you can develop pages and tables so that data appears in Teams as you want. 
+[Microsoft Teams](https://www.microsoft.com/microsoft-365/microsoft-teams) is a Microsoft 365 product that lets you connect with others, collaborate seamlessly and simplify work. [!INCLUDE [prod_short](includes/prod_short.md)] offers an app that connects Teams to your business data in [!INCLUDE [prod_short](includes/prod_short.md)] so users can quickly share details across team members and respond faster to inquiries. This article gives you an overview of what you can do as developer to customize displaying Business Central data and Teams channels and chats.
 
 ## Introduction to the Business Central app for Teams
 
@@ -55,6 +55,14 @@ For more information about these two development options, see [Extending Teams C
 Users can select the **Details** button on a Teams card to drill into the details of the card. This button opens the [!INCLUDE [webclient](includes/webclient.md)] in a window that's embedded inside Teams. The window displays the target page object. The page includes any extensions to the page and its source table, role customizations, and user personalization. The experience is nearly identical to that of displaying the same record in the [!INCLUDE [webclient](includes/webclient.md)], except with some minor client differences.
 
 You can modify or extend the layout and behavior of the page, like you would any page. The changes you make will affect the page in all [!INCLUDE [prod_short](includes/prod_short.md)] clients, not just in Teams. You can't implement functionality that is available only in Teams but not other [!INCLUDE [prod_short](includes/prod_short.md)] clients. For more information about implementing pages, see [Pages Overview](devenv-pages-overview.md).
+
+### About Business Central tabs
+
+In Teams, tabs appear at the top of channels and chats, giving participants quick access to pertinent information. Using the Graph API, you can add Business Central tabs to new or existing channels and chats in Teams. Together with the Business Central app for Teams, you can set up a Teams environment complete with teams, channels, and Business Central tabs&mdash;without requiring users to do anything extra.
+
+![Tabs in Teams](media/teams-tabs-border.png)
+
+For more information, see [Create Business Central tabs for Teams](devenv-develop-for-teams-tabs.md) and [Provide Recommended Content to Business Central Tab](devenv-develop-for-teams-tab-content.md).
 
 ## Preparing your environment for development and testing
 

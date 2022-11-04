@@ -1,0 +1,15 @@
+
+
+
+
+Post https://graph.microsoft.com/v1.0/teams/b5ea8e2d-28d7-429f-a8d3-370db64ac258/channels/19:1bfcdfd7430d4c29ab87b66fe8068c3c@thread.tacv2/tabs
+
+{
+    "displayName": "Overdue Sales Orders",​
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/84c2de91-84e8-4bbf-b15d-9ef33245ad29",​
+    "configuration": {​
+        "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",​
+        "contentUrl": "https://businesscentral.dynamics.com/teams?company=CRONUS%20USA%2C%20Inc.&node=0000233e-0d57-0000-0c65-1900836bd2d2&page=9305&dc=0",​
+        "websiteUrl": "https://businesscentral.dynamics.com/?company=CRONUS%20USA%2C%20Inc.&node=0000233e-0d57-0000-0c65-1900836bd2d2&page=9305&dc=0"​
+    }​
+}
