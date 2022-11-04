@@ -10,7 +10,7 @@ ms.date: 11/03/2022
 ms.custom: na
 ---
 
-# Overview of Pages with Action Bar Improvements 
+# Pages with Action Bar Improvements
 
 This table provides an overview of all the pages in Business Central that contain the action bar improvements with version 21.0. 
 
@@ -199,4 +199,7 @@ This table provides an overview of all the pages in Business Central that contai
 | 99000883  | Sales Order Planning  | List  |
 | 99000886  | Subcontracting Worksheet  | Worksheet  |
 
- 
+## See also
+
+[Action Bar Guidelines](devenv-action-bar-guidelines.md)  
+[Common Action Group Characteristics](devenv-action-group-characteristics.md)  

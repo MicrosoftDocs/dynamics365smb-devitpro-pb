@@ -61,3 +61,4 @@ Use subgroups within a group when the total number of actions in a group is more
 
 [Action Bar Guidelines](devenv-action-bar-guidelines.md)  
 [Common Action Group Characteristics](devenv-action-group-characteristics.md)  
+[Pages with Action Bar Improvements](devenv-pages-action-bar-improvements.md)
