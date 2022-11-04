@@ -138,6 +138,7 @@
 ## Admin center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage access](administration/tenant-admin-center-manage-access.md)
 ### [Manage apps](administration/tenant-admin-center-manage-apps.md)
 ### [Manage capacity](administration/tenant-admin-center-capacity.md)
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)

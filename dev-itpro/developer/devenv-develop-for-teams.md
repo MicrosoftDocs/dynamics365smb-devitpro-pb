@@ -38,7 +38,7 @@ Users can choose which links to records are pasted into Teams. The pasted links 
 The [!INCLUDE [prod_short](includes/prod_short.md)] app for Teams is designed to work with entity pages that represent a single record. More specifically, it's designed for Card, Document, or ListPlus pages. Teams is ready to work with links to these page types and the underlying data in the source tables. 
 In most cases, displaying a card in Teams requires no additional development effort. But if a card doesn't display the fields and data you want, you have a couple options in AL code for making changes:
 
--  Use a field group control on the source table
+- Use a field group control on the source table
 
     This method primarily involves using the `Brick` field group on the page's source table.
 
