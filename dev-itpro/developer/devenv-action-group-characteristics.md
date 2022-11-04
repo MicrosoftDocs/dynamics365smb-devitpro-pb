@@ -12,7 +12,7 @@ ms.custom: na
 
 # Common Action Group Characteristics
 
-[!INCLUDE [prod_short](includes/prod_short.md)] defines the following common action groups as part of the standard application functionality. The list is not exhaustive, but shows the most common action groups, their typical use, and the recommended use of the split button capability.  
+[!INCLUDE [prod_short](includes/prod_short.md)] defines the following common action groups as part of the standard application functionality. The list isn't exhaustive, but shows the most common action groups, their typical use, and the recommended use of the split button capability.  
 
 
 | Common action group | Characteristics | Show as Split Button  |
@@ -23,12 +23,12 @@ ms.custom: na
 | Entry  | Appears in lists and worksheets that show entries of some sort, often ledger entries, and has actions for finding related entries, and for managing dimensions. <br>Used in these page types: List (15), Worksheet (4) | No | 
 | Incoming Document  | Appears in document pages for actions that manage attachments that represent external documents. <br>Used in these page types: Document (12), List (1), Worksheet (2).| No |
 | Item Availability by  | Holds the options to view item availability by.<br> Used in these page types: List (3), Worksheet (6) | No | 
-| Line | Like the entity group, the Line group has actions that navigate to information related to the current line. The Line group is used instead of an Entity group when the lines in a list or worksheet are not representing an entity. <br>Used in these page types: List (8), Worksheet (38) | No | 
-| Navigate  | Has actions to open relevant pages that are not related to the current record or selected line, yet useful to quickly navigate to when at a given place. <br>Used in these page types: Card (8), Document (6), List (14) | No | 
+| Line | Like the entity group, the Line group has actions that navigate to information related to the current line. The Line group is used instead of an Entity group when the lines in a list or worksheet aren't representing an entity. <br>Used in these page types: List (8), Worksheet (38) | No | 
+| Navigate  | Has actions to open relevant pages that aren't related to the current record or selected line, yet useful to quickly navigate to when at a given place. <br>Used in these page types: Card (8), Document (6), List (14) | No | 
 | Page  | Has actions to manage how the page displays columns and rows.<br> Used in these page types: Worksheet (23) | No |
 | Posting, or Post/Print  | Has actions that combine posting or previewing with printing or other means of document creation in the process. <br>Used in these page types: Document (17), List (8), Worksheet (23) | Yes |
 | Prepare  | Has actions that prepare the current page for further processing. Often, the actions in the prepare group are copying or otherwise pulling in data in preparation for editing, updating, and posting.<br> Used in these page types: Document (20), Worksheet (8) | No |
-| Print/Send  | Has actions that prints and/or sends the current page or a related document. The destination of the printing or sending process varies based on the chosen action.<br> Used in these page types: Document (24), List (15) | No |
+| Print/Send  | Has actions that print and/or sends the current page or a related document. The destination of the printing or sending process varies based on the chosen action.<br> Used in these page types: Document (24), List (15) | No |
 | Release | For use with documents that have a Release/Reopen action pair. <br>Used in these page types: Document (20), List (15) | Yes  |
 | Report or Reports | For placement of relevant reports on a given page. <br>Used in these page types: Card (11), Document (11), List (46) | No |
 | Request Approval  | For actions related to sending an approval request and canceling any outstanding approval requests.<br> Used in these page types: Card (3), Document (13), List (3), Worksheet (3).| No |
