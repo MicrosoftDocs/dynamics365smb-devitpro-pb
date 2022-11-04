@@ -201,5 +201,6 @@ This table provides an overview of all the pages in Business Central that contai
 
 ## See also
 
+[Action Bar Introduction](devenv-action-bar-introduction.md)  
 [Action Bar Guidelines](devenv-action-bar-guidelines.md)  
 [Common Action Group Characteristics](devenv-action-group-characteristics.md)  

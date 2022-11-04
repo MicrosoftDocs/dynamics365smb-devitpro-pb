@@ -38,4 +38,6 @@ ms.custom: na
 
 ## See also
 
-[Action Bar Guidelines](devenv-action-bar-guidelines.md)
+[Action Bar Introduction](devenv-action-bar-introduction.md)  
+[Action Bar Guidelines](devenv-action-bar-guidelines.md)  
+[Pages with Action Bar Improvements](devenv-pages-action-bar-improvements.md)
