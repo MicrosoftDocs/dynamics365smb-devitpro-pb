@@ -14,9 +14,9 @@ ms.custom: na
 
 ## Which actions should be promoted in a page? 
 
-To promote an action in a page, place an `actionref` for it in the promoted area in the page object. The recommendation is to only promote actions that are frequently used by the users of the page as well as actions that are an expected part of a common action group on the page. 
+To promote an action in a page, place an `actionref` for it in the promoted area in the page object. The recommendation is to only promote actions that are frequently used by the users of the page and actions that are an expected part of a common action group on the page. 
 
-Avoid promoting actions that have little or no tracked usage. Give prominence via promotion only to actions that you expect many users need for their work. When there is only a few users that need a certain action, it is usually better to let them personalize that action to a prominent place they prefer rather than promoting the action for everyone which will distract the many users who don’t need it. 
+Avoid promoting actions that have little or no tracked usage. Give prominence via promotion only to actions that you expect many users need for their work. When there's only a few users that need a certain action, it's better to let them personalize that action to a prominent place they prefer rather than promoting the action for everyone, which will distract the many users who don’t need it. 
 
 You can configure and new define user roles (profiles) when you want to coordinate promoted actions across pages to suit a certain set of users needing a certain set of actions. 
 
@@ -24,15 +24,15 @@ You can configure and new define user roles (profiles) when you want to coordina
 
 ## Promote actions dependent on page type 
 
-For a business entity, for example a Customer, there is no virtue in promoting the exact same set of actions on the customer list and the customer card page, even when the same set of actions is available on both pages. On the contrary, doing so may not align with the patterns of use and it risks cluttering the action bar with actions that too few users need. 
+For a business entity, for example, a Customer, there's no virtue in promoting the exact same set of actions on the customer list and the customer card page, even when the same set of actions is available on both pages. On the contrary, doing so may not align with the patterns of use and it risks cluttering the action bar with actions that too few users need. 
 
 Instead, on list pages, use action promotion to give priority to: 
 
 - Actions that allow users to process multiple selected rows at a time 
-- Actions that give access to additional details about the chosen record 
+- Actions that give access to more details about the chosen record 
 - Actions that users find relevant even as they might not see all fields about the record 
 
-Actions that users are most likely to use after creating or updating a record using the card page need only be promoted in the card page, and not in the list. For example, it is more useful to promote the action “Request Approval” in card and document pages than in list pages, since most users will check or update information in the card or document before requesting approval of it. 
+Actions that users are most likely to use after creating or updating a record using the card page need only be promoted in the card page, and not in the list. For example, it's more useful to promote the action “Request Approval” in card and document pages than in list pages, since most users will check or update information in the card or document before requesting approval of it. 
 
 ## How should promoted actions be organized? 
 
@@ -51,9 +51,9 @@ Use subgroups within a group when the total number of actions in a group is more
 
 | The promoted action... | Variations | Recommendations |
 |---------------------|------------|-----------------|
-|Updates or creates data or info (possibly via an intermediate dialog page) and with clear feedback that the action took place.<br> Examples: Post, Suggest lines, Indent| The action is an expected part of a common action group on the page, e.g. Post. |Promote the action to its expected common action group. For example, promote the Post action to the common action group named “Posting.” |
+|Updates or creates data or info (possibly via an intermediate dialog page) and with clear feedback that the action took place.<br> Examples: Post, Suggest lines, Indent| The action is an expected part of a common action group on the page, for example **Post**. |Promote the action to its expected common action group. For example, promote the Post action to the common action group named “Posting.” |
 |-| The action is particular to the page, and not an expected part of a common action group. | Action should be promoted to Home/Process. |
-| Whose only purpose is to open a relevant or related page (not a dialog) and that has no apparent side effects. <br> Examples: Statistics, Dimensions | The page that opens has information that is specific to the current record/row in the page. | Action should be placed in the common entity action group, which is the one bearing the name of the main entity of the page, e.g. Customer. |
+| Whose only purpose is to open a relevant or related page (not a dialog) and that has no apparent side effects. <br> Examples: Statistics, Dimensions | The page that opens has information that is specific to the current record/row in the page. | Action should be placed in the common entity action group, which is the one bearing the name of the main entity of the page, for example, Customer. |
 |-| The page that opens has the same information regardless of current record/row in the page. | Action should be placed in the common Navigate action group. |
 | Is an action that runs a report, either directly or via an intermediate dialog page (request page). | (no variation) | Place report actions in the common action group Reports. |
 
