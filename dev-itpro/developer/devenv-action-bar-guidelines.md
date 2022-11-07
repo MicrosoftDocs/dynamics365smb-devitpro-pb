@@ -54,7 +54,7 @@ Each action in a page is sharing users’ attention with all the actions on the 
 
 As you lay out actions on a page, making the right set of actions appear prominent is important to increase the likelihood that users discover them. In cases where users have difficulty discovering the right action on a page, consider solving this by removing the distraction that less important actions may be causing. For example, if possible, by placing the less important actions in a separate group, so the actions you want to emphasize stand out more. 
 
-### Common application actions and groups  
+## Common application actions and groups  
 
 Some application actions and action groups repeat on several pages in [!INCLUDE [prod_short](includes/prod_short.md)], such as **Statistics**, **Post**, and many more. While these actions and groups have an individual implementation on each page they appear, they bear the same caption and icon across pages. This helps users understand the commonality of these actions and makes them recognizable across pages in a way equal to that of system actions, such as Share and Bookmark. 
 
@@ -62,7 +62,7 @@ Business Central defines several common actions and action groups as part of the
 
 When you add custom application actions to [!INCLUDE [prod_short](includes/prod_short.md)], consider the established common action and action groups. A custom action that complements existing common actions should have a caption and placement that makes it easy for [!INCLUDE [prod_short](includes/prod_short.md)] users to reuse their knowledge about the existing actions. If you're adding custom actions that work differently from the existing common actions, then avoid using captions and placement that suggest a similarity that isn't there. 
 
-### Split Button groups 
+## Split button groups 
 
 It's possible to show an action group as a split button to get better discoverability and one-click access to the first action in the group. Show an action group as a split button when the actions in the group are connected by the effect they have. For example, a split button is relevant to consider for a group with the actions Correct, Cancel, and Create corrective credit memo, since these three actions achieve variants of the same result, as the user sees it. 
 

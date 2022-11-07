@@ -18,7 +18,7 @@ With Business Central 2022 release wave 2, We’ve organized the action bar menu
 
 The use of a Navigate menu has been reduced, and, where applicable, its contents merged with the entity menu. The entity menu is the one bearing the name of the entity displayed on a page. Going forward, the Navigate menu will only hold links to pages that aren't directly related to the current record yet useful to quickly navigate to when at a given place. 
 
-Certain certain actions have been given a more prominent placement in the action bar. This reduces the number of selects to reach often used actions and makes relevant actions more discoverable. 
+Certain actions have been given a more prominent placement in the action bar. This reduces the number of selects to reach often-used actions and makes relevant actions more discoverable. 
 
 Split buttons are well-known from other Microsoft products as a combination of a button and a menu and are introduced in Business Central 2022 release wave 2 in certain places. This type of control gives you quick one-click reach to the first action in a menu via the left button part and access to other related actions via the right dropdown part. 
 
