@@ -138,6 +138,7 @@
 ## Admin center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage access](administration/tenant-admin-center-manage-access.md)
 ### [Manage apps](administration/tenant-admin-center-manage-apps.md)
 ### [Manage capacity](administration/tenant-admin-center-capacity.md)
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
@@ -1198,7 +1199,10 @@
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
-### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [Extend Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### Tabs
+#### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
+#### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Shopify -->
