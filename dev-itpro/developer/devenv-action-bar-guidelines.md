@@ -20,7 +20,7 @@ Pages make up the user interface in [!INCLUDE [prod_short](includes/prod_short.m
 
 With the desktop user interface to [!INCLUDE [prod_short](includes/prod_short.md)], actions are available to the user in several places on a page. An action's placement reflects its scope and importance among the total set of actions. Most important are the actions in the action bar appearing prominently at the top of a page, close to the page title. Here, the action bar combines system actions, application actions, and the various toggles for panes and panels, such as the Factbox pane, to form the command presentation for the page level. 
 
-<illustration> 
+:::image type="content" source="../media/page-level-actions.png" alt-text="Page-level application and system actions.":::
 
 ## Page level actions
 
