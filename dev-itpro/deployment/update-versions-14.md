@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 11/07/2022
 ms.custom: bap-template
 ---
 
@@ -33,7 +33,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
-|[5021001](https://support.microsoft.com/help/5021001)|Cumulative Update 41|November 2022|Application 14.42.49238 </br>Platform 14.0.|
+|[5021001](https://support.microsoft.com/help/5021001)|Cumulative Update 41|November 2022|Application 14.42.49347 </br>Platform 14.0.49339|
 |[5019238](https://support.microsoft.com/help/5019238)|Cumulative Update 40|October 2022|Application 14.41.49238 </br>Platform 14.0.49232|
 |[5017792](https://support.microsoft.com/help/5017792)|Cumulative Update 39|September 2022|Application 14.40.49174</br>Platform 14.40.49170|
 |[5017014](https://support.microsoft.com/help/5017014)|Cumulative Update 38|August 2022|Application 14.39.49063</br>Platform 14.0.49057|
