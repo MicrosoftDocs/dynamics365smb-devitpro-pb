@@ -12,15 +12,16 @@ ms.custom: na
 
 # Promoting Actions Guidance
 
+The following article gives guidance on which actions you should promote, how to organize the actions, and where to place the promoted actions.
+
 ## Which actions should be promoted in a page? 
 
 To promote an action in a page, place an `actionref` for it in the promoted area in the page object. The recommendation is to only promote actions that are frequently used by the users of the page and actions that are an expected part of a common action group on the page. 
 
-Avoid promoting actions that have little or no tracked usage. Give prominence via promotion only to actions that you expect many users need for their work. When there's only a few users that need a certain action, it's better to let them personalize that action to a prominent place they prefer rather than promoting the action for everyone, which will distract the many users who don’t need it. 
+Give prominence via promotion only to actions that you expect many users need for their work and avoid promoting actions that have little or no tracked usage. When there's only a few users that need a certain action, it's better to let them personalize that action to a prominent place they prefer rather than promoting the action for everyone, which will distract the many users who don’t need it. 
 
-You can configure and new define user roles (profiles) when you want to coordinate promoted actions across pages to suit a certain set of users needing a certain set of actions. 
+You can configure and new define user roles (profiles) when you want to coordinate promoted actions across pages to suit a certain set of users needing a certain set of actions. For more information, see [Customizing the User Interface for User Roles](devenv-role-customization.md).
 
-<Profile config Docs link> 
 
 ## Promote actions dependent on page type 
 
