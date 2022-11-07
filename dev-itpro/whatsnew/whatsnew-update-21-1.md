@@ -16,7 +16,7 @@ Would you like to know what has changed in update 21.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article]().
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-21-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-1-48638-platform-build-21-0-48504-9c9a44f0-ae4f-4d98-82e3-a781399b3de2).
 
 ## Feature changes
 
