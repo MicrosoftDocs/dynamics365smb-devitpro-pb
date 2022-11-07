@@ -66,7 +66,7 @@ When you add custom application actions to [!INCLUDE [prod_short](includes/prod_
 
 It's possible to show an action group as a split button to get better discoverability and one-click access to the first action in the group. Show an action group as a split button when the actions in the group are connected by the effect they have. For example, a split button is relevant to consider for a group with the actions Correct, Cancel, and Create corrective credit memo, since these three actions achieve variants of the same result, as the user sees it. 
 
-Don't use split buttons for action groups with actions that the user isn't perceiving as strongly related. 
+Don't use split buttons for action groups with actions that the user isn't perceiving as related. 
 
 
 ## See also
