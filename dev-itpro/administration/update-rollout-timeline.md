@@ -178,6 +178,9 @@ Microsoft monitors each update of an environment. If we detect any errors during
 
 Any environments that fail to update due to per-tenant extension compatibility issues or any other issues are automatically restored to the original application version. Within one hour, they are automatically rescheduled for another update attempt. The scheduled update date is automatically set to seven days in the future to give you time to resolve the issues. If you address the compatibility issues sooner, you can change the date to an earlier date, including the current date. This pattern repeats until the environment is updated successfully.  
 
+> [!IMPORTANT]
+> Changing date to an earlier date might be blocked up to 24 hours after the last failed attempt to update.
+
 ### Overview of the timeline for preparing for the next major update
 
 The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
