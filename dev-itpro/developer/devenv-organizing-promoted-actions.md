@@ -60,7 +60,11 @@ Use subgroups within a group when the total number of actions in a group is more
 
 ## See also
 
-[Action Bar Introduction](devenv-action-bar-introduction.md)  
-[Action Bar Guidelines](devenv-action-bar-guidelines.md)  
-[Common Action Group Characteristics](devenv-action-group-characteristics.md)  
-[Pages with Action Bar Improvements](devenv-pages-action-bar-improvements.md)
+[Actions in AL](developer/devenv-actions-overview.md)
+[Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
+[Actions in the User Interface](developer/devenv-actions-user-interface.md)
+[How to Promote Actions](developer/devenv-promoted-actions.md)
+[Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
+[Action Bar Improvements](developer/devenv-action-bar-improvements.md)
+[Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
+[Pages with Action Bar Improvements](developer/devenv-pages-action-bar-improvements.md)
