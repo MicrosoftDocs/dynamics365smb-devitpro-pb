@@ -12,7 +12,7 @@ ms.custom: na
 
 # Pages with Action Bar Improvements
 
-This table provides an overview of all the pages in Business Central that contain the action bar improvements with version 21.0. 
+This table provides an overview of all the pages in [!INCLUDE [prod_short](includes/prod_short.md)] that contain the action bar improvements with 2022 release wave 2 (version 21.0). 
 
 | Page ID | Page Name | Page Type |
 |---------|-----------|-----------|
