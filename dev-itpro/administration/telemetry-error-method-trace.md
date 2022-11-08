@@ -69,3 +69,5 @@ The following table explains other custom dimensions that are common to all exte
 [Upgrading Extensions](../developer/devenv-upgrading-extensions.md)  
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-errorinfo-method.md)  
+[Dialog.Error Method](../developer/methods-auto/dialog/dialog-error-string-joker-method.md)
