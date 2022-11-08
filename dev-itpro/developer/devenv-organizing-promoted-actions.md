@@ -1,5 +1,5 @@
 ---
-title: "Promoting Actions Guidance"
+title: "Organizing Promoted Actions"
 description: "Guidelines for which actions to promote in the action bar for Dynamics 365 Business Central"
 author: jacobwj
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 11/03/2022
 ms.custom: na
 ---
 
-# Promoting Actions Guidance
+# Organizing Promoted Actions
 
 The following article gives guidance on which actions you should promote, how to organize the actions, and where to place the promoted actions.
 

@@ -1,5 +1,5 @@
 ---
-title: "Common Action Group Characteristics"
+title: "Common Promoted Action Groups"
 description: "Guidelines for organizing actions in the action bar for Dynamics 365 Business Central"
 author: jacobwj
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 11/03/2022
 ms.custom: na
 ---
 
-# Common Action Group Characteristics
+# Common Promoted Action Groups
 
 [!INCLUDE [prod_short](includes/prod_short.md)] defines the following common action groups as part of the standard application functionality. The list isn't exhaustive, but shows the most common action groups, their typical use, and the recommended use of the split button capability.  
 

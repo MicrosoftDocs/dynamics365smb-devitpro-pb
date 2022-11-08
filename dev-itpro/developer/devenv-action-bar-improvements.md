@@ -1,5 +1,5 @@
 ---
-title: "Action Bar Introduction"
+title: "Action Bar Improvements"
 description: "Introducing the action bar for Dynamics 365 Business Central"
 author: jacobwj
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 11/03/2022
 ms.custom: na
 ---
 
-# Action Bar Introduction
+# Action Bar Improvements
 
 <!-- For customers upgraded to Business Central, Wave 2, 2022 -->
 

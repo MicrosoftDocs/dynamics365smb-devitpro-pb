@@ -1,5 +1,5 @@
 ---
-title: "Action Bar Guidelines"
+title: "Actions in the User Interface"
 description: "Guidelines for organizing actions in the action bar for Dynamics 365 Business Central"
 author: jacobwj
 ms.author: solsen
@@ -10,7 +10,7 @@ ms.date: 11/03/2022
 ms.custom: na
 ---
 
-# Action Bar Guidelines
+# Actions in the User Interface
 
 This article provides guidelines for organizing actions when creating, extending, and customizing pages in [!INCLUDE [prod_short](includes/prod_short.md)]. The guidelines follow the principles and precedence of Microsoft 365 applications, such as Outlook, with the primary goal of providing a familiar and efficient command presentation to the [!INCLUDE [prod_short](includes/prod_short.md)] users. 
 
