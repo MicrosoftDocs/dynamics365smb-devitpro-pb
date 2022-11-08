@@ -682,8 +682,8 @@
 ##### [Actions in the User Interface](developer/devenv-action-bar-guidelines.md)
 #### Promoted Actions
 ##### [How to Promote Actions](developer/devenv-promoted-actions.md)
-###### [Promoted Actions Guidance](developer/devenv-promoting-actions-guidance.md)
-###### [Common Action Group Characteristics](developer/devenv-action-group-characteristics.md)
+##### [Promoted Actions Guidance](developer/devenv-promoting-actions-guidance.md)
+##### [Common Action Group Characteristics](developer/devenv-action-group-characteristics.md)
 #### Modern Action Bar
 ##### [Action Bar Introduction](developer/devenv-action-bar-introduction.md)
 ##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
