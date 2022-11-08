@@ -19,7 +19,7 @@ Organizations across the world sign up for a free [!INCLUDE[prod_short](../inclu
 
 [!INCLUDE [admin-trial-signup](../includes/admin-trial-signup.md)]
 
-Depending on the country or region, the trial includes the languages and functionality that the country or region requires. For more information, see [Changing Language and Locale](/dynamics365/business-central/about-locale-language.md).  
+Depending on the country or region, the trial includes the languages and functionality that the country or region requires. For more information, see [Changing Language and Locale](/dynamics365/business-central/about-locale-language).  
 
 > [!NOTE]
 > [!INCLUDE [prod_short](../includes/prod_short.md)] resellers can also set up [tailored demo environments](demo-environment.md).  
@@ -62,7 +62,7 @@ Each time a user signs in during the trial period, a notification in a blue bar 
 
 [!INCLUDE [admin-license-trial](../includes/admin-license-trial.md)]
 
-For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business.md) and [Business Functionality](/dynamics365/business-central/across-business-functionality.md).  
+For more information about what you can do with [!INCLUDE [prod_short](../includes/prod_short.md)], see [Get Ready for Doing Business](/dynamics365/business-central/ui-get-ready-business) and [Business Functionality](/dynamics365/business-central/across-business-functionality).  
 
 ### Removing a subscription
 
@@ -98,8 +98,8 @@ If you are migrating from an on-premises solution, understanding the infrastruct
 
 ## See also
 
-[Sign up for a free Dynamics 365 Business Central trial](/dynamics365/business-central/trial-signup.md)  
-[Dynamics 365 Business Central trial FAQ](/dynamics365/business-central/trial-faq.md)  
+[Sign up for a free Dynamics 365 Business Central trial](/dynamics365/business-central/trial-signup)  
+[Dynamics 365 Business Central trial FAQ](/dynamics365/business-central/trial-faq)  
 [Trials and Sign-ups for Business Central Online](../deployment/customer-signup.md)  
 [Migrate Data](/dynamics365/business-central/dev-itpro/administration/migrate-data)  
 [Choosing Your Dynamics 365 Business Central Development Sandbox Environment](../developer/devenv-sandbox-overview.md)  
