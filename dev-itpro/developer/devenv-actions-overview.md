@@ -123,7 +123,7 @@ The Home menu is always displayed first so promoted actions provide quick access
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate instant flow by using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
 
 ```al
 customaction(MyFlowAction)
@@ -135,6 +135,11 @@ customaction(MyFlowAction)
 ```
 
 For a `customaction`, the [CustomActionType Property](properties/devenv-customactiontype-property.md) must be set to `Flow`. The [FlowId Property](properties/devenv-flowid-property.md) and the [FlowEnvironmentId Property](properties/devenv-flowenvironmentid-property.md) must specify the IDs of the flow and the environment of the flow. These properties make up the target flow identity, allowing the client to trigger the flow when the custom action is invoked.
+
+> [!TIP]
+> You can get the flow and environment IDs in Power Automate. Sign in to [Power Automate](https://powerautomate.com) and open the flow for editing. Then, get the environment ID and flow ID from the URL in the browser address, which has a format like: `https://make.powerautomate.com/environments/<environment ID>/flows/<environment ID>`.
+
+To learn more about Power Automate flows with Business Central, see [Power Automate Integration Overview](../powerplatform/power-automate-overview.md). 
 
 ## Grouping Actions in Submenus
 

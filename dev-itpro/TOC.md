@@ -65,12 +65,14 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
-### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
-### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
-### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
-### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
+### [Update 21.1](whatsnew/whatsnew-update-21-1.md)
 ### Updates for earlier major versions
+#### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
+#### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
+#### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
+#### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
+#### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
+#### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 #### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 #### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
 #### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
@@ -137,6 +139,7 @@
 ## Admin center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage access](administration/tenant-admin-center-manage-access.md)
 ### [Manage apps](administration/tenant-admin-center-manage-apps.md)
 ### [Manage capacity](administration/tenant-admin-center-capacity.md)
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
@@ -151,6 +154,7 @@
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App Management](administration/administration-center-api_app_management.md)
+#### [Authorized Azure AD Apps](administration/administration-center-api_authorizedaadapps.md)
 #### [Available Applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment Database Export](administration/administration-center-api_environment_database_export.md)
@@ -662,6 +666,7 @@
 ###### [Designing List Parts](developer/devenv-designing-listparts.md)
 ###### [Designing Card Parts](developer/devenv-designing-cardparts.md)
 ###### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+###### [Designing Power BI Report Parts](developer/devenv-power-bi-report-parts.md)
 <!-- reenable when topics have been written
 ####### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) 
 -->
@@ -904,6 +909,8 @@
 ### Developing Client Add-ins 
 #### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 #### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
+
+### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
@@ -1173,12 +1180,14 @@
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
-### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
-### [Instant Flows](powerplatform/instant-flows.md)
+### [Power Automate Integration Overview](powerplatform/power-automate-overview.md)
+### [Set Up Power Automate Integration](powerplatform/power-automate-setup.md)
+### [Set Up Automated Flows](powerplatform/automate-workflows.md)
+### [Set Up Instant Flows](powerplatform/instant-flows.md)
 ### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
+### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
 <!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
@@ -1191,7 +1200,10 @@
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
-### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [Extend Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### Tabs
+#### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
+#### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Shopify -->

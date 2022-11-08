@@ -12,7 +12,6 @@ ms. search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003
 ms.date: 08/23/2022
 ms.author: edupont
-
 ---
 
 # Migrate Dynamics GP Data to the Cloud
@@ -32,6 +31,12 @@ In addition to the GP Company Migration Configuration page you can select which 
 
 
 ## Dynamics GP data
+
+Business Central update 21.1  adds a new page, **GP Company Migration Configuration**. Use this new page to select the data you want migrated from Dynamics GP to Business Central. The page will automatically open after you complete the **Cloud Migration Setup** wizard, but you can also open it from the **Cloud Migration Management** page.  
+
+New options such as selecting what modules you want to migrate as well as if you only want to migrate master data for specific modules are available.  You can select the options at a global level, applying the options to all companies selected to migrate or you can tweak options at a company level in the Per Company fast tab.  
+ 
+If you select to only migrate master data, records such as Accounts, Customer, Vendors and Items will migrate, however no transactional information from GP will be migrated for the selected module.    
 
 When you migrate from Dynamics GP, the following information is migrated from Dynamics GP to Business Central online:
 
@@ -100,7 +105,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 5. Inventory items
 
-    Inventory is imported with the cost valuation method that was selected when the company setup wizard was run. Location information as well as the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
+    Inventory is imported with the cost valuation method that is set in GP at the time the migration is run. Location information as well as the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
 
     In the GP Company Migration Configuration page, you can choose to migrate posting accounts on item classes. If you choose this option, posting accounts that are defined on *item classes* in Dynamics GP will be migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating. If you only want to migrate active items you can choose to exclude inactive items in the GP Company Migration Configuration page.  Additional, you can choose if you do not want to migrate discontinued items.  
 
@@ -111,7 +116,7 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
 7. Checkbook master data.  
 
-    In the setup wizard, you can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any cash receipt that has been posted should also be deposited in GP before migrating, as undeposited receipts will not migrate. 
+    You can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any cash receipt that has been posted should also be deposited in GP before migrating, as undeposited receipts will not migrate. 
 
 ## Diagnostics run
 
@@ -136,7 +141,6 @@ The process to run the migration in an Australian [!INCLUDE [prod_short](../incl
 * Posting groups
 
   Within the posting process there is validation to look for a blank VAT business posting group and VAT product posting group. This combination isn't setup by default and is needed for the migration. So add a VAT posting configuration in the **VAT Posting Setup** page with blank values for the **VAT Bus Posting Group** and **VAT Prod. Posting Group** fields.  
-
 
 ## <a name="lake"></a>Move your Dynamics GP database to Azure Data Lake
 
