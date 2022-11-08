@@ -683,7 +683,7 @@
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
 ##### [Actions in the User Interface](developer/devenv-actions-user-interface.md)
 #### Promoted Actions
-##### [How to Promote Actions](developer/devenv-promoted-actions.md)
+##### [Promoted Actions](developer/devenv-promoted-actions.md)
 ##### [Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)
 ##### [Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
 #### Modern Action Bar
