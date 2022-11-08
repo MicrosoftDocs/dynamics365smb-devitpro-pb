@@ -71,12 +71,12 @@ Don't use split buttons for action groups with actions that the user isn't perce
 
 ## See also
 
-[Page Types and Layouts](developer/devenv-page-types-and-layouts.md)
-[Actions in AL](developer/devenv-actions-overview.md)
-[Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
-[How to Promote Actions](developer/devenv-promoted-actions.md)
-[Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)
-[Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
-[Action Bar Improvements](developer/devenv-action-bar-improvements.md)
-[Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
+[Page Types and Layouts](developer/devenv-page-types-and-layouts.md)  
+[Actions in AL](developer/devenv-actions-overview.md)  
+[Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)  
+[How to Promote Actions](developer/devenv-promoted-actions.md)  
+[Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)  
+[Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)  
+[Action Bar Improvements](developer/devenv-action-bar-improvements.md)  
+[Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)  
 [Pages with Action Bar Improvements](developer/devenv-pages-action-bar-improvements.md)  
