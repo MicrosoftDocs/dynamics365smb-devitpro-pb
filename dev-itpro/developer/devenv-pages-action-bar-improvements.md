@@ -201,10 +201,10 @@ This table provides an overview of all the pages in [!INCLUDE [prod_short](inclu
 
 ## See also
 
-[Actions in AL](developer/devenv-actions-overview.md)  
-[Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)  
-[Actions in the User Interface](developer/devenv-actions-user-interface.md)  
-[How to Promote Actions](developer/devenv-promoted-actions.md)  
-[Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)  
-[Action Bar Improvements](developer/devenv-action-bar-improvements.md)  
-[Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)  
+[Actions in AL](devenv-actions-overview.md)  
+[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
+[Actions in the User Interface](devenv-actions-user-interface.md)  
+[How to Promote Actions](devenv-promoted-actions.md)  
+[Common Promoted Action Groups](devenv-common-promoted-action-groups.md)  
+[Action Bar Improvements](devenv-action-bar-improvements.md)  
+[Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md)  
