@@ -681,8 +681,15 @@
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
+##### [Actions in the User Interface](developer/devenv-actions-user-interface.md)
+#### Promoted Actions
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
+##### [Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)
+##### [Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
+#### Modern Action Bar
+##### [Action Bar Improvements](developer/devenv-action-bar-improvements.md)
 ##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
+##### [Pages with Action Bar Improvements](developer/devenv-pages-action-bar-improvements.md)
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
