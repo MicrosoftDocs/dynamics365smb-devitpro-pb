@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 03/07/2022
+ms.date: 11/03/2022
 ms.author: edupont
 ---
 
@@ -40,7 +40,7 @@ For deploying [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 > [!TIP]
 > The content on the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
-> We recommend that you get your version of Microsoft's content close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 19.4, you could have taken a snapshot of the content in GitHub before version 20.0 became available.
+> If, for some reason, you need a copy of Microsoft's content, then get it close to the time the subsequent major version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] becomes available. For example, if you are deploying version 19.4, you could have taken a snapshot of the content in GitHub before version 20.0 became available.
 
 [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
@@ -108,7 +108,7 @@ You can see an example of how to deploy content to an Azure web app in the artic
 >
 > However, to help prepare for the day when partner-provided and customer-provided content can also be indexed and found by in-product search and the help pane, get your content deployed to a website and make it discoverable.
 
-In versions older than 2022 release wave 1, the in-product search includes searching content on the [learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1, this is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
+In versions older than 2022 release wave 1, the in-product search includes searching content on the [learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index) site. In 2022 release wave 1 and later, this search is replaced by the search capabilities of the Help pane. But the restrictions remain the same.  
 
 ### Optional: Get Microsoft's content
 
@@ -133,7 +133,7 @@ Let's take an example: In January 2022, you were deploying version 19.2 on-premi
 * [https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.nl-be)  
 
 > [!TIP]
-> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. Starting with 2021 release wave 1, the tool can get content based on the release-specific packages in GitHub. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md) and [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md).
+> The [HtmlFromRepoGenerator](../help/custom-help-toolkit-HtmlFromRepoGenerator.md) tool generates HTML files for you that you can choose to customize before you deploy them to the relevant website. Starting with 2021 release wave 1, the tool can get content based on the release-specific packages in GitHub. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md) and [Extend and Collaborate on the Help](../help/contributor-guide.md).
 
 Alternatively, use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), you can see examples in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
 
@@ -146,7 +146,7 @@ We suggest that your website clearly indicates what is under Microsoft's copyrig
 
 ## Fork the Microsoft repos, and customize or extend the content
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the repos that contain translations. For more information, see [Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs), or one of the repos that contain translations. For more information, see [Extend and Collaborate on the Help](../help/contributor-guide.md) and [Custom Help Toolkit](../help/custom-help-toolkit.md).  
 
 [!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
 

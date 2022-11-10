@@ -182,7 +182,7 @@ GitHub brings together communities of developers and other contributors to disco
   * Product Help (English US): [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs)
   * Developer and administration content: [https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb)
 
-  For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).
+  For more information, see [Extend and Collaborate on the Help](help/contributor-guide.md).
 
 #### <a name="nonproduct"></a>Non-product related questions
 
