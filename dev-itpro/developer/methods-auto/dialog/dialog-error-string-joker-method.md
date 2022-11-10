@@ -41,7 +41,7 @@ Any variable or expression to be inserted in String. You can insert up to 10 val
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## Remarks  
 
-The window is automatically sized to hold the longest line of text and total number of lines.  
+The window is automatically sized to hold the longest line of text and total number of lines. By calling the method with an **empty** string the execution of AL code ends without displaying a message. 
 
 ## Programming Guidelines  
 
@@ -84,4 +84,5 @@ The `Error` method causes execution of AL code to stop. [Message Method](../../m
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Analyzing Error Method Telemetry](../../../administration/telemetry-error-method-trace.md)
