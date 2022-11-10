@@ -65,13 +65,14 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
-### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
-### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
-### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
-### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
-### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
+### [Update 21.1](whatsnew/whatsnew-update-21-1.md)
 ### Updates for earlier major versions
+#### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
+#### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
+#### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
+#### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
+#### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
+#### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 #### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 #### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
 #### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
@@ -138,6 +139,7 @@
 ## Admin center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage access](administration/tenant-admin-center-manage-access.md)
 ### [Manage apps](administration/tenant-admin-center-manage-apps.md)
 ### [Manage capacity](administration/tenant-admin-center-capacity.md)
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
@@ -679,8 +681,15 @@
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
+##### [Actions in the User Interface](developer/devenv-actions-user-interface.md)
+#### Promoted Actions
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
+##### [Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)
+##### [Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
+#### Modern Action Bar
+##### [Action Bar Improvements](developer/devenv-action-bar-improvements.md)
 ##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
+##### [Pages with Action Bar Improvements](developer/devenv-pages-action-bar-improvements.md)
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
@@ -1198,7 +1207,10 @@
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
-### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [Extend Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### Tabs
+#### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
+#### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Shopify -->
