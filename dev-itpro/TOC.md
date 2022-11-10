@@ -108,7 +108,7 @@
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
-#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Extend and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!--### Resources for a developer

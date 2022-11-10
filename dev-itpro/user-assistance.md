@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: article
-ms.date: 03/22/2022
+ms.date: 11/03/2022
 ms.author: edupont
 ---
 
@@ -23,7 +23,7 @@ The [!INCLUDE[prod_short](developer/includes/prod_short.md)] user assistance mod
 
     The Help menu and *Learn more* links on tooltips and teaching tips provide context-sensitive access to Help articles with more information.
 
-Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
+Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Extend and Collaborate on the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 In this article, we'll talk about the user assistance model itself and what it does.  
 
@@ -117,9 +117,7 @@ The following screenshot illustrates the Help pane when it is opened from the **
 
 In this case, the **Purchase Invoice** page has not been extended by any apps. If two apps had extended the page, their page-level and app-level configuration would be used to add links on a card after the *Related articles from Microsoft Docs* card.  
 
-The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend and customize for your customers.  
-
-There are repos in GitHub for the source content and each of the languages that Microsoft translates to. For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
+The base version of [!INCLUDE[prod_short](developer/includes/prod_short.md)] uses content that is published to an online library, ([learn.microsoft.com/dynamics365/business-central](/dynamics365/business-central/index)), so that it can also serve as onboarding material and as feature overviews that you can share with prospects. The content is written in MarkDown, and our source files are available in a [public GitHub repo](https://github.com/MicrosoftDocs/dynamics365smb-docs) that you can extend for your customers.  
 
 > [!NOTE]
 > Currently, [!INCLUDE [prod_short](includes/prod_short.md)] does not require the Help for your own functionality to be created in a specific format. But we expect you to make it available on a website that the users of your functionality can access. For more information, see [Configure Context-Sensitive Help](help/context-sensitive-help.md).
@@ -130,22 +128,20 @@ For the base version of [!INCLUDE [prod_short](developer/includes/prod_short.md)
 
 On learn.microsoft.com, each article has two buttons at the end of the article. The *Product feedback* button sends you to the Ideas site, and the *Sign in to give documentation feedback* button lets you submit feedback about the content through GitHub. In both cases, you must create an account if you do not already have one. For *product feedback*, you must sign in with your work or organizational email account. For *access to GitHub*, you can use any email address when you create an account.  
 
-We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. Also, we cannot address issues or questions about the product.  
+We welcome your contributions, both as pull requests with suggestions or corrections to the content, and as GitHub Issues with bugs or questions. However, we can only accept feedback and contributions to the content in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) and [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb) repos. Also, we cannot address issues or questions about the product.  
 
 > [!IMPORTANT]
-> Microsoft only accepts pull requests to the *dynamics365smb-docs* repo, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.  
+> If you have feedback about translations, you can report a GitHub issue in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo.  
 
-Microsoft also accepts contributions and feedback about the development and administration content through the [dynamics365smb-devitpro-pb](https://github.com/MicrosoftDocs/dynamics365smb-devitpro-pb) repo. This repo does not have translation repos associated with it, but other than that, the same rules apply as for the *dynamics365smb-docs* repo.  
-
-For more information, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md).  
+For more information, see [Extend and Collaborate on the Help](help/contributor-guide.md).  
 
 ### Working in MarkDown
 
-If you fork one of our repos, you will be authoring in MarkDown. We recommend that you learn the basics by referring to the [Docs Markdown reference](/contribute/markdown-reference) section in the Docs Contributor Guide.  
+If you fork one of our repos, you will be authoring in MarkDown. We recommend that you learn the basics by referring to the [Docs Markdown reference](/contribute/markdown-reference) section in the Learn Contributor Guide.  
 
 The [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with MarkDown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit MarkDown.  
 
-For other tips and tricks, see [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
+For other tips and tricks, see [Extend and Collaborate on the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 
