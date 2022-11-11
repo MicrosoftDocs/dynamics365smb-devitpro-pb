@@ -40,7 +40,7 @@ From both the **Configuration Worksheet** page and the **Configuration Package**
 > [!IMPORTANT]
 > Use RapidStart configuration packages only when setting up a company for the first time. Configuration packages aren't intended to be used for companies that are already in production. Using configuration packages to import large amounts of data can impact performance and prevent all users from using Business Central during the process.
 >
-> For companies that are in production, we strongly recommend that you use an XMLport to import and export data. Learn more at [XMLport Overview](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-xmlport-overview).  
+> For companies that are in production, we strongly recommend that you use an XMLport to import and export data. Learn more at [XMLport Overview](../developer/devenv-xmlport-overview.md).  
 
 ### Import data from Excel
 
