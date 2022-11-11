@@ -844,6 +844,7 @@
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
 ### Using the System Application
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
+#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### Creating New Modules in the System Application
 ##### [Module Architecture](developer/devenv-blueprint.md)
 ##### [Get Started with Modules](developer/devenv-getting-started.md)
@@ -890,6 +891,7 @@
 
 ## Extensibility
 ### Extending the Base Application
+#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 #### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 #### [Extending Application Areas](developer/devenv-extending-application-areas.md)
