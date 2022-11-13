@@ -143,8 +143,7 @@ In the following table, you'll find examples of scenarios for each persona where
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
 
 ## See also
-
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
-
+[Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)

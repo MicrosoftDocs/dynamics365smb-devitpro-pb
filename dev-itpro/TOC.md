@@ -199,8 +199,11 @@
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
-### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
-### [Use Power BI to analyze telemetry](administration/telemetry-power-bi-app.md)
+### [Enable Telemetry](administration/telemetry-enable-application-insights.md)
+### [Control Telemetry Cost](administration/telemetry-control-cost.md)
+### [Analyze Telemetry with Power BI](administration/telemetry-power-bi-app.md)
+### [Analyze Telemetry with KQL](administration/telemetry-analyze-with-kql.md)
+### [Alert on Telemetry](administration/telemetry-alert.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
