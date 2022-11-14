@@ -25,7 +25,7 @@ Example:
 ```al
 codeunit 50100 "My App Setup"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Guided Experience" 'OnRegisterAssistedSetup', '', true, true)]
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Guided Experience", 'OnRegisterAssistedSetup', '', true, true)]
     local procedure InsertIntoAssistedSetupOnRegisterAssistedSetup()
     var
         GuidedExperience: Codeunit "Guided Experience";
