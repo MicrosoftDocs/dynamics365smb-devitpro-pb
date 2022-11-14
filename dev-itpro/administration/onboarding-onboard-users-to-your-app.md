@@ -39,6 +39,7 @@ codeunit 50100 "My App Setup"
         IsPrimarySetup := true;
         GuidedExperience.InsertAssistedSetup(SetupTitle, SetupShortTitle, SetupDescription, 5, ObjectType::Page, Page::"My App Setup Wizard", AssistedSetupGroup::ReadyForBusiness, '', VideoCategory::ReadyForBusiness, '', IsPrimarySetup);
     end;
+}
 ```
 
 In this example, the page **My App Setup Page** is added to ****Guided Experience Item**** as the primary setup object for the app.  
