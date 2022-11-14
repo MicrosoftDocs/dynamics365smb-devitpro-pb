@@ -50,7 +50,7 @@ Check the Azure Application Insights documentation for up-to-date information on
 
 ### Control data ingestion cost
 To reduce data ingestion cost, you can:
-- sample to only ingest a percentage of the inbound data (learn more at [Sampling in Application Insights](/azure/azure-monitor/app/sampling#ingestion-sampling).
+- sample to only ingest a percentage of the inbound data (learn more at [Sampling in Application Insights](/azure/azure-monitor/app/sampling#ingestion-sampling)).
 - set a daily limit of how much data can be ingested.
 - set alerts on cost thresholds being exceeded to get notified if this happens.
 - use a custom endpoint (learn more in the section below).
@@ -132,7 +132,7 @@ The samples below can help getting started with customization and automation usi
 > If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
 
 #### Example - run an alerting query every n days and send an email
-This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this to replace the many email notifications they would receive for each individual enviroment when set up as notification recipient.
+This Logic App runs every number of days (specified in deployment) and lists all updates made available to environments that emit telemetry to the specified Application Insights resource for the specified period. Administrators can use this to replace the many email notifications they would receive for each individual environment when set up as notification recipient.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAvailableUpdatesNotification.json)
 

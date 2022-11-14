@@ -18,7 +18,7 @@ To test and troubleshoot issues in install and upgrade code, it's important to e
 1. In Visual Studio Code, ensure that you've a `launch.json` file with the `request` option set to `attach`. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).  
 1. Add one or more breakpoints in the code that you want to debug. For more information, see [Debugging](devenv-debugging.md).  
     > [!NOTE]  
-    > If you *don't* increment the version of the app, the install codeunits will be invoked. If you *do* increment the version of the app, or if you set the `forceUpgrade` flag to `true` in the `launch.json` file, the upgrade codeunits will be invoked.
+    > If you *don't* increment the version of the app, the install codeunits will *not* be invoked. If you *do* increment the version of the app, or if you set the `forceUpgrade` flag to `true` in the `launch.json` file, the upgrade codeunits will be invoked.
 1. Invoke the **AL: Publish extension without building** option in the **Show All Commands** menu by pressing **Ctrl+Shift+P**, or use **Ctrl+F5** to publish the app file and start the attach session.  
 
 ## See Also
