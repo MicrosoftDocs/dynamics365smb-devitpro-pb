@@ -42,7 +42,6 @@ The following table describes the user and workspace settings for the AL Languag
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
-|Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance.|
 |Enable Fast IntelliSense Completion | Autocomplete in IntelliSense using autocomplete characters such as period and parentheses. Syntax is `al.enableFastIntelliSenseCompletion`. The list of characters that can be used is: period, comma, colon, semicolon, brackets, and single and double quotes. Default value is switched off. |
 |Generate PermissionSet for Extension Objects | Generate a permission set as an AL object. Syntax is `al.generatePermissionSetForExtensionObjects`. When invoking the command, the developer can choose to create a new permission file or select an existing file to update.|
 
