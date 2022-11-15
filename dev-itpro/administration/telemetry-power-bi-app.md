@@ -13,17 +13,18 @@ ms.author: jswymer
 
 # Analyze and Monitor Telemetry with Power BI
 
-To make it simple to analyze Business Central telemetry, we've developed a Power BI app available from Microsoft Appsource. The app is free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft Appsource. One app is for telemetry on environments, the other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
-The app consists of four reports: 
+Each app consists of four reports: 
 - Usage
 - Errors
 - Performance 
 - Administration
 
-## Get the app 
+## Get the apps
 
-To install or update the app, go to [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now**. 
+### App on Environment Telemetry
+To install or update the app for _environment telemetry_, go to [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now**. 
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
 
@@ -31,14 +32,26 @@ Once installed, the **Dynamics 365 Business Central Usage** app appears under **
 
 :::image type="content" source="../developer/media/bc-usage-pwr-bi-app-open.png" alt-text="Diagram showing the Dynamics 365 Business Central Usage installed in the Apps section of Power BI" border="false":::
 
-To open app, from the navigation pane, select **Apps** > **Dynamics 365 Business Central Usage**. 
+To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Business Central Usage**. 
 
 :::image type="content" source="../developer/media/bc-usage-pwr-bi-app.png" alt-text="Shows the start page of Business Central usage app in Power BI." border="false":::
 
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
 
+### App on Environment Telemetry
+To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**. 
+
+You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
+
+Once installed, the **Dynamics 365 Business Central App Usage** app appears under **Apps** in Power BI. A workspace with the same name is also installed for configuring the app.
+
+To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Business Central App Usage**. 
+
+By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
+
+
 > [!TIP]
-> You can install the app more than once. Just go [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now** again. When prompted, choose **Install another copy of the app into a new workspace**.
+> You can install the Power BI apps more than once. Just go to the install link for the app and select **Get it now** again. When prompted, choose **Install another copy of the app into a new workspace**.
 
 ## Connect to Azure Application Insights for the first time
 
@@ -65,7 +78,7 @@ After the app is installed, you can connect it to an Azure Application Insights 
     > [!NOTE]  
     > Keep the **Authentication method** set to **OAuth2**. If you get the error *The OAuth authentication method isn't supported for this data source*, check if the application ID is correct; that's usually the root cause for that error.
 
-## Configure the app after initial setup
+## Configure an app after initial setup
 
 Once the app is installed, you can use the **Dynamics 365 Business Central Usage** workspace to change the app configuration, for example, to connect to a different Application Insights resource or change how many days back the data goes. Follow these steps:
 
