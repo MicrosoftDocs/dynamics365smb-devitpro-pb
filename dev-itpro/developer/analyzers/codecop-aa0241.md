@@ -46,11 +46,11 @@ VAR
 trigger OnValidate()
 begin
     if "Order Date" > "Starting Date" then
-       Error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
+       error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
 end;
 
 var
-    Text007: Label '%1 cannot be greater than %2.';
+    Text007: label '%1 cannot be greater than %2.';
 
 ```
 
