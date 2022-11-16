@@ -12,6 +12,8 @@ ms.date: 07/29/2022
 
 # Transferring Data Between Tables using DataTransfer
 
+> **APPLIES TO:**  Business Central 2022 release wave 2 (version 21.0) and later.
+
 [DataTransfer](methods-auto/datatransfer/datatransfer-data-type.md) is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, DataTransfer produces SQL code that operates on sets. This behavior improves the performance when moving data during upgrade. 
 
 For comparison, the following code illustrates how to copy rows using the record API:
