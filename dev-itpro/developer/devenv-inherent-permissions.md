@@ -36,8 +36,7 @@ To learn more about the syntax of the `InherentPermissions` attribute, see [Inhe
 Let's look at a code example for the `InherentPermissions` attribute. 
 
 ```AL
-[InherentPermissions
-(PermissionObjectType:Table, Database:"Customers", 'r’, InherentPermissionsScope:Both)]
+[InherentPermissions(PermissionObjectType::Table, Database::Customer, 'r', InherentPermissionsScope::Both)]
 
 Procedure GetCustomersLocation(): CustomerLocation
 
