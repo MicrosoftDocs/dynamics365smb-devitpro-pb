@@ -2,7 +2,7 @@
 title: "How to Work with a Performance Problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 06/16/2022
+ms.date: 11/17/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
