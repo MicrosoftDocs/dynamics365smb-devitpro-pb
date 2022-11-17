@@ -44,7 +44,7 @@ To read more about Azure Monitor alerts, go to [Azure Application Insights](/azu
 
 ## Create alerts using Azure Logic Apps and Power Automate
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights you can use to set up custom notifications or to automate certain actions triggered by an environment lifecycle event.
+Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights for setting up custom notifications or automating certain actions that are triggered by an environment's lifecycle event.
 
 > [!NOTE]
 > Samples of custom notifications and automations are shared by Microsoft and third parties on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your Application Insights Alerts and Automations with the community on GitHub.
