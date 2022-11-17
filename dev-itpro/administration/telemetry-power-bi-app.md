@@ -8,6 +8,7 @@ ms.search.keywords: administration, tenant, admin, environment, sandbox, telemet
 ms.date: 11/17/2022
 ms.author: jswymer
 ms.custom: bac-template
+ms.service: dynamics365-business-central
 ---
 
 # Analyze and Monitor Telemetry with Power BI
