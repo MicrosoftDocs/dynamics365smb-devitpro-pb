@@ -3,12 +3,11 @@ title: Monitoring and Analyzing Telemetry
 description: Learn how Business Central provides telemetry for each environment, both for online and on-premises environments.  
 author: jswymer
 ms.topic: overview
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/13/2022
+ms.date: 11/17/2022
 ms.author: jswymer
+ms.reviewer: jswymer
+ms.custom: bac-template
 ---
 
 # Monitoring and Analyzing Telemetry
@@ -23,58 +22,62 @@ Application Insights can be enabled on two different levels:
 
 - Tenant  
 
-    When enabled on the tenant, either for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations.
+    Application Insights can be enabled for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant or on-premises [!INCLUDE[server](../developer/includes/server.md)] instance. When enabled on the tenant, telemetry is emitted to a single Application Insights resource for gathering data on tenant-wide operations.
     
 - Extension  
 
-    With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis by setting an Application Insights connection in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
+    With the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2020 release wave 2 and later, Application Insights can also be enabled on a per-extension basis. Enabling telemetry is done by setting an Application Insights connection in the extension's manifest (app.json file). At runtime, certain events related to the extension are emitted to the Application Insights resource. This feature targets publishers of per-tenant extensions to give them insight into issues in their extension before partners and customers report them.
 
-Both for tenant-level and extension-level telemetry, it is possible to craft custom telemetry messages directly from AL
+Both for tenant-level and extension-level telemetry, it's possible to craft custom telemetry messages directly from AL
 using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md). Learn more about AL at [Programming in AL](../developer/devenv-programming-in-al.md).
 
 ## Available telemetry
+
 In Application Insights, telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is logged as traces.  Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations:  
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
 
 ## <a name="enable"></a> Enable Application Insights
+
 To send telemetry data to Application Insights, you must have an Application Insights resource in Azure. Once you have the Application Insights resource, you can start to configure your tenants and extensions to send telemetry data to it. Learn more at [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
 
 > [!NOTE]
 > For extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 
 ## <a name="ingest"></a> Control telemetry cost
+
 Azure Application Insights is billed based on the volume of telemetry data your application sends (data ingestion) and how long time you want data to be available (data retention). 
 
-Check the Azure Application Insights documentation for up-to-date information on pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/).
+Check the Azure Application Insights documentation for up-to-date information on pricing at [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/).
 
-Visit this article [Control Telemetry Cost](telemetry-control-cost.md) to learn more.
+For more information, go to [Control Telemetry Cost](telemetry-control-cost.md).
 
 ## <a name="viewing"></a>Viewing telemetry data in Application Insights
 
 Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in Azure Monitor Logs in the *traces* table. You can view collected data by writing log queries using Kusto query language (KQL). Learn more at [Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs) and [Overview of log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-overview).
 
-Visit this article [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md) to learn more.
+For more information, go to [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md).
 
 ### <a name="customdimensions"></a>About custom dimensions
 
-Each trace has a `customDimensions` column that includes a set of dimensions containing metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the Business Central server adds additional overflow dimension keys to the event to contain the excess characters. There can be up to two additional overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+Each trace has a `customDimensions` column that includes a set of dimensions containing metrics specific to the trace. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the Business Central server adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
 
 > [!NOTE]
 > The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
 
+## Setting up alerts on telemetry
 
-## Setting up alerts on Telemetry
-If something happens in your environment or app that you need to take action on, you might want to have a system that sends you an alert. Azure Application Insights makes it easy to define such alerts.
+If something happens in your environment or app that you need to act on, you can set up a system that sends you an alert. Azure Application Insights makes it easy to define such alerts.
 
-You can use the following tools to define and set up alerts on telemetry events
- 1. Azure Application Insights Alerts,
- 2. Azure Logic Apps, or
- 3. Power Automate
+You can use the following tools to define and set up alerts on telemetry events:
 
-All three approaches need a Kusto (KQL) query to define the alerting condition. 
+- Azure Application Insights Alerts
+- Azure Logic Apps
+- Power Automate
 
-Visit this article [Alert on Telemetry](telemetry-alert.md) to learn more.
+All three approaches need a Kusto (KQL) query to define the alerting condition.
+
+For more information, go to [Alert on Telemetry](telemetry-alert.md).
 
 ## Telemetry sample code
 
