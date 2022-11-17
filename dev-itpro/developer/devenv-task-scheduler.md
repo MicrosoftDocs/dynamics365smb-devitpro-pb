@@ -86,7 +86,7 @@ A codeunit will be retried up to 99 times, according to the following intervals:
 |-------------|---------|
 |1 and 2|.5|
 |3 and 4|1|
-|5 and 64|2|
+|5 and 6|2|
 |7 and 8|3|
 |9 to 99|5|
 

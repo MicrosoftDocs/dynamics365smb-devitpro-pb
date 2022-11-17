@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 01/28/2022
+ms.date: 10/24/2022
 ---
 
 # Configure Context-Sensitive Help
@@ -57,7 +57,11 @@ Specifically for localization apps that translate [!INCLUDE [prod_short](../deve
   ],
 ```
 
-The *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in Catalan. If the user switches the application language to English (US), then the Help calls will go to the *learn.microsoft.com* site.  
+The `helpBaseUrl` property represents the URL that will be used to overwrite the default Microsoft help link, which is `(/{0}/dynamics365/business-central)`. The value of the property must contain a placeholder for the user's locale culture, `{0}`.  
+
+The `supportedLocales` property specifies the list of locales that are supported by the URL specified in the `helpBaseUrl` property and used in the translation app. If the user's current locale is among the `supportedLocales` of the extension, the user will be re-directed to the help base URL that you specified.  
+
+In this example, the *helpBaseUrl* and *supportedLocales* properties specify that the links to the Help must go to the *mysite.com* site when the user is using the product in Catalan. If the user switches the application language to English (US), then the Help calls will go to the *learn.microsoft.com* site.  
 
 ## Page-level configuration
 
@@ -106,7 +110,7 @@ The base URL to the location of the target articles that are listed in table 200
 You can run a script that populates the **Page Documentation** table with a mapping for Microsoft's page objects and your own page objects. This is useful if you want to reuse legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help for your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises deployment.  
 
 > [!CAUTION]
-> While it is possible to reuse the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help with the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and to populate the system table, **Page Documentation**, we recommend that you convert any existing content to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] format, and that you fork our GitHub repos. For more information, see [Extend, Customize, and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md).  
+> While it is possible to reuse the [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] legacy Help with the legacy [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server, and to populate the system table, **Page Documentation**, we recommend that you convert any existing content to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] format, and that you fork our GitHub repos. For more information, see [Extend and Collaborate on the Help for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](contributor-guide.md) and [Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format](../upgrade/migrate-help.md).  
 
 In the following example, you have chosen not to apply context-sensitive Help links to your page objects and instead you want to overwrite the UI-to-Help mapping that Microsoft has made in the system table.  
 

@@ -18,7 +18,7 @@ If you are contributing to the [!INCLUDE [prod_short](../developer/includes/prod
 - The [Microsoft Style Guide](/style-guide/welcome/) is published online
   
   The content on the learn.microsoft.com site generally follows the Microsoft Style Guide. The content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] varies in certain ways, partly with product-specific terminology, and a generally more conservative approach to contractions, for example. Also, since navigation in the [!INCLUDE [prod_short](../includes/prod_short.md)] user interface is different from that of other Dynamics 365 apps, our guidance for steps that describe such navigation is slightly different. For more information, see the [Write for accessibility](#write-for-accessibility) section.  
-- [Extend, Customize, and Collaborate on the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
+- [Extend and Collaborate on the Help](contributor-guide.md) shows you the basics of collaborating on content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
 - The [Docs Contributor Guide](/contribute/) has many tips and tricks for authoring in MarkDown
 
@@ -353,7 +353,7 @@ Messages that users see when they work in [!INCLUDE [prod_short](../developer/in
 ## See also
 
 [Business Central User Assistance Model](../user-assistance.md)  
-[Extend, Customize, and Collaborate on the Help](contributor-guide.md)  
+[Extend and Collaborate on the Help](contributor-guide.md)  
 [Configuring the Help Experience](../deployment/configure-help.md)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  

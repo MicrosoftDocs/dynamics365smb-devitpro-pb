@@ -153,7 +153,7 @@ The cloud migration process can become difficult if the names of the companies i
 SELECT *
 FROM Company
 
-Where ([Name] like '% ') or ([Name] like ' %' ) or ([Name] like '%' + Char(10) + '%') or ([Name ] like '%' + Char(13) + '%')
+Where ([Name] like '% ') or ([Name] like ' %' ) or ([Name] like '%' + Char(10) + '%') or ([Name ] like '%' + Char(13) + '%') or ([Name ] like '%/%' )
 ```
 
 Simply change the company name, run the migration, and then, when migration is complete, change the company name in the target environment as appropriate.  

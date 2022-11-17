@@ -3,7 +3,7 @@ title: "Update 21.1 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 21.1 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: jswymer
 ms.custom: na
-ms.date: 10/31/2022
+ms.date: 11/17/2022
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -16,7 +16,7 @@ Would you like to know what has changed in update 21.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-21-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-1-48638-platform-build-21-0-48504-9c9a44f0-ae4f-4d98-82e3-a781399b3de2).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-21-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-1-48638-platform-build-21-0-48504-9c9a44f0-ae4f-4d98-82e3-a781399b3de2).
 
 ## Feature changes
 
@@ -52,13 +52,14 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 **You can still watch the Business Central Launch Event recordings**  
-We have 15+ what's new sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576). 
+
+We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
 
 **Business Central at Ignite**  
 At the Microsoft Ignite event on October 12, we unveiled new and exciting collaboration features for SMBs that usher in a new era for collaborative applications. Check out the announcements in the [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2022-book-of-news/#a-312-microsoft-teams-customers-to-receive-access-to-business-central-data-at-no-extra-cost) and [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/10/12/live-from-microsoft-ignite-2022-introducing-new-ai-automation-and-collaboration-capabilities-for-dynamics-365/) to learn how our customers can leverage 2022 release wave 2 to work smarter, increase team performance, and quickly adapt their digital collaborative spaces to make data-driven decisions.
 
 **Important: Take action before March 1 to retain your delegated admin access to your customers**  
-Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](https://learn.microsoft.com/en-us/partner-center/announcements/2022-october#17).
+Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](/partner-center/announcements/2022-october#17).
 
 **New versions of the Business Central mobile app for Android and iOS**  
 New, updated 3.8.xxxx versions of the Business Central mobile app for Android and iOS have been released featuring support for additional Business Central localization, some minor improvements an fixes and newest requirements from mobile OS releases. Please note the required minimum supported versions of both iOS/iPadOS and Android (currently Android 10 is required for Business Central mobile app). Please keep your mobile app updated by downloading the update. Links: 

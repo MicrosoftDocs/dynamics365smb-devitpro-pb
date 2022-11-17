@@ -19,7 +19,7 @@ Update the properties of a vendorPaymentJournal object for [!INCLUDE[prod_short]
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-PATCH businesscentralPrefix/companies({id})/vendorPaymentJournals ({id})
+PATCH businesscentralPrefix/companies({id})/vendorPaymentJournals({id})
 ```
 
 ## Request headers
@@ -34,7 +34,7 @@ PATCH businesscentralPrefix/companies({id})/vendorPaymentJournals ({id})
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-If successful, this method returns a ```200 OK``` response code and an updated **vendorPaymentJournals ** object in the response body.
+If successful, this method returns a ```200 OK``` response code and an updated **vendorPaymentJournals** object in the response body.
 
 ## Example
 
@@ -47,7 +47,8 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPaymentJour
 Content-type: application/json
 
 {
-PLACE CODE HERE.
+  "code": "COMMON",
+  "displayName": "COMMON"
 }
 ```
 
@@ -63,7 +64,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-PLACE CODE HERE.
+  "id": "1377cc08-eb23-ed11-88e7-f2834877f72d",
+  "code": "COMMON",
+  "displayName": "COMMON",
+  "balancingAccountId": "021c2ed0-021d-ed11-9db9-000d3aa935da",
+  "balancingAccountNumber": "10700",
+  "lastModifiedDateTime": "2022-08-24T20:37:54.867Z"
 }
 ```
 

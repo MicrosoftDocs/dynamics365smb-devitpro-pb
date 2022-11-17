@@ -108,7 +108,7 @@
 #### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
 #### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
-#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Extend and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!--### Resources for a developer
@@ -681,8 +681,15 @@
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
+##### [Actions in the User Interface](developer/devenv-actions-user-interface.md)
+#### Promoted Actions
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
+##### [Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)
+##### [Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
+#### Modern Action Bar
+##### [Action Bar Improvements](developer/devenv-action-bar-improvements.md)
 ##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
+##### [Pages with Action Bar Improvements](developer/devenv-pages-action-bar-improvements.md)
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
@@ -837,6 +844,7 @@
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
 ### Using the System Application
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
+#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### Creating New Modules in the System Application
 ##### [Module Architecture](developer/devenv-blueprint.md)
 ##### [Get Started with Modules](developer/devenv-getting-started.md)
@@ -883,6 +891,7 @@
 
 ## Extensibility
 ### Extending the Base Application
+#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 #### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 #### [Extending Application Areas](developer/devenv-extending-application-areas.md)
@@ -1042,7 +1051,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating Printer and Report Payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-#### [Trounbleshooting Performance Issues](performance/performance-overview.md)
+#### [Troubleshooting Performance Issues](performance/performance-overview.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
