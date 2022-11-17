@@ -36,8 +36,10 @@ ProcessingOnly = true;
   
 ## Remarks  
 
-If **ProcessingOnly** is **true**, then the **Print** and **Preview** options on the request page are replaced by an **OK** button.
-Since 2022 Wave 2, if **ProcessingOnly** is **true**, then the **Advanced** tab on the request page is not shown. Use **Report Limits** page instead.
+When **ProcessingOnly** is set to **true**, then the **Advanced** tab on the request page is not shown. Use the **Report Limits** page instead.
+
+> [!NOTE]  
+> In versions before Business Central 2022 release wave 2, if **ProcessingOnly** is **true**, then the **Print** and **Preview** options on the request page are replaced by an **OK** button.
   
 ## See Also  
 
