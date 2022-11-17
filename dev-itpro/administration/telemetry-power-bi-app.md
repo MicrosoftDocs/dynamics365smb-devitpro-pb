@@ -69,7 +69,7 @@ After the app is installed, you can connect it to an Azure Application Insights 
 
    :::image type="content" source="../developer/media/bc-usage-pwr-bi-app-connect-data-id.png" alt-text="Diagram showing the parameters to connect the Business Central usage app to an Application Insights resource" border="false":::
 
-   Other information on the page is optional. For more information, see [Configure the app](#configure-the-app-after-initial-setup).
+   Other information on the page is optional. For more information, see [Configure the app](#configure-an-app-after-initial-setup).
 4. Select **Next** and wait while your credentials are checked.
 5. Select **Sign in and connect**, then enter a valid name and password for accessing the Application Insights resource, if asked.
 
@@ -112,7 +112,6 @@ Once the app is installed, you can use the **Dynamics 365 Business Central Usage
 
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
-
 
 ## Share the app with coworkers and others
 
