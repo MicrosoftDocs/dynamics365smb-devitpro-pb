@@ -1,13 +1,14 @@
 ---
 title: Analyze and Monitor Telemetry with KQL
 description: Learn how to query Business Central telemetry with KQL.  
-author: kepontop
+author: kennienp
 ms.topic: overview
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 11/13/2022
 ms.author: jswymer
-ms.custom: bac-template
+ms.reviewer: jswymer
 ms.service: dynamics365-business-central
+ms.custom: bac-template
 ---
 # Analyze and Monitor Telemetry with KQL
 

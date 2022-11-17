@@ -1,11 +1,11 @@
 ---
 title: Alert on Telemetry
 description: Learn how to alert on Business Central telemetry.  
-author: kepontop
+author: kennieNP
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 11/17/2022
-ms.author: kennienp
+ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.custom: bac-template

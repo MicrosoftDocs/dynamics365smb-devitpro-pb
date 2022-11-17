@@ -1,14 +1,14 @@
 ---
 title: Controlling Telemetry Cost
 description: Learn how to control the cost of Business Central provides telemetry.  
-author: kepontop
+author: kennieNP
 ms.topic: overview
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 11/13/2022
 ms.author: jswymer
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms.custom: bac-template
 ---
 # Controlling Telemetry Cost
 
