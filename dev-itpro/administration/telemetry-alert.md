@@ -5,7 +5,7 @@ author: kepontop
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 11/17/2022
-ms.author: kepontop
+ms.author: kennienp
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.custom: bac-template
