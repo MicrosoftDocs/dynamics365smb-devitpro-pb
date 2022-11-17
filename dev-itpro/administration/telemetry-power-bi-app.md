@@ -1,19 +1,18 @@
 ---
-title: Analyze Telemetry with Power BI
+title: Analyze and Monitor Telemetry with Power BI
 description: Learn how to install, configure, and use the Power BI app on Business Central telemetry data.
 author: jswymer
-ms.topic: overview
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.reviewer: jswymer
+ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/13/2022
+ms.date: 11/17/2022
 ms.author: jswymer
+ms.custom: bac-template
 ---
 
 # Analyze and Monitor Telemetry with Power BI
 
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft Appsource. One app is for telemetry on environments, the other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft Appsource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 Each app consists of four reports: 
 - Usage
@@ -24,7 +23,7 @@ Each app consists of four reports:
 ## Get the apps
 
 ### App on Environment Telemetry
-To install or update the app for _environment telemetry_, go to [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now**. 
+To install or update the app for _environment telemetry_, go to [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
 
@@ -32,14 +31,14 @@ Once installed, the **Dynamics 365 Business Central Usage** app appears under **
 
 :::image type="content" source="../developer/media/bc-usage-pwr-bi-app-open.png" alt-text="Diagram showing the Dynamics 365 Business Central Usage installed in the Apps section of Power BI" border="false":::
 
-To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Business Central Usage**. 
+To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Business Central Usage**.
 
 :::image type="content" source="../developer/media/bc-usage-pwr-bi-app.png" alt-text="Shows the start page of Business Central usage app in Power BI." border="false":::
 
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
 
 ### App on Environment Telemetry
-To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**. 
+To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
 
@@ -48,7 +47,6 @@ Once installed, the **Dynamics 365 Business Central App Usage** app appears unde
 To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Business Central App Usage**. 
 
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
-
 
 > [!TIP]
 > You can install the Power BI apps more than once. Just go to the install link for the app and select **Get it now** again. When prompted, choose **Install another copy of the app into a new workspace**.
@@ -112,12 +110,9 @@ Once the app is installed, you can use the **Dynamics 365 Business Central Usage
 > [!NOTE]
 > Once you connect to an Application Insights resource, You can't change the app back to show the sample data. If you want to see the sample data, install the app again.
 
-
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
 
-
-<!-- go back to demo data app id 6bbe3987-39f9-4fc4-ac1e-624bcbdfd6af -->
 
 ## Share the app with coworkers and others
 
@@ -150,7 +145,7 @@ In the following table, you'll find examples of scenarios for each persona where
 | Project manager | We need a way to track progress on User Acceptance Testing (UAT) efforts | Go to the Usage report and visit the _Page views_, _Reports_, and _Feature Usage_ pages to see what users are doing in Business Central. Consider sharing the app with the customer to enable them to do the follow-ups internally based on data. |
 | Project manager | We want a smooth go-live for the customer. | Use the Error dashboard in the Error report to drive errors to zero before go-live. Monitor the dashboard in the first weeks after go-live. Consider sharing the app with the customer so status meetings and follow-ups can be based on data. |
 | Project manager | Business Central online only: We want to check if the customer will get broken integrations when they get updated to version 20.0 or 21.0 | Look at the _Deprecated features_ page in the Usage report to see if the customer is still using web service keys (basic auth) for integrations. If you see any data here, work with the customer on a mitigation plan to move integrations to OAuth.|
-| Supporter | Customer calls and says that "something changed since Friday of last week." | Go to the Administration report, find the _All changes_ page and filter to a period in time that overlaps with "Friday of last week." Depending on what the customer reported had changed (such as data, UI, business logic, performance, stability, and so on), you might get lucky that one of the lifecycle events for environments, extensions, companies, or indexes can explain the root cause of the changed behavior. Otherwise, you can dig further into the issue with the app using KQL queries, or simply by reaching out to the code owner. |
+| Supporter | Customer calls and says that "something changed since Friday of last week." | Go to the Administration report, find the _All changes_ page and filter to a period in time that overlaps with "Friday of last week." There are various changes that a customer can report, such as data, UI, business logic, performance, stability, and so on. Depending on the reported change, you might get lucky that one of the lifecycle events for environments, extensions, companies, or indexes can explain the root cause of the changed behavior. Otherwise, you can dig further into the issue with the app using KQL queries, or simply by reaching out to the code owner. |
 | Supporter | Customer complains that some users can't sign in. | Go to the Error report and investigate the *Login Errors* page. |
 | Supporter | Customer complains that users get lots of errors when using the system. | Go to the Error report and investigate the _Error Dialogs_, _Permission Errors_, and _Feature Errors_ pages. You can filter pages by Extension Publisher to learn which code path the error is coming from. |
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
