@@ -53,10 +53,12 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 - Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
 - Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
+- Excel layout samples: [aka.ms/BCExcelSamples](https://aka.ms/BCExcelSamples)
 - Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPI](https://aka.ms/BCPI) 
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
-- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys) 
+- Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
+ 
 
 ## Migrating from on-premises to cloud (online) 
 
@@ -91,11 +93,17 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Telemetry and performance
 
 - App performance documentation: [aka.ms/BCPerformance](https://aka.ms/BCPerformance)
-- AppInsights Telemetry documentation: [aka.ms/BCTelemetry](https://aka.ms/BCTelemetry) 
-- AppInsights Telemetry samples: [aka.ms/BCTelemetrySamples](https://aka.ms/BCTelemetrySamples) 
+- Telemetry documentation: [aka.ms/BCTelemetry](https://aka.ms/BCTelemetry) 
+- Telemetry samples: [aka.ms/BCTelemetrySamples](https://aka.ms/BCTelemetrySamples) 
+- Analyze environment telemetry data with Power BI: [aka.ms/BCTelemetryReport](https://aka.ms/BCTelemetryReport) 
+- Analyze app telemetry data with Power BI: [aka.ms/BCTelemetry-Isv-App](https://aka.ms/BCTelemetry-isv-app) 
+
+## Security, Privacy, and Compliance
+
+- Security, Privacy, and Compliance documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
 
 ## Events
 
-- Directions NA: [directions.com](https://directionsna.com)  
+- Directions NA: [directions.com](https://directionsna.com) 
 - Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
 - Business Central TechDays: [bctechdays.com](https://bctechdays.com)
