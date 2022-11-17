@@ -62,7 +62,7 @@ Your extension:
 codeunit 50100 MyCodeunit
 {
     var
-        p: MyPage;
+        p: SomePage;
 }
 ```
 
@@ -87,7 +87,7 @@ Example:
 }
 ```
 
-### Code example not triggering the rule
+### Code example triggering the rule
 
 If the `obsoleteTagMinAllowedMajorMinor` version is set to any version higher than `18.0`, then an error is reported.
 
