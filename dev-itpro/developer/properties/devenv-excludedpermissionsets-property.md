@@ -36,6 +36,7 @@ You can also include permission sets by using the [IncludedPermissionSets](deven
 
 ## See Also
 
+[IncludedPermissionSets Property](devenv-includedpermissionsets-property.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

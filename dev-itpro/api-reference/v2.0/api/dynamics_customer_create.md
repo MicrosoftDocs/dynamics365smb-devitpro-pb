@@ -83,7 +83,6 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "f2a5738a-44e3-ea11-bb43-000d3a2feca1",
     "number": "10000",
     "displayName": "Adatum Corporation",
     "type": "Company",
@@ -98,15 +97,13 @@ Content-type: application/json
     "website": "",
     "taxLiable": true,
     "taxAreaId": "90196a90-44e3-ea11-bb43-000d3a2feca1",
-    "taxAreaDisplayName": "ATLANTA, GA",
     "taxRegistrationNumber": "",
     "currencyId": "00000000-0000-0000-0000-000000000000",
     "currencyCode": "USD",
     "paymentTermsId": "04a5738a-44e3-ea11-bb43-000d3a2feca1",
     "shipmentMethodId": "00000000-0000-0000-0000-000000000000",
     "paymentMethodId": "3b196a90-44e3-ea11-bb43-000d3a2feca1",
-    "blocked": " ",
-    "lastModifiedDateTime": "2020-08-21T07:38:44.293Z"
+    "blocked": " "
 }
 ```
 
