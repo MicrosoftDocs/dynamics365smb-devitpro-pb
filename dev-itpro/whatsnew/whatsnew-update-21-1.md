@@ -25,9 +25,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 - [Auto-Save as you work:](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work) due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management
 - [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
 - [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
-- Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint (link coming soon)
-- Use multiline text fields with Word mail merge (link coming soon)
-- Sync users based on environments security group (link coming soon)
+- [Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-sharepoint-module-system-application-build-integrations-between-business-central-sharepoint) 
+- [Use multiline text fields with Word mail merge](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-multiline-text-fields-word-mail-merge)
+- [Sync users based on environments security group](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/sync-users-based-environments-security-group)
 
 
 ## Localization updates
