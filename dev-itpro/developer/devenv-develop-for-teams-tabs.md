@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 10/27/2022
+ms.date: 11/18/2022
 ms.custom: bap-template
 ---
 
@@ -21,6 +21,9 @@ To learn about how users can add Business Central tabs in the Teams client, see 
 Microsoft Teams is part of the [Microsoft REST Graph API](/graph/overview), which allows apps to connect to Teams and create resources like channels, chats, and tabs. Using the Graph API, you can add Business Central tabs to new or existing channels and chats in Teams. Together with the Business Central app for Teams, you can set up a Teams environment complete with teams, channels, and Business Central tabs&mdash;without requiring users to do anything extra.
 
 To add a Business Central tab to a channel or chat, you send a POST request to either the [channel tab](/graph/api/channel-post-tabs) or [chat tab](/graph/api/chat-post-tabs?tabs=http) endpoint.
+
+> [!IMPORTANT]
+> The user identity that runs the code must have access to the Business Central app for Teams for the POST request to succeed. To increase the reliability of your code, you can add the app to the Team channel or chat before adding the tab.
 
 ### For channels
 
@@ -102,7 +105,7 @@ This example illustrates how you can add a team, channel, and Business Central t
     4. Select **Run Query**.
 
         If successful, you get an **Accepted - 202** message.
-    5. In the **Response headers**, get the ID of the new team from the `"locaton"` entry: 
+    5. In the **Response headers**, get the ID of the new team from the `"location"` entry: 
 
         ```http
         "location": "/teams('734c3798-b644-4b50-8f42-b3d56b6d1e35')/operations('df79c928-7cae-4d3f-8584-016d01dcfc56')",
@@ -134,13 +137,38 @@ The next step is to create a channel using the [channels](/graph/api/channel-pos
 4. Select **Run Query**.
 
     If successful, you get an **Created - 201** message.
-5. In the **Response headers**, get the ID of the new team from the `"locaton"` entry: 
+5. In the **Response headers**, get the ID of the new team from the `"location"` entry: 
 
     ```http
     "location": "https://teamsgraph.teams.microsoft.com/v1.0/teams('734c3798-b644-4b50-8f42-b3d56b6d1e35')/channels('19:7f4bae394f7c479a921c679123aa8e7c@thread.tacv2')",
     ```
 
     In this case, `19:7f4bae394f7c479a921c679123aa8e7c@thread.tacv2`.
+
+### Install the Business Central app for Teams
+
+Complete this step if the Business Central app isn't already installed for the team. The app must be installed in the team, otherwise you'll get an error when you try to add the tab.
+
+1. Start a new query, set the method to **Post** and add the following endpoint URL:
+
+    ```http
+    https://graph.microsoft.com/v1.0/teams/734c3798-b644-4b50-8f42-b3d56b6d1e35/installedApps
+    ```
+
+    For more information about this endpoint, go to [Post app in team](/graph/api/team-post-installedapps).
+
+2. Go to the **Modify permissions** tab and consent to required permissions.
+3. In the **Request body**, add the following:
+
+    ```json
+    {
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/84c2de91-84e8-4bbf-b15d-9ef33245ad29"
+    }
+    ```
+
+4. Select **Run Query**.
+
+    If successful, you get an **Created - 201** message.
 
 ### Add tab
 
@@ -170,7 +198,7 @@ The final step is to add a Business Central tab to the channel by using the [tab
 4. Select **Run Query**.
 
     If successful, you get an **Created - 201** message.
-5. In the **Response headers**, get the ID of the new team from the `"locaton"` entry: 
+5. In the **Response headers**, get the ID of the new team from the `"location"` entry: 
 
     ```http
     "location": "https://teamsgraph.teams.microsoft.com/v1.0/teams('734c3798-b644-4b50-8f42-b3d56b6d1e35')/channels('19:7f4bae394f7c479a921c679123aa8e7c@thread.tacv2')",
