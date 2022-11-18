@@ -37,7 +37,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 |United States | IRS 1096 Form | Form 1096 is used to transmit paper forms 1097, 1098, 1099, 3921, 3922, 5498, and W-2G to the IRS. Business Central users can now run the Form 1096 report and send it to the IRS if this is required for them. Because Business Central reports only Form 1099, the new Form 1096 is related only to any already transmitted 1099 paper forms. |
 | Belgium | Vendor Name as a column in EB Payment Journal | Vendor Name now exists in Belgium local EB Payment Journal, the same as in W1 Payment Journal feature.|
 | W1 | Services Declarations [BE] F01DGS Declaration | Belgian authorities require reporting for exporting services to the other EU countries and this includes the F01DGS form for Belgium. Even primarily required for Belgium market, this feature is available as an extension and can be used in all countries. Reporting is configurable, so it won't have a hard-coded format for export. It works with the Items (Type=Service), Resources, and Item Charges as services in both purchase and sales documents.|
-
+| United States | IRS 1099 | All IRS 1099 form printouts are updated accordingly with 2022 requirements. When users open the 1099 Form Boxes page, they will see the notification about update to 2022 release. They can schedule an upgrade and when it is finished, new reports will be available for usage.|
+| The Netherlands | Electronic Tax Declaration Setup | Previously used hardcoded endpoints for electronic tax declaration have been moved to the setup under the new “Endpoints” tab, so users now can configure endpoints manually. It will be deployed to 21.1 tenants. But for them, the upgrade would not be executed, and they will see all the values blank. But Digipoort solution still would work and take the hardcoded values if there are no values in the setup. For 21.2 the system will automatically run an upgrade.|
 
 
 
