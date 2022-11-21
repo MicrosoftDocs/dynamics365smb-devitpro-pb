@@ -23,6 +23,8 @@ The GitHub repository includes source code for the tools, and we welcome contrib
 
 ## Tools in the toolkit
 
+[!INCLUDE [help-toolkit-deprecate](../includes/help-toolkit-deprecate.md)]
+
 The toolkit is available at [https://github.com/microsoft/dynamics365smb-custom-help](https://github.com/microsoft/dynamics365smb-custom-help). The repo contains the following tools as well as the source code for the tools:
 
 - HtmlFromRepoGenerator tool

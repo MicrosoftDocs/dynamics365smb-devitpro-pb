@@ -106,8 +106,6 @@
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
-#### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
-#### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
 #### [Extend and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)

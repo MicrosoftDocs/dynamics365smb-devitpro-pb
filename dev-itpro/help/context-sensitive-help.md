@@ -39,10 +39,10 @@ If your app only supports a limited number of locales, you can specify that as w
   ],
 ```
 
-The *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the links to the Help for page objects in this app must go to the *mysite.com* site, but that the site only supports those two languages. All other Help calls from objects in this app will go to the default locale on the specified webserver,  in this case the equivalent of `https://mysite.com/en-GB/documentation/my-feature`.  
+The *contextSensitiveHelpUrl* and *supportedLocales* properties specify that the links to the Help for page objects in this app must go to the *mysite.com* site, but that the site only supports those two languages. All other Help calls from objects in this app will go to the default locale on the specified webserver, in this case the equivalent of `https://mysite.com/en-GB/documentation/my-feature`.  
 
 > [!TIP]
-> For tips and tricks for how to deploy content to your own website, see the [Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/configure-help.md) and the [Custom Help Toolkit](custom-help-toolkit.md) articles.
+> For tips and tricks for how to deploy content to your own website, see the [Configuring the Help Experience for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/configure-help.md).
 
 Help calls for Microsoft objects will continue to go to the *learn.microsoft.com* site.  
 
@@ -90,7 +90,7 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
 }
 ```
 
-You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct Help calls from multiple page objects or actions to the same article. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.    
+You can use the [ContextSensitiveHelpPage property](../developer/properties/devenv-contextsensitivehelppage-property.md) to direct Help calls from multiple page objects or actions to the same article. For example, Microsoft has chosen to group the context-sensitive links depending on the granularity of the Help for specific area in the base application. If the Help for a specific area is made more granular, then the context-sensitive Help mapping is updated accordingly.
 
 Your target website is expected to have a default page that will display if no other page is appropriate. For every page where *ContextSensitiveHelpPage* is not set, this default Help page will be shown.  
 
