@@ -55,7 +55,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
 - Excel layout samples: [aka.ms/BCExcelSamples](https://aka.ms/BCExcelSamples)
 - Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
-- [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPI](https://aka.ms/BCPI) 
+- [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI) 
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
  
