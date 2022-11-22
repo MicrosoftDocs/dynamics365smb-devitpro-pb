@@ -15,8 +15,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Hot topics  
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
--
--
+- [Watch the Business Central Launch Event](https://aka.ms/BCLE)
+- 
 
 ## What’s new 
 
@@ -24,6 +24,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
+- Discover what's new for partners in the Business Central newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
 - Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
