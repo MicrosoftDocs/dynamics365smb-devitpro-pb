@@ -15,6 +15,8 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Hot topics  
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+-
+-
 
 ## What’s new 
 
