@@ -13,6 +13,9 @@ ms.author: solsen
 
 Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
+## Hot topics  
+- [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+
 ## What’s new 
 
 - [!INCLUDE [prod_short](../includes/prod_short.md)] release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
