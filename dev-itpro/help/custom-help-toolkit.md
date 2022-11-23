@@ -27,15 +27,9 @@ The GitHub repository includes source code for the tools, and we welcome contrib
 
 The toolkit is available at [https://github.com/microsoft/dynamics365smb-custom-help](https://github.com/microsoft/dynamics365smb-custom-help). The repo contains the following tools as well as the source code for the tools:
 
-- HtmlFromRepoGenerator tool
-
-    For more information, see [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
 - Dynamics NAV field Help conversion scripts
 
     For more information, see [Custom Help Toolkit: The FieldTopicTextExtractor tool](custom-help-toolkit-FieldTopicTextExtractor.md)
-- HtmlLocaleChanger tool
-
-    For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
 
 ## Custom Help
 

@@ -21,7 +21,7 @@ The [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) 
 
 <!--This is about customizing, and we want to focus on contributions. Leaving the para but commenting it out as a placeholder for an update when DevRel provides HTML files as downloads for on-prem or private cloud instances. 
 
-Alternatively, if you customize the Microsoft content based on Markdown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub. --> 
+Alternatively, if you customize the Microsoft content based on Markdown, you can use scripts to get the current version. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. Learn more at [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub. --> 
 
 > [!TIP]
 > You do not have to get acquainted with GitHub if you just want to get the Microsoft content in HTML format to deploy to a website, for example. You do not even have to get a GitHub account, as shown in the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, in many scenarios, you might want to join us in GitHub for closer collaboration and easier extensibility.
@@ -32,17 +32,17 @@ If you fork one of our repos, you can choose to update your fork with regular up
 
 Guidance about what the Microsoft-provided content for [!INCLUDE [prod_short](../developer/includes/prod_short.md)] is all about is available at [User Assistance Model](../user-assistance.md).  
 
-The remaining sections of this article are intended for people who do **not** use the [Custom Help Toolkit](custom-help-toolkit.md) - and for the curious. See the following table to find what you want to learn more about.  
+The following table lists some of the key subjects that you should know about.  
 
 |To learn more about this subject|Go to this section |
 |--------------------------------|------------------|
 |Files and subfolders in the GitHub repos| [What the GitHub repos contain](#what-the-github-repos-contain) |
-|How to interact with the GitHub repos without using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool |[Get updates from Microsoft](#get-updates-from-microsoft) |
+|How to interact with the GitHub repos |[Get updates from Microsoft](#get-updates-from-microsoft) |
 |The mechanics of working in GitHub based on our internal contributor guide|  [Get started with GitHub](#get-started-with-github) |
 |How you can contribute to Microsoft's content| [Contributing](#contributing)|
 |Forking a repo| [Get the content without a GitHub account](#get-the-content-without-a-github-account)|
 |Generating content for your website|[Build HTML files](#build-html-files)|
-|Potential problems you might see when you customize Microsoft's content| [Known issues with Microsoft's content](#known-issues-with-microsofts-content) |
+|Potential problems you might have when you customize Microsoft's content| [Known issues with Microsoft's content](#known-issues-with-microsofts-content) |
 |Using the Dynamics 365 Translation Service to manage translations| [Translate the content](#translate-the-content) |
 
 ### What the GitHub repos contain
@@ -51,7 +51,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 
 - archive
 
-    In the source repo only, contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
+    In the source repo only, this folder contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
 - business-central
 
     Contains Markdown files with content that is relevant for business users, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
@@ -158,7 +158,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 For publishing to your own website, use any third-party tool that can clone a repo and generate the corresponding HTML files.  
 
-Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting Markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
+Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting Markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos.  
 
 > [!TIP]
 > You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file from [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
@@ -187,21 +187,11 @@ Alternatively, you can create your own tooling and processes around [DocFx](http
 
     For example, in the globalMetadata section, set the ROBOTS property. [!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
-3. If you have cloned a localization repo such as [dynamics365smb-docs-pr.da-dk](https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.da-dk), you must also clone the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo and copy the content of the \business-central\media\ folder.
+3. Go to your desktop and open a command prompt.
 
-    The localization repos only contain the files that are translated into the relevant languages. Microsoft does not translate all illustrations; therefore, the localization repos do not contain the many untranslated images, screenshots, and other illustrations. If you build a localization repo as-is, then the HTML files will have broken links to the missing illustrations.
+4. Go to the docfx installation folder.
 
-    In the sample script described above, the following command copies the media folder:
-
-    ```powershell
-    Copy-Item $($365docs + "\business-central\media") $($langDir + $language + "\business-central") -Recurse -Force
-    ```
-
-4. Go to your desktop and open a command prompt.
-
-5. Go to the docfx installation folder.
-
-6. Run the equivalent of the following command:
+5. Run the equivalent of the following command:
 
     ```powershell
     docfx "c:\GitHub\MSFT\dynamics365smb-docs\business-central\docfx.json"
@@ -238,16 +228,9 @@ If you deploy Microsoft's content to a website, your tools or your users will re
 
 We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the learn.microsoft.com site to manage redirection when a file is deprecated. For example, if you get an error that *"finance-how-to-set-up-sepa-direct-debit.md does not exist"*, then you can see in the `.openpublishing.redirection.json` file that the article has been deprecated and replaced by *finance-collect-payments-with-sepa-direct-debit.md*. You can replace the link in the file that is looking for *finance-how-to-set-up-sepa-direct-debit.md* to link to *finance-collect-payments-with-sepa-direct-debit.md* instead.  
 
-> [!TIP]
-> Use the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool to manage this for you.
-
 ### ToC.xml for Help Server is different from the TOC.md file
 
 Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, [it was deprecated in 2021 release wave 1](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-). As a result, it contains links that are broken, as described in the [Broken links](#broken-links) section.  
-
-### Translated content is not available
-
-Microsoft creates content in English (US) that then gets translated into the Microsoft-provided target languages. The translations are available in the relevant localization repos within a few weeks.  
 
 ## Translate the content
 
@@ -317,9 +300,7 @@ To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by usin
 [Business Central User Assistance Model](../user-assistance.md)  
 [Configuring the Help Experience](../deployment/configure-help.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
-[Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
 [Custom Help Toolkit: The FieldTopicTextExtractor tool](custom-help-toolkit-FieldTopicTextExtractor.md)  
-[Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)  
 [Authoring Guide](writing-guide.md)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
