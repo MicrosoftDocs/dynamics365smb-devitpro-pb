@@ -4,11 +4,13 @@ description: This article describes the HtmlFromRepoGenerator tool in the custom
 
 author: edupont04
 ms.topic: conceptual
-ms.date: 09/20/2021
+ms.date: 11/18/2022
 ms.author: edupont
 ---
 
 # Custom Help Toolkit: The HtmlFromRepoGenerator tool
+
+[!INCLUDE [help-toolkit-deprecate](../includes/help-toolkit-deprecate.md)]
 
 The custom help toolkit includes the **HtmlFromRepoGenerator** tool that gets Microsoft's content in MarkDown files and converts it to HTML files. You can then deploy the HTML files to a website.  
 
