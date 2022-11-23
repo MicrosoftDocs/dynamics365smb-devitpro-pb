@@ -106,8 +106,6 @@
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
-#### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
-#### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
 #### [Extend and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
@@ -1219,9 +1217,6 @@
 #### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-<!-- Shopify -->
-## Integrating with Shopify
-### [Training Scenarios for Integrating with Shopify](administration/admin-shopify-connector.md)
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
