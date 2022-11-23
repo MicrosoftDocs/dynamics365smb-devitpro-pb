@@ -7,7 +7,7 @@ metadata:
   title: AL for Business Central developer documentation
   description: AL for Business Central developer documentation
   ms.topic: landing-page # Required
-  ms.date: 09/28/2022
+  ms.date: 11/23/2022
 
 landingContent:
 # Card
@@ -20,7 +20,7 @@ landingContent:
           - text: Get started with AL
             url: devenv-get-started.md
           - text: Learn AL through learning paths and modules
-            url: https://docs.microsoft.com/en-us/users/baglearn-5620/collections/d82ki43w52m1m4
+            url: /users/baglearn-5620/collections/d82ki43w52m1m4
       - linkListType: video
         links:
           - text: AL hacks and insights
@@ -50,7 +50,7 @@ landingContent:
             url: devenv-codeunit-object.md
       - linkListType: concept
         links:
-          - text: Type system
+          - text: Data types
             url: methods-auto/library.md
           - text: Tables and data
             url: devenv-tables-overview.md
@@ -69,7 +69,7 @@ landingContent:
           - text: Creating a table
             url: devenv-table-object.md#table-example            
           - text: Creating a report
-            url: devenv-walktrough-designing-reports-multiple-tables.md
+            url: devenv-walkthrough-designing-reports-multiple-tables.md
           - text: Extending a report
             url: devenv-report-ext-example.md
           - text: Testing an application
@@ -78,8 +78,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Programming concepts
-            url: devenv-system-defined-variables.md
+          - text: Extending
+            url: /dynamics365/business-central/application
+          - text: Extension lifecycle
+            url: devenv-ext-dev-lifecycle-overview.md
       - linkListType: concept
         links:
           - text: Data types
