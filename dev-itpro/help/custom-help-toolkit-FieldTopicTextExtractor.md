@@ -52,7 +52,6 @@ For example, the **No** field from the **Customer** table appears in several pag
 ## See also
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
-[Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  
 [Migrate Legacy Help to the Business Central Format](../upgrade/migrate-help.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

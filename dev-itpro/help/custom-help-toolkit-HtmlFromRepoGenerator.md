@@ -4,15 +4,17 @@ description: This article describes the HtmlFromRepoGenerator tool in the custom
 
 author: edupont04
 ms.topic: conceptual
-ms.date: 09/20/2021
+ms.date: 11/18/2022
 ms.author: edupont
 ---
 
 # Custom Help Toolkit: The HtmlFromRepoGenerator tool
 
+[!INCLUDE [help-toolkit-deprecate](../includes/help-toolkit-deprecate.md)]
+
 The custom help toolkit includes the **HtmlFromRepoGenerator** tool that gets Microsoft's content in MarkDown files and converts it to HTML files. You can then deploy the HTML files to a website.  
 
-The HtmlFromRepoGenerator tool is a wrapper around the [DocFx](https://dotnet.github.io/docfx/) component that Microsoft uses to generate HTML files for the Docs.microsoft.com site. You can write your own scripts around this component, and maybe you already have that in place. If you don't, then the HtmlFromRepoGenerator tool can help you get started. Run the tool from a command prompt, use the examples as inspiration but remember to update the paths to suit your configuration.  
+The HtmlFromRepoGenerator tool is a wrapper around the [DocFx](https://dotnet.github.io/docfx/) component that Microsoft uses to generate HTML files for the learn.microsoft.com site. You can write your own scripts around this component, and maybe you already have that in place. If you don't, then the HtmlFromRepoGenerator tool can help you get started. Run the tool from a command prompt, use the examples as inspiration but remember to update the paths to suit your configuration.  
 
 ## <a name="htmltool"></a>Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files
 
@@ -32,7 +34,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly
 
-    The en-US repo includes files that are required for building the various localized versions, including the very important docfx.json file that sets the output location and certain metadata settings, some of which are important for the Docs.microsoft.com site only. For more information, see [Get content from the GitHub repos](contributor-guide.md#get-content-from-the-github-repos).  
+    The en-US repo includes files that are required for building the various localized versions, including the very important docfx.json file that sets the output location and certain metadata settings, some of which are important for the learn.microsoft.com site only. For more information, see [Get content from the GitHub repos](contributor-guide.md#get-content-from-the-github-repos).  
 
 ### Syntax
 

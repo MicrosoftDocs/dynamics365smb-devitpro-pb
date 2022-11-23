@@ -11,7 +11,11 @@ ms.date: 04/01/2021
 ---
 # Application Access Management API
 
-As a **Delegated Tenant Admin**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
+As a **Delegated Global Administrator** or as a **Delegated Dynamics 365 Administrator**, you can manage access to application families available in the service. The application family is [!INCLUDE[prod_short](../developer/includes/prod_short.md)] or [!INCLUDE[embedapp](../developer/includes/embedapp.md)] applications that may be provisioned through the service. 
+
+> [!NOTE]
+> This API endpoint can only be used by Delegated Users. Service-to-service authentication using an AAD App authorized in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] is not supported.
+
 
 You can get the list of applications that are available to the customer tenant. From this list you can determine, by setting the access property, for which applications an environment may be created on the tenant.
 
@@ -20,7 +24,7 @@ You can get the list of applications that are available to the customer tenant. 
 Returns a list of manageable applications by family and country code.
 
 ```
-GET /admin/v2.3/manageableapplications
+GET /admin/v2.15/manageableapplications
 ```
 
 #### Response
@@ -54,7 +58,7 @@ Pass the application family name in the URL and a boolean in the body.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.3/manageableapplications/{applicationFamily}/countries/{countryCode}
+PUT /admin/v2.15/manageableapplications/{applicationFamily}/countries/{countryCode}
 ```
 
 #### Route Parameters

@@ -37,6 +37,11 @@ From both the **Configuration Worksheet** page and the **Configuration Package**
 
 - If the same mappings are defined directly for a field and in the related table, but have different new values, the mapping that is defined directly for the field takes priority over the mapping that is defined for the table that the field is referencing.  
 
+> [!IMPORTANT]
+> Use RapidStart configuration packages only when setting up a company for the first time. Configuration packages aren't intended to be used for companies that are already in production. Using configuration packages to import large amounts of data can impact performance and prevent all users from using Business Central during the process.
+>
+> For companies that are in production, we strongly recommend that you use an XMLport to import and export data. Learn more at [XMLport Overview](../developer/devenv-xmlport-overview.md).  
+
 ### Import data from Excel
 
 Use your configuration questionnaires and templates to map the existing data to [!INCLUDE [prod_short](../includes/prod_short.md)] in Excel. Especially, make sure you capture master data about customers, items, vendors, and the general ledger.  

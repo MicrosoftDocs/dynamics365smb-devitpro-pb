@@ -2,7 +2,7 @@
 title: "Actions Overview"
 description: Displaying actions on the action bar for pages in Business Central.
 ms.custom: na
-ms.date: 09/12/2022
+ms.date: 10/01/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -38,7 +38,6 @@ For more information about actions used on the role center page, see [Designing 
  
 ## Types of Actions
 
-=======
 > [!TIP]  
 > If you used to work in [!INCLUDE[dyn_nav_md](includes/dyn_nav_md.md)], you can get an overview of the mapping between actions in the [Differences in the Development Environments](devenv-differences.md#pages) topic.
 
@@ -47,7 +46,11 @@ Each page has a different set of actions depending on the page type, and the pro
 Each process in an organization has several actions associated with it. You should try to create a full set of actions that mirror all tasks and processes that are performed.  
   
 For example, the Sales Orders list page at CRONUS International contains all actions related to processing sales orders. During user configuration and personalization, some of these actions may be hidden or promoted to the ribbon. Therefore, you must create a full set of actions for the customer. 
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
  
+
 Pages can have the following actions as described in each section below.  
   
 ## Actions menu
@@ -120,7 +123,7 @@ The Home menu is always displayed first so promoted actions provide quick access
 
 [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, it's possible to define page actions that trigger a Power Automate instant flow by using custom actions. Custom actions are defined next to other actions, but use the `customaction` keyword instead. The syntax is as follows:
 
 ```al
 customaction(MyFlowAction)
@@ -132,6 +135,11 @@ customaction(MyFlowAction)
 ```
 
 For a `customaction`, the [CustomActionType Property](properties/devenv-customactiontype-property.md) must be set to `Flow`. The [FlowId Property](properties/devenv-flowid-property.md) and the [FlowEnvironmentId Property](properties/devenv-flowenvironmentid-property.md) must specify the IDs of the flow and the environment of the flow. These properties make up the target flow identity, allowing the client to trigger the flow when the custom action is invoked.
+
+> [!TIP]
+> You can get the flow and environment IDs in Power Automate. Sign in to [Power Automate](https://powerautomate.com) and open the flow for editing. Then, get the environment ID and flow ID from the URL in the browser address, which has a format like: `https://make.powerautomate.com/environments/<environment ID>/flows/<environment ID>`.
+
+To learn more about Power Automate flows with Business Central, see [Power Automate Integration Overview](../powerplatform/power-automate-overview.md). 
 
 ## Grouping Actions in Submenus
 

@@ -1,9 +1,9 @@
 ---
-title: "CodeCop Warning AA0241"
+title: "CodeCop Hidden AA0241"
 description: "Use all lowercase letters for reserved language keywords."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Warning AA0241
+# CodeCop Hidden AA0241
 Use all lowercase letters for reserved language keywords.
 
 ## Description
@@ -46,11 +46,11 @@ VAR
 trigger OnValidate()
 begin
     if "Order Date" > "Starting Date" then
-       Error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
+       error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
 end;
 
 var
-    Text007: Label '%1 cannot be greater than %2.';
+    Text007: label '%1 cannot be greater than %2.';
 
 ```
 

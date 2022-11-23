@@ -1,22 +1,42 @@
 ---
-title: Known Issues with On-premises
+title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.custom: na
-ms.date: 10/07/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.date: 10/11/2022
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
+ms.custom: bap-template 
 ---
 
-# Some Known Issues in [!INCLUDE[prod long](../developer/includes/prod_long.md)] On-premises
+# Some Known Issues in Business Central On-premises
 
 This article describes some known issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions. These issues can impact installation, upgrade, and various operations of [!INCLUDE[prod short](../developer/includes/prod_short.md)] on-premises.
 
 > [!NOTE]
 > The article doesn't include a complete list of known issues. Instead, it addresses some common issues that you might experience or might consider when upgrading to a version. If you're aware of issues that aren't in this article, or you'd like more help, see [Resources for Help and Support](../help-and-support.md).
+
+## Web server components fatal error during installation on Azure virtual machine (VM)
+
+<!-- hhttps://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/445272/-->
+
+> Applies to: Version 20 and 21 
+
+### Problem
+
+When you try to install the [!INCLUDE[webserver](../developer/includes/webserver.md)] components using setup.exe on a Azure VM running Windows Server, the following error occurs:
+
+**Web Server Components**
+
+**Fatal error during installation**
+
+### Possible cause
+
+This error will typically occur on a VM where the [!INCLUDE[webserver](../developer/includes/webserver.md)] hasn't been installed before. It happens because setup is trying to install Windows Server Hosting and Microsoft .NET Core Runtime on the VM but they're already installed, causing a conflict. 
+
+### Workaround
+
+Uninstall Windows Server Hosting and Microsoft .NET Core Runtime from the VM, then run setup.exe again.
 
 ## Users can't sign in to the web client after upgrade to 19.0
 
@@ -70,7 +90,7 @@ So if there are records in these tables, or the application includes custom code
 
 ### Workaround 
 
-Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code thats stores the non-temporary records in these base application tables to use other tables.
+Before you upgrade, either move the records to new tables or delete the records from the tables. Also, rewrite the custom application code that's stores the non-temporary records in these base application tables to use other tables.
 
 ## NavUserPassword authentication doesn't work after upgrade to version 18
 <!-- https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/398164 -->
@@ -146,7 +166,7 @@ To workaround this issue, activate the `EnableLegacyIterationCount` feature swit
 
 ### Problem
 
-When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a very heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
+When you upgrade to version 18 from an earlier major version, authentication that's based on the NavUserPassword credential type takes longer than it did in previous versions. This reason is that the password algorithm has been updated in version 18. The extra time it takes per authentication isn't noticeable to a normal user. But in a solution that has a heavy authentication load, for example from multiple and repeated web service calls, the extra time may be significant.
 
 ### Workaround
 
@@ -424,6 +444,31 @@ When you try to use the **Tenant** node in the [!INCLUDE[admintool](../developer
 ### Workaround
 
 Use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. This error is fixed in later updates.
+
+
+## Sync-NAVApp error: Parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong
+
+<!--https://dynamicssmb2.visualstudio.com/Dynamics%20SMB/_workitems/edit/374610-->
+
+> Applies to: Upgrade from 14.X 
+
+### Problem
+
+You get the following error when running Sync-NAVApp cmdlet on the base application:
+
+```powershell
+Sync-NAVApp : The following SQL error was unexpected:
+
+Either the parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong.
+
+Either the parameter @objname is ambiguous or the claimed @objtype (INDEX) is wrong.
+
+Caution: Changing any part of an object name could break scripts and stored procedures.
+```
+
+### Workaround
+
+This occurs when a key fails to get renamed. To fix the problem, identify the key that fails to get renamed, for example, by using the event log or SQL profiler. Then, disable the key by using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].
 
 ## See Also
 

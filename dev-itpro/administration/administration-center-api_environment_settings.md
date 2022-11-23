@@ -19,7 +19,7 @@ Allows you to manage environment-specific settings such as the AppInsights key o
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -58,7 +58,7 @@ Returns the environment's update settings, or "null" if none exist
 Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
 
 ```
-GET /admin/v2.13/applications/settings/timezones
+GET /admin/v2.15/applications/settings/timezones
 ```
  
 ### Response
@@ -86,7 +86,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -165,7 +165,7 @@ Sets the key an environment uses for Azure AppInsights.
 
 ```
 Content-Type: application/json
-POST /admin/v2.13/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
@@ -199,7 +199,7 @@ POST /admin/v2.13/applications/{applicationFamily}/environments/{environmentName
 Gets the Azure AD group currently assigned to an environment.
 
 ```
-GET /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -238,7 +238,7 @@ Assigns an Azure AD group to an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -266,7 +266,7 @@ Returns 200 if successful, or 404 if the group doesn't exist in Azure AD.
 Clears an Azure AD group that is currently assigned to an environment.
 
 ```
-DELETE /admin/v2.8/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+DELETE /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -275,8 +275,61 @@ DELETE /admin/v2.8/applications/{applicationFamily}/environments/{environmentNam
 
 `environmentName` - Name of the targeted environment
 
+## Get access with Microsoft 365 licenses
+
+**INTRODUCED IN:** API version 2.12
+
+Returns a boolean value that indicates whether the environment allows access with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
+
+```
+GET /admin/v2.12/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+```
+
+### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+### Response
+
+```
+{
+  "enabled": true/false
+}
+```
+
+## Set access with Microsoft 365 licenses
+
+**INTRODUCED IN:** API version 2.12
+
+Specifies whether users can access the environment with Microsoft 365 licenses. Supported on environments of version 21.1 or later. Learn more at [Set Up Access with Microsoft 365 licenses](/dynamics365/business-central/admin-access-with-m365-license).
+
+```
+Content-Type: application/json
+POST https://api.businesscentral.dynamics.com/admin/v2.12/applications/{applicationFamily}/environments/{environmentName}/settings/accesswithm365licenses
+```
+
+### Route Parameters
+
+`applicationFamily` - Family of the environment's application (for example, "BusinessCentral")
+
+`environmentName` - Name of the targeted environment
+
+### Body
+
+```
+{ 
+   "enabled": "true" 
+} 
+```
+
+### Response
+
+Returns 200 if successful.
+
 ## See Also
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)  

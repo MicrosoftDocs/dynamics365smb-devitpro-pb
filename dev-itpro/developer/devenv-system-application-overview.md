@@ -31,6 +31,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md)|
 |Azure AD User Management|Provides functionality for managing Azure Active Directory users.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User%20Management/README.md)|
 |Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User/README.md)|
+|Azure Functions|Provides functionality for connecting to Azure Functions and gathering data about the success of calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Azure Functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)|
 |Azure Key Vault|Stores Azure Key Vault secrets for deployments.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Key%20Vault/README.md)|
 |BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)|
 |Base64 Convert|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64%20Convert/README.md)|

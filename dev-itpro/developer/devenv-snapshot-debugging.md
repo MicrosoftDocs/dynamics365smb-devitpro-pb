@@ -129,9 +129,11 @@ Once a snapshot debugging session starts in Visual Studio Code, code execution w
 
 The user can set breakpoints and continue execution to these breakpoints for testing because a snappoint is what carries the real information, so a line can be hit. 
 
-[!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+### Viewing executed code
 
-During snapshot debugging playback, the left-side code editor gutter contains a vertical visual bar to indicate which code was executed in the snapshot capture. The color of the gutter bar can be controlled using the new *al.snapshotDebuggerLinesHitDecoration* in the settings.json file. For more information, see [JSON Files](devenv-json-files.md).
+> [!INCLUDE [2022_releasewave2](../includes/2022_releasewave2.md)]
+
+During snapshot debugging playback, the left-side code editor gutter contains a vertical visual bar to indicate which code was executed in the snapshot capture. The color of the gutter bar can be controlled using the *al.snapshotDebuggerLinesHitDecoration* in the settings.json file. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
 
 
 ## Snapshot debugging the built-in codeunit triggers

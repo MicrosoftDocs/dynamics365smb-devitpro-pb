@@ -3,7 +3,8 @@
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Business Central on Microsoft Learn](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
+### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
+### [Business Central on Microsoft Training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Scenarios for Contoso Coffeee Demo Data](/dynamics365/business-central/contoso-coffee/contoso-coffee-intro?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -65,12 +66,14 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
-### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
-### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
-### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
-### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
+### [Update 21.1](whatsnew/whatsnew-update-21-1.md)
 ### Updates for earlier major versions
+#### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
+#### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
+#### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
+#### [Update 20.3](whatsnew/whatsnew-update-20-3.md)
+#### [Update 20.2](whatsnew/whatsnew-update-20-2.md)
+#### [Update 20.1](whatsnew/whatsnew-update-20-1.md)
 #### [Update 19.5](whatsnew/whatsnew-update-19-5.md)
 #### [Update 19.4](whatsnew/whatsnew-update-19-4.md)
 #### [Update 19.3](whatsnew/whatsnew-update-19-3.md)
@@ -103,10 +106,8 @@
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
-#### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
-#### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
-#### [Extend, Customize, and Collaborate on the Help](help/contributor-guide.md)
+#### [Extend and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
 #### [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
 <!--### Resources for a developer
@@ -137,6 +138,7 @@
 ## Admin center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
+### [Manage access](administration/tenant-admin-center-manage-access.md)
 ### [Manage apps](administration/tenant-admin-center-manage-apps.md)
 ### [Manage capacity](administration/tenant-admin-center-capacity.md)
 ### [Manage notifications](administration/tenant-admin-center-notifications.md)
@@ -151,6 +153,7 @@
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
 #### [App Management](administration/administration-center-api_app_management.md)
+#### [Authorized Azure AD Apps](administration/administration-center-api_authorizedaadapps.md)
 #### [Available Applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
 #### [Environment Database Export](administration/administration-center-api_environment_database_export.md)
@@ -195,8 +198,11 @@
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
-### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
-### [Use Power BI to analyze telemetry](administration/telemetry-power-bi-app.md)
+### [Enable Telemetry](administration/telemetry-enable-application-insights.md)
+### [Control Telemetry Cost](administration/telemetry-control-cost.md)
+### [Analyze Telemetry with Power BI](administration/telemetry-power-bi-app.md)
+### [Analyze Telemetry with KQL](administration/telemetry-analyze-with-kql.md)
+### [Alert on Telemetry](administration/telemetry-alert.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
@@ -221,6 +227,7 @@
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
+#### [Profile Configuration Telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
 #### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
 #### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
@@ -376,7 +383,7 @@
 ## [Development Overview](developer/devenv-dev-overview.md)
 ## Get Started
 ### [Get Started with AL](developer/devenv-get-started.md)
-### [Building Your First Sample Extension With Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
+### [Building Your First Sample Extension with Extension Objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
 ### [AL Formatter](developer/devenv-al-formatter.md)
@@ -466,7 +473,7 @@
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
 
 ## AL Language
-### [A tour of the AL language](developer/devenv-programming-in-al.md)
+### [A Tour of the AL language](developer/devenv-programming-in-al.md)
 ### [FAQ for AL Developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks
@@ -569,7 +576,6 @@
 ##### Permission Set
 ###### [Permissionset](developer/devenv-permissionset-object.md)
 ###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
-###### [Inherent Permissions](developer/devenv-inherent-permissions.md)
 ##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
 ##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
 
@@ -618,6 +624,7 @@
 ###### [Retrieving Date Data](developer/devenv-query-retrieve-date-data.md)
 ###### [Using Queries Instead of Record Variables](developer/devenv-query-using-instead-record-variables.md)
 ###### [Accessing Columns of a Query Dataset](developer/devenv-query-accessing-columns.md)
+#### [Tranferring Data](developer/devenv-data-transfer.md)
 #### Importing and Exporting data
 ##### [XMLport Overview](developer/devenv-xmlport-overview.md)
 ##### [XMLport Object](developer/devenv-xmlport-object.md)
@@ -661,6 +668,7 @@
 ###### [Designing List Parts](developer/devenv-designing-listparts.md)
 ###### [Designing Card Parts](developer/devenv-designing-cardparts.md)
 ###### [Designing Headline Parts](developer/devenv-create-role-center-headline.md)
+###### [Designing Power BI Report Parts](developer/devenv-power-bi-report-parts.md)
 <!-- reenable when topics have been written
 ####### [Designing pages with multiple lists](developer/devenv-designing-multilist-pages.md) 
 -->
@@ -675,9 +683,15 @@
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding Actions to a Page](developer/devenv-adding-actions-to-a-page.md)
+##### [Actions in the User Interface](developer/devenv-actions-user-interface.md)
+#### Promoted Actions
 ##### [Promoted Actions](developer/devenv-promoted-actions.md)
+##### [Organizing Promoted Actions](developer/devenv-organizing-promoted-actions.md)
+##### [Common Promoted Action Groups](developer/devenv-common-promoted-action-groups.md)
+#### Modern Action Bar
+##### [Action Bar Improvements](developer/devenv-action-bar-improvements.md)
 ##### [Behavioral Changes for Promoted Actions](developer/devenv-promoted-actions-behavioral-changes.md)
-
+##### [Pages with Action Bar Improvements](developer/devenv-pages-action-bar-improvements.md)
 #### Profiles
 ##### [Designing Profiles](developer/devenv-design-profiles.md)
 ##### [Profile Object](developer/devenv-profile-object.md)
@@ -695,6 +709,15 @@
 ##### [Differences and Limitations When Developing Pages for the Mobile App](developer/devenv-differences-and-limitations-developing-pages-business-central-mobile-app.md)  
 ##### [Opening the Business Central Tablet or Phone Client from a Browser](developer/devenv-opening-business-central-tablet-or-phone-client-from-browser.md)
 ##### [Example: Developing a Sales Rep Role Center for the Tablet Client](developer/devenv-walkthrough-developing-sales-rep-rolecenter-business-central-tablet-client.md)   
+
+### Permissions and Permission Sets
+#### [Overview](developer/devenv-entitlements-and-permissionsets-overview.md)
+#### [Composing Permission Sets](developer/devenv-permissionset-composing.md)
+#### [Permissionset Object](developer/devenv-permissionset-object.md)
+#### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
+#### [Permissions on Database Objects](developer/devenv-permissions-on-database-objects.md)
+#### [Inherent Permissions](developer/devenv-inherent-permissions.md)
+#### [Exporting Permission Sets to XML](developer/devenv-export-permission-sets.md)
 
 ### [Events](developer/devenv-events-in-al.md)
 #### [Event Types](developer/devenv-event-types.md)
@@ -823,6 +846,7 @@
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
 ### Using the System Application
 #### [Overview of the System Application](developer/devenv-system-application-overview.md)
+#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### Creating New Modules in the System Application
 ##### [Module Architecture](developer/devenv-blueprint.md)
 ##### [Get Started with Modules](developer/devenv-getting-started.md)
@@ -869,6 +893,7 @@
 
 ## Extensibility
 ### Extending the Base Application
+#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
 #### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
 #### [Extending Application Areas](developer/devenv-extending-application-areas.md)
@@ -895,6 +920,8 @@
 ### Developing Client Add-ins 
 #### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
 #### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
+
+### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
@@ -1026,7 +1053,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating Printer and Report Payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-#### [Trounbleshooting Performance Issues](performance/performance-overview.md)
+#### [Troubleshooting Performance Issues](performance/performance-overview.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
@@ -1164,12 +1191,14 @@
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
-### [Set Up Automated Workflows](powerplatform/automate-workflows.md)
-### [Instant Flows](powerplatform/instant-flows.md)
+### [Power Automate Integration Overview](powerplatform/power-automate-overview.md)
+### [Set Up Power Automate Integration](powerplatform/power-automate-setup.md)
+### [Set Up Automated Flows](powerplatform/automate-workflows.md)
+### [Set Up Instant Flows](powerplatform/instant-flows.md)
 ### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report Parts to Pages](developer\devenv-power-bi-report-parts.md)
+### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
 <!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
@@ -1182,7 +1211,10 @@
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
-### [Extending Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [Extend Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### Tabs
+#### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
+#### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Shopify -->
