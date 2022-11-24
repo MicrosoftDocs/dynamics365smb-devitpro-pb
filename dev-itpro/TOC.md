@@ -1215,6 +1215,7 @@
 ### Tabs
 #### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
 #### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
+### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
