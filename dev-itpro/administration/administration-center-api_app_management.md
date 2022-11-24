@@ -36,7 +36,7 @@ By setting this parameter to `true`, you accept the following terms:
 -->
 ### Required In-Product Permissions for Installing and Uninstalling Apps
 
-To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized AAD App:
+To use the `install` and `uninstall` endpoints, you must have the following permission sets assigned to your Business Central user account or authorized Azure AAD App:
 
 |Business Central version|Permission set|
 |------------------------|---------------|
@@ -85,7 +85,7 @@ POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName
 >
 > **I give Microsoft permission to use or share my account information so that the provider or Microsoft can contact me regarding this product and related products and Microsoft may share contact, usage, and transactional information for support, billing, and other transactional activities. I agree to the provider's terms of use and privacy policy<sup>2</sup> and understand that the rights to use this product do not come from Microsoft, unless Microsoft is the provider. Use of AppSource is governed by separate [terms](https://azure.microsoft.com/support/legal/marketplace-terms/) and [privacy](https://privacy.microsoft.com/privacystatement).** 
 
-<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if can't find this information, contact the provider.
+<sup>2</sup> You should be able to find the terms of use and privacy policy from the app's download page on AppSource. Links to these documents are typically under **Details + Support** > **Legal**. Or, if you can't find this information, contact the provider.
 
 ### Response
 
@@ -368,8 +368,57 @@ Returns the list of app update operations for the specified app.
 }
 ```
 
+## Create alerts using Azure Logic Apps and Power Automate
+
+[Azure Logic Apps](/azure/logic-apps/logic-apps-overview) and [Power Automate](https://powerautomate.microsoft.com) have built-in connectors that can be used to query the admin center API by using HTTP and service-to-service (S2S) authentication. Use this capability to set up custom notifications or to automate certain actions.
+
+> [!NOTE]
+> Samples of custom notifications and automations are shared by Microsoft and third parties in the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your Application Insights alerts and automations with the community on GitHub.
+
+The sample below can help getting started with alerting in Microsoft Teams when app updates are available for an environment. When updates are available, an adaptive card will be created in a Teams channel, which allows for the automation of app updates by using S2S authentication that targets the admin center API.
+
+### Example - Run a recurrent alerting API query that sends a Teams notification when app updates are available
+
+This Logic App runs a specified number of times a day (parameter in deployment pipeline) and lists all app updates made available for selected environment (parameter in deployment pipeline).
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentAppUpdateAdaptiveCard.json)
+
+### Prerequisites
+
+Business Central admin center API is configured for S2S authentication of Azure active Directory (Azure AD) apps. For more information, go to [Authenticate using service-to-service AAD Apps](administration-center-api.md#authenticate-using-service-to-service-aad-apps-client-credentials-flow).
+
+### Preparation
+
+You'll need the following information about Business Central and your Teams service to deploy the Logic App:
+
+|Service|Information|
+|-|-|
+|Business Central|<ul><li>The Azure Active Directory (AD) tenant ID for Business Central</li><li>The application (client) ID of the registered application in Azure used for S2S authentication</li><li>The client secret of the registered application in Azure used for S2S authentication</li></ul>|
+|Teams|<ul><li>The group ID of the team in Teams that you want to send the alerts to</li><li>The ID of the channel in Teams that you want to send the alerts to</li></ul> |
+
+> [!IMPORTANT]
+> Deploying a Logic App to Azure also creates the API connection resources necessary to authenticate certain actions in the Logic Apps. In this example, the deployment will create a connection resource for the Teams API.
+>
+> If you already have an API connection resource for Teams in your resource group, you can reuse the existing connection resource by providing its name during deployment.
+
+### Deploy the Logic App
+
+1. Select the **Deploy to Azure** button above and sign in to Azure portal when prompted.
+
+2. Fill in the required fields on the **Custom deployment** page.
+
+   In the **Teams Connection Name** field, specify a name for the new connection resource to be added for the Teams API. If you want to reuse the existing connection resource for the Teams API, entering the name of the existing connection resource.
+
+3. Select **Review + create** to complete the deployment.
+
+4. When deployment is done, authorize the connection to Teams API using your Teams credentials:
+
+    1. Select **Go to resource group**.
+    2. Select the resource for the Teams API connection to open it.
+    3. Select **Edit API connection** > **Authorize**, then sign in with your credentials.
+
 ## See Also
 
 [The Business Central Administration Center API](administration-center-api.md)  
 [Manage Apps](tenant-admin-center-manage-apps.md)  
-[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md) 
+[Microsoft Dynamics 365 Business Central Server Administration Tool](administration-tool.md)  
