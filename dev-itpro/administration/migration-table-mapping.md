@@ -74,11 +74,13 @@ Follow these steps if you need multiple table mappings.
 1. On the **Migration Table Mapping** page, select **Add Table Mappings**.  
 2. On the **Add Migrate Table Mappings** page, in the **Source Table** section, enter the table name in the **Name** field.
 
-   It's best to enter the full name as it appears in SQL Management Studio.
+   It's best to enter the full name as it appears in SQL Management Studio as in the following example: 
 
-   |C/AL table |AL table example|
-   |-|-|
-   |`[CRONUS COMPANY$ABC My Custom Table]`|[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]<br><br>The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app.|
+   C/AL table: `[CRONUS COMPANY$ABC My Custom Table]`
+
+   AL table: `[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]`
+
+   The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app.
 
 3. To set the target table, go to the **Target Table** section and set the **Type** to **Table** or **Extension**.
 
