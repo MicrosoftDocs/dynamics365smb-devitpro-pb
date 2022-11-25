@@ -44,7 +44,7 @@ For example, suppose the Business Central on-premises table is named **My Custom
 
 The following figure illustrates an example of the **Migrate Table Mappings** page for an AL table:
 
-[![Shows the table mapping move for a AL table](../developer/media/table-mapping-move-al.png)](../developer/media/table-mapping-move-al.png#lightbox)
+[![Shows the table mapping move for a AL table](../media/table-mapping-move-al.png)](../media/table-mapping-move-al.png#lightbox)
 
 ## Move a set of fields out of the main table to another table or table extension
 
@@ -65,7 +65,7 @@ Fields to be moved to a table extension must have the same name and type as in t
 
 The following figure illustrates an example of the **Migrate Table Mappings** page for a C/AL table:
 
-[![Shows the table mapping move for a C/AL table](../developer/media/table-mapping-move-cal.png)](../developer/media/table-mapping-move-cal.png#lightbox) 
+[![Shows the table mapping move for a C/AL table](../media/table-mapping-move-cal.png)](../media/table-mapping-move-cal.png#lightbox) 
 
 ## Add multiple table mappings
 
@@ -88,7 +88,7 @@ Follow these steps if you need multiple table mappings.
    The following figure illustrates an example of the **Add Migrate Table Mappings** page:
 
 
-   [![Shows the table mapping multiple tables](../developer/media/table-mapping-multiple.png)](../developer/media/table-mapping-multiple.png#lightbox) 
+   [![Shows the table mapping multiple tables](../media/table-mapping-multiple.png)](../media/table-mapping-multiple.png#lightbox) 
 
 5. Close the page.
 
