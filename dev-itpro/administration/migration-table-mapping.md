@@ -41,6 +41,10 @@ For example, suppose the Business Central on-premises table is named **My Custom
    |Table Name|Set to the table in the extension. Setting these three fields specifies the target table.|
    |Source Table Name|Enter the full name as it appears in SQL. The system will parse the values. <br /><br />C/AL table example: `[CRONUS COMPANY$ABC My Custom Table]` <br /><br />AL table example: `[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]`. The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app. |
 
+The following figure illustrates an example of the **Migrate Table Mappings** page for an AL table:
+
+[![Shows the table mapping move for a AL table](../developer/media/table-mapping-move-al.png)](../developer/media/table-mapping-move-al.png#lightbox)
+
 ## Scenario 2 - Move a set of fields out of the main table to another table or table extension
 
 > [!NOTE]
@@ -58,12 +62,17 @@ Fields to be moved to a table extension must have the same name and type as in t
 
 2. If you're moving a table that is per-database table, clear the **Data Per Company** check box.
 
+The following figure illustrates an example of the **Migrate Table Mappings** page for a C/AL table:
+
+[![Shows the table mapping move for a C/AL table](../developer/media/table-mapping-move-cal.png)](../developer/media/table-mapping-move-cal.png#lightbox) 
+
+
 ## Add multiple table mappings
 
 Follow these steps if you need multiple table mappings.
 
 1. On the **Migration Table Mapping** page, select **Add Table Mappings**.  
-2. In the first tab, under **Source Table**, enter the source table name.
+2. On the **Add Migrate Table Mappings** page, in the **Source Table** section, enter the table name in the **Name** field.
 
    It's best to enter the full name as it appears in SQL Management Studio.
 
@@ -71,9 +80,19 @@ Follow these steps if you need multiple table mappings.
    |-|-|
    |`[CRONUS COMPANY$ABC My Custom Table]`|[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]<br><br>The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app.|
 
-3. For the target table, set the **Target Table Type** to **Table** or **Extension**. You can filter the list by selecting extension name.
-4. Select all rows that you want to map to this table.
-5. After closing the page, the multiple table mappings will be inserted. This step is useful when you want to split a single source table into multiple table extensions.
+3. To set the target table, go to the **Target Table** section and set the **Type** to **Table** or **Extension**.
+
+    The list shows all the tables that are available for mapping to the target table. You can filter the list by setting an extension in the **Extension Name** field.
+4. Select all rows that you want to map to the target table.
+
+   The following figure illustrates an example of the **Add Migrate Table Mappings** page:
+
+
+   [![Shows the table mapping multiple tables](../developer/media/table-mapping-multiple.png)](../developer/media/table-mapping-multiple.png#lightbox) 
+
+5. Close the page. 
+
+   After closing the page, the multiple table mappings will be inserted. This step is useful when you want to split a single source table into multiple table extensions.
 
 ## Provide table mappings programmatically
 
