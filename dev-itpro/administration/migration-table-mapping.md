@@ -17,13 +17,13 @@ Migration table mapping can be used to rename the table during the cloud migrati
 > [!TIP]
 > You can use the **Import** and **Export** actions to import or export the definition done in the UI.
 
-## Scenario 1 - Rename the table during the cloud migration
+## Rename the table during the cloud migration
 
 This scenario supports adding the prefix or changing the table name during cloud migration.
 
 For example, suppose the Business Central on-premises table is named **My Custom Table**. But in Business Central online, the name needs to be prefixed (or suffixed) with 3 letters, so the table name is **ABC My Custom Table**.
 
-### Prerequisite
+### Prerequisites
 
 - The keys in on-premises table and online table must match.
 - The online target table must have the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md) set to `true`.
@@ -46,7 +46,7 @@ The following figure illustrates an example of the **Migrate Table Mappings** pa
 
 [![Shows the table mapping move for a AL table](../developer/media/table-mapping-move-al.png)](../developer/media/table-mapping-move-al.png#lightbox)
 
-## Scenario 2 - Move a set of fields out of the main table to another table or table extension
+## Move a set of fields out of the main table to another table or table extension
 
 > [!NOTE]
 > This type of table mapping is only supported for cloud migrations from Business Central. Dynamics GP and SL don't support table extensions.
@@ -90,7 +90,7 @@ Follow these steps if you need multiple table mappings.
 
    [![Shows the table mapping multiple tables](../developer/media/table-mapping-multiple.png)](../developer/media/table-mapping-multiple.png#lightbox) 
 
-5. Close the page. 
+5. Close the page.
 
    After closing the page, the multiple table mappings will be inserted. This step is useful when you want to split a single source table into multiple table extensions.
 
