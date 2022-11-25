@@ -38,7 +38,7 @@ To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Busi
 
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
 
-### App on Environment Telemetry
+### App on App Telemetry
 To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
