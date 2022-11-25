@@ -101,3 +101,7 @@ Follow these steps if you need multiple table mappings.
 We recommend that you provide the table mappings programmatically. To do table mappings programmatically, subscribe to `OnInsertDefaultTableMappings` event from codeunit 4001 "Hybrid Cloud Management".
 
 Table mappings will be inserted after the setup wizard is completed or if you run the **Restore Default Mappings** from **Migration Table Mapping** page.
+
+## See also
+
+[Migrate Data](migrate-data.md)  
