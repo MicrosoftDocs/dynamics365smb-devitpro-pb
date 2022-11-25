@@ -33,7 +33,7 @@ For example, suppose the Business Central on-premises table is named **My Custom
 1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
 2. Search for and open the **Cloud Migration Management** page.
 3. Select **Manage Custom Tables** to open the **Migration Table Mapping** page.
-4. Set the following columns:
+4. Set the following fields:
 
    |Fields|Value|
    |-|-|
