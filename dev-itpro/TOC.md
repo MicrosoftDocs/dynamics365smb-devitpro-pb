@@ -372,6 +372,7 @@
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
+### [Migration Table Mapping](administration/migration-table-mapping.md)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
 ### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
