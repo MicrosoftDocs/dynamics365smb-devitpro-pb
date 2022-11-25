@@ -27,7 +27,7 @@ For example, suppose the Business Central on-premises table is named **My Custom
 - The keys in on-premises table and online table must match.
 - The online target table must have the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md) set to `true`.
 
-### Create the table mapping
+### Create the table mapping for renaming
 
 1. Sign in to [Business Cental online](https://businesscentral.dynamics.com).
 2. Search for and open the **Cloud Migration Management** page.
@@ -56,7 +56,7 @@ For example, suppose that you've added two custom fields to the **Customer** tab
 
 Fields to be moved to a table extension must have the same name and type as in the source table in the Business Central. If the name is different, the fields will be ignored by the engine, and won't be moved to Business Central online.
 
-### Create the table mapping
+### Create the table mapping for moving fields
 
 1. To create the table mapping, follow the same steps as in Scenario 1, except set the **Target Table Type** to **Table Extension**. 
 
@@ -65,7 +65,6 @@ Fields to be moved to a table extension must have the same name and type as in t
 The following figure illustrates an example of the **Migrate Table Mappings** page for a C/AL table:
 
 [![Shows the table mapping move for a C/AL table](../developer/media/table-mapping-move-cal.png)](../developer/media/table-mapping-move-cal.png#lightbox) 
-
 
 ## Add multiple table mappings
 
