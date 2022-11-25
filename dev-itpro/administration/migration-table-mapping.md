@@ -38,7 +38,7 @@ For example, suppose the Business Central on-premises table is named **My Custom
    |Fields|Value|
    |-|-|
    |Target Type| **Table**|
-   |Extension Names|Set to the name of the extension that contains the table |
+   |Extension Names|Set to the name of the extension that contains the table. |
    |Table Name|Set to the table in the extension. Setting these three fields specifies the target table.|
    |Source Table Name|Enter the full name as it appears in SQL. The system will parse the values. <br /><br />C/AL table example: `[CRONUS COMPANY$ABC My Custom Table]` <br /><br />AL table example: `[CRONUS COMPANY$ABC My Custom Table$437dbf0e-84ff-417a-965d-ed2bb9650972]`. The GUID `437dbf0e-84ff-417a-965d-ed2bb9650972` is the extension ID, which in this case is for base app. |
 
@@ -74,7 +74,7 @@ Follow these steps if you need multiple table mappings.
 1. On the **Migration Table Mapping** page, select **Add Table Mappings**.  
 2. On the **Add Migrate Table Mappings** page, in the **Source Table** section, enter the table name in the **Name** field.
 
-   It's best to enter the full name as it appears in SQL Management Studio as in the following example: 
+   It's best to enter the full name as it appears in SQL Management Studio as in the following examples: 
 
    C/AL table: `[CRONUS COMPANY$ABC My Custom Table]`
 
