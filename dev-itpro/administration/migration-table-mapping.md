@@ -1,20 +1,21 @@
 ---
-title: How-to article template #Required; page title displayed in search results. Don't enclose in quotation marks.
-description: How-to description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.service: dynamics-365 #Required; per approved Microsoft taxonomy (https://taxonomy.docs.microsoft.com/TaxonomyServiceAdminPage/#/taxonomy/detail/2022-04-07T09:00:02.5587920Z!a892accc-6925-4c06-8723-fb5e30ba7ca3/product).
-ms.topic: how-to #Required; don't change.
+title: Migration Table Mapping
+description: Learn how to use migration table mapping to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
+author: jswymer 
+ms.author: jswymer 
+ms.reviewer: jswymer 
+ms.service: dynamics365-business-central
+ms.topic: how-to
 ms.date: 11/25/2022
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 
 # Migration Table Mapping
 
-Migration Table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
+Migration table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
 
-Tip – You can use the Import/Export action to import or export the definition done in the UI.
+> [!TIP]
+> You can use the **Import** and **Export** actions to import or export the definition done in the UI.
 
 ## Scenario 1 - Rename the table during the cloud migration
 
