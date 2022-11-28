@@ -15,8 +15,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Before you start
-            url: devenv-dev-overview.md
+          - text: aka.ms/bcall
+            url: aka.ms/bcall
           - text: Get started with AL
             url: devenv-get-started.md
           - text: Learn AL through learning paths and modules
