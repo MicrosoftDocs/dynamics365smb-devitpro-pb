@@ -12,11 +12,11 @@ ms.custom: bac-template
 ---
 # Alert on Telemetry
 
-If something happens in your environment or app that you need to act on, you can set up a system that sends you an alert. Azure Application Insights makes it easy to define such alerts.
+If something happens in your environment or app that you need to act on, you can set up a system that sends you an alert. [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] makes it easy to define such alerts.
 
 You can use the following tools to define and set up alerts on telemetry events:
 
-- Azure Application Insights Alerts
+- [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] Alerts
 - Azure Logic Apps
 - Power Automate
 
@@ -34,7 +34,7 @@ When defining an alert based on telemetry, you need to define two things:
 
 ## Create alerts in Azure Application Insights
 
-If you want to create alerts in Azure Application Insights, then do as follows:
+If you want to create alerts in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then do as follows:
 
 1. Open the [Azure portal](https://portal.azure.com) and locate your Application Insights resource.
 2. In the navigation pane on the left, select **Alerts**.
@@ -44,7 +44,7 @@ To read more about Azure Monitor alerts, go to [Azure Application Insights](/azu
 
 ## Create alerts using Azure Logic Apps and Power Automate
 
-Azure Logic Apps and Power Automate have built-in connectors to query telemetry in Application Insights for setting up custom notifications or automating certain actions that are triggered by an environment's lifecycle event.
+Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for setting up custom notifications or automating certain actions that are triggered by an environment's lifecycle event.
 
 > [!NOTE]
 > Samples of custom notifications and automations are shared by Microsoft and third parties on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your Application Insights Alerts and Automations with the community on GitHub.
@@ -54,7 +54,7 @@ The samples below can help getting started with customization and automation usi
 > [!IMPORTANT]
 > Deploying a Logic App to Azure also creates the API Connection Resources necessary to authenticate certain actions in the Logic Apps.
 >
-> After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the Application Insights Resource in the Azure Portal.
+> After deploying the Logic App, navigate to the created API Connection Resources in the Azure Portal to authenticate them. The Application Insights API Connection Resource can be authenticated using the Application ID and an API Key. These can be found and generated on the API Access page of the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource in the Azure Portal.
 >
 > If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
 

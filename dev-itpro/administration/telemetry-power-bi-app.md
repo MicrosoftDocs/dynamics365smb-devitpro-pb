@@ -5,7 +5,7 @@ author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/17/2022
+ms.date: 11/28/2022
 ms.author: jswymer
 ms.custom: bac-template
 ms.service: dynamics365-business-central
@@ -38,7 +38,7 @@ To open the app, from the navigation pane, select **Apps** > **Dynamics 365 Busi
 
 By default, the app shows sample data in the reports. This sample data enables you to demo the app to prospective customers without having to show data from existing customers.
 
-### App on Environment Telemetry
+### App on App Telemetry
 To install or update the app for _app telemetry_, go to [https://aka.ms/bctelemetry-isv-app](https://aka.ms/bctelemetry-isv-app) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
@@ -79,7 +79,7 @@ After the app is installed, you can connect it to an Azure Application Insights 
 
 ## Configure an app after initial setup
 
-Once the app is installed, you can use the **Dynamics 365 Business Central Usage** workspace to change the app configuration, for example, to connect to a different Application Insights resource or change how many days back the data goes. Follow these steps:
+Once an app is installed, you can use its workspace, such as **Dynamics 365 Business Central Usage** to change the app configuration, for example, to connect to a different Application Insights resource or change how many days back the data goes. Follow these steps:
 
 1. From the navigation pane in the Power BI, select **Workspaces** > **Dynamics 365 Business Central Usage** to open the workspace.
 2. On the **Dynamics 365 Business Central Usage** page, next to **Dataset**, select **More options (...)** > **Settings**.
@@ -97,9 +97,14 @@ Once the app is installed, you can use the **Dynamics 365 Business Central Usage
 
    Apart from required parameters, you can also control the following options:
 
-   - Azure Active Directory (Azure AD) tenant mapping (define which customer names correspond to which Azure AD tenant IDs).
+   - Azure Active Directory (Azure AD) tenant mapping (define which customer names correspond to which Azure AD tenant IDs). The format for this parameter is _{"map":[{ "AAD tenant id":"005bbe22-5949-4acb-9d24-3fb396c64a52" , "Domain":"Contoso 1" },{ "AAD tenant id":"0140d8e7-ef60-4cc3-9a6b-b89042b3ea1f" , "Domain":"Contoso 2"}]_
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
-   - The app refresh rate (the default is every night around midnight); this option is hidden under **Advanced**.
+   - If the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
+
+   For the environment app, you can also define:
+
+   - an include list of environments so that only data for these environments is loaded. The format for this parameter is _{"include":[{"AAD tenant id":"<aad tenant id 1>","Name":"<environment name 1>"}, {"AAD tenant id":"<aad tenant id 2>","Name":"<environment name 2>"}]}_
+
 4. When done making changes, you have to refresh the dataset to update the data shown in the app.
 
    A quick way is to select **Refresh now** for the dataset on the workspace.
