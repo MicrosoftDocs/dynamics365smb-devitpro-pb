@@ -3,6 +3,7 @@
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
 ### [Business Central on Microsoft Training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Business process walkthroughs](/dynamics365/business-central/walkthrough-business-process-walkthroughs?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -105,8 +106,6 @@
 #### [Configure the Help Experience](deployment/configure-help.md)
 #### [Configure Context-Sensitive Help](help/context-sensitive-help.md)
 #### [Custom Help Toolkit](help/custom-help-toolkit.md)
-#### [Custom Help Toolkit: The HtmlFromRepoGenerator tool](help/custom-help-toolkit-HtmlFromRepoGenerator.md)
-#### [Custom Help Toolkit: The HtmlLocaleChanger tool](help/custom-help-toolkit-HtmlLocaleChanger.md)
 #### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
 #### [Extend and Collaborate on the Help](help/contributor-guide.md)
 #### [Authoring Guide](help/writing-guide.md)
@@ -199,8 +198,11 @@
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
-### [Enable Application Insights](administration/telemetry-enable-application-insights.md)
-### [Use Power BI to analyze telemetry](administration/telemetry-power-bi-app.md)
+### [Enable Telemetry](administration/telemetry-enable-application-insights.md)
+### [Control Telemetry Cost](administration/telemetry-control-cost.md)
+### [Analyze Telemetry with Power BI](administration/telemetry-power-bi-app.md)
+### [Analyze Telemetry with KQL](administration/telemetry-analyze-with-kql.md)
+### [Alert on Telemetry](administration/telemetry-alert.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
@@ -1213,11 +1215,9 @@
 ### Tabs
 #### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
 #### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
+### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
-<!-- Shopify -->
-## Integrating with Shopify
-### [Training Scenarios for Integrating with Shopify](administration/admin-shopify-connector.md)
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
