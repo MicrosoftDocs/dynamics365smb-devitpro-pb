@@ -1,44 +1,37 @@
 ---
-title: "Update 21.1 for Microsoft Dynamics 365 Business Central 2022 Release Wave 2"
-description: Get an overview of new and changed capabilities in the 21.1 update of Business Central online, which is part of 2022 release wave 2.
+title: "Update 21.2 for Microsoft Dynamics 365 Business Central 2022 Release Wave 2"
+description: Get an overview of new and changed capabilities in the 21.2 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: jswymer
 ms.custom: na
-ms.date: 11/17/2022
+ms.date: 11/28/2022
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 21.1 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
+# Update 21.2 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
 
 Would you like to know what has changed in update 21.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/topic/update-21-1-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-1-48638-platform-build-21-0-48504-9c9a44f0-ae4f-4d98-82e3-a781399b3de2).
+Find an overview of hotfixes in this [article](INSERT WHEN RECEIVED).
 
 ## Feature changes
 
-- [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
--  [Embed Business Central in Teams tabs](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/embed-business-central-teams-tabs)
-- [Auto-Save as you work:](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/auto-save-as-work) due to popular demand, administrators can now choose to turn on or off the new auto-saving behaviour using Feature Management
-- [Business Central is available in 11 more countries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features#country-and-regional)
-- [Accessibility declaration for Italy available](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/accessibility-declaration-italy)
-- [Use SharePoint Connector module in System Application to build integration between Business Central and Sharepoint](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-sharepoint-module-system-application-build-integrations-between-business-central-sharepoint) 
-- [Use multiline text fields with Word mail merge](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-multiline-text-fields-word-mail-merge)
-- [Sync users based on environments security group](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/sync-users-based-environments-security-group)
+- Use default attachments in email sent from Business Central  
+- Easily comply with email sending limits through email throttling
 
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|United States | IRS 1096 Form | Form 1096 is used to transmit paper forms 1097, 1098, 1099, 3921, 3922, 5498, and W-2G to the IRS. Business Central users can now run the Form 1096 report and send it to the IRS if this is required for them. Because Business Central reports only Form 1099, the new Form 1096 is related only to any already transmitted 1099 paper forms. |
-| Belgium | Vendor Name as a column in EB Payment Journal | Vendor Name now exists in Belgium local EB Payment Journal, the same as in W1 Payment Journal feature.|
-| W1 | Services Declarations [BE] F01DGS Declaration | Belgian authorities require reporting for exporting services to the other EU countries and this includes the F01DGS form for Belgium. Even primarily required for Belgium market, this feature is available as an extension and can be used in all countries. Reporting is configurable, so it won't have a hard-coded format for export. It works with the Items (Type=Service), Resources, and Item Charges as services in both purchase and sales documents.|
-| United States | IRS 1099 | All IRS 1099 form printouts are updated accordingly with 2022 requirements. When users open the 1099 Form Boxes page, they will see the notification about update to 2022 release. They can schedule an upgrade and when it is finished, new reports will be available for usage.|
-| The Netherlands | Electronic Tax Declaration Setup | Previously used hardcoded endpoints for electronic tax declaration have been moved to the setup under the new “Endpoints” tab, so users now can configure endpoints manually. It will be deployed to 21.1 tenants. But for them, the upgrade would not be executed, and they will see all the values blank. But Digipoort solution still would work and take the hardcoded values if there are no values in the setup. For 21.2 the system will automatically run an upgrade.|
+|XX | XX | XX. |
+| XX | XX | XX.|
+| XX | XX | XX.|
+
 
 
 
@@ -46,7 +39,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 2 (release from October 2022 through  March 2022), find the link to the release plan [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features).
 
-## Upgrade to 21.1
+## Upgrade to 21.2
 
 Please note that new customers will automatically get the latest builds of Business Central (21.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
@@ -54,7 +47,7 @@ Please note that new customers will automatically get the latest builds of Busin
 
 **You can still watch the Business Central Launch Event recordings**  
 
-We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
+We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for the following topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
 
 **Business Central at Ignite**  
 At the Microsoft Ignite event on October 12, we unveiled new and exciting collaboration features for SMBs that usher in a new era for collaborative applications. Check out the announcements in the [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2022-book-of-news/#a-312-microsoft-teams-customers-to-receive-access-to-business-central-data-at-no-extra-cost) and [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/10/12/live-from-microsoft-ignite-2022-introducing-new-ai-automation-and-collaboration-capabilities-for-dynamics-365/) to learn how our customers can leverage 2022 release wave 2 to work smarter, increase team performance, and quickly adapt their digital collaborative spaces to make data-driven decisions.
