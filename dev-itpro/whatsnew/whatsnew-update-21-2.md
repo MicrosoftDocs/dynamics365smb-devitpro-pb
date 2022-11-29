@@ -28,7 +28,6 @@ Find an overview of hotfixes in this [article](INSERT WHEN RECEIVED).
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| United States | IRS 1096 Form | Form 1096 is used to transmit paper tax forms to the IRS in United States. This feature enables running the Form 1096 report in Dynamics 365 Business Central and sending it to the IRS if this is required, and it is related only to already transmitted 1099 paper forms. Form 1096 features is created as an extension. |
 | United States | IRS 1099 Form Update for 2022 | With this release, Form 1099 in the United States has been updated to fulfill 2022 year requirements for reporting to IRS.|
 | Mexico | Extending CFDI with foreign trade | With new release Business Central will include the information to fill the foreign trade details in the file, which is mandatory by the SAT if a customer performs an export to a foreign country.|
 | France | Service Declaration (DES) | In some France, authorities require reporting for exporting services to the other EU countries. This feature enables collecting EU service’s intertrade and its reporting to the authorities. This feature is named as Service Declaration or DES, and with this release it is enabled in France. Service Declaration is created as an extension.|
