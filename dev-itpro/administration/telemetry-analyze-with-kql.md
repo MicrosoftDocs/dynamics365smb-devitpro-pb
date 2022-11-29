@@ -12,7 +12,7 @@ ms.custom: bac-template
 ---
 # Analyze and Monitor Telemetry with KQL
 
-Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in Azure Application Insights in the  tables *traces* and *pageViews*. The language used to query data in Azure Application Insights is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
+Telemetry from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is stored in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] in the tables *traces* and *pageViews*. The language used to query data in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is _Kusto Query Language_ (KQL). This article has information and links to resources to get started learning about the KQL language.
 As a simple example, follow these steps:
   
 1. In the Azure portal, open your Application Insights resource.
@@ -58,6 +58,13 @@ You can write and execute KQL in various tools. For example:
 * In a Jupyter notebook hosted in Visual Studio Code (with the Python and Jupyter Notebooks extensions installed).
 * Application Insights portal (Under **Logs** in the **Monitoring** menu).
 * PowerShell (using the REST api). For an example, go to [PowerShell samples](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Powershell).
+
+### <a name="customdimensions"></a>About custom dimensions
+
+Each event has a `customDimensions` column that includes a set of dimensions containing metrics specific to the event. Each of these custom dimensions has a limit of 8000 characters. When logging an event with a dimension exceeding 8000 characters, the  [!INCLUDE[server](../developer/includes/server.md)] adds more overflow dimension keys to the event to contain the excess characters. There can be up to two extra overflow dimension keys, each with a maximum 8000 characters. The overflow dimension keys are named  `<dimension_key_name>_1` and `<dimension_key_name>_2`, where `<dimension_key>` is the name of the original dimension key. So if the custom dimension key is `extensionCompilationDependencyList`, then the overflow dimension keys would be `extensionCompilationDependencyList_1` and `extensionCompilationDependencyList_2`.
+
+> [!NOTE]
+> The 8000 character limit is governed by the [Application Insights API](/azure/azure-monitor/app/api-custom-events-metrics#limits).
 
 ## See also
 
