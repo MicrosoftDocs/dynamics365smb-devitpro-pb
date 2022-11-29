@@ -60,7 +60,7 @@ In December and January, we will be hosting the following calls, which you can a
 
 - **December 13:** Troubleshooting performance problems
 - **January 17:**  Exporting your Dynamics 365 Business Central data to the Azure Data Lake Storage
-- **January 24:** Onboarding customers to your apps
+- **January 24:** Onboarding your customers to Business Central
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
