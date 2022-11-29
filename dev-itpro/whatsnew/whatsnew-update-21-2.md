@@ -28,12 +28,11 @@ Find an overview of hotfixes in this [article](INSERT WHEN RECEIVED).
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-|XX | XX | XX. |
-| XX | XX | XX.|
-| XX | XX | XX.|
-
-
-
+| United States | IRS 1096 Form | Form 1096 is used to transmit paper tax forms to the IRS in United States. This feature enables running the Form 1096 report in Dynamics 365 Business Central and sending it to the IRS if this is required, and it is related only to already transmitted 1099 paper forms. Form 1096 features is created as an extension. |
+| United States | IRS 1099 Form Update for 2022 | With this release, Form 1099 in the United States has been updated to fulfill 2022 year requirements for reporting to IRS.|
+| Mexico | Extending CFDI with foreign trade | With new release Business Central will include the information to fill the foreign trade details in the file, which is mandatory by the SAT if a customer performs an export to a foreign country.|
+| France | Service Declaration (DES) | In some France, authorities require reporting for exporting services to the other EU countries. This feature enables collecting EU service’s intertrade and its reporting to the authorities. This feature is named as Service Declaration or DES, and with this release it is enabled in France. Service Declaration is created as an extension.|
+| The Netherlands | Added configuration for Electronic Tax Declaration | Setup is extended so now users have the endpoints setup under the new “Endpoints” tab instead of hardcoded endpoints. This change also includes an upgrade Codeunit that fills the value in this setup for the existing tenants.|
 
 ## Release Plan
 
@@ -49,8 +48,6 @@ Please note that new customers will automatically get the latest builds of Busin
 
 We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for the following topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
 
-**Business Central at Ignite**  
-At the Microsoft Ignite event on October 12, we unveiled new and exciting collaboration features for SMBs that usher in a new era for collaborative applications. Check out the announcements in the [Microsoft Ignite Book of News](https://news.microsoft.com/ignite-2022-book-of-news/#a-312-microsoft-teams-customers-to-receive-access-to-business-central-data-at-no-extra-cost) and [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/bdm/2022/10/12/live-from-microsoft-ignite-2022-introducing-new-ai-automation-and-collaboration-capabilities-for-dynamics-365/) to learn how our customers can leverage 2022 release wave 2 to work smarter, increase team performance, and quickly adapt their digital collaborative spaces to make data-driven decisions.
 
 **Important: Take action before March 1 to retain your delegated admin access to your customers**  
 Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](/partner-center/announcements/2022-october#17).
@@ -60,13 +57,11 @@ New, updated 3.8.xxxx versions of the Business Central mobile app for Android an
 - iOS/iPadOS on App Store: https://go.microsoft.com/fwlink/?LinkId=734847
 - Android on Play Store: https://go.microsoft.com/fwlink/?LinkId=734849
 
-
-
 **Business Central newsletter for partners**  
-Yay! We're now doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
+Yay! We're doing quarterly newsletters for Business Central partners. Each newsletter will be a summary of relevant information related to Business Central and you'll be able to find it on [aka.ms/BCNews](https://aka.ms/BCNews).
 
 **Upcoming Business Central Office Hours Calls**  
-In November, we will be hosting the following calls, which you can already register for today:
+In December and January, we will be hosting the following calls, which you can already register for today:
 
 - **November 15:** Non-deductible and partly deductible VAT 
 - **November 22:** Access Business Central using your Microsoft 365 license
