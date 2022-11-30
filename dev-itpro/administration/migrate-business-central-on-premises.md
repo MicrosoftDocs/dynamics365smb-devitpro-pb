@@ -31,12 +31,13 @@ The migration from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] o
 
   This step starts when you choose the **Run Data Upgrade Now** action in the **Cloud Migration Management** page in [!INCLUDE [prod_short](../includes/prod_short.md)] online for the specific environment.   
 
+<!--
   > [!WARNING]
   > Depending on your specific solution, you may have to work with the upgrade tools for some time. Make sure that no one is using either the existing on-premises solution or the new online environment until the data upgrade is complete.
+-->
+  Once you have chosen this action, both the **Run Migration Now** and the **Run Data Upgrade Now** action can no longer be used for this company in the environment. If the upgrade has failed, an automatic point-in-time restore is run to revert the tenant to the point before upgrade. You can then fix the errors and try the upgrade again.<!--you must start over.--> Alternatively, you can start the cloud migration in another environment, or you can restore the current environment from a backup from a point in time before the data upgrade. Or, delete all companies in the current environment and start the migration again.
 
-  Once you have chosen this action, both the **Run Migration Now** and the **Run Data Upgrade Now** action can no longer be used for this company in the environment. If the upgrade has failed, you must start over. You can start the cloud migration in another environment, or you can restore the current environment from a backup from a point in time before the data upgrade. Alternatively, delete all companies in the current environment and start the migration again.
-
-  If you want to migrate more companies, disable the migration, and start the setup again.  
+  If you want to migrate more companies, disable the migration, and start the setup again. Or, use the **Select Companies to Migrate** action from **Cloud Migration Management** page.
 
 ## Companies and data
 
@@ -49,7 +50,10 @@ In such cases, here are our recommendations for how to manage the migration:
 
     For example, you're migrating 10 companies, but two companies include 50 GB each plus 30 GB shared data. In this example, we recommend that you migrate each of the large companies individually.
 * Be mindful of any extensions that might complicate the migration as described in the [Migrate data from extensions](#migrate-data-from-extensions) section.  
-* Check that the company names are valid. For more information, see [Company names](migration-troubleshooting.md#company-names) in the Troubleshooting article.  
+* Check that the company names are valid. For more information, see [Company names](migration-troubleshooting.md#company-names) in the Troubleshooting article. 
+* When moving many companies, use Cloud Migration APIs.
+
+  For more information, go to [Cloud Migration API Overview](/dynamics365/business-central/dev-itpro/administration/cloudmigrationapi/cloud-migration-api-overview). Find samples in the [BC Tech GitHUb repo](https://github.com/microsoft/BCTech/tree/master/samples/CloudMigration/CloudMigrationAPIScript).  
 
 ## Migrate data from extensions
 
