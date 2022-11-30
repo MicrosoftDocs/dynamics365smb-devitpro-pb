@@ -16,8 +16,8 @@ ms.author: edupont
 
 # Migrate to Business Central Online from Business Central On-premises
 
-Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution can have an identical twin in a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. Use this twin to migrate to the cloud. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
-
+<!--Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution can have an identical twin in a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. Use this twin to migrate to the cloud. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
+-->
 The end-to-end process is described [here](migrate-data.md). In this article, we talk about background information and things to take into consideration.  
 
 The migration from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises is in two separate steps:
