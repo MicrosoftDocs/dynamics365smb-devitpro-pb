@@ -30,7 +30,6 @@ In [!INCLUDE [prod_short](includes/prod_short.md)] the new action bar is enabled
 > [!NOTE]  
 > Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](analyzers/uicop-aw0013.md).
 
-
 To define promoted actions, you specify an `area(Promoted)` in the `actions` section of a page or a page extension. Inside the `area(Promoted)` section, you can specify one or more `actionref` sections. An `actionref` is an object type that references an action on the page, and by adding it in the promoted area section it's promoted in the UI. An `actionref` can only be defined in the `area(Promoted)` section. You can either create groups in the `area(Promoted)` for the `actionref` references, or you can add `actionref` sections directly. An `actionref` inherits the properties of the referenced action. For page extensions, you can add to existing groups and you can add new groups. 
 
 For more information about behavioral changes introduced with the new action bar, see [Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md).
@@ -107,7 +106,7 @@ A code action for converting pages using legacy syntax is available with [!INCLU
 
 You can promote any command from the existing actions menus to the ribbon. If there are no promoted actions, the ribbon remains hidden. To promote an action on the Home tab, you set the **Promoted** property of the action. If you want to display the action only on the Home tab, then you add an extra step to set the **PromotedOnly** property. For more information, see [Promoted Property](properties/devenv-promoted-property.md) and [PromotedOnly Property](properties/devenv-promotedonly-property.md). <!---->
 
-Promoted actions can be grouped. You can add promoted actions by different grouped categories. Typically, promoted actions are displayed in the ribbon of the role center client. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories. 
+Promoted actions can be grouped. You can add promoted actions by different grouped categories. Typically, promoted actions are displayed in the ribbon of a page. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories. 
 
 - New Document
 - Request Approval
@@ -247,7 +246,11 @@ For more examples of how to use actions, see [Page Object](devenv-page-object.md
 
 [Actions Overview](devenv-actions-overview.md)  
 [Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
-[AL Development Environment](devenv-reference-overview.md)  
-[Developing Extensions in AL](devenv-dev-overview.md)  
-[Pages Overview](devenv-pages-overview.md)  
-[Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md)
+[Behavioral Changes for Promoted Actions](devenv-promoted-actions-behavioral-changes.md)  
+[Actions in AL](devenv-actions-overview.md)  
+[Adding Actions to a Page](devenv-adding-actions-to-a-page.md)  
+[Actions in the User Interface](devenv-actions-user-interface.md)  
+[How to Promote Actions](devenv-promoted-actions.md)  
+[Organizing Promoted Actions](devenv-organizing-promoted-actions.md)  
+[Common Promoted Action Groups](devenv-common-promoted-action-groups.md)  
+[Action Bar Improvements](devenv-action-bar-improvements.md)  
