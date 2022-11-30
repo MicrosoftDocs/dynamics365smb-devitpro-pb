@@ -11,9 +11,9 @@ ms.author: solsen
 
 # Welcome to Business Central | Resources for Partners
 
-Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod_short.md)] and looking for relevant resources? Find it all in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
+Are you a Microsoft partner working with Business Central and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
-## Hot topics  
+## Hot topics right now
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 - [Watch the Business Central Launch Event](https://aka.ms/BCLE)
 - [New CSP customer promotion for Business Application. Partners should check out the new promo for new and existing legacy customers](https://aka.ms/CSPpromoNCE)
@@ -25,12 +25,11 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
 
-## What’s new 
+## Stay up to date
 - Discover what's new for partners in the Business Central newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
 - Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
-- Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 
 
 ## Social and blogs
@@ -85,6 +84,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) 
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
+- Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 
 ## Developing apps for AppSource
 
@@ -113,6 +113,6 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 
 ## Events
 
-- Directions NA: [directions.com](https://directionsna.com) 
+- Directions NA: [directionsna.com](https://directionsna.com) 
 - Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
 - Business Central TechDays: [bctechdays.com](https://bctechdays.com)
