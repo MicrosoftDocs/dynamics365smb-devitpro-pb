@@ -11,7 +11,7 @@ ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
-[//]: # (IMPORTANT:Don't edit any of the content between here and the END>DO_NOT_EDIT.)
+[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ShowAs Property
 > **Version**: _Available or changed with runtime version 10.0._
