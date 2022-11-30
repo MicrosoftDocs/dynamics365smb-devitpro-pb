@@ -56,7 +56,7 @@ enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 > [!IMPORTANT]  
 > When creating captions for enums, it's important that the caption doesn't contain a comma. Having a comma in the caption, such as `Caption = 'Diamond Level, with bonus'`, can display over multiple lines in the UI. This behavior also causes that the actual value selected by the user in the UI, doesn't correspond to the value, which is saved in the database.
 >
-> An AppSourceCop warning will be triggered if .xliff files contain commas in enum captions. For more information, see [AppSourceCop Warning AS0087](analyzers/appsourcecop-as0087.md).
+> An AppSourceCop warning will be triggered if .xlf files contain commas in enum captions. For more information, see [AppSourceCop Warning AS0087](analyzers/appsourcecop-as0087.md).
 
 ## Usage
 
