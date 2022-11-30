@@ -64,7 +64,7 @@ It is highly recommended that you test the impact of any extension in a sandbox 
 
 In order to support data migration, tables and table extensions must specify if data from that table must be migrated or not. By default, the **ReplicateData** property is set to *Yes* so that, by default, any extension that is installed in the [!INCLUDE[prod_short](../includes/prod_short.md)] online environment will have all its tables migrated.  
 
-In certain circumstances, you may want to not migrate all data. Here are a few examples:
+In certain circumstances, you may not want to migrate all data. Here are a few examples:
 
 * The extension is installed in the [!INCLUDE[prod_short](../includes/prod_short.md)] online environment but not in the [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises solution
 
@@ -75,6 +75,8 @@ In certain circumstances, you may want to not migrate all data. Here are a few e
 * The extension references a base table
 
     This can cause your base table to appear empty when you view data in your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant. If that happens, uninstall the extension from your [!INCLUDE[prod_short](../includes/prod_short.md)] online tenant, and then run the cloud migration process again.
+
+    Business Central will insert the default values and records into the table extensions automatically. If there any problems, you can use the **Repair Companion Table Records** action on the **Cloud Migration Managemnt** page to insert the missing table extension records.
 
 > [!TIP]
 > Use the **Cloud Migration Management** page to verify that data migrated correctly. [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
