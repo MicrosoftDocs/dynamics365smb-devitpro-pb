@@ -16,20 +16,22 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 ## Hot topics  
 - [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 - [Watch the Business Central Launch Event](https://aka.ms/BCLE)
-- 
+- [New CSP customer promotion for Business Application. Partners should check out the new promo for new and existing legacy customers](https://aka.ms/CSPpromoNCE)
+- [Announced at Directions EMEA: New 'Do More with Less' site on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
 
-## What’s new 
-
-- [!INCLUDE [prod_short](../includes/prod_short.md)] release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
+## Latest updates  
+- Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
-- Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
+- Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
+
+## What’s new 
 - Discover what's new for partners in the Business Central newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
 - Watch the what’s new launch event sessions: [aka.ms/BCLE](https://aka.ms/BCLE) 
 - Join the office hours calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours)
 - Find on-demand recordings of office hours calls: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings)
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
-- Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
+
 
 ## Social and blogs
 
@@ -81,6 +83,7 @@ Are you a Microsoft partner working with [!INCLUDE [prod_short](../includes/prod
 - [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
 - Maintain your app(s): [Maintain Your App](../app-maintain.md) 
 - Use the GitHub forum to post questions about Visual Studio Code and AL Language to the community and Microsoft experts: [github.com/microsoft/al/issues](https://github.com/microsoft/al/issues) 
+- Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 
 ## Developing apps for AppSource
