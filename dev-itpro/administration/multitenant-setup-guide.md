@@ -50,7 +50,7 @@ To set up the [!INCLUDE[server](../developer/includes/server.md)] instance for m
 1. Enable the **Multitenant** setting.
 2. Set the server instance to connect to the application database by changing these settings: **DatabaseServer**, **DatabaseInstance**, and **DatabaseName**.
 
-For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#multitenant) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
+For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#general) and [Connecting a Business Central Server Instance to a Database](../administration/connect-server-to-database.md).  
 
 > [!TIP]
 > Instead of doing the two previous steps, you could use the [Mount-NAVApplication cmdlet](/powershell/module/microsoft.dynamics.nav.management/Mount-NAVApplication). Running this cmdlet will enable the **Multitenant** and set up the data base connection.
