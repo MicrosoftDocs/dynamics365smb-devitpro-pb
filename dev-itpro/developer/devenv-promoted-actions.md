@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 
 You can promote actions that are used more often than others and thereby ensure quick access to them. This type of actions is called *promoted actions*. Promoted actions are set up on the Actions, Navigate, or Report menus in the action bar, but are also configured to display on the Home tab. You can, however, choose to hide them on the Actions, Navigate, or Report menus and only show them on the Home tab. 
 
-Promoted actions can be used on list, card, task, and Role Center pages to provide quick access to common tasks that appear under the Home tab. 
+Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks that appear under the Home tab. 
 
 ## Promoted actions using the actionref syntax
 
