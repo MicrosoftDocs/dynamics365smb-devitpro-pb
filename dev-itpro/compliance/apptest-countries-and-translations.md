@@ -188,7 +188,7 @@ This table gives an overview of supported languages and how application language
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
 |Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
 |Swedish (Sweden)|sv-SE|Microsoft, Available on on AppSource|
-|Turkish (Turkey)|tr-TR|Partner, Available on AppSource|
+|Turkish (Türkiye)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
 |Ukrainian (Ukraine)|uk-UA|Partner, Available on AppSource|
