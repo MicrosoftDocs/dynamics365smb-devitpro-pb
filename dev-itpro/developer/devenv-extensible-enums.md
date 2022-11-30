@@ -53,6 +53,11 @@ enumextension 50130 LoyaltyWithDiamonds extends Loyalty
 }
 ```
 
+> [!IMPORTANT]  
+> When creating captions for enums, it's important that the caption doesn't contain a comma. Having a comma in the caption, such as `Caption = 'Diamond Level, with bonus'`, can display over multiple lines in the UI. This behavior also causes that the actual value selected by the user in the UI, doesn't correspond to the value, which is saved in the database.
+>
+> An AppSourceCop warning will be triggered if .xliff files contain commas in enum captions. For more information, see [AppSourceCop Warning AS0087](analyzers/appsourcecop-as0087.md).
+
 ## Usage
 
 When referencing a defined enum from code, you use the syntax as illustrated below.
@@ -157,6 +162,7 @@ Table field options in C/SIDE have three properties to enable enum support:
 Some table fields share options that are semantically identical. In those cases, the **EnumTypeId** and **EnumTypeName** must be the same across all the fields. There's no design or runtime check for collision of IDs, but loading generated symbols, see [Running C/SIDE and AL Side-by-Side](devenv-running-cside-and-al-side-by-side.md), into the compiler will show collision errors.
 
 ### Conversions
+
 Conversion to and from `enum` is more strict than for `Options` in C/SIDE. 
 
 - An enum can be assigned/compared to an enum of the same type. 
@@ -165,6 +171,7 @@ Conversion to and from `enum` is more strict than for `Options` in C/SIDE.
 For information about assignment compatibility, see [AssignmentCompatibility Property](properties/devenv-assignmentcompatibility-property.md).
 
 ## See Also
+
 [AL Data Types](./methods-auto/library.md)  
 [TableRelation Property](properties/devenv-tablerelation-property.md)  
 [Extensible Property](properties/devenv-extensible-property.md)  
