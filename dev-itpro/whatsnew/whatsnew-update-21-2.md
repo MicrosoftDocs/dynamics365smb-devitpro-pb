@@ -43,6 +43,10 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
+**Use Service Support Administrator role to manage support requests on behalf of your customers**  
+To better support this principle and align with the expectations of our customers, especially the Business Central customers working with other Dynamics 365 products, together with the Power Platform Admin Center team we introduce support for the [Service Support Administrator role](/azure/active-directory/roles/permissions-reference#service-support-administrator) which gives access to manage support requests on the customer's behalf. If you need to log support tickets on behalf of your customers using Power Platform Admin Center, make sure you request this role in your GDAP relationship. 
+
+
 **You can still watch the Business Central Launch Event recordings**  
 We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for the following topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
 
