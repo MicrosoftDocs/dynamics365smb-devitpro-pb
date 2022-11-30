@@ -10,7 +10,7 @@ ms.date: 11/25/2022
 ms.custom: bap-template
 ---
 
-# Migration Table Mapping
+# Define Migration Table Mappings
 
 Migration table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
 
