@@ -14,10 +14,10 @@ ms.author: solsen
 Are you a Microsoft partner working with Business Central and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
-- [Watch the Business Central Launch Event](https://aka.ms/BCLE)
-- [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
-- [New CSP customer promotion for Business Application (check out the new promo for new and existing legacy customers)](https://aka.ms/CSPpromoNCE)
-- [New '_Do more with less_' page on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
+- Watch the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
+- Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+- New CSP customer promotion for Business Application. Check out the new promo for new and existing legacy customers [here](https://aka.ms/CSPpromoNCE)
+- New '_Do more with less_' page on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more. Read more [here](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
 
 ## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
