@@ -78,6 +78,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Getting support
 - Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
+- Test network connectivity for Business Central: [aka.ms/BCCP](https://aka.ms/BCCP)
 
 ## Developing for Business Central in general
 
