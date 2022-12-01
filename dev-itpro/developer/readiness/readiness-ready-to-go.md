@@ -57,15 +57,16 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Discover useful resources for partners on [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)
 
 ## Customer onboarding and resources 
-
-- Discover all [!INCLUDE [prod_short](../includes/prod_short.md)] apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
-- Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
-- Excel layout samples: [aka.ms/BCExcelSamples](https://aka.ms/BCExcelSamples)
+- Discover all Business Central apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
 - Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
-- [!INCLUDE [prod_short](../includes/prod_short.md)] and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI) 
+- Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI) 
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
- 
+
+## Reporting and Business intelligence  
+- Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
+- Excel layout samples: [aka.ms/BCExcelSamples](https://aka.ms/BCExcelSamples)
+- Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI) 
 
 ## Migrating from on-premises to cloud (online) 
 
