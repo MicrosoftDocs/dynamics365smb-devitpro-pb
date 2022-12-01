@@ -19,7 +19,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [New CSP customer promotion for Business Application. Partners should check out the new promo for new and existing legacy customers](https://aka.ms/CSPpromoNCE)
 - [Announced at Directions EMEA: New 'Do More with Less' site on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
 
-## Latest updates  
+## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
