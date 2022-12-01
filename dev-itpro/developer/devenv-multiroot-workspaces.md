@@ -38,7 +38,7 @@ The `al.packageCachePath` setting allows you to specify the path to a folder tha
 ## Making sure that your project or workspace is updated
 
 > [!NOTE]  
-> When working in a project or workspace, some operations require that you run a **Reload Window** command (**Ctrl+R**) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating certain User or Workspace settings, such as `PackageCachePath`.
+> When working in a project or workspace, some operations require that you run a **Reload Window** command (**Ctrl+R**) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
 
 
 ## See also
