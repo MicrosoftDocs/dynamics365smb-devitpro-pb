@@ -111,6 +111,15 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Security, Privacy, and Compliance
 - Security, Privacy, and Compliance documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
 
+## Licensing and Pricing  
+- [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
+- [Universal Code](https://partner.microsoft.com/en-US/resources/collection/microsoft-publisher-program#/)
+- [Business Central team members license documentation]()
+
+## Licensing and pricing on-premises only  
+- [Business Central on-premises licensing guide]()
+- [Business Central on-premises licensing FAQ]()
+
 ## Events
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Directions NA: [directionsna.com](https://directionsna.com) 
