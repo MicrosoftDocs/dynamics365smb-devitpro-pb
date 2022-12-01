@@ -51,6 +51,9 @@ To better support this principle and align with the expectations of our customer
 **You can still watch the Business Central Launch Event recordings**  
 We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for the following topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
 
+**AL-Go for GitHub version 2.2**  
+Version 2.2 of AL-Go for GitHub has been released with improved multi-project support and a few fixes in the Pull Request workflow. See what has been added and changed in the v2.2 column in [aka.ms/AlGoRoadmap].
+
 
 **Important: Take action before March 1 to retain your delegated admin access to your customers**  
 Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](/partner-center/announcements/2022-october#17).
