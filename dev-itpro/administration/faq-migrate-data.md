@@ -103,7 +103,7 @@ The following steps outline the general procedure:
    1. Sign in to [Business Central online](https://businesscentral.dynamic.com).
    2. Open the **Users** page, select **Update users from Microsoft 365** and follow the instructions.
    3. Open the **Cloud Migration Management** page and select **Define User Mappings**.
-   4. For each on-premises user, set the **Cloud User** filed to the corresponding Azure AD account.
+   4. For each on-premises user, set the **Cloud User** field to the corresponding Azure AD account.
    5. Select **OK** when done.  
 3. Go to the **Users** page and grant the users permissions in Business Central.
 
