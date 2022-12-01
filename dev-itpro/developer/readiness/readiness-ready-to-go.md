@@ -109,8 +109,8 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Analyze app telemetry data with Power BI: [aka.ms/BCTelemetry-Isv-App](https://aka.ms/BCTelemetry-isv-app) 
 
 ## Security, Privacy, and Compliance
-- Security, Privacy, and Compliance documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
-- 
+- Security and Privacy documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
+- Application compliance: [aka.ms/BCAppCompliance](https://aka.ms/BCAppCompliance)
 
 ## Licensing and Pricing  
 - [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
