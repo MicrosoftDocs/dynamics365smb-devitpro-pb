@@ -22,7 +22,7 @@ Find an overview of hotfixes in this [article](INSERT WHEN RECEIVED).
 
 - Use default attachments in email sent from Business Central  
 - Easily comply with email sending limits through email throttling
-- Move custom fields to extensions during cloud migration 
+- [Move custom fields to extensions during cloud migration](/administration/migration-table-mapping.md) 
 
 
 ## Localization updates
