@@ -91,6 +91,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Preview for next major update: [aka.ms/BCMajorUpdates](https://aka.ms/BCMajorUpdates)
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
+- Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 
 ## Developing apps for AppSource
 
