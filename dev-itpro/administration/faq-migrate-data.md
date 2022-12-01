@@ -84,18 +84,28 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 ## Will my on-premises users and permissions replicate?
 
-No. Since you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions.  
+<!-- No. Since you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions.  
 
-For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).  
+For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).-->  
 
+Not automatically. Before you run the cloud migration, you'll have to set up online user accounts in the Azure AD tenant, then map on-premises users to online user accounts and grant them permissions in Business Central. The general tasks are as follows:
 
-They need to setup the users in aad and pull the users to the SaaS manually.
+1. For each on-premises user account, create a user account in your Azure AD tenant and assign the user a Business Central license.
 
-The OnPrem users will be moved to the SaaS to a dedicated table.
+   1. Sign in to [Microsoft admin center](https://admin.microsoft.com).
+   2. In **User Management**, select **Add User** and follow the isntructions.
+   
+   For more information go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users?view=o365-worldwide).
+2. Add the online users to the Business Central online environment:
 
-They can use “Define User Mappings” from “Cloud Migration Management” page to rename records that depend on user ID for business logic. Using this page will change the Old User ID to the new User ID in relevant tables.
+   1. Sign in to Business Central online.
+   2. Open the **Users**page, select **Update users from Microsoft 365** and follow the instructions.
+   3. Open the **Cloud Migration Management** page and select **Define User Mappings**.
+   4. For each on-premises user, set the **Cloud User** filed to the corresponding Azure AD account.
+   5. Select **OK** when done.  
+3. Go to the **Users** page and grant the users permissions in Business Central.
 
-Note – not all tables will be updated. We exclude some tables from the update since they contain the large amount of data or the update of the value does not have the business logic impact (e.g. change log entries is a table that may contain large amount of data and
+   For more information, go to [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
 ## Can I view intelligent insights from cloud services in my on-premises solution?
 
