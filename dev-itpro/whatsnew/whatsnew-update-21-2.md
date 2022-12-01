@@ -20,8 +20,8 @@ Find an overview of hotfixes in this [article](INSERT WHEN RECEIVED).
 
 ## Feature changes
 
-- Use default attachments in email sent from Business Central  
-- Easily comply with email sending limits through email throttling
+- Use default attachments in email sent from Business Central (link TBA)  
+- Easily comply with email sending limits through email throttling (link TBA)
 - [Move custom fields to extensions during cloud migration](/administration/migration-table-mapping.md) 
 
 
