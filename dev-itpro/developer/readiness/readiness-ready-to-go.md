@@ -77,7 +77,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 
 ## Getting support
-
 - Managing technical support for customers: [Manage Technical Support](../../administration/manage-technical-support.md) 
 
 ## Developing for Business Central in general
