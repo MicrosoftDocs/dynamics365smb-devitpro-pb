@@ -88,13 +88,13 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).-->  
 
-Not automatically. Before you run the cloud migration, you'll have to set up online user accounts in the Azure AD tenant, then map on-premises users to online user accounts and grant them permissions in Business Central. The general tasks are as follows:
+No. Before you run the cloud migration, you'll have to set up online user accounts in the Azure AD tenant, then map on-premises users to online user accounts and grant them permissions in Business Central. The general tasks are as follows:
 
 1. For each on-premises user account, create a user account in your Azure AD tenant and assign the user a Business Central license.
 
    1. Sign in to [Microsoft admin center](https://admin.microsoft.com).
    2. In **User Management**, select **Add User** and follow the isntructions.
-   
+
    For more information go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users?view=o365-worldwide).
 2. Add the online users to the Business Central online environment:
 
