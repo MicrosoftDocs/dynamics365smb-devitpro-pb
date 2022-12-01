@@ -58,6 +58,8 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Customer onboarding and resources 
 - Discover all Business Central apps on AppSource: [aka.ms/BCAppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365-business-central)
+- Get Business Central on your mobile devices: [aka.ms/BusinessCentralApp](https://aka.ms/BusinessCentralApp)
+- Get Business Central on your desktop: [aka.ms/BCPWA](https://aka.ms/BCPWA)
 - Learn about onboarding experiences in Business Central: [aka.ms/BCOnboarding](https://aka.ms/bconboarding)
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
