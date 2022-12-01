@@ -98,8 +98,8 @@ No. Because you aren't required to configure your on-premises solution with Azur
    For more information go to [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users?view=o365-worldwide).
 2. Add the online users to the Business Central online environment:
 
-   1. Sign in to Business Central online.
-   2. Open the **Users**page, select **Update users from Microsoft 365** and follow the instructions.
+   1. Sign in to [Business Central online](https://businesscentral.dynamic.com).
+   2. Open the **Users** page, select **Update users from Microsoft 365** and follow the instructions.
    3. Open the **Cloud Migration Management** page and select **Define User Mappings**.
    4. For each on-premises user, set the **Cloud User** filed to the corresponding Azure AD account.
    5. Select **OK** when done.  
