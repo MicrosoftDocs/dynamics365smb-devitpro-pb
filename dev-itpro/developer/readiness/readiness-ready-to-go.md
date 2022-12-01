@@ -33,7 +33,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 
 ## Social and blogs
-
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
@@ -41,7 +40,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Join the Business Central development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 
 ## Partner readiness and programs
-
 - Get started as a partner (reselling [!INCLUDE [prod_short](../includes/prod_short.md)]): [aka.ms/BCReseller](https://aka.ms/BCReseller)
 - Essential partner resources (marketing material): [aka.ms/BCPartnerPortal](https://aka.ms/BCPartnerPortal)  
 - Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn) 
@@ -51,7 +49,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode) 
 
 ## Go to market 
-
 - [!INCLUDE [prod_short](../includes/prod_short.md)] homepage: [dynamics.microsoft.com/business-central/overview/](https://dynamics.microsoft.com/business-central/overview/)  
 - Try [!INCLUDE [prod_short](../includes/prod_short.md)] for free (30-day trial): [go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409](https://go.microsoft.com/fwlink/?LinkId=2143349&clcid=0x409)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] customer stories: [aka.ms/BCCustomerStories](https://aka.ms/BCCustomerStories) 
@@ -84,7 +81,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Test network connectivity for Business Central: [aka.ms/BCCP](https://aka.ms/BCCP)
 
 ## Developing for Business Central in general
-
 - Get started with developing apps: [aka.ms/BCPublisher](https://aka.ms/BCPublisher)
 - [!INCLUDE [prod_short](../includes/prod_short.md)] technology samples: [aka.ms/BCTech](https://aka.ms/BCTech)
 - Maintain your app(s): [Maintain Your App](../app-maintain.md) 
@@ -95,7 +91,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
 
 ## Developing apps for AppSource
-
 - AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
 - AppSource technical checklist: [aka.ms/CheckBeforeYouSubmit](https://aka.ms/CheckBeforeYouSubmit)
 - AppSource technical FAQ: [aka.ms/TechValidationFAQ](https://aka.ms/TechValidationFAQ) 
@@ -104,11 +99,9 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Development of a localization app: [aka.ms/BusinessCentralLocApps](https://aka.ms/businesscentrallocapps) 
 
 ## Developing customer specific solutions
-
 - Set up DevOps for your customer projects: [aka.ms/AL-Go-PTE](https://aka.ms/AL-Go-PTE)
 
 ## Telemetry and performance
-
 - App performance documentation: [aka.ms/BCPerformance](https://aka.ms/BCPerformance)
 - Telemetry documentation: [aka.ms/BCTelemetry](https://aka.ms/BCTelemetry) 
 - Telemetry samples: [aka.ms/BCTelemetrySamples](https://aka.ms/BCTelemetrySamples) 
@@ -116,7 +109,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Analyze app telemetry data with Power BI: [aka.ms/BCTelemetry-Isv-App](https://aka.ms/BCTelemetry-isv-app) 
 
 ## Security, Privacy, and Compliance
-
 - Security, Privacy, and Compliance documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
 
 ## Events
