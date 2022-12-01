@@ -62,17 +62,17 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Productivity tips: [aka.ms/BCProductivity](https://aka.ms/BCProductivity) 
 - Keyboard shortcuts: [aka.ms/BCKeys](https://aka.ms/BCKeys)
 
-## Power Platform  
-- Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
-- Business Central and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
-
 ## Reporting and Business intelligence  
 - Get started with reporting: [aka.ms/BCReporting](https://aka.ms/BCReporting)
 - Excel layout samples: [aka.ms/BCExcelSamples](https://aka.ms/BCExcelSamples)
 - Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI) 
 
-## Migrating from on-premises to cloud (online) 
+## Power Platform  
+- Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
+- Business Central and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
+- Business Central and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
 
+## Migrating from on-premises to cloud (online)  
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
 - Use migration tooling: [Migrate Data](../../administration/migrate-data.md) 
 
