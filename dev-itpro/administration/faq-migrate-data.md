@@ -88,7 +88,9 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).-->  
 
-No. Because you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions. But cloud migration does provide a way for you to easily map on-premises users to online user accounts. The following steps outline the general procedure:
+No. Because you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions. But cloud migration does provide a way for you to easily map on-premises users to online user accounts.
+
+The following steps outline the general procedure:
 
 1. For each on-premises user account, create a user account in your Azure AD tenant and assign the user a Business Central license.
 
