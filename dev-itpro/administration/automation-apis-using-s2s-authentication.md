@@ -47,8 +47,8 @@ Two main scenarios are enabled with S2S authentication:
 
     S2S authentication enables both external user and non-interactive user access to Business Central online. Refer to [license guide](https://www.microsoft.com/licensing/product-licensing/dynamics365) for scenarios and usage. An application token with the `API.ReadWrite.All` scope is needed for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs and web services.  
 
-> [!IMPORTANT]
-> When you use S2S authentication, then you cannot use the integration session to create scheduled tasks.  Job queue entries require a user ID in order to run, but S2S sessions do not include any user context.
+> [!NOTE]
+> When you use S2S authentication, you can now use the integration session to create scheduled tasks. This is supported on 21.2 and later versions of Business Central online.
 
 ## Set up service-to-service authentication
 
@@ -124,7 +124,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
 
-4. Fill in the **Description** field.
+4. Fill in the **Description** field. If this application is set up by a partner, please enter sufficient partner-identifying information, so all applications set up by this partner can be tracked in the future if necessary.
 
 5. Set the **State** to **Enabled**.
 
