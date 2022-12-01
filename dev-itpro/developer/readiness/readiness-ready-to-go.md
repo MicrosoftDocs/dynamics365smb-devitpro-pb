@@ -38,6 +38,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
+- Join the Business Central development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 
 ## Partner readiness and programs
 
