@@ -14,10 +14,10 @@ ms.author: solsen
 Are you a Microsoft partner working with Business Central and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
-- [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
 - [Watch the Business Central Launch Event](https://aka.ms/BCLE)
-- [New CSP customer promotion for Business Application. Partners should check out the new promo for new and existing legacy customers](https://aka.ms/CSPpromoNCE)
-- [Announced at Directions EMEA: New 'Do More with Less' site on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
+- [Access Business Central with your Microsoft 365 license](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
+- [New CSP customer promotion for Business Application (check out the new promo for new and existing legacy customers)](https://aka.ms/CSPpromoNCE)
+- [New 'Do More with Less' page on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
 
 ## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
@@ -119,7 +119,6 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Security, Privacy, and Compliance documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
 
 ## Events
-
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Directions NA: [directionsna.com](https://directionsna.com) 
 - Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
