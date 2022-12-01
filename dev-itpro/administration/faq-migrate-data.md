@@ -84,10 +84,11 @@ For more information, see [Managing Users and Permissions](/dynamics365/business
 
 ## Will my on-premises users and permissions replicate?
 
-<!-- No. Since you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions.  
+No. Since you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions.  
 
-For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).-->  
+For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
 
+<!-- 
 No. Because you aren't required to configure your on-premises solution with Azure Active Directory (Azure AD), we can't guarantee a mapping between on-premises users and users in your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online tenant. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online requires Azure AD accounts, and users must be manually added. All permissions must be granted in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] tenant, independent from your on-premises permissions. But cloud migration does provide a way for you to easily map on-premises users to online user accounts.
 
 The following steps outline the general procedure:
@@ -107,23 +108,28 @@ The following steps outline the general procedure:
    5. Select **OK** when done.  
 3. Go to the **Users** page and grant the users permissions in Business Central.
 
-   For more information, go to [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).
+   For more information, go to [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions).-->
 
+<!--
 ## Can I view intelligent insights from cloud services in my on-premises solution?
 
-No.  
+No.  -->
 
 ## Is the data replication only one way?
 
 Yes, data is only replicated from the on-premises solution to your Business Central online tenant for the purposes of migration. Once you start using [!INCLUDE [prod_short](../includes/prod_short.md)] online, you must stop using your on-premises solution.  
 
+<!--
 ## Why did my Role Center change after the migration?
 
-To keep the Role Center experience as clean as possible and avoid permission errors, we automatically hide actions that would generate a permission error for the user.  
+To keep the Role Center experience as clean as possible and avoid permission errors, we automatically hide actions that would generate a permission error for the user.  -->
 
 ## Should I uninstall all my Business Central extensions?
 
-Not necessarily. Most extensions will run without issues in the online environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It's a best practice to test any extension in a sandbox tenant configured for the Business Central online environment that you're connecting to.  
+<!-- Not necessarily. Most extensions will run without issues in the online environment. You may want to consider uninstalling extensions that send data to an external service to avoid potential duplicated calls to that service. It's a best practice to test any extension in a sandbox tenant configured for the Business Central online environment that you're connecting to. --> 
+
+No. But if your cloud migration includes data upgrade of a large amount of data, we recommend that you uninstall the extensions that that include any data to move. It will speed up the upgrade and overall cloud migration process. You can reinstall the extensions after the migration.
+
 
 <!--## How do I build an extension that enables data replication?
 
