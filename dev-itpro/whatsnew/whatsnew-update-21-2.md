@@ -11,7 +11,6 @@ author: EmmaNielsson
 ---
 
 # Update 21.2 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
-
 Would you like to know what has changed in update 21.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
