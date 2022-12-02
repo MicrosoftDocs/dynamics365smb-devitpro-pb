@@ -21,7 +21,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 - [Use default attachments in email sent from Business Central](/dynamics365/business-central/admin-how-setup-email)
 - [Easily comply with email sending limits through email throttling](/dynamics365/business-central/admin-how-setup-email)
-- [Move custom fields to extensions during cloud migration](/administration/migration-table-mapping.md) 
+- [Move custom fields to extensions during cloud migration](../administration/migration-table-mapping.md) 
 - [Integrated session using Service-to-Service (S2S) authentication can now schedule tasks](/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication)
 
 
