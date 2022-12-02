@@ -1,8 +1,8 @@
 ---
-title: "Work with Multiple Projects and Project References"
+title: "Work with multiple projects and project references"
 description: "Handling solutions in the AL language that contains multiple projects in one Visual Studio Code folder and contains references between these projects."
 author: SusanneWindfeldPedersen
-ms.date: 06/23/2022
+ms.date: 11/30/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Work with Multiple Projects and Project References
+# Work with multiple projects and project references
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -109,6 +109,11 @@ To remove unnecessary manual work, use the **AL: Publish full dependency tree fo
 ## Incremental Build setting
 
 If the `al.incrementalBuild` setting is set to `true` on workspaces with project to project references, all resolutions will happen from the referenced project, instead of happening from an app in the `\packagecache` folder, which will enhance the build time. For more information, see [AL Language Extension Configuration](devenv-al-extension-configuration.md).
+
+## Making sure that your project or workspace is updated
+
+> [!NOTE]  
+> When working in a project or workspace, some operations require that you run a **Reload Window** command (**Ctrl+R**) for your project or workspace to ensure that it’s updated correctly. Examples are; source control operations like Git Pull, changes made to the `app.json` file, or updating User or Workspace settings for AL.
 
 ## See also
 
