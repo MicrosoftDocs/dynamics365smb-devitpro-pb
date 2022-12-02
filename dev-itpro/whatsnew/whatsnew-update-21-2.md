@@ -59,6 +59,10 @@ Version 2.2 of AL-Go for GitHub has been released with improved multi-project su
 **Important: Take action before March 1 to retain your delegated admin access to your customers**  
 Earlier this year, Microsoft Partner Center introduced Granular Delegated Administration Privileges (GDAP) as replacement for Delegated Administration Privileges (DAP) to enable partner-customer relationships that are time-bound and have more granular access rights. The timeline to migrate your existing DAP relationships to GDAP has been moved to March 1, 2023. If you do not take action by this date you will lose access to your customers' Business Central environments. Please refer to the Partner Center announcement [here](/partner-center/announcements/2022-october#17).
 
+**Business Central Performance toolkit VSCode extension**  
+The Performance Toolkit extension is built for Independent Solution Vendors (ISVs) and Value Added Resellers (VARs) who develop vertical solutions and customize Business Central for their customers. Because things change between released versions, it's important that ISVs and VARs can test the performance of their solutions to ensure that new versions don't introduce performance regressions when the volume of users grows. To help, the Performance Toolkit lets developers simulate workloads in realistic scenarios to compare performance between builds of their solutions. The Performance Toolkit extension helps answer questions such as, "Does my solution for Business Central support X number of users doing this, that, and the other thing at the same time?". Learn more [here](/dynamics365/business-central/dev-itpro/developer/devenv-performance-toolkit).
+
+
 
 **Business Central newsletter for partners**  
 Yay! We're doing quarterly newsletters for Business Central partners. Each newsletter contains a summary of relevant information related to Business Central. You can find it on [aka.ms/BCNews](https://aka.ms/BCNews).
