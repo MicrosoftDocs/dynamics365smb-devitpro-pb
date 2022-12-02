@@ -71,7 +71,7 @@ If you want to contribute to the developer and administration content, clone or 
 
 ### Get updates from Microsoft
 
-Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, *MicrosoftDocs/dynamics365smb-docs*, is updated weekly, and the translations are updated monthly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. The Help for GitHub offers [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
+Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, *MicrosoftDocs/dynamics365smb-docs*, is updated weekly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. The Help for GitHub offers [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
 
 The following script was developed by a Danish partner to perform the following tasks:
 
@@ -104,13 +104,13 @@ foreach ($language in $languages)
 
 More information is available in the [Build HTML files](#build-html-files) section.  
 
-Because the Microsoft repos are public, you do not need a valid GitHub account in order to get the content. However, we recommend that your organization has a system account with access to GitHub at a minimum.  
+Because the Microsoft repos are public, you do not need a valid GitHub account in order to get the content. However, we recommend that, at a minimum, your organization has a system account with access to GitHub.  
 
 ### Get started with GitHub
 
 To join Microsoft in the world of GitHub and Markdown, there are terminology and tools to get used to. The following list outlines the main steps, but you can find additional content, tools, and ideas in the [GitHub documentation](https://help.github.com/en/github) and other forums.
 
-1. Fork the right repo
+1. Fork the right repo.
 
     You cannot work directly in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
 
@@ -158,14 +158,14 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 For publishing to your own website, use any third-party tool that can clone a repo and generate the corresponding HTML files.  
 
-Alternatively, you can create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), which is an open-source tool for converting Markdown files. This section provides some guidance on how you can use DocFx to publish HTML files from your fork of one of the Microsoft repos.  
+Alternatively, you can create your own tooling and processes around [DocFX](https://dotnet.github.io/docfx/), which is an open-source tool for converting Markdown files. This section provides some guidance on how you can use DocFX to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
 
 > [!TIP]
-> You can also use DocFx to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file from [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
+> You can also use DocFX to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file from [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
 
-1. Install [DocFx](https://dotnet.github.io/docfx/) on your computer.
+1. Install [DocFX](https://dotnet.github.io/docfx/) on your computer.
 
-    DocFx is a command line tool, but you can also run it from a PowerShell script.  
+    DocFX is a command line tool, but you can also run it from a PowerShell script.  
 
     You must provide a .JSON file that defines certain build settings, including the output folder in which to store the generated HTML files. We suggest that you use the docfx.json configuration file from the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo. Learn more at [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
@@ -307,7 +307,7 @@ To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by usin
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
-[DocFx](https://dotnet.github.io/docfx/)  
+[DocFX](https://dotnet.github.io/docfx/)  
 [Blog post: Extending and customizing the Help](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/extending-and-customizing-the-help-in-dynamics-365-business-central)  
 [Blog post: Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/)  
 
