@@ -3,13 +3,11 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.topic: troubleshooting
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms. search.keywords: cloud, edge
 ms.date: 02/18/2022
 ms.author: dmitrych
 ms.review: jswymer
+ms.service: dynamics365-business-central
 ---
 
 # Troubleshooting Cloud Migration
@@ -67,7 +65,7 @@ To enable change tracking on specific tables, run the following query:
 ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING 
 ```
 
-## User permissions  
+## Insufficient user permissions (Business Central and SQL Server users)  
 
 > Database: online
 
