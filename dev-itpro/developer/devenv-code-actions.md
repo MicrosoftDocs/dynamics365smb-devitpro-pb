@@ -28,6 +28,16 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 - Fix for [AW0013](analyzers\uicop-aw0013.md)
 - Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
 
+## Examples
+
+The spell check code action is triggered on certain syntax errors:
+
+:::image type="content" source="media/spellcheck-code-action.png" alt-text="spell check code action":::
+
+The make method local action is triggered to fix the [CodeCop Warning AA0207](analyzers/codecop-aa0207.md):
+
+:::image type="content" source="media/makemethodlocal-code-action.png" alt-text="make method local code action":::
+
 ## Code actions for promoted actions
 
 Use the code action to convert *legacy* syntax for promoted actions to the `actionref` syntax, which is introduced with [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2. In-client customizations, user personalization, and profile configurations are automatically converted into the new syntax, so this is primarily applicable to DEV extensions. The code action can apply to a single instance, the document, the project, or the workspace.

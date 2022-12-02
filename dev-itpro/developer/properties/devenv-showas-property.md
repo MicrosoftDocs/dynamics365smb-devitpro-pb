@@ -39,19 +39,18 @@ ShowAs = SplitButton;
 
 ## Remarks
 
-By specifying that the group should be rendered as **SplitButton**, the group is rendered as a combination of a button and a menu. 
-This type of control gives you a fast one-click access to the first action, which is set to [Visible](devenv-visible-property.md) and to [Enabled](devenv-enabled-property.md) in a menu via the left button part and access to other related actions via the right dropdown part. 
+By specifying that the group should be rendered as **SplitButton**, the group is rendered as a combination of a button and a menu. This type of control gives you a fast one-click access to the first action, which is set to [Visible](devenv-visible-property.md) and to [Enabled](devenv-enabled-property.md) in a menu via the left button part and access to other related actions via the right dropdown part. 
 
 > [!NOTE]  
 > Re-ordering the actions in a split button group from a page extension or page customization can change the action used for the split button.
 
-Be aware of that:
+Be aware of the following design guidance:
 
-- Split buttons are not supported on sub form action bars or in context menus. When the feature key **ModernActionBar** is turned off, then it isn't supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group.
+- Split buttons aren't supported on sub form action bars or in context menus. When the feature key **ModernActionBar** is turned off, then it isn't supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group.
 - Mobile clients don't support split buttons and if the `ShowAs` property is set to `SplitButton`, it will be ignored.
 - Any tooltip, caption, or image property set on a group, isn't rendered, if the group is defined as a split button. It's still a best practice to set these properties, because they're used, if the group is rendered as a regular group, for example, on mobile clients.
 - A split button can be nested inside another split button.
-- For personalization from the UI, it's possible to drop an action into a split button and the action will then become the primary action, if the action is enabled and visible. During personalization it's also possible to re-order the child actions, which will dynamically update the primary action as necessary.
+- For personalization from the UI, it's possible to drop an action into a split button and the action will then become the primary action, if the action is enabled and visible. During personalization it's also possible to reorder the child actions, which will dynamically update the primary action as necessary.
 
 
 ## Example
