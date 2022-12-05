@@ -239,8 +239,9 @@ For more information about the offer types for Business Central, see [App type, 
 ### How to change the offer type from 'connect' app to 'add-on' app?
 
 When changing a `connect` app to an `add-on` app, you should:
-- retrieve the App ID assigned by the service to your connect offer from the offer listing URL. The App ID is can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`,
-- use this App ID in the app.json of the main extension uploaded to your offer
+- navigate to your offer listing in the AppSource marketplace, and copy the URL for your offer,
+- retrieve the App ID assigned by the service to your offer: the App ID can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`,
+- use this App ID in the app.json of the main extension uploaded to your offer.
 
 > [!NOTE]
 > The App ID is used as part of the URL of the offer listing and is used as a key to retrieve to customer review left on the offer listing. Not preserving the App ID means that the offer URL will change and customer reviews will be lost.
