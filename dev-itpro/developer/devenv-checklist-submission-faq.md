@@ -228,6 +228,23 @@ Each unique codebase has one unique ID. If you have four apps in AppSource, you 
 
 If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
 
+## Questions about Business Central offers
+
+### When is it okay to change the offer type of my offer?
+
+There exist two types of offers for Business Central in AppSource: `connect` apps and `add-on` apps. It is possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we do not recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
+
+For more information about the offer types for Business Central, see [App type, contact type, and customer leads](readiness/readiness-checklist-e-industries-categories-apptype.md).
+
+### How to change the offer type from 'connect' app to 'add-on' app?
+
+When changing a `connect` app to an `add-on` app, you should:
+- retrieve the App ID assigned by the service to your connect offer from the offer listing URL. The App ID is can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`,
+- use this App ID in the app.json of the main extension uploaded to your offer
+
+> [!NOTE]
+> The App ID is used as part of the URL of the offer listing and is used as a key to retrieve to customer review left on the offer listing. Not preserving the App ID means that the offer URL will change and customer reviews will be lost.
+
 ## Channels to ask questions or report issues
 
 In the following, you can read about how you reach out for support most efficiently.
@@ -236,12 +253,12 @@ In the following, you can read about how you reach out for support most efficien
 
 When registering affixes for your publisher, or adding a new publisher name to your affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
-### When do I contact Partner Center customer support?
+### When do I contact Marketplace Certification for assistance?
 
-When your submission fails to be successfully completed in Partner Center, but are having issues updating your extension(s) to fix the validation errors.
+When your submission fails to be successfully completed in Partner Center, but you are having issues updating your extension(s) to fix the validation errors, you can request assistance from [Marketplace Certification](https://aka.ms/certificationengagement).
 
 > [!IMPORTANT]  
-> If you are using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
+> If you are using Azure Application Insights, before contacting [Marketplace Certification](https://aka.ms/certificationengagement) for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
 
