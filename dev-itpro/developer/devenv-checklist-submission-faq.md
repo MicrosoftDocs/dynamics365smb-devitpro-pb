@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 01/03/2022
+ms.date: 12/06/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -232,18 +232,18 @@ If they're different apps (different code), they should have different identity.
 
 ### When is it okay to change the offer type of my offer?
 
-There exist two types of offers for Business Central in AppSource: `connect` apps and `add-on` apps. It is possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we do not recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
+There exists two types of offers for Business Central in AppSource: `connect` apps and `add-on` apps. It's possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we don't recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
 
 For more information about the offer types for Business Central, see [App type, contact type, and customer leads](readiness/readiness-checklist-e-industries-categories-apptype.md).
 
 ### How to change the offer type from 'connect' app to 'add-on' app?
 
 When changing a `connect` app to an `add-on` app, you should:
-- navigate to your offer listing in the AppSource marketplace, and copy the URL for your offer,
-- retrieve the App ID assigned by the service to your offer: the App ID can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`,
-- use this App ID in the app.json of the main extension uploaded to your offer.
+- Navigate to your offer listing in the AppSource marketplace, and copy the URL for your offer
+- Retrieve the App ID assigned by the service to your offer: the App ID can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`
+- Use this App ID in the `app.json` of the main extension uploaded to your offer
 
-> [!NOTE]
+> [!NOTE]  
 > The App ID is used as part of the URL of the offer listing and is used as a key to retrieve to customer review left on the offer listing. Not preserving the App ID means that the offer URL will change and customer reviews will be lost.
 
 ## Channels to ask questions or report issues
@@ -256,10 +256,10 @@ When registering affixes for your publisher, or adding a new publisher name to y
 
 ### When do I contact Marketplace Certification for assistance?
 
-When your submission fails to be successfully completed in Partner Center, but you are having issues updating your extension(s) to fix the validation errors, you can request assistance from [Marketplace Certification](https://aka.ms/certificationengagement).
+When your submission fails to be successfully completed in Partner Center, but you're experiencing issues updating your extension(s) to fix the validation errors, you can request assistance from [Marketplace Certification](https://aka.ms/certificationengagement).
 
 > [!IMPORTANT]  
-> If you are using Azure Application Insights, before contacting [Marketplace Certification](https://aka.ms/certificationengagement) for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
+> If you're using Azure Application Insights, before contacting [Marketplace Certification](https://aka.ms/certificationengagement) for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages that you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
 
