@@ -36,7 +36,7 @@ Based on the app.json file of your extension, the service automatically computes
 
 The extensions in your submission are validated for all the countries/regions targeted by the submission, which are available in Business Central. You can see which countries/regions you've selected in Partner Center under `Availability > Edit Markets`. 
 
-When adding new localizations in Business Central, these countries/regions can be added to Partner Center before they're ready in Business Central. If you're targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to Business Central if the localization isn't yet ready in Business Central. Generally, it's possible to upload apps for 'Planned' localizations a few weeks before they're officially released. When the localization becomes available, if you're experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you are using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
+When you're adding new localizations in Business Central, these countries/regions can be added to Partner Center before they're ready in Business Central. If you're targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to Business Central if the localization isn't yet ready in Business Central. Generally, it's possible to upload apps for 'Planned' localizations a few weeks before they're officially released. When the localization becomes available, if you're experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you're using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
 ### Against which baselines are my apps validated?
 
@@ -141,7 +141,7 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 
 1. Validate that the Application Insights resource queried is the same one as specified in the manifest (app.json) of your extension.
 2. Validate that the time range when running the query covers the time of the submission.
-3. If you are using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it's more reliable. Make sure to use the full connection string from your Azure Application Resource.
+3. If you're using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it's more reliable. Make sure to use the full connection string from your Azure Application Resource.
 4. If you're using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you're using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. For more information, see [Connection strings](/azure/azure-monitor/app/sdk-connection-string)
 5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. For more information, see [Sampling in Application Insights](/azure/azure-monitor/app/sampling). 
 
@@ -232,7 +232,7 @@ If they're different apps (different code), they should have different identity.
 
 ### When is it okay to change the offer type of my offer?
 
-There exists two types of offers for Business Central in AppSource: `connect` apps and `add-on` apps. It's possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we don't recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
+There exist two types of offers for Business Central in AppSource: `connect` apps and `add-on` apps. It's possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we don't recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
 
 For more information about the offer types for Business Central, see [App type, contact type, and customer leads](readiness/readiness-checklist-e-industries-categories-apptype.md).
 
@@ -273,7 +273,7 @@ When you have questions or bugs regarding the self-validation script. For more i
 
 When you have questions on developing and maintaining AppSource apps or about the validation process, you can ask a question on Yammer. In this group, you'll find announcements from Microsoft together with discussions around various AppSource-related articles.
 
-You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, please email dyn365bep@microsoft.com. 
+You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
 
 ## See also
 
