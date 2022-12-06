@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/11/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -91,7 +91,6 @@ The following data types are available as part of the AL Language. Each data typ
 |[TestPage](testpage/testpage-data-type.md)|Represents a variable type that can be used to test Page Application Objects.|
 |[TestPart](testpart/testpart-data-type.md)|Represents a variable type that can be used to test Page Application Objects of type Part.|
 |[TestRequestPage](testrequestpage/testrequestpage-data-type.md)|Stores test request pages. A test request page part is a logical representation of a request page on a report. A test request page does not display a user interface (UI). The subtype of a test request page is the report whose request page you want to test.|
-|[Text](text/text-data-type.md)|Denotes a sequence of characters. It can be represented by a string literal, a text value or a code value.|
 |[Text](text/text-data-type.md)|Denotes a text string.|
 |[TextBuilder](textbuilder/textbuilder-data-type.md)|Represents a lighweight wrapper for the .Net implementation of StringBuilder.|
 |[TextConst](textconst/textconst-data-type.md)|Denotes a multi-language string constant.|
