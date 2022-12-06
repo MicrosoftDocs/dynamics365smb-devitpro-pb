@@ -3,7 +3,7 @@ title: "Text.PadStr(Text, Integer [, Text]) Method"
 description: "Changes the length of a string to a specified length."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Changes the length of a string to a specified length. If the string is shorter t
 ```AL
 NewString :=   Text.PadStr(String: Text, Length: Integer [, FillCharacter: Text])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  

@@ -3,7 +3,7 @@ title: "Text.LowerCase(Text) Method"
 description: "Converts all letters in a string to lowercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Converts all letters in a string to lowercase.
 ```AL
 NewString :=   Text.LowerCase(String: Text)
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
