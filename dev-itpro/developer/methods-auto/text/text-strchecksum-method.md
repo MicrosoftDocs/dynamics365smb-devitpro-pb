@@ -3,7 +3,7 @@ title: "Text.StrCheckSum(Text [, Text] [, Integer]) Method"
 description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Calculates a checksum for a string that contains a number. If the source is empt
 ```AL
 CheckNumber :=   Text.StrCheckSum(String: Text [, WeightString: Text] [, Modulus: Integer])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
