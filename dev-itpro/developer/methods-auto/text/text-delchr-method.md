@@ -3,7 +3,7 @@ title: "Text.DelChr(Text [, Text] [, Text]) Method"
 description: "Deletes chars contained in the which parameter in a string based on the contents on the where parameter."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Deletes chars contained in the which parameter in a string based on the contents
 ```AL
 NewString :=   Text.DelChr(String: Text [, Where: Text] [, Which: Text])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  

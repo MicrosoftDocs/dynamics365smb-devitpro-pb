@@ -1,9 +1,9 @@
 ---
-title: "InherentPermissionsScope Option Type"
+title: "InherentPermissionsScope System Option"
 description: "The different types of scope that the InherentPermissions attribute can apply to."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/30/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

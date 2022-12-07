@@ -43,6 +43,10 @@ TestPermissions = Disabled;
 
 The default value of `TestPermissions` is `Restrictive`. The **TestPermissions** property works together with the **OnBeforeTestRun** and **OnAfterTestRun** triggers in test runner codeunits. The value of the **TestPermissions** property is passed as a parameter to the test runner codeunit triggers. The permission sets that are used during a test are determined by the code that you add to the triggers. Typically, you use the **OnBeforeTestRun** trigger to apply permissions sets and the **OnAfterTestRun** trigger to clear permissions sets.
 
+Tests have the `TestPermissions` property by default set to `Restrictive`. With the **Permissions Mock** system app in the test framework library, you can mock permissions when running unit tests. The **Permissions Mock** module can be used to add permissions sets to the running test user, or limit the user's permissions.
+
+For more information, see the open source module [Permissions Mock](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/DevTools/TestFramework/TestLibraries/Permissions%20Mock).
+
 > [!NOTE]  
 > To specify the permission sets that are used by the tests run by a specific test method, use the [TestPermissions Attribute](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-testpermissions-attribute).
 

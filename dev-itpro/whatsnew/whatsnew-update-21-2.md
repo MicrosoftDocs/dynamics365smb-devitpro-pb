@@ -15,12 +15,14 @@ Would you like to know what has changed in update 21.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-21-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-2-49990-platform-build-21-0-49984-5a1acf84-533f-4738-9f79-a3444f54004a).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-21-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-2-49990-platform-build-21-0-49984-5a1acf84-533f-4738-9f79-a3444f54004a) and the downloads [here](https://aka.ms/BCDownload).
+
+
 
 ## Feature changes
 
-- [Use default attachments in email sent from Business Central](/dynamics365/business-central/admin-how-setup-email)
-- [Easily comply with email sending limits through email throttling](/dynamics365/business-central/admin-how-setup-email)
+- [Use default attachments in email sent from Business Central](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-default-attachments-email-sent-business-central)
+- [Easily comply with email sending limits through email throttling](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/easily-comply-email-sending-limits-through-email-throttling)
 - [Move custom fields to extensions during cloud migration](../administration/migration-table-mapping.md) 
 - [Integrated session using Service-to-Service (S2S) authentication can now schedule tasks](/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication)
 
