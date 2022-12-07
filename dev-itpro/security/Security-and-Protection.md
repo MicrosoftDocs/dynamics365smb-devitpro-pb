@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.date: 10/01/2022
+ms.date: 12/07/2022
 ms.author: jswymer
 ---
 # Security in Business Central
@@ -17,10 +17,13 @@ A business solution must have a built-in security system that helps protect your
 
 [Application Security](security-application.md)  
 
+[Service tags](security-service-tags.md)
+
 [Security Tips for Business Users](security-users.md)  
 
 [Online Security](security-online.md)  
 
 [On-Premises Security](security-onpremises.md)  
+
 
 [!INCLUDE [admin-tlswarning](../developer/includes/admin-tlswarning.md)]
