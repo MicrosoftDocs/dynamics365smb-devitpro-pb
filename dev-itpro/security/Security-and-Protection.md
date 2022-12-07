@@ -17,7 +17,7 @@ A business solution must have a built-in security system that helps protect your
 
 [Application Security](security-application.md)  
 
-[Service tags](security-service-tags.md)
+[Security service tags](security-service-tags.md)
 
 [Security Tips for Business Users](security-users.md)  
 
