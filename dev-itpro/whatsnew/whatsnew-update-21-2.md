@@ -21,8 +21,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Feature changes
 
-- [Use default attachments in email sent from Business Central](/dynamics365-business-central/use-default-attachments-email-sent-business-central)
-- [Easily comply with email sending limits through email throttling](/dynamics365-business-central/easily-comply-email-sending-limits-through-email-throttling)
+- [Use default attachments in email sent from Business Central](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/use-default-attachments-email-sent-business-central)
+- [Easily comply with email sending limits through email throttling](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/easily-comply-email-sending-limits-through-email-throttling)
 - [Move custom fields to extensions during cloud migration](../administration/migration-table-mapping.md) 
 - [Integrated session using Service-to-Service (S2S) authentication can now schedule tasks](/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication)
 
