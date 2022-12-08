@@ -24,15 +24,15 @@ Sets the department column for a searched page or report in the Web client.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**None**|Available or changed with runtime version 1.0.|The page or report is not included in a search.|
-|**Lists**|Available or changed with runtime version 1.0.|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
-|**Tasks**|Available or changed with runtime version 1.0.|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
-|**ReportsAndAnalysis**|Available or changed with runtime version 1.0.|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
-|**Documents**|Available or changed with runtime version 1.0.|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
-|**History**|Available or changed with runtime version 1.0.|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
-|**Administration**|Available or changed with runtime version 1.0.|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
+|**None**|runtime version 1.0|The page or report is not included in a search.|
+|**Lists**|runtime version 1.0|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
+|**Tasks**|runtime version 1.0|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
+|**ReportsAndAnalysis**|runtime version 1.0|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
+|**Documents**|runtime version 1.0|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
+|**History**|runtime version 1.0|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
+|**Administration**|runtime version 1.0|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

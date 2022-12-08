@@ -23,10 +23,10 @@ Sets the data that is being imported or exported as XML data types or as the sta
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Legacy**|Available or changed with runtime version 1.0.|The data uses the standard AL data types.|
-|**Xml**|Available or changed with runtime version 1.0.|The data uses the standard XML data types.|
+|**Legacy**|runtime version 1.0|The data uses the standard AL data types.|
+|**Xml**|runtime version 1.0|The data uses the standard XML data types.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

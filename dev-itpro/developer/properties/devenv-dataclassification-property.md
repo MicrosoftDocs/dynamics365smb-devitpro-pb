@@ -24,15 +24,15 @@ Specifies the classification to be applied on the data contained in the table.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**CustomerContent**|Available or changed with runtime version 1.0.|Content directly provided/created by admins and users. CustomerContent is the default value.|
-|**EndUserIdentifiableInformation**|Available or changed with runtime version 1.0.|(EUII) Data that identifies or could be used to identify the user of a Microsoft service. EUII does not contain Customer content.|
-|**AccountData**|Available or changed with runtime version 1.0.|Customer billing information and payment instrument information, including administrator contact information, such as tenant administrator’s name, address, or phone number.|
-|**EndUserPseudonymousIdentifiers**|Available or changed with runtime version 1.0.|(EUPI) An identifier created by Microsoft tied to the user of a Microsoft service. When EUPI is combined with other information, such as a mapping table, it identifies the end user. EUPI does not contain information uploaded or created by the customer (Customer content or EUII)|
-|**OrganizationIdentifiableInformation**|Available or changed with runtime version 1.0.|(OII) Data that can be used to identify a tenant, generally config or usage data. This data is not linkable to a user and does not contain Customer content.|
-|**SystemMetadata**|Available or changed with runtime version 1.0.|Data generated while running the service or program that is not linkable to a user or tenant.|
-|**ToBeClassified**|Available or changed with runtime version 1.0.|Content that has not yet been given a classification. This is the initial value when table or field is created.|
+|**CustomerContent**|runtime version 1.0|Content directly provided/created by admins and users. CustomerContent is the default value.|
+|**EndUserIdentifiableInformation**|runtime version 1.0|(EUII) Data that identifies or could be used to identify the user of a Microsoft service. EUII does not contain Customer content.|
+|**AccountData**|runtime version 1.0|Customer billing information and payment instrument information, including administrator contact information, such as tenant administrator’s name, address, or phone number.|
+|**EndUserPseudonymousIdentifiers**|runtime version 1.0|(EUPI) An identifier created by Microsoft tied to the user of a Microsoft service. When EUPI is combined with other information, such as a mapping table, it identifies the end user. EUPI does not contain information uploaded or created by the customer (Customer content or EUII)|
+|**OrganizationIdentifiableInformation**|runtime version 1.0|(OII) Data that can be used to identify a tenant, generally config or usage data. This data is not linkable to a user and does not contain Customer content.|
+|**SystemMetadata**|runtime version 1.0|Data generated while running the service or program that is not linkable to a user or tenant.|
+|**ToBeClassified**|runtime version 1.0|Content that has not yet been given a classification. This is the initial value when table or field is created.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

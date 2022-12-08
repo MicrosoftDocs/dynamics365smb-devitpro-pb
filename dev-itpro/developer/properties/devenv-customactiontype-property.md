@@ -23,9 +23,9 @@ Sets the type of the custom action.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Flow**|Available or changed with runtime version 1.0.|An action that can trigger a Power Automate Flow.|
+|**Flow**|runtime version 1.0|An action that can trigger a Power Automate Flow.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

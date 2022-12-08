@@ -23,11 +23,11 @@ Sets the class of the field.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Normal**|Available or changed with runtime version 1.0.|A data entry field.|
-|**FlowField**|Available or changed with runtime version 1.0.|A calculated field.|
-|**FlowFilter**|Available or changed with runtime version 1.0.|To compute the results of FlowFields.|
+|**Normal**|runtime version 1.0|A data entry field.|
+|**FlowField**|runtime version 1.0|A calculated field.|
+|**FlowFilter**|runtime version 1.0|To compute the results of FlowFields.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

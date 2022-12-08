@@ -23,12 +23,12 @@ Specifies the type of access to the original table field in the external databas
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Full**|Available or changed with runtime version 1.0.|Allows the full access to the external database.|
-|**Insert**|Available or changed with runtime version 1.0.|Allows the insert access to the table fields in the external database.|
-|**Modify**|Available or changed with runtime version 1.0.|Allows the Modify access to the external database.|
-|**Read**|Available or changed with runtime version 1.0.|Allows the read-only access to the external database.|
+|**Full**|runtime version 1.0|Allows the full access to the external database.|
+|**Insert**|runtime version 1.0|Allows the insert access to the table fields in the external database.|
+|**Modify**|runtime version 1.0|Allows the Modify access to the external database.|
+|**Read**|runtime version 1.0|Allows the read-only access to the external database.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -23,12 +23,12 @@ Specifies a gesture that runs the action on a device with a touch interface, suc
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**None**|Available or changed with runtime version 1.0.|No gesture for the action.|
-|**LeftSwipe**|Available or changed with runtime version 1.0.|Swipe in from the right edge of the touch interface.|
-|**RightSwipe**|Available or changed with runtime version 1.0.|Swipe in from the left edge of the touch interface.|
-|**ContextMenu**|Available or changed with runtime version 1.0.|The action has a context menu.|
+|**None**|runtime version 1.0|No gesture for the action.|
+|**LeftSwipe**|runtime version 1.0|Swipe in from the right edge of the touch interface.|
+|**RightSwipe**|runtime version 1.0|Swipe in from the left edge of the touch interface.|
+|**ContextMenu**|runtime version 1.0|The action has a context menu.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

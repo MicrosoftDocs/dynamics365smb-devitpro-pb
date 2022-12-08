@@ -23,12 +23,12 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**MSDOS**|Available or changed with runtime version 1.0.|Use MS-DOS encoding format. It is the default value.|
-|**UTF8**|Available or changed with runtime version 1.0.|Use UTF-8 encoding format.|
-|**UTF16**|Available or changed with runtime version 1.0.|Use UTF-16 encoding format.|
-|**WINDOWS**|Available or changed with runtime version 1.0.|Use Windows encoding format.|
+|**MSDOS**|runtime version 1.0|Use MS-DOS encoding format. It is the default value.|
+|**UTF8**|runtime version 1.0|Use UTF-8 encoding format.|
+|**UTF16**|runtime version 1.0|Use UTF-16 encoding format.|
+|**WINDOWS**|runtime version 1.0|Use Windows encoding format.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

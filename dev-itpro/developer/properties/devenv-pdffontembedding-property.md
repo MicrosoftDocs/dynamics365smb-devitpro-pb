@@ -23,11 +23,11 @@ Specifies whether fonts are embedded in PDF files that are generated for reports
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Default**|Available or changed with runtime version 1.0.|Uses the **Report PDF Embedding** setting of the Dynamics 365 Business Central instance to determine whether fonts are embedded in PDF files.  <br /><br /> This is the default setting.|
-|**Yes**|Available or changed with runtime version 1.0.|Fonts are embedded in PDF files.|
-|**No**|Available or changed with runtime version 1.0.|Fonts are not embedded in PDF files.|
+|**Default**|runtime version 1.0|Uses the **Report PDF Embedding** setting of the Dynamics 365 Business Central instance to determine whether fonts are embedded in PDF files.  <br /><br /> This is the default setting.|
+|**Yes**|runtime version 1.0|Fonts are embedded in PDF files.|
+|**No**|runtime version 1.0|Fonts are not embedded in PDF files.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

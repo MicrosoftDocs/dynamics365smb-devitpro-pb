@@ -23,12 +23,12 @@ Sets the data type that you want to allow in a code field.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Varchar**|Available or changed with runtime version 1.0.|The data type is Varchar. This is the default value.|
-|**Integer**|Available or changed with runtime version 1.0.|The data type is Integer.|
-|**Variant**|Available or changed with runtime version 1.0.|The data type is Variant|
-|**BigInteger**|Available or changed with runtime version 1.0.|The data type is BigInteger.|
+|**Varchar**|runtime version 1.0|The data type is Varchar. This is the default value.|
+|**Integer**|runtime version 1.0|The data type is Integer.|
+|**Variant**|runtime version 1.0|The data type is Variant|
+|**BigInteger**|runtime version 1.0|The data type is BigInteger.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

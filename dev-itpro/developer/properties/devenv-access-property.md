@@ -29,10 +29,10 @@ Sets the object accessibility level, which controls whether the object can be us
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Public**|Available or changed with runtime version 1.0.|The object can be accessed by any other code in the same module and in other modules that references it.|
-|**Internal**|Available or changed with runtime version 1.0.|The object can be accessed only by code in the same module, but not from another module.|
+|**Public**|runtime version 1.0|The object can be accessed by any other code in the same module and in other modules that references it.|
+|**Internal**|runtime version 1.0|The object can be accessed only by code in the same module, but not from another module.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

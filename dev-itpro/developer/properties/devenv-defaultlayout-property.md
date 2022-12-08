@@ -23,11 +23,11 @@ Specifies whether the report uses the built-in RDL or Word report layout by defa
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**RDLC**|Available or changed with runtime version 1.0.|Specifies the built-in RDL layout as the default layout.|
-|**Word**|Available or changed with runtime version 1.0.|Specifies the built-in Word layout as the default layout.|
-|**Excel**|Available or changed with runtime version 9.0.|Specifies the built-in Excel layout as the default layout.|
+|**RDLC**|runtime version 1.0|Specifies the built-in RDL layout as the default layout.|
+|**Word**|runtime version 1.0|Specifies the built-in Word layout as the default layout.|
+|**Excel**|runtime version 9.0|Specifies the built-in Excel layout as the default layout.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

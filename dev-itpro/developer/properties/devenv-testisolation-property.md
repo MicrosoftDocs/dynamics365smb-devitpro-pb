@@ -23,11 +23,11 @@ Specifies which changes to the database to roll back after the tests in the test
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Disabled**|Available or changed with runtime version 1.0.|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
-|**Codeunit**|Available or changed with runtime version 1.0.|Roll back all changes to the database after each test codeunit executes.|
-|**Function**|Available or changed with runtime version 1.0.|Roll back all changes to the database after each test method executes.|
+|**Disabled**|runtime version 1.0|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
+|**Codeunit**|runtime version 1.0|Roll back all changes to the database after each test codeunit executes.|
+|**Function**|runtime version 1.0|Roll back all changes to the database after each test method executes.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

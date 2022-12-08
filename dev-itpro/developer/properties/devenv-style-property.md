@@ -24,19 +24,19 @@ Sets a value that determines how text in a field on a page is formatted. For fie
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**None**|Available or changed with runtime version 1.0.|None|
-|**Standard**|Available or changed with runtime version 1.0.|Standard|
-|**StandardAccent**|Available or changed with runtime version 1.0.|Blue|
-|**Strong**|Available or changed with runtime version 1.0.|Bold|
-|**StrongAccent**|Available or changed with runtime version 1.0.|Blue + Bold|
-|**Attention**|Available or changed with runtime version 1.0.|Red + Italic|
-|**AttentionAccent**|Available or changed with runtime version 1.0.|Blue + Italic|
-|**Favorable**|Available or changed with runtime version 1.0.|Bold + Green|
-|**Unfavorable**|Available or changed with runtime version 1.0.|Bold + Italic + Red|
-|**Ambiguous**|Available or changed with runtime version 1.0.|Yellow|
-|**Subordinate**|Available or changed with runtime version 1.0.|Grey|
+|**None**|runtime version 1.0|None|
+|**Standard**|runtime version 1.0|Standard|
+|**StandardAccent**|runtime version 1.0|Blue|
+|**Strong**|runtime version 1.0|Bold|
+|**StrongAccent**|runtime version 1.0|Blue + Bold|
+|**Attention**|runtime version 1.0|Red + Italic|
+|**AttentionAccent**|runtime version 1.0|Blue + Italic|
+|**Favorable**|runtime version 1.0|Bold + Green|
+|**Unfavorable**|runtime version 1.0|Bold + Italic + Red|
+|**Ambiguous**|runtime version 1.0|Yellow|
+|**Subordinate**|runtime version 1.0|Grey|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

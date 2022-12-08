@@ -25,10 +25,10 @@ Sets the minimum number of times that an element can occur.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Zero**|Available or changed with runtime version 1.0.|There is no minimum number of occurences.|
-|**Once**|Available or changed with runtime version 1.0.|The element must occur at least once.|
+|**Zero**|runtime version 1.0|There is no minimum number of occurences.|
+|**Once**|runtime version 1.0|The element must occur at least once.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

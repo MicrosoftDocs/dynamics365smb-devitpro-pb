@@ -23,10 +23,10 @@ Specifies how event subscriber functions in a codeunit are bound to the codeunit
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**StaticAutomatic**|Available or changed with runtime version 1.0.|Subscribers are automatically bound to the events that they subscribe to. |
-|**Manual**|Available or changed with runtime version 1.0.|Subscribers are bound to an event only if the **BINDSUBSCRIPTION** method is called from the code that raises the event.|
+|**StaticAutomatic**|runtime version 1.0|Subscribers are automatically bound to the events that they subscribe to. |
+|**Manual**|runtime version 1.0|Subscribers are bound to an event only if the **BINDSUBSCRIPTION** method is called from the code that raises the event.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

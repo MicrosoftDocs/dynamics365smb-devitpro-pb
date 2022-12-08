@@ -23,10 +23,10 @@ If the entitlement type is Role, the RoleType is used to distinguish between loc
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Local**|Available or changed with runtime version 1.0.|The user is either a native user or a guest user in the company's AAD tenant, and that specific AAD role was assigned in the given AAD tenant.|
-|**Delegated**|Available or changed with runtime version 1.0.|The user has the given AAD role in the company's AAD tenant via a Delegated Admin relationship with a partner's AAD tenant.|
+|**Local**|runtime version 1.0|The user is either a native user or a guest user in the company's AAD tenant, and that specific AAD role was assigned in the given AAD tenant.|
+|**Delegated**|runtime version 1.0|The user has the given AAD role in the company's AAD tenant via a Delegated Admin relationship with a partner's AAD tenant.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

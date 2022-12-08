@@ -24,11 +24,11 @@ Sets the amount of information that is visible in a window or dialog box.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Standard**|Available or changed with runtime version 1.0.|Displays the field on the page by default.|
-|**Promoted**|Available or changed with runtime version 1.0.|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
-|**Additional**|Available or changed with runtime version 1.0.|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
+|**Standard**|runtime version 1.0|Displays the field on the page by default.|
+|**Promoted**|runtime version 1.0|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
+|**Additional**|runtime version 1.0|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

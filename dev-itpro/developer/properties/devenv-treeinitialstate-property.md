@@ -23,10 +23,10 @@ Specifies the initial state of the records in a repeater control which is displa
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**ExpandAll**|Available or changed with runtime version 1.0.|All records in the tree are expanded.|
-|**CollapseAll**|Available or changed with runtime version 1.0.|All records in the tree are collapsed.|
+|**ExpandAll**|runtime version 1.0|All records in the tree are expanded.|
+|**CollapseAll**|runtime version 1.0|All records in the tree are collapsed.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

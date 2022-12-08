@@ -24,11 +24,11 @@ Sets a value that specifies whether the values in the source field are validated
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Yes**|Available or changed with runtime version 1.0.|If the fields are validated.|
-|**No**|Available or changed with runtime version 1.0.|If the fields are not validated|
-|**Undefined**|Available or changed with runtime version 1.0.|The default value.|
+|**Yes**|runtime version 1.0|If the fields are validated.|
+|**No**|runtime version 1.0|If the fields are not validated|
+|**Undefined**|runtime version 1.0|The default value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

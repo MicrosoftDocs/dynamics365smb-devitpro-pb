@@ -24,10 +24,10 @@ Sets a value that specifies whether an attribute must occur in the data that is 
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Required**|Available or changed with runtime version 1.0.|If the attribute must be part of the data. This is the default value.|
-|**Optional**|Available or changed with runtime version 1.0.|If the attribute does not have to be part of the data.|
+|**Required**|runtime version 1.0|If the attribute must be part of the data. This is the default value.|
+|**Optional**|runtime version 1.0|If the attribute does not have to be part of the data.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

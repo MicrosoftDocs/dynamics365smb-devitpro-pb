@@ -23,28 +23,28 @@ Sets a category for a promoted action.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**New**|Available or changed with runtime version 1.0.|Actions will appear in the New menu.|
-|**Process**|Available or changed with runtime version 1.0.|Actions will appear in the Process menu.|
-|**Report**|Available or changed with runtime version 1.0.|Actions will appear in the Report menu.|
-|**Category4**|Available or changed with runtime version 1.0.|Actions will appear in the Category 4 menu.|
-|**Category5**|Available or changed with runtime version 1.0.|Actions will appear in the Category 5 menu.|
-|**Category6**|Available or changed with runtime version 1.0.|Actions will appear in the Category 6 menu.|
-|**Category7**|Available or changed with runtime version 1.0.|Actions will appear in the Category 7 menu.|
-|**Category8**|Available or changed with runtime version 1.0.|Actions will appear in the Category 8 menu.|
-|**Category9**|Available or changed with runtime version 1.0.|Actions will appear in the Category 9 menu.|
-|**Category10**|Available or changed with runtime version 1.0.|Actions will appear in the Category 10 menu.|
-|**Category11**|Available or changed with runtime version 1.0.|Actions will appear in the Category 11 menu.|
-|**Category12**|Available or changed with runtime version 1.0.|Actions will appear in the Category 12 menu.|
-|**Category13**|Available or changed with runtime version 1.0.|Actions will appear in the Category 13 menu.|
-|**Category14**|Available or changed with runtime version 1.0.|Actions will appear in the Category 14 menu.|
-|**Category15**|Available or changed with runtime version 1.0.|Actions will appear in the Category 15 menu.|
-|**Category16**|Available or changed with runtime version 1.0.|Actions will appear in the Category 16 menu.|
-|**Category17**|Available or changed with runtime version 1.0.|Actions will appear in the Category 17 menu.|
-|**Category18**|Available or changed with runtime version 1.0.|Actions will appear in the Category 18 menu.|
-|**Category19**|Available or changed with runtime version 1.0.|Actions will appear in the Category 19 menu.|
-|**Category20**|Available or changed with runtime version 1.0.|Actions will appear in the Category 20 menu.|
+|**New**|runtime version 1.0|Actions will appear in the New menu.|
+|**Process**|runtime version 1.0|Actions will appear in the Process menu.|
+|**Report**|runtime version 1.0|Actions will appear in the Report menu.|
+|**Category4**|runtime version 1.0|Actions will appear in the Category 4 menu.|
+|**Category5**|runtime version 1.0|Actions will appear in the Category 5 menu.|
+|**Category6**|runtime version 1.0|Actions will appear in the Category 6 menu.|
+|**Category7**|runtime version 1.0|Actions will appear in the Category 7 menu.|
+|**Category8**|runtime version 1.0|Actions will appear in the Category 8 menu.|
+|**Category9**|runtime version 1.0|Actions will appear in the Category 9 menu.|
+|**Category10**|runtime version 1.0|Actions will appear in the Category 10 menu.|
+|**Category11**|runtime version 1.0|Actions will appear in the Category 11 menu.|
+|**Category12**|runtime version 1.0|Actions will appear in the Category 12 menu.|
+|**Category13**|runtime version 1.0|Actions will appear in the Category 13 menu.|
+|**Category14**|runtime version 1.0|Actions will appear in the Category 14 menu.|
+|**Category15**|runtime version 1.0|Actions will appear in the Category 15 menu.|
+|**Category16**|runtime version 1.0|Actions will appear in the Category 16 menu.|
+|**Category17**|runtime version 1.0|Actions will appear in the Category 17 menu.|
+|**Category18**|runtime version 1.0|Actions will appear in the Category 18 menu.|
+|**Category19**|runtime version 1.0|Actions will appear in the Category 19 menu.|
+|**Category20**|runtime version 1.0|Actions will appear in the Category 20 menu.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

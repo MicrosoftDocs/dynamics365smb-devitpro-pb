@@ -23,11 +23,11 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**View**|Available or changed with runtime version 1.0.|The page is run in View mode.|
-|**Edit**|Available or changed with runtime version 1.0.|The page is run in Edit mode.|
-|**Create**|Available or changed with runtime version 1.0.|The page is run in Create mode.|
+|**View**|runtime version 1.0|The page is run in View mode.|
+|**Edit**|runtime version 1.0|The page is run in Edit mode.|
+|**Create**|runtime version 1.0|The page is run in Create mode.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -23,10 +23,10 @@ Specify the multiplicity of the part.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**ZeroOrOne**|Available or changed with runtime version 1.0.|Zero or one entity|
-|**Many**|Available or changed with runtime version 1.0.|Any number of entities.|
+|**ZeroOrOne**|runtime version 1.0|Zero or one entity|
+|**Many**|runtime version 1.0|Any number of entities.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

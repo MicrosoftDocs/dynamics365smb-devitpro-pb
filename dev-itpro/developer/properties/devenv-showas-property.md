@@ -23,10 +23,10 @@ Specifies how an action group should be rendered
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Standard**|Available or changed with runtime version 1.0.|Specifies that an action group should be rendered as a standard group.|
-|**SplitButton**|Available or changed with runtime version 1.0.|Specifies that an action group should be rendered as a split button.|
+|**Standard**|runtime version 1.0|Specifies that an action group should be rendered as a standard group.|
+|**SplitButton**|runtime version 1.0|Specifies that an action group should be rendered as a split button.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -23,10 +23,10 @@ Specifies how the report opens when you preview it.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Normal**|Available or changed with runtime version 1.0.|Specifies that the report opens in the default view mode where you can navigate between entries and so on.|
-|**PrintLayout**|Available or changed with runtime version 1.0.|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|
+|**Normal**|runtime version 1.0|Specifies that the report opens in the default view mode where you can navigate between entries and so on.|
+|**PrintLayout**|runtime version 1.0|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

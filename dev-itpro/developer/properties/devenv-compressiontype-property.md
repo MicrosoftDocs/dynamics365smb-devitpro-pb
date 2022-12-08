@@ -23,12 +23,12 @@ Specifies the compression type used.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Unspecified**|Available or changed with runtime version 1.0.|Use the compression type that is specified externally on the table, for example, in SQL Server.|
-|**None**|Available or changed with runtime version 1.0.|Do not use compression on the table.|
-|**Row**|Available or changed with runtime version 1.0.|Compress the table on a row-level.|
-|**Page**|Available or changed with runtime version 1.0.|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
+|**Unspecified**|runtime version 1.0|Use the compression type that is specified externally on the table, for example, in SQL Server.|
+|**None**|runtime version 1.0|Do not use compression on the table.|
+|**Row**|runtime version 1.0|Compress the table on a row-level.|
+|**Page**|runtime version 1.0|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

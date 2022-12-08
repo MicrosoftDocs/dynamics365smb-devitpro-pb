@@ -23,10 +23,10 @@ Sets the type of query to create.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Normal**|Available or changed with runtime version 1.0.|It is a normal query.|
-|**API**|Available or changed with runtime version 1.0.|The query is of the type API.|
+|**Normal**|runtime version 1.0|It is a normal query.|
+|**API**|runtime version 1.0|The query is of the type API.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

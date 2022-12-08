@@ -56,10 +56,10 @@ Marks whether the object will be deprecated.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**No**|Available or changed with runtime version 1.0.|Not obsolete. This is the normal/default setting.|
-|**Pending**|Available or changed with runtime version 1.0.|Will become obsolete in a future version.|
+|**No**|runtime version 1.0|Not obsolete. This is the normal/default setting.|
+|**Pending**|runtime version 1.0|Will become obsolete in a future version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

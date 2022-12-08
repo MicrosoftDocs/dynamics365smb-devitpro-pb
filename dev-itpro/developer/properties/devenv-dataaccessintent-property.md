@@ -25,10 +25,10 @@ Sets the data access intent of the page.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**ReadOnly**|Available or changed with runtime version 1.0.|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
-|**ReadWrite**|Available or changed with runtime version 1.0.|Intent to access and modify records.|
+|**ReadOnly**|runtime version 1.0|Intent to access records, but not to modify them. Read-only pages are run against a replica of the database leading to improved performance, but preventing modifications to the database records.|
+|**ReadWrite**|runtime version 1.0|Intent to access and modify records.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

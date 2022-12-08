@@ -23,10 +23,10 @@ Set which version of XML the XML document conforms to. Two options are available
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**V10**|Available or changed with runtime version 1.0.|Version 1.0. This is the default value.|
-|**V11**|Available or changed with runtime version 1.0.|Version 1.1.|
+|**V10**|runtime version 1.0|Version 1.0. This is the default value.|
+|**V11**|runtime version 1.0|Version 1.1.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

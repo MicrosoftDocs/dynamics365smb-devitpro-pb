@@ -24,14 +24,14 @@ Indicates whether the system will clear a range of numbers as it formats them.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**DontBlank**|Available or changed with runtime version 1.0.|Not clear any numbers. This is the default value.|
-|**BlankNeg**|Available or changed with runtime version 1.0.|Clear negative numbers.|
-|**BlankNegAndZero**|Available or changed with runtime version 1.0.|Clear negative numbers and zero.|
-|**BlankZero**|Available or changed with runtime version 1.0.|Clear numbers equal to zero.|
-|**BlankZeroAndPos**|Available or changed with runtime version 1.0.|Clear positive numbers and zero.|
-|**BlankPos**|Available or changed with runtime version 1.0.|Clear positive numbers.|
+|**DontBlank**|runtime version 1.0|Not clear any numbers. This is the default value.|
+|**BlankNeg**|runtime version 1.0|Clear negative numbers.|
+|**BlankNegAndZero**|runtime version 1.0|Clear negative numbers and zero.|
+|**BlankZero**|runtime version 1.0|Clear numbers equal to zero.|
+|**BlankZeroAndPos**|runtime version 1.0|Clear positive numbers and zero.|
+|**BlankPos**|runtime version 1.0|Clear positive numbers.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

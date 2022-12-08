@@ -23,9 +23,9 @@ Specifies if the layout is wide.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Wide**|Available or changed with runtime version 1.0.|Sets the `cuegroup` control to the wide layout|
+|**Wide**|runtime version 1.0|Sets the `cuegroup` control to the wide layout|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

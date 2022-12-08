@@ -23,15 +23,15 @@ Specifies the table type.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Normal**|Available or changed with runtime version 1.0.|Specifies the table type used for Dynamics 365 Business Central.|
-|**CRM**|Available or changed with runtime version 1.0.|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
-|**ExternalSQL**|Available or changed with runtime version 1.0.|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database. This table type is not supported in Business Central online.|
-|**Exchange**|Available or changed with runtime version 1.0.|This table type is not supported in Business Central online.|
-|**MicrosoftGraph**|Available or changed with runtime version 1.0.|This table type is not supported in Business Central online.|
-|**CDS**|Available or changed with runtime version 5.0.|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
-|**Temporary**|Available or changed with runtime version 6.0.|Specifies the table as an in-memory table used to store temporary data.|
+|**Normal**|runtime version 1.0|Specifies the table type used for Dynamics 365 Business Central.|
+|**CRM**|runtime version 1.0|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Dynamics 365 for Sales.|
+|**ExternalSQL**|runtime version 1.0|Specifies the table as a table or view in SQL Server that is not in the Dynamics 365 Business Central database. This table type is not supported in Business Central online.|
+|**Exchange**|runtime version 1.0|This table type is not supported in Business Central online.|
+|**MicrosoftGraph**|runtime version 1.0|This table type is not supported in Business Central online.|
+|**CDS**|runtime version 5.0|Specifies the table as an integration table for integrating Dynamics 365 Business Central with Common Data Service.|
+|**Temporary**|runtime version 6.0|Specifies the table as an in-memory table used to store temporary data.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

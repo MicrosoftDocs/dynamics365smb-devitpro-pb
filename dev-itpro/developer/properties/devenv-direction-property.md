@@ -23,11 +23,11 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Import**|Available or changed with runtime version 1.0.|The XMLPort only imports data.|
-|**Export**|Available or changed with runtime version 1.0.|The XMLPort only exports data.|
-|**Both**|Available or changed with runtime version 1.0.|The XMLPort can import and export data.<br /><br /> If the XMLPort uses a request page, as specified by the **UseRequestPage Property**, then an option appears on the request page that enables the users to choose to import or export data. This is the default value.|
+|**Import**|runtime version 1.0|The XMLPort only imports data.|
+|**Export**|runtime version 1.0|The XMLPort only exports data.|
+|**Both**|runtime version 1.0|The XMLPort can import and export data.<br /><br /> If the XMLPort uses a request page, as specified by the **UseRequestPage Property**, then an option appears on the request page that enables the users to choose to import or export data. This is the default value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

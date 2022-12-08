@@ -25,10 +25,10 @@ Sets a value that specifies what happens when a main page with a subpage is upda
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**SubPart**|Available or changed with runtime version 1.0.|An update action will update the subpage only|
-|**Both**|Available or changed with runtime version 1.0.|An update action will update both the main page and the subpage|
+|**SubPart**|runtime version 1.0|An update action will update the subpage only|
+|**Both**|runtime version 1.0|An update action will update both the main page and the subpage|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

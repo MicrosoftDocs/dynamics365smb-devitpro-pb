@@ -24,10 +24,10 @@ Sets the type of text this element or attribute contains.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Text**|Available or changed with runtime version 1.0.|To display normal text. It is the default value.|
-|**BigText**|Available or changed with runtime version 1.0.|To display large text.|
+|**Text**|runtime version 1.0|To display normal text. It is the default value.|
+|**BigText**|runtime version 1.0|To display large text.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

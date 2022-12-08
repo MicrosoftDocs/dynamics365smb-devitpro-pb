@@ -23,16 +23,16 @@ Sets either a date method for retrieving the year, month, or day from a date fie
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Day**|Available or changed with runtime version 1.0.|Gets the day from the date expression for the field in the query column. The day is returned as an integer, in the range of 1 to 31, which represents the day of the month. If the day in the date expression is 0, then 1 is returned.|
-|**Month**|Available or changed with runtime version 1.0.|Gets the month from the date expression for the field in the query column. The month is returned as an integer, in the range of 1 to 12, where 1 represents January and 12 represents December. If the month in the date expression is 0, then 1 is returned.|
-|**Year**|Available or changed with runtime version 1.0.|Gets the year from the date expression for the field in the query column. The year is returned as an integer. If the year in the date expression is 0, then 1900 is returned.|
-|**Sum**|Available or changed with runtime version 1.0.|Adds the values of all fields for the specified column within a group.|
-|**Count**|Available or changed with runtime version 1.0.|Returns the number of rows that are included in the dataset within a group. **Note:**  The `Count` method is associated with the **DataItem** and not with a specific column, so the **DataSource** property must be blank.|
-|**Average**|Available or changed with runtime version 1.0.|Calculates the average value of the fields in the column within a group.<br /><br /> When averaging fields that have an integer data type (such as Integer or BigInteger), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 (or 2 1/2).|
-|**Min**|Available or changed with runtime version 1.0.|Retrieves the lowest value of fields in the column within a group.|
-|**Max**|Available or changed with runtime version 1.0.|Retrieves the highest value of fields in the column within a group.|
+|**Day**|runtime version 1.0|Gets the day from the date expression for the field in the query column. The day is returned as an integer, in the range of 1 to 31, which represents the day of the month. If the day in the date expression is 0, then 1 is returned.|
+|**Month**|runtime version 1.0|Gets the month from the date expression for the field in the query column. The month is returned as an integer, in the range of 1 to 12, where 1 represents January and 12 represents December. If the month in the date expression is 0, then 1 is returned.|
+|**Year**|runtime version 1.0|Gets the year from the date expression for the field in the query column. The year is returned as an integer. If the year in the date expression is 0, then 1900 is returned.|
+|**Sum**|runtime version 1.0|Adds the values of all fields for the specified column within a group.|
+|**Count**|runtime version 1.0|Returns the number of rows that are included in the dataset within a group. **Note:**  The `Count` method is associated with the **DataItem** and not with a specific column, so the **DataSource** property must be blank.|
+|**Average**|runtime version 1.0|Calculates the average value of the fields in the column within a group.<br /><br /> When averaging fields that have an integer data type (such as Integer or BigInteger), integer division is used. This means that result is not rounded, and the remainder is discarded. For example, 5÷2=2 instead of 2.5 (or 2 1/2).|
+|**Min**|runtime version 1.0|Retrieves the lowest value of fields in the column within a group.|
+|**Max**|runtime version 1.0|Retrieves the highest value of fields in the column within a group.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

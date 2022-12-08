@@ -25,10 +25,10 @@ Sets a value that indicates the maximum number of times an element can occur.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Once**|Available or changed with runtime version 1.0.|The element can occur at most once.|
-|**Unbounded**|Available or changed with runtime version 1.0.|There is no maximum number of occurences.|
+|**Once**|runtime version 1.0|The element can occur at most once.|
+|**Unbounded**|runtime version 1.0|There is no maximum number of occurences.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

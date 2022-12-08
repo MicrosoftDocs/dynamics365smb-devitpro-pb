@@ -23,10 +23,10 @@ Specifies if the layout is rows or columns.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Rows**|Available or changed with runtime version 1.0.|Use rows for the layout.|
-|**Columns**|Available or changed with runtime version 1.0.|Use columns for the layout.|
+|**Rows**|runtime version 1.0|Use rows for the layout.|
+|**Columns**|runtime version 1.0|Use columns for the layout.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

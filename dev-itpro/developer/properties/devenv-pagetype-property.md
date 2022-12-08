@@ -23,24 +23,24 @@ Sets the type of page to create.
 
 ## Property Value
 
-|Value|CompatibilityInfo|Description|
+|Value|Available or changed with|Description|
 |-----------|-----------|---------------------------------------|
-|**Card**|Available or changed with runtime version 1.0.|Master, reference, and set up data management.|
-|**List**|Available or changed with runtime version 1.0.|Entity overviews and navigation, and inline editing of simple entities.|
-|**RoleCenter**|Available or changed with runtime version 1.0.|Overview of business performance and the start page for a specific user profile.|
-|**CardPart**|Available or changed with runtime version 1.0.|A page that is embedded in another page, such as in a FactBox.|
-|**ListPart**|Available or changed with runtime version 1.0.|A page that is embedded in another page, such as in a FactBox.|
-|**Document**|Available or changed with runtime version 1.0.|Transaction and other document management.|
-|**Worksheet**|Available or changed with runtime version 1.0.|Line-based data entry tasks (such as journals) and inquiries.|
-|**ListPlus**|Available or changed with runtime version 1.0.|Statistics, details, and related data management.|
-|**ConfirmationDialog**|Available or changed with runtime version 1.0.|Confirmative or exceptional dialog, such as warnings.|
-|**NavigatePage**|Available or changed with runtime version 1.0.|Multi-step dialog (also known as a "Wizard").|
-|**StandardDialog**|Available or changed with runtime version 1.0.|Routine dialog that starts or progresses a task.|
-|**API**|Available or changed with runtime version 1.0.|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
-|**ReportPreview**|Available or changed with runtime version 1.0.|Preview of a report.|
-|**ReportProcessingOnly**|Available or changed with runtime version 1.0.|Only report processing.|
-|**XmlPort**|Available or changed with runtime version 1.0.|XmlPort page.|
-|**HeadlinePart**|Available or changed with runtime version 1.0.|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
+|**Card**|runtime version 1.0|Master, reference, and set up data management.|
+|**List**|runtime version 1.0|Entity overviews and navigation, and inline editing of simple entities.|
+|**RoleCenter**|runtime version 1.0|Overview of business performance and the start page for a specific user profile.|
+|**CardPart**|runtime version 1.0|A page that is embedded in another page, such as in a FactBox.|
+|**ListPart**|runtime version 1.0|A page that is embedded in another page, such as in a FactBox.|
+|**Document**|runtime version 1.0|Transaction and other document management.|
+|**Worksheet**|runtime version 1.0|Line-based data entry tasks (such as journals) and inquiries.|
+|**ListPlus**|runtime version 1.0|Statistics, details, and related data management.|
+|**ConfirmationDialog**|runtime version 1.0|Confirmative or exceptional dialog, such as warnings.|
+|**NavigatePage**|runtime version 1.0|Multi-step dialog (also known as a "Wizard").|
+|**StandardDialog**|runtime version 1.0|Routine dialog that starts or progresses a task.|
+|**API**|runtime version 1.0|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface.|
+|**ReportPreview**|runtime version 1.0|Preview of a report.|
+|**ReportProcessingOnly**|runtime version 1.0|Only report processing.|
+|**XmlPort**|runtime version 1.0|XmlPort page.|
+|**HeadlinePart**|runtime version 1.0|A page that is embedded in a `RoleCenter` page to display relevant insights from across the business.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
