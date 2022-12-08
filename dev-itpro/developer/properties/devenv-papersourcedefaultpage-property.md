@@ -3,7 +3,7 @@ title: "PaperSourceDefaultPage Property"
 description: "Specifies the default paper source to use when printing the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,37 +23,37 @@ Specifies the default paper source to use when printing the report.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Upper**|The upper bin of a printer.|
-|**Lower**|The lower bin of a printer.|
-|**Middle**|The middle bin of a printer.|
-|**Manual**|Manually fed paper.|
-|**Envelope**|An envelope.|
-|**ManualFeed**|Manually fed envelope.|
-|**AutomaticFeed**|Automatically fed paper.|
-|**TractorFeed**|A tractor feed.|
-|**SmallFormat**|Small-format paper.|
-|**LargeFormat**|Large-format paper.|
-|**LargeCapacity**|The large-capacity bin of printer.|
-|**Cassette**|A paper cassette.|
-|**FormSource**|The default input bin of printer.|
-|**Custom1**|A printer-specific paper source.|
-|**Custom2**|A printer-specific paper source.|
-|**Custom3**|A printer-specific paper source.|
-|**Custom4**|A printer-specific paper source.|
-|**Custom5**|A printer-specific paper source.|
-|**Custom6**|A printer-specific paper source.|
-|**Custom7**|A printer-specific paper source.|
-|**Custom8**|A printer-specific paper source.|
-|**Custom9**|A printer-specific paper source.|
-|**Custom10**|A printer-specific paper source.|
-|**Custom11**|A printer-specific paper source.|
-|**Custom12**|A printer-specific paper source.|
-|**Custom13**|A printer-specific paper source.|
-|**Custom14**|A printer-specific paper source.|
-|**Custom15**|A printer-specific paper source.|
-|**Custom16**|A printer-specific paper source.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Upper**|Available or changed with runtime version 1.0.|The upper bin of a printer.|
+|**Lower**|Available or changed with runtime version 1.0.|The lower bin of a printer.|
+|**Middle**|Available or changed with runtime version 1.0.|The middle bin of a printer.|
+|**Manual**|Available or changed with runtime version 1.0.|Manually fed paper.|
+|**Envelope**|Available or changed with runtime version 1.0.|An envelope.|
+|**ManualFeed**|Available or changed with runtime version 1.0.|Manually fed envelope.|
+|**AutomaticFeed**|Available or changed with runtime version 1.0.|Automatically fed paper.|
+|**TractorFeed**|Available or changed with runtime version 1.0.|A tractor feed.|
+|**SmallFormat**|Available or changed with runtime version 1.0.|Small-format paper.|
+|**LargeFormat**|Available or changed with runtime version 1.0.|Large-format paper.|
+|**LargeCapacity**|Available or changed with runtime version 1.0.|The large-capacity bin of printer.|
+|**Cassette**|Available or changed with runtime version 1.0.|A paper cassette.|
+|**FormSource**|Available or changed with runtime version 1.0.|The default input bin of printer.|
+|**Custom1**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom2**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom3**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom4**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom5**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom6**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom7**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom8**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom9**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom10**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom11**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom12**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom13**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom14**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom15**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
+|**Custom16**|Available or changed with runtime version 1.0.|A printer-specific paper source.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

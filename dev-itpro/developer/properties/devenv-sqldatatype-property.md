@@ -3,7 +3,7 @@ title: "SqlDataType Property"
 description: "Sets the data type that you want to allow in a code field."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,12 +23,12 @@ Sets the data type that you want to allow in a code field.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Varchar**|The data type is Varchar. This is the default value.|
-|**Integer**|The data type is Integer.|
-|**Variant**|The data type is Variant|
-|**BigInteger**|The data type is BigInteger.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Varchar**|Available or changed with runtime version 1.0.|The data type is Varchar. This is the default value.|
+|**Integer**|Available or changed with runtime version 1.0.|The data type is Integer.|
+|**Variant**|Available or changed with runtime version 1.0.|The data type is Variant|
+|**BigInteger**|Available or changed with runtime version 1.0.|The data type is BigInteger.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

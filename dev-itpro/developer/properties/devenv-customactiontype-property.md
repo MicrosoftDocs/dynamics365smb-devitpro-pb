@@ -3,7 +3,7 @@ title: "CustomActionType Property"
 description: "Sets the type of the custom action."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/11/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,9 +23,9 @@ Sets the type of the custom action.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Flow**|An action that can trigger a Power Automate Flow.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Flow**|Available or changed with runtime version 1.0.|An action that can trigger a Power Automate Flow.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

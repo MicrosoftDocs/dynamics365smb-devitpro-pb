@@ -3,7 +3,7 @@ title: "CompressionType Property"
 description: "Specifies the compression type used."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,12 +23,12 @@ Specifies the compression type used.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Unspecified**|Use the compression type that is specified externally on the table, for example, in SQL Server.|
-|**None**|Do not use compression on the table.|
-|**Row**|Compress the table on a row-level.|
-|**Page**|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Unspecified**|Available or changed with runtime version 1.0.|Use the compression type that is specified externally on the table, for example, in SQL Server.|
+|**None**|Available or changed with runtime version 1.0.|Do not use compression on the table.|
+|**Row**|Available or changed with runtime version 1.0.|Compress the table on a row-level.|
+|**Page**|Available or changed with runtime version 1.0.|Compress the table on a page-level. This includes row, prefix, and dictionary compression.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

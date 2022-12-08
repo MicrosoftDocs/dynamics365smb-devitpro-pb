@@ -3,7 +3,7 @@ title: "PreviewMode Property"
 description: "Specifies how the report opens when you preview it."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,10 @@ Specifies how the report opens when you preview it.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Normal**|Specifies that the report opens in the default view mode where you can navigate between entries and so on.|
-|**PrintLayout**|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Normal**|Available or changed with runtime version 1.0.|Specifies that the report opens in the default view mode where you can navigate between entries and so on.|
+|**PrintLayout**|Available or changed with runtime version 1.0.|Specifies that the report opens in the print layout mode that shows how the report will print on paper.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

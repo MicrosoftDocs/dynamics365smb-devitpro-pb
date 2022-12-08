@@ -3,7 +3,7 @@ title: "FormatEvaluate Property"
 description: "Sets the data that is being imported or exported as XML data types or as the standard AL data types."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,10 @@ Sets the data that is being imported or exported as XML data types or as the sta
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Legacy**|The data uses the standard AL data types.|
-|**Xml**|The data uses the standard XML data types.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Legacy**|Available or changed with runtime version 1.0.|The data uses the standard AL data types.|
+|**Xml**|Available or changed with runtime version 1.0.|The data uses the standard XML data types.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

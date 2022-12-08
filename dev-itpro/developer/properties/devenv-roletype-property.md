@@ -3,7 +3,7 @@ title: "RoleType Property"
 description: "If the entitlement type is Role, the RoleType is used to distinguish between local and delegated assignments of the role."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,10 +23,10 @@ If the entitlement type is Role, the RoleType is used to distinguish between loc
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Local**|The user is either a native user or a guest user in the company's AAD tenant, and that specific AAD role was assigned in the given AAD tenant.|
-|**Delegated**|The user has the given AAD role in the company's AAD tenant via a Delegated Admin relationship with a partner's AAD tenant.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**Local**|Available or changed with runtime version 1.0.|The user is either a native user or a guest user in the company's AAD tenant, and that specific AAD role was assigned in the given AAD tenant.|
+|**Delegated**|Available or changed with runtime version 1.0.|The user has the given AAD role in the company's AAD tenant via a Delegated Admin relationship with a partner's AAD tenant.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

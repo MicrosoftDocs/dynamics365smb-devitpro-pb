@@ -3,7 +3,7 @@ title: "ObsoleteState Property"
 description: "Marks whether the object will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,10 +28,8 @@ Marks whether the object will be deprecated.
 -   Enum Type
 -   Enum Value
 -   Page Action
--   Page Action Area
 -   Page Action Group
 -   Page Action Separator
--   Page Area
 -   Page Part
 -   Page System Part
 -   Page Chart Part
@@ -46,6 +44,8 @@ Marks whether the object will be deprecated.
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Action Area
+-   Page Area
 -   Page
 -   Page View
 -   Profile
@@ -56,10 +56,10 @@ Marks whether the object will be deprecated.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**No**|Not obsolete. This is the normal/default setting.|
-|**Pending**|Will become obsolete in a future version.|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**No**|Available or changed with runtime version 1.0.|Not obsolete. This is the normal/default setting.|
+|**Pending**|Available or changed with runtime version 1.0.|Will become obsolete in a future version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

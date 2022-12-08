@@ -3,7 +3,7 @@ title: "Style Property"
 description: "Sets a value that determines how text in a field on a page is formatted."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,19 +24,19 @@ Sets a value that determines how text in a field on a page is formatted. For fie
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**None**|None|
-|**Standard**|Standard|
-|**StandardAccent**|Blue|
-|**Strong**|Bold|
-|**StrongAccent**|Blue + Bold|
-|**Attention**|Red + Italic|
-|**AttentionAccent**|Blue + Italic|
-|**Favorable**|Bold + Green|
-|**Unfavorable**|Bold + Italic + Red|
-|**Ambiguous**|Yellow|
-|**Subordinate**|Grey|
+|Value|CompatibilityInfo|Description|
+|-----------|-----------|---------------------------------------|
+|**None**|Available or changed with runtime version 1.0.|None|
+|**Standard**|Available or changed with runtime version 1.0.|Standard|
+|**StandardAccent**|Available or changed with runtime version 1.0.|Blue|
+|**Strong**|Available or changed with runtime version 1.0.|Bold|
+|**StrongAccent**|Available or changed with runtime version 1.0.|Blue + Bold|
+|**Attention**|Available or changed with runtime version 1.0.|Red + Italic|
+|**AttentionAccent**|Available or changed with runtime version 1.0.|Blue + Italic|
+|**Favorable**|Available or changed with runtime version 1.0.|Bold + Green|
+|**Unfavorable**|Available or changed with runtime version 1.0.|Bold + Italic + Red|
+|**Ambiguous**|Available or changed with runtime version 1.0.|Yellow|
+|**Subordinate**|Available or changed with runtime version 1.0.|Grey|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
