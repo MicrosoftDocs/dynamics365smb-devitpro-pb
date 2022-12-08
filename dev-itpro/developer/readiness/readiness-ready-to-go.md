@@ -46,6 +46,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Supported countries, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries) 
 - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer)  
 - Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [partner.microsoft.com/isv-resource-hub/development-centers/find-a-center](https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center)  
+- Microsoft ISV Dev Centers: [aka.ms/ISVDevCenter](http://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode) 
 
 ## Go to market 
