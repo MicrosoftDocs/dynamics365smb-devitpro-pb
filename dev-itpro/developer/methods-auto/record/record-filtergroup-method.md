@@ -3,7 +3,7 @@ title: "Record.FilterGroup([Integer]) Method"
 description: "Gets or sets the filter group that is applied to a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/01/2021
+ms.date: 11/29/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -54,7 +54,7 @@ Filters in different groups are all effective simultaneously. For example, if in
 
 If you have filters on *multiple fields in the same filter group*, then only records matching all filters are visible. The only exception to this is filtergroup -1 where records only need to match at least one of the filters.
   
-[!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses the following filter groups internally.  
+[!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] uses the following filter groups internally. These filtergroups shouldn't be used.
   
 |Number      |Name      |Description|  
 |------------|----------|-----------------|  
@@ -71,10 +71,9 @@ If you have filters on *multiple fields in the same filter group*, then only rec
 A filter set in a group different from filter group 0 cannot be changed by a user that uses a filter dialog to set a filter. If, for example, a filter has been set on customer numbers 1000 to 2000 in group 4, then the user can set a filter that delimits this selection further, but cannot widen it to include customer numbers outside the range 1000 to 2000.  
   
 > [!NOTE]  
-> It is possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
-
-> [!NOTE]  
-> For performance reasons, filtergroup -1 does not support filtering on flowfields. 
+> - It is possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
+> - For performance reasons, filtergroup -1 does not support filtering on flowfields.
+> - The maximum number of filtergroups is 255. Greater numbers will be ignored, so don't use them. 
 
 > [!IMPORTANT]  
 > Using filter group 7 may cause factboxes to not work as intended.  
