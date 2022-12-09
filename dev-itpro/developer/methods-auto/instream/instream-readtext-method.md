@@ -54,7 +54,9 @@ If you do not use the optional return value and the data being read is less than
   
 If you use the return value, you must verify the validity of the data that has been read.  
   
-## Example  
+## Example
+
+This example shows to use the InStream.ReadText method to read stream from a text file. This example is only supported on Business Central on-premises.
 
 ```AL
  var
@@ -73,6 +75,8 @@ begin
     FileTest.Close();  
 end;
 ```  
+
+
 
 
 ## See Also
