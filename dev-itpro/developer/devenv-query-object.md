@@ -102,6 +102,8 @@ query 50102 "Top Customer Overview"
     QueryType = Normal;
     Caption = 'Top Customer Overview';
 
+    DataAccessIntent = ReadOnly; // use this to read data from the secondary database replica to speed up performance
+
     elements
     {
         dataitem(Customer; Customer)
@@ -161,6 +163,7 @@ query 50102 "Top Customer Overview"
 [Aggregating Data in Query Objects](devenv-query-totals-grouping.md)  
 [Query Objects and Performance](../administration/optimize-sql-query-objects-and-performance.md)  
 [Query Properties](properties/devenv-query-properties.md)  
+[Query DataAccessIntent](properties/devenv-dataaccessintent-property.md)  
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  
