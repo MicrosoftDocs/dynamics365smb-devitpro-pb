@@ -16,7 +16,7 @@ ms.author: jswymer
 Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
 > [!NOTE]
-> For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory documentation.
+> For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory (Azure AD) documentation.
 
 
 In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. 
@@ -49,6 +49,15 @@ Two main scenarios are enabled with S2S authentication:
 
 > [!NOTE]
 > When you use S2S authentication, you can now use the integration session to create scheduled tasks. This is supported on 21.2 and later versions of Business Central online.
+
+## Business Central on-premises prerequisite
+
+Business Central on-premises must be configured for Azure AD authentication with OpenID Connect.
+
+> [!IMPORTANT]
+> The `ValidAudiences` parameter of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] must include the endpoint `https://api.businesscentral.dynamics.com`. If it doesn't, you'll get the error `Authentication_InvalidCredentials` on API requests, or the error `securitytokeninvalidaudienceexception` in the application log when you try to download symbols from Visual Studio.
+
+For more information, go to [Configure Azure Active Directory Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 ## Set up service-to-service authentication
 
@@ -260,21 +269,3 @@ Authorization: {{accessHeader}}
 [Samples and libraries for OAuth: Microsoft identity platform authentication libraries](/azure/active-directory/develop/reference-v2-libraries)  
 [Business Central Repository on GitHub - PowerShell samples using MSAL](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess)  
 [Business Central API v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)
-
-
-
-<!-- 
-[Automation company](resources/dynamics_automationcompany.md)  
-[Company](resources/dynamics_company.md)  
-[Configuration package](resources/dynamics_configurationpackage.md)  
-[Extension](resources/dynamics_extension.md)  
-[Extension deployment status](resources/dynamics_extensiondeploymentstatus.md)  
-[Extension upload](resources/dynamics_extensionupload.md)  
-[Permission set](resources/dynamics_permissionset.md)  
-[Profile](resources/dynamics_profile.md)  
-[Scheduled job](resources/dynamics_scheduledjob.md)  
-[User](resources/dynamics_user.md)  
-[User group](resources/dynamics_usergroup.md)  
-[User group member](resources/dynamics_usergroupmember.md)  
-[User group permission](resources/dynamics_usergrouppermission.md)  
-[User permission](resources/dynamics_userpermission.md)   -->
