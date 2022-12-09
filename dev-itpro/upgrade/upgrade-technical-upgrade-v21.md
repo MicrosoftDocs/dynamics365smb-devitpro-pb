@@ -2,7 +2,7 @@
 title: "Technical Upgrade to Version 21"
 description: Describes how to do a technical upgrade from Business Central V18, V19, V20 to V21
 ms.custom: na
-ms.date: 09/01/2022
+ms.date: 12/09/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -60,9 +60,12 @@ $CustomerLicense = "The file path and name of the customer license"
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-4. Copy the contents of the **NavEwsWrapper** and **Timeline** add-in folders from the version 20 server instance installation to the same folder the new version 21 server instance. Replace existing files when prompted.
+4. Copy the contents of the **NavEwsWrapper**, **Timeline**, **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 21 server instance. Replace existing files when prompted.
 
-  By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
+   By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
+
+    > [!IMPORTANT]
+    > This step is important, otherwise you won't be about to recompile the Business Central system application and base application. If you don't repair these extension, you'll get errors when you try to install them or mount the tenant.
 
 ## Task 2: Upgrade permission sets
 

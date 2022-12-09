@@ -1,11 +1,10 @@
 ---
-title: "Fixing compilation errors for technical upgrade"
+title: Fixing compilation errors for technical upgrade
 description: Describes how to fix compilation errors that occur when compiling extensions during a technical upgrade.
-ms.custom: na
-ms.date: 10/01/2020
+ms.custom: bap-template
+ms.date: 12/09/2020
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -117,8 +116,8 @@ The legacy PingPong add-in was removed in version 21. To fix the error, copy the
 
 By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
 
-<!--
-### NavEtsWrapper DotNet errors
+### Exchange Web Services DotNet errors
+
 ```al
 DotNet%20Aliases/src/dotnet.al(1039,14): error AL0451: An assembly named 'Microsoft.Exchange.WebServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' could not be found in the assembly probing paths 'C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\Add-Ins, 
 C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\Microsoft Dynamics NAV\Add-Ins\21.0.45947.0, C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\, C:\Windows\Microsoft.NET\assembly\'
@@ -149,7 +148,10 @@ SetupEmailLogging.Page.al(754,32): error AL0185: DotNet 'OAuthCredentials' is mi
 SetupEmailLogging.Page.al(953,33): error AL0185: DotNet 'OAuthCredentials' is missing
 AttachmentManagement.Codeunit.al(278,25): error AL0185: DotNet 'WebCredentials' is missing
 ```
--->
+
+#### Fix
+
+The NavEtsWrapper add-in was changed in version 21. To fix the error, copy the **NavEtsWrapper** add-in folder from the earlier version's server installation to the **Add-ins** folder of the new version's server installation. Replace existing files when prompted.
  
 ## Rewrite code and create new extension versions
 
