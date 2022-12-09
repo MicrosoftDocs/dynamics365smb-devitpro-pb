@@ -152,10 +152,10 @@ AttachmentManagement.Codeunit.al(278,25): error AL0185: DotNet 'WebCredentials' 
 #### Fix
 
 The NavEtsWrapper add-in was changed in version 21. To fix the error, copy the **NavEtsWrapper** add-in folder from the earlier version's server installation to the **Add-ins** folder of the new version's server installation. Replace existing files when prompted.
- 
+
 ## Rewrite code and create new extension versions
 
-To fix compilation errors, you'll create a new version of the extension. You'll need the source files for the earlier version (that is, the version your upgrading from). For Microsoft extensions, like the system application and base application, you can get the source files from the installation media (DVD) for the earlier version, in the **Applications** folder. The basic steps are as follows:
+To fix compilation errors where you changed AL code, you'll create a new version of the extension. You'll need the source files for the earlier version (that is, the version your upgrading from). For Microsoft extensions, like the system application and base application, you can get the source files from the installation media (DVD) for the earlier version, in the **Applications** folder. The basic steps are as follows:
 
 1. Create new AL project in Visual Studio Code for the extension.
 
