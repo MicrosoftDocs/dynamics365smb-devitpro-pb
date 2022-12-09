@@ -3,7 +3,7 @@ title: "TransactionType Property"
 description: "Sets the transaction type."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,13 +24,13 @@ Sets the transaction type.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**UpdateNoLocks**|All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the **LOCKTABLE** method.|
-|**Update**|All read operations are performed with REPEATABLE READ locking until the table is either modified by any write operation or locked with the **LOCKTABLE** method.|
-|**Snapshot**|ll read operations are performed with REPEATABLE READ locking.|
-|**Browse**|All read operations are performed with READ UNCOMMITTED locking.|
-|**Report**|Maps to the **Browse** transaction type.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**UpdateNoLocks**|runtime version 1.0|All read operations are performed with READ UNCOMMITTED locking until the table is either modified by a write operation or locked with the **LOCKTABLE** method.|
+|**Update**|runtime version 1.0|All read operations are performed with REPEATABLE READ locking until the table is either modified by any write operation or locked with the **LOCKTABLE** method.|
+|**Snapshot**|runtime version 1.0|ll read operations are performed with REPEATABLE READ locking.|
+|**Browse**|runtime version 1.0|All read operations are performed with READ UNCOMMITTED locking.|
+|**Report**|runtime version 1.0|Maps to the **Browse** transaction type.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -3,7 +3,7 @@ title: "PromotedCategory Property"
 description: "Sets a category for a promoted action."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,28 +23,28 @@ Sets a category for a promoted action.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**New**|Actions will appear in the New menu.|
-|**Process**|Actions will appear in the Process menu.|
-|**Report**|Actions will appear in the Report menu.|
-|**Category4**|Actions will appear in the Category 4 menu.|
-|**Category5**|Actions will appear in the Category 5 menu.|
-|**Category6**|Actions will appear in the Category 6 menu.|
-|**Category7**|Actions will appear in the Category 7 menu.|
-|**Category8**|Actions will appear in the Category 8 menu.|
-|**Category9**|Actions will appear in the Category 9 menu.|
-|**Category10**|Actions will appear in the Category 10 menu.|
-|**Category11**|Actions will appear in the Category 11 menu.|
-|**Category12**|Actions will appear in the Category 12 menu.|
-|**Category13**|Actions will appear in the Category 13 menu.|
-|**Category14**|Actions will appear in the Category 14 menu.|
-|**Category15**|Actions will appear in the Category 15 menu.|
-|**Category16**|Actions will appear in the Category 16 menu.|
-|**Category17**|Actions will appear in the Category 17 menu.|
-|**Category18**|Actions will appear in the Category 18 menu.|
-|**Category19**|Actions will appear in the Category 19 menu.|
-|**Category20**|Actions will appear in the Category 20 menu.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**New**|runtime version 1.0|Actions will appear in the New menu.|
+|**Process**|runtime version 1.0|Actions will appear in the Process menu.|
+|**Report**|runtime version 1.0|Actions will appear in the Report menu.|
+|**Category4**|runtime version 1.0|Actions will appear in the Category 4 menu.|
+|**Category5**|runtime version 1.0|Actions will appear in the Category 5 menu.|
+|**Category6**|runtime version 1.0|Actions will appear in the Category 6 menu.|
+|**Category7**|runtime version 1.0|Actions will appear in the Category 7 menu.|
+|**Category8**|runtime version 1.0|Actions will appear in the Category 8 menu.|
+|**Category9**|runtime version 1.0|Actions will appear in the Category 9 menu.|
+|**Category10**|runtime version 1.0|Actions will appear in the Category 10 menu.|
+|**Category11**|runtime version 1.0|Actions will appear in the Category 11 menu.|
+|**Category12**|runtime version 1.0|Actions will appear in the Category 12 menu.|
+|**Category13**|runtime version 1.0|Actions will appear in the Category 13 menu.|
+|**Category14**|runtime version 1.0|Actions will appear in the Category 14 menu.|
+|**Category15**|runtime version 1.0|Actions will appear in the Category 15 menu.|
+|**Category16**|runtime version 1.0|Actions will appear in the Category 16 menu.|
+|**Category17**|runtime version 1.0|Actions will appear in the Category 17 menu.|
+|**Category18**|runtime version 1.0|Actions will appear in the Category 18 menu.|
+|**Category19**|runtime version 1.0|Actions will appear in the Category 19 menu.|
+|**Category20**|runtime version 1.0|Actions will appear in the Category 20 menu.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

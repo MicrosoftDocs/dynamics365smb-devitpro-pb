@@ -2802,6 +2802,7 @@
 ### [IndentationControls Property](properties/devenv-indentationcontrols-property.md)
 ### [InFooterBar Property](properties/devenv-infooterbar-property.md)
 ### [InherentEntitlements Property](properties/devenv-inherententitlements-property.md)
+### [InherentPermissions Property](properties/devenv-inherentpermissions-property.md)
 ### [InitValue Property](properties/devenv-initvalue-property.md)
 ### [InlineSchema Property](properties/devenv-inlineschema-property.md)
 ### [InsertAllowed Property](properties/devenv-insertallowed-property.md)
