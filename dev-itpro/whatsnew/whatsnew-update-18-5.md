@@ -16,7 +16,7 @@ author: EmmaNielsson
 Would you like to know what has changed in update 18.5? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 > [!IMPORTANT]  
-> Builds for Business Central in Turkey are now live. 
+> Builds for Business Central in Türkiye are now live. 
 
 ## Hotfixes
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5006076).

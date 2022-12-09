@@ -99,7 +99,7 @@ Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no f
 * [Azure Static Web Apps](/azure/static-web-apps/)  
 * [Azure App Service](/azure/app-service/quickstart-html)  
 * Third-party services such as [MkDocs](https://www.mkdocs.org/)  
-* Any website that can render MarkDown files using a [customization of the DocFx Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html)  
+* Any website that can render MarkDown files using a [customization of the DocFX Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html)  
 
 You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure). That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 
@@ -119,7 +119,7 @@ If you deploy a solution that customizes Microsoft's default application, then y
 
 [!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
-Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only.   
+Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only.
 
 [!INCLUDE [help-toolkit-deprecate](../includes/help-toolkit-deprecate.md)]
 
@@ -128,7 +128,7 @@ Microsoft's source files are available as downloadable packages for each major r
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
-Use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFx](https://dotnet.github.io/docfx/), examples are available in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
+Use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFX](https://dotnet.github.io/docfx/), examples are available in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
 
 > [!IMPORTANT]
 > [!INCLUDE [ua-robots](../includes/ua-robots.md)]

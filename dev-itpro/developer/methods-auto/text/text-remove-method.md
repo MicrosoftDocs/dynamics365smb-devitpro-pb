@@ -3,7 +3,7 @@ title: "Text.Remove(Integer [, Integer]) Method"
 description: "Returns a new Text in which a specified number of characters from the current string are deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Returns a new Text in which a specified number of characters from the current st
 ```AL
 Result :=   Text.Remove(StartIndex: Integer [, Count: Integer])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  

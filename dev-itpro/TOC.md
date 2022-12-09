@@ -66,7 +66,8 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)
+### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
+### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
 ### Updates for earlier major versions
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
@@ -372,6 +373,7 @@
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
+### [Define Migration Table Mappings](administration/migration-table-mapping.md)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
 ### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
@@ -1215,6 +1217,7 @@
 ### Tabs
 #### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
 #### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
+### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
 <!-- Business Central API -->
