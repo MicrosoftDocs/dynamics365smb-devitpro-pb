@@ -3,7 +3,7 @@ title: "Occurrence Property"
 description: "Sets a value that specifies whether an attribute must occur in the data that is being imported or exported."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,10 +24,10 @@ Sets a value that specifies whether an attribute must occur in the data that is 
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Required**|If the attribute must be part of the data. This is the default value.|
-|**Optional**|If the attribute does not have to be part of the data.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Required**|runtime version 1.0|If the attribute must be part of the data. This is the default value.|
+|**Optional**|runtime version 1.0|If the attribute does not have to be part of the data.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
