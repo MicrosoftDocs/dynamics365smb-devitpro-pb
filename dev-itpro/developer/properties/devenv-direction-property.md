@@ -3,7 +3,7 @@ title: "Direction Property"
 description: "Sets the XmlPort to import, export, or import and export data in XML format."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,11 +23,11 @@ Sets the XmlPort to import, export, or import and export data in XML format.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Import**|The XMLPort only imports data.|
-|**Export**|The XMLPort only exports data.|
-|**Both**|The XMLPort can import and export data.<br /><br /> If the XMLPort uses a request page, as specified by the **UseRequestPage Property**, then an option appears on the request page that enables the users to choose to import or export data. This is the default value.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Import**|runtime version 1.0|The XMLPort only imports data.|
+|**Export**|runtime version 1.0|The XMLPort only exports data.|
+|**Both**|runtime version 1.0|The XMLPort can import and export data.<br /><br /> If the XMLPort uses a request page, as specified by the **UseRequestPage Property**, then an option appears on the request page that enables the users to choose to import or export data. This is the default value.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
