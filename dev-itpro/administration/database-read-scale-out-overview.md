@@ -21,7 +21,7 @@ Where business process transactions typically are frequent and small, transactio
 
 If you run the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database in a High Availability architecture, you can use the built-in **Read Scale-Out** feature in Azure SQL Database or SQL Server to load-balance read-only workloads. **Read-Scale-Out** uses the capacity of a read-only replica instead of sharing the read-write replica (also known as the primary database). This way, read-only workloads like reports, queries, and API pages, are isolated from the main read-write workload codeunits. So they won't affect the performance of business processes. As an added bonus, read-only workloads will run on a dedicated database and their performance will likely be better.
 
-## Getting started using read scale-out
+## Get started using read scale-out
 
 To start using read scale-out, do these three steps:
 

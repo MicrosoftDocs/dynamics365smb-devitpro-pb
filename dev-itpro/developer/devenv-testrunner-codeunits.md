@@ -1,8 +1,8 @@
 ---
 title: Test Runner Codeunits
-description: This topic describes how to create test codeunits and how to create test runner codeunits. 
+description: This article describes how to create test codeunits and how to create test runner codeunits. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/12/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,8 @@ ms.topic: conceptual
 author: blrobl
 ---
 
-# Creating Test Runner Codeunits
+# Create Test Runner Codeunits
+
 You can create test runner codeunits to manage the execution of test codeunits and to integrate with test management or test reporting frameworks. By integrating with a test management framework, you can automate your tests and enable them to run unattended.  
 
 To create a test runner codeunit, create a codeunit and set the [SubType Property](properties/devenv-subtype-codeunit-property.md) to **TestRunner**.
@@ -30,12 +31,13 @@ Test runner codeunits include the following triggers:
 
 - [OnAfterTestRun Trigger](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 
-In the **OnRun** trigger you enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to perform preprocessing and postprocessing, such as initialization or logging test results. If you implement the **OnBeforeTestRun** trigger, then it executes before each test method executes. If you implement the **OnAfterTestRun** trigger, then it executes after each test method executes and also suppresses the automatic display of the results message.  
+In the **OnRun** trigger, you'll enter the code to run the codeunits. It runs when you execute the codeunit and before the test methods run. You can use the **OnBeforeTestRun** and the **OnAfterTestRun** triggers to perform preprocessing and postprocessing, such as initialization or logging test results. If you implement the **OnBeforeTestRun** trigger, then it executes before each test method executes. If you implement the **OnAfterTestRun** trigger, then it executes after each test method executes and also suppresses the automatic display of the results message.  
 
 > [!WARNING]  
 > The **OnBeforeTestRun** and **OnAfterTestRun** triggers always run in their own transactions, regardless of the value of the [TestIsolation Property](properties/devenv-TestIsolation-Property.md), the value of the [TransactionModel Property](./properties/devenv-properties.md), or the outcome of a test method. 
 
 ## Example
+
 This sample codeunit runs three test codeunits in the automated application test libraries.
 
 ```AL
@@ -53,7 +55,7 @@ codeunit 50101 TestRunnerCodeunit
 }
 ```
 
-You may want to define your test suite in a table and then write code in the test runner codeunit to iterate through items in the table and run each test codeunit. In that case, you can make use of the following example.
+You may want to define your test suite in a table and then write code in the test runner codeunit to iterate through the items in the table. And then run each test codeunit. In that case, you can make use of the following example.
 
 ```AL
 codeunit 50102 TestRunnerCodeunit

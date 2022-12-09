@@ -179,5 +179,5 @@ In version 2.0, the field `MyDateField` has been replaced by the field `MyTextFi
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

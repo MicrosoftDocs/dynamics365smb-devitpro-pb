@@ -90,7 +90,7 @@ Here is a JSON representation of the opportunity resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET opportunity](../api/dynamics_opportunity_get.md)
-[DELETE opportunity](../api/dynamics_opportunity_delete.md)
-[POST opportunity](../api/dynamics_opportunity_create.md)
+[GET opportunity](../api/dynamics_opportunity_get.md)  
+[DELETE opportunity](../api/dynamics_opportunity_delete.md)  
+[POST opportunity](../api/dynamics_opportunity_create.md)  
 [PATCH opportunity](../api/dynamics_opportunity_update.md)

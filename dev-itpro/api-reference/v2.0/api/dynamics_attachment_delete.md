@@ -6,7 +6,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/01/2022
+ms.date: 09/01/2022
 ms.author: solsen
 ---
 
@@ -14,7 +14,7 @@ ms.author: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-Deletes attachments in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Deletes attachments in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. An attachment in the [!INCLUDE[prod_short](../../../includes/prod_short.md)] API is defined as an Incoming Document (table 130).
 
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).

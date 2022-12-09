@@ -7,7 +7,7 @@ ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
 author: blrobl
-ms.author: t-blrobl
+ms.author: brobledodiaz
 ---
 # Differences and Limitations When Developing Pages for the Business Central Mobile App
 Developing for the [!INCLUDE[nav_tablet](includes/nav_tablet_md.md)] and [!INCLUDE[nav_phone](includes/nav_phone_md.md)] is similar to developing for the [!INCLUDE[webclient](includes/webclient.md)]. However, there some natural limitations on tablets and phones, such as not having a physical keyboard and mouse, as well as a smaller screen.

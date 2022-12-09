@@ -50,5 +50,5 @@ The value that was previously associated with the specified key.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [Dictionary Data Type](dictionary-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

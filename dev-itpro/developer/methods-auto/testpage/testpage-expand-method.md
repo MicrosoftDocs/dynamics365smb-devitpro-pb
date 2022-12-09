@@ -37,5 +37,5 @@ The rows that you want to expand on the test page.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestPage Data Type](testpage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

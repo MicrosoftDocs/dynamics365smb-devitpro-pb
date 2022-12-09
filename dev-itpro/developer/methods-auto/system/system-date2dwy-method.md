@@ -91,5 +91,5 @@ This example shows that the date 01/01/14 is regarded as day number 4 \(Thursday
 
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -67,7 +67,7 @@ If you have a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-pre
 
 Follow the steps outlined below.
 
-1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview/2.0.1.11).
+1. Download the latest [Azure AD PowerShell Module Public Preview release](https://www.powershellgallery.com/packages/AzureADPreview).
 2. Run the following command to sign in to your Azure AD admin account `Connect-AzureAD -Confirm`
 3. Sign in as the tenant admin. 
 4. Run the `Get-AzureADPolicy` command. 
@@ -169,6 +169,8 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 You can configure the [!INCLUDE[server](../developer/includes/server.md)] by using the [!INCLUDE[admintool](../developer/includes/admintool.md)] or [!INCLUDE[adminshell](../developer/includes/adminshell.md)].
 
 # [Administration Tool](#tab/admintool)
+
+[!INCLUDE[admin_tool_deprecated](../developer/includes/admin_tool_deprecated.md)]
 
 1. Open the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 

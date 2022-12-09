@@ -3,12 +3,11 @@ title: "CalcFormula Property"
 description: "Sets the Calculation formula for a FlowField."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -51,6 +50,6 @@ CalcFormula = Count(RecordCalcFields);
  You can choose from several methods of calculations including sum (total), average, maximum value, minimum value, record count, lookup, and whether a record exists.  
 
 ## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Calculation Formulas and the CalcFormula Property](../devenv-calculation-formulas-and-the-calcformula-property.md)

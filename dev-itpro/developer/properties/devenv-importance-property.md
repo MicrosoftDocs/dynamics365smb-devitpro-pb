@@ -3,12 +3,11 @@ title: "Importance Property"
 description: "Sets the amount of information that is visible in a window or dialog box."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -25,11 +24,11 @@ Sets the amount of information that is visible in a window or dialog box.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Standard**|Displays the field on the page by default.|
-|**Promoted**|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
-|**Additional**|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Standard**|runtime version 1.0|Displays the field on the page by default.|
+|**Promoted**|runtime version 1.0|Displays the field on the page and also in the header of the FastTab when the FastTab is collapsed.|
+|**Additional**|runtime version 1.0|Hides the field by default. On a FastTab, to show the field, a user can choose **Show more** to display the field.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

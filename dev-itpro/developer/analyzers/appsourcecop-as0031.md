@@ -28,13 +28,18 @@ Removing an action which has been published is not allowed because it will break
 > [!NOTE]  
 > Renaming an action will also trigger this error. AppSourceCop will consider the renamed action as a new action, unrelated to the one defined in the previous version.
 
+> [!NOTE]  
+> From Business Central 2022 release wave 2 (version 21), removing the [Promoted](../properties/devenv-promoted-property.md) property on an action is also considered a breaking change, since the AL compiler automatically synthesizes an action reference for each promoted action.
+
 ## How to fix this diagnostic?
 
 If the action was removed, revert the change by adding back the action and mark it as [Obsolete](../properties/devenv-obsoletestate-property.md).
 
 If the action was renamed in order to change its display string in the web client, consider using the [Caption](../properties/devenv-caption-property.md) property instead.
 
-If the action was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the action and introducing a new one.
+If the action was renamed in order to comply with naming rules such as [AS0011](appsourcecop-as0011.md), consider obsoleting the action before introducing a new one in the next version of the app.
+
+If the [Promoted](../properties/devenv-promoted-property.md) property was removed or set to false on an action, consider obsoleting the action before modifying the promoted property in the next version of the app.
 
 ## Examples of errors for dependent extensions
 
@@ -94,5 +99,5 @@ pageextension 50100 SomePageExtension extends MyPage
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -3,12 +3,11 @@ title: "GridLayout Property"
 description: "Specifies if the layout is rows or columns."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,10 +23,10 @@ Specifies if the layout is rows or columns.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Rows**|Use rows for the layout.|
-|**Columns**|Use columns for the layout.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Rows**|runtime version 1.0|Use rows for the layout.|
+|**Columns**|runtime version 1.0|Use columns for the layout.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

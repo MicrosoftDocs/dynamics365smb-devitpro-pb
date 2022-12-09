@@ -27,5 +27,5 @@ Tables and table extensions that have been published must not be deleted. This m
 ## See Also
 
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

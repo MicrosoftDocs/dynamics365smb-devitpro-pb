@@ -76,10 +76,10 @@ Feature names should be short and easy to identify. For example, Retention polic
 |alCallerAppVersionMinor     | The minor version of the extension that emitted telemetry.        |
 |alClientType     | The client type of the session.        |
 |alCompany     | The current company name.       |
-|alIsEvaluationCompany     | Whether the current company is an evaluation company.        |
-|alTenantLicenseState     | The license state of the tenant.        |
-|alIsAdmin     | Whether the current user is a tenant admin or delegated admin.        |
-|alCountryCode     | The country code of Business Central localization.        |
+|alIsEvaluationCompany | [!INCLUDE[environmentType](../includes/include-telemetry-dimension-is-evaluation-company.md)] |
+|alTenantLicenseState     | [!INCLUDE[environmentType](../includes/include-telemetry-dimension-tenant-license-state.md)] |
+|alIsAdmin     | [!INCLUDE[environmentType](../includes/include-telemetry-dimension-is-tenant-admin.md)]|
+|alCountryCode     | [!INCLUDE[environmentType](../includes/include-telemetry-dimension-country-code.md)] |
 |alDataClassification|**SystemMetadata**. Fixed and set by the Feature Telemetry codeunit.|
 |alObjectId     | **8713**. The object ID of the Feature Telemetry codeunit.        |
 |alObjectName     | **System Telemetry Logger**. The name of the codeunit used by the Feature Telemetry codeunit. |

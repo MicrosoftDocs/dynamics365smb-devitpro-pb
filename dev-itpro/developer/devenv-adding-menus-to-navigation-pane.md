@@ -3,7 +3,7 @@ title: Adding Menus to the Navigation Area
 description: "Enable users to quickly navigate and perform actions by adding the menu items to the navigation area."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,10 +16,10 @@ The navigation area appears at the top of the [!INCLUDE[d365fin_long_md](include
 
 ## Adding to the navigation menu
 
-The top-level navigation area is referred to as the navigation menu. The navigation menu contains one or more root menu items that expand to display a set of links to pages, and other objects like reports, XMLPorts, and codeunits. These links are defined by `action()` controls. You can also group `action()` controls in sub-menus. This enables you to create a logical hierarchy that matches the needs of the user role. The pages targeted by the links in the navigation menu will open in the content area of the Role Center.
+The top-level navigation area is referred to as the navigation menu. The navigation menu contains one or more root menu items that expand to display links to other pages. The links can be grouped into submenus, enabling you to create a logical hierarchy. These links are defined by `action()` controls. You can also group `action()` controls in submenus. This enables you to create a logical hierarchy that matches the needs of the user role. The pages targeted by the links in the navigation menu will open in the content area of the Role Center.
 
 > [!NOTE]
-> The [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] doesn't support sub-menus in the navigation menu.
+> The submenu items can include page extensions and other objects like reports, XMLPorts, and codeunits. The [!INCLUDE[nav_windows_md](includes/nav_windows_md.md)] doesn't support submenus in the navigation menu.
 
 You define the navigation menu by using an `area(Sections)` control in the page code.
 
@@ -76,7 +76,7 @@ You can also enable pages and reports to appear in the [!INCLUDE[d365fin_long_md
 
 ## Adding to the navigation bar
 
-The second-level navigation is referred to as the navigation bar. The navigation bar offers a flat list of links to other pages. These should be the most relevant pages needed for a user's business process. We recommend to have only the most important items on this level and to place the others in the top-level navigation instead. 
+The second-level navigation is referred to as the navigation bar. The navigation bar offers a flat list of links to other pages. These should be the most relevant pages needed for a user's business process. We recommend having only the most important items on this level and to place the others in the top-level navigation instead. 
 
 You define the navigation bar by using an `area(Embedding)` control in the page code.
 

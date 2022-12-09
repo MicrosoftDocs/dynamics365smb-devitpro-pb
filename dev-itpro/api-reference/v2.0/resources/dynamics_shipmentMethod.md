@@ -59,7 +59,7 @@ Here is a JSON representation of the shipmentMethod resource.
 
 
 ## See Also
-[GET shipmentMethod](../api/dynamics_shipmentMethod_Get.md)
-[DELETE shipmentMethod](../api/dynamics_shipmentMethod_Delete.md)
-[POST shipmentMethod](../api/dynamics_shipmentMethod_Create.md)
+[GET shipmentMethod](../api/dynamics_shipmentMethod_Get.md)  
+[DELETE shipmentMethod](../api/dynamics_shipmentMethod_Delete.md)  
+[POST shipmentMethod](../api/dynamics_shipmentMethod_Create.md)  
 [PATCH shipmentMethod](../api/dynamics_shipmentMethod_Update.md)

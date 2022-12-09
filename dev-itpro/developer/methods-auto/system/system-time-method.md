@@ -47,7 +47,7 @@ You can only use the Time method to retrieve the time from the operating system.
 
 ```al
 var
-    Text000: Label 'The current system time is %1.";
+    Text000: Label 'The current system time is %1.';
 begin
     Message(Text000, Time);  
 end;
@@ -61,5 +61,5 @@ On a computer that has the regional format set to English \(United States\), the
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

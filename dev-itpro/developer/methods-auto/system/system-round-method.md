@@ -101,5 +101,5 @@ When you round up \('>'\) a negative number, such as -1234.56789, it is rounded 
 ## See Also
 
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

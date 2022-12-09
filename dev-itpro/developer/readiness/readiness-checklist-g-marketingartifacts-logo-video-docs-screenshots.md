@@ -6,7 +6,6 @@ ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
 ms.topic: conceptual
-ms.author: a-emniel
 ---
 
 # Supporting documents, offer logo, screenshots, and video

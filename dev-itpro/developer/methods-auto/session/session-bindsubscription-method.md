@@ -67,5 +67,5 @@ end; // Notice, that when SubScriberCodeunit5000 goes out of scope, all bindings
 
 ## See Also
 [Session Data Type](session-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

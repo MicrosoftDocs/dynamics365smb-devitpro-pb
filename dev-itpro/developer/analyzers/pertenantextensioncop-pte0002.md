@@ -92,5 +92,5 @@ The table field `MyField` has the ID `1` which is valid because it is within the
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

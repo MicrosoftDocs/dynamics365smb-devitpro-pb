@@ -113,5 +113,5 @@ The dialog window opens and displays the progress indicator and percentage.
 
 ## See Also
 [Dialog Data Type](dialog-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

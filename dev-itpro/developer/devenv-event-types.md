@@ -2,7 +2,7 @@
 title: "Event Types"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -52,7 +52,7 @@ Global events are predefined system events that are automatically raised by vari
 
 |Codeunit ID|Codeunit Name|Event|
 |-----------|-------------|-----|
-|40|LoginManagement|OnRoleCenterOpen|  
+|9170|Conf./Personalization Mgt.|OnRoleCenterOpen|  
 |||OnAfterLogInEnd|  
 |||OnBeforeLogInStart|  
 |||OnBeforeCompanyOpen|  
@@ -74,7 +74,7 @@ Global events are predefined system events that are automatically raised by vari
 |||[OnAfterDocumentReady](devenv-onafterdocumentready-event.md)|
 |||[OnAfterDocumentDownload](devenv-onafterdocumentready-event.md)|
 |||[OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md)|
-|||[OnCustomDocumentMerger](devenv-oncustomdocumentmerger-event.md)|
+|||[OnCustomDocumentMergerex](devenv-oncustomdocumentmergerex-event.md)|
 |||OnAfterSubstituteReport|
 |45|AutoFormatManagement|OnAfterAutoFormatTranslate|
 |49|GlobalTriggerManagement|OnAfterGetGlobalTableTriggerMask|

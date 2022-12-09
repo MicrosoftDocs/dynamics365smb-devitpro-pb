@@ -158,7 +158,7 @@ Here is a JSON representation of the purchaseOrder resource.
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET purchaseOrder](../api/dynamics_purchaseorder_get.md)  
+[GET purchaseOrder](../api/dynamics_purchaseorder_get.md)   
 [DELETE purchaseOrder](../api/dynamics_purchaseorder_delete.md)  
 [POST purchaseOrder](../api/dynamics_purchaseorder_create.md)  
 [PATCH purchaseOrder](../api/dynamics_purchaseorder_update.md)  

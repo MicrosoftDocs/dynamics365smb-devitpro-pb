@@ -43,6 +43,6 @@ If there is an error in the trigger code, the drilldown is canceled. You can use
 This trigger overrides the [DrillDownPageID Property](../../properties/devenv-drilldownpageid-property.md) setting of the FlowField.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnDrillDown (Page Field) Trigger](../pagefield/devenv-ondrilldown-pagefield-trigger.md)

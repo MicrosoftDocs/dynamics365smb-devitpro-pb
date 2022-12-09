@@ -64,5 +64,5 @@ You can convert XML permission sets to AL objects. For more information, see [Up
 ## See Also
 [PermissionSet Object](../devenv-permissionset-object.md)
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -2,10 +2,12 @@
 title: "Updates for the Business Central 2021 Release Wave 2 version"
 description: "Learn about the updates for Dynamics 365 Business Central 2021 Release Wave 2 on-premises deployments."
 author: jswymer
-ms.custom: na
-ms.topic: conceptual
 ms.author: jswymer
-ms.date: 04/01/2022
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms.topic: conceptual
+ms.date: 12/02/2022
+ms.custom: bap-template
 ---
 
 # Dynamics 365 Business Central On-Premises 2021 Release Wave 2 Updates
@@ -26,6 +28,13 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5021670](https://support.microsoft.com/help/5021670)|Update 19.14 |December 2022 |Application Build 19.14.49970</br>Platform Build 19.0.49925|
+|[5021003](https://support.microsoft.com/help/5021003)|Update 19.13 |November 2022 |Application Build 19.13.48486</br>Platform Build 19.0.48446|
+|[5019240](https://support.microsoft.com/help/5019240)|Update 19.12 |October 2022 |Application Build 19.12.46992</br>Platform Build 19.0.46978|
+|[5017794](https://support.microsoft.com/help/5017794) |Update 19.11 |September 2022 |Application Build 19.11.45555</br>Platform Build 19.0.45529|
+|[5017016](https://support.microsoft.com/help/5017016) |Update 19.10 |August 2022 |Application Build 19.10.44353</br>Platform Build 19.0.44332|
+|[5016303](https://support.microsoft.com/help/5016303) |Update 19.9 |July 2022 |Application Build 19.9.43057</br>Platform Build 19.0.43044|
+|[5015474](https://support.microsoft.com/help/5015474) |Update 19.8 |June 2022 |Application Build 19.8.41406</br>Platform Build 19.0.41358 |
 |[5014490](https://support.microsoft.com/help/5014490) |Update 19.7 |May 2022 |Application Build 19.7.39830</br>Platform Build 19.0.38062 |
 |[5013422](https://support.microsoft.com/help/5013422) |Update 19.6 |April 2022 |Application Build 19.6.38118</br>Platform Build 19.0.38062 |
 |[5012307](https://support.microsoft.com/help/5012307) |Update 19.5 |March 2022 |Application Build 19.5.36700</br>Platform Build 19.0.36625 |
@@ -37,11 +46,10 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 ## See Also
 
 [Software lifecycle policy and on-premises releases](../terms/lifecycle-policy-on-premises.md)  
-[Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v15.md)  
+[Installing a Business Central Update](../upgrade/upgrading-cumulative-update-v19.md)  
 [Dynamics 365 Business Central On-Premises Spring 2019 Updates](update-versions-14.md)  
-[Dynamics 365 Business Central On-Premises October'18 Updates](update-versions-13.md)  
 [Resources for Help and Support](../help-and-support.md)  
-[System Requirements April '19](system-requirement-business-central.md)  
+[System Requirements](system-requirements-business-central-v19.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  

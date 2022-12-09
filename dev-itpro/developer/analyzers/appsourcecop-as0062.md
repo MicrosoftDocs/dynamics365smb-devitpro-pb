@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0062"
 description: "Page controls and actions must use the ApplicationArea property to be visible to users."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 10/26/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Page controls and actions must use the ApplicationArea property
 
 ## Description
-Page controls and actions must use the ApplicationArea property to be visible to users.
+Page controls and actions must use the ApplicationArea property to be visible to users. From runtime 11.0, you can specify on the application object level the ApplicationArea to use as default for all its controls and actions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -58,6 +58,8 @@ The field `MyField` and the action `MyAction` are not valid because they do not 
 
 ## Code example not triggering the rule
 
+### ApplicationArea property set on each members
+
 ```AL
 page 50100 MyPage
 {
@@ -87,8 +89,46 @@ page 50100 MyPage
 
 The field `MyField` and the action `MyAction` are valid because they have the `ApplicationArea` property set.
 
+### ApplicationArea property set on the object
+
+From runtime version 10.0, field, part, and action controls without ApplicationArea inherit the ApplicationArea defined on the page/report level.
+
+The following code will then not trigger this analyzer diagnostic.
+
+```AL
+page 50100 MyPage
+{
+    ApplicationArea = All;
+
+    layout
+    {
+        area(Content)
+        {
+            field(MyField; 150)
+            {
+                // ApplicationArea is inherited from the page.
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(MyAction) 
+            {
+                // ApplicationArea is inherited from the page.
+            }
+        }
+    }
+}
+```
+
+> [!NOTE]
+> This inheritance does not apply to members defined in extension objects like page extensions or report extensions.
+
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [ApplicationArea Property](..//properties/devenv-applicationarea-property.md)  

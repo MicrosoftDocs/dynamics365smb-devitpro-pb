@@ -3,12 +3,11 @@ title: "TestIsolation Property"
 description: "Specifies which changes to the database to roll back after the tests in the test runner codeunit execute."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,11 +23,11 @@ Specifies which changes to the database to roll back after the tests in the test
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Disabled**|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
-|**Codeunit**|Roll back all changes to the database after each test codeunit executes.|
-|**Function**|Roll back all changes to the database after each test method executes.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Disabled**|runtime version 1.0|Do not roll back any changes to the database. Tests are not isolated from each other. This is the default value.|
+|**Codeunit**|runtime version 1.0|Roll back all changes to the database after each test codeunit executes.|
+|**Function**|runtime version 1.0|Roll back all changes to the database after each test method executes.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

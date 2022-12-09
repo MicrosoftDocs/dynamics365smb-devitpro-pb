@@ -4,7 +4,7 @@ description: "Developing a custom API in AL for Business Central"
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ This walkthrough requires the following:
 
 - [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
   - The CRONUS International Ltd. demonstration data.
-  - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+  - Visual Studio Code with the AL Language extension installed. For more information, see [Get Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
 ## Creating source tables for the API
 
@@ -270,13 +270,14 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
                     {
                         Caption = 'Country';
                     }
-                    part(carModels; "API Car Model")
-                    {
-                        Caption = 'Car Models';
-                        EntityName = 'carModel';
-                        EntitySetName = 'carModels';
-                        SubPageLink = "Brand Id" = Field(SystemId);
-                    }
+                }
+
+                part(carModels; "API Car Model")
+                {
+                    Caption = 'Car Models';
+                    EntityName = 'carModel';
+                    EntitySetName = 'carModels';
+                    SubPageLink = "Brand Id" = Field(SystemId);
                 }
             }
         }
@@ -452,7 +453,7 @@ If you need to generate a web service endpoint that joins data between different
 For more information, see [API Query Type](devenv-api-querytype.md)
 
 ## See Also
-[Getting Started with AL](../developer/devenv-get-started.md)  
+[Get Started with AL](../developer/devenv-get-started.md)  
 [API Page Type](devenv-api-pagetype.md)   
 [API Query Type](devenv-api-querytype.md)   
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  

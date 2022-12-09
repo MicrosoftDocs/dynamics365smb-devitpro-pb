@@ -42,5 +42,5 @@ A string that contains the new public identifier for this Document Type Definiti
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlDocumentType Data Type](xmldocumenttype-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

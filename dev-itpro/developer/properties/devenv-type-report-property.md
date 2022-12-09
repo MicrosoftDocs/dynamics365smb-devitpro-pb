@@ -33,6 +33,6 @@ Sets the format type of the report layout.
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Type (Entitlement) Property](devenv-type-entitlement-property.md)

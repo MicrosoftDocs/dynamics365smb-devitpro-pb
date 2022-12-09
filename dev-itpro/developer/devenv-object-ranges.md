@@ -49,5 +49,5 @@ Download the [!INCLUDE[prod_short](includes/prod_short.md)] licensing guide [her
 ## See Also
 
 [Get Started with Building Apps](readiness/get-started.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Blog Post](https://community.dynamics.com/business/b/businesscentraldevitpro/archive/2018/10/17/which-object-ranges-can-we-use-with-microsoft-dynamics-365-business-central)

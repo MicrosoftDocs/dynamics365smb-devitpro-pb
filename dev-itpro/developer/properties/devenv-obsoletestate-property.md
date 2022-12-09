@@ -1,37 +1,35 @@
 ---
 title: "ObsoleteState Property"
-description: "Marks whether the object or element is or will become obsolete (deprecated)."
+description: "Marks whether the object will be deprecated."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteState Property
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 10.0._
 
-Marks whether the object or element is or will become obsolete (deprecated).
+Marks whether the object will be deprecated.
 
 ## Applies to
+-   Page Action Ref
+-   Page Custom Action
 -   Table Field
 -   Table
 -   Table Key
 -   Codeunit
 -   Enum Type
 -   Enum Value
--   Page
 -   Page Action
--   Page Action Area
 -   Page Action Group
 -   Page Action Separator
--   Page Area
 -   Page Part
 -   Page System Part
 -   Page Chart Part
@@ -46,6 +44,9 @@ Marks whether the object or element is or will become obsolete (deprecated).
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Action Area
+-   Page Area
+-   Page
 -   Page View
 -   Profile
 -   Interface
@@ -55,11 +56,10 @@ Marks whether the object or element is or will become obsolete (deprecated).
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**No**|Not obsolete. This is the normal/default setting.|
-|**Pending**|Will become obsolete in a future version.|
-|**Removed**|Has been made obsolete.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**No**|runtime version 1.0|Not obsolete. This is the normal/default setting.|
+|**Pending**|runtime version 1.0|Will become obsolete in a future version.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

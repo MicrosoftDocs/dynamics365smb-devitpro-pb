@@ -3,12 +3,11 @@ title: "UsageCategory Property"
 description: "Sets the department column for a searched page or report in the Web client."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -25,15 +24,15 @@ Sets the department column for a searched page or report in the Web client.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**None**|The page or report is not included in a search.|
-|**Lists**|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
-|**Tasks**|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
-|**ReportsAndAnalysis**|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
-|**Documents**|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
-|**History**|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
-|**Administration**|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**None**|runtime version 1.0|The page or report is not included in a search.|
+|**Lists**|runtime version 1.0|The page or report is listed as **Lists** under the **Pages and Tasks** category.|
+|**Tasks**|runtime version 1.0|The page or report is listed as **Tasks** under the **Pages and Tasks** category.|
+|**ReportsAndAnalysis**|runtime version 1.0|The page or report is listed as **Reports and Analysis** under the **Reports and Analysis** category.|
+|**Documents**|runtime version 1.0|The page or report is listed as **Documents** under the **Reports and Analysis** category.|
+|**History**|runtime version 1.0|The page or report is listed as **Archive** under the **Reports and Analysis** category.|
+|**Administration**|runtime version 1.0|The page or report is listed as **Administration** under the **Pages and Tasks** category.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

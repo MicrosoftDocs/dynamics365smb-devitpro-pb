@@ -6,7 +6,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/01/2022
+ms.date: 09/01/2022
 ms.author: solsen
 ---
 
@@ -14,7 +14,7 @@ ms.author: solsen
 
 [!INCLUDE[api_v2_note](../../../includes/api_v2_note.md)]
 
-Update the attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Update the attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)]. An attachment in the [!INCLUDE[prod_short](../../../includes/prod_short.md)] API is defined as an Incoming Document (table 130).
 
 
 ## HTTP request

@@ -69,7 +69,7 @@ Here is a JSON representation of the customerPaymentJournal resource.
 
 
 ## See Also
-[GET customerPaymentJournal](../api/dynamics_customerPaymentJournal_Get.md)
-[DELETE customerPaymentJournal](../api/dynamics_customerPaymentJournal_Delete.md)
-[POST customerPaymentJournal](../api/dynamics_customerPaymentJournal_Create.md)
+[GET customerPaymentJournal](../api/dynamics_customerPaymentJournal_Get.md)  
+[DELETE customerPaymentJournal](../api/dynamics_customerPaymentJournal_Delete.md)  
+[POST customerPaymentJournal](../api/dynamics_customerPaymentJournal_Create.md)  
 [PATCH customerPaymentJournal](../api/dynamics_customerPaymentJournal_Update.md)

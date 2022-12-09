@@ -47,7 +47,9 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPaymentJourn
 Content-type: application/json
 
 {
-PLACE CODE HERE.
+  "code": "OTTER",
+  "displayName": "Otter cash receipts and payments",
+  "balancingAccountId": "021c2ed0-021d-ed11-9db9-000d3aa935da"
 }
 ```
 
@@ -60,7 +62,12 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-PLACE CODE HERE.
+  "id": "1377cc08-eb23-ed11-88e7-f2834877f72d",
+  "code": "OTTER",
+  "displayName": "Otter cash receipts and payments",
+  "balancingAccountId": "021c2ed0-021d-ed11-9db9-000d3aa935da",
+  "balancingAccountNumber": "10700",
+  "lastModifiedDateTime": "2022-08-24T20:26:30.03Z"
 }
 ```
 
@@ -71,5 +78,3 @@ PLACE CODE HERE.
 [Get vendorPaymentJournal](dynamics_vendorPaymentJournal_Get.md)   
 [Delete vendorPaymentJournal](dynamics_vendorPaymentJournal_Delete.md)   
 [Update vendorPaymentJournal](dynamics_vendorPaymentJournal_Update.md)   
-
-

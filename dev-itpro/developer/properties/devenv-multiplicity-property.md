@@ -3,12 +3,11 @@ title: "Multiplicity Property"
 description: "Specify the multiplicity of the part."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,10 +23,10 @@ Specify the multiplicity of the part.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**ZeroOrOne**|Zero or one entity|
-|**Many**|Any number of entities.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**ZeroOrOne**|runtime version 1.0|Zero or one entity|
+|**Many**|runtime version 1.0|Any number of entities.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -54,6 +53,12 @@ Specify the multiplicity of the part.
         
 ```
 
-## See Also  
-[Getting Started with AL](../devenv-get-started.md)  
+## Remarks
+
+This property is used on page parts on API pages. For more information, see [API Page Type](../devenv-api-pagetype.md). By default multiplicity for parts is defined as 1:N. For more in-depth examples and information, see [Developing a Custom API](../devenv-develop-custom-api.md).
+
+
+## See Also
+
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

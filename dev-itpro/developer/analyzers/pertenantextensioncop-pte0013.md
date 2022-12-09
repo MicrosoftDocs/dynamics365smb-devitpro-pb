@@ -27,5 +27,5 @@ For examples and guidance on fixing this diagnostic, see [AppSourceCop Rule AS00
 ## See Also
 [Entitlements and Permissions Sets Overview](../devenv-entitlements-and-permissionsets-overview.md)  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

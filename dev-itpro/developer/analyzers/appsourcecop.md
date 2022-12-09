@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/21/2022
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -103,7 +103,6 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0090](appsourcecop-as0090.md)|Objects that can be referenced and which have been published must not be renamed.|Upgrade|Error|
 |[AS0091](appsourcecop-as0091.md)|One or more dependencies of the previous version of the extension could not be found.|Upgrade|Error|
 |[AS0092](appsourcecop-as0092.md)|The app.json file must specify an Azure Application Insights resource.|Configuration|Warning|
-|[AS0093](appsourcecop-as0093.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[AS0094](appsourcecop-as0094.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
 |[AS0095](appsourcecop-as0095.md)|The access modifier of a table field cannot be changed to a value that provides less access.|Configuration|Error|
 |[AS0096](appsourcecop-as0096.md)|The name of an extension cannot be changed.|Configuration|Error|
@@ -116,6 +115,10 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0103](appsourcecop-as0103.md)|Table definitions must have a matching permission set.|Configuration|Warning|
 |[AS0104](appsourcecop-as0104.md)|The extension name is not valid.|Extensibility|Error|
 |[AS0105](appsourcecop-as0105.md)|Object pending obsoletion contains an expired ObsoleteTag.|Design|Error|
+|[AS0106](appsourcecop-as0106.md)|A variable belonging to the public API cannot be removed.|Design|Error|
+|[AS0107](appsourcecop-as0107.md)|The access modifier of a variable that belongs to the public API cannot be changed to a value that provides less access.|Design|Error|
+|[AS0108](appsourcecop-as0108.md)|The type of a variable belonging to the public API cannot be changed.|Design|Error|
+|[AS0109](appsourcecop-as0109.md)|The type of the table has changed from Normal to Temporary.|Upgrade|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

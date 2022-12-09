@@ -3,7 +3,7 @@ title: "AppSourceCop Warning AS0098"
 description: "An affix is needed."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 09/21/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,6 +33,7 @@ The following object members are validated by AS0098:
 - Enum Values defined in Enum Extension objects
 - Data Items defined in Report Extension objects
 - Columns defined in Report Extension objects
+- Labels defined in Report Extension objects
 
 Other AL objects and object members are validated by [AS0011](appsourcecop-as0011.md).
 
@@ -54,5 +55,5 @@ For detailed examples, see [AS0011](appsourcecop-as0011.md).
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

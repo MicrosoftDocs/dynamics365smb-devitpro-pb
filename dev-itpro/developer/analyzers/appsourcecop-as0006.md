@@ -27,5 +27,5 @@ Tables that have been published must not change name. This might break the upgra
 ## See Also
 
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)

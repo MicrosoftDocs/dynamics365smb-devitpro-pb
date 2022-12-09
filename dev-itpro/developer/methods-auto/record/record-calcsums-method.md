@@ -49,7 +49,7 @@ If one of the fields specified is not a SumIndexField, the operation will be uns
 
 ## See Also
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [CALCSUM Method (FieldRef)](../fieldref/fieldref-calcsum-method.md)  
 [AL Database Methods and Performance on SQL Server](../../../administration/optimize-sql-al-Database-methods-and-performance-on-server.md)

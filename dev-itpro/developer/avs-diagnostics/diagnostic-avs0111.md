@@ -20,5 +20,5 @@ A {0} with name '{1}' is found in both {2} and {3}. Object names must be unique 
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

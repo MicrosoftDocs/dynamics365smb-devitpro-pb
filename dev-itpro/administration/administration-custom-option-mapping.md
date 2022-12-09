@@ -13,9 +13,6 @@ ms.date: 04/01/2021
 
 This walkthrough describes how to customize option mappings in an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through the steps to integrate industry groups in [!INCLUDE[prod_short](../includes/prod_short.md)] with industry codes in the Account table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
-> [!TIP]
-> Sample code for this integration is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/DataverseCustomOptionMapping) repository.
-
 ## About this walkthrough
 
 This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high level, the process involves the following tasks:  
@@ -43,7 +40,7 @@ This walkthrough has the following requirements:
       Use a sandbox environment. For more information, see [Production and Sandbox Environments](environment-types.md).
     - Integration with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is enabled, including the default synchronization setup and a working connection between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
     - Feature switch **Feature Update: Map to option sets in Dataverse without code** is enabled.
-    - Visual Studio Code with the AL Language extension installed. For more information, see [Getting Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
+    - Visual Studio Code with the AL Language extension installed. For more information, see [Get Started with AL](../developer/devenv-get-started.md) and [AL Language Extension Configuration](../developer/devenv-al-extension-configuration.md). The AL Language extension for Visual Studio is free, and you can download it from [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 
 ## Create an integration table in Business Central for the Dataverse option set  
 

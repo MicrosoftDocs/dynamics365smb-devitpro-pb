@@ -3,7 +3,7 @@ title: "RecordRef.SetView(Text) Method"
 description: "Sets the current sort order, key, and filters on a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 08/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,23 +30,23 @@ An instance of the [RecordRef](recordref-data-type.md) data type.
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The string format is the same as the SourceTableView property on pages.  
+A string that contains the sort order, key, and filter to set. The string format is the same as the SourceTableView property on pages.  
 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks  
- The value of the *String* parameter can be returned by the [GetView Method \(RecordRef\)](recordref-getview-method.md).  
+The value of the *String* parameter can be returned by the [GetView Method \(RecordRef\)](recordref-getview-method.md) with the UseNames parameter explicitly set to *false*.  
   
- If the SetView method is executed with an empty string, all the filters are removed and the primary key is used.  
+If the SetView method is executed with an empty string, all the filters are removed and the primary key is used.  
   
- If no table is selected, the SetView method fails.  
+If no table is selected, the SetView method fails.  
   
- This method works the same as the [SetView Method \(Record\)](../record/record-setview-method.md).  
+This method works the same as the [SetView Method \(Record\)](../record/record-setview-method.md).  
   
 ## Example  
- The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SetView method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GetView Method \(RecordRef\)](recordref-getview-method.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. 
+The following example opens the Customer \(18\) table as a RecordRef variable that is named CustomerRecRef. The SetView method sets the sort key to the Name field, sort order to Ascending and sets a filter that selects records between 1000 and 2000. The [GetView Method \(RecordRef\)](recordref-getview-method.md) retrieves the sort order, key and filters that have been set and stores the value in the ViewString variable. The value in the ViewString variable is displayed in a message box. 
 
 ```al
 var
@@ -64,5 +64,5 @@ end;
 
 ## See Also
 [RecordRef Data Type](recordref-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

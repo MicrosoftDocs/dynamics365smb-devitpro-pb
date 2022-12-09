@@ -3,7 +3,7 @@ title: "Text.ConvertStr(Text, Text, Text) Method"
 description: "Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Replaces all chars in source found in FromCharacters with the corresponding char
 ```AL
 NewString :=   Text.ConvertStr(String: Text, FromCharacters: Text, ToCharacters: Text)
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -65,7 +67,7 @@ var
     Text000: Label 'Do you want to leave without saving?';
     Text001: Label 'lws';
     Text002: Label 'LWS';
-    Text003: Label 'The original sentence is \\: %1';
+    Text003: Label 'The original sentence is\\: %1';
     Text004: Label 'The sentence is converted to:\\ %1';
 begin
     OriginalString := Text000;  
@@ -92,5 +94,5 @@ end;
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -42,7 +42,7 @@ Once you have the API access enabled, you can write code that integrates your we
 |**Endpoint**           |OData base URL in installation: <br> `https://`<br>`<base URL>:<port>/<serverInstance>/api/<API version>/` <br> Example: `https://`<br>`nav.contoso.com:7048/`<br>`bc/api/v1.0` <br> Must be exposed through a firewall.<br><br>Extension APIs:<br>`https://<base URL>:<port>/<serverinstance>/api/<API publisher>/<API group>/<API version>`|
 |**Availability**       |Turned off by default.<br> Must be enabled by the administrator.|
 |**Authentication**     |Basic authentication.<br> Username and [web service<br> access key](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps) as password. Your solution must be configured to use **NavUserPassword** or **AccessControlService** authentication in order to configure Dynamics NAV user accounts to include an access key.|
-|**API/Data access**    |Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|
+|**API/Data access**    |Based on user's<br> [permissions](../../developer/devenv-permissions-on-database-objects.md)|
 |**API update cycle**   |Hotfixes installed by partner.|
 |**Development instance**|Get [Docker](https://aka.ms/navdeveloperpreview) instance.|
 

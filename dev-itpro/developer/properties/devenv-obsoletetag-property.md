@@ -3,35 +3,33 @@ title: "ObsoleteTag Property"
 description: "Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # ObsoleteTag Property
-> **Version**: _Available or changed with runtime version 4.3._
+> **Version**: _Available or changed with runtime version 10.0._
 
 Specifies a free-form text to support tracking of where and when the object was marked as obsolete, for example, branch, build, or date of obsoleting the object.
 
 ## Applies to
+-   Page Action Ref
+-   Page Custom Action
 -   Table Field
 -   Table
 -   Table Key
 -   Codeunit
 -   Enum Type
 -   Enum Value
--   Page
 -   Page Action
--   Page Action Area
 -   Page Action Group
 -   Page Action Separator
--   Page Area
 -   Page Part
 -   Page System Part
 -   Page Chart Part
@@ -46,6 +44,9 @@ Specifies a free-form text to support tracking of where and when the object was 
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Action Area
+-   Page Area
+-   Page
 -   Page View
 -   Profile
 -   Interface

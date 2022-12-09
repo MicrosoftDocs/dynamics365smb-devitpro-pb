@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.author: t-blrobl
+ms.author: brobledodiaz
 ---
 
 # Simple Role Center Code Example

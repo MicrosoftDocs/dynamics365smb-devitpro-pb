@@ -57,7 +57,7 @@ Here is a JSON representation of the bankAccount resource.
 
 
 ## See Also
-[GET bankAccount](../api/dynamics_bankAccount_Get.md)
-[DELETE bankAccount](../api/dynamics_bankAccount_Delete.md)
-[POST bankAccount](../api/dynamics_bankAccount_Create.md)
+[GET bankAccount](../api/dynamics_bankAccount_Get.md)  
+[DELETE bankAccount](../api/dynamics_bankAccount_Delete.md)  
+[POST bankAccount](../api/dynamics_bankAccount_Create.md)  
 [PATCH bankAccount](../api/dynamics_bankAccount_Update.md)

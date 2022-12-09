@@ -3,12 +3,11 @@ title: "PromotedIsBig Property"
 description: "Sets the action to appear before other promoted actions in the action bar, regardless of its position in the AL code of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -36,6 +35,9 @@ PromotedIsBig = true;
 **true** display the action before other actions in the action bar; otherwise, **false**. The default is **false**.  
 
 ## Remarks
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](../devenv-promoted-actions.md).
 
 If there is more than one action that has the PromotedIsBig property set to **true**, then the actions will appear before other actions, in the order that they are defined in AL.
 

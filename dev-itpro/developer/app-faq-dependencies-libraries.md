@@ -15,11 +15,11 @@ This section contains answers to frequently asked questions about library apps a
 
 ## What is a library app?
 
-A library app contains common code that other apps depend on. If you are going to have multiple AppSource apps that all share common code, such as licensing, registration,and so on, you can put that common code into a library app and have the AppSource apps depend on the library app.
+A library app contains common code that other apps depend on. If you're going to have multiple AppSource apps that all share common code, such as licensing, registration, and so on, you can put that common code into a library app and have the AppSource apps depend on the library app.
 
 ## How does the library app get installed to a tenant?
 
-A library app does not appear on AppSource. It only lives in [!INCLUDE[prod_short](includes/prod_short.md)]. Our service is built to install the library apps behind the scenes. Here is how it works. Customers finds an app they want to install on AppSource. That customer does not know the app even has library app(s). When they click to install the app, our service looks into that apps json/manifest to see if it first needs to install any library/dependency apps it may depend on. If so, it installs them first before installing the main AppSource app.
+A library app doesn't appear on AppSource. It only lives in [!INCLUDE[prod_short](includes/prod_short.md)]. Our service is built to install the library apps behind the scenes. Here's how it works. Customers find an app they want to install on AppSource. That customer doesn't know the app even has library app(s). When they select to install the app, our service looks into that apps json/manifest to see if it first needs to install any library/dependency apps it may depend on. If so, it installs them first before installing the main AppSource app.
 
 ## What is a dependency app?
 
@@ -33,7 +33,7 @@ Yes. Just make sure you list all library apps as dependencies within the AppSour
 
 Libraries are updated only when the new version of your app requires a higher version than the version currently installed in your environment. If you want your library app to be automatically updated when your AppSource app is updated, you must increase the minimum version required in the manifest (app.json) of your AppSource app. 
 
-Note that you can also uninstall and reinstall the library/dependency app to have it updated.
+You can also uninstall and reinstall the library/dependency app to have it updated.
 
 ## What are the validation requirements for library apps
 Library apps only get validated technically, but don't go through any type of marketing validation. The technical requirements are described [here](devenv-checklist-submission.md).  

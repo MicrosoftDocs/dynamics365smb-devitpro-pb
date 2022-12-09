@@ -1,7 +1,7 @@
 ---
 title: "Essential AL Methods"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 09/28/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,9 +11,9 @@ author: SusanneWindfeldPedersen
 
 # Essential AL Methods
 
-Although there are hundreds of methods in AL, there are several methods that you will use more often than the others. This does not mean that the rest of the methods are obsolete or that you will never use them. However, it does mean that if you are very familiar with this small set of essential methods, you will be able to accomplish many tasks when you are programming in AL. When you want to add more specialized functionality to your applications, you can learn about more of the methods.  
+Although there are hundreds of methods in AL, there are several methods that you'll use more often than the others. It doesn't mean that the rest of the methods are obsolete or that you'll never use them. However, it does mean that if you're familiar with this small set of essential methods, you'll be able to accomplish many tasks when you're programming in AL. When you want to add more specialized functionality to your applications, you can learn about more of the methods.  
 
-The topics in this section describe the most common AL methods. For more details about all of the AL methods, see [AL Method Reference](methods-auto/library.md).  
+The articles in this section describe the most common AL methods. For more information about all of the AL methods, see [AL Method Reference](methods-auto/library.md).  
 
 - [Get, Find, and Next Methods](devenv-get-find-and-next-methods.md)  
 - [SetCurrentKey, SetRange, SetFilter, GetRangeMin, and GetRangeMax Methods](devenv-setcurrentkey-setrange-setfilter-getrangemin-and-getrangemax-methods.md)  

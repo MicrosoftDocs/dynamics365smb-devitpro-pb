@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with Modules"
+title: "Get Started with Modules"
 description: "Provides an overview of what you will need to work with modules in the System Application."
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -9,11 +9,12 @@ ms.topic: conceptual
 author: bholtorf
 ms.custom: intro-internal
 ---
-# Getting Started with Modules in the System Application
+
+# Get Started with Modules in the System Application
 This topic provides information about requirements for working with modules in the System Application.
 
 ## AL
-Get familiar with development in AL. For more information, see [Getting Started with AL](./devenv-get-started.md).  
+Get familiar with development in AL. For more information, see [Get Started with AL](./devenv-get-started.md).  
 
 ## Git
 Familiarize yourself with Git. For a quick introduction, see [git - the simple guide](https://rogerdudler.github.io/git-guide/).
@@ -31,5 +32,6 @@ Want to improve an existing module? For more information, see [Change a module](
 Please open an [issue](https://github.com/microsoft/ALAppExtensions/issues/new).
 
 ## See Also
+
 [Module Architecture](devenv-blueprint.md)  
 [Create a module](devenv-new-module.md)

@@ -57,7 +57,7 @@ Here is a JSON representation of the project resource.
 
 
 ## See Also
-[GET project](../api/dynamics_project_Get.md)
-[DELETE project](../api/dynamics_project_Delete.md)
-[POST project](../api/dynamics_project_Create.md)
+[GET project](../api/dynamics_project_Get.md)  
+[DELETE project](../api/dynamics_project_Delete.md)  
+[POST project](../api/dynamics_project_Create.md)  
 [PATCH project](../api/dynamics_project_Update.md)

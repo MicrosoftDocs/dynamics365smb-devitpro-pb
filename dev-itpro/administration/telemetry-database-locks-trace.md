@@ -31,7 +31,7 @@ Two types of trace events are emitted to Application Insights:
 > In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
 
 > [!TIP]
-> When analyzing database lock timeout telemetry, it's useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/RawData/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
+> When analyzing database lock timeout telemetry, it's useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
 
 ## Database lock timed out
 

@@ -3,12 +3,11 @@ title: "TreeInitialState Property"
 description: "Specifies the initial state of the records in a repeater control which is displayed as a tree structure."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,10 +23,10 @@ Specifies the initial state of the records in a repeater control which is displa
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**ExpandAll**|All records in the tree are expanded.|
-|**CollapseAll**|All records in the tree are collapsed.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**ExpandAll**|runtime version 1.0|All records in the tree are expanded.|
+|**CollapseAll**|runtime version 1.0|All records in the tree are collapsed.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

@@ -1,9 +1,9 @@
 ---
-title: "Creating Runtime Packages for Business Central On-Premises"
+title: "Create Runtime Packages for Business Central On-Premises"
 description: "How to create runtime packages used for distribution of extensions."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/24/2021
+ms.date: 06/03/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Creating Runtime Packages for Business Central On-Premises
+# Create Runtime Packages for Business Central On-Premises
 
 If you want to distribute extensions, you can generate runtime packages that don't contain AL code, but only the final artifacts used by the server at runtime. Runtime packages thereby allow you to protect the intellectual property represented by your AL source code. 
 
@@ -34,7 +34,7 @@ For publishing and installing the package, use the [Publish-NavApp](/powershell/
 
 ## Upgrade considerations
 
-Like any extension, extensions distributed in runtime packages will occasionally have to be upgraded so that they can run on with the latest Business Central version. There are two ways to upgrade a runtime package. Each way provides a different level of upgrade.
+Like any extension, extensions distributed in runtime packages will occasionally have to be upgraded so that they can run on with the latest [!INCLUDE[prod_short](../includes/prod_short.md)] version. There are two ways to upgrade a runtime package. Each way provides a different level of upgrade.
 
 ### Create a new extension version and runtime package
 
@@ -42,7 +42,7 @@ The recommended way to upgrade a runtime package is to build a new version of th
 
 ### Recompile the existing package
 
-Another way to upgrade the package is to use the [Repair-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) to recompile the published package against the new platform and Business Central server instance. Once complied, you can reinstall the package on the tenant. Be aware that using the Repair-NAVApp cmdlet doesn't guarantee the extension will work properly. It's not recommended when upgrading to a new version. 
+Another way to upgrade the package is to use the [Repair-NAVApp cmdlet](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) to recompile the published package against the new platform and [!INCLUDE[prod_short](../includes/prod_short.md)] server instance. Once complied, you can reinstall the package on the tenant. Be aware that using the Repair-NAVApp cmdlet doesn't guarantee the extension will work properly. It's not recommended when upgrading to a new version. 
 
 The Repair-NAVApp cmdlet requires that the runtime package includes the source code. You can include the source code in two different ways:
 
@@ -57,7 +57,7 @@ The limitation of runtime packages is that they only work for on-premise install
 > Runtime packages are guaranteed to work only if published to a platform with the same version as the one where they were produced.
 
 > [!NOTE]  
-> If you set the `showMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and you thereby also allow viewing the source code.
+> If you set the `showMyCode` flag to `true` when running the `Get-NavAppRuntimePackage` cmdlet, you can enable debugging and thereby also allow viewing the source code.
 
 ## See Also
 

@@ -62,5 +62,5 @@ end;
 
 ## See Also
 [Variant Data Type](variant-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

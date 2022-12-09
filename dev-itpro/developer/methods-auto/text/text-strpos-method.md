@@ -3,7 +3,7 @@ title: "Text.StrPos(Text, Text) Method"
 description: "Searches for the first occurrence of substring inside a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Searches for the first occurrence of substring inside a string.
 ```AL
 Position :=   Text.StrPos(String: Text, SubString: Text)
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -89,5 +91,5 @@ Pos4 := StrPos("abc","x"); // Returns 0.
 
 ## See Also
 [Text Data Type](text-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

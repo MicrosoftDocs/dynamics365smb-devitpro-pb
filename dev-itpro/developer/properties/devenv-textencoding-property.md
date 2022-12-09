@@ -3,12 +3,11 @@ title: "TextEncoding Property"
 description: "Specifies the text encoding format to use when you use an XmlPort to export or import data as text."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,12 +23,12 @@ Specifies the text encoding format to use when you use an XmlPort to export or i
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**MSDOS**|Use MS-DOS encoding format. It is the default value.|
-|**UTF8**|Use UTF-8 encoding format.|
-|**UTF16**|Use UTF-16 encoding format.|
-|**WINDOWS**|Use Windows encoding format.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**MSDOS**|runtime version 1.0|Use MS-DOS encoding format. It is the default value.|
+|**UTF8**|runtime version 1.0|Use UTF-8 encoding format.|
+|**UTF16**|runtime version 1.0|Use UTF-16 encoding format.|
+|**WINDOWS**|runtime version 1.0|Use Windows encoding format.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

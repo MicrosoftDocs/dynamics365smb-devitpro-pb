@@ -22,5 +22,5 @@ Field controls in pages of type API should have a camel case name in order to fo
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

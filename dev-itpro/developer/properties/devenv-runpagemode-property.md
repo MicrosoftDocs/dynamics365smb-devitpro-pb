@@ -3,12 +3,11 @@ title: "RunPageMode Property"
 description: "Sets the mode in which the page is run."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,11 +23,11 @@ Sets the mode in which the page is run. Choose between View, Edit, or Create.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**View**|The page is run in View mode.|
-|**Edit**|The page is run in Edit mode.|
-|**Create**|The page is run in Create mode.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**View**|runtime version 1.0|The page is run in View mode.|
+|**Edit**|runtime version 1.0|The page is run in Edit mode.|
+|**Create**|runtime version 1.0|The page is run in Create mode.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

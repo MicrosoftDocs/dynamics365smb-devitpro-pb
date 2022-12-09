@@ -138,5 +138,5 @@ You can find the full list of requirements for PTE in the documentation for the 
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Extension Types and Scope](devenv-extension-types-and-scope.md)

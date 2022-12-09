@@ -3,12 +3,11 @@ title: "InitValue Property"
 description: "Sets the initial value of this field when a user creates a new record."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/02/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)

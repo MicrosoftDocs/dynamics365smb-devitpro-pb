@@ -3,12 +3,11 @@ title: "PromotedOnly Property"
 description: "Specifies whether the selected action is promoted only, which means that it will appear only on the Home tab in the ribbon and not on the tab (ActionContainer control) where it is defined."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -36,6 +35,12 @@ PromotedOnly = true;
 ```
  
 ## Remarks
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](../devenv-promoted-actions.md).
+
+> [!NOTE]  
+> Removing the Promoted property on a published action is considered a breaking change. For more information, see [AppSourceCop Error AS0031](../analyzers/appsourcecop-as0031.md) and [UICop Warning AW0013](../analyzers/uicop-aw0013.md).
 
 This property is only applicable when the [Promoted Property](devenv-promoted-property.md) is set to **true**. For example, if you have an action defined under the **ActionItems** action container, and you set the **Promoted** and **PromotedOnly** properties to **true**, then in the client, the action will be shown on the **Home** tab but will be hidden on the **Actions** tab.  
   

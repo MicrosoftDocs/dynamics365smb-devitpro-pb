@@ -85,4 +85,4 @@ From the Business Central web client, you can open the Session Events table by a
 [Task Scheduler](devenv-task-scheduler.md).
 [Task Scheduler Data Type](methods-auto/taskscheduler/taskscheduler-data-type.md)   
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md) 
+[Get Started with AL](devenv-get-started.md) 

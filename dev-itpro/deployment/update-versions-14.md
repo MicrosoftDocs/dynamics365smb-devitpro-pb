@@ -2,12 +2,12 @@
 title: "Cumulative updates for the Spring 2019 version"
 description: "Learn about the cumulative updates for Dynamics 365 Business Central Spring 2019 on-premises deployments."
 author: jswymer
-ms.custom: na
-ms.reviewer: edupont
-ms.topic: conceptual
 ms.author: jswymer
-ms.date: 05/09/2022
-
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms.topic: conceptual
+ms.date: 12/02/2022
+ms.custom: bap-template
 ---
 
 # Dynamics 365 Business Central On-Premises Spring 2019 Updates
@@ -33,6 +33,13 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5021669](https://support.microsoft.com/help/5021669)|Cumulative Update 42|December 2022|Application 14.43.49498</br>Platform 14.0.49494|
+|[5021001](https://support.microsoft.com/help/5021001)|Cumulative Update 41|November 2022|Application 14.42.49347 </br>Platform 14.0.49339|
+|[5019238](https://support.microsoft.com/help/5019238)|Cumulative Update 40|October 2022|Application 14.41.49238 </br>Platform 14.0.49232|
+|[5017792](https://support.microsoft.com/help/5017792)|Cumulative Update 39|September 2022|Application 14.40.49174</br>Platform 14.40.49170|
+|[5017014](https://support.microsoft.com/help/5017014)|Cumulative Update 38|August 2022|Application 14.39.49063</br>Platform 14.0.49057|
+|[5016301](https://support.microsoft.com/help/5016301)|Cumulative Update 37|July 2022|Application 14.38.48967</br>Platform 14.0.48964|
+|[5015472](https://support.microsoft.com/help/5015472)|Cumulative Update 36|June 2022|Application 14.37.48797</br>Platform 14.0.48792|
 |[5014488](https://support.microsoft.com/help/5014488)|Cumulative Update 35|May 2022|Application 14.36.48675</br>Platform 14.0.48664|
 |[5013419](https://support.microsoft.com/help/5013419)|Cumulative Update 34|April 2022|Application 14.35.48518</br>Platform 14.0.48501|
 |[5012304](https://support.microsoft.com/help/5012304)|Cumulative Update 33|March 2022|Application 14.33.48304</br>Platform Build 14.0.48395|

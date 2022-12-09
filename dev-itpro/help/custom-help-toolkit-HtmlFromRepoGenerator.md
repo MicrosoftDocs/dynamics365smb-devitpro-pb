@@ -4,15 +4,17 @@ description: This article describes the HtmlFromRepoGenerator tool in the custom
 
 author: edupont04
 ms.topic: conceptual
-ms.date: 09/20/2021
+ms.date: 11/18/2022
 ms.author: edupont
 ---
 
 # Custom Help Toolkit: The HtmlFromRepoGenerator tool
 
+[!INCLUDE [help-toolkit-deprecate](../includes/help-toolkit-deprecate.md)]
+
 The custom help toolkit includes the **HtmlFromRepoGenerator** tool that gets Microsoft's content in MarkDown files and converts it to HTML files. You can then deploy the HTML files to a website.  
 
-The HtmlFromRepoGenerator tool is a wrapper around the [DocFx](https://dotnet.github.io/docfx/) component that Microsoft uses to generate HTML files for the Docs.microsoft.com site. You can write your own scripts around this component, and maybe you already have that in place. If you don't, then the HtmlFromRepoGenerator tool can help you get started. Run the tool from a command prompt, use the examples as inspiration but remember to update the paths to suit your configuration.  
+The HtmlFromRepoGenerator tool is a wrapper around the [DocFX](https://dotnet.github.io/docfx/) component that Microsoft uses to generate HTML files for the learn.microsoft.com site. You can write your own scripts around this component, and maybe you already have that in place. If you don't, then the HtmlFromRepoGenerator tool can help you get started. Run the tool from a command prompt, use the examples as inspiration but remember to update the paths to suit your configuration.  
 
 ## <a name="htmltool"></a>Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files
 
@@ -32,7 +34,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly
 
-    The en-US repo includes files that are required for building the various localized versions, including the very important docfx.json file that sets the output location and certain metadata settings, some of which are important for the Docs.microsoft.com site only. For more information, see [Get content from the GitHub repos](contributor-guide.md#get-content-from-the-github-repos).  
+    The en-US repo includes files that are required for building the various localized versions, including the very important docfx.json file that sets the output location and certain metadata settings, some of which are important for the learn.microsoft.com site only. For more information, see [Get content from the GitHub repos](contributor-guide.md#get-content-from-the-github-repos).  
 
 ### Syntax
 
@@ -48,7 +50,7 @@ The following table provides an explanation of the parameters:
 |------------|-------------|
 |Out |Specifies the folder where your existing clone is, or the folder to clone the repo to, such as D:\BC\. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist.|
 |DoNotClone |Set this parameter when you run the tool against a previously cloned repo. |
-|Repo |Specifies the repo URL. Optional if you run the tool based on a previously cloned repo. Examples of Microsoft documentation repo URLs include `https://github.com/MicrosoftDocs/dynamics365smb-docs` for English (US) and `https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de` for German (Germany).|
+|Repo |Specifies the repo URL. Optional if you run the tool based on a previously cloned repo. Microsoft documentation repo URL is `https://github.com/MicrosoftDocs/dynamics365smb-docs` for English (US).|
 |Tag |Specifies the tag corresponding to a release of the Business Central documentation. You can see a list of the releases at [https://github.com/MicrosoftDocs/dynamics365smb-docs/releases](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases). |
 |RemoveGitFolder|Specifies whether to remove the `.git` folder.|
 |LogsDir|Specifies the folder to save logs files to.|
@@ -85,7 +87,7 @@ The following example uses a previously cloned en-US repo and generates HTML fil
 HtmlFromRepoGenerator.exe --out "D:\BC\en-US" --DoNotClone --LogsDir D:\BC\logs\en-US
 ```
 
-The following example clones both the de-DE and en-US repos, and generates HTML files for de-DE.
+<!-- The following example clones both the de-DE and en-US repos, and generates HTML files for de-DE.
 
 ```console
 HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --repo "https://github.com/MicrosoftDocs/dynamics365smb-docs-pr.de-de" --EnRepo "https://github.com/MicrosoftDocs/dynamics365smb-docs" --EnOut "D:\BC\en-US" --lng "de-DE" --LogsDir D:\BC\logs\de-DE
@@ -96,7 +98,7 @@ The following example uses previously cloned de-DE and en-US repos to generate H
 ```console
 HtmlFromRepoGenerator.exe --out "D:\BC\de-DE" --DoNotClone --enOut "D:\BC\en-US" --lng "de-DE" --LogsDir D:\BC\logs\de-DE
 ```
-
+ -->
 > [!IMPORTANT]
 > Do not run HtmlFromRepoGenerator.exe repeatedly on a previously-cloned repo. HtmlFromRepoGenerator modifies the links during processing, so running HtmlFromRepoGenerator more than once on the same content will result in incorrect links. If you want to rerun HtmlFromRepoGenerator, either use HtmlFromRepoGenerator to create a new clone of the repo, or revert all local changes to your existing clone.
 
@@ -114,3 +116,5 @@ For more information, see [Introduction to DocFX Template System](https://dotnet
 ## See also
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

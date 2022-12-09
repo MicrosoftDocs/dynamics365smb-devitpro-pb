@@ -3,7 +3,7 @@ title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -93,7 +93,8 @@ The following methods are available on instances of the RecordRef data type.
 |[SetPermissionFilter()](recordref-setpermissionfilter-method.md)|Applies the user's security filter to the referenced record. The security filter is combined with any other filters that are placed on the record with SetFilter or SetRange. The combined filter will not include any records outside the range of the security filter and this will prevent a runtime permission error from occuring when the record is read. If the permission filter is not set, an error can occur if you attempt to read a record that is outside the range of the user's security filter.|
 |[SetPosition(Text)](recordref-setposition-method.md)|Sets the fields in a primary key on a record to the values specified in the String parameter. The remaining fields are not changed.|
 |[SetRecFilter()](recordref-setrecfilter-method.md)|Sets a filter on a record that is referred to by a RecordRef.|
-|[SetTable(Record)](recordref-settable-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
+|[SetTable(Record)](recordref-settable-table-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
+|[SetTable(Record, Boolean)](recordref-settable-table-boolean-method.md)|Sets the table to which a Record variable refers as the same table as a RecordRef variable.|
 |[SetView(Text)](recordref-setview-method.md)|Sets the current sort order, key, and filters on a table.|
 |[SystemCreatedAtNo()](recordref-systemcreatedatno-method.md)|Gets the field number that is used by the SystemCreatedAt field. The SystemCreatedAt field is a system field that the platform adds to all table objects.|
 |[SystemCreatedByNo()](recordref-systemcreatedbyno-method.md)|Gets the field number that is used by the SystemCreatedBy field. The SystemCreatedBy field is a system field that the platform adds to all table objects.|
@@ -111,5 +112,5 @@ The RecordRef object can refer to any table in the database. Use the [Open metho
 If one RecordRef variable is assigned to another RecordRef variable, then they both refer to the same table instance. 
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

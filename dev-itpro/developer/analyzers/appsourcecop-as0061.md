@@ -26,5 +26,5 @@ To improve the login time for [!INCLUDE[d365fin_long_md](../includes/d365fin_lon
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

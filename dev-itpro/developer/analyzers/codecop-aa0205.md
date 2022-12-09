@@ -98,5 +98,5 @@ Initialization is possible using evaluate, for, `foreach` statements. If a varia
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -124,5 +124,5 @@ codeunit 50100 MyQueryTop10
 [Linking and Joining Data Items](../../devenv-query-links-joins.md)  
 [Aggregating Data in Query Objects](../../devenv-query-totals-grouping.md)  
 [Filtering Data in Query Objects](../../devenv-query-filters.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -80,5 +80,5 @@ In version 3.0 of the extension, `FOO_IMyInterface` has been deleted. This is ok
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

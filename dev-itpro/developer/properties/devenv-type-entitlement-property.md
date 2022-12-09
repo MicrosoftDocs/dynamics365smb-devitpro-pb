@@ -58,5 +58,5 @@ entitlement MyEntitlement
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Type (Report) Property](devenv-type-report-property.md)  

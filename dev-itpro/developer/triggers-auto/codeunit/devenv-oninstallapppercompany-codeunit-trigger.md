@@ -40,5 +40,5 @@ Includes code for company-related operations.
 This trigger is run once for each company in the database.
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

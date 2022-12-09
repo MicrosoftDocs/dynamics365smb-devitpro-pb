@@ -60,5 +60,5 @@ In version 2.0, the type of the field `MyField` has changed from `Text[50]` to `
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

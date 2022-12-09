@@ -3,12 +3,11 @@ title: "RoleType Property"
 description: "If the entitlement type is Role, the RoleType is used to distinguish between local and delegated assignments of the role."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,10 +23,10 @@ If the entitlement type is Role, the RoleType is used to distinguish between loc
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Local**|The user is either a native user or a guest user in the company's AAD tenant, and that specific AAD role was assigned in the given AAD tenant.|
-|**Delegated**|The user has the given AAD role in the company's AAD tenant via a Delegated Admin relationship with a partner's AAD tenant.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Local**|runtime version 1.0|The user is either a native user or a guest user in the company's AAD tenant, and that specific AAD role was assigned in the given AAD tenant.|
+|**Delegated**|runtime version 1.0|The user has the given AAD role in the company's AAD tenant via a Delegated Admin relationship with a partner's AAD tenant.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -54,6 +53,6 @@ entitlement MyEntitlement
 
 ## See Also  
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
 [Type Property](devenv-type-property.md)

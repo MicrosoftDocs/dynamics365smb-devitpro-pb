@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 The app.json file must specify an Azure Application Insights resource.
 
 ## Description
-The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information.
+The app.json file must specify an Azure Application Insights resource for monitoring operations related to this extension. See https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/telemetry-overview for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## How to fix this diagnostic?
@@ -70,5 +70,5 @@ The Azure Application Insights resource specified in the manifest of the extensi
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

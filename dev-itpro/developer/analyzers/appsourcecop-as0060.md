@@ -22,5 +22,5 @@ The method cannot be invoked in an AppSource application because it can lead to 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

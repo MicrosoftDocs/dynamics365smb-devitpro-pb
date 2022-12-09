@@ -3,7 +3,7 @@ title: "OnCheckPreconditionsPerDatabase (Codeunit) Trigger"
 description: "Runs before an extension upgrade."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,13 +35,14 @@ end;
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 > [!NOTE]  
->  This trigger is also available in upgrade codeunits for the base application, not just for extensions.  
+> This trigger is also available in upgrade codeunits for extensions, not just for the base application. 
 
-## Remarks  
+## Remarks
+
 It is used to check that certain requirements are met in order to run the upgrade.If an error occurs during runtime the extension upgrade is canceled.
 
 This trigger is run once in the entire upgrade process, in a single system session that does not open any company.
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

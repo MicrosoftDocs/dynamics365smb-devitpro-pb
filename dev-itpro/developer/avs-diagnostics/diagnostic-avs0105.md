@@ -25,5 +25,5 @@ The app.json files has a dependency either from the `application` property or th
 ## See Also
 
 [Choosing Runtime Version in AL](../devenv-choosing-runtime.md)
-[Getting Started with AL](../devenv-get-started.md)
+[Get Started with AL](../devenv-get-started.md)
 [Developing Extensions](../devenv-dev-overview.md)

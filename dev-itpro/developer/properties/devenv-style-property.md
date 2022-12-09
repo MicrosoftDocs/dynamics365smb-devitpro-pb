@@ -3,12 +3,11 @@ title: "Style Property"
 description: "Sets a value that determines how text in a field on a page is formatted."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -25,19 +24,19 @@ Sets a value that determines how text in a field on a page is formatted. For fie
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**None**|None|
-|**Standard**|Standard|
-|**StandardAccent**|Blue|
-|**Strong**|Bold|
-|**StrongAccent**|Blue + Bold|
-|**Attention**|Red + Italic|
-|**AttentionAccent**|Blue + Italic|
-|**Favorable**|Bold + Green|
-|**Unfavorable**|Bold + Italic + Red|
-|**Ambiguous**|Yellow|
-|**Subordinate**|Grey|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**None**|runtime version 1.0|None|
+|**Standard**|runtime version 1.0|Standard|
+|**StandardAccent**|runtime version 1.0|Blue|
+|**Strong**|runtime version 1.0|Bold|
+|**StrongAccent**|runtime version 1.0|Blue + Bold|
+|**Attention**|runtime version 1.0|Red + Italic|
+|**AttentionAccent**|runtime version 1.0|Blue + Italic|
+|**Favorable**|runtime version 1.0|Bold + Green|
+|**Unfavorable**|runtime version 1.0|Bold + Italic + Red|
+|**Ambiguous**|runtime version 1.0|Yellow|
+|**Subordinate**|runtime version 1.0|Grey|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

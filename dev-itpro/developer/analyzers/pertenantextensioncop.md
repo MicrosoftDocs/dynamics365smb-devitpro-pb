@@ -3,7 +3,7 @@ title: "PerTenantExtensionCop Analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/07/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,6 +34,7 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0012](pertenantextensioncop-pte0012.md)|InternalsVisibleTo should not be used as a security feature.|Extensibility|Warning|
 |[PTE0013](pertenantextensioncop-pte0013.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[PTE0014](pertenantextensioncop-pte0014.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
+|[PTE0015](pertenantextensioncop-pte0015.md)|The extension name is not valid.|Extensibility|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

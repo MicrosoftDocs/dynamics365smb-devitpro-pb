@@ -3,12 +3,11 @@ title: "CuegroupLayout Property"
 description: "Specifies if the layout is wide."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,9 +23,9 @@ Specifies if the layout is wide.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Wide**|Sets the `cuegroup` control to the wide layout|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Wide**|runtime version 1.0|Sets the `cuegroup` control to the wide layout|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

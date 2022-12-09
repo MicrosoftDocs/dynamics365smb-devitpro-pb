@@ -46,5 +46,5 @@ The scope of the stored data. If a value is not passed in, the default value Dat
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [IsolatedStorage Data Type](isolatedstorage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

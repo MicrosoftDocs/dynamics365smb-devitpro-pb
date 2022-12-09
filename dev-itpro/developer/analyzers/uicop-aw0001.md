@@ -26,5 +26,5 @@ This rule applies only to [!INCLUDE[prod_short](../../includes/prod_short.md)] S
 
 ## See Also  
 [UICop Analyzer](uicop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

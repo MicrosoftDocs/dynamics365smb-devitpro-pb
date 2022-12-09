@@ -15,7 +15,7 @@ ms.author: solsen
 
 Extensions are a programming model where functionality is defined as an addition to existing objects and defines how they're different or modify the behavior of the solution. This section explains how you can develop extensions using the development environment for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)].
 
-If you're new to building extensions, we recommend that you read this document to get an understanding of the basics and terms you'll encounter while working. Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
+If you're new to building extensions, we recommend that you read this document to get an understanding of the basics and terms you'll encounter while working. Next, follow the [Get Started with AL](devenv-get-started.md) to set up the tools.
 
 > [!TIP]  
 > If you are looking for the C/SIDE documentation, visit our [Dynamics NAV library](/dynamics-nav/development).
@@ -43,7 +43,7 @@ You have several options for creating new objects with the [!INCLUDE[d365al_ext_
 
 ## Developing extensions in Visual Studio Code
 
-Using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code, you'll get the benefits of a modern development environment along with seamless publishing and integration with your [!INCLUDE[prod_short](includes/prod_short.md)] tenant. For more information on the setup, see [Getting Started with AL](devenv-get-started.md).
+Using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code, you'll get the benefits of a modern development environment along with seamless publishing and integration with your [!INCLUDE[prod_short](includes/prod_short.md)] tenant. For more information on the setup, see [Get Started with AL](devenv-get-started.md).
 
 Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] let you do the following tasks:
 
@@ -79,7 +79,7 @@ After development and testing are done, you can submit your extension package to
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Getting Started Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  

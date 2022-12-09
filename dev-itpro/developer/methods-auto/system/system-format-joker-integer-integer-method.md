@@ -54,5 +54,5 @@ For more information about *FormatNumber*, see [Formatting Values, Dates, and Ti
 
 ## See Also
 [System Data Type](system-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

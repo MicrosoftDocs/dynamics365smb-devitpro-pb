@@ -90,7 +90,7 @@ Here is a JSON representation of the vendorPayment resource.
 
 
 ## See Also
-[GET vendorPayment](../api/dynamics_vendorPayment_Get.md)
-[DELETE vendorPayment](../api/dynamics_vendorPayment_Delete.md)
-[POST vendorPayment](../api/dynamics_vendorPayment_Create.md)
+[GET vendorPayment](../api/dynamics_vendorPayment_Get.md)  
+[DELETE vendorPayment](../api/dynamics_vendorPayment_Delete.md)  
+[POST vendorPayment](../api/dynamics_vendorPayment_Create.md)  
 [PATCH vendorPayment](../api/dynamics_vendorPayment_Update.md)

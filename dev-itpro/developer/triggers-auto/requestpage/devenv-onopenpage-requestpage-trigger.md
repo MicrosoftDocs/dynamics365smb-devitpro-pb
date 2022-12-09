@@ -49,7 +49,7 @@ If an error occurs in the trigger execution, then the page closes.
 > The **OnOpenPage** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-pagefield-add-in.md).-->
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnOpenPage (Page) Trigger](../page/devenv-onopenpage-page-trigger.md)  
 [OnOpenPage (Request Page Extension) Trigger](../requestpageextension/devenv-onopenpage-requestpageextension-trigger.md)  

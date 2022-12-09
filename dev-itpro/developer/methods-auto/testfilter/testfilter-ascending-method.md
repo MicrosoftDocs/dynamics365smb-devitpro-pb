@@ -44,5 +44,5 @@ Sets the order in which to search through a data set on a test page.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [TestFilter Data Type](testfilter-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

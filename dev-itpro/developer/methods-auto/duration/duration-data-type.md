@@ -3,7 +3,7 @@ title: "Duration Data Type"
 description: "Represents the difference between two DateTimes."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 09/16/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -63,11 +63,11 @@ procedure GetDefaultTimeout(): Duration
 var
      Timeout: Duration;
 begin
-    Timeout = 1000 * 60 * 60; // One hour
+    Timeout := 1000 * 60 * 60; // One hour
     exit(Timeout);
 end
 ```
 
 ## See Also
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

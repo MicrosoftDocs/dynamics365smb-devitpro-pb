@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 The 'application' property should be used instead of explicit dependencies
 
 ## Description
-The 'application' property should be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
+The 'application' property should be used for expressing a dependency on the 'Base Application' or the 'System Application' instead of explicit dependencies. See https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-application-app-file for additional information.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -70,5 +70,5 @@ The `app.json` file of the extension:
 
 ## See Also  
 [AppSourceCop Analyzer](appsourcecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

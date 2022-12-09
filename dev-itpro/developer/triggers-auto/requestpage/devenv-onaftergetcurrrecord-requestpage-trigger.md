@@ -42,7 +42,7 @@ If there is an error in the trigger code, then the page is closed.
 > For pages of the type `Card`, `List`, `ListPlus`, `Document`, or `Worksheet`, the **OnAfterGetCurrRecord** trigger is called more than once if the page is opened in the edit mode and does not have any records to display. If the page is opened in the view mode or displays a record, the trigger is called only once.
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnAfterGetCurrRecord (Page) Trigger](../page/devenv-onaftergetcurrrecord-page-trigger.md)  
 [OnAfterGetCurrRecord (Request Page Extension) Trigger](../requestpageextension/devenv-onaftergetcurrrecord-requestpageextension-trigger.md)  

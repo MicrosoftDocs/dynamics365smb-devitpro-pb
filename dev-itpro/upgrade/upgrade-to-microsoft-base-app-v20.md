@@ -1,15 +1,14 @@
 ---
-title:  "Upgrading Customized C/AL Application to Microsoft Base Application for version 20" 
-description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 20
-ms.custom: na
-ms.date: 03/05/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Upgrading Customized C/AL Application to Microsoft Base Application for version 20
+description: Describes how to do an upgrade from a customized Business Central 14 to Microsoft Base Application for version 20.
 ms.topic: article
-ms.author: jswymer
+ms.service: dynamics365-business-central
 author: jswymer
+ms.author: jswymer
+ms.date: 03/05/2022
+
 ---
+
 # Upgrading Customized C/AL Application to Microsoft Base Application version 20
 
 This article describes how to upgrade a customized version 14 application to a version 20 solution that uses the Microsoft system and base applications.
@@ -71,7 +70,7 @@ The process uses two special features for migrating tables and data to extension
 
 Version 18 introduced the capability to define permissions sets as AL objects, instead of as data. Permissions sets as AL objects is now the default and recommended model for defining permissions. However for now, you can choose to use the legacy model, where permissions are defined and stored as data in the database. Whichever model you choose, there are permission set-related tasks you'll have to go through before and during upgrade.
 
-For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.docs.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
+For more information, see [Upgrading Permissions Sets and Permissions](upgrade-permissions.md)<!--[Permissions Upgrade Considerations](https://review.learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-entitlements-and-permissionsets-overview?branch=permissionset#upgrade-considerations)-->.
 
 ## APPLICATION UPGRADE
 
@@ -187,9 +186,12 @@ You'll create two versions of this extension. The first version contains the tab
     > [!NOTE]
     > If the `--tableDataOnly` parameter isn't available, you'll need a later version ot the txt2al conversion tool. See [Prerequisites](#prereqs) for more information.
 
+    > [!NOTE]
+    > Remove FieldContentBuffer.Table.al (table 1754 "Field Content Buffer") from the target directory since this will be part of System Application extension.
+
 5. Make sure you have installed the latest AL Extension for Visual Studio Code from the version 20 DVD.
 
-   For more information, see [Getting Started with AL](../developer/devenv-get-started.md).
+   For more information, see [Get Started with AL](../developer/devenv-get-started.md).
 
 6. In Visual Studio Code, create an AL project for table migration extension using the **AL: Go!** command.
 
@@ -275,7 +277,6 @@ You'll create two versions of this extension. The first version contains the tab
     |table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al|Remove any `TableRelation =` lines. |
     |table 265 "Document Entry"| DocumentEntry.Table.al|Remove any `TableRelation =` lines.|
     |table 338 "Entry Summary" |EntrySummary.Table.al|Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`<br /><br />Remove any `TableRelation =` lines. |
-    |table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al|Remove any `TableRelation =` lines. |
     |table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al |Remove any `TableRelation =` lines. |
 
     Starting in version 18, these tables have been changed to temporary tables. For now, you'll have to include these objects in the table migration extension; otherwise you'll have problems syncing the extension later.
@@ -521,7 +522,7 @@ In this task, you run a data upgrade on tables to handle data changes made by pl
 
 ## Task 13: Publish final extensions
 
-This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in Task 1, not the empty versions that you created in **Task 4**.
+This step starts the second phase of the data upgrade. You'll publish the second version of the table migration extension and the production versions of extensions. The production extensions include the new versions of Microsoft System Application, Base Application extension, and customization extensions. The extension packages for Microsoft extensions are on the installation media (DVD). Customization extensions include the extension versions that you created in **Task 3**, not the empty versions that you created in **Task 4**.
 
 Publish extensions using the Publish-NAVApp cmdlet like you did in previous steps.
 
@@ -736,4 +737,4 @@ For more information, see [To export and import a permission set](/dynamics365/b
 
 [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
 [Upgrading to Business Central](upgrading-to-business-central.md)  
-[Signing an APP Package File](../developer/devenv-sign-extension.md)  
+[Sign an APP Package File](../developer/devenv-sign-extension.md)  

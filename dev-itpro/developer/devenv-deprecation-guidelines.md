@@ -3,7 +3,7 @@ title: "Best Practices for Deprecation of AL Code"
 description: "Description of best practices and guidelines for deprecating code in the Base App for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 11/02/2021
+ms.date: 09/26/2022
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: grobyns
@@ -11,7 +11,7 @@ ms.author: grobyns
 
 # Best Practices for Deprecation of AL Code
 
-This topic provides guidelines that describe how code in the Base App is obsoleted. The topic describes some best practices that Microsoft is using for obsoleting code, and is meant as a non-enforced guidance and best practice. You can use this topic as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
+This article provides guidelines that describe how code in the Base App is obsoleted. The article describes some best practices that Microsoft is using for obsoleting code, and is meant as a non-enforced guidance and best practice. You can use this article as an inspiration on how to set up a best practice for your own code. For obsoleting code, preprocessor statements in AL can be used. For more information, see [Directives in AL](directives/devenv-directives-in-al.md).
 
 ## Obsoleting Code
 
@@ -23,7 +23,7 @@ When we obsolete code, we:
     > These symbols are not shipped with the product.
 - The version to use in the symbol matches the `<major>` of the `ObsoleteTag`. For example:
 
-    - If a method is to be removed, then we are using `#if not`
+    - If a method is to be removed, then we're using `#if not`
         
         ```al
         #if not CLEAN18
@@ -35,7 +35,7 @@ When we obsolete code, we:
         #endif
         ```
 
-    - If an action is to be removed, then we are also using `#if not`
+    - If an action is to be removed, then we're also using `#if not`
 
         ```al
         
@@ -103,7 +103,7 @@ When we obsolete code, we:
         #endif
         ```
 
-In order to have the compiler take the new ‘clean’ code path, the symbols must be defined. This is done in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
+In order to have the compiler take the new ‘clean’ code path, the symbols must be defined. The symbols are defined in the `app.json` file with the following setting. For more information, see [JSON Files](devenv-json-files.md).
 
 ```al
 "preprocessorSymbols": [ "CLEAN15", "CLEAN16", "CLEAN17", "CLEAN18" ]

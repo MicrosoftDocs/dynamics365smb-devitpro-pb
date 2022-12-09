@@ -3,7 +3,7 @@ title: "Media Data Type"
 description: "Encapsulates media files, such as image .jpg and .png files, in application database tables."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Encapsulates media files, such as image .jpg and .png files, in application database tables. The Media data type can be used as a table field data type, but cannot be used as a variable or parameter. The Media data type enables you to import a media file to the application database and reference the file from records, making it possible to display the media file in the client user interface. You can also export media from the database to files and streams.
 
 
+The following methods are available on the Media data type.
+
+
+|Method name|Description|
+|-----------|-----------|
+|[FindOrphans()](media-findorphans-method.md)|Discovers all orphaned media. Orphaned media is media that is not referenced by any other table.|
 
 The following methods are available on instances of the Media data type.
 
@@ -40,6 +46,6 @@ The following methods are available on instances of the Media data type.
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Working With Media on Records](../../devenv-working-with-media-on-records.md)

@@ -2,7 +2,7 @@
 title: "OnCustomDocumentMerger Event"
 description: Describe the OnCustomDocumentMerger Event in Business Central.
 ms.custom: na
-ms.date: 01/26/2022
+ms.date: 06/09/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,11 @@ author: jswymer
 
 # OnCustomDocumentMerger Event
 
-This article describes the syntax of the OnCustomDocumentMerger event which will enable use of custom renders given a dataset and a layout. The layout must be specified as a Custom Layout in the rendering section within the report definition.
+This article describes the syntax of the OnCustomDocumentMerger event, which will enable use of custom renders given a dataset and a layout. The layout must be specified as a Custom Layout in the rendering section within the report definition.
+
+## Remarks  
+
+This event has been superseded by a newer event that also passes the report JSON payload in the parameter list. For more information, see [OnCustomDocumentMergerEx Event](devenv-oncustomdocumentmergerex-event.md).
 
 ## Usage
 
@@ -85,7 +89,7 @@ Specifies whether the extension handled the merge action successfully.
 
 ## Sample Code
 
-The simplest possible custom document render can can be implemented like the following sample that will use the existing application logic to render Xml datasets into Microsoft Word or Pdf documents using a given template (Word template).
+The simplest possible custom document render can be implemented like the following sample that will use the existing application logic to render XML datasets into Microsoft Word or Pdf documents using a given template (Word template).
 
 ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnCustomDocumentMerger', '', true, true)]

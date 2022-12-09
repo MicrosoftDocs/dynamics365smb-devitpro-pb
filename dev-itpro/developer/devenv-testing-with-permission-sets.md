@@ -95,5 +95,5 @@ codeunit 50101 MyTestPermissionsTestRunner
 [OnBeforeTestRun](triggers-auto/codeunit/devenv-onbeforetestrun-codeunit-trigger.md)  
 [OnAfterTestRun](triggers-auto/codeunit/devenv-onaftertestrun-codeunit-trigger.md)  
 [Testing the Application](devenv-Testing-Application.md)  
-[Creating Handler Methods](devenv-creating-handler-methods.md)  
+[Create Handler Methods](devenv-creating-handler-methods.md)  
 [Special Permission Sets](../administration/administration-special-permission-sets.md)  

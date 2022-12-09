@@ -59,5 +59,5 @@ If more than one record is selected on the page, then SetSelectionFilter does th
   
 ## See Also
 [RequestPage Data Type](requestpage-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

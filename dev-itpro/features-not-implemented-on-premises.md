@@ -7,7 +7,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: article
 ms.author: edupont
-ms.date: 04/01/2021
+ms.date: 06/13/2022
 ---
 # Features not implemented in on-premises deployments of [!INCLUDE[prod_long](includes/prod_long.md)]
 
@@ -44,12 +44,13 @@ The following features aren't intended for use in on-premises deployments. There
 |Bulk Invoicing from Microsoft Bookings |Integration with the Bookings app that is available in certain Microsoft 365 subscriptions isn't supported.  |
 |Create workflow from Power Automate |Power Automate does not integrate with on-premises workflow functionality. You can't create new workflows based on existing Power Automate templates in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)]. |
 |Sandbox environments  |The sandbox environment that you can use to develop extensions against for the new developer experience can't connect to an on-premises deployment. For more information, see [Get started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md). |
-|In-product search |In online deployments of [!INCLUDE[prod_short](includes/prod_short.md)], Tell Me, the in-product search, also searches in content on the docs.microsoft.com site. For on-premises deployments, this isn't supported.  |
+|In-product search |In online deployments of [!INCLUDE[prod_short](includes/prod_short.md)], Tell Me, the in-product search, also searches in content on the learn.microsoft.com site. For on-premises deployments, this isn't supported.  |
 |Late Payment Prediction|The Late Payment Prediction functionality isn't supported in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)].  |
 |Use the company hub to manage work across multiple companies.|Integration with the company hub isn't supported in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)]. |
 |Inviting the external accountant |Integration with the now deprecated [!INCLUDE[d365acc_long](includes/d365acc_long_md.md)] and the existing company hub isn't supported in on-premises deployments of [!INCLUDE[prod_short](includes/prod_short.md)].  |
 |[!INCLUDE[prod_short](includes/prod_short.md)] app for Microsoft Teams|This app connects Teams to your business data in [!INCLUDE[prod_short](includes/prod_short.md)]. The app can't connect to [!INCLUDE[prod_short](includes/prod_short.md)] on-premises. For more information about [!INCLUDE[prod_short](includes/prod_short.md)] online and Teams, see [Business Central and Microsoft Teams Integration](/dynamics365/business-central/across-teams-overview).|
 |Share to Teams|This feature lets Business Central online users copy a link from a page directly into a Teams conversation. For more information, see [Sharing Business Central Records and Page Links in Microsoft Teams](/dynamics365/business-central/across-working-with-teams). |
+|Connect to Shopify|Online tenants can connect their Shopify store (or stores) with Business Central and maximize their business productivity. The Shopify connector is not supported for on-premises deployments. For more information, see [Get Started with the Shopify Connector](/dynamics365/business-central/shopify/get-started).|
 
 ## See Also
 

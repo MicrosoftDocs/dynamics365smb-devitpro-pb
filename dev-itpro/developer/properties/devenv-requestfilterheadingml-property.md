@@ -1,14 +1,13 @@
 ---
 title: "RequestFilterHeadingML Property"
-description: "Sets the text used as a RequestFilterHeading Property for a request page tab."
+description: "Sets the string used as a RequestFilterHeading Property for a request page tab."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -17,7 +16,7 @@ author: SusanneWindfeldPedersen
 # RequestFilterHeadingML Property
 > **Version**: _Available or changed with runtime version 1.0._
 
-Sets the text used as a RequestFilterHeading Property for a request page tab.
+Sets the string used as a RequestFilterHeading Property for a request page tab.
 
 ## Applies to
 -   Xml Port Table Element

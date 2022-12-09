@@ -59,7 +59,7 @@ Here is a JSON representation of the paymentMethod resource.
 
 
 ## See Also
-[GET paymentMethod](../api/dynamics_paymentMethod_Get.md)
-[DELETE paymentMethod](../api/dynamics_paymentMethod_Delete.md)
-[POST paymentMethod](../api/dynamics_paymentMethod_Create.md)
+[GET paymentMethod](../api/dynamics_paymentMethod_Get.md)  
+[DELETE paymentMethod](../api/dynamics_paymentMethod_Delete.md)  
+[POST paymentMethod](../api/dynamics_paymentMethod_Create.md)  
 [PATCH paymentMethod](../api/dynamics_paymentMethod_Update.md)

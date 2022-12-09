@@ -91,5 +91,5 @@ If you publish the page as a web service, and read the OData feed, you'll see th
 
 [SetCurrentKey Method](record-setcurrentkey-method.md)
 [Record Data Type](record-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

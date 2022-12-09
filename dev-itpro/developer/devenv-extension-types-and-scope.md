@@ -126,4 +126,4 @@ In general, extensions are uniquely defined by their `id`. A specific version of
 ## See Also
 
 [Developing Extensions](devenv-dev-overview.md)  
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  

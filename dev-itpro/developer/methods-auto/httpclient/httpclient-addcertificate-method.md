@@ -53,5 +53,5 @@ The system caches SSL sessions as they are created and attempts to reuse a cache
 ## See Also
 
 [HttpClient Data Type](httpclient-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -52,7 +52,7 @@ You now have a `HelloWorld` sample that compiles and runs. The JSON files in the
 
 ## JSON file settings
 
-There are three JSON files in the project; the `app.json` file, the `launch.json` file, and the `rad.json`. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md) and [Working with Rapid Application Development (RAD)](devenv-rad-publishing.md).
+There are three JSON files in the project; the `app.json` file, the `launch.json` file, and the `rad.json`. The files are automatically generated for your project. For more information, see [JSON files](devenv-json-files.md) and [Work with Rapid Application Development (RAD)](devenv-rad-publishing.md).
 
 ## AL configuration settings
 

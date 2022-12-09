@@ -2,7 +2,7 @@
 title: "Table Keys"
 description: Learn about table keys in Business Central
 ms.custom: na
-ms.date: 11/30/2021
+ms.date: 07/07/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,6 +50,9 @@ When you define a secondary key and mark it as [enabled](properties/devenv-enabl
 A secondary key can be disabled so that it doesn't occupy database space or use time during updates to maintain its index. Disabled keys can be re-enabled, although this operation can be time-consuming because SQL Server must scan the whole table to rebuild the index.  
 
 The fields that make up the secondary keys don't always contain unique data. SQL Server doesn't reject records with duplicate data in secondary key fields. So if two or more records contain identical information in the secondary key, SQL Server uses the table's primary key to resolve this conflict.
+
+>[!TIP]
+>You can see a list of potential columns that can be indexed and other useful information about them in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on **Database Missing Indexes**. For more information on missing indexes, see [Missing Indexes in Dynamics 365 Business Central](../administration/database-missing-indexes.md)
 
 ### Unique secondary keys
 
@@ -320,6 +323,13 @@ Don't add additional clustered keys. // still true
 Don't add keys that are fields of the base table. // still true
 
 -->
+
+## Identifying keys in code
+
+[!INCLUDE[2022_releasewave2](../includes/2022_releasewave2.md)]
+
+When you invoke IntelliSense for table fields, the primary key members are marked with a `(PKx)` in the IntelliSense list, where `x` is a sequential number, which indicates the order of the field in the key. This allows you to identify the table fields that make up the primary key and the sequency of these fields in the key.
+
 ## See Also
 [Key Properties](properties/devenv-key-properties.md)
 [Tables Overview](devenv-tables-overview.md)  

@@ -3,7 +3,7 @@ title: "Using Service to Service Authentication"
 description: Service-to-service authentication enables external services to connect as an application, without impersonating normal users.
 author: henrikwh
 ms.custom: na
-ms.date: 06/29/2021
+ms.date: 08/23/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ ms.author: jswymer
 Service-to-Service (S2S) authentication is suited for scenarios where integrations are required to run without any user interaction. S2S authentication uses the [Client Credentials OAuth 2.0 Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). This flow enables you to access resources by using the identity of an application.
 
 > [!NOTE]
-> For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory documentation.
+> For more information about OAuth 2.0 flows, see [OAuth 2.0 and OpenID Connect protocols on the Microsoft identity platform](/azure/active-directory/develop/active-directory-v2-protocols) in the Azure Active Directory (Azure AD) documentation.
 
 
 In contrast, OAuth delegate flows, like [authorization code](/azure/active-directory/develop/v2-oauth2-auth-code-flow), [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) and [resource owner password credentials](/azure/active-directory/develop/v2-oauth-ropc) can be configured to require multifactor authentication (MFA). This configuration prevents integration from running unattended, because MFA is required to acquire the access token from Azure Active Directory. 
@@ -47,9 +47,21 @@ Two main scenarios are enabled with S2S authentication:
 
     S2S authentication enables both external user and non-interactive user access to Business Central online. Refer to [license guide](https://www.microsoft.com/licensing/product-licensing/dynamics365) for scenarios and usage. An application token with the `API.ReadWrite.All` scope is needed for accessing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs and web services.  
 
-## Setup service-to-service authentication
+> [!NOTE]
+> When you use S2S authentication, you can now use the integration session to create scheduled tasks. This is supported on 21.2 and later versions of Business Central online.
 
-To enable service-to-service authentication, you'll have to do two things:
+## Business Central on-premises prerequisite
+
+Business Central on-premises must be configured for Azure AD authentication with OpenID Connect.
+
+> [!IMPORTANT]
+> The `ValidAudiences` parameter of the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] must include the endpoint `https://api.businesscentral.dynamics.com`. If it doesn't, you'll get the error `Authentication_InvalidCredentials` on API requests, or the error `securitytokeninvalidaudienceexception` in the application log when you try to download symbols from Visual Studio.
+
+For more information, go to [Configure Azure Active Directory Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+
+## Set up service-to-service authentication
+
+To set up service-to-service authentication, you'll have to do two things:
 
 - Register an application in your Azure Active Directory tenant for authenticating API calls against [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
@@ -73,7 +85,7 @@ Complete these steps to register an application in your Azure AD tenant for serv
     |-------|-----------|
     |Name|Specify a unique name for your application. |
     |Supported account types| Select either <strong>Accounts in this organizational directory only (Microsoft only - Single tenant)</strong> or <strong>Accounts in any organizational directory (Any Azure AD directory - Multitenant)</strong>.|
-
+    |Redirect URI|(optional) This setting is only required if you want to use the Business Central web client to grant consent to the API (see task 2). Otherwise, you can grant consent using the Azure portal.<br><br>To specify the redirect URL, set the first box to **Web** to specify a web application. Then, enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC210/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC210/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC210/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
     When completed, an **Overview** displays in the portal for the new application.
 
@@ -94,16 +106,20 @@ Complete these steps to register an application in your Azure AD tenant for serv
 
     1. Select **API permissions** > **Add a permission** > **Microsoft APIs**.
     2. Select **Dynamics 365 [!INCLUDE [prod_short](../developer/includes/prod_short.md)]**.
-    3. Select **Application permissions**, select **API.ReadWrite.All** or **Automation.ReadWrite.All**, then select **Add permissions**.
+    3. Select **Application permissions**, select **API.ReadWrite.All** and **Automation.ReadWrite.All**, then select **Add permissions**.
 
-    When completed, the **API permissions** page will include one of the following entries:
+        The **API permissions** page will include one of the following entries:
 
-    |API / Permission name|Type|Description|
-    |---------------------|----|-----------|
-    |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
-    |Dynamics 365 Business Central / API.ReadWrite.All|Application|Access to APIs and webservices|
+        |API / Permission name|Type|Description|
+        |---------------------|----|-----------|
+        |Dynamics 365 Business Central / Automation.ReadWrite.All|Application|Full access to automation|
+        |Dynamics 365 Business Central / API.ReadWrite.All|Application|Access to APIs and webservices|
 
-    For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
+        For the latest guidelines about adding permissions in Azure AD, see [Add permissions to access your APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api) in the Azure documentation.
+
+    4. (optional) Grant admin consent on each permission by selecting it in the list, then selecting **Grant admin consent for \<tenant name\>**.
+
+        This step isn't required if you'll be granting consent from the Business Central web client in task 2.
 
 ## Task 2: Set up the Azure AD application in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 
@@ -117,7 +133,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 3. In the **Client ID** field, enter the **Application (Client) ID**  for the registered application in Azure AD from task 1. 
 
-4. Fill in the **Description** field.
+4. Fill in the **Description** field. If this application is set up by a partner, please enter sufficient partner-identifying information, so all applications set up by this partner can be tracked in the future if necessary.
 
 5. Set the **State** to **Enabled**.
 
@@ -133,7 +149,9 @@ Complete these steps to set up the Azure AD application for service-to-service a
    >
    > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
-7. Select **Grant Consent** in [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)] and follow the wizard to the complete the setup. Consent can also be granted from the Azure portal.
+7. (optional) Select **Grant Consent** and follow the wizard. 
+
+    This step will grant consent to the API. This step is only required if you haven't granted consent from the Azure portal in task 1. You can only complete this step if you've configured a redirect URL in the registered Azure AD app.
 
    > [!TIP]
    > Pre-consent can be done by adding the AAD application to the **Adminagents** group in the partner tenant.  For more information, see [Pre-consent your app for all your customers](/graph/auth-cloudsolutionprovider#pre-consent-your-app-for-all-your-customers) in the Graph documentation.
@@ -142,7 +160,7 @@ Complete these steps to set up the Azure AD application for service-to-service a
 
 After the Azure AD application has been set up and access has been granted, you're ready to make API and web service calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
-For the majority of cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
+For most cases, use the `AcquireTokenByAuthorizationCode` method from the OAuth 2.0 module. For more information, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). To explore an example, see [OAuth2Flows](https://github.com/microsoft/BCTech/blob/master/samples/OAuth2Flows/TestOAuth2Flows.Page.al).
 
 > [!IMPORTANT]
 > When getting access tokens, it's important to keep security in mind. For example, ensure that you don't expose the tokens. You can do that in two ways:
@@ -164,7 +182,6 @@ For the majority of cases, use the `AcquireTokenByAuthorizationCode` method from
 > You can also see this sample in the [BCTech Github repo](https://github.com/microsoft/BCTech/tree/master/samples/VSCRestClientOAuthBCAccess).
 
 The following sample uses the [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) for Visual Studio Code. Using the Rest Client makes it easy to see which HTTP calls are made both against [!INCLUDE[prod_short](../developer/includes/prod_short.md)] and Azure Active Directory. Any HTTP client can be used to create the requests below. Or you can choose any library, like MSAL.
-
 
 ```http
 @tenantId = <tenant id>
@@ -252,21 +269,3 @@ Authorization: {{accessHeader}}
 [Samples and libraries for OAuth: Microsoft identity platform authentication libraries](/azure/active-directory/develop/reference-v2-libraries)  
 [Business Central Repository on GitHub - PowerShell samples using MSAL](https://github.com/microsoft/BCTech/tree/master/samples/PSOAuthBCAccess)  
 [Business Central API v2.0](/dynamics365/business-central/dev-itpro/api-reference/v2.0/)
-
-
-
-<!-- 
-[Automation company](resources/dynamics_automationcompany.md)  
-[Company](resources/dynamics_company.md)  
-[Configuration package](resources/dynamics_configurationpackage.md)  
-[Extension](resources/dynamics_extension.md)  
-[Extension deployment status](resources/dynamics_extensiondeploymentstatus.md)  
-[Extension upload](resources/dynamics_extensionupload.md)  
-[Permission set](resources/dynamics_permissionset.md)  
-[Profile](resources/dynamics_profile.md)  
-[Scheduled job](resources/dynamics_scheduledjob.md)  
-[User](resources/dynamics_user.md)  
-[User group](resources/dynamics_usergroup.md)  
-[User group member](resources/dynamics_usergroupmember.md)  
-[User group permission](resources/dynamics_usergrouppermission.md)  
-[User permission](resources/dynamics_userpermission.md)   -->

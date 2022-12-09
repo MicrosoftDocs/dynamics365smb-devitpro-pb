@@ -17,3 +17,6 @@
 |AL0000D6H |Retention Policy|[Records Deleted Using Retention Policy: Deleted {alRecordsDeleted} records from Table {alTableNo}, {alTableName}](../administration/telemetry-retention-policy-trace.md#deleted)|
 |AL0000D6I|Retention Policy|[First retention policy enabled on: {alCompanyName}](../administration/telemetry-retention-policy-trace.md#first)|
 |AL0000D6J|	Retention Policy|[Last retention policy disabled on: {alCompanyName}](../administration/telemetry-retention-policy-trace.md#last)|
+|AL0000I74|	Azure Function Integration |[Request sent to Azure function succeeded: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
+|AL0000I75|	Azure Function Integration |[Authorization failed to Azure function: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
+|AL0000I7P|	Azure Function Integration |[Request sent to Azure function failed: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|

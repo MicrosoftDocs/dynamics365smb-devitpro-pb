@@ -22,7 +22,7 @@ author: SusanneWindfeldPedersen
 
 - *Permission sets* combine objects permissions in logical groups (or sets), which can then be assigned to the users explicitly or through a user group.  
 
-For more information about assigning licenses, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For more information about assigning permissions, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
+For more information about assigning licenses, see [Licensing in Dynamics 365 Business Central](../deployment/licensing.md). For more information about how to create and assign permissions, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).  
 
 ## Permission Set scope
 
@@ -97,7 +97,7 @@ Permission sets and permissions [included with apps in XML format](devenv-export
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Entitlement Object](devenv-entitlement-object.md)  
 [PermissionSet Object](devenv-permissionset-object.md)  
 [PermissionSet Extension Object](devenv-permissionset-ext-object.md)  

@@ -3,7 +3,7 @@ title: "JsonObject.WriteTo(var Text) Method"
 description: "Serializes and writes the JSON data of the JsonObject to a given Text object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 10/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,11 +36,11 @@ The Text object to which the JSON data will be written.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the write was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [JsonObject Data Type](jsonobject-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

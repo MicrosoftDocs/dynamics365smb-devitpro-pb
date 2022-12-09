@@ -26,3 +26,5 @@ This article provides an overview of the process for deploying an Embed App to t
 [Embed App Overview](../deployment/embed-app-overview.md)  
 [Qualification and Onboarding](../deployment/embed-app-qualifications-onboarding.md)  
 [Managing Embed Apps in Microsoft Lifecycle Services](../deployment/embed-app-lifecycle-services.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

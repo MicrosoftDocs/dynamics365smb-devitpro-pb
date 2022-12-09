@@ -3,12 +3,11 @@ title: "MinOccurs Property"
 description: "Sets the minimum number of times that an element can occur."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -26,10 +25,10 @@ Sets the minimum number of times that an element can occur.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Zero**|There is no minimum number of occurences.|
-|**Once**|The element must occur at least once.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Zero**|runtime version 1.0|There is no minimum number of occurences.|
+|**Once**|runtime version 1.0|The element must occur at least once.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

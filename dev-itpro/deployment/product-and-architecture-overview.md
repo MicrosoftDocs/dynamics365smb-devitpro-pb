@@ -2,7 +2,7 @@
 title: Component and System Topology
 description: The Business Central architecture includes of three core components, and various additional tools and components.
 ms.custom: na
-ms.date: 04/20/2022
+ms.date: 08/31/2022
 ms.reviewer: na
 ms.topic: overview
 author: jswymer
@@ -28,16 +28,16 @@ Every deployment must include the core components: Web server, Server, and SQL D
 |SQL Database|An SQL Server or Azure SQL Database database that contains application object definitions and business data. In a multitenant deployment, the application and business data are separated into different databases. In this case, a single *application database* can be associated with one or more *tenants* where the tenant database contains the business data.| [Creating Databases](../cside/cside-create-databases.md)<br /><br />[Deploy a Business Central Database to Azure SQL Database](deploy-database-azure-sql-database.md)|
 |Server|[!INCLUDE[server](../developer/includes/server.md)] is a .NET-based Microsoft service application that uses Windows Communication Framework to handle communication between clients and databases. It controls authentication, event logging, scheduled tasks, reporting, and more.|[Configuring Business Central Server](../administration/configure-server-instance.md)|
 |Web Server|An Internet Information Server (IIS) web site, provisioned with the [!INCLUDE[webserver components](../developer/includes/webservercomponents.md)], that enables access from the [!INCLUDE[webclient](../developer/includes/webclient.md)] and mobile apps.| [Business Central Web Server](web-server-overview.md)|
-|Business Central App|A desktop, phone, and tablet app for Business Central.|[Windows Store](https://go.microsoft.com/fwlink/?LinkId=734848)<br /><br />[App Store](https://go.microsoft.com/fwlink/?LinkId=734847)<br /><br />[Google Play](https://go.microsoft.com/fwlink/?LinkId=734849)|
+|Business Central App|A desktop, phone, and tablet app for Business Central.|[Get the Mobile App](/dynamics365/business-central/install-mobile-app)<br /><br />[Get the Desktop App](/dynamics365/business-central/install-desktop-app) |
 |Web services|SOAP and OData Web Services for exposing application functionality to external systems and users. Developers can create and publish functionality as web services. They expose pages, codeunits, or queries, and even enhance a page web service by using an extension codeunit.|[Web Services](../webservices/web-services.md)|
 
 ### Development and administration components
 
 |Component|Description| More Information   |
 |---------|-----------|---|
-|AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions. |[Getting Started with C/SIDE and AL for On-Premises](../developer/devenv-get-started-al-for-onprem.md).|
-|[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.|[Business Central Server Administration Tool](../administration/administration-tool.md)|
+|AL development environment|An AL language extension for Visual Studio Code for developing applications and extensions. |[Get Started with C/SIDE and AL for On-Premises](../developer/devenv-get-started-al-for-onprem.md).|
 |[!INCLUDE[adminshell](../developer/includes/adminshell.md)]|Windows PowerShell modules for managing the deployment, including tasks such adding and configuring [!INCLUDE[server](../developer/includes/server.md)] and Web server instances, databases, and users, and administering extension packages.|[Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)|
+|[!INCLUDE[admintool](../developer/includes/admintool.md)]|A Microsoft Management Console (MMC) for creating and configuring [!INCLUDE[server](../developer/includes/server.md)] instances.|[!INCLUDE[2022_releasewave2_deprecated](../includes/2022_releasewave2_deprecated.md)]<br><br>Use [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead.<br /><br />[Business Central Server Administration Tool](../administration/administration-tool.md)|
 
 ### Additional components
 
@@ -61,3 +61,5 @@ Every deployment must include the core components: Web server, Server, and SQL D
 [Deployment](Deployment.md)  
 [Installing Business Central Using Setup](install-using-setup.md)  
 [Multitenant Deployment Architecture](Multitenant-Deployment-Architecture.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

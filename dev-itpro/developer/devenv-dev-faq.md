@@ -19,7 +19,7 @@ This topic contains a number of frequently asked questions and answers to these 
 
 For an overview of developing apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [aka.ms/GetStartedWithApps](./readiness/get-started.md)
 
-Next, follow the [Getting Started with AL](devenv-get-started.md) to set up the tools.
+Next, follow the [Get Started with AL](devenv-get-started.md) to set up the tools.
 
 ## Which version of the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] should I use?
 
@@ -78,6 +78,6 @@ For information on upgrading, see the following topics:
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)    
 [AL Development Environment](devenv-reference-overview.md)

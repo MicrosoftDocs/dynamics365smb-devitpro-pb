@@ -1,0 +1,1 @@
+Whether the current user is a tenant admin or delegated admin.

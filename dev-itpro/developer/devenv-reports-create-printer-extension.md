@@ -32,7 +32,7 @@ This section describes how to use the OnAfterSetupPrinters event to set up a pri
 
 1. Create an AL project for the printer extension.
 
-    See [Getting Started with AL](devenv-get-started.md).
+    See [Get Started with AL](devenv-get-started.md).
 
 2. Create a codeunit to use for subscribing to the OnAfterSetupPrinters event.
 

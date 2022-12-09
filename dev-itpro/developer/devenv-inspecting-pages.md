@@ -3,7 +3,7 @@ title: Inspecting Pages
 description: "Learn about the structure of a page and its' underlying data."
 author: jswymer
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 08/22/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -103,6 +103,7 @@ Each field is shown with the following information:
 - If the field is a primary key, it's indicated by **PK**. A primary is  specified by the [Key property](./properties/devenv-properties.md).
 - Value of the field.
 - If the field is added by an extension, the name of the extension appears under the value.
+- For Code and Text fields the length of the field is shown as follows: `Text[x]` or `Code[x]`, where `x` is the length of the field.
 
 #### What field information isn't shown
 

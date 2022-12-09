@@ -53,5 +53,5 @@ The codeunit `MyCodeunit` has the 50100 `10` which is valid because it is within
 
 ## See Also  
 [PerTenantExtensionCop Analyzer](pertenantextensioncop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

@@ -19,8 +19,7 @@
   ],
   "notification_subscribers": [
     "solsen@microsoft.com",
-    "jswymer@microsoft.com",
-    "edupont@microsoft.com"
+    "jswymer@microsoft.com"
   ],
   "sync_notification_subscribers": [
     "buckley.guderian@microsoft.com"

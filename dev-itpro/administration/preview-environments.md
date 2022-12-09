@@ -44,11 +44,11 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
 
-2. If you have not registered before, please complete the registration form to access Collaborate
+2. If you have not registered before, complete the registration form to access Collaborate
 
-3. Choose **Engagements**, and then choose **Join**
+3. Choose **Engagements**, and then choose the **Join** action
 
-4. Under the **Ready! for Dynamics 365 Business Central** program, find **2021 release wave 2 Preview** in the list of available engagements, and choose **Join**
+4. Under the **Ready! for Dynamics 365 Business Central** program, find the latest preview version in the list of available engagements, and then choose the **Join** action
 
 Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
 

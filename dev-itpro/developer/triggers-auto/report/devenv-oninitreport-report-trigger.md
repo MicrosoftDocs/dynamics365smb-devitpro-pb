@@ -41,6 +41,6 @@ This trigger is run before the request page is run and before any table views or
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Report Triggers and Runtime Operations](../../devenv-report-triggers.md)  

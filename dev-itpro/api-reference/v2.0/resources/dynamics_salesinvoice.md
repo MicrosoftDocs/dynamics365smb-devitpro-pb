@@ -203,7 +203,7 @@ Here is a JSON representation of the salesInvoice resource.
 
 
 ## See Also
-[GET salesInvoice](../api/dynamics_salesInvoice_Get.md)
-[DELETE salesInvoice](../api/dynamics_salesInvoice_Delete.md)
-[POST salesInvoice](../api/dynamics_salesInvoice_Create.md)
+[GET salesInvoice](../api/dynamics_salesInvoice_Get.md)  
+[DELETE salesInvoice](../api/dynamics_salesInvoice_Delete.md)  
+[POST salesInvoice](../api/dynamics_salesInvoice_Create.md)  
 [PATCH salesInvoice](../api/dynamics_salesInvoice_Update.md)

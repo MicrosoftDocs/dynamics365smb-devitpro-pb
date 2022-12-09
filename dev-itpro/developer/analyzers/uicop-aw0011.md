@@ -22,5 +22,5 @@ Add PromotedOnly="true" to some or all promoted actions to avoid identical actio
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [UICop Analyzer](uicop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

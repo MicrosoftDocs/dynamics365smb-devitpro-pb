@@ -3,12 +3,11 @@ title: "QueryType Property"
 description: "Sets the type of query to create."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -24,10 +23,10 @@ Sets the type of query to create.
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Normal**|It is a normal query.|
-|**API**|The query is of the type API.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Normal**|runtime version 1.0|It is a normal query.|
+|**API**|runtime version 1.0|The query is of the type API.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

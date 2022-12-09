@@ -53,3 +53,5 @@ Specifically for partners that are in the [!INCLUDE[embedapp](../developer/inclu
 [Get Started as a Reseller of Business Central Online](../administration/get-started-online.md)  
 [[!INCLUDE[embedapp](../developer/includes/embedapp.md)] Overview](embed-app-overview.md)  
 [Major Updates and Minor Updates for Business Central Online](../administration/update-rollout-timeline.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

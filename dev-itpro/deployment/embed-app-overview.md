@@ -111,3 +111,5 @@ Any existing deployments, running on platform versions that are older than 3 upd
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](Deployment.md)  
 [Administration of Business Central Online](../administration/tenant-administration.md)  
 [Administration of Business Central On-Premises](../administration/Administration.md)  
+
+[!INCLUDE [footer-banner](../includes/footer-banner.md)]

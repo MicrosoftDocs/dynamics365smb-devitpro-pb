@@ -211,7 +211,7 @@ For more information about tooltips, see [Help users get unblocked](../user-assi
 
 ### Don't
 
-- Don't provide how-to (steps) or instructional guidance in teaching tips. That content lives on docs.microsoft.com or in your own documentation.
+- Don't provide how-to (steps) or instructional guidance in teaching tips. That content lives on learn.microsoft.com or in your own documentation.
 
 - Don't use large, unformatted blocks of text in a teaching tip.
 

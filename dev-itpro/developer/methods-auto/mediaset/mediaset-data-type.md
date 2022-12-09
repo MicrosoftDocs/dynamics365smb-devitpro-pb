@@ -3,7 +3,7 @@ title: "MediaSet Data Type"
 description: "Encapsulates media, such as images, in application database tables."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,6 +19,12 @@ author: SusanneWindfeldPedersen
 Encapsulates media, such as images, in application database tables.
 
 
+The following methods are available on the MediaSet data type.
+
+
+|Method name|Description|
+|-----------|-----------|
+|[FindOrphans()](mediaset-findorphans-method.md)|Discovers all orphaned media sets. Orphaned media sets are media sets that are not referenced by any other table.|
 
 The following methods are available on instances of the MediaSet data type.
 
@@ -37,6 +43,6 @@ The following methods are available on instances of the MediaSet data type.
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Working With Media on Records](../../devenv-working-with-media-on-records.md)

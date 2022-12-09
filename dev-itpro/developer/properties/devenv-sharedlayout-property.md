@@ -3,12 +3,11 @@ title: "SharedLayout Property"
 description: "Specifies whether the view has the same layout as the default view 'All'."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/03/2022
+ms.date: 06/15/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
@@ -57,16 +56,16 @@ view(SharedLayoutView)
 } 
 ```
 
-### Detached layout view
+### Unique layout view
 
-A view with detached layout `SharedLayout = false` defines its own layout and is independent from all other views. Any changes coded in the layout sections are applied in the view. User personalization made on the page are not applied on that view.
+A view with unique layout `SharedLayout = false` defines its own layout and is independent from all other views. Any changes coded in the layout sections are applied in the view. User personalization made on the page are not applied on that view.
 
 ### Example 2
 
 ```AL
-view(DetachedView)
+view(UniqueView)
 {
-    Caption = 'View With Detached Layout';
+    Caption = 'View With Unique Layout';
     Filters = where("Balance Due (LCY)" = filter(> 10000));
     // By settings this property to false, the view gets its own independent layout.
     // User personalization are not applied on this view.

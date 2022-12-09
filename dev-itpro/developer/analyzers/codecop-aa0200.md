@@ -22,5 +22,5 @@ When ApplicationArea is set to 'All', no other values for ApplicationArea should
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

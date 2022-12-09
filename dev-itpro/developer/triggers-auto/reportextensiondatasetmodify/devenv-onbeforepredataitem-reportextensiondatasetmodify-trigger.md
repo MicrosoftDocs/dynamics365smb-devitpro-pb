@@ -57,5 +57,5 @@ This trigger runs before the base object trigger [OnPreDataItem (Report Data Ite
 
 ## See Also
 
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  

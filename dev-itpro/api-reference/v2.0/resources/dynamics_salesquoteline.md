@@ -109,7 +109,7 @@ Here is a JSON representation of the salesQuoteLine resource.
 
 
 ## See Also
-[GET salesQuoteLine](../api/dynamics_salesQuoteLine_Get.md)
-[DELETE salesQuoteLine](../api/dynamics_salesQuoteLine_Delete.md)
-[POST salesQuoteLine](../api/dynamics_salesQuoteLine_Create.md)
+[GET salesQuoteLine](../api/dynamics_salesQuoteLine_Get.md)  
+[DELETE salesQuoteLine](../api/dynamics_salesQuoteLine_Delete.md)  
+[POST salesQuoteLine](../api/dynamics_salesQuoteLine_Create.md)  
 [PATCH salesQuoteLine](../api/dynamics_salesQuoteLine_Update.md)

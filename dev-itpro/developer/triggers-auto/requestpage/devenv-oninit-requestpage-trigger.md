@@ -42,6 +42,6 @@ After this trigger is executed, the [OnOpenPage Trigger](../page/devenv-onopenpa
 > The **OnInit** trigger does not support calls to control add-in methods and properties because the trigger is invoked before the page is instantiated. <!-- For more information see, [Exposing Methods and Properties in a Windows Client Control Add-in](exposing-methods-and-properties-in-a-windows-client-pagefield-add-in.md). --> 
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnInit (Page) Trigger](../page/devenv-oninit-page-trigger.md)

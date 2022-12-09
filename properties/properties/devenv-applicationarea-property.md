@@ -21,6 +21,9 @@ Application areas represent a feature in the system that offers developers, admi
   
 - Report object, request page, and field controls  
   
+> [!NOTE]
+> From runtime version 10.0, field, part, and action controls without ApplicationArea inherit the ApplicationArea defined on the page/report level. This inheritance does not apply to members defined in extension objects.
+
 ## Property Values  
 A text string that contains a comma-separated list of application area tags.  
   

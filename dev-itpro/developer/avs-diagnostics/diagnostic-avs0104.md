@@ -24,5 +24,5 @@ Runtime packages are not allowed. A new non-runtime package must be submitted. F
 
 ## See Also
 
-[Getting Started with AL](../devenv-get-started.md)  
+[Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

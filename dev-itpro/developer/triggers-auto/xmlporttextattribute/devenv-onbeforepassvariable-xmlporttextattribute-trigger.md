@@ -36,6 +36,6 @@ end;
  This trigger is only used to export data and is typically used to manipulate the text variable.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnBeforePassVariable (Xml Port Text Element) Trigger](../xmlporttextelement/devenv-onbeforepassvariable-xmlporttextelement-trigger.md)

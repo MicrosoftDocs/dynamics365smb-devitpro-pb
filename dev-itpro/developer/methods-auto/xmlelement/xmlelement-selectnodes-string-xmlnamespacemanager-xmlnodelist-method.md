@@ -52,5 +52,5 @@ An XmlNodeList containing a collection of nodes matching the XPath expression.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlElement Data Type](xmlelement-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

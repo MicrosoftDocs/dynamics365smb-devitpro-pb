@@ -50,7 +50,7 @@ Based on the overview above and the requirements for your development environmen
 
 ## See Also
 
-[Getting Started with AL](devenv-get-started.md)  
+[Get Started with AL](devenv-get-started.md)  
 [Keyboard Shortcuts](devenv-keyboard-shortcuts.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Production and Sandbox Environments](../administration/environment-types.md)  

@@ -45,5 +45,5 @@ The FieldSeparator used when running, importing or exporting the XmlPort.
 ## See Also
 [FieldSeparator Property](../../properties/devenv-fieldseparator-property.md)  
 [Xmlport Data Type](xmlport-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

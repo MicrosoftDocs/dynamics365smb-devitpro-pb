@@ -67,7 +67,7 @@ You can use this trigger to write to the database.
 > **OnLookup** is also a field trigger at the table level. The flow is different for this trigger. When a lookup is requested, the page field's OnLookup trigger is executed if it is defined in the field lookup or system default. If no control lookup trigger is defined, the [OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md) \(if defined\) replaces the system default lookup.  
 
 ## See Also  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [OnLookup (Field) Trigger](../field/devenv-onlookup-field-trigger.md)  
 [OnLookup (Page Field) Trigger](../pagefield/devenv-onlookup-pagefield-trigger.md)

@@ -3,13 +3,11 @@ title: Troubleshooting the Cloud Migration
 description: Learn how to troubleshoot problems that you may experience with the cloud migration.
 author: dmc-dk
 ms.topic: troubleshooting
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms. search.keywords: cloud, edge
 ms.date: 02/18/2022
 ms.author: dmitrych
 ms.review: jswymer
+ms.service: dynamics365-business-central
 ---
 
 # Troubleshooting Cloud Migration
@@ -28,7 +26,7 @@ To check the compatibility level run following query: 
 SELECT compatibility_level FROM sys.databases WHERE name = 'YourDatabaseName';  
 ```
 
-If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to met the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
+If your on-premises SQL Server instance is a supported version that allows you to change the compatibility level, you can do so with the following query. If you're using a different version, you must upgrade your current on-premises environment to meet the current SQL Server compatibility requirements. For more information, see [View or Change the Compatibility Level of a Database](/sql/relational-databases/databases/view-or-change-the-compatibility-level-of-a-database?view=sql-server-ver15&preserve-view=true)
 
 ```sql
 ALTER DATABASE YourDatabaseName SET COMPATIBILITY_LEVEL = 130; 
@@ -67,7 +65,7 @@ To enable change tracking on specific tables, run the following query:
 ALTER TABLE [YOUR TABLE] ENABLE CHANGE_TRACKING 
 ```
 
-## User permissions  
+## Insufficient user permissions (Business Central and SQL Server users)  
 
 > Database: online
 
@@ -101,7 +99,7 @@ Users without a license, such as internal administrators or delegated administra
 
     The computer where IR is installed ideally shouldn't be switched off, go to sleep, or hibernate. If these conditions happen, the IR may get into an error state. In this case, we recommend that you reinstall the IR and turn off sleep hibernate on the computer.  
 
-- Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every additional parallel migration slows down the overall progress considerably.
+- Make sure the machine, which you use for hosting IR has plenty of memory (RAM) available. Migration can be interrupted by your machine running out of memory, and you can find this issue described in the IR log. To prevent this situation, avoid running too many migrations simultaneously using the same IR. Every extra parallel migration slows down the overall progress considerably.
 
 If you experience problems with Microsoft Integration Runtime, also see [Troubleshoot self-hosted integration runtime](/azure/data-factory/self-hosted-integration-runtime-troubleshoot-guide).
 
@@ -109,21 +107,21 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
 
 > Database: online and on-premises
 
-- If you migrate several on-prem databases to several online environments, it's possible to reuse the same IR for these migrations.
+- If you migrate several on-premises databases to several online environments, it's possible to reuse the same IR for these migrations.
 
     Once you've successfully connected and migrated data into one online environment, you can reuse the IR for another environment. To reuse an IR, enter its name in **Integration Runtime Name** field of **Data Migration Setup** assisted setup, instead of leaving the field blank.
 
-- Use a restored backup when migrating the same on-premise database to different online environments.
+- Use a restored backup when migrating the same on-premises database to different online environments.
 
-    Cloud migration stores some data in the on-premise database. So using the same on-premise database to migrate into another online environment can affect the next synchronization run. If you need to migrate to several online environments, we recommend you make a backup of the on-premise database before enabling the data migration. Then, restore the on-premise database to this backup before setting up migration to another online environment.  
+    Cloud migration stores some data in the on-premises database. So using the same on-premises database to migrate into another online environment can affect the next synchronization run. If you need to migrate to several online environments, we recommend you make a backup of the on-premises database before enabling the data migration. Then, restore the on-premises database to this backup before setting up migration to another online environment.  
 
-- Avoid running several migrations of the same on-prem database to different online environment at the same time.
+- Avoid running several migrations of the same on-premises database to different online environment at the same time.
 
-    If you need to do this type of migration, then migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-prem database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.  
+    If you need to do this type of migration, then migrate data sequentially. First, migrate data into the online environment and disable the migration. Then restore the on-premises database from backup and enable the migration again by providing a connection string to this database. You can use the same Integration Runtime and Authorization key.  
 
-- Don't try to migrate data from several on-premise databases into the same online environment at the same time.  
+- Don't try to migrate data from several on-premises databases into the same online environment at the same time.  
 
-    For example, you may have two companies, where each company is in its own on-premise database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-prem database. You can use the same Integration Runtime and Authorization key.  
+    For example, you may have two companies, where each company is in its own on-premises database. If you need to do this type of migration, the migrate data sequentially. First, migrate data from one database into the online environment and disable the migration. Then set up the migration in the same online environment, provide a new connection string to the next on-premises database. You can use the same Integration Runtime and Authorization key.  
 
 ## Product version
 
@@ -134,7 +132,7 @@ If you experience problems with Microsoft Integration Runtime, also see [Trouble
     |Option|When to use|
     |------|-----------|
     |Dynamics 365 Business Central current version|Select this option if you're migrating from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  latest version.|
-    |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from the an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
+    |Dynamics 365 Business Central earlier versions|Select this option if you're migrating from an earlier supported version. [!INCLUDE [bc-cloud-versions](../includes/bc-cloud-versions.md)]|
     |Dynamics GP|Select this option if you're migrating from the Dynamics GP product.|
 
 - When migrating data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)], check the `applicationVersion` field in the `$ndo$tenantdatabaseproperty` table. Set this field to the correct version in the SQL if it's blank or not up to date. The migration code uses the field's value for the following reasons:
@@ -153,19 +151,22 @@ The cloud migration process can become difficult if the names of the companies i
 SELECT *
 FROM Company
 
-Where ([Name] like '% ') or ([Name] like ' %' ) or ([Name] like '%' + Char(10) + '%') or ([Name ] like '%' + Char(13) + '%')
+Where ([Name] like '% ') or ([Name] like ' %' ) or ([Name] like '%' + Char(10) + '%') or ([Name ] like '%' + Char(13) + '%') or ([Name ] like '%/%' )
 ```
 
-Simply change the company name, run the migration, and then, when migration is complete, change the company name in the target environment as appropriate.  
+Change the company name, run the migration, and then, when migration is complete, change the company name in the target environment as appropriate.  
 
 ## Missing or corrupted data after cloud migration
 
 > Database: on-premises
 
-If cloud migration has completed successfully, but pages in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online are not showing the expected data, or there are duplicate record exceptions thrown for setup tables, it is most likely due to table extensions missing records that are present in the base application.  
+If cloud migration has completed successfully, but pages in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online aren't showing the expected data, or there are duplicate record exceptions thrown for setup tables, it's most likely due to table extensions missing records that are present in the base application.  
 
 [!INCLUDE [bc-cloud-migrate-tableext](../includes/bc-cloud-migrate-tableext.md)]
 
+
+To fix this problem, go to the **Cloud Migration Management** page and run the **Repair Companion Table Records** action to insert the missing table extension records.
+<!--
 - Make sure the tables in your on-premises SQL Server database contain  the right data
 
   - Run a query such as the following for the base app table and the table extension:
@@ -183,7 +184,7 @@ If cloud migration has completed successfully, but pages in [!INCLUDE [prod_shor
 
     - Uninstall the relevant app from the online tenant, provided that they are no longer needed for working online. Use the [Business Central Administration Center API](administration-center-api_app_management.md) or AppSource.
 
-  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. For more information, see the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  
+  - If the migration is from an earlier version of [!INCLUDE [prod_short](../includes/prod_short.md)], you must disable cloud migration and then reconfigure cloud migration. For more information, see the [Disabling the cloud migration](#disabling-the-cloud-migration) section.  -->
 
 ## Disabling the cloud migration
 

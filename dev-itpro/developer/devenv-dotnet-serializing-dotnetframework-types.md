@@ -171,7 +171,7 @@ The line that contains assignment of the **ServerObject** to the **ClientObject*
 
 
 ## See Also  
-[Getting Started with AL](devenv-get-started.md)    
+[Get Started with AL](devenv-get-started.md)    
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)
 [Migrating from .NET Framework to .NET Standard](devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)    
 [.NET Control Add-Ins](devenv-dotnet-controladdins.md)    

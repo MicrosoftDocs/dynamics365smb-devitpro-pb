@@ -1,7 +1,8 @@
 ---
 title: "Scope (Action) Property"
+description: Specifies the scope of the action to be page-specific or repeater control-specific in Business Central
 ms.custom: na
-ms.date: 01/19/2022
+ms.date: 09/05/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -24,9 +25,6 @@ The Scope property has the following effect:
   
 -   On a [!INCLUDE[nav_tablet](../includes/nav_tablet_md.md)], if the **Scope** property is set to **Page**, the action will be shown in the page action menu. If the **Scope** property is set to **Repeater**, the action is moved from the page action menu to the repeater control shortcut menu.  
 
-> [!NOTE]  
-> For an action to display in the shortcut menu, the action must have the [Promoted property](devenv-promoted-property.md) set to `true`.
-  
 -   On a [!INCLUDE[nav_phone](../includes/nav_phone_md.md)], if the **Scope** property is set to **Page**, the action will be shown in the page action menu. If the **Scope** property is set to **Repeater**, there are two scenarios:  
   
     -   If the list **is** associated with a card page, then the action is not available on the list page anywhere, and you should add the action to the card page.  

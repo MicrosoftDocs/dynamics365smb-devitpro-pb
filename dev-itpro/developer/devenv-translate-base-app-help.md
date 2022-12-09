@@ -1,32 +1,30 @@
 ---
-title: "Translating Base App Help using AL Extensions"
+title: Configure Localization App Location of Translated Base App Help
+description: 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 10/24/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
+robots: NOINDEX
 ms.topic: conceptual
 ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-# Translating Base App Help using AL Extensions
-With an AL extension you can override the default help link for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] and re-direct users pressing the Help button to another website. This also enables translating help for base app objects.
+# Configure Localization App Location of Translated Base App Help
+
+AL extensions that are approved localization apps can override the default help link for [!INCLUDE [prod_short](includes/prod_short.md)] and re-direct users that looks for content for Microsoft's base app in a non-Microsoft delivered translations.  
 
 > [!NOTE]  
 > This feature is not available for per-tenant extensions, and any usage will be caught by the [PerTenantExtensionCop Analyzer](./analyzers/pertenantextensioncop.md).
 
-## Help properties
-In the `app.json` file, two properties control the help URL and the supported locale of the help. For help on manifest files, see [JSON Files](devenv-json-files.md).
+## Configure app.json properties
 
-The `helpBaseUrl` property represents the URL that will be used to overwrite the default Microsoft help link, which is `(/{0}/dynamics365/business-central)`. This URL must contain a placeholder `{0}` for the user's locale culture. 
-The `supportedLocales` property is used to specify the list of locales that are supported by the URL specified in the `helpBaseUrl` property and used in the translation app. If the user's current locale is among the `supportedLocales` of the extension, the user will be re-directed to the help base URL that you specified. The settings in the `app.json` file look like this:
-
-```json
-"helpBaseUrl": "https://www.mydocumentationwebsite.com/{0}/business-central/",
-"supportedLocales": ["da-DK"]
-```
+In the `app.json` file, two properties control the Help URL and the supported locale of the Help. Learn more at [Localization apps](../help/context-sensitive-help.md#localization-apps) and [JSON Files](devenv-json-files.md).
 
 ## See Also
+
+[Add Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)  
+[Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [Working with Translation files](devenv-work-with-translation-files.md)  
-[Adding Help Links from Pages, Reports, and XMLports](devenv-adding-help-links-from-pages-tables-xmlports.md)

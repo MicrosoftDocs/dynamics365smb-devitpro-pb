@@ -47,5 +47,5 @@ The atomized string object if the string has been atomized.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also
 [XmlNameTable Data Type](xmlnametable-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

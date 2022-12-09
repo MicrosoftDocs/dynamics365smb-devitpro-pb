@@ -40,5 +40,5 @@ You use this method as part of the upgrade code for an extension, where it is ca
 
 ## See Also
 [NavApp Data Type](navapp-data-type.md)  
-[Getting Started with AL](../../devenv-get-started.md)  
+[Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
