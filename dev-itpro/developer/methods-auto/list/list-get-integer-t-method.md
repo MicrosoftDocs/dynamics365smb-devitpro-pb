@@ -1,5 +1,5 @@
 ---
-title: "List.Get(Integer, var T) Method"
+title: "List.Get(Integer, var Text) Method"
 description: "Gets the element at the specified index."
 ms.author: solsen
 ms.custom: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# List.Get(Integer, var T) Method
+# List.Get(Integer, var Text) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
 Gets the element at the specified index.
@@ -21,7 +21,7 @@ Gets the element at the specified index.
 
 ## Syntax
 ```AL
-[Ok := ]  List.Get(Index: Integer, var Result: T)
+[Ok := ]  List.Get(Index: Integer, var Result: Text)
 ```
 ## Parameters
 *List*  
@@ -32,7 +32,7 @@ An instance of the [List](list-data-type.md) data type.
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The one-based index of the element to get.  
 *Result*  
-&emsp;Type: [T](list-data-type.md)  
+&emsp;Type: [Text](list-data-type.md)  
 The element at the specified index.  
 
 
