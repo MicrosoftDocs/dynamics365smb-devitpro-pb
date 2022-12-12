@@ -48,7 +48,7 @@ For more information, see [OrderBy](properties/devenv-orderby-property.md).
 
 ## Layout changes
 
-By default, a view will have the same field layout, including freeze column, as the page's **All** view. This behavior is a basic experience in the case where defining a specific layout for the view isn't important. It's controlled by the [SharedLayout property](properties/devenv-sharedlayout-property.md) on the page view, which in this case is set to `true`. This layout is referred to as a *shared layout view*. The following example code illustrates a *shared layout view*: 
+By default, a view will have the same field layout as the page's **All** view, which means it will show the same columns, in the same order, with the same widths. The layout will also have the same freeze column. This behavior is a basic experience in the case where defining a specific layout for the view isn't important. It's controlled by the [SharedLayout property](properties/devenv-sharedlayout-property.md) on the page view, which in this case is set to `true`. This layout is referred to as a *shared layout view*. The following example code illustrates a *shared layout view*:
 
 ```al
 view(SharedLayoutView) 
@@ -61,12 +61,12 @@ view(SharedLayoutView)
 } 
 ```
 
-By contrast, you set the `SharedLayout` to `false` to design a *detached layout view* that defines its own layout and is independent from all other views. Any changes coded in the `layout` section are applied in the view. User personalizations made on the page aren't applied on the view. For example:
+By contrast, you set the `SharedLayout` to `false` to design a *unique layout view* that defines its own layout and is independent from all other views. Any changes coded in the `layout` section are applied in the view. User personalizations made on the page aren't applied on the view. For example:
 
 ```al
-view(DetachedView)
+view(UniqueView)
 {
-    Caption = 'View With Detached Layout';
+    Caption = 'View With Unique Layout';
     Filters = where ("Balance (LCY)" = filter (> 500), Name = filter ('G*')); 
     // By settings this property to false, the view gets its own independent layout.
     // User personalization are not applied on this view.
