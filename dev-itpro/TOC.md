@@ -1105,6 +1105,7 @@
 <!-- integration-->
 # Integration
 <!-- web service -->
+## [Refactor Integration Management](developer/devenv-integration-record-refactoring.md)
 ## Web Services
 ### [Web Services Overview](webservices/web-services.md)
 ### [Terms of Use for Web Services](webservices/webservices-terms-of-use.md)
