@@ -45,6 +45,10 @@ A variable of type JsonToken that will contain the result if the operation is su
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 The operation will fail if the Index is smaller than 0 or greater or equal than JsonArray.Count.
 
 ## See Also

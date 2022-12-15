@@ -40,6 +40,13 @@ The position of the value in the JsonArray. -1 will be returned if Value cannot 
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
+
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
