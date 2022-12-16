@@ -254,12 +254,12 @@ In the following, you can read about how you reach out for support most efficien
 
 When registering affixes for your publisher, or adding a new publisher name to your affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
-### When do I contact Marketplace Certification for assistance?
+### When do I contact Partner Center customer support?
 
-When your submission fails to be successfully completed in Partner Center, but you're experiencing issues updating your extension(s) to fix the validation errors, you can request assistance from [Marketplace Certification](https://aka.ms/certificationengagement).
+When your submission fails to be successfully completed in Partner Center, but are having issues updating your extension(s) to fix the validation errors.
 
 > [!IMPORTANT]  
-> If you're using Azure Application Insights, before contacting [Marketplace Certification](https://aka.ms/certificationengagement) for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages that you found. Including the results from the TSG is also recommended.
+> If you are using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
 
