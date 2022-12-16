@@ -116,7 +116,7 @@ The **Extensions** tab displays installed extensions that affect the selected pa
 
 ![Page Inspection Extensions Tab.](media/page-inspection-extensions.png)
 
-Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#Appjson).
+Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#appjson-file).
 
 The **ID**, which is sometimes referred to as AppID, is a 32-digit unique identifier, which is useful when identifying extensions and debugging issues.
 
