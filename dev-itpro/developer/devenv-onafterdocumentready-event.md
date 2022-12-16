@@ -218,7 +218,7 @@ end;
 <!-- [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)   -->
 <!-- [Developing Printer Extensions Overview](devenv-reports-printing.md)   -->
 <!-- [Creating a Printer Extension](devenv-reports-create-printer-extension.md)   -->
-[Events in AL](devenv-events-in-al.md)\
-[Publishing Events](devenv-publishing-events.md)\
-[Raising Events](devenv-raising-events.md)\
-[Subscribing to Events](devenv-subscribing-to-events.md)
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
+[Subscribing to Events](devenv-subscribing-to-events.md)  
