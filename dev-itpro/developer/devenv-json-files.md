@@ -21,7 +21,7 @@ When you start a new AL project, two JSON files; the `app.json` file and the `la
 > [!IMPORTANT]  
 > The `rad.json` and the `snapshots.json` files should not be modified.
 
-## <a name="Appjson"></a>App.json file
+## App.json file
 
 The following table describes the settings in the `app.json` file. To see an example `app.json` file, go to [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
 

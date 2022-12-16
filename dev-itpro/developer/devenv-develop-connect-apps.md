@@ -27,7 +27,7 @@ When you have your tenant, you can sign into the UI to play with the product, an
         > [!IMPORTANT]  
         > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. For more information, see [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#accesskeys).
 
-To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. [See Exploring the APIs with Postman and AAD authentication below](#exploring-the-apis-with-postman-and-aad-authentication).
+To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. [See Exploring the APIs with Postman and AAD authentication below]().
 
 In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
@@ -63,7 +63,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
     > [!NOTE]  
     > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
 
-You have now set up the Azure AD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and Azure AD authentication](#exploring-the-apis-with-postman-and-aad-authentication) section below.
+You have now set up the Azure AD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and Azure AD authentication]() section below.
 
 ## Exploring the APIs with Postman and basic authentication
 

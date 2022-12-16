@@ -61,7 +61,7 @@ Viewing and collecting telemetry data is done the same way as with other trace e
     For more information, see [Get Started Monitoring Events](../administration/monitor-server-events.md#GetStartedEvents).
 
 > [!IMPORTANT]  
->  The [!INCLUDE[server](includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General). 
+>  The [!INCLUDE[server](includes/server.md)] instance includes a configuration setting called **Diagnostic Trace Level** (`TraceLevel` in the customsettings.config file) that enables you to specify the lowest severity level of telemetry events to be recorded in the event log, or even turn off telemetry event logging altogether. If you do not see the expected events, then verify the [!INCLUDE[server](includes/server.md)] instance configuration with an administrator. For information, see [Configuring Business Central Server](../administration/configure-server-instance.md#general-settings). 
 
 ## See Also
 
