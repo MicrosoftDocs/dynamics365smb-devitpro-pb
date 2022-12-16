@@ -23,7 +23,7 @@ You use the fixed control to arrange page fields in rows and columns to form a m
 
 ![Fixed control illustration on web client.](media/BusWebClientFixedLayout.PNG "BusinessCentralFixedControl") 
 
-You can also use a fixed control to display information in the details section of a Worksheet page. If you are using the [!INCLUDE[demolong](includes/demolong_md.md)], then you can see examples of these uses in page 151, Customer Statistics, and page 40, Item Journal.
+You can also use a fixed control to display information in the details section of a Worksheet page. If you're using the [!INCLUDE[demolong](includes/demolong_md.md)], then you can see examples of these uses in page 151, Customer Statistics, and page 40, Item Journal.
   
 ## Adding fields
 
