@@ -74,13 +74,13 @@ Our CustomerRewardsTest project will be referencing objects from the CustomerRew
         "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
         "name":  "Library Assert",
         "publisher":  "Microsoft",
-        "version":  "21.0.0.0"
+        "version":  "19.0.0.0"
     },
     {
         "id":  "5d86850b-0d76-4eca-bd7b-951ad998e997",
         "name":  "Tests-TestLibraries",
         "publisher":  "Microsoft",
-        "version":  "21.0.0.0"
+        "version":  "19.0.0.0"
     }
   ]
    ...
