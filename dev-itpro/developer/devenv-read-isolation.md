@@ -37,7 +37,7 @@ begin
 end;
 ```
 
-With the introduction of record instance isolation level (RIIL), it's possible to explicitly select the isolation level for reads on a record instance. RIIL will override the transaction's isolation level for a given table. It becomes possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
+With the introduction of record instance isolation level (RIIL), it's possible to explicitly select the isolation level for reads on a record instance. RIIL will override the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
 
 The following example shows AL code with SQL isolation level hints annotated on database reads, with RIIL used to override the transaction's isolation level.
 
@@ -69,7 +69,7 @@ end;
 |RepetableRead|Ensures that all reads stable by holding shared locks for the lifetime of the transaction.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
 
-Further documentation on the non-default values can be found documented here and here.
+For more about non-default values, go to [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) and [](/sql/t-sql/queries/hints-transact-sql-table?#updlock) in the SQL Server documentation.
 
 ## Temporarily heightening the isolation level
 
