@@ -127,12 +127,12 @@ The following table describes the settings in the `launch.json` file. The `launc
 |attach|No | Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 
 
-### Shared launch.json file across workspace and global settings
+### Support for global and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.2, a `launch.json` file can be shared across a workspace or global settings. This allows for a centralized configuration of projects. If a project inside the workspace has a `launch.json` file defined, that will overwrite any global configuration. 
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and global configuration. A workspace launch configuration overrides the launch configuration specified in the global `settings.json` file.
 
 > [!NOTE]  
-> A locally defined `launch.json` file will overwrite a global, even if the locally defined file is empty.
+> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
 
 
 ## See Also
