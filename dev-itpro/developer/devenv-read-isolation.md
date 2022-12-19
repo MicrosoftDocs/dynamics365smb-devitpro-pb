@@ -37,9 +37,9 @@ begin
 end;
 ```
 
-With the introduction of record instance isolation level (RIIL), it's possible to explicitly select the isolation level for reads on a record instance. This will override the transaction's isolation level for a given table. It becomes possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
+With the introduction of record instance isolation level (RIIL), it's possible to explicitly select the isolation level for reads on a record instance. RIIL will override the transaction's isolation level for a given table. It becomes possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
 
-The below example shows AL code with SQL isolation level hints annotated on database reads, with RIIL used to override the transaction's isolation level.
+The following example shows AL code with SQL isolation level hints annotated on database reads, with RIIL used to override the transaction's isolation level.
 
 ```al
 local procedure UsingReadIsolation()
@@ -75,7 +75,7 @@ Further documentation on the non-default values can be found documented here and
 
 Previously AL only provided explicit isolation level control via the [LockTable](add link) method, which would ensure the all reads for the remainder of the transaction would use UpdLock. Instead, with RIIL code can be explicit about the isolation guarantees it needs and leave subsequent code unimpacted by its execution.
 
-The following example heightens the isolation level on a record instance of type "G/L Entry" taking the lock on the last row, while subsequent reads against won't trigger further locks to be taken. Such usage makes tremendous sense in the case of event subscribers, where one injects code into an existing business logic flow. Where it wasn't expected to introduce a LockTable call causing subsequent reads against a table to lock.
+The following example heightens the isolation level on a record instance of type "G/L Entry". It takes the lock on the last row, while subsequent reads won't trigger further locks to be taken. Such usage makes sense in cases with event subscribers, where one injects code into an existing business logic flow. Where it wasn't expected to introduce a LockTable call causing subsequent reads against a table to lock.
 
 ```al
 // Gets the next "Entry No." and locks just last row.
@@ -92,7 +92,7 @@ end;
 
 ## Temporarily lowering the isolation level
 
-Inside a transaction it isn't possible to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table will require locks on the entire table. With RIIL, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
+Inside a transaction, it isn't possible to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table will require locks on the entire table. With RIIL, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
 
 ```al
 local procedure GetEstimatedCount(tableno: Integer) : Integer
