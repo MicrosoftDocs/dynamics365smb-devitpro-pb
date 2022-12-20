@@ -116,7 +116,7 @@ The **Extensions** tab displays installed extensions that affect the selected pa
 
 ![Page Inspection Extensions Tab.](media/page-inspection-extensions.png)
 
-Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#Appjson).
+Except for the type and performance information, the data that's shown is defined in the extension's app.json file, which is configured during development. For more information, see [App.json](devenv-json-files.md#appjson-file).
 
 The **ID**, which is sometimes referred to as AppID, is a 32-digit unique identifier, which is useful when identifying extensions and debugging issues.
 
@@ -141,7 +141,7 @@ The performance information includes two values. The first value indicates the t
 > You can get more performance data for extensions by using Application Insights and viewing the AL method traces. For more information, see [Analyzing Long Running AL Methods Telemetry](../administration/telemetry-al-method-trace.md).
 
 > [!NOTE]
-> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#General).  
+> For [!INCLUDE[prod_short](includes/prod_short.md)] on-premises, the performance data will only be shown if AL function timing is enabled on the [!INCLUDE[server](includes/server.md)] instance. For more information, see [Configuring Business Central Server](../administration/configure-server-instance.md#general-settings).  
 
 ### [Page Filters](#tab/pagefilters)
 

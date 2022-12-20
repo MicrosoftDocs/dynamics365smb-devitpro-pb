@@ -175,7 +175,7 @@ To fix compilation errors where you changed AL code, you'll create a new version
     - Set `"platform"` to the version you're upgrading to. For example, use  `19.0.0.0` when upgrading to version 19.
     - Set `"target"` to `OnPrem`
 
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#appjson-file).
 
 6. Rewrite code to as needed to clear the compilation errors.
 
