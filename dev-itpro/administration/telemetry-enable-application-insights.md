@@ -56,7 +56,9 @@ The way you enable [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)
 
 ### For online environments
 
-For [!INCLUDE [prod_short](../includes/prod_short.md)] online:
+For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can enable telemetry on environments either from the admin center or by using the the admin center API.  To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
+
+#### From the admin center
 
 1. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
 
