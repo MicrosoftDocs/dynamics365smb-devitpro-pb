@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 12/20/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -256,7 +256,7 @@ When registering affixes for your publisher, or adding a new publisher name to y
 
 ### When do I contact Partner Center customer support?
 
-When your submission fails to be successfully completed in Partner Center, but you're having issues updating your extension(s) to fix the validation errors.
+When your submission fails to be successfully completed in Partner Center, but you're experiencing issues updating your extension(s) to fix the validation errors.
 
 > [!IMPORTANT]  
 > If you're using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages that you found. Including the results from the TSG is also recommended.
