@@ -72,7 +72,7 @@ As a VAR, once you've been registered by your ISV, you must explicitly give ever
 
 You only have to do this step once. In your Azure Active Directory (Azure AD) tenant, register an application that has delegated permission to the Dynamics 365 Business Central API. You'll use this application to call the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Administration Center API for each customer that you want to onboard.
 
-Apart from registering an application, you'll also need an access token. For more information, see [Setting up Azure Active Directory (AAD) based authentication](../administration/administration-center-api.md#azuread) and [Getting an access token](../administration/administration-center-api.md).
+Apart from registering an application, you'll also need an access token. For more information, see [Setting up Azure Active Directory (AAD) based authentication](../administration/administration-center-api.md#azuread) and [Getting an access token](../administration/administration-center-api.md#getting-an-access-token-with-client-credentials-flow).
 
 ### Onboarding customers
 
