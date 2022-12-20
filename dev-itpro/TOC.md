@@ -665,6 +665,7 @@
 ###### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ###### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 ###### [Adding Teaching Tips to Card Pages](administration/onboarding-teaching-tips-tours.md)
+##### [Assisted Setup Guides](developer/devenv-designing-navigate-pages.md)
 ##### Page Parts
 ###### [Parts Overview](developer/devenv-designing-parts.md)
 ###### [Designing List Parts](developer/devenv-designing-listparts.md)
