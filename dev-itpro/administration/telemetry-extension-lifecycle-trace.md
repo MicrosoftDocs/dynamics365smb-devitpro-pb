@@ -98,7 +98,7 @@ Occurs when an extension compiles successfully on the service. An extension comp
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0020**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md).|
 |extensionCompilationResult |**Compilation succeeded without errors or warnings.**|
 | extensionName|Specifies the name of the extension that was compiled.|
 | extensionId|Specifies the ID of the extension that was compiled.|
@@ -147,7 +147,7 @@ Occurs when an extension failed to compile on the service. An extension compiles
 |Dimension|Description or value|
 |---------|-----|
 | eventId|**LC0021**|
-|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md#customdimensions).|
+|extensionCompilationDependencyList|Specifies details about the extensions on which the compiled extension has dependencies.<br /><br /> **Note:** If the value exceeds 8000 characters, one or two additional dimensions will be included in the trace to cover the complete dependency list. For more information, see [About Custom Dimensions](telemetry-overview.md).|
 |extensionCompilationResult |Specifies details about the error that occurred during compilation.|
 | extensionName|Specifies the name of the extension that failed to compile.|
 | extensionId|Specifies the ID of the extension that failed to compile.|
