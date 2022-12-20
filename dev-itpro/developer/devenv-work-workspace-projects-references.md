@@ -100,7 +100,7 @@ To control how dependency publishing is performed on the server, the `launch.jso
 
 ## Global and workspace launch configuration
 
-With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [Global and workspace launch configuration](devenv-json-files.md#support-for-global-and-workspace-launch-configuration).
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. For more information, see [Global and workspace launch configuration](devenv-json-files.md#global-and-workspace-launch-configuration).
 
 ## Traverse the dependency graph
 
