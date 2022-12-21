@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting user personalization in Business Central #Required
+title: Troubleshooting user personalization can't be started
 description: Learn how to troubleshoot issues with user personalization.
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -10,54 +10,27 @@ ms.date: 12/21/2022
 ms.custom: bap-template
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
-
-<!--This template provides the basic structure of a troubleshooting article. See [Write a troubleshooting article](write-a-troubleshooting-article.md) in the contributor guide. To provide feedback on this template contact [bace feedback](mailto:templateswg@microsoft.com).-->
-
 <!--H1. Required. If this is a resource-type article, the title should be "<Product/solution/app> troubleshooting and FAQs." If it's a direct reference-type article, pick an H1 that summarizes the problem from the customer's point of view.-->
-# Heading
+# Troubleshooting user personalization can't be started
 
-<!--add your content here-->
-
-<!--Include the following sections in a resource-type article. Remove them if you're writing a direct-reference troubleshooting article.-->
-## Troubleshooting articles
-
-<!--If your product doesn't have a support site, but it does have a collection of troubleshooting articles, link to that instead.-->
-For a large collection of troubleshooting articles, go to the following site provided by Microsoft Support:
-
-- link goes here
-
-These articles explain how to diagnose and fix issues that you might encounter when you use {product}. The articles are organized by feature area and each article focuses on a specific issue and how to solve it.
-
-## Frequently asked questions
-
-Collections of frequently asked questions (FAQs) are integrated into the {product} documentation. Each of these articles includes multiple FAQs for a specific feature area.
-
-The following FAQ articles discuss issues specific to {product}:
-
-- link to FAQ
-- link to FAQ
-
-The following FAQ articles discuss issues related to the platform shared by all {product} apps, including {this product}:
-
-- link to FAQ
-- link to FAQ
-
-## Other support resources
-<!--Add and replace these links as needed for your product/solution/app.-->
-
-The following Microsoft support and community resources are also available, where you can discuss and solve issues, browse blogs, request features, and more:
-
-[Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
-[Dynamics 365 Community](https://community.dynamics.com/)
-[Dynamics 365 support](https://dynamics-int.microsoft.com/support/)
+When there are issues preventing the user personalization in [!INCLUDE [prod_short](includes/prod_short.md)], the user will get an error message, and not be able to start user personalization. 
 
 <!--Include the following sections in a direct reference-type article. Remove them if you're writing a resource troubleshooting article.-->
 ## Symptoms
 
-<!--Clearly describe the problem the way a customer would describe it.-->
+The user sees the following error message "Sorry, something went wrong and personalization could not be started. Please try again later, or contact your system administrator."
 
 ## Resolution
+
+As a tenant administrator, you can do the following to mitigate the issue.
+
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Personalized Pages**, and then choose the related link.
+1. On the **Personalized Pages** page, use the filter pane to show records that belong to the impacted user.
+1. Select the **Troubleshoot** button.  
+  You will now get a list of all records that contain errors. These records must be removed to unblock the user from starting user personalization.
+2. 
+
+Remove the records with errors as documented in Clear user personalizations 
 
 <!--Tell the customer how to fix the problem. Or, if the problem is caused by user error or customer misunderstanding, briefly explain the right way or the feature's proper functioning.-->
 
