@@ -22,16 +22,10 @@ The user sees the following error message "Sorry, something went wrong and perso
 
 ## Resolution
 
-As a tenant administrator, you can do the following to mitigate the issue.
+As a tenant administrator, you can do the following to mitigate the issue. It's recommended to take a screenshot of any personalizations done, before deleting them.
 
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Personalized Pages**, and then choose the related link.
 1. On the **Personalized Pages** page, use the filter pane to show records that belong to the impacted user.
 1. Select the **Troubleshoot** button.  
-  You will now get a list of all records that contain errors. These records must be removed to unblock the user from starting user personalization.
-2. 
-
-Remove the records with errors as documented in Clear user personalizations 
-
-<!--Tell the customer how to fix the problem. Or, if the problem is caused by user error or customer misunderstanding, briefly explain the right way or the feature's proper functioning.-->
-
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+  You'll now get a list of all records that contain errors. These records must be removed to unblock the user from starting user personalization.  
+2. Select the **Manage** action to delete the user personalizations with errors.
