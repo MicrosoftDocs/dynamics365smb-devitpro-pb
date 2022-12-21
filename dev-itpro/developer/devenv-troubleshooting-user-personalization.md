@@ -10,12 +10,10 @@ ms.date: 12/21/2022
 ms.custom: bap-template
 ---
 
-<!--H1. Required. If this is a resource-type article, the title should be "<Product/solution/app> troubleshooting and FAQs." If it's a direct reference-type article, pick an H1 that summarizes the problem from the customer's point of view.-->
 # Troubleshooting user personalization can't be started
 
 When there are issues preventing the user personalization in [!INCLUDE [prod_short](includes/prod_short.md)], the user will get an error message, and not be able to start user personalization. 
 
-<!--Include the following sections in a direct reference-type article. Remove them if you're writing a resource troubleshooting article.-->
 ## Symptoms
 
 The user sees the following error message "Sorry, something went wrong and personalization could not be started. Please try again later, or contact your system administrator."
