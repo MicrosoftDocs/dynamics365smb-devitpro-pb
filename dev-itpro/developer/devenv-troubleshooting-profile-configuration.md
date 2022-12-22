@@ -20,7 +20,16 @@ The user sees the following error message "Sorry, something went wrong and perso
 
 ## Resolution
 
-As a tenant administrator, you can do the following to mitigate the issue. 
+As a tenant administrator, you can do the following to mitigate the issue. The steps below describe how to remove the profile configurations with errors. The alternative resolution is described in the next section.
 
 > [!NOTE]  
-> It's recommended to take a screenshot of any configuration done, before deleting them.
+> The following steps will delete records with compilation errors and the specific profile configuration will be deleted. It's recommended to take a screenshot of any configuration done, before deleting them.
+
+1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Profiles**, and then choose the related link.
+1. Select the profile card of the profile that can't be customized, and then choose **Manage customized pages**.
+1. Select the **Troubleshoot** button.  
+  You will now get the list of all records that contain errors. These records must be fixed or removed to unblock the user.
+1. Select the **Manage** action to delete the profile configurations with errors.
+
+## Alternative resolution
+
