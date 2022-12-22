@@ -26,7 +26,7 @@ As a tenant administrator, you can do the following to mitigate the issue.
 > The following steps will delete records with compilation errors and the specific user personalizations will be deleted. It's recommended to take a screenshot of any personalizations done, before deleting them.
 
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Personalized Pages**, and then choose the related link.
-1. On the **Personalized Pages** page, use the filter pane to show records that belong to the impacted user.
-1. Select the **Troubleshoot** button.  
+2. On the **Personalized Pages** page, use the filter pane to show records that belong to the impacted user.
+3. Select the **Troubleshoot** button.  
   You'll now get a list of all records that contain errors. These records must be removed to unblock the user from starting user personalization.  
-2. Select the **Manage** action to delete the user personalizations with errors.
+4. Select the **Manage** action to delete the user personalizations with errors.
