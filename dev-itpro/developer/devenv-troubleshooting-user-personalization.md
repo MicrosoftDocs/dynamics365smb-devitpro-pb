@@ -20,7 +20,10 @@ The user sees the following error message "Sorry, something went wrong and perso
 
 ## Resolution
 
-As a tenant administrator, you can do the following to mitigate the issue. It's recommended to take a screenshot of any personalizations done, before deleting them.
+As a tenant administrator, you can do the following to mitigate the issue. 
+
+> [!NOTE]  
+> It's recommended to take a screenshot of any personalizations done, before deleting them.
 
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Personalized Pages**, and then choose the related link.
 1. On the **Personalized Pages** page, use the filter pane to show records that belong to the impacted user.

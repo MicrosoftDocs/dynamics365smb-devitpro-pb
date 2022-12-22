@@ -19,3 +19,8 @@ When there are issues preventing the profile configuration in [!INCLUDE [prod_sh
 The user sees the following error message "Sorry, something went wrong and personalization could not be started. Please try again later, or contact your system administrator."
 
 ## Resolution
+
+As a tenant administrator, you can do the following to mitigate the issue. 
+
+> [!NOTE]  
+> It's recommended to take a screenshot of any configuration done, before deleting them.
