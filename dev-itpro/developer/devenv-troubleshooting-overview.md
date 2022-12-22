@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting Overview"
-description: "An overview of tools and processes that help troubleshoot issues in Business Central"
+title: Troubleshooting overview
+description: An overview of tools and processes that help troubleshoot issues in Business Central.
 ms.custom: na
 ms.date: 04/01/2022
 ms.reviewer: na
@@ -11,7 +11,7 @@ ms.author: solsen
 author: SusanneWindfeldPedersen
 ---
 
-# Troubleshooting Overview
+# Troubleshooting overview
 
 The following sections help you troubleshoot issues with Business Central so that you can *gather information* about a given problem, *identify the cause* of the problem, and eventually *implement a sustainable solution* that does not introduce new issues. Use the tools provided in the Business Central client to gain insights on trends in application behavior, identify performance issues, database locks, and more. And use profiling combined with debugging in sandboxes, or snapshot debugging in production environments to pinpoint what causes a specific issue.
 

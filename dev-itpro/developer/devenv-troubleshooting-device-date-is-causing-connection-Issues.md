@@ -1,5 +1,6 @@
 ---
-title: "Troubleshooting Device Date is Causing Connection Issues"
+title: Troubleshooting Device Date is Causing Connection Issues
+description: Learn how to check how date can cause connectivity issues.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na
