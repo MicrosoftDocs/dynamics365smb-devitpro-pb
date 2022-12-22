@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Troubleshooting profile configuration can't be started
 
-When there are issues preventing the profile configuration in [!INCLUDE [prod_short](includes/prod_short.md)], the user will get an error message, and not be able to start the profile configuration. 
+When there are issues preventing the profile configuration in [!INCLUDE [prod_short](includes/prod_short.md)], the user will get an error message, and not be able to start the profile configuration. When the configuration is started, all customization records are loaded and compiled together. If one of these records causes a compilation error, then the profile configuration can't be started.
 
 ## Symptoms
 

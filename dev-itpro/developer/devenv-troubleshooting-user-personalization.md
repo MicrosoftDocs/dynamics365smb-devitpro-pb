@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Troubleshooting user personalization can't be started
 
-When there are issues preventing the user personalization in [!INCLUDE [prod_short](includes/prod_short.md)], the user will get an error message, and not be able to start user personalization. 
+When there are issues preventing the user personalization in [!INCLUDE [prod_short](includes/prod_short.md)], the user will get an error message, and not be able to start user personalization. When starting the personalization, all customization records are loaded and compiled together. If one of these records causes a compilation error, then the user personalization can't be started.
 
 ## Symptoms
 
