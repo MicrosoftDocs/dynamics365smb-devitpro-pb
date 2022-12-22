@@ -26,6 +26,7 @@ The following sections help you troubleshoot issues with Business Central so tha
 - Check personalization issues with [Personalized Pages](/dynamics365/business-central/ui-personalization-user)  
 - Mitigate can't start user personalization issues with [Troubleshooting user personalization can't be started](devenv-troubleshooting-user-personalization.md)  
 - Check customization issues with [Customized Pages](/dynamics365/business-central/ui-personalization-manage)
+- Mitigate can't start profile configuration issues with [Troubleshooting profile configuration can't be started](devenv-troubleshooting-profile-configuration.md)
 - Verify user permissions with [Effective Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 - Investigate issues with [Mobile App On-Premises](devenv-troubleshooting-the-mobile-app.md)
 
