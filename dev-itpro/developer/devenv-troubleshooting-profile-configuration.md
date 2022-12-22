@@ -33,3 +33,4 @@ As a tenant administrator, you can do the following to mitigate the issue. The s
 
 ## Alternative resolution
 
+From [!INCLUDE [prod_short](includes/prod_short.md)] version 16.2 it's possible to try to mitigate the issue by forcing and export of the profile, fixing the issue, and then reimport the profile. 
