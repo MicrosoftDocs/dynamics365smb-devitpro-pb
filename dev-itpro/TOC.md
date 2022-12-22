@@ -1050,7 +1050,7 @@
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
 #### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)
 #### [Checking Customization Issues](/dynamics365/business-central/ui-personalization-manage)
-#### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)]
+#### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)
 #### [Verifying User Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 #### [Investigating Mobile App (On-Premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
