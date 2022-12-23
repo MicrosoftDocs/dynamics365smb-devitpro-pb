@@ -30,7 +30,7 @@ As a tenant administrator, you can do the following to mitigate the issue. The s
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Profiles**, and then choose the related link.
 2. Select the profile card of the profile that can't be customized, and then choose **Manage customized pages**.
 3. Select the **Troubleshoot** button.  
-  You'll now get the list of all records that contain errors. To proceed, select either [Removing profile configuration records](devenv-troubleshooting-profile-configuration.md#removing-profile-configuration-records) or [Force export of profile configuration (from version 16.2)](devenv-troubleshooting-profile-configuration.md#export-of-profile-configuration-from-version-162).
+  You'll now get the list of all records that contain errors. To proceed, select either [Removing profile configuration records](devenv-troubleshooting-profile-configuration.md#removing-profile-configuration-records) or [Force export of profile configuration (from version 16.2)](devenv-troubleshooting-profile-configuration.md#export-force-of-profile-configuration-from-version-162).
 
 ### Removing profile configuration records
 
