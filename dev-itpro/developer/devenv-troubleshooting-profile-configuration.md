@@ -41,8 +41,8 @@ To remove the identified records, select the **Manage** action to delete the pro
 From [!INCLUDE [prod_short](includes/prod_short.md)] version 16.2 it's possible to try to mitigate the issue by doing an export of the profile, fixing the issue, and then reimporting the profile.
 
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Profiles**, and then choose the related link.
-2. Select the **Export Profiles** button, which will display a message to let you know that there are errors. Select **Yes** when prompted to export the profiles with errors.
-  This will download the AL code related to **all** profiles on the tenant.
+2. Select the **Export Profiles** button.  
+  A message will display to let you know that there are errors. Select **Yes** when prompted to export the profiles with errors. This will download the AL code related to **all** profiles on the tenant.
 3. Unzip the profile package that you downloaded and open the AL file for the page customization that contains the issue.  
   **Note:** The page customization name follows this pattern: `PageCustomization.<target-page-name>.Configuration<id>.al`. Based on the diagnostics from the troubleshooting page, or by moving the page customization AL code into an AL app in order to benefit from the compiler diagnostic, locate the code block that is causing the issue and remove it.
 4. Create a new .zip file with the fixed page customization.
