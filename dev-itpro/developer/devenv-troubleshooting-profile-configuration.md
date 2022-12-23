@@ -44,7 +44,7 @@ From [!INCLUDE [prod_short](includes/prod_short.md)] version 16.2 it's possible 
 2. Select the **Export Profiles** button.  
   A message will display to let you know that there are errors. Select **Yes** when prompted to export the profiles with errors. This will download the AL code related to **all** profiles on the tenant.
 3. Unzip the profile package that you downloaded and open the AL file for the page customization that contains the issue.  
-  **Note:** The page customization name follows this pattern: `PageCustomization.<target-page-name>.Configuration<id>.al`. Based on the diagnostics from the troubleshooting page, or by moving the page customization AL code into an AL app in order to benefit from the compiler diagnostic, locate the code block that is causing the issue and remove it.
+  **Note:** The page customization name follows this pattern: `PageCustomization.<target-page-name>.Configuration<id>.al`. Based on the diagnostics from the troubleshooting page, or by moving the page customization AL code into an AL app in order to benefit from the compiler diagnostics, locate the code block that is causing the issue and remove it.
 4. Create a new .zip file with the fixed page customization.
 5. Return to the **Profile List** page and select the **Import Profiles** button.
 1. Follow the wizard's instruction and, when prompted, select the profile that was fixed in the list of profiles to import.
