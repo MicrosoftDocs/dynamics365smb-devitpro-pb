@@ -1,1 +1,1 @@
-Specifies the Azure Active Directory (AAD) tenant ID used for Azure AD authentication.
+Specifies the Azure Active Directory (AAD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. 
