@@ -20,20 +20,25 @@ The user sees the following error message "Sorry, something went wrong and perso
 
 ## Resolution
 
-As a tenant administrator, you can do the following to mitigate the issue. The steps below describe how to remove the profile configurations with errors. The alternative resolution is described in the next section.
+As a tenant administrator, you can do the following to mitigate the issue. The steps below describe how to remove the profile configurations with errors or alternatively, exporting the profile and fix the code issues.
 
 > [!NOTE]  
-> The following steps will delete records with compilation errors and the specific profile configuration will be deleted. It's recommended to take a screenshot of any configuration done, before deleting them.
+> The steps in the [Removing profile configuration records](devenv-troubleshooting-profile-configuration.md#removing-profile-configuration-records) section will delete records with compilation errors and the specific profile configuration will be deleted. It's recommended to take a screenshot of any configuration done, before deleting them.
+
+### Identifying profile configuration
 
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Profiles**, and then choose the related link.
 2. Select the profile card of the profile that can't be customized, and then choose **Manage customized pages**.
 3. Select the **Troubleshoot** button.  
-  You'll now get the list of all records that contain errors. These records must be fixed or removed to unblock the user.
-4. Select the **Manage** action to delete the profile configurations with errors.
+  You'll now get the list of all records that contain errors. To proceed, select either [Removing profile configuration records](devenv-troubleshooting-profile-configuration.md#removing-profile-configuration-records) or [Force export of profile configuration (from version 16.2)](devenv-troubleshooting-profile-configuration.md#force-export-of-profile-configuration-from-version-162).
 
-## Alternative resolution
+### Removing profile configuration records
 
-From [!INCLUDE [prod_short](includes/prod_short.md)] version 16.2 it's possible to try to mitigate the issue by forcing and export of the profile, fixing the issue, and then reimport the profile. 
+To remove the identified records, select the **Manage** action to delete the profile configurations with errors.
+
+### Force export of profile configuration (from version 16.2)
+
+From [!INCLUDE [prod_short](includes/prod_short.md)] version 16.2 it's possible to try to mitigate the issue by forcing an export of the profile, fixing the issue, and then reimporting the profile. 
 
 1. In [!INCLUDE[prod_short](includes/prod_short.md)], in the **Tell Me** box, enter **Profiles**, and then choose the related link.
 2. Select the **Export Profiles** button, and select **Yes** when prompted.
