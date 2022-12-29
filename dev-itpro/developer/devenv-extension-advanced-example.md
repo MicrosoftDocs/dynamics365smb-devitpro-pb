@@ -3,7 +3,7 @@ author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
 description: "Includes code for an advanced example extension using Business Central and AL in Visual Studio Code."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/29/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -102,6 +102,7 @@ table 50100 "Reward Level"
 ```
 
 #### Activation Code Information table object 
+
 The following code adds a new table 50101 **Activation Code Information** for storing activation information for the extension. The table consists of three fields: **ActivationCode**, **Date Activated**, and **Expiration Date**. 
 
 ```AL
@@ -137,6 +138,7 @@ table 50101 "Activation Code Information"
 ``` 
 
 #### Customer Rewards Mgt. Setup table object 
+
 The following code adds a new table 50102 **Customer Rewards Mgt. Setup** for storing information about the codeunit that should be used to handle events in the extension. This enables us to mock events in our sample test. The table consists of two fields: **Primary Key** and **Customer Rewards Ext. Mgt. Codeunit ID**. 
 ```AL
 table 50102 "Customer Rewards Mgt. Setup" 
@@ -166,6 +168,7 @@ table 50102 "Customer Rewards Mgt. Setup"
 ### Customer Rewards table extension objects 
 
 #### Customer table extension object 
+
 The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service and it cannot be modified directly by developers. To add additional fields or to change properties on this table, developers must create a new type of object; a table extension. The following code creates a table extension for the **Customer** table and adds the **RewardPoints** field. 
 
 ```AL
@@ -186,6 +189,7 @@ tableextension 50100 "CustomerTable Ext." extends Customer
 For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the page object works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 #### Customer Rewards Wizard page object
+
 The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension as well as activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
 
 ```AL
@@ -531,13 +535,13 @@ page 50101 "Rewards Level List"
         {
             repeater(Group)
             {
-                field(Level; Level)
+                field(Level; Rec.Level)
                 {
                     ApplicationArea = All;
                     Tooltip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
-                field("Minimum Reward Points"; "Minimum Reward Points")
+                field("Minimum Reward Points"; Rec."Minimum Reward Points")
                 {
                     ApplicationArea = All;
                     Tooltip = 'Specifies the number of points that customers must have to reach this level.';
