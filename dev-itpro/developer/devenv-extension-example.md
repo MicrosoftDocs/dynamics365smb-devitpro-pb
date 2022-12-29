@@ -135,7 +135,7 @@ page 50101 "Reward Card"
         {
             group(Reward)
             {
-                field("Reward Id";"Reward ID")
+                field("Reward Id"; Rec."Reward ID")
                 {
                     // ApplicationArea sets the application area that 
                     // applies to the page field and action controls. 
@@ -144,12 +144,12 @@ page 50101 "Reward Card"
                     ApplicationArea = All;
                 }
 
-                field(Description;Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                 }
 
-                field("Discount Percentage";"Discount Percentage")
+                field("Discount Percentage"; Rec."Discount Percentage")
                 {
                     ApplicationArea = All;
                 }
@@ -190,18 +190,18 @@ page 50102 "Reward List"
         {
             repeater(Rewards)
             {
-                field("Reward ID";"Reward ID")
+                field("Reward ID"; Rec."Reward ID")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
-                field(Description;Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                 }
 
-                field("Discount Percentage";"Discount Percentage")
+                field("Discount Percentage"; Rec."Discount Percentage")
                 {
                     ApplicationArea = All;
                 }
@@ -315,7 +315,7 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
         // group.
         addlast(General)
         {
-            field("Reward ID";"Reward ID")
+            field("Reward ID"; Rec."Reward ID")
             {
                 ApplicationArea = All;
 
