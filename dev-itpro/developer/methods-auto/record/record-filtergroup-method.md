@@ -48,7 +48,7 @@ An instance of the [Record](record-data-type.md) data type.
 > [!NOTE]  
 > - It's possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
 > - For performance reasons, filtergroup -1 does not support filtering on flowfields.
-> - The *maximum number of filtergroups is 255**. Greater numbers will be ignored, so don't use them. 
+> - The **maximum number of filtergroups is 255**. Greater numbers will be ignored, so don't use them. 
 
 > [!IMPORTANT]  
 > Using filter group 7 may cause factboxes to not work as intended.  
