@@ -1,6 +1,6 @@
 ---
-title: "Actions Overview"
-description: Displaying actions on the action bar for pages in Business Central.
+title: "Actions overview"
+description: Displaying actions on the action bar for pages in Business Central
 ms.custom: na
 ms.date: 11/30/2022
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.topic: overview
 author: SusanneWindfeldPedersen
 ---
 
-# Actions Overview
+# Actions overview
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page, referred to as the action bar. In this article, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
