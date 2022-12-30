@@ -40,6 +40,8 @@ Specifies the permission sets used on tests that are run by the test method.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Remarks
+
 The **InheritFromTestCodeunit** option value for the *TestPermissions* argument is only relevant for test methods; not test codeunits. It specifies that a test method uses the TestPermissions property setting of the test codeunit to which it belongs. If you use this value on a test codeunit, the property will resolve to **Restrictive** at runtime.
 
 Apart from **InheritFromTestCodeunit**, the values themselves do not perform any operations or have any specific behavior. Instead, you programmatically define what each value does, and the permissions sets it applies at runtime, by adding code in a test runner codeunit.
