@@ -25,7 +25,7 @@ Use all lowercase letters for reserved language keywords. This rule does not app
 
 We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
-Built-in methods and types are not included in this rule because they are written using Pascal case.
+For data types in variable and parameter declarations aren't included in this rule because they're written using Pascal case.
 
 ## Bad code example
 
@@ -50,12 +50,13 @@ begin
 end;
 
 var
-    Text007: label '%1 cannot be greater than %2.';
+    Text007: Label '%1 cannot be greater than %2.'; // Label variable declaration in Pascal case
 
 ```
 
 ## Good and bad practices for fixing the rule
-Change every reserved language keyword to use lowercase letters.
+
+Change *every reserved language keyword to use lowercase letters*. Use Pascal case for data types in variable and parameter declarations.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  
