@@ -25,7 +25,7 @@ Use all lowercase letters for reserved language keywords. This rule does not app
 
 We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
-For data types in variable and parameter declarations aren't included in this rule because they're written using Pascal case.
+Data types in variable and parameter declarations aren't included in this rule because they're written using Pascal case.
 
 ## Bad code example
 
