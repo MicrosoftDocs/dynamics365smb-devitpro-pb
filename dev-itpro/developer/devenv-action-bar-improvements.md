@@ -1,13 +1,13 @@
 ---
-title: "Action Bar Improvements"
-description: "Introducing the action bar for Dynamics 365 Business Central"
+title: Action Bar Improvements
+description: Introducing the action bar for Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
-ms.service: "dynamics365-business-central"
+ms.reviewer: solsen
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/03/2022
-ms.custom: na
+ms.date: 12/21/2022
+ms.custom: bap-template
 ---
 
 # Action Bar Improvements
