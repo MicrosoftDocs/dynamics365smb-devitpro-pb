@@ -63,7 +63,7 @@ Specifies what happens to the subscriber method call when the user account that 
 ## Remarks
 
 > [!TIP]
-> Use the `Shift+Alt+E` shortcut in the AL code editor to invoke the list of all events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
+> Use the **Shift+Alt+E** shortcut in the AL code editor to invoke the list of all events. Select the one you want to subscribe to and an event subscriber for the event will be inserted.
 
 The value of the *ObjectType* argument will depend on the type of event: business, integration, and trigger.
 
@@ -71,7 +71,7 @@ The value of the *ObjectType* argument will depend on the type of event: busines
 
 - Trigger events are system events that are automatically declared and published in table and page object. To subscribe to a trigger event, you specify the `Table` or `Page`, depending on where the trigger published from.
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > If the *ObjectType* is set to `Table`, you speficy *ObjectId* by its name using the syntax `Database::<ObjectName>`, instead of `Table::<ObjectName>`.
 
 For the *SkipOnMissingLicense* and *SkipOnMissingPermission* arguments, **True** will ignore the method call, and the code execution will continue to the next subscriber; **false** will throw an error and the code execution stops. **false** is the default. 
@@ -99,7 +99,7 @@ codeunit 50106 MyEventSubscriber
 
 ## Example 2
 
-In this example, the **OnAfterValidateLocationCodePurchase** method is subscribed to an [OnAfterValidateEvent (Table) Trigger Event](../triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md). Therefore, it is executed after a field in the `"Purchase Line"` table is validated, after its value has been changed.
+In this example, the **OnAfterValidateLocationCodePurchase** method is subscribed to an [OnAfterValidateEvent (Table) Trigger Event](../triggers-auto/events/table/devenv-onaftervalidateevent-table-trigger.md). Therefore, it's run after a field in the `"Purchase Line"` table is validated, after its value has been changed.
 
 ```AL
 codeunit 50107 MyEventSubscriber
