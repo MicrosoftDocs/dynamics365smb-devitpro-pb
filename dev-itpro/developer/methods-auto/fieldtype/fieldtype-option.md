@@ -3,7 +3,7 @@ title: "FieldType System Option"
 description: "Represents the type of a table field."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 01/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,8 @@ Represents the type of a table field.
 |BigInteger|A 64-bit integer.|
 |Decimal|A decimal number between -10^63 and 10^63. The exponent ranges from -63 to 63. Decimal numbers are held in memory with 18 significant digits. The representation of a decimal number is a Binary Coded Decimal (BCD). The size of the corresponding SQL data type, DECIMAL(38,20), is 17 bytes. We recommend that you construct decimals that operate on numbers in the range of +/- 999,999,999,999,999.99. You can construct larger numbers in some cases, but overflow, truncation or loss of precision can occur.|
 |Option|An option field is defined by using an option string, which is a comma-separated list of strings that represent each valid value of the field. This string is used when a field of type Option is formatted and its value is converted into a string.|
-|Text|Any alphanumeric string. The field must be defined to be between 1 and 250 characters. The number of bytes used by a text field equals (number of characters + 1) * 2. The additional character is used for the string terminating character, which is '0' in Unicode. The size of a Unicode character is 2 bytes. Therefore, you multiply the number of characters by two to get the size.|
-|Code|An alphanumeric string, which is right-justified if the contents are numbers only. If letters or blanks occur among the numbers, the contents are left-aligned. All letters are converted to uppercase upon entry.|
+|Text|Any alphanumeric string. The field must be defined to be between 1 and 2048 characters. The number of bytes used by a text field equals (number of characters + 1) * 2. The additional character is used for the string terminating character, which is '0' in Unicode. The size of a Unicode character is 2 bytes. Therefore, you multiply the number of characters by two to get the size.|
+|Code|An alphanumeric string, which is right-justified if the contents are numbers only. If letters or blanks occur among the numbers, the contents are left-aligned. All letters are converted to uppercase upon entry. The field must be defined to be between 1 and 2048 characters.|
 |DateTime|Represents a point in time as a combined date and time. The datetime is stored in the database as Coordinated Universal Time (UTC) and is always displayed as local time in Dynamics 365 Business Central.|
 |Time|Any time in the range 00:00:00 to 23:59:59.999. A time field contains 1 plus the number of milliseconds since 00:00:00 o'clock, or 0 (zero), an undefined time.|
 |Date|A date value in the range from January 1, 1753 to December 31, 9999. An undefined date is expressed as 0. All dates have a corresponding closing date. The system considers the closing date for a given date as a period that follows the given date but comes before the next normal date; that is, a closing date is sorted immediately after the corresponding normal date but before the next normal date.|
