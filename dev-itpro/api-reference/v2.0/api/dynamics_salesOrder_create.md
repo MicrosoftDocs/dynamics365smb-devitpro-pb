@@ -49,8 +49,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "number": "1009",
   "orderDate": "2015-12-31",
   "customerNumber": "GL00000008",
   "currencyCode": "GBP",
