@@ -48,18 +48,21 @@ Set this parameter to true if you want to modify any field value within the curr
 
 ## Remarks
 
+> [!IMPORTANT]  
+> The *UpdateKey* parameter does not have any function in this method. The parameter will be deprecated with a future release.
+
 You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with `repeat..until`.  
   
 Furthermore, `FindSet` only allows you to loop through the recordset from the top down. If you want to loop from the bottom up, you should use `Find(‘+’)`.  
   
 The general rules for using `FindSet` are the following:  
   
-- `FindSet(False,False)` - Read-only. This uses no server cursors and the record set is read with a single server call.  
-- `FindSet(True,False)` - This is used to update non-key fields. This uses a cursor with a fetch buffer similar to `Find(‘-’)`.  
+- `FindSet(False)` - Read-only. This uses no server cursors and the record set is read with a single server call.  
+- `FindSet(True)` - This is used to update non-key fields. This uses a cursor with a fetch buffer similar to `Find(‘-’)`.  
   
-- `FindSet(True,True)` - This is used to update key fields.  
+- `FindSet(True)` - This is used to update key fields.  
   
-This method is designed to optimize finding and updating sets. If you set any or both of the parameters to **false**, you can still modify the records in the set but these updates will not be performed optimally.  
+This method is designed to optimize finding and updating sets. If you set the parameter to **false**, you can still modify the records in the set but these updates will not be performed optimally.  
 
 This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
 
@@ -87,6 +90,7 @@ This example shows how to use the `FindSet` method to loop through a set without
 
 
 ```
+<!-- 
 
 ## Example 2
 
@@ -122,7 +126,7 @@ This example shows how to use the `FindSet` method to loop through a set and upd
         SalesShptLine.SetCurrentKey("Order No.", "Order Line No.");
         SalesShptLine.SetRange("Order No.", SalesLine."Document No.");
         SalesShptLine.SetRange("Order Line No.", SalesLine."Line No.");
-        if SalesShptLine.FindSet(true, true) then
+        if SalesShptLine.FindSet(true) then
             repeat
                 SalesShptLine2 := SalesShptLine;
                 SalesShptLine2."Order No." := '';
@@ -132,9 +136,10 @@ This example shows how to use the `FindSet` method to loop through a set and upd
     end;
 
 ```
-
+-->
 
 ## See Also
+
 [Record Data Type](record-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
