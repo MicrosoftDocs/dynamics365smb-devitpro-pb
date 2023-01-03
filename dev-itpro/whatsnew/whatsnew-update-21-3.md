@@ -18,10 +18,9 @@ Would you like to know what has changed in update 21.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](INSERT) and the downloads [here](INSERT).
 
 
-
 ## Feature changes
 
-- INSERT FEATURES 
+- [Reuse launch configurations across workspace projects](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#global-and-workspace-launch-configuration)
 
 
 ## Localization updates
