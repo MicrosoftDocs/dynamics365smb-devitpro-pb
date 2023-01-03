@@ -57,7 +57,7 @@ Which page type you choose depends on the application task that you want to supp
 |[WorkSheet](devenv-page-types-and-layouts.md#worksheet-page-layouts)|You use a Worksheet page type for creating worksheet or journal task pages.|
 |ConfirmationDialog|You use the ConfirmationDialog page to display messages or prompt users with a confirmation before they continue with the task that they are working on.|
 |StandardDialog|The StandardDialog is a simple page type that you use when users only need to input data and do not need to perform other actions from the page.|
-|NavigatePage|You use a Navigate page type to create a wizard that leads the user through a sequence of steps for completing a task.|
+|[NavigatePage](devenv-designing-navigate-pages.md)|You use a Navigate page type to create an assisted setup guide, also known as a wizard, that leads the user through a sequence of steps for completing a task.|
 |[HeadlinePart](devenv-create-role-center-headline.md)|You use a HeadlinePart page type to display a set of changing headlines on a Role Center.|
 |[API](devenv-api-pagetype.md)|Pages of this type are used to generate web service endpoints and cannot be shown in the user interface. This page type should not be extended by creating a page extension object. Instead, create a new API by adding a page object.|
 

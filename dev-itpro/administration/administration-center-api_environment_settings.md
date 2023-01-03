@@ -158,14 +158,14 @@ Returns the updated settings
 
 ## Put AppInsights key
 
-Sets the key an environment uses for Azure AppInsights.
+Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. For information about Application Insights and the connection string/instrumentation key, go to [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
 
 > [!IMPORTANT]
 > This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+PUT /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
