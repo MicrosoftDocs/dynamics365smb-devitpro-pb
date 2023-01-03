@@ -35,7 +35,7 @@ This article describes the features that are up for removal or that have been re
 
 ### WS-Federation with Azure Active Directory authentication
 
-The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
