@@ -50,6 +50,9 @@ We are opening for extensibility for specific scenarios, based on feedback from 
 
 For more details, please follow this [repository](https://github.com/microsoft/ALAppExtensions/tree/main/Apps/W1/Shopify) on GitHub. Note that even though extensibility is limited, you can submit improvements directly.
 
+**Power Apps and Power Automate support for media/image and document attachments**  
+Business Central connector (online only) for Power Platform and Azure Logic Apps has been enhanced with new capabilities and actions to allow makers to access rich data from Business Central. Note that the updated connector is rolling out to all Azure regions now and is backward compatible with latest Business Central online versions (including version 21.3 discussed here), but in order to take advantage of these new capabilities in Power Automate flows the user needs to create a new flow using the new action discussed [here](https://learn.microsoft.com/en-us/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/add-mediaimage-support-business-central-connectors).
+
 **You can still watch the Business Central Launch Event recordings**  
 We have 15+ What's New sessions and recorded Q&As available throughout January 2023. If you didn't watch them yet, you can still go to [aka.ms/BCLE](https://aka.ms/BCLE) to sign up. In November, two new sessions have been published for the following topics: [Embed Business Central in Teams tabs](https://app.hopin.com/events/business-central-launch-event/expo/815575) and [Access Business Central with your Microsoft 365 license](https://app.hopin.com/events/business-central-launch-event/expo/815576).
 
