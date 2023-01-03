@@ -21,7 +21,8 @@ Find an overview of hotfixes in this [article](INSERT) and the downloads [here](
 ## Feature changes
 
 - [Reuse launch configurations across workspace projects](/dynamics365/business-central/dev-itpro/developer/devenv-json-files#global-and-workspace-launch-configuration)
-
+- [Media/image support for Business Central connectors](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/add-mediaimage-support-business-central-connectors)
+- [Power Apps and Power Automate support for document attachments](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/power-apps-power-automate-support-document-attachments)
 
 ## Localization updates
 
