@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 06/14/2022
+ms.date: 01/03/2023
 ---
 
 # Environment Database Export
@@ -147,11 +147,11 @@ Returns a detailed list of the database exports that occurred within the provide
 
 ### Production Environment Types
 
-- sandbox
+- production
 
 ### Sandbox Environment Types
 
-- production
+- sandbox
 
 ## See Also
 
