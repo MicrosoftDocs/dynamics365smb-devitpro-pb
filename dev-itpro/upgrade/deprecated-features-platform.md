@@ -1,13 +1,13 @@
 ---
-title: "Deprecated features in client, server, database"
-description: Describes the features that have been removed or replaced in the platform components of Business Central. 
-author: bholtorf
-ms.custom: na
-ms.date: 08/29/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Deprecated features in the client, server, database
+description: Describes the features that have been removed or replaced in the platform components of Business Central.
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
+ms.date: 12/08/2022
+ms.custom: bap-template
 ---
 
 # Deprecated Features in the Platform - Clients, Server, and Database
@@ -26,9 +26,16 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2023 release wave 1 (version 22.0)
 
+### Integration records
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Apps that integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] should be based on [System Fields](../developer/devenv-table-system-fields.md) instead of integration records. Using system fields improves overall performance, reduces the size of table data, and improves the ability to audit changes. If you haven't already refactored your app and want to learn more, go to [Refactor Integration Management](../developer/devenv-integration-record-refactoring.md). |
+
+
 ### WS-Federation with Azure Active Directory authentication
 
-The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
