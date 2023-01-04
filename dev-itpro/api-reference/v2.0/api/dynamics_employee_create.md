@@ -50,7 +50,6 @@ Content-type: application/json
 {
     "id": "258bb9c0-44e3-ea11-bb43-000d3a2feca1",
     "number": "AH",
-    "displayName": "Annette Hill",
     "givenName": "Annette",
     "middleName": "",
     "surname": "Hill",
