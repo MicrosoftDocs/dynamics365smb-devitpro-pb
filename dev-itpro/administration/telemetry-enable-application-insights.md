@@ -56,7 +56,9 @@ The way you enable [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)
 
 ### For online environments
 
-For [!INCLUDE [prod_short](../includes/prod_short.md)] online:
+For [!INCLUDE [prod_short](../includes/prod_short.md)] online, you can enable telemetry on environments either from the admin center or by using the the admin center API.  To use the admin center, complete the following steps. For information about using the admin center API, go to [Put AppInsights key](administration-center-api_environment_settings.md#put-appinsights-key).
+
+#### From the admin center
 
 1. In the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, and then select the environment that you want to change.
 
@@ -77,7 +79,7 @@ For a single-tenant server instance of [!INCLUDE [prod_short](../includes/prod_s
 ```powershell
 Set-NAVServerConfiguration -ServerInstance BC200 -Keyname ApplicationInsightsConnectionString -Keyvalue 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
-For more information, see [Configuring Business Central Server](configure-server-instance.md#General).
+For more information, see [Configuring Business Central Server](configure-server-instance.md#general-settings).
 
 ### For on-premises environments (multi-tenant mode)
 For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises, enable telemetry on a per-tenant basis when you mount tenants on the [!INCLUDE[server](../developer/includes/server.md)] instance.

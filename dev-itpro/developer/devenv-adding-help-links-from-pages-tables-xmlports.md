@@ -54,7 +54,7 @@ In all three examples, the [ContextSensitiveHelpPage property](properties/devenv
 
 [Configure Context-Sensitive Help](../help/context-sensitive-help.md)  
 [Translating Base App Help](devenv-translate-base-app-help.md)  
-[JSON Files](devenv-json-files.md#Appjson)  
+[JSON Files](devenv-json-files.md#appjson-file)  
 [Page Object](devenv-page-object.md)  
 [Report Object](devenv-report-object.md)  
 [XMLport Object](devenv-xmlport-object.md)  

@@ -60,7 +60,7 @@ This section describes all the configuration settings for a [!INCLUDE[server](..
 - The **Setting** column displays the name of the setting as it appears in the [!INCLUDE[admintool](../developer/includes/admintool.md)].
 - The **Key Name** column displays the name of the setting as it appears in the CustomSettings.config file. It's also the name for the setting when you run the Set-NAVServerConfiguration cmdlet.
 
-##  <a name="general"></a> General Settings
+##   General Settings
   
 The following table describes fields on the **General** tab in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
