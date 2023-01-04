@@ -48,27 +48,27 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/employees
 Content-type: application/json
 
 {
-    "id": "258bb9c0-44e3-ea11-bb43-000d3a2feca1",
-    "number": "AH",
-    "givenName": "Annette",
-    "middleName": "",
-    "surname": "Hill",
-    "jobTitle": "Secretary",
-    "addressLine1": "677 Fifth Avenue",
-    "addressLine2": "",
-    "city": "",
-    "state": "",
-    "country": "",
-    "postalCode": "",
-    "phoneNumber": "4465-4899-4643",
-    "mobilePhone": "4564-4564-7831",
-    "email": "",
-    "personalEmail": "ah@contoso.com",
-    "employmentDate": "2001-06-01",
-    "terminationDate": "0001-01-01",
-    "status": "Active",
-    "birthDate": "1973-12-12",
-    "statisticsGroupCode": ""
+  "id": "258bb9c0-44e3-ea11-bb43-000d3a2feca1",
+  "number": "AH",
+  "givenName": "Annette",
+  "middleName": "",
+  "surname": "Hill",
+  "jobTitle": "Secretary",
+  "addressLine1": "677 Fifth Avenue",
+  "addressLine2": "",
+  "city": "",
+  "state": "",
+  "country": "",
+  "postalCode": "",
+  "phoneNumber": "4465-4899-4643",
+  "mobilePhone": "4564-4564-7831",
+  "email": "",
+  "personalEmail": "ah@contoso.com",
+  "employmentDate": "2001-06-01",
+  "terminationDate": "0001-01-01",
+  "status": "Active",
+  "birthDate": "1973-12-12",
+  "statisticsGroupCode": ""
 }
 ```
 
