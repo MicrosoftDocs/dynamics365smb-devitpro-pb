@@ -60,7 +60,6 @@ Content-type: application/json
     "discountAmount": 0,
     "discountPercent": 0,
     "taxCode": "STANDARD",
-    "totalTaxAmount": 1006.06,
     "amountIncludingTax": 17773.66,
     "invoiceDiscountAllocation": 0,
     "netAmount": 16767.6,
