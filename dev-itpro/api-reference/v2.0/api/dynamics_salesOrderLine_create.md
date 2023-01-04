@@ -75,7 +75,8 @@ Content-type: application/json
     "invoicedQuantity": 0,
     "invoiceQuantity": 12,
     "shipQuantity": 12,
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
