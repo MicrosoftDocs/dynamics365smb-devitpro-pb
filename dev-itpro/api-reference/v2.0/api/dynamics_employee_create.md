@@ -68,8 +68,7 @@ Content-type: application/json
     "terminationDate": "0001-01-01",
     "status": "Active",
     "birthDate": "1973-12-12",
-    "statisticsGroupCode": "",
-    "lastModifiedDateTime": "2020-08-21T00:25:17.623Z"
+    "statisticsGroupCode": ""
 }
 ```
 
