@@ -29,10 +29,10 @@ Find an overview of hotfixes in this [article](INSERT) and the downloads [here](
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| XX | XX | XX.|
-| XX | XX | XX.|
-| XX | XX | XX.|
-| XX | XX | XX.|
+| Switzerland | Enabling QR-Bill file that does not report Amount and other information | Swiss companies now can use QR bills with and without invoice amounts. If user chooses option with amount, system will automatically populate the Amount field, but if user chooses option without amount, the Amount field will be editable and user can populate it manually.|
+| W1 | Add support of Service Documents to Service Declaration | Service Declaration feature has been extended, so now except purchase and sales documents, system also uses Service document for reporting export of services.|
+| France, United Kingdom | Intrastat localization extensions | New Intrastat feature is now available in France and United Kingdom. |
+| W1 | Adding Supplemental Unit fields to Tariff Numbers as default  | If user defines Supplemental Unit of Measure for specific Tariff Number (for usage in Intrastat), it will be used in all Items as default Supplemental Unit of Measure.|
 
 ## Release Plan
 
