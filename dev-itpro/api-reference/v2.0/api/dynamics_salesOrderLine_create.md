@@ -50,7 +50,6 @@ Content-type: application/json
 {
     "sequence": 10000,
     "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
-    "accountId": "00000000-0000-0000-0000-000000000000",
     "lineType": "Item",
     "lineObjectNumber": "1996-S",
     "description": "ATLANTA Whiteboard, base",
