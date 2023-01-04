@@ -61,8 +61,6 @@ Content-type: application/json
     "discountPercent": 0,
     "taxCode": "STANDARD",
     "shipmentDate": "2020-04-02",
-    "shippedQuantity": 0,
-    "invoicedQuantity": 0,
     "invoiceQuantity": 12,
     "shipQuantity": 12,
     "itemVariantId": "00000000-0000-0000-0000-000000000000",
