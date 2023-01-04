@@ -64,7 +64,7 @@ Here is an example of a response.
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
-HTTP/2 201 Created
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
