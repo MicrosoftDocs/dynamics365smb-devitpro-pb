@@ -48,27 +48,28 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/employees
 Content-type: application/json
 
 {
-  "id": "258bb9c0-44e3-ea11-bb43-000d3a2feca1",
-  "number": "AH",
-  "givenName": "Annette",
+  "id": "c3ec1571-be8a-ed11-aad7-000d3aa934c9",
+  "number": "EH",
+  "displayName": "Ester Henderson",
+  "givenName": "Ester",
   "middleName": "",
-  "surname": "Hill",
+  "surname": "Henderson",
   "jobTitle": "Secretary",
-  "addressLine1": "677 Fifth Avenue",
+  "addressLine1": "5 Russel Street",
   "addressLine2": "",
-  "city": "",
+  "city": "Cambridge",
   "state": "",
-  "country": "",
-  "postalCode": "",
+  "country": "GB",
+  "postalCode": "PE17 4RN",
   "phoneNumber": "4465-4899-4643",
   "mobilePhone": "4564-4564-7831",
   "email": "",
-  "personalEmail": "ah@contoso.com",
-  "employmentDate": "2001-06-01",
+  "personalEmail": "eh@cronus-demosite.com",
+  "employmentDate": "2022-12-30",
   "terminationDate": "0001-01-01",
   "status": "Active",
-  "birthDate": "1973-12-12",
-  "statisticsGroupCode": ""
+  "birthDate": "1963-12-12",
+  "statisticsGroupCode": "",
 }
 ```
 
@@ -84,30 +85,29 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "258bb9c0-44e3-ea11-bb43-000d3a2feca1",
-  "number": "AH",
-  "displayName": "Annette Hill",
-  "givenName": "Annette",
+  "id": "c3ec1571-be8a-ed11-aad7-000d3aa934c9",
+  "number": "EH",
+  "displayName": "Ester Henderson",
+  "givenName": "Ester",
   "middleName": "",
-  "surname": "Hill",
+  "surname": "Henderson",
   "jobTitle": "Secretary",
-  "address": {
-    "street": "677 Fifth Avenue",
-    "city": "New York",
-    "state": "",
-    "countryLetterCode": "",
-    "postalCode": "10022"
-  },
+  "addressLine1": "5 Russel Street",
+  "addressLine2": "",
+  "city": "Cambridge",
+  "state": "",
+  "country": "GB",
+  "postalCode": "PE17 4RN",
   "phoneNumber": "4465-4899-4643",
   "mobilePhone": "4564-4564-7831",
   "email": "",
-  "personalEmail": "ah@contoso.com",
-  "employmentDate": "2001-06-01",
+  "personalEmail": "eh@cronus-demosite.com",
+  "employmentDate": "2022-12-30",
   "terminationDate": "0001-01-01",
   "status": "Active",
-  "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v2.0/api/v2.0/companies({id})/employees({id})/picture",
-  "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
+  "birthDate": "1963-12-12",
+  "statisticsGroupCode": "",
+  "lastModifiedDateTime": "2023-01-04T22:42:20.993Z"
 }
 ```
 
