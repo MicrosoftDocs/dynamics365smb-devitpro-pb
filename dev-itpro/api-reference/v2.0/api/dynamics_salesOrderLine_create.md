@@ -94,7 +94,6 @@ Content-type: application/json
 
 {
     "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
-    "documentId": "960f5c9c-44e3-ea11-bb43-000d3a2feca1",
     "sequence": 10000,
     "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
     "accountId": "00000000-0000-0000-0000-000000000000",
