@@ -59,7 +59,7 @@ Content-type: application/json
     "unitPrice": 1397.3,
     "discountAmount": 0,
     "discountPercent": 0,
-    "taxCode": "FURNITURE",
+    "taxCode": "STANDARD",
     "taxPercent": 6.00002,
     "totalTaxAmount": 1006.06,
     "amountIncludingTax": 17773.66,
