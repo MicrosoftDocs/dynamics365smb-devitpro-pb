@@ -49,14 +49,13 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesCreditMemos
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "number": "1009",
   "creditMemoDate": "2015-12-31",
   "customerNumber": "GL00000008",
   "currencyCode": "GBP",
   "paymentTermsId": "3bb5b4b6-ea4c-43ca-ba1c-3b69e29a6668"
 }
 ```
+
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 
