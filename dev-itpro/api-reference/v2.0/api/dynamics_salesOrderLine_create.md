@@ -60,7 +60,6 @@ Content-type: application/json
     "discountAmount": 0,
     "discountPercent": 0,
     "taxCode": "STANDARD",
-    "netTaxAmount": 1006.06,
     "netAmountIncludingTax": 17773.66,
     "shipmentDate": "2020-04-02",
     "shippedQuantity": 0,
