@@ -32,9 +32,11 @@ Find an overview of hotfixes in this [article](INSERT) and the downloads [here](
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
 | Switzerland | Enabling QR-Bill file that does not report Amount and other information | Swiss companies now can use QR bills with and without invoice amounts. If user chooses option with amount, system will automatically populate the Amount field, but if user chooses option without amount, the Amount field will be editable and user can populate it manually.|
+| France, United Kingdom | Intrastat localization extensions  | New Intrastat feature is now available in France and United Kingdom.|
 | W1 | Add support of Service Documents to Service Declaration | Service Declaration feature has been extended, so now except purchase and sales documents, system also uses Service document for reporting export of services.|
-| France, United Kingdom | Intrastat localization extensions | New Intrastat feature is now available in France and United Kingdom. |
 | W1 | Adding Supplemental Unit fields to Tariff Numbers as default  | If user defines Supplemental Unit of Measure for specific Tariff Number (for usage in Intrastat), it will be used in all Items as default Supplemental Unit of Measure.|
+| W1 | Changing VAT date with more entries for one document | When users have more VAT Entries for one document with different VAT percentages, and they want to change VAT date, they need to do only on one entry and the system will update to the other entries for the same document. |
+| W1 | Disabling VAT date functionality fully or partially | Users now can choose to use full VAT date functionality or just partially without changing VAT dates in posted entries and documents. And eventually, users can choose not to use VAT date functionality, hiding and making noneditable VAT fields from UI. |
 
 ## Release Plan
 
