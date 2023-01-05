@@ -24,6 +24,8 @@ Find an overview of hotfixes in this [article](INSERT) and the downloads [here](
 - [Media/image support for Business Central connectors](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/add-mediaimage-support-business-central-connectors)
 - [Power Apps and Power Automate support for document attachments](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/power-apps-power-automate-support-document-attachments)
 - [Reverse payment reconciliation journal entries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/reverse-payment-reconciliation-journal-entries) (With 21.3. you can reverse payment reconciliation journals that were used to also post a bank reconciliation. With 21.4, we will enable reversal of regular payment reconciliation journals.)
+- Changing VAT date with more entries for one document (link is coming)
+- Disabling VAT Date functionality fully or partially (link is coming)
 
 ## Localization updates
 
