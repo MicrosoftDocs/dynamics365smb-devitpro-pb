@@ -91,13 +91,12 @@ Content-type: application/json
   "middleName": "",
   "surname": "Hill",
   "jobTitle": "Secretary",
-  "address": {
-    "street": "677 Fifth Avenue",
-    "city": "New York",
-    "state": "",
-    "countryLetterCode": "",
-    "postalCode": "10022"
-  },
+  "addressLine1": "677 Fifth Avenue",
+  "addressLine2": "",
+  "city": "",
+  "state": "",
+  "country": "",
+  "postalCode": "",
   "phoneNumber": "4465-4899-4643",
   "mobilePhone": "4564-4564-7831",
   "email": "",
@@ -106,7 +105,7 @@ Content-type: application/json
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v2.0/api/v2.0/companies({id})/employees({id})/picture",
+  "statisticsGroupCode": "",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 ```
