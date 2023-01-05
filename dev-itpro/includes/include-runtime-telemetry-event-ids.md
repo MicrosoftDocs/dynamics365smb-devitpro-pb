@@ -29,5 +29,5 @@
 |RT0029|Sessions|[The StopSession method was invoked on session {failureReason}](../administration/telemetry-stop-session-trace.md) |
 | RT0030 | Error method call| [Error dialog displayed: {errorMessage}](../administration/telemetry-error-method-trace.md) | 
 | RT0031 | Permission error| [Permission error shown](../administration/telemetry-permission-error-trace.md) | 
-
+|RT0032|Permission error| [Dependency cycle discovered in permission sets](../administration/telemetry-permission-dependency-cycle-trace.md) |
 
