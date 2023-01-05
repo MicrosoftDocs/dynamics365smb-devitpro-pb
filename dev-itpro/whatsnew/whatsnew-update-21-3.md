@@ -25,7 +25,7 @@ Find an overview of hotfixes in this [article](INSERT) and the downloads [here](
 - [Power Apps and Power Automate support for document attachments](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/power-apps-power-automate-support-document-attachments)
 - [Reverse payment reconciliation journal entries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/reverse-payment-reconciliation-journal-entries) 
 - Access attachments on additional list pages (link is coming)
-- Out of Memory crash if you keep scrolling a huge grid (link is coming)
+- Scroll through more records in lists (link is coming - see description under "good to know")
 
 
 ## Localization updates
