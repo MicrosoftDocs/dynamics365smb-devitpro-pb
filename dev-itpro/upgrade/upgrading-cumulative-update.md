@@ -119,7 +119,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 1. Open the database in the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 2. Import the `CUObjects.<Locale>.<Build No.>.fob` into the application database.
 
-    For more information, see [Importing Objects](../cside/cside-import-objects.md).
+    For more information, see [Importing Objects](../cside/cside-import-objects.md#ImportObjectsDevEnv).
 3. Replace the existing objects in the database with the cumulative update objects.
 
 ### Update a modified application to the Business Central cumulative update objects

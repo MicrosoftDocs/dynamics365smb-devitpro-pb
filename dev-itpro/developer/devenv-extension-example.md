@@ -135,7 +135,7 @@ page 50101 "Reward Card"
         {
             group(Reward)
             {
-                field("Reward Id";"Reward ID")
+                field("Reward Id"; Rec."Reward ID")
                 {
                     // ApplicationArea sets the application area that 
                     // applies to the page field and action controls. 
@@ -144,12 +144,12 @@ page 50101 "Reward Card"
                     ApplicationArea = All;
                 }
 
-                field(Description;Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                 }
 
-                field("Discount Percentage";"Discount Percentage")
+                field("Discount Percentage"; Rec."Discount Percentage")
                 {
                     ApplicationArea = All;
                 }
@@ -190,18 +190,18 @@ page 50102 "Reward List"
         {
             repeater(Rewards)
             {
-                field("Reward ID";"Reward ID")
+                field("Reward ID"; Rec."Reward ID")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
-                field(Description;Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                 }
 
-                field("Discount Percentage";"Discount Percentage")
+                field("Discount Percentage"; Rec."Discount Percentage")
                 {
                     ApplicationArea = All;
                 }
@@ -315,7 +315,7 @@ pageextension 50104 "Customer Card Ext" extends "Customer Card"
         // group.
         addlast(General)
         {
-            field("Reward ID";"Reward ID")
+            field("Reward ID"; Rec."Reward ID")
             {
                 ApplicationArea = All;
 
@@ -393,7 +393,7 @@ page 50102 "Reward List"
 ...
 ```
 
-Now, if you run your app, you can see the link to help topic for **Reward List** page by pointing over *Reward ID* and choosing **Learn More**. The URL of your targeted website is present in the Help section.
+Now, if you run your app, you can see the link to help article for **Reward List** page by pointing over *Reward ID* and choosing **Learn More**. The URL of your targeted website is present in the Help section.
 You can specify the same relative link for **Reward Card**, **Reward List**, and the customization of the **Customer** page, or you can specify different targets. For more information, see [Page-level configuration](../help/context-sensitive-help.md#page-level-configuration).  
 
 ### Add tooltips
@@ -422,7 +422,7 @@ Now, if you deploy the app, you'll be able to read the tooltip text for the **Re
 
 ## Install code
 
-After installing the extension, the **Reward List** page is empty. This is the result of the fact that the **Reward** table is also empty. Data can be entered manually into the **Reward** table by creating new records from the **Reward List** page. However, this task slows down the process, especially because the **Reward** table should be initialized with a standard number of reward levels when the extension is installed. To solve this, install codeunits can be used.<br>
+After you have installed the extension, the **Reward List** page is empty. This is the result of the fact that the **Reward** table is also empty. Data can be entered manually into the **Reward** table by creating new records from the **Reward List** page. However, this task slows down the process, especially because the **Reward** table should be initialized with a standard number of reward levels when the extension is installed. To solve this, install codeunits can be used.<br>
 A codeunit is an object that can be used to encapsulate a set of related functionality represented by procedures and variables. An install codeunit is a codeunit with the [Subtype property](properties/devenv-subtype-codeunit-property.md) set to Install. This codeunit provides a set of triggers that are executed when a particular extension is installed for the first time or when it's reinstalled.
 
 In this example, the following install codeunit initializes the **Reward** table with three records representing the 'GOLD', 'SILVER', and 'BRONZE' reward levels.

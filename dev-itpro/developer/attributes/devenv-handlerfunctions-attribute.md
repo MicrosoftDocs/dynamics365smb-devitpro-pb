@@ -43,12 +43,25 @@ The names of the handler methods used by the test method.
 > [!NOTE]  
 > If the test method uses more than one handler method, then you should separate the handler method names by a comma.  
   
-## Remarks  
+## Remarks
+
 You use test codeunits and test methods to test your application. A handler method allows you to automate tests by handling instances when user interaction is required by the code that is being tested. In these instances, the test method calls the handler method, which is run instead of the user interface.  
   
 The following is some important information about handler methods:  
   
-- To be a handler method, the method must have set to one of the attributes: [MessageHandler](devenv-messagehandler-attribute.md), [ConfirmHandler](devenv-confirmhandler-attribute.md), [StrMenuHandler](devenv-strmenuhandler-attribute.md), [PageHandler](devenv-pagehandler-attribute.md), [ModalPageHandler](devenv-modalpagehandler-attribute.md), [ReportHandler](devenv-reporthandler-attribute.md), [RequestPageHandler](devenv-requestpagehandler-attribute.md), [SendNotificationHandler](devenv-sendnotificationhandler-attribute.md), [HyperLinkHandler](devenv-hyperlinkhandler-attribute.md),[RecallNotificationHandler](devenv-recallnotificationhandler-attribute.md), [SessionSettingsHandler](devenv-sessionsettingshandler-attribute.md) or [FilterPageHandler](devenv-filterpagehandler-attribute.md).  
+- To be a handler method, the method must have set to one of the attributes:  
+  [MessageHandler](devenv-messagehandler-attribute.md)  
+  [ConfirmHandler](devenv-confirmhandler-attribute.md)  
+  [StrMenuHandler](devenv-strmenuhandler-attribute.md)  
+  [PageHandler](devenv-pagehandler-attribute.md)  
+  [ModalPageHandler](devenv-modalpagehandler-attribute.md)  
+  [ReportHandler](devenv-reporthandler-attribute.md)  
+  [RequestPageHandler](devenv-requestpagehandler-attribute.md)  
+  [SendNotificationHandler](devenv-sendnotificationhandler-attribute.md)  
+  [HyperLinkHandler](devenv-hyperlinkhandler-attribute.md)  
+  [RecallNotificationHandler](devenv-recallnotificationhandler-attribute.md)  
+  [SessionSettingsHandler](devenv-sessionsettingshandler-attribute.md)  
+  [FilterPageHandler](devenv-filterpagehandler-attribute.md)
   
 - A test method can only call handler methods that are defined in the same test codeunit as the test method.  
   
