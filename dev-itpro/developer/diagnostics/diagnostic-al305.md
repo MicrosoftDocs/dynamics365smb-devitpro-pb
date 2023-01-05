@@ -3,7 +3,7 @@ title: "Compiler Error AL0305"
 description: "The length of the application object identifier '{0}' cannot exceed {1} characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 01/05/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ The length of an application object identifier cannot exceed 30 characters.
 
 ## Remarks
 
-This diagnostic will be triggered, for example, if you create a permissionset with a name longer than 30 characters, with the `Assignable` property set to `false`. For permissionsets specifically, the diagnostic will also be triggered, if a permissionset with the `Assignable` property set to `true` exceeds 20 characters.
+This diagnostic will be triggered, for example, if you create a permission set with a name longer than 30 characters, with the `Assignable` property set to `false`. For permission sets specifically, the diagnostic will also be triggered, if a permission set with the `Assignable` property set to `true` exceeds 20 characters.
 
 ```al
 permissionset 50111 NameExceeds30CharactersByFivePlusSome
