@@ -24,8 +24,8 @@ Find an overview of hotfixes in this [article](INSERT) and the downloads [here](
 - [Media/image support for Business Central connectors](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/add-mediaimage-support-business-central-connectors)
 - [Power Apps and Power Automate support for document attachments](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/power-apps-power-automate-support-document-attachments)
 - [Reverse payment reconciliation journal entries](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/reverse-payment-reconciliation-journal-entries) (With 21.3. you can reverse payment reconciliation journals that were used to also post a bank reconciliation. With 21.4, we will enable reversal of regular payment reconciliation journals.)
-- Changing VAT date with more entries for one document (link is coming)
-- Disabling VAT Date functionality fully or partially (link is coming)
+- Access attachments on additional list pages (link is coming)
+
 
 ## Localization updates
 
@@ -45,6 +45,10 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 Please note that new customers will automatically get the latest builds of Business Central (21.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
+
+**Scroll through more records in lists**  
+The Business Central user experience has been updated with technical optimizations that reduce the memory footprint of loaded records. As a result, users can continue scrolling to load significantly more records in any list.
+
 
 **Shopify connector becomes extensible: Stock calculation**  
 Shopify Connector has been non-extensible, but we're changing that. We're offering a few points of extensibility. We'll keep the number of points to a minimum so that we can follow the rapid development on the Shopify side without introducing breaking changes.
