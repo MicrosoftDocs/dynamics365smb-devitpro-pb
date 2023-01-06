@@ -1279,6 +1279,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
+#### [2022 Release Wave 2 On-Premises Updates](deployment/update-versions-21.md)
 #### [2022 Release Wave 1 On-Premises Updates](deployment/update-versions-20.md)
 #### [2021 Release Wave 2 On-Premises Updates](deployment/update-versions-19.md)
 #### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
