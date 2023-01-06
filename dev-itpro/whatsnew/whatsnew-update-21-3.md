@@ -11,7 +11,7 @@ author: EmmaNielsson
 ---
 
 # Update 21.3 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
-Would you like to know what has changed in update 21.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 21.3? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 
@@ -41,11 +41,11 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 2 (release from October 2022 through  March 2022), find the link to the release plan [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2022 release wave 2 (release from October 2022 through March 2023), find the link to the release plan [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/planned-features).
 
 ## Upgrade to 21.3
 
-Please note that new customers will automatically get the latest builds of Business Central (21.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (21.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
