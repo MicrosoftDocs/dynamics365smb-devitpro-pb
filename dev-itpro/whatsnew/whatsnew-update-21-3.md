@@ -82,7 +82,7 @@ In January and February, we will be hosting the following calls, which you can a
 
 - **January 17:**  AL-Go for GitHub
 - **January 24:** Onboarding your customers to Business Central
-- **February 13:** Power Platform integrations
+- **February 7:** Power Platform integrations
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
