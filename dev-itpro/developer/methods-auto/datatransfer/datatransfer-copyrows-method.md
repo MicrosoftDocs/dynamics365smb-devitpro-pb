@@ -35,7 +35,7 @@ An instance of the [DataTransfer](datatransfer-data-type.md) data type.
 
 [!INCLUDE[data-transfer](../../../developer/includes/data-transfer.md)]
 
-Use this method to copy data in rows of a table to rows in another table. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
+Use this method to copy data in rows of a table to rows in another table. For more information, see [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md).
 
 ## Example
 
