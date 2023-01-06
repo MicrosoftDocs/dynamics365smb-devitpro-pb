@@ -4,7 +4,7 @@ description: Get an overview of new and changed capabilities in the 21.3 update 
 ms.author: jswymer
 ms.custom: na
 ms.date: 01/03/2022
-ms.reviewer: solsen
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
@@ -15,7 +15,7 @@ Would you like to know what has changed in update 21.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](INSERT) and the downloads [here](INSERT).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5022714) and the downloads [here](https://www.microsoft.com/en-us/download/details.aspx?id=104873).
 
 
 ## Feature changes
