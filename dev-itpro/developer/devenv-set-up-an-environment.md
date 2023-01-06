@@ -35,7 +35,7 @@ This topic describes how to set up an environment for developing a module in the
 8. Modify the settings.json file in Visual Studio Code to include paths to .NET assemblies. The following is an example of how to set the `"al.assemblyProbingPaths"` parameter. The path to the assemblies can differ, for example, depending on where you keep them or the version you want to use.  
 
     ```json
-        "al.assemblyProbingPaths": [                
+    "al.assemblyProbingPaths": [                
         "C:/Windows/Microsoft.NET/Framework64/v4.0.30319",   
         "C:/bcartifacts.cache/onprem/19.0.29894.30693",        
         "C:/WINDOWS/assembly"

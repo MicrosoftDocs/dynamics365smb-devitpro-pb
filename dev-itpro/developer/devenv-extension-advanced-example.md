@@ -3,7 +3,7 @@ author: SusanneWindfeldPedersen
 title: "Building an Advanced Sample Extension"
 description: "Includes code for an advanced example extension using Business Central and AL in Visual Studio Code."
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 12/29/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -12,13 +12,15 @@ ms.author: solsen
 ---
 
 # Building an Advanced Sample Extension
-It is required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension which is used as the foundation for writing a test which you can read about in the [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md) topic. If you are new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
+
+It's required to submit tests with your extension in order to pass validation. This walkthrough builds an advanced sample extension, which is used as the foundation for writing a test, which you can read about in the [Testing the Advanced Sample Extension](devenv-extension-advanced-example-test.md) article. If you're new to building extensions, we suggest that you get familiar with [Building your first sample extension that uses new objects and extension objects](devenv-extension-example.md). 
 
 For information about submitting your app to AppSource, see [Checklist for Submitting Your App](devenv-checklist-submission.md).
 
 This walkthrough will guide you through all the steps that you must follow to create the sample extension in AL. The final result can be published, installed, and tested on your sandbox. After you have built your extension, you must write the test for it.
 
 ## About this walkthrough
+
 This walkthrough illustrates the following tasks:
 
 - Developing a sample extension that uses codeunits, tables, card pages, list pages, navigate page (Assisted Setup) actions, and events and it includes tooltips and links to context-sensitive Help.  
@@ -32,7 +34,8 @@ This walkthrough illustrates the following tasks:
 - Running the sample test using the Test Tool.  
 
 ## Prerequisites
-To complete this walkthrough, you will need: 
+
+To complete this walkthrough, you'll need: 
 
 - The [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant
 
@@ -40,18 +43,22 @@ To complete this walkthrough, you will need:
 
 - The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Code
 
-For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md). It is recommended to try out simpler examples, before starting this walkthrough.
+For more information on how to get started with your first extension for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], see [Getting Started](devenv-get-started.md). It's recommended to try out simpler examples, before starting this walkthrough.
 
 ## Customer Rewards extension overview
+
 This sample extension enables the ability to set up any number of reward levels and the minimum number of rewards points required to attain that level. When the sample extension is installed, customers begin to accrue one reward point per sales order. When no reward levels are set up, the customer's reward level is set to 'NONE' even though the customer may have reward points. To begin using the sample extension, the user must accept the extension terms and activate the extension by entering a valid activation code using the **Customer Rewards Assisted Setup Wizard**. Following all the steps of this walkthrough allows you to publish the extension on your tenant and create a possible new feature for your customers. 
 
 ## Developing the sample Customer Rewards extension
-In the following section, you will be adding the objects that are needed for the Customer Rewards extension. 
+
+In the following section, you'll be adding the objects that are needed for the Customer Rewards extension. 
 
 ### Customer Rewards table objects
-First, we will get started with the table objects that store the data. 
+
+First, we'll get started with the table objects that store the data. 
 
 #### Reward Level table object
+
 The following code adds a new table 50100 **Reward Level** for storing reward level information set up by the user. The table consists of two fields: **Level** and **Minimum Reward Points**. 
 
 ```AL
@@ -102,6 +109,7 @@ table 50100 "Reward Level"
 ```
 
 #### Activation Code Information table object 
+
 The following code adds a new table 50101 **Activation Code Information** for storing activation information for the extension. The table consists of three fields: **ActivationCode**, **Date Activated**, and **Expiration Date**. 
 
 ```AL
@@ -137,6 +145,7 @@ table 50101 "Activation Code Information"
 ``` 
 
 #### Customer Rewards Mgt. Setup table object 
+
 The following code adds a new table 50102 **Customer Rewards Mgt. Setup** for storing information about the codeunit that should be used to handle events in the extension. This enables us to mock events in our sample test. The table consists of two fields: **Primary Key** and **Customer Rewards Ext. Mgt. Codeunit ID**. 
 ```AL
 table 50102 "Customer Rewards Mgt. Setup" 
@@ -166,7 +175,8 @@ table 50102 "Customer Rewards Mgt. Setup"
 ### Customer Rewards table extension objects 
 
 #### Customer table extension object 
-The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service and it cannot be modified directly by developers. To add additional fields or to change properties on this table, developers must create a new type of object; a table extension. The following code creates a table extension for the **Customer** table and adds the **RewardPoints** field. 
+
+The **Customer** table, like many other tables, is part of the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] service and it can't be modified directly by developers. To add more fields or to change properties on this table, developers must create a new type of object; a table extension. The following code creates a table extension for the **Customer** table and adds the **RewardPoints** field. 
 
 ```AL
 tableextension 50100 "CustomerTable Ext." extends Customer 
@@ -186,7 +196,8 @@ tableextension 50100 "CustomerTable Ext." extends Customer
 For each page object, you can specify the target Help page that describes the feature that the page object is part of. The `ContextSensitiveHelpPage` property on the page object works together with the link that is specified in the app.json file. For more information, see [Configure Context-Sensitive Help](../help/context-sensitive-help.md).  
 
 #### Customer Rewards Wizard page object
-The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension as well as activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
+
+The following code adds the 50100 **Customer Rewards Wizard** page that enables the user to accept the terms for using the extension and activating the extension. The page consists of a welcome step, an activation step, and a finish step. The welcome step has a checkbox for the Terms of Use that must be enabled. The activation step has a text box where the activation code must be entered for validation. A valid activation code for this sample extension is any 14 character alphanumeric code. 
 
 ```AL
 page 50100 "Customer Rewards Wizard" 
@@ -531,13 +542,13 @@ page 50101 "Rewards Level List"
         {
             repeater(Group)
             {
-                field(Level; Level)
+                field(Level; Rec.Level)
                 {
                     ApplicationArea = All;
                     Tooltip = 'Specifies the level of reward that the customer has at this point.';
                 }
 
-                field("Minimum Reward Points"; "Minimum Reward Points")
+                field("Minimum Reward Points"; Rec."Minimum Reward Points")
                 {
                     ApplicationArea = All;
                     Tooltip = 'Specifies the number of points that customers must have to reach this level.';
@@ -642,8 +653,9 @@ pageextension 50101 "Customer List Ext." extends "Customer List"
  
 ### Customer Rewards codeunit objects 
 
-#### Customer Rewards Install Logic codeunit object 
-The following code adds the 50100 **Customer Rewards Install Logic** codeunit that initializes the default codeunit that will be used for handling events. Because this is an install codeunit, it has its **Subtype** property set to **Install**. The **OnInstallAppPerCompany** trigger is run when the extension is installed for the first time and the same version is re-installed. 
+#### Customer Rewards Install Logic codeunit object
+
+The following code adds the 50100 **Customer Rewards Install Logic** codeunit that initializes the default codeunit that will be used for handling events. Because this is an install codeunit, it has its **Subtype** property set to **Install**. The **OnInstallAppPerCompany** trigger is run when the extension is installed for the first time and the same version is reinstalled. 
 
 ```AL
 codeunit 50100 "Customer Rewards Install Logic" 
@@ -669,8 +681,9 @@ codeunit 50100 "Customer Rewards Install Logic"
 } 
 ```
  
-#### Customer Rewards Ext. Mgt. codeunit object 
-The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the logic and functionality required for the Customer Rewards extension. This codeunit contains examples of how we can use events to react to specific actions or behavior that occur within our extension. In this sample extension, there is the need to make a call to an external service or API to validate activation codes entered by the user. Typically, you may do this by defining procedures that take in the activation code and then make calls to the API. Instead of using that approach, we use events in AL. Let us look at the following code from the codeunit. 
+#### Customer Rewards Ext. Mgt. codeunit object
+
+The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the logic and functionality required for the Customer Rewards extension. This codeunit contains examples of how we can use events to react to specific actions or behavior that occurs within our extension. In this sample extension, there's the need to make a call to an external service or API to validate activation codes entered by the user. Typically, you may do this by defining procedures that take in the activation code and then make calls to the API. Instead of using that approach, we use events in AL. Let us look at the following code from the codeunit. 
  
 ```AL
     // Activates Customer Rewards if activation code is validated successfully  
@@ -737,7 +750,7 @@ The 50101 **Customer Rewards Ext. Mgt.**  codeunit encapsulates most of the 
  
 We define an event publisher method **OnGetActivationCodeStatusFromServer** that accepts the activation code entered by the user as a parameter, and, a subscriber method **OnGetActivationCodeStatusFromServerSubscriber** to listen for and handle the event. When the **ActivateCustomerRewards** procedure is run, the **OnGetActivationCodeStatusFromServer** event is raised. Because the **EventSubscriberInstance** property for the codeunit is set to **Static-Automatic** by default, the **OnGetActivationCodeStatusFromServerSubscriber** procedure is called. In this procedure, we handle the raised event by first checking if the current codeunit has been defined for handling this event. If the codeunit can handle the event, the **GetHttpResponse** helper procedure is called to validate the activation code. Depending on the response, Customer Rewards is activated or not. 
 
-By using events when the extension makes external calls to a service, we are able to mock the behavior of what happens when events are raised. This becomes particularly useful when writing tests for the extension. 
+By using events when the extension makes external calls to a service, we're able to mock the behavior of what happens when events are raised. This becomes useful when writing tests for the extension. 
 
 For more information about events, see [Events in Microsoft [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]](devenv-events-in-al.md). 
 

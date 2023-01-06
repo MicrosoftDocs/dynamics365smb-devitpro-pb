@@ -80,8 +80,11 @@ For reference, see the prerequisites section in the following article: [Configur
 
 In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution as an application in the Azure AD tenant.
 
-> [!NOTE]
+> [!TIP]
 > If you're configuring a multitenant deployment, where each tenant will use a different Azure Tenant, you only register an application on one of the Azure AD tenants. Then, you'll make the application available to the other Azure AD tenants by making it a *Multitenant* application.
+
+> [!NOTE]
+> If you're registering an application so that you can use the email capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you must use a multitenant configuration.
 
 1. Sign in to [Azure portal](https://portal.azure.com) and open the Active Directory tenant.
 
