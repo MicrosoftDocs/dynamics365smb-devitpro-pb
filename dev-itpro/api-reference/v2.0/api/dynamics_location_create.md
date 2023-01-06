@@ -23,7 +23,7 @@ Creates a location in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
 ```
-POST businesscentralPrefix/companies({id})/locations({id})
+POST businesscentralPrefix/companies({id})/locations
 ```
 <!-- END>EDIT_IS_REQUIRED -->
 ## Request headers
@@ -49,7 +49,7 @@ If successful, this method returns ```201 Created``` response code and a **locat
 Here is an example of the request.
 <!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/locations({id})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/locations
 Content-type: application/json
 {
   "id": "59f029b1-508c-ed11-aada-000d3a298ab3",
