@@ -42,7 +42,6 @@ In the request body, supply a JSON representation of a **location** object.
 
 If successful, this method returns ```201 Created``` response code and a **location** object in the response body.
 
-
 ## Example
 
 **Request**
@@ -53,19 +52,19 @@ Here is an example of the request.
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/locations({id})
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "contact" : "",
-    "addressLine1" : "",
-    "addressLine2" : "",
-    "city" : "",
-    "state" : "",
-    "country" : "",
-    "postalCode" : "",
-    "phoneNumber" : "",
-    "email" : "",
-    "website" : ""
+  "id": "59f029b1-508c-ed11-aada-000d3a298ab3",
+  "code": "MAIN",
+  "displayName": "Main Warehouse",
+  "contact": "Eleanor Faulkner",
+  "addressLine1": "UK Campus Bldg 5",
+  "addressLine2": "Thames Valley Park",
+  "city": "Reading",
+  "state": "",
+  "country": "GB",
+  "postalCode": "RG6 1WG",
+  "phoneNumber": "+44-(0)10 5214 4987",
+  "email": "",
+  "website": ""
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -77,19 +76,19 @@ Here is an example of the response.
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "id" : "",
-    "code" : "",
-    "displayName" : "",
-    "contact" : "",
-    "addressLine1" : "",
-    "addressLine2" : "",
-    "city" : "",
-    "state" : "",
-    "country" : "",
-    "postalCode" : "",
-    "phoneNumber" : "",
-    "email" : "",
-    "website" : ""
+  "id": "59f029b1-508c-ed11-aada-000d3a298ab3",
+  "code": "MAIN",
+  "displayName": "Main Warehouse",
+  "contact": "Eleanor Faulkner",
+  "addressLine1": "UK Campus Bldg 5",
+  "addressLine2": "Thames Valley Park",
+  "city": "Reading",
+  "state": "",
+  "country": "GB",
+  "postalCode": "RG6 1WG",
+  "phoneNumber": "+44-(0)10 5214 4987",
+  "email": "",
+  "website": ""
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
