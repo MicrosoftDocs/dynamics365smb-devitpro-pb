@@ -115,7 +115,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Licensing and Pricing  
 - [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
-- [Business Central Universal Code Initiative](https://partner.microsoft.com/en-US/resources/collection/microsoft-publisher-program#/)
+- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
 - [Business Central team members license documentation]()
 
 ## Licensing and Pricing on-premises only  
