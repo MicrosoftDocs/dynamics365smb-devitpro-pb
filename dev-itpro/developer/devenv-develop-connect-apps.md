@@ -3,7 +3,7 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 01/05/2022
+ms.date: 01/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,7 +43,7 @@ If you prefer to set up an environment with basic authentication just to explore
 
 Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-the-apis-with-postman-and-basic-authentication) section we'll use Postman.
 
-## <a name="AAD"></a>Setting up Azure Active Directory (AAD) based authentication
+## <a name="AAD"></a>Setting up Azure Active Directory (Azure AD) based authentication
 
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
@@ -94,9 +94,10 @@ In this `Hello World` example, we're going over the basic steps required to retr
     - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
     - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
     - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
+    - In the **Scope** field, 
     - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Azure Active Directory (Azure AD) based authentication](#AAD).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
-4. Choose the **Request token** button. The first time you sign in, you'll get prompted for consent.
+4. Choose the **Get New Access Token** button. The first time you sign in, you'll get prompted for consent.
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
