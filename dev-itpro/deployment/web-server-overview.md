@@ -35,11 +35,11 @@ There are two ways to create a [!INCLUDE[webserver](../developer/includes/webser
 ### Using [!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] Setup
 Setup is the quickest way to get a web server instance up and running, and is typically how you install the first [!INCLUDE[webserver](../developer/includes/webserver.md)] instance in your deployment.
 
--   Setup installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], which does the following:
+-  Setup installs the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], which does the following:
 
-    -   Installs and configure IIS with the required prerequisites, including Microsoft .NET Core - Windows Server Hosting <!--[Microsoft .NET Core - Windows Server Hosting package](https://aka.ms/dotnetcore.2.0.0-windowshosting)-->
-    -   Installs a web server instance on IIS.
-    -   Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD).
+    -  Installs and configure IIS with the required prerequisites, including Microsoft .NET Core - Windows Server Hosting <!--[Microsoft .NET Core - Windows Server Hosting package](https://aka.ms/dotnetcore.2.0.0-windowshosting)-->
+    -  Installs a web server instance on IIS. This instance has a name that matches name of the [!INCLUDE[server](../developer/includes/server.md)] instance.
+    -  Installs components and files in a **WebPublish** folder that enables you to add additional web server instances without having to use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD).
 
 -   You can only use Setup to install a single [!INCLUDE[webserver](../developer/includes/webserver.md)] instance.
 
