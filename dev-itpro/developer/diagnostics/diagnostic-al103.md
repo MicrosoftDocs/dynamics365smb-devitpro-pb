@@ -3,7 +3,7 @@ title: "Compiler Error AL0103"
 description: "Constant value '{0}' is outside the range for an Integer."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/12/2022
+ms.date: 01/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 
 Constant value '{0}' is outside the range for an Integer.
 ## Error message example
-Constant value 'value_0' is outside the range for a Integer
+Constant value '3000000000' is outside the range for an Integer
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

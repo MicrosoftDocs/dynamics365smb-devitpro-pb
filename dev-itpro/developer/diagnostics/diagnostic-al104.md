@@ -3,7 +3,7 @@ title: "Compiler Error AL0104"
 description: "Syntax error, '{0}' expected."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/12/2022
+ms.date: 01/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -19,7 +19,7 @@ author: SusanneWindfeldPedersen
 
 Syntax error, '{0}' expected.
 ## Error message example
-Syntax error, 'value_0' expected
+Syntax error, ';' expected
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
