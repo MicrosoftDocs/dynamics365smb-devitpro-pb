@@ -1,14 +1,13 @@
 ---
 title: Set Up Multiple Business Central Web Server Instances using PowerShell
 description: Learn how to use Windows PowerShell to set up more than one web server instance on IIS for the Business Central web client.
-
-ms.custom: na
-ms.date: 04/01/2021
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: conceptual
 author: jswymer
+ms.author: jswymer
+ms.custom: bap-template
+ms.date: 01/03/2023
+ms.reviewer: na
+ms.service: dynamics365-business-central
+ms.topic: conceptual
 ---
 # Setting Up Multiple [!INCLUDE[webserver](../developer/includes/webserver.md)] Instances Using PowerShell
 
@@ -33,8 +32,6 @@ There are different ways to launch this module and start using the cmdlets:
 
   For more information, see [Business Central PowerShell Cmdlets](/powershell/business-central/overview).
 
-- If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], just start Windows PowerShell as an administrator.
-
 - Otherwise, start Windows PowerShell as an administrator, and use the [Import-Module](/powershell/module/microsoft.powershell.core/import-module) cmdlet to import the **NAVWebClientManagement.psm1** file:
 
   ```powershell
@@ -55,23 +52,23 @@ There are different ways to launch this module and start using the cmdlets:
 
 To create a new web server instance, you need access to the **WebPublish** folder that contains the content files for the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)].
 
-- This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\13x\Web Client\WebPublish". 
+- This folder is available on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installation media (DVD) and has the path "DVD\WebClient\Microsoft Dynamics NAV\NNN\Web Client\WebPublish". NNN indicates the Business Central version like 210, 200, or 190. 
 
 - If you installed the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)], this folder has the path "[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client\WebPublish".
 
 You can use either of these locations or you can copy the folder to more convenient location on your computer or network.
 
-
 ### <a name="WebClientonIIS"></a>Decide on the site deployment type for the instance
-When you create a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, you can choose to create either a RootSite or SubSite type. Each instance type has a different hierarchical structure in IIS, which influences its configuration and the URLs for the accessing from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].
- 
-**RootSite**
+
+When you create a new [!INCLUDE[webserver](../developer/includes/webserver.md)] instance, you can choose to create either a *RootSite* or *SubSite* type. Each instance type has a different hierarchical structure in IIS, which influences its configuration and the URLs for the accessing from the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)].
+
+#### RootSite
 
 A *RootSite* instance is a root-level web site that is complete with content files for serving the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. It is configured with its own set of bindings for accessing the site, such as protocol (http or https) and communication port. The structure in IIS looks like this:
 
 ```
 - Sites
-  - BusunessCentralWebSite (web site)
+  - BusinessCentralWebSite (web site)
     + nn-NN (language versions)
     + www (content)
     navsettings.json
@@ -84,13 +81,13 @@ The [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] URL for the RootSit
 
 For example: `https://localhost:8080`. 
 
-**SubSite**
+#### SubSite
 
 A *SubSite* instance is a web application that is under a container web site. The container web site is configured with a set of bindings, but the site itself has no content files. The content files are contained in the application (SubSite). The SubSite inherits the bindings from the container web site. This is the deployment type that is created when you install [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] in the Setup wizard. Using the New-NAVWebServerInstance cmdlet, you can add multiple SubSite instances in the container web site. The structure in IIS for two instances looks like this in IIS:
 
 ```
 - Sites
-  - BusunessCentralWebSite (web site)
+  - BusinessCentralWebSite (web site)
     - BusinessCentralWebInstance1 (application)
       + nn-NN (language versions)
       + www 
@@ -138,7 +135,7 @@ New-NAVWebServerInstance -WebServerInstance MyWebApp -Server MyBCServer -ServerI
 - Substitute *C:\WebClient\WebPublish* with the path to your WebPublish folder. By default, the cmdlet looks in the'[!INCLUDE[prodinstallpath](../developer/includes/prodinstallpath.md)]\Web Client' folder. So if you are working on a computer where the [!INCLUDE[webservercomponents](../developer/includes/webservercomponents.md)] are installed, you do not have to set this parameter.
 
 > [!NOTE]  
->  This command only sets the required parameters of the NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
+>  This command only sets the required parameters of the New-NAVWebServerInstance cmdlet. The cmdlet has several other parameters that can use to configure the web server instance. For more information about the syntax and parameters, see [New-NAVWebServerInstance](/powershell/module/navwebclientmanagement/New-NAVWebServerInstance).  
 
 ## Modifying a [!INCLUDE[webserver](../developer/includes/webserver.md)] instance
 
