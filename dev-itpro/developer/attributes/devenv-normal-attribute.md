@@ -37,7 +37,7 @@ Specifies that the method is a Normal method.
 
 ## Remarks
 
-You use normal methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
+You use standard methods to structure the test code by using the same design practices and principles as methods in other codeunits of the application. For more information, see [Test Codeunits and Test Functions](../devenv-test-codeunits-and-test-methods.md).
 
 ## See Also  
 [Get Started with AL](../devenv-get-started.md)  

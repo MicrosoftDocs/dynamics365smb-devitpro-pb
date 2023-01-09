@@ -3,7 +3,7 @@ title: "Page.Editable([Boolean]) Method"
 description: "Gets or sets the default editability of the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 01/03/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -43,6 +43,11 @@ Indicates the editability of the page.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `CurrPage.Editable` property represents both whether a page is editable at all and whether the page is currently in edit mode. Dynamic changes to the page Editable property are not supported, except through `CurrPage.Editable(false)` in the `OnOpenPage` trigger.
+
 ## See Also
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

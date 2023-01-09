@@ -19,7 +19,7 @@ Update the properties of a itemVariant object for [!INCLUDE[prod_short](../../..
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-PATCH businesscentralPrefix/companies({id})/itemVariants ({id})
+PATCH businesscentralPrefix/companies({id})/itemVariants({id})
 PATCH businesscentralPrefix/companies({id})/items({id})/itemVariants({id})
 ```
 
@@ -35,7 +35,7 @@ PATCH businesscentralPrefix/companies({id})/items({id})/itemVariants({id})
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
-If successful, this method returns a ```200 OK``` response code and an updated **itemVariants ** object in the response body.
+If successful, this method returns a ```200 OK``` response code and an updated **itemVariants** object in the response body.
 
 ## Example
 

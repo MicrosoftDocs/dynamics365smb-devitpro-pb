@@ -3,7 +3,7 @@ title: "Record.FilterGroup([Integer]) Method"
 description: "Gets or sets the filter group that is applied to a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/29/2022
+ms.date: 12/29/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,6 +44,15 @@ An instance of the [Record](record-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!NOTE]  
+> - It's possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
+> - For performance reasons, filtergroup -1 does not support filtering on flowfields.
+> - The **maximum number of filtergroups is 255**. Greater numbers will be ignored, so don't use them. 
+
+> [!IMPORTANT]  
+> Using filter group 7 may cause factboxes to not work as intended.  
+
 A filter group can contain a filter for a Record that has been set earlier with the [SetFilter Method (Record)](record-setfilter-method.md) or the [SetRange Method (Record)](record-setrange-method.md). The total filter applied is the combination of all the filters set in all the filtergroups.  
   
 When you select a filter group, subsequent filter settings by the [SetFilter Method (Record)](record-setfilter-method.md) or the [SetRange Method (Record)](record-setrange-method.md) apply to that group.  
@@ -69,14 +78,6 @@ If you have filters on *multiple fields in the same filter group*, then only rec
 |7|Factboxes|Used for clearing the state of factboxes.|  
   
 A filter set in a group different from filter group 0 cannot be changed by a user that uses a filter dialog to set a filter. If, for example, a filter has been set on customer numbers 1000 to 2000 in group 4, then the user can set a filter that delimits this selection further, but cannot widen it to include customer numbers outside the range 1000 to 2000.  
-  
-> [!NOTE]  
-> - It is possible to use one of the internally used groups. If you do this, you replace the filter that [!INCLUDE[d365fin_long_md](../../includes/d365fin_long_md.md)] assumes is in this group. If, for example, you use filter group 4 in a page, you will replace the filtering that is actually the result of applying the [SubPageLink Property](../../properties/devenv-subpagelink-property.md). This could seriously alter the way pages and subpages interact.  
-> - For performance reasons, filtergroup -1 does not support filtering on flowfields.
-> - The maximum number of filtergroups is 255. Greater numbers will be ignored, so don't use them. 
-
-> [!IMPORTANT]  
-> Using filter group 7 may cause factboxes to not work as intended.  
   
 ### Reset filter
 To reset the filters in filter group 1, you add an empty filter to the group. To add an empty filter, to filter group 1, you must first set the filter group.  

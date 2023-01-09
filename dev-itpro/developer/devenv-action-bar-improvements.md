@@ -1,16 +1,16 @@
 ---
-title: "Action Bar Improvements"
-description: "Introducing the action bar for Dynamics 365 Business Central"
+title: Action bar improvements
+description: Introducing the action bar for Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
-ms.service: "dynamics365-business-central"
+ms.reviewer: solsen
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/03/2022
-ms.custom: na
+ms.date: 12/21/2022
+ms.custom: bap-template
 ---
 
-# Action Bar Improvements
+# Action bar improvements
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we’ve organized the action bar menus to keep related actions together and avoid the same action being available in multiple menus. This helps reduce clutter and confusion, especially for users new to [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
