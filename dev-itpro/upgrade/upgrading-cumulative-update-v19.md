@@ -190,7 +190,11 @@ For more information, see [Installing Business Central Using Setup](../deploymen
 
 ## PLATFORM UPDATE
 
-Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. The conversion updates the system tables of the database to the new schema (data structure) and provides the latest platform features and performance enhancements.
+Follow the next few tasks to convert your database to the new platform of the update. A multitenant deployment includes the application and tenant databases. Running the database conversion will:
+
+- Update the system tables of the database to the new schema (data structure)
+- Provide the latest platform features and performance enhancements
+- Automatically publish the system symbols for the new platform
 
 Also, to ensure that the existing published extensions work on the new platform, you'll recompile the extensions.
 
@@ -203,16 +207,16 @@ Also, to ensure that the existing published extensions work on the new platform,
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase|$ApplicationDatabase [-Force]
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase|$ApplicationDatabase -Force
     ```
 
     For example, in a single tenant deployment:
 
     ```powershell
-    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase
+    Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $TenantDatabase -Force
     ```
 
-    In a multitenant deployment, run this cmdlet against the application database and use the `-Force` parameter. For example:
+    In a multitenant deployment, run this cmdlet against the application database. For example:
 
     ```powershell
     Invoke-NAVApplicationDatabaseConversion -DatabaseServer $DatabaseServer -DatabaseName $ApplicationDatabase -Force
@@ -233,7 +237,9 @@ Also, to ensure that the existing published extensions work on the new platform,
     >
     > `Invoke-NAVApplicationDatabaseConversion : A technical upgrade of database <database name> on server '.\<database instance>' cannot be run, because the database's application version 'NNNNNN' is greater than or equal to the platform version 'NNNNNN'`
     >
-    > This is not an error, and you can continue installing the update. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
+    > This isn't an error. This message is recorded as a warning in the event log as well. This message indicates that the application database is already compatible with the new platform, which happens when the update does not make any schema changes to the system tables.
+    >
+    > You'll see this message if you ran the cmdlet without the `-Force` parameter. Run the cmdlet again, but be sure to include `-Force` parameter.
 
 ## Connect server instance to database
  
@@ -516,6 +522,9 @@ Import the customer license by using the [Import-NAVServerLicense cmdlet](/power
 
 ```powershell
 Import-NAVServerLicense -ServerInstance $BcServerInstance -LicenseFile $CustomerLicense
+```
+
+```powershell
 Restart-NAVServerInstance -ServerInstance $BcServerInstance
 ```
 
