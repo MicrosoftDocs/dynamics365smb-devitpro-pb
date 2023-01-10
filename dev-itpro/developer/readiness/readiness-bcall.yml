@@ -129,9 +129,24 @@ landingContent:
             url: https://aka.ms/BCOnboarding
           - text: aka.ms/BCOnboardingCustomers
             url: https://aka.ms/BCOnboardingCustomers
-          - text: aka.ms/
-            url: https://aka.ms/BCPWA
-          - text: aka.ms/BCOnboarding
-            url: https://aka.ms/BCOnboarding
-          - text: aka.ms/BCOnboardingCustomers
-            url: https://aka.ms/BCOnboardingCustomers
+          - text: aka.ms/BCTrial
+            url: https://aka.ms/BCTrial
+          - text: aka.ms/BCProductivity
+            url: https://aka.ms/BCProductivity
+          - text: aka.ms/BCKeys
+            url: https://aka.ms/BCKeys
+
+- title: Telemetry and performance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCPerformance
+            url: https://aka.ms/BCPerformance
+          - text: aka.ms/BCTelemetry
+            url: https://aka.ms/BCTelemetry
+          - text: aka.ms/BCTelemetrySamples
+            url: https://aka.ms/aka.ms/BCTelemetrySamples
+          - text: aka.ms/BCTelemetryReport
+            url: https://aka.ms/BCTelemetryReport
+          - text: aka.ms/BCTelemetry-ISV-App
+            url: https://aka.ms/BCTelemetry-ISV-App
