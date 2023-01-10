@@ -92,16 +92,28 @@ landingContent:
             url: https://aka.ms/BCSandbox
           - text: aka.ms/BCContainerHelper
             url: https://aka.ms/BCContainerHelper
-          - text: AL simple statements
-            url: devenv-al-simple-statements.md
-          - text: AL control statements
-            url: devenv-al-control-statements.md
-          - text: Diagnostics
-            url: diagnostics/diagnostic-al100.md
-          - text: AL simple statements
-            url: devenv-al-simple-statements.md
-          - text: AL control statements
-            url: devenv-al-control-statements.md
+          - text: aka.ms/getbc
+            url: https://aka.ms/getbc
+          - text: aka.ms/getbcext
+            url: https://aka.ms/getbcext
+          - text: aks.ms/BCMarketingValidationFAQ
+            url: https://aka.ms/BCMarketingValidationFAQ
+          - text: aka.ms/Collaborate
+            url: https://aka.ms/Collaborate
+          - text: aka.ms/BCProtocol
+            url: https://aka.ms/BCProtocol
+          - text: aka.ms/AppSourceGo
+            url: https://aka.ms/AppSourceGo
+          - text: aka.ms/CheckBeforeYouSubmit
+            url: https://aka.ms/CheckBeforeYouSubmit
+          - text: aka.ms/TechValidationFAQ
+            url: https://aka.ms/TechValidationFAQ
+          - text: aka.ms/AL-Go-AppSource
+            url: https://aka.ms/AL-Go-AppSource
+          - text: aka.ms/businesscentrallocapps
+            url: https://aka.ms/businesscentrallocapps
+          - text: aka.ms/AL-Go-PTE
+            url: https://aka.ms/AL-Go-PTE
 
   - title: Stay in touch
     linkLists:
