@@ -115,13 +115,23 @@ landingContent:
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
 
-  - title: Stay in touch
+  - title: Customer onboarding
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
-          - text: GitHub
-            url: https://github.com/microsoft/AL
-          - text: YouTube
-            url: https://www.youtube.com/playlist?list=PLcakwueIHoT-wVFPKUtmxlqcG1kJ0oqq4
-          - text: Twitter
-            url: https://twitter.com/MsDyn365BC
+          - text: aka.ms/BCAppSource
+            url: https://aka.ms/BCAppSource
+          - text: aka.ms/BusinessCentralApp
+            url: https://aka.ms/BusinessCentralApp
+          - text: aka.ms/BCPWA
+            url: https://aka.ms/BCPWA
+          - text: aka.ms/BCOnboarding
+            url: https://aka.ms/BCOnboarding
+          - text: aka.ms/BCOnboardingCustomers
+            url: https://aka.ms/BCOnboardingCustomers
+          - text: aka.ms/
+            url: https://aka.ms/BCPWA
+          - text: aka.ms/BCOnboarding
+            url: https://aka.ms/BCOnboarding
+          - text: aka.ms/BCOnboardingCustomers
+            url: https://aka.ms/BCOnboardingCustomers
