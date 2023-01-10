@@ -19,35 +19,26 @@ landingContent:
             url: https://aka.ms/bcle
           - text: aka.ms/BCYammer
             url: https://aka.ms/BCYammer
-          - text: Learn AL through learning paths and modules
-            url: /users/baglearn-5620/collections/d82ki43w52m1m4
-      - linkListType: video
-        links:
-          - text: AL hacks and insights
-            url: https://www.youtube.com/c/ErikHougaard
-      - linkListType: tutorial
-        links:
-          - text: Build your first extension
-            url: devenv-extension-example.md 
-      - linkListType: reference
-        links:
-          - text: Frequently asked questions (FAQ)
-            url: devenv-dev-faq.md
-          - text: AL on StackOverflow
-            url: https://stackoverflow.com/questions/tagged/dynamics-al
-          - text: AL on Discord
-            url: https://t.co/XubV3r9gYp
-          - text: AL on Twitter
-            url: https://twitter.com/search?q=%23bcalhelp&src=typed_query
-
-  - title: AL fundamentals
+  - title: Updates
     linkLists:
       - linkListType: overview
         links:
-          - text: A tour of the AL language
-            url: devenv-programming-in-al.md
-          - text: Inside an AL codeunit
-            url: devenv-codeunit-object.md
+          - text: aka.ms/BCReleasePlan
+            url: https://aka.ms/BCReleasePlan
+          - text: aka.ms/BCUpdates
+            url: https://aka.ms/BCUpdates
+          - text: aka.ms/BCLastMinorUpdate
+            url: https://aka.ms/BCLastMinorUpdate
+          - text: aka.ms/BCPreview
+            url: https://aka.ms/BCPreview
+          - text: aka.ms/BCDownload
+            url: https://aka.ms/BCDownload
+          - text: aka.ms/BCMajorUpdates
+            url: https://aka.ms/BCMajorUpdates
+          - text: aka.ms/BCUpdateHistory
+            url: https://aka.ms/BCUpdateHistory
+          - text: aka.ms/BCIdeas 
+            url: https://aka.ms/BCIdeas
       - linkListType: concept
         links:
           - text: Data types
