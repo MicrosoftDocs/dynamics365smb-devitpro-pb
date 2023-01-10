@@ -39,84 +39,46 @@ landingContent:
             url: https://aka.ms/BCUpdateHistory
           - text: aka.ms/BCIdeas 
             url: https://aka.ms/BCIdeas
-      - linkListType: concept
-        links:
-          - text: Data types
-            url: methods-auto/library.md
-          - text: Tables and data
-            url: devenv-tables-overview.md
-          - text: Pages and user interfaces
-            url: devenv-role-customization.md            
-          - text: Reports
-            url: devenv-reports.md
-          - text: Error handling
-            url: devenv-handling-errors-using-try-methods.md
-          - text: Testing
-            url: devenv-testing-application.md
-          - text: Coding style
-            url: ../compliance/apptest-bestpracticesforalcode.md
-      - linkListType: tutorial
-        links:
-          - text: Creating a table
-            url: devenv-table-object.md#table-example            
-          - text: Creating a report
-            url: devenv-walkthrough-designing-reports-multiple-tables.md
-          - text: Extending a report
-            url: devenv-report-ext-example.md
-          - text: Testing an application
-            url: devenv-test-application-example-purchase-invoice-discounts.md
-  - title: Key concepts
+  - title: Stay up to date
     linkLists:
       - linkListType: overview
         links:
-          - text: Extending
-            url: /dynamics365/business-central/application
-          - text: Extension lifecycle
-            url: devenv-ext-dev-lifecycle-overview.md
-      - linkListType: concept
-        links:
-          - text: Data types
-            url: methods-auto/library.md
-          - text: Interfaces
-            url: devenv-interfaces-in-al.md
-          - text: Objects
-            url: properties/devenv-properties.md
-          - text: Methods
-            url: devenv-al-methods.md
-          - text: Triggers
-            url: triggers-auto/devenv-triggers.md
-          - text: Events
-            url: devenv-events-in-al.md
-          - text: Attributes
-            url: attributes/devenv-method-attributes.md
-      - linkListType: tutorial
-        links:
-          - text: Your first interface
-            url: devenv-interfaces-in-al.md#interface-example
-          - text: Introduction to events
-            url: devenv-events-example.md
-          - text: Implementing workflow events
-            url: devenv-walkthrough-workflow-events-responses.md            
-  - title: What's new
+          - text: aka.ms/BCNews
+            url: https://aka.ms/BCNews
+          - text: aka.ms/BCOfficeHours
+            url: https://aka.ms/BCOfficeHours
+          - text: aka.ms/BCOfficeHoursRecordings
+            url: https://aka.ms/BCOfficeHoursRecordings       
+  - title: Partner readiness and go to market
     linkLists:
-      - linkListType: whats-new
+      - linkListType: overview
         links: 
-          - text: What's new in 2022 release wave 2
-            url: https://docs.microsoft.com/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/development
-          - text: What's new in 2022 release wave 1 
-            url: https://docs.microsoft.com/dynamics365-release-plan/2022wave1/smb/dynamics365-business-central/development
-          - text: What's new in 2021 release wave 2
-            url: https://docs.microsoft.com/dynamics365-release-plan/2021wave2/smb/dynamics365-business-central/development
-          - text: What's new in 2021 release wave 1
-            url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/modern-development-tools
-      - linkListType: reference
-        links:
-          - text: AL language changelog
-            url: https://marketplace.visualstudio.com/items/ms-dynamics-smb.al/changelog
-          - text: Known issues and bugs
-            url: https://github.com/microsoft/al/issues
-          - text: AL bugs and feature requests
-            url: https://github.com/microsoft/AL#bugs-and-feature-requests
+          - text: aka.ms/BCAll
+            url: https://aka.ms/BCAll
+          - text: aka.ms/BCReseller
+            url: https://aka.ms/BCReseller
+          - text: aka.ms/BCDocs
+            url: https://aka.ms/BCDocs
+          - text: aka.ms/BCCustomerStories
+            url: https://aka.ms/BCCustomerStories
+          - text: aka.ms/BCPartnerPortal
+            url: https://aka.ms/BCPartnerPortal
+          - text: aka.ms/P2P
+            url: https://aka.ms/P2P
+          - text: aka.ms/SMBcompetency
+            url: https://aka.ms/SMBcompetency
+          - text: aka.ms/BCLearn
+            url: https://aka.ms/BCLearn
+          - text: aka.ms/BCUniversalCode
+            url: https://aka.ms/BCUniversalCode
+          - text: aka.ms/BCCapabilities
+            url: https://aka.ms/BCCapabilities
+          - text: aka.ms/BCExam
+            url: https://aka.ms/BCExam
+          - text: aka.ms/D365BCDocsContributor
+            url: https://aka.ms/D365BCDocsContributor
+          - text: aka.ms/BCCountries
+            url: https://aka.ms/BCCountries          
             
   - title: Other AL language reference
     linkLists:
