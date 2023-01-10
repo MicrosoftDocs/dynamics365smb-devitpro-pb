@@ -80,10 +80,22 @@ landingContent:
           - text: aka.ms/BCCountries
             url: https://aka.ms/BCCountries          
             
-  - title: Other AL language reference
+  - title: App development
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
+          - text: aka.ms/BCPublisher
+            url: https://aka.ms/BCPublisher
+          - text: aka.ms/BCTech
+            url: https://aka.ms/BCTech
+          - text: aka.ms/BCSandbox
+            url: https://aka.ms/BCSandbox
+          - text: aka.ms/BCContainerHelper
+            url: https://aka.ms/BCContainerHelper
+          - text: AL simple statements
+            url: devenv-al-simple-statements.md
+          - text: AL control statements
+            url: devenv-al-control-statements.md
           - text: Diagnostics
             url: diagnostics/diagnostic-al100.md
           - text: AL simple statements
