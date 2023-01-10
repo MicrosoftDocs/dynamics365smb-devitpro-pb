@@ -12,15 +12,15 @@ author: SusanneWindfeldPedersen
 
 # Method Attributes
 
-An attribute is modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the `Integration` attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
+An attribute is a modifier on a method declaration that specifies information that controls the method's use and behavior. Adding an attribute on a method declaration is also known as *decorating* a method. For example, decorating a method with the `Integration` attribute sets the method to be an event publisher. An attribute can have one or more arguments that set properties for the method instance.
 
-In AL, attributes are placed before the method, and have the following syntax:
+In AL, attributes are placed before the method, and they have the following syntax:
 
 ```AL
 [Attribute_Name(ArgumentName : data_type, ArgumentName : data_type)]
 ```
 
-For example, the Integration attribute has two arguments, and the syntax is:
+For example, the `Integration` attribute has two arguments, and the syntax is:
 
 ```AL
 [Integration(IncludeSender : Boolean, GlobalVarAccess : Boolean)]

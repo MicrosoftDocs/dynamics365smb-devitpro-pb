@@ -66,8 +66,10 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
+### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 ### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
+### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
+
 ### Updates for earlier major versions
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
@@ -1277,6 +1279,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
+#### [2022 Release Wave 2 On-Premises Updates](deployment/update-versions-21.md)
 #### [2022 Release Wave 1 On-Premises Updates](deployment/update-versions-20.md)
 #### [2021 Release Wave 2 On-Premises Updates](deployment/update-versions-19.md)
 #### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)

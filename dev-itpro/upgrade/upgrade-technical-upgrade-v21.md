@@ -60,7 +60,7 @@ $CustomerLicense = "The file path and name of the customer license"
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
-4. Copy the contents of the **NavEwsWrapper**, **Timeline**, **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 21 server instance. Replace existing files when prompted.
+4. Copy the contents of the **NavEwsWrapper**, and the entire **Timeline** and **PingPong** add-in folders from the version 20 server instance installation to the same folder the new version 21 server instance. For the **Timeline** and **PingPong**, you'll have to add the folders because they're not included in the version 21 server add-ins folder. Replace existing files when prompted.
 
    By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
 

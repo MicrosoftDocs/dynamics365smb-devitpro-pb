@@ -15,11 +15,11 @@ ms.date: 08/31/2022
 
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] includes PowerShell cmdlets for administering Business Central on-premises deployments. You use it for configuring Business Central Server and Web server instances, databases, users, and more. You also use it to manage extensions, like publishing, syncing, installing and upgrading.
 
-## Install the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]
+## Install the Business Central Administration Shell
 
 The [!INCLUDE[adminshell](../developer/includes/adminshell.md)] is installed together with [!INCLUDE[server](../developer/includes/server.md)] components by using the Business Central Setup wizard. To install it, run the setup.exe that's available on the installation media (DVD). Follow the wizard, and choose either the **Install Demo** option or the **Server** option in the customized setup. For more information, see [Install Using Setup](../deployment/install-using-setup.md).
 
-## Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]
+## Run the Business Central Administration Shell
 
 To run the shell, you have to be a member of the local administrator group on the computer. There are a couple ways to run the shell.
 
