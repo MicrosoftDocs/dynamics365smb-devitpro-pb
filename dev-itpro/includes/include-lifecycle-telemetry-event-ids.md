@@ -1,6 +1,7 @@
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 | AL0000E24 | Job Queue Lifecycle | [Job queue entry enqueued: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#enqueued) |
+| 'AL0000HE7' | Job Queue Lifecycle | [Job queue entry enqueued: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#enqueued) |
 | AL0000E25 | Job Queue Lifecycle | [Job queue entry started: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#started) |
 | AL0000E26 | Job Queue Lifecycle | [Job queue entry finished: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#finished) |
 |AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportstarted)|
