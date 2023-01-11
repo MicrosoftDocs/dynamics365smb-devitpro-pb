@@ -105,31 +105,6 @@ This example shows how to use the `FindSet` method to loop through a set and upd
     end;
 ```
 
-## Example 3
-
-This example shows how to use the `FindSet` method to loop through a set and update a field that is *within* the current key.
-
-```al
-    procedure Example_3(SalesLine: Record "Sales Line")
-    var
-        SalesShptLine: Record "Sales Shipment Line";
-        SalesShptLine2: Record "Sales Shipment Line";
-    begin
-        SalesShptLine.SetCurrentKey("Order No.", "Order Line No.");
-        SalesShptLine.SetRange("Order No.", SalesLine."Document No.");
-        SalesShptLine.SetRange("Order Line No.", SalesLine."Line No.");
-        if SalesShptLine.FindSet(true) then
-            repeat
-                SalesShptLine2 := SalesShptLine;
-                SalesShptLine2."Order No." := '';
-                SalesShptLine2."Order Line No." := 0;
-                SalesShptLine2.Modify();
-            until SalesShptLine.Next = 0;
-    end;
-
-```
--->
-
 ## See Also
 
 [Record Data Type](record-data-type.md)  
