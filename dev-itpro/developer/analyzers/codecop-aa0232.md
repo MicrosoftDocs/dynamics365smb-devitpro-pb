@@ -3,7 +3,7 @@ title: "CodeCop Info AA0232"
 description: "You can potentially increase performance if fields that are used in FlowFields are added to SumIndexedFields of the corresponding key."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 01/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,6 +22,10 @@ You can potentially increase performance if fields that are used in FlowFields a
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Reason for the rule
+
+> [!NOTE]  
+> Be aware that this rule can, in some cases, cause false warnings even though you have addressed any performance issues by adding SIFT indices. The rule will be fixed in a future release. 
+
 When there are performance issues on List pages, the root cause is often that they display FlowFields defined on top of tables that are inadequately indexed - these are typically missing SIFT indices. 
 As any FlowField potentially can be shown on a page, make sure that they are all adequately indexed.
 
