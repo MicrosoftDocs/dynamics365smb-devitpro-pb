@@ -49,38 +49,43 @@ landingContent:
             url: https://aka.ms/BCOfficeHours
           - text: aka.ms/BCOfficeHoursRecordings
             url: https://aka.ms/BCOfficeHoursRecordings       
-  - title: Partner readiness and go to market
+  - title: Partner readiness
     linkLists:
       - linkListType: overview
         links: 
           - text: aka.ms/BCAll
             url: https://aka.ms/BCAll
-          - text: aka.ms/BCReseller
-            url: https://aka.ms/BCReseller
           - text: aka.ms/BCDocs
             url: https://aka.ms/BCDocs
-          - text: aka.ms/BCCustomerStories
-            url: https://aka.ms/BCCustomerStories
           - text: aka.ms/BCPartnerPortal
             url: https://aka.ms/BCPartnerPortal
+          - text: aka.ms/BCLearn
+            url: https://aka.ms/BCLearn
+          - text: aka.ms/D365BCDocsContributor
+            url: https://aka.ms/D365BCDocsContributor
+          - text: aka.ms/BCCountries
+            url: https://aka.ms/BCCountries    
+
+    - title: Go to market
+    linkLists:
+      - linkListType: overview
+        links: 
+          - text: aka.ms/BCReseller
+            url: https://aka.ms/BCReseller
+          - text: aka.ms/BCCustomerStories
+            url: https://aka.ms/BCCustomerStories
           - text: aka.ms/P2P
             url: https://aka.ms/P2P
           - text: aka.ms/SMBcompetency
             url: https://aka.ms/SMBcompetency
-          - text: aka.ms/BCLearn
-            url: https://aka.ms/BCLearn
           - text: aka.ms/BCUniversalCode
             url: https://aka.ms/BCUniversalCode
           - text: aka.ms/BCCapabilities
             url: https://aka.ms/BCCapabilities
           - text: aka.ms/BCExam
-            url: https://aka.ms/BCExam
-          - text: aka.ms/D365BCDocsContributor
-            url: https://aka.ms/D365BCDocsContributor
-          - text: aka.ms/BCCountries
-            url: https://aka.ms/BCCountries          
+            url: https://aka.ms/BCExam  
             
-  - title: App development
+  - title: App development in general
     linkLists:
       - linkListType: overview
         links:
@@ -88,20 +93,18 @@ landingContent:
             url: https://aka.ms/BCPublisher
           - text: aka.ms/BCTech
             url: https://aka.ms/BCTech
-          - text: aka.ms/BCSandbox
-            url: https://aka.ms/BCSandbox
-          - text: aka.ms/BCContainerHelper
-            url: https://aka.ms/BCContainerHelper
-          - text: aka.ms/getbc
-            url: https://aka.ms/getbc
-          - text: aka.ms/getbcext
-            url: https://aka.ms/getbcext
-          - text: aks.ms/BCMarketingValidationFAQ
-            url: https://aka.ms/BCMarketingValidationFAQ
+          - text: aka.ms/ALIssues
+            url: https://aka.ms/ALIssues
           - text: aka.ms/Collaborate
             url: https://aka.ms/Collaborate
           - text: aka.ms/BCProtocol
             url: https://aka.ms/BCProtocol
+
+
+  - title: Developing apps for AppSource
+    linkLists:
+      - linkListType: overview
+        links:
           - text: aka.ms/AppSourceGo
             url: https://aka.ms/AppSourceGo
           - text: aka.ms/CheckBeforeYouSubmit
@@ -112,6 +115,10 @@ landingContent:
             url: https://aka.ms/AL-Go-AppSource
           - text: aka.ms/businesscentrallocapps
             url: https://aka.ms/businesscentrallocapps
+
+    - title: Developing customer specific solutions 
+      - LinkListType: overview 
+        links:
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
 
