@@ -19,7 +19,12 @@ landingContent:
             url: https://aka.ms/bcle
           - text: aka.ms/BCYammer
             url: https://aka.ms/BCYammer
-  - title: Updates
+          - text: aka.ms/BCOfficeHours
+            url: https://aka.ms/BCOfficeHours
+          - text: aka.ms/BCOfficeHoursRecordings
+            url: https://aka.ms/BCOfficeHoursRecordings 
+
+  - title: Stay up to date
     linkLists:
       - linkListType: overview
         links:
@@ -39,17 +44,10 @@ landingContent:
             url: https://aka.ms/BCUpdateHistory
           - text: aka.ms/BCIdeas 
             url: https://aka.ms/BCIdeas
-  - title: Stay up to date
-    linkLists:
-      - linkListType: overview
-        links:
           - text: aka.ms/BCNews
             url: https://aka.ms/BCNews
-          - text: aka.ms/BCOfficeHours
-            url: https://aka.ms/BCOfficeHours
-          - text: aka.ms/BCOfficeHoursRecordings
-            url: https://aka.ms/BCOfficeHoursRecordings       
-  - title: Partner readiness
+      
+  - title: Partner readiness and go to market
     linkLists:
       - linkListType: overview
         links: 
@@ -57,23 +55,10 @@ landingContent:
             url: https://aka.ms/BCAll
           - text: aka.ms/BCDocs
             url: https://aka.ms/BCDocs
-          - text: aka.ms/BCPartnerPortal
-            url: https://aka.ms/BCPartnerPortal
-          - text: aka.ms/BCLearn
-            url: https://aka.ms/BCLearn
           - text: aka.ms/D365BCDocsContributor
             url: https://aka.ms/D365BCDocsContributor
           - text: aka.ms/BCCountries
             url: https://aka.ms/BCCountries    
-
-  - title: Go to market
-    linkLists:
-      - linkListType: overview
-        links: 
-          - text: aka.ms/BCReseller
-            url: https://aka.ms/BCReseller
-          - text: aka.ms/BCCustomerStories
-            url: https://aka.ms/BCCustomerStories
           - text: aka.ms/P2P
             url: https://aka.ms/P2P
           - text: aka.ms/SMBcompetency
@@ -82,10 +67,21 @@ landingContent:
             url: https://aka.ms/BCUniversalCode
           - text: aka.ms/BCCapabilities
             url: https://aka.ms/BCCapabilities
+      - linkListType: get-started
+        links: 
+          - text: aka.ms/BCPartnerPortal
+            url: https://aka.ms/BCPartnerPortal
+          - text: aka.ms/BCLearn
+            url: https://aka.ms/BCLearn
+          - text: aka.ms/BCReseller
+            url: https://aka.ms/BCReseller
+          - text: aka.ms/BCCustomerStories
+            url: https://aka.ms/BCCustomerStories
           - text: aka.ms/BCExam
             url: https://aka.ms/BCExam  
+          
             
-  - title: App development in general
+  - title: App development
     linkLists:
       - linkListType: overview
         links:
@@ -99,11 +95,9 @@ landingContent:
             url: https://aka.ms/Collaborate
           - text: aka.ms/BCProtocol
             url: https://aka.ms/BCProtocol
-
-
-  - title: Developing apps for AppSource and PTE's
-    linkLists:
-      - linkListType: overview
+          - text: aka.ms/businesscentrallocapps
+            url: https://aka.ms/businesscentrallocapps
+      - linkListType: how-to-guide
         links:
           - text: aka.ms/AppSourceGo
             url: https://aka.ms/AppSourceGo
@@ -113,12 +107,10 @@ landingContent:
             url: https://aka.ms/TechValidationFAQ
           - text: aka.ms/AL-Go-AppSource
             url: https://aka.ms/AL-Go-AppSource
-          - text: aka.ms/businesscentrallocapps
-            url: https://aka.ms/businesscentrallocapps
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
 
-  - title: Customer onboarding
+  - title: Customer onboarding and migration
     linkLists:
       - linkListType: overview
         links:
@@ -138,11 +130,6 @@ landingContent:
             url: https://aka.ms/BCProductivity
           - text: aka.ms/BCKeys
             url: https://aka.ms/BCKeys
-
-  - title: Migration
-    linkLists:
-      - linkListType: overview
-        links:
           - text: aka.ms/BCMigrations
             url: https://aka.ms/BCMigrations
           - text: aka.ms/BCAndGP
@@ -202,14 +189,8 @@ landingContent:
           - text: aka.ms/BCPBI
             url: https://aka.ms/BCPBI
 
-  - title: Dataverse
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: aka.ms/BCDataSync
-            url: https://aka.ms/BCDataSync
 
-  - title: Shopify
+  - title: Shopify and Dataverse
     linkLists:
       - linkListType: overview
         links:
@@ -223,6 +204,8 @@ landingContent:
             url: https://aka.ms/BCShopifyFAQ
           - text: aka.ms/BCShopifyConsultant
             url: https://aka.ms/BCShopifyConsultant
+          - text: aka.ms/BCDataSync
+            url: https://aka.ms/BCDataSync
 
   - title: Security, privacy, and compliance 
     linkLists:
