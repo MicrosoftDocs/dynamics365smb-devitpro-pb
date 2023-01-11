@@ -144,6 +144,15 @@ landingContent:
           - text: aka.ms/BCKeys
             url: https://aka.ms/BCKeys
 
+  - title: Migration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCMigrations
+            url: https://aka.ms/BCMigrations
+          - text: aka.ms/BCAndGP
+            url: https://aka.ms/BCAndGP
+
   - title: Telemetry and performance
     linkLists:
       - linkListType: overview
@@ -153,8 +162,48 @@ landingContent:
           - text: aka.ms/BCTelemetry
             url: https://aka.ms/BCTelemetry
           - text: aka.ms/BCTelemetrySamples
-            url: https://aka.ms/aka.ms/BCTelemetrySamples
+            url: https://aka.ms/BCTelemetrySamples
           - text: aka.ms/BCTelemetryReport
             url: https://aka.ms/BCTelemetryReport
           - text: aka.ms/BCTelemetry-ISV-App
             url: https://aka.ms/BCTelemetry-ISV-App
+
+  - title: Power Platform
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCAutomate
+            url: https://aka.ms/BCAutomate
+          - text: aka.ms/BCVirtualTables
+            url: https://aka.ms/BCVirtualTables
+          - text: aka.ms/BCPBI
+            url: https://aka.ms/BCPBI
+          - text: aka.ms/BCPowerConnector
+            url: https://aka.ms/BCPowerConnector
+
+  - title: Client and user experience
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCPApps
+            url: https://aka.ms/BCPApps
+          - text: aka.ms/Bcpwa
+            url: https://aka.ms/Bcpwa
+          - text: aka.ms/BCConnectivity
+            url: https://aka.ms/BCConnectivity
+          - text: aka.ms/BCActionbar
+            url: https://aka.ms/BCActionbar
+          - text: aka.ms/Bcwincli
+            url: https://aka.ms/Bcwincli
+
+  - title: Reporting and Business intelligence 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCReporting
+            url: https://aka.ms/BCReporting
+          - text: aka.ms/BCExcelSamples
+            url: https://aka.ms/BCExcelSamples
+          - text: aka.ms/BCPBI
+            url: https://aka.ms/BCPBI
+
