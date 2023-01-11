@@ -27,7 +27,7 @@ You can potentially increase performance if fields that are used in FlowFields a
 > Be aware that this rule can, in some cases, cause false warnings even though you have addressed any performance issues by adding SIFT indices. The rule will be fixed in a future release. 
 
 When there are performance issues on List pages, the root cause is often that they display FlowFields defined on top of tables that are inadequately indexed - these are typically missing SIFT indices. 
-As any FlowField potentially can be shown on a page, make sure that they are all adequately indexed.
+As any FlowField potentially can be shown on a page, make sure that they're all adequately indexed.
 
 ## Bad code example
 ```AL
