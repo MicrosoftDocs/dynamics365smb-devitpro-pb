@@ -101,7 +101,7 @@ landingContent:
             url: https://aka.ms/BCProtocol
 
 
-  - title: Developing apps for AppSource
+  - title: Developing apps for AppSource and PTE's
     linkLists:
       - linkListType: overview
         links:
@@ -115,11 +115,6 @@ landingContent:
             url: https://aka.ms/AL-Go-AppSource
           - text: aka.ms/businesscentrallocapps
             url: https://aka.ms/businesscentrallocapps
-
-  - title: Developing customer specific solutions
-    linkLists: 
-      - linkListType: overview 
-        links:
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
 
