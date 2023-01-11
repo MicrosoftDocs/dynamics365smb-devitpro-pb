@@ -65,7 +65,7 @@ The following examples are meant for illustration purposes of the usage of the `
 
 ## Example 1
 
-This example shows how to use the `FindSet` method to loop through a set without updating it, but running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
+This example shows how to use the `FindSet` method to loop through a set without updating it, only running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
 
 ```al
     procedure Example_1()
@@ -75,7 +75,7 @@ This example shows how to use the `FindSet` method to loop through a set without
     begin
         CompanyInformation.Get();
         Customer.SetFilter("Country/Region Code", '<>%1', CompanyInformation."Country/Region Code");
-        if Customer.FindSet() then
+        if Customer.FindSet(false) then
             repeat
                 Customer.VATRegistrationValidation();
             until Customer.Next() = 0;
