@@ -66,7 +66,7 @@ landingContent:
           - text: aka.ms/BCCountries
             url: https://aka.ms/BCCountries    
 
-    - title: Go to market
+  - title: Go to market
     linkLists:
       - linkListType: overview
         links: 
@@ -116,8 +116,9 @@ landingContent:
           - text: aka.ms/businesscentrallocapps
             url: https://aka.ms/businesscentrallocapps
 
-    - title: Developing customer specific solutions 
-      - LinkListType: overview 
+  - title: Developing customer specific solutions
+    linkLists: 
+      - linkListType: overview 
         links:
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
