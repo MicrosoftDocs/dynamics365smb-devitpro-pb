@@ -12,16 +12,18 @@ ms.custom: bap-template #Required; don't change.
 
 # Code Analysis Performance Configuration
 
-This article gives an overview of the tools and configuration options which are offered to ensure that the code analysis tool performs adequately on different project sizes and machine configurations. This
-includes controlling the scope of the code analysis tool during live editing and troubleshooting tips to identify and suppress specific long-running rules.
+This article gives an overview of the tools and configuration options which are offered to ensure that the code analysis tool performs adequately on different workspace sizes and machine configurations. This
+includes controlling the scope of the code analysis tool during live editing and troubleshooting tips to identify and suppress long-running code analysis rules.
 
 ## Background Code Analysis - Scope
 
 When editing a project with code analysis enabled, the default behavior is that code analysis will run in the background. That is, every change will trigger a re-calculation of the code analysis diagnostics. The analysis may run in the scope of the currently active file or the entire open project. The default scope of the analysis is determined by the extension based on the size of the workspace. For smaller projects, analysis will be performed on the entire active project and its dependent projects. When a larger workspace is detected by the extension, it will by default perform analysis only on the active file. This ensures that the analysis can run interactively irregardless of the size of the project. The downside is that code analysis diagnostics will not be displayed for files which are not focused in the editor.
 
-The scope of the code analysis can be overriden through the `backgroundCodeAnalysis` setting. Its default value is `File`, which corresponds to the behavior described in the previous paragraph. The `Project` forces analysis to be performed on the entire project, with a significant performance penalty. For this reason it is advised only for high-performance machines. The `None` option turns off background analysis entirely, so that it will only run during a full build.
+The scope of the code analysis can be overriden through the `backgroundCodeAnalysis` setting. Its default value is `File`, which corresponds to the behavior described in the previous paragraph. The `Project` value forces analysis to be performed on the entire project, with a significant performance penalty. For this reason it is advised only for high-performance machines. The `None` option turns off background analysis entirely, so that it will only run during a full build.
 
-## Troubleshooting Long-Running Analysis Rules
+It is possible to override the scope for a user or a specific workspace by using the appropriate settings file and not specifying the scope explicitly on the project settings.
+
+## Troubleshooting Long-Running Code Analysis Rules
 
 It is possible to get statistics for the run-time of individual code analysis rules, with the intent of turning them off selectively if they are long-running on a specific project.This can be useful in the case where the default code analysis scope is not performant enough or when it is a requirement to run code analysis for an entire project. By enabling the setting `outputAnalyzerStatistics`, a detailed overview
 of the run-time of each analysis rule and its corresponding diagnostics will be printed to the output. The output will be similar to the snippet below, where the total time and percentage of time spent by each rule is displayed in the appropriate column.
