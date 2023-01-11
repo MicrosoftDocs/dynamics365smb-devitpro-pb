@@ -1,7 +1,7 @@
 ---
 title: Code Analysis Performance Configuration
 description: Guidance on troubleshooting and optimizing code analysis performance.
-author:  BazookaMusic. 
+author:  BazookaMusic 
 ms.author: sodragon #Required; your Microsoft alias; optional team alias. 
 ms.reviewer: solsen #Required; Microsoft alias of content publishing team member.
 ms.service: dynamics365-business-central
@@ -48,5 +48,5 @@ The next step is to access the settings and configure your projects to achieve s
 
 [Using the Code Analysis Tools](devenv-using-code-analysis-tool.md)  
 [Using the Code Analysis Tools with the ruleset](devenv-using-code-analysis-tool-with-rule-set.md)
-[Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
+[Ruleset for the Code Analysis Tool](devenv-rule-set-syntax-for-code-analysis-tools.md)
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)
