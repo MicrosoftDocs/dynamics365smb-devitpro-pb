@@ -177,7 +177,20 @@ landingContent:
             url: https://aka.ms/BCVirtualTables
           - text: aka.ms/BCPBI
             url: https://aka.ms/BCPBI
-          - text: aka.ms/BCTelemetryReport
-            url: https://aka.ms/BCTelemetryReport
-          - text: aka.ms/BCTelemetry-ISV-App
-            url: https://aka.ms/BCTelemetry-ISV-App
+          - text: aka.ms/BCPowerConnector
+            url: https://aka.ms/BCPowerConnector
+
+  - title: Client and user experience
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCPApps
+            url: https://aka.ms/BCPApps
+          - text: aka.ms/Bcpwa
+            url: https://aka.ms/Bcpwa
+          - text: aka.ms/BCConnectivity
+            url: https://aka.ms/BCConnectivity
+          - text: aka.ms/BCActionbar
+            url: https://aka.ms/BCActionbar
+          - text: aka.ms/Bcwincli
+            url: https://aka.ms/Bcwincli
