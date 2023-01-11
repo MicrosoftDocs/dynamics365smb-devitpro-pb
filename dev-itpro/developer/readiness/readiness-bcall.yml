@@ -194,3 +194,15 @@ landingContent:
             url: https://aka.ms/BCActionbar
           - text: aka.ms/Bcwincli
             url: https://aka.ms/Bcwincli
+
+  - title: Reporting and Business intelligence 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCReporting
+            url: https://aka.ms/BCReporting
+          - text: aka.ms/BCExcelSamples
+            url: https://aka.ms/BCExcelSamples
+          - text: aka.ms/BCPBI
+            url: https://aka.ms/BCPBI
+
