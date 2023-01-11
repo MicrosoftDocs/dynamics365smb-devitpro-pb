@@ -143,6 +143,15 @@ landingContent:
           - text: aka.ms/BCKeys
             url: https://aka.ms/BCKeys
 
+  - title: Migration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCMigrations
+            url: https://aka.ms/BCMigrations
+          - text: aka.ms/BCAndGP
+            url: https://aka.ms/BCAndGP
+
   - title: Telemetry and performance
     linkLists:
       - linkListType: overview
@@ -152,7 +161,22 @@ landingContent:
           - text: aka.ms/BCTelemetry
             url: https://aka.ms/BCTelemetry
           - text: aka.ms/BCTelemetrySamples
-            url: https://aka.ms/aka.ms/BCTelemetrySamples
+            url: https://aka.ms/BCTelemetrySamples
+          - text: aka.ms/BCTelemetryReport
+            url: https://aka.ms/BCTelemetryReport
+          - text: aka.ms/BCTelemetry-ISV-App
+            url: https://aka.ms/BCTelemetry-ISV-App
+
+  - title: Power Platform
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCAutomate
+            url: https://aka.ms/BCAutomate
+          - text: aka.ms/BCVirtualTables
+            url: https://aka.ms/BCVirtualTables
+          - text: aka.ms/BCPBI
+            url: https://aka.ms/BCPBI
           - text: aka.ms/BCTelemetryReport
             url: https://aka.ms/BCTelemetryReport
           - text: aka.ms/BCTelemetry-ISV-App
