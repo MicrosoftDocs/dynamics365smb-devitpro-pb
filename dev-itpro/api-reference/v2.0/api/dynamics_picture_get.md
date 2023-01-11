@@ -39,9 +39,9 @@ If successful, this method returns a ```200 OK``` response code and a **picture*
 
 **Request**
 
-Here is an example of the request. 
+Here is an example of the request.
 
-**GET Metadata** 
+**GET Metadata**
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(itemId)
@@ -68,16 +68,16 @@ Here is an example of the response.
 **GET Content**
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(itemId)/content
+GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture/pictureContent
 ```
 
 **Response**
 
-Body is the raw image data. 
+Body is the raw image data.
 
 
 ## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[picture](../resources/dynamics_picture.md)    
-[Delete picture](dynamics_picture_Delete.md)    
-[Update picture](dynamics_picture_Update.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)
+[picture](../resources/dynamics_picture.md)
+[Delete picture](dynamics_picture_Delete.md)
+[Update picture](dynamics_picture_Update.md)
