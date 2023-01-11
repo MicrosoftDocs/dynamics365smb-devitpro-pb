@@ -136,7 +136,7 @@ landingContent:
           - text: aka.ms/BCKeys
             url: https://aka.ms/BCKeys
 
-- title: Telemetry and performance
+  - title: Telemetry and performance
     linkLists:
       - linkListType: overview
         links:
