@@ -97,6 +97,10 @@ landingContent:
             url: https://aka.ms/BCProtocol
           - text: aka.ms/businesscentrallocapps
             url: https://aka.ms/businesscentrallocapps
+          - text: aka.ms/ALAppExtensions
+            url: http://aka.ms/ALAppExtensions
+          - text: aka.ms/alguidelines
+            url: http://aka.ms/alguidelines
       - linkListType: how-to-guide
         links:
           - text: aka.ms/AppSourceGo
@@ -109,6 +113,8 @@ landingContent:
             url: https://aka.ms/AL-Go-AppSource
           - text: aka.ms/AL-Go-PTE
             url: https://aka.ms/AL-Go-PTE
+          - text: aka.ms/NewALModule
+            url: https://aka.ms/NewALModule
 
   - title: Customer onboarding and migration
     linkLists:
