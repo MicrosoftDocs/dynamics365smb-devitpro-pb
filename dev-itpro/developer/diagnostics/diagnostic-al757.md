@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL0105"
-description: "Syntax error, identifier expected; '{1}' is a keyword."
+title: "Compiler Error AL0757"
+description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/09/2023
+ms.date: 12/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,16 +13,14 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0105
+# Compiler Error AL0757
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-Syntax error, identifier expected; '{1}' is a keyword.
-## Error message example
-Syntax error, identifier expected; 'true' is a keyword
+The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
