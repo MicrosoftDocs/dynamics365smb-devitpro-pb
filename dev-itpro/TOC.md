@@ -66,8 +66,10 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
+### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 ### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
+### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
+
 ### Updates for earlier major versions
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
@@ -227,6 +229,7 @@
 #### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page View Telemetry](administration/telemetry-page-view-trace.md)
 #### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
+#### [Permission Dependency Cycle Telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
 #### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
 #### [Profile Configuration Telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
 #### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
@@ -665,6 +668,7 @@
 ###### [Designing Card Pages](developer/devenv-designing-card-pages.md)
 ###### [Sample Card Page](developer/devenv-simple-card-page-example.md)
 ###### [Adding Teaching Tips to Card Pages](administration/onboarding-teaching-tips-tours.md)
+##### [Assisted Setup Guides](developer/devenv-designing-navigate-pages.md)
 ##### Page Parts
 ###### [Parts Overview](developer/devenv-designing-parts.md)
 ###### [Designing List Parts](developer/devenv-designing-listparts.md)
@@ -1046,7 +1050,9 @@
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
+#### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)
 #### [Checking Customization Issues](/dynamics365/business-central/ui-personalization-manage)
+#### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)
 #### [Verifying User Permissions](/dynamics365/business-central/ui-define-granular-permissions)
 #### [Investigating Mobile App (On-Premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
@@ -1105,6 +1111,7 @@
 <!-- integration-->
 # Integration
 <!-- web service -->
+## [Refactor Integration Management](developer/devenv-integration-record-refactoring.md)
 ## Web Services
 ### [Web Services Overview](webservices/web-services.md)
 ### [Terms of Use for Web Services](webservices/webservices-terms-of-use.md)
@@ -1272,6 +1279,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central On-Premises Updates
+#### [2022 Release Wave 2 On-Premises Updates](deployment/update-versions-21.md)
 #### [2022 Release Wave 1 On-Premises Updates](deployment/update-versions-20.md)
 #### [2021 Release Wave 2 On-Premises Updates](deployment/update-versions-19.md)
 #### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)

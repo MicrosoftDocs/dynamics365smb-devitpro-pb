@@ -113,7 +113,7 @@ For the base application or system application extensions, you'll have to create
     - Set `"platform"` to `19.0.0.0`
     - Set `"target"` to `OnPrem`
 
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#appjson-file).
 5. In the **dotnet.al** files in the project, find and delete all instances of `Version = '15.0.0.0';` in **Microsoft.Dynamics.Nav** and  **Microsoft.Dynamics.Framework** assembly declarations.
 
 6. Rewrite code that references the deprecated table to reference the new tables.

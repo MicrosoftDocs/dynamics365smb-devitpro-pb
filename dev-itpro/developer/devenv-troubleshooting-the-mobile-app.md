@@ -1,5 +1,6 @@
 ---
-title: "Troubleshooting the Business Central Mobile App On-Premises"
+title: Troubleshooting the Business Central Mobile App On-Premises
+description: Learn how to fix issues related to the Business Central on-premises mobile app.
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: solsen
