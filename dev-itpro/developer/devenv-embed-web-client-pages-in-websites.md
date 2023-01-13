@@ -100,4 +100,3 @@ In this scenario, [!INCLUDE[prod_short](includes/prod_short.md)] won't load insi
 
 To work around this issue, any custom page that you create to host [!INCLUDE[prod_short](includes/prod_short.md)] in an iframe must authenticate the user in the parent frame, before showing the iframe. There are various solutions to this problem, but the simplest solution is probably to use Microsoft Authentication Library for JavaScript (MSAL.js) for client-side authentication. For more information, see [https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser). For other ways of doing the authentication, refer to [Microsoft identity platform](/azure/active-directory/develop/v2-overview) documentation.
 
-## See Also  
