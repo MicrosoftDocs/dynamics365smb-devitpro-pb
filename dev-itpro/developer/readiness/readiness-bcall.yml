@@ -160,6 +160,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: aka.ms/BCPApps
+            url: https://aka.ms/BCPApps
           - text: aka.ms/BCAutomate
             url: https://aka.ms/BCAutomate
           - text: aka.ms/BCVirtualTables
@@ -173,8 +175,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: aka.ms/BCPApps
-            url: https://aka.ms/BCPApps
           - text: aka.ms/Bcpwa
             url: https://aka.ms/Bcpwa
           - text: aka.ms/BCConnectivity
@@ -183,6 +183,12 @@ landingContent:
             url: https://aka.ms/BCActionbar
           - text: aka.ms/Bcwincli
             url: https://aka.ms/Bcwincli
+          - text: aka.ms/BCMobileApp
+            url: https://aka.ms/bcmobileapp
+          - text: aka.ms/InstallApp
+            url: https://aka.ms/InstallApp
+          - text: aka.ms/BCProtocol
+            url: https://aka.ms/bcprotocol
 
   - title: Reporting and Business intelligence 
     linkLists:
