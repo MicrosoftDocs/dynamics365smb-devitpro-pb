@@ -7,23 +7,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 04/01/2021
+ms.date: 01/13/2023
 ms.author: jswymer
 ---
 
 # Restoring an Environment in the Admin Center
 
-**APPLIES TO:** Business Central 2020 release wave 2, update 17.3, and later
-
-> [!IMPORTANT]
-> This feature is in preview. It might change or be removed in the future updates.
-
 As an administrator, you can restore an existing environment from a time in the past, within the retention period that applies to both production and sandbox environments.  
 
 Database backups are an essential part of any business continuity and disaster recovery strategy, because they protect your data from corruption or deletion. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online uses Azure SQL Database as the underlying database backup technology for its environments. All databases are protected by automated backups that are continuously created and maintained by the Azure SQL service. For more information, see [Databases and backups](../service-overview.md#databases-and-backups).  
-
-> [!NOTE]
-> An environment can only be restored within the same [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version (minor and major).
 
 ## Users who can restore environments
 
@@ -40,16 +32,16 @@ For more information about permissions sets and user groups, see [Assign Permiss
 
 - Environments can only be restored if the customer has a paid [!INCLUDE[prod_short](../developer/includes/prod_short.md)] subscription.
 - Each environment can be restored up to 10 times in a calendar month.
-- It's not possible to use the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] administration center to restore an environment that was previously deleted.
-
-    If you end up in the situation where you need to restore a deleted environment, contact Microsoft Support for help. In such cases, Microsoft doesn't guarantee a restore operation will succeed or all data and extensions will be available in the restored database. So before you decide to delete an environment, it's important to ensure that the environment is no longer needed.
 - An environment can only be restored within the same Azure region and country ([!INCLUDE[prod_short](../developer/includes/prod_short.md)] localization) as the original environment.
 - A production environment can be restored to an environment of type **Production** or **Sandbox**. A sandbox environment can only be restored to a **Sandbox** environment.
 - When restoring a sandbox environment, all development extensions (that is, extensions published directly from Visual Studio Code) won't be available in the restored environment&mdash;even if they were present at the point-in-time you're restoring to). Additionally, any per-tenant extensions that depend on such development extensions will also not be available.
 - Per-tenant extensions you may have uploaded that target the **next** version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] won't be available in the restored environment&mdash;even if they were uploaded at the point-in-time you're restoring to. Per-tenant extensions that were already installed will be available in the restored environment.
-- Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to.
+- Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to. The environment will be restored to the major/minor version it was on at the time you are restoring to.
 - Azure Active Directory app registration, status, and permissions in the environment will be restored to their state at the time you are restoring to. Apps that were authorized in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will not be restored even if their permissions in the restored environment are.
 - The update window and application insights connection string that are specified for the source environment in the admin center at the time when the restore operation started will be retained on the target environment. The target environment will not be restored to the values for these settings that existed on the source environment at the time that the source environment is being restored to.  
+
+## Environment cleanup
+When you restore an environment, the following environment setups and integration data are cleaned up to avoid unexpected behavior with external integrations. You can skip this cleanup by ticking the box under **Advanced Options** in the Admin Center.
 
 [!INCLUDE [create copy-restore-cleanup-operations](../developer/includes/copy-restore-cleanup-operations.md)]
 
@@ -77,17 +69,20 @@ To restore an environment, you'll have to provide a name for the environment and
 
 1. Select **Environments** and then open the environment you want to restore.
 2. Select **Restore**.
-3. In the **Restore Environment** pane, specify the date and time in the past to which you want to restore the environment.  
+3. In the **Restore Environment** pane, specify the date and time in the past to which you want to restore the environment. A note will indicate to what version your environment will be restored if your environment has been updated since the time you are restoring to.
 4. Select the type to be used for the restored environment.
 5. Specify a name for the restored environment.
 6. Select **Restore**.
 
-    If there's no backup available for date and time you chose, select the available nearest backup, when prompted. This situation can occur, for example, if the environment was being updated to a new minor or major version during the specified time.  
-
     > [!NOTE]
     > For newly created environments it may take up to 30 min for the backups to be initialized, so you may not be able to restore an environment if you have just created it. 
 
-7. When the process starts, you can go to the list of your environments and see the status of the restored environment. At first, you'll see the new environment with state **Preparing**. The original environment state remains as **Active**. 
+7. Under **Advanced Options**, select whether you want to uninstall per-tenant extensions, third-party AppSource apps, or skip environment cleanup as part of this restore.
+
+    > [!NOTE]
+    > In some cases, extension compilation issues may prevent you from restoring your environment. If you don't need installed extensions to be restored, you can uninstall them as part of the environment restore to avoid compilation errors. By default, we disable environment setups and clean up integration data listed above under **Considerations and limitations**. By skipping environment cleanup you can override this default behavior.
+
+8. When the process starts, you can go to the list of your environments and see the status of the restored environment. At first, you'll see the new environment with state **Preparing**. The original environment state remains as **Active**. 
 
     The restore operation duration is affected by several factors. For large or highly active databases, the restore might take several hours. You can find more details about the factors that affect the recovery time at [Recovery time](/azure/azure-sql/database/recovery-using-backups#recovery-time).  
 
