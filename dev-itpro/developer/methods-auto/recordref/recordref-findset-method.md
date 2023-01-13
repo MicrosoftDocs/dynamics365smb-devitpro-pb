@@ -59,7 +59,7 @@ This method works the same way as the [FindSet Method (Record)](../record/record
 
 ## Example
 
-The following example opens table 18 **Customer** as a RecordRef variable that is named `MyRecordRef`. The [Field Method)](recordref-field-method.md) creates a FieldRef variable that is named `MyFieldRef` with the first field \(No.\). The [SetFilter Method](../fieldref/fieldref-setfilter-method.md) uses the `MyFieldRef` variable to set a filter that selects records from 30000 to 32000. `MyRecordRef.Field(2)` creates a FieldRef for the second field \(Name\). The `FindSet` method finds the set of records based on the key and the filters that have been set. The *ForUpdate* parameters and *UpdateKeys* are both set to **False**. This makes the records in the set read-only. The record ID and name of each customer in the record set is displayed in a message box until no records are left in the record set. 
+The following example opens table 18 **Customer** as a RecordRef variable that is named `MyRecordRef`. The [Field Method)](recordref-field-method.md) creates a FieldRef variable that is named `MyFieldRef` with the first field \(No.\). The [SetFilter Method](../fieldref/fieldref-setfilter-method.md) uses the `MyFieldRef` variable to set a filter that selects records from 30000 to 32000. `MyRecordRef.Field(2)` creates a FieldRef for the second field \(Name\). The `FindSet` method finds the set of records based on the key and the filters that have been set. The *ForUpdate* parameter is set to **False**. This makes the records in the set read-only. The record ID and name of each customer in the record set is displayed in a message box until no records are left in the record set. 
   
 ```al
 var
