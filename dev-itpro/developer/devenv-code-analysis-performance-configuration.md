@@ -25,8 +25,7 @@ It's possible to override the scope for a user or a specific workspace by using 
 
 ## Troubleshooting long-running code analysis rules
 
-It's possible to get statistics for the runtime of individual code analysis rules, with the intent of switching them off selectively if they're long-running on a specific project. Switching it off can be useful in the case where the default code analysis scope isn't performant enough or when it's a requirement to run code analysis for an entire project. By enabling the setting `outputAnalyzerStatistics`, a detailed overview
-of the runtime of each analysis rule and its corresponding diagnostics will be printed to the output. The output will be similar to the snippet shown in this section, where the total time and percentage of time spent by each rule is displayed in the appropriate column.
+It's possible to get statistics for the runtime of individual code analysis rules, with the intent of switching them off selectively if they're long-running on a specific project. Switching it off can be useful in the case where the default code analysis scope isn't performant enough or when it's a requirement to run code analysis for an entire project. By enabling the setting `outputAnalyzerStatistics`, a detailed overview of the runtime of each analysis rule and its corresponding diagnostics will be printed to the output. The output will be similar to the snippet shown in this section, where the total time and percentage of time spent by each rule is displayed in the appropriate column.
 
 ```
 Time (s)    %   Analyzer (Related Diagnostics)
