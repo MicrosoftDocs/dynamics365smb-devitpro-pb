@@ -431,6 +431,7 @@
 ### Code Analysis
 #### [The Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
+#### [Code analysis performance configuration](developer/devenv-code-analysis-performance-configuration.md)
 #### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
 #### [AppSourceCop Analyzer Rules](developer/analyzers/appsourcecop.md)

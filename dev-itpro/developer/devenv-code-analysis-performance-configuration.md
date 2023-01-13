@@ -1,23 +1,22 @@
 ---
 title: Code analysis performance configuration
-description: Guidance on troubleshooting and optimizing code analysis performance.
+description: Guidance on troubleshooting and optimizing code analysis performance in AL for Business Central.
 author:  BazookaMusic 
-ms.author: sodragon #Required; your Microsoft alias; optional team alias. 
-ms.reviewer: solsen #Required; Microsoft alias of content publishing team member.
+ms.author: sodragon
+ms.reviewer: solsen
 ms.service: dynamics365-business-central
-ms.topic: conceptual #Required; don't change. 
-ms.date: 01/09/2023 #Required; mm/dd/yyyy format.
-ms.custom: bap-template #Required; don't change.
+ms.topic: conceptual
+ms.date: 01/09/2023
+ms.custom: bap-template
 ---
 
 # Code analysis performance configuration
 
-This article gives an overview of the tools and configuration options, which are offered to ensure that the code analysis tool performs adequately on different workspace sizes and machine configurations. This
-includes controlling the scope of the code analysis tool during live editing and troubleshooting tips to identify and suppress long-running code analysis rules.
+This article gives an overview of the tools and configuration options, which are offered to ensure that the code analysis tool performs adequately on different workspace sizes and machine configurations. This includes controlling the scope of the code analysis tool during live editing and troubleshooting tips to identify and suppress long-running code analysis rules.
 
 ## Background code analysis - scope
 
-When you edit a project with code analysis enabled, the default behavior is that code analysis will run in the background. That is, every change will trigger a recalculation of the code analysis diagnostics. The analysis may run in the scope of the currently active file or the entire open project. The default scope of the analysis is determined by the extension based on the size of the workspace. For smaller projects, analysis will be performed on the entire active project and its dependent projects. When a larger workspace is detected by the extension, it will by default perform analysis only on the active file. This ensures that the analysis can run interactively regardless of the size of the project. The downside is that code analysis diagnostics won't be displayed for files, which aren't focused in the editor.
+When you edit a project with code analysis enabled, the default behavior is that code analysis will run in the background. This means that, every change will trigger a recalculation of the code analysis diagnostics. The analysis may run in the scope of the currently active file or the entire open project. The default scope of the analysis is determined by the extension based on the size of the workspace. For smaller projects, analysis will be performed on the entire active project and its dependent projects. When a larger workspace is detected by the extension, it will by default perform analysis only on the active file. This ensures that the analysis can run interactively regardless of the size of the project. The downside is that code analysis diagnostics won't be displayed for files, which aren't focused in the editor.
 
 The scope of the code analysis can be overridden through the `backgroundCodeAnalysis` setting. Its default value is `File`, which corresponds to the behavior described in the previous paragraph. The `Project` value forces analysis to be performed on the entire project, with a significant performance penalty. For this reason, it's advised only for high-performance machines. The `None` option turns off background analysis entirely, so that it will only run during a full build.
 
