@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 12/05/2022
+ms.date: 12/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -625,7 +625,6 @@ author: SusanneWindfeldPedersen
 |[AL0744](diagnostic-al744.md)|The property '{0}' is not valid for action '{1}' defined in a report request page.|Error|
 |[AL0745](diagnostic-al745.md)|The property '{0}' is not valid for action '{1}' defined in a report request page.|Warning (Future Error)|
 |[AL0746](diagnostic-al746.md)|The auto-increment field '{0}' has already been defined for table '{1}'.|Error|
-|[AL0747](diagnostic-al747.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Warning|
 |[AL0748](diagnostic-al748.md)|The return type '{0}' of the {1} method '{2}' has 'Internal' accessibility. The return value will not be usable outside of this module without an implicit conversion.|Warning|
 |[AL0749](diagnostic-al749.md)|The type '{0}' of the parameter '{1}' of the {2} method '{3}' has 'Internal' accessibility. The method will not be callable outside of this module without an implicit conversion.|Warning|
 |[AL0750](diagnostic-al750.md)|Enum values can't be nested. Use '{0}' instead.|Error|
@@ -635,6 +634,8 @@ author: SusanneWindfeldPedersen
 |[AL0754](diagnostic-al754.md)|The '{0}' already defines a method called '{1}'.|Error|
 |[AL0755](diagnostic-al755.md)|The '{0}' already defines a method called '{1}'.|Warning (Future Error)|
 |[AL0756](diagnostic-al756.md)|The division by Abs(integer) will change its behavior in release version 11. For more information visit the official documentation.|Warning|
+|[AL0757](diagnostic-al757.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Error|
+|[AL0758](diagnostic-al758.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Warning (Future Error)|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
