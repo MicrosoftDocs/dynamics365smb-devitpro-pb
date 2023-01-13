@@ -162,7 +162,7 @@ Partial records are automatically applied based on the page’s metadata for Lis
 To extend which fields will be loaded, you can use the same approach as with OData pages.
 
 > [!NOTE]
-> OnFindRecord or OnNextRecord triggers conflicts with partial record feature hence if any of this trigger is defined in the metadata, partial record feature will not be applied and fall back to standard loading behavior.
+> OnFindRecord and OnNextRecord triggers conflict with partial record feature, so if either of these triggers is defined in the metadata, the partial record feature won't be applied and it fall back to standard loading behavior.
 
 ### Table relation-based lookups
 
