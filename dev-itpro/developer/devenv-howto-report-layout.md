@@ -3,7 +3,7 @@ title: "Creating a Word Layout Report"
 description: "Describes the steps involved in creating a report that uses a Word layout."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 05/28/2021
+ms.date: 01/11/2023
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -11,9 +11,9 @@ ms.author: solsen
 
 # Creating a Word Layout Report
 
-When you create a new report, there are two tasks main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md) and [Report Extension Object](devenv-report-ext-object.md).
+When you create a new report, there are two main tasks. First, you define the report dataset of data items and columns. Then, you design the report layout. These steps will show how to create a report based on a Word layout. For more information about the report object, see [Report Object](devenv-report-object.md) and [Report Extension Object](devenv-report-ext-object.md).
 
-Later in this topic you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
+Later in this article you can read more how to enable multiple report layouts. For more information, see [Enabling the Microsoft Word rendering engine](devenv-howto-report-layout.md#enabling-the-microsoft-word-rendering-engine).
 
 ## Create a Word layout report
 
@@ -87,7 +87,7 @@ You'll now see the generated report in preview mode.
 
 [!INCLUDE [2022_releasewave1](../includes/2022_releasewave1.md)]
 
-The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in Business Central will switch the Microsoft Word report rendering to the new platform rendering which supports multiple layouts and new triggers for **Save** and **Download** actions.
+The rendering of Word reports is controlled by an application feature key. Enabling the key `RenderWordReportsInPlatform` in the **Feature Management** page in Business Central will switch the Microsoft Word report rendering to the new platform rendering, which supports multiple layouts and new triggers for **Save** and **Download** actions.
 
 <!-- 
 For more information about the custom render, see [Developing a Custom Report Render](devenv-report-custom-render.md).-->
