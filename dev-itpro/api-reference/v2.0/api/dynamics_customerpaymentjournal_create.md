@@ -50,9 +50,7 @@ Content-type: application/json
     "id": "dc1b6a90-44e3-ea11-bb43-000d3a2feca1",
     "code": "GENERAL",
     "displayName": "GENERAL",
-    "lastModifiedDateTime": "2020-08-21T00:24:35.687Z",
-    "balancingAccountId": "00000000-0000-0000-0000-000000000000",
-    "balancingAccountNumber": "10100"
+    "balancingAccountId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 

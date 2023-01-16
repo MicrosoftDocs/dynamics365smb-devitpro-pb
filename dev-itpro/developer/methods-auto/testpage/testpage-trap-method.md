@@ -33,9 +33,32 @@ An instance of the [TestPage](testpage-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
-Only non-modal pages can be trapped.
+
+Only non-modal pages can be trapped. To trap modal pages that you invoke with the RunModal method or the [Page.RunModal() Method](../page/page-runmodal--method.md), you must use the ModalPageHandler method. For more information, see [Create Handler Methods](../../devenv-creating-handler-methods.md).
+
+## Example
+
+This example shows how to use the `Trap` method to trap a call to open a test page so that the opened page is assigned to a variable.
+
+```al
+local procedure TrapPage()
+
+    begin
+        CustomerCard.OpenEdit;
+        CustomerStatistics.Trap(); // Next page invoked will be trapped and assigned to the CustomerStatistics variable  
+        CustomerCard."Customer/Item Statistics".Invoke(); // Invokes an action from the Customer Card page   
+        CustomerStatistics."Balance (LCY)".AssertEquals(0); // Now that the CustomerStatistics test page is open, use the variable to test the page
+
+    end;
+
+    var
+        CustomerCard: TestPage "Customer Card";
+        CustomerStatistics: TestPage "Customer Statistics";
+
+```
 
 ## See Also
+
 [TestPage Data Type](testpage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

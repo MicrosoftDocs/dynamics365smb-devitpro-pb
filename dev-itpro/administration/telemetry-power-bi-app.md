@@ -5,7 +5,7 @@ author: jswymer
 ms.reviewer: jswymer
 ms.topic: how-to
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 11/28/2022
+ms.date: 12/20/2022
 ms.author: jswymer
 ms.custom: bac-template
 ms.service: dynamics365-business-central
@@ -13,17 +13,79 @@ ms.service: dynamics365-business-central
 
 # Analyze and Monitor Telemetry with Power BI
 
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft Appsource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
-Each app consists of four reports: 
+## About the reports in the app 
+
+The app consists of four reports: 
 - Usage
 - Errors
 - Performance 
 - Administration
 
-## Get the apps
+### The usage report
+
+The usage report provides a multi-perspective view into how Business central is being used. The report can have data from in one or more environments or apps (depending on how you fill in the parameters and how you've partitioned the Azure Application Insights resource). 
+
+What do the pages in the report show?
+
+- Sessions: See how sessions are distributed over a timeline, weekday, and time of day  
+- Clients: See which types of clients and browsers that users use  
+- Locations: See where users sign in from and which languages they use in the client  
+- Page views: See which pages users use and when  
+- Reports: See which reports users use and when  
+- Feature usage: See which features users use and when  
+- Integrations and Connectors: See the activity on system integrations (web service calls)  
+- Deprecated features: check if online environments are using deprecated features such as basic authentication and need to migrate to better solutions  
+
+### Error report
+
+The error report provides a multi-perspective view into errors occurring in one or more environments or apps (depending on how you fill in the parameters and how you've partitioned the Azure Application Insights resource). The report is a supplement to the Jupyter notebook trouble shooting guides (TSGs). Use the report to investigate/slice'n'dice the data and the notebook to follow a prescribed path.
+
+What do the pages in the report show?
+
+- User errors: When users get error dialogs, it can be a symptom of missing knowledge about the system, or that some features aren't set up the way they're supposed to  
+- Integrations errors: External systems communicate with Business Central using web services. Failures in this area means that some of the integrations are probably not working correctly  
+- System errors: Some Business Central modules or code might be misconfigured. Failures here indicate the system isn't set up correctly.  
+
+### Performance report
+
+The performance report provides a multi-perspective view into the performance of one or more environments or apps (depending on how you fill in the parameters and how you've partitioned the Azure Application Insights resource). The report is a supplement to the Jupyter notebook trouble shooting guides (TSGs). Use the report to investigate/slice'n'dice the data and the notebook to follow a prescribed path.
+
+What do the pages in the report show?
+
+- Sessions: Statistics on sessions that were started, client types (UI clients, background, or web service), and user types (normal, admin, or guest)  
+- OnCompanyOpen: Timings of the OnCompanyOpen trigger (is run every time a session is created). Can show if expensive code was added here  
+- Page views: Timings of pages visited by users, client type that ran them (modern client or desktop), and browsers used  
+- Reports: Timings of reports, client type that ran them (UI clients or background), and reporting engine used (Word, RDLC, or processing only)  
+- Long Running SQL Queries: Insights into SQL queries that ran longer than 750 milliseconds, the extensions and codeunits that called the database, and corresponding AL call stacks  
+- Database lock timeouts: Insights into SQL queries that waited for a lock longer than 15 seconds, the extensions and codeunits that called the database, and corresponding AL call stacks  
+- Long Running AL methods: Insights into AL methods that ran longer than 10,000 milliseconds, the extensions and codeunits they belong to, and corresponding AL call stacks  
+- Incoming webservice calls/Outgoing webservice calls: Timings of incoming/outgoing web service calls and their type (SOAP, OData, or API), http status codes, and the codeunit they expose  
+- Job Queue/Task scheduler: Timings of background jobs/tasks  
+- Configuration packages: Timings of configuration package operations  
+- App Updates: Timings of how long time updates of installed apps take  
+
+### Administration report
+
+The Administration report provides a multi-perspective view into the current state of Business central environments and any change done to them.
+
+What do the pages in the report show?
+
+- Inventory: See an inventory of environments and their current version  
+- Update Planning: See an overview of environment versions and their update schedules  
+- All changes: See changes to environments, companies, extensions, and indexes  
+- Environment Changes: See changes to environments (for example, stop/start, rename, copy, delete, update)  
+- Company Changes: See changes to companies (for example, create, rename, and delete)  
+- Extension Changes: See changes to extensions (for example, install, update, and uninstall)  
+- Index Changes: See changes to indexes (keys) (added, removed)  
+- Field Changes: See changes to fields that are tracked in the field monitoring feature. Consider monitoring Business Central configuration tables to have that data show up here  
+- Retention Policy: See date deleted due to retention policies set up in Business Central  
+
+## Get the apps 
 
 ### App on Environment Telemetry
+
 To install or update the app for _environment telemetry_, go to [https://aka.ms/bctelemetryreport](https://aka.ms/bctelemetryreport) and select **Get it now**.
 
 You'll first have to sign in to Microsoft AppSource using your Power BI account name and password, if you aren't already signed in. Follow the online instructions to get the app installed in Power BI.
@@ -97,13 +159,13 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 
    Apart from required parameters, you can also control the following options:
 
-   - Azure Active Directory (Azure AD) tenant mapping (define which customer names correspond to which Azure AD tenant IDs). The format for this parameter is _{"map":[{ "AAD tenant id":"005bbe22-5949-4acb-9d24-3fb396c64a52" , "Domain":"Contoso 1" },{ "AAD tenant id":"0140d8e7-ef60-4cc3-9a6b-b89042b3ea1f" , "Domain":"Contoso 2"}]}_
+   - Azure Active Directory (Azure AD) tenant mapping (define which customer names correspond to which Azure AD tenant IDs). The format for this parameter is `{"map":[{ "AAD tenant id":"005bbe22-5949-4acb-9d24-3fb396c64a52" , "Domain":"Contoso 1" },{ "AAD tenant id":"0140d8e7-ef60-4cc3-9a6b-b89042b3ea1f" , "Domain":"Contoso 2"}]}`
    - Timezone (the Business Central platform emits telemetry in the UTC time zone. By setting a Timezone, all visuals that show telemetry by hour of day will adjust to show data in the configured time zone).
-   - If the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
+   - Whether the app should refresh data (the default is every night around midnight); this option is hidden under **Advanced**.
 
    For the environment app, you can also define:
 
-   - an include list of environments so that only data for these environments is loaded. The format for this parameter is _{"include":[{"AAD tenant id":"<aad tenant id 1>","Name":"<environment name 1>"}, {"AAD tenant id":"<aad tenant id 2>","Name":"<environment name 2>"}]}_
+   - an include list of environments so that only data for these environments is loaded. The format for this parameter is `{"include":[{"AAD tenant id":"<aad tenant id 1>","Name":"<environment name 1>"}, {"AAD tenant id":"<aad tenant id 2>","Name":"<environment name 2>"}]}`
 
 4. When done making changes, you have to refresh the dataset to update the data shown in the app.
 
@@ -151,7 +213,7 @@ In the following table, you'll find examples of scenarios for each persona where
 | Project manager | We want a smooth go-live for the customer. | Use the Error dashboard in the Error report to drive errors to zero before go-live. Monitor the dashboard in the first weeks after go-live. Consider sharing the app with the customer so status meetings and follow-ups can be based on data. |
 | Project manager | Business Central online only: We want to check if the customer will get broken integrations when they get updated to version 20.0 or 21.0 | Look at the _Deprecated features_ page in the Usage report to see if the customer is still using web service keys (basic auth) for integrations. If you see any data here, work with the customer on a mitigation plan to move integrations to OAuth.|
 | Supporter | Customer calls and says that "something changed since Friday of last week." | Go to the Administration report, find the _All changes_ page and filter to a period in time that overlaps with "Friday of last week." There are various changes that a customer can report, such as data, UI, business logic, performance, stability, and so on. Depending on the reported change, you might get lucky that one of the lifecycle events for environments, extensions, companies, or indexes can explain the root cause of the changed behavior. Otherwise, you can dig further into the issue with the app using KQL queries, or simply by reaching out to the code owner. |
-| Supporter | Customer complains that some users can't sign in. | Go to the Error report and investigate the *Login Errors* page. |
+| Supporter | Customer complains that some users can't sign in. | Go to the Error report and investigate the **Login Errors** page. |
 | Supporter | Customer complains that users get lots of errors when using the system. | Go to the Error report and investigate the _Error Dialogs_, _Permission Errors_, and _Feature Errors_ pages. You can filter pages by Extension Publisher to learn which code path the error is coming from. |
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
 
