@@ -187,6 +187,8 @@ landingContent:
             url: https://aka.ms/InstallApp
           - text: aka.ms/BCProtocol
             url: https://aka.ms/bcprotocol
+          - text: aka.ms/BCgetTeamsApp
+            url: https://aka.ms/BCgetTeamsApp
 
   - title: Reporting and Business intelligence 
     linkLists:
