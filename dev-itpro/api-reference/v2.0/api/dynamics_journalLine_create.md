@@ -49,7 +49,6 @@ Content-type: application/json
 {
     "id": "0a077d18-45e3-ea11-bb43-000d3a2feca1",
     "journalId": "dd1b6a90-44e3-ea11-bb43-000d3a2feca1",
-    "journalDisplayName": "DEFAULT",
     "lineNumber": 10000,
     "accountType": "G/L Account",
     "accountId": "00000000-0000-0000-0000-000000000000",
@@ -59,8 +58,7 @@ Content-type: application/json
     "externalDocumentNumber": "",
     "amount": 0,
     "description": "",
-    "comment": "",
-    "lastModifiedDateTime": "0001-01-01T00:00:00Z"
+    "comment": ""
 }
 ```
 **Response**
