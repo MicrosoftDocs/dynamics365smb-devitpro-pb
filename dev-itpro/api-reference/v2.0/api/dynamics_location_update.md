@@ -52,8 +52,7 @@ Here is an example of the request.
 PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/locations({id})
 Content-type: application/json
 {
-    "id" : ,
-    "code" :
+  "displayName": "Main Whse."
 }
 ```
 <!-- END>EDIT_IS_REQUIRED -->
@@ -66,19 +65,19 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "id" : ,
-    "code" : ,
-    "displayName" : ,
-    "contact" : ,
-    "addressLine1" : ,
-    "addressLine2" : ,
-    "city" : ,
-    "state" : ,
-    "country" : ,
-    "postalCode" : ,
-    "phoneNumber" : ,
-    "email" : ,
-    "website" :
+  "id": "59f029b1-508c-ed11-aada-000d3a298ab3",
+  "code": "MAIN",
+  "displayName": "Main Whse.",
+  "contact": "Eleanor Faulkner",
+  "addressLine1": "UK Campus Bldg 5",
+  "addressLine2": "Thames Valley Park",
+  "city": "Reading",
+  "state": "",
+  "country": "GB",
+  "postalCode": "RG6 1WG",
+  "phoneNumber": "+44-(0)10 5214 4987",
+  "email": "",
+  "website": ""
 }
 ```
 <!-- END>EDIT_IS_REQUIRED-->
