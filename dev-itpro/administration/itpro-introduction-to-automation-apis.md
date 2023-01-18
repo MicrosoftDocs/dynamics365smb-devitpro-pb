@@ -187,11 +187,15 @@ POST https://api.businesscentral.dynamics.com/v2.0/{environment name}/api/micros
 Authorization: Bearer {token}
 Content-type: application/json
 {
-    "schedule":"Current version"
+    "schedule":"Current version",
+    "schemaSyncMode": "Add"
 }
 ```
 > [!NOTE]  
 > Schedule in the body can be "Current version", "Next minor version" or "Next major version".
+
+> [!NOTE]  
+> Schema Sync Mode in the body can be "Add" or "Force Sync".
 
 ### Upload extension file
 
