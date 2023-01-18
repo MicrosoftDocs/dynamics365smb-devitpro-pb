@@ -168,7 +168,7 @@ landingContent:
             url: https://aka.ms/BCPBI
           - text: aka.ms/BCPowerConnector
             url: https://aka.ms/BCPowerConnector
-          - text: aka.ms/bc2dataverse
+          - text: aka.ms/BC2Dataverse
             url: https://aka.ms/bc2dataverse
 
   - title: Client and user experience
@@ -177,8 +177,8 @@ landingContent:
         links:
           - text: aka.ms/BCKeys
             url: https://aka.ms/BCKeys
-          - text: aka.ms/Bcpwa
-            url: https://aka.ms/Bcpwa
+          - text: aka.ms/BCpwa
+            url: https://aka.ms/BCpwa
           - text: aka.ms/BCConnectivity
             url: https://aka.ms/BCConnectivity
           - text: aka.ms/BCActionbar
