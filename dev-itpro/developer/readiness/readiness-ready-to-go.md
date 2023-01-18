@@ -72,6 +72,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
 - Business Central and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
 - Business Central and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
+- [Prototype] Low code sync of Business Central entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
 
 ## Migrating from on-premises to cloud (online)  
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
