@@ -38,8 +38,7 @@ For more information about permissions sets and user groups, see [Assign Permiss
 - Per-tenant extensions you may have uploaded that target the **next** version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] won't be available in the restored environment&mdash;even if they were uploaded at the point-in-time you're restoring to. Per-tenant extensions that were already installed will be available in the restored environment.
 - Every AppSource and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] app in the restored environment will have the latest available hotfix installed automatically&mdash;even if the hotfix was introduced after the point-in-time you're restoring to.  <!-- uncomment when feature is deployed The environment will be restored to the major/minor version it was on at the time you are restoring to.-->
 - Azure Active Directory app registration, status, and permissions in the environment will be restored to their state at the time you are restoring to. Apps that were authorized in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will not be restored even if their permissions in the restored environment are.
-- The update window and application insights connection string that are specified for the source environment in the admin center at the time when the restore operation started will be retained on the target environment. The target environment will not be restored to the values for these settings that existed on the source environment at the time that the source environment is being restored to.  -->
-
+- The update window and application insights connection string that are specified for the source environment in the admin center at the time when the restore operation started will be retained on the target environment. The target environment will not be restored to the values for these settings that existed on the source environment at the time that the source environment is being restored to.
 <!-- uncomment when feature is deployed ## Environment cleanup
 When you restore an environment, the following environment setups and integration data are cleaned up to avoid unexpected behavior with external integrations. You can skip this cleanup by ticking the box under **Advanced Options** in the Admin Center.
 -->
@@ -84,9 +83,9 @@ To restore an environment, you'll have to provide a name for the environment and
 
 8. When the process starts, you can go to the list of your environments and see the status of the restored environment. At first, you'll see the new environment with state **Preparing**. The original environment state remains as **Active**. -->
 
-    The restore operation duration is affected by several factors. For large or highly active databases, the restore might take several hours. You can find more details about the factors that affect the recovery time at [Recovery time](/azure/azure-sql/database/recovery-using-backups#recovery-time).  
+   The restore operation duration is affected by several factors. For large or highly active databases, the restore might take several hours. You can find more details about the factors that affect the recovery time at [Recovery time](/azure/azure-sql/database/recovery-using-backups#recovery-time).  
 
-    Once the restore is completed, the environment state will change to **Active**.  If the restore operation fails, you can find the failure details on the **Operations** page. In this case, delete the failed environment, and then try to restore again. Contact Microsoft Support if the issue persists.
+   Once the restore is completed, the environment state will change to **Active**.  If the restore operation fails, you can find the failure details on the **Operations** page. In this case, delete the failed environment, and then try to restore again. Contact Microsoft Support if the issue persists.
 
 ## After you restore an environment
 
