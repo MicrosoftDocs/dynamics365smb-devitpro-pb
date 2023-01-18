@@ -1,0 +1,242 @@
+### YamlMime:Landing
+
+title: Discover all aka.ms links related to Business Central
+summary: Are you looking for an aka.ms link? Look no further.  
+
+metadata:
+  title: Find all aka.ms links related to Business Central
+  description: Here's list of most common of the Business Central aka.ms links
+  ms.topic: landing-page # Required
+  ms.date: 01/10/2023
+
+landingContent:
+# Card
+  - title: Events and social
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCLE
+            url: https://aka.ms/bcle
+          - text: aka.ms/BCYammer
+            url: https://aka.ms/BCYammer
+          - text: aka.ms/BCOfficeHours
+            url: https://aka.ms/BCOfficeHours
+          - text: aka.ms/BCOfficeHoursRecordings
+            url: https://aka.ms/BCOfficeHoursRecordings 
+
+  - title: Stay up to date
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCReleasePlan
+            url: https://aka.ms/BCReleasePlan
+          - text: aka.ms/BCUpdates
+            url: https://aka.ms/BCUpdates
+          - text: aka.ms/BCLastMinorUpdate
+            url: https://aka.ms/BCLastMinorUpdate
+          - text: aka.ms/BCPreview
+            url: https://aka.ms/BCPreview
+          - text: aka.ms/BCDownload
+            url: https://aka.ms/BCDownload
+          - text: aka.ms/BCMajorUpdates
+            url: https://aka.ms/BCMajorUpdates
+          - text: aka.ms/BCUpdateHistory
+            url: https://aka.ms/BCUpdateHistory
+          - text: aka.ms/BCIdeas 
+            url: https://aka.ms/BCIdeas
+          - text: aka.ms/BCNews
+            url: https://aka.ms/BCNews
+      
+  - title: Partner readiness and go to market
+    linkLists:
+      - linkListType: overview
+        links: 
+          - text: aka.ms/BCAll
+            url: https://aka.ms/BCAll
+          - text: aka.ms/BCDocs
+            url: https://aka.ms/BCDocs
+          - text: aka.ms/D365BCDocsContributor
+            url: https://aka.ms/D365BCDocsContributor
+          - text: aka.ms/BCCountries
+            url: https://aka.ms/BCCountries    
+          - text: aka.ms/P2P
+            url: https://aka.ms/P2P
+          - text: aka.ms/SMBcompetency
+            url: https://aka.ms/SMBcompetency
+          - text: aka.ms/BCUniversalCode
+            url: https://aka.ms/BCUniversalCode
+          - text: aka.ms/BCCapabilities
+            url: https://aka.ms/BCCapabilities
+      - linkListType: get-started
+        links: 
+          - text: aka.ms/BCPartnerPortal
+            url: https://aka.ms/BCPartnerPortal
+          - text: aka.ms/BCLearn
+            url: https://aka.ms/BCLearn
+          - text: aka.ms/BCReseller
+            url: https://aka.ms/BCReseller
+          - text: aka.ms/BCCustomerStories
+            url: https://aka.ms/BCCustomerStories
+          - text: aka.ms/BCExam
+            url: https://aka.ms/BCExam  
+          
+            
+  - title: App development
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCPublisher
+            url: https://aka.ms/BCPublisher
+          - text: aka.ms/BCTech
+            url: https://aka.ms/BCTech
+          - text: aka.ms/ALIssues
+            url: https://aka.ms/ALIssues
+          - text: aka.ms/Collaborate
+            url: https://aka.ms/Collaborate
+          - text: aka.ms/BCProtocol
+            url: https://aka.ms/BCProtocol
+          - text: aka.ms/businesscentrallocapps
+            url: https://aka.ms/businesscentrallocapps
+          - text: aka.ms/ALAppExtensions
+            url: http://aka.ms/ALAppExtensions
+          - text: aka.ms/alguidelines
+            url: http://aka.ms/alguidelines
+      - linkListType: how-to-guide
+        links:
+          - text: aka.ms/AppSourceGo
+            url: https://aka.ms/AppSourceGo
+          - text: aka.ms/CheckBeforeYouSubmit
+            url: https://aka.ms/CheckBeforeYouSubmit
+          - text: aka.ms/TechValidationFAQ
+            url: https://aka.ms/TechValidationFAQ
+          - text: aka.ms/AL-Go-AppSource
+            url: https://aka.ms/AL-Go-AppSource
+          - text: aka.ms/AL-Go-PTE
+            url: https://aka.ms/AL-Go-PTE
+          - text: aka.ms/NewALModule
+            url: https://aka.ms/NewALModule
+
+  - title: Customer onboarding and migration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCAppSource
+            url: https://aka.ms/BCAppSource
+          - text: aka.ms/BusinessCentralApp
+            url: https://aka.ms/BusinessCentralApp
+          - text: aka.ms/BCPWA
+            url: https://aka.ms/BCPWA
+          - text: aka.ms/BCOnboarding
+            url: https://aka.ms/BCOnboarding
+          - text: aka.ms/BCOnboardingCustomers
+            url: https://aka.ms/BCOnboardingCustomers
+          - text: aka.ms/BCTrial
+            url: https://aka.ms/BCTrial
+          - text: aka.ms/BCProductivity
+            url: https://aka.ms/BCProductivity
+          - text: aka.ms/BCMigrations
+            url: https://aka.ms/BCMigrations
+          - text: aka.ms/BCAndGP
+            url: https://aka.ms/BCAndGP
+
+  - title: Telemetry and performance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCPerformance
+            url: https://aka.ms/BCPerformance
+          - text: aka.ms/BCTelemetry
+            url: https://aka.ms/BCTelemetry
+          - text: aka.ms/BCTelemetrySamples
+            url: https://aka.ms/BCTelemetrySamples
+          - text: aka.ms/BCTelemetryReport
+            url: https://aka.ms/BCTelemetryReport
+          - text: aka.ms/BCTelemetry-ISV-App
+            url: https://aka.ms/BCTelemetry-ISV-App
+
+  - title: Power Platform
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCPApps
+            url: https://aka.ms/BCPApps
+          - text: aka.ms/BCAutomate
+            url: https://aka.ms/BCAutomate
+          - text: aka.ms/BCVirtualTables
+            url: https://aka.ms/BCVirtualTables
+          - text: aka.ms/BCPBI
+            url: https://aka.ms/BCPBI
+          - text: aka.ms/BCPowerConnector
+            url: https://aka.ms/BCPowerConnector
+          - text: aka.ms/bc2dataverse
+            url: https://aka.ms/bc2dataverse
+
+  - title: Client and user experience
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCKeys
+            url: https://aka.ms/BCKeys
+          - text: aka.ms/Bcpwa
+            url: https://aka.ms/Bcpwa
+          - text: aka.ms/BCConnectivity
+            url: https://aka.ms/BCConnectivity
+          - text: aka.ms/BCActionbar
+            url: https://aka.ms/BCActionbar
+          - text: aka.ms/BCMobileApp
+            url: https://aka.ms/bcmobileapp
+          - text: aka.ms/InstallApp
+            url: https://aka.ms/InstallApp
+          - text: aka.ms/BCProtocol
+            url: https://aka.ms/bcprotocol
+          - text: aka.ms/BCgetTeamsApp
+            url: https://aka.ms/BCgetTeamsApp
+
+  - title: Reporting and Business intelligence 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCReporting
+            url: https://aka.ms/BCReporting
+          - text: aka.ms/BCExcelSamples
+            url: https://aka.ms/BCExcelSamples
+          - text: aka.ms/BCPBI
+            url: https://aka.ms/BCPBI
+
+
+  - title: Shopify and Dataverse
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCShopifyStart
+            url: https://aka.ms/BCShopifyStart
+          - text: aka.ms/BCShopifySession
+            url: https://aka.ms/BCShopifySession
+          - text: aka.ms/BCECommerce
+            url: https://aka.ms/BCECommerce
+          - text: aka.ms/BCShopifyFAQ
+            url: https://aka.ms/BCShopifyFAQ
+          - text: aka.ms/BCShopifyConsultant
+            url: https://aka.ms/BCShopifyConsultant
+          - text: aka.ms/BCDataSync
+            url: https://aka.ms/BCDataSync
+
+  - title: Security, privacy, and compliance 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCSecurity
+            url: https://aka.ms/BCSecurity
+          - text: aka.ms/BCAppCompliance
+            url: https://aka.ms/BCAppCompliance
+
+  - title: Support and FAQ
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCSupport
+            url: https://aka.ms/BCSupport
+          - text: aka.ms/BCFAQ
+            url: https://aka.ms/Bcfaq
+          - text: aka.ms/BCTroubleshoot
+            url: https://aka.ms/Bctroubleshoot
