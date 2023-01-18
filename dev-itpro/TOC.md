@@ -3,7 +3,7 @@
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Discover Business Central aka.ms links](developer/readiness/readiness-bcall.md)
+### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.md)
 ### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
 ### [Business Central on Microsoft Training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
 ### [Overview of business functionality](/dynamics365/business-central/across-business-functionality?toc=/dynamics365/business-central/dev-itpro/toc.json)
