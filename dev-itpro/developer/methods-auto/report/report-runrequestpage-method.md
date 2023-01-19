@@ -58,21 +58,36 @@ This method opens the request page for the specified report, where the user can 
 
 Because the request page runs in the context of where it was invoked from, users cannot bookmark a link to this page from the user interface.  
 
-## Example  
- This example illustrates how to use the RunRequestPage method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
+## Example
 
- This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
+This example illustrates how to use the RunRequestPage method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
 
- Create a table called **Request Parameters** that has the following fields.  
+This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
+
+Create a table called **Request Parameters** that has the following fields.  
 
 ```al
-var
-    ReportId: Integer;
-    UserId: Code[100];
-    Parameters: BLOB;
+...
+fields
+    {
+        field(1; ReportId; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(2; UserId; Code[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(3; Parameters; Blob)
+        {
+            DataClassification = ToBeClassified;
+        }
+    }
+...
 ``` 
 
- Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
+Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
 
 ```al
 var
