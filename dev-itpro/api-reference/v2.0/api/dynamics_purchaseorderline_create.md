@@ -23,8 +23,8 @@ Creates a purchase order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/purchaseOrders({id})/purchaseOrderLines({purchaseOrderLineId})
-POST businesscentralPrefix/companies({id})/purchaseOrderLines({purchaseOrderLineId})
+POST businesscentralPrefix/companies({id})/purchaseOrders({id})/purchaseOrderLines
+POST businesscentralPrefix/companies({id})/purchaseOrderLines
 ```
 
 ## Request headers
@@ -51,7 +51,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 Here is an example of the request.
 
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLines({purchaseOrderLineId})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLines
 Content-type: application/json
 {
     "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
