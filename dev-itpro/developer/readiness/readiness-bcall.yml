@@ -19,6 +19,8 @@ landingContent:
             url: https://aka.ms/bcle
           - text: aka.ms/BCYammer
             url: https://aka.ms/BCYammer
+          - text: aka.ms/BCTwitter
+            url: https://aka.ms/BCTwitter
           - text: aka.ms/BCOfficeHours
             url: https://aka.ms/BCOfficeHours
           - text: aka.ms/BCOfficeHoursRecordings
@@ -239,4 +241,4 @@ landingContent:
           - text: aka.ms/BCFAQ
             url: https://aka.ms/Bcfaq
           - text: aka.ms/BCTroubleshoot
-            url: https://aka.ms/BCtroubleshoot
+            url: https://aka.ms/Bctroubleshoot
