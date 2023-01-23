@@ -2641,6 +2641,7 @@
 ### [ConfirmHandler Attribute](attributes/devenv-confirmhandler-attribute.md)
 ### [ErrorBehavior Attribute](attributes/devenv-errorbehavior-attribute.md)
 ### [EventSubscriber Attribute](attributes/devenv-eventsubscriber-attribute.md)
+### [ExternalBusinessEvent Attribute](attributes/devenv-externalbusinessevent-attribute.md)
 ### [FilterPageHandler Attribute](attributes/devenv-filterpagehandler-attribute.md)
 ### [HandlerFunctions Attribute](attributes/devenv-handlerfunctions-attribute.md)
 ### [HyperlinkHandler Attribute](attributes/devenv-hyperlinkhandler-attribute.md)
