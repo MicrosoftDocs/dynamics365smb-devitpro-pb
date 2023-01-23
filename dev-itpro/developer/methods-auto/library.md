@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -129,6 +129,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[FieldClass](fieldclass/fieldclass-option.md)|Represents the type of a field class.|
 |[FieldType](fieldtype/fieldtype-option.md)|Represents the type of a table field.|
 |[InherentPermissionsScope](inherentpermissionsscope/inherentpermissionsscope-option.md)|The different types of scope that the InherentPermissions attribute can apply to.|
+|[IsolationLevel](isolationlevel/isolationlevel-option.md)|The isolation level applied for this record.|
 |[NotificationScope](notificationscope/notificationscope-option.md)|Specifies the context in which the notification appears in the client.|
 |[ObjectType](objecttype/objecttype-option.md)|The different types of objects.|
 |[PageBackgroundTaskErrorLevel](pagebackgroundtaskerrorlevel/pagebackgroundtaskerrorlevel-option.md)|Specifies how an error in the page background task appears in the client.|

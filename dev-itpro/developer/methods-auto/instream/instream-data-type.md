@@ -3,7 +3,7 @@ title: "InStream Data Type"
 description: "Is a generic stream object that you can use to read from or write to files and BLOBs."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,6 +36,7 @@ The following methods are available on instances of the InStream data type.
 |[Read(var Text [, Integer])](instream-read-string-integer-method.md)|Reads a specified number of bytes from an InStream object. Data is read in binary format.|
 |[Read(var Any [, Integer])](instream-read-joker-integer-method.md)|Reads a specified number of bytes from an InStream object. Data is read in binary format.|
 |[ReadText(var Text [, Integer])](instream-readtext-method.md)|Reads text from an InStream object.|
+|[ResetPosition()](instream-resetposition-method.md)|Resets the stream position on an InStream object.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also

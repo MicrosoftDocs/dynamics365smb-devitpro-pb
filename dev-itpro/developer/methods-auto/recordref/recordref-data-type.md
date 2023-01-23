@@ -3,7 +3,7 @@ title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -83,6 +83,7 @@ The following methods are available on instances of the RecordRef data type.
 |[Number()](recordref-number-method.md)|Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.|
 |[Open(Integer [, Boolean] [, Text])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[ReadConsistency()](recordref-readconsistency-method.md)|Gets a value indicating whether read consistency is enabled.|
+|[ReadIsolation([IsolationLevel])](recordref-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](recordref-readpermission-method.md)|Determines if you can read from a table.|
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](recordref-recordlevellocking-method.md)|Gets a value indicating whether record level locking is enabled.|

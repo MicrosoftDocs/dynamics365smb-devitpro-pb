@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -82,6 +82,7 @@ The following methods are available on instances of the Record data type.
 |[ModifyAll(Any, Any [, Boolean])](record-modifyall-method.md)|Modifies a field in all records within a range that you specify.|
 |[Next([Integer])](record-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[ReadConsistency()](record-readconsistency-method.md)|Determines if the table supports read consistency.|
+|[ReadIsolation([IsolationLevel])](record-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](record-readpermission-method.md)|Determines whether a user is granted read permission to the table that contains a record. This method can test for both full read permission and partial read permission that has been granted with a security filter.|
 |[RecordId()](record-recordid-method.md)|Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](record-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|
