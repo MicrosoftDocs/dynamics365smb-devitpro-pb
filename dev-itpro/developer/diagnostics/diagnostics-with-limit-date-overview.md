@@ -3,7 +3,7 @@ title: "Warnings Turning into Errors Overview"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 12/05/2022
+ms.date: 12/12/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,7 +20,7 @@ This topic lists all the warning diagnostics that will turn or have turned into 
 
 |Release|Diagnostics|Message|
 |---------|-----------|------|
-|2024 release wave 1| - [AL0751](diagnostic-al751.md) <br />  - [AL0753](diagnostic-al753.md) <br /> | - Enum values can't be nested. Use '{0}' instead.<br /> - The name of a dataitem cannot be empty because it can cause runtime errors.<br />|
+|2024 release wave 1| - [AL0751](diagnostic-al751.md) <br />  - [AL0753](diagnostic-al753.md) <br />  - [AL0758](diagnostic-al758.md) <br /> | - Enum values can't be nested. Use '{0}' instead.<br /> - The name of a dataitem cannot be empty because it can cause runtime errors.<br /> - The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.<br />|
 |2023 release wave 2| - [AL0731](diagnostic-al731.md) <br />  - [AL0733](diagnostic-al733.md) <br />  - [AL0743](diagnostic-al743.md) <br />  - [AL0745](diagnostic-al745.md) <br />  - [AL1078](diagnostic-al1078.md) <br /> | - The name '{0}' does not exist in the current context.<br /> - Access modifier '{0}' is not allowed for member '{1}' in the context of object type '{2}'.<br /> - The property '{0}' is not valid for the cue action '{1}'.<br /> - The property '{0}' is not valid for action '{1}' defined in a report request page.<br /> - Key vault URL is not a valid Azure key vault URL. A valid key vault URL must use HTTPS and point to the Azure key vault domain.<br />|
 |2023 release wave 1| - [AL0711](diagnostic-al711.md) <br /> | - A member of type {0} with name '{1}' is already defined in {2} '{3}' by the extension '{4}'. Duplicate member names are not allowed when defining CueActions.<br />|
 |2022 release wave 2| - [AL0660](diagnostic-al660.md) <br />  - [AL0677](diagnostic-al677.md) <br />  - [AL0715](diagnostic-al715.md) <br /> | - The property '{0}' cannot be customized.<br /> - The member '{0}' in object '{1}' cannot be declared as protected in object type '{2}'.<br /> - The {0} name '{1}' is reserved for future AL language features.<br />|

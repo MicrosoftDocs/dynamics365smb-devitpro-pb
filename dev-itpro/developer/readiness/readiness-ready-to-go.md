@@ -45,7 +45,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Browse all [!INCLUDE [prod_short](../includes/prod_short.md)] learning courses: [aka.ms/BCLearn](https://aka.ms/BCLearn) 
 - Supported countries, regions, and languages: [aka.ms/BCCountries](https://aka.ms/BCCountries) 
 - Join the conversation on Yammer for partners: [aka.ms/BCYammer](https://aka.ms/BCYammer)  
-- Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [partner.microsoft.com/isv-resource-hub/development-centers/find-a-center](https://partner.microsoft.com/isv-resource-hub/development-centers/find-a-center)  
+- Online or in-person training and coaching for [!INCLUDE [prod_short](../includes/prod_short.md)]. Contact an ISV Development Center: [aka.ms/ISVDevCenter](https://aka.ms/ISVDevCenter)
 - The Universal Code Initiative: [aka.ms/BCUniversalCode](https://aka.ms/BCUniversalCode) 
 
 ## Go to market 
@@ -72,6 +72,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Business Central and Power BI: [aka.ms/BCPBI](https://aka.ms/BCPBI)
 - Business Central and Power Automate: [aka.ms/BCAutomate](https://aka.ms/BCAutomate) 
 - Business Central and Power Apps: [aka.ms/BCPApps](https://aka.ms/BCPApps)
+- [Prototype] Low code sync of Business Central entities to Dataverse: [aka.ms/bc2dataverse](https://aka.ms/BC2Dataverse)
 
 ## Migrating from on-premises to cloud (online)  
 - Discover assets for transitioning Dynamics GP, Dynamics NAV, Dynamics SL, [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises customers to [!INCLUDE [prod_short](../includes/prod_short.md)] online: [aka.ms/BCMigrations](https://aka.ms/BCMigrations)  
@@ -115,7 +116,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Licensing and Pricing  
 - [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
-- [Business Central Universal Code Initiative](https://partner.microsoft.com/en-US/resources/collection/microsoft-publisher-program#/)
+- [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
 - [Business Central team members license documentation]()
 
 ## Licensing and Pricing on-premises only  

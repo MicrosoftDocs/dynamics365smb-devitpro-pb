@@ -65,7 +65,7 @@ The `launch.json` file is now populated with the correct attach configuration se
 3. Set `breakOnNext` to specify the client type on which to break.
 4. In your code, set at least one breakpoint using **Run** from the toolbar, choose **New breakpoint**, and then choose which type of breakpoint to add. 
 You can always add more breakpoints while debugging. 
-5. It's important to make sure to publish your app by pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Your app *won't be* published if you only press **F5**.  
+5. If your most recent app is not yet published, it's important to make sure you publish it pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Then, use **F5** to start the attach session.  
     > [!IMPORTANT]  
     > If you modify the app code during the debugging session, make sure to re-publish the app using **Ctrl+F5**.
 6. After publishing the app, press **F5** to start a debugging session.  

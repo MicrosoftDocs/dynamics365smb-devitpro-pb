@@ -219,18 +219,18 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
     This step is different for a single-tenant and multitenant [!INCLUDE[server](../developer/includes/server.md)] deployments.
 
-    1. Set the `ValidAudiences` parameter to the **Application (client) ID** of the registered application in Azure AD.
+    1. Set the `ValidAudiences` parameter to the **Application (client) ID** of the registered application in Azure AD. If you'll be using [service-to-service (S2S) authentication](automation-apis-using-s2s-authentication.md) for Business Central APIs, include `https://api.businesscentral.dynamics.com` in the value.
 
         The value has the following format:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>"
+        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>;https://api.businesscentral.dynamics.com"
         ```
 
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666"
+        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
         ```
 
     2. Set the `ClientServicesFederationMetadataLocation` parameter.

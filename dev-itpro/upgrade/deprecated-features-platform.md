@@ -1,13 +1,13 @@
 ---
-title: "Deprecated features in client, server, database"
-description: Describes the features that have been removed or replaced in the platform components of Business Central. 
-author: bholtorf
-ms.custom: na
-ms.date: 08/29/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+title: Deprecated features in the client, server, database
+description: Describes the features that have been removed or replaced in the platform components of Business Central.
+author: brentholtorf
+ms.author: bholtorf
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.topic: conceptual
+ms.date: 01/12/2023
+ms.custom: bap-template
 ---
 
 # Deprecated Features in the Platform - Clients, Server, and Database
@@ -24,11 +24,28 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 23, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
 
+
+### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (Removal)
+
+The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | [ROPC flow in OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc) allows apps to sign in users by directly handling their password. This behavior goes against the principles of modern authentication and isn't recommended. Starting in 2023 release wave 2 (v23.0), ROPC will no longer be supported. Instead, when connecting to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, use an alternative and more secure authentication flows supported by the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-authentication-flows), such as authorization code flow. |
+
+
 ## Changes in 2023 release wave 1 (version 22.0)
+
+### Integration records
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Apps that integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] should be based on [System Fields](../developer/devenv-table-system-fields.md) instead of integration records. Using system fields improves overall performance, reduces the size of table data, and improves the ability to audit changes. If you haven't already refactored your app and want to learn more, go to [Refactor Integration Management](../developer/devenv-integration-record-refactoring.md). |
+
 
 ### WS-Federation with Azure Active Directory authentication
 
-The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
+The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
@@ -95,6 +112,15 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed  | When the **Modern Action Bar** on the **Feature Management** page is set to *Enabled*, promoted actions, which are defined inside a group whose visibility is set to `false` will no longer be visible on the promoted side of the action bar. A dedicated code analysis rule in the UICop analyzer (AW0013) helps detect this pattern in your apps. For more information, see [UICop Warning AW0013](../developer/analyzers/uicop-aw0013.md). For more information about the `actionref` syntax, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
+
+
+### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (Warning)
+
+The following feature will eventually be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | [ROPC flow in OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc) allows apps to sign in users by directly handling their password. This behavior goes against the principles of modern authentication and isn't recommended. Starting in 2023 release wave 2 (v23.0), ROPC will no longer be supported. Instead, when connecting to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, use an alternative and more secure authentication flows supported by the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-authentication-flows), such as authorization code flow.|
 
 <!---
 These changes are not confirmed yet

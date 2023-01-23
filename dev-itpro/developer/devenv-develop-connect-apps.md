@@ -3,7 +3,7 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 01/05/2022
+ms.date: 01/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -20,14 +20,14 @@ To explore and develop against APIs in [!INCLUDE[d365fin_long_md](includes/d365f
 1. Sign up for [Dynamics 365 Business Central](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1).  
 When you have your tenant, you can sign into the UI to play with the product, and [explore the APIs](/dynamics-nav/api-reference/v2.0)
 2. There are two different ways to connect to and authenticate against the APIs.  
-    - Use Azure Active Directory (AAD) based authentication against the common API endpoint: `https://api.businesscentral.dynamics.com/v2.0/<environment name>/api/v2.0`
+    - Use Azure Active Directory (Azure AD) based authentication against the common API endpoint: `https://api.businesscentral.dynamics.com/v2.0/<environment name>/api/v2.0`
     - Use basic authentication with username and password (a so-called web service access key) against the common API endpoint that includes the user domain, for example `https://api.businesscentral.dynamics.com/v2.0/production/cronus.com/api/v2.0`.  
         > [!IMPORTANT]  
-        > When going into production, you should use Azure Active Directory (AAD)/OAuth v2 authentication and the common endpoint `https://api.businesscentral.dynamics.com/v2.0/production/api/v2.0`. For exploring and initial development, you can use basic authentication.
+        > When going into production, you should use Azure Active Directory (Azure AD)/OAuth v2 authentication and the common endpoint `https://api.businesscentral.dynamics.com/v2.0/production/api/v2.0`. For exploring and initial development, you can use basic authentication.
         > [!IMPORTANT]  
         > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. For more information, see [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#accesskeys).
 
-To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. [See Exploring the APIs with Postman and AAD authentication below](#exploring-the-apis-with-postman-and-aad-authentication).
+To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. [See Exploring the APIs with Postman and Azure AD authentication below](#exploring-the-apis-with-postman-and-azure-ad-authentication).
 
 In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
@@ -35,7 +35,7 @@ APIs can also be explored through the [OpenAPI specification for Business Centra
 
 ## Setting up basic authentication
 
-If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the AAD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use AAD/Oauth v2 authentication, see the section [Setting up Azure Active Directory (AAD) based authentication](#AAD).
+If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Azure AD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Azure AD/Oauth v2 authentication, see the section [Setting up Azure Active Directory (Azure AD) based authentication](#AAD).
 
 1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
@@ -43,7 +43,7 @@ If you prefer to set up an environment with basic authentication just to explore
 
 Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-the-apis-with-postman-and-basic-authentication) section we'll use Postman.
 
-## <a name="AAD"></a>Setting up Azure Active Directory (AAD) based authentication
+## <a name="AAD"></a>Setting up Azure Active Directory (Azure AD) based authentication
 
 Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] as an app and thereby provide access to [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] for users in the directory.
 
@@ -63,7 +63,7 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
     > [!NOTE]  
     > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
 
-You have now set up the Azure AD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and Azure AD authentication](#exploring-the-apis-with-postman-and-aad-authentication) section below.
+You have now set up the Azure AD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and Azure AD authentication](#exploring-the-apis-with-postman-and-azure-ad-authentication) section below.
 
 ## Exploring the APIs with Postman and basic authentication
 
@@ -94,14 +94,15 @@ In this `Hello World` example, we're going over the basic steps required to retr
     - In the **Auth URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/authorize?resource=https://api.businesscentral.dynamics.com`.
     - In the **Access Token URL** field, specify a URL such as `https://login.windows.net/<your tenant domain>/oauth2/token?resource=https://api.businesscentral.dynamics.com`.
     - In the **Client ID** field, enter the Application ID from the registered app in Azure Portal.
+    - In the **Scope** field, 
     - In the **Client Secret** field, enter the key generated under **Keys** that you copied in step 6 in the [Setting up Azure Active Directory (Azure AD) based authentication](#AAD).
     - In the **Client Authentication** field, choose the **Send client credentials in body** option.
-4. Choose the **Request token** button. The first time you sign in, you'll get prompted for consent.
+4. Choose the **Get New Access Token** button. The first time you sign in, you'll get prompted for consent.
 5. Scroll down and choose **Use token** button.  
 An Authorization request header is now added containing the Bearer token.
 6. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
    > [!NOTE]  
-   > **For OAuth for testing purposes**, a multi-tenant AAD app has been created. Admin consent is needed before the ADD app can be used. Information is as follows:
+   > **For OAuth for testing purposes**, a multi-tenant Azure AD app has been created. Admin consent is needed before the Azure AD app can be used. Information is as follows:
    > * Grant Type: Implict
    > * Callback URL: https://localhost 
    > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 

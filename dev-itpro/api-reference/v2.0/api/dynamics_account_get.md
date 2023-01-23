@@ -60,6 +60,7 @@ Here is an example of the response.
     "blocked": false,
     "accountType": "Heading",
     "directPosting": false,
+    "netChange": 0,
     "lastModifiedDateTime": "2020-08-21T00:24:15.327Z"
 }
 ```
