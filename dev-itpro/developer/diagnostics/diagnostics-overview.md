@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 12/12/2022
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -636,6 +636,15 @@ author: SusanneWindfeldPedersen
 |[AL0756](diagnostic-al756.md)|The division by Abs(integer) will change its behavior in release version 11. For more information visit the official documentation.|Warning|
 |[AL0757](diagnostic-al757.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Error|
 |[AL0758](diagnostic-al758.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Warning (Future Error)|
+|[AL0759](diagnostic-al759.md)|The value '{0}' specified for FormatRegion cannot be parsed as a valid format culture name.|Error|
+|[AL0760](diagnostic-al760.md)|The value '{0}' specified for FormatRegion is not a standard format culture name.|Error|
+|[AL0761](diagnostic-al761.md)|Invalid enum is used for category. A value of enum {0} {1} is expected which is available in platform version {2} and higher.|Error|
+|[AL0762](diagnostic-al762.md)|Length of the argument '{0}' cannot exceed {1} characters.|Error|
+|[AL0763](diagnostic-al763.md)|{0} can contain only underscores and alphanumeric characters.|Error|
+|[AL0764](diagnostic-al764.md)|{0} cannot be empty.|Error|
+|[AL0765](diagnostic-al765.md)|A argument of type {0} cannot be used in an External Business Event.|Error|
+|[AL0766](diagnostic-al766.md)|An External Business Event with {0} {1} is already declared.|Error|
+|[AL0767](diagnostic-al767.md)|The url '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.|Error|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -657,7 +666,7 @@ author: SusanneWindfeldPedersen
 |[AL1018](diagnostic-al1018.md)|Directory '{0}' could not be found.|Error|
 |[AL1019](diagnostic-al1019.md)|One or more dependencies defined in the project manifest are not valid. One or more of the required attributes: 'publisher', 'name', 'version', and 'id' are either missing or not valid.|Error|
 |[AL1021](diagnostic-al1021.md)|The package cache path has not been specified.|Error|
-|[AL1022](diagnostic-al1022.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found in the package cache folder '{3}'.|Error|
+|[AL1022](diagnostic-al1022.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found in the package cache folders: {3}.|Error|
 |[AL1023](diagnostic-al1023.md)|The package file {0} is not valid.|Error|
 |[AL1024](diagnostic-al1024.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded. {3}.|Error|
 |[AL1025](diagnostic-al1025.md)|The file at location '{0}' does not match any definition.|Warning|

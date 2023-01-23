@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL1044"
-description: "The value for the manifest property '{0}' is not valid."
+title: "Compiler Error AL0765"
+description: "A argument of type {0} cannot be used in an External Business Event."
 ms.author: solsen
 ms.custom: na
 ms.date: 01/23/2023
@@ -13,17 +13,17 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL1044
+# Compiler Error AL0765
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The value for the manifest property '{0}' is not valid. Expected type: {1}.
+A argument of type {0} cannot be used in an External Business Event.
 
 
 ## Description
-Wrong type for a manifest property. For more information about manifest properties and their type, see [App.json file](../devenv-json-files.md#Appjson).  
+An invalid argument type is used in the payload of an External Business Event.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
