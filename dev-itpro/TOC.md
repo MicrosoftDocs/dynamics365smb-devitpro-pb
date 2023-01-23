@@ -1075,7 +1075,7 @@
 <!-- end AL -->
 <!-- begin security -->
 
-# Security, Privacy, Compliance
+# Security, Privacy, and Compliance
 ## Security
 ### [Security Overview](security/security-and-protection.md)
 ### [Tips for Business Users](security/security-users.md)
