@@ -806,7 +806,6 @@
 #### [AA0199](analyzers/codecop-aa0199.md)
 #### [AA0200](analyzers/codecop-aa0200.md)
 #### [AA0201](analyzers/codecop-aa0201.md)
-#### [AA0462](analyzers/codecop-aa0462.md)
 #### [AA0202](analyzers/codecop-aa0202.md)
 #### [AA0203](analyzers/codecop-aa0203.md)
 #### [AA0204](analyzers/codecop-aa0204.md)
@@ -843,7 +842,9 @@
 #### [AA0243](analyzers/codecop-aa0243.md)
 #### [AA0244](analyzers/codecop-aa0244.md)
 #### [AA0245](analyzers/codecop-aa0245.md)
+#### [AA0246](analyzers/codecop-aa0246.md)
 #### [AA0448](analyzers/codecop-aa0448.md)
+#### [AA0462](analyzers/codecop-aa0462.md)
 #### [AA0470](analyzers/codecop-aa0470.md)
 ### AppSourceCop Analyzer Rules
 #### [AS0001](analyzers/appsourcecop-as0001.md)
