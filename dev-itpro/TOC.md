@@ -1083,6 +1083,7 @@
 ### [Online](security/security-online.md)
 ### [On-Premises](security/security-onpremises.md)
 ### [Data Security](security/data-security.md)
+### [Azure security service tags](security/security-service-tags.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
