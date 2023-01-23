@@ -2,7 +2,6 @@
 title: Security overview
 description: Get an overview of the articles about security in Business Central, so that you can configure your solution.
 author: jswymer
-
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +16,7 @@ A business solution must have a built-in security system that helps protect your
 
 [Application Security](security-application.md)  
 
-[Security service tags](security-service-tags.md)
+[Azure security service tags](security-service-tags.md)
 
 [Security Tips for Business Users](security-users.md)  
 
