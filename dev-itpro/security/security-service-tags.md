@@ -23,19 +23,11 @@ An Azure service tag represents a group of IP addresses from/to which traffic fr
 The following table lists the IP addresses from which you can expect to receive traffic to/from [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. Use this list to set up firewalls on other systems to allow traffic only to/from [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but not from other IP addresses.
 
 > [!NOTE]  
-> It won't be possible to control traffic on more granular levels, for example per Azure AD Tenant of a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment.
+> It will not be possible to control traffic on more granular levels, for example per Azure AD Tenant of a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment.
 
 The group of IP addresses making up the service tag are available through the [Azure Management API](https://learn.microsoft.com/en-us/rest/api/virtualnetwork/service-tags/list?tabs=HTTP) and as [downloadable .json files](/azure/virtual-network/service-tags-overview#discover-service-tags-by-using-downloadable-json-files) to use for any systems that don't support service tags.
 
 Learn more about service tags [Virtual network service tags](/azure/virtual-network/service-tags-overview).
-
-
-
-
-|Service tag|Azure region|
-|-----------|------------|
-|||
-
 
 ## See also
 
