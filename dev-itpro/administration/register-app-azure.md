@@ -98,9 +98,10 @@ After you create the application registration, the next task is to configure the
 2. Select **Set up your Azure Active Directory accounts**, then **Next**.
 
     The **Connect With Azure** page opens.
-<!--
-![Setting the Azure Active Directory.](../developer/media/set-up-azure-ad.png)
--->
+    <!--
+    ![Setting the Azure Active Directory.](../developer/media/set-up-azure-ad.png)
+    -->
+
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Azure AD.
