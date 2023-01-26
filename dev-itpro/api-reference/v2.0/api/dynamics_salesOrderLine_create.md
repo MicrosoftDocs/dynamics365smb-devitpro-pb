@@ -48,11 +48,8 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/
 Content-type: application/json
 
 {
-    "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
-    "documentId": "960f5c9c-44e3-ea11-bb43-000d3a2feca1",
     "sequence": 10000,
     "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
-    "accountId": "00000000-0000-0000-0000-000000000000",
     "lineType": "Item",
     "lineObjectNumber": "1996-S",
     "description": "ATLANTA Whiteboard, base",
@@ -62,22 +59,12 @@ Content-type: application/json
     "unitPrice": 1397.3,
     "discountAmount": 0,
     "discountPercent": 0,
-    "discountAppliedBeforeTax": false,
-    "amountExcludingTax": 16767.6,
-    "taxCode": "FURNITURE",
-    "taxPercent": 6.00002,
-    "totalTaxAmount": 1006.06,
-    "amountIncludingTax": 17773.66,
-    "invoiceDiscountAllocation": 0,
-    "netAmount": 16767.6,
-    "netTaxAmount": 1006.06,
-    "netAmountIncludingTax": 17773.66,
+    "taxCode": "STANDARD",
     "shipmentDate": "2020-04-02",
-    "shippedQuantity": 0,
-    "invoicedQuantity": 0,
     "invoiceQuantity": 12,
     "shipQuantity": 12,
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
@@ -89,7 +76,7 @@ Here is an example of the response.
 >   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 ```json
-HTTP/1.1 200 OK
+HTTP/2 201 Created
 Content-type: application/json
 
 {
@@ -122,7 +109,8 @@ Content-type: application/json
     "invoicedQuantity": 0,
     "invoiceQuantity": 12,
     "shipQuantity": 12,
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 

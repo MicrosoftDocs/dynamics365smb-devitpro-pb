@@ -3,7 +3,7 @@ title: "Set up the add-ins for Outlook integration with Business Central on-prem
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: na
 ms.date: 04/22/2022
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
