@@ -1,15 +1,16 @@
 ---
-title: "Register on-premises as an app in the Azure Management Portal"
+title: Register on-premises as an app in the Azure Management Portal
 description: Learn what to do when you want to use Business Central on-premises with online offerings.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
-ms.date: 02/28/2022
+ms.custom: bap-template
+ms.date: 01/26/2023
 ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: dynamics365-business-central
 ---
 
-# Registering Business Central On-Premises in Azure AD for Integrating with Other Services
+# Register Business Central On-Premises in Azure AD for Integrating with Other Services
 
 > **APPLIES TO** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is automatically configured for integration with other online services.
 
@@ -48,7 +49,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |Setting|Description|
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
-        |Supported account types| Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] does not require the organization to be multitenant, not even if this field is set to multitenant. |
+        |Supported account types| Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] doesn't require the organization to be multitenant, not even if this field is set to multitenant. |
         |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC200/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC200/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC200/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
@@ -81,6 +82,10 @@ The first task is to use Azure portal to register an application for Business Ce
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
 
     <sup>1</sup><a name="1"></a>For Business Central 2021 release wave 2 (version 19), the required permissions are different. Use these permissions instead: AllSites.Write, MyFiles.Write, User.Read.All.
+
+4. Configure consent on each API permission according to your organizations policies.
+
+  Consent is a process where users or admins authorize an application to access a resource, like a user's profile or mailbox, depending on the service. When a user attempts to sign in to the registered app for the first time, the app will request permission, and the user will have to accept to continue. As an admin, you can consent on behalf of all users, so they don't have to. To learn more, go to [More on API permissions and admin consent](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#more-on-api-permissions-and-admin-consent) and [Introduction to permissions and consent](azure/active-directory/develop/permissions-consent-overview).
 
 ## Set up the registered application in Business Central
 
