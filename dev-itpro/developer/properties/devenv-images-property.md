@@ -27,7 +27,7 @@ Specifies the list of images to include in the control add-in.
 
 A list of comma-separated strings that represents paths to image files. The default is blank, with no images being used by the control add-in. 
 
-The path string can be a combination of a valid literal path and wildcard characters (* and ?), but it does not support regular expressions.
+You can specify multiple files within the same path string by using a combination of a valid literal path and wildcard characters (* and ?). However, it does not support regular expressions.
 
 ## Remarks
 
