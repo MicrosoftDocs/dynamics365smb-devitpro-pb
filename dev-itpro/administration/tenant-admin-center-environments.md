@@ -137,12 +137,19 @@ To turn access on or off, complete the following steps:
 -->
 ## Delete an environment
 
-You can delete environments in the admin center, such as when a sandbox environment isn't longer needed.  
+You can delete environments in the admin center, such as when a sandbox environment isn't longer needed. Make sure no user is using the environment before you delete it, as any users logged in to the environment will be disconnected.
+
+Deleted environments can be recovered for seven days after deletion. To recover a deleted environment, navigate to the Environments page in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] and click **Recently deleted environments**. Choose the environment you want to recover, and then choose **Recover** from the environment details page. You can also choose to perform a point-in-time restore on a deleted environment if you want to restore it to a time before the time it was deleted at.
+
+> [!NOTE]
+> Per Azure Active Directory Tenant there can only be up to ten recently deleted environments. If you have ten recently deleted environments, the environment that was deleted first among those ten will be permanently deleted when you delete an eleventh environment.
+
+Business Central environment names must be unique among all environments of the same Application Family. Recently deleted environments can be renamed from the environment details of the recently deleted environment page so you can reuse the name of the deleted environment on a new environment.
 
 > [!IMPORTANT]
-> Make sure no user is using the environment before you delete it.
->
-> Also, be very careful before you choose the *Delete* action for the environment. The action is irreversible.
+> While recently deleted environments will not receive any updates, they remain part of the update schedule until permanent deletion. If you recover a recently deleted environment, any update scheduled for a date in the past will be executed as part of the recovery. If you do not want to run the update as part of recovery, reschedule the update to a date in the future from the environment details page before starting the recovery.
+
+Deleted environments are removed from the **Recently deleted environments** seven days after the environment has been deleted. If you need to recover an environment that was deleted more than seven days ago, please open a service request.
 
 ## <a name="opslog"></a>Log of administrative operations
 
