@@ -27,6 +27,8 @@ Specifies the list of images to include in the control add-in.
 
 A list of comma-separated strings that represents paths to image files. The default is blank, with no images being used by the control add-in. 
 
+The path string can be a combination of a valid literal path and wildcard characters (* and ?), but it does not support regular expressions.
+
 ## Remarks
 
 The Images property specifies image resources that are referenced by the control add-in scripts. Any specified images must be of a supported web format and extension, such as .PNG or .GIF. 
@@ -37,7 +39,8 @@ Images can be either external resources referenced using a URL or can be embedde
 
 ```AL
 Images = 'https://fabrikam.com/banner.png',
-              'images/map.png';
+              'images/map.png',
+              'images/*.png';
 ```
 
 ## See Also  

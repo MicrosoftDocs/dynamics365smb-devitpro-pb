@@ -28,6 +28,8 @@ Specifies the list of scripts to include in the control add-in. The scripts coul
 
 A list of comma-separated strings that represent paths to script files. The default is blank, with no scripts being used by the control add-in. 
 
+The path string can be a combination of a valid literal path and wildcard characters (* and ?), but it does not support regular expressions.
+
 ## Remarks 
 
 Although this property is optional, the control add-in must either specify the StartupScript property or specify one or more scripts. Scripts can be either external resources referenced using a URL or can be embedded within the extension. Embedded script files must be added to the extension project folder in Visual Studio Code and referenced using a relative path. For security and usability reasons, it is recommended to reference any external scripts by using the HTTPS protocol. Scripts are loaded immediately when the control add-in is initialized. 
@@ -36,7 +38,8 @@ Although this property is optional, the control add-in must either specify the S
 
 ```AL
 Scripts = 'https://code.jquery.com/jquery-2.1.0.min.js',
-              'js/main.js';
+              'js/main.js',
+              'scripts/*.js';
 ```
 
 ## See Also

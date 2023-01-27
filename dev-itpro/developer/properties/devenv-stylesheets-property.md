@@ -28,6 +28,8 @@ Specifies the list of stylesheets to include in the control add-in. The styleshe
 
 A list of comma-separated strings that represent paths to stylesheet files. The default is blank, with no stylesheets being used by the control add-in. 
 
+The path string can be a combination of a valid literal path and wildcard characters (* and ?), but it does not support regular expressions.
+
 ## Remarks
 
 This property is optional and used to specify stylesheets that apply to the control add-in visuals. Stylesheets can be either external resources referenced using a URL or can be embedded within the extension. Embedded stylesheets must be added to the extension project folder in Visual Studio Code and referenced using a relative path. Stylesheets are loaded immediately when the control add-in is initialized.
@@ -42,7 +44,8 @@ This property is optional and used to specify stylesheets that apply to the cont
 
 ```AL
 Stylesheets = 'https://www.microsoft.com/stylesheets/colors.css',
-              'style.css';
+              'style.css',
+              'styles/*.css;
 ```
 
 ## See Also  
