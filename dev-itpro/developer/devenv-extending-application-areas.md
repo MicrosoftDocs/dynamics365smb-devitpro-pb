@@ -112,7 +112,7 @@ The registration of the application area inside an experience tier is made insid
 > This event is important because it is called every single time an experience tier is reset, which can happen because of many reasons. 
 
 Another thing that is possible inside these methods is to modify the experience tier. You can also modify other application areas, such as creating an extension that extends the Fixed Assets functionality. 
-By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the **OnGet*ExperienceAppArea** family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
+By subscribing to **OnValidateApplicationAreas**, the application area inside an experience tier is validated. **OnValidateApplicationAreas** is guaranteed to be executed after the events in the **OnGet...ExperienceAppArea** family. The validation is necessary in the presence of extensions concurrently manipulating the same application areas.
 
 In case a needed application area is not enabled, the suggested action is to show an error and turn off the extension to avoid unintended behavior. However, if the functionality controlled by this application area is of secondary importance and its loss does not affect the rest of the extension, it is also appropriate to keep the extension enabled.
 
@@ -174,22 +174,22 @@ The experiences are additive so you only need to subscribe to one of the events.
 ```AL
 codeunit 50102 EnableAdvancedApplicationArea
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetEssentialExperienceAppAreas','', false, false)]
-    local procedure EnableAdvancedApplicationAreaOnGetEssentialExperienceAppAreas(var TempApplicationAreaSetup : record 9178 temporary)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetEssentialExperienceAppAreas', '', false, false)]
+    local procedure EnableAdvancedApplicationAreaOnGetEssentialExperienceAppAreas(var TempApplicationAreaSetup: Record "Application Area Setup" temporary)
     begin
-        TempApplicationAreaSetup.Advanced := true
+        TempApplicationAreaSetup.Advanced := true;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetPremiumExperienceAppAreas','', false, false)]
-    local procedure EnableAdvancedApplicationAreaOnGetPremiumExperienceAppAreas(var TempApplicationAreaSetup : record 9178 temporary)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnGetPremiumExperienceAppAreas', '', false, false)]
+    local procedure EnableAdvancedApplicationAreaOnGetPremiumExperienceAppAreas(var TempApplicationAreaSetup: Record "Application Area Setup" temporary)
     begin
-        TempApplicationAreaSetup.Advanced := true
+        TempApplicationAreaSetup.Advanced := true;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnSetExperienceTier','', false, false)]
-    local procedure EnableAdvancedApplicationAreaOnSetExperienceTier(ExperienceTierSetup : record 9176;var TempApplicationAreaSetup : record 9178 temporary;var ApplicationAreasSet : boolean)
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Application Area Mgmt. Facade", 'OnSetExperienceTier', '', false, false)]
+    local procedure EnableAdvancedApplicationAreaOnSetExperienceTier(ExperienceTierSetup: Record "Experience Tier Setup"; var TempApplicationAreaSetup: Record "Application Area Setup" temporary; var ApplicationAreasSet: Boolean)
     begin
-        TempApplicationAreaSetup.Advanced := true
+        TempApplicationAreaSetup.Advanced := true;
     end;
 }
 
