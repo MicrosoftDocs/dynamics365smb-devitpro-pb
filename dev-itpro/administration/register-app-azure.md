@@ -72,7 +72,8 @@ The first task is to use Azure portal to register an application for Business Ce
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
     |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
-    |[Exchange Contact Sync](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
+    |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contact)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.|
+    ||| EWS.AccessAsUser.All|Delegated|Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services.|
     |[OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
     |||User.ReadWrite.All|Delegated|Read and write user profiles|
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
