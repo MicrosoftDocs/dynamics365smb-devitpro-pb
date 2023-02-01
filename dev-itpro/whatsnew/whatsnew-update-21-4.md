@@ -15,7 +15,7 @@ Would you like to know what has changed in update 21.4? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5023401) and the downloads [here]().
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5023401) and the downloads [here](https://aka.ms/BCDownload).
 
 
 ## Feature changes
@@ -54,7 +54,7 @@ The release plan for Business Central 2023 release wave 1 is live!
 Check out the product overview and what's new and planned for Business Central here: https://aka.ms/BCReleasePlan.
 
 **Join us for updates on LinkedIn!**  
-Follow the new company page for Microsoft Dynamics 365 Business Central on LinkedIn. We’ll share updates, announcements, and other “good to know” stuff. Join us here. 
+Follow the new company page for Microsoft Dynamics 365 Business Central on LinkedIn. We’ll share updates, announcements, and other “good to know” stuff. Join us [here](https://www.linkedin.com/company/microsoft-dynamics-365-business-central/). 
 
 **Business Central newsletter for partners**  
 Yay! We're doing quarterly newsletters for Business Central partners. Each newsletter contains a summary of relevant information related to Business Central. You can find it on [aka.ms/BCNews](https://aka.ms/BCNews).
