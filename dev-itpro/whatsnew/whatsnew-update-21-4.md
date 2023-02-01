@@ -42,7 +42,7 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 
 ## Upgrade to 21.4
 
-Please note that new customers will automatically get the latest builds of Business Central (21.3). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (21.4). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
