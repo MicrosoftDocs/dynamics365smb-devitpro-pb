@@ -19,6 +19,7 @@ An Azure service tag represents a group of IP addresses from/to which traffic fr
 >  - The web client will be using IP addresses not included in the service tags until the next major release
 >  - Teams and Excel clients will be using IP addresses not included in service tags for the foreseeable future
 >  - Environments on versions older than 21.2 may have traffic coming to/from IP addresses not included in the service tag
+>  - If you write data from your environment directly to a Storage Account in the same or a paired Azure Region, requests on the storage account will originate from an internal IP address and not be affected by Service Tags applied to the storage account. Learn more [here](https://learn.microsoft.com/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range).
 
 > [!NOTE]  
 > It will not be possible to control traffic on more granular levels, for example per Azure AD Tenant of a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] environment.
