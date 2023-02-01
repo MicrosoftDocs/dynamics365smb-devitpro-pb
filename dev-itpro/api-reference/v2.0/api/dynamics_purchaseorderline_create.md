@@ -23,8 +23,8 @@ Creates a purchase order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/purchaseOrders({id})/purchaseOrderLines({purchaseOrderLineId})
-POST businesscentralPrefix/companies({id})/purchaseOrderLines({purchaseOrderLineId})
+POST businesscentralPrefix/companies({id})/purchaseOrders({id})/purchaseOrderLines
+POST businesscentralPrefix/companies({id})/purchaseOrderLines
 ```
 
 ## Request headers
@@ -51,7 +51,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 Here is an example of the request.
 
 ```json
-POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLines({purchaseOrderLineId})
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/purchaseOrderLines
 Content-type: application/json
 {
     "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
@@ -68,22 +68,12 @@ Content-type: application/json
     "directUnitCost": 1397.3,
     "discountAmount": 0,
     "discountPercent": 0,
-    "discountAppliedBeforeTax": false,
-    "amountExcludingTax": 16767.6,
     "taxCode": "FURNITURE",
-    "taxPercent": 6.00002,
-    "totalTaxAmount": 1006.06,
-    "amountIncludingTax": 17773.66,
-    "invoiceDiscountAllocation": 0,
-    "netAmount": 16767.6,
-    "netTaxAmount": 1006.06,
-    "netAmountIncludingTax": 17773.66,
     "expectedReceiptDate": "2020-04-02",
-    "receivedQuantity": 0,
-    "invoicedQuantity": 0,
     "invoiceQuantity": 12,
     "receiveQuantity": 12,
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
@@ -123,7 +113,8 @@ Content-type: application/json
     "invoicedQuantity": 0,
     "invoiceQuantity": 12,
     "receiveQuantity": 12,
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
