@@ -11,13 +11,13 @@ ms.custom: bap-template
 ---
 # Record instance isolation level
 
-The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It defines how to protect a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
+The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It protects a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
 
 Database locking can be a major cause for performance issues. When AL code takes fewer locks, it increases the performance of the system for end users. By using record instance isolation level, you can improve performance by limiting database locks to only what necessary.
 
 ## How isolation level works by default
 
-The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method-md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction, leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wished.
+The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method-md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction&mdash;leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wanted.
 
 The below example shows AL code with SQL isolation level hints annotated on database reads, which solely relies on transaction determined locking.
 
@@ -70,17 +70,17 @@ end;
 
 ### Isolation levels
 
-The following table describes the different isolation levels of the [](methods-auto/enum/)that you can apply using the 
+The following table describes the different isolation levels of the [IsolationLevel option type](/isolationlevel/isolationlevel-option) that you can apply:
 
 |Value|Description|
 |-|-|
 |Default|Follows the transaction's state. It's the same as not using read isolation.|
 |ReadUncommitted|Allows dirty reads, which means it can read rows that have been modified by other transactions but not yet committed. It takes no locks and ignores locks from other transactions.|
 |ReadCommitted|Allows reads on committed data only, in other words, it can't read data that has been modified by other transactions but not yet committed. But it doesn't guarantee that rows read will stay consistent throughout the entirety of the transaction.|
-|RepetableRead|Ensures that all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that's been read by the current transaction until the current transaction completes.|
+|RepetableRead|Ensures all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that has been read by the current transaction until the current transaction completes.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
 
-For more about non-default values, go to [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) and [](/sql/t-sql/queries/hints-transact-sql-table?#updlock) in the SQL Server documentation.
+For more about non-default values, go to [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) and [UPDLOCK](/sql/t-sql/queries/hints-transact-sql-table?#updlock) in the SQL Server documentation.
 
 ## Temporarily heightening the isolation level
 
@@ -103,7 +103,7 @@ end;
 
 ## Temporarily lowering the isolation level
 
-Inside a transaction, it isn't possible to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table will require locks on the entire table. With RIIL, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
+It isn't possible inside a transaction to determine the current isolation level used in the transaction. If previously executed code has triggered a higher isolation level, counting on the entire table will require locks on the entire table. With RIIL, for example, you could get an estimated record count without locking everyone else out from making changes to the table.
 
 ```al
 local procedure GetEstimatedCount(tableno: Integer) : Integer
@@ -118,7 +118,7 @@ end;
 
 ## Differences between transaction locking and RIIL
 
-When using FlowFields and the default transaction state, it's the table state of the target table of the FlowField's formula which is used to determine the isolation level, not source table's target state. When using RIIL the target table doesn't matter since the isolation level specified on the ReadIsolation property is used.
+When using FlowFields and the default transaction state, it's the state of the target table of the FlowField's formula that's used to determine the isolation level, not source table's target state. When using RIIL, the target table doesn't matter, because the isolation level specified on the [ReadIsolation] property is used. Consider the following example.
 
 ```al
 local procedure Foo()
