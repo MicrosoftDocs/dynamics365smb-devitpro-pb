@@ -43,7 +43,7 @@ begin
 end;
 ```
 
-## Record instance isolation level
+## Using record instance isolation level
 
 With the introduction of record instance isolation level (RIIL), it's possible to explicitly select the isolation level for reads on a record instance. RIIL will override the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
 
@@ -68,7 +68,9 @@ begin
 end;
 ```
 
-## Isolation level enum values
+### Isolation levels
+
+The following table describes the different isolation levels of the [](methods-auto/enum/)that you can apply using the 
 
 |Value|Description|
 |-|-|
