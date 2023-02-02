@@ -3,7 +3,7 @@ title: "InStream Data Type"
 description: "Is a generic stream object that you can use to read from or write to files and BLOBs."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/23/2023
+ms.date: 02/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,6 +26,8 @@ The following methods are available on instances of the InStream data type.
 |Method name|Description|
 |-----------|-----------|
 |[EOS()](instream-eos-method.md)|Indicates whether an input stream has reached End of Stream (EOS).|
+|[Length()](instream-length-method.md)|Gets the stream length.|
+|[Position([BigInteger])](instream-position-method.md)|Get or set the current stream position in seekable streams.|
 |[Read(var Boolean [, Integer])](instream-read-boolean-integer-method.md)|Reads a specified number of bytes from an InStream object. Data is read in binary format.|
 |[Read(var Byte [, Integer])](instream-read-byte-integer-method.md)|Reads a specified number of bytes from an InStream object. Data is read in binary format.|
 |[Read(var Char [, Integer])](instream-read-char-integer-method.md)|Reads a specified number of bytes from an InStream object. Data is read in binary format.|
