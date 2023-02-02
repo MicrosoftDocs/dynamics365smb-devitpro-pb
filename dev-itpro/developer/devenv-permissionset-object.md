@@ -3,7 +3,7 @@ title: "Permission Set Object"
 description: "Description of the permission set object in AL for Business Central    ."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/09/2022
+ms.date: 01/05/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,9 @@ When adding new AL objects, it's easy to forget to update the permissions. With 
 ## Permission set example
 
 The following example illustrates a permission set `Sales Person` with permissions given to data in tables, each with different level of access. The [Assignable property](properties/devenv-assignable-property.md) is set to `true`, which allows the permission set to be assigned to a user. The [Permissions property](properties/devenv-permissions-property.md) is set to the list of objects to give permissions to. The `RIMD` access assigned to data in the `Customer` table provides full access, whereas, for example, access is limited for data in the `Currency` table only allowing full read and modify permission. 
+
+> [!NOTE]  
+> The name of the permissionset object is limited to 20 characters when the `Assignable` property is set to `true`. Otherwise, it's limited to 30 characters. Exceeding the limit will throw the diagnostic [Compiler Error AL0305](diagnostics/diagnostic-al305.md).
 
 ```al
 permissionset 50134 "Sales Person"

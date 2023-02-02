@@ -65,11 +65,11 @@ If you installed the **AL Development Environment**, you can find the symbol fil
         If the application database contains test objects (ID 130000-139999), then make sure to exclude these objects when generating symbols. You can do this by using the `-Filter` parameter and running the command twice:
 
         ```
-        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=1..129999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>", filter="Object ID=1..129999"
         ```
 
         ```
-        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>, filter="Object ID=140000..1999999999"
+        finsql.exe command=generatesymbolreference, ServerName=<DatabaseServerName>\<DatabaseInstance>, Database="<MyDatabaseName>", filter="Object ID=140000..1999999999"
         ```
 
         > [!NOTE]  

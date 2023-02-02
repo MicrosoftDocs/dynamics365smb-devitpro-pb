@@ -1,13 +1,13 @@
 ---
 title: System Requirements for Business Central
 description: This article provides the specifications of minimum hardware and software requirements to install and run Business Central on-premises.
+ms.custom: bap-template
+ms.service: dynamics365-business-central
+ms.topic: overview
+ms.date: 01/10/2022
 author: jswymer
-ms.custom: na
-ms.reviewer: edupont
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.date: 04/01/2021
+ms.author: jswymer
+ms.reviewer: jswymer
 ---
 # System Requirements for [!INCLUDE[prod_long](../developer/includes/prod_long.md)] April '19
 
@@ -116,7 +116,7 @@ For more information, see [Get Started with AL](../developer/devenv-get-started.
 |-|-|  
 |Supported operating systems|<ul><li>Windows 11 Pro, Enterprise, or Education \(32-bit and 64-bit editions\)</li><li>Windows 10 Pro, Enterprise, or Education \(64-bit edition\).</li><li>Windows Server 2022 (Datacenter, Standard)</li><li>Windows Server 2019 (Datacenter or Standard)</li><li>Windows Server, version 1809 or later (Datacenter, Standard)</li><li>Windows Server 2016 Standard, Essentials, or Datacenter.</li></ul> |  
 |Hardware resources|For more information, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). From this page, you can also access requirements for other versions of SQL Server.|  
-|SQL Server|<ul><li>Microsoft SQL Server 2019 Express, Standard, or Enterprise.</li><li>Microsoft SQL Server 2017 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard, or Enterprise.</li><li>Azure SQL Database Managed Instance, Elastic Pool, or Single Database.</li></ul>|  
+|SQL Server|<ul><li>Microsoft SQL Server 2022 Express, Standard, or Enterprise.</li><li>Microsoft SQL Server 2019 Express, Standard, or Enterprise.</li><li>Microsoft SQL Server 2017 Express, Standard, or Enterprise.</li> <li>Microsoft SQL Server 2016 Express, Standard, or Enterprise.</li><li>Azure SQL Database Managed Instance, Elastic Pool, or Single Database.</li></ul>|  
 |Service Packs and Cumulative Updates| Unless explicitly stated, all released Service Packs and Cumulative Updates of the above Microsoft SQL Server versions are supported. It is recommended to always be on the latest released Service Pack and Cumulative Update.|
 |Additional information|[!INCLUDE[prodsetup](../developer/includes/prodsetup.md)] installs the following software if it isn't already present on the target computer:<ul><li>SQL Server 2016 Express \(64-bit edition\).<br>If the operating system on the target computer does not support SQL Server 2016 Express, Setup displays a pre-requisite warning. In this case, you should exit Setup and then update the operating system on the computer to one that does support SQL Server 2016 Express. Then run Setup again.</li></ul>|  
 
