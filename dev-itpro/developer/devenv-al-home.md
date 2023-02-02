@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # AL Home
 
-The **AL Home** page shows news related to developing in AL for [!INCLUDE [prod_short](includes/prod_short.md)]. On the right side, you have direct links to documentation on getting started with AL development.
+The **AL Home** startup page shows news related to developing in AL for [!INCLUDE [prod_short](includes/prod_short.md)]. The **AL Home** page allows the [!INCLUDE [prod_short](includes/prod_short.md)] R&D to efficiently share news, best practices, upcoming events, urgent information and status, and learn content. 
 
 <!-- image here -->
 
