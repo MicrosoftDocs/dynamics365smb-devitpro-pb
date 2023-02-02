@@ -24,7 +24,7 @@ var
 begin
     cust.FindFirst(); // READUNCOMMITTED
 
-    // Highten isolation level for Customer table.
+    // Heighten isolation level for Customer table.
     cust.LockTable();
 
     cust.FindLast(); // UPDLOCK
@@ -50,7 +50,7 @@ var
 begin
     cust.FindFirst(); // READUNCOMMITTED
 
-    // Highten isolation level for Customer table.
+    // Heighten isolation level for Customer table.
     cust.LockTable();
 
     // Explicitly select another isolation level than the transaction's.
@@ -65,6 +65,7 @@ end;
 |Value|Description|
 |-|-|
 |Default|Follows the transaction's state. Same as not using read isolation.|
+|ReadCommitted|Allows or reads committed data, but does not guarantee that rows read will stay consistent throughout the entirety of the transaction.|
 |ReadUncommitted|Allows dirty reads, takes no locks, and ignores other's locks.|
 |RepetableRead|Ensures that all reads stable by holding shared locks for the lifetime of the transaction.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
@@ -103,7 +104,10 @@ begin
     rref.ReadIsolation := IsolationLevel::ReadUncommitted;
     exit(rref.Count);
 end;
-Differences between transaction locking and RIIL
+```
+
+## Differences between transaction locking and RIIL
+
 When using FlowFields and the default transaction state, it is the table state of the target table of the FlowField's formula which is used to determine the isolation level, not source table's target state. When using RIIL the target table does not matter since the isolation level specified on the ReadIsolation property is used.
 
 local procedure Foo()
