@@ -6,7 +6,7 @@ ms.author: magram
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 12/19/2022
+ms.date: 01/02/2023
 ms.custom: bap-template
 ---
 # Record instance isolation level
