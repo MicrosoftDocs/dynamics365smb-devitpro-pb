@@ -23,6 +23,7 @@ The following table describes the user and workspace settings for the AL Languag
 
 |Setting|Value|
 |-------|-----|
+|Are Profile Lenses Supported|Specifies whether statement lenses are supported for the profiler.|
 |Assembly Probing Paths|Sets the list of directory paths where the compiler searches for referenced .NET assemblies. For example: `"al.assemblyProbingPaths": ["./.netpackages", "C:/Program Files/Assemblies"]`|
 |Are Profile Lenses Supported| Enables the Profiler CodeLens for AL, default value is `true`. Syntax is `"al.areProfileLensesSupported": true`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Browser|Specifies the browser in which to open the [!INCLUDE[prod_short](includes/prod_short.md)] client when launching the application from Visual Studio Code.|
