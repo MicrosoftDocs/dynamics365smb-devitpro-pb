@@ -1,5 +1,5 @@
 ---
-title: "AL Language Extension Configuration"
+title: "AL Language extension configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# AL Language Extension Configuration
+# AL Language extension configuration
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
