@@ -45,7 +45,7 @@ The following code gets the number of SQL statements executed and displays the n
 
 ```al
 var
-    SqlStatementsExecuted : BigText;
+    SqlStatementsExecuted : BigInteger;
 
 begin
 
