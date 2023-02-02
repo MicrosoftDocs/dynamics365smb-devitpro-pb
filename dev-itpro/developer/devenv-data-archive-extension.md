@@ -26,7 +26,7 @@ The following patterns of use are supported:
 
 The following example illustrates these patterns.
 
-```
+```AL
 codeunit 50000 demo
 {
     trigger OnRun()
@@ -39,13 +39,14 @@ codeunit 50000 demo
             DeleteAndArchiveSomeCustomers();
         end;
     end;
+
     local procedure SaveSingleRecords()
     var
         Customer: Record Customer;
         DataArchive: Codeunit "Data Archive";
     begin
         Customer.SetRange("Country/Region Code", 'FO');
-        If Customer.FindSet() then begin
+        if Customer.FindSet() then begin
             DataArchive.Create('Our Faroese customers');
             repeat
                 DataArchive.SaveRecord(Customer);
@@ -53,6 +54,7 @@ codeunit 50000 demo
             DataArchive.Save();
         end;
     end;
+
     local procedure SaveRecordSet()
     var
         Customer: Record Customer;
@@ -60,26 +62,27 @@ codeunit 50000 demo
         RecRef: RecordRef;
     begin
         Customer.SetRange("Country/Region Code", 'FO');
-        If not Customer.IsEmpty() then begin
+        if not Customer.IsEmpty() then begin
             DataArchive.Create('Our Faroese customers');
             RecRef.GetTable(Customer);
             DataArchive.SaveRecords(RecRef);
             DataArchive.Save();
         end;
     end;
+
     local procedure DeleteAndArchiveSomeCustomers()
     var
         Customer: Record Customer;
         DataArchive: Codeunit "Data Archive";
     begin
         Customer.SetRange("Country/Region Code", 'FO');
-        If not Customer.IsEmpty() then begin
+        if not Customer.IsEmpty() then begin
             DataArchive.Create('Deleted Faroese customers');
             DataArchive.StartSubscriptionToDelete();
-        Customer.DeleteAll(true);
+            Customer.DeleteAll(true);
             DataArchive.StopSubscriptionToDelete();
             DataArchive.Save();
-            end;
+        end;
     end;
 }
 ```
@@ -87,18 +90,18 @@ codeunit 50000 demo
 ## Methods in the Data Archive codeunit
 The following table lists the methods that the Data Archive codeunit provides.
 
-|Methods  |
-|---------|
-|// Creates a new archive entry.<br>procedure Create(Description: Text): Integer     |
-|// Creates a new archive entry, resets the session and starts logging all new del<br> procedure CreateAndStartLoggingDeletions(Description: Text): Integer     |
-|// Opens an existing archive entry so more can be added to it<br> procedure Open(ID: Integer)     |
-|// Saves and closes the currently open archive entry.<br> procedure Save()     |
-|// Discards any additions and closes the currently open archive entry.<br> procedure DiscardChanges()     |
-|// Saves the supplied record to the currently open archive entry.<br> procedure SaveRecord(RecordVar: Variant) <br> procedure SaveRecord(var RecRef: RecordRef)     |
-|// Saves all records within the filters to the currently open archive entry.<br> procedure SaveRecords(var RecRef: RecordRef)     |
-|// Starts subscription to the OnDatabaseDelete trigger and calls SaveRecord with any deleted record.<br> procedure StartSubscriptionToDelete()<br> procedure StartSubscriptionToDelete(ResetSession: Boolean)     |
-|// Stops the subscription to the OnDatabaseDelete trigger.<br> procedure StopSubscriptionToDelete()     |
-|// Informs the consumer app whether there is a provider for this interface.<br> procedure DataArchiveProviderExists(): Boolean     |
+|Methods  | Description |
+|---------|-------------|
+|procedure Create(Description: Text): Integer     | Creates a new archive entry. |
+|procedure CreateAndStartLoggingDeletions(Description: Text): Integer     | Creates a new archive entry, resets the session and starts logging all new del |
+|procedure Open(ID: Integer)     | Opens an existing archive entry so more can be added to it |
+|procedure Save()     | Saves and closes the currently open archive entry. |
+|procedure DiscardChanges()     | Discards any additions and closes the currently open archive entry. |
+|procedure SaveRecord(RecordVar: Variant) <br> procedure SaveRecord(var RecRef: RecordRef)     | Saves the supplied record to the currently open archive entry. |
+|procedure SaveRecords(var RecRef: RecordRef)     | Saves all records within the filters to the currently open archive entry. |
+|procedure StartSubscriptionToDelete()<br> procedure StartSubscriptionToDelete(ResetSession: Boolean)     | Starts subscription to the OnDatabaseDelete trigger and calls SaveRecord with any deleted record. |
+|procedure StopSubscriptionToDelete()     | Stops the subscription to the OnDatabaseDelete trigger. |
+|procedure DataArchiveProviderExists(): Boolean     | Informs the consumer app whether there is a provider for this interface. |
 
 <!-- REMOVING FOR NOW. CONSIDER ADDING LATER FOR OTHER FIRST PARTY APPS
 ## Application Objects
