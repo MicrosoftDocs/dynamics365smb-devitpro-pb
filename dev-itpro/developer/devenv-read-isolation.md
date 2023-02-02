@@ -67,16 +67,16 @@ end;
 |Default|Follows the transaction's state. It's the same as not using read isolation.|
 |ReadUncommitted|Allows dirty reads, which means it can read rows that have been modified by other transactions but not yet committed. It takes no locks and ignores locks from other transactions.|
 |ReadCommitted|Allows reads on committed data only, in other words, it can't read data that has been modified by other transactions but not yet committed. But it doesn't guarantee that rows read will stay consistent throughout the entirety of the transaction.|
-|RepetableRead|Ensures that all reads stable by holding shared locks for the lifetime of the transaction.|
+|RepetableRead|Ensures that all reads are stable by holding shared locks for the lifetime of the transaction. The transaction can't read data that has been modified but not yet committed by other transactions, and no other transactions can modify data that's been read by the current transaction until the current transaction completes.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
 
 For more about non-default values, go to [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) and [](/sql/t-sql/queries/hints-transact-sql-table?#updlock) in the SQL Server documentation.
 
 ## Temporarily heightening the isolation level
 
-Previously AL only provided explicit isolation level control via the [LockTable](add link) method, which would ensure the all reads for the remainder of the transaction would use UpdLock. Instead, with RIIL code can be explicit about the isolation guarantees it needs and leave subsequent code unimpacted by its execution.
+Previously AL only provided explicit isolation level control via the `LockTable` method, which would ensure the all reads for the remainder of the transaction would use UpdLock. Instead, with RIIL code can be explicit about the isolation guarantees it needs and leave subsequent code unimpacted by its execution.
 
-The following example heightens the isolation level on a record instance of type "G/L Entry". It takes the lock on the last row, while subsequent reads won't trigger further locks to be taken. Such usage makes sense in cases with event subscribers, where one injects code into an existing business logic flow. Where it wasn't expected to introduce a LockTable call causing subsequent reads against a table to lock.
+The following example heightens the isolation level on a record instance of type "G/L Entry". It takes the lock on the last row, while subsequent reads won't trigger further locks to be taken. Such usage makes sense in cases with event subscribers, where one injects code into an existing business logic flow. Where it wasn't expected to introduce a `LockTable` call causing subsequent reads against a table to lock.
 
 ```al
 // Gets the next "Entry No." and locks just last row.
