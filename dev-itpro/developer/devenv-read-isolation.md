@@ -1,17 +1,17 @@
 ---
 title: Record instance isolation level
-description: Concept description #Required; article description that's displayed in search results. Don't enclose in quotation marks. Do end with a period.
-author: rhanajoy #Required; your GitHub user alias, with correct capitalization.
-ms.author: rhcassid #Required; your Microsoft alias; optional team alias.
-ms.reviewer: kfend #Required; Microsoft alias of content publishing team member.
-ms.service: dynamics-365 #Required; per approved Microsoft taxonomy (https://taxonomy.docs.microsoft.com/TaxonomyServiceAdminPage/#/taxonomy/detail/2022-04-07T09:00:02.5587920Z!a892accc-6925-4c06-8723-fb5e30ba7ca3/product).
-ms.topic: conceptual #Required; don't change.
+description: Learn how to set the isolation levels used when querying the Business Central database. 
+author: phduck 
+ms.author: magram 
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms.topic: conceptual
 ms.date: 12/19/2022
-ms.custom: bap-template #Required; don't change.
+ms.custom: bap-template
 ---
 # Record instance isolation level
 
-The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via LockTable, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction, leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wished.
+The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via [LockTable](methods-auto/record/record-locktable-method-md), both on a per-table basis. The heightened isolation level persists for the entirety of the transaction, leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wished.
 
 The below example shows AL code with SQL isolation level hints annotated on database reads, which solely relies on transaction determined locking.
 
@@ -60,13 +60,13 @@ begin
 end;
 ```
 
-## Isolation Level enum values
+## Isolation level enum values
 
 |Value|Description|
 |-|-|
-|Default|Follows the transaction's state. Same as not using read isolation.|
-|ReadCommitted|Allows or reads committed data, but does not guarantee that rows read will stay consistent throughout the entirety of the transaction.|
-|ReadUncommitted|Allows dirty reads, takes no locks, and ignores other's locks.|
+|Default|Follows the transaction's state. It's the same as not using read isolation.|
+|ReadUncommitted|Allows dirty reads, which means it can read rows that have been modified by other transactions but not yet committed. It takes no locks and ignores locks from other transactions.|
+|ReadCommitted|Allows reads on committed data only, in other words, it can't read data that has been modified by other transactions but not yet committed. But it doesn't guarantee that rows read will stay consistent throughout the entirety of the transaction.|
 |RepetableRead|Ensures that all reads stable by holding shared locks for the lifetime of the transaction.|
 |UpdLock|Reads for update, disallowing others to read with the same intent.|
 
@@ -110,6 +110,7 @@ end;
 
 When using FlowFields and the default transaction state, it is the table state of the target table of the FlowField's formula which is used to determine the isolation level, not source table's target state. When using RIIL the target table does not matter since the isolation level specified on the ReadIsolation property is used.
 
+```al
 local procedure Foo()
 var
     purchLine: Record "Purchase Line";
@@ -128,3 +129,7 @@ begin
     curr.CalcFields(curr."Vendor Outstanding Orders"); // READUNCOMMITTED
 end;
 ```
+
+## See also
+
+[LockTable](methods-auto/record/record-locktable-method-md) 
