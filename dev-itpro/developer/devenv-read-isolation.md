@@ -11,7 +11,13 @@ ms.custom: bap-template
 ---
 # Record instance isolation level
 
-The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via [LockTable](methods-auto/record/record-locktable-method-md), both on a per-table basis. The heightened isolation level persists for the entirety of the transaction, leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wished.
+The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It defines how to protect a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
+
+Database locking can be a major cause for performance issues. When AL code takes fewer locks, it increases the performance of the system for end users. By using record instance isolation level, you can improve performance by limiting database locks to only what necessary.
+
+## How isolation level works by default
+
+The runtime of Business Central automatically determines the isolation levels used when querying the database. A transaction's isolation level is heightened either implicitly by writes on a record or explicitly via a [LockTable](methods-auto/record/record-locktable-method-md) method call, both on a per-table basis. The heightened isolation level persists for the entirety of the transaction, leaving subsequent code executed be impacted by heightened isolation levels, whether it's required or wished.
 
 The below example shows AL code with SQL isolation level hints annotated on database reads, which solely relies on transaction determined locking.
 
@@ -36,6 +42,8 @@ begin
     curr.Find(); // READUNCOMMITTED
 end;
 ```
+
+## Record instance isolation level
 
 With the introduction of record instance isolation level (RIIL), it's possible to explicitly select the isolation level for reads on a record instance. RIIL will override the transaction's isolation level for a given table. It's possible to both heighten and lower the isolation level, with the effect being localized to the record instance instead of lasting for the entire length of the transaction.
 
@@ -108,7 +116,7 @@ end;
 
 ## Differences between transaction locking and RIIL
 
-When using FlowFields and the default transaction state, it is the table state of the target table of the FlowField's formula which is used to determine the isolation level, not source table's target state. When using RIIL the target table does not matter since the isolation level specified on the ReadIsolation property is used.
+When using FlowFields and the default transaction state, it's the table state of the target table of the FlowField's formula which is used to determine the isolation level, not source table's target state. When using RIIL the target table doesn't matter since the isolation level specified on the ReadIsolation property is used.
 
 ```al
 local procedure Foo()
