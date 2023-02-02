@@ -3,7 +3,7 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/23/2022
+ms.date: 01/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ ms.author: solsen
 The AL Language extension has many settings that can be defined for a specific user or for a workspace. To activate the settings, press **Ctrl+Shift+P**, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, you'll find the settings that are available for the AL Language extension. For tips on how to optimize Visual Studio Code, see [Optimizing Visual Studio Code for AL Development](devenv-optimize-visual-studio-code.md).
 
 ## Settings
+
 The following table describes the user and workspace settings for the AL Language extension:
 
 |Setting|Value|
@@ -40,7 +41,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Snapshot Debugger Lines Hit Decoration | Specifies the decoration values for a line that is hit by the snapshot debugger. Syntax is `al.snapshotDebuggerLinesHitDecoration`.|
 |Show Explorer at Startup|Specifies whether the AL Explorer is shown at startup. Options are: `Always`, `Never`, and `Once`. Default is `Once`. Syntax is `al.showExplorerAtStartup`.|
-|Show Home at Startup|Specifies wether the AL Home is shown at startup. Options are: `Always`, `Never`, and `WhenUpdated`. Syntax is `al.showHomeAtStartup`.|
+|Show Home at Startup|Specifies whether the AL Developer Home is shown at startup. Options are: `Always`, `Never`, and `WhenUpdated`. Default is `WhenUpdated`. Syntax is `al.showHomeAtStartup`.|
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
