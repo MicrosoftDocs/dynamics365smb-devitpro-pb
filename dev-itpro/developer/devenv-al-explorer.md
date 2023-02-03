@@ -13,6 +13,7 @@ ms.custom: bap-template
 # AL Explorer
 
 The **AL Explorer** provides a tool that allows you to explore, navigate, and better understand objects in extensions. You can drill down into object details, dependencies, and extension points, without looking at the code. With the **AL Explorer** you have a better overview of high-level structures of extensions that can help you specify new features, or do light troubleshooting.
+The **AL Explorer** has four tabs: **Objects**, **Events**, **APIs**, and **Extensible Enums**. For each of these categories, you can apply filtering, bookmarks, go to source, and for tables, pages, and report objects, you can run these directly from the explorer window.
 
 ## View, search, and filter objects
 
