@@ -13,7 +13,8 @@ ROBOTS: NOINDEX
 
 # Update 21.4 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
 
-> The update is coming soon. Stay tuned! 
+> The update is coming soon. Stay tuned!
+
 Would you like to know what has changed in update 21.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
