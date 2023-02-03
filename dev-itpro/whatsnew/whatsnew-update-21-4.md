@@ -8,6 +8,7 @@ ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
+ROBOTS: NOINDEX
 ---
 
 # Update 21.4 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
