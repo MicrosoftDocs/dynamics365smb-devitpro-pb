@@ -25,9 +25,10 @@ POST businesscentralPrefix/companies({id})/paymentTerms
 ## Request headers
 
 |Header|Value|
-|---------------|-----------------------------|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type   |application/json             |
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **paymentTerm**, the **paymentTerm** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **paymentTerms** object.

@@ -7,7 +7,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -26,10 +26,12 @@ POST businesscentralPrefix/companies({id})/customerPayments({id})
 
 ## Request headers
 
-|Header        |Value                    |
-|--------------|-------------------------|
-|Authorization |Bearer {token}. Required.|
-|Content-Type  |application/json         |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPayment**, the **customerPayment** will not be updated. |
+
 
 ## Request body
 In the request body, supply a JSON representation of **customerPayment** object.

@@ -39,9 +39,10 @@ DELETE businesscentralPrefix/companies({id})/purchaseOrderLines({id})/dimensionS
 
 ## Request headers
 
-|Header         |Value                     |
-|---------------|--------------------------|
+|Header|Value|
+|------|-----|
 |Authorization  |Bearer {token}. Required. |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **dimensionSetLine**, the **dimensionSetLine** will not be updated. |
 
 ## Request body
 Do not supply a request body for this method.
