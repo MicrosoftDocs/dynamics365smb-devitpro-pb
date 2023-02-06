@@ -108,16 +108,31 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     Inventory is imported with the cost valuation method that is set in GP at the time the migration is run. Location information as well as the quantity on hand for each time is migrated. If serial or lot information is tracked on an item, that information is also migrated.  
 
     In the GP Company Migration Configuration page, you can choose to migrate posting accounts on item classes. If you choose this option, posting accounts that are defined on *item classes* in Dynamics GP will be migrated to Business Central as *inventory posting groups*. If an item is assigned to an item class in Dynamics GP, the item will be assigned to the corresponding inventory posting group after migrating. If you only want to migrate active items you can choose to exclude inactive items in the GP Company Migration Configuration page.  Additional, you can choose if you do not want to migrate discontinued items.  
-
-    
-6. Historical data from Receivables, Payables, Sales Order Processing, Purchase Order Processing, and Inventory
-
-    This data can be used in Power BI reports and Power Apps. In Business Central online, the data is included in the SmartList views in the Customers, Vendors, and Items lists. Technically, the data is stored in table extensions.
-
-7. Checkbook master data.  
+ 
+6. Checkbook transaction and master data 
 
     You can choose to migrate all checkbooks from Dynamics GP or only active checkbooks. Unreconciled bank transactions will be migrated to Business Central so that you can reconcile your checkbooks after migrating.  Any cash receipt that has been posted should also be deposited in GP before migrating, as undeposited receipts will not migrate. 
 
+7. GP Historical Snapshot 
+
+    	In the GP Company Migration Configuration page you can select if you want to migrate historical information from GP into Business Central. This data will be visible in listpages found under the corresponding entities and navigating to GP Detail Snapshot. You can indicate if you want to migrate GL detail, Receivables, Payables, Sales Order Processing, Purchase Order Receipts and Inventory transactions.  The data is stored in extension tables in Business Central.  Data stored in those tables can be used in Power BI reports, Power Apps or other 3rd party reporting tools.   The tables containing the GP Historical Snapshot data are as follows:
+     
+Hist. G/L Account
+Hist. Gen. Journal Line
+Hist. Payables Document
+Hist. Receivables Document
+Hist. Sales Trx. Header
+Hist. Sales Trx. Line
+Hist. Purchase Recv. Header
+Hist. Purchase Recv. Line
+Hist. Inventory Trx. Header
+Hist. Inventory Trx. Line
+
+     You can limit the about of data migrated in the snapshot by entering the latest year in GP that you want brought over.  Enter this year in the Oldest GP Year field in the GP Company Migration Configuration page.  
+	
+     The GP Historical Snapshot will run as a background process after the migration is complete.  The status of the GP Historical Snapshot data can be viewed in Fact boxes in the Cloud Migration Management page.
+    
+    
 ## Diagnostics run
 
 In the **Cloud Migration Management** page, you can create a diagnostics run to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.
