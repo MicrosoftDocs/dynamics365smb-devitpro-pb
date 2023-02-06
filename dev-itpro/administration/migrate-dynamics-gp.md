@@ -117,16 +117,16 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
 
     In the GP Company Migration Configuration page you can select if you want to migrate historical information from GP into Business Central. This data will be visible in listpages found under the corresponding entities and navigating to GP Detail Snapshot. You can indicate if you want to migrate GL detail, Receivables, Payables, Sales Order Processing, Purchase Order Receipts and Inventory transactions.  The data is stored in extension tables in Business Central.  Data stored in those tables can be used in Power BI reports, Power Apps or other 3rd party reporting tools.   The tables containing the GP Historical Snapshot data are as follows:
 
-    Hist. G/L Account
-    Hist. Gen. Journal Line
-    Hist. Payables Document
-    Hist. Receivables Document
-    Hist. Sales Trx. Header
-    Hist. Sales Trx. Line
-    Hist. Purchase Recv. Header
-    Hist. Purchase Recv. Line
-    Hist. Inventory Trx. Header
-    Hist. Inventory Trx. Line
+    - Hist. G/L Account
+    - Hist. Gen. Journal Line
+    - Hist. Payables Document
+    - Hist. Receivables Document
+    - Hist. Sales Trx. Header
+    - Hist. Sales Trx. Line
+    - Hist. Purchase Recv. Header
+    - Hist. Purchase Recv. Line
+    - Hist. Inventory Trx. Header
+    - Hist. Inventory Trx. Line
 
     You can limit the about of data migrated in the snapshot by entering the latest year in GP that you want brought over.  Enter this year in the Oldest GP Year field in the GP Company Migration Configuration page.  
 
