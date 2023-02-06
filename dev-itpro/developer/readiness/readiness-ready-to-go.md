@@ -123,8 +123,10 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [Business Central on-premises licensing guide]()
 - [Business Central on-premises licensing FAQ]()
 
-## Events
+## Events for partners
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
 - Directions NA: [directionsna.com](https://directionsna.com) 
 - Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
 - Business Central TechDays: [bctechdays.com](https://bctechdays.com)
+
+## Events for customers
