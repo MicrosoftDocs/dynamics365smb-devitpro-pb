@@ -6,7 +6,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/01/2022
+ms.date: 02/01/202
 ms.author: solsen
 ---
 
@@ -25,12 +25,19 @@ PATCH businesscentralPrefix/companies({companyId})/attachments({attachmentId})/a
 
 ## Request headers
 
-|Header        |Value                    |
-|--------------|-------------------------|
-|Authorization |Bearer {token}. Required.|
-|Content-Type  |application/json         |
-|If-Match  |*application/json*         |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **attachment**, the **attachments** will not be updated. |
 
+## Request body
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+## Response
+
+If successful, this method returns a ```200 OK``` response code and an updated **attachment** object in the response body.
 
 ## Example
 
@@ -45,7 +52,22 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({companyId})/attachment
 Request body contains the attachment.
 
 **Response**
-If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
+
+Here is an example of the response.
+
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "id" : ,
+    "parentId" : ,
+    "fileName" : ,
+    "byteSize" : ,
+    "attachmentContent" : ,
+    "lastModifiedDateTime" : ,
+    "parentType" :
+}
+```
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    

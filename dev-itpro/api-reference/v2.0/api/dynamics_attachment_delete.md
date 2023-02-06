@@ -6,7 +6,7 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/01/2022
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -24,9 +24,11 @@ DELETE businesscentralPrefix/companies({companyId})/attachments({attachmentId})
 
 ## Request headers
 
-|Header         |Value                     |
-|---------------|--------------------------|
+|Header|Value|
+|------|-----|
 |Authorization  |Bearer {token}. Required. |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **attachment**, the **attachment** will not be updated. |
+
 
 ## Request body
 Do not supply a request body for this method.
@@ -46,9 +48,11 @@ DELETE https://{businesscentralPrefix}/api/v2.0/companies({companyId})/attachmen
 
 **Response** 
 
-No Content.
+Here is an example of the response.
 
-
+```json
+HTTP/1.1 204 No Content
+```
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
