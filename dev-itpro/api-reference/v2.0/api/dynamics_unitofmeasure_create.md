@@ -27,7 +27,8 @@ POST businesscentralPrefix/companies({id})/unitsOfMeasure
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json   |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **unitOfMeasure**, the **unitOfMeasure** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **unitsOfMeasure** object.
