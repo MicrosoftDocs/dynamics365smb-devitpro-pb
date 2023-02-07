@@ -160,7 +160,7 @@ Like with reports, other fields aren't selected for load, even if they may be us
 Partial records are automatically applied based on the page’s metadata for List and ListPart page types that are opened in the web client. As with OData pages, the page's definition is used to select which fields to load. More fields may be required, for example, to enable subpage linking. 
 
 > [!NOTE]
-> OnFindRecord and OnNextRecord triggers conflict with partial record feature with List and ListPart pages, so if these triggers are defined in the metadata, the partial record feature won't be applied and it fall back to standard loading behavior.
+> OnFindRecord and OnNextRecord triggers conflict with partial record feature with List and ListPart pages, so if these triggers are defined in the metadata, the partial record feature won't be applied.
 
 ### Table relation-based lookups
 
