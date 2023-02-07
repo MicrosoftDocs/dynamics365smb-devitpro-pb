@@ -41,6 +41,7 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the purchaseInvoiceLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the purchaseInvoiceLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseInvoiceLine.|
+|[location](dynamics_location.md)|location |Gets the location of the purchaseInvoiceLine.|
 
 ## Properties
 
@@ -72,6 +73,7 @@ Represents a purchase invoice line in [!INCLUDE[prod_short](../../../includes/pr
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |expectedReceiptDate|date|The date the item in the line is expected to be received.|
 |itemVariantId|GUID|The ID of the item variant in the purchase invoice line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -105,7 +107,8 @@ Here is a JSON representation of the purchaseInvoiceLine resource.
     "netTaxAmount": "decimal",
     "netAmountIncludingTax": "decimal",
     "expectedReceiptDate": "date",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

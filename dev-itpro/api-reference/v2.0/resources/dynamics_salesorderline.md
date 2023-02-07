@@ -41,6 +41,7 @@ Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the salesOrderLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the salesOrderLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesOrderLine.|
+|[location](dynamics_location.md)|location |Gets the location of the salesOrderLine.|
 
 ## Properties
 
@@ -76,6 +77,7 @@ Represents a sales order line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |invoiceQuantity|decimal|The quantity of items from the sales order line to be invoiced. Read-Only.|
 |shipQuantity|decimal|The quantity of items from the order to be shipped.|
 |itemVariantId|GUID|The ID of the item variant in the sales order line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -113,7 +115,8 @@ Here is a JSON representation of the salesOrderLine resource.
     "invoicedQuantity": "decimal",
     "invoiceQuantity": "decimal",
     "shipQuantity": "decimal",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

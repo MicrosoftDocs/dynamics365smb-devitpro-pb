@@ -72,6 +72,7 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 |payToState|string|Pay to state.|
 |payToPostCode|string|Pay to post code.|
 |currencyCode|string|The default currency code for the purchase receipt.|
+|orderNumber|string|The number of the order to which the purchase receipt is associated to. Read-Only.|
 |lastModifiedDateTime|datetime|The last datetime the purchase receipt was modified. Read-Only.|
 
 ## JSON representation
@@ -112,6 +113,7 @@ Here is a JSON representation of the purchaseReceipt resource.
     "payToState": "string",
     "payToPostCode": "string",
     "currencyCode": "string",
+    "orderNumber": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

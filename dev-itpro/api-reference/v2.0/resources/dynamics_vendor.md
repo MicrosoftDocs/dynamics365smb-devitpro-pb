@@ -42,7 +42,7 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |[picture](dynamics_picture.md)|picture |Gets the picture of the vendor.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the vendor.|
 |[agedAccountsPayable](dynamics_agedaccountspayable.md)|agedAccountsPayable |Gets the agedaccountspayable of the vendor.|
-|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the vendor.|
+|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the vendor.|
 
 ## Properties
 

@@ -40,7 +40,7 @@ Represents a trial balance in [!INCLUDE[prod_short](../../../includes/prod_short
 |:-------------------|:-------|:---------------|
 |accountId|GUID|The id of the account that the trial balance is related to. |
 |number|string|Specifies the number of the trial balance.|
-|accountType|string|The type of the account that the trial balance is related to. |
+|accountType|NAV.glAccountType|The type of the account that the trial balance is related to. It can be "Posting", "Heading", "Total", "Begin Total" or "End Total". |
 |display|string|The trial balance item display name.|
 |totalDebit|string|Represents total debit amount in G/L Account.|
 |totalCredit|string|Represents total credit amount in G/L Account.|
@@ -57,7 +57,7 @@ Here is a JSON representation of the trialBalance resource.
 {
     "accountId": "GUID",
     "number": "string",
-    "accountType": "string",
+    "accountType": "NAV.glAccountType",
     "display": "string",
     "totalDebit": "string",
     "totalCredit": "string",
