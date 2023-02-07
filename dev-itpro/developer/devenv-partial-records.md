@@ -153,7 +153,7 @@ For pages opened by OData service calls, the page's metadata is used to define w
 Like with reports, other fields aren't selected for load, even if they may be used in triggers. But you can add extra fields the following ways:
 
 - Add the field to the page layout.
-- Add the field to the set of fields to be loaded via the [AddLoadFields](methods-auto/record/record-addloadfields-method.md) method on the [OnFind](triggers-auto/page/devenv-onfindrecord-page-trigger.md) trigger.  
+- Add the field to the set of fields to be loaded via the [AddLoadFields](methods-auto/record/record-addloadfields-method.md) method on the [OnFindRecord](triggers-auto/page/devenv-onfindrecord-page-trigger.md) trigger.  
 
 ### List and ListPart pages 
 
