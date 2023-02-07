@@ -44,7 +44,7 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[picture](dynamics_picture.md)|picture |Gets the picture of the customer.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the customer.|
 |[agedAccountsReceivable](dynamics_agedaccountsreceivable.md)|agedAccountsReceivable |Gets the agedaccountsreceivable of the customer.|
-|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
+|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
 
 ## Properties
 
@@ -63,6 +63,9 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |phoneNumber|string|Specifies the customer's telephone number.|
 |email|string|Specifies the customer's email address.|
 |website|string|Specifies the customer's home page address.|
+|salespersonCode|string||
+|balanceDue|decimal|Specifies total balance due.|
+|creditLimit|decimal||
 |taxLiable|boolean|Specifies if the customer or vendor is liable for sales tax. Set to **true** if the customer is tax liable.|
 |taxAreaId|GUID|Specifies which tax area the customer belongs to.|
 |taxAreaDisplayName|string|Specified the display name of the tax area the customer belongs to.|
@@ -95,6 +98,9 @@ Here is a JSON representation of the customer resource.
     "phoneNumber": "string",
     "email": "string",
     "website": "string",
+    "salespersonCode": "string",
+    "balanceDue": "decimal",
+    "creditLimit": "decimal",
     "taxLiable": "boolean",
     "taxAreaId": "GUID",
     "taxAreaDisplayName": "string",

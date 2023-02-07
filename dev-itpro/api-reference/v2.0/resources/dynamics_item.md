@@ -36,6 +36,8 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 | Navigation |Return Type| Description |
 |:----------|:----------|:-----------------|
 |[itemCategory](dynamics_itemcategory.md)|itemCategory |Gets the itemcategory of the item.|
+|[inventoryPostingGroup](dynamics_inventorypostinggroup.md)|inventoryPostingGroup |Gets the inventorypostinggroup of the item.|
+|[generalProductPostingGroup](dynamics_generalproductpostinggroup.md)|generalProductPostingGroup |Gets the generalproductpostinggroup of the item.|
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the item.|
 |[picture](dynamics_picture.md)|picture |Gets the picture of the item.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the item.|
@@ -61,6 +63,10 @@ Represents an item in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |taxGroupCode|string|A Tax Group represents a group of inventory items or resources that are subject to identical tax terms.|
 |baseUnitOfMeasureId|GUID|Specifies the ID of the unit of measure.|
 |baseUnitOfMeasureCode|string|The item's base unit of measure code.|
+|generalProductPostingGroupId|GUID||
+|generalProductPostingGroupCode|string||
+|inventoryPostingGroupId|GUID||
+|inventoryPostingGroupCode|string||
 |lastModifiedDateTime|datetime|The last datetime the item was modified. Read-Only.|
 
 ## JSON representation
@@ -86,6 +92,10 @@ Here is a JSON representation of the item resource.
     "taxGroupCode": "string",
     "baseUnitOfMeasureId": "GUID",
     "baseUnitOfMeasureCode": "string",
+    "generalProductPostingGroupId": "GUID",
+    "generalProductPostingGroupCode": "string",
+    "inventoryPostingGroupId": "GUID",
+    "inventoryPostingGroupCode": "string",
     "lastModifiedDateTime": "datetime"
 }
 ```

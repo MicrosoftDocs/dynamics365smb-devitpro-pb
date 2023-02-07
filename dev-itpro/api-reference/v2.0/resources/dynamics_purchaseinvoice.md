@@ -44,7 +44,9 @@ The response has no content; the response code is 204.
 |:----------|:----------|:-----------------|
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the purchaseInvoice.|
 |[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the purchaseInvoice.|
+|[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the purchaseInvoice.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the purchaseInvoice.|
+|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the purchaseInvoice.|
 |[purchaseInvoiceLines](dynamics_purchaseinvoiceline.md)|purchaseInvoiceLines |Gets the purchaseinvoicelines of the purchaseInvoice.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the purchaseInvoice.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the purchaseInvoice.|
@@ -87,6 +89,8 @@ The response has no content; the response code is 204.
 |payToCountry|string|Pay to country.|
 |payToState|string|Pay to state.|
 |payToPostCode|string|Pay to post code.|
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
 |currencyId|GUID|Specifies which currency the purchase invoice uses.|
 |currencyCode|string|The default currency code for the purchase invoice.|
 |orderId|GUID|The id of the order to which the purchase invoice is associated to. Read-Only.|
@@ -140,6 +144,8 @@ Here is a JSON representation of the purchaseInvoice resource.
     "payToCountry": "string",
     "payToState": "string",
     "payToPostCode": "string",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
     "currencyId": "GUID",
     "currencyCode": "string",
     "orderId": "GUID",
