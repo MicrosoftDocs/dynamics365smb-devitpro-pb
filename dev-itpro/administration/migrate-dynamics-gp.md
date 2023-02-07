@@ -131,7 +131,8 @@ When you migrate from Dynamics GP, the following information is migrated from Dy
     You can limit the about of data migrated in the snapshot by entering the latest year in GP that you want brought over.  Enter this year in the Oldest GP Year field in the GP Company Migration Configuration page.  
 
     The GP Historical Snapshot will run as a background process after the migration is complete.  The status of the GP Historical Snapshot data can be viewed in Fact boxes in the Cloud Migration Management page.
-
+   
+    
 ## Diagnostics run
 
 In the **Cloud Migration Management** page, you can create a diagnostics run to do more data validation/verification before the migration is run so that you can decrease the risk of a failed migration.
