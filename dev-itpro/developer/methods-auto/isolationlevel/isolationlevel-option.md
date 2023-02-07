@@ -3,7 +3,7 @@ title: "IsolationLevel System Option"
 description: "The isolation level applied for this record."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/23/2023
+ms.date: 02/07/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,7 @@ The isolation level applied for this record.
 |----------------|---------------|
 |Default|Follows the table's isolation level for reads, same behavior as not choosing an IsolationLevel.|
 |ReadUncommitted|Allows the record to read uncommitted changes from other transactions.|
+|ReadCommitted|Only allows for reads committed data, but does not guarantee that rows read will stay consistent throughout the entirety of the transaction.|
 |RepeatableRead|Guarantees that rows read will stay consistent during the entirety of the current transaction. Does not allow reading of uncommitted data.|
 |UpdLock|Ensures that the rows read will stay consistent in the entirety of the current transaction, while also blocking readers with the same isolation level. Does not allow reading of uncommitted data.|
 
