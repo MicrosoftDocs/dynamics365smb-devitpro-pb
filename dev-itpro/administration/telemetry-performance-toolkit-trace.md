@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, BCPT, Performance Toolkit, performance
 ms.date: 08/02/2022
-ms.author: bverbeek
+ms.author: jswymer
 ---
 
 # Analyzing Performance Toolkit Telemetry
