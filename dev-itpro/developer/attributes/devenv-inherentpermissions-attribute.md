@@ -54,7 +54,7 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 ## Example 
 
 ```AL
-[InherentPermissions (PermissionObjectType:Table, Database:"Customers", 'r', InherentPermissionsScope:Both)]
+[InherentPermissions (PermissionObjectType::Table, Database::"Customer", 'r', InherentPermissionsScope::Both)]
 ```
 
 > [!NOTE]  
