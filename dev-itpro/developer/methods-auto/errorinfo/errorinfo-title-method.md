@@ -3,7 +3,7 @@ title: "ErrorInfo.Title([Text]) Method"
 description: "Specifies the title of the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 02/08/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,13 @@ The current title of the ErrorInfo.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+Set the **Title** property on error dialogs that are presented to the user to provide a more informative issue description. Also, use the [ErrorInfo.AddAction(Text, Integer, Text) Method](errorinfo-addaction-method.md) to add up to three custom actions, which will be shown in the error dialog to provide users with guidance on how to correct any errors.
+
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)

@@ -3,7 +3,7 @@ title: "ErrorInfo.AddAction(Text, Integer, Text) Method"
 description: "Specifies an action for the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 02/08/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -47,7 +47,17 @@ The name of the method in the Codeunit, which is specified by the CodeunitID par
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The **AddAction** method accepts three parameters:
+
+- **Caption**, which is the text string that appears as the caption of the action in the error UI.
+- **CodeunitID**, which is the ID of the codeunit to run when the action is initiated from the error UI. The codeunit should contain at least one global method to be called by the error action. The global method must have an ErrorInfo data type parameter for accepting the ErrorInfo object.
+- **Method Name**, which is the name of the method in the codeunit specified by the CodeunitID parameter, that you want to run for the action.
+- 
 ## See Also
+
 [ErrorInfo Data Type](errorinfo-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
