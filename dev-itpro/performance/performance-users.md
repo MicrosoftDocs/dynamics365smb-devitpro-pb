@@ -48,6 +48,14 @@ The overall structure of a page (but not business data) is cached on the client 
 
 If a choice of networks is available, consider connecting to a secure network that has lower latency. In general, the user interface performs better when latency is low.
 
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts the app. We recommend that you test network latency at [AzureSpeed.com](AzureSpeed.com) or similar services.
+
+Bandwidth requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] depends on your scenario. Most typical scenarios require a bandwidth that is 1 megabyte per second (MBps) or more. However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve rich media or client add-ins.
+
+> [!IMPORTANT]  
+> Do not calculate the total bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent network usage of a given location is very difficult to calculate.
+
+
 ## Keep powered up
 
 Newer browsers and operating systems are better at handling resources such as memory, network, and storage. Some devices will automatically limit resources available to the browser when running on battery power. Consider keeping laptops and similar devices plugged in to a power source for best performance.
