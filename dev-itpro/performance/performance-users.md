@@ -2,7 +2,7 @@
 title: Performance Tips for Business Users
 description: Various tips and tricks to improve speed and agility of working with Business Central.
 ms.custom: na
-ms.date: 05/27/2022
+ms.date: 02/09/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,10 +50,10 @@ If a choice of networks is available, consider connecting to a secure network th
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the Microsoft Azure datacenter that hosts the app. We recommend that you test network latency at [AzureSpeed.com](AzureSpeed.com) or similar services.
 
-Bandwidth requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] depends on your scenario. Most typical scenarios require a bandwidth that is 1 megabyte per second (MBps) or more. However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve rich media or client add-ins.
+Bandwidth requirements for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] depend on your scenario. Most typical scenarios require a bandwidth, which is 1 megabyte per second (MBps) or more. However, we recommend more bandwidth for scenarios that have high payload requirements, such as scenarios that involve rich media or client add-ins.
 
 > [!IMPORTANT]  
-> Do not calculate the total bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent network usage of a given location is very difficult to calculate.
+> Don't calculate the total bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent network usage of a given location is very difficult to calculate.
 
 
 ## Keep powered up
