@@ -159,6 +159,9 @@ Calling CopyRows on the DataTransfer object inserts a row in the destination tab
 
 If the code tries to copy a row from the source table that has the same primary key as an existing row in the destination table, a runtime error will be thrown.
 
+> [!NOTE]
+> Copying the SystemID field using CopyRows is supported in Business Central version 21.5 and later.
+
 ### Example 2
 
 To help explain CopyRows, consider an example using sample tables **Source** and **Destination** again. 
