@@ -3,10 +3,10 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 07/29/2022
+ms.date: 02/11/2023
 ms.reviewer: edupont
 ms.topic: conceptual
-ms.author: soalex
+ms.author: altotovi
 ---
 
 # Country/regional availability and supported languages
@@ -23,110 +23,143 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 ## Countries and regions
 
-|Country/Region|Localized by|Availability|Environment Country Abbreviation|Azure Region|
-|-----------|---------|------------|-----------|---------|
-|Albania|Partner|Available|AL|West Europe, Netherlands|
-|Algeria|Partner|Available|DZ|South Africa North|
-|Angola|Partner|Available|AO|South Africa North|
-|Argentina|Partner|Available|AR|Brazil South|
-|Australia|Microsoft|Available|AU|Australia East|
-|Austria|Microsoft|Available|AT|West Europe, Netherlands|
-|Bahrain|Partner|Available|BH|UAE North|
-|Bangladesh|Partner|Available|BD|Southeast Asia, Singapore|
-|Belgium|Microsoft|Available|BE|West Europe, Netherlands|
-|Bosnia and Herzegovina|Partner|Available|BA|West Europe, Netherlands|
-|Botswana|Partner|Available|BW|South Africa North|
-|Bulgaria|Partner|Available|BG|West Europe, Netherlands|
-|Brazil|Partner|Available|BR|Brazil South|
-|Canada|Microsoft|Available|CA|Canada Central|
-|Chile|Partner|Available|CL|Brazil South|
-|Colombia|Partner|Available|CO|Brazil South|
-|Costa Rica|Partner|Available|CR|Brazil South|
-|Croatia|Partner|Available|HR|West Europe, Netherlands|
-|Cyprus|Partner|Available|CY|West Europe, Netherlands|
-|Czechia|Microsoft|Available|CZ|West Europe, Netherlands|
-|Denmark|Microsoft|Available|DK|North Europe, Ireland|
-|Dominican Republic|Partner|Available|DO|Brazil South|
-|Ecuador|Partner|Available|EC|Brazil South|
-|El Salvador|Partner|Available|SV|Brazil South|
-|Egypt|Partner|Available|EG|South Africa North|
-|Estonia|Partner|Available|EE|North Europe, Ireland|
-|Faroe Islands (Denmark)|Microsoft|Available|DK|North Europe, Ireland|
-|Finland|Microsoft|Available|FI|North Europe, Ireland|
-|France|Microsoft|Available|FR|France Central|
-|Georgia|Partner|Available|GE|West Europe, Netherlands|
-|Germany|Microsoft|Available|DE|Germany West Central|
-|Greece|Partner|Available|GR|West Europe, Netherlands|
-|Greenland (Denmark)|Microsoft|Available|DK|West Europe, Netherlands|
-|Guatemala|Partner|Available|GT|Brazil South|
-|Honduras|Partner|Available|HN|Brazil South|
-|Hong Kong SAR|Partner|Available|HK|Southeast Asia, Singapore|
-|Hungary|Partner|Available|HU|West Europe, Netherlands|
-|Iceland|Microsoft|Available|IS|North Europe, Ireland|
-|India|Microsoft|Available|IN|Central India|
-|Indonesia|Partner|Available|ID|Southeast Asia, Singapore|
-|Ireland|Partner|Available|IE|North Europe, Ireland|
-|Israel (no RTL; English only)|Partner|Available|IL|UAE North|
-|Italy|Microsoft|Available|IT|West Europe, Netherlands|
-|Jamaica|Partner|Available|JM|South Central US|
-|Japan|Partner|Available|JP|Japan East, Japan|
-|Jordan|Partner|Available|JO|UAE North|
-|Kenya|Partner|Available|KE|South Africa North|
-|Kuwait|Partner|Available|KW|UAE North|
-|Latvia|Partner|Available|LV|North Europe, Ireland|
-|Lebanon|Partner|Available|LB|UAE North|
-|Lithuania|Partner|Available|LT|North Europe, Ireland|
-|Luxembourg|Partner|Available|LU|West Europe, Netherlands|
-|Malaysia|Partner|Available|MY|Southeast Asia, Singapore|
-|Maldives|Partner|Available|MV|Southeast Asia, Singapore|
-|Malta|Partner|Available|MT|West Europe, Netherlands|
-|Mauritius|Partner|Available|MU|South Africa North|
-|Mexico|Microsoft|Available|MX|South Central US|
-|Monaco (France)|Partner|Available|MC|France Central|
-|Mongolia|Partner|Available|MN|Southeast Asia|
-|Montenegro|Partner|Available|ME|West Europe, Netherlands|
-|Morocco|Partner|Available|MA|South Africa North|
-|Netherlands|Microsoft|Available|NL|West Europe, Netherlands|
-|New Zealand|Microsoft|Available|NZ|Australia East|
-|Nicaragua|Partner|Available|NI|Brazil South|
-|Nigeria|Partner|Available|NG|South Africa North|
-|North Macedonia|Partner|Available|MK|West Europe, Netherlands|
-|Norway|Microsoft|Available|NO|Norway East|
-|Oman|Partner|Available|OM|UAE North|
-|Pakistan|Partner|Available|PK|Central India|
-|Panama|Partner|Available|PA|Brazil South|
-|Paraguay|Partner|Available|PY|Brazil South|
-|Peru|Partner|Available|PE|Brazil South|
-|Philippines|Partner|Available|PH|Southeast Asia, Singapore|
-|Poland|Partner|Available|PL|West Europe, Netherlands|
-|Portugal|Partner|Available|PT|West Europe, Netherlands|
-|Puerto Rico|Partner|Available|PR|Brazil South|
-|Qatar|Partner|Available|QA|UAE North|
-|Romania|Partner|Available|RO|West Europe, Netherlands|
-|Russia **(on-premises only)**|Microsoft|Available|(Not listed)|N/A|
-|Saudi Arabia|Partner|Available|SA|UAE North|
-|Serbia|Partner|Available|RS|West Europe, Netherlands|
-|Singapore|Partner|Available|SG|Southeast Asia, Singapore|
-|Slovakia|Partner|Available|SK|West Europe, Netherlands|
-|Slovenia|Partner|Available|SI|West Europe, Netherlands|
-|South Africa|Partner|Available|ZA|South Africa North|
-|South Korea|Partner|Available|KR|Korea Central, Korea|
-|Spain|Microsoft|Available|ES|West Europe, Netherlands|
-|Sri Lanka|Partner|Available|LK|Southeast Asia, Singapore|
-|Sweden|Microsoft|Available|SE|North Europe, Ireland|
-|Switzerland|Microsoft|Available|CH|Switzerland North|
-|Taiwan|Partner|Available|TW|Southeast Asia, Singapore|
-|Thailand|Partner|Available|TH|Southeast Asia, Singapore|
-|Trinidad and Tobago|Partner|Available|TT|Brazil South|
-|Tunisia|Partner|Available|TN|South Africa North|
-|Türkiye|Partner|Available|TR|West Europe, Netherlands|
-|Ukraine|Partner|Available|UA|West Europe, Netherlands|
-|United Arab Emirates|Partner|Available|AE|UAE North|
-|United Kingdom|Microsoft|Available|GB|UK West|
-|United States|Microsoft|Available|US|East US|
-|Uruguay|Partner|Available|UY|Brazil South|
-|Vietnam|Partner|Available|VN|Southeast Asia, Singapore|
-|Zimbabwe|Partner|Available|ZW|South Africa North|
+|Country/Region|Localized by|BaseApp|Availability|Environment Country Abbreviation|Azure Region|
+|-----------|---------|------------|-----------|---------|---------|
+|Albania|Partner|W1|Available|AL|West Europe, Netherlands|
+|Algeria|Partner|W1|Available|DZ|South Africa North|
+|Andorra|Partner|ES|Planned in June 2023|AD|West Europe, Netherlands|
+|Angola|Partner|W1|Available|AO|South Africa North|
+|Argentina|Partner|W1|Available|AR|Brazil South|
+|Armenia|Partner|W1|Planned in June 2023|AM|West Europe, Netherlands|
+|Australia|Microsoft|AU|Available|AU|Australia East|
+|Austria|Microsoft|AT|Available|AT|West Europe, Netherlands|
+|Azerbaijan|Partner|W1|Planned in June 2023|AZ|West Europe, Netherlands|
+|Bahamas|Partner|W1|Planned in June 2023|BS|South Central US|
+|Bahrain|Partner|W1|Available|BH|UAE North|
+|Bangladesh|Partner|W1|Available|BD|Southeast Asia, Singapore|
+|Belgium|Microsoft|BE|Available|BE|West Europe, Netherlands|
+|Bermuda|Partner|W1|Planned in June 2023|BM|South Central US|
+|Bolivia|Partner|W1|Planned in June 2023|BO|Brazil South|
+|Bosnia and Herzegovina|Partner|W1|Available|BA|West Europe, Netherlands|
+|Botswana|Partner|W1|Available|BW|South Africa North|
+|British Virgin Islands|Partner|W1|Planned in June 2023|VG|South Central US|
+|Bulgaria|Partner|W1|Available|BG|West Europe, Netherlands|
+|Brazil|Partner|W1|Available|BR|Brazil South|
+|Cambodia|Partner|W1|Planned in June 2023|KH|Southeast Asia, Singapore|
+|Cameroon|Partner|W1|Planned in June 2023|CM|South Africa North|
+|Canada|Microsoft|NA|Available|CA|Canada Central|
+|Cayman Islands|Partner|W1|Planned in June 2023|KY|South Central US|
+|Chile|Partner|W1|Available|CL|Brazil South|
+|Colombia|Partner|W1|Available|CO|Brazil South|
+|Costa Rica|Partner|W1|Available|CR|Brazil South|
+|Croatia|Partner|W1|Available|HR|West Europe, Netherlands|
+|Cyprus|Partner|W1|Available|CY|West Europe, Netherlands|
+|Czechia|Microsoft|W1|Available|CZ|West Europe, Netherlands|
+|Denmark|Microsoft|W1|Available|DK|North Europe, Ireland|
+|Dominican Republic|Partner|W1|Available|DO|Brazil South|
+|Ecuador|Partner|W1|Available|EC|Brazil South|
+|El Salvador|Partner|W1|Available|SV|Brazil South|
+|Egypt|Partner|W1|Available|EG|South Africa North|
+|Estonia|Partner|W1|Available|EE|North Europe, Ireland|
+|Ethiopia|Partner|W1|Planned in June 2023|ET|South Africa North|
+|Faroe Islands (Denmark)|Microsoft|W1|Available|DK|North Europe, Ireland|
+|Fiji|Partner|W1|Planned in June 2023|FJ|Southeast Asia, Singapore|
+|Finland|Microsoft|FI|Available|FI|North Europe, Ireland|
+|France|Microsoft|FR|Available|FR|France Central|
+|Georgia|Partner|W1|Available|GE|West Europe, Netherlands|
+|Germany|Microsoft|DE|Available|DE|Germany West Central|
+|Ghana|Partner|W1|Planned in June 2023|GH|South Africa North|
+|Greece|Partner|W1|Available|GR|West Europe, Netherlands|
+|Greenland (Denmark)|Microsoft|W1|Available|DK|West Europe, Netherlands|
+|Guatemala|Partner|W1|Available|GT|Brazil South|
+|Guernsey|Partner|GB|Planned in June 2023|GG|UK West|
+|Honduras|Partner|W1|Available|HN|Brazil South|
+|Hong Kong SAR|Partner|W1|Available|HK|Southeast Asia, Singapore|
+|Hungary|Partner|W1|Available|HU|West Europe, Netherlands|
+|Iceland|Microsoft|IS|Available|IS|North Europe, Ireland|
+|India|Microsoft|W1|Available|IN|Central India|
+|Indonesia|Partner|W1|Available|ID|Southeast Asia, Singapore|
+|Ireland|Partner|W1|Available|IE|North Europe, Ireland|
+|Isle of Man|Partner|GB|Planned in June 2023|IM|UK West|
+|Israel (no RTL; English only)|Partner|W1|Available|IL|UAE North|
+|Italy|Microsoft|IT|Available|IT|West Europe, Netherlands|
+|Jamaica|Partner|W1|Available|JM|South Central US|
+|Japan|Partner|W1|Available|JP|Japan East, Japan|
+|Jersey|Partner|GB|Planned in June 2023|JE|UK West|
+|Jordan|Partner|W1|Available|JO|UAE North|
+|Kazakhstan|Partner|W1|Planned in June 2023|KZ|West Europe, Netherlands|
+|Kenya|Partner|W1|Available|KE|South Africa North|
+|Kosovo|Partner|W1|Planned in June 2023||XK|West Europe, Netherlands|
+|Kuwait|Partner|W1|Available|KW|UAE North|
+|Latvia|Partner|W1|Available|LV|North Europe, Ireland|
+|Lebanon|Partner|W1|Available|LB|UAE North|
+|Liechtenstein|Partner|CH|Planned in June 2023||LI|Switzerland North|
+|Lithuania|Partner|W1|Available|LT|North Europe, Ireland|
+|Luxembourg|Partner|W1|Available|LU|West Europe, Netherlands|
+|Macau (SAR China)|Partner|W1|Planned in June 2023|MO|Southeast Asia, Singapore|
+|Madagascar|Partner|W1|Planned in June 2023||MG|South Africa North|
+|Malawi|Partner|W1|Planned in June 2023||MW|South Africa North|
+|Malaysia|Partner|W1|Available|MY|Southeast Asia, Singapore|
+|Maldives|Partner|W1|Available|MV|Southeast Asia, Singapore|
+|Malta|Partner|W1|Available|MT|West Europe, Netherlands|
+|Mauritius|Partner|W1|Available|MU|South Africa North|
+|Mexico|Microsoft|NA|Available|MX|South Central US|
+|Monaco|Partner|FR|Available|MC|France Central|
+|Mongolia|Partner|W1|Available|MN|Southeast Asia|
+|Montenegro|Partner|W1|Available|ME|West Europe, Netherlands|
+|Morocco|Partner|W1|Available|MA|South Africa North|
+|Mozambique|Partner|W1|Planned in June 2023|MZ|South Africa North|
+|Namibia|Partner|W1|Planned in June 2023|NA|South Africa North|
+|Nepal|Partner|W1|Planned in June 2023|NP|Central India|
+|Netherlands|Microsoft|NL|Available|NL|West Europe, Netherlands|
+|New Zealand|Microsoft|NZ|Available|NZ|Australia East|
+|Nicaragua|Partner|W1|Available|NI|Brazil South|
+|Nigeria|Partner|W1|Available|NG|South Africa North|
+|North Macedonia|Partner|W1|Available|MK|West Europe, Netherlands|
+|Norway|Microsoft|NO|Available|NO|Norway East|
+|Oman|Partner|W1|Available|OM|UAE North|
+|Pakistan|Partner|W1|Available|PK|Central India|
+|Panama|Partner|W1|Available|PA|Brazil South|
+|Paraguay|Partner|W1|Available|PY|Brazil South|
+|Peru|Partner|W1|Available|PE|Brazil South|
+|Philippines|Partner|W1|Available|PH|Southeast Asia, Singapore|
+|Poland|Partner|W1|Available|PL|West Europe, Netherlands|
+|Portugal|Partner|W1|Available|PT|West Europe, Netherlands|
+|Puerto Rico|Partner|W1|Available|PR|Brazil South|
+|Qatar|Partner|W1|Available|QA|UAE North|
+|Romania|Partner|W1|Available|RO|West Europe, Netherlands|
+|Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
+|San Marino|Partner|IT|Planned in June 2023|SM|West Europe, Netherlands|
+|Sao Tome & Principe|Partner|W1|Planned in June 2023|SM|South Africa North|
+|Saudi Arabia|Partner|W1|Available|SA|UAE North|
+|Senegal|Partner|W1|Planned in June 2023|SN|South Africa North|
+|Serbia|PartnerW1||Available|RS|West Europe, Netherlands|
+|Singapore|Partner|W1|Available|SG|Southeast Asia, Singapore|
+|Slovakia|Partner|W1|Available|SK|West Europe, Netherlands|
+|Slovenia|Partner|W1|Available|SI|West Europe, Netherlands|
+|South Africa|Partner|W1|Available|ZA|South Africa North|
+|South Korea|Partner|W1|Available|KR|Korea Central, Korea|
+|Spain|Microsoft|ES|Available|ES|West Europe, Netherlands|
+|Sri Lanka|Partner|W1|Available|LK|Southeast Asia, Singapore|
+|Sweden|Microsoft|SE *1)*|Available|SE|North Europe, Ireland|
+|Switzerland|Microsoft|CH|Available|CH|Switzerland North|
+|Taiwan|Partner|W1|Available|TW|Southeast Asia, Singapore|
+|Tanzania|Partner|W1|Planned in June 2023|TZ|South Africa North|
+|Thailand|Partner|W1|Available|TH|Southeast Asia, Singapore|
+|Trinidad and Tobago|Partner|W1|Available|TT|Brazil South|
+|Tunisia|Partner|W1|Available|TN|South Africa North|
+|Türkiye|Partner|W1|Available|TR|West Europe, Netherlands|
+|Uganda|Partner|W1|Planned in June 2023|UG|South Africa North|
+|Ukraine|Partner|W1|Available|UA|West Europe, Netherlands|
+|United Arab Emirates|Partner|W1|Available|AE|UAE North|
+|United Kingdom|Microsoft|GB|Available|GB|UK West|
+|United States|Microsoft|NA|Available|US|East US|
+|Uruguay|Partner|W1|Available|UY|Brazil South|
+|Vietnam|Partner|W1|Available|VN|Southeast Asia, Singapore|
+|Zambia|Partner|W1|Planned in June 2023|ZM|South Africa North|
+|Zimbabwe|Partner|W1|Available|ZW|South Africa North|
+
+*1) BaseApp for Sweden will be migrated to W1 from Wave 1, 2023. Current localization features will be available as apps.*
 
 For an overview of where [!INCLUDE [prod_short](../includes/prod_short.md)] online is deployed, see the [Geographical availability](https://dynamics.microsoft.com/availability-reports/georeport/) site.  
 
