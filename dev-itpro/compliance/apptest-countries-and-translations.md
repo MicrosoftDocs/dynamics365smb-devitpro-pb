@@ -3,7 +3,7 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 02/11/2023
+ms.date: 02/12/2023
 ms.reviewer: edupont
 ms.topic: conceptual
 ms.author: altotovi
@@ -23,8 +23,8 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 
 ## Countries and regions
 
-|Country/Region|Localized by|BaseApp|Availability|Environment Country Abbreviation|Azure Region|
-|-----------|---------|------------|-----------|---------|---------|
+| Country/Region | Localized by | BaseApp | Availability | Environment Country Abbreviation | Azure Region |
+|----------------|--------------|---------| -------------|----------------------------------|--------------|
 |Albania|Partner|W1|Available|AL|West Europe, Netherlands|
 |Algeria|Partner|W1|Available|DZ|South Africa North|
 |Andorra|Partner|ES|Planned in June 2023|AD|West Europe, Netherlands|
