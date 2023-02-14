@@ -506,7 +506,10 @@ POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName
 { 
   "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation. 
   "EnvironmentType": "production", // Mandatory. The type of the new environment. 
-  "PointInTime": "2021-04-22T20:00:00Z" // The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
+  "PointInTime": "2021-04-22T20:00:00Z", // Mandatory. The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
+  "SkipInstallingPTEs": true, // Optional, default is false. Used to uninstall PTEs on the environment as part of the restore.
+  "SkipInstallingThirdPartyGlobalApps": true, // Optional, default is false. Used to uninstall all third-party AppSource apps from the environment as part of the restore.
+  "SkipEnvironmentCleanup": true // Optional, default is false. Used to skip execution of codeunits that clear up selected tables and disable selected setups to avoid unexpected behavior of integrations with external systems.
 } 
 ```
 
@@ -551,18 +554,20 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 
 ### Response
 
-200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty.
+200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty. correspondingApplicationPackageVersion indicates the Application version that the environment will be restored to.
 
 ```
 { 
   "value": [ 
     { 
       "from": "2021-01-25T14:57:04.967Z", 
-      "to": "2021-01-25T21:06:17.737Z" 
+      "to": "2021-01-25T21:06:17.737Z",
+      "correspondingApplicationPackageVersion": "21.4.0.0"
     }, 
     { 
       "from": "2021-01-25T21:14:48Z", 
-      "to": "2021-01-27T14:33:15.0007416Z" 
+      "to": "2021-01-27T14:33:15.0007416Z",
+      "correspondingApplicationPackageVersion": "21.5.0.0"
     } 
   ] 
 } 
