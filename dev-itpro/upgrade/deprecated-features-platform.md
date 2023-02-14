@@ -57,7 +57,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard). |
+|Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md). |
 
 ### Business Central Telemetry: using an instrumentation key (Removal)
 
@@ -254,7 +254,7 @@ In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework is deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard). |
+|Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework is deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md). |
 
 
 ### Expose UI pages as SOAP endpoints (Warning)
