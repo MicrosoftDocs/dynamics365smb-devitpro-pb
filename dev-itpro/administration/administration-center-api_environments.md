@@ -507,8 +507,8 @@ POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName
   "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation. 
   "EnvironmentType": "production", // Mandatory. The type of the new environment. 
   "PointInTime": "2021-04-22T20:00:00Z", // Mandatory. The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
-  "SkipInstallingPTEs": true, // Optional, default is false. Used to uninstall PTEs on the environment as part of the restore.
-  "SkipInstallingThirdPartyGlobalApps": true, // Optional, default is false. Used to uninstall all third-party AppSource apps from the environment as part of the restore.
+  "SkipInstallingPTEs": true, // Optional, default is false. Used to uninstall PTEs on the environment created as part of the restore.
+  "SkipInstallingThirdPartyGlobalApps": true, // Optional, default is false. Used to uninstall all third-party AppSource apps from the created environment as part of the restore.
   "SkipEnvironmentCleanup": true // Optional, default is false. Used to skip execution of codeunits that clear up selected tables and disable selected setups to avoid unexpected behavior of integrations with external systems.
 } 
 ```
