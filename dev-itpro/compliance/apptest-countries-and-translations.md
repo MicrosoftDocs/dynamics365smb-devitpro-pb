@@ -89,16 +89,16 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Jordan|Partner|W1|Available|JO|UAE North|
 |Kazakhstan|Partner|W1|Planned in June 2023|KZ|West Europe, Netherlands|
 |Kenya|Partner|W1|Available|KE|South Africa North|
-|Kosovo|Partner|W1|Planned in June 2023||XK|West Europe, Netherlands|
+|Kosovo|Partner|W1|Planned in June 2023|XK|West Europe, Netherlands|
 |Kuwait|Partner|W1|Available|KW|UAE North|
 |Latvia|Partner|W1|Available|LV|North Europe, Ireland|
 |Lebanon|Partner|W1|Available|LB|UAE North|
-|Liechtenstein|Partner|CH|Planned in June 2023||LI|Switzerland North|
+|Liechtenstein|Partner|CH|Planned in June 2023|LI|Switzerland North|
 |Lithuania|Partner|W1|Available|LT|North Europe, Ireland|
 |Luxembourg|Partner|W1|Available|LU|West Europe, Netherlands|
 |Macau (SAR China)|Partner|W1|Planned in June 2023|MO|Southeast Asia, Singapore|
-|Madagascar|Partner|W1|Planned in June 2023||MG|South Africa North|
-|Malawi|Partner|W1|Planned in June 2023||MW|South Africa North|
+|Madagascar|Partner|W1|Planned in June 2023|MG|South Africa North|
+|Malawi|Partner|W1|Planned in June 2023|MW|South Africa North|
 |Malaysia|Partner|W1|Available|MY|Southeast Asia, Singapore|
 |Maldives|Partner|W1|Available|MV|Southeast Asia, Singapore|
 |Malta|Partner|W1|Available|MT|West Europe, Netherlands|
