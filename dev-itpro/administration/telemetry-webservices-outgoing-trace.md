@@ -38,6 +38,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |alObjectId|Specifies the ID of the AL object that made the request.|
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
+|clientType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-client-type.md)] </br></br> Introduced in version 21.3.|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company from which the request was made.|
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
@@ -49,7 +50,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |extensionId|Specifies the appID of the extension that made the request.|
 |extensionName|Specifies the name of the extension that made the request.|
 |extensionVersion|Specifies the version of the extension that made the request.|
-|httpHeaders|Introduced in version 17.2. Specifies the http headers set in the request. |
+|httpHeaders|Specifies the http headers set in the request. </br></br>Introduced in version 17.2.|
 |httpMethod|Specifies the HTTP method used in the outgoing request. Values include: POST, GET, PUT, PATCH, or DELETE. |
 |httpReturnCode | **Deprecated in version 17.2. Use the dimension httpStatusCode instead.**  Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**404**<br />Not found. The given endpoint wasn't valid.</li></li></ul>|
 |httpStatusCode |Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**404**<br />Not found. The given endpoint wasn't valid.</li></li></ul>In the case of a failure, the reason for the underlying issue could be network connectivity, DNS failure, server certificate validation or timeout. The Business Central Server does not know which if these it might be. |
