@@ -957,7 +957,7 @@ codeunit 50103 "Customer Rewards Test"
 
 ``` 
 
-At this point you can publish and run your tests on your tenant by pressing Ctrl+F5. 
+At this point you can publish and run your tests on your tenant by selecting <kbd>Ctrl</kbd>+<kbd>F5</kbd>. 
 
 ## Run the tests 
 In order to run the tests, follow the steps below.

@@ -25,7 +25,7 @@ In the example below, the project called **Leaf** defines two dependencies to th
 
 The advantage of working with project references is that there's no need to download the symbols for a project reference. They're there as the symbols for the reference project and will be resolved as they're modified. For example, if you add a new method to a codeunit in the **Root** project and reference the codeunit in the **Leaf** project, the method will automatically resolve as you touch the **Leaf** project.
 
-When a project is built with **Ctrl+Shift+B**, the following will happen:
+When a project is built with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>, the following will happen:
 
 1. The .app file is copied to the `.alpackages` folder of all projects that depend on it.
 2. All project references that might be "dirty" are also built.
@@ -45,7 +45,7 @@ Projects that haven't been loaded in the workspace are decorated with the letter
 
 ## Publish changes
 
-With the introduction of project references, the publishing logic in a workspace has changed. Publishing, either with **Ctrl+F5** or RAD publishing using **Alt+Ctrl+F5**, will do a set publishing of all the projects that have changed with defining a startup project. The startup project is always the active project.
+With the introduction of project references, the publishing logic in a workspace has changed. Publishing, either with <kbd>Ctrl</kbd>+<kbd>F5</kbd>  or RAD publishing using **Alt+Ctrl+F5**, will do a set publishing of all the projects that have changed with defining a startup project. The startup project is always the active project.
 
 A project is considered changed if any of its application objects have changed in the sense that the application object is already in the `rad.json` or will be in the `rad.json` once the project has been built. This means that if you change an application object, you save it, and then close Visual Studio Code without building the project, the `rad.json` won't update and then the project won't be considered "dirty".
 

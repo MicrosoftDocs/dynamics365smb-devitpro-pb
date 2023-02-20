@@ -18,7 +18,7 @@ This topic provides an overview of how to change an existing module.
 2. Your local repository and development environment are ready. For more information, see [Set Up an Environment for Developing a Module](./devenv-set-up-an-environment.md).
 
 > [!NOTE]
-> Your environment must have the correct symbols. Go get those, in Visual Studio Code, press **F1**, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
+> Your environment must have the correct symbols. Go get those, in Visual Studio Code, select <kbd>F1</kbd>, and then choose **AL: Download Symbols**. Also, make a note of the **server** and **serverInstance** settings. You will add that information to the launch.json file.
 
 Your changes must follow the guidelines for module architecture. For more information, see [Module Architecture](devenv-blueprint.md). When changing an existing module, do not introduce breaking changes, that is, make sure that you do not break existing functionality. Existing tests must still pass, and you should add new tests for the functionality that you change or add.
 

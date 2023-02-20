@@ -11,7 +11,7 @@ ms.author: solsen
 
 # Debugging in AL
 
-*Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by pressing **F5**. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
+*Debugging* is the process of finding and correcting errors. With Visual Studio Code and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], you get an integrated debugger to help you inspect your code and verify that your application can run as expected. You can start a debugging session by selecting <kbd>F5</kbd>. For more information about Debugging in Visual Studio Code, see [Debugging](https://code.visualstudio.com/docs/editor/debugging). 
 
 An alternative to classic debugging is snapshot debugging, which allows you to record running code, and later debug it. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
@@ -54,7 +54,7 @@ Specify if the debugger breaks on the next error by using the `breakOnError` pro
 The default value of the `breakOnError` property is **true**, which means the debugger stops the execution that throws an error by default. To skip the error handling process, set the `breakOnError` property to **false** in the `launch.json` file. 
 
 > [!TIP]  
-> If the debugging session takes longer, you can refresh the session by pressing the **Ctrl+Shift+P** keys and selecting **Reload Window**.
+> If the debugging session takes longer, you can refresh the session by selecting the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> keys and selecting **Reload Window**.
 
 ## Break on record changes
 
@@ -71,7 +71,7 @@ The default value of the `breakOnRecordWrite` property is **false**, which means
 
 ## Debugging large size variable values
 
-Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name, or qualified name of a variable to inspect at the prompt and then press **Enter**.
+Variables with values larger than 1024 bytes are truncated (`…`) and can't be fully inspected from the **VARIABLES** window. To inspect a large size variable value, instead use the **DEBUG CONSOLE** and write the name, or qualified name of a variable to inspect at the prompt and then select <kbd>Enter</kbd>.
 
 ## Attach and Debug Next
 
@@ -81,15 +81,15 @@ If you don't want to publish and invoke the functionality to debug it, you can a
 
 |Keystroke    |Action         |
 |-------------|---------------|
-|**F5**           |Start debugging|
-|**Ctrl+F5**      |Start without debugging|
-|**Shift+F5**     |Stop debugging|
-|**Ctrl+Shift+F5**|Start debugging without publishing. <br> Using this command on a changed but unpublished code may trigger false existing breakpoints. For example, if you modify the method "foo", add two lines, put a breakpoint on the second line, and then start debugging without publishing, that breakpoint won't be hit, or if it's hit isn't your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
-|**Alt+F5**       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
-|**F10**          |Step over|
-|**F11**          |Step into|
-|**Shift+F11**    |Step out|
-|**F12**          |Go To Definition| 
+|<kbd>F5</kbd>           |Start debugging|
+|<kbd>Ctrl</kbd>+<kbd>F5</kbd>       |Start without debugging|
+|<kbd>Shift</kbd>+<kbd>F5</kbd>     |Stop debugging|
+|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F5</kbd>|Start debugging without publishing. <br> Using this command on a changed but unpublished code may trigger false existing breakpoints. For example, if you modify the method "foo", add two lines, put a breakpoint on the second line, and then start debugging without publishing, that breakpoint won't be hit, or if it's hit isn't your new code that it breaks. If it breaks, it will break on the line that the server thinks the breakpoint is, based on the last published code.|
+|<kbd>Alt</kbd>+<kbd>F5</kbd>       |Start RAD with debugging. For more information, see [Working with Rapid Application Development](devenv-rad-publishing.md).|
+|<kbd>F10</kbd>         |Step over|
+|<kbd>F11</kbd>          |Step into|
+|<kbd>Shift</kbd>+<kbd>F11</kbd>    |Step out|
+|<kbd>F12</kbd>          |Go To Definition| 
 
 For more shortcuts, see [Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging). For working with Snapshot Debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 

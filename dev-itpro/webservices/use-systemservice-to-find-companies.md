@@ -69,7 +69,7 @@ You can use the SystemService service in a SOAP web service application to retri
   
     ```  
   
-8.  Save \(press Ctrl+F6\) and compile \(press F6\) the **FindingCompanies** application.  
+8.  Save \(select <kbd>Ctrl</kbd>+<kbd>F6</kbd>\) and compile \(select <kbd>F6</kbd>\) the **FindingCompanies** application.  
   
 9. Select <kbd>F5</kbd>to run the application in debug mode.  
   

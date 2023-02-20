@@ -126,7 +126,7 @@ You can assign different icons for your actions from the [!INCLUDE[d365fin_md](i
 
 ## Set up a keyboard shortcut on an action
 
-You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Pressing the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut **Shift+Ctrl+D** to an action:
+You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Selecting the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>D</kbd> to an action:
 
 ```AL
 action(DoThisAction)

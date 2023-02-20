@@ -543,7 +543,7 @@ When your converted solutions compile to an app, you can deploy and run it. You 
 
 - PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md), or  
 
-- Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with **Ctrl+F5**. 
+- Publish from within Visual Studio Code by defining the server configuration in launch.json and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 
 ### Publishing to a Docker AL Preview image
 We recently released a Docker AL Preview image as part of the Insider program, containing the BaseApp published as an extension. You can use this to deploy your own modified AL application.
@@ -556,7 +556,7 @@ We recently released a Docker AL Preview image as part of the Insider program, c
 
     - Using the PowerShell cmdlets as described in [Publishing and Installing an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md). 
 
-    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with **Ctrl+F5**. 
+    - Publish from within Visual Studio Code by defining the server configuration in `launch.json` and publish with <kbd>Ctrl</kbd>+<kbd>F5</kbd> . 
 -->
 ## See Also
 [The Txt2Al Conversion Tool](../developer/devenv-txt2al-tool.md)  

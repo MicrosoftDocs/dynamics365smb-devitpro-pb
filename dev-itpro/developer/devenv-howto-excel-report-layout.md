@@ -49,7 +49,7 @@ Excel now opens and you should see the dataset of the Contact List. **Note** tha
 1. In Excel, go to the **Insert** tab, choose **PivotTable**, and then choose **From Table/Range** with the default options of **Data** and **New worksheet**. Choose the **OK** button.
 1. From the **PivotTable Fields** pane to the right, choose a suitable number of fields to add to the report.
 1. Save the report and close the Excel window.
-1. Back in Visual Studio Code, press **Ctrl+F5** to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].  
+1. Back in Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>F5</kbd>  to compile and launch [!INCLUDE [prod_short](includes/prod_short.md)].  
 1. Now, to choose the changed report layout, search for the **Report Layout Selection** page, and then search for the **Contact List** (ID 5050) report. 
 1. In the **Layout Type** column, choose **Excel**, and then choose the **Run Report** from the action bar.
 1. On the request page, choose the **Download** button, and once the report is downloaded, open it.

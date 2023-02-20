@@ -36,9 +36,9 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 7)   Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to deploy and run the extension on your online sandbox tenant.  
 
 > [!NOTE]  
-> For some users the <kbd>Ctrl+F5</kbd> shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
+> For some users the <kbd>Ctrl</kbd>+<kbd>F5</kbd> shortcut key may not work due to keyboard or other settings. If it doesn't work for you, run your code by choosing **Run Without Debugging** from the **Run** dropdown in Visual Studio Code.
 
-You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to press <kbd>Ctrl+F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
+You now have a `HelloWorld` sample that compiles and runs. The JSON files in the project are automatically updated with the settings that allows you to select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and deploy the solution to [!INCLUDE[prod_short](includes/prod_short.md)]. For more information, see [JSON Files](devenv-json-files.md).
 
 ## Tips and tricks
 
@@ -62,7 +62,7 @@ Use the AL configuration settings to specify general preferences for working wit
 
 By default, Visual Studio Code is set up with a telemetry system to make sure that data and errors are sent to Microsoft. If you don't want to send telemetry data, you can change the `telemetry.enableTelemetry` setting from `true` to `false`.
 
-To modify the telemetry setting, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> in Visual Studio Code and choose **User Settings**, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false` like shown below.
+To modify the telemetry setting, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> in Visual Studio Code and choose **User Settings**, which opens the `settings.json` file, and then add `telemetry.enableTelemetry` and set it to `false` like shown below.
  
 ```AL
 "telemetry.enableTelemetry": false,

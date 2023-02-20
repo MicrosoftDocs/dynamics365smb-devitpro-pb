@@ -33,7 +33,7 @@ To generate XML permission sets, you can use the dedicated command in Visual Stu
 
 1.   Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd>P</kbd> to open the command palette.
 2. Select **AL: Generate permission set containing current extension objects**. This will generate the XML permission set for your extension.
-3. Rebuild your extension by pressing **Ctrl+Shift+B** to package the permission set with your extension.
+3. Rebuild your extension by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to package the permission set with your extension.
 
 For more information about AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
 

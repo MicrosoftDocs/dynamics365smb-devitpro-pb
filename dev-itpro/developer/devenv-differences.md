@@ -16,7 +16,7 @@ ms.author: solsen
 Coming from the Dynamics NAV development environment and C/SIDE, it's good to know about some differences and optimizations between them. The following sections go through some of these changes, but it isn't an exhaustive list.
 
 > [!TIP]  
-> A very useful tool working in Visual Studio Code is IntelliSense, which gives you a list of options in the current context. To activate IntelliSense from anywhere in the code, press **Ctrl+Space**.
+> A very useful tool working in Visual Studio Code is IntelliSense, which gives you a list of options in the current context. To activate IntelliSense from anywhere in the code, select <kbd>Ctrl</kbd>+<kbd>Space</kbd>.
 
 ## General development approach
 

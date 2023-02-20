@@ -45,18 +45,18 @@ Use the code action to convert *legacy* syntax for promoted actions to the `acti
 :::image type="content" source="media/codeaction_actionref.png" alt-text="Options for applying code action on actionref syntax":::
 
   > [!NOTE]  
-  > For Designer extensions, use **F6** to open **Designer**, which opens the page where the legacy syntax is used. Choose the Lock symbol and use **Unlock page** to automatically convert the legacy syntax for the running code. Pressing **Alt+F6** will bring you back into Visual Studio Code, and show the converted `actionref` code.
+  > For Designer extensions, use <kbd>F6</kbd>  to open **Designer**, which opens the page where the legacy syntax is used. Choose the Lock symbol and use **Unlock page** to automatically convert the legacy syntax for the running code. Selecting <kbd>Alt</kbd>+<kbd>F6</kbd> will bring you back into Visual Studio Code, and show the converted `actionref` code.
   
   
 ## To enable AL Code Actions
 
-1. Open the Command Palette by pressing **Ctrl+Shift+P** and then open the `settings.json` file.  
+1. Open the Command Palette by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and then open the `settings.json` file.  
 2. Enter the setting `al.enableCodeActions` and set it to `true` like this `"al.enableCodeActions": true`
 3. Save the settings file. You have now enabled code actions on your project.
 
 Alternatively:
 
-1. Open the Settings Page, **Ctrl+,** and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
+1. Open the Settings Page, <kbd>Ctrl</kbd>+<kbd>,</kbd> and choose either **User Settings** or **Workspace Settings** depending on which scope you want the code actions to apply to.
 2. Navigate to **Extensions > AL Language extension configuration**.
 3. Choose the **Enable Code Actions** checkbox. You've now enabled code actions on your project.
 

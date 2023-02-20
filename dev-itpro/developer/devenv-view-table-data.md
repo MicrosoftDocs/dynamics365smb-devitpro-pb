@@ -60,7 +60,7 @@ Note the use of `&` when `table=<TableID>` isn't located directly after the doma
 
 ## View a table object from an AL project in Visual Studio Code
 
-You can configure an AL project to view a table when you publish or debug the project (pressing **F5** or **Ctrl+F5**). 
+You can configure an AL project to view a table when you publish or debug the project (selecting <kbd>F5</kbd> or <kbd>Ctrl</kbd>+<kbd>F5</kbd> ). 
 
 In the `launch.json` file for the project, set the `"startupObjectType"` parameter to `"table"` and the `"startupObjectId"` parameter to the ID of the table. For example:
 
@@ -88,7 +88,7 @@ Must have read access to the table
 Must have execute permission on the Run Table System object 
 Developers: 
 Can only run a table through the web client so they require the same permissions 
-Can set StartupObjectId to the ID of the table they want to inspect and StartupObjectType to "Table" and press Ctrl+F5 from VSCode to open the page. 
+Can set StartupObjectId to the ID of the table they want to inspect and StartupObjectType to "Table" and select <kbd>Ctrl</kbd>+<kbd>F5</kbd> from VSCode to open the page. 
  
 Append '?AID=FIN&table={YourTableId}'    
  

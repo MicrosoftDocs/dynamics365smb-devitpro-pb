@@ -228,7 +228,7 @@ To display the barcode the layout, you'll have to do two things:
 
    - For Word layouts:
 
-     In Word, select barcode column control, press Ctrl+D, then enter or select the barcode font name.  
+     In Word, select barcode column control, select <kbd>Ctrl</kbd>+<kbd>D</kbd>, then enter or select the barcode font name.  
 
      [ ![Shows how to apply font to a barcode in a Word document.](media/report-layout-barcode-word-clip.png) ](media/report-layout-barcode-word-clip.png)
 

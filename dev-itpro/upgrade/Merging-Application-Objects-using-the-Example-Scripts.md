@@ -32,7 +32,7 @@ Get-Help "NAV"
   
  The HowTo-Start-Import-NAV-Module.ps1 script imports the Microsoft.Dynamics.Nav.Model.Tools.psd1 module into the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE. The \_\_Run-Application-Merge-Utilities.ps1 and \_\_Reset-HowTo-Sample.ps1 scripts enable you to run the sample scripts repeatedly.  
   
- For Help for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlet, type `Get-Help <cmd name>`. For Help for the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, press F1, or choose the Help menu, and then choose [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE Help.  
+ For Help for a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] cmdlet, type `Get-Help <cmd name>`. For Help for the [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE, select <kbd>F1</kbd>, or choose the Help menu, and then choose [!INCLUDE[wps_2](../developer/includes/wps_2_md.md)] ISE Help.  
   
 ## See Also  
  [Business Central PowerShell Cmdlets](/powershell/business-central/overview)
