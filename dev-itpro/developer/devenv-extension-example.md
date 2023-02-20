@@ -416,7 +416,7 @@ ToolTip = 'Specifies the level of reward that the customer has at this point.';
 }
 ```
 
-Now, if you deploy the app, you'll be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press **Ctrl+F1**, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
+Now, if you deploy the app, you'll be able to read the tooltip text for the **Reward ID** field, and if you choose the *Learn more* link or press <kbd>Ctrl</kbd>+<kbd>F1</kbd>, a new browser tab opens the equivalent of `https://mysite.com/documentation/sales-rewards`.  
 
 ![Customer card extension tool tip example.](media/help/CustomerCardExt_TooltipHelp.png)
 

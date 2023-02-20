@@ -83,7 +83,7 @@ Most tooltips end with an automatically generated link to *learn more* as descri
 :::image type="content" source="media/ua_tooltip_client.png" alt-text="A tooltip for an action without Learn More link.":::
 
 > [!TIP]
-> Users can always use the Ctrl+F1 keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, Ctrl+F1 opens the Help pane with automatically generated links to related content from Microsoft and partners.
+> Users can always use the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut to access the *learn more* content that is configured for the currently-selected item in the user interface. In 2022 release wave 1 and later, <kbd>Ctrl</kbd>+<kbd>F1</kbd> opens the Help pane with automatically generated links to related content from Microsoft and partners.
 
 The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are conceptually similar to *[field descriptions](/dynamics365/fin-ops-core/fin-ops/get-started/view-export-field-descriptions?toc=/dynamics365/finance/toc.json)* in Dynamics 365 Finance and related apps, and *[teaching tips](/windows/uwp/design/controls-and-patterns/dialogs-and-flyouts/teaching-tip)* in the Universal Windows Platform's Fluent Design guidelines. The onboarding framework in [2021 release wave 1](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/in-app-contextual-help-improvements) added another interpretation of teaching tips that you can add to your [!INCLUDE [prod_short](developer/includes/prod_short.md)] solution. For more information, see [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md).
 
@@ -99,13 +99,13 @@ The tooltips in [!INCLUDE [prod_short](developer/includes/prod_short.md)] are co
 
 The content that Microsoft publishes under the user assistance concept of *Learn more* is intended to answer those questions that the user interface (including the tooltips) cannot answer, such as where that page fits into the bigger workflow, or what comes next, or what would be the alternative.
 
-Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the *Ctrl+F1* keyboard shortcut.  
+Users can access this content either through the *Learn more* link in tooltips, by choosing the Help menu, or by using the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut.  
 
 ### Links in the Help pane
 
 [!INCLUDE [2022_releasewave1](includes/2022_releasewave1.md)]
 
-The *Learn more* links on tooltips and the Ctrl+F1 shortcut now open the Help pane. In most cases, the pane shows the following types of content:
+The *Learn more* links on tooltips and the <kbd>Ctrl</kbd>+<kbd>F1</kbd> shortcut now open the Help pane. In most cases, the pane shows the following types of content:
 
 [!INCLUDE [ua-help-pane-links-default](includes/ua-help-pane-links-default.md)]
 
