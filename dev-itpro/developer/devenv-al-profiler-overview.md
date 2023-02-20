@@ -152,11 +152,11 @@ The following table provides an overview of the shortcut key combinations that y
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**Enter+Toggle** | Expand and collapse a node. |
-|**Arrow+Left** | Collapse a node. |
-|**Arrow+Right** | Expand a node. |
-|-(minus) | Collapse all nodes.|
-|*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+|<kbd>Enter</kbd> | Expand and collapse a node. |
+|<kbd>Left arrow</kbd> | Collapse a node. |
+|<kbd>Right arrow</kbd> | Expand a node. |
+|<kbd>-</kbd> (minus) | Collapse all nodes.|
+|<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 
 ### Inline Profiler CodeLens for AL profiling results
