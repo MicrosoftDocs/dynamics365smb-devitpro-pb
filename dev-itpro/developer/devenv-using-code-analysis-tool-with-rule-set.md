@@ -19,11 +19,11 @@ This article helps you to customize a ruleset for the severity of diagnostics pr
 
 First, create a basic project in AL by following the steps below:
 
-1. Press **Alt + A, Alt + L** to create a new project.
-2. Open the Command Palette by using the **Ctrl+Shift+P** shortcut and choose either **User Settings** or **Workspace Settings**.
+1. Select <kbd>Alt</kbd>+<kbd>A</kbd>, <kbd>Alt</kbd>+<kbd>L</kbd> to create a new project.
+2. Open the Command Palette by using the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> shortcut and choose either **User Settings** or **Workspace Settings**.
 3. Under **Extensions**, go to **Al Language extension configuration**. When you scroll down, you'll find Code Analyzers section, choose **Edit in settings.json**.
 4. Set the `al.enableCodeAnalysis` in the settings file to `true`. <br> `"al.enableCodeAnalysis": true`
-5. In the `al.codeanalyzers` setting, use **Ctrl+Space** to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
+5. In the `al.codeanalyzers` setting, use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
 
 At this point, the selected analyzers will run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate violations of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
@@ -77,7 +77,7 @@ To create and customize a ruleset of your own, follow the next steps:
 
 The code analysis will run in the background and you'll see the warning **"There must be exactly one space character on each side of '+'."** disappear from the **Problems** option in Visual Studio Code.
 
-To trigger a new compilation manually, use the **Ctrl+Shift+B** shortcut to build your project. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
+To trigger a new compilation manually, use the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> shortcut to build your project. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
 
 ## Limitations
 

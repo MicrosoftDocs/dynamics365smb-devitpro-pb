@@ -22,7 +22,7 @@ Before you can run an object, you must compile the object. To compile an object,
 
 ## Syntax Errors
   
-Syntax errors are detected by the C/AL compiler when you try to compile C/AL code, either in a codeunit or as code in another object, such as a table, page, report, query, or XMLport. If you open an object in the designer and then compile the object, then if the compiler detects a syntax error, when you press ENTER and acknowledge the error message, the C/AL editor opens with the cursor in front of the expression that has the error. If you compile an object directly from Object Designer and if the compiler detects a syntax error, then the C/AL editor does not open to show where the error occurred.  
+Syntax errors are detected by the C/AL compiler when you try to compile C/AL code, either in a codeunit or as code in another object, such as a table, page, report, query, or XMLport. If you open an object in the designer and then compile the object, then if the compiler detects a syntax error, when you select <kbd>Enter</kbd> and acknowledge the error message, the C/AL editor opens with the cursor in front of the expression that has the error. If you compile an object directly from Object Designer and if the compiler detects a syntax error, then the C/AL editor does not open to show where the error occurred.  
 
  The compiler will not compile code that contains a syntax error.  
 

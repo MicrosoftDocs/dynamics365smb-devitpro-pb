@@ -17,11 +17,11 @@ This article shows you how to use static code analysis tool on an AL project fro
 
 Follow the steps below to create a basic project in AL. 
 
-1. Press **Alt + A, Alt + L** to create a new project.
+1. Select <kbd>Alt</kbd>+ <kbd>A</kbd>, <kbd>Alt</kbd>+<kbd>L</kbd> to create a new project.
 2. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**.
 3. Under **Extensions**, go to **Al Language extension configuration**. When you scroll down, you'll find Code Analyzers section, choose **Edit in settings.json**.
 4. Set the `al.enableCodeAnalysis` in the settings file to `true`. <br> `"al.enableCodeAnalysis": true`
-5. In the `al.codeanalyzers` setting, use **Ctrl+Space** to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
+5. In the `al.codeanalyzers` setting, use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to pick from the available code analyzers. Separate the list of code analyzers with commas. For more information about the available analyzers, see [AppSourceCop](analyzers/appsourcecop.md), [CodeCop](analyzers/codecop.md), [PerTenantExtensionCop](analyzers/pertenantextensioncop.md), and [UICop](analyzers/uicop.md).
 
 At this point, the selected analyzers will run on your project. Next, add some code to the project that will, in the following example, be used to demonstrate a violation of the AA0001 **"There must be exactly one space character on each side of a binary operator such as := + - AND OR =."** code analysis rule. 
 
@@ -53,7 +53,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
 The code analysis tools will run in the background. You'll see the faulty expression underlined and the warning **"There must be exactly one space character on each side of '+'."** will be displayed if you move cursor over the underlined code.
 You can also view the list of issues by selecting the **View** tab of Visual Studio Code and choosing the **Problems** option.
 
-Using the **Ctrl+Shift+B** shortcut to build your project will run the code analysis tools on the entire project and the detected issues will be displayed in the **Output** window of Visual Studio Code. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
+Using the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> shortcut to build your project will run the code analysis tools on the entire project and the detected issues will be displayed in the **Output** window of Visual Studio Code. For more information about AL keyboard shortcuts, see [Keyboard shortcuts](devenv-keyboard-shortcuts.md).
 
 ## Code analyzers
 

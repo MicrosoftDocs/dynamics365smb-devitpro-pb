@@ -438,7 +438,7 @@ Viktor is now ready to add the customer data. The table will display one custome
 
 18. In the `launch.json` file set the `"startupObjectId"` to the **Id** of the report object and the `"startupObjectType"` to `Report`.
 
-19. Press the `F5` key to run the report.
+19. Select the <kbd>F5</kbd> key to run the report.
 
 20. In the request page that is displayed, choose the **Preview** button to view the report. The first customer is displayed on the first page. If you page through the report, each customer is displayed on a separate page.  
 
@@ -649,7 +649,7 @@ Viktor will run the report to view how it looks like. For this, do the following
 
 1.  Make sure that the `"startupObjectId"` is set to the **Id** of the report object and the `"startupObjectType"` to `Report` in the `launch.json` file.
 
-2. Press the `F5` key to compile and run the report in Dynamics 365 Business Central.
+2. Select the <kbd>F5</kbd> key to compile and run the report in Dynamics 365 Business Central.
 
 3.  If you haven't switched off the [UseRequestPage Property](properties/devenv-userequestpage-property.md) you'll be shown a request page in the Web Client.
 

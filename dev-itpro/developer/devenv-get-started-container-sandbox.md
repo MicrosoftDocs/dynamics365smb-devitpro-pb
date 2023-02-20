@@ -95,7 +95,7 @@ After the container sandbox is set up, you must set up Visual Studio Code for ex
 
 1. In Visual Studio Code, go to **Extensions**, and install the AL Language extension from the Marketplace.
     You now have the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] enabled.
-2. In Visual Studio Code, press **Ctrl+Shift+P** and then choose **AL Go!**.
+2. In Visual Studio Code, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and then choose **AL Go!**.
 3. Choose where to create the project, and then choose the **Your own server** option.
 4. Open the generated `launch.json` file, update the `"server"` setting with the value of the `Dev. Server` parameter and the `"serverInstance"` setting with the value of the `Dev. ServerInstance` to reflect the container you just created. For example:
 

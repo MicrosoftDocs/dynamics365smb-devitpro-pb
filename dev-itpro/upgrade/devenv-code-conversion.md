@@ -303,7 +303,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
 
     You might also have to remove references to `SessionList` in ChangeGlobalDimensions.Codeunit.al.
     
-11. Build and compile your project (press Ctrl+Shift+B).
+11. Build and compile your project (select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 
     The AL compiler will issue errors for constructs that aren't valid. Fix any errors that occur, and build again.
 
