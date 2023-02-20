@@ -68,7 +68,7 @@ You can always add more breakpoints while debugging.
 5. If your most recent app is not yet published, it's important to make sure you publish it pressing **Ctrl+F5**, alternatively **Alt+Ctrl+F5** for RAD publishing. Then, use **F5** to start the attach session.  
     > [!IMPORTANT]  
     > If you modify the app code during the debugging session, make sure to re-publish the app using **Ctrl+F5**.
-6. After publishing the app, press **F5** to start a debugging session.  
+6. After publishing the app, select <kbd>F5</kbd> to start a debugging session.  
     > [!NOTE]  
     > If you have more attach configuration settings, you must first select which configuration to start.
 7. Debug and inspect the code. You can add more breakpoints while debugging.

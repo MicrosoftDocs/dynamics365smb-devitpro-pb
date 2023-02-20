@@ -58,7 +58,7 @@ When you set up the container sandbox, you can choose to host the sandbox on Mic
 
     This name is only used internally in your envirorment for identification purposes.
 8. Set the `$accept_eula = ''` variable to `'$true'`.
-9. Press F5 to run the script.
+9. Select <kbd>F5</kbd>to run the script.
 
     The console pane displays the progress of the script. When the script has completed successfully, information like the following will display:
     ```

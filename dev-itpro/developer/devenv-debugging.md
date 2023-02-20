@@ -24,7 +24,7 @@ An alternative to classic debugging is snapshot debugging, which allows you to r
 There are some limitations to be aware of:
 
 - "External code" can only be debugged if the code has the `allowDebugging` flag set to `true`. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md). 
-- The debugger launches a new client instance each time you press **F5**. If you close the debugging session and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
+- The debugger launches a new client instance each time you select <kbd>F5</kbd>. If you close the debugging session and then start a new session, this new session will rely on a new client instance. We recommend that you close the Web client instances when you close a debugging session.
 - Pausing the debugging session isn't supported.
 
 To control table data synchronization between each debugging session, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).  

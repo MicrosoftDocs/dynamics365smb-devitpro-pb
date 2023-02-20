@@ -31,7 +31,7 @@ Permissions can be defined either by using XML, or by using AL permission set ob
 
 To generate XML permission sets, you can use the dedicated command in Visual Studio Code:
 
-1. Press **Ctrl+Shift+P** to open the command palette.
+1.   Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd>P</kbd> to open the command palette.
 2. Select **AL: Generate permission set containing current extension objects**. This will generate the XML permission set for your extension.
 3. Rebuild your extension by pressing **Ctrl+Shift+B** to package the permission set with your extension.
 

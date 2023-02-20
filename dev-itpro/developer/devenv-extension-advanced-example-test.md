@@ -993,7 +993,7 @@ procedure SetDefaultCustomerRewardsExtMgtCodeunit();
 ``` 
 Now, anytime the **SetDefaultCustomerRewardsExtMgtCodeunit** method in the install codeunit is run, the **Customer Rewards Ext. Mgt. Codeunit ID** in the **Customer Rewards Mgt. Setup** table will be set to 0. 
 
-Press Ctrl+F5 to publish the updated tests to your tenant and then run them.
+  Select <kbd>Ctrl</kbd>+<kbd>F5</kbd> to publish the updated tests to your tenant and then run them.
 ![Publish Test.](media/PublishTest.png)
 
 The test TestOnInstallLogic should now have a Failure result with the error message:  
