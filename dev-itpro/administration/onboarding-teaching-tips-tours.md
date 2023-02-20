@@ -135,7 +135,7 @@ Bolded text can call out the most important points, such as
 
 - Field names, such as **Customer**
 
-- Keyboard shortcuts, such as **Alt+Q**
+- Keyboard shortcuts, such as <kbd>Alt</kbd>+<kbd>Q</kbd>
 
 #### Best practices for use of bolded text
 

@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 If you don't want to publish and invoke functionality to debug it, you can instead attach a session to a specified server, and await a process to trigger the breakpoint you've set. Then debugging starts when the code that the breakpoint is set on is hit. 
 
 > [!NOTE]  
-> To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd>  first, or with **Alt+Ctrl+F5** for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. To debug using attach, you must make sure to debug on a *new* session. Creating a new server session from the client can be achieved for example by launching a new client session. Selecting <kbd>F5</kbd> (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
+> To use the attach functionality, you must make sure that your app is published with <kbd>Ctrl</kbd>+<kbd>F5</kbd>  first, or with <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>F5</kbd> for [RAD](devenv-rad-publishing.md) publishing, before you start the debugging session with <kbd>F5</kbd>. To debug using attach, you must make sure to debug on a *new* session. Creating a new server session from the client can be achieved for example by launching a new client session. Selecting <kbd>F5</kbd> (Refresh) in a browser may not create a new server session, because it is cached, but if a session is expired and refreshed that will create a new session.
 
 > [!IMPORTANT]  
 > Only the user who starts a Visual Studio Code attach session can issue the Web request on the server.

@@ -29,7 +29,7 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
 3) Download the [[!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]](https://marketplace.visualstudio.com/items?itemName=ms-dynamics-smb.al).
 4) Select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+</kbd>P</kbd> to open the **User Settings** window; here you can modify the [telemetry settings](devenv-get-started.md#telemetry-settings).
-5) Select <kbd>Alt+A</kbd>, and right after, <kbd>Alt+L</kbd> to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
+5) Select <kbd>Alt</kbd>+A</kbd>, and right after, <kbd>Alt</kbd>+<kbd>L</kbd> to trigger the **AL Go!** command, choose a path to a new empty folder and which version to run. Then choose **Microsoft cloud sandbox** as the server.  
     > [!NOTE]  
     > If you want to change your configuration at a later point in time, you can choose the **Add Configuration** button on the bottom right side, and then choose one of the available options.  
 6) Enter the credentials that you provided for the sign-up.

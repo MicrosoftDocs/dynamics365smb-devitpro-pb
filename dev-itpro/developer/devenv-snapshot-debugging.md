@@ -33,9 +33,9 @@ In the following sections, you can read more about how to initialize, view the s
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**F7**|Start a snapshot debugging session|
-|**Shift+F7**|List all available snapshots|
-|**Alt+F7**|Finish a snapshot debugging session|
+|<kbd>F7</kbd>|Start a snapshot debugging session|
+|<kbd>Shift</kbd>+<kbd>F7</kbd>|List all available snapshots|
+|<kbd>Alt</kbd>+<kbd>F7</kbd>|Finish a snapshot debugging session|
 
 ## Initialize a snapshot debugging session
 
