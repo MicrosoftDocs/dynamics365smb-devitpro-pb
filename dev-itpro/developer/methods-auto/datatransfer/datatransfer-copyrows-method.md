@@ -38,7 +38,7 @@ An instance of the [DataTransfer](datatransfer-data-type.md) data type.
 Use this method to copy data in rows of a table to rows in another table. For more information, see [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md).
 
 > [!NOTE]
-> Copying the SystemID field using CopyRows is supported in Business Central version 21.5 and later.
+> Copying the SystemID and [data audit](../../devenv-table-system-fields.md#audit) fields using CopyRows is supported in Business Central version 21.5 and later.
 
 ## Example
 
