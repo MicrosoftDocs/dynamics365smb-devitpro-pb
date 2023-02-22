@@ -1026,7 +1026,7 @@
 ### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
 ### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
 ### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](al-go/algo-register-sandbox-env.md)
-### [Create a Release of Your Application](al-go/algo-create-release-app.md)
+### [Create a release of Your Application](al-go/algo-create-release-app.md)
 ### [Register a Customer Production Environment for Manual Deployment](al-go/algo-register-cust-prod-env.md)
 ### [Update AL-Go System Files](al-go/algo-update-system-files.md)
 ### [Use Azure KeyVault for Secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
@@ -1262,110 +1262,110 @@
 ## Deprecated Code
 ### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
 ### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
-### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
+### [Deprecating explicit and implicit With statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
 <!--on-prem-->
 # Business Central on-premises
-## [Legal Resources](terms/legal-onpremises.md)
+## [Legal resources](terms/legal-onpremises.md)
 <!-- deployment -->
 ## Deployment
-### [Deployment Overview](deployment/deployment.md)
+### [Deployment overview](deployment/deployment.md)
 ### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
-#### [2022 Release Wave 2](deployment/system-requirements-business-central-v21.md)
-#### [2022 Release Wave 1](deployment/system-requirements-business-central-v20.md)
-#### [2021 Release Wave 2](deployment/system-requirements-business-central-v19.md)
-#### [2021 Release Wave 1](deployment/system-requirements-business-central-v18.md)
-#### [2020 Release Wave 2](deployment/system-requirement-business-central-v17.md)
-#### [2020 Release Wave 1](deployment/system-requirement-business-central-v16.md)
-#### [2019 Release Wave 2](deployment/system-requirement-business-central-v15.md)
+#### [2022 release wave 2](deployment/system-requirements-business-central-v21.md)
+#### [2022 release wave 1](deployment/system-requirements-business-central-v20.md)
+#### [2021 release wave 2](deployment/system-requirements-business-central-v19.md)
+#### [2021 release wave 1](deployment/system-requirements-business-central-v18.md)
+#### [2020 release wave 2](deployment/system-requirement-business-central-v17.md)
+#### [2020 release wave 1](deployment/system-requirement-business-central-v16.md)
+#### [2019 release wave 2](deployment/system-requirement-business-central-v15.md)
 #### [April 2019](deployment/system-requirement-business-central.md)
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
-### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
-### Dynamics 365 Business Central On-Premises Updates
-#### [2022 Release Wave 2 On-Premises Updates](deployment/update-versions-21.md)
-#### [2022 Release Wave 1 On-Premises Updates](deployment/update-versions-20.md)
-#### [2021 Release Wave 2 On-Premises Updates](deployment/update-versions-19.md)
-#### [2021 Release Wave 1 On-Premises Updates](deployment/update-versions-18.md)
-#### [2020 Release Wave 2 On-Premises Updates](deployment/update-versions-17.md)
-#### [2020 Release Wave 1 On-Premises Updates](deployment/update-versions-16.md)
-#### [2019 Release Wave 2 On-Premises Updates](deployment/update-versions-15.md)
-#### [Spring 2019 On-Premises Updates](deployment/update-versions-14.md)
-#### [October 2018 On-Premises Updates](deployment/update-versions-13.md)
-### [Running a Container-Based Development Environment](developer/devenv-running-container-development.md)
+### [FAQ about the Windows client and Business Central](faq-win-cli.md)
+### Dynamics 365 Business Central on-premises updates
+#### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
+#### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
+#### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)
+#### [2021 release wave 1 on-premises updates](deployment/update-versions-18.md)
+#### [2020 release wave 2 on-premises updates](deployment/update-versions-17.md)
+#### [2020 release wave 1 on-premises updates](deployment/update-versions-16.md)
+#### [2019 release wave 2 On-premises updates](deployment/update-versions-15.md)
+#### [Spring 2019 on-premises updates](deployment/update-versions-14.md)
+#### [October 2018 on-premises updates](deployment/update-versions-13.md)
+### [Running a container-based development environment](developer/devenv-running-container-development.md)
 ### [Components](deployment/product-and-architecture-overview.md)
 ### [Planning](deployment/plan-for-deployment.md)
-### Deployment Topologies
-#### [Deployment Topologies Overview](deployment/deployment-scenarios.md)
-#### [Deploying Demonstration Environment](deployment/deploy-demonstration-environment.md)
-#### [Deploying Single-Computer](deployment/deploy-single-computer-environment.md)
-#### [Deploying on Two-Computers](deployment/deploy-two-computer-environment.md)
-#### [Deploying on Three Computers](deployment/deploy-three-computer-environment.md)
-### [Installing Using Setup](deployment/install-using-setup.md)
-### [Provisioning a Service Account](deployment/provision-server-account.md)
-### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-### Business Central Web Server
-#### [Business Central Web Server Overview](deployment/web-server-overview.md)
-#### [Configuring Web Server Instances](administration/configure-web-server.md)
+### Deployment topologies
+#### [Deployment topologies overview](deployment/deployment-scenarios.md)
+#### [Deploying demonstration environment](deployment/deploy-demonstration-environment.md)
+#### [Deploying single computer](deployment/deploy-single-computer-environment.md)
+#### [Deploying on two computers](deployment/deploy-two-computer-environment.md)
+#### [Deploying on three computers](deployment/deploy-three-computer-environment.md)
+### [Installing using setup](deployment/install-using-setup.md)
+### [Provisioning a service account](deployment/provision-server-account.md)
+### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
+### Business Central web server
+#### [Business Central web server overview](deployment/web-server-overview.md)
+#### [Configuring web server instances](administration/configure-web-server.md)
 #### [Configure IIS](deployment/configure-iis.md)
 #### [Configure SSL](deployment/configure-ssl-web-client-connection.md)
-#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-#### [Configure Business Central Web Server to Accept Host Names](administration/configure-web-server-to-accept-host-names-for-tenants.md)
-#### [Configuring Delegation](deployment/configure-delegation-web-server.md)
-### Multitenant Deployment
-#### [Architecture Overview](deployment/multitenant-deployment-architecture.md)
-#### [Setup Guide](administration/multitenant-setup-guide.md)
-#### Migrating From Single to Multitenancy
+#### [Setting up multiple web server instances](deployment/configure-multiple-web-server-instances.md)
+#### [Configure Business Central web server to accept host names](administration/configure-web-server-to-accept-host-names-for-tenants.md)
+#### [Configuring delegation](deployment/configure-delegation-web-server.md)
+### Multitenant deployment
+#### [Architecture overview](deployment/multitenant-deployment-architecture.md)
+#### [Setup guide](administration/multitenant-setup-guide.md)
+#### Migrating From single to multitenancy
 ##### [Overview](deployment/migrating-to-multitenancy.md)
-##### [Separating Application Data from Business Data](deployment/separating-application-data-from-business-data.md)
+##### [Separating application data from business data](deployment/separating-application-data-from-business-data.md)
 ### Database
-#### [Installation Considerations for SQL Server](deployment/installation-considerations-for-microsoft-sql-server.md)
-#### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-#### [Creating Application and Tenant Databases](deployment/devenv-create-databases.md)
-#### [Configuring and Troubleshooting Connections](administration/troubleshooting-sql-server-connection-problems.md)
-#### [Deploying to Azure SQL Database](deployment/deploy-database-azure-sql-database.md)
-#### [Reducing Database Size](administration/database-reduce-data.md)
-### Business Central Mobile App
-#### [Introducing the Mobile App](developer/devenv-introducing-business-central-mobile-app.md)
-#### [Preparing For and Installing the Mobile App](deployment/install-business-central-app.md)
-#### [Troubleshooting the Mobile App On-Premises](developer/devenv-troubleshooting-the-mobile-app.md)
-#### [Using HTTPS and Certificates in Business Central Mobile App](developer/devenv-using-https-and-certificates-mobile-app.md)
+#### [Installation considerations for SQL server](deployment/installation-considerations-for-microsoft-sql-server.md)
+#### [Configuring database authentication](administration/configure-sql-server-authentication.md)
+#### [Creating application and tenant databases](deployment/devenv-create-databases.md)
+#### [Configuring and troubleshooting connections](administration/troubleshooting-sql-server-connection-problems.md)
+#### [Deploying to Azure SQL database](deployment/deploy-database-azure-sql-database.md)
+#### [Reducing database size](administration/database-reduce-data.md)
+### Business Central mobile app
+#### [Introducing the mobile app](developer/devenv-introducing-business-central-mobile-app.md)
+#### [Preparing for and installing the mobile app](deployment/install-business-central-app.md)
+#### [Troubleshooting the mobile app on-premises](developer/devenv-troubleshooting-the-mobile-app.md)
+#### [Using HTTPS and certificates in Business Central mobile app](developer/devenv-using-https-and-certificates-mobile-app.md)
 <!-- end deployment -->
 <!-- administration -->
 ## Administration
-### [Administration of Business Central On-Premises](administration/administration.md)
-### [Server Administration Tool](administration/administration-tool.md)
-### [Administration Shell](administration/administration-shell.md)
-### Windows PowerShell Cmdlets
-#### [Windows PowerShell Cmdlets for Business Central](/powershell/business-central/overview)
-#### [Administration Cmdlets](/powershell/module/microsoft.dynamics.nav.management)
-#### [Administration Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
-#### [Development Cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
-#### [Development Cmdlets for Extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
-### Configuring User Authentication
-#### [Authentication and Credential Types](administration/users-credential-types.md)
+### [Administration of Business Central on-premises](administration/administration.md)
+### [Server administration tool](administration/administration-tool.md)
+### [Administration shell](administration/administration-shell.md)
+### Windows PowerShell cmdlets
+#### [Windows PowerShell cmdlets for Business Central](/powershell/business-central/overview)
+#### [Administration cmdlets](/powershell/module/microsoft.dynamics.nav.management)
+#### [Administration cmdlets for extensions](/powershell/module/microsoft.dynamics.nav.apps.management)
+#### [Development cmdlets](/powershell/module/microsoft.dynamics.nav.model.tools)
+#### [Development cmdlets for extensions](/powershell/module/microsoft.dynamics.nav.apps.tools)
+### Configuring user authentication
+#### [Authentication and credential types](administration/users-credential-types.md)
 #### Authenticating with Azure Active Directory
 ##### [Overview](administration/authenticating-users-with-azure-ad-overview.md)
-##### [Configure Azure AD Authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
-##### [Configure Azure AD Authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
+##### [Configure Azure AD authentication with OpenID Connect](administration/authenticating-users-with-azure-ad-openid-connect.md)
+##### [Configure Azure AD authentication with WS-Federation](administration/authenticating-users-with-azure-active-directory.md)
 #### [Authenticating with NavUserPassword](administration/authenticating-users-with-navuserpassword.md)
-### [Configuring Business Central Server](administration/configure-server-instance.md)
-### Configuring Business Central Web Server
-#### [Configuring Business Central Web Server Instances](administration/configure-web-server.md)
-#### [Setting Up Multiple Web Server Instances](deployment/configure-multiple-web-server-instances.md)
-### [Configuring Database Authentication](administration/configure-sql-server-authentication.md)
-### [Encrypting Data](developer/devenv-encrypting-data.md)
-### [Setting up the Excel Add-In](administration/configuring-excel-addin.md)
-### [Setting Up the Add-In for Outlook Integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
-### [Setting up App Key Vaults for Extensions](administration/setup-app-key-vault-onprem.md)
-### Configuring Business Central Database
-#### [Optimizing SQL Server Performance](administration/optimize-sql-server-performance.md)
-#### [Compatibility Level](administration/optimize-sql-set-compatibility-level.md)
-#### [Using Table Partitioning and Data Compression](administration/using-sql-partitioning-and-compression.md)
+### [Configuring Business Central server](administration/configure-server-instance.md)
+### Configuring Business Central web server
+#### [Configuring Business Central web server instances](administration/configure-web-server.md)
+#### [Setting up multiple web server instances](deployment/configure-multiple-web-server-instances.md)
+### [Configuring database authentication](administration/configure-sql-server-authentication.md)
+### [Encrypting data](developer/devenv-encrypting-data.md)
+### [Setting up the Excel add-in](administration/configuring-excel-addin.md)
+### [Setting up the add-in for Outlook integration](administration/Setting-up-Office-Add-Ins-Outlook-Inbox.md)
+### [Setting up app key vaults for extensions](administration/setup-app-key-vault-onprem.md)
+### Configuring Business Central database
+#### [Optimizing SQL server performance](administration/optimize-sql-server-performance.md)
+#### [Compatibility level](administration/optimize-sql-set-compatibility-level.md)
+#### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
-### Monitoring Business Central Server
+### Monitoring Business Central server
 #### [Monitoring Performance Counters](administration/performance-counters.md)
-#### Monitoring Server Events
+#### Monitoring server events
 ##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
 ##### [Trace Events List](administration/server-trace-events.md)
 ##### [Admin and Operational Events List](administration/server-events.md)
@@ -1374,169 +1374,169 @@
 ##### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
 ##### [Using LogMan](administration/monitor-use-logman-collect-event-trace-data.md)
 ##### [Using PowerShell](administration/monitor-server-events-with-powershell.md)
-##### [Turn Off or Limit Telemetry](administration/disable-limit-telemetry-events.md)
-### Analyzing Database Performance
-#### [Monitoring Long Running SQL Queries](administration/monitor-long-running-sql-queries-event-log.md)
-#### [Troubleshooting: Analyzing Long Running SQL Queries Involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
-#### [Troubleshooting: Using the Event Log to Monitor Long Running SQL Queries](administration/troubleshoot-long-running-queries-using-event-log.md)
+##### [Turn off or limit telemetry](administration/disable-limit-telemetry-events.md)
+### Analyzing database performance
+#### [Monitoring long-running SQL queries](administration/monitor-long-running-sql-queries-event-log.md)
+#### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
+#### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using Telemetry
-#### [Telemetry Overview](administration/telemetry-overview.md)
+#### [Telemetry overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
-### [Understanding Session Timeouts](administration/understanding-session-timeouts.md)
-### [Preparing Dynamics 365 for Sales for Integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
-### [Registering Your Deployment on Azure](administration/register-app-azure.md)
+### [Understanding session timeouts](administration/understanding-session-timeouts.md)
+### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
+### [Registering your deployment on Azure](administration/register-app-azure.md)
 <!--## [Configuring User Authentication](Configuring-Authentication.md)-->
 <!-- end administration -->
 <!-- upgrade -->
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
-### [Supported Upgrade Paths](upgrade/upgrade-paths.md)
-### Business Central 2022 Release Wave 2
+### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2022 release wave 2
 #### [Overview](upgrade/upgrade-overview-v21.md)
-#### [Before You Upgrade](upgrade/upgrade-considerations-v21.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
-#### [Upgrading Reports](upgrade/upgrade-reports.md)
-#### Application and Data
-##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v21.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v21.md)
-##### [From Version 15 and Later](upgrade/upgrade-unmodified-application-to-v21.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
+#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrading reports](upgrade/upgrade-reports.md)
+#### Application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v21.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v21.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v21.md)
 ##### Related Articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating Tables and Fields Between Extensions
+###### Migrating tables and fields between extensions
 ####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ###### Data Migration Toolkit - India
 ####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
-##### [From Version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
-##### [From Version 20](upgrade/upgrade-technical-upgrade-v21.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v21.md)
-### Business Central 2022 Release Wave 1
+#### Technical upgrade
+##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v21.md)
+##### [From version 18 or 19](upgrade/upgrade-technical-upgrade-v19-to-v21.md)
+##### [From version 20](upgrade/upgrade-technical-upgrade-v21.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v21.md)
+### Business Central 2022 release wave 1
 #### [Overview](upgrade/upgrade-overview-v20.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
-#### [Upgrading Reports](upgrade/upgrade-reports.md)
-#### Application and Data
-##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v20.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v20.md)
-##### [From Version 15 and Later](upgrade/upgrade-unmodified-application-to-v20.md)
-##### Related Articles
+#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrading reports](upgrade/upgrade-reports.md)
+#### Application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v20.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v20.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v20.md)
+##### Related articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating Tables and Fields Between Extensions
+###### Migrating tables and fields between extensions
 ####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+####### [Moving fables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ###### Data Migration Toolkit - India
 ####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
-#### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
-##### [From Version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v20.md)
-### Business Central 2021 Release Wave 2
+#### Technical upgrade
+##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v20.md)
+##### [From version 17, 18, or 19](upgrade/upgrade-technical-upgrade-v20.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v20.md)
+### Business Central 2021 release wave 2
 #### [Overview](upgrade/upgrade-overview-v19.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
-#### Application and Data
-##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v19.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v19.md)
-##### [From Versions 15 and Later](upgrade/upgrade-unmodified-application-to-v19.md)
-##### Related Articles
+#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+#### Application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v19.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v19.md)
+##### [From versions 15 and later](upgrade/upgrade-unmodified-application-to-v19.md)
+##### Related articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating Tables and Fields Between Extensions
+###### Migrating tables and fields between extensions
 ####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 ###### Data Migration Toolkit - India
 ####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
-##### [From Version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v19.md)
-### Business Central 2021 Release Wave 1
+##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
+##### [From version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v19.md)
+### Business Central 2021 release wave 1
 #### [Overview](upgrade/upgrade-overview-v18.md)
-#### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading Permission Sets](upgrade/upgrade-permissions.md)
-#### Application and Data
-##### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v18.md)
-##### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v18.md)
-##### [From Version 15, 16, or 17 Microsoft Base Application](upgrade/upgrade-unmodified-application-to-v18.md)
-##### Related Articles
+#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+#### Application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v18.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v18.md)
+##### [From version 15, 16, or 17 Microsoft base application](upgrade/upgrade-unmodified-application-to-v18.md)
+##### Related articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating Tables and Fields Between Extensions
+###### Migrating tables and fields between extensions
 ####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-#### Technical Upgrade
-##### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
-##### [From Version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
-#### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v18.md)
-### Earlier Versions
-#### Business Central 2020 Release Wave 2
+####### [Moving tables and Fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+#### Technical upgrade
+##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
+##### [From version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v18.md)
+### Earlier versions
+#### Business Central 2020 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v17.md)
-##### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-##### Application and Data
-###### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v17.md)
-###### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app-v17.md)
-###### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
-###### [From Version 16 Microsoft Base Application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v17.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v17.md)
+###### [From version 15 Microsoft base application](upgrade/upgrade-unmodified-application-v15-to-v17.md)
+###### [From version 16 Microsoft base application](upgrade/upgrade-unmodified-application-v16-to-v17.md)
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating Tables and Fields Between Extensions
+###### Migrating tables and fields between extensions
 ####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-##### Technical Upgrade
-###### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
-###### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
-###### [From Version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
-##### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v17.md)
-#### Business Central 2020 Release Wave 1
-##### [Upgrade Overview](upgrade/upgrade-overview-v16.md)
-##### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-##### Application and Data
+####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v17.md)
+###### [From version 15](upgrade/upgrade-technical-upgrade-v15-v17.md)
+###### [From version 16](upgrade/upgrade-technical-upgrade-v16-v17.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v17.md)
+#### Business Central 2020 release wave 1
+##### [Upgrade overview](upgrade/upgrade-overview-v16.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### Application and data
 <!--##### [Overiew](upgrade/upgrade-application-code-upgrade-v16.md)-->
 <!--##### [Unmodified Application](upgrade/upgrade-unmodified-application.md)-->
-###### [From version 14 Unmodified C/AL Application](upgrade/upgrade-unmodified-application-v14-v16.md)
-###### [From version 14 Customized C/AL Application](upgrade/upgrade-to-microsoft-base-app.md)
-###### [From Version 15 Microsoft Base Application](upgrade/upgrade-unmodified-application-v15-to-v16.md)
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v16.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app.md)
+###### [From version 15 Microsoft base application](upgrade/upgrade-unmodified-application-v15-to-v16.md)
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating Tables and Fields Between Extensions
-####### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+###### Migrating tables and fields between extensions
+####### [Data migration overview](developer/devenv-migrate-table-fields.md)
+####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
 <!--#### Data Upgrade
 ##### [Data Upgrade](upgrade/upgrade-data.md)-->
 ###### [DestinationAppsForMigration](upgrade/upgrade-destinationappsformigration.md)
-##### Technical Upgrade
-###### [From Version 14](upgrade/upgrade-technical-upgrade-v14-v16.md)
-###### [From Version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
-##### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v16.md)
-#### Business Central 2019 Release Wave 2
-##### [Upgrade Overview](upgrade/upgrade-overview-v15.md)
-##### [Upgrade Compatibility Matrix](upgrade/upgrade-v14-v15-compatibility.md)
-##### [Upgrade of an Unmodified Application](upgrade/upgrade-unmodified-application.md)
-##### [Technical Upgrade of a Customized Application](upgrade/upgrade-technical-upgrade-v14-v15.md)
-##### [Installing a Minor Update](upgrade/upgrading-cumulative-update-v15.md)
-#### Business Central Spring 2019
-##### [Upgrade Overview](upgrade/upgrading-to-business-central-on-premises.md)
-##### [Before You Upgrade](upgrade/Upgrade-Considerations.md)
-##### [Transitioning From Codeunit 1](upgrade/transition-from-codeunit1.md)
-##### Technical Upgrade
-###### [Technical Upgrade](upgrade/Converting-a-Database.md)
-###### [Technical Upgrade Quick Reference](upgrade/technical-upgrade-checklist.md)
-##### Application and Data Upgrade
-###### [Upgrading the Application Code](upgrade/Upgrading-the-Application-Code.md)
-##### Upgrading the Data: Single-Tenant Mode
-###### [Upgrading the Data: Single-Tenant Mode](upgrade/Upgrading-the-Data.md)
-###### [Quick Reference](upgrade/singletenant-upgrade-checklist.md)
-##### Upgrading the Data: Multitenant Mode
-###### [Upgrading the Data: Multitenant Mode](upgrade/upgrading-the-data-multitenant.md)
-###### [Quick Reference](upgrade/multitenant-upgrade-checklist.md)
-##### [Installing a Minor Update](upgrade/upgrading-cumulative-update.md)
-### [Some Known Issues](upgrade/known-issues.md)
-## [Migrate Legacy Help to the Business Central Format](upgrade/migrate-help.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v16.md)
+###### [From version 15](upgrade/upgrade-technical-upgrade-v15-v16.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v16.md)
+#### Business Central 2019 release wave 2
+##### [Upgrade overview](upgrade/upgrade-overview-v15.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrade of an unmodified application](upgrade/upgrade-unmodified-application.md)
+##### [Technical upgrade of a customized application](upgrade/upgrade-technical-upgrade-v14-v15.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v15.md)
+#### Business Central spring 2019
+##### [Upgrade overview](upgrade/upgrading-to-business-central-on-premises.md)
+##### [Before you upgrade](upgrade/Upgrade-Considerations.md)
+##### [Transitioning from codeunit 1](upgrade/transition-from-codeunit1.md)
+##### Technical upgrade
+###### [Technical upgrade](upgrade/Converting-a-Database.md)
+###### [Technical upgrade quick reference](upgrade/technical-upgrade-checklist.md)
+##### Application and data upgrade
+###### [Upgrading the application code](upgrade/Upgrading-the-Application-Code.md)
+##### Upgrading the Data: Single-tenant mode
+###### [Upgrading the data: Single-tenant mode](upgrade/Upgrading-the-Data.md)
+###### [Quick reference](upgrade/singletenant-upgrade-checklist.md)
+##### Upgrading the data: Multitenant mode
+###### [Upgrading the data: Multitenant mode](upgrade/upgrading-the-data-multitenant.md)
+###### [Quick reference](upgrade/multitenant-upgrade-checklist.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update.md)
+### [Some known issues](upgrade/known-issues.md)
+## [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 
 <!-- end upgrade -->
 <!--on-prem ends-->
