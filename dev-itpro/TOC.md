@@ -849,195 +849,194 @@
 #### [Permissionset Extension Object](developer/devenv-permissionset-ext-object.md)
 <!-- end AL programming -->
 
-## AL Platform
+## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
 <!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
-### Using the System Application
-#### [Overview of the System Application](developer/devenv-system-application-overview.md)
-#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
-#### Creating New Modules in the System Application
-##### [Module Architecture](developer/devenv-blueprint.md)
-##### [Get Started with Modules](developer/devenv-getting-started.md)
-##### [Set Up Your Development Environment](developer/devenv-set-up-an-environment.md)
-##### [Create a New Module](developer/devenv-new-module.md)
-##### [Create a .NET Wrapper Module](developer/devenv-create-a-wrapper-module.md)
-##### [Change a Module](developer/devenv-change-a-module.md)
-### Task Scheduler and Job Queue
-#### [Task Scheduler](developer/devenv-task-scheduler.md)
-#### [Job Queue](developer/devenv-job-queue.md)
+### Using the system Application
+#### [Overview of the system application](developer/devenv-system-application-overview.md)
+#### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
+#### Creating new modules in the system application
+##### [Module architecture](developer/devenv-blueprint.md)
+##### [Get started with modules](developer/devenv-getting-started.md)
+##### [Set up your development environment](developer/devenv-set-up-an-environment.md)
+##### [Create a new module](developer/devenv-new-module.md)
+##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
+##### [Change a module](developer/devenv-change-a-module.md)
+### Task scheduler and job queue
+#### [Task scheduler](developer/devenv-task-scheduler.md)
+#### [Job queue](developer/devenv-job-queue.md)
 
 ### App Key Vaults for Secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
-#### [Setting up App Key Vaults for Online](administration/setup-app-key-vault.md)
-#### [Setting up App Key Vaults for On-premises](administration/setup-app-key-vault-onprem.md)
-#### [Using Key Vault Secrets in Extensions](developer/devenv-app-key-vault.md)
+#### [Setting up App Key Vaults for online](administration/setup-app-key-vault.md)
+#### [Setting up App Key Vaults for on-premises](administration/setup-app-key-vault-onprem.md)
+#### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
 
-### Developing Printer Extensions
-#### [Printer Extension Overview](developer/devenv-reports-printing.md)
-#### [Creating a Printer Extension](developer/devenv-reports-create-printer-extension.md)
+### Developing printer extensions
+#### [Printer extension overview](developer/devenv-reports-printing.md)
+#### [Creating a printer extension](developer/devenv-reports-create-printer-extension.md)
 <!--#### [Print Setup Payload](developer/devenv-onaftersetupprinters-event.md)-->
 <!--#### [Handling Print Action](developer/devenv-reports-handle-print-action.md)-->
 <!--#### [Report Payload](developer/devenv-onafterdocumentprintready-event.md)-->
 <!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
 
-### Creating Deep Links
+### Creating deep links
 #### [Web Client URL](developer/devenv-web-client-urls.md)
-#### [Business Central App URL](developer/devenv-link-to-mobile-app.md) 
+#### [Business Central app URL](developer/devenv-link-to-mobile-app.md) 
 
-### Instrumenting with Telemetry
+### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Creating Custom Events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
-#### [Sending Extension Telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
-#### [Creating Custom Events for Event Log (On-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
-
+#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
+#### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
+#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
 
 ### Using .NET (on-premises only)
 #### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 #### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
-#### [.NET Control Add-Ins](developer/devenv-dotnet-controladdins.md)
-#### [Subscribing to Events in a .NET Framework Type](developer/devenv-dotnet-subscribe-to-events.md)
-#### [Serializing .NET Framework Types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
+#### [.NET Control Add-ins](developer/devenv-dotnet-controladdins.md)
+#### [Subscribing to Events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
+#### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 ## Extensibility
-### Extending the Base Application
-#### [Application Reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
-#### [The Microsoft_Application.app File](developer/devenv-application-app-file.md)
-#### [Publishing a Code-Customized Base Application](developer/devenv-publish-code-customization.md)
-#### [Extending Application Areas](developer/devenv-extending-application-areas.md)
+### Extending the base application
+#### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
+#### [The Microsoft_Application.app file](developer/devenv-application-app-file.md)
+#### [Publishing a code-customized base application](developer/devenv-publish-code-customization.md)
+#### [Extending application areas](developer/devenv-extending-application-areas.md)
 #### Examples
-##### [Extending Item Charge Distribution Methods](developer/devenv-extending-item-charges.md)
-##### [Extending Price Calculations](developer/devenv-extending-best-price-calculations.md)
-##### [Extending Pages Previously Based on the Date Virtual Table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
-##### [Extending Data Archiving](developer/devenv-data-archive-extension.md)
-##### [Extending Document Sharing and OneDrive Integration](developer/devenv-extending-document-sharing-onedrive.md)
-##### [Extending Customer, Vendor, and Item Templates](developer/devenv-extending-templates.md)
-##### [Extending Email Capabilities](developer/devenv-extending-email.md)
-##### [Extending G/L Entry Aggregations When Posting Invoices](developer/devenv-invoice-posting-example.md)
+##### [Extending item charge distribution methods](developer/devenv-extending-item-charges.md)
+##### [Extending price calculations](developer/devenv-extending-best-price-calculations.md)
+##### [Extending pages previously based on the Date virtual table](developer/devenv-extend-pages-based-on-date-virtual-table.md)
+##### [Extending data archiving](developer/devenv-data-archive-extension.md)
+##### [Extending document sharing and OneDrive integration](developer/devenv-extending-document-sharing-onedrive.md)
+##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
+##### [Extending email capabilities](developer/devenv-extending-email.md)
+##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
 
-### Using Events 
-#### [Event Types](developer/devenv-event-types.md)
-#### [Publishing Events](developer/devenv-publishing-events.md)
-#### [Raising Events](developer/devenv-raising-events.md)
-#### [Subscribing to Events](developer/devenv-subscribing-to-events.md)
-#### [Isolated Events](developer/devenv-events-isolated.md)
-#### [Discover Events Using the Event Recorder](developer/devenv-events-discoverability.md)
-#### [Event Example](developer/devenv-events-example.md)
-#### [Walkthrough: Implementing New Workflow Events and Responses](developer/devenv-walkthrough-workflow-events-responses.md)  
+### Using events 
+#### [Event types](developer/devenv-event-types.md)
+#### [Publishing events](developer/devenv-publishing-events.md)
+#### [Raising events](developer/devenv-raising-events.md)
+#### [Subscribing to events](developer/devenv-subscribing-to-events.md)
+#### [Isolated events](developer/devenv-events-isolated.md)
+#### [Discover events using the Event Recorder](developer/devenv-events-discoverability.md)
+#### [Event example](developer/devenv-events-example.md)
+#### [Walkthrough: Implementing new workflow events and responses](developer/devenv-walkthrough-workflow-events-responses.md)  
 #### [Notifications](developer/devenv-notifications-developing.md)
-### Developing Client Add-ins 
-#### [Control Add-in Style Guide](developer/devenv-control-addin-style.md)
-#### [Control Add-in Best Practices](developer/devenv-control-addin-bestpractices.md)
+### Developing client add-ins 
+#### [Control add-in style guide](developer/devenv-control-addin-style.md)
+#### [Control add-in best practices](developer/devenv-control-addin-bestpractices.md)
 
-### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
+### [Adding Power BI report parts to pages](developer/devenv-power-bi-report-parts.md)
 
 <!-- end Testing the application -->
 <!-- Rules and Guidelines -->
-## Rules, Guidelines, and Best Practices
+## Rules, guidelines, and best practices
 ### [Overview](compliance/apptest-overview.md)
-### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
-### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
-### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
-### [Testing your Extension](compliance/apptest-testingyourextension.md)
-### [User Scenario Documentation](compliance/apptest-userscenario.md)
-### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
+### [Deprecating AL code](developer/devenv-deprecation-guidelines.md)
+### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
+### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
+### [Testing your extension](compliance/apptest-testingyourextension.md)
+### [User scenario cocumentation](compliance/apptest-userscenario.md)
+### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
-### [Walkthrough: Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
-### [Walkthrough: Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
-### Best Practices
+### [Walkthrough: Building an advanced sample extension](developer/devenv-extension-advanced-example.md)
+### [Walkthrough: Testing the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
+### Best practices
 #### [Overview](compliance/apptest-bestpracticesforalcode.md)
-#### AL Code
-##### [Rules and Guidelines](compliance/apptest-overview.md)
-##### [Naming Conventions](compliance/apptest-bestpracticesforalcode.md)
-##### [Using a Prefix or Suffix](compliance/apptest-prefix-suffix.md)
+#### AL code
+##### [Rules and guidelines](compliance/apptest-overview.md)
+##### [Naming conventions](compliance/apptest-bestpracticesforalcode.md)
+##### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
 ##### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
 #### Restrictions
-##### [Restrictions on UI for Objects Exposed as Web Services](compliance/apptest-webservices.md)
+##### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
-##### [Adding Custom Telemetry](developer/devenv-instrument-application-for-telemetry.md)
-##### [Adding Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
-#### [Code Deprecation](developer/devenv-deprecation-guidelines.md)
-#### [User Scenarios](compliance/apptest-userscenario.md)
-#### [Requirements for Connectivity Apps](compliance/connectivity-apps-requirements.md)
+##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
+##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Code deprecation](developer/devenv-deprecation-guidelines.md)
+#### [User scenarios](compliance/apptest-userscenario.md)
+#### [Requirements for connectivity apps](compliance/connectivity-apps-requirements.md)
 #### Testing
-##### [Testing your Extension](compliance/apptest-testingyourextension.md)
-##### [Building an Advanced Sample Extension](developer/devenv-extension-advanced-example.md)
-##### [Testing the Advanced Sample Extension](developer/devenv-extension-advanced-example-test.md)
+##### [Testing your extension](compliance/apptest-testingyourextension.md)
+##### [Building an advanced sample extension](developer/devenv-extension-advanced-example.md)
+##### [Testing the advanced sample extension](developer/devenv-extension-advanced-example-test.md)
 #### Performance
-##### [Performance Developer Guide](performance/performance-developer.md)
-##### [Analyzing Performance](performance/performance-work-perf-problem.md)
+##### [Performance developer guide](performance/performance-developer.md)
+##### [Analyzing performance](performance/performance-work-perf-problem.md)
 #### Security
-##### [Application Security](security/security-application.md)
-##### [Data Security](security/data-security.md)
-##### [Using Key Vaults for Secrets](developer/devenv-app-key-vault-overview.md)
+##### [Application security](security/security-application.md)
+##### [Data security](security/data-security.md)
+##### [Using key vaults for secrets](developer/devenv-app-key-vault-overview.md)
 <!-- end Rules and Guidelines -->
 
-## Extension Lifecycle 
+## Extension lifecycle 
 <!-- (deploy, install, testing, upgrade, deprecation, …) -->
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
 ### Migration
-#### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-#### Migrating tables and Fields Between Extensions
-##### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
-##### [Moving tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-##### [Moving tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
-##### [Migration.json File](developer/devenv-migration-json-file.md)
+#### [Generating delta files](developer/devenv-generating-delta-files.md)
+#### Migrating tables and fields between extensions
+##### [Data migration overview](developer/devenv-migrate-table-fields.md)
+##### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+##### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### [Migration.json file](developer/devenv-migration-json-file.md)
 
 ### Translation
-#### [Translations Overview](developer/devenv-translations-overview.md)
-#### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
+#### [Translations overview](developer/devenv-translations-overview.md)
+#### [Working with translation files](developer/devenv-work-with-translation-files.md)
 
 ### Testing 
 #### [Overview](developer/devenv-testing-application.md)
-#### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
-#### [Handler Methods (for tests)](developer/devenv-creating-handler-methods.md) 
-#### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
-#### [Test Pages](developer/devenv-testing-pages.md)
-#### [UI Handlers](developer/devenv-creating-handler-methods.md)
+#### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
+#### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md) 
+#### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
+#### [Test pages](developer/devenv-testing-pages.md)
+#### [UI handlers](developer/devenv-creating-handler-methods.md)
 <!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
-#### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
-#### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
-#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
+#### [Application testing example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
+#### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
+#### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 
-### Deploying and Installing
-#### [Maintain AppSource Apps and Per-Tenant Extensions](developer/app-maintain.md)
-#### [FAQ about Managing and Submitting your Business Central Offer](developer/app-faq-offer.md)
-#### [Writing Extension Install Code](developer/devenv-extension-install-code.md)
-#### [Publish and Install an Extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
-#### [Upgrading AppSource Apps in Production](developer/devenv-upgrade-appsource-app-in-prod.md)
+### Deploying and installing
+#### [Maintain AppSource apps and per-tenant extensions](developer/app-maintain.md)
+#### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
+#### [Writing extension install code](developer/devenv-extension-install-code.md)
+#### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
+#### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
 ### Updating
 #### [Overview](developer/devenv-app-life-cycle.md)
-#### [Update Lifecycle for Customizations](developer/devenv-customization-update-lifecycle.md)
-#### [Update Lifecycle for AppSource Apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
-#### [FAQ about Updating your Business Central App](developer/app-faq-update.md)
-#### [Upgrading Extensions](developer/devenv-upgrading-extensions.md)
+#### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
+#### [Update lifecycle for AppSource apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
+#### [FAQ about updating your Business Central app](developer/app-faq-update.md)
+#### [Upgrading extensions](developer/devenv-upgrading-extensions.md)
     
 ### Deprecating code
-#### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-#### [Best Practices for Deprecation of AL Code](developer/devenv-deprecation-guidelines.md)
-#### [Deprecating Explicit and Implicit With Statements](developer/devenv-deprecating-with-statements-overview.md)
+#### [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+#### [Best practices for deprecation of AL code](developer/devenv-deprecation-guidelines.md)
+#### [Deprecating explicit and implicit with statements](developer/devenv-deprecating-with-statements-overview.md)
 
 ## DevOps with AL-Go for GitHub
-### [AL-Go Overview](al-go/algo-overview.md)
-### [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](al-go/algo-get-started.md)
-### [Add a Test App to an Existing Project](al-go/algo-add-test-app.md)
-### [Register a Customer Sandbox Environment for Continuous Deployment using S2S](al-go/algo-register-sandbox-env.md)
-### [Create a release of Your Application](al-go/algo-create-release-app.md)
-### [Register a Customer Production Environment for Manual Deployment](al-go/algo-register-cust-prod-env.md)
-### [Update AL-Go System Files](al-go/algo-update-system-files.md)
-### [Use Azure KeyVault for Secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
-### [Create Online Development Environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
-### [Create Online Development Environment from GitHub](al-go/algo-create-online-dev-env-github.md)
-### [Set up CI/CD for an Existing Per-Tenant Extension](al-go/algo-setup-cicd-existing-pte.md)
-### [Set up CI/CD for an Existing AppSource App](al-go/algo-setup-cicd-existing-app.md)
-### [Enable KeyVault Access for Your AppSource App during Development and/or Test](al-go/algo-enable-keyvault-app-development.md)
-### [Set up Your Own GitHub Runner to Increase Build Performance](al-go/algo-setup-github-runner-performance.md)
-### [Introducing a Dependency to Another GitHub Repository](al-go/algo-dependency-app-github.md)
-### [Enabling Telemetry for AL-Go Workflows and Actions](al-go/algo-enabling-telemetry.md)
+### [AL-Go overview](al-go/algo-overview.md)
+### [Create a new per-tenant extension and start developing in Visual Studio Code](al-go/algo-get-started.md)
+### [Add a test app to an existing project](al-go/algo-add-test-app.md)
+### [Register a customer sandbox environment for continuous deployment using S2S](al-go/algo-register-sandbox-env.md)
+### [Create a release of your application](al-go/algo-create-release-app.md)
+### [Register a customer production environment for manual deployment](al-go/algo-register-cust-prod-env.md)
+### [Update AL-Go system files](al-go/algo-update-system-files.md)
+### [Use Azure KeyVault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
+### [Create online development environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
+### [Create online development environment from GitHub](al-go/algo-create-online-dev-env-github.md)
+### [Set up CI/CD for an existing per-tenant extension](al-go/algo-setup-cicd-existing-pte.md)
+### [Set up CI/CD for an existing AppSource app](al-go/algo-setup-cicd-existing-app.md)
+### [Enable key vault access for your AppSource app during development and/or test](al-go/algo-enable-keyvault-app-development.md)
+### [Set up your own GitHub Runner to increase build performance](al-go/algo-setup-github-runner-performance.md)
+### [Introducing a dependency to another GitHub repository](al-go/algo-dependency-app-github.md)
+### [Enabling telemetry for AL-Go workflows and actions](al-go/algo-enabling-telemetry.md)
 
 
 ## Troubleshooting
@@ -1045,45 +1044,45 @@
 ### Troubleshooting in the client
 #### [Using the Page Inspector](/dynamics365/business-central/across-inspect-page)
 #### [Using the Event Recorder](developer/devenv-events-discoverability.md)
-#### [Database Table Information](/dynamics365/business-central/admin-view-table-information)
-#### [Database Locks](/dynamics365/business-central/admin-view-database-locks)
-#### [Missing Indexes](administration/database-missing-indexes.md)
-#### [Database Wait Statistics](administration\database-wait-statistics.md)
+#### [Database table information](/dynamics365/business-central/admin-view-table-information)
+#### [Database locks](/dynamics365/business-central/admin-view-database-locks)
+#### [Missing indexes](administration/database-missing-indexes.md)
+#### [Database wait statistics](administration\database-wait-statistics.md)
 #### [Using the Performance Profiler](administration/performance-profiler-overview.md)
-#### [Verifying Report Datasets](/dynamics365/business-central/report-analyze-excel)
-#### [Checking Personalization Issues](/dynamics365/business-central/ui-personalization-user)
+#### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
+#### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
 #### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)
-#### [Checking Customization Issues](/dynamics365/business-central/ui-personalization-manage)
+#### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
 #### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)
-#### [Verifying User Permissions](/dynamics365/business-central/ui-define-granular-permissions)
-#### [Investigating Mobile App (On-Premises)](developer/devenv-troubleshooting-the-mobile-app.md)
+#### [Verifying user permissions](/dynamics365/business-central/ui-define-granular-permissions)
+#### [Investigating Mobile App (on-premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
 #### [Debugging AL code](developer/devenv-debugging.md)
-#### [Capturing Snapshots](developer/devenv-snapshot-debugging.md)
+#### [Capturing snapshots](developer/devenv-snapshot-debugging.md)
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
-#### [Investigating Printer and Report Payloads](developer/devenv-reports-troubleshoot-printing.md)
-#### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting Performance Issues](performance/performance-overview.md)
+#### [Investigating printer and report payloads](developer/devenv-reports-troubleshoot-printing.md)
+#### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
+#### [Troubleshooting performance issues](performance/performance-overview.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
-#### [Enabling Telemetry](administration/telemetry-enable-application-insights.md)
+#### [Enabling telemetry](administration/telemetry-enable-application-insights.md)
 #### [Using Jupyter notebook troubleshooting guides](https://aka.ms/bctelemetrysamples)
 #### [Using Power BI troubleshooting reports](https://aka.ms/bctelemetrysamples)
-#### [Using telemetry to investigate Performance Issues](performance/performance-work-perf-problem.md)
+#### [Using telemetry to investigate performance issues](performance/performance-work-perf-problem.md)
 
-## [AL Language Reference](developer/index.md)
+## [AL language reference](developer/index.md)
 <!-- end AL -->
 <!-- begin security -->
 
 # Security, Privacy, and Compliance
 ## Security
-### [Security Overview](security/security-and-protection.md)
-### [Tips for Business Users](security/security-users.md)
+### [Security overview](security/security-and-protection.md)
+### [Tips for business users](security/security-users.md)
 ### [Application](security/security-application.md)
 ### [Online](security/security-online.md)
-### [On-Premises](security/security-onpremises.md)
-### [Data Security](security/data-security.md)
+### [On-premises](security/security-onpremises.md)
+### [Data security](security/data-security.md)
 ### [Azure security service tags](security/security-service-tags.md)
 <!--
 ### [Considerations](security/security-considerations.md)
@@ -1098,48 +1097,48 @@
 ### [Privacy FAQ](security/PrivacyFAQ.md)
 ### [Privacy (microsoft.com)](https://www.microsoft.com/trust-center/privacy)
 ## Compliance
-### [Compliance Overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Compliance overview](/dynamics365/business-central/compliance/compliance-overview?toc=/dynamics365/business-central/dev-itpro/toc.json)
 <!-- end security -->
-## [Service Overview](service-overview.md)
+## [Service overview](service-overview.md)
 <!-- begin performance -->
 # Performance
-## [Performance Overview](performance/performance-overview.md)
+## [Performance overview](performance/performance-overview.md)
 ## [Application](performance/performance-application.md)
-## [Tips for Business Users](performance/performance-users.md)
+## [Tips for business users](performance/performance-users.md)
 ## [Developer](performance/performance-developer.md)
 ## [Online](performance/performance-online.md)
-## [On-Premises](performance/performance-onprem.md)
-## [How to Work with a Performance Problem](performance/performance-work-perf-problem.md)
+## [On-premises](performance/performance-onprem.md)
+## [How to work with a performance problem](performance/performance-work-perf-problem.md)
 <!-- end performance -->
 <!-- integration-->
 # Integration
 <!-- web service -->
-## [Refactor Integration Management](developer/devenv-integration-record-refactoring.md)
-## Web Services
-### [Web Services Overview](webservices/web-services.md)
-### [Terms of Use for Web Services](webservices/webservices-terms-of-use.md)
+## [Refactor integration management](developer/devenv-integration-record-refactoring.md)
+## Web services
+### [Web services overview](webservices/web-services.md)
+### [Terms of Use for web services](webservices/webservices-terms-of-use.md)
 ### General
-#### [Publishing a Web Service](webservices/publish-web-service.md)
-#### [Handling UI Interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
-#### [Managing Timezones](webservices/managing-time-zones-with-web-services.md)
-#### [Working with Static Proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
+#### [Publishing a web service](webservices/publish-web-service.md)
+#### [Handling UI interaction](webservices/handling-ui-interaction-when-working-with-web-Services.md)
+#### [Managing timezones](webservices/managing-time-zones-with-web-services.md)
+#### [Working with static proxy](webservices/preserving-data-when-working-with-a-statically-generated-proxy.md)
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
-#### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
-#### [Web Service Telemetry](webservices/web-service-telemetry.md)
+#### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
+#### [Web service telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
-#### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
-#### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
-#### [Best Practices](webservices/web-services-best-practices.md)
+#### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
+#### [Supported cipher suites](developer/devenv-supported-cipher-suites.md)
+#### [Best practices](webservices/web-services-best-practices.md)
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
-#### [Cloud Migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
-#### [Developing a Custom API](developer/devenv-develop-custom-api.md)
-#### [Getting a List of Environments](webservices/api-get-environments.md)
+#### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
+#### [Developing a custom API](developer/devenv-develop-custom-api.md)
+#### [Getting a list of environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData query performance](webservices/odata-client-performance.md)
