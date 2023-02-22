@@ -440,63 +440,63 @@
 #### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
 #### [UICop Analyzer Rules](developer/analyzers/uicop.md)
 
-### Compile, Publish, and Debug
-#### [Compilation Scope Overview](developer/devenv-compilation-scope-overview.md)
+### Compile, publish, and debug
+#### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
 #### [Debugging in AL](developer/devenv-debugging.md)
-#### [Attach and Debug Next](developer/devenv-attach-debug-next.md)
-#### [Snapshot Debugging](developer/devenv-snapshot-debugging.md)
-#### [Debug Upgrade and Install Code](developer/devenv-debug-upgrade-install-code.md)
+#### [Attach and debug next](developer/devenv-attach-debug-next.md)
+#### [Snapshot debugging](developer/devenv-snapshot-debugging.md)
+#### [Debug upgrade and install code](developer/devenv-debug-upgrade-install-code.md)
 #### [AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [RAD publishing in AL](developer/devenv-rad-publishing.md)
-#### [Sign an App Package File](developer/devenv-sign-extension.md)
-#### [Using Azure AD Authentication for Business Central On-Premises Installations](developer/devenv-aad-auth-onprem.md)
+#### [Sign an app package file](developer/devenv-sign-extension.md)
+#### [Using Azure AD authentication for Business Central on-premises installations](developer/devenv-aad-auth-onprem.md)
 
 ### Testing
 #### [Overview](developer/devenv-testing-application.md)
-#### [Test Codeunits and Test Methods](developer/devenv-test-codeunits-and-test-methods.md)
-#### [Handler Methods (for tests)](developer/devenv-creating-handler-methods.md) 
-#### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
+#### [Test codeunits and test methods](developer/devenv-test-codeunits-and-test-methods.md)
+#### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md) 
+#### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
 #### [Test pages](developer/devenv-testing-pages.md)
-#### [UI Handlers](developer/devenv-creating-handler-methods.md)
+#### [UI handlers](developer/devenv-creating-handler-methods.md)
 <!--### [Test with Permission Sets](developer/devenv-testing-with-permission-sets.md)-->
-#### [Application Testing Example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
-#### [The Performance Toolkit Extension](developer/devenv-performance-toolkit.md)
-#### [FAQ about Testing your Business Central App](developer/app-faq-test.md)
+#### [Application testing example](developer/devenv-test-application-example-purchase-invoice-discounts.md)
+#### [The performance toolkit extension](developer/devenv-performance-toolkit.md)
+#### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 
-### Work in Sandboxes
-#### [Sandbox Environments for Development](developer/devenv-sandbox-overview.md)
-#### [Get Started with the Container Sandbox Development Environment](developer/devenv-get-started-container-sandbox.md)
-#### [Work with Development Sandboxes and Entitlements](developer/devenv-work-sandbox-entitlements.md)
+### Work in sandboxes
+#### [Sandbox environments for development](developer/devenv-sandbox-overview.md)
+#### [Get started with the container sandbox development environment](developer/devenv-get-started-container-sandbox.md)
+#### [Work with development sandboxes and entitlements](developer/devenv-work-sandbox-entitlements.md)
 
 ### Working with apps
-#### [App Identity](developer/devenv-app-identity.md)
-#### [Choosing Runtime Version in AL](developer/devenv-choosing-runtime.md)
-#### [FAQ about Library and Dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
-#### [Adding Data for Extensions](developer/devenv-export-data-for-extension.md)
+#### [App identity](developer/devenv-app-identity.md)
+#### [Choosing runtime version in AL](developer/devenv-choosing-runtime.md)
+#### [FAQ about library and dependency apps in Business Central](developer/app-faq-dependencies-libraries.md)
+#### [Adding data for extensions](developer/devenv-export-data-for-extension.md)
 
 ### Other tools
-#### [The Txt2Al Conversion Tool](developer/devenv-txt2al-tool.md)
-#### [Viewing Table Data](developer/devenv-view-table-data.md)
-#### [Inspecting and Troubleshooting pages](developer/devenv-inspecting-pages.md)
+#### [The Txt2Al conversion tool](developer/devenv-txt2al-tool.md)
+#### [Viewing table data](developer/devenv-view-table-data.md)
+#### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
 
-## AL Language
-### [A Tour of the AL language](developer/devenv-programming-in-al.md)
-### [FAQ for AL Developers](developer/devenv-dev-faq.md)
+## AL language
+### [A tour of the AL language](developer/devenv-programming-in-al.md)
+### [FAQ for AL developers](developer/devenv-dev-faq.md)
 
 ### Program building blocks
-#### [System-Defined Variables](developer/devenv-system-defined-variables.md)
+#### [System-defined variables](developer/devenv-system-defined-variables.md)
 #### Statements
-##### [Simple Statements](developer/devenv-al-simple-statements.md)  
-##### [Control Statements](developer/devenv-al-control-statements.md)  
-#### [Access Modifiers](developer/devenv-using-access-modifiers.md)
+##### [Simple statements](developer/devenv-al-simple-statements.md)  
+##### [Control statements](developer/devenv-al-control-statements.md)  
+#### [Access modifiers](developer/devenv-using-access-modifiers.md)
 #### [Comments](developer/devenv-xml-comments.md)
 
-### Language Elements
-#### Data Types
+### Language elements
+#### Data types
 <!-- ##### Need an overview page -->
 ##### [Overview](developer/methods-auto/library.md)
-##### Simple Types
-###### Date and Time
+##### Simple types
+###### Date and time
 ####### [Date](developer/methods-auto/date/date-data-type.md)
 ####### [DateTime](developer/methods-auto/datetime/datetime-data-type.md)
 ####### [Duration](developer/methods-auto/duration/duration-data-type.md)
@@ -516,14 +516,14 @@
 ###### [Boolean](developer/methods-auto/boolean/boolean-data-type.md)
 ###### [Guid](developer/methods-auto/guid/guid-data-type.md)
 
-##### Complex Types
+##### Complex types
 ###### [Blob](developer/methods-auto/blob/blob-data-type.md)
 ###### [Media](developer/methods-auto/media/media-data-type.md)
 ###### [MediaSet](developer/methods-auto/mediaset/mediaset-data-type.md)
 ###### [Record](developer/methods-auto/record/record-data-type.md)
 ###### [System](developer/methods-auto/system/system-data-type.md)
 
-##### JSON and XML Types
+##### JSON and XML types
 ###### [JsonArray Data Type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
 ###### [Jsonobject Data Type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
 ###### [JsonToken Data Type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
@@ -544,86 +544,86 @@
 
 ##### [object types](developer/devenv-reference-overview.md)
 
-##### Other Types
-###### [Joker Data Type (Internal)](developer/methods/devenv-joker-datatype.md)
+##### Other types
+###### [Joker data type (Internal)](developer/methods/devenv-joker-datatype.md)
 
 ##### Collections
 ###### [Array](developer/methods/devenv-array-methods.md)
 ###### [Dictionary](developer/methods-auto/dictionary/dictionary-data-type.md)
 ###### [list](developer/methods-auto/list/list-data-type.md)
 
-##### Enumerations and Options
+##### Enumerations and options
 ###### [Enum](developer/devenv-extensible-enums.md)
 ###### [Option](developer/methods-auto/option/option-data-type.md)
 
 #### [Interfaces](developer/devenv-interfaces-in-al.md)
 
 #### [Methods](developer/devenv-al-methods.md)
-##### [Progress Windows, Message, Error, and Confirm Methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
-##### [Method Attributes](developer/attributes/devenv-method-attributes.md)
-##### [Using Data Types in methods](developer/devenv-al-complextypes.md)
+##### [Progress windows, Message, Error, and Confirm methods](developer/devenv-progress-windows-message-error-and-confirm-methods.md)
+##### [Method attributes](developer/attributes/devenv-method-attributes.md)
+##### [Using data types in methods](developer/devenv-al-complextypes.md)
 ##### [Overloading methods](developer/methods/devenv-overload-method.md)
-##### [Handler Methods (for tests)](developer/devenv-creating-handler-methods.md) 
+##### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md) 
 
-#### objects
-##### [object Properties](developer/properties/devenv-properties.md)
+#### Objects
+##### [object properties](developer/properties/devenv-properties.md)
 ##### [Table](developer/devenv-table-object.md)
-###### [Table Extension object](developer/devenv-table-ext-object.md)
-###### [Table Keys](developer/devenv-table-keys.md)
+###### [Table extension object](developer/devenv-table-ext-object.md)
+###### [Table keys](developer/devenv-table-keys.md)
 ##### [Page](developer/devenv-page-object.md)
-###### [Page Extension object](developer/devenv-page-ext-object.md)
-###### [Page Customization object](developer/devenv-page-customization-object.md)
+###### [Page extension object](developer/devenv-page-ext-object.md)
+###### [Page customization object](developer/devenv-page-customization-object.md)
 ##### [Report](developer/devenv-report-object.md)
 ##### [Profile](developer/devenv-profile-object.md)
 ##### [Codeunit](developer/devenv-codeunit-object.md)
 ##### [Query](developer/devenv-query-object.md)
 ##### [XMLPort](developer/devenv-xmlport-object.md)
-##### [Control Add-In](developer/devenv-control-addin-object.md)
+##### [Control add-in](developer/devenv-control-addin-object.md)
 ##### [Entitlement](developer/devenv-entitlement-object.md)
-##### Permission Set
+##### Permission set
 ###### [Permissionset](developer/devenv-permissionset-object.md)
-###### [Permissionset Extension](developer/devenv-permissionset-ext-object.md)
-##### [Test Codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
-##### [Test Runner Codeunits](developer/devenv-testrunner-codeunits.md)
+###### [Permissionset extension](developer/devenv-permissionset-ext-object.md)
+##### [Test codeunits](developer/devenv-test-codeunits-and-test-methods.md) 
+##### [Test runner codeunits](developer/devenv-testrunner-codeunits.md)
 
 #### [Triggers](developer/triggers-auto/devenv-triggers.md)
 
-### Error Handling
-#### [Error Handling](developer/devenv-al-error-handling.md)
-#### [Handling Errors using Try Methods](developer/devenv-handling-errors-using-try-methods.md)
-#### [Collecting Errors](developer/devenv-error-collection.md)
-#### [Error(String [, Any,...]) Method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
-#### [Error(ErrorInfo) Method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
-#### [LogInternalError(String, DataClassification, Verbosity) Method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
-#### [LogInternalError(String, String, DataClassification, Verbosity) Method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
+### Error handling
+#### [Error handling](developer/devenv-al-error-handling.md)
+#### [Handling errors using Try methods](developer/devenv-handling-errors-using-try-methods.md)
+#### [Collecting errors](developer/devenv-error-collection.md)
+#### [Error(String [, Any,...]) method](developer/methods-auto/dialog/dialog-error-string-joker-method.md)
+#### [Error(ErrorInfo) method](developer/methods-auto/dialog/dialog-error-errorinfo-method.md)
+#### [LogInternalError(String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-dataclassification-verbosity-method.md)
+#### [LogInternalError(String, String, DataClassification, Verbosity) method](developer/methods-auto/dialog/dialog-loginternalerror-string-string-dataclassification-verbosity-method.md)
 
-### Formatting Values
-#### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
-#### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
+### Formatting values
+#### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+#### [Formatting values, dates, and time](developer/devenv-format-property.md)
 
-### tables and Data
+### Tables and data
 #### [Overview](developer/devenv-tables-overview.md)
 #### Defining table structures
-##### [tables Overview](developer/devenv-tables-overview.md)
+##### [tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
-##### [System Fields](developer/devenv-table-system-fields.md)
-##### [Table Extension object](developer/devenv-table-ext-object.md)
-##### [Setting Relationships Between tables](developer/devenv-set-relationships-between-tables.md)
-##### [Classifying Data](developer/devenv-classifying-data.md)
-#### Modifying Data
-##### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
+##### [System fields](developer/devenv-table-system-fields.md)
+##### [Table extension object](developer/devenv-table-ext-object.md)
+##### [Setting relationships between tables](developer/devenv-set-relationships-between-tables.md)
+##### [Classifying data](developer/devenv-classifying-data.md)
+#### Modifying data
+##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
-##### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
-##### [Enabling Sales tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
-##### [Creating Filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
-##### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
-#### Reading Data
-##### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
-##### Partial Records
-###### [Using Partial Records](developer/devenv-partial-records.md)
+##### [Retaining table data after publishing](developer/devenv-retaining-data-after-publishing.md)
+##### [Enabling sales tables for extension eevelopment](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
+##### [Creating filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
+##### [Working with media on records](developer/devenv-working-with-media-on-records.md)
+#### Reading data
+##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
+##### Partial records
+###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
 ##### Query objects
-###### [Queries Overview](developer/devenv-query-overview.md)
+###### [Queries overview](developer/devenv-query-overview.md)
 ###### [Query object](developer/devenv-query-object.md)
 ###### [Linking and joining data items](developer/devenv-query-links-joins.md)
 ###### [Filtering](developer/devenv-query-filters.md)
