@@ -601,21 +601,21 @@
 #### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 #### [Formatting Values, Dates, and Time](developer/devenv-format-property.md)
 
-### Tables and Data
+### tables and Data
 #### [Overview](developer/devenv-tables-overview.md)
 #### Defining table structures
-##### [Tables Overview](developer/devenv-tables-overview.md)
+##### [tables Overview](developer/devenv-tables-overview.md)
 ##### [Table Object](developer/devenv-table-object.md)
 ##### [System Fields](developer/devenv-table-system-fields.md)
 ##### [Table Extension Object](developer/devenv-table-ext-object.md)
-##### [Setting Relationships Between Tables](developer/devenv-set-relationships-between-tables.md)
+##### [Setting Relationships Between tables](developer/devenv-set-relationships-between-tables.md)
 ##### [Classifying Data](developer/devenv-classifying-data.md)
 #### Modifying Data
 ##### [Insert, Modify, ModifyAll, Delete, and DeleteAll Methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
-##### [Temporary Tables](developer/devenv-temporary-tables.md)
+##### [Temporary tables](developer/devenv-temporary-tables.md)
 ##### [Retaining Table Data after Publishing](developer/devenv-retaining-data-after-publishing.md)
-##### [Enabling Sales Tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
-##### [Creating Filter Pages for Tables](developer/devenv-filter-pages-for-filtering-tables.md)
+##### [Enabling Sales tables for Extension Development](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
+##### [Creating Filter Pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ##### [Working With Media on Records](developer/devenv-working-with-media-on-records.md)
 #### Reading Data
 ##### [Get, Find, and Next Methods](developer/devenv-get-find-and-next-methods.md)
@@ -759,7 +759,7 @@
 ##### [Creating an Excel Layout Report](developer/devenv-howto-excel-report-layout.md)  
 ##### [Defining Multiple Report Layouts](developer/devenv-multiple-report-layouts.md)
 ##### [Defining a Custom Report Render](developer/devenv-report-custom-render.md)
-#### [Walkthrough: Designing a Report from Multiple Tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
+#### [Walkthrough: Designing a Report from Multiple tables](developer/devenv-walktrough-designing-reports-multiple-tables.md)
 #### [Adding Barcodes](developer/devenv-report-add-barcodes.md)
 #### [Formatting Decimal Values in Fields](developer/devenv-format-field-data.md)
 
@@ -980,10 +980,10 @@
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
 ### Migration
 #### [Generating Delta Files](developer/devenv-generating-delta-files.md)
-#### Migrating Tables and Fields Between Extensions
+#### Migrating tables and Fields Between Extensions
 ##### [Data Migration Overview](developer/devenv-migrate-table-fields.md)
-##### [Moving Tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
-##### [Moving Tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
+##### [Moving tables and Fields Down](developer/devenv-migrate-table-fields-down.md)
+##### [Moving tables and Fields Up](developer/devenv-migrate-table-fields-up.md)
 ##### [Migration.json File](developer/devenv-migration-json-file.md)
 
 ### Translation
@@ -1142,23 +1142,23 @@
 #### [Getting a List of Environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
-#### [OData Query Performance](webservices/odata-client-performance.md)
+#### [OData query performance](webservices/odata-client-performance.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
-#### [Return or Obtain an AtomPub Document](webservices/return-obtain-an-atompub-document.md)
-#### [Return or Obtain Service Metadata EDMX Document](webservices/return-obtain-service-metadata-edmx-document.md)
-#### [Return or Obtain a JSON Document](webservices/return-obtain-json-document.md)
-#### [Using Filter Expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
+#### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
+#### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
+#### [Return or obtain a JSON document](webservices/return-obtain-json-document.md)
+#### [Using filter expressions in OData URIs](webservices/use-filter-expressions-in-odata-uris.md)
 #### [Using FlowFilters in OData URIs](webservices/use-flowfilters-in-odata-uris.md)
-#### [Server-Driven Paging](webservices/server-driven-paging-in-odata-web-services.md)
-#### [Containments and Associations](webservices/use-containments-associations.md)
-#### [Using OData on Queries Set with Top Number of Rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
-#### [Using OData to Modify Data](webservices/use-odata-to-modify-data.md)
-#### [Using OData Transactional $batch Requests](webservices/use-odata-batch.md)
-#### [Creating and Interacting with an OData V4 Bound Action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
-#### [Known OData Limitations](webservices/odata-known-limitations.md)
+#### [Server-driven paging](webservices/server-driven-paging-in-odata-web-services.md)
+#### [Containments and associations](webservices/use-containments-associations.md)
+#### [Using OData on queries set with top number of rows](webservices/use-odata-with-queries-set-with-top-number-of-rows.md)
+#### [Using OData to modify data](webservices/use-odata-to-modify-data.md)
+#### [Using OData transactional $batch requests](webservices/use-odata-batch.md)
+#### [Creating and interacting with an OData V4 bound action](developer/devenv-creating-and-interacting-with-odatav4-bound-action.md)
+#### [Known OData limitations](webservices/odata-known-limitations.md)
 ### SOAP
 #### [Overview](webservices/soap-web-services.md)
-#### [SOAP Service URIs](webservices/soap-web-service-uris.md)
+#### [SOAP service URIs](webservices/soap-web-service-uris.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Basic Operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
@@ -1172,18 +1172,18 @@
 ##### [ReadMultiple](webservices/ReadMultiple-operation.md)
 ##### [Update](webservices/update-operation.md)
 ##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
-#### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
+#### [Retrieving companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating that a value exists in field](webservices/use-properties-to-indicate-field-value.md)
 <!-- end web services -->
 ## Connect Apps
-### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
+### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
-### [Using Filters with API calls](developer/devenv-connect-apps-filtering.md)
-### [Developing a Custom API](developer/devenv-develop-custom-api.md)
-### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
+### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+### [Developing a custom API](developer/devenv-develop-custom-api.md)
+### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
 ## Integrating with Microsoft Dataverse
-### [Custom Integration with Dataverse](administration/administration-custom-cds-integration.md)
+### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
 ### [AL Proxy Table Generator](developer/devenv-al-table-proxy-generator.md)
 ### Dataverse API
@@ -1204,30 +1204,30 @@
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
 ## Integrating with Microsoft Power Automate
-### [Power Automate Integration Overview](powerplatform/power-automate-overview.md)
-### [Set Up Power Automate Integration](powerplatform/power-automate-setup.md)
-### [Set Up Automated Flows](powerplatform/automate-workflows.md)
-### [Set Up Instant Flows](powerplatform/instant-flows.md)
+### [Power Automate integration overview](powerplatform/power-automate-overview.md)
+### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
+### [Set up Automated Flows](powerplatform/automate-workflows.md)
+### [Set up Instant Flows](powerplatform/instant-flows.md)
 ### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report Parts to Pages](developer/devenv-power-bi-report-parts.md)
+### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
-### [Microsoft Power Platform Integration with Business Central](powerplatform/powerplat-overview.md)
-### [Table Modeling](powerplatform/powerplat-entity-modeling.md)
-### [Application Lifecycle Management for Solutions that use Virtual Tables](powerplatform/powerplat-app-lifecycle-management.md)
-### [Business Central and Microsoft Dataverse Admin Reference](powerplatform/powerplat-admin-reference.md)
+### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
+### [Table modeling](powerplatform/powerplat-entity-modeling.md)
+### [Application lifecycle management for solutions that use virtual tables](powerplatform/powerplat-app-lifecycle-management.md)
+### [Business Central and Microsoft Dataverse admin reference](powerplatform/powerplat-admin-reference.md)
 ### [FAQ](powerplatform/powerplat-faq.md)
 <!-- end Microsoft Power Platform -->
 <!-- Microsoft Teams -->
 ## Integrating with Microsoft Teams
 ### [Overview](developer/devenv-develop-for-teams.md)
-### [Extend Teams Cards](developer/devenv-develop-for-teams-cards.md)
+### [Extend Teams cards](developer/devenv-develop-for-teams-cards.md)
 ### Tabs
-#### [Add Business Central Tabs](developer/devenv-develop-for-teams-tabs.md)
-#### [Add and Remove Recommended Content](developer/devenv-develop-for-teams-tab-content.md)
+#### [Add Business Central tabs](developer/devenv-develop-for-teams-tabs.md)
+#### [Add and remove recommended content](developer/devenv-develop-for-teams-tab-content.md)
 ### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
@@ -1236,32 +1236,32 @@
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
-## Deprecated Features in the Application
-### [Deprecated Features in the Base App](upgrade/deprecated-features-w1.md)  
-### [Deprecated Fields, and Fields Marked as Obsolete in Local Functionality](upgrade/deprecated-fields.md)
-### [Deprecated Features in the Austrian Version](upgrade/deprecated-features-at.md)
-### [Deprecated Features in the Belgian Version](upgrade/deprecated-features-be.md)
-### [Deprecated Features in the Canadian Version](upgrade/deprecated-features-ca.md)
-### [Deprecated Features in the Czech Version](upgrade/deprecated-features-cz.md)
-### [Deprecated Features in the Dutch Version](upgrade/deprecated-features-nl.md)
-### [Deprecated Features in the Finnish Version](upgrade/deprecated-features-fi.md)
-### [Deprecated Features in the German Version](upgrade/deprecated-features-de.md)
-### [Deprecated Features in the Icelandic Version](upgrade/deprecated-features-is.md)
-### [Deprecated Features in the Italian Version](upgrade/deprecated-features-it.md)
-### [Deprecated Features in the Mexican Version](upgrade/deprecated-features-mx.md)
-### [Deprecated Features in the Norwegian Version](upgrade/deprecated-features-no.md)
-### [Deprecated Features in the Russian Version](upgrade/deprecated-features-ru.md)
-### [Deprecated Features in the Swedish Version](upgrade/deprecated-features-se.md)
-### [Deprecated Features in the Swiss Version](upgrade/deprecated-features-ch.md)
-### [Deprecated Features in the UK Version](upgrade/deprecated-features-uk.md)
-### [Deprecated Features in the United States Version](upgrade/deprecated-features-us.md)
-## [Deprecated Features in the Platform](upgrade/deprecated-features-platform.md)  
-## Deprecated Tables
-### [Deprecated Tables](upgrade/deprecated-tables.md)
-### [Deprecated Tables in the India Version](upgrade/india-data-migration-list-of-deprecated-tables.md)
-## Deprecated Code
-### [Microsoft Timeline for Deprecating Code in Business Central](developer/devenv-deprecation-timeline.md)
-### [Best Practices for Deprecation of Code in the Base App](developer/devenv-deprecation-guidelines.md)
+## Deprecated features in the Application
+### [Deprecated features in the Base App](upgrade/deprecated-features-w1.md)  
+### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
+### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
+### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
+### [Deprecated features in the Canadian Version](upgrade/deprecated-features-ca.md)
+### [Deprecated features in the Czech Version](upgrade/deprecated-features-cz.md)
+### [Deprecated features in the Dutch Version](upgrade/deprecated-features-nl.md)
+### [Deprecated features in the Finnish Version](upgrade/deprecated-features-fi.md)
+### [Deprecated features in the German Version](upgrade/deprecated-features-de.md)
+### [Deprecated features in the Icelandic Version](upgrade/deprecated-features-is.md)
+### [Deprecated features in the Italian Version](upgrade/deprecated-features-it.md)
+### [Deprecated features in the Mexican Version](upgrade/deprecated-features-mx.md)
+### [Deprecated features in the Norwegian Version](upgrade/deprecated-features-no.md)
+### [Deprecated features in the Russian Version](upgrade/deprecated-features-ru.md)
+### [Deprecated features in the Swedish Version](upgrade/deprecated-features-se.md)
+### [Deprecated features in the Swiss Version](upgrade/deprecated-features-ch.md)
+### [Deprecated features in the UK Version](upgrade/deprecated-features-uk.md)
+### [Deprecated features in the United States Version](upgrade/deprecated-features-us.md)
+## [Deprecated features in the platform](upgrade/deprecated-features-platform.md)  
+## Deprecated tables
+### [Deprecated tables](upgrade/deprecated-tables.md)
+### [Deprecated tables in the India version](upgrade/india-data-migration-list-of-deprecated-tables.md)
+## Deprecated code
+### [Microsoft timeline for deprecating code in Business Central](developer/devenv-deprecation-timeline.md)
+### [Best practices for deprecation of code in the base app](developer/devenv-deprecation-guidelines.md)
 ### [Deprecating explicit and implicit With statements](developer/devenv-deprecating-with-statements-overview.md)
 <!--end deprecated features -->
 <!--on-prem-->
@@ -1270,7 +1270,7 @@
 <!-- deployment -->
 ## Deployment
 ### [Deployment overview](deployment/deployment.md)
-### [Features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
+### [features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
 #### [2022 release wave 2](deployment/system-requirements-business-central-v21.md)
 #### [2022 release wave 1](deployment/system-requirements-business-central-v20.md)
