@@ -124,22 +124,22 @@
 
 <!-- administration-->
 # Administration
-## [Administration Overview](administration/tenant-administration.md)
+## [Administration overview](administration/tenant-administration.md)
 ## Understand Business Central online
-### [Understanding the Infrastructure ](administration/tenant-environment-topology.md)
-### [Get Started as a Reseller of Business Central Online](administration/get-started-online.md)
-### [Country/Regional Availability and Supported Translations](compliance/apptest-countries-and-translations.md)
-### [Delegated Administrator Access to Business Central Online](administration/delegated-admin.md)
-### [Trials and Subscriptions](administration/trials-subscriptions.md)
-### [Major Updates and Minor Updates](administration/update-rollout-timeline.md)
-### [Version Numbers in Business Central](administration/version-numbers.md)
-### [Operational Limits](administration/operational-limits-online.md)
+### [Understanding the infrastructure ](administration/tenant-environment-topology.md)
+### [Get started as a reseller of Business Central online](administration/get-started-online.md)
+### [Country/regional availability and supported translations](compliance/apptest-countries-and-translations.md)
+### [Delegated administrator access to Business Central online](administration/delegated-admin.md)
+### [Trials and subscriptions](administration/trials-subscriptions.md)
+### [Major updates and minor updates](administration/update-rollout-timeline.md)
+### [Version numbers in Business Central](administration/version-numbers.md)
+### [Operational limits](administration/operational-limits-online.md)
 ### [Technical support of Business Central](technical-support.md)
-### Environment Types
-#### [Production and Sandbox Environments](administration/environment-types.md)
-#### [Preparing Demo Environments](administration/demo-environment.md)
-#### [Preparing Test Environments](administration/test-environment.md)
-#### [Prepare for Major Updates with Preview Environments](administration/preview-environments.md)
+### Environment types
+#### [Production and sandbox environments](administration/environment-types.md)
+#### [Preparing demo environments](administration/demo-environment.md)
+#### [Preparing test environments](administration/test-environment.md)
+#### [Prepare for major updates with preview environments](administration/preview-environments.md)
 ## Admin center
 ### [Administration Center Overview](administration/tenant-admin-center.md)
 ### [Manage environments](administration/tenant-admin-center-environments.md)
@@ -157,17 +157,17 @@
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
-#### [App Management](administration/administration-center-api_app_management.md)
-#### [Authorized Azure AD Apps](administration/administration-center-api_authorizedaadapps.md)
-#### [Available Applications](administration/administration-center-api_available_applications.md)
+#### [App management](administration/administration-center-api_app_management.md)
+#### [Authorized Azure AD apps](administration/administration-center-api_authorizedaadapps.md)
+#### [Available applications](administration/administration-center-api_available_applications.md)
 #### [Environments](administration/administration-center-api_environments.md)
-#### [Environment Database Export](administration/administration-center-api_environment_database_export.md)
-#### [Environment Outage Reporting](administration/administration-center-api_environment_outage_reporting.md)
-#### [Environment Settings](administration/administration-center-api_environment_settings.md)
+#### [Environment database export](administration/administration-center-api_environment_database_export.md)
+#### [Environment outage reporting](administration/administration-center-api_environment_outage_reporting.md)
+#### [Environment settings](administration/administration-center-api_environment_settings.md)
 #### [Notifications](administration/administration-center-api_notifications.md)
-#### [Reschedule Updates](administration/administration-center-api_reschedule_updates.md)
-#### [Session Management](administration/administration-center-api_session_management.md)
-#### [Support Settings](administration/administration-center-api_support_settings.md)
+#### [Reschedule updates](administration/administration-center-api_reschedule_updates.md)
+#### [Session management](administration/administration-center-api_session_management.md)
+#### [Support settings](administration/administration-center-api_support_settings.md)
 #### [Telemetry](administration/administration-center-api_telemetry.md)
 <!--### [Using Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)-->
 ## Entitlements and permissions
@@ -178,7 +178,7 @@
 ### [Enabling new features ahead of time](administration/feature-management.md)
 ### [Recommend apps](administration/recommend-apps.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### [Get the Excel Add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Get the Excel add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)
 ### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
 ### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
@@ -203,47 +203,47 @@
 ## Monitor and analyze telemetry
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
-### [Enable Telemetry](administration/telemetry-enable-application-insights.md)
-### [Control Telemetry Cost](administration/telemetry-control-cost.md)
-### [Analyze Telemetry with Power BI](administration/telemetry-power-bi-app.md)
-### [Analyze Telemetry with KQL](administration/telemetry-analyze-with-kql.md)
-### [Alert on Telemetry](administration/telemetry-alert.md)
+### [Enable telemetry](administration/telemetry-enable-application-insights.md)
+### [Control telemetry Cost](administration/telemetry-control-cost.md)
+### [Analyze telemetry with Power BI](administration/telemetry-power-bi-app.md)
+### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
+### [Alert on telemetry](administration/telemetry-alert.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
-#### [AppSource Submission Validation Telemetry](administration/telemetry-appsource-submission-validation-trace.md)
-#### [App Key Vault Secret Telemetry](administration/telemetry-extension-key-vault-trace.md)
-#### [Authorization Telemetry](administration/telemetry-authorization-trace.md)
-#### [Company Lifecycle Telemetry](administration/telemetry-company-lifecycle-trace.md)
-#### [Configuration Package Lifecycle Telemetry](administration/telemetry-configuration-package-trace.md)
-#### [Database Deadlock Telemetry](administration/telemetry-database-deadlocks-trace.md)
-#### [Database Lock Timeout Telemetry](administration/telemetry-database-locks-trace.md)
-#### [Database Wait Statistics Telemetry](administration/telemetry-database-wait-statistics-trace.md)
-#### [Email Telemetry](administration/telemetry-email-trace.md)
-#### [Environment Lifecycle Telemetry](administration/telemetry-environment-lifecycle-trace.md) 
-#### [Error Message Quality Telemetry](administration/telemetry-error-message-voting-trace.md)
-#### [Error Method Telemetry](administration/telemetry-error-method-trace.md) 
-#### [Extension Lifecycle Telemetry](administration/telemetry-extension-lifecycle-trace.md)
-#### [Extension Update Telemetry](administration/telemetry-extension-update-trace.md)
-#### [Feature Telemetry](administration/telemetry-feature-telemetry.md)
-#### [Field Monitoring Telemetry](administration/telemetry-field-monitoring-trace.md)
-#### [Job Queue Lifecycle Telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
-#### [Long Running AL Method Telemetry](administration/telemetry-al-method-trace.md)
-#### [Long Running SQL Queries Telemetry](administration/telemetry-long-running-sql-query-trace.md)
-#### [Page View Telemetry](administration/telemetry-page-view-trace.md)
-#### [Permission Changes Telemetry](administration/telemetry-permission-changes-trace.md)
-#### [Permission Dependency Cycle Telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
-#### [Permission Error Telemetry](administration/telemetry-permission-error-trace.md)
-#### [Profile Configuration Telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
-#### [Report Generation Telemetry](administration/telemetry-reports-trace.md)
-#### [Retention Policy Telemetry](administration/telemetry-retention-policy-trace.md)
-#### [Stopped Sessions Telemetry](administration/telemetry-stop-session-trace.md)
-#### [Table Index Telemetry](administration/telemetry-table-index-trace.md)
-#### [Task Scheduler Telemetry](administration/telemetry-task-scheduler-trace.md)
-#### [User Checklist Telemetry](administration/telemetry-user-checklist-trace.md)
-#### [Verbose Logging Enabled/Disabled Telemetry](administration/telemetry-verbose-logging-trace.md)
-#### [Web Service Access Key Telemetry](administration/telemetry-webservices-access-key-trace.md)
-#### [Web Service Requests Telemetry (Incoming)](administration/telemetry-webservices-trace.md)
-#### [Web Service Requests Telemetry (Outgoing)](administration/telemetry-webservices-outgoing-trace.md)
+#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
+#### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
+#### [Authorization telemetry](administration/telemetry-authorization-trace.md)
+#### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
+#### [Configuration package lifecycle telemetry](administration/telemetry-configuration-package-trace.md)
+#### [Database deadlock telemetry](administration/telemetry-database-deadlocks-trace.md)
+#### [Database lock timeout telemetry](administration/telemetry-database-locks-trace.md)
+#### [Database wait statistics telemetry](administration/telemetry-database-wait-statistics-trace.md)
+#### [Email telemetry](administration/telemetry-email-trace.md)
+#### [Environment lifecycle telemetry](administration/telemetry-environment-lifecycle-trace.md) 
+#### [Error message quality telemetry](administration/telemetry-error-message-voting-trace.md)
+#### [Error method telemetry](administration/telemetry-error-method-trace.md) 
+#### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
+#### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Feature telemetry](administration/telemetry-feature-telemetry.md)
+#### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
+#### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
+#### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
+#### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Page view telemetry](administration/telemetry-page-view-trace.md)
+#### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
+#### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
+#### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
+#### [Profile configuration telemetry](administration/telemetry-profile-configuration-lifecycle-trace.md)
+#### [Report generation telemetry](administration/telemetry-reports-trace.md)
+#### [Retention policy telemetry](administration/telemetry-retention-policy-trace.md)
+#### [Stopped sessions telemetry](administration/telemetry-stop-session-trace.md)
+#### [Table index telemetry](administration/telemetry-table-index-trace.md)
+#### [Task scheduler telemetry](administration/telemetry-task-scheduler-trace.md)
+#### [User checklist telemetry](administration/telemetry-user-checklist-trace.md)
+#### [Verbose logging enabled/disabled telemetry](administration/telemetry-verbose-logging-trace.md)
+#### [Web service access key telemetry](administration/telemetry-webservices-access-key-trace.md)
+#### [Web service requests telemetry (incoming)](administration/telemetry-webservices-trace.md)
+#### [Web service requests telemetry (outgoing)](administration/telemetry-webservices-outgoing-trace.md)
 ### [Telemetry by Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
 <!-- support-->
@@ -303,7 +303,7 @@
 ## Admin Center API
 ### [Overview](administration/administration-center-api.md)
 ## Cloud Migration API
-### [Cloud Migration API Overview](administration/cloudmigrationapi/cloud-migration-api-overview.md)
+### [Cloud Migration API overview](administration/cloudmigrationapi/cloud-migration-api-overview.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Cloud migration company](administration/cloudmigrationapi/resources/dynamics_cloudmigrationcompany.md)
@@ -332,7 +332,7 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-## Finance Reports API
+## Finance reports API
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
@@ -373,72 +373,72 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 <!--migrate to BC online-->
-## Migrate to Business Central Online
+## Migrate to Business Central online
 ### [Migrate on-premises data](administration/migrate-data.md)
 ### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
 ### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
 ### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [Define Migration Table Mappings](administration/migration-table-mapping.md)
+### [Define migration table mappings](administration/migration-table-mapping.md)
 ### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
-### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
 <!-- end migrate -->
 <!-- end admin -->
 
 <!-- DEVELOPMENT-->
 # Development
-## [Development Overview](developer/devenv-dev-overview.md)
-## Get Started
+## [Development overview](developer/devenv-dev-overview.md)
+## Get started
 ### [Get Started with AL](developer/devenv-get-started.md)
-### [Building Your First Sample Extension with Extension objects, Install Code, and Upgrade Code](developer/devenv-extension-example.md)
+### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
-### [Keyboard Shortcuts](developer/devenv-keyboard-shortcuts.md)
-### [AL Formatter](developer/devenv-al-formatter.md)
-### [AL Outline View](developer/devenv-al-outline-view.md)
-### [AL Code Navigation](developer/devenv-al-code-navigation.md)
-### [AL Code Actions](developer/devenv-code-actions.md)
-### [object Ranges](developer/devenv-object-ranges.md)
-### [Differences in the Development Environments](developer/devenv-differences.md)
+### [Keyboard shortcuts](developer/devenv-keyboard-shortcuts.md)
+### [AL formatter](developer/devenv-al-formatter.md)
+### [AL outline view](developer/devenv-al-outline-view.md)
+### [AL code navigation](developer/devenv-al-code-navigation.md)
+### [AL code actions](developer/devenv-code-actions.md)
+### [object ranges](developer/devenv-object-ranges.md)
+### [Differences in the development environments](developer/devenv-differences.md)
 <!-- ### [object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
-### [Adding Help Links from pages, Reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
-### [Working with Translation Files](developer/devenv-work-with-translation-files.md)
-### [Instrumenting an Application for Telemetry](developer/devenv-instrument-application-for-telemetry.md)
+### [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
+### [Working with translation files](developer/devenv-work-with-translation-files.md)
+### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### Ready to Go
-#### [The SMB Opportunity for App Publishers](developer/readiness/opportunity-app-publisher.md)
-#### [Get Started with Building Apps](developer/readiness/get-started.md)
-#### [The Business Central Online Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
-### AppSource Validation
-#### [Marketing Validation Checklist](developer/readiness/readiness-checklist-marketing.md)
-#### [Technical Validation Checklist](developer/devenv-checklist-submission.md)
-#### [How to Make Compelling Videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
-#### [Technical Validation FAQ](developer/devenv-checklist-submission-faq.md)
-#### [How to Create an Effective Sales Landing Page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
-### Get Started with AL for On-Premises
-#### [Get Started with C/SIDE and AL Side-by-Side for On-Premises](developer/devenv-get-started-al-for-onprem.md)
-#### [Run C/SIDE and AL Side-by-Side](developer/devenv-running-cside-and-al-side-by-side.md)
-#### [Create Runtime Packages for Business Central On-Premises](developer/devenv-creating-runtime-packages.md)
-## Development Environment
+#### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
+#### [Get started with building apps](developer/readiness/get-started.md)
+#### [The Business Central online learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### AppSource validation
+#### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
+#### [Technical validation checklist](developer/devenv-checklist-submission.md)
+#### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
+#### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
+#### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
+### Get started with AL for on-premises
+#### [Get started with C/SIDE and AL side-by-side for on-premises](developer/devenv-get-started-al-for-onprem.md)
+#### [Run C/SIDE and AL side-by-side](developer/devenv-running-cside-and-al-side-by-side.md)
+#### [Create runtime packages for Business Central on-premises](developer/devenv-creating-runtime-packages.md)
+## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
-### Configure the Development Environment
-#### [JSON Files](developer/devenv-json-files.md)
-#### [The Migration.json File](developer/devenv-migration-json-file.md)
-#### [AL Language Extension Configuration](developer/devenv-al-extension-configuration.md)
-#### [Resource Exposure Policy Setting](developer/devenv-security-settings-and-ip-protection.md)
-#### [Develop for Multiple Platform Versions](developer/devenv-developing-for-multiple-platform-versions.md)
-#### [Optimize Visual Studio Code for AL Development](developer/devenv-optimize-visual-studio-code.md)
-### Configure Projects and Workspaces
-#### [Work with Multiple AL Project Folders within One Workspace](developer/devenv-multiroot-workspaces.md)
-#### [Work with Multiple Projects and Project References](developer/devenv-work-workspace-projects-references.md)
+### Configure the development environment
+#### [JSON files](developer/devenv-json-files.md)
+#### [The Migration.json file](developer/devenv-migration-json-file.md)
+#### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
+#### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
+#### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
+#### [Optimize Visual Studio Code for AL development](developer/devenv-optimize-visual-studio-code.md)
+### Configure projects and workspaces
+#### [Work with multiple AL project folders within one workspace](developer/devenv-multiroot-workspaces.md)
+#### [Work with multiple projects and project References](developer/devenv-work-workspace-projects-references.md)
 
-### Code Analysis
-#### [The Code Analysis Tool](developer/devenv-using-code-analysis-tool.md)
-#### [AL Compiler Diagnostics](developer/diagnostics/diagnostics-overview.md)
-#### [Ruleset for the Code Analysis Tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
-#### [Using the Code Analysis Tools with the Ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
-#### [AppSourceCop Analyzer Rules](developer/analyzers/appsourcecop.md)
-#### [CodeCop Analyzer Rules](developer/analyzers/codecop.md)
-#### [PerTenantExtensionCop Analyzer Rules](developer/analyzers/pertenantextensioncop.md)
-#### [UICop Analyzer Rules](developer/analyzers/uicop.md)
+### Code analysis
+#### [The code analysis tool](developer/devenv-using-code-analysis-tool.md)
+#### [AL compiler diagnostics](developer/diagnostics/diagnostics-overview.md)
+#### [Ruleset for the code analysis tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
+#### [Using the code analysis tools with the ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
+#### [AppSourceCop analyzer rules](developer/analyzers/appsourcecop.md)
+#### [CodeCop analyzer rules](developer/analyzers/codecop.md)
+#### [PerTenantExtensionCop analyzer rules](developer/analyzers/pertenantextensioncop.md)
+#### [UICop analyzer rules](developer/analyzers/uicop.md)
 
 ### Compile, publish, and debug
 #### [Compilation scope overview](developer/devenv-compilation-scope-overview.md)
@@ -851,7 +851,7 @@
 
 ## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
-<!-- (Job queue, printing, task scheduler, Telemetry, Keyvault, .NET interop, AL HttpClient) -->
+<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient) -->
 ### Using the system Application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
 #### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
@@ -888,7 +888,7 @@
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
 #### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
 #### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
 
 ### Using .NET (on-premises only)
@@ -955,9 +955,9 @@
 ##### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
-#### Telemetry
+#### telemetry
 ##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
-##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
 #### [Code deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User scenarios](compliance/apptest-userscenario.md)
 #### [Requirements for connectivity apps](compliance/connectivity-apps-requirements.md)
@@ -1378,8 +1378,8 @@
 #### [Monitoring long-running SQL queries](administration/monitor-long-running-sql-queries-event-log.md)
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
-### Monitoring and Analyzing Using Telemetry
-#### [Telemetry overview](administration/telemetry-overview.md)
+### Monitoring and Analyzing Using telemetry
+#### [telemetry overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
