@@ -153,16 +153,14 @@ For pages opened by OData service calls, the page's metadata is used to define w
 Like with reports, other fields aren't selected for load, even if they may be used in triggers. But you can add extra fields the following ways:
 
 - Add the field to the page layout.
-- Add the field to the set of fields to be loaded via the [AddLoadFields](methods-auto/record/record-addloadfields-method.md) method on the [OnFind](triggers-auto/page/devenv-onfindrecord-page-trigger.md) trigger.  
+- Add the field to the set of fields to be loaded via the [AddLoadFields](methods-auto/record/record-addloadfields-method.md) method on the [OnFindRecord](triggers-auto/page/devenv-onfindrecord-page-trigger.md) trigger.  
 
 ### List and ListPart pages 
 
 Partial records are automatically applied based on the page’s metadata for List and ListPart page types that are opened in the web client. As with OData pages, the page's definition is used to select which fields to load. More fields may be required, for example, to enable subpage linking. 
 
-To extend which fields will be loaded, you can use the same approach as with OData pages.
-
 > [!NOTE]
-> OnFindRecord and OnNextRecord triggers conflict with partial record feature, so if either of these triggers is defined in the metadata, the partial record feature won't be applied and it fall back to standard loading behavior.
+> OnFindRecord and OnNextRecord triggers conflict with partial record feature with List and ListPart pages, so if these triggers are defined in the metadata, the partial record feature won't be applied.
 
 ### Table relation-based lookups
 
