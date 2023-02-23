@@ -2,7 +2,7 @@
 title: Upgrade an unmodified application
 description: The article explains how to upgrade an application that has no custom code to Business Central 2019 release wave 2.
 ms.custom: na
-ms.date: 04/15/2021
+ms.date: 02/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

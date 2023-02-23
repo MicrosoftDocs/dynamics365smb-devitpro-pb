@@ -67,6 +67,7 @@
 ### [FAQ About the Windows Client and Business Central](faq-win-cli.md)
 ### [FAQ about Connecting to Business Central Online from On-Premises Solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 ### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 ### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
 ### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
@@ -1062,7 +1063,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating Printer and Report Payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting Performance Issues](performance/performance-overview.md)
+#### [Troubleshooting Performance Issues](performance/performance-developer.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
@@ -1075,7 +1076,7 @@
 <!-- end AL -->
 <!-- begin security -->
 
-# Security, Privacy, Compliance
+# Security, Privacy, and Compliance
 ## Security
 ### [Security Overview](security/security-and-protection.md)
 ### [Tips for Business Users](security/security-users.md)
@@ -1083,6 +1084,7 @@
 ### [Online](security/security-online.md)
 ### [On-Premises](security/security-onpremises.md)
 ### [Data Security](security/data-security.md)
+### [Azure security service tags](security/security-service-tags.md)
 <!--
 ### [Considerations](security/security-considerations.md)
 ### [User Security](security/user-security.md)
@@ -1124,7 +1126,8 @@
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
-#### [Walkthrough: Creating a console application that use OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
+#### [Web Service Telemetry](webservices/web-service-telemetry.md)
+#### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
 #### [Best Practices](webservices/web-services-best-practices.md)
@@ -1170,7 +1173,7 @@
 ##### [Update](webservices/update-operation.md)
 ##### [UpdateMultiple](webservices/UpdateMultiple-operation.md)
 #### [Retrieving Companies](webservices/use-systemservice-to-find-companies.md)
-#### [Indicating That a Value Exists in Field](webservices/use-properties-to-indicate-field-value.md)
+#### [Indicating that a value exists in field](webservices/use-properties-to-indicate-field-value.md)
 <!-- end web services -->
 ## Connect Apps
 ### [Developing Connect Apps](developer/devenv-develop-connect-apps.md)
