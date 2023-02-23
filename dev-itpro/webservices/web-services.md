@@ -21,8 +21,8 @@ ms.date: 04/01/2021
 ## Web Service Telemetry
 All calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
 
-For more information, see following articles:
-
+For more information, see 
+- [Web Service Telemetry](web-service-telemetry.md)
 - [Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md),
 - [Analyzing Web Service Access Key Telemetry](../administration/telemetry-webservices-access-key-trace.md)
 
