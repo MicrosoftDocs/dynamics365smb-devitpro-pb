@@ -406,7 +406,7 @@
 ### Ready to Go
 #### [The SMB opportunity for app publishers](developer/readiness/opportunity-app-publisher.md)
 #### [Get started with building apps](developer/readiness/get-started.md)
-#### [The Business Central Learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+#### [The Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### AppSource validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
@@ -421,7 +421,7 @@
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
 #### [JSON files](developer/devenv-json-files.md)
-#### [The Migration.json file](developer/devenv-migration-json-file.md)
+#### [The migration.json file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
@@ -524,25 +524,25 @@
 ###### [System](developer/methods-auto/system/system-data-type.md)
 
 ##### JSON and XML types
-###### [JsonArray Data Type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
-###### [Jsonobject Data Type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
-###### [JsonToken Data Type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
-###### [JsonValue Data Type](developer/methods-auto/jsonvalue/jsonvalue-data-type.md)
-###### [XmlAttribute Data Type](developer/methods-auto/xmlattribute/xmlattribute-data-type.md)
-###### [XmlAttributeCollection Data Type](developer/methods-auto/xmlattributecollection/xmlattributecollection-data-type.md)
-###### [XmlCData Data Type](developer/methods-auto/xmlcdata/xmlcdata-data-type.md)
-###### [XmlComment Data Type](developer/methods-auto/xmlcomment/xmlcomment-data-type.md)
-###### [XmlDeclaration Data Type](developer/methods-auto/xmldeclaration/xmldeclaration-data-type.md)
-###### [XmlDocument Data Type](developer/methods-auto/xmldocument/xmldocument-data-type.md)
-###### [XmlDocumentType Data Type](developer/methods-auto/xmldocumenttype/xmldocumenttype-data-type.md)
-###### [XmlElement Data Type](developer/methods-auto/xmlelement/xmlelement-data-type.md)
-###### [XmlNamespaceManager Data Type](developer/methods-auto/xmlnamespacemanager/xmlnamespacemanager-data-type.md)
-###### [XmlNameTable Data Type](developer/methods-auto/xmlnametable/xmlnametable-data-type.md)
-###### [XmlNode Data Type](developer/methods-auto/xmlnode/xmlnode-data-type.md)
-###### [XmlNodelist Data Type](developer/methods-auto/xmlnodelist/xmlnodelist-data-type.md)
-###### [XmlText Data Type](developer/methods-auto/xmltext/xmltext-data-type.md)
+###### [JsonArray data type](developer/methods-auto/jsonarray/jsonarray-data-type.md)
+###### [Jsonobject data type](developer/methods-auto/jsonobject/jsonobject-data-type.md)
+###### [JsonToken data type](developer/methods-auto/jsontoken/jsontoken-data-type.md)
+###### [JsonValue data type](developer/methods-auto/jsonvalue/jsonvalue-data-type.md)
+###### [XmlAttribute data type](developer/methods-auto/xmlattribute/xmlattribute-data-type.md)
+###### [XmlAttributeCollection data type](developer/methods-auto/xmlattributecollection/xmlattributecollection-data-type.md)
+###### [XmlCData data type](developer/methods-auto/xmlcdata/xmlcdata-data-type.md)
+###### [XmlComment data type](developer/methods-auto/xmlcomment/xmlcomment-data-type.md)
+###### [XmlDeclaration data type](developer/methods-auto/xmldeclaration/xmldeclaration-data-type.md)
+###### [XmlDocument data type](developer/methods-auto/xmldocument/xmldocument-data-type.md)
+###### [XmlDocumentType data type](developer/methods-auto/xmldocumenttype/xmldocumenttype-data-type.md)
+###### [XmlElement data type](developer/methods-auto/xmlelement/xmlelement-data-type.md)
+###### [XmlNamespaceManager data type](developer/methods-auto/xmlnamespacemanager/xmlnamespacemanager-data-type.md)
+###### [XmlNameTable data type](developer/methods-auto/xmlnametable/xmlnametable-data-type.md)
+###### [XmlNode data type](developer/methods-auto/xmlnode/xmlnode-data-type.md)
+###### [XmlNodelist data type](developer/methods-auto/xmlnodelist/xmlnodelist-data-type.md)
+###### [XmlText data type](developer/methods-auto/xmltext/xmltext-data-type.md)
 
-##### [object types](developer/devenv-reference-overview.md)
+##### [Object types](developer/devenv-reference-overview.md)
 
 ##### Other types
 ###### [Joker data type (Internal)](developer/methods/devenv-joker-datatype.md)
@@ -566,7 +566,7 @@
 ##### [Handler methods (for tests)](developer/devenv-creating-handler-methods.md) 
 
 #### Objects
-##### [object properties](developer/properties/devenv-properties.md)
+##### [Object properties](developer/properties/devenv-properties.md)
 ##### [Table](developer/devenv-table-object.md)
 ###### [Table extension object](developer/devenv-table-ext-object.md)
 ###### [Table keys](developer/devenv-table-keys.md)
@@ -604,7 +604,7 @@
 ### Tables and data
 #### [Overview](developer/devenv-tables-overview.md)
 #### Defining table structures
-##### [tables overview](developer/devenv-tables-overview.md)
+##### [Tables overview](developer/devenv-tables-overview.md)
 ##### [Table object](developer/devenv-table-object.md)
 ##### [System fields](developer/devenv-table-system-fields.md)
 ##### [Table extension object](developer/devenv-table-ext-object.md)
@@ -852,7 +852,7 @@
 ## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
 <!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient) -->
-### Using the system Application
+### Using the system application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
 #### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
 #### Creating new modules in the system application
@@ -866,10 +866,10 @@
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
 
-### App Key Vaults for Secrets
+### App key vaults for secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
-#### [Setting up App Key Vaults for online](administration/setup-app-key-vault.md)
-#### [Setting up App Key Vaults for on-premises](administration/setup-app-key-vault-onprem.md)
+#### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
+#### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
 
 ### Developing printer extensions
@@ -881,7 +881,7 @@
 <!--#### [Troubleshooting Print Errors](developer/devenv-reports-troubleshoot-printing.md)-->
 
 ### Creating deep links
-#### [Web Client URL](developer/devenv-web-client-urls.md)
+#### [Web client URL](developer/devenv-web-client-urls.md)
 #### [Business Central app URL](developer/devenv-link-to-mobile-app.md) 
 
 ### Instrumenting with telemetry
@@ -894,8 +894,8 @@
 ### Using .NET (on-premises only)
 #### [Get started with Microsoft .NET Interoperability from AL](developer/devenv-get-started-call-dotnet-from-al.md)
 #### [Migrating from .NET Framework to .NET Standard](developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md)
-#### [.NET Control Add-ins](developer/devenv-dotnet-controladdins.md)
-#### [Subscribing to Events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
+#### [.NET control add-ins](developer/devenv-dotnet-controladdins.md)
+#### [Subscribing to events in a .NET Framework type](developer/devenv-dotnet-subscribe-to-events.md)
 #### [Serializing .NET Framework types](developer/devenv-dotnet-serializing-dotnetframework-types.md)
 
 ## Extensibility
@@ -950,12 +950,12 @@
 ##### [Rules and guidelines](compliance/apptest-overview.md)
 ##### [Naming conventions](compliance/apptest-bestpracticesforalcode.md)
 ##### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
-##### [Deprecating AL Code](developer/devenv-deprecation-guidelines.md)
+##### [Deprecating AL code](developer/devenv-deprecation-guidelines.md)
 #### Restrictions
 ##### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ##### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
-#### telemetry
+#### Telemetry
 ##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
 #### [Code deprecation](developer/devenv-deprecation-guidelines.md)
@@ -1055,7 +1055,7 @@
 #### [Checking customization issues](/dynamics365/business-central/ui-personalization-manage)
 #### [Troubleshooting profile configuration can't be started](developer/devenv-troubleshooting-profile-configuration.md)
 #### [Verifying user permissions](/dynamics365/business-central/ui-define-granular-permissions)
-#### [Investigating Mobile App (on-premises)](developer/devenv-troubleshooting-the-mobile-app.md)
+#### [Investigating mobile app (on-premises)](developer/devenv-troubleshooting-the-mobile-app.md)
 ### Troubleshooting in AL
 #### [Debugging AL code](developer/devenv-debugging.md)
 #### [Capturing snapshots](developer/devenv-snapshot-debugging.md)
@@ -1159,7 +1159,7 @@
 #### [Overview](webservices/soap-web-services.md)
 #### [SOAP service URIs](webservices/soap-web-service-uris.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
-#### [Basic Operations](webservices/basic-page-operations.md)
+#### [Basic operations](webservices/basic-page-operations.md)
 ##### [Create](webservices/create-operation.md)
 ##### [CreateMultiple](webservices/CreateMultiple-operation.md)
 ##### [Delete](webservices/Delete-operation.md)
@@ -1174,7 +1174,7 @@
 #### [Retrieving companies](webservices/use-systemservice-to-find-companies.md)
 #### [Indicating that a value exists in field](webservices/use-properties-to-indicate-field-value.md)
 <!-- end web services -->
-## Connect Apps
+## Connect apps
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
@@ -1235,8 +1235,8 @@
 <!-- end Business Central API -->
 <!--deprecated features -->
 # Removed or deprecated features
-## Deprecated features in the Application
-### [Deprecated features in the Base App](upgrade/deprecated-features-w1.md)  
+## Deprecated features in the application
+### [Deprecated features in the base app](upgrade/deprecated-features-w1.md)  
 ### [Deprecated fields, and fields marked as obsolete in local functionality](upgrade/deprecated-fields.md)
 ### [Deprecated features in the Austrian Version](upgrade/deprecated-features-at.md)
 ### [Deprecated features in the Belgian Version](upgrade/deprecated-features-be.md)
@@ -1363,11 +1363,11 @@
 #### [Using table partitioning and data compression](administration/using-sql-partitioning-and-compression.md)
 #### [Configuring Read Scale-Out](administration/database-read-scale-out-configuration.md)
 ### Monitoring Business Central server
-#### [Monitoring Performance Counters](administration/performance-counters.md)
+#### [Monitoring performance counters](administration/performance-counters.md)
 #### Monitoring server events
-##### [Monitoring Server Events Overview](administration/monitor-server-events.md)
-##### [Trace Events list](administration/server-trace-events.md)
-##### [Admin and Operational Events list](administration/server-events.md)
+##### [Monitoring server events overview](administration/monitor-server-events.md)
+##### [Trace events list](administration/server-trace-events.md)
+##### [Admin and operational events list](administration/server-events.md)
 ##### [Using Event Viewer](administration/monitor-server-events-windows-event-log.md)
 ##### [Using Performance Monitor](administration/monitor-use-performance-monitor-collect-event-trace-data.md)
 ##### [Using PerView](administration/monitor-use-perfview-collect-event-trace-data.md)
@@ -1400,7 +1400,7 @@
 ##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v21.md)
 ##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v21.md)
 ##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v21.md)
-##### Related Articles
+##### Related articles
 ###### [Convert to AL](upgrade/devenv-code-conversion.md)
 ###### Migrating tables and fields between extensions
 ####### [Overview](developer/devenv-migrate-table-fields.md)
