@@ -20,8 +20,8 @@ Create a purchase invoice line object in [!INCLUDE[prod_short](../../../includes
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines({purchaseInvoiceLineId})
-POST businesscentralPrefix/companies({id})/purchaseInvoiceLines({purchaseInvoiceLineId})
+POST businesscentralPrefix/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines
+POST businesscentralPrefix/companies({id})/purchaseInvoiceLines
 ```
 
 ## Request headers
@@ -71,7 +71,8 @@ Content-type: application/json
     "netTaxAmount": 187.37,
     "netAmountIncludingTax": 3310.17,
     "expectedReceiptDate": "2019-01-01",
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
@@ -112,7 +113,8 @@ Content-type: application/json
     "netTaxAmount": 187.37,
     "netAmountIncludingTax": 3310.17,
     "expectedReceiptDate": "2019-01-01",
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
