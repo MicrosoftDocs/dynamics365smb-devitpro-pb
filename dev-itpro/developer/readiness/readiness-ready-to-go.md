@@ -123,8 +123,18 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [Business Central on-premises licensing guide]()
 - [Business Central on-premises licensing FAQ]()
 
-## Events
+## Events for partners
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
-- Directions NA: [directionsna.com](https://directionsna.com) 
-- Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
-- Business Central TechDays: [bctechdays.com](https://bctechdays.com)
+- [Directions NA](https://directionsna.com) 
+- [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
+- [Directions Asia](https://directions4partners.com/events/directions-asia-2023/) 
+- [Business Central TechDays](https://bctechdays.com)
+- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/nordic-2023/)
+- [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/central-2023/) 
+- [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/uk-2023/)
+
+## Events for customers
+- Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- [DynamicsMinds](https://www.dynamicsminds.com/)
+- [UG Summit](https://www.summitna.com/)
+- [DynamicsCon](https://dynamicscon.com/)

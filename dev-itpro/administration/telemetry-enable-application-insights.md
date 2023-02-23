@@ -87,16 +87,16 @@ For a multitenant server instance of [!INCLUDE [prod_short](../includes/prod_sho
 The [Mount-NAVTenant cmdlet](/powershell/module/microsoft.dynamics.nav.management/mount-navtenant?view=businesscentral-ps&preserve-view=true) includes the `-ApplicationInsightsConnectionString` and `-ApplicationInsightsKey` parameters. For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -AadTenantId 'MyAadTenantId' -EnvironmentName 'MyEnvironmentName' -EnvironmentType Production -ApplicationInsightsConnectionString 'InstrumentationKey=11111111-2222-3333-4444-555555555555;IngestionEndpoint=https://westeurope-1.in.applicationinsights.azure.com/'
 ```
 
 or
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
+Mount-NAVTenant -ServerInstance BC200 -Tenant tenant1 -DatabaseName "Demo Database BC (20-0)" -DatabaseServer localhost -DatabaseInstance BCDEMO -EnvironmentName 'MyEnvironmentName' -EnvironmentType Sandbox -ApplicationInsightsKey 11111111-2222-3333-4444-555555555555
 ```
 
-If you use the same [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for multiple environments, consider also using the AadTenantId parameter to distinguish tenants in telemetry.
+If you use the same [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource for multiple environments, consider also using the parameters AadTenantId, EnvironmentName, and EnvironmentType to distinguish tenants in telemetry.
 
 ### For on-premises Docker sandbox environments
 
