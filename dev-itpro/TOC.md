@@ -2,7 +2,7 @@
 # [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
 # Get started
 ## Learn
-### [Business Central Learning catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
+### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Discover all aka.ms links related to Business Central](developer/readiness/readiness-bcall.yml)
 ### [Resources for partners](developer/readiness/readiness-ready-to-go.md)
 ### [Business Central on Microsoft training](/learn/dynamics365/business-central?WT.mc_id=dyn365bc_landingpage-docs)
@@ -15,7 +15,7 @@
 ### [Get started with building apps](developer/readiness/get-started.md)
 ### [Customize Business Central](developer/readiness/readiness-customizing-tenants.md)
 
-### [The Lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)
+### [The lifecycle of apps and extensions](developer/devenv-app-life-cycle.md)
 <!--#### What the partner's responsibilities are -->
 ### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
 ### [Maintain AppSource apps and per-tenant extensions](developer/app-maintain.md)
@@ -40,7 +40,7 @@
 ##### [Overview](embedapps\embed-app-deployment-overview.md)
 ##### [Creating deployment packages](embedapps/embed-app-deployment-package.md)
 ##### [Managing Embed apps in Microsoft Lifecycle Services](deployment/embed-app-lifecycle-services.md)
-#### [Using Application Family](deployment/embed-app-using-application-family.md)
+#### [Using application family](deployment/embed-app-using-application-family.md)
 #### Application Access Management
 ##### [Application Access Management for ISVs and VARs](embedapps/embed-app-application-access-management.md)
 ##### [Application Access Management API](embedapps/embed-app-application-access-management-api.md)
@@ -58,7 +58,7 @@
 ## Frequently asked questions
 ### [Frequently asked questions (general)](faq.yml)
 ### [FAQ for developing in AL](developer/devenv-dev-faq.md)
-### [FAQ about library and dependency Apps in Business Central](developer/app-faq-dependencies-libraries.md)
+### [FAQ about library and dependency apps in Business Central](developer/app-faq-dependencies-libraries.md)
 ### [FAQ about testing your Business Central app](developer/app-faq-test.md)
 ### [FAQ about updating your Business Central app](developer/app-faq-update.md)
 ### [FAQ about managing and submitting your Business Central offer](developer/app-faq-offer.md)
@@ -181,7 +181,7 @@
 ### [Get the Excel add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Outlook add-ins for the business inbox](administration/outlook-addins.md)
 ### [Network configuration for the Excel add-in](administration/configuring-network-for-addins.md)
-### [Set up App Key Vaults for extensions](administration/setup-app-key-vault.md)
+### [Set up app key vaults for extensions](administration/setup-app-key-vault.md)
 ### [Deploy a tenant customization](developer/devenv-deploy-tenant-customization.md)
 ### [Upgrading per-tenant extensions that conflict with other extensions](upgrade/upgrade-pte-merge-conflict.md)
 ### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
@@ -332,7 +332,7 @@
 #### [Create table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_create.md)
 #### [Update table mapping](administration/cloudmigrationapi/api/dynamics_tablemapping_update.md)
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
-## Finance reports API
+## Finance Reports API
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ### [Accounting period](administration/financereportsapi/resources/dynamics_accountingperiod.md)
@@ -389,7 +389,7 @@
 # Development
 ## [Development overview](developer/devenv-dev-overview.md)
 ## Get started
-### [Get Started with AL](developer/devenv-get-started.md)
+### [Get started with AL](developer/devenv-get-started.md)
 ### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard shortcuts](developer/devenv-keyboard-shortcuts.md)
