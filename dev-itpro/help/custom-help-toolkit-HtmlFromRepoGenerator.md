@@ -34,11 +34,11 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly
 
-    The en-US repo includes files that are required for building the various localized versions, including the very important docfx.json file that sets the output location and certain metadata settings, some of which are important for the learn.microsoft.com site only. For more information, see [Get content from the GitHub repos](contributor-guide.md#get-content-from-the-github-repos).  
+    The en-US repo includes files that are required for building the various localized versions, including the important docfx.json file that sets the output location and certain metadata settings, some of which are important for the learn.microsoft.com site only. For more information, see [Get content from the GitHub repos](contributor-guide.md#get-content-from-the-github-repos).  
 
 ### Syntax
 
-Here is the syntax for HtmlFromRepoGenerator.exe:  
+Here's the syntax for HtmlFromRepoGenerator.exe:  
 
 ```console
 HtmlFromRepoGenerator.exe --Out <path> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--Rtl] [--?[--]]
@@ -55,13 +55,13 @@ The following table provides an explanation of the parameters:
 |RemoveGitFolder|Specifies whether to remove the `.git` folder.|
 |LogsDir|Specifies the folder to save logs files to.|
 
-The following additional parameters are used when the tool is run against the localized Microsoft documentation repos:
+The following extra parameters are used when the tool is run against the localized Microsoft documentation repos:
 
 |Parameter   |Description  |
 |------------|-------------|
 |EnRepo|Specifies the URL of the en-US repo. Optional if you run the tool on a previously cloned repo. The Microsoft documentation repo URL for English (US) is [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).|
 |EnOut|Specifies the folder where the en-US repo exists, or the folder to clone it to. This folder must not already exist if you run the tool based on a previously cloned repo.|
-|Lng|Specifies the language value to use for `ms.locale` metadata in the generated HTML files. If this parameter is not set, the tool uses en-US.|
+|Lng|Specifies the language value to use for `ms.locale` metadata in the generated HTML files. If this parameter isn't set, the tool uses en-US.|
 |Rtl|Set this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew.|
 
 ## Examples

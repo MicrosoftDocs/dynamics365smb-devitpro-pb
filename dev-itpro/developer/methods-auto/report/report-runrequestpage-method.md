@@ -67,13 +67,27 @@ This example requires that you create a table for holding parameters that are en
 Create a table called **Request Parameters** that has the following fields.  
 
 ```al
-var
-    ReportId: Integer;
-    UserId: Code[100];
-    Parameters: BLOB;
+...
+fields
+    {
+        field(1; ReportId; Integer)
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(2; UserId; Code[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(3; Parameters; Blob)
+        {
+            DataClassification = ToBeClassified;
+        }
+    }
+...
 ``` 
 
- Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
+Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
 
 ```al
 var
