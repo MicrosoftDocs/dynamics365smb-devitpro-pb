@@ -21,10 +21,10 @@ Creates the properties and relationships of a picture object for [!INCLUDE[prod_
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-PATCH businesscentralPrefix/companies({companyId})/items({itemId})/picture({pictureId})/content
-PATCH businesscentralPrefix/companies({companyId})/vendors({vendorId})/picture({pictureId})/content
-PATCH businesscentralPrefix/companies({companyId})/employees({employeeId})/picture({pictureId})/content
-PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/picture({pictureId})/content
+PATCH businesscentralPrefix/companies({companyId})/items({itemId})/picture/pictureContent
+PATCH businesscentralPrefix/companies({companyId})/vendors({vendorId})/picture/pictureContent
+PATCH businesscentralPrefix/companies({companyId})/employees({employeeId})/picture/pictureContent
+PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/picture/pictureContent
 ```
 
 ## Request headers
@@ -46,10 +46,10 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 **Request**
 
-Here is an example of the request. 
+Here is an example of the request.
 
 ```json
-PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(itemId)/content
+PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture/pictureContent
 ```
 
 **Response**
@@ -57,8 +57,8 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId
 No content.
 
 ## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[picture](../resources/dynamics_picture.md)    
-[Get picture](dynamics_picture_Get.md)    
-[Delete picture](dynamics_picture_Delete.md)    
-[Update picture](dynamics_picture_Update.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)
+[picture](../resources/dynamics_picture.md)
+[Get picture](dynamics_picture_Get.md)
+[Delete picture](dynamics_picture_Delete.md)
+[Update picture](dynamics_picture_Update.md)
