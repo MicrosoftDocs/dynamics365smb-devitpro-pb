@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 01/06/2023
+ms.date: 02/03/2023
 ms.custom: bap-template
 ---
 
@@ -33,7 +33,8 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.6](https://support.microsoft.com/help/5019241)|[21.1](https://support.microsoft.com/help/5021004)|
 |[20.7](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|
 |[20.8](https://support.microsoft.com/help/5021671)|[21.3](https://support.microsoft.com/help/5022714)|
-|[20.9](https://support.microsoft.com/help/5022713)<sup>[\[1\]](#1)</sup>|21.4|
+|[20.9](https://support.microsoft.com/help/5022713)|[21.4](https://support.microsoft.com/help/5023401) |
+|[20.9](https://support.microsoft.com/help/5022713)<sup>[\[1\]](#1)</sup>|21.5|
 
 ## Version 19 compatibility
 
@@ -51,7 +52,8 @@ The following table lists the Business Central 19 versions and the minimum versi
 |[19.12](https://support.microsoft.com/help/5019240)|[20.7](https://support.microsoft.com/help/5021002)|[21.1](https://support.microsoft.com/help/5021004)|
 |[19.13](https://support.microsoft.com/help/5021003)|[20.8](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|
 |[19.14](https://support.microsoft.com/help/5021670)|[20.9](https://support.microsoft.com/help/5022713)|[21.3](https://support.microsoft.com/help/5022714)|
-|[19.15](https://support.microsoft.com/help/5022712)<sup>[\[1\]](#1)</sup>|20.10|21.4|
+|[19.15](https://support.microsoft.com/help/5022712)|[20.10](https://support.microsoft.com/help/5023401)|[21.4](https://support.microsoft.com/help/5023401) |
+|[19.16](https://support.microsoft.com/help/5023399)<sup>[\[1\]](#1)</sup>|20.11|21.5|
 
 To see the available updates for Business Central 2021 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
 
@@ -205,7 +207,8 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.41 (cumulative update 40)](https://support.microsoft.com/help/5019238)|None|None|None|None|[19.13](https://support.microsoft.com/help/5021003)|[20.7](https://support.microsoft.com/help/5021002)|[21.1](https://support.microsoft.com/help/5021004)|
 |[14.42 (cumulative update 41)](https://support.microsoft.com/help/5021001)|None|None|None|None|[19.14](https://support.microsoft.com/help/5021670)|[20.8](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|
 |[14.43 (cumulative update 42)](https://support.microsoft.com/help/5021669)|None|None|None|None|[19.5](https://support.microsoft.com/help/5022712)|[20.9](https://support.microsoft.com/help/5022713)|[21.3](https://support.microsoft.com/help/5022714)|
-|[14.44 (cumulative update 43)](https://support.microsoft.com/help/5022711)<sup>[\[1\]](#1)</sup>|None|None|None|None|19.16|20.10|21.4|
+|[14.44 (cumulative update 43)](https://support.microsoft.com/help/5022711)|None|None|None|None|[19.16](https://support.microsoft.com/help/5023399)|[20.10](https://support.microsoft.com/help/5023401)|[21.4](https://support.microsoft.com/help/5023401) |
+|[14.45 (cumulative update 44)](https://support.microsoft.com/help/5023398)<sup>[\[1\]](#1)</sup>|None|None|None|None|19.17|20.11|21.5|
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).  
 

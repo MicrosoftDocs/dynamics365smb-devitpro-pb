@@ -2,7 +2,7 @@
 title: Install a version 20 update
 description: This article describes the tasks required for getting the monthly version 20 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 05/12/2022
+ms.date: 02/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

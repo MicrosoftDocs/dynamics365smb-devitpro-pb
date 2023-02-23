@@ -46,7 +46,7 @@ By specifying that the group should be rendered as **SplitButton**, the group is
 
 Be aware of the following design guidance:
 
-- Split buttons aren't supported on sub form action bars or in context menus. When the feature key **ModernActionBar** is turned off, then it isn't supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group.
+- Split buttons aren't supported in context menus. When the feature key **ModernActionBar** is turned off, then it isn't supported if the `ShowAs` property is set to `SplitButton` on a promoted action category group.
 - Mobile clients don't support split buttons and if the `ShowAs` property is set to `SplitButton`, it will be ignored.
 - Any tooltip, caption, or image property set on a group, isn't rendered, if the group is defined as a split button. It's still a best practice to set these properties, because they're used, if the group is rendered as a regular group, for example, on mobile clients.
 - A split button can be nested inside another split button.
