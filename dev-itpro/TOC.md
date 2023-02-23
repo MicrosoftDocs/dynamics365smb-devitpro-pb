@@ -1063,7 +1063,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating Printer and Report Payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and Troubleshooting Pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting Performance Issues](performance/performance-overview.md)
+#### [Troubleshooting Performance Issues](performance/performance-developer.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
@@ -1126,6 +1126,7 @@
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-Service Authentication](administration/automation-apis-using-s2s-authentication.md)
+#### [Web Service Telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing Remote Connections Using Certificates](deployment/implement-security-certificates-production-environment.md)
 #### [Supported Cipher Suites](developer/devenv-supported-cipher-suites.md)
