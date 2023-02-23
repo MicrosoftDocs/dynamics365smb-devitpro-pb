@@ -3,7 +3,7 @@ title: "Update 21.2 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 21.2 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: jswymer
 ms.custom: na
-ms.date: 11/28/2022
+ms.date: 02/03/2023
 ms.reviewer: solsen
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -15,7 +15,7 @@ Would you like to know what has changed in update 21.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-21-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-2-49990-platform-build-21-0-49984-5a1acf84-533f-4738-9f79-a3444f54004a) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/en-us/topic/update-21-2-for-microsoft-dynamics-365-business-central-on-premises-2022-release-wave-2-application-build-21-2-49990-platform-build-21-0-49984-5a1acf84-533f-4738-9f79-a3444f54004a) and the downloads [here](https://www.microsoft.com/download/details.aspx?id=104805).
 
 
 

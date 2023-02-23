@@ -45,7 +45,7 @@ The following code gets the number of SQL rows read for the session and displays
 
 ```al
 var
-    SqlRowsRead := BigText;
+    SqlRowsRead : BigInteger;
 
 begin
 
