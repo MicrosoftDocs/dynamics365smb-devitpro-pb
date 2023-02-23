@@ -82,9 +82,9 @@ For more information about profiling, see [AL Profiler Overview](devenv-al-profi
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|<kbd>Enter</kbd>+<kbd>Toggle</kbd> | Expand and collapse a node. |
-|<kbd>Arrow</kbd>+<kbd>Left</kbd> | Collapse a node. |
-|<kbd>Arrow</kbd>+<kbd>Right</kbd> | Expand a node. |
+|<kbd>Enter</kbd> | Expand and collapse a node. |
+|<kbd>Left arrow</kbd> | Collapse a node. |
+|<kbd>Right arrow</kbd> | Expand a node. |
 |<kbd>-</kbd> (minus) | Collapse all nodes.|
 |<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
