@@ -2,12 +2,12 @@
 title: "Temporary tables"
 description: Learn about temporary tables in Business Central 
 ms.custom: na
-ms.date: 01/11/2023
+ms.date: 02/24/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-author: blrobl
+author: SusanneWindfeldPedersen
 ---
 
 # Temporary tables
@@ -19,6 +19,9 @@ You can use a temporary table just like you use a database table. The difference
 - A temporary table data isn't stored in the database. It's only held in memory until the table is closed.  
 
 - The write transaction principle that applies to a database table doesn't apply to a temporary table.  
+
+> [!TIP]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1 IntelliSense, tooltips, and CodeLens displays a suffix after the table name to indicate when a table is a temporary table.
 
 ## Advantage of using a temporary table  
 
