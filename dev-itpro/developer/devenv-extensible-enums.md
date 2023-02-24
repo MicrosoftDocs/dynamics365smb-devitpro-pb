@@ -34,7 +34,9 @@ enum 50121 Loyalty
 ```
 
 > [!NOTE]  
-> While enums and enumextension objects have object IDs, these are not enforced by the license. In previous versions they reused the range for tables, and were checked against the license at deployment time, but this is no longer the case. Uniqueness validation is now enforced during installation, which will fail if an enum object ID clashes with an already installed enum. Thus, as always, it is important that you use object IDs in your assigned range. This is enforced for AppSource apps, but not for per-tenant extensions, or on-premise. The enum does not have to use the same ID as the table it is put on.
+> While enums and enumextension objects have object IDs, these are not enforced by the license. In previous versions they reused the range for tables, and were checked against the license at deployment time, but this is no longer the case. Uniqueness validation is now enforced during installation, which will fail if an enum object ID clashes with an already installed enum. Thus, as always, it's important that you use object IDs in your assigned range. This is enforced for AppSource apps, but not for per-tenant extensions, or on-premise. The enum doesn't have to use the same ID as the table it's put on.
+>
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, IntelliSense suggests the next available enum ordinal value both when creating new enums, or when extending existing enums.
 
 > [!IMPORTANT]  
 > Only enums with the [Extensible Property](properties/devenv-extensible-property.md) set to **true** can be extended.
