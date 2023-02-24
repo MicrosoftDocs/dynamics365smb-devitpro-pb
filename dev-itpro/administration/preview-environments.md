@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Prepare for major updates with preview environments
 
-About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE prod_short] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
+About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
 
 The following figure illustrates the suggested steps for getting a preview of a major update with example dates for the two release waves in any given calendar year.  
 
