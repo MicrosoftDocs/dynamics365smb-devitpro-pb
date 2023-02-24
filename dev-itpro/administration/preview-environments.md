@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Prepare for major updates with preview environments
 
-About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE prod_short] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application.
+About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE prod_short] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. For every 
 
 > [!NOTE] 
 Previews roll out gradually across the world, so if the option is not showing up for you today, please try again tomorrow.
@@ -41,7 +41,7 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 1. Browse to [aka.ms/collaborate](https://aka.ms/collaborate)
 
-2. If you have not registered before, complete the registration form to access Collaborate
+2. If you have not registered before, complete the registration form to access Collaborate (discover the steps [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-a-how-your-global-administrator-must-register-for-collaborate))
 
 3. Choose **Engagements**, and then choose the **Join** action
 
