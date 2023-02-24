@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/19/2022
+ms.date: 02/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -98,6 +98,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
 |primaryTenantDomain|No|Specifies the URL of the Azure AD organization or company associated with the Azure AD tenant. This setting enables AAD scenarios for on-premises installations. For more information, see [Azure AD authentication for Business Central on-premises
 ](devenv-aad-auth-onprem.md)|
+|usePublicURLFromServer|Specifies whether to override the NST setting and instead use the host provided in the `launch.json` server property. When set to `false`, the `PublicWebBaseURL` server (NST) setting will be overridden with the server parameter of the `launch.json` when launching the browser using that specific launch configuration. <br>**Note:**<br>This option only affects launching debug sessions to on-premise servers.<br> When set to `true`, the `PublicWebBaseURL` server setting will be used.|
 
 
 ### Publish to cloud settings
