@@ -154,6 +154,7 @@
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
 ### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
+### [Delete environments](administration/tenant-admin-center-environments-delete.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
