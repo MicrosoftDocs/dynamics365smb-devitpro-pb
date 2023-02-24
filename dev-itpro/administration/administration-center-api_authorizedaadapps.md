@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/12/2022
+ms.date: 02/24/2023
 ---
 
 # Authorized Azure AD Apps 
@@ -20,7 +20,7 @@ Authorized Apps are Azure Active Directory Apps authorized to call the [!INCLUDE
 Returns the Azure AD apps that are authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant.
 
 ```
-GET /admin/v2.15/authorizedAadApps
+GET /admin/v2.18/authorizedAadApps
 ```
 
 ### Response
@@ -43,7 +43,7 @@ GET /admin/v2.15/authorizedAadApps
 Authorizes an Azure AD app to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant. This does not grant admin consent or assign permission sets in environments to the Azure AD app.
 
 ```
-PUT /admin/v2.15/authorizedAadApps/<appClientId>
+PUT /admin/v2.18/authorizedAadApps/<appClientId>
 ```
 
 ### Response
@@ -58,7 +58,7 @@ PUT /admin/v2.15/authorizedAadApps/<appClientId>
 Removes an Azure AD app authorized to call the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API for the specified Azure AD Tenant. This does not revoke admin consent in Azure AD nor remove permission sets assigned to the Azure AD app in environments.
 
 ```
-DELETE /admin/v2.15/authorizedAadApps/<appClientId>
+DELETE /admin/v2.18/authorizedAadApps/<appClientId>
 ```
 
 ## See Also
