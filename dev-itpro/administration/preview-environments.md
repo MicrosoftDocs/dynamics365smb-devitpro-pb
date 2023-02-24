@@ -14,7 +14,7 @@ ms.author: edupont
 
 # Prepare for major updates with preview environments
 
-About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE prod_short] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. For every 
+About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE prod_short] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as (Preview) from the version list. This way, you get a new sandbox environment with a preview version of the application. 
 
 > [!NOTE] 
 Previews roll out gradually across the world, so if the option is not showing up for you today, please try again tomorrow.
@@ -47,10 +47,12 @@ We need your feedback on the preview! Let us know about your experiences with th
 
 4. Under the **Ready! for Dynamics 365 Business Central** program, find the latest preview version in the list of available engagements, and then choose the **Join** action
 
-Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate.
+Once you have joined the preview engagement, you can submit your feedback by filling in the form. You must specify if you are reporting a technical issue, a translation issue, or a documentation issue. The default severity is set to 3, which is the normal severity for most defects and means that the system is not crashing and users are not blocked from doing their work, but you can change that. When we have triaged your issue, you can see changes in Collaborate. 
+
+For every public preview, we create a "Public preview" group on [Yammer](https://aka.ms/BCYammer). Make sure to join it and feel free to provide your feedback here as well. 
 
 > [!TIP]
-> If you get stuck trying to join Collaborate, please contact [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) with as many details about the error that you got and other circumstances.
+> If you get stuck trying to join Collaborate or Yammer, please contact [dyn365bep@microsoft.com](mailto:dyn365bep@microsoft.com) with as many details about the error that you got and other circumstances.
 
 ## Guidelines for how to get started
 
