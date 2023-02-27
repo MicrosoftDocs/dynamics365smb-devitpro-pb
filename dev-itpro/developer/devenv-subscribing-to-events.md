@@ -1,8 +1,8 @@
 ---
-title: "Subscribing to Events"
-description: This article describes how to design event subscribers in Dynamics 365 Business Central. 
+title: "Subscribing to events"
+description: Designing event subscribers in Dynamics 365 Business Central. 
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 02/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,13 +10,16 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
  
-# Subscribing to Events
+# Subscribing to events
 
 To handle events, you design event subscribers. Event subscribers determine what actions to take in response to an event that has been raised. An event subscriber is a method that listens for a specific event that is raised by an event publisher. The event subscriber includes code that defines the business logic to handle the event. When the published event is raised, the event subscriber is called and its code is run.  
 
 Subscribing to an event tells the runtime that the subscriber method must be called whenever the publisher method is run, either by code (as with business and integration events) or by the system (as with trigger events). The runtime establishes the link between an event raised by the publisher and its subscribers, by looking for event subscriber methods.  
 
 There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in no particular order. You can't specify the order in which the subscriber methods are called.  
+
+> [!NOTE]  
+> Before [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, the event publisher parameter in event subscribers has been string literals only. This is changed with [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, where the parameter supports being an identifier, allowing full navigability and increased developer productivity.
 
 ## Creating an event subscriber method  
 
