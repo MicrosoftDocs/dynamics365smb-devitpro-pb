@@ -3,7 +3,7 @@ title: "InStream.Length() Method"
 description: "Gets the stream length."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/02/2023
+ms.date: 02/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -37,6 +37,11 @@ The stream length or -1 if the length cannot be determined.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the `Length` method allows you to get the length in bytes of the stream. Use [InStream.Position([BigInteger]) Method](instream-position-method.md) to get the position within the current stream.
+
 ## See Also
 [InStream Data Type](instream-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
