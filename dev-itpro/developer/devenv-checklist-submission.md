@@ -46,7 +46,7 @@ If you don't meet these mandatory requirements, your extension will fail validat
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
 |The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
 
-## Technical validation performed by the Business Central validation team
+## Technical validation performed by the Business Central services
 
 The primary responsibility of the technical validation is to ensure that the [!INCLUDE [prod_short](includes/prod_short.md)] online service is stable and that the apps can be installed and run without destabilizing the service.
 
@@ -75,6 +75,11 @@ For **each country and each release** targeted by your submission, the following
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
 5. The extension is tested against the resolved baselines using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**
 6. If the **runtime version of the extension is not supported by the release targeted, the submission is rejected.**
+
+Additionally, if the extension submitted is not the latest version and a higher version is available in the AppSource marketplace, additional validation is performed:
+
+1. The next version of your extension and its depedendencies are resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
+2. The next version of your extension is tested against the version you submitted using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**  
 
 If all extensions in the submission succeed the validation for each country and release without errors, **the submission is accepted.**.
 
