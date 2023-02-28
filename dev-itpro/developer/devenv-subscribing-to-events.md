@@ -19,7 +19,7 @@ Subscribing to an event tells the runtime that the subscriber method must be cal
 There can be multiple subscribers to the same event from various locations in the application code. When an event is raised, the subscriber methods are run one at a time in no particular order. You can't specify the order in which the subscriber methods are called.  
 
 > [!NOTE]  
-> Before [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, the event publisher parameter in event subscribers has been string literals only. This is changed with [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, where the parameter supports being an identifier, allowing full navigability and increased developer productivity.
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, the event publisher parameter in event subscribers now supports being an identifier, allowing full navigability and increased developer productivity. Prior to this release the event publisher parameter was string literals only. With this release, a code action is introduced to help convert event subscriber syntax.
 
 ## Creating an event subscriber method  
 
