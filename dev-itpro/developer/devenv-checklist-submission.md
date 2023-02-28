@@ -53,7 +53,7 @@ The primary responsibility of the technical validation is to ensure that the [!I
 The technical validation is fully automated and validates the requirements defined in the technical validation checklist above.
 
 > [!Important]  
-> It is recommended that all partners run the self-validation documented below before submitting apps for validation to maximize chances of validation success.
+> It's recommended that all partners run the self-validation documented in the following steps, before submitting apps for validation to maximize chances of validation success.
 
 1. The manifest of all extensions in the submission is validated. If any **mandatory properties or required property values are missing, the submission is rejected.**.
 2. The registration of affixes for the publisher name of all the extensions in the submission is validated. If **the publisher name does not have any registered affixes, the submission is rejected.**
@@ -69,7 +69,7 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you are making your libraries available in new countries, you should increase the version number.
+> You're required to include the dependencies for your extension as part of your submission only if you're submitting a newer version for them. If you don't include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you're making your libraries available in new countries, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
@@ -101,15 +101,15 @@ $validationResults | Write-Host -ForegroundColor Red
 
 All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
-Include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
+Include app and all library apps in both previousApps and apps and also include all countries on which you want to validate.
 
 > [!NOTE]  
-> The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
+> The Run-AlValidation can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
 > [!Important]  
 > The computer on which you run this command must have Docker and the latest `BcContainerHelper` PowerShell module installed and be able to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 >
-> If you are having issues with [!INCLUDE [prod_short](includes/prod_short.md)] on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
+> If you're having issues with [!INCLUDE [prod_short](includes/prod_short.md)] on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
 >
 > You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 
