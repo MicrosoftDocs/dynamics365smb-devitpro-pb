@@ -133,32 +133,32 @@ If your submission failed at another stage than "Automated application validatio
 
 ### What is qualified as a hotfix submission?
 
-We are defining the submission of a new version of an AppSource extension which is not the latest version available in AppSource as a `hotfix`. 
+We're defining the submission of a new version of an AppSource extension, which is not the latest version available in AppSource as a `hotfix`. 
 
-For instance, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered as a hotfix of 2.0.0.0 because 2.0.0.0 is the next version available.
+For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix of 2.0.0.0, because 2.0.0.0 is the next version available.
 
-> [!Important]
-> When submitting a hotfix of an extension that is listed on AppSource, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing which is meant to show the latest version.
+> [!Important]  
+> When submitting a hotfix of an extension that is listed on AppSource, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing, which is meant to show the latest version.
 
 ## Against which releases is a hotfix submission validated?
 
-When submitting a hotfix of your AppSource extension, the service will automatically detect what is the next version available and for which release of Business Central it is available. The service will then validate your submission up to that release. The minimum release targeted by the submission is computed based on the `application` property similarly to any other submission.
+When submitting a hotfix of your AppSource extension, the service will automatically detect the next version available and for which release of Business Central it's available. The service will then validate your submission up to that release. The minimum release targeted by the submission is computed based on the `application` property similarly to any other submission.
 
-For instance, if you have version 2.0.0.0 of your extension available in AppSource targeting Business Central version 21.0, and you submit a new version 1.5.0.0 with `application` set to 19.0.0.0, then version 1.5.0.0 will be validated for all Business Central releases from 19.0.0.0 (included) to 21.0.0.0 (excluded).
+For example, if you have version 2.0.0.0 of your extension available in AppSource targeting Business Central version 21.0, and you submit a new version 1.5.0.0 with `application` set to 19.0.0.0, then version 1.5.0.0 will be validated for all Business Central releases from 19.0.0.0 (included) to 21.0.0.0 (excluded).
 
 ### What is the additional validation done for a hotfix submission?
 
-In order to make sure your customer can upgrade from your hotfix version to the next version available in AppSource, we are validating the next version of your extension for breaking changes with your hotfix version.
+In order to make sure your customer can upgrade from your hotfix version to the next version available in AppSource, we're validating the next version of your extension for breaking changes with your hotfix version.
 
-For instance, if you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource, and you submit a new version 1.5.0.0, the technical validation will verify that:
-- there are no breaking changes between 1.0.0.0 and 1.5.0.0
+For example, if you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource, and you submit a new version 1.5.0.0, the technical validation will verify that:
+- there are no breaking changes between 1.0.0.0 and 1.5.0.0,
 - there are no breaking changes between 1.5.0.0 and 2.0.0.0.
 
-### What kind of changes cannot be part of a hotfix?
+### What kind of changes can't be part of a hotfix?
 
-Since the AppSourceCop will validate for breaking change the next version of your extension against the version you have submitted, you can modify the content of your procedure, but you cannot add new AL objects or new elements (procedure, actions, fields, etc) to your extension's public API unless they are also part of the next version, or obsolete pending (except for table and table fields).
+Since the AppSourceCop will validate for breaking change the next version of your extension against the version you have submitted, you can modify the content of your procedure, but you can't add new AL objects or new elements (procedure, actions, fields, etc) to your extension's public API unless they are also part of the next version, or obsolete pending (except for table and table fields).
 
-For instance, let's consider that you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource.
+For example, let's consider that you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource.
 
 Version 1.0.0.0 of your extension is defined as follows:
 ```al
@@ -184,12 +184,12 @@ codeunit 1000000 MyCodeunit
 }
 ```
 
-In you submit a new version 1.5.0.0, you are then allowed to add the following procedures:
-- `local procedure MyNewLocalProcedure()` because it is not public,
-- `[Obsolete] procedure MyNewObsoleteProcedure()` because it is obsolete pending,
-- `MyPublicProcedureFromV2()` because it is already defined in the next version.
+If you submit a new version 1.5.0.0, you're then allowed to add the following procedures:
+- `local procedure MyNewLocalProcedure()` because it's not public,
+- `[Obsolete] procedure MyNewObsoleteProcedure()` because it's obsolete pending,
+- `MyPublicProcedureFromV2()` because it's already defined in the next version.
 
-However, you are not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure.
+However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure.
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
