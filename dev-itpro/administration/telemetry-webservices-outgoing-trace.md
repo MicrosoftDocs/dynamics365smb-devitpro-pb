@@ -38,6 +38,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |alObjectId|Specifies the ID of the AL object that made the request.|
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
+|alStackTrace|Specifies the AL stacktrace when the the request was made. </br></br> Introduced in version 20.1.|
 |clientType|[!INCLUDE[include-telemetry-dimension-client-type](../includes/include-telemetry-dimension-client-type.md)] </br></br> Introduced in version 21.3.|
 |companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company from which the request was made.|
 |component|**Dynamics 365 Business Central Server**|
