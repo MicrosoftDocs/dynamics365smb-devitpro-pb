@@ -28,7 +28,7 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the follwoing code a
 - Fix for [AW0013](analyzers\uicop-aw0013.md)
 - Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
 - Set the default value for `ApplicationArea` on a page or a report level and remove all duplicates on field level. This code action can be applied to an object, a document, a project, or a workspace.
-- Convert the event definition name to reap the benefit of new navigability. For this, there is a new Code Action that can be run just on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax. Use the new code action to convert existing event parameter in event subscribers from string literal to new identifier format.
+- Convert existing event parameter in event subscribers from string literal to new identifier format. Fix event subscriber on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax.
 
 ## Examples
 
