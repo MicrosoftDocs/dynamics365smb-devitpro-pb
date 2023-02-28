@@ -3,7 +3,7 @@ title: "Data Types and Methods in AL"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 01/23/2023
+ms.date: 02/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -51,7 +51,7 @@ The following data types are available as part of the AL Language. Each data typ
 |[HttpHeaders](httpheaders/httpheaders-data-type.md)|Is a collection of headers and their values.|
 |[HttpRequestMessage](httprequestmessage/httprequestmessage-data-type.md)|Represents an HTTP request message.|
 |[HttpResponseMessage](httpresponsemessage/httpresponsemessage-data-type.md)|Represents an HTTP response message including the status code and data.|
-|[InStream](instream/instream-data-type.md)|Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.<br/>  |
+|[InStream](instream/instream-data-type.md)|Is a generic stream object that you can use to read from or write to files and BLOBs. You can define the internal structure of a stream as a flat stream of bytes. You can assign one stream to another. Reading from and writing to a stream occurs sequentially.|
 |[Integer](integer/integer-data-type.md)|Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.|
 |[IsolatedStorage](isolatedstorage/isolatedstorage-data-type.md)|Provides data isolation for extensions.|
 |[JsonArray](jsonarray/jsonarray-data-type.md)|Is a container for any well-formed JSON array. A default JsonArray contains an empty JSON array.|
