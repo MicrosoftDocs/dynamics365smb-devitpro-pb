@@ -1,8 +1,8 @@
 ---
-title: "Attach and Debug Next"
+title: "Attach and debug next"
 description: "Attach to a session on a specified server and debug for Web API sessions."
 ms.custom: na
-ms.date: 07/11/2022
+ms.date: 02/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Attach and Debug Next
+# Attach and debug next
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -26,15 +26,15 @@ If you don't want to publish and invoke functionality to debug it, you can inste
 
 You can activate the attach functionality by creating a new configuration in the `launch.json` file. The configuration has two flavors; **Attach to the client on the cloud sandbox** and **Attach to the client on your server**. Use the first option to attach to a cloud session, and the second option to attach to a local server. 
 
-> [!NOTE] 
-> With Business Central version 22.0 two new properties are added to the launch configuration: `sessionId` and `userId` that allow attaching to ongoing session and also debugging on behalf of another user.
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1, two new properties are added to the launch configuration: `sessionId` and `userId`, which allow attaching to an ongoing session and also debugging on behalf of another user.
 
 In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, and `Background`. Two other important properties are `sessionId` and `userId`. `sessionId` specifies an ongoing session of the specified type in `breakOnNext`. This session should belong to the user in `userId` property if specified.
 
-If `sessionId` is not specified but `userId` is then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user.
+If `sessionId` isn't specified, but `userId` is, then the debugger will be attached to the next session of the type specified in `breakOnNext` for the given user.
 
-> [!IMPORTANT] 
-> In case of `userId` being different user from the one logged into Visual Studio Code then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
+> [!IMPORTANT]  
+> In case of `userId` being a different user than the user logged into Visual Studio Code, then the user logged into Visual Studio Code must be part of **D365 ATTACH DEBUG** permission set.
 
 The example below illustrates a configuration for a local server.
 
