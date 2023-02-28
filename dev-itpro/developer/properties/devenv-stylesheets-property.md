@@ -28,7 +28,7 @@ Specifies the list of stylesheets to include in the control add-in. The styleshe
 
 A list of comma-separated strings that represent paths to stylesheet files. The default is blank, with no stylesheets being used by the control add-in. 
 
-You can specify multiple files within the same path string by using a combination of a valid literal path and wildcard characters (* and ?). However, it doesn't support regular expressions.
+With runtime 11, you can specify multiple files within the same path string by using a combination of a valid literal path and wildcard characters (* and ?). However, it doesn't support regular expressions.
 
 ## Remarks
 
