@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/03/2022
+ms.date: 02/28/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.author: freddyk
 
 # Technical Validation
 
-Below you'll find a checklist of all requirements that you **must meet before submitting** an extension for validation. You'll also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+Below you find a checklist of all requirements that you **must meet before submitting** an extension for validation. You also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 > [!TIP]  
 > If you have questions around validation for your app, see [Technical Validation FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
 
 ## Technical Validation Checklist
 
-If you don't meet these mandatory requirements, your extension will fail validation. To get code validation helping you bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
+If you don't meet these mandatory requirements, your extension fails validation. To get code validation helping you bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
@@ -76,16 +76,16 @@ For **each country and each release** targeted by your submission, the following
 5. The extension is tested against the resolved baselines using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**
 6. If the **runtime version of the extension is not supported by the release targeted, the submission is rejected.**
 
-Additionally, if the extension submitted is not the latest version and a higher version is available in the AppSource marketplace, additional validation is performed:
+Additionally, if the extension submitted isn't the latest version and a higher version is available in the AppSource marketplace, additional validation is performed:
 
-1. The next version of your extension and its depedendencies are resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
+1. The next version of your extension and its dependencies are resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
 2. The next version of your extension is tested against the version you submitted using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**  
 
 If all extensions in the submission succeed the validation for each country and release without errors, **the submission is accepted.**.
 
 ## Running technical validation yourself
 
-With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps will pass validation or not:
+With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps pass validation or not:
 
 ```powershell
 $validationResults = Run-AlValidation `
@@ -101,7 +101,7 @@ $validationResults | Write-Host -ForegroundColor Red
 
 All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
-Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
+Include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
 
 > [!NOTE]  
 > The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
@@ -130,7 +130,7 @@ For more information about the signals sent during the technical validation, see
 
 ## Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission is validated against 18.0, 18.1, 18.2, and 18.3.
 
 The minimum release for your submission is computed based on the `application` property specified in the app.json of your extension. 
 
