@@ -370,4 +370,6 @@ Occurs when the submission validation process has fully completed, but errors oc
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Technical Validation Checklist](../developer/devenv-checklist-submission.md)  
+[Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md)  
 [Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]
