@@ -263,12 +263,12 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 
 ### Outgoing web service calls block AL execution
-If you call external web service calls using the HttpClient module in AL, please be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this means that the user will see a spinning wheel for the duration of the call.  
+If you call external web service using the HttpClient module in AL, be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this behavior means that the user will see a spinning wheel for the duration of the call.  
 
 ### Limit work done in login event subscribers
-The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events have completed can the session start running AL code. Until they are completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
+The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
 
-This means that you must design such code in a way that is minimally intrusive, e.g. set low timeouts for outgoing web service calls. 
+This behavior means that you must design such code in a way that is minimally intrusive, for example, set low timeouts for outgoing web service calls. 
 
 If you have enabled telemetry for your environment or app, you can use this KQL query to analyze how session creation time is delayed by calls to external services. 
 
