@@ -34,7 +34,7 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.7](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|
 |[20.8](https://support.microsoft.com/help/5021671)|[21.3](https://support.microsoft.com/help/5022714)|
 |[20.9](https://support.microsoft.com/help/5022713)|[21.4](https://support.microsoft.com/help/5023401) |
-|[20.9](https://support.microsoft.com/help/5022713)<sup>[\[1\]](#1)</sup>|21.5|
+|[20.10](https://support.microsoft.com/help/5023401)<sup>[\[1\]](#1)</sup>|21.5|
 
 ## Version 19 compatibility
 
