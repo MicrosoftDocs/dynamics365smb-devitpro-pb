@@ -470,6 +470,27 @@ Caution: Changing any part of an object name could break scripts and stored proc
 
 This occurs when a key fails to get renamed. To fix the problem, identify the key that fails to get renamed, for example, by using the event log or SQL profiler. Then, disable the key by using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].
 
+## Business Central Service fails to start after changing a Port Number directly in the BC CustomSettings.config file:
+
+> Applies to: Upgrade to BC 21.x on-prem 
+
+### Problem
+
+You get the following Event Log Errors when attempting to start the Business Central Service after changing a Port Number directly in the BC CustomSettings.config file:
+- Message (HttpSysException): Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address http://gc1662:8085/BC210/client.
+- Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address
+- The service MicrosoftDynamicsNavServer$BC210 failed to start. This could be caused by a configuration error. Detailed error information: Microsoft.AspNetCore.Server.HttpSys.HttpSysException (0x80004005): Access is denied
+- Type: Microsoft.AspNetCore.Server.HttpSys.HttpSysException; Message: Access is denied
+
+### Impact
+
+After upgrading to BC 21.x you notice that the Business Central Administration Tool is no longer available as it has been removed from BC in version 21.x. If you then try to update certain Port Numbers directly in the BC CustomSettings.config file (e.g. ClientServicesPort) you may get the errors described above when you try to start the BC Service. 
+
+### Workaround
+
+Avoid updating the CustomSetting.config file directly. Instead use the BC Administration Shell with the Set-NAVServerConfiguration cmdlet. This will automatically grant the required Namespace Reservation permissions for the relevant port. 
+Alternatively, you could grant the required Namespace Reservation permissions manually for the relevant port by running the appropriate NETSH command in an Administrator command prompt on the Business Central Server machine: e.g. netsh http add urlacl url=http://+:<PORT NUMBER>/<BC SERVICE NAME>/ user="<BC SERVICE ACCOUNT"
+
 ## See Also
 
 [Upgrading to Business Central](upgrading-to-business-central.md)  
