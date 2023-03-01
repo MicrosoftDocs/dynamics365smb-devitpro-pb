@@ -939,7 +939,7 @@
 ### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your extension](compliance/apptest-testingyourextension.md)
-### [User scenario cocumentation](compliance/apptest-userscenario.md)
+### [User scenario documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
