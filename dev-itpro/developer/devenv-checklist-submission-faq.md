@@ -143,7 +143,7 @@ For example, if you have version 2.0.0.0 of your extension available in AppSourc
 > [!Note]  
 > The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
 
-## Against which releases is a hotfix submission validated?
+### Against which releases is a hotfix submission validated?
 
 When submitting a hotfix of your AppSource extension, the service will automatically detect the next version available and for which release of Business Central it's available. The service will then validate your submission up to that release. The minimum release targeted by the submission is computed based on the `application` property similarly to any other submission.
 
