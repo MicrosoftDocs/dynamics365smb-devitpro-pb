@@ -133,12 +133,12 @@ If your submission failed at another stage than "Automated application validatio
 
 ### What is qualified as a hotfix submission?
 
-We're defining the submission of a new version of an AppSource extension, which is not the latest version available in AppSource as a `hotfix`. 
+We're defining as `hotfix` the submission of a new version of an AppSource extension which will not become the latest version available in AppSource. 
 
-For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix of 2.0.0.0, because 2.0.0.0 is the next version available.
+For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 will not become the latest version available.
 
 > [!Important]  
-> When submitting a hotfix of an extension that is listed on AppSource, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing, which is meant to show the latest version.
+> When submitting a hotfix, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing, which is meant to show the latest version.
 
 > [!Note]  
 > The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
