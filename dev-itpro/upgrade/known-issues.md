@@ -470,13 +470,13 @@ Caution: Changing any part of an object name could break scripts and stored proc
 
 This occurs when a key fails to get renamed. To fix the problem, identify the key that fails to get renamed, for example, by using the event log or SQL profiler. Then, disable the key by using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].
 
-## Business Central Server instance fails to start after changing a port number directly in the CustomSettings.config file:
+## Business Central Server instance fails to start after changing a port number directly in the CustomSettings.config file
 
 > Applies to: Upgrade to 21.x
 
 ### Problem
 
-You get errors in the Event Log similar to the following errors when trying to start the [!INCLUDE[server](../developer/includes/server.md)] instance after changing a port number directly in the it's CustomSettings.config file:
+You get errors in the Event Log similar to the following errors when trying to start the [!INCLUDE[server](../developer/includes/server.md)] instance after changing a port number directly in it's CustomSettings.config file:
 
 - Message (HttpSysException): Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address http://gc1662:8085/BC210/client.
 - Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address
