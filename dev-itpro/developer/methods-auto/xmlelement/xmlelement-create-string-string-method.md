@@ -3,7 +3,7 @@ title: "XmlElement.Create(Text, Text) Method"
 description: "Creates an XmlElement node."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ XmlElement :=   XmlElement.Create(LocalName: Text, NamespaceUri: Text)
 ## Parameters
 *LocalName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The local name of the element to create.
-        
+The local name of the element to create.  
 
 *NamespaceUri*  
 &emsp;Type: [Text](../text/text-data-type.md)  

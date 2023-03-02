@@ -3,7 +3,7 @@ title: "System Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -73,7 +73,7 @@ The following methods are available on the System data type.
 |[GetLastErrorObject()](system-getlasterrorobject-method.md)|Gets the last System.Exception object that occurred.|
 |[GetLastErrorText()](system-getlasterrortext--method.md)|Gets the last error that occurred in the debugger.|
 |[GetLastErrorText(Boolean)](system-getlasterrortext-boolean-method.md)|Gets the last error that occurred in the debugger.|
-|[GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)| Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
+|[GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean])](system-geturl-clienttype-string-objecttype-integer-table-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GetUrl(ClientType, Text, ObjectType, Integer, RecordRef [, Boolean])](system-geturl-clienttype-string-objecttype-integer-recordref-boolean-method.md)|Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.|
 |[GlobalLanguage([Integer])](system-globallanguage-method.md)|Gets and sets the current global language setting.|
 |[GuiAllowed()](system-guiallowed-method.md)|Checks whether the AL code can show any information on the screen.|
