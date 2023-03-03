@@ -58,8 +58,7 @@ Now, you have successfully installed DocFx v2 on your machine.
 
 The next step is to use the ALDoc tool to generate the file for DocFx v2.
 
-1. First, you must init the reference repo, by giving the following command:
-
+1. First, you must init the reference repo, by giving the following command:  
      ```bash
      {Path_to_aldoc}\\aldoc.exe init -o .\\{path-to-dev-appref}\\ -v 2 -t '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}'
      
@@ -67,7 +66,7 @@ The next step is to use the ALDoc tool to generate the file for DocFx v2.
      .\\Platform-ModernDev\\out\\Debug\\aldoc\\net6.0\\aldoc.exe init -o .\\test1\\ -v 2 -t 'F:\\AL\\ALProject1\\.alpackages\\Microsoft_System Application_20.1.39764.39901.app'
      ```
 
-2. Next, generate the file by providing the following command:
+2. Next, generate the file by providing the following command:  
 
      ```bash
      {Path_to_Platform}\\Platform-ModernDev\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-dev-appref}\\  -s {path_to_package}
@@ -79,12 +78,11 @@ The next step is to use the ALDoc tool to generate the file for DocFx v2.
 
 In the previous steps, the reference files were generated. You'll now use use DocFx v2 to build and host a website. 
 
-1. In the command line, enter the following:
-
+1. In the command line, enter the following:  
   ```bash
   docfx build ./{path-to-dev-appref}/docfx.json -s
   ```
-2. Then wait for the build to complete and visit `https:\\localhost:8080` to check.
+2. Then wait for the build to complete and in a browser window, type `https:\\localhost:8080` to check the generated website.
 
 > [!TIP]  
 > Use the parameter `-p <port_num>` to change the port to generate the website to.
