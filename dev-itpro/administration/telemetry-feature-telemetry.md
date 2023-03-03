@@ -1,5 +1,5 @@
 ---
-title: Feature Telemetry
+title: Feature telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.  
 author: bholtorf
 ms.topic: conceptual
@@ -7,11 +7,11 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
-ms.date: 05/01/2021
+ms.date: 03/03/2023
 ms.author: bholtorf
 ---
 
-# Feature Telemetry
+# Feature telemetry
 
 The Telemetry AL module simplifies the way you monitor the health of your app and the uptake of application features. There are multiple benefits of using the module compared to sending telemetry via `Session.LogMessage`. For example:
 
@@ -70,7 +70,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 |alCategory     | **FeatureTelemetry**.  |
 |alFeatureName  | The name of the feature being tracked.  |
 |alSubCategory     | Holds one of the values **Uptake**, **Usage**, or **Error**.  |
-|alFeatureUptakeStatus| If alSubCategory holds the value **Uptake**, then the update status can hold one the the following values: **Discovered**, **Set up**, **Undiscovered**, or **Used**.
+|alFeatureUptakeStatus| If alSubCategory holds the value **Uptake**, then the update status can hold one of the following values: **Discovered**, **Set up**, **Undiscovered**, or **Used**.
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppVersionMajor     | The major version of the extension that emitted telemetry. |
 |alCallerAppVersionMinor     | The minor version of the extension that emitted telemetry.        |
@@ -92,10 +92,10 @@ Feature names should be short and easy to identify. For example, Retention polic
 |eventId     | Unique event ID for different feature telemetry events.        |
 
 # Error telemetry for the app publisher
-When you use the feature telemetry module in your app, it is important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server will log an event to your telemetry.
+When you use the feature telemetry module in your app, it's important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry.
 
 ## More than one telemetry logger has been registered for publisher {publisher}
-This event will be logged if more than one telemetry logger has been registered for publisher.
+This event is logged if more than one telemetry logger has been registered for publisher.
 
 ### General dimensions
 
@@ -117,13 +117,13 @@ This event will be logged if more than one telemetry logger has been registered 
 
  
 ## No telemetry logger has been registered for publisher {publisher}
-This event will be logged if no telemetry logger has been registered for publisher.
+This event is logged if no telemetry logger has been registered for publisher.
 
 ### General dimensions
 
 |Dimension  | Description or value  |
 |---------|---------|
-|message     | An app from publisher {publisher} is sending telemetry, but there is no registered telemetry logger for this publisher |
+|message     | An app from publisher {publisher} is sending telemetry, but there's no registered telemetry logger for this publisher |
 
 ### Custom dimensions
 
