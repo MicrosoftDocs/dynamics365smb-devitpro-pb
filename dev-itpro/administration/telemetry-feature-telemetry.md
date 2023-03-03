@@ -13,7 +13,7 @@ ms.author: bholtorf
 
 # Feature Telemetry
 
-The Telemetry AL module simplifies the way you monitor the health of your solution and the uptake of application features. There are multiple benefits of using the module compared to sending telemetry via `Session.LogMessage`. For example:
+The Telemetry AL module simplifies the way you monitor the health of your app and the uptake of application features. There are multiple benefits of using the module compared to sending telemetry via `Session.LogMessage`. For example:
 
 * Different features can be compared across the same metrics.
 * Common information is sent together with every feature telemetry message, which allows for advanced filtering capabilities.
@@ -90,6 +90,54 @@ Feature names should be short and easy to identify. For example, Retention polic
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
 |telemetrySchemaVersion|Specifies the version of the Business Central telemetry schema.|
 |eventId     | Unique event ID for different feature telemetry events.        |
+
+# Error telemetry for the app publisher
+When you use the feature telemetry module in your app, it is important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server will log an event to your telemetry.
+
+## More than one telemetry logger has been registered for publisher {publisher}
+This event will be logged if more than one telemetry logger has been registered for publisher.
+
+### General dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|message     | More than one telemetry logger has been registered for publisher {publisher} |
+
+### Custom dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
+|alCallerAppName     | The name of the extension that emitted telemetry.      |
+|alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
+|alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
+|eventId     | **AL0000G7J**        |
+
+ 
+## No telemetry logger has been registered for publisher {publisher}
+This event will be logged if no telemetry logger has been registered for publisher.
+
+### General dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|message     | An app from publisher {publisher} is sending telemetry, but there is no registered telemetry logger for this publisher |
+
+### Custom dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
+|alCallerAppName     | The name of the extension that emitted telemetry.      |
+|alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
+|alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
+|eventId     | **AL0000G7K**        |
+
+
 
 ## See Also
 
