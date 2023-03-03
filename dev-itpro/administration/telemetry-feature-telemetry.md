@@ -91,7 +91,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 |telemetrySchemaVersion|Specifies the version of the Business Central telemetry schema.|
 |eventId     | Unique event ID for different feature telemetry events.        |
 
-# Error telemetry for the app publisher
+## Error telemetry for the app publisher
 When you use the feature telemetry module in your app, it's important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry.
 
 ## More than one telemetry logger has been registered for publisher {publisher}
