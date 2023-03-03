@@ -94,7 +94,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 ## Error telemetry for the app publisher
 When you use the feature telemetry module in your app, it's important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry.
 
-## More than one telemetry logger has been registered for publisher {publisher}
+## <a name="multipleloggers"></a>More than one telemetry logger has been registered for publisher {publisher}
 This event is logged if more than one telemetry logger has been registered for publisher.
 
 ### General dimensions
@@ -116,7 +116,7 @@ This event is logged if more than one telemetry logger has been registered for p
 |eventId     | **AL0000G7J**        |
 
  
-## No telemetry logger has been registered for publisher {publisher}
+## <a name="nologger"></a>No telemetry logger has been registered for publisher {publisher}
 This event is logged if no telemetry logger has been registered for publisher.
 
 ### General dimensions
@@ -141,6 +141,9 @@ This event is logged if no telemetry logger has been registered for publisher.
 
 ## See Also
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Feature Telemetry sample](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
+[Telemetry Overview](telemetry-overview.md)  
+[Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
+[Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
+[System Application Overview](../developer/devenv-system-application-overview)  
+[Feature Telemetry System Application Documentation](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
+[Feature Telemetry Codeunit Reference Documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)
