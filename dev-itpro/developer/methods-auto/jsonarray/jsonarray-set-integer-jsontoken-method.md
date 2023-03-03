@@ -43,6 +43,12 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 ## See Also
 [JsonArray Data Type](jsonarray-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

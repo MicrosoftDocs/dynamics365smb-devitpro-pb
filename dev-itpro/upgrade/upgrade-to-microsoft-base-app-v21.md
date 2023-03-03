@@ -284,7 +284,6 @@ You'll create two versions of this extension. The first version contains the tab
     |table 7330 "Bin Content Buffer" |BinContentBuffer.Table.al| Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`<br /><br /> Remove any `TableRelation =` lines |
     |table 265 "Document Entry"| DocumentEntry.Table.al|Remove any `TableRelation =` lines.|
     |table 338 "Entry Summary" |EntrySummary.Table.al|Remove line `AccessByPermission = TableData "Warehouse Source Filter" = R;`<br /><br />Remove any `TableRelation =` lines. |
-    |table 1754 "Field Content Buffer"|FieldContentBuffer.Table.al|Remove any `TableRelation =` lines. |
     |table 1670 "Option Lookup Buffer"|OptionLookupBuffer.Table.al |Remove any `TableRelation =` lines. |
 
     Starting in version 18, these tables have been changed to temporary tables. For now, you'll have to include these objects in the table migration extension; otherwise you'll have problems syncing the extension later.

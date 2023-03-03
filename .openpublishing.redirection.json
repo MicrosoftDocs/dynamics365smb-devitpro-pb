@@ -7323,9 +7323,12 @@
     "source_path": "dev-itpro/whatsnew/whatsnew-update-20.1.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/whatsnew/whatsnew-update-20-1",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/administration/admin-shopify-connector.md",
+    "redirect_url": "/dynamics365/business-central/shopify/walkthrough-setting-up-and-using-shopify",
+    "redirect_document_id": false
    }
-
-   
   ] 
 }
 

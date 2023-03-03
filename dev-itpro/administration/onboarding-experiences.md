@@ -37,5 +37,5 @@ In the following sections you find descriptions of components you can use when a
 [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md)  
 [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md)  
 [User Assistance Model](../user-assistance.md)  
-[Extend, Customize, and Collaborate on the Help](../help/contributor-guide.md)  
+[Extend and Collaborate on the Help](../help/contributor-guide.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

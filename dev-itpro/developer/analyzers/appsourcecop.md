@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2022
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -115,6 +115,10 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0103](appsourcecop-as0103.md)|Table definitions must have a matching permission set.|Configuration|Warning|
 |[AS0104](appsourcecop-as0104.md)|The extension name is not valid.|Extensibility|Error|
 |[AS0105](appsourcecop-as0105.md)|Object pending obsoletion contains an expired ObsoleteTag.|Design|Error|
+|[AS0106](appsourcecop-as0106.md)|A variable belonging to the public API cannot be removed.|Design|Error|
+|[AS0107](appsourcecop-as0107.md)|The access modifier of a variable that belongs to the public API cannot be changed to a value that provides less access.|Design|Error|
+|[AS0108](appsourcecop-as0108.md)|The type of a variable belonging to the public API cannot be changed.|Design|Error|
+|[AS0109](appsourcecop-as0109.md)|The type of the table has changed from Normal to Temporary.|Upgrade|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

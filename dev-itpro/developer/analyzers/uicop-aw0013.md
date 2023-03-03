@@ -1,9 +1,9 @@
 ---
 title: "UICop Warning AW0013"
-description: "Promoted actions defined in a hidden group are still rendered on the promoted section of the command bar, but this behavior might change and these promoted actions might be hidden in the future."
+description: "From Business Central 2022 Wave 2, promoted actions defined in a hidden group are rendered on the promoted side of the action bar only if the 'Modern Action Bar' feature is disabled for the environment."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/06/2022
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Groups containing promoted actions should not be hidden.
 
 ## Description
-From Business Central 2022 Wave 2, promoted actions defined in a hidden group are rendered on the promoted side of the action bar only if the 'Modern Action Bar' feature is disabled for the environment. If you want to always see these actions on the promoted side, remove the Visible property on the group. If you do never want to see these actions on the promoted side, remove the Promoted property on the promoted actions.
+From Business Central 2022 Wave 2, promoted actions defined in a hidden group are rendered on the promoted side of the action bar only if the 'Modern Action Bar' feature is disabled for the environment. If you want to always see these actions on the promoted side, remove the Visible property on the group. If you never want to see these actions on the promoted side, remove the Promoted property on the promoted actions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

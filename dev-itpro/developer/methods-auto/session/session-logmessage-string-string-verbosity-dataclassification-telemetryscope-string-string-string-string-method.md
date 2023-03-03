@@ -3,7 +3,7 @@ title: "Session.LogMessage(Text, Text, Verbosity, DataClassification, TelemetryS
 description: "Logs a trace message to a telemetry account."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,7 +28,7 @@ Logs a trace message to a telemetry account.
 ## Parameters
 *EventId*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The event ID of trace message.   
+The eventId custom dimension of the trace message. Note that the Business Central platform will prefix this with "al" when emitting data to telemetry.  
 
 *Message*  
 &emsp;Type: [Text](../text/text-data-type.md)  

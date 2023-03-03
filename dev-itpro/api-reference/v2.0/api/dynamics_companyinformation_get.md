@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a company information object for [!
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/companyInformation({id})
+GET businesscentralPrefix/companies({id})/companyInformation
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **companyI
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/companyInformation({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/companyInformation
 ```
 
 **Response**

@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 01/26/2022
+ms.date: 02/24/2023
 ---
 
 # Environments
@@ -28,13 +28,13 @@ Environments are the instances of the application that have been set up for the 
 Returns a list of all the environments for the tenant. 
 
 ```
-GET /admin/v2.15/applications/environments
+GET /admin/v2.18/applications/environments
 ```
 
 Returns a list of the environments for the specified application family.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments
+GET /admin/v2.18/applications/{applicationFamily}/environments
 ```
 
 ### Route Parameters
@@ -76,7 +76,7 @@ Returns a wrapped array of environments.
 Returns the properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}
+GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -119,7 +119,7 @@ Creates a new environment with sample data.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}
+PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -244,14 +244,14 @@ Creates a new environment with a copy of another environment's data.
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
+POST /admin/v2.18/applications/{applicationFamily}/environments/{sourceEnvironmentName}/copy
 ```
 
 API v2.8 and earlier:
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{sourceEnvironmentName}
+POST /admin/v2.18/applications/{applicationFamily}/environments/{sourceEnvironmentName}
 ```
 
 ### Route Parameters
@@ -375,10 +375,12 @@ Returns HTTP status code 201 (Created) with newly copied environment.
 
 ## Delete environment
 
-Deletes the specified environment. Warning: A production environment shouldn't be deleted.
+Deletes the specified environment. This operation *soft deletes* the environment, which means it's retained for seven days during which time it can be recovered. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments). If the specified environment has the status `Creating Failed` or `Removing Failed`, the environment won't be retained for seven days and will be permanently deleted immediately (*hard delete*).
+
+Warning: A production environment shouldn't be deleted.
 
 ```
-DELETE /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}
+DELETE /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}
 ```
 
 ### Route Parameters
@@ -391,7 +393,33 @@ DELETE /admin/v2.15/applications/{applicationFamily}/environments/{environmentNa
 
 ### Response
 
-**API v2.9 and later**
+**For soft delete in API v2.18 and later**
+
+EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
+
+```
+{
+  "id": "8924140b-0da8-4bbb-8a4f-dac047944e72",
+  "type": "softDelete",
+  "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
+  "aadTenantId": "",
+  "createdOn": "2021-09-27T08:13:46.65Z",
+  "startedOn": "2021-09-27T08:13:47.3Z",
+  "completedOn": "2021-09-27T08:15:02.073Z",
+  "createdBy": "",
+  "errorMessage": "",
+  "parameters": {
+    "softDeletedOn": "timestamp",
+    "hardDeletePendingOn": "timestamp",
+    "deleteReason": "requestedByAdmin"
+},
+  "environmentName": " EnvironmentToDelete",
+  "environmentType": "sandbox",
+  "productFamily": "BusinessCentral"
+}
+```
+
+**For delete in API v2.9 to v2.17 and for hard delete in v2.18 and later**
 
 EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
 
@@ -435,6 +463,53 @@ Returns empty HTTP status code 202 (Accepted).
 
    - target: {applicationFamily}/{environmentName}
 
+
+## Recover environment
+
+**INTRODUCED IN:** API version 2.18
+
+Recovers a soft-deleted environment. For more information, about environment deletion and recovery, go to [Delete and recover environments](tenant-admin-center-environments-delete.md#about-deleting-and-recovering-environments).
+
+```
+POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/recover
+```
+
+### Route Parameters
+
+`applicationFamily` - Family of the environment's application. (for example "BusinessCentral")
+
+`environmentName` - Name of the environment to recover.
+
+### Response
+
+EnvironmentOperation response with HTTP status code 202 (Accepted) with the following format:
+
+```
+{
+  "id": "8924140b-0da8-4bbb-8a4f-dac047944e72",
+  "type": "recover",
+  "status": "scheduled", // Will eventually switch to running and then one between succeeded/failed
+  "aadTenantId": "",
+  "createdOn": "2023-02-10T08:13:46.65Z",
+  "startedOn": "2023-02-10T08:13:47.3Z",
+  "completedOn": "2023-02-10T08:15:02.073Z",
+  "createdBy": "",
+  "errorMessage": "",
+  "parameters": {
+    "recoveryReason": "requestedByAdmin"
+  },
+  "environmentName": " EnvironmentToRecover",
+  "environmentType": "sandbox",
+  "productFamily": "BusinessCentral"
+}
+```
+
+### Expected Error Codes
+
+`deletedEnvironmentRecoveryInProgress` - the environment is already being recovered.
+
+`invalidStatusCannotRecoverDeletedEnvironment`- can't recover the environment in its current state.
+
 ## Rename environment
 
 **INTRODUCED IN:** API version 2.3
@@ -443,7 +518,7 @@ Schedules a rename operation on an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/rename
+POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/rename
 ```
 
 ### Routing parameters
@@ -491,7 +566,7 @@ Schedules a restore operation an existing environment from a time in the past.
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/restore
+POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/restore
 ```
 
 ### Routing parameters
@@ -506,7 +581,10 @@ POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName
 { 
   "EnvironmentName": "x-restored", // Mandatory. The name of the new environment that will be created as the result of the resore operation. 
   "EnvironmentType": "production", // Mandatory. The type of the new environment. 
-  "PointInTime": "2021-04-22T20:00:00Z" // The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
+  "PointInTime": "2021-04-22T20:00:00Z", // Mandatory. The point in time to which to restore the environment. Must be in ISO 8601 format in UTC. 
+  "SkipInstallingPTEs": true, // Optional, default is false. Used to uninstall PTEs on the environment created as part of the restore.
+  "SkipInstallingThirdPartyGlobalApps": true, // Optional, default is false. Used to uninstall all third-party AppSource apps from the created environment as part of the restore.
+  "SkipEnvironmentCleanup": true // Optional, default is false. Used to skip execution of codeunits that clear up selected tables and disable selected setups to avoid unexpected behavior of integrations with external systems.
 } 
 ```
 
@@ -551,18 +629,20 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 
 ### Response
 
-200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty.
+200 OK with body. Body represents an ordered list of available restore periods that are non-overlapping and sorted in ascending order by period start date-time. If there are no available restore periods, the list will be empty. correspondingApplicationPackageVersion indicates the Application version that the environment will be restored to.
 
 ```
 { 
   "value": [ 
     { 
       "from": "2021-01-25T14:57:04.967Z", 
-      "to": "2021-01-25T21:06:17.737Z" 
+      "to": "2021-01-25T21:06:17.737Z",
+      "correspondingApplicationPackageVersion": "21.4.0.0"
     }, 
     { 
       "from": "2021-01-25T21:14:48Z", 
-      "to": "2021-01-27T14:33:15.0007416Z" 
+      "to": "2021-01-27T14:33:15.0007416Z",
+      "correspondingApplicationPackageVersion": "21.5.0.0"
     } 
   ] 
 } 
@@ -573,7 +653,7 @@ GET applications/{applicationType}/environments/{environmentName}/availableResto
 Returns used storage properties for the provided environment name if it exists.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/usedstorage
+GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/usedstorage
 ```
 
 ### Route Parameters
@@ -607,7 +687,7 @@ Returns used storage information of a single environment if exists.
 Returns a list of used storage objects for all the environments.
 
 ```
-GET /admin/v2.15/environments/usedstorage
+GET /admin/v2.18/environments/usedstorage
 ```
 
 ### Response
@@ -630,7 +710,7 @@ Returns a wrapped array of used storage objects.
 Returns different types of quotas and their limits.
 
 ```
-GET /admin/v2.15/environments/quotas
+GET /admin/v2.18/environments/quotas
 ```
 
 ### Response
@@ -659,7 +739,7 @@ Returns quotas object.
 Gets the following operations that occurred on an environment.
 
 ```
-GET /admin/v2.15/applications/{applicationType}/environments/{environmentName}/operations 
+GET /admin/v2.18/applications/{applicationType}/environments/{environmentName}/operations 
 ```
 
 ### Operation types
@@ -670,16 +750,18 @@ Data is returned for the following operation types:
 |----|---|---|
 |Copy<sup>3</sup>|An environment was created from a copy of another environment.|[Copy a Production or Sandbox Environment in the Admin Center](tenant-admin-center-environments-copy.md)<br><br>[Copy Endpoint](#copy-environment)|
 |Create<sup>3</sup>|A new environment was created|[Create Environment in Admin Center](tenant-admin-center-environments.md#create-a-new-environment)<br><br>[Create Endpoint](#create-new-environment)|
-|Delete<sup>2</sup>|An environment was deleted.|[Delete Environment in Admin Center](tenant-admin-center-environments.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
+|Delete<sup>2</sup>|An environment was permanently deleted.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md)<br><br>[Delete Endpoint](#delete-environment)|
 |EnvironmentAppHotfix<sup>1</sup>|App was hotfixed by using the App Management API.|[App Management API](appmanagement/app-management-api.md#schedule-environment-hotfix)
 |EnvironmentAppUpdate<sup>1</sup> |App was updated either by the Admin Center or API update endpoint.| [Update an App in Admin Center](tenant-admin-center-manage-apps.md#install-an-app-update---the-flow)<br><br>[Update Endpoint](administration-center-api_app_management.md#update-an-app)|
 |EnvironmentAppInstall<sup>1</sup>|App was installed by using the tenant's **Extension Management** page or the API install endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#installing-an-extension)<br><br>[Install Endpoint](administration-center-api_app_management.md#install-an-app)|
 |EnvironmentAppUninstall<sup>1</sup>|App was uninstalled by using the tenant's **Extension Management** page or the API uninstall endpoint.|[Extension Management Page](/dynamics365/business-central/ui-extensions-install-uninstall#uninstalling-an-extension)<br><br>[Uninstall Endpoint](administration-center-api_app_management.md#uninstall-an-app)|
 |EnvironmentRename|Environment was renamed by using the Admin Center|[Rename an Environment](tenant-admin-center-environments-rename.md)<br><br>[Rename Endpoint](#rename-environment)|
-|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Azure Active Directory groups in Admin Center](tenant-admin-center-environments.md#manage-access-using-azure-active-directory-groups)|
+|Modify<sup>5</sup>|Records the following operations:<br />[Set update window](administration-center-api_environment_settings.md#put-update-settings)<br />[Set Application Insights key](administration-center-api_environment_settings.md#put-appinsights-key)<br />[Set security group](administration-center-api_environment_settings.md#set-security-group)<br /> [Clear security group](administration-center-api_environment_settings.md#clear-security-group)<br />[Reschedule update](administration-center-api_reschedule_updates.md#reschedule-update)<br />[Set access with Microsoft 365 licenses](administration-center-api_environment_settings.md#set-access-with-microsoft-365-licenses)<sup>6</sup>|[Manage updates in Admin Center](tenant-admin-center-update-management.md)<br />[Manage access using Azure Active Directory groups in Admin Center](tenant-admin-center-manage-access.md#manage-access-using-azure-active-directory-groups)<br />[Manage access with Microsoft 365 licenses in Admin Center](tenant-admin-center-manage-access.md#manage-access-with-microsoft-365-licenses)|
 |MoveToAnotherAadTenant|An environment was moved to another Azure Active Directory organization by using the Admin Center|[Move an Environment](tenant-admin-center-environments-move.md)|
 |PitRestore|Environment was restored by using the Admin Center|[Restoring an Environment](tenant-admin-center-backup-restore.md)|
+|Recover<sup>7</sup>|A deleted environment was recovered.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#recover-an-environment)<br><br>[Delete Endpoint](#recover-environment)|
 |Restart<sup>4</sup>|An environment was restarted.|[Restart Environment](tenant-admin-center-manage-sessions.md#restart-environment)|
+|SoftDelete<sup>7</sup>|An environment was soft deleted.|[Delete and Recover Environments in Admin Center](tenant-admin-center-environments-delete.md#delete-an-environment)<br><br>[Delete Endpoint](#delete-environment)|
 |Update<sup>5</sup>|Records a long-running background operation that occurs when an environment is updated to a newer version.||
 
 <sup>1</sup> These operations are only supported with API version 2.6 and later. For these operations, the data returned is the same as for [Get App Operations](administration-center-api_app_management.md#get-app-operations), but in a different format.
@@ -691,6 +773,10 @@ Data is returned for the following operation types:
 <sup>4</sup> These operations are only supported with API version 2.10 and later.
 
 <sup>5</sup> These operations are only supported with API version 2.11 and later.
+
+<sup>6</sup> These operations are only supported with API version 2.12 and later.
+
+<sup>7</sup> These operations are only supported with API version 2.17 and later.
 
 <!--
 - EnvironmentRename 
@@ -765,7 +851,7 @@ Example `200 OK` response:
 Gets the operations that occurred on all environments.
 
 ```
-GET /admin/v2.15/applications/{applicationType}/environments/operations 
+GET /admin/v2.18/applications/{applicationType}/environments/operations 
 ```
 
 ### Operation types

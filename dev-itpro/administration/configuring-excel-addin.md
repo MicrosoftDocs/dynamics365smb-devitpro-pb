@@ -89,23 +89,28 @@ Your on-premises deployment must meet the following prerequisites:
 
 - Azure Active Directory (Azure AD) used to authenticate users.
 
-   The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Azure Active Directory (Azure AD) authentication, including OData. For more information, see [Authenticating Users with Azure Active Directory](Authenticating-Users-with-Azure-Active-Directory.md).
- 
+  The [!INCLUDE[server](../developer/includes/server.md)] instance, clients, and users must be configured for Azure Active Directory (Azure AD) authentication, including OData.
+
+  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (v20) and later, go to [Configure Azure Active Directory Authentication with OpenID Connect](Authenticating-Users-with-Azure-ad-openid-connect.md).
+
+       > [!IMPORTANT]
+       > Be sure to set `WSFederationLoginEndpoint` parameter of [!INCLUDE[server](../developer/includes/server.md)] instance. Otherwise, you'll get an error that the realm is not defined when trying to edit data using **Edit in Excel**.
+  - For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 2 (v19) and earlier, go to [Configure Azure Active Directory Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 - OData enabled and uses Secure Sockets Layer (SSL) for authentication.
 
-   For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).  
+   For more information, go to [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md).  
 
 - [!INCLUDE[webserver](../developer/includes/webserver.md)] configured to use SSL (https).
 
-  For more information, see [Configure SSL to Secure the Connection to Web Client](../deployment/Configure-SSL-web-client-connection.md).
+  For more information, go to [Configure SSL to Secure the Connection to Web Client](../deployment/Configure-SSL-web-client-connection.md).
 
 - If your deployment is multitenant, [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] must accept host names for tenants.
 
-  For more information, see [Configure the Web Server to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).  
+  For more information, go to [Configure the Web Server to Accept Host Names for Tenants](configure-web-server-to-accept-host-names-for-tenants.md).  
 
 - [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client computers have a supported version of Excel.
 
-   For more information, see [System Requirements](../deployment/System-Requirement-business-central.md#WebClient).
+   For more information, go to [System Requirements](../deployment/System-Requirement-business-central.md#WebClient).
 
 ## Expose the Business Central application Web API in Azure AD
 
@@ -120,11 +125,11 @@ When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured f
 4. Under **Manage**, select **Expose API**.
 5. On the **Expose API** page, if the **Application ID URI** box is filled out, then API is already exposed, so you don't have to do anything else. Otherwise, select **Set** to expose the API.
 
-For information about how to expose the Web API, see [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
+For information about how to expose the Web API, go to [Quickstart: Configure an application to expose web APIs](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis).
 
 ## Register and configure an application in Microsoft Azure
 
-When Azure AD authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, an Azure AD tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Azure AD application in the Azure AD tenant. For more guidelines, see [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
+When Azure AD authentication was set up for your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] deployment, an Azure AD tenant was created in Microsoft Azure, and an application for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] was registered in the tenant. The Excel add-in requires that you add (register) a separate Azure AD application in the Azure AD tenant. For more guidelines, go to [Register your application with your Azure Active Directory tenant](/azure/active-directory/active-directory-app-registration).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Search for and select **Azure Active Directory**.
@@ -172,7 +177,7 @@ When Azure AD authentication was set up for your [!INCLUDE[prod_short](../develo
     5. Search for Business Central API by using registered application's name or application ID.
     6. Select the permission from the list, then select **Add Permission**. 
 
-    For information, see [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
+    For information, go to [Quickstart: Configure a client application to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).  
 
 <!--
 6. Configure OAuth2 authentication in the Excel add-in.
@@ -220,7 +225,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
 
 2. In the **Client Services** section, set the **Web Client Base URL** field to the base URL of the [!INCLUDE[nav_web_md](../developer/includes/nav_web_md.md)].
 
-    This value is the root portion of all URLs that are used to access pages in the web client. The value must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer/BC` or `https://cronusinternationltd.onmicrosoft.com/BC200`.
+    This value is the root portion of all URLs that are used to access pages in the web client. The value must have the format `https://[hostname:port]/[instance]`, such as `https://MyBCWebServer/BC` or `https://cronusinternationltd.onmicrosoft.com/BC210`.
 
     If you're using the Set-NAVServerConfiguration cmdlet, set the `PublicWebBaseUrl` key.
 
@@ -232,7 +237,7 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
 
    1. Set the **OData Base URL** field to the public URL for accessing OData services.
 
-       The URL must have the following format `https://<hostname>:<port>/<instance>/ODataV4/`, such as `https://localhost:7048/BC200/ODataV4/`.
+       The URL must have the following format `https://<hostname>:<port>/<instance>/ODataV4/`, such as `https://localhost:7048/BC210/ODataV4/`.
 
        With the Set-NAVServerConfiguration cmdlet, set the `PublicODataBaseUrl` key.
 
@@ -250,11 +255,11 @@ You add the Excel add-in to the [!INCLUDE[server](../developer/includes/server.m
 
 ## Prepare devices and network for the Excel Add-In
 
-Network services such as proxies or firewalls must allow routing between each client device on which the add-In is installed and many service endpoints. For a list of endpoints, see [Preparing your network for the Excel Add-In](configuring-network-for-addins.md).  
+Network services such as proxies or firewalls must allow routing between each client device on which the add-In is installed and many service endpoints. For a list of endpoints, go to [Preparing your network for the Excel Add-In](configuring-network-for-addins.md).  
 
 ## Next steps
 
-The next step is to get the add-in installed in Excel of the users. As an administrator, you can set up Centralized Deployment in Microsoft 365 admin center to automatically install the add-ins to users in your organization. Or, you can allow users to install it themselves from the Office Store. For more information, see [Get the Business Central Add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin) in the business functionality help.
+The next step is to get the add-in installed in Excel of the users. As an administrator, you can set up Centralized Deployment in Microsoft 365 admin center to automatically install the add-ins to users in your organization. Or, you can allow users to install it themselves from the Office Store. For more information, go to [Get the Business Central Add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin) in the business functionality help.
 
 <!--
 Centralized Deployment is a feature available in the Microsoft 365 admin center for automatically installing add-ins in Office apps of users, like Excel. Centralized Deployment provides you a way to get the Business Central add-in in for Excel to users when your organization doesn't allow users to access the Office Store (AppSource). 

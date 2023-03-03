@@ -1,9 +1,9 @@
 ---
-title: "CodeCop Warning AA0241"
+title: "CodeCop Hidden AA0241"
 description: "Use all lowercase letters for reserved language keywords."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 12/30/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# CodeCop Warning AA0241
+# CodeCop Hidden AA0241
 Use all lowercase letters for reserved language keywords.
 
 ## Description
@@ -25,7 +25,7 @@ Use all lowercase letters for reserved language keywords. This rule does not app
 
 We recommend following these best practices when developing extensions in AL to ensure consistency and discoverability on file, object, and method naming, as well as better readability of written code.
 
-Built-in methods and types are not included in this rule because they are written using Pascal case.
+Data types in variable and parameter declarations aren't included in this rule because they're written using Pascal case.
 
 ## Bad code example
 
@@ -46,16 +46,17 @@ VAR
 trigger OnValidate()
 begin
     if "Order Date" > "Starting Date" then
-       Error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
+       error(Text007, FieldCaption("Order Date"), FieldCaption("Starting Date"));
 end;
 
 var
-    Text007: Label '%1 cannot be greater than %2.';
+    Text007: Label '%1 cannot be greater than %2.'; // Label variable declaration in Pascal case
 
 ```
 
 ## Good and bad practices for fixing the rule
-Change every reserved language keyword to use lowercase letters.
+
+Change *every reserved language keyword to use lowercase letters*. Use Pascal case for data types in variable and parameter declarations.
 
 ## See Also  
 [CodeCop Analyzer](codecop.md)  

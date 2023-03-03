@@ -1,9 +1,9 @@
 ---
 title: "CodeCop Warning AA0194"
-description: "Remember to specify either the 'OnAction' trigger or 'RunObject' property on an action."
+description: "Remember to specify either the 'OnAction' trigger, the 'RunObject' property, or the 'FlowId' property on an action."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/07/2021
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Only write actions that have an effect.
 
 ## Description
-Remember to specify either the 'OnAction' trigger or 'RunObject' property on an action.
+Remember to specify either the 'OnAction' trigger, the 'RunObject' property, or the 'FlowId' property on an action.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

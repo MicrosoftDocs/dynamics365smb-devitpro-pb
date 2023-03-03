@@ -3,7 +3,7 @@ title: "PerTenantExtensionCop Error PTE0008"
 description: "Page controls and actions must use the ApplicationArea property to be visible to users."
 ms.author: solsen
 ms.custom: na
-ms.date: 02/07/2022
+ms.date: 10/26/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Page controls and actions must use the ApplicationArea property
 
 ## Description
-Page controls and actions must use the ApplicationArea property to be visible to users.
+Page controls and actions must use the ApplicationArea property to be visible to users. From runtime 11.0, you can specify on the application object level the ApplicationArea to use as default for all its controls and actions.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

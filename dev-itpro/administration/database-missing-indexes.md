@@ -25,6 +25,8 @@ For more information on indexes and their types, see [Clustered and nonclustered
 
 When you run a database query, the query optimizer, which is an important database component, analyzes and chooses the best possible plan to complete the instruction. In doing so, it provides additional information about the ongoing operation that the operation might perform well if the particular column (or columns) is indexed. The SQL server's Query optimizer gets this information from Dynamic Management Views (DMV), in our case, [sys.dm_db_missing_index_details](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql). *sys.dm_db_missing_index_details* returns details about missing indexes, which will help you in creating right indexes.
 
+To learn how to use missing index suggestions to effectively tune indexes and improve query performance, go to [Tune nonclustered indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)
+
 To know more about Dynamic Management Views (DMV), see [System Dynamic Management Views (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views).
 
 To understand how AL plays a part in efficient data access with SQL components, see [Efficient data access](../performance/performance-developer.md#efficient-data-access).
@@ -48,3 +50,4 @@ To get information on missing indexes, go to **Database Missing Indexes** in Bus
 
 [Performance Article For Developers](../performance/performance-developer.md)  
 [Optimizing SQL Server Performance with Business Central](optimize-sql-server-performance.md)  
+[How to tune indexes with missing index suggestions](/sql/relational-databases/indexes/tune-nonclustered-missing-index-suggestions)

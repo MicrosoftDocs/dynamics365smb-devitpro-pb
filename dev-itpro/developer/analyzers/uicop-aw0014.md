@@ -1,9 +1,9 @@
 ---
 title: "UICop Warning AW0014"
-description: "Learn how to fix ActionRefs whose target actions are defined in a hidden group but are still rendered on the promoted section of the command bar."
+description: "Actionrefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar, but this behavior might change and these actionrefs might be hidden in the future."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 10/25/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -17,7 +17,7 @@ author: SusanneWindfeldPedersen
 Groups containing ActionRef targets should not be hidden.
 
 ## Description
-Actionrefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar. However, this behavior might change and these actionrefs might be hidden in the future. If you want to see these actions in the default section of the command bar, remove the Visible property on the group. If you don't want to see these actions on the promoted section of the command bar, remove the actionrefs.
+Actionrefs whose target actions are defined in a hidden group are still rendered on the promoted section of the command bar, but this behavior might change and these actionrefs might be hidden in the future. If you want to see these actions in the default section of the command bar, remove the Visible property on the group. If you do not want to see these actions on the promoted section of the command bar, remove the actionrefs.
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

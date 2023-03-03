@@ -49,7 +49,12 @@ Here is an example of the response.
 
 ```json
 {
-PLACE CODE HERE.
+  "id": "dbe826d6-021d-ed11-9db9-000d3aa935da",
+  "code": "CASH",
+  "displayName": "Cash receipts and payments",
+  "balancingAccountId": "00000000-0000-0000-0000-000000000000",
+  "balancingAccountNumber": "10100",
+  "lastModifiedDateTime": "2022-08-16T01:29:56.15Z"
 }
 ```
 

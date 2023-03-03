@@ -13,7 +13,7 @@ ms.author: jswymer
 > [!IMPORTANT]
 > Legacy views have been [deprecated](../upgrade/deprecated-features-platform.md#views) and will be removed in [!INCLUDE[prod_short](includes/prod_short.md)] 2023 release wave 2 (version 23). You can experience this change already in 2022 release wave 2 (version 21) by enabling **Legacy list views are hidden** on the **Feature Management** page. Learn more at [Enabling Upcoming Features Ahead of Time](../administration/feature-management.md).  
  
-Modern views were introduced with [!INCLUDE[prod_short](includes/prod_short.md)] April 2019 release wave and are the recommended design going forward. Legacy views are list views that were created by developers in previous versions of [!INCLUDE[prod_short](includes/prod_short.md)] by placing them on the Role Center page object. [!INCLUDE[prod_short](includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page. But legacy views offer a degraded experience and fewer options compared to modern views.  
+[Modern views](devenv-views.md) were introduced with [!INCLUDE[prod_short](includes/prod_short.md)] April 2019 release wave and are the recommended design going forward. Legacy views are list views that were created by developers in previous versions of [!INCLUDE[prod_short](includes/prod_short.md)] by placing them on the Role Center page object. [!INCLUDE[prod_short](includes/prod_short.md)] displays legacy views side by side with modern views directly on the list page. But legacy views offer a degraded experience and fewer options compared to modern views.  
  
 ## How can developers migrate to modern views? 
 
@@ -143,7 +143,7 @@ If your solution or customizations use legacy views, it's recommended you migrat
                 ...
     ```-->
 
-For more information, see [Views](devenv-views.md).
+Once you've identified the source of a legacy view, the next step is to recreate it as a modern view, as described at [Views](devenv-views.md).
 
 ## Can end-users benefit from modern capabilities before developers migrate legacy views?
 

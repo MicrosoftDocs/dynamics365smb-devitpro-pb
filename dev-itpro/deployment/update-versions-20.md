@@ -2,10 +2,12 @@
 title: "Updates for the Business Central 2022 Release Wave 1 versions"
 description: "Learn about the updates for Dynamics 365 Business Central 2022 Release Wave 1 on-premises deployments."
 author: jswymer
-ms.custom: na
-ms.topic: conceptual
 ms.author: jswymer
-ms.date: 09/06/2022
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms.topic: conceptual
+ms.date: 01/31/2023
+ms.custom: bap-template
 ---
 
 # Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates
@@ -26,6 +28,10 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5023400](https://support.microsoft.com/help/5023400)|Update 20.10 |February 2023 |Application Build 20.10.52581</br>Platform Build 20.0.52575|
+|[5022713](https://support.microsoft.com/help/5022713)|Update 20.9 |January 2023 |Application Build 20.9.51421</br>Platform Build 20.0.51404|
+|[5021671](https://support.microsoft.com/help/5021671)|Update 20.8 |December 2022 |Application Build 20.8.49971</br>Platform Build 20.0.49947  |
+|[5021002](https://support.microsoft.com/help/5021002)|Update 20.7 |November 2022 |Application Build 20.7.48483</br>Platform Build 20.0.48457  |
 |[5019241](https://support.microsoft.com/help/5019241)|Update 20.6 |October 2022 |Application Build 20.6.47024</br>Platform Build 20.0.46998  |
 |[5017795](https://support.microsoft.com/help/5017795)|Update 20.5 |September 2022 |Application Build 20.5.45889</br>Platform Build 20.0.45882  |
 |[5017017](https://support.microsoft.com/help/5017017)|Update 20.4 |August 2022 |Application Build 20.4.44365</br>Platform Build 20.0.44359  |
@@ -41,7 +47,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 [Dynamics 365 Business Central On-Premises 2021 Release Wave 1 Updates](update-versions-18.md)  
 [Dynamics 365 Business Central On-Premises Spring 2019 Updates](update-versions-14.md)  
 [Resources for Help and Support](../help-and-support.md)  
-[System Requirements April '19](system-requirement-business-central.md)  
+[System Requirements April '19](system-requirements-business-central-v20.md)  
 [Upgrading to Business Central](../upgrade/upgrading-to-business-central.md)  
 [Countries and Translations Supported](../compliance/apptest-countries-and-translations.md)  
 [Welcome to Dynamics 365 Business Central](/dynamics365/business-central/index)  

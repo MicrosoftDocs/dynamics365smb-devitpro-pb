@@ -47,7 +47,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/paymentMethods({i
 Content-type: application/json
 
 {
-  "displayName": "Personal Check Payment",
+  "displayName": "Personal Check Payment"
 }
 ```
 

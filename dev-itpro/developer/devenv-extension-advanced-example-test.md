@@ -58,7 +58,7 @@ Before we can start writing the tests for the extension, we need to do the follo
 Our CustomerRewardsTest project will be referencing objects from the CustomerRewards project and so we will need to specify this in the `dependencies` setting in the CustomerRewardsTest project's app.json file. The `dependencies` setting takes a list of dependencies, where each dependency specifies the `appId`, `name`, `publisher`, and `version` of the base project/package that the current project/package will depend on.  
 
 > [!NOTE]  
-> Another prerequisite is to update the app.json with a dependency to the test toolkit.
+> Another prerequisite is to update the app.json with the dependencies of the test libraries used. In this case *Library Assert* and *Tests-TestLibraries*.
 
 ```json
  {
@@ -69,9 +69,20 @@ Our CustomerRewardsTest project will be referencing objects from the CustomerRew
       "name": "CustomerRewards", 
       "publisher": "Microsoft", 
       "version": "1.0.0.0" 
-    } 
-  ], 
-  "test": "13.0.0.0"
+    },
+    {
+        "id":  "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+        "name":  "Library Assert",
+        "publisher":  "Microsoft",
+        "version":  "19.0.0.0"
+    },
+    {
+        "id":  "5d86850b-0d76-4eca-bd7b-951ad998e997",
+        "name":  "Tests-TestLibraries",
+        "publisher":  "Microsoft",
+        "version":  "19.0.0.0"
+    }
+  ]
    ...
 }
 ```

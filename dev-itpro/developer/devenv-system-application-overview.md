@@ -31,7 +31,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Azure AD Tenant|Retrieves information about the Azure Active Directory tenant.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Tenant/README.md)|
 |Azure AD User Management|Provides functionality for managing Azure Active Directory users.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User%20Management/README.md)|
 |Azure AD User|Retrieves and updates a user from the Azure AD Graph API.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20User/README.md)|
-|Azure Functions|Provides functionality for connecting to Azure Functions and gathering data about the success of calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Azure Functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20AD%20Functions/README.md)|
+|Azure Functions|Provides functionality for connecting to Azure Functions and gathering data about the success of calls from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] to Azure Functions.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)|
 |Azure Key Vault|Stores Azure Key Vault secrets for deployments.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Azure%20Key%20Vault/README.md)|
 |BLOB Storage|Stores and manages data in a binary format.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/BLOB%20Storage/README.md)|
 |Base64 Convert|Converts text and from base 64.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Base64%20Convert/README.md)|
@@ -64,6 +64,7 @@ The list of modules is growing continuously. The following table lists and descr
 |Secrets|Contains secret providers for reading secrets from the key vault that is specified by an extension or from other secret providers.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Secrets/README.md)|
 |Server Settings|Exposes methods that get settings from the server configuration file.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Server%20Settings/README.md)|
 |System Initialization|Runs non-business logic on user log-ins.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/System%20Initialization/README.md)|
+|Telemetry|Provides the tools needed to add feature telemetry (uptake/usage/errors) for an app.|[ReadMe](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry/README.md)|
 |Tenant License State|Retrieves the current state of the tenant license.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Tenant%20License%20State/README.md)|
 |Translation|Gets and stores language translations.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Translation/README.md)|
 |Upgrade Tags|Provides functionality for ensuring that the upgrade code is run only one time.|[ReadMe](https://github.com/microsoft/ALAppExtensions/blob/master/Modules/System/Upgrade%20Tags/README.md)|

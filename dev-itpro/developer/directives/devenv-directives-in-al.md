@@ -14,7 +14,7 @@ ms.author: solsen
 
 [!INCLUDE[2020_releasewave2](../../includes/2020_releasewave2.md)]
 
-In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable the ability to expand and collapse in code. Preprocessor directives can be divided into the following groups. For more information about each type, use the links provided below.
+In AL, like in other programming languages, preprocessor directives can be used to make code conditional, to suppress warnings, or to enable the ability to expand and collapse in code. Preprocessor directives can be divided into the following groups. For more information about each type, use the links provided in the following section.
 
 - [Conditional directives](devenv-directives-in-al.md#conditional-directives)
 - [Regions](devenv-directive-region.md)
@@ -43,7 +43,7 @@ The following conditional preprocessor directives are supported in AL.
 
 ## Defining preprocessorSymbols
 
-Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the [Conditional code](devenv-directives-in-al.md#conditional-directives) example below. A symbol has a boolean value that means it evaluates to `true` or `false`.
+Symbols can be defined globally in the `app.json` file. A symbol can also be defined using the `#define` directive in code, but if symbols are defined in the `app.json` file, they can be used globally. The following example defines `DEBUG` as a global symbol. This can then be used from code as illustrated in the following [Conditional code](devenv-directives-in-al.md#conditional-directives) example. A symbol has a boolean value that means it evaluates to `true` or `false`.
 
 The app.json syntax is:
 

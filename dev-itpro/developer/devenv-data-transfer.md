@@ -12,6 +12,8 @@ ms.date: 07/29/2022
 
 # Transferring Data Between Tables using DataTransfer
 
+> **APPLIES TO:**  Business Central 2022 release wave 2 (version 21.0) and later.
+
 [DataTransfer](methods-auto/datatransfer/datatransfer-data-type.md) is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, DataTransfer produces SQL code that operates on sets. This behavior improves the performance when moving data during upgrade. 
 
 For comparison, the following code illustrates how to copy rows using the record API:
@@ -23,12 +25,12 @@ var
   to: Record ToTable;
 begin
   if from.Find() then
-  repeat
-    to.SmallCodeField := from.SmallCodeField;
-    to.IntField := from.IntField;
-    to.id  := from.id;
-    to.Insert();
-  until (from.Next() = 0)
+    repeat
+      to.SmallCodeField := from.SmallCodeField;
+      to.IntField := from.IntField;
+      to.id := from.id;
+      to.Insert();
+    until from.Next() = 0;
 end;
 ```
 
@@ -37,8 +39,8 @@ The same can be done using DataTransfer:
 ```al
 local procedure CopyRows()
 var
-  dt : DataTransfer;
-  to : Record ToTable;
+  dt: DataTransfer;
+  to: Record ToTable;
 begin
   dt.SetTables(Database::FromTable, Database::ToTable);
   dt.AddFieldValue(2, to.FieldNo("SmallCodeField"));
@@ -123,13 +125,13 @@ The code to accomplish this operation is as follows.
 local procedure CopyFields()
 var
     dt: DataTransfer;
-    dest : Record Destination;
+    dest: Record Destination;
     src: Record Source;
 begin
     dt.SetTables(Database::Source, Database::Destination);
     dt.AddFieldValue(src.FieldNo("S3"), dest.FieldNo("D3"));
     dt.AddSourceFilter(src.FieldNo("S2"), '=%1', 'A');
-    dt.AddJoin(src.FieldNo("PK"), src.FieldNo("PK"));
+    dt.AddJoin(src.FieldNo("PK"), dest.FieldNo("PK"));
     dt.CopyFields();
 end;
 ```
@@ -197,12 +199,12 @@ local procedure CopyRows()
 var
     dt: DataTransfer;
     src: Record Source;
-    dest : Record Destination;
+    dest: Record Destination;
 begin
     dt.SetTables(Database::Source, Database::Destination);
     dt.AddFieldValue(src.FieldNo("PK"), dest.FieldNo("PK"));
     dt.AddFieldValue(src.FieldNo("S3"), dest.FieldNo("D3"));
-    dt.AddConstantValue('X', dest.FieldNo(D2));
+    dt.AddConstantValue('X', dest.FieldNo("D2"));
     dt.AddSourceFilter(src.FieldNo("S2"), '=%1', 'A');
     dt.CopyRows();
 end;

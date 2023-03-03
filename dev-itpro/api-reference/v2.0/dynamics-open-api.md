@@ -12,7 +12,7 @@ ms.author: solsen
 Standard APIs for Business Central are available as an [OpenAPI Specification (OAS)](https://swagger.io/specification/). OAS defines a standard interface to RESTful APIs, providing a uniform access to APIs and documentation.  
 
 > [!IMPORTANT]  
-> At this point in time, there is not a downloadable .yaml file for version 2.0 of the API. This topic explains how to preview the OpenAPI contract based on a version 1.0 of the .yaml file. 
+> At this point in time, there is no downloadable .yaml file for version 2.0 of the API. This topic explains how to preview the OpenAPI contract based on a version 1.0 of the .yaml file. 
 
 ## Download Business Central OpenAPI specification
 

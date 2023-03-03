@@ -3,7 +3,7 @@ title: "DataTransfer Data Type"
 description: "A structure building bulk transfer of data between tables."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/11/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,7 @@ The following methods are available on instances of the DataTransfer data type.
 |[CopyFields()](datatransfer-copyfields-method.md)|Copies the fields specified in AddFields with filters from AddSourceFilter, and the join conditions from AddJoins in one bulk operation in SQL.|
 |[CopyRows()](datatransfer-copyrows-method.md)|Copies the rows from the source table to the destination table with the fields selected with AddFields and the filters applied with AddSourceFilter, in one bulk operation in SQL.|
 |[SetTables(Integer, Integer)](datatransfer-settables-method.md)|Sets the source and destination tables for the data transfer.|
+|[UpdateAuditFields([Boolean])](datatransfer-updateauditfields-method.md)|Sets if audit fields should be updated. If the value is set to false, the audit fields are not updated when calling the CopyFields method. Default value is true.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
