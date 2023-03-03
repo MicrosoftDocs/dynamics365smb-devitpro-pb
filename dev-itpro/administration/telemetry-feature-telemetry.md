@@ -144,6 +144,6 @@ This event is logged if no telemetry logger has been registered for publisher.
 [Telemetry Overview](telemetry-overview.md)  
 [Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
 [Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
-[System Application Overview](../developer/devenv-system-application-overview)  
+[System Application Overview](../developer/devenv-system-application-overview.md)  
 [Feature Telemetry System Application Documentation](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
 [Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)
