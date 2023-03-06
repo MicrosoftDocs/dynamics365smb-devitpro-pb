@@ -4,7 +4,7 @@ description: This article describes how to download, and use the ALDoc tool to g
 author: 
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 02/01/2023
+ms.date: 03/03/2023
 ms.author: solsen
 ms.custom: bap-template
 ---
@@ -24,7 +24,7 @@ To generate help using the ALDoc tool, the following steps are involved:
 
 ### .NET 6.0
 
-The ALDoc tool is based on `dotnet 4.8` or later. It's recommended to use .NET 6.0. Use the following command to check your local dotnet version:
+The ALDoc tool is based on `dotnet 4.8` or later. It's recommended to use .NET 6.0 or .NET 7.0. Use the following command to check your local dotnet version:
 
 ```bash
 dotnet --list-sdks
@@ -66,7 +66,7 @@ The next step is to use the ALDoc tool to generate the file for DocFx v2.
      .\\Platform-ModernDev\\out\\Debug\\aldoc\\net6.0\\aldoc.exe init -o .\\test1\\ -v 2 -t 'F:\\AL\\ALProject1\\.alpackages\\Microsoft_System Application_20.1.39764.39901.app'
     ```
 
-2. Next, generate the file by providing the following command:  
+2. Next, generate the reference files by providing the following command, including the path to the .app file (alpackage) that you want to generate help for:  
 
     ```bash
      {Path_to_Platform}\\Platform-ModernDev\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-dev-appref}\\  -s {path_to_package}
@@ -91,7 +91,7 @@ In the previous steps, the reference files were generated. You'll now use use Do
 
 The structure of the files that are generated is as follows:
 
-|Path | Description|
+|Paths and files| Description|
 |-----|------------|
 |`./override_file`| Default folder to store the files to replace the corresponding content of the auto-generated content.|
 |`./reference`| Folder to store the generated content.|
