@@ -21,8 +21,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [Extend general ledger posting aggregations]()
-- [Search in company data]()
+- [Extend general ledger posting aggregations](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
+- [Search in company data](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/search-company-data-preview)
 
 
 
