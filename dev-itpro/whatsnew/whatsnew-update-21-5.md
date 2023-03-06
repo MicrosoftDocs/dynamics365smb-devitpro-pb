@@ -3,7 +3,7 @@ title: "Update 21.5 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 21.5 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 02/23/2023
+ms.date: 03/06/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -16,15 +16,12 @@ Would you like to know what has changed in update 21.5? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5023401) and the downloads [here](https://aka.ms/BCDownload).
-
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5024403) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
 
 - [Extend general ledger posting aggregations](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
 - [Search in company data](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/search-company-data-preview)
-
-
 
 ## Localization updates
 
