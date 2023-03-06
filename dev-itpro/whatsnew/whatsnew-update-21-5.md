@@ -21,7 +21,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [XXXX]()
+- [Extend general ledger posting aggregations]()
+- [Search in company data]()
+
 
 
 ## Localization updates
