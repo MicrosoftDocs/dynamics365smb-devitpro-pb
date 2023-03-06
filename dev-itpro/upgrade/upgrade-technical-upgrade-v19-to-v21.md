@@ -58,7 +58,7 @@ $CustomerLicense = "The file path and name of the customer license"
 
     There are several updates for each Business Central version. The update of your current version must be compatible version 21 update that you want to upgrade to. For more information, see [[!INCLUDE[prod_long](../developer/includes/prod_long.md)] Upgrade Compatibility Matrix](upgrade-v14-v15-compatibility.md). If your solution, for example, is currently running 19.12, you can't upgrade to 21.0. You'll have to wait until 21.1 is available. 
 
-2. Before you install version 21, it can be useful to create desktop shortcuts to the version 16.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 21.0 tools.
+2. Before you install version 21, it can be useful to create desktop shortcuts to the version 118 or 19.0 tools, such as the [!INCLUDE[admintool](../developer/includes/admintool.md)], [!INCLUDE[adminshell](../developer/includes/adminshell.md)], and [!INCLUDE[devshell](../developer/includes/devshell.md)] because the Start menu items for these tools will be replaced with the version 21.0 tools.
 
 3. Install version 21 components.
 

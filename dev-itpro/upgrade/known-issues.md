@@ -1,7 +1,7 @@
 ---
 title: Some Known Issues in Business Central On-premises
 description: Provides an overview of the known issues in Business Central versions
-ms.date: 10/11/2022
+ms.date: 03/02/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.author: jswymer
@@ -469,6 +469,33 @@ Caution: Changing any part of an object name could break scripts and stored proc
 ### Workaround
 
 This occurs when a key fails to get renamed. To fix the problem, identify the key that fails to get renamed, for example, by using the event log or SQL profiler. Then, disable the key by using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)].
+
+## Business Central Server instance fails to start after changing a port number directly in the CustomSettings.config file
+
+> Applies to: Upgrade to 21.x
+
+### Problem
+
+You get errors in the Event Log similar to the following errors when trying to start the [!INCLUDE[server](../developer/includes/server.md)] instance after changing a port number directly in it's CustomSettings.config file:
+
+- Message (HttpSysException): Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address http://gc1662:8085/BC210/client.
+- Failed to start service with CLR type Microsoft.Dynamics.Nav.Service.AspNetCore.AspNetCoreApiHost, API type ClientApi and address
+- The service MicrosoftDynamicsNavServer$BC210 failed to start. This could be caused by a configuration error. Detailed error information: Microsoft.AspNetCore.Server.HttpSys.HttpSysException (0x80004005): Access is denied
+- Type: Microsoft.AspNetCore.Server.HttpSys.HttpSysException; Message: Access is denied
+
+### Impact
+
+After upgrading to version 21.x, you notice that the [!INCLUDE[admintool](../developer/includes/admintool.md)] is no longer available, because it has been removed in version 21.x. If you then try to update certain port numbers (for example, ClientServicesPort ) directly in the server instance's CustomSettings.config file, you may get the errors described above when you try to start the server instance.
+
+### Workaround
+
+Avoid updating the CustomSetting.config file directly. Instead, use the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] with the [Set-NAVServerConfiguration cmdlet](/powershell/module/microsoft.dynamics.nav.management/set-navserverconfiguration). This will automatically grant the required Namespace Reservation permissions for the relevant port.
+
+Alternatively, you could grant the required Namespace Reservation permissions manually for the relevant port by running the appropriate NETSH command in an administrator command prompt on the [!INCLUDE[server](../developer/includes/server.md)] machine, for example:
+
+```
+netsh http add urlacl url=http://+:<PORT NUMBER>/<BC SERVICE NAME>/ user="<BC SERVICE ACCOUNT>"
+```
 
 ## See Also
 
