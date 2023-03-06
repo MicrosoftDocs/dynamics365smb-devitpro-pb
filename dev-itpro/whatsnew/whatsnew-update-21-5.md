@@ -22,8 +22,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Feature changes
 
 - [Extend general ledger posting aggregations](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/extend-general-ledger-posting-aggregations)
-- [Search in company data](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/search-company-data-preview)
-
 
 
 ## Localization updates
@@ -45,7 +43,7 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Register for the Business Central Launch Event, March 29-31**  
+**Business Central 2023 release wave 1 is coming. Register for the free, digital Business Central Launch Event, March 29-31**  
 Join us again this year when we're hosting the Business Central Launch Event. We're kicking off the event with a live opening session, followed by access to 28 what's new sessions, and live Q&As. Register now: [aka.ms/BCLE](https://aka.ms/BCLE).   
 
 **Public preview for Business Central 2023 release wave 1 is live**  
