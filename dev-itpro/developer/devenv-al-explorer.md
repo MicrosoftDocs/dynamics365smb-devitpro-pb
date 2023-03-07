@@ -24,7 +24,7 @@ You can choose when to show the **AL Explorer** as you start up Visual Studio Co
 
 ## Go to source code
 
-For a selected object, you can quickly jump to source code, whether it's to develop, read, and understand it, or whether it's to add breakpoints as part of troubleshooting.
+For a selected object, you can jump to source code to develop, read, or understand it, or use it to add breakpoints as part of troubleshooting.
 
 > [!NOTE]  
 > When you choose **Source** on a given object, the resource exposure policy which is set on the object, may prevent the entire source code to be shown. In this case, you'll see only fragments of the code. 
