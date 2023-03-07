@@ -16,7 +16,7 @@ This article shows you how to use static code analysis tool on an AL project fro
 
 Follow these steps to create a basic project in AL. 
 
-1. Press **Alt + A, Alt + L** to create a new project.
+1. Press **Alt+A, Alt+L** to create a new project.
 2. Open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**.
 3. Under **Extensions**, go to **Al Language extension configuration**. When you scroll down, you'll find Code Analyzers section, choose **Edit in settings.json**.
 4. Set the `al.enableCodeAnalysis` in the settings file to `true`. <br> `"al.enableCodeAnalysis": true`
