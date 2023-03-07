@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 02/24/2023
 ---
 
 # Session Management
@@ -22,7 +22,7 @@ Manage the active sessions on an environment.
 Gets active sessions for an environment.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/sessions
+GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/sessions
 ```
 
 ### Response
@@ -55,7 +55,7 @@ GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}
 Gets session information for a specific session id.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ### Response
@@ -84,7 +84,7 @@ GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}
 Terminates and deletes an active session.
 
 ```
-DELETE /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
+DELETE /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/sessions/{sessionId}
 ```
 
 ## See Also

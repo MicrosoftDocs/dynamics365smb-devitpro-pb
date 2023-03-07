@@ -67,6 +67,7 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
 ### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 ### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 ### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
@@ -154,6 +155,7 @@
 ### [Export databases](administration/tenant-admin-center-database-export.md)
 ### [Restore an environment](administration/tenant-admin-center-backup-restore.md)
 ### [Move an environment to another Azure Active Directory organization](administration/tenant-admin-center-environments-move.md)
+### [Delete environments](administration/tenant-admin-center-environments-delete.md)
 ### [Environment telemetry](administration/tenant-admin-center-telemetry.md)
 ### Admin Center API
 #### [Overview](administration/administration-center-api.md)
@@ -1075,7 +1077,7 @@
 <!-- end AL -->
 <!-- begin security -->
 
-# Security, Privacy, and Compliance
+# Security, privacy, and compliance
 ## Security
 ### [Security overview](security/security-and-protection.md)
 ### [Tips for business users](security/security-users.md)
