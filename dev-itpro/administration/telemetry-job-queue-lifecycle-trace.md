@@ -108,12 +108,6 @@ The following table explains custom dimensions that are specific to this trace.
 |[See common custom dimensions](#other)||
 
 
-<!--
-
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19353.19391","Environment type":"Production","componentVersion":"17.0.19353.19391","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","AadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E25","alObjectId":"1351","extensionPublisher":"Microsoft","alObjectType":"CodeUnit","alObjectName":"Telemetry Subscribers","Extension version":"17.2.19367.19396","extensionVersion":"17.2.19367.19396","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Extension name":"Base Application","extensionName":"Base Application","alJobQueueObjectType":"Codeunit","alDataClassification":"SystemMetadata","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","alJobQueueObjectId":"5339","alJobQueueStatus":"In Process","alJobQueueId":"3cc8faa7-e064-4daf-a84d-cb8a64690de9","alCategory":"AL JobQueueEntries"}
-
--->
-
 ## <a name="finishedrequest"></a>Job queue entry finished (request)
 
 Occurs when a request for a job queue entry finishes running.
@@ -151,10 +145,6 @@ Occurs when a job queue entry finishes running.
 |eventId|**AL0000E26**|
 |[See common custom dimensions](#other)||
 
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19353.19391","Environment type":"Production","componentVersion":"17.0.19353.19391","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","AadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E26","alObjectId":"1351","extensionPublisher":"Microsoft","alObjectType":"CodeUnit","alObjectName":"Telemetry Subscribers","Extension version":"17.2.19367.19396","extensionVersion":"17.2.19367.19396","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Extension name":"Base Application","extensionName":"Base Application","alJobQueueObjectType":"Codeunit","alDataClassification":"SystemMetadata","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","alJobQueueObjectId":"5339","alJobQueueStatus":"On Hold with Inactivity Timeout","alJobQueueId":"fe2b938c-60a9-45b7-b5e1-28afab72f336","alCategory":"AL JobQueueEntries","alJobQueueExecutionTimeInMs":"923","alJobQueueResult":"Success"}
-
--->
 
 ## Job queue entry failed with error
 
@@ -179,7 +169,7 @@ Occurs when a job queue entry fails to run.
 The following table explains custom dimensions that are common to all job queue entry traces.  
 
 |Dimension|Description or value|
-|---------|-----|
+|---------|-----| 
 |alCategory|**AL JobQueueEntries**|
 |alJobQueueCompanyName|Specifies the current company.|
 |alJobQueueScheduledTaskId|Specifies the ID of the scheduled task.|
@@ -187,8 +177,10 @@ The following table explains custom dimensions that are common to all job queue 
 |alJobQueueId|Specifies the ID of the job queue entry.|
 |alJobQueueIsRecurring|Specifies if the job queue is recurring. **True** indicates it's recurring. **False** indicates it's not recurring.|
 |alJobQueueObjectId|Specifies the ID of the object that the job queue entry runs.|
+|alJobQueueObjectName|Specifies the name of the object that the job queue entry runs. </br></br>This dimension was introduced in version 22.0.|
 |alJobQueueObjectType|Specifies the type of the object that the job queue entry runs, for example **Report** or **Codeunit**.|
-|alJobQueueStackTrace|Specifies the AL stack trace of the job queue entry. This dimension was introduced in version 20.5. |
+|alJobQueueObjectDescription|Specifies the description of the object that the job queue entry runs. </br></br>This dimension was introduced in version 22.0.|
+|alJobQueueStackTrace|Specifies the AL stack trace of the job queue entry. </br></br>This dimension was introduced in version 20.5. |
 |alJobQueueStatus|**Ready** indicates it's a non-recurring job queue entry or the first run of a recurring job queue entry that's ready to run. **In Process** indicates it's being run. **Error** indicates it encountered an error while running. **On Hold** indicates it's being queued. **Finished** indicates it's finished without error. **On Hold with Inactivity Timeout** indicates it's a recurring job query entry that's ready to run.|
 |alObjectId|**1351**, which is the ID of the system application codeunit that subscribes to the telemetry events.|
 |alObjectName|**Telemetry Subscribers**, which is the name of the system application codeunit that subscribes to the telemetry events.|
@@ -203,11 +195,8 @@ The following table explains custom dimensions that are common to all job queue 
 |extensionVersion|Specifies the version of the extension that contains the object run by the job queue entry.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19353.19391","Environment type":"Production","componentVersion":"17.0.19353.19391","Environment name":"Production","environmentType":"Production","environmentName":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","AadTenantId":"67209ede-2a69-4691-b243-512349eb5f66","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E24","alObjectId":"1351","extensionPublisher":"Microsoft","alObjectType":"CodeUnit","alObjectName":"Telemetry Subscribers","Extension version":"17.2.19367.19396","extensionVersion":"17.2.19367.19396","Extension App Id":"437dbf0e-84ff-417a-965d-ed2bb9650972","Extension name":"Base Application","extensionName":"Base Application","alJobQueueObjectType":"Codeunit","alDataClassification":"SystemMetadata","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","alJobQueueObjectId":"5339","alJobQueueStatus":"On Hold with Inactivity Timeout","alJobQueueId":"fe2b938c-60a9-45b7-b5e1-28afab72f336","alCategory":"AL JobQueueEntries","alJobQueueIsRecurring":"Yes"}
--->
 
-## Event IDs
+## Event Ids
 
 The following table describes the event IDs that are currently emitted.  
 
