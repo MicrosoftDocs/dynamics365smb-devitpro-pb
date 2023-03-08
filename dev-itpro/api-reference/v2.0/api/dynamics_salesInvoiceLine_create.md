@@ -4,7 +4,7 @@ description: Creates a sales invoice line object in Dynamics 365 Business Centra
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

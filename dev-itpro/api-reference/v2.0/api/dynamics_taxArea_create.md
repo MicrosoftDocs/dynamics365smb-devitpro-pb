@@ -4,7 +4,7 @@ description: Creates a tax area object in Dynamics for Financials.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
