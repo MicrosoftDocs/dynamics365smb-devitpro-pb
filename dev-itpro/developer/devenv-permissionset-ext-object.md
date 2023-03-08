@@ -23,6 +23,8 @@ For information about which permissions can be assigned to objects, see [Permiss
 
 If a permission set is extended through AL, that extension will make *additive* changes to the permission set. This means that an extension can provide *elevated privileges* to an otherwise limited set of permissions. Building permission sets that can be extended must be done carefully with this in mind.
 
+A good practice when creating an application with permission set extensions is to ensure that they only add permissions for objects which are part of the application. This is because an administrator may not realize, or expect, that installing a new application may also grant elevated privileges. This design pattern minimizes the possibility of the permission set extension impacting any functionality beyond the intended application. This keeps the permission changes predictable and targeted.
+
 ## Snippet support
 
 Typing the shortcut `tpermissionsetextension` will create the basic layout for a permission set extension object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
