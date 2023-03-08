@@ -13,8 +13,6 @@ ms.author: solsen
 
 # documentAttachment resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
@@ -53,7 +51,7 @@ Represents a document attachment in [!INCLUDE[prod_short](../../../includes/prod
 |attachmentContent|stream|The attachment's content.|
 |parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the document attachment. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice" or "Purchase Invoice".|
 |parentId|GUID|The ID of the parent entity. |
-|lineNumber|integer|The document attachment item line number.|
+|lineNumber|integer|The order of the specific line, which increments in 10000, for example: 10000, 20000, 30000.|
 |documentFlowSales|boolean||
 |documentFlowPurchase|boolean||
 |lastModifiedDateTime|datetime|The last datetime the document attachment was modified. Read-Only.|
@@ -77,7 +75,6 @@ Here is a JSON representation of the documentAttachment resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
 [GET documentAttachment](../api/dynamics_documentattachment_get.md)
