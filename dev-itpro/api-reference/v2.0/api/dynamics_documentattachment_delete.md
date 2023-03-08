@@ -11,8 +11,6 @@ ms.date: 03/08/2023
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete documentAttachments
 
 Deletes a document attachment from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -20,11 +18,11 @@ Deletes a document attachment from [!INCLUDE[prod_short](../../../includes/prod_
 ## HTTP request
 
 Replaces the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
 DELETE businesscentralPrefix/companies({id})/documentAttachments({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -46,11 +44,11 @@ If successful, this method returns ```204 No Content``` response code and delete
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different -->
+
 ```json
 DELETE https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.

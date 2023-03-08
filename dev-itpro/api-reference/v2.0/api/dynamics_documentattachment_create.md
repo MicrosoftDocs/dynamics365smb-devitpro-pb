@@ -11,8 +11,6 @@ ms.date: 03/08/2023
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create documentAttachments
 
 Creates a document attachment in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
@@ -20,11 +18,11 @@ Creates a document attachment in [!INCLUDE[prod_short](../../../includes/prod_sh
 ## HTTP request
 
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different or there might be more than one -->
+
 ```
 POST businesscentralPrefix/companies({id})/documentAttachments({id})
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## Request headers
 
 |Header|Value|
@@ -47,7 +45,7 @@ If successful, this method returns ```201 Created``` response code and a **docum
 **Request**
 
 Here is an example of the request.
-<!-- START>EDIT_IS_REQUIRED. There URL for accessing the endpoint might be different. Fill in the property values -->
+
 ```json
 POST https://{businesscentralPrefix}/api/v2.0/companies({id})/documentAttachments({id})
 Content-type: application/json
@@ -64,11 +62,11 @@ Content-type: application/json
     "lastModifiedDateTime" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 **Response**
 
 Here is an example of the response.
-<!-- START>EDIT_IS_REQUIRED. Fill in values for properties -->
+
 ```json
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -85,7 +83,7 @@ Content-type: application/json
     "lastModifiedDateTime" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
