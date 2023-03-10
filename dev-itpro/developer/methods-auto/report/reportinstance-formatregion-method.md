@@ -42,7 +42,31 @@ The current format region setting for the report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Example
+
+If you have reports that you want to print using a format that is aligned with the recepient rather than in your own working region, you can add a few lines of code in the report to handle this. In this example we will take the assumption that the format region will be aligned with the language in the current report run and that the report does not have native support for format region. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
+
+In reports that need the multiple document format functionality, you can insert the following AL code as the first lines in the `OnAfterGetRecord()` trigger on the data item referencing the **Customer** table (notice that that feature is not limited to the **Customer** table, other data sources provides similiar functionality.):
+
+```AL
+trigger OnAfterGetRecord()
+var
+    LanguageSelection: Record "Language Selection";
+    Language: Codeunit Language;
+begin
+    CurrReport.Language := Language.GetLanguageIdOrDefault("Language Code");
+
+    LanguageSelection.SetFilter("Language ID", format(CurrReport.Language));
+    if LanguageSelection.FindFirst() then
+        CurrReport.FormatRegion := LanguageSelection."Language Tag";
+end;
+```
+
 ## See Also
+
 [Report Data Type](report-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
+[Report Localization](../../devenv-report-localization.md)  
+[Report.Language](./reportinstance-language-method.md)  

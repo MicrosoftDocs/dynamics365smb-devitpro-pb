@@ -1,8 +1,8 @@
 ---
-title: "OnAfterDocumentReady Event"
-description: Describe the OnAfterDocumentReady Event in Business Central.
+title: "OnAfterIntermediateDocumentReady Event"
+description: Describe the OnAfterIntermediateDocumentReady Event in Business Central.
 ms.custom: na
-ms.date: 01/26/2022
+ms.date: 03/10/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,13 +11,13 @@ ms.service: "dynamics365-business-central"
 author: nhsejth
 ---
 
-# OnAfterDocumentReady Event
+# OnAfterIntermediateDocumentReady Event
 
-This article describes the syntax of the OnAfterDocumentReady event and the attributes of the report payload.
+This article describes the syntax of the OnAfterIntermediateDocumentReady event and the attributes of the report payload.
 
 ## Usage
 
-Use the OnAfterDocumentReady event to specify what happens when the user has generated a report artifact by stream or file, from code or a request page action. The `OnAfterDocumentReady` event is used to enable document patching scenarios in the application or to copy the artifact to a different location during testing.
+Use the `OnAfterIntermediateDocumentReady` event to specify what happens when the user has generated an intermediate report artifact by stream or file, from code or a request page action. This will typically be Xml or Word files where they are genereated in the specific process flows. The `OnAfterIntermediateDocumentReady` event is used to enable document patching scenarios in the application or to copy the artifact to a different location during testing.
 
 The event input is the report ID, a JSON collection with report runtime information and the generated document in an InStream. Use the `documenttype` JSON property to identify the data type stored in the `DocumentStream` parameter and act accordingly. The final result must be written to the `TargetStream` parameter and the parameter `Success` must be set to `true` if the modified stream is to be used in the platform. The content in the `TargetStream` will be discarded if the `Success` parameter is `false` upon return from the procedure.
 
@@ -29,13 +29,13 @@ Codeunit **44 ReportManagement**.
 
 ## Raised
 
-When the report runtime has generated an output artifact that can be persisted. This can occur when the application runs a SaveAs method, the user invokes one of the SendTo actions in the report request page or when the document is being printed using an extension printer or by using the web client print capability.
+When the report runtime has generated an interndiate output artifact that be be removed when the final artifact have be created. This can occur when the application runs a SaveAs method, the user invokes one of the SendTo actions in the report request page or when the document is being printed using an extension printer or by using the web client print capability.
 
 ## Syntax
 
 ```AL
-[IntegrationEvent(false, false)]
-local procedure OnAfterDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
+[EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterIntermediateDocumentReady', '', true, true)]
+local procedure OnAfterIntermediateDocumentReady(ObjectId: Integer; ObjectPayload: JsonObject; DocumentStream: InStream; var TargetStream: OutStream; var Success: Boolean)
 ```
 
 ## Parameters
