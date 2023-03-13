@@ -1,7 +1,7 @@
 ---
 title: Localizing the report data formatting and caption strings
 description: "Localizing report output with respect to captions and data format"
-author: NielsHenrikSejthen
+author: nhsejth
 ms.custom: na
 ms.date: 01/04/2023
 ms.reviewer: na
