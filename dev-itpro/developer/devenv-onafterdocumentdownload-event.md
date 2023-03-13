@@ -2,7 +2,7 @@
 title: "OnAfterDocumentDownload Event"
 description: Describe the OnAfterDocumentDownload Event in Business Central.
 ms.custom: na
-ms.date: 01/26/2022
+ms.date: 03/13/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Codeunit **44 ReportManagement**.
 
 ## Raised
 
-When the report runtime has generated an output artifact which is going to be downloaded to a UI client. This can occur when the user invokes one of the SendTo actions in the report request page or when the document is being printed using the client print capability.
+When the report runtime has generated an output artifact, which is going to be downloaded to a UI client. This can occur when the user invokes one of the SendTo actions in the report request page, or when the document is being printed using the client print capability.
 
 ## Syntax
 
@@ -89,11 +89,11 @@ begin
     if Success = true then
         exit;
 
-    // Empty stream, no actions possible on the stream so return immediatly
+    // Empty stream, no actions possible on the stream so return immediately
     if DocumentStream.Length < 1 then
         exit;
 
-    // Use a shared stream and reset the read pointer to beginning of stream.
+    // Use a shared stream and reset the read pointer to beginning of stream
     SharedDocumentStream := DocumentStream;
     if SharedDocumentStream.Position > 1 then
         SharedDocumentStream.ResetPosition();
@@ -140,7 +140,7 @@ end;
 <!-- [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)   -->
 <!-- [Developing Printer Extensions Overview](devenv-reports-printing.md)   -->
 <!-- [Creating a Printer Extension](devenv-reports-create-printer-extension.md)   -->
-[Events in AL](devenv-events-in-al.md)
-[Publishing Events](devenv-publishing-events.md)
-[Raising Events](devenv-raising-events.md)
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
 [Subscribing to Events](devenv-subscribing-to-events.md)
