@@ -17,11 +17,12 @@ This article describes the syntax of the OnAfterIntermediateDocumentReady event 
 
 ## Usage
 
-Use the `OnAfterIntermediateDocumentReady` event to specify what happens when the user has generated an intermediate report artifact by stream or file, from code or a request page action. This will typically be Xml or Word files where they are genereated in the specific process flows. The `OnAfterIntermediateDocumentReady` event is used to enable document patching scenarios in the application or to copy the artifact to a different location during testing.
+Use the `OnAfterIntermediateDocumentReady` event to specify what happens when the user has generated an intermediate report artifact by stream or file, from code or a request page action. This will typically be Xml or Word files where they are genereated in the specific process flows. The `OnAfterIntermediateDocumentReady` event is used to enable document patching scenarios in the application, or to copy the artifact to a different location during testing.
 
 The event input is the report ID, a JSON collection with report runtime information and the generated document in an InStream. Use the `documenttype` JSON property to identify the data type stored in the `DocumentStream` parameter and act accordingly. The final result must be written to the `TargetStream` parameter and the parameter `Success` must be set to `true` if the modified stream is to be used in the platform. The content in the `TargetStream` will be discarded if the `Success` parameter is `false` upon return from the procedure.
 
-Notice that it's not allowed to change the content type.
+> [!NOTE]  
+> Changing the content type isn't allowed.
 
 ## Publisher
 
@@ -29,7 +30,7 @@ Codeunit **44 ReportManagement**.
 
 ## Raised
 
-When the report runtime has generated an interndiate output artifact that be be removed when the final artifact have be created. This can occur when the application runs a SaveAs method, the user invokes one of the SendTo actions in the report request page or when the document is being printed using an extension printer or by using the web client print capability.
+When the report runtime has generated an intermediate output artifact that'll be removed when the final artifact have be created. This can occur when the application runs a SaveAs method, the user invokes one of the SendTo actions in the report request page, or when the document is being printed using an extension printer or by using the web client print capability.
 
 ## Syntax
 
