@@ -67,6 +67,7 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
 ### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 ### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 ### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
