@@ -2,7 +2,7 @@
 title: "OnCustomDocumentMergerEx Event"
 description: Describe the OnCustomDocumentMergerEx Event in Business Central.
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 03/13/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -121,11 +121,11 @@ The simplest possible custom document render can be implemented as shown in the 
 
         // Setup shared streams
 
-        // Empty stream, no actions possible on the stream so return immediatly
+        // Empty stream, no actions possible on the stream so return immediately
         if XmlData.Length < 1 then
             exit;
 
-        // Use a shared stream and reset the read pointer to beginning of stream.
+        // Use a shared stream and reset the read pointer to beginning of stream
         SharedXmlData := XmlData;
         if SharedXmlData.Position > 1 then
             SharedXmlData.ResetPosition();
@@ -136,14 +136,14 @@ The simplest possible custom document render can be implemented as shown in the 
 
         Init();
 
-        // Sample code to persist the json object to disk
+        // Sample code to persist the JSON object to disk
         ObjectPayload.WriteTo(JsonText);
         JsonFile.TextMode := true;
         JsonFile.Create(TempFolderPath + 'OnCustomDocumentMergerEx.json', TextEncoding::UTF8);
         JsonFile.Write(JsonText);
         JsonFile.Close();
 
-        // Get report options from the json object
+        // Get report options from the JSON object
         ObjectPayload.Get('objectname', ObjectName);
         ObjectPayload.Get('documenttype', DocumentType);
         ObjectPayload.Get('layoutmimetype', Token);
@@ -158,7 +158,7 @@ The simplest possible custom document render can be implemented as shown in the 
         DocumentTypeParts := DocumentType.AsValue().AsText().Split('/');
         
         // Notice that the Extension string below have to be remapped to a standard file extension
-        // based on the document mimetype.
+        // based on the document mimetype
         Extension := DocumentTypeParts.Get(DocumentTypeParts.Count);
 
         TempBlob.CreateOutStream(DataOutStream);
