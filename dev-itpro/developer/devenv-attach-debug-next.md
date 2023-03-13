@@ -28,8 +28,8 @@ You can activate the attach functionality by creating a new configuration in the
 
 In the attach configuration, the `breakOnNext` setting specifies the next client to break on when the debugging session starts and allows only one option. The available options are: `WebServiceClient`, `WebClient`, and `Background`. The example below illustrates a configuration for a local server.
 
->[!NOTE]
-> The debugger is able to connect to background sessions not background tasks.
+> [!NOTE]  
+> The debugger is able to connect to *background sessions*, and not *background tasks*.
 
 ```json
 ...
