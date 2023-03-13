@@ -2,7 +2,7 @@
 title: "OnAfterDocumentReady Event"
 description: Describe the OnAfterDocumentReady Event in Business Central.
 ms.custom: na
-ms.date: 01/26/2022
+ms.date: 03/13/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -91,11 +91,11 @@ begin
     if Success = true then
         exit;
 
-    // Empty stream, no actions possible on the stream so return immediatly
+    // Empty stream, no actions possible on the stream so return immediately
     if DocumentStream.Length < 1 then
         exit;
 
-    // Use a shared stream and reset the read pointer to beginning of stream.
+    // Use a shared stream and reset the read pointer to beginning of stream
     SharedDocumentStream := DocumentStream;
     if SharedDocumentStream.Position > 1 then
         SharedDocumentStream.ResetPosition();
