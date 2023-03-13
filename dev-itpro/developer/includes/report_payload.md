@@ -115,22 +115,22 @@ Specifies the version of the report payload. Currently, the only supported versi
 
 Specifies whether to use duplex (2-sided) printing. `true` specifies duplex printing; otherwise `false`.
 
-> [!NOTE]
+> [!NOTE]  
 >  `duplex` is currently not used and ignored at runtime.
 
 #### *color*
 
-Specifies whether color printing is set.  `true` specifies color printing; otherwise `false`.
+Specifies whether color printing is set. `true` specifies color printing; otherwise `false`.
 
-> [!NOTE]
+> [!NOTE]  
 > `color` is currently not used and ignored at runtime.
 
 #### *defaultcopies*
 
 Specifies the number of copies to print by default. The default is `1`.
 
-> [!NOTE]
->  `defaultcopies` is currently not used and ignored at runtime.
+> [!NOTE]  
+> `defaultcopies` is currently not used and ignored at runtime.
 
 #### *filterviews*
 
@@ -219,8 +219,8 @@ Specifies the lauout mimetype for the currently selected layout. The built-in la
 
 #### *layoutapplicationid*
 
-Specifies the id of the application that provides the selected layout.
+Specifies the ID of the application that provides the selected layout.
 
 #### *reportrunid*
 
-Specifies a unique id of type `Guid` that identifies the current report invocation. This value can be used to correlate calls to report event that support `json` payloads. 
+Specifies a unique ID of type `Guid` that identifies the current report invocation. This value can be used to correlate calls to report event that support `json` payloads. 
