@@ -129,7 +129,7 @@
 ## Understand Business Central online
 ### [Understanding the infrastructure ](administration/tenant-environment-topology.md)
 ### [Get started as a reseller of Business Central online](administration/get-started-online.md)
-### [Country/regional availability and supported translations](compliance/apptest-countries-and-translations.md)
+### [Country/region availability and supported translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated administrator access to Business Central online](administration/delegated-admin.md)
 ### [Trials and subscriptions](administration/trials-subscriptions.md)
 ### [Major updates and minor updates](administration/update-rollout-timeline.md)
