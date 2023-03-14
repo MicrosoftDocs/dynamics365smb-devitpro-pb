@@ -18,6 +18,8 @@ Would you like to know what has changed in update 21.5? Below you'll find an ove
 
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5024403) and the downloads [here](https://aka.ms/BCDownload).
 
+## Feature changes  
+- [Copying the SystemID and data audit fields using CopyRows](/dynamics365/business-central/dev-itpro/developer/devenv-data-transfer#copy-rows)
 
 ## Localization updates
 
