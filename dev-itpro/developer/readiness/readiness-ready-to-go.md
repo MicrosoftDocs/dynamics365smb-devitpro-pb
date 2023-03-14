@@ -16,7 +16,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Hot topics right now
 - Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
 - Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
-- Introducing Microsoft Dynamics 365 Copilot, bringing next-generation AI to every line of business: [aka.ms/BCAI](https://aka.ms/BCAI)
+- Introducing Microsoft Dynamics 365 Copilot, AI-powered assistance to get more done with less effort, also in Business Central: [aka.ms/BCAI](https://aka.ms/BCAI)
 
 ## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
