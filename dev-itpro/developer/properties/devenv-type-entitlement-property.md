@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # Type (Entitlement) Property
 > **Version**: _Available or changed with runtime version 7.0._
 
-The type of entitlement. When a user logs into Business Central, it is checked if the user is assigned the given AAD service plan, the given AAD role etc., and if that is the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
+The type of entitlement. When a user logs into Business Central, it's checked if the user is assigned the given Azure AD service plan, the given Azure AD role etc., and if that's the case, the user will be entitled to use the objects covered by this entitlement. The same applies if an application logs into Business Central.
 
 ## Applies to
 -   Entitlement
@@ -36,6 +36,11 @@ The type of entitlement. When a user logs into Business Central, it is checked i
 |**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied.|
 
 ## Remarks
+
+> [!NOTE]  
+> With [!INCLUDE [prod_short](../../includes/prod_short.md)] 2023 release wave 1, the entitlement type `Unlicensed` is introduced. This type is used for scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans. 
+> 
+> The `Unlicensed` type of entitlement will only be applied to users who don't have an offer defined in the app’s entitlements. It's then possible to test for this unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new AppSource transactability model.
 
 > [!NOTE]  
 > In the current version of [!INCLUDE [prod_short](../../includes/prod_short.md)] entitlements can only be included with Microsoft apps (enforced by the AppSource cop rules and the technical validation checks that we run for the apps submitted to AppSource). These objects will become available for the ISV apps when we introduce ability to monetize AppSource apps in one of our future releases. For more information, see [Entitlement Object](../devenv-entitlement-object.md).
