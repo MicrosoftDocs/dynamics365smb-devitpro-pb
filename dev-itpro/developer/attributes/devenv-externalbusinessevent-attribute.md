@@ -49,6 +49,11 @@ Specifies a description of the external business event.
 Specifies the category of the event.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The `ExternalBusinessEvent` attribute can be set on methods that are published as external business events.
+
 ## See Also  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
