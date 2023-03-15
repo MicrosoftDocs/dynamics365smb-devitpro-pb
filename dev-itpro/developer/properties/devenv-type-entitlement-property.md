@@ -3,7 +3,7 @@ title: "Type (Entitlement) Property"
 description: "The type of entitlement."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2021
+ms.date: 03/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,12 +26,14 @@ The type of entitlement. When a user logs into Business Central, it is checked i
 |Value|Description|
 |-----------|---------------------------------------|
 |**PerUserServicePlan**|The entitlement is associated with an AAD service plan which is licensed to specific users.|
+|**PerUserOfferPlan**|The entitlement is associated with an offer which is licensed to specific users.|
 |**FlatRateServicePlan**|The entitlement is associated with an AAD service plan which is licensed to an AAD tenant.|
 |**Role**|The entitlement is associated with an AAD role.|
 |**ConcurrentUserServicePlan**|The entitlement is associated with a named AAD group.|
 |**Application**|The entitlement is associated with an AAD application.|
 |**ApplicationScope**|The entitlement is associated with an AAD application scope.|
 |**Implicit**|Everyone has this license.|
+|**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
