@@ -30,3 +30,4 @@ Enabling this rule allows to enforce that when suppressing diagnostics using the
 [CodeCop Analyzer](codecop.md)  
 [Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
+[Directives in AL](../directives/devenv-directives-in-al.md)
