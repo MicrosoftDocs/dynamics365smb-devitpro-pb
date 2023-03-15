@@ -10,9 +10,9 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
-[//]: # (START>DO_NOT_EDIT)
-[//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
-[//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
+
+<!-- this topic is manually created, parent node is devenv-type-property.md -->
+
 # Type (Entitlement) Property
 > **Version**: _Available or changed with runtime version 7.0._
 
@@ -34,8 +34,6 @@ The type of entitlement. When a user logs into Business Central, it is checked i
 |**ApplicationScope**|The entitlement is associated with an AAD application scope.|
 |**Implicit**|Everyone has this license.|
 |**Unlicensed**|Entitlement applied when no other entitlements from an app has been applied.|
-
-[//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
 
