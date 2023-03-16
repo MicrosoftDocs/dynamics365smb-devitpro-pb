@@ -18,6 +18,13 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2024 release wave 1 (version 24.0)
 
+### <a name="odata_delta"></a>Support for Delta Links With APIs (removed)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result. This feature was introduced in Business Central to support the Microsoft Invoicing product, which has not been available for years. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server.|
+
+
 ### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
 
 |Removed or Replaced? |Why?|
@@ -38,6 +45,13 @@ This article describes the features that are up for removal or that have been re
 
 
 ## Changes in 2023 release wave 2 (version 23.0)
+
+### <a name="odata_delta"></a>Support for Delta Links With APIs (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result. This feature was introduced in Business Central to support the Microsoft Invoicing product, which has not been available for years. In version 23, the ChangeTrackingAllowed property on API pages/queries will be marked as deprecated. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server.|
+
 
 ### <a name="databasehints"></a>Server settings for database hints FORCEORDER and LOOPJOIN (warning)
 
