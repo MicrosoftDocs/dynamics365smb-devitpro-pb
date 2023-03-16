@@ -3,7 +3,7 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 09/22/2022
+ms.date: 03/16/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -42,7 +42,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max items in object graph|The maximum number of objects to serialize or deserialize.|  10,000|
-|Max file size|The maximum size of files that can be uploaded to or downloaded from the service.|350 MB|
+|Max file size|The maximum size of files that can be uploaded to or downloaded from the service. <br> If you experience errors when handling files, there are two settings to check: <br> - The Dynamics 365 Business Central service tier setting (the ClientServicesMaxUploadSize setting in the CustomSettings.config file)<br> - The IIS setting; in IIS Manager, on the Dynamics 365 Business Central instance, select **Request Filtering**, then select **Edit Feature Settings** in the right pane, and in the **Edit Request Filtering Settings** window, modify the **Maximum allowed content length (Bytes)** setting, which has a default value of 30 MB. |350 MB|
 |Maximum stream read size|The maximum number of bytes that can be read from a stream (InStream object) in a single AL read operation. Examples include READ or InStream.READTEXT method calls. This setting pertains to UTF-8 and UTF-16 text encoding; not MS-DOS encoding. |1,000,000 bytes|
 
 <!--
