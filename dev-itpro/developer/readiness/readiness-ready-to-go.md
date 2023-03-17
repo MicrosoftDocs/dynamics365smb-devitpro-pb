@@ -14,10 +14,9 @@ ms.author: solsen
 Are you a Microsoft partner working with Business Central and looking for relevant resources? Find everything you need in this article and remember to bookmark [aka.ms/BCAll](https://aka.ms/BCAll).
 
 ## Hot topics right now
-- Watch the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
+- Register for the Business Central Launch Event on [aka.ms/BCLE](https://aka.ms/BCLE)
 - Access Business Central with your Microsoft 365 license. Read about it [here](/dynamics365-release-plan/2022wave2/smb/dynamics365-business-central/access-business-central-365-license)
-- New CSP customer promotion for Business Application. Check out the new promo for new and existing legacy customers [here](https://aka.ms/CSPpromoNCE)
-- New '_Do more with less_' page on Partner Portal, which features partner resources to differentiate your practice, support migrations, drive customer conversations and much more. Find it [here](https://powerplatformpartners.transform.microsoft.com/resources/domorecampaign)
+- Introducing Microsoft Dynamics 365 Copilot, AI-powered assistance to get more done with less effort, also in Business Central: [aka.ms/BCAI](https://aka.ms/BCAI)
 
 ## Latest release and updates  
 - Business Central release plan: [aka.ms/BCReleasePlan](https://aka.ms/BCReleasePlan) 
@@ -91,6 +90,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 - Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
+- Troubleshoot issues with Business Central: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 
 ## Developing apps for AppSource
 - AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
@@ -123,8 +123,18 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [Business Central on-premises licensing guide]()
 - [Business Central on-premises licensing FAQ]()
 
-## Events
+## Events for partners
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
-- Directions NA: [directionsna.com](https://directionsna.com) 
-- Directions EMEA and Directions Asia: [directions4partners.com](https://directions4partners.com)  
-- Business Central TechDays: [bctechdays.com](https://bctechdays.com)
+- [Directions NA](https://directionsna.com) 
+- [Directions EMEA](https://directions4partners.com/events/directions-emea-2023/)  
+- [Directions Asia](https://directions4partners.com/events/directions-asia-2023/) 
+- [Business Central TechDays](https://bctechdays.com)
+- [Days of Knowledge (Nordic)](https://directions4partners.com/days-of-knowledge/nordic-2023/)
+- [Days of Knowledge (Central)](https://directions4partners.com/days-of-knowledge/central-2023/) 
+- [Days of Knowledge (UK)](https://directions4partners.com/days-of-knowledge/uk-2023/)
+
+## Events for customers
+- Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
+- [DynamicsMinds](https://www.dynamicsminds.com/)
+- [UG Summit](https://www.summitna.com/)
+- [DynamicsCon](https://dynamicscon.com/)

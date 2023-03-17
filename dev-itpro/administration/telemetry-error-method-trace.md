@@ -35,7 +35,8 @@ Occurs when the Error method is called and displays a dialog to the user.
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**RT0030**|
-|alErrorMessage|The error string defined in error method and displayed in the client.<br><br> If the error message wasn't a text constant, you get the message `Use ERROR with a text constant to improve telemetry details` instead of the actual message.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
+|alErrorMessage|The error string defined in error method and displayed in the client in the users language.<br><br> If the error message wasn't a text constant, you get the message `Use ERROR with a text constant to improve telemetry details` instead of the actual message.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
+|alEnglishLanguageDiagnosticsMessage|The error string defined in error method. This dimension always shows the error message in English. This dimension was added in version 21.4.  | 
 |alObjectId|Specifies the ID of the AL object.|
 |alObjectType|Specifies the type of the AL object. |
 |alStackTrace|Specifies the stack trace in AL.|

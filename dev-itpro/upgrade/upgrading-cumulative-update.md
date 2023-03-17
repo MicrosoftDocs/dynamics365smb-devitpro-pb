@@ -2,7 +2,7 @@
 title: Install a cumulative update
 description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 02/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

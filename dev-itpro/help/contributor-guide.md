@@ -51,7 +51,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 
 - archive
 
-    In the source repo only, this folder contains files that are not published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder does not exist in the translation repos.
+    In the source repo only, this folder contains files that aren't published but kept for backwards compatibility use internally at Microsoft. You can ignore this folder. The folder doesn't exist in the translation repos.
 - business-central
 
     Contains Markdown files with content that is relevant for business users, administrators, and consultants of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
@@ -62,7 +62,7 @@ Microsoft's GitHub *dynamics365smb-docs* repos for [!INCLUDE [prod_short](../dev
 
     Contains three Markdown files that you can use as templates for your content. The templates define required metadata and a recommended structure of the content.
 
-The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the learn.microsoft.com site and by GitHub. They are not relevant for extending or customizing the content.
+The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the learn.microsoft.com site and by GitHub. They aren't relevant for extending or customizing the content.
 
 > [!TIP]
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
@@ -71,11 +71,11 @@ If you want to contribute to the developer and administration content, clone or 
 
 ### Get updates from Microsoft
 
-Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, *MicrosoftDocs/dynamics365smb-docs*, is updated weekly. When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. The Help for GitHub offers [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
+Microsoft makes frequent changes to the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content, and those changes show up in the public GitHub repos. The base repo, *MicrosoftDocs/dynamics365smb-docs*, is updated weekly. When you decide it's time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. The Help for GitHub offers [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, just use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
 
 The following script was developed by a Danish partner to perform the following tasks:
 
-- Get the Microsoft source for a number of languages
+- Get the Microsoft source for many languages
 - Copy media files to the localization repos
 - Build HTML files
 
@@ -104,15 +104,15 @@ foreach ($language in $languages)
 
 More information is available in the [Build HTML files](#build-html-files) section.  
 
-Because the Microsoft repos are public, you do not need a valid GitHub account in order to get the content. However, we recommend that, at a minimum, your organization has a system account with access to GitHub.  
+Because the Microsoft repos are public, you don't need a valid GitHub account in order to get the content. However, we recommend that, at a minimum, your organization has a system account with access to GitHub.  
 
 ### Get started with GitHub
 
-To join Microsoft in the world of GitHub and Markdown, there are terminology and tools to get used to. The following list outlines the main steps, but you can find additional content, tools, and ideas in the [GitHub documentation](https://help.github.com/en/github) and other forums.
+To join Microsoft in the world of GitHub and Markdown, there are terminology and tools to get used to. The following list outlines the main steps, but you can find more content, tools, and ideas in the [GitHub documentation](https://help.github.com/en/github) and other forums.
 
 1. Fork the right repo.
 
-    You cannot work directly in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
+    You can't work directly in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo. The first thing you need to do is create a fork of the repo under your GitHub account. A fork is a copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo.  
 
     Alternatively, you can *clone* the Microsoft repo. This is useful if you don't intend to customize Microsoft's content, for example. But in many cases, *forking* the repo is more preferable.  
 
@@ -129,7 +129,7 @@ To join Microsoft in the world of GitHub and Markdown, there are terminology and
 
     The help content is stored in the *business-central* folder of the repo. Articles use a syntax for formatting text called [MarkDig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with Markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
-    If you want to work locally, you can edit using any text editor. Just save the file as a .md type. Here are two good tools that provide you with some nice features, including a preview of how the content will be rendered in HTML:
+    If you want to work locally, you can edit using any text editor. Just save the file as an .md type. Here are two good tools that provide you with some nice features, including a preview of how the content will be rendered in HTML:
 
     - [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -142,7 +142,7 @@ Internally at Microsoft, some authors use Code, others use Atom, and for light-w
 
 ## Get the content without a GitHub account
 
-If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media, you can get the latest by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use a tool that can generate HTML files, create your own scripts, or follow this process to fork a repo manually.  
+If you don't want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, if you want content that is newer than the content on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] installation media, you can get the latest by downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use a tool that can generate HTML files, create your own scripts, or follow this process to fork a repo manually.  
 
 ### To get files without a GitHub account
 
@@ -158,7 +158,7 @@ If you do not want to collaborate with Microsoft on the content, you can get the
 
 For publishing to your own website, use any third-party tool that can clone a repo and generate the corresponding HTML files.  
 
-Alternatively, you can create your own tooling and processes around [DocFX](https://dotnet.github.io/docfx/), which is an open-source tool for converting Markdown files. This section provides some guidance on how you can use DocFX to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find additional tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
+Alternatively, you can create your own tooling and processes around [DocFX](https://dotnet.github.io/docfx/), which is an open-source tool for converting Markdown files. This section provides some guidance on how you can use DocFX to publish HTML files from your fork of one of the Microsoft repos *without* using the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool. You can find more tips in the [Custom Help Toolkit](custom-help-toolkit.md) article.  
 
 > [!TIP]
 > You can also use DocFX to generate content for the legacy Dynamics NAV Help Server. In that case, use the NAV docfx.json file from [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs).
@@ -183,7 +183,7 @@ Alternatively, you can create your own tooling and processes around [DocFX](http
 
     Learn more at [Properties for build](https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#32-properties-for-build) section in the DocFx user manual.
 
-    The docfx.json files in the Microsoft repos have additional settings for the learn.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you have configured it for your needs.  
+    The docfx.json files in the Microsoft repos have additional settings for the learn.microsoft.com site. If you build the HTML files based on the docfx.json in the Microsoft repos, make sure that you've configured it for your needs.  
 
     For example, in the globalMetadata section, set the ROBOTS property. [!INCLUDE [ua-robots](../includes/ua-robots.md)]
 
@@ -202,7 +202,7 @@ The files are generated as .html files and stored in the output location that is
 > [!IMPORTANT]
 > [DocFx](https://dotnet.github.io/docfx/) is no longer used internally in Microsoft and does not support YAML and other changes that we're making to our content. Depending on the website that the HTML files will be deployed to, you might not be able to use the table of contents file (TOC.html) that is generated in this process. That file is structured based on the configuration of the [https://learn.microsoft.com](https://learn.microsoft.com) site. If you use the legacy Dynamics NAV Help Server, then you must use the ToC.xml file instead.
 
-The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that are not publicly available. The `.openpublishing.redirection.json` file lists files that were published to the learn.microsoft.com site but have been deprecated later. As part of standard website practices, the learn.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
+The root of the MicrosoftDocs repos contain files that are related to internal Microsoft processes, such as `.openpublishing.build.ps1`. These scripts are used to validate and preview content, but they rely on internal Microsoft resources that aren't publicly available. The `.openpublishing.redirection.json` file lists files that were published to the learn.microsoft.com site but have been deprecated later. As part of standard website practices, the learn.microsoft.com site uses redirection to avoid broken links when a page is deleted, and the `.openpublishing.redirection.json` file provides the mapping for redirection.  
 
 For inspiration for how to build your own help website, go to [How-to: Customize DFM Engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html) in the DocFx user manual and the [Azure App Service](/azure/app-service/) documentation.
 
@@ -216,21 +216,21 @@ Alternatively, you can add a post-processing step to the script that you use to 
 
 ## Known issues with Microsoft's content
 
-Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It is not intended to be customized directly but to be supplemented by articles on your local website. If you reuse Microsoft's content, you may experience a number of known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
+Microsoft's content in the various GitHub repos is optimized for the learn.microsoft.com site and the tools that are used for this site. It isn't intended to be customized directly but to be supplemented by articles on your local website. If you reuse Microsoft's content, you may experience many known issues, depending on how you publish your content. This section describes recommended steps to work around these issues.  
 
-### Docs are not available for a specific version
+### Docs aren't available for a specific version
 
-Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then please check the following sections for suggested workarounds.  
+Microsoft's public GitHub repos reflect the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. If you want to deploy help for an earlier version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises, then you can use the HTML files on the installation media. If you find that that particular version is missing content, then check the following sections for suggested workarounds.  
 
 ### Broken links
 
-If you deploy Microsoft's content to a website, your tools or your users will report that some links do not work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the learn.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, you will not have the same redirection.  
+If you deploy Microsoft's content to a website, your tools or your users will report that some links don't work. The links result in a 404 error or similar. These errors are caused by Microsoft having deleted the target files due to rework of the content. On the learn.microsoft.com site, we have tools that automatically handle links to deleted files through redirection. But if you deploy Microsoft's content to your own website, you won't have the same redirection.  
 
 We run periodic tests to catch these errors, but if you do see an error that is caused by a file not existing anymore, check the `.openpublishing.redirection.json` file in the root of the [source repo](https://github.com/MicrosoftDocs/dynamics365smb-docs). This file is used by the learn.microsoft.com site to manage redirection when a file is deprecated. For example, if you get an error that *"finance-how-to-set-up-sepa-direct-debit.md does not exist"*, then you can see in the `.openpublishing.redirection.json` file that the article has been deprecated and replaced by *finance-collect-payments-with-sepa-direct-debit.md*. You can replace the link in the file that is looking for *finance-how-to-set-up-sepa-direct-debit.md* to link to *finance-collect-payments-with-sepa-direct-debit.md* instead.  
 
 ### ToC.xml for Help Server is different from the TOC.md file
 
-Microsoft does not currently maintain the ToC.xml file and does not add new features to it. While the Help Server component is still supported, [it was deprecated in 2021 release wave 1](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-). As a result, it contains links that are broken, as described in the [Broken links](#broken-links) section.  
+Microsoft doesn't currently maintain the ToC.xml file and doesn't add new features to it. While the Help Server component is still supported, [it was deprecated in 2021 release wave 1](/dynamics365-release-plan/2020wave2/smb/dynamics365-business-central/deprecation-legacy-dynamics-nav-help-server-component-). As a result, it contains links that are broken, as described in the [Broken links](#broken-links) section.  
 
 ## Translate the content
 
@@ -243,7 +243,7 @@ To translate content for either [!INCLUDE [prod_short](../developer/includes/pro
 
 ## Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There is a lot of good advice and best practices published in the [Microsoft Docs contributor guide](/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides for [!INCLUDE [prod_short](../includes/prod_short.md)]. There's good advice and best practices published in the [Microsoft Docs contributor guide](/contribute/). But this section provides information about how to apply that advice to the [!INCLUDE [prod_short](../includes/prod_short.md)] content.
 
 We have two public GitHub repos that you can contribute to:
 
@@ -268,7 +268,7 @@ If you want to suggest a minor (or major) change to an existing article, follow 
 
     > [!NOTE]
     > If you're not already signed in with a GitHub account, you'll be prompted to sign in or create a new account. You cannot contribute to the [!INCLUDE [prod_short](../includes/prod_short.md)] content without a GitHub account.
-3. In the top right corner of the Markdown file, choose the pencil icon. Depending on who you are, you'll be taken to a fork of Microsoft's repo, or you'll be able to work in a branch in Microsoft's repo.
+3. In the top right corner of the Markdown file, choose the pencil icon. Depending on who you are, you'll be taken to a fork of Microsoft's repo, or you'll be able to work in a branch at Microsoft's repo.
 4. Make the relevant changes (and remember to save the changes!).
 5. Submit a *pull request* to the source repo.
 
@@ -282,7 +282,7 @@ Learn more at [Quick edits to existing documents](/contribute/#quick-edits-to-ex
 
 If you're going to contribute at a greater scale, for example as part of a community project that adds code examples to a bunch of technical walkthroughs, you'll probably prefer to work locally on your device, based on a clone of your fork. Go to [Install content authoring tools](/contribute/get-started-setup-tools) in the Microsoft Docs Contributor Guide for recommended tools and processes. The Microsoft team typically follows that workflow.  
 
-To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, do the following:
+To create a pull request to the *MicrosoftDocs/dynamics365smb-docs* repo by using GitHub Desktop, perform the following steps:
 
 1. Commit the changes to your fork that you want to include in the pull request.
 2. Choose **Sync** to push the changes up to your repo on GitHub.
