@@ -28,9 +28,11 @@ The `Period End` field returns the closing date at the end of the period. For mo
 
 You can apply filters to the `Period Type`, `Period Start`, and `Period End` fields to easily get a subset or range of days, weeks, months, quarters, or years to use in your pages or reports.
 
-The date virtual table is most frequently used to provide a range of dates; the **Receivables- Payables** page is a typical example.
+The date virtual table is most frequently used to provide a range of dates; the **Receivables-Payables** page in [!INCLUDE [prod_short](../includes/prod_short.md)] is a typical example.
 
 You must create a list type page to access the Date virtual table. For more information, see [Page object](devenv-page-object.md).
 
 
 ## See also
+
+[Virtual tables](devenv-virtual-tables.md)
