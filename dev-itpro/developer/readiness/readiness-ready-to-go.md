@@ -90,7 +90,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Ask your questions related to app development in the App Development group on Yammer: [aka.ms/BCYammer](https://aka.ms/BCYammer) 
 - Get the latest preview version and give feedback: [aka.ms/Collaborate](https://aka.ms/Collaborate) (learn how you join relevant engagements [here](/dynamics365/business-central/dev-itpro/developer/readiness/get-started#step-4-getting-access-to-preview-bits))
 - Build solutions that link to Business Central mobile app: [aka.ms/BCProtocol](https://aka.ms/BCProtocol)
-- Troubleshoot issues with Business Central: [aka.ms/BCTroubleshoot](http://aka.ms/bctroubleshoot)
+- Troubleshoot issues with Business Central: [aka.ms/BCTroubleshoot](https://aka.ms/bctroubleshoot)
 
 ## Developing apps for AppSource
 - AppSource marketing checklist: [aka.ms/AppSourceGo](https://aka.ms/AppSourceGo)
