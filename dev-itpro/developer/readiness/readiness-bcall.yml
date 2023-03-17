@@ -48,6 +48,13 @@ landingContent:
             url: https://aka.ms/BCIdeas
           - text: aka.ms/BCNews
             url: https://aka.ms/BCNews
+
+    - title: AI innovation and Copilot
+      linkLists:
+      - linkListType: overview
+        links:
+          - text: aka.ms/BCAI
+            url: https://aka.ms/BCAI
       
   - title: Partner readiness and go to market
     linkLists:
@@ -223,7 +230,7 @@ landingContent:
           - text: aka.ms/BCDataSync
             url: https://aka.ms/BCDataSync
 
-  - title: Security, privacy, and compliance 
+  - title: Security and support 
     linkLists:
       - linkListType: overview
         links:
@@ -231,14 +238,11 @@ landingContent:
             url: https://aka.ms/BCSecurity
           - text: aka.ms/BCAppCompliance
             url: https://aka.ms/BCAppCompliance
-
-  - title: Support and FAQ
-    linkLists:
-      - linkListType: overview
-        links:
           - text: aka.ms/BCSupport
             url: https://aka.ms/BCSupport
           - text: aka.ms/BCFAQ
             url: https://aka.ms/Bcfaq
           - text: aka.ms/BCTroubleshoot
             url: https://aka.ms/Bctroubleshoot
+
+
