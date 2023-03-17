@@ -35,4 +35,5 @@ You must create a list type page to access the Date virtual table. For more info
 
 ## See also
 
-[Virtual tables](devenv-virtual-tables.md)
+[Virtual tables](devenv-virtual-tables.md)  
+[Integer virtual table](devenv-integer-virtual-table.md)

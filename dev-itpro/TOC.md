@@ -616,6 +616,8 @@
 ##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
 ##### [Virtual tables](developer/devenv-virtual-tables.md)
+###### [Date virtual table](developer/devenv-date-virtual-table.md)
+###### [Integer virtual table](developer/devenv-integer-virtual-table.md)
 ##### [Retaining table data after publishing](developer/devenv-retaining-data-after-publishing.md)
 ##### [Enabling sales tables for extension eevelopment](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ##### [Creating filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
