@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ms.custom: bap-template
 ---
 
@@ -22,7 +22,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result. This feature was introduced in Business Central to support the Microsoft Invoicing product, which has not been available for years. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server.|
+|Removed | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result. This feature was introduced in Business Central (online version only) to support the Microsoft Invoicing product, which has not been available for years. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server. Since the delta links feature was first introduced, the webhooks functionality in Business Central has been added and improved, making it the preferred approach to change tracking. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).|
 
 
 ### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
@@ -50,7 +50,7 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result. This feature was introduced in Business Central to support the Microsoft Invoicing product, which has not been available for years. In version 23, the ChangeTrackingAllowed property on API pages/queries will be marked as deprecated. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server.|
+|Removed | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result. This feature was introduced in Business Central (online version only) to support the Microsoft Invoicing product, which has not been available for years. In version 23, the ChangeTrackingAllowed property on API pages/queries will be marked as deprecated. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md). |
 
 
 ### <a name="databasehints"></a>Server settings for database hints FORCEORDER and LOOPJOIN (warning)
