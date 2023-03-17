@@ -552,7 +552,7 @@
 ##### Collections
 ###### [Array](developer/methods/devenv-array-methods.md)
 ###### [Dictionary](developer/methods-auto/dictionary/dictionary-data-type.md)
-###### [list](developer/methods-auto/list/list-data-type.md)
+###### [List](developer/methods-auto/list/list-data-type.md)
 
 ##### Enumerations and options
 ###### [Enum](developer/devenv-extensible-enums.md)
