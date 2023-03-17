@@ -48,13 +48,13 @@ landingContent:
             url: https://aka.ms/BCIdeas
           - text: aka.ms/BCNews
             url: https://aka.ms/BCNews
-
-    - title: AI innovation and Copilot
-      linkLists:
-      - linkListType: overview
-        links:
-          - text: aka.ms/BCAI
-            url: https://aka.ms/BCAI
+ 
+  - title: AI innovation and Copilot
+    linkLists:
+    - linkListType: overview
+      links:
+        - text: aka.ms/BCAI
+          url: https://aka.ms/BCAI
       
   - title: Partner readiness and go to market
     linkLists:
