@@ -67,6 +67,7 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
 ### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 ### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 ### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
@@ -128,7 +129,7 @@
 ## Understand Business Central online
 ### [Understanding the infrastructure ](administration/tenant-environment-topology.md)
 ### [Get started as a reseller of Business Central online](administration/get-started-online.md)
-### [Country/regional availability and supported translations](compliance/apptest-countries-and-translations.md)
+### [Country/region availability and supported translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated administrator access to Business Central online](administration/delegated-admin.md)
 ### [Trials and subscriptions](administration/trials-subscriptions.md)
 ### [Major updates and minor updates](administration/update-rollout-timeline.md)
@@ -978,6 +979,8 @@
 ## Extension lifecycle 
 <!-- (deploy, install, testing, upgrade, deprecation, …) -->
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
+### [Extension types and scope](developer/devenv-extension-types-and-scope.md)
+### [Moving between extension scopes](developer/devenv-extension-moving-scope.md)
 ### Migration
 #### [Generating delta files](developer/devenv-generating-delta-files.md)
 #### Migrating tables and fields between extensions

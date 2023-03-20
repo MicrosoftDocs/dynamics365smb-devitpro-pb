@@ -57,7 +57,7 @@ There are some things to consider before you create a configuration package beca
 
 ### Tables that contain posted entries
 
-You cannot import data to tables that contain posted entries, such as the tables for customer, vendor, and item ledger entries, so you should not include this data in your configuration package. You can add entries to these tables after you import the configuration package by using journals to post the entries. For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals.md) in the business functionality content.
+You cannot import data to tables that contain posted entries, such as the tables for customer, vendor, and item ledger entries, so you should not include this data in your configuration package. You can add entries to these tables after you import the configuration package by using journals to post the entries. For more information, see [Posting Documents and Journals](/dynamics365/business-central/ui-post-documents-journals) in the business functionality content.
 
 ### Table names that contain special characters
 
