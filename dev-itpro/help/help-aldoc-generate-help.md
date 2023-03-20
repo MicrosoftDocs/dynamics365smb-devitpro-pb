@@ -102,3 +102,4 @@ The structure of the files that are generated is as follows:
 
 ## See also
 
+[Overwriting help with the ALDoc tool](help-aldoc-overwrites.md)
