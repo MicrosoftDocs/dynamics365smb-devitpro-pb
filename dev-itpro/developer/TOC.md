@@ -2659,6 +2659,7 @@
 ### [RecallNotificationHandler Attribute](attributes/devenv-recallnotificationhandler-attribute.md)
 ### [ReportHandler Attribute](attributes/devenv-reporthandler-attribute.md)
 ### [RequestPageHandler Attribute](attributes/devenv-requestpagehandler-attribute.md)
+### [RequiredPermissions Attribute](attributes/devenv-requiredpermissions-attribute.md)
 ### [RunOnClient Attribute](attributes/devenv-runonclient-attribute.md)
 ### [Scope Attribute](attributes/devenv-scope-attribute.md)
 ### [SecurityFiltering Attribute](attributes/devenv-securityfiltering-attribute.md)
