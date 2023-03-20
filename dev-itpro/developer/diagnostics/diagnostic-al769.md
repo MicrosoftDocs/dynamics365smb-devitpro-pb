@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0767"
-description: "The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets."
+title: "Compiler Warning (Future Error) AL0769"
+description: "The property '{0}' is required."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/20/2023
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0767
+# Compiler Warning (Future Error) AL0769
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.
+The property '{0}' is required.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

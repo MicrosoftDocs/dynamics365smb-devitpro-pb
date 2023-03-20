@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 01/23/2023
+ms.date: 03/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -598,7 +598,7 @@ author: SusanneWindfeldPedersen
 |[AL0717](diagnostic-al717.md)|The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'.|Warning|
 |[AL0718](diagnostic-al718.md)|Report layouts must have a name.|Error|
 |[AL0719](diagnostic-al719.md)|Argument {0}: The argument should be a valid Field type. An argument of type Joker or Variant might have an underlying type that is not a valid Field type.|Information|
-|[AL0720](diagnostic-al720.md)|An application object '{0} {1}' could not be found in the extension.|Error|
+|[AL0720](diagnostic-al720.md)|An application object '{0} {1}' could not be found in the current extension. Only application objects that belong to the current extensions can be used in this context.|Error|
 |[AL0721](diagnostic-al721.md)|Reports that use the rendering syntax must also define the DefaultRenderingLayout property.|Error|
 |[AL0722](diagnostic-al722.md)|The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax or the app.json specifies the 'NoPromotedActionProperties' feature.|Error|
 |[AL0723](diagnostic-al723.md)|The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can only target Actions.|Error|
@@ -644,7 +644,15 @@ author: SusanneWindfeldPedersen
 |[AL0764](diagnostic-al764.md)|{0} cannot be empty.|Error|
 |[AL0765](diagnostic-al765.md)|A argument of type {0} cannot be used in an External Business Event.|Error|
 |[AL0766](diagnostic-al766.md)|An External Business Event with {0} {1} is already declared.|Error|
-|[AL0767](diagnostic-al767.md)|The url '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.|Error|
+|[AL0767](diagnostic-al767.md)|The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.|Error|
+|[AL0768](diagnostic-al768.md)|The property '{0}' is required when property '{1}' is set to '{2}'.|Warning (Future Error)|
+|[AL0769](diagnostic-al769.md)|The property '{0}' is required.|Warning (Future Error)|
+|[AL0770](diagnostic-al770.md)|The identifier '{0}' cannot have any leading or trailing spaces.|Error|
+|[AL0771](diagnostic-al771.md)|The identifier '{0}' cannot have any leading or trailing spaces.|Warning (Future Error)|
+|[AL0772](diagnostic-al772.md)|The attribute '{0}' can only be used in combination with attribute '{1}'.|Error|
+|[AL0773](diagnostic-al773.md)|The number of files found in '{0}' exceeds {1}. This may result in a slower compilation.|Warning|
+|[AL0774](diagnostic-al774.md)|Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.|Error|
+|[AL0775](diagnostic-al775.md)|Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.|Warning (Future Error)|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|

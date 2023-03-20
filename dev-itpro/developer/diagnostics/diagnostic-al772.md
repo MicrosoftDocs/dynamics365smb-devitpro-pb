@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0767"
-description: "The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets."
+title: "Compiler Error AL0772"
+description: "The attribute '{0}' can only be used in combination with attribute '{1}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 03/20/2023
@@ -13,11 +13,11 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0767
+# Compiler Error AL0772
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.
+The attribute '{0}' can only be used in combination with attribute '{1}'.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
