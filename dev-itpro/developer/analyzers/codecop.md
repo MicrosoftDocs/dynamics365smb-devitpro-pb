@@ -30,6 +30,10 @@ CodeCop is an analyzer that enforces the official AL Coding Guidelines.
 |[AA0021](codecop-aa0021.md)|Variable declarations should be ordered by type.|Readability|Warning|
 |[AA0022](codecop-aa0022.md)|Substitute the IF THEN ELSE structure with a CASE.|Readability|Warning|
 |[AA0040](codecop-aa0040.md)|Avoid using nested WITH statements.|Readability|Warning|
+|[AA0050](codecop-aa0050.md)|Permission set extensions should not include permissions for objects defined in another application.|Design|Warning|
+|[AA0051](codecop-aa0051.md)|Permission set extensions should not include permission sets defined in another application.|Design|Warning|
+|[AA0052](codecop-aa0052.md)|Permission set extensions should not include permission sets which include permissions for objects defined in another application.|Design|Warning|
+|[AA0053](codecop-aa0053.md)|Permission set extensions should not include wildcard permissions.|Design|Warning|
 |[AA0072](codecop-aa0072.md)|The name of variables and parameters must be suffixed with the type or object name.|Readability|Info|
 |[AA0073](codecop-aa0073.md)|The name of temporary variable must be prefixed with Temp.|Readability|Warning|
 |[AA0074](codecop-aa0074.md)|TextConst and Label variable names should have an approved suffix.|Readability|Warning|
