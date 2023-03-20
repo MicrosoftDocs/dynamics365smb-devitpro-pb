@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Overwriting help with the ALDoc tool
 
+Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time.
+Some areas of auto-generated content are fine as they are only showing symbolic and syntactical information, code comments, and overall application structure based on the input .app file(s).
 
 ## See also
 
