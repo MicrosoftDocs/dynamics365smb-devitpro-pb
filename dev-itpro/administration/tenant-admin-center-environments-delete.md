@@ -42,7 +42,7 @@ Here's some important information about deleted environments and their recovery:
 > [!IMPORTANT]
 > You can recover a soft-deleted product environment even if doing so results in exceeding your environment quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription.
 >
-> This capability is provided as an exception, to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by either deleting a production environment or by purchasing an extra production environment.
+> This capability is provided as an exception, to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by either deleting a production environment or by purchasing an extra production environment. For more information, see [Managing Capacity](tenant-admin-center-capacity.md).
   
 ## Delete an environment
 
