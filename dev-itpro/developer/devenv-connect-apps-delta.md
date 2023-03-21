@@ -14,6 +14,7 @@ ms.topic: conceptual
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 
+
 Delta links are opaque, service-generated links that the client uses to retrieve subsequent changes to a result. 
 
 The user can obtain a delta link from each entity API in the library by including the `odata.track-changes` preference in the header of the request. The response to the GET request returns a deltaLink parameter, providing an opaque URL.
@@ -76,6 +77,9 @@ The response would return with the specified changes in the result, see the foll
 + If a deltaLink is no longer valid, the service will respond with `410 Gone`. The response should include a location header so that the client can use that to retrieve a new baseline set of results.
 + Not all entities in the API library support delta tokens. If a delta token is requested for an entity that does not support them, the service will respond with `500 Entity does not support delta requests`.
 + The client must use the deltaLink URL as provided. The URL must not be modified either by parsing it or adding any additional query string parameters including changing the filters. The deltaLink and token are specific to the original query provided.
+
+> [!NOTE]
+> Starting with Business Central 2023 release wave 1 (v22), the delta links with APIs feature is deprecated. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
