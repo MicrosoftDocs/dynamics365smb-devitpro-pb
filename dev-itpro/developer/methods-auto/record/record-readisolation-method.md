@@ -45,7 +45,7 @@ The read isolation level.
 
 ## Remarks
 
-For more information about read isolation level on record instances, see []
+For more information about read isolation level on record instances, see [Record instance isolation level](../../devenv-read-isolation.md).
 
 ## Example
 
@@ -71,6 +71,7 @@ end;
 ```
 
 ## See Also
+[Record instance isolation level](../../devenv-read-isolation.md)  
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
