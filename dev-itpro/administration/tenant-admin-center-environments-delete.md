@@ -7,6 +7,7 @@ ms.reviewer: jswymer
 ms.topic: how-to 
 ms.date: 03/21/2023
 ms.custom: bap-template
+ms.service: dynamics365-business-central
 ---
 
 # Delete and recover environments
