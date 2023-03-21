@@ -23,9 +23,11 @@ Here's some important information about deleted environments and their recovery:
 <!--
 - Your Azure Active Directory tenant has a limit of 10 soft-deleted environments that can be in the retention period at any given time. If this limit is exceeded, the environment that has been in retention the longest will be permanently deleted to make room for the newly deleted environment.-->
 
-- When you delete and environment, it will automatically be renamed to include a suffix with the format `-yyyyMMddHHmm`. 
+- Deleted environments are removed from the **Recently deleted environments** page seven days after the environment has been deleted. If you need to recover an environment that was deleted more than seven days ago, open a service request.
 
-  The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you may want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
+- When you delete environment, it will automatically be renamed to include a suffix with the format `-yyyyMMddHHmm`. 
+
+   The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you may want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
 
    If the environment name is too long, it will be truncated to allow using the full suffix in the specified format. When the environment is recovered, it isn't automatically renamed back to the original name.
 
@@ -33,9 +35,11 @@ Here's some important information about deleted environments and their recovery:
 - Soft-deleted environments don't get applied with updates, but they remain part of the update schedule until they're permanently deleted.
 
    When you recover an environment, any updates scheduled for the environment while it was in retention will be applied as part of recovery. If you don't want to apply an update during recovery, you can reschedule it to a later date before starting the recovery.
-- Deleted environments are removed from the **Recently deleted environments** page seven days after the environment has been deleted. If you need to recover an environment that was deleted more than seven days ago, open a service request.
+
 - Soft-deleted environments, or any environments listed on **Recently deleted environments** page, aren't counted towards the environment quota on your tenant.  
-- You can recover a soft-deleted product environment even if doing so results in exceeding your number of environments allowed by your quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription. This capability is provided as an exception, to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by either deleting a production environment or by purchasing an extra production environment.
+- You can recover a soft-deleted product environment even if doing so results in exceeding your number of environments allowed by your quota. However, you can only exceed this quota by one extra production environment, regardless of how many production environments you have available for your subscription. 
+
+   This capability is provided as an exception, to ensure that you can always recover your production environment in critical situations. You must return within your quota within 30 days following the recovery by either deleting a production environment or by purchasing an extra production environment.
   
 ## Delete an environment
 
