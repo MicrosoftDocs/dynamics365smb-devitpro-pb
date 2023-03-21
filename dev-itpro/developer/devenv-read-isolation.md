@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 # Record instance isolation level
 
-The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It protects a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
+This article explains how you can use the [ReadIsolation method](methods-auto/record/record-readisolation-method.md) to control isolation level on database transactions. The isolation level on a transaction determines the degree to which it's isolated from other transactions to prevent problems in concurrent situations. On the record level, the isolation level improves the integrity and stability of data when multiple transactions are reading the same record. It protects a transaction from the effects of other transactions by taking locks, preventing reads of uncommitted data, or preventing modifications.
 
 Database locking can be a major cause for performance issues. When AL code takes fewer locks, it increases the performance of the system for end users. By using record instance isolation level, you can improve performance by limiting database locks to only what necessary.
 
