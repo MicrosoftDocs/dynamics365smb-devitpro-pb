@@ -23,7 +23,7 @@ Here's some important information about deleted environments and their recovery:
 <!--
 - Your Azure Active Directory tenant has a limit of 10 soft-deleted environments that can be in the retention period at any given time. If this limit is exceeded, the environment that has been in retention the longest will be permanently deleted to make room for the newly deleted environment.-->
 
-- When you delete and environment, it will automatically rename renamed to include a suffix with the format `-yyyyMMddHHmm`. 
+- When you delete and environment, it will automatically be renamed to include a suffix with the format `-yyyyMMddHHmm`. 
 
   The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you may want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
 
