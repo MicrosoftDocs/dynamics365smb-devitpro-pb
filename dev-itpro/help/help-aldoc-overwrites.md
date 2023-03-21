@@ -53,12 +53,12 @@ Next, you'll create an .md file with the content to inject as an overwrite.
 1. Save the .md file when you're done.  
     The content will be injected at the beginning of the reference content. The rest of the reference content will remain as it is generated.
 1. Now, run the ALDoc tool with the equivalent command of:  
-```powershell
-.\\Platform-ModernDev\\out\\Debug\\aldoc\\net6.0\\aldoc.exe build -o 'F:\\Depot\\Files\\ReferenceGenerated' -s 'F:\\Depot\\Files\\alpackage\\Microsoft_System Application_21.0.45613.0.app'
+```bash
+{Path_to_Platform}\\Platform-ModernDev\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-dev-appref}\\  -s {path_to_package}
 ```
 2. Next, build the help site again with the equivalent command of:  
-```powershell
-docfx build 'F:\\Depot\\Files\\ReferenceGenerated/docfx.json' -s
+```bash
+docfx build ./{path-to-dev-appref}/docfx.json -s
 ```
 
 
