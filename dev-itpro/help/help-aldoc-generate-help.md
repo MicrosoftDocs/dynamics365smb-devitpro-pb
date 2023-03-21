@@ -15,7 +15,7 @@ Generating content based on source code has many advantages such as accuracy, 10
 
 This article describes the steps to use the tool to generate the documents for al .app packages. To generate help using the ALDoc tool, the following steps are involved: 
 
-* Clone the repo <!-- internal steps -->
+* Clone the repo <!-- internal steps, will be installed from product folder -->
 * Install .NET and DocFx v2 prerequisites
 * Generate the internal file
 * Build and host the project with DocFx v2
@@ -54,9 +54,9 @@ There are different ways to install DocFx v2. The following steps describe a sug
 
 Now, you have successfully installed DocFx v2 on your machine.
 
-## Generate Reference
+## Generate reference
 
-The next step is to use the ALDoc tool to generate the file for DocFx v2.
+When DocFx and ALDoc have been successfully installed, the next step is to use the ALDoc tool to generate the initialization files.
 
 1. First, you must init the reference repo, by giving the following command:  
     ```bash
@@ -78,7 +78,7 @@ The next step is to use the ALDoc tool to generate the file for DocFx v2.
 
 In the previous steps, the reference files were generated. You'll now use DocFx v2 to build and host a website. 
 
-1. In the command line, enter the following:  
+1. In the command line, enter a command equivalent to the following:  
     ```bash
     docfx build ./{path-to-generated-content}/docfx.json -s
     ```
