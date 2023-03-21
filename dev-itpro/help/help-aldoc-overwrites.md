@@ -51,17 +51,15 @@ Next, you'll create an .md file with the content to inject as an overwrite.
     The Auto Format codeunit provides methods for formatting the appearance of decimal data types in fields on tables, reports, and pages.
     ```
 1. Save the .md file when you're done.  
-    The content will be injected at the beginning of the reference content. The rest of the reference content will remain as it is generated.
+    The content will be injected at the beginning of the reference content.
 1. Now, run the ALDoc tool with the equivalent command of:  
 ```bash
-{Path_to_Platform}\\Platform-ModernDev\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-dev-appref}\\  -s {path_to_package}
+{Path_to_Platform}\\Platform-ModernDev\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-generated-content}\\  -s {path_to_package}
 ```
 2. Next, build the help site again with the equivalent command of:  
 ```bash
-docfx build ./{path-to-dev-appref}/docfx.json -s
+docfx build ./{path-to-generated-content}/docfx.json -s
 ```
 
-
 ## See also
-
 [Generating help with the ALDoc tool](help-aldoc-generate-help.md)
