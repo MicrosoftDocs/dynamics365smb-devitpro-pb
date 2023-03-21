@@ -42,6 +42,34 @@ The read isolation level.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+For more information about read isolation level on record instances, see []
+
+## Example
+
+The following example shows AL code with SQL isolation level hints annotated on database reads, with record instance isolation level used to override the transaction's isolation level.
+
+```al
+local procedure UsingReadIsolation()
+var
+    cust: Record Customer;
+    otherCust: Record Customer;
+    curr: Record Currency;
+begin
+    cust.FindFirst(); // READUNCOMMITTED
+
+    // Heighten isolation level for Customer table.
+    cust.LockTable();
+
+    // Explicitly select another isolation level than the transaction's.
+    otherCust.ReadIsolation := IsolationLevel::ReadUncommitted;
+
+    otherCust.FindSet(); // READUNCOMMITTED
+end;
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  
