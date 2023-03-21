@@ -111,7 +111,7 @@ The following table illustrates how we communicate about the different environme
 |Updates Postponed/Resumed|![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |
 |Update Started |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
 |Update Succeeded/Failed<sup>[\[2\]](#2) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |![check mark for feature](../developer/media/check.png) |         |![check mark for feature](../developer/media/check.png)
-|Environment Hotfix |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
+|Environment Hotfix |![check mark for feature](../developer/media/check.png) |         |         |         |
 |Environment Restart |![check mark for feature](../developer/media/check.png)|         |         |         |![check mark for feature](../developer/media/check.png)
 |Environment Started/Stopped|![check mark for feature](../developer/media/check.png)|         |         |         |
 |Environment Copy |![check mark for feature](../developer/media/check.png) |         |         |         |![check mark for feature](../developer/media/check.png)
