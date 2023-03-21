@@ -168,7 +168,8 @@ Occurs when a job queue entry fails to run.
 
 ### Sample KQL code 
 This KQL code can help you get started troubleshooting job queue errors
-    ```kql
+
+```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
 | where customDimensions has 'AL0000HE7' // for faster query performance
@@ -186,7 +187,7 @@ traces
 , alJobQueueExecutionTimeInMs = customDimensions.alJobQueueExecutionTimeInMs
 , alJobQueueStacktrace = customDimensions.alJobQueueStacktrace // stack trace added in 21.3
 , taskId = customDimensions.alJobQueueScheduledTaskId // you can join to task scheduler telemetry on the taskId
-    ```
+```
 
 ## <a name="other"></a>Common custom dimensions
 
