@@ -3,7 +3,7 @@ title: "Update 21.4 for Microsoft Dynamics 365 Business Central 2022 Release Wav
 description: Get an overview of new and changed capabilities in the 21.4 update of Business Central online, which is part of 2022 release wave 2.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 02/03/2023
+ms.date: 02/23/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -11,8 +11,6 @@ author: EmmaNielsson
 ---
 
 # Update 21.4 for Microsoft Dynamics 365 Business Central online 2022 release wave 2
-
-> The update is coming soon. Stay tuned!
 
 Would you like to know what has changed in update 21.4? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 

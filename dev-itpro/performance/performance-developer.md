@@ -261,6 +261,35 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 - The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
 - They impact `ModifyAll` and `DeleteAll` methods that normally do bulk SQL operations to be forced to do single row operations.
 
+
+### Outgoing web service calls block AL execution
+If you call external web service using the HttpClient module in AL, be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this behavior means that the user will see a spinning wheel for the duration of the call.  
+
+### Limit work done in login event subscribers
+The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
+
+This behavior means that you must design such code in a way that is minimally intrusive, for example, set low timeouts for outgoing web service calls. 
+
+If you have enabled telemetry for your environment or app, you can use this KQL query to analyze how session creation time is delayed by calls to external services. 
+
+```Kusto
+traces
+| where customDimensions.eventId == 'RT0019'
+| where isnotempty( customDimensions.alStackTrace ) // RT0019 only has stacktrace from 20.1
+| extend StackTrace = tostring( customDimensions.alStackTrace )
+, executionTimeInMs = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
+| where StackTrace has 'OnCompanyOpen' or StackTrace has 'OnCompanyOpenCompleted'
+| summarize count() // how many calls
+, sum(executionTimeInMs) // sum of delays for session creations (all session types are affected: UI, web service, background, ...) 
+, avg(executionTimeInMs) // average session creation time delay by this app
+, max(executionTimeInMs) // average session creation time delay by this app
+by 
+// which app is calling out from OnCompanyOpen/OnCompanyOpenCompleted?
+  extensionId = tostring( customDimensions.extensionId )
+, extensionName = tostring( customDimensions.extensionName )
+, extensionVersion = tostring( customDimensions.extensionVersion )
+```
+
 ## Efficient data access 
 
 Many performance issues are related to how data is defined, accessed, and modified. It's important to know how concepts in AL metadata and the AL language translate to their counterparts in SQL.  
