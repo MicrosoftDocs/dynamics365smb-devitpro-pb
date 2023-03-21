@@ -118,7 +118,7 @@ end;
 
 ## Differences between transaction locking and record instance isolation level
 
-When using FlowFields and the default transaction state, it's the state of the target table of the FlowField's formula that's used to determine the isolation level, not source table's target state. When using record instance isolation level, the target table doesn't matter, because the isolation level specified on the [ReadIsolation] property is used. Consider the following example.
+When using FlowFields and the default transaction state, it's the state of the target table of the FlowField's formula that's used to determine the isolation level, not source table's target state. When using record instance isolation level, the target table doesn't matter, because the isolation level specified on the ReadIsolation method is used. Consider the following example.
 
 ```al
 local procedure Foo()
