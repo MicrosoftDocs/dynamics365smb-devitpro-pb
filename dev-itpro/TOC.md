@@ -254,6 +254,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
+### [Report a performance issue](administration/report-performance-issue.md)
 ### [Analyze performance](administration/performance-profiler-overview.md)
 <!-- end support -->
 ## Automation API
