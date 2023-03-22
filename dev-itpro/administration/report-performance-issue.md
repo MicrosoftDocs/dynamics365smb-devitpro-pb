@@ -12,9 +12,9 @@ ms.reviewer: jswymer
 
 # Report a performance issue
 
-When a customer has a situation where performance is problematic, you might need to raise a support ticket, see how to do that here: [Escalate Support Issues to Microsoft](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/raise-support-case).
+When a customer has a situation where performance is problematic, you might need to raise a support ticket, see how to do that here: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
-> [!TIP] It's possible to self-diagnose AL performance issues via the in-client profiler and/or telemetry. If the problem pertains to AL execution, we require this to be done before reaching out for further support. See how to use the performance profiler here: [Performance Profiler Overview](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview). The article [How to work with a performance problem](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/performance/performance-work-perf-problem) might also help you understanding the performance tuning process and the tools you have available for performance analysis.
+> [!TIP] It's possible to self-diagnose AL performance issues via the in-client profiler and/or telemetry. If the problem pertains to AL execution, we require this to be done before reaching out for further support. See how to use the performance profiler here: [Performance Profiler Overview](performance-profiler-overview.md). The article [How to work with a performance problem](../performance/performance-work-perf-problem.md) might also help you understanding the performance tuning process and the tools you have available for performance analysis.
 
 
 Before you create a support requests for a performance issue, we need you to provide information on what is wrong, when it happens, and for whom. This article specifies what support engineers need to work on performance issues.
@@ -39,11 +39,11 @@ If self-diagnosing doesn't yield any results, we require more information regard
 
 If the issue can be reproduced, do the following tasks:
 
-1. Go to the _Help and Support_ page (see [The Help and Support page in the Business Central company](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/manage-technical-support#helpsupport)).
+1. Go to the _Help and Support_ page (see [The Help and Support page in the Business Central company](manage-technical-support.md#helpsupport)).
 2. Note down the time (in UTC timezone).
 3. Enable additional logging (Find it under _Report a Problem_).
 4. Note down the Session ID, Azure AD tenant ID, and Environment name.
-5. Enable the performance profiler, see [Performance Profiler Overview](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/performance-profiler-overview) for details
+5. Enable the performance profiler, see [Performance Profiler Overview](performance-profiler-overview.md) for details
 6. Reproduce the issue.
 7. Download the profile file.
 
@@ -55,7 +55,7 @@ When creating the support request, provide this information:
 * Optionally, screenshots of error screens because they contain useful operation IDs that help us track down the issue.
 * Optionally, screen recordings of the issue. A recording is only a supplement to having a performance profile file.
 
-The following article takes you through creating a support request: [Escalate Support Issues to Microsoft](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/raise-support-case).
+The following article takes you through creating a support request: [Escalate Support Issues to Microsoft](raise-support-case.md).
 
 ## See Also
 
