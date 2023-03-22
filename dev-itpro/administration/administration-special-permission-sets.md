@@ -14,9 +14,6 @@ ms.topic: conceptual
 
 The following permission sets have special definitions that you should be aware of as you implement permissions and security for [!INCLUDE[prod_short](../includes/prod_short.md)] users.  
 
-
- To be able to synchronize users, you must be assigned the SUPER permission set. Running the function 'Update Users from M365' 
-
 |Permission set|Definition|
 |--------------|----------------|
 |SUPER|Can read, use, update, and delete all data and all application objects in the scope of your license. [!INCLUDE[prod_short](../includes/prod_short.md)] requires that at least one user is assigned this permission set in each database.<br /><br /> The first user created is automatically assigned the SUPER Permission Set<br /><br /> You can't modify permissions for the SUPER permission set.<br><br> Running a synchronization of users from Microsoft 365 using the **Update users from Microsoft 365** guide, requires the SUPER permission set.|
