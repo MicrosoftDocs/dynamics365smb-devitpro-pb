@@ -232,6 +232,7 @@
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
+#### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
