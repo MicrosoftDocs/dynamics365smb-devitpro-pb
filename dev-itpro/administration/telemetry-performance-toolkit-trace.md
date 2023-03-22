@@ -6,9 +6,7 @@ ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, BCPT, Performance Toolkit, performance
 ms.date: 03/22/2023
 ms.author: jswymer
-ms.reviewer: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bap-template
+ms.reviewe: jswymer
 ---
 
 # Analyzing Performance Toolkit Telemetry
