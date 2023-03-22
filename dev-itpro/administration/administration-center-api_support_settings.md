@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 10/05/2021
+ms.date: 02/24/2023
 ---
 
 # Support Settings
@@ -20,7 +20,7 @@ Allows for the management of support settings, such as changing the contact, for
 Get information about the support contact for a specified environment.
 
 ```
-GET /admin/v2.15/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+GET /admin/v2.18/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route Parameters
@@ -59,7 +59,7 @@ Sets the support contact information for a specified environment
 
 ```
 Content-Type: application/json
-PUT /admin/v2.15/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
+PUT /admin/v2.18/support/applications/{applicationFamily}/environments/{environmentName}/supportcontact
 ```
 
 ### Route Parameters
