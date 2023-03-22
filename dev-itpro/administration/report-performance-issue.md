@@ -3,7 +3,7 @@ title: Report a Performance Issue
 description: Learn about how to report a performance issue on behalf of your Business Central online customers as the delegated administrator.
 author: kennienp
 ms.topic: conceptual
-ms.date: 01/27/2023
+ms.date: 03/22/2023
 ms.author: kepontop
 ms.service: dynamics365-business-central
 ms.custom: bap-template
