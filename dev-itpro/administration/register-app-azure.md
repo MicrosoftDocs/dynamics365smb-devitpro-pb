@@ -1,15 +1,16 @@
 ---
-title: "Register on-premises as an app in the Azure Management Portal"
+title: Register on-premises as an app in the Azure Management Portal
 description: Learn what to do when you want to use Business Central on-premises with online offerings.
 author: jswymer
 ms.author: jswymer
-ms.custom: na
-ms.date: 02/28/2022
+ms.custom: bap-template
+ms.date: 01/26/2023
 ms.reviewer: na
-ms.topic: conceptual
+ms.topic: how-to
+ms.service: dynamics365-business-central
 ---
 
-# Registering Business Central On-Premises in Azure AD for Integrating with Other Services
+# Register Business Central On-Premises in Azure AD for Integrating with Other Services
 
 > **APPLIES TO** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises. [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online is automatically configured for integration with other online services.
 
@@ -48,7 +49,7 @@ The first task is to use Azure portal to register an application for Business Ce
         |Setting|Description|
         |-------|-----------|
         |Name|Specify a name for your Business Central on-premises solution, such as *Business Central on-premises* or *Azure Services for Business Central on-premises*. |
-        |Supported account types| Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] does not require the organization to be multitenant, not even if this field is set to multitenant. |
+        |Supported account types| Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**<br /><br />**Note:** [!INCLUDE [prod_short](../developer/includes/prod_short.md)] doesn't require the organization to be multitenant, not even if this field is set to multitenant. |
         |Redirect URI|Set the first box to **Web** to specify a web application. Enter the URL for your Business Central on-premises browser client, followed by *OAuthLanding.htm*, for example: `https://MyServer/BC200/OAuthLanding.htm` or `https://cronus.onmicrosoft.com/BC200/OAuthLanding.htm`. This file is used to manage the exchange of data between Business Central on-premises and other services through Azure AD.<br> <br>**Important:** The URL must match the URL of Web client, as it appears in the browser address. For example, even though the actual URL might be `https://MyServer:443/BC200/OAuthLanding.htm`, the browser typically removes the port number `:443`.|
 
         When completed, an **Overview** displays in the portal for the new application.
@@ -72,6 +73,8 @@ The first task is to use Azure portal to register an application for Business Ce
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
     |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
+    |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contacts)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.<br><br> **TIP** To find Office 365 Exchange Online, type it the the search box on the **APIs my organization uses** tab.|
+    ||| EWS.AccessAsUser.All|Delegated|Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services.|
     |[OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
     |||User.ReadWrite.All|Delegated|Read and write user profiles|
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
@@ -81,6 +84,12 @@ The first task is to use Azure portal to register an application for Business Ce
     |||PrintJob.ReadBasic|Delegated|Read basic information of user's print jobs. Required for using Universal Print printers.|
 
     <sup>1</sup><a name="1"></a>For Business Central 2021 release wave 2 (version 19), the required permissions are different. Use these permissions instead: AllSites.Write, MyFiles.Write, User.Read.All.
+
+4. Configure consent on each API permission according to your organizations policies.
+
+   Consent is a process where users or admins authorize an application to access a resource, like a user's profile or mailbox, depending on the service. When a user attempts to sign in to the registered app for the first time, the app will request permission, and the user will have to accept to continue. As an admin, you can consent on behalf of all users, so they don't have to. To learn more, go to [More on API permissions and admin consent](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#more-on-api-permissions-and-admin-consent) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
+
+5. If this is a new registered app, and not an update to an existing one, go to the next task to set it up in Business Central.
 
 ## Set up the registered application in Business Central
 
@@ -93,9 +102,9 @@ After you create the application registration, the next task is to configure the
 2. Select **Set up your Azure Active Directory accounts**, then **Next**.
 
     The **Connect With Azure** page opens.
-<!--
-![Setting the Azure Active Directory.](../developer/media/set-up-azure-ad.png)
--->
+    <!--
+    ![Setting the Azure Active Directory.](../developer/media/set-up-azure-ad.png)
+    -->
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Azure AD.
@@ -128,9 +137,9 @@ After authorizing the Azure service, you get a message similar to the following 
 **We couldn't connect to [service name] using your Azure AD application registration. Run the Set Up Azure Active Directory assisted setup again, and make sure all values are set correctly.**
 
 This issue indicates there's a problem with the configuration of the Azure registered application used by the service. The problem is typically caused by incorrect values for either the **Redirect URL**, **Application ID**, or **Key** fields in the application registration. A common problem deals with the redirect URLs. Make sure the **Redirect URL** matches the redirect URL in the Azure portal and the URL of the Web client. To fix this issue, run the **Set Up Azure Active Directory** assisted setup and compare the values with the app registration in Azure.
- 
 
 ## See Also
+
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
