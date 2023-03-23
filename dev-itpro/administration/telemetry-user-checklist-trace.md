@@ -23,6 +23,7 @@ Occurs when the checklist status changes for the environment.
 |Dimension|Description or value|
 |---------|-----|
 |message|**User checklist status updated: {oldStatus} to {newStatus}** <br /><br /> `{oldStatus}` indicates the old status of the checklist.<br /><br /> `{newStatus}` indicates the new status of the checklist.|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
