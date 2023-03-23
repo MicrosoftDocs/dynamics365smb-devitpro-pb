@@ -3,7 +3,7 @@ title: "Special permission sets"
 description: Learn about built-in permissions sets that carry special meaning in Business Central.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 09/22/2023
+ms.date: 03/22/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
