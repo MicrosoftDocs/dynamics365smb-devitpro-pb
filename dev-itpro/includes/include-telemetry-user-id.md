@@ -1,0 +1,1 @@
+The Telemetry ID field on the User Card for the user in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. This is only sent to environment telemetry. For more information, see [Assign a telemetry ID to users](../administration/telemetry-enable-application-insights#assign-a-telemetry-id-to-users). 
