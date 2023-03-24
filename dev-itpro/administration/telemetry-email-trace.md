@@ -35,6 +35,7 @@ Occurs when an email was successfully sent from the client.
 |---------|-----|
 |message|**Email sent successfully**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -65,6 +66,7 @@ Occurs when an email failed to be sent from the client.
 |---------|-----|
 |message|**Failed to send email.**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -90,10 +92,7 @@ Occurs when an email failed to be sent from the client.
 > [!TIP]
 > You can also view failed emails in the **Email Outbox** page in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client.
 
-<!--
 
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","Environment type":"Production","componentVersion":"17.0.19123.0","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","alObjectName":"Email Dispatcher","alObjectType":"CodeUnit","AadTenantId":"450a3361-0bcb-4125-89c7-ceb20379258d","aadTenantId":"450a3361-0bcb-4125-89c7-ceb20379258d","alObjectId":"8888","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"AL0000CTP","alEmailMessageID":"{C7A56676-9F3F-4044-90F0-D7F3196AC366}","alConnector":"Current User","alDataClassification":"SystemMetadata","alCategory":"Email"}
--->
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  

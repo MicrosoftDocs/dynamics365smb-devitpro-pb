@@ -40,6 +40,7 @@ Occurs when the field monitor feature is started or stopped in the company.
 |---------|-----|
 |message|**Sensitive field monitor status has changed to {almonitorStatus}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -88,7 +89,7 @@ Occurs the value of a monitored field has changed in the company.
 |alTableNumber|Specifies the ID of the table where the changed field is included. This dimension was introduced in version 18.0. |
 |message|**Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})**|
 |severityLevel|**1**|
-
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -120,6 +121,8 @@ Occurs when a field has been added to or removed from monitoring. This dimension
 |---------|-----|
 |message|**Sensitive field added to monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**<br />or<br />**Sensitive field removed from monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
