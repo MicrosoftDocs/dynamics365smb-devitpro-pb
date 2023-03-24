@@ -39,6 +39,7 @@ Occurs when a retention policy is enabled, applied, or disabled. It provides inf
 |---------|-----|
 |message|**Retention Policy Log Entry Logged: {alMessageType}**|
 |severityLevel|**1** for error, **2** for warning, **3** for info|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -89,6 +90,7 @@ Occurs when a record is deleted by a retention policy.
 |---------|-----|
 |message|**Records Deleted Using Retention Policy: Deleted {alRecordsDeleted} records from Table {alTableNo}, {alTableName}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -119,6 +121,7 @@ Occurs when the first retention policy is enabled in a company.
 |---------|-----|
 |message|**First retention policy enabled on: {alCompanyName}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -147,6 +150,7 @@ Occurs when the last retention policy is disabled in a company.
 |---------|-----|
 |message|**Last retention policy disabled on: {alCompanyName}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 

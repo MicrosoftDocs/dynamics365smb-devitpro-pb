@@ -1,5 +1,5 @@
 ---
-title: Feature Telemetry
+title: Feature telemetry
 description: Learn about the telemetry that you can emit from features in Business Central.  
 author: bholtorf
 ms.topic: conceptual
@@ -7,13 +7,13 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry, data, sensitive
-ms.date: 05/01/2021
+ms.date: 03/03/2023
 ms.author: bholtorf
 ---
 
-# Feature Telemetry
+# Feature telemetry
 
-The Telemetry AL module simplifies the way you monitor the health of your solution and the uptake of application features. There are multiple benefits of using the module compared to sending telemetry via `Session.LogMessage`. For example:
+The Telemetry AL module simplifies the way you monitor the health of your app and the uptake of application features. There are multiple benefits of using the module compared to sending telemetry via `Session.LogMessage`. For example:
 
 * Different features can be compared across the same metrics.
 * Common information is sent together with every feature telemetry message, which allows for advanced filtering capabilities.
@@ -61,6 +61,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 |---------|---------|
 |message     | Depends on the event.        |
 |severityLevel     |**1**         |
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ## Custom dimensions
 
@@ -70,7 +71,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 |alCategory     | **FeatureTelemetry**.  |
 |alFeatureName  | The name of the feature being tracked.  |
 |alSubCategory     | Holds one of the values **Uptake**, **Usage**, or **Error**.  |
-|alFeatureUptakeStatus| If alSubCategory holds the value **Uptake**, then the update status can hold one the the following values: **Discovered**, **Set up**, **Undiscovered**, or **Used**.
+|alFeatureUptakeStatus| If alSubCategory holds the value **Uptake**, then the update status can hold one of the following values: **Discovered**, **Set up**, **Undiscovered**, or **Used**.
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
 |alCallerAppVersionMajor     | The major version of the extension that emitted telemetry. |
 |alCallerAppVersionMinor     | The minor version of the extension that emitted telemetry.        |
@@ -91,8 +92,60 @@ Feature names should be short and easy to identify. For example, Retention polic
 |telemetrySchemaVersion|Specifies the version of the Business Central telemetry schema.|
 |eventId     | Unique event ID for different feature telemetry events.        |
 
+## Error telemetry for the app publisher
+When you use the feature telemetry module in your app, it's important to register exactly one telemetry logger. If you fail to do so, the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server logs an event to your telemetry.
+
+## <a name="multipleloggers"></a>More than one telemetry logger has been registered for publisher {publisher}
+This event is logged if more than one telemetry logger has been registered for publisher.
+
+### General dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|message     | More than one telemetry logger has been registered for publisher {publisher} |
+
+
+### Custom dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
+|alCallerAppName     | The name of the extension that emitted telemetry.      |
+|alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
+|alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
+|eventId     | **AL0000G7J**        |
+
+ 
+## <a name="nologger"></a>No telemetry logger has been registered for publisher {publisher}
+This event is logged if no telemetry logger has been registered for publisher.
+
+### General dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|message     | An app from publisher {publisher} is sending telemetry, but there's no registered telemetry logger for this publisher |
+
+### Custom dimensions
+
+|Dimension  | Description or value  |
+|---------|---------|
+|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**.|
+|alCallerAppName     | The name of the extension that emitted telemetry.      |
+|alCallerAppPublisher     | The name of the extension that emitted telemetry.      |
+|alCallerAppVersion     | The name of the extension that emitted telemetry.      | 
+|environmentName|Specifies the name of the tenant environment. See [Managing Environments](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments). This dimension isn't included for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises environments.|
+|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-environments).|
+|eventId     | **AL0000G7K**        |
+
+
+
 ## See Also
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
-[Feature Telemetry sample](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
+[Telemetry Overview](telemetry-overview.md)  
+[Enable Telemetry in Business Central](telemetry-enable-application-insights.md)  
+[Feature Telemetry sample code](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/AL/FeatureTelemetry)  
+[System Application Overview](../developer/devenv-system-application-overview.md)  
+[Feature Telemetry System Application Documentation](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
+[Feature Telemetry Codeunit Reference Documentation](/dynamics365/business-central/application/reference/system%20application/codeunit/system_application_codeunit_feature_telemetry)
