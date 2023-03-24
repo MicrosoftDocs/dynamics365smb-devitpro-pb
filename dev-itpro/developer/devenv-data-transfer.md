@@ -58,7 +58,7 @@ The DataTransfer object can be used for essentially two operations:
 - Copy data from entire rows in a table to rows in another table. A typical scenario is when you've made a table obsolete.
 
 > [!IMPORTANT]
-> The DataTransfer object can only be used in upgrade code and it'll throw an runtime error if used outside of upgrade codeunits.  
+> The DataTransfer object can only be used in upgrade code and it'll throw a runtime error if used outside of upgrade codeunits.  
 >
 > Using the DataTransfer object in install codeunits, it's checked that the install code is running inside the scope of installing an extension, meaning that the install code is triggered from the `OnInstallAppPerDatabase` and `OnInstallAppPerCompany` events that are emitted during installation.
 
