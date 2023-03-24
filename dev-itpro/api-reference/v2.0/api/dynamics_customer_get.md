@@ -1,8 +1,7 @@
 ---
 title: Get customers  
-description: Gets a customer object in Dynamics 365 Business Central.
- 
-author: SusanneWindfeldPedersen
+description: Gets a customer object with properties and relationships in Dynamics 365 Business Central.
+ author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na

@@ -1,6 +1,6 @@
 ---
 title: Create attachment  
-description: Creates a attachment object in Dynamics 365 Business Central.
+description: Creates an attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 ms.topic: reference
 ms.devlang: na
