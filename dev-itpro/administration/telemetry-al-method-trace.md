@@ -23,7 +23,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] server will emit telemet
 -->
 
 > [!NOTE]
-> To collect this telemetry for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the **AL Function Timing** and **AL Function Logging Threshold - Application Insights** settings must be configured on the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#General). With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, this telemetry is enabled with a specific threshold on a case-by-case basis by the service.
+> To collect this telemetry for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the **AL Function Timing** and **AL Function Logging Threshold - Application Insights** settings must be configured on the [!INCLUDE[server](../developer/includes/server.md)] instance. For more information, see [Configuring Business Central Server](configure-server-instance.md#general-settings). With [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, this telemetry is enabled with a specific threshold on a case-by-case basis by the service.
 
 ## General dimensions
 
@@ -33,6 +33,7 @@ The following table explains the general dimensions included in the trace. The t
 |---------|--------------------|
 |message|**Operation exceeded time threshold (AL method)**|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ## CustomDimensions
 

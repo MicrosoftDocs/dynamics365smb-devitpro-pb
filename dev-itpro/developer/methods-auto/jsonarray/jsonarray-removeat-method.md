@@ -42,6 +42,10 @@ The position of the element that will be removed.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 1. The operation will fail if the Index is smaller than 0 or (greater or equal) than JsonArray.Count.
 2. Objects of type JsonArray represent a 0-based array.
 

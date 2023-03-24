@@ -3,7 +3,7 @@ title: "Text.ToUpper() Method"
 description: "Returns a copy of this string converted to uppercase."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Returns a copy of this string converted to uppercase.
 ```AL
 Result :=   Text.ToUpper()
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  

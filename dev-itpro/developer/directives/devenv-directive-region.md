@@ -19,7 +19,7 @@ ms.author: solsen
 The `#region` directive is used to mark a block of code that you can expand or collapse. This can, for example, be useful for larger files for better readability or for focusing on code that you're currently working on. The `#endregion` specifies the end of a `#region` block of code. 
 
 > [!NOTE]  
-> On the first line of the `#region` a text comment can be added to describe the purpose of the block of code, see the example below.
+> On the first line of the `#region` a text comment can be added to describe the purpose of the block of code, see the following example.
 
 ## Syntax
 

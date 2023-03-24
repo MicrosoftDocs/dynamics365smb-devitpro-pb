@@ -13,7 +13,7 @@ author: thpeder
 
 # Application Validation Service Diagnostics Overview
 
-When an app is submitted for AppSource, a per-tenant extension is submitted, or a tenant is about to be upgraded, the Application Validation Service is run. This article gives an overview of the diagnostics that running the AVS tool gives, sorted by ID and severity. For more information about a specific diagnostic, choose the ID.
+When an app is submitted for AppSource, a per-tenant extension is submitted, or when a tenant is about to be upgraded, the Application Validation Service is run. This article gives an overview of the diagnostics that running the AVS tool gives, sorted by ID and severity. For more information about a specific diagnostic, choose the ID.
 
 |ID|Message|Default Severity|
 |--|-----------|----------------|

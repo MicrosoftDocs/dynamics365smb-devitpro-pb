@@ -1,19 +1,18 @@
 ---
-title: Adding Actions to a Page
-description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client.
-
+title: Adding actions to a page
+description: Create and display actions in the ribbon of all pages and group them together under Actions, Navigate, Reports tabs and preview it in the Windows Client
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/19/2022
+ms.date: 12/15/2022
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# Adding Actions to a Page
+# Adding actions to a page
 
 This topic shows how to create new actions, how to add actions to a page, and how to preview them in the [!INCLUDE[d365fin_md](includes/d365fin_md.md)] web client. In [!INCLUDE[d365fin_md](includes/d365fin_md.md)], actions can be displayed in the action bar of all pages and grouped together under the following actions menus: 
 
-- Promoted action categories
+- Promoted action categories (legacy)
 - Actions  
 - Navigate
 - Report
@@ -39,6 +38,7 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 > Actions can only be linked to a page, or to a group control. Actions cannot be linked to fields, or parts on a page.
 
 ## Set an icon to an action
+
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] includes images that you can use on actions in command bar menus and promoted actions on the ribbon. To add an image to an action, you add the **Image** property and you must provide the name of the image you that want to use from the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] Action icon library. By default, the size of images is 16 pixels high by 16 pixels wide. For promoted actions, you can choose to display larger images that are 32 pixels high and 32 pixels wide. For more information, see [Image Property](properties/devenv-image-property.md).
 
 
@@ -46,7 +46,7 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 
 ### Example
 
-The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar.
+The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar. The following example uses the *legacy* syntax for promoted actions. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
 1. Actions menu: The `area(Processing)` action area is used to display the action in the Actions menu. This action uses the **Promoted** and **PromotedCategory** properties in order to display the action in the promoted actions menu called **Process**.  
 1. New Document group: The `area(Creation)` action area is used to display the action in the **New document** group in the Actions menu. Also, this action uses the **Image** property to display a form icon instead of a default icon.
@@ -126,7 +126,7 @@ You can assign different icons for your actions from the [!INCLUDE[d365fin_md](i
 
 ## Set up a keyboard shortcut on an action
 
-You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Pressing the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut Shift+Ctrl+D to an action:
+You can use the [ShortcutKey](properties/devenv-shortcutkey-property.md) property to add a keyboard shortcut to an action. Pressing the key that you set up with this property provides the same result as selecting the action. For example, the following code adds the shortcut **Shift+Ctrl+D** to an action:
 
 ```AL
 action(DoThisAction)
@@ -142,6 +142,10 @@ action(DoThisAction)
 }
 ```
 
+> [!NOTE]  
+> Actions are used in different contexts to drive different experiences in the user interface. Be aware that keyboard shortcuts are not supported across all contexts. For example, the `ShortcutKey` property is not supported for actions defined in `area(sections)` or `area(embedding)`.
+
+
 To help you design shortcuts, keep the following information in mind:
 
 - Some shortcuts have default assignments, either defined by the platform or in the base application. Don't reuse shortcuts that are already assigned for different purposes. For a list of these shortcuts, see [Keyboard Shortcuts for the Dynamics 365 Business Central Web Client](/dynamics365/business-central/keyboard-shortcuts). Try to be consistent with shortcuts used across pages, reusing shortcuts for similar actions. 
@@ -151,7 +155,9 @@ To help you design shortcuts, keep the following information in mind:
   - If a shortcut's not defined on the page in the focused part but *is* defined on the main page, the main page's action will be triggered.
   - If a shortcut's defined on the page in the focused part and the main page, the focused part's action is triggered. Shortcut's defined in the part take precedence.  
 
-## See Also  
+
+## See also  
+
 [Actions Overview](devenv-actions-overview.md)  
 [Pages Overview](devenv-pages-overview.md)  
 [Promoted Actions](devenv-promoted-actions.md)  

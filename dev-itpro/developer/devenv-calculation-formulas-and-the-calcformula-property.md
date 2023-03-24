@@ -1,7 +1,7 @@
 ---
 title: "Calculation Formulas and the CalcFormula Property"
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 11/16/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,22 +15,22 @@ A FlowField is always associated with a calculation formula that determines how 
 
 ```AL
 <CalculationFormula> ::=  
-    [-]Exist(<TableNo> [Where (<TableFilters>)]) |  
-    Count(<TableNo> [Where (<TableFilters>)]) |  
-    [-]Sum(<TableNo>.<FieldNo> [Where(<TableFilters>)])|  
-    [-]Average(<TableNo>.<FieldNo> [Where (<TableFilters>)]) |  
-    Min(<TableNo>.<FieldNo> [Where (<TableFilters>)]) |  
-    Max(<TableNo>.<FieldNo> [Where (<TableFilters>)]) |  
-    Lookup(<TableNo>.<FieldNo> [Where (<TableFilters>)])  
+    [-]exist(<TableNo> [where (<TableFilters>)]) |  
+    Count(<TableNo> [where (<TableFilters>)]) |  
+    [-]sum(<TableNo>.<FieldNo> [where(<TableFilters>)])|  
+    [-]average(<TableNo>.<FieldNo> [where (<TableFilters>)]) |  
+    min(<TableNo>.<FieldNo> [where (<TableFilters>)]) |  
+    max(<TableNo>.<FieldNo> [where (<TableFilters>)]) |  
+    lookup(<TableNo>.<FieldNo> [where (<TableFilters>)])  
 <TableFilters> ::=  
     [<TableFilter> {,<TableFilter>}]  
 <TableFilter> ::=  
-    <DstFieldNo>=Const(<FieldConst>) |  
-    <DstFieldNo>=Filter(<Filter>) |  
-    <DstFieldNo>=Field(<SrcFieldNo>) |  
-    <DstFieldNo>=Field(UpperLimit(<SrcFieldNo>)) |  
-    <DstFieldNo>=Field(Filter(<SrcFieldNo>)) |  
-    <DstFieldNo>=Field(UpperLimit(Filter(<SrcFieldNo>)))  
+    <DstFieldNo>=const(<FieldConst>) |  
+    <DstFieldNo>=filter(<Filter>) |  
+    <DstFieldNo>=field(<SrcFieldNo>) |  
+    <DstFieldNo>=field(upperLimit(<SrcFieldNo>)) |  
+    <DstFieldNo>=field(filter(<SrcFieldNo>)) |  
+    <DstFieldNo>=field(upperLimit(filter(<SrcFieldNo>)))  
 ```  
 
 Parts of the formula are described in the following table.  

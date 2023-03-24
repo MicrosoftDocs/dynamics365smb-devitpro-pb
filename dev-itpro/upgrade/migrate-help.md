@@ -37,8 +37,7 @@ In this example, you are migrating your solution from Dynamics GP, and you have 
 If you are migrating your solution from [!INCLUDE[navsicily_md](../developer/includes/navsicily_md.md)], [!INCLUDE [nav2017](../developer/includes/nav2017.md)], or a version in between, then you most likely have been using the [!INCLUDE[navnow_md](../developer/includes/navnow_md.md)] Help Server, and your Help content is in HTML format. That means that you have a free choice of what to do:
 
 * Reuse your existing content as-is but redeployed to a new website  
-* Use the [Custom Help Toolkit](../help/custom-help-toolkit.md) to get new HTML files to supplement your existing content  
-* Use publicly available third-party solutions to convert some or all of your HTML files to MarkDown if you want to follow similar processes to the ones the Microsoft team follows  
+* Use a third-party solution to convert some or all of your HTML files to MarkDown if you want to follow similar processes to the ones the Microsoft team follows  
 
 For more information, see the [Moving to MarkDown](#moving-to-markdown) section.  
 
@@ -72,7 +71,7 @@ Once you have converted your content to MarkDown, we recommend storing your cont
 * A private or public repo in GitHub  
 * A project in [MkDocs](https://www.mkdocs.org/)  
 
-Use open-source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. By working in MarkDown, you have access to a world of open-source tools. But our [Custom Help Toolkit](../help/custom-help-toolkit.md) can help you prepare content for publishing.  
+Use open-source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. By working in MarkDown, you have access to a world of open-source tools.  
 
 If you do not yet have a website that you publish content to, then there are several ways in which you can create such a site. For example, the [MkDocs](https://www.mkdocs.org/) project generates a website for you. You can also work with a web designer to build a site to host your content. We recommend deploying to [an Azure web app](/azure/app-service/overview). [!INCLUDE [prod_short](../developer/includes/prod_short.md)] does not require a special design of your website, unlike the now deprecated [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] Help Server. It's your choice what the website looks like, including the styling.  
 

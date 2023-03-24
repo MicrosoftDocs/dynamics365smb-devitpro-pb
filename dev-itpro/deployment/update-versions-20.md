@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/07/2022
+ms.date: 03/03/2023
 ms.custom: bap-template
 ---
 
@@ -28,6 +28,10 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5024402](https://support.microsoft.com/help/5024402) |Update 20.11| March 2023|Application Build 20.11.53614</br>Platform Build 20.0.53556|
+|[5023400](https://support.microsoft.com/help/5023400)|Update 20.10 |February 2023 |Application Build 20.10.52581</br>Platform Build 20.0.52575|
+|[5022713](https://support.microsoft.com/help/5022713)|Update 20.9 |January 2023 |Application Build 20.9.51421</br>Platform Build 20.0.51404|
+|[5021671](https://support.microsoft.com/help/5021671)|Update 20.8 |December 2022 |Application Build 20.8.49971</br>Platform Build 20.0.49947  |
 |[5021002](https://support.microsoft.com/help/5021002)|Update 20.7 |November 2022 |Application Build 20.7.48483</br>Platform Build 20.0.48457  |
 |[5019241](https://support.microsoft.com/help/5019241)|Update 20.6 |October 2022 |Application Build 20.6.47024</br>Platform Build 20.0.46998  |
 |[5017795](https://support.microsoft.com/help/5017795)|Update 20.5 |September 2022 |Application Build 20.5.45889</br>Platform Build 20.0.45882  |

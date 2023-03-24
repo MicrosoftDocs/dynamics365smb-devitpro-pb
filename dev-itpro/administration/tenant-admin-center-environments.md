@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, restore, backup
-ms.date: 05/25/2022
+ms.date: 02/24/2023
 ms.author: jswymer
 ---
 
@@ -57,8 +57,8 @@ You can create new environments that are either production environments or sandb
 
 ### To create a new environment that isn't a copy of an existing environment
 
-1. On the **Environments** tab of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], choose the **New** action on the action ribbon.
-2. In the **Create Environment** pane, Specify a name for the new environment.
+1. In the navigation pane on the left side of the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)], select **Environments**, then select the **New** action on the action ribbon.
+2. In the **Create Environment** pane, specify a name for the new environment.
 3. In the **Environment Type** list, choose **Production** or **Sandbox**.
 4. In the **Application family** field, specify the type of solution that this environment is based on if it isn't [!INCLUDE [prod_short](../includes/prod_short.md)].  
 5. In the **Country** list, select the country for the environment. The specified country determines the localization for the environment and the Azure region in which the environment is created and stored.
@@ -135,14 +135,6 @@ To turn access on or off, complete the following steps:
 3. In the **Microsoft 365 licenses** pane, turn the switch on or off.
 4. Select **Save** and accept the confirmation dialog. The change takes effect immediately.
 -->
-## Delete an environment
-
-You can delete environments in the admin center, such as when a sandbox environment isn't longer needed.  
-
-> [!IMPORTANT]
-> Make sure no user is using the environment before you delete it.
->
-> Also, be very careful before you choose the *Delete* action for the environment. The action is irreversible.
 
 ## <a name="opslog"></a>Log of administrative operations
 
@@ -156,7 +148,9 @@ Currently, the log includes the following operations:
 |----|-----------|------------|---|-------------------------|
 |Copy environment|An environment was created from a copy of another environment.|[See...](tenant-admin-center-environments-copy.md)|[See...](administration-center-api_environments.md#copy-environment)||
 |Create environment |A new environment was created|[See...](#create-a-new-environment)|[See...](administration-center-api_environments.md#create-new-environment)||
-|Delete environment|An environment was deleted.|[See...](#delete-an-environment)|[See...](administration-center-api_environments.md#delete-environment)||
+|Soft delete environment|An environment was soft deleted.|[See...](tenant-admin-center-environments-delete.md#delete-an-environment)|[See...](administration-center-api_environments.md#delete-environment)||
+|Recovered environment|A deleted environment was recovered.|[See...](tenant-admin-center-environments-delete.md#recover-an-environment)|[See...](administration-center-api_environments.md#recover-environment)||
+|Delete environment|An environment was permanently deleted.|[See...](tenant-admin-center-environments-delete.md)|[See...](administration-center-api_environments.md#delete-environment)||
 |Modify environment|One of the following operations was done on an environment: <ul><li>Set update window</li><li>Set Application Insights connection string</li><li>Set security group</li><li>Clear security group</li><li>Reschedule update </li><li>Set access with Microsoft 365 licenses.</li></ul>|[See update management...](tenant-admin-center-update-management.md)<br /><br />[See telemetry...](tenant-admin-center-telemetry.md)<br /><br />[See manage access...](tenant-admin-center-manage-access.md)|[See environment settings...](administration-center-api_environment_settings.md)||
 |Move environment|An environment was moved to another Azure Active Directory organization.|[See...](tenant-admin-center-environments-move.md)|||
 |Rename environment|Environment was renamed.|[See...](tenant-admin-center-environments-rename.md)|[See...](administration-center-api_environments.md#rename-environment)||

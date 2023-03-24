@@ -40,6 +40,11 @@ The current page number of a report.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+> [!IMPORTANT]  
+> This method will be deprecated in a future update and we recommend that you do not use it.
+
 ## See Also
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

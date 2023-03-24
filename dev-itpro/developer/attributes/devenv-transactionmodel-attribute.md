@@ -42,7 +42,7 @@ The test transaction model used in the test method.
 
 ## Remarks  
 
-To create meaningful tests, you must first understand how transactions run. In a typical user scenario, a user who is logged on to a client enters data into one field of a page. Then the user enters some data in another field on the page. The user also checks the value of a third field. Finally, the user saves and closes the page. Every time a user enters data into a field, AL code may be triggered and a new transaction is automatically started. The trigger code runs within this new transaction. Field data is sent to the server where it is processed and often updated in the database. When the AL code in the trigger is finished, the transaction is automatically committed to the database and the page is refreshed with updated data.  
+To create meaningful tests, you must first understand how transactions run. In a typical user scenario, a user who's logged on to a client enters data into one field of a page. Then the user enters some data in another field on the page. The user also checks the value of a third field. Finally, the user saves and closes the page. Every time a user enters data into a field, AL code may be triggered and a new transaction is automatically started. The trigger code runs within this new transaction. Field data is sent to the server where it is processed and often updated in the database. When the AL code in the trigger is finished, the transaction is automatically committed to the database and the page is refreshed with updated data.  
 
 When you create test methods that exercise pages that interact with the database, you have the following options for simulating user scenarios and then returning the database to its initial, well-known state:  
 

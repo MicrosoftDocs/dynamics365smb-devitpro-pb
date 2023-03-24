@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a vendorPurchase object for [!INCLU
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/vendorPurchases({id})
+GET businesscentralPrefix/companies({id})/vendorPurchases({vendorId}, '{vendorNo}', '{vendorName}')
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an **vendorP
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPurchases({id})
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/vendorPurchases({vendorId}, '{vendorNo}', '{vendorName}')
 ```
 
 **Response**
@@ -53,8 +53,8 @@ Here is an example of the response.
     "vendorId": "f7a5738a-44e3-ea11-bb43-000d3a2feca1",
     "vendorNumber": "10000",
     "name": "Fabrikam, Inc.",
-   "totalPurchaseAmount": "32.0",
-   "dateFilter_FilterOnly": "2020-08-21"
+    "totalPurchaseAmount": "32.0",
+    "dateFilter_FilterOnly": "2020-08-21"
 }
 ```
 

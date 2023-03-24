@@ -48,8 +48,8 @@ In [!INCLUDE [prod_short](../../includes/prod_short.md)], weeks begin on Monday 
 This example requires that you create a DateFormulaVariable variable that is a DateFormula data type.  
 
 ```al
-if Format(DateFormulaVariable) = ' ' then  
-  Evaluate(DateFormulaVariable, '1W');  
+if Format(DateFormulaVariable) = '' then  
+  Evaluate(DateFormulaVariable, '<1W>');  
 ```  
 
 You must use the [Format Method](../system/system-format-joker-integer-string-method.md) to make a comparison with a text string. If you do not use this method, then the `if` statement will fail because you cannot compare a DateFormula data type with a Text data type.  

@@ -30,7 +30,7 @@ PATCH businesscentralPrefix/companies({companyId})/employees({employeeId})/timeR
 |--------------|-------------------------|
 |Authorization |Bearer {token}. Required.|
 |Content-Type  |application/json         |
-|If-Match  |*application/json*         |
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **timeRegistrationEntry**, the **timeRegistrationEntry** will not be updated.|
 
 
 ## Example
@@ -43,7 +43,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/timeRegistrationE
 Content-type: application/json
 
 {
-	"quantity": 8
+    "quantity": 8
 }
 ```
 
@@ -73,6 +73,7 @@ Content-type: application/json
     "unitOfMeasureId": "56a6738a-44e3-ea11-bb43-000d3a2feca1",
     "unitOfMeasureCode": "HOUR",
     "lastModfiedDateTime": "2020-08-21T15:13:58.87Z"
+}
 ```
 
 ## See also

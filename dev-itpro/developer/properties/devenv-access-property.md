@@ -3,7 +3,7 @@ title: "Access Property"
 description: "Sets the object accessibility level, which controls whether the object can be used from other code in your module or other modules."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,10 +29,10 @@ Sets the object accessibility level, which controls whether the object can be us
 
 ## Property Value
 
-|Value|Description|
-|-----------|---------------------------------------|
-|**Public**|The object can be accessed by any other code in the same module and in other modules that references it.|
-|**Internal**|The object can be accessed only by code in the same module, but not from another module.|
+|Value|Available or changed with|Description|
+|-----------|-----------|---------------------------------------|
+|**Public**|runtime version 1.0|The object can be accessed by any other code in the same module and in other modules that references it.|
+|**Internal**|runtime version 1.0|The object can be accessed only by code in the same module, but not from another module.|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
@@ -97,7 +97,7 @@ codeunit 50113 MyCodeunit
 ## Remarks 
 
 > [!IMPORTANT]  
-> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection-based mechanisms such as `RecordRef`, or `TransferFields`. And the `OnRun` trigger can be run on `internal` codeunits by using `Codeunit.Run`. Setting the object accessibility level as `Access = Internal;` *cannot* be used as a security boundary. Also see [JSON Files](../devenv-json-files.md#Appjson).
+> This property is only taken into consideration at compile time. For example, at compile time, a table with `Access = Internal` cannot be used from other modules that do not have access to the internals of the module where the table is defined, but at runtime, any module can access the table by using reflection-based mechanisms such as `RecordRef`, or `TransferFields`. And the `OnRun` trigger can be run on `internal` codeunits by using `Codeunit.Run`. Setting the object accessibility level as `Access = Internal;` *cannot* be used as a security boundary. Also see [JSON Files](../devenv-json-files.md#appjson-file).
 
 > [!NOTE]
 > The accessibility of tables and table fields is taken into account when using [Designer](../devenv-inclient-designer.md). As a consequence, only table fields which have their accessibility set to `Public` can be added to the page. 

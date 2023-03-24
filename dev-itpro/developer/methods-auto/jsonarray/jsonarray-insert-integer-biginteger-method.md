@@ -45,6 +45,10 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 The operation will fail if the Index is smaller than 0 or greater or equal than JsonArray.Count.
 
 ## See Also

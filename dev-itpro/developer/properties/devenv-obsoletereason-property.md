@@ -3,7 +3,7 @@ title: "ObsoleteReason Property"
 description: "Specifies why the object has been marked as Pending in the ObsoleteState property."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 12/08/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,10 +28,8 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 -   Enum Type
 -   Enum Value
 -   Page Action
--   Page Action Area
 -   Page Action Group
 -   Page Action Separator
--   Page Area
 -   Page Part
 -   Page System Part
 -   Page Chart Part
@@ -46,6 +44,8 @@ Specifies why the object has been marked as Pending in the ObsoleteState propert
 -   Report Column
 -   Request Page
 -   Xml Port
+-   Page Action Area
+-   Page Area
 -   Page
 -   Page View
 -   Profile

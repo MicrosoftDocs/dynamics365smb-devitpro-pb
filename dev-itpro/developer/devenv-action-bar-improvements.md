@@ -1,16 +1,16 @@
 ---
-title: "Action Bar Improvements"
-description: "Introducing the action bar for Dynamics 365 Business Central"
+title: Action bar improvements
+description: Introducing the action bar for Dynamics 365 Business Central
 author: jacobwj
 ms.author: solsen
-ms.reviewer: 
-ms.service: "dynamics365-business-central"
+ms.reviewer: solsen
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 11/03/2022
-ms.custom: na
+ms.date: 03/16/2023
+ms.custom: bap-template
 ---
 
-# Action Bar Improvements
+# Action bar improvements
 
 With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, we’ve organized the action bar menus to keep related actions together and avoid the same action being available in multiple menus. This helps reduce clutter and confusion, especially for users new to [!INCLUDE [prod_short](includes/prod_short.md)]. 
 
@@ -32,7 +32,7 @@ These extra optimizations are available to all upgraded customers, but not enabl
 
 With the **Modern Action Bar** feature enabled, the following further improvements take effect for all users in a [!INCLUDE [prod_short](includes/prod_short.md)] environment: 
 
-With document, card, worksheet, and listplus pages, the action bar is now presented in the pinned state when opened for the first time. This helps discovering relevant actions in the action bar and provides one-click reach to actions, without first pinning the action bar yourself. 
+With document, card, worksheet, and listplus pages that have actions in the Home/Process group, the action bar is now presented in the pinned state when opened for the first time. This helps discovering relevant actions in the action bar and provides one-click reach to actions, without first pinning the action bar yourself. 
 
 With document pages that have a Lines subpage, or any other page having a subpage, the subpage’s actions are now visible right away, without requiring that you select “More options.” 
 

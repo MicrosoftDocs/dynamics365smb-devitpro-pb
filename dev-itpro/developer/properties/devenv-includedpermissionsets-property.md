@@ -36,6 +36,7 @@ You can also exclude permission sets by using the [ExcludedPermissionSets](deven
 
 ## See Also
 
+[ExcludedPermissionSets Property](devenv-excludedpermissionsets-property.md)  
 [PermissionSet Object](../devenv-permissionset-object.md)  
 [PermissionSet Extension Object](../devenv-permissionset-ext-object.md)  
 [Get Started with AL](../devenv-get-started.md)  

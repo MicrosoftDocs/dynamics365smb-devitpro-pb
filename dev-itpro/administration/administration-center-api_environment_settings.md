@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 06/14/2022
+ms.date: 02/24/2023
 ---
 # Environment Settings
 
@@ -19,7 +19,7 @@ Allows you to manage environment-specific settings such as the AppInsights key o
 Returns the update settings for the environment.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -58,7 +58,7 @@ Returns the environment's update settings, or "null" if none exist
 Returns a list of time zones and basic information associated with them, such as daylight saving time and the current offset from Coordinated Universal Time (UTC). Time zone identifiers are the only allowed values for the `timeZoneId` parameter of the update settings.
 
 ```
-GET /admin/v2.15/applications/settings/timezones
+GET /admin/v2.18/applications/settings/timezones
 ```
  
 ### Response
@@ -86,7 +86,7 @@ Sets the update window start and end times.
 
 ```
 Content-Type: application/json
-PUT /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
+PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/upgrade
 ```
 
 ### Route Parameters
@@ -158,14 +158,14 @@ Returns the updated settings
 
 ## Put AppInsights key
 
-Sets the key an environment uses for Azure AppInsights.
+Sets the connection string or instrumentation key an environment uses for Azure Application Insights resource, which you can use to gather telemetry. For information about Application Insights and the connection string/instrumentation key, go to [Enable Environment Telemetry](telemetry-enable-application-insights.md#appinsights).
 
 > [!IMPORTANT]
 > This process requires a restart to the environment, which is triggered automatically when you call this API. Plan to do this during non-working hours to avoid disruptions.
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
+PUT /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/appinsightskey
 ```
 
 ### Route Parameters
@@ -199,7 +199,7 @@ POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName
 Gets the Azure AD group currently assigned to an environment.
 
 ```
-GET /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+GET /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -238,7 +238,7 @@ Assigns an Azure AD group to an environment.
 
 ```
 Content-Type: application/json
-POST /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+POST /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters
@@ -266,7 +266,7 @@ Returns 200 if successful, or 404 if the group doesn't exist in Azure AD.
 Clears an Azure AD group that is currently assigned to an environment.
 
 ```
-DELETE /admin/v2.15/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
+DELETE /admin/v2.18/applications/{applicationFamily}/environments/{environmentName}/settings/securitygroupaccess
 ```
 
 ### Route Parameters

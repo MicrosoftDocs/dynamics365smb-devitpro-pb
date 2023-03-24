@@ -3,7 +3,7 @@ title: "Technical Validation FAQ"
 description: Describing the most common questions when submitting your app to AppSource.
 author: qutreson
 ms.custom: na
-ms.date: 01/03/2022
+ms.date: 12/20/2022
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -25,7 +25,7 @@ The extensions in your submission are validated for all the releases targeted by
 Based on the app.json file of your extension, the service automatically computes the minimum release targeted by your submission and the extensions are then validated for all releases from this minimum release to the current release in production. For more information, see the example in [Technical Validation Checklist](devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated). The 'Target Release' (Current, Next Minor, Next Major) available under 'Supplemental Content' in Partner Center is ignored and will be removed.
 
 > [!IMPORTANT]  
-> The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
+> The minimum release computed for your submission also defines the availability in [!INCLUDE[prod_short](../includes/prod_short.md)] of all the extensions in your submission.
 >
 > For example, if the minimum release computed is 18.1, your extensions will be available starting from release 18.1.
 
@@ -34,9 +34,9 @@ Based on the app.json file of your extension, the service automatically computes
 
 ### Against which countries/regions are my apps validated?
 
-The extensions in your submission are validated for all the countries/regions targeted by the submission, which are available in Business Central. You can see which countries/regions you've selected in Partner Center under `Availability > Edit Markets`. 
+The extensions in your submission are validated for all the countries/regions targeted by the submission, which are available in [!INCLUDE[prod_short](../includes/prod_short.md)]. You can see which countries/regions you've selected in Partner Center under `Availability > Edit Markets`. 
 
-When adding new localizations in Business Central, these countries/regions can be added to Partner Center before they're ready in Business Central. If you're targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to Business Central if the localization isn't yet ready in Business Central. Generally, it's possible to upload apps for 'Planned' localizations a few weeks before they're officially released. When the localization becomes available, if you're experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you are using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
+When you're adding new localizations in [!INCLUDE[prod_short](../includes/prod_short.md)], these countries/regions can be added to Partner Center before they're ready in [!INCLUDE[prod_short](../includes/prod_short.md)]. If you're targeting a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), depending on when your submission is processed, your apps might not be uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] if the localization isn't yet ready in [!INCLUDE[prod_short](../includes/prod_short.md)]. Generally, it's possible to upload apps for 'Planned' localizations a few weeks before they're officially released. When the localization becomes available, if you're experiencing issues installing your apps, you should increase the version in the app.json and submit the packages again in Partner Center. If you're using Azure Application Insights, you can check whether the country/region was validated using this [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328).
 
 ### Against which baselines are my apps validated?
 
@@ -57,7 +57,7 @@ For example, let's consider an app A, which has an offer in the AppSource market
 > If some apps in your submission already have been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] with the same version for some countries/regions, then the app will not be validated again for these countries/regions.
 
 > [!IMPORTANT]
-> If one or more libraries in your submission have their own offer, their listing(s) in the AppSource marketplace won't be updated automatically. In order to keep the listing(s) in sync with the version of the app(s) uploaded to Business Central, you should submit a submission for their related offer(s).
+> If one or more libraries in your submission have their own offer, their listing(s) in the AppSource marketplace won't be updated automatically. In order to keep the listing(s) in sync with the version of the app(s) uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)], you should submit a submission for their related offer(s).
 
 ### How long does the 'Automated application validation' take?
 
@@ -79,7 +79,7 @@ We don't run a manual validation of the apps anymore. Instead, we rely on you to
 
 Shortly after the offer publishing process has been completed in Partner Center, your extensions will be available for installation in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-Business Central currently doesn't support installing offers at the "Preview creation" step.
+[!INCLUDE[prod_short](../includes/prod_short.md)] currently doesn't support installing offers at the "Preview creation" step.
 
 ### When should I include my library apps as part of my submission?
 
@@ -92,7 +92,7 @@ You're only required to include the dependencies for your extension as part of y
 
 If you didn't include the dependencies for your app and they aren't available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to Business Central as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries, you should use the .app file that has already been uploaded to Business Central or increase the version number in the manifest of the extension (the app.json file).
+If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file).
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
@@ -102,7 +102,7 @@ If this stage failed with an error message similar to `The validation of the sub
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'`, you must update the list of extensions submitted. For more information, see "When should I include my library apps as part of my submission?".
 
-If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in Business Central. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in Business Central and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
+If this stage failed with an error message similar to `The submission must target at least one existing country/region of Business Central`, your submission doesn't target any countries/regions currently available in [!INCLUDE[prod_short](../includes/prod_short.md)]. If your submission targets a country/region marked as 'Planned' in [Country/regional availability](../compliance/apptest-countries-and-translations.md), you must wait for the localization to become available in [!INCLUDE[prod_short](../includes/prod_short.md)] and resubmit your offer. Generally, it's possible to upload apps for new localizations, a few weeks before they're made available to customers.
 
 If this stage failed with an error message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') contains inconsistent information about the package id/name/publisher/version`, it means that something went wrong when the package included in your submission was built. In order to mitigate the issue, you must rebuild the package and submit it again.
 
@@ -121,7 +121,7 @@ Review the Marketing requirements and the [Marketing Validation FAQ](readiness/r
 
 ### My app failed at the "Publish application with the service" stage, what do I do next?
 
-At this stage, your extensions are being published to Business Central.
+At this stage, your extensions are being published to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
 If this stage failed with the following error message `Automated upload to Business Central of the extensions in the submission has failed. Please retry the operation and contact Partner Center support if it fails again.`, you should create a new submission in Partner Center. If it fails again, you should create a support case in Partner Center as documented in the dedicated section below.
 
@@ -141,7 +141,7 @@ Here's a list of steps that you can follow to troubleshoot this issue:
 
 1. Validate that the Application Insights resource queried is the same one as specified in the manifest (app.json) of your extension.
 2. Validate that the time range when running the query covers the time of the submission.
-3. If you are using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it's more reliable. Make sure to use the full connection string from your Azure Application Resource.
+3. If you're using the `applicationInsightsKey` property in the manifest (app.json) of your extension, you should use the `applicationInsightsConnectionString` property instead because it's more reliable. Make sure to use the full connection string from your Azure Application Resource.
 4. If you're using the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension, make sure that you're using the full connection string and that it contains, at least, the following key-value pairs: `InstrumentationKey=<some-key>`, `IngestionEndpoint=<some-url>`, and `LiveEndpoint=<some-url>`. For more information, see [Connection strings](/azure/azure-monitor/app/sdk-connection-string)
 5. Validate the data sampling and daily cap set for the Azure Application Insights resource. Navigate to the resource in Azure and go to 'Configure > Usage and estimated costs'. Validate that your Application Insights retains all data (data sampling is set to 100%) and that you haven't reached your daily cap. For more information, see [Sampling in Application Insights](/azure/azure-monitor/app/sampling). 
 
@@ -202,25 +202,32 @@ This section contains questions related to the identity of apps in AppSource. Fo
 
 ### When is it okay to change the name of my extension?
 
-Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it's possible to change the name of your extensions.
+Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it's possible to change the name of your extensions without breaking dependent extensions.
 
 When renaming an extension, you must:
 
 - increment the version number in the manifest of your extension,
-- make sure that your submission only targets releases of Business Central starting from 19.0.
+- make sure that your submission only targets releases of [!INCLUDE[prod_short](../includes/prod_short.md)] starting from 19.0.
 - update the name of your offer in Partner Center - if your extension is the one for which the offer is created.
 
 ### When is it okay to change the publisher of my extension?
 
-Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it's possible to change the publisher name of your extensions.
+Starting from [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 2 (version 19.0), it's possible to change the publisher name of your extensions without breaking dependent extensions.
 
 When changing the publisher of an extension, you must:
 
 - increment the version number in the manifest of your extension,
-- make sure that your submission only targets releases of Business Central starting from 19.0,
+- make sure that your submission only targets releases of [!INCLUDE[prod_short](../includes/prod_short.md)] starting from 19.0,
 - contact d365val@microsoft.com in order to register your affixes to your new publisher name.
 
-### Is it possible to have multiple apps with the same ID in AppSource? 
+### When is it okay to change the App ID of my extension?
+
+> [!IMPORTANT]  
+> The App ID is a critical part of the identity of apps in [!INCLUDE[prod_short](../includes/prod_short.md)], and changing it is a breaking change for all extensions depending on it. You should then not change the App ID of extensions which are installed for customers in Business Central Online.
+
+If you are submitting a new version of your extension with a different App ID for an existing offer, then this new version will be considered as a different extension. This means that all extensions that depend on the extension with the old app ID must be updated to reference the new App ID. If they are not updated, this will cause issues such as customer environment upgrade failures which must be fixed within the required time period, see [Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online](app-maintain.md). Since the app ID is part of how data is stored in [!INCLUDE[prod_short](../includes/prod_short.md)], this also means that you will have to migrate the data for all customers that have the extension with the old App ID installed. Note that we do not provide tools for performing data migration in SaaS, but you can create your own solution to export data from the old extension and re-import the data after the extension change.
+
+### Is it possible to have multiple apps with the same App ID in AppSource? 
 
 Each unique codebase has one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you'll get conflicts. 
 
@@ -228,20 +235,42 @@ Each unique codebase has one unique ID. If you have four apps in AppSource, you 
 
 If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
 
+## Questions about Business Central offers
+
+### When is it okay to change the offer type of my offer?
+
+There exist two types of offers for [!INCLUDE[prod_short](../includes/prod_short.md)] in AppSource: `connect` apps and `add-on` apps. It's possible to change an offer type from `connect` to `add-on` by following the steps listed in the dedicated entry below. However, we don't recommend changing an offer from `add-on` to `connect` since it would be a breaking change for all other extensions depending on the apps in this offer.
+
+For more information about the offer types for [!INCLUDE[prod_short](../includes/prod_short.md)], see [App type, contact type, and customer leads](readiness/readiness-checklist-e-industries-categories-apptype.md).
+
+### How to change the offer type from 'connect' app to 'add-on' app?
+
+When changing a `connect` app to an `add-on` app, you should:
+- Navigate to your offer listing in the AppSource marketplace, and copy the URL for your offer
+- Retrieve the App ID assigned by the service to your offer: the App ID can be found as `<appId>` in `https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.<publisherId>%7CAID.<offerId>%7CPAPPID.<appId>`
+- Use this App ID in the `app.json` of the main extension uploaded to your offer
+
+> [!NOTE]  
+> The App ID is used as part of the URL of the offer listing and is used as a key to retrieve to customer review left on the offer listing. Not preserving the App ID means that the offer URL will change and customer reviews will be lost.
+
+### How to automatically update my offer using Partner Center submission API?
+
+It is possible to automatically submit apps to AppSource from our DevOps setup by using the [Partner Center Ingestion API](/azure/marketplace/azure-app-apis). For more information, you can also check this blog post [Automatic AppSource Submission of Business Central apps](https://freddysblog.com/2022/09/22/automatic-appsource-submission-of-business-central-apps).
+
 ## Channels to ask questions or report issues
 
 In the following, you can read about how you reach out for support most efficiently.
 
 ### When do I contact d365val@microsoft.com?
 
-When registering affixes for your publisher, or adding a new publisher name to your affixes. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
+When registering affixes for your publisher, or adding a new publisher name to your affixes. When contacting d365val@microsoft.com, make sure to provide the required information documented in [Benefits and Guidelines for using a Prefix or Suffix](../compliance/apptest-prefix-suffix.md).
 
 ### When do I contact Partner Center customer support?
 
-When your submission fails to be successfully completed in Partner Center, but are having issues updating your extension(s) to fix the validation errors.
+When your submission fails to be successfully completed in Partner Center, but you're experiencing issues updating your extension(s) to fix the validation errors.
 
 > [!IMPORTANT]  
-> If you are using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages you found. Including the results from the TSG is also recommended.
+> If you're using Azure Application Insights, before opening a support case for a failure at the 'Automated application validation', you must analyze the [signals](../administration/telemetry-appsource-submission-validation-trace.md) emitted in your Azure Application Insights storage. You can do so by using the [Troubleshooting Guide (TSG)](https://go.microsoft.com/fwlink/?linkid=2172328). When opening a support case, you must include the Kusto queries you used and the diagnostic messages that you found. Including the results from the TSG is also recommended.
 
 ### When do I contact Business Central customer support?
 
@@ -249,13 +278,15 @@ When your submission has been successfully completed in Partner Center, but your
 
 ### When do I log an issue on NavContainerHelper on GitHub?
 
-When you have questions or bugs regarding the self-validation script. For more information, see [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
+When you have questions or bugs regarding the self-validation script, or any of the modules exposed by BcContainerHelper.
+
+For more information, see [https://github.com/microsoft/navcontainerhelper/issues](https://github.com/microsoft/navcontainerhelper/issues).
 
 ### When do I write on Yammer?
 
-When you have questions on developing and maintaining AppSource apps or about the validation process, you can ask a question on Yammer. In this group, you'll find announcements from Microsoft together with discussions around various AppSource-related articles.
+When you have questions on developing and maintaining AppSource apps, on automatically submitting apps to AppSource, or about the validation process, you can ask a question on Yammer. In this group, you'll find announcements from Microsoft together with discussions around various AppSource-related articles.
 
-You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, please email dyn365bep@microsoft.com. 
+You can join this AppSource group at [aka.ms/BCYammer](https://aka.ms/bcyammer) (note that you need to be a Microsoft partner to do so). If you have problems connecting, email dyn365bep@microsoft.com. 
 
 ## See also
 

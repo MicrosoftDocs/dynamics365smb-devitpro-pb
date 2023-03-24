@@ -1,12 +1,12 @@
 ---
 title: Configure Azure Active Directory Authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Azure Active Directory with OpenID Connect.
-ms.custom: na
-ms.date: 01/26/2022
+ms.custom: bap-template
+ms.date: 01/24/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.author: jswymer
+ms.topic: how-to
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -219,18 +219,18 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 
     This step is different for a single-tenant and multitenant [!INCLUDE[server](../developer/includes/server.md)] deployments.
 
-    1. Set the `ValidAudiences` parameter to the **Application (client) ID** of the registered application in Azure AD.
+    1. Set the `ValidAudiences` parameter to the **Application (client) ID** of the registered application in Azure AD. If you'll be using [service-to-service (S2S) authentication](automation-apis-using-s2s-authentication.md) for Business Central APIs, include `https://api.businesscentral.dynamics.com` in the value.
 
         The value has the following format:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>"
+        Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName ValidAudiences -KeyValue "<application ID>;https://api.businesscentral.dynamics.com"
         ```
 
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666"
+        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ValidAudiences -KeyValue "44444444-cccc-5555-dddd-666666666666;https://api.businesscentral.dynamics.com"
         ```
 
     2. Set the `ClientServicesFederationMetadataLocation` parameter.
@@ -265,21 +265,37 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         For example:
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
+        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common/FederationMetadata/2007-06/FederationMetadata.xml"
         ```
 
         ---
 
-    > [!IMPORTANT]
-    > The `AzureActiveDirectoryClientSecret`, `AzureActiveDirectoryClientId`, and `AzureActiveDirectoryClientSecret` parameters aren't used. The `AzureActiveDirectoryClientId` must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
+       > [!IMPORTANT]
+       > The `AzureActiveDirectoryClientSecret`, `AzureActiveDirectoryClientId`, and `AzureActiveDirectoryClientSecret` parameters aren't used. The `AzureActiveDirectoryClientId` must be empty or set to `00000000-0000-0000-0000-000000000000`. If not, you'll get the following error when you try to sign in to Business Central: `The value for the WSFederationLoginEndpoint configuration settings cannot be empty`.
 
-<!--
-4. Disable token-signing certificate validation by setting `DisableTokenSigningCertificateValidation` to `true`.
+    3. If you'll be setting up the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] add-in for Excel, set the `WSFederationLoginEndpoint` parameter.
 
-    ```powershell
-    Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName DisableTokenSigningCertificateValidation -KeyValue true
-    ```
--->
+        The WS-federation login endpoint is the URL of the sign-on page that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] redirects to when users sign in from a client. Specify a URL in the following format:
+
+        ```
+        https://login.microsoftonline.com/<AAD TENANT ID>/wsfed?wa=wsignin1.0%26wtrealm=<Application ID URI>%26wreply=<Redirect URL>
+        ```
+
+        |Parameter|Description|
+        |-|-|-|
+        |`<AAD TENANT ID>`|The ID of the Azure AD tenant ID or its domain, like `11111111-aaaa-2222-bbbb-333333333333` or `CRONUSInternationLtd.onmicrosoft.com`.|
+        |`<Application ID URI>`|The ID that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in Azure AD, for example `api://44444444-cccc-5555-dddd-666666666666` or `https://cronusinternationltd.onmicrosoft.com/businesscentral`.|
+        |`<Redirect URL>`|The redirect URL that was assigned to the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] application when it was registered in the Azure AD tenant. This parameter must point to the SignIn page of the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. Make sure it exactly matches the **Redirect URL** that was configured on the application in Azure AD.|
+
+       > [!IMPORTANT]
+       > The string parameter must be URI-encoded. This means, for example, use "%26" instead of "&".
+
+        **Example**
+
+        ```powershell
+        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
+        ```
+
 4. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.
 
     ```powershell
@@ -291,13 +307,13 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     **Example**
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC200  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
+    Set-NAVServerConfiguration -ServerInstance BC210  -KeyName AppIdUri -KeyValue "https://cronusinternationltd.onmicrosoft.com"
     ```
 
 5. Restart the server instance. For example:
 
     ```powershell
-    Restart-NAVServerInstance -ServerInstance BC200
+    Restart-NAVServerInstance -ServerInstance BC210
     ```
 <!--
 ---
@@ -336,7 +352,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
 1. Set the `ClientServicesCredentialType` key to `AccessControlService`.
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance BC200 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance BC210 -KeyName ClientServicesCredentialType -KeyValue "AccessControlService"
     ```
 
 2. Set the `AadApplicationId` key to the application (client) ID of the registered application for Business Central in Azure AD.
@@ -389,7 +405,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
     or
 
     ```powershell
-    Set-NAVServerConfiguration -ServerInstance BC200 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common"
+    Set-NAVServerConfiguration -ServerInstance BC210 -KeyName ClientServicesFederationMetadataLocation -KeyValue "https://login.microsoftonline.com/common"
     ```
 
     ---
@@ -423,7 +439,7 @@ Mount your tenants by using the [Mount-NAVTenant cmdlet](/powershell/module/micr
 For example:
 
 ```powershell
-Mount-NAVTenant -ServerInstance BC200  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
+Mount-NAVTenant -ServerInstance BC210  -Tenant Tenant1 –DatabaseServer ..\BCDEMO -DatabaseName "BC Demo Database" -AadTenantId 1111-aaaa-2222-bbbb-333333333333
 ```
 <!--
 --- 
@@ -472,7 +488,7 @@ Set-NAVServerConfiguration -ServerInstance $BCServerInstanceName  -KeyName Exten
 **Example**
 
 ```powershell
-Set-NAVServerConfiguration -ServerInstance BC200  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
+Set-NAVServerConfiguration -ServerInstance BC210  -KeyName ExtendedSecurityTokenLifetime -KeyValue "20"
 ```
 
 ### Using host names for tenants

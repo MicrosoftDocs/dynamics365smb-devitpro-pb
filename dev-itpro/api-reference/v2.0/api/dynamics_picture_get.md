@@ -20,9 +20,9 @@ Retrieve the properties and relationships of a picture object for [!INCLUDE[prod
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).s
 ```
 GET businesscentralPrefix/companies({companyId})/items({itemId})/picture
-GET businesscentralPrefix/companies({companyId})/employee({employeeId})/picture
-GET businesscentralPrefix/companies({companyId})/vendor({vendorId})/picture
-GET businesscentralPrefix/companies({companyId})/customer({customerId})/picture
+GET businesscentralPrefix/companies({companyId})/employees({employeeId})/picture
+GET businesscentralPrefix/companies({companyId})/vendors({vendorId})/picture
+GET businesscentralPrefix/companies({companyId})/customers({customerId})/picture
 
 ```
 
@@ -39,12 +39,12 @@ If successful, this method returns a ```200 OK``` response code and a **picture*
 
 **Request**
 
-Here is an example of the request. 
+Here is an example of the request.
 
-**GET Metadata** 
+**GET Metadata**
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(itemId)
+GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture
 ```
 **Response**
 
@@ -56,28 +56,28 @@ Here is an example of the response.
 ```json
 {
     "id": "53049aad-bde4-ea11-bbf2-00155df3a615",
-    "parentType": "Customer", 
+    "parentType": "Item", 
     "width": 400,
     "height": 400,
     "contentType": "image/jpeg",
-    "pictureContent@odata.mediaEditLink": "http://onbuyuka-azvm1.europe.corp.microsoft.com:7047/Navision_NAV/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture/pictureContent",
-    "pictureContent@odata.mediaReadLink": "http://onbuyuka-azvm1.europe.corp.microsoft.com:7047/Navision_NAV/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture/pictureContent"
+    "pictureContent@odata.mediaEditLink": "http://bcserver:7048/BC/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture/pictureContent",
+    "pictureContent@odata.mediaReadLink": "http://bcserver:7048/BC/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture/pictureContent"
 }
 ```
 
 **GET Content**
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(itemId)/content
+GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture/pictureContent
 ```
 
 **Response**
 
-Body is the raw image data. 
+Body is the raw image data.
 
 
 ## See also
-[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[picture](../resources/dynamics_picture.md)    
-[Delete picture](dynamics_picture_Delete.md)    
-[Update picture](dynamics_picture_Update.md)    
+[Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)
+[picture](../resources/dynamics_picture.md)
+[Delete picture](dynamics_picture_Delete.md)
+[Update picture](dynamics_picture_Update.md)

@@ -12,6 +12,8 @@ ms.date: 07/29/2022
 
 # Transferring Data Between Tables using DataTransfer
 
+> **APPLIES TO:**  Business Central 2022 release wave 2 (version 21.0) and later.
+
 [DataTransfer](methods-auto/datatransfer/datatransfer-data-type.md) is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, DataTransfer produces SQL code that operates on sets. This behavior improves the performance when moving data during upgrade. 
 
 For comparison, the following code illustrates how to copy rows using the record API:
@@ -156,6 +158,9 @@ The join condition can be specified on arbitrary fields, which leaves the possib
 Calling CopyRows on the DataTransfer object inserts a row in the destination table for each matching row in the source table. Fields in the inserted row are populated with values specified by calling AddFieldValue or AddConstantField. Fields not specified by AddFieldValue or AddConstantField are populated with the field's [InitValue](properties/devenv-initvalue-property.md) or the field's default value.
 
 If the code tries to copy a row from the source table that has the same primary key as an existing row in the destination table, a runtime error will be thrown.
+
+> [!NOTE]
+> Copying the SystemID and [data audit](devenv-table-system-fields.md#audit) fields using CopyRows is supported in Business Central version 21.5 and later.
 
 ### Example 2
 
