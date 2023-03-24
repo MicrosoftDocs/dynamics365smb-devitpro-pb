@@ -20,3 +20,9 @@
 |AL0000I74|	Azure Function Integration |[Request sent to Azure function succeeded: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
 |AL0000I75|	Azure Function Integration |[Authorization failed to Azure function: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
 |AL0000I7P|	Azure Function Integration |[Request sent to Azure function failed: {Function Host}](../administration/telemetry-azure-function-integration-trace.md)|
+|AL0000DHR|	Performance Toolkit |[Performance Toolkit run started](../administration/telemetry-performance-toolkit-trace.md#started)|
+|AL0000DHS|	Performance Toolkit |[Performance Toolkit run finished](../administration/telemetry-performance-toolkit-trace.md#completed)|
+|AL0000DHT|	Performance Toolkit |[Performance Toolkit run cancelled](../administration/telemetry-performance-toolkit-trace.md#cancelled)|
+|AL0000DGF|	Performance Toolkit |[Performance Toolkit - {BCPT Header code} - {BCPT Scenario code} - {BCPT Line status}](../administration/telemetry-performance-toolkit-trace.md#scenario)|
+|AL0000G7J|	Feature Telemetry |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
+|AL0000G7K|	Feature Telemetry |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|

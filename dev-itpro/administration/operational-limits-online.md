@@ -3,7 +3,7 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 09/22/2022
+ms.date: 03/16/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -104,7 +104,9 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 | Max companies | The maximum number of companies that can be contained in one environment.|300|
 
 > [!TIP]  
-> This company limit will take effect in 2023 wave 1 release. If you already have more than 300 companies in one environment, please distribute them across more environments to avoid exceeding the limit per environment.
+> This company limit will take effect in 2023 wave 1 release. When in effect, exceeding the limit will prevent you from doing some environment operations. For information about the consequences of exceeding the limit, go to [Operational challenges with many companies per environment](environment-company-limit.md).
+>
+> If you already have more than 300 companies in one environment, distribute them across more environments to avoid problems later.
 
 ##  <a name="ODataServices"></a> OData request limits (per environment)
   

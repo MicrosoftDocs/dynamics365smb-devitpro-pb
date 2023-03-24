@@ -3,7 +3,7 @@ title: "List.GetRange(Integer, Integer) Method"
 description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/23/2022
+ms.date: 01/10/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,6 +46,8 @@ A shallow copy of a range of elements in the source List.
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
 
 For examples on *shallow copy* versus *deep copy*, see [List Data Type](list-data-type.md).
 

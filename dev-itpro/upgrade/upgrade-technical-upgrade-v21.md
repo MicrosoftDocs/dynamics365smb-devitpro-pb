@@ -2,7 +2,7 @@
 title: "Technical Upgrade to Version 21"
 description: Describes how to do a technical upgrade from Business Central V18, V19, V20 to V21
 ms.custom: na
-ms.date: 12/09/2022
+ms.date: 02/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,7 @@ $CustomerLicense = "The file path and name of the customer license"
 
 3. Install version 21 components.
 
-    You'll keep previous version installed for now. When you install version 21, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 18.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll keep previous version installed for now. When you install version 21, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 20.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 

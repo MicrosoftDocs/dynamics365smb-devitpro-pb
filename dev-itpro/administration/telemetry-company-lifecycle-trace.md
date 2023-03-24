@@ -33,6 +33,7 @@ Occurs when the company has been successfully created.
 |---------|-----|
 |message|**Company created: {companyName}** <br /><br />`{companyName}` indicates the name of the new company.|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -54,9 +55,6 @@ Occurs when the company has been successfully created.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to create the company. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:21.0739451","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","AadTenantId":"common","aadTenantId":"common","companyName":"jsco","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:21.0739451","component":"Dynamics 365 Business Central Server","eventId":"LT0001","result":"Success","sqlExecutes":"5186","sqlRowsRead":"1574"}
--->
 
 ## Company creation canceled
 
@@ -68,6 +66,7 @@ Occurs when creating a company was canceled.
 |---------|-----|
 |message|**Company creation canceled: {companyName}**<br /><br />`{companyName}` indicates the name of the company being created.|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -99,6 +98,7 @@ Occurs when a company failed to be created.
 |---------|-----|
 |message|**Company creation failed: {companyName}**<br /><br />`{companyName}` indicates the name of the company being created.|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -120,10 +120,6 @@ Occurs when a company failed to be created.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:21.0739451","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","AadTenantId":"common","aadTenantId":"common","companyName":"jsco","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:21.0739451","component":"Dynamics 365 Business Central Server","eventId":"LT0001","result":"Success","sqlExecutes":"5186","sqlRowsRead":"1574"}
--->
-
 ## Company copied
 
 Occurs when a company has been copied from another company successfully.
@@ -134,6 +130,7 @@ Occurs when a company has been copied from another company successfully.
 |---------|-----|
 |message|**Company copied: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was copied.</li><li>`{companyNameDestination}`is the name of new company that was created.</li></ul>|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -155,9 +152,6 @@ Occurs when a company has been copied from another company successfully.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time it took to copy the company. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:23.0278844","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","sqlRowsRead":"1435","AadTenantId":"common","aadTenantId":"common","sqlExecutes":"5265","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","totalTime":"00:00:23.0278844","eventId":"LT0004","result":"Success","companyNameDestination":"company2","companyNameSource":"company1"}
--->
 
 ## Company copy canceled
 
@@ -169,6 +163,8 @@ Occurs when a copying a company was canceled.
 |---------|-----|
 |message|**Company copied canceled: {source company name} to {destination company name}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul> |
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
@@ -189,9 +185,6 @@ Occurs when a copying a company was canceled.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to do the operation. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:08.5394212","Component version":"16.0.12630.0","componentVersion":"16.0.12630.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","AadTenantId":"common","sqlExecutes":"909","sqlRowsRead":"1432","aadTenantId":"common","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:08.5394212","component":"Dynamics 365 Business Central Server","eventId":"LT0005","result":"NavNCLOperationCanceledException","companyNameDestination":"company2","companyNameSource":"company1"}
--->
 
 ## Company copy failed
 
@@ -203,6 +196,7 @@ Occurs when a company failed to be copied from another company.
 |---------|-----|
 |message|**Company copy failed: {companyNameSource} to {companyNameDestination}**<ul><li>`{companyNameSource}` is name of the company that was being copied.</li><li>`{companyNameDestination}`is the name of new company that was being created.</li></ul>|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -223,9 +217,6 @@ Occurs when a company failed to be copied from another company.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 |totalTime|Specifies the amount of time used to create the company before it failed. The time has the format hh:mm:ss.sssssss.|
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:23.0278844","Component version":"16.0.12630.0","Environment type":"Production","componentVersion":"16.0.12630.0","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","sqlRowsRead":"1435","AadTenantId":"common","aadTenantId":"common","sqlExecutes":"5265","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","totalTime":"00:00:23.0278844","eventId":"LT0004","result":"Success","companyNameDestination":"company2","companyNameSource":"company1"}
--->
 
 ## Company deleted
 
@@ -237,6 +228,7 @@ Occurs when a company has been deleted successfully.
 |---------|-----|
 |message|**Company deleted: {companyName}**<br /><br />`{companyName}` indicates the name of the company that was deleted.|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -258,11 +250,6 @@ Occurs when a company has been deleted successfully.
 
 
 
-<!--
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","serverExecutionTime":"00:00:14.6442254","Component version":"16.0.12630.0","componentVersion":"16.0.12630.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version","companyName":"jsco","sqlExecutes":"2669","AadTenantId":"common","sqlRowsRead":"1432","aadTenantId":"common","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","totalTime":"00:00:14.6442254","component":"Dynamics 365 Business Central Server","eventId":"LT0007","result":"Success"}
--->
-
-
 ## Company deletion canceled
 
 Occurs when deleting a company failed was canceled.
@@ -273,6 +260,7 @@ Occurs when deleting a company failed was canceled.
 |---------|-----|
 |message|**Company deletion canceled: {companyName}**<br /><br />`{companyName}` indicates the name of the company that was being deleted.|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -303,6 +291,7 @@ Occurs when a company failed to be deleted.
 |---------|-----|
 |message|**Company deletion failed: {companyName}**<br /><br />`{companyName}` indicates the name of the company that was being deleted.|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
