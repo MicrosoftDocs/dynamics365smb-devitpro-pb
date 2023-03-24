@@ -17,7 +17,7 @@ Administrators that can manage [!INCLUDE [prod_short](../developer/includes/prod
 
 ## Administration as an internal administrator
 
-Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
+Internal administrators are the system administrators, IT professionals, or superusers of the customer's company, who are assigned the **Global admin** or **Dynamics 365 Admin** role in the Microsoft 365 admin center. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles) in the Microsoft 365 admin content.  
 
 ### Administration in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]
 
