@@ -7,14 +7,14 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 07/29/2022
+ms.date: 03/07/2023
 ---
 
 # Transferring Data Between Tables using DataTransfer
 
 > **APPLIES TO:**  Business Central 2022 release wave 2 (version 21.0) and later.
 
-[DataTransfer](methods-auto/datatransfer/datatransfer-data-type.md) is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, DataTransfer produces SQL code that operates on sets. This behavior improves the performance when moving data during upgrade. 
+[DataTransfer](methods-auto/datatransfer/datatransfer-data-type.md) is an AL data type that supports the bulk transferring of data between SQL based tables. Instead of operating on a row-by-row model, like the record API does, DataTransfer produces SQL code that operates on sets. This behavior improves the performance when moving data during upgrade and install.
 
 For comparison, the following code illustrates how to copy rows using the record API:
 
@@ -58,7 +58,9 @@ The DataTransfer object can be used for essentially two operations:
 - Copy data from entire rows in a table to rows in another table. A typical scenario is when you've made a table obsolete.
 
 > [!IMPORTANT]
-> The DataTransfer object can only be used in upgrade code and it will throw an runtime error if used outside of upgrade codeunits.  
+> The DataTransfer object can only be used in upgrade code and it'll throw a runtime error if used outside of upgrade codeunits.  
+>
+> Using the DataTransfer object in install codeunits, it's checked that the install code is running inside the scope of installing an extension, meaning that the install code is triggered from the `OnInstallAppPerDatabase` and `OnInstallAppPerCompany` events that are emitted during installation.
 
 The DataTransfer object can't be used on the following tables:
 
