@@ -12,10 +12,31 @@ ms.custom: bap-template
 
 # Define Migration Table Mappings
 
-Migration table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension.
+Migration table mapping can be used to rename the table during the cloud migration or to move a subset of fields to a different table or table extension. Before you start defining table mapping
 
 > [!TIP]
 > You can use the **Import** and **Export** actions to import or export the definition done in the UI.
+
+## Design constraints
+
+It's not possible to have multiple source tables mapping to the same destination (target) table. The destination table must have a single on-premises source table.
+
+For example, the following mappings together aren't supported:
+
+|Source table|Destination table|
+|-|-|
+|Customer|MyTable|
+|MyTable|MyTable|
+
+But the following mappings are supported:
+
+|Source table|Destination table|
+|-|-|
+|Customer|Customer|
+|Customer|MyTable|
+
+This limitation also applies to tables that are automatically included into the replication, which means tables enabled for cloud migration by the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md). If these tables exist in the on-premises database, they'll automatically be included in the clod migration. So, no table mappings can define these tables the destination table.
+
 
 ## Rename the table during the cloud migration
 
@@ -59,7 +80,7 @@ Fields to be moved to a table extension must have the same name and type as in t
 
 ### Create the table mapping for moving fields
 
-1. To create the table mapping, follow the same steps as in Scenario 1, except set the **Target Table Type** to **Table Extension**. 
+1. To create the table mapping, follow the same steps as in Scenario 1, except set the **Target Table Type** to **Table Extension**.
 
 2. If you're moving a table that is per-database table, clear the **Data Per Company** check box.
 
@@ -84,11 +105,10 @@ Follow these steps if you need multiple table mappings.
 
 3. To set the target table, go to the **Target Table** section and set the **Type** to **Table** or **Extension**.
 
-    The list shows all the tables that are available for mapping to the target table. You can filter the list by setting an extension in the **Extension Name** field.
+    The list shows all the tables available for mapping to the target table. You can filter the list by setting an extension in the **Extension Name** field.
 4. Select all rows that you want to map to the target table.
 
    The following figure illustrates an example of the **Add Migrate Table Mappings** page:
-
 
    [![Shows the table mapping multiple tables](../media/table-mapping-multiple.png)](../media/table-mapping-multiple.png#lightbox) 
 

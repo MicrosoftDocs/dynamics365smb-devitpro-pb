@@ -3,7 +3,7 @@ title: "List.AddRange(List of [T]) Method"
 description: "Adds the elements of the specified collection to the end of the list."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 01/10/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,11 @@ The collection whose elements should be added to the end of the List.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
+
 ## See Also
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

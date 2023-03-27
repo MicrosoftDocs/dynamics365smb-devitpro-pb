@@ -1,12 +1,12 @@
 ---
 title: Configure Azure Active Directory Authentication with OpenID Connect
 description: Learn how to authentication Business Central users by using Azure Active Directory with OpenID Connect.
-ms.custom: na
-ms.date: 01/26/2022
+ms.custom: bap-template
+ms.date: 01/24/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.author: jswymer
+ms.topic: how-to
 ms.service: "dynamics365-business-central"
 author: jswymer
 ---
@@ -293,7 +293,7 @@ Once you have the Azure AD tenant and a registered application for [!INCLUDE[pro
         **Example**
 
         ```powershell
-        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName WSFederationLoginEndpoint "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
+        Set-NAVServerConfiguration -ServerInstance BC210 -KeyName WSFederationLoginEndpoint -KeyValue "https://login.microsoftonline.com/cronusinternationltd.onmicrosoft.com/wsfed?wa=wsignin1.0%26wtrealm=https://cronusinternationltd.onmicrosoft.com/businesscentral%26wreply=https://cronusinternationltd.onmicrosoft.com/BC210/SignIn"
         ```
 
 4. To configure SOAP and OData web services for Azure AD authentication, specify the App ID URI that is registered for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Azure AD.

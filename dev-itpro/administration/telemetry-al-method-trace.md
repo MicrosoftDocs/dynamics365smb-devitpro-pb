@@ -33,6 +33,7 @@ The following table explains the general dimensions included in the trace. The t
 |---------|--------------------|
 |message|**Operation exceeded time threshold (AL method)**|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ## CustomDimensions
 

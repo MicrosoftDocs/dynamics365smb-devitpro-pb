@@ -101,6 +101,7 @@ Represents a company in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the company. Non-editable.|
 |systemVersion|string|Specifies the internal version of the company.|
+|timestamp|integer|Specifies the timestamp of the company.|
 |name|string|Represents the company's name.|
 |displayName|string|Specifies the company's name. This name will appear on all sales documents for the company.|
 |businessProfileId|string|Specifies the Business Profile ID linked to the company.|
@@ -118,6 +119,7 @@ Here is a JSON representation of the company resource.
 {
     "id": "GUID",
     "systemVersion": "string",
+    "timestamp": "integer",
     "name": "string",
     "displayName": "string",
     "businessProfileId": "string",
