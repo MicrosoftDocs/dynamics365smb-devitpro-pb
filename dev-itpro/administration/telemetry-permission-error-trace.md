@@ -29,6 +29,7 @@ Occurs when a user gets a permissions-related error message in Business Central 
 |---------|-----|
 |message|**Permission error shown**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 

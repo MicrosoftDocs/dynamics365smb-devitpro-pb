@@ -18,12 +18,14 @@ Would you like to know what has changed in update 21.5? Below you'll find an ove
 
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5024403) and the downloads [here](https://aka.ms/BCDownload).
 
+## Feature changes  
+- [Copying the SystemID and data audit fields using CopyRows](/dynamics365/business-central/dev-itpro/developer/devenv-data-transfer#copy-rows)
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| All countries | Addes field Registration No. to Customers and Vendors | Business Central previously had a Registration No. field in the Company Information, but no such field in Customer or Vendor cards. In some localizations, this field already existed, so now this fields are delocalized and you can use them in global version
+| All countries | Added field Registration No. to Customers and Vendors | Business Central previously had a Registration No. field in the Company Information, but no such field in Customer or Vendor cards. In some localizations, this field already existed, so now this fields are delocalized and you can use them in global version
 | Belgium | Deferrals on local Purchase/Sales Ledger reports | Business Central posts the deferral entries in the same journal as the original invoice or credit memo. This model previously made problems when print out the purchase ledger, and sales ledger (BE local reports). Both the purchase ledger and the sales ledger now show the invoices, and credit memos without deferrals.|
 | Belgium | Intervat VAT declaration version 9 | Intervat VAT declaration has been updated against the newest required version - v0.9. It is now already possible to add the comment into the Intervat VAT XML file in order to inform the VAT administration. |
 | United States | Added EIN Number and IRS Employee Contact | The EIN Number and IRS Employee Contact (referenced with Employees) has been added to the Company Information. Also, when users prints IRS 1096 report, these two fields will be populated by default. |

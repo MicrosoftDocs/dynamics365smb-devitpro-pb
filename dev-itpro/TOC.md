@@ -129,7 +129,7 @@
 ## Understand Business Central online
 ### [Understanding the infrastructure ](administration/tenant-environment-topology.md)
 ### [Get started as a reseller of Business Central online](administration/get-started-online.md)
-### [Country/regional availability and supported translations](compliance/apptest-countries-and-translations.md)
+### [Country/region availability and supported translations](compliance/apptest-countries-and-translations.md)
 ### [Delegated administrator access to Business Central online](administration/delegated-admin.md)
 ### [Trials and subscriptions](administration/trials-subscriptions.md)
 ### [Major updates and minor updates](administration/update-rollout-timeline.md)
@@ -232,6 +232,7 @@
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
+#### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
@@ -253,6 +254,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
+### [Report a performance issue](administration/report-performance-issue.md)
 ### [Analyze performance](administration/performance-profiler-overview.md)
 <!-- end support -->
 ## Automation API
@@ -552,7 +554,7 @@
 ##### Collections
 ###### [Array](developer/methods/devenv-array-methods.md)
 ###### [Dictionary](developer/methods-auto/dictionary/dictionary-data-type.md)
-###### [list](developer/methods-auto/list/list-data-type.md)
+###### [List](developer/methods-auto/list/list-data-type.md)
 
 ##### Enumerations and options
 ###### [Enum](developer/devenv-extensible-enums.md)
@@ -615,6 +617,9 @@
 #### Modifying data
 ##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
+##### [Virtual tables](developer/devenv-virtual-tables.md)
+###### [Date virtual table](developer/devenv-date-virtual-table.md)
+###### [Integer virtual table](developer/devenv-integer-virtual-table.md)
 ##### [Retaining table data after publishing](developer/devenv-retaining-data-after-publishing.md)
 ##### [Enabling sales tables for extension eevelopment](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ##### [Creating filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
@@ -633,7 +638,7 @@
 ###### [Retrieving date data](developer/devenv-query-retrieve-date-data.md)
 ###### [Using queries instead of record variables](developer/devenv-query-using-instead-record-variables.md)
 ###### [Accessing columns of a query dataset](developer/devenv-query-accessing-columns.md)
-#### [Tranferring data](developer/devenv-data-transfer.md)
+#### [Transferring data](developer/devenv-data-transfer.md)
 #### Importing and exporting data
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
 ##### [XMLport object](developer/devenv-xmlport-object.md)
@@ -940,7 +945,7 @@
 ### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your extension](compliance/apptest-testingyourextension.md)
-### [User scenario cocumentation](compliance/apptest-userscenario.md)
+### [User scenario documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
@@ -979,6 +984,8 @@
 ## Extension lifecycle 
 <!-- (deploy, install, testing, upgrade, deprecation, …) -->
 ### [Overview](developer/devenv-ext-dev-lifecycle-overview.md)
+### [Extension types and scope](developer/devenv-extension-types-and-scope.md)
+### [Moving between extension scopes](developer/devenv-extension-moving-scope.md)
 ### Migration
 #### [Generating delta files](developer/devenv-generating-delta-files.md)
 #### Migrating tables and fields between extensions
