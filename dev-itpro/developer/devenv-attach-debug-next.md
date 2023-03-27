@@ -38,6 +38,9 @@ If `sessionId` isn't specified, but `userId` is, then the debugger will be attac
 
 The example below illustrates a configuration for a local server.
 
+> [!NOTE]  
+> The debugger is able to connect to *background sessions*, and not *background tasks*.
+
 ```json
 ...
 {

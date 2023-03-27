@@ -11,8 +11,6 @@ ms.date: 03/25/2022
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get companies
 
 Retrieves the properties and relationships of a company object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
