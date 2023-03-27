@@ -1,10 +1,8 @@
 ---
 title: Create picture  
-description: A picture object in Dynamics 365 Business Central. 
- 
+description: Creates a picture object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
-
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -32,12 +30,12 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type | application/octet-stream |
-|If-Match  | * |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **picture**, the **picture** will not be updated. |
 
 
 ## Request body
-Raw picture binary data.
+In the request body, supply a JSON representation of a **project** object.
+
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.

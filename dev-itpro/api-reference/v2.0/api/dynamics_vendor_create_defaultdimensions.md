@@ -4,7 +4,7 @@ description: Creates a default dimensions of the vendor object in Dynamics 365 B
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
