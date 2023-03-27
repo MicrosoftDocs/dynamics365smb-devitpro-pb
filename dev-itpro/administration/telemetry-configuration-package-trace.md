@@ -50,6 +50,7 @@ Occurs when an export operation on a configuration package is started.
 |---------|-----|
 |message|**Configuration package export started: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -59,10 +60,6 @@ Occurs when an export operation on a configuration package is started.
 |alExecutionId|Specifies the ID of the export operation.|
 |alPackageCode|Specifies the ID of the configuration package being exported.|
 
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","componentVersion":"17.0.19123.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"AL0000E3F","alObjectId":"8614","alObjectType":"CodeUnit","alObjectName":"Config. XML Exchange","alDataClassification":"SystemMetadata","alExecutionId":"3774e6c6-b0a5-4e30-8314-d8e582384d41","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart"}
-
--->
 
 ## <a name="exportsuccessful"></a>Configuration package exported successfully
 
@@ -74,6 +71,7 @@ Occurs when an export operation on a configuration package completes successfull
 |---------|-----|
 |message|**Configuration package exported successfully: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -85,10 +83,6 @@ Occurs when an export operation on a configuration package completes successfull
 |alPackageCode|Specifies the ID of the configuration package that was exported.|
 |[See common custom dimensions](#other)||
 
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","componentVersion":"17.0.19123.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"AL0000E3G","alObjectId":"8614","alObjectType":"CodeUnit","alObjectName":"Config. XML Exchange","alDataClassification":"SystemMetadata","alExecutionId":"3774e6c6-b0a5-4e30-8314-d8e582384d41","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart","alExecutionTimeInMs":"2207"}
-
--->
 
 ## <a name="importstarted"></a>Configuration package import started
 
@@ -100,6 +94,8 @@ Occurs when an import operation on a configuration package is started.
 |---------|-----|
 |message|**Configuration package import started: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
@@ -109,11 +105,6 @@ Occurs when an import operation on a configuration package is started.
 |alExecutionId|Specifies the ID of the import operation.|
 |alPackageCode|Specifies the ID of the configuration package being imported.|
 |[See common custom dimensions](#other)||
-
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","Environment type":"Production","componentVersion":"17.0.19123.0","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E3H","alObjectId":"8614","alObjectName":"Config. XML Exchange","alObjectType":"CodeUnit","alDataClassification":"SystemMetadata","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart","alExecutionId":"74ddbbf7-580f-444d-85bd-c9c419d39295"}
-
--->
 
 
 ## <a name="importsuccessful"></a>Configuration package imported successfully
@@ -126,6 +117,7 @@ Occurs when an import operation on a configuration package completes successfull
 |---------|-----|
 |message|**Configuration package imported successfully: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -136,10 +128,6 @@ Occurs when an import operation on a configuration package completes successfull
 |alExecutionId|Specifies the ID of the import operation.|
 |alPackageCode|Specifies the ID of the configuration package that was imported.|
 |[See common custom dimensions](#other)||
-
-<!--
-{"{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","Environment type":"Production","componentVersion":"17.0.19123.0","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E3I","alObjectId":"8614","alObjectName":"Config. XML Exchange","alObjectType":"CodeUnit","alDataClassification":"SystemMetadata","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart","alExecutionId":"74ddbbf7-580f-444d-85bd-c9c419d39295","alExecutionTimeInMs":"3300","alFileSizeInBytes":"147572"}
--->
 
 
 ## <a name="applystarted"></a>Configuration package apply started
@@ -152,6 +140,7 @@ Occurs when an apply operation on a configuration package is started.
 |---------|-----|
 |message|**Configuration package apply started: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -162,10 +151,6 @@ Occurs when an apply operation on a configuration package is started.
 |alPackageCode|Specifies the ID of the configuration package being applied.|
 |[See common custom dimensions](#other)||
 
-<!--
-{"{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","componentVersion":"17.0.19123.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E3N","alObjectId":"8611","alObjectName":"Config. Package Management","alObjectType":"CodeUnit","alDataClassification":"SystemMetadata","alExecutionId":"a187e49b-8d08-475a-9ac5-074dcae28344","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart"}
-
--->
 
 ## <a name="applysuccessful"></a>Configuration package applied successfully
 
@@ -177,6 +162,7 @@ Occurs when an apply operation on a configuration package completes successfully
 |---------|-----|
 |message|**Configuration package applied successfully: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -191,10 +177,6 @@ Occurs when an apply operation on a configuration package completes successfully
 |alRecordCount|Specifies the number of records that were included in the applied configuration package.|
 |[See common custom dimensions](#other)||
 
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","componentVersion":"17.0.19123.0","Environment type":"Production","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E3O","alObjectId":"8611","alObjectName":"Config. Package Management","alObjectType":"CodeUnit","alDataClassification":"SystemMetadata","alExecutionId":"a187e49b-8d08-475a-9ac5-074dcae28344","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart","alExecutionTimeInMs":"274","alErrorCount":"0","alFieldCount":"79","alRecordCount":"15"}
-
--->
 
 ## <a name="deletesuccessful"></a>Configuration package deleted successfully
 
@@ -206,6 +188,7 @@ Occurs when a configuration package is deleted successfully.
 |---------|-----|
 |message|**Configuration package deleted successfully: {alPackageCode}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -215,10 +198,6 @@ Occurs when a configuration package is deleted successfully.
 |alPackageCode|Specifies the ID of the configuration package that was deleted.|
 |[See common custom dimensions](#other)||
 
-<!--
-{"Telemetry schema version":"1.0","telemetrySchemaVersion":"1.0","Component version":"17.0.19123.0","Environment type":"Production","componentVersion":"17.0.19123.0","environmentType":"Production","deprecatedKeys":"AadTenantId, Environment name, Environment type, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","aadTenantId":"common","AadTenantId":"common","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"AL0000E3P","alObjectId":"8611","alObjectType":"CodeUnit","alObjectName":"Config. Package Management","alDataClassification":"SystemMetadata","alPackageCode":"MY.W1.PACKAGE1","alCategory":"RapidStart"}
-
--->
 
 ## See also
 

@@ -73,6 +73,8 @@ The first task is to use Azure portal to register an application for Business Ce
     |All|Microsoft Graph | User.Read|Delegated|Sign in and read user profile|
     |[Business Central add-in for Excel](/dynamics365/business-central/admin-powerbi-setup)|[Business Central app registration name]|[Business Central app permission name]|Delegated|Allows users of the add-in for Excel to access the OData web services to read and write data.|
     |[Business Central Add-in for Outlook](Setting-up-Office-Add-Ins-Outlook-Inbox.md)|Microsoft Graph | EWS.AccessAsUser.All|Delegated|Gives the Business Central add-in for Outlook permission to mailbox data in Microsoft 365 (Exchange Online) or Exchange Server.|
+    |[Exchange Contact Sync](/dynamics365/business-central/admin-synchronize-outlook-contacts)|Office 365 Exchange Online| Contacts.ReadWrite|Delegated|Allows the app to create, read, update, and delete user contacts.<br><br> **TIP** To find Office 365 Exchange Online, type it the the search box on the **APIs my organization uses** tab.|
+    ||| EWS.AccessAsUser.All|Delegated|Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services.|
     |[OneDrive Integration](/dynamics365/business-central/admin-onedrive-integration)<sup>[\[1\]](#1)</sup>|SharePoint|AllSites.FullControl |Delegated|Have full control of all site collections|
     |||User.ReadWrite.All|Delegated|Read and write user profiles|
     |[Power BI Integration](/dynamics365/business-central/admin-powerbi-setup)|Power BI Service|Report.Read.All|Delegated|View all reports. Required for viewing Power BI reports in Business Central.|
@@ -85,7 +87,9 @@ The first task is to use Azure portal to register an application for Business Ce
 
 4. Configure consent on each API permission according to your organizations policies.
 
-  Consent is a process where users or admins authorize an application to access a resource, like a user's profile or mailbox, depending on the service. When a user attempts to sign in to the registered app for the first time, the app will request permission, and the user will have to accept to continue. As an admin, you can consent on behalf of all users, so they don't have to. To learn more, go to [More on API permissions and admin consent](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#more-on-api-permissions-and-admin-consent) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
+   Consent is a process where users or admins authorize an application to access a resource, like a user's profile or mailbox, depending on the service. When a user attempts to sign in to the registered app for the first time, the app will request permission, and the user will have to accept to continue. As an admin, you can consent on behalf of all users, so they don't have to. To learn more, go to [More on API permissions and admin consent](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#more-on-api-permissions-and-admin-consent) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
+
+5. If this is a new registered app, and not an update to an existing one, go to the next task to set it up in Business Central.
 
 ## Set up the registered application in Business Central
 
@@ -101,7 +105,6 @@ After you create the application registration, the next task is to configure the
     <!--
     ![Setting the Azure Active Directory.](../developer/media/set-up-azure-ad.png)
     -->
-
 3. In the **Redirect URL** field, make sure the URL matches the redirect URL that's assigned the registered Business Central application in Azure AD.
 4. In the **Application ID** field, specify the application (client) ID of the Business Central application in Azure AD that you copied in the previous task.
 5. In the **Key** field, specify the value of the client secret that's used by the Business Central application in Azure AD.
@@ -134,9 +137,9 @@ After authorizing the Azure service, you get a message similar to the following 
 **We couldn't connect to [service name] using your Azure AD application registration. Run the Set Up Azure Active Directory assisted setup again, and make sure all values are set correctly.**
 
 This issue indicates there's a problem with the configuration of the Azure registered application used by the service. The problem is typically caused by incorrect values for either the **Redirect URL**, **Application ID**, or **Key** fields in the application registration. A common problem deals with the redirect URLs. Make sure the **Redirect URL** matches the redirect URL in the Azure portal and the URL of the Web client. To fix this issue, run the **Set Up Azure Active Directory** assisted setup and compare the values with the app registration in Azure.
- 
 
 ## See Also
+
 [Business Central and Power BI](/dynamics365/business-central/admin-powerbi)  
 [FAQ about Migrating to the Cloud from On-Premises Solutions](faq-migrate-data.md)  
 [Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../deployment/Deployment.md)  
