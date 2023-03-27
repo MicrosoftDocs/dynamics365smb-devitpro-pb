@@ -56,7 +56,7 @@ $CustomerLicense = "The file path and name of the customer license"
 
 3. Install version 21 components.
 
-    You'll keep previous version installed for now. When you install version 21, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 18.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
+    You'll keep previous version installed for now. When you install version 21, you must either specify different port numbers for components (like the [!INCLUDE[server](../developer/includes/server.md)] instance and web services) or stop the version 20.0 [!INCLUDE[server](../developer/includes/server.md)] instance before you run the installation. Otherwise, you'll get an error that the [!INCLUDE[server](../developer/includes/server.md)] failed to install.
 
     For more information, see [Installing Business Central Using Setup](../deployment/install-using-setup.md).
 
