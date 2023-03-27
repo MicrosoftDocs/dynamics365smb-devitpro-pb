@@ -40,6 +40,7 @@ Occurs when a deadlock occurs.
 |---------|-----|
 |message|**Database deadlock occurred**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 

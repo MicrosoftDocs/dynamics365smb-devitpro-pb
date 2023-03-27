@@ -29,6 +29,7 @@ Occurs when the Error method is called and displays a dialog to the user.
 |---------|-----|
 |message|**Error dialog displayed: {failureReason}**|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
