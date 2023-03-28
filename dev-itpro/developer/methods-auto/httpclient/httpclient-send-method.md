@@ -3,7 +3,7 @@ title: "HttpClient.Send(HttpRequestMessage, var HttpResponseMessage) Method"
 description: "Sends an HTTP request as an asynchronous operation."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *Request*  
 &emsp;Type: [HttpRequestMessage](../httprequestmessage/httprequestmessage-data-type.md)  
-The HTTP request message to send.
-        
+The HTTP request message to send.  
+
 *Response*  
 &emsp;Type: [HttpResponseMessage](../httpresponsemessage/httpresponsemessage-data-type.md)  
 The response received from the remote endpoint.  

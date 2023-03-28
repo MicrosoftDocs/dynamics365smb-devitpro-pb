@@ -3,7 +3,7 @@ title: "FilterPageBuilder.AddField(Text, FieldRef [, Text]) Method"
 description: "Adds a table field to the filter control for a table on filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,11 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
-        
+The name that is assigned to the table in the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.  
 
 *Field*  
 &emsp;Type: [FieldRef](../fieldref/fieldref-data-type.md)  
-The name of the table field to add to the filter control for a table.
-        
+The name of the table field to add to the filter control for a table.  
 
 *[Optional] Filter*  
 &emsp;Type: [Text](../text/text-data-type.md)  

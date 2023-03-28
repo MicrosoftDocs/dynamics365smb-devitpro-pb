@@ -3,7 +3,7 @@ title: "FilterPageBuilder.SetView(Text, Text) Method"
 description: "Sets the current filter view, which defines the sort order, key, and filters, for a record in a filter control on a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name that is assigned to the filter control. This value must match the value of the ItemName parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
-        
+The name that is assigned to the filter control. This value must match the value of the ItemName parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.  
 
 *View*  
 &emsp;Type: [Text](../text/text-data-type.md)  

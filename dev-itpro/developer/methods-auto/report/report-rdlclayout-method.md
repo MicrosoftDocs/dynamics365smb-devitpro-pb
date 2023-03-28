@@ -3,7 +3,7 @@ title: "Report.RdlcLayout(Integer, InStream) Method"
 description: "Gets the RDLC layout that is used on a report and returns it as a data stream."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ Gets the RDLC layout that is used on a report and returns it as a data stream.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the report object for which you want to get the RDLC layout.
-        
+The ID of the report object for which you want to get the RDLC layout.  
 
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  

@@ -3,7 +3,7 @@ title: "Text.InsStr(Text, Text, Integer) Method"
 description: "Inserts a substring into a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ NewString :=   Text.InsStr(String: Text, SubString: Text, Position: Integer)
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
-The string into which you want to insert a substring.
-        
+The string into which you want to insert a substring.  
 
 *SubString*  
 &emsp;Type: [Text](text-data-type.md)  
-The substring that you want to insert into String.
-        
+The substring that you want to insert into String.  
 
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

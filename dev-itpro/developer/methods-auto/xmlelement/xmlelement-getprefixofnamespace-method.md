@@ -3,7 +3,7 @@ title: "XmlElement.GetPrefixOfNamespace(Text, var Text) Method"
 description: "Gets the prefix associated with a namespace URI for this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *Namespace*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A namespace URI to look up.
-        
+A namespace URI to look up.  
 
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  

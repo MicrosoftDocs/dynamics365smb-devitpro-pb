@@ -3,7 +3,7 @@ title: "Xmlport.Export(Integer, var OutStream [, var Record]) Method"
 description: "Creates an XML data stream (XML document) and sends it to a chosen destination."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,16 +26,15 @@ Creates an XML data stream (XML document) and sends it to a chosen destination.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the XmlPort that you want to run.
-        
+The ID of the XmlPort that you want to run.  
+
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
-Where the XmlPort object will write the XML data stream.
-        
+Where the XmlPort object will write the XML data stream.  
+
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-The record to use in the XmlPort. Any filters attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are exported.
-          
+The record to use in the XmlPort. Any filters attached to the record will be used. This parameter is optional. If this parameter is omitted, all records in the table are exported.  
 
 
 ## Return Value

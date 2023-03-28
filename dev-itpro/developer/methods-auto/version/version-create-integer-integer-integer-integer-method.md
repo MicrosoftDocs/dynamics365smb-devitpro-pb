@@ -3,7 +3,7 @@ title: "Version.Create(Integer, Integer [, Integer] [, Integer]) Method"
 description: "Creates a version object from the major, minor, build and revision numbers provided."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,16 +26,16 @@ Value :=   Version.Create(Major: Integer, Minor: Integer [, Build: Integer] [, R
 ## Parameters
 *Major*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The major version number.
-        
+The major version number.  
+
 *Minor*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The minor version number.
-        
+The minor version number.  
+
 *[Optional] Build*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The build version number.
-        
+The build version number.  
+
 *[Optional] Revision*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The revision version number.  

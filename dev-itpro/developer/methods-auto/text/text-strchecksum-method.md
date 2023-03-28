@@ -3,7 +3,7 @@ title: "Text.StrCheckSum(Text [, Text] [, Integer]) Method"
 description: "Calculates a checksum for a string that contains a number."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ CheckNumber :=   Text.StrCheckSum(String: Text [, WeightString: Text] [, Modulus
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
-This string contains the number for which you want to calculate a checksum. You can only enter the numeric characters 0-9 in this string. If you enter anything else, a run-time error will occur. If String is empty, 0 is returned.
-        
+This string contains the number for which you want to calculate a checksum. You can only enter the numeric characters 0-9 in this string. If you enter anything else, a run-time error will occur. If String is empty, 0 is returned.  
 
 *[Optional] WeightString*  
 &emsp;Type: [Text](text-data-type.md)  
-This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.
-        
+This string contains numbers that you want to use as weights when calculating the checksum. The default value is a string that contains STRLEN(String) '1'-characters.  
 
 *[Optional] Modulus*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

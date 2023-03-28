@@ -3,7 +3,7 @@ title: "Debugger.Attach(Integer) Method"
 description: "Activates the debugger and attaches it to the specified session."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ The ID of the session that you want to attach the debugger to.The session can be
 -   NAS services session
 -   SOAP web services client session
 -   OData web services client session
--   Background session
-        
+-   Background session  
 
 
 ## Return Value

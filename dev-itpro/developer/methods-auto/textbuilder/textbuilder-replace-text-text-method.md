@@ -3,7 +3,7 @@ title: "TextBuilder.Replace(Text, Text) Method"
 description: "Replaces all occurrences of a specified string in this TextBuilder instance with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [TextBuilder](textbuilder-data-type.md) data type.
 
 *OldText*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The string to replace.
-        
+The string to replace.  
+
 *NewText*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 The string that replaces OldText.  

@@ -3,7 +3,7 @@ title: "Record.Consistent(Boolean) Method"
 description: "Marks a table as being consistent or inconsistent."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Consistent*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-The mark to be set on the table. If this parameter is true, the table is marked as consistent. If this parameter is false, the table is marked as inconsistent.
-          
+The mark to be set on the table. If this parameter is true, the table is marked as consistent. If this parameter is false, the table is marked as inconsistent.  
 
 
 

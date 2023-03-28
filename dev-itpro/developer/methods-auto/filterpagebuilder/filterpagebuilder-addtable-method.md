@@ -3,7 +3,7 @@ title: "FilterPageBuilder.AddTable(Text, Integer) Method"
 description: "Adds filter control for a table to a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.
-        
+Assigns a name to the filter control for the table. The text displays as the caption for the filter control on the rendered filter page in the client.  
 
 *TableNo*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
