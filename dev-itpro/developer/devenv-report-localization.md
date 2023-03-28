@@ -47,4 +47,4 @@ If none of these settings have been applied, the report will be formatted accord
 [Report Extension Object](devenv-report-ext-object.md)  
 [Reports Overview](devenv-reports.md)  
 [Report Design Overview](devenv-report-design-overview.md)  
-[CultureInfo.Name Property](dotnet/api/system.globalization.cultureinfo.name)
+[CultureInfo.Name Property](/dotnet/api/system.globalization.cultureinfo.name)
