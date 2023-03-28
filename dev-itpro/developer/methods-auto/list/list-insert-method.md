@@ -3,7 +3,7 @@ title: "List.Insert(Integer, T) Method"
 description: "Inserts an element into the List at the specified index."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/10/2023
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [List](list-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based index at which the value should be inserted.
-        
+The one-based index at which the value should be inserted.  
+
 *Value*  
 &emsp;Type: [T](list-data-type.md)  
 The value to be inserted.  

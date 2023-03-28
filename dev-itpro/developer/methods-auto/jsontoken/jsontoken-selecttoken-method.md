@@ -3,7 +3,7 @@ title: "JsonToken.SelectToken(Text, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [JsonToken](jsontoken-data-type.md) data type.
 
 *Path*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A valid JPath expression.
-        
+A valid JPath expression.  
 
 *Result*  
 &emsp;Type: [JsonToken](jsontoken-data-type.md)  
@@ -41,7 +40,7 @@ A JsonToken variable that will contain the result if the operation is successful
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the read was successful; otherwise, **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the read was successful; otherwise, **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

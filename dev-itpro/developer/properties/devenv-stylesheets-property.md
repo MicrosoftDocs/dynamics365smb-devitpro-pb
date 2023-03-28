@@ -3,7 +3,7 @@ title: "StyleSheets Property"
 description: "Specifies the list of stylesheets to include in the control add-in."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 01/30/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,6 +28,8 @@ Specifies the list of stylesheets to include in the control add-in. The styleshe
 
 A list of comma-separated strings that represent paths to stylesheet files. The default is blank, with no stylesheets being used by the control add-in. 
 
+With runtime 11, you can specify multiple files within the same path string by using a combination of a valid literal path and wildcard characters (* and ?). However, it doesn't support regular expressions.
+
 ## Remarks
 
 This property is optional and used to specify stylesheets that apply to the control add-in visuals. Stylesheets can be either external resources referenced using a URL or can be embedded within the extension. Embedded stylesheets must be added to the extension project folder in Visual Studio Code and referenced using a relative path. Stylesheets are loaded immediately when the control add-in is initialized.
@@ -42,11 +44,12 @@ This property is optional and used to specify stylesheets that apply to the cont
 
 ```AL
 Stylesheets = 'https://www.microsoft.com/stylesheets/colors.css',
-              'style.css';
+              'style.css',
+              'styles/*.css;
 ```
 
 ## See Also  
 
-[Properties](devenv-properties.md)   
-[Control Add-In Object](../devenv-control-addin-object.md)   
+[Properties](devenv-properties.md)  
+[Control Add-In Object](../devenv-control-addin-object.md)  
  

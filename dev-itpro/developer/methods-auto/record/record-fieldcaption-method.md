@@ -3,7 +3,7 @@ title: "Record.FieldCaption(Any) Method"
 description: "Gets the current caption of the specified field as a string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The field for which you want to retrieve the caption.
-          
+The field for which you want to retrieve the caption.  
 
 
 ## Return Value

@@ -3,7 +3,7 @@ title: "System.Date2DWY(Date, Integer) Method"
 description: "Gets the day of the week, week number, or year of a Date Data Type."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -29,13 +29,13 @@ Number :=   System.Date2DWY(Date: Date, Value: Integer)
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
 The input date.  
+
 *Value*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 Specifies what the function returns. The valid options are 1, 2, and 3.
 - The value 1 corresponds to day of the week (1-7, Monday = 1).
 - The value 2 corresponds to week number (1-53).
-- The value 3 corresponds to year.
-        
+- The value 3 corresponds to year.  
 
 
 ## Return Value

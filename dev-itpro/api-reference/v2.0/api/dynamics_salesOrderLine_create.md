@@ -2,7 +2,7 @@
 title: Create salesOrderLines  
 description: Creates a sales order line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -28,8 +28,9 @@ POST businesscentralPrefix/companies({id})/salesOrderLines({salesOrderLineId})
 
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type   |application/json    |
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesOrderLine**, the **salesOrderLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesOrderLines** object.

@@ -3,7 +3,7 @@ title: "TestFilter.SetFilter(TestFilterField, Text) Method"
 description: "Applies a filter to the specified field on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,11 @@ An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  
-The field that you want to apply the filter to.
-          
+The field that you want to apply the filter to.  
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The filter to apply to the specified field.
-          
+The filter to apply to the specified field.  
 
 
 

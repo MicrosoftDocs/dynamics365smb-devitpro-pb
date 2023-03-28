@@ -4,7 +4,7 @@ description: Updates the customer default dimensions in Dynamics 365 Business Ce
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

@@ -3,7 +3,7 @@ title: "System.DaTi2Variant(Date, Time) Method"
 description: "Creates a variant that contains an encapsulation of a COM VT\\_DATE."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,8 @@ Variant :=   System.DaTi2Variant(Date: Date, Time: Time)
 ## Parameters
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
-The input date.
-        
+The input date.  
+
 *Time*  
 &emsp;Type: [Time](../time/time-data-type.md)  
 The input time.  

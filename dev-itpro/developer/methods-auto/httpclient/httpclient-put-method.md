@@ -3,7 +3,7 @@ title: "HttpClient.Put(Text, HttpContent, var HttpResponseMessage) Method"
 description: "Sends a PUT request to the specified URI as an asynchronous operation."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,11 @@ An instance of the [HttpClient](httpclient-data-type.md) data type.
 
 *Path*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path the request is sent to.
-        
+The path the request is sent to.  
 
 *Content*  
 &emsp;Type: [HttpContent](../httpcontent/httpcontent-data-type.md)  
-The HTTP request content sent to the server.
-        
+The HTTP request content sent to the server.  
 
 *Response*  
 &emsp;Type: [HttpResponseMessage](../httpresponsemessage/httpresponsemessage-data-type.md)  
