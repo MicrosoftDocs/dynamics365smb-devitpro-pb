@@ -4,7 +4,7 @@ description: Creates a tax area object in Dynamics for Financials.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -29,9 +29,9 @@ POST businesscentralPrefix/companies({id})/taxAreas({id})
 
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type  |application/json    |
-
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **taxArea**, the **taxArea** will not be updated. |
 ## Request body
 In the request body, supply a JSON representation of a **taxAreas** object.
 
