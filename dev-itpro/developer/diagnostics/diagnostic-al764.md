@@ -1,9 +1,9 @@
 ---
-title: "Compiler Error AL0720"
-description: "An application object '{0} {1}' could not be found in the current extension."
+title: "Compiler Error AL0764"
+description: "{0} cannot be empty."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/20/2023
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,14 +13,17 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0720
+# Compiler Error AL0764
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An application object '{0} {1}' could not be found in the current extension. Only application objects that belong to the current extensions can be used in this context.
+{0} cannot be empty.
 
+
+## Description
+The mentioned argument cannot be empty.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
-[Get Started with AL](../devenv-get-started.md)  
+[Getting Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  
