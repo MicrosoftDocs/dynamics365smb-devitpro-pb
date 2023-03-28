@@ -3,7 +3,7 @@ title: "Technical Validation Checklist"
 description: Describing the steps you must go through to successfully submit your app to AppSource using AppSourceCop.
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/03/2022
+ms.date: 02/28/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.topic: conceptual
@@ -12,14 +12,14 @@ ms.author: freddyk
 
 # Technical Validation
 
-Below you'll find a checklist of all requirements that you **must meet before submitting** an extension for validation. You'll also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
+Below you find a checklist of all requirements that you **must meet before submitting** an extension for validation. You also find a description of how the [!INCLUDE [prod_short](includes/prod_short.md)] Validation team is performing technical and manual validation and how you can implement a validation pipeline to perform the same technical validation yourself.
 
 > [!TIP]  
 > If you have questions around validation for your app, see [Technical Validation FAQ](devenv-checklist-submission-faq.md) for more information about who to contact.
 
 ## Technical Validation Checklist
 
-If you don't meet these mandatory requirements, your extension will fail validation. To get code validation helping you bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
+If you don't meet these mandatory requirements, your extension fails validation. To get code validation helping you bring your extension package to AppSource, you can enable the **AppSourceCop** code analyzer. For more information, see [Using the Code Analysis Tool](devenv-using-code-analysis-tool.md).
 
 |Requirement|Example/Guidance|
 |-----------|----------------|
@@ -46,14 +46,14 @@ If you don't meet these mandatory requirements, your extension will fail validat
 |The extension submitted must use translation files.|[Working with Translation Files](devenv-work-with-translation-files.md)|
 |The extension submitted must specify the `Application` manifest property.|The `Application` manifest property is required in order to compute the minimum release of Business Central targeted by your submission. For more information, see [Computation of Releases for Validation](#against-which-releases-of-business-central-is-your-submission-validated)|
 
-## Technical validation performed by the Business Central validation team
+## Technical validation performed by the Business Central services
 
 The primary responsibility of the technical validation is to ensure that the [!INCLUDE [prod_short](includes/prod_short.md)] online service is stable and that the apps can be installed and run without destabilizing the service.
 
 The technical validation is fully automated and validates the requirements defined in the technical validation checklist above.
 
 > [!Important]  
-> It is recommended that all partners run the self-validation documented below before submitting apps for validation to maximize chances of validation success.
+> It's recommended that all partners run the self-validation documented in the following steps, before submitting apps for validation to maximize chances of validation success.
 
 1. The manifest of all extensions in the submission is validated. If any **mandatory properties or required property values are missing, the submission is rejected.**.
 2. The registration of affixes for the publisher name of all the extensions in the submission is validated. If **the publisher name does not have any registered affixes, the submission is rejected.**
@@ -69,18 +69,23 @@ For **each country and each release** targeted by your submission, the following
 2. The set of dependencies for your extension is resolved. **Any unresolved dependencies will cause the submission to be rejected. If you include extensions created by Microsoft in your submission, it will also be rejected.**
 
 > [!Note]  
-> You are required to include the dependencies for your extension as part of your submission only if you are submitting a newer version for them. If you do not include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you are making your libraries available in new countries, you should increase the version number.
+> You're required to include the dependencies for your extension as part of your submission only if you're submitting a newer version for them. If you don't include them in your submission, they will be downloaded automatically if they are available in [!INCLUDE [prod_short](includes/prod_short.md)] for the targeted countries/regions. If you're making your libraries available in new countries, you should increase the version number.
 
 3. The set of baselines for your extension is resolved by using the [App Management API](../administration/appmanagement/app-management-api.md).
 4. The extension is compiled against the set of dependencies resolved. If the **compilation fails, the submission is rejected.**
 5. The extension is tested against the resolved baselines using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**
 6. If the **runtime version of the extension is not supported by the release targeted, the submission is rejected.**
 
+Additionally, if the extension submitted isn't the latest version and a higher version is available in the AppSource marketplace, additional validation is performed:
+
+1. The next version of your extension and its dependencies are resolved using the [App Management API](../administration/appmanagement/app-management-api.md).
+2. The next version of your extension is tested against the version you submitted using the AppSourceCop analyzer. If any **violations or breaking changes are identified, the submission is rejected.**  
+
 If all extensions in the submission succeed the validation for each country and release without errors, **the submission is accepted.**.
 
 ## Running technical validation yourself
 
-With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps will pass validation or not:
+With the latest version of BcContainerHelper, you can run a single command, which should perform the same validation steps and give you a good indication of whether your apps pass validation or not:
 
 ```powershell
 $validationResults = Run-AlValidation `
@@ -96,15 +101,15 @@ $validationResults | Write-Host -ForegroundColor Red
 
 All array parameters can also be specified as a comma-separated string. For more information, you can also check this blog post [Run-AlValidation and Run-AlCops](https://freddysblog.com/2020/12/03/run-alvalidation-and-run-alcops/).
 
-Please include app and all library apps in both previousApps and apps and please include all countries on which you want to validate.
+Include app and all library apps in both previousApps and apps and also include all countries on which you want to validate.
 
 > [!NOTE]  
-> The Run-AlValidation cannot see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
+> The Run-AlValidation can't see whether the affixes to specify have been correctly registered with Microsoft using your MPN ID and app publisher name, please make sure registration is in place.
 
 > [!Important]  
 > The computer on which you run this command must have Docker and the latest `BcContainerHelper` PowerShell module installed and be able to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 >
-> If you are having issues with [!INCLUDE [prod_short](includes/prod_short.md)] on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
+> If you're having issues with [!INCLUDE [prod_short](includes/prod_short.md)] on Docker, you might be able to find help here: [https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker](https://freddysblog.com/2020/10/12/troubleshooting-business-central-on-docker).
 >
 > You can use [https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest](https://aka.ms/getbc?artifacturl=bcartifacts%2fsandbox%2f%2fus%2flatest) to create an Azure VM, which has all prerequisites installed to run [!INCLUDE [prod_short](includes/prod_short.md)] on Docker.
 
@@ -125,7 +130,7 @@ For more information about the signals sent during the technical validation, see
 
 ## Against which releases of Business Central is your submission validated?
 
-Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission will be validated against 18.0, 18.1, 18.2, and 18.3.
+Extensions submitted to the AppSource marketplace are validated for all countries specified in the submission against all the release targeted by the submission. As part of the validation, the minimum release for your submission is computed. The extensions are then validated for all releases from this minimum release to the current release in production. For example, if the minimum release for your submission is 18.0 and the latest minor release in production is 18.3, your submission is validated against 18.0, 18.1, 18.2, and 18.3.
 
 The minimum release for your submission is computed based on the `application` property specified in the app.json of your extension. 
 

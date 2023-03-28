@@ -4,7 +4,6 @@ description: Learn how to authentication Business Central users by using Azure A
 ms.custom: bap-template
 ms.date: 01/24/2023
 ms.reviewer: na
-ms.service: dynamics365-business-central
 ms.author: jswymer
 ms.topic: how-to
 ms.service: "dynamics365-business-central"
