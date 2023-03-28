@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/25/2022
+ms.date: 03/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -95,7 +95,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0082](appsourcecop-as0082.md)|It is not allowed to rename an enum value.|Upgrade|Error|
 |[AS0083](appsourcecop-as0083.md)|It is not allowed to delete a value from an enum.|Upgrade|Error|
 |[AS0084](appsourcecop-as0084.md)|The ID range assigned to the extension must be within the allowed range|Extensibility|Error|
-|[AS0085](appsourcecop-as0085.md)|The 'application' property should be used instead of explicit dependencies|Extensibility|Warning|
+|[AS0085](appsourcecop-as0085.md)|Use the 'application' property instead of specifying explicit dependencies.|Extensibility|Warning|
 |[AS0086](appsourcecop-as0086.md)|Fields must not increase in length|Upgrade|Warning|
 |[AS0087](appsourcecop-as0087.md)|Translations of enum value captions must not contain commas|Extensibility|Warning|
 |[AS0088](appsourcecop-as0088.md)|Objects with an ID that can be referenced and which have been published must not be deleted.|Upgrade|Error|
@@ -109,7 +109,7 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0097](appsourcecop-as0097.md)|The publisher name of an extension cannot be changed.|Configuration|Error|
 |[AS0098](appsourcecop-as0098.md)|An affix is needed.|Extensibility|Warning|
 |[AS0099](appsourcecop-as0099.md)|The member ID should be within the allowed range|Extensibility|Info|
-|[AS0100](appsourcecop-as0100.md)|The 'application' property in the app.json file must be specified.|Extensibility|Error|
+|[AS0100](appsourcecop-as0100.md)|The 'application' property must be specified in the app.json file.|Extensibility|Error|
 |[AS0101](appsourcecop-as0101.md)|The 'Isolated' argument cannot be changed, added, or removed.|Upgrade|Error|
 |[AS0102](appsourcecop-as0102.md)|Cannot add a return value to a procedure|Upgrade|Error|
 |[AS0103](appsourcecop-as0103.md)|Table definitions must have a matching permission set.|Configuration|Warning|
@@ -119,6 +119,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0107](appsourcecop-as0107.md)|The access modifier of a variable that belongs to the public API cannot be changed to a value that provides less access.|Design|Error|
 |[AS0108](appsourcecop-as0108.md)|The type of a variable belonging to the public API cannot be changed.|Design|Error|
 |[AS0109](appsourcecop-as0109.md)|The type of the table has changed from Normal to Temporary.|Upgrade|Warning|
+|[AS0110](appsourcecop-as0110.md)|Permission set extensions should not include permissions for objects defined in another application.|Extensibility|Warning|
+|[AS0111](appsourcecop-as0111.md)|Permission set extensions should not include permission sets defined in another application.|Extensibility|Warning|
+|[AS0112](appsourcecop-as0112.md)|Permission set extensions should not include permission sets which include permissions for objects defined in another application.|Extensibility|Warning|
+|[AS0113](appsourcecop-as0113.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
+|[AS0114](appsourcecop-as0114.md)|The name of an external business event cannot be changed.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
