@@ -2,7 +2,7 @@
 title: salesOrder resource type  
 description: A sales order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -44,12 +44,13 @@ The response has no content; the response code is 204.
 |:----------|:----------|:-----------------|
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesOrder.|
 |[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesOrder.|
+|[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesOrder.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesOrder.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesOrder.|
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesOrder.|
+|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesOrder.|
 |[salesOrderLines](dynamics_salesorderline.md)|salesOrderLines |Gets the salesorderlines of the salesOrder.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesOrder.|
-|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesOrder.|
 
 ## Properties
 
@@ -86,6 +87,8 @@ The response has no content; the response code is 204.
 |shipToCountry|string|Ship to country.|
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
 |currencyId|GUID|Specifies which currency the sales order uses.|
 |currencyCode|string|The default currency code for the sales order.|
 |pricesIncludeTax|boolean|Specifies whether the prices include Tax or not. Read-Only.|
@@ -143,6 +146,8 @@ Here is a JSON representation of the salesOrder resource.
     "shipToCountry": "string",
     "shipToState": "string",
     "shipToPostCode": "string",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
     "currencyId": "GUID",
     "currencyCode": "string",
     "pricesIncludeTax": "boolean",

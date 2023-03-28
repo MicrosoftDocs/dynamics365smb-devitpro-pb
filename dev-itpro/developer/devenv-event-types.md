@@ -1,5 +1,5 @@
 ---
-title: "Event Types"
+title: "Event types"
 description: Dynamics 365 Business Central supports different types of events including BusinessEvent, IntegrationEvent, Global and trigger events. 
 ms.custom: na
 ms.date: 12/07/2022
@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Event Types
+# Event types
 
 [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] supports different types of events for different purposes.
 
@@ -132,7 +132,7 @@ The following table describes the parameters of the trigger events:
 |*RunTrigger*|Boolean|Specifies whether to execute the code in the event trigger when it is invoked. If this parameter is true, the code will be executed. If this parameter is false, then the code is not executed.|  
 |*CurrFieldNo*|Integer|The number of the field that raises the event.|  
   
-#### Order of Event Execution
+#### Order of event execution
   
 The relative order of execution of database trigger events, table triggers, and database operations is as follows:  
   
@@ -148,7 +148,7 @@ The relative order of execution of database trigger events, table triggers, and 
   
 Page Trigger events are raised automatically by the system when it performs certain operations in a page object. Page trigger events are closely associated with the standard page triggers, such as OnOpenPage, OnClosePage, and OnAction.  
   
-#### Available Page Trigger Events
+#### Available page trigger events
   
 The following table describes the available page trigger events:  
   

@@ -3,7 +3,7 @@ title: "AL Profiler Overview"
 description: "Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2022
+ms.date: 01/30/2023
 ms.topic: overview
 ms.author: solsen
 ---
@@ -152,11 +152,17 @@ The following table provides an overview of the shortcut key combinations that y
 
 |Keyboard Shortcut|Action|
 |-----------------|------|
-|**Enter+Toggle** | Expand and collapse a node. |
-|**Arrow+Left** | Collapse a node. |
-|**Arrow+Right** | Expand a node. |
-|-(minus) | Collapse all nodes.|
-|*(star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
+|<kbd>Enter</kbd>+<kbd>Toggle</kbd> | Expand and collapse a node. |
+|<kbd>Left arrow</kbd> | Collapse a node. |
+|<kbd>Right arrow</kbd> | Expand a node. |
+|<kbd>Tab</kbd>+<kbd>Enter</kbd> | Go to the source code of a node. |
+|<kbd>F12</kbd> | Jump to selected node.|
+|<kbd>Home</kbd> | Jump to the first node of the list.|
+|<kbd>End</kbd> | Jump to the last node of the list.|
+|<kbd>Down arrow</kbd> | Jump to the next node. |
+|<kbd>Up arrow</kbd> | Jump to the previous node. |
+|<kbd>-</kbd> (minus) | Collapse all nodes.|
+|<kbd>*</kbd> (star) | Expand one level for all nodes. Consecutive keystrokes will expand to the next level.|
 
 
 ### Inline Profiler CodeLens for AL profiling results
