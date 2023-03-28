@@ -3,7 +3,7 @@ title: "Report.SaveAsXml(Text) Method"
 description: "Saves the resulting data set of a query as an .xml file.The following code shows the syntax of the SAVEASXML method."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ An instance of the [Report](report-data-type.md) data type.
 
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path and name of the file that you want to save the query to.
-          
+The path and name of the file that you want to save the query to.  
 
 
 ## Return Value

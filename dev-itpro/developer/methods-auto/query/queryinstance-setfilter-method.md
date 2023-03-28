@@ -3,7 +3,7 @@ title: "Query.SetFilter(Any, Text [, Any,...]) Method"
 description: "Sets a filter on a column of a query to limit the records in the resulting data set of a query."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,11 @@ An instance of the [Query](query-data-type.md) data type.
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The name of the column in the query that you want to filter. The name is defined by the column's Name Property.
-        
+The name of the column in the query that you want to filter. The name is defined by the column's Name Property.  
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.
-        
+The filter expression. A valid expression consists of alphanumeric characters and one or more of the following operators: \<, \>, \\, &, &#124;, and =. You can use replacement fields (%1, %2, and so on) to insert values at run-time.  
 
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

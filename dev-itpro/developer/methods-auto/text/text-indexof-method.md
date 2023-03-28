@@ -3,7 +3,7 @@ title: "Text.IndexOf(Text [, Integer]) Method"
 description: "Reports the one-based index of the first occurrence of the specified string in this instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 
 *Value*  
 &emsp;Type: [Text](text-data-type.md)  
-The string to seek.
-        
+The string to seek.  
 
 *[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

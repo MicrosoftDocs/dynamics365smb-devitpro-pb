@@ -3,7 +3,7 @@ title: "File.Exists(Text) Method"
 description: "Determines whether a file exists."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,14 +33,13 @@ Determines whether a file exists.
 The name of the file that you want to check. This includes the path. When you enter the path, consider these shortcuts:
 -   You can omit the drive designation if the file is located on the current drive.
 -   You can omit the full path if the file is located in the current directory.
--   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.
-          
+-   You can enter only the subdirectory name if the file is located in a subdirectory of the current directory.  
 
 
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the server instance has access to the file; otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the server instance has access to the file; otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

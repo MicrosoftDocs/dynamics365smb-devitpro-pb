@@ -72,6 +72,7 @@ Global events are predefined system events that are automatically raised by vari
 |||OnAfterGetPrinterName|
 |||OnAfterHasCustomLayout|
 |||[OnAfterDocumentReady](devenv-onafterdocumentready-event.md)|
+|||[OnAfterIntermediateDocumentReady](devenv-onafterintermediatedocumentready-event.md)|
 |||[OnAfterDocumentDownload](devenv-onafterdocumentready-event.md)|
 |||[OnAfterSetupPrinters](devenv-onaftersetupprinters-event.md)|
 |||[OnCustomDocumentMergerex](devenv-oncustomdocumentmergerex-event.md)|

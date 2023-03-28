@@ -3,7 +3,7 @@ title: "Record.Insert(Boolean) Method"
 description: "Inserts a record into a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-If this parameter is true, the code in the OnInsert Trigger is executed. If this parameter is false, the code in the OnInsert trigger is not executed. The default value is false.
-          
+If this parameter is true, the code in the OnInsert Trigger is executed. If this parameter is false, the code in the OnInsert trigger is not executed. The default value is false.  
 
 
 ## Return Value

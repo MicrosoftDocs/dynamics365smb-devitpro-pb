@@ -3,7 +3,7 @@ title: "SessionSettings.ProfileAppId([Guid]) Method"
 description: "Gets or sets the ID of an extension, which provides a profile, in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,15 +32,13 @@ An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *[Optional] NewProfileAppId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-Sets the GUID of the extension that provides the profile. The value must be a valid GUID for an extension in the system table **2000000072 Profile**.
-        
+Sets the GUID of the extension that provides the profile. The value must be a valid GUID for an extension in the system table **2000000072 Profile**.  
 
 
 ## Return Value
 *[Optional] ProfileAppId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
 The ID of the extension that is set in the SessionSettings object.
-    
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

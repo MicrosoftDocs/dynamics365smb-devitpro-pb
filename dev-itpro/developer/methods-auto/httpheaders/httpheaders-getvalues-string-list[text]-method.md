@@ -3,7 +3,7 @@ title: "HttpHeaders.GetValues(Text, List of [Text]) Method"
 description: "Gets the values for the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [HttpHeaders](httpheaders-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The specified header.
-        
+The specified header.  
 
 *Values*  
 &emsp;Type: [List of [Text]](../list/list-data-type.md)  

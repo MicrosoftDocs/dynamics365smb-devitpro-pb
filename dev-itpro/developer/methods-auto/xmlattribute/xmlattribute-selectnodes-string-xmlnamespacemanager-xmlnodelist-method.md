@@ -3,7 +3,7 @@ title: "XmlAttribute.SelectNodes(Text, XmlNamespaceManager, var XmlNodeList) Met
 description: "Selects a list of nodes matching the XPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +34,7 @@ The XPath expression.
 
 *NamespaceManager*  
 &emsp;Type: [XmlNamespaceManager](../xmlnamespacemanager/xmlnamespacemanager-data-type.md)  
-An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.
-        
+An XmlNamespaceManager to use for resolving namespaces for prefixes in the XPath expression.  
 
 *NodeList*  
 &emsp;Type: [XmlNodeList](../xmlnodelist/xmlnodelist-data-type.md)  
