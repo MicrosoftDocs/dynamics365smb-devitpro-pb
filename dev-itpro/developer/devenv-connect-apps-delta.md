@@ -78,7 +78,7 @@ The response would return with the specified changes in the result, see the foll
 - Not all entities in the API library support delta tokens. If a delta token is requested for an entity that doesn't support them, the service will respond with `500 Entity does not support delta requests`.
 - The client must use the deltaLink URL as provided. The URL must not be modified either by parsing it or adding any more query string parameters including changing the filters. The deltaLink and token are specific to the original query provided.
 - Delta links don't work with all `$expand` statements.
-- The usage of delta links for large data sets may fail due to timing out. Use filtering to limit the size of data sets that you are tracking changes for.
+- The use of delta links for large data sets may fail due to timing out. Use filtering to limit the size of data sets that you are tracking changes for.
 - The delta service isn't suitable for frequent change tracking requests, because it can take minutes for changes to be propagated to the delta service.
 
    It's recommended to use webhooks instead. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).
