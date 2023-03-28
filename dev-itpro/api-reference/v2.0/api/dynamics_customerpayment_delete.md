@@ -2,7 +2,7 @@
 title: Delete customerPayments  
 description: Deletes a customer payment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -25,10 +25,10 @@ DELETE businesscentralPrefix/companies({id})/customerPayments({id})
 
 ## Request headers
 
-|Header         |Value                     |
-|---------------|--------------------------|
+|Header|Value|
+|------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPayments**, the **customerPayments** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **customerPayment**, the **customerPayment** will not be updated. |
 
 ## Request body
 

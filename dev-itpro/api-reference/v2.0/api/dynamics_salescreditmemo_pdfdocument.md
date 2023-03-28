@@ -4,7 +4,7 @@ description: Gets a PDF document on a salesCreditMemo in Dynamics 365 Business C
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

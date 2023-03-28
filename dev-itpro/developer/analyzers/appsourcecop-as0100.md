@@ -3,7 +3,7 @@ title: "AppSourceCop Error AS0100"
 description: "The 'application' property in the app.json file must be specified on apps targeting the AppSource marketplace."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/03/2022
+ms.date: 03/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,7 +14,7 @@ author: SusanneWindfeldPedersen
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Error AS0100
-The 'application' property in the app.json file must be specified.
+The 'application' property must be specified in the app.json file.
 
 ## Description
 The 'application' property in the app.json file must be specified on apps targeting the AppSource marketplace.

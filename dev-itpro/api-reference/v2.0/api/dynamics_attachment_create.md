@@ -1,12 +1,12 @@
 ---
 title: Create attachment  
-description: Creates a attachment object in Dynamics 365 Business Central.
+description: Creates an attachment object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/01/2022
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -25,10 +25,12 @@ POST businesscentralPrefix/companies({id})/attachments
 
 ## Request headers
 
-|Header        |Value                     |
-|--------------|--------------------------|
-|Authorization |Bearer {token}. Required. |
-|Content-Type  |application/json          |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **attachment**, the **attachment** will not be updated. |
+
 
 ## Request body
 In the request body, supply a JSON representation of a **attachment** object.
@@ -41,6 +43,9 @@ If successful, this method returns ```201 Created``` response code and a **attac
 **Request**
 
 Here is an example of a request.
+
+```json
+POST https://{businesscentralPrefix}/api/v2.0/companies({id})/attachments({id})
 
 Content-type: application/json
 ```json

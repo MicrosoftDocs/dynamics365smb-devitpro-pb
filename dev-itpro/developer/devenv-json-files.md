@@ -92,7 +92,6 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
-|attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
@@ -125,8 +124,6 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
-|attach|No | Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
-
 
 ### Global and workspace launch configuration
 

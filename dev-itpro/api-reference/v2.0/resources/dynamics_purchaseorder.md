@@ -2,7 +2,7 @@
 title: purchaseOrder resource type  
 description: A purchase order object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -44,6 +44,7 @@ The response has no content; the response code is 204.
 |:----------|:----------|:-----------------|
 |[vendor](dynamics_vendor.md)|vendor |Gets the vendor of the purchaseOrder.|
 |[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the purchaseOrder.|
+|[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the purchaseOrder.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the purchaseOrder.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the purchaseOrder.|
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the purchaseOrder.|
@@ -85,6 +86,8 @@ The response has no content; the response code is 204.
 |shipToCountry|string|Ship to country.|
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
 |currencyId|GUID|Specifies which currency the purchase order uses.|
 |currencyCode|string|The default currency code for the purchase order.|
 |pricesIncludeTax|boolean|Specifies whether the prices include Tax or not. Read-Only.|
@@ -138,6 +141,8 @@ Here is a JSON representation of the purchaseOrder resource.
     "shipToCountry": "string",
     "shipToState": "string",
     "shipToPostCode": "string",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
     "currencyId": "GUID",
     "currencyCode": "string",
     "pricesIncludeTax": "boolean",

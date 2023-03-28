@@ -2,7 +2,7 @@
 title: timeRegistrationEntry resource type  
 description: A time registration entry object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na

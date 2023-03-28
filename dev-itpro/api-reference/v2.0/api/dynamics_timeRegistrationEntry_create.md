@@ -4,7 +4,7 @@ description: Creates a attachment object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -28,10 +28,11 @@ POST businesscentralPrefix/companies({companyId})/employees({employeeId})/timeRe
 
 ## Request headers
 
-|Header        |Value                     |
-|--------------|--------------------------|
-|Authorization |Bearer {token}. Required. |
-|Content-Type  |application/json          |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **timeRegistrationEntry**, the **timeRegistrationEntry** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **timeRegistrationEntries** object.
