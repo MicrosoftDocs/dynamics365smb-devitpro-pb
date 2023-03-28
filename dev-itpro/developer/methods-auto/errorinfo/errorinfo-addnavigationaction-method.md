@@ -1,9 +1,9 @@
 ---
-title: "ErrorInfo.AddNavigationAction() Method"
+title: "ErrorInfo.AddNavigationAction([Text]) Method"
 description: "Adds a navigation action for the error."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 02/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# ErrorInfo.AddNavigationAction() Method
+# ErrorInfo.AddNavigationAction([Text]) Method
 > **Version**: _Available or changed with runtime version 11.0._
 
 Adds a navigation action for the error.
@@ -21,12 +21,17 @@ Adds a navigation action for the error.
 
 ## Syntax
 ```AL
- ErrorInfo.AddNavigationAction()
+ ErrorInfo.AddNavigationAction([Caption: Text])
 ```
 ## Parameters
 *ErrorInfo*  
 &emsp;Type: [ErrorInfo](errorinfo-data-type.md)  
 An instance of the [ErrorInfo](errorinfo-data-type.md) data type.  
+
+*[Optional] Caption*  
+&emsp;Type: [Text](../text/text-data-type.md)  
+The text string that appears as the caption of the action in the error UI. The string can be a label that is enabled for multilanguage functionality.  
+
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

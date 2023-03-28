@@ -3,7 +3,7 @@ title: "System.CreateDateTime(Date, Time) Method"
 description: "Creates a DateTime object from a date and a time."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,12 +28,11 @@ Datetime :=   System.CreateDateTime(Date: Date, Time: Time)
 ## Parameters
 *Date*  
 &emsp;Type: [Date](../date/date-data-type.md)  
-The date that you want to use to create a DateTime. You cannot use an undefined date to create a DateTime.
-          
+The date that you want to use to create a DateTime. You cannot use an undefined date to create a DateTime.  
+
 *Time*  
 &emsp;Type: [Time](../time/time-data-type.md)  
-The time that you want to use to create a DateTime. You cannot use an undefined time to create a DateTime.
-          
+The time that you want to use to create a DateTime. You cannot use an undefined time to create a DateTime.  
 
 
 ## Return Value

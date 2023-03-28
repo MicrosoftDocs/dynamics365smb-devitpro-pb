@@ -3,7 +3,7 @@ title: "Text.IndexOfAny(List of [Char] [, Integer]) Method"
 description: "Reports the one-based index of the first occurrence in this instance of any character in a specified array of Unicode characters."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 
 *Values*  
 &emsp;Type: [List of [Char]](../list/list-data-type.md)  
-The collection of characters to seek.
-        
+The collection of characters to seek.  
 
 *[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

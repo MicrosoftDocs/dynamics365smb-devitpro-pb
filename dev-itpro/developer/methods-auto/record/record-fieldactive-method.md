@@ -3,7 +3,7 @@ title: "Record.FieldActive(Any) Method"
 description: "Checks whether a field is enabled."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The field that you want to check.
-          
+The field that you want to check.  
 
 
 ## Return Value

@@ -3,7 +3,7 @@ title: "AL Language Extension Configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/12/2023
+ms.date: 02/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -36,7 +36,7 @@ The following table describes the user and workspace settings for the AL Languag
 |Enable Script IntelliSense|Specifies whether IntelliSense should be enabled for control add-in script files. Turn this off, if it interferes with advanced JavaScript or TypeScript configurations. Default is `true`.|
 |Incognito|Specifies whether to open the browser in Incognito/InPrivate mode when launching the application from Visual Studio Code. This option will take effect only if the **Browser** option is set to a non-default value.|
 |Incremental Build| Specifies whether a project, when it's built using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>, or <kbd>Ctrl</kbd>+<kbd>F5</kbd>, or <kbd>F5</kbd>, will reuse the last known tracked compilation, which will enhance the compilation time significantly. For more information about project to project references, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md). <br> **Note:** Setting this to `true` won't do an end-to-end build, as it's depending on an already-compiled state. To get a clean, full build, this flag must be set to `false`. Default is `false`. <br> **Important:** If this setting is enabled, then all translations will be ignored, even though the `"features": [ "TranslationFile" ]` setting is specified in the `app.json` file. For more information, see [Working with Translation Files](devenv-work-with-translation-files.md).|
-|Package Cache Path|Sets the directory path where reference symbol packages are located.|
+|Package Cache Path|Sets the directory path where reference symbol packages are located. **With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 1**, you can specify multiple file locations for symbol packages. If you specify multiple paths, the first entry is used as the directory to store the downloaded symbols. Syntax is `"al.packageCachePath": ["./.alpackages", "./.alternativePackages"]`.|
 |Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Snapshot Debugger Lines Hit Decoration | Specifies the decoration values for a line that is hit by the snapshot debugger. Syntax is `al.snapshotDebuggerLinesHitDecoration`.|

@@ -3,7 +3,7 @@ title: "FilterPageBuilder.GetView(Text [, Boolean]) Method"
 description: "Gets the filter view (which defines the sort order, key, and filters) for the record in the specified filter control of a filter page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,11 @@ An instance of the [FilterPageBuilder](filterpagebuilder-data-type.md) data type
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.
-        
+The name of the filter control. This value must match the value of the Name parameter that was specified by AddTable, AddRecord, or AddRecordRef method that adds the table to the filter control.  
 
 *[Optional] UseNames*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether a field caption or field number should be returned. This parameter is optional. If this parameter is **true** (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If this parameter is **false**, then the returned string contains references to field numbers.
-        
+Specifies whether a field caption or field number should be returned. This parameter is optional. If this parameter is **true** (default value) or if it is empty, then the returned string contains references to field captions in the table with which the record is associated. If this parameter is **false**, then the returned string contains references to field numbers.  
 
 
 ## Return Value

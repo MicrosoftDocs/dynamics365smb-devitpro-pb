@@ -3,7 +3,7 @@ title: "JsonArray.SelectToken(Text, var JsonToken) Method"
 description: "Selects a JsonToken using a JPath expression."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *Path*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A valid JPath expression.
-        
+A valid JPath expression.  
 
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  

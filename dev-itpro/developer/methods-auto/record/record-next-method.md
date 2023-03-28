@@ -3,7 +3,7 @@ title: "Record.Next([Integer]) Method"
 description: "Steps through a specified number of records and retrieves a record."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -34,8 +34,7 @@ Specifies the direction of the search and how many records to step over. This pa
 -   \> 0  Search Steps records forward in the table.
 -   \< 0  Search Steps records backward in the table.
 -   = 0  Stay on the same record in the table.
-If you do not specify this parameter, then the next record is found.
-          
+If you do not specify this parameter, then the next record is found.  
 
 
 ## Return Value

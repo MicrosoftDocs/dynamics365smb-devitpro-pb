@@ -3,7 +3,7 @@ title: "IsolatedStorage.Delete(Text [, DataScope]) Method"
 description: "Deletes the value with the specified key from the isolated storage."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ Deletes the value with the specified key from the isolated storage.
 ## Parameters
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The key of the value to remove.
-        
+The key of the value to remove.  
 
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  

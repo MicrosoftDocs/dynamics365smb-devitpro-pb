@@ -3,7 +3,7 @@ title: "Dialog.Error(ErrorInfo) Method"
 description: "Displays an error message and ends the execution of AL code."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ Displays an error message and ends the execution of AL code.
 ## Parameters
 *Message*  
 &emsp;Type: [ErrorInfo](../errorinfo/errorinfo-data-type.md)  
-The ErrorInfo structure that contains error message, error type, verbosity, and data classification.
-        
+The ErrorInfo structure that contains error message, error type, verbosity, and data classification.  
 
 
 

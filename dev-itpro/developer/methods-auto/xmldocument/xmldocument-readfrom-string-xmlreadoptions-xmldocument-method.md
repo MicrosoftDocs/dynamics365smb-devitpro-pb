@@ -3,7 +3,7 @@ title: "XmlDocument.ReadFrom(Text, XmlReadOptions, var XmlDocument) Method"
 description: "Reads and parses the XML document from the given data source."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,13 +26,11 @@ Reads and parses the XML document from the given data source.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string containing an XML document.
-        
+A string containing an XML document.  
 
 *ReadOptions*  
 &emsp;Type: [XmlReadOptions](../xmlreadoptions/xmlreadoptions-data-type.md)  
-Specifies options for customizing how the document is parsed.
-        
+Specifies options for customizing how the document is parsed.  
 
 *Result*  
 &emsp;Type: [XmlDocument](xmldocument-data-type.md)  

@@ -3,7 +3,7 @@ title: "Text.CopyStr(Text, Integer [, Integer]) Method"
 description: "Copies a substring of any length from a specific position in a string (text or code) to a new string."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ NewString :=   Text.CopyStr(String: Text, Position: Integer [, Length: Integer])
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
-The string that you want to copy from.
-        
+The string that you want to copy from.  
 
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position of the first character to copy. If the value of Position is less than 1, then the COPYSTR function returns an error. If Position is greater than the length of the string, then the COPYSTR function returns an empty string.
-        
+The position of the first character to copy. If the value of Position is less than 1, then the COPYSTR function returns an error. If Position is greater than the length of the string, then the COPYSTR function returns an empty string.  
 
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

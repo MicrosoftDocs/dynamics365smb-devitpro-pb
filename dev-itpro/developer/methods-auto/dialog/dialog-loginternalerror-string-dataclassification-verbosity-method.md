@@ -3,7 +3,7 @@ title: "Dialog.LogInternalError(Text, DataClassification, Verbosity) Method"
 description: "Log internal errors for telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,13 +30,11 @@ Log internal errors for telemetry.
 ## Parameters
 *Message*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-This string contains the text of the error message you want to log into telemetry. It is not what the user will get, they will only get a generic error message.
-        
+This string contains the text of the error message you want to log into telemetry. It is not what the user will get, they will only get a generic error message.  
 
 *DataClassificationInstance*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
-Sets the classification of the data in the error message.
-        
+Sets the classification of the data in the error message.  
 
 *VerbosityInstance*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  

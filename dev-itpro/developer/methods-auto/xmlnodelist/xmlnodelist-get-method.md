@@ -3,7 +3,7 @@ title: "XmlNodeList.Get(Integer, var XmlNode) Method"
 description: "Gets a node at the given index."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [XmlNodeList](xmlnodelist-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based index into the list of nodes.
-        
+The one-based index into the list of nodes.  
+
 *Node*  
 &emsp;Type: [XmlNode](../xmlnode/xmlnode-data-type.md)  
 The XmlNode with the specified index in the list.  

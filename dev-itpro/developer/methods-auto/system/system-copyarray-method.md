@@ -3,7 +3,7 @@ title: "System.CopyArray(Array of [Any], Array of [Any], Integer [, Integer]) Me
 description: "Copies one or more elements in an array to a new array."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,20 +28,20 @@ Copies one or more elements in an array to a new array.
 ## Parameters
 *NewArray*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The array to copy to; the destination array.
-        
+The array to copy to; the destination array.  
+
 *Array*  
 &emsp;Type: [Any](../any/any-data-type.md)  
   
+
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position of the first array element to copy.
-        
+The position of the first array element to copy.  
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of array elements to copy. If you do not specify Length, all array elements are copied from Position to the last element. Use the following equation to determine valid values.
-1 =\< LENGTH =\< MAXLEN(ARRAY) - POSITION + 1
-          
+1 =\< LENGTH =\< MAXLEN(ARRAY) - POSITION + 1  
 
 
 
