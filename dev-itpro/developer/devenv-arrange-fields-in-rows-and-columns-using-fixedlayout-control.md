@@ -1,25 +1,25 @@
 ---
-title: "Arranging Fields in Rows and Columns Using a fixed Control"
-description: A fixed control is used to arrange page fields in rows and columns, similar to a matrix-like format which is typically used to display statistical data.
-ms.custom: na
-ms.date: 12/15/2022
+title: Arranging Fields in Rows and Columns Using a fixed Control
+description: A fixed control is used to arrange page fields in rows and columns, similar to a matrix-like format, which is typically used to display statistical data.
+ms.custom: bap-template
+ms.date: 02/06/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-author: SusanneWindfeldPedersen
+author: jswymer
+ms.author: jswymer
 ---
 
 # Arranging fields in rows and columns using the fixed control
 
-By default, fields on a FastTab are arranged automatically in two columns based on the number of fields. For more information on how the fields are placed on a page, see [Field Arrangement on a Fasttab](devenv-arranging-fields-on-fasttab.md). To manually arrange fields, you can either use a Grid control to design the page to look like a grid-like format, or a fixed control to design the page to look like a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
+By default, fields on a FastTab are arranged automatically in two columns based on the number of fields. For more information on how the fields are placed on a page, see [Field Arrangement on a Fasttab](devenv-arranging-fields-on-fasttab.md). To arrange fields manually, you can either use a Grid control to design the page to look like a grid-like format, or a fixed control to design the page to look like a matrix-like format. To understand the differences between the two controls to help you determine which control to use, see [Comparing Grid and Fixed controls](devenv-arranging-fields-using-grid-and-fixed-controls.md).
 
 > [!IMPORTANT]  
 > Fields in a fixed layout are not editable even if the **Editable** property is set to **true**. However, if the field drills down to a page where the field source is defined, then you can modify the field. For more information, see [Editable Property](properties/devenv-editable-property.md).
 
 ## How fixed control works
 
-You use the fixed control to arrange page fields in rows and columns to form a matrix-like layout except that the fixed control contains a specific number of fields, and a matrix can contain an unspecified number of fields. A Fixed group control is typically used to display statistical data. The following illustration shows an example of a page that uses a fixed control to show sales totals for different time periods.   
+Use the fixed control to arrange page fields in rows and columns to form a matrix-like layout. The difference is that the fixed control contains a specific number of fields, and a matrix can contain an unspecified number of fields. A Fixed group control is typically used to display statistical data. The following illustration shows an example of a page that uses a fixed control to show sales totals for different time periods.   
 
 ![Fixed control illustration on web client.](media/BusWebClientFixedLayout.PNG "BusinessCentralFixedControl") 
 
@@ -92,6 +92,10 @@ The group control caption appears as the column header, and the field control ca
   
 ![Fixed control in multiple groups.](media/BusRTCFixedLayoutMultipleGroups.png "FixedControlMultipleGroups") 
 
+## Column header alignment
+
+Starting in Business Central 2023 release wave 1 (v22.0), column headers are automatically right-aligned. Similar to all other cases in Business Central, you can't explicitly specify field value alignment. Column headers are left-aligned in earlier releases.
+
 ## Using multiple fixed controls
 
 You can also set up more than one fixed control in a group control. The page area will then divide the fields into two columns that contain the separate fixed fields. For example, the following illustration shows the page layout if you have four fixed controls.  
@@ -104,7 +108,6 @@ You can also set up more than one fixed control in a group control. The page are
 > [!IMPORTANT]  
 > In previous versions, having a fixed control directly under a content area was supported. However, in [!INCLUDE[d365_bus_central_md](includes/d365_bus_central_md.md)], you must make sure that the fixed control is nested in a Group control. For more information, see [Supported Structure for Using the Grid and Fixed Controls](devenv-arranging-fields-using-grid-and-fixed-controls.md#supported-structure-for-using-the-grid-and-fixed-controls).
 
-  
 ## See Also
 
 [Field Arrangement on a FastTab](devenv-arranging-fields-on-fasttab.md)  
