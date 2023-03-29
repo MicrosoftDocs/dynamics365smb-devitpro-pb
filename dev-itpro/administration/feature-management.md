@@ -13,7 +13,7 @@ ms.author: mikebc
 
 # Enabling Upcoming Features Ahead of Time
 
-New capabilities are added to [!INCLUDE [prod_short](../includes/prod_short.md)] in major updates and minor updates. Some new features can be enabled ahead of time on sandbox and production environments. Learn how you as an administrator can turn on new features using the **Feature Management** page.
+We add new capabilities to [!INCLUDE [prod_short](../includes/prod_short.md)] in major updates and minor updates. Some new features can be enabled ahead of time on sandbox and production environments. Learn how you as an administrator can turn on new features using the **Feature Management** page.
 
 ## Managing optional features
 
@@ -21,7 +21,7 @@ Some new features can be enabled ahead of time on sandbox and production environ
 
 When Microsoft releases features or feature design improvements as part of minor updates, some features aren't immediately enabled. Users as well as administrators can learn about these features in the release plans, and administrators can enable each individual feature from the **Feature Management** page inside [!INCLUDE [prod_short](../includes/prod_short.md)]. Once a feature is enabled, it becomes available for all users on that environment no matter how they access [!INCLUDE[prod_short](../includes/prod_short.md)].  
 
-These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the **Feature Management** page and can no longer be turned off.  
+These features are only optional for a while. The option period typically starts from the minor update in which they're made generally available. The period ends when the features become mandatory and are automatically enabled in a later major update. To see the approximate date and service update when each feature is expected to become mandatory, see the **Automatically enabled from** field in the **Feature Management** page. After this date, the feature will no longer appear in the **Feature Management** page and can no longer be turned off. To learn more about features that are now, or soon will be mandatory or generally available, go to [Optional Features that are Now Mandatory](feature-management-mandatory-features.md).  
 
 > [!IMPORTANT]
 > The projected timeline for a feature is subject to change (see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332)).
