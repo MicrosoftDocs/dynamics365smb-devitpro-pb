@@ -20,6 +20,7 @@
 |Job queue|Provides information about creating and running job queue entries.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-job-queue-lifecycle-trace.md) |
 |Long running AL method trace<sup>[\[3\]](#3)</sup>|Provides information about long running AL methods.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-al-method-trace.md) |
 |Long running operation (SQL query)|Provides information about SQL queries that take longer than expected to execute.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-long-running-sql-query-trace.md)|
+|Onboarding<sup>[\[7\]](#7)</sup>|Provides information about the onboarding of users.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-onboarding-trace.md) |
 |Page views|Provides information about the pages that users open in the modern client.|![check mark for feature.](../developer/media/check.png)|![check mark for feature.](../developer/media/check.png)<sup>[\[6\]](#6)</sup>|![check mark for feature](../developer/media/check.png)<sup>[\[4\]](#4)</sup>|[See...](../administration/telemetry-page-view-trace.md)|
 |Permissions|Provides information about adding, removing, and assigning permission sets.|![check mark for feature.](../developer/media/check.png)|||[See...](../administration/telemetry-permission-changes-trace.md)|
 |Permissions dependency cycle<sup>[\[5\]](#5)</sup>|Provides information about dependency cycles in permissions.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-permission-dependency-cycle-trace.md)|
@@ -47,3 +48,5 @@
 <sup>5</sup><a name="5"></a>Introduced in Business Central 2022 release wave 1, version 20.
 
 <sup>6</sup><a name="6"></a>Introduced in Business Central 2022 release wave 2, version 21.
+
+<sup>7</sup><a name="7"></a>Introduced in Business Central 2023 release wave 1, version 22.

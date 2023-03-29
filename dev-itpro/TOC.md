@@ -197,6 +197,7 @@
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
 ### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Measure onboarding progress using telemetry](administration/onboarding-telemetry.md)
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
@@ -232,6 +233,7 @@
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
 #### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
