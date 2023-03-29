@@ -14,7 +14,7 @@ ms.author: solsen
 
 > *The prerequisite for this how to is that you have an AL-Go repository set up using one of the scenarios in this repo.*
 
-When the CI/CD workflow is run, the build job is by far the most time-consuming job. If you add your own GitHub Runner, which can cache the generic image, the build image, and also the artifacts, the time for running the build job can become much faster.
+When the CI/CD workflow is run, the build job is by far the most time-consuming job. If you add your own GitHub Runner, which can cache the generic image, the build image, and also the artifacts, the time for running the build job can become faster.
 
 GitHub runners can be registered for an organization (accessible for all repositories in the organization) or for a single repository.
 
