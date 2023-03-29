@@ -46,9 +46,9 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |alObjectId|The type of the AL object that executed the AL method.|
 |alObjectName|The name of the AL object that executed the AL method.|
 |alObjectType|The type of the AL object that executed the AL method.|
-|alStackTrace|The stack trace in AL.|
-|clientType|Specifies the type of client that executed the AL method, such as Background or Web. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution. |
+|alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] |
+|clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)] |
+|companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
@@ -62,19 +62,10 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |extensionVersion|Specifies the version of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
 |extensionId|Specifies the ID of the extension that was currently executing when the long-running threshold was exceeded and the trace was emitted.|
 |longRunningThreshold|Specifies the time that defines a long-running AL method, after which the trace is emitted. The value has the format hh:mm:ss.sssssss. |
+|sqlExecutes|Specifies the number of SQL statements that was executed in the method.<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0. |
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0.  |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema. |
 
-<!-- for 17.1 
-<br /><br >This threshold is controlled by the [!INCLUDE[server](../developer/includes/server.md)] configuration settings called ALLongRunningFunctionTracingThreshold and ALLongRunningFunctionTracingThresholdForApplicationInsights.-->
-
-<!--
-## Example
-
-The following code snippet shows an example of the CustomDimensions.
-
-`{"telemetrySchemaVersion":"0.1","longRunningThreshold":"00:00:00.5000000","componentVersion":"17.0.15765.0","environmentName":"Production","environmentType":"Production","extensionPublisher":"Microsoft","deprecatedKeys":"Execution time (ms), executionTimeInMs, Long running log threshold (ms), longRunningThresholdInMs, Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","extensionVersion":"17.0.15821.0","aadTenantId":"f22cca61-d606-4dfc-8165-acd0bf022d2a","extensionName":"Base Application","extensionInfo":"[{\"id\": \"00000000-0000-0000-0000-000000000000\",\"subscriberExecutionCount\": 0,\"executionTime\": 0},{\"id\": \"63ca2fa4-4f03-4f2b-a480-172fef340d3f\",\"extensionName\": \"System Application\",\"extensionVersion\": \"17.0.15821.0\",\"extensionPublisher\": \"Microsoft\",\"subscriberExecutionCount\": 0,\"executionTime\": 0},{\"id\": \"437dbf0e-84ff-417a-965d-ed2bb9650972\",\"extensionName\": \"Base Application\",\"extensionVersion\": \"17.0.15821.0\",\"extensionPublisher\": \"Microsoft\",\"subscriberExecutionCount\": 21,\"executionTime\": 0}]","executionTime":"00:00:01.7810000","component":"Dynamics 365 Business Central Server","companyName":"CRONUS USA, Inc.","alObjectType":"CodeUnit","alObjectName":"CRM Statistics Job","alStackTrace":"AppObjectType: CodeUnit\r\n  AppObjectId: 5350\r\n  AL CallStack: \"CRM Statistics Job\"(CodeUnit 5350).UpdateInvoice line 14 - Base Application by Microsoft\r\n\"CRM Statistics Job\"(CodeUnit 5350).UpdateStatusOfPaidInvoices line 21 - Base Application by Microsoft\r\n\"CRM Statistics Job\"(CodeUnit 5350).UpdateInvoices line 9 - Base Application by Microsoft\r\n\"CRM Statistics Job\"(CodeUnit 5350).UpdateStatisticsAndInvoices line 16 - Base Application by Microsoft\r\n\"CRM Statistics Job\"(CodeUnit 5350).OnRun(Trigger) line 2 - Base Application by Microsoft\r\n\"Job Queue Start Codeunit\"(CodeUnit 449).OnRun(Trigger) line 11 - Base Application by Microsoft\r\n\"Job Queue Dispatcher\"(CodeUnit 448).HandleRequest line 30 - Base Application by Microsoft\r\n\"Job Queue Dispatcher\"(CodeUnit 448).OnRun(Trigger) line 19 - Base Application by Microsoft","clientType":"Background","alObjectId":"5350","extensionId":"437dbf0e-84ff-417a-965d-ed2bb9650972","eventId":"RT0018","alMethod":"UpdateInvoice"}`
-
--->
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
