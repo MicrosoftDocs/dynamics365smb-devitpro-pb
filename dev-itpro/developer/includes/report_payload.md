@@ -150,7 +150,7 @@ Specifies the name of the view.
 
 #### *papertray*
 
-Specifies the paper tray settings from the [printer payload](devenv-onaftersetupprinters-event.md#printpayload).
+Specifies the paper tray settings from the [printer payload](../devenv-onaftersetupprinters-event.md#printpayload).
 
 #### *papersourcekind*
 
