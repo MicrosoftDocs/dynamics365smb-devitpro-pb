@@ -263,7 +263,7 @@ The following table explains the general dimensions of this trace.
 Occurs if the timeout defined on a task exceeds that maximum timeout allowed by the server. The task is then assigned the timeout that's equal to the maximum timeout allowed by the server.
 
 > [!NOTE]
-> For Business Central online, the maximum timeout allowed is 23:59:59. For Business Central on-premises, the maximum timeout allowed is determined by the `MaxTaskSchedulerSessionTimeout` setting on the Business Central server instance (for more information, see [Configure Business Central Server](configure-server-instance.md#task-scheduler-settings).
+> For Business Central online, the maximum timeout allowed is 23:59:59. For Business Central on-premises, the maximum timeout allowed is determined by the `MaxTaskSchedulerSessionTimeout` setting on the Business Central server instance (for more information, see [Configure Business Central Server](configure-server-instance.md#Task).
 
 ### General dimensions
 
