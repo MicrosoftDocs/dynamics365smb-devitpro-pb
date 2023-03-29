@@ -51,7 +51,20 @@ As an AL developer, you can also add or promote these instant flows to other pla
 
 You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** action, but they can be run from the **Manage Power Automate Flows** page or from Power Automate.
 
+## Use multiple Power Automate environments
 
+You store the flows you create in one of your Power Automate environments. Learn more at [Using environments within Power Automate](/power-automate/environments-overview-admin).
+
+You can create different flows in different environments. For example, you might want to build and test a flow in a sandbox environment before using it in your production environment. In [!INCLUDE[prod_short](../includes/prod_short.md)], you specify the environment that you want to get flows from.
+
+It's easy to switch between environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. On the **Assisted Setup** page, run the **Power Automate Environment** assisted setup guide. The guide finds your environments for you, and you pick the one you want to use.
+
+After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md)] updates right away. The flows in that environment are available in the **Automate** group on the action bar.
+
+:::image type="content" source="../media/power-automate-flow-example.png" alt-text="Example of a flow in the Automate group on the action bar.":::
+
+> [!TIP]
+> If you sign up for the [Power Apps Developer plan](https://powerapps.microsoft.com/en-us/developerplan/), you can try out the full range of features in Power Automate for free. The plan includes the ability to create environments. Learn more about the plan at [Create a developer environment](/power-platform/developer/create-developer-environment).
 
 ## Create a flow using the "For a selected record (V3)"
 
