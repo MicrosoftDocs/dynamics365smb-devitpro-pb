@@ -2,7 +2,7 @@
 title: Fixing compilation errors for technical upgrade
 description: Describes how to fix compilation errors that occur when compiling extensions during a technical upgrade.
 ms.custom: bap-template
-ms.date: 12/09/2020
+ms.date: 03/24/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -18,6 +18,12 @@ Compilation errors happen when the new platform introduces breaking changes - fo
 ## Known errors
 
 This section lists some known compilation errors that you might get when compiling extensions for the technical upgrade to version 19 or later. The exact errors that you get may vary from what is listed, based on your environment. 
+
+### Compilation failed errors because of missing types in .NET assemblies
+
+[!INCLUDE[include-tech-upgrade-note.md](../developer/includes/include-tech-upgrade-note.md)]
+
+To resolve these issues, you modify the source code extensions to reference .NET 6.0 assemblies instead of .NET 4.8. The recommended approach is to compare the old extension source code with the new source code in version 22 extensions, which you can find on the version 22 installation media (DVD). Identify the changes in the version 22 extensions, then make the same changes in the old version. 
 
 ### System application extension
 

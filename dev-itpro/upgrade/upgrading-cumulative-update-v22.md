@@ -1,6 +1,6 @@
 ---
-title: Install a version 19 update
-description: This article describes the tasks required for getting the monthly version 19 update applied to your Dynamics 365 Business Central on-premises.
+title: Install a version 22 update
+description: This article describes the tasks required for getting the monthly version 22 update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
 ms.date: 02/09/2023
 ms.reviewer: na
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
 ---
-# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2021 Release Wave 2 Update
+# Installing a [!INCLUDE[prod short](../developer/includes/prod_short.md)] 2023 Release Wave 1 Update
 
 This article describes how to install an update for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. An update is a set of files that includes all hotfixes and regulatory features that have been released for Business Central.
 
@@ -38,7 +38,7 @@ The application includes AL extensions that define the objects and code that mak
 
 - Application extension
 
-    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `19.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
+    The Application extension logically encapsulates all of the extensions making up a solution, for example, version `21.0.0.0` of the base and system application package files, and it provides a convenient way to define and refer to this solution identity. This extension is required for Microsoft extensions, but is optional for third-party extensions. For more information, see [The Microsoft_Application.app File](../developer/devenv-application-app-file.md).
 
 - Customization extensions
 
@@ -69,19 +69,19 @@ The installation media (DVD) includes new versions of Microsoft's Base Applicati
 Many of the steps in this article use PowerShell cmdlets, which require that you provide values for various parameters. To make it easier for copying or scripting in PowerShell, the steps use the following variables for parameter values. Replace the text between the `" "` with the correct values for your environment.
 
 ```powershell
-$BcServerInstance = "The name of the Business Central server instance, for example: BC190"
+$BcServerInstance = "The name of the Business Central server instance, for example: BC210"
 $TenantId = "The ID of the tenant to be upgraded. If not using a multitenant server instance, set the variable to default, or omit -Tenant parameter."
-$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (19-0)" 
+$TenantDatabase = "The name of the Business Central tenant database to be upgraded, for example: Demo Database BC (21-0)" 
 $ApplicationDatabase = "The name of the Business Central application database in a multitenant environment, for example: My BC App DB." 
 $DatabaseServer= "The SQL Server instance that hosts the databases. The value has the format server_name\instance_name, For example: localhost\BCDEMO"
 $BaseAppPath = "The file path and name of the Base Application extension for the update, for example: C:\DVD\Applications\BaseApp\Source\Microsoft_Base Application.app"
 $SystemAppPath = "The file path and name of the System Application extension for the update, for example: C:\DVD\Applications\system application\Source\\Microsoft_System Application.app"
 $ApplicationAppPath = "The path and file name to the Application application extension for the update, for example: C:\DVD\Applications\Application\Source\Microsoft_Application.app"
-$NewBcVersion = "The version number for the update, for example: 19.1.24582.0"
+$NewBcVersion = "The version number for the update, for example: 21.1.39901.0"
 $ExtPath = "The path and file name to an extension package" 
 $ExtName = "The name of an extension"
 $ExtVersion = "The version of an extension, for example, 1.0.0.0"
-$AddinsFolder = "The file path to the Add-ins folder of Business Central Server installation, for example: C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Add-ins"
+$AddinsFolder = "The file path to the Add-ins folder of Business Central Server installation, for example: C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\Add-ins"
 $PartnerLicense= "The file path and name of the partner license"
 $CustomerLicense= "The file path and name of the customer license"
 ```
@@ -90,7 +90,7 @@ $CustomerLicense= "The file path and name of the customer license"
 
 The first thing to do is to download the update package that matches your Business Central solution.
 
-1. Go to the [list of available updates](../deployment/update-versions-19.md) for your on-premises version of Business Central. Then, choose the update that you want.
+1. Go to the [list of available updates](../deployment/update-versions-21.md) for your on-premises version of Business Central. Then, choose the update that you want.
 2. From the update page, under the **Resolution** section, select the link for downloading the update, and follow the instructions.
 3. On the computer where you downloaded the update .zip file, extract the all the files to a selected location. 
 
@@ -156,7 +156,7 @@ When this step is completed, you can continue to update your Business Central so
 
 ## Install Business Central components
 
-From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update.
+From the installation media (DVD), run setup.exe to uninstall the current Business Central components and install the Business Central components included in the update. 
 
 1. Stop the [!INCLUDE[server](../developer/includes/server.md)] instance.
 
@@ -203,7 +203,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 1. Run the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] as an administrator.
 
    [!INCLUDE[open-admin-shell](../developer/includes/open-admin-shell.md)]
-
+   
 2. Run the [Invoke-NAVApplicationDatabaseConversion cmdlet](/powershell/module/microsoft.dynamics.nav.management/invoke-navapplicationdatabaseconversion) to start the database conversion to the new platform.
 
     ```powershell
@@ -226,7 +226,7 @@ Also, to ensure that the existing published extensions work on the new platform,
 
     ```powershell
     DatabaseServer      : .\BCDEMO
-    DatabaseName        : Demo Database BC (19-0)
+    DatabaseName        : Demo Database BC (21-0)
     DatabaseCredentials :
     DatabaseLocation    :
     Collation           :
@@ -279,7 +279,7 @@ For more information, see [Uploading a License File for a Specific Database](../
 Compile all published extensions against the new platform.
 
 > [!NOTE]
-> If you plan on updating the application, you can skip this step for extensions for which you have new versions built on the new platform. For example, this includes Microsoft extensions that are on the DVD.  
+> If you plan on updating the application you can skip this step for extensions for which you have new versions built on the new platform. For example, this includes Microsoft extensions that are on the DVD.  
 
 1. To compile an extension, use the [Repair-NAVApp](/powershell/module/microsoft.dynamics.nav.apps.management/repair-navapp) cmdlet, For example:
 
@@ -530,17 +530,10 @@ Restart-NAVServerInstance -ServerInstance $BcServerInstance
 
 [!INCLUDE[upgrade-web-server-instances](../developer/includes/upgrade-web-server-instances.md)]
 
-<!-- 
-If you don't upgrade web, you will see 
-The build version of your client or of the web server components is different from the build version of the server instance that you connect to. However, your connection works.
-Client version: 21.0.46384.47110
-Server version: 21.0.51393.51456-->
-
-
 ## See Also
 
-[Dynamics 365 Business Central On-Premises Release Wave 2 Updates](../deployment/update-versions-16.md)  
-[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v15.md)  
+[Dynamics 365 Business Central On-Premises 2022 Release Wave 1 Updates](../deployment/update-versions-20.md)  
+[Upgrading to Dynamics 365 Business Central 2019 Release Wave 2](upgrade-overview-v20.md)  
 [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md)  
 [Version numbers in Business Central](../administration/version-numbers.md)  
 [Publish and Install an Extension](../developer/devenv-how-publish-and-install-an-extension-v2.md)  
