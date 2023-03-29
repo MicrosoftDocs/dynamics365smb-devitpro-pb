@@ -1,9 +1,9 @@
 ---
 title: "System.GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean]) Method"
-description: " Generates a URL for the specified client target that is based on the configuration of the server instance."
+description: "Generates a URL for the specified client target that is based on the configuration of the server instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,7 +16,7 @@ author: SusanneWindfeldPedersen
 # System.GetUrl(ClientType [, Text] [, ObjectType] [, Integer] [, Record] [, Boolean]) Method
 > **Version**: _Available or changed with runtime version 1.0._
 
- Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
+Generates a URL for the specified client target that is based on the configuration of the server instance. If the code runs in a multitenant deployment architecture, the generated URL will automatically apply to the tenant ID of the current user.
 
 
 ## Syntax
@@ -28,33 +28,27 @@ String :=   System.GetUrl(ClientType: ClientType [, Company: Text] [, ObjectType
 ## Parameters
 *ClientType*  
 &emsp;Type: [ClientType](../clienttype/clienttype-option.md)  
-Specifies the client that you want to generate the URL for. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.
-        
+Specifies the client that you want to generate the URL for. If you want to generate a URL that depends on the client that the user is accessing the URL from, choose Current. A runtime error occurs if the ClientType is set to SOAP or OData but the specified object type and ID has not been published as a web service.  
 
 *[Optional] Company*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Specifies the company that the URL must contain. If you do not specify a company, the URL will run in the user’s current company.
-        
+Specifies the company that the URL must contain. If you do not specify a company, the URL will run in the user’s current company.  
 
 *[Optional] ObjectType*  
 &emsp;Type: [ObjectType](../objecttype/objecttype-option.md)  
-Value: Table, Page, Report, Codeunit, Query, or XmlPort. Specifies the object type that the URL must open. If you specify an object type, you must also specify an object ID in the ObjectId parameter. Otherwise, the user will see a runtime error. If you set the ObjectType parameter to Page, you can also specify a record variable in the Record parameter.
-          
+Value: Table, Page, Report, Codeunit, Query, or XmlPort. Specifies the object type that the URL must open. If you specify an object type, you must also specify an object ID in the ObjectId parameter. Otherwise, the user will see a runtime error. If you set the ObjectType parameter to Page, you can also specify a record variable in the Record parameter.  
 
 *[Optional] ObjectId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Specifies the ID of the specified object type that the URL must open.
-        
+Specifies the ID of the specified object type that the URL must open.  
 
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-Specifies the Record variable that specifies which record to open.
-        
+Specifies the Record variable that specifies which record to open.  
 
 *[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether to include filters that are defined on the object as a text string in the URL.
-        
+Specifies whether to include filters that are defined on the object as a text string in the URL.  
 
 
 ## Return Value

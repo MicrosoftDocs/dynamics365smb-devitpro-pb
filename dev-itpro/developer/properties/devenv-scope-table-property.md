@@ -13,6 +13,8 @@ author: SusanneWindfeldPedersen
 # Scope (Table) Property
 > **Version**: _Available from runtime version 1.0._
 
+<!-- this topic is manually created, parent node is devenv-scope-property.md -->
+
 Sets the scope of a table. The options are `Cloud`, `Extension`, `Internal`, `OnPrem`, and `Personalization`. 
 
 > [!NOTE]  

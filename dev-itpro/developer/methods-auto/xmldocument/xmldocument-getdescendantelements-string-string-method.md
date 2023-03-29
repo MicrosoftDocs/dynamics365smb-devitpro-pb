@@ -3,7 +3,7 @@ title: "XmlDocument.GetDescendantElements(Text, Text) Method"
 description: "Gets a list containing the descendant elements for this document, in document order."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [XmlDocument](xmldocument-data-type.md) data type.
 
 *LocalName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The local name of the elements to retrieve.
-        
+The local name of the elements to retrieve.  
 
 *NamespaceUri*  
 &emsp;Type: [Text](../text/text-data-type.md)  

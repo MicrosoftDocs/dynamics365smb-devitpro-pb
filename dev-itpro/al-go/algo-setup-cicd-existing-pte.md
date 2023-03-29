@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Set up CI/CD for an Existing Per-Tenant Extension (BingMaps)
+# Set up CI/CD for an existing per-tenant extension (BingMaps)
 
 > *The prerequisites for this how to is that you have a GitHub account.*
 
@@ -21,9 +21,9 @@ This article uses the BingMaps sample app, which can be found on GitHub in the [
 1. Navigate to https://github.com/microsoft/AL-Go-PTE and then choose **Use this template**.
 1. Enter `app2` as repository name and select **Create Repository** from template.
 1. On the **Actions** tab, select the **Add existing app or test app** workflow and then choose **Run workflow**.
-1. In the **Direct Download URL** field, paste in the direct download URL of the BingMaps sample from above.
+1. In the **Direct Download URL** field, paste in the direct download URL of the BingMaps sample.
 1. When the workflow is complete, inspect the pull request. 
-1. Merge the pull request and the CI/CD workflow will kick off.
+1. Merge the pull request and the CI/CD workflow kicks off.
 1. After the workflow completes, you can investigate the output and see that everything works.
 1. Use [Register a customer sandbox environment for Continuous Deployment using Service-to-Service Authentication](algo-register-sandbox-env.md), [Create a Release of Your Application](algo-create-release-app.md), and [Register a Customer Production Environment for Manual Deployment](algo-register-cust-prod-env.md) to set up customer environments, publish, and test the app.
 

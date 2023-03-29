@@ -3,7 +3,7 @@ title: "SessionSettings.RequestSessionUpdate(Boolean) Method"
 description: "Passes a SessionSettings object to the client to request a new session that uses the user personalization properties that are set in the object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,11 +30,9 @@ An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *saveSettings*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-
 Specifies whether to save the personalization properties in the SessionSettings object to the table **2000000073 User Personalization** in the database for the current client user. **true** saves the settings; **false** does not.
 If you set this parameter to **true**, before sending the request to the client, the server instance will store the property values of the SessionSettings object to the corresponding fields in the table **2000000073 User Personalization**.
-If you set this to **false**, when the new client session is closed, the next time the user signs in, the session will return to the previous personalization settings. This enables you to use the SessionSettings object to temporarily change the personalization settings for the current session.
-        
+If you set this to **false**, when the new client session is closed, the next time the user signs in, the session will return to the previous personalization settings. This enables you to use the SessionSettings object to temporarily change the personalization settings for the current session.  
 
 
 

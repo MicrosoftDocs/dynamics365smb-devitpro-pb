@@ -3,7 +3,7 @@ title: "TestFilter.SetCurrentKey(TestFilterField [, TestFilterField,...]) Method
 description: "Sets the specified fields in a data set on a test page as the current key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,12 +30,11 @@ An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Field1*  
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  
-The field that you want to set as the current key.
-          
+The field that you want to set as the current key.  
+
 *[Optional] Field2*  
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  
-Additional field that you want to set as the current key. This parameter is optional.
-          
+Additional field that you want to set as the current key. This parameter is optional.  
 
 
 ## Return Value

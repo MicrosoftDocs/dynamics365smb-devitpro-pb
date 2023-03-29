@@ -2,11 +2,11 @@
 title: Get agedAccountsReceivable  
 description: Gets an aged accounts receivable object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 

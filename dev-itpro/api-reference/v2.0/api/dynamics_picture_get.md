@@ -1,8 +1,8 @@
 ---
 title: Get picture  
-description: A picture object in Dynamics 365 Business Central. 
+description: Gets a picture object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -31,6 +31,10 @@ GET businesscentralPrefix/companies({companyId})/customers({customerId})/picture
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
+
+## Request body
+
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a ```200 OK``` response code and a **picture** object in the response body.

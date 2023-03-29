@@ -3,7 +3,7 @@ title: "List.GetRange(Integer, Integer) Method"
 description: "Get a shallow copy of a range of elements in the source."
 ms.author: solsen
 ms.custom: na
-ms.date: 01/10/2023
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [List](list-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based List index at which the range starts.
-        
+The one-based List index at which the range starts.  
+
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
 The number of elements in the range.  

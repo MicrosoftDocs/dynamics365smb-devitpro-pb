@@ -2,7 +2,7 @@
 title: salesQuoteLine resource type  
 description: A sales quote line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -41,6 +41,7 @@ Represents a sales quote line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the salesQuoteLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the salesQuoteLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesQuoteLine.|
+|[location](dynamics_location.md)|location |Gets the location of the salesQuoteLine.|
 
 ## Properties
 
@@ -70,6 +71,7 @@ Represents a sales quote line in [!INCLUDE[prod_short](../../../includes/prod_sh
 |netTaxAmount|decimal|The net tax amount is the tax amount calculated from net amount. Read-Only.|
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |itemVariantId|GUID|The ID of the item variant in the sales quote line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -101,7 +103,8 @@ Here is a JSON representation of the salesQuoteLine resource.
     "netAmount": "decimal",
     "netTaxAmount": "decimal",
     "netAmountIncludingTax": "decimal",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->

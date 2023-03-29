@@ -3,7 +3,7 @@ title: "Database.ImportData(Boolean, var Text [, Boolean] [, Boolean] [, Record]
 description: "Imports data from a file that has been exported from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,25 +30,24 @@ Imports data from a file that has been exported from a database.
 ## Parameters
 *ShowDialog*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies if you want to display a dialog box where the user can confirm the action.
-        
+Specifies if you want to display a dialog box where the user can confirm the action.  
+
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the name and location of the file that must be imported. The file must have been exported from a database
       .  
+
 *[Optional] IncludeApplicationData*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-
 Specifies if you want to import the data that defines the application in the database. This includes the permissions, permission sets, profiles, and style sheets.
 Create a variable of type Boolean to specify this parameter.
-To import application objects, you must use the Import-NAVData Windows PowerShell cmdlet.
-          
+To import application objects, you must use the Import-NAVData Windows PowerShell cmdlet.  
+
 *[Optional] IncludeGlobalData*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-
 Specifies if you want to import global, non-company specific data.
-Create a variable of type Boolean to specify this parameter.
-          
+Create a variable of type Boolean to specify this parameter.  
+
 *[Optional] CompanyRecord*  
 &emsp;Type: [Record](../record/record-data-type.md)  
 Specifies the company or companies that must be imported.  

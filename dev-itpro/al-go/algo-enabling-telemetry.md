@@ -1,5 +1,5 @@
 ---
-title: "Enabling Telemetry"
+title: "Enabling telemetry"
 description: "Enable partner telemetry by adding Application Insights to AL-Go for Business Central."
 author: freddyk
 ms.custom: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Enabling Telemetry
+# Enabling telemetry
 
 If you want to enable partner telemetry, you must add your Application Insights connection string to the AL-Go settings file. the settings structure is the following:
 

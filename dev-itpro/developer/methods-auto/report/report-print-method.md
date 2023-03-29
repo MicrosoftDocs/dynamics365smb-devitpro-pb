@@ -3,7 +3,7 @@ title: "Report.Print(Integer, Text [, Text] [, RecordRef]) Method"
 description: "Prints a specified report without running the request page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,18 +26,15 @@ Prints a specified report without running the request page. Instead of using the
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the report that you want to print. If the report that you specify does not exist, then a run-time error occurs.
-          
+The ID of the report that you want to print. If the report that you specify does not exist, then a run-time error occurs.  
 
 *Parameters*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.
-        
+A string of request page parameters as XML to use to run the report. The parameter string is typically retrieved from the return value a RUNREQUESTPAGE method call.  
 
 *[Optional] PrinterName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the printer to use to print the report. The printer must be set up on the client computer. If you do not set this variable, the printer that is set as the default printer is used.
-        
+The name of the printer to use to print the report. The printer must be set up on the client computer. If you do not set this variable, the printer that is set as the default printer is used.  
 
 *[Optional] RecordRef*  
 &emsp;Type: [RecordRef](../recordref/recordref-data-type.md)  

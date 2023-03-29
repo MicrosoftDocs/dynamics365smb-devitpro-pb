@@ -3,7 +3,7 @@ title: "System.Evaluate(var Any, Text [, Integer]) Method"
 description: "Evaluates a string representation of a value into its typical representation."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ Evaluates a string representation of a value into its typical representation. Th
 ## Parameters
 *Variable*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The value of the string is assigned to the variable.
-        
+The value of the string is assigned to the variable.  
 
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
- A string that contains a value of any simple AL data type.
-        
+A string that contains a value of any simple AL data type.  
 
 *[Optional] Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

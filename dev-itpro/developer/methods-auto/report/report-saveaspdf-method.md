@@ -3,7 +3,7 @@ title: "Report.SaveAsPdf(Integer, Text [, var Record]) Method"
 description: "Saves a report as a .pdf file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ Saves a report as a .pdf file.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the report that you want to run.
-        
+The ID of the report that you want to run.  
 
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path and name of the file that you want to save the report as.
-        
+The path and name of the file that you want to save the report as.  
 
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  

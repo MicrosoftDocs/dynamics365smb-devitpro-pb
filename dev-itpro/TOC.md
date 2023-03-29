@@ -437,6 +437,7 @@
 ### Code analysis
 #### [The code analysis tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL compiler diagnostics](developer/diagnostics/diagnostics-overview.md)
+#### [Code analysis performance configuration](developer/devenv-code-analysis-performance-configuration.md)
 #### [Ruleset for the code analysis tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the code analysis tools with the ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
 #### [AppSourceCop analyzer rules](developer/analyzers/appsourcecop.md)
@@ -626,6 +627,7 @@
 ##### [Working with media on records](developer/devenv-working-with-media-on-records.md)
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
+##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
@@ -645,7 +647,6 @@
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
 ##### [Request pages](developer/devenv-request-pages.md)
-
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
