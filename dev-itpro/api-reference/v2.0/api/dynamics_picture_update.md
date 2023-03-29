@@ -1,10 +1,8 @@
 ---
 title: Update picture  
-description: A picture object in Dynamics 365 Business Central. 
- 
+description: Updates a picture object in Dynamics 365 Business Central. 
 author: SusanneWindfeldPedersen
-
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -33,11 +31,11 @@ PATCH businesscentralPrefix/companies({companyId})/customers({customerId})/pictu
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/octet-stream  |
-|If Match | When this request header is included and the eTag provided does not match the current tag on the picture, the picture will not be updated.|
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **picture**, the **picture** will not be updated. |
 
 ## Request body
-Raw picture binary data.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 ## Response
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.

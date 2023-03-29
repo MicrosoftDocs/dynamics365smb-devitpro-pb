@@ -2,7 +2,7 @@
 title: "OnCustomDocumentMergerEx Event"
 description: Describe the OnCustomDocumentMergerEx Event in Business Central.
 ms.custom: na
-ms.date: 06/10/2022
+ms.date: 03/13/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -89,6 +89,8 @@ Specifies whether the extension handled the merge action successfully.
 > - Download to the client
 > - Print or preview
 
+[!INCLUDE[report_payload_md](includes/report_payload.md)]
+
 ## Sample code
 
 The simplest possible custom document render can be implemented as shown in the following sample, which will use the existing application logic to render XML datasets into Microsoft Word or PDF documents using a given template (Word template).
@@ -101,6 +103,8 @@ The simplest possible custom document render can be implemented as shown in the 
         TempBlob: Codeunit "Temp Blob";
         DataInStream: InStream;
         DataOutStream: OutStream;
+        SharedXmlData: InStream;
+        SharedLayoutData: InStream;
         ObjectName: JsonToken;
         DocumentTypeParts: List of [Text];
         DocumentType: JsonToken;
@@ -115,16 +119,31 @@ The simplest possible custom document render can be implemented as shown in the 
         if IsHandled then
             exit;
 
+        // Setup shared streams
+
+        // Empty stream, no actions possible on the stream so return immediately
+        if XmlData.Length < 1 then
+            exit;
+
+        // Use a shared stream and reset the read pointer to beginning of stream
+        SharedXmlData := XmlData;
+        if SharedXmlData.Position > 1 then
+            SharedXmlData.ResetPosition();
+
+        SharedLayoutData := LayoutData;
+        if SharedLayoutData.Position > 1 then
+            SharedLayoutData.ResetPosition();
+
         Init();
 
-        // Sample code to persist the json object to disk
+        // Sample code to persist the JSON object to disk
         ObjectPayload.WriteTo(JsonText);
         JsonFile.TextMode := true;
         JsonFile.Create(TempFolderPath + 'OnCustomDocumentMergerEx.json', TextEncoding::UTF8);
         JsonFile.Write(JsonText);
         JsonFile.Close();
 
-        // Get report options from the json object
+        // Get report options from the JSON object
         ObjectPayload.Get('objectname', ObjectName);
         ObjectPayload.Get('documenttype', DocumentType);
         ObjectPayload.Get('layoutmimetype', Token);
@@ -139,7 +158,7 @@ The simplest possible custom document render can be implemented as shown in the 
         DocumentTypeParts := DocumentType.AsValue().AsText().Split('/');
         
         // Notice that the Extension string below have to be remapped to a standard file extension
-        // based on the document mimetype.
+        // based on the document mimetype
         Extension := DocumentTypeParts.Get(DocumentTypeParts.Count);
 
         TempBlob.CreateOutStream(DataOutStream);
@@ -148,7 +167,7 @@ The simplest possible custom document render can be implemented as shown in the 
         case ReportAction of
             ReportAction::SaveAsPdf, ReportAction::Preview, ReportAction::Print:
                 begin
-                    if not DocumentReportMgt.TryXmlMergeWordDocument(LayoutData, XmlData, DataOutStream) then
+                    if not DocumentReportMgt.TryXmlMergeWordDocument(SharedLayoutData, SharedXmlData, DataOutStream) then
                         error('Unable to handle custom document merge');
                     DocumentReportMgt.ConvertWordToPdf(TempBlob, ObjectID);
                     TempBlob.CreateInStream(DataInStream);
@@ -157,7 +176,7 @@ The simplest possible custom document render can be implemented as shown in the 
                 end;
             ReportAction::SaveAsHtml:
                 begin
-                    if not DocumentReportMgt.TryXmlMergeWordDocument(LayoutData, XmlData, DataOutStream) then
+                    if not DocumentReportMgt.TryXmlMergeWordDocument(SharedLayoutData, SharedXmlData, DataOutStream) then
                         error('Unable to handle custom document merge');
                     DocumentReportMgt.ConvertWordToHtml(TempBlob);
                     TempBlob.CreateInStream(DataInStream);
@@ -166,7 +185,7 @@ The simplest possible custom document render can be implemented as shown in the 
                 end;
             ReportAction::SaveAsWord:
                 begin
-                    if not DocumentReportMgt.TryXmlMergeWordDocument(LayoutData, XmlData, DocumentStream) then
+                    if not DocumentReportMgt.TryXmlMergeWordDocument(SharedLayoutData, SharedXmlData, DocumentStream) then
                         error('Unable to handle custom document merge');
                     IsHandled := true;
                 end;
@@ -175,117 +194,6 @@ The simplest possible custom document render can be implemented as shown in the 
         end;
     end;
 ```
-
-## <a name="reportpayload"></a>Report payload
-
-The report payload provides information about the current report instamce and selected layout. The payload consists of several attributes and has the following structure.
-
-```json
-{
-    "filterviews":
-    [
-        {"name":"Header","tableid":112,"view":"VERSION(1) SORTING(Field3) WHERE(Field3=1(103027))"},
-        {"name":"Line","tableid":113,"view":"VERSION(1) SORTING(Field3,Field4) WHERE(Field4=1(0..10000))"},
-        {"name":"ShipmentLine","tableid":7190,"view":"VERSION(1) SORTING(Field1,Field2,Field3) WHERE(Field2=1(10000))"}
-    ],
-    "version":1,
-    "objectname":"Standard Sales - Invoice",
-    "objectid":1306,
-    "documenttype":"application/pdf",
-    "invokedby":"00000000-0000-0000-0000-000000000001",
-    "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
-    "companyname":"CRONUS International Ltd.",
-    "printername":"My Printer",
-    "duplex":false,
-    "color":false,
-    "defaultcopies":1,
-    "papertray": null,
-    "layoutmodel": "Custom",
-    "layoutname": "CustomLayout",
-    "layoutmimetype": "Application/ReportLayout/Custom",
-}
-
-```
-
-### Attributes
-
-*objectname*
-
-Specifies the name of the object.
-
-*objectid*
-
-Specifies the ID of the object.
-
-*documenttype*
-
-Specifies the MIME type of the document. Currently only `application/pdf` is supported. 
-
-*documeninvokedby*
-
-Specifies the ID of the user who invoked the print action.  
-
-*invokeddatetime*
-
-Specifies the date and time that the print action was invoked. For example, 2019-10-22T22:25:54.338+02:00. The value is the date and time on the client machine.  
-
-*companyname*
-
-Specifies the Business Central company.
-
-*version*
-
-Specifies the version of the printer setup in the payload. Currently, the only supported version for the payload is `1`.
-
-*duplex*
-
-Specifies whether to use duplex (2-sided) printing. `true` specifies duplex printing; otherwise `false`.
-
-> [!NOTE]
->  `duplex` is currently not used and ignored at runtime.
-
-*color*
-
-Specifies whether color printing is set.  `true` specifies color printing; otherwise `false`. 
-
-> [!NOTE]
-> `color` is currently not used and ignored at runtime.
-
-*defaultcopies*
-
-Specifies the number of copies to print by default. The default is `1`.
-
-> [!NOTE]
->  `defaultcopies` is currently not used and ignored at runtime.
-
-*filterviews*
-
-Specifies views that are used on the document.
-
-*name*
-
-Specifies the name of data item that the filter view applies to.
-
-*tableid*
-
-Specifies ID of the table for the view.
-
-*view*
-
-Specifies the name of the view.
-
-*intent*
-
-*layoutmodel*
-Specifies the report render type to use (Rdlc, Word, Excel or Custom)
-
-*layoutname*
-
-Specifies the name of the layout.
-
-*layoutmimetype*
-
-Specifies a mime type that identifies the custom layout type.
 
 ## See Also
 

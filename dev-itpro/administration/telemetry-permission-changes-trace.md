@@ -33,6 +33,7 @@ Occurs when a user-defined permission set is created.
 |---------|-----|
 |message|**User-defined permission set added: {alPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -75,6 +76,7 @@ Occurs when a user-defined permission set is deleted.
 |---------|-----|
 |message|**User-defined permission set removed: {alPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -95,6 +97,7 @@ Occurs when a user-defined permission set is created from a copy of a system per
 |---------|-----|
 |message|**Permission set link added: {alSourcePermissionSetId} -> {alLinkedPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -116,6 +119,7 @@ Occurs when a user-defined permission set, which is linked to a system permissio
 |---------|-----|
 |message|**Permission set link removed {alSourcePermissionSetId} -> {alLinkedPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -137,6 +141,7 @@ Occurs when a permission set is assigned to a user.
 |---------|-----|
 |message|**Permission set assigned to user: {alPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -156,6 +161,7 @@ Occurs when a permission set is removed from a user.
 |---------|-----|
 |message|**Permission set removed from user: {alPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -176,6 +182,7 @@ Occurs when a permission set is assigned to a user group.
 |---------|-----|
 |message|**Permission set assigned to user group: {alPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -196,6 +203,7 @@ Occurs when a permission set is removed from a user.
 |---------|-----|
 |message|**Permission set removed from user group: {alPermissionSetId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 

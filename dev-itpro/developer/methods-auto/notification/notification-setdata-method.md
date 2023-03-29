@@ -3,7 +3,7 @@ title: "Notification.SetData(Text, Text) Method"
 description: "Specifies a data property value for the notification."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Notification](notification-data-type.md) data type.
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The text string to use as a unique identifier for the data item.
-        
+The text string to use as a unique identifier for the data item.  
 
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  

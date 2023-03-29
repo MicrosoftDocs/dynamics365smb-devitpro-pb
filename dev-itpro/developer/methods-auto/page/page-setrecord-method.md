@@ -3,7 +3,7 @@ title: "Page.SetRecord(var Record) Method"
 description: "Sets the current record for the page."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Page](page-data-type.md) data type.
 
 *Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
-The record to set as the current record. You cannot use a temporary record for the Record parameter.
-          
+The record to set as the current record. You cannot use a temporary record for the Record parameter.  
 
 
 

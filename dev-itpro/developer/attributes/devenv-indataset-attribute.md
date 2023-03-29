@@ -3,7 +3,7 @@ title: "InDataSet Attribute"
 description: "Sets whether the AL variable's value is included in the dataset."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 03/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 
 # InDataSet Attribute
-> **Version**: _Available or changed with runtime version 1.0._
+> **Version**: _Available or changed with runtime version 1.0 until version 11.0 where it was deprecated for the following reason: "The InDataset attribute is unused."_
 
 Sets whether the AL variable's value is included in the dataset.
 

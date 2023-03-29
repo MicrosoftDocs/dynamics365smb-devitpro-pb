@@ -3,7 +3,7 @@ title: "Record.TransferFields(var Record [, Boolean]) Method"
 description: "Copies all matching fields in one record to another record."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,15 +30,14 @@ An instance of the [Record](record-data-type.md) data type.
 
 *FromRecord*  
 &emsp;Type: [Record](record-data-type.md)  
-The record from which to copy.
-          
+The record from which to copy.  
+
 *[Optional] InitPrimaryKeyFields*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Default: true
 If this parameter is true and the records are in the same table, both the timestamp and the Primary Key fields of the destination record will be changed.
 If this parameter is true and the records are not in the same table, then the Primary Key fields of the destination record will be changed but the timestamp of the destination record will not be changed.
-If this parameter is false, then neither the timestamp nor the Primary Key fields of the destination record are changed.
-          
+If this parameter is false, then neither the timestamp nor the Primary Key fields of the destination record are changed.  
 
 
 

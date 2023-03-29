@@ -3,7 +3,7 @@ title: "Record.TestField(Any) Method"
 description: "Tests that the content of the field is not zero or blank (empty string)."
 ms.author: solsen
 ms.custom: na
-ms.date: 10/08/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The field that you want to test.
-          
+The field that you want to test.  
 
 
 

@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ms.custom: bap-template
 ---
 
@@ -22,7 +22,13 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | The API capability in Business Central is used many places, e.g. in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it it possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
+|Replaced | The API capability in Business Central is used many places, e.g. in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it's possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
+
+### <a name="odata_delta"></a>Support for Delta Links with APIs (removed)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result (see [Using Delta Links with APIs](../developer/devenv-connect-apps-delta.md)). This feature was introduced in Business Central (online version only) to support the Microsoft Invoicing product, which has not been available for years. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server. Since the delta links feature was first introduced, the webhooks functionality in Business Central has been added and improved, making it the preferred approach to change tracking. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).|
 
 ### <a name="databasehints"></a>Server settings for database hints FORCEORDER and LOOPJOIN (removed)
 
@@ -50,7 +56,13 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | The API capability in Business Central is used many places, e.g. in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it it possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
+|Replaced | The API capability in Business Central is used many places, e.g. in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it's possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
+
+### <a name="odata_delta"></a>Support for Delta Links with APIs (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result (see [Using Delta Links with APIs](../developer/devenv-connect-apps-delta.md)). This feature was introduced in Business Central (online version only) to support the Microsoft Invoicing product, which has not been available for years. In version 23, the ChangeTrackingAllowed property on API pages/queries will be marked as deprecated. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server. Since the delta links feature was first introduced, the webhooks functionality in Business Central has been added and improved, making it the preferred approach to change tracking. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md). |
 
 ### <a name="writetoappdb"></a>Remove write access to app database tables from AL (warning)
 
@@ -87,7 +99,7 @@ The following feature will be **Replaced** with [!INCLUDE[prod_short](../develop
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation. For more information, see [Moving from WS-Federation to OpenID Connect](../administration/authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).|
+|Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect was introduced as the default configuration in version 20.0. Until version 22.0, you could choose to opt out of using OpenID Connect and still configure WS-Federation. As a consequence of removing WS-Federation support, we've also removed the Business Central Server setting `ClientServicesFederationMetadataLocation` and replaced it with the setting `ADOpenIdMetadataLocation`. For more information about setting up Azure AD authentication with OpenID Connect, go to [Configure Azure Active Directory Authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).|
 
 ### .NET add-ins not using .NET Standard (removal)
 

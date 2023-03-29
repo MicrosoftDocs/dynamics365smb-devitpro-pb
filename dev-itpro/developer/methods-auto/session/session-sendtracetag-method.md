@@ -3,7 +3,7 @@ title: "Session.SendTraceTag(Text, Text, Verbosity, Text [, DataClassification])
 description: "Send a trace tag to the telemetry service."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,27 +30,23 @@ Send a trace tag to the telemetry service.
 ## Parameters
 *Tag*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The tag.
-        
+The tag.  
 
 *Category*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The category.
-        
+The category.  
 
 *Verbosity*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  
-The verbosity.
-        
+The verbosity.  
 
 *Message*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The message.
-        
+The message.  
 
 *[Optional] DataClassification*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
-Classification of data in message.   
+Classification of data in message.  
 
 
 

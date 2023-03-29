@@ -178,6 +178,7 @@
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
 ### [Enabling new features ahead of time](administration/feature-management.md)
+### [Optional features that are now mandatory](administration/feature-management-mandatory-features.md)
 ### [Recommend apps](administration/recommend-apps.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Excel add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -232,6 +233,7 @@
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
+#### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
@@ -253,6 +255,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
+### [Report a performance issue](administration/report-performance-issue.md)
 ### [Analyze performance](administration/performance-profiler-overview.md)
 <!-- end support -->
 ## Automation API
@@ -437,6 +440,7 @@
 ### Code analysis
 #### [The code analysis tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL compiler diagnostics](developer/diagnostics/diagnostics-overview.md)
+#### [Code analysis performance configuration](developer/devenv-code-analysis-performance-configuration.md)
 #### [Ruleset for the code analysis tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the code analysis tools with the ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
 #### [AppSourceCop analyzer rules](developer/analyzers/appsourcecop.md)
@@ -554,7 +558,7 @@
 ##### Collections
 ###### [Array](developer/methods/devenv-array-methods.md)
 ###### [Dictionary](developer/methods-auto/dictionary/dictionary-data-type.md)
-###### [list](developer/methods-auto/list/list-data-type.md)
+###### [List](developer/methods-auto/list/list-data-type.md)
 
 ##### Enumerations and options
 ###### [Enum](developer/devenv-extensible-enums.md)
@@ -617,12 +621,16 @@
 #### Modifying data
 ##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
+##### [Virtual tables](developer/devenv-virtual-tables.md)
+###### [Date virtual table](developer/devenv-date-virtual-table.md)
+###### [Integer virtual table](developer/devenv-integer-virtual-table.md)
 ##### [Retaining table data after publishing](developer/devenv-retaining-data-after-publishing.md)
 ##### [Enabling sales tables for extension eevelopment](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ##### [Creating filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ##### [Working with media on records](developer/devenv-working-with-media-on-records.md)
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
+##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
@@ -635,14 +643,13 @@
 ###### [Retrieving date data](developer/devenv-query-retrieve-date-data.md)
 ###### [Using queries instead of record variables](developer/devenv-query-using-instead-record-variables.md)
 ###### [Accessing columns of a query dataset](developer/devenv-query-accessing-columns.md)
-#### [Tranferring data](developer/devenv-data-transfer.md)
+#### [Transferring data](developer/devenv-data-transfer.md)
 #### Importing and exporting data
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
 ##### [Request pages](developer/devenv-request-pages.md)
-
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -942,7 +949,7 @@
 ### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your extension](compliance/apptest-testingyourextension.md)
-### [User scenario cocumentation](compliance/apptest-userscenario.md)
+### [User scenario documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)

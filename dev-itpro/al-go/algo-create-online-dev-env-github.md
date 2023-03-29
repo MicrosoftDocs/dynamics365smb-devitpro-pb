@@ -1,5 +1,5 @@
 ---
-title: "Create an Online Development Environment from GitHub"
+title: "Create an online development environment from GitHub"
 description: "Create an online development environment in GitHub for AL-Go for Business Central."
 author: freddyk
 ms.custom: na
@@ -10,7 +10,7 @@ ms.service: "dynamics365-business-central"
 ms.author: solsen
 ---
 
-# Create an Online Development Environment from GitHub
+# Create an online development environment from GitHub
 
 > *The prerequisites for this how to is that you have completed the [Use Azure KeyVault for secrets with AL-Go](algo-use-azure-keyvault-for-secrets.md) instructions.* 
 
@@ -19,10 +19,10 @@ To create an online development environment, we need to authenticate to our [!IN
 Getting the refresh token can be done using this command on a machine with `BcContainerHelper` installed:
 
 ```powershell
-New-BcAuthContext -includeDeviceLogin | ConvertTo-GitHubGoCredentials | Set-Clipboard
+New-BcAuthContext -includeDeviceLogin | ConvertTo-GitHubGoCredentials | Set-Clipboards
 ```
 
-If you do **not** provide an `AdminCenterApiCredentials` secret, the workflow will initiate a device code flow and you can sign in by opening a browser, pasting in this URL `https://aka.ms/devicelogin` using this code and have the workflow continue. In order to get the code, you'll have to inspect the details of the workflow and open the job called Check AdminCenterApiCredentials / Initiate Device sign in (open to see code)
+If you do **not** provide an `AdminCenterApiCredentials` secret, the workflow initiate a device code flow and you can sign in by opening a browser, pasting in this URL `https://aka.ms/devicelogin` using this code and have the workflow continue. In order to get the code, you have to inspect the details of the workflow and open the job called Check AdminCenterApiCredentials / Initiate Device sign in (open to see code)
 
 ## Steps
 

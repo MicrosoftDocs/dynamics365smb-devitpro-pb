@@ -3,7 +3,7 @@ title: "RecordRef Data Type"
 description: "References a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -55,7 +55,8 @@ The following methods are available on instances of the RecordRef data type.
 |[Find([Text])](recordref-find-method.md)|Finds a record in a table based on the values stored in the key fields.|
 |[FindFirst()](recordref-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](recordref-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
-|[FindSet([Boolean] [, Boolean])](recordref-findset-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
+|[FindSet([Boolean])](recordref-findset-boolean-method.md)|Finds a set of records in a table based on the current key and filter. FINDSET can only retrieve records in ascending order.|
+|[FindSet(Boolean, Boolean)](recordref-findset-boolean-boolean-method.md)|Finds a set of records in a table based on the current key and filter. FindSet can only retrieve records in ascending order.|
 |[Get(RecordId)](recordref-get-method.md)|Gets a record based on the ID of the record.|
 |[GetBySystemId(Guid)](recordref-getbysystemid-method.md)|Gets a record based on the ID of the record. The RecordRef must already be opened.|
 |[GetFilters()](recordref-getfilters-method.md)|Determines which filters have been applied to the table referred to by the RecordRef.|
@@ -83,6 +84,7 @@ The following methods are available on instances of the RecordRef data type.
 |[Number()](recordref-number-method.md)|Gets the table ID (number) of the table that contains the record that was referred to by the RecordRef.|
 |[Open(Integer [, Boolean] [, Text])](recordref-open-method.md)|Causes a RecordRef variable to refer to a table, which is identified by its number in a particular company.|
 |[ReadConsistency()](recordref-readconsistency-method.md)|Gets a value indicating whether read consistency is enabled.|
+|[ReadIsolation([IsolationLevel])](recordref-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](recordref-readpermission-method.md)|Determines if you can read from a table.|
 |[RecordId()](recordref-recordid-method.md)|Gets the RecordID of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](recordref-recordlevellocking-method.md)|Gets a value indicating whether record level locking is enabled.|

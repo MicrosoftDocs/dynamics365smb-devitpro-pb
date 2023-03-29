@@ -3,7 +3,7 @@ title: "NavApp.GetModuleInfo(Guid, var ModuleInfo) Method"
 description: "Gets information about the specified AL application."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 02/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,8 @@ Gets information about the specified AL application.
 ## Parameters
 *AppId*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The ID of the application for which to retrieve information.
-        
+The ID of the application for which to retrieve information.  
+
 *Info*  
 &emsp;Type: [ModuleInfo](../moduleinfo/moduleinfo-data-type.md)  
 A value containing information about the application with the given ID.  

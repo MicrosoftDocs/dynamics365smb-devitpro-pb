@@ -3,7 +3,7 @@ title: "Report.SaveAsXml(Integer, Text [, var Record]) Method"
 description: "Saves the resulting data set of a query as an .xml file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ Saves the resulting data set of a query as an .xml file. The following code show
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the query object that you want to save as an .xml file.  If the query that you specify does not exist, then a run-time error occurs.
-        
+The ID of the query object that you want to save as an .xml file.  If the query that you specify does not exist, then a run-time error occurs.  
 
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path and name of the file that you want to save the query to.
-        
+The path and name of the file that you want to save the query to.  
 
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  
