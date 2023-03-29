@@ -15,9 +15,9 @@ ms.author: jswymer
 
 [!INCLUDE[2021_releasewave2.md](../includes/2021_releasewave2.md)]
 
-Task scheduler telemetry gathers information about the execution of scheduled tasks. The data gives insight into what happens in background sessions that are coming from scheduled tasks. It provides information that let's you troubleshoot failures. The data can also help you determine whether tasks would be better scheduled for off hours to limit the load on the service.  
+Task scheduler telemetry gathers information about the execution of scheduled tasks. The data gives insight into what happens in background sessions that are coming from scheduled tasks. It provides information that lets you troubleshoot failures. The data can also help you determine whether tasks would be better scheduled for off hours to limit the load on the service.  
 
-For an overview of task scheduler to understand the flow related to these traces, see [Task Scheduler](../developer/devenv-task-scheduler.md).
+For an overview of task scheduler and to understand the flow related to these traces, see [Task Scheduler](../developer/devenv-task-scheduler.md).
 
 > [!NOTE]
 > In this article, *main codeunit* refers to the codeunit that's run by the TaskScheduler.CreateTask method.
@@ -48,7 +48,7 @@ The following table explains the general dimensions of this trace.
 |eventId|**LC0040**|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
-|isReady|Specifies whether the task was in the the ready state when created. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
+|isReady|Specifies whether the task was in the ready state when created. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
 |notBefore|Specifies the earliest date and time the task was scheduled to run.|
 |taskId|Specifies the unique identifier assigned to the task.|
 |timeout|Specifies the timeout that was set on the task. If a task takes longer to complete than the specified time, it's canceled. The time has the format hh:mm:ss.sssssss.|
@@ -140,7 +140,7 @@ For example, the service cancels a task when:
 - It takes longer to complete than the specified timeout. The timeout is specified on the task when it's created. Or if no timeout is specified, then the default timeout of the service is used. For online, the default task timeout is 12 hours. For on-premises, the default timeout is specified by the **Default Task Scheduler Session Timeout** setting on the Business Central Server instance.
 - The Session.StopSession method was called from AL code.
 
-Users can cancel a task a couple ways. For example, with Business Central online, they can use the Business Central admin center. With on-premises, they can run the the [Remove-NAVSession cmdlet](/powershell/module/microsoft.dynamics.nav.management/remove-navserversession).
+Users can cancel a task a couple ways. For example, with Business Central online, they can use the Business Central admin center. With on-premises, they can run the [Remove-NAVSession cmdlet](/powershell/module/microsoft.dynamics.nav.management/remove-navserversession).
 
 ### General dimensions
 
@@ -148,7 +148,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|message|The messages will depend on whether the error occurred in the main codeunit ot failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
+|message|The messages will depend on whether the error occurred in the main codeunit of failure codeunit. <br><br>*Main codeunit*<br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried and the failure codeunit {failureCodeunitObjectId} will be run. Reason: Exception is not retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} main codeunit {codeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**<br><br>*Failure codeunit*<br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is not retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will be retried. Reason: Exception is retriable.**<br><br>**Task {taskId} failure codeunit {failureCodeunitObjectId} canceled. It will not be retried. Reason: Exception is retriable but the maximum number of attempts has been reached.**|
 |severityLevel|**2**|
 
 ### Custom dimensions
@@ -221,7 +221,7 @@ The following table explains the general dimensions of this trace.
 
 Occurs when the execution of a task's main codeunit or failure codeunit succeeds with no errors.
 
-Note that there is no event emitted for task started. You can infer the task-start time by subtracting the totalTime from the task completed timestamp.
+There's no event emitted for task started. You can infer the task-start time by subtracting the totalTime from the task completed timestamp.
 
 ### General dimensions
 
@@ -241,6 +241,45 @@ The following table explains the general dimensions of this trace.
 |Dimension|Description or value|
 |---------|-----|-----------|
 |eventId|**LC0043**|
+|attemptNumber|Specifies the retry attempt on the codeunit. **0** indicates the initial run of the codeunit, not a retry.|
+|codeunitObjectId|Specifies the ID of the task's main codeunit.|
+|failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|
+|isReady|Specifies whether the task is in the ready state. **True** indicates that the task is in the ready state. **False** indicates that the task isn't in the ready state.|
+|notBefore|Specifies the earliest date and time that was scheduled to run.|
+|result| **Success**|
+|serverExecutionTime|Specifies the amount of time it took the server to run the codeunit. The time has the format hh:mm:ss.sssssss.|
+|sessionId|Specifies the unique identifier of the session in which the task was run.|
+|sqlExecutes|Specifies the number of SQL statements that were executed.|
+|sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.|
+|taskId|Specifies the unique identifier assigned to the task.|
+|timeout|Specifies the timeout that was set on the task. The time has the format hh:mm:ss.sssssss.|
+|totalTime|Specifies the amount of time it took to run the codeunit. The time has the format hh:mm:ss.sssssss.|
+|[See common custom dimensions](#other)||
+
+## Task timeout changed because it was exceeding the max timeout value
+
+**INTRODUCED IN:** Version 22.0 
+
+Occurs if the timeout defined on a task exceeds that maximum timeout allowed by the server. The task is then assigned the timeout that's equal to the maximum timeout allowed by the server.
+
+> [!NOTE]
+> For Business Central online, the maximum timeout allowed is 23:59:59. For Business Central on-premises, the maximum timeout allowed is determined by the `MaxTaskSchedulerSessionTimeout` setting on the Business Central server instance (for more information, see [Configure Business Central Server](configure-server-instance.md#task-scheduler-settings).
+
+### General dimensions
+
+The following table explains the general dimensions of this trace.
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Task {taskId} timeout changed to: {timeout} because it was exceeding the max timeout value.**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+
+|Dimension|Description or value|
+|---------|-----|-----------|
+|eventId|**LC0057**|
 |attemptNumber|Specifies the retry attempt on the codeunit. **0** indicates the initial run of the codeunit, not a retry.|
 |codeunitObjectId|Specifies the ID of the task's main codeunit.|
 |failureCodeunitObjectId|Specifies the ID of the task's failure codeunit. **0** indicates that there's no failure codeunit.|

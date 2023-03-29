@@ -57,6 +57,7 @@
 | LC0043 | Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} completed.](../administration/telemetry-task-scheduler-trace.md#task-completed) |
 | LC0044 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} canceled.](../administration/telemetry-task-scheduler-trace.md#task-canceled) |
 | LC0045 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} failed.](../administration/telemetry-task-scheduler-trace.md#task-failed) |
+| LC0057 |Task Scheduler  | [Task {taskId} timeout changed to: {timeout} because it was exceeding the max timeout value.](../administration/telemetry-task-scheduler-trace.md#task-timeout-changed-because-it-was-exceeding-the-max-timeout-value) |
 | LC0046 | Profile Configuration Lifecycle | [Profile import succeeded: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-success) |
 | LC0047 | Profile Configuration Lifecycle | [Profile import failed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-failed) |
 | LC0048 | Profile Configuration Lifecycle | [Profiles exported successfully](../administration/telemetry-profile-configuration-lifecycle-trace.md#export-success) |
