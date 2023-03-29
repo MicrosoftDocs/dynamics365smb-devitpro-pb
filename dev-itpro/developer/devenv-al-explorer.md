@@ -16,7 +16,7 @@ The **AL Explorer** provides a tool that allows you to explore, navigate, and be
 
 The **AL Explorer** has four tabs: **OBJECTS**, **EVENTS**, **APIS**, and **EXTENSIBLE ENUMS**. For each of these categories, you can apply filtering, bookmarks, and go to source. For tables, pages, and report objects, you can also choose run these objects directly from the explorer window, on either a local machine or a tenant. You can also get an overview of all objects in a given app scope, for example, a workspace or a selected project, and you can search in object names, and group objects by type.
 
-<!-- image -->
+:::image type="content" source="media/al-explorer.png" alt-text="The AL Explorer window with tabs and buttons to drill-down into code":::
 
 ## Settings
 
