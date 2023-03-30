@@ -16,6 +16,8 @@ ms.custom: bap-template
 
 This article gives an overview of the tools and configuration options, which are offered to ensure that the code analysis tool performs adequately on different workspace sizes and machine configurations. This includes controlling the scope of the code analysis tool during live editing and troubleshooting tips to identify and suppress long-running code analysis rules.
 
+To activate the settings described in this article, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then choose **Preferences: Open Settings (UI)** for workspace settings, or choose **Preferences: Open User Settings** for user settings. Under **Extensions**, and **AL Language extension configuration**, you'll find the settings that are available for the AL Language extension. If a setting is not available through the UI, you can edit it directly in the `settings.json` file.
+
 ## Background code analysis - scope
 
 When you edit a project with code analysis enabled, the default behavior is that code analysis will run in the background. This means that, every change will trigger a recalculation of the code analysis diagnostics. The analysis may run in the scope of the currently active file or the entire open project. The default scope of the analysis is determined by the extension based on the size of the workspace. For smaller projects, analysis will be performed on the entire active project and its dependent projects. When a larger workspace is detected by the extension, it will by default perform analysis only on the active file. This ensures that the analysis can run interactively regardless of the size of the project. The downside is that code analysis diagnostics won't be displayed for files, which aren't focused in the editor.
@@ -26,7 +28,7 @@ It's possible to override the scope for a user or a specific workspace by using 
 
 ## Troubleshooting long-running code analysis rules
 
-It's possible to get statistics for the runtime of individual code analysis rules, with the intent of switching them off selectively if they're long-running on a specific project. Switching it off can be useful in the case where the default code analysis scope isn't performant enough or when it's a requirement to run code analysis for an entire project. By enabling the setting `outputAnalyzerStatistics`, a detailed overview of the runtime of each analysis rule and its corresponding diagnostics will be printed to the output. The output will be similar to the snippet shown in this section, where the total time and percentage of time spent by each rule is displayed in the appropriate column.
+It's possible to get statistics for the runtime of individual code analysis rules, with the intent of switching them off selectively if they're long-running on a specific project. Switching it off can be useful in the case where the default code analysis scope isn't performant enough, or when it's a requirement to run code analysis for an entire project. By enabling the setting `outputAnalyzerStatistics`, a detailed overview of the runtime of each analysis rule and its corresponding diagnostics will be printed to the output. The output will be similar to the snippet shown in this section, where the total time and percentage of time spent by each rule is displayed in the appropriate column.
 
 ```
 Time (s)    %   Analyzer (Related Diagnostics)
