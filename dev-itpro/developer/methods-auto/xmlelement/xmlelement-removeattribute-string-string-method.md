@@ -3,7 +3,7 @@ title: "XmlElement.RemoveAttribute(Text, Text) Method"
 description: "Removes the specified attribute from this element."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [XmlElement](xmlelement-data-type.md) data type.
 
 *LocalName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The local name of the attribute to remove.
-        
+The local name of the attribute to remove.  
 
 *NamespaceUri*  
 &emsp;Type: [Text](../text/text-data-type.md)  

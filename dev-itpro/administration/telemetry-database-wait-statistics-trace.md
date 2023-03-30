@@ -29,6 +29,8 @@ Occurs when you choose the **Emit Telemetry** icon on the Database Wait Statisti
 |---------|-----|
 |message|**Database wait statistics snapshot taken: {snapshotId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
@@ -49,9 +51,6 @@ The following table explains custom dimensions that are common to all database w
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments).|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-<!--
-{"aadTenantId":"common","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","eventId":"RT0025","componentVersion":"21.0.42152.0","snapshotId":"7df7dd29-c450-41f7-b6ac-29db870ba513"}
--->
 
 ## <a name="waitstatsentry"></a>Database wait statistics snapshot entry
 
@@ -63,6 +62,7 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 |---------|-----|
 |message|**Database wait statistics snapshot entry: {databaseWaitStatisticsCategory}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -78,10 +78,6 @@ Occurs when a query has to wait because of a resource, queue, or external event 
 |databaseWaitTimeInMs|Specifies the total wait time for a wait category including the databaseSignalWaitTimeInMs.|
 |[See common custom dimensions](#other)||
 
-<!--
-{"aadTenantId":"common","component":"Dynamics 365 Business Central Server","environmentType":"Production","telemetrySchemaVersion":"0.2","eventId":"RT0026","componentVersion":"21.0.42152.0","snapshotId":"7df7dd29-c450-41f7-b6ac-29db870ba513","databaseMaxWaitTimeInMs":"64","databaseWaitTimeInMs":"310","databaseSignalWaitTimeInMs":"290","databaseWaitStatisticsCategory":"Memory","databaseStartedDuration":"19934878","databaseWaitingTasksCount":"602"}
-
--->
 
 ## See also
 

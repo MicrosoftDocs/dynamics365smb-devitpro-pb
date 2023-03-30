@@ -3,7 +3,7 @@ title: "Record Data Type"
 description: "Is a complex data type."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -56,7 +56,8 @@ The following methods are available on instances of the Record data type.
 |[Find([Text])](record-find-method.md)|Finds a record in a table that is based on the values stored in keys.|
 |[FindFirst()](record-findfirst-method.md)|Finds the first record in a table based on the current key and filter.|
 |[FindLast()](record-findlast-method.md)|Finds the last record in a table based on the current key and filter.|
-|[FindSet([Boolean] [, Boolean])](record-findset-method.md)|Finds a set of records in a table based on the current key and filter.|
+|[FindSet([Boolean])](record-findset-boolean-method.md)|Finds a set of records in a table based on the current key and filter.|
+|[FindSet(Boolean, Boolean)](record-findset-boolean-boolean-method.md)|Finds a set of records in a table based on the current key and filter.|
 |[Get([Any,...])](record-get-method.md)|Gets a record based on values stored in primary key fields.|
 |[GetAscending(Any)](record-getascending-method.md)|Gets the sort order for the records returned. You can use GETASCENDING to identify the sort order of the specified field because fields can be sorted in ascending or descending order. For example, you can read data from an ODATA web service where the data is sorted in ascending order on the Name field but in descending order on the City field.|
 |[GetBySystemId(Guid)](record-getbysystemid-method.md)|Gets a record by its SystemId.|
@@ -82,6 +83,7 @@ The following methods are available on instances of the Record data type.
 |[ModifyAll(Any, Any [, Boolean])](record-modifyall-method.md)|Modifies a field in all records within a range that you specify.|
 |[Next([Integer])](record-next-method.md)|Steps through a specified number of records and retrieves a record.|
 |[ReadConsistency()](record-readconsistency-method.md)|Determines if the table supports read consistency.|
+|[ReadIsolation([IsolationLevel])](record-readisolation-method.md)|Gets or sets the read isolation level.|
 |[ReadPermission()](record-readpermission-method.md)|Determines whether a user is granted read permission to the table that contains a record. This method can test for both full read permission and partial read permission that has been granted with a security filter.|
 |[RecordId()](record-recordid-method.md)|Gets the RecordId of the record that is currently selected in the table. If no table is selected, an error is generated.|
 |[RecordLevelLocking()](record-recordlevellocking-method.md)|Determines whether the table supports record-level locking.|

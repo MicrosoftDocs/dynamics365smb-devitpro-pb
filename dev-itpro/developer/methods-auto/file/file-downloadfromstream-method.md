@@ -3,7 +3,7 @@ title: "File.DownloadFromStream(InStream, Text, Text, Text, var Text) Method"
 description: "Sends a file from server computer to the client computer."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,23 +28,19 @@ Sends a file from server computer to the client computer. The client computer is
 ## Parameters
 *InStream*  
 &emsp;Type: [InStream](../instream/instream-data-type.md)  
-An InStream that you want to use to send the data in a file on Business Central Server to a file on the client computer.
-        
+An InStream that you want to use to send the data in a file on Business Central Server to a file on the client computer.  
 
 *DialogTitle*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The title that you want to display in the dialog box for downloading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.
-          
+The title that you want to display in the dialog box for downloading the file. This parameter is not supported by the web client. The title is determined by the end-user's browser.  
 
 *ToFolder*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The default folder in which to save the file to be downloaded. The folder name is displayed in the dialog box for downloading the file. The folder can be changed by the user. This parameter is not supported by the web client. By default, files are saved to the default download location that is configured in the end-user's browser.
-          
+The default folder in which to save the file to be downloaded. The folder name is displayed in the dialog box for downloading the file. The folder can be changed by the user. This parameter is not supported by the web client. By default, files are saved to the default download location that is configured in the end-user's browser.  
 
 *ToFilter*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The type of file that can be downloaded to the client computer. The type is displayed in the dialog box for downloading the file. This parameter is not supported by the web client.
-          
+The type of file that can be downloaded to the client computer. The type is displayed in the dialog box for downloading the file. This parameter is not supported by the web client.  
 
 *ToFile*  
 &emsp;Type: [Text](../text/text-data-type.md)  

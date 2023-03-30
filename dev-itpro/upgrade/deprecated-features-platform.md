@@ -6,7 +6,7 @@ ms.author: bholtorf
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 03/17/2023
 ms.custom: bap-template
 ---
 
@@ -16,23 +16,74 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
+## Changes in 2024 release wave 1 (version 24.0)
+
+### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | The API capability in Business Central is used many places, e.g. in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it's possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
+
+### <a name="odata_delta"></a>Support for Delta Links with APIs (removed)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result (see [Using Delta Links with APIs](../developer/devenv-connect-apps-delta.md)). This feature was introduced in Business Central (online version only) to support the Microsoft Invoicing product, which has not been available for years. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server. Since the delta links feature was first introduced, the webhooks functionality in Business Central has been added and improved, making it the preferred approach to change tracking. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).|
+
+### <a name="databasehints"></a>Server settings for database hints FORCEORDER and LOOPJOIN (removed)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central installations on-premises, it is possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
+
+### <a name="writetoappdb"></a>Remove write access to app database tables from AL (removal)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it is possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
+
+
 ## Changes in 2023 release wave 2 (version 23.0)
 
-### <a name="views"></a>Legacy views on list pages (Removal)
+### <a name="databasehints"></a>Server settings for database hints FORCEORDER and LOOPJOIN (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central installations on-premises, it is possible to control many server settings. Two of these control the way the Business Central server add hints to SQL statements: DisableQueryHintForceOrder and DisableQueryHintLoopJoin. Starting in version 24, these server settings will no longer be available.|
+
+
+### <a name="schemaversion"></a>Schema version for custom APIs (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | The API capability in Business Central is used many places, e.g. in the APIs that come out-of-the-box. For these APIs, $schemaversion is always set to 2.0 to get the latest features in the Business Central OData stack. For custom APIs, it's possible to get these new features by simply calling the API with $schemaversion=2.0. Starting in version 24, the default value of $schemaversion is set to 2.0, also for custom APIs.|
+
+### <a name="odata_delta"></a>Support for Delta Links with APIs (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Replaced | Delta links are opaque, service-generated links that a web service client can use to retrieve subsequent changes to a result (see [Using Delta Links with APIs](../developer/devenv-connect-apps-delta.md)). This feature was introduced in Business Central (online version only) to support the Microsoft Invoicing product, which has not been available for years. In version 23, the ChangeTrackingAllowed property on API pages/queries will be marked as deprecated. Starting in version 24, ChangeTrackingAllowed will be set to "false" for all APIs provided by Microsoft and support for delta links will be removed from the server. Since the delta links feature was first introduced, the webhooks functionality in Business Central has been added and improved, making it the preferred approach to change tracking. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md). |
+
+### <a name="writetoappdb"></a>Remove write access to app database tables from AL (warning)
+
+|Removed or Replaced? |Why?|
+|---------|---------|
+|Removed | For Business Central on-premises, the main difference between running in single tenancy mode or multi tenancy mode is that in the former, it is possible to write to the app database tables from AL. Starting in version 24, this is no longer possible. |
+
+### <a name="views"></a>Legacy views on list pages (removal)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Replaced | Legacy views are list views that were created by developers in previous releases by placing them on the Role Center page object. In April 2019 release wave, we introduced a new, modern way of creating views. Starting in version 23, views must be created using the modern way. Legacy views will no longer be supported and won't display on list pages. Learn more at [Migrating from Legacy Views to Modern Views](../developer/devenv-views-legacy.md).|
 
 
-### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (Removal)
+### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (removal)
 
 The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
 
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | [ROPC flow in OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc) allows apps to sign in users by directly handling their password. This behavior goes against the principles of modern authentication and isn't recommended. Starting in 2023 release wave 2 (v23.0), ROPC will no longer be supported. Instead, when connecting to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, use an alternative and more secure authentication flows supported by the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-authentication-flows), such as authorization code flow. |
-
 
 ## Changes in 2023 release wave 1 (version 22.0)
 
@@ -42,16 +93,15 @@ The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/
 |---------|---------|
 |Replaced | Apps that integrate with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] should be based on [System Fields](../developer/devenv-table-system-fields.md) instead of integration records. Using system fields improves overall performance, reduces the size of table data, and improves the ability to audit changes. If you haven't already refactored your app and want to learn more, go to [Refactor Integration Management](../developer/devenv-integration-record-refactoring.md). |
 
-
 ### WS-Federation with Azure Active Directory authentication
 
 The following feature will be **Replaced** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect will be introduced as the default configuration in version 20.0. However, until version 21.0, you can choose to opt out of using OpenID Connect and still configure WS-Federation. For more information, see [Moving from WS-Federation to OpenID Connect](../administration/authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).|
+|Replaced | For Azure Active Directory (AD) authentication, Business Central supports the OpenID Connect protocol instead of WS-Federation. Support for OpenID Connect was introduced as the default configuration in version 20.0. Until version 22.0, you could choose to opt out of using OpenID Connect and still configure WS-Federation. As a consequence of removing WS-Federation support, we've also removed the Business Central Server setting `ClientServicesFederationMetadataLocation` and replaced it with the setting `ADOpenIdMetadataLocation`. For more information about setting up Azure AD authentication with OpenID Connect, go to [Configure Azure Active Directory Authentication with OpenID Connect](../administration/authenticating-users-with-azure-ad-openid-connect.md).|
 
-### .NET add-ins not using .NET Standard (Removal)
+### .NET add-ins not using .NET Standard (removal)
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
@@ -59,7 +109,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |---------|---------|
 |Replaced| .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework won't work in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md). |
 
-### Business Central Telemetry: using an instrumentation key (Removal)
+### Business Central Telemetry: using an instrumentation key (removal)
 
 On 31 March 2025, technical support for instrumentation key–based global ingestion in the Application Insights feature of Azure Monitor will end. After that date, your Azure Applications Insights resources will continue to receive data, but we'll no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
@@ -77,7 +127,7 @@ The following configuration option will be **Removed** with [!INCLUDE[prod_short
 |Removed | Support for running the Business Central web server on a different machine than the Business Central server is no longer a supported configuration. This capability was sometimes needed for a deployment using the Business Central Windows client. |
 -->
 
-### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (Removal)
+### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (removal)
 
 The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.
 
@@ -96,7 +146,7 @@ The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD
 |Replaced| To help developers take advantage of all the identity features available in Azure Active Directory, we’re now recommending that all developers use the Microsoft Authentication Library (MSAL) and the Microsoft Graph API in their application development. Moving forward, all new identity capabilities will only be available in MSAL and Microsoft Graph. We’re also providing guidance on end of support timelines for Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API, so that you can plan to update any applications that are still using either one of them. **Starting June 30th, 2022**, Microsoft will end support for ADAL and Azure AD Graph and will no longer provide technical support or security updates. Apps using Azure AD Graph after this time will no longer receive responses from the Azure AD Graph endpoint. Apps using ADAL on existing OS versions will continue to work after this time but will not get any technical support or security updates. For more information, see [Update your applications to use Microsoft Authentication Library and Microsoft Graph API](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363)|
 
 
-### Business Central Server Administration tool (Removal)
+### Business Central Server Administration tool (removal)
 
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
@@ -114,7 +164,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 |Removed  | When the **Modern Action Bar** on the **Feature Management** page is set to *Enabled*, promoted actions, which are defined inside a group whose visibility is set to `false` will no longer be visible on the promoted side of the action bar. A dedicated code analysis rule in the UICop analyzer (AW0013) helps detect this pattern in your apps. For more information, see [UICop Warning AW0013](../developer/analyzers/uicop-aw0013.md). For more information about the `actionref` syntax, see [Promoted Actions](../developer/devenv-promoted-actions.md).|
 
 
-### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (Warning)
+### <a name="ropc"></a>Resource Owner Password Credentials (ROPC) flow in OAuth 2.0 for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online (warning)
 
 The following feature will eventually be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 2.  
 
@@ -125,7 +175,7 @@ The following feature will eventually be **Removed** in [!INCLUDE[prod_short](..
 <!---
 These changes are not confirmed yet
 
-### Expose UI pages as SOAP endpoints (Removal)
+### Expose UI pages as SOAP endpoints (removal)
 The following feature will be **Removed** with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 2.
 
 |Removed or Replaced? |Why?|
@@ -135,7 +185,7 @@ The following feature will be **Removed** with [!INCLUDE[prod_short](../develope
 
 ## Changes in 2022 release wave 1 (version 20.0)
 
-### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (Warning)
+### <a name="flfformat"></a>License files in the .flf format for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises (warning)
 
 The following feature will be **Removed** in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 release wave 1.  
 
@@ -185,7 +235,7 @@ The Business Central app that's available from the [Microsoft Store](https://go.
 |---------|---------|
 |Replaced| The legacy app for Windows was based on Universal Windows Platform (UWP). In it's place, we offer an app that's based on Progressive Web Application (PWA) technology, which is a more modern technology that provides a better user experience going forward. The legacy app will still be available on the Windows Store for users running Business Central 2021 release wave 1 or earlier.|
 
-### Removal of the Business Central Server Administration tool (Warning)
+### Removal of the Business Central Server Administration tool (warning)
 
 The following feature will be **Removed** in a later release.
 
@@ -193,7 +243,7 @@ The following feature will be **Removed** in a later release.
 |---------|---------|
 |Removed | The Business Central Server Administration tool for configuring the [!INCLUDE[server](../developer/includes/server.md)] in on-premises installations will be removed in a later release. Please transition to using the provided Powershell cmdlets in the [!INCLUDE[adminshell](../developer/includes/adminshell.md)] instead. |
 
-### SOAP endpoints (Warning)
+### SOAP endpoints (warning)
 
 The capability of exposing SOAP endpoints will be removed in a later release.
 
@@ -248,7 +298,7 @@ The legacy Outlook add-in for synchronizing data, such as to-dos, contacts, and 
 
 ## Changes in 2021 release wave 1 (version 18.0)
 
-### .NET add-ins not using .NET Standard (Warning)
+### .NET add-ins not using .NET Standard (warning)
 
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you include .NET add-ins that are compiled with .NET Framework and not with .NET Standard. The capability of using .NET add-ins compiled with .NET Framework will be removed in a later release. 
 
@@ -257,7 +307,7 @@ In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave
 |Replaced | .NET Framework has been superseded by .NET Standard. .NET add-ins compiled with .NET Framework is deprecated as of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, but the feature won't be removed in this release. It's recommended that .NET add-ins are migrated to .NET Standard as soon as possible. For more information, see [Migrating from .NET Framework to .NET Standard](../developer/devenv-migrate-from-dotnet-framework-to-dotnet-standard.md). |
 
 
-### Expose UI pages as SOAP endpoints (Warning)
+### Expose UI pages as SOAP endpoints (warning)
 
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2021 release wave 1, a warning shows if you expose UI pages as SOAP endpoints. The capability of exposing UI pages as SOAP endpoints will be removed in a later release.
 

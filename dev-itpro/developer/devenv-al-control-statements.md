@@ -2,7 +2,7 @@
 title: "AL Control Statements"
 description: "Compound, conditional, and repetitive control statements in AL for Business Central"
 ms.custom: na
-ms.date: 09/22/2022
+ms.date: 03/15/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -362,13 +362,19 @@ var
 ```  
 
 ### Foreach control structure
+
 You can use the foreach statement to iterate through List, XmlNodeList, XmlAttributeCollection, and JsonArray expressions.
-The foreach statement has the following syntax.
+
+> [!TIP]  
+> With [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1, you can use the `foreach` loop on `Text` variables as well, which allows you to detect, as well as remove or replace individual characters in strings.
+
+The foreach statement has the following syntax. 
 
 ```AL  
 foreach <Element> in <List> do
     <Statement>  
 ```  
+
 The *`<List>`* variable must be of the List, XmlNodeList, XmlAttributeCollection, or JsonArray type. The *`<Element>`* variable must be a data type that is compatible with elements specified by the *`<List>`*.  
 
 The following code example iterates through a list of customer names and returns each customer name in a message.

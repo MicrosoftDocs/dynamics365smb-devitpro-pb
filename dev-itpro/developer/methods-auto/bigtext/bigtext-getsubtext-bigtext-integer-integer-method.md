@@ -3,7 +3,7 @@ title: "BigText.GetSubText(var BigText, Integer [, Integer]) Method"
 description: "Gets part of a BigText variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,16 +30,15 @@ An instance of the [BigText](bigtext-data-type.md) data type.
 
 *Variable*  
 &emsp;Type: [BigText](bigtext-data-type.md)  
-The sub text of the BigText that is retrieved. This is the actual text that is returned.
-        
+The sub text of the BigText that is retrieved. This is the actual text that is returned.  
+
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position in the BigText variable that the sub text is to be retrieved from. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then an empty string is returned. If the value of this parameter plus the value of the Length parameter is greater than the length of the BigText variable, then the remainder of the BigText variable from the position specified by this parameter is returned.
-        
+The position in the BigText variable that the sub text is to be retrieved from. If this parameter is less than one, then a run-time error occurs. If this parameter is greater than the length of the BigText variable, then an empty string is returned. If the value of this parameter plus the value of the Length parameter is greater than the length of the BigText variable, then the remainder of the BigText variable from the position specified by this parameter is returned.  
+
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The length of the sub text that should be retrieved. This parameter is optional. If this parameter is omitted the method retrieves a sub text that starts at Position and runs to the end of the BigText variable. If this parameter is less than 0, then a run-time error occurs. If the value of the Position parameter plus the value of this parameter is greater than the length of the BigText variable, then the remainder of the BigText variable from the position specified by this parameter is returned.
-        
+The length of the sub text that should be retrieved. This parameter is optional. If this parameter is omitted the method retrieves a sub text that starts at Position and runs to the end of the BigText variable. If this parameter is less than 0, then a run-time error occurs. If the value of the Position parameter plus the value of this parameter is greater than the length of the BigText variable, then the remainder of the BigText variable from the position specified by this parameter is returned.  
 
 
 ## Return Value

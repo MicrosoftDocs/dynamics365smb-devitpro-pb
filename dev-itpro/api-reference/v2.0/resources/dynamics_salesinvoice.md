@@ -2,7 +2,7 @@
 title: salesInvoice resource type  
 description: A sales invoice object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -75,8 +75,10 @@ The response has no content; the response code is 204.
 |[customer](dynamics_customer.md)|customer |Gets the customer of the salesInvoice.|
 |[countryRegion](dynamics_countryregion.md)|countryRegion |Gets the countryregion of the salesInvoice.|
 |[currency](dynamics_currency.md)|currency |Gets the currency of the salesInvoice.|
+|[dimensionValue](dynamics_dimensionvalue.md)|dimensionValue |Gets the dimensionvalue of the salesInvoice.|
 |[paymentTerm](dynamics_paymentterm.md)|paymentTerm |Gets the paymentterm of the salesInvoice.|
 |[shipmentMethod](dynamics_shipmentmethod.md)|shipmentMethod |Gets the shipmentmethod of the salesInvoice.|
+|[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesInvoice.|
 |[salesInvoiceLines](dynamics_salesinvoiceline.md)|salesInvoiceLines |Gets the salesinvoicelines of the salesInvoice.|
 |[pdfDocument](dynamics_pdfdocument.md)|pdfDocument |Gets the pdfdocument of the salesInvoice.|
 |[attachments](dynamics_attachment.md)|attachments |Gets the attachments of the salesInvoice.|
@@ -120,6 +122,8 @@ The response has no content; the response code is 204.
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
 |currencyId|GUID|Specifies which currency the sales invoice uses.|
+|shortcutDimension1Code|string||
+|shortcutDimension2Code|string||
 |currencyCode|string|The default currency code for the sales invoice.|
 |orderId|GUID|The id of the order to which the sales invoice is associated to. Read-Only.|
 |orderNumber|string|The number of the order to which the sales invoice is associated to. Read-Only.|
@@ -179,6 +183,8 @@ Here is a JSON representation of the salesInvoice resource.
     "shipToState": "string",
     "shipToPostCode": "string",
     "currencyId": "GUID",
+    "shortcutDimension1Code": "string",
+    "shortcutDimension2Code": "string",
     "currencyCode": "string",
     "orderId": "GUID",
     "orderNumber": "string",

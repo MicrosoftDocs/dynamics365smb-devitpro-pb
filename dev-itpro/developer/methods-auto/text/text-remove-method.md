@@ -3,7 +3,7 @@ title: "Text.Remove(Integer [, Integer]) Method"
 description: "Returns a new Text in which a specified number of characters from the current string are deleted."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 
 *StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based position to begin deleting characters.
-        
+The one-based position to begin deleting characters.  
 
 *[Optional] Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

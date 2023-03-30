@@ -3,7 +3,7 @@ title: "System.CodeCoverageLog([Boolean] [, Boolean]) Method"
 description: "Starts and stops the logging of code."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,8 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 ## Parameters
 *[Optional] NewIsActive*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** starts code logging;**false** stops code logging.
-        
+**true** starts code logging;**false** stops code logging.  
+
 *[Optional] MultiSession*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
   
@@ -39,7 +39,6 @@ Starts and stops the logging of code. You can also use this method to retrieve t
 *[Optional] IsActive*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** is code logging is active;**false** otherwise.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

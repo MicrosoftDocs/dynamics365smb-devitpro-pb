@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 06/14/2022
+ms.date: 02/24/2023
 ---
 
 # The Business Central Admin Center API
@@ -25,7 +25,7 @@ For more information about administrative capabilities, see [The Business Centra
 
 ## Location
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: `https://api.businesscentral.dynamics.com`.
 
 ## Authenticate using service-to-service AAD Apps ([Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow))
 

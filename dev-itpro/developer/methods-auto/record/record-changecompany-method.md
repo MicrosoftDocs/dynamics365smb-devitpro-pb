@@ -3,7 +3,7 @@ title: "Record.ChangeCompany([Text]) Method"
 description: "Redirects references to table data from one company to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] CompanyName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the company to which you want to change. If you omit this parameter, you change back to the current company.
-          
+The name of the company to which you want to change. If you omit this parameter, you change back to the current company.  
 
 
 ## Return Value

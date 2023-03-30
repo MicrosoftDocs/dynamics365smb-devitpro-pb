@@ -3,7 +3,7 @@ title: "Page, Page Fields, and Page Extension Properties"
 description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/08/2022
+ms.date: 03/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,8 +74,11 @@ The following properties all apply to the Page object, only some of these proper
 |[ExtendedDatatype Property](devenv-extendeddatatype-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[Extensible Property](devenv-extensible-property.md)| | -Report <br />  -Enum Type <br />  -Table <br />  -Page <br /> |
 |[Filters Property](devenv-filters-property.md)| | -Page View <br /> |
+|[FlowCaption Property](devenv-flowcaption-property.md)| | -Page Custom Action <br /> |
 |[FlowEnvironmentId Property](devenv-flowenvironmentid-property.md)| | -Page Custom Action <br /> |
 |[FlowId Property](devenv-flowid-property.md)| | -Page Custom Action <br /> |
+|[FlowTemplateCategoryName Property](devenv-flowtemplatecategoryname-property.md)| | -Page Custom Action <br /> |
+|[FlowTemplateId Property](devenv-flowtemplateid-property.md)| | -Page Custom Action <br /> |
 |[FreezeColumn Property](devenv-freezecolumn-property.md)| True| -Page Group <br /> |
 |[Gesture Property](devenv-gesture-property.md)| | -Page Action <br /> |
 |[GridLayout Property](devenv-gridlayout-property.md)| | -Page Group <br /> |

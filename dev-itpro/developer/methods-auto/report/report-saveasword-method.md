@@ -3,7 +3,7 @@ title: "Report.SaveAsWord(Integer, Text [, var Record]) Method"
 description: "Saves a report on the computer that is running the server as a Microsoft Word (.doc) document."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,13 +28,11 @@ Saves a report on the computer that is running the server as a Microsoft Word (.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
-          
+The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.  
 
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path and the name of the file that you want to save the report as. The path must exist, the file must not be being used, and the server process must have permission to write to the file. Otherwise, you will get errors.
-        
+The path and the name of the file that you want to save the report as. The path must exist, the file must not be being used, and the server process must have permission to write to the file. Otherwise, you will get errors.  
 
 *[Optional] Record*  
 &emsp;Type: [Record](../record/record-data-type.md)  

@@ -3,7 +3,7 @@ title: "Report Data Type"
 description: "Is used to display, print, or process information from a database."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 01/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -53,6 +53,7 @@ The following methods are available on instances of the Report data type.
 |[DefaultLayout()](reportinstance-defaultlayout-method.md)|Gets the default built-in layout type that is used on a specified report.|
 |[ExcelLayout(var InStream)](reportinstance-excellayout-method.md)|Gets the Excel layout that is used on a report and returns it as a data stream.|
 |[Execute(Text [, RecordRef])](reportinstance-execute-method.md)|Runs a report in preview or processing-only mode without showing the request page in the client. The preview document will be downloaded as a PDF file to the user's browser client, where it can be read with the PDF reader. It won't open the Business Central preview page in the browser. The method gets the request page parameter values as an input parameter string from a RUNREQUESTPAGE method call. The OnOpen and OnClose triggers on the request page will run even though the request page is not shown.|
+|[FormatRegion([Text])](reportinstance-formatregion-method.md)|Gets or sets the current format region setting for the report.|
 |[IsReadOnly()](reportinstance-isreadonly-method.md)|Gets if the current report's data access intent is readonly.|
 |[Language([Integer])](reportinstance-language-method.md)|Gets or sets the current language setting for the report.|
 |[NewPage()](reportinstance-newpage-method.md)|Forces a page break when printing a report.|
