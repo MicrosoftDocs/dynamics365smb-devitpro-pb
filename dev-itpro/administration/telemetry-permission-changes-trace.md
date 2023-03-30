@@ -20,6 +20,7 @@ Permission changes telemetry gathers data about the following operations on perm
 - A user-defined permission set was added or removed
 - A link between a user-defined permission set and system permission set was added or removed
 - A permission set was assigned to or removed from a user or user group
+- A permission set was changed by an app/extension
 
 For information about managing permission sets, see [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions).
 
@@ -212,6 +213,33 @@ Occurs when a permission set is removed from a user.
 |eventId|**AL0000E2F**|
 |alPermissionSetId|Specifies the ID of the permission set that was removed from the user group.|
 |alUserGroupId|Specifies the ID of the user group that the permission set was removed from.|
+|[See common custom dimensions](#other)||
+
+
+## <a name="permissionsetchangedbyapp"></a>Permission set changed by an extension.
+
+Occurs when a permission set was changed by an app/extension at install/update time.
+
+### General dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|message|**Permission set changed by an extension**|
+|severityLevel|**1**|
+
+### Custom dimensions
+
+|Dimension|Description or value|
+|---------|-----|
+|eventId|**LC0058**|
+|extensionName|Specifies the name of the app/extension that changed the permission set.|
+|extensionId|Specifies the id of the app/extension that changed the permission set.|
+|extensionVersion|Specifies the version of the app/extension that changed the permission set.|
+|extensionpublisher|Specifies the publisher of the app/extension that changed the permission set.|
+|permissionSetExtensionObjectId|Specifies the object ID for the permission set extension that changed the permission set.|
+|permissionSetExtensionObjectName|Specifies the name of the object for the permission set extension that changed the permission set.|
+|permissionSetId|Specifies the ID of the permission set that was changed.|
+|permissionSetName|Specifies the name of the permission set that was changed.|
 |[See common custom dimensions](#other)||
 
 

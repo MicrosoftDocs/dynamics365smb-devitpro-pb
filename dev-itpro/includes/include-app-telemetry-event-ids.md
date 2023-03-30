@@ -26,3 +26,5 @@
 |AL0000DGF|	Performance Toolkit |[Performance Toolkit - {BCPT Header code} - {BCPT Scenario code} - {BCPT Line status}](../administration/telemetry-performance-toolkit-trace.md#scenario)|
 |AL0000G7J|	Feature Telemetry |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
 |AL0000G7K|	Feature Telemetry |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|
+|AL0000EIW|Onboarding|[Onboarding Started](../administration/telemetry-onboarding-trace.md#started)|
+|AL0000EIV|Onboarding|[Onboarding criteria completed: {Criteria}](../administration/telemetry-onboarding-trace.md#CriteriaCompleted)|

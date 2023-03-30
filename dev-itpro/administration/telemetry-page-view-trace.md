@@ -45,24 +45,24 @@ All fields are documented here: [Application Insights PageViews Schema](/azure/a
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|alObjectId|Specifies the ID of the page object that was opened.|
-|alObjectName|Specifies the name of the page object that was opened.|
+|aadTenantId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-aadtenantid.md)]|
+|alObjectId|[!INCLUDE[aadTenantId](../includes/include-telemetry-dimension-page-object-id.md)]|
+|alObjectName|[!INCLUDE[objectName](../includes/include-telemetry-dimension-page-object-name.md)]|
 |alObjectType|**Page**|
-|appId|Specifies the ID of the extension that the page belongs to.|
-|appName|Specifies the name of the extension that the page belongs to.|
-|appPublisher| Specifies the publisher of the extension that the page belongs to. |
-|appVersion|Specifies the version of the extension that the page belongs to.|
-|clientType|Specifies the type of client that opened the page such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used when the page opened. |
+|appId|[!INCLUDE[appId](../includes/include-telemetry-dimension-page-app-id.md)]|
+|appName|[!INCLUDE[appName](../includes/include-telemetry-dimension-page-app-name.md)]|
+|appPublisher|[!INCLUDE[appPublisher](../includes/include-telemetry-dimension-page-app-publisher.md)]|
+|appVersion|[!INCLUDE[appVersion](../includes/include-telemetry-dimension-page-app-version.md)]|
+|clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)] |
+|companyName|[!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)]|
 |component|**Dynamics 365 Business Central Server**.|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|
 |designerLevel|Specifies the design level in which the page was opened. This dimension provides additional insight when the `hostType` dimension is **Designer**. <ul><li>**None**<br /> The page  wasn't opened in a design mode. This value is shown when the `hostType` dimension is a value other than **Designer**</li><li>**Personalization**<br /> The page opened in the personalizing mode for tailoring the page in the user's workspace only. See [Personalize Your Workspace](/dynamics365/business-central/ui-personalization-user). </li><li>**Configuration** <br /> The page opened in customizing mode for tailoring the page for all users of a specific profile. See [Customizing Pages for Profiles](/dynamics365/business-central/ui-personalization-manage). </li><li>**Development** <br /> The page opened in design mode for developing and modifying the page from the client for all users. See [Using Designer](../developer/devenv-inclient-designer.md).</li><li>**Inspector**<br /> The page opened in page inspection mode for viewing page information like source table, source extension, and filters. See [Inspecting Pages](/dynamics365/business-central/across-inspect-page).</li><li>**All** - the page was opened in the personalization, configuration, development, and inspector modes.|
 |deviceLocale|Specifies the preferred language that's configured for the device that opened the page. For example, this dimension could show the language setting of a browser used to view the page. The value is a language code, such as **en-US** or **da-DK**. |
 |deviceScreenResolution|Specifies the display resolution of the device that opened the page. The value is given as {width}×{height}, with the units in pixels. For example, **1024×768** means the width is 1024 pixels and the height is 768 pixels.|
-|environmentName|Specifies the name of the tenant environment. See [Managing Environments](tenant-admin-center-environments.md).|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|environmentName|[!INCLUDE[environmentName](../includes/include-telemetry-dimension-environment-name.md)]|
+|environmentType|[!INCLUDE[environmentType](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventID|**CL0001** (note that this is different from other signals where the dimension is called *eventId*)|
 |expandedFastTabs|Specifies the FastTabs on the page that were expanded when the page opened.|
 |factboxExpanded|Specifies whether the FactBox area was shown or hidden when the page was opened. **true** indicates that the FactBox was shown. **false** indicates that the FactBox was hidden.|
