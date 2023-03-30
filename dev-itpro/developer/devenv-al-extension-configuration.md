@@ -1,5 +1,5 @@
 ---
-title: "AL Language Extension Configuration"
+title: "AL Language extension configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# AL Language Extension Configuration
+# AL Language extension configuration
 
 [!INCLUDE[2019_releasewave2.md](../includes/2019_releasewave2.md)]
 
@@ -23,6 +23,7 @@ The following table describes the user and workspace settings for the AL Languag
 
 |Setting|Value|
 |-------|-----|
+|Are Profile Lenses Supported|Specifies whether statement lenses are supported for the profiler.|
 |Assembly Probing Paths|Sets the list of directory paths where the compiler searches for referenced .NET assemblies. For example: `"al.assemblyProbingPaths": ["./.netpackages", "C:/Program Files/Assemblies"]`|
 |Are Profile Lenses Supported| Enables the Profiler CodeLens for AL, default value is `true`. Syntax is `"al.areProfileLensesSupported": true`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Browser|Specifies the browser in which to open the [!INCLUDE[prod_short](includes/prod_short.md)] client when launching the application from Visual Studio Code.|
@@ -40,6 +41,8 @@ The following table describes the user and workspace settings for the AL Languag
 |Profiler Colors|Specifies the colors used to define the application types in the profiler output. Accepts valid color names, hex codes, and rgba() values. The properties are `systemApplication` - default color `green`, `baseApplication` - default color `magenta`, and `extension` - default color `yellow`.|
 |Rule Set Path|Sets the path to the file containing the customized rules to use when running code analysis.|
 |Snapshot Debugger Lines Hit Decoration | Specifies the decoration values for a line that is hit by the snapshot debugger. Syntax is `al.snapshotDebuggerLinesHitDecoration`.|
+|Show Explorer at Startup|Specifies whether the AL Explorer is shown at startup. Options are: `Always`, `Never`, and `Once`. Default is `Once`. Syntax is `al.showExplorerAtStartup`.|
+|Show Home at Startup|Specifies whether the AL Developer Home is shown at startup. Options are: `Always`, `Never`, and `WhenUpdated`. Default is `WhenUpdated`. Syntax is `al.showHomeAtStartup`.|
 |Snapshot Debugging Path|Sets the directory path where the snapshot debugger sources are located. Default is `./.snapshot`.|
 |Snapshot Output Path|Sets the directory path where snapshot files are saved. Default is `./.snapshots`.|
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|

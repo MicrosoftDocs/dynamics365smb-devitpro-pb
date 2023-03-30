@@ -401,6 +401,8 @@
 ### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard shortcuts](developer/devenv-keyboard-shortcuts.md)
+### [AL Home](developer/devenv-al-home.md)
+### [AL Explorer](developer/devenv-al-explorer.md)
 ### [AL formatter](developer/devenv-al-formatter.md)
 ### [AL outline view](developer/devenv-al-outline-view.md)
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
