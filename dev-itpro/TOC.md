@@ -407,7 +407,7 @@
 ### [AL outline view](developer/devenv-al-outline-view.md)
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
-### [object ranges](developer/devenv-object-ranges.md)
+### [Object ranges](developer/devenv-object-ranges.md)
 ### [Differences in the development environments](developer/devenv-differences.md)
 <!-- ### [object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)

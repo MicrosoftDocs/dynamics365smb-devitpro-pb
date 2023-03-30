@@ -12,6 +12,8 @@ ms.custom: bap-template
 
 # Code analysis performance configuration
 
+[!INCLUDE [2023_releasewave1](../includes/2023_releasewave1.md)]
+
 This article gives an overview of the tools and configuration options, which are offered to ensure that the code analysis tool performs adequately on different workspace sizes and machine configurations. This includes controlling the scope of the code analysis tool during live editing and troubleshooting tips to identify and suppress long-running code analysis rules.
 
 ## Background code analysis - scope
