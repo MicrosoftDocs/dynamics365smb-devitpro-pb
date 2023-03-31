@@ -13,9 +13,7 @@ ms.author: solsen
 
 # externaleventsubscriptions resource type
 
-<!-- START>DO_NOT_EDIT -->
-<!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
-Represents an externaleventsubscriptions in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Represents an external event subscription in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 > [!NOTE]
 > For information about enabling APIs for [!INCLUDE[prod_short](../../../includes/prod_short.md)] see [Enabling the APIs for Dynamics 365 Business Central](../enabling-apis-for-dynamics-nav.md).
@@ -28,7 +26,6 @@ Represents an externaleventsubscriptions in [!INCLUDE[prod_short](../../../inclu
 |[DELETE externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_delete.md)|none|Deletes a externaleventsubscriptions object.|
 |[POST externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_create.md)|externaleventsubscriptions|Creates a externaleventsubscriptions object.|
 |[PATCH externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_update.md)|externaleventsubscriptions|Updates a externaleventsubscriptions object.|
-
 
 
 ## Properties
@@ -73,10 +70,10 @@ Here is a JSON representation of the externaleventsubscriptions resource.
     "systemModifiedBy": "GUID"
 }
 ```
-<!-- IMPORTANT: END>DO_NOT_EDIT -->
 
 ## See Also
-[GET externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_get.md)
-[DELETE externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_delete.md)
-[POST externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_create.md)
-[PATCH externaleventsubscriptions](../api/dynamics_externaleventsubscriptions_update.md)
+
+[GET external event subscriptions](../api/dynamics_externaleventsubscriptions_get.md)
+[DELETE external event subscriptions](../api/dynamics_externaleventsubscriptions_delete.md)
+[POST external event subscriptions](../api/dynamics_externaleventsubscriptions_create.md)
+[PATCH external event subscriptions](../api/dynamics_externaleventsubscriptions_update.md)

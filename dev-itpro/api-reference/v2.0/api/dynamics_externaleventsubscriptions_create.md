@@ -11,11 +11,9 @@ ms.date: 02/06/2023
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Create externaleventsubscriptions
 
-Creates an externaleventsubscriptions in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Creates an external event subscription in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
@@ -97,7 +95,7 @@ Content-type: application/json
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[externaleventsubscriptions](../resources/dynamics_externaleventsubscriptions.md)  
-[GET externaleventsubscriptions](dynamics_externaleventsubscriptions_get.md)  
-[DELETE externaleventsubscriptions](dynamics_externaleventsubscriptions_delete.md)  
-[PATCH externaleventsubscriptions](dynamics_externaleventsubscriptions_update.md)  
+[External event subscriptions](../resources/dynamics_externaleventsubscriptions.md)  
+[GET external event subscriptions](dynamics_externaleventsubscriptions_get.md)  
+[DELETE external event subscriptions](dynamics_externaleventsubscriptions_delete.md)  
+[PATCH external event subscriptions](dynamics_externaleventsubscriptions_update.md)  
