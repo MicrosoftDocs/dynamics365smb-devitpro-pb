@@ -841,4 +841,7 @@ Now we'll create a sales order for customer 10000, and add a line for item 1900-
 :::image type="content" source="media/price-3.4-hierarchical-sales-order.png" alt-text="Hierarchical price on sales order.":::
 
 ## See Also
+
+[Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module)  
+[Module Base Application](/dynamics365/business-central/application/reference/base%20application/)  
 [Extending Application Areas](devenv-extending-application-areas.md)
