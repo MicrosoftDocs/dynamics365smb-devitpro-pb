@@ -1,5 +1,5 @@
 ---
-title: "Formatting Values, Dates, and Time"
+title: "Formatting values, dates, and time"
 description: Explains the Format functionality in Business Central.
 ms.custom: na
 ms.date: 04/01/2021
@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: SusanneWindfeldPedersen
 ---
 
-# Formatting Values, Dates, and Time
+# Formatting values, dates, and time
 
 With the `Format` function in Business Central, you can set the format of the source expression for various data types in AL.  
   
@@ -18,7 +18,7 @@ With the `Format` function in Business Central, you can set the format of the so
 
 You can choose to set `Format` to a predefined format, or you can build your own format. For more information, see [Format Method (Integer, Text)](methods-auto/system/system-format-joker-integer-string-method.md).  
   
-## Basic Settings  
+## Basic settings  
 
 To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* is one of the entries in the Value column of the following table.  
   
@@ -28,8 +28,8 @@ To choose a predefined format, use the syntax: <Standard Format,*X*>, where *X* 
 |1|Standard Display Format 2 (edit)|  
 |2|AL Code Constant Format|  
   
-> [!NOTE]  
-> You must enter the < and > angle brackets, such as `<Standard Format,2>`.  
+> [!NOTE]   
+> You must enter the `<` and `>` angle brackets, such as `<Standard Format,2>`.  
   
 ## Building Formats  
 
@@ -103,7 +103,7 @@ The following examples demonstrate how to use `Format`:
     > [!NOTE]  
     > The settings that are specified under the Regional and Language Options in Windows determine how some separators are displayed. In the Business Central client, you can specify a **Region** under **Settings**, this determines how thousand and decimal separators are displayed.
   
-## Standard Decimal Formats
+## Standard decimal formats
 
 This table shows the standard Decimal formats with the regional setting of a European country/region.  
   
@@ -127,7 +127,7 @@ The following table shows the standard Decimal formats with the regional setting
 |\<Integer>\<Decimals>\<Sign,1>|4|76543.21-|  
 |\<XML format>|9|-76543.21|  
   
-## Standard Date Formats
+## Standard date formats
 
 The following table shows the standard Date formats with the regional setting of a European country/region.  
   
@@ -157,7 +157,7 @@ The following table shows the standard Date formats with the regional setting of
 |\<Day,2>\<Filler Character, >. \<Month Text,3> \<Year4>|7|5. Apr 2021|  
 |\<XML format>|9|2021-04-05|  
   
-## Standard Time Formats
+## Standard time formats
 
 The following table shows the standard Time formats with the regional setting of a European country/region.  
   
@@ -177,7 +177,7 @@ The following table shows the standard Time formats with the regional setting of
 |\<Hours24,2>\<Filler Character,0>\<Minutes,2>\<Seconds,2> \<Second dec.>T|2|043555 .553T|  
 |\<XML format>|9|04:35:55.553|  
 
-## Standard DateTime Formats
+## Standard dateTime formats
 
 The following table shows the standard DateTime formats with the regional setting of a European country/region.  
   
@@ -199,7 +199,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Month,2>/\<Day,2>/\<Year> \<Hours12,2>:\<Minutes,2>:\<Seconds,2> \<AM/PM>|3|04/05/21 04:35:55 AM|  
 |\<XML format> **Warning:**  A DateTime is stored in the database as Coordinated Universal Time \(UTC\). For example, on a computer in the \(UTC-08:00\) Pacific Time zone, UTC is eight hours later than local time on the computer.|9|2021-04-05T12:35:55.553Z|  
 
-## Standard Integer Formats  
+## Standard integer formats  
 
 |**Integer and BigInteger**|**Format**|**Example**|  
 |--------------------------------|----------------|-----------------|  
@@ -208,7 +208,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Sign>\<Integer>|2|-567|  
 |\<XML format>|9|-567|  
 
-## Standard Boolean Formats  
+## Standard boolean formats  
 
 |**Boolean**|**Format**|**Example**|  
 |-----------------|----------------|-----------------|  
@@ -217,7 +217,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Number>|2|1/0|  
 |\<XML format>|9|true/false|  
 
-## Standard GUID Formats  
+## Standard GUID formats  
 
 |**GUID**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
@@ -230,7 +230,7 @@ The following table shows the standard DateTime formats with the regional settin
 |{0X<4byte>,0X<2byte>,0X<2byte>,{0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>,<br/>0X<1byte>,0X<1byte>,0X<1byte>,0X<1byte>}}|6|{0XEA48A3E0,0X48E0,0X4AB7,{0XB1,0XA1,0XE3,0XEA,0X85,0XBF,0X1B,0X75}}|  
 |\<XML format>|9|{EA48A3E0-48E0-4AB7-B1A1-E3EA85BF1B75}|  
 
-## Standard Enum Formats  
+## Standard enum formats  
 
 |**Enum value**|**Format**|**Example**|  
 |----------------|----------------|-----------------|  
@@ -239,7 +239,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Number>|2|1|  
 |\<XML format>|9|1|  
 
-## Standard Option Formats
+## Standard option formats
 
 |**Option**|**Format**|**Example**|  
 |----------|----------|-----------------|  
@@ -248,7 +248,7 @@ The following table shows the standard DateTime formats with the regional settin
 |\<Number>|2|1|  
 |\<XML format>|9|1|  
 
-## Standard XML and String Formats
+## Standard XML and string formats
 
 Standard format `9` is used to display the data in the standard XML formats.  
   
