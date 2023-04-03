@@ -33,7 +33,7 @@ For a selected object, use the **Source** button to go to source code to develop
 
 ## Bookmarks
 
-In the rightmost column, you can bookmark objects used frequently to filter a list of objects to view only the bookmarked ones, for example, when navigating between the objects that you currently work on. Use the **Module** dropdown to filter only on **Bookmarked objects**.
+In the rightmost column, you can bookmark objects used frequently to filter a list of objects to view only the bookmarked ones, for example, when navigating between the objects that you currently work on. Choose the `*` to bookmark an object. Use the **Module** dropdown to filter only on **Bookmarked objects**.
 
 ## View extension points
 
