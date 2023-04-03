@@ -1,14 +1,13 @@
 ---
 title: Authenticating Business Central Users with Azure Active Directory 
 description: Get an overview about using Azure AD authentication in Business Central.
-ms.custom: na
-ms.date: 03/23/2022
+ms.custom: bap-template
+ms.date: 02/09/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.service: "dynamics365-business-central"
 author: jswymer
+ms.author: jswymer
 ---
 # Authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Users with Azure Active Directory 
 
@@ -34,18 +33,18 @@ Azure AD authentication enables [!INCLUDE[prod_short](../developer/includes/prod
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
-Starting with 2022 release wave 1 (version 20), Business Central supports the OpenID Connect (OIDC) protocol for Azure AD authentication. In previous releases, Azure AD authentication in Business Central used WS-Federation (Web Services Federation Language). [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](/azure/active-directory/develop/v2-protocols-oidc).
+In 2022 release wave 1 (version 20), Business Central introduced support for OpenID Connect (OIDC) protocol for Azure AD authentication. In previous releases, Azure AD authentication in Business Central used WS-Federation (Web Services Federation Language) only. [OpenID Connect](https://openid.net/connect/) is a modern protocol that's built on OAuth 2.0 and has a standard authentication library. For more information about OpenID Connect, see [Microsoft identity platform and OpenID Connect protocol](/azure/active-directory/develop/v2-protocols-oidc).
 
-With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It will be removed in a later release. Until it's removed, you can continue to use Azure AD authentication with WS-Federation, but we recommend using OpenID Connect.
+With the introduction of OpenID Connect, WS-Federation support in Business Central has been deprecated. It's removed in 2023 release wave 1 (version 22) and later versions. If you're using version 20 or 21, you can continue to use Azure AD authentication with WS-Federation, but we recommend using OpenID Connect.
 
 For the complete setup of Azure AD with OpenID Connect, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
 > [!NOTE]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 19 and earlier still only support WS-Federation. If you're setting up one of these version, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
+> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] version 19 and earlier versions still only support WS-Federation. If you're setting up one of these version, see [Configure Azure AD Authentication with WS-Federation](authenticating-users-with-azure-active-directory.md).
 
-### Switch an existing configuration from WS-Federation to OpenID Connect
+### Switch a version 20 or 21 configuration from WS-Federation to OpenID Connect
 
-The complete setup for OpenID Connect isn't much different than it is for WS-Federation. The following steps outline the modifications you have to make to an existing deployment to go from WS-Federation to OpenID connect.
+The complete setup for OpenID Connect isn't much different than it is for WS-Federation. The following steps outline the modifications you have to make to an existing version 20 or 21 deployment to go from WS-Federation to OpenID connect.
 
 1. In Azure Active Directory, enable ID tokens on the registered application for Business Central authentication. You do this change from the [Azure portal](https://portal.azure.com).
 2. In [!INCLUDE[prod_short](../developer/includes/prod_short.md)]:
@@ -65,9 +64,9 @@ The complete setup for OpenID Connect isn't much different than it is for WS-Fed
 
 For the complete setup with more details, see [Configure Azure AD Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
 
-### Configure legacy WS-Federation in version 20
+### Configure legacy WS-Federation in version 20 and 21
 
-Whether setting up a new version 20 deployment or upgrading a version 19 or earlier, you can still set up the Azure AD authentication use WS-Federation for now. The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
+If you want to set up Azure AD authentication use WS-Federation in version 20 or 21, you can, The full setup is the same as in earlier versions, except the [!INCLUDE[webserver](../developer/includes/webserver.md)] now includes a setting named `UseLegacyAcsAuthentication` that you set to `true`.
 
 For example, using the [!INCLUDE[adminshell](../developer/includes/adminshell.md)], you run the following command:
 

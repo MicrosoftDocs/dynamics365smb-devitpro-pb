@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: solsen
 ---
 
-# The AL Formatter
+# AL Formatter
 
 The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] offers users the option to automatically format their source code. This capability increases the usability of the editor by allowing developers to instantly fix the indentation and formatting of their code. 
 The auto-formatter analyzes the syntax tree of the AL code that you're formatting. By using rules that are based on the coding and style guidelines for AL, the auto-formatter then inserts and removes whitespace from key points in the document to make it more readable.
@@ -19,7 +19,7 @@ The auto-formatter analyzes the syntax tree of the AL code that you're formattin
 > [!NOTE]  
 > The rules used by the auto-formatter cannot be configured by the user. This limitation is present to allow for a uniform style to be used throughout the community of AL developers.
 
-## Invoking the AL formatter
+## Invoking AL formatter
 The auto-formatter can be invoked to format an entire AL document or a pre-selected range. In an existing project, open the document that you want to format, right-click inside the document, and select **Format Document**. In the default configuration for Visual Studio Code, the command can be run using the shortcut **Alt+Shift+F**.
 
 ![Format Document.](media/format-document.gif)  

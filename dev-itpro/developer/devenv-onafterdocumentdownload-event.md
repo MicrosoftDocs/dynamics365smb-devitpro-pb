@@ -2,7 +2,7 @@
 title: "OnAfterDocumentDownload Event"
 description: Describe the OnAfterDocumentDownload Event in Business Central.
 ms.custom: na
-ms.date: 01/26/2022
+ms.date: 03/13/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -25,7 +25,7 @@ Codeunit **44 ReportManagement**.
 
 ## Raised
 
-When the report runtime has generated an output artifact which is going to be downloaded to a UI client. This can occur when the user invokes one of the SendTo actions in the report request page or when the document is being printed using the client print capability.
+When the report runtime has generated an output artifact, which is going to be downloaded to a UI client. This can occur when the user invokes one of the SendTo actions in the report request page, or when the document is being printed using the client print capability.
 
 ## Syntax
 
@@ -60,109 +60,7 @@ Type: [Boolean](methods-auto/boolean/boolean-data-type.md)
 
 Specifies whether the extension handled the generated artifact successfully. The document will not be downloaded to the client if the application code handles the artifact and sets the *Success* parameter to true.
 
-## <a name="reportpayload"></a>Report payload
-
-The report payload contains metadata for the report object and a list of attributes that identifies that current invocation. The payload consists of several attributes and has the following structure.
-
-```json
-{
-    "filterviews":
-    [
-        {"name":"Header","tableid":112,"view":"VERSION(1) SORTING(Field3) WHERE(Field3=1(103027))"},
-        {"name":"Line","tableid":113,"view":"VERSION(1) SORTING(Field3,Field4) WHERE(Field4=1(0..10000))"},
-        {"name":"ShipmentLine","tableid":7190,"view":"VERSION(1) SORTING(Field1,Field2,Field3) WHERE(Field2=1(10000))"}
-    ],
-    "version":1,
-    "objectname":"Standard Sales - Invoice",
-    "objectid":1306,
-    "documenttype":"application/pdf",
-    "invokedby":"00000000-0000-0000-0000-000000000001",
-    "invokeddatetime":"2020-01-17T15:33:52.48+01:00",
-    "companyname":"CRONUS International Ltd.",
-    "printername":"",
-    "intent":"Download",
-}
-
-```
-
-<!--
-{
-    "filterviews":
-    [
-        {
-            "name":"[DATA_ITEM_NAME]",
-            "tableid":"[TABLE_ID]",
-            "view":"[FILTER_VIEW]"
-        }
-    ],
-    "version":1,
-    "objectname":"[OBJECT_NAME]",
-    "objectid":[REPORT_ID],
-    "documenttype":"[MIME_TYPE]",
-    "invokedby":"[SESSION_USER_ID]",
-    "invokeddatetime":"[CLENT_LOCAL_DATETIME]", // for example, "2019-10-22T22:25:54.338+02:00"
-    "printername":"My Printer",
-    "companyname":"[COMPANY_NAME]",
-    "intent":"[REPORTINTENT]", // platform enum type serialized as string 'None|Print|Preview|Save|Schedule|Download|Parameters'
-
-}
-
-```
--->
-
-### Attributes
-
-#### *objectname*
-
-Specifies the name of the object.
-
-#### *objectid*
-
-Specifies the ID of the object.
-
-#### *documenttype*
-
-Specifies the MIME type of the document.
-
-#### *invokedby*
-
-Specifies the ID of the user who invoked the print action.
-
-#### *invokeddatetime*
-
-Specifies the date and time that the print action was invoked, for example, `2019-10-22T22:25:54.338+02:00`. The value is the date and time on the client machine.
-
-#### *companyname*
-
-Specifies the Business Central company.
-
-#### *version*
-
-Specifies the version of the report payload. Currently, the only supported version for the payload is `1`.
-
-#### *filterviews*
-
-Specifies views that are used on the document.
-
-#### *name*
-
-Specifies the name of data item that the filter view applies to.
-
-#### *tableid*
-
-Specifies ID of the table for the view.
-
-#### *view*
-
-Specifies the name of the view.
-
-### *intent"
-
-Specifies the intent of the current report invocation, which can be one of the following values.
-
-- Print
-- Preview
-- Download
+[!INCLUDE[report_payload_md](includes/report_payload.md)]
 
 ## Sample code
 
@@ -185,7 +83,21 @@ var
     FileName: Text;
     Extension: Text;
     TempFolderPath: Text;
+    SharedDocumentStream: InStream;
 begin
+    // Honor the standard handle pattern
+    if Success = true then
+        exit;
+
+    // Empty stream, no actions possible on the stream so return immediately
+    if DocumentStream.Length < 1 then
+        exit;
+
+    // Use a shared stream and reset the read pointer to beginning of stream
+    SharedDocumentStream := DocumentStream;
+    if SharedDocumentStream.Position > 1 then
+        SharedDocumentStream.ResetPosition();
+    
     TempFolderPath := System.TemporaryPath;
 
     ObjectPayload.WriteTo(JsonText);
@@ -217,7 +129,7 @@ begin
     FilePath := TempFolderPath + 'DownLoad - ' + FileName + '.' + Extension;
     FileHandler.Create(FilePath);
     FileHandler.CreateOutStream(FileContent);
-    CopyStream(FileContent, DocumentStream);
+    CopyStream(FileContent, SharedDocumentStream);
     FileHandler.Close();
     Success := true; // Return true so platform don't attempt to download to client
 end;
@@ -228,7 +140,7 @@ end;
 <!-- [Working With and Troubleshooting Payloads](devenv-reports-troubleshoot-printing.md)   -->
 <!-- [Developing Printer Extensions Overview](devenv-reports-printing.md)   -->
 <!-- [Creating a Printer Extension](devenv-reports-create-printer-extension.md)   -->
-[Events in AL](devenv-events-in-al.md)
-[Publishing Events](devenv-publishing-events.md)
-[Raising Events](devenv-raising-events.md)
+[Events in AL](devenv-events-in-al.md)  
+[Publishing Events](devenv-publishing-events.md)  
+[Raising Events](devenv-raising-events.md)  
 [Subscribing to Events](devenv-subscribing-to-events.md)

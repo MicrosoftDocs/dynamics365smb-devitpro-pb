@@ -3,7 +3,7 @@ title: "Database.CopyCompany(Text, Text) Method"
 description: "Creates a new company and copies all data from an existing company in the same database."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ Creates a new company and copies all data from an existing company in the same d
 ## Parameters
 *SourceName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The name of the company that you want to copy data from.
-        
+The name of the company that you want to copy data from.  
 
 *DestinationName*  
 &emsp;Type: [Text](../text/text-data-type.md)  

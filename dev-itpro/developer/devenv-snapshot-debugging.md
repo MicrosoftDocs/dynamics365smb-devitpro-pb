@@ -60,8 +60,8 @@ When a configuration is defined, a snapshot debugging session can be initialized
 
 To record the AL execution, the server will now wait for a connection to happen where the following rules apply: 
 
-- If a `sessionId` is specified for a userId in the given tenant, then it will be the session that's going to be snapshot debugged.
-- If only a `userId` is specified for a given tenant then the next session that is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
+- If a `sessionId` is specified for a `userId` in the given tenant, then it'll be the session that's going to be snapshot debugged. If the specified `sessionId` isn't found or the session, which is found isn't owned by the user specified in `userId` property, then the attach request will fail. 
+- If only a `userId` is specified for a given tenant then the next session, which is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
 
 

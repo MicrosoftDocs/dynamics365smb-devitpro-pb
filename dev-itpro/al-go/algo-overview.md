@@ -24,7 +24,7 @@ The template repositories to use as starting point are:
 **[https://github.com/microsoft/AL-Go-AppSource](https://github.com/microsoft/AL-Go-AppSource)** is the GitHub repository template for AppSource apps. 
 
 
-The usage scenarios below take you through how to get started and how to perform the most common tasks.
+The usage scenarios in this section take you through how to get started and how to perform the most common tasks.
 
 - [Create a New Per-Tenant Extension and Start Developing in Visual Studio Code](algo-get-started.md)  
 - [Add a Test App to an Existing Project](algo-add-test-app.md)  

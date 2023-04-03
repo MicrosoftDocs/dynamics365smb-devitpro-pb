@@ -3,7 +3,7 @@ title: "Dictionary.Set(TKey, TValue) Method"
 description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [Dictionary](dictionary-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [TKey](dictionary-data-type.md)  
-The key of the value to set.
-        
+The key of the value to set.  
+
 *Value*  
 &emsp;Type: [TValue](dictionary-data-type.md)  
 The value that will be associated with the specified key.  

@@ -57,6 +57,7 @@
 | LC0043 | Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} completed.](../administration/telemetry-task-scheduler-trace.md#task-completed) |
 | LC0044 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} canceled.](../administration/telemetry-task-scheduler-trace.md#task-canceled) |
 | LC0045 |Task Scheduler  | [Task {taskId} main/failure codeunit {codeunitObjectId} failed.](../administration/telemetry-task-scheduler-trace.md#task-failed) |
+| LC0057 |Task Scheduler  | [Task {taskId} timeout changed to: {timeout} because it was exceeding the max timeout value.](../administration/telemetry-task-scheduler-trace.md#task-timeout-changed-because-it-was-exceeding-the-max-timeout-value) |
 | LC0046 | Profile Configuration Lifecycle | [Profile import succeeded: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-success) |
 | LC0047 | Profile Configuration Lifecycle | [Profile import failed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#import-failed) |
 | LC0048 | Profile Configuration Lifecycle | [Profiles exported successfully](../administration/telemetry-profile-configuration-lifecycle-trace.md#export-success) |
@@ -68,6 +69,7 @@
 | LC0054 | Profile Configuration Lifecycle | [Profile page customization removed: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-removed) |
 | LC0055 | Profile Configuration Lifecycle | [Profile page customization converted: {ProfileId} in app/extension {ProfileAppId}](../administration/telemetry-profile-configuration-lifecycle-trace.md#customization-converted) |
 |LC0056|Extension Lifecycle |[Extension is already synchronized: {extensionName}](../administration/telemetry-extension-lifecycle-trace.md#alreadySynced)|
+|LC0058|Permissions |[Permission set changed by an extension](../administration/telemetry-permission-changes-trace.md#permissionsetchangedbyapp)|
 | LC0100 | Environment | [Environment update available for scheduling: {environmentName} to version {destinationVersion}.](../administration/telemetry-environment-lifecycle-trace.md#environment-update-available-for-scheduling) |
 | LC0101 | Environment | [Environment update scheduled: {environmentName} to version {destinationVersion}, update on or after date: {registeredForUpdateOnOrAfterDateUtc}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-scheduled) |
 | LC0102 | Environment | [Environment update missed: {environmentName} to version {destinationVersion}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-missed) |
@@ -114,9 +116,9 @@
 | LC0145 | Environment | [Environment configuration key {environmentConfigurationKey} failed to delete for environment {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-configuration-key-failed-to-be-deleted) |
 | LC0146 | Environment | [Environment update window was modified for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-window-modified) |
 | LC0147 | Environment | [Environment update window modification failed for environment: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-update-window-modification-failed) |
-| LC0149 | Environment | [Environment delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-delete-operation-started) |
-| LC0150 | Environment | [Environment deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-deleted) |
-| LC0151 | Environment | [Environment delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-delete-operation-failed) |
+| LC0149 | Environment | [Environment delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-hard-delete-operation-started) |
+| LC0150 | Environment | [Environment deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-hard-deleted) |
+| LC0151 | Environment | [Environment delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-hard-delete-operation-failed) |
 | LC0152 | Environment | [Environment rename operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-rename-operation-started) |
 | LC0153 | Environment | [Environment renamed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-renamed) |
 | LC0154 | Environment | [Environment rename operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-rename-operation-failed) |
@@ -144,3 +146,9 @@
 |LC0177| Environment| [Environment data upgrade operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-failed) |
 |LC0178| Environment| [Recovery from a failed data upgrade operation has completed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#recovery-from-a-failed-data-upgrade-operation-has-completed-successfully) |
 |LC0179| Environment| [Recovery from a failed data upgrade operation has failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#recovery-from-a-failed-data-upgrade-operation-has-failed) |
+|LC0180| Environment| [Environment soft delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-delete-operation-started) |
+|LC0181| Environment| [Environment soft deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-deleted) |
+|LC0182| Environment| [Environment soft delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-delete-operation-failed) |
+|LC0183| Environment| [Environment recovery operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovery-un-delete-operation-started) |
+|LC0184| Environment| [Environment recovered successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovered) |
+|LC0185| Environment| [Environment recovery operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-recovery-un-delete-operation-failed) |

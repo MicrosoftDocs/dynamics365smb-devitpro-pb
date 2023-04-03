@@ -3,7 +3,7 @@ title: "PerTenantExtensionCop Analyzer"
 description: "PerTenantExtensionCop is an analyzer that enforces rules that must be respected by extensions meant to be installed for individual tenants."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/15/2022
+ms.date: 03/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -35,6 +35,11 @@ PerTenantExtensionCop is an analyzer that enforces rules that must be respected 
 |[PTE0013](pertenantextensioncop-pte0013.md)|Entitlements cannot be defined in an extension.|Configuration|Error|
 |[PTE0014](pertenantextensioncop-pte0014.md)|Permission Sets should not be defined in XML files.|Configuration|Warning|
 |[PTE0015](pertenantextensioncop-pte0015.md)|The extension name is not valid.|Extensibility|Error|
+|[PTE0016](pertenantextensioncop-pte0016.md)|Permission set extensions should not include permissions for objects defined in another application.|Extensibility|Warning|
+|[PTE0017](pertenantextensioncop-pte0017.md)|Permission set extensions should not include permission sets defined in another application.|Extensibility|Warning|
+|[PTE0018](pertenantextensioncop-pte0018.md)|Permission set extensions should not include permission sets which include permissions for objects defined in another application.|Extensibility|Warning|
+|[PTE0019](pertenantextensioncop-pte0019.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
+|[PTE0020](pertenantextensioncop-pte0020.md)|Use the 'application' property instead of specifying an explicit dependency on Base Application.|Extensibility|Warning|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

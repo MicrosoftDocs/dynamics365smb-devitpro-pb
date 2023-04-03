@@ -1,0 +1,1 @@
+Specifies the current role center for the user, such as **ACCOUNTANT**, **ORDER PROCESSOR** or **BUSINESS MANAGER**.

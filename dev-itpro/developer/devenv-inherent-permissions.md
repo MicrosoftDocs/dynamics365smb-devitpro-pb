@@ -46,6 +46,26 @@ The inherent permissions and inherent entitlements together, grant more flexibil
 >[!NOTE]
 > Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../developer/methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
+## When to use inherent permissions
+
+Inherent permissions let you reduce the number of objects that you need to control, which makes it easier to manage permissions and helps avoid permission errors.
+
+> [!NOTE]
+> After you apply inherent permissions, security administrators can no longer control the permission.
+
+When you're deciding whether to use inherent permissions, consider whether you need to manage Read, Insert, Modify, Delete, and Execute permissions for the object. The following are examples of when you can or shouldn't use indirect permissions.
+
+Does the object run on or contain customer or business data? For example:
+
+* Yes. The **General Ledger** module does contain important business data. Don't apply inherent permissions to the module because you should control permissions for it.
+* No. The **Math** module in the System Application doesn't contain or run on any business data. You can apply inherent permissions to the module because you don't need to manage permissions for it.
+
+Is the object only run through another object that you can control permissions for? The following are some examples of when you can grant inherent permissions.
+
+* We grand indirect Read on the method scope for the General Ledger table when people sign in, because it's only used to get the work date.
+* Install and Upgrade codeunits where you can grant inherent Execute permissions.
+* Buffer tables where you can typically grant indirect Read, Insert, Modify, Delete, and Execute permissions and entitlements because they're only use to hold data in memory.
+
 ## See also
 
 [Entitlements and Permission Sets Overview](../developer/devenv-entitlements-and-permissionsets-overview.md)  

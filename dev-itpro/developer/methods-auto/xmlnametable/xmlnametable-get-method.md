@@ -3,7 +3,7 @@ title: "XmlNameTable.Get(Text, var Text) Method"
 description: "Gets the atomized string with the specified value."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [XmlNameTable](xmlnametable-data-type.md) data type.
 
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The string to find.
-        
+The string to find.  
 
 *Result*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -41,7 +40,7 @@ The atomized string object if the string has been atomized.
 ## Return Value
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-**true** if the key exists, otherwise **false**.  If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
+**true** if the key exists, otherwise **false**. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

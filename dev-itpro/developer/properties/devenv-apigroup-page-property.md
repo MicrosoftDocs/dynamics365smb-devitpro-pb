@@ -9,8 +9,10 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 author: SusanneWindfeldPedersen
 ---
- 
+
 # APIGroup Property (Page)
+
+<!-- this topic is manually created, parent node is devenv-apigroup-property.md -->
 
 > **Version**: _Available from runtime version 1.0._
 

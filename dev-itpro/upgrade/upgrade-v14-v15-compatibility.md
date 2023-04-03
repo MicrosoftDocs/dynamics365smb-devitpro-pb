@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 03/06/2023
+ms.date: 03/29/2023
 ms.custom: bap-template
 ---
 
@@ -23,39 +23,48 @@ For an overview of the supported paths, see [Supported Upgrade Paths](upgrade-pa
 
 Before you choose the target version for your upgrade, read the [Some Known Issues](known-issues.md) article. This article will describe issues in [!INCLUDE[prod short](../developer/includes/prod_short.md)] versions that affect upgrade.
 
+## Version 21 compatibility
+
+The following table lists the Business Central 21 versions and the minimum version of later releases that are compatible for upgrade.
+
+|Version 21|Version 22|
+----------|----------|
+|21.0 to 21.5|[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)  |
+|21.6|22.1|
+
 ## Version 20 compatibility
 
 The following table lists the Business Central 20 versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 20|Version 21|
-----------|----------|
-|20.0 to 20.5|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |
-|[20.6](https://support.microsoft.com/help/5019241)|[21.1](https://support.microsoft.com/help/5021004)|
-|[20.7](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|
-|[20.8](https://support.microsoft.com/help/5021671)|[21.3](https://support.microsoft.com/help/5022714)|
-|[20.9](https://support.microsoft.com/help/5022713)|[21.4](https://support.microsoft.com/help/5023401) |
-|[20.10](https://support.microsoft.com/help/5023400)|[21.5](https://support.microsoft.com/help/5024403)|
-|[20.11](https://support.microsoft.com/help/5024402)<sup>[\[1\]](#1)</sup>|21.6|
+|Version 20|Version 21|Version 22|
+----------|-----------|----------|
+|20.0 to 20.5|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)|
+|[20.6](https://support.microsoft.com/help/5019241)|[21.1](https://support.microsoft.com/help/5021004)|22.0|
+|[20.7](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|22.0|
+|[20.8](https://support.microsoft.com/help/5021671)|[21.3](https://support.microsoft.com/help/5022714)|22.0|
+|[20.9](https://support.microsoft.com/help/5022713)|[21.4](https://support.microsoft.com/help/5023401) |22.0|
+|[20.10](https://support.microsoft.com/help/5023400)|[21.5](https://support.microsoft.com/help/5024403)|22.0|
+|[20.11](https://support.microsoft.com/help/5024402)<sup>[\[1\]](#1)</sup>|21.6|22.0|
 
 ## Version 19 compatibility
 
 The following table lists the Business Central 19 versions and the minimum version of later releases that are compatible for upgrade.
 
-|Version 19|Version 20|Version 21|
-|----------|----------|----------|
-|19.0 to 19.5|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |
-|[19.6](https://support.microsoft.com/help/5013422)|[20.1](https://support.microsoft.com/help/5014491)|21.0|
-|[19.7](https://support.microsoft.com/help/5014490)|[20.2](https://support.microsoft.com/help/5015475)|21.0|
-|[19.8](https://support.microsoft.com/help/5015474)|[20.3](https://support.microsoft.com/help/5016304) |21.0|
-|[19.9](https://support.microsoft.com/help/5016303)|[20.4](https://support.microsoft.com/help/5017017) |21.0|
-|[19.10](https://support.microsoft.com/help/5017016)|[20.5](https://support.microsoft.com/help/5017795)|21.0|
-|[19.11](https://support.microsoft.com/help/5017794)|[20.6](https://support.microsoft.com/help/5019241)|21.0|
-|[19.12](https://support.microsoft.com/help/5019240)|[20.7](https://support.microsoft.com/help/5021002)|[21.1](https://support.microsoft.com/help/5021004)|
-|[19.13](https://support.microsoft.com/help/5021003)|[20.8](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|
-|[19.14](https://support.microsoft.com/help/5021670)|[20.9](https://support.microsoft.com/help/5022713)|[21.3](https://support.microsoft.com/help/5022714)|
-|[19.15](https://support.microsoft.com/help/5022712)|[20.10](https://support.microsoft.com/help/5023401)|[21.4](https://support.microsoft.com/help/5023401) |
-|[19.16](https://support.microsoft.com/help/5023399)|[20.11](https://support.microsoft.com/help/5024402)|[21.5](https://support.microsoft.com/help/5024403)|
-|[19.17](https://support.microsoft.com/help/5024401)<sup>[\[1\]](#1)</sup>|20.12|21.6|
+|Version 19|Version 20|Version 21|Version 22|
+|----------|----------|----------|----------|
+|19.0 to 19.5|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)|
+|[19.6](https://support.microsoft.com/help/5013422)|[20.1](https://support.microsoft.com/help/5014491)|21.0|22.0|
+|[19.7](https://support.microsoft.com/help/5014490)|[20.2](https://support.microsoft.com/help/5015475)|21.0|22.0|
+|[19.8](https://support.microsoft.com/help/5015474)|[20.3](https://support.microsoft.com/help/5016304) |21.0|22.0|
+|[19.9](https://support.microsoft.com/help/5016303)|[20.4](https://support.microsoft.com/help/5017017) |21.0|22.0|
+|[19.10](https://support.microsoft.com/help/5017016)|[20.5](https://support.microsoft.com/help/5017795)|21.0|22.0|
+|[19.11](https://support.microsoft.com/help/5017794)|[20.6](https://support.microsoft.com/help/5019241)|21.0|22.0|
+|[19.12](https://support.microsoft.com/help/5019240)|[20.7](https://support.microsoft.com/help/5021002)|[21.1](https://support.microsoft.com/help/5021004)|22.0|
+|[19.13](https://support.microsoft.com/help/5021003)|[20.8](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|22.0|
+|[19.14](https://support.microsoft.com/help/5021670)|[20.9](https://support.microsoft.com/help/5022713)|[21.3](https://support.microsoft.com/help/5022714)|22.0|
+|[19.15](https://support.microsoft.com/help/5022712)|[20.10](https://support.microsoft.com/help/5023401)|[21.4](https://support.microsoft.com/help/5023401) |22.0|
+|[19.16](https://support.microsoft.com/help/5023399)|[20.11](https://support.microsoft.com/help/5024402)|[21.5](https://support.microsoft.com/help/5024403)|22.0|
+|[19.17](https://support.microsoft.com/help/5024401)<sup>[\[1\]](#1)</sup>|20.12|21.6|22.0|
 
 To see the available updates for Business Central 2021 Release Wave 2, see [Released Updates for Microsoft Dynamics 365 Business Central 2021 Release Wave 2 on-premises](https://support.microsoft.com/topic/released-updates-for-microsoft-dynamics-365-business-central-2021-release-wave-2-0d9263bf-e474-41c1-ae41-d98de5cd6e84).
 

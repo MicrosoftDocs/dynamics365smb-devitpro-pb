@@ -3,7 +3,7 @@ title: "Database.HasTableConnection(TableConnectionType, Text) Method"
 description: "Verifies if a connection to an external database exists based on the specified name."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ Ok :=   Database.HasTableConnection(Type: TableConnectionType, Name: Text)
 ## Parameters
 *Type*  
 &emsp;Type: [TableConnectionType](../tableconnectiontype/tableconnectiontype-option.md)  
-Specifies the type of table connection as defined in the TableType property.
-        
+Specifies the type of table connection as defined in the TableType property.  
 
 *Name*  
 &emsp;Type: [Text](../text/text-data-type.md)  
@@ -40,7 +39,6 @@ The name of the external table connection. You must already have registered a ta
 *Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 **true** if a connection to an external database exists for the specified name, otherwise **false**.
-      
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

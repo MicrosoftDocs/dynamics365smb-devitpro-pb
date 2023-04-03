@@ -3,7 +3,7 @@ title: "SessionSettings.LocaleId([Integer]) Method"
 description: "Gets or sets the locale ID property in a SessionSettings object."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ An instance of the [SessionSettings](sessionsettings-data-type.md) data type.
 
 *[Optional] NewLocaleId*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Specifies the locale ID to set in the SessionSettings object. The value must be a valid Windows locale ID.
-        
+Specifies the locale ID to set in the SessionSettings object. The value must be a valid Windows locale ID.  
 
 
 ## Return Value

@@ -3,7 +3,7 @@ title: "TaskScheduler.TaskExists(Guid) Method"
 description: "Checks whether a specific task exists."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ Exists :=   TaskScheduler.TaskExists(Task: Guid)
 ## Parameters
 *Task*  
 &emsp;Type: [Guid](../guid/guid-data-type.md)  
-The unique identifier of the task. The unique identifier is returned by the CREATETASK method.
-          
+The unique identifier of the task. The unique identifier is returned by the CREATETASK method.  
 
 
 ## Return Value

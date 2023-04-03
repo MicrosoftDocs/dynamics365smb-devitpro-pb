@@ -3,7 +3,7 @@ title: "Dialog.Message(Text [, Any,...]) Method"
 description: "Displays a text string in a message window."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ Displays a text string in a message window.
 ## Parameters
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-This string contains the text you want the system to display in the message window. Use a backslash (\\) to start a new line. Use percent signs (%) to insert variable values into the string. Place the percent where you want the system to substitute the variable value. The string can be a text constant that is enabled for multilanguage functionality.
-        
+This string contains the text you want the system to display in the message window. Use a backslash (\\) to start a new line. Use percent signs (%) to insert variable values into the string. Place the percent where you want the system to substitute the variable value. The string can be a label that is enabled for multilanguage functionality.  
 
 *[Optional] Value*  
 &emsp;Type: [Any](../any/any-data-type.md)  

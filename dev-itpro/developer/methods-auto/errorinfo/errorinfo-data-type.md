@@ -3,7 +3,7 @@ title: "ErrorInfo Data Type"
 description: "Provides a structure for grouping information about an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/06/2022
+ms.date: 02/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,7 +32,7 @@ The following methods are available on instances of the ErrorInfo data type.
 |Method name|Description|
 |-----------|-----------|
 |[AddAction(Text, Integer, Text)](errorinfo-addaction-method.md)|Specifies an action for the error.|
-|[AddNavigationAction()](errorinfo-addnavigationaction-method.md)|Adds a navigation action for the error.|
+|[AddNavigationAction([Text])](errorinfo-addnavigationaction-method.md)|Adds a navigation action for the error.|
 |[Callstack()](errorinfo-callstack-method.md)|Specifies a callstack where the ErrorInfo was collected.|
 |[Collectible([Boolean])](errorinfo-collectible-method.md)|Specifies if the error is collectible using ErrorBehavior.Collect.|
 |[ControlName([Text])](errorinfo-controlname-method.md)|Specifies the control name that the error relates to.|

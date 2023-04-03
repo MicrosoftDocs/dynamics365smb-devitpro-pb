@@ -3,7 +3,7 @@ title: "Media.ImportFile(Text, Text [, Text]) Method"
 description: "Adds a media type, such as a JPEG image, from a file to a Media data type field of a record for displaying the media with the record in the client."
 ms.author: solsen
 ms.custom: na
-ms.date: 11/05/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,12 +32,12 @@ An instance of the [Media](media-data-type.md) data type.
 
 *Filename*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Specifies the full path and name of the media file to be added.
-        
+Specifies the full path and name of the media file to be added.  
+
 *Description*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Specifies text that can be used in the client to describe the media.
-        
+Specifies text that can be used in the client to describe the media.  
+
 *[Optional] MimeType*  
 &emsp;Type: [Text](../text/text-data-type.md)  
 Specifies the media content type. MIME type is used by browsers, and is an Internet standard to describe the contents of a file. The MimeType value must be a two-part string that consists of a type and subtype, such as image/jpeg or image/gif. If this parameter is not specified, the function will deduct the MIME type from the file extension. For example the MIME type for a .jpg file is image/jpeg.  

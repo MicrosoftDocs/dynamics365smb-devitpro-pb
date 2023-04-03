@@ -2,7 +2,7 @@
 title: salesInvoiceLine resource type  
 description: A sales invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -41,6 +41,7 @@ Represents a sales invoice line in [!INCLUDE[prod_short](../../../includes/prod_
 |[unitOfMeasure](dynamics_unitofmeasure.md)|unitOfMeasure |Gets the unitofmeasure of the salesInvoiceLine.|
 |[itemVariant](dynamics_itemvariant.md)|itemVariant |Gets the itemvariant of the salesInvoiceLine.|
 |[dimensionSetLines](dynamics_dimensionsetline.md)|dimensionSetLines |Gets the dimensionsetlines of the salesInvoiceLine.|
+|[location](dynamics_location.md)|location |Gets the location of the salesInvoiceLine.|
 
 ## Properties
 
@@ -72,6 +73,7 @@ Represents a sales invoice line in [!INCLUDE[prod_short](../../../includes/prod_
 |netAmountIncludingTax|decimal|The net amount including tax is the total net amount including tax. Read-Only.|
 |shipmentDate|date|The date the item in the line is expected to ship.|
 |itemVariantId|GUID|The ID of the item variant in the sales invoice line.|
+|locationId|GUID||
 
 ## JSON representation
 
@@ -105,7 +107,8 @@ Here is a JSON representation of the salesInvoiceLine resource.
     "netTaxAmount": "decimal",
     "netAmountIncludingTax": "decimal",
     "shipmentDate": "date",
-    "itemVariantId": "GUID"
+    "itemVariantId": "GUID",
+    "locationId": "GUID"
 }
 ```
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
