@@ -178,7 +178,7 @@ The following table lists the Business Central 14 versions and the minimum versi
 
 |Version 14|Version 15|Version 16|Version 17|Version 18|Version 19|Version 20|Version 21|Version 22|
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|
-|[14.0 (GA and cumulative update 01)](https://support.microsoft.com/help/4501146)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) |[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)|
+|[14.0 (GA and cumulative update 01)](https://support.microsoft.com/help/4501146)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|[21.0](https://www.microsoft.com/en-us/download/details.aspx?id=104636) | [22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)|
 |[14.3 (cumulative update 02)](https://support.microsoft.com/help/4514872)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
 |[14.4 (cumulative update 03)](https://support.microsoft.com/help/4515445)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
 |[14.5 (cumulative update 04)](https://support.microsoft.com/help/4518535)|15.0|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
@@ -188,6 +188,8 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.9 (cumulative update 08)](https://support.microsoft.com/help/4536555)|15.3|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
 |[14.10 (cumulative update 09)](https://support.microsoft.com/help/4539529)|15.4|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
 |[14.11 (cumulative update 10)](https://support.microsoft.com/help/4538887)|15.5|16.0|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
+
+
 |[14.12 (cumulative update 11)](https://support.microsoft.com/help/4549677)|[15.6](https://support.microsoft.com/help/4549685)|[16.1](https://support.microsoft.com/help/4549686)|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
 |[14.13 (cumulative update 12)](https://support.microsoft.com/help/4549684)|[15.7](https://support.microsoft.com/help/4564071)|[16.2](https://support.microsoft.com/help/4564072)|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
 |[14.14 (cumulative update 13)](https://support.microsoft.com/help/4564070)|[15.8](https://support.microsoft.com/help/4563406)|[16.3](https://support.microsoft.com/help/4563407)|17.0|18.0|19.0|[20.0](https://www.microsoft.com/en-us/download/details.aspx?id=104062)|21.0|22.0|
