@@ -155,7 +155,7 @@ Creating an instant flow for general use is similar to how you create a flow for
 7. Select the **+ New step** to add actions and other triggers for the flow.
 8. To add [!INCLUDE[prod_short](../includes/prod_short.md)] actions and triggers, search for the **Dynamics 365 Business Central** connector, then select the action or trigger you want to use.
 
-## Troubleshoot why flow isn't in the Automate group
+## Troubleshoot why flow isn't in Automate group
 
 The following table includes the most common problems why an instant flow doesn't appear in the **Automation** group for you or another user.
 
