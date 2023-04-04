@@ -19,8 +19,9 @@ This article describes how to set up Power Automate integration for Business Cen
 
 As an administrator, you can hide the **Automation** item and its actions from all users or individual users, as described in this article.
 
+<!--
 > [!IMPORTANT]
-> This article pertains only to the **Automate** action in the Business Central client. The instructions won't affect users ability to create and run flows directly in Power Automate or what they can do on the [Manage Power Automate Flows](manage-power-automate-flows.md) page in Business Central&mdash;even with flows that interact with Business Central data.
+> This article pertains only to the **Automate** action in the Business Central client. The instructions won't affect users ability to create and run flows directly in Power Automate or what they can do on the [Manage Power Automate Flows](manage-power-automate-flows.md) page in Business Central&mdash;even with flows that interact with Business Central data.-->
 
 ## About access to Power Automate features
 
@@ -42,7 +43,7 @@ For more information about assigning permissions and permissions sets, see [Assi
 
 ## Turn Power Automate features on or off for all users
 
-To turn on Power Automate features as an administrator, you agree to the privacy terms on behalf all users, so they don't have to do it themselves. When you turn on Power Automate for users, the **Automate** item will no longer include the **Get Started with Power Automate** action for user. Instead, the **Automate** item  will include the **Create Flows** and **Manage Flows** actions and links that run exiting flows. 
+To turn on Power Automate features as an administrator, you consent to the privacy terms on behalf all users, so they don't have to do it themselves. When you turn on Power Automate for users, the **Automate** item will no longer include the **Get Started with Power Automate** action for user. Instead, the **Automate** item  will include the **Create Flows** and **Manage Flows** actions and links that run exiting flows. 
 
 There are two ways to you can do this task. One way is to use the **Get Started with Power Automate** action to consent on behalf of all users. The other way is to use the **Privacy Notices Status** page.
 

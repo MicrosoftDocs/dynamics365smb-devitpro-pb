@@ -49,7 +49,7 @@ As an AL developer, you can also add or promote these instant flows to other pla
 
 ### Instant flows that use other manual triggers
 
-You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** action, but they can be run from the **Manage Power Automate Flows** page or from Power Automate.
+You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** action, but they can be run <!--from the **Manage Power Automate Flows** page or -->from Power Automate.
 
 ## Use multiple Power Automate environments
 
@@ -141,7 +141,10 @@ Complete the following steps:
 
 ## Create a flow using other manual triggers
 
-Creating an instant flow for general use is similar to how you create a flow for a selected record. The difference is that you'll have to choose manual trigger. 
+Creating an instant flow for general use is similar to how you create a flow for a selected record. The difference is that you'll have to choose manual trigger.
+
+> [!NOTE]
+> These flows won't show under the **Automate** action in Business Central; even if the flow uses Business Central actions. Only flows that use the "For a selected record (V3)" trigger appear under the **Automate** action.
 
 1. Sign in to [Power Automate](https://powerautomate.com).
 2. Select **Create** from the left side.
@@ -161,5 +164,5 @@ Creating an instant flow for general use is similar to how you create a flow for
 ## See also
 
 [Manage Power Automate Flows](manage-power-automate-flows.md)  
-[Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)   
+[Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)
 [Use Business Central in an Automated Workflow](/dynamics365/business-central/across-how-use-financials-data-source-flow)<!--keep an eye out for redirects-->  
