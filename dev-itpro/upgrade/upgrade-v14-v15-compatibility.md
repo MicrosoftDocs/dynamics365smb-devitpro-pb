@@ -217,8 +217,6 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.38 (cumulative update 37)](https://support.microsoft.com/help/5016301)|None|None|None|[18.16](https://support.microsoft.com/help/5017015)|[19.10](https://support.microsoft.com/help/5017016)|[20.4](https://support.microsoft.com/help/5017017)|21.0|22.0|
 |[14.39 (cumulative update 38)](https://support.microsoft.com/help/5017014)|None|None|None|[18.17](https://support.microsoft.com/help/5017793)|[19.11](https://support.microsoft.com/help/5017794)|[20.5](https://support.microsoft.com/help/5017795)|21.0|22.0|
 |[14.40 (cumulative update 39)](https://support.microsoft.com/help/5017792)|None|None|None|[18.18](https://support.microsoft.com/help/5019239)|[19.12](https://support.microsoft.com/help/5019240)|[20.6](https://support.microsoft.com/help/5019241)|21.0|22.0|
-
-
 |[14.41 (cumulative update 40)](https://support.microsoft.com/help/5019238)|None|None|None|None|[19.13](https://support.microsoft.com/help/5021003)|[20.7](https://support.microsoft.com/help/5021002)|[21.1](https://support.microsoft.com/help/5021004)|22.0|
 |[14.42 (cumulative update 41)](https://support.microsoft.com/help/5021001)|None|None|None|None|[19.14](https://support.microsoft.com/help/5021670)|[20.8](https://support.microsoft.com/help/5021002)|[21.2](https://support.microsoft.com/help/5021672)|22.0|
 |[14.43 (cumulative update 42)](https://support.microsoft.com/help/5021669)|None|None|None|None|[19.5](https://support.microsoft.com/help/5022712)|[20.9](https://support.microsoft.com/help/5022713)|[21.3](https://support.microsoft.com/help/5022714)|22.0|
