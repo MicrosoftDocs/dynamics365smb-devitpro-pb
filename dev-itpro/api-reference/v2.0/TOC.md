@@ -1,15 +1,15 @@
 # API for Dynamics 365 Business Central v2.0
-## [API v2.0 Overview](index.md)
+## [API v2.0 overview](index.md)
 ## [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)
 ## [Endpoints for the APIs](endpoints-apis-for-dynamics.md)
-## [Working with Webhooks](dynamics-subscriptions.md)
-## [Operational Limits for Business Central Online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
+## [Working with webhooks](dynamics-subscriptions.md)
+## [Operational limits for Business Central online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
 ## [Working with API limits in Dynamics 365 Business Central](dynamics-rate-limits.md)
-## [Getting a List of Environments](../../webservices/api-get-environments.md)
+## [Getting a list of environments](../../webservices/api-get-environments.md)
 ## [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)
-## [Using Filtering](../../developer/devenv-connect-apps-filtering.md)
+## [Using filtering](../../developer/devenv-connect-apps-filtering.md)
 <!-- ## [OpenAPI Specification](dynamics-open-api.md) -->
-## [Error Codes](dynamics-error-codes.md)
+## [Error codes](dynamics-error-codes.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ## [Account](resources/dynamics_account.md)
