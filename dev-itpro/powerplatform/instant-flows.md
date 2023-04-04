@@ -155,7 +155,7 @@ Creating an instant flow for general use is similar to how you create a flow for
 7. Select the **+ New step** to add actions and other triggers for the flow.
 8. To add [!INCLUDE[prod_short](../includes/prod_short.md)] actions and triggers, search for the **Dynamics 365 Business Central** connector, then select the action or trigger you want to use.
 
-## Troubleshoot why a flow isn't available in the Automate group
+## Troubleshoot why flow isn't in the Automate group
 
 The following table includes the most common problems why an instant flow doesn't appear in the **Automation** group for you or another user.
 
@@ -169,7 +169,7 @@ The following table includes the most common problems why an instant flow doesn'
 | You don't have a premium Power Automate license| Get a premium license. For more information, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).|The owner of the flow must have Power Automate premium license.|
 
 > [!TIP]
-> There can also be other reasons why the flow isn't showing. The best way to determine why is to open the flow details page in Power Automate. Power Automate will, in most cases, indicate why the flow isn't working. 
+> There can also be other reasons why the flow isn't showing. One way to determine why is to open the flow details page in Power Automate. Power Automate will, in most cases, indicate the reason the flow isn't working. 
 
 ## Next steps
 
