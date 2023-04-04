@@ -49,7 +49,7 @@ As an AL developer, you can also add or promote these instant flows to other pla
 
 ### Instant flows that use other manual triggers
 
-You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** action, but they can be run <!--from the **Manage Power Automate Flows** page or -->from Power Automate.
+You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** group on the action bar, but they can be run <!--from the **Manage Power Automate Flows** page or -->from Power Automate.
 
 ## Use multiple Power Automate environments
 
@@ -68,7 +68,7 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 
 ## Create a flow using the "For a selected record (V3)"
 
-This procedure outlines that steps required to create an instant flow that will appear in the **Automate** action by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
+This procedure outlines that steps required to create an instant flow that will appear in the **Automate** group in the action bar by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
 
 The flow in Power Automate will look something like this:
 
@@ -144,7 +144,7 @@ Complete the following steps:
 Creating an instant flow for general use is similar to how you create a flow for a selected record. The difference is that you'll have to choose manual trigger.
 
 > [!NOTE]
-> These flows won't show under the **Automate** action in Business Central; even if the flow uses Business Central actions. Only flows that use the "For a selected record (V3)" trigger appear under the **Automate** action.
+> These flows won't show in the **Automate** group on the action bar in Business Central; even if the flow uses Business Central actions. Only flows that use the "For a selected record (V3)" trigger appear in the **Automate** group.
 
 1. Sign in to [Power Automate](https://powerautomate.com).
 2. Select **Create** from the left side.
@@ -154,6 +154,18 @@ Creating an instant flow for general use is similar to how you create a flow for
 6. Select **Create**.
 7. Select the **+ New step** to add actions and other triggers for the flow.
 8. To add [!INCLUDE[prod_short](../includes/prod_short.md)] actions and triggers, search for the **Dynamics 365 Business Central** connector, then select the action or trigger you want to use.
+
+## Troubleshoot why flow isn't available in the Automate group
+
+The following table includes the most common problems why an instant flow doesn't appear in the **Automation** menu for you or another user.
+
+|Cause|Fix|Reason|
+|-|-|-|
+|The flow doesn't use the "For a selected record (V3)" trigger|Change the flow to use the "For a selected record (V3)" trigger|Only flows that use the "For a selected record" trigger will show in the **Automate** menu.|
+|The "For a selected record (V3)" trigger parameter settings for environment, company, page, or tables don't match what user is currently on.|Check that the parameter settings in the “For a selected record” trigger match the environment, company, page, or table the user is on.|A mismatch in parameters is preventing the flow from being displayed.|
+|The flow is turned off in Power Automate|Open the flow Power Automate and verify the flow is turned on. For more information, see [Turn flows on or off](/power-automate/disable-flow). If the flow can't be turned on because of an error, then fix the error, save the flow, and ensure that the flow is turned on. |[!INCLUDE[prod_short](../includes/prod_short.md)] won't shoe flows that a turned off in Power Automate.|
+|The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
+|The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 an earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
 
 ## Next steps
 
