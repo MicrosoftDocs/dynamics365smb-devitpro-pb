@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 10/14/2022
 ms.custom: bap-template 
 ---
-# Set Up Automated Flows
+# Create automated flows
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 

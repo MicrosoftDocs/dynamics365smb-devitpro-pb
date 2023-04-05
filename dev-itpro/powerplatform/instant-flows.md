@@ -1,5 +1,5 @@
 ---
-title: Manually Switch on Instant Flows
+title: Set Up Instant Flows
 description: Learn how users can run instant flows from inside Business Central online due to the integration with Power Automate.
 author: jswymer
 ms.author: jswymer
@@ -10,7 +10,7 @@ ms.date: 09/04/2022
 ms.custom: bap-template 
 ---
 
-# Set Up Instant Flows
+# Create instant flows
 
 Unlike automated flows that run automatically when an event occurs, instant flows are run manually by users from inside [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate. 
 
