@@ -83,8 +83,9 @@ Complete the following steps:
    1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
    2. Open the list, card, or document page.
    3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
+   4. On the **Create flow** , you can do 
 
-   You're automatically signed in to Power Automate, but from the **Manage Power Automate Flows** page, you'll work in the page itself.
+    You're automatically signed in to Power Automate, but from the **Manage Power Automate Flows** page, you'll work in the page itself.
 
    # [From Power Automate](#tab/pa)
 
