@@ -34,7 +34,7 @@ A string of request page parameters as XML to use to run the report. The paramet
 
 *Format*  
 &emsp;Type: [ReportFormat](../reportformat/reportformat-option.md)  
-The type of file to save the report as. The following options are supported: Pdf, Excel, Word, and XML.  
+The type of file to save the report as. The following options are supported: Pdf, Excel, Word, and XML. Html is supported only with Word layouts.  
 
 *OutStream*  
 &emsp;Type: [OutStream](../outstream/outstream-data-type.md)  
