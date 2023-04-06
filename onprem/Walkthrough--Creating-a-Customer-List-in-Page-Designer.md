@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ea8f5be6-3afd-42e3-badc-c956e369cc0b
 caps.latest.revision: 27
-manager: edupont
 ---
 # Walkthrough: Creating a Customer List in Page Designer
 In this walkthrough, you will learn how to create a basic page that displays a list of customers.  

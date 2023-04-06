@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 823b5ae0-a87d-4b5b-9ea7-f57be064c598
 caps.latest.revision: 12
-manager: edupont
 ---
 # Import Worksheet
 When you import objects from a binary file \(.fob\), if there are conflicts with objects that exist in the database with the same ID, then you use the Import Worksheet to resolve the conflicts. If the import file contains only objects that are new, then the objects are imported.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 83e91e6d-6fe7-44f8-b695-2a13b058d21c
 caps.latest.revision: 19
-manager: edupont
 ---
 # Walkthrough: Uploading a File from a Client to Microsoft Dynamics NAV Server
 This walkthrough demonstrates how to use file functions to send a file from a client to the server, use stream functions to read the file, and use an XMLport to load values into the database. Business logic in [!INCLUDE[navnow](includes/navnow_md.md)] runs on [!INCLUDE[nav_server](includes/nav_server_md.md)] instead of on the client. As a result, any business logic that reads data from a file needs to first move a copy of that file from the client to the server.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 17928084-4d9a-4865-a4cc-3fe35c5b5809
 caps.latest.revision: 5
-manager: edupont
 ---
 # Debugger Keyboard Shortcuts
 The following table describes the keyboard shortcuts that are available from the **Debugger** window.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9f1b5e9e-4167-4d57-bb0f-498587530ec7
 caps.latest.revision: 18
-manager: edupont
 ---
 # Exposing Methods and Properties in a Windows Client Control Add-in
 Control add-ins let you add custom user interface \(UI\) controls to pages in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. By using the basic control add-in definition interfaces, a control add-in is bound to a page only through the field that is applied with the control add-in. It is also bound to the page through the [SourceExpr Property](SourceExpr-Property.md), the [OnControlAddin Trigger](OnControlAddin-Trigger.md), and other triggers for exposed events. To extend UI controls on a page, you can expose methods and properties in a control add-in assembly so that they can be called by C/AL code on most page triggers.  

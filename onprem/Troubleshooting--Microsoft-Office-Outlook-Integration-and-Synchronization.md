@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e921e9d1-e22e-42e8-b827-e534f8fe98f3
 caps.latest.revision: 28
-manager: edupont
 ---
 # Troubleshooting: Microsoft Office Outlook Integration and Synchronization
 This topic lists some common problems that can occur when you use the Microsoft Office Outlook Add-in.  

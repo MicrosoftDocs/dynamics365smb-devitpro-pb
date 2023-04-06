@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: d764e6f2-42ae-46ab-a866-cfc30276d3db
 caps.latest.revision: 9
-manager: edupont
 ---
 # Interactive Timeline Business Data Visualization Overview
 This topic provides an overview of the various features in the timeline visualization add-in.  

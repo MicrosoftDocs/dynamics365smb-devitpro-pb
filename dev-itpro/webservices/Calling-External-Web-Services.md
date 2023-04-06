@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: ef7ae394-7cae-4eb4-a9a4-75b39ca1a2b6
 caps.latest.revision: 4
-manager: edupont
 ---
 # Calling External Web Services
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)], you can use the Windows Communication Foundation, which provides a set of reliable objects for calling web services to use with .NET Framework interoperability.  

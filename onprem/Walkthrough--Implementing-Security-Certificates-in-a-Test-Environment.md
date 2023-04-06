@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 509a745a-f9ac-4a4f-b8b1-099bf2f0dfd6
 caps.latest.revision: 39
-manager: edupont
 ---
 # Walkthrough: Implementing Security Certificates in a Test Environment
 In this walkthrough, you set up an environment to test integrating certificates into a configuration for connecting computers running the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] to [!INCLUDE[nav_server](includes/nav_server_md.md)] instances over a wide area network \(WAN\) with the chain trust configuration.  

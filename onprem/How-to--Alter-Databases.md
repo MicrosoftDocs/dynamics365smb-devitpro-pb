@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0aa2c178-eea8-41bf-aecd-87d71552b4c6
 caps.latest.revision: 12
-manager: edupont
 ---
 # How to Alter Databases in Dynamics NAV
 You can change the database property settings that you selected when you created the database.  

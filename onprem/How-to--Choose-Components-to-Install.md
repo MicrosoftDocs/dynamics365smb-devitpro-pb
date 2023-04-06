@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c6cc9c70-5a11-4097-8e7b-ae671b349afb
 caps.latest.revision: 24
-manager: edupont
 ---
 # Choosing Installation Components in Dynamics NAV
 When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you can install a predefined component package. These packages are called [Installation Options](Installation-Options.md). If you have to modify the set of components that are included in an existing installation option, then you can choose **Customize** under any installation option. If you want to install components that are not all available in a predefined installation option, then you can choose **Custom Components**.  

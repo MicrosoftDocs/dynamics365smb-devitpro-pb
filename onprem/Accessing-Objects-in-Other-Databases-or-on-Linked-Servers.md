@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 3f9989fc-78ed-4f39-8251-caf6c672f01b
 caps.latest.revision: 10
-manager: edupont
 ---
 # Accessing Objects in Other Databases or on Linked Servers
 You can access objects outside the current database or server from [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] by linking to an appropriately defined view in the current database. You can create a view definition outside of [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] that accesses data on SQL Server linked servers, which can access heterogeneous data sources. This could, for example, involve performing a join of an Oracle table, a Microsoft Office Access table, or a Microsoft Office Excel spreadsheet.  

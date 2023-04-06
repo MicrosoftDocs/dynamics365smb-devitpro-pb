@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 29c2d105-7602-4a32-85b9-9bf31390291c
 caps.latest.revision: 15
-manager: edupont
 ---
 # How to: Apply Conditional Visibility Controls
 Some reports have data that is printed conditionally. For example, if the request page for the report has a **Show Address Details** check box, then the address details are printed only if the check box is selected. Another example is a report that could show data based on a value such as a balance. If the balance is 0, then the report does not show the balance. To specify conditional visibility in an RDLC report layout, use an expression on the **Visibility** property of the report item or table row.  

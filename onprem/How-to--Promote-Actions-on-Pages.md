@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: dbea328b-8093-4ce6-ba89-71e79b647370
 caps.latest.revision: 23
-manager: edupont
 ---
 # How to: Promote Actions on Pages
 Actions that appear in the **Home** tab of the ribbon are called *promoted actions*. Promoted actions are copies of existing actions that are defined in the other tabs, such as **Actions**, **Navigate**, and **Reports**. Promoted actions provide quick access to common tasks, because a page always opens on the Home tab so users do not have to look through other tabs to find them. For example, on the **Customer Card** page, you can promote an action to create a new sales order to help the salespeople do their work, because creating sales orders is one of their most important daily tasks.  

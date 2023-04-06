@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5e6a0140-2b4f-4c8d-8c33-cf08a00a3dc8
 caps.latest.revision: 12
-manager: edupont
 ---
 # Updating Custom Report Layouts by Using Upgrade Codeunits
 You can update custom report layouts by creating upgrade codeunits to handle changes in report datasets that affect the report layouts. Upgrade codeunits enable you to programmatically update multiple custom report layouts in the database to changes in report datasets. Although report layout updates can be done from the [!INCLUDE[navnow](includes/navnow_md.md)] client, there are certain changes to the dataset that require the user to manually modify report layouts before they can be used. These types of changes include, for example, deleted fields or field name conflicts as a result of renaming. Upgrade codeunits enable you handle these breaking changes to report datasets and layouts without requiring end-user interaction.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ca39f91c-d1e5-47f4-8411-baad6af0a411
 caps.latest.revision: 47
-manager: edupont
 ---
 # Walkthrough: Creating a Wizard Page
 In [!INCLUDE[navnow](includes/navnow_md.md)], you can use the NavigatePage page type to create a wizard page. A wizard page consists of a number of user input screens or steps linked together, enabling users to carry out infrequently performed tasks, such as configuration or specific business tasks. Examples of wizard pages in [!INCLUDE[navnow](includes/navnow_md.md)] are Assisted Company Setup Wizard, page 1803 and Create Opportunity, page 5126.  

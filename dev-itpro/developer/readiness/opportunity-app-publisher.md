@@ -2,7 +2,6 @@
 title: The SMB opportunity for app publishers 
 description: Learn about the business opportunity we see for software companies in the SMB space if you build your solution on Dynamics 365 Business Central.
 author: edupont04
-manager: edupont
 
 ms.topic: conceptual
 ms.date: 05/30/2022

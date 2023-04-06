@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 82a210a7-f42a-4fc2-8d27-d9a8c89bd38c
 caps.latest.revision: 19
-manager: edupont
 ---
 # Printing Reports
 You can specify page settings and page orientation for a printed report from the following UI locations:  

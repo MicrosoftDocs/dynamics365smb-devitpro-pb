@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 88e06b5a-ca23-44ec-968f-8bc693c19a1d
 caps.latest.revision: 8
-manager: edupont
 ---
 # Using Arrays
 An *array* is a data structure that contains several variables of the same type. The variables are treated as a single collection. Although you can already create arrays in C/AL, you can now use arrays from the .NET Framework. Choosing whether to use a C/AL array or a .NET Framework array depends on how you intend to use the data.  

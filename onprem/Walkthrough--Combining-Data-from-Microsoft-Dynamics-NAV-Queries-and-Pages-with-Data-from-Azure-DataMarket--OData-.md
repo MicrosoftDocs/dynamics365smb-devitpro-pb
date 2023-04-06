@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0b5f1e2c-b748-48e2-b201-bc3b02ffe3e1
 caps.latest.revision: 28
-manager: edupont
 ---
 # Walkthrough: Combining Data from Microsoft Dynamics NAV Queries and Pages with Data from Azure DataMarket (OData)
 This walkthrough describes how you can use OData to combine data from [!INCLUDE[navnowlong](../developer/includes/navnowlong_md.md)] with data from Microsoft Azure Markeplace.  

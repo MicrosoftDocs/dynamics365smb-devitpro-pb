@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1e7bf9c4-3c2b-4288-b55f-da89d940051d
 caps.latest.revision: 6
-manager: edupont
 ---
 # Running 32-Bit Microsoft Dynamics Windows Client on 64-Bit Windows
 On a 64-bit version of a Windows operating system, a 64-bit version of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] runs by default. The 64-bit version is suitable for most installations. It has an advantage over the 32-bit version because of its memory allocation capabilities, which is especially useful when running several large reports. However, if an application uses 32-bit components, such as COM technologies and 32-bit .NET Framework components, these components will not work in the 64-bit version of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. In this case, you must run the 32-bit version of the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  

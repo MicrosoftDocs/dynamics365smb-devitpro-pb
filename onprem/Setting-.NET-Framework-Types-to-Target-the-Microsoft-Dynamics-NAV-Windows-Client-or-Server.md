@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 631f5c0e-5be3-4e24-87b0-6d01278e0786
 caps.latest.revision: 8
-manager: edupont
 ---
 # Setting .NET Framework Types to Target the Microsoft Dynamics NAV Windows Client or Server
 To extend a [!INCLUDE[navnow](includes/navnow_md.md)] object by using .NET Framework interoperability, you define a C/AL variable that calls members of a .NET Framework type in an assembly. When the variable is called from the C/AL code of the [!INCLUDE[navnow](includes/navnow_md.md)] object, it creates an instance of the .NET Framework type. You can set the type instance to target the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] \(client-side object\) or [!INCLUDE[nav_server](includes/nav_server_md.md)] \(server-side object\). By default, a type is set to target [!INCLUDE[nav_server](includes/nav_server_md.md)]. However, you can set the type to target the [!INCLUDE[rtc](includes/rtc_md.md)].  

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6cad9163-edd9-45e2-84ea-b59e33fdb481
 caps.latest.revision: 2
-manager: edupont
 ---
 # How to Specify the Default Built-in Report Layout in Dynamics NAV
 You can specify whether a report uses a built-in RDLC or Word report layout as the default layout.  

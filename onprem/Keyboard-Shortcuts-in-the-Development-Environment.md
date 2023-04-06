@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 401cd322-edc6-4bba-9517-bf99f9fee47c
 caps.latest.revision: 6
-manager: edupont
 ---
 # Keyboard Shortcuts in Dynamics NAV Development Environment
 The following table provides an overview of shortcut key combinations in the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)].  

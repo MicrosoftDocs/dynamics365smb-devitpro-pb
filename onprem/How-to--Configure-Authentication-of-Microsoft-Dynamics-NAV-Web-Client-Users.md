@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c9e0dd2b-1f7f-417d-a9ca-a08ef2f22d26
 caps.latest.revision: 37
-manager: edupont
 ---
 # Configuring Dynamics NAV Web Client Users Authentication
 You can configure the [!INCLUDE[navnow](../developer/includes/navnow_md.md)] installation to authenticate users who connect by using the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] on one of the following credential types.  

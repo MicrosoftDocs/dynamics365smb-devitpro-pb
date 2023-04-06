@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8bfff70e-a3ac-4a5e-aa04-092473a1559e
 caps.latest.revision: 14
-manager: edupont
 ---
 # SQL Join Types for Queries
 With queries, you can link data items together to combine data from records in two or more tables into a single dataset. Tables are defined by data items. To create a link between data items, you set the [DataItemLinkType Property](DataItemLinkType-Property.md) of a data item in Query Designer. The DataItemLinkType property controls which records to include or exclude from resulting dataset based on the conditions of the [DataItemLink Property \(Reports\)](DataItemLink-Property--Reports-.md). The DataItemLinkType property includes the **SQL Advanced Options** value that you can use create links that correspond to joins in SQL select statements. For more general information about linking data items, see [Understanding Data Item Links](Understanding-Data-Item-Links.md).  

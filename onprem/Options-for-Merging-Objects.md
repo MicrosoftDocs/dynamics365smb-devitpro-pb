@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5b6834f0-204a-474a-a6c5-23229838630d
 caps.latest.revision: 5
-manager: edupont
 ---
 # Options for Merging Objects
 The following sequence of events shows when objects are merged:  

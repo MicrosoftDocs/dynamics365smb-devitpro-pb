@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 017f2aa5-5d9a-4dde-819c-53ef702f2f62
 caps.latest.revision: 6
-manager: edupont
 ---
 # Configuring the Web Browser for the Microsoft Dynamics NAV Web Client
 There are several different web browsers that you can use to open the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. No matter which browser you use, it must be enabled with *cookies* and *JavaScript*. Cookies are small files that are stored on your computer and contain information about the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)]. JavaScript is a programming language for making web pages interactive.  

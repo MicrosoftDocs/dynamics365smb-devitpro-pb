@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 28076d19-b29f-4db2-96f8-4ab3900855ce
 caps.latest.revision: 3
-manager: edupont
 ---
 # Code Changes While Debugging
 While you are debugging, you may want to edit code, compile, and save objects. In this case, you must know which version of the code that the debugger executes and displays.  

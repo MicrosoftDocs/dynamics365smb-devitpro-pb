@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0d2dbceb-a1e1-44ff-8d6e-2d7bc102a998
 caps.latest.revision: 8
-manager: edupont
 ---
 # Troubleshooting: Reports that are saved as Excel or Word files are blank
 While you are viewing a report in **Print Preview** in the [!INCLUDE[nav_web](includes/nav_web_md.md)], you save the report as a Microsoft Excel or Microsoft Word file. When you open the saved file, it is empty.  

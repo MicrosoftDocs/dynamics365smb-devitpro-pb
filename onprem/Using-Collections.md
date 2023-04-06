@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 302553e5-08c3-46d0-9c43-65f9e76f9c3c
 caps.latest.revision: 3
-manager: edupont
 ---
 # Using Collections
 In [!INCLUDE[prodshort](includes/prodshort.md)], a common development task is to write code that loops through a set of records and performs an operation on each record in the set. You can do the same task in the .NET Framework with a *collection*, which is a .NET Framework object that you can iterate over. To loop through a collection in [!INCLUDE[prodshort](includes/prodshort.md)], the .NET Framework object must support the [System.Collections](https://go.microsoft.com/fwlink/?LinkID=203729&clcid=0x409) interface. Many types in the .NET Framework and assemblies that inherit from .NET Framework types support the `System.Collections` interface. The following example shows how you can write AL code to handle collections for a type that supports the `System.Collections` interface.  

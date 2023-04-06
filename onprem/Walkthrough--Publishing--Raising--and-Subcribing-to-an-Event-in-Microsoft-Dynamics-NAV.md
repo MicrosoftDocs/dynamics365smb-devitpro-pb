@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 28c99fd4-223e-4616-a13c-1e4205001bf8
 caps.latest.revision: 9
-manager: edupont
 ---
 # Walkthrough: Publishing, Raising, and Subcribing to an Event in Microsoft Dynamics NAV
 This walkthrough uses a simple example scenario to demonstrate how to program events in the application.  

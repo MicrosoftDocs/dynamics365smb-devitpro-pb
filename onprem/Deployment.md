@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0b0afe27-af2f-4172-b971-b4dd076d187a
 caps.latest.revision: 31
-manager: edupont
 ---
 # Deployment
 The topics in the Deployment node are intended to help an administrator install and configure [!INCLUDE[navnowlong](includes/navnowlong_md.md)] software.  

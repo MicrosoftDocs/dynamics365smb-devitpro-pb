@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: d8cd18ba-702c-47aa-a52e-260799937fe2
 caps.latest.revision: 18
-manager: edupont
 ---
 # How to: Define Promoted Action Categories Captions for the Ribbon
 *Promoted actions* are actions that are displayed in the ribbon of the [!INCLUDE[rtc](includes/rtc_md.md)]. You can organize promoted actions into different categories, where each category is indicated by a caption in the ribbon. You define up to 10 categories for a page. The following figure illustrates a page that has promoted actions under the following categories:  

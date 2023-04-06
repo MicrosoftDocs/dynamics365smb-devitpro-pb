@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8a467932-73ef-498d-b61e-3dbb9f04519d
 caps.latest.revision: 7
-manager: edupont
 ---
 # Event Errors
 When the runtime detects raised publisher events, it tries to identify subscribers for handling the events. If event subscribers are not correctly configured to subscribe to published events, errors will occur. For example, errors can occur when an event subscriber points to a non-existing event publisher object or function, or there is a mismatch between the signatures of an event publisher and subscriber functions. When errors occur, the event subscriber function for handling the event is disabled and tagged with an error in the database, which you can view from the **Event Subscriptions** page. For more information, see [How to: View the Event Subscriptions](How-to--View-the-Event-Subscriptions.md).  

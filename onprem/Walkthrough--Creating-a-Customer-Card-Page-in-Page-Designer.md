@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 945d1af3-e644-48b4-a0cf-73bbbf577152
 caps.latest.revision: 41
-manager: edupont
 ---
 # Walkthrough: Creating a Customer Card Page in Page Designer
 In this walkthrough, you learn how to create a card page to display customer details. A card page is used to display more detailed information than is available on a list page. You can link a list page to a card page so that when you select a customer in the list, you open a specific customer card page.  
