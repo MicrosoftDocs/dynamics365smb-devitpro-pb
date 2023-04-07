@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b28a3cb1-b8be-4cf7-b6a8-c69afd8ad45b
 caps.latest.revision: 9
-manager: edupont
 ---
 # Extending Microsoft Dynamics NAV Using COM
 This section describes how you can extend the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] by using Component Object Model \(COM\) technologies. The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] supports Automation servers by acting as an Automation controller and using OCXs \(custom controls\).  

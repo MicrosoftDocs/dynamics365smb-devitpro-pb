@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 095b6c75-5ad6-4145-abcd-f5baea6f5b0d
 caps.latest.revision: 11
-manager: edupont
 ---
 # Customizing Report Layout Implementation in Codeunit 1
 Reports can be run directly from the [!INCLUDE[navnow](includes/navnow_md.md)] client or from C/AL code by calling the RUN, SAVEASWORD, SAVEASPDF, or SAVEASEXCEL functions. When a report is run, the application calls the following functions in codeunit 1 to determine which report layout to use on the report.  

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9f0f5de5-846e-44ae-a1d4-5f34bed9c792
 caps.latest.revision: 9
-manager: edupont04
 ---
 # ImportTranslate
 Imports UI text strings for objects from a text file to a specified [!INCLUDE[navnow](includes/navnow_md.md)] database.  

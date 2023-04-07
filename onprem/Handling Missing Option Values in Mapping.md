@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: SorenGP
-manager: edupont
 ---
 # Handling Missing Option Values in Mapping
 [!INCLUDE[crm_md](includes/crm_md.md)] contains only three so-called option set fields that contain option values, which can be mapped to [!INCLUDE[navnow_md](includes/navnow_md.md)] fields of type Option for automatic synchronization. During synchronization, such non-mapped options are ignored, the missing options are appended to the related [!INCLUDE[navnow_md](includes/navnow_md.md)] table and added to the **CRM Option Mapping** system table for manual handling later, for example by adding the missing options in either product and then updating the mapping. This is described in the following.

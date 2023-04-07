@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 4070244f-e203-4c2f-b157-628ce4f871a2
 caps.latest.revision: 13
-manager: edupont
 ---
 # Sizing a Control Add-in on a Page
 By default, the size of a control add-in on a page is determined by the [System.Drawing.Size](assetId:///T:System.Drawing.Size) class of the control. The size is static, so when the page is resized in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], the control add-in size will remain the same.  

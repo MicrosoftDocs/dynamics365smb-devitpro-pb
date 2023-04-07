@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6a8d6302-714b-4af0-8019-970572a79a7b
 caps.latest.revision: 32
-manager: edupont04
 ---
 # Demo Option
 The **Install Demo** option is available on the first page after you accept the Microsoft Software License Terms in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup. When you choose **Install Demo**, Setup installs all three tiers of the [Product and Architecture Overview](Product-and-Architecture-Overview.md) on the local computer.  

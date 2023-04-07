@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 71cfa27c-b7c5-4d34-8ff2-618eae92dded
 caps.latest.revision: 13
-manager: edupont
 ---
 # Arranging Fields in Rows and Columns Using a FixedLayout Control
 This topic describes the layout and behavior of fields in a FixedLayout control on a page. You use the FixedLayout control to arrange page fields in rows and columns, similar to a matrix, except that the FixedLayout control contains a specific number of fields, and a matrix can contain an unspecified number of fields. You typically use the FixedLayout control to display statistical data in a FastTab on a page or information in the details section of a Worksheet page. If you are using the [!INCLUDE[demolong](includes/demolong_md.md)], then you can see examples of these uses in page 151, Customer Statistics, and page 40, Item Journal.  

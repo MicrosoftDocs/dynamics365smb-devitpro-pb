@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 030da0c5-dc31-4002-8f2f-b47de752c201
 caps.latest.revision: 4
-manager: edupont
 ---
 # How to: Import and Export a Word Report Layout
 From the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], you can import and export built-in Word report layouts of report objects as Word document files \(.docx file type\). This enables you to modify a built-in Word report layout on a report. For example, you can export a built-in Word report layout to a file on your computer or network. Then, you open the file in Word and modify the report layout. Finally, you import the file back to the report object. The existing built-in Word report layout on the report is overwritten by the content in the imported file.  

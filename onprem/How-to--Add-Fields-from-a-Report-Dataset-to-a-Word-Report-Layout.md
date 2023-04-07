@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6ea719bd-b8d3-4bef-81d2-4d7784294a8d
 caps.latest.revision: 5
-manager: edupont
 ---
 # How to Add Fields from Report Dataset to Word Report Layout in Dynamics NAV
 A report dataset can consist of fields that display labels, data, and images. This topic describes procedure for adding fields of a report dataset to an existing Word layout of a report. You add fields by using the Word custom XML part for the report and adding content controls that map to the fields of the report dataset. For more information about custom XML parts, see [Custom XML Part Overview for Word Report Layouts](Custom-XML-Part-Overview-for-Word-Report-Layouts.md).  

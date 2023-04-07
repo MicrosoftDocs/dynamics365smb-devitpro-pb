@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: dd9e5a21-eb54-498d-9222-c31317d2050f
 caps.latest.revision: 4
-manager: edupont
 ---
 # Altering Databases - General Tab
 Shows the name of the currently opened database and the name of the SQL Server instance on which the currently opened database is stored. You cannot change the contents of this tab.  

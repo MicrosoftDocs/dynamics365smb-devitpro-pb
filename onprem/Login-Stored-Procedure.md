@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e51414a7-0414-43f7-9069-00f2ce3f459f
 caps.latest.revision: 12
-manager: edupont
 ---
 # Login Stored Procedure
 A login stored procedure is a stored procedure that you can use to perform predefined functions after a user logs on to the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)]. A typical function would be to generate a message that informs the user that the database is currently in single-user mode so that an administrator can perform database maintenance tasks and is therefore inaccessible.  

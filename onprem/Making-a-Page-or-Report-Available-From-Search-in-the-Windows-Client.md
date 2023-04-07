@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 11869f85-b502-4348-879e-11e482b574f8
 caps.latest.revision: 5
-manager: edupont
 ---
 # Making a Page or Report Available From Search in the Windows Client
 The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] includes a **Search** box that lets users find pages and reports based on the objects name. The search feature finds only pages and reports that can be accessed from the navigation pane, which includes the **Home** button, **Activity** buttons, and Departments. If you want to make a page or report available from the **Search** box, then add it to the **Home** button, an **Activity** button, or Departments.  

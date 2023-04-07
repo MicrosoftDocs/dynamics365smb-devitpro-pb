@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 143a477f-63a9-4a95-b6b0-b4b4dfec5a61
 caps.latest.revision: 9
-manager: edupont
 ---
 # Microsoft Dynamics Online Connect
 If your installation includes both the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[demolong](includes/demolong_md.md)], then you have the option of offering Microsoft Dynamics Online Connect to client users. Microsoft Dynamics Online Connect is a Web service that displays Microsoft Dynamics product and business information from online sources such as CustomerSource and the Microsoft Dynamics online community and provides links into those online sources. The actual list of links is customized for each Role Center.  

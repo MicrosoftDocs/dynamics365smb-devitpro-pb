@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 2d721218-fa9e-4140-bca3-c479438e8212
 caps.latest.revision: 30
-manager: edupont
 ---
 # Microsoft Dynamics NAV Server Administration Tool
 The [!INCLUDE[nav_admin](includes/nav_admin_md.md)] is a Microsoft Management Console \(MMC\) snap-in for creating and managing [!INCLUDE[nav_server](includes/nav_server_md.md)] instances. When you install the [Server Option](Server-Option.md) on a computer, the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] is one of the default features. The [!INCLUDE[nav_admin](includes/nav_admin_md.md)] is also an option when you install the [Client Option](Client-Option.md), although it is not one of the default components.  

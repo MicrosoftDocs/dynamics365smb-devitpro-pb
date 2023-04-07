@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9f90e574-1bdd-4ffc-8a2f-0b417c64b686
 caps.latest.revision: 3
-manager: edupont
 ---
 # Troubleshooting: Import-NAVEncryptionKey Cmdlet: The path to Windows Communication Foundation was not found on the service tier
 If the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance is on an Azure virtual machine that is running Windows Server 2012 R2, you get the following error when you run the Import-NAVEncryptionkey cmdlet:  

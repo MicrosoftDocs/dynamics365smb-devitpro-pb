@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: f376c70f-7fda-48a9-b67b-1afdcb7eed73
 caps.latest.revision: 19
-manager: edupont
 ---
 # Cash Flow Chart Example
 This code example demonstrates how to use the Business Data Chart control add-in to create a chart that displays a cash flow forecast as shown in the following figure:  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 4fdf1f02-5039-444e-aa8e-ac7b9b206629
 caps.latest.revision: 47
-manager: edupont
 ---
 # Walkthrough: Designing a Customer List Report
 In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], creating new reports is divided into the following phases:  

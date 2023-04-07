@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: dc009e79-2dcf-41c6-8d83-85e225879a91
 caps.latest.revision: 8
-manager: edupont
 ---
 # Setting Up Colored Indicators on Cues by Using Codeunit 1
 Codeunit 1 Application Management includes the **GetCueStyle** trigger that enables you to set up Cues with indicators that change color based on the value in the Cue.  

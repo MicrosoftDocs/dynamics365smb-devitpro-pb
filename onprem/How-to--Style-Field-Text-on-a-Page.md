@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6221826a-8c26-42c0-b1cb-affdf81dbfaa
 caps.latest.revision: 20
-manager: edupont
 ---
 # How to: Style Field Text on a Page
 A page field control includes the [Style Property](Style-Property.md) that you use to format the text that displays in a page field. The **Style** property has ten values that apply different formats to field text.  

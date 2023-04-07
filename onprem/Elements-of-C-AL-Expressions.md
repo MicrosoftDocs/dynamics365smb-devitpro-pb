@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 49b92f61-2e22-4405-810c-837ac97ed636
 caps.latest.revision: 6
-manager: edupont
 ---
 # Elements of C/AL Expressions
 All expressions in C/AL are built from the following:  

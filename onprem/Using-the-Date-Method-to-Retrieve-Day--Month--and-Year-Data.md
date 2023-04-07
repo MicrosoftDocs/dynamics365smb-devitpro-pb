@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 389a5299-4b33-46ba-baa6-62bc4332d261
 caps.latest.revision: 18
-manager: edupont
 ---
 # Using the Date Method to Retrieve Day, Month, and Year Data
 When you have fields in a table that contain dates, you can use a date method to retrieve only the year, month, or day instead of including the date in the resulting dataset of a query.  

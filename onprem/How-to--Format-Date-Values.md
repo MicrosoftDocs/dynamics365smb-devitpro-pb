@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 13c69956-81bb-4f3d-920b-68dcf8874c68
 caps.latest.revision: 16
-manager: edupont
 ---
 # How to: Format Date Values
 You can modify date values in Report Dataset Designer to specify how they are formatted in the layout of a report.  

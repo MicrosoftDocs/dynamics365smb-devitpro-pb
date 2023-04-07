@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 80425fe1-fd65-45db-83fc-5801bf9e7dec
 caps.latest.revision: 11
-manager: edupont
 ---
 # File Virtual Table
 The **File** virtual table gives you an overview of the files in a directory on your disk. The **File** virtual table contains the following fields.  

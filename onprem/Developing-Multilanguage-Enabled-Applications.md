@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1d887bde-09e2-4e7e-a553-85d8630a78f9
 caps.latest.revision: 21
-manager: edupont
 ---
 # Developing Multilanguage-Enabled Applications
 [!INCLUDE[navnow](includes/navnow_md.md)] is enabled for multilanguage development by default. If you make sure that the names of objects are in English and all objects have values in the CaptionML property, your solution can be translated to other languages if you deploy your solution to other markets. Even if you do not have customers outside your own country/region, it is easier for you to upgrade to a new version of [!INCLUDE[navnow](includes/navnow_md.md)] if your code follows the same multilanguage-enabled structure as the standard version of [!INCLUDE[navnow](includes/navnow_md.md)].  

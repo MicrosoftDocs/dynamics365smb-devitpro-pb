@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: db78a300-f506-4edf-9e6d-f8507969d6cb
 caps.latest.revision: 8
-manager: edupont
 ---
 # ADCS Overview
 The Automated Data Capture System \(ADCS\) solution provides a way for [!INCLUDE[navnow](includes/navnow_md.md)] to communicate with handheld devices through web services. You can test your solution by using the VT100 plug-in.  

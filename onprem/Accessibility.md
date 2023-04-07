@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 31a1fbeb-a4b4-452d-8cf4-4937c0f87479
 caps.latest.revision: 4
-manager: edupont
 ---
 # Accessibility
 This section contains information about the available accessibility features in [!INCLUDE[navnowlong](includes/navnowlong_md.md)]. For more information, see the following topics:  

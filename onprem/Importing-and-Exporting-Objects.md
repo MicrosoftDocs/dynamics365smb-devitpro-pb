@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ee3d07c6-b153-4786-ac79-ffeaab477dcb
 caps.latest.revision: 11
-manager: edupont
 ---
 # Importing and Exporting Objects
 You can import objects into [!INCLUDE[navnow](includes/navnow_md.md)] and export objects from [!INCLUDE[navnow](includes/navnow_md.md)] in the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] or by using development environment commands. The following table describes when you can use each method.  

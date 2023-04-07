@@ -11,7 +11,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1b590d6f-c38e-40f1-8c9e-d1c8070e05a3
 caps.latest.revision: 19
-manager: edupont04
 ---
 # Configuring Database Components
 Use [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup to install SQL Server Database Components. This is software you install on the computer running the SQL Server database to manage interaction between [!INCLUDE[navnow](includes/navnow_md.md)] and the SQL Server database.  

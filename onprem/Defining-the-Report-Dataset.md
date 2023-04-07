@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1c928d15-a4d6-4b64-a2a1-99ac57b95cdd
 caps.latest.revision: 3
-manager: edupont
 ---
 # Defining the Report Dataset
 You use Report Dataset Designer in the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to define the data model, or dataset, of a report. The dataset determines the data that is extracted or calculated from the [!INCLUDE[navnow](includes/navnow_md.md)] database tables that can be used in a report.  

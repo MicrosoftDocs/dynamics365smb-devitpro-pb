@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: bbd6a403-863d-44cb-998c-895b4a860ece
 caps.latest.revision: 8
-manager: edupont04
 ---
 # BuildVirtualMetadata
 Regenerates C\# and metadata information in [!INCLUDE[navnow](includes/navnow_md.md)] virtual tables for a specified language.  

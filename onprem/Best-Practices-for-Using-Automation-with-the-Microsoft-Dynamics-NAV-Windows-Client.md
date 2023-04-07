@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7340ea80-58cb-4ded-8ab8-4540c07e0050
 caps.latest.revision: 20
-manager: edupont
 ---
 # Best Practices for Using Automation with the Microsoft Dynamics NAV Windows Client
 With Automation, Windows-based applications, such as Microsoft Office products, expose Automation objects that [!INCLUDE[navnow](includes/navnow_md.md)] can access and run using an Automation controller in the development environment. Automation objects are always run on the computer running [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  

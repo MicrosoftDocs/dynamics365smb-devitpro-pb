@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: cda49471-7eef-450e-8907-d63654c2b9a6
 caps.latest.revision: 16
-manager: edupont
 ---
 # How to Conditionally Display Filter Headers in Reports
 If you apply a filter to the data in a report, then we recommend that you create an additional header row in the report to display the filter. You display this header row only if the user specifies a filter. If no filter is specified, then the filter header is not displayed.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a289ca6c-d65c-45a9-9e0c-5af791cf001d
 caps.latest.revision: 31
-manager: edupont
 ---
 # How to: Integrate Report Dataset Designer and Visual Studio Report Designer
 To create and modify client report definition \(RDLC\) report layouts, you must use Visual Studio. When you create an RDLC layout for a report, you may have to perform some steps in Report Dataset Designer in the [!INCLUDE[navnow](includes/navnow_md.md)] development environment to modify the dataset, and some steps in Visual Studio Report Designer to modify the layout. To work with both Report Dataset Designer and Visual Studio Report Designer, you must know when and where to save your work and how to switch between them efficiently.  

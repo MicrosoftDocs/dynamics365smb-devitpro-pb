@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 4d5d9eb3-00e4-4ffb-9819-f93aae75d51c
 caps.latest.revision: 6
-manager: edupont
 ---
 # Creating a Test Page in Dynamics NAV
 You can create and open a test page in the following ways:  

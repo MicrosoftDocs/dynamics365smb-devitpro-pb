@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: d551118d-e8fd-40ab-bc08-c920b611ef8f
 caps.latest.revision: 4
-manager: edupont
 ---
 # How to: Use a Timestamp Field
 Each table in [!INCLUDE[navnow](includes/navnow_md.md)] includes a hidden timestamp field. The timestamp field contains row version numbers for records as maintained in SQL Server. You can expose the timestamp field in a table, and then write code against it, add filters, and so on, similar to any other field in a table. However, you cannot write to the timestamp field.  
