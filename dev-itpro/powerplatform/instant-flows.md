@@ -23,11 +23,11 @@ There are two approaches to creating instant flows, as described in this section
 
 ### Instant flows that use the "For a selected record" trigger 
 
-You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** menu on most list, card, document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is the recommended approach for flows that relate to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
+You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is the recommended approach for flows that relate to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
 
 :::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
-You can choose to make the flow available in the **Automate** menu for all environments, companies, and pages all or only a specific environment, company, or pages.
+You can choose to make the flow available in the **Automate** action group for all environments, companies, and pages or only a specific environment, company, or pages.
 
 When run, the trigger will return information about the selected record. The connection between [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate allows instant flows to:
 
@@ -44,10 +44,10 @@ To learn more about this trigger, see [Manual trigger "For a selected record (V3
 
 Instead of creating instant flows from scratch, you can also choose from several templates that are available for specific scenarios.
 
-As an AL developer, you can also add or promote these instant flows to other places in the action bar. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
+As an AL developer, you can also add or promote instant flows to other places in the action bar by using the `customaction` keyword in AL. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 > [!NOTE]
-> These flows can't be run manually from the **Manage Power Automate Flows** page or from Power Automate.
+> These instance flows can't be run manually from Power Automate because they rely on a selected record in Business Central.
 
 ### Instant flows that use other manual triggers
 
@@ -204,7 +204,7 @@ The following table includes the most common problems why an instant flow doesn'
 
 |Cause|Fix|Reason|
 |-|-|-|
-|The flow doesn't use the "For a selected record (V3)" trigger|Change the flow to use the "For a selected record (V3)" trigger|Only flows that use the "For a selected record" trigger will show in the **Automate** menu.|
+|The flow doesn't use the "For a selected record (V3)" trigger|Change the flow to use the "For a selected record (V3)" trigger|Only flows that use the "For a selected record" trigger will show in the **Automate** action group.|
 |The "For a selected record (V3)" trigger parameter settings for environment, company, page, or tables don't match what user is currently on.|Check that the parameter settings in the "For a selected record" trigger match the environment, company, page, or table that the user has open.|A mismatch in parameters is preventing the flow from being displayed.|
 |The flow is turned off in Power Automate|Open the flow Power Automate and verify the flow is turned on. For more information, see [Turn flows on or off](/power-automate/disable-flow). If the flow can't be turned on because of an error, then fix the error, save the flow, and ensure that the flow is turned on. |[!INCLUDE[prod_short](../includes/prod_short.md)] won't shoe flows that a turned off in Power Automate.|
 |The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
