@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 070eefff-a103-41f9-8e3f-f625de7ba048
 caps.latest.revision: 7
-manager: edupont
 ---
 # ENCRYPTIONENABLED
 Checks if the tenant is configured to allow encryption.  

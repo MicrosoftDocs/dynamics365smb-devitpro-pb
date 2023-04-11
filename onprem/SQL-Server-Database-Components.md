@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: faa5fd81-1ff7-4ce8-883a-1476ee6df0e1
 caps.latest.revision: 19
-manager: edupont
 ---
 # SQL Server Database Components
 SQL Server database components configure Microsoft SQL Server to work with [!INCLUDE[navnowlong](includes/navnowlong_md.md)].  

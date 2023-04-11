@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 3e1a62d7-124f-4acc-9c31-f48fe333c6e0
 caps.latest.revision: 11
-manager: edupont
 ---
 # Handling Events with Microsoft .NET Framework Interoperability
 With Microsoft .NET Framework interoperability, a DotNet type variable of a [!INCLUDE[navnow](includes/navnow_md.md)] object can subscribe to events that are published by a .NET Framework class. In .NET Framework, an event enables an object to notify other objects when something occurs. Typical events in a graphical user interface might be the click of a button or the change of a field. The object that raises the event is the *publisher* and the object that handles the event is called the *subscriber*.  

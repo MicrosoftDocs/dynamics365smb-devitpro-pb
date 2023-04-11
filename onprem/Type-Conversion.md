@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a02156a3-936f-4d04-a87b-762cbe72a680
 caps.latest.revision: 8
-manager: edupont
 ---
 # Type Conversion
 This section describes all possible type conversions in C/AL expressions.  

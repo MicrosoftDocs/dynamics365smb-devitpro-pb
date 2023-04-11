@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ba64befb-057a-4236-98f1-64093d5ef1e0
 caps.latest.revision: 9
-manager: edupont
 ---
 # Understanding Codeunits in Dynamics NAV
 A codeunit is a container for C/AL code that you can use in many application objects. In simple applications, you can place the code in the object that calls the functions. For example, if you use C/AL code in pages, you can store the code in the page. However, as your application grows in both size and complexity, you will often find that you use the same functions more than once in many different objects. Instead of declaring the same functions repeatedly, you can use a codeunit to define them one time.  

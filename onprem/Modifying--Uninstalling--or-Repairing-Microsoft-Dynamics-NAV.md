@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c36a66ec-4edb-4dea-a95a-7246ef0d9a3c
 caps.latest.revision: 25
-manager: edupont
 ---
 # Modifying, Uninstalling, or Repairing Microsoft Dynamics NAV
 If you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup on a computer where any [!INCLUDE[navnowlong](includes/navnowlong_md.md)] components are already installed, you see the following options:  

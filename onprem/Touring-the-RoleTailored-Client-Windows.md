@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9f1af3e4-4301-4534-8ba1-589d44545ca4
 caps.latest.revision: 19
-manager: edupont
 ---
 # Touring the RoleTailored Client Windows
 The RoleTailored clients use several windows to display information. Two of the key window types are the navigation window and task page window. The navigation window is the main window in which users find the information that they have to work with. The navigation window is used for the Role Center, List Places, and Departments, as described in this topic. A task page window opens separately from the navigation window when the user selects an action from the navigation window or from other task page windows. It is common for a user to have more than one task page window open at a time.  

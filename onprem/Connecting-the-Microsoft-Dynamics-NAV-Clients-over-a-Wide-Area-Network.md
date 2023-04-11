@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 4134e6f3-54ec-48e0-9f28-6b2e3a0e49d7
 caps.latest.revision: 22
-manager: edupont
 ---
 # Connecting the Microsoft Dynamics NAV Clients over a Wide Area Network
 This topic contains information about how to implement a secure [!INCLUDE[nav_windows](includes/nav_windows_md.md)] connection to [!INCLUDE[nav_server](includes/nav_server_md.md)] over a wide area network \(WAN\). The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and [!INCLUDE[nav_server](includes/nav_server_md.md)] computers can be in the same or separate Active Directory domains.  

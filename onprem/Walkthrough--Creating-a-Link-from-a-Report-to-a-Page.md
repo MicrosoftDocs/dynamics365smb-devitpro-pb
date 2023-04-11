@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: baafbe33-37a8-41e7-a8d8-dd1f90475984
 caps.latest.revision: 29
-manager: edupont
 ---
 # Walkthrough: Creating a Link from a Report to a Page
 You can create reports that provide dynamic data with Visual Studio Report Designer and [!INCLUDE[navnowlong](includes/navnowlong_md.md)]. Your reports can include images, graphics, toggles on data columns, interactive sorting, and links to other data in the system. This walkthrough illustrates how to set up a report to include a link to the Customer Card page. When the report is run in preview mode, you can look up any existing customer directly from the report. By including this functionality, you now have a report that is a dynamic list that you can use to drill down into data instead of a report that is a static, printed list.  

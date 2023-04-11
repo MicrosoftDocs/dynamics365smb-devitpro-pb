@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e757a8ef-8299-4229-aa44-059341100e0d
 caps.latest.revision: 19
-manager: edupont
 ---
 # How to Add Action Submenus to Pages in Dynamics NAV
 Action submenus can be placed on pages in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], under any of the three main action tabs:  

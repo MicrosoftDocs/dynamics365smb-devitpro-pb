@@ -3,7 +3,7 @@ title: Resources for partners
 description: "Resources for partners contains a set of resources, services, and tools to support Microsoft Dynamics 365 Business Central."
 author: a-emniel
 ms.custom: na
-ms.date: 06/24/2022
+ms.date: 04/04/2023
 ms.reviewer: na
 ms.topic: conceptual
 ms.author: solsen
@@ -23,6 +23,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Major updates: [aka.ms/BCUpdates](https://aka.ms/BCUpdates)
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
+- Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
 
 ## Stay up to date
 - Discover what's new for partners in the Business Central newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)

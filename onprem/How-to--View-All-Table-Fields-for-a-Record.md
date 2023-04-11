@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 97d79fa5-bb51-4bf5-b473-345a22532ca9
 caps.latest.revision: 17
-manager: edupont
 ---
 # How to: View All Table Fields for a Record
 You can use the **About This Page** feature to view all fields for the current record that are in the table on which the page is based.  

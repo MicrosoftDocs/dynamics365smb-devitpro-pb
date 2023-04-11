@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b8612c03-8366-4334-94c0-d409f1c4a10b
 caps.latest.revision: 8
-manager: edupont
 ---
 # Troubleshooting: A fatal error occurred. The connection to SQL server cannot be established
 When you try to open [!INCLUDE[nav_web](includes/nav_web_md.md)], you get the following error:  

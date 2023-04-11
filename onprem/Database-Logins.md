@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 449018fc-6bcf-4726-ad1a-b521d0cf8d55
 caps.latest.revision: 12
-manager: edupont
 ---
 # Database Logins
 Users are given a database login when they have their own user ID and password in [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)]. The user must enter the user ID and password to access the database.  

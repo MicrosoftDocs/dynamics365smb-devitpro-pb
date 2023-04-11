@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: da3a6da3-f4d5-4f06-ba1e-fd6d21ef1ab1
 caps.latest.revision: 16
-manager: edupont
 ---
 # Virtual Tables
 A virtual table contains system information. You cannot change the data in virtual tables. You can only read the information. Virtual tables are not stored in the database but are computed by [!INCLUDE[navnow](includes/navnow_md.md)] at run time.  

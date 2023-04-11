@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2017"
 ms.assetid: b54bf548-379f-4724-8901-12ab3ba5d181
 caps.latest.revision: 11
-manager: edupont
 ---
 # Formatting the Data in a Field
 This topic describes how you can format the appearance of decimal data types in fields of a table, report, or page. For example, you can change how the data appears in a Cue on the Role Center page. To format data, you use a combination of the [AutoFormatType Property](AutoFormatType-Property.md), [AutoFormatExpr Property](AutoFormatExpr-Property.md), and [DecimalPlaces Property](DecimalPlaces-Property.md) of the field. These properties work together to enable you to specify the following:  

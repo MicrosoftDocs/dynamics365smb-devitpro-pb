@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1f3d822c-5ab2-45be-b0c0-c7d2799cc486
 caps.latest.revision: 8
-manager: edupont
 ---
 # How to: Insert Items in a MenuSuite
 You can modify a **MenuSuite** by inserting existing items. If an item already exists in a menu, instead of recreating the item in another menu, you can just insert the existing item. For information about how to modify menu items, see [How to: Modify Menu Items in a MenuSuite](How-to--Modify-Menu-Items-in-a-MenuSuite.md).  

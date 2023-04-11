@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 72a94bea-81df-41c9-b4e6-a7b0276aa65b
 caps.latest.revision: 16
-manager: edupont
 ---
 # How to: Delete Translated Strings
 After you add translated strings into a database, there are two ways to delete them. You can use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], as described in this article, or the [Remove-NAVApplicationObjectLanguage](/powershell/module/microsoft.dynamics.nav.model.tools/Remove-NAVApplicationObjectLanguage) cmdlet that is available in the [!INCLUDE[nav_dev_shell_md](includes/nav_dev_shell_md.md)].   

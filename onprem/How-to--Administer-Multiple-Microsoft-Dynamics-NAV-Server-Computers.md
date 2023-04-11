@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0431dd5f-98d1-47e4-b426-8dbe97b19fe2
 caps.latest.revision: 17
-manager: edupont
 ---
 # How to Administer Multiple Microsoft Dynamics NAV Server Computers
 This procedure describes how to administer multiple [!INCLUDE[nav_server](includes/nav_server_md.md)] computers from a single instance of the [!INCLUDE[nav_admin](includes/nav_admin_md.md)]. In this procedure, you start the Microsoft Management Console \(MMC\) and then configure it to administer multiple [!INCLUDE[nav_server](includes/nav_server_md.md)] computers. If you start the [!INCLUDE[nav_admin](includes/nav_admin_md.md)] from Control Panel or the Start menu, then you can only connect to a single [!INCLUDE[nav_server](includes/nav_server_md.md)] computer at a time. For more information, see [How to: Administer a Remote Microsoft Dynamics NAV Server Computer](How-to--Administer-a-Remote-Microsoft-Dynamics-NAV-Server-Computer.md)  

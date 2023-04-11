@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: bc53d29f-e47b-4475-bfe4-c0486ec9e450
 caps.latest.revision: 10
-manager: edupont
 ---
 # Accessibility Features of Microsoft Dynamics NAV Web Client
 This topic provides information about the features of the [!INCLUDE[nav_web](includes/nav_web_md.md)] that make [!INCLUDE[navnow](includes/navnow_md.md)] content readily available to people with disabilities. The [!INCLUDE[nav_web](includes/nav_web_md.md)] supports the following accessibility features:  

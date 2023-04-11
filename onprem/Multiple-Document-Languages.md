@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5c929ff4-72c2-4d81-999b-e7bb013f0efc
 caps.latest.revision: 7
-manager: edupont
 ---
 # Multiple Document Languages
 With a multlanguage-enabled database you can automatically  get the languages needed for multiple document language functionality.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a5fcce05-dd4a-45db-ac10-54b877af7057
 caps.latest.revision: 6
-manager: edupont
 ---
 # Managing Encryption Keys for SQL Server Authentication
 When using SQL Server authentication between the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and the database in SQL Server, an encryption key is used to encrypt the credentials that the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance uses to log on to the database. The encryption key is stored on the computer running [!INCLUDE[nav_server](includes/nav_server_md.md)] and also registered in the database. There is single encryption key per [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and it must match the encryption key in the database.  

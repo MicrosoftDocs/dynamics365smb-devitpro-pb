@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 93eb2594-bbb5-4f0a-b529-aa011029ad50
 caps.latest.revision: 17
-manager: edupont
 ---
 # Walkthrough: Transferring a File from Microsoft Dynamics NAV Server to the Client
 This walkthrough demonstrates how to develop a codeunit that creates a file on [!INCLUDE[nav_server](includes/nav_server_md.md)], opens the file, writes some data to it, and then downloads that file to a RoleTailored client.  

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 040befa6-1f60-4879-85ea-acabdc923d7c
 caps.latest.revision: 10
-manager: edupont
 ---
 # Creating a Menu for a Department in a MenuSuite 
 [!INCLUDE[navnowlong](includes/navnowlong_md.md)] provides a basic MenuSuite that you can modify, or you can create a new MenuSuite from the basic MenuSuite. You modify a MenuSuite by designing it in Navigation Pane Designer. In Navigation Pane Designer, you can modify an existing menu for a department or create a new menu. Creating a new menu creates a new department in the MenuSuite. This procedure describes how to create a menu for a department in a MenuSuite. For more information about how to modify a department menu, see [How to: Modify a Department Menu in a MenuSuite](How-to--Modify-a-Department-Menu-in-a-MenuSuite.md). For information about how to modify a menu item in a MenuSuite, see [How to: Modify Menu Items in a MenuSuite](How-to--Modify-Menu-Items-in-a-MenuSuite.md).  

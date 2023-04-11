@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b256a000-e9fe-4050-b54c-1c618d78431b
 caps.latest.revision: 30
-manager: edupont
 ---
 # Walkthrough: Using Automation to Write a Letter in Microsoft Office Word
 Automation lets you use the capabilities and features of Microsoft Office products, such as Microsoft Word or Microsoft Excel, in your [!INCLUDE[navnow](includes/navnow_md.md)] application. In this walkthrough, you will implement Word Automation from a customer card in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. You will set up the customer card so that if the customer has bought goods for more than LCY 2,500 during the past year, then the user can choose a menu item or action to automatically create a letter in Word that offers the customer 3% discount. The letter will include information about the customer, such as the customer's name and the address, and the name of the contact to whom you will address the letter.  

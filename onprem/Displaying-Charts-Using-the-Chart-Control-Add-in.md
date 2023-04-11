@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 78826101-1cc2-4540-8cbe-c6538b5f332d
 caps.latest.revision: 8
-manager: edupont
 ---
 # Displaying Charts Using the Chart Control Add-in
 In [!INCLUDE[navnow](includes/navnow_md.md)], you can graphically represent data in charts that you can display in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. [!INCLUDE[navnow](includes/navnow_md.md)] supports several chart types, such a line charts, bar charts, and pie charts. With the basic chart feature of [!INCLUDE[navnow](includes/navnow_md.md)], you can retrieve data from a table or using query and render the data in a single chart type, such as a line or bar graph. There might be scenarios for which you want to display data that does not fit the model of the basic chart feature. For example, you might want to display data that is calculated on a page, or you might want to render data different measures using different chart types. For these cases, [!INCLUDE[navnow](includes/navnow_md.md)] includes the Business Chart control add-in. With the [!INCLUDE[navnow](includes/navnow_md.md)], you can create custom charts for displaying complex data on a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] page.  

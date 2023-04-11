@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b634cbf6-166e-4ec5-b7f1-88e5f1f56b83
 caps.latest.revision: 4
-manager: edupont
 ---
 # GetBuildVersion
 Gets the [!INCLUDE[navnow](includes/navnow_md.md)] product name and build version number that is currently installed and saves the information to a .txt type file.  

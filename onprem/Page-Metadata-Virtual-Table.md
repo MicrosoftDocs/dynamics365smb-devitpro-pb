@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b21e8d51-044b-4018-8a9d-830b851c04ea
 caps.latest.revision: 3
-manager: edupont
 ---
 # Page Metadata Virtual Table
 The **Page Metadata** virtual table \(ID 2000000138\) contains data about the pages in database. The following table describes the fields in the **Page Metadata** virtual table.  
