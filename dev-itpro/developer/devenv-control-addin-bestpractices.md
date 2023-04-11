@@ -1,7 +1,7 @@
 ---
-title: "Control Add-In Performance Best Practices"
+title: "Control add-in performance best practices"
 ms.custom: na
-ms.date: 04/01/2022
+ms.date: 04/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ author: SusanneWindfeldPedersen
 ms.author: solsen
 ---
 
-# Control Add-In Performance Best Practices
+# Control add-in performance best practices
 
 [!INCLUDE[2022_releasewave1](../includes/2022_releasewave1.md)]
 
@@ -55,7 +55,7 @@ function invokeALTriggerTheRightWay() {
         () => {
             // Invoking the AL trigger has completed, invoke
             // the AL trigger again in 10 seconds
-            window.setTimeout(() => {
+            window.setInterval(() => {
                 invokeALTriggerTheRightWay();
             },
             10000);
