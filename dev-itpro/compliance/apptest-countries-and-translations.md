@@ -16,7 +16,7 @@ This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includ
 > [!NOTE]  
 > In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)]. 
 
-The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you'll see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).  
+The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).  
 
 > [!NOTE]
 > Availability in the list concerns [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] online. It does not apply to partner localizations. Please check [partner localization app availability on AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365%3Bdynamics-365-business-central&page=1).  
@@ -165,12 +165,12 @@ For an overview of where [!INCLUDE [prod_short](../includes/prod_short.md)] onli
 
 ## Important information regarding planned availability
 
-Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners have not successfully published their app(s) to AppSource by this time.
+Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners haven't successfully published their app(s) to AppSource by this time.
 
 ## Supported languages
 
 To maximize productivity [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] supports many languages.
-It is important to know that language support requires translation of *platform* captions and *application* captions (UI). 
+It's important to know that language support requires translation of *platform* captions and *application* captions (UI). 
 Translated platform captions are provided by Microsoft for all supported languages. Application languages are provided by both Microsoft and partners, depending on the language.
 
 Application languages delivered by Microsoft are provided as language apps, available on AppSource, that can be installed if needed. Partners can also provide application translation for any platform supported language. To use one of these languages the app publisher must be contacted through AppSource.
@@ -220,7 +220,7 @@ This table gives an overview of supported languages and how application language
 |Slovak (Slovakian)|sk-SK|Partner, Available on AppSource (pending)|
 |Slovenian (Slovenia)|sl-SI|Partner, Available on AppSource|
 |Serbian (Serbia)|sr-latn-RS|Partner, Available on AppSource|
-|Swedish (Sweden)|sv-SE|Microsoft, Available on on AppSource|
+|Swedish (Sweden)|sv-SE|Microsoft, Available on AppSource|
 |Turkish (Türkiye)|tr-TR|Partner, Available on AppSource|
 |Traditional Chinese (Hong Kong SAR)|zh-HK|Partner, Available on AppSource|
 |Traditional Chinese (Taiwan)|zh-TW|Partner, Available on AppSource|
