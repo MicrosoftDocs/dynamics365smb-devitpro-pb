@@ -1221,8 +1221,8 @@
 ## Integrating with Microsoft Power Automate
 ### [Power Automate integration overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Set up Automated Flows](powerplatform/automate-workflows.md)
-### [Set up Instant Flows](powerplatform/instant-flows.md)
+### [Create Automated Flows](powerplatform/automate-workflows.md)
+### [Create Instant Flows](powerplatform/instant-flows.md)
 ### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI

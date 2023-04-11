@@ -13,6 +13,17 @@ ms.author: jswymer
 
 You can either create new flows or manage the existing Power Automate flows from [!INCLUDE[prod_short](../includes/prod_short.md)] from the **Manage Power Automate Flows** page. To check out that page, go to the *search* icon in the top right and enter *manage power automate flows.* The resulting page presents various ways to look for details and manage your created flows. In addition, you can create a new flow, edit it, share it, make a copy, delete, or run other commands on your flows by selecting them from the list. These are the categories of flows you'll find on the main page: 
 
+
+| What | Description |
+| ----------- | ----------- |
+| Create automated flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
+| Create instant flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
+| Edit automated flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
+| Edit instant  flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
+| Desktop flows | This shows a list of flows you've created for your desktop environment using Power Automate. If you haven't created any, you can create one by choosing **+ New desktop flow**. Learn more at [Desktop Flows](/power-automate/desktop-flows/create-flow). |
+| Shared with me | This is a list of flows shared with you by other users in your organization. |
+
+
 | Flows | Description |
 | ----------- | ----------- |
 | Cloud flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
