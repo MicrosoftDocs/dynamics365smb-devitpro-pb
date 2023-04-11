@@ -35,7 +35,7 @@ There are two types of Power Automate flows that you can use with Business Centr
 
 - Instant flows
 
-    Instant flows are manually triggered by users, instead of automatically by events in Business Central. Instant flows show in the **Automate** menu in the Business Central client so users can run the flows in context of the work they're doing. You create and trigger a Power Automate instant flow on a Business Central record, such as a customer, item, or sales order, with options to manipulate information both internally and externally (using integrated tools). For more information, see [Set Up Instant Flows](instant-flows.md).
+    Instant flows are manually triggered by users, instead of automatically by events in Business Central. Instant flows show in the **Automate** action group in the Business Central client so users can run the flows in context of the work they're doing. You create and trigger a Power Automate instant flow on a Business Central record, such as a customer, item, or sales order, with options to manipulate information both internally and externally (using integrated tools). For more information, see [Set Up Instant Flows](instant-flows.md).
 
 In addition to Power Automate flow, Business Central also offers approval workflow templates as a separate workflow system. However, any workflow template you create with Power Automate is added to the list of workflows within Business Central. Learn more at [Workflows in Dynamics 365 Business Central](/dynamics365/business-central/across-workflow).
 
@@ -49,7 +49,7 @@ Business Central connector can also initiate actions provided through other conn
 
 ## What users can do from inside Business Central
 
-With Power Automate integration, users can create and run Power Automate flows directly from most list, card, and document pages. These pages have an **Automate** item in the action bar, which includes actions for creating and managing flows, and also running existing flows created or shared in Power Automate.
+With Power Automate integration, users can create and run Power Automate instance flows directly from most list, card, and document pages. These pages have an **Automate** action group in the action bar, which includes actions for creating and managing flows, and also running existing flows created or shared in Power Automate.
 
 :::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 

@@ -29,6 +29,10 @@ The connector​ seamlessly connects data and gives you the option to include **
 > [!NOTE]
 > The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option you can choose.  
 
+## Prerequisites
+
+- Power Automate premium license or a license that includes peremium connectors. For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
+
 ## Create an automated flow from scratch
 
 This procedure outlines that steps required to create an automated flow using the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it walks you through a basic example of a flow that sends a message to a Teams group chat when a new customer is created in [!INCLUDE[prod_short](../includes/prod_short.md)]. The following figure illustrates the flow. 

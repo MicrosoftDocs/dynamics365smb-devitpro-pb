@@ -68,6 +68,16 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 > [!TIP]
 > If you sign up for the [Power Apps Developer plan](https://powerapps.microsoft.com/en-us/developerplan/), you can try out the full range of features in Power Automate for free. The plan includes the ability to create environments. Learn more about the plan at [Create a developer environment](/power-platform/developer/create-developer-environment).
 
+
+## Prerequisites
+
+- Power Automate premium license or a license that includes premium connectors.
+
+  For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
+- To create or run instant flows from inside Business Central, Power Automate integration must be enabled.
+
+  For more information, see [Set Up Power Automate Integration](power-automate-setup.md).
+
 ## Create a flow using the "For a selected record (V3)" from scratch
 
 This procedure outlines that steps required to create an instant flow, from a blank flow, that will appear in the **Automate** group in the action bar by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
@@ -198,7 +208,7 @@ Creating an instant flow for general use is similar to how you create a flow for
 7. Select the **+ New step** to add actions and other triggers for the flow.
 8. To add [!INCLUDE[prod_short](../includes/prod_short.md)] actions and triggers, search for the **Dynamics 365 Business Central** connector, then select the action or trigger you want to use.
 
-## Troubleshoot why flow isn't in Automate group
+## Troubleshoot why a flow doesn't appear in Automate action group
 
 The following table includes the most common problems why an instant flow doesn't appear in the **Automation** group for you or another user.
 
