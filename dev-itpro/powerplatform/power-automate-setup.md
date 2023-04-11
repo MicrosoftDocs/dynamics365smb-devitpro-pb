@@ -19,20 +19,19 @@ This article describes how to set up Power Automate integration for Business Cen
 
 As an administrator, you can hide the **Automation** action group and its actions from all users or individual users, as described in this article.
 
-<!--
 > [!IMPORTANT]
-> This article pertains only to the **Automate** action in the Business Central client. The instructions won't affect users ability to create and run flows directly in Power Automate or what they can do on the [Manage Power Automate Flows](manage-power-automate-flows.md) page in Business Central&mdash;even with flows that interact with Business Central data.-->
+> This article pertains only to the **Automate** action group on pages in the Business Central. The instructions won't affect users ability to create and run flows directly in Power Automate&mdash;even with flows that interact with Business Central data.
 
 ## About access to Power Automate features
 
-By default, all users have access to the Power Automate features. The features are available from the **Automation** action group on most list, card, and document pages. In some cases, you'll find the Power Automate features by selecting **More options ...** in the action bar.
+By default, all users have access to the Power Automate features. The features are available from the **Automation** action group on most list, card, and document pages. In some cases, you'll find the Power Automate features by selecting **More options...** in the action bar.
 
  :::image type="content" source="../developer/media/power-automate-action.png" alt-text="Shows the Automate item in the action bar.":::
 
 But before users can use the features, they'll have to agree to privacy notice. They agree to the terms by selecting the **Automate** > **Get Started with Power Automate** action and running the **Set Up Power Automate** assisted setup. Agreeing to the terms turns on the Power Automate features for the user, activates the **Create Flows** and **Manage Flows** actions.
 
 - The **Create Flows** action let's a user create a new Power Automate instant flow directly inside Business Central, from scratch or from a template.
-- The **Manage Flows** action signs a users in to Power Automate, where they can create, edit, and test both automated and instant flows.
+- The **Manage Flows** action signs a user in to Power Automate, where they can create, edit, and test both automated and instant flows.
 
 As an administration, you can change this behavior and control which users have access to the Power BI features. There are two levels of controlling access. The first level done by a system permission that you assign to users. The next level is turning the Power Automate features on or off using on the privacy notice agreement.
 

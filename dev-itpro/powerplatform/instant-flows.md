@@ -9,7 +9,6 @@ ms.topic: how-to
 ms.date: 09/04/2022
 ms.custom: bap-template 
 ---
-
 # Create instant flows
 
 Unlike automated flows that run automatically when an event occurs, instant flows are run on-demand by users from inside [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate.

@@ -9,7 +9,9 @@ ms.date: 10/01/2022
 ms.author: jswymer
 ---
 
-# Manage Power Automate Flows 
+# Manage Power Automate Flows
+
+> **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] online version 21 and earlier. The **Manage Power Automate Flows** page has been deprecated and replaced by actions in the **Automate** actions group on pages.
 
 You can either create new flows or manage the existing Power Automate flows from [!INCLUDE[prod_short](../includes/prod_short.md)] from the **Manage Power Automate Flows** page. To check out that page, go to the *search* icon in the top right and enter *manage power automate flows.* The resulting page presents various ways to look for details and manage your created flows. In addition, you can create a new flow, edit it, share it, make a copy, delete, or run other commands on your flows by selecting them from the list. These are the categories of flows you'll find on the main page: 
 
