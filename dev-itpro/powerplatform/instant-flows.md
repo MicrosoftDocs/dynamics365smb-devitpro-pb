@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Create instant flows
 
-Unlike automated flows that run automatically when an event occurs, instant flows are run manually by users from inside [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate. 
+Unlike automated flows that run automatically when an event occurs, instant flows are run on-demand by users from inside [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate.
 
 > [!NOTE]  
 > To use Power Automate with [!INCLUDE[prod_short](../includes/prod_short.md)], you must have a valid account.  
@@ -80,7 +80,7 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 
 ## Create a flow using the "For a selected record (V3)" from scratch
 
-This procedure outlines that steps required to create an instant flow, from a blank flow, that will appear in the **Automate** group in the action bar by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
+This procedure outlines that steps required to create an instant flow from a blank flow by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. When completed, the flow will appear in the **Automate** group in the action bar. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
 
 The flow in Power Automate will look something like this:
 
@@ -113,7 +113,7 @@ Complete the following steps:
 
     :::image type="content" source="../developer/media/power-automate-for-selected-record-trigger.png" alt-text="Shows for selected record trigger for [!INCLUDE[prod_short](../includes/prod_short.md)] in Power Automate.":::
 
-3. Set the filter fields on the connector to limit the flow to a specific environment, company, and tables or pages. If you fill in any of the filter fields, the flow will only be shown on environments/companies/pages that match the filter and have the **Automate** action. If you leave all fields, the flow will be shown on all pages that have the **Automate** action.
+3. Set the filter fields on the connector to limit the flow to a specific environment, company, and tables or pages. If you fill in any of the filter fields, the flow will only be shown on environments/companies/pages that matches the filter and have the **Automate** action. If you leave all fields, the flow will be shown on all pages that have the **Automate** action.
 
     |Field|Description|
     |-----|-----------|
