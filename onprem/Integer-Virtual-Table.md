@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0c7dae66-a100-4852-b79b-c16a93ad6315
 caps.latest.revision: 7
-manager: edupont
 ---
 # Integer Virtual Table
 The **Integer** virtual table includes integers in the range –1,000,000,000 to 1,000,000,000. The **Integer** virtual table contains only one field.  

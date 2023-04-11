@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ec853cd5-b6cd-493d-b7b2-9ad5e3bd6ac4
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: Set Up Filter Rows in Query Designer
 You use a Filter row in Query Designer when you want to filter the query on a field, but you do not want to include the field in the dataset. For example, you might want to filter a date field on a specific date, but you do not want to include the date in the dataset. To specify the filter for the Filter row, you set its [ColumnFilter Property](ColumnFilter-Property.md).  

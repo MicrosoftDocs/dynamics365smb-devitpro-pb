@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 40de1a1b-a7cd-4cd6-8de4-7d14b87f6876
 caps.latest.revision: 9
-manager: edupont
 ---
 # Table Metadata Virtual Table
 The **Table Metadata** virtual table \(ID 2000000136\) contains data about the tables in database. The following table describes the fields in the **Table Metadata** virtual table.  

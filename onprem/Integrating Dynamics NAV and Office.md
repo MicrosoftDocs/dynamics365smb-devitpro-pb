@@ -1,7 +1,6 @@
 ---
 title: "Integrating Dynamics NAV and Office"
 author: jswymer
-manager: edupont
 ms.author: edupont
 ms.custom: na
 ms.date: 10/01/2018

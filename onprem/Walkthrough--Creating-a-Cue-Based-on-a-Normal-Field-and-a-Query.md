@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 383e5940-ab42-446a-a0d4-00c7726cd6be
 caps.latest.revision: 10
-manager: edupont
 ---
 # Walkthrough: Creating a Cue Based on a Normal Field and a Query
 This walkthrough demonstrates how to create a Cue that is based on a normal field that derives data from a [!INCLUDE[navnow](includes/navnow_md.md)] query object. The following figure illustrates the Sales This Month Cue that is added by this walkthrough.  

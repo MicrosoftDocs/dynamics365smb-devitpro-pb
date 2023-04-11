@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7bb42186-1105-4c43-bb7a-cf0e2f5bdc03
 caps.latest.revision: 6
-manager: edupont
 translation.priority.ht:
   - da-dk
   - de-at

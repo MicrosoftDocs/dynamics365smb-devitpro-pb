@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 2a38a6ea-f96f-495c-86e4-cf4f7264e42f
 caps.latest.revision: 4
-manager: edupont
 ---
 # CueGroup and Action Behavior
 Cues are used on the UI to visually provide a way to show the number of entities in a table and view the entities in a filtered list. For example, the Cue can show the total number of open invoices, sales orders, or credit memos.  

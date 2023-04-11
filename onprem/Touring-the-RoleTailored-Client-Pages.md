@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: caed17af-e669-4d8f-9c7c-bddd9136106c
 caps.latest.revision: 44
-manager: edupont
 ---
 # Touring the RoleTailored Client Pages
 In [!INCLUDE[navnow](includes/navnow_md.md)], pages are the main way to display and organize data in the [!INCLUDE[rtc](includes/rtc_md.md)]. You can create pages to offer users a visual experience that is closely aligned to Microsoft Office and Windows. There are different page types that you use for different situations. The page type that you choose depends on the application task that you want to support, the content that you want to display, and how you want to display it. For example, the Role Center page is the main page of the [!INCLUDE[rtc](includes/rtc_md.md)] and it displays when the [!INCLUDE[rtc](includes/rtc_md.md)] opens. The Role Center page is similar to a home page that helps users focus on their most important daily activities, by giving an overview of the information relevant to their tasks on one page. Other types of pages, such as List pages, display lists of customers or sales orders, while others such as Document task pages, focus on user tasks.  

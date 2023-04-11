@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: jswymer
-manager: edupont
 ms.prod: "dynamics-nav-2017"
 author: jswymer
 ---

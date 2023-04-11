@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1c6023de-4928-4a6a-9ba1-6f65d95a3c8c
 caps.latest.revision: 3
-manager: edupont
 ---
 # Report Metadata Virtual Table
 The **Report Metadata** virtual table \(ID 2000000139\) contains data about the pages in database. The following table describes the fields in the **Report Metadata** virtual table.  

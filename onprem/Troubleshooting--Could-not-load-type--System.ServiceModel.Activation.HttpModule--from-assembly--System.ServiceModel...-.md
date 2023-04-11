@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: dd6a8846-4736-42fd-90ac-f25ebd28ea25
 caps.latest.revision: 7
-manager: edupont
 ---
 # Troubleshooting: Could not load type &#39;System.ServiceModel.Activation.HttpModule&#39; from assembly &#39;System.ServiceModel...&#39;
 When you try to access the [!INCLUDE[nav_web](includes/nav_web_md.md)], you get the following error.  

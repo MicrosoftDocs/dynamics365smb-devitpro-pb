@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8d995a32-c429-47dc-9284-596da3345e01
 caps.latest.revision: 10
-manager: edupont
 ---
 # Troubleshooting the Dynamics NAV Web Server and Client Installation
 Use the following links to help resolve problems with [!INCLUDE[nav_web_server_m](includes/nav_web_server_md.md)] and Web client installation.  

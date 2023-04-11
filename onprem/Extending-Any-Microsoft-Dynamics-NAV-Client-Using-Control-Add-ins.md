@@ -1,7 +1,6 @@
 ---
 title: "Extending Any Microsoft Dynamics NAV Client Using Control Add-ins"
 author: SusanneWindfeldPedersen
-manager: edupont04
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na

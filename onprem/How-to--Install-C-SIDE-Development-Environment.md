@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 2e4a3efe-3257-4b57-8e00-c023783749eb
 caps.latest.revision: 23
-manager: edupont
 ---
 # How to: Install C/SIDE Development Environment
 Developers and administrators use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] to develop and manage [!INCLUDE[navnow](includes/navnow_md.md)] applications. Developers use [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] to create objects, such as pages, reports, and tables, for displaying and handling data in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)]. Administrators can use the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)] for the administrative tasks, such as managing licenses, and adding and managing databases.  

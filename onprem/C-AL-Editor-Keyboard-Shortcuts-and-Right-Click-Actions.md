@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 68765735-01e1-4ecf-8bd7-26769c903618
 caps.latest.revision: 4
-manager: edupont
 ---
 # C/AL Editor Keyboard Shortcuts and Right-Click Actions
 This topic describes the keyboard shortcuts and right-click actions in the C/AL Editor.  

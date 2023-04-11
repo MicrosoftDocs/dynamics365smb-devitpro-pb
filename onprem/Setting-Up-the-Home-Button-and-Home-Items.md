@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8823b1fc-a148-4259-a590-027296e0278f
 caps.latest.revision: 21
-manager: edupont
 ---
 # Setting Up the Home Button and Home Items
 **Home** is a default activity button in the navigation pane of [!INCLUDE[navnow](includes/navnow_md.md)] and displays items that link to List Places.  

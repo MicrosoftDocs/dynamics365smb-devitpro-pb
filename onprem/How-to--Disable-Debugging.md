@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b068172d-6223-46cc-b743-bcc00cf193ae
 caps.latest.revision: 9
-manager: edupont
 ---
 # How to: Disable Debugging
 You can disable debugging for an instance of [!INCLUDE[nav_server](includes/nav_server_md.md)]. If you disable debugging, then you get an error if you choose **Debug Next** or **Debug** on the **Session List** page.  

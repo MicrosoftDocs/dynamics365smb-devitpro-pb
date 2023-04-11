@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 169cdd88-5449-42e8-8c79-90af2f6ca484
 caps.latest.revision: 25
-manager: edupont
 ---
 # Working with Microsoft Dynamics NAV Server
 [!INCLUDE[nav_server](includes/nav_server_md.md)] is a .NET-based Windows Service application that manages communications between [!INCLUDE[navnow](includes/navnow_md.md)] clients and [!INCLUDE[navnow](includes/navnow_md.md)] databases in SQL Server. It uses the Windows Communication Framework \(WCF\) as its communication protocol.  

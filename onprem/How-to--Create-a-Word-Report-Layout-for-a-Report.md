@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ae84f1f9-2040-4d5b-874d-b9033d04cc46
 caps.latest.revision: 7
-manager: edupont
 ---
 # Creating a Word Report Layout for a Report
 After you design a dataset for a report, you can create a Word report layout that can be used when you view and print a report from the [!INCLUDE[navnow](includes/navnow_md.md)] client. This topic describes how to create blank a Word report layout on a report from the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)]. After you create the layout, you can modify the layout to include dataset fields and define the general format.  

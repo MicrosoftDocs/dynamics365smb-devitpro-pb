@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
 author: jswymer
-manager: edupont
 ---
 # Removing Elements from User Interface According to Application Area
 You can develop your application so that certain user interface elements do not appear in the client based on the application area to which they belong. These elements include page fields and actions, report request page fields, and Department items.  

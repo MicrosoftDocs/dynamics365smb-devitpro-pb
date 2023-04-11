@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6f98e4db-fb5a-463c-8767-a1835d0abed5
 caps.latest.revision: 5
-manager: edupont
 ---
 # How to Build Server Application Objects
 If you import a .fob file that contains objects that were exported from a native [!INCLUDE[navnow](includes/navnow_md.md)] database, then those objects do not contain the C\# and metadata information that is required for [!INCLUDE[nav_server](includes/nav_server_md.md)]. Additionally, if you import a .fob file that contains the C\# and metadata information but the information is from an earlier version of [!INCLUDE[navnow](includes/navnow_md.md)], then the information may be in an incompatible format. In these cases, you must build the server application objects. If you do not build the server application objects, then these objects cannot be run. Building the server application objects does the following:  

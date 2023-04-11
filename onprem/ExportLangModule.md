@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 73d232d6-4551-4faf-9914-570ba4c5301e
 caps.latest.revision: 6
-manager: edupont04
 ---
 # ExportLangModule
 Exports a language module from the specified database to a file.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5b320128-af66-4045-8978-71b651dd7281
 caps.latest.revision: 5
-manager: edupont
 ---
 # How to: Start SQL Browser Service
 When using a named database instance for [!INCLUDE[navnow](includes/navnow_md.md)], and the SQL Server is not on the same computer as [!INCLUDE[nav_server](includes/nav_server_md.md)], then the SQL Server Browser Service must be running on the SQL Server. If it is not, [!INCLUDE[nav_server](includes/nav_server_md.md)] cannot connect to the [!INCLUDE[navnow](includes/navnow_md.md)] database and an error occurs when you try to open a [!INCLUDE[rtc](includes/rtc_md.md)]. A database instanced named **NAVDEMO** is used when you install the [!INCLUDE[demolong](includes/demolong_md.md)] by using [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup.  

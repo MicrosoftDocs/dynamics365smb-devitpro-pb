@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e10905e2-25ef-4e94-ada5-bfd16ba7ef80
 caps.latest.revision: 16
-manager: edupont
 ---
 # How to: Create, View, and Edit a Calculation Formula
 The following procedure describes the steps to take to create and revise a calculation formula for a FlowField of a table.  

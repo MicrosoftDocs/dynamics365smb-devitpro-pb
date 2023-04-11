@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b90d2cc6-b011-4d2c-9325-766cdb12ff9a
 caps.latest.revision: 35
-manager: edupont
 ---
 # Windows Client Control Add-in Overview
 With [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you use [!INCLUDE[navnow](includes/navnow_md.md)] control add-ins to extend the [!INCLUDE[navnow](includes/navnow_md.md)] with custom functionality. A control add-in is a custom control, or visual element, for displaying and modifying data on [!INCLUDE[navnow](includes/navnow_md.md)] pages. The following illustration shows a control add-in example that displays a gauge control on a page.  

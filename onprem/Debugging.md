@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9cfc02d2-2211-466f-b5e9-8178bdc79311
 caps.latest.revision: 39
-manager: edupont
 ---
 # Debugging
 The process of finding and correcting errors is called *debugging*. [!INCLUDE[navnowlong](includes/navnowlong_md.md)] provides an integrated debugger to help you inspect your code to verify that your application can run as expected. The debugger UI runs in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or the [!INCLUDE[nav_web](includes/nav_web_md.md)]. The debugger services run on the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)].  

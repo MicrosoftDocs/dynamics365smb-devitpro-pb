@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6ff83384-54f1-49b3-bc99-ae397e5766b5
 caps.latest.revision: 15
-manager: edupont
 ---
 # Walkthrough: Adding Company Information, Custom Filters, and Formatting to a Report
 When you create a report, you can add features such as formatting, custom filters, company logo, and company name to the report. Adding these features make the report readable and improves the visual presentation of the report. You will add these features to the report that you created in [Walkthrough: Designing a Report from Multiple Tables](Walkthrough--Designing-a-Report-from-Multiple-Tables.md).  

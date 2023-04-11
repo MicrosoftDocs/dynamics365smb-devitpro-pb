@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8e1e399e-a538-4438-bca4-06c5b7090e38
 caps.latest.revision: 24
-manager: edupont
 ---
 # How to Configure ADCS Options in Dynamics NAV
 Before you can work with Automated Data Capture Systems \(ADCS\), you have to configure [!INCLUDE[navnow](includes/navnow_md.md)] by modifying the VT100Plugin configuration file.  

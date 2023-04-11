@@ -10,7 +10,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 98866f17-c121-45a2-8fd0-62e213a43606
-manager: edupont
 ---
 # Development in Microsoft Dynamics NAV 
 Before you begin developing code for [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you should consider the following:  

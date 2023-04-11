@@ -10,7 +10,6 @@ ms.prod: "dynamics-nav-2018"
 ms.assetid: 625e29a8-963e-4ef1-971d-c96cf19e1ccb
 caps.latest.revision: 8
 author: jswymer
-manager: edupont
 ---
 # C/AL BREAK Statement
 You use the BREAK statement to terminate the iteration statement in which it appears.  

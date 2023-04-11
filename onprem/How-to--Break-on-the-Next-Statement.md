@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 631a2a13-3191-47b4-a29f-1982ba70629f
 caps.latest.revision: 9
-manager: edupont
 ---
 # How to Break on the Next Statement
 If the debugger is attached to a session, then you can specify that the debugger breaks before the next C/AL statement is run in that session.  

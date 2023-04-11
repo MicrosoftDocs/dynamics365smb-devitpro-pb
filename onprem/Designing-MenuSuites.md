@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: d447aa5e-e9a3-40d2-9880-e0353debde31
 caps.latest.revision: 24
-manager: edupont
 ---
 # Designing MenuSuites
 In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites that contain menu content that is displayed in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. The MenuSuite that is provided in [!INCLUDE[navnow](includes/navnow_md.md)] is a generic MenuSuite that you can modify. You can also create a new MenuSuite from the basic MenuSuite. Each menu in the basic MenuSuite represents a department such as Financial Management, Human Resources, and Manufacturing. Each department contains menu items that are specific for that department area. A department menu contains menu items that can link to the following objects:  
