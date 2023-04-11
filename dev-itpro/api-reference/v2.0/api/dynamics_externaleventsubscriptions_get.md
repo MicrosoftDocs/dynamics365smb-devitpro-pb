@@ -11,11 +11,9 @@ ms.date: 02/06/2023
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Get externaleventsubscriptions
 
-Retrieves the properties and relationships of an externaleventsubscriptions object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Retrieves the properties and relationships of an external event subscription object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
@@ -70,11 +68,11 @@ Here is an example of the response.
     "systemModifiedBy" : ""
 }
 ```
-<!-- END>EDIT_IS_REQUIRED -->
+
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[externaleventsubscriptions](../resources/dynamics_externaleventsubscriptions.md)  
-[DELETE externaleventsubscriptions](dynamics_externaleventsubscriptions_delete.md)  
-[POST externaleventsubscriptions](dynamics_externaleventsubscriptions_create.md)  
-[PATCH externaleventsubscriptions](dynamics_externaleventsubscriptions_update.md)  
+[External event subscriptions](../resources/dynamics_externaleventsubscriptions.md)  
+[DELETE external event subscriptions](dynamics_externaleventsubscriptions_delete.md)  
+[POST external event subscriptions](dynamics_externaleventsubscriptions_create.md)  
+[PATCH external event subscriptions](dynamics_externaleventsubscriptions_update.md)  

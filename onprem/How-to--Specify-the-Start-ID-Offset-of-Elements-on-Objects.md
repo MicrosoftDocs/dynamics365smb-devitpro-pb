@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 36384b42-b80e-4d78-9af7-735f47b0f7e2
 caps.latest.revision: 5
-manager: edupont
 ---
 # How to: Specify the Start ID Offset of Elements on Objects
 You can specify a start ID for new objects so that elements on these new objects have IDs that are offset by the number that you specified. For example, you can specify a start ID of 1000 and then create a new page. The first element that you create on the page, for example, a Container control, has ID 1000. The next element that you create on the page, for example, a Group control, has ID 1001. The ID of each element on the page is incremented by 1, starting with the offset that you specified. If you create variables or text constants on the page, then the first variable or text constant has ID 1000. The ID of each variable or text constant that you create is incremented by 1, starting with the offset that you specified. If you create functions on the page, then they start with ID 1000. Parameters, return value, local variables, and local text constants of a function start with ID 1000.  

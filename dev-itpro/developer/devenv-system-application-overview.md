@@ -16,6 +16,8 @@ The System Application contains modules that interact with the [!INCLUDE[d365fin
 
 This topic provides an overview of the modules in the System Application. For more details about each module, and to get a look at the code, choose the **ReadMe** link for the module to visit our [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository on GitHub.
 
+For an overview of system application reference documentation, see [Module System Application](/dynamics365/business-central/application/reference/system%20application/).
+
 > [!Note]
 > The modules in the System Application represent a significant change in what's happening under the hood in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]. We are aware that the changes we have made will introduce breaking changes, so we have made a list of those that we know about, which includes suggestions for solutions. To view the breaking changes list, see [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md).<br><br>We will continue to enhance the System Application in future releases. If you find something you think we should add, visit our [Dynamics 365 Application Ideas](https://aka.ms/bcideas) page. If you want us to improve something, go to the [ALAppExtensions](https://github.com/microsoft/ALAppExtensions) repository and submit a pull request for it.  
 

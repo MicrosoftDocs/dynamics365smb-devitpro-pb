@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0ccd332a-db93-454f-9d92-c3368d4c7010
 caps.latest.revision: 5
-manager: edupont
 ---
 # Creating an RDLC Report Layout in Dynamics NAV
 To create an RDLC report layout, you use Visual Studio Report Designer.  

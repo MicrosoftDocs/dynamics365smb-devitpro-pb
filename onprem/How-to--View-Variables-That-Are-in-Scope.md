@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: aa04712b-9bc0-41f0-917e-8e8de5001c62
 caps.latest.revision: 5
-manager: edupont
 ---
 # How to: View Variables That Are in Scope
 On the **Debugger** page, if the debugger has broken code execution, then you can view all of the variables that are currently in scope. This allows you to inspect the values of the variables at the point at which you have broken code execution. You can also choose to add variables to the watch list.  

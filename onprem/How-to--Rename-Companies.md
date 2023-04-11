@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c1426b14-5599-410a-8af4-180d951aeb03
 caps.latest.revision: 7
-manager: edupont
 ---
 # How to: Rename Companies
 You can rename companies in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)]. You can also rename companies by using the **Rename-NAVCompany** Windows PowerShell cmdlet.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0a08fde8-9d7e-4db6-8e38-1a2934559e8c
 caps.latest.revision: 16
-manager: edupont
 ---
 # Activating the Debugger
 You can use the [!INCLUDE[navnow](includes/navnow_md.md)] Debugger to debug your application. When you *activate* the debugger, you start it. When the debugger is activated, it can be in one of the following states:  

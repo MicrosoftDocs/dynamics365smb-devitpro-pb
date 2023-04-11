@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 57aac5ec-f41c-4370-8436-6de141976f21
 caps.latest.revision: 16
-manager: edupont
 ---
 # Walkthrough: Running a Report Offline
 You can view a report and view the dataset and layout on a computer that does not have [!INCLUDE[navnow](includes/navnow_md.md)] installed. To do this, you must have Microsoft Visual Studio installed and you must export the report dataset from [!INCLUDE[navnow](includes/navnow_md.md)] as an .xml file and export the report layout .rdlc file from Visual Studio Report Designer.  

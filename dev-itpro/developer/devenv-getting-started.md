@@ -1,5 +1,5 @@
 ---
-title: "Get Started with Modules"
+title: "Get started with modules"
 description: "Provides an overview of what you will need to work with modules in the System Application."
 ms.date: 04/01/2021
 ms.reviewer: na
@@ -10,7 +10,8 @@ author: bholtorf
 ms.custom: intro-internal
 ---
 
-# Get Started with Modules in the System Application
+# Get started with modules in the System Application
+
 This topic provides information about requirements for working with modules in the System Application.
 
 ## AL
@@ -28,10 +29,14 @@ Have you decided to build a new module? For more information, see [Create a new 
 ## Modifying an existing module
 Want to improve an existing module? For more information, see [Change a module](devenv-change-a-module.md).
 
+## System application reference documentation
+
+For an overview of the system application reference documentation, see [Module System Application](/dynamics365/business-central/application/reference/system%20application/module/system_application_module).
+
 ## Have an issue?
 Please open an [issue](https://github.com/microsoft/ALAppExtensions/issues/new).
 
 ## See Also
 
 [Module Architecture](devenv-blueprint.md)  
-[Create a module](devenv-new-module.md)
+[Create a module](devenv-new-module.md)  

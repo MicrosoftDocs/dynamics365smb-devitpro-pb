@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 116f40e8-26fe-46d4-9da9-ae5830fbe509
 caps.latest.revision: 19
-manager: edupont
 ---
 # How to Add Translated Strings By Importing and Exporting Multilanguage Files in Dynamics NAV
 To add string translations for UI elements in a standard country/region-specific version of [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you install a language module so that end users can view the UI elements in a different language. If you have customized objects in the application, then you must also add translations for those objects. You can translate strings in the following ways:  

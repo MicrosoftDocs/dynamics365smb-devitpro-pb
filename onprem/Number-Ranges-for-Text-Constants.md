@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 066aa86d-86d8-4757-857a-00d992cccffd
 caps.latest.revision: 11
-manager: edupont
 ---
 # Number Ranges for Text Constants
 [!INCLUDE[navnow](includes/navnow_md.md)] assigns unique IDs to text constants according to number ranges.  

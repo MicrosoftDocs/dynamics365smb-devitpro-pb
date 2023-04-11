@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: cdd7aa24-38cd-4c42-99d0-7003cb9b49f4
 caps.latest.revision: 9
-manager: edupont
 ---
 # How to: Create a Microsoft Dynamics NAV Server Instance
 A [!INCLUDE[nav_server](includes/nav_server_md.md)] instance is the service through which the various types of [!INCLUDE[navnow](includes/navnow_md.md)] clients interact with the [!INCLUDE[navnow](includes/navnow_md.md)] SQL Server database. When you install [!INCLUDE[nav_server](includes/nav_server_md.md)] on a computer, there is initially a single default instance. If your organization requires additional instances, then you can either install [!INCLUDE[nav_server](includes/nav_server_md.md)] on additional computers or create additional instances on the original [!INCLUDE[nav_server](includes/nav_server_md.md)] computer. In this procedure, you create a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance in the [!INCLUDE[nav_admin](includes/nav_admin_md.md)].  

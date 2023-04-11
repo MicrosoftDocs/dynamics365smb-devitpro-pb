@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c9dd426e-c4dc-43fe-b11a-8d916aaab76a
 caps.latest.revision: 22
-manager: edupont
 ---
 # How to: Register a Windows Client Control Add-in
 A [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in is delivered as a Microsoft .NET Framework–based assembly, which is a .dll file. An assembly for [!INCLUDE[nav_windows](includes/nav_windows_md.md)] add-ins can contain more than one control add-in where each control add-in has a unique name. Before you can use a control add-in on pages, you use the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] to register it on the **Control Add-ins** page of your [!INCLUDE[navnow](includes/navnow_md.md)] database.  

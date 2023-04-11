@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a1895add-b902-4fd6-b90e-27e251301aa6
 caps.latest.revision: 23
-manager: edupont
 ---
 # Arrange Page Fields in Rows and Columns Using FixedLayout Control in Dynamics NAV
 This topic describes how to use a FixedLayout group control on a page to arrange page fields in rows and columns, similar to a matrix. A FixedLayout group control is typically used to display statistical data. The following illustration shows an example of a page that uses a FixedLayout control to show sales totals for different time periods.  

@@ -11,11 +11,9 @@ ms.date: 02/06/2023
 ms.author: solsen
 ---
 
-<!-- NOTE: This article is an auto-generated stub from the metadata file. -->
-<!-- The sections marked with an EDIT_IS_REQUIRED require manual editing. -->
 # Delete externaleventsubscriptions
 
-Deletes an externaleventsubscriptions from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
+Deletes an external event subscription from [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
 
@@ -61,7 +59,7 @@ HTTP/1.1 204 No Content
 ## See Also
 
 [Tips for working with the APIs](/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips)  
-[externaleventsubscriptions](../resources/dynamics_externaleventsubscriptions.md)  
-[GET externaleventsubscriptions](dynamics_externaleventsubscriptions_get.md)  
-[POST externaleventsubscriptions](dynamics_externaleventsubscriptions_create.md)  
-[PATCH externaleventsubscriptions](dynamics_externaleventsubscriptions_update.md)  
+[External event subscriptions](../resources/dynamics_externaleventsubscriptions.md)  
+[GET external event subscriptions](dynamics_externaleventsubscriptions_get.md)  
+[POST external event subscriptions](dynamics_externaleventsubscriptions_create.md)  
+[PATCH external event subscriptions](dynamics_externaleventsubscriptions_update.md)  

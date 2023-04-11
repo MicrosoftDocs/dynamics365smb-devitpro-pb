@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 006974e4-4cfb-4c92-9683-10e160ef057c
 caps.latest.revision: 13
-manager: edupont
 ---
 # Testing Pages
 You use test page objects to simulate user interactions with the application. You can:  

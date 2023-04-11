@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ce7ff692-560d-4c0b-9461-fdd935af3ecf
 caps.latest.revision: 12
-manager: edupont
 ---
 # Configuring User Permissions to Queries
 You can control which users have permission to run a query object and access its resulting dataset. Similar to other [!INCLUDE[navnow](includes/navnow_md.md)] objects, you grant permission to a query in a permission set that you assign to the user's Windows account.  

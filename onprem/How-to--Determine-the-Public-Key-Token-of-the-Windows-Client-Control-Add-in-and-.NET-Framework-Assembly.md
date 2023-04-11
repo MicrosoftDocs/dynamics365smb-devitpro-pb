@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: f7ce3b2d-5e2e-4d2d-97fa-bed3a6add0d2
 caps.latest.revision: 20
-manager: edupont
 ---
 # How to: Determine the Public Key Token of the Windows Client Control Add-in and .NET Framework Assembly
 To use a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in on a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] page, you must register the assembly that contains the control add-in on the **Control Add-ins** page of the [!INCLUDE[navnowlong](includes/navnowlong_md.md)] database. To register an assembly, you provide the assembly's *public key token*. The public key token is a unique 16-character key that is given to the assembly when it is built and signed in Microsoft Visual Studio. To determine the public token key, you can run the Strong Name tool \(sn.exe\) on the assembly. The sn.exe is available with the Microsoft .NET Framework SDK. For more information about how to sign assemblies, see [Strong Name Signing \(sn.exe\)](https://go.microsoft.com/fwlink/?LinkID=150113&clcid=0x409) or [How to: Create a Windows Client Control Add-in](How-to--Create-a-Windows-Client-Control-Add-in.md).  

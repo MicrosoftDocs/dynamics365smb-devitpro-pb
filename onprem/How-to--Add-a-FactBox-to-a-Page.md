@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 276615ab-ab79-4f65-99e0-bf05cb3a86b0
 caps.latest.revision: 14
-manager: edupont
 ---
 # How to Add a FactBox to a Page in Dynamics NAV
 A FactBox is an area on the right side of a page that can display additional pages, charts, or system parts. To add a FactBox to a page, you add the FactBox area, and then add parts that contain charts, system parts, or pages of the ChartPart type or ListPart type.  

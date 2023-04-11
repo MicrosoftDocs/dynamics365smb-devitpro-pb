@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7dea6cb3-a530-4918-8726-d3316cfc2be1
 caps.latest.revision: 6
-manager: edupont
 ---
 # DELETEENCRYPTIONKEY
 Deletes the encryption key for the current [!INCLUDE[navnow](includes/navnow_md.md)] tenant.  

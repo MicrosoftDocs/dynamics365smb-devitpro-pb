@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6e6b736f-49d0-48d4-87a0-22ddc70784e4
 caps.latest.revision: 11
-manager: edupont
 ---
 # How to: Set Up Colored Indicators on Cues by Using the Style and StyleExpr Property
 You can configure a cue with a colored indicator that appears along its top border to provide a visual indication to users about the value of data in the cue. You can configure the indicator to behave in the following ways.  

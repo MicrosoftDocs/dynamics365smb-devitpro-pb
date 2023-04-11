@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: d3797441-20f0-4463-aa6e-45d61fef1f89
 caps.latest.revision: 17
-manager: edupont
 ---
 # System-Defined Variables
 [!INCLUDE[navnow](includes/navnow_md.md)] automatically declares and initializes several variables that you can use when you develop applications. The following table describes the system-defined variables.  

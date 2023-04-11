@@ -99,7 +99,6 @@ Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no f
 * [Azure Static Web Apps](/azure/static-web-apps/)  
 * [Azure App Service](/azure/app-service/quickstart-html)  
 * Third-party services such as [MkDocs](https://www.mkdocs.org/)  
-* Any website that can render MarkDown files using a [customization of the DocFX Flavored MarkDown engine](https://dotnet.github.io/docfx/tutorial/howto_customize_docfx_flavored_markdown.html)  
 
 You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure). That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 

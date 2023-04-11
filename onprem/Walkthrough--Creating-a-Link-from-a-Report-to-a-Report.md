@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9d74d7e1-2409-4c2a-96f1-280a4d47c7f1
 caps.latest.revision: 23
-manager: edupont
 ---
 # Walkthrough: Creating a Link from a Report to a Report
 This walkthrough illustrates how to set up a report to include a link from the **Customer - Top 10 List** report to the **Customer - Detail Trial Bal.** report. When you run the **Customer - Top 10 List** report in preview mode and show balance data, you can choose either a value in the **Balance \(LCY\)** column or a section of the pie chart to view detailed balance information. By including this functionality, you now have a dynamic report that enables you to drill down into data.  

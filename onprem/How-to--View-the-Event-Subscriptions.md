@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 59c5f3db-2c12-47eb-8a06-3e101e11971b
 caps.latest.revision: 3
-manager: edupont
 ---
 # How to: View the Event Subscriptions
 You can view information about all the subscribers to events in an application from **Event Subscriptions** page. You can open this page directly from the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] or from the **Session List** page in the [!INCLUDE[navnow](includes/navnow_md.md)] client  

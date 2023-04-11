@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 97f21877-f8b1-4d61-ac6c-89be487cb489
 caps.latest.revision: 10
-manager: edupont
 ---
 # Altering Databases - Integration Tab
 Specifies database settings that determine how [!INCLUDE[navnow](includes/navnow_md.md)] integrates with SQL Server and external tools.  

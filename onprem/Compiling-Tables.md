@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 238f8e66-249f-479b-8e8a-f07454318308
 caps.latest.revision: 4
-manager: edupont
 ---
 # Compiling Tables
 This topic describes requirements and restrictions for compiling a table object after you make changes to a table’s schema, such as adding or removing a table field.  

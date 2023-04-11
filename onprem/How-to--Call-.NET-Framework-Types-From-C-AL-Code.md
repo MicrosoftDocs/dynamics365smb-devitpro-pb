@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5900cae9-c742-4c66-812c-ab9a82887eba
 caps.latest.revision: 19
-manager: edupont
 ---
 # Call .NET Framework Types From C/AL Code in Dynamics NAV
 You can call .NET Framework type members, including methods, properties, and constructors, from C/AL code. To call members, you define a DotNet type variable that references the .NET Framework assembly type that contains the member and then call the variable from C/AL code of the [!INCLUDE[navnow](includes/navnow_md.md)] object. A .NET Framework interoperability example is included in this topic.  

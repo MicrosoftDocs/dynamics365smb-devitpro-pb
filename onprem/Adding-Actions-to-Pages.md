@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5035ae11-828f-4d28-ba42-c28acec87ab7
 caps.latest.revision: 14
-manager: edupont
 ---
 # Adding Actions to Pages
 In the RoleTailored client for [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)], menu items are called actions. The topics in this section provide information about creating and modifying actions on pages. Creating actions can include adding Action Items to a page, using Action Designer, configuring Home Items on a user Role Center, or adding Reports to a page.  

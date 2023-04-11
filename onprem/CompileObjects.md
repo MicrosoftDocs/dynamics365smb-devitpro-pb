@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: bf71a267-45d8-43cf-b881-f0b3976e81e5
 caps.latest.revision: 28
-manager: edupont04
 ---
 # CompileObjects
 Compiles objects from the specified database.  

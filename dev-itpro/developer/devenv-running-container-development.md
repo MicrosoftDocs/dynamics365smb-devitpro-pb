@@ -23,7 +23,7 @@ Install Docker and configure it for Windows Containers.
 1. Please choose the version of Docker that is appropriate for the host operating system.
 
     - For Windows 10, use [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) - (option to qualify for free SKU - license may be required).
-    - For Windows Server, use [Mirantis Container Runtime](https://docs.mirantis.com/mcr/20.10/install/mcr-windows.htmluse) - (option to qualify for free SKU - license may be required).
+    - For Windows Server, use [Mirantis Container Runtime](https://docs.mirantis.com/mcr/23.0/overview.html) - (option to qualify for free SKU - license may be required).
     - An alternative is to use Docker Engine, which is open source and community-driven. For more information, see [Docker and Business Central](https://freddysblog.com/2021/10/30/docker-and-business-central/).
         
 2. For Windows 10, switch Docker to use Windows containers. By default Docker uses Linux containers.

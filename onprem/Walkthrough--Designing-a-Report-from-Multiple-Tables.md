@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 60f0c302-d4b9-410b-b44c-0a6ca0a9e123
 caps.latest.revision: 21
-manager: edupont
 ---
 # Walkthrough: Designing a Report from Multiple Tables
 A report object is composed of a report dataset and a visual layout. You design a report by first defining the dataset and then designing the visual layout. You design the dataset for reports in Microsoft Dynamics NAV Report Dataset Designer and design the layout in Visual Studio Report Designer. After you design a report, you can make it available to applications that are running on the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. A report can be designed from one table or multiple tables. This walkthrough demonstrates how to design a report from multiple tables.  

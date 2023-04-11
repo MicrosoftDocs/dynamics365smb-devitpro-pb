@@ -1,5 +1,5 @@
 ---
-title: "Get Started with AL"
+title: "Get started with AL"
 description: "Description of how to get started with the development environment"
 author: SusanneWindfeldPedersen
 ms.date: 05/18/2022
@@ -11,7 +11,7 @@ ms.author: solsen
 ms.custom: intro-internal
 ---
 
-# Get Started with AL
+# Get started with AL
 
 To start writing extensions for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], you'll need a [!INCLUDE[prod_short](includes/prod_short.md)] tenant, Visual Studio Code, and the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]. Visual Studio Code is a cross-platform editor that you'll use for coding and debugging.
 
@@ -23,7 +23,7 @@ Go through the following steps to set up a sandbox environment. Having set up a 
 > If you want to create a container-based sandbox, see [Get started with the Container Sandbox Development Environment](devenv-get-started-container-sandbox.md). For information about which sandboxes you can choose, see [Sandbox Environments for Dynamics 365 Business Central Development](devenv-sandbox-overview.md).
 
 > [!IMPORTANT]  
-> It is not supported to publish an extension from Visual Studio Code with the same identifiers as an extension which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
+> It's not supported to publish an extension from Visual Studio Code with the same identifiers as an extension which is already published to AppSource. Identifiers include the combination of appID and version or name, publisher, and version. If you do publish such an extension, it can be removed at any time.
 
 1) Sign up for a [Dynamics 365 Business Central sandbox](https://signup.microsoft.com/signup?sku=6a4a1628-9b9a-424d-bed5-4118f0ede3fd&ru=https%3A%2F%2Fbusinesscentral.dynamics.com%2FSandbox%2F%3FredirectedFromSignup%3D1). 
 2) Download [Visual Studio Code](https://code.visualstudio.com/Download).  
@@ -71,10 +71,6 @@ To modify the telemetry setting, select <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P<
 > [!TIP]  
 > The `settings.json` file contains user and workspace settings, these options can be modified to suit your preference. If you want to modify Visual Studio Code editor options and functional behavior settings, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
 
-<!-- 
-## The symbol file
-The symbol file contains metadata of the application. This is what your extension is being built on, and therefore the symbol file must be present. If it is not present, you will be prompted to download it. For more information about the platform symbol file, see [Symbols](/dynamics365/business-central/dev-itpro/developer/devenv-get-started). -->
-
 ## Installing and publishing an extension
 
 To make your extension available to users, the package must be published to a specific [!INCLUDE[prod_short](includes/prod_short.md)] server instance. The extension can be installed for one or more tenants. For more information about how to install and publish an extension, see [How to: Publish and Install an Extension](devenv-how-publish-and-install-an-extension-v2.md). 
@@ -87,7 +83,7 @@ If you add new permission sets and want to control the access to develop and pub
 
 To prohibit a user from publishing, just remove the user from the **EXTEND. MGT. - ADMIN** permission set.
 
-> [!NOTE]
+> [!NOTE]  
 > The **EXTEND. MGT. - ADMIN** permission set was introduced in Business Central 2021 release wave 1 as a replacement for the **D365 EXTENSION MGT** permission set in earlier versions.
 
 ## Next steps

@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1ad0b37b-6d38-4c92-9ca6-14888864fb6b
-manager: edupont
 ---
 # Walkthrough: Installing the Demo Version
 You can install the Demo version of [!INCLUDE[navnowlong](includes/navnowlong_md.md)] to evaluate or learn how to use the product. You should not use the [!INCLUDE[demolong](includes/demolong_md.md)] as the basis for an actual deployed production environment.  

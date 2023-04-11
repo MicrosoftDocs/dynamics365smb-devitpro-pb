@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 386dbfff-1518-4731-a2b1-424b556ed42a
 caps.latest.revision: 14
-manager: edupont
 ---
 # Compiling Objects
 Before you can run an object, you must compile the object. To compile an object, do one of the following:  
