@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 60509047-8419-4b08-a391-83117489fdee
 caps.latest.revision: 17
-manager: edupont
 ---
 # Serializing .NET Framework Types
 In Microsoft .NET Framework, *serialization* is the process of converting an object into a format that can transmitted across a network connection. Microsoft Dynamics NAV .NET Framework interoperability uses serialization for communication between client-side .NET Framework objects and server-side .NET Framework objects. When you configure DotNet variables in a [!INCLUDE[navnow](includes/navnow_md.md)] object, you can specify .NET Framework objects to target either the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] or [!INCLUDE[nav_server](includes/nav_server_md.md)]. In some cases, a client-side object and a server-side object must communicate and share data, such as return values and parameters. The serialization occurs when the following conditions are true:  

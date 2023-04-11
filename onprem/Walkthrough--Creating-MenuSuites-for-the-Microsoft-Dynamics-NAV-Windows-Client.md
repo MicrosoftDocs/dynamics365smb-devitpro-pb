@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c0e4c4ed-eeb5-4a0e-ba08-254ed7dc3353
 caps.latest.revision: 14
-manager: edupont
 ---
 # Walkthrough: Creating MenuSuites for the Microsoft Dynamics NAV Windows Client
 MenuSuites display menus on the Departments page in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. MenuSuites contain links that enable you to browse application or objects, and make the applications or objects easier to access in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)]. A MenuSuite contains a set of menus that enable you to access reports, pages, codeunits, and so on, from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  

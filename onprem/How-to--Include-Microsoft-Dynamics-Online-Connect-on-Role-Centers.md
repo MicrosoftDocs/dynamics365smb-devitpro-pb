@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6be897c2-9f68-4b0d-a40e-f66566c7f267
 caps.latest.revision: 15
-manager: edupont
 ---
 # How to: Include Microsoft Dynamics Online Connect on Role Centers
 The RoleTailored client installation includes a control add-in that you can use on Role Centers to connect to and display information from Microsoft Dynamics Online Connect. The information from Connect is based on the Role Center's profile. The Connect control add-in is provided in the Microsoft.Dynamics.NAV.Client.DynamicsOnlineConnect.dll assembly file. By default, the assembly is installed on the computer running the RoleTailored client in the [!INCLUDE[navnow_install](includes/navnow_install_md.md)]\\RoleTailored Client\\Add-ins\\Connect folder. Setting up the control add-in for Connect is similar to other control add-ins. For more information, see [Installing and Configuring Windows Client Control Add-ins on Pages](Installing-and-Configuring-Windows-Client-Control-Add-ins-on-Pages.md) and [Including Microsoft Dynamics Online Connect on Role Centers](Including-Microsoft-Dynamics-Online-Connect-on-Role-Centers.md).  

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9e672917-a2f5-47ab-89b8-5b16c412aea5
 caps.latest.revision: 3
-manager: edupont
 ---
 # Administrating in the Dynamics NAV Development Environment
 You can use the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)] to administer certain aspects of [!INCLUDE[navnow](includes/navnow_md.md)] databases and licenses. For more information, see the topics in this section.  

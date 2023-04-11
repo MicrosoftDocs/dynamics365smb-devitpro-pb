@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 692b5780-53c7-4747-9c2d-9b97afefeb81
 caps.latest.revision: 21
-manager: edupont
 ---
 # Walkthrough: Creating a Query That Uses a Totaling Method and Sorting
 This walkthrough demonstrates how to modify an existing query, which links two tables, so that the query includes a totaling method on a field in one of the tables.  

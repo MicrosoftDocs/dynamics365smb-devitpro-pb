@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 author: jswymer
-manager: edupont
 ms.prod: "dynamics-nav-2017"
 ---
 # Changes to Microsoft Dynamics NAV Cmdlets From Previous Release

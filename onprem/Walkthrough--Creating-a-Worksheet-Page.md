@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b5a9ec61-2a4a-446b-8c59-62fe477a7c31
 caps.latest.revision: 51
-manager: edupont
 ---
 # Walkthrough: Creating a Worksheet Page
 In [!INCLUDE[navnow](includes/navnow_md.md)], you can use a worksheet page type to create two types of pages:  

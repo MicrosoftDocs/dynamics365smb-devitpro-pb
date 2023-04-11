@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0025a5a2-500c-4464-92c4-48dda418e1df
 caps.latest.revision: 22
-manager: edupont
 ---
 # ImportObjects
 Imports objects from a file to the specified database.  

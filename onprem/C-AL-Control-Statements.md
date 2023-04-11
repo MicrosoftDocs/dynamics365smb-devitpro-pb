@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: cea1b445-58fe-4c4d-9843-7700e64bb46f
 caps.latest.revision: 8
-manager: edupont
 ---
 # C/AL Control Statements
 All the C/AL programs that you create consist of one or more statements, which are executed sequentially in top-down order. However, you will often need to control the direct top-down flow of the execution. One or more statements may have to be repeated more than once, or you may have to make the execution of a certain statement conditional. To do this, you use control structures.  

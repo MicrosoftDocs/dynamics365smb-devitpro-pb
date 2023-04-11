@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: ebeaf3bf-796a-4862-bd1f-f3c3c7ce97fe
 caps.latest.revision: 14
-manager: edupont
 ---
 # OCX Data Type
 References a custom control, such as OCX or ActiveX control.  

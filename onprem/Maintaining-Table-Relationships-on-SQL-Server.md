@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8d05fd7b-5132-48a3-8089-67528185c4cb
 caps.latest.revision: 6
-manager: edupont
 ---
 # Maintaining Table Relationships on SQL Server
 The [TableRelation Property](TableRelation-Property.md) in [!INCLUDE[nav_2009_short](includes/nav_2009_short_md.md)] can be represented in SQL Server by table relationships known as foreign key constraints. These table relationships are metadata about the tables and are only intended for modeling and diagramming; they are not used to enforce data integrity. The foreign key constraints are disabled.  

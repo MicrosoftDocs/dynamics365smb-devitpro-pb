@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2017"
 ms.assetid: 28566a8f-eccf-4344-bc00-1df9b6918783
 caps.latest.revision: 29
-manager: edupont
 ---
 # How to: Set Up Multiple Web Server Instances for the Microsoft Dynamics NAV Web Client
 

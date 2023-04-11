@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9759bd50-26ac-40cd-918f-1f329ee20193
 caps.latest.revision: 20
-manager: edupont
 ---
 # Installation Options
 When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you can select from a list of predefined installation options, which are logical collections of [!INCLUDE[navnow](includes/navnow_md.md)] components.  

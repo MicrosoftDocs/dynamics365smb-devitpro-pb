@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7715e99d-ebf2-4443-a426-6b2b0a72d148
 caps.latest.revision: 4
-manager: edupont
 ---
 # Task Scheduler
 The task scheduler enables you to control when certain operations or processes \(in other words *tasks*\) are run. Basically, a task is a codeunit or report that is scheduled to run at a specific data and time. Tasks run in a background session between the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance and database. Behind the scenes, the task scheduler is used by the job queue to process job queue entries that are created and managed from the clients.  

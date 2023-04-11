@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6a412e5f-fbc2-4092-accc-74c51ede17b7
 caps.latest.revision: 5
-manager: edupont
 ---
 # How to: Select the Network Type of the Database
 The default setting allows [!INCLUDE[navnow](includes/navnow_md.md)] to connect to a server using the default client network type assigned by SQL Server. Initially, this is the **Named Pipes** protocol. However, if the SQL Server Client Utilities have been installed on the client computer, you can change the setting using the Client Network Utility.  

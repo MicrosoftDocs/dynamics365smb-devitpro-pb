@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c69b83d1-8a3d-482e-bff7-bdb9429fb9ff
 caps.latest.revision: 10
-manager: edupont
 ---
 # Designing Report Layouts from the Microsoft Dynamics NAV Development Environment
 After you have created a dataset for a report, you design the report layout. The report layout determines how the report looks when it is viewed, printed, and saved from the [!INCLUDE[navnow](includes/navnow_md.md)] client. The report layout specifies which fields of the dataset are included in the report and how they are arranged, the format of text that appears on the report \(such as font type and color\), margins, background images, and more.  

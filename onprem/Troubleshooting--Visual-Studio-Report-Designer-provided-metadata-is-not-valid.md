@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: dff1ed92-0a1d-4191-a443-c159c2cdc9a1
 caps.latest.revision: 11
-manager: edupont
 ---
 # Troubleshooting: Visual Studio Report Designer provided metadata is not valid
 You cannot open Visual Studio Report Designer and get the following error:  

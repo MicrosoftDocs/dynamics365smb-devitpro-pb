@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e153944c-015b-49ea-9a82-a4b462c5a103
 caps.latest.revision: 15
-manager: edupont
 ---
 # Creating or Loading a Setup Configuration File
 You can customize the list of components to install or configure settings for individual components. For more information, see [How to: Choose Components to Install](How-to--Choose-Components-to-Install.md) and [How to: Preconfigure Components](How-to--Preconfigure-Components.md).  

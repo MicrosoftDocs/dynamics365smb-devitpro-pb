@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e6241267-0114-4bb6-8994-918a18dcaa62
 caps.latest.revision: 11
-manager: edupont
 ---
 # Key Virtual Table
 The **Key** virtual table contains information about the keys that are defined in each table in the database.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c29658cf-c786-4d10-bc4d-e02bc53fd88c
 caps.latest.revision: 4
-manager: edupont
 ---
 # Setting Up Colored Indicators on Cues
 You can set up Cues with an indicator that changes color based on the data values in the Cues. The indicator appears as a bar along the top border of the Cue tile. It provides a visual signal of the status of the Cue's activity, which can indicate various conditions such as favorable or unfavorable to prompt the user to take action.  

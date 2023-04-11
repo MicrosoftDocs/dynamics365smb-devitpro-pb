@@ -1,7 +1,6 @@
 ---
 title: "How to: Enter Dates and Time"
 author: jswymer
-manager: edupont04
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na

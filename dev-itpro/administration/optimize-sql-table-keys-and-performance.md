@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: f64156c7-0319-40ef-adfa-2c1d4ee1b852
 caps.latest.revision: 15
-manager: edupont
 ---
 # Table Keys and Performance in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]
 When you write AL code that searches through a subset of the records in a table, you must consider what keys are defined for the table and write code that optimizes for the keys. For example, the entries for a specific customer are usually a small subset of a table containing entries for all the customers.  

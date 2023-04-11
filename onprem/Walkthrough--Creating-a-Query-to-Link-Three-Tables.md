@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b8433081-ff30-40eb-81a2-9832fb4caf56
 caps.latest.revision: 22
-manager: edupont
 ---
 # Walkthrough: Creating a Query to Link Three Tables
 This walkthrough demonstrates how to create a query that links three tables. It also includes the SQL query that this query object represents.  
