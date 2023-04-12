@@ -30,7 +30,7 @@ The following example illustrates code that is problematic and might cause perfo
 function invokeALTriggerTheWrongWay() {
     // Invoke the trigger every 10 seconds, ignoring 
     // whether the previous call has completed
-    window.setTimeout(() => {
+    window.setInterval(() => {
         Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
             "MyTrigger",
             arguments,
