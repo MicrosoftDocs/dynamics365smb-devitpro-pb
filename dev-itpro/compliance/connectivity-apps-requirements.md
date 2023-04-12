@@ -1,14 +1,14 @@
 ---
 title: Requirements for connectivity apps
 description: Learn about connectivity apps, how they can increase business productivity, and how to get your app listed as a connectivity app.
-ms.date: 09/27/2022
+ms.date: 04/11/2023
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: edupont
+ms.reviewer: solsen
 ---
 
-# Requirements for Connectivity Apps
+# Requirements for connectivity apps
 
 To get a connectivity app listed in [!INCLUDE [prod_short](../includes/prod_short.md)] online, the app publisher must follow certain requirements and best practices. This article explains these requirements and how to apply to have your connectivity app included.
 
@@ -40,12 +40,12 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 
 * Sales volume requirements
 
-    Sales volume requirements ensure the app provider is constantly serving a critical mass of customers per listed country, and is continuously growing its customer base. The concrete sales volume requirements may change over time and for various markets.  
+    Sales volume requirements ensure the app provider is constantly serving a critical mass of customers per listed country/region, and is continuously growing its customer base. The concrete sales volume requirements may change over time and for various markets.  
 
     Currently, an app is eligible for review to be included as a connectivity app on the following terms:
 
-  * It has 10 paying customers in its primary country
-  * The ISV commits to 25 paying customers in the country after a six months ramp-up period.  
+  * It has 10 paying customers in its primary country/region
+  * The ISV commits to 25 paying customers in the country/region after a six months ramp-up period.  
 
     The six months ramp-up period starts at the date when the [!INCLUDE [prod_short](../includes/prod_short.md)] update that includes the app in the listing of connectivity apps is generally available.
 
@@ -57,7 +57,7 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 
   * Run recurring reviews of existing connectivity apps experiences  
 
-    The council will comment on a submitted application's functionality, user experience, use of onboarding components, and other considerations that influence the customer experience with the app and the support experience. We expect the ISV to make the relevant changes, based on the guidance and feedback given by the council.  
+    The council comments on a submitted application's functionality, user experience, use of onboarding components, and other considerations that influence the customer experience with the app and the support experience. We expect the ISV to make the relevant changes, based on the guidance and feedback given by the council.  
 
 * Functional app recommendations and requirements
 
@@ -82,7 +82,7 @@ Publishers of connectivity apps benefit from in-product visibility. They also ha
 
 ## Get the app listed as a connectivity app
 
-If you fulfill the requirements outlined above, you can apply to get listed by sending an e-mail to [Business Central Connectivity Apps Requests](mailto:bc-connectivity-apps@microsoft.com).
+If you fulfill the requirements outlined, you can apply to get listed by sending an e-mail to [Business Central Connectivity Apps Requests](mailto:bc-connectivity-apps@microsoft.com).
 
 Make sure you specify the following information:
 
@@ -91,11 +91,11 @@ Make sure you specify the following information:
 * Publisher Name
 * Publisher ID
 * Connectivity type, such as *banking*  
-* Country where you want your app to be listed
+* Country/region where you want your app to be listed
 
 ## How often is the list of connectivity apps updated?
 
-ISVs may submit applications continuously, and quarterly reviews will be scheduled. If an app fulfills the requirements to become a connectivity app, the ISV is notified immediately, and will coordinate with Microsoft for addition to the list at the earliest possible convenience.  
+ISVs may submit applications continuously, and quarterly reviews are scheduled. If an app fulfills the requirements to become a connectivity app, the ISV is notified immediately, and will coordinate with Microsoft for addition to the list at the earliest possible convenience.  
 
 > [!NOTE]  
 > The requirements to become a connectivity app as listed above may change over time. The changes will be reflected in this article, so make sure you follow the recommendations and requirements here to make sure your app complies with the current rules.

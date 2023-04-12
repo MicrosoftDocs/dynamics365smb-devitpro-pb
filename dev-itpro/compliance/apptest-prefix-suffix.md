@@ -3,7 +3,7 @@ title: "Prefix and suffix for naming in extensions"
 description: "Use a prefix or suffix for names in your extension."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.author: freddyk
 ---
 
-# Benefits and Guidelines for using a Prefix or Suffix
+# Benefits and guidelines for using a prefix or suffix
 
 In your extension, the name of each new application object (table, page, codeunit), must contain a prefix or suffix. This rule applies to all objects. You can use the [Caption](../developer/properties/devenv-caption-property.md) values for what you decide to display to the user. When you modify a core Dynamics 365 object using a table extension or a page extension, the prefix/suffix must be defined at the control/field/action/group level.
 
@@ -23,12 +23,12 @@ Environments that have extensions with name collisions can experience issues whe
 
 ## General rules
 
-- The prefix/suffix must be at least 3 characters
+- The prefix/suffix must be at least three characters
 - The object/field name must start or end with the prefix/suffix
 - If a conflict arises, the one who registered the prefix/suffix always wins
 - For your own objects, you must set the prefix/suffix at the top object level
 - For pages/tables/enums/reports/permissionsets in the base application or other apps that you extend, you must set the prefix/suffix at the top object level and also at the control/field/action/procedure/values/dataitem/column level
-- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer will do. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
+- Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool to find all missing prefixes and/or suffixes. Configuration options for this tool can be found [here](../developer/analyzers/appsourcecop.md). The Rules section explains the different checks that the analyzer does. For prefix/suffix detection, refer to the Configuration section. It explains how to set your affixes in the AppSourceCop.json file.
 
 ## Affixes requirements for extensions
 
@@ -38,21 +38,22 @@ Environments that have extensions with name collisions can experience issues whe
 > The use of affixes for object names is required for AppSource submissions as part of the [Technical Validation Checklist](../developer/devenv-checklist-submission.md).
 
 
-In order to meet the requirements for the AppSource technical validation, you must have a 3 letters affix registered for your extension publisher and you must use the affix in your extension.
+In order to meet the requirements for the AppSource technical validation, you must have a three letters affix registered for your extension publisher, and you must use the affix in your extension.
 
-If you do not have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
+If you don't have any affixes registered yet, contact us at [d365val@microsoft.com](mailto:d365val@microsoft.com) and provide us with the following information to reserve the prefix/suffix of your choosing:
+
 - Your MPN ID,
-- The publisher name that you will use in your extensions (in the app.json file),
-- You must provide at least 5 affix suggestions. Each affix must be exactly 3 characters.
+- The publisher name that you use in your extensions (in the app.json file),
+- You must provide at least five affix suggestions. Each affix must be exactly three characters.
 
 > [!NOTE]
-> Affixes are not case-sensitive, which means that for example "ABC", "abc", and "AbC" are treated as the same affix. Providing both "ABC" and "abc" counts as only one of your suggestions.
+> Affixes aren't case-sensitive, which means that for example "ABC", "abc", and "AbC" are treated as the same affix. Providing both "ABC" and "abc" counts as only one of your suggestions.
 
-Note, that you are not required to change any already registered affixes; you can continue using these affixes. The guidelines above only apply to new registrations.
+Note, that you aren't required to change any already registered affixes; you can continue using these affixes. The guidelines only apply to new registrations.
 
 ### For per-tenant extensions
 
-Per-tenant extensions are not required to use a prefix or suffix, but we strongly recommend that you do so. You can use *pte* as prefix or suffix to avoid conflicts with AppSource apps or base objects.
+Per-tenant extensions aren't required to use a prefix or suffix, but we strongly recommend that you do so. You can use *pte* as prefix or suffix to avoid conflicts with AppSource apps or base objects.
 
 > [!NOTE]
 > If your per-tenant extension causes a conflict with a new object in the base application or an updated AppSource app, then the per-tenant extension will be required to make the change.
@@ -133,7 +134,7 @@ codeunit 70000001 SalespersonMySuffix
 
 ## Examples – per-tenant extension
 
-Let's say that you're creating a per-tenant extension, **myext** and you want to future-proof the naming by applying the prefix or suffix *pte*, which you are not required to register.  
+Let's say that you're creating a per-tenant extension, **myext** and you want to future-proof the naming by applying the prefix or suffix *pte*, which you aren't required to register.  
 
 Let's look at some examples:
 
@@ -148,9 +149,9 @@ Let's look at some examples:
 
 Alternatively, let's say that your company is Fabrikam, and you're building an app called *Rentals*. First thing, you email [d365val@microsoft.com](mailto:d365val@microsoft.com) and register *fab* as your company affix.  
 
-A registered affix must be 3 letters, no more, no less, and you must provide the publisher name, which you will be using in app.json when you apply for an affix.  
+A registered affix must be three letters, no more, no less, and you must provide the publisher name, which you use in the app.json file when you apply for an affix.  
 
-Once you get confirmation from Microsoft, you are free to use object and field names that start with *fab* or end with *fab*. Here are some examples:
+Once you get confirmation from Microsoft, you're free to use object and field names that start with *fab* or end with *fab*. Here are some examples:
 
 | Prefixes               | Suffixes               |
 |------------------------|------------------------|
@@ -159,7 +160,7 @@ Once you get confirmation from Microsoft, you are free to use object and field n
 | fab salespersoncode | salespersoncode fab |
 | FabSalesPersonCode  | SalesPersonCodefab  |
 
-At Fabrikam, another team is building another app, so you request a special affix for your app so that the two Fabrikam apps can be kept apart. In this scenario, you do not have to register anything with Microsoft, as long as you do this with your company affix. Here are some examples:
+At Fabrikam, another team is building another app, so you request a special affix for your app so that the two Fabrikam apps can be kept apart. In this scenario, you don't have to register anything with Microsoft, as long as you do this with your company affix. Here are some examples:
 
 | Prefixes               | Suffixes               |
 |------------------------|------------------------|
@@ -168,7 +169,7 @@ At Fabrikam, another team is building another app, so you request a special affi
 |fab rentals salesperson code|salesperson code rentals fab|
 |FabRentalsSalesPersonCode|SalesPersonCodeRentalsfab|
 
-In this scenario, your AppSourceCop.json configuration will specify `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
+In this scenario, your AppSourceCop.json file configuration specifies `fab-rentals` and `rentals-fab` as values for `mandatoryaffixes`, even though only *fab* was registered with Microsoft.
 
 ## See Also
 
