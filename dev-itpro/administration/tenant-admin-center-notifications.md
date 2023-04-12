@@ -87,6 +87,10 @@ This Logic App queries Application Insights every number of minutes (specified i
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
 
+##### Example: Post adaptive cards in Teams for user permission errors
+This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts adaptive cards to a specified Microsoft Teams channel for each permission error users in environments emitting telemetry to the specified Application Insights resource have encountered. Using the adaptive card, administrators can open Dynamics 365 Business Central to assign the needed permissions to the user.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FPermissionError.json)
 
 #### Reporting
 
