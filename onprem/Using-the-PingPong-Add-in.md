@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: ed66301c-cdff-4992-9ef1-60fd744097e5
 caps.latest.revision: 3
-manager: edupont
 ---
 # Using the PingPong Add-in
 The [!INCLUDE[navnow](includes/navnow_md.md)] PingPong add-in can be invoked to request a callback after a specified timeout. The PingPong add-in does one callback on request. The callback is requested from C/AL code by specifying the time to wait in milliseconds.  

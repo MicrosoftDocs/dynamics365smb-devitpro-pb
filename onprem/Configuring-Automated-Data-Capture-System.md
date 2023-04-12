@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9516b1e6-fc36-4b4e-9918-4250cf09c95d
 caps.latest.revision: 24
-manager: edupont
 ---
 # Configuring Automated Data Capture System
 The Automated Data Capture System \(ADCS\) is a [!INCLUDE[navnow](includes/navnow_md.md)] tool that gives companies the ability to accurately capture data for inbound, outbound, and internal documents, primarily in connection with warehouse activities. ADCS enables company employees to use handheld devices and radio frequency technology to validate warehouse inventories.  

@@ -1,7 +1,6 @@
 ---
 title: "Managing Permissions and Permission Sets"
 author: edupont04
-manager: edupont
 ms.custom: na
 ms.date: 10/01/2018
 ms.reviewer: na

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 17868265-734d-448c-bc02-5aa9047f1dee
 caps.latest.revision: 9
-manager: edupont
 ---
 # Business Areas and Granules
 [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] contains business areas. You can control how the license file controls the access that you have to these business areas and the functionality that they contain.  

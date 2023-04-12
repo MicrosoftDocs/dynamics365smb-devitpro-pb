@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 25a6a189-fd8e-4324-9f29-88af759716db
 caps.latest.revision: 23
-manager: edupont
 ---
 # Walkthrough: Inserting Data from XML Documents to Multiple Tables
 XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)] database to an XML document or import data from an XML document to a [!INCLUDE[navnow](includes/navnow_md.md)] database. The data can be exported from or imported to multiple tables in the database. Exporting data from a [!INCLUDE[navnow](includes/navnow_md.md)] database into XML format enables seamless exchange of information between different computer systems. You only need a basic knowledge of XML to design and work with XMLports.  

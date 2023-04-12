@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 527c543b-3817-4e04-be68-a68a8484799e
 caps.latest.revision: 15
-manager: edupont
 ---
 # How to: Unlock an Object
 You can lock and unlock objects to prevent other developers from making changes while you work with those objects. If you lock an object, then only you can save changes to the object. After you save your changes, you unlock the object so that other developers can make changes to that object.  

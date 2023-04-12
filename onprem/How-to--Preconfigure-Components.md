@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 511d8c03-364b-4595-a11e-4cfa6710d92c
 caps.latest.revision: 21
-manager: edupont
 ---
 # How to: Preconfigure Components
 You can preconfigure components before you install [!INCLUDE[navnow](includes/navnow_md.md)] so that you do not have to configure them after. You can also configure Setup components and then save them to Setup configuration files before you deploy them to users. For more information, see [How to: Create or Load a Setup Configuration File](How-to--Create-or-Load-a-Setup-Configuration-File.md).  

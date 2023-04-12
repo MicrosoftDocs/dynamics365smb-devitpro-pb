@@ -11,7 +11,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e224ae1d-8147-419a-9b34-037729c75a2d
 caps.latest.revision: 11
-manager: edupont
 ---
 # C/AL WITH Statements
 The following syntax shows a WITH-DO statement.  

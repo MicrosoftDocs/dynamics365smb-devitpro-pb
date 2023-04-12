@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c63a68cb-3855-4ab9-9a35-99f02715a7de
 caps.latest.revision: 8
-manager: edupont
 ---
 # How to Add New Database Files in Dynamics NAV
 You can expand a database by creating a new database file in the database.  

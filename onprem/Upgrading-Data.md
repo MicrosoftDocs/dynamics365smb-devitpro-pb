@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6c8bb4a0-29b2-46fb-b268-3ebc16b4a80a
 caps.latest.revision: 9
-manager: edupont
 ---
 # Upgrading Data in Microsoft Dynamics NAV
 This topic describes how to upgrade data in the business database. You perform a data upgrade:  

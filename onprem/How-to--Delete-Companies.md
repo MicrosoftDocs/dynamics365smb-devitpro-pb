@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a5292b5b-7eb4-4f98-9f0e-7dd6a0492ad1
 caps.latest.revision: 9
-manager: edupont
 ---
 # How to: Delete Companies
 You can delete companies in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)]. You can also delete companies by using the **Remove-NAVCompany** Windows PowerShell cmdlet.  

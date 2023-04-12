@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c428ae82-1f49-472c-89da-2dd1fdebc1b9
 ms.author: edupont
-manager: edupont
 ---
 # Copyright and Trademarks
 Please refer to the following for information on notices and trademarks.  

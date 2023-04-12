@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 05e8a8fc-bcbd-4cd6-b16c-e4f52b7d5491
 caps.latest.revision: 70
-manager: edupont
 ---
 # Configuring the Microsoft Dynamics NAV Windows Client
 When you install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], the **Specify Parameters** page in [!INCLUDE[navnow](includes/navnow_md.md)] Setup prompts you for configuration information to enable the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] to connect to [!INCLUDE[nav_server](includes/nav_server_md.md)]. This information is then saved in the default ClientUserSettings.config file.  

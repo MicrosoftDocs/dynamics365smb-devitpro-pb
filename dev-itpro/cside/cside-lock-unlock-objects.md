@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 295f6231-82dd-4265-9942-97e7a3a5ee9f
 caps.latest.revision: 10
-manager: edupont
 ---
 # Locking and Unlocking Objects
 You can lock an object in Object Designer so that other developers cannot save design changes to the object. After you lock an object, the **Locked** field in Object Designer is selected, and the **Locked By** column shows the user who locked the object.  

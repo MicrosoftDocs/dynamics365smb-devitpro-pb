@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 82e799d6-dbe0-4e9e-8507-bc43862ac201
 caps.latest.revision: 10
-manager: edupont
 ---
 # EXPORTENCRYPTIONKEY
 Returns a password protected temporary filepath containing the encryption key.  

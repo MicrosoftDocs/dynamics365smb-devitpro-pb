@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 01fb2663-089f-4c1b-9a47-98de81140426
 caps.latest.revision: 24
-manager: edupont
 ---
 # Walkthrough: Adding Actions to a Customer List Page
 In this walkthrough, you will learn how to add a new item to an **Action** tab and then display that item as an icon on the ribbon. The ribbon is located at the top of most pages and is used to provide users with easy access to common or important actions. Action tab items are referred to as *actions*. Actions that are displayed on the ribbon are referred to as *promoted actions*.  

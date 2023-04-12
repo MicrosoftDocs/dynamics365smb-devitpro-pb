@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6c16aab5-df22-4af4-a215-beff55b67c8e
 caps.latest.revision: 11
-manager: edupont
 ---
 # How to: Manage Breakpoints from the Debugger Code Viewer
 You can view, set, enable, disable, or delete breakpoints directly in the **Code** part of the **Debugger** window.  

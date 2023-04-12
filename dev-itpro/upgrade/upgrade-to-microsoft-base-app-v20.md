@@ -5,7 +5,7 @@ ms.topic: article
 ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
-ms.date: 03/05/2022
+ms.date: 04/11/2023
 
 ---
 
@@ -222,7 +222,7 @@ You'll create two versions of this extension. The first version contains the tab
       "logo": "",
       "dependencies": [],
       "screenshots": [],
-      "platform": "1920.0.0.0",
+      "platform": "20.0.0.0",
       "idRanges": [  ],
       "contextSensitiveHelpUrl": "https://bc14baseapptablesonly.com/help/",
       "showMyCode": true,

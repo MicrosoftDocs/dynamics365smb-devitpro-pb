@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 5c13ad00-234e-4307-8159-deef62da9b90
 caps.latest.revision: 28
-manager: edupont
 author: jswymer
 ---
 # Business Central Performance Counters

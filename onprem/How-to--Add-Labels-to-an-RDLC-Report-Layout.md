@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 84952a05-7192-47f5-b7ab-3053c6aceae1
 caps.latest.revision: 4
-manager: edupont
 ---
 # How to Add Labels to an RDLC Report Layout in Dynamics NAV
 When you create a client report definition \(RDLC\) report layout in Visual Studio, you add data items and columns from the report dataset to the layout. If you want to add a label to the report layout, such as a caption for a field, a title for a chart, or a title for the report, then you must include the label in the report dataset, and then add the label to the report layout. You add labels to the dataset by using Report Dataset Designer. You add labels to the RDLC report layout by using Visual Studio.  

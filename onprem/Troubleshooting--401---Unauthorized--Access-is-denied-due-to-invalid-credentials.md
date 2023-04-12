@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 797fbf58-eca3-4c86-8644-7a5d3e248641
 caps.latest.revision: 10
-manager: edupont
 author: jswymer
 ---
 # Troubleshooting: The SAML2 token is invalid because its validity period ended.

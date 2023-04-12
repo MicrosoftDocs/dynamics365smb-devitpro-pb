@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e288921a-31f4-4587-8ad4-5a8010501060
 caps.latest.revision: 9
-manager: edupont
 ---
 # Business Areas and Functional Areas
 [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] is divided into several business areas. Each business area consists of a number of functional areas.  

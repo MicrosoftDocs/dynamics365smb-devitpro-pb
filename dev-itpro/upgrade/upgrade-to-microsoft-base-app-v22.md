@@ -5,7 +5,7 @@ ms.topic: article
 ms.service: dynamics365-business-central
 author: jswymer
 ms.author: jswymer
-ms.date: 03/05/2022
+ms.date: 04/11/2023
 
 ---
 
@@ -105,7 +105,7 @@ The only file in the extension project that's required is an app.json. You can c
     The important settings in the app.json file are: `"id"`, `"name"`, `"version"`, `"publisher"`, `"dependencies"`, and `"runtime"`.
 
     - The `id` and `name` must match the value used by Microsoft's extensions.
-    - Set the `version` to any version lower than 21.0.0.0, like 14.0.0.0.
+    - Set the `version` to any version lower than 22.0.0.0, like 14.0.0.0.
     - You'll also have to include the `"publisher"`. You can use your own publisher name or `"Microsoft"`.
     - Remove all other settings. It's important that there are no `"dependencies"` set.
     - Set the `runtime` to `"11.0"`.
@@ -221,7 +221,7 @@ You'll create two versions of this extension. The first version contains the tab
       "logo": "",
       "dependencies": [],
       "screenshots": [],
-      "platform": "21.0.0.0",
+      "platform": "22.0.0.0",
       "idRanges": [  ],
       "resourceExposurePolicy": {
         "applicableToDevExtension": false,

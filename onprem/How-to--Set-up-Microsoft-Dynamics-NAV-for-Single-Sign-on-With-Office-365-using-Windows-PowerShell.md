@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 817bdbef-697e-4cbc-8342-77ec9fcba027
 caps.latest.revision: 15
-manager: edupont
 ---
 # How to: Set up Microsoft Dynamics NAV for Single Sign-on With Office 365 using Windows PowerShell
 [!INCLUDE[navnow](includes/navnow_md.md)] supports federated user authentication with Microsoft Azure Active Directory \(Azure AD\). This is the Identity Provider service that is used by Office 365. Every time a new Office 365 subscription is provisioned, the Azure AD tenant for this subscription is also created. Thus, when [!INCLUDE[navnow](includes/navnow_md.md)] is configured for federated authentication with an Azure AD tenant, a Single Sign-on \(SSO\) user experience is achieved between [!INCLUDE[navnow](includes/navnow_md.md)] and the Office 365 Web Applications or/and any other applications which use the Single Sign-on capability provided by the Azure AD tenant.  

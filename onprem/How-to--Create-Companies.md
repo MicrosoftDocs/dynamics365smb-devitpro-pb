@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 84546d7f-30b6-4de0-ab8d-2b01035dfbc9
 caps.latest.revision: 11
-manager: edupont
 ---
 # Creating Companies in Dynamics NAV
 You can create as many companies as you want in a database. You can create companies in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)]. You can also create companies by using the **New-NAVCompany** Windows PowerShell cmdlet.  
