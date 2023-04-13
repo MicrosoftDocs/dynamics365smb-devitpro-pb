@@ -67,7 +67,6 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 > [!TIP]
 > If you sign up for the [Power Apps Developer plan](https://powerapps.microsoft.com/en-us/developerplan/), you can try out the full range of features in Power Automate for free. The plan includes the ability to create environments. Learn more about the plan at [Create a developer environment](/power-platform/developer/create-developer-environment).
 
-
 ## Prerequisites
 
 - Power Automate premium license or a license that includes premium connectors.
@@ -77,9 +76,13 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 
   For more information, see [Set Up Power Automate Integration](power-automate-setup.md).
 
-## Create a flow using the "For a selected record (V3)" from scratch
+## Create flow that uses "For a selected record (V3)" trigger
 
-This procedure outlines that steps required to create an instant flow from a blank flow by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. When completed, the flow will appear in the **Automate** group in the action bar. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
+You can build your own flow that uses the "For a selected record (V3)" trigger or start [from a template](#create-from-template) provided by Business Central.
+  
+### Create from scratch
+
+This procedure outlines that steps required to create an instant flow from scratch that uses the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. When completed, the flow will appear in the **Automate** group in the action bar. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
 
 The flow in Power Automate will look something like this:
 
@@ -87,10 +90,14 @@ The flow in Power Automate will look something like this:
 
 Complete the following steps:
 
-1. Add a new flow from [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate:
+1. Add a new flow from [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate by completing the following steps.
+
+   > [!TIP]
+   > The advantage of creating from [!INCLUDE[prod_short](../includes/prod_short.md)] is that the "For a selected record (V3)" trigger is automatically added to the flow for you.
 
    # [From Business Central](#tab/bc)
 
+   
    1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
    2. Open the list, card, or document page.
    3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow** > **Create from blank**.
@@ -150,7 +157,7 @@ Complete the following steps:
 
 7. Select **Save**.
 
-## Create a flow using the "For a selected record (V3)" from template
+### Create from template
 
 Like with automated flows, Microsoft also provides instant flow templates that you can use to build your own templates. The templates provide a fast way to create flows, because the trigger and some actions are automatically created and configured for you. Templates are also a good way to learn how to build your own flows.
 
