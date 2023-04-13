@@ -1216,6 +1216,7 @@
 #### [FieldRef.GetFilter() Method](methods-auto/fieldref/fieldref-getfilter-method.md)
 #### [FieldRef.GetRangeMax() Method](methods-auto/fieldref/fieldref-getrangemax-method.md)
 #### [FieldRef.GetRangeMin() Method](methods-auto/fieldref/fieldref-getrangemin-method.md)
+#### [FieldRef.IsEnum() Method](methods-auto/fieldref/fieldref-isenum-method.md)
 #### [FieldRef.Length() Method](methods-auto/fieldref/fieldref-length-method.md)
 #### [FieldRef.Name() Method](methods-auto/fieldref/fieldref-name-method.md)
 #### [FieldRef.Number() Method](methods-auto/fieldref/fieldref-number-method.md)
