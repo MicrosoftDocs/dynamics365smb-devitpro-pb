@@ -428,7 +428,9 @@
 ## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
+#### JSON files
 #### [JSON files](developer/devenv-json-files.md)
+#### [Launch JSON file](developer/devenv-launch-json-file.md)
 #### [The migration.json file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
