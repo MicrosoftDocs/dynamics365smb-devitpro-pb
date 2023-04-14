@@ -2,7 +2,7 @@ If you use the Power BI app on telemetry data, it's very easy to track the metri
 
 With metrics in Power BI, you can curate your own metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations. 
 
-Follow this simple four-step process to setup alerting with Power BI metrics:
+Follow this simple four-step process to setup alerting with Power BI Metrics:
 
 1. First, you need to create a scorecard in the Power BI service. See [Create scorecards in Power BI](/power-bi/create-reports/service-goals-create).
 2. Then simply add the _metrics_ you want to track by connecting to your Power BI report on telemetry. See [Create connected metrics](/power-bi/create-reports/service-goals-create-connected).
