@@ -183,6 +183,8 @@ The settings for snapshot debugging on a cloud production environment are descri
 |name|Yes|"snapshotInitialize: Microsoft production cloud"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Must be set to `snapshotInitialize`.|
+|userId| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [Launch JSON file](devenv-json-launch-file.md).|
+|sessionId| A session ID for the user specified in `userId`.|
 |environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Production`.|
 |environmentName|Yes|Specifies the production environment to use.|
 |breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
@@ -199,6 +201,8 @@ The settings for snapshot debugging on your own server are described in the foll
 |name|Yes|"snapshotInitialize: Your own server"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Must be set to `snapshotInitialize`.|
+|userId| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [Launch JSON file](devenv-json-launch-file.md).|
+|sessionId| A session ID for the user specified in `userId`.|
 |environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `OnPrem`.|
 |environmentName|Yes|Specifies the environment to use.|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|

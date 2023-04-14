@@ -48,7 +48,7 @@ Choose whether to run the session on a cloud service or locally. The configurati
 
 |Setting | Description |
 |--------|-------------|
-|`userId`| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [JSON Files](devenv-json-files.md).|
+|`userId`| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [Launch JSON file](devenv-json-launch-file.md).|
 |`sessionId`| A session ID for the user specified in `userId`.|
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
 |`tenant`| The AAD tenant ID for the tenant to connect to. Specify this if your target is a different tenant from the user's own AAD tenant, for example when running as a delegated admin.|
@@ -63,7 +63,6 @@ To record the AL execution, the server will now wait for a connection to happen 
 - If a `sessionId` is specified for a `userId` in the given tenant, then it'll be the session that's going to be snapshot debugged. If the specified `sessionId` isn't found or the session, which is found isn't owned by the user specified in `userId` property, then the attach request will fail. 
 - If only a `userId` is specified for a given tenant then the next session, which is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
-
 
 > [!TIP]  
 > If you're having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
