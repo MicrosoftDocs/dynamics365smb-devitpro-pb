@@ -23,7 +23,7 @@ The [!INCLUDE[prod_short](developer/includes/prod_short.md)] user assistance mod
 
     The Help menu and *Learn more* links on tooltips and teaching tips provide context-sensitive access to Help articles with more information.
 
-Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Extend and Collaborate on the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
+Apps, extensions, and customizations are expected to follow the same model by applying tooltips to controls on page objects, and by providing links to Help for their functionality. For more information about customizing and extending the user assistance, see [Contribute to the Help](help/contributor-guide.md) and [Configure the Help Experience](deployment/configure-help.md).  
 
 In this article, we'll talk about the user assistance model itself and what it does.  
 
@@ -133,7 +133,7 @@ We welcome your contributions, both as pull requests with suggestions or correct
 > [!IMPORTANT]
 > If you have feedback about translations, you can report a GitHub issue in the [dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs) repo.  
 
-For more information, see [Extend and Collaborate on the Help](help/contributor-guide.md).  
+For more information, see [Contribute to the Help](help/contributor-guide.md).  
 
 ### Working in MarkDown
 
@@ -141,7 +141,7 @@ If you fork one of our repos, you will be authoring in MarkDown. We recommend th
 
 The [Docs Authoring Pack for VS Code](/contribute/how-to-write-docs-auth-pack) can aid with MarkDown authoring and validation in Visual Studio Code. However, you can also use other text editors to edit MarkDown.  
 
-For other tips and tricks, see [Extend and Collaborate on the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
+For other tips and tricks, see [Contribute to the Help](help/contributor-guide.md) and the blog post [Collaborate on content for Business Central](https://cloudblogs.microsoft.com/dynamics365/it/2019/08/14/collaborate-on-content-for-dynamics-365-business-central/).  
 
 ## Translate the Help
 

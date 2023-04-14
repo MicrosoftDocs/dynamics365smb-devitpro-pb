@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
-ms.date: 11/03/2022
+ms.date: 04/12/2023
 ms.author: edupont
 ---
 
@@ -13,7 +13,7 @@ ms.author: edupont
 
 The default version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] comes with conceptual overviews and other articles that publish to the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site. This location is accessible from the Help menu and through the **Learn More** links in all tooltips. Each extension that you add will include its own tooltips and links to Help that can be accessed through the Learn More links and the <kbd>Ctrl</kbd>+<kbd>F1</kbd> keyboard shortcut.
 
-But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution so that you want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
+But what if you want to deploy [!INCLUDE[prod_short](../developer/includes/prod_short.md)] locally? Or if you have a vertical solution and want to refer your customers to your own website for Help? Or if you have a legacy Help collection based on the Dynamics NAV Help Server? These and other scenarios are also supported in [!INCLUDE[prod_short](../developer/includes/prod_short.md)].  
 
 ## Apps for online tenants
 
@@ -22,11 +22,7 @@ When you build an app for [!INCLUDE [prod_short](../developer/includes/prod_shor
 > [!TIP]
 > The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.
 
-You can add Microsoft's content to your website, or you can deploy just your own content. The choice is yours and depends on the requirements of your users, the size of your app, and the amount of customization you want to make. The custom Help toolkit includes tools that can help you prepare and deploy content. For more information, see [Custom Help Toolkit](../help/custom-help-toolkit.md).  
-
-[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
-
-[!INCLUDE [ua-toolkit-online](../includes/ua-toolkit-online.md)]
+You can add Microsoft's content to your website, or you can deploy just your own content. The choice is yours and depends on the requirements of your users, the size of your app, and the amount of customization you want to make.  
 
 For inspiration for how to create a website that can host your content, explore [this tutorial](/azure/search/tutorial-python-overview). The tutorial demonstrates how to create a static web app and add a search service in a few relatively straightforward steps.  
 
@@ -69,8 +65,6 @@ For more information, see [Configuring [!INCLUDE[webserver](../developer/include
 > [!TIP]
 > The website does not have to be publicly accessible, but it must be accessible to all users of the solution that it supports.  
 
-[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
-
 [!INCLUDE [ua-toolkit-onprem](../includes/ua-toolkit-onprem.md)]
 
 ### Legacy Help Server
@@ -98,9 +92,9 @@ Currently, [!INCLUDE [prod_short](../developer/includes/prod_short.md)] has no f
 
 * [Azure Static Web Apps](/azure/static-web-apps/)  
 * [Azure App Service](/azure/app-service/quickstart-html)  
-* Third-party services such as [MkDocs](https://www.mkdocs.org/)  
+* Third-party services  
 
-You can see an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure). That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
+You can explore an example of how to deploy content to an Azure web app in the article [Deploy custom help to Azure](/dynamics365/fin-ops-core/dev-itpro/help/walkthrough-help-azure). That article also describes how you can build a search service for your website. Another example is in the [Overview of adding search to a website with Python](/azure/search/tutorial-python-overview) tutorial in the Azure docs. The step for adding a search service is currently not relevant for [!INCLUDE [prod_short](../developer/includes/prod_short.md)], but you might find the guidance helpful anyway.  
 
 > [!IMPORTANT]
 > Currently, search in the [!INCLUDE [prod_short](../includes/prod_short.md)] Help pane cannot access sites other than the *learn.microsoft.com* site, including Microsoft Learn.
@@ -120,14 +114,12 @@ If you deploy a solution that customizes Microsoft's default application, then y
 
 Microsoft's source files are available as downloadable packages for each major release in the [https://github.com/MicrosoftDocs/dynamics365smb-docs/](https://github.com/MicrosoftDocs/dynamics365smb-docs/releases) GitHub repo in English (US) only.
 
-[!INCLUDE [help-toolkit-deprecate](../includes/help-toolkit-deprecate.md)]
-
 > [!TIP]
 > The content on the [learn.microsoft.com/dynamics365/business-central/](/dynamics365/business-central/) site and in the various GitHub repos reflects the latest version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)], unless otherwise specified.
 >
 > [!INCLUDE [ua-github-releases](../includes/ua-github-releases.md)]
 
-Use any tool or script that you prefer. If you want to create your own tooling and processes around [DocFX](https://dotnet.github.io/docfx/), examples are available in the [Build HTML files](../help/contributor-guide.md#build-html-files) section of the contributor guide.  
+Use any tool or script that you prefer.
 
 > [!IMPORTANT]
 > [!INCLUDE [ua-robots](../includes/ua-robots.md)]
@@ -136,9 +128,7 @@ We suggest that your website clearly indicates what is under Microsoft's copyrig
 
 ## Fork the Microsoft repos, and customize or extend the content
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs). For more information, see [Extend and Collaborate on the Help](../help/contributor-guide.md).  
-
-[!INCLUDE [ua-toolkit-tip](../includes/ua-toolkit-tip.md)]
+If you want to customize or extend the Microsoft Help, you can fork our public repo for the source repo in English (US) at [https://github.com/MicrosoftDocs/dynamics365smb-docs](https://github.com/MicrosoftDocs/dynamics365smb-docs). For more information, see [Contribute to the Help](../help/contributor-guide.md).  
 
 ## See Also
 
