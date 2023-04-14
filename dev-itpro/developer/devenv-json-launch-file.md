@@ -136,7 +136,7 @@ The settings for attaching to a client on a cloud sandbox are described in the f
 |name|Yes|"Attach: Microsoft cloud sandbox"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Must be set to `attach`.|
-|environmentType|Yes||environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Sandbox`.|
+|environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Sandbox`.|
 |environmentName|Yes|Specifies which production, or sandbox environment to use.|
 |breakOnError | No |Specifies if and how the debugger breaks on errors in Try functions. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnError` contains the following options: `true`, `false`, `None`, `All`, `ExcludeTry`.<br>`false/None` - does not break on any errors, `true/All` -breaks on all errors, and `ExcludeTry` - breaks on errors only if they occur outside of the context of a Try function.<br> The values `true` and `false` are retained for now for backwards compatibility. They map to `All` and `None`. We recommend using the latter going forward. `True` and `false` might become obsolete in a future version.|
 |breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
@@ -156,7 +156,7 @@ The settings for attaching to a client on your own server are described in the f
 |name|Yes|"Attach: Your own server"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Must be set to `attach`.|
-|environmentType|Yes||environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `OnPrem`.|
+|environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `OnPrem`.|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
@@ -183,7 +183,7 @@ The settings for snapshot debugging on a cloud production environment are descri
 |name|Yes|"snapshotInitialize: Microsoft production cloud"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Must be set to `snapshotInitialize`.|
-|environmentType|Yes||environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Production`.|
+|environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Production`.|
 |environmentName|Yes|Specifies the production environment to use.|
 |breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
@@ -199,7 +199,7 @@ The settings for snapshot debugging on your own server are described in the foll
 |name|Yes|"snapshotInitialize: Your own server"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Must be set to `snapshotInitialize`.|
-|environmentType|Yes||environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `OnPrem`.|
+|environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `OnPrem`.|
 |environmentName|Yes|Specifies the environment to use.|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
