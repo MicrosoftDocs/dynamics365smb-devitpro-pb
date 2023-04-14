@@ -16,15 +16,31 @@ If something happens in your environment or app that you need to act on, you can
 
 You can use the following tools to define and set up alerts on telemetry events:
 
+- Power BI metrics (if you use the Power BI app on telemetry data)
 - [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] Alerts
 - Azure Logic Apps
 - Power Automate
 
-All three approaches need a Kusto (KQL) query to define the alerting condition.
+Use the Power BI Metrics approach if you want a no-code experience and if you do not have any experience with the KQL language.
 
-## Define alerting condition queries
+For the latter three approaches, you need a Kusto (KQL) query to define the alerting condition.
 
-When defining an alert based on telemetry, you need to define two things:
+## No-code alerting with Power BI Metrics
+If you use the Power BI app on telemetry data, it is very easy to track the metrics that are important to you. 
+
+With metrics in Power BI, you can curate your own metrics and track them against key business objectives, in a single pane. This feature enhances data culture by promoting accountability, alignment, and visibility for teams and initiatives within organizations. 
+
+Follow this simple four-step process to setup alerting with Power BI Metrics
+1. First, you need to create a scorecard in the Power BI service. See [Create scorecards in Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/service-goals-create)
+2. Then simply add the _metrics_ you want to track by connecting to your Power BI report on telemetry, see [Create connected metrics](https://learn.microsoft.com/en-us/power-bi/create-reports/service-goals-create-connected)
+3. To add alerting, define status rules for your metrics. This will automate status updates based on rules that govern that metric. Rules trigger changes based on value, percentage of target met, date conditions, or a combination of the three, making the rules as versatile as possible. For connected metrics, these status rules are refreshed every time the data in your scorecard is refreshed. For more information, see [Create automated status rules for metrics](https://learn.microsoft.com/en-us/power-bi/create-reports/service-metrics-status-rules)
+4. Finally, follow metrics to get alerts in Teams or by email, see [Follow your metrics](https://learn.microsoft.com/en-us/power-bi/create-reports/service-metrics-follow)
+
+For more information about Power BI Metrics, see [Get started with metrics in Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/service-goals-introduction)
+
+
+## Low-code alerting with KQL
+When defining an alert based directly on telemetry, you need to define two things:
 
 1. A Kusto (KQL) query that defines the alerting condition. It's considered good practice to add a `where` clause that limits the timestamp of events in the query, for example, `| where timestamp > ago(1h)`. 
 2. How often you want to run the alerting query. Typically, the recurrence follows the `where` clause in the alerting query. For example, if the query looks back 1 hour, then you set your recurrence to 1 hour as well.
@@ -32,7 +48,7 @@ When defining an alert based on telemetry, you need to define two things:
 > [!TIP]
 > Samples of alerting queries are shared by Microsoft and third parties on the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Alerts). You can also share your alerting queries with the community on GitHub.
 
-## Create alerts in Azure Application Insights
+### Create alerts in Azure Application Insights
 
 If you want to create alerts in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], then do as follows:
 
@@ -42,7 +58,7 @@ If you want to create alerts in [!INCLUDE[appinsights](../includes/azure-appinsi
 
 To read more about Azure Monitor alerts, go to [Azure Application Insights](/azure/azure-monitor/alerts/alerts-overview) in the Azure documentation. <!-- /azure/azure-monitor/platform/alerts-unified-log-->
 
-## Create alerts using Azure Logic Apps and Power Automate
+### Create alerts using Azure Logic Apps and Power Automate
 
 Azure Logic Apps and Power Automate have built-in connectors to query telemetry in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for setting up custom notifications or automating certain actions that are triggered by an environment's lifecycle event.
 
@@ -58,13 +74,13 @@ The samples below can help getting started with customization and automation usi
 >
 > If you have already have API Connection Resources deployed in the selected Resource Group for the connections needed to run the Logic App you can reuse them by entering the same resource name before deploying the Logic App.
 
-### Example - Run an alerting query every "n" days and send an email
+#### Example - Run an alerting query every "n" days and send an email
 
 This Logic App runs every number of days (specified in app deployment). It lists all updates made available to environments that emit telemetry to the specified Application Insights resource during the period. Administrators can use this app to replace email notifications they'd receive for environments when set up as notification recipient.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAvailableUpdatesNotification.json)
 
-### Example - Run an alerting query every "n" minutes and send a message to Teams
+#### Example - Run an alerting query every "n" minutes and send a message to Teams
 
 This Logic App queries Application Insights every number of minutes (specified in app deployment). It notifies a user (also specified in deployment) of any deleted environments in Microsoft Teams. The action that sends the notification in Teams can be updated to notify a Channel or Group Chat instead.
 
