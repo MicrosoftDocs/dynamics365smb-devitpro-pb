@@ -44,7 +44,7 @@ You can start a snapshot by creating a snapshot configuration file in Visual Stu
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file contains the following information: 
+Choose whether to run the session on a cloud service or locally. The configuration file contains the following information. For a full overview of configuration settings, see [Launch JSON file](devenv-json-launch-file.md#initialize-snapshot-debugging-settings).
 
 |Setting | Description |
 |--------|-------------|
