@@ -217,6 +217,10 @@ In the following table, you'll find examples of scenarios for each persona where
 | Supporter | Customer complains that users get lots of errors when using the system. | Go to the Error report and investigate the _Error Dialogs_, _Permission Errors_, and _Feature Errors_ pages. You can filter pages by Extension Publisher to learn which code path the error is coming from. |
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
 
+## No-code alerting with Power BI Metrics
+[!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]
+
+
 ## See also
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
