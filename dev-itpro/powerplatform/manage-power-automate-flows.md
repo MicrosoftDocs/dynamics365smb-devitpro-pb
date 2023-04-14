@@ -59,7 +59,7 @@ You can also create flows by choosing **+ New flow** on the **Manage Power Autom
 * Desktop flow 
 * Business process flow 
 
-## Other settings
+#### Other settings
 
 You'll see two more menu items on the **Manage Power Automate** flows page: **Home** and **Configuration**. Choose **Home** to open *Power Automate* or find *flow entries*. Choose **Configuration** to select the environment in which you want to create or see the flows. You can also find the connection information for the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate under **Configuration**.
 
