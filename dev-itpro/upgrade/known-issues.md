@@ -422,7 +422,7 @@ The Help Server installation will fail.
 
 ### Workaround
 
-Install Help Server without the HTML files for local functionality, then pick up the content from GitHub instead. For more information, see [Get updates from Microsoft](../help/contributor-guide.md#get-updates-from-microsoft).
+Install Help Server without the HTML files for local functionality, then pick up the content from GitHub instead.
 
 ## [!INCLUDE[admintool](../developer/includes/admintool.md)] doesn't work for multitenant server instances
 
