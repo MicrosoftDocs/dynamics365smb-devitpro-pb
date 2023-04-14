@@ -1221,7 +1221,7 @@
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create Automated Flows](powerplatform/automate-workflows.md)
 ### [Create Instant Flows](powerplatform/instant-flows.md)
-<!--### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)-->
+### [Manage Exisitng Power Automate Flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
