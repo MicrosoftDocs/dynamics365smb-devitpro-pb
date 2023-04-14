@@ -37,7 +37,7 @@ To help you save time, we're sharing a list of the top 15 common pitfalls that r
     One of the app requirements is for you to reserve a prefix/suffix for your app. This is needed to ensure a healthy app ecosystem by avoiding collision amongst apps. This common failure occurs due to not setting your prefix/suffix in some or all required places. For more information, see [Benefits and Guidelines for using a Prefix or Suffix](apptest-prefix-suffix.md).  
 2. DataClassification missing or set incorrectly
 
-    Due to GDPR requirements, fields of field class *Normal* must use the [DataClassification property](../developer/properties/devenv-dataclassification-property.md), and its value must be different from *ToBeClassified*. This applies to fields in tables and table extensions. Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool for detecting this.  
+    Due to the requirements of privacy laws and regulations, fields of field class *Normal* must use the [DataClassification property](../developer/properties/devenv-dataclassification-property.md), and its value must be different from *ToBeClassified*. This applies to fields in tables and table extensions. Use the [AppSourceCop](../developer/devenv-using-code-analysis-tool.md) tool for detecting this.  
 3. Required translation files missing
 
     There are many country/regions today that where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, and that you can support as well with your app. For specifying extra languages, we no longer support Caption ML. You must use xliff translation files instead. For more information, see [Working with Translation Files](../developer/devenv-work-with-translation-files.md).  
