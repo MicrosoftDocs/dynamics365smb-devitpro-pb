@@ -187,12 +187,28 @@ The settings for snapshot debugging on a cloud production environment are descri
 |environmentName|Yes|Specifies the production environment to use.|
 |breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
+|snapshotVerbosity|No|Specifies the verbosity level of snapshot data. If SnapPoint is specified then stacktraces and line information will only be gathered on snap points. The options are: `Full`, which allows stepping through every line executed and `SnapPoint`, which only allows stepping to lines with SnapPoints.|
+|profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`.|
 
 ### Initialize a snapshot debugging session on your own server
 
 The settings for snapshot debugging on your own server are described in the following table.
 
-
+|Setting|Mandatory|Value|
+|-------|---------|-----|
+|name|Yes|"snapshotInitialize: Your own server"|
+|type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
+|request|Yes|Must be set to `snapshotInitialize`.|
+|environmentType|Yes||environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `OnPrem`.|
+|environmentName|Yes|Specifies the environment to use.|
+|server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
+|port|No|The port assigned to the development service.|
+|serverInstance|Yes|The instance name of your server, for example: `"US"`|
+|authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. To use AAD authentication for on-premise servers, `primaryTenantDomain` setting must be entered. For more information, see [Using Azure AD authentication for Business Central on-premises installations](devenv-aad-auth-onprem.md).|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
+|snapshotVerbosity|No|Specifies the verbosity level of snapshot data. If SnapPoint is specified then stacktraces and line information will only be gathered on snap points. The options are: <br>`Full`, which allows stepping through every line executed <br>`SnapPoint`, which only allows stepping to lines with SnapPoints.|
+|profilingType|Yes|Specifies the profiling type to be used. There are two options: <br> `Instrumentation`, which means that if profiling is enabled then all frames executed will be measured for their total time <br>`Sampling`, which means that if profiling is enabled then frames will be collected and aggregated based on a sample interval. This option can only be used with the `executionContext` set to `Profile`.|
 
 ## Global and workspace launch configuration
 

@@ -23,7 +23,7 @@ The AL profiler works on a snapshot of running code. Snapshot debugging is a rec
 
 ## Snapshot configuration settings
 
-In order to do any profiling on code, first, you must capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md) and [JSON files](devenv-json-files.md).
+In order to do any profiling on code, first, you must capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md) and [Launch JSON file](devenv-json-launch-file.md).
 
 ### To set up a snapshot configuration for instrumentation profiling
 
