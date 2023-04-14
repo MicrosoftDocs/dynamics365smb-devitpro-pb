@@ -1,45 +1,22 @@
 ---
 title: Manage Power Automate Flows
-description: Learn to manage Power Automate flows from inside Business Central online.
+description: Learn to manage Power Automate flows for Business Central online.
 author: jswymer
 ms.custom: na
 ms.reviewer: na
 ms.topic: 
-ms.date: 10/01/2022
+ms.date: 04/13/2023
 ms.author: jswymer
 ---
 
-# Manage Power Automate Flows
+# Manage existing Power Automate flows for Business Central
 
-> **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] online version 21 and earlier. The **Manage Power Automate Flows** page has been deprecated and replaced by actions in the **Automate** actions group on pages.
+Managing existing flows (like editing the flow steps or turning them on or off) is done directly in Power Automate. You can get to your flows in Power Automate two ways:
 
-You can either create new flows or manage the existing Power Automate flows from [!INCLUDE[prod_short](../includes/prod_short.md)] from the **Manage Power Automate Flows** page. To check out that page, go to the *search* icon in the top right and enter *manage power automate flows.* The resulting page presents various ways to look for details and manage your created flows. In addition, you can create a new flow, edit it, share it, make a copy, delete, or run other commands on your flows by selecting them from the list. These are the categories of flows you'll find on the main page: 
+- Sign in to [Power Automate](https://powerautomate.com), then select **My flows** from the navigation bar on the left
+- From Business Central,  open a list, card, or document page, select **Automate** > **Manage Flows**.
 
-
-| What | Description |
-| ----------- | ----------- |
-| Create automated flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
-| Create instant flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
-| Edit automated flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
-| Edit instant  flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
-| Desktop flows | This shows a list of flows you've created for your desktop environment using Power Automate. If you haven't created any, you can create one by choosing **+ New desktop flow**. Learn more at [Desktop Flows](/power-automate/desktop-flows/create-flow). |
-| Shared with me | This is a list of flows shared with you by other users in your organization. |
-
-
-| Flows | Description |
-| ----------- | ----------- |
-| Cloud flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
-| Desktop flows | This shows a list of flows you've created for your desktop environment using Power Automate. If you haven't created any, you can create one by choosing **+ New desktop flow**. Learn more at [Desktop Flows](/power-automate/desktop-flows/create-flow). |
-| Shared with me | This is a list of flows shared with you by other users in your organization. |
-
-You can also create flows by choosing **+ New flow** on the **Manage Power Automate Flows** page. Then choose the flow type you want to create from among those on the dropdown list: 
-
-* Template 
-* Automated cloud flow
-* Instant cloud flow 
-* Scheduled cloud flow
-* Desktop flow 
-* Business process flow 
+On the **My flows** page you'll find any flows you have already created yourself and flows shared with you by an admin or coworker.
 
 ## Edit the flows 
 
@@ -60,9 +37,31 @@ When you choose a flow from the list, a new window with additional information o
 > [!NOTE]
 > Choosing **Edit** enables you to edit the components of your flow like you do in Power Automate, but without leaving the [!INCLUDE[prod_short](../includes/prod_short.md)] context.
 
+
+## Use the Manage Power Automate Flows page 
+
+> **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] online version 21 and earlier. The **Manage Power Automate Flows** page has been deprecated and replaced by actions in the **Automate** actions group on pages.
+
+You can either create new flows or manage the existing Power Automate flows from [!INCLUDE[prod_short](../includes/prod_short.md)] from the **Manage Power Automate Flows** page. To check out that page, go to the *search* icon in the top right and enter *manage power automate flows.* The resulting page presents various ways to look for details and manage your created flows. In addition, you can create a new flow, edit it, share it, make a copy, delete, or run other commands on your flows by selecting them from the list. These are the categories of flows you'll find on the main page: 
+
+| Flows | Description |
+| ----------- | ----------- |
+| Cloud flows | Cloud flows present the list of flows you've created using Power Automate. They can be either flow type [Instant](instant-flows.md) or [Automated](automate-workflows.md).  |
+| Desktop flows | This shows a list of flows you've created for your desktop environment using Power Automate. If you haven't created any, you can create one by choosing **+ New desktop flow**. Learn more at [Desktop Flows](/power-automate/desktop-flows/create-flow). |
+| Shared with me | This is a list of flows shared with you by other users in your organization. |
+
+You can also create flows by choosing **+ New flow** on the **Manage Power Automate Flows** page. Then choose the flow type you want to create from among those on the dropdown list: 
+
+* Template 
+* Automated cloud flow
+* Instant cloud flow 
+* Scheduled cloud flow
+* Desktop flow 
+* Business process flow 
+
 ## Other settings
 
-You'll see two more menu items on the **Manage Power Automate** flows page: **Process** and **Configuration**. Choose **Process** to open *Power Automate* or  find *flow entries*. Choose **Configuration** to select the environment in which you want to create or see the flows. You can also find the connection information for the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate under **Configuration**.
+You'll see two more menu items on the **Manage Power Automate** flows page: **Home** and **Configuration**. Choose **Home** to open *Power Automate* or find *flow entries*. Choose **Configuration** to select the environment in which you want to create or see the flows. You can also find the connection information for the [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate under **Configuration**.
 
 > [!NOTE]
 > **Flow entries** shows the list of records upon which the flow is acting. Such as a record of a user to whom the flow sent an approval request, indicating the request status and other details of the record. 
