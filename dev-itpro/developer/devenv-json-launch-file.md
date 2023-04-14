@@ -13,8 +13,16 @@ ms.author: solsen
 
 # Launch JSON file
 
-## <a name="Launchjson"></a>Launch.json file
+The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available, for example, for snapshot debugging and attach debugging. In Visual Studio Code, you can choose to add a new configuration to the `launch.json` file, by selecting the **Add Configuration** button. The following configuration options are available:
 
+- [Attach to the client on the cloud sandbox or on your own server](devenv-json-launch-file.md#attach-to-the-client-on-the-cloud-sandbox)
+- [Initialize a snapshot debugging session on cloud or on your own server](devenv-json-launch-file.md#initialize-a-snapshot-debugging-session-on-cloud)
+- [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings)
+- [Publish to your own server](devenv-json-launch-file.md#publish-to-local-server-settings)
+
+In the following sections, you can find a description of the parameters that are available for each of the configurations. 
+
+## Publishing settings for cloud and local server
 
 The following table describes the settings in the `launch.json` file. The `launch.json` file has two configurations depending on whether the extension is published to a local server or to the cloud.
 
@@ -78,7 +86,13 @@ The following table describes the settings in the `launch.json` file. The `launc
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
 
-### Global and workspace launch configuration
+### Attach to client on cloud sandbox or on your server
+
+ 
+
+### Initialize a snapshot debugging session on cloud or on your own server
+
+## Global and workspace launch configuration
 
 With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and global configuration. A workspace launch configuration overrides the launch configuration specified in the global `settings.json` file.
 
