@@ -172,12 +172,26 @@ The settings for attaching to a client on your own server are described in the f
 
 ## Initialize snapshot debugging settings
 
-The following tables describe the settings in the `launch.json` file for snapshot configuration settings.
+The following tables describe the settings in the `launch.json` file for snapshot configuration settings. Snapshot debugging allows you to record AL code that runs on the server, and when it has completed, you can debug the recorded *snapshot* in Visual Studio Code. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
 
-### Initialize a snapshot debugging session on cloud
+### Initialize a snapshot debugging session on a cloud production environment
 
+The settings for snapshot debugging on a cloud production environment are described in the following table.
+
+|Setting|Mandatory|Value|
+|-------|---------|-----|
+|name|Yes|"snapshotInitialize: Microsoft production cloud"|
+|type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
+|request|Yes|Must be set to `snapshotInitialize`.|
+|environmentType|Yes||environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Production`.|
+|environmentName|Yes|Specifies the production environment to use.|
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+|executionContext|Yes|Specifies which kind of connection a snapshot debugging session will be established. There are three options: `Debug`, `DebugAndProfile`, and `Profile`. For more information, see [AL Profiler](devenv-al-profiler-overview.md#snapshot-configuration-settings).|
 
 ### Initialize a snapshot debugging session on your own server
+
+The settings for snapshot debugging on your own server are described in the following table.
+
 
 
 ## Global and workspace launch configuration
