@@ -1,14 +1,14 @@
 ---
-title: "AL Profiler Overview"
+title: "AL Profiler overview"
 description: "Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 01/30/2023
+ms.date: 04/13/2023
 ms.topic: overview
 ms.author: solsen
 ---
 
-# AL Profiler Overview
+# AL Profiler overview
 
 [!INCLUDE[2021_releasewave2](../includes/2021_releasewave2.md)] and updated with sampling profiling for Business Central 2022 release wave 1.
 
@@ -23,7 +23,7 @@ The AL profiler works on a snapshot of running code. Snapshot debugging is a rec
 
 ## Snapshot configuration settings
 
-In order to do any profiling on code, first, you must capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+In order to do any profiling on code, first, you must capture a snapshot of running code. Before doing that, you must set up a snapshot configuration in the `launch.json` file. The configuration settings depend on what type of profiling you want to perform. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md) and [JSON files](devenv-json-files.md).
 
 ### To set up a snapshot configuration for instrumentation profiling
 
@@ -76,6 +76,14 @@ For sampling profiling, choose `Sampling` as the `profilingType` in the `launch.
             "profilingType": "Sampling"
         }
 ```
+
+## Getting a snapshot file
+
+When a configuration is defined and you've ensured that the `executionContext` parameter is either `DebugAndProfile` or `Profile` a snapshot debugging session can be initialized by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>, and then selecting AL:Initialize Snapshot Debugging or by pressing <kbd>F7</kbd>.
+
+Once a snapshot debugging session is initialized, the snapshot debugging session counter on the status bar will be updated and look like this:
+
+:::image type="content" source="media/SnapshotDebugger.png" alt-text="Snapshot debugger counter":::
 
 ## Generating a profile file for instrumentation profiling
 
@@ -195,4 +203,5 @@ In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performanc
 
 [Snapshot Debugging](devenv-snapshot-debugging.md)  
 [AL Language Extension Configuration](devenv-al-extension-configuration.md)  
-[Performance Profiler Overview](../administration/performance-profiler-overview.md)
+[Performance Profiler Overview](../administration/performance-profiler-overview.md)  
+[JSON files](devenv-json-files.md)  
