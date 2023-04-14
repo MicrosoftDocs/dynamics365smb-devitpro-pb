@@ -85,6 +85,8 @@ Once a snapshot debugging session is initialized, the snapshot debugging session
 
 :::image type="content" source="media/SnapshotDebugger.png" alt-text="Snapshot debugger counter":::
 
+Press <kbd>Alt</kbd>+<kbd>F7</kbd> to finish a snapshot debugging session. Stopping the session brings up all snapshot sessions that have been started. Choosing one will close the session debugging on the server and download the snapshot file. For more information, see [Snapshot debugging](devenv-snapshot-debugging.md).
+
 ## Generating a profile file for instrumentation profiling
 
 Once the snapshot file is downloaded, you can generate a profile file. This can be done in one of the two ways:
