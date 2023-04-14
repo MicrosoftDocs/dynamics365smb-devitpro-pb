@@ -28,36 +28,15 @@ The following table describes the settings in the `launch.json` file. The `launc
 
 ### Publish to local server settings
 
-The following configuration is generated when you choose to add a **Publish to your own server** configuration.
+The settings for publishing to a local server are described in the following table.
 
-```al
- "name": "Publish: Your own server",
-            "type": "al",
-            "request": "launch",
-            "environmentType": "OnPrem",
-            "server": "http://bcserver",
-            "serverInstance": "BC",
-            "authentication": "UserPassword",
-            "startupObjectId": 22,
-            "breakOnError": "All",
-            "breakOnRecordWrite": "None",
-            "launchBrowser": true,
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "tenant": "default",
-            "usePublicURLFromServer": true
-
-```
-
-The settings are described in the following table:
 <!-- NEW -->
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Your own server"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Set to `"launch"`.|
+|environmentType|Yes|Specifies which environment to use to connect to Business Central.|
 |server|Yes|The HTTP URL of your server, for example: `"https://localhost|serverInstance"`|
 |port|No|The port assigned to the development service.|
 |serverInstance|Yes|The instance name of your server, for example: `"US"`|
@@ -120,20 +99,21 @@ The settings are described in the following table:
 
 ### Publish to cloud settings
 
+The settings for publishing to a cloud sandbox are described in the following table.
+
 |Setting|Mandatory|Value|
 |-------|---------|-----|
 |name|Yes|"Microsoft cloud sandbox"|
 |type|Yes|Must be set to `"al"`. Required by Visual Studio Code.|
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
+|environmentType|Yes|Specifies which environment to use to connect to Business Central. Must be set to `Sandbox` or `Production`.|
+|environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
+|applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example `Fabrikam`. This property is reserved for Embed apps.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`), a Table type (`"Table"`), a Report type (`"Report"`) or a Query type (`"Query"`) object.  The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page, Table, Report and Query are currently supported.|
 |startupCompany|No|Specifies the name of the company to open after publishing. If `startupCompany` is specified, the settings `startupObjectId` and `startupObjectType` must also be defined.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy. This parameter must contain a tenant AAD domain name, for example `mycustomer.onmicrosoft.com`.|
-|environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prod_short](includes/prod_short.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
-|environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
-|applicationFamily|No (Yes for Embed apps)|The application family in the cloud server, for example `Fabrikam`. This property is reserved for Embed apps.|
 |breakOnError | No |Specifies if and how the debugger breaks on errors in Try functions. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnError` contains the following options: `true`, `false`, `None`, `All`, `ExcludeTry`.<br>`false/None` - does not break on any errors, `true/All` -breaks on all errors, and `ExcludeTry` - breaks on errors only if they occur outside of the context of a Try function.<br> The values `true` and `false` are retained for now for backwards compatibility. They map to `All` and `None`. We recommend using the latter going forward. `True` and `false` might become obsolete in a future version.|
-|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
 |breakOnRecordWrite | No |Specifies if and how the debugger breaks on record changes. With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2 `breakOnRecordWrite` contains the following options: `true`, `false`, `None`, `All`, and `Exclude Temporary`. <br> - `false`/`None` specifies to not break on any record writes.<br>- `true`/`All` specifies to break on all record writes.<br>- `ExcludeTemporary` specifies to break on record writes only if they are not on a temporary table.<br><br>The values `true` and `false` are retained for backward compatibility, mapping to `All` and `None`. It's recommended using the latter going forward. `True` and `false` might become obsolete in a future version.|
 |launchBrowser|No|Specifies whether to open a new tab page in the browser when publishing the AL extension (Ctrl+F5). The default value is `false`. If the value isn't specified or set to `true`, the session is started. If the value is explicitly set to `false`, the session isn't started unless you launch your extension in debugging mode.|
 |enableSqlInformationDebugger|Yes|Specifies whether the debugger shows the SQL information. The default value is `true`. For more information, see [Debugging SQL behavior](devenv-debugging.md#DebugSQL).|
@@ -142,6 +122,11 @@ The settings are described in the following table:
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
+
+<!-- OLD
+|breakOnNext| No | Specifies the session type that the server will connect to. The options are:<br> `WebserviceClient` - web API-based client including OData and SOAP clients, <br>`WebClient` - standard web client,<br> `Background` - background sessions, such as job queues, see [Task Scheduler](devenv-task-scheduler.md). <br><br>This setting applies to [Attach and Debug Next](devenv-attach-debug-next.md) and to [Snapshot Debugging](devenv-snapshot-debugging.md).<br><br> For *Attach* debugging, `breakOnNext` defines the next client session that the debug engine will attach to for the same user who has initiated an attach debug session from Visual Studio Code.<br><br>For *Snapshot* debugging, `breakOnNext` defines the next session to hook AL code execution recording for a given user on a tenant. Or, if this isn't specified with the userId in the configuration settings; the first user on the tenant.|
+-->
+
 
 ## Attach configuration settings
 
