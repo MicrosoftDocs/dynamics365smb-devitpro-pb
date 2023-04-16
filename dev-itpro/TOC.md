@@ -210,6 +210,7 @@
 ### [Analyze telemetry with Power BI](administration/telemetry-power-bi-app.md)
 ### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
 ### [Alert on telemetry](administration/telemetry-alert.md)
+### [Telemetry FAQ](administration/telemetry-faq.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
