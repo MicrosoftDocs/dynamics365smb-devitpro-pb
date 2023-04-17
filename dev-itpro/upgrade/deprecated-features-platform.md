@@ -26,7 +26,7 @@ This article describes the features that are up for removal or that have been re
 
 ## Changes in 2024 release wave 2 (version 25.0)
 
-### Direct cloud migration and data upgrade from version Dynamics NAV 2019 (v.14.x) (warning) 
+### Direct cloud migration and data upgrade from version Dynamics NAV 2019 (v.14.x) (warning)
 
 |Removed or Replaced? |Why?|
 |---------|---------|
