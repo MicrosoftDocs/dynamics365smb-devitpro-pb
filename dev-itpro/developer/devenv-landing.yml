@@ -97,8 +97,8 @@ landingContent:
             url: /dynamics365/business-central/application
           - text: Extension lifecycle
             url: devenv-ext-dev-lifecycle-overview.md
-          - text: Extension types and scope
-            url: devenv-extension-types-and-scope.md
+          - text: Base and system application reference
+            url: https://learn.microsoft.com/en-us/dynamics365/business-central/application/
       - linkListType: concept
         links:
           - text: Data types
