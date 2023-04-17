@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c2608bdc-0684-400a-8dc7-bdf2a19428a3
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: Verify the Paper Size
 Before you print or preview a report, the client checks the page width and page height to verify that the paper size is supported by the printer. After you create an RDLC report layout, to ensure that you can print and preview the report, you must verify that the page width and page height properties are valid.  

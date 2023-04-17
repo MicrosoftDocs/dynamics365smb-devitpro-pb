@@ -3,7 +3,7 @@ title: "Text.ConvertStr(Text, Text, Text) Method"
 description: "Replaces all chars in source found in FromCharacters with the corresponding char in ToCharacters and returns the converted string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,16 +23,16 @@ Replaces all chars in source found in FromCharacters with the corresponding char
 ```AL
 NewString :=   Text.ConvertStr(String: Text, FromCharacters: Text, ToCharacters: Text)
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
-The string that you want to convert.
-        
+The string that you want to convert.  
 
 *FromCharacters*  
 &emsp;Type: [Text](text-data-type.md)  
-The characters that you want to replace. This function is case-sensitive.
-        
+The characters that you want to replace. This function is case-sensitive.  
 
 *ToCharacters*  
 &emsp;Type: [Text](text-data-type.md)  

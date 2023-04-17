@@ -4,7 +4,7 @@ description: Creates a sales credit memo object in Dynamics 365 Business Central
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -29,8 +29,9 @@ POST businesscentralPrefix/companies({id})/salesCreditMemos
 
 |Header|Value|
 |------|-----|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type  |application/json    |
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesCreditMemo**, the **salesCreditMemo** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesCreditMemos** object.
@@ -49,14 +50,58 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesCreditMemos
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "number": "1009",
-  "creditMemoDate": "2015-12-31",
-  "customerNumber": "GL00000008",
+  "creditMemoDate": "2022-12-27",
+  "customerNumber": "10000",
   "currencyCode": "GBP",
-  "paymentTermsId": "3bb5b4b6-ea4c-43ca-ba1c-3b69e29a6668"
+  "paymentTermsId": "a0a51911-e48a-ed11-af3b-cf75db0ab305"
 }
 ```
+
+**Response**
+
+Here is an example of a response.
+
+> [!NOTE]  
+>   The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
+  "documentId": "960f5c9c-44e3-ea11-bb43-000d3a2feca1",
+  "sequence": 10000,
+  "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
+  "accountId": "00000000-0000-0000-0000-000000000000",
+  "lineType": "Item",
+  "lineObjectNumber": "1996-S",
+  "description": "ATLANTA Whiteboard, base",
+  "unitOfMeasureId": "5ca6738a-44e3-ea11-bb43-000d3a2feca1",
+  "unitOfMeasureCode": "PCS",
+  "quantity": 12,
+  "unitPrice": 1397.3,
+  "discountAmount": 0,
+  "discountPercent": 0,
+  "discountAppliedBeforeTax": false,
+  "amountExcludingTax": 16767.6,
+  "taxCode": "FURNITURE",
+  "taxPercent": 6.00002,
+  "totalTaxAmount": 1006.06,
+  "amountIncludingTax": 17773.66,
+  "invoiceDiscountAllocation": 0,
+  "netAmount": 16767.6,
+  "netTaxAmount": 1006.06,
+  "netAmountIncludingTax": 17773.66,
+  "shipmentDate": "2020-04-02",
+  "shippedQuantity": 0,
+  "invoicedQuantity": 0,
+  "invoiceQuantity": 12,
+  "shipQuantity": 12,
+  "itemVariantId": "00000000-0000-0000-0000-000000000000"
+}
+```
+
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)  
 

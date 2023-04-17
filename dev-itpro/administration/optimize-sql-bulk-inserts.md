@@ -8,7 +8,6 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: 6bbe737c-305f-48d2-8cd3-857c7efb9866
 caps.latest.revision: 21
-manager: edupont
 ---
 # Bulk Inserts
 By default, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] automatically buffers inserts in order to send them to Microsoft SQL Server at one time.  

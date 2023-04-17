@@ -3,7 +3,7 @@ title: "ErrorInfo Data Type"
 description: "Provides a structure for grouping information about an error."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 02/28/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -31,6 +31,8 @@ The following methods are available on instances of the ErrorInfo data type.
 
 |Method name|Description|
 |-----------|-----------|
+|[AddAction(Text, Integer, Text)](errorinfo-addaction-method.md)|Specifies an action for the error.|
+|[AddNavigationAction([Text])](errorinfo-addnavigationaction-method.md)|Adds a navigation action for the error.|
 |[Callstack()](errorinfo-callstack-method.md)|Specifies a callstack where the ErrorInfo was collected.|
 |[Collectible([Boolean])](errorinfo-collectible-method.md)|Specifies if the error is collectible using ErrorBehavior.Collect.|
 |[ControlName([Text])](errorinfo-controlname-method.md)|Specifies the control name that the error relates to.|
@@ -44,6 +46,7 @@ The following methods are available on instances of the ErrorInfo data type.
 |[RecordId([RecordId])](errorinfo-recordid-method.md)|Specifies the record ID of the record that the error relates to.|
 |[SystemId([Guid])](errorinfo-systemid-method.md)|Specifies the system ID of the record that the error relates to.|
 |[TableId([Integer])](errorinfo-tableid-method.md)|Specifies the table ID that the error relates to.|
+|[Title([Text])](errorinfo-title-method.md)|Specifies the title of the error.|
 |[Verbosity([Verbosity])](errorinfo-verbosity-method.md)|Specifies the severity level of the error. This can determine whether the error should be sent to telemetry (which is based on the trace level setting of the server).|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)

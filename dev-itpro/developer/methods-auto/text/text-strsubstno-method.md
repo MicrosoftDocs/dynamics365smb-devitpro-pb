@@ -3,7 +3,7 @@ title: "Text.StrSubstNo(Text [, Any,...]) Method"
 description: "Replaces %1, %2, %3..."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,11 +23,12 @@ Replaces %1, %2, %3... and #1, #2, #3... fields in a string with the values you 
 ```AL
 NewString :=   Text.StrSubstNo(String: Text [, Value1: Any,...])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
-A string containing '#' and/or '%' fields.
-        
+A string containing '#' and/or '%' fields.  
 
 *[Optional] Value1*  
 &emsp;Type: [Any](../any/any-data-type.md)  

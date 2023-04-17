@@ -54,10 +54,10 @@ Specifies the scope of the permissions that are assigned (Entitlements, Permissi
 ## Example 
 
 ```AL
-[InherentPermissions (PermissionObjectType:Table, Database:"Customers", 'r', InherentPermissionsScope:Both)]
+[InherentPermissions (PermissionObjectType::Table, Database::"Customer", 'r', InherentPermissionsScope::Both)]
 ```
 
->[!NOTE]
+> [!NOTE]  
 > Specifying `InherentPermissionsScope` is optional and the default is *Both* that includes permissions and entitlements. To read about different types of scope, see [InherentPermissionsScope Option](../methods-auto/inherentpermissionsscope/inherentpermissionsscope-option.md).
 
 ## See Also  

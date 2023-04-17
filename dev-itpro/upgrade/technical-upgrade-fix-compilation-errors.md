@@ -1,11 +1,10 @@
 ---
-title: "Fixing compilation errors for technical upgrade"
+title: Fixing compilation errors for technical upgrade
 description: Describes how to fix compilation errors that occur when compiling extensions during a technical upgrade.
-ms.custom: na
-ms.date: 10/01/2020
+ms.custom: bap-template
+ms.date: 03/24/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 author: jswymer
@@ -19,6 +18,12 @@ Compilation errors happen when the new platform introduces breaking changes - fo
 ## Known errors
 
 This section lists some known compilation errors that you might get when compiling extensions for the technical upgrade to version 19 or later. The exact errors that you get may vary from what is listed, based on your environment. 
+
+### Compilation failed errors because of missing types in .NET assemblies
+
+[!INCLUDE[include-tech-upgrade-note.md](../developer/includes/include-tech-upgrade-note.md)]
+
+To resolve these issues, you modify the source code extensions to reference .NET 6.0 assemblies instead of .NET 4.8. The recommended approach is to compare the old extension source code with the new source code in version 22 extensions, which you can find on the version 22 installation media (DVD). Identify the changes in the version 22 extensions, then make the same changes in the old version. 
 
 ### System application extension
 
@@ -117,8 +122,8 @@ The legacy PingPong add-in was removed in version 21. To fix the error, copy the
 
 By default, the **Add-ins** folder path is C:\Program Files\Microsoft Dynamics 365 Business Central\<server instance>\Service\Add-ins. You'll have to stop the v21 server instance to copy the files.
 
-<!--
-### NavEtsWrapper DotNet errors
+### Exchange Web Services DotNet errors
+
 ```al
 DotNet%20Aliases/src/dotnet.al(1039,14): error AL0451: An assembly named 'Microsoft.Exchange.WebServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' could not be found in the assembly probing paths 'C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\Add-Ins, 
 C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\Microsoft Dynamics NAV\Add-Ins\21.0.45947.0, C:\Program Files\Microsoft Dynamics 365 Business Central\210\Service\, C:\Windows\Microsoft.NET\assembly\'
@@ -149,11 +154,14 @@ SetupEmailLogging.Page.al(754,32): error AL0185: DotNet 'OAuthCredentials' is mi
 SetupEmailLogging.Page.al(953,33): error AL0185: DotNet 'OAuthCredentials' is missing
 AttachmentManagement.Codeunit.al(278,25): error AL0185: DotNet 'WebCredentials' is missing
 ```
--->
- 
+
+#### Fix
+
+The NavEtsWrapper add-in was changed in version 21. To fix the error, copy the **NavEtsWrapper** add-in folder from the earlier version's server installation to the **Add-ins** folder of the new version's server installation. Replace existing files when prompted.
+
 ## Rewrite code and create new extension versions
 
-To fix compilation errors, you'll create a new version of the extension. You'll need the source files for the earlier version (that is, the version your upgrading from). For Microsoft extensions, like the system application and base application, you can get the source files from the installation media (DVD) for the earlier version, in the **Applications** folder. The basic steps are as follows:
+To fix compilation errors where you changed AL code, you'll create a new version of the extension. You'll need the source files for the earlier version (that is, the version your upgrading from). For Microsoft extensions, like the system application and base application, you can get the source files from the installation media (DVD) for the earlier version, in the **Applications** folder. The basic steps are as follows:
 
 1. Create new AL project in Visual Studio Code for the extension.
 
@@ -173,7 +181,7 @@ To fix compilation errors, you'll create a new version of the extension. You'll 
     - Set `"platform"` to the version you're upgrading to. For example, use  `19.0.0.0` when upgrading to version 19.
     - Set `"target"` to `OnPrem`
 
-    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#Appjson).
+    For more information about the app.json file, see [App.json file](../developer/devenv-json-files.md#appjson-file).
 
 6. Rewrite code to as needed to clear the compilation errors.
 

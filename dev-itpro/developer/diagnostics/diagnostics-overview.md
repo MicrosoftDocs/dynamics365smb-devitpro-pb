@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 03/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -398,7 +398,7 @@ author: SusanneWindfeldPedersen
 |[AL0502](diagnostic-al502.md)|The LinkTable property must reference a table element node of the current XMLPort.|Error|
 |[AL0503](diagnostic-al503.md)|Reference '{0}' in application object '{1}' is ambiguous.|Error|
 |[AL0504](diagnostic-al504.md)|The enum '{0}' is not extensible.|Error|
-|[AL0505](diagnostic-al505.md)|Pages of type API must have the DelayedInsert property set to true, unless the 'Editable' property or the 'InsertAllowed' property is set to false.|Error|
+|[AL0505](diagnostic-al505.md)|Pages of type API must have the 'DelayedInsert' property set to true. From runtime 7.2, 'DelayedInsert' can be set to false if the 'Editable' property or the 'InsertAllowed' property is set to false.|Error|
 |[AL0509](diagnostic-al509.md)|Constant value '{0}' is outside of the valid ordinal range for this option type.|Warning|
 |[AL0510](diagnostic-al510.md)|The .NET type '{0}' is not a valid control add-in.|Error|
 |[AL0511](diagnostic-al511.md)|The property 'IsControlAddIn' must be set on the .NET type '{0}' if the type represents a .NET control add-in.|Error|
@@ -598,9 +598,9 @@ author: SusanneWindfeldPedersen
 |[AL0717](diagnostic-al717.md)|The property 'TableRelation' or the property 'CalcFormula' is required for the field '{0}' in {1} '{2}' because the field's property 'FieldClass' is set to 'FlowField'.|Warning|
 |[AL0718](diagnostic-al718.md)|Report layouts must have a name.|Error|
 |[AL0719](diagnostic-al719.md)|Argument {0}: The argument should be a valid Field type. An argument of type Joker or Variant might have an underlying type that is not a valid Field type.|Information|
-|[AL0720](diagnostic-al720.md)|An application object '{0} {1}' could not be found in the extension.|Error|
+|[AL0720](diagnostic-al720.md)|An application object '{0} {1}' could not be found in the current extension. Only application objects that belong to the current extensions can be used in this context.|Error|
 |[AL0721](diagnostic-al721.md)|Reports that use the rendering syntax must also define the DefaultRenderingLayout property.|Error|
-|[AL0722](diagnostic-al722.md)|The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax.|Error|
+|[AL0722](diagnostic-al722.md)|The property '{0}' is not allowed on {1} '{2}' because the {3} '{4}' is using the ActionRef syntax or the app.json specifies the 'NoPromotedActionProperties' feature.|Error|
 |[AL0723](diagnostic-al723.md)|The {0} '{1}' cannot be used as target of the ActionRef '{2}'. ActionRefs can only target Actions.|Error|
 |[AL0724](diagnostic-al724.md)|An area of type '{0}' is not valid on pages of type '{1}'.|Error|
 |[AL0725](diagnostic-al725.md)|The action type '{0}' is not allowed in area '{1}'.|Error|
@@ -622,6 +622,37 @@ author: SusanneWindfeldPedersen
 |[AL0741](diagnostic-al741.md)|The permission set '{0}' cannot exclude itself.|Error|
 |[AL0742](diagnostic-al742.md)|The property '{0}' is not valid for the cue action '{1}'.|Error|
 |[AL0743](diagnostic-al743.md)|The property '{0}' is not valid for the cue action '{1}'.|Warning (Future Error)|
+|[AL0744](diagnostic-al744.md)|The property '{0}' is not valid for action '{1}' defined in a report request page.|Error|
+|[AL0745](diagnostic-al745.md)|The property '{0}' is not valid for action '{1}' defined in a report request page.|Warning (Future Error)|
+|[AL0746](diagnostic-al746.md)|The auto-increment field '{0}' has already been defined for table '{1}'.|Error|
+|[AL0748](diagnostic-al748.md)|The return type '{0}' of the {1} method '{2}' has 'Internal' accessibility. The return value will not be usable outside of this module without an implicit conversion.|Warning|
+|[AL0749](diagnostic-al749.md)|The type '{0}' of the parameter '{1}' of the {2} method '{3}' has 'Internal' accessibility. The method will not be callable outside of this module without an implicit conversion.|Warning|
+|[AL0750](diagnostic-al750.md)|Enum values can't be nested. Use '{0}' instead.|Error|
+|[AL0751](diagnostic-al751.md)|Enum values can't be nested. Use '{0}' instead.|Warning (Future Error)|
+|[AL0752](diagnostic-al752.md)|The name of a dataitem cannot be empty because it can cause runtime errors.|Error|
+|[AL0753](diagnostic-al753.md)|The name of a dataitem cannot be empty because it can cause runtime errors.|Warning (Future Error)|
+|[AL0754](diagnostic-al754.md)|The '{0}' already defines a method called '{1}'.|Error|
+|[AL0755](diagnostic-al755.md)|The '{0}' already defines a method called '{1}'.|Warning (Future Error)|
+|[AL0756](diagnostic-al756.md)|The division by Abs(integer) will change its behavior in release version 11. For more information visit the official documentation.|Warning|
+|[AL0757](diagnostic-al757.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Error|
+|[AL0758](diagnostic-al758.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Warning (Future Error)|
+|[AL0759](diagnostic-al759.md)|The value '{0}' specified for FormatRegion cannot be parsed as a valid format culture name.|Error|
+|[AL0760](diagnostic-al760.md)|The value '{0}' specified for FormatRegion is not a standard format culture name.|Error|
+|[AL0761](diagnostic-al761.md)|Invalid enum is used for category. A value of enum {0} {1} is expected which is available in platform version {2} and higher.|Error|
+|[AL0762](diagnostic-al762.md)|Length of the argument '{0}' cannot exceed {1} characters.|Error|
+|[AL0763](diagnostic-al763.md)|{0} can contain only underscores and alphanumeric characters.|Error|
+|[AL0764](diagnostic-al764.md)|{0} cannot be empty.|Error|
+|[AL0765](diagnostic-al765.md)|A argument of type {0} cannot be used in an External Business Event.|Error|
+|[AL0766](diagnostic-al766.md)|An External Business Event with {0} {1} is already declared.|Error|
+|[AL0767](diagnostic-al767.md)|The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.|Error|
+|[AL0768](diagnostic-al768.md)|The property '{0}' is required when property '{1}' is set to '{2}'.|Warning (Future Error)|
+|[AL0769](diagnostic-al769.md)|The property '{0}' is required.|Warning (Future Error)|
+|[AL0770](diagnostic-al770.md)|The identifier '{0}' cannot have any leading or trailing spaces.|Error|
+|[AL0771](diagnostic-al771.md)|The identifier '{0}' cannot have any leading or trailing spaces.|Warning (Future Error)|
+|[AL0772](diagnostic-al772.md)|The attribute '{0}' can only be used in combination with attribute '{1}'.|Error|
+|[AL0773](diagnostic-al773.md)|The number of files found in '{0}' exceeds {1}. This may result in a slower compilation.|Warning|
+|[AL0774](diagnostic-al774.md)|Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.|Error|
+|[AL0775](diagnostic-al775.md)|Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.|Warning (Future Error)|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
@@ -643,7 +674,7 @@ author: SusanneWindfeldPedersen
 |[AL1018](diagnostic-al1018.md)|Directory '{0}' could not be found.|Error|
 |[AL1019](diagnostic-al1019.md)|One or more dependencies defined in the project manifest are not valid. One or more of the required attributes: 'publisher', 'name', 'version', and 'id' are either missing or not valid.|Error|
 |[AL1021](diagnostic-al1021.md)|The package cache path has not been specified.|Error|
-|[AL1022](diagnostic-al1022.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found in the package cache folder '{3}'.|Error|
+|[AL1022](diagnostic-al1022.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be found in the package cache folders: {3}.|Error|
 |[AL1023](diagnostic-al1023.md)|The package file {0} is not valid.|Error|
 |[AL1024](diagnostic-al1024.md)|A package with publisher '{0}', name '{1}', and a version compatible with '{2}' could not be loaded. {3}.|Error|
 |[AL1025](diagnostic-al1025.md)|The file at location '{0}' does not match any definition.|Warning|
@@ -684,7 +715,7 @@ author: SusanneWindfeldPedersen
 |[AL1061](diagnostic-al1061.md)|An error occurred during file validation: '{0}'.|Error|
 |[AL1062](diagnostic-al1062.md)|Too many key vault URLs specified.|Error|
 |[AL1063](diagnostic-al1063.md)|Key vault URL is too long.|Error|
-|[AL1064](diagnostic-al1064.md)|Key vault URL is not a valid URL.|Error|
+|[AL1064](diagnostic-al1064.md)|Key vault URL is not a valid Azure key vault URL. A valid key vault URL must use HTTPS and point to the Azure key vault domain.|Error|
 |[AL1065](diagnostic-al1065.md)|Key vault URL should not have a path or query string.|Error|
 |[AL1066](diagnostic-al1066.md)|Duplicate package dependency with application ID '{0}', publisher '{1}', and name '{2}'. Remove duplicate dependencies in the application manifest.|Error|
 |[AL1067](diagnostic-al1067.md)|Duplicate package dependency with publisher '{0}', and name '{1}'. Remove duplicate dependencies in the application manifest.|Error|
@@ -698,6 +729,9 @@ author: SusanneWindfeldPedersen
 |[AL1075](diagnostic-al1075.md)|Both 'ShowMyCode' and 'ResourceExposurePolicy' properties are added. You should use the 'ResourceExposurePolicy' property and remove the 'ShowMyCode' property.|Error|
 |[AL1076](diagnostic-al1076.md)|A package that satisfies the dependency on app with ID {0} with name '{1}' and publisher '{2}' was found, but the name or publisher has changed. New name '{3}' and new publisher '{4}'. Consider updating the dependency reference to the new name/publisher.|Information|
 |[AL1077](diagnostic-al1077.md)|An error was encountered when trying to load the workspace: {0}.|Error|
+|[AL1078](diagnostic-al1078.md)|Key vault URL is not a valid Azure key vault URL. A valid key vault URL must use HTTPS and point to the Azure key vault domain.|Warning (Future Error)|
+|[AL1079](diagnostic-al1079.md)|Debugging will not work for this extension because 'allowDebugging' has been set to false and 'applyToDevExtension' to true.|Information|
+|[AL1080](diagnostic-al1080.md)|Source will still be visible for this extension via debugging because 'allowDebugging' has been set to true.|Information|
 |[AL1100](diagnostic-al1100.md)|File name '{0}' is empty, contains invalid characters, has a drive specification without an absolute path, or is too long.|Fatal Error|
 |[AL1101](diagnostic-al1101.md)|Target must specify one of: 'internal', 'solution', 'extension'.|Fatal Error|
 |[AL1130](diagnostic-al1130.md)|The format of property '{0}' must be a timeout duration specified as '[d.]hh:mm:ss[.fffffff]'.|Error|

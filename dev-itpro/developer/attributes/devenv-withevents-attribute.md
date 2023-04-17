@@ -37,8 +37,9 @@ Sets whether a DotNet variable subscribes to the events published by a .NET Fram
 
 ## Remarks
 
-You can only subscribe to events that are emitted by global variables of the .NET type marked with the WithEvents property. For all the global variables that are marked with this property, the compiler will expose the events available on the type as triggers on the variable. The syntax for declaring these triggers is {VariableName}::{EventName}(...ParameterList), but IntelliSense will offer suggestions for the event name and autocomplete the parameter list.
+You can only subscribe to events that are emitted by global variables of the .NET type marked with the WithEvents property. For all the global variables that are marked with this property, the compiler will expose the events available on the type as triggers on the variable. The syntax for declaring these triggers is `{VariableName}::{EventName}(...ParameterList)`, but IntelliSense will offer suggestions for the event name and autocomplete the parameter list.
 
-## See Also  
+## See Also
+
 [Get Started with AL](../devenv-get-started.md)  
 [Developing Extensions](../devenv-dev-overview.md)  

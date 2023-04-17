@@ -3,7 +3,7 @@ title: "Verbosity System Option"
 description: "Represents the security level of events."
 ms.author: solsen
 ms.custom: na
-ms.date: 05/11/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ Represents the security level of events.
 ## Members
 |  Member  |  Description  |
 |----------------|---------------|
-|Critical| Identifies an abnormal exit or termination event.|
+|Critical|Identifies an abnormal exit or termination event.|
 |Error|Identifies a severe error event.|
 |Warning|Identifies a warning event such as an allocation failure.|
 |Normal|Identifies a non-error event such as an entry or exit event.|

@@ -2,7 +2,7 @@
 title: "Upgrading Microsoft System and Base Application to Version 21"
 description: Describes how to upgrade an unmodified Business Central versions 15, 16, 17, 18, 19, or 20 to version 21
 ms.custom: na
-ms.date: 08/31/2022
+ms.date: 02/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na

@@ -3,7 +3,7 @@ title: "Text.IndexOfAny(Text [, Integer]) Method"
 description: "Reports the one-based index of the first occurrence of the specified string in this instance."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Reports the one-based index of the first occurrence of the specified string in t
 ```AL
 Index :=   Text.IndexOfAny(Values: Text [, StartIndex: Integer])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -30,8 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 
 *Values*  
 &emsp;Type: [Text](text-data-type.md)  
-The collection of characters to seek.
-        
+The collection of characters to seek.  
 
 *[Optional] StartIndex*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

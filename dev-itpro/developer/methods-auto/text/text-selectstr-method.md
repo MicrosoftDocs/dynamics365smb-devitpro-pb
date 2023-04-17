@@ -3,7 +3,7 @@ title: "Text.SelectStr(Integer, Text) Method"
 description: "Retrieves a substring from a comma-separated string."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,11 +23,12 @@ Retrieves a substring from a comma-separated string.
 ```AL
 NewString :=   Text.SelectStr(Number: Integer, CommaString: Text)
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-Specifies which substring to retrieve. The substrings in the comma-separated string are numbered 1, 2, 3, and so on. If Number is greater than the actual number of substrings, then a run-time error occurs.
-        
+Specifies which substring to retrieve. The substrings in the comma-separated string are numbered 1, 2, 3, and so on. If Number is greater than the actual number of substrings, then a run-time error occurs.  
 
 *CommaString*  
 &emsp;Type: [Text](text-data-type.md)  

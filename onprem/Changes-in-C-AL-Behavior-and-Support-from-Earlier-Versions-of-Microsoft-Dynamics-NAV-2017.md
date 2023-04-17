@@ -7,7 +7,6 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: "dynamics-nav-2017"
-manager: edupont
 author: jswymer
 ---
 # Changes in C/AL Behavior and Support from Earlier Versions of Microsoft Dynamics NAV

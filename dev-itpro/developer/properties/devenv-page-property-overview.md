@@ -3,7 +3,7 @@ title: "Page, Page Fields, and Page Extension Properties"
 description: "This topic lists properties that apply to the [page object](../devenv-page-object.md), page fields, and [page extension object](../devenv-page-ext-object.md)."
 ms.author: solsen
 ms.custom: na
-ms.date: 09/07/2022
+ms.date: 03/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -74,8 +74,11 @@ The following properties all apply to the Page object, only some of these proper
 |[ExtendedDatatype Property](devenv-extendeddatatype-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[Extensible Property](devenv-extensible-property.md)| | -Report <br />  -Enum Type <br />  -Table <br />  -Page <br /> |
 |[Filters Property](devenv-filters-property.md)| | -Page View <br /> |
+|[FlowCaption Property](devenv-flowcaption-property.md)| | -Page Custom Action <br /> |
 |[FlowEnvironmentId Property](devenv-flowenvironmentid-property.md)| | -Page Custom Action <br /> |
 |[FlowId Property](devenv-flowid-property.md)| | -Page Custom Action <br /> |
+|[FlowTemplateCategoryName Property](devenv-flowtemplatecategoryname-property.md)| | -Page Custom Action <br /> |
+|[FlowTemplateId Property](devenv-flowtemplateid-property.md)| | -Page Custom Action <br /> |
 |[FreezeColumn Property](devenv-freezecolumn-property.md)| True| -Page Group <br /> |
 |[Gesture Property](devenv-gesture-property.md)| | -Page Action <br /> |
 |[GridLayout Property](devenv-gridlayout-property.md)| | -Page Group <br /> |
@@ -87,6 +90,7 @@ The following properties all apply to the Page object, only some of these proper
 |[IndentationControls Property](devenv-indentationcontrols-property.md)| True| -Page Group <br /> |
 |[InFooterBar Property](devenv-infooterbar-property.md)| True| -Page Action <br /> |
 |[InherentEntitlements Property](devenv-inherententitlements-property.md)| | -Table <br />  -Report <br />  -Codeunit <br />  -Xml Port <br />  -Page <br />  -Query <br /> |
+|[InherentPermissions Property](devenv-inherentpermissions-property.md)| | -Table <br />  -Report <br />  -Codeunit <br />  -Xml Port <br />  -Page <br />  -Query <br /> |
 |[InsertAllowed Property](devenv-insertallowed-property.md)| | -Page <br />  -Request Page <br /> |
 |[InstructionalText Property](devenv-instructionaltext-property.md)| True| -Page <br />  -Request Page <br />  -Page Group <br /> |
 |[InstructionalTextML Property](devenv-instructionaltextml-property.md)| True| -Page <br />  -Request Page <br />  -Page Group <br /> |
@@ -103,9 +107,9 @@ The following properties all apply to the Page object, only some of these proper
 |[NavigationPageId Property](devenv-navigationpageid-property.md)| | -Page Field <br /> |
 |[NotBlank Property](devenv-notblank-property.md)| | -Table Field <br />  -Page Field <br /> |
 |[Numeric Property](devenv-numeric-property.md)| | -Table Field <br />  -Page Field <br /> |
-|[ObsoleteReason Property](devenv-obsoletereason-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table Field <br />  -Table <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Area <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
-|[ObsoleteState Property](devenv-obsoletestate-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table Field <br />  -Table <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Area <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
-|[ObsoleteTag Property](devenv-obsoletetag-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table Field <br />  -Table <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Area <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Area <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
+|[ObsoleteReason Property](devenv-obsoletereason-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table Field <br />  -Table <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
+|[ObsoleteState Property](devenv-obsoletestate-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table Field <br />  -Table <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
+|[ObsoleteTag Property](devenv-obsoletetag-property.md)| | -Page Action Ref <br />  -Page Custom Action <br />  -Table Field <br />  -Table <br />  -Table Key <br />  -Codeunit <br />  -Enum Type <br />  -Enum Value <br />  -Page Action <br />  -Page Action Group <br />  -Page Action Separator <br />  -Page Part <br />  -Page System Part <br />  -Page Chart Part <br />  -Page Field <br />  -Page Group <br />  -Page Label <br />  -Query <br />  -Query Column <br />  -Query Filter <br />  -Report <br />  -Report Data Item <br />  -Report Column <br />  -Request Page <br />  -Xml Port <br />  -Page Action Area <br />  -Page Area <br />  -Page <br />  -Page View <br />  -Profile <br />  -Interface <br />  -Control Add In <br />  -Permission Set <br />  -Field Group <br /> |
 |[ODataEDMType Property](devenv-odataedmtype-property.md)| True| -Page Field <br /> |
 |[ODataKeyFields Property](devenv-odatakeyfields-property.md)| | -Page <br /> |
 |[OptionCaption Property](devenv-optioncaption-property.md)| True| -Table Field <br />  -Page Field <br />  -Report Column <br /> |

@@ -2,7 +2,7 @@
 title: Update journalLines  
 description: Updates a journal line in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -71,6 +71,10 @@ Content-type: application/json
     "amount": 0,
     "description": "",
     "comment": "",
+    "taxCode": "",
+    "balanceAccountType": "G/L Account",
+    "balancingAccountId": "00000000-0000-0000-0000-000000000000",
+    "balancingAccountNumber": "",
     "lastModifiedDateTime": "0001-01-01T00:00:00Z"
 }
 ```

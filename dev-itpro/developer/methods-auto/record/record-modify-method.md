@@ -3,7 +3,7 @@ title: "Record.Modify([Boolean]) Method"
 description: "Modifies a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *[Optional] RunTrigger*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether to run the AL code in the OnModify Trigger. If this parameter is true, then the code in the OnModify trigger is executed. If this parameter is false (default), then the code in the OnModify trigger is not executed.
-          
+Specifies whether to run the AL code in the OnModify Trigger. If this parameter is true, then the code in the OnModify trigger is executed. If this parameter is false (default), then the code in the OnModify trigger is not executed.  
 
 
 ## Return Value

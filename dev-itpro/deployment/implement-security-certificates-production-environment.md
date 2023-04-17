@@ -1,25 +1,24 @@
 ---
-title: "Using Security Certificates with Business Central On-Premises"
-description: Leran how to use security certicates to help secure connections with Business Central.
-ms.custom: na
-ms.date: 09/27/2022
+title: Using Security Certificates with Business Central On-Premises"
+description: Learn how to use security certificates to help secure connections with Business Central.
+ms.custom: bap-template
+ms.date: 04/11/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: how-to
 author: jswymer
+ms.author: jswymer
 ---
-# Using Security Certificates with Business Central On-Premises
+# Using security certificates with Business Central on-premises
 
 You use certificates to help secure connections over a wide area network \(WAN\), such as connections from the [!INCLUDE[webserver](../developer/includes/webserver.md)], [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)], and web services to the [!INCLUDE[server](../developer/includes/server.md)]. Implementing security certificates on your deployment environment requires modifications to various components, like the [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and clients.
 
-## About Security Certificates
+## About security certificates
 
 A certificate is a file that [!INCLUDE[server](../developer/includes/server.md)] uses to prove its identity and establish a trusted connection with the client that is trying to connect. [!INCLUDE[prod_short](../developer/includes/prod_short.md)] can support the following configurations:  
   
--  *Chain trust*, which specifies that each certificate must belong to a hierarchy of certificates that ends in a root authority at the top of the chain.  
-  
--  *Peer trust*, which specifies that both self-issued certificates and certificates in a trusted chain are accepted.  
+- *Chain trust*, which specifies that each certificate must belong to a hierarchy of certificates that ends in a root authority at the top of the chain.  
+- *Peer trust*, which specifies that both self-issued certificates and certificates in a trusted chain are accepted.  
   
 The implementation in this section describes the chain trust configuration, which is the more secure option.  
 
@@ -30,11 +29,11 @@ The implementation in this section describes the chain trust configuration, whic
 > [!NOTE]  
 > An instance of [!INCLUDE[server](../developer/includes/server.md)] that has been configured for secure WAN communication always prompts users for authentication when they start the client, even when the client computer is in the same domain as [!INCLUDE[server](../developer/includes/server.md)].
   
-### Certificates for Production
+### Certificates for production
   
 In a production environment, you should obtain a certificate from a certification authority or trusted provider. Some large organizations may have their own certification authorities, and other organizations can request a certificate from a third-party organization.
   
-###  <a name="AboutProdCerts"></a> Obtaining Certificates
+###  <a name="AboutProdCerts"></a> Obtaining certificates
 
 You implement chain trust by obtaining X.509 service certificates from a trusted provider. These certificates and their root certification authority \(CA\) certificates must be installed in the certificates store on the computer that is running [!INCLUDE[server](../developer/includes/server.md)]. The CA certificate must also be installed in the certificate store on computers that are running the [!INCLUDE[webserver](../developer/includes/webserver.md)] and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] so that clients can validate the server.  
   
@@ -43,20 +42,19 @@ Most enterprises and hosting providers have their own infrastructure for issuing
 > [!IMPORTANT]
 > Microsoft recommends against using wildcard SSL certificates in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] installations. Wildcard certificates pose security risks because if one server or sub-domain is compromised, all sub-domains may be compromised. Wildcard certificates also introduce a new style of impersonation attack. In this attack, the victim is lured to a fraudulent resource in the certified domain through phishing. Conventional certificates detect this attack, because the user’s browser checks that the private key is hosted on a server whose name matches the one displayed in the browser’s address window. 
   
-## Run the Certificates Snap-in for Microsoft Management Console
+## Run the certificates snap-in for Microsoft Management Console
   
 Some of the following procedures use the Certificates snap-in for Microsoft Management Console \(MMC\). If you do not already have this snap-in installed, you can add it to the MMC. For information see [Add the Certificates Snap-in to an MMC](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).  
   
-## Install and Configure the Certificates
+## Install and configure the certificates
   
 You install the security certificates on the computers running [!INCLUDE[server](../developer/includes/server.md)], [!INCLUDE[webserver](../developer/includes/webserver.md)], and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)]. The root CA certificate and the service certificate are used in the configuration, but client certificates are not.  
 
-### Install Certificates on components 
+### Install certificates on components 
 
 1. Follow the installation instructions that are available from your certificate provider to install the root CA and service certificates on the following computers:  
   
-    -  Install the root CA on the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and all computers that are running [!INCLUDE[webserver](../developer/includes/webserver.md)] instances and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].  
-  
+    - Install the root CA on the computer that is running [!INCLUDE[server](../developer/includes/server.md)] and all computers that are running [!INCLUDE[webserver](../developer/includes/webserver.md)] instances and [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)].  
     - Install the service certificate on the computer that is running [!INCLUDE[server](../developer/includes/server.md)] only.  
   
 2. Make sure that the **Server Authentication** and **Client Authentication** certificate purposes are enabled for the service certificate.  
@@ -103,7 +101,7 @@ The [!INCLUDE[server](../developer/includes/server.md)] instance configuration i
     Set-NAVServerConfiguration -ServerInstance <BC server instance> -KeyName ServicesCertificateThumbprint -KeyValue <thumbprint>
     ```
 
-    Substitute `<BC server instance>` with name of your server instance, like `BC210`.
+    Substitute `<BC server instance>` with name of your server instance, like `BC220`.
 3. Run the following command to specify SSL between the web client and [!INCLUDE[server](../developer/includes/server.md)]:
 
     ```powershell
@@ -161,7 +159,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
 2. At the prompt, run the following commands:
 
     ```powershell
-    Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName DnsIdentity -KeyValue <true
+    Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName DnsIdentity -KeyValue true
     ```
 
     This following command is only required for version 21 and later:
@@ -170,7 +168,7 @@ You can configure the [!INCLUDE[webserver](../developer/includes/webserver.md)] 
     Set-NAVWebServerInstanceConfiguration -WebServerInstance <web server instance> -KeyName ServerHttps -KeyValue true
     ```
 
-    Substitute `<web server instance>` with name of your web server instance, like `BC210`.
+    Substitute `<web server instance>` with name of your web server instance, like `BC220`.
 
 #### Manually changing the navsettings.json
 

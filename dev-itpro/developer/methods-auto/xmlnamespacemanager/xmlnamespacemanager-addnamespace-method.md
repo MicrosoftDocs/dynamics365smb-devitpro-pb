@@ -3,7 +3,7 @@ title: "XmlNamespaceManager.AddNamespace(Text, Text) Method"
 description: "Adds the given namespace to the collection."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [XmlNamespaceManager](xmlnamespacemanager-data-type.md) data 
 
 *Prefix*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The prefix to associate with the namespace being added. Use an empty string to add a default namespace.
-        
+The prefix to associate with the namespace being added. Use an empty string to add a default namespace.  
 
 *Uri*  
 &emsp;Type: [Text](../text/text-data-type.md)  

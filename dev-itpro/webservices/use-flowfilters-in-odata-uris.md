@@ -2,7 +2,7 @@
 title: "How to: Use FlowFilters in OData URIs"
 description: Learn how to use FlowFilter expressions in OData URIs.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/11/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -22,7 +22,7 @@ In this procedure, you create and publish a web service from the **Item Card** p
 
     Register and publish page 30, Item Card, and name the service **ItemCard**. 
   
-2. Start Windows Internet Explorer, and then in the **Address** field, enter a URI in this format:  
+2. Start an internet browser, then in the **Address** field, enter a URI in this format:  
   
     ```http  
     https://<Server>:<WebServicePort>/<ServerInstance>/OData/$metadata  

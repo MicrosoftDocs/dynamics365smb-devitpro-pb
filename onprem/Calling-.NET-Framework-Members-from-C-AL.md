@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 02e7deaa-6d0f-4713-b7f5-568418cc4ebd
 caps.latest.revision: 18
-manager: edupont
 ---
 # Calling .NET Framework Members from C/AL
 You can call .NET Framework type members, including methods, properties, and constructors, from C/AL code with the DotNet data type for C/AL variables. This section provides an overview of the DotNet data type, guidelines on its use, and aspects about calling members of a .NET Framework type. For information about how to create and use a DotNet variable to call members of a type, see [How to: Call .NET Framework Types From C/AL Code](How-to--Call-.NET-Framework-Types-From-C-AL-Code.md).  

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a4d7b9c6-17f6-4083-b0fe-3b238b4e2138
 caps.latest.revision: 16
-manager: edupont
 ---
 # How to Change the Printed Values of Boolean Variables
 In a client report definition \(RDLC\) report layout, when a Boolean value appears on a report, the value is printed as "True" or "False" in the target language.  

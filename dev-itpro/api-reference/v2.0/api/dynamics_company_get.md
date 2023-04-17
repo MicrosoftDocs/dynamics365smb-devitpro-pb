@@ -2,7 +2,7 @@
 title: GET companies  
 description: Gets a company object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -52,14 +52,15 @@ Here is an example of the response.
 
 ```json
 {
-    "id": "id-value",
-    "systemVersion": "17806",
+    "id": "824820a2-508c-ed11-aada-000d3a298ab3",
+    "systemVersion": "21.2.49946.51685",
+    "timestamp": 50516,
     "name": "CRONUS US",
     "displayName": "CRONUS USA, Inc.",
     "businessProfileId": "",
-    "systemCreatedAt": "2017-01-23T00:24:31.766Z",
+    "systemCreatedAt": "2023-01-04T16:55:47.367Z",
     "systemCreatedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1",
-    "systemModifiedAt": "2020-08-21T00:24:31.777Z",
+    "systemModifiedAt": "2023-01-04T16:55:47.367Z",
     "systemModifiedBy": "f2a5738a-44e3-ea11-bb43-000d3a2feca1"
 }
 ```

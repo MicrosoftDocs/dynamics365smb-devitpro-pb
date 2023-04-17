@@ -3,7 +3,7 @@ title: "IsolatedStorage.Get(Text, var Text) Method"
 description: "Gets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ Gets the value associated with the specified key.
 ## Parameters
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The key of the value to get. If the specified key is not found an error will be reported.
-        
+The key of the value to get. If the specified key is not found an error will be reported.  
 
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  

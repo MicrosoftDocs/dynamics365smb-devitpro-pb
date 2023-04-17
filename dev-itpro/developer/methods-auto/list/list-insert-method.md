@@ -3,7 +3,7 @@ title: "List.Insert(Integer, T) Method"
 description: "Inserts an element into the List at the specified index."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,8 @@ An instance of the [List](list-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The one-based index at which the value should be inserted.
-        
+The one-based index at which the value should be inserted.  
+
 *Value*  
 &emsp;Type: [T](list-data-type.md)  
 The value to be inserted.  
@@ -44,6 +44,11 @@ The value to be inserted.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The type `T` is a dynamic type. When `List` is of type `Text` then `T` will change to `Text`. When `List` is of type `Integer`, then `T` will change to `Integer`.
+
 ## See Also
 [List Data Type](list-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

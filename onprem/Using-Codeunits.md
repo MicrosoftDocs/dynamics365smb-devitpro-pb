@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0456b0e3-873e-427b-8ef5-b9bb0ac7ba6e
 caps.latest.revision: 17
-manager: edupont
 ---
 # Using Codeunits
 By using codeunits, you eliminate the need to duplicate code and you make the code easier to maintain. For example, if you use the same code repeatedly in your objects, then you should create a global function for the code in a codeunit. After you create a codeunit and a global function in that codeunit, you can access the function from another codeunit by declaring a variable of type Codeunit and specifying the name of the codeunit as the subtype of the variable. You can then access the function by using *\<CodeunitVariableName>*.*\<FunctionName>*.  

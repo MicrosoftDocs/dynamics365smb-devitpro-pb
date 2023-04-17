@@ -6,7 +6,7 @@ ms.author: jswymer #Required; your Microsoft alias; optional team alias.
 ms.reviewer: jswymer #Required; Microsoft alias of content publishing team member.
 ms.service: dynamics365-business-central
 ms.topic: conceptual 
-ms.date: 11/03/2022
+ms.date: 11/23/2022
 ms.custom: bap-template
 ---
 

@@ -3,7 +3,7 @@ title: "Query.SetRange(Any [, Any] [, Any]) Method"
 description: "Sets a filter on a range of values on a column of a query data set."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,16 +30,15 @@ An instance of the [Query](query-data-type.md) data type.
 
 *Column*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The name of the column in the query that you want to filter. The name is defined by the column's Name Property.
-        
+The name of the column in the query that you want to filter. The name is defined by the column's Name Property.  
+
 *[Optional] FromValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The lower limit of the range. The data type of this parameter must match the data type of Column. If you set only the FromValue parameter, then the ToValue parameter is set to the same value as FromValue.
-          
+The lower limit of the range. The data type of this parameter must match the data type of Column. If you set only the FromValue parameter, then the ToValue parameter is set to the same value as FromValue.  
+
 *[Optional] ToValue*  
 &emsp;Type: [Any](../any/any-data-type.md)  
-The upper limit of the range. The data type of this parameter must match the data type of Column. If you omit the ToValue parameter, then the only the value that is specified for FromValue is used, which enables you to filter on a single column value instead of a range. If you omit both the FromValue and ToValue parameters, then the method removes all filters that are already set on the column.
-          
+The upper limit of the range. The data type of this parameter must match the data type of Column. If you omit the ToValue parameter, then the only the value that is specified for FromValue is used, which enables you to filter on a single column value instead of a range. If you omit both the FromValue and ToValue parameters, then the method removes all filters that are already set on the column.  
 
 
 

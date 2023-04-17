@@ -3,7 +3,7 @@ title: "System.Clear(var Any) Method"
 description: "Clears the value of a single variable."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/11/2022
+ms.date: 04/13/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -33,8 +33,7 @@ The identifier (variable) of any AL data type, including simple and composite da
 -   A string variable is set to empty string
 -   A date variable is set to 0D (undefined date)
 -   A time variable is set to 0T (undefined time)
--   A Boolean variable is set to FALSE
-          
+-   A Boolean variable is set to FALSE  
 
 
 

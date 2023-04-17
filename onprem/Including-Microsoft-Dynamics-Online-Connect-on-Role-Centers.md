@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c681174e-8cf3-49f1-8ac5-cc4b37322bf4
 caps.latest.revision: 20
-manager: edupont
 ---
 # Including Microsoft Dynamics Online Connect on Role Centers
 [!INCLUDE[navnowlong](includes/navnowlong_md.md)] includes a control add-in that you can use on Role Centers to display role-based content from Microsoft Dynamics Online Connect. Connect is a Web service that distributes Microsoft Dynamics product and business information from sources such as [CustomerSource](https://go.microsoft.com/fwlink/?LinkID=153696) and the Microsoft Dynamics community. The information that Connect provides on a Role Center is based on the Role Center's profile or a profile that the Role Center user chooses. If the content is available in different languages, then content is displayed in the language that matches language that is defined for the Role Center user.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 65541fa4-a40c-497a-abac-857eeeb70d6d
 caps.latest.revision: 26
-manager: edupont
 ---
 # How to: Install a Windows Client Control Add-in Assembly
 [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-ins are provided in one or more Microsoft Framework .NET–based assemblies, which are .dll type files. To run a control add from the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], the control add-in assembly must be installed on the computer on which the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] is installed. In some cases during development, such as when you compile an object that uses a control add-in, the control add-in assembly must also be installed on the computer that is running the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)].  

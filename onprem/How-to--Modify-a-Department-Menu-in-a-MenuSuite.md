@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 04d514e7-5d43-40f2-a1d5-f496d09b0baa
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: Modify a Department Menu in a MenuSuite
 [!INCLUDE[navnowlong](includes/navnowlong_md.md)] provides a basic MenuSuite that you can modify, or you can create a new MenuSuite from the basic MenuSuite. You modify an existing MenuSuite by designing it in Navigation Pane Designer. You can modify the shortcut menus, which typically represent a department area. You can modify the department menu either directly from the shortcut menu or in the **Menu Properties** window. This procedure describes how to modify a department menu in a MenuSuite. For more information about how to modify a menu item, see [How to: Modify Menu Items in a MenuSuite](How-to--Modify-Menu-Items-in-a-MenuSuite.md). For information about how to create a new MenuSuite, see [Walkthrough: Creating MenuSuites for the Microsoft Dynamics NAV Windows Client](Walkthrough--Creating-MenuSuites-for-the-Microsoft-Dynamics-NAV-Windows-Client.md).  

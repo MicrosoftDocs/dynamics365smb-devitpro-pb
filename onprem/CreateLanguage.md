@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 24e1ba11-dc05-4aab-8609-8bb3f963a471
 caps.latest.revision: 5
-manager: edupont
 ---
 # CreateLanguage
 Creates captions on [!INCLUDE[navnow](includes/navnow_md.md)] objects for a specified language.  

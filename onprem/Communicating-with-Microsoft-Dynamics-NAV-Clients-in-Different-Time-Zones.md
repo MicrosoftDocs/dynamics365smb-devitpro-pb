@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 5bf685b9-0629-4b03-8d88-8b60151acd9b
 caps.latest.revision: 34
-manager: edupont
 ---
 # Communicating with Microsoft Dynamics NAV Clients in Different Time Zones
 [!INCLUDE[navnow](includes/navnow_md.md)] can interact with [!INCLUDE[rtc](includes/rtc_md.md)]s in different time zones.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 26debaba-6559-4edb-b0b3-cb3d480b35c1
 caps.latest.revision: 21
-manager: edupont
 ---
 # Extending the Windows Client Using Control Add-ins
 In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-ins add custom functionality to Role Centers and pages. The following sections provide an overview of the documentation that is available to develop and use control add-ins.  

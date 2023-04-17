@@ -3,7 +3,7 @@ title: "Operation Limits in Dynamics 365 Business Central"
 description: "Learn about constraints on what you can do in Business Central online that is different from what you can do with on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.date: 09/22/2022
+ms.date: 03/16/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -85,7 +85,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |---------|--------------------------------------------------------------------------------|------|
 |Default max documents | The maximum number of documents that can be merged in a report using a Word layout. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using [MaximumDocumentCount property](../developer/properties/devenv-maximumdocumentcount-property.md) of a report. Client users can do the same when running a report from the report request page|200|
 |Max documents | The maximum number of documents that can be merged in a report using a Word layout. If exceeded, the report will be canceled.|500|
-|Default max execution timeout | The maximum execution time that it can take to generate a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [ExecutionTimeout property](../developer/properties/devenv-executiontimeout-property.md) of a report. Client users can do the same via **Report Limits** page, or when running a report from the report request page as a one-time change.|6 hours|
+|Default max execution timeout | The maximum execution time that it can take to generate a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [ExecutionTimeout property](../developer/properties/devenv-executiontimeout-property.md) of a report. Client users can do the same via **Report Limits and Settings** page, or when running a report from the report request page as a one-time change.|6 hours|
 |Max execution timeout | The maximum execution time that it can take to generate a report. If exceeded, the report will be canceled.|12 hours|
 |Default max rows|The maximum number of rows that can be processed in a report by default. Users can override this setting on a report-basis from the report request page. If exceeded, the report will be canceled.<br /><br />Developers can override this setting by using the [MaximumDataSetSize property](../developer/properties/devenv-maximumdatasetsize-property.md) of a report. Client users can do the same when running a report from the report request page.|500,000|
 |Max rows | The maximum number of rows that can be processed in a report. If exceeded, the report will be canceled by the server.|1,000,000|
@@ -104,7 +104,9 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 | Max companies | The maximum number of companies that can be contained in one environment.|300|
 
 > [!TIP]  
-> This company limit will take effect in 2023 wave 1 release. If you already have more than 300 companies in one environment, please distribute them across more environments to avoid exceeding the limit per environment.
+> This company limit will take effect in 2023 wave 1 release. When in effect, exceeding the limit will prevent you from doing some environment operations. For information about the consequences of exceeding the limit, go to [Operational challenges with many companies per environment](environment-company-limit.md).
+>
+> If you already have more than 300 companies in one environment, distribute them across more environments to avoid problems later.
 
 ##  <a name="ODataServices"></a> OData request limits (per environment)
   
@@ -113,12 +115,12 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Max body size| The maximum request body size. |  350 megabytes|
 |Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
 |Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
-|Max page size|The maximum number of entities returned per page of OData results.|  20,000 entities per page|
-|Max batch size|The maximum number of operations in a batch call.| 100 operations per batch|
+|Max page size|The maximum number of entities returned per OData request.|  20,000 entities per request|
+|Max batch size|The maximum number of operations in an OData $batch request.| 100 operations per batch|
 |Max request queue size|The maximum number of pending OData V4 requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|
 |Rate|The number of OData requests per minute that are allowed. An HTTP response code `429 - Too Many Requests` is returned if limits are exceeded.|Sandbox:<br />300 requests/minute<br /><br />Production<br />- 600 requests/minute| 
 |Operation timeout|The maximum amount of time that the service gives a single OData request. When the limit is exceeded, an HTTP response code `408 - Request Timeout` is returned.<br /><br />After 8 minutes, the session is canceled. |8 minutes|
-|Max number of subscriptions|The maximum number of Webhook subscriptions. |200|
+|Max number of webhook subscriptions|The maximum number of Webhook subscriptions. |200|
 
 <!--
 |Request timeout|HTTP response code `504 - Gateway Timeout` is returned when a request exceeds 10-minutes execution time.|10 minutes|

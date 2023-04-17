@@ -1,9 +1,8 @@
 ---
 title: Get customers  
-description: Gets a customer object in Dynamics 365 Business Central.
- 
-author: SusanneWindfeldPedersen
-ms.topic: article
+description: Gets a customer object with properties and relationships in Dynamics 365 Business Central.
+ author: SusanneWindfeldPedersen
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -26,8 +25,6 @@ GET businesscentralPrefix/companies({id})/customers({id})
 > To include the financial details of a customer, expanding on customerFinancialDetails:
 >```GET businesscentralPrefix/companies({id})/customers({id})?$expand=customerFinancialDetails```
 
-
-
 ## Request headers
 
 |Header|Value|
@@ -42,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **customer
 
 **Requests**
 
-Here is some example requests.
+Here are some example requests.
 
 ```json
 GET https://{businesscentralPrefix}/api/v2.0/companies({id})/customers({id})

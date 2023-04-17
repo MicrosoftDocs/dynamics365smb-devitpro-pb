@@ -3,7 +3,7 @@ title: "Text.PadLeft(Integer [, Char]) Method"
 description: "Returns a new Text that right-aligns the characters in this instance by padding them on the left, for a specified total length."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Returns a new Text that right-aligns the characters in this instance by padding 
 ```AL
 Result :=   Text.PadLeft(Count: Integer [, Char: Char])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  
@@ -30,8 +32,7 @@ An instance of the [Text](text-data-type.md) data type.
 
 *Count*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The number of characters in the resulting string, equal to the number of original characters plus any additional padding characters.
-        
+The number of characters in the resulting string, equal to the number of original characters plus any additional padding characters.  
 
 *[Optional] Char*  
 &emsp;Type: [Char](../char/char-data-type.md)  

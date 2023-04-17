@@ -4,7 +4,7 @@ description: Creates a sales order object in Dynamics 365 Business Central.
  
 author: SusanneWindfeldPedersen
 
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -27,10 +27,11 @@ POST businesscentralPrefix/companies({id})/salesOrders
 
 ## Request headers
 
-|Header         |Value                        |
-|---------------|-----------------------------|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type   |application/json             |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **salesOrder**, the **salesOrder** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **salesOrders** object.
@@ -49,8 +50,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "number": "1009",
   "orderDate": "2015-12-31",
   "customerNumber": "GL00000008",
   "currencyCode": "GBP",

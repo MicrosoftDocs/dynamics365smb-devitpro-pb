@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: d1ae3fd3-daa9-43c2-bc26-1aa6c33e6386
 caps.latest.revision: 11
-manager: edupont
 ---
 # How to: Run an XMLport from Object Designer
 After designing an XMLport, you can either create a codeunit to run the XMLport or run it from Object Designer. XMLports can be designed to export or import data. XMLports can also be designed for both export and import. This topic shows you how to run XMLports from Object Designer. For information about how to design an XMLport, see [How to: Create XMLports](How-to--Create-XMLports.md). For information about how to run an XMLport from codeunit, see [How to: Create Codeunits to Run XMLports](How-to--Create-Codeunits-to-Run-XMLports.md).  

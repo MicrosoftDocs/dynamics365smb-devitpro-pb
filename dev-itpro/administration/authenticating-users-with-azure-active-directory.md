@@ -1,22 +1,24 @@
 ---
 title: User Authentication with Azure AD for Single Sign-on
 description: Associate an existing Microsoft account with user account to achieve single sign-on between the Web client and Microsoft 365.
-ms.custom: na
-ms.date: 01/26/2022
+ms.custom: bap-template
+ms.date: 02/09/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: conceptual
+ms.service: dynamics365-business-central
+ms.topic: how-to
 author: jswymer
+ms.author: jswymer
 ---
 # Configure Azure Active Directory Authentication with WS-Federation
 
-> **APPLIES TO:** Business Central 2021 release wave 2 (version 19) and earlier
+> **APPLIES TO:** Business Central 2022 release wave 2 (version 21) and earlier
 
 The article describes the tasks involved in setting up Azure AD authentication for authenticating [!INCLUDE[prod_short](../developer/includes/prod_short.md)] users. The configuration in this article sets up Azure AD authentication to use the WS-Federation protocol.
 
 > [!IMPORTANT]  
-> Azure AD authentication with WS-Federation has been deprecated in later [!INCLUDE[prod_short](../developer/includes/prod_short.md)] releases and replaced with OpenID Connect. For more information, see [Moving from WS-Federation to OpenID Connect](authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect). But if you're running [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 release wave 1 (version), you have the option to WS-Federation.
+> Azure AD authentication with WS-Federation support was removed in 2023 release wave 1 (version 22) and replaced with OpenID Connect. For information about setting up Azure AD authentication with OpenID Connect, go to  [Configure Azure Active Directory Authentication with OpenID Connect](authenticating-users-with-azure-ad-openid-connect.md).
+>
+> OpenID Connect support was first introduced in 2022 release wave 1 (version 20). So if you're running version 20 or v21, you can still use WS-Federation, but we recommend you move to OpenID Connect. For more information, go to [Moving from WS-Federation to OpenID Connect](authenticating-users-with-azure-ad-overview.md#moving-from-ws-federation-to-openid-connect).
 
 ## Preparation
 
@@ -80,8 +82,11 @@ For reference, see the prerequisites section in the following article: [Configur
 
 In this task, you register your [!INCLUDE[prod_short](../developer/includes/prod_short.md)] solution as an application in the Azure AD tenant.
 
-> [!NOTE]
+> [!TIP]
 > If you're configuring a multitenant deployment, where each tenant will use a different Azure Tenant, you only register an application on one of the Azure AD tenants. Then, you'll make the application available to the other Azure AD tenants by making it a *Multitenant* application.
+
+> [!NOTE]
+> If you're registering an application so that you can use the email capabilities in [!INCLUDE [prod_short](../developer/includes/prod_short.md)], you must use a multitenant configuration.
 
 1. Sign in to [Azure portal](https://portal.azure.com) and open the Active Directory tenant.
 

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8a82791e-8eb6-4cde-9fee-fc99c0885093
 caps.latest.revision: 7
-manager: edupont
 ---
 # How to: Use Streams to Write to Text Files
 The [InStream](InStream.md) \(input stream\) and [OutStream](OutStream.md) \(output stream\) data types are generic stream objects that you can use to read from or write to files. This topic shows you how to use the [OutStream](OutStream.md) object to write to a text file. You create a codeunit to accomplish this task. For information about how to use streams to read text files, see [How to: Use Streams to Read from Text Files](How-to--Use-Streams-to-Read-from-Text-Files.md).  

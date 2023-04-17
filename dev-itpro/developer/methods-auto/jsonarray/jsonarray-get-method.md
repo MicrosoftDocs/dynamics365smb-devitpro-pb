@@ -3,7 +3,7 @@ title: "JsonArray.Get(Integer, var JsonToken) Method"
 description: "Retrieves the value at the given index in the JsonArray."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,7 +30,8 @@ An instance of the [JsonArray](jsonarray-data-type.md) data type.
 
 *Index*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The index of the element in the JsonArray that you want to retrieve.   
+The index of the element in the JsonArray that you want to retrieve.  
+
 *Result*  
 &emsp;Type: [JsonToken](../jsontoken/jsontoken-data-type.md)  
 A variable of type JsonToken that will contain the result if the operation is successful.  
@@ -45,6 +46,10 @@ A variable of type JsonToken that will contain the result if the operation is su
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
+
+> [!NOTE]  
+> The JsonArray is 0-based by design.
+
 The operation will fail if the Index is smaller than 0 or greater or equal than JsonArray.Count.
 
 ## See Also

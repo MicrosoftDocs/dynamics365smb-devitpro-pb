@@ -240,7 +240,7 @@ In this task, you'll create an AL project in Visual Studio code that you'll use 
     |`"publisher":`|Specify any valid publisher name.|
     |`"version":`|You can use any valid version number, but it's recommended to set it to the same version as the C/AL application.|
     |`"dependencies":`|Delete all values, so this parameter is empty.|
-    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"20.0.0.0"`- version 19</li><li>`"19.0.0.0"`- version 19</li><li>`"18.0.0.0"`- version 18</li></ul>|
+    |`"platform":`|Set to match the platform version that you're upgrading to: <ul><li>`"20.0.0.0"`- version 20</li><li>`"19.0.0.0"`- version 19</li><li>`"18.0.0.0"`- version 18</li></ul>|
     |`"application":`|Remove this parameter.|
     |`"idRange":`|Set to include all the IDs used by your base application, or leave it blank.|
     |`"runtime":` |Set to match the version that you're upgrading to:<ul><li>`"9.0"`- version 20</li><li>`"8.0"`- version 19</li><li>`"7.0"`- version 18</li></ul>|

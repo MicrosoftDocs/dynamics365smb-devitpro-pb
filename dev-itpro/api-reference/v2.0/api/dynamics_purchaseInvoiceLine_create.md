@@ -2,7 +2,7 @@
 title: Create purchaseInvoiceLines  
 description: Creates a purchase invoice line object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -20,16 +20,17 @@ Create a purchase invoice line object in [!INCLUDE[prod_short](../../../includes
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 
 ```
-POST businesscentralPrefix/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines({purchaseInvoiceLineId})
-POST businesscentralPrefix/companies({id})/purchaseInvoiceLines({purchaseInvoiceLineId})
+POST businesscentralPrefix/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines
+POST businesscentralPrefix/companies({id})/purchaseInvoiceLines
 ```
 
 ## Request headers
 
-|Header         |Value                        |
-|---------------|-----------------------------|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type   |application/json             |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **purchaseInvoiceLine**, the **purchaseInvoiceLine** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **purchaseInvoiceLines** object.
@@ -71,7 +72,8 @@ Content-type: application/json
     "netTaxAmount": 187.37,
     "netAmountIncludingTax": 3310.17,
     "expectedReceiptDate": "2019-01-01",
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 
@@ -112,7 +114,8 @@ Content-type: application/json
     "netTaxAmount": 187.37,
     "netAmountIncludingTax": 3310.17,
     "expectedReceiptDate": "2019-01-01",
-    "itemVariantId": "00000000-0000-0000-0000-000000000000"
+    "itemVariantId": "00000000-0000-0000-0000-000000000000",
+    "locationId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 

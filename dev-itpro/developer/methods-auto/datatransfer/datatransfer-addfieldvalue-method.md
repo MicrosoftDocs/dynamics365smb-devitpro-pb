@@ -46,6 +46,9 @@ The destination table field.
 
 Use this method when copying data in rows or fields of table to rows or fields of another table. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
 
+> [!NOTE]
+> Copying the SystemID and [data audit](../../devenv-table-system-fields.md#audit) fields using CopyRows is supported in Business Central version 21.5 and later.
+
 ## Example
 
 [!INCLUDE[data-transfer-example](../../../developer/includes/data-transfer-example.md)]

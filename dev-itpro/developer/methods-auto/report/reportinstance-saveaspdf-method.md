@@ -3,7 +3,7 @@ title: "Report.SaveAsPdf(Text) Method"
 description: "Saves a report as a .pdf file."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -32,8 +32,7 @@ An instance of the [Report](report-data-type.md) data type.
 
 *FileName*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The path and name of the file that you want to save the report as.
-          
+The path and name of the file that you want to save the report as.  
 
 
 ## Return Value

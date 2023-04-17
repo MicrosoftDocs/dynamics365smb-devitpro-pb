@@ -43,6 +43,7 @@ The response has no content; the response code is 204.
 |:-------------------|:-------|:---------------|
 |systemId|GUID|The unique ID of the system.|
 |schedule|string|Specifies the schedule for installation. Values can be "Current version", "Next minor version", or "Next major version".|
+|schemaSyncMode|string|Specifies the schema sync mode for installation. Values can be "Add" or "Force Sync"|
 |extensionContent|stream|The content of the extension.|
 
 ## JSON representation
@@ -53,6 +54,7 @@ Here is a JSON representation of the extensionUpload resource.
 {
     "systemId": "GUID",
     "schedule": "string",
+    "schemaSyncMode": "string",
     "extensionContent": "stream"
 }
 ```

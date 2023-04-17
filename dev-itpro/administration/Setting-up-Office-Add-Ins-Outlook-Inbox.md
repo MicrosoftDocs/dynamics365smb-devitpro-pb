@@ -3,7 +3,7 @@ title: "Set up the add-ins for Outlook integration with Business Central on-prem
 description: Learn how to configure your Business Central on-premises solution so that users can work with Business Central data in Outlook.
 ms.custom: na
 ms.date: 04/22/2022
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
@@ -38,7 +38,7 @@ The processes for deploying the add-ins are different for [!INCLUDE [prod_short]
 For on-premises environments, there are different options for deploying the add-ins. The option that you choose will depend on your organizations security policies, the Business Central environment, and how much control over installing the add-in that you want to give users. For example, you can choose to install the add-ins automatically for all users in your organization or targeted users only. Or, you can allow users to install the add-ins themselves. For more information about each deployment option, see [Centralized Deployment](#centralized-deployment), [Automated Individual Deployment](#automated-individual-deployment), and [Manual Individual Deployment](#manual-individual-deployment) in this article. 
 
 > [!IMPORTANT]
-> Working with multiple environments? The Business Central add-in for Outlook is designed to work with a single Business Central environment. When the add-in is installed, the name of the environment is included in the add-in's manifest. This configuration means that the add-in will only connect to the environment that it was installed from. To use the add-in with a different environment, you'll open the environment and install the add-in again.
+> Working with multiple environments? The Business Central add-in for Outlook is designed to work with a single Business Central environment. When the add-in is installed, the name of the environment is included in the add-in's manifest. This configuration means that the add-in will only connect to the environment that it was installed from. To use the add-in with a different environment, you'll have to open the environment and install the add-in again.
 
 ### Mail server
 

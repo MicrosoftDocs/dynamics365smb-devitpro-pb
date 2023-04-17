@@ -3,7 +3,7 @@ title: "Dialog.LogInternalError(Text, Text, DataClassification, Verbosity) Metho
 description: "Log internal errors for telemetry."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,18 +30,15 @@ Log internal errors for telemetry.
 ## Parameters
 *Message*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-This string contains the text of the error message you want to log into telemetry. Use a percent sign (%) to insert a variable value into the string. Place the percent where you want the system to substitute the variable value. You may only insert one variable value. It is not what the user will get, they will only get a generic error message.
-        
+This string contains the text of the error message you want to log into telemetry. Use a percent sign (%) to insert a variable value into the string. Place the percent where you want the system to substitute the variable value. You may only insert one variable value. It is not what the user will get, they will only get a generic error message.  
 
 *SubstitutionString*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-This string replaces a percent sign in the "Message" Parameter.
-        
+This string replaces a percent sign in the "Message" Parameter.  
 
 *DataClassificationInstance*  
 &emsp;Type: [DataClassification](../dataclassification/dataclassification-option.md)  
-Sets the classification of the data in the error message.
-        
+Sets the classification of the data in the error message.  
 
 *VerbosityInstance*  
 &emsp;Type: [Verbosity](../verbosity/verbosity-option.md)  

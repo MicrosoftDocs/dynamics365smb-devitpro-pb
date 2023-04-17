@@ -3,7 +3,7 @@ title: "Text.Replace(Text, Text) Method"
 description: "Returns a new Text in which all occurrences of a specified string in the current instance are replaced with another specified string."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/11/2022
+ms.date: 12/06/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,6 +23,8 @@ Returns a new Text in which all occurrences of a specified string in the current
 ```AL
 Result :=   Text.Replace(OldValue: Text, NewValue: Text)
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *Text*  
 &emsp;Type: [Text](text-data-type.md)  

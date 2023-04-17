@@ -49,11 +49,11 @@ With [!INCLUDE[prod_short](../developer/includes/prod_short.md)], the MenuSuite 
 
 ## <a name="CRM"></a>[!INCLUDE[crm_md](../developer/includes/crm_md.md)] integration
 
-Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and the  integration since pervious releases, if your application is integrating with [!INCLUDE[crm_md](../developer/includes/crm_md.md)], then you must perform a full upgrade instead of just a technical upgrade.
+Because of changes in [!INCLUDE[crm_md](../developer/includes/crm_md.md)] and the  integration since previous releases, if your application is integrating with [!INCLUDE[crm_md](../developer/includes/crm_md.md)], then you must perform a full upgrade instead of just a technical upgrade.
 
 ## New and changed application features
 
-There a several new and changed application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](/business-applications-release-notes/April19/dynamics365-business-central).
+There are several new and changed application features available in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] April 2019 for users, administrators, and developers. For an overview of these features, see [Overview of Dynamics 365 Business Central April '19 release](/business-applications-release-notes/April19/dynamics365-business-central).
 
 To take advantage of these all these features, you will have to perform an application code upgrade, not just a technical (platform) upgrade.  
 

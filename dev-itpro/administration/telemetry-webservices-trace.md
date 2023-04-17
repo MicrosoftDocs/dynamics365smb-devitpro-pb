@@ -1,14 +1,13 @@
 ---
-title: Web Service Request Trace | Microsoft Docs
+title: Web Service Request Trace
 description: Learn about the web service request telemetry in Business Central  
-author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 01/13/2023
 ms.author: jswymer
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms.custom: bap-template
 ---
 
 # Analyzing Incoming Web Services Request Telemetry
@@ -16,20 +15,6 @@ ms.author: jswymer
 [!INCLUDE[2020_releasewave1.md](../includes/2020_releasewave1.md)]
 
 Web services telemetry gathers data about SOAP, OData, and API requests through the service. It provides information like the request's endpoint, time to complete, the SQL statements run, and more.  
-
-As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
-
-|Condition|Analysis|
-|---------|--------|
-|A web service request results in a long running SQL query|Adjust or fine-tune code.|
-|Web service requests to a specific endpoint read more rows than requests to the other endpoints|Consider adding filtering to limit the rows that are read.|
-|Fewer API type requests compared with other types|With SOAP and OData requests, computation resources are used on UI elements that aren't relevant. Instead of exposing normal pages as web service endpoints, use the built-in API pages. API pages are optimized for this scenario.|
-|High number of requests to endpoints that include Power BI |This condition may indicate excessive Power BI integration.|
-
-For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
-
-> [!NOTE]
-> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises are configured with various limits on web service requests. For example, there is a request timeout and a maximum connections limit. For online, you can't change these limits, but it is helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md). Web service calls that exceed the timeout limit result in a **408 - Request Timeout**. These calls are recorded in Application Insights with a totalTime that is equal to the timeout threshold.
 
 ## General dimensions
 
@@ -62,26 +47,51 @@ The following table explains the custom dimensions included in a **Web Services 
 |eventId|**RT0008**<br /><br/>This dimension was introduced in Business Central 2020 release wave 1, version 16.1.|
 |httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. |
 |httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. |
-|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint was not valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li></ul><br /><br/>Data is not populated for SOAP endpoints. |
-|serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue is not included.|
+|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint wasn't valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li></ul><br /><br/>Data isn't populated for SOAP endpoints. |
+|requestQueueTime | Specifies the amount of time the request spent in the request queue before it was started by the server.<sup>[\[3\]](#3)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. | 
+|serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included.|
 |sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
-|totalTime|Specifies the amount of time it took to process the request.<sup>[\[2\]](#2)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. Time spent in the request queue is not included. |
+|totalTime|Specifies the amount of time it took to process the request.<sup>[\[2\]](#2)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 <sup>1</sup><a name="1"></a>This dimension isn't relevant for $metadata calls, like `https://localhost:7048/BC/ODataV4/$metadata`, so it won't be in the trace.
 
 <sup>2</sup><a name="2"></a>From telemetrySchemaVersion **0.6** and onwards, this value also includes the CompanyOpen operation.
 
-### Example trace
+<sup>3</sup><a name="3"></a>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.
+ 
+ 
+## Analyze web service call performance using telemetry
 
-The following code snippet is a CustomDimensions example:
+As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
 
-`
-{"telemetrySchemaVersion":"0.6","componentVersion":"16.0.11329.0","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, AadTenantId, Environment name, Environment type, Component, Component version, Telemetry schema version","serverExecutionTime":"00:00:00.3886441","component":"Dynamics 365 Business Central Server","aadTenantId":"common","sqlExecutes":"21","sqlRowsRead":"117","totalTime":"00:00:00.3886441","alObjectType":"Page","alObjectName":"Sales Document Line Entity","alObjectId":"6403","category":"ODataV4","endpoint":"BC/ODataV4/Company()/workflowSalesDocumentLines","httpStatusCode":"200"}
-`
+|Condition|Analysis|
+|---------|--------|
+|A web service request results in a long running SQL query|Adjust or fine-tune code.|
+|Web service requests to a specific endpoint read more rows than requests to the other endpoints|Consider adding filtering to limit the rows that are read.|
+|Fewer API type requests compared with other types|With SOAP and OData requests to UI pages, computation resources are used on UI elements that aren't relevant. Instead of exposing normal pages as web service endpoints, use the built-in API pages. API pages are optimized for this scenario.|
+|High number of requests to endpoints that include Power BI |This condition may indicate excessive Power BI integration.|
+
+For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
+
+## Analyze web service call stability using telemetry
+
+The custom dimension _httpStatusCode_ is key to understanding unsuccessful web service calls. Any call with an HTTP status code in the 4xx range should be investigated because these calls are likely failing due to a misconfiguration on the web service client (the caller).
+
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises are configured with various limits on web service requests. For example, there's a request timeout and a maximum connections limit. For online, you can't change these limits, but it's helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md). Web service calls that exceed the timeout limit result in a **408 - Request Timeout**. These calls are recorded in Application Insights with a totalTime that is equal to the timeout threshold.
+
+## Sample KQL code
+
+To make it easier to get started using [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], samples of KQL code are available in the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/KQL/Queries).
+
+Specifically, the KQL query [WebServiceCalls.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/WebServiceCalls.kql) illustrates how to extract HTTP headers, user agents, and authorization type from web service call telemetry.
+
+If you want to analyze web service call telemetry from the usage of the Microsoft connector (Power BI, Power Apps, ...), then the query 
+[MicrosoftConnectorUsage.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/HelperQueries/MicrosoftConnectorUsage.kql) might be useful.
  
 ## See also
-
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
+[Monitoring and Analyzing Telemetry](telemetry-overview.md)
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services)
+[API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits)

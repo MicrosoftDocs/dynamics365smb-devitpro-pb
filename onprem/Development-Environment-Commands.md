@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0e60cc8b-799d-492a-9efb-5e992dafd884
 caps.latest.revision: 18
-manager: edupont
 ---
 # Development Environment Commands
 [!INCLUDE[navnow](includes/navnow_md.md)] includes the finsql.exe file that enables you to perform certain tasks from a command prompt. The finsql.exe is an executable file that runs the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)]. By default, finsql.exe is located at [!INCLUDE[navnow_x86install](includes/navnow_x86install_md.md)]\\RoleTailored Client\\.  

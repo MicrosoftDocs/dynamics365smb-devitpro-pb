@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 09/07/2022
+ms.date: 02/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ When you start a new AL project, two JSON files; the `app.json` file and the `la
 > [!IMPORTANT]  
 > The `rad.json` and the `snapshots.json` files should not be modified.
 
-## <a name="Appjson"></a>App.json file
+## App.json file
 
 The following table describes the settings in the `app.json` file. To see an example `app.json` file, go to [Business Central Performance Toolkit](https://github.com/microsoft/ALAppExtensions/blob/main/Modules/DevTools/BusinessCentralPerformanceToolkit/app.json).
 
@@ -78,7 +78,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |authentication|Yes|Specifies the server authentication method and can be set to `"UserPassword"`, `"Windows"`, or `"AAD"`. To use AAD authentication for on-premise servers, `primaryTenantDomain` setting must be entered. For more information, see [Using Azure AD authentication for Business Central on-premises installations](devenv-aad-auth-onprem.md).|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`), a Table type (`"Table"`), a Report type (`"Report"`) or a Query type (`"Query"`) object. The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page, Table, Report, and Query are currently supported.|
-|startupCompany|No|Specifies the name of the company to open after publishing.|
+|startupCompany|No|Specifies the name of the company to open after publishing. If `startupCompany` is specified, the settings `startupObjectId` and `startupObjectType` must also be defined.|
 |schemaUpdateMode|No|Specifies the data synchronization mode when you publish an extension to the development server, for example: <br>`"schemaUpdateMode": "Recreate"`</br> The default value is Synchronize. For more information, see [Retaining table data after publishing](devenv-retaining-data-after-publishing.md)  <br>[!INCLUDE[nav_not_supported](includes/nav_not_supported.md)]  |
 |environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prod_short](includes/prod_short.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
 |environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
@@ -92,12 +92,12 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
-|attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
 |primaryTenantDomain|No|Specifies the URL of the Azure AD organization or company associated with the Azure AD tenant. This setting enables AAD scenarios for on-premises installations. For more information, see [Azure AD authentication for Business Central on-premises
 ](devenv-aad-auth-onprem.md)|
+|usePublicURLFromServer|No|Specifies whether to override the NST setting and instead use the host provided in the `launch.json` server property. When set to `false`, the `PublicWebBaseURL` server (NST) setting will be overridden with the server parameter of the `launch.json` when launching the browser using that specific launch configuration. <br>**Note:**<br>This option only affects launching debug sessions to on-premise servers.<br> When set to `true`, the `PublicWebBaseURL` server setting will be used.|
 
 
 ### Publish to cloud settings
@@ -109,7 +109,7 @@ The following table describes the settings in the `launch.json` file. The `launc
 |request|Yes|Request type of the configuration. Must be set to `"launch"`. Required by Visual Studio Code.|
 |startupObjectType|No|Specifies whether the object to open after publishing is a Page type (`"Page"`), a Table type (`"Table"`), a Report type (`"Report"`) or a Query type (`"Query"`) object.  The default is `"Page"`.|
 |startupObjectId|No|Specifies the ID of the object to open after publishing. Only objects of type Page, Table, Report and Query are currently supported.|
-|startupCompany|No|Specifies the name of the company to open after publishing.|
+|startupCompany|No|Specifies the name of the company to open after publishing. If `startupCompany` is specified, the settings `startupObjectId` and `startupObjectType` must also be defined.|
 |tenant|No|Specifies the tenant to which the package is deployed. If you specify multiple configurations, a drop-down of options will be available when you deploy. This parameter must contain a tenant AAD domain name, for example `mycustomer.onmicrosoft.com`.|
 |environmentType|No|Specifies which type of environment to use to connect to [!INCLUDE [prod_short](includes/prod_short.md)]. Possible values are `OnPrem`, `Sandbox`, or `Production`.|
 |environmentName|No|Specifies which named production or sandbox environment to use in cases where multiple sandboxes are owned by the same tenant.|
@@ -124,7 +124,13 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
-|attach|No | Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
+
+### Global and workspace launch configuration
+
+With [!INCLUDE[prod_short](includes/prod_short.md)] version 21.1, you can add a launch property to a code-workspace or in the settings.json file. This allows for a centralized configuration of projects. A local `launch.json` file overrides the workspace and global configuration. A workspace launch configuration overrides the launch configuration specified in the global `settings.json` file.
+
+> [!NOTE]  
+> If a local `launch.json` file doesn't contain a valid AL launch configuration, we'll try to find one in the code-workspace first, and then in the `settings.json` files. However, if the launch property is specified in the code-workspace file even without specifying a valid AL configuration, the global `settings.json` file won't be able to override it.
 
 
 ## See Also

@@ -2,7 +2,7 @@
 title: UPDATE paymentMethods   
 description: Updates a paymentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -47,7 +47,7 @@ PATCH https://{businesscentralPrefix}/api/v2.0/companies({id})/paymentMethods({i
 Content-type: application/json
 
 {
-  "displayName": "Personal Check Payment",
+  "displayName": "Personal Check Payment"
 }
 ```
 

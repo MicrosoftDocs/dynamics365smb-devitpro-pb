@@ -2,7 +2,7 @@
 title: Get incomeStatement  
 description: Gets an income statement object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -19,7 +19,7 @@ Retrieve the properties and relationships of an income statement report object f
 ## HTTP request
 Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
-GET businesscentralPrefix/companies({id})/incomeStatement
+GET businesscentralPrefix/companies({id})/incomeStatements
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and an **incomeS
 
 Here is an example of the request.
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies({id})/incomeStatement?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
+GET https://{businesscentralPrefix}/api/v2.0/companies({id})/incomeStatements?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
 ```
 
 **Response**
@@ -65,4 +65,4 @@ Here is an example of the response.
 
 ## See also
 [Tips for working with the APIs](../../../developer/devenv-connect-apps-tips.md)    
-[incomestatement](../resources/dynamics_incomestatement.md)    
+[incomeStatement](../resources/dynamics_incomestatement.md)    

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6e38c751-e2bc-4db9-adb3-6cddc63c8266
 caps.latest.revision: 3
-manager: edupont
 ---
 # Setting up Hyperlinks in Word Report Layouts
 In a report that is based on a Word report layout, you can set up hyperlinks on controls for text and picture fields. For example, on your invoice reports, let's imagine that you want to add a link that targets the URL of a payment service. To achieve this, you add a field to the Customer table for storing payments URLs. Then, you can modify the report dataset and layout to include a link to payment services URL. You can set up the following types of links:  

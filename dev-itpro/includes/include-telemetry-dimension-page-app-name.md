@@ -1,0 +1,1 @@
+Specifies the name of the app/extension that the page belongs to.

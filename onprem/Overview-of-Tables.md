@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: da68b1fb-1f2b-4192-a57c-82647b67168d
 caps.latest.revision: 7
-manager: edupont
 ---
 # Overview of Tables
 The records in the database are stored in tables. A table can be visualized as a two-dimensional matrix, consisting of columns and rows. The following illustration shows a table where each row is a record and each column is a field.  

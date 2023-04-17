@@ -9,7 +9,6 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c06ea848-bc0d-493d-99b8-9db10a684ecb
 caps.latest.revision: 5
-manager: edupont
 ---
 # Change the [!INCLUDE[server](../developer/includes/server.md)] in C/SIDE
 In some cases, you may want to change the [!INCLUDE[server](../developer/includes/server.md)] instance that is being used. For example:  

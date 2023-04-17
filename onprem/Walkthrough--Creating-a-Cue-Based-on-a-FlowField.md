@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6fb765df-55e3-45eb-a4a3-cb3fb5bb8abc
 caps.latest.revision: 32
-manager: edupont
 ---
 # Walkthrough: Creating a Cue Based on a FlowField
 This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rtc_md.md)]. A Cue provides a way to graphically show the number of entities in a table and view the entities in a filtered list. For example, the Cue can show the total number of open invoices, sales orders, or credit memos. As shown in the following illustration, a Cue is an icon that depicts a stack of papers on the page, where the height of the stack indicates the approximate number of entities in an underlying table. A number value on each Cue gives the precise number of entities. The Cue provides a shortcut link to a filtered list page for displaying the entities. You can add actions to a Cue to open related tasks that a user of the Role Center will typically perform.  

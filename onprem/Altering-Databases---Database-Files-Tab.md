@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 0ea30975-b1c4-4ac1-8497-2cc1891c3221
 caps.latest.revision: 7
-manager: edupont
 ---
 # Altering Databases - Database Files Tab
 Increases the size of the database by either increasing the size of one or more of the database files or adding new data files to the database.  

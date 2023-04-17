@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6ea75b39-cf7d-4c88-868b-86fa0be2426b
 caps.latest.revision: 4
-manager: edupont
 ---
 # Resolving Compilation Errors When Converting a Microsoft Dynamics NAV 2013 Database
 If you converted a [!INCLUDE[nav7long](includes/nav7long_md.md)] database, then after the database conversion has completed, you will receive compilation errors in several standard [!INCLUDE[navnow](includes/navnow_md.md)] objects. The following table provides guidance to help you resolve these errors.  

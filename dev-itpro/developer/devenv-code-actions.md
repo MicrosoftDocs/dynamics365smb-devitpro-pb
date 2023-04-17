@@ -1,21 +1,21 @@
 ---
-title: "AL Code Actions"
-description: "Code Actions"
+title: "AL code actions"
+description: Code actions can help you fix code issues either for your project alone or for the entire workspace.
 
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 08/26/2022
+ms.date: 02/27/2023
 ms.topic: conceptual
 ms.author: solsen
 ---
 
-# AL Code Actions
+# AL code actions
 
 [!INCLUDE [2022_releasewave2_changed](../includes/2022_releasewave2_changed.md)]
 
-The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] can help users to fix issues in the code. **Code Actions** is a Visual Studio Code feature that provides the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user chooses the light bulb (or presses **Ctrl+.**), a list of available code actions is presented. A code action can be applied to a single instance or a broader scope depending on the type of action.
+The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] can help users fix issues in the code. **Code Actions** is a Visual Studio Code feature that provides the user with possible corrective actions right next to an error or warning. If actions are available, a light bulb appears next to the error or warning. When the user chooses the light bulb (or presses <kbd>Ctrl+.</kbd>), a list of available code actions is presented. A code action can be applied to a single instance or a broader scope depending on the type of action.
 
-In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions are available in the current version:
+In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], the follwoing code actions are available in the current version:
 
 - Multiple IF to CASE converting code action
 - Spell check code action
@@ -27,6 +27,18 @@ In [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)], these code actions a
 - Fix old report layout and replace with `rendering` layout section
 - Fix for [AW0013](analyzers\uicop-aw0013.md)
 - Convert pages or page extensions to use the `actionRef` syntax for promoted actions on the action bar. Fix for instance, document, project, or workspace. For more information, see [Code action for actions](devenv-code-actions.md#code-actions-for-promoted-actions).
+- Set the default value for `ApplicationArea` on a page or a report level and remove all duplicates on field level. This code action can be applied to an object, a document, a project, or a workspace.
+- Convert existing event parameter in event subscribers from string literal to new identifier format. Fix event subscriber on the specific EventSubscriber instance, the active file, the active project, or the whole workspace. This makes it easy and controllable to opt in to the new syntax.
+
+## Examples
+
+The spell check code action is triggered on certain syntax errors:
+
+:::image type="content" source="media/spellcheck-code-action.png" alt-text="spell check code action":::
+
+The make method local action is triggered to fix the [CodeCop Warning AA0207](analyzers/codecop-aa0207.md):
+
+:::image type="content" source="media/makemethodlocal-code-action.png" alt-text="make method local code action":::
 
 ## Code actions for promoted actions
 

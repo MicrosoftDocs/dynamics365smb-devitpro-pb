@@ -2,7 +2,7 @@
 title: Install a cumulative update
 description: This article describes the tasks required for getting the monthly cumulative update applied to your Dynamics 365 Business Central on-premises.
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 02/09/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -81,20 +81,20 @@ To upgrade to the latest platform, the database must be converted by using the D
     > [!TIP]
     > Before you install, save a copy of the configuration files for the [!INCLUDE[server](../developer/includes/server.md)] (CustomSettings.config), the [!INCLUDE[webserver](../developer/includes/webserver.md)] (navsettings.json), and [!INCLUDE[nav_windows_md](../developer/includes/nav_windows_md.md)] (ClientUserSettings.config). You can then refer to settings the copies to configure the components again. 
     
-4. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator
-6. Open the application database.
+4. Start the new [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)] as an administrator. From the Start menu, right-click **Dynamics NAV Development Environment** and select **Run as administrator**. 
+5. Open the application database.
 
     For more information, see [Open a Database](../cside/cside-open-database.md).
-7. If prompted, follow instructions to convert it to the new platform.
-8. (Multitenant deployment only) Mount an old tenant to the Business Central Server instance.
+6. If prompted, follow instructions to convert it to the new platform.
+7. (Multitenant deployment only) Mount an old tenant to the Business Central Server instance.
 
     you'll have to do this step and the next for each tenant. For more information, see [Mount or Dismount a Tenant](../administration/mount-dismount-tenant.md).
  
-9. Synchronize the database (tenant).
+8. Synchronize the database (tenant).
 
     For more information about syncing, see [Synchronizing the Tenant Database and Application Database](../administration/synchronize-tenant-database-and-application-database.md).
 
-10. <a name="uploadlicense"></a>Upload the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Partner license to the database.  
+9. <a name="uploadlicense"></a>Upload the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] Partner license to the database.  
 
     For more information, see [Uploading a License File for a Specific Database](../cside/cside-upload-license-file.md#UploadtoDatabase).  
 
@@ -119,7 +119,7 @@ Using [!INCLUDE[nav_dev_long_md](../developer/includes/nav_dev_long_md.md)] for 
 1. Open the database in the [!INCLUDE[nav_dev_short_md](../developer/includes/nav_dev_short_md.md)].
 2. Import the `CUObjects.<Locale>.<Build No.>.fob` into the application database.
 
-    For more information, see [Importing Objects](../cside/cside-import-objects.md).
+    For more information, see [Importing Objects](../cside/cside-import-objects.md#ImportObjectsDevEnv).
 3. Replace the existing objects in the database with the cumulative update objects.
 
 ### Update a modified application to the Business Central cumulative update objects
@@ -191,7 +191,7 @@ The general steps for this task are listed below. For detailed steps, see [Publi
 
     Unpublish the old versions first.
 2. Publish the new extension versions from the DVD.
-    
+
     The extensions include new versions of Microsoft extensions that you already have used on your application, and the ELSTER app for the DE version. The new extension versions are found in the `\Extensions` folder of the installation media (DVD).
 
 3. Synchronize the tenant database with the schema changes of the extensions.

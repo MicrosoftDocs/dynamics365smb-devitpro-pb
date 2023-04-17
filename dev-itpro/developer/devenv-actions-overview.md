@@ -1,8 +1,8 @@
 ---
-title: "Actions Overview"
-description: Displaying actions on the action bar for pages in Business Central.
+title: "Actions overview"
+description: Displaying actions on the action bar for pages in Business Central
 ms.custom: na
-ms.date: 10/01/2022
+ms.date: 11/30/2022
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -10,7 +10,7 @@ ms.topic: overview
 author: SusanneWindfeldPedersen
 ---
 
-# Actions Overview
+# Actions overview
 
 In [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)], actions are displayed at the top of each page, referred to as the action bar. In this article, you learn about different types of actions, and how you can enable users to quickly locate the actions they want to use.  
   
@@ -112,7 +112,8 @@ The Report menu is displayed after the Navigate menu in the action bar. The Repo
 > [!NOTE]  
 > With [!INCLUDE [prod_short](includes/prod_short.md)] 2022 release wave 2, the way that you promote actions on pages or page extensions has changed. Promoting actions is defined in a specific section of the page definition and contains a reference to the action. For more information, see [Promoted Actions](devenv-promoted-actions.md).
 
-Promoted actions are actions that are set up on the Actions, Navigate, or Reports menus in the action bar, but are also configured to display in custom menus in the action bar. Although the actions are set up on the Actions, Navigate, or Report menus, you can choose to hide them on these menus and only show them in custom menus.
+Promoted actions are actions that are set up on the Actions, Navigate, or Reports menus in the action bar, but are also configured to display in custom menus in the action bar. Although the actions are set up on the Actions, Navigate, or Report menus, you can choose to hide them on these menus and only show them in custom menus. Promoted actions can be used on Card, Document, List, ListPlus, and Worksheet pages to provide quick access to common tasks that appear under the Home tab. 
+
 
 <!-- 
 ### Home menu 
@@ -131,6 +132,7 @@ customaction(MyFlowAction)
     CustomActionType = Flow;
     FlowId = '<the-GUID-identifying-the-Power-Automate-Flow>';
     FlowEnvironmentId = '<the-GUID-identifying-the-Power-Automate-environment>';
+    
 }
 ```
 

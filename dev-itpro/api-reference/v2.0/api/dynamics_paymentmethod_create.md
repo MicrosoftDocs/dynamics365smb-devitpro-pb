@@ -2,7 +2,7 @@
 title: CREATE paymentMethods  
 description: Creates a paymentMethod object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -24,10 +24,11 @@ POST businesscentralPrefix/companies({id})/paymentMethods
 
 ## Request headers
 
-|Header         |Value                        |
-|---------------|-----------------------------|
-|Authorization  |Bearer {token}. Required.    |
-|Content-Type   |application/json             |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **paymentMethod**, the **paymentMethod** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of a **paymentMethods** object.
@@ -48,8 +49,7 @@ Content-type: application/json
 {
     "id": "3a196a90-44e3-ea11-bb43-000d3a2feca1",
     "code": "ACCOUNT",
-    "displayName": "Payment on account",
-    "lastModifiedDateTime": "2020-08-21T00:48:51.487Z"
+    "displayName": "Payment on account"
 }
 ```
 

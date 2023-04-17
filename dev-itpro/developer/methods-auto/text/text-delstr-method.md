@@ -3,7 +3,7 @@ title: "Text.DelStr(Text, Integer [, Integer]) Method"
 description: "Deletes a substring inside a string (text or code)."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -23,16 +23,16 @@ Deletes a substring inside a string (text or code).
 ```AL
 NewString :=   Text.DelStr(String: Text, Position: Integer [, Length: Integer])
 ```
+> [!NOTE]
+> This method can be invoked without specifying the data type name.
 ## Parameters
 *String*  
 &emsp;Type: [Text](text-data-type.md)  
-The input string.
-        
+The input string.  
 
 *Position*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The position of the first character that you want to delete. Position must be greater than zero (0). If Position exceeds the length of String, DELSTR returns the original string, unchanged.
-        
+The position of the first character that you want to delete. Position must be greater than zero (0). If Position exceeds the length of String, DELSTR returns the original string, unchanged.  
 
 *[Optional] Length*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  

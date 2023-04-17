@@ -18,7 +18,7 @@ ms.author: jswymer
 
 ## Request
 
-The HTTP request to this API must include the Authorization HTTP header, and the value must be an access token. For more information about how to obtain an access token, see [Getting an access token](../administration//administration-center-api.md#getting-an-access-token).
+The HTTP request to this API must include the Authorization HTTP header, and the value must be an access token. For more information about how to obtain an access token, see [Getting an access token](../administration//administration-center-api.md).
 
 ```json
 GET https://api.businesscentral.dynamics.com/environments/v1.1

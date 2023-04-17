@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1b05123e-2ae3-4958-949c-2b7cd7e047d6
 caps.latest.revision: 7
-manager: edupont
 ---
 # Request Pages
 A request page is a page that is run before the report starts to execute. Request pages enable end users to specify options and filters for a report.  

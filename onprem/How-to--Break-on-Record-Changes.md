@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 4a443cec-f31c-4c74-a9e5-5be8d6ca9cc0
 caps.latest.revision: 7
-manager: edupont
 ---
 # How to Break on Record Changes in Dynamics NAV
 You can specify if the debugger breaks on record changes. If the debugger is set to break on record changes, then it breaks before creating, modifying, or deleting a record. The following table shows each record change and the C/AL functions that cause each change.  
