@@ -24,7 +24,7 @@ This article describes the features that are up for removal or that have been re
 |---------|---------|
 |Removed | Direct cloud migration and data upgrade from version NAV 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields will be regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. |
 
-## Changes in 2024 release wave 1 (version 24.0)
+## Changes in 2024 release wave 2 (version 25.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics NAV 2019 (v.14.x) (warning) 
 
