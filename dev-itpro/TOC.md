@@ -111,9 +111,7 @@
 #### [User assistance model](user-assistance.md)
 #### [Configure the help experience](deployment/configure-help.md)
 #### [Configure context-sensitive help](help/context-sensitive-help.md)
-#### [Custom Help Toolkit](help/custom-help-toolkit.md)
-#### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
-#### [Extend and collaborate on the help](help/contributor-guide.md)
+#### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
 #### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 <!--### Resources for a developer
@@ -1078,7 +1076,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating printer and report payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting performance issues](performance/performance-overview.md)
+#### [Troubleshooting performance issues](performance/performance-developer.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
