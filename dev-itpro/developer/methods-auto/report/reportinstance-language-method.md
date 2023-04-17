@@ -51,11 +51,11 @@ For reports that need the multiple document languages functionality, you must in
 
 `CurrReport.Language := Language.GetLanguageIdOrDefault("Language Code");`
 
-For each of these reports, you must create a new variable, `Language`, with the data type `Codeunit` pointing to the `Language` codeunit. When you have compiled the object, it'll no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
+For each of these reports, you must create a new variable, `LanguageMgmt`, with the data type `Codeunit` pointing to the `Language` codeunit. When you have compiled the object, it'll no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
 
 ```AL
 var
-    Language: Codeunit Language;
+    LanguageMgmt: Codeunit Language;
 ```
 
 ## See Also
