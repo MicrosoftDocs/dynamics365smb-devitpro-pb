@@ -30,12 +30,9 @@ Two types of trace events are emitted to Application Insights:
 > [!NOTE]
 > In later versions of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises, the [!INCLUDE[server](../developer/includes/server.md)] includes the `EnableLockTimeoutMonitoring` setting. Use this setting to turn database lock timeout telemetry on or off. By default, it is off. For more information, see [Configuring Business Central Server](configure-server-instance.md#Database).
 
-> [!TIP]
-> When analyzing database lock timeout telemetry, it's useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
-
 ## Database lock timed out
 
-Occurs when a database lock has timed out.
+Occurs when a database lock has timed out for a session.
 
 ### General dimensions
 
@@ -70,15 +67,51 @@ Occurs when a database lock has timed out.
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
+### Sample KQL code 
+This KQL code can help you get started troubleshooting lock timeouts
+
+```kql
+traces 
+| where timestamp > ago(2d) // adjust to your needs
+| where customDimensions has 'RT0012'
+| where customDimensions.eventId == 'RT0012'
+| project timestamp
+, aadTenantId = customDimensions.aadTenantId
+, environmentType = customDimensions.environmentType
+, environmentName = customDimensions.environmentName
+, companyName = customDimensions.companyName
+, clientType = customDimensions.clientType
+, alObjectId = customDimensions.alObjectId
+, alObjectType = customDimensions.alObjectType
+, alObjectName = customDimensions.alObjectName
+, extensionVersion = customDimensions.extensionVersion
+, extensionName = customDimensions.extensionName
+, extensionId = customDimensions.extensionId
+, alStackTrace = customDimensions.alStackTrace
+, sqlStatement = customDimensions.sqlStatement
+, sqlServerSessionId = customDimensions.sqlServerSessionId
+, snapshotId = customDimensions.snapshotId
+, sessionId = customDimensions.sessionId
+, usertelemetryId = case(
+  // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id
+, 'N/A'
+)
+```
+
 ## Database lock snapshot
 
-Occurs when a database lock has timed out. Each **Database lock snapshot** trace event is associated with a specific **Database lock timed out** trace event.
+This telemetry event can occur in two ways:
+1. when a database lock has timed out
+2. when a user or AL process has issued that a snapshot is taken
+
+In the case of a database lock timeout, the BC server also takes a snapshot. Here, the **Database lock snapshot** trace event is associated with a specific **Database lock timed out** trace event. The value of the `{snapshotId}` maps to the `snapshotId` dimension of the **Database lock timed out** trace event that triggered this event.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|-----|
-|message|**Database lock snapshot: {snapshotId}**<br /><br />The value of the `{snapshotId}` maps to the `snapshotId` dimension of the **Database lock timed out** trace event that triggered this event.|
+|message|**Database lock snapshot: {snapshotId}**|
 |severityLevel|**3**|
 
 ### Custom dimensions
@@ -108,6 +141,44 @@ Occurs when a database lock has timed out. Each **Database lock snapshot** trace
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
 |sqlTableName|Specifies the name of table on which the lock was held.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+### Sample KQL code 
+This KQL code can help you get started analyzing database lock snapshots:
+
+```kql
+traces 
+| where timestamp > ago(2d) // adjust to your needs
+| where customDimensions has 'RT0013'
+| where customDimensions.eventId == 'RT0013'
+| project timestamp
+, aadTenantId = customDimensions.aadTenantId
+, environmentType = customDimensions.environmentType
+, environmentName = customDimensions.environmentName
+, companyName = customDimensions.companyName
+, snapshotId = customDimensions.snapshotId
+, clientTypeHoldingLock = customDimensions.clientType
+, alObjectTypeHoldingLock = customDimensions.alObjectType
+, alObjectIdHoldingLock = customDimensions.alObjectId
+, alObjectNameHoldingLock = customDimensions.alObjectName
+, alStackTraceHoldingLock = customDimensions.alStackTrace
+, extensionNameHoldingLock = customDimensions.extensionName
+, extensionIdHoldingLock = customDimensions.extensionId
+, extensionVersionHoldingLock = customDimensions.extensionVersion
+, extensionPublisherHoldingLock = customDimensions.extensionPublisher
+, sqlTableLocked = customDimensions.sqlTableName
+, sqlLockResourceType = customDimensions.sqlLockResourceType
+, sqlLockRequestMode = customDimensions.sqlLockRequestMode
+, sqlLockRequestStatus = customDimensions.sqlLockRequestStatus
+, sqlServerSessionId = customDimensions.sqlServerSessionId
+, alSessionIdHoldingLock = customDimensions.sessionId
+```
+
+
+## Troubleshooting locking issues with telemetry
+Note that the telemetry you see for lock timeouts only represents the session that is the victim in a locking issue, not the sessions that hold the locks.  When analyzing database lock timeout telemetry, it's therefore useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You might be lucky that the snapshot has captured information from locks that were held when the lock timeout occured.
+
+You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
+
 
 ## See also
 
