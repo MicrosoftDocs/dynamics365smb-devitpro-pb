@@ -16,7 +16,7 @@ This article describes the features that are up for removal or that have been re
 
 [!INCLUDE [feature-deprecation](../includes/feature-deprecation.md)]
 
-## Changes in 2025 release wave 1 (version 26.0) 
+## Changes in 2025 release wave 1 (version 26.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics NAV 2019 (v.14.x) (removed)
 
