@@ -22,15 +22,15 @@ This article describes the features that are up for removal or that have been re
 
 |Removed or Replaced? |Why?|
 |---------|---------|
-|Removed | Direct cloud migration and data upgrade from version NAV 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields will be regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. | 
+|Removed | Direct cloud migration and data upgrade from version NAV 2019 (v.14.x) is no longer supported. In order to upgrade (or cloud-migrate) data to v.26 or higher, follow one of these paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26</li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26 </li></ul>`ObsoleteState = Removed` fields will be regularly cleaned up with a cadence of once every five major releases (referred to as the *stepping-stone* release). So after v.25, the next stepping-stone release will be v.30, and so on. |
+
+## Changes in 2024 release wave 1 (version 24.0)
 
 ### Direct cloud migration and data upgrade from version Dynamics NAV 2019 (v.14.x) (warning) 
 
 |Removed or Replaced? |Why?|
 |---------|---------|
 |Removed | Cloud migration tool and on-premises data upgrade toolkit supports one-step upgrade path from any version starting from Dynamics NAV 2019 (v.14) to the latest version of Business Central.<br><br>This is possible because none of the schema elements (tables and fields) deprecated over 11 major updates (from v.14 to v.25) were removed from the released databases to preserve backwards compatibility and enable more seamless transition for our customers to the latest versions on-premises and online. <br><br>Over these releases, we've accumulated a significant number of such obsolete schema elements, which increases complexity of working with the application code. This condition blocks the reuse of the long obsolete objects and field IDs, affecting our work of moving common functionality from local versions of Business Central to W1 version. <br><br>At the same time, much has changed in the area of upgradeability since v.14 like: the move to extensions, the transition to Universal Code, introduction of AL Go for GitHub for tracking apps compatibility and more. These improvements make it simpler to follow Business Central update cadence more closely.<br><br>So in the next release (that is, 2025 release wave 1 (v.26)), we're going to clean up all schemas that have been marked as `ObsoleteState = Removed` since Dynamics NAV 2019 (v.14). <br><br>As a result, data upgrade or cloud migration to v.26 or higher will have to be done via v.25 (referred to as the *stepping-stone* release) following one of the paths:<br><ul><li>Pre-v.14 customers > upgrade to v.14 > upgrade to v.25 > upgrade or cloud migrate to v.26 </li><li>V.14 to v.24 customers > upgrade to v.25 > upgrade or cloud migrate to v.26</li></ul>`ObsoleteState = Removed` fields will then be regularly cleaned up with a cadence of once every five major releases. So after v.25, the next stepping-stone release will be v.30, and so on. | 
-
-## Changes in 2024 release wave 1 (version 24.0)
 
 ### <a name="schemaversion"></a>Schema version for custom APIs (changed default)
 
@@ -351,9 +351,11 @@ The following component is **Removed** with [!INCLUDE[prod_short](../developer/i
 We have simplified the story for how to deploy Help for a customer-specific solution of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], and for deploying Help for an AppSource app. No matter what your solution is, deploy your solution-specific or customized Help to any website that you prefer. Out of the box, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] uses the [learn.microsoft.com](/dynamics365/business-central/) site for the Learn more-links and contextual Help. Each customer and each partner can override this with their own Help. It's now the same for [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises, so any investment on-premises carries forward if you migrate to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online.
 
 ## Changes in 2020 release wave 1 (version 16.0)
+
 The following sections describe the features that were deprecated in 2020 release wave 1.
 
-### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API 
+### Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API
+
 The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD Graph API makes it easy for developers to add identity capabilities to their applications, including integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)].
 
 |Moved, Removed, or Replaced?|Why?|
@@ -362,9 +364,11 @@ The Azure Active Directory (Azure AD) Authentication Library (ADAL) and Azure AD
 
 
 ## Changes in 2019 release wave 2 (version 15.0)
+
 The following sections describe the features that were deprecated in 2019 release wave 2.
 
 ### The Windows Client
+
 You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the Windows client that is installed on your computer.
 
 |Moved, Removed, or Replaced?|Why?|
@@ -372,6 +376,7 @@ You can use [!INCLUDE[prod_short](../developer/includes/prod_short.md)] in the W
 |Removed| Business Central continues to evolve the modern client experiences where users work with Business Central in the browser, Windows 10 desktop app, or mobile apps on Android and iOS. The legacy Dynamics NAV Windows client is no longer available for deployment. Instead, users can switch to the modern experience in the browser, the Android/iOS mobile apps, or the Windows 10 desktop app (available through the respective stores). |
 
 ### User Personalizations and Profile Configurations
+
 You can personalize pages and configure profiles by adding or removing fields, and [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will save your changes.
 
 |Moved, Removed, or Replaced? |Why?|
@@ -386,6 +391,7 @@ You can export data to an Excel workbook.
 |Removed| The Excel COM add-in was installed along with the Windows client. Now that the Windows Client is no longer available, neither is the add-in. To export data to Excel, use the **Edit in Excel** action.|
 
 ### Printing Programmatically
+
 You can print documents such as invoices automatically, without prompting the user or without the user choosing to do so.
 
 |Moved, Removed, or Replaced? |Why?|
@@ -393,6 +399,7 @@ You can print documents such as invoices automatically, without prompting the us
 |Removed| This feature was tied to the Windows Client, which is no longer available. |
 
 ## Breaking Changes
+
 When we move, remove, or replace an object, breaking changes can result in other apps or extensions that use the object. To help our partners identify and resolve breaking changes, we have created a [Breaking Changes](https://github.com/microsoft/ALAppExtensions/blob/master/BREAKINGCHANGES.md) document that lists known issues and suggestions for what to do about them.
 
 ## Features that are available only in the online version
