@@ -1077,7 +1077,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating printer and report payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting performance issues](performance/performance-overview.md)
+#### [Troubleshooting performance issues](performance/performance-developer.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
