@@ -13,7 +13,7 @@ summary: Learn how to write any application using the AL programming language on
 
 metadata:
   title: AL for Business Central developer documentation
-  description: AL for Business Central developer documentation
+  description: AL programming language for Business Central developer documentation
   author: SusanneWindfeldPedersen
   ms.author: solsen
   ms.date: 17/04/2023
@@ -26,7 +26,7 @@ metadata:
 
 landingContent:
 # Card
-  - title: Learn to program in AL
+  - title: Get started
     linkLists:
       - linkListType: overview
         links:
@@ -55,7 +55,7 @@ landingContent:
           - text: AL on Twitter
             url: https://twitter.com/search?q=%23bcalhelp&src=typed_query
 
-  - title: AL fundamentals
+  - title: Understand building blocks
     linkLists:
       - linkListType: overview
         links:
