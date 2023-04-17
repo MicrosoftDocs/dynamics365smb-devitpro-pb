@@ -151,7 +151,7 @@ Don't:
 - Provide a realistic time stamp of the estimated completion time and strive for tasks that take less than 5 minutes to complete.
 
 > [!IMPORTANT]
-> The expected duration of a checklist task is always minutes. Please keep this in mind when creating your Guided Experience Items.
+> The expected duration of a checklist task is always minutes, keep this in mind when creating your Guided Experience Items.
 
 ## See also
 
