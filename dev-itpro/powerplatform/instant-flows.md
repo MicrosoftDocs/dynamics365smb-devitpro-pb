@@ -174,19 +174,19 @@ To create an instant flow from a template, complete the following steps:
    1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
    2. Open the list, card, or document page.
    3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
-   4. The **Create flow** window opens and lists all the available Business Central templates related to the page. Select the template you want.
+   4. The **Create flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
 
       > [!TIP]
       > When you select template, an introductory page explaining the template appears, letting you continue or go back.
       >
-      > If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** or use the **Search templates...** box. Remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
+      > By default, **Create flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
 
    # [From Power Automate](#tab/pa)
 
     1. Sign in to [Power Automate](https://powerautomate.com).
     2. Select **Create** from the left side.
     3. Under **Starting from a template**, select **All templates**.
-    4. In the search, type *business central* and you'll see all the available automated flow templates in the results.
+    4. In the search, type *business central* and you'll see all the available automated and instant flow templates for [!INCLUDE[prod_short](../includes/prod_short.md)] in the results.
     5. Select template to open the flow.
    ---
 
