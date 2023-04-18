@@ -46,7 +46,7 @@ Instead of creating instant flows from scratch, you can also choose from several
 As an AL developer, you can also add or promote instant flows to other places in the action bar by using the `customaction` keyword in AL. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 > [!NOTE]
-> These instance flows can't be run manually from Power Automate because they rely on a selected record in Business Central.
+> These instant flows can't be run manually from Power Automate because they rely on a selected record in Business Central.
 
 ### Instant flows that use other manual triggers
 
@@ -222,9 +222,9 @@ The following table includes the most common problems why an instant flow doesn'
 |-|-|-|
 |The flow doesn't use the "For a selected record (V3)" trigger|Change the flow to use the "For a selected record (V3)" trigger|Only flows that use the "For a selected record" trigger will show in the **Automate** action group.|
 |The "For a selected record (V3)" trigger parameter settings for environment, company, page, or tables don't match what user is currently on.|Check that the parameter settings in the "For a selected record" trigger match the environment, company, page, or table that the user has open.|A mismatch in parameters is preventing the flow from being displayed.|
-|The flow is turned off in Power Automate|Open the flow Power Automate and verify the flow is turned on. For more information, see [Turn flows on or off](/power-automate/disable-flow). If the flow can't be turned on because of an error, then fix the error, save the flow, and ensure that the flow is turned on. |[!INCLUDE[prod_short](../includes/prod_short.md)] won't shoe flows that a turned off in Power Automate.|
+|The flow is turned off in Power Automate|Open the flow Power Automate and verify the flow is turned on. For more information, see [Turn flows on or off](/power-automate/disable-flow). If the flow can't be turned on because of an error, then fix the error, save the flow, and ensure that the flow is turned on. |[!INCLUDE[prod_short](../includes/prod_short.md)] won't show flows that a turned off in Power Automate.|
 |The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
-|The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 an earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
+|The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 and earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
 | You don't have a premium Power Automate license| Get a premium license. For more information, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).|The owner of the flow must have Power Automate premium license.|
 
 > [!TIP]

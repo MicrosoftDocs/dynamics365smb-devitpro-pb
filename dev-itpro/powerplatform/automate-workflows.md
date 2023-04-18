@@ -31,7 +31,7 @@ The connector​ seamlessly connects data and gives you the option to include **
 
 ## Prerequisites
 
-- Power Automate premium license or a license that includes peremium connectors. For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
+- Power Automate premium license or a license that includes premium connectors. For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
 
 ## Create an automated flow from scratch
 
