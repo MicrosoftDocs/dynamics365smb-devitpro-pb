@@ -46,7 +46,7 @@ Instead of creating instant flows from scratch, you can also choose from several
 As an AL developer, you can also add or promote instant flows to other places in the action bar by using the `customaction` keyword in AL. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 > [!NOTE]
-> These instance flows can't be run manually from Power Automate because they rely on a selected record in Business Central.
+> These instant flows can't be run manually from Power Automate because they rely on a selected record in Business Central.
 
 ### Instant flows that use other manual triggers
 
