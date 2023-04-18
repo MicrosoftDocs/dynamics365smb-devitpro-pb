@@ -49,7 +49,7 @@ Business Central connector can also initiate actions provided through other conn
 
 ## What users can do from inside Business Central
 
-With Power Automate integration, users can create and run Power Automate instance flows directly from most list, card, and document pages. These pages have an **Automate** action group in the action bar, which includes actions for creating and managing flows, and also running existing flows created or shared in Power Automate.
+With Power Automate integration, users can create and run Power Automate instant flows directly from most list, card, and document pages. These pages have an **Automate** action group in the action bar, which includes actions for creating and managing flows, and also running existing flows created or shared in Power Automate.
 
 :::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
