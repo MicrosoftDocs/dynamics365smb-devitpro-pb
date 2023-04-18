@@ -177,7 +177,7 @@ To create an instant flow from a template, complete the following steps:
    4. The **Create flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
 
       > [!TIP]
-      > When you select template, an introductory page explaining the template appears, letting you continue or go back.
+      > When you select a template, an introductory page explaining the template appears, letting you continue or go back.
       >
       > By default, **Create flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
 
