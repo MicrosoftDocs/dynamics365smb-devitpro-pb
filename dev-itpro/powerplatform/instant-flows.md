@@ -179,7 +179,7 @@ To create an instant flow from a template, complete the following steps:
       > [!TIP]
       > When you select template, an introductory page explaining the template appears, letting you continue or go back.
       >
-      > If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** or use the **Search templates...** box. Remember that only Business Central templates that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
+      > If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** or use the **Search templates...** box. Remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
 
    # [From Power Automate](#tab/pa)
 
