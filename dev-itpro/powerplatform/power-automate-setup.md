@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 
-This article describes how to set up Power Automate integration for Business Central users. The instructions explain how you can control access to the Power Automate features that let users create and run instance flows from inside the Business Central client. These features are available in the **Automation** action group in the action bar on most list, card, and document pages.
+This article describes how to set up Power Automate integration for Business Central users. The instructions explain how you can control access to the Power Automate features that let users create and run instant flows from inside the Business Central client. These features are available in the **Automation** action group in the action bar on most list, card, and document pages.
 
 :::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
