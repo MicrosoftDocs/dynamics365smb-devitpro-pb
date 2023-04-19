@@ -38,7 +38,7 @@ Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers te
 
 ## <a name="enable"></a> Enable Telemetry
 
-To send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], you must have an Application Insights resource in Azure. Once you have the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource, you can start to configure your environments and apps/extensions to send telemetry data to it. Learn more at [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md).  
+[!INCLUDE[enableTelemetryEnvironment](../includes/include-telemetry-enable-environment.md)]
 
 > [!NOTE]
 > For apps/extensions, see [Sending Extension Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
@@ -73,16 +73,17 @@ For more information, go to [Alert on Telemetry](telemetry-alert.md).
 
 ## Telemetry sample code
 
-To make it easier to get started using [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] with [!INCLUDE[prod_short](../developer/includes/prod_short.md)], samples of KQL code are available in the [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights).
+[!INCLUDE[telemetrySamples](../includes/include-telemetry-samples.md)]
+
 
 ## [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry FAQ
-
-The [Business Central BCTech repository on GitHub](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights) has an extensive FAQ on [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry in Azure Application Insights.
+We have compiled a list of frequently asked questions (FAQ) on telemetry. See [Telemetry FAQ](telemetry-faq.md)
 
 ## See also
 
 [Telemetry Event IDs](telemetry-event-ids.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Telemetry FAQ](telemetry-faq.md)
 [Working with Administration Tools](administration.md)  
 [Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  

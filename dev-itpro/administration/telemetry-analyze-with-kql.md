@@ -39,25 +39,11 @@ You can use Kusto queries as the data source in many places. For example:
 
 ## Where can I learn more about KQL?
 
-Here are some resources for you to get started on Kusto Query Language (KQL). Use CTRL+click to open them in a new browser tab/window.
-
-* [Kusto Query Language Overview](/azure/kusto/query/)
-* [Kusto Query Language Tutorial](/azure/kusto/query/tutorial)
-* [I know SQL. How do I do that in KQL?](/azure/data-explorer/kusto/query/sqlcheatsheet)
-* [Kusto Query Language (KQL) from Scratch (Pluralsight course, requires subscription)](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)
-* [Microsoft Azure Data Explorer - Advanced KQL (Pluralsight course, requires subscription)](https://app.pluralsight.com/library/courses/microsoft-azure-data-explorer-advanced-query-capabilities/table-of-contents)
-* [How can I query multiple Application Insights resources from the same Kusto query? (blog post by Microsoft MVP Stefano Demiliani)](https://demiliani.com/2022/03/01/querying-telemetries-from-multiple-application-insights-instances/)
+[!INCLUDE[LearnKQL](../includes/include-telemetry-learn-kql.md)]
 
 ## Which tools can I use (KQL editors and clients)?
 
-You can write and execute KQL in various tools. For example:
-
-* [Kusto Explorer (desktop application)](/azure/data-explorer/kusto/tools/kusto-explorer). To learn how to connect, go to [How to connect to Application Insights in Kusto Explorer](/azure/data-explorer/query-monitor-data).
-* [Azure Data Explorer](https://dataexplorer.azure.com). To learn how to connect, go to [How to connect to Application Insights in Azure Data Explorer](/azure/data-explorer/query-monitor-data).
-* In a Jupyter notebook hosted in [Azure Data Studio](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides#what-is-azure-data-studio)
-* In a Jupyter notebook hosted in Visual Studio Code (with the Python and Jupyter Notebooks extensions installed).
-* Application Insights portal (Under **Logs** in the **Monitoring** menu).
-* PowerShell (using the REST api). For an example, go to [PowerShell samples](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/Powershell).
+[!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
 
 ### <a name="customdimensions"></a>About custom dimensions
 
@@ -71,4 +57,5 @@ Each event has a `customDimensions` column that includes a set of dimensions con
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
-[Analyze Telemetry with Power BI](telemetry-power-bi-app.md)  
+[Analyze Telemetry with Power BI](telemetry-power-bi-app.md)
+[Telemetry FAQ](telemetry-faq.md)
