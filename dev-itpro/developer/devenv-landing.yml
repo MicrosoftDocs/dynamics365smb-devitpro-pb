@@ -89,7 +89,7 @@ landingContent:
             url: devenv-report-ext-example.md
           - text: Testing an application
             url: devenv-test-application-example-purchase-invoice-discounts.md
-  - title: Key concepts
+  - title: Understand key concepts
     linkLists:
       - linkListType: overview
         links:
@@ -123,7 +123,7 @@ landingContent:
             url: devenv-events-example.md
           - text: Implementing workflow events
             url: devenv-walkthrough-workflow-events-responses.md            
-  - title: What's new
+  - title: Learn what's new
     linkLists:
       - linkListType: whats-new
         links: 
@@ -142,7 +142,7 @@ landingContent:
           - text: AL bugs and feature requests
             url: https://github.com/microsoft/AL#bugs-and-feature-requests
             
-  - title: Other AL language reference
+  - title: Find other AL language reference
     linkLists:
       - linkListType: reference
         links:
@@ -153,7 +153,7 @@ landingContent:
           - text: AL control statements
             url: devenv-al-control-statements.md
 
-  - title: Stay in touch
+  - title: Stay connected
     linkLists:
       - linkListType: reference
         links:
