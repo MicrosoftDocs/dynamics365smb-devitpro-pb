@@ -48,8 +48,9 @@ Specifies the Record variable that specifies which record to open.
 
 *[Optional] UseFilters*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
-Specifies whether to include filters that are defined on the object as a text string in the URL. Note, UseFilters is supported only for ClientType Desktop, OData, Phone, Tablet, Web, Windows, Current, Default, ODataV4, and Teams. An empty string is returned otherwise.  
-
+Specifies whether to include filters that are defined on the object as a text string in the URL.   
+> [!NOTE]
+> UseFilters is supported only for ClientType: Desktop, OData, Phone, Tablet, Web, Windows, ODataV4, Teams, Default and Current, when CurrentClientType is one of the ClientType mentioned.
 
 ## Return Value
 *String*  
