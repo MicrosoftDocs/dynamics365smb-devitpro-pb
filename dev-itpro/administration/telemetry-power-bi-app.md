@@ -184,7 +184,7 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 ## Install, share, and update apps
 
 From time to time, the app is released in a new improved version via AppSource. To learn how to deal with app updates, see 
-[Install, share, and update template apps in your organization](https://learn.microsoft.com/en-us/power-bi/connect-data/service-template-apps-install-distribute)
+[Install, share, and update template apps in your organization](/power-bi/connect-data/service-template-apps-install-distribute)
 
 
 ## Share the app with coworkers and others
