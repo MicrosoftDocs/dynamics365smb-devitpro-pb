@@ -40,13 +40,13 @@ Also, it's recommended to separate per-environment telemetry from per-app teleme
 
 You can set the workspace default retention policy in the Azure portal to 30, 31, 60, 90, 120, 180, 270, 365, 550, and 730 days. It's also possible to set a different policy for specific tables.
 
-See [Configure the default workspace retention policy](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2#configure-the-default-workspace-retention-policy)
+See [Configure the default workspace retention policy](/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2#configure-the-default-workspace-retention-policy)
 
 ## How do I delete data from Azure Application Insights?
 
 You can purge data in an [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource by using the _purge_ REST API and set a set of user-defined filters.
 
-See [Application Insights purge API](https://docs.microsoft.com/en-us/rest/api/application-insights/components/purge#examples).
+See [Application Insights purge API](/rest/api/application-insights/components/purge#examples).
 
 ## Can I grant read-only access to Azure Application Insights?
 
@@ -56,13 +56,13 @@ You might also need to add the role assignment "Reader" to the person on the Res
 
 ## What about privacy laws and regulations?
 
-The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't emit any personal or customer data to Application Insights. So the telemetry is born privacy compliant. The service only emits data generated while running the service or program and data that identifies a tenant, generally config or usage data. This data isn't linkable to a user and doesn't contain customer data. <!--The meanings of these classifications are described here: [DataClassification Option Type](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/dataclassification/dataclassification-option)-->
+The [!INCLUDE[prod_short](../developer/includes/prod_short.md)] service doesn't emit any personal or customer data to Application Insights. So the telemetry is born privacy compliant. The service only emits data generated while running the service or program and data that identifies a tenant, generally config or usage data. This data isn't linkable to a user and doesn't contain customer data. <!--The meanings of these classifications are described here: [DataClassification Option Type](../developer/methods-auto/dataclassification/dataclassification-option)-->
 
 ## Can I get telemetry in Azure Application Insights for on-premises installations?
 
 Yes, telemetry also works for on-premises installations (private or public cloud). A few events aren't emitted with [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises. For an overview of events not emitted, see [Telemetry overview](telemetry-overview.md).
 
-For information about how to enable telemetry on-premises, see [Enable telemetry on tenants](/dynamics365/business-central/dev-itpro/administration/telemetry-enable-application-insights#enable-on-tenants).
+For information about how to enable telemetry on-premises, see [Enable environment telemetry] (telemetry-enable-application-insights.md#enable-telemetry-on-environments).
 
 ## Will you backport the Application Insights instrumentation to versions prior to 15.0?
 
