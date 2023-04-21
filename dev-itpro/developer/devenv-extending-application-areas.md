@@ -4,8 +4,6 @@ description: "Document the extension of Application Areas."
 author: SusanneWindfeldPedersen
 ms.custom: na
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.assetid: a0ac492d-e3c8-4a76-87b4-b469e08c58e7
 ms.author: solsen
@@ -68,6 +66,9 @@ pageextension 50100 CustomerListExt extends "Customer List"
 ## Adding an application area
 
 To add an application area, the **Application Area Setup** table must be extended. A new boolean field is added and the name of this field is used in the attribute that you want to be tagged with this application area. This particular case, in the code example, is an exception, because space is used inside it. Usually, spaces are omitted in the application area attribute. At this point, the extension has an application area but it still needs to be enabled.
+
+> [!IMPORTANT]    
+> An application area tag must have the format *name*, where *name* is the application area. The name can be any combination of letters (Aa-Zz) and numbers (0-9) without spaces.
 
 ```AL
 tableextension 50100 "Application Area Setup" extends "Application Area Setup"
