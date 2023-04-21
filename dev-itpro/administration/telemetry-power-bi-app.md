@@ -181,6 +181,12 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
 
+## Install, share, and update apps
+
+From time to time, the app is released in a new improved version via AppSource. To learn how to deal with app updates, see 
+[Install, share, and update template apps in your organization](https://learn.microsoft.com/en-us/power-bi/connect-data/service-template-apps-install-distribute)
+
+
 ## Share the app with coworkers and others
 
 Once installed, it's possible to share the app with coworkers and others (such as customers). You can:
