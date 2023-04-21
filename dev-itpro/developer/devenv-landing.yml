@@ -89,7 +89,7 @@ landingContent:
             url: devenv-report-ext-example.md
           - text: Testing an application
             url: devenv-test-application-example-purchase-invoice-discounts.md
-  - title: Understand key concepts
+  - title: Discover key concepts
     linkLists:
       - linkListType: overview
         links:
