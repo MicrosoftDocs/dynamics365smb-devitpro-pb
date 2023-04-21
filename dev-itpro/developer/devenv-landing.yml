@@ -89,7 +89,7 @@ landingContent:
             url: devenv-report-ext-example.md
           - text: Testing an application
             url: devenv-test-application-example-purchase-invoice-discounts.md
-  - title: Discover key concepts
+  - title: Learn key concepts
     linkLists:
       - linkListType: overview
         links:
@@ -123,7 +123,7 @@ landingContent:
             url: devenv-events-example.md
           - text: Implementing workflow events
             url: devenv-walkthrough-workflow-events-responses.md            
-  - title: Learn what's new
+  - title: Discover what's new
     linkLists:
       - linkListType: whats-new
         links: 
