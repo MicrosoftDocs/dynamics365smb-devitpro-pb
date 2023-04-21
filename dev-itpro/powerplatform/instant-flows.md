@@ -1,5 +1,5 @@
 ---
-title: Manually Switch on Instant Flows
+title: Set Up Instant Flows
 description: Learn how users can run instant flows from inside Business Central online due to the integration with Power Automate.
 author: jswymer
 ms.author: jswymer
@@ -9,27 +9,26 @@ ms.topic: how-to
 ms.date: 09/04/2022
 ms.custom: bap-template 
 ---
+# Create instant flows
 
-# Set Up Instant Flows
-
-Unlike automated flows that run automatically when an event occurs, instant flows are run manually by users from inside [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate. 
+Unlike automated flows that run automatically when an event occurs, instant flows are run on-demand by users from inside [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate.
 
 > [!NOTE]  
 > To use Power Automate with [!INCLUDE[prod_short](../includes/prod_short.md)], you must have a valid account.  
 
 ## About instant flows
 
-There are two approaches to creating instant flows, as described in this section.
+There are two approaches to creating instant flows, as described in this section: instant flows that use the "For a selected record" trigger and instant flows that use other manual triggers. 
 
 ### Instant flows that use the "For a selected record" trigger 
 
-You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action on most list, card, document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is the recommended approach for flows that relate to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
+You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is the recommended approach for flows that relate to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
 
 :::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
-You can make the flow available from all pages that include the **Automate** action. Or, you can make the flow available in the **Automate** action only for a specific environment, company, or pages. 
+You can choose to make the flow available in the **Automate** action group for all environments, companies, and pages or only a specific environment, company, or pages.
 
- When run, the trigger will return information about the selected record. The connection between [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate allows instant flows to:
+When run, the trigger will return information about the selected record. The connection between [!INCLUDE [prod_short](../includes/prod_short.md)] and Power Automate allows instant flows to:
 
 - Pass context or parameters to Power Automate​  
   - Environment name, such as *PRODUCTION​*  
@@ -42,14 +41,16 @@ You can make the flow available from all pages that include the **Automate** act
 
 To learn more about this trigger, see [Manual trigger "For a selected record (V3)"](/connectors/dynamicssmbsaas/#manual-trigger-for-a-selected-record-v3).
 
-As an AL developer, you can also add or promote these instant flows to other places in the action bar. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
+Instead of creating instant flows from scratch, you can also choose from several templates that are available for specific scenarios.
+
+As an AL developer, you can also add or promote instant flows to other places in the action bar by using the `customaction` keyword in AL. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 > [!NOTE]
-> These flows can't be run manually from the **Manage Power Automate Flows** page or from Power Automate.
+> These instant flows can't be run manually from Power Automate because they rely on a selected record in Business Central.
 
 ### Instant flows that use other manual triggers
 
-You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** action, but they can be run from the **Manage Power Automate Flows** page or from Power Automate.
+You create these flows by using an instant trigger from a connector other than the [!INCLUDE[prod_short](../includes/prod_short.md)] connection. These flows can use actions of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector but you don't have access to [!INCLUDE[prod_short](../includes/prod_short.md)] data like the System ID and Page ID, because these parameters are only available via the **For a selected record (V3)** trigger. These flows aren't included in the **Automate** group on the action bar, but they can be run <!--from the **Manage Power Automate Flows** page or -->from Power Automate.
 
 ## Use multiple Power Automate environments
 
@@ -66,9 +67,22 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 > [!TIP]
 > If you sign up for the [Power Apps Developer plan](https://powerapps.microsoft.com/en-us/developerplan/), you can try out the full range of features in Power Automate for free. The plan includes the ability to create environments. Learn more about the plan at [Create a developer environment](/power-platform/developer/create-developer-environment).
 
-## Create a flow using the "For a selected record (V3)"
+## Prerequisites
 
-This procedure outlines that steps required to create an instant flow that will appear in the **Automate** action by using the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
+- Power Automate premium license or a license that includes premium connectors.
+
+  For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
+- To create or run instant flows from inside Business Central, Power Automate integration must be enabled.
+
+  For more information, see [Set Up Power Automate Integration](power-automate-setup.md).
+
+## Create flow that uses "For a selected record (V3)" trigger
+
+You can build your own flow that uses the "For a selected record (V3)" trigger or start [from a template](#create-from-template) provided by Business Central.
+  
+### Create from scratch
+
+This procedure outlines that steps required to create an instant flow from scratch that uses the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. When completed, the flow will appear in the **Automate** group in the action bar. To illustrate the process, it uses a basic example for sending an email reminder about a sales invoice. The flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
 
 The flow in Power Automate will look something like this:
 
@@ -76,15 +90,19 @@ The flow in Power Automate will look something like this:
 
 Complete the following steps:
 
-1. Add a new flow from [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate:
+1. Add a new flow from [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate by completing the following steps.
+
+   > [!TIP]
+   > The advantage of creating from [!INCLUDE[prod_short](../includes/prod_short.md)] is that the "For a selected record (V3)" trigger is automatically added to the flow for you.
 
    # [From Business Central](#tab/bc)
 
+   
    1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
    2. Open the list, card, or document page.
-   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow** > **Create from blank**.
 
-   You're automatically signed in to Power Automate, but from the **Manage Power Automate Flows** page, you'll work in the page itself.
+    You're automatically signed in to Power Automate.
 
    # [From Power Automate](#tab/pa)
 
@@ -101,7 +119,7 @@ Complete the following steps:
 
     :::image type="content" source="../developer/media/power-automate-for-selected-record-trigger.png" alt-text="Shows for selected record trigger for [!INCLUDE[prod_short](../includes/prod_short.md)] in Power Automate.":::
 
-3. Set the filter fields on the connector to limit the flow to a specific environment, company, and tables or pages. If you fill in any of the filter fields, the flow will only be shown on environments/companies/pages that match the filter and have the **Automate** action. If you leave all fields, the flow will be shown on all pages that have the **Automate** action.
+3. Set the filter fields on the connector to limit the flow to a specific environment, company, and tables or pages. If you fill in any of the filter fields, the flow will only be shown on environments/companies/pages that matches the filter and have the **Automate** action. If you leave all fields, the flow will be shown on all pages that have the **Automate** action.
 
     |Field|Description|
     |-----|-----------|
@@ -139,9 +157,53 @@ Complete the following steps:
 
 7. Select **Save**.
 
+### Create from template
+
+Like with automated flows, Microsoft also provides instant flow templates that you can use to build your own templates. The templates provide a fast way to create flows, because the trigger and some actions are automatically created and configured for you. Templates are also a good way to learn how to build your own flows.
+
+There are several templates that cover most of the entities in Business Central, like customers, items, sales orders, and so on. Each template is typically specific to the records in the page's source table. So for example, if you create a flow based on the template named **Block the selected customer in Dynamics 365 Business Central**, the flow will appear on customer-related pages, like **Customers** list and **Customer card**.  
+
+To create an instant flow from a template, complete the following steps:
+
+1. Add a new flow from [!INCLUDE[prod_short](../includes/prod_short.md)] or Power Automate:
+
+   # [From Business Central](#tab/bc)
+
+   With this way, you'll work only in Business Central, but you have the option during the setup to open the flow in Power Automate.
+
+   1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
+   2. Open the list, card, or document page.
+   3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
+   4. The **Create flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
+
+      > [!TIP]
+      > When you select a template, an introductory page explaining the template appears, letting you continue or go back.
+      >
+      > By default, **Create flow** page is filtered to list only those templates that create flows that will appear in the **Automate** action group. If you want a template that's not shown or want to find out what other templates are available, select **Filtered templates** > **All templates** to clear the filter or use the **Search templates...** box. If you clear the filter, the **Create flow** page will list all Power Automate templates regardless of whether they connect to Business Central. So, remember that only flows that use the "For a selected record (V3)" trigger will be available from the **Automate** action group in Business Central.
+
+   # [From Power Automate](#tab/pa)
+
+    1. Sign in to [Power Automate](https://powerautomate.com).
+    2. Select **Create** from the left side.
+    3. Under **Starting from a template**, select **All templates**.
+    4. In the search, type *business central* and you'll see all the available automated and instant flow templates for [!INCLUDE[prod_short](../includes/prod_short.md)] in the results.
+    5. Select template to open the flow.
+   ---
+
+2. If you're presented with any fields that need input, fill them in.
+
+   > [!TIP]
+   > You can always select the **Edit in advanced mode** link to exit the template and continue creating the flow in the full experience in Power Automate. If you're working in Business Central, you'll be signed in to Power Automate. 
+   >  
+   > Any changes you've made up until this point will be saved. Switching to the advanced mode lets you make changes to the flow, for example, by adding or changing steps. There are typically a few parameters that you'll need to fill in before saving the flow as one of your own.
+3. Select **Create** when done.
+
 ## Create a flow using other manual triggers
 
-Creating an instant flow for general use is similar to how you create a flow for a selected record. The difference is that you'll have to choose manual trigger. 
+Creating an instant flow for general use is similar to how you create a flow for a selected record. The difference is that you'll have to choose manual trigger.
+
+> [!NOTE]
+> These flows won't show in the **Automate** group on the action bar in Business Central; even if the flow uses Business Central actions. Only flows that use the "For a selected record (V3)" trigger appear in the **Automate** group.
 
 1. Sign in to [Power Automate](https://powerautomate.com).
 2. Select **Create** from the left side.
@@ -152,6 +214,22 @@ Creating an instant flow for general use is similar to how you create a flow for
 7. Select the **+ New step** to add actions and other triggers for the flow.
 8. To add [!INCLUDE[prod_short](../includes/prod_short.md)] actions and triggers, search for the **Dynamics 365 Business Central** connector, then select the action or trigger you want to use.
 
+## Troubleshoot why flow doesn't show in Automate action group
+
+The following table includes the most common problems why an instant flow doesn't appear in the **Automation** group for you or another user.
+
+|Cause|Fix|Reason|
+|-|-|-|
+|The flow doesn't use the "For a selected record (V3)" trigger|Change the flow to use the "For a selected record (V3)" trigger|Only flows that use the "For a selected record" trigger will show in the **Automate** action group.|
+|The "For a selected record (V3)" trigger parameter settings for environment, company, page, or tables don't match what user is currently on.|Check that the parameter settings in the "For a selected record" trigger match the environment, company, page, or table that the user has open.|A mismatch in parameters is preventing the flow from being displayed.|
+|The flow is turned off in Power Automate|Open the flow Power Automate and verify the flow is turned on. For more information, see [Turn flows on or off](/power-automate/disable-flow). If the flow can't be turned on because of an error, then fix the error, save the flow, and ensure that the flow is turned on. |[!INCLUDE[prod_short](../includes/prod_short.md)] won't show flows that a turned off in Power Automate.|
+|The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
+|The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 and earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
+| You don't have a premium Power Automate license| Get a premium license. For more information, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).|The owner of the flow must have Power Automate premium license.|
+
+> [!TIP]
+> There can also be other reasons why the flow isn't showing. One way to help determine why is to open the flow details page in Power Automate. Power Automate will sometimes indicate the reason the flow isn't working.
+
 ## Next steps
 
 - Use the **Flow checker** action to verify that there are no errors.
@@ -161,5 +239,5 @@ Creating an instant flow for general use is similar to how you create a flow for
 ## See also
 
 [Manage Power Automate Flows](manage-power-automate-flows.md)  
-[Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)   
+[Troubleshoot Your Business Central Automated Workflows](/dynamics365/business-central/across-flow-troubleshoot)
 [Use Business Central in an Automated Workflow](/dynamics365/business-central/across-how-use-financials-data-source-flow)<!--keep an eye out for redirects-->  
