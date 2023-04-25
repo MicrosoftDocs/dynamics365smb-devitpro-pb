@@ -93,6 +93,7 @@ codeunit 50000 "MyCaptionClassMgmt"
         if CaptionExpr.Contains('A') then
             exit(CaptionALbl);
         exit(CaptionBLbl);
+     end;
 }
 ```
 
