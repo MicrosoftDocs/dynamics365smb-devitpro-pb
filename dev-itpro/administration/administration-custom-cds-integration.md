@@ -467,6 +467,9 @@ To create an integration field mapping, follow these steps:
 
 3. After publishing the extension, we can update the default mappings to include our new integration table mapping by opening the **CDS Connection Setup** page in [!INCLUDE[prod_short](../includes/prod_short.md)] and choosing **Use Default Synchronization Setup**.  
 
+> [!NOTE]  
+> Make sure that the fields you map are of the same type. For example, map option type fields to options, and enum type fields to enums. Mismatched types can cause synchronization errors.
+
 Users can now manually synchronize employee records in [!INCLUDE[prod_short](../includes/prod_short.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prod_short](../includes/prod_short.md)] client.  
 
 > [!TIP]  
