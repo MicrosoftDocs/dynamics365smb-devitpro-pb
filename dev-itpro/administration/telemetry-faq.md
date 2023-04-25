@@ -16,7 +16,7 @@ This article addresses some of the most frequently asked questions around [!INCL
 
 ## How do I enable telemetry on environments?
 
-[!INCLUDE[enableTelemetryEnvironment](../includes/include-telemetry-enable-environment.md)]
+[!INCLUDE[enableTelemetryEnvironment](../developer/includes/include-telemetry-enable-environment.md)]
 
 ## How do I enable telemetry for apps/extensions?
 
@@ -26,11 +26,11 @@ For more information, see [Sending Extension Telemetry to Azure Application Insi
 
 ## What does it cost?
 
-[!INCLUDE[telemetryCost](../includes/include-telemetry-cost.md)]
+[!INCLUDE[telemetryCost](../developer/includes/include-telemetry-cost.md)]
 
 ## Can I control telemetry cost?
 
-[!INCLUDE[telemetryControlCost](../includes/include-telemetry-control-cost.md)]
+[!INCLUDE[telemetryControlCost](../developer/includes/include-telemetry-control-cost.md)]
 
 ## How can I see what telemetry Business Central emits?
 
@@ -38,7 +38,7 @@ See an overview at [Telemetry overview](telemetry-overview.md).
 
 ## How can I see which telemetry events are most common in my Application Insights?
 
-[!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
+[!INCLUDE[telemetryEventDistribution](../developer/includes/include-telemetry-event-distribution.md)]
 
 ## Should each customer/app have their own Application Insights resource, rather than one insight for multiple customers/apps?
 
