@@ -39,7 +39,7 @@ You can view a report and view the dataset and layout on a computer that does no
 -   A second computer with Visual Studio.  
 
 ## Story  
- Viktor is a Microsoft Certified Partner working for CRONUS International. He is working on some enhancements to the Customer – Top 10 List report, but during his development phase, he has encountered some problems. Viktor wants to send the report to Microsoft Support to help him troubleshoot the problems. The Microsoft Support engineer wants to be able to view the report and report data offline instead of on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] installed. Viktor saves the report dataset and the report layout and sends them to the Microsoft Support engineer, who runs the report on his computer by using Visual Studio.  
+ Viktor, a Microsoft Certified Partner working for CRONUS International is working on some enhancements to the Customer – Top 10 List report. During the development phase, Viktor has encountered some problems. Viktor wants to send the report to Microsoft Support to troubleshoot the problems. The Microsoft Support engineer wants to be able to view the report and report data offline instead of on a computer that has [!INCLUDE[navnow](includes/navnow_md.md)] installed. Viktor saves the report dataset and the report layout and sends them to the Microsoft Support engineer, who runs the report on Viktor's computer by using Visual Studio.  
 
 ## Saving the report dataset and layout  
  First, Viktor exports the report dataset to an .xml file.  
