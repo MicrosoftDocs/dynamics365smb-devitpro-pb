@@ -39,7 +39,7 @@ You can use Kusto queries as the data source in many places. For example:
 
 ## Where can I learn more about KQL?
 
-[!INCLUDE[LearnKQL](../developer/includes/include-telemetry-learn-kql.md)]
+[!INCLUDE[LearnKQL](includes/include-telemetry-learn-kql.md)]
 
 ## Which tools can I use (KQL editors and clients)?
 

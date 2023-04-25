@@ -16,7 +16,7 @@ This article addresses some of the most frequently asked questions around [!INCL
 
 ## How do I enable telemetry on environments?
 
-[!INCLUDE[enableTelemetryEnvironment](../developer/includes/include-telemetry-enable-environment.md)]
+[!INCLUDE[enableTelemetryEnvironment](../includes/include-telemetry-enable-environment.md)]
 
 ## How do I enable telemetry for apps/extensions?
 
