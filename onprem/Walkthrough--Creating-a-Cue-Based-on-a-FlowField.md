@@ -127,7 +127,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 5.  Choose the **OK** button.  
 
 ##  <a name="CueCardPage"></a> Creating a Cue on a Card Page for the Role Center  
- To display the Sales Invoices - Open Cue on the Role Center, Viktor creates a CardPart page type that has a **CueGroup** control that includes the **Sales Invoices – Open** field of the **Sales Cue** table. Viktor also needs to initialize the data field on the Cue with a record, so he adds code to the OnOpenPage trigger of the CardPart page type.  
+ To display the Sales Invoices - Open Cue on the Role Center, Viktor creates a CardPart page type that has a **CueGroup** control that includes the **Sales Invoices – Open** field of the **Sales Cue** table. To initialize the data field on the Cue with a record, Viktor adds code to the OnOpenPage trigger of the CardPart page type.  
 
 > [!IMPORTANT]  
 >  The **CaptionClass** property on a field in a **CueGroup** is not supported.  
@@ -217,7 +217,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 7.  The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] opens and displays the new page.  
 
 ##  <a name="AddingActionToCue"></a> Adding an Action to the Cue  
- Viktor wants to add a link on the Cue that allows the user to create a new sales invoice. To accomplish this, he creates an action on the **CueGroup** control that targets the **Sales Invoice** page.  
+ Viktor wants to add a link on the Cue that allows the user to create a new sales invoice. To accomplish this, Viktor creates an action on the **CueGroup** control that targets the **Sales Invoice** page.  
 
 #### To add actions to the Sales Order Cue page  
 
@@ -242,7 +242,7 @@ This walkthrough demonstrates how to add a Cue on the [!INCLUDE[rtc](includes/rt
 7.  Save the page.  
 
 ##  <a name="AddingCuePartToRoleCenter"></a> Adding the Cue CardPart Page on the Role Center Page  
- To display the Sales Invoice Cue on the Role Center, Viktor must add the **Sales Invoice Cue** CardPart page to the **Role Center** page for sales order processors. To do this, he adds a part to the **Order Processor Role Center** page that targets the new **Sales Invoice Cue** page.  
+ To display the Sales Invoice Cue on the Role Center, Viktor must add the **Sales Invoice Cue** CardPart page to the **Role Center** page for sales order processors. To do this, Viktor adds a part to the **Order Processor Role Center** page that targets the new **Sales Invoice Cue** page.  
 
 #### To add the Sales Cue part page to the Role Center page  
 
