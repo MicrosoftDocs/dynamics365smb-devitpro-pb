@@ -32,6 +32,7 @@ Both for environment-level and app-level telemetry, it's possible to craft custo
 using the [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md). Learn more about AL at [Programming in AL](../developer/devenv-programming-in-al.md).
 
 ## Available telemetry
+
 Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations:  
 
 [!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]

@@ -16,14 +16,7 @@ This article addresses some of the most frequently asked questions around [!INCL
 
 ## How do I enable telemetry on environments?
 
-<!--[!INCLUDE[enableTelemetryEnvironment](../includes/include-telemetry-enable-environment.md)]-->
-
-You do two things:
-
-1. Set up and Application Insights resource in Azure. The resource is given an instrumentation key that [!INCLUDE[prod_short](../developer/includes/prod_short.md)] will use to connect to it.  
-2. Configure the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] environment to use the resource's instrumentation key.
-
-For details, go to [Enable Application Insights](telemetry-enable-application-insights.md).
+[!INCLUDE[enableTelemetryEnvironment](../includes/include-telemetry-enable-environment.md)]
 
 ## How do I enable telemetry for apps/extensions?
 
