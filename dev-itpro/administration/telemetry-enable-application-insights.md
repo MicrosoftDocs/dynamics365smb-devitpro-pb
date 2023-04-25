@@ -147,3 +147,4 @@ It is also considered good practice to change all user telemetry IDs at the end 
 [Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Monitoring and Analyzing With Telemetry](telemetry-overview.md)  
+[Telemetry FAQ](telemetry-faq.md)
