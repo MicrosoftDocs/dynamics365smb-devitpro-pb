@@ -67,7 +67,8 @@ Occurs when a database lock has timed out for a session.
 |sqlServerSessionId|Specifies the ID of the SQL server session that requested the lock. |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-### Sample KQL code 
+### Sample KQL code
+
 This KQL code can help you get started troubleshooting lock timeouts.
 
 ```kql
@@ -175,7 +176,8 @@ traces
 
 
 ## Troubleshooting locking issues with telemetry
-Note that the telemetry you see for lock timeouts only represents the session that is the victim in a locking issue, not the sessions that hold the locks.  When analyzing database lock timeout telemetry, it's therefore useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You might be lucky that the snapshot has captured information from locks that were held when the lock timeout occured.
+
+The telemetry you see for lock timeouts only represents the session that is the victim in a locking issue, not the sessions that hold the locks. When analyzing database lock timeout telemetry, it's therefore useful to look at combined data from the **Database lock timed out** event and **Database lock snapshot** events. You might be lucky that the snapshot has captured information from locks that were held when the lock timeout occurred.
 
 You can combine data from different events by using *joins* in your Kusto queries. For an example, see [LockTimeouts.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/LockTimeouts.kql) in the **Microsoft/BCTech** repository on GitHub. For more general information about using joins, see [Joins in Azure Monitor log queries](/azure/azure-monitor/log-query/joins) in the Microsoft Azure documentation.
 
