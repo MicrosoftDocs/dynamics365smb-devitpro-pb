@@ -68,7 +68,7 @@ Occurs when a database lock has timed out for a session.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 ### Sample KQL code 
-This KQL code can help you get started troubleshooting lock timeouts
+This KQL code can help you get started troubleshooting lock timeouts.
 
 ```kql
 traces 
@@ -93,7 +93,7 @@ traces
 , snapshotId = customDimensions.snapshotId
 , sessionId = customDimensions.sessionId
 , usertelemetryId = case(
-  // user telemetry id was introduced in the platform in version 20.0
+  // usertelemetryId was introduced in the platform in version 20.0
   toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id
 , 'N/A'
 )
