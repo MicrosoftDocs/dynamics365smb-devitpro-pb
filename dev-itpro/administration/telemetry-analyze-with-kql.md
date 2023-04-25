@@ -39,11 +39,11 @@ You can use Kusto queries as the data source in many places. For example:
 
 ## Where can I learn more about KQL?
 
-[!INCLUDE[LearnKQL](../includes/include-telemetry-learn-kql.md)]
+[!INCLUDE[LearnKQL](../developer/include-telemetry-learn-kql.md)]
 
 ## Which tools can I use (KQL editors and clients)?
 
-[!INCLUDE[KQLTools](../includes/include-telemetry-kql-tool.md)]
+[!INCLUDE[KQLTools](../developer/include-telemetry-kql-tool.md)]
 
 ### <a name="customdimensions"></a>About custom dimensions
 
