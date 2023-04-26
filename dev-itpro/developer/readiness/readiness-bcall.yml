@@ -246,5 +246,12 @@ landingContent:
             url: https://aka.ms/Bcfaq
           - text: aka.ms/BCTroubleshoot
             url: https://aka.ms/Bctroubleshoot
+          - text: aka.ms/BCSecurity
+            url: https://aka.ms/BCSecurity 
+          - text: aka.ms/BCCompliance 
+            url: https://aka.ms/BCCompliance
+          - text: aka.ms/BCBackups
+            url: https://aka.ms/BCBackups 
+
 
 
