@@ -21,6 +21,8 @@ landingContent:
             url: https://aka.ms/BCYammer
           - text: aka.ms/BCTwitter
             url: https://aka.ms/BCTwitter
+          - text: aka.ms/BCLinkedIn
+            url: https://aka.ms/BCLinkedIn
           - text: aka.ms/BCOfficeHours
             url: https://aka.ms/BCOfficeHours
           - text: aka.ms/BCOfficeHoursRecordings
