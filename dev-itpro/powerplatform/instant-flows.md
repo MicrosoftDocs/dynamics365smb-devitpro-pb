@@ -228,7 +228,7 @@ The following table includes the most common problems with instant flows, like w
 | You don't have a premium Power Automate license| Get a premium license. For more information, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).|The owner of the flow must have Power Automate premium license.|
 
 > [!TIP]
-> There can also be other reasons why the flow isn't showing. One way to help determine why is to open the flow details page in Power Automate. Power Automate will sometimes indicate the reason the flow isn't working. Use the **Flow checker** action to verify that there are no errors.
+> There can also be other reasons why the flow isn't showing. One way to help determine why is to open the flow details page in Power Automate. Power Automate will sometimes indicate the reason the flow isn't working. Use the **Flow checker** action to help identify problems. To learn more about flow checker, go to [Find and fix errors with Flow Checker](/power-automate/error-checker).
 
 ## Next steps
 
