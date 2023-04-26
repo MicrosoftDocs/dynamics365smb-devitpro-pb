@@ -26,7 +26,7 @@ To complete this example, you will need:
 -   Imported the Test Toolkit.
  
 ## Creating a Test Codeunit and Test Function  
- Isaac creates a new codeunit and specifies that it is a test codeunit. He defines the scenario that he wants to verify, adds a test function to tests the Purch-Calc.Discount functionality, and adds a helper function that can be reused if he decides to extend test coverage.  
+ Isaac creates a new codeunit and specifies that it is a test codeunit. Isaac defines the scenario to verify, adds a test function to tests the Purch-Calc.Discount functionality, and adds a helper function that can be reused if they decide to extend test coverage.  
   
 #### To create the test codeunit and test function  
   
@@ -91,9 +91,9 @@ To complete this example, you will need:
   
     ```  
   
-     Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, he adds the C/AL code.The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
+     Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation and adds the C/AL code.The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
   
-     Isaac has created the test function. Next, he creates a helper function that generates data for the test.  
+     Isaac has created the test function and then creates a helper function that generates data for the test.  
   
  Isaac can now create additional test functions in this test codeunit to test other aspects of vendor discounts. These test functions should include negative tests, which validate that the code being tested works as intended under failing conditions.  
   
@@ -144,7 +144,7 @@ To complete this example, you will need:
     PurchaseLine.MODIFY(TRUE);  
     ```  
   
-     The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, he can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
+     The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, Isaac can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
   
     > [!NOTE]  
     >  This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  
@@ -172,7 +172,7 @@ Create a new codeunit and specifies that it is a test codeunit. Define the scena
   
   -  `Above`. It is a good practice to have tests for positive and negative scenarios. In this test, Isaac wants to check that discount come into effect when the document amount is above a minimum amount. But the amount in the document can be also less than or equal to the minimum amount.  
 
--  Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, he adds the C/AL code.The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
+-  Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation, and adds the C/AL code.The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
  
 ## Task 2: Create a helper function
 Tne next task is to create a helper function that generates data for the test.  
@@ -180,7 +180,7 @@ Tne next task is to create a helper function that generates data for the test.
 ### Guidelines
 Isaac can now create additional test functions in this test codeunit to test other aspects of vendor discounts. These test functions should include negative tests, which validate that the code being tested works as intended under failing conditions.  
 
--  The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, he can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
+-  The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, it can be called with other parameters to create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
   
 > [!NOTE]  
 >  This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  

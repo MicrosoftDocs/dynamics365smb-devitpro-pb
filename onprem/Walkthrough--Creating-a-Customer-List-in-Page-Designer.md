@@ -34,10 +34,10 @@ In this walkthrough, you will learn how to create a basic page that displays a l
 -   [!INCLUDE[demolong](includes/demolong_md.md)]  
   
 ## Story  
- Simon is a partner working for CRONUS International Ltd. Kevin, the Sales Manager at CRONUS, has contacted Simon and asked him to create a customer list.  
+ Simon is a partner working for CRONUS International Ltd. Kevin, the Sales Manager at CRONUS, has asked Simon to create a customer list.  
   
 ## Creating a List Page  
- To create Kevin's customer list, Simon knows that he needs to create a list page. Simon also needs to ensure that the card for a specific customer will open when Kevin selects the customer from the list.  
+ To create Kevin's customer list, Simon knows that a list page needs to be created. Simon also needs to ensure that the card for a specific customer will open when Kevin selects the customer from the list.  
   
 > [!NOTE]  
 >  In this walkthrough, to learn about the properties and controls of a list page you will create a list page from a blank page. Object Designer also includes a wizard that you can use to create a list page that sets up many properties and controls for you. For more information about the wizard, see [How to: Create a Page](How-to--Create-a-Page.md).  
@@ -65,7 +65,7 @@ In this walkthrough, you will learn how to create a basic page that displays a l
 9. Close the **Properties** window.  
   
 ## Adding Customer Information to the Page  
- Now that Simon has created a basic list page, he wants to add a control and the appropriate fields so that the page will display the number, name, address, city, and phone number for each customer in the list.  
+ After creating a basic list page, Simon wants to add a control and the appropriate fields so that the page will display the number, name, address, city, and phone number for each customer in the list.  
   
 #### To add controls to the page  
   
@@ -106,7 +106,7 @@ In this walkthrough, you will learn how to create a basic page that displays a l
      ![Page Designer window.](media/RTCPage_Customerlist.png "RTCPage\_Customerlist")  
   
 ## Saving and Running the Page  
- Now that Simon's page is complete, he wants to see how it looks. Eventually, he will add an action to another page so Kevin can access the page. But while he is still working on it, Simon can save the page and then quickly run it in the [!INCLUDE[rtc](includes/rtc_md.md)] using the following procedure.  
+ Now that the page is complete, Simon wants to see how it looks. Eventually, Simon will add an action to another page so Kevin can access the page. But while still working on it, Simon can save the page and then quickly run it in the [!INCLUDE[rtc](includes/rtc_md.md)] using the following procedure.  
   
 #### To save and run the page  
   
@@ -129,7 +129,7 @@ In this walkthrough, you will learn how to create a basic page that displays a l
      ![Customer List page.](media/NAV_CustomerListWalk_ss2.png "NAV\_CustomerListWalk\_ss2")  
   
 ## Next Steps  
- Next, Simon needs to add actions to the customer list page. He decides that he wants to add a Sales Order action. When selected, this action will create a new sales order.  
+ Next, Simon needs to add actions to the customer list page, and decides to add a Sales Order action. When selected, this action will create a new sales order.  
   
 ## See Also  
  [Walkthrough: Adding Actions to a Customer List Page](Walkthrough--Adding-Actions-to-a-Customer-List-Page.md)   

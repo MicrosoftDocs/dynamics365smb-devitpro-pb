@@ -28,10 +28,10 @@ In this walkthrough, you will learn how to add a FactBox to the customer list pa
  This walkthrough builds on the steps described in [Walkthrough: Creating a Customer List in Page Designer](Walkthrough--Creating-a-Customer-List-in-Page-Designer.md) and [Walkthrough: Adding Actions to a Customer List Page](Walkthrough--Adding-Actions-to-a-Customer-List-Page.md).  
   
 ## Story  
- Kevin reviews the Customer List page that Simon has created and has one last request. Kevin decides that he would like to display the credit limit and other relevant information for each customer when selected.  
+ Kevin reviews the Customer List page that Simon has created and has one last request. Kevin decides to display the credit limit and other relevant information for each customer when selected.  
   
 ## Creating a CardPart Page to Display in the FactBox  
- Simon knows that he can use a FactBox to display the type of information Kevin is asking for on the customer list page. Simon creates a new CardPart page based on the card part page type. He associates the page with the **Customer** table and then adds the **Credit Limit \(LCY\)**, **Payment Terms Code**, and **Blocked** fields to the CardPart page.  
+ Simon knows that a FactBox can be used to display the type of information Kevin is asking for on the customer list page. Simon creates a new CardPart page based on the card part page type. Simon then associates the page with the **Customer** table and then adds the **Credit Limit \(LCY\)**, **Payment Terms Code**, and **Blocked** fields to the CardPart page.  
   
 > [!NOTE]  
 >  In this walkthrough, to learn about the properties and controls of a FactBox, you will create a CardPart page from a blank page. Object Designer also includes a wizard that you can use to create a CardPart page that sets up many properties and controls for you. For more information about the wizard, see [How to: Create a Page](How-to--Create-a-Page.md).  
@@ -82,7 +82,7 @@ In this walkthrough, you will learn how to add a FactBox to the customer list pa
      The [!INCLUDE[nav_windows](includes/nav_windows_md.md)] opens and displays the new FactBox page.  
   
 ## Adding a FactBox to the Customer List Page  
- Simon is now ready to add the FactBox to the customer list page that he created in [Walkthrough: Creating a Customer List in Page Designer](Walkthrough--Creating-a-Customer-List-in-Page-Designer.md). To do this, he first needs to open the Customer List page in Page Designer and then add the FactBox to the bottom of the Customer List page.  
+ Simon is now ready to add the FactBox to the customer list page created in [Walkthrough: Creating a Customer List in Page Designer](Walkthrough--Creating-a-Customer-List-in-Page-Designer.md). To do this, Simon first needs to open the Customer List page in Page Designer and then add the FactBox to the bottom of the Customer List page.  
   
 #### To add a FactBox to the customer list page  
   
@@ -110,7 +110,7 @@ In this walkthrough, you will learn how to add a FactBox to the customer list pa
 4.  In the **Page List** window, select **Kevin's Customer List FactBox**\(50001\) page, and then choose the **OK** button.  
   
 ## Associating the CardPart Page in the FactBox with the Customer List Page  
- Simon wants the information displayed in the CardPart page to change based on the customer that is selected in the customer list. To accomplish this, he will associate the **No.** field of the CardPart page with the **No.** field of the Customer List page.  
+ Simon wants the information displayed in the CardPart page to change based on the customer that is selected in the customer list. To accomplish this, Simon will associate the **No.** field of the CardPart page with the **No.** field of the Customer List page.  
   
 #### To associate the CardPart page in the Factbox with the customer list page  
   
