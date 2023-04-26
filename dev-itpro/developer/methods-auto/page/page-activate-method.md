@@ -3,7 +3,7 @@ title: "Page.Activate([Boolean]) Method"
 description: "Activates the current page on the client if possible."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 01/16/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,6 +40,11 @@ If set to **true**, the data on the page will be refreshed.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+The functionality of activating a page is no longer supported by the modern clients. Use `CurrPage.Update(false)` to keep the data update functionality.
+
 ## See Also
 [Page Data Type](page-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

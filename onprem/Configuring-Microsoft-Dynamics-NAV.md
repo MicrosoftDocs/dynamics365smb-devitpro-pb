@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 2d14319c-56df-436d-af71-33bb914950c1
 caps.latest.revision: 29
-manager: edupont
 ---
 # Configuring Microsoft Dynamics NAV
 This section identifies components that you can preconfigure in [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup. It also provides information about settings for individual components, and, for some components, identifies another document where you can find such information.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 656e10a1-0583-4b88-ac95-25eee8aaffc5
 caps.latest.revision: 8
-manager: edupont
 ---
 # Running Objects from the Development Environment
 In Object Designer in the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)], you can run any object. The object is run on the computer that is running [!INCLUDE[nav_server](includes/nav_server_md.md)], not on a client computer.  

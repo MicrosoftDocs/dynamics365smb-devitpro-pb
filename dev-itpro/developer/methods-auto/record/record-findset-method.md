@@ -48,9 +48,6 @@ Set this parameter to true if you want to modify any field value within the curr
 
 ## Remarks
 
-> [!IMPORTANT]  
-> The *UpdateKey* parameter does not have any function in this method. The parameter will be deprecated with a future release.
-
 You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with `repeat..until`.  
 
 The difference between `Find()` and `FindSet` is that `Find` uses paging and the method only requests N rows in the first request, and then if you need more rows, it'll submit a new SQL request. The `FindSet` method will request all rows at once. 

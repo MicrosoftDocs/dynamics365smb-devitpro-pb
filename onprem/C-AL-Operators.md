@@ -11,7 +11,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: f34d9ae5-8dbd-406a-82c9-bbf064d2e871
 caps.latest.revision: 11
-manager: edupont
 ---
 # C/AL Operators
 Operators can be used in expressions to combine, investigate, and adjust values and data elements.  

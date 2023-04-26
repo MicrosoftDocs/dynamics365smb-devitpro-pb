@@ -3,7 +3,7 @@ title: "XmlProcessingInstruction.Create(Text, Text) Method"
 description: "Creates an XmlProcessingInstruction node."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ XmlProcessingInstruction :=   XmlProcessingInstruction.Create(Target: Text, Data
 ## Parameters
 *Target*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The target of the processing instruction.
-        
+The target of the processing instruction.  
 
 *Data*  
 &emsp;Type: [Text](../text/text-data-type.md)  

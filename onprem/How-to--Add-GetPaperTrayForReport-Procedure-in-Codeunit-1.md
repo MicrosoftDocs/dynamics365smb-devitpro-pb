@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7668292c-a5e0-4f68-bba5-1dd63a23a22d
 caps.latest.revision: 6
-manager: edupont
 ---
 # How to Add GetPaperTrayForReport Procedure in Codeunit 1
 You can print a report that uses different paper trays to print different letterheads. You can programmatically achieve this by adding the **GetPaperTrayForReport** procedure in codeunit 1 **Application Management** to set the paper tray from C/AL code. This is a procedure that you must add yourself if you need it. This gives you runtime control over paper tray selection for first, last, and default pages in all reports. When a report is run, the **GetPaperTrayForReport** procedure is called automatically to determine which paper trays should be used. If the **GetPaperTrayForReport** procedure is absent, then the report uses the **PaperSourceFirstPage**, **PaperSourceDefaultPage**,and **PaperSourceLastPage** properties that are set on the report.  

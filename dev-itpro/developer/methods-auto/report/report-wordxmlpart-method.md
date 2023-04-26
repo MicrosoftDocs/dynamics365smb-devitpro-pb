@@ -3,7 +3,7 @@ title: "Report.WordXmlPart(Integer [, Boolean]) Method"
 description: "Returns the report data structure as structured XML that is compatible with Microsoft Word custom XML parts."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,8 +26,7 @@ String :=   Report.WordXmlPart(Number: Integer [, ExtendedFormat: Boolean])
 ## Parameters
 *Number*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.
-        
+The ID of the report that you want to run. If the report you specify does not exist, then a run-time error occurs.  
 
 *[Optional] ExtendedFormat*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
@@ -37,8 +36,7 @@ If you set this variable to true, then XML elements will include the following a
 -   DataType="Type". Specifies the data type of the element.
 If you omit this parameter or set it to false, then the element attributes are not included in the XML. This is the recommended setting when you will use the Word XML part in Word for modifying the report layout because the XML is simpler.
 The following example illustrates an XML element that has the ExtendedFormat set to true: \<CompanyName ElementType="Column" ElementId="3" DataType="OemText"\>
-The following example illustrates the same XML with the ExtendedFormat set to false:\<CompanyName\>
-          
+The following example illustrates the same XML with the ExtendedFormat set to false:\<CompanyName\>  
 
 
 ## Return Value

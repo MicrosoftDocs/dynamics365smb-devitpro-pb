@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 83e445ca-96f9-4f09-bb5e-2135dc8b43d3
 caps.latest.revision: 9
-manager: edupont
 ---
 # IMPORTENCRYPTIONKEY
 Points to a password protected file that contains the key on the current server.  

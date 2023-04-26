@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9aa90fac-bf11-4f5a-867d-e0fea847c9c3
 caps.latest.revision: 13
-manager: edupont
 ---
 # Types of Reports
 This topic describes the types of reports that are available in [!INCLUDE[navnow](includes/navnow_md.md)].  

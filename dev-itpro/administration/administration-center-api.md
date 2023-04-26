@@ -25,7 +25,7 @@ For more information about administrative capabilities, see [The Business Centra
 
 ## Location
 
-The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: https://api.businesscentral.dynamics.com.
+The [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)] API is located at the following URL: `https://api.businesscentral.dynamics.com`.
 
 ## Authenticate using service-to-service AAD Apps ([Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow))
 

@@ -1,0 +1,1 @@
+The user telemetry ID for the user. From the user card, you can use user_Id to identify the user who triggered this telemetry event. For more information, see [Assign a telemetry ID to users](../administration/telemetry-enable-application-insights.md#assign-a-telemetry-id-to-users). 

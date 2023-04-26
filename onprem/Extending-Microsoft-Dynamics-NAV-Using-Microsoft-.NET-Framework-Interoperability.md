@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a50931c9-ec89-4ce9-aabf-285fec341c69
 caps.latest.revision: 11
-manager: edupont
 ---
 # Extending Microsoft Dynamics NAV Using Microsoft .NET Framework Interoperability
 You can extend the [!INCLUDE[rtc](includes/rtc_md.md)]s and [!INCLUDE[nav_server](includes/nav_server_md.md)] with functionality that is available in Microsoft .NET Framework assemblies. You can take advantage of .NET Framework interoperability so that [!INCLUDE[navnow](includes/navnow_md.md)] objects can interact with .NET Framework objects. In your [!INCLUDE[navnow](includes/navnow_md.md)] objects, you can reference .NET Framework assemblies and call their members directly from C/AL code. You can use assemblies from the .NET Framework class library, which are found in the global assembly cache; your own custom assemblies; or third-party assemblies. For more information, see [Assembly Installation in the GAC](https://go.microsoft.com/fwlink/?LinkID=196848).  

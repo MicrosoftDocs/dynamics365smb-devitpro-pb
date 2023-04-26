@@ -2,7 +2,7 @@
 title: CREATE bankAccounts  
 description: Creates a bankAccount object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -24,10 +24,11 @@ POST businesscentralPrefix/companies({id})/bankAccounts
 
 ## Request headers
 
-|Header         |Value                    |
-|---------------|-------------------------|
-|Authorization  |Bearer {token}. Required.|
-|Content-Type   |application/json         |
+|Header|Value|
+|------|-----|
+|Authorization  |Bearer {token}. Required. |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **bankAccount**, the **bankAccount** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **bankAccounts** object.

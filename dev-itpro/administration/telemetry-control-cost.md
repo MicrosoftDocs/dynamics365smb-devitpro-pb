@@ -12,66 +12,17 @@ ms.custom: bac-template
 ---
 # Controlling Telemetry Cost
 
-[!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] is billed based on the volume of telemetry data your application sends (data ingestion) and how long time you want data to be available (data retention). 
-
-Check the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] documentation for up-to-date information on pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/).
+[!INCLUDE[telemetryCost](../includes/include-telemetry-cost.md)]
 
 ## Control data ingestion cost
 
-To reduce data ingestion cost, you can:
+[!INCLUDE[telemetryControlCost](../includes/include-telemetry-control-cost.md)]
 
-- sample to only ingest a percentage of the inbound data (learn more at [Sampling in Application Insights](/azure/azure-monitor/app/sampling#ingestion-sampling).
-- set a daily limit of how much data can be ingested
-- set alerts on cost thresholds being exceeded to get notified when it happens
-- use a custom endpoint ([go to section](#use-a-custom-endpoint))
-
-Except for using a custom endpoint, you find the options for controlling data ingestion cost in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], under _configure, usage, and estimated costs_.
 
 ### Distribution of telemetry data
 
-The easiest way to see the data distribution of different event IDs in your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource is to use the _Data in Telemetry_ page on the _Administration_ report in the Power BI app on telemetry data.
+[!INCLUDE[telemetryEventDistribution](../includes/include-telemetry-event-distribution.md)]
 
-You can also run the KQL queries below.
-
-```kql
-// 30 day overview of event ingestion in your Application Insights resource
-let lookback = 30d ;
-let traces_stats = 
-traces
-| where timestamp > ago(lookback) 
-| extend eventId = tostring( customDimensions.eventId )
-| summarize count() by eventId
-| extend table_name = 'traces'
-| project eventId, table_name, count_
-;
-let pageview_stats =
-pageViews
-| where timestamp > ago(lookback) 
-| extend eventId = tostring( customDimensions.eventID )
-| summarize count() by eventId
-| extend table_name = 'pageViews'
-| project eventId, table_name, count_
-;
-traces_stats
-| union pageview_stats
-| order by count_ desc
-| project eventId, table_name, event_count=count_
-| order by event_count desc  
-```
-
-Similarly, you can see the data distribution of different environments in your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource, by running the KQL queries below.
-
-```kql
-// 30 day overview of data ingestion by environment in your Application Insights resource
-let lookback = 30d ;
-union traces, pageViews
-| where timestamp > ago(lookback) 
-| extend aadTenantId = tostring( customDimensions.aadTenantId )
-, environmentName = tostring( customDimensions.environmentName )
-| summarize count() by aadTenantId, environmentName
-| project aadTenantId, environmentName, count_
-| order by aadTenantId, environmentName
-```
 
 ### Use data collection rules (DCR)
 
@@ -107,3 +58,4 @@ To reduce data retention cost, you can
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
+[Telemetry FAQ](telemetry-faq.md)

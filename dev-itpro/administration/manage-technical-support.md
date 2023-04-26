@@ -2,17 +2,15 @@
 title: Managing technical support
 description: Learn about how to support your Business Central users, both online and on-premises, as the internal or delegated administrator.
 author: edupont04
-
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/25/2022
 ms.author: edupont
-
 ---
 
-# Managing Technical Support
+# Managing technical support
 
 When users report a problem with [!INCLUDE [prod_short](../developer/includes/prod_short.md)], superusers or the internal administrator can often find a solution. The internal administrator can find technical information in the **Help and Support** page, and they can then escalate relevant issues to the reselling partner.  
 
@@ -99,7 +97,7 @@ This section provides an overview of the most useful tools for troubleshooting t
 
 - Correct customer data in bulk
 
-    The [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel is the preferred tool for bulk correcting customer data in case of data-related issues. For more information, see [Get the Business Central Add-in for Excel](/dynamics365/business-central/admin-deploy-excel-add) and [Viewing and Editing in Excel from Business Central](/dynamics365/business-central/across-work-with-excel).
+    The [!INCLUDE [prod_short](../includes/prod_short.md)] add-in for Excel is the preferred tool for bulk correcting customer data in case of data-related issues. For more information, see [Get the Business Central Add-in for Excel](/dynamics365/business-central/admin-deploy-excel-addin) and [Viewing and Editing in Excel from Business Central](/dynamics365/business-central/across-work-with-excel).
 
 ### <a name="helpsupport"></a>The **Help and Support** page in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] company
 

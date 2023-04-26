@@ -9,7 +9,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 ms.author: edupont
-ms.date: 05/25/2022
+ms.date: 03/28/2023
 ---
 
 # Trials and Sign-ups for Business Central Online
@@ -25,6 +25,10 @@ Adjust the onboarding checklist to fit your solution, and provide in-app tours f
 Prospects can contact you if they have signed up for the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] [free trial](/dynamics365/business-central/across-preview). This means that you can become their CSP partner. For more information, see [Connect with customers](../administration/get-started-online.md#connect-with-customers).  
 
 Alternatively, you can create a more tailored trial environment based on the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] content pack on the [cdx.transform.microsoft.com](https://cdx.transform.microsoft.com/) site. For more information, see [Preparing Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]](../administration/demo-environment.md).  
+
+## Tailoring trials for customers using the public trial
+
+As yet another alternative, partners can create customer centric trials via the public trial offered by Microsoft without the need for CSP in the initial phase, until the prospect wants to subscribe to [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. These types of trials require more initial efforts from resellers in building these trial experiences as apps to be published to AppSource. The investment is justified by being able to pivot the trial experience by customer or segment type. For more information about these types of trials, see [Create customer centrial onboarding experiences](../administration/onboarding-signupcontext.md).  
 
 [!INCLUDE [admin-trial-types](../includes/admin-trial-types.md)]
 

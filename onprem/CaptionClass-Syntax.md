@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 9396c266-ed85-4cc9-ab5a-d968b01bfbdd
 caps.latest.revision: 14
-manager: edupont
 ---
 # CaptionClass Syntax
 This topic describes the syntax of the CaptionClass functionality.  

@@ -3,7 +3,7 @@ title: "JSON Files"
 description: "Description of the settings of the app and launch JSON files for AL in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 12/19/2022
+ms.date: 02/24/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -92,12 +92,12 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
-|attach| No| Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
 |forceUpgrade|No| Always run upgrade codeunits, even if the version number of the extension is the same as an already installed version. This can be useful for troubleshooting upgrade issues. <br><br>**Note:** The `forceUpgrade` setting requires the package ID to be changed.|
 |useSystemSession|No|Runs install and upgrade codeunits in a system session. This will prevent debugging install and upgrade codeunits.|
 |snapshotFileName|No|Specifies the snapshot file name used when snapshot debugging files are saved. For more information, see [Snapshot Debugging](devenv-snapshot-debugging.md).|
 |primaryTenantDomain|No|Specifies the URL of the Azure AD organization or company associated with the Azure AD tenant. This setting enables AAD scenarios for on-premises installations. For more information, see [Azure AD authentication for Business Central on-premises
 ](devenv-aad-auth-onprem.md)|
+|usePublicURLFromServer|No|Specifies whether to override the NST setting and instead use the host provided in the `launch.json` server property. When set to `false`, the `PublicWebBaseURL` server (NST) setting will be overridden with the server parameter of the `launch.json` when launching the browser using that specific launch configuration. <br>**Note:**<br>This option only affects launching debug sessions to on-premise servers.<br> When set to `true`, the `PublicWebBaseURL` server setting will be used.|
 
 
 ### Publish to cloud settings
@@ -124,8 +124,6 @@ The following table describes the settings in the `launch.json` file. The `launc
 |numberOfSqlStatements|Yes|Sets the number of SQL statements to be shown in the debugger.|
 |dependencyPublishingOption|No|Available options are: <br>`Default` - set dependency publishing will be applied <br> `Ignore` - dependency publishing is ignored <br> `Strict` - dependency publishing will fail if there are any apps that directly depend on the startup project and these apps aren't part of the workspace. For more information, see [Working with multiple projects and project references](devenv-work-workspace-projects-references.md).|
 |disableHttpRequestTimeout|No|Specifies if the default setting for HTTP request timeout in Visual Studio Code is switched off. The default value is `false`. If the value is set to `true` requests can run without timeout.|
-|attach|No | Sets the session to attach to. There are two options; `Attach to the next client on the cloud sandbox` and `Attach to the next client on your server`. Use the first option to attach to a cloud session, and the second option to attach to a local server. For more information, see [Attach and Debug Next](devenv-attach-debug-next.md).|
-
 
 ### Global and workspace launch configuration
 

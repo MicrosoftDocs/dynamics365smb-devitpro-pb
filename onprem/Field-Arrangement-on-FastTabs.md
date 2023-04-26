@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: a25d7a44-f769-4415-b52e-6d8350f049d3
 caps.latest.revision: 9
-manager: edupont
 ---
 # Field Arrangement on FastTabs
 This topic describes how individual fields are arranged on a FastTab and ways that you can change the layout.  

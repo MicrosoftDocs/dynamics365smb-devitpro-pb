@@ -38,9 +38,9 @@ The following table explains the custom dimensions included in a **Web Services 
 |alObjectId|Specifies the ID of the AL object that made the request.|
 |alObjectName|Specifies the name of the AL object that made the request.|
 |alObjectType|Specifies the type of the AL object that made the request.|
-|alStackTrace|Specifies the AL stacktrace when the the request was made. </br></br> Introduced in version 20.1.|
-|clientType|[!INCLUDE[include-telemetry-dimension-client-type](../includes/include-telemetry-dimension-client-type.md)] </br></br> Introduced in version 21.3.|
-|companyName|Specifies the display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company from which the request was made.|
+|alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] Introduced in version 20.1.|
+|clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)]  Introduced in version 21.3.|
+|companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |component|**Dynamics 365 Business Central Server**|
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |deprecatedKeys|A comma-separated list of all the keys that have been deprecated. The keys in this list are still supported but will eventually be removed in the next major release. We recommend that update any queries that use these keys to use the new key name.|

@@ -13,7 +13,7 @@ ms.service: dynamics365-business-central
 
 # Analyze and Monitor Telemetry with Power BI
 
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 ## About the reports in the app 
 
@@ -181,6 +181,12 @@ Once an app is installed, you can use its workspace, such as **Dynamics 365 Busi
 > [!NOTE]
 > If you turn off scheduled refresh and go back to the app, it will remove the Application ID and you have to enter it again.
 
+## Install, share, and update apps
+
+From time to time, the app is released in a new improved version via AppSource. To learn how to deal with app updates, see 
+[Install, share, and update template apps in your organization](/power-bi/connect-data/service-template-apps-install-distribute)
+
+
 ## Share the app with coworkers and others
 
 Once installed, it's possible to share the app with coworkers and others (such as customers). You can:
@@ -217,8 +223,14 @@ In the following table, you'll find examples of scenarios for each persona where
 | Supporter | Customer complains that users get lots of errors when using the system. | Go to the Error report and investigate the _Error Dialogs_, _Permission Errors_, and _Feature Errors_ pages. You can filter pages by Extension Publisher to learn which code path the error is coming from. |
 | Supporter | Customer experiences many locking issues. | Use the _Database Deadlocks_ page in the Error report to examine deadlocks. Use the _Database Lock Timeouts_ page in the Performance report to examine lock time-outs. Use the _Long running SQL queries_ page (filter SQL Statement to "UPDLOCK") to investigate SQL queries that take locks. | 
 
+## No-code alerting with Power BI Metrics
+[!INCLUDE[pbimetrics](../includes/include-telemetry-alerting-powerbi-metrics.md)]
+
+
 ## See also
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
 [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)
+[Telemetry FAQ](telemetry-faq.md)
+

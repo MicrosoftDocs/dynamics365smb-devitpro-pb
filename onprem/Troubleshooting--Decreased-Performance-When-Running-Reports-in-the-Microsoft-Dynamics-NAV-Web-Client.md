@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1949a696-6b97-4fbb-bc49-bc49942a0c52
 caps.latest.revision: 2
-manager: edupont
 ---
 # Troubleshooting: Decreased Performance When Running Reports in the Microsoft Dynamics NAV Web Client
 When many users regularly run reports from the [!INCLUDE[nav_web](includes/nav_web_md.md)], the memory consumption by the Internet Information Server will grow slightly over time. If the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] and SQL Server are on the same computer, the report performance may degrade because the SQL Server computer becomes deprived of memory.  

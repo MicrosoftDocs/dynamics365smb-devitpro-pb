@@ -120,9 +120,9 @@ New-BcContainerTenant -tenantId "additional" -applicationInsightsKey "11111111-2
 
 To help troubleshooting problems experienced by a given Business Central user, you can assign the user a random ID that will be included in traces logged in Application Insights. This ID is a special GUID that's only used for telemetry. It will appear in the `user_Id` column in certain events, but not all. Specifically, it's used only in telemetry that the Business Central service/server emits in the context of a user session. So, for example, telemetry that the Business Central Web server emits won't include this ID.
 
-To assign, change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
+The telemetry ID for a user is initially set by the [!INCLUDE [prod_short](../includes/prod_short.md)] server when the user is created. To change, or clear the telemetry ID on a user, set the **Telemetry ID** field on the **User Card** for the user in Business Central:
 
-1. Sign in to Business Central using an administrator account.
+1. Sign in to [!INCLUDE [prod_short](../includes/prod_short.md)] using an administrator account.
 2. Choose the ![Lightbulb that opens the Tell Me feature.](../developer/media/search_small.png "Tell me what you want to do") icon, enter **Users**, and then choose the related link.
 3. Choose the user name to open the **User Card** page.
 4. Select the **Telemetry ID** field ![lookup button that opens the dialog for setting the telemetry ID.](../developer/media/ellipse-button.png).
@@ -147,3 +147,4 @@ It is also considered good practice to change all user telemetry IDs at the end 
 [Monitoring Long Running SQL Queries](monitor-long-running-sql-queries-event-log.md)  
 [Environment Telemetry](tenant-admin-center-telemetry.md)  
 [Monitoring and Analyzing With Telemetry](telemetry-overview.md)  
+[Telemetry FAQ](telemetry-faq.md)

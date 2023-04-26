@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 51702870-e394-4f67-848d-c336a0a535c6
 caps.latest.revision: 23
-manager: edupont
 ---
 # Walkthrough: Exporting Data from Tables to XML Documents
 XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)] database to XML format or import data from an XML file to [!INCLUDE[navnow](includes/navnow_md.md)] database. Exporting data from your [!INCLUDE[navnow](includes/navnow_md.md)] database into XML format enables seamless exchange of information between different computer systems. You only need a basic knowledge of XML to design and work with XMLports.  

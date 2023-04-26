@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 17b4afad-07bd-47bc-a4fb-621eb33808ce
 caps.latest.revision: 10
-manager: edupont
 ---
 # Avoiding Run-Time Errors
 Run-time errors occur during program execution. These errors are not detected by the compiler because the code is syntactically correct.  

@@ -111,9 +111,7 @@
 #### [User assistance model](user-assistance.md)
 #### [Configure the help experience](deployment/configure-help.md)
 #### [Configure context-sensitive help](help/context-sensitive-help.md)
-#### [Custom Help Toolkit](help/custom-help-toolkit.md)
-#### [Custom Help Toolkit: The FieldTopicTextExtractor tool](help/custom-help-toolkit-FieldTopicTextExtractor.md)
-#### [Extend and collaborate on the help](help/contributor-guide.md)
+#### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
 #### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 ### ALDoc tool
@@ -181,6 +179,7 @@
 ### [Special permission sets](administration/administration-special-permission-sets.md)
 ## Prepare Business Central
 ### [Enabling new features ahead of time](administration/feature-management.md)
+### [Optional features that are now mandatory](administration/feature-management-mandatory-features.md)
 ### [Recommend apps](administration/recommend-apps.md)
 ### [Set up Business Central](/dynamics365/business-central/setup?toc=/dynamics365/business-central/dev-itpro/toc.json)
 ### [Get the Excel add-in](/dynamics365/business-central/admin-deploy-excel-addin?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -199,6 +198,7 @@
 <!-- ### Partner Center stuff -->
 <!-- Performance tests-->
 ### [Onboarding experiences](administration/onboarding-experiences.md)
+### [Measure onboarding progress using telemetry](administration/onboarding-telemetry.md)
 ### [Onboard new users with the welcome banner](administration/onboarding-welcome-banner.md)
 ### [Get users started with the checklist](administration/onboarding-checklist.md)
 ### [Teaching tips and in-app tours for onboarding users](administration/onboarding-teaching-tips-tours.md)
@@ -209,15 +209,17 @@
 ### [Overview](administration/telemetry-overview.md)
 ### [Available telemetry](administration/telemetry-available-telemetry.md) 
 ### [Enable telemetry](administration/telemetry-enable-application-insights.md)
-### [Control telemetry Cost](administration/telemetry-control-cost.md)
+### [Control telemetry cost](administration/telemetry-control-cost.md)
 ### [Analyze telemetry with Power BI](administration/telemetry-power-bi-app.md)
 ### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
 ### [Alert on telemetry](administration/telemetry-alert.md)
+### [Telemetry FAQ](administration/telemetry-faq.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
+#### [Client action telemetry](administration/telemetry-client-action-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration package lifecycle telemetry](administration/telemetry-configuration-package-trace.md)
 #### [Database deadlock telemetry](administration/telemetry-database-deadlocks-trace.md)
@@ -234,7 +236,9 @@
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
 #### [Long-running AL method telemetry](administration/telemetry-al-method-trace.md)
 #### [Long-running SQL queries telemetry](administration/telemetry-long-running-sql-query-trace.md)
+#### [Onboarding telemetry](administration/telemetry-onboarding-trace.md)
 #### [Page view telemetry](administration/telemetry-page-view-trace.md)
+#### [Performance toolkit telemetry](administration/telemetry-performance-toolkit-trace.md)
 #### [Permission changes telemetry](administration/telemetry-permission-changes-trace.md)
 #### [Permission dependency cycle telemetry](administration/telemetry-permission-dependency-cycle-trace.md)
 #### [Permission error telemetry](administration/telemetry-permission-error-trace.md)
@@ -256,6 +260,7 @@
 ### [Manage technical support overview](administration/manage-technical-support.md)
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
+### [Report a performance issue](administration/report-performance-issue.md)
 ### [Analyze performance](administration/performance-profiler-overview.md)
 <!-- end support -->
 ## Automation API
@@ -398,11 +403,13 @@
 ### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
 ### [Keyboard shortcuts](developer/devenv-keyboard-shortcuts.md)
+### [AL Home](developer/devenv-al-home.md)
+### [AL Explorer](developer/devenv-al-explorer.md)
 ### [AL formatter](developer/devenv-al-formatter.md)
 ### [AL outline view](developer/devenv-al-outline-view.md)
 ### [AL code navigation](developer/devenv-al-code-navigation.md)
 ### [AL code actions](developer/devenv-code-actions.md)
-### [object ranges](developer/devenv-object-ranges.md)
+### [Object ranges](developer/devenv-object-ranges.md)
 ### [Differences in the development environments](developer/devenv-differences.md)
 <!-- ### [object Specifications and Limitations](developer/devenv-object-specifications-limitations.md)-->
 ### [Adding help links from pages, reports, and XMLports](developer/devenv-adding-help-links-from-pages-tables-xmlports.md)
@@ -438,6 +445,7 @@
 ### Code analysis
 #### [The code analysis tool](developer/devenv-using-code-analysis-tool.md)
 #### [AL compiler diagnostics](developer/diagnostics/diagnostics-overview.md)
+#### [Code analysis performance configuration](developer/devenv-code-analysis-performance-configuration.md)
 #### [Ruleset for the code analysis tool](developer/devenv-rule-set-syntax-for-code-analysis-tools.md)
 #### [Using the code analysis tools with the ruleset](developer/devenv-using-code-analysis-tool-with-rule-set.md)
 #### [AppSourceCop analyzer rules](developer/analyzers/appsourcecop.md)
@@ -555,7 +563,7 @@
 ##### Collections
 ###### [Array](developer/methods/devenv-array-methods.md)
 ###### [Dictionary](developer/methods-auto/dictionary/dictionary-data-type.md)
-###### [list](developer/methods-auto/list/list-data-type.md)
+###### [List](developer/methods-auto/list/list-data-type.md)
 
 ##### Enumerations and options
 ###### [Enum](developer/devenv-extensible-enums.md)
@@ -618,12 +626,16 @@
 #### Modifying data
 ##### [Insert, Modify, ModifyAll, Delete, and DeleteAll methods](developer/devenv-insert-modify-modifyall-delete-and-deleteall-methods.md)
 ##### [Temporary tables](developer/devenv-temporary-tables.md)
+##### [Virtual tables](developer/devenv-virtual-tables.md)
+###### [Date virtual table](developer/devenv-date-virtual-table.md)
+###### [Integer virtual table](developer/devenv-integer-virtual-table.md)
 ##### [Retaining table data after publishing](developer/devenv-retaining-data-after-publishing.md)
 ##### [Enabling sales tables for extension eevelopment](developer/devenv-integrating-dynamics-365-for-sales-extension-development.md)
 ##### [Creating filter pages for tables](developer/devenv-filter-pages-for-filtering-tables.md)
 ##### [Working with media on records](developer/devenv-working-with-media-on-records.md)
 #### Reading data
 ##### [Get, Find, and Next methods](developer/devenv-get-find-and-next-methods.md)
+##### [Record instance isolation level](developer/devenv-read-isolation.md)
 ##### Partial records
 ###### [Using partial records](developer/devenv-partial-records.md)
 ###### [FAQ](developer/devenv-partial-records-faq.md)
@@ -636,14 +648,13 @@
 ###### [Retrieving date data](developer/devenv-query-retrieve-date-data.md)
 ###### [Using queries instead of record variables](developer/devenv-query-using-instead-record-variables.md)
 ###### [Accessing columns of a query dataset](developer/devenv-query-accessing-columns.md)
-#### [Tranferring data](developer/devenv-data-transfer.md)
+#### [Transferring data](developer/devenv-data-transfer.md)
 #### Importing and exporting data
 ##### [XMLport overview](developer/devenv-xmlport-overview.md)
 ##### [XMLport object](developer/devenv-xmlport-object.md)
 ##### [Defining an XMLport schema](developer/devenv-xmlport-schema.md)  
 ##### [Using namespaces with XMLports](developer/devenv-using-namespaces-with-xmlports.md)
 ##### [Request pages](developer/devenv-request-pages.md)
-
 ### Pages and user interfaces
 #### [Customizing for user roles](developer/devenv-role-customization.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
@@ -943,7 +954,7 @@
 ### [Using a prefix or suffix](compliance/apptest-prefix-suffix.md)
 ### [Instrumenting an application for telemetry](developer/devenv-instrument-application-for-telemetry.md)
 ### [Testing your extension](compliance/apptest-testingyourextension.md)
-### [User scenario cocumentation](compliance/apptest-userscenario.md)
+### [User scenario documentation](compliance/apptest-userscenario.md)
 ### [Restrictions on UI for objects exposed as web services](compliance/apptest-webservices.md)
 ### [Replacing OnBeforeCompanyOpen and OnAfterCompanyOpen](compliance/apptest-onbeforecompanyopen.md)
 ### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
@@ -1069,7 +1080,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating printer and report payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting performance issues](performance/performance-overview.md)
+#### [Troubleshooting performance issues](performance/performance-developer.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
@@ -1212,9 +1223,9 @@
 ## Integrating with Microsoft Power Automate
 ### [Power Automate integration overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Set up Automated Flows](powerplatform/automate-workflows.md)
-### [Set up Instant Flows](powerplatform/instant-flows.md)
-### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
+### [Create automated flows](powerplatform/automate-workflows.md)
+### [Create instant flows](powerplatform/instant-flows.md)
+### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
@@ -1278,6 +1289,7 @@
 ### [Deployment overview](deployment/deployment.md)
 ### [features not implemented in on-premises deployments](features-not-implemented-on-premises.md)
 ### System Requirements
+#### [2023 release wave 1](deployment/system-requirements-business-central-v22.md)
 #### [2022 release wave 2](deployment/system-requirements-business-central-v21.md)
 #### [2022 release wave 1](deployment/system-requirements-business-central-v20.md)
 #### [2021 release wave 2](deployment/system-requirements-business-central-v19.md)
@@ -1397,6 +1409,29 @@
 ## Upgrade
 ### [Upgrading to Business Central](upgrade/upgrading-to-business-central.md)
 ### [Supported upgrade paths](upgrade/upgrade-paths.md)
+### Business Central 2023 Release Wave 1
+#### [Overview](upgrade/upgrade-overview-v22.md)
+#### [Before you upgrade](upgrade/upgrade-considerations-v22.md)
+#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+#### [Upgrading reports](upgrade/upgrade-reports.md)
+#### Application and data
+##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v22.md)
+##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v22.md)
+##### [From version 15 and later](upgrade/upgrade-unmodified-application-to-v22.md)
+##### Related articles
+###### [Convert to AL](upgrade/devenv-code-conversion.md)
+###### Migrating tables and fields between extensions
+####### [Overview](developer/devenv-migrate-table-fields.md)
+####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+###### Data migration toolkit - India
+####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
+#### Technical upgrade
+##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v22.md)
+##### [From version 19](upgrade/upgrade-technical-upgrade-v19-to-v22.md)
+##### [From version 20 or 21](upgrade/upgrade-technical-upgrade-v22.md)
+#### [Installing a minor update](upgrade/upgrading-cumulative-update-v22.md)
 ### Business Central 2022 release wave 2
 #### [Overview](upgrade/upgrade-overview-v21.md)
 #### [Before you upgrade](upgrade/upgrade-considerations-v21.md)
@@ -1455,31 +1490,31 @@
 ####### [Overview](developer/devenv-migrate-table-fields.md)
 ####### [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
 ####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-###### Data Migration Toolkit - India
+###### Data migration toolkit - India
 ####### [Overview](upgrade/india-data-migration-toolkit-overview.md)
 #### Technical Upgrade
 ##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v19.md)
 ##### [From version 16, 17, or 18](upgrade/upgrade-technical-upgrade-v19.md)
 #### [Installing a minor update](upgrade/upgrading-cumulative-update-v19.md)
-### Business Central 2021 release wave 1
-#### [Overview](upgrade/upgrade-overview-v18.md)
-#### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
-#### [Upgrading permission sets](upgrade/upgrade-permissions.md)
-#### Application and data
-##### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v18.md)
-##### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v18.md)
-##### [From version 15, 16, or 17 Microsoft base application](upgrade/upgrade-unmodified-application-to-v18.md)
-##### Related articles
-###### [Convert to AL](upgrade/devenv-code-conversion.md)
-###### Migrating tables and fields between extensions
-####### [Overview](developer/devenv-migrate-table-fields.md)
-####### [Moving tables and Fields down](developer/devenv-migrate-table-fields-down.md)
-####### [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
-#### Technical upgrade
-##### [From version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
-##### [From version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
-#### [Installing a minor update](upgrade/upgrading-cumulative-update-v18.md)
 ### Earlier versions
+#### Business Central 2021 release wave 1
+##### [Overview](upgrade/upgrade-overview-v18.md)
+##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)
+##### [Upgrading permission sets](upgrade/upgrade-permissions.md)
+##### Application and data
+###### [From version 14 unmodified C/AL application](upgrade/upgrade-unmodified-application-v14-v18.md)
+###### [From version 14 customized C/AL application](upgrade/upgrade-to-microsoft-base-app-v18.md)
+###### [From Version 15, 16, or 17 Microsoft base application](upgrade/upgrade-unmodified-application-to-v18.md)
+###### Related articles
+####### [Convert to AL](upgrade/devenv-code-conversion.md)
+####### Migrating tables and fields between extensions
+######## [Overview](developer/devenv-migrate-table-fields.md)
+######## [Moving tables and fields down](developer/devenv-migrate-table-fields-down.md)
+######## [Moving tables and fields up](developer/devenv-migrate-table-fields-up.md)
+##### Technical upgrade
+###### [From version 14](upgrade/upgrade-technical-upgrade-v14-v18.md)
+###### [From version 15, 16, or 17](upgrade/upgrade-technical-upgrade-v18.md)
+##### [Installing a minor update](upgrade/upgrading-cumulative-update-v18.md)
 #### Business Central 2020 release wave 2
 ##### [Overview](upgrade/upgrade-overview-v17.md)
 ##### [Upgrade compatibility matrix](upgrade/upgrade-v14-v15-compatibility.md)

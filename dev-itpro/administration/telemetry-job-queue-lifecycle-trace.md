@@ -35,6 +35,7 @@ Occurs when a job queue entry is sent to the job queue to eventually be run. A j
 |---------|-----|
 |message|**Job queue entry enqueued: {alJobQueueId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -59,6 +60,8 @@ Information if the job queue entry fails to be sent to the queue.
 |---------|-----|
 |message|**Job queue entry not enqueued: {alJobQueueId}**|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 #### Custom dimensions
 
@@ -79,6 +82,7 @@ Information if the job queue entry was successfully sent to the queue.
 |---------|-----|
 |message|**Job queue entry enqueued: {alJobQueueId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 #### Custom dimensions
 
@@ -99,6 +103,8 @@ Occurs when a job queue entry starts to run.
 |---------|-----|
 |message|**Job queue entry started: {alJobQueueId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
@@ -120,6 +126,8 @@ Occurs when a request for a job queue entry finishes running.
 |---------|-----|
 |message|**Job queue entry finished: {alJobQueueId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
+
 
 ### Custom dimensions
 
@@ -139,6 +147,7 @@ Occurs when a job queue entry finishes running.
 |---------|-----|
 |message|**JobID =  {alJobQueueId}, ObjectType =  {alJobQueueObjectType}, ObjectID =  {alJobQueueObjectId}, Status = Finished, Result = Success, Company =  {alJobQueueCompanyName}, Scheduled Task Id =  {alJobQueueScheduledTaskId}**|
 |severityLevel|**1**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -158,6 +167,7 @@ Occurs when a job queue entry fails to run.
 |---------|-----|
 |message|**Job queue entry errored: {alJobQueueId}**|
 |severityLevel|**2**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
@@ -168,7 +178,8 @@ Occurs when a job queue entry fails to run.
 
 ### Sample KQL code 
 This KQL code can help you get started troubleshooting job queue errors
-    ```kql
+
+```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
 | where customDimensions has 'AL0000HE7' // for faster query performance
@@ -186,7 +197,7 @@ traces
 , alJobQueueExecutionTimeInMs = customDimensions.alJobQueueExecutionTimeInMs
 , alJobQueueStacktrace = customDimensions.alJobQueueStacktrace // stack trace added in 21.3
 , taskId = customDimensions.alJobQueueScheduledTaskId // you can join to task scheduler telemetry on the taskId
-    ```
+```
 
 ## <a name="other"></a>Common custom dimensions
 

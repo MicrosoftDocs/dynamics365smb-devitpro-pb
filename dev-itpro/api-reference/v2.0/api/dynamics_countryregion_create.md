@@ -2,11 +2,11 @@
 title: CREATE countryRegions  
 description: Creates a countryRegion object in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-ms.topic: article
+ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 02/01/2023
 ms.author: solsen
 ---
 
@@ -27,7 +27,8 @@ POST businesscentralPrefix/companies({id})/countriesRegions
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|Content-Type  |application/json   |
+|Content-Type  |application/json|
+|If-Match      |Required. When this request header is included and the eTag provided does not match the current tag on the **countryRegion**, the **countryRegion** will not be updated. |
 
 ## Request body
 In the request body, supply a JSON representation of **countriesRegions** object.

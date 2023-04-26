@@ -11,7 +11,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: f82aa4bd-6242-4d04-aaeb-432b70c74031
 caps.latest.revision: 6
-manager: edupont
 ---
 # C/AL Assignment Statements
 Assignment statements assign a value to a variable. The value that you assign to the variable is a C/AL expression. It can be a constant or a variable, or it can consist of multiple elements of C/AL expressions. If you use a function call as the value to assign to a variable in an assignment statement, then the value that is assigned is the return value of the function.  

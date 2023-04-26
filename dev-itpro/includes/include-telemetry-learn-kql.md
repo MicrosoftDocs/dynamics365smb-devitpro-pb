@@ -1,0 +1,1 @@
+Go to [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/) in the Azure Data Explorer documentation.

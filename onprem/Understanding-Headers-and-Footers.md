@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b129d096-1826-4e6a-9350-5efa307df9b0
 caps.latest.revision: 16
-manager: edupont
 ---
 # Report Header and Footer Limitations in Dynamics NAV
 Headers and footers in client report definition \(RDLC\) report layouts have the following limitations:  

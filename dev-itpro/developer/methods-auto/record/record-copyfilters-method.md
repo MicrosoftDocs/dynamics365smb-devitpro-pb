@@ -3,7 +3,7 @@ title: "Record.CopyFilters(var Record) Method"
 description: "Copies all the filters set by the SETFILTER method (Record) or the SETRANGE method (Record) from one record to another."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *FromRecord*  
 &emsp;Type: [Record](record-data-type.md)  
-The record from which you want to copy filters.
-          
+The record from which you want to copy filters.  
 
 
 

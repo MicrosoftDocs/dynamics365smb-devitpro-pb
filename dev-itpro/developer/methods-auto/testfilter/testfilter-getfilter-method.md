@@ -3,7 +3,7 @@ title: "TestFilter.GetFilter(TestFilterField) Method"
 description: "Gets the filter that is applied to the specified field in a data set that is displayed on a test page."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [TestFilter](testfilter-data-type.md) data type.
 
 *Field*  
 &emsp;Type: [TestFilterField](../testfilterfield/testfilterfield-data-type.md)  
-The field that you want to get the filter from.
-          
+The field that you want to get the filter from.  
 
 
 ## Return Value

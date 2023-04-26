@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 227a75d5-2eed-4a88-acea-1a280aaef027
 caps.latest.revision: 13
-manager: edupont
 ---
 # Creating Self-signed Security Certificate Using PowerShell Script
 With the `New-NavSelfSignedCertificate` PowerShell cmdlet, you can create a self-signed certificate to help secure the communication between the [!INCLUDE[nav_server](includes/nav_server_md.md)] and the [!INCLUDE[nav_web](includes/nav_web_md.md)].  

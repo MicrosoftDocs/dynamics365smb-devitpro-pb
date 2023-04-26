@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e5b86d34-289a-4301-8ede-4dd326071a83
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: Format Decimal Values
 When you create a client report definition \(RDLC\) layout for a report, a format variable is created for each decimal variable. The format information from the Column properties in Report Dataset Designer is stored in the format variable. Decimal values are formatted in the RDLC layout by using the format variable. If you create controls that use decimal values in an RDLC report layout, then you must manually specify in Visual Studio Report Designer to use the format variable for the formatting.  

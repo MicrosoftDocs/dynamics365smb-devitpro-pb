@@ -3,7 +3,7 @@ title: "Report.Language([Integer]) Method"
 description: "Gets or sets the current language setting for the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 04/17/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -45,15 +45,23 @@ The current language setting for the report.
 
 ## Example
 
-If you have documents that you want to print in the language of the recipient rather than in your own working language, you can add a single line of code in the document to handle this. This functionality is already enabled for most reports in the standard Business Central database. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
+If you have reports that you want to print in the language of the recipient rather than in your own working language, you can add a single line of code in the report to handle this. This functionality is already enabled for most reports in the standard Business Central[!INCLUDE [prod_short](../../includes/prod_short.md)] database. The document is printed in the language that is specified in the **Language Code** field on the **Customer Card** page.
 
-In reports that need the multiple document languages functionality, you must insert the following AL code as the first line in the `OnAfterGet Record()` trigger:
+For reports that need the multiple document languages functionality, you must insert the following AL code as the first line in the `OnAfterGetRecord()` trigger on the data item referencing the **Customer** table (notice that that feature isn't limited to the **Customer** table, other data sources provides similar functionality):
 
-`Report.LANGUAGE := Language.GetLanguageID("Language Code")`
+`CurrReport.Language := LanguageMgmt.GetLanguageIdOrDefault("Language Code");`
 
-For each of these reports, you must create a new variable, `Language`, with the data type `Record` pointing to the `Language` table. When you have compiled the object, it will no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
+For each of these reports, you must create a new variable, `LanguageMgmt`, with the data type `Codeunit` pointing to the `Language` codeunit. When you have compiled the object, it'll no longer print in the user's working application language if another language has been specified on the **Customer Card** page.
+
+```AL
+var
+    LanguageMgmt: Codeunit Language;
+```
 
 ## See Also
+
 [Report Data Type](report-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
-[Developing Extensions](../../devenv-dev-overview.md)
+[Developing Extensions](../../devenv-dev-overview.md)  
+[Report Localization](../../devenv-report-localization.md)  
+[Report.FormatRegion](./reportinstance-formatregion-method.md)

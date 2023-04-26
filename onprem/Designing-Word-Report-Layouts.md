@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 1609bd25-0f1d-445b-bdb0-8f59d11a1495
 caps.latest.revision: 8
-manager: edupont
 ---
 # Designing Word Report Layouts
 A Word report layout is a based on Word document \(.docx file type\) that acts as a template for viewing and printing reports from [!INCLUDE[navnow](includes/navnow_md.md)] clients. Word report layouts enable you to design report layouts by using Word 2013. Word report layouts are built on custom XML parts in Word. A custom XML part is structured XML that represents the dataset of a [!INCLUDE[navnow](includes/navnow_md.md)] report. The custom XML part is used to map the data into a report at run time.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: df552ac2-720c-4761-953e-b2fba95a82a4
 caps.latest.revision: 6
-manager: edupont
 ---
 # Using Generics
 In the .NET Framework, you can use generics to customize a method, class, structure, interface, field, or property according to the data type that it acts upon. Instead of writing a method, class, structure, interface, field, or property for a particular type, you can write it to use any type. When a generic is declared, the type is specified. For example, in C\#, if you use the generic type parameter `T`, then you can write a `List<T>` class that is declared as either `List<int>`, `List<string>`, or `List<MyClass>`.  

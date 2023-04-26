@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 93d2b178-6675-4a16-accf-eb00798ee818
 caps.latest.revision: 8
-manager: edupont
 ---
 # Drive Virtual Table
 The **Drive** virtual table gives you an overview of the logical drives on your computer. The **Drive** virtual table contains the following fields.  

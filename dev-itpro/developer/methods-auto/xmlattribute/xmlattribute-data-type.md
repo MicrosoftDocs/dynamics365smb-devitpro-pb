@@ -3,7 +3,7 @@ title: "XmlAttribute Data Type"
 description: "Represents an XML attribute."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -39,7 +39,7 @@ The following methods are available on instances of the XmlAttribute data type.
 |[GetParent(var XmlElement)](xmlattribute-getparent-method.md)|Gets the parent XmlElement of this node.|
 |[IsNamespaceDeclaration()](xmlattribute-isnamespacedeclaration-method.md)|Determines if this attribute is a namespace declaration.|
 |[LocalName()](xmlattribute-localname-method.md)|Gets the local name of the attribute.|
-|[Name()](xmlattribute-name-method.md)|The qualified name of the attribute. |
+|[Name()](xmlattribute-name-method.md)|The qualified name of the attribute.|
 |[NamespacePrefix()](xmlattribute-namespaceprefix-method.md)|Gets the prefix of the attribute (if any).|
 |[NamespaceUri()](xmlattribute-namespaceuri-method.md)|Gets the namespace URI of the attribute.|
 |[Remove()](xmlattribute-remove-method.md)|Removes this node from its parent element.|

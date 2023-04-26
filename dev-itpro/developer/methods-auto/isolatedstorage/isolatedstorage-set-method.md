@@ -3,7 +3,7 @@ title: "IsolatedStorage.Set(Text, Text [, DataScope]) Method"
 description: "Sets the value associated with the specified key."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -26,13 +26,11 @@ Sets the value associated with the specified key.
 ## Parameters
 *Key*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The key of the value to set.
-        
+The key of the value to set.  
 
 *Value*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-The value that will be associated with the specified key.
-        
+The value that will be associated with the specified key.  
 
 *[Optional] DataScope*  
 &emsp;Type: [DataScope](../datascope/datascope-option.md)  

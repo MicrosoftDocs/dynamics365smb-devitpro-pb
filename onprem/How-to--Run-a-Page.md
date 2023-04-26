@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 441db9f0-d70b-4ec7-bb8c-cddccf6cf032
 caps.latest.revision: 24
-manager: edupont
 ---
 # How to: Run a Page
 When you are developing pages, you may want to see how the pages look in the [!INCLUDE[rtc](includes/rtc_md.md)]. You can run and view a page from Object Designer, or you can use command-line arguments at the command prompt, in the **Run** window, or in a browser. For each method, the [!INCLUDE[rtc](includes/rtc_md.md)] starts and opens the selected page. For command-line arguments, you have various options for opening the [!INCLUDE[rtc](includes/rtc_md.md)] and its pages in different modes. For example, you can specify a specific server or specific language, or you can create hyperlinks to specific pages in [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)]. For more information, see [Starting the Windows Client at the Command Prompt](Starting-the-Windows-Client-at-the-Command-Prompt.md) and [Creating and Running Hyperlinks](Creating-and-Running-Hyperlinks.md).  

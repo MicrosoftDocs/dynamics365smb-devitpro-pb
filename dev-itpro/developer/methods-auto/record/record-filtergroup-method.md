@@ -3,7 +3,7 @@ title: "Record.FilterGroup([Integer]) Method"
 description: "Gets or sets the filter group that is applied to a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 12/29/2022
+ms.date: 04/20/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -94,7 +94,7 @@ Rec.SetFilter(<field>,'');
   
 ## Example 1
 
-The following example uses the [SetFilter Method (Record)](record-setfilter-method.md) to set a filter that selects records with No. field between 10000 and 20000. Then the **FilterGroup** method returns the number for the filter group. No filter group was selected explicitly so the filter is set in filter group 0. This value is stored in the `varOrigGroup` variable and displayed in a message box. Next, the **FilterGroup** method changes the filter group to 100. The new value is stored in the `varCurrGroup` variable and displayed in a message box.  
+The following example uses the [SetFilter Method (Record)](record-setfilter-method.md) to set a filter that selects records with No. field between 10000 and 20000. Then, the **FilterGroup** method returns the number for the filter group. No filter group was selected explicitly, so the filter is set in filter group 0. This value is stored in the `varOrigGroup` variable and displayed in a message box. Next, the **FilterGroup** method changes the filter group to 1. The new value is stored in the `varCurrGroup` variable and displayed in a message box.  
   
 ```al
 var

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: cadb24e9-13a6-440b-969f-8482f2e63b41
 caps.latest.revision: 16
-manager: edupont
 ---
 # Synchronizing Table Schemas
 When you design a table in [!INCLUDE[navnow](includes/navnow_md.md)], you define the metadata for the table, such as the name and object ID, and the fields and their data types. This table definition describes the table that must be created in the SQL Server database to store business data. You create and modify the table definition by using the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)]. When you make changes to the table definition in the [!INCLUDE[nav_dev_short](includes/nav_dev_short_md.md)], or when you upgrade a [!INCLUDE[navnow](includes/navnow_md.md)] database to a newer version, you must synchronize the business database table schema with the new or changed table definition so that the two are the same. Table schema synchronization is performed by the [!INCLUDE[nav_server](includes/nav_server_md.md)] instance that connects to the business database.  

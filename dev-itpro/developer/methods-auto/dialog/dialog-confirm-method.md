@@ -3,7 +3,7 @@ title: "Dialog.Confirm(Text [, Boolean] [, Any,...]) Method"
 description: "Creates a dialog box that prompts the user for a yes or no answer."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/24/2022
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -28,8 +28,7 @@ Ok :=   Dialog.Confirm(String: Text [, Default: Boolean] [, Value1: Any,...])
 ## Parameters
 *String*  
 &emsp;Type: [Text](../text/text-data-type.md)  
-Specifies the string that is displayed in the dialog box. Use a backslash (\\) to indicate a new line. The string can be a text constant that is enabled for multilanguage functionality.
-        
+Specifies the string that is displayed in the dialog box. Use a backslash (\\) to indicate a new line. The string can be a label that is enabled for multilanguage functionality.  
 
 *[Optional] Default*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  

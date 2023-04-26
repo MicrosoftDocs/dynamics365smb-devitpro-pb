@@ -5,7 +5,7 @@ author: sorenfriisalexandersen
 ms.custom: na
 ms.reviewer: edupont
 ms.topic: article
-ms.date: 03/22/2022
+ms.date: 03/28/2023
 ms.author: soalex
 ---
 
@@ -30,6 +30,9 @@ In the following sections you find descriptions of components you can use when a
 - Teaching tips and tours
 
   For information, see [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md).  
+- Signup context
+
+  For information, see [Create customer centric onboarding experiences](onboarding-signupcontext.md).
 
 ## See also
 
@@ -37,5 +40,5 @@ In the following sections you find descriptions of components you can use when a
 [Onboard New Users with the Welcome Banner](onboarding-welcome-banner.md)  
 [Teaching tips and in-app tours for onboarding users](onboarding-teaching-tips-tours.md)  
 [User Assistance Model](../user-assistance.md)  
-[Extend and Collaborate on the Help](../help/contributor-guide.md)  
+[Contribute to the Help](../help/contributor-guide.md)  
 [Migrate On-Premises Data to Business Central Online](migrate-data.md)  

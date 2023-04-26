@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8f4088b4-2834-45be-ad55-ce31d0e52db7
 caps.latest.revision: 10
-manager: edupont
 ---
 # Walkthrough: Exporting Data from Tables to CSV Files
 XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)] database to a file or import data from a file to a [!INCLUDE[navnow](includes/navnow_md.md)] database. The file format can be an XML file, text file, or a comma separated value \(CSV\) file. Exporting data from your [!INCLUDE[navnow](includes/navnow_md.md)] database into one of these file formats enables seamless exchange of information between different computer systems. In this walkthrough, you will export data from a [!INCLUDE[navnow](includes/navnow_md.md)] database to a CSV file. For information about how to export data to XML file format, see [Walkthrough: Exporting Data from Tables to XML Documents](Walkthrough--Exporting-Data-from-Tables-to-XML-Documents.md).  

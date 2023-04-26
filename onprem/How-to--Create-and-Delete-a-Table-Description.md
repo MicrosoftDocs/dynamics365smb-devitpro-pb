@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6658eace-4f06-4ddb-b21a-9e9ef97021e4
 caps.latest.revision: 10
-manager: edupont
 ---
 # How to: Create and Delete a Table Description
 You can create different kinds of [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] table descriptions, depending on the **LinkedObject** and **LinkedInTransaction** table property values. You must be a member of the db\_owner fixed database role to create a table description.  

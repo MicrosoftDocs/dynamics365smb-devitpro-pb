@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 83a42323-985c-4988-9229-1172dd043335
 caps.latest.revision: 7
-manager: edupont
 ---
 # Boolean (Logical) Operators
 Logical operators can only be used with arguments that can be evaluated to Boolean.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: b306d263-4c44-4d22-81b8-a3b15070f29a
 caps.latest.revision: 14
-manager: edupont
 ---
 # Troubleshooting: HTTP Error 500 (or 500.21) - Internal Server Error Handler
 When you try to access the [!INCLUDE[nav_web](includes/nav_web_md.md)], you get an error message that is similar to one of the following:  

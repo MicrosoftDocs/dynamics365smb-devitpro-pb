@@ -3,7 +3,7 @@ title: "Record.DeleteLink(Integer) Method"
 description: "Deletes a specified link from a record in a table."
 ms.author: solsen
 ms.custom: na
-ms.date: 07/07/2021
+ms.date: 03/02/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -30,8 +30,7 @@ An instance of the [Record](record-data-type.md) data type.
 
 *ID*  
 &emsp;Type: [Integer](../integer/integer-data-type.md)  
-The ID of the link to delete.
-          
+The ID of the link to delete.  
 
 
 

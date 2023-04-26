@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7e0817eb-59cd-411c-ab81-bf3d8e17844d
 caps.latest.revision: 4
-manager: edupont
 ---
 # Cryptography Overview
 The functions that support cryptography in [!INCLUDE[navnow](includes/navnow_md.md)] provide services that enable developers to add security for encrypting and decrypting data and key management. Each [!INCLUDE[navnow](includes/navnow_md.md)] tenant supports a single encryption key which is used for encrypting and decrypting data stored in the database. Additional functions are provided to assist building robust solutions when working with encryption and for managing the encryption keys.  

@@ -452,7 +452,7 @@ The Microsoft_Application extension was introduced in 15.3. In short, it's used 
 2. Synchronize the tenant database with the schema changes of the Microsoft_Application extension.
 
     ```powershell
-    Sync-NavApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name Application -Tenant $TenantId
+    Sync-NavApp -ServerInstance $BcServerInstance -Tenant $TenantId -Name Application -Version $NewBcVersion
     ```
 
 3. Upgrade the Microsoft_Application extension on your tenants.

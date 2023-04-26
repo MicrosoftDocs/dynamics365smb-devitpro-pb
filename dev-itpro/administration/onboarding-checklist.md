@@ -31,6 +31,9 @@ Based on the configuration choices made by the customer in Assisted Setups, you 
 > [!NOTE]
 > The checklist has different purposes in evaluation and non-evaluation companies. Consider this when you add content to the checklist. For more information, see [Onboard New Users with the Welcome Banner](../administration/onboarding-welcome-banner.md)].
 
+> [!IMPORTANT]
+> If you use the signup context to create customer centric onboarding experiences, you have decided to control the entire onboarding experience, and the standard checklist items will not be added. This is because you control the context, so you must add all relevant checklist items for both evaluation and non-evaluation companies. For more information about the signup context and creating customer centric onboarding experiences, see [Create customer centric onboarding experiences](../administration/onboarding-signupcontext.md).
+
 ## Technical background of the checklist
 
 The data model of the checklist consists of the following tables. There are more in the data model but these are the ones you need to know about to provide onboarding experiences to customers.
@@ -146,6 +149,9 @@ Don't:
 - Add support for auto-completion when possible, such as for wizards, as this automatically makes the checklist move to the next task and provides the user with a good sense of progress.
 
 - Provide a realistic time stamp of the estimated completion time and strive for tasks that take less than 5 minutes to complete.
+
+> [!IMPORTANT]
+> The expected duration of a checklist task is always minutes, keep this in mind when creating your Guided Experience Items.
 
 ## See also
 

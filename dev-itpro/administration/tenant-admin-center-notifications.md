@@ -8,16 +8,15 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, notifications
-ms.date: 09/16/2022
-ms.author: edupont
-
+ms.date: 04/12/2023
+ms.author: solsen
 ---
 
 # Manage Tenant-Specific Notifications
 
 You can get notified of administrative events that occur on environments in a [!INCLUDE [prod_short](../includes/prod_short.md)] online tenant. For example, we send notifications when a major update is available for environments, when an environment update has succeeded or failed, or when extensions require changes to be compatible with an upcoming update. When these and other similar events occur on the tenant, an email is sent to the notification recipients for the tenant.  
 
-> [!NOTE]
+> [!NOTE]  
 > If a prospect has signed up for a trial of [!INCLUDE [prod_short](../includes/prod_short.md)], make sure that they understand that they must sign up for notifications. This is especially important if the prospect moves to My Company so that the tenant will expire after 30 days. For more information, see [Dynamics 365 Business Central Trials and Subscriptions](/dynamics365/business-central/across-preview) in the business functionality content for Business Central.
 
 ## Communication channels
@@ -87,6 +86,10 @@ This Logic App queries Application Insights every number of minutes (specified i
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FAlertingLogicAppTemplates%2FS2SAppsEnvironmentUpdateAdaptiveCard.json)
 
+##### Example: Post adaptive cards in Teams for user permission errors
+This Logic App queries Application Insights every number of minutes (specified in the deployment) and posts adaptive cards to a specified Microsoft Teams channel for each permission error users in environments emitting telemetry to the specified Application Insights resource have encountered. Using the adaptive card, administrators can open Business Central to assign the needed permissions to the user.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FBCTech%2Fmaster%2Fsamples%2FAppInsights%2FAlerts%2FPermissionError.json)
 
 #### Reporting
 

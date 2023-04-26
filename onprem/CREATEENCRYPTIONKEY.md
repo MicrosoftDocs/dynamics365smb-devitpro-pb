@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 27269343-8b5a-47b8-aa55-bbf2beb1c355
 caps.latest.revision: 7
-manager: edupont
 ---
 # CREATEENCRYPTIONKEY
 Creates an encryption key for the current [!INCLUDE[navnow](includes/navnow_md.md)] tenant.  

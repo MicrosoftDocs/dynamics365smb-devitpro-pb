@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 171287a7-a5e4-46f1-93a6-e0383fbc770e
 caps.latest.revision: 3
-manager: edupont
 ---
 # Test Pages
 You can use test pages to mimic actual pages so that you can test the code the page. There are two types of test pages:  

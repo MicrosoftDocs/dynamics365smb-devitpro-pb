@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 8113aa5f-6d1c-4a14-a486-f6691c6f6c36
 caps.latest.revision: 21
-manager: edupont
 ---
 # How to: Set Up a Windows Client Control Add-in on a Page
 After you have registered a [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-in, you can use it on [!INCLUDE[nav_windows](includes/nav_windows_md.md)] pages. To use a control add-in on a page, you add it to a field control. Depending on the design of the control add-in, you may also need to follow these steps:  

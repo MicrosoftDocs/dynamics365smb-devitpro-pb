@@ -61,6 +61,7 @@ Feature names should be short and easy to identify. For example, Retention polic
 |---------|---------|
 |message     | Depends on the event.        |
 |severityLevel     |**1**         |
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ## Custom dimensions
 
@@ -102,6 +103,7 @@ This event is logged if more than one telemetry logger has been registered for p
 |Dimension  | Description or value  |
 |---------|---------|
 |message     | More than one telemetry logger has been registered for publisher {publisher} |
+
 
 ### Custom dimensions
 

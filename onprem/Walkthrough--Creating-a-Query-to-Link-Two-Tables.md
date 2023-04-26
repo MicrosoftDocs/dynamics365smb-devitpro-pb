@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: f09cae5c-e977-4c9b-9780-440b958522d1
 caps.latest.revision: 30
-manager: edupont
 ---
 # Walkthrough: Creating a Query to Link Two Tables
 This walkthrough demonstrates how to create a query that links two tables.  

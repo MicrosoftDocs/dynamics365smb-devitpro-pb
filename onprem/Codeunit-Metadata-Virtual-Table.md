@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 6474c6f9-115a-42e3-944c-153b14d32e67
 caps.latest.revision: 4
-manager: edupont
 ---
 # Codeunit Metadata Virtual Table
 The **Codeunit Metadata** virtual table \(ID 2000000137\) contains information about codeunits in the database. The following table describes the fields in the **Codeunit Metadata** virtual table.  

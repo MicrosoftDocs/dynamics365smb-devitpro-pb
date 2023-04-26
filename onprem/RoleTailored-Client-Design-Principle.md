@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 4c5ba2f3-94fe-4635-801f-7d01b487f969
 caps.latest.revision: 10
-manager: edupont
 ---
 # RoleTailored Client Design in Dynamics NAV
 ## Design Principle  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 7a193bac-4c45-4f04-bf68-e3f299beeba2
 caps.latest.revision: 6
-manager: edupont
 ---
 # How to: Modify a Word Report Layout
 This procedure describes how to modify a Word report layout on report from the [!INCLUDE[nav_dev_long](includes/nav_dev_long_md.md)]. A Word report layout determines the content and format of a report when it is viewed and printed from the [!INCLUDE[navnow](includes/navnow_md.md)] client. When you modify a Word report layout, you specify the fields of the report dataset to include on report and how the fields are arranged. You also define the general format of the report, such as text font and size, margins, and background images. You will typically arrange the content of the report by adding tables to the layout.  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 77fb4f20-8b5a-43dd-aae5-948f3deb67d3
 caps.latest.revision: 8
-manager: edupont
 ---
 # How to: Set Up an Image on a Cue
 When a field that defines the data in a cue has an integer data type, you can set up the cue to include an image. There are several images from which to choose. For example, if the cue shows the total count of an item such as open sales orders, then you can set the cue to include the stack image, which depicts that total count as a stack of paper. This is the default image. You can also set up the cue so that it does not to include an image.  

@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/08/2022
+ms.date: 03/28/2023
 ms.author: jswymer
 ---
 # Analyzing Error Method Telemetry
@@ -29,19 +29,20 @@ Occurs when the Error method is called and displays a dialog to the user.
 |---------|-----|
 |message|**Error dialog displayed: {failureReason}**|
 |severityLevel|**3**|
+|user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
 
 ### Custom dimensions
 
 |Dimension|Description or value|
 |---------|-----|
 |eventId|**RT0030**|
-|alErrorMessage|The error string defined in error method and displayed in the client in the users language.<br><br> If the error message wasn't a text constant, you get the message `Use ERROR with a text constant to improve telemetry details` instead of the actual message.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
-|alEnglishLanguageDiagnosticsMessage|The error string defined in error method. This dimension always shows the error message in English. This dimension was added in version 21.4.  | 
+|alErrorMessage|The error string defined in error method and displayed in the client.<br><br> If the error message wasn't a text constant, you get the message `Use ERROR with a text constant to improve telemetry details` instead of the actual message.<br><br> Some messages can contain customer data. As a precaution, Business Central only emits information that's classified as [SystemMetadata](../developer/devenv-classifying-data.md). Information that belongs to other data classifications, like customer data, isn't shown. Instead, the following message is shown: "Message not shown because the NavBaseException(string, Exception, bool) constructor was used."| 
+|alEnglishLanguageDiagnosticsMessage|The error message in English (no matter which language the user had specified in the client).<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0.  |
 |alObjectId|Specifies the ID of the AL object.|
 |alObjectType|Specifies the type of the AL object. |
-|alStackTrace|Specifies the stack trace in AL.|
-|clientType|Specifies the type of client that executed the SQL Statement, such as **Background** or **Web**. For a list of the client types, see [ClientType Option Type](../developer/methods-auto/clienttype/clienttype-option.md).|
-|companyName|The display name of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] company that was used at time of execution |
+|alStackTrace| [!INCLUDE[alStackTrace](../includes/include-telemetry-dimension-al-stacktrace.md)] |
+|clientType| [!INCLUDE[clientType](../includes/include-telemetry-dimension-client-type.md)] |
+|companyName| [!INCLUDE[companyName](../includes/include-telemetry-dimension-company-name.md)] |
 |failureReason|**Dialog** means the error was the result of an error method call in AL. Errors thrown by the platform have other reasons, like MetadataNotFound.|
 
 <a name="other"></a>**Common custom dimensions**

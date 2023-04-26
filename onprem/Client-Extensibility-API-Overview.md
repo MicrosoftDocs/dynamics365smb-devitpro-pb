@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: e97cfff9-5e00-40e2-a864-63eca4830642
 caps.latest.revision: 43
-manager: edupont
 ---
 # Client Extensibility API Overview
 [!INCLUDE[navnowlong](includes/navnowlong_md.md)] includes the client extensibility API, which defines the model for creating [!INCLUDE[nav_windows](includes/nav_windows_md.md)] control add-ins. The client extensibility API uses .NET interfaces as the binding mechanism between the control add-ins on a page and the [!INCLUDE[nav_current_short](includes/nav_current_short_md.md)] framework. When you develop a control add-in, you can choose among various definition interfaces and base classes to implement based on the control add-in requirements. Additionally, you can create custom interfaces to add user interface controls to a page. This topic provides an overview of the available definition interfaces and base classes. For information about how to create custom interfaces, see [Exposing Methods and Properties in a Windows Client Control Add-in](Exposing-Methods-and-Properties-in-a-Windows-Client-Control-Add-in.md).  

@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: c5f399ab-ddcc-4f88-9f77-c7cc898e8ffb
 caps.latest.revision: 19
-manager: edupont
 ---
 # How to Activate the Debugger at the Command Prompt in Dynamics NAV
 You can activate the debugger at the command prompt. After you activate the debugger and attach it to a session, program flow in that session continues normally until a breakpoint is hit. For more information, see [Breakpoints](Breakpoints.md).  

@@ -9,7 +9,6 @@ ms.topic: article
 ms.prod: "dynamics-nav-2018"
 ms.assetid: 900fad3c-1d2c-4e9b-8bdf-422c07a00657
 caps.latest.revision: 3
-manager: edupont
 ---
 # Dates and Times
 This section contains the following topics:  
