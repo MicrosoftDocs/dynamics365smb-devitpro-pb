@@ -34,6 +34,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Social and blogs
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
+- Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
@@ -122,7 +123,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Licensing and Pricing  
 - [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
 - [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
-- [Business Central team members license documentation]()
+
 
 ## Shopify and Dataverse
 Shopify start: [aka.ms/BCShopifyStart](aka.ms/BCShopifyStart)
