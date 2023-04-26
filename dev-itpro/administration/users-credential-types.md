@@ -1,28 +1,26 @@
 ---
-title: Users and Credential Authorization
+title:  Authentication and credential types
 description: This article explains how the credential authorization mechanism works for users of Business Central and how to configure credential types for on-premises.
-author: edupont04
-
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+author: jswymer
+ms.custom: bap-template
+ms.reviewer: jswymer
+ms.service: d365-business-central
 ms.topic: conceptual
-ms.author: edupont
-ms.date: 11/19/2021
-
+ms.author: jswymer
+ms.date: 04/26/2023
 ---
-# Authentication and Credential Types for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
+# Authentication and credential types for [!INCLUDE[prod_long](../developer/includes/prod_long.md)]  
 
 In [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, users are added through the Microsoft 365 admin center. Once users are created in Microsoft 365, they can be imported into the **Users** window in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]. For more information, see [Managing Users and Permissions](/dynamics365/business-central/ui-how-users-permissions) in the business functionality content.  
 
-## Configuring Authentication for On-Premises Deployments
+## Configuring authentication for on-premises deployments
 An on-premises deployment of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] supports several credential authorization mechanisms for users. When you create a user, you provide different information depending on the credential type that you're using in the current [!INCLUDE[server](../developer/includes/server.md)] instance.
 
 > [!IMPORTANT]  
 > All users of a [!INCLUDE[server](../developer/includes/server.md)] instance must be using the same credential type. In on-premises deployments, you can specify which credential type is used for a particular [!INCLUDE[server](../developer/includes/server.md)] instance in the [!INCLUDE[admintool](../developer/includes/admintool.md)].  
 
-### Credential Types  
+### Credential Types
+
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises supports the following credential types.  
 
 |Credential types|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]|  
@@ -37,12 +35,13 @@ An on-premises deployment of [!INCLUDE[prod_short](../developer/includes/prod_sh
 > [!IMPORTANT]  
 >  If [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). For more information, see [How to: Implement Security Certificates in a Production Environment](/dynamics-nav/How-to--Implement-Security-Certificates-in-a-Production-Environment) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 
-### Configuring the Credential Type for Client and Server  
+### Configuring the credential type for client and server
+
 For on-premises deployment, you must make sure that clients and [!INCLUDE[server](../developer/includes/server.md)] are configured to use the same credential type.  
 
 When you change the credential type for a [!INCLUDE[server](../developer/includes/server.md)] instance and the relevant client configurations, the changes take effect when you restart the [!INCLUDE[server](../developer/includes/server.md)] instance and users connect to the instance again.  
 
-#### Server Configuration
+#### Server configuration
 
 To edit the configuration for the [!INCLUDE[server](../developer/includes/server.md)] instance, you can use either the [!INCLUDE[admintool](../developer/includes/admintool.md)] or the [!INCLUDE[adminshell](../developer/includes/adminshell.md)]. In the [!INCLUDE[admintool](../developer/includes/admintool.md)], you configure the credential type in the **Credential Type** field on the **General** tab. Also, you can edit the CustomSettings.config file. For more information, see [Configuring Business Central Server](configure-server-instance.md).  
 
@@ -50,7 +49,7 @@ To edit the configuration for the [!INCLUDE[server](../developer/includes/server
 > [!IMPORTANT]  
 >  When [!INCLUDE[server](../developer/includes/server.md)] services are deployed on Azure but not as part of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you must configure them on Azure. For more information, see [How to: Open Microsoft Dynamics NAV Clients that Connect to Microsoft Dynamics NAV on Microsoft Azure](/dynamics-nav/How-to--Open-Microsoft-Dynamics-NAV-Clients-that-Connect-to-Microsoft-Dynamics-NAV-on-Microsoft-Azure) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)].  
 -->
-#### Client Configuration
+#### Client configuration
 
 In the relevant configuration file, find the **ClientServicesCredentialType** parameter and change the value to one of the options listed earlier.  
 
@@ -58,10 +57,11 @@ For the [!INCLUDE[nav_web](../developer/includes/nav_web_md.md)] users, you must
 
 For each [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] user, you must modify the ClientUserSettings.config file. The default location for this file is **C:\\Users\\\<username>\\AppData\\Roaming\\Microsoft\\Microsoft Dynamics NAV\\130**, where *\<username>* is the name of the user. For more information, see [Configuring the Microsoft Dynamics NAV Windows Client](/dynamics-nav/configuring-the-windows-client) in the ITPro content for [!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]. 
 
-### Security Certificates 
+### Security certificates
+
 UserName, NavUserPassword, and AccessControlService credential types require that you install and configure security certificates on components. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
-## See Also  
+## See also  
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  

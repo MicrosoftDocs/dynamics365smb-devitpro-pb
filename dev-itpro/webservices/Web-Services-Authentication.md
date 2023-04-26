@@ -43,9 +43,9 @@ If your solution uses NavUserPassword or AccessControlService as the credential 
 > [!IMPORTANT] 
 > If the [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). 
 
-## About UserName credential types
+## About UserName credential type
 
-[!INCLUDE[include-odata-username-auth](../developer/includes/include-odata-username-auth.md)
+[!INCLUDE[include-odata-username-auth](../developer/includes/include-odata-username-auth.md)]
 
 ## Unicode characters in user name or password
  
