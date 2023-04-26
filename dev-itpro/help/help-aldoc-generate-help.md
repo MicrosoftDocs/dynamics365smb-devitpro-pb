@@ -17,8 +17,8 @@ This article describes the steps to use the tool to generate the documents for a
 
 * Clone the repo <!-- internal steps, will be installed from product folder -->
 * Install .NET and DocFx v2 prerequisites
-* Generate the internal file
-* Build and host the project with DocFx v2
+* Generate the reference documentation files
+* Build a static web site for the generated documentation
 
 ## Install prerequisites
 
