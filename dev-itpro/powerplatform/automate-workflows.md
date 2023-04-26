@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 10/14/2022
 ms.custom: bap-template 
 ---
-# Set Up Automated Flows
+# Create automated flows
 
 [!INCLUDE [online_only](../developer/includes/online_only.md)]
 
@@ -28,6 +28,10 @@ The connector​ seamlessly connects data and gives you the option to include **
 
 > [!NOTE]
 > The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option you can choose.  
+
+## Prerequisites
+
+- Power Automate premium license or a license that includes premium connectors. For more information, see [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
 
 ## Create an automated flow from scratch
 

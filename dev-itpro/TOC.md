@@ -210,6 +210,7 @@
 ### [Analyze telemetry with Power BI](administration/telemetry-power-bi-app.md)
 ### [Analyze telemetry with KQL](administration/telemetry-analyze-with-kql.md)
 ### [Alert on telemetry](administration/telemetry-alert.md)
+### [Telemetry FAQ](administration/telemetry-faq.md)
 ### Telemetry by area
 #### [Overview](administration/telemetry-area-overview.md)
 #### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
@@ -1078,7 +1079,7 @@
 #### [Using the AL Profiler](developer/devenv-al-profiler-overview.md)
 #### [Investigating printer and report payloads](developer/devenv-reports-troubleshoot-printing.md)
 #### [Inspecting and troubleshooting pages](developer/devenv-inspecting-pages.md)
-#### [Troubleshooting performance issues](performance/performance-overview.md)
+#### [Troubleshooting performance issues](performance/performance-developer.md)
 ### Troubleshooting with telemetry
 #### [Overview](administration/telemetry-overview.md)
 #### [Available telemetry](administration/telemetry-available-telemetry.md) 
@@ -1221,9 +1222,9 @@
 ## Integrating with Microsoft Power Automate
 ### [Power Automate integration overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Set up Automated Flows](powerplatform/automate-workflows.md)
-### [Set up Instant Flows](powerplatform/instant-flows.md)
-### [Manage Power Automate Flows](powerplatform/manage-power-automate-flows.md)
+### [Create automated flows](powerplatform/automate-workflows.md)
+### [Create instant flows](powerplatform/instant-flows.md)
+### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)

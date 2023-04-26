@@ -88,7 +88,7 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales credit memo.|
 |creditMemoDate|date|The credit memo date.|
 |postingDate|date|The date that the sales credit memo   is posted.|
-|dueDate|date|T he date the sales credit memo is due.|
+|dueDate|date|The date the sales credit memo is due.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
 |customerName|string|The customer's name.|
@@ -120,7 +120,7 @@ The response has no content; the response code is 204.
 |totalAmountExcludingTax|decimal|The total amount excluding tax. Read-Only.  |
 |totalTaxAmount|decimal|The total tax amount for the sales credit memo. Read-Only.|
 |totalAmountIncludingTax|decimal|The total amount including tax. Read-Only.  |
-|status|NAV.salesCrMemoEntityBufferStatus|Specifies the status of the sales credit memo. It can be "Draft" , "In Review", "Open", "Canceled", "Corrective", or "Paid".|
+|status|NAV.salesCrMemoEntityBufferStatus|Specifies the status of the sales credit memo. It can be "Draft" , "In Review", "Open", "Canceled", "Corrective", or "Paid". Read-Only.|
 |lastModifiedDateTime|datetime|The last datetime the sales credit memo was modified. Read-Only.|
 |invoiceId|GUID|The unique ID of invoice.|
 |invoiceNumber|string|The sales invoice number that the sales credit memo  is linked to.|
