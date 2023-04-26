@@ -216,7 +216,7 @@ Creating an instant flow for general use is similar to how you create a flow for
 
 ## Troubleshoot instant flows
 
-The following table includes the most common problems with instant flows, like why an instant flow doesn't appear in the **Automation** group for you or another user.
+The following table includes the most common problems that prevent instant flows from running or appearing in the **Automation** group for you or another user.
 
 |Cause|Fix|Reason|
 |-|-|-|
