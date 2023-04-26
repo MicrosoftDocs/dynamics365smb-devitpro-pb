@@ -1,9 +1,9 @@
 ---
-title: "Creating and Interacting with an OData V4 Unbound Action"
+title: "Creating and interacting with an OData V4 unbound action"
 description: "Describing how to create and interact with an OData V4 Unbound Action in AL."
 author: ap3rus
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 04/19/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -11,10 +11,12 @@ ms.topic: conceptual
 ms.author: vlnagorn
 ---
 
-# Creating and Interacting with an OData V4 Unbound Action
+# Creating and interacting with an OData V4 unbound action
+
 Unbound actions represent reusable operations that you can perform using an OData request. Use unbound actions when there is no particular entity that the action needs to be bound to.
 
 ## Using OData V4 unbound actions to migrate from SOAP to OData
+
 One common use case for using SOAP endpoints with Business Central is to expose an AL method to be callable as a web service. The same thing can be achieved by using OData V4 unbound actions as described in this article.
 
 ## Declaring, registering, and publishing the OData unbound action
@@ -56,7 +58,7 @@ Registering and publishing the codeunit is identical to how you work with other 
 
 ## Verifying web service availability
 
-### HTTP Request
+### HTTP request
 
 To call specific procedure on a codeunit use the base OData URL for the codeunit and procedure name separated by an underscore.
 
@@ -65,22 +67,22 @@ POST /ODataV4/{serviceName}_{procedureName}?company={companyName|companyId} HTTP
 {requestBody}
 ```
 
-### Request Headers
+### Request headers
 
 |Header|Value|
 |---|---|
 |Authorization|Bearer {token}. Required.|
 
-### Example Request
+### Example request
 
 ```
-POST {baseUrl}/ODataV4/MiscOperations_GetLengthOfStringWithConfirmation?company=CRONUS%20USA%20Inc. HTTP/1.1
+POST {baseUrl}/ODataV4/MyOperations_GetLengthOfStringWithConfirmation?company=CRONUS%20USA%20Inc. HTTP/1.1
 {
     "inputJson": "{\"str\":\"Hello world!\",\"confirm\":true}"
 }
 ```
 
-### Example Response
+### Example response
 
 ```
 HTTP/1.1 200 OK
@@ -91,6 +93,7 @@ HTTP/1.1 200 OK
 ```
 
 ## See Also
+
 [AL Development Environment](devenv-reference-overview.md)  
 [Creating and Interacting with an OData V4 Bound Action](devenv-creating-and-interacting-with-odatav4-bound-action.md)  
 [Getting started with Microsoft .NET Interoperability from AL](devenv-get-started-call-dotnet-from-al.md)  
