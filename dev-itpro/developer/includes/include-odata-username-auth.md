@@ -1,1 +1,1 @@
-For OData, **UserName** credential type is only supported in Business Central version 20 and earlier. In later versions, change to [NavUserPassword](../../administration/authenticating-users-with-navuserpassword) instead. 
+For OData, **UserName** credential type is only supported in Business Central version 20 and earlier. In later versions, change to [NavUserPassword](../../administration/authenticating-users-with-navuserpassword.md) instead. 

@@ -61,6 +61,11 @@ For each [!INCLUDE[nav_windows](../developer/includes/nav_windows_md.md)] user, 
 
 UserName, NavUserPassword, and AccessControlService credential types require that you install and configure security certificates on components. For more information, see [Using Security Certificates with Business Central On-Premises](../deployment/implement-security-certificates-production-environment.md)
 
+## Next steps
+
+- If you want to set up Azure AD authentication, go to [Authenticating Users with Azure Active Directory](authenticating-users-with-azure-ad-overview.md).
+- If you want to set up NavUserPassword authentication, go to [Authenticating Users with NavUserPassword](authenticating-users-with-navuserpassword.md).
+
 ## See also  
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
