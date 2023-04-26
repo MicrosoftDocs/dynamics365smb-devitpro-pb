@@ -113,16 +113,21 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Security, Privacy, and Compliance
 - Security and Privacy documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
+- Security in Business Central: [aka.ms/BCSecurity](https://aka.ms/BCSecurity)
+- Databases and backups: [aka.ms/bcbackups](https://aka.ms/BCBackups)
+- Compliance overview: [aka.ms/BCCompliance](https://aka.ms/BCCompliance)
 - Application compliance: [aka.ms/BCAppCompliance](https://aka.ms/BCAppCompliance)
+
 
 ## Licensing and Pricing  
 - [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
 - [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
 - [Business Central team members license documentation]()
 
-## Licensing and Pricing on-premises only  
-- [Business Central on-premises licensing guide]()
-- [Business Central on-premises licensing FAQ]()
+## Shopify and Dataverse
+Shopify start: [aka.ms/BCShopifyStart](aka.ms/BCShopifyStart)
+Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
+Shopify consultant:[aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
 
 ## Events for partners
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
