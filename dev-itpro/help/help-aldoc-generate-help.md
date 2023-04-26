@@ -22,6 +22,8 @@ This article describes the steps to use the tool to generate the documents for a
 
 ## Install prerequisites
 
+A .NET version and DocFx v2 are the tools required to generate the reference documentation. The following sections describe how to install these prerequisites.
+
 ### .NET 6.0
 
 The ALDoc tool is based on `dotnet 4.8` or later. It's recommended to use .NET 6.0 or .NET 7.0. Use the following command to check your local dotnet version:
