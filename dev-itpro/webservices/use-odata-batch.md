@@ -14,7 +14,7 @@ author: jswymer
 
 > **APPLIES TO:** Business Central 2020 release wave 2 (version 17.1) and later
 
-It's possible to specify that all inner requests in a certain OData $batch request are processed in a transactional way. If an inner request that hasn't invoked COMMIT fails after another request(s) has committed changes, all changes within a batch will be reverted as if the batch request never happened. Transactional $batch requests are useful in scenarios where a single business operation spans multiple requests, because they prevent adverse effects if parts of the operation fail. Also, they can improve performance by reducing the number of requests the client needs to do when errors occur.
+It's possible to specify that all inner requests in a certain OData $batch request are processed in a transactional way. Unless it's invoked commit, if an inner request fails after another request(s) has committed changes, all changes within a batch will be reverted as if the batch request never happened. Transactional $batch requests are useful in scenarios where a single business operation spans multiple requests, because they prevent adverse effects if parts of the operation fail. Also, they can improve performance by reducing the number of requests the client needs to do when errors occur.
 
 ## Enable OData transactional batch behavior
 
