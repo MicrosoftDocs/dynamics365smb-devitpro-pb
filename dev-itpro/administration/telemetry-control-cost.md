@@ -58,3 +58,4 @@ To reduce data retention cost, you can
 [Telemetry overview](telemetry-overview.md)  
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
+[Telemetry FAQ](telemetry-faq.md)
