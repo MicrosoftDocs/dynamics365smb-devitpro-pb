@@ -70,4 +70,3 @@ UserName, NavUserPassword, and AccessControlService credential types require tha
 
 [Understanding Users, Profiles, and Role Centers](/dynamics365/business-central/admin-users-profiles-roles)  
 [Configuring Business Central Server](configure-server-instance.md)  
-<!--[Business Central Windows PowerShell Cmdlets](/powershell/business-central/overview.md)-->  
