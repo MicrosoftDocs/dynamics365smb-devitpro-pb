@@ -22,7 +22,7 @@ This article describes the steps to use the tool to generate the documents for a
 
 ## Install prerequisites
 
-A .NET version and DocFx v2 are the tools required to generate the reference documentation. The following sections describe how to install these prerequisites.
+A .NET 4.8 version or later and DocFx v2 are the tools required to generate the reference documentation. The following sections describe how to install these prerequisites.
 
 ### .NET 6.0
 
@@ -49,7 +49,7 @@ There are different ways to install DocFx v2. The following steps describe a sug
 
 1. Go to [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual)
 2. Run the terminal as `admin` and follow the steps of this page [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual) to install chocolate.
-3. Then, install the DocFx v2 by running the following in the commandline:  
+3. Then, install the DocFx v2 by running the following in the command line tool:  
     ```bash
     choco install docfx -y    
     ```
@@ -78,7 +78,7 @@ When DocFx and ALDoc have been successfully installed, the next step is to use t
 
 ## Build and host the static website
 
-In the previous steps, the reference files were generated. You'll now use DocFx v2 to build and host a website. 
+In the previous steps, the reference files were generated. You'll now use DocFx v2 to build a website to host the generated files. 
 
 1. In the command line, enter a command equivalent to the following:  
     ```bash
@@ -104,4 +104,6 @@ The structure of the files that are generated is as follows:
 
 ## See also
 
-[Overwriting help with the ALDoc tool](help-aldoc-overwrites.md)
+[Overwriting help with the ALDoc tool](help-aldoc-overwrites.md)  
+[Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download)  
+[Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html)  
