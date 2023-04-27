@@ -20,7 +20,7 @@ The `launch.json` file contains information about the server that the extension 
 - [Attach to the client on the cloud sandbox or on your own server](devenv-json-launch-file.md#attach-configuration-settings)
 - [Initialize a snapshot debugging session on cloud or on your own server](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
 
-In the following sections, you can find a description of the parameters that are available for each of the configurations. 
+In the following sections, you can find a description of the parameters that are available for each of the configurations. You'll also find a description of how to create a [global or workspace launch configuration file](devenv-json-launch-file.md#global-and-workspace-launch-configuration).
 
 ## Publishing settings for cloud and local server
 
