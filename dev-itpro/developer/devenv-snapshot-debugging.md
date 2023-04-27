@@ -44,11 +44,11 @@ You can start a snapshot by creating a snapshot configuration file in Visual Stu
 - AL: Initialize a snapshot debugging session locally
 - AL: Initialize a snapshot debugging session on cloud
 
-Choose whether to run the session on a cloud service or locally. The configuration file contains the following information: 
+Choose whether to run the session on a cloud service or locally. The configuration file contains the following information. For a full overview of configuration settings, see [Launch JSON file](devenv-json-launch-file.md#initialize-snapshot-debugging-settings).
 
 |Setting | Description |
 |--------|-------------|
-|`userId`| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [JSON Files](devenv-json-files.md).|
+|`userId`| The GUID of the user who initiated the process to start snapshot debugging. For on-premises, this can also be the user name in user password authentication scenarios. The user must be able to start, or have a session type opened that is specified in the `breakOnNext` parameter. <br>**Note:** Specifying `userId` doesn't work with Windows authentication: `"authentication" : "Windows"`, in which case you can only choose `sessionId` or attach to the next session. For more information, see [Launch JSON file](devenv-json-launch-file.md).|
 |`sessionId`| A session ID for the user specified in `userId`.|
 |`snapshotVerbosity`| Determines how much execution context to be recorded. If **SnapPoint** is specified, then only methods that hit a snappoint will be recorded.|
 |`tenant`| The AAD tenant ID for the tenant to connect to. Specify this if your target is a different tenant from the user's own AAD tenant, for example when running as a delegated admin.|
@@ -64,7 +64,6 @@ To record the AL execution, the server will now wait for a connection to happen 
 - If only a `userId` is specified for a given tenant then the next session, which is specified in the `breakOnNext` configuration parameter is snapshot debugged. 
 - If no `userId` is specified then the next session on a given tenant that validates the `breakOnNext` parameter will be snapshot debugged. 
 
-
 > [!TIP]  
 > If you're having difficulty getting the snapshot debugger to attach to a new session using `WebClient` for the `breakOnNext` configuration parameter, then close the browser window and try again.
 
@@ -73,7 +72,7 @@ To record the AL execution, the server will now wait for a connection to happen 
 
 Once a snapshot debugging session is initialized, the snapshot debugging session counter on the status bar will be updated and look like this:
 
-![Snapshot Debugger Counter.](media/snapshotdebugger.png)
+:::image type="content" source="media/SnapshotDebugger.png" alt-text="Snapshot debugger counter":::
 
 ## Status of a snapshot debugging session
 
