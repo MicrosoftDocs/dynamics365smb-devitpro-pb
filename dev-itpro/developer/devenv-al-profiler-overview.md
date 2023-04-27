@@ -3,7 +3,7 @@ title: "AL Profiler overview"
 description: "Description of how to use the AL profiler and the Performance Profiler to analyze performance in code written for Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 04/13/2023
+ms.date: 04/27/2023
 ms.topic: overview
 ms.author: solsen
 ---
@@ -194,8 +194,8 @@ Sampling isn't as accurate as instrumentation profiling is. But it can give an i
 
 There are a few server restrictions for sampling profiling to be aware of:
 
-- The maximum duration of a sampling session is 10 minutes. This is a configurable server setting. 
-- The number of stack frame entries is limited to 2000. This is a configurable server setting.
+- The maximum duration of a sampling session is 10 minutes. 
+- The number of stack frame entries is limited to 2000.
 
 ### Performance profiling in Business Central
 
