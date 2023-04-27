@@ -128,7 +128,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 ## Shopify and Dataverse
 - Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
 - Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
-- Shopify consultant:[aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
+- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
 
 ## Events for partners
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)
