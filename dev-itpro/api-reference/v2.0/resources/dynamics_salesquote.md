@@ -74,7 +74,7 @@ The response has no content; the response code is 204.
 |externalDocumentNumber|string|Specifies an external document number for the sales quote.|
 |documentDate|date|The quote date.|
 |postingDate|date|The date that the sales quote   is posted.|
-|dueDate|date|T he date the sales quote is due.|
+|dueDate|date|The date the sales quote is due.|
 |customerId|GUID|The unique ID of customer.  |
 |customerNumber|string|The customer's number.|
 |customerName|string|The customer's name.|

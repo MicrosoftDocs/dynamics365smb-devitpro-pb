@@ -26,10 +26,10 @@ Most tests run automatically without a dependency on the user interface. However
 -   The CRONUS International Ltd. demo data company.  
   
 ## Story  
- Isaac is a business application developer working for CRONUS International Ltd. Earlier, he started using thee application test libraries to help him test codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. Now, he wants to extend his test coverage to include testing that the VAT amount remains the same when the user chooses the **Price Including VAT** field.  
+ Isaac is a business application developer working for CRONUS International Ltd. Earlier, Isaac started using the application test libraries to test codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. Now, Isaac wants to extend the test coverage to include testing that the VAT amount remains the same when the user chooses the **Price Including VAT** field.  
   
 ## Creating a Test Codeunit and Test Handler Function  
- Isaac creates a new codeunit and specifies that it is a test codeunit. He defines the scenario that he wants to verify, adds a test handler function to test the VAT functionality.  
+ Isaac creates a new codeunit and specifies that it is a test codeunit. Isaac defines the scenario to be verified, adds a test handler function to test the VAT functionality.  
   
 #### To create the test codeunit and test handler function  
   
@@ -82,9 +82,9 @@ Most tests run automatically without a dependency on the user interface. However
   
     ```  
   
-     Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, he adds the C/AL code. The code in this test function prepares the test data by creating a sales document with a random quantity of items in a sales line. Then, emulates that a user has chosen the Prices Including VAT field, and then validates that the VAT Base Amount is the same as before, more or less. The test raises an error if the results are not as expected.  
+     Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally the C/AL code is added. The code in this test function prepares the test data by creating a sales document with a random quantity of items in a sales line. Then, emulates that a user has chosen the Prices Including VAT field, and then validates that the VAT Base Amount is the same as before, more or less. The test raises an error if the results are not as expected.  
   
-     Isaac has created the test function. Next, he runs the test in the CAL Test Tool window in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
+     Isaac has created the test function. Next, Isaac runs the test in the CAL Test Tool window in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
 8.  Compile and save the codeunit.  
   
