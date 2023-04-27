@@ -13,14 +13,7 @@ ms.author: solsen
 
 # JSON files
 
-When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The [app.json](devenv-json-files.md#appjson-file) file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. 
-
-The `launch.json` file contains information about the server that the extension launches on. The `launch.json` file has multiple configuration options available:
-
-- [Publish to Microsoft cloud sandbox](devenv-json-launch-file.md#publish-to-cloud-settings)
-- [Publish to your own server](devenv-json-launch-file.md#publish-to-local-server-settings)
-- [Attach to the client on the cloud sandbox or on your own server](devenv-json-launch-file.md#attach-configuration-settings)
-- [Initialize a snapshot debugging session on cloud or on your own server](devenv-json-launch-file.md#initialize-snapshot-debugging-settings)
+When you start a new AL project, two JSON files; the `app.json` file and the `launch.json` file are generated automatically. The `app.json` file contains information about the extension that you're building, such as publisher information and specifies the minimum version of base application objects that the extension is built on. Often, the `app.json` file is referred to as the manifest. This article describes the `app.json` file settings in the [App.json file](devenv-json-files.md#appjson-file) section. For information about the `launch.json` file see the article [Launch JSON file](devenv-json-files.md).
 
 > [!NOTE]  
 > For information about data migration and creating a `migration.json` file, see [The Migration.json File](devenv-migration-json-file.md).
