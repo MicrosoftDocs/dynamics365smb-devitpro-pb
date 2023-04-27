@@ -28,10 +28,10 @@ In this walkthrough, you will learn how to add a new item to an **Action** tab a
  This walkthrough builds on the steps described in [Walkthrough: Creating a Customer List in Page Designer](Walkthrough--Creating-a-Customer-List-in-Page-Designer.md). If you have not created a customer list page, you must create it before you continue this walkthrough.  
   
 ## Story  
- Simon shows the customer list page that he created to Kevin, the Sales Manager at CRONUS International Ltd. who contracted him to create this page. Kevin likes how the customer list looks, but he would like Simon to add a menu item on the **Actions** tab to create a new sales order for the currently selected customer.  
+ Simon shows the customer list page to Kevin, the Sales Manager at CRONUS International Ltd. who contracted Simon to create this page. Kevin likes how the customer list looks, but would like Simon to add a menu item on the **Actions** tab to create a new sales order for the currently selected customer.  
   
 ## Adding an Action to the Customer List  
- Simon looks at the customer list that he created earlier and adds a new action to the page to create a sales order.  
+ Simon looks at the customer list created earlier and adds a new action to the page to create a sales order.  
   
 #### To add an action to the customer list page  
   
@@ -86,7 +86,7 @@ In this walkthrough, you will learn how to add a new item to an **Action** tab a
      The Sales Order action now displays in the **Actions** tab.  
   
 ## Promoting an Action  
- When Simon opens the page, he realizes that he would like to promote the Sales Order action so that it displays on the ribbon in the **New** group. Promoted actions are displayed as icons within the ribbon located at the top of the page.  
+ On opening the page, Simon decides to promote the Sales Order action so that it displays on the ribbon in the **New** group. Promoted actions are displayed as icons within the ribbon located at the top of the page.  
   
 #### To promote an action  
   
@@ -113,7 +113,7 @@ In this walkthrough, you will learn how to add a new item to an **Action** tab a
      ![Kevin's Customer List page.](media/MicrosoftDynamicsNAVKevinsCustomerList.jpg "MicrosoftDynamicsNAVKevinsCustomerList")  
   
 ## Linking an Action with a Specific Item in a List  
- Simon verifies that the Sales Order action now displays in the ribbon. However, when he selects the Sales Order action, the Sales Order card opens and displays the first sales order in the database. Simon remembers that Kevin asked him to have the Sales Order action open a new sales order for the currently selected customer, instead. Simon opens the customer list page and starts making this change.  
+ Simon verifies that the Sales Order action now displays in the ribbon. However, when on selecting the Sales Order action, the Sales Order card opens and displays the first sales order in the database. Simon remembers that Kevin wanted the Sales Order action open a new sales order for the currently selected customer, instead. Simon opens the customer list page and starts making this change.  
   
 #### To add an action  
   

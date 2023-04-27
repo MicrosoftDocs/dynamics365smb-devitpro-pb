@@ -13,7 +13,7 @@ ms.service: dynamics365-business-central
 
 # Analyze and Monitor Telemetry with Power BI
 
-To make it simple to analyze Business Central telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
+To make it simple to analyze [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry, we've developed two Power BI apps available from Microsoft AppSource. One app is for telemetry on environments. The other one is for telemetry on apps/extensions (the telemetry defined in app.json). Both apps are free and open source but requires Power BI pro licenses to use.
 
 ## About the reports in the app 
 
@@ -232,3 +232,5 @@ In the following table, you'll find examples of scenarios for each persona where
 [Enabling telemetry](telemetry-enable-application-insights.md)  
 [Available telemetry](telemetry-available-telemetry.md)  
 [Analyze Telemetry with KQL](telemetry-analyze-with-kql.md)
+[Telemetry FAQ](telemetry-faq.md)
+
