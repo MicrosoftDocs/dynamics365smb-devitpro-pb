@@ -98,7 +98,7 @@ To use the Go To Definition on local server, it requires that the AL symbols are
 
 ## <a name="DebugSQL"></a>Debugging SQL behavior
 
-Traditionally, debugging AL has been about examining the behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine your AL code's effect on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [JSON Files](devenv-json-files.md#Launchjson).
+Traditionally, debugging AL has been about examining the behavior of the language runtime, for example, looking into the content of local variables at a breakpoint. As of [!INCLUDE[prod_short](includes/prod_short.md)] April 2019, the AL debugger also offers the capability to examine your AL code's effect on the [!INCLUDE[prod_short](includes/prod_short.md)] database. The `enableSQLInformationDebugger` setting enables this functionality. For more information, see [Launch JSON file](devenv-json-launch-file.md).
 
 ### View database statistics
 

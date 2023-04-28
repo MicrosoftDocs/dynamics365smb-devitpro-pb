@@ -125,7 +125,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
 
 
-## Shopify and Dataverse
+## Shopify
 - Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
 - Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
 - Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
