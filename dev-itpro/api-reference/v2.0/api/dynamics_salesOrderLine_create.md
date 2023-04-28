@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 04/28/2023
 ms.author: solsen
 ---
 
@@ -49,7 +49,6 @@ POST https://{businesscentralPrefix}/api/v2.0/companies({id})/salesOrders({id})/
 Content-type: application/json
 
 {
-    "sequence": 10000,
     "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
     "lineType": "Item",
     "lineObjectNumber": "1996-S",
@@ -83,7 +82,6 @@ Content-type: application/json
 {
     "id": "1e8cb9c0-44e3-ea11-bb43-000d3a2feca1",
     "documentId": "960f5c9c-44e3-ea11-bb43-000d3a2feca1",
-    "sequence": 10000,
     "itemId": "0ea6738a-44e3-ea11-bb43-000d3a2feca1",
     "accountId": "00000000-0000-0000-0000-000000000000",
     "lineType": "Item",
