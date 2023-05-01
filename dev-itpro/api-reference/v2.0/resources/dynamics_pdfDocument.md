@@ -6,7 +6,7 @@ ms.topic: reference
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 04/27/2023
 ms.author: solsen
 ---
 
@@ -43,7 +43,7 @@ Represents a pdf document in [!INCLUDE[prod_short](../../../includes/prod_short.
 |:-------------------|:-------|:---------------|
 |id|GUID|The unique ID of the pdf document. Non-editable.|
 |parentId|GUID|The ID of the parent entity. |
-|parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the pdf document. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice" or "Purchase Invoice".|
+|parentType|NAV.attachmentEntityBufferDocumentType|The type of the parent document of the PDF document. It can be " ", "Journal", "Sales Order", "Sales Quote", "Sales Credit Memo", "Sales Invoice", "Purchase Invoice", "Purchase Order".|
 |pdfDocumentContent|stream|The content of the PDF document.|
 
 ## JSON representation
