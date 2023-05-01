@@ -45,8 +45,8 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
  
-**Did you read the Business Central newsletter?**  
-XX 
+**Did you read this quarter's Business Central newsletter?**  
+On April 11, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on  [aka.ms/BCNews](aka.ms/BCNews). 
 
 **Join us for updates on LinkedIn!**  
 Follow the new company page for Microsoft Dynamics 365 Business Central on LinkedIn. We’ll share updates, announcements, and other “good to know” stuff. Join us [here](https://www.linkedin.com/company/microsoft-dynamics-365-business-central/). 
