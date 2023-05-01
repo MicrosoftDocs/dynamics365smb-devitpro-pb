@@ -3,7 +3,7 @@ title: "Record.SetAscending(Any, Boolean) Method"
 description: "Sets the sort order for the records returned."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 04/27/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,8 +46,7 @@ SetAscending is applicable to records that aren't displayed in a page in the cli
 
 ## Example
 
-The following code example shows how to use SetCurrentKey and SetAscending to sort data in two different directions based on two fields.
-It uses SetCurrentKey to specify the sort based on City and Name. Data will be sorted in ascending order based on those two fields, first by City, then by Name. Next, you use SetAscending to sort City in descending order instead.
+The following code example shows how to use SetCurrentKey and SetAscending to sort data in two different directions based on two fields. It uses SetCurrentKey to specify the sort based on City and Name. Data will be sorted in ascending order based on those two fields, first by City, then by Name. Next, you use SetAscending to sort Name in descending order instead.
 
 ```al
 page 50100 MyCustomerList
