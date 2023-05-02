@@ -23,8 +23,8 @@ Find an overview of hotfixes in this [article](Insert link) and the downloads [h
 - [Synchronize returns, refunds from Shopify](/dynamics365-business-central/synchronize-returns-refunds-shopify)
 - [Save time with automatic account codes](/dynamics365-business-central/automatic-account-codes)
 - [Swedish localization delivered as extension](/dynamics365-business-central/swedish-localization-app--delocalization) 
-- [Attach AL debugger to active session or next session](/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)
--[Non-deductible, partly deductible VAT expands functionality](/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
+- [Attach AL debugger to active session or next session](/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
+- [Non-deductible, partly deductible VAT expands functionality](/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
 
 ## Localization updates
 
@@ -44,7 +44,15 @@ If you want to get a comprehensive overview of what's new and planned for Busine
 Please note that new customers will automatically get the latest builds of Business Central (22.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
- 
+
+**Take action to retain delegated admin access to your customers’ Business Central environments**  
+Last year Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve upon and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
+
+The Partner Center team has now [announced](/partner-center/announcements/2023-march#9) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process.
+
+To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
+
+
 **Did you read this quarter's Business Central newsletter?**  
 On April 11, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on  [aka.ms/BCNews](aka.ms/BCNews). 
 
