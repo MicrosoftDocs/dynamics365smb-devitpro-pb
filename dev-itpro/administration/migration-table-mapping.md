@@ -35,7 +35,7 @@ But the following mappings are supported:
 |Customer|Customer|
 |Customer|MyTable|
 
-This limitation also applies to tables that are automatically included into the replication, which means tables enabled for cloud migration by the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md). If these tables exist in the on-premises database, they'll automatically be included in the clod migration. So, no table mappings can define these tables the destination table.
+This limitation also applies to tables that are automatically included into the replication, which means tables enabled for cloud migration by the [ReplicateData property](../developer/properties/devenv-replicatedata-property.md). If these tables exist in the on-premises database, they'll automatically be included in the cloud migration. So, no table mappings can define these tables as the destination table.
 
 
 ## Rename the table during the cloud migration
