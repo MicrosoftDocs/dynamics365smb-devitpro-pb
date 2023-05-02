@@ -66,7 +66,9 @@ Follow the new company page for Microsoft Dynamics 365 Business Central on Linke
 **Upcoming Business Central Office Hours Calls**  
 In March, we will be hosting the following call, which you can already register for today:
 
-- **March 14:** Onboarding your customers to Business Central
+- **May 16:** Business Central Administration Overview
+- **May 30:** Copilot and AI
+- **June 6:** Onboarding your customers to Business Central
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
