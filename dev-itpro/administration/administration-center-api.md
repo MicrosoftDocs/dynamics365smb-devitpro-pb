@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.reviewer: solsen
 ms.search.keywords: administration, tenant, admin, environment, telemetry
-ms.date: 02/24/2023
+ms.date: 04/24/2023
 ---
 
 # The Business Central Admin Center API
@@ -146,26 +146,30 @@ HTTP requests sent to the [!INCLUDE[prodadmincenter](../developer/includes/proda
 The following examples show how to obtain such a token using PowerShell. Using C# is straightforward.
 
 PowerShell example without prompt:
- ```powershell
-    $cred = [Microsoft.IdentityModel.Clients.ActiveDirectory.UserPasswordCredential]::new($UserName, $Password)
-    $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$TenantName")
-    $token = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContextIntegratedAuthExtensions]::AcquireTokenAsync($ctx, "https://api.businesscentral.dynamics.com", <Application ID>, $cred).GetAwaiter().GetResult().AccessToken
- ```
- 
- PowerShell example with prompt:
 
- ```powershell
-    $ctx = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("https://login.windows.net/$tenantName")
-    $redirectUri = New-Object -TypeName System.Uri -ArgumentList <Redirect URL>
-    $platformParameters = New-Object -TypeName Microsoft.IdentityModel.Clients.ActiveDirectory.PlatformParameters -ArgumentList ([Microsoft.IdentityModel.Clients.ActiveDirectory.PromptBehavior]::Always)
-    $token = $ctx.AcquireTokenAsync("https://api.businesscentral.dynamics.com", <Application ID>, $redirectUri, $platformParameters).GetAwaiter().GetResult().AccessToken
- ```
+```powershell
+$cred = [System.Management.Automation.PSCredential]::new($userName, $secureStringPassword)
+$authority = "https://login.microsoftonline.com/$tenantName"
+$scopes = [String[]]@("https://api.businesscentral.dynamics.com/.default")
+$client = [Microsoft.Identity.Client.PublicClientApplicationBuilder]::Create($applicationId).WithAuthority($authority).Build()
+$accessToken = $client.AcquireTokenByUsernamePassword($Scopes, $cred.UserName, $cred.Password).ExecuteAsync().GetAwaiter().GetResult().AccessToken
+```
+ 
+PowerShell example with prompt:
+
+```powershell
+$authority = "https://login.microsoftonline.com/$tenantName"
+$scopes = [String[]]@("https://api.businesscentral.dynamics.com/.default")
+$client = [Microsoft.Identity.Client.PublicClientApplicationBuilder]::Create($applicationId).WithAuthority($authority).WithRedirectUri($redirectUri).Build()
+$accessToken = $client.AcquireTokenInteractive($scopes).ExecuteAsync().GetAwaiter().GetResult().AccessToken
+```
 
 ## Error Format
 
 If an error occurs during the execution of an API method, it will respond back with an error object. While the specifics of any error will vary from endpoint to endpoint and by the error, the error object returned should adhere to the following structure. When an error occurs that doesn't fit this structure, it typically indicates that an error occurred in sending the request or during authentication of the request. For example, it could be that the API hasn't yet received the request. 
 
-**Error Response Object:**  
+**Error Response Object:** 
+
 ```
 {
 "code": string, // A stable error code describing the type an nature of the error. Ex: EnvironmentNotFound
