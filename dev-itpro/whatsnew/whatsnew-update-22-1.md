@@ -30,10 +30,10 @@ Find an overview of hotfixes in this [article](Insert link) and the downloads [h
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| XX| XX | XX  |
-| XX | XX | XX |
-| XX | XX | XX |
-| XX | XX | XX |
+| France | New mandatory mentions on sales documents | New fields are required on the Sales Invoices in France following the decree of the French Tax Authorities: Client's SIREN number, the delivery address of the goods sold if it is different from the customer's address, information if the invoice includes goods, services, or both, and option to pay tax based on debits. |
+| W1 | Added field Registration No. to Contacts | We already had added the Registration No. field to the customer and vendor cards, but this field has been added to the Contact card as well. |
+| Norway | An electronic invoice in EHF 3.0 format validation improvement | Previously, an electronic invoice in EHF 3.0 format couldn't be validated successfully when the document contains a negative line for invoice rounding, and with this release it is improved. |
+| Spain | Added field 'Closed' to the table 'No Taxable Entry' | Added the field 'Closed' to the table 'No Taxable Entry' to avoid pending amounts in VAT Declarations, so now users can filter 'No Taxable Entries' by Open or Closed status. |
 
 ## Release Plan
 
