@@ -16,7 +16,7 @@ Would you like to know what has changed in update 22.1? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](Insert link) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5026932) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes  
 - [Turn off event-based sync for specific integration table mappings](/dynamics365-business-central/turn-off-event-based-synch-specific-integration-table-mappings)
