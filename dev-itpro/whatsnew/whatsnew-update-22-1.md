@@ -25,6 +25,8 @@ Find an overview of hotfixes in this [article](Insert link) and the downloads [h
 - [Swedish localization delivered as extension](/dynamics365-business-central/swedish-localization-app--delocalization) 
 - [Attach AL debugger to active session or next session](/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
 - [Non-deductible, partly deductible VAT expands functionality](/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
+- Partners can control welcome banner texts
+- App telemetry to support the trials and onboarding tashboard to better understand and further improve evaluation and onboarding scenarios 
 
 ## Localization updates
 
