@@ -1,6 +1,6 @@
 ---
 title: Customizing an Integration with Microsoft Dataverse
-description: Learn how to integrate your extension with Microsoft Dataverse in this walkthrough that takes you through each step.
+description: Learn how to integrate your extension with Microsoft Dataverse. This walkthrough takes you through each step.
 author: bholtorf
 ms.custom: na
 ms.reviewer: solsen
@@ -11,21 +11,21 @@ ms.date: 04/01/2021
 
 # Customizing an Integration with Microsoft Dataverse
 
-This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. The walkthrough will guide you through setting up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
+This walkthrough describes how to customize an integration between [!INCLUDE[prod_short](../includes/prod_short.md)] and [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. As an example, this walkthrough guides you through the tasks to set up an integration between an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. 
 
 > [!TIP]
 > Sample code that shows how to integrate an employee in [!INCLUDE[prod_short](../includes/prod_short.md)] and a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] is available in the [BCTech](https://github.com/microsoft/BCTech/tree/master/samples/DataverseCustomEmployeeWorkerIntegration) repository.
 
 ## About this walkthrough
 
-This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high level, those processes involve the following tasks:  
+This walkthrough describes how to integrate new and existing extensions with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. At a high level, the process involves the following tasks:  
 
 1. Develop an AL extension to integrate tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)]. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
 2. Create an integration table object in [!INCLUDE[prod_short](../includes/prod_short.md)] for mapping a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table to a [!INCLUDE[prod_short](../includes/prod_short.md)] record type.  
 3. Use a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] integration table as the data source for a page in [!INCLUDE[prod_short](../includes/prod_short.md)] that displays data from [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table rows.  
-4. Extend a page in [!INCLUDE[prod_short](../includes/prod_short.md)] for coupling and synchronizing table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prod_short](../includes/prod_short.md)].  
+4. Extend a page in [!INCLUDE[prod_short](../includes/prod_short.md)] to couple and synchronize table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with table records in [!INCLUDE[prod_short](../includes/prod_short.md)].  
 5. Use events to create an integration table and a field mapping between a table in [!INCLUDE[prod_short](../includes/prod_short.md)] and an integration table for [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
-6. Develop another AL extension to extend an existing integration between tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)]. 
+6. Develop another AL extension to extend an existing integration between tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] and [!INCLUDE[prod_short](../includes/prod_short.md)].
 7. Create a table extension for an existing integration table object.
 8. Use events to add custom integration field mappings for existing integration table mappings.
 
@@ -40,7 +40,7 @@ This walkthrough has the following requirements:
     - Worker table.
 
     > [!NOTE]  
-    > To get the worker table you must install the Talent Core HR solution. For more information, see [Microsoft Dataverse tables](/dynamics365/human-resources/hr-developer-entities).
+    > To get the worker table, you must install the Talent Core HR solution. For more information, see [Microsoft Dataverse tables](/dynamics365/human-resources/hr-developer-entities).
     - The URL of your [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] environment.
     - The user name and password of a user account that has full permissions to add and modify tables.  
 - [!INCLUDE[prod_short](../includes/prod_short.md)], including the following:  
@@ -55,15 +55,17 @@ This walkthrough has the following requirements:
 
 ## Create an integration table in Business Central for the Dataverse table  
 
-To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prod_short](../includes/prod_short.md)], you must create a table object in [!INCLUDE[prod_short](../includes/prod_short.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, and then import the new table into the [!INCLUDE[prod_short](../includes/prod_short.md)] database. For this walkthrough, we will create a table object that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] in the [!INCLUDE[prod_short](../includes/prod_short.md)] database. 
+To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table into [!INCLUDE[prod_short](../includes/prod_short.md)], you must create a table object in [!INCLUDE[prod_short](../includes/prod_short.md)] that is based on the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. You then import the new table into the [!INCLUDE[prod_short](../includes/prod_short.md)] database. 
+
+In this walkthrough we'll create a table object in the [!INCLUDE[prod_short](../includes/prod_short.md)] database that describes the schema for the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 
 > [!NOTE]  
-> The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. However, if you want to set up bi-directional synchronization you must include all fields in the table.  
+> The table can contain some or all of the fields from the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table. However, to set up bi-directional synchronization you must include all fields in the table.  
 
-### To create the integration table for the worker table in Business Central 
+### To create the integration table for the worker table in Business Central
 
 1. Create a new AL extension. For more information, see [Developing Extensions in AL](../developer/devenv-dev-overview.md).
-2. Export the **AL Table Proxy Generator** tool called **altpgen.exe** from the Visual Studio Code AL extension. This executable tool allows you to create integration tables. When you have installed the AL Language extension, go to the equivalent of this folder: `C:\Users\<myname>\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
+2. Export the **AL Table Proxy Generator** tool called **altpgen.exe** from the Visual Studio Code AL extension. This executable allows you to create integration tables. When you have installed the AL Language extension, go to the equivalent of this folder: `C:\Users\<myname>\.vscode\extensions\microsoft.al-4.0.209721\bin` and find the `altpgen.exe` file. For more information, see [AL Table Proxy Generator](../developer/devenv-al-table-proxy-generator.md).
 3. In PowerShell, run the tool with the following arguments:
     ```powershell
     -project:<Your AL project folder>
@@ -72,16 +74,16 @@ To integrate data from a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tab
     -entities:cdm_worker
     -baseid:50000
     ```
-    
+
     This starts the process for creating the table. When completed, the output path contains the `.al` file that contains the description of the **CDS Worker** integration table with ID 50000. This table is set to the table type **CDS**.
 
 ## Create a page for displaying Dataverse data  
 
-For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific table, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, such as all workers. In this walkthrough, we will create a list page that uses the generated integration table **Dataverse Worker** with ID 50000 as its data source.  
+For scenarios where we want to view [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] data for a specific table, we can create a page object that uses the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table as its data source. For example, we might want to have a list page that displays the current records in a [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table, such as all workers. In this walkthrough, we'll create a list page that uses the generated integration table **Dataverse Worker** with ID 50000 as its data source.  
 
 ### To create a list page to display Dataverse workers  
 
-1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md). 
+1. Create a new page. For more information, see [Pages Overview](../developer/devenv-pages-overview.md).
 2. Name the page **Dataverse Worker List**, and specify **50001** as the page ID.  
 3. Specify the **Dataverse Worker** integration table as the source table as shown below:
 
@@ -137,36 +139,24 @@ page 50001 "Dataverse Worker List"
         CurrentlyCoupledDataverseWorker := DataverseWorker;
     end;
 }
-``` 
+```
 
 4. Add the fields from the integration table to display on the page in the `layout` section. 
 
 ### To create a column on list page to display which workers are coupled
+
 To track whether an employee record is coupled to a corresponding worker record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], do the following:
-1. Add a boolean field called "Coupled to CRM" to your [!INCLUDE[prod_short](../includes/prod_short.md)] table. 
+
+1. Add a FlowField called **Coupled to Dataverse** to your [!INCLUDE[prod_short](../includes/prod_short.md)] table, and give it the following properties:
+
+    FieldClass = FlowField;
+    Editable = false;
+    CalcFormula = exist("CRM Integration Record" where("Integration ID" = field(SystemId), "Table ID" = const(Database::Employee)
 
  > [!IMPORTANT]  
- > The name of the new field must be **Coupled to CRM**.
+ > The name of the new field *must* be **Coupled to Dataverse**.
 
-3. Add a control that shows the **Coupled to CRM** field on the list page. There is no constraint about how to name this new control in the UI.
-
-Every time you couple or uncouple a record from your [!INCLUDE[prod_short](../includes/prod_short.md)] table to a record in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)], the synchronization engine will update the Coupled to CRM field that you added.
-
-This will only update records that you couple or uncouple after you have added the Coupled to CRM field. To update this field value on records that were coupled before you added the Coupled to CRM field, you must run the following code. We recommend that you run the code as a background task.
-
-```al
-local procedure SetCoupledFlags()
-var
-    CRMIntegrationRecord: Record "CRM Integration Record";
-    CRMIntegrationManagement: Codeunit "CRM Integration Management";
-begin
-    CRMIntegrationRecord.SetRange("Table ID", Database::Employee);
-    if CRMIntegrationRecord.FindSet() then
-        repeat
-            CRMIntegrationManagement.SetCoupledFlag(CRMIntegrationRecord, true)
-        until CRMIntegrationRecord.Next() = 0;
-end;
-```
+2. Add a control that shows the **Coupled to Dataverse** field on the list page. You can give the control any name you want.
 
 ## Enable coupling and synchronization between Worker in Dataverse and in Business Central
 
@@ -185,57 +175,58 @@ begin
     end;
 end;
 ```
-You can now use the table to create a page for coupling [!INCLUDE[prod_short](../includes/prod_short.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
 
-3. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event, as follows:
+Now use the table to create a page for coupling [!INCLUDE[prod_short](../includes/prod_short.md)] records with [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] rows.
 
-```al
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"Lookup CRM Tables", 'OnLookupCRMTables', '', false, false)]
-local procedure HandleOnLookupCRMTables(CRMTableID: Integer; NAVTableId: Integer; SavedCRMId: Guid; var CRMId: Guid; IntTableFilter: Text; var Handled: Boolean)
-begin
-    if CRMTableID = Database::"Dataverse Worker" then
-        Handled := LookupDataverseWorker(SavedCRMId, CRMId, IntTableFilter);
-end;
+3. In codeunit **Lookup CRM Tables** (ID 5332), subscribe to the **OnLookupCRMTables** event:
 
-local procedure LookupDataverseWorker(SavedCRMId: Guid; var CRMId: Guid; IntTableFilter: Text): Boolean
-var
-    DataverseWorker: Record "Dataverse Worker";
-    OriginalDataverseWorker: Record "Dataverse Worker";
-    DataverseWorkerList: Page "Dataverse Worker List";
-begin
-    if not IsNullGuid(CRMId) then begin
-        if DataverseWorker.Get(CRMId) then
-            DataverseWorkerList.SetRecord(DataverseWorker);
-        if not IsNullGuid(SavedCRMId) then
-            if OriginalDataverseWorker.Get(SavedCRMId) then
-                DataverseWorkerList.SetCurrentlyCoupledDataverseWorker(OriginalDataverseWorker);
+    ```al
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Lookup CRM Tables", 'OnLookupCRMTables', '', false, false)]
+    local procedure HandleOnLookupCRMTables(CRMTableID: Integer; NAVTableId: Integer; SavedCRMId: Guid; var CRMId: Guid; IntTableFilter: Text; var Handled: Boolean)
+    begin
+        if CRMTableID = Database::"Dataverse Worker" then
+            Handled := LookupDataverseWorker(SavedCRMId, CRMId, IntTableFilter);
     end;
-
-    DataverseWorker.SetView(IntTableFilter);
-    DataverseWorkerList.SetTableView(DataverseWorker);
-    DataverseWorkerList.LookupMode(true);
-    if DataverseWorkerList.RunModal = ACTION::LookupOK then begin
-        DataverseWorkerList.GetRecord(DataverseWorker);
-        CRMId := DataverseWorker.WorkerId;
-        exit(true);
+    
+    local procedure LookupDataverseWorker(SavedCRMId: Guid; var CRMId: Guid; IntTableFilter: Text): Boolean
+    var
+        DataverseWorker: Record "Dataverse Worker";
+        OriginalDataverseWorker: Record "Dataverse Worker";
+        DataverseWorkerList: Page "Dataverse Worker List";
+    begin
+        if not IsNullGuid(CRMId) then begin
+            if DataverseWorker.Get(CRMId) then
+                DataverseWorkerList.SetRecord(DataverseWorker);
+            if not IsNullGuid(SavedCRMId) then
+                if OriginalDataverseWorker.Get(SavedCRMId) then
+                    DataverseWorkerList.SetCurrentlyCoupledDataverseWorker(OriginalDataverseWorker);
+        end;
+    
+        DataverseWorker.SetView(IntTableFilter);
+        DataverseWorkerList.SetTableView(DataverseWorker);
+        DataverseWorkerList.LookupMode(true);
+        if DataverseWorkerList.RunModal = ACTION::LookupOK then begin
+            DataverseWorkerList.GetRecord(DataverseWorker);
+            CRMId := DataverseWorker.WorkerId;
+            exit(true);
+        end;
+        exit(false);
     end;
-    exit(false);
-end;
-```
-
+    ```
+    
 4. In codeunit **CRM Setup Defaults** (ID 5334), subscribe to the **OnAddEntityTableMapping** event to enable deep linking between coupled records.
 
-```al
-[EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', false, false)]
-    local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
-    var
-        CRMSetupDefaults: Codeunit "CRM Setup Defaults";
-    begin
-        CRMSetupDefaults.AddEntityTableMapping('worker', Database::Employee, TempNameValueBuffer);
-        CRMSetupDefaults.AddEntityTableMapping('worker', Database::"Dataverse Worker", TempNameValueBuffer);
-    end;
-}
-```
+    ```al
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Setup Defaults", 'OnAddEntityTableMapping', '', false, false)]
+        local procedure HandleOnAddEntityTableMapping(var TempNameValueBuffer: Record "Name/Value Buffer" temporary);
+        var
+            CRMSetupDefaults: Codeunit "CRM Setup Defaults";
+        begin
+            CRMSetupDefaults.AddEntityTableMapping('worker', Database::Employee, TempNameValueBuffer);
+            CRMSetupDefaults.AddEntityTableMapping('worker', Database::"Dataverse Worker", TempNameValueBuffer);
+        end;
+    }
+    ```
 
 ### To create actions on the employee page for managing coupling and synchronization
 
@@ -361,7 +352,7 @@ pageextension 50101 "Employee Synch Extension" extends "Employee Card"
 
 ## Customizing Uncoupling
 
-Tables might require custom code to remove couplings, for example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To specify the codeunit, adjust the function **InsertIntegrationTableMapping** in your codeunit, as follows:
+Tables might require custom code to remove couplings. For example, to change tables before or after uncoupling. To enable custom uncoupling, specify the uncoupling codeunit when you create an integration table mapping. To specify the codeunit, adjust the **InsertIntegrationTableMapping** method in your codeunit, as follows:
 
 ```al
 local procedure InsertIntegrationTableMapping(var IntegrationTableMapping: Record "Integration Table Mapping"; MappingName: Code[20]; TableNo: Integer; IntegrationTableNo: Integer; IntegrationTableUIDFieldNo: Integer; IntegrationTableModifiedFieldNo: Integer; TableConfigTemplateCode: Code[10]; IntegrationTableConfigTemplateCode: Code[10]; SynchOnlyCoupledRecords: Boolean)
@@ -371,17 +362,17 @@ end;
 
 ```
 
-During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following table describes the events that are published by codeunit Int. Rec. Uncouple Invoke. 
+During the custom uncoupling process, codeunit Int. Rec. Uncouple Invoke (ID 5357) raises and publishes events. You can add code that subscribes to these events so that you can add custom logic at different stages of the uncoupling process. The following list describes the events that are published by codeunit Int. Rec. Uncouple Invoke. 
 
 * **OnBeforeUncoupleRecord** - Occurs before remove coupling, and can be used to change data before uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnBeforeUncoupleRecord. The event resets the company ID on the uncoupled tables in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].
 * **OnAfterUncoupleRecord** - Occurs after coupling is removed, and can be used to change data after uncoupling. For an example, see codeunit CDS Int. Table. Subscriber, which includes the event subscriber function HandleOnAfterUncoupleRecord. The event removes couplings to the contacts linked to the uncoupled customers and vendors.
 
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
-Custom uncoupling running in the background could modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables and it might take significant time.
+Custom uncoupling running in the background can modify [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables and it might take significant time to complete.
 
 > [!TIP]
-> To reset Company ID on uncoupling custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, users can subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as follows:
+> To reset the Company ID on uncoupling custom tables just like the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, subscribe to the OnHasCompanyIdField event in codeunit CDS Integration Mgt. (ID 7200), as shown in the following example:
 >
 > ```al
 > [EventSubscriber(ObjectType::Codeunit, Codeunit::"CDS Integration Mgt.", 'OnHasCompanyIdField', '', false, false)]
@@ -394,16 +385,16 @@ Custom uncoupling running in the background could modify [!INCLUDE[cds_long_md](
 
 ## Create default integration table mappings and field mappings
 
-For synchronization to work, mappings must exist to associate the table ID and fields of the integration table (in this case, **Dataverse Worker**) with the table in [!INCLUDE[prod_short](../includes/prod_short.md)] (in this case, **Employee**). There are two types of mapping:  
+Mappings must associate the table ID and fields of the integration table (in this case, **Dataverse Worker**) with the table in [!INCLUDE[prod_short](../includes/prod_short.md)] (in this case, **Employee**). There are two types of mappings:  
 
 - **Integration table mapping** - Integration table mapping links the [!INCLUDE[prod_short](../includes/prod_short.md)] table to the integration table for the [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] table.  
 - **Integration field mapping** - Field mapping links a field in a table row in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with a field in a record in [!INCLUDE[prod_short](../includes/prod_short.md)]. This mapping determines which field in [!INCLUDE[prod_short](../includes/prod_short.md)] corresponds to which field in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)]. Typically, there are multiple field mappings for a table.  
 
-In this scenario, we will create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prod_short](../includes/prod_short.md)]. 
+In this scenario, we'll create integration table and field mappings so that we can synchronize data for a worker in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] with an employee in [!INCLUDE[prod_short](../includes/prod_short.md)]. 
 
 ### To create an integration table mapping  
 
-We can create the integration table mapping by subscribing to the **OnAfterResetConfiguration** event in codeunit **CDS Setup Defaults** (ID 7204).
+Create the integration table mapping by subscribing to the **OnAfterResetConfiguration** event in codeunit **CDS Setup Defaults** (ID 7204).
 
 1. Create a codeunit.  
 2. Add a local procedure called **InsertIntegrationTableMapping**, as follows:
@@ -436,7 +427,7 @@ We can create the integration table mapping by subscribing to the **OnAfterReset
     end;
     ``` 
 
-For each integration table mapping entry, there must be integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
+Each integration table mapping entry must have integration field mapping entries to map the fields of the records in the table and the integration table. The next step is to add integration field mappings for each field in the **Employee** table in [!INCLUDE[prod_short](../includes/prod_short.md)] that we want to map to the **Worker** table in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)].  
 
 ### To create integration fields mappings  
 
@@ -465,10 +456,10 @@ To create an integration field mapping, follow these steps:
     > [!TIP]  
     > If a field in one of the tables does not have a corresponding field in the other table, we can use a constant value.
 
-3. After publishing the extension, we can update the default mappings to include our new integration table mapping by opening the **CDS Connection Setup** page in [!INCLUDE[prod_short](../includes/prod_short.md)] and choosing **Use Default Synchronization Setup**.  
+3. After we publish the extension, we can update the default mappings to include our new integration table mapping. On the **CDS Connection Setup** page in [!INCLUDE[prod_short](../includes/prod_short.md)], choose **Use Default Synchronization Setup**.  
 
 > [!NOTE]  
-> Make sure that the fields you map are of the same type. For example, map option type fields to options, and enum type fields to enums. Mismatched types can cause synchronization errors.
+> Make sure that the fields you map are of the same type. For example, map option type fields to options, and enum type fields to enums. Mismatched field types can cause synchronization errors.
 
 Users can now manually synchronize employee records in [!INCLUDE[prod_short](../includes/prod_short.md)] with Worker table rows in [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] from the [!INCLUDE[prod_short](../includes/prod_short.md)] client.  
 
@@ -479,7 +470,7 @@ Users can now manually synchronize employee records in [!INCLUDE[prod_short](../
 
 Customers might make changes to the integration table mappings that they later regret. To enable them to reset selected custom integration table mappings to the default, rather than all custom table mappings, follow these steps:
 
-* In the same codeunit created for this section, add an event subscriber to **OnBeforeHandleCustomIntegrationTableMapping** and point to the default behavior, as follows:
+- In the codeunit created for this section, add an event subscriber to **OnBeforeHandleCustomIntegrationTableMapping** and point to the default behavior, as follows:
 
     ```al
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"CRM Integration Management", 'OnBeforeHandleCustomIntegrationTableMapping', '', false, false)]
@@ -508,8 +499,9 @@ Customers might make changes to the integration table mappings that they later r
         end;
     end;
     ```
-> [!Important]  
-> You must set the IsHandled property to `true` to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
+
+    > [!Important]  
+    > Set the IsHandled property to `true` to avoid triggering the default implementation. Otherwise, all custom table mappings will be reset to default, regardless of the user's selection.
 
 ## Customizing Synchronization  
 
@@ -517,7 +509,7 @@ When synchronizing data, some tables may require custom code to successfully syn
 
 You can either use the standard transformation rules on page **Integration Field Mapping List** (ID 5361) or you can transform data programmatically. For more information, see [Transformation Rules](/dynamics365/business-central/across-how-to-set-up-data-exchange-definitions#transformation-rules).
 
-During the synchronization process, certain events are published and raised by codeunit **Integration Table Synch.** (ID 5335). We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by codeunit **Integration Table Synch.**.  
+During synchronization, codeunit **Integration Table Synch.** (ID 5335) raises and publishes certain events. We can add code that subscribes to these events so that we can add custom logic at different stages of the synchronization process. The following table describes the events that are published by codeunit **Integration Table Synch.**.  
 
 |Event|Description|  
 |-----|-----------|  
@@ -538,11 +530,11 @@ The following table describes the events that are published by codeunit **Integr
 |**OnTransferFieldData**|Occurs before an existing destination field value is transferred to a source field, and can be used for specific data transformations when the data types of the source and the destination field are different but can be mapped.|
 |**OnGetBlobFieldEncoding**|Occurs when the process must read or write a BLOB field in [!INCLUDE[prod_short](../includes/prod_short.md)] while synchronizing the field with a multiline text field in Dataverse. Use this event to specify the encoding of the text value in the BLOB field if it differs from the default encoding, which is TextEncoding::UTF8.|  
 
-
 For more information about how to subscribe to events, see [Subscribing to Events](../developer/devenv-subscribing-to-events.md).
 
 > [!TIP]  
 > To get the same Company ID mapping for custom tables as the base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, subscribe to the **OnBeforeInsertRecord** event in codeunit **Integration Rec. Synch. Invoke** (ID 5345), as follows:
+
 > ```al
 >   [EventSubscriber(ObjectType::Codeunit, Codeunit::"Integration Rec. Synch. Invoke", 'OnBeforeInsertRecord', '', false, false)]
 >   local procedure HandleOnBeforeInsertRecord(SourceRecordRef: RecordRef; DestinationRecordRef: RecordRef)
@@ -552,7 +544,8 @@ For more information about how to subscribe to events, see [Subscribing to Event
 >   if DestinationRecordRef.Number() = Database::"Dataverse Worker" then
 >       CDSIntegrationMgt.SetCompanyId(DestinationRecordRef);
 >   end;
->``` 
+>```
+
 For more information on base [!INCLUDE[cds_long_md](../includes/cds_long_md.md)] tables, see [Data Ownership Models](/dynamics365/business-central/admin-cds-company-concept).
 
 ## Create a table extension for an integration table in Business Central
