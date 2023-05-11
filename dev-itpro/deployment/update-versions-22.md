@@ -28,7 +28,7 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID|Title|Release date  |Build No. |
 |-----------------|-----|--------------|----------|
-|[5026932](https://support.microsoft.com/help/5026932) *coming soon*|Update 22.1| May 2023|Application Build 22.1.56216</br>Platform Build 22.0.56191 |
+|[5026932](https://support.microsoft.com/help/5026932) |Update 22.1| May 2023|Application Build 22.1.56216</br>Platform Build 22.0.56191 |
 
 ## See also
 

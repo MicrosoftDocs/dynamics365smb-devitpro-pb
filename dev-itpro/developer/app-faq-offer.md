@@ -4,7 +4,7 @@ description: "Get answers to some of your questions about managing an offer in P
 author: freddyk
 ms.custom: na
 ms.date: 10/01/2021
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: freddyk
 ---
