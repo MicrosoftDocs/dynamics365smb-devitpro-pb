@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: solsen
 ms.topic: include
 ms.date: 04/12/2023
-ms.author: edupont
+ms.author: solsen
 ---
 When an environment is created as a copy of another environment, a number of precautions are taken for that copy:
 
