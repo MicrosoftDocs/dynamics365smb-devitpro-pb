@@ -1,13 +1,13 @@
 ---
 title: Deployment overview for Business Central
 description: Get an overview of your options for deploying Dynamics 365 Business Central
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
-ms.author: edupont
+ms.author: jswymer
 ms.date: 04/01/2021
 ---
 # Deployment of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]

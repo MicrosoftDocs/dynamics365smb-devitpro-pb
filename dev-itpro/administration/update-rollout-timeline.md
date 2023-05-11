@@ -1,7 +1,7 @@
 ---
 title: Major Updates and Minor Updates for Business Central Online
 description: Learn about the timeline for how updates of Business Central online roll out. You can prepare for both major updates and minor updates with minimal disruption of your users' productivity.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 08/18/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Major Updates and Minor Updates for Business Central Online

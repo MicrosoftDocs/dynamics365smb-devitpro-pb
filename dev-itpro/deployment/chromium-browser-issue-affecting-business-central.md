@@ -3,7 +3,7 @@ title: Chromium browser issue affecting Business Central
 description: Learn how to workaround the Chromium browser issues that are causing problems for Business Central users.
 ms.topic: article
 ms.service: dynamics365-business-central
-author: edupont04
+author: jswymer
 ms.author: mikebc
 ms.date: 07/12/2022
 
