@@ -1,10 +1,10 @@
 ---
 title: Service Overview for Business Central Online
 description: Find links to information about the underlying service's maintenance schedule, and the systems that make Business Central online a reliable platform to run your business on.
-author: edupont04
+author: jswymer
 ms.reviewer: na
 ms.topic: overview
-ms.author: edupont
+ms.author: jswymer
 ms.date: 07/27/2021
 ---
 
