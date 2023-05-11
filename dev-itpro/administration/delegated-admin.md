@@ -1,7 +1,7 @@
 ---
 title: Delegated admin access to Business Central online
 description: As the reselling partner, help customers manage their Business Central online, and provide them with technical support.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.workload: na

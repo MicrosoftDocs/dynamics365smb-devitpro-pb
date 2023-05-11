@@ -1,7 +1,7 @@
 ---
 title: Migrate Legacy Help to the Business Central Format
 description: Reuse your existing Help content from Dynamics NAV or other products, and make it available to your Business Central solution.
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual

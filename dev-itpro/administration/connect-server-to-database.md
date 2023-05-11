@@ -1,7 +1,7 @@
 ---
 title: Server Instance Database Connection
 description: This procedure describes how to use the Server Administration tool to change the Dynamics NAV database to which a Server instance connects.
-author: edupont04
+author: jswymer
 ms.author: jswymer
 ms.custom: na
 ms.date: 04/01/2021

@@ -1,7 +1,7 @@
 ---
 title: Fields that are Moved, Removed, or Replaced
 description: We're constantly streamlining and adjusting our app in-step with market developments. Read about the fields that you want to refactor your code for.
-author: edupont04
+author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

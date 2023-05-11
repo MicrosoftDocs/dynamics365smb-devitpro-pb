@@ -1,7 +1,7 @@
 ---
 title: Apply Company Configuration Packages
 description: Streamline your implementation process by using configuration packages with standard settings and to migrate customer data.
-author: edupont04
+author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

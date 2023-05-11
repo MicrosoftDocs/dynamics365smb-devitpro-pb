@@ -1,7 +1,7 @@
 ---
 title: Production and Sandbox Environments
 description: Learn about the differences between production and sandbox environments for Dynamics 365 Business Central. 
-author: edupont04
+author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

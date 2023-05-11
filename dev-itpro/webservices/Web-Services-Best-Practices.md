@@ -1,7 +1,7 @@
 ---
 title: Web Services Best Practices
 description: Get the list of recommendations for how to use web services in your Business Central solution.
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

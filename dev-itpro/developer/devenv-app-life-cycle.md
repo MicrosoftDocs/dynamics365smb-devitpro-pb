@@ -1,7 +1,7 @@
 ---
 title: "Lifecycle of apps and extensions"
 description: "Overview of the process of updating an app for Business Central, how to update it."
-author: edupont04
+author: solsen
 
 ms.custom: na
 ms.reviewer: na

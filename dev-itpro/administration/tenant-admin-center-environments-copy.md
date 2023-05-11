@@ -1,7 +1,7 @@
 ---
 title: Copy an environment
 description: Learn how to create an environment that is a copy of a production or sandbox environment.
-author: edupont04
+author: jswymer
 ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na

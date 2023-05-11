@@ -1,7 +1,7 @@
 ---
 title: Environment Telemetry
 description: Learn how the Business Central admin center provides telemetry for each environment.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na

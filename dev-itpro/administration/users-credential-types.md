@@ -1,7 +1,7 @@
 ---
 title: Users and Credential Authorization
 description: This article explains how the credential authorization mechanism works for users of Business Central and how to configure credential types for on-premises.
-author: edupont04
+author: jswymer
 
 ms.custom: na
 ms.reviewer: na

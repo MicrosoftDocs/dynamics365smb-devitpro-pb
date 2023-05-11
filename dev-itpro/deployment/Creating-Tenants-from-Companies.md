@@ -1,6 +1,6 @@
 ---
 title: "Creating Tenants from Companies"
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.date: 04/01/2021
 ms.reviewer: na

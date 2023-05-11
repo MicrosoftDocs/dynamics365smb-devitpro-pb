@@ -1,7 +1,7 @@
 ---
 title: Prepare for major updates with preview environments
 description: Learn how to use preview sandboxes to help prepare for the next major update of Business Central online.
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na

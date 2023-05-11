@@ -1,7 +1,7 @@
 ---
 title: Escalate support issues to Microsoft
 description: Learn about how to escalate technical support cases on behalf of your Business Central online customers as the delegated administrator.
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na
