@@ -3,8 +3,8 @@ title: "Country/region availability and supported languages"
 description: "Overview of availability and supported languages."
 author: sorenfriisalexandersen
 ms.custom: na
-ms.date: 02/12/2023
-ms.reviewer: edupont
+ms.date: 05/11/2023
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: altotovi
 ---
@@ -130,7 +130,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Romania|Partner|W1|Available|RO|West Europe, Netherlands|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|N/A|
 |San Marino|Partner|IT|Planned in June 2023|SM|West Europe, Netherlands|
-|Sao Tome & Principe|Partner|W1|Planned in June 2023|SM|South Africa North|
+|Sao Tome & Principe|Partner|W1|Planned in June 2023|ST|South Africa North|
 |Saudi Arabia|Partner|W1|Available|SA|UAE North|
 |Senegal|Partner|W1|Planned in June 2023|SN|South Africa North|
 |Serbia|PartnerW1||Available|RS|West Europe, Netherlands|
