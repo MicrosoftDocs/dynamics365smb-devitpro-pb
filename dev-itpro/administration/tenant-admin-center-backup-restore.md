@@ -21,7 +21,7 @@ Database backups are an essential part of any business continuity and disaster r
 
 Permission to restore environments is limited to specific types of users: internal and delegated administrators. The following users are allowed to restore environments.
 
-- Delegated administrators from reselling partners
+- Delegated administrators. For more information, see [Delegated Administrator Access to Business Central Online](delegated-admin.md)
 - Administrators from the organization that subscribes to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online
 
 Also, these users must have the **D365 BACKUP/RESTORE** permission set assigned to their user account in the environment they're trying to export.

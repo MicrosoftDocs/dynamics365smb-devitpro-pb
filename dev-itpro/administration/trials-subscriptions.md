@@ -1,14 +1,14 @@
 ---
 title: Trials and Subscriptions
 description: Learn how it works with trials and subscriptions for Business Central online, and how the admin can cancel subscriptions.
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.workload: na
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Business Central Trials and Subscriptions

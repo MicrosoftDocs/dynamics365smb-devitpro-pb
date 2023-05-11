@@ -46,10 +46,10 @@ This walkthrough demonstrates debugging an action in the [!INCLUDE[nav_windows](
 -   To verify that the user account that you use meets the requirements for setting breakpoints. For more information, see [Development Environment \(C-SIDE\)](Development-Environment--C-SIDE-.md).  
   
 ## Story  
- Isaac is a business application developer working for CRONUS International Ltd. He has determined that there is an error in his code that posts sales orders. He wants to debug the scenario of posting a sales order. Isaac is not familiar with the [!INCLUDE[navnow](includes/navnow_md.md)] Debugger and wants to try all the functionality that the debugger offers.  
+ Isaac, a business application developer working for CRONUS International Ltd has determined that there is an error in the code that posts sales orders. Isaac wants to debug the scenario of posting a sales order. Isaac is not familiar with the [!INCLUDE[navnow](includes/navnow_md.md)] Debugger and wants to try all the functionality that the debugger offers.  
   
 ## Debugging the Post Action on a Sales Order  
- Isaac starts by setting a breakpoint at the first line of code in the Sales-Post codeunit. Next, he activates the debugger, runs the code so that it breaks at his breakpoint, and then steps through lines of code in this codeunit and other codeunits and examines variables to try to find the error.  
+ Isaac starts by setting a breakpoint at the first line of code in the Sales-Post codeunit. Next, Isaac activates the debugger, runs the code so that it breaks at the breakpoint, and then steps through lines of code in this codeunit and other codeunits and examines variables to try to find the error.  
   
 #### To set a breakpoint in the development environment  
   
@@ -165,7 +165,7 @@ This walkthrough demonstrates debugging an action in the [!INCLUDE[nav_windows](
   
 -   Delete watches. For more information, see [How to: Remove Variables from the Watches FactBox](How-to--Remove-Variables-from-the-Watches-FactBox.md).  
   
- Isaac can also keep the breakpoints and watches in his breakpoint list so that he can use them in a future debugging session.  
+ Isaac can also keep the breakpoints and watches in the breakpoint list so that they can use them in a future debugging session.  
   
 ## See Also  
  [Debugging](Debugging.md)

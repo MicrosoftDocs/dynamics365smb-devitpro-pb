@@ -178,7 +178,7 @@ OBJECT Codeunit 9010 Azure AD User Management
       NavUserPlan@1002 : Record 9005;
       TempNavUserPlan@1004 : TEMPORARY Record 9005;
     BEGIN
-      // Have any plans been removed from this user in O365, since last time he logged-in to NAV?
+      // Have any plans been removed from this user in O365, since last time they logged-in to NAV?
       // Get all plans assigned to the user, in NAV
       NavUserPlan.SETRANGE("User Security ID",ForUserSecurityId);
       IF NavUserPlan.FINDSET THEN
@@ -223,7 +223,7 @@ OBJECT Codeunit 9010 Azure AD User Management
       NavUserPlan@1002 : Record 9005;
       PermissionManager@1005 : Codeunit 9002;
     BEGIN
-      // Have any plans been added to this user in O365, since last time he logged-in to NAV?
+      // Have any plans been added to this user in O365, since last time they logged-in to NAV?
       // For each plan assigned to the user in Office
       IF TempO365Plan.FINDSET THEN
         REPEAT
@@ -450,10 +450,10 @@ OBJECT Codeunit 9010 Azure AD User Management
     BEGIN
       GetGraphUserPlans(TempO365Plan,GraphUser,FALSE);
 
-      // Have any plans been removed from this user in O365, since last time he logged-in to NAV?
+      // Have any plans been removed from this user in O365, since last time they logged-in to NAV?
       RemoveUnassignedUserPlans(TempO365Plan,ForUserSecurityId);
 
-      // Have any plans been added to this user in O365, since last time he logged-in to NAV?
+      // Have any plans been added to this user in O365, since last time they logged-in to NAV?
       AddNewlyAssignedUserPlans(TempO365Plan,ForUserSecurityId);
     END;
 

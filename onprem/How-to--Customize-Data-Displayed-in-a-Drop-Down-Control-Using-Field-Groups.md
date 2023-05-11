@@ -16,7 +16,7 @@ In the [!INCLUDE[nav_windows](includes/nav_windows_md.md)], some fields are enab
   
  If you do not define any field groups for the drop-down control, by default you only see data from two fields in the source table; the primary key and description fields, as these are indexed automatically.  
   
- To specify which fields are displayed in the drop-down control, you must use field groups. If you select the appropriate fields in the field groups table, you can help users to quickly find the data they need, without scrolling through multiple records. For example, if you define field groups on the Items table you can help the order processor to create new customer orders more easily. On the Sales Order card page, she can find specific items for the order, such as 2-inch nails, by using filter-as-you-type, and the drop-down control linked to the Items table. This could be very useful when creating a new customer order over the telephone.  
+ To specify which fields are displayed in the drop-down control, you must use field groups. If you select the appropriate fields in the field groups table, you can help users to quickly find the data they need, without scrolling through multiple records. For example, if you define field groups on the Items table you can help the order processor to create new customer orders more easily. On the Sales Order card page, they can find specific items for the order, such as 2-inch nails, by using filter-as-you-type, and the drop-down control linked to the Items table. This could be very useful when creating a new customer order over the telephone.  
   
 ## Adding Fields to the Field Groups Table  
  You can add or remove field groups from the Field groups table, using Table Designer.  

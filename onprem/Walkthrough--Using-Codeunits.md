@@ -30,7 +30,7 @@ You can treat codeunits as objects. One codeunit variable can be assigned to ano
 -   The CRONUS International Ltd. demo data company.  
   
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)]. To learn about codeunits in [!INCLUDE[navnow](includes/navnow_md.md)], he plans to create a codeunit that includes **Set** and **Get** functions, create a codeunit that calls two instances of the Set\_Get codeunit, and finally convert the codeunit to a single instance codeunit.  
+ Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)]. To learn about codeunits in [!INCLUDE[navnow](includes/navnow_md.md)], Viktor plans to create a codeunit that includes **Set** and **Get** functions, create a codeunit that calls two instances of the Set\_Get codeunit, and finally convert the codeunit to a single instance codeunit.  
   
 ## Creating the First Codeunit  
  First, you must create a codeunit that includes the **Set** and **Get** functions. You must also write the code for these two functions.  

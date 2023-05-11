@@ -5,7 +5,7 @@ ms.date: 10/01/2021
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Get Users Started with the Checklist
@@ -149,6 +149,9 @@ Don't:
 - Add support for auto-completion when possible, such as for wizards, as this automatically makes the checklist move to the next task and provides the user with a good sense of progress.
 
 - Provide a realistic time stamp of the estimated completion time and strive for tasks that take less than 5 minutes to complete.
+
+> [!IMPORTANT]
+> The expected duration of a checklist task is always minutes, keep this in mind when creating your Guided Experience Items.
 
 ## See also
 

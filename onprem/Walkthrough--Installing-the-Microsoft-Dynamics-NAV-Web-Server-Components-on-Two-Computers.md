@@ -70,7 +70,7 @@ In this walkthrough, you will install the tiers of the [!INCLUDE[nav_web](includ
     >  By default, [!INCLUDE[navnow](includes/navnow_md.md)] Setup uses NETWORK SERVICE as the service account. You can use NETWORK SERVICE instead of a domain user account, but this is considered less secure. If you want to use NETWORK SERVICE, then you do not need this prerequisite.  
 
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for a customer. Viktor is a Microsoft Certified Partner working for CRONUS International Ltd. He has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for customer. To meet the customer's requirements, Viktor has decided to deploy the [!INCLUDE[nav_web](includes/nav_web_md.md)] as follows:  
+ Viktor, a Microsoft Certified Partner working for CRONUS International Ltd has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for customer. To meet the customer's requirements, Viktor has decided to deploy the [!INCLUDE[nav_web](includes/nav_web_md.md)] as follows:  
 
 -   Install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] on one computer, and install [!INCLUDE[nav_server](includes/nav_server_md.md)] and SQL server with [!INCLUDE[navnow](includes/navnow_md.md)] database components on another computer.  
 

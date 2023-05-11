@@ -1,14 +1,14 @@
 ---
 title: Trials and Sign-ups for Business Central online
 description: Learn how to let prospects try out a Business Central trial, and how you can configure and extend their trial experience. 
-author: edupont04
+author: jswymer
 
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.author: edupont
+ms.author: jswymer
 ms.date: 03/28/2023
 ---
 

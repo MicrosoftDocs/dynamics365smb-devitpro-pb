@@ -39,7 +39,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], a document page consists o
 -   Running the page.  
   
 ## Story  
- Simon is a partner working for [!INCLUDE[demoname](includes/demoname_md.md)]. Susan, the order processor, asks Simon to create a sales order page that can display each of her orders and any associated lines. This page is essential to Susan’s daily work, because she uses sales orders to create and track all her customer orders from the creation of the first quote to when the order is shipped. Simon knows that this page must be based on two related source tables and that he must create a page by using the document page type.  
+ Simon is a partner working for [!INCLUDE[demoname](includes/demoname_md.md)]. Susan, the order processor, asks Simon to create a sales order page that can display each of Susan's orders and any associated lines. Susan uses sales orders to create and track all the customer orders from the creation of the first quote to when the order is shipped. Simon knows that this page must be based on two related source tables and that a page must be created using the document page type.  
   
 ### Prerequisites  
  The following prerequisites are required for this walkthrough:  
@@ -79,7 +79,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], a document page consists o
 11. On the **File** menu, choose **Save**. Name your new page **Susan's Sales Order Page**. Set the **ID** field to **50006** and choose the **OK** button.  
   
 ## Adding a Control to Display Fields from the Sales Header Table  
- Simon now wants to add fields to his document page. He creates a group named **General** and adds fields from the **Sales Header** table. He knows that the main content area on a document page displays fields as FastTabs in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
+ Simon now wants to add fields to the document page. Simon creates a group named **General** and adds fields from the **Sales Header** table. Simon knows that the main content area on a document page displays fields as FastTabs in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
 #### To add a control to display fields from the Sales Header table  
   
@@ -113,7 +113,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], a document page consists o
 6.  In the **Save** dialog box, make sure **Compiled** is selected, and then choose the **OK** button.  
   
 ## Adding a Part Control to Display Sales Lines  
- Simon's next task is to add a nested control to display lines from the **Sales Lines** table and the **Sales Order Subform** page. To do this, he must add a Part control to his page and link both objects by using the **Properties** window.  
+ Simon's next task is to add a nested control to display lines from the **Sales Lines** table and the **Sales Order Subform** page. To do this, Simon must add a Part control to the page and link both objects by using the **Properties** window.  
   
 #### To add a part control to display sales lines  
   
@@ -148,7 +148,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], a document page consists o
 12. Use the left and right arrows to indent **Sales Lines** so that it matches the **General** group element.  
   
 ## Adding a FactBox That Is Linked to Lines  
- Simon has already created two FactBoxes for his **Sales Order** page. He now wants to link the **Sales Line** FactBox to the **Sales Lines** table on his document page. To do this, he must change the **ProviderID** property on his FactBox part after he has added it to the page.  
+ After creating two FactBoxes for the **Sales Order** page, Simon now wants to link the **Sales Line** FactBox to the **Sales Lines** table on the document page. To do this, Simon must change the **ProviderID** property on the FactBox part after adding it to the page.  
   
 #### To add a FactBox that is linked to lines  
   

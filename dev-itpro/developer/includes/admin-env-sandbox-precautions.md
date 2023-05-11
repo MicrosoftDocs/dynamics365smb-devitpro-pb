@@ -1,8 +1,8 @@
 ---
-author: edupont04
+author: solsen
 ms.topic: include
-ms.date: 10/26/2021
-ms.author: edupont
+ms.date: 04/12/2023
+ms.author: solsen
 ---
 When an environment is created as a copy of another environment, a number of precautions are taken for that copy:
 
@@ -15,7 +15,7 @@ When an environment is created as a copy of another environment, a number of pre
 - Outbound HTTP calls from extensions are blocked by default and must be approved for each extension, otherwise instead of an external call, the system will display the following error message: *The request was blocked by the runtime to prevent accidental use of production services*.  
 
     To enable outbound HTTP calls, go to the **Extension Management** page in [!INCLUDE [prod_short](prod_short.md)], and choose **Configure**. Then, on the **Extension Settings** page, make sure that **Allow HttpClient Requests** is selected. This setting must be enabled for each extension, including libraries.  
-- Any General Data Protection Regulation (GDPR) action must be handled separately and repeated for the environment. There is no synchronization with the original environment after the copy has been created.  
+- Any action taken for the purpose of complying with privacy laws and regulations must be handled separately and repeated for the environment. There is no synchronization with the original environment after the copy has been created.  
 
     The internal administrator has the same tools and responsibilities for the copy as they do for the original environment. As a data processor, [!INCLUDE [prod_short](prod_short.md)] offers the same level of data protection and data handling restrictions to all types of environments, both sandboxes and production environments.  
     
