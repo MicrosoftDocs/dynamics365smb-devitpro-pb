@@ -229,6 +229,12 @@ It means that your license doesn't allow you to publish that application. A reco
 
 This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Sign an APP Package File](devenv-sign-extension.md).
 
+### Can I use any computer to sign my apps?
+
+No, you need to use a windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
+
+If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not installed, you will get an error similar to: "This file format cannot be signed because it is not recognized".
+
 ### Can I use a self-signed certificate to sign my apps targeting AppSource?
 
 No, it isn't allowed to use a self-signed certificate. The .app package file must be signed using a certificate purchased from a Certification Authority that has its root certificates in Microsoft Windows. You can obtain a certificate from a range of certificate providers, including but not limited to GoDaddy, DigiCert, and Symantec.
