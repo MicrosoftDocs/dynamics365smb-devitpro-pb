@@ -8,7 +8,7 @@ ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.author: edupont
+ms.author: solsen
 ---
 
 # Adding Help Links from Pages, Reports, and XMLports

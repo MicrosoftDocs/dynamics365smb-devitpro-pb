@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
 ms.date: 05/31/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Managing Updates in the Business Central Admin Center

@@ -3,7 +3,7 @@ title: "Legal Resources for Business Central On-Premises"
 description: View a list of links to where you can find legal information that applies to Business Central on-premises deployments.
 author: jswymer
 ms.custom: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article

@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms. search.keywords: cloud, edge, gp, migration, video
 ms.date: 07/06/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Compare Work Processes in Dynamics GP to Business Central

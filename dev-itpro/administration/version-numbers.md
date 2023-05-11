@@ -4,7 +4,7 @@ description: Learn how to read version numbers in Business Central and how to un
 author: edupont04
 
 ms.topic: conceptual
-ms.author: edupont
+ms.author: jswymer
 ms.date: 03/09/2022
 ---
 # Version numbers in Business Central

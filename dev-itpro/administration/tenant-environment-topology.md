@@ -8,7 +8,7 @@ ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 12/28/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Understanding the Infrastructure of Business Central Online

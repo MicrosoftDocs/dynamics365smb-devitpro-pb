@@ -9,7 +9,7 @@ ms.workload: na
 ms.search.keywords:
 ms.search.form: 8610, 8613, 8614, 8615, 8620, 8632
 ms.date: 04/07/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Set Up Company Configuration Packages

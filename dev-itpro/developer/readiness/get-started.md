@@ -3,7 +3,7 @@ title: Get Started Building Apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
 author: a-emniel
 ms.topic: conceptual
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.author: kurtju
 ms.date: 08/02/2022
 ms.custom: intro-internal

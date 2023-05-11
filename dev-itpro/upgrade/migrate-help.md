@@ -6,7 +6,7 @@ ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.date: 04/12/2023
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Migrate Legacy Help to the [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Format

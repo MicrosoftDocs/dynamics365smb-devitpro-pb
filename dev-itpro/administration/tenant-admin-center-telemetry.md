@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Environment Telemetry in the [!INCLUDE[prodadmincenter](../developer/includes/prodadmincenter.md)]

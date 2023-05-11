@@ -5,7 +5,7 @@ author: edupont04
 ms.custom: na
 ms.date: 08/15/2022
 ms.topic: conceptual
-ms.author: edupont
+ms.author: solsen
 ---
 
 # Maintain AppSource Apps and Per-Tenant Extensions in Business Central Online

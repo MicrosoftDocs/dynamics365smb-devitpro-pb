@@ -8,7 +8,7 @@ ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 10/18/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Delegated Administrator Access to Business Central Online

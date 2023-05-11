@@ -2,7 +2,7 @@
 author: edupont04
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: solsen
 ---
 There are currently two available ranges that you can request. Both have some characteristics to keep in mind:
 

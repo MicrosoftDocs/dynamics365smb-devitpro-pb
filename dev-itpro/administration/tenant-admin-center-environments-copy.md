@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, copy
 ms.date: 11/29/2021
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Copy a Production or Sandbox Environment in the Admin Center

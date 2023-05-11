@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 08/18/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Major Updates and Minor Updates for Business Central Online

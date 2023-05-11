@@ -8,7 +8,7 @@ ms.workload: na
 ms.search.keywords: preview, trial, sandbox, subscription
 ms.search.form: 1803, 1801
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 
 ---
 # Business Central Trials and Subscriptions

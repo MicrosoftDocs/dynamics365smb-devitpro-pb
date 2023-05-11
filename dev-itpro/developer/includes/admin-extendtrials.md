@@ -2,7 +2,7 @@
 author: edupont04
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
+ms.author: solsen
 ---
 An organization can sign up for a free trial of [!INCLUDE[prod_short](prod_short.md)]. When they first sign up for [!INCLUDE[prod_short](prod_short.md)], they get access to an evaluation version that does not include all capabilities in [!INCLUDE[prod_short](prod_short.md)]. They can then switch to the 30 day trial experience to enable all capabilities.  
 

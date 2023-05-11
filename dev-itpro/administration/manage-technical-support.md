@@ -7,7 +7,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/25/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Managing technical support

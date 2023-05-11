@@ -2,7 +2,7 @@
 author: edupont04
 ms.topic: include
 ms.date: 07/27/2021
-ms.author: edupont
+ms.author: solsen
 ---
 Sandbox environments are meant to be precisely that: Environments that you can play around with, use as a testbed for development, and delete at will. You can deploy apps straight from Visual Studio Code to a sandbox environment, and you can attach a debugging session to a sandbox.  
 

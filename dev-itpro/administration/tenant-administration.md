@@ -8,7 +8,7 @@ ms.workload: na
 ms.reviewer: na
 ms.search.keywords: administration, tenant, admin, environment
 ms.date: 05/25/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Administration of Business Central Online
