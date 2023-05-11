@@ -39,7 +39,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Release Plan
 
-If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 1 (release from April 2023 through September 2023), find the link to the release plan [here](aka.ms/BCReleasePlan).
+If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 1 (release from April 2023 through September 2023), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
 ## Upgrade to 22.1
 
@@ -56,7 +56,7 @@ To manage Dynamics 365 Business Central customers via GDAP we recommend requesti
 
 
 **Did you read this quarter's Business Central newsletter?**  
-On April 11, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on  [aka.ms/BCNews](aka.ms/BCNews). 
+On April 11, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on  [aka.ms/BCNews](https://aka.ms/BCNews). 
 
 **Join us for updates on LinkedIn!**  
 Follow the new company page for Microsoft Dynamics 365 Business Central on LinkedIn. We’ll share updates, announcements, and other “good to know” stuff. Join us [here](https://www.linkedin.com/company/microsoft-dynamics-365-business-central/). 
