@@ -19,12 +19,12 @@ Would you like to know what has changed in update 22.1? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5026932) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes  
-- [Turn off event-based sync for specific integration table mappings](/dynamics365-business-central/turn-off-event-based-synch-specific-integration-table-mappings)
-- [Synchronize returns, refunds from Shopify](/dynamics365-business-central/synchronize-returns-refunds-shopify)
-- [Save time with automatic account codes](/dynamics365-business-central/automatic-account-codes)
-- [Swedish localization delivered as extension](/dynamics365-business-central/swedish-localization-app--delocalization) 
-- [Attach AL debugger to active session or next session](/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
-- [Non-deductible, partly deductible VAT expands functionality](/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
+- [Turn off event-based sync for specific integration table mappings](/dynamics365/release-plan/2023wave1/dynamics365-business-central/turn-off-event-based-synch-specific-integration-table-mappings)
+- [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/dynamics365-business-central/synchronize-returns-refunds-shopify)
+- [Save time with automatic account codes](/dynamics365/release-plan/2023wave1/dynamics365-business-central/automatic-account-codes)
+- [Swedish localization delivered as extension](/dynamics365/release-plan/2023wave1/dynamics365-business-central/swedish-localization-app--delocalization) 
+- [Attach AL debugger to active session or next session](/dynamics365/release-plan/2023wave1/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
+- [Non-deductible, partly deductible VAT expands functionality](/dynamics365/release-plan/2023wave1/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
 - Partners can control welcome banner texts
 - App telemetry to support the trials and onboarding tashboard to better understand and further improve evaluation and onboarding scenarios 
 
