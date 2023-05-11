@@ -233,7 +233,7 @@ This section contains frequently asked questions related to the code-signing req
 
 No, you need to use a Microsoft Windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
 
-If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not installed, you will get an error similar to: "This file format cannot be signed because it is not recognized".
+If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not installed, you'll get an error similar to: "This file format cannot be signed because it is not recognized".
 
 ### Can I use a self-signed certificate to sign my apps targeting AppSource?
 
