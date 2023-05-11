@@ -231,7 +231,7 @@ This section contains frequently asked questions related to the code-signing req
 
 ### Can I use any computer to sign my apps?
 
-No, you need to use a windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
+No, you need to use a Microsoft Windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
 
 If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not installed, you will get an error similar to: "This file format cannot be signed because it is not recognized".
 
