@@ -25,8 +25,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Swedish localization delivered as extension](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/swedish-localization-app--delocalization) 
 - [Attach AL debugger to active session or next session](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
 - [Non-deductible, partly deductible VAT expands functionality](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
-- Partners can control welcome banner texts
-- App telemetry to support the trials and onboarding tashboard to better understand and further improve evaluation and onboarding scenarios 
+- [Partners can control welcome banner texts](../administration/onboarding-welcome-banner.md)
+- [Measure onboarding time of customers, apps and features](../administration/onboarding-telemetry.md)
 
 ## Localization updates
 
@@ -67,7 +67,7 @@ In March, we will be hosting the following call, which you can already register 
 - **May 16:** Business Central Administration Overview
 - **June 6:** Copilot and AI
 - **June 13:** Onboarding your customers to Business Central
-
+- **June 20:** Review of the new E-invoicing design 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
 **Looking for an aka.ms link?**  
