@@ -25,8 +25,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Swedish localization delivered as extension](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/swedish-localization-app--delocalization) 
 - [Attach AL debugger to active session or next session](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
 - [Non-deductible, partly deductible VAT expands functionality](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
-- [Partners can control welcome banner texts](/dynamics365/business-central/dev-itpro/administration/onboarding-welcome-banner)
-- [Measure onboarding time of customers, apps and features](/dynamics365/business-central/dev-itpro/administration/onboarding-telemetry)
+- [Partners can control welcome banner texts](../administration/onboarding-welcome-banner.md)
+- [Measure onboarding time of customers, apps and features](../administration/onboarding-telemetry.md)
 
 ## Localization updates
 
