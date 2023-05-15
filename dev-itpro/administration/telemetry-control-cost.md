@@ -19,16 +19,15 @@ ms.custom: bac-template
 [!INCLUDE[telemetryControlCost](../includes/include-telemetry-control-cost.md)]
 
 ### Data ingestion cost strategies
-To control data ingestion cost, consider following this practice when setting up telemetry
+To control data ingestion cost, consider the following practice when setting up telemetry
 1. Set a daily cap on how much data that can be ingested (and what you are willing to pay for)
 2. Set up an alert when daily cap is reached (so that you know that you do not get all data)
 3. Use sampling or Data Collection Rules to adjust data ingestion
 
-See also
-* [Cost optimization in Azure Monitor](https://learn.microsoft.com/en-gb/azure/azure-monitor/best-practices-cost)
-* [Set daily cap on Log Analytics workspace](https://learn.microsoft.com/en-gb/azure/azure-monitor/logs/daily-cap)
+For more information, see [Cost optimization in Azure Monitor](https://learn.microsoft.com/en-gb/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](https://learn.microsoft.com/en-gb/azure/azure-monitor/logs/daily-cap).
 
 ### Calculating the cost of data ingestion
+
 Currently, the first 4GB of data ingested per month is free. To stay below this limit, you can set up a daily cap of 130 MB per day.
 
 One telemetry event typically consumes 2-10 KB depending of the type of event. The max size for one event is 32 KB.
@@ -40,9 +39,11 @@ Current price for data ingestion is 2.76 USD/GB (for pay-as-you-go). If we assum
 Typically, non-interactive sessions such as web service calls or background sessions are the ones that can generate a lot of data. These are the ones you could consider filtering away to reduce cost.
 
 ### Examples of cost of data ingestion
-One partner that use telemetry a lot reported that they on average spend 7.3 USD per customer per month on data ingestion. For their large customers they spend up to 178 USD per month (without setting up data collection rules, sampling, or daily cap.) 
 
-Their top 10 customer cost per month on telemetry are :
+One partner that uses telemetry a lot reported that they on average spend 7.3 USD per customer per month on data ingestion. For their large customers they spend up to 178 USD per month (without setting up data collection rules, sampling, or daily cap). 
+
+Their top 10 customer cost per month on telemetry is:
+
 | Rank | Monthly Cost (in USD) |
 | ---- | --------------------- |
 |1 |178.68 |
@@ -56,7 +57,8 @@ Their top 10 customer cost per month on telemetry are :
 |9 |22.79 |
 |10|17.65|
 
-Note that these numbers can vary and should only be taken as guidance. You need to measure your own telemetry cost based on data ingestion volume.
+> [!NOTE]  
+> These numbers can vary and should only be taken as guidance. You need to measure your own telemetry cost based on data ingestion volume.
 
 ### Distribution of telemetry data
 
