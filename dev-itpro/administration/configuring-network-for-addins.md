@@ -4,7 +4,7 @@ description: This article includes information that helps administrators configu
 author: mikebcMSFT
 ms.topic: conceptual
 ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.search.keywords: configure, port, firewall, proxy
 ms.date: 04/01/2021
 ms.author: mikebc

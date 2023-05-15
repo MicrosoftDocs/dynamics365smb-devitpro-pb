@@ -2,7 +2,7 @@
 title: Teaching tips and in-app tours for onboarding users
 description: Learn about the teaching tips that you can apply to your Business Central to help users get started.
 author: sorenfriisalexandersen
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.topic: conceptual
 ms.date: 03/22/2022
 ms.author: soalex
