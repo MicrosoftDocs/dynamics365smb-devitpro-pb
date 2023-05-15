@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms. search.keywords: cloud, edge, gp, migration
 ms.search.form: 4003
 ms.date: 08/23/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Migrate Dynamics GP Data to the Cloud

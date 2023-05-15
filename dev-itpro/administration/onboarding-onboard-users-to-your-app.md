@@ -5,7 +5,7 @@ ms.date: 08/03/2022
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Onboard users to your app

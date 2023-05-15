@@ -67,13 +67,13 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
-### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
-### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
-### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
-
+### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
+#### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
+#### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
+#### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
+#### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
+#### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 #### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
@@ -901,9 +901,9 @@
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
 
 ### Using .NET (on-premises only)
@@ -972,7 +972,7 @@
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
 ##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
-##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User scenarios](compliance/apptest-userscenario.md)
 #### [Requirements for connectivity apps](compliance/connectivity-apps-requirements.md)
