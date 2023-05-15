@@ -901,9 +901,9 @@
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
 
 ### Using .NET (on-premises only)
@@ -972,7 +972,7 @@
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
 ##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
-##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User scenarios](compliance/apptest-userscenario.md)
 #### [Requirements for connectivity apps](compliance/connectivity-apps-requirements.md)
