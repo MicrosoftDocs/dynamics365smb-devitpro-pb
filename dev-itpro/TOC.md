@@ -67,13 +67,13 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
-### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
-### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
-### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
-
+### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
+#### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
+#### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
+#### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
+#### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
+#### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 #### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
@@ -429,8 +429,10 @@
 ## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
-#### [JSON files](developer/devenv-json-files.md)
-#### [The migration.json file](developer/devenv-migration-json-file.md)
+#### JSON files
+##### [JSON files](developer/devenv-json-files.md)
+##### [Launch JSON file](developer/devenv-json-launch-file.md)
+##### [Migration JSON file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
@@ -1220,9 +1222,9 @@
 ## Integrating with Microsoft Power Automate
 ### [Power Automate integration overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
-### [Create Automated Flows](powerplatform/automate-workflows.md)
-### [Create Instant Flows](powerplatform/instant-flows.md)
-### [Manage Exisitng Power Automate Flows](powerplatform/manage-power-automate-flows.md)
+### [Create automated flows](powerplatform/automate-workflows.md)
+### [Create instant flows](powerplatform/instant-flows.md)
+### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
@@ -1298,6 +1300,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 #### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)

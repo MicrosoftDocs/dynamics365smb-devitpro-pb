@@ -48,7 +48,7 @@ Represents a sales shipment in [!INCLUDE[prod_short](../../../includes/prod_shor
 |externalDocumentNumber|string|Specifies an external document number for the sales shipment.|
 |invoiceDate|date|The invoice date .|
 |postingDate|date|The date that the sales shipment   is posted.|
-|dueDate|date|T he date the sales shipment is due.|
+|dueDate|date|The date the sales shipment is due.|
 |customerPurchaseOrderReference|string|The customer purchase order reference for the invoice.|
 |customerNumber|string|The customer's number.|
 |customerName|string|The customer's name.|

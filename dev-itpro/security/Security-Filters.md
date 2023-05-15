@@ -64,7 +64,7 @@ Query objects and record objects, including both explicit record variables and i
   
  If a record is set to **Filtered**, then any security filters that have been set are respected for this instance of the record. To the user, it is as if records outside the security filters that do not exist.  
 
- An example scenario in which you use the **Filtered** value is that one salesperson is not allowed to view customers, sales quotes, or sales orders that belong to another salesperson. When the salesperson opens a list of customers or sales documents, or runs reports such as the Customer – Top 10 List report, he sees his filtered view of customers, sales quotes, and sales orders.  
+ An example scenario in which you use the **Filtered** value is that one salesperson is not allowed to view customers, sales quotes, or sales orders that belong to another salesperson. When the salesperson opens a list of customers or sales documents, or runs reports such as the Customer – Top 10 List report, they see their filtered view of customers, sales quotes, and sales orders.  
 
 ## Validated
   
@@ -83,7 +83,7 @@ Query objects and record objects, including both explicit record variables and i
   
  If a record is set to **Ignored**, then any security filters that have been set are ignored for this instance of the record.  
 
- An example scenario in which you use the **Ignored** value is that one salesperson is not allowed to view customers, sales quotes, or sales orders that belong to another salesperson. However, to post her sales orders, the salesperson must have access to all entries in the Customer Ledger Entry table so that the posting algorithm can find the last sales order entry number and generate the correct number for the next entry. In the code that posts sales orders, you set the **SecurityFiltering** property of the record variable to **Ignored**, but for record variables in other parts of the code, you set the **SecurityFiltering** property to either **Filtered** or **Validated**.  
+ An example scenario in which you use the **Ignored** value is that one salesperson is not allowed to view customers, sales quotes, or sales orders that belong to another salesperson. However, to post their sales orders, the salesperson must have access to all entries in the Customer Ledger Entry table so that the posting algorithm can find the last sales order entry number and generate the correct number for the next entry. In the code that posts sales orders, you set the **SecurityFiltering** property of the record variable to **Ignored**, but for record variables in other parts of the code, you set the **SecurityFiltering** property to either **Filtered** or **Validated**.  
 
  When you set the **SecurityFiltering** property on a record to **Ignored**, the administrator who sets a security filter is not informed that the security filter will be ignored. You must be careful when you set the **SecurityFiltering** property that it does not cause unintended information disclosure.  
 

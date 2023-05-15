@@ -1,10 +1,10 @@
 ---
-author: edupont04
+author: solsen
 ms.service: dynamics365-business-central
 ms.topic: include
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.date: 01/06/2022
-ms.author: edupont
+ms.author: solsen
 ---
 About one month before a major update, you can try out new functionality in preview environments. Preview environments are [!INCLUDE [prod_short](prod_short.md)] online sandbox environments that you create on a preview version of the application. When you create the new sandbox environment, choose the preview version marked as *(Preview)* from the version list. This way, you get a new sandbox environment with a preview version of the application.  
 

@@ -53,7 +53,7 @@ Directions EMEA is your opportunity to network with other partners in the Dynami
 Conference details: 
 - October 27-29 in Milan
 - MiCo Milano Convention Center, Piazzale Carlo Magno, 1 – 20149, Milan
-- Event website: https://directions4partners.com/events/directions-emea/  
+- Event website: https://directions4partners.com/
 
 **Customer Consent capabilities for all features that exchange data with 3rd party services**  
 Business Central capabilities enable companies to seamlessly integrate with other parties needed to achieve business goals or statutory obligations.

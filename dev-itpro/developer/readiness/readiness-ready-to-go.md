@@ -24,6 +24,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 - Minor updates: [aka.ms/BCLastMinorUpdate](https://aka.ms/BCLastMinorUpdate) 
 - Missing a feature? Post or vote for ideas on: [aka.ms/BCIdeas](https://aka.ms/BCIdeas) 
 - Optional features that are now mandatory [https://aka.ms/BCFeatureMgmt](https://aka.ms/BCFeatureMgmt)
+- Where is Business Central available? [aka.ms/BCCountries](https://aka.ms/BCCountries)
 
 ## Stay up to date
 - Discover what's new for partners in the Business Central newsletter: [aka.ms/BCNews](https://aka.ms/BCNews)
@@ -34,6 +35,7 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Social and blogs
 - Stay tuned about what’s going on in the #MSDyn365BC community: [twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) (Use #BCALHelp on Twitter for quick hints on how to do things) 
+- Follow us on LinkedIn: [aka.ms/BCLinkedIn](https://aka.ms/BCLinkedIn)
 - Be a part of the community for [!INCLUDE [prod_short](../includes/prod_short.md)]: [community.dynamics.com/business](https://community.dynamics.com/business) 
 - Blog for IT professionals: [cloudblogs.microsoft.com/dynamics365/it/product/business-central](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)
 - Blog for decision makers: [cloudblogs.microsoft.com/dynamics365/bdm](https://cloudblogs.microsoft.com/dynamics365/bdm)
@@ -113,16 +115,21 @@ Are you a Microsoft partner working with Business Central and looking for releva
 
 ## Security, Privacy, and Compliance
 - Security and Privacy documentation: [aka.ms/BCSecurity](https://aka.ms/BCSecurity) 
+- Security in Business Central: [aka.ms/BCSecurity](https://aka.ms/BCSecurity)
+- Databases and backups: [aka.ms/bcbackups](https://aka.ms/BCBackups)
+- Compliance overview: [aka.ms/BCCompliance](https://aka.ms/BCCompliance)
 - Application compliance: [aka.ms/BCAppCompliance](https://aka.ms/BCAppCompliance)
+
 
 ## Licensing and Pricing  
 - [Business Central licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409)
 - [Business Central Universal Code Initiative](https://partner.microsoft.com/resources/collection/microsoft-publisher-program#/)
-- [Business Central team members license documentation]()
 
-## Licensing and Pricing on-premises only  
-- [Business Central on-premises licensing guide]()
-- [Business Central on-premises licensing FAQ]()
+
+## Shopify
+- Shopify start: [aka.ms/BCShopifyStart](https://aka.ms/BCShopifyStart)
+- Shopify FAQ: [aka.ms/BCShopifyFAQ](https://aka.ms/BCShopifyFAQ)
+- Shopify consultant: [aka.ms/BCShopifyConsultant](https://aka.ms/BCShopifyConsultant)
 
 ## Events for partners
 - Business Central Launch Event: [aka.ms/BCLE](https://aka.ms/BCLE)

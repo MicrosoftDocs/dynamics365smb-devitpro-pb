@@ -4,7 +4,7 @@ description: "Get answers to some of your questions about testing when you build
 author: freddyk
 ms.custom: na
 ms.date: 08/15/2022
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.topic: conceptual
 ms.author: freddyk
 ---

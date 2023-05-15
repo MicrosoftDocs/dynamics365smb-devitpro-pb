@@ -5,7 +5,7 @@ ms.date: 10/01/2021
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ---
 
 # Get Users Started with the Checklist

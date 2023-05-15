@@ -32,7 +32,7 @@ XMLports are used to export data from a [!INCLUDE[navnow](includes/navnow_md.md)
 -   The [!INCLUDE[demolong](includes/demolong_md.md)] installed.  
   
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)]. He has been asked to export records from the **Item** table to a CSV file. The records will include only the **No.**, **Description**, **Shelf Number**, and **Unit price** fields. The information will be shared with other colleagues who work on a different computer system. The CSV file can be used by any computer system in the company. Viktor knows that he can use XMLports to convert the records in the table to a CSV file format that can easily be shared with colleagues.  
+ Viktor, a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] has been asked to export records from the **Item** table to a CSV file. The records will include only the **No.**, **Description**, **Shelf Number**, and **Unit price** fields. The information will be shared with other colleagues who work on a different computer system. The CSV file can be used by any computer system in the company. Viktor can use XMLports to convert the records in the table to a CSV file format that can easily be shared with colleagues.  
   
 ## Designing the XMLport  
  You create an XMLport by designing it in XMLport Designer and setting the properties. You define the table and fields that you want to export in XMLport Designer. You then compile and save the XMLport.  

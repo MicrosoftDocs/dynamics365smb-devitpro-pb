@@ -60,7 +60,7 @@ The [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] require a supporte
     >  By default, [!INCLUDE[navnow](includes/navnow_md.md)] Setup uses NETWORK SERVICE as the service account. You can use NETWORK SERVICE instead of a domain user account, but this is considered less secure. If you want to use NETWORK SERVICE, then you do not need this prerequisite.  
 
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for a customer. To meet the customer's requirements, Viktor has decided to deploy the [!INCLUDE[nav_web](includes/nav_web_md.md)] as follows:  
+ Viktor, a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] has been tasked with deploying [!INCLUDE[nav_web](includes/nav_web_md.md)] for a customer. To meet the customer's requirements, Viktor has decided to deploy the [!INCLUDE[nav_web](includes/nav_web_md.md)] as follows:  
 
 -   Install the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)], [!INCLUDE[nav_server](includes/nav_server_md.md)], and SQL server with [!INCLUDE[navnow](includes/navnow_md.md)] database components on one computer.  
 
@@ -116,7 +116,7 @@ The [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] require a supporte
  A website that has the name [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Web Client has been installed on IIS. The website uses port 8080. A website that has the name [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Web Client has been installed on IIS. The website includes a web server instance for [!INCLUDE[nav_web](includes/nav_web_md.md)] that has the name [!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]. The default physical path of the web server instance is C:\\inetpub\\wwwroot\\[!INCLUDE[nav_server_instance](includes/nav_server_instance_md.md)]\\.  
 
 ##  <a name="Firewall"></a> Allowing Inbound Communication on the Port Through the Windows Firewall (Windows 8.0 and 8.1 only)  
- Viktor installed the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] on a computer running Windows 8.0. Port 8080 is typically blocked by Windows Firewall. To allow communication to the port from client devices, he must create an inbound rule on the port 8080 in the Windows Firewall setup. 
+ Viktor installed the [!INCLUDE[nav_web_server](includes/nav_web_server_md.md)] on a computer running Windows 8.0. Port 8080 is typically blocked by Windows Firewall. To allow communication to the port from client devices, Viktor must create an inbound rule on the port 8080 in the Windows Firewall setup. 
 
 #### To create an inbound rule on the port that is used by [!INCLUDE[nav_web](includes/nav_web_md.md)]  
 
