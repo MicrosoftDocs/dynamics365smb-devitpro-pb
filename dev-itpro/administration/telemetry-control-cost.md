@@ -66,19 +66,19 @@ Their top 10 customer cost per month on telemetry is:
 
 ### Use data collection rules (DCR)
 
-Azure Log Analytics (the backend of [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]) has a feature called Data Collection Rules (DCR). DCRs allow you to define rules on what is ingested into your telemetry resource. Use them to filter away unneeded telemetry data. which speeds up query performance and saves cost.
+Azure Log Analytics (the backend of [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)]) has a feature called Data Collection Rules (DCR). DCRs allow you to define rules on what is ingested into your telemetry resource. Use them to filter away unneeded telemetry data, which speeds up query performance and saves cost.
 
-To use DCRs. your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource must be converted to Workspace-based (which enables Log Analytics as your back end). For recently created [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources. Workspace-based is the default setting. For older [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources, you need to convert them (takes a few minutes).
+To use DCRs, your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource must be converted to Workspace-based (which enables Log Analytics as your back-end). For recently created [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources, Workspace-based is the default setting. For older [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources, you need to convert them (takes a few minutes).
 
 DCRs are defined on your _workspace_ under the menu item _Tables_. Business Central currently logs to two tables: _AppTraces_ and _AppPageViews_. These tables are the back-end tables for the tables _traces_ and _pageviews_ that you normally use in KQL queries. Right-click on a table and go to **Edit transformation** and select the **Transformation Editor** button to add a KQL query to filter away certain types of data.
 
-To help you get started with setting up Data Collection Rules, we added many sample KQL queries that illustrate common filter scenarios:
+To help you get started with setting up Data Collection Rules, we've added many sample KQL queries that illustrate common filter scenarios:
 
-- how to filter out one or more events (I don't need these events, no need to pay for them)
-- how to only filter part of an event (I only want to see events when something fails or I only want 10 percent of these events)
-- how to filter on Azure AD tenant (I'm an ISV and I want to start slowly on telemetry, so only enabling it for a few customers)
-- how to filter on environment type (I'm an ISV and I only want data from production environments)
-- how to filter on app dimensions (I'm a VAR and this app/publisher is too noisy)
+- How to filter out one or more events (I don't need these events, no need to pay for them)
+- How to only filter part of an event (I only want to see events when something fails or I only want 10 percent of these events)
+- How to filter on Azure AD tenant (I'm an ISV and I want to start slowly on telemetry, so only enabling it for a few customers)
+- How to filter on environment type (I'm an ISV and I only want data from production environments)
+- How to filter on app dimensions (I'm a VAR and this app/publisher is too noisy)
 
 For sample queries, go to [Data Collection Rule KQL samples](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/KQL/Queries/DataCollectionRules).
 
