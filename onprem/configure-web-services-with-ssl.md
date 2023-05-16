@@ -28,7 +28,7 @@ Secure Sockets Layer \(SSL\) is a cryptographic protocol that helps provide secu
     >  The makecert.exe tool is only required if you do not already have an SSL certificate and you want to create a certificate for test purposes.  
 
 ## Story  
- Victor, who is a business systems developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], knows that his implementation of web services applications for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is unlikely to pass a company security audit unless he encrypts sensitive data that is transmitted over the company intranet. He decides to protect web services communication with SSL.  
+ Victor, who is a business systems developer at [!INCLUDE[demoname](../developer/includes/demoname_md.md)], knows that their implementation of web services applications for [!INCLUDE[prodshort](../developer/includes/prodshort.md)] is unlikely to pass a company security audit unless the sensitive data that is transmitted over the company intranet is encrypted. Victor decides to protect web services communication with SSL.  
 -->
 ##  <a name="ObtainCert"></a> Obtain an SSL Certificate
   

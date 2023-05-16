@@ -49,7 +49,7 @@ In a typical business scenario, developers create control add-ins using Microsof
 
 
 ## Story  
- Simon is a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been told that the users of the [!INCLUDE[nav_web](includes/nav_web_md.md)] want to see Bing Maps displayed on the Web client. He wants to use the client extensibility framework to test how to do this on a separate page first.  
+ Simon, a software developer working for [!INCLUDE[demoname](includes/demoname_md.md)] has been told that the users of the [!INCLUDE[nav_web](includes/nav_web_md.md)] want to see Bing Maps displayed on the Web client. Simon wants to use the client extensibility framework to test how to do this on a separate page first.  
 
 ## Creating a Control Add-in With Visual Studio  
  [!INCLUDE[navnow](includes/navnow_md.md)] includes the Microsoft.Dynamics.Framework.UI.Extensibility.dll assembly that defines the model for creating [!INCLUDE[navnow](includes/navnow_md.md)] control add-ins. The [!INCLUDE[navnow](includes/navnow_md.md)] API provides the binding mechanism between the [!INCLUDE[navnow](includes/navnow_md.md)] control add-in and the [!INCLUDE[navnow](includes/navnow_md.md)] framework.  

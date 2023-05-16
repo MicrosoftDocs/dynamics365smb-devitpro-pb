@@ -34,7 +34,7 @@ This walkthrough demonstrates how to create a query that links three tables. It 
 -   [!INCLUDE[demolong](includes/demolong_md.md)].  
   
 ## Story  
- Viktor is a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] He has been asked to create a query that displays the total number of items in each sales order for each salesperson. Viktor knows how to do this in SQL, but he wants to create a [!INCLUDE[navnow](includes/navnow_md.md)] query.  
+ Viktor, a Microsoft Certified Partner working for [!INCLUDE[demoname](includes/demoname_md.md)] has been asked to create a query that displays the total number of items in each sales order for each salesperson. Viktor knows how to do this in SQL, but wants to create a [!INCLUDE[navnow](includes/navnow_md.md)] query.  
   
  The SQL query for this dataset that Viktor wants is the following:  
 <!-- 
@@ -107,7 +107,7 @@ GROUP BY SP.Name
  ![Query joins three tables.](media/Query_WalkthroughThreeTables.png "Query\_WalkthroughThreeTables")  
   
 ## Specifying the Data Item Links  
- Viktor has added the data items and columns to the query, but he must specify how to link the data items to display the information he wants and eliminate unwanted records. For this query, Viktor wants the following:  
+ Viktor has added the data items and columns to the query, and must specify how to link the data items to display the needed information and eliminate unwanted records. For this query, Viktor wants the following:  
   
 -   Only salespersons who have sales orders.  
   
@@ -180,7 +180,7 @@ GROUP BY SP.Name
 11. In the **SL – Properties** window, in the **Value** field of the **DataItemLinkType** property, choose **Exclude Row If No Match** from the drop-down list box.  
   
 ## Specifying Filters  
- Viktor wants to limit the records in the dataset to include only sales lines in which the **Document Type** is **Order** and the **Type** is **Item**. To achieve this, he will set up a filter on the **Sales Line** data item of the query.  
+ Viktor wants to limit the records in the dataset to include only sales lines in which the **Document Type** is **Order** and the **Type** is **Item**. To achieve this, Viktor will set up a filter on the **Sales Line** data item of the query.  
   
 #### To specify filters  
   
@@ -210,7 +210,7 @@ GROUP BY SP.Name
 9. Close the **Sales\_Line – Properties** window,  
   
 ## Saving and Running the Query  
- Viktor has finished designing his query. He saves the query and then runs it to verify that the resulting dataset is what he wants. He runs the query from Object Designer. The call to run the query runs on [!INCLUDE[nav_server](includes/nav_server_md.md)] and opens a view of the dataset in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
+ After designing the query, Viktor saves the query and then runs it to verify that the resulting dataset. Viktor runs the query from Object Designer. The call to run the query runs on [!INCLUDE[nav_server](includes/nav_server_md.md)] and opens a view of the dataset in the [!INCLUDE[nav_windows](includes/nav_windows_md.md)].  
   
 #### To save and run the query  
   

@@ -226,7 +226,7 @@ The steps in this task continue to use the [!INCLUDE[adminshell](../developer/in
 
 The application database includes the **$ndo$dbproperty** table which stores the application version. In the client, the application version is shown the Help and Support page. This information can be useful for support. The application version number is not automatically increased during upgrade. Although this step is not necessary for upgrading 
 
-he Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
+The Get-NavApplication cmdlet comes from the $ndo$dbproperty table in the database.
 
 To increase the application version of the application database, use the [Set-NAVApplication](/powershell/module/microsoft.dynamics.nav.management/set-navapplication) cmdlet to increase the application version number of the database to the version 15.0 application version.
 

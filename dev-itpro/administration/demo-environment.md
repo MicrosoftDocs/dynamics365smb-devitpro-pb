@@ -1,12 +1,12 @@
 ---
 title: Prepare demonstrations of Business Central
 description: Get an overview of your options for setting up demos of Dynamics 365 Business Central online that will help you turn your prospects into customers.
-author: edupont04
+author: jswymer
 ms.custom: na
 ms.reviewer: na
 ms.topic: conceptual
 ms.search.form: 2500, 2502, 20350
-ms.author: edupont
+ms.author: jswymer
 ms.date: 09/22/2022
 ---
 # Prepare Demonstration Environments of [!INCLUDE[prod_long](../developer/includes/prod_long.md)]

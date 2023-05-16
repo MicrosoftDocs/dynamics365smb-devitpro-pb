@@ -3,7 +3,7 @@ title: "Software lifecycle policy and on-premises updates"
 description: "Learn about the lifecycle and product life of Dynamics 365 Business Central versions for on-premises deployments."
 author: jswymer
 ms.custom: na
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.topic: article
 ms.author: jswymer
 ms.date: 04/13/2021

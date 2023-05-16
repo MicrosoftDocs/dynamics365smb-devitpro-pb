@@ -70,7 +70,7 @@ In [!INCLUDE[navnow](includes/navnow_md.md)], actions are displayed at the top o
 ### New Document  
  The New action is often displayed both in the Home tab and in the Actions tab. You can use this action to open new documents within [!INCLUDE[navnow](includes/navnow_md.md)]. When you create a New action in Action Designer, you must use the NewDocumentItems SubType.  
   
- Example: On the Customers page, if the order processor wants to create a new invoice, she can open the New page directly from the Actions tab. This is useful as she creates new sales invoices daily.  
+ Example: On the Customers page, if the order processor wants to create a new invoice, they can open the New page directly from the Actions tab. This is useful as they create new sales invoices daily.  
   
 ### Home Items  
  Home Items are actions appear under the Home button, on the Role Center navigation pane. This navigation has a tree structure, and each node in the tree links to a list page.  
@@ -95,7 +95,7 @@ In [!INCLUDE[navnow](includes/navnow_md.md)], actions are displayed at the top o
   
  Each promoted action has an icon associated with it. You can accept a default icon for your promoted action or decide to use a larger icon that makes it more prominent to the user. Use the Properties window in the Action Designer to set the size and location of an icon.  
   
- Example: On the Sales Orders list page, Post is promoted to the ribbon, and included in the Process group. This helps the order processor in her work, because posting sales orders is one of her most important daily tasks.  
+ Example: On the Sales Orders list page, Post is promoted to the ribbon, and included in the Process group. This helps the order processor in their work, because posting sales orders is one of their most important daily tasks.  
   
 ## Actions at Runtime  
  An action can trigger code to run, such as posting a document or otherwise modifying a record in a table. When a user chooses an action, one of the following pieces of logic will happen in addition to the code that the action itself triggers:  

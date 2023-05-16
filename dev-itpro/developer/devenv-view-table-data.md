@@ -81,7 +81,8 @@ In the `launch.json` file for the project, set the `"startupObjectType"` paramet
 
 ```
 
-For more information about the `launch.json` file, see [Launch.json file](devenv-json-files.md#Launchjson).
+For more information about the `launch.json` file, see [Launch JSON file](devenv-json-launch-file.md).
+
 <!--
 Users: 
 Must have read access to the table 

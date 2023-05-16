@@ -1,7 +1,7 @@
 ---
 title: Major Updates and Minor Updates for Business Central Online
 description: Learn about the timeline for how updates of Business Central online roll out. You can prepare for both major updates and minor updates with minimal disruption of your users' productivity.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na
@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
 ms.date: 08/18/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Major Updates and Minor Updates for Business Central Online
 
-This article provides an overview of what you need to know about how a major or minor update for [!INCLUDE[prod short](../developer/includes/prod_short.md)] rolls out, and how the underlying service updates. It includes key dates, actions you need take, and answers some common questions.  
+This article provides an overview of what you need to know about how a major or minor update for [!INCLUDE[prod short](../developer/includes/prod_short.md)] rolls out, and how the underlying service updates. It includes key dates, actions you need to take, and answers some common questions.  
 
 [!INCLUDE [service-updates](../includes/service-updates.md)]
 
@@ -104,7 +104,7 @@ For more information, see [Set the update window for each environment](tenant-ad
 
 ### Delayed scheduling of updates
 
-In some cases, even after the update is available in your area, you are still not be able to set the update date (schedule environment update). This condition can happen for one of the following reasons:  
+In some cases, even after the update is available in your area, you are still not able to set the update date (schedule environment update). This condition can happen for one of the following reasons:  
 
 - Your environment hasn't yet updated to the latest minor update of the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. All environments must be updated to the last available minor update of the previous version of [!INCLUDE [prod_short](../developer/includes/prod_short.md)] before they can be scheduled for the next major version. You can check the version information in the **Troubleshooting** section of the **Help and Support** page in [!INCLUDE [prod_short](../developer/includes/prod_short.md)] and in the **Version Management** section in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)]. For more information, see [Version numbers in Business Central](version-numbers.md).  
 
@@ -123,7 +123,7 @@ In some cases, even after the update is available in your area, you are still no
     While most AppSource apps are kept up to date by the app providers, a particular app might need more time to prepare for the next major update and isn't yet available for it. In this situation, contact the app owner to understand their availability plans.  
 
 > [!TIP]
-> Make sure each environment has the right contacts set up t get email notification. For more information, see [Managing Tenant-Specific Notifications](tenant-admin-center-notifications.md).
+> Make sure each environment has the right contacts set up to get email notification. For more information, see [Managing Tenant-Specific Notifications](tenant-admin-center-notifications.md).
 
 ## Failed updates and rescheduling
 
@@ -143,7 +143,7 @@ In critical circumstances, Microsoft can decide to postpone the rollout of the u
 
 If we do not know the nature of the issue and the solution in advance, we can't predict when the updates will resume again. As a result, neither the email nor the notification in [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)] will contain the information about the expected resume date. In these extreme cases, Microsoft actively works on resuming updates as a matter of highest priority once the issue is addressed. You'll receive another email notification when updates have resumed. The last available date will be prolonged by the number of days that the update was postponed.  
 
-If it happens that you schedule the update of an environment to a date when the updates are postponed, the environment will not be updated. Microsoft will not send separate notification. You can reschedule the update to a later date, or you can wait until you have received the email notification that the updates have resumed. All environments that missed their scheduled update date will be rescheduled automatically to run the update within seven days from the date the updates were resumed. You can change that date to any other allowed date, including the current date.  
+If it happens that you schedule the update of an environment to a date when the updates are postponed, the environment will not be updated. Microsoft will not send a separate notification. You can reschedule the update to a later date, or you can wait until you have received the email notification that the updates have resumed. All environments that missed their scheduled update date will be rescheduled automatically to run the update within seven days from the date the updates were resumed. You can change that date to any other allowed date, including the current date.  
 
 If you didn't explicitly set a date for your environment update in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)], this environment will be picked up for updating automatically, shortly after the updates have been resumed. The update will still be executed within the specified update time window.  
 

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms. search.keywords: deprecated, Czech, local functionality
 ms.date: 04/01/2021
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.author: v-zdbice
 
 ---

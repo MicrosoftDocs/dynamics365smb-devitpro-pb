@@ -60,7 +60,7 @@ The response has no content; the response code is 204.
 |number|string|Specifies the number of the purchase invoice.|
 |invoiceDate|date|The invoice date .|
 |postingDate|date|The date that the purchase invoice   is posted.|
-|dueDate|date|T he date the purchase invoice is due.|
+|dueDate|date|The date the purchase invoice is due.|
 |vendorInvoiceNumber|string|The vendor sales order reference for the purchase invoice.|
 |vendorId|GUID|The unique ID of vendor.|
 |vendorNumber|string|Specifies vendor's number.|

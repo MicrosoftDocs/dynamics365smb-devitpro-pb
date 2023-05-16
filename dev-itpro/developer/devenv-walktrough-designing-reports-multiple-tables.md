@@ -29,7 +29,7 @@ This walkthrough shows you how to design a report from the [!INCLUDE[d365_dev_lo
 
 ## Story
 
-Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked by his manager to create a report that shows data from the `Customer` (ID 18), `Cust. Ledger Entry` (ID 21), `Detailed Cust. Ledger Entry` (ID 379), and the `Sales Header` (ID 36) tables. The report should meet the following requirements:  
+Viktor is a developer who is working for [!INCLUDE[demoname](includes/demoname_md.md)] Viktor has been asked by the manager to create a report that shows data from the `Customer` (ID 18), `Cust. Ledger Entry` (ID 21), `Detailed Cust. Ledger Entry` (ID 379), and the `Sales Header` (ID 36) tables. The report should meet the following requirements:  
 
 - The report must display customer information at the top of the report.  
 
@@ -57,30 +57,30 @@ The following illustration shows an example of the second page of the report.
 
 Viktor starts by creating an empty report object by using the AL Language extension in Visual Studio Code. You can use the shortcut `treport` to create the basic layout for a report object.
 
-He sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that he'll use an RDL layout for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file he'll use for the layout.
+Viktor sets the [DefaultLayout Property](properties/devenv-defaultlayout-property.md) to **RDLC** to specify that an RDL layout will be used for the report and the [RDLCLayout Property](properties/devenv-rdlclayout-property.md) to `'MyRDLReport.rdl'`, the name of the rdl file that will be used for the layout.
 
 Viktor will now design the dataset to display customers and their transaction details. This is defined within the `dataset` part of the report object. 
 
 ### Adding Data Items and columns
  
-The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, he'll add the fields that he wants to display on the report. Each field is given by a `column` control, defined inside the corresponding data item.
+The datasets for the data model will come from four tables: `Customer`, `Cust. Ledger Entry`, `Detailed Cust. Ledger Entry`, and `Sales Header`. Viktor will create a data item for each table with the `dataitem` control. Moreover, for each table, fields that need to be added to the report will be added. Each field is given by a `column` control, defined inside the corresponding data item.
 
 The hierarchy of the `dataitem` and `column` controls is important because it will determine the sequence in which data items are linked, which in turn will control the results. Working from top-to-bottom, you start by adding the `dataitem` control for first table that you want in the dataset, then add column controls for each table field that you want to include in the dataset. For the next table, you add another `dataitem` control that is embedded within the first `dataitem` control, then add column controls as needed. You continue this pattern for more tables and fields.
 
 ### Defining Properties for the Data Items
 
-Once, Viktor has specified the data item and column elements he'll define the appropriate properties. He sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) in each data item to sort the table view based on a specific field. 
+Once, Viktor has specified the data item and column elements, the appropriate properties will be defined. Viktor sets the [DataItemTableView Property](properties/devenv-dataitemtableview-property.md) in each data item to sort the table view based on a specific field. 
 
-He also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to automatically include a specific field on the filter tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
+Viktor also sets the [RequestFilterFields Property](properties/devenv-requestfilterfields-property.md) to automatically include a specific field on the filter tab of the request page. For more information about request pages, see [Request Pages](devenv-request-pages.md).
 
 <!-- >[!NOTE]
 > Request pages for XMLports are not supported by the Business Central Web client in versions prior to Dynamics 365 Business Central 2019 release wave 2. If you try to run an XMLport with a Request page from the web client in these versions, you receive an error that the XMLport page type is not supported. Alternatively, XMLport request pages do work in the Dynamics NAV Client connected to Business Central. -->
 
 Now, Viktor uses the [DataItemLink (Reports) Property](properties/devenv-dataitemlink-reports-property.md) to set a link between one or more fields of the data item tables. Links determine which records to include in the dataset based on the values of a common field between data items. This property must be set on the lower data item of the report object.
 
-For each of the `column` controls he adds the [IncludeCaption Property](properties/devenv-includecaption-property.md) and sets it to **True**. This property specifies to include the caption of the fields in the dataset of a report.
+For each of the `column` controls, Viktor adds the [IncludeCaption Property](properties/devenv-includecaption-property.md) and sets it to **True**. This property specifies to include the caption of the fields in the dataset of a report.
 
-Finally, he sets the [PrintOnlyIfDetail Property](properties/devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
+Finally, Viktor sets the [PrintOnlyIfDetail Property](properties/devenv-printonlyifdetail-property.md) to **True** on a data item to print data only if at least one of its child data items generates output.
 
 
 ## Adding Labels to the Report
@@ -327,7 +327,7 @@ report 50101 "Report for Multiple Tables"
 
 ## Designing the visual RDL layout for the report
 
-Next, Viktor will design an RDL layout for the report by using Visual Studio Report Designer. He'll set properties for the report and the report elements, format the report, and then add the data to the report.  
+Next, Viktor will design an RDL layout for the report by using Visual Studio Report Designer. Viktor will set properties for the report and the report elements, format the report, and then add the data to the report.  
 
 #### To design the RDL layout for the report
 
@@ -432,7 +432,7 @@ Viktor is now ready to add the customer data. The table will display one custome
     > [!NOTE]  
     > It is a good practice to build the project periodically during the report design to make sure that there are no build errors.  
 
-     Viktor will run the report and preview what he's done to this point.  
+     Viktor will run the report and preview everything that is done to this point.  
 
 17. Go back to your project in Visual Studio Code and Reload the Window.
 
@@ -659,7 +659,7 @@ Viktor will run the report to view how it looks like. For this, do the following
 
      If you choose the **Preview** button on the request page, the report will be displayed with the RLD layout created.
 
-Viktor can now add advanced features to the report. He can add features such as displaying the company name and logo on every page on the report. He might also want to add features that enable users to apply filters on the request page.  
+Viktor can now add advanced features to the report such as displaying the company name and logo on every page on the report. Viktor might also want to add features that enable users to apply filters on the request page.  
 
 ## See Also  
 [Report Overview](devenv-reports.md)  

@@ -3,7 +3,7 @@ title: "Get the Outlook add-ins for the business inbox"
 description: Learn about the technical aspects of the Outlook add-ins so that users can use Outlook as their business inbox and manage Business Central data in Outlook.
 ms.custom: na
 ms.date: 08/31/2021
-ms.reviewer: edupont
+ms.reviewer: jswymer
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual

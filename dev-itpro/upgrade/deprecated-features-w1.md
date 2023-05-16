@@ -24,13 +24,13 @@ The following features are marked as `obsolete:pending` in 2023 release wave 1.
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced| Businesses in all countries can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](business-central/finance-review-accounts.md).  |
+|Replaced| Businesses in all countries can benefit from the ability to review general ledger entries before posting them. In a future release, we'll deprecate the country-specific feature and replace it with one that's available in all country versions. After the feature is deprecated, you can use it to access previous reviews, but not to do new reviews. We'll archive your data according to local requirements. To learn about the replacement feature, go to [Review Amounts in General Ledger Accounts](/dynamics365/business-central/finance-review-accounts).  |
 
 ### User groups
 
 |Moved, Removed, or Replaced? |    Why?|
 |-----------------------------|-----|
-|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups with security groups. The security groups in [!INCLUDE [prod_short](../includes/prod_short.md)] link to security groups in Azure Active Directory. The link let's administrators reuse the security group in other Dynamics 365 applications, without having to recreate the memberships in the group. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](business-central/ui-security-groups.md).  |
+|Replaced | User groups let administrators manage permissions for groups of users who have the same or similar roles in the business. For example, you might create a user group for your sales department, and one for your purchasers. To make it a bit easier for administrators to manage permissions, we're replacing user groups with security groups. The security groups in [!INCLUDE [prod_short](../includes/prod_short.md)] link to security groups in Azure Active Directory. The link let's administrators reuse the security group in other Dynamics 365 applications, without having to recreate the memberships in the group. In terms of managing permissions, security groups work in the same way as user groups. To learn more about the new security groups, go to [Control Access Using Security Groups](/dynamics365/business-central/ui-security-groups).  |
 
 ## Changes in 2022 release wave 2
 
