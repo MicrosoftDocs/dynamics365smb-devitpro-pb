@@ -50,7 +50,7 @@ Here is an example of the response.
 
 ```json
 {
-PLACE CODE HERE.
+
 }
 ```
 
