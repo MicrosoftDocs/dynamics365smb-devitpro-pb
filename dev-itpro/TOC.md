@@ -396,6 +396,7 @@
 # Development
 ## [Development overview](developer/devenv-dev-overview.md)
 ## Get started
+### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
 ### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
