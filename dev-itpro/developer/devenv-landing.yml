@@ -74,7 +74,7 @@ landingContent:
           - text: Creating a table
             url: devenv-table-object.md#table-example            
           - text: Creating a report
-            url: devenv-walkthrough-designing-reports-multiple-tables.md
+            url: devenv-walktrough-designing-reports-multiple-tables.md
           - text: Extending a report
             url: devenv-report-ext-example.md
           - text: Testing an application
@@ -101,7 +101,6 @@ landingContent:
             url: devenv-al-methods.md
           - text: Triggers
             url: triggers-auto/devenv-triggers.md
-          - text: Events
             url: devenv-events-in-al.md
           - text: Attributes
             url: attributes/devenv-method-attributes.md
