@@ -2,7 +2,7 @@
 title: "Web Services Authentication"
 description: Learn about authenticating web services in business Central
 ms.custom: na
-ms.date: 04/26/2022
+ms.date: 04/26/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,6 +14,7 @@ author: jswymer
 When users send a request for a web service, they're authenticated according to the credential type that is configured for [!INCLUDE[server](../developer/includes/server.md)]. To access a web service, users must provide valid credentials for the credential type being used. If [!INCLUDE[prod_short](../developer/includes/prod_short.md)] is configured for Windows credential type, then users are automatically authenticated against the Windows account that their computer is running under. In this case, they aren't prompted for their credentials. For other credential types, users are prompted to enter a user name and password.
 
 [!INCLUDE[webservice_key_deprecated](../includes/web-service-key-deprecated.md)]
+
 
 ## Difference between Basic Authentication and OAuth
 
@@ -33,7 +34,6 @@ The following table shows the main difference between basic authentication with 
 
 For more information, see [Using OAuth to Authorize Business Central Web Services](../webservices/authenticate-web-services-using-oauth.md).
 
-
 ## About NavUserPassword and AccessControlService credential types
   
 If your solution uses NavUserPassword or AccessControlService as the credential type, users can access data through SOAP and OData web services by specifying a password or access key. You set up the user accounts in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] client, based on how they'll access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data. For example, if you set up a user account that will allow an external application to read [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service, you can generate a web service access key and specify the key for the relevant user accounts. Then, you add the access key to the configuration of the application that consumes the web service. In contrast, when users access [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data through a web service in Microsoft Excel, for example, they specify a password instead of a web service access key.  
@@ -42,8 +42,13 @@ If your solution uses NavUserPassword or AccessControlService as the credential 
 
 > [!IMPORTANT] 
 > If the [!INCLUDE[server](../developer/includes/server.md)] is configured to use NavUserPassword or AccessControlService authentication, then the username, password, and access key can be exposed if the SOAP or OData data traffic is intercepted and the connection string is decoded. To avoid this condition, configure SOAP and OData web services to use Secure Socket Layer \(SSL\). 
-  
-## Unicode characters in user name or password  
+
+## About UserName credential type
+
+[!INCLUDE[include-odata-username-auth](../developer/includes/include-odata-username-auth.md)]
+
+## Unicode characters in user name or password
+ 
 When [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data is consumed by a web service, users can't be authenticated if their user name or password contains Unicode characters. This condition is a limitation in the basic authentication mechanism that is defined in the HTTP/1.1 specification.  
   
 The same limitation applies to exposing [!INCLUDE[prod_short](../developer/includes/prod_short.md)] data in external products such as a browser or a Microsoft .NET Framework assembly.

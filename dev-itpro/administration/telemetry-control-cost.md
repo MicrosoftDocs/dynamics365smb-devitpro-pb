@@ -24,15 +24,15 @@ To control data ingestion cost, consider the following practice when setting up 
 2. Set up an alert when daily cap is reached (so that you know that you do not get all data)
 3. Use sampling or Data Collection Rules to adjust data ingestion
 
-For more information, see [Cost optimization in Azure Monitor](https://learn.microsoft.com/en-gb/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](https://learn.microsoft.com/en-gb/azure/azure-monitor/logs/daily-cap).
+For more information, see [Cost optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
 
 ### Calculating the cost of data ingestion
 
-Currently, the first 4GB of data ingested per month is free. To stay below this limit, you can set up a daily cap of 130 MB per day.
+Currently, the first 5GB of data ingested per month is free. To stay below this limit, you can set up a daily cap of 160 MB per day.
 
 One telemetry event typically consumes 2-10 KB depending of the type of event. The max size for one event is 32 KB.
 
-So with a 130 MB daily cap, you can receive between 4000 (worst case) and 65000 daily events (best case). With event size 10kb, this corresponds to 13000 daily events.
+So with a 160 MB daily cap, you can receive between 5000 (worst case) and 80000 daily events (best case). With event size 10kb, this corresponds to 16000 daily events.
 
 Current price for data ingestion is 2.76 USD/GB (for pay-as-you-go). If we assume 10KB event size, 1 GB can give you an additional 100.000 monthly events ~ 3300 daily events. Or 0.00276 cents/event.
 
