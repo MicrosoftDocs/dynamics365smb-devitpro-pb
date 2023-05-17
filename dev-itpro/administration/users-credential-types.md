@@ -4,7 +4,7 @@ description: This article explains how the credential authorization mechanism wo
 author: jswymer
 ms.custom: bap-template
 ms.reviewer: jswymer
-ms.service: d365-business-central
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: jswymer
 ms.date: 04/26/2023
