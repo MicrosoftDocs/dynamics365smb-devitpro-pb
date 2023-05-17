@@ -67,13 +67,13 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
-### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
-### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
-### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
-
+### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
+#### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
+#### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
+#### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
+#### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
+#### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 #### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
@@ -396,6 +396,7 @@
 # Development
 ## [Development overview](developer/devenv-dev-overview.md)
 ## Get started
+### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
 ### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
@@ -429,8 +430,10 @@
 ## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
-#### [JSON files](developer/devenv-json-files.md)
-#### [The migration.json file](developer/devenv-migration-json-file.md)
+#### JSON files
+##### [JSON files](developer/devenv-json-files.md)
+##### [Launch JSON file](developer/devenv-json-launch-file.md)
+##### [Migration JSON file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
@@ -899,9 +902,9 @@
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
 
 ### Using .NET (on-premises only)
@@ -970,7 +973,7 @@
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
 ##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
-##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User scenarios](compliance/apptest-userscenario.md)
 #### [Requirements for connectivity apps](compliance/connectivity-apps-requirements.md)
@@ -1217,8 +1220,13 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
+## Integrating with Microsoft Power Apps
+### [Overview](powerplatform/power-apps-overview.md)
+### [Application lifecycle management](powerplatform/power-apps-alm.md)
+### [Sample apps](powerplatform/power-apps-samples.md)
+### [Best practices](powerplatform/power-apps-best-practices.md)
 ## Integrating with Microsoft Power Automate
-### [Power Automate integration overview](powerplatform/power-automate-overview.md)
+### [Overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
@@ -1298,6 +1306,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 #### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)

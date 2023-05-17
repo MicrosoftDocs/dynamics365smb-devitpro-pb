@@ -26,10 +26,10 @@ Before you release a customized [!INCLUDE[navnowlong](includes/navnowlong_md.md)
 -   The CRONUS International Ltd. demo data company.  
   
 ## Story  
- Isaac is a business application developer working for CRONUS International Ltd. He has modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. Isaac wants to test the functionality of his customized codeunit before he offers the customized application for sale. He creates a new test codeunit with new test functions to test the Purch-Calc.Discount codeunit. During development, Isaac uses the application test libraries to help him write a test with fewer lines of code.  
+ Isaac, a business application developer working for CRONUS International Ltd has modified codeunit 70, Purch-Calc.Discount, which is a codeunit in the [!INCLUDE[demoname](includes/demoname_md.md)] database. Isaac wants to test the functionality of the customized codeunit before the customized application is offered for sale. Isaac creates a new test codeunit with new test functions to test the Purch-Calc.Discount codeunit. During development, Isaac uses the application test libraries to write a test with fewer lines of code.  
   
 ## Creating a Test Codeunit and Test Function  
- Isaac creates a new codeunit and specifies that it is a test codeunit. He defines the scenario that he wants to verify, adds a test function to tests the Purch-Calc.Discount functionality, and adds a helper function that can be reused if he decides to extend test coverage.  
+ Isaac creates a new codeunit and specifies that it is a test codeunit. Isaac defines the scenario that needs to be verified, adds a test function to tests the Purch-Calc.Discount functionality, and adds a helper function that can be reused to extend test coverage.  
   
 #### To create the test codeunit and test function  
   
@@ -94,9 +94,9 @@ Before you release a customized [!INCLUDE[navnowlong](includes/navnowlong_md.md)
   
     ```  
   
-     Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation. Finally, he adds the C/AL code.The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
+     Isaac first defines the test scenario \[SCENARIO\], then details it with the GIVEN-THEN-WHEN notation, and adds the C/AL code. The code in this test function prepares the test data by setting a random discount percent, a minimum amount, and a document amount. Then, it creates a purchase document with a line and runs the Purch-Calc.Discount codeunit, which contains the code that is being tested. Finally, it verifies the results of running the Purch-Calc.Discount codeunit and raises an error if the results are not as expected.  
   
-     Isaac has created the test function. Next, he creates a helper function that generates data for the test.  
+     After creating the test function, Isaac creates a helper function that generates data for the test.  
   
  Isaac can now create additional test functions in this test codeunit to test other aspects of vendor discounts. These test functions should include negative tests, which validate that the code being tested works as intended under failing conditions.  
   
@@ -147,7 +147,7 @@ Before you release a customized [!INCLUDE[navnowlong](includes/navnowlong_md.md)
     PurchaseLine.MODIFY(TRUE);  
     ```  
   
-     The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, he can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
+     The code in this helper function prepares data for the test by creating a new vendor, setting up the invoice discount, and creating a purchase document with an item. Because this helper function is not specific to the test itself, Isaac can reuse it for similar tests. For example, Isaac can call it with other parameters and create a purchase credit memo, or set up 0% discount, or create a document where the total amount is less than the minimum amount that is specified in **Vendor Invoice Disc.** table.  
   
     > [!NOTE]  
     >  This test code does not guarantee that the state of the database after you run the test is the same as the state of the database before you run the test.  

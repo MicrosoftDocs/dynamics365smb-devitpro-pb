@@ -214,25 +214,25 @@ Creating an instant flow for general use is similar to how you create a flow for
 7. Select the **+ New step** to add actions and other triggers for the flow.
 8. To add [!INCLUDE[prod_short](../includes/prod_short.md)] actions and triggers, search for the **Dynamics 365 Business Central** connector, then select the action or trigger you want to use.
 
-## Troubleshoot why flow doesn't show in Automate action group
+## Troubleshoot instant flows
 
-The following table includes the most common problems why an instant flow doesn't appear in the **Automation** group for you or another user.
+The following table includes the most common problems that prevent instant flows from running or appearing in the **Automation** group for you or another user. If you got a message like **Workflow add, but not yet enabled** when creating an instant flow from Business Central, this information can help you fix the problem.
+
+> [!TIP]
+> There can also be other reasons why the flow isn't showing. One way to help determine why is to open the flow details page in Power Automate. Power Automate will sometimes indicate the reason the flow isn't working. Use the **Flow checker** action to help identify problems. To learn more about flow checker, go to [Find and fix errors with Flow Checker](/power-automate/error-checker).
 
 |Cause|Fix|Reason|
 |-|-|-|
+| You don't have a premium Power Automate license| Get a premium license. For more information, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).|The owner of the flow must have Power Automate premium license.|
 |The flow doesn't use the "For a selected record (V3)" trigger|Change the flow to use the "For a selected record (V3)" trigger|Only flows that use the "For a selected record" trigger will show in the **Automate** action group.|
 |The "For a selected record (V3)" trigger parameter settings for environment, company, page, or tables don't match what user is currently on.|Check that the parameter settings in the "For a selected record" trigger match the environment, company, page, or table that the user has open.|A mismatch in parameters is preventing the flow from being displayed.|
 |The flow is turned off in Power Automate|Open the flow Power Automate and verify the flow is turned on. For more information, see [Turn flows on or off](/power-automate/disable-flow). If the flow can't be turned on because of an error, then fix the error, save the flow, and ensure that the flow is turned on. |[!INCLUDE[prod_short](../includes/prod_short.md)] won't show flows that a turned off in Power Automate.|
 |The user isn't the owner of the flow. |Share ownership of the flow with the user. For more information, see [Share a cloud flow](/power-automate/create-team-flows).|[!INCLUDE[prod_short](../includes/prod_short.md)] only supports displaying flows owned by the current user; flows shared as "Run-only" can't be displayed.|
 |The flow isn't in the Power Platform environment that Business Central is connected to|<ul><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 21 and earlier, create flows in the default Power Platform environment.</li><li>In [!INCLUDE[prod_short](../includes/prod_short.md)] version 22 and later, run the **Power Automate Environment** assisted setup guide and select the environment where the flow is stored.</li></ul>|[!INCLUDE[prod_short](../includes/prod_short.md)] connects to a specific Power Platform environment.|
-| You don't have a premium Power Automate license| Get a premium license. For more information, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).|The owner of the flow must have Power Automate premium license.|
-
-> [!TIP]
-> There can also be other reasons why the flow isn't showing. One way to help determine why is to open the flow details page in Power Automate. Power Automate will sometimes indicate the reason the flow isn't working.
+|The flow that was shared with you but with read-only permissions|Ask the owner of the flow to add you as an owner of the flow. For more information, see [Share a flow in Power Automate](/power-automate/create-team-flows).|Flows shared to users as read-only won't appear in the **Automate** action group for the users.  |
 
 ## Next steps
 
-- Use the **Flow checker** action to verify that there are no errors.
 - Run the flow from [!INCLUDE[prod_short](../includes/prod_short.md)]. For more information, see [Run Instant Flows](/dynamics365/business-central/across-how-use-financials-data-source-flow#run-instant-flows).
 - Promote the flow action to more prominent locations on page. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 

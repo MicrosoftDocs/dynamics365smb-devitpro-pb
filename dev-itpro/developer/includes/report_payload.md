@@ -207,11 +207,11 @@ Specifies the layout model selected for teh current report invocation, which can
 
 #### *layoutname*
 
-Specifies the lauout name for the currently selected layout.
+Specifies the layout name for the currently selected layout.
 
 #### *layoutmimetype*
 
-Specifies the lauout mimetype for the currently selected layout. The built-in layout types are:
+Specifies the layout mimetype for the currently selected layout. The built-in layout types are:
 
 - Application/ReportLayout/Rdlc
 - Application/ReportLayout/Word
