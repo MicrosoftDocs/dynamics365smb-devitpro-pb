@@ -1220,8 +1220,13 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
+## Integrating with Microsoft Power Apps
+### [Overview](powerplatform/power-apps-overview.md)
+### [Application lifecycle management](powerplatform/power-apps-alm.md)
+### [Sample apps](powerplatform/power-apps-samples.md)
+### [Best practices](powerplatform/power-apps-best-practices.md)
 ## Integrating with Microsoft Power Automate
-### [Power Automate integration overview](powerplatform/power-automate-overview.md)
+### [Overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
