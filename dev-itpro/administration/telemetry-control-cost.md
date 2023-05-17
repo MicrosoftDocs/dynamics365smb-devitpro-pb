@@ -24,7 +24,7 @@ To control data ingestion cost, consider the following practice when setting up 
 2. Set up an alert when daily cap is reached (so that you know that you do not get all data)
 3. Use sampling or Data Collection Rules to adjust data ingestion
 
-For more information, see [Cost optimization in Azure Monitor](https://learn.microsoft.com/en-gb/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](https://learn.microsoft.com/en-gb/azure/azure-monitor/logs/daily-cap).
+For more information, see [Cost optimization in Azure Monitor](/azure/azure-monitor/best-practices-cost) and [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
 
 ### Calculating the cost of data ingestion
 
