@@ -6,7 +6,7 @@ ms.author: andersg
 ms.reviewer: jswymer
 ms.topic: overview
 ms.service: dynamics365-business-central
-ms.date: 04/21/2023
+ms.date: 05/17/2023
 ms.custom: bap-template
 ---
 # Business Central and Power Apps
@@ -17,9 +17,7 @@ With Power Apps, you have the flexibility to build the perfect solution for your
 
 You can use Power Apps whether you're on the go with the mobile app, collaborating with your team inside Teams, or directly it in the browser through a URL.
 
-This section provides you with tools and samples to make it easier to get started and make your Power Apps development more effective.
-
-With this release, we're rolling out a set of tools and sample apps in preview for you to try out.
+With the latest release, we're rolling out a set of tools and sample apps in preview for you to try out. These tools and samples will help you get started building your own apps and make your Power Apps development more effective.
 
 ## Next steps
 
