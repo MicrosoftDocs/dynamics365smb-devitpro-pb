@@ -26,17 +26,17 @@ The warehouse helper app is a sample app that shows a simplified warehouse scena
 
 The workflow is purposely simple and is meant to be used as a base for building your own warehouse workflows.
 
-[Find the app here](https://github.com/microsoft/businesscentralsamples-warehousehelper)
+[Find the app here](https://github.com/microsoft/businesscentralsamples-warehousehelper).
 
 ## Take order app
 
-The take Order app is a frontline app meant for servers working at a restaurant. The app offers an easy way for servers to assign tables, take customer orders, and initiate checkout.
+The take order app is a frontline app meant for servers working at a restaurant. The app offers an easy way for servers to assign tables, take customer orders, and initiate checkout.
 
 [![Shows an example of the take order app for Power Apps](../developer/media/take-order-pwr-app-50.png)](../developer/media/take-order-pwr-app.png#lightbox)  
 
 This app is built as an example of a high-fidelity app with a full set of functionalities.
 
-[Find the app here](https://github.com/microsoft/businesscentralsamples-takeorder)
+[Find the app here](https://github.com/microsoft/businesscentralsamples-takeorder).
 
 ## Next steps
 

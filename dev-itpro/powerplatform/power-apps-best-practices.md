@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE[general_preview](../developer/includes/general_preview.md)]
 
-This article provides some best practices for developing Power Apps apps for Business Central. 
+This article provides some best practices for developing apps for Business Central using Power Apps. 
 
 ## Telemetry 
 
@@ -25,7 +25,7 @@ For more information, see [Trace function in Power Apps](/power-platform/power-f
 
 There are multiple ways of catching errors in Power Apps. To learn more, see [Error, IfError, IsError, IsBlankOrError functions in Power Apps](/power-platform/power-fx/reference/function-iferror).
 
-We recommend wrapping calls in an `ifError` function call. This way mimics the syntax of the well known try/catch pattern. The following code snippet shows an example from the [Warehouse Helper app](power-apps-samples.md#warehouse-helper-app):
+We recommend wrapping calls in an `ifError` function call. This way mimics the syntax of the well-known try/catch pattern. The following code snippet shows an example from the [Warehouse Helper app](power-apps-samples.md#warehouse-helper-app):
 
 ```javascript
 IfError(Set(varScannedItem, LookUp('warehouseItemsWithImage', GTIN = varScannedCode ))
@@ -91,7 +91,7 @@ If(Not(IsBlankOrError(varImageContent)),
 );
 ```
 
-:::image type="content" source="../developer/media/best-practices-1-ptw-app.png" alt-text="Shows a screen shot of a Power Automate flows that takes an image image from Power apps and uploads it to Business Central":::
+:::image type="content" source="../developer/media/best-practices-1-ptw-app.png" alt-text="Shows a screen shot of a Power Automate flows that takes an image from Power apps and uploads it to Business Central":::
 
 ### Parsing the media type field
 
@@ -121,7 +121,7 @@ PictureHeight := TenantMedia.Height;
 
 ## When should you consider Power Apps?
 
-There are no rules for when you should consider using Power Apps. What we found useful is to highlight some of the functionality Power Apps offers that compliments Business Central well. If you find yourself implementing a scenario that could benefit from the following functionality, you should consider using Power Apps:
+There are no rules for when you should consider using Power Apps. What we found useful is to highlight some Power Apps functionality that compliments Business Central well. If you find yourself implementing a scenario that could benefit from the following functionality, you should consider using Power Apps:
 
 ### Fully customizable UI
 

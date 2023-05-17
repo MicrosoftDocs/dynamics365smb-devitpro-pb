@@ -28,11 +28,11 @@ As part of the new support for Power Platform solutions, we have updated the fol
 
 ### CI/CD
 
-The **CI/CD** workflow has been updated with more steps to support Power Platform solutions. That means that if you have added configuration for a Power Platform solution to your Al-go settings, they're automatically part of your CI/CD process.
+The **CI/CD** workflow has been updated with more steps to support Power Platform solutions. If you have added any configuration for a Power Platform solution to your Al-go settings, they're automatically part of your CI/CD process.
 
 ### Create Release
 
-The **Create Release** workflow has been updated to support Power Platform solutions. The workflow creates a GitHub release and uploads the Power Platform solution and AL artifacts to it as assets.
+The **Create Release** workflow has been updated to support Power Platform solutions. The workflow creates a GitHub release and uploads the Power Platform solution and AL artifacts to the repo as assets.
 
 ### Publish to Environment
 
@@ -40,7 +40,7 @@ The **Publish to environment** workflow has been updated to support Power Platfo
 
 ### Pull Power Platform changes
 
-The **Pull Power Platform changes** workflow is a new workflow that makes working with Power Platform solutions easier. The workflow pulls the latest published changed to a Power Platform solution into your repository. The flow can either do direct commits to the main branch or create a PR with the latest changes for review.
+The **Pull Power Platform changes** workflow is a new workflow that makes working with Power Platform solutions easier. The workflow pulls the latest published changes to a Power Platform solution into your repository. The flow can either do direct commits to the main branch or create a PR with the latest changes for review.
 
 ### Push Power Platform changes
 
@@ -58,7 +58,7 @@ For detailed step-by-step guide, see the Al-go ReadMe file:  https://github.com/
 
 - Hard-coded Business Central connection information  
   
-  The connection to Business Central is hard coded into the Power App files, which means that you have to use the **Publish Environment**  or **Push Power Platform changes** actions to deploy the package. If you manually deploy the package, you need to update the connection references manually inside the maker experience.
+  The connection to Business Central is hard coded into the Power App files, which means that you must use the **Publish Environment**  or **Push Power Platform changes** actions to deploy the package. If you manually deploy the package, you need to update the connection references manually inside the maker experience.
 
 ## Next steps
 
