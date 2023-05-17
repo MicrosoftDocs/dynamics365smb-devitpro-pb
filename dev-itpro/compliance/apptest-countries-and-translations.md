@@ -29,25 +29,25 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Andorra|Partner|ES|Planned in June 2023|AD|
 |Angola|Partner|W1|Available|AO|
 |Argentina|Partner|W1|Available|AR|
-|Armenia|Partner|W1|Planned in June 2023|AM|
+|Armenia|Partner|W1|Planned in July 2023|AM|
 |Australia|Microsoft|AU|Available|AU|
 |Austria|Microsoft|AT|Available|AT|
-|Azerbaijan|Partner|W1|Planned in June 2023|AZ|
-|Bahamas|Partner|W1|Planned in June 2023|BS|
+|Azerbaijan|Partner|W1|Planned in July 2023|AZ|
+|Bahamas|Partner|W1|Planned in July 2023|BS|
 |Bahrain|Partner|W1|Available|BH|
 |Bangladesh|Partner|W1|Available|BD|
 |Belgium|Microsoft|BE|Available|BE|
-|Bermuda|Partner|W1|Planned in June 2023|BM|
-|Bolivia|Partner|W1|Planned in June 2023|BO|
+|Bermuda|Partner|W1|Planned in July 2023|BM|
+|Bolivia|Partner|W1|Planned in July 2023|BO|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|
 |Botswana|Partner|W1|Available|BW|
-|British Virgin Islands|Partner|W1|Planned in June 2023|VG|
+|British Virgin Islands|Partner|W1|Planned in July 2023|VG|
 |Bulgaria|Partner|W1|Available|BG|
 |Brazil|Partner|W1|Available|BR|
-|Cambodia|Partner|W1|Planned in June 2023|KH|
-|Cameroon|Partner|W1|Planned in June 2023|CM|
+|Cambodia|Partner|W1|Planned in July 2023|KH|
+|Cameroon|Partner|W1|Planned in July 2023|CM|
 |Canada|Microsoft|NA|Available|CA|
-|Cayman Islands|Partner|W1|Planned in June 2023|KY|
+|Cayman Islands|Partner|W1|Planned in July 2023|KY|
 |Chile|Partner|W1|Available|CL|
 |Colombia|Partner|W1|Available|CO|
 |Costa Rica|Partner|W1|Available|CR|
@@ -60,14 +60,14 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |El Salvador|Partner|W1|Available|SV|
 |Egypt|Partner|W1|Available|EG|
 |Estonia|Partner|W1|Available|EE|
-|Ethiopia|Partner|W1|Planned in June 2023|ET|
+|Ethiopia|Partner|W1|Planned in July 2023|ET|
 |Faroe Islands (Denmark)|Microsoft|W1|Available|DK|
-|Fiji|Partner|W1|Planned in June 2023|FJ|
+|Fiji|Partner|W1|Planned in July 2023|FJ|
 |Finland|Microsoft|FI|Available|FI|
 |France|Microsoft|FR|Available|FR|
 |Georgia|Partner|W1|Available|GE|
 |Germany|Microsoft|DE|Available|DE|
-|Ghana|Partner|W1|Planned in June 2023|GH|
+|Ghana|Partner|W1|Planned in July 2023|GH|
 |Greece|Partner|W1|Available|GR|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|
 |Guatemala|Partner|W1|Available|GT|
@@ -86,18 +86,18 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Japan|Partner|W1|Available|JP|
 |Jersey|Partner|GB|Planned in June 2023|JE|
 |Jordan|Partner|W1|Available|JO|
-|Kazakhstan|Partner|W1|Planned in June 2023|KZ|
+|Kazakhstan|Partner|W1|Planned in July 2023|KZ|
 |Kenya|Partner|W1|Available|KE|
-|Kosovo|Partner|W1|Planned in June 2023|XK|
+|Kosovo|Partner|W1|Planned in July 2023|XK|
 |Kuwait|Partner|W1|Available|KW|
 |Latvia|Partner|W1|Available|LV|
 |Lebanon|Partner|W1|Available|LB|
 |Liechtenstein|Partner|CH|Planned in June 2023|LI|
 |Lithuania|Partner|W1|Available|LT|
 |Luxembourg|Partner|W1|Available|LU|
-|Macau (SAR China)|Partner|W1|Planned in June 2023|MO|
-|Madagascar|Partner|W1|Planned in June 2023|MG|
-|Malawi|Partner|W1|Planned in June 2023|MW|
+|Macau (SAR China)|Partner|W1|Planned in July 2023|MO|
+|Madagascar|Partner|W1|Planned in July 2023|MG|
+|Malawi|Partner|W1|Planned in July 2023|MW|
 |Malaysia|Partner|W1|Available|MY|
 |Maldives|Partner|W1|Available|MV|
 |Malta|Partner|W1|Available|MT|
@@ -107,9 +107,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Mongolia|Partner|W1|Available|MN|
 |Montenegro|Partner|W1|Available|ME|
 |Morocco|Partner|W1|Available|MA|
-|Mozambique|Partner|W1|Planned in June 2023|MZ|
-|Namibia|Partner|W1|Planned in June 2023|NA|
-|Nepal|Partner|W1|Planned in June 2023|NP|
+|Mozambique|Partner|W1|Planned in July 2023|MZ|
+|Namibia|Partner|W1|Planned in July 2023|NA|
+|Nepal|Partner|W1|Planned in July 2023|NP|
 |Netherlands|Microsoft|NL|Available|NL|
 |New Zealand|Microsoft|NZ|Available|NZ|
 |Nicaragua|Partner|W1|Available|NI|
@@ -129,9 +129,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Romania|Partner|W1|Available|RO|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|
 |San Marino|Partner|IT|Planned in June 2023|SM|
-|Sao Tome & Principe|Partner|W1|Planned in June 2023|SM|
+|Sao Tome & Principe|Partner|W1|Planned in July 2023|SM|
 |Saudi Arabia|Partner|W1|Available|SA|
-|Senegal|Partner|W1|Planned in June 2023|SN|
+|Senegal|Partner|W1|Planned in July 2023|SN|
 |Serbia|PartnerW1||Available|RS|
 |Singapore|Partner|W1|Available|SG|
 |Slovakia|Partner|W1|Available|SK|
@@ -143,19 +143,19 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Sweden|Microsoft|SE *1)*|Available|SE|
 |Switzerland|Microsoft|CH|Available|CH|
 |Taiwan|Partner|W1|Available|TW|
-|Tanzania|Partner|W1|Planned in June 2023|TZ|
+|Tanzania|Partner|W1|Planned in July 2023|TZ|
 |Thailand|Partner|W1|Available|TH|
 |Trinidad and Tobago|Partner|W1|Available|TT|
 |Tunisia|Partner|W1|Available|TN|
 |Türkiye|Partner|W1|Available|TR|
-|Uganda|Partner|W1|Planned in June 2023|UG|
+|Uganda|Partner|W1|Planned in July 2023|UG|
 |Ukraine|Partner|W1|Available|UA|
 |United Arab Emirates|Partner|W1|Available|AE|
 |United Kingdom|Microsoft|GB|Available|GB|
 |United States|Microsoft|NA|Available|US|
 |Uruguay|Partner|W1|Available|UY|
 |Vietnam|Partner|W1|Available|VN|
-|Zambia|Partner|W1|Planned in June 2023|ZM|
+|Zambia|Partner|W1|Planned in July 2023|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
 
 *1) BaseApp for Sweden will be migrated to W1 in 2023 release wave 1. Current localization features will be available as apps.*
@@ -166,7 +166,7 @@ Administrators can use the [!INCLUDE[d365fin_long_md](../includes/d365fin_long_m
 
 ## Important information regarding planned availability
 
-Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners haven't successfully published their app(s) to AppSource by this time.
+Due to the nature of the joint effort where Microsoft is providing the international (W1) cloud service and partners are providing localization app(s), the above planned availability estimates represent the earliest possible availability and can be exceeded if localization partners haven't successfully published their app(s) to AppSource by this time.  
 
 ## Supported languages
 
