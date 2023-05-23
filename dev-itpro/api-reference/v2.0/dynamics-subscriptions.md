@@ -127,6 +127,10 @@ The change type is indicated by the `"changeType"` parameter:
 
   Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 100 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
 
+  [!NOTE]
+  You can also subscribe on event `OnGetDelayTime` in codeunit `API Webhook Notification Mgt.` to change the delay time. 
+  Keep in mind that the Delay Time is in millisecconds.
+
 <!--
   > [!IMPORTANT]
   > Webhook notifications are used to trigger Power Automate flows from Business Central. However, Business Central currently doesn't support `collection` notifications for flows. So if an event changes more than 100 records with in 30 seconds, associated flows won't get triggered.
