@@ -6,14 +6,25 @@ ms.author: andersg
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: dynamics365-business-central
-ms.date: 04/21/2023
+ms.date: 04/24/2023
 ms.custom: bap-template
 ---
 # Best practices for Power Apps with Business Central (preview)
 
 [!INCLUDE[general_preview](../developer/includes/general_preview.md)]
 
-This article provides some best practices for developing apps for Business Central using Power Apps. 
+This article provides some best practices for developing canvas apps for Business Central using Power Apps.
+
+## Working with multiple environments
+
+When you add a Business Central connection to Power Apps, the connection information, such as the environment name and company ID, gets hard-coded into the Power App source code. This condition means that if you transfer a Power App between tenants with different Business Central environments or companies, you must update all the data connections.
+
+While Power Automate flows allow the use of environment variables to store the connection information, facilitating the move between environments, Power Apps currently lacks this functionality.
+
+We've updated our Al-Go for GitHub template with the functionality to update the connection information in the Power Apps source code. So, if you've defined your Business Central environment name and company ID in the Al-go-settings file, your Power Apps (and flows) will be updated to point to the correct environment when you use the GitHub actions that are part of the Al-Go-PTE template. If your flow is using environment variables, no changes are made.
+
+> [!NOTE]
+> This functionality is only available as part of the AL-Go PTE template.
 
 ## Telemetry 
 
