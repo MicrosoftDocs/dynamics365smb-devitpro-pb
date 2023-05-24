@@ -39,9 +39,9 @@ If you want to dig into the technical specifics, you can turn on the **Show tech
 
 If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can download the recording and then copy the file to OneDrive.  
 
-## The Performance Profiler and the AL Profiler
+## The In-Client Performance Profiler and the AL Profiler
 
-The Performance Profiler features are a simplified version of the AL Profiler for the AL Language extension in Visual Studio Code. You can capture a performance profile of the code that was run during a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
+The In-Client Performance Profiler features are a simplified version of the AL Profiler for the AL Language extension in Visual Studio Code. You can capture a performance profile of the code that was run during a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
 
 ## See Also
 
