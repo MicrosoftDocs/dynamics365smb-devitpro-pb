@@ -1065,7 +1065,7 @@
 #### [Database locks](/dynamics365/business-central/admin-view-database-locks)
 #### [Missing indexes](administration/database-missing-indexes.md)
 #### [Database wait statistics](administration\database-wait-statistics.md)
-#### [Using the Performance Profiler](administration/performance-profiler-overview.md)
+#### [Using the In-Client Performance Profiler](administration/performance-profiler-overview.md)
 #### [Verifying report datasets](/dynamics365/business-central/report-analyze-excel)
 #### [Checking personalization issues](/dynamics365/business-central/ui-personalization-user)
 #### [Troubleshooting user personalization can't be started](developer/devenv-troubleshooting-user-personalization.md)
