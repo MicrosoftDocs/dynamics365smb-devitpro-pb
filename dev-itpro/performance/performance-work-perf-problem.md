@@ -1,8 +1,8 @@
 ---
-title: "How to Work with a Performance Problem"
+title: "How to work with a performance problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 11/17/2022
+ms.date: 05/24/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
