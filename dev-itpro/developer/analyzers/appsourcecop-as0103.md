@@ -32,7 +32,7 @@ Permissions can be defined either by using XML, or by using AL permission set ob
 To generate XML permission sets, you can use the dedicated command in Visual Studio Code:
 
 1. Press **Ctrl+Shift+P** to open the command palette.
-2. Select **AL: Generate permission set containing current extension objects**. This will generate the XML permission set for your extension.
+2. Select **AL: Generate permission set as AL object containing current extension objects**. This will generate the AL permission set for your extension.
 3. Rebuild your extension by pressing **Ctrl+Shift+B** to package the permission set with your extension.
 
 For more information about AL permission sets, see [Permission Set Object](../devenv-permissionset-object.md).
@@ -71,7 +71,7 @@ table 50100 MyTable
 </PermissionSets>
 ```
 
-The XML permission set grants access to the table and thereby satisfies the validation.
+The XML permission set grants access to the table and thereby satisfies the validation. However, the XML approach is discouraged by the AppSourceCop rule AS0094, in which it is recommended instead to use the AL Permission Set object (see Example 2).
 
 ### Example 2 - Permission defined in AL
 
