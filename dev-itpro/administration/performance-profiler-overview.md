@@ -26,8 +26,8 @@ To get started working with the Performance Profiler, follow these steps:
 3. Now, still in [!INCLUDE [prod_short](../includes/prod_short.md)], navigate to the page or process that you want to record profiling data for.  
     To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
 4. When ready, press the **Start** button in the **Performance Profiler** page, and then perform the process that you want to record. When you're done, press the **Stop** button.  
-  The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**.
-5. Toggle the **Show technical information** button to show time spent and the call tree. To drill down into this data, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results).
+  The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**. For more information, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results).
+5. Toggle the **Show technical information** button to show time spent and the call tree. To drill down into this data, see [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
   
 ## Analyzing high-level results
 
