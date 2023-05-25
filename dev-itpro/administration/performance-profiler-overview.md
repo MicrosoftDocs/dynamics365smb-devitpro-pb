@@ -21,7 +21,7 @@ If a business process takes longer than expected, your administrator can use the
 To get started working with the Performance Profiler, follow these steps:
 
 1. In [!INCLUDE [prod_short](../includes/prod_short.md)], choose the :::image type="content" source="../developer/media/search-icon.png" alt-text="Tell me what you want to do"::: icon, enter **Performance Profiler**, and then choose the related link.
-1. Choose the Open this page in a new window icon <!-- fix --> in the upper right corner of the page.  
+1. Choose the :::image type="content" source="../media/new-window-icon.PNG" alt-text="Open this page in a new window icon."::: icon in the upper right corner of the page.  
     This opens the profiler in a separate window, which is convenient for starting and stopping the recording.
 3. Now, still in [!INCLUDE [prod_short](../includes/prod_short.md)], navigate to the page or process that you want to record profiling data for.  
     To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
@@ -37,9 +37,6 @@ After you record a snapshot you'll get two types of insights:
 * The **Time Spent** chart shows how many milliseconds each app took to complete its part. This chart is available if you turn on the **Show technical information** toggle. 
 
 You can use the **App Name** and **App Publisher** actions to filter the charts, for example, to view the performance of apps from a particular publisher.
-
-> [!TIP]
-> It's a good idea to open the Performance Profiler page in a separate browser window while you record a process. That makes it easier to return to the profiler to stop the recording. To open the page in a new window, choose the :::image type="content" source="../media/new-window-icon.PNG" alt-text="Open this page in a new window icon."::: icon in the upper right of the page. 
 
 ## Viewing technical information
 
