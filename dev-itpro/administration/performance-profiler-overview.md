@@ -1,6 +1,6 @@
 ---
-title: "In-Client Performance Profiler overview"
-description: Describes how to use the In-Client Performance Profiler page to troubleshoot slow processes.
+title: "In-client Performance Profiler overview"
+description: Describes how to use the in-client Performance Profiler page to troubleshoot slow processes.
 ms.author: bholtorf
 ms.custom: na
 ms.date: 05/25/2023
@@ -12,7 +12,7 @@ ms.topic: conceptual
 author: bholtorf
 ---
 
-# In-Client Performance Profiler overview
+# In-client Performance Profiler overview
 
 If a business process takes longer than expected, your administrator can use the **Performance Profiler** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to record a snapshot of the process. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed. Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself. For more information, see [Viewing technical information](performance-profiler-overview.md#viewing-technical-information).
 

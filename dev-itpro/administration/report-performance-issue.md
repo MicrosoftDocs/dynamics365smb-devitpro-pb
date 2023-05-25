@@ -44,7 +44,7 @@ If the issue can be reproduced, do the following tasks:
 2. Note down the time (in UTC timezone).
 3. Enable additional logging (Find it under _Report a Problem_).
 4. Note down the Session ID, Azure AD tenant ID, and Environment name.
-5. Enable the performance profiler, see [Performance Profiler Overview](performance-profiler-overview.md) for details
+5. Enable the in-client Performance Profiler, see [In-Client Performance Profiler Overview](performance-profiler-overview.md) for details
 6. Reproduce the issue.
 7. Download the profile file.
 
