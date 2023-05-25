@@ -4,7 +4,7 @@ description: Describes how to use the In-Client Performance Profiler page to tro
 ms.author: bholtorf
 ms.custom: na
 ms.date: 05/25/2023
-ms.reviewer: na
+ms.reviewer: solsen
 ms.search.forms: 24
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,10 +16,19 @@ author: bholtorf
 
 If a business process takes longer than expected, your administrator can use the **Performance Profiler** page in [!INCLUDE [prod_short](../includes/prod_short.md)] to record a snapshot of the process. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed. Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself. For more information, see [Viewing technical information](performance-profiler-overview.md#viewing-technical-information).
 
-## Working with the Performance Profiler page
+## Invoking the Performance Profiler page
+
+To get started working with the Performance Profiler, follow these steps:
+
+1. In [!INCLUDE [prod_short](../includes/prod_short.md)], choose the :::image type="content" source="../developer/media/search-icon.png" alt-text="Tell me what you want to do"::: icon, enter **Performance Profiler**, and then choose the related link.
+1. Choose the Open this page in a new window icon <!-- fix --> in the upper right corner of the page.  
+    This opens the profiler in a separate window, which is convenient for starting and stopping the recording.
+3. Now, still in [!INCLUDE [prod_short](../includes/prod_short.md)], navigate to the page or process that you want to record profiling data for.  
+    To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
+4. 
 
 
-<!-- insert steps, new section -->
+## Analyzing the results
 
 After you record a snapshot you'll get two types of insights:
 
