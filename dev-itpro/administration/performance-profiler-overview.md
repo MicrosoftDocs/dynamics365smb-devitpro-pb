@@ -49,9 +49,11 @@ If you want to dig into the technical specifics, you can turn on the **Show tech
 |Time Spent by Application Object|This FastTab shows the objects, such as pages, codeunits, and tables, that were involved in the process. The interesting things here are the **Time Spent** and **Samples** columns. The Time Spent column focuses on the object, and shows how long it was active during the recording. The Samples column shows the number of times that the profiler sampled the performance of the object.|
 |Call Tree|The **Self Time** and **Total Time** columns show where time is spent in the code. The **Self Time** column shows the amount of time spent in the method only, and excludes calls out of the method. The **Total Time** field is the Self Time amount *plus* calls out of the method.|
 
+<!-- screenshot -->
+
 ## Downloading and sharing performance profiles
 
-If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can download the recording and then copy the file to OneDrive.  
+If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can download the recording and then copy the file to OneDrive. To share the recording, choose the **Share** button on the **Performance Profiler** page. Once the file is ready, you can share it with the app provider.
 
 ## The In-Client Performance Profiler and the AL Profiler
 
