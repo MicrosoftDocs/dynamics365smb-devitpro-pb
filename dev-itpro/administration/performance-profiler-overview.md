@@ -27,9 +27,9 @@ To get started working with the Performance Profiler, follow these steps:
     To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
 4. When ready, press the **Start** button in the **Performance Profiler** page, and then perform the process that you want to record. When you're done, press the **Stop** button.  
   The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**.
-5. Toggle the **Show technical information** button to show time spent and the call tree. To drill down into this data, see [Viewing technical information](performance-profiler-overview.md#viewing-technical-information).
+5. Toggle the **Show technical information** button to show time spent and the call tree. To drill down into this data, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results).
   
-## Analyzing the results
+## Analyzing high-level results
 
 After you record a snapshot you'll get two types of insights:
 
@@ -38,7 +38,9 @@ After you record a snapshot you'll get two types of insights:
 
 You can use the **App Name** and **App Publisher** actions to filter the charts, for example, to view the performance of apps from a particular publisher.
 
-## Viewing technical information
+<!-- screenshot -->
+
+## Viewing advanced results
 
 If you want to dig into the technical specifics, you can turn on the **Show technical information** toggle. That adds the **Time Spent by Application Object** and **Call Tree** FastTabs. The following table describes the FastTabs.
 
