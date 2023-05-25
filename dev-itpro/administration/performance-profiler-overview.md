@@ -27,7 +27,7 @@ To get started working with the Performance Profiler, follow these steps:
     To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
 4. When ready, press the **Start** button in the **Performance Profiler** page, and then perform the process that you want to record. When you're done, press the **Stop** button.  
   The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**. For more information, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results).
-5. Toggle the **Show technical information** button to show time spent and the call tree. To drill down into this data, see [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
+5. Toggle the **Show technical information** button to show the time spent and the call tree. To drill down into this data, see [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
   
 ## Analyzing high-level results
 
@@ -53,11 +53,11 @@ If you want to dig into the technical specifics, you can turn on the **Show tech
 
 ## Downloading and sharing performance profiles
 
-If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can download the recording and then copy the file to OneDrive. To share the recording, choose the **Share** button on the **Performance Profiler** page. Once the file is ready, you can share it with the app provider.
+If you want to share a recording, for example, if you're in contact with the company that provided an app that you think is slowing down a process, you can download the recording and then copy the file to OneDrive. To share the recording, choose the **Share** button on the **Performance Profiler** page. Once the file is ready, you can share it with, for example, the app provider.
 
-## The In-Client Performance Profiler and the AL Profiler
+## The in-client Performance Profiler and the AL Profiler
 
-The In-Client Performance Profiler features are a simplified version of the AL Profiler for the AL Language extension in Visual Studio Code. You can capture a performance profile of the code that was run during a snapshot. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
+The in-client Performance Profiler features, which are described in this article, are a simplified version of the AL Profiler for the AL Language extension in Visual Studio Code. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views and drill-down further into advanced data for the specific snapshot. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
 
 ## See Also
 
