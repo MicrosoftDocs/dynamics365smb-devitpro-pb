@@ -53,7 +53,6 @@ If a specific page takes too long to load, it might be due to extensions that ar
 
 Read more about how to use the page inspector to troubleshoot extension performance here [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
 
-
 ## Analyzing performance issues using the in-client Performance Profiler 
 
 Use the in-client **Performance Profiler** page to record a slow scenario that can then be analyzed to see where time was spent. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly in the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. 
