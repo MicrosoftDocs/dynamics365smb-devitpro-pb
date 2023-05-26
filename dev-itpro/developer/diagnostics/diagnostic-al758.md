@@ -3,7 +3,7 @@ title: "Compiler Warning (Future Error) AL0758"
 description: "The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/20/2023
+ms.date: 05/26/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -21,7 +21,7 @@ The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the exten
 
 
 > [!IMPORTANT]
-> This warning will become an error with Business Central 2024 release wave 1.  
+> This warning will become an error with Business Central 2023 release wave 2.  
 
 ## Description
  Whitespaces in names are internally replaced with an underscore during compilation, such that two different names can collide.  

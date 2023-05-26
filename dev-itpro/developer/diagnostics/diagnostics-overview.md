@@ -3,7 +3,7 @@ title: "AL Diagnostics"
 description: ""
 ms.author: solsen
 ms.custom: na
-ms.date: 03/20/2023
+ms.date: 05/26/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -631,8 +631,8 @@ author: SusanneWindfeldPedersen
 |[AL0751](diagnostic-al751.md)|Enum values can't be nested. Use '{0}' instead.|Warning (Future Error)|
 |[AL0752](diagnostic-al752.md)|The name of a dataitem cannot be empty because it can cause runtime errors.|Error|
 |[AL0753](diagnostic-al753.md)|The name of a dataitem cannot be empty because it can cause runtime errors.|Warning (Future Error)|
-|[AL0754](diagnostic-al754.md)|The '{0}' already defines a method called '{1}'.|Error|
-|[AL0755](diagnostic-al755.md)|The '{0}' already defines a method called '{1}'.|Warning (Future Error)|
+|[AL0754](diagnostic-al754.md)|The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.|Error|
+|[AL0755](diagnostic-al755.md)|The '{0}' already defines a built-in member called '{1}'. Choose another name for {2} '{1}', or it might cause runtime issues.|Warning (Future Error)|
 |[AL0756](diagnostic-al756.md)|The division by Abs(integer) will change its behavior in release version 11. For more information visit the official documentation.|Warning|
 |[AL0757](diagnostic-al757.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Error|
 |[AL0758](diagnostic-al758.md)|The name of {0} '{1}' conflicts with {0} '{2}' defined in {3} '{4}' by the extension '{5}'. Please choose another name for one of them. Otherwise, this might cause runtime issues.|Warning (Future Error)|
@@ -647,12 +647,7 @@ author: SusanneWindfeldPedersen
 |[AL0767](diagnostic-al767.md)|The URL '{0}' cannot be used as the ruleset path for this project because its configuration does not permit external rulesets.|Error|
 |[AL0768](diagnostic-al768.md)|The property '{0}' is required when property '{1}' is set to '{2}'.|Warning (Future Error)|
 |[AL0769](diagnostic-al769.md)|The property '{0}' is required.|Warning (Future Error)|
-|[AL0770](diagnostic-al770.md)|The identifier '{0}' cannot have any leading or trailing spaces.|Error|
-|[AL0771](diagnostic-al771.md)|The identifier '{0}' cannot have any leading or trailing spaces.|Warning (Future Error)|
 |[AL0772](diagnostic-al772.md)|The attribute '{0}' can only be used in combination with attribute '{1}'.|Error|
-|[AL0773](diagnostic-al773.md)|The number of files found in '{0}' exceeds {1}. This may result in a slower compilation.|Warning|
-|[AL0774](diagnostic-al774.md)|Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.|Error|
-|[AL0775](diagnostic-al775.md)|Try methods should not specify an explicit return value, because the value will be discarded. The actual return value depends on whether the method returns an error or not.|Warning (Future Error)|
 |[AL0999](diagnostic-al999.md)|Internal error: {0}.|Error|
 |[AL1000](diagnostic-al1000.md)|Ignoring /noconfig option because it was specified in a response file.|Warning|
 |[AL1001](diagnostic-al1001.md)|Source file '{0}' could not be found.|Error|
