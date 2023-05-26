@@ -84,7 +84,7 @@ The response would return with the specified changes in the result, see the foll
    It's recommended to use webhooks instead. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).
 
 > [!NOTE]
-> Starting in Business Central 2023 release wave 1 (v22), delta links are deprecated, and we recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
+> Starting in Business Central 2023 release wave 1 (v22), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  
