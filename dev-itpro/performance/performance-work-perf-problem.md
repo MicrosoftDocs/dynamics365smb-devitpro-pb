@@ -58,13 +58,13 @@ Read more about how to use the page inspector to troubleshoot extension performa
 
 Use the in-client **Performance Profiler** page to record a slow scenario that can then be analyzed to see where time was spent. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly in the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. 
 
-To profile a scenario, you must in very generic steps do the following:
+To profile a scenario, the overall steps are the following:
 
 1. Start the Performance Profiler
 2. Perform the (slow) scenario
 3. Stop the Performance Profiler
 
-For more specific information on how to use the in-client Performance Profiler to troubleshoot performance see [Performance Profiler Overview](../administration/performance-profiler-overview.md).
+For more specific information on how to start and use the in-client Performance Profiler see [Performance Profiler Overview](../administration/performance-profiler-overview.md).
 
 When analyzing the result, you have three options:
 
