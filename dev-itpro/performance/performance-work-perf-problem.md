@@ -61,7 +61,7 @@ Use the in-client **Performance Profiler** page to record a slow scenario that c
 To profile a scenario, you must in very generic steps do the following:
 
 1. Start the Performance Profiler
-2. Perform the scenario
+2. Perform the (slow) scenario
 3. Stop the Performance Profiler
 
 For more specific information on how to use the in-client Performance Profiler to troubleshoot performance see [Performance Profiler Overview](../administration/performance-profiler-overview.md).
@@ -73,7 +73,7 @@ When analyzing the result, you have three options:
 3. Go to _Time Spent by Application Object_ to see the distribution of time spent in the AL call tree (this is an advanced option).
 4. Download the generated profile content and share it with a developer. The profile file can be viewed in Visual Studio Code with the standard AL Profiler editor. From there, you can use existing options to access the AL code that was slow.
 
-The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. For more information about the AL Profiler, see [AL Profiler](../developer/devenv-al-profiler-overview.md).
+The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. For more specific information on how to use the in-client Performance Profiler to troubleshoot performance see [Performance Profiler Overview](../administration/performance-profiler-overview.md). For more information about the AL Profiler, see [AL Profiler](../developer/devenv-al-profiler-overview.md).
 
 ## Analyzing performance issues using telemetry
 
