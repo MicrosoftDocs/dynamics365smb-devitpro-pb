@@ -58,21 +58,22 @@ Read more about how to use the page inspector to troubleshoot extension performa
 
 Use the in-client **Performance Profiler** page to record a slow scenario that can then be analyzed to see where time was spent. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly in the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. 
 
-Do this to profile a scenario:
-1. Start the profiler
+To profile a scenario, you must in very generic steps do the following:
+
+1. Start the Performance Profiler
 2. Perform the scenario
-3. Stop profiler
+3. Stop the Performance Profiler
+
+For more specific information on how to use the in-client Performance Profiler to troubleshoot performance see [Performance Profiler Overview](../administration/performance-profiler-overview.md).
 
 When analyzing the result, you have three options:
+
 1. Look at _Active Apps_ to see in which app time is spent (did you recently install an app?).
 2. Click on an app to see how time is distributed over the apps/extensions that have code running in the app.
 3. Go to _Time Spent by Application Object_ to see the distribution of time spent in the AL call tree (this is an advanced option).
 4. Download the generated profile content and share it with a developer. The profile file can be viewed in Visual Studio Code with the standard AL Profiler editor. From there, you can use existing options to access the AL code that was slow.
 
-The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. 
-
-Read more about how to use the in-client profiler to troubleshoot performance here [Performance Profiler Overview](../administration/performance-profiler-overview.md).
-
+The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. For more information about the AL Profiler, see [AL Profiler](../developer/devenv-al-profiler-overview.md).
 
 ## Analyzing performance issues using telemetry
 
