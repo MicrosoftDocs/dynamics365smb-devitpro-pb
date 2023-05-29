@@ -3,7 +3,7 @@ author: solsen
 ms.topic: include
 ms.date: 04/01/2021
 ms.author: solsen
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 ### Enroll in the CSP program
 

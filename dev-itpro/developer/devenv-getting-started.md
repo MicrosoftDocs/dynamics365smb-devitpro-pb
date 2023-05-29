@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: bholtorf
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get started with modules in the System Application
