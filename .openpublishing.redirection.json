@@ -2267,7 +2267,7 @@
     },
     {
       "source_path": "dev-itpro/developer/devenv-triggers-overview.md",
-      "redirect_url": "triggers/devenv-triggers.md",
+      "redirect_url": "triggers/devenv-triggers",
       "redirect_document_id": false
     },
     {
@@ -7356,12 +7356,12 @@
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/record/record-findset-method.md",
-    "redirect_url": "dev-itpro/developer/methods-auto/record/record-findset-boolean-method.md",
+    "redirect_url": "dev-itpro/developer/methods-auto/record/record-findset-boolean-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-findset-method.md",
-    "redirect_url": "dev-itpro/developer/methods-auto/recordref/recordref-findset-boolean-method.md",
+    "redirect_url": "dev-itpro/developer/methods-auto/recordref/recordref-findset-boolean-method",
     "redirect_document_id": false
    }
   ] 
