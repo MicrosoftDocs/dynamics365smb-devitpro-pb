@@ -1,49 +1,38 @@
 ---
-title: "Update 22.1 for Microsoft Dynamics 365 Business Central 2023 Release Wave 1"
-description: Get an overview of new and changed capabilities in the 22.1 update of Business Central online, which is part of 2023 release wave 1.
+title: "Update 22.2 for Microsoft Dynamics 365 Business Central 2023 Release Wave 1"
+description: Get an overview of new and changed capabilities in the 22.2 update of Business Central online, which is part of 2023 release wave 1.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 05/02/2023
+ms.date: 05/30/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 author: EmmaNielsson
 ---
 
-# Update 22.1 for Microsoft Dynamics 365 Business Central online 2023 release wave 1
+# Update 22.2 for Microsoft Dynamics 365 Business Central online 2023 release wave 1
 
-Would you like to know what has changed in update 22.1? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
+Would you like to know what has changed in update 22.2? Below you'll find an overview and relevant links to what has been done on hotfixes and regulatory features in this update. In addition, we have gathered some good to know information and links, you might find interesting.
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5026932) and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article]() and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes  
-- [Turn off event-based sync for specific integration table mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/turn-off-event-based-synch-specific-integration-table-mappings)
-- [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
-- [Save time with automatic account codes](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/automatic-account-codes)
-- [Swedish localization delivered as extension](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/swedish-localization-app--delocalization) 
-- [Attach AL debugger to active session or next session](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
-- [Non-deductible, partly deductible VAT expands functionality](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/non-deductible-partly-deductible-vat-expands-functionality)
-- [Partners can control welcome banner texts](../administration/onboarding-welcome-banner.md)
-- [Measure onboarding time of customers, apps and features](../administration/onboarding-telemetry.md)
+- Turn o
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
 | France | New mandatory mentions on sales documents | New fields are required on the Sales Invoices in France following the decree of the French Tax Authorities: Client's SIREN number, the delivery address of the goods sold if it is different from the customer's address, information if the invoice includes goods, services, or both, and option to pay tax based on debits. |
-| W1 | Added field Registration No. to Contacts | We already had added the Registration No. field to the customer and vendor cards, but this field has been added to the Contact card as well. |
-| Norway | An electronic invoice in EHF 3.0 format validation improvement | Previously, an electronic invoice in EHF 3.0 format couldn't be validated successfully when the document contains a negative line for invoice rounding, and with this release it is improved. |
-| Spain | Added field 'Closed' to the table 'No Taxable Entry' | Added the field 'Closed' to the table 'No Taxable Entry' to avoid pending amounts in VAT Declarations, so now users can filter 'No Taxable Entries' by Open or Closed status. |
-| Italy | Intrastat | The Intrastat extension makes it easy to export the Intrastat report in the format that the Italian authorities require. |
-| Italy | Service Declaration | The Service Declaration extension makes it easy to export the Service Declaration report in the format that the Italian authorities require. |
+
 
 ## Release Plan
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 1 (release from April 2023 through September 2023), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
-## Upgrade to 22.1
+## Upgrade to 22.2
 
 Please note that new customers will automatically get the latest builds of Business Central (22.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
@@ -57,16 +46,9 @@ The Partner Center team has now [announced](/partner-center/announcements/2023-m
 To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
 
 
-**Did you read this quarter's Business Central newsletter?**  
-On April 11, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on  [aka.ms/BCNews](https://aka.ms/BCNews). 
-
-**Join us for updates on LinkedIn!**  
-Follow the new company page for Microsoft Dynamics 365 Business Central on LinkedIn. We’ll share updates, announcements, and other “good to know” stuff. Join us [here](https://www.linkedin.com/company/microsoft-dynamics-365-business-central/). 
-
 **Upcoming Business Central Office Hours Calls**  
-In March, we will be hosting the following call, which you can already register for today:
+In June, we will be hosting the following calls, which you can already register for today:
 
-- **May 16:** Business Central Administration Overview
 - **June 6:** Copilot and AI
 - **June 13:** Onboarding your customers to Business Central
 - **June 20:** Review of the new E-invoicing design 
