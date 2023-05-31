@@ -24,6 +24,7 @@ To get started working with the Performance Profiler, follow these steps:
 1. Choose the :::image type="content" source="../media/new-window-icon.PNG" alt-text="Open this page in a new window icon."::: icon in the upper right corner of the page.  
     > [!NOTE]  
     > This opens the profiler in a separate window, which is convenient for starting and stopping the recording.
+    >
     > You can also access the Performance Profiler page from under Help & Support, under **Analyze Performance**.
 3. Now, still in [!INCLUDE [prod_short](../includes/prod_short.md)], navigate to the page or process that you want to record profiling data for.  
     > [!TIP]  
