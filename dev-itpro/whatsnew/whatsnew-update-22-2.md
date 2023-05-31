@@ -19,13 +19,28 @@ Would you like to know what has changed in update 22.2? Below you'll find an ove
 Find an overview of hotfixes in this [article]() and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes  
-- Turn o
+- [Transfer environments between Azure AD tenants mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/transfer-environments-between-azure-active-directory-tenants)
+- [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
+- [Use business events to notify and trigger external systems](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/use-business-events-notify-trigger-external-systems)
+- Shopify Returns handling
+- Make base (LCY) currency code match non mandatory for integration (was BC /CE Integration Dataverse) 
+- Attach files from source for Purchase/Sales orders
+- Misc small improvements to Default Attachment functionality scenarios
+- Filtering on app version specific feature keys 
+- Create diet templates for “Automate” group & instant flows
+- [PowerApps] Create a sample Power Apps (grow community) 
+- [Automate] User can discover and run new "diet" templates for Power Automate workflows 
+- [Automate] Create diet templates for Request Approval 
+
+
 
 ## Localization updates
 
 | Country| Feature  |Description|
 |-------------|--------------|--------------|
-| France | New mandatory mentions on sales documents | New fields are required on the Sales Invoices in France following the decree of the French Tax Authorities: Client's SIREN number, the delivery address of the goods sold if it is different from the customer's address, information if the invoice includes goods, services, or both, and option to pay tax based on debits. |
+| Switzerland | Removing DTA payment journal action | New fields are required on the Sales Invoices in France following the decree of the French Tax Authorities: Client's SIREN number, the delivery address of the goods sold if it is different from the customer's address, information if the invoice includes goods, services, or both, and option to pay tax based on debits. |
+| Italy | Intrastat  | The Intrastat extension makes it easy to export the Intrastat report in the format that the Italian authorities require. |
+| Italy | Service declaration | The service declaration extension makes it easy to export the Service Declaration report in the format that the Italian authorities require. |
 
 
 ## Release Plan
@@ -49,7 +64,7 @@ To manage Dynamics 365 Business Central customers via GDAP we recommend requesti
 **Upcoming Business Central Office Hours Calls**  
 In June, we will be hosting the following calls, which you can already register for today:
 
-- **June 6:** Copilot and AI
+- **June 6:** Dynamics 365 Copilot in Business Central
 - **June 13:** Onboarding your customers to Business Central
 - **June 20:** Review of the new E-invoicing design 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
