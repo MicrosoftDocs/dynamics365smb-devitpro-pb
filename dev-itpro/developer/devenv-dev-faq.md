@@ -31,9 +31,9 @@ For the latest Developer Preview releases you must use the [!INCLUDE[d365al_ext_
 
 To read about enabling debugging in AL, see here [Debugging](devenv-debugging.md). To read about snapshot debugging, see [Snapshot Debugging](devenv-snapshot-debugging.md).
 
-## Why do the symbols downloaded to VSCode have different versions from the apps that are installed on my tenant?
+## Why do the symbols downloaded to Visual Studio Code have different versions from the apps that are installed on my tenant?
 
-We always download the highest published version of symbols. This means that if one of your dependencies has a higher version published, that version will be downloaded even if it is not installed for your environment.
+We always download the highest published version of symbols. This means that if one of your dependencies has a higher version published, that version will be downloaded even if it's not installed for your environment.
 
 ## Where do I find help regarding AppSource validation and submission?
 
