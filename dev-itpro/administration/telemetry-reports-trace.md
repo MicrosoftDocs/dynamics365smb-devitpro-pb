@@ -19,6 +19,11 @@ Report telemetry gathers data about which reports are run on the environment. It
 
 You use this data to gather statistics on report usage or to help identify slow-running reports.
 
+    > [!TIP]
+    > The time spent to run a report consists of two parts: generating the dataset and rendering the report (applying the layout). In report telemetry, you get two durations: serverExecutionTime and totalTime. The former is roughly the time it takes for the server to generate the dataset. To calculate the rendering time, simply subtract serverExecutionTime from totalTime: renderingTime = totalTime - serverExecutionTime.
+
+
+
 ## Successful report generation
 
 Occurs when a report dataset generates without any errors.
@@ -29,7 +34,7 @@ The following table explains the general dimensions of this trace.
 
 |Dimension|Description or value|
 |---------|-----|
-|operation_Name|**Success report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventID` column custom in Kusto queries instead of `operation_Name`.|
+|operation_Name|**Success report generation**<br /><br />**Note:** The use of the `operation_Name` column was deprecated in version 16.1. In future versions, data won't be stored in this column. So in version 16.1 and later, use the custom dimension column `eventId` column custom in Kusto queries instead of `operation_Name`.|
 |message|Version 16.1 and later:<br />**Report rendered: {report ID} - {report name}**<br /><br />Before version 16.1:<br />**The report {report ID} '{report name}' rendered successfully**|
 |severityLevel|**1**|
 |user_Id|[!INCLUDE[user_Id](../includes/include-telemetry-user-id.md)] |
@@ -50,7 +55,7 @@ The custom dimensions that are of particular interest for this operation include
 -->
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|-----|
 |aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
 |alObjectId|Specifies the ID of the report object that was run.|
 |alObjectName|Specifies the name of the report object that was run.|
