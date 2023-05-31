@@ -3,12 +3,12 @@ title: Report Generation Telemetry Trace | Microsoft Docs
 description: Learn about the report telemetry in Business Central  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 05/31/2023
 ms.author: jswymer
+ms.reviewer: jswymer
+ms.custom: bap-template
+ms.service: dynamics365-business-central
 ---
 
 # Analyzing Report Telemetry
@@ -19,10 +19,8 @@ Report telemetry gathers data about which reports are run on the environment. It
 
 You use this data to gather statistics on report usage or to help identify slow-running reports.
 
-    > [!TIP]
-    > The time spent to run a report consists of two parts: generating the dataset and rendering the report (applying the layout). In report telemetry, you get two durations: serverExecutionTime and totalTime. The former is roughly the time it takes for the server to generate the dataset. To calculate the rendering time, simply subtract serverExecutionTime from totalTime: renderingTime = totalTime - serverExecutionTime.
-
-
+> [!TIP]
+> The time spent to run a report consists of two parts: generating the dataset and rendering the report (applying the layout). In report telemetry, you get two durations: serverExecutionTime and totalTime. The former is roughly the time it takes for the server to generate the dataset. To calculate the rendering time, simply subtract serverExecutionTime from totalTime: renderingTime = totalTime - serverExecutionTime.
 
 ## Successful report generation
 
