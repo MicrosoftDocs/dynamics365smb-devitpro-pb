@@ -68,7 +68,7 @@ To upload an existing performance profile, choose the **Upload** button on the *
 
 ## The in-client Performance Profiler and the AL Profiler
 
-The in-client Performance Profiler features, which are described in this article, are a simplified version of the AL Profiler for AL in Visual Studio Code. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views and drill-down further into advanced data for the specific snapshot. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
+The in-client Performance Profiler described in this article, is a simplified version of the AL Profiler for AL in Visual Studio Code. Using the performance profiling editor view in Visual Studio Code, you can investigate the time spent on a process using top-down and bottom-up call stack views and drill-down further into advanced data for the specific snapshot, as well as navigate to source code. For more information, see [AL Profiler Overview](/dynamics365/business-central/dev-itpro/developer/devenv-al-profiler-overview).  
 
 ## See Also
 

@@ -199,7 +199,7 @@ There are a few server restrictions for sampling profiling to be aware of:
 
 ### In-client performance profiling
 
-In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in the Visual Studio Code and further investigated. For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md).
+In [!INCLUDE [prod_short](includes/prod_short.md)], you can use the **Performance Profiler** page to record a snapshot to do sampling profiling. This allows for recording of a process that seems slow directly in [!INCLUDE [prod_short](includes/prod_short.md)]. When the Performance Profiler has run and recorded a process in [!INCLUDE [prod_short](includes/prod_short.md)], it generates a `.alcpuprofile` file, which can be downloaded and shared using OneDrive. When receiving such a `.alcpuprofile` file, it can be opened in another [!INCLUDE [prod_short](includes/prod_short.md)] Performance Profiler, or in Visual Studio Code and further investigated. For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md).
 
 ## See Also
 
