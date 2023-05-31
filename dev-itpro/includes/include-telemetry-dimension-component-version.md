@@ -1,0 +1,1 @@
+Specifies the version number of the component that emits telemetry (see the component dimension.)
