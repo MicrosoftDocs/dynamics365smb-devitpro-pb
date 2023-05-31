@@ -30,11 +30,14 @@ To get started working with the Performance Profiler, follow these steps:
     > [!TIP]  
     > To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
 4. When ready, press the **Start** button in the **Performance Profiler** page, and then perform the process that you want to record. When you're done, press the **Stop** button.  
-  The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**. For more information, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results). Toggle the **Show technical information** button to show the time spent and the call tree. To drill down into this data, see [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
+  
+  The profiler has now recorded the process and displays the results under **Active Apps**, where you can aggregate by **App Name** or **App Publisher**. For more information, see [Analyzing high-level results](performance-profiler-overview.md#analyzing-high-level-results).  
+  
+  Toggle the **Show technical information** button to show the time spent and the call tree. To drill down into this data, see [Viewing advanced results](performance-profiler-overview.md#viewing-advanced-results).
   
 ## Analyzing high-level results
 
-After you record a snapshot you'll get two types of insights:
+After you record a snapshot you'll get the following insights:
 
 * The **Active Apps** chart shows the apps that where active during the recording of the profile. They were either running or called other apps. The duration represents the time you might save by removing an app.
 
@@ -61,7 +64,7 @@ You can also download the recording and for example copy the file to OneDrive to
 
 ## Clear performance profiles
 
-If you want to clear the performance profile data, for example, if you want to start over with a new recording, choose the **Clear** button on the **Performance Profiler** page.
+If you want to clear the performance profile data, for example, if you want to start over with a new recording, choose the **Clear** button on the **Performance Profiler** page. The data is now cleared, and you can start a new recording.
 
 ## Uploading performance profiles
 
