@@ -16,9 +16,10 @@ Would you like to know what has changed in update 22.2? Below you'll find an ove
 
 ## Hotfixes
 
-Find an overview of hotfixes in this [article]() and the downloads [here](https://aka.ms/BCDownload).
+Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5027892) and the downloads [here](https://aka.ms/BCDownload).
 
-## Feature changes  
+## Feature changes
+
 - [Transfer environments between Azure AD tenants mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/transfer-environments-between-azure-active-directory-tenants)
 - [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
 - [Use business events to notify and trigger external systems](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/use-business-events-notify-trigger-external-systems)
@@ -30,8 +31,6 @@ Find an overview of hotfixes in this [article]() and the downloads [here](https:
 - Misc small improvements to Default Attachment functionality scenarios
 - Filtering on app version specific feature keys 
 
-
-
 ## Localization updates
 
 | Country| Feature  |Description|
@@ -40,14 +39,13 @@ Find an overview of hotfixes in this [article]() and the downloads [here](https:
 | Italy | Intrastat  | The Intrastat extension makes it easy to export the Intrastat report in the format that the Italian authorities require. |
 | Italy | Service declaration | The service declaration extension makes it easy to export the Service Declaration report in the format that the Italian authorities require. |
 
-
 ## Release Plan
 
 If you want to get a comprehensive overview of what's new and planned for Business Central online for the entire 2023 release wave 1 (release from April 2023 through September 2023), find the link to the release plan [here](https://aka.ms/BCReleasePlan).
 
 ## Upgrade to 22.2
 
-Please note that new customers will automatically get the latest builds of Business Central (22.1). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
+Please note that new customers will automatically get the latest builds of Business Central (22.2). If you are an existing partner/customer, you will receive an email notification as soon as your environment has been upgraded.
 
 ## Good to know
 
