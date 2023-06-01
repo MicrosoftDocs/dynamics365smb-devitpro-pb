@@ -883,7 +883,8 @@
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
-
+### Calling external services
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)  
 ### App key vaults for secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
