@@ -229,6 +229,7 @@
 #### [Error method telemetry](administration/telemetry-error-method-trace.md) 
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
