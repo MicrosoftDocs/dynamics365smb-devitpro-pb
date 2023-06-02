@@ -229,6 +229,7 @@
 #### [Error method telemetry](administration/telemetry-error-method-trace.md) 
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
@@ -882,7 +883,8 @@
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
-
+### Calling external services
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)  
 ### App key vaults for secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
@@ -1200,6 +1202,8 @@
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
+## Integrating with external systems
+### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
@@ -1257,6 +1261,8 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
+## [Extract data from Business Central](developer/devenv-extract-data.md)
+<!-- end integration-->
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated features in the application

@@ -74,7 +74,7 @@ If a user has problems managing a cloud migration, like starting migration, init
 - The user has a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] license (Essentials or Premium, depending on their solution). We recommend using free Dynamics 365 Business Central Premium Trial subscription for this user.  
 - The user is assigned the SUPER permission set.
 
-Users without a license, such as internal administrators or delegated administrators, aren't allowed to run the migration.  
+Running cloud migration requires SUPER permissions because the operation has to be able to schedule diverse background tasks on behalf of the user. As part of the setup to run cloud migration, delegated administrators can obtain consent from an internal licensed user that has SUPER permissions. Other delegated roles can't run cloud migration.
 
 ## Self-Hosted Integration Runtime
 
