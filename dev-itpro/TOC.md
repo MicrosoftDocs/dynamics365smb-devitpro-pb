@@ -1261,6 +1261,8 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
+## [Extract data from Business Central](developer/devenv-extract-data.md)
+<!-- end integration-->
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated features in the application
