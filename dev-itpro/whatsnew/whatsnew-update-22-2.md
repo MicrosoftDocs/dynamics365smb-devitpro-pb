@@ -19,16 +19,12 @@ Would you like to know what has changed in update 22.2? Below you'll find an ove
 Find an overview of hotfixes in this [article]() and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes  
-- [Transfer environments between Azure AD tenants mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/transfer-environments-between-azure-active-directory-tenants)
-- [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
 - [Use business events to notify and trigger external systems](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/use-business-events-notify-trigger-external-systems)
 - [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
 - [Additional types of document approval templates for Power Automate](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/new-approval-workflow-experience-templates-power-automate)
 - [Added new documentation, guidance, tools and samples illustrating a process of creating Power Apps for Business Central](https://aka.ms/BCpapps)
-- Make base (LCY) currency code match non mandatory for integration (was BC /CE Integration Dataverse) 
-- Attach files from source for Purchase/Sales orders
-- Misc small improvements to Default Attachment functionality scenarios
-- Filtering on app version specific feature keys 
+- Connect to Dataverse when Business Central local currency if different from Dataverse base transaction currency
+- Use attachments from document lines while sending emails
 
 
 
