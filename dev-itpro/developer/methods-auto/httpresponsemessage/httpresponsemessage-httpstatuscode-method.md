@@ -38,6 +38,12 @@ The status code of the HTTP response.
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## HTTP status codes
+
+[!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
+
+
 ## See Also
 [HttpResponseMessage Data Type](httpresponsemessage-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
