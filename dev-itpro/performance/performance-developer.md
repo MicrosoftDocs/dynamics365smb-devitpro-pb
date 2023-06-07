@@ -267,25 +267,7 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 ### Outgoing web service calls block AL execution
 
-If you call external web service using the HttpClient module in AL, be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this behavior means that the user will see a spinning wheel for the duration of the call.  
-
-If you've enabled telemetry for your environment or app, you can use this KQL query to analyze how much time users are delayed in the UI by calls to external services.
-
-```Kusto
-traces
-| where customDimensions has 'RT0019'
-| where customDimensions.clientType == 'WebClient'
-| project executionTimeInMs = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
-| summarize count() // how many calls
-, sum(executionTimeInMs) // sum of delays for UI sessions
-, avg(executionTimeInMs) // average waiting time by this app
-, max(executionTimeInMs) // average waiting time by this app
-by 
-// which app is calling out from the UI
-  extensionId = tostring( customDimensions.extensionId )
-, extensionName = tostring( customDimensions.extensionName )
-, extensionVersion = tostring( customDimensions.extensionVersion )
-```
+[!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
 ### Limit work done in login event subscribers
 The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
