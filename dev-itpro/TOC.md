@@ -1240,7 +1240,8 @@
 ### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform

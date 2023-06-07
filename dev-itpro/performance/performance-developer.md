@@ -145,6 +145,8 @@ The fastest (and least disruptive) way to get a historical load from [!INCLUDE[p
 
 The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
+For more information, see [Extract data from Business Central](../developer/devenv-extract-data.md).
+
 ## AL performance patterns
 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
