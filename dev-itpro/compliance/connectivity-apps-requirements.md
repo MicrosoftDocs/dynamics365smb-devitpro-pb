@@ -1,7 +1,7 @@
 ---
 title: Requirements for connectivity apps
 description: Learn about connectivity apps, how they can increase business productivity, and how to get your app listed as a connectivity app.
-ms.date: 04/11/2023
+ms.date: 05/23/2023
 ms.topic: conceptual
 author: sorenfriisalexandersen
 ms.author: soalex
@@ -16,8 +16,7 @@ To get a connectivity app listed in [!INCLUDE [prod_short](../includes/prod_shor
 
 In [!INCLUDE [prod_short](../includes/prod_short.md)] online, connectivity apps provide an easy and secure connection to external services, such as banks. this way, they can automate otherwise manual tasks, which improves business productivity. Connectivity apps as a feature are described here:
 
-* Connect to banks (starting in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2)
-* Connect to payroll providers (not yet available)
+* [Connect to banks](/dynamics365/business-central/ui-extensions#connect-your-business) (starting in [!INCLUDE [prod_short](../includes/prod_short.md)] 2022 release wave 2)
 
 ## What connectivity app publishers need to know
 

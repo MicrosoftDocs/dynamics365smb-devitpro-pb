@@ -20,13 +20,18 @@ This section introduces the different parts of the AL platform that are availabl
 
 Learning how to start background sessions using the task scheduler and job queues can help you offload work from UI sessions. For more information, see [Task Scheduler](devenv-task-scheduler.md).
 
+Calling out to external web services using the HTTPClient data type. For more information, see [HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md).
+
+Securing your app secrets with Azure Key Vault. For more information, see [Using Azure Key Vaults for Secrets](devenv-app-key-vault-overview.md)  
+
 Instrumenting your extension using feature telemetry and custom telemetry can help you monitor the extension after it has been deployed to production. For more information, see [Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md).
 
 ## See Also
 
 [Overview of the System Application](devenv-system-application-overview.md)  
 [Task Scheduler](devenv-task-scheduler.md)  
-[Job Queue](devenv-job-queue.md)  
+[Job Queue](devenv-job-queue.md)
+[HttpClient Data Type](methods-auto/httpclient/httpclient-data-type.md)    
 [Using Azure Key Vaults for Secrets](devenv-app-key-vault-overview.md)  
 [Creating Custom Telemetry Events](devenv-instrument-application-for-telemetry-app-insights.md)  
 [Add Feature Usage Telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)  
