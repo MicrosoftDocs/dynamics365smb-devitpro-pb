@@ -129,10 +129,11 @@ If this stage failed with the following error message `Automated upload to Busin
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
 
-## Questions about hotfixing an AppSource extension
+## Questions about hotfixing an AppSource app
 
-### What is qualified as a hotfix submission?
+For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
 
+<!--
 We're defining as `hotfix` the submission of a new version of an AppSource extension which will not become the latest version available in AppSource. 
 
 For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 will not become the latest version available.
@@ -192,7 +193,7 @@ If you submit a new version 1.5.0.0, you're then allowed to add the following pr
 - `[Obsolete] procedure MyNewObsoleteProcedure()` because it's obsolete pending,
 - `MyPublicProcedureFromV2()` because it's already defined in the next version.
 
-However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure.
+However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure. -->
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
