@@ -6,14 +6,14 @@ If you have enabled telemetry for your environment or app, you can use this KQL 
 traces
 | where customDimensions has 'RT0019'
 | where customDimensions.clientType == 'WebClient'
-| project executionTimeInMs = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
+| extend executionTimeInMs = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
 | summarize count() // how many calls
 , sum(executionTimeInMs) // sum of delays for UI sessions
 , avg(executionTimeInMs) // average waiting time by this app
 , max(executionTimeInMs) // average waiting time by this app
 by 
 // which app is calling out from the UI
-  extensionId = tostring( customDimensions.extensionId )
+  extensionPublisher = tostring( customDimensions.extensionPublisher )
 , extensionName = tostring( customDimensions.extensionName )
 , extensionVersion = tostring( customDimensions.extensionVersion )
 ```

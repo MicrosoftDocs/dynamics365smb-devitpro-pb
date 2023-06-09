@@ -881,6 +881,7 @@
 ##### [Create a new module](developer/devenv-new-module.md)
 ##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
 ##### [Change a module](developer/devenv-change-a-module.md)
+
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
@@ -891,6 +892,7 @@
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 #### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+#### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 ### Developing printer extensions
 #### [Printer extension overview](developer/devenv-reports-printing.md)
@@ -1236,11 +1238,12 @@
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
+### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- Microsoft Power BI -->
+### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
