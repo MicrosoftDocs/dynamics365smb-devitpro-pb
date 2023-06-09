@@ -10,7 +10,7 @@ ms.date: 06/08/2023
 ms.custom: bap-template
 ---
 
-## Hotfixing an AppSource app
+# Hotfixing an AppSource app
 
 A `hotfix` is defined as the submission of a new version of an AppSource app, which won't be the latest version available in AppSource. 
 
