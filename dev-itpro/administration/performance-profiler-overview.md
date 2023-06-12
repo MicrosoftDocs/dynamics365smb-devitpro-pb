@@ -25,7 +25,7 @@ To get started working with the Performance Profiler, follow these steps:
     > [!NOTE]  
     > This opens the profiler in a separate window, which is convenient for starting and stopping the recording.
     >
-    > You can also access the Performance Profiler page from under Help & Support, under **Analyze Performance**.
+    > You can also access the Performance Profiler page from under Help & Support, under **Analyze Performance**, which will open the Performance Profiler page a separate window.
 3. Now, still in [!INCLUDE [prod_short](../includes/prod_short.md)], navigate to the page or process that you want to record profiling data for.  
     > [!TIP]  
     > To get the most accurate results, you should start and stop the recording of the slow process as close to you experience the performance issues.
