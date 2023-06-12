@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Hotfixing an AppSource app
 
-A `hotfix` is defined as the submission of a new version of an AppSource app, which won't be the latest version available in AppSource. 
+A `hotfix` is defined as the submission of a new version of an AppSource app, outside the planned scheduling, whether the hotfix applies to the latest major, latest minor app, or a previous version.
 
 For example, if you have version 2.0.0.0 of your app available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 won't be the latest version available.
 
