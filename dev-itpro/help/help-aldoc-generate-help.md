@@ -4,7 +4,7 @@ description: This article describes how to download, and use the ALDoc tool to g
 author: 
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 03/03/2023
+ms.date: 06/12/2023
 ms.author: solsen
 ms.custom: bap-template
 ---
@@ -15,8 +15,8 @@ Generating content based on source code has many advantages such as accuracy, 10
 
 This article describes the steps to use the tool to generate the documents for al .app packages. To generate help using the ALDoc tool, the following steps are involved: 
 
-* Clone the repo <!-- internal steps, will be installed from product folder -->
 * Install .NET and DocFx v2 prerequisites
+* Install the ALDoc tool from the vsix file
 * Generate the reference documentation files
 * Build a static web site for the generated documentation
 
@@ -55,6 +55,10 @@ There are different ways to install DocFx v2. The following steps describe a sug
     ```
 
 Now, you have successfully installed DocFx v2 on your machine.
+
+## Install the ALDoc tool
+
+
 
 ## Generate reference
 
