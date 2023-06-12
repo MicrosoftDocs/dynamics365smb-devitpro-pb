@@ -217,6 +217,7 @@
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
+#### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration package lifecycle telemetry](administration/telemetry-configuration-package-trace.md)
 #### [Database deadlock telemetry](administration/telemetry-database-deadlocks-trace.md)
@@ -228,6 +229,7 @@
 #### [Error method telemetry](administration/telemetry-error-method-trace.md) 
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
@@ -877,15 +879,18 @@
 ##### [Create a new module](developer/devenv-new-module.md)
 ##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
 ##### [Change a module](developer/devenv-change-a-module.md)
+
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
-
+### Calling external services
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)  
 ### App key vaults for secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 #### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+#### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 ### Developing printer extensions
 #### [Printer extension overview](developer/devenv-reports-printing.md)
@@ -1198,6 +1203,8 @@
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
+## Integrating with external systems
+### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
@@ -1229,11 +1236,12 @@
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
+### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- Microsoft Power BI -->
+### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
@@ -1255,6 +1263,8 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
+## [Extract data from Business Central](developer/devenv-extract-data.md)
+<!-- end integration-->
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated features in the application

@@ -1,17 +1,17 @@
 ---
-title: Outgoing Web Service Request Trace | Microsoft Docs
+title: Outgoing Web Service Request Trace
 description: Learn about the outgoing web service request telemetry in Business Central  
-author: jswymer
+author: kennienp
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
-ms.author: jswymer
+ms.date: 06/01/2023
+ms.author: kepontop
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
+ms-custom: bap-template
 ---
 
-# Analyzing Outgoing Web Service Request Telemetry
+# Analyzing outgoing web service request telemetry
 
 [!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
 
@@ -22,7 +22,7 @@ Outgoing web service request telemetry gathers data about outgoing web service r
 The following table explains the general dimensions included in an outgoing **Web Services Call (Outgoing)** trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------|
 |message|**Web Service Called (Outgoing): {endpoint}**|
 |severityLevel|**1**|
 
@@ -59,15 +59,60 @@ The following table explains the custom dimensions included in a **Web Services 
 |totalTime|Specifies the amount of time it took to process the request, including the time to open the company. The time has the format hh:mm:ss.sssssss. <br /><br />|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-### Example trace
+## Sample KQL code 
+This KQL code can help you get started analyzing outgoing web service calls. 
 
-The following code snippet is a CustomDimensions example:
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0019'
+| project timestamp
+, aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+, alAuthenticationMethod = customDimensions.alAuthenticationMethod
+, alHttpTimeout = customDimensions.alHttpTimeout
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, alStackTrace = customDimensions.alStackTrace // This dimension was introduced in Business Central 2022 release wave 1, version 20.1.
+, clientType = customDimensions.clientType // This dimension was introduced in Business Central 2022 release wave 2, version 21.4.
+, endpoint = customDimensions.endpoint
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionVersion = customDimensions.extensionVersion
+, httpMethod = toupper( customDimensions.httpMethod ) // httpMethod is logged as the value used in the AL code
+, httpStatusCode = case( isnotempty(customDimensions.httpStatusCode), customDimensions.httpStatusCode, customDimensions.httpReturnCode ) 
+, httpHeaders = customDimensions.httpHeaders       
+, executionTime = customDimensions.serverExecutionTime
+, executionTimeInMS = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
+, usertelemetryId = case(
+  // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id
+, 'N/A'
+)
+// these three lines httpHeadersTmp, httpHeadersJSON, and Authorization illustrate how to extract data from the httpHeaders dimension
+| extend httpHeadersTmp =  tostring( httpHeaders )
+| extend httpHeadersJSON = parse_json(httpHeadersTmp)
+| extend Authorization = tostring( httpHeadersJSON.['Authorization'] )
+```
 
-`
-{"Telemetry schema version":"0.2","telemetrySchemaVersion":"0.2","Component version":"17.0.15765.0","Environment type":"Production","componentVersion":"17.0.15765.0","Environment name":"Production","environmentName":"Production","environmentType":"Production","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Telemetry schema version, AadTenantId, Environment name, Environment type","Extension version":"17.0.15821.0","extensionVersion":"17.0.15821.0","Extension App Id":"11111111-aaaa-2222-bbbb-333333333333","aadTenantId":"afbb64dc-bc88-43a3-9153-dd9d2fde08e6","AadTenantId":"afbb64dc-bc88-43a3-9153-dd9d2fde08e6","AL Object Id":"7203","Company name":"CRONUS USA, Inc.","AL Object type":"CodeUnit","Extension name":"Base Application","AL Object name":"My Codeunit","component":"Dynamics 365 Business Central Server","companyName":"CRONUS USA, Inc.","extensionName":"Base Application","Component":"Dynamics 365 Business Central Server","alObjectId":"7203","alObjectName":"My Codeunit","alObjectType":"CodeUnit","extensionId":"11111111-aaaa-2222-bbbb-333333333333","eventId":"RT0019","httpMethod":"GET","serverExecutionTime":"00:00:00.1971767","totalTime":"00:00:00.1971767","endpoint":"https://mycorp.dynamics.com/api/discovery/v1.0/Instances","alAuthenticationMethod":"AccessControlService","alHttpTimeout":"00:01:40","httpReturnCode":"200"}
-`
- 
+## Performance considerations
+
+[!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
+
+## Troubleshoot errors
+
+[!INCLUDE[httpclientErrors](../includes/errors-outgoing-http.md)] 
+
+### HTTP status codes
+
+[!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
+
+
 ## See also
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[HttpClient data type](../developer/methods-auto/httpclient/httpclient-data-type.md)  
+[Telemetry overview](telemetry-overview.md)  
+[Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md)  
