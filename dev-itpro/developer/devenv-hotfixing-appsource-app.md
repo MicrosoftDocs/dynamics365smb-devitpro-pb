@@ -6,7 +6,7 @@ ms.author: solsen
 ms.reviewer: solsen
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 06/08/2023
+ms.date: 06/12/2023
 ms.custom: bap-template
 ---
 
@@ -39,7 +39,7 @@ For example, if you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource, 
 
 ## What kind of changes can't be part of a hotfix?
 
-Since the AppSourceCop will validate for breaking changes, you can modify the content of your procedure, but you can't add new AL objects or new elements (procedure, actions, fields, etc.) to your app's public API unless they're also part of the next version, or obsolete pending (except for table and table fields).
+Since the AppSourceCop will validate for breaking changes, you can modify the content of your procedure, but you can't add new AL objects or new elements (procedure, actions, fields, etc.) to your hotfix app's public API unless they're also part of the next version, or obsolete pending (except for table and table fields).
 
 For example, let's consider that you have versions 1.0.0.0 and 2.0.0.0 of your app in AppSource.
 
