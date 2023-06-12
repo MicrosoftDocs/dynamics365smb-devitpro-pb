@@ -20,7 +20,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes  
 - [Turn off event-based sync for specific integration table mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/turn-off-event-based-synch-specific-integration-table-mappings)
-- [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
 - [Save time with automatic account codes](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/automatic-account-codes)
 - [Swedish localization delivered as extension](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/swedish-localization-app--delocalization) 
 - [Attach AL debugger to active session or next session](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  

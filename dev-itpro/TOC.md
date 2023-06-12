@@ -67,6 +67,7 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
 ### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
 #### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
@@ -880,6 +881,7 @@
 ##### [Create a new module](developer/devenv-new-module.md)
 ##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
 ##### [Change a module](developer/devenv-change-a-module.md)
+
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
@@ -890,6 +892,7 @@
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 #### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+#### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 ### Developing printer extensions
 #### [Printer extension overview](developer/devenv-reports-printing.md)
@@ -1029,11 +1032,12 @@
 #### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 #### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
-### Updating
+### Updating and hotfixing
 #### [Overview](developer/devenv-app-life-cycle.md)
 #### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
 #### [Update lifecycle for AppSource apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about updating your Business Central app](developer/app-faq-update.md)
+#### [Hotfixing an AppSource app](developer/devenv-hotfixing-appsource-app.md)
 #### [Upgrading extensions](developer/devenv-upgrading-extensions.md)
     
 ### Deprecating code
@@ -1235,11 +1239,12 @@
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
+### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- Microsoft Power BI -->
+### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
