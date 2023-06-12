@@ -90,7 +90,7 @@ PTEs are never uninstalled from a production environment, unless they're prevent
 
 DEV extensions are used for development purposes. This includes extensions published from Visual Studio Code or created using [Designer](devenv-inclient-designer.md) in [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it's specific to your environment. You can also force sync the app. For more information, see [JSON Files](devenv-json-files.md#Launchjson) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
+You can deploy a DEV extension with the same `id` and `version`, but different content to multiple sandbox environments. You control when to publish, install, upgrade, uninstall, or unpublish the app because it's specific to your environment. You can also force sync the app. For more information, see [Launch JSON file](devenv-json-launch-file.md) and [Retaining table data after publishing](devenv-retaining-data-after-publishing.md).
 
 > [!NOTE]  
 > The `resourceExposurePolicy` applies differently to DEV extensions. For more information, see [Resource Exposure Policy Setting](devenv-security-settings-and-ip-protection.md).

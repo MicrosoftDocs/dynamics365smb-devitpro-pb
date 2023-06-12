@@ -73,6 +73,6 @@ query 20000 "APIV1 - Customer Sales"
 [APIGroup Property](properties/devenv-apigroup-query-property.md)  
 [APIVersion Property](properties/devenv-apiversion-query-property.md)   
 [EntityName Property](properties/devenv-entityname-property.md)  
-[EntitySetName Property](properties/devenv-entitysetname-property.md)
+[EntitySetName Property](properties/devenv-entitysetname-property.md)  
 [Query Object](devenv-query-object.md)  
 [Developing Extensions](devenv-dev-overview.md)  

@@ -52,13 +52,13 @@ In this walkthrough, you will install [!INCLUDE[navnowlong](includes/navnowlong_
 ## Story  
  A consultant wants to install [!INCLUDE[navnowlong](includes/navnowlong_md.md)] in a production environment.  
 
--   She installs [!INCLUDE[navnow](includes/navnow_md.md)] database components on a server running Windows Server \(**NAVSQL**\) where she has already installed Microsoft SQL Server.  
+-   They install [!INCLUDE[navnow](includes/navnow_md.md)] database components on a server running Windows Server \(**NAVSQL**\) where they have already installed Microsoft SQL Server.  
 
--   She installs [!INCLUDE[nav_server](includes/nav_server_md.md)] on a server running Windows Server \(**NAVSERV**\).  
+-   They install [!INCLUDE[nav_server](includes/nav_server_md.md)] on a server running Windows Server \(**NAVSERV**\).  
 
--   She creates a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using that account’s credentials.  
+-   They create a domain user account in Active Directory and uses [!INCLUDE[nav_admin](includes/nav_admin_md.md)] to configure a [!INCLUDE[nav_server](includes/nav_server_md.md)] instance to run using that account’s credentials.  
 
--   She installs the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a Windows 10 computer \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
+-   They install the [!INCLUDE[nav_windows](includes/nav_windows_md.md)] on a Windows 10 computer \(**NAVCLIENT**\) and configures it to communicate with [!INCLUDE[nav_server](includes/nav_server_md.md)].  
 
 ## Installing the Microsoft Dynamics NAV Database Components  
  When you run [!INCLUDE[navnowlong](includes/navnowlong_md.md)] Setup, you see a menu of installation options. You configure the **Server Option** to install the SQL Server Database components and the [!INCLUDE[demolong](includes/demolong_md.md)]. When Setup is finished, you start the SQL Browser Service on the SQL Server.  

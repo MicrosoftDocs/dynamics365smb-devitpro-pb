@@ -3,10 +3,10 @@ title: Get Started Building Apps
 description: Learn how you can get started building apps for Dynamics 365 Business Central in six easy steps.
 author: a-emniel
 ms.topic: conceptual
-ms.reviewer: edupont
+ms.reviewer: solsen
 ms.author: kurtju
 ms.date: 08/02/2022
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get Started with Building Apps
@@ -113,7 +113,7 @@ To add coworkers:
 
 2. Choose the settings :::image type="content" source="../media/settings_icon_small.png" alt-text="Settings icon."::: icon in the top-right corner of the page,  got to on account settings, and choose **user management**.
 
-3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for the user(s) that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button.
+3. Choose the grey **ADD USERS** button, and leave the default choice to **Add existing users** as-is. Now, you can search for the user(s) that you want to add to Collaborate. To add them, you need to choose them from the menu, and then choose the grey **ADD SELECTED** button. Make sure to add them as a 'Manager (Collaborate)' for them to have the right permissions. 
 
 4. You've successfully added your coworkers to Collaborate. Users can now sign in to Microsoft Collaborate using the following link: [aka.ms/Collaborate](https://aka.ms/Collaborate)
 

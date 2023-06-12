@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: overview
-ms.date: 10/06/2022
+ms.date: 05/23/2023
 ms.custom: bap-template
 ---
 # Power Automate Integration Overview
@@ -57,7 +57,7 @@ For more information, see [Use Power Automate Flows in Business Central](/dynami
 
 ## What AL developers can do in extensions
 
-In AL, developers can define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions, but use the `customaction` AL keyword instead. In the UI, they can be placed everywhere other actions can. Learn more at [Actions Overview](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
+In AL, developers can define page actions that trigger a Power Automate flow using custom actions. Custom actions are defined next to other actions but use the `customaction` AL keyword instead. In the UI, they can be placed everywhere other actions can. Learn more at [Actions Overview](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 ## Next steps
 

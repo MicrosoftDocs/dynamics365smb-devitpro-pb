@@ -11,8 +11,19 @@
 |AL0000E3O|Configuration Package|[Configuration package applied successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#applysuccessful)|
 |AL0000E3P|Configuration Package|[Configuration package deleted successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#deletesuccessful)|
 | AL0000EJ9 | Extension Lifecycle | [Upgrade tag searched for: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-searched-for) |
+|AL0000FJ1|Cloud migration|[Companion table repair started](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-started)|
+|AL0000FJ4|Cloud migration|[Companion table repair completed successfully](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-completed-successfully)|
+|AL0000FXC|Cloud migration|[Companion table repair scheduled](../administration/telemetry-cloud-migration-trace.md#companion-table-repair-scheduled)|
+|AL0000IGC|Cloud migration|[Cloud migration has been disabled from company {companyname}](../administration/telemetry-cloud-migration-trace.md#cloud-migration-disabled)|
+|AL0000K0H|Cloud migration|[Replication run completed](../administration/telemetry-cloud-migration-trace.md#replication-run-completed)|
+|AL0000K0I|Cloud migration|[Replication run completed with failed tables](../administration/telemetry-cloud-migration-trace.md#replication-run-completed-with-failed-tables)|
+|AL0000K0J|Cloud migration|[Replication run started](../administration/telemetry-cloud-migration-trace.md#replication-run-started)|
+|AL0000K0K|Cloud migration|[Cloud migration data upgrade scheduled](../administration/telemetry-cloud-migration-trace.md#cloud-migration-data-upgrade-scheduled)|
 | AL0000EJA | Extension Lifecycle | [Upgrade tag set: {AlUpgradeTag}](../administration/telemetry-extension-update-trace.md#upgrade-tag-set) |
 | AL0000EIQ | User Checklist Lifecycle | [User checklist status updated: {oldStatus} to {newStatus}](../administration/telemetry-user-checklist-trace.md) |
+| AL0000JT3 | Feature Lifecycle | [Feature switch has been flipped](../administration/telemetry-feature-management-trace.md) |
+|AL0000G7J|	Feature Lifecycle |[More than one telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#multipleloggers)|
+|AL0000G7K|	Feature Lifecycle |[No telemetry logger has been registered for publisher {publisher}](../administration/telemetry-feature-telemetry.md#nologger)|
 | LC0001 | Company Lifecycle | [Company created: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-created) |
 | LC0002 | Company Lifecycle | [Company creation canceled: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-canceled) |
 | LC0003 | Company Lifecycle | [Company creation failed: {companyName}](../administration/telemetry-company-lifecycle-trace.md#company-creation-failed) |
@@ -141,11 +152,11 @@
 |LC0171| Extension Lifecycle| [Environment app {extensionId} update to version {extensionDestinationVersion} failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-update-latest-failed) |
 |LC0173| Extension Lifecycle| [Environment app {extensionName} uninstall scheduled for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-uninstall-scheduled) |
 |LC0174| Extension Lifecycle| [Environment app {extensionId} uninstall scheduling failed for environment: {environmentName}](../administration/telemetry-extension-lifecycle-trace.md#app-uninstall-schedule-failed) |
-|LC0175| Environment| [Environment data upgrade operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-started) |
-|LC0176| Environment| [Environment data upgrade operation completed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-completed-successfully) |
-|LC0177| Environment| [Environment data upgrade operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-data-upgrade-operation-failed) |
-|LC0178| Environment| [Recovery from a failed data upgrade operation has completed successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#recovery-from-a-failed-data-upgrade-operation-has-completed-successfully) |
-|LC0179| Environment| [Recovery from a failed data upgrade operation has failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#recovery-from-a-failed-data-upgrade-operation-has-failed) |
+|LC0175| Cloud migration| [Environment data upgrade operation started: {environmentName}](../administration/telemetry-cloud-migration-trace.md#environment-data-upgrade-operation-started) |
+|LC0176| Cloud migration| [Environment data upgrade operation completed successfully: {environmentName}](../administration/telemetry-cloud-migration-trace.md#environment-data-upgrade-operation-completed-successfully) |
+|LC0177| Cloud migration| [Environment data upgrade operation failed: {environmentName}](../administration/telemetry-cloud-migration-trace.md#environment-data-upgrade-operation-failed) |
+|LC0178| Cloud migration| [Recovery from a failed data upgrade operation has completed successfully: {environmentName}](../administration/telemetry-cloud-migration-trace.md#recovery-from-a-failed-data-upgrade-operation-has-completed-successfully) |
+|LC0179| Cloud migration| [Recovery from a failed data upgrade operation has failed: {environmentName}](../administration/telemetry-cloud-migration-trace.md#recovery-from-a-failed-data-upgrade-operation-has-failed) |
 |LC0180| Environment| [Environment soft delete operation started: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-delete-operation-started) |
 |LC0181| Environment| [Environment soft deleted successfully: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-deleted) |
 |LC0182| Environment| [Environment soft delete operation failed: {environmentName}](../administration/telemetry-environment-lifecycle-trace.md#environment-soft-delete-operation-failed) |

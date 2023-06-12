@@ -1,7 +1,7 @@
 ---
 title: Managing Updates in the Admin Center
 description: Use the Business Central administration center to manage environment updates, including setting update windows and update dates.  
-author: edupont04
+author: jswymer
 
 ms.topic: conceptual
 ms.devlang: na
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update
 ms.date: 05/31/2022
-ms.author: edupont
+ms.author: jswymer
 ---
 
 # Managing Updates in the Business Central Admin Center

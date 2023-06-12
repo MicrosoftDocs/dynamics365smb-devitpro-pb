@@ -1,9 +1,9 @@
 ---
-author: edupont04
+author: solsen
 ms.topic: include
 ms.date: 04/01/2021
-ms.author: edupont
-ms.custom: intro-internal
+ms.author: solsen
+ms.collection: get-started
 ---
 ### Enroll in the CSP program
 

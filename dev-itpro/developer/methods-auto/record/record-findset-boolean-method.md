@@ -41,6 +41,61 @@ Set this parameter to true if you want to modify any records in the set; otherwi
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Remarks
+
+You should use this method only when you explicitly want to loop through a recordset. You should only use this method in combination with `repeat..until`.  
+
+The difference between `Find()` and `FindSet` is that `Find` uses paging and the method only requests N rows in the first request, and then if you need more rows, it'll submit a new SQL request. The `FindSet` method will request all rows at once. 
+
+The difference between `FindSet(false)` and `FindSet(true)` is that `FindSet(true)` will do a `LockTable()` before finding rows, which is an advantage if you plan to update all the rows you are finding.
+
+This method works the same way as the [FindSet Method (RecordRef)](../recordref/recordref-findset-method.md).
+
+## Examples
+
+The following examples are meant for illustration purposes of the usage of the `FindSet` method only and are not meant to illustrate best practices.
+
+## Example 1
+
+This example shows how to use the `FindSet` method to loop through a set without updating it, only running a validation on each record. This example requires a `VATRegistrationValidation` method, which is not included in this example:
+
+```al
+    procedure Example_1()
+    var
+        CompanyInformation: Record "Company Information";
+        Customer: Record Customer;
+    begin
+        CompanyInformation.Get();
+        Customer.SetFilter("Country/Region Code", '<>%1', CompanyInformation."Country/Region Code");
+        if Customer.FindSet(false) then
+            repeat
+                Customer.VATRegistrationValidation();
+            until Customer.Next() = 0;
+    end;
+``` 
+
+## Example 2
+
+This example shows how to use the `FindSet` method to loop through a set and update a field.
+
+```al
+    procedure Example_2()
+    var
+        Customer: Record Customer;
+        SalesHeader: Record "Sales Header";
+    begin
+        Customer.FindFirst();
+        SalesHeader.SetRange("Sell-to Customer No.", Customer."No.");
+        SalesHeader.SetFilter("Bill-to Customer No.", '<>%1', Customer."No.");
+        if SalesHeader.FindSet(true) then
+            repeat
+                SalesHeader."Ship-to contact" := SalesHeader."Bill-to Contact";
+                SalesHeader.Modify();
+            until SalesHeader.Next() = 0;
+    end;
+```
+
 ## See Also
 [Record Data Type](record-data-type.md)  
 [Getting Started with AL](../../devenv-get-started.md)  

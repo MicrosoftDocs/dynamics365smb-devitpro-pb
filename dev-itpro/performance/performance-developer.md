@@ -35,7 +35,7 @@ There are many patterns that a developer can use to get a page to load faster. C
 
 To avoid unnecessary recalculation of expensive results, consider caching the data and refresh the cache regularly. Let's say you want to show the top five open sales orders or a VIP customers list on the role center. The content of such a list probably doesn't change significantly every hour. There's no need to calculate that from raw data every time the page is loaded. Instead, create a table that can contain the calculated data and refresh every hour/day using a background job.
 
-Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object will always go to the database. So, sometimes it's faster to not use a query object. 
+Another example of unexpected recalculation is when using query objects. In contrast to using the record API, query results aren't cached in the primary key cache in the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. Any use of a query object always goes to the database. So, sometimes it's faster to not use a query object. 
 
 ### Pattern - Do less
 
@@ -43,7 +43,7 @@ One way to speed up things is to reduce the amount of work that the system must 
 
 Remove calculated fields from lists if they aren't needed, especially on larger tables. Setting the field's Enabled or Visible properties to false isn't enough. The field definition needs to be removed from the page or page extension definition. Also, if indexing is inadequate, calculated fields can significantly slow down a list page.
 
-Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages will run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
+Consider creating dedicated lookup pages instead of the normal pages when adding a lookup (the one that looks like a dropdown) from a field. Default list pages run all triggers and fact boxes even if they aren't shown in the lookup. For example, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2019 release wave 1 added dedicated lookup pages for Customer, Vendor, and Item to the Base Application.
  
 ### Pattern - Offloading the UI thread
 
@@ -64,7 +64,8 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 ### Endpoint performance
 
 #### Anti-patterns (don't do this)
-Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but will use resources to prepare.
+
+Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but use resources to prepare.
 
 Things that have historically caused performance issues on pages that are exposed as endpoints are:
 
@@ -81,21 +82,23 @@ Don't insert child records belonging to same parent in parallel. This condition 
 Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 #### Performance patterns (do this)
+
 - Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-- If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating factboxes, avoid calculation, and avoid defaulting logic.
+- If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating FactBoxes, avoid calculation, and avoid defaulting logic.
 
 - The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
 - If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set `DataAccessIntent = ReadOnly`. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
 
 ### OData Performance patterns
+
 When calling OData web services, there are many strategies that you can use to speed up your queries
 - Limiting the set ($filter or $top) if you're using an expensive $expand statement
 - Using OData transaction $batch
 - Using Data Access Intent Read-only with OData
 
-For more details about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
+For more information about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
 
 ### How to handle large volumes of web service calls
 When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it's important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
@@ -111,7 +114,7 @@ Make sure that your external application can handle the two HTTP status codes *4
 
 - Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
 
-A common pattern is to implement a queue in your external application so that you can flatten spikes of traffic. If a request gets the HTTP status code *429 (Too Many Requests)*, then put it back in the queue and apply one of the retry strategies described above.
+A common pattern is to implement a queue in your external application so that you can flatten spikes of traffic. If a request gets the HTTP status code *429 (Too Many Requests)*, then put it back in the queue and apply one of the retry strategies described previously.
 
 Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
 
@@ -141,6 +144,8 @@ When establishing a data lake or a data warehouse, you typically need to do two 
 The fastest (and least disruptive) way to get a historical load from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to get a database export as a BACPAC file (using the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] admin center) and restore it in Azure SQL Database or on a SQL Server. For on-premises installations, you can just take a backup of the tenant database.
 
 The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
+
+For more information, see [Extract data from Business Central](../developer/devenv-extract-data.md).
 
 ## AL performance patterns
 
@@ -263,7 +268,8 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 
 ### Outgoing web service calls block AL execution
-If you call external web service using the HttpClient module in AL, be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this behavior means that the user will see a spinning wheel for the duration of the call.  
+
+[!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
 ### Limit work done in login event subscribers
 The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.

@@ -129,10 +129,11 @@ If this stage failed with the following error message `Automated upload to Busin
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
 
-## Questions about hotfixing an AppSource extension
+## Questions about hotfixing an AppSource app
 
-### What is qualified as a hotfix submission?
+For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
 
+<!--
 We're defining as `hotfix` the submission of a new version of an AppSource extension which will not become the latest version available in AppSource. 
 
 For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 will not become the latest version available.
@@ -192,7 +193,7 @@ If you submit a new version 1.5.0.0, you're then allowed to add the following pr
 - `[Obsolete] procedure MyNewObsoleteProcedure()` because it's obsolete pending,
 - `MyPublicProcedureFromV2()` because it's already defined in the next version.
 
-However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure.
+However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure. -->
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
@@ -228,6 +229,12 @@ It means that your license doesn't allow you to publish that application. A reco
 ## Questions about code-signing validation
 
 This section contains frequently asked questions related to the code-signing requirement from the [Technical Validation Checklist](devenv-checklist-submission.md). For more information about code-signing, see [Sign an APP Package File](devenv-sign-extension.md).
+
+### Can I use any computer to sign my apps?
+
+No, you need to use a Microsoft Windows computer that has [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] installed.
+
+If [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] is not installed, you'll get an error similar to: "This file format cannot be signed because it is not recognized".
 
 ### Can I use a self-signed certificate to sign my apps targeting AppSource?
 

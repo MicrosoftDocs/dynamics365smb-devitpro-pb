@@ -16,7 +16,7 @@ author: jswymer
 
 This article describes how to set up an extension to send telemetry data to [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] for monitoring and analyzing. [!INCLUDE[prod_short](includes/prod_short.md)] emits telemetry data for several operations that occur when extension code is run. For an overview about the telemetry with [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)], see [Monitoring and Analyzing Telemetry](../administration/telemetry-overview.md).
 
-This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them.
+This feature targets publishers of per-tenant or appsource extensions to give them insight into issues in their extensions before partners and customers report them. Note that you get data for all customers across the install base of the app/extension.
 
 ## Get an Application Insights resource in Azure
 
@@ -49,9 +49,15 @@ Where `<instrumentation key>` is replaced by the key denoted in the connection s
 > [!NOTE]
 > Transition to using connection strings for data ingestion in [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] by **31 March 2025**. On 31 March 2025, technical support for instrumentation key–based global ingestion in the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] feature of Azure Monitor will end. After that date, your [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resources will continue to receive data, but Microsoft no longer provide updates or customer support for instrumentation key–based global ingestion. 
 
+## Data in app/extension telemetry 
+Currently, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] offers telemetry on the following operations (the column _Extension support_ shows the types of events that are emitted to app/extension telemetry):  
+
+[!INCLUDE[prod_short](../includes/include-telemetry-by-area.md)]
+
+
 ## See Also  
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
-[JSON Files](devenv-json-files.md)  
+[JSON Files](devenv-json-files.md)
 [Viewing telemetry data in Application Insights](../administration/telemetry-overview.md)  
 [LogMessage Method](../developer/methods-auto/session/session-logmessage-string-string-verbosity-dataclassification-telemetryscope-string-string-string-string-method.md)  

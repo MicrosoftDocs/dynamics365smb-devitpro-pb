@@ -67,13 +67,13 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
-### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
-### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
-### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
-### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
-### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
-
+### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
+#### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
+#### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
+#### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
+#### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
+#### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 #### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
@@ -220,6 +220,7 @@
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
+#### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
 #### [Configuration package lifecycle telemetry](administration/telemetry-configuration-package-trace.md)
 #### [Database deadlock telemetry](administration/telemetry-database-deadlocks-trace.md)
@@ -231,6 +232,7 @@
 #### [Error method telemetry](administration/telemetry-error-method-trace.md) 
 #### [Extension lifecycle telemetry](administration/telemetry-extension-lifecycle-trace.md)
 #### [Extension update telemetry](administration/telemetry-extension-update-trace.md)
+#### [Feature management telemetry](administration/telemetry-feature-management-trace.md)
 #### [Feature telemetry](administration/telemetry-feature-telemetry.md)
 #### [Field monitoring telemetry](administration/telemetry-field-monitoring-trace.md)
 #### [Job queue lifecycle telemetry](administration/telemetry-job-queue-lifecycle-trace.md)
@@ -399,6 +401,7 @@
 # Development
 ## [Development overview](developer/devenv-dev-overview.md)
 ## Get started
+### [Welcome to AL](developer/devenv-landing.yml)
 ### [Get started with AL](developer/devenv-get-started.md)
 ### [Building your first sample extension with extension objects, install code, and upgrade code](developer/devenv-extension-example.md)
 ### [Using Designer](developer/devenv-inclient-designer.md)
@@ -432,8 +435,10 @@
 ## Development environment
 <!-- (compiler, debugger, code cops, translation tools, test tools, sandboxes, devops, deployment models, code encapsulation (projects, app manifest, ids, …)  -->
 ### Configure the development environment
-#### [JSON files](developer/devenv-json-files.md)
-#### [The migration.json file](developer/devenv-migration-json-file.md)
+#### JSON files
+##### [JSON files](developer/devenv-json-files.md)
+##### [Launch JSON file](developer/devenv-json-launch-file.md)
+##### [Migration JSON file](developer/devenv-migration-json-file.md)
 #### [AL Language extension configuration](developer/devenv-al-extension-configuration.md)
 #### [Resource exposure policy setting](developer/devenv-security-settings-and-ip-protection.md)
 #### [Develop for multiple platform versions](developer/devenv-developing-for-multiple-platform-versions.md)
@@ -878,15 +883,18 @@
 ##### [Create a new module](developer/devenv-new-module.md)
 ##### [Create a .NET wrapper module](developer/devenv-create-a-wrapper-module.md)
 ##### [Change a module](developer/devenv-change-a-module.md)
+
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
-
+### Calling external services
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)  
 ### App key vaults for secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 #### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
+#### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 ### Developing printer extensions
 #### [Printer extension overview](developer/devenv-reports-printing.md)
@@ -902,9 +910,9 @@
 
 ### Instrumenting with telemetry
 #### [Overview](developer/devenv-instrument-application-for-telemetry.md)
-#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Sending extension telemetry to Application Insights](developer/devenv-application-insights-for-extensions.md)
-#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+#### [Adding feature usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
+#### [Creating custom events for Application Insights](developer/devenv-instrument-application-for-telemetry-app-insights.md)
 #### [Creating custom events for event log (on-premises only)](developer/devenv-instrument-application-for-telemetry-event-log.md)
 
 ### Using .NET (on-premises only)
@@ -973,7 +981,7 @@
 ##### [Move from OnCompanyOpen](developer/devenv-oncompanyopencompleted.md)
 #### Telemetry
 ##### [Adding custom telemetry](developer/devenv-instrument-application-for-telemetry.md)
-##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/telemetry)
+##### [Adding usage telemetry](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Telemetry)
 #### [Code deprecation](developer/devenv-deprecation-guidelines.md)
 #### [User scenarios](compliance/apptest-userscenario.md)
 #### [Requirements for connectivity apps](compliance/connectivity-apps-requirements.md)
@@ -1026,11 +1034,12 @@
 #### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 #### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
-### Updating
+### Updating and hotfixing
 #### [Overview](developer/devenv-app-life-cycle.md)
 #### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
 #### [Update lifecycle for AppSource apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about updating your Business Central app](developer/app-faq-update.md)
+#### [Hotfixing an AppSource app](developer/devenv-hotfixing-appsource-app.md)
 #### [Upgrading extensions](developer/devenv-upgrading-extensions.md)
     
 ### Deprecating code
@@ -1199,6 +1208,8 @@
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
+## Integrating with external systems
+### [Business events (preview)](developer/business-events-overview.md)
 ## Integrating with Microsoft Dataverse
 ### [Custom integration with Dataverse](administration/administration-custom-cds-integration.md)
 ### [Custom option mappings with Dataverse](administration/administration-custom-option-mapping.md)
@@ -1220,16 +1231,22 @@
 <!-- IMPORTANT: END>DO_NOT_EDIT -->
 <!-- end CDS -->
 <!-- Microsoft Power Automate -->
+## Integrating with Microsoft Power Apps
+### [Overview](powerplatform/power-apps-overview.md)
+### [Application lifecycle management](powerplatform/power-apps-alm.md)
+### [Sample apps](powerplatform/power-apps-samples.md)
+### [Best practices](powerplatform/power-apps-best-practices.md)
 ## Integrating with Microsoft Power Automate
-### [Power Automate integration overview](powerplatform/power-automate-overview.md)
+### [Overview](powerplatform/power-automate-overview.md)
 ### [Set up Power Automate integration](powerplatform/power-automate-setup.md)
 ### [Create automated flows](powerplatform/automate-workflows.md)
 ### [Create instant flows](powerplatform/instant-flows.md)
-### [Manage exisitng Power Automate flows](powerplatform/manage-power-automate-flows.md)
+### [Manage existing Power Automate flows](powerplatform/manage-power-automate-flows.md)
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
-### [Adding Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
-<!-- Microsoft Power BI -->
+### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
+<!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
 ## Integrating with Microsoft Power Platform
 ### [Microsoft Power Platform integration with Business Central](powerplatform/powerplat-overview.md)
@@ -1251,6 +1268,8 @@
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
+## [Extract data from Business Central](developer/devenv-extract-data.md)
+<!-- end integration-->
 <!--deprecated features -->
 # Removed or deprecated features
 ## Deprecated features in the application
@@ -1301,6 +1320,7 @@
 ### [Software lifecycle policy and on-premises releases](terms/lifecycle-policy-on-premises.md)
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### Dynamics 365 Business Central on-premises updates
+#### [2023 release wave 1 on-premises updates](deployment/update-versions-22.md)
 #### [2022 release wave 2 on-premises updates](deployment/update-versions-21.md)
 #### [2022 release wave 1 on-premises updates](deployment/update-versions-20.md)
 #### [2021 release wave 2 on-premises updates](deployment/update-versions-19.md)

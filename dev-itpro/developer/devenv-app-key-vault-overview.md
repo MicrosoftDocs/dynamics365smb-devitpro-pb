@@ -37,8 +37,18 @@ Once you have an Azure Key Vault, you can develop [!INCLUDE[prod_short](../devel
 
 For more information, see [Using App Key Vault Secrets in Extensions](../developer/devenv-app-key-vault.md).
 
+
+### Monitoring the usage of and errors in Azure Key Vault with telemetry
+
+App key vault telemetry gathers information about the acquisition of secrets in Azure Key Vaults by extensions at runtime. 
+
+The app key vault secret process has two operations: *initialization* and *retrieval*. The telemetry data provides information about the success or failure for each of these operations. There are various conditions that cause a failure. The failure messages provide insight into the cause of the failure, helping you identify, troubleshoot, and resolve issues.
+
+For more information, see [App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md).
+
 ## See Also  
 
 [Security Considerations With App Key Vaults](../developer/devenv-app-key-vault.md#security)  
 [Monitoring and Troubleshooting App Key Vaults](../developer/devenv-app-key-vault.md#troubleshooting)  
+[App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  
 [Configuring Business Central Server - Azure Key Vault Extensions](../administration/configure-server-instance.md#keyvault)  
