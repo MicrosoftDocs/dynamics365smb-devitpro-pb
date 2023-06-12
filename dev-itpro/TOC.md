@@ -1032,11 +1032,12 @@
 #### [Publish and install an extension](developer/devenv-how-publish-and-install-an-extension-v2.md)
 #### [Upgrading AppSource apps in production](developer/devenv-upgrade-appsource-app-in-prod.md)
 
-### Updating
+### Updating and hotfixing
 #### [Overview](developer/devenv-app-life-cycle.md)
 #### [Update lifecycle for customizations](developer/devenv-customization-update-lifecycle.md)
 #### [Update lifecycle for AppSource apps FAQ](developer/devenv-update-app-life-cycle-faq.md)
 #### [FAQ about updating your Business Central app](developer/app-faq-update.md)
+#### [Hotfixing an AppSource app](developer/devenv-hotfixing-appsource-app.md)
 #### [Upgrading extensions](developer/devenv-upgrading-extensions.md)
     
 ### Deprecating code
