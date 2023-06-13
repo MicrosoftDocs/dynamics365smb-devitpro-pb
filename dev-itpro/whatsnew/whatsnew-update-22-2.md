@@ -3,7 +3,7 @@ title: "Update 22.2 for Microsoft Dynamics 365 Business Central 2023 Release Wav
 description: Get an overview of new and changed capabilities in the 22.2 update of Business Central online, which is part of 2023 release wave 1.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 05/30/2023
+ms.date: 06/13/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -20,7 +20,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [Transfer environments between Azure AD tenants mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/transfer-environments-between-azure-active-directory-tenants)
 - [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
 - [Use business events to notify and trigger external systems](/dynamics365/business-central/dev-itpro/developer/business-events-overview)
 - [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
