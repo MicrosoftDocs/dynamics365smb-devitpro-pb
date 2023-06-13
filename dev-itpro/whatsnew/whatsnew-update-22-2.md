@@ -59,8 +59,11 @@ In June, we will be hosting the following calls, which you can already register 
 
 - **June 6:** Dynamics 365 Copilot in Business Central
 - **June 13:** Onboarding your customers to Business Central
-- **June 20:** Review of the new E-invoicing design 
-Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours). Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
+- **June 20:** Review of the new E-invoicing design
+
+Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
+
+Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
 **Looking for an aka.ms link?**  
 Are you looking for an aka.ms link, but simply can't find it? Remember that you can find all aka.ms links on [aka.ms/BCLinks](https://aka.ms/BCLinks). Don't forget to bookmark it!
