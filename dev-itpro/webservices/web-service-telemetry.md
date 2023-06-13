@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 02/07/2023
+ms.date: 06/13/2023
 ---
 
 # Web Service Telemetry 
@@ -20,9 +20,9 @@ Web services telemetry gathers data about SOAP, OData, and API requests through 
 
 When calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services, you can inject information about the caller into telemetry. 
 
-- Setting the HTTP header _UserAgent_ will log requests with the httpHeaders dimension (for OData and API calls). 
+- Setting the HTTP header _UserAgent_ logs requests with the httpHeaders dimension (for OData and API calls). 
 
-- Setting the HTTP header _client-request-id_, will log requests with the httpHeaders dimension (for OData and API calls) and it will also set the "OperationId"/ClientActivity in Application Insights.
+- Setting the HTTP header _client-request-id_, logs requests with the httpHeaders dimension (for OData and API calls) and it also sets the "OperationId"/ClientActivity in Application Insights.
 
 This capability means you can use telemetry to see who's calling [!INCLUDE[prod_short](../developer/includes/prod_short.md)] APIs. It also lets you correlate to telemetry from other web services, if you use Azure Application Insights to instrument them.
 
@@ -40,7 +40,7 @@ For more information, go to [Analyzing Web Service Access Key Telemetry](../admi
 
 ## Web service publish failure telemetry
 
-If a web service could not be published or a published web service is not working, most often it is due to an error in creating metadata for the web service. All metadata creation failures along with stack trace of the element responsible for breaking web service metadata is available in partner telemetry. The telemetry ids related to metadata failures are in the range "RT0033" - "RT0039".
+If a web service couldn't be published or a published web service isn't working, most often it's due to an error in creating metadata for the web service. All metadata creation failures along with stack trace of the element responsible for breaking web service metadata are available in partner telemetry. The telemetry IDs related to metadata failures are in the range "RT0033" - "RT0039".
 
 ## See also
 
