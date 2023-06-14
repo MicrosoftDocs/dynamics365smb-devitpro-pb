@@ -47,6 +47,8 @@ If you don't have .NET 6.0 installed, download it from here [Download .NET (Linu
 
 There are different ways to install DocFx v2. The following steps describe a suggested way to install the tool. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
+<!-- describe with new dotnet docfx version-->
+
 1. Go to [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual)
 2. Run the terminal as `admin` and follow the steps of this page [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual) to install chocolate.
 3. Then, install the DocFx v2 by running the following in the command line tool:  
