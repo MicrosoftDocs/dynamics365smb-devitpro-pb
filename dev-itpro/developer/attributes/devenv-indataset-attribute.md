@@ -50,7 +50,7 @@ The **InDataSet** attribute is defined on variables of the type [Boolean](../met
 You must define this attribute on a variable if it's used as the value of the [Editable Property](../properties/devenv-editable-property.md), [Enabled Property](../properties/devenv-enabled-property.md), [Visible Property](../properties/devenv-visible-property.md) and [StyleExpr Property](../properties/devenv-styleexpr-property.md).  
 
 > [!NOTE]
-> This attribute is obsolete and no longer works and isn't required to include the AL variable's value in the dataset.
+> This attribute is obsolete. It no longer works and isn't required to include the AL variable's value in the dataset.
 
 ## See Also
 
