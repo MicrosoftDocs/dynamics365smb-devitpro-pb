@@ -29,8 +29,11 @@ In a CRONUS evaluation company, the banner serves the purpose of highlighting co
 ## The welcome banner in My Company and other non-evaluation companies
 
 In My Company and other non-evaluation companies, the welcome banner serves the purpose of letting the customer self-serve the last-mile setup of [!INCLUDE [prod_short](../includes/prod_short.md)]. Accordingly, the checklist tasks are more focused on guiding the user through various elements of setup. Consider how you structure the checklist for your customers with the goal of getting them set up and onboarded as fast as possible.  
-
 For more information, see the [Get Users Started with the Checklist](onboarding-checklist.md) article.  
+
+## Modifying the texts on the welcome banner to greet the current user
+You have the option to modify the banner texts dynamically from code. This is done by subscribing to the event **OnBeforeUpdateBannerLabels**.
+Here you can set the banner texts dynammically. This is especially useful if you have profiled the customer/prospect before signing them into [!INCLUDE [prod_short](../includes/prod_short.md)]. This is done using the sign-up context, where you can get more information about the prospect before sign-up and pass that information into [!INCLUDE [prod_short](../includes/prod_short.md)] and react on that information on the welcome banner and in the checklist. For more information about pivoting the experience to become more customer-centric, see [Create customer-centric onboarding experiences using SignupContext](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/onboarding-signupcontext). The welcome banner and the checklist are great stages on which you can greet the prospect/customer according to their expectation. For example, if you have profiled the prospect to be interested in a given business area, consider setting text on the welcome banner and provide checklist content that revolves around that area.
 
 ## See also
 
