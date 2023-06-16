@@ -253,6 +253,7 @@
 #### [Web service access key telemetry](administration/telemetry-webservices-access-key-trace.md)
 #### [Web service requests telemetry (incoming)](administration/telemetry-webservices-trace.md)
 #### [Web service requests telemetry (outgoing)](administration/telemetry-webservices-outgoing-trace.md)
+#### [Web service publish failure telemetry](administration/telemetry-webservices-publish-failure-trace.md)
 ### [Telemetry by Event IDs](administration/telemetry-event-ids.md)
 <!-- end telemetry -->
 <!-- support-->
