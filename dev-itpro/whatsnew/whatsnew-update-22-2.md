@@ -3,7 +3,7 @@ title: "Update 22.2 for Microsoft Dynamics 365 Business Central 2023 Release Wav
 description: Get an overview of new and changed capabilities in the 22.2 update of Business Central online, which is part of 2023 release wave 1.
 ms.author: a-enielsson
 ms.custom: na
-ms.date: 05/30/2023
+ms.date: 06/13/2023
 ms.reviewer: jswymer
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
@@ -48,7 +48,7 @@ Please note that new customers will automatically get the latest builds of Busin
 **Take action to retain delegated admin access to your customers’ Business Central environments**  
 Last year Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve upon and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
 
-The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process.
+The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process. 
 
 To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
 
@@ -57,10 +57,11 @@ To manage Dynamics 365 Business Central customers via GDAP we recommend requesti
 In June, we will be hosting the following calls, which you can already register for today:
 
 - **June 13:** Onboarding your customers to Business Central
-- **June 20:** Review of the new E-invoicing design 
+- **June 20:** Review of the new E-invoicing design
+
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 
- Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
+Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
 **Looking for an aka.ms link?**  
 Are you looking for an aka.ms link, but simply can't find it? Remember that you can find all aka.ms links on [aka.ms/BCLinks](https://aka.ms/BCLinks). Don't forget to bookmark it!

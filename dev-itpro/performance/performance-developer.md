@@ -145,6 +145,8 @@ The fastest (and least disruptive) way to get a historical load from [!INCLUDE[p
 
 The fastest (and least disruptive) way to get delta loads from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online is to set up API queries configured with read-scaleout and use the data audit field **LastModifiedOn** (introduced in version 17.0) on filters.
 
+For more information, see [Extract data from Business Central](../developer/devenv-extract-data.md).
+
 ## AL performance patterns
 
 Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
@@ -267,25 +269,7 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 
 ### Outgoing web service calls block AL execution
 
-If you call external web service using the HttpClient module in AL, be aware that the [!INCLUDE[server](../developer/includes/server.md)] blocks the execution of AL code for the session until the call completes. For interactive sessions, this behavior means that the user will see a spinning wheel for the duration of the call.  
-
-If you've enabled telemetry for your environment or app, you can use this KQL query to analyze how much time users are delayed in the UI by calls to external services.
-
-```Kusto
-traces
-| where customDimensions has 'RT0019'
-| where customDimensions.clientType == 'WebClient'
-| project executionTimeInMs = toreal(totimespan(customDimensions.serverExecutionTime))/10000 //the datatype for executionTime is timespan
-| summarize count() // how many calls
-, sum(executionTimeInMs) // sum of delays for UI sessions
-, avg(executionTimeInMs) // average waiting time by this app
-, max(executionTimeInMs) // average waiting time by this app
-by 
-// which app is calling out from the UI
-  extensionId = tostring( customDimensions.extensionId )
-, extensionName = tostring( customDimensions.extensionName )
-, extensionVersion = tostring( customDimensions.extensionVersion )
-```
+[!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
 ### Limit work done in login event subscribers
 The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
@@ -424,7 +408,7 @@ Read more here:
 
 **Read Scale-Out** applies to queries, reports, or API pages. With these objects, instead of sharing the primary, they can be set up to run against a read-only replica. This setup   essentially isolates them from the main read-write workload so that they won't affect the performance of business processes.
 
-As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessControl property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
+As a developer, you control **Read Scale-Out** on report, API page, and query objects by using the [DataAccessIntent property](../developer/properties/devenv-dataaccessintent-property.md). For more information, see [Using Read Scale-Out for Better Performance](../administration/database-read-scale-out-overview.md).
 
 ## Testing and validating performance 
 
