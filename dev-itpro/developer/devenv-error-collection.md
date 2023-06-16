@@ -1,13 +1,13 @@
 ---
 title: "Collecting Errors"
 description: Learn how to write AL code that returns more than one error and presents users with more detailed error information.
-ms.custom: na
-ms.date: 11/05/2021
+ms.custom: bap-template
+ms.date: 06/14/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
 ms.topic: conceptual
 author: jswymer
+ms.author: jswymer
+ms.service: dynamics365-business-central
 ---
 
 # Collecting Errors
@@ -130,7 +130,7 @@ pageextension 50100 CollectingErrorsExt extends "Customer List"
             // If Codeunit.Run fails, a non-collectible error was encountered,
             // add this to the list of errors.
             errors.ID := errors.ID + 1;
-            errors.Description := GetLastErrorText();
+            errors.Message := GetLastErrorText();
             errors.Insert();
         end;
 
@@ -139,7 +139,7 @@ pageextension 50100 CollectingErrorsExt extends "Customer List"
         if HasCollectedErrors then
             foreach error in system.GetCollectedErrors() do begin
                 errors.ID := errors.ID + 1;
-                errors.Description := error.Message;
+                errors.Message := error.Message;
                 errors.Validate("Record ID", error.RecordId);
                 errors.Insert();
             end;
@@ -159,13 +159,13 @@ codeunit 50100 DoPost
 
     trigger OnRun()
     begin
-        if Number mod 2 <> 0 then
+        if Rec.Number mod 2 <> 0 then
             Error(ErrorInfo.Create('Number should be equal', true, Rec, Rec.FieldNo(Number)));
 
-        if Number <= 0 then
+        if Rec.Number <= 0 then
             Error(ErrorInfo.Create('Number should be larger than 0', true, Rec, Rec.FieldNo(Number)));
 
-        if Number mod 3 = 0 then
+        if Rec.Number mod 3 = 0 then
             Error(ErrorInfo.Create('Number should not be divisible by 10', true, Rec, Rec.FieldNo(Number)));
 
         // Everything was valid, do the actual posting.

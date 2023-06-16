@@ -3,7 +3,7 @@ title: "Enabled Property"
 description: "Sets a value that indicates whether a field or key is enabled or disabled, or whether a control can respond to user-generated events."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/04/2022
+ms.date: 06/14/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -58,10 +58,9 @@ For controls, the Enabled setting for the container that contains this control o
 On pages, you use the **Enabled** property for group, part, field, and action controls. You can enable or disable the control either statically by setting the property to **true** or **false**, or dynamically by using a Boolean variable or a Boolean field on the page. The Boolean field on the page can be either a true/false Boolean or a Boolean expression, such as “Credit Limit > Sales YTD”.  
 
 > [!NOTE]  
-> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Enabled** property, it must be set as a global page variable and the [InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute) must be defined on the variable.
+> You can also use as property value a **Boolean** variable that evaluates to **true** or **false**. To use a variable for the **Enabled** property, it must be set as a global page variable.
 
 ## See Also
 
 [Table Properties](devenv-table-properties.md)  
 [Properties](devenv-properties.md)  
-[InDataSet Property](/dynamics365/business-central/dev-itpro/developer/attributes/devenv-indataset-attribute)

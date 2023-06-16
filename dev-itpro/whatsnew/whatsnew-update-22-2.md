@@ -19,14 +19,13 @@ Would you like to know what has changed in update 22.2? Below you'll find an ove
 Find an overview of hotfixes in this [article](https://support.microsoft.com/help/5027892) and the downloads [here](https://aka.ms/BCDownload).
 
 ## Feature changes
-
 - [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
 - [Use business events to notify and trigger external systems](/dynamics365/business-central/dev-itpro/developer/business-events-overview)
 - [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
 - [Additional types of document approval templates for Power Automate](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/new-approval-workflow-experience-templates-power-automate)
 - [Added new documentation, guidance, tools and samples illustrating a process of creating Power Apps for Business Central](https://aka.ms/BCpapps)
-- Connect to Dataverse when Business Central local currency is different from Dataverse base transaction currency
-- Use attachments from document lines while sending emails
+- [Connect to Dataverse when Business Central local currency is different from Dataverse base transaction currency](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/connect-dataverse-when-business-central-local-currency-if-different-dataverse-base-transaction-currency)
+- [Use attachments from document lines while sending emails](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/use-attachments-document-lines-while-sending-emails)
 
 ## Localization updates
 
@@ -57,7 +56,6 @@ To manage Dynamics 365 Business Central customers via GDAP we recommend requesti
 **Upcoming Business Central Office Hours Calls**  
 In June, we will be hosting the following calls, which you can already register for today:
 
-- **June 6:** Dynamics 365 Copilot in Business Central
 - **June 13:** Onboarding your customers to Business Central
 - **June 20:** Review of the new E-invoicing design
 
