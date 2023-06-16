@@ -24,8 +24,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
 - [Additional types of document approval templates for Power Automate](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/new-approval-workflow-experience-templates-power-automate)
 - [Added new documentation, guidance, tools and samples illustrating a process of creating Power Apps for Business Central](https://aka.ms/BCpapps)
-- Connect to Dataverse when Business Central local currency is different from Dataverse base transaction currency
-- Use attachments from document lines while sending emails
+- [Connect to Dataverse when Business Central local currency is different from Dataverse base transaction currency](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/connect-dataverse-when-business-central-local-currency-if-different-dataverse-base-transaction-currency)
+- [Use attachments from document lines while sending emails](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/use-attachments-document-lines-while-sending-emails)
 
 ## Localization updates
 
