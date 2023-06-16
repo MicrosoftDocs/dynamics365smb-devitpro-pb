@@ -13,7 +13,7 @@ ms-custom: bap-template
 
 # Analyzing web service publish failure telemetry
 
-[!INCLUDE[2020_releasewave2.md](../includes/2020_releasewave2.md)]
+[!INCLUDE[2023_releasewave1.md](../includes/2023_releasewave1.md)]
 
 Web service publish failure telemetry gathers data when a web service could not be published or published web service is not working correctly due to an error in creating metadata for the web service. As a partner, the data gives you the ability to investigate & fix potential problems which are preventing web service from working correctly.
 
