@@ -40,7 +40,9 @@ For more information, go to [Analyzing Web Service Access Key Telemetry](../admi
 
 ## Web service publish failure telemetry
 
-If a web service couldn't be published or a published web service isn't working, most often it's due to an error in creating metadata for the web service. All metadata creation failures along with stack trace of the element responsible for breaking web service metadata are available in partner telemetry. The telemetry IDs related to metadata failures are in the range "RT0033" - "RT0039".
+If a web service couldn't be published or a published web service isn't working, most often it's due to an error in creating metadata for the web service. All metadata creation failures along with stack trace of the element responsible for breaking web service metadata are available in partner telemetry. 
+
+For more information, go to [Analyzing Web Service Publish Failure Telemetry](../administration/telemetry-webservices-publish-failure-trace.md).
 
 ## See also
 
