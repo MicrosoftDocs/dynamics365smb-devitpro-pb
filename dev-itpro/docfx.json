@@ -49,7 +49,10 @@
       ],
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Business Central",
-      "search.app": "businesscentral",
+      "search.app": [
+        "businesscentral",
+        "businesscentral-docs"
+      ],
       "search.audienceType": "admin, developer",
       "breadcrumb_path": "/dynamics365/business-central/dev-itpro/breadcrumb/toc.json",
       "ms.service": "dynamics365-business-central",

@@ -1,13 +1,16 @@
 ---
-title: "Using Table Partitioning and Data Compression"
+title: Using Table Partitioning and Data Compression
 description: Learn how to use table partitioning and data compression to improve data access performance in Business Central online.
-ms.custom: na
-ms.date: 05/16/2022
+ms.custom: bap-template
+ms.date: 06/14/2023
 ms.service: "dynamics365-business-central"
 ms.search.keywords: data access,sql,partitioning,constraints
 author: jswymer
+ms.author: jswymer
+ms.reviewer: jswymer
+ms.topic: conceptual
 ---
-# Using Table Partitioning and Data Compression"
+# Using table partitioning and data compression
 
 The use of SQL Server table/index partitioning and data compression are supported configurations for on-premises installations of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database. 
 
@@ -133,7 +136,7 @@ ALTER TABLE ADD CONSTRAINT constraint_name DEFAULT default_value FOR field_name
 
 The name of the default constraint isn't important, as long as it isn't used by another column in the database.
 
-
 ## See Also
+
 [Optimizing SQL Server Performance](optimize-sql-server-performance.md)  
 [Table Keys](../developer/devenv-table-keys.md)  
