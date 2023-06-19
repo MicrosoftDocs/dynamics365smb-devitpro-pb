@@ -62,7 +62,7 @@ When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)
 
 With drillthrough in an Excel layout, you can create hyperlinks back into [!INCLUDE[prod_short](../includes/prod_short.md)] from Excel cells. When the report user selects the cell, they drillthrough to the target page to get details that are filtered to that context. To implement a drillthrough link, you need to know which page to open, and also construct which filters to apply to that page. You filter the data that is displayed in the page by using the filter URL parameter. The filter parameter lets you display specific records from the underlying table of the page.
 
-For more information, see [Web URL syntax](devenv-web-client-urls).
+For more information, see [Web URL syntax](devenv-web-client-urls.md).
 
 ## Using fonts in Excel layouts
 
