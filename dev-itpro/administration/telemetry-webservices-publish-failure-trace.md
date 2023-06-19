@@ -4,7 +4,7 @@ description: Learn about the web service publish failure telemetry in Business C
 author: SVinchi
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 16/06/2023
+ms.date: 06/16/2023
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
