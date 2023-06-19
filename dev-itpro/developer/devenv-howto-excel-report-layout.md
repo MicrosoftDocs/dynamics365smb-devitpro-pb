@@ -42,16 +42,16 @@ For more information about the data contract, see [Understanding Excel layouts](
 
 ### Validating an Excel layout
 
-When importing an Excel layout as part of an app or when a user uploads an Excel layout file, [!INCLUDE[server](../includes/server.md)] does the following operations:
+When importing an Excel layout as part of an app or when a user uploads an Excel layout file, [!INCLUDE[server](includes/server.md)] does the following operations:
  
-1. Loads the Excel layout file and validates whether the file is indeed an Excel file (.xlsx) and that it isn't password protected. If the file isn't a valid Excel file, [!INCLUDE[server](../includes/server.md)] rejects the layout.
-2. Reads the metadata fields present in the _Data_ worksheet (the content of the data contract). If no _Data_ worksheet exists, [!INCLUDE[server](../includes/server.md)] rejects the layout.
+1. Loads the Excel layout file and validates whether the file is indeed an Excel file (.xlsx) and that it isn't password protected. If the file isn't a valid Excel file, [!INCLUDE[server](includes/server.md)] rejects the layout.
+2. Reads the metadata fields present in the _Data_ worksheet (the content of the data contract). If no _Data_ worksheet exists, [!INCLUDE[server](includes/server.md)] rejects the layout.
 3. Removes any other data present in the _Data_ worksheet.
-4. Validates whether the metadata fields present in the _Data_ worksheet are all present as metadata fields in the dataset definition of the report object. In other words, [!INCLUDE[server](../includes/server.md)] checks that the data contract is valid. If it isn't, [!INCLUDE[server](../includes/server.md)] rejects the layout.
+4. Validates whether the metadata fields present in the _Data_ worksheet are all present as metadata fields in the dataset definition of the report object. In other words, [!INCLUDE[server](includes/server.md)] checks that the data contract is valid. If it isn't, [!INCLUDE[server](includes/server.md)] rejects the layout.
 
 ### Running a report with an Excel layout
 
-When a report with an Excel layout is run, [!INCLUDE[server](../includes/server.md)] does the following operations:
+When a report with an Excel layout is run, [!INCLUDE[server](includes/server.md)] does the following operations:
 
 1. Generates the dataset as specified in the dataset definition in the report object and modified by the filters and options from the request page.
 2. Loads the Excel layout file.
@@ -127,6 +127,6 @@ It's possible to specify multiple layouts for a report. For more information, se
 [Defining Multiple Report Layouts](devenv-multiple-report-layouts.md)  
 [ExcelLayout Property](properties/devenv-excellayout-property.md)  
 [LayoutFile Property](properties/devenv-layoutfile-property.md)  
-[Save Excel workbooks and report files in OneDrive](https://learn.microsoft.com/en-us/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive)   
-[Understanding Excel layouts](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts)   
-[Available Fonts in Business Central online](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-fonts)   
+[Save Excel workbooks and report files in OneDrive](/dynamics365/business-central/across-onedrive-overview#save-excel-workbooks-and-report-files-in-onedrive)  
+[Understanding Excel layouts](/dynamics365/business-central/ui-excel-report-layouts?tabs=any-report#understanding-excel-layouts)  
+[Available Fonts in Business Central online](/dynamics365/business-central/ui-fonts)  
