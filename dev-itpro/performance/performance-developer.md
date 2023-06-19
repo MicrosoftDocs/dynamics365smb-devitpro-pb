@@ -4,7 +4,7 @@ description: Provides information for developers to help improve performance in 
 ms.custom: bap-tremplate
 ms.date: 06/19/2023
 ms.reviewer: jswymer
-ms.service: d365-business-central
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 author: KennieNP
 ms.author: kepontop
