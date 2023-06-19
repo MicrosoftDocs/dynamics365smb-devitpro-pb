@@ -1,13 +1,13 @@
 ---
-title: "Performance Article For Developers"
+title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
-ms.custom: na
-ms.date: 06/09/2022
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.custom: bap-tremplate
+ms.date: 06/19/2023
+ms.reviewer: jswymer
+ms.service: d365-business-central
 ms.topic: conceptual
 author: KennieNP
+ms.author: kepontop
 ---
 
 # Performance Articles For Developers
@@ -85,7 +85,7 @@ Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology 
 
 - Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
 
-- If you do expose UI pages as web service endpoints as web service endpoints, note that triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating FactBoxes, avoid calculation, and avoid defaulting logic.
+- If you do expose UI pages as web service endpoints as web service endpoints, then triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating FactBoxes, avoid calculation, and avoid defaulting logic.
 
 - The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
 
@@ -149,7 +149,7 @@ For more information, see [Extract data from Business Central](../developer/deve
 
 ## AL performance patterns
 
-Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we'll describe the following patterns and their impact on performance.
+Knowledge about different AL performance patterns can greatly improve the performance of the code you write. In this section, we describe the following patterns and their impact on performance.
 
 - [Use built-in data structures](#builtindatastructure)  
 - [Run async (and parallelize)](#runasync)  
@@ -196,7 +196,7 @@ They come with different characteristics as described in this table:
 
 ### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping 
 
-The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are much faster than looping over a result set and do the calculation for each row.
+The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are faster than looping over a result set and do the calculation for each row.
 
 - [CalcFields, CalcSums, and Count](../administration/optimize-sql-al-database-methods-and-performance-on-server.md#calc) 
 - [FindSet Method](../developer/methods-auto/recordref/recordref-findset-method.md)
@@ -209,13 +209,13 @@ Try to minimize work done in the `OnAfterGetRecord` trigger code. Common perform
 - Avoiding `CurrPage.Update()` calls.
 - Avoiding repeated calculations. Move them outside the loop, if possible. 
 - Avoid changing filters. This pattern requires the server to throw away the result set.
-- Never do any database writes here. With more than one user on the system, this will give database locking issues and even deadlock errors.
+- Never do any database writes here. With more than one user on the system, this gives database locking issues and even deadlock errors.
 
 Consider using a query object if you want to use a set-based coding paradigm. These pros and cons for using query objects:
 
 |Pros for using a query object|Cons for using a query object | 
 |-----------------------------|------------------------------|
-| - Will bypass the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
+| - Bypasses the AL record API where server reads all fields. <br> - With a covering index, you can get fast read performance for tables with many fields. <br> - Can join multiple tables. | - Query object result sets aren't cached in the servers primary key (data) cache. <br> - No writes are allowed. <br> - You can't add a page on a query object. |
 
 Read more about query objects here:
 
