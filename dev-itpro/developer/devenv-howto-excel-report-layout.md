@@ -4,7 +4,7 @@ description: Describes the steps involved in creating a report that uses an Exce
 author: SusanneWindfeldPedersen
 ms.custom: bap-template
 ms.date: 06/16/2023
-ms.reviewer: jswymer
+ms.reviewer: kepontop
 ms.topic: conceptual
 ms.service: "dynamics365-business-central"
 ms.author: solsen
