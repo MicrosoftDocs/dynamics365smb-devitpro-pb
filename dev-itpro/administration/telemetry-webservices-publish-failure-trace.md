@@ -32,14 +32,17 @@ The following table explains the custom dimensions included in a **Web Service P
 
 |Dimension|Description or value|
 |---------|-----|
-|aadTenantId|Specifies the Azure Active Directory (Azure AD) tenant ID used for Azure AD authentication. For on-premises, if you aren't using Azure AD authentication, this value is **common**. |
-|component|**Dynamics 365 Business Central Server**|
-|componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
-|environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
+|aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)] |
+|component|[!INCLUDE[include-telemetry-dimension-component-server](../includes/include-telemetry-dimension-component-server.md)]|
+|componentVersion|[!INCLUDE[include-telemetry-dimension-component-version](../includes/include-telemetry-dimension-component-version.md)]|
+|environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
 |errorDetails|Additional information about the error.|
 |eventId|**RT0035** - **RT0039**|
 |metadataStack|Specifies the entity where error has occured.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
+
+
+
 
 ## Sample KQL code 
 This KQL code can help you get started analyzing outgoing web service calls. 
