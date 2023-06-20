@@ -37,7 +37,7 @@ The following table explains the custom dimensions included in a **Web Service P
 |componentVersion|Specifies the version number of the component that emits telemetry (see the component dimension.)|
 |environmentType|Specifies the environment type for the tenant, such as **Production**, **Sandbox**, **Trial**. See [Environment Types](tenant-admin-center-environments.md#types-of-environments)|
 |errorDetails|Additional information about the error.|
-|eventId|**RT0035** - **RT0039**|
+|eventId|**RT0033** - **RT0039**|
 |metadataStack|Specifies the entity where error has occured.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
