@@ -142,7 +142,7 @@ The following sections explains the different events included in an outgoing **W
 |Dimension|Description or value|
 |---------|--------------|
 |message|**Web service metadata error: The record with name '{entityName}' was skipped.**|
-|severityLevel|**2**|
+|severityLevel|**1**|
 
 ### Custom dimensions
 
