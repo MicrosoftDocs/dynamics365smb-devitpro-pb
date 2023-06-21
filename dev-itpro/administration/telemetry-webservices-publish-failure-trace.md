@@ -4,7 +4,7 @@ description: Learn about the web service publish failure telemetry in Business C
 author: SVinchi
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 06/16/2023
+ms.date: 06/21/2023
 ms.author: kepontop
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
@@ -165,7 +165,7 @@ This KQL code can help you get started analyzing outgoing web service calls.
 ```kql
 traces
 | where timestamp > ago(60d) // adjust as needed
-| where customDimensions.eventId in ('RT0035','RT0036','RT0037','RT0038','RT0039')
+| where customDimensions.eventId in ('RT0033','RT0034''RT0035','RT0036','RT0038','RT0039')
 | project timestamp 
 , aadTenantId = customDimensions.aadTenantId
 , component = customDimensions.component
