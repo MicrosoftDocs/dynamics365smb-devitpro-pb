@@ -35,6 +35,6 @@
 |RT0035|Web service publishing| [Web service metadata error: The record with name '{webserviceRecordName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-the-record-with-name-webservicerecordname-was-skipped) |
 |RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-table-field-name-error-the-page-containing-the-field-with-caption-metafieldcaption-was-skipped) |
 |RT0038|Web service publishing| [Web service metadata warning: Multiple options while generation navigation property for tablerelation.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-warning-multiple-options-while-generation-navigation-property-for-tablerelation) |
-|RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-the-record-with-name-entityname-was-skipped) |
+|RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0039) |
 
 
