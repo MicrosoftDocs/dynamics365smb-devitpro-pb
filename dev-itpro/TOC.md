@@ -1157,6 +1157,7 @@
 #### [Best practices](webservices/web-services-best-practices.md)
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [Troubleshooting API calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
@@ -1167,6 +1168,7 @@
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData query performance](webservices/odata-client-performance.md)
+#### [Troubleshooting OData calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)

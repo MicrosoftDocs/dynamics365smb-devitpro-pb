@@ -9,7 +9,7 @@
 ## [Tips for working with the APIs](../../developer/devenv-connect-apps-tips.md)
 ## [Using filtering](../../developer/devenv-connect-apps-filtering.md)
 <!-- ## [OpenAPI Specification](dynamics-open-api.md) -->
-## [Error codes](dynamics-error-codes.md)
+## [Troubleshooting API calls](dynamics-error-codes.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ## [Account](resources/dynamics_account.md)

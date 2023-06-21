@@ -12,9 +12,9 @@ ms.date: 04/01/2021
 ms.author: solsen
 ---
 
-# Error Codes
+# Troubleshooting OData/API calls
 
-The following table lists the error codes for the various exceptions in the web service response for ODataV4.
+The following table lists the error codes for the various exceptions in the web service response for calls to OData/API endpoints.
 
 ## Error code categorization
 
@@ -68,5 +68,12 @@ The error codes in the table below can be divided into the following categories 
 |NavInvalidCredentialException|The server has rejected the client credentials|Authentication_InvalidCredentials|
 |Any|Any|Unknown|
 
+## Troubleshoot failed OData/API calls with telemetry
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls: _httpStatusCode_ and _failureReason_. The _httpStatusCode_ dimension stores the HTTP return code provided by the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. The _failureReason_ dimension stores the exception types described above.
+
+For more information about web services telemetry, see [Analyzing Incoming Web Services Request Telemetry](../../administration/telemetry-webservices-trace.md).
+
+
 ## See also
 [Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta) 
+[Analyzing Incoming Web Services Request Telemetry](../../administration/telemetry-webservices-trace.md)
