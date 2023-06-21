@@ -39,7 +39,7 @@
 |User checklists<sup>[\[5\]](#5)</sup>|Provides information about when the status of a user checklist changes|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-user-checklist-trace.md) |
 |Verbose logging enabled/disabled<sup>[\[5\]](#5)</sup>|Provides information about when additional logging is enabled and disabled from the client.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-verbose-logging-trace.md) |
 |Web service access key authentication |Provides information about the authentication of web server access keys on web service requests.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)||[See...](../administration/telemetry-webservices-access-key-trace.md)|
-|Web service publish failures|Provides information about the web services publish failures.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-webservices-publish-failure-trace.md)|
+|Web service publish failures<sup>[\[8\]](#8)</sup>|Provides information about the web services publish failures.|![check mark for feature.](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|![check mark for feature](../developer/media/check.png)|[See...](../administration/telemetry-webservices-publish-failure-trace.md)|
 
 <sup>1</sup><a name="1"></a>This signal is only emitted to the Application Insights resource that's specified in the extension.
 
