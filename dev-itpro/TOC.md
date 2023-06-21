@@ -67,6 +67,7 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
 ### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
 #### [Update 21.5](whatsnew/whatsnew-update-21-5.md)
@@ -1156,6 +1157,7 @@
 #### [Best practices](webservices/web-services-best-practices.md)
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [Troubleshooting API calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
@@ -1166,6 +1168,7 @@
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData query performance](webservices/odata-client-performance.md)
+#### [Troubleshooting OData calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
