@@ -30,11 +30,11 @@
 | RT0030 | Error method call| [Error dialog displayed: {errorMessage}](../administration/telemetry-error-method-trace.md) | 
 | RT0031 | Permission error| [Permission error shown](../administration/telemetry-permission-error-trace.md) | 
 |RT0032|Permission error| [Dependency cycle discovered in permission sets](../administration/telemetry-permission-dependency-cycle-trace.md) |
-|RT0033|Web service publishing| [Web service metadata error: Name for subpage of parent page '{parentPageName}' is missing. Subpage is skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-name-for-subpage-of-parent-page-parentpagename-is-missing-subpage-is-skipped) |
-|RT0034|Web service publishing| [Web service metadata error: Control element with id {metadataObjectName} has a missing name. The page with the control was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-control-element-with-id-metadataobjectname-has-a-missing-name-the-page-with-the-control-was-skipped) |
-|RT0035|Web service publishing| [Web service metadata error: The record with name '{webserviceRecordName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-the-record-with-name-webservicerecordname-was-skipped) |
-|RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-error-table-field-name-error-the-page-containing-the-field-with-caption-metafieldcaption-was-skipped) |
-|RT0038|Web service publishing| [Web service metadata warning: Multiple options while generation navigation property for tablerelation.](../administration/telemetry-webservices-publish-failure-trace.md#web-service-metadata-warning-multiple-options-while-generation-navigation-property-for-tablerelation) |
+|RT0033|Web service publishing| [Web service metadata error: Name for subpage of parent page '{parentPageName}' is missing. Subpage is skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0033) |
+|RT0034|Web service publishing| [Web service metadata error: Control element with id {metadataObjectName} has a missing name. The page with the control was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0034) |
+|RT0035|Web service publishing| [Web service metadata error: The record with name '{webserviceRecordName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0035) |
+|RT0036|Web service publishing| [Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0036) |
+|RT0038|Web service publishing| [Web service metadata warning: Multiple options while generation navigation property for tablerelation.](../administration/telemetry-webservices-publish-failure-trace.md#rt0038) |
 |RT0039|Web service publishing| [Web service metadata error: The record with name '{entityName}' was skipped.](../administration/telemetry-webservices-publish-failure-trace.md#rt0039) |
 
 
