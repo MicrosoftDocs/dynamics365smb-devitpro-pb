@@ -19,7 +19,7 @@ Web service publish failure telemetry gathers data when a web service could not 
 
 The following sections explains the different events included in an outgoing **Web Service Publish Failure** trace, along with their dimensions. The tables list the dimensions that are specific to Business Central.
 
-## <a name="rt0033"></a>Web service metadata error: Name for subpage of parent page '' is missing. Subpage is skipped.
+## <a name="rt0033"></a>Web service metadata error: Name for subpage of parent page '{parentPageName}' is missing. Subpage is skipped.
 
 ### General dimensions
 
@@ -43,7 +43,7 @@ The following sections explains the different events included in an outgoing **W
 |subPageEntityId|The ID of the sub page entity.|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## <a name="rt0034"></a>Web service metadata error: Control element with id '' has a missing name. The page with the control was skipped.
+## <a name="rt0034"></a>Web service metadata error: Control element with id '{metadataObjectName}' has a missing name. The page with the control was skipped.
 
 ### General dimensions
 
@@ -66,7 +66,7 @@ The following sections explains the different events included in an outgoing **W
 |metadataStack|[!INCLUDE[include-telemetry-dimension-telemetry-metadatastack](../includes/include-telemetry-dimension-telemetry-metadatastack.md)]|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## <a name="rt0035"></a>Web service metadata error: The record with name '' was skipped.
+## <a name="rt0035"></a>Web service metadata error: The record with name '{webserviceRecordName}' was skipped.
 
 ### General dimensions
 
@@ -89,7 +89,7 @@ The following sections explains the different events included in an outgoing **W
 |webserviceRecordId|The ID of the webservice Record.|
 |webserviceRecordName|The name of the webservice Record.|
 
-## <a name="rt0036"></a>Web service metadata error: Table field name error, the page containing the field with caption '' was skipped.
+## <a name="rt0036"></a>Web service metadata error: Table field name error, the page containing the field with caption '{metaFieldCaption}' was skipped.
 
 ### General dimensions
 
@@ -135,7 +135,7 @@ The following sections explains the different events included in an outgoing **W
 |pickedNavigationPropertyType|The final navigation property type.|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## <a name="rt0039"></a>Web service metadata error: The record with name '' was skipped.
+## <a name="rt0039"></a>Web service metadata error: The record with name '{entityName}' was skipped.
 
 ### General dimensions
 
