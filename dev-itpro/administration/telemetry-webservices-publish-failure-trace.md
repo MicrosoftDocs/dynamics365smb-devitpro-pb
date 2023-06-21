@@ -19,7 +19,7 @@ Web service publish failure telemetry gathers data when a web service could not 
 
 The following sections explains the different events included in an outgoing **Web Service Publish Failure** trace, along with their dimensions. The tables list the dimensions that are specific to Business Central.
 
-## Web service metadata error: Name for subpage of parent page '' is missing. Subpage is skipped.
+## <a name="rt0033"></a>Web service metadata error: Name for subpage of parent page '' is missing. Subpage is skipped.
 
 ### General dimensions
 
@@ -36,7 +36,6 @@ The following sections explains the different events included in an outgoing **W
 |component|[!INCLUDE[include-telemetry-dimension-component-server](../includes/include-telemetry-dimension-component-server.md)]|
 |componentVersion|[!INCLUDE[include-telemetry-dimension-component-version](../includes/include-telemetry-dimension-component-version.md)]|
 |environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
-|errorDetails|Additional information about the error.|
 |eventId|**RT0033**|
 |metadataStack|[!INCLUDE[include-telemetry-dimension-telemetry-metadatastack](../includes/include-telemetry-dimension-telemetry-metadatastack.md)]|
 |parentPageId|The ID of the parent entity object. |
@@ -44,7 +43,7 @@ The following sections explains the different events included in an outgoing **W
 |subPageEntityId|The ID of the sub page entity.|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## Web service metadata error: Control element with id '' has a missing name. The page with the control was skipped.
+## <a name="rt0034"></a>Web service metadata error: Control element with id '' has a missing name. The page with the control was skipped.
 
 ### General dimensions
 
@@ -61,14 +60,13 @@ The following sections explains the different events included in an outgoing **W
 |component|[!INCLUDE[include-telemetry-dimension-component-server](../includes/include-telemetry-dimension-component-server.md)]|
 |componentVersion|[!INCLUDE[include-telemetry-dimension-component-version](../includes/include-telemetry-dimension-component-version.md)]|
 |environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
-|errorDetails|Additional information about the error.|
 |eventId|**RT0034**|
 |metadataObjectId|The ID of the metadata entity|
 |metadataObjectName|The name of the metadata entity object.|
 |metadataStack|[!INCLUDE[include-telemetry-dimension-telemetry-metadatastack](../includes/include-telemetry-dimension-telemetry-metadatastack.md)]|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## Web service metadata error: The record with name '' was skipped.
+## <a name="rt0035"></a>Web service metadata error: The record with name '' was skipped.
 
 ### General dimensions
 
@@ -91,7 +89,7 @@ The following sections explains the different events included in an outgoing **W
 |webserviceRecordId|The ID of the webservice Record.|
 |webserviceRecordName|The name of the webservice Record.|
 
-## Web service metadata error: Table field name error, the page containing the field with caption '' was skipped.
+## <a name="rt0036"></a>Web service metadata error: Table field name error, the page containing the field with caption '' was skipped.
 
 ### General dimensions
 
@@ -114,7 +112,7 @@ The following sections explains the different events included in an outgoing **W
 |metadataStack|[!INCLUDE[include-telemetry-dimension-telemetry-metadatastack](../includes/include-telemetry-dimension-telemetry-metadatastack.md)]|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## Web service metadata warning: Multiple options while generation navigation property for tablerelation.
+## <a name="rt0038"></a>Web service metadata warning: Multiple options while generation navigation property for tablerelation.
 
 ### General dimensions
 
@@ -137,13 +135,13 @@ The following sections explains the different events included in an outgoing **W
 |pickedNavigationPropertyType|The final navigation property type.|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
-## Web service metadata warning: Multiple options while generation navigation property for tablerelation.
+## <a name="rt0039"></a>Web service metadata error: The record with name '' was skipped.
 
 ### General dimensions
 
 |Dimension|Description or value|
 |---------|--------------|
-|message|**Web service metadata warning: Multiple options while generation navigation property for tablerelation.**|
+|message|**Web service metadata error: The record with name '{entityName}' was skipped.**|
 |severityLevel|**2**|
 
 ### Custom dimensions
@@ -153,36 +151,11 @@ The following sections explains the different events included in an outgoing **W
 |aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)] |
 |component|[!INCLUDE[include-telemetry-dimension-component-server](../includes/include-telemetry-dimension-component-server.md)]|
 |componentVersion|[!INCLUDE[include-telemetry-dimension-component-version](../includes/include-telemetry-dimension-component-version.md)]|
-|environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
-|eventId|**RT0038**|
-|metadataStack|T[!INCLUDE[include-telemetry-dimension-telemetry-metadatastack](../includes/include-telemetry-dimension-telemetry-metadatastack.md)]|
-|otherNavigationProperties|The list of all possible navigation properties.|
-|pickedNavigationPropertyType|The final navigation property type.|
-|telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
-
-## Web service metadata error: The record with name '' was skipped.
-
-### General dimensions
-
-|Dimension|Description or value|
-|---------|--------------|
-|message|**"Web service metadata error: The record with name '{entityName}' was skipped.**|
-|severityLevel|**2**|
-
-### Custom dimensions
-
-|Dimension|Description or value|
-|---------|-----|
-|aadTenantId|[!INCLUDE[include-telemetry-dimension-aadtenantid](../includes/include-telemetry-dimension-aadtenantid.md)] |
-|component|[!INCLUDE[include-telemetry-dimension-component-server](../includes/include-telemetry-dimension-component-server.md)]|
-|componentVersion|[!INCLUDE[include-telemetry-dimension-component-version](../includes/include-telemetry-dimension-component-version.md)]|
-|errorDetails|The error details.|
+|errorDetails|Details about the error.|
 |entityName|The name of the entity.|
 |environmentType|[!INCLUDE[include-telemetry-dimension-environment-type](../includes/include-telemetry-dimension-environment-type.md)]|
 |eventId|**RT0039**|
 |metadataStack|[!INCLUDE[include-telemetry-dimension-telemetry-metadatastack](../includes/include-telemetry-dimension-telemetry-metadatastack.md)]|
-|otherNavigationProperties|The list of all possible navigation properties.|
-|pickedNavigationPropertyType|The final navigation property type.|
 |telemetrySchemaVersion|[!INCLUDE[include-telemetry-dimension-telemetry-schema-version](../includes/include-telemetry-dimension-telemetry-schema-version.md)]|
 
 ## Sample KQL code
