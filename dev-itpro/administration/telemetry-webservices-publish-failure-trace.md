@@ -15,9 +15,9 @@ ms-custom: bap-template
 
 [!INCLUDE[2023_releasewave1.md](../includes/2023_releasewave1.md)]
 
-Web service publish failure telemetry gathers data when a web service could not be published or published web service is not working correctly due to an error in creating metadata for the web service. As a partner, the data gives you the ability to investigate & fix potential problems which are preventing web service from working correctly.
+Web service publish failure telemetry gathers data when a web service couldn't be published or a published web service isn't working correctly due to an error in creating metadata for the web service. As a partner, the data gives you the ability to investigate & fix potential problems that are preventing web service from working correctly.
 
-The following sections explains the different events included in an outgoing **Web Service Publish Failure** trace, along with their dimensions. The tables list the dimensions that are specific to Business Central.
+The following sections explain the different events included in an outgoing **Web Service Publish Failure** trace, along with their dimensions. The tables list the dimensions that are specific to Business Central.
 
 ## <a name="rt0033"></a>Web service metadata error: Name for subpage of parent page '{parentPageName}' is missing. Subpage is skipped.
 
@@ -95,7 +95,7 @@ The following sections explains the different events included in an outgoing **W
 
 |Dimension|Description or value|
 |---------|--------------|
-|message|**Web service metadata error: Table field name error, the page contaning the field with caption '{metaFieldCaption}' was skipped.**|
+|message|**Web service metadata error: Table field name error, the page contains the field with caption '{metaFieldCaption}' was skipped.**|
 |severityLevel|**1**|
 
 ### Custom dimensions
