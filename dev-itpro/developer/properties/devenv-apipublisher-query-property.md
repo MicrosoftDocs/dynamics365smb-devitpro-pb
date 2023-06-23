@@ -2,7 +2,7 @@
 title: "APIPublisher Property (Query)"
 ms.author: solsen
 ms.custom: na
-ms.date: 04/01/2021
+ms.date: 06/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ author: SusanneWindfeldPedersen
 
 <!-- this topic is manually created, parent node is devenv-apipublisher-property.md -->
 
-Sets the publisher of the API endpoint the query is exposed in. The syntax for providing a publisher is illustrated in the example below:
+Sets the publisher of the API endpoint the query is exposed in. he APIPublisher contains the first part of the URL for the endpoint. The syntax for providing a publisher is illustrated in the example below, and is typically the name of the company that owns the API. The syntax for providing a publisher is illustrated in the example below:
 
 ## Applies to  
 
