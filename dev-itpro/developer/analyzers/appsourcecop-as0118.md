@@ -1,9 +1,9 @@
 ---
 title: "AppSourceCop Error AS0118"
 description: "Modifying the length of a field part of the primary key is not allowed."
-ms.author: samyhaff
+ms.author: t-shaffouhi
 ms.custom: na
-ms.date: 26/06/2023
+ms.date: 06/26/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
