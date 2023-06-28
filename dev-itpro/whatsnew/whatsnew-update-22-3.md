@@ -40,15 +40,18 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Take action to retain delegated admin access to your customers’ Business Central environments**  
-Last year Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve upon and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
+> [!IMPORTANT]
+> Take action to retain delegated admin access to your customers’ Business Central environments
 
-The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you need to migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process. 
+Last year, Microsoft introduced [Granular Delegated Admin Privileges (GDAP)](/partner-center/gdap-introduction) to improve and replace Delegated Admin Privileges (DAP). GDAP addresses various security concerns by allowing customer administrators to provide partners a proper level of time-bound access to their tenants.
 
-To manage Dynamics 365 Business Central customers via GDAP we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
+The Partner Center team has now [announced](/partner-center/announcements/2023-may#new-timelines-important-actions-to-secure-the-partner-ecosystem) the timeline by which you must migrate your customer relationships to GDAP. Please make sure to read this new Partner Center announcement for more details about milestone dates and the transition plan and about the tools Microsoft provides to facilitate this process. 
 
-**Upcoming Business Central Office Hours Calls**  
-In July, we will be hosting the following calls, which you can already register for today:
+To manage Dynamics 365 Business Central customers via GDAP, we recommend requesting the Dynamics 365 Administrator role as the least-privileged role that grants access to Dynamics 365 Business Central environments. Read more about which other roles are supported for delegated administration of Business Central [here](/dynamics365/business-central/dev-itpro/administration/delegated-admin).
+
+### Upcoming Business Central Office Hours Calls
+
+In July, we host the following calls, which you can already register for today:
 
 - **July nn:** Onboarding your customers to Business Central
 - **July NN:** Review of the new E-invoicing design
@@ -57,5 +60,5 @@ Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.m
 
 Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
-**Looking for an aka.ms link?**  
+### Looking for an aka.ms link?  
 Are you looking for an aka.ms link, but simply can't find it? Remember that you can find all aka.ms links on [aka.ms/BCLinks](https://aka.ms/BCLinks). Don't forget to bookmark it!
