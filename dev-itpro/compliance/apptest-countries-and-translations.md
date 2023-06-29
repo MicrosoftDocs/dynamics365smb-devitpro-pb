@@ -29,25 +29,25 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Andorra|Partner|ES|Available|AD|
 |Angola|Partner|W1|Available|AO|
 |Argentina|Partner|W1|Available|AR|
-|Armenia|Partner|W1|Planned in July 2023|AM|
+|Armenia|Partner|W1|Available|AM|
 |Australia|Microsoft|AU|Available|AU|
 |Austria|Microsoft|AT|Available|AT|
-|Azerbaijan|Partner|W1|Planned in July 2023|AZ|
-|Bahamas|Partner|W1|Planned in July 2023|BS|
+|Azerbaijan|Partner|W1|Available|AZ|
+|Bahamas|Partner|W1|Available|BS|
 |Bahrain|Partner|W1|Available|BH|
 |Bangladesh|Partner|W1|Available|BD|
 |Belgium|Microsoft|BE|Available|BE|
-|Bermuda|Partner|W1|Planned in July 2023|BM|
-|Bolivia|Partner|W1|Planned in July 2023|BO|
+|Bermuda|Partner|W1|Available|BM|
+|Bolivia|Partner|W1|Available|BO|
 |Bosnia and Herzegovina|Partner|W1|Available|BA|
 |Botswana|Partner|W1|Available|BW|
-|British Virgin Islands|Partner|W1|Planned in July 2023|VG|
+|British Virgin Islands|Partner|W1|Available|VG|
 |Bulgaria|Partner|W1|Available|BG|
 |Brazil|Partner|W1|Available|BR|
-|Cambodia|Partner|W1|Planned in July 2023|KH|
-|Cameroon|Partner|W1|Planned in July 2023|CM|
+|Cambodia|Partner|W1|Available|KH|
+|Cameroon|Partner|W1|Available|CM|
 |Canada|Microsoft|NA|Available|CA|
-|Cayman Islands|Partner|W1|Planned in July 2023|KY|
+|Cayman Islands|Partner|W1|Available|KY|
 |Chile|Partner|W1|Available|CL|
 |Colombia|Partner|W1|Available|CO|
 |Costa Rica|Partner|W1|Available|CR|
@@ -60,14 +60,14 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |El Salvador|Partner|W1|Available|SV|
 |Egypt|Partner|W1|Available|EG|
 |Estonia|Partner|W1|Available|EE|
-|Ethiopia|Partner|W1|Planned in July 2023|ET|
+|Ethiopia|Partner|W1|Available|ET|
 |Faroe Islands (Denmark)|Microsoft|W1|Available|DK|
-|Fiji|Partner|W1|Planned in July 2023|FJ|
+|Fiji|Partner|W1|Available|FJ|
 |Finland|Microsoft|FI|Available|FI|
 |France|Microsoft|FR|Available|FR|
 |Georgia|Partner|W1|Available|GE|
 |Germany|Microsoft|DE|Available|DE|
-|Ghana|Partner|W1|Planned in July 2023|GH|
+|Ghana|Partner|W1|Available|GH|
 |Greece|Partner|W1|Available|GR|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|
 |Guatemala|Partner|W1|Available|GT|
@@ -86,18 +86,18 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Japan|Partner|W1|Available|JP|
 |Jersey|Partner|GB|Available|JE|
 |Jordan|Partner|W1|Available|JO|
-|Kazakhstan|Partner|W1|Planned in July 2023|KZ|
+|Kazakhstan|Partner|W1|Available|KZ|
 |Kenya|Partner|W1|Available|KE|
-|Kosovo|Partner|W1|Planned in July 2023|XK|
+|Kosovo|Partner|W1|Available|XK|
 |Kuwait|Partner|W1|Available|KW|
 |Latvia|Partner|W1|Available|LV|
 |Lebanon|Partner|W1|Available|LB|
 |Liechtenstein|Partner|CH|Available|LI|
 |Lithuania|Partner|W1|Available|LT|
 |Luxembourg|Partner|W1|Available|LU|
-|Macau (SAR China)|Partner|W1|Planned in July 2023|MO|
-|Madagascar|Partner|W1|Planned in July 2023|MG|
-|Malawi|Partner|W1|Planned in July 2023|MW|
+|Macau (SAR China)|Partner|W1|Available|MO|
+|Madagascar|Partner|W1|Available|MG|
+|Malawi|Partner|W1|Available|MW|
 |Malaysia|Partner|W1|Available|MY|
 |Maldives|Partner|W1|Available|MV|
 |Malta|Partner|W1|Available|MT|
@@ -107,9 +107,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Mongolia|Partner|W1|Available|MN|
 |Montenegro|Partner|W1|Available|ME|
 |Morocco|Partner|W1|Available|MA|
-|Mozambique|Partner|W1|Planned in July 2023|MZ|
-|Namibia|Partner|W1|Planned in July 2023|NA|
-|Nepal|Partner|W1|Planned in July 2023|NP|
+|Mozambique|Partner|W1|Available|MZ|
+|Namibia|Partner|W1|Available|NA|
+|Nepal|Partner|W1|Available|NP|
 |Netherlands|Microsoft|NL|Available|NL|
 |New Zealand|Microsoft|NZ|Available|NZ|
 |Nicaragua|Partner|W1|Available|NI|
@@ -129,10 +129,10 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Romania|Partner|W1|Available|RO|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|
 |San Marino|Partner|IT|Available|SM|
-|Sao Tome & Principe|Partner|W1|Planned in July 2023|SM|
+|Sao Tome & Principe|Partner|W1|Available|SM|
 |Saudi Arabia|Partner|W1|Available|SA|
-|Senegal|Partner|W1|Planned in July 2023|SN|
-|Serbia|PartnerW1||Available|RS|
+|Senegal|Partner|W1|Available|SN|
+|Serbia|Partner|W1|Available|RS|
 |Singapore|Partner|W1|Available|SG|
 |Slovakia|Partner|W1|Available|SK|
 |Slovenia|Partner|W1|Available|SI|
@@ -143,22 +143,25 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Sweden|Microsoft|SE *1)*|Available|SE|
 |Switzerland|Microsoft|CH|Available|CH|
 |Taiwan|Partner|W1|Available|TW|
-|Tanzania|Partner|W1|Planned in July 2023|TZ|
+|Tanzania|Partner|W1|Available|TZ|
 |Thailand|Partner|W1|Available|TH|
 |Trinidad and Tobago|Partner|W1|Available|TT|
 |Tunisia|Partner|W1|Available|TN|
 |Türkiye|Partner|W1|Available|TR|
-|Uganda|Partner|W1|Planned in July 2023|UG|
+|Uganda|Partner|W1|Available|UG|
 |Ukraine|Partner|W1|Available|UA|
 |United Arab Emirates|Partner|W1|Available|AE|
 |United Kingdom|Microsoft|GB|Available|GB|
 |United States|Microsoft|NA|Available|US|
 |Uruguay|Partner|W1|Available|UY|
 |Vietnam|Partner|W1|Available|VN|
-|Zambia|Partner|W1|Planned in July 2023|ZM|
+|Zambia|Partner|W1|Available|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
 
-*1) BaseApp for Sweden will be migrated to W1 in 2023 release wave 1. Current localization features will be available as apps.*
+*1) BaseApp for Sweden will be migrated to W1 in 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
+
+> [!NOTE]  
+> Microsoft will announce new planned countries for release 2023 Wave 2 at the end of August.
 
 For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://dynamics.microsoft.com/en-us/availability-reports/georeport/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
 
