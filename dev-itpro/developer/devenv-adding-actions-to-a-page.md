@@ -44,6 +44,40 @@ In order to add actions to the action bar, you must use the keywords with Anchor
 
 <!-- For information about adding actions to a CueGroup control, see [Creating a Cue Based on a FlowField](devenv-creating-a-cue-based-on-a-flowfield.md).  -->
 
+## Declaring a Selection-Aware Action
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, you can use the `Scope` property on an action, to define whether it is enabled for single or multi-row selection in accordance with the descriptions found in [Scope (Action) Property](properties/devenv-scope-action-property.md).
+
+To get started, you can use the snippet `tactionselectionaware` in the Visual Studio Code extension, which will suggest one of the selection-aware action scopes.
+
+Below is an example of how to postpone multiple sales orders by a week using the `Scope=RepeaterSelection`:
+
+```AL
+pageextension 50110 SelectionAwareSOHandling extends "Sales Order List"
+{
+    actions
+    {
+        addfirst(processing)
+        {
+            action("Postpone Selected by 1 Week")
+            {
+                Scope = RepeaterSelection;
+
+                trigger OnAction()
+                var
+                    DueDate: Date;
+                begin
+                    DueDate := Rec."Due Date";
+                    Rec."Due Date" := CalcDate('7D', DueDate);
+                end;
+            }
+        }
+    }
+}
+```
+
+Note how the `OnAction` trigger does not need to define any iteration, the trigger is called multiple times at runtime which reduces the amount of logic required per action. 
+
+
 ### Example
 
 The following example shows how to use different action areas on a **page object of the PageType Card**. These actions will display in the following menus in the action bar. The following example uses the *legacy* syntax for promoted actions. For more information, see [Promoted Actions](devenv-promoted-actions.md).
