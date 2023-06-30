@@ -1,5 +1,6 @@
 ---
 title: "APIPublisher Property (Page)"
+description: "Sets publisher of the API endpoint that the page is exposed in."
 ms.author: solsen
 ms.custom: na
 ms.date: 06/23/2023
