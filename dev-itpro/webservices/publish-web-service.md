@@ -124,3 +124,5 @@ To unpublish a webs service, clear the **Published** check box. This step will m
 ## See Also
 
 [Web Services](web-services.md)
+
+[Web Service Publish Failure Telemetry](web-service-telemetry.md#web-service-publish-failure-telemetry)

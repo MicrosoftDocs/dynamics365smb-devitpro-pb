@@ -3,7 +3,7 @@ title: "Report.RunRequestPage(Integer [, Text]) Method"
 description: "Runs the request page for a report without running the report."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/02/2023
+ms.date: 06/23/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -46,9 +46,7 @@ XML string that contains the request page parameters that are entered on the req
 This method opens the request page for the specified report to allow the user to provide parameters for the report. When the user closes the request page by choosing the **OK** button, a string that contains the parameter values that were set by the user is returned. When the user chooses the **Cancel** button, an empty string will be returned. The returned parameter string can be picked up by calling one of the following methods:  
 
 - [Execute Method](../report/report-execute-method.md)  
-
 - [Print Method](../report/report-print-method.md)  
-
 - [SaveAs Method](../report/report-saveas-method.md)  
 
 > [!NOTE]  
@@ -58,15 +56,19 @@ Because the request page runs in the context of where it was invoked from, users
 
 ## Example
 
-This example illustrates how to use the RunRequestPage method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
+This example illustrates how to use the `RunRequestPage` method to run the request page for report ID 206 Sales Invoice. The request page parameters are saved to a table, and then uses the parameters with the Execute, SaveAs, and Print methods to preview the report, save it as a PDF file, and print it.  
 
 This example requires that you create a table for holding parameters that are entered on the report request page and a codeunit that runs the report methods.  
 
-Create a table called **Request Parameters** that has the following fields.  
+Create a table called **ReportParameters** that has the following fields.  
 
 ```al
 ...
-fields
+table 50103 ReportParameters
+{
+    DataClassification = ToBeClassified;
+
+    fields
     {
         field(1; ReportId; Integer)
         {
@@ -82,7 +84,7 @@ fields
             DataClassification = ToBeClassified;
         }
     }
-...
+}
 ``` 
 
 Create a codeunit and add the following code to the *OnRun* trigger of the codeunit.  
