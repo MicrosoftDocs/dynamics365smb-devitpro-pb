@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!INCLUDE [2023_releasewave2](../includes/2023_releasewave2.md)]
 
-Namespaces are used to organize code into logical groups and hierarchies, which can prevent naming conflicts that can occur when libraries are combined. A namespace ensures uniqueness in code names and allows reuse of names in different contexts, and it provides structure for the code base, making it easier to navigate and understand.
+Namespaces are used to organize code into logical groups and hierarchies, which can prevent naming conflicts that can occur when libraries are combined. Namespaces ensure uniqueness in code names and allow reuse of names in different contexts, and provide structure for the code base, making it easier to navigate and understand.
 
 A .al file defines a namespace at the beginning of the file, and all objects in the code file will belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple .al files, which means for multiple objects.
 
