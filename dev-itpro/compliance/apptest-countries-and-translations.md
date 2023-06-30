@@ -158,10 +158,10 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Zambia|Partner|W1|Available|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
 
-*1) BaseApp for Sweden will be migrated to W1 in 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
+*1) BaseApp for Sweden will be migrated to W1 with [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 1. Current localization features will be available as apps. Existing users can enable new features through **Feature Management**.*
 
 > [!NOTE]  
-> Microsoft will announce new planned countries for release 2023 Wave 2 at the end of August.
+> Microsoft will announce new planned countries for [!INCLUDE [prod_short](../includes/prod_short.md)] 2023 release wave 2 at the end of August.
 
 For a list of the geographical regions in which [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available, go to [Geographical availability for Dynamics 365](https://dynamics.microsoft.com/en-us/availability-reports/georeport/) report and select [!INCLUDE [prod_long](../developer/includes/prod_long.md)] in the **Product** list.
 
