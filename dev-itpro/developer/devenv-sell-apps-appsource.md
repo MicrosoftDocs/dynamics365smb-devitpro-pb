@@ -37,18 +37,6 @@ When the app has been updated with entitlements and opted in to transact, it'll 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
 
-
-<!--  enable transactability for your app on AppSource, you will need to define offers and plans in Partner Center and map those offers to functionality in your apps. In 2022 release wave 2, AppSource apps for Business Central will be able to opt in to AppSource transactability based on credit card payment and per-user licensing1.
-
-You can also configure the subscription plans, pricing details, and more for your transactable SaaS offer. In particular, make sure you complete the following steps: Under Setup details, select the Yes option to specify that you’re selling the offer through Microsoft. Under Microsoft 365 integration, add the AppSource link to your app listing2.
-
-
- Each plan can specify the supported markets, and can have market-specific pricing. Monthly and yearly billing terms are supported, with the customer being able to choose automatic recurrence when they purchase in AppSource. A one month free trial is also an option for publishers.
-
-You can also configure the subscription plans, pricing details, and more for your transactable SaaS offer. In particular, make sure you complete the following steps: Under Setup details, select the Yes option to specify that you’re selling the offer through Microsoft. Under Microsoft 365 integration, add the AppSource link to your app listing2.
-
--->
-
 ## See also
 
 []()
