@@ -1,16 +1,16 @@
 ---
-title: Enabling transact on AppSource apps
+title: Selling Business Central apps through AppSource
 description: Learn how to enable tranactability in AppSource for Business Central apps.
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 03/07/2023
+ms.date: 07/03/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
-# Enabling transact on AppSource apps
+# Selling Business Central apps through AppSource
 
 To enable transactability in AppSource for [!INCLUDE [prod_short](includes/prod_short.md)] apps, publishers must opt in to selling through Microsoft on their existing offer in Partner Center. Once the transact option is enabled, publishers can define plans, or variants, of their offer. Plans can then be used to sell various levels of functionality, such as Gold, Silver, and Bronze variants at different prices. Plans can also be used for waterfall pricing, that is when selling the same level of functionality with a discount based on the number of users bought.
 
@@ -23,7 +23,7 @@ Once the publisher has defined the plans to sell, they can map those plans to fu
 > [!NOTE]  
 > If the publisher already has existing customers on custom licensing, they shouldn't opt in to using transactability and entitlements until they have implemented side-by-side support, that is the ability to fall-back to their custom licensing for existing customers in a transition period - otherwise those existing customers would be locked out once they upgrade to the app version using entitlements. To implement side-by-side, publishers must create an entitlement mapping `Unlicensed` user to the required permission sets to run their custom licensing check. 
 
-When the app has been updated with entitlements and opted in to transact, it'll surface in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once a number of licenses has been purchased, they appear in the customers Microsoft Admin Center, and can be assigned to individual users.
+When the app has been updated with entitlements and opted in to transact, it'll surface in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once a number of licenses have been purchased, they appear in the customers Microsoft Admin Center, and can be assigned to individual users.
 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
