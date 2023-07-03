@@ -210,7 +210,7 @@ The [!INCLUDE[server](../../developer/includes/server.md)] includes several conf
 
 ## Notes for Power Automate flows
 
-Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 100 records within 30 seconds, the associated flow won't get triggered. The same applies to Business Central on-premises although the limit on the records will depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
+Webhook notifications are used to trigger Power Automate flows from events in Business Central. However, the Business Central connector for Power Automate can't process `collection` notifications for flows. With  Business Central online, this condition means that if an event creates or changes more than 1000 records within 30 seconds, the associated flow won't get triggered. The same applies to Business Central on-premises although the limit on the records will depend on the [!INCLUDE[server](../../developer/includes/server.md)] configuration.
 
 ## See also
 
