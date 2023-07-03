@@ -46,8 +46,9 @@ The following table explains custom dimensions that are specific to this trace.
 |eventId|**AL0000E24**|
 |alJobQueueId|Specifies the ID of the job queue entry.|
 |alJobQueueIsRecurring|Specifies whether the job queue is recurring. **Yes** indicates it's recurring. **No**  indicates it's not recurring.|
-|alJobQueueObjectId|Specifies the ID of the object that the job queue entry runs.|
+|alJobQueueObjectId| Specifies the ID of the object that the job queue entry runs. |
 |alJobQueueObjectType|Specifies the type of the object that the job queue entry runs, for example **Report** or **Codeunit**.|
+|alJobQueueObjectDescription|Specifies the description of the object that the job queue entry runs. This dimension was introduced in Business Central 2023 release wave 1, version 22.2. |
 |alJobQueueStatus|**Ready** indicates it's a non-recurring job queue entry or the first run of a recurring job queue entry that's ready to run. **On Hold with Inactivity Timeout** indicates it's a recurring job query entry that's ready to run. |
 
 ### Error
