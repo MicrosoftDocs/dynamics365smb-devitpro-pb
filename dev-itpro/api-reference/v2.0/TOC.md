@@ -10,6 +10,8 @@
 ## [Using filtering](../../developer/devenv-connect-apps-filtering.md)
 <!-- ## [OpenAPI Specification](dynamics-open-api.md) -->
 ## [Troubleshooting API calls](dynamics-error-codes.md)
+## [API performance](../../webservices/web-service-performance.md)
+## [API telemetry](../../webservices/web-service-telemetry.md)
 <!-- START>DO_NOT_EDIT -->
 <!-- IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT. -->
 ## [Account](resources/dynamics_account.md)
