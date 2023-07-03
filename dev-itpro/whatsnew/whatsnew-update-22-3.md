@@ -20,7 +20,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes
 
-- [tbd]()
+- [tbd]() XXXX
 
 ## Localization updates
 
@@ -53,8 +53,7 @@ To manage Dynamics 365 Business Central customers via GDAP, we recommend request
 
 In July, we host the following calls, which you can already register for today:
 
-- **July nn:** Onboarding your customers to Business Central
-- **July NN:** Review of the new E-invoicing design
+- **September 3:**
 
 Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 
