@@ -7,7 +7,7 @@ ms.reviewer: na
 ms.suite: na
 ms.topic: conceptual
 ms.author: jswymer
-ms.date: 09/01/2022
+ms.date: 06/30/2023
 ---
 
 # Supported Upgrade Paths to [!INCLUDE[prod_long](../developer/includes/prod_long.md)] Releases
@@ -24,6 +24,14 @@ The following sections provide the supported upgrade paths to the different [!IN
 
 > [!NOTE]
 > Minor updates are regularly made available for each release wave. Not all minor updates between two releases are compatible. Make sure you upgrade to a release update that's compatible with your current version. Otherwise, you might encounter problems upgrading the application. For more information, see [Dynamics 365 Business Central Upgrade Compatibility Matrix](./upgrade-v14-v15-compatibility.md?branch=2020rw1-upgrade).
+
+## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2023 Release Wave 1 (v22)
+
+|  Source version  |  Path  |
+|------------|--------------|
+|<ul><li> [!INCLUDE[navcrete](../developer/includes/navcrete_md.md)]</li><li>[!INCLUDE[navcorfu](../developer/includes/navcorfu_md.md)]</li><li>[!INCLUDE[nav2017](../developer/includes/nav2017.md)]</li><li>[!INCLUDE[nav2018_md](../developer/includes/nav2018_md.md)]</li><li>[!INCLUDE[prod_short](../developer/includes/prod_short.md)]</li></ul>|Indirect. Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14 first.|
+|<ul><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v14</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v15</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v16</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v17</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v18</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v19</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v20</li><li> [!INCLUDE[prod_short](../developer/includes/prod_short.md)] v21</li></ul>|Direct|
+
 
 ## Upgrade to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] 2022 Release Wave 2 (v21)
 
