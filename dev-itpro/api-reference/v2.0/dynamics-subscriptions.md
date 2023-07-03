@@ -2,12 +2,11 @@
 title: Working with Webhooks  
 description: Overview of how to manage subscriptions to Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/01/2021
+ms.date: 07/03/2023
 ms.author: solsen
 ---
 
@@ -125,7 +124,7 @@ The change type is indicated by the `"changeType"` parameter:
 
 - `collection` means [!INCLUDE[prod_short](../../includes/prod_short.md)] sends a notification that many records have been created or changed. A filter is applied to the resource, enabling the subscriber to request all entities satisfying the filter.
 
-  Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 100 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
+  Notifications aren't sent immediately when the record changes. By delaying notifications, [!INCLUDE[prod_short](../../includes/prod_short.md)] can ensure that only one notification is sent, even though the entity might have changed several times within a few seconds. By default, the system waits 30 seconds after the first change to an entity before it sends the notification. During the 30-second delay, if more than a 1000 records are changed, a single `collection` notification is sent&mdash;otherwise, a separate notification is sent for each change. With Business Central on-premises, this time delay and notification limit are configurable.  
 
   > [!NOTE]
   > You can also subscribe on event `OnGetDelayTime` in codeunit `API Webhook Notification Mgt.` to change the delay time. Keep in mind that the delay time is in millisecconds.
