@@ -1,5 +1,6 @@
 ---
 title: "APIPublisher Property"
+description: "Sets APIPublisher property for pages and queries."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021

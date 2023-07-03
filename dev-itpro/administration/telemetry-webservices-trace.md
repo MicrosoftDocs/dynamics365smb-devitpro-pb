@@ -3,7 +3,7 @@ title: Web Service Request Trace
 description: Learn about the web service request telemetry in Business Central  
 ms.topic: conceptual
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 01/13/2023
+ms.date: 06/19/2023
 ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
@@ -49,7 +49,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |failureReason | Logged in case of an error in a OData/API call. Contains the exception as seen from the server. <br /><br/>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.|
 |httpHeaders|Introduced in version 16.3. Specifies the http headers set in the request. In version 17.3, a truncated version of the Authorization header was introduced to enable querying for the use of basic or token authorization. |
 |httpMethod|Introduced in version 16.3. Specifies the HTTP method used in the request. Values include: POST, GET, PUT, PATCH, or DELETE. |
-|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint wasn't valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li></ul><br /><br/>Data isn't populated for SOAP endpoints. |
+|httpStatusCode |Introduced in version 16.3. Specifies the http status code returned when a request has completed. This dimension further indicates whether request succeeded or not, and why. Use it to verify whether there was an issue with a request even though the request was logged as successful. The dimension displays one of the following values: <ul><li>**200** <br />OK. The request succeeded.</li><li>**401**<br />Access denied. The user who made the request doesn't have proper permissions. For more information, see [Web Services Authentication](../webservices/web-services-authentication.md) and [Assign Permissions to Users and Groups](/dynamics365/business-central/ui-define-granular-permissions). </li><li>**404**<br />Not found. The given endpoint wasn't valid. For more information, see [Publishing a Web Service](../webservices/publish-web-service.md)</li><li>**408**<br />Request timed out. The request took longer to complete than the threshold configured for the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataServicesOperationTimeout setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**429**<br /> Too Many Requests. The request exceeded the maximum simultaneous requests allowed on the service. For information about this threshold in [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, see [OData request limits](operational-limits-online.md#ODataServices). For on-premises, the timeout is determined by the ODataMaxConnections setting of the [!INCLUDE[server](../developer/includes/server.md)]. For more information, see [Configuring Business Central Server](configure-server-instance.md#ODataServices)</li><li>**503**<br />Service Temporarily Unavailable. The requests waited in the server request queue until timeout (currently 8 minutes) <sup>[\[4\]](#4)</sup> .</li></ul><br /><br/>Data isn't populated for SOAP endpoints.  |
 |requestQueueTime | Specifies the amount of time the request spent in the request queue before it was started by the server.<sup>[\[3\]](#3)</sup> <br /><br />The time has the format hh:mm:ss.sssssss. | 
 |serverExecutionTime|Specifies the amount of time it took the server to complete the request\*\*. The time has the format hh:mm:ss.sssssss. Time spent in the request queue isn't included.|
 |sqlExecutes|Specifies the number of SQL statements that the request executed.<sup>[\[1\]](#1)</sup> <sup>[\[2\]](#2)</sup>|
@@ -63,7 +63,9 @@ The following table explains the custom dimensions included in a **Web Services 
 
 <sup>3</sup><a name="3"></a>This dimension was introduced in Business Central 2023 release wave 1, version 22.0.
  
- 
+<sup>4</sup><a name="4"></a>This HTTP status code was introduced in Business Central 2023 release wave 1, version 22.2.
+
+
 ## Analyze web service call performance using telemetry
 
 As a developer, you use the data to learn about conditions that you can change to improve performance. The following table provides some examples:
@@ -78,10 +80,37 @@ As a developer, you use the data to learn about conditions that you can change t
 For more performance guidelines, see [Writing efficient Web Services](../performance/performance-developer.md#writing-efficient-web-services).
 
 ## Analyze web service call stability using telemetry
+[!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls. 
 
+### HTTP status codes
+[!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
+
+### The custom dimension httpStatusCode
 The custom dimension _httpStatusCode_ is key to understanding unsuccessful web service calls. Any call with an HTTP status code in the 4xx range should be investigated because these calls are likely failing due to a misconfiguration on the web service client (the caller).
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises are configured with various limits on web service requests. For example, there's a request timeout and a maximum connections limit. For online, you can't change these limits, but it's helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md). Web service calls that exceed the timeout limit result in a **408 - Request Timeout**. These calls are recorded in Application Insights with a totalTime that is equal to the timeout threshold.
+
+
+### The custom dimension failureReason
+The custom dimension _failureReason_ is used to troubleshoot further, mostly error conditions happening in the AL code behind the web service endpoint. 
+
+For more information on error codes for the various exceptions that are logged in the custom dimension _failureReason_, please see [Troubleshooting OData/API calls](../api-reference/v2.0/dynamics-error-codes.md).
+
+### Sample KQL code for combinations of httpStatusCode and failureReason 
+This KQL code can help you see combinations of httpStatusCode and failureReason in your web service call telemetry: 
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions has 'RT0008'
+| where customDimensions.httpStatusCode <> 200
+| where customDimensions.category <> 'SOAP' // no httpStatusCode or failureReason logged for SOAP calls
+| project failureReason = tostring( customDimensions.failureReason )
+, httpStatusCode = tostring(customDimensions.httpStatusCode)
+| where isnotempty( httpStatusCode )
+| distinct httpStatusCode, failureReason
+```
+
 
 ## Sample KQL code
 
