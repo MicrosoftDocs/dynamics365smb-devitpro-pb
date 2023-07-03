@@ -39,4 +39,4 @@ When the app has been updated with entitlements and opted in to transact, it'll 
 
 ## See also
 
-[]()
+[FAQ about the Microsoft commercial marketplace](/partner-center/marketplace/marketplace-faq-publisher-guide)  
