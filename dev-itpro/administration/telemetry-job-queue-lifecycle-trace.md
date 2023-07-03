@@ -193,7 +193,7 @@ traces
 , alJobQueueObjectId = customDimensions.alJobQueueObjectId 	
 , alJobQueueObjectName = customDimensions.alJobQueueObjectName // added in 22.0 
 , alJobQueueObjectType = customDimensions.alJobQueueObjectType
-, alJobQueueObjectDescription = customDimensions.alJobQueueObjectDescription // added in 22.0 
+, alJobQueueObjectDescription = customDimensions.alJobQueueObjectDescription // added in 22.2
 , alJobQueueStatus = customDimensions.alJobQueueStatus
 , alJobQueueExecutionTimeInMs = customDimensions.alJobQueueExecutionTimeInMs
 , alJobQueueStacktrace = customDimensions.alJobQueueStacktrace // stack trace added in 21.3
