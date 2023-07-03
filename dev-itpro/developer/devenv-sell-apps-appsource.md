@@ -12,7 +12,30 @@ ms.topic: conceptual
 
 # Selling Business Central apps through AppSource
 
-To enable transactability in AppSource for [!INCLUDE [prod_short](includes/prod_short.md)] apps, publishers must opt in to selling through Microsoft on their existing offer in Partner Center. Once the transact option is enabled, publishers can define plans, or variants, of their offer. Plans can then be used to sell various levels of functionality, such as Gold, Silver, and Bronze variants at different prices. Plans can also be used for waterfall pricing, that is when selling the same level of functionality with a discount based on the number of users bought.
+To sell your [!INCLUDE [prod_short](includes/prod_short.md)] app in AppSource, you must define offers and plans in Partner Center, and map those offers to functionality in your app. Once the transact option is enabled, you can define plans, or variants, of the offer. The plans can then be used to sell various levels of functionality, such as Gold, Silver, and Bronze variants at different prices. Plans can also be used for waterfall pricing, that is when selling the same level of functionality with a discount based on the number of users bought. With waterfall pricing, the price per user decreases as the number of users increases.
+
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, transactability based on credit card payment and per-user licensing is available for AppSource apps. This means that customers can purchase your app directly in AppSource.
+
+
+## Defining plans
+
+You can configure the subscription plans, pricing details, and more for your transactable SaaS offer. You must make sure to complete the following steps: 
+
+- Under **Setup details**, select the **Yes** option to specify that you’re selling the offer through Microsoft. 
+- Under **Microsoft 365 integration**, add the AppSource link to your app listing.
+
+
+<!--  enable transactability for your app on AppSource, you will need to define offers and plans in Partner Center and map those offers to functionality in your apps. In 2022 release wave 2, AppSource apps for Business Central will be able to opt in to AppSource transactability based on credit card payment and per-user licensing1.
+
+You can also configure the subscription plans, pricing details, and more for your transactable SaaS offer. In particular, make sure you complete the following steps: Under Setup details, select the Yes option to specify that you’re selling the offer through Microsoft. Under Microsoft 365 integration, add the AppSource link to your app listing2.
+
+
+ Each plan can specify the supported markets, and can have market-specific pricing. Monthly and yearly billing terms are supported, with the customer being able to choose automatic recurrence when they purchase in AppSource. A one month free trial is also an option for publishers.
+
+You can also configure the subscription plans, pricing details, and more for your transactable SaaS offer. In particular, make sure you complete the following steps: Under Setup details, select the Yes option to specify that you’re selling the offer through Microsoft. Under Microsoft 365 integration, add the AppSource link to your app listing2.
+
+-->
+
 
 Each plan can specify the supported markets, and can have market-specific pricing. Monthly and yearly billing terms are supported, with the customer being able to choose automatic recurrence when they purchase in AppSource. A one-month free trial is also an option for publishers. 
 
