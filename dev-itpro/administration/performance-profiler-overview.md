@@ -14,7 +14,7 @@ author: bholtorf
 
 # Performance Profiler overview
 
-If a business process takes longer than expected, your administrator can use the **Performance Profiler** page in [!INCLUDE [prod_short](../includes/prod_short.md)], sometimes also called the in-client Performance Profiler, to record a snapshot of the process. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed, such as AppSource apps or per-tenant extensions (PTEs). Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself. For more information, see [Viewing technical information](performance-profiler-overview.md#viewing-technical-information).
+If a business process takes longer than expected, your administrator can use the **Performance Profiler** page in [!INCLUDE [prod_short](../includes/prod_short.md)], sometimes also called the in-client Performance Profiler, to record a snapshot of the process. While recording, the profiler monitors all of the apps that are involved in the process. These include first-party apps from Microsoft, such as the Base Application and System Application, and any third-party apps that you have installed, such as AppSource apps or per-tenant extensions (PTEs). Identifying where the holdup is can make it easier to go to the correct support organization or, if you have developers in-house, fix the problem yourself.
 
 ## Invoking the Performance Profiler page
 
