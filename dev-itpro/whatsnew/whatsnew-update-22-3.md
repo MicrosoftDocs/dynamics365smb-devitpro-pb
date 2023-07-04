@@ -32,10 +32,9 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 ## Localization updates
 
 | Country| Feature  |Description|
-|-|-|-|
-| | |
-| | | |
-| | | |
+|-------------|--------------|--------------|
+| Netherlands | Use vendor blocking in telebanking | When a user uses ‘Blocking field’ on the Vendor card, it will have an impact on the payment functionality with telebanking, as this feature is now enabled in the table 'CBG Statement Line'.. |
+
 
 ## Release Plan
 
