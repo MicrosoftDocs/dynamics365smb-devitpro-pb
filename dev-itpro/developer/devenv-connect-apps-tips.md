@@ -3,11 +3,10 @@ title: "Tips for working with the APIs"
 description: Provides some tips about working with Business Central API.
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.custom: na
-ms.date: 04/01/2021
+ms.custom: bap-template
+ms.date: 07/03/2023
 ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
