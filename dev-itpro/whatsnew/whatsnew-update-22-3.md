@@ -24,7 +24,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Auto-update AppSource apps with minor updates](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/experience-improved-app-management-settings)
 - [Include or exclude tables from cloud migration](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/include-or-exclude-tables-cloud-migration)
 - [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
-- Word templates: Close Interactions feature gaps by uptaking new capabilities
+- Word templates: Close Interactions feature gaps by uptaking new capabilities (link coming soon)
 
 
 ## Localization updates
