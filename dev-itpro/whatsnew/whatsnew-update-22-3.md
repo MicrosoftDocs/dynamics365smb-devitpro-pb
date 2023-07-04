@@ -23,6 +23,11 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 - [Business Central is enabled in 31 new countries and regions](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/supporting-more-countriesregions)
 - [Auto-update AppSource apps with minor updates](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/experience-improved-app-management-settings)
 - [Include or exclude tables from cloud migration](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/include-or-exclude-tables-cloud-migration)
+- “Take me there” in (handled) errors overview 
+- “Fix it for me” in (handled) errors overview
+- Word templates: Close Interactions feature gaps by uptaking new capabilities
+- Filtering on app version specific feature keys
+
 
 ## Localization updates
 
