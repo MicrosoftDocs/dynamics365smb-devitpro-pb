@@ -22,7 +22,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 - [Business Central is enabled in 31 new countries and regions](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/supporting-more-countriesregions)
 - [Get unblocked using actionable error messages in select application areas](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/get-unblocked-using-actionable-error-messages-select-application-areas)
-- Word templates: Close Interactions feature gaps by uptaking new capabilities (link coming soon)
 
 
 ## Localization updates
