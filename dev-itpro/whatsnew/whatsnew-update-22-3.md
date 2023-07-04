@@ -45,8 +45,7 @@ Please note that new customers will automatically get the latest builds of Busin
 ## Good to know
 
 ### Business Central newsletter for partners  
-Read the 
-
+On July 6, we published this quarter's newsletter for Business Central partners. The newsletter contains a summary of relevant information related to Business Central. You can find it on  [aka.ms/BCNews](https://aka.ms/BCNews).
 
 ### Upcoming Business Central Office Hours Calls
 
