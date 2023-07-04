@@ -50,13 +50,13 @@ Read the
 
 ### Upcoming Business Central Office Hours Calls
 
-In July, we host the following calls, which you can already register for today:
+In September, we will host the following call, which you can already register for today:
 
-- **September 3:** Performance Troubleshooting Tools
+**September 3:** Performance Troubleshooting Tools
 
-Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
+- Register and stay tuned for upcoming calls: [aka.ms/BCOfficeHours](https://aka.ms/BCOfficeHours).
 
-Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
+- Watch on-demand recordings: [aka.ms/BCOfficeHoursRecordings](https://aka.ms/BCOfficeHoursRecordings). 
 
 ### Looking for an aka.ms link?  
 Are you looking for an aka.ms link, but simply can't find it? Remember that you can find all aka.ms links on [aka.ms/BCLinks](https://aka.ms/BCLinks). Don't forget to bookmark it!
