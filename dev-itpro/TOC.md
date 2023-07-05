@@ -262,7 +262,6 @@
 ### [Escalate support issues to Microsoft](administration/raise-support-case.md)
 ### [Report customer outages](administration/report-outage.md)
 ### [Report a performance issue](administration/report-performance-issue.md)
-### [Analyze performance](administration/performance-profiler-overview.md)
 <!-- end support -->
 ## Automation API
 ### [Overview](administration/itpro-introduction-to-automation-apis.md)
@@ -1151,6 +1150,7 @@
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
+#### [Web service performance](webservices/web-service-performance.md)
 #### [Web service telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
@@ -1158,6 +1158,7 @@
 #### [Best practices](webservices/web-services-best-practices.md)
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [API client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting API calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
@@ -1168,7 +1169,7 @@
 #### [Getting a list of environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
-#### [OData query performance](webservices/odata-client-performance.md)
+#### [OData client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting OData calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
@@ -1246,6 +1247,7 @@
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->
