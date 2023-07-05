@@ -46,13 +46,22 @@ The supported security protocols are controlled by the **SecurityProtocol** conf
 
 ## Telemetry
 
-Outgoing web service request telemetry gathers data about outgoing web service requests sent using the AL HTTPClient data type. This data gives you insight into the execution time and failures that happen in external services that your environment and extensions depend on. You can also use the data to alert on environments or apps for performance issues caused by external services, and be more proactive in preventing issues from occurring.
+[!INCLUDE[httpclientTelemetry](../../../includes/telemetry-outgoing-http.md)] 
 
 For more information, see [Outgoing Web Service Request Telemetry](../../../administration/telemetry-webservices-outgoing-trace.md). 
+
+### Troubleshoot errors
+
+[!INCLUDE[httpclientErrors](../../../includes/errors-outgoing-http.md)] 
+
+#### HTTP status codes
+[!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
+
 
 ## Performance considerations
 
 [!INCLUDE[httpclientPerformance](../../../includes/performance-outgoing-http.md)]
+
 
 ## See also
 

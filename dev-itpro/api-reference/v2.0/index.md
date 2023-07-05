@@ -27,5 +27,6 @@ Before you start using the Business Central APIs, please familiarize yourself wi
 [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use)  
 [Enabling the APIs for Dynamics 365 Business Central](enabling-apis-for-dynamics-nav.md)  
 [Development in AL](/dynamics365/business-central/dev-itpro/developer/devenv-dev-overview)  
+[Analyzing Incoming Web Services Request Telemetry](../../administration/telemetry-webservices-trace.md)  
 [Developing Connect Apps for Dynamics 365 Business Central](/dynamics365/business-central/dev-itpro/developer/devenv-develop-connect-apps)  
 [OpenAPI Specification](dynamics-open-api.md)  

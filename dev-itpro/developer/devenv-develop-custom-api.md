@@ -36,11 +36,11 @@ This walkthrough requires the following:
 
 ## Creating source tables for the API
 
-To expose data in an API page, the first thing needed is a source table. For the purpose of this walkthrough we will create a table object that describes the schema for a car brand.
+To expose data in an API page, the first thing needed is a source table. In this walkthrough, we create a table object that describes the schema for a car brand.
 
 1. Create a new table. For more information, see [Tables Overview](../developer/devenv-tables-overview.md). 
 2. Name the table **Car Brand**, and specify **50100** as the table ID.  
-3. Add any necessary fields for a car brand as shown below:
+3. Add any necessary fields for a car brand as shown in the following code:
 
     ```AL
     table 50100 "Car Brand"
@@ -132,23 +132,24 @@ To expose data in an API page, the first thing needed is a source table. For the
         }
     }
     ```
-> [!TIP]  
+
+> [!TIP]
 > As it can be seen in field number 5 **"Fuel Type"**, make sure to use Enums instead of Options. When they are used in API pages, Options are generated as type strings in the metadata:
 > `<Property Name="fuelType" Type="Edm.String"/>`.
 > <br>Whereas Enums have their own types and all available Enum members are generated in the metadata:
 > `<Property Name="fuelType" Type="Microsoft.NAV.fuelType"/>`.  
 >
 >```AL
->< EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
->            <Member Name="Petrol" Value="0"/>
->            <Member Name="Diesel" Value="1"/>
->            <Member Name="Electric" Value="2"/>
->    </EnumType>
+><EnumType Name="fuelType" Type="Microsoft.NAV.fuelType">
+>    <Member Name="Petrol" Value="0"/>
+>    <Member Name="Diesel" Value="1"/>
+>    <Member Name="Electric" Value="2"/>
+></EnumType>
 > ```
 
 ## Creating API pages
 
-In the following, we will create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with the `PageType` property set to `API`. For more information, see [API Page Type](devenv-api-pagetype.md).
+In the following, we'll create two API pages for both **Car Brand** and **Car Model** tables. API pages are specific pages with the `PageType` property set to `API`. For more information, see [API Page Type](devenv-api-pagetype.md).
 
 ### To create API pages to display **Car Brand** and **Car Model**
 
@@ -156,7 +157,7 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
 2. Name the page **API Car Model**, and specify **50101** as the page ID.  
 3. Specify the **Car Model**  table as the source table.
 4. Specify `APIVersion`, `APIPublisher`, `APIGroup`, `EntityName`, and `EntitySetName` for your API page. These properties will affect your custom endpoint: `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/companies(<company id>)/carModel`. For more information, see [Business Central API endpoints](../api-reference/v2.0/endpoints-apis-for-dynamics.md) and [Calling the API](devenv-develop-connect-apps.md#calling-the-api).
-5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` which are localized and translatable. 
+5. Specify `EntityCaption` and `EntitySetCaption`. These two properties are generated in the entityDefinitions `https://api.businesscentral.dynamics.com/v1.0/<user domain name>/api/<API publisher>/<API group>/<API version>/entityDefinitions` that are localized and translatable. 
 6. Make sure to set the `ODataKeyFields` property to `SystemId`. A SystemId field is a GUID data type field that specifies a unique, immutable (read-only) identifier for records in the table. For more information, see [Table Object](devenv-table-object.md). 
     ```AL
     page 50101 "API Car Model"
@@ -214,6 +215,14 @@ In the following, we will create two API pages for both **Car Brand** and **Car 
         }
     }
     ```
+
+   > [!TIP]
+   > We recommend you always specify a single field of type GUID in the `ODataKeyFields` property, as in the example above. Otherwise, some external integrations such as Power Automate and Power Apps will not work with your new API.
+   >
+   > Only in the case that you're integrating with a system that has different requirements can you specify a list of fields of different types in the `ODataKeyFields` property. For example:
+   > ```AL
+   > ODataKeyFields = Name, "Brand Id";
+   > ```
 
 7. Now, repeat the steps 1-6 for **API Car Brand** page.
 8. You can define an **API Car Model** part on the **API Car Brand** page. Make sure to use the SystemId field when defining the SubPageLink. This will generate the **ReferentialConstraints** property in the metadata as below:  
@@ -436,7 +445,7 @@ Which will result in following response:
 
 ## General tips for custom APIs
 
-1. Use SystemId as the OData primary key.
+1. Use SystemId as the OData key (defined in the `ODataKeyFields` property).
 2. Make sure that all the table fields in TableRelations/SubPageLinks are available in the API pages and make sure to define the relationship multiplicity (1-0/1-1 or 1-N).
     - Doing so enables the platform to generate ReferentialConstraints, that OData consumers can use to understand the relations between entities
     - The platform will also create bi-directional relationship if possible, allowing consumers to access to the parent by just adding “/parentEntity” in the URI

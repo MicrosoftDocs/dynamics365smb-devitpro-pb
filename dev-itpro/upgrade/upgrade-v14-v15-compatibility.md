@@ -6,7 +6,7 @@ ms.author: jswymer
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
-ms.date: 06/02/2023
+ms.date: 06/12/2023
 ms.custom: bap-template
 ---
 
@@ -31,7 +31,7 @@ The following table lists the Business Central 21 versions and the minimum versi
 ----------|----------|
 |21.0 to 21.5|[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)  |
 |[21.6](https://support.microsoft.com/help/5025975)  |[22.1](https://support.microsoft.com/help/5026932) |
-|[21.7](https://support.microsoft.com/help/5026931)|<!--[22.2](https://support.microsoft.com/help/5027892)-->22.2 *coming soon*|
+|[21.7](https://support.microsoft.com/help/5026931)|[22.2](https://support.microsoft.com/help/5027892)|
 |[21.8](https://support.microsoft.com/help/5027891)<sup>[\[1\]](#1)</sup>|22.3|
 
 ## Version 20 compatibility
@@ -48,8 +48,9 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.10](https://support.microsoft.com/help/5023400)|[21.5](https://support.microsoft.com/help/5024403)|22.0|
 |[20.11](https://support.microsoft.com/help/5024402)|[21.6](https://support.microsoft.com/help/5025975)|22.0|
 |[20.12](https://support.microsoft.com/help/5025974)|[21.7](https://support.microsoft.com/help/5026931)|[22.1](https://support.microsoft.com/help/5026932) |
-|[20.13](https://support.microsoft.com/help/5026930)|[21.8](https://support.microsoft.com/help/5027891)|<!--[22.2](https://support.microsoft.com/help/5027892)-->22.2 *coming soon* |
+|[20.13](https://support.microsoft.com/help/5026930)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892)|
 |[20.14](https://support.microsoft.com/help/5027890)<sup>[\[1\]](#1)</sup>|21.9 |22.3 |
+
 ## Version 19 compatibility
 
 The following table lists the Business Central 19 versions and the minimum version of later releases that are compatible for upgrade.
@@ -229,7 +230,7 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.45 (cumulative update 44)](https://support.microsoft.com/help/5023398)|None|None|None|None|[19.17](https://support.microsoft.com/help/5024401)|[20.11](https://support.microsoft.com/help/5024402)|[21.5](https://support.microsoft.com/help/5024403)|22.0|
 |[14.46 (cumulative update 45)](https://support.microsoft.com/help/5024400)|None|None|None|None|[19.18](https://support.microsoft.com/help/5025973)|[20.12](https://support.microsoft.com/help/5025974)|[21.6](https://support.microsoft.com/help/5025975)|22.0|
 |[14.47 (cumulative update 46)](https://support.microsoft.com/help/5025972)|None|None|None|None|None|[20.13](https://support.microsoft.com/help/5026930) |[21.7](https://support.microsoft.com/help/5026931) |[22.1](https://support.microsoft.com/help/5026932) |
-|[14.48 (cumulative update 47)](https://support.microsoft.com/help/5026929)|None|None|None|None|None|[20.14](https://support.microsoft.com/help/5027890)|[21.8](https://support.microsoft.com/help/5027891)|<!--[22.2](https://support.microsoft.com/help/5027892)-->22.2 *coming soon* |
+|[14.48 (cumulative update 47)](https://support.microsoft.com/help/5026929)|None|None|None|None|None|[20.14](https://support.microsoft.com/help/5027890)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892) |
 |[14.49 (cumulative update 48)](https://support.microsoft.com/help/5026929)<sup>[\[1\]](#1)</sup>|None|None|None|None|None|20.15|21.9 |22.3 |
 
 For example, you can upgrade version 14.0 to any 15 or 16 version. You can only upgrade version 14.11 to version 15.5 (or later) or version 16.0 (or later).  

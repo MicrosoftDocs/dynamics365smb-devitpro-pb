@@ -4,7 +4,7 @@ description: Delta links are opaque, service-generated links that the client use
 author: SusanneWindfeldPedersen
 ms.author: solsen
 ms.custom: bap-template
-ms.date: 03/20/2023
+ms.date: 06/16/2023
 ms.reviewer: na
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -84,7 +84,7 @@ The response would return with the specified changes in the result, see the foll
    It's recommended to use webhooks instead. For more information about the use of webhooks, see [Working with Webhooks in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-subscriptions.md).
 
 > [!NOTE]
-> Starting in Business Central 2023 release wave 1 (v22), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
+> Starting in Business Central 2023 release wave 2 (v23), delta links are deprecated and will be removed from the product in 2024 release wave 1 (v24). We recommend using webhooks as a replacement. For more information, see [Deprecated Features in the Platform](../upgrade/deprecated-features-platform.md).
 
 ## See Also
 [Developing Connect Apps for Dynamics 365 Business Central](devenv-develop-connect-apps.md)  

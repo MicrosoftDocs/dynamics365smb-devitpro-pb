@@ -172,3 +172,4 @@ You can set up extensions to emit telemetry to an Application Insights resource 
 [Get Started with AL](devenv-get-started.md)  
 [Publishing and Installing Extensions](devenv-how-publish-and-install-an-extension-v2.md)  
 [Configuring Business Central Server](../administration/configure-server-instance.md)  
+[App Key Vault Telemetry](../administration/telemetry-extension-key-vault-trace.md)  
