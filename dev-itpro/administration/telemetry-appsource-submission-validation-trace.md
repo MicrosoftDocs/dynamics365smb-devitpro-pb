@@ -24,7 +24,7 @@ If an app's set up for it, telemetry traces are emitted to and recorded in Appli
 
 ## Validation process overview
 
-The validation process starts when you publish the app. The validation runs against each extension in the app, for each country (market) specified for the offer in Partner Center, and for each Business Central version that the submissions targets. For more information versions, see [Against which releases of Business Central is your submission validated?](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
+The validation process starts when you publish the app. The validation runs against each extension in the app, for each country/region (market) specified for the offer in Partner Center, and for each Business Central version that the submissions targets. For more information versions, see [Against which releases of Business Central is your submission validated?](../developer/devenv-checklist-submission.md#against-which-releases-of-business-central-is-your-submission-validated).
 
 Extensions are validated using the AL compiler and the [AppSourceCop code analyzer](../developer/devenv-using-code-analysis-tool.md). Traces are emitted at different phases during the process. Each submission is assigned a unique identifier (ID). This ID is included in each trace for a submission, allowing you to query all trace related to the submission. The general flow for the validation process is illustrated below:
 
@@ -79,7 +79,7 @@ The following table explains other custom dimensions that are common to all AppS
 
 ## <a name="submissionrequestdiagnostic"></a>Diagnostic reported on AppSource submission validation request
 
-Occurs during the submission validation request to report diagnostics related to the submission itself. For example, it could be that a submission has duplicate apps, or it doesn't target any Business Central release. This signal isn't necessarily an error, but can also be warning or information. This signal differs from other diagnostic signals like `LC0034`, which are reported during the compilation of one app for one country/release.
+Occurs during the submission validation request to report diagnostics related to the submission itself. For example, it could be that a submission has duplicate apps, or it doesn't target any Business Central release. This signal isn't necessarily an error, but can also be warning or information. This signal differs from other diagnostic signals like `LC0034`, which are reported during the compilation of one app for one country/region release.
 
 ### General dimensions
 
@@ -101,7 +101,7 @@ Occurs during the submission validation request to report diagnostics related to
 
 ## <a name="versioncountrystarted"></a>(Version, country-region) validation started
 
-Occurs when the validation has started for a specific version and country.
+Occurs when the validation has started for a specific version and country/region.
 
 ### General dimensions
 
@@ -258,7 +258,7 @@ Occurs when the validation for a specific extension the submission has completed
 
 ## <a name="versioncountrycompleted"></a>(Version, country-region) validation completed successfully
 
-Occurs when the validation has completed for a specific version and country, and no errors occurred.
+Occurs when the validation has completed for a specific version and country/region, and no errors occurred.
 
 ### General dimensions
 
@@ -286,7 +286,7 @@ Occurs when the validation has completed for a specific version and country, and
 
 ## <a name="versioncountryvalidationcompletedwithfailures"></a>(Version, country-region) validation completed with failures
 
-Occurs when the validation has completed for a specific version and country, and errors occurred.
+Occurs when the validation has completed for a specific version and country/region, and errors occurred.
 
 ### General dimensions
 

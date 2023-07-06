@@ -26,7 +26,7 @@ If your fiscal year is different than the calendar, you can measure your fiscal 
 You can use Bankers' Automated Clearing Service (BACS) to process financial transactions electronically. To do so, you must export vendor payments to a BACS file using the Export BACS option.
 
 |Moved, Removed, or Replaced?| Why?|
-|----|----|
+|----|----|S
 | Removed | This banking format standard is no longer used. This functionality is now covered by extensions such as the Envestnet Yodlee Bank Feeds, AMC Banking, and various other formats. |
 
 <!-- THIS WORK DID NOT GET DONE. EXPECT IT TO COME IN A FUTURE UPDATE
@@ -35,7 +35,7 @@ To let you use more than one interest rate to calculate finance charges for a sp
 
 |Moved, Removed, or Replaced?|Why?|
 |----|----|
-|Moved| This functionality is also available to countries such as NO, SE, FI, and IT, so we have removed the country-specific designation so that it's available to everyone.|
+|Moved| This functionality is also available to countries/regionsS such as NO, SE, FI, and IT, so we have removed the country-specific designation so that it's available to everyone.|
 -->
 
 <!-- THIS WORK DID NOT GET DONE. EXPECT IT TO COME IN A FUTURE UPDATE
