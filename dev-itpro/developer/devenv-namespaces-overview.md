@@ -19,8 +19,6 @@ A .al file declares a namespace at the beginning of the file, and all objects in
 
 When objects are resolved, they're resolved using the closest scope first. Therefore, to resolve to a similar named object in a dependent extension, the reference must use a fully qualified name. Alternatively, it's possible to define `using` directives to refer external namespaces and avoid fully qualified names for references to objects in those. <!-- check -->
 
-Nested namespaces allow for better naming of objects than having to express the full structure in the 30 character object name. 
-
 > [!IMPORTANT]  
 > Renaming existing names is a breaking change, therefore namespaces can only help with logical structure for existing objects.
 
@@ -55,13 +53,18 @@ namespace MyOtherNamespace;
 
 ## Nested namespaces
 
-A nested namespace is a namespace that's declared within another namespace. The following example shows a nested namespace declaration of `MyNestedNamespace` within the `MyNamespace` namespace.
+A nested namespace is a namespace that's declared within another namespace. Nested namespaces allow for better and more structured naming of objects compared to having to express the full structure in the 30 character object name. The following example shows a nested namespace declaration of `MyNestedNamespace` within the `MyNamespace` namespace.
 
 ```al
 namespace MyNamespace.MyNestedNamespace;
 
 ```
 
+In the example, the fully qualified name of the namespace is `MyNamespace.MyNestedNamespace`. To refer to objects in the `MyNestedNamespace` namespace, you must then use the fully qualified name, or the `using` directive, which is
+
+```al
+using MyNamespace.MyNestedNamespace
+```
 
 > [!TIP]  
 > Use code actions to help add namespaces to existing source. For more information, see [Code actions](devenv-code-actions.md).
