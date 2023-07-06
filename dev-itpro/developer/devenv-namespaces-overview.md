@@ -35,7 +35,9 @@ namespace MyNamespace;
 
 ```
 
-Now, to refer to the objects in the `MyNamespace`, you must use the fully qualified name, or the `using` directive. For more information, see [Using directive](devenv-namespaces-overview.md#using-directive).
+Now, to refer to the objects in the `MyNamespace`, you must either use the fully qualified name, or the `using` directive. For more information, see [Using directive](devenv-namespaces-overview.md#using-directive).
+
+To declare more objects in the same namespace, you can use the same namespace declaration in other .al files. All code files that use the same namespace declaration belong to the same namespace.
 
 > [!NOTE]  
 > It's a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
