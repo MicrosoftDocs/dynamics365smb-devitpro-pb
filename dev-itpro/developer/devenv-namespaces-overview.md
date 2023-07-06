@@ -31,8 +31,12 @@ To declare a namespace in AL, you must use the `namespace` keyword followed by t
 ```al
 namespace MyNamespace;
 
-codeunit
+// codeunits, tables, pages.... 
+
 ```
+
+> [!NOTE]  
+> It's a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
 
 ## Using directive
 
