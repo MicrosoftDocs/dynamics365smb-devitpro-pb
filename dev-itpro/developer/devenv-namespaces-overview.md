@@ -35,12 +35,14 @@ namespace MyNamespace;
 
 ```
 
+Now, to refer to the objects in the `MyNamespace`, you must use the fully qualified name, or the `using` directive. For more information, see [Using directive](devenv-namespaces-overview.md#using-directive).
+
 > [!NOTE]  
 > It's a best practice to separate objects into different files, and to use the same name for the file as the object. For more information, see [Best Practices for AL code](../compliance/apptest-bestpracticesforalcode.md).
 
 ## Using directive
 
-To refer to objects in other namespaces, you can use the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, before any namespace declaration. The following example shows a `using` directive.
+To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, before any namespace declaration. The following example shows a `using` directive.
 
 ```al
 
