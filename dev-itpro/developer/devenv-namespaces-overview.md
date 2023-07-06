@@ -60,11 +60,13 @@ namespace MyNamespace.MyNestedNamespace;
 
 ```
 
-In the example, the fully qualified name of the namespace is `MyNamespace.MyNestedNamespace`. To refer to objects in the `MyNestedNamespace` namespace, you must then use the fully qualified name, or the `using` directive, which is
+In the example, the fully qualified name of the namespace is `MyNamespace.MyNestedNamespace`. To refer to objects in the `MyNestedNamespace` namespace, you must then use the fully qualified name, or the `using` directive. So, to be able to access objects that are declared in the MyNestedNamespace, include the following statement in your code
 
 ```al
 using MyNamespace.MyNestedNamespace
 ```
+
+<!-- update on best practices article, on al explorer, code actions -->
 
 > [!TIP]  
 > Use code actions to help add namespaces to existing source. For more information, see [Code actions](devenv-code-actions.md).
