@@ -19,13 +19,16 @@ A .al file defines a namespace at the beginning of the file, and all objects in 
 
 When objects are resolved, they're resolved using the closest scope first. Therefore, to resolve to a similar named object in a dependent extension, the reference must use a fully qualified name. Alternatively, it's possible to define `using` directives to refer external namespaces and avoid fully qualified names for references to objects in those.
 
-<!--
-As namespaces are useful for logical segmentation of extensions, the [AL Explorer](devenv-al-explorer.md) allows grouping objects by namespace, making it easier to find related objects. -->
-
 Nested namespaces allow for better naming of objects than having to express the full structure in the 30 character object name. 
 
 > [!IMPORTANT]  
 > Renaming existing names is a breaking change, therefore namespaces can only help with logical structure for existing objects.
+
+## Namespace syntax
+
+To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. The namespace must be unique within the extension. The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. The following example shows a namespace declaration:
+
+
 
 > [!TIP]  
 > Use code actions to help add namespaces to existing source. For more information, see [Code actions](devenv-code-actions.md).
