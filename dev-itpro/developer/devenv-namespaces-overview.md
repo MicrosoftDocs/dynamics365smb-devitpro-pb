@@ -26,10 +26,12 @@ Nested namespaces allow for better naming of objects than having to express the 
 
 ## Namespace syntax
 
-To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. The namespace name must be unique within the extension. The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. The following example shows a namespace declaration:
+To declare a namespace in AL, you must use the `namespace` keyword followed by the name of the namespace. The namespace name must be unique within the extension. The namespace name can be any valid AL identifier, and it can contain dots to indicate a hierarchy of namespaces. The following example shows a namespace declaration. All of the objects declared in the code file belong to the namespace `MyNamespace`.
 
 ```al
-namespace MyNamespace
+namespace MyNamespace;
+
+codeunit
 ```
 
 ## Using directive
@@ -42,6 +44,13 @@ using MyNamspace
 ```
 
 ## Nested namespaces
+
+A nested namespace is a namespace that's declared within another namespace. The following example shows a nested namespace declaration of `Environment` within the `System` namespace.
+
+```al
+namespace System.Environment;
+
+```
 
 
 > [!TIP]  
