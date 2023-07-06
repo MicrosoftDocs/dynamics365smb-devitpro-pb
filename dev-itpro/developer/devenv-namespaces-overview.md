@@ -17,7 +17,7 @@ Namespaces are used to organize code into logical groups and hierarchies, which 
 
 A .al file declares a namespace at the beginning of the file, and all objects in the code file belong to that namespace. A given object can only belong to one namespace, but the same namespace can be used for multiple .al files, which means for multiple objects.
 
-When objects are resolved, they're resolved using the closest scope first. Therefore, to resolve to a similar named object in a dependent extension, the reference must use a fully qualified name. Alternatively, it's possible to define `using` directives to refer external namespaces and avoid fully qualified names for references to objects in those.
+When objects are resolved, they're resolved using the closest scope first. Therefore, to resolve to a similar named object in a dependent extension, the reference must use a fully qualified name. Alternatively, it's possible to define `using` directives to refer external namespaces and avoid fully qualified names for references to objects in those. <!-- check -->
 
 Nested namespaces allow for better naming of objects than having to express the full structure in the 30 character object name. 
 
@@ -44,19 +44,21 @@ To declare more objects in the same namespace, you can use the same namespace de
 
 ## Using directive
 
-To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, before any namespace declaration. The following example shows a `using` directive.
+To refer to objects in other namespaces, you can either use the fully qualified name, or the `using` directive. The `using` directive is used to refer to objects in other namespaces without having to use the fully qualified name. The `using` directive is placed at the top of the .al file, *before* any namespace declaration. The following example shows a `using` directive.
 
 ```al
+using MyNamespace
 
-using MyNamspace
+namespace MyOtherNamespace;
+
 ```
 
 ## Nested namespaces
 
-A nested namespace is a namespace that's declared within another namespace. The following example shows a nested namespace declaration of `Environment` within the `System` namespace.
+A nested namespace is a namespace that's declared within another namespace. The following example shows a nested namespace declaration of `MyNestedNamespace` within the `MyNamespace` namespace.
 
 ```al
-namespace System.Environment;
+namespace MyNamespace.MyNestedNamespace;
 
 ```
 
