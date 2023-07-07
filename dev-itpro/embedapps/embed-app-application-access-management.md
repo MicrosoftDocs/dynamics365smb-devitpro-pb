@@ -34,7 +34,7 @@ Follow these steps to provide your VARs with access to the Application Access Ma
 
 - Prepare the VAR for the change
 
-    Once you enable application access management in your LCS project, any existing customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will be blocked from access to their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments by default. It also won't be possible to create new environments based on your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] application for any new or existing customers. The VAR will have to explicitly enable the access for each customer by using the API explained in the section below. Make sure you coordinate this change with your VARs.
+    Once you enable application access management in your LCS project, any existing customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] will be blocked from access to their [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments and will be unable to create new [!INCLUDE[embedapp](../developer/includes/embedapp.md)] environments if the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] has not already been enabled on their tenant. Make sure to  coordinate enabling the [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on customer tenants with your VARs before you enable the application access management setting in your LCS project.
 
 - Get the VAR's CSP organizational ID (Microsoft ID). You'll need this ID for registration.
 
@@ -47,7 +47,7 @@ Follow these steps to provide your VARs with access to the Application Access Ma
 3. On the **Manage VARs access** page, specify if VARs must be able to approve customers.
 
     > [!IMPORTANT]
-    > This step enables application access management. Once you have allowed VARs to approve customers, it won't take effect until you save the change. Be aware that once you save, any existing VAR customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and any new customers will be blocked from access by default, until the VAR explicitly enables the app for them.
+    > This step enables application access management. Once you have allowed VARs to approve customers, it won't take effect until you save the change. Be aware that once you save, any existing VAR customers already using your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] without previously enabling this on their tenant and any new customers will be blocked from access by default, until the VAR explicitly enables the app for them. We recommend that you enable your [!INCLUDE[embedapp](../developer/includes/embedapp.md)] on your customer tenants before you enable application access management in LCS.
 
 4. Now you start to register VARs. Select **+Add**.
 5. On the **Register new VAR Tenant**, enter the VAR's Microsoft ID in the **Tenant ID** box.
