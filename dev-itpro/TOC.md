@@ -1,5 +1,5 @@
 ﻿# [Development and administration](index.md)
-# [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
+# [New and planned](whatsnew/overview.md)
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -67,6 +67,7 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [What's new or changed](whatsnew/overview.md)
 ### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
 ### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
@@ -1150,6 +1151,7 @@
 #### [Authentication](webservices/web-services-authentication.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
+#### [Web service performance](webservices/web-service-performance.md)
 #### [Web service telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
@@ -1157,6 +1159,7 @@
 #### [Best practices](webservices/web-services-best-practices.md)
 ### APIs
 #### [Overview](webservices/api-overview.md)
+#### [API client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting API calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
@@ -1167,7 +1170,7 @@
 #### [Getting a list of environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
-#### [OData query performance](webservices/odata-client-performance.md)
+#### [OData client performance](webservices/odata-client-performance.md)
 #### [Troubleshooting OData calls](api-reference/v2.0/dynamics-error-codes.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
@@ -1245,6 +1248,7 @@
 <!-- Microsoft Power BI -->
 ## Integrating with Microsoft Power BI
 ### [Extract data from Business Central](developer/devenv-extract-data.md)
+### [Power BI dataset load performance](webservices/web-service-pbi-performance.md)
 ### [Add Power BI Report parts to pages](developer/devenv-power-bi-report-parts.md)
 <!-- end Microsoft Power BI -->
 <!-- Microsoft Power Platform -->

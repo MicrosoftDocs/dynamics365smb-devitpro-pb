@@ -78,6 +78,7 @@ For more information, see [Failed updates and rescheduling](update-rollout-timel
 
 ## See also
 
+[What's new or changed in Business Central](../whatsnew/overview.md)  
 [Major Updates of Business Central Online](update-rollout-timeline.md)  
 [Prepare for major updates with preview environments](preview-environments.md)  
 [Working with Administration Tools](administration.md)  

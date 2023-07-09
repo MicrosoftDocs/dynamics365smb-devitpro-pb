@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: administration, tenant, admin, environment, sandbox, update, flag, keys
-ms.date: 08/18/2022
+ms.date: 07/07/2023
 ms.author: jswymer
 ---
 
@@ -209,6 +209,7 @@ These updates do not add or remove functionality, and they are transparent to bu
 [The Business Central Administration Center](tenant-admin-center.md)  
 [Managing Environments](tenant-admin-center-environments.md)  
 [Managing Tenant Notifications](tenant-admin-center-notifications.md)  
-[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)
+[Introduction to automation APIs](itpro-introduction-to-automation-apis.md)  
+[What's new or changed in Business Central](../whatsnew/overview.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

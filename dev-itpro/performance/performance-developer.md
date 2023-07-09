@@ -2,7 +2,7 @@
 title: Performance article for developers
 description: Provides information for developers to help improve performance in Business Central
 ms.custom: bap-tremplate
-ms.date: 06/19/2023
+ms.date: 03/07/2023
 ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
@@ -16,7 +16,7 @@ In this article, you can read about ways to tune performance when developing for
 
 - [Writing efficient pages](performance-developer.md#writing-efficient-pages)  
 - [Writing efficient Web Services](performance-developer.md#writing-efficient-web-services)  
-- [Writing efficient reports](performance-developer.md#writing-efficient-reports)  
+- [Writing efficient reports](performance-developer.md#writing-efficient-al-reports)  
 - [AL performance patterns](performance-developer.md#al-performance-patterns)  
 - [Efficient Data access](performance-developer.md#efficient-data-access)  
 - [Testing and validating performance](performance-developer.md#testing-and-validating-performance)  
@@ -59,68 +59,27 @@ The **Edit in Excel** feature uses UI pages exposed through OData, which means t
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)]  supports for Web services to make it easier to integrate with external systems. As a developer, you need to think about performance of web services both seen from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server (the endpoint) and as seen from the consumer (the client). 
 
-
-
 ### Endpoint performance
 
-#### Anti-patterns (don't do this)
+#### General anti-patterns (don't do this)
 
-Avoid using standard UI pages to expose as web service endpoints. Many things, such as fact boxes, aren't returned in web service results, but use resources to prepare.
-
-Things that have historically caused performance issues on pages that are exposed as endpoints are:
-
-- Heavy logic in `OnAfterGetCurrRecord` or `OnAfterGetRecord`
-- Many SIFT fields
-- FactBoxes
-
-Avoid exposing calculated fields, because calculated fields are expensive. Try to move them to a separate page or to refactor the code so the value is stored on the physical table (if applicable). Complex types are also a performance hit because they take time to calculate. 
-
-Don't use temp tables as a source if you have many records. Temp tables that are based on APIs are a performance hit. The server has to fetch and insert every record, and there's no caching on data in temp tables. Paging becomes difficult to do in a performant manner. A rule of thumb is if you have more than 100 records, don't use temp tables.
-
-Don't insert child records belonging to same parent in parallel. This condition causes locks on parent and Integration Record tables because parallel calls try to update the same parent record. The solution is to wait for the first call to finish or use $batch, which will make sure calls get executed one after another.
-
-Don't use a deprecated protocol such as SOAP. Instead, utilize newer technology stacks such as OData, or preferably API pages/queries. The latter are up to 10 times faster than using the SOAP protocol. One way to migrate from SOAP towards OData is to utilize OData unbound actions. For more information, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+[!INCLUDE[perf_ws_antipatterns](../includes/include-webservices-performance-anti-patterns.md)]
 
 #### Performance patterns (do this)
 
-- Instead of exposing UI pages as web service endpoints, use the API pages or API queries because they've been optimized for this scenario. Select the highest API version available. Don't use the beta version of the API pages. To read more about API pages, see [API Page Type](../developer/devenv-api-pagetype.md).
+[!INCLUDE[perf_ws_patterns](../includes/include-webservices-performance-patterns.md)]
 
-- If you do expose UI pages as web service endpoints as web service endpoints, then triggers need to be run for all records returned from the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. As a developer, you need to make your AL code conditional on the ClientType. Specifically, avoid updating FactBoxes, avoid calculation, and avoid defaulting logic.
+### API/OData client performance patterns
 
-- The choice of protocol (SOAP, OData, or APIs) for the endpoint can have a significant impact on performance. Favor OData version 4 or APIs for the best performance. It's possible to expose procedures in a codeunit as an OData end point using unbound actions. To read more about OData unbound actions, see [Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md).
+[!INCLUDE[perf_ws_odata_patterns](../includes/include-webservices-odata-performance-patterns.md)]
 
-- If you want OData endpoints that work as data readers (like for consumption in Power BI), consider using API queries and set `DataAccessIntent = ReadOnly`. For more information, see [API Query Type](../developer/devenv-api-querytype.md) and [DataAccessIntent Property](../developer/properties/devenv-dataaccessintent-property.md).
+### How to handle large throughput of web service calls
 
-### OData Performance patterns
+[!INCLUDE[perf_ws_throughput](../includes/include-webservices-throughput-performance-patterns.md)]
 
-When calling OData web services, there are many strategies that you can use to speed up your queries
-- Limiting the set ($filter or $top) if you're using an expensive $expand statement
-- Using OData transaction $batch
-- Using Data Access Intent Read-only with OData
+## Performance patterns for business intelligence and reporting
 
-For more information about OData query performance, see [OData Query Performance](../webservices/odata-client-performance.md).
-
-### How to handle large volumes of web service calls
-When integrating to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] from external systems using web services, it's important to understand the operational limits for the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] servers that host the web service endpoints being called. To ensure that excessive traffic doesn't cause stability and performance issues for all users, the online version of [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server has set up throttling limits on web service endpoints.
-
-Make sure that your external application can handle the three HTTP status codes *429 (Too Many Requests)*, *503 (Service Temporarily Unavailable)*, and *504 (Gateway Timeout)*.
-
-- Handling status codes 429 and 503 requires the client to adopt a retry logic while providing a cool off period. You can apply different strategies, like:
-
-    - Regular interval retry
-    - Incremental intervals retry
-    - Exponential back-off
-    - Randomization
-
-- Handling status code 504 - Gateway Timeout requires the client to refactor the long running request to execute within time limit by splitting the request into multiple requests. Then, deal with potential 429 codes by applying a back off strategy.
-
-A common pattern is to implement a queue in your external application so that you can flatten spikes of traffic. If a request gets the HTTP status code *429 (Too Many Requests)* or *503 (Service Temporarily Unavailable)*, then put it back in the queue and apply one of the retry strategies described previously.
-
-Read more about web service limits, see [Working with API limits in Dynamics 365 Business Central](../api-reference/v2.0/dynamics-rate-limits.md).
-
-The same advice applies for outgoing web service calls using the AL module HttpClient. Make sure your AL code can handle slow response times, throttling, and failures in external services that you integrate with.
-
-## Writing efficient reports
+### Writing efficient AL reports
 
 Reports generally fall into two categories. They can be specific to a single instance of an entity, like an invoice. Or, they can be of a more analytical nature that joins data from multiple instances of multiple entities. Typically, performance issues in reports lie in the latter category. The following articles contain advice about implementing faster reports: 
 
@@ -130,11 +89,16 @@ Reports generally fall into two categories. They can be specific to a single ins
 - Compared to Word layouts, RDL layouts can result in slower performance with document reports, especially for actions related to the user interface (like sending emails). For more information, see [Creating an RDL Layout Report](../developer/devenv-howto-rdl-report-layout.md).
 
 Read more about how to tune RDL reports here:
+
 - [RDLC Performance Optimization Tips](https://community.dynamics.com/business/b/navteam/posts/a-couple-of-rdlc-performance-optimization-tips)
 
 [!INCLUDE [send-report-excel](../developer/includes/send-report-excel.md)]
 
-## Efficient extracts to data lakes or data warehouses
+### Loading data efficiently to Power BI
+
+[!INCLUDE[perf_ws_pbi_patterns](../includes/include-webservices-pbi-performance-patterns.md)]
+
+### Efficient extracts to data lakes or data warehouses
 
 When establishing a data lake or a data warehouse, you typically need to do two types of data extraction:
 
@@ -167,7 +131,6 @@ Use a `List` data type if you need an unbound "array" (where you would previousl
 
 Use the `Media` or `Mediaset` data types instead of the `Blob` data type. The `Media` and `MediaSet` data types have a couple advantages over the `Blob` data type when working with images. First of all, a thumbnail version of the image is generated when you save the data. You can use the thumbnail when loading a page and then load the larger image asynchronously using a page background task. Second, data for `Media` and `MediaSet` data types is cached on the client. Data for the `Blob` data type is never cached on the server. It's always fetched from the database.
 
-
 ### <a name="runasync"></a>Pattern - Run async (and parallelize)
 
 It's often desirable to offload AL execution from the UI thread to a background session. 
@@ -193,8 +156,7 @@ They come with different characteristics as described in this table:
 | Task                      | Queued up <br> Any server in a cluster can start it <br> Survives server restarts <br> No logging | 
 | Job queue                 | Scheduled <br> Recurrence <br> Any server in a cluster can start it <br> Survives server restarts <br> Logging of results |
 
-
-### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping 
+### <a name="setbasedmethods"></a>Pattern - Use set-based methods instead of looping
 
 The AL methods such as `FindSet`, `CalcFields`, `CalcSums`, and `SetAutoCalcFields` are examples of set-based operations that are faster than looping over a result set and do the calculation for each row.
 
@@ -266,17 +228,17 @@ Table events change the behavior of SQL optimizations on the [!INCLUDE[server](.
 - The [!INCLUDE[server](../developer/includes/server.md)] will issue SQL update/delete statements row in a for loop rather than one SQL statement.
 - They impact `ModifyAll` and `DeleteAll` methods that normally do bulk SQL operations to be forced to do single row operations.
 
-
 ### Outgoing web service calls block AL execution
 
 [!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
 
 ### Limit work done in login event subscribers
+
 The events _OnCompanyOpen_ and _OnCompanyOpenCompleted_ are raised every time a session is created. Only when the code for all event subscribers on these events has completed can the session start running AL code. Until code has completed completed, the session creation process will wait. For interactive sessions, the user will see a spinner. Web service calls (SOAP, OData, or API) or background sessions (job queue, scheduled tasks, page background tasks) will not start running.
 
-This behavior means that you must design such code in a way that is minimally intrusive, for example, set low timeouts for outgoing web service calls. 
+This behavior means that you must design such code in a way that is minimally intrusive, for example, set low timeouts for outgoing web service calls.
 
-If you have enabled telemetry for your environment or app, you can use this KQL query to analyze how session creation time is delayed by calls to external services. 
+If you have enabled telemetry for your environment or app, you can use this KQL query to analyze how session creation time is delayed by calls to external services.
 
 ```Kusto
 traces
@@ -305,7 +267,8 @@ Many performance issues are related to how data is defined, accessed, and modifi
 Many performance issues can be traced back to missing indexes (also called keys in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]), but index design is often not a key skill for AL developers. For best performance, even with large amounts of data, it's imperative to design appropriate indexes according to the way your code will access data. 
 
 These articles on indexing are worth knowing as an AL developer:
-- [About Table Keys](../developer/devenv-table-keys.md) 
+
+- [About Table Keys](../developer/devenv-table-keys.md)
 - [Table Keys and Performance in Business Central](../administration/optimize-sql-table-keys-and-performance.md)  
 - [About SQL Server indexes](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described)
 - [Missing Indexes](../administration/database-missing-indexes.md)
@@ -313,18 +276,22 @@ These articles on indexing are worth knowing as an AL developer:
 Indexes have a cost to update, so it's recommended to not add too many of them on a table. 
 
 ### Using data audit fields to only read recent data
+
 Every table in [!INCLUDE[prod_short](../developer/includes/prod_short.md)]) includes the following two system fields, which can be used for filtering records:
+
 - `SystemCreatedAt`
 - `SystemModifiedAt`
 
 One example is to use the system field `SystemModifiedAt` to implement delta reads. For more information about system fields, see [System Fields](../developer/devenv-table-system-fields.md).  
 
 ### Non-clustered Columnstore Indexes (NCCI)
+
 Starting in the 2021 release wave 2 of [!INCLUDE[prod_short](../developer/includes/prod_short.md)], non-clustered columnstore indexes (sometimes referred to as NCCIs) are supported on tables. 
 
 You can use a non-clustered columnstore index to efficiently run real-time operational analytics on the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] database without the need to define SIFT indexes up front (and without the locking issues that SIFT indexes sometimes impose on the system.)
 
 Read more about non-clustered columnstore indexes here:
+
 - [ColumnStoreIndex table property](../developer/properties/devenv-columnstoreindex-property.md)
 - [Columnstore indexes overview](/sql/relational-databases/indexes/columnstore-indexes-overview)
 
@@ -371,6 +338,7 @@ Sometimes, performance issues aren't due to resource starvation, but due to proc
 Using the `Record.LockTable` method, this will apply the `WITH (updlock)` hint on all subsequent calls to the database until the transaction is committed, not only on the table that the record variable is defined on, but on all calls to the database. Hence, it's good practice to defer the `Record.LockTable` call as late as possible in your AL code, to make sure that only the data that is in scope for being updated, is locked. Read more here: [Record.LockTable Method](../developer/methods-auto/record/record-locktable-method.md)
 
 Some tips for avoiding locking:
+
 -	Read setup information before starting write transactions
 -	If possible, limit the time you hold locks
 -	If possible, limit transaction size (divide into smaller operations that can be committed)
