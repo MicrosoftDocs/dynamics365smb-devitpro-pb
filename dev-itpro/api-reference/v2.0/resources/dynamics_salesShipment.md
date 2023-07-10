@@ -59,19 +59,19 @@ Represents a sales shipment in [!INCLUDE[prod_short](../../../includes/prod_shor
 |sellToAddressLine1|string|Sell to address line 1.|
 |sellToAddressLine2|string|Sell to address line 2.|
 |sellToCity|string|Sell to city.|
-|sellToCountry|string|Sell to country/region.|
+|sellToCountry|string|Sell to country.|
 |sellToState|string|Sell to state.|
 |sellToPostCode|string|Sell to post code.|
 |billToAddressLine1|string|Bill to address line 1.|
 |billToAddressLine2|string|Bill to address line 2.|
 |billToCity|string|Bill to city.|
-|billToCountry|string|Bill to country/region.|
+|billToCountry|string|Bill to country.|
 |billToState|string|Bill to state.|
 |billToPostCode|string|Bill to post code.|
 |shipToAddressLine1|string|Ship to address line 1.|
 |shipToAddressLine2|string|Ship to address line 2.|
 |shipToCity|string|Ship to city.|
-|shipToCountry|string|Ship to country/region.|
+|shipToCountry|string|Ship to country.|
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
 |currencyCode|string|The default currency code for the sales shipment.|

@@ -37,7 +37,7 @@ Represents a vendor in [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 |displayName|string|Specifies the vendor's name. This name will appear on all sales documents for the vendor.|
 |city|string|Specifies the vendor's city.|
 |state|string|Specifies the vendor's state.|
-|country|string|Specifies the vendor's country/region.|
+|country|string|Specifies the vendor's country.|
 |postalCode|string|Specifies the vendor's postal code.|
 |currencyCode|string|The default currency code for the vendor.|
 |paymentTermsId|GUID|Specifies which payment term the vendor uses.|

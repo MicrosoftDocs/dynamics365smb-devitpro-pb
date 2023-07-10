@@ -58,17 +58,17 @@ Represents a purchase receipt in [!INCLUDE[prod_short](../../../includes/prod_sh
 |buyFromCity|string|Buy from city.|
 |buyFromCountry|string|Buy from state.|
 |buyFromState|string|Buy from state.|
-|buyFromPostCode|string|Buy from country/region.|
+|buyFromPostCode|string|Buy from country.|
 |shipToAddressLine1|string|Ship to address line 1.|
 |shipToAddressLine2|string|Ship to address line 2.|
 |shipToCity|string|Ship to city.|
-|shipToCountry|string|Ship to country/region.|
+|shipToCountry|string|Ship to country.|
 |shipToState|string|Ship to state.|
 |shipToPostCode|string|Ship to post code.|
 |payToAddressLine1|string|Pay to address line 1.|
 |payToAddressLine2|string|Pay to address line 2.|
 |payToCity|string|Pay to address line 2.|
-|payToCountry|string|Pay to country/region.|
+|payToCountry|string|Pay to country.|
 |payToState|string|Pay to state.|
 |payToPostCode|string|Pay to post code.|
 |currencyCode|string|The default currency code for the purchase receipt.|
