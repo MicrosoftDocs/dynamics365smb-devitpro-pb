@@ -24,8 +24,7 @@ Keep track of changes on the [Dynamics 365 Business Central release planner](htt
 Explore the app at the [Dynamics 365 Business Central Capabilities](https://dynamics.microsoft.com/business-central/overview/) site.
 
 ## Releases of Dynamics 365 Business Central
-<!--H2. Optional. Replace "Dynamics 365 Business Central" with product name.-->
-<!-- This section is optional, unless the app already has page either in docs or or support.microsoft.com or similar that list the bugs that are fixed for each version. Remember to update with the actual app name and link to where ever the relevant lists of what's in each update are published for that app. In this template, the HR app publishes these lists in the docs. That's not true for all apps. -->
+
 Learn more about what's new or changed in recent releases in the links in the following table.
 
 | Version | Build number | Update availability | Learn more |
