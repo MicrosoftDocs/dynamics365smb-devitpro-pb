@@ -13,7 +13,7 @@ ms.author: altotovi
 
 This page lists the countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available and which languages are supported.  
 
-In countries where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
+In countries/regions where Microsoft has not delivered a localization, partners can build localizations using translation and localization apps that are published on AppSource. These apps are built on top of the international (W1) version of [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)].
 
 The following table provides the list of all countries/regions where [!INCLUDE[d365fin_long_md](../includes/d365fin_long_md.md)] is available or in planning for future availability. The table also specifies the abbreviation of the relevant country-specific environment that you see in the admin center. Finally, the table and states whether the localization is provided by Microsoft or partner(s).
 
@@ -95,7 +95,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Liechtenstein|Partner|CH|Available|LI|
 |Lithuania|Partner|W1|Available|LT|
 |Luxembourg|Partner|W1|Available|LU|
-|Macau (SAR China)|Partner|W1|Available|MO|
+|Macao (SAR China)|Partner|W1|Available|MO|
 |Madagascar|Partner|W1|Available|MG|
 |Malawi|Partner|W1|Available|MW|
 |Malaysia|Partner|W1|Available|MY|

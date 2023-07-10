@@ -20,7 +20,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/en-
 
 ## Localization updates 
 
-| Country| Feature change |
+| Country/region| Feature change |
 |-------------|--------------|
 | Great Britain | Specify fraud prevention headers automatically without interaction with the user|
 | Norway | SAF-T Improvements|

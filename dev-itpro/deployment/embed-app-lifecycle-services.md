@@ -17,7 +17,7 @@ Microsoft provides essential functionality within [Microsoft Lifecycle Services]
 
 ## Creating LCS project
 
-In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country you would like to deploy to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
+In LCS, you should create a project for each [!INCLUDE[embedapp](../developer/includes/embedapp.md)] and each country/region you would like to deploy to [!INCLUDE [prod_short](../developer/includes/prod_short.md)] service. You provide the list of countries where you want to run your Embed app during onboarding. You can only deploy your solution to the country/region that is already supported in the Business Central online service. Find the list of supported countries here: https://aka.ms/bccountries. 
 
 Before you can create a project, you need to unlock a corresponding Private Preview feature. Once you sign in to LCS, select the **Preview feature management** action. Then on the Preview feature management page, select the "+" action to add a new preview feature using a preview code. In the **Preview code** field, enter the code you received from Microsoft during onboarding. You should now see the "Microsoft Dynamics 365 Business Central (SaaS)" feature on the list of the private preview features on this page.     
 

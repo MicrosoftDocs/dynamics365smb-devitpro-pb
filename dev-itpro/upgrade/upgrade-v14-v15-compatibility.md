@@ -32,7 +32,7 @@ The following table lists the Business Central 21 versions and the minimum versi
 |21.0 to 21.5|[22.0](https://www.microsoft.com/en-us/download/details.aspx?id=105113)  |
 |[21.6](https://support.microsoft.com/help/5025975)  |[22.1](https://support.microsoft.com/help/5026932) |
 |[21.7](https://support.microsoft.com/help/5026931)|[22.2](https://support.microsoft.com/help/5027892)|
-|[21.8](https://support.microsoft.com/help/5027891)|22.3 <!--22.3 <!--[22.3](https://support.microsoft.com/help/5029057)-->-->|
+|[21.8](https://support.microsoft.com/help/5027891)|[22.3](https://support.microsoft.com/help/5029057)|
 |[21.9](https://support.microsoft.com/help/5029056)<sup>[\[1\]](#1)</sup>|22.4|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
@@ -52,7 +52,7 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.11](https://support.microsoft.com/help/5024402)|[21.6](https://support.microsoft.com/help/5025975)|22.0|
 |[20.12](https://support.microsoft.com/help/5025974)|[21.7](https://support.microsoft.com/help/5026931)|[22.1](https://support.microsoft.com/help/5026932) |
 |[20.13](https://support.microsoft.com/help/5026930)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892)|
-|[20.14](https://support.microsoft.com/help/5027890)|[21.9](https://support.microsoft.com/help/5029056) |22.3 <!--[22.3](https://support.microsoft.com/help/5029057)--> |
+|[20.14](https://support.microsoft.com/help/5027890)|[21.9](https://support.microsoft.com/help/5029056) |[22.3](https://support.microsoft.com/help/5029057) |
 |[20.15](https://support.microsoft.com/help/5029055)<sup>[\[1\]](#1)</sup>|21.10 |22.4 |
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
@@ -237,7 +237,7 @@ The following table lists the Business Central 14 versions and the minimum versi
 |[14.46 (cumulative update 45)](https://support.microsoft.com/help/5024400)|None|None|None|None|[19.18](https://support.microsoft.com/help/5025973)|[20.12](https://support.microsoft.com/help/5025974)|[21.6](https://support.microsoft.com/help/5025975)|22.0|
 |[14.47 (cumulative update 46)](https://support.microsoft.com/help/5025972)|None|None|None|None|None|[20.13](https://support.microsoft.com/help/5026930) |[21.7](https://support.microsoft.com/help/5026931) |[22.1](https://support.microsoft.com/help/5026932) |
 |[14.48 (cumulative update 47)](https://support.microsoft.com/help/5026929)|None|None|None|None|None|[20.14](https://support.microsoft.com/help/5027890)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892) |
-|[14.49 (cumulative update 48)](https://support.microsoft.com/help/5027889)|None|None|None|None|None|[20.15](https://support.microsoft.com/help/5029055)|[21.9](https://support.microsoft.com/help/5029056) |22.3 <!--[22.3](https://support.microsoft.com/help/5029057)--> |
+|[14.49 (cumulative update 48)](https://support.microsoft.com/help/5027889)|None|None|None|None|None|[20.15](https://support.microsoft.com/help/5029055)|[21.9](https://support.microsoft.com/help/5029056) |[22.3](https://support.microsoft.com/help/5029057)|
 |[14.50 (cumulative update 49)](https://support.microsoft.com/help/5029054)<sup>[\[1\]](#1)</sup>|None|None|None|None|None|20.16|21.10 |22.4|
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)] 
