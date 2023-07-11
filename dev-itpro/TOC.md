@@ -218,6 +218,7 @@
 #### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
 #### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -871,7 +872,7 @@
 
 ## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
-<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient) -->
+<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient, Azure functions) -->
 ### Using the system application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
 #### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
@@ -886,14 +887,18 @@
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
+
 ### Calling external services
-#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)  
-### App key vaults for secrets
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
+<!--#### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)-->
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
+
+### Using Azure Key Vault for app secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 #### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-#### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
+#### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 ### Developing printer extensions
 #### [Printer extension overview](developer/devenv-reports-printing.md)
@@ -1054,7 +1059,7 @@
 ### [Create a release of your application](al-go/algo-create-release-app.md)
 ### [Register a customer production environment for manual deployment](al-go/algo-register-cust-prod-env.md)
 ### [Update AL-Go system files](al-go/algo-update-system-files.md)
-### [Use Azure KeyVault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
+### [Use Azure Key Vault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
 ### [Create online development environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
 ### [Create online development environment from GitHub](al-go/algo-create-online-dev-env-github.md)
 ### [Set up CI/CD for an existing per-tenant extension](al-go/algo-setup-cicd-existing-pte.md)
@@ -1269,6 +1274,13 @@
 ### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+<!-- Azure services -->
+## Integrating with Azure services
+### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)
+### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
+### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
+### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
+<!-- end Azure services -->
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
@@ -1422,7 +1434,7 @@
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using telemetry
-#### [telemetry overview](administration/telemetry-overview.md)
+#### [Telemetry overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)
