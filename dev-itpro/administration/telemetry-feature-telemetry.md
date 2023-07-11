@@ -72,7 +72,10 @@ Feature names should be short and easy to identify. For example, Retention polic
 |alFeatureName  | The name of the feature being tracked.  |
 |alSubCategory     | Holds one of the values **Uptake**, **Usage**, or **Error**.  |
 |alFeatureUptakeStatus| If alSubCategory holds the value **Uptake**, then the update status can hold one of the following values: **Discovered**, **Set up**, **Undiscovered**, or **Used**.
+|alCallerAppId       | The id of the extension that emitted telemetry.      |
 |alCallerAppName     | The name of the extension that emitted telemetry.      |
+|alCallerPublisher   | The publisher of the extension that emitted telemetry.      |
+|alCallerAppVersion  | The version of the extension that emitted telemetry.      |
 |alCallerAppVersionMajor     | The major version of the extension that emitted telemetry. |
 |alCallerAppVersionMinor     | The minor version of the extension that emitted telemetry.        |
 |alClientType     | The client type of the session.        |
