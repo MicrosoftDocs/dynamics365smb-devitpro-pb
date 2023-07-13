@@ -5,7 +5,7 @@ author: edupont04
 ms.reviewer: na
 ms.topic: article
 ms.author: edupont
-ms.date: 08/02/2022
+ms.date: 07/13/2023
 ---
 
 # Resources for Help and Support for [!INCLUDE[prod_long](includes/prod_long.md)]
@@ -136,11 +136,11 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners](https://community.dynamics.com/business/b/businesscentraldevitpro) or the [Community site for business users](https://community.dynamics.com/business/b/financials).|
+> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners](https://community.dynamics.com/blogs/?blogid=7a530ee6-6db6-4abf-98c4-fb20fa39f957&groupid=e78817ab-a926-4d31-96cc-aef040a4eb04) or the [Community blog](https://community.dynamics.com/blogs/?blogid=57bdb1f3-851d-4406-a81a-508fef896fc2&groupid=e78817ab-a926-4d31-96cc-aef040a4eb04).|
 
 ### <a name="communities"></a>Business Central communities
 
-On the [Business Central Community site](https://community.dynamics.com/business), you have access to the [Business Central Forum](https://community.dynamics.com/business/f/758). You can use this forum to submit a question and learn from other Business Central community members. MVPs, partners, and Microsoft employees participate in the conversations.
+On the [Dynamics 365 Community site](https://community.dynamics.com/), you have access to the [Business Central Forum](https://community.dynamics.com/forums/thread/?groupid=e78817ab-a926-4d31-96cc-aef040a4eb04). You can use this forum to submit a question and learn from other Business Central community members. MVPs, partners, and Microsoft employees participate in the conversations.
 
 You can also join the [BCUG/NAVUG User Group for Dynamics 365 Business Central and Dynamics NAV](https://www.navug.com/home), which is a user-led, user-driven community of more than 26,000 users, partners, and MVPs.  
 
