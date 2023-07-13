@@ -136,7 +136,7 @@ The Dynamics 365 blog is where Microsoft publishes announcements, updates, and t
 > [!div class="mx-tdCol2BreakAll"]
 > |Name  |Location  |Description|
 > |---------|---------|---------|
-> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners]([https://community.dynamics.com/business/b/businesscentraldevitpro](https://community.dynamics.com/blogs/?blogid=7a530ee6-6db6-4abf-98c4-fb20fa39f957&groupid=e78817ab-a926-4d31-96cc-aef040a4eb04)) or the [Community blog](https://community.dynamics.com/blogs/?blogid=57bdb1f3-851d-4406-a81a-508fef896fc2&groupid=e78817ab-a926-4d31-96cc-aef040a4eb04).|
+> |Business Central on the Dynamics 365 blog|[https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/](https://cloudblogs.microsoft.com/dynamics365/it/product/business-central/)|Use this blog to learn about opportunities, processes, and tools for the Business Central partner community. </br>Some older blog posts are still available on the [Community site for partners]([https://community.dynamics.com/blogs/?blogid=7a530ee6-6db6-4abf-98c4-fb20fa39f957&groupid=e78817ab-a926-4d31-96cc-aef040a4eb04) or the [Community blog](https://community.dynamics.com/blogs/?blogid=57bdb1f3-851d-4406-a81a-508fef896fc2&groupid=e78817ab-a926-4d31-96cc-aef040a4eb04).|
 
 ### <a name="communities"></a>Business Central communities
 
