@@ -29,6 +29,15 @@ At design time, the compiler will show warnings on casing violations and errors 
 ## Create, read, update, and delete operations
 API pages support create, read, update, and delete operations. If you want to disallow create, update, and delete operations, you can use the [InsertAllowed](properties/devenv-insertallowed-property.md), [ModifyAllowed](properties/devenv-modifyallowed-property.md), and [DeleteAllowed](properties/devenv-deleteallowed-property.md) properties respectively.
 
+If you only want your API to expose committed data, you can add an OnOpenPageTrigger like this:
+
+```AL
+    trigger OnOpenPage()
+    begin
+        Rec.ReadIsolation := IsolationLevel::ReadCommitted;
+    end;
+```
+
 ## Example of the API page type
 
 The following page example publishes an API available at:
