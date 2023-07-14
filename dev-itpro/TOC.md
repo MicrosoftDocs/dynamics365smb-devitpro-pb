@@ -797,8 +797,17 @@
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
 
 ### Developing APIs
-#### [API page type](developer/devenv-api-pagetype.md)
+#### [Overview](developer/devenv-api.md)
+#### [Walkthrough: developing a custom API](developer/devenv-develop-custom-api.md)
+#### [API pages](developer/devenv-api-pagetype.md)
 #### [API queries](developer/devenv-api-querytype.md)
+#### [Connecting to and testing APIs](developer/devenv-develop-connect-apps.md)
+#### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
+#### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+#### [API performance](webservices/web-service-performance.md)
+#### [API telemetry](webservices/web-service-telemetry.md)
+
 
 ### Accessing device capabilities
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
@@ -1165,18 +1174,21 @@
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [API client performance](webservices/odata-client-performance.md)
-#### [Troubleshooting API calls](api-reference/v2.0/dynamics-error-codes.md)
+#### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
+#### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
-#### [Developing a custom API](developer/devenv-develop-custom-api.md)
+#### [API Developer Overview](developer/devenv-api.md)
 #### [Getting a list of environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
-#### [Troubleshooting OData calls](api-reference/v2.0/dynamics-error-codes.md)
+#### [Using filters with OData/API calls](developer/devenv-connect-apps-filtering.md)
+#### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
@@ -1213,6 +1225,7 @@
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+### [API Developer Overview](developer/devenv-api.md)
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->

@@ -6,7 +6,7 @@
 ## [Working with webhooks](dynamics_subscriptions.md)
 ## [Operational limits for Business Central online](/dynamics365/business-central/dev-itpro/administration/operational-limits-online)
 ## [Working with API rate limits](dynamics-rate-limits.md)
-## [Troubleshooting API calls](dynamics_error_codes.md)
+## [Troubleshooting API calls](../../webservices/dynamics-error-codes.md)
 ## [API performance](../../webservices/web-service-performance.md)
 ## [API telemetry](../../webservices/web-service-telemetry.md)
 ## [Getting a list of environments](../../webservices/api-get-environments.md)

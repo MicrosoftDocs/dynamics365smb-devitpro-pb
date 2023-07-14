@@ -1,5 +1,5 @@
 ---
-title: "Using Filters with API calls"
+title: "Using Filters with API/OData calls"
 description: Learn how to use filters with APIs.
 author: SusanneWindfeldPedersen
 ms.author: solsen
@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: conceptual
 ---
 
-# Using Filters with API calls
+# Using Filters with OData/API calls
 
 You can provide filters in API calls to get targeted information in return. The syntax for this follows the [Microsoft REST API guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#97-filtering). For example, to GET all open (unpaid) sales invoices above 1000.00 excl tax, call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/salesInvoices?$filter=status eq 'Open' and totalAmountExcludingTax gt 1000.00`
 
