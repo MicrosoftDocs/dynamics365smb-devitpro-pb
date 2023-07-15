@@ -44,7 +44,7 @@ Represents a customer in [!INCLUDE[prod_short](../../../includes/prod_short.md)]
 |[picture](dynamics_picture.md)|picture |Gets the picture of the customer.|
 |[defaultDimensions](dynamics_defaultdimension.md)|defaultDimensions |Gets the defaultdimensions of the customer.|
 |[agedAccountsReceivable](dynamics_agedaccountsreceivable.md)|agedAccountsReceivable |Gets the agedaccountsreceivable of the customer.|
-|[contactsInformation](dynamics_contactsinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
+|[contactsInformation](dynamics_contactinformation.md)|contactsInformation |Gets the contactsinformation of the customer.|
 
 ## Properties
 
