@@ -17,7 +17,7 @@ ms.author: solsen
 Retrieve the properties and relationships of a picture object for [!INCLUDE[prod_short](../../../includes/prod_short.md)].
 
 ## HTTP request
-Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guideline](../../v2.0/endpoints-apis-for-dynamics.md).s
+Replace the URL prefix for [!INCLUDE[prod_short](../../../includes/prod_short.md)] depending on environment following the [guidelines](../../v2.0/endpoints-apis-for-dynamics.md).
 ```
 GET businesscentralPrefix/companies({companyId})/items({itemId})/picture
 GET businesscentralPrefix/companies({companyId})/employees({employeeId})/picture
