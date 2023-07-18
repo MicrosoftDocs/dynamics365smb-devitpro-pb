@@ -3,21 +3,22 @@ title: "AppSourceCop Error AS0118"
 description: "Modifying the length of a field part of the primary key is not allowed."
 ms.author: solsen
 ms.custom: na
-ms.date: 06/26/2023
+ms.date: 07/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: reference
-author: samyhaff
+author: SusanneWindfeldPedersen
 ---
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
 # AppSourceCop Error AS0118
-The length of a field part of the primary key cannot change
+The length of a field part of the primary key cannot change.
 
 ## Description
 Modifying the length of a field part of the primary key is not allowed.
+
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 ## Remarks
