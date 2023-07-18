@@ -11,7 +11,7 @@ ms.date: 08/01/2021
 ms.author: jswymer
 ---
 
-# Analyzing AppSource Submission Validation Trace Telemetry
+# Analyzing AppSource Submission Validation Telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2021 release wave 1, version 18.4, and later
 
@@ -98,6 +98,22 @@ Occurs during the submission validation request to report diagnostics related to
 |diagnosticSeverity|**Info**, **Warning**, or **Error**. Matches the `severityLevel`. |
 |containsHotfix|Specifies whether the submission contains a hotfix of an AppSource extension.|
 |[See common custom dimensions](#other)||
+
+### Sample KQL code 
+This KQL code can help you get started analyzing request warnings using the LC0038 event:
+
+```kql
+traces
+| where timestamp > ago(1d) // adjust as needed
+| where customDimensions.eventId == 'LC0038'
+| project timestamp 
+, requestId = customDimensions.validationRequestId
+, diagnosticCode = customDimensions.diagnosticCode
+, diagnosticMessage = customDimensions.diagnosticMessage
+, diagnosticSeverity = customDimensions.diagnosticSeverity
+, containsHotfix = customDimensions.containsHotfix
+, message
+```
 
 ## <a name="versioncountrystarted"></a>(Version, country-region) validation started
 
@@ -193,6 +209,27 @@ Occurs when an error occurs during the validation of an extension. The errors ar
 {"version":"19.0","telemetrySchemaVersion":"0.1","extensionPublisher":"AppSource Publisher","extensionVersion":"1.0.0.0","extensionName":"AppSource Simple","extensionId":"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3","eventId":"LC0034","validationRequestId":"e31b8fb1-f790-457f-8a07-f3ae9bc411b2","countryRegion":"DK","severity":"Error","diagnosticSeverity":"Error","diagnosticMessage":"Only use AssertError in Test Codeunits.","diagnosticCode":"AS0058"}
 -->
 
+### Sample KQL code 
+This KQL code can help you get started analyzing request failures using the LC0034 event:
+
+```kql
+traces
+| where timestamp > ago(1d) // adjust as needed
+| where customDimensions.eventId == 'LC0034'
+| project timestamp 
+, countryRegion = customDimensions.countryRegion
+, version = customDimensions.version
+, extensionId = customDimensions.extensionId
+, extensionName = customDimensions.extensionName
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, diagnosticCode = customDimensions.diagnosticCode
+, diagnosticMessage = customDimensions.diagnosticMessage
+, diagnosticSeverity = customDimensions.diagnosticSeverity
+, diagnosticSourceLocation = customDimensions.diagnosticSourceLocation
+, diagnosticSourcePath = customDimensions.diagnosticSourcePath
+```
+
 ## <a name="extensionvalidationcompleted"></a>Extension validation completed successfully
 
 Occurs when the validation for a specific extension the submission has completed, and no errors occurred.
@@ -256,6 +293,22 @@ Occurs when the validation for a specific extension the submission has completed
 {"version":"19.0","telemetrySchemaVersion":"0.1","extensionPublisher":"AppSource Publisher","extensionVersion":"1.0.0.0","extensionName":"AppSource Simple","extensionId":"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3","eventId":"LC0037","validationRequestId":"e31b8fb1-f790-457f-8a07-f3ae9bc411b2","countryRegion":"DK","severity":"Error","failureReason":"One  more extension validation tasks have failed."}
 -->
 
+### Sample KQL code 
+This KQL code can help you get started analyzing request failures using the LC0037 event:
+
+```kql
+traces
+| where timestamp > ago(1d) // adjust as needed
+| where customDimensions.eventId == 'LC0037'
+| project timestamp 
+, requestId = customDimensions.validationRequestId
+, countryRegion = customDimensions.countryRegion
+, version = customDimensions.version
+, extensionName = customDimensions.extensionName
+, failureReason = customDimensions.failureReason
+```
+
+
 ## <a name="versioncountrycompleted"></a>(Version, country-region) validation completed successfully
 
 Occurs when the validation has completed for a specific version and country/region, and no errors occurred.
@@ -313,6 +366,23 @@ Occurs when the validation has completed for a specific version and country/regi
 {"version":"19.0","telemetrySchemaVersion":"0.1","eventId":"LC0036","validationRequestId":"24995dae-01f2-4523-b3dc-b4e54cb25c7e","countryRegion":"DK","severity":"Error","baselineExtensions":"{\r\n \"Extensions\": []\r\n}","failureReason":"One  more error diagnostics were reported.","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","allExtensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n },\r\n {\r\n \"Id\": \"c1335042-3002-4257-bf8a-75c898ccb1b8\",\r\n \"Name\": \"Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26290.3402\"\r\n },\r\n {\r\n \"Id\": \"8874ed3a-0643-4247-9ced-7a7002f7135d\",\r\n \"Name\": \"System\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"18.0.26244.0\"\r\n },\r\n {\r\n \"Id\": \"63ca2fa4-4f03-4f2b-a480-172fef340d3f\",\r\n \"Name\": \"System Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26290.3402\"\r\n },\r\n {\r\n \"Id\": \"437dbf0e-84ff-417a-965d-ed2bb9650972\",\r\n \"Name\": \"Base Application\",\r\n \"Publisher\": \"Microsoft\",\r\n \"Version\": \"19.0.26290.3402\"\r\n }\r\n ]\r\n}"}
 -->
 
+### Sample KQL code 
+This KQL code can help you get started analyzing request failures using the LC0036 event:
+
+```kql
+traces
+| where timestamp > ago(1d) // adjust as needed
+| where customDimensions.eventId == 'LC0036'
+| project timestamp 
+, requestId = customDimensions.validationRequestId
+, countryRegion = customDimensions.countryRegion
+, version = customDimensions.version
+, extensions = customDimensions.extensions
+, allExtensions = customDimensions.allExtensions
+, baselineExtensions = customDimensions.baselineExtensions
+, failureReason = customDimensions.failureReason
+```
+
 ## <a name="validationrequestcompleted"></a>AppSource submission validation request completed successfully
 
 Occurs when the submission validation process has fully completed, and no errors occurred.
@@ -366,10 +436,24 @@ Occurs when the submission validation process has fully completed, but errors oc
 {"telemetrySchemaVersion":"0.1","eventId":"LC0035","validationRequestId":"e31b8fb1-f790-457f-8a07-f3ae9bc411b2","severity":"Error","failureReason":"One  more extension validation tasks have failed.","extensions":"{\r\n \"Extensions\": [\r\n {\r\n \"Id\": \"a3fe8b08-c1ce-4194-aedf-a677bf5b7eb3\",\r\n \"Name\": \"AppSource Simple\",\r\n \"Publisher\": \"AppSource Publisher\",\r\n \"Version\": \"1.0.0.0\"\r\n }\r\n ]\r\n}","countryRegions":"[\r\n \"DK\",\r\n \"US\"\r\n]","versions":"[\r\n \"19.0\"\r\n]"}
 -->
 
+### Sample KQL code 
+This KQL code can help you get started analyzing request failures using the LC0035 event:
+
+```kql
+traces
+| where timestamp > ago(1d) // adjust as needed
+| where customDimensions.eventId == 'LC0035'
+| project timestamp 
+, requestId = customDimensions.validationRequestId
+, countryRegions = customDimensions.countryRegions
+, versions = customDimensions.versions 
+, extensions = customDimensions.extensions
+, failureReason = customDimensions.failureReason
+```
+
 ## See also
 
-[Monitoring and Analyzing Telemetry](telemetry-overview.md)  
-[Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Telemetry overview](telemetry-overview.md)  
+[Sending App Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
 [Technical Validation Checklist](../developer/devenv-checklist-submission.md)  
 [Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md)  
-[Prepare a Configuration Package](/dynamics365/business-central/admin-how-to-prepare-a-configuration-package) in the [!INCLUDE[prod_short](../includes/prod_short.md)]
