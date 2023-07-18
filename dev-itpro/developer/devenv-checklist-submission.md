@@ -120,13 +120,17 @@ Include app and all library apps in both previousApps and apps and also include 
 
 ## How to get more information on the technical validation failures?
 
-Detailed validation results are automatically logged to the ApplicationInsights storage account specified by instrumentation key in the manifest of the main extension in your submission.
+Detailed validation results are automatically logged to telemetry in the the [!INCLUDE[appinsights](../includes/azure-appinsights-name.md)] resource specified in the manifest of the main extension in your submission.
 
 In order to enable partner telemetry in your extension, you must specify the `applicationInsightsConnectionString` property in the manifest (app.json) of your extension. For more information about this property, see [JSON files](devenv-json-files.md).
 
 In order to get started on analyzing your validation results, you can use this troubleshooting guide [Dynamics 365 Business Central Troubleshooting Guide (TSG) - AppSource Submission Results (SaaS)](https://github.com/microsoft/BCTech/tree/master/samples/AppInsights/TroubleShootingGuides/D365BC%20Troubleshooting%20Guides%20(TSG)/content/AppSource-Submission-TSG.ipynb).
 
-For more information about the signals sent during the technical validation, see [Analyzing AppSource Submission Validation Trace Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+For more information about the signals sent to telemetry during the technical validation, see [Analyzing AppSource Submission Validation Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+
+> [!NOTE]  
+> You can setup alerts on validation telemetry. For example, you can send a daily/weekly notification to Teams/email on all validation failures across all your apps. For more information, see [Alerting on Telemetry](../administration/telemetry-alert.md).
+
 
 ## Against which releases of Business Central is your submission validated?
 
@@ -136,6 +140,10 @@ The minimum release for your submission is computed based on the `application` p
 
 > [!NOTE]  
 > If multiple extensions are contained in your submission, the minimum release for the submission is the highest minimal release computed for each of the extensions in the submission.
+
+> [!NOTE]  
+> The telemetry sent during the technical validation contains details about validation success/failure against each release of Business Central specified above. For more information, see [Analyzing AppSource Submission Validation Telemetry](../administration/telemetry-appsource-submission-validation-trace.md).
+
 
 > [!Important]  
 > The minimum release computed for your submission also defines the availability in Business Central of all the extensions in your submission.
@@ -191,3 +199,4 @@ In this case, you can create a version 1.0.0.1 of your extension and submit it w
 ## See Also
 
 [Developing [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)
+[Analyzing AppSource Submission Validation Telemetry](../administration/telemetry-appsource-submission-validation-trace.md)

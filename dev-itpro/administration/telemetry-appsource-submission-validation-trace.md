@@ -453,7 +453,7 @@ traces
 
 ## See also
 
-[Telemetry overview](telemetry-overview.md)  
-[Sending App Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md).
-[Technical Validation Checklist](../developer/devenv-checklist-submission.md)  
+[Telemetry overview](telemetry-overview.md)   
+[Sending App Telemetry to Azure Application Insights](../developer/devenv-application-insights-for-extensions.md)   
+[Technical Validation Checklist](../developer/devenv-checklist-submission.md)     
 [Technical Validation FAQ](../developer/devenv-checklist-submission-faq.md)  
