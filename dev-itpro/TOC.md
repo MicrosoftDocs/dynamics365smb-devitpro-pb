@@ -30,6 +30,7 @@
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Marketing validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
+
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -425,6 +426,7 @@
 ### AppSource validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
+#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
