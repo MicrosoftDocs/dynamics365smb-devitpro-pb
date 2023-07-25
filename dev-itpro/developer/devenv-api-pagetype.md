@@ -77,10 +77,10 @@ page 50120 MyCustomerApi
 ```
 
 ## See Also  
-
+[API Developer Overview](devenv-api.md)
 [AL Development Environment](devenv-reference-overview.md)  
 [API Query Type](devenv-api-querytype.md)  
-[Developing a Custom API](devenv-develop-custom-api.md)  
+[Walkthrough: developing a custom API](devenv-develop-custom-api.md)   
 [Page Extension Object](devenv-page-ext-object.md)  
 [APIPublisher Property](properties/devenv-apipublisher-page-property.md)  
 [APIGroup Property](properties/devenv-apigroup-page-property.md)  
