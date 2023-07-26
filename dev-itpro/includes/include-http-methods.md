@@ -1,4 +1,5 @@
 The HttpClient datatype supports the following HTTP methods:
+
 * DELETE 
 * GET 
 * POST 
