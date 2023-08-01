@@ -711,6 +711,8 @@
 ##### [Field groups](developer/devenv-field-groups.md)
 ##### [CalcFields, CalcSums, FieldError, FieldName, Init, TestField, and Validate methods](developer/devenv-calcfields-calcsums-fielderror-fieldname-init-testfield-and-validate-methods.md)
 ##### [Formatting decimal values in fields](developer/devenv-format-field-data.md)
+##### Control examples
+###### [Rich Text Editor](developer/devenv-richtexteditor.md)
 #### Actions
 ##### [Actions in AL](developer/devenv-actions-overview.md)
 ##### [Adding actions to a page](developer/devenv-adding-actions-to-a-page.md)
