@@ -13,11 +13,11 @@ ms.date: 02/24/2023
 
 # Available Applications
 
-Get information about the currently available application families, countries, rings, and versions that environments can be created on.
+Get information about the currently available application families, countries/regions, rings, and versions that environments can be created on.
 The API endpoints here should be utilized to determine what values can be used for environment creation or copying 
 
-## Applications and corresponding Countries with Rings
-Get a list of the currently available application families, the available countries within those families, and the available rings within the countries.
+## Applications and corresponding Countries/regions with Rings
+Get a list of the currently available application families, the available countries/regions within those families, and the available rings within the countries/regions.
 
 ```
 GET /admin/v2.18/applications/

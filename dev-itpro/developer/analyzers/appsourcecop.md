@@ -3,7 +3,7 @@ title: "AppSourceCop Analyzer"
 description: "AppSourceCop is an analyzer that enforces rules that must be respected by extensions meant to be published to Microsoft AppSource."
 ms.author: solsen
 ms.custom: na
-ms.date: 03/20/2023
+ms.date: 07/18/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -50,9 +50,11 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0032](appsourcecop-as0032.md)|Controls that have been published must not be deleted.|Upgrade|Error|
 |[AS0033](appsourcecop-as0033.md)|Views that have been published must not be deleted.|Upgrade|Error|
 |[AS0034](appsourcecop-as0034.md)|Unsupported table property change|Upgrade|Error|
+|[AS0035](appsourcecop-as0035.md)|Unsupported page property change|Upgrade|Warning|
 |[AS0036](appsourcecop-as0036.md)|Unsupported table field property change|Upgrade|Error|
 |[AS0038](appsourcecop-as0038.md)|Unsupported table key property change|Upgrade|Error|
 |[AS0039](appsourcecop-as0039.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Error|
+|[AS0040](appsourcecop-as0040.md)|Removing properties that cause destructive changes is not allowed|Upgrade|Warning|
 |[AS0041](appsourcecop-as0041.md)|Table field property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0042](appsourcecop-as0042.md)|Table key property changes that cause destructive changes must not be removed|Upgrade|Error|
 |[AS0043](appsourcecop-as0043.md)|The clustered key must not be deleted|Upgrade|Error|
@@ -124,6 +126,8 @@ AppSourceCop is an analyzer that enforces rules that must be respected by extens
 |[AS0112](appsourcecop-as0112.md)|Permission set extensions should not include permission sets which include permissions for objects defined in another application.|Extensibility|Warning|
 |[AS0113](appsourcecop-as0113.md)|Permission set extensions should not include wildcard permissions.|Extensibility|Warning|
 |[AS0114](appsourcecop-as0114.md)|The name of an external business event cannot be changed.|Upgrade|Error|
+|[AS0115](appsourcecop-as0115.md)|The obsolete state cannot change directly from 'No' to 'Removed'.|Upgrade|Error|
+|[AS0118](appsourcecop-as0118.md)|The length of a field part of the primary key cannot change.|Upgrade|Error|
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 

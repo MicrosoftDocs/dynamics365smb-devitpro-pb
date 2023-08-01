@@ -27,6 +27,7 @@ The topics in this section describe the key concepts and techniques for accessin
 |To|See|  
 |--------|---------|  
 |Develop fast OData clients | [OData Query performance](odata-client-performance.md) |
+|Troubleshoot failed OData calls | [Troubleshooting API calls](../api-reference/v2.0/dynamics-error-codes.md) |  
 |Expose a codeunit through OData to implement a Remote Procedure Call (RPC) |[Creating and Interacting with an OData V4 Unbound Action](../developer/devenv-creating-and-interacting-with-odatav4-unbound-action.md)|  
 |Use OData to obtain an AtomPub document.|[Using OData to Return or Obtain an AtomPub Document](Return-Obtain-an-AtomPub-Document.md)|  
 |Use OData to obtain a service metadata \(EDMX\) document.|[Using OData to Return or Obtain a Service Metadata \(EDMX\) Document](return-obtain-service-metadata-edmx-document.md)|  

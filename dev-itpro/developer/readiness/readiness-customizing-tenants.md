@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Customize Business Central
 
-Every business is unique. Dynamics 365 Business Central us ready to adapt to how customers work: their streamlined processes, their terminology, and how their employees or departments connect and collaborate.  
+Every business is unique. Dynamics 365 Business Central is ready to adapt to how customers work: their streamlined processes, their terminology, and how their employees or departments connect and collaborate.  
 
 Whilst there may already be add-on apps available on AppSource that cover a customer’s need, we also have the tools for you to build fully custom functionality or adapt what is already available out-of-the box. 
  
