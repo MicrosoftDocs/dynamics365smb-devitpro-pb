@@ -1,13 +1,13 @@
 ---
 title: "Creating a rich text editor"
 description: How to create a functioning rich text editor using ExtendedDataType and a table blob field in AL for Business Central.
+author: damsboemil
+ms.author: solsen
 ms.custom: na
 ms.date: 08/01/2023
 ms.reviewer: solsen
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: overview
-author: damsboemil
+ms.service: dynamics365-business-central
+ms.topic: conceptual
 ---
 
 # Creating a rich text editor
