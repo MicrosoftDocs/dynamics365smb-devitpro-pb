@@ -67,11 +67,27 @@ Occurs when an extension secret was successfully initialized.
 |keyVaultUrls|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-<!--
-Example:
+### Sample KQL code (successful Azure Keyvault initializations)
 
-{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","Component version":"16.0.14248.0","componentVersion":"16.0.14248.0","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","extensionPublisher":"Microsoft","Extension version":"17.0.14320.0","extensionVersion":"17.0.14320.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","component":"Dynamics 365 Business Central Server","Extension name":"System Application","extensionName":"System Application","AL Object Id":"3801","Company name":"CRONUS International Ltd.","eventId":"RT0014","Client type":"WebClient","companyName":"CRONUS International Ltd.","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","alObjectId":"3801","clientType":"WebClient","AL Object type":"CodeUnit","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50100).OnOpenPage(Trigger) line 4 - ALProject1 by Default publisher","AL Object name":"App Key Vault Secret Pr. Impl.","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50100).OnOpenPage(Trigger) line 4 - ALProject1 by Default publisher","alObjectType":"CodeUnit","alObjectName":"App Key Vault Secret Pr. Impl.","keyVaultUrls":"https://jswymer-keyvault-z.vault.azure.net/"}
--->
+This KQL code can help you get started analyzing Azure Keyvault initializations.
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0014' 
+| project timestamp
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, alStackTrace = customDimensions.alStackTrace
+, clientType = customDimensions.clientType
+, extensionName = customDimensions.extensionName
+, extensionId = customDimensions.extensionId
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, keyVaultUrls = customDimensions.keyVaultUrls
+```
+
 
 ## <a name="initializedfailed"></a>App Key Vault initialization failed
 
@@ -105,12 +121,29 @@ Occurs when a key vault failed to be initialized.
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
 
-<!--
-## Example
+### Sample KQL code (Azure Keyvault initialization errors)
 
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Microsoft","Extension version":"17.0.14384.0","Component version":"16.0.14248.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"17.0.14384.0","componentVersion":"16.0.14248.0","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50100).OnOpenPage(Trigger) line 4 - ALProject1 by Default publisher","AL Object type":"CodeUnit","Extension name":"System Application","AL Object name":"App Key Vault Secret Pr. Impl.","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","extensionName":"System Application","failureReason":"Extension 'ALProject1 by Default publisher 1.0.0.4' does not have a publisher AAD tenant ID, so it cannot use key vaults. The publisher's AAD tenant ID must be specified at publish time.","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentAppInternal - System Application by Microsoft\r\n\"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).InitializeFromCurrentApp - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).TryInitializeFromCurrentApp - System Application by Microsoft\r\nHelloWorldPage(Page 50100).OnOpenPage(Trigger) line 4 - ALProject1 by Default publisher","Company name":"CRONUS International Ltd.","alObjectType":"CodeUnit","alObjectName":"App Key Vault Secret Pr. Impl.","AL Object Id":"3801","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","Client type":"WebClient","companyName":"CRONUS International Ltd.","alObjectId":"3801","clientType":"WebClient","component":"Dynamics 365 Business Central Server","Component":"Dynamics 365 Business Central Server","eventId":"RT0015"}
+This KQL code can help you get started troubleshooting Azure Keyvault retrieval errors.
 
--->
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0015' 
+| project timestamp
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, alStackTrace = customDimensions.alStackTrace
+, clientType = customDimensions.clientType
+, extensionName = customDimensions.extensionName
+, extensionId = customDimensions.extensionId
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, failureReason = customDimensions.failureReason
+```
+
+
+
 ## <a name="retrievedsuccess"></a>App Key Vault secret retrieval succeeded
 
 Occurs when a secret used by an extension is successfully retrieved from an Azure Key Vault.
@@ -142,9 +175,27 @@ Occurs when a secret used by an extension is successfully retrieved from an Azur
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-<!--
-{"Component":"Dynamics 365 Business Central Server","Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","Component version":"16.0.14248.0","componentVersion":"16.0.14248.0","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","extensionPublisher":"Microsoft","Company name":"CRONUS International Ltd.","AL Object Id":"3801","Extension version":"17.0.14320.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"17.0.14320.0","Client type":"WebClient","companyName":"CRONUS International Ltd.","component":"Dynamics 365 Business Central Server","alObjectId":"3801","clientType":"WebClient","Extension name":"System Application","extensionName":"System Application","eventId":"RT0016","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","AL Object name":"App Key Vault Secret Pr. Impl.","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","AL Object type":"CodeUnit","alObjectName":"App Key Vault Secret Pr. Impl.","alObjectType":"CodeUnit","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","keyVaultUrl":"https://jswymer-keyvault-1.vault.azure.net/"}
--->
+### Sample KQL code (successful Azure Keyvault retrievals)
+
+This KQL code can help you get started analyzing Azure Keyvault retrievals.
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0016' 
+| project timestamp
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, alStackTrace = customDimensions.alStackTrace
+, clientType = customDimensions.clientType
+, extensionName = customDimensions.extensionName
+, extensionId = customDimensions.extensionId
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, keyVaultUrl = customDimensions.keyVaultUrl
+```
+
 
 ## <a name="retrievedfailed"></a>App Key Vault secret retrieval failed
 
@@ -177,12 +228,28 @@ Occurs when an extension failed to retrieve a secret from a specified Azure key 
 |keyVaultUrl|Specifies the DNS name of the Azure key vault that was used in the request. The keyVaultUris are specified in the [app.json](../developer/devenv-json-files.md) file of the extension.|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-<!--
-### Example
+### Sample KQL code (Azure Keyvault retrieval errors)
 
-{"Telemetry schema version":"0.1","telemetrySchemaVersion":"0.1","extensionPublisher":"Microsoft","Extension version":"17.0.14320.0","Component version":"16.0.14248.0","extensionVersion":"17.0.14320.0","componentVersion":"16.0.14248.0","Extension App Id":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","deprecatedKeys":"Company name, AL Object Id, AL Object type, AL Object name, AL Stack trace, Client type, Extension name, Extension App Id, Extension version, Telemetry schema version, Component, Component version, Extension name, Extension App Id, Extension version, Telemetry schema version","Extension name":"System Application","AL Stack trace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","AL Object type":"CodeUnit","AL Object name":"App Key Vault Secret Pr. Impl.","extensionName":"System Application","alObjectType":"CodeUnit","alStackTrace":"AppObjectType: CodeUnit\r\n AppObjectId: 3801\r\n AL CallStack: \"App Key Vault Secret Pr. Impl.\"(CodeUnit 3801).GetSecret - System Application by Microsoft\r\n\"App Key Vault Secret Provider\"(CodeUnit 3800).GetSecret - System Application by Microsoft\r\nHelloWorldPage(Page 50103).OnOpenPage(Trigger) line 6 - ALProject4 by Me","Company name":"CRONUS International Ltd.","alObjectName":"App Key Vault Secret Pr. Impl.","AL Object Id":"3801","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","Client type":"WebClient","companyName":"CRONUS International Ltd.","alObjectId":"3801","clientType":"WebClient","Component":"Dynamics 365 Business Central Server","component":"Dynamics 365 Business Central Server","eventId":"RT0017","failureReason":"Secret not found in key vault. Check that the secret name is valid.","keyVaultUrl":"https://jswymer-keyvault-1.vault.azure.net/"}
+This KQL code can help you get started troubleshooting Azure Keyvault retrieval errors.
 
--->
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0017' 
+| project timestamp
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, alStackTrace = customDimensions.alStackTrace
+, clientType = customDimensions.clientType
+, extensionName = customDimensions.extensionName
+, extensionId = customDimensions.extensionId
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, failureReason = customDimensions.failureReason
+, keyVaultUrl = customDimensions.keyVaultUrl
+```
+
 
 ## See also
 

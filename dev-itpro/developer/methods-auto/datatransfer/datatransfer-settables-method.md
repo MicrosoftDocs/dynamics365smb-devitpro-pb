@@ -3,7 +3,7 @@ title: "DataTransfer.SetTables(Integer, Integer) Method"
 description: "Sets the source and destination tables for the data transfer."
 ms.author: solsen
 ms.custom: na
-ms.date: 08/11/2022
+ms.date: 06/21/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -44,7 +44,7 @@ The destination table for the transfer.
 
 [!INCLUDE[data-transfer](../../../developer/includes/data-transfer.md)]
 
-Use this method when copying data in rows or fields of table to rows or fields of another table. For more information, see [Transferring Data Bewteen Tables](../../../developer/devenv-data-transfer.md).
+Use this method when copying data in rows or fields of table to rows or fields of another table. For more information, see [Transferring Data Between Tables](../../../developer/devenv-data-transfer.md).
 
 ## Example
 

@@ -66,7 +66,7 @@ The [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] for Visual Studio Co
 
 ## <a  name="largeprojects"></a>Enable code analysis on large projects
 
-To improve performance while running code analysis on large projects, you can switch off running code analysis in the background. To do so, open the Command Palette **Ctrl+Shift+P** and choose either **User Settings** or **Workspace Settings**. Then, specify the setting `"al.backgroundCodeAnalysis": false` in settings file.
+To improve performance while running code analysis on large projects, you can follow the performance tips in [Code Analysis Performance Configuration](devenv-code-analysis-performance-configuration).
   
 ## See Also
 

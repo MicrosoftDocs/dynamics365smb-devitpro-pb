@@ -33,7 +33,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Localization updates 
 
-| Country| Feature change |
+| Country/region| Feature change |
 |-------------|--------------|
 | W1 | Enhance the Update Document page for posted documents (support for Payment Reference and Payment Method)|
 

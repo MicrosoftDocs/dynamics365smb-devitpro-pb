@@ -26,7 +26,7 @@ Here's some important information about deleted environments and their recovery:
 
    If you need to recover an environment that was deleted more than seven days ago, open a service request.
 
-- When you delete environment, it's automatically renamed to include a suffix with the format `-yyyyMMddHHmm`.
+- When you delete environment, it's automatically renamed to include a suffix with the format `-yyMMddHHmmss`.
 
    The reason for this renaming is that environment names must be unique among all environments of the same application family. This requirement also includes soft-deleted environments. However, in some cases, you may want to reuse the name of a soft-deleted environment. Automatically renaming a soft-deleted environment avoids naming conflicts and lets you quickly create a new environment with the same name. 
 

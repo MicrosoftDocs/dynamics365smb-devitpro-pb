@@ -1,8 +1,8 @@
 ---
-title: "How to Work with a Performance Problem"
+title: "How to work with a performance problem"
 description: Troubleshooting process that can help to guide you to find the root cause slow performance.
 ms.custom: na
-ms.date: 11/17/2022
+ms.date: 05/24/2023
 ms.reviewer: solsen
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -40,11 +40,11 @@ Business Central comes with a number of tools that can be used to analyze a perf
 |Performance tool | Properties |
 |---------------------------------|-------------|
 | Page inspector | Good to troubleshoot performance of a single page. <br> No need to enable this (always available). <br> End users can run the tool. <br> Data collection must happen live.  | 
-|In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.  | 
+|In-client performance profiler | Good for troubleshooting a performance scenario in the web client. <br>No developer required to run the tool.<br>For more information, see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md). | 
 |Telemetry | Can be used if you want to investigate things after they happened. <br> Good for analyzing patterns across sessions. <br> Extensive resources available (Power BI report, Jupyter notebooks, sample KQL queries). <br> Little performance impact to have turned on always. <br> Telemetry must be enabled before the performance issue occurs. <br> Not every single AL call is logged to telemetry as this would slow down the Business Central server. | 
 |Verbose telemetry | Will give you all SQL queries for the session where you repro the issue. <br> Will slow down the system while running. <br> Can inject much data into Azure Application Insights. <br> Data collection must happen live. |
 |Database performance pages|The pages _Database Missing Indexes_ and _Database Wait Statistics_ show insights into database performance and how to fix it. |
-| AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. |
+| AL profiler | Good to troubleshoot performance of a scenario. <br> Detailed information on where in the code the time is spent. <br> No need to enable this (always available). <br> Requires a developer to run the tool. <br> Data collection must happen live. <br>For more information, see [AL Profiler](../developer/devenv-al-profiler-overview.md) |
 
 
 ## Analyzing performance issues using the page inspector
@@ -53,26 +53,26 @@ If a specific page takes too long to load, it might be due to extensions that ar
 
 Read more about how to use the page inspector to troubleshoot extension performance here [Inspecting and Troubleshooting Pages](../developer/devenv-inspecting-pages.md).
 
-
 ## Analyzing performance issues using the in-client Performance Profiler 
 
 Use the in-client **Performance Profiler** page to record a slow scenario that can then be analyzed to see where time was spent. The tool is simple to use and can therefore be used by end-users, admins, and consultants to do performance investigations directly in the web client, to verify performance issues, understand which extensions are at play, and the likelihood of an extension being the cause of a performance degradation. 
 
-Do this to profile a scenario:
-1. Start the profiler
-2. Perform the scenario
-3. Stop profiler
+To profile a scenario, the overall steps are the following:
+
+1. Start the Performance Profiler
+2. Perform the (slow) scenario
+3. Stop the Performance Profiler
+
+For more specific information on how to start and use the in-client Performance Profiler see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md).
 
 When analyzing the result, you have three options:
+
 1. Look at _Active Apps_ to see in which app time is spent (did you recently install an app?).
 2. Click on an app to see how time is distributed over the apps/extensions that have code running in the app.
 3. Go to _Time Spent by Application Object_ to see the distribution of time spent in the AL call tree (this is an advanced option).
 4. Download the generated profile content and share it with a developer. The profile file can be viewed in Visual Studio Code with the standard AL Profiler editor. From there, you can use existing options to access the AL code that was slow.
 
-The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. 
-
-Read more about how to use the in-client profiler to troubleshoot performance here [Performance Profiler Overview](../administration/performance-profiler-overview.md).
-
+The in-client Performance Profiler is a lighter tool than the AL Profiler and, as it relies on *sampling*, it can perform in scenarios that would otherwise take longer time when using the AL Profiler with the *instrumentation* option. For more specific information on how to use the in-client Performance Profiler to troubleshoot performance see [In-client Performance Profiler overview](../administration/performance-profiler-overview.md). For more information about the AL Profiler, see [AL Profiler](../developer/devenv-al-profiler-overview.md).
 
 ## Analyzing performance issues using telemetry
 

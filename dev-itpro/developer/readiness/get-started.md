@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.reviewer: solsen
 ms.author: kurtju
 ms.date: 08/02/2022
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get Started with Building Apps

@@ -6,7 +6,7 @@ author: SusanneWindfeldPedersen
 ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: jswymer
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get started with the Container Sandbox Development Environment

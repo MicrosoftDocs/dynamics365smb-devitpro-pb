@@ -20,7 +20,6 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Feature changes  
 - [Turn off event-based sync for specific integration table mappings](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/turn-off-event-based-synch-specific-integration-table-mappings)
-- [Synchronize returns, refunds from Shopify](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/synchronize-returns-refunds-shopify)
 - [Save time with automatic account codes](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/automatic-account-codes)
 - [Swedish localization delivered as extension](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/swedish-localization-app--delocalization) 
 - [Attach AL debugger to active session or next session](/dynamics365/release-plan/2023wave1/smb/dynamics365-business-central/attach-al-debugger-active-session-or-next-session-specific-user)  
@@ -36,6 +35,8 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 | W1 | Added field Registration No. to Contacts | We already had added the Registration No. field to the customer and vendor cards, but this field has been added to the Contact card as well. |
 | Norway | An electronic invoice in EHF 3.0 format validation improvement | Previously, an electronic invoice in EHF 3.0 format couldn't be validated successfully when the document contains a negative line for invoice rounding, and with this release it is improved. |
 | Spain | Added field 'Closed' to the table 'No Taxable Entry' | Added the field 'Closed' to the table 'No Taxable Entry' to avoid pending amounts in VAT Declarations, so now users can filter 'No Taxable Entries' by Open or Closed status. |
+| Italy | Intrastat | The Intrastat extension makes it easy to export the Intrastat report in the format that the Italian authorities require. |
+| Italy | Service Declaration | The Service Declaration extension makes it easy to export the Service Declaration report in the format that the Italian authorities require. |
 
 ## Release Plan
 

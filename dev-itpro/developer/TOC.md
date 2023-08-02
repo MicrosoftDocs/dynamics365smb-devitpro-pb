@@ -864,6 +864,7 @@
 #### [AA0244](analyzers/codecop-aa0244.md)
 #### [AA0245](analyzers/codecop-aa0245.md)
 #### [AA0246](analyzers/codecop-aa0246.md)
+#### [AA0247](analyzers/codecop-aa0247.md)
 #### [AA0448](analyzers/codecop-aa0448.md)
 #### [AA0462](analyzers/codecop-aa0462.md)
 #### [AA0470](analyzers/codecop-aa0470.md)
@@ -898,9 +899,11 @@
 #### [AS0032](analyzers/appsourcecop-as0032.md)
 #### [AS0033](analyzers/appsourcecop-as0033.md)
 #### [AS0034](analyzers/appsourcecop-as0034.md)
+#### [AS0035](analyzers/appsourcecop-as0035.md)
 #### [AS0036](analyzers/appsourcecop-as0036.md)
 #### [AS0038](analyzers/appsourcecop-as0038.md)
 #### [AS0039](analyzers/appsourcecop-as0039.md)
+#### [AS0040](analyzers/appsourcecop-as0040.md)
 #### [AS0041](analyzers/appsourcecop-as0041.md)
 #### [AS0042](analyzers/appsourcecop-as0042.md)
 #### [AS0043](analyzers/appsourcecop-as0043.md)
@@ -972,6 +975,8 @@
 #### [AS0112](analyzers/appsourcecop-as0112.md)
 #### [AS0113](analyzers/appsourcecop-as0113.md)
 #### [AS0114](analyzers/appsourcecop-as0114.md)
+#### [AS0115](analyzers/appsourcecop-as0115.md)
+#### [AS0118](analyzers/appsourcecop-as0118.md)
 ### PerTenantExtensionCop Analyzer Rules
 #### [PTE0001](analyzers/pertenantextensioncop-pte0001.md)
 #### [PTE0002](analyzers/pertenantextensioncop-pte0002.md)
@@ -1009,6 +1014,7 @@
 #### [AW0013](analyzers/uicop-aw0013.md)
 #### [AW0014](analyzers/uicop-aw0014.md)
 #### [AW0015](analyzers/uicop-aw0015.md)
+#### [AW0016](analyzers/uicop-aw0016.md)
 <!-- [//]: # (IMPORTANT: END>DO_NOT_EDIT_ANALYZERS) -->
 
 ## Data Types and Methods

@@ -20,7 +20,7 @@ The following table is a checklist of all requirements that you **must meet befo
 |Requirement|Example/Guidance|
 |-----------|----------------|
 |Develop your extension in Visual Studio Code.|[Developing [!INCLUDE[d365al_ext_md](../../includes/d365al_ext_md.md)]s](devenv-dev-overview.md)|
-|The app.json file has mandatory settings that you must include. Here you can also read more about dependency syntax and multiple countries per a single app syntax.|[Mandatory app.json settings](devenv-json-files.md)|
+|The app.json file has mandatory settings that you must include. Here you can also read more about dependency syntax and multiple countries/regions per a single app syntax.|[Mandatory app.json settings](devenv-json-files.md)|
 |Coding of `Date` must follow a specific format (**no longer region-specific**)|Use the format `yyyymmddD`. For example, `20170825D`.|
 |Remote services (including all Web services calls) can use either HTTP or HTTPS. However, HTTP calls are only possible by using the HttpRequest AL type.|[Guidance on HTTP use](devenv-restapi-overview.md)|
 |Only JavaScript based Web client add-ins are supported. The zipping process is handled automatically by the compiler. Simply include the new AL `controladdin` type, JavaScript sources, and build the app.|[Control Add-Ins](devenv-control-addin-object.md)|
