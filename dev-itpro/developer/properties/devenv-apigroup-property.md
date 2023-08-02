@@ -1,5 +1,6 @@
 ---
 title: "APIGroup Property"
+description: "The APIGroup property for pages and queries."
 ms.author: solsen
 ms.custom: na
 ms.date: 04/01/2021

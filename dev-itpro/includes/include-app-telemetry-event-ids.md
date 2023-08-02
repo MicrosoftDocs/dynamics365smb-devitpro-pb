@@ -1,8 +1,11 @@
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 |AL0000CTV|Email|[Email sent successfully](../administration/telemetry-email-trace.md#success)|
-| AL0000CTE | Field monitoring  | [Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})](../administration/telemetry-field-monitoring-trace.md#changed) |
 |AL0000CTP|Email|[Failed to send email](../administration/telemetry-email-trace.md#failed)|
+|AL0000GKK|Email|[Authenticated to SMTP server](../administration/telemetry-email-trace.md#smtp_auth)|
+|AL0000GKJ|Email|[Connected to SMTP server](../administration/telemetry-email-trace.md#smtp_connection)|
+|AL0000GKL|Email|[Email sent (using SMTP)](../administration/telemetry-email-trace.md#smtp_sent)|
+|AL0000CTE|Field monitoring| [Sensitive field value has changed: {alfieldCaption} ({alFieldNumber}) in table {altableCaption} ({alTableNumber})](../administration/telemetry-field-monitoring-trace.md#changed) |
 | AL0000DD3 | Field monitoring | [Sensitive field monitor status has changed to {almonitorStatus}](../administration/telemetry-field-monitoring-trace.md#status) |
 |AL0000EMW|Field monitoring |[Sensitive field added to or removed from monitor: {alfieldCaption} ({alFieldNumber}) in table {alTableCaption} ({alTableNumber})](../administration/telemetry-field-monitoring-trace.md#added)|
 |AL0000E2A|Permissions|[User-defined permission set added: {alPermissionSetId}](../administration/telemetry-permission-changes-trace.md#setadded)|

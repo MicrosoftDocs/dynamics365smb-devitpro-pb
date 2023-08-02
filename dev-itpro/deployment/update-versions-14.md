@@ -33,6 +33,8 @@ Every update includes the following local versions: AT, AU, BE, CH, CZ, DE, DK, 
 
 |Knowledge Base ID                                           |Title                |Release date  |Build No. |
 |------------------------------------------------------------|---------------------|--------------|----------|
+|[5029054](https://support.microsoft.com/help/5029054)|Cumulative Update 49|July 2023|Application Build 14.50</br>Platform Build 14.0|
+|[5027889](https://support.microsoft.com/help/5027889)|Cumulative Update 48|June 2023|Application Build 14.49.49909</br>Platform Build 14.0.49902|
 |[5026929](https://support.microsoft.com/help/5026929)|Cumulative Update 47|May 2023|Application Build 14.48.49868</br>Platform Build 14.0.49864|
 |[5025972](https://support.microsoft.com/help/5025972)|Cumulative Update 46|April 2023|Application Build 14.47.49814</br>Platform Build 14.0.49811|
 |[5024400](https://support.microsoft.com/help/5024400)|Cumulative Update 45|March 2023|Application Build 14.46.49756</br>Platform Build 14.0.49754|

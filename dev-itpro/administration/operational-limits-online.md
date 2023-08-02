@@ -113,7 +113,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
 |Max body size| The maximum request body size. |  350 megabytes|
-|Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
+|Max concurrent requests|The maximum number of OData V4 requests the server instance can actively process at the same time. Requests that come in when the  the limit is exceeded, will wait in a queue until a time slot becomes available. The request waits in the server request queue until timeout (currently 8 minutes), where an HTTP response code `503 - Service Temporarily Unavailable` is returned. |5|
 |Max connections|The maximum number of simultaneous OData requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|100 |
 |Max page size|The maximum number of entities returned per OData request.|  20,000 entities per request|
 |Max batch size|The maximum number of operations in an OData $batch request.| 100 operations per batch|
@@ -129,7 +129,7 @@ For [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online, you can'
 
 |Setting|[!INCLUDE[bp_tabledescription](../developer/includes/bp_tabledescription_md.md)]| Limit|  
 |---------|--------------------------------------------------------------------------------|------|
-|Max concurrent requests|The maximum number of SOAP requests the server instance can actively process at the same time. Requests that exceed the limit will wait in the queue until a time slot becomes available.|5|
+|Max concurrent requests|The maximum number of SOAP requests the server instance can actively process at the same time. Requests that come in when the limit is exceeded, will wait in a queue until a time slot becomes available. The request waits in the server request queue until timeout (currently 8 minutes), where an HTTP response code `503 - Service Temporarily Unavailable` is returned .|5|
 |Max connections|The maximum number of simultaneous SOAP requests on the server instance, including concurrent and queued requests. When the limit is exceeded, a `429 (Too Many Requests)` error occurs.|100 |
 |Max message size|The maximum permitted size of a SOAP web service requests|65,536 KB|
 |Max request queue size|The maximum number of pending SOAP requests waiting to be processed. When the limit is exceeded, a 429 (Too Many Requests) error occurs.|95|

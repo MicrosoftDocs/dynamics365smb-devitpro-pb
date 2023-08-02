@@ -22,7 +22,7 @@ Outgoing web service request telemetry gathers data about outgoing web service r
 The following table explains the general dimensions included in an outgoing **Web Services Call (Outgoing)** trace. The table lists the dimensions that are specific to Business Central.
 
 |Dimension|Description or value|
-|---------|-----|-----------|
+|---------|--------------|
 |message|**Web Service Called (Outgoing): {endpoint}**|
 |severityLevel|**1**|
 
@@ -50,6 +50,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |eventId|**RT0019**|
 |extensionId|Specifies the appID of the extension that made the request.|
 |extensionName|Specifies the name of the extension that made the request.|
+|extensionPublisher|Specifies the publisher of the extension that made the request.|
 |extensionVersion|Specifies the version of the extension that made the request.|
 |httpHeaders|Specifies the http headers set in the request. </br></br>Introduced in version 17.2.|
 |httpMethod|Specifies the HTTP method used in the outgoing request. Values include: POST, GET, PUT, PATCH, or DELETE. |
@@ -59,7 +60,7 @@ The following table explains the custom dimensions included in a **Web Services 
 |totalTime|Specifies the amount of time it took to process the request, including the time to open the company. The time has the format hh:mm:ss.sssssss. <br /><br />|
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema.|
 
-### Sample KQL code 
+## Sample KQL code 
 This KQL code can help you get started analyzing outgoing web service calls. 
 
 ```kql
@@ -101,6 +102,15 @@ traces
 ## Performance considerations
 
 [!INCLUDE[httpclientPerformance](../includes/performance-outgoing-http.md)] 
+
+## Troubleshoot errors
+
+[!INCLUDE[httpclientErrors](../includes/errors-outgoing-http.md)] 
+
+### HTTP status codes
+
+[!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
+
 
 ## See also
 
