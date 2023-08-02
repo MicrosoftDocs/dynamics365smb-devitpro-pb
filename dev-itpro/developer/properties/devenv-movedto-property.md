@@ -1,6 +1,6 @@
 ---
-title: "InherentPermissions Property"
-description: "Specifies the permissions that are inherently assigned to the given object."
+title: "MovedTo Property"
+description: "Specifies the destination extension Id when a table is moved to another extension."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023
@@ -13,18 +13,13 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# InherentPermissions Property
-> **Version**: _Available or changed with runtime version 11.0._
+# MovedTo Property
+> **Version**: _Available or changed with runtime version 12.0._
 
-Specifies the permissions that are inherently assigned to the given object.
+Specifies the destination extension Id when a table is moved to another extension.
 
 ## Applies to
--   Query
--   Report
--   Xml Port
 -   Table
--   Codeunit
--   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

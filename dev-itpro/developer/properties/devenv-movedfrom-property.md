@@ -1,6 +1,6 @@
 ---
-title: "InherentPermissions Property"
-description: "Specifies the permissions that are inherently assigned to the given object."
+title: "MovedFrom Property"
+description: "Specifies the origin extension ID when a table is moved to a new extension."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023
@@ -13,18 +13,13 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# InherentPermissions Property
-> **Version**: _Available or changed with runtime version 11.0._
+# MovedFrom Property
+> **Version**: _Available or changed with runtime version 12.0._
 
-Specifies the permissions that are inherently assigned to the given object.
+Specifies the origin extension ID when a table is moved to a new extension. If the source table exists in the database during the sync operation, the table will be moved to this extension along with all its data. Otherwise, a new table will be created in the database.
 
 ## Applies to
--   Query
--   Report
--   Xml Port
 -   Table
--   Codeunit
--   Page
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
