@@ -3,12 +3,12 @@ title: "Getting Started Developing Connect Apps for Dynamics 365 Business Centra
 description: Learn how to get started developing a Connect app 
 author: SusanneWindfeldPedersen
 ms.author: solsen
-ms.date: 01/09/2023
+ms.date: 07/14/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Getting Started Developing Connect Apps for [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)]
@@ -27,21 +27,20 @@ When you have your tenant, you can sign into the UI to play with the product, an
         > [!IMPORTANT]  
         > Basic authentication is deprecated with Business Central 2022, release wave 1 for SaaS. For more information, see [Deprecated Features in the Platform - Clients, Server, and Database](../upgrade/deprecated-features-platform.md#accesskeys).
 
-To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. [See Exploring the APIs with Postman and Azure AD authentication below](#exploring-the-apis-with-postman-and-azure-ad-authentication).
+To construct the URL for the environment, the path needs to contain the environment name. To learn how to get a list of environments deployed on the tenant, see [Getting a List of Environments](../webservices/api-get-environments.md). OAuth required for this endpoint. Learn more in the [Exploring the APIs with Postman and Azure AD authentication](#exploring-apis-with-postman-and-azure-ad-authentication) section.
 
 In the following sections you can read more about setting up the two types of authentication and using both authentication methods in Postman.
 
 APIs can also be explored through the [OpenAPI specification for Business Central](/dynamics-nav/api-reference/v1.0/dynamics-open-api).
 
 ## Setting up basic authentication
-
 If you prefer to set up an environment with basic authentication just to explore the APIs, you can skip setting up the Azure AD based authentication for now and proceed with the steps below. If you, however, want to go into production, you must use Azure AD/Oauth v2 authentication, see the section [Setting up Azure Active Directory (Azure AD) based authentication](#AAD).
 
 1. To set up basic authentication, log into your tenant, and in the **Search** field, enter **Users** and then select the relevant link.
 2. Select the user to add access for, and on the **User Card** page, in the **Web Service Access Key** field, generate a key.  
 3. Copy the generated key and use it as the password for the username. 
 
-Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-the-apis-with-postman-and-basic-authentication) section we'll use Postman.
+Now that we have the username and password, we can connect and authenticate, which you can do from code, or API explorers such as Postman or Fiddler. In the [Exploring the APIs with Postman and basic authentication](#exploring-apis-with-postman-and-basic-authentication) section, we use Postman.
 
 ## <a name="AAD"></a>Setting up Azure Active Directory (Azure AD) based authentication
 
@@ -63,9 +62,9 @@ Sign in to the [Azure Portal](https://portal.azure.com) to register [!INCLUDE[d3
     > [!NOTE]  
     > You'll need this key later to configure the project in Visual Studio. This key value will not be displayed again, nor retrievable by any other means, so record it as soon as it is visible from the Azure portal.
 
-You have now set up the Azure AD based authentication. Next, you can go exploring the APIs, see the [Exploring the APIs with Postman and Azure AD authentication](#exploring-the-apis-with-postman-and-azure-ad-authentication) section below.
+You have now set up the Azure AD based authentication. Next, you can go exploring the APIs. Learn more in the [Exploring the APIs with Postman and Azure AD authentication](#exploring-apis-with-postman-and-azure-ad-authentication) section.
 
-## Exploring the APIs with Postman and basic authentication
+## Exploring APIs with Postman and basic authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with basic authentication. 
 
@@ -80,7 +79,7 @@ In this `Hello World` example, we're going over the basic steps required to retr
 
 3. Choose **Send** in Postman to execute the call, and inspect the returned body, which should include a list of the APIs.
 
-## Exploring the APIs with Postman and Azure AD authentication
+## Exploring APIs with Postman and Azure AD authentication
 
 In this `Hello World` example, we're going over the basic steps required to retrieve the list of customers in our trial tenant. This example is based on running with Azure AD authentication.
 
@@ -108,7 +107,7 @@ An Authorization request header is now added containing the Bearer token.
    > * Auth URL: https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com 
    > * Client ID: 060af3ac-70c3-4c14-92bb-8a88230f3f38
 
-## Calling the API
+## Calling an API 
 Each resource is uniquely identified through an ID, see the following example of calling `GET <endpoint>/companies`:  
 
 ```json
@@ -126,12 +125,14 @@ Each resource is uniquely identified through an ID, see the following example of
     }
 ```
 
-The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis () after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
+The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in parenthesis `()` after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`.
 
 All resources, such as customers, invoices etc., live in the context of a parent company, of which there can be more than one in the [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] tenant. Therefore, it's a requirement to provide the company ID in the URL for all resource API calls. To GET all customers in the "CRONUS USA, Inc." company, we must call a GET on the URL `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`.
 
-## See Also
 
-[Developing a Custom API](devenv-develop-custom-api.md)  
+## See also
+[API Developer Overview](devenv-api.md)
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
-[Tips for Working with APIs](devenv-connect-apps-tips.md)
+[Tips for Working with APIs](devenv-connect-apps-tips.md)   
+[Troubleshooting API calls](../webservices/dynamics-error-codes.md)    
+[API performance](../webservices/web-service-performance.md)   

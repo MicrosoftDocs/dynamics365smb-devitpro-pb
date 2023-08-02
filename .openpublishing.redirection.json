@@ -7356,12 +7356,17 @@
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/record/record-findset-method.md",
-    "redirect_url": "dev-itpro/developer/methods-auto/record/record-findset-boolean-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/record/record-findset-boolean-method",
     "redirect_document_id": false
    },
    { 
     "source_path": "dev-itpro/developer/methods-auto/recordref/recordref-findset-method.md",
-    "redirect_url": "dev-itpro/developer/methods-auto/recordref/recordref-findset-boolean-method",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer/methods-auto/recordref/recordref-findset-boolean-method",
+    "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/api-reference/v2.0/dynamics-error-codes.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/webservices/dynamics-error-codes",
     "redirect_document_id": false
    }
   ] 

@@ -139,7 +139,7 @@ To upload your deployable package, you will create a project in LCS.
     |  Field  |  Value  |
     |---------|---------|
     |Product name|[!INCLUDE[d365_bus_ctr_long_md](includes/d365_bus_ctr_long_md.md)]|
-    |Country|Set this to the country where your solution will be published.|
+    |Country|Set this to the country/region where your solution will be published.|
     |Import roles and users from existing LCS project|No|
 
 5. Select **Create**. 

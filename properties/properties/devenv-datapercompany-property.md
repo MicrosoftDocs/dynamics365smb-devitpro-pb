@@ -13,7 +13,7 @@ author: SusanneWindfeldPedersen
 
 # DataPerCompany Property
 
-Sets a value that indicates whether the table data applies to all companies in the database or only the current company. Some data can be useful to share across companies, data such as zip codes, country, and state.
+Sets a value that indicates whether the table data applies to all companies in the database or only the current company. Some data can be useful to share across companies, data such as zip codes, country/region, and state.
 
 Whether the value of this property can be changed is dependent on if the table holds data or not.
 
