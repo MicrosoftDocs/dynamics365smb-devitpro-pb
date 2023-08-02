@@ -44,6 +44,10 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Supported HTTP methods
+[!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
+
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  

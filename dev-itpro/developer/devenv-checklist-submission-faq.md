@@ -92,7 +92,7 @@ You're only required to include the dependencies for your extension as part of y
 
 If you didn't include the dependencies for your app and they aren't available, your submission will fail during the "Automated Application Validation" stage. Failing to find the dependencies for an extension results in error messages with the diagnostic codes `AVS0005` or `AVS0101`.
 
-If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file).
+If you receive an error with the diagnostic code `AVS0107` and a message similar to `The extension 'MyApp' by 'MyPublisher' (version '1.2.3.4') has already been uploaded to Business Central for the country/region 'US'` for one of your library apps, it means that you've already published another .app file for this extension to [!INCLUDE[prod_short](../includes/prod_short.md)] as part of a previous submission. This can happen if you submit a .app file with different content, or created by a different build (each .app file created has a specific build ID stamped, so building multiple times the same project results in .app files with different build IDs). If this version of the library is already available for all countries/regions targeted by your submission, you can just remove the extension from the submission. If you're making your library available in new countries/regions, you should use the .app file that has already been uploaded to [!INCLUDE[prod_short](../includes/prod_short.md)] or increase the version number in the manifest of the extension (the app.json file).
 
 ### My app failed at the "Automated application validation" stage, what do I do next?
 
@@ -129,10 +129,11 @@ If this stage failed with the following error message `Automated upload to Busin
 
 If your submission failed at another stage than "Automated application validation", "Certification", or "Publish application with the service", you should create a support case in Partner Center as documented in the dedicated section below.
 
-## Questions about hotfixing an AppSource extension
+## Questions about hotfixing an AppSource app
 
-### What is qualified as a hotfix submission?
+For questions like what is qualified as a hotfix submission or what kind of changes can't be part of a hotfix, see [Hotfixing an AppSource app](devenv-hotfixing-appsource-app.md)
 
+<!--
 We're defining as `hotfix` the submission of a new version of an AppSource extension which will not become the latest version available in AppSource. 
 
 For example, if you have version 2.0.0.0 of your extension available in AppSource, and you submit a new version 1.5.0.0, then version 1.5.0.0 is considered a hotfix because 1.5.0.0 will not become the latest version available.
@@ -141,7 +142,7 @@ For example, if you have version 2.0.0.0 of your extension available in AppSourc
 > When submitting a hotfix, you must not update the version of your offer in Partner Center to match the hotfix version submitted, because the version in Partner Center is shown on the AppSource marketplace listing, which is meant to show the latest version.
 
 > [!Note]  
-> The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
+> The concept of hotfix is tied to the country/region for which your apps version are available. If you have different versions of your apps on some countries/regions, your submission might be a hotfix for one country, but not for another one. However, we generally do not recommend having different versions per country.
 
 ### Against which releases is a hotfix submission validated?
 
@@ -192,7 +193,7 @@ If you submit a new version 1.5.0.0, you're then allowed to add the following pr
 - `[Obsolete] procedure MyNewObsoleteProcedure()` because it's obsolete pending,
 - `MyPublicProcedureFromV2()` because it's already defined in the next version.
 
-However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure.
+However, you're not allowed to define a new procedure `procedure MyNewPublicProcedure()`, because the service will detect that upgrading from version to 1.5.0.0 to version 2.0.0.0 results in the deletion of a public procedure. -->
 
 ## Questions about Azure Application Insights usage during AppSource submissions
 
@@ -302,9 +303,9 @@ If you are submitting a new version of your extension with a different App ID fo
 
 Each unique codebase has one unique ID. If you have four apps in AppSource, you need to have four unique IDs for these apps. Otherwise you'll get conflicts. 
 
-### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries? 
+### What if we already have an app on AppSource but we need to create the same app for another country; can we then have the same app ID for two different apps targeting two different countries/regions? 
 
-If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries (with one app identity) and localized functionality as extensions on top (with their own identity). 
+If they're different apps (different code), they should have different identity. Identity is used in, for example, app management, dependencies, support cases, and telemetry. If reused across different apps, identity uniqueness is lost. Another approach could be a common shared (internal/library) app across countries/regions (with one app identity) and localized functionality as extensions on top (with their own identity). 
 
 ## Questions about Business Central offers
 

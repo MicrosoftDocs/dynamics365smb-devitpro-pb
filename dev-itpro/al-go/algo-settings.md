@@ -36,7 +36,7 @@ When a workflow or a local script is run, the settings are applied by reading on
 | Name | Description | Default value |
 | :-| :-| :-|
 | type | Specifies the type of project. Allowed values are **PTE** or **AppSource App**. This value comes with the default repository. | `PTE` |
-| country | Specifies which country this app is built against. | `us` |
+| country | Specifies which country/region this app is built against. | `us` |
 | repoVersion | RepoVersion is the repository version number. The repository version number is used for naming build artifacts in the CI/CD workflow. Build artifacts are named **\<project\>-Apps-\<repoVersion\>.\<build\>.\<revision\>** and can contain multiple apps. Individual apps are versioned independently of this setting. | `1.0` |
 | appFolders | appFolders should be an array of folders (relative to project root), which contains apps for this project. Apps in these folders are sorted based on dependencies and built and published in that order. | `[ ]` |
 | testFolders | testFolders should be an array of folders (relative to project root), which contains test apps for this project. Apps in these folders are sorted based on dependencies and built, published and tests are run in that order. | `[ ]` |
@@ -63,7 +63,7 @@ The repository settings are only read from the repository settings file (.github
 
 | Name | Description | Default value |
 |--------|-------|-------------------|
-| artifact | Determines the artifacts used for building and testing the app.<br />This setting can either be an absolute pointer to Business Central artifacts (https://... rarely used) or it can be a search specification for artifacts `(\<storageaccount\>/\<type\>/\<version\>/\<country\>/\<select\>/\<sastoken\>)`.<br />If not specified, the artifacts used will be the latest sandbox artifacts from the country specified in the country setting. | n/a |
+| artifact | Determines the artifacts used for building and testing the app.<br />This setting can either be an absolute pointer to Business Central artifacts (https://... rarely used) or it can be a search specification for artifacts `(\<storageaccount\>/\<type\>/\<version\>/\<country\>/\<select\>/\<sastoken\>)`.<br />If not specified, the artifacts used will be the latest sandbox artifacts from the country/region specified in the country setting. | n/a |
 | updateDependencies | Setting updateDependencies to true causes AL-Go to build your app against the first compatible Business Central build and set the dependency version numbers in the app.json accordingly during build. All version numbers in the built app are set to the version number used during compilation. | false |
 | generateDependencyArtifact | When this repository setting is true, CI/CD pipeline generates an artifact with the external dependencies used for building the apps in this repo. | false |
 | companyName | Company name selected in the database, used for running the CI/CD workflow. Default is to use the default company in the selected Business Central localization. | n/a |
