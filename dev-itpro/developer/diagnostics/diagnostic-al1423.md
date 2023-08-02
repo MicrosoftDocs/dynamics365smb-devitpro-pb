@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0765"
-description: "An argument of type {0} cannot be used in an External Business Event."
+title: "Compiler Designer Customization Warning AL1423"
+description: "'{0}' does not contain a definition for '{1}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023
@@ -13,15 +13,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0765
+# Compiler Designer Customization Warning AL1423
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An argument of type {0} cannot be used in an External Business Event.
+'{0}' does not contain a definition for '{1}'.
 
 
 ## Description
-An invalid argument type is used in the payload of an External Business Event.  
+The referenced element does not contain a definition for the referenced member.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0765"
-description: "An argument of type {0} cannot be used in an External Business Event."
+title: "Compiler Error AL0781"
+description: "Cannot find a reference of DataItem with name '{0}'."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023
@@ -13,15 +13,12 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0765
+# Compiler Error AL0781
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An argument of type {0} cannot be used in an External Business Event.
+Cannot find a reference of DataItem with name '{0}'.
 
-
-## Description
-An invalid argument type is used in the payload of an External Business Event.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  

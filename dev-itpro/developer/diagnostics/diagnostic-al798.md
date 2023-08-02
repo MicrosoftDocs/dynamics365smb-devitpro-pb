@@ -1,6 +1,6 @@
 ---
-title: "Compiler Error AL0765"
-description: "An argument of type {0} cannot be used in an External Business Event."
+title: "Compiler Error AL0798"
+description: "The Application Object of type {0} and ID {1} can only be moved by Microsoft."
 ms.author: solsen
 ms.custom: na
 ms.date: 08/02/2023
@@ -13,15 +13,15 @@ author: SusanneWindfeldPedersen
 [//]: # (START>DO_NOT_EDIT)
 [//]: # (IMPORTANT:Do not edit any of the content between here and the END>DO_NOT_EDIT.)
 [//]: # (Any modifications should be made in the .xml files in the ModernDev repo.)
-# Compiler Error AL0765
+# Compiler Error AL0798
 
 [!INCLUDE[banner_preview](../includes/banner_preview.md)]
 
-An argument of type {0} cannot be used in an External Business Event.
+The Application Object of type {0} and ID {1} can only be moved by Microsoft.
 
 
 ## Description
-An invalid argument type is used in the payload of an External Business Event.  
+Only First Party Apps can move application objects.  
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 ## See Also  
