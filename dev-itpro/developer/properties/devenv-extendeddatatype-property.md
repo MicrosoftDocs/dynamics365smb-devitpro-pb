@@ -55,4 +55,5 @@ The value of this property on a page control overrides the same property on a ta
 
 ## See Also
 
-[Properties](devenv-properties.md)
+[Properties](devenv-properties.md)  
+[Creating a rich text editor](devenv-create-richtexteditor.md)
