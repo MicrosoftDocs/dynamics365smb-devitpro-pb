@@ -900,6 +900,7 @@
 #### [Job queue](developer/devenv-job-queue.md)
 
 ### Calling external services
+#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)-->
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  

@@ -41,9 +41,12 @@ The response received from the remote endpoint.
 *[Optional] Ok*  
 &emsp;Type: [Boolean](../boolean/boolean-data-type.md)  
 Accessing the HttpContent property of HttpResponseMessage in a case when the request fails will result in an error. If you omit this optional return value and the operation does not execute successfully, a runtime error will occur.  
-
-
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
+
+## Supported HTTP methods
+
+[!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
+
 ## See Also
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
