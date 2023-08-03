@@ -62,7 +62,6 @@ There are different ways to install DocFx v2. You can use [Chocolatey Software |
     ```bash
     docfx --version
     ```
-
 Now, you have successfully installed DocFx v2 on your machine.
 
 ## Install the ALDoc tool
