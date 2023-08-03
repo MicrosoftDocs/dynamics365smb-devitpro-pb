@@ -26,10 +26,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |----------------|--------------|---------| -------------|----------------------------------|
 |Albania|Partner|W1|Available|AL|
 |Algeria|Partner|W1|Available|DZ|
+|American Samoa|Partner|W1|Planned for December 2023|AS|
 |Andorra|Partner|ES|Available|AD|
 |Angola|Partner|W1|Available|AO|
+|Anguilla|Partner|W1|Planned for December 2023|AI|
 |Argentina|Partner|W1|Available|AR|
 |Armenia|Partner|W1|Available|AM|
+|Aruba|Partner|W1|Planned for December 2023|AW|
 |Australia|Microsoft|AU|Available|AU|
 |Austria|Microsoft|AT|Available|AT|
 |Azerbaijan|Partner|W1|Available|AZ|
@@ -42,23 +45,30 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Bosnia and Herzegovina|Partner|W1|Available|BA|
 |Botswana|Partner|W1|Available|BW|
 |British Virgin Islands|Partner|W1|Available|VG|
+|Brunei|Partner|W1|Planned for December 2023|BN|
 |Bulgaria|Partner|W1|Available|BG|
 |Brazil|Partner|W1|Available|BR|
 |Cambodia|Partner|W1|Available|KH|
 |Cameroon|Partner|W1|Available|CM|
 |Canada|Microsoft|NA|Available|CA|
+|Cape Verde|Partner|W1|Planned for December 2023|CV|
 |Cayman Islands|Partner|W1|Available|KY|
+|Chad|Partner|W1|Planned for Decmber 2023|TD|
 |Chile|Partner|W1|Available|CL|
 |Colombia|Partner|W1|Available|CO|
 |Costa Rica|Partner|W1|Available|CR|
+|Côte d’Ivoire|Partner|W1|Planed for December 2023|CI|
 |Croatia|Partner|W1|Available|HR|
+|Curacao|Partner|W1|Planned for December 2023|CW|
 |Cyprus|Partner|W1|Available|CY|
 |Czechia|Microsoft|W1|Available|CZ|
 |Denmark|Microsoft|W1|Available|DK|
+|Dominica|Partner|W1|Planned for December 2023|DM|
 |Dominican Republic|Partner|W1|Available|DO|
 |Ecuador|Partner|W1|Available|EC|
 |El Salvador|Partner|W1|Available|SV|
 |Egypt|Partner|W1|Available|EG|
+|Eritrea|Partner|W1|Planned for December 2023|ER|
 |Estonia|Partner|W1|Available|EE|
 |Ethiopia|Partner|W1|Available|ET|
 |Faroe Islands (Denmark)|Microsoft|W1|Available|DK|
@@ -70,8 +80,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Ghana|Partner|W1|Available|GH|
 |Greece|Partner|W1|Available|GR|
 |Greenland (Denmark)|Microsoft|W1|Available|DK|
+|Grenada|Partner|W1|Planned for December 2023|GD|
+|Guam|Partner|W1|Planned for December 2023|GU|
 |Guatemala|Partner|W1|Available|GT|
 |Guernsey|Partner|GB|Available|GG|
+|Guinea|Partner|W1|Planned for December 2023|GN|
+|Guyana|Partner|W1|Planned for December 2023|GY|
+|Haiti|Partner|W1|Planned for December 2023|HT|
 |Honduras|Partner|W1|Available|HN|
 |Hong Kong SAR|Partner|W1|Available|HK|
 |Hungary|Partner|W1|Available|HU|
@@ -103,6 +118,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Malta|Partner|W1|Available|MT|
 |Mauritius|Partner|W1|Available|MU|
 |Mexico|Microsoft|NA|Available|MX|
+|Micronesia|Partner|W1|Planned for December 2023|FM|
 |Monaco|Partner|FR|Available|MC|
 |Mongolia|Partner|W1|Available|MN|
 |Montenegro|Partner|W1|Available|ME|
@@ -111,6 +127,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Namibia|Partner|W1|Available|NA|
 |Nepal|Partner|W1|Available|NP|
 |Netherlands|Microsoft|NL|Available|NL|
+|New Caledonia|Partner|W1|Planned for December 2023|NC|
 |New Zealand|Microsoft|NZ|Available|NZ|
 |Nicaragua|Partner|W1|Available|NI|
 |Nigeria|Partner|W1|Available|NG|
@@ -118,7 +135,9 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Norway|Microsoft|NO|Available|NO|
 |Oman|Partner|W1|Available|OM|
 |Pakistan|Partner|W1|Available|PK|
+|Palau|Partner|W1|Planned for December 2023|PW|
 |Panama|Partner|W1|Available|PA|
+|Papua New Guinea|Partner|W1|Planned for December 2023|PG|
 |Paraguay|Partner|W1|Available|PY|
 |Peru|Partner|W1|Available|PE|
 |Philippines|Partner|W1|Available|PH|
@@ -128,11 +147,13 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |Qatar|Partner|W1|Available|QA|
 |Romania|Partner|W1|Available|RO|
 |Russia **(on-premises only)**|Microsoft|RU|Available|(Not listed)|
+|Samoa|Partner|W1|Planned for December 2023|WS|
 |San Marino|Partner|IT|Available|SM|
 |Sao Tome & Principe|Partner|W1|Available|SM|
 |Saudi Arabia|Partner|W1|Available|SA|
 |Senegal|Partner|W1|Available|SN|
 |Serbia|Partner|W1|Available|RS|
+|Seychelles|Partner|W1|Planned for December 2023|SC|
 |Singapore|Partner|W1|Available|SG|
 |Slovakia|Partner|W1|Available|SK|
 |Slovenia|Partner|W1|Available|SI|
@@ -140,6 +161,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |South Korea|Partner|W1|Available|KR|
 |Spain|Microsoft|ES|Available|ES|
 |Sri Lanka|Partner|W1|Available|LK|
+|Suriname|Partner|W1|Planned for December 2023|SR|
 |Sweden|Microsoft|SE *1)*|Available|SE|
 |Switzerland|Microsoft|CH|Available|CH|
 |Taiwan|Partner|W1|Available|TW|
@@ -154,6 +176,7 @@ The following table provides the list of all countries/regions where [!INCLUDE[d
 |United Kingdom|Microsoft|GB|Available|GB|
 |United States|Microsoft|NA|Available|US|
 |Uruguay|Partner|W1|Available|UY|
+|Vanuatu|Partner|W1|Planned for December 2023|VU|
 |Vietnam|Partner|W1|Available|VN|
 |Zambia|Partner|W1|Available|ZM|
 |Zimbabwe|Partner|W1|Available|ZW|
