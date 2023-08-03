@@ -4,25 +4,32 @@ description: This article describes how to download, and use the ALDoc tool to g
 author: 
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 06/12/2023
+ms.date: 08/03/2023
 ms.author: solsen
 ms.custom: bap-template
 ---
 
 # Generating help with the ALDoc tool
 
-Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it's also time saving. The ALDoc tool generates symbolic and syntactical information, code comments, and overall application structure based on the input .app file(s). The tool also generates a help site with these reference articles. 
+[!INCLUDE [2023rw2_aldoctool_preview](../developer/includes/2023rw2_aldoctool_preview.md)]
 
-This article describes the steps to use the tool to generate the documents for al .app packages. To generate help using the ALDoc tool, the following steps are involved: 
+Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure and based on the provided template.
+
+This article describes the steps to use the tool to generate the documentation for AL .app packages. To generate help using the ALDoc tool, the following steps are involved: 
 
 * Install .NET and DocFx v2 prerequisites
-* Install the ALDoc tool from the vsix file
+* Install the ALDoc tool from the .vsix file
 * Generate the reference documentation files
 * Build a static web site for the generated documentation
 
-## Install prerequisites
+## Installation prerequisites
 
-A .NET 4.8 version or later and DocFx v2 are the tools required to generate the reference documentation. The following sections describe how to install these prerequisites.
+The following prerequisites must be available on your machine to generate the reference documentation.
+
+- A .NET 4.8 version or later (this article uses .NET 6.0)
+- DocFx v2
+
+The following sections describe how to install these prerequisites.
 
 ### .NET 6.0
 
