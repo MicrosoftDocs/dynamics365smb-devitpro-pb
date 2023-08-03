@@ -45,22 +45,22 @@ dotnet --list-sdks
 # 7.0.101 [C:\\Program Files\\dotnet\\sdk]
 ```
 
-If you don't have .NET 6.0 installed, download it from here [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download).
+If you don't have .NET 6.0 installed, you can download it from here [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download).
 
 ### DocFx v2
 
 > [!NOTE]  
 > The ALDoc tool is currently supported to run with DocFx v2.
 
-There are different ways to install DocFx v2. The following steps describe a suggested way to install the tool. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
+There are different ways to install DocFx v2. You can use [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual) or you can install the .NET DocFx tool. The following steps describe a suggested way to install the tool. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
-<!-- describe with new dotnet docfx version-->
-
-1. Go to [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual)
-2. Run the terminal as `admin` and follow the steps of this page [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual) to install chocolate.
-3. Then, install the DocFx v2 by running the following in the command line tool:  
+1. Start the command line tool as administrator, and run the following command to install the .NET DocFx tool:  
     ```bash
-    choco install docfx -y    
+    dotnet tool install -g docfx
+    ```
+2. After the installation is complete, run the following command to check the version of the installed DocFx tool:  
+    ```bash
+    docfx --version
     ```
 
 Now, you have successfully installed DocFx v2 on your machine.
