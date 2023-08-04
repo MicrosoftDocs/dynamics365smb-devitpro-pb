@@ -66,22 +66,23 @@ C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-12.0.836604\bin\win32\aldo
 
 ## Generate reference
 
-When all prerequisites have been successfully installed, the next step is to use the ALDoc tool to generate the initialization files.
+When all prerequisites have been successfully installed, the next step is to use the ALDoc tool to generate the documentation files. For this, you must have the .app files that you want to generate documentation for available on your machine. You also need to have a folder available where the generated files can be placed.
 
-1. First, you must initialize the reference repo, which unpacks AL support files, and creates the input folder for the DocFx tool including the DocFx configuration file (docfx.json). ... provide the following command:  
+1. First, you must initialize the reference repo by providing the following command. The initialization unpacks AL support files, and creates the input folder for the DocFx tool including the DocFx configuration file (docfx.json).  
+
     ```bash
      {path_to_aldoc}\\aldoc.exe init -o .\\{path-to-generated-content}\\ -t '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}'
      
      # Example
-     .\\aldoc\\aldoc.exe init -o .\\test1\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.00000.app'
+     .\\aldoc\\aldoc.exe init -o .\\mypath\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
     ```
 
-2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command must be run for each .app file that you want to generate documentation for. Furthermore, it's important for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for by specifying these files with the `-c` parameter.
+2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command must be run for each .app file that you want to generate documentation for. Furthermore, it's important for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation. You specify these files with the `-c` parameter.
 
     ```bash
      {path_to_aldoc}\\repo\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}' -s {path_to_package}
      # Example - <!-- use c param too -->
-     .\\development\\aldoc.exe build -o .\\test1\\  -s 'F:\\AL\\ALProject1\\.alpackages\\Microsoft_System Application_20.1.39764.39901.app'
+     .\\development\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package1','c:\\my_path_package2',...,'c:\\my_path_package3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
     ```
 
 Next, you can use the DocFx tool to build and host the static website.
