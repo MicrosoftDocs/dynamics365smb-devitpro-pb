@@ -13,11 +13,11 @@ ms.custom: bap-template
 
 [!INCLUDE [2023rw2_aldoctool_preview](../developer/includes/2023rw2_aldoctool_preview.md)]
 
-Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure and based on the provided template.
+Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure and based on the provided template.
 
 This article describes the steps to use the tool to generate the documentation for AL .app packages. To generate help using the ALDoc tool, the following steps are involved: 
 
-* Install .NET and DocFx v2 prerequisites
+* Install .NET and DocFx prerequisites
 * Install the ALDoc tool from the .vsix file
 * Generate the reference documentation files
 * Build a static web site for the generated documentation
@@ -26,14 +26,15 @@ This article describes the steps to use the tool to generate the documentation f
 
 The following prerequisites must be available on your machine to generate the reference documentation.
 
-- A .NET 4.8 version or later (this article uses .NET 6.0)
+- A .NET 6.0 version or higher (this article uses .NET 6.0)
+- <!-- https://dotnet.github.io/docfx/index.html -->
 - DocFx v2
 
 The following sections describe how to install these prerequisites.
 
-### .NET 6.0
+### Checking your .NET version
 
-The ALDoc tool is based on `dotnet 4.8` or later. It's recommended to use .NET 6.0 or .NET 7.0. Use the following command to check your local dotnet version:
+It's recommended to use .NET 6.0 or higher. Use the following command to check your local dotnet version:
 
 ```bash
 dotnet --list-sdks
@@ -52,21 +53,16 @@ If you don't have .NET 6.0 installed, you can download it from here [Download .N
 > [!NOTE]  
 > The ALDoc tool is currently supported to run with DocFx v2.
 
-There are different ways to install DocFx v2. You can use [Chocolatey Software | Installing Chocolatey](https://chocolatey.org/install#individual) or you can install the .NET DocFx tool. The following steps describe a suggested way to install the tool. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
+It's recommended to install the DocFx tool that comes with .NET. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
 
 1. Start the command line tool as administrator, and run the following command to install the .NET DocFx tool:  
     ```bash
-    dotnet tool install -g docfx
+    dotnet tool update -g docfx
     ```
-2. After the installation is complete, run the following command to check the version of the installed DocFx tool:  
-    ```bash
-    docfx --version
-    ```
-Now, you have successfully installed DocFx v2 on your machine.
+
+After the installation is complete, you have the latest version of the DocFx tool on your machine.
 
 ## Install the ALDoc tool
-
-
 
 ## Generate reference
 
@@ -116,6 +112,7 @@ The structure of the files that are generated is as follows:
 
 ## See also
 
+[Authoring guide for Business Central](writing-guide.md)  
 [Overwriting help with the ALDoc tool](help-aldoc-overwrites.md)  
-[Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download)  
+[Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/download)  
 [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html)  
