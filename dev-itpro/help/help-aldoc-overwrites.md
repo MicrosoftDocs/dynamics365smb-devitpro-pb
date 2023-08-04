@@ -54,10 +54,6 @@ Next, you create an .md file with the content to inject as an overwrite.
     ```
 1. Save the .md file when you're done.  
     The content is injected at the beginning of the reference content.
-1. Now, run the ALDoc tool with the equivalent command of:  
-    ```bash
-    {Path_to_Platform}\\Platform-ModernDev\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-generated-content}\\  -s {path_to_package}
-    ```
 1. Next, build the help site again with the equivalent command of:  
     ```bash
     docfx build ./{path-to-generated-content}/docfx.json -s
