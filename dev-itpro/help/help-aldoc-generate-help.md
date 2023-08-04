@@ -1,6 +1,6 @@
 ---
 title: Generating help with the ALDoc tool
-description: This article describes how to download, and use the ALDoc tool to generate reference help for first party apps for Business Central. 
+description: This article describes how to download and use the ALDoc tool to generate reference help for first party apps for Business Central. 
 author: 
 ms.topic: conceptual
 ms.reviewer: solsen
@@ -79,7 +79,7 @@ When all prerequisites have been successfully installed, the next step is to use
      .\\aldoc\\aldoc.exe init -o .\\test1\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.00000.app'
     ```
 
-2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command must be run for each .app file that you want to generate documentation for. Furthermore, it's important for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for by specifying these with the `-c` parameter.
+2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command must be run for each .app file that you want to generate documentation for. Furthermore, it's important for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for by specifying these files with the `-c` parameter.
 
     ```bash
      {path_to_aldoc}\\repo\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}' -s {path_to_package}
@@ -87,11 +87,11 @@ When all prerequisites have been successfully installed, the next step is to use
      .\\development\\aldoc.exe build -o .\\test1\\  -s 'F:\\AL\\ALProject1\\.alpackages\\Microsoft_System Application_20.1.39764.39901.app'
     ```
 
-Next, you'll use the DocFx tool to build and host the static website.
+Next, you can use the DocFx tool to build and host the static website.
 
 ## Build and host the static website
 
-In the previous steps, the reference files were generated. You'll now use DocFx to build a website to host the generated files. 
+In the previous steps, the reference files were generated. You can now use DocFx to build a website to host the generated files. 
 
 1. In the command line, enter a command equivalent to the following:  
     ```bash
