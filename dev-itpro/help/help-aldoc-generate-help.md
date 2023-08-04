@@ -13,28 +13,25 @@ ms.custom: bap-template
 
 [!INCLUDE [2023rw2_aldoctool_preview](../developer/includes/2023rw2_aldoctool_preview.md)]
 
-Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure and based on the provided template.
+Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure, based on the provided template.
 
-This article describes the steps to use the tool to generate the documentation for AL .app packages. To generate help using the ALDoc tool, the following steps are involved: 
+This article describes the necessary steps to use the ALDoc tool to generate the documentation for AL .app packages. To generate help using the ALDoc tool, the following steps are involved: 
 
 * Install .NET and DocFx prerequisites
-* Install the ALDoc tool from the .vsix file
+* Get the ALDoc tool from the .vsix file
 * Generate the reference documentation files
 * Build a static web site for the generated documentation
 
-## Installation prerequisites
+## Prerequisites
 
-The following prerequisites must be available on your machine to generate the reference documentation.
+The following prerequisites must be available on your machine to use the ALDoc tool to generate reference documentation.
 
-- A .NET 6.0 version or higher (this article uses .NET 6.0)
-- <!-- https://dotnet.github.io/docfx/index.html -->
-- DocFx v2
-
-The following sections describe how to install these prerequisites.
+- A .NET 6.0 version or higher. For more information, see [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/download).
+- DocFx
 
 ### Checking your .NET version
 
-It's recommended to use .NET 6.0 or higher. Use the following command to check your local dotnet version:
+It's recommended to use .NET 6.0 or higher. Use the following command to check your local dotnet version. For example:
 
 ```bash
 dotnet --list-sdks
@@ -48,24 +45,24 @@ dotnet --list-sdks
 
 If you don't have .NET 6.0 installed, you can download it from here [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download).
 
-### DocFx v2
+### DocFx
 
-> [!NOTE]  
-> The ALDoc tool is currently supported to run with DocFx v2.
+It's recommended to install the DocFx tool that comes with .NET. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/index.html).
 
-It's recommended to install the DocFx tool that comes with .NET. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
-
-1. Start the command line tool as administrator, and run the following command to install the .NET DocFx tool:  
+1. Start a command line tool as administrator, and run the following command to install the .NET DocFx tool:  
     ```bash
     dotnet tool update -g docfx
     ```
 
-After the installation is complete, you have the latest version of the DocFx tool on your machine.
+After the installation is complete, you now have the latest version of the DocFx tool on your machine.
 
 ## Get the ALDoc tool
 
-The ALDoc tool is shipped with the Business Central AL Language extension (.vsix) <include>, and can be found in the following location: C:\Users\solsen\.vscode\extensions\ms-dynamics-smb.al-12.0.836604\bin\win32 <!-- change -->
+The ALDoc tool is shipped with the [!INCLUDE [d365al_ext_md](../includes/d365al_ext_md.md)], and can be found in the equivalent location of:  
 
+```
+C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-12.0.836604\bin\win32\aldoc.exe
+```
 
 ## Generate reference
 
