@@ -1,22 +1,21 @@
 ---
-title: Business Central on-premises to online migration End-to-end overview
-description: This article provides an overview of how the migration works from Business Central on-premises and the necessary tasks for completing the migration.
+title: Migrate to Business Central online from on-premises
+description: Get more background information about migrating to the cloud from Business Central on-premises, such as how to handle multiple companies or per-tenant-extensions.
 author: jswymer
 ms.topic: conceptual
 ms.reviewer: jswymer
 ms.search.keywords: cloud, migrate, saas, online
 ms.date: 11/30/2022
 ms.author: jswymer
-ms.service: dynamics365-business-central
-ms.custom: bap-template
+ms.service: dynamics36-business-central
 ---
 
-# Business Central on-premises to online migration: End-to-end overview
+# Dynamics GP on-premises to online migration: End-to-end overview
 
 <!--Your [!INCLUDE [prod_short](../developer/includes/prod_short.md)] on-premises solution can have an identical twin in a [!INCLUDE [prod_short](../developer/includes/prod_short.md)] online tenant. Use this twin to migrate to the cloud. The migration can be started quite easily from the assisted setup wizard in your on-premises solution.  
 -->
 
-Migrating data from Business Central on-premises to online can seem like a complex process. This article provides an overview of how the migration works and the necessary tasks for completing the migration. By gaining an understanding of the data migration basics, you're able to plan and execute a smooth transition to the cloud. <!--This article explains how the data migration from Business Central on-premises to online works, and the end to end-process for completing the migration. Understanding the data migration basics will help you prepare for and run the data migration. -->
+Migrating data from Business Central on-premises to online can be a complex process, but this article provides an overview of how the migration works and the necessary tasks for completing the migration. By gaining an understanding of the data migration basics, you're able to plan and execute a smooth transition to the cloud. <!--This article explains how the data migration from Business Central on-premises to online works, and the end to end-process for completing the migration. Understanding the data migration basics will help you prepare for and run the data migration. -->
 
 <!--
 The end-to-end process is described [here](migrate-data.md). In this article, we talk about background information and things to take into consideration.  -->
@@ -29,36 +28,22 @@ Data migration is the process of securely migrating data from an on-premises SQL
 
 The following figure illustrates the main components involved in the data migration process.
 
-<!--[![Shows components of cloud migration](../developer/media/cloud-migration-overview.svg)](../developer/media/cloud-migration-overview.svg#lightbox) -->
-
-![Shows components of cloud migration](../developer/media/cloud-migration-overview.svg)
+[![Shows components of cloud migration](../developer/media/cloud-migration-overview.png)](../developer/media/cloud-migration-overview.png#lightbox) 
 
 |Component|Description|
 |-|-|
 |On-premises database|This database is the on-premises SQL Server database or an Azure SQL Database that stores business data for the companies to migrate to the cloud. |
 |Azure Data Factory|A key component of the data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts raw data across data sources and controlling data integration projects. Azure Data Factory migrates the data between on-premises and online directly. In other words, it doesn't look at any permissions within the applications you're transferring data between&mdash;only SQL permissions.|
 |Pipelines|Pipelines are the main elements of Azure Data Factory. Pipelines are groupings of activities that copy, move, and transform data, and also orchestrate its flow.|
-|Integration Runtime|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database is an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory. If the on-premises database is an Azure SQL Database, an Azure Integration Runtime is used. From the pipeline, the Azure Integration Runtime then moves the data to the online database for the environment. |
+|Integration Runtime|The Integration Runtime component is the compute infrastructure of Azure Data Factory. There are two Integration Runtime instances in the end-to-end process. The first instance securely copies data from on-premises to the cloud, where the pipelines are created. If the on-premises database an SQL Server database, you use a self-hosted integration runtime. This runtime is installed locally on the on-premises network and registered in Azure Data Factory. If the on-premises database is an Azure SQL Database, an Azure Integration Runtime is used. From the pipeline, the Azure Integration Runtime then moves the data to the online database for the environment. |
 |Online database|This database in the Azure SQL Database of the Business Central environment that you're migrating data to.|
 
 > [!NOTE]
-> The process doesn't require a [!INCLUDE[server](../developer/includes/server.md)] instance&mdash;running or not. The integration runtime connects directly to the database and only makes calls to the Azure Data Factory.
+> The process doesn't require a [!INCLUDE[server](../developer/includes/server.md)] instance, running or not. The integration runtime connects directly to the database and only makes calls to the Azure Data Factory. 
 
 <!-- A key component of the the data data migration is [Azure Data Factory](/azure/data-factory/introduction). Azure Data Factory is a managed cloud service that's built for migrating large amounts raw data for extract-transform-load (ETL), extract-load-transform (ELT), and data integration projects. Business Central uses Azure Data Factory to migrate the data between on-premises and online directly - meaning it doesn't look at any permissions within the applications you are transferring data between, only SQL permissions.-->
 
-### What data is migrated and how
-
-The cloud migration process transfers business data from one or more companies in the on-premises database to the online tenant database. The on-premises data comes from company-specific tables of the base application and tables that belong to customization extensions, whether they're from Microsoft or other publishers. However, it's important to note that certain requirements must be met when migrating data from extensions, meaning that not all data is necessarily transferred. For further clarification on what data is migrated, refer to [Determine what data to migrate](cloud-migration-plan-prepare.md#determine-what-data-to-migrate).
-
-<!-- The data that's migrated is determined on two levels: company and extension.
-
-- With companies, as part of the cloud migration setup, you specify the companies that you want to migrate data for. You can choose to migrate companies iteratively or all at once. <!--The cloud migration capabilities are optimized to migrate data in batches of up to 10 companies. However, a [!INCLUDE [prod_short](../includes/prod_short.md)] on-premises or [!INCLUDE [navnow_md](../developer/includes/navnow_md.md)] database often includes more companies. In some cases, the database contains several hundred companies.-->
-<!-- With extensions, data is only migrated if the extension that contains the tables or table extensions is installed on the target online environment and its configured for data replication by the [ReplicateData](../developer/properties/devenv-replicatedata-property.md).-->
-
-> [!NOTE]
-> **What data isn't migrated?** During the data migration process, [!INCLUDE[prod_short](../developer/includes/prod_short.md)] doesn't migrate most system tables, users, and permissions. Additionally, record links aren't currently migrated because they are associated with a user ID, and users aren't migrated from the on-premises environment to the online tenant.
-
-In general, data is migrated table by table. Depending on their size, tables may also be combined and migrated together for performance reasons. In either case, the success and failure of the migration is tracked for each table. For instance, tables fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed.  
+Data is migrated table by table. Depending on their size, tables may also be combined and migrated together for performance reasons. In either case, the success and failure of the migration is tracked for each table. For instance, tables fail to migrate if they can't be found, or if the schema doesn't match between the cloud and the on-premises tables. If a table fails to migrate, the error will be captured, and the migration moves on to the next table until completed.  
 
 Data migration can be run multiple times. The data migration time varies depending on factors such as the amount of data to migrate, your SQL Server configuration, and your connection speeds. The initial migration takes the longest amount of time to complete because all data is migrating. After the initial migration, only changes in data will be migrated, resulting in faster iterations. It's not necessary to run the migration process more than once. But if users are still using the on-premises system, you must run at least one more migration to ensure all data is moved to the cloud before transacting in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
@@ -118,48 +103,30 @@ If you upgrade to a new version of [!INCLUDE [prod_short](../developer/includes/
 -->
 ## End-to-end process
 
-This section outlines the general process or phases you go through to migrate data from on-premises to online.
-<!--
+This section outlines the general process or phases you go through to migrate data from [!INCLUDE[prod_short](../developer/includes/prod_short.md)] on-premises to online.
+
 1. Evaluation
 
-   Before migrating your on-premises deployment to the cloud, it's essential to evaluate its readiness. This phase involves considering factors such as data volumes, customizations, and integrations. By doing so, you can identify any potential issues that could arise during the migration process and take steps to address them beforehand.
+   Before migrating your on-premises Business Central deployment to the cloud, it's essential to evaluate its readiness. This phase involves considering factors such as data volumes, customizations, and integrations. By doing so, you can identify any potential issues that could arise during the migration process and take steps to address them beforehand.
 
    To help you evaluate your readiness for migration, Microsoft offers a [Cloud migration assessment] tool that can analyze your on-premises environment and provide guidance on the migration process. This tool can help you determine if your system is ready for migration and highlight any potential issues that need to be addressed.
 
-   For more information, visit [Cloud migration assessment].-->
+   For more information, visit [Cloud migration assessment].
 
 1. Preparation
 
-   The preparation phase helps ensure the migration runs as fast and problem-free. Preparation typically includes these tasks:
+   The preparation phase is important because it helps ensure the migration runs as fast and problem-free. Preparation typically includes these tasks:
+   1. Plan: Develop a migration plan that includes a detailed timeline, resource requirements, and migration approach. A well-crafted plan can help minimize downtime and prevent users from losing work.
+   1. Verify prerequisites: Prepare your on-premises environment for migration, including ensuring that it meets the prerequisites for migration, such as upgrading to the latest version of Business Central on-premises. This step is crucial in ensuring that your environment is ready for the migration process.
+   1. Verifying that data is in the best state possible to complete the migration. Verifying that data is in the best state possible to complete the migration. This step involves reviewing your data to ensure that it's clean, accurate, and in the best possible state for migration.
 
-   1. Plan:
-
-      Develop a migration plan that includes a detailed timeline, resource requirements, and migration approach. A well-crafted plan can help minimize downtime and prevent users from losing work. You should plan to run cloud migration between environment updates.
-
-      To get started, go to [Plan](cloud-migration-plan-prepare.md).
+   To get started, see [Prepare](cloud-migration-plan-prepare.md).
   
-   1. Verify prerequisites:
-
-      Prepare your on-premises environment for migration, including ensuring that it meets the prerequisites for migration, such as upgrading to the latest version of Business Central on-premises. This step is crucial in ensuring that your environment is ready for the migration process.
-
-      To get started, go to [Prerequisites](cloud-migration-prerequisites.md).
-   1. Verify that data is in the best state possible to complete the migration:
-
-      This step involves reviewing your data to ensure that it's clean, accurate, and in the best possible state for migration.
-
-      To get started, go to [Align SQL table definitions](migration-align-table-definitions.md) and [Clean data](migration-clean-data.md).
-
-    1. Optimize cloud migration performance:
-
-       Follow practical steps to enhance to improve the efficiency and reliability of the migration process while minimizing the risk of data loss or downtime. 
-
-       To get started, go to [Align SQL table definitions](migration-optimize-replication.md).
-
 1. Cloud migration setup
 
    The phase doesn't migrate any data, but it gets the environment ready for migration by establishing the connection and pipeline between the on-premises database and online tenant database. This phase starts when you run the **Set up Cloud Migration** assisted setup guide in [!INCLUDE [prod_short](../includes/prod_short.md)] online.
 
-   To get started, go to [Set up cloud migration](migration-setup-overview.md).
+   To get started, see [Set up cloud migration](migration-setup-overview.md).
 
 1. Data replication
 
@@ -167,7 +134,7 @@ This section outlines the general process or phases you go through to migrate da
 
    At this point in the process, you can verify whether the migration went well or not, fix any problems, and rerun the replication multiple times if you want to. For example, suppose you've run the assisted setup guide from a test company in a sandbox environment because you worry that many extensions might be problematic. Once the data has been replicated to the sandbox environment, you can use the troubleshooting tools in the [!INCLUDE [prodadmincenter](../developer/includes/prodadmincenter.md)].
 
-   To get started, go to [Replicate data](migration-data-replication.md).
+   For more information, visit  [Replicate data](migration-data-replication.md).
 
 1. Data upgrade
 
@@ -177,24 +144,16 @@ This section outlines the general process or phases you go through to migrate da
 
    <!--If you want to migrate more companies, disable the migration, and start the setup again. Or, use the **Select Companies to Migrate** action from **Cloud Migration Management** page.-->
 
-   To get started, go to [Upgrade data](migration-data-upgrade.md).
+   For more information, visit  [Upgrade data](migration-data-upgrade.md).
 1. Completion and follow-up
 
    Completion and follow-up are crucial steps in the cloud migration process, as they involve setting up and optimizing your new Business Central online environment. Here are some essential tasks to consider:
 
-   1. Optimize your Business Central online environment:
+   1. Optimize your Business Central online environment: Configure the system to meet your business needs. This task may include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
+   1. Set up user access: Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
+   1. Go live: Once you're satisfied that your new environment is set up correctly, it's time to switch over to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring that all users are using the new system.
 
-      Configure the system to meet your business needs. This task may include setting up security, customizing forms and reports, and integrating with other systems. By taking the time to optimize your new environment, you can ensure that it meets your specific requirements and works seamlessly with your existing systems.
-   1. Set up user access
-
-      Grant access to your new Business Central online system for all relevant users. This task includes creating new user accounts, setting up permissions, and defining roles and responsibilities.
-   1. Go live:
-
-      Once you're satisfied that your new environment is set up correctly, it's time to switch over to the new Business Central online system. This task involves decommissioning the on-premises deployment and ensuring that all users are using the new system.
-
-   To get started, go to [Complete cloud migration](migration-finish.md).
-
-By completing these tasks, you can ensure a successful migration to the cloud-based Business Central solution.
+By completing these tasks, you can ensure a successful migration to the cloud-based Business Central solution.For more information, visit [Complete cloud migration](migration-finish.md).
 
 <!--	Train: Train users on the new system to ensure that they are comfortable with the new interface and functionality.-->
 <!--

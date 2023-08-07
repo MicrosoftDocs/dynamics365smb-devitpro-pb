@@ -160,7 +160,7 @@ The following sections explain the different events included in an outgoing **We
 
 ## Sample KQL code
 
-This KQL code can help you get started analyzing outgoing web service calls. 
+This KQL code can help you get started analyzing and alerting on web service metadata errors. 
 
 ```kql
 traces
@@ -168,13 +168,17 @@ traces
 | where customDimensions.eventId in ('RT0033','RT0034''RT0035','RT0036','RT0038','RT0039')
 | project timestamp 
 , aadTenantId = customDimensions.aadTenantId
-, component = customDimensions.component
+, environmentName = customDimensions.environmentName
 , environmentType = customDimensions.environmentType
+, eventId = customDimensions.eventId
 , metadataStack = customDimensions.metadataStack
 , errorDetails = customDimensions.errorDetails
 ```
+
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
 ## See also
 
 [Telemetry overview](telemetry-overview.md)  
 [Enable sending telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)   
