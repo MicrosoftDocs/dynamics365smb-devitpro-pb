@@ -102,12 +102,12 @@ In the previous steps, the initialization and reference files were generated. Yo
     ```bash  
     docfx serve ./{path-to-generated-content}/_site
     ```
-1. Then wait for the build to complete and in a browser window, type `https:\\localhost:8080` to check the generated website.
+1. Then wait for the build to complete and in a browser window, type `https:\\localhost:8080` to check the generated website. You should now see the table of contents to the left, and the generated articles to the right. 
 
 > [!TIP]  
 > Use the parameter `-p <port_num>` to change the port to generate the website to.
 
-For more information about the DocFx tool, see [Quick start](https://dotnet.github.io/docfx/index.html).
+For more information about getting started with the DocFx tool, see [Quick start](https://dotnet.github.io/docfx/index.html).
 
 ## Overwriting help with the ALDoc tool
 
