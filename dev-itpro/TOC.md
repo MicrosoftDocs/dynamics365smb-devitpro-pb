@@ -387,14 +387,37 @@
 
 <!--migrate to BC online-->
 ## Migrate to Business Central online
-### [Migrate on-premises data](administration/migrate-data.md)
-### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
-### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
-### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [Define migration table mappings](administration/migration-table-mapping.md)
-### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
-### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [Introduction](administration/migrate-data.md)
+<!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
+### From Business Central on-premises
+#### [End-to-end overview](administration/migrate-business-central-on-premises.md)
+#### [Managing cloud migration](administration/migration-manage.md)
+#### Prepare
+##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
+##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
+##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
+##### [Clean data for cloud migration](administration/migration-clean-data.md)
+##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
+#### Set up cloud migration 
+##### [Cloud migration setup overview](administration/migration-setup-overview.md)
+##### [Define migration table mappings](administration/migration-table-mapping.md)
+##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
+#### Replicate data 
+##### [Data replication overview](administration/migration-data-replication.md)
+##### [Run data replication](administration/migrate-data-replication-run.md)
+##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
+#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### [Complete cloud migration](administration/migration-finish.md)  
+### From Dynamics GP
+#### [End-to-end overview](administration/migrate-gp-overview.md)
+#### [Managing cloud migration](administration/migration-manage.md)
+#### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+#### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
+#### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [FAQ](administration/faq-migrate-data.md)
+### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
 <!-- end admin -->
 
