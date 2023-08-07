@@ -88,11 +88,11 @@ When all prerequisites have been successfully installed, the next step is to use
      .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package1','c:\\my_path_package2','c:\\my_path_package3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
     ```
 
-Next, you can use the DocFx tool to build and host the static website.
+In the next steps, you will use the DocFx tool to build and host the static website.
 
 ## Build and host the static website
 
-In the previous steps, the reference files were generated. You can now use DocFx to build a website to host the generated files. 
+In the previous steps, the initialization and reference files were generated. You can now use DocFx to build a website to host the generated files, which you can share with your users internally and or externally. 
 
 1. In the command line, enter a command equivalent to the following:  
     ```bash
