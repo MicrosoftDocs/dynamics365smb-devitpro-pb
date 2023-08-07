@@ -36,7 +36,6 @@ The following table lists the Business Central 21 versions and the minimum versi
 |[21.9](https://support.microsoft.com/help/5029056)|[22.4](https://support.microsoft.com/help/5029765)|
 |[21.10](https://support.microsoft.com/help/5029764)<sup>[\[1\]](#1)</sup>|22.5|
 
-
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
 ## Version 20 compatibility
@@ -56,7 +55,7 @@ The following table lists the Business Central 20 versions and the minimum versi
 |[20.13](https://support.microsoft.com/help/5026930)|[21.8](https://support.microsoft.com/help/5027891)|[22.2](https://support.microsoft.com/help/5027892)|
 |[20.14](https://support.microsoft.com/help/5027890)|[21.9](https://support.microsoft.com/help/5029056) |[22.3](https://support.microsoft.com/help/5029057) |
 |[20.15](https://support.microsoft.com/help/5029055)|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765) |
-|[20.16](https://support.microsoft.com/help/5029763)<sup>[\[1\]](#1)</sup>|[21.10](https://support.microsoft.com/help/5029764) |[22.4](https://support.microsoft.com/help/5029765) |
+|[20.16](https://support.microsoft.com/help/5029763)<sup>[\[1\]](#1)</sup>|21.11 |22.5 |
 
 [!INCLUDE [cu-kb-article-link-note](../includes/cu-kb-article-link-note.md)]
 
