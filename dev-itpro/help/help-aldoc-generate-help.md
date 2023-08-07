@@ -24,10 +24,10 @@ This article describes the necessary steps to use the ALDoc tool to generate the
 
 ## Prerequisites
 
-To use the ALDoc tool and DocFx, you must have the following prerequisites installed on your machine. 
+To use the ALDoc tool, you must have the following prerequisites installed on your machine. 
 
-- DocFx. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/index.html).
 - A .NET 6.0 version or higher. For more information, see [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/download).
+- DocFx. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/index.html).
 
 ### Checking your .NET version
 
@@ -47,7 +47,7 @@ Download the latest version of .NET here [Download .NET (Linux, macOS, and Windo
 
 ### DocFx
 
-Install the DocFx tool when you have installed .NET 6.0 or higher. DocFx is an open-source tool used to generate static sites. It's designed to create reference documentation based on .NET code and XML comments. The ALDoc tool adds support for generating documentation for AL objects with DocFx. For more information, see [Basic concepts](https://dotnet.github.io/docfx/docs/basic-concepts.html).
+Install the DocFx tool when you have installed .NET 6.0 or higher. DocFx is an open-source tool used to generate static sites. It's designed to create reference documentation based on .NET code and XML comments. The ALDoc tool adds support for generating documentation for AL objects with DocFx. For more information, see [Basic concepts in DocFx](https://dotnet.github.io/docfx/docs/basic-concepts.html).
 
 1. Start a command line tool as administrator, and run the following command to install the .NET DocFx tool:  
     ```bash
@@ -68,7 +68,7 @@ C:\Users\<user>\.vscode\extensions\ms-dynamics-smb.al-12.0.836604\bin\win32\aldo
 
 When all prerequisites have been successfully installed, the next step is to use the ALDoc tool to generate the documentation files. For this, you must have the .app files that you want to generate documentation for available on your machine. You also need to have a folder available where the generated files can be placed.
 
-1. First, you must initialize the reference repo by providing the following command. The initialization unpacks AL support files, and creates the input folder for the DocFx tool including the DocFx configuration file (docfx.json).  
+1. First, initialize the reference repo by providing the following command. The initialization unpacks AL support files, and creates the input folder for the DocFx tool including the DocFx configuration file (docfx.json).  
 
     ```bash
      {path_to_aldoc}\\aldoc.exe init -o .\\{path-to-generated-content}\\ -t '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}'
@@ -81,7 +81,7 @@ When all prerequisites have been successfully installed, the next step is to use
 2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command *must be run for each .app file* that you want to generate documentation for. Furthermore, it's *important* for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for. You specify these files with the `-c` parameter.
 
     ```bash
-     {path_to_aldoc}\\repo\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}' -s {path_to_package}
+     {path_to_aldoc}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}' -s {path_to_package}
      ```
     ```bash
      # Example
