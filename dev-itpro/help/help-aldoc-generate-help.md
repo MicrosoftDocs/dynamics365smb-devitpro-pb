@@ -47,7 +47,7 @@ Download the latest version of .NET here [Download .NET (Linux, macOS, and Windo
 
 ### DocFx
 
-It's recommended to install the DocFx tool that comes with .NET. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/index.html).
+Install the DocFx tool when you have installed .NET 6.0 or higher. DocFx is an open-source tool used to generate static sites. It's designed to create reference documentation based on .NET code and XML comments. The ALDoc tool adds support for generating documentation for AL objects with DocFx. For more information, see [Basic concepts](https://dotnet.github.io/docfx/docs/basic-concepts.html).
 
 1. Start a command line tool as administrator, and run the following command to install the .NET DocFx tool:  
     ```bash
