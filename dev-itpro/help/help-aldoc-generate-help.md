@@ -15,23 +15,23 @@ ms.custom: bap-template
 
 Generating content based on source code has many advantages such as accuracy, 100% reflection of the current codebase, less error prone documentation, and it saves time. The ALDoc tool generates documentation from symbolic and syntactical information, code comments, and overall application structure based on input .app file(s). The tool also generates a help site with these reference articles, sorted by the application structure, based on the provided template.
 
-This article describes the necessary steps to use the ALDoc tool to generate the documentation for AL .app packages. To generate help using the ALDoc tool, the following steps are involved: 
+This article describes the necessary steps to use the ALDoc tool to generate the documentation for AL .app packages. The ALDoc tool relies on the DocFx tool, and needs the DocFx prerequisites to be available on the machine that generates the reference documentation. To generate help using the ALDoc tool, the following steps are involved: 
 
-* Install .NET and DocFx prerequisites
+* Install DocFx and .NET prerequisites
 * Get the ALDoc tool from the .vsix file
 * Generate the reference documentation files
 * Build a static web site for the generated documentation
 
 ## Prerequisites
 
-The following prerequisites must be available on your machine to use the ALDoc tool to generate reference documentation.
+To use the ALDoc tool and DocFx, you must have the following prerequisites installed on your machine. 
 
+- DocFx. For more information, see [Getting Started with DocFX](https://dotnet.github.io/docfx/index.html).
 - A .NET 6.0 version or higher. For more information, see [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/download).
-- DocFx
 
 ### Checking your .NET version
 
-It's recommended to use .NET 6.0 or higher. Use the following command to check your local dotnet version. For example:
+Use the following command to check your local dotnet version. For example:
 
 ```bash
 dotnet --list-sdks
@@ -43,7 +43,7 @@ dotnet --list-sdks
 # 7.0.101 [C:\\Program Files\\dotnet\\sdk]
 ```
 
-If you don't have .NET 6.0 installed, you can download it from here [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download).
+Download the latest version of .NET here [Download .NET (Linux, macOS, and Windows) (microsoft.com)](https://dotnet.microsoft.com/en-us/download).
 
 ### DocFx
 
