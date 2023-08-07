@@ -54,7 +54,7 @@ It's recommended to install the DocFx tool that comes with .NET. For more inform
     dotnet tool update -g docfx
     ```
 
-After the installation is complete, you now have the latest version of the DocFx tool on your machine.
+After the installation is complete, you have the latest version of the DocFx tool on your machine.
 
 ## Get the ALDoc tool
 
@@ -72,16 +72,19 @@ When all prerequisites have been successfully installed, the next step is to use
 
     ```bash
      {path_to_aldoc}\\aldoc.exe init -o .\\{path-to-generated-content}\\ -t '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}'
-     
+    ```
+    ```bash
      # Example
      .\\aldoc\\aldoc.exe init -o .\\mypath\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
     ```
 
-2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command *must be run for each .app file* that you want to generate documentation for. Furthermore, it's *important* for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation. You specify these files with the `-c` parameter.
+2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command *must be run for each .app file* that you want to generate documentation for. Furthermore, it's *important* for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for. You specify these files with the `-c` parameter.
 
     ```bash
      {path_to_aldoc}\\repo\\out\\Debug\\aldoc\\net{version}\\aldoc.exe build -o .\\{path-to-generated-content}\\ -c '{path_to_package1}','{path_to_package2}',...,'{path_to_package3}' -s {path_to_package}
-     # Example - <!-- use c param too -->
+     ```
+    ```bash
+     # Example
      .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package1','c:\\my_path_package2','c:\\my_path_package3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
     ```
 
