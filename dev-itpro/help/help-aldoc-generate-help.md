@@ -98,10 +98,10 @@ In the previous steps, the reference files were generated. You can now use DocFx
     ```bash
     docfx build ./{path-to-generated-content}/docfx.json
     ```
-2. Next, to host the website locally, enter a command equivalent to the following:
-```bash  
+2. Next, to host the website locally, enter a command equivalent to the following:  
+    ```bash  
     docfx serve ./{path-to-generated-content}/_site
-```
+    ```
 1. Then wait for the build to complete and in a browser window, type `https:\\localhost:8080` to check the generated website.
 
 > [!TIP]  
