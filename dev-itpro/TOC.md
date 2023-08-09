@@ -1,5 +1,5 @@
 ﻿# [Development and administration](index.md)
-# [New and planned](/dynamics365/business-central/product-news?toc=/dynamics365/business-central/dev-itpro/toc.json)
+# [New and planned](whatsnew/overview.md)
 # Get started
 ## Learn
 ### [Business Central Learning Catalog](/dynamics365/business-central/readiness/readiness-learning-catalog?toc=/dynamics365/business-central/dev-itpro/toc.json)
@@ -30,6 +30,7 @@
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Marketing validation FAQ](developer/readiness/readiness-marketing-validation-faq.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
+
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -67,6 +68,8 @@
 ### [FAQ about the Windows client and Business Central](faq-win-cli.md)
 ### [FAQ about connecting to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
 ## What's new or changed
+### [What's new or changed](whatsnew/overview.md)
+### [Update 22.3](whatsnew/whatsnew-update-22-3.md)
 ### [Update 22.2](whatsnew/whatsnew-update-22-2.md)
 ### [Update 22.1](whatsnew/whatsnew-update-22-1.md)
 ### Updates for earlier major versions
@@ -74,7 +77,7 @@
 #### [Update 21.4](whatsnew/whatsnew-update-21-4.md)
 #### [Update 21.3](whatsnew/whatsnew-update-21-3.md)
 #### [Update 21.2](whatsnew/whatsnew-update-21-2.md)
-#### [Update 21.1](whatsnew/whatsnew-update-21-1.md)  
+#### [Update 21.1](whatsnew/whatsnew-update-21-1.md)
 #### [Update 20.6](whatsnew/whatsnew-update-20-6.md)
 #### [Update 20.5](whatsnew/whatsnew-update-20-5.md)
 #### [Update 20.4](whatsnew/whatsnew-update-20-4.md)
@@ -114,7 +117,6 @@
 #### [Configure context-sensitive help](help/context-sensitive-help.md)
 #### [Contribute to the help](help/contributor-guide.md)
 #### [Authoring guide](help/writing-guide.md)
-#### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
@@ -217,6 +219,7 @@
 #### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [App key vault secret telemetry](administration/telemetry-extension-key-vault-trace.md)
 #### [Authorization telemetry](administration/telemetry-authorization-trace.md)
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)
 #### [Client action telemetry](administration/telemetry-client-action-trace.md)
 #### [Cloud migration telemetry](administration/telemetry-cloud-migration-trace.md)
 #### [Company lifecycle telemetry](administration/telemetry-company-lifecycle-trace.md)
@@ -384,14 +387,37 @@
 
 <!--migrate to BC online-->
 ## Migrate to Business Central online
-### [Migrate on-premises data](administration/migrate-data.md)
-### [Migrate from Business Central on-premises](administration/migrate-business-central-on-premises.md)
-### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
-### [Migrate from Dynamics NAV](upgrade/Upgrade-Considerations.md#online)
-### [Define migration table mappings](administration/migration-table-mapping.md)
-### [FAQ about migrating to Business Central online from on-premises solutions](administration/faq-migrate-data.md)
-### [Troubleshoot cloud migration](administration/migration-troubleshooting.md)
-### [Compare work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [Introduction](administration/migrate-data.md)
+<!--### [Understand Data Migration](administration/migrate-data-overview.md)-->
+### From Business Central on-premises
+#### [End-to-end overview](administration/migrate-business-central-on-premises.md)
+#### [Managing cloud migration](administration/migration-manage.md)
+#### Prepare
+##### [Upgrade to Business Central v14](upgrade/Upgrade-Considerations.md#online)
+##### [Plan cloud migration](administration/cloud-migration-plan-prepare.md)
+##### [Prerequisites for cloud migration](administration/cloud-migration-prerequisites.md)
+##### [Align SQL table definitions](administration/migration-align-table-definitions.md)
+##### [Clean data for cloud migration](administration/migration-clean-data.md)
+##### [Optimize cloud migration performance](administration/migration-optimize-replication.md)
+#### Set up cloud migration 
+##### [Cloud migration setup overview](administration/migration-setup-overview.md)
+##### [Define migration table mappings](administration/migration-table-mapping.md)
+##### [Run cloud migration setup](administration/migration-setup.md)
+##### [Troubleshoot cloud migration setup](administration/migration-setup-troubleshooting.md)
+#### Replicate data 
+##### [Data replication overview](administration/migration-data-replication.md)
+##### [Run data replication](administration/migrate-data-replication-run.md)
+##### [Troubleshoot data replication](administration/migration-data-replication-troubleshooting.md)
+#### [Run data upgrade](administration/migration-data-upgrade.md)
+#### [Complete cloud migration](administration/migration-finish.md)  
+### From Dynamics GP
+#### [End-to-end overview](administration/migrate-gp-overview.md)
+#### [Managing cloud migration](administration/migration-manage.md)
+#### [Prerequisites](administration/cloud-migration-prerequisites-gp.md)
+#### [Migrate Dynamics GP data to the cloud](administration/migrate-dynamics-gp.md)
+#### [Compare Work in Dynamics GP to Business Central](administration/migrate-dynamics-gp-videos.md)
+### [FAQ](administration/faq-migrate-data.md)
+### [Troubleshoot](administration/migration-troubleshooting.md)
 <!-- end migrate -->
 <!-- end admin -->
 
@@ -423,6 +449,7 @@
 ### AppSource validation
 #### [Marketing validation checklist](developer/readiness/readiness-checklist-marketing.md)
 #### [Technical validation checklist](developer/devenv-checklist-submission.md)
+#### [AppSource submission validation telemetry](administration/telemetry-appsource-submission-validation-trace.md)
 #### [How to make compelling videos](developer/readiness/readiness-how-to-make-compelling-videos.md)
 #### [Technical validation FAQ](developer/devenv-checklist-submission-faq.md)
 #### [How to create an effective sales landing page](developer/readiness/readiness-how-to-create-sales-landing-page.md)
@@ -795,8 +822,17 @@
 #### [Page background tasks](developer/devenv-page-background-tasks.md)
 
 ### Developing APIs
-#### [API page type](developer/devenv-api-pagetype.md)
+#### [Overview](developer/devenv-api.md)
+#### [Walkthrough: developing a custom API](developer/devenv-develop-custom-api.md)
+#### [API pages](developer/devenv-api-pagetype.md)
 #### [API queries](developer/devenv-api-querytype.md)
+#### [Connecting to and testing APIs](developer/devenv-develop-connect-apps.md)
+#### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
+#### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
+#### [API performance](webservices/web-service-performance.md)
+#### [API telemetry](webservices/web-service-telemetry.md)
+
 
 ### Accessing device capabilities
 #### [Implementing camera in AL](developer/devenv-implement-camera-al.md)
@@ -870,7 +906,7 @@
 
 ## AL platform
 ### [Overview](developer/devenv-platform-overview.md)
-<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient) -->
+<!-- (Job queue, printing, task scheduler, telemetry, Keyvault, .NET interop, AL HttpClient, Azure functions) -->
 ### Using the system application
 #### [Overview of the system application](developer/devenv-system-application-overview.md)
 #### [Application reference for Dynamics 365 Business Central](/dynamics365/business-central/application/)
@@ -885,14 +921,19 @@
 ### Task scheduler and job queue
 #### [Task scheduler](developer/devenv-task-scheduler.md)
 #### [Job queue](developer/devenv-job-queue.md)
+
 ### Calling external services
-#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)  
-### App key vaults for secrets
+#### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
+<!--#### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)-->
+#### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
+
+### Using Azure Key Vault for app secrets
 #### [Overview](developer/devenv-app-key-vault-overview.md)
 #### [Setting up app key vaults for online](administration/setup-app-key-vault.md)
 #### [Setting up app key vaults for on-premises](administration/setup-app-key-vault-onprem.md)
 #### [Using key vault secrets in extensions](developer/devenv-app-key-vault.md)
-#### [Analyzing app key vault telemetry](administration/telemetry-extension-key-vault-trace.md)
+#### [Analyzing app keyvault telemetry](administration/telemetry-extension-key-vault-trace.md)
 
 ### Developing printer extensions
 #### [Printer extension overview](developer/devenv-reports-printing.md)
@@ -1053,7 +1094,7 @@
 ### [Create a release of your application](al-go/algo-create-release-app.md)
 ### [Register a customer production environment for manual deployment](al-go/algo-register-cust-prod-env.md)
 ### [Update AL-Go system files](al-go/algo-update-system-files.md)
-### [Use Azure KeyVault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
+### [Use Azure Key Vault for secrets with AL-Go](al-go/algo-enable-keyvault-app-development.md)
 ### [Create online development environment from Visual Studio Code](al-go/algo-create-online-dev-env-vscode.md)
 ### [Create online development environment from GitHub](al-go/algo-create-online-dev-env-github.md)
 ### [Set up CI/CD for an existing per-tenant extension](al-go/algo-setup-cicd-existing-pte.md)
@@ -1159,18 +1200,21 @@
 ### APIs
 #### [Overview](webservices/api-overview.md)
 #### [API client performance](webservices/odata-client-performance.md)
-#### [Troubleshooting API calls](api-reference/v2.0/dynamics-error-codes.md)
+#### [Tips for working with APIs](developer/devenv-connect-apps-tips.md)
+#### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+#### [Troubleshooting API calls](webservices/dynamics-error-codes.md)
 #### [Business Central API (v2.0)](api-reference/v2.0/index.md)
 #### [Business Central API (v1.0)](api-reference/v1.0/index.md)
 #### [Automation API](administration/itpro-introduction-to-automation-apis.md)
 #### [Admin Center API](administration/administration-center-api.md)
 #### [Cloud migration API](administration/cloudmigrationapi/cloud-migration-api-overview.md)
-#### [Developing a custom API](developer/devenv-develop-custom-api.md)
+#### [API Developer Overview](developer/devenv-api.md)
 #### [Getting a list of environments](webservices/api-get-environments.md)
 ### OData
 #### [Overview](webservices/odata-web-services.md)
 #### [OData client performance](webservices/odata-client-performance.md)
-#### [Troubleshooting OData calls](api-reference/v2.0/dynamics-error-codes.md)
+#### [Using filters with OData/API calls](developer/devenv-connect-apps-filtering.md)
+#### [Troubleshooting OData calls](webservices/dynamics-error-codes.md)
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Return or obtain an AtomPub document](webservices/return-obtain-an-atompub-document.md)
 #### [Return or obtain service metadata EDMX document](webservices/return-obtain-service-metadata-edmx-document.md)
@@ -1207,6 +1251,7 @@
 ### [Developing Connect apps](developer/devenv-develop-connect-apps.md)
 ### [Tips for working with the APIs](developer/devenv-connect-apps-tips.md)
 ### [Using filters with API calls](developer/devenv-connect-apps-filtering.md)
+### [API Developer Overview](developer/devenv-api.md)
 ### [Developing a custom API](developer/devenv-develop-custom-api.md)
 ### [Service-to-Service authentication](administration/automation-apis-using-s2s-authentication.md)
 <!-- CDS -->
@@ -1268,6 +1313,13 @@
 ### [Get relevant session and environment details](developer/devenv-develop-for-teams-check-session.md)
 ### [FAQ](developer/devenv-dev-faq-teams.md)
 <!-- end Microsoft Teams -->
+<!-- Azure services -->
+## Integrating with Azure services
+### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)
+### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
+### [Connecting to Azure Key Vault](developer/devenv-app-key-vault-overview.md)
+### [Azure Key Vault telemetry](administration/telemetry-extension-key-vault-trace.md)
+<!-- end Azure services -->
 <!-- Business Central API -->
 ## [Business Central API (v2.0)](api-reference/v2.0/index.md)
 <!-- end Business Central API -->
@@ -1421,7 +1473,7 @@
 #### [Troubleshooting: Analyzing long-running SQL queries involving FlowFields](administration/troubleshoot-query-performance-using-query-store.md)
 #### [Troubleshooting: Using the Event Log to monitor long-running SQL queries](administration/troubleshoot-long-running-queries-using-event-log.md)
 ### Monitoring and Analyzing Using telemetry
-#### [telemetry overview](administration/telemetry-overview.md)
+#### [Telemetry overview](administration/telemetry-overview.md)
 #### [Enabling Application Insights](administration/telemetry-enable-application-insights.md)
 ### [Understanding session timeouts](administration/understanding-session-timeouts.md)
 ### [Preparing Dynamics 365 for Sales for integration](administration/prepare-dynamics-365-for-sales-for-integration.md)

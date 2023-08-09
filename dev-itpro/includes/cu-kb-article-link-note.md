@@ -1,2 +1,8 @@
+---
+author: jswymer
+ms.topic: include
+ms.date: 06/30/2023
+ms.author: jswymer
+---
 > [!NOTE]
-> If an update link isn't working, it means that the update is running a bit late and hasn't been released yet. But it'll be available soon. Check back in a couple days or follow release announcements on Twitter at [https://twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) or Yammer at [https://aka.ms/BCYammer](https://aka.ms/BCYammer). Sorry for the inconvenience!
+> If a link to an update isn't working, it may be due to a delay in the release. However, the update will be available soon. Please check back in a couple days or follow our release announcements on [https://twitter.com/MSDYN365BC](https://twitter.com/MSDYN365BC) or [https://aka.ms/BCYammer](https://aka.ms/BCYammer). We apologize for the inconvenience.

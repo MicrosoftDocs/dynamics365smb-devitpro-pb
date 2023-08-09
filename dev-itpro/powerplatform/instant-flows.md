@@ -18,11 +18,14 @@ Unlike automated flows that run automatically when an event occurs, instant flow
 
 ## About instant flows
 
-There are two approaches to creating instant flows, as described in this section: instant flows that use the "For a selected record" trigger and instant flows that use other manual triggers. 
+There are two approaches to creating instant flows, as described in this section: 
+
+- Instant flows that use the "For a selected record" trigger 
+- Instant flows that use other manual triggers 
 
 ### Instant flows that use the "For a selected record" trigger 
 
-You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is the recommended approach for flows that relate to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
+You create these flows by using the "For a selected record (V3)" trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. They're designed to run on records in a page, although they don't have to. For users, these flows are available from the **Automate** action group on most list, card, and document pages. They allow users to run the flow in the context of a specific [!INCLUDE[prod_short](../includes/prod_short.md)] record&mdash;without leaving the page. This approach is recommended for flows related to [!INCLUDE[prod_short](../includes/prod_short.md)] data.
 
 :::image type="content" source="../developer/media/power-automate-action-intro.png" alt-text="Shows the Automate action in the action bar with expanded actions.":::
 
@@ -56,7 +59,7 @@ You create these flows by using an instant trigger from a connector other than t
 
 You store the flows you create in one of your Power Automate environments. Learn more at [Using environments within Power Automate](/power-automate/environments-overview-admin).
 
-You can create different flows in different environments. For example, you might want to build and test a flow in a sandbox environment before using it in your production environment. In [!INCLUDE[prod_short](../includes/prod_short.md)], you specify the environment that you want to get flows from.
+You can create different flows in different environments. For example, you might want to build and test a flow in a sandbox environment before using it in your production environment. In [!INCLUDE[prod_short](../includes/prod_short.md)], you specify the environment from which want to get flows from.
 
 It's easy to switch between environments in [!INCLUDE [prod_short](../developer/includes/prod_short.md)]. On the **Assisted Setup** page, run the **Power Automate Environment** assisted setup guide. The guide finds your environments for you, and you pick the one you want to use.
 
@@ -76,13 +79,13 @@ After you choose an environment, [!INCLUDE[prod_short](../includes/prod_short.md
 
   For more information, see [Set Up Power Automate Integration](power-automate-setup.md).
 
-## Create flow that uses "For a selected record (V3)" trigger
+## Create a flow that uses "For a selected record (V3)" trigger
 
 You can build your own flow that uses the "For a selected record (V3)" trigger or start [from a template](#create-from-template) provided by Business Central.
   
 ### Create from scratch
 
-This procedure outlines that steps required to create an instant flow from scratch that uses the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. When completed, the flow appears in the **Automate** group in the action bar. To illustrate the process, the steps create a basic flow example for sending an email reminder about a sales invoice. When done, the flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
+This procedure outlines the steps required to create an instant flow from scratch that uses the **For a selected record (V3)** trigger of the [!INCLUDE[prod_short](../includes/prod_short.md)] connector. When completed, the flow appears in the **Automate** group in the action bar. To illustrate the process, the steps create a basic flow example for sending an email reminder about a sales invoice. When done, the flow will be available from all pages that use table 26 **Sales Header**, which includes, for example,  the **Sales Invoices** list and **Sales Invoice** card.
 
 The flow in Power Automate will look like the following figure:
 
@@ -97,7 +100,7 @@ Complete the following steps:
 
    # [From Business Central](#tab/bc)
 
-   1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
+   1. Sign in to [Business Central](https://businesscentral.microsoft.com).
    2. Open the list, card, or document page.
    3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow** > **Create from blank**.
 
@@ -124,15 +127,15 @@ Complete the following steps:
     |-----|-----------|
     |**Environment name**|The name of the [!INCLUDE[prod_short](../includes/prod_short.md)] environment where this flow can be run. The [!INCLUDE[prod_short](../includes/prod_short.md)] connector for Power Automate supports multiple production and sandbox environments. If you haven't created multiple production or sandbox environments, **Production** is the only available option you can choose.|
     |**Company name**|The name of the [!INCLUDE[prod_short](../includes/prod_short.md)] company where this flow can be run.|
-    |**Page or table** |The [!INCLUDE[prod_short](../includes/prod_short.md)] page or table that this flow will run on. Specify a table using the format *tableID*, like *table18* for the **Customer** table. Specify a page using the format *pageID*, like *page21*. You can specify more than one table or page, just separate each entry with a comma, for example, *page21,page22*. This field determines which page the flow will appear on under the **Automate** action. If you specify a table, then the flow will appear on all pages the use the table as its source. For example, page 21 and 22 use table 18, so you could specify only *table18* to show the flow on both page.<br><br> For this example, set **Page or table** to *table36*, so the flow can only be run on pages that use the **Sales Header** table as the source. If you're in doubt which ID a specific page or table is using, you can use the [inspect pages and data](../developer/devenv-inspecting-pages.md) feature in the [!INCLUDE[prod_short](../includes/prod_short.md)] web client.|
+    |**Page or table** |The [!INCLUDE[prod_short](../includes/prod_short.md)] page or table that this flow will run on. Specify a table using the format *tableID*, like *table18* for the **Customer** table. Specify a page using the format *pageID*, like *page21*. You can specify more than one table or page, just separate each entry with a comma, for example, *page21,page22*. This field determines which page the flow will appear on under the **Automate** action. If you specify a table, then the flow will appear on all pages the use the table as its source. For example, page 21 and 22 use table 18, so you could specify only *table18* to show the flow on both page.<br><br> For this example, set **Page or table** to *table36*, so the flow can only be run on pages that use the **Sales Header** table as the source. If you're in doubt about which ID a specific page or table is using, you can use the [inspect pages and data](../developer/devenv-inspecting-pages.md) feature in the [!INCLUDE[prod_short](../includes/prod_short.md)] web client.|
 
-4. Select the **+ New step** to add actions and other triggers to design the flow. A flow must contain least one action. For this example, will add the  **Get record (V3)** for [!INCLUDE[prod_short](../includes/prod_short.md)] to get information about the record.
+4. Select the **+ New step** to add actions and other triggers to design the flow. A flow must contain at least one action. For this example, will add the  **Get record (V3)** for [!INCLUDE[prod_short](../includes/prod_short.md)] to get information about the record.
 
     1. In the **Choose an operation** step, select **Actions**.
     2. Search for and select the **Get record (V3)** action for [!INCLUDE[prod_short](../includes/prod_short.md)].
 
      :::image type="content" source="../developer/media/power-automate-get-record-action.png" alt-text="Shows the get record action in flow in Power Automate.":::
-5. On the **Get record (V3)** to fill in the information you want from the record. For this example, you use static value and dynamic content. 
+5. On the **Get record (V3)**, fill in the information you want from the record. For this example, you use static value and dynamic content. 
 
     1. For example, select the **Environment name** field, then select **Add custom value** > **Add dynamics content**.
     2. In the **Dynamic content** pane, select *EnvironmentName*. For **Company name**, do the same but select *CompanyId*. For **Row ID**, select *SystemId*.
@@ -168,9 +171,9 @@ To create an instant flow from a template, complete the following steps:
 
    # [From Business Central](#tab/bc)
 
-   With this way, you work only in Business Central, but you have the option during the setup to open the flow in Power Automate.
+   In this way, you work only in Business Central, but you have the option during the setup to open the flow in Power Automate.
 
-   1. Sign in to [Business Central](https://businesscentral.onmicrosoft.com).
+   1. Sign in to [Business Central](https://businesscentral.microsoft.com).
    2. Open the list, card, or document page.
    3. In the action bar, select **Automate** > **Power Automate** > **Create a Flow**.
    4. The **Create flow** page opens and lists all the available Business Central templates related to the page. Select the template you want.
@@ -215,7 +218,7 @@ Creating an instant flow for general use is similar to how you create a flow for
 
 ## Troubleshoot instant flows
 
-The following table includes the most common problems that prevent instant flows from running or appearing in the **Automation** group for you or another user. If you got a message like **Workflow add, but not yet enabled** when creating an instant flow from Business Central, this information can help you fix the problem.
+The following table includes the most common problems that prevent instant flows from running or appearing in the **Automation** group for you or another user. If you get a message like **Workflow add, but not yet enabled** when creating an instant flow from Business Central, this information can help you fix the problem.
 
 > [!TIP]
 > There can also be other reasons why the flow isn't showing. One way to help determine why is to open the flow details page in Power Automate. Power Automate will sometimes indicate the reason the flow isn't working. Use the **Flow checker** action to help identify problems. To learn more about flow checker, go to [Find and fix errors with Flow Checker](/power-automate/error-checker).
@@ -233,7 +236,7 @@ The following table includes the most common problems that prevent instant flows
 ## Next steps
 
 - Run the flow from [!INCLUDE[prod_short](../includes/prod_short.md)]. For more information, see [Run Instant Flows](/dynamics365/business-central/across-how-use-financials-data-source-flow#run-instant-flows).
-- Promote the flow action to more prominent locations on page. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
+- Promote the flow action to more prominent locations on the page. Learn more at [Run Power Automate flows from page actions](../developer/devenv-actions-overview.md#run-power-automate-flows-from-page-actions).
 
 ## See also
 

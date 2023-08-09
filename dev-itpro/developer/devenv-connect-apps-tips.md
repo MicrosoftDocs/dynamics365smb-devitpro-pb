@@ -10,8 +10,7 @@ ms.service: dynamics365-business-central
 ms.topic: conceptual
 ---
 
-# Tips for working with the APIs
-
+# Tips for working with APIs
 
 ## GET
 
@@ -44,7 +43,7 @@ ms.topic: conceptual
 + The resource ID must be provided in the URL when trying to read or modify a resource or any of its children. The ID is provided in () after the API endpoint. For example, to GET the "CRONUS USA, Inc." company details, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/`
 + All resources live in the context of a parent company, which means that the company ID must be provided in the URL for all resource API calls. For example, to GET all customers in the "CRONUS USA, Inc." company, you must call `<endpoint>/companies(bb6d48b6-c7b2-4a38-9a93-ad5506407f12)/customers`
 
-## <a name="AcceptLanguage"></a>Accept-Language
+## <a name="AcceptLanguage"></a>Accept-Language HTTP header
 
 By specifying `Accept-Language` in the request header, you can set a specific language for your web service response. It's recommended to use this setting, if your app is dependent on a web service response to be in a specific language. If `Accept-Language` is set, it will override default settings. This setting also controls the regional formatting settings, affecting behavior such as how date and time will be formatted.
 
@@ -110,5 +109,6 @@ If successful, this method returns a `200 OK` response code and a report PDF fil
 ## See Also
 <!-- [Using Deltas With APIs](devenv-connect-apps-delta.md)-->  
 [Using Filtering With APIs](devenv-connect-apps-filtering.md)  
+[API performance](../webservices/web-service-performance.md)   
 [Performance Articles For Developers](../performance/performance-developer.md)  
 [DataAccessIntent property](properties/devenv-dataaccessintent-property.md)

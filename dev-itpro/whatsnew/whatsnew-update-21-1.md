@@ -32,7 +32,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/top
 
 ## Localization updates
 
-| Country| Feature  |Description|
+| Country/region| Feature  |Description|
 |-------------|--------------|--------------|
 | Belgium | Vendor Name as a column in EB Payment Journal | Vendor Name now exists in Belgium local EB Payment Journal, the same as in W1 Payment Journal feature.|
 | W1 | Services Declarations [BE] F01DGS Declaration | Belgian authorities require reporting for exporting services to the other EU countries and this includes the F01DGS form for Belgium. Even primarily required for Belgium market, this feature is available as an extension and can be used in all countries. Reporting is configurable, so it won't have a hard-coded format for export. It works with the Items (Type=Service), Resources, and Item Charges as services in both purchase and sales documents.|

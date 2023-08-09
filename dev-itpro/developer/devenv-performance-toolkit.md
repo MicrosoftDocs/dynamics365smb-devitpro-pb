@@ -2,10 +2,10 @@
 title: Performance Toolkit Extension
 description: Test your extensions for performance regressions during the development process for Business Central apps. 
 author: bholtorf
-ms.custom: na
-ms.date: 10/27/2022
-ms.reviewer: na
-ms.suite: na
+ms.custom: bap-template
+ms.date: 07/26/2023
+ms.reviewer: jswymer
+ms.service: dynamics365-business-central
 ms.tgt_pltfrm: na
 ms.search.form: 149000, 149001, 149003, 149004, 149005, 149006, 149007, 149008, 149009
 ms.topic: conceptual
@@ -387,11 +387,14 @@ This example shows how to use Single Run mode for performance regression testing
 
 The data that the runs generate is persisted in the database. If the database is maintained, you can set previous runs as baseline.
 
-> [!TIP]
-> If you attach an Application Insights key or connection string in the admin center for online or [!INCLUDE[server](includes/server.md)] for on-premises then the log entries are also shown in the Application Insights ID.
+### Analyze with telemetry
+If you have enabled telemetry on your test environment, then you get telemetry when the Performance Toolkit runs start/complete and when scenarios complete (including measurements). Learn more at [Performance toolkit telemetry](../administration/telemetry-performance-toolkit-trace.md).
 
-## See Also
+The telemetry data emitted from the Performance Toolkit can then be analyzed using the Power BI Performance report or directly with KQL. See sample KQL code here: [https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/PerformanceToolkit.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/ExampleQueriesForEachArea/PerformanceToolkit.kql).
+
+## See also
 
 [Testing the Application Overview](devenv-testing-application.md)  
+[Performance toolkit telemetry](../administration/telemetry-performance-toolkit-trace.md)   
 [Development in AL](devenv-dev-overview.md)  
 [Best Practices for AL](../compliance/apptest-bestpracticesforalcode.md)

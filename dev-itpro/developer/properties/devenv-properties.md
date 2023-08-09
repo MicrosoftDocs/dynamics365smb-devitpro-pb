@@ -7,6 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: overview
 author: SusanneWindfeldPedersen
+description: Explore Dynamics 365 Business Central Developer Properties for objects like tables, pages, and reports. Maximize efficiency with our guide.
 ---
 
 # Properties Overview

@@ -42,8 +42,8 @@ Please note that new customers will automatically get the latest builds of Busin
 
 ## Good to know
 
-**Available for all countries: Schedule minor updates and receive email notifications**  
-All customers can now receive up-front email notifications seven days in advance and schedule minor updates of Business Central within 21 days. We enabled this capability for US with 18.1, and are now enabling the same experience for all other countries with 18.2. Learn more: https://aka.ms/BCUpdates.
+**Available for all countries/regions: Schedule minor updates and receive email notifications**  
+All customers can now receive up-front email notifications seven days in advance and schedule minor updates of Business Central within 21 days. We enabled this capability for US with 18.1, and are now enabling the same experience for all other countries/regions with 18.2. Learn more: https://aka.ms/BCUpdates.
 
 **New ways of working with Business Central data in Power BI**  
 In the upcoming June update to Power BI Desktop we have included a new connector for Business Central allowing you to get data faster from Business Central to Power BI. Note the update to Power BI Desktop is scheduled later in June and you will get it automatically if you have installed Power BI Desktop from Microsoft Store. Read more about the new capabilities [here](/dynamics365-release-plan/2021wave1/smb/dynamics365-business-central/enable-power-bi-connector-work-business-central-apis-instead-web-services-only). Please note that this change is for Business Central online only. 
