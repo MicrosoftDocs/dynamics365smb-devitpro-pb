@@ -5,7 +5,7 @@ description: This article points to articles that describe the new and changed f
 author: edupont04
 ms.author: edupont
 ms.reviewer: jswymer 
-ms.date: 07/07/2023
+ms.date: 08/09/2023
 ms.custom: bap-template #Required; don't change.
 ms.topic: whats-new #Required; don't change.
 
@@ -29,6 +29,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 
 | Version | Build number | Update availability | Learn more |
 |---------|--------------|---------------|-------------|
+|22.4|Application Build 22.4.59535, Platform Build 22.0.59520|August 2023|[Update 22.4 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-4.md)|
 |22.3|Application Build 22.3.58453, Platform Build 22.0.58423|July 2023|[Update 22.3 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-3.md)|
 |22.2|Application Build 22.2.57617, Platform Build 22.0.57579| June 2023|[Update 22.2 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-2.md)|
 |22.1|Application Build 22.1.56216, Platform Build 22.0.56191|May 2023|[Update 22.1 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-1.md)|
