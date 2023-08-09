@@ -53,7 +53,7 @@ Follow these steps replicate data to the online tenant.
 
 The **Cloud Migration Management** page gives you access to details about the data replication.-->
 
-   [!TIP]
+   > [!TIP]
    > [!INCLUDE [cloud-migration-telemetry](../developer/includes/cloud-migration-telemetry.md)]
 
 ## Fix errors
