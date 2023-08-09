@@ -33,7 +33,6 @@ Learn more about what's new or changed in recent releases in the links in the fo
 |22.3|Application Build 22.3.58453, Platform Build 22.0.58423|July 2023|[Update 22.3 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-3.md)|
 |22.2|Application Build 22.2.57617, Platform Build 22.0.57579| June 2023|[Update 22.2 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-2.md)|
 |22.1|Application Build 22.1.56216, Platform Build 22.0.56191|May 2023|[Update 22.1 for Microsoft Dynamics 365 Business Central online 2023 release wave 1](whatsnew-update-22-1.md)|
-|21.5|Application Build 21.5.53819, Platform Build 21.0.53597.53794 | March 2023|[Update 21.5 for Microsoft Dynamics 365 Business Central online 2022 release wave 2](whatsnew-update-21-5.md)|
 <!-- remove entries with an auto-update date older than the current month (unless the table is then pathetically short - there should always be three entries as a best practice). The links can be to articles in Docs, the planned-features article in the release plans, or KB articles with bug details. BAP Skilling does not own the individual articles with concrete information but provides tooling and guidance to help product teams, customer/partner success teams, or support teams gather relevant information.  -->
 
 For earlier versions, see the archived release plans at [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).  <!--required section-->
