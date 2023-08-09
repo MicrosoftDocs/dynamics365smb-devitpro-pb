@@ -4,7 +4,7 @@ description: This article describes how to download and use the ALDoc tool to ge
 author: 
 ms.topic: conceptual
 ms.reviewer: solsen
-ms.date: 08/03/2023
+ms.date: 08/09/2023
 ms.author: solsen
 ms.custom: bap-template
 ---
@@ -75,7 +75,7 @@ When all prerequisites have been successfully installed, the next step is to use
     ```
     ```bash
      # Example
-     .\\aldoc\\aldoc.exe init -o .\\mypath\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
+     .\\aldoc\\aldoc.exe init -o .\\mypath\\ -t 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.0.app'
     ```
 
 2. Next, generate the reference files for each .app file that you specified in the previous step. The `build` command *must be run for each .app file* that you want to generate documentation for. Furthermore, it's *important* for the cross references that the `build` command has access to the complete set of .app files that you intend to generate documentation for. You specify these files with the `-c` parameter.
@@ -85,7 +85,7 @@ When all prerequisites have been successfully installed, the next step is to use
      ```
     ```bash
      # Example
-     .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package1','c:\\my_path_package2','c:\\my_path_package3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.00000.app'
+     .\\aldoc\\aldoc.exe build -o .\\mypath\\ -c 'c:\\my_path_package1','c:\\my_path_package2','c:\\my_path_package3' -s 'F:\\AL\\.alpackages\\Microsoft_System Application_23.0.00000.0.app'
     ```
 
 In the next steps, you will use the DocFx tool to build and host the static website.
