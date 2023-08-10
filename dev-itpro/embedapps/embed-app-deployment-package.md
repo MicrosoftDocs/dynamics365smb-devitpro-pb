@@ -93,9 +93,9 @@ We recommend you to use RapidStart packages to populate the new companies with t
 
 ## Exporting application and tenant databases
 
-You export the databases to BACPAC format by using the `Export-BCContainerDatabasesAsBacpac` command from the [BcContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
+You export the databases to .bacpac and .dacpac format by using the `Export-BCContainerDatabasesAsBacpac` command adding the `-includeDacPac` flag from the [BcContainerHelper PowerShell module](https://github.com/Microsoft/navcontainerhelper).
 
-We strongly recommend using this command for creating the BACPAC files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover BACPAC-related issues with deployments. So, remember to update the BcContainerHelper PowerShell module for every new iteration.
+We strongly recommend using this command for creating the .bacpac and .dacpac files you're planning to deploy to the Business Central service. To simplify exporting the data, the command also does a number of clean-up steps on the databases. It cleans up sessions, database connection, list of tenants, imported license, and more. It also verifies that the schemas of the application and tenant databases are synchronized, which is essential for deployment. We keep enhancing this command with more cleanup and validation steps as we discover .dacpac-related issues with deployments. So, remember to update the BcContainerHelper PowerShell module for every new iteration.
 
 ## Providing deployment instructions in the manifest.json
 
