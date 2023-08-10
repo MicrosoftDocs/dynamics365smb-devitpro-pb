@@ -120,8 +120,8 @@
 #### [Authoring guide](help/writing-guide.md)
 #### [Migrate legacy help to the Business Central format](upgrade/migrate-help.md)
 ### ALDoc tool
-#### [Generating help with the ALDoc tool](help/help-aldoc-generate-help.md)
-#### [Overwriting help with the ALDoc tool](help/help-aldoc-overwrites.md)
+#### [Generating help with the ALDoc tool (preview)](help/help-aldoc-generate-help.md)
+#### [Overwriting help with the ALDoc tool (preview)](help/help-aldoc-overwrites.md)
 <!--### Resources for a developer
 #### [Learning catalog](/dynamics365/business-central/readiness/readiness-learning-developers?toc=/dynamics365/business-central/dev-itpro/toc.json)
 #### [Documentation](developer/devenv-dev-overview.md)
