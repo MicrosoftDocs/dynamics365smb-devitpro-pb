@@ -1,2 +1,2 @@
 > [!NOTE]  
-> The ALDoc tool is in *PREVIEW* with [!INCLUDE [prod_short](prod_short.md)] 2023 release wave 2.
+> The ALDoc tool is in *PREVIEW* and available with the pre-release update of the AL Language extension for Microsoft Dynamics 365 Business Central.
