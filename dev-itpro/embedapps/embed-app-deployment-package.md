@@ -142,6 +142,8 @@ The manifest.json file, supplied within the deployment package, contains importa
 |----|----|-----------|
 | applicationBacpacPath| String  |Path to the application database (.bacpac) included with the deployment package. |
 | tenantTemplateBacpacPath| String|Path to the tenant template database (.bacpac) included with the deployment package. |
+| applicationDacpacPath| String |Path to the application database (.dacpac) included with the deployment package. |
+| tenantTemplateDacpacPath| String|Path to the tenant template database (.dacpac) included with the deployment package. |
 
 #### "links"
 
