@@ -2782,7 +2782,6 @@
 ### [DataAccessIntent Property](properties/devenv-dataaccessintent-property.md)
 ### [DataCaptionExpression Property](properties/devenv-datacaptionexpression-property.md)
 ### [DataCaptionFields Property](properties/devenv-datacaptionfields-property.md)
-### [DataClassification Property](properties/devenv-dataclassification-property.md)
 ### [DataItemLink Property](properties/devenv-dataitemlink-property.md)
 ### [DataItemLinkReference Property](properties/devenv-dataitemlinkreference-property.md)
 ### [DataItemTableFilter Property](properties/devenv-dataitemtablefilter-property.md)
