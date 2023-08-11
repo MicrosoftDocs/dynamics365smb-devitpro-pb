@@ -7368,6 +7368,11 @@
     "source_path": "dev-itpro/api-reference/v2.0/dynamics-error-codes.md",
     "redirect_url": "/dynamics365/business-central/dev-itpro/webservices/dynamics-error-codes",
     "redirect_document_id": false
+   },
+   { 
+    "source_path": "dev-itpro/developer/properties/devenv-dataclassification-property.md",
+    "redirect_url": "/dynamics365/business-central/dev-itpro/developer",
+    "redirect_document_id": false
    }
   ] 
 }
