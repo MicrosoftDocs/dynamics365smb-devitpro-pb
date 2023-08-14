@@ -1,4 +1,4 @@
-By default, the content headers contain a header for 'Content-Type', namely 'text/plain; charset=utf-8'. This is important to adjust if the endpoint you are calling expect a different content type, e.g. multipart/form-data or application/json.
+By default, the content headers contain a header for 'Content-Type', namely 'text/plain; charset=utf-8'. This is important to adjust if the endpoint you're calling expects a different content type, for example, multipart/form-data or application/json.
 
 The following AL code examples illustrate ways to change the content header.
 
