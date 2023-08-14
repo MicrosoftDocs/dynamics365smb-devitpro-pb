@@ -36,6 +36,11 @@ The following methods are available on instances of the HttpContent data type.
 An instance of HttpContent encapsulates the body and the associated headers of an HTTP request that will be sent to a remote endpoint or that is being received from a remote endpoint.
 The HttpContent data type is a value type. This means that when assigning an instance of HttpContent to a variable, a copy will be created. 
 
+## Content headers
+
+[!INCLUDE[ContentHeaders](../../../includes/include-http-contentheaders.md )]
+
+
 ## Example
 The following example illustrates how to use the HttpContent type to send a simple POST request containing JSON data.
 
@@ -49,11 +54,12 @@ codeunit 50110 MyCodeunit
         response: HttpResponseMessage;
         contentHeaders: HttpHeaders;
         content: HttpContent;
+        IsSuccessful: Boolean;
     begin
         // Add the payload to the content
         content.WriteFrom(payload);
 
-        // Retrieve the contentHeaders associated with the content
+        // Replace the default content type header with a header associated with this request
         content.GetHeaders(contentHeaders);
         contentHeaders.Clear();
         contentHeaders.Add('Content-Type', 'application/json');
@@ -66,7 +72,15 @@ codeunit 50110 MyCodeunit
         request.SetRequestUri(uri);
         request.Method := 'POST';
 
-        client.Send(request, response);
+        IsSuccessful := client.Send(request, response);
+
+        if not IsSuccessful then begin
+            // handle the error
+        end;
+
+        if not response.IsSuccessStatusCode() then begin
+            // handle the error
+        end;
 
         // Read the response content as json.
         response.Content().ReadAs(responseText);
