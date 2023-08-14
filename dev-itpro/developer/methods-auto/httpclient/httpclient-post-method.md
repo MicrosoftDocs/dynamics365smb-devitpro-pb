@@ -49,6 +49,11 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Content headers
+
+[!INCLUDE[ContentHeaders](../../../includes/include-http-contentheaders.md )]
+
+
 ## Supported HTTP methods
 
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]

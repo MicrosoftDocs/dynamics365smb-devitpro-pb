@@ -74,7 +74,7 @@ Occurs when a request to an Azure function hosted from the URL {alFunctionHost} 
 
 
 ### Sample KQL code 
-This KQL code can help you get started analyzing request failures to Azure functions:
+This KQL code can help you get started analyzing and alerting on request failures to Azure functions:
 
 ```kql
 traces
@@ -89,6 +89,7 @@ traces
 , functionHost = customDimensions.alFunctionHost
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
 <!--
 {"component":"Dynamics 365 Business Central Server","environmentType":"Production","eventId":"AL0000I7P","clientType":"WebClient","telemetrySchemaVersion":"1.2","componentVersion":"21.0.44895.0","companyName":"CRONUS International Ltd.","aadTenantId":"common","extensionName":"System Application","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"21.0.0.0","alObjectName":"System Telemetry Logger","extensionPublisher":"Microsoft","alObjectType":"CodeUnit","alObjectId":"8713","alCallerAppVersion":"1.0.0.0","alCategory":"FeatureTelemetry","alCallerAppVersionMajor":"21","alDataClassification":"SystemMetadata","alIsEvaluationCompany":"No","alCallerPublisher":"Default publisher","alTenantLicenseState":"Evaluation","alClientType":"Web","alCallerAppName":"ALProject2","alCompany":"CRONUS International Ltd.","alCallerAppVersionMinor":"0","alFeatureName":"Connect to Azure Functions","alEventName":"Request sent to Azure function failed: testbcapp.azurewebsites.net","alSubCategory":"Error","alFunctionHost":"testbcapp.azurewebsites.net","alStatusCode":"401","alErrorText":"Request sent to Azure function failed: testbcapp.azurewebsites.net"}
@@ -113,7 +114,7 @@ Occurs when the environment was scheduled to be updated, but it wasn't possible 
 |alErrorText|The reason for the failure.|
 
 ### Sample KQL code 
-This KQL code can help you get started analyzing failures to authorize to Azure functions:
+This KQL code can help you get started analyzing and alerting on failures to authorize to Azure functions:
 
 ```kql
 traces
@@ -128,6 +129,7 @@ traces
 , functionHost = customDimensions.alFunctionHost
 ```
 
+[!INCLUDE[telemetry_alert_learn_more](../includes/telemetry-alerting.md)]
 
 <!--
  {"component":"Dynamics 365 Business Central Server","environmentType":"Production","eventId":"AL0000I75","clientType":"WebClient","telemetrySchemaVersion":"1.2","componentVersion":"21.0.44895.0","companyName":"CRONUS International Ltd.","aadTenantId":"common","extensionName":"System Application","extensionId":"63ca2fa4-4f03-4f2b-a480-172fef340d3f","extensionVersion":"21.0.0.0","alObjectName":"System Telemetry Logger","extensionPublisher":"Microsoft","alObjectType":"CodeUnit","alObjectId":"8713","alCallerAppVersion":"1.0.0.0","alCategory":"FeatureTelemetry","alCallerAppVersionMajor":"21","alDataClassification":"SystemMetadata","alIsEvaluationCompany":"No","alCallerPublisher":"Default publisher","alTenantLicenseState":"Evaluation","alClientType":"Web","alCallerAppName":"ALProject2","alCompany":"CRONUS International Ltd.","alCallerAppVersionMinor":"0","alFeatureName":"Connect to Azure Functions","alEventName":"Acquiring token","alSubCategory":"Error","alFunctionHost":"testbcapp.azurewebsites.net","alErrorText":"Authorization failed to Azure function: testbcapp.azurewebsites.net"}
@@ -138,5 +140,6 @@ traces
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
 [Enable Sending Telemetry to Application Insights](telemetry-enable-application-insights.md)  
+[Alert on Telemetry](telemetry-alert.md)   
 [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)   
-[Overview of the System Application](../developer/devenv-system-application-overview.md)
+[Overview of the System Application](../developer/devenv-system-application-overview.md)   
