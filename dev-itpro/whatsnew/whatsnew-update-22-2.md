@@ -29,7 +29,7 @@ Find an overview of hotfixes in this [article](https://support.microsoft.com/hel
 
 ## Localization updates
 
-| Country| Feature  |Description|
+| Country/region| Feature  |Description|
 |-------------|--------------|--------------|
 | Switzerland | Removing DTA payment journal action | New fields are required on the Sales Invoices in France following the decree of the French Tax Authorities: Client's SIREN number, the delivery address of the goods sold if it is different from the customer's address, information if the invoice includes goods, services, or both, and option to pay tax based on debits. |
 | Italy | Intrastat  | The Intrastat extension makes it easy to export the Intrastat report in the format that the Italian authorities require. |

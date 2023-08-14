@@ -39,7 +39,7 @@ In [!INCLUDE[navnowlong](includes/navnowlong_md.md)], you can create MenuSuites 
 |----------------------------|-----------------|  
 |Dept - MBS|The base design level that is provided in [!INCLUDE[navnow](includes/navnow_md.md)]. Any MenuSuite you create inherits from this base design level or a design level that inherited from this base design level.|  
 |Dept - Region|The design level that is used for region specific MenuSuites. This level is typically used for localization. Only one region specific design level MenuSuite can be created in a given application.|  
-|Dept - Country|The design level that is used for country specific MenuSuite. This level is typically used for localization and other items such as taxes that are country specific. Only one country specific design level MenuSuite can be created in a given application.|  
+|Dept - Country|The design level that is used for country/region specific MenuSuite. This level is typically used for localization and other items such as taxes that are country/region specific. Only one country/region specific design level MenuSuite can be created in a given application.|  
 |Dept - Add-on|The design level that a developer or [!INCLUDE[navnow](includes/navnow_md.md)] partner can use for customization. Up to ten Add-on design level MenuSuites can be created in a given application.|  
 |Dept - Partner|The design level that [!INCLUDE[navnow](includes/navnow_md.md)] partners use to customize MenuSuites. Only one partner design level MenuSuite can be created in a given application.|  
 |Dept - Company|The design level that is used to design for a specific company. Only one company specific design level MenuSuite can be created in a given application.|  
