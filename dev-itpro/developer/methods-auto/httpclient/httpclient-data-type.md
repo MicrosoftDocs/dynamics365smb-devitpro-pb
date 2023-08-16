@@ -54,6 +54,7 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 
 [!INCLUDE[httpclientErrors](../../../includes/errors-outgoing-http.md)] 
 
+
 #### HTTP status codes
 [!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
 
@@ -64,7 +65,7 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 
 
 ## See also
-
+[Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)  
 [Outgoing Web Service Request Telemetry](../../../administration/telemetry-webservices-outgoing-trace.md)  
