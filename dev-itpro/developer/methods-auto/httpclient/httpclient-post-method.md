@@ -50,7 +50,7 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Example
+## Example (HTTP POST)
 A POST request sends data to the server for processing. The Content-Type header of the request signifies what MIME type the body is sending. To make an HTTP POST request, given an HttpClient and a Uri, use the HttpClient.Post method:
 
 ```AL
@@ -122,6 +122,7 @@ The preceding code:
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
 ## See Also
+[Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
