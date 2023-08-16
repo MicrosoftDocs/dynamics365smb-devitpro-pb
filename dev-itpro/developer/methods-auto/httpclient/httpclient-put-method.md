@@ -49,6 +49,67 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Example
+The PUT request method either replaces an existing resource or creates a new one using request body payload. To make an HTTP PUT request, given an HttpClient and a URI, use the HttpClient.Put method:
+
+```AL
+    local procedure PutRequest(json: Text;) ResponseText: Text
+    var
+        Client: HttpClient;
+        Content: HttpContent
+        ContentHeaders: HttpHeaders;
+        IsSuccessful: Boolean;
+        Response: HttpResponseMessage;
+        ResponseText: Text;
+    begin
+        Content.GetHeaders(ContentHeaders);
+
+        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        ContentHeaders.Add('Content-Type', 'application/json');
+
+        if ContentHeaders.Contains('Content-Encoding') then headers.Remove('Content-Encoding');
+        ContentHeaders.Add('Content-Encoding', 'UTF8');
+        
+        // assume that the json parameter contains the following data
+        //
+        // {
+        //    userId = 1,
+        //    id = 1,
+        //    title = "foo bar",
+        //    completed = false
+        // }
+        Content.WriteFrom(json);
+        
+        IsSuccessful := Client.Put('https://jsonplaceholder.typicode.com/todos/1', Content, Response);
+
+        if not IsSuccessful then begin
+            // handle the error
+        end;
+
+        if not Response.IsSuccessStatusCode() then begin
+            HttpStatusCode := response.HttpStatusCode();
+            // handle the error (depending on the HTTP status code)
+        end;
+
+        Response.Content().ReadAs(ResponseText);
+
+        // Expected output:
+        //   PUT https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1
+        //   {
+        //     "userId": 1,
+        //     "id": 1,
+        //     "title": "foo bar",
+        //     "completed": false
+        //   }
+    end;
+```
+
+The preceding code:
+- Prepares a HttpContent instance with the JSON body of the request (MIME type of "application/json" and using the character encoding UTF8).
+- Makes a PUT request to "https://jsonplaceholder.typicode.com/todos/3".
+- Ensures that the response is successful.
+- Reads the response body as a string.
+
 ## Content headers
 
 [!INCLUDE[ContentHeaders](../../../includes/include-http-contentheaders.md )]

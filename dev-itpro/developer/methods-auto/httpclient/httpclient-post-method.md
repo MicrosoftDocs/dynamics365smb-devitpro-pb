@@ -49,6 +49,69 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+
+## Example
+A POST request sends data to the server for processing. The Content-Type header of the request signifies what MIME type the body is sending. To make an HTTP POST request, given an HttpClient and a Uri, use the HttpClient.Post method:
+
+```AL
+    local procedure PostRequest(json: Text;) ResponseText: Text
+    var
+        Client: HttpClient;
+        Content: HttpContent
+        ContentHeaders: HttpHeaders;
+        IsSuccessful: Boolean;
+        Response: HttpResponseMessage;
+        ResponseText: Text;
+    begin
+        Content.GetHeaders(ContentHeaders);
+
+        if ContentHeaders.Contains('Content-Type') then headers.Remove('Content-Type');
+        ContentHeaders.Add('Content-Type', 'application/json');
+
+        if ContentHeaders.Contains('Content-Encoding') then headers.Remove('Content-Encoding');
+        ContentHeaders.Add('Content-Encoding', 'UTF8');
+        
+        // assume that the json parameter contains the following data
+        //
+        // {
+        //    userId = 77,
+        //    id = 1,
+        //    title = "write code sample",
+        //    completed = false
+        // }
+        Content.WriteFrom(json);
+
+        IsSuccessful := Client.Post('https://jsonplaceholder.typicode.com/todos', Content, Response);
+
+        if not IsSuccessful then begin
+            // handle the error
+        end;
+
+        if not Response.IsSuccessStatusCode() then begin
+            HttpStatusCode := response.HttpStatusCode();
+            // handle the error (depending on the HTTP status code)
+        end;
+
+        Response.Content().ReadAs(ResponseText);
+
+        // Expected output:
+        //   POST https://jsonplaceholder.typicode.com/todos HTTP/1.1
+        //   {
+        //     "userId": 77,
+        //     "id": 201,
+        //     "title": "write code sample",
+        //     "completed": false
+        //   }
+    end;
+```
+
+The preceding code:
+- Prepares a HttpContent instance with the JSON body of the request (MIME type of "application/json" and using the character encoding UTF8).
+- Makes a POST request to "https://jsonplaceholder.typicode.com/todos".
+- Ensures that the response is successful.
+- Reads the response body as a string.
+
+
 ## Content headers
 
 [!INCLUDE[ContentHeaders](../../../includes/include-http-contentheaders.md )]

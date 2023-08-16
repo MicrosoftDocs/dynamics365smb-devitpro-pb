@@ -45,6 +45,41 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Example
+A DELETE request deletes an existing resource. A DELETE request is idempotent but not safe, meaning multiple DELETE requests to the same resources yield the same result, but the request affects the state of the resource. To make an HTTP DELETE request, given an HttpClient and a URI, use the HttpClient.Delete method:
+
+```AL
+    local procedure DeleteRequest() ResponseText: Text
+    var
+        Client: HttpClient;
+        IsSuccessful: Boolean;
+        Response: HttpResponseMessage;
+        ResponseText: Text;
+    begin
+        IsSuccessful := Client.Delete('https://jsonplaceholder.typicode.com/todos/1', Response);
+
+        if not IsSuccessful then begin
+            // handle the error
+        end;
+
+        if not Response.IsSuccessStatusCode() then begin
+            HttpStatusCode := response.HttpStatusCode();
+            // handle the error (depending on the HTTP status code)
+        end;
+
+        Response.Content().ReadAs(ResponseText);
+
+        // Expected output
+        //   DELETE https://jsonplaceholder.typicode.com/todos/1 HTTP/1.1
+        //   {}
+    end;
+```
+
+The preceding code:
+- Makes a DELETE request to "https://jsonplaceholder.typicode.com/todos/1".
+- Ensures that the response is successful.
+- Reads the response body as a string.
+
 ## Supported HTTP methods
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
