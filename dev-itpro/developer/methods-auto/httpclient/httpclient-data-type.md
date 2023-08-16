@@ -54,6 +54,7 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 
 [!INCLUDE[httpclientErrors](../../../includes/errors-outgoing-http.md)] 
 
+[!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
 
 #### HTTP status codes
 [!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]

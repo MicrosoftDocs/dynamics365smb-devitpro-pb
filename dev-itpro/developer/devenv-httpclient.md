@@ -82,6 +82,8 @@ The following example shows how to call an external web service from AL. It also
     end;
 ```
 
+[!INCLUDE[allowhttpclientnote](../includes/include-http-allowhttpclient-note.md)]
+
 ### Supported HTTP methods
 [!INCLUDE[SupportedHTTPmethods](../includes/include-http-methods.md )]
 
