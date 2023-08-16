@@ -45,7 +45,7 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
 
-## Example (PATCH method)
+## Example (HTTP PATCH)
 As an example of how to use the HttpClient.Send, we illustrate how to do a HTTP PATCH request. Examples of the other supported HTTP methods (DELETE, GET, POST, or PUT), see the respective articles for their methods (HttpClient.Delete, HttpClient.Get, HttpClient.Post, or HttpClient.Put).
 
 The PATCH request is a partial update to an existing resource. It doesn't create a new resource, and it's not intended to replace an existing resource. Instead, it updates a resource only partially. To make an HTTP PATCH request, given an HttpClient and a URI, use the HttpClient.Send method:
@@ -121,6 +121,7 @@ The preceding code:
 [!INCLUDE[SupportedHTTPmethods](../../../includes/include-http-methods.md )]
 
 ## See Also
+[Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
