@@ -78,7 +78,8 @@ The PUT request method either replaces an existing resource or creates a new one
         //    title = "foo bar",
         //    completed = false
         // }
-
+        Content.WriteFrom(json);
+        
         IsSuccessful := Client.Put('https://jsonplaceholder.typicode.com/todos/1', Content, Response);
 
         if not IsSuccessful then begin
