@@ -18,8 +18,14 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, transa
 
 For pricing, you can optionally decide to define minimum and maximum number of users for the plan. And for billing terms, you can decide to offer monthly and yearly billing, with the option for the customer to choose recurring billing. Under **Free Trial**, you can optionally define a free trial period for the plan. The free trial period is one month, and is automatically enabled for the customer when they purchase the plan in AppSource. Should the customer choose to cancel the subscription during the free trial period, they will not be charged.
 
+The following steps outline the process of enabling tranactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here.
 
-
+1. In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
+    > [!IMPORTANT]  
+    > <insert include file here>
+1. Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**.
+1. 
+1. 
 <!--
 **Notes**
 
