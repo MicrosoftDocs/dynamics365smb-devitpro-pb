@@ -44,6 +44,16 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Ways that HttpClient.Send calls can fail
+The method HttpClient.Send can fail and return false in the following ways:
+
+- The requestUri is not an absolute URI.
+- The chosen HTTP method is not supported.
+- The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.
+- The request failed due to timeout.
+
+[!INCLUDE[allowhttpclientnote](../../../includes/include-http-allowhttpclient-note.md)]
+
 
 ## Example (HTTP PATCH)
 As an example of how to use the HttpClient.Send, we illustrate how to do a HTTP PATCH request. Examples of the other supported HTTP methods (DELETE, GET, POST, or PUT), see the respective articles for their methods (HttpClient.Delete, HttpClient.Get, HttpClient.Post, or HttpClient.Put).

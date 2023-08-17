@@ -12,7 +12,7 @@ ms.author: kepontop
 
 # Call external services with the HttpClient data type
 
-The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  is simply a wrapper on the .NET class HttpClient.  
+The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
 In this article, you learn how to make HTTP requests using the _HttpClient_ data type and handle responses using the _HttpResponseMessage_ data type. 
 
@@ -57,7 +57,9 @@ For more information about content headers, see [HttpContent data type](methods-
 
 ## Run the call
 
-When you have setup the request, it's time to call out using a supported HTTP method. The call might fail in the [!INCLUDE[prod_short](../includes/prod_short.md)] platform before actually reaching the external web service. It's therefore important that you check for possible errors in your AL code. One common error occurs if you have added duplicate request or content HTTP headers.
+When you have set up the request, it's time to call out using a supported HTTP method. 
+
+[!INCLUDE[httpCallErrors](../includes/include-http-call-errors-note.md)]
 
 The following example shows how to call an external web service from AL. It also illustrates the error handling you need to setup for handling errors when sending the request.
 
