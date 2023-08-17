@@ -110,7 +110,7 @@ A POST request sends data to the server for processing. The Content-Type header 
 ```
 
 The preceding code:
-- Prepares a HttpContent instance with the JSON body of the request (MIME type of "application/json" and using the character encoding UTF8).
+- Prepares an HttpContent instance with the JSON body of the request (MIME type of "application/json" and using the character encoding UTF8).
 - Makes a POST request to "https://jsonplaceholder.typicode.com/todos".
 - Ensures that the response is successful.
 - Reads the response body as a string.
@@ -119,14 +119,14 @@ The preceding code:
 ## Example (How to upload a file using multipart/form-data)
 The Content-Type _multipart/form-data_ allows you to post multiple types of data in the same HTTP request and is commonly used for streaming data to an endpoint. 
 
-To use multipart/form-data with Httpclient, you need to do the following
-1. create a _content payload_, including defining the boundary between data elements
-2. add the file content and file name to the content payload
-3. setup the HTTP content header multipart/form-data
+To use multipart/form-data with Httpclient, you need to do the following:
+1. Create a _content payload_, including defining the boundary between data elements
+2. Add the file content and file name to the content payload
+3. Set up the HTTP content header multipart/form-data
 
-After these steps, your AL code should follows normal practices for Httpclient POST requests.
+After these steps, your AL code should follows usual practices for Httpclient POST requests.
 
-The methods for adding file content to the content payload differs depending if the file is a text file such as json or XML, or if it is a binary file. So we provided two different code examples below, one for each scenario: 
+The methods for adding file content to the content payload differs depending if the file is a text file such as JSON or XML, or if it's a binary file. So we provided two different code examples below, one for each scenario: 
 
 ### Example (How to upload a text file using multipart/form-data)
 
@@ -232,7 +232,7 @@ The main reason for the code example being different when dealing with binary da
 ```
 
 ### Example (How to upload large files using multipart/form-data)
-Some endpoints have restrictions on the size of files that can be uploaded and hence you might need to split and upload the file in chunks. The system application SharePoint module has an implementation for how to achieve this. For further information, see [SharePoint system application module](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/SharePoint).
+Some endpoints have restrictions on the size of files that can be uploaded and hence you might need to split and upload the file in chunks. The system application SharePoint module has an implementation for how to achieve this. For more information, see [SharePoint system application module](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/SharePoint).
 
 
 ## Content headers
