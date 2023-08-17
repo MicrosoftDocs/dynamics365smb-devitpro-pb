@@ -49,6 +49,10 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Ways that HttpClient.Post calls can fail
+The method HttpClient.Post can fail and return false in the following ways:
+
+[!INCLUDE[httpclientFailureReasonsList](../../includes/include-http-call-failure-reasons.md)]
 
 ## Example (HTTP POST)
 A POST request sends data to the server for processing. The Content-Type header of the request signifies what MIME type the body is sending. To make an HTTP POST request, given an HttpClient and a Uri, use the HttpClient.Post method:

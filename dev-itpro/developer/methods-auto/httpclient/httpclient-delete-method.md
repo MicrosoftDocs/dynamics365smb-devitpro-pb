@@ -45,6 +45,11 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Ways that HttpClient.Delete calls can fail
+The method HttpClient.Delete can fail and return false in the following ways:
+
+[!INCLUDE[httpclientFailureReasonsList](../../includes/include-http-call-failure-reasons.md)]
+
 ## Example (HTTP DELETE)
 A DELETE request deletes an existing resource. A DELETE request is idempotent but not safe, meaning multiple DELETE requests to the same resources yield the same result, but the request affects the state of the resource. To make an HTTP DELETE request, given an HttpClient and a URI, use the HttpClient.Delete method:
 
