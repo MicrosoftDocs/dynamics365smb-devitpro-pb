@@ -12,7 +12,7 @@ ms.author: kepontop
 
 # Call external services with the HttpClient data type
 
-The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md)  is simply a wrapper on the .NET class HttpClient.  
+The [HttpClient data type](methods-auto/httpclient/httpclient-data-type.md) is simply a wrapper on the .NET class HttpClient.  
 
 In this article, you learn how to make HTTP requests using the _HttpClient_ data type and handle responses using the _HttpResponseMessage_ data type. 
 
@@ -57,7 +57,7 @@ For more information about content headers, see [HttpContent data type](methods-
 
 ## Run the call
 
-When you have setup the request, it's time to call out using a supported HTTP method. 
+When you have set up the request, it's time to call out using a supported HTTP method. 
 
 [!INCLUDE[httpCallErrors](../includes/include-http-call-errors-note.md)]
 
