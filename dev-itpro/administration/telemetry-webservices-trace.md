@@ -83,13 +83,15 @@ For more performance guidelines, see [Writing efficient Web Services](../perform
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls. 
 
 ### HTTP status codes
-[!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
+[!INCLUDE[httpStatusCodes](../includes/include-http-status-error-codes.md)]
 
 ### The custom dimension httpStatusCode
 The custom dimension _httpStatusCode_ is key to understanding unsuccessful web service calls. Any call with an HTTP status code in the 4xx range should be investigated because these calls are likely failing due to a misconfiguration on the web service client (the caller).
 
 [!INCLUDE[prod_short](../developer/includes/prod_short.md)] online and on-premises are configured with various limits on web service requests. For example, there's a request timeout and a maximum connections limit. For online, you can't change these limits, but it's helpful to know what the limits are. See [Current API Limits](/dynamics-nav/api-reference/v1.0/dynamics-current-limits). For on-premises, you change the limits on the Business Central Server instance. See [Configuring Business Central Server](configure-server-instance.md). Web service calls that exceed the timeout limit result in a **408 - Request Timeout**. These calls are recorded in Application Insights with a totalTime that is equal to the timeout threshold.
 
+### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ### The custom dimension failureReason
 The custom dimension _failureReason_ is used to troubleshoot further, mostly error conditions happening in the AL code behind the web service endpoint. 

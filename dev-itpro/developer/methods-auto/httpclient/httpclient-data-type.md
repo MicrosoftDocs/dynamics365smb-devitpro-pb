@@ -65,6 +65,9 @@ For more information, see [Outgoing Web Service Request Telemetry](../../../admi
 #### HTTP status codes
 [!INCLUDE[httpStatusCodes](../../../includes/include-http-status-codes.md)]
 
+#### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../../../includes/include-http-status-error-codes.md)]
+
 
 ## Performance considerations
 
