@@ -49,6 +49,12 @@ Accessing the HttpContent property of HttpResponseMessage in a case when the req
 
 [//]: # (IMPORTANT: END>DO_NOT_EDIT)
 
+## Ways that HttpClient.Put calls can fail
+The method HttpClient.Put can fail and return false in the following ways:
+
+[!INCLUDE[httpclientFailureReasonsList](../../includes/include-http-call-failure-reasons.md)]
+
+
 ## Example
 The PUT request method either replaces an existing resource or creates a new one using request body payload. To make an HTTP PUT request, given an HttpClient and a URI, use the HttpClient.Put method:
 
@@ -121,6 +127,7 @@ The preceding code:
 
 
 ## See Also
+[Call external services with the HttpClient data type](../../devenv-httpclient.md)  
 [HttpClient Data Type](httpclient-data-type.md)  
 [Get Started with AL](../../devenv-get-started.md)  
 [Developing Extensions](../../devenv-dev-overview.md)
