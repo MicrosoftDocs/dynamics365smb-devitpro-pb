@@ -14,7 +14,7 @@ ms.date: 08/08/2023
 
 [!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
-# Web service telemetry
+## Web service telemetry
 
 All incoming calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)] web services and outgoing calls to external services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
 
