@@ -1,5 +1,5 @@
 ---
-title: Error Codes  
+title: Troubleshooting OData/API calls
 description: List of error codes.
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -68,6 +68,11 @@ The error codes in the table below can be divided into the following categories 
 |NavInvalidCredentialException|The server has rejected the client credentials|Authentication_InvalidCredentials|
 |Any|Any|Unknown|
 
+## Troubleshoot failed OData/API calls with HTTP status codes
+When you call a web service endpoint, either a [!INCLUDE[prod_short](../developer/includes/prod_short.md)] API or from AL using Httpclient datatype, you get an HTTP status code as part of the response. All HTTP status codes that start with 4 (sometimes also written 4xx) are classified as client errors and it is your responsibility to react on these errors and fix them in your code. 
+
+For more information, see [Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md).
+
 ## Troubleshoot failed OData/API calls with telemetry
 
 [!INCLUDE [prod_short](../developer/includes/prod_short.md)] telemetry on web service calls have two important dimensions to troubleshoot failed web service calls: *httpStatusCode* and *failureReason*. The *httpStatusCode* dimension stores the HTTP return code provided by the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] server. The *failureReason* dimension stores the exception types described above.
@@ -77,4 +82,5 @@ For more information about web services telemetry, see [Analyzing Incoming Web S
 ## See also
 
 [Dynamics 365 Business Central in Graph](/graph/api/resources/dynamics-graph-reference)   
-[Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)
+[Troubleshooting web service errors with HTTP status codes](web-service-troubleshooting.md)     
+[Analyzing Incoming Web Services Request Telemetry](../administration/telemetry-webservices-trace.md)   
