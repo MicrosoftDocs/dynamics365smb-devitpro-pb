@@ -20,8 +20,16 @@ All incoming calls to [!INCLUDE[prod_short](../developer/includes/prod_short.md)
 
 For more information, see [Web service telemetry](web-service-telemetry.md).
 
+## Troubleshooting OData/API calls
+
+For calls to OData/API endpoints, we offer more details for troubleshooting, as these calls also return OData error codes in case of failures. 
+
+For more information, see [Troubleshooting OData/API calls](dynamics-error-codes.md).
+
+
 ## See also
 
 [Web Services Overview](web-services.md)  
 [Web Services Best Practices](Web-Services-Best-Practices.md)  
 [Web service telemetry](web-service-telemetry.md)   
+[Troubleshooting OData/API calls](dynamics-error-codes.md)   
