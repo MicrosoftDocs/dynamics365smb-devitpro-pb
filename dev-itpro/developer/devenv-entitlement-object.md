@@ -15,13 +15,14 @@ ms.author: solsen
 
 [!INCLUDE [2021_releasewave1](../includes/2021_releasewave1.md)]
 
-The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in AAD. 
+The entitlement object in [!INCLUDE [prod_short](includes/prod_short.md)] describes which objects in [!INCLUDE [prod_short](includes/prod_short.md)] a customer is entitled to use according to the license that they purchased or the role that they have in Azure AD. 
 
-An entitlement consists of a number of [PermissionSet Objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app cannot alter or redefine the entitlements included with another app.
+An entitlement consists of a number of [PermissionSet Objects](devenv-permissionset-object.md) put together to constitute a set of meaningful permissions for a user. An entitlement can only include permission set objects, which reference the objects that are included within the same app. This is to ensure that the entitlements included with one app can't alter or redefine the entitlements included with another app.
 
 Entitlements can only be used with the online version of [!INCLUDE [prod_short](includes/prod_short.md)].
 
-With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to enable transactability for AppSource apps. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+> [!NOTE]  
+> With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitlements can be used to enable transactability for AppSource apps. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 <!--
 > [!NOTE]  
@@ -30,13 +31,13 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, entitl
 
 ## Snippet support
 
-Typing the shortcut `tentitlement` will create the basic layout for an entitlement object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
+Typing the shortcut `tentitlement` creates the basic layout for an entitlement object when using the [!INCLUDE[d365al_ext_md](../includes/d365al_ext_md.md)] in Visual Studio Code.
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
 ## Entitlement example - delegated admin
 
-This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the is entitlement is associated with an AAD role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it is `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
+This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the entitlement is associated with an Azure AD role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it's `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
 
 ```al
 entitlement BC_Role_Delegated
