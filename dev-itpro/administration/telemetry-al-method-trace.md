@@ -67,6 +67,47 @@ This table describes the different dimensions of a **Operation exceeded time thr
 |sqlRowsRead|Specifies the number of table rows that were read by the SQL statements.<br /><br />This dimension was introduced in Business Central 2023 release wave 1, version 22.0.  |
 |telemetrySchemaVersion|Specifies the version of the [!INCLUDE[prod_short](../developer/includes/prod_short.md)] telemetry schema. |
 
+## Sample KQL code for analyzing AL method performance
+
+Use this KQL code if you want to analyzing AL method performance.
+
+```kql
+traces
+| where timestamp > ago(60d) // adjust as needed
+| where customDimensions.eventId == 'RT0018' 
+| where customDimensions.alObjectId > 0 // filter out internal server calls
+| project aadTenantId = customDimensions.aadTenantId
+, environmentName = customDimensions.environmentName
+, environmentType = customDimensions.environmentType
+, companyName = customDimensions.companyName
+, alMethod = customDimensions.alMethod
+, alObjectId = customDimensions.alObjectId
+, alObjectName = customDimensions.alObjectName
+, alObjectType = customDimensions.alObjectType
+, alStackTrace = customDimensions.alStackTrace // use the KQL snippet parseStackTrace to get top/bottom of the stack trace details
+, clientType = customDimensions.clientType
+// exclusiveTime is the execution time of the operation, without the time where AL execution was suspended due to client callback
+, exclusiveTime = customDimensions.exclusiveTime // This dimension was introduced in Business Central 2023 release wave 1, version 22.1. Backported to version 21.6
+, exclusiveTimeInMS = toreal(totimespan(customDimensions.exclusiveTime))/10000 //the datatype for exclusiveTime is timespan 
+// exclusiveTime is the total time of the operation, including wait time due to client callback
+, totalTime = customDimensions.executionTime
+, totalTimeInMS = toreal(totimespan(customDimensions.executionTime))/10000 //the datatype for executionTime is timespan 
+, extensionId = customDimensions.extensionId
+, extensionInfo = customDimensions.extensionInfo // parse this json structure to find out if other extensions is involved
+, extensionName = customDimensions.extensionName
+, extensionPublisher = customDimensions.extensionPublisher
+, extensionVersion = customDimensions.extensionVersion
+, longRunningThreshold = customDimensions.longRunningThreshold
+, longRunningThresholdInMS = toreal(totimespan(customDimensions.longRunningThreshold))/10000 //the datatype for executionTime is timespan 
+, sqlExecutes = toint(customDimensions.sqlExecutes) // This dimension was introduced in Business Central 2023 release wave 1, version 22.0
+, sqlRowsRead = toint(customDimensions.sqlRowsRead) // This dimension was introduced in Business Central 2023 release wave 1, version 22.0
+, usertelemetryId = case(
+  // user telemetry id was introduced in the platform in version 20.0
+  toint( substring(customDimensions.componentVersion,0,2)) >= 20, user_Id
+, 'N/A'
+)
+```
+
 ## See also
 
 [Monitoring and Analyzing Telemetry](telemetry-overview.md)  
