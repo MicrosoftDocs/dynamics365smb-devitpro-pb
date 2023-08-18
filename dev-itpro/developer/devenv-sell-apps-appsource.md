@@ -32,10 +32,11 @@ The following steps outline the process of enabling tranactability for your app,
 ## Plans overview
 
 When you have opted into transactability for your app, it's time to define plans for your offer. Plans are defined as the different sellable SKUs.
-In the left pane, you'll now have a new tab called **Plan overview**.
-The Pricing model is a per-user model, where you can define the price per user (each Microsoft Entra tenant user) per month or per year. The plan can either be public, which means that it's shown in AppSource, or private, which means that it's only shown to customers that the publisher has specified.
+To set up plans, go to Partner Center, and on your offer, select the **Plan overview** tab, and then choose **Add plan**. 
 
-Each plan has a unique ID (Service ID), which is a combination of the publisher tenant identity, the offer identity and the plan identity.
+The pricing model is a per-user model, where you can choose to define the price per user per month or per year. The plan can either be public, which means that it's shown in AppSource, or private, which means that it's only shown to customers that the publisher has specified.
+
+Each plan has a unique ID, called the Service ID, which is a combination of the publisher tenant identity, the offer identity and the plan identity. The Service ID is used to map the plan to functionality in the app through entitlements.
 
 <!--
 **Notes**
