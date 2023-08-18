@@ -42,11 +42,17 @@ The pricing model is a per-user model, where you can choose to define the price 
 
 Each plan has a unique ID, called the Service ID, which is a combination of the publisher tenant identity, the offer identity and the plan identity. The Service ID is used to map the plan to functionality in the app by using entitlements objects in their [!INCLUDE [prod_short](includes/prod_short.md)] app. Entitlements also allow mapping access to delegated admins, as well as publisher developers, so that these can run the app without any purchased license, for example, to demo, configure, test, or troubleshoot.
 
-
 When the app has been updated with entitlements and opted in to transact, it'll surface in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once a number of licenses have been purchased, they appear in the customers Microsoft Admin Center, and can be assigned to individual users.
 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
+
+### Side-by-side support
+
+The side-by-side support is the ability to fall-back to custom licensing for existing customers in a transition period. It's crucial that you implement side-by-side support for your app before opting into transactability on AppSource. To enable side-by-side support, you must create an entitlement, which maps the user to the required permission sets to run their custom licensing. 
+
+> The `Unlicensed` type of entitlement is only applied to users who don't have an offer defined in the app’s entitlements. It's then possible to test for this unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new AppSource transactability model.
+
 
 ## See also
 
