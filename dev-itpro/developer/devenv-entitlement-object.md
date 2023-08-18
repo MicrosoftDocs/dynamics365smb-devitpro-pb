@@ -68,7 +68,7 @@ entitlement BC_PerUserServicePlan
 
 ## Entitlement example - unlicensed
 
-For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable side-by-side support for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable *side-by-side support* for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_Unlicensed
@@ -87,7 +87,9 @@ procedure CheckingLicensing()
     // When using no or custom licensing
     if NavApp.IsUnlicensed() then
         // Do custom licensing
-    else
+    
+    // Transactability licensing
+    if NavApp.IsEntitled() then
         // Do transactability licensing
 }
 
