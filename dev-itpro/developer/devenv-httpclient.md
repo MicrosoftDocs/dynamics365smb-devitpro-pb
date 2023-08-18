@@ -53,7 +53,7 @@ The following example illustrates ways to prepare the request.
     end;
 ```
 
-For more information about content headers, see [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
+For more information about content headers, see [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md).  
 
 ## Run the call
 
