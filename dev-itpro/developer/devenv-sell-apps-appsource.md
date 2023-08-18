@@ -20,7 +20,7 @@ For pricing, you can optionally decide to define minimum and maximum number of u
 
 ## Important steps to take before opting into selling through AppSource
 
-If you already have existing customers on custom licensing, you shouldn't opt in to using transactability and entitlements until you have implemented side-by-side support, which is the ability to fall back to custom licensing for existing customers in a transition period. Without the side-by-side support, your existing customers are locked out once they upgrade to the app version that uses entitlements. To implement the side-by-side support, you must create an entitlement mapping `Unlicensed` user to the required permission sets to run their custom licensing check. For more information, see [Entitlements overview](devenv-entitlements-and-permissionsets-overview.md).
+If you already have existing customers on custom licensing, you shouldn't opt in to using transactability and entitlements until you have implemented side-by-side support, which is the ability to fall back to custom licensing for existing customers in a transition period. Without the side-by-side support, your existing customers are locked out once they upgrade to the app version that uses entitlements. To implement the side-by-side support, you must create an entitlement mapping `Unlicensed` user to the required permission sets to run their custom licensing check. For more information, see [Entitlement object](devenv-entitlement-object.md).
 
 ## The process of enabling transactability
 
