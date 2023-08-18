@@ -79,6 +79,20 @@ entitlement BC_Unlicensed
 
 ```
 
+Testing for the `Unlicensed` type of entitlement can be done by using the [NavApp.IsUnlicensed([Guid]) Method](methods-auto/navapp/navapp-isunlicensed-method.md) method as illustrated in the pseudo code example below.
+
+```al
+procedure CheckingLicensing()
+{
+    // When using no or custom licensing
+    if NavApp.IsUnlicensed() then
+        // Do custom licensing
+    else
+        // Do transactability licensing
+}
+
+```
+
 ## See also
 
 [Developing Extensions](devenv-dev-overview.md)  
