@@ -22,6 +22,12 @@ The performance of Power BI datasets based on [!INCLUDE[prod_short](../includes/
 
 All incoming calls to [!INCLUDE[prod_short](../includes/prod_short.md)] web services are logged to partner telemetry. Telemetry enables you to monitor which endpoints are being used and the category of the web service, like SOAP, OData, or API. You can also see possible failures, which are tracked in the HTTP status codes for the calls.
 
+If you filter this telemetry data to the OData or API categories and also filter on the HTTP header _ms-dyn-useragent_, you can monitor usage, performance, and errors of Power BI traffic to [!INCLUDE[prod_short](../includes/prod_short.md)].
+
+To make it easier to get started using Azure Application Insights with Business Central, samples of KQL code are available in the Business Central BCTech repository on GitHub. For analyzing web service call telemetry from the usage of the Microsoft connector (Power BI, Power Apps, ...), then the query 
+[MicrosoftConnectorUsage.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/HelperQueries/MicrosoftConnectorUsage.kql) might be useful.
+
+
 For more information, see [Web service telemetry](web-service-telemetry.md)
 
 ## See also
