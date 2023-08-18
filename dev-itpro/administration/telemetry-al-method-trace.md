@@ -3,15 +3,15 @@ title: Analyzing Long Running AL Methods Telemetry
 description: Learn about analyzing long running AL methods in Business Central.  
 author: jswymer
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.service: dynamics365-business-central
+ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 04/01/2021
+ms.date: 08/18/2023
 ms.author: jswymer
+ms.reviewer: jswymer
 ---
 
-# Analyzing Long Running AL Methods Telemetry
+# Analyzing long running AL methods telemetry
 
 [!INCLUDE[prod_short](../includes/2020_releasewave2.md)], version 17.1. Available in extension telemetry starting with version 18.1.
 
@@ -69,7 +69,7 @@ This table describes the different dimensions of a **Operation exceeded time thr
 
 ## Sample KQL code for analyzing AL method performance
 
-Use this KQL code if you want to analyzing AL method performance.
+Use this KQL code if you want to analyze AL method performance.
 
 ```kql
 traces
