@@ -6,7 +6,7 @@ When calling APIs and OData web services from Power BI, it's important that you 
 
 The following example illustrates how filters are pushed from Power BI to the [!INCLUDE[prod_short](prod_short.md)] connector.
 
-It is common practice to have a query that refreshes the current date time at every refresh in your Power BI dataset:
+It is common practice to have a query that refreshes the current date and time at every refresh in your Power BI dataset:
 
 ```powerquery-m
 // LastRefreshDate query
@@ -16,7 +16,7 @@ in
     Source
 ```
 
-To apply a filter such as “the last 12 months of data” to other queries, simply use the PowerQuery _Table.SelectRows_ on appropriate dates, e.g.
+To apply a filter such as “the last 12 months of data” to other queries, simply use the PowerQuery _Table.SelectRows_ on appropriate dates, for example:
 
 ```powerquery-m
 // SalesInvoices
