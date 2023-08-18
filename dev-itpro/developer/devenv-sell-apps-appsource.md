@@ -20,12 +20,14 @@ For pricing, you can optionally decide to define minimum and maximum number of u
 
 The following steps outline the process of enabling tranactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here.
 
-1. In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
+- In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
     > [!IMPORTANT]  
     > <insert include file here>
-1. Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**.
-1. 
-1. 
+- Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**. For more information, see [Plans overview]()
+- When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Entitlements]() 
+- Having opted into tranactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app.
+- When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose Licenses, and then they can see the license for the app, which they can assign to users.
+- 
 <!--
 **Notes**
 
