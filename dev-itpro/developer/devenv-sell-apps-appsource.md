@@ -28,7 +28,7 @@ The following steps outline the process of enabling transactability for your app
 
 - In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
 - Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**. For more information, see [Plans](devenv-sell-apps-appsource.md#plans).
-- When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Entitlements](devenv-entitlement-object.md). 
+- When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Mapping plans to functionality in your app](devenv-sell-apps-appsource.md#mapping-plans-to-functionality-in-your-app). 
 - Having opted into tranactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app. Your app will go through the AppSource validation process, and once it's published, users can purchase your app directly in AppSource.
 - When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose **Licenses**, and then they can see the license for the app, which they can assign to users. For more information, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
@@ -41,7 +41,13 @@ The pricing model is a per-user model, where you can choose to define the price 
 
 Each plan has a unique ID, called the *Service ID*, which is a combination of the publisher tenant identity, the offer identity, and the plan identity. The *Service ID* is used to map the plan to functionality in the app by using entitlements objects in their [!INCLUDE [prod_short](includes/prod_short.md)] app. Entitlements also allow mapping access to delegated admins, as well as publisher developers, so that these can run the app without any purchased license, for example, to demo, configure, test, or troubleshoot.
 
-When the app has been updated with entitlements, it must be must be published to AppSource and go through the validation process. Once it's been validated, it'll surface in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once a number of licenses have been purchased, they appear in the customers Microsoft 365 admin center, and can be assigned to individual users.
+## Mapping plans to functionality in your app
+
+Having defined the plans in Partner Center, you must map these to entitlements in your app. Entitlements are defined as AL objects and they map to the plans in Partner Center by using the *Service ID* of the plan. For more information, see [Entitlement object](devenv-entitlement-object.md).
+
+## Purchasing your app
+
+When the app has been updated with entitlements, it must be must be published to AppSource and go through the validation process. Once it's been validated, it'll surface in AppSource with the different plans and pricing, allowing customers to purchase directly in the AppSource marketplace. Once a number of licenses have been purchased, they appear in the customers Microsoft 365 admin center, and can be assigned to individual users. For more information, see [Use the Licenses page to assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide#use-the-licenses-page-to-assign-licenses-to-users).
 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
