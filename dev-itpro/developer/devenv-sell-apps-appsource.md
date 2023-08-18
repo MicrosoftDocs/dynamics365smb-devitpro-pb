@@ -18,17 +18,15 @@ With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, transa
 
 For pricing, you can optionally decide to define minimum and maximum number of users for the plan. And for billing terms, you can decide to offer monthly and yearly billing, with the option for the customer to choose recurring billing. Under **Free Trial**, you can optionally define a free trial period for the plan. The free trial period is one month, and is automatically enabled for the customer when they purchase the plan in AppSource. Should the customer choose to cancel the subscription during the free trial period, they will not be charged.
 
-## Before opting into selling through AppSource
+## Important steps to take before opting into selling through AppSource
 
 If you already have existing customers on custom licensing, you shouldn't opt in to using transactability and entitlements until you have implemented side-by-side support, which is the ability to fall-back to custom licensing for existing customers in a transition period. Without the side-by-side support, your existing customers will be locked out once they upgrade to the app version that uses entitlements. To implement the side-by-side support, you must create an entitlement mapping `Unlicensed` user to the required permission sets to run their custom licensing check. For more information, see [Entitlements overview]().
 
 ## The process of enabling transactability
 
-The following steps outline the process of enabling transactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here.
+The following steps outline the process of enabling transactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here [](). Having assured any transition period for your app by setting up side-by-side support, you can enable transactability for your app. The following outlines the steps to take:
 
 - In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
-    > [!IMPORTANT]  
-    > <insert include file here>
 - Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**. For more information, see [Plans overview]()
 - When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Entitlements]() 
 - Having opted into tranactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app.
