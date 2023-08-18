@@ -53,7 +53,7 @@ The following example illustrates ways to prepare the request.
     end;
 ```
 
-For more information about content headers, see [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md)  
+For more information about content headers, see [HttpContent data type](methods-auto/httpcontent/httpcontent-data-type.md).  
 
 ## Run the call
 
@@ -124,6 +124,8 @@ The following example illustrates the error handling you need to setup for handl
 
 [!INCLUDE[httpStatusCodes](../includes/include-http-status-codes.md)]
 
+### Common HTTP status error codes
+[!INCLUDE[httpStatusErrorCodes](../includes/include-http-status-error-codes.md)]
 
 ## Advanced scenarios
 
@@ -148,7 +150,7 @@ begin
 end;
 ```
 
-For more information about certificates, see [HttpClient.Send(HttpRequestMessage, var HttpResponseMessage) Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
+For more information about certificates, see the [HttpClient.AddCertificate Method](methods-auto/httpclient/httpclient-addcertificate-method.md)
 
 ## Monitor and troubleshoot
 

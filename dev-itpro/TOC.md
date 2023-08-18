@@ -929,6 +929,7 @@
 
 ### Calling external services
 #### [Call external services with the HttpClient data type](developer/devenv-httpclient.md)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [HttpClient data type](developer/methods-auto/httpclient/httpclient-data-type.md)
 <!--#### [Connecting to Azure Functions](https://github.com/microsoft/ALAppExtensions/tree/main/Modules/System/Azure%20Function)-->
 #### [Azure Function telemetry](administration/telemetry-azure-function-integration-trace.md)  
@@ -1197,6 +1198,7 @@
 #### [Authentication with OAuth](webservices/authenticate-web-services-using-oauth.md)
 #### [Service-to-service authentication](administration/automation-apis-using-s2s-authentication.md)
 #### [Web service performance](webservices/web-service-performance.md)
+#### [Troubleshoot web service errors](webservices/web-service-troubleshooting.md)
 #### [Web service telemetry](webservices/web-service-telemetry.md)
 #### [Walkthrough: Creating a console application that uses OAuth](webservices/walkthrough-authenticate-web-services-using-oauth.md)
 #### [Securing remote connections using certificates](deployment/implement-security-certificates-production-environment.md)
