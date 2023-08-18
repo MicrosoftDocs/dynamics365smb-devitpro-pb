@@ -50,7 +50,7 @@ entitlement BC_Role_Delegated
 
 ```
 
-An example of an entitlement where `Type` is `PerUserServicePlan`:
+An example of an entitlement where `Type` is `PerUserServicePlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
 entitlement BC_PerUserServicePlan
@@ -63,9 +63,10 @@ entitlement BC_PerUserServicePlan
 }
 ```
 
-## See Also
+## See also
 
 [Developing Extensions](devenv-dev-overview.md)  
 [AL Development Environment](devenv-reference-overview.md)  
 [Entitlements and Permission Set Overview](devenv-entitlements-and-permissionsets-overview.md)  
-[Permission Set Extension Object](devenv-permissionset-ext-object.md)
+[Permission Set Extension Object](devenv-permissionset-ext-object.md)  
+[Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md)  
