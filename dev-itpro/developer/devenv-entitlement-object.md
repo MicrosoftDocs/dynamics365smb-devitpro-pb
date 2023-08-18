@@ -34,7 +34,7 @@ Typing the shortcut `tentitlement` will create the basic layout for an entitleme
 
 [!INCLUDE[intelli_shortcut](includes/intelli_shortcut.md)]
 
-## Entitlement examples
+## Entitlement example - delegated admin
 
 This example illustrates a simple entitlement object with the [Type property](properties/devenv-type-property.md) set to `Role`, which means that the is entitlement is associated with an AAD role. When `Type` is set to `Role`, the [RoleType property](properties/devenv-roletype-property.md) is used to distinguish between local and delegated assignments of the role, in this case it is `Delegated`. The [ObjectEntitlements property](properties/devenv-objectentitlements-property.md) defines the list of permissions that the entitlement includes.
 
@@ -50,6 +50,8 @@ entitlement BC_Role_Delegated
 
 ```
 
+## Entitlement example - per-user plan
+
 An example of an entitlement where `Type` is `PerUserServicePlan`. This type is used to enable transactability for AppSource apps. The `Id` property is used to map the entitlement to the plan in Partner Center, and must contain the **Service ID** for the plan. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
 
 ```al
@@ -61,6 +63,19 @@ entitlement BC_PerUserServicePlan
     ObjectEntitlements = "D365 BASIC";
    
 }
+```
+
+## Entitlement example - unlicensed
+
+For scenarios when the user isn't licensed through entitlements mapping to AppSource offer plans, the `Unlicensed` type of entitlement is used. This type is used to enable side-by-side support for transactability-enabled apps on AppSource. For more information, see [Selling Business Central apps through AppSource](devenv-sell-apps-appsource.md).
+
+```al
+entitlement BC_Unlicensed
+{    
+    Type = Unlicensed;
+    ObjectEntitlements = "Custom license";
+}
+
 ```
 
 ## See also
