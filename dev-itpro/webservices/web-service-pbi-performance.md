@@ -7,7 +7,7 @@ ms.reviewer: jswymer
 ms.service: dynamics365-business-central
 ms.topic: conceptual
 ms.author: kepontop
-ms.date: 07/03/2023
+ms.date: 08/18/2023
 ---
 
 # Power BI dataset load performance
@@ -24,11 +24,11 @@ All incoming calls to [!INCLUDE[prod_short](../includes/prod_short.md)] web serv
 
 If you filter this telemetry data to the OData or API categories and also filter on the HTTP header _ms-dyn-useragent_, you can monitor usage, performance, and errors of Power BI traffic to [!INCLUDE[prod_short](../includes/prod_short.md)].
 
-To make it easier to get started using Azure Application Insights with Business Central, samples of KQL code are available in the Business Central BCTech repository on GitHub. For analyzing web service call telemetry from the usage of the Microsoft connector (Power BI, Power Apps, ...), then the query 
+To make it easier to get started using Azure Application Insights with Business Central, samples of KQL code are available in the Business Central BCTech repository on GitHub. For analyzing web service call telemetry from the usage of the Microsoft connector (Power BI, Power Apps, and so on), then the query 
 [MicrosoftConnectorUsage.kql](https://github.com/microsoft/BCTech/blob/master/samples/AppInsights/KQL/Queries/HelperQueries/MicrosoftConnectorUsage.kql) might be useful.
 
 
-For more information, see [Web service telemetry](web-service-telemetry.md)
+For more information, see [Web service telemetry](web-service-telemetry.md).
 
 ## See also
 
