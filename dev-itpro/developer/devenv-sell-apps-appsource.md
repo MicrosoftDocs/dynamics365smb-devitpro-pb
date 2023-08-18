@@ -27,13 +27,13 @@ If you already have existing customers on custom licensing, you shouldn't opt in
 The following steps outline the process of enabling transactability for your app, assuming that you already have an existing offer in AppSource. If you don't have an existing offer in AppSource, read more here [](). Having assured any transition period for your app by setting up side-by-side support, you can enable transactability for your app. The following outlines the steps to take:
 
 - In Partner Center, on your existing offer, under **Setup details**, select the option called **Would you like to sell through Microsoft?**, choose the **Yes, I would like to sell through Microsoft and have Microsoft host transactions on my behalf** option to opt into transactability.  
-- Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**. For more information, see [Plans overview](devenv-sell-apps-appsource.md#plans-overview).
-- When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Entitlements]() 
+- Once you have enabled transactability, you can define plans for your offer. In Partner Center, on your offer, select the **Plan overview** tab, and then choose **Add plan**. For more information, see [Plans](devenv-sell-apps-appsource.md#plans).
+- When you have defined the plans, you can map these plans to functionality in your app. You do this by creating entitlements in your app, which map the license to object entitlements. For more information, see [Entitlements](devenv-entitlement-object.md). 
 - Having opted into tranactability, defined plans, and mapped these plans to functionality in your app by using entitlements, you can now publish your app.
 - When customers buy your app, they get a license for the plan, and they can go to the Microsoft 365 admin center, and then choose Licenses, and then they can see the license for the app, which they can assign to users.
 
 
-## Plans overview
+## Plans
 
 When you have opted into transactability for your app, it's time to define plans for your offer. Plans are defined as the different sellable SKUs.
 To set up plans, go to Partner Center, and on your offer, select the **Plan overview** tab, and then choose **Add plan**. 
@@ -47,12 +47,9 @@ When the app has been updated with entitlements and opted in to transact, it'll 
 > [!NOTE]  
 > Even if a user has an assigned license (plan) that maps to permission sets through the entitlement for that license, the user must still be granted those permissions inside [!INCLUDE [prod_short](includes/prod_short.md)] to have access. In other words, the license only defines the maximum permission to app functionality paid for, but users with the license might be granted less inside [!INCLUDE [prod_short](includes/prod_short.md)].
 
-### Side-by-side support
+## Side-by-side support
 
-The side-by-side support is the ability to fall-back to custom licensing for existing customers in a transition period. It's crucial that you implement side-by-side support for your app before opting into transactability on AppSource. To enable side-by-side support, you must create an entitlement, which maps the user to the required permission sets to run their custom licensing. 
-
-> The `Unlicensed` type of entitlement is only applied to users who don't have an offer defined in the app’s entitlements. It's then possible to test for this unlicensed scenario and perform your custom licensing as before for existing customers, allowing side-by-side support while transitioning existing customers to the new AppSource transactability model.
-
+The side-by-side support is the ability to fall-back to custom licensing for existing customers in a transition period. It's crucial that you implement side-by-side support for your app before opting into transactability on AppSource. To enable side-by-side support, you must create an entitlement, which maps the user to the required permission sets to run their custom licensing. On the entitlement object, you must set the `Type` property to `Unlicensed`. For more information, see [Entitlement object](devenv-entitlement-object.md). 
 
 ## See also
 
