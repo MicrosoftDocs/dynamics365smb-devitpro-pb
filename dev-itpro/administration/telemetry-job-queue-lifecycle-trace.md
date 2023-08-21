@@ -1,17 +1,17 @@
 ---
 title: Analyzing Job Queue Lifecycle Trace Telemetry
 description: Learn about the telemetry for job queue entries in Business Central  
-author: jswymer
+author: kennienp
 ms.topic: conceptual
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.service: dynamics365-business-central
+ms.reviewer: jswymer
+ms.custom: bap-template
 ms.search.keywords: administration, tenant, admin, environment, sandbox, telemetry
-ms.date: 07/05/2022
-ms.author: jswymer
+ms.date: 08/21/2023
+ms.author: kepontop
 ---
 
-# Analyzing Job Queue Lifecycle Telemetry
+# Analyzing job queue lifecycle telemetry
 
 **APPLIES TO:** [!INCLUDE[prod_short](../includes/prod_short.md)] 2020 release wave 2, version 17.2, and later
 
