@@ -3,7 +3,7 @@ title: "AL Language extension configuration"
 description: "Description of the settings of the AL Language extension in Business Central."
 author: SusanneWindfeldPedersen
 ms.custom: na
-ms.date: 02/28/2023
+ms.date: 08/21/2023
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -48,6 +48,8 @@ The following table describes the user and workspace settings for the AL Languag
 |Statement Lens Minimum|Sets the lower limit for the time spent on statement execution expressed in milliseconds. Default value is `500`. Syntax is `"al.statementLensMin": 100`. For more information, see [AL Profiler Overview](devenv-al-profiler-overview.md).|
 |Use Legacy Runtime|Use the .NET Framework runtime for hosting the language service instead of the .NET Core runtime. Enabling this might result in a reduced level of performance. <br>**Note:** From extension version 11.0 this setting has been deprecated and has no effect.|
 |Generate PermissionSet for Extension Objects | Generate a permission set as an AL object. Syntax is `al.generatePermissionSetForExtensionObjects`. When invoking the command, the developer can choose to create a new permission file or select an existing file to update.|
+|Inlayhints > Function Return Types|Switch on/off inlay hints for implicit return types on method signatures.|
+|Inlayhints > Parameter Names|Switch on/off inlay hints for parameter names.|
 
 ## See Also
 
