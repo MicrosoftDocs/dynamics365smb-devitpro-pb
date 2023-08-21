@@ -797,6 +797,7 @@
 #### [Overview](developer/devenv-reports.md)
 #### [Report design overview](developer/devenv-report-design-overview.md)
 #### [Report object](developer/devenv-report-object.md)
+#### [Report extension object](developer/devenv-report-ext-object.md)
 #### [Report extension example](developer/devenv-report-ext-example.md)
 #### [Defining a report dataset](developer/devenv-report-dataset.md)
 #### [Request pages](developer/devenv-request-pages.md)
