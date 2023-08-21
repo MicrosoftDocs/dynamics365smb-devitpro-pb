@@ -983,6 +983,7 @@
 ##### [Extending customer, vendor, and item templates](developer/devenv-extending-templates.md)
 ##### [Extending email capabilities](developer/devenv-extending-email.md)
 ##### [Extending G/L entry aggregations when posting invoices](developer/devenv-invoice-posting-example.md)
+##### [Extending the Shopify Connector](developer/devenv-extending-shopify.md)
 
 ### Using events 
 #### [Event types](developer/devenv-event-types.md)
