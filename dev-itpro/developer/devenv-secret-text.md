@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.service: "dynamics365-business-central"
 author: SusanneWindfeldPedersen
+description: A description of the 'SecretText' data type and examples of its usage
 ---
 
 # SecretText
