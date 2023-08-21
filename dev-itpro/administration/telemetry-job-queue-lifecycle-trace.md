@@ -24,7 +24,6 @@ Job queue lifecycle telemetry gathers data about the following operations:
 - A job queue entry was scheduled on login.
 - A job queue entry was run by a user.
 
-
 For information about creating and managing job queue entries, see [Use Job Queues to Schedule Tasks](/dynamics365/business-central/admin-job-queues-schedule-tasks) in the [!INCLUDE[prod_short](../includes/prod_short.md)] application help.
 
 For technical information about how the Job Queue works, see [How the Job Queue works](../developer/devenv-job-queue.md) in the in the [!INCLUDE [prod_short](../developer/includes/prod_short.md)] developer content.
@@ -68,7 +67,6 @@ The following table explains custom dimensions that are common to all job queue 
 |alJobQueueStackTrace|Specifies the AL stack trace of the job queue entry. </br></br>This dimension was introduced in version 21.3. |
 |alJobQueueStatus|**Ready** indicates it's a non-recurring job queue entry or the first run of a recurring job queue entry that's ready to run. **In Process** indicates it's being run. **Error** indicates it encountered an error while running. **On Hold** indicates it's being queued. **Finished** indicates it's finished without error. **On Hold with Inactivity Timeout** indicates it's a recurring job query entry that's ready to run.|
 
-
 ## <a name="enqueued"></a>Job queue entry enqueued
 
 Occurs when a job queue entry is sent to the job queue to eventually be run. A job queue entry is sent to the queue when its status is changed from **On Hold** to **Ready** or if it's a recurring job queue entry. Recurring job queue entries are automatically enqueued after each run.  
@@ -95,7 +93,7 @@ The following table explains custom dimensions that are specific to this trace.
 |alJobQueueObjectDescription|Specifies the description of the object that the job queue entry runs. This dimension was introduced in Business Central 2023 release wave 1, version 22.2. |
 |alJobQueueStatus|**Ready** indicates it's a non-recurring job queue entry or the first run of a recurring job queue entry that's ready to run. **On Hold with Inactivity Timeout** indicates it's a recurring job query entry that's ready to run. |
 
-## <a name="enqueueError">Job queue entry failed to be enqueued
+## <a name="enqueueError"></a>Job queue entry failed to be enqueued
 
 Information if the job queue entry fails to be sent to the queue.  
 
