@@ -13,7 +13,7 @@ ms.author: solsen
 
 # Page customization object
 
-The page customization object in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. See [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) for how to place actions and controls on a page customization object.
+The page customization object in [!INCLUDE [prod_short](includes/prod_short.md)] allows you to add changes to the layout and actions on page that are accessible for a profile. See [Using keywords to place actions and controls](devenv-page-ext-object.md#using-keywords-to-place-actions-and-controls) for how to place actions and controls on a page customization object.
 
 The page customization object has more restrictions than the [page extension object](devenv-page-ext-object.md); when you define a new page customization object, you cannot add variables, procedures, or triggers. 
 
@@ -38,7 +38,7 @@ Typing the shortcut `tpagecust` creates the basic layout for a page customizatio
 
 ## Views
 
-Views in [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
+Views in [!INCLUDE [prod_short](includes/prod_short.md)] are used on list pages to define a different view of the data on a given page. Views can be defined for [Pages](devenv-page-object.md), [Page Extensions](devenv-page-ext-object.md), and [Page Customization](devenv-page-customization-object.md). For more information, see [Views](devenv-views.md).
 
 
 ## Page customization example
@@ -83,7 +83,7 @@ profile TheSalesman
 
 ## Adding groups and page fields based on table fields
 
-With [!INCLUDE[d365fin_long_md](includes/d365fin_long_md.md)] 2023 release wave 2, we have added the ability to add groups and page fields using a table field as source expression in page customizations as illustrated in the following example:
+With [!INCLUDE [prod_short](includes/prod_short.md)] 2023 release wave 2, we have added the ability to add groups and page fields using a table field as source expression in page customizations as illustrated in the following example:
 
 ```al
 pagecustomization MyPageCust customizes MyPage
