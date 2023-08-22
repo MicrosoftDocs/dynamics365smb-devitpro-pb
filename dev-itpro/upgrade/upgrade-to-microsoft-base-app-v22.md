@@ -224,7 +224,6 @@ You'll create two versions of this extension. The first version contains the tab
       "platform": "22.0.0.0",
       "idRanges": [  ],
       "resourceExposurePolicy": {
-        "applicableToDevExtension": false,
         "allowDebugging": true,
         "allowDownloadingSource": true,
         "includeSourceInSymbolFile": true
