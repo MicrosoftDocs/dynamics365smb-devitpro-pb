@@ -64,15 +64,15 @@ Here is an example of the response.
     "width": 400,
     "height": 400,
     "contentType": "image/jpeg",
-    "pictureContent@odata.mediaEditLink": "http://bcserver:7048/BC/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture/pictureContent",
-    "pictureContent@odata.mediaReadLink": "http://bcserver:7048/BC/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture/pictureContent"
+    "pictureContent@odata.mediaEditLink": "http://bcserver:7048/BC/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture(3ba68d90-3a48-ed11-bbb0-000d3a398903)/content",
+    "pictureContent@odata.mediaReadLink": "http://bcserver:7048/BC/api/v2.0/companies(52e03390-bde4-ea11-bbf2-00155df3a615)/customers(53049aad-bde4-ea11-bbf2-00155df3a615)/picture(3ba68d90-3a48-ed11-bbb0-000d3a398903)/content"
 }
 ```
 
 **GET Content**
 
 ```json
-GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture/pictureContent
+GET https://{businesscentralPrefix}/api/v2.0/companies(companyId)/items(itemId)/picture(3ba68d90-3a48-ed11-bbb0-000d3a398903)/content
 ```
 
 **Response**
