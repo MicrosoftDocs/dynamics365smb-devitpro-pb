@@ -1,8 +1,14 @@
 | Event ID | Area | Message |
 |----------|-------------|-----------------|
 | AL0000E24 | Job Queue Lifecycle | [Job queue entry enqueued: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#enqueued) |
+| AL0000FNY | Job Queue Lifecycle | [Job queue entry not enqueued: {alJobQueueId}](../administration/telemetry-job-queue-lifecycle-trace.md#enqueueError) |
 | AL0000E25 | Job Queue Lifecycle | [Job queue entry started: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#started) |
 | AL0000E26 | Job Queue Lifecycle | [Job queue entry finished: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#finished) |
+| AL0000HE7 | Job Queue Lifecycle | [Job queue entry errored: {alJobQueueId}](../administration/telemetry-job-queue-lifecycle-trace.md#error) |
+| AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {alJobQueueId} ](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
+| AL0000JRG | Job Queue Lifecycle | [Job queue entry {Job Queue Id} errored after {attempt number} attempts](../administration/telemetry-job-queue-lifecycle-trace.md#errorStopped) |
+| AL0000FMG | Job Queue Lifecycle | [Running job queue once](../administration/telemetry-job-queue-lifecycle-trace.md#runOnce) |
+| AL0000I49 | Job Queue Lifecycle | [Job queue entry rescheduled on login: {job queue entry id}](../administration/telemetry-job-queue-lifecycle-trace.md#rescheduledOnLogin) |
 |AL0000E3F|Configuration Package|[Configuration package export started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportstarted)|
 |AL0000E3G|Configuration Package|[Configuration package exported successfully: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#exportsuccessful)|
 |AL0000E3H|Configuration Package|[Configuration package import started: {alPackageCode}](../administration/telemetry-configuration-package-trace.md#importstarted)|
